@@ -1,0 +1,3355 @@
+1
+00:00:03,399 --> 00:00:05,220
+>>Steve Souders: Okay. Is that my cue to go?
+Okay. We're having a current discussion about
+
+2
+00:00:05,220 --> 00:00:12,220
+letting people come in and sit up front, so
+I hope we can do that.
+
+3
+00:00:13,200 --> 00:00:19,160
+I'm really excited to see everyone that showed
+up, but I have a cold shower announcement
+
+4
+00:00:19,160 --> 00:00:26,009
+to make. I'm not giving anything away.
+So although that's not entirely true. I'm
+
+5
+00:00:26,009 --> 00:00:31,849
+giving away information and knowledge, but
+nothing that physically you can take home
+
+6
+00:00:31,849 --> 00:00:35,770
+and give to your kids if that's what they're
+expecting.
+
+7
+00:00:35,770 --> 00:00:42,770
+So I'm going to talk about HTML5 from a performance
+perspective, but first I'm going to start
+
+8
+00:00:44,070 --> 00:00:50,520
+off and give a little background on my work
+in working on Web performance and kind of
+
+9
+00:00:50,520 --> 00:00:55,960
+the motivation. I think probably a lot of
+people -- how many people here build Web sites?
+
+10
+00:00:55,960 --> 00:01:02,960
+Yeah, okay, great.
+So I think there's something in the DNA of
+
+11
+00:01:05,180 --> 00:01:10,370
+engineers in general, and especially programmers,
+to be efficient and optimize.
+
+12
+00:01:10,370 --> 00:01:16,650
+I think as developers we all like our code
+-- we feel proud if people -- if we can say
+
+13
+00:01:16,650 --> 00:01:22,920
+about our code that it's really fast and efficient.
+And so at the beginning I'm going to talk
+
+14
+00:01:22,920 --> 00:01:29,920
+about how we can try to work to instill that
+interest and buy-in for performance across
+
+15
+00:01:30,060 --> 00:01:33,110
+other parts of the organization outside of
+engineering.
+
+16
+00:01:33,110 --> 00:01:36,800
+So there will be a little preamble on that
+and then we'll dive into the HTML5 stuff.
+
+17
+00:01:36,800 --> 00:01:42,340
+I just want to mention the slides are up on
+my Web site, stevesouders.com. If you go there
+
+18
+00:01:42,340 --> 00:01:49,340
+there's a link to it. You can check that out.
+Okay. So let's get started -- oh, the other
+
+19
+00:01:51,060 --> 00:01:58,060
+thing I want to mention is really more than
+what I say and more than the words on the
+
+20
+00:01:58,479 --> 00:02:04,070
+slides, I really want people to pay attention
+to the photos in the background of the slides.
+
+21
+00:02:04,070 --> 00:02:08,000
+[ Laughter ]
+>>Steve Souders: Come on, we're going to -- loosen
+
+22
+00:02:08,000 --> 00:02:11,459
+up a little bit. Let's go.
+I mean, like the story of my life, like I
+
+23
+00:02:11,459 --> 00:02:15,549
+take slow things and make them fast, like
+is that very appropriate or what?
+
+24
+00:02:15,549 --> 00:02:18,319
+I need more feedback.
+[ Applause ]
+
+25
+00:02:18,319 --> 00:02:25,319
+>>Steve Souders: Yeah, okay, there we go.
+I worked at Yahoo for a long time, eight years.
+
+26
+00:02:25,769 --> 00:02:29,659
+I was going to be there one year and I was
+there eight years. And about four and a half
+
+27
+00:02:29,659 --> 00:02:35,510
+years ago I joined Google, which was really
+my goal when I first started on Web performance
+
+28
+00:02:35,510 --> 00:02:40,099
+because I knew the people at Google really
+cared about making things fast, and it's true.
+
+29
+00:02:40,099 --> 00:02:46,969
+So I've been there four and a half years.
+I do mostly open source stuff, so I did -- I
+
+30
+00:02:46,969 --> 00:02:53,019
+created YSlow, Cuzillion, Sprite Me, Hammerhead,
+Browserscope. Lindsey Simon now runs that
+
+31
+00:02:53,019 --> 00:02:58,939
+project, very successful project. Jdrop, which
+is a great concept, but not such a successful
+
+32
+00:02:58,939 --> 00:03:04,109
+project, but you should check it out. HTTP
+Archive, another one I don't have time to
+
+33
+00:03:04,109 --> 00:03:10,639
+talk about today, but check it out, HTTParchive.org.
+I wrote "High Performance Web sites," "Even
+
+34
+00:03:10,639 --> 00:03:14,290
+Faster Web sites."
+I taught at Stanford based on the books and
+
+35
+00:03:14,290 --> 00:03:19,579
+I run the velocity conference. Oh, I have
+to update. We just had it this week in fact.
+
+36
+00:03:19,579 --> 00:03:24,010
+I just finished that on Wednesday.
+So I've been doing this performance stuff
+
+37
+00:03:24,010 --> 00:03:29,689
+for quite a listening time now, seven years,
+I think, but when I started back in 2004 I
+
+38
+00:03:29,689 --> 00:03:34,290
+kind of felt like the lone voice in the woods.
+So really I'm sure there were people that
+
+39
+00:03:34,290 --> 00:03:40,340
+were working on it back then, but when I searched
+for information about making Web sites faster,
+
+40
+00:03:40,340 --> 00:03:44,760
+I really didn't find very much. There was
+a great blog post from David Hyatt that actually
+
+41
+00:03:44,760 --> 00:03:51,209
+really opened my eyes to where I should look
+for making Web sites faster.
+
+42
+00:03:51,209 --> 00:03:56,439
+I should mention that when I talk about performance,
+I mean that from the end user's perspective.
+
+43
+00:03:56,439 --> 00:04:01,199
+My goal when I started this in 2004 was to
+make the user experience fast.
+
+44
+00:04:01,199 --> 00:04:07,329
+Now, there's another aspect of performance
+which I think of more as efficiency or scalability
+
+45
+00:04:07,329 --> 00:04:13,089
+on back end servers. How can we handle 10X
+the current number of users with the same
+
+46
+00:04:13,089 --> 00:04:19,370
+hardware? Those kinds of efficiency optimizations
+are also performance, but when I say performance,
+
+47
+00:04:19,370 --> 00:04:25,629
+I really mean speed, speed of the user experience.
+So when I first started working on this there
+
+48
+00:04:25,629 --> 00:04:30,090
+really wasn't that much information out there
+and I would try to go -- I started documenting
+
+49
+00:04:30,090 --> 00:04:35,129
+things, writing books, blogging, trying to
+go to other teams and convince them to focus
+
+50
+00:04:35,129 --> 00:04:40,250
+on performance.
+And it's kind of like QA or writing unit tests.
+
+51
+00:04:40,250 --> 00:04:47,250
+Like try to sell unit tests -- time to build
+unit tests to someone from marketing or sales.
+
+52
+00:04:47,539 --> 00:04:52,250
+That's kind of hard to do, because it's hard
+to visually see the benefit of that.
+
+53
+00:04:52,250 --> 00:04:56,940
+So at the beginning it was kind of the same
+thing with talking about make the Web site
+
+54
+00:04:56,940 --> 00:05:02,050
+faster. Yeah, we need like a couple of people
+to work for at least six months. And you won't
+
+55
+00:05:02,050 --> 00:05:06,879
+see anything different on the site, it will
+just feel faster. And believe me, that's really
+
+56
+00:05:06,879 --> 00:05:09,560
+critical.
+And they're like no, really we want you to
+
+57
+00:05:09,560 --> 00:05:12,569
+add more flash.
+[Laughter].
+
+58
+00:05:12,569 --> 00:05:19,569
+>>Steve Souders: And so fast forward to 2010,
+future of Web apps. We have Fred Wilson. How
+
+59
+00:05:21,550 --> 00:05:26,139
+many people know Fred Wilson?
+Like one of the most prolific bloggers. He's
+
+60
+00:05:26,139 --> 00:05:32,550
+the number one VC out of New York City, out
+of Union Square, very techy guy. But really
+
+61
+00:05:32,550 --> 00:05:37,150
+his business is investment, funding startup
+companies.
+
+62
+00:05:37,150 --> 00:05:42,860
+Here he is speaking at a tech conference about
+his 10 golden principles of successful Web
+
+63
+00:05:42,860 --> 00:05:47,509
+apps. What's number one? Speed. He says, First
+and foremost we believe that speed is more
+
+64
+00:05:47,509 --> 00:05:50,819
+than a feature, speed is the most important
+feature.
+
+65
+00:05:50,819 --> 00:05:57,189
+And he goes on to talk about with their portfolio
+companies they track all of the company's
+
+66
+00:05:57,189 --> 00:06:04,189
+performance, speed, page load time for real
+users. And that in their experience the data
+
+67
+00:06:04,370 --> 00:06:10,949
+shows that when the speed drops off, the success
+of the business drops off.
+
+68
+00:06:10,949 --> 00:06:16,150
+And that's why they do this for all the portfolio
+companies that they work with.
+
+69
+00:06:16,150 --> 00:06:23,099
+And so I think that's to me like Web performance
+has arrived. We have a VC talking at a tech
+
+70
+00:06:23,099 --> 00:06:28,000
+conference about speed, like this was beautiful
+to me. I start almost every slide deck with
+
+71
+00:06:28,000 --> 00:06:32,310
+this slide.
+And actually, a partner of Fred's spoke at
+
+72
+00:06:32,310 --> 00:06:38,689
+the Velocity conference this week.
+And in addition -- if that's not enough to
+
+73
+00:06:38,689 --> 00:06:42,560
+have the number one VC out of New York City
+talking about performance, I'm going to run
+
+74
+00:06:42,560 --> 00:06:48,039
+through a bunch of case studies here that
+correlate performance speed to the success
+
+75
+00:06:48,039 --> 00:06:53,539
+of the business.
+So here's -- about two years ago Bing and
+
+76
+00:06:53,539 --> 00:06:57,259
+Google Search got up on stage at the same
+time and talked about experiments they had
+
+77
+00:06:57,259 --> 00:07:03,460
+run. Bing introduced intentionally a delay
+in serving search results. They took it up
+
+78
+00:07:03,460 --> 00:07:08,249
+to two seconds. At a two-second delay they
+saw all their goodness metrics drop off. Most
+
+79
+00:07:08,249 --> 00:07:13,550
+significantly revenue per user dropped off
+four percent.
+
+80
+00:07:13,550 --> 00:07:18,449
+And of course, these companies are doing this
+on a very small sample size.
+
+81
+00:07:18,449 --> 00:07:24,599
+So Google took this up to 400 milliseconds
+at the max. Didn't see that much dropoff in
+
+82
+00:07:24,599 --> 00:07:29,620
+searches per user, although at Google scale
+that's a fairly significant dropoff.
+
+83
+00:07:29,620 --> 00:07:35,719
+The thing that was really interesting about
+this study was after they removed the delay,
+
+84
+00:07:35,719 --> 00:07:42,719
+they kept that user group segmented and tracked
+their usage. And it took I think six weeks
+
+85
+00:07:42,870 --> 00:07:48,909
+for the usage, the searches per day, and other
+goodness metrics, to resume where they were
+
+86
+00:07:48,909 --> 00:07:55,520
+before the experiment started.
+So the user's awareness of what the experience
+
+87
+00:07:55,520 --> 00:08:00,219
+is like is something that gets ingrained and
+lives with them and it takes a long time to
+
+88
+00:08:00,219 --> 00:08:06,860
+build that and to recover from delays. So
+it's important to stay on top of keeping your
+
+89
+00:08:06,860 --> 00:08:12,219
+Web site fast.
+And Yahoo ran a similar study. And for full
+
+90
+00:08:12,219 --> 00:08:18,029
+page traffic, that means traffic where the
+onload event actually fires, a 400-millisecond
+
+91
+00:08:18,029 --> 00:08:23,400
+delay saw a five to nine percent dropoff in
+traffic.
+
+92
+00:08:23,400 --> 00:08:29,050
+Here Mozilla -- this is about a year old.
+Mozilla, when you want to upgrade to Firefox
+
+93
+00:08:29,050 --> 00:08:36,050
+and you're in Internet Explorer, you get the
+IE landing page, and they made that IE Firefox
+
+94
+00:08:36,220 --> 00:08:43,220
+landing page 2.2 seconds faster, and they
+saw a 15% lift in Firefox downloads. So for
+
+95
+00:08:43,520 --> 00:08:47,420
+them that's their business metric, being a
+nonprofit.
+
+96
+00:08:47,420 --> 00:08:52,530
+And this was a seminal study from Velocity
+a few years ago. Shopzilla did a tremendous
+
+97
+00:08:52,530 --> 00:08:58,390
+performance effort, taking their site from
+seven seconds to about three seconds, and
+
+98
+00:08:58,390 --> 00:09:03,640
+they saw conversion rate go up seven to 12
+percent depending on the country.
+
+99
+00:09:03,640 --> 00:09:08,590
+This is very significant. They saw the unique
+users from search engine marketing more than
+
+100
+00:09:08,590 --> 00:09:14,770
+double. And this was the first study that
+showed another benefit in addition to the
+
+101
+00:09:14,770 --> 00:09:17,920
+business metrics is operating costs going
+down.
+
+102
+00:09:17,920 --> 00:09:24,680
+So here we have the number of servers needed
+to run the Web site after this optimization
+
+103
+00:09:24,680 --> 00:09:30,780
+dropped. And that kind of makes sense because
+like one of the optimizations is connecting
+
+104
+00:09:30,780 --> 00:09:35,390
+scripts together, so instead of making seven
+requests to my server, I'm only making one.
+
+105
+00:09:35,390 --> 00:09:41,040
+Turn on Gzip so the amount of time it takes
+for the response to get off the server box
+
+106
+00:09:41,040 --> 00:09:45,480
+is lowered and so the server can handle a
+higher QPS.
+
+107
+00:09:45,480 --> 00:09:50,880
+And then following that a good friend of mine,
+Bill Scott, when he was at Netflix, they had
+
+108
+00:09:50,880 --> 00:09:56,840
+-- they didn't have Gzip turned on for some
+reason. I can go into it after if people want
+
+109
+00:09:56,840 --> 00:10:01,060
+to ask.
+And he turned it on one day and the [Indiscernible]
+
+110
+00:10:01,060 --> 00:10:03,800
+said the Web site is down, all we're serving
+is the error page.
+
+111
+00:10:03,800 --> 00:10:07,470
+And he said why do you think that?
+And they said the traffic in our data server
+
+112
+00:10:07,470 --> 00:10:10,810
+has dropped in half.
+He said, Nope, we're serving everything, it's
+
+113
+00:10:10,810 --> 00:10:17,140
+just that we turned on Gzip. So this is probably
+six figures a month in a data center that
+
+114
+00:10:17,140 --> 00:10:23,570
+they saved. Pretty significant.
+Here's another example, Edmunds.com turned
+
+115
+00:10:23,570 --> 00:10:28,940
+on -- added an expires header so that their
+resources through their CDN could be cached
+
+116
+00:10:28,940 --> 00:10:35,060
+and they saw their CDN traffic drop by a third.
+So again, this is a six-figure maybe high
+
+117
+00:10:35,060 --> 00:10:42,060
+five-figure savings per month from CDN costs.
+And then not that recently anymore, this was
+
+118
+00:10:43,090 --> 00:10:48,190
+about a year and a half ago, Google announced
+that speed or latency was going to be taken
+
+119
+00:10:48,190 --> 00:10:54,150
+into consideration for page rank. And that
+was caveated, it's one of two hundred signals,
+
+120
+00:10:54,150 --> 00:10:58,340
+it only effects about one percent of search
+results, but still it's a consideration and
+
+121
+00:10:58,340 --> 00:11:03,430
+page rank is really important.
+All of these things about a year, year and
+
+122
+00:11:03,430 --> 00:11:09,690
+a half ago I saw coming together and so I
+coined a new catch phrase for this emerging
+
+123
+00:11:09,690 --> 00:11:16,290
+industry called WPO. It stands for Web Performance
+Optimization. And actually as I mentioned,
+
+124
+00:11:16,290 --> 00:11:21,180
+I keep mentioning, we just had Velocity this
+week, there were a number. Sequoia, Battery
+
+125
+00:11:21,180 --> 00:11:27,200
+Ventures, Excel, Union Square were all there.
+This industry is really growing up. There's
+
+126
+00:11:27,200 --> 00:11:31,160
+a number of startups in this Web performance
+space now.
+
+127
+00:11:31,160 --> 00:11:35,800
+And the elevator pitch is it drives traffic
+to your site. We see that with search engine
+
+128
+00:11:35,800 --> 00:11:42,450
+marketing, with page rank. It improves the
+user experience. You would think that making
+
+129
+00:11:42,450 --> 00:11:47,000
+Web sites faster the user would get in and
+out more quickly, and it's just the opposite.
+
+130
+00:11:47,000 --> 00:11:53,160
+All of these studies show that page views
+per session, session length all increase because
+
+131
+00:11:53,160 --> 00:11:58,490
+the users are having a better experience.
+It increases revenue. We saw stats on that
+
+132
+00:11:58,490 --> 00:12:03,180
+with conversions, downloads, and it reduces
+operating costs.
+
+133
+00:12:03,180 --> 00:12:09,000
+So this all sounds pretty good, right?
+Web PO is really taking off.
+
+134
+00:12:09,000 --> 00:12:15,670
+All right, that's the preamble. How many people
+here think fast Web sites are good?
+
+135
+00:12:15,670 --> 00:12:20,630
+All right. So hopefully if you're having trouble
+selling that -- if this is stuff that you
+
+136
+00:12:20,630 --> 00:12:24,510
+want to work on and you're having trouble
+selling that back home, you can take some
+
+137
+00:12:24,510 --> 00:12:29,760
+of these case studies and show people back
+home that this is a good investment. You'll
+
+138
+00:12:29,760 --> 00:12:33,980
+actually get a positive ROI. And maybe these
+will give a little guidance on what you can
+
+139
+00:12:33,980 --> 00:12:38,870
+track on the business side to actually correlate
+performance improvements with the goals of
+
+140
+00:12:38,870 --> 00:12:42,100
+the business.
+All right. So let's transition into the meat
+
+141
+00:12:42,100 --> 00:12:47,730
+of the topic. I don't want to debate about
+what HTML5 is. There's the spec. I also mean
+
+142
+00:12:47,730 --> 00:12:53,890
+CSS3. It's the new stuff.
+So I'm going to highlight a few things around
+
+143
+00:12:53,890 --> 00:13:00,890
+HTML5 and CSS3 that I think are really important
+to pay attention to from a performance perspective.
+
+144
+00:13:01,900 --> 00:13:08,900
+So the first is if you want to optimize something
+you need to be able to measure it. And right
+
+145
+00:13:09,450 --> 00:13:16,450
+now what we'd really like to measure is the
+user's perception of speed. Currently there's
+
+146
+00:13:18,360 --> 00:13:25,300
+no JavaScript handler for brain activity.
+So what we've been using as an industry -- as
+
+147
+00:13:25,300 --> 00:13:31,390
+a proxy for that is the window onload event.
+Now, the problem with that is, for example,
+
+148
+00:13:31,390 --> 00:13:36,780
+if I do a Google search and I click on a search
+result that takes me to Whole Foods, and I
+
+149
+00:13:36,780 --> 00:13:41,780
+want to measure -- from Whole Foods' perspective,
+they want to know how long it took for the
+
+150
+00:13:41,780 --> 00:13:46,180
+user to click that link to when Whole Foods
+was ready. And the problem is tracking the
+
+151
+00:13:46,180 --> 00:13:52,170
+start time. How do you track the time that
+the user started by clicking on that link?
+
+152
+00:13:52,170 --> 00:13:57,800
+Because that's the user's perception time.
+And what you can do is at the top of the Whole
+
+153
+00:13:57,800 --> 00:14:01,950
+Foods page you can put a script lock that
+takes a time measurement, but that totally
+
+154
+00:14:01,950 --> 00:14:06,440
+ignores the time it takes for the request
+to go up to the Whole Foods server, for it
+
+155
+00:14:06,440 --> 00:14:11,360
+to stitch together all of the content and
+send that back down to the browser.
+
+156
+00:14:11,360 --> 00:14:17,600
+So about two years ago Google and Microsoft
+formed this Web performance working group
+
+157
+00:14:17,600 --> 00:14:24,600
+as part of the W3C, and the first task was
+to create the Web timing spec, which is actually
+
+158
+00:14:24,890 --> 00:14:29,440
+three specs, navigation timing, user timing,
+resource timing.
+
+159
+00:14:29,440 --> 00:14:33,850
+How many people here use navigation timing
+to measure Web sites?
+
+160
+00:14:33,850 --> 00:14:38,680
+Good. It's not good that there were so few
+hands up. It's good because I'm going to talk
+
+161
+00:14:38,680 --> 00:14:43,590
+about it a little bit.
+So those of three and I'm going to talk about
+
+162
+00:14:43,590 --> 00:14:49,120
+each one in a little bit more detail. They're
+also working on a few other specs, page visibility
+
+163
+00:14:49,120 --> 00:14:53,670
+I'll touch on quickly. Script-base animations
+I'm not going to spend too much time on, but
+
+164
+00:14:53,670 --> 00:14:58,120
+people are doing a lot of animation with JavaScript
+and they're working on making that better.
+
+165
+00:14:58,120 --> 00:15:02,410
+And efficient script yielding, since the browsers
+are single threaded, if you have long running
+
+166
+00:15:02,410 --> 00:15:09,140
+JavaScript it can really degrade the user
+experience. So what can scripts do to mitigate
+
+167
+00:15:09,140 --> 00:15:11,970
+that.
+But let me talk about the timing specs. So
+
+168
+00:15:11,970 --> 00:15:18,900
+navigation timing actually is out. The spec
+is done and it's available today. If you look
+
+169
+00:15:18,900 --> 00:15:25,530
+at window.performance, there's this timing
+object. And you can do things like from the
+
+170
+00:15:25,530 --> 00:15:32,530
+timing object you can get the navigation start
+and the load event end, take the difference.
+
+171
+00:15:32,890 --> 00:15:37,430
+And the nice thing is that the Web timing
+spec gives us two main things. This is the
+
+172
+00:15:37,430 --> 00:15:43,430
+first one. This is the time at which the -- the
+epic time at which the user clicked on that
+
+173
+00:15:43,430 --> 00:15:50,430
+link on Google. So now the user can -- the
+Web site owner can get the full time from
+
+174
+00:15:50,870 --> 00:15:57,570
+when the click happened to when the onload
+event or whatever event you wanted to. And
+
+175
+00:15:57,570 --> 00:16:01,520
+in fact if you put a little time stamp at
+the top of the page you can break that into
+
+176
+00:16:01,520 --> 00:16:06,150
+what I call the back end time, the time from
+the click to when the first byte arrived and
+
+177
+00:16:06,150 --> 00:16:10,130
+the time from the first byte to when the full
+page loaded.
+
+178
+00:16:10,130 --> 00:16:14,600
+And there's a bunch of other timings in there.
+You can get DNS time and connection time.
+
+179
+00:16:14,600 --> 00:16:19,170
+There are a bunch of time values that you
+can get in there.
+
+180
+00:16:19,170 --> 00:16:23,530
+So this has been out -- the spec was finished
+probably about six months ago, maybe a little
+
+181
+00:16:23,530 --> 00:16:27,350
+longer.
+And I think IE 9 -- no, I think Chrome was
+
+182
+00:16:27,350 --> 00:16:32,930
+the first to implement it. But it's in IE
+9 and up, Firefox 7 and up. They had some
+
+183
+00:16:32,930 --> 00:16:39,820
+bugs in the Firefox 7 in the early days, but
+those are all fixed now. It's on Android.
+
+184
+00:16:39,820 --> 00:16:44,190
+And I heard a month ago it's on Blackberry,
+but I haven't tested that.
+
+185
+00:16:44,190 --> 00:16:48,700
+And here's a good URL from Tony Gentilcore
+that kind of explains how you could use it
+
+186
+00:16:48,700 --> 00:16:52,990
+and some examples of getting different time
+values.
+
+187
+00:16:52,990 --> 00:16:59,610
+So one thing that's really cool is Google
+is taking -- for page rank is taking time
+
+188
+00:16:59,610 --> 00:17:04,039
+into consideration, but when they announce
+that -- I'm really proud of the work from
+
+189
+00:17:04,039 --> 00:17:09,120
+the make the Web faster team at Google, where
+it wasn't like okay, we're going to hold you
+
+190
+00:17:09,120 --> 00:17:13,069
+responsible for it, good luck. We also rolled
+out several tools.
+
+191
+00:17:13,069 --> 00:17:20,069
+In Webmaster tools you can go in there and
+you can see how your site compares its speed,
+
+192
+00:17:20,510 --> 00:17:25,430
+compares to the rest of the industry.
+And really the folks who were going to get
+
+193
+00:17:25,430 --> 00:17:30,650
+penalized from a page rank perspective are
+going to be in the lower 10%, maybe even lower
+
+194
+00:17:30,650 --> 00:17:36,810
+than that. So maybe you're not awesome, but
+if you're in the top 50% you probably don't
+
+195
+00:17:36,810 --> 00:17:40,770
+have too much to worry about there. So that's
+a little help, but the other thing that's
+
+196
+00:17:40,770 --> 00:17:47,000
+nice to get more granularity, if you use Google
+analytics, we added this time measurement
+
+197
+00:17:47,000 --> 00:17:54,000
+capability in Google Analytics. I think we
+call it site speed -- yeah, site speed.
+
+198
+00:17:55,770 --> 00:18:01,760
+Yeah, this screen dump is a little old. I
+think the UI is a little difference now. But
+
+199
+00:18:01,760 --> 00:18:06,720
+the nice thing is when we first launched it
+you had to add a little bit more to your Google
+
+200
+00:18:06,720 --> 00:18:12,150
+Analytics snippet, and then about three or
+four months ago we turned it on for everyone.
+
+201
+00:18:12,150 --> 00:18:17,810
+So even if you had no awareness of the site
+speed, time measurement capability, you've
+
+202
+00:18:17,810 --> 00:18:21,810
+been gathering data for about five months
+now, four or five months. So you could go
+
+203
+00:18:21,810 --> 00:18:27,560
+to Google Analytics and go and find this site
+speed tab and you could get charts, and it's
+
+204
+00:18:27,560 --> 00:18:33,840
+the usual Google Analytics slice and dice
+capabilities by browser, by geographic region,
+
+205
+00:18:33,840 --> 00:18:37,480
+by page, and you can see what your performance
+is.
+
+206
+00:18:37,480 --> 00:18:42,640
+This is my Web site, so I don't know what
+was going on there, but that was awhile ago.
+
+207
+00:18:42,640 --> 00:18:48,070
+See, now it's fast. Well, in November it was
+fast.
+
+208
+00:18:48,070 --> 00:18:50,840
+Thank you for that. I appreciate that.
+[ Laughter ]
+
+209
+00:18:50,840 --> 00:18:56,250
+>>Steve Souders: Oh, I think I probably -- now
+it's on by default. Oh, it's only in browsers
+
+210
+00:18:56,250 --> 00:19:02,300
+that support nav timing, so we really need
+mobile browsers to start supporting this more.
+
+211
+00:19:02,300 --> 00:19:08,530
+Oh, it's sampled. So by default it's a one
+percent sampling rate.
+
+212
+00:19:08,530 --> 00:19:12,310
+If you have a huge Web site, like one percent
+is probably fine. And the guys have done a
+
+213
+00:19:12,310 --> 00:19:16,660
+really smart thing. Like they don't start
+it at midnight and if you're a huge Web site
+
+214
+00:19:16,660 --> 00:19:23,070
+you've used your one percent by 12:15. They,
+like, dole it out throughout the day. But
+
+215
+00:19:23,070 --> 00:19:30,070
+if you're a smaller Web site, you can change
+it with some Google Analytics commands to
+
+216
+00:19:30,780 --> 00:19:36,540
+cover 100% of your Web site, but it's limited,
+I think, to 10,000 measurements a day. But
+
+217
+00:19:36,540 --> 00:19:40,570
+again, those will be sampled throughout the
+day, so you won't get biases based on peak
+
+218
+00:19:40,570 --> 00:19:44,360
+time and stuff like that.
+And then I'm just going to talk really quick
+
+219
+00:19:44,360 --> 00:19:51,170
+about the other two parts of the timing spec.
+There's resource timing. And this is -- there's
+
+220
+00:19:51,170 --> 00:19:54,750
+drafts of this available, but this hasn't
+been nailed down. I don't think there's any
+
+221
+00:19:54,750 --> 00:19:59,540
+browser that supports it yet because the draft
+is -- the spec is still being defined.
+
+222
+00:19:59,540 --> 00:20:04,340
+But this -- if you think about it, navigation
+timing is basically this same information,
+
+223
+00:20:04,340 --> 00:20:08,890
+but it's at the page level. It's really high.
+And what we're doing with resource timing
+
+224
+00:20:08,890 --> 00:20:14,250
+is we're bringing that down to every HTTP
+request in the page. So for every HTTP request
+
+225
+00:20:14,250 --> 00:20:20,040
+in the page you can get DNS lookup time, connection
+time, total time for that to come back. This
+
+226
+00:20:20,040 --> 00:20:25,790
+is going to be a great mechanism for if you're
+using a CDN to track how your CDN -- or maybe
+
+227
+00:20:25,790 --> 00:20:30,620
+you're testing out multiple CDN's, to see
+how their performance is going.
+
+228
+00:20:30,620 --> 00:20:35,570
+It does have to worry about security safeguards.
+So you could have some kind of hack where,
+
+229
+00:20:35,570 --> 00:20:42,570
+you know, on my Web site I have the logo from
+some nefarious Web site. And when you land
+
+230
+00:20:43,010 --> 00:20:47,920
+on my Web site I can actually see what the
+DNS time is. And if the DNS time is zero,
+
+231
+00:20:47,920 --> 00:20:53,240
+I know that you've been to this other Web
+site. So there are some security safeguards
+
+232
+00:20:53,240 --> 00:20:59,260
+with HTTP headers. Web sites can allow or
+not allow cross-domain tracking of resource
+
+233
+00:20:59,260 --> 00:21:02,820
+timing.
+And then there's also user timing, which is
+
+234
+00:21:02,820 --> 00:21:08,740
+really important for people building Web2O
+apps, AJAXy stuff. Something like Gmail that
+
+235
+00:21:08,740 --> 00:21:14,150
+is open for several hours, there's no concept
+of a page load time. There's only one of those
+
+236
+00:21:14,150 --> 00:21:18,040
+when you start it up.
+So this is, if you're doing HXE stuff like
+
+237
+00:21:18,040 --> 00:21:24,140
+compose, this will give you commands that
+you can use to say the user is about to do
+
+238
+00:21:24,140 --> 00:21:29,410
+a compose operation, let me -- let me mark
+a start time and then when the compose is
+
+239
+00:21:29,410 --> 00:21:34,330
+all done, you can mark an end time, you can
+give it a label, and so it lets you define
+
+240
+00:21:34,330 --> 00:21:40,200
+and track any timing episodes that you care
+about in the Web apps that you are building.
+
+241
+00:21:40,200 --> 00:21:45,490
+So it basically is like nav timing but it's
+much more flexible and lets you define the
+
+242
+00:21:45,490 --> 00:21:50,790
+start and stop times whenever you want in
+your code.
+
+243
+00:21:50,790 --> 00:21:55,480
+The other one that I mentioned that they are
+working on is page visibility. This one is
+
+244
+00:21:55,480 --> 00:22:02,100
+important from a performance perspective.
+Mostly from a -- from an altruistic perspective,
+
+245
+00:22:02,100 --> 00:22:06,930
+but it could also affect, you know, what you
+are doing on your Web site. And so basically
+
+246
+00:22:06,930 --> 00:22:11,370
+what the spec let's you do is detect when
+your page is visible. So like one thing I
+
+247
+00:22:11,370 --> 00:22:16,180
+do in the morning when I come in, since I
+can't stand to wait for Web sites to load,
+
+248
+00:22:16,180 --> 00:22:21,480
+is I have this script and I -- you know, I
+boot up my machine, I load the script, it
+
+249
+00:22:21,480 --> 00:22:26,309
+loads my 30 Web sites that I read every morning
+and then I go get breakfast and when I come
+
+250
+00:22:26,309 --> 00:22:30,890
+back, all of the pages are loaded and I can
+just go through all of the tabs. But only
+
+251
+00:22:30,890 --> 00:22:36,800
+the top tab is visible. And inevitably when
+I come back, if I left my sound on, my office
+
+252
+00:22:36,800 --> 00:22:41,790
+manager, you know, giving me a dirty look,
+because there's some hidden tab that's playing
+
+253
+00:22:41,790 --> 00:22:46,700
+video. And the sound -- or maybe multiple
+tabs that are playing video and the sound
+
+254
+00:22:46,700 --> 00:22:52,130
+is just annoying and it's like really? Like
+you started the video, even though like the
+
+255
+00:22:52,130 --> 00:22:54,670
+tab is not even visible? Like why did you
+do that?
+
+256
+00:22:54,670 --> 00:23:01,670
+And the page visibility API introduces a way
+to detect whether or not the tab of the window
+
+257
+00:23:02,220 --> 00:23:06,340
+is visible.
+And so this is also really important, like,
+
+258
+00:23:06,340 --> 00:23:13,080
+if you are tracking metrics, like page impressions.
+If the user opened the tab but they're never
+
+259
+00:23:13,080 --> 00:23:17,330
+going to go to it, but you counted it as an
+impression, that's a miscount. Same thing
+
+260
+00:23:17,330 --> 00:23:24,330
+with ads. Again, the example of video. You
+might be doing something like showing them,
+
+261
+00:23:24,660 --> 00:23:29,700
+you know, stock updates or the latest messages
+from friends or you might be rotating through
+
+262
+00:23:29,700 --> 00:23:34,320
+a carousel of photos and they're not looking
+at it. So not only are you kind of -- like
+
+263
+00:23:34,320 --> 00:23:38,280
+you might rotate through a carousel of photos
+that started with their favorite photo, but
+
+264
+00:23:38,280 --> 00:23:43,450
+by the time they opened the tab they are down
+to their 5757th favorite photo and you have
+
+265
+00:23:43,450 --> 00:23:48,690
+kind of ruined the experience for yourself.
+So you could use it there.
+
+266
+00:23:48,690 --> 00:23:55,690
+Um, the other thing that you can do is -- this
+API can be used for pre-fetching resources.
+
+267
+00:23:58,390 --> 00:24:05,390
+So the Web site owner can decide and -- the
+Web site owner can decide if they want to
+
+268
+00:24:06,790 --> 00:24:13,370
+pre-fetch resources maybe for the next page
+and also if the page should be prerendered.
+
+269
+00:24:13,370 --> 00:24:19,260
+This is something that Chrome does. So Chrome
+can actually prerender a page in the background.
+
+270
+00:24:19,260 --> 00:24:25,620
+But one of the problems with doing that is,
+again, if there are ad impression counts or
+
+271
+00:24:25,620 --> 00:24:31,040
+page impression counts that are firing, and
+the page is being rendered in the background,
+
+272
+00:24:31,040 --> 00:24:37,620
+and the user actually never sees it, that's
+a miscount. So the page visibility API gives
+
+273
+00:24:37,620 --> 00:24:43,740
+people controlling those metrics the ability
+to only fire the metrics when it makes sense.
+
+274
+00:24:43,740 --> 00:24:49,440
+And I think this is only in Chrome right now.
+But what it looks like is you can say WebKit
+
+275
+00:24:49,440 --> 00:24:54,559
+hidden is the property, you can look at to
+see whether or not the tab is hidden and this
+
+276
+00:24:54,559 --> 00:25:01,559
+is an event handler you can attach to to detect
+when the page does become visible.
+
+277
+00:25:03,490 --> 00:25:10,490
+So we had script defer in IE for years, but
+now with HTML5 the async and defer attributes
+
+278
+00:25:12,179 --> 00:25:19,179
+are officially supported across almost every
+browser out there. I'm not going to go into
+
+279
+00:25:19,920 --> 00:25:26,140
+it here but in fact I've talked for years
+and written extensively about the impact that
+
+280
+00:25:26,140 --> 00:25:31,530
+scripts have on the user experience.
+So I mentioned earlier how the UI thread,
+
+281
+00:25:31,530 --> 00:25:37,809
+you know, the UI is single threaded, the browser
+is single threaded, so if you have JavaScript,
+
+282
+00:25:37,809 --> 00:25:43,800
+for example, that takes three seconds to execute,
+the user is clicking in the browser and they
+
+283
+00:25:43,800 --> 00:25:47,929
+are trying to scroll the window and nothing
+is happening because the JavaScript is blocking
+
+284
+00:25:47,929 --> 00:25:53,950
+any of that interaction. And so -- so that
+also happens when the script is being downloaded.
+
+285
+00:25:53,950 --> 00:25:58,630
+So if you have a 500 k JavaScript payload
+and the user has a slow connection, again,
+
+286
+00:25:58,630 --> 00:26:04,210
+it can take seconds for that to download.
+While that's downloading, the UI could be
+
+287
+00:26:04,210 --> 00:26:10,740
+blocked. Unless you can do your script loading
+asynchronously. So if you just do scriptsource
+
+288
+00:26:10,740 --> 00:26:17,740
+equals main.js it's going to stop the HTML
+parser from parsing past that script tag and
+
+289
+00:26:19,340 --> 00:26:24,660
+it's also going to block rendering. No browser
+in the world will render anything below a
+
+290
+00:26:24,660 --> 00:26:31,240
+script tag until that script is downloaded
+and parsed and executed. But you can use the
+
+291
+00:26:31,240 --> 00:26:38,200
+async attribute which tells the browser to
+start the download but to go ahead and continue
+
+292
+00:26:38,200 --> 00:26:45,200
+parsing the HTML and rendering the DOM elements
+in the page. So it gives the user feedback.
+
+293
+00:26:45,800 --> 00:26:49,970
+It's a better user experience. The user can
+see the page rendering, especially because
+
+294
+00:26:49,970 --> 00:26:54,610
+a lot of times we put scripts in the heads
+of our pages, which means the entire body
+
+295
+00:26:54,610 --> 00:26:59,750
+is blocked from rendering until all of those
+scripts are downloaded, parsed and executed.
+
+296
+00:26:59,750 --> 00:27:05,040
+And so this tells the browser, download it
+in the background, continue parsing; and as
+
+297
+00:27:05,040 --> 00:27:08,880
+soon as the script arrives, parse and execute
+it.
+
+298
+00:27:08,880 --> 00:27:14,920
+So one -- two tricky things about this is
+you can't have any document.write in this
+
+299
+00:27:14,920 --> 00:27:20,030
+JavaScript code because parser is already
+past that point. You are going to get very
+
+300
+00:27:20,030 --> 00:27:26,350
+bad and varied results across browsers if
+you do document.write in an async script.
+
+301
+00:27:26,350 --> 00:27:31,630
+The other challenge with async is suppose
+that I have three scripts, A, B, C, C depends
+
+302
+00:27:31,630 --> 00:27:38,630
+on B, B depends on A. But A is probably like
+jQuery, so might be my biggest script. C might
+
+303
+00:27:38,690 --> 00:27:42,650
+be really tiny, so if I load all of these
+async, which is the one that's going to come
+
+304
+00:27:42,650 --> 00:27:48,740
+back first? C. If I loaded async, it's going
+to be parsed and executed as soon as it comes
+
+305
+00:27:48,740 --> 00:27:53,670
+back and it's going to get undefined symbol
+errors because B might not be back and A might
+
+306
+00:27:53,670 --> 00:27:59,679
+not be back. You can't just willy-nilly add
+an async attribute to all of your script tags.
+
+307
+00:27:59,679 --> 00:28:03,830
+But what you can do is you can use defer.
+If it's JavaScript that isn't critical for
+
+308
+00:28:03,830 --> 00:28:09,230
+rendering content to the page, and doesn't
+have document.write can add the defer attribute.
+
+309
+00:28:09,230 --> 00:28:16,040
+It's pretty similar. It says download it in
+the background, let the parser continue parsing
+
+310
+00:28:16,040 --> 00:28:21,460
+and rendering DOM elements. After the entire
+page is done, parse and execute these deferred
+
+311
+00:28:21,460 --> 00:28:25,860
+scripts and do it in the order that they were
+listed in the page. And so if you have those
+
+312
+00:28:25,860 --> 00:28:30,990
+interdependencies across scripts, defer is
+a good fallback.
+
+313
+00:28:30,990 --> 00:28:37,990
+But -- but this still doesn't give all of
+the control that I think is really needed
+
+314
+00:28:38,260 --> 00:28:43,750
+to build a good user experience for -- for
+Web apps, especially on mobile.
+
+315
+00:28:43,750 --> 00:28:48,960
+For example, one thing that I would like to
+do is I would like to download maybe a big
+
+316
+00:28:48,960 --> 00:28:55,150
+script, 100 k, 300 k, 500 k, but not parse
+and execute it. It might be a script for something
+
+317
+00:28:55,150 --> 00:29:00,679
+like popping up a div to compose a message
+or address book stuff that is only needed
+
+318
+00:29:00,679 --> 00:29:06,620
+if the user starts typing an email message.
+But if I download that, as soon as it hits
+
+319
+00:29:06,620 --> 00:29:11,850
+the browser, the parse and execute is going
+to happen and it's going to lock up the UI.
+
+320
+00:29:11,850 --> 00:29:17,440
+So I really want to get this JavaScript down
+to the device, get it in cache, but parse
+
+321
+00:29:17,440 --> 00:29:20,690
+and execute it, depending on what the user
+does.
+
+322
+00:29:20,690 --> 00:29:25,400
+The other thing that I would like to have
+is a control over when the download happens.
+
+323
+00:29:25,400 --> 00:29:30,480
+Right now the spec doesn't say when browser
+should download the script. But if I've said
+
+324
+00:29:30,480 --> 00:29:36,470
+defer, if I've said async, certainly if I've
+said defer, I would like you to do this download,
+
+325
+00:29:36,470 --> 00:29:40,520
+after everything more important is already
+done, because there's a limited number of
+
+326
+00:29:40,520 --> 00:29:46,780
+TCP connections that the browser will make,
+and if you download scripts or multiple scripts,
+
+327
+00:29:46,780 --> 00:29:51,179
+then things like the background image of the
+page, the logo at the top of the page, might
+
+328
+00:29:51,179 --> 00:29:57,240
+actually be pushed out because you are already
+using the six TCP connections that most browsers
+
+329
+00:29:57,240 --> 00:30:03,520
+allocate to a domain.
+So we don't have control over those in markup,
+
+330
+00:30:03,520 --> 00:30:09,450
+but there are techniques that you can use
+to get that behavior. So this is one that
+
+331
+00:30:09,450 --> 00:30:16,450
+Gmail wrote about quite a while ago. Gmail
+mobile team. And it's a hack. I think it's
+
+332
+00:30:16,620 --> 00:30:21,070
+a beautiful hack.
+So what they did was in the page, they have
+
+333
+00:30:21,070 --> 00:30:26,260
+-- you know, maybe 300 k of JavaScript. I'm
+just making these numbers up. I don't know
+
+334
+00:30:26,260 --> 00:30:30,049
+how much JavaScript Gmail has. It's probably
+more than that. But they have a lot of JavaScript
+
+335
+00:30:30,049 --> 00:30:37,049
+in here and they just wrap it in -- in comment
+delimiters. So what happens is this will get
+
+336
+00:30:37,290 --> 00:30:43,240
+downloaded to the browser, it will be cached,
+it's already resident. But it's not parsed
+
+337
+00:30:43,240 --> 00:30:50,240
+and executed. So -- so let's say this is compose
+a new message JavaScript. It pops up in div,
+
+338
+00:30:51,530 --> 00:30:58,530
+it formats everything, it does error detection
+and things like that. So we don't really need
+
+339
+00:30:59,200 --> 00:31:04,090
+this JavaScript to block the UI thread for
+parse and execution until the user actually
+
+340
+00:31:04,090 --> 00:31:08,350
+clicks on the compose button, which they may
+never do during this session. So what we do
+
+341
+00:31:08,350 --> 00:31:13,980
+is we download the code because we want it
+on the device. When they click compose, especially
+
+342
+00:31:13,980 --> 00:31:18,730
+on a phone, we don't want to wait to download
+300 k of JavaScript, we don't want to make
+
+343
+00:31:18,730 --> 00:31:23,290
+the user wait. So what we do is we download
+it, you can even download it in the background.
+
+344
+00:31:23,290 --> 00:31:27,720
+It's not going to block the UI thread when
+it arrives. Now the user clicks compose, you
+
+345
+00:31:27,720 --> 00:31:32,690
+have all of the JavaScript on the client and
+now you just find the DOM element for the
+
+346
+00:31:32,690 --> 00:31:39,240
+script tag, remove the comment delimiters
+and eval the code. A lot of people say eval
+
+347
+00:31:39,240 --> 00:31:44,549
+is evil. Doug Crawford is here today, I saw
+him downstairs, he'll tell you that. Certainly
+
+348
+00:31:44,549 --> 00:31:49,760
+eval is evil from a security perspective.
+If you are eval'ing code that you didn't generate,
+
+349
+00:31:49,760 --> 00:31:53,870
+that can produce really bad things. You wouldn't
+want to do this with third party widgets and
+
+350
+00:31:53,870 --> 00:32:00,870
+ads, et cetera. So this is code that you control,
+that you generated. So from a security perspective,
+
+351
+00:32:01,710 --> 00:32:06,799
+it's okay and the actual performance of eval
+is less than 10% worse than just a script
+
+352
+00:32:06,799 --> 00:32:11,440
+block. So from a performance perspective,
+it's actually down like around one or two
+
+353
+00:32:11,440 --> 00:32:16,299
+percent. From a performance perspective, it's
+fine. So you control the code, performance-wise
+
+354
+00:32:16,299 --> 00:32:21,100
+it's good. So this is a -- this is a really
+nice hack.
+
+355
+00:32:21,100 --> 00:32:25,700
+And it's perfect for pre-fetching JavaScript
+that you might need but you are not sure.
+
+356
+00:32:25,700 --> 00:32:29,530
+It's possible that you will never need it.
+So don't block the UI thread, especially for
+
+357
+00:32:29,530 --> 00:32:36,530
+large amounts of JavaScript.
+You know, this -- might require a fair amount
+
+358
+00:32:36,580 --> 00:32:43,580
+of rewriting on your Web site. So I wrote
+something called ControlJS, that's open source,
+
+359
+00:32:44,110 --> 00:32:48,059
+you can get it off my Web site. Several big
+companies -- I was just at this conference,
+
+360
+00:32:48,059 --> 00:32:52,690
+and I found that -- including Wal-Mart, I
+found several big companies that were using
+
+361
+00:32:52,690 --> 00:32:56,330
+this that I was really surprised at because
+I don't do a lot of testing.
+
+362
+00:32:56,330 --> 00:33:01,010
+[ Laughter ]
+>>Steve Souders: I trust that they've done
+
+363
+00:33:01,010 --> 00:33:05,200
+that.
+And actually, who else -- Washington Post
+
+364
+00:33:05,200 --> 00:33:11,760
+is using it. And I asked them to contribute
+back the robustness changes they had to add.
+
+365
+00:33:11,760 --> 00:33:17,540
+And so the thing that I like about this technique
+is that it's all done in markup. So we can
+
+366
+00:33:17,540 --> 00:33:23,429
+just change -- instead of script source, having
+type text script, we would say text CJS, and
+
+367
+00:33:23,429 --> 00:33:28,340
+instead of a source we have a data control.js
+source, so this means that the browser will
+
+368
+00:33:28,340 --> 00:33:34,100
+basically just ignore this and you can also
+do it with inline scripts just by changing
+
+369
+00:33:34,100 --> 00:33:41,100
+the type. Then you load control.js.
+What it does is it crawls the DOM, and it
+
+370
+00:33:41,190 --> 00:33:46,500
+finds these script nodes and it does the right
+thing. It downloads it asynchronously, it
+
+371
+00:33:46,500 --> 00:33:50,790
+does it in the background. Again, you would
+only do this with scripts that aren't critical
+
+372
+00:33:50,790 --> 00:33:56,950
+for generating the initial user experience
+and scripts that do not have any document.write.
+
+373
+00:33:56,950 --> 00:34:03,380
+But I think it's a little easier to get on
+top of. You can even add this execute false,
+
+374
+00:34:03,380 --> 00:34:08,559
+which says downloaded but don't parse and
+execute it. And then later when the user,
+
+375
+00:34:08,559 --> 00:34:15,559
+for example, clicks on the compose button,
+you can say control.js execute script. So
+
+376
+00:34:16,239 --> 00:34:21,569
+that's kind of a nice alternative. The other
+thing I like about it, how many people here
+
+377
+00:34:21,569 --> 00:34:28,029
+have played with -- with JavaScript loader,
+script loaders, lab js or YUI lowered. Some
+
+378
+00:34:28,029 --> 00:34:33,409
+people -- the thing that I find ironic about
+all of the other alternatives out there is
+
+379
+00:34:33,409 --> 00:34:37,979
+their goal is to help you load JavaScript
+asynchronously. They do that with a helper
+
+380
+00:34:37,979 --> 00:34:41,929
+script, but you have to load their helper
+script synchronously.
+
+381
+00:34:41,929 --> 00:34:44,589
+[ Laughter ]
+>>Steve Souders: Anyone else think that's
+
+382
+00:34:44,589 --> 00:34:51,589
+weird? Like, you know, synchronous loaded
+scripts are bad. So you load our scripts synchronously
+
+383
+00:34:51,789 --> 00:34:54,109
+and we will help you avoid that problem.
+[ Laughter ]
+
+384
+00:34:54,109 --> 00:34:59,589
+>>Steve Souders: Like -- so from the beginning,
+one of the requirements of ControlJS was that
+
+385
+00:34:59,589 --> 00:35:05,049
+you could load it asynchronously. So you would
+use the Google Analytics, async loading pattern
+
+386
+00:35:05,049 --> 00:35:09,759
+and load the script anywhere you want in a
+page and everything will still work.
+
+387
+00:35:09,759 --> 00:35:16,079
+So JavaScript is a really, really big problem.
+I'm -- make sure that you look at how it's
+
+388
+00:35:16,079 --> 00:35:20,910
+impacting your Web site and if possible adopt
+some of these asynchronous loading techniques.
+
+389
+00:35:20,910 --> 00:35:27,369
+Okay. Shifting gears, I wanted to talk about
+app cache, which is good for offline apps
+
+390
+00:35:27,369 --> 00:35:32,589
+and also for longer caching.
+So again, the importance of the background
+
+391
+00:35:32,589 --> 00:35:39,589
+photo. You are in the desert. You typically
+don't have a good connection. So having the
+
+392
+00:35:40,569 --> 00:35:42,680
+offline apps is really important.
+[ Laughter ]
+
+393
+00:35:42,680 --> 00:35:49,680
+>>Steve Souders: There we go, the groan. So
+building offline apps is really cool. I think
+
+394
+00:35:51,910 --> 00:35:57,329
+Google docs just announced that this week
+or last week. It really helps with the user
+
+395
+00:35:57,329 --> 00:36:03,999
+experience when you have a bad connection,
+you are flying, whatever. But also people
+
+396
+00:36:03,999 --> 00:36:07,700
+are using it from a performance perspective
+for better caching.
+
+397
+00:36:07,700 --> 00:36:14,259
+So this is a study that I did five or six
+years ago with (saying name) when we were
+
+398
+00:36:14,259 --> 00:36:18,660
+at Yahoo, it's been a long time, but I've
+talked to people at other big Web companies
+
+399
+00:36:18,660 --> 00:36:23,900
+who have run the same experiment and they
+basically get the same results. So I encourage
+
+400
+00:36:23,900 --> 00:36:29,140
+you to run it on your Web site. Basically
+we put a hidden pixel in every page, we tracked
+
+401
+00:36:29,140 --> 00:36:36,140
+how often people made a request with or without
+an if-modified-since header. If they send
+
+402
+00:36:36,720 --> 00:36:41,160
+the if-modified-since request, it means they
+have it in the cache. If they don't, it means
+
+403
+00:36:41,160 --> 00:36:45,529
+they don't have it in the cache. So we can
+track how many people coming in, how many
+
+404
+00:36:45,529 --> 00:36:52,130
+page views are done with a full cache, a prime
+cache. Our resources are in their cache or
+
+405
+00:36:52,130 --> 00:36:55,019
+with an empty cache, our resources are not
+in their cache.
+
+406
+00:36:55,019 --> 00:37:01,229
+I talk about in my best practices setting
+a far futures expires header. Turns out even
+
+407
+00:37:01,229 --> 00:37:06,660
+if you do that, browsers aren't going to keep
+things around for that long or for whatever
+
+408
+00:37:06,660 --> 00:37:11,019
+reason, users are going to come in and they're
+not going to have everything in cache that
+
+409
+00:37:11,019 --> 00:37:15,819
+you might expect.
+So what we see here is that for page views,
+
+410
+00:37:15,819 --> 00:37:22,819
+if you look at it from the page views perspective,
+about 20% of page views on any given day are
+
+411
+00:37:23,160 --> 00:37:28,880
+done with a -- with an empty cache. Right?
+My resources are not in the cache.
+
+412
+00:37:28,880 --> 00:37:33,680
+You can see on the first day, when we put
+this pixel on the page, 100% of the pages
+
+413
+00:37:33,680 --> 00:37:38,470
+had an empty cache because this image had
+never been loaded before. After about two
+
+414
+00:37:38,470 --> 00:37:43,930
+weeks, we hit a steady state and we can see
+it's about 20%. We ran this on various properties
+
+415
+00:37:43,930 --> 00:37:48,759
+at Yahoo that had different user metrics.
+This was always about the same. This number
+
+416
+00:37:48,759 --> 00:37:54,759
+fluctuated a little bit more, but it was always
+between 40 and 60%. About half of your users
+
+417
+00:37:54,759 --> 00:38:00,400
+come in at least once a day with an empty
+cache. So why are these numbers different?
+
+418
+00:38:00,400 --> 00:38:05,299
+Typically, users are doing multiple page views
+in a session. So even if they have an empty
+
+419
+00:38:05,299 --> 00:38:10,259
+cache, they will come in and have an empty
+cache page view, which will show up here and
+
+420
+00:38:10,259 --> 00:38:14,479
+show up here. But then they might do three
+or four more page views, which are going to
+
+421
+00:38:14,479 --> 00:38:19,279
+be a prime cache, because when they did their
+empty cache page load stuff got put into the
+
+422
+00:38:19,279 --> 00:38:24,910
+cache. So that's why these numbers are different.
+But it still means people anchor on negative
+
+423
+00:38:24,910 --> 00:38:30,210
+experience. So if half of your users were
+coming in every day with an empty cache, and
+
+424
+00:38:30,210 --> 00:38:34,549
+you are not taking that into consideration,
+you are like, well, yeah, it's not 300 k image
+
+425
+00:38:34,549 --> 00:38:39,529
+or script but it will be in the cache, for
+about half of your users, it's not going to
+
+426
+00:38:39,529 --> 00:38:45,720
+be in the cache. So you can run this experiment
+yourself and you will get the same results.
+
+427
+00:38:45,720 --> 00:38:51,319
+So the cache, even if you are doing far future
+expires, the cache might not be doing what
+
+428
+00:38:51,319 --> 00:38:58,049
+you think. And -- and here's a great study
+from Guy Poe over at Blaze, now Akamai, where
+
+429
+00:38:58,049 --> 00:39:03,920
+he shows that mobile caches are very small.
+This is another reason why things you think
+
+430
+00:39:03,920 --> 00:39:08,670
+should be in the cache won't be. This was
+a study I did where I found that -- I like
+
+431
+00:39:08,670 --> 00:39:14,440
+building Web apps and putting them on the
+home screen and turned out in iOS if you do
+
+432
+00:39:14,440 --> 00:39:21,440
+that the cache isn't used optimally. So you
+can use app cache for caching.
+
+433
+00:39:23,019 --> 00:39:28,269
+So the way they use app cache at this manifest
+attribute, you give it a file name, which
+
+434
+00:39:28,269 --> 00:39:34,529
+is your app cache. Manifest is a good name
+I think we all intuitively recognize what
+
+435
+00:39:34,529 --> 00:39:40,150
+we are going to see here. Here's your manifest
+file. It has to start with this cache manifest
+
+436
+00:39:40,150 --> 00:39:44,229
+header. We will talk about the revision number
+in a second, but you'll want to add that.
+
+437
+00:39:44,229 --> 00:39:48,670
+It's got these various sections, a cache section
+says these are the things that I want you
+
+438
+00:39:48,670 --> 00:39:53,359
+to put into app cache. The network session
+says these are the things that you should
+
+439
+00:39:53,359 --> 00:40:00,359
+never put into app cache. The fallback section
+says if the user is online, then use this
+
+440
+00:40:01,130 --> 00:40:06,719
+URL. But if they are offline, read this one
+from app cache. So the browser, when the user
+
+441
+00:40:06,719 --> 00:40:11,380
+is online, will download this one, but will
+also download this one and save it into app
+
+442
+00:40:11,380 --> 00:40:15,140
+cache. At least right now, you have to make
+sure to give this a very specific content
+
+443
+00:40:15,140 --> 00:40:22,140
+type. Text/cache-manifest. So it looks pretty
+good. It turns out actually it's really, really,
+
+444
+00:40:22,690 --> 00:40:27,180
+really hard and complicated to work with.
+So here are some of the gotchas that you will
+
+445
+00:40:27,180 --> 00:40:31,960
+probably run into. I know I did.
+I didn't realize -- like, I never listed my
+
+446
+00:40:31,960 --> 00:40:38,640
+HTML document itself, .php, .HTML in the manifest
+file, so I just assumed it wouldn't be put
+
+447
+00:40:38,640 --> 00:40:43,259
+into app cache.
+But if your HTML document uses the manifest
+
+448
+00:40:43,259 --> 00:40:47,920
+attribute, then it's going to be saved to
+app cache. This was really confusing for me
+
+449
+00:40:47,920 --> 00:40:53,569
+because I had a log-in box on the front page.
+And if the user came in and their app cache
+
+450
+00:40:53,569 --> 00:40:59,430
+was empty and they weren't logged in, the
+logged-out version of the page would be saved;
+
+451
+00:40:59,430 --> 00:41:03,729
+every time they came back, that's what they
+would see even after logging in. So that's
+
+452
+00:41:03,729 --> 00:41:09,579
+a little confusing. If anything in the manifest
+list 404s, nothing is saved. You get about
+
+453
+00:41:09,579 --> 00:41:16,420
+five meg, which is pretty good. Yeah, so this
+is interesting, suppose you change one of
+
+454
+00:41:16,420 --> 00:41:20,930
+the resources listed in the manifest file,
+like an image, you would think that the next
+
+455
+00:41:20,930 --> 00:41:27,130
+time the user opens the app, they would see
+that new image. They don't. You actually have
+
+456
+00:41:27,130 --> 00:41:32,210
+to change something in the manifest file to
+make it different, and that's why the revision
+
+457
+00:41:32,210 --> 00:41:38,460
+number was in there on the previous slide.
+That's what I do is I have that automatically
+
+458
+00:41:38,460 --> 00:41:43,670
+updated whenever I update through source code,
+through my source code control system, it
+
+459
+00:41:43,670 --> 00:41:48,630
+will automatically update that revision number,
+so the manifest is always touched whenever
+
+460
+00:41:48,630 --> 00:41:55,630
+I update a resource, and this was really confusing
+to me. Even if you do, you know, rev the manifest
+
+461
+00:41:58,670 --> 00:42:04,210
+file, the user still won't see the change
+until the second time they open the app. So
+
+462
+00:42:04,210 --> 00:42:08,440
+I think this is really interesting, and it's
+a real gotcha', so I wanted to walk through
+
+463
+00:42:08,440 --> 00:42:15,440
+it in more detail, so let's suppose you go
+home today and you build mobile Web app that
+
+464
+00:42:15,509 --> 00:42:20,529
+uses app cache, or a desktop app that uses
+app cache, and it's got this awesome green
+
+465
+00:42:20,529 --> 00:42:27,529
+logo that the designer gave you, and you list
+that into your app cache manifest file, so
+
+466
+00:42:28,289 --> 00:42:35,289
+you push that tonight, tomorrow, the first
+user ever downloads your app, and the app
+
+467
+00:42:36,460 --> 00:42:41,099
+cache is obviously empty. They've never seen
+this before, and so the browser fetches the
+
+468
+00:42:41,099 --> 00:42:46,869
+manifest file and in there the logo is listed
+so the browser downloads that, puts it into
+
+469
+00:42:46,869 --> 00:42:53,519
+app cache, and renders the app to the user
+so the user sees the awesome green logo. So
+
+470
+00:42:53,519 --> 00:42:59,619
+now suppose tomorrow night you go, you know,
+I really think an orange logo would be better,
+
+471
+00:42:59,619 --> 00:43:05,239
+so you push to your server this new orange
+logo, and you remember to change the version
+
+472
+00:43:05,239 --> 00:43:12,239
+number in the manifest file. So the logo is
+new, the manifest file is new. And on -- today's
+
+473
+00:43:14,910 --> 00:43:21,910
+Friday, so you do that Saturday night, so
+on Sunday, the user -- same user loads the
+
+474
+00:43:22,670 --> 00:43:29,170
+app again, and the browser says, okay, well,
+this app has a manifest file associated with
+
+475
+00:43:29,170 --> 00:43:31,719
+it. Do I have any of those resources in my
+app cache?
+
+476
+00:43:31,719 --> 00:43:37,479
+Oh, I do. I need logo.jif, or i have logo.jif
+in my app cache; it's this pretty green logo.
+
+477
+00:43:37,479 --> 00:43:42,079
+Even though I've already pushed an orange
+logo to my server, the browser is ignoring
+
+478
+00:43:42,079 --> 00:43:48,229
+that. That's why it can work offline. It can
+say I have this stuff in app cache, let me
+
+479
+00:43:48,229 --> 00:43:55,210
+load as much as I can without using the network.
+And so it displays that app cache logo to
+
+480
+00:43:55,210 --> 00:44:02,180
+the user. But now what it does is it's -- once
+it's rendered the app with the old out-of-date
+
+481
+00:44:02,180 --> 00:44:08,049
+logo, it fetches the manifest file, it detects
+that it's changed and so then it checks all
+
+482
+00:44:08,049 --> 00:44:13,359
+other resources in the manifest file and it
+gets the new version of the logo which is
+
+483
+00:44:13,359 --> 00:44:20,359
+orange, it saves that to app cache, so if
+the user reloads the app, a second time, it
+
+484
+00:44:20,599 --> 00:44:25,079
+will -- the browser will look in app cache
+and now it has the orange logo, so it renders
+
+485
+00:44:25,079 --> 00:44:29,829
+the orange logo to the user, it fetches the
+manifest file which hasn't changed and so
+
+486
+00:44:29,829 --> 00:44:34,410
+it's done. So it's really taken these two
+loads -- after I update a resource it takes
+
+487
+00:44:34,410 --> 00:44:40,549
+two loads for the user to see the changes.
+Now, there is a work around to this, it's
+
+488
+00:44:40,549 --> 00:44:45,460
+not that hard, but not that easy. There's
+this update ready part. The implementation
+
+489
+00:44:45,460 --> 00:44:50,420
+is pretty easy. I can track this. But it's
+what do I want to do with the user experience?
+
+490
+00:44:50,420 --> 00:44:55,599
+So in the background, the browser detected
+that there was a new logo, and it fires this
+
+491
+00:44:55,599 --> 00:45:01,079
+update ready, but are you going to tell the
+user to like reload the app to see the changes?
+
+492
+00:45:01,079 --> 00:45:05,440
+I don't know, you have to decide for yourself.
+Maybe if it's just images it's not that important.
+
+493
+00:45:05,440 --> 00:45:10,359
+If it's like an important JavaScript security
+privacy fix, then, yeah, maybe you want to
+
+494
+00:45:10,359 --> 00:45:14,029
+tell them to reload it, or you want to reload
+it without even telling them, just reload
+
+495
+00:45:14,029 --> 00:45:21,029
+the app. Another way to do improved caching
+because we know the browser cache doesn't
+
+496
+00:45:21,349 --> 00:45:28,349
+work super awesome is local storage. Really
+simple API. Local storage is persistent across
+
+497
+00:45:28,599 --> 00:45:32,529
+sessions. If you only care about sessions,
+you can use session storage. It's about five
+
+498
+00:45:32,529 --> 00:45:39,529
+meg. One warning, browser developers really
+are worried about this getting too much use
+
+499
+00:45:40,769 --> 00:45:45,749
+because it does a synchronous read. Some browsers
+will actually read everything out of local
+
+500
+00:45:45,749 --> 00:45:50,130
+storage, the first time you go to that page
+during the session, and if you have a lot
+
+501
+00:45:50,130 --> 00:45:56,319
+of stuff in local storage, again, it's single-threaded
+so that can slow down the user experience.
+
+502
+00:45:56,319 --> 00:46:02,749
+So I built this bookmark that lets you look
+into what is stored in local storage, and
+
+503
+00:46:02,749 --> 00:46:07,430
+I discovered a couple of interesting things
+that Bing and Google search were doing, which
+
+504
+00:46:07,430 --> 00:46:12,249
+I hadn't thought of, and it's very cool to
+help with caching. So I think this is the
+
+505
+00:46:12,249 --> 00:46:19,249
+Google search -- Google mobile search implementation.
+The first time you do a search, the HTML document
+
+506
+00:46:19,789 --> 00:46:26,789
+will return all of these inline script and
+style blocks, a lot of JavaScript and CSS,
+
+507
+00:46:27,660 --> 00:46:33,369
+and when it's done, it iterates over those
+script tags and style tags that have IDs,
+
+508
+00:46:33,369 --> 00:46:39,039
+and it takes the content of the block, and
+writes it into local storage based on the
+
+509
+00:46:39,039 --> 00:46:45,979
+ID of that element. So now, after I've done
+this first search ever on my phone, I have
+
+510
+00:46:45,979 --> 00:46:52,489
+blocks of JavaScript and CSS in my local storage,
+so now let's say I do another -- oh, and the
+
+511
+00:46:52,489 --> 00:46:59,309
+other thing it does is it sets a cookie that
+says which blocks of JavaScript and CSS have
+
+512
+00:46:59,309 --> 00:47:04,519
+been written into this user's local storage.
+So now if I do another search, this cookie
+
+513
+00:47:04,519 --> 00:47:08,890
+goes up to the server, and the server says,
+oh, well, you're doing a search, I have to
+
+514
+00:47:08,890 --> 00:47:13,479
+give you this block and that block and this
+JavaScript and this CSS. Let me see what you
+
+515
+00:47:13,479 --> 00:47:17,900
+already have in local storage. It looks at
+the cookie and says, oh, you already have
+
+516
+00:47:17,900 --> 00:47:21,849
+this block, I don't have to send you that,
+I don't have to send you this CSS, and for
+
+517
+00:47:21,849 --> 00:47:28,849
+-- in the case of mobile search, it drops
+the download size from about 110K to just
+
+518
+00:47:29,259 --> 00:47:35,319
+10K, because all that stuff is now in local
+storage. And then when the lightweight page
+
+519
+00:47:35,319 --> 00:47:40,509
+arrives, there's some JavaScript that will
+pull all of these things out of local storage
+
+520
+00:47:40,509 --> 00:47:47,509
+and write them into the page. So this is a
+really cool way to get more persistent cache.
+
+521
+00:47:47,640 --> 00:47:53,569
+Local storage is unaffected by other Web sites
+whereas the shared browser cache, if the user
+
+522
+00:47:53,569 --> 00:47:58,479
+visits a bunch of other Web sites that have
+large resources, your content might get pushed
+
+523
+00:47:58,479 --> 00:48:04,509
+out. So I did a quick survey using this is
+what this -- I'm a good JavaScript hacker.
+
+524
+00:48:04,509 --> 00:48:09,640
+I'm not a good UI designer. This is my awesome
+storage or bookmark list, and you can see
+
+525
+00:48:09,640 --> 00:48:15,619
+it lets you look at what's in the local storage
+and session storage, tells you how big it
+
+526
+00:48:15,619 --> 00:48:21,039
+is, how many items it is. So let's just do
+a quick run through the Alexa Top 10 and see
+
+527
+00:48:21,039 --> 00:48:28,039
+how local storage is being used. So here we
+have -- Google search is using it on both
+
+528
+00:48:28,469 --> 00:48:35,469
+mobile and desktop, so that's one. Bing is
+using it on mobile. Facebook is using it on
+
+529
+00:48:36,329 --> 00:48:43,329
+mobile. Yahoo is maybe using it a little bit,
+but not really. We're not going to count that.
+
+530
+00:48:44,039 --> 00:48:51,039
+YouTube, yeah, we'll count that. Quite a bit
+of content on mobile. Amazon, no. Twitter?
+
+531
+00:48:51,180 --> 00:48:58,180
+Yeah, okay, we'll count that. Five. LinkedIn,
+no, I would say. eBay, no. MSN, no. So about
+
+532
+00:49:03,019 --> 00:49:08,769
+five or six of the Alexa Top 10 are using
+local storage, so that's an indicator that,
+
+533
+00:49:08,769 --> 00:49:12,869
+you know, it's worth investigating. Why is
+it more -- maybe used more prevalently on
+
+534
+00:49:12,869 --> 00:49:16,089
+mobile?
+You know, the experience of not having something
+
+535
+00:49:16,089 --> 00:49:21,729
+in the cache in mobile is worse, because the
+network connection speed is so slow, also
+
+536
+00:49:21,729 --> 00:49:26,900
+the cache is smaller on mobile, so caching
+isn't awesome on desktop, but is much better
+
+537
+00:49:26,900 --> 00:49:32,289
+on mobile, so I think that's why these top
+properties started using local storage on
+
+538
+00:49:32,289 --> 00:49:38,969
+mobile, but I would expect to see this proliferate
+on desktop apps as well. So I want to talk
+
+539
+00:49:38,969 --> 00:49:45,969
+about font-face. Again, pay attention to the
+photos, not to what I say. So, you know, fonts,
+
+540
+00:49:48,609 --> 00:49:53,979
+using custom fonts can create a more compelling,
+beautiful experience, but people haven't really
+
+541
+00:49:53,979 --> 00:49:59,239
+paid attention to what it does, similar to
+how scripts and style sheets can block a page,
+
+542
+00:49:59,239 --> 00:50:06,239
+what custom font files do, and so I created
+this table that here's the blog post, that
+
+543
+00:50:07,150 --> 00:50:12,979
+shows how scripts and style sheets and fonts
+can affect, and, you know, "blank below in
+
+544
+00:50:12,979 --> 00:50:19,979
+red" means that everything using this font
+or below it are going to be affected. Flash
+
+545
+00:50:21,599 --> 00:50:28,599
+-- oh, delayed means -- blank is really bad.
+It means like everything in the page is blank.
+
+546
+00:50:28,609 --> 00:50:34,549
+Delayed means just the element that's using
+the font file is affected. Flash means once
+
+547
+00:50:34,549 --> 00:50:40,539
+the things -- things will render, but once
+the resource arrives it has to be redrawn,
+
+548
+00:50:40,539 --> 00:50:45,940
+and so it's kind of a jerky user experience,
+things have to be rerenderred and repainted.
+
+549
+00:50:45,940 --> 00:50:50,759
+So you can see the impact. Even the green
+"good" is not really a good experience. And
+
+550
+00:50:50,759 --> 00:50:57,749
+so you want to use fonts kind of carefully.
+And it's kind of ironic, it's kind of how
+
+551
+00:50:57,749 --> 00:51:02,829
+these async script loader libraries make you
+load their scripts synchronously. When I talk
+
+552
+00:51:02,829 --> 00:51:07,569
+to designers about why they're using custom
+fonts, even though we know it has this impact
+
+553
+00:51:07,569 --> 00:51:11,930
+on the user experience, they say, well, these
+are the most important design elements in
+
+554
+00:51:11,930 --> 00:51:16,930
+the page. I'm like, "so you want the most
+important parts of the page to take the longest
+
+555
+00:51:16,930 --> 00:51:22,130
+to render?"
+Like, that doesn't make sense to me. So despite
+
+556
+00:51:22,130 --> 00:51:28,119
+my warnings, custom fonts have taken off,
+like they've more than doubled in the last
+
+557
+00:51:28,119 --> 00:51:34,789
+year, this is a chart from the HTP archive.
+So they're taking off. The good thing is the
+
+558
+00:51:34,789 --> 00:51:41,789
+folks at Typekit and the Google fonts library
+have done a lot of good work to mitigate the
+
+559
+00:51:42,349 --> 00:51:48,150
+impact that custom fonts files have, but we
+can still go farther. In fact, I think Google
+
+560
+00:51:48,150 --> 00:51:53,160
+fonts library just announced custom fonts
+a few months ago. If you don't need -- like
+
+561
+00:51:53,160 --> 00:51:57,719
+if you're only using digits or other certain
+characters, like it's just a word that you
+
+562
+00:51:57,719 --> 00:52:03,119
+want to render in that font, you can actually
+create a smaller font. The font files are
+
+563
+00:52:03,119 --> 00:52:10,119
+typically like over 100K, so you can create
+one that is just the characters that you need.
+
+564
+00:52:12,509 --> 00:52:18,709
+The flash of unstyled text means you draw
+text and then you have to redraw it, and so
+
+565
+00:52:18,709 --> 00:52:25,709
+what I would propose is that browsers have
+like an impatient fallback, like if -- I don't
+
+566
+00:52:25,809 --> 00:52:31,099
+want to have this flash of my text, so I'm
+going to wait 250 milliseconds for the font
+
+567
+00:52:31,099 --> 00:52:35,749
+file. If it hasn't come back and we're drawing
+in a default font, and even if the font files
+
+568
+00:52:35,749 --> 00:52:39,509
+comes back later, I'm not going to redraw
+it. I'll cache that font for the next time
+
+569
+00:52:39,509 --> 00:52:44,729
+the user goes to the page, but I'm not going
+to do that, and again, I think this is a behavior
+
+570
+00:52:44,729 --> 00:52:51,729
+that the Google font library and Typekit loaders
+do automatically for you. Yeah. And also,
+
+571
+00:52:55,239 --> 00:52:59,739
+okay, I'm running short on time, so I'm going
+to go a little faster. Font should be given
+
+572
+00:52:59,739 --> 00:53:05,430
+a higher priority in caching. Browsers are
+still just starting to pay attention to that,
+
+573
+00:53:05,430 --> 00:53:12,430
+and even if a font is expired, I might want
+to render with it, and do a "if modified since
+
+574
+00:53:13,039 --> 00:53:15,869
+request", and then if I get back, "oh, not
+modified?"
+
+575
+00:53:15,869 --> 00:53:20,219
+It's okay, I've already rendered with a font.
+All I have to do is validate it. Oh, good,
+
+576
+00:53:20,219 --> 00:53:25,569
+I'm getting close to the end, so there's a
+lot more stuff I didn't talk about. We -- you
+
+577
+00:53:25,569 --> 00:53:30,729
+know, all of us spent a lot of time building
+rounded corners that downloaded a bunch of
+
+578
+00:53:30,729 --> 00:53:35,479
+images, so now you can do a lot of things
+that used to require HTP traffic, you can
+
+579
+00:53:35,479 --> 00:53:42,479
+do with CSS 3, so that's cool. You have to
+be a little careful, these incur, you know,
+
+580
+00:53:42,650 --> 00:53:49,609
+might incur a lot of CPU overhead or repaints.
+You can use SVG and canvas instead of downloading
+
+581
+00:53:49,609 --> 00:53:55,369
+images. Video tag could make starting up videos
+faster. Web sockets, if you have a very chatty
+
+582
+00:53:55,369 --> 00:54:00,279
+sort of app can be used. Web workers, if you
+have like a lot of computation that you want
+
+583
+00:54:00,279 --> 00:54:05,900
+to get out of the UI thread, you can use Web
+workers, oh, for some things that we used
+
+584
+00:54:05,900 --> 00:54:11,880
+to have to write a lot of JavaScript or HTML
+for, you can do with these new built-in controls.
+
+585
+00:54:11,880 --> 00:54:18,880
+Again, the photo, more, infinite number of
+digits. History API, we used to have to implement
+
+586
+00:54:20,609 --> 00:54:25,200
+this in JavaScript. Now we don't have to download
+all that JavaScript. Ping is a way to avoid
+
+587
+00:54:25,200 --> 00:54:31,009
+a redirect if you want to track something.
+Don't use set time-out for animation. Use
+
+588
+00:54:31,009 --> 00:54:37,920
+request animation frame. It will be faster.
+You can use the native JSON parser, and here
+
+589
+00:54:37,920 --> 00:54:42,979
+are some good resources to get more information
+about this other HTML5 stuff. So what are
+
+590
+00:54:42,979 --> 00:54:46,769
+the takeaways?
+Speed matters. Hopefully we all agree about
+
+591
+00:54:46,769 --> 00:54:50,880
+that. I saw you raise your hand before. So
+I'm going to hold you to that. Pay attention
+
+592
+00:54:50,880 --> 00:54:55,339
+to what's coming out of the Web performance
+working group out of the W3C. You can use
+
+593
+00:54:55,339 --> 00:54:59,769
+window.performance to track the timing on
+your pages, and even if you haven't done that
+
+594
+00:54:59,769 --> 00:55:03,559
+yet, if you're using Google Analytics, you
+can go and see the data there. It's already
+
+595
+00:55:03,559 --> 00:55:09,779
+been gathered for the last few months. JavaScript
+blocking the UI thread is really critical.
+
+596
+00:55:09,779 --> 00:55:14,680
+Try to get a lot of that stuff deferred or
+async, and caching is really important. I
+
+597
+00:55:14,680 --> 00:55:19,479
+think it's one of the most important things
+for a fast user experience. Browsers are improving
+
+598
+00:55:19,479 --> 00:55:23,940
+their cache. Mobile browsers have a lot of
+room to catch up on, so you can try some of
+
+599
+00:55:23,940 --> 00:55:29,599
+these other techniques. And be careful about
+using font-face. So before I close out, I
+
+600
+00:55:29,599 --> 00:55:34,349
+want to mention, if you like this kind of
+performance stuff, I'm sorry, but you should
+
+601
+00:55:34,349 --> 00:55:40,069
+have been at Velocity this week. We just finished
+that Wednesday. But if you missed that, you
+
+602
+00:55:40,069 --> 00:55:43,949
+could go to Web PERF days, the first ever,
+but -- well, actually, that was yesterday.
+
+603
+00:55:43,949 --> 00:55:46,699
+Okay, so you missed that one.
+[ Laughter ]
+
+604
+00:55:46,699 --> 00:55:51,420
+>>Steve Souders: Oh, okay, we've got Velocity
+Europe coming up in October, so you might
+
+605
+00:55:51,420 --> 00:55:56,170
+have to go a little farther, but -- and we'll
+be back next year in June for Velocity. I
+
+606
+00:55:56,170 --> 00:56:02,390
+also wanted to just mention this -- oh, I
+added this like five minutes before I came
+
+607
+00:56:02,390 --> 00:56:09,319
+on stage. How can I do this, like -- I don't
+know, I have to go through them all. So (indiscernible)
+
+608
+00:56:09,319 --> 00:56:15,380
+runs this performance calendar every year,
+and O'Reilly took the most recent performance
+
+609
+00:56:15,380 --> 00:56:21,079
+calendar and put it into a book, so this just
+came out this week, and you can get most of
+
+610
+00:56:21,079 --> 00:56:26,759
+this content on the blog for the performance
+calendar, but the -- they were updated, and
+
+611
+00:56:26,759 --> 00:56:33,759
+if you like books, you can get it in book
+form here. So that's it. Thank you very much.
+
+612
+00:56:36,410 --> 00:56:41,539
+[ Applause ]
+>>Steve Souders: So I've got about four minutes,
+
+613
+00:56:41,539 --> 00:56:48,190
+I would be happy to answer any questions and
+I think they want you to use the mic. Everyone
+
+614
+00:56:48,190 --> 00:56:54,279
+is heading out.
+>>> Would you care to expand upon font awesome?
+
+615
+00:56:54,279 --> 00:56:59,859
+And also to resolve some of the issues of
+pop-in, I found setting a fixed type for whatever
+
+616
+00:56:59,859 --> 00:57:04,529
+text I decide is very nice.
+>>Steve Souders: What's the first one? Expound
+
+617
+00:57:04,529 --> 00:57:08,289
+on...
+>>> Font awesome, using fonts instead of sprites?
+
+618
+00:57:08,289 --> 00:57:15,289
+>>Steve Souders: Oh, yeah, so you can create
+a custom font, you know, file, that has little
+
+619
+00:57:18,719 --> 00:57:25,640
+pictures, you know, kind of like wings -- what
+is it on windows? The wings font, wingdings,
+
+620
+00:57:25,640 --> 00:57:30,869
+yeah, so you can do that with a font, so if
+you have like really small images that you're
+
+621
+00:57:30,869 --> 00:57:35,079
+using now and you're downloading them as HTP
+requests instead of images, instead you can
+
+622
+00:57:35,079 --> 00:57:38,789
+download a font fall. It doesn't have to be
+huge. Maybe you have 10 of those or 20 of
+
+623
+00:57:38,789 --> 00:57:45,789
+those, and you can download those and use
+those to draw those little images, those little
+
+624
+00:57:46,769 --> 00:57:51,749
+sprites in the page for like maybe little
+buttons or things like that, and so, you know,
+
+625
+00:57:51,749 --> 00:57:55,739
+I think that's a great idea. You could also
+use sprites. Sprites are maybe a little harder
+
+626
+00:57:55,739 --> 00:58:00,349
+to do. You have to create the image and know
+all the CSS, but the one thing I would say,
+
+627
+00:58:00,349 --> 00:58:04,979
+if you're using any kind of font file, is
+try to figure out a way to do it that doesn't
+
+628
+00:58:04,979 --> 00:58:10,359
+block the page, like especially in IE. Custom
+font files block rendering of everything in
+
+629
+00:58:10,359 --> 00:58:15,799
+the page, so if you could do that lazily or
+something like that, that would be good, and
+
+630
+00:58:15,799 --> 00:58:22,130
+then the second one was...
+>>> Just a tip to deal with font snapping
+
+631
+00:58:22,130 --> 00:58:27,029
+in after they loaded, the ugly hack of just
+setting a fixed type for everything. So at
+
+632
+00:58:27,029 --> 00:58:30,079
+least it doesn't like reflow.
+>>Steve Souders: Yeah, yeah, you could do
+
+633
+00:58:30,079 --> 00:58:36,039
+that. Yes, another question.
+>>> Yeah, you said mobile browsers don't support
+
+634
+00:58:36,039 --> 00:58:42,289
+most of those features yet, custom, you know,
+desktop browsers either, so how would we test
+
+635
+00:58:42,289 --> 00:58:45,519
+them?
+>>Steve Souders: I guess I wasn't clear. Everything
+
+636
+00:58:45,519 --> 00:58:51,359
+I talked about is supported in mobile browsers,
+pretty much, and, in fact, you're going to
+
+637
+00:58:51,359 --> 00:58:57,410
+get -- I think that's another reason why we're
+seeing more HTML5 stuff on mobile and desktop,
+
+638
+00:58:57,410 --> 00:59:03,789
+because on desktop, there's still a lot more
+lingering IE6, IE7 legacy browsers out there,
+
+639
+00:59:03,789 --> 00:59:07,539
+so you're almost a little safer using the
+cutting edge stuff on mobile than you are
+
+640
+00:59:07,539 --> 00:59:14,420
+on desktop. The only thing I can think about
+is I thought there was something -- well,
+
+641
+00:59:14,420 --> 00:59:21,420
+the page visibility API is only in Chrome,
+but all the timing stuff, local storage fonts,
+
+642
+00:59:21,459 --> 00:59:26,740
+app cache, async and defer attributes, all
+of that is supported on mobile too.
+
+643
+00:59:26,740 --> 00:59:32,160
+>>> Thank you.
+>>Steve Souders: Yeah. Okay, let's go here.
+
+644
+00:59:32,160 --> 00:59:39,160
+>>> Let's see here. You were talking about
+visibility and document.webkit hidden and
+
+645
+00:59:40,009 --> 00:59:45,579
+how that relates with click tracking and stuff
+like that. One click unsubscribes and e-mails
+
+646
+00:59:45,579 --> 00:59:51,319
+and things like that, is that another way
+that we can avoid being automatically unsubscribed?
+
+647
+00:59:51,319 --> 00:59:58,319
+>>Steve Souders: Oh, oh, well, but how would
+you -- how would you -- what's the scenario
+
+648
+01:00:00,549 --> 01:00:04,990
+where you would render unsubscribed page without
+the user seeing it?
+
+649
+01:00:04,990 --> 01:00:09,199
+>>> Well, if they're following links and pre-loading
+in the background, you might follow --
+
+650
+01:00:09,199 --> 01:00:14,969
+>>Steve Souders: Oh, yeah, the pre-rendering
+I was talking about is the developer or user
+
+651
+01:00:14,969 --> 01:00:20,059
+has explicitly asked to open a page, but we
+can just know we can do it in the background.
+
+652
+01:00:20,059 --> 01:00:24,989
+But, so, yeah, if you're crawling a page,
+that could be something that you could do
+
+653
+01:00:24,989 --> 01:00:30,719
+is to make sure not to -- you know, you could
+instrument an unsubscribed link so that it
+
+654
+01:00:30,719 --> 01:00:34,759
+only worked if the page was visible. Yeah.
+>>> Thank you.
+
+655
+01:00:34,759 --> 01:00:38,509
+>>Steve Souders: Yeah.
+>>> What's your recommendation in terms of
+
+656
+01:00:38,509 --> 01:00:44,599
+moving the script tags physically to the bottom
+of the body tag versus using the defer script
+
+657
+01:00:44,599 --> 01:00:48,749
+tag that you described?
+>>Steve Souders: Yeah, I think both of those
+
+658
+01:00:48,749 --> 01:00:55,430
+work. One thing that we -- I only have a few
+seconds, so one thing we don't have time to
+
+659
+01:00:55,430 --> 01:01:01,859
+talk about is the importance of the onload
+event firing as quickly as possible, so in
+
+660
+01:01:01,859 --> 01:01:06,630
+both cases with defer and async and putting
+scripts at the bottom, you're going to block
+
+661
+01:01:06,630 --> 01:01:12,279
+the onload link, the onload event from firing,
+so really putting scripts at the bottom is
+
+662
+01:01:12,279 --> 01:01:18,390
+almost the same as doing defer. It really
+has more to do with kind of the size of your
+
+663
+01:01:18,390 --> 01:01:24,140
+team. A lot of times there's, you know, 20
+or 200 people working on a property, and so
+
+664
+01:01:24,140 --> 01:01:30,180
+it's hard to get the message out to put scripts
+at the bottom or like someone's code is only
+
+665
+01:01:30,180 --> 01:01:35,759
+going to be executed at the top and be really
+hard to give them a foothold in the top and
+
+666
+01:01:35,759 --> 01:01:40,150
+give them also a foothold in the bottom and
+make sure that both of those are done in sync,
+
+667
+01:01:40,150 --> 01:01:46,049
+so if the only place like the logging or metrics
+team has a place to -- a foothold in the page
+
+668
+01:01:46,049 --> 01:01:51,440
+is at the top, they can get the same behavior
+using the defer attribute as just putting
+
+669
+01:01:51,440 --> 01:01:55,880
+the script tag at the bottom. Putting the
+script tag at the bottom is another lightweight
+
+670
+01:01:55,880 --> 01:02:01,539
+way to avoid that blocking of the UI thread.
+Okay. So I should wrap up. Thank you very
+
+671
+01:02:01,539 --> 01:02:01,789
+much.
+[ Applause ]
+

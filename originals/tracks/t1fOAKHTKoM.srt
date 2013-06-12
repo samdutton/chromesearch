@@ -1,0 +1,2350 @@
+1
+00:00:00,429 --> 00:00:03,440
+>>Pamela Fox: Hello.
+>>>Group: Hello.
+
+2
+00:00:03,440 --> 00:00:10,440
+>>Pamela Fox: How are you? Okay, how are you?
+Okay, good. I know this is the time in the
+
+3
+00:00:11,790 --> 00:00:15,570
+afternoon when you typically sleep. They did
+just turn off the lights. I will try to be
+
+4
+00:00:15,570 --> 00:00:22,280
+as loud and obnoxious as possible to keep
+you awake. My name is Pamela Fox. Today I
+
+5
+00:00:22,280 --> 00:00:28,529
+want to talk about feature detection in the
+real world. This shit is going to get real.
+
+6
+00:00:28,529 --> 00:00:35,529
+You are in a Chrome track. Presumably you
+are on the Chrome track and doing web development
+
+7
+00:00:35,680 --> 00:00:42,320
+stuff. You are probably all pretty excited
+about HTML5, right? Whoo! HTML5 is awesome.
+
+8
+00:00:42,320 --> 00:00:46,570
+It is bringing us all these things that for
+years and years we wanted as developers, and
+
+9
+00:00:46,570 --> 00:00:51,070
+we had to do all these crazy hacks in order
+to do them. Finally the browsers are making
+
+10
+00:00:51,070 --> 00:00:56,660
+it really easy for us, right? I remember once
+spending two months implementing rounded corners
+
+11
+00:00:56,660 --> 00:01:00,870
+on this little gadget back when I was working
+at Google and finally getting it to work in
+
+12
+00:01:00,870 --> 00:01:07,330
+IE6 and then taking it to UX review with Marissa
+to find out we didn't do rounded corners at
+
+13
+00:01:07,330 --> 00:01:12,960
+Google. So stuff like that, right? These days
+it would take me one line of code to put a
+
+14
+00:01:12,960 --> 00:01:18,790
+boarder radius on there and then get it rejected
+and life would go on. Right? HTML5 is great
+
+15
+00:01:18,790 --> 00:01:22,350
+because we get these new features, but we
+are getting them incrementally. Right? We
+
+16
+00:01:22,350 --> 00:01:25,340
+have them in some browsers; we don't have
+them in other browsers. We have kind of parts
+
+17
+00:01:25,340 --> 00:01:29,880
+of the features in some and they don't quite
+work. So that means we actually have to worry
+
+18
+00:01:29,880 --> 00:01:35,220
+about whether particular feature is actually
+supported, because most of us probably have
+
+19
+00:01:35,220 --> 00:01:40,720
+to actually develop things for multiple browsers.
+If we could, we would probably just tell all
+
+20
+00:01:40,720 --> 00:01:47,720
+of our users, like, hey, just use Chrome.
+I've tried that. Kind of works. So what do
+
+21
+00:01:48,630 --> 00:01:53,340
+we do? We think to ourself, all right. I want
+to use this feature but first I need to see
+
+22
+00:01:53,340 --> 00:01:58,430
+if it is supported. How should I do that,
+right? The obvious thing to do is to ask the
+
+23
+00:01:58,430 --> 00:02:02,710
+browser. Like, hey, I want to use this feature.
+Do you use that, right? And we do that via
+
+24
+00:02:02,710 --> 00:02:06,509
+this technique we call feature detection.
+Right? We have various ways of actually doing
+
+25
+00:02:06,509 --> 00:02:12,279
+feature detection. Here's examples, right?
+If we want to know if a browser supports some
+
+26
+00:02:12,279 --> 00:02:19,279
+JavaScript API, we might ask does window.webkit
+audio exist. If it does exist, then this browser
+
+27
+00:02:20,859 --> 00:02:25,669
+presumably this supports that JavaScript API.
+If we are trying to see if a particular HTML
+
+28
+00:02:25,669 --> 00:02:31,219
+element works, right, we create the HTML element
+and see if it gets attributes automatically
+
+29
+00:02:31,219 --> 00:02:38,139
+applied to it in the producers. Right? If
+we want to know if a CSS works, we can create
+
+30
+00:02:38,139 --> 00:02:44,870
+an element and see if that style property
+is actually a key on that element. And most
+
+31
+00:02:44,870 --> 00:02:49,949
+of us probably use Modernizr, which is a library
+that does these detections for you behind
+
+32
+00:02:49,949 --> 00:02:55,680
+the scenes. And then you just ask Modernizr,
+hey, does this work, right? So that feature
+
+33
+00:02:55,680 --> 00:03:00,049
+detection and it sounds like it's actually
+really great, right? All we have to do is
+
+34
+00:03:00,049 --> 00:03:03,430
+say we want to use this feature. Just tell
+the browser, hey, tell us if it works. Right?
+
+35
+00:03:03,430 --> 00:03:10,430
+So it's really, really awesome when it works.
+Right? It's a great idea. However, it doesn't
+
+36
+00:03:11,629 --> 00:03:17,209
+always work. Right? Sometimes it's impossible
+to detect a feature. Sometimes you get false
+
+37
+00:03:17,209 --> 00:03:22,430
+negatives, positive false, whatever you want
+to call them, all those things. You need a
+
+38
+00:03:22,430 --> 00:03:28,859
+different plan. A lot of times what you do
+instead is use user agent detection. Right?
+
+39
+00:03:28,859 --> 00:03:34,979
+And this is where we just look at the navigator.user
+agent and we try to understand what device
+
+40
+00:03:34,979 --> 00:03:40,669
+and what browser a user is using. So a very
+basic check here. If I want to know if they
+
+41
+00:03:40,669 --> 00:03:46,180
+are on a iPad or iPhone, I'm looking for iPhone
+or iPod in that user agent doing a RegEx.
+
+42
+00:03:46,180 --> 00:03:53,180
+This is where we have a lot of RegExs, I hate
+RegExs. I will never make one myself. They
+
+43
+00:03:54,089 --> 00:03:59,209
+get worse. Right? If I want to check for mobile
+browsers, maybe the top mobile browsers. Right?
+
+44
+00:03:59,209 --> 00:04:05,089
+Here's a check that gets a bit more crazier
+RegEx that going to get me maybe the top ten
+
+45
+00:04:05,089 --> 00:04:11,209
+mobile browsers. Right? But it's not that
+simple. Right? There's a lot more browsers
+
+46
+00:04:11,209 --> 00:04:14,439
+out there and devices in the world. Especially
+as you go international. I know a lot of you
+
+47
+00:04:14,439 --> 00:04:18,949
+are from outside of America. I'm sure you
+have Android devices that I have never even
+
+48
+00:04:18,949 --> 00:04:24,610
+heard of, right? So if you really wanted to
+check for every mobile browser, you get something
+
+49
+00:04:24,610 --> 00:04:31,610
+like this. I think this is from mobilebrowsersdetect.com
+and as you can see, there's a the lot of mobile
+
+50
+00:04:31,620 --> 00:04:35,639
+browsers in the world. Right? Do you need
+to check for all of them? I don't know. I
+
+51
+00:04:35,639 --> 00:04:41,659
+don't know what you are doing. This is an
+example of how intense users agent sniffing
+
+52
+00:04:41,659 --> 00:04:46,639
+can be and we usually don't want to do user
+agent sniffing for a couple of reasons. Right?
+
+53
+00:04:46,639 --> 00:04:53,150
+First of all, we have to write RegExs. I don't
+know about you, but I don't like RegExs. It
+
+54
+00:04:53,150 --> 00:04:59,470
+is generally easy to get RegExs wrong. It
+is also really easy to get user agents wrong.
+
+55
+00:04:59,470 --> 00:05:04,020
+User agents, they are this crazy strings that
+browsers come up with and browsers are always
+
+56
+00:05:04,020 --> 00:05:07,740
+trying to fool developers into thinking that
+they are not what they used to be, right?
+
+57
+00:05:07,740 --> 00:05:13,039
+So I think the new IE10 has gotten rid of
+something in its user agent string that people
+
+58
+00:05:13,039 --> 00:05:16,759
+normally sniff for to find out if it is IE
+because they don't want you thinking it is
+
+59
+00:05:16,759 --> 00:05:23,759
+IE because it's cool now, right? You didn't
+get that note? And then some browsers, like,
+
+60
+00:05:25,009 --> 00:05:29,919
+if you are viewing IE with Chrome frame, it
+will tell you Chrome in the user agent but
+
+61
+00:05:29,919 --> 00:05:34,620
+then Chrome frame might not actually be running
+on a page. That's kind of confusing. Then,
+
+62
+00:05:34,620 --> 00:05:40,849
+of course, every user agent string isn't world
+has Mozilla. That was the original. So user
+
+63
+00:05:40,849 --> 00:05:45,189
+agent detection can be really tricky. It also
+means when you are detecting user agent, if
+
+64
+00:05:45,189 --> 00:05:50,389
+that user agent does come to support a feature,
+you prematurely blocked it, right? If you
+
+65
+00:05:50,389 --> 00:05:57,389
+say, hey, Safari doesn't support this feature,
+we're not going to use this feature in Safari,
+
+66
+00:05:57,449 --> 00:06:01,840
+and then Safari tomorrow comes out with a
+release that supports that feature, you have
+
+67
+00:06:01,840 --> 00:06:04,860
+probably moved on to other things. The chance
+that you are actually going to update that
+
+68
+00:06:04,860 --> 00:06:09,719
+bit of code that blocks Safari users is really
+small, right? So we don't like user agent
+
+69
+00:06:09,719 --> 00:06:14,759
+detection because it is often not future thinking,
+right? It can really easy leave us in a state
+
+70
+00:06:14,759 --> 00:06:19,870
+where parts of our site aren't working as
+well when they actually could be, because
+
+71
+00:06:19,870 --> 00:06:26,490
+these browsers do move fast. But it is a tool
+that we can use, right? So here's the thing.
+
+72
+00:06:26,490 --> 00:06:31,009
+We have these two tools, feature detection
+and user agent sniffing. A lot of people will
+
+73
+00:06:31,009 --> 00:06:34,659
+tell you, hey, you've got to use feature detection,
+you've got to use feature detection, that's
+
+74
+00:06:34,659 --> 00:06:41,270
+the only way. I definitely -- I do try to.
+But I have run into all these cases where
+
+75
+00:06:41,270 --> 00:06:45,979
+it hasn't quite worked. I have had to use
+other techniques instead. So I wanted to share
+
+76
+00:06:45,979 --> 00:06:50,319
+those with you so that hopefully when you
+guys are working on, you know, using these
+
+77
+00:06:50,319 --> 00:06:54,120
+fancy new features yourself, you will know
+what to look out for and you will know how
+
+78
+00:06:54,120 --> 00:06:58,930
+to react yourself so that you can spend less
+time figuring out how to detect things and
+
+79
+00:06:58,930 --> 00:07:04,680
+just move time to making stuff happen, which
+is what we all want to do, right? So let's
+
+80
+00:07:04,680 --> 00:07:11,680
+talk about a few cases. Localstorage is this
+cool lightweight storage API. It's actually
+
+81
+00:07:12,599 --> 00:07:18,279
+supported in quite a few browsers now. It's
+from the W3C web storage spec. And it's a
+
+82
+00:07:18,279 --> 00:07:25,129
+very simple key value store that you can access
+from JavaScript and use to store and cache
+
+83
+00:07:25,129 --> 00:07:32,060
+data from your application, right? And I thought
+it was really cool. So I wrote a library on
+
+84
+00:07:32,060 --> 00:07:36,789
+top of localstorage called lschache which
+was inspired by mem cache which is a tool
+
+85
+00:07:36,789 --> 00:07:40,830
+we use on the server and would allow me to
+store stuff in a localstorage with a particular
+
+86
+00:07:40,830 --> 00:07:45,809
+expiration and then they would automatically
+get kicked out. In this library I thought
+
+87
+00:07:45,809 --> 00:07:50,479
+it was -- it would be responsible for of me
+to actually check to see if localstorage worked
+
+88
+00:07:50,479 --> 00:07:55,389
+in the browser before I attempted to store
+anything in it, right? So I needed to figure
+
+89
+00:07:55,389 --> 00:08:00,710
+out how to do this detection. So I started
+off with the most basic thing I could do which
+
+90
+00:08:00,710 --> 00:08:07,710
+is, okay, is localstorage on window and not
+null? Therefore, this browser supports the
+
+91
+00:08:09,099 --> 00:08:16,099
+localstorage API. That was my very naive first
+attempt. But what happened is that you can
+
+92
+00:08:16,340 --> 00:08:21,789
+have localstorage supported by a browser.
+It didn't mean you could actually use it.
+
+93
+00:08:21,789 --> 00:08:26,669
+Because it could be that the browser was currently
+in incognito mode and doesn't let you store
+
+94
+00:08:26,669 --> 00:08:32,860
+localstorage. It could be that the localstorage
+was over quota. It could be for whatever reason.
+
+95
+00:08:32,860 --> 00:08:37,610
+There was one version of iPad where they turned
+it off. So the only way you can actually check
+
+96
+00:08:37,610 --> 00:08:42,539
+to see if localstorage works is to try to
+use it the way you want to use it. So my localstorage
+
+97
+00:08:42,539 --> 00:08:48,850
+check then turned into this, which is, okay,
+let's try to set an item in the cache and
+
+98
+00:08:48,850 --> 00:08:53,220
+remove the item from the cache and if we are
+able to do that and we don't get any exceptions
+
+99
+00:08:53,220 --> 00:08:58,560
+during that time, then, okay, localstorage
+works, right? So the only way I could actually
+
+100
+00:08:58,560 --> 00:09:04,839
+check this was to use it exactly the way I
+wanted to be able to use it. Right? I went
+
+101
+00:09:04,839 --> 00:09:11,839
+to that check. Now, even that caused me some
+problems. So I was using this in a mobile
+
+102
+00:09:11,860 --> 00:09:17,260
+web app. It was a phone gap hybrid app. And
+I noticed that my web app was taking a long
+
+103
+00:09:17,260 --> 00:09:22,029
+time to load and I was trying to get this
+load time down. So I profiled it, right? I
+
+104
+00:09:22,029 --> 00:09:26,980
+put little new date in between all the things
+that it did and I tried to figure out why
+
+105
+00:09:26,980 --> 00:09:32,279
+is it taking so much time just to get to this
+main screen. And I found it was actually taking
+
+106
+00:09:32,279 --> 00:09:36,850
+something like 300 milliseconds on Android
+and in order to get through this localstorage
+
+107
+00:09:36,850 --> 00:09:41,850
+detection check. Because in my code I had,
+you know, script stores equals lschache.js.
+
+108
+00:09:41,850 --> 00:09:46,410
+It would execute that code. And that code
+would immediately do the localstorage detection
+
+109
+00:09:46,410 --> 00:09:51,870
+check. What I realized was, I needed to stop
+doing that detection check, you know, on page
+
+110
+00:09:51,870 --> 00:09:56,930
+load and defer it, only do it later when I
+actually needed it. Right? So what I did is
+
+111
+00:09:56,930 --> 00:10:01,410
+I made a little cache variable to remember
+whether localstorage works, because we don't
+
+112
+00:10:01,410 --> 00:10:05,360
+want to do this check all the time. Right?
+We want to do it once. So basically what happens,
+
+113
+00:10:05,360 --> 00:10:10,500
+every time you try to use lscache, it will
+check to see, have we figured out yet that
+
+114
+00:10:10,500 --> 00:10:15,630
+it works? Okay, if we haven't, let's do that
+check. Let's remember it and then next time
+
+115
+00:10:15,630 --> 00:10:22,630
+they use it, they will remember, right? So
+what I learned here is that you have to be
+
+116
+00:10:22,769 --> 00:10:26,360
+careful when you are checking if something
+is supported in API, not that it supports
+
+117
+00:10:26,360 --> 00:10:31,009
+it, but it supports the way you want to use
+it, right? Localstorage, you can actually
+
+118
+00:10:31,009 --> 00:10:34,990
+be in a mode where you can read it but you
+wouldn't be able to right. Maybe you only
+
+119
+00:10:34,990 --> 00:10:39,800
+care about reading, in which case you should
+just check for that, right? So there's a lot
+
+120
+00:10:39,800 --> 00:10:45,600
+of subtleties to when we say something is
+supported or works. It's a bit more complex
+
+121
+00:10:45,600 --> 00:10:51,250
+than that. You also need to make sure that
+you don't let feature detection slow down
+
+122
+00:10:51,250 --> 00:10:56,329
+your site. Right? It's always simple to do
+everything up front, do all your checks up
+
+123
+00:10:56,329 --> 00:11:01,019
+front and then you know you can always have
+it there. But you don't want to sacrifice
+
+124
+00:11:01,019 --> 00:11:06,860
+the user's loading performance just for simplicity.
+Right? This is the unfortunate thing is pretty
+
+125
+00:11:06,860 --> 00:11:11,370
+much when it comes to performance, your code
+can start off beautiful. As soon as you start
+
+126
+00:11:11,370 --> 00:11:16,079
+worrying about performance, your code is not
+going to be beautiful anymore. You're going
+
+127
+00:11:16,079 --> 00:11:20,699
+to have to implement caching and it's not
+going to look very clean. But sometimes we
+
+128
+00:11:20,699 --> 00:11:25,980
+have to make our code look not as beautiful
+in order for users to have a better experience.
+
+129
+00:11:25,980 --> 00:11:32,209
+Right? We sacrifice developer happiness for
+user happiness. That's really hard for us
+
+130
+00:11:32,209 --> 00:11:39,209
+to give up, but it's important. Along with
+this, every time I encountered something with,
+
+131
+00:11:39,820 --> 00:11:44,190
+you know, with this feature detection, I thought
+to myself, okay, what would I want out of
+
+132
+00:11:44,190 --> 00:11:48,320
+browsers? What could browsers give to me as
+a developer that would have made it easier
+
+133
+00:11:48,320 --> 00:11:53,360
+for me in this case? So here it would have
+been awesome if I could just ask the browser,
+
+134
+00:11:53,360 --> 00:11:58,610
+hey, browser, can I use localstorage in a
+read mode? Can I use localstorage in a write
+
+135
+00:11:58,610 --> 00:12:04,230
+mode? Okay, great. Then the browser could
+figure out the most optimal way of checking
+
+136
+00:12:04,230 --> 00:12:08,949
+and it wouldn't be up to me, right? The good
+thing about browsers, having browsers give
+
+137
+00:12:08,949 --> 00:12:13,930
+us these checks, is that they could do it
+in a very fast way, a very efficient way,
+
+138
+00:12:13,930 --> 00:12:17,509
+ways that I couldn't necessarily do because
+I'm not going behind the scenes in the browser
+
+139
+00:12:17,509 --> 00:12:23,110
+code, right? So I hope that this is something
+that browsers do going forward with things
+
+140
+00:12:23,110 --> 00:12:28,339
+like the storage APIs. I think that index.db
+does actually have stuff like this. So they
+
+141
+00:12:28,339 --> 00:12:35,339
+learn.
+All right. Whoo! So then we have this thing
+
+142
+00:12:36,240 --> 00:12:42,699
+called formdata. Formdata is another addition
+to HTML5. It's something that lets you store,
+
+143
+00:12:42,699 --> 00:12:48,660
+take data from all your form inputs, serialize
+it, send it in a XMHTLP request. Right? You
+
+144
+00:12:48,660 --> 00:12:54,790
+don't have to use Jquery AJAX anymore. Right?
+I thought, oh, this is cool, right? I saw
+
+145
+00:12:54,790 --> 00:13:01,259
+all the Google DevRelers were talking about
+how cool formdata was. Man, I want to be cool
+
+146
+00:13:01,259 --> 00:13:07,639
+like them. I want to use formdata, right?
+So I implemented it for a sign-up form on
+
+147
+00:13:07,639 --> 00:13:12,620
+this web site I made last year so that when
+you signed up, you would actually -- it would
+
+148
+00:13:12,620 --> 00:13:17,569
+go through this code here, which would say,
+okay, if window.formdata -- starting with
+
+149
+00:13:17,569 --> 00:13:23,759
+this basic check. If window.formdata, create
+new formdata from the form. Do a new XHR.
+
+150
+00:13:23,759 --> 00:13:29,230
+Send that formdata to the XHR. If not, then
+we just down to our AJAX technique, right?
+
+151
+00:13:29,230 --> 00:13:35,019
+This is awesome. I have been all proper and
+I've implemented the feature detection check.
+
+152
+00:13:35,019 --> 00:13:40,420
+I've done a fallback technique. I tested it.
+And it works, and it's great. I put it out,
+
+153
+00:13:40,420 --> 00:13:46,540
+there. I tweeted about it. I felt really good.
+But then I got all these reports from Safari
+
+154
+00:13:46,540 --> 00:13:51,180
+users that they weren't able to sign up. I
+was like, well, this is not very good, right?
+
+155
+00:13:51,180 --> 00:13:56,529
+Sign-up is somewhat a crucial part of an application,
+right? I was like, what is this? Why can't
+
+156
+00:13:56,529 --> 00:14:01,040
+they sign up on Safari. It worked fine on
+my Safari, right? I realized there was that
+
+157
+00:14:01,040 --> 00:14:08,040
+there was this particular version of Safari,
+it was like 5.1.50 or whatever only on Macs,
+
+158
+00:14:10,740 --> 00:14:17,740
+maybe on Windows. But this particular version
+of Safari, it pretended to work but it didn't
+
+159
+00:14:18,379 --> 00:14:23,860
+actually work. What happened is that when
+you created that formdata object, it created
+
+160
+00:14:23,860 --> 00:14:30,560
+it and pretended it all worked but there was
+nothing in it. Which is kind of horrible because
+
+161
+00:14:30,560 --> 00:14:34,839
+people would be trying to sign up and there
+would be no data going to my server so I couldn't
+
+162
+00:14:34,839 --> 00:14:37,920
+even find out what email address they put
+in in order to tell them, okay, hey, I fixed
+
+163
+00:14:37,920 --> 00:14:44,160
+it, right? I was I was getting an empty string.
+That was pretty bad. And the other bad thing
+
+164
+00:14:44,160 --> 00:14:50,149
+is that there is no way to actually do a detection
+check for this because formdata has no accessors.
+
+165
+00:14:50,149 --> 00:14:55,350
+You can't ask formdata to tell you what's
+in it to say get a key out, give me the link
+
+166
+00:14:55,350 --> 00:14:59,860
+of what's in there. It's just this blob that
+you can't look inside and maybe there's nothing
+
+167
+00:14:59,860 --> 00:15:05,589
+in it. So I was like, okay, I'm going to have
+to just blacklist Safari. I knew it had a
+
+168
+00:15:05,589 --> 00:15:11,389
+problem and that was my only option, right?
+So I ended up coming up with a detection user
+
+169
+00:15:11,389 --> 00:15:18,279
+agent sniffing for Safari, and I said, okay,
+if window.formdata and we're not in Safari,
+
+170
+00:15:18,279 --> 00:15:22,500
+then let's go set it on, right? And I could
+have done, like, the very specific version
+
+171
+00:15:22,500 --> 00:15:26,670
+of Safari, but I didn't want to -- if they
+introduced the bug in one version, who is
+
+172
+00:15:26,670 --> 00:15:30,089
+to say they are not going to introduce it
+in other versions. So I just wanted to move
+
+173
+00:15:30,089 --> 00:15:37,089
+on with life and get it over with, right?
+So what I learned here is that it sounds really
+
+174
+00:15:38,380 --> 00:15:44,819
+-- these new APIs, they seem really exciting
+and if you are around -- if you go to conferences
+
+175
+00:15:44,819 --> 00:15:49,680
+a lot, like you guys might, you hear about
+these new APIs. That's so cool. I'm going
+
+176
+00:15:49,680 --> 00:15:54,839
+to go home and implement it immediately for
+my app. You get really excited. But you've
+
+177
+00:15:54,839 --> 00:16:01,839
+got to be careful about using new APIs because
+the bugs in them are new. They are not documented.
+
+178
+00:16:02,189 --> 00:16:07,079
+New bugs will come up in recent versions of
+the browsers. And especially if you are doing
+
+179
+00:16:07,079 --> 00:16:11,579
+something -- if it's some mission-critical
+part of your site like sign-up, I wouldn't
+
+180
+00:16:11,579 --> 00:16:16,439
+recommend trying out a new API there, right?
+If it is mission-critical part of your site,
+
+181
+00:16:16,439 --> 00:16:21,269
+then just go with the other techniques. Right?
+They might not be as cool but we have had
+
+182
+00:16:21,269 --> 00:16:27,100
+them for years. People have tested them. People
+know what all the bugs are with file upload
+
+183
+00:16:27,100 --> 00:16:34,100
+in IE7 and they have figured them out in libraries.
+So I would say, you know, try and use those
+
+184
+00:16:34,149 --> 00:16:40,449
+old APIs and libraries that people have written
+because they are battle tested and you don't
+
+185
+00:16:40,449 --> 00:16:44,149
+want to be using something so new and shiny
+for something that's so important.
+
+186
+00:16:44,149 --> 00:16:51,149
+Now, for browsers, we really need accessors
+for anything that has storage in it, right?
+
+187
+00:16:52,540 --> 00:16:56,339
+Like with localstorage, if there was no accessor,
+I would have no way of knowing that it actually
+
+188
+00:16:56,339 --> 00:17:00,379
+successfully stored something. Right? So this
+is something they should add to any sort of
+
+189
+00:17:00,379 --> 00:17:06,800
+API like this.
+Okay. So now let's talk a bit about CSS. Because
+
+190
+00:17:06,800 --> 00:17:11,050
+this is something that you can run into as
+well. Because we have a lot of fancy CSS now,
+
+191
+00:17:11,050 --> 00:17:18,040
+right? We've got shiny animations and transforms.
+So I was working on that mobile web app, right,
+
+192
+00:17:18,040 --> 00:17:23,230
+using phone gap and I had this embedded WebView.
+I decided to do it as a mobile web app because
+
+193
+00:17:23,230 --> 00:17:28,460
+I knew HTML CSS. I will use HTML CSS. I'm
+just going to use it to make this app. It
+
+194
+00:17:28,460 --> 00:17:34,420
+will be great. I don't have to learn something
+new. At the time, I was doing it for both
+
+195
+00:17:34,420 --> 00:17:39,150
+iPhone and Android. Only iPhone had a set
+of design guidelines. Android hadn't really
+
+196
+00:17:39,150 --> 00:17:44,140
+come up with anything yet. So I just followed
+the iPhone design guidelines. They were a
+
+197
+00:17:44,140 --> 00:17:50,360
+lot of like rounded corners and gradients
+and look really bubbly. Luckily CSS3 made
+
+198
+00:17:50,360 --> 00:17:56,610
+it really easy to make something like iPhone-y.
+The box shadow, the gradiant, the border radius,
+
+199
+00:17:56,610 --> 00:18:02,040
+all that. Right? I had my app. It was all
+good, and I was feeling good having it out
+
+200
+00:18:02,040 --> 00:18:09,040
+on the market there. But then what happened
+is I was using Android at the time and I would
+
+201
+00:18:09,440 --> 00:18:15,350
+notice from time to time that the entire screen
+would just go completely white, right? And
+
+202
+00:18:15,350 --> 00:18:19,970
+I would be unable -- there would be nothing
+there anymore and I would have to, like, restart
+
+203
+00:18:19,970 --> 00:18:25,800
+the app and somehow go back. It was useless,
+right? You can't use an app that's a white
+
+204
+00:18:25,800 --> 00:18:32,100
+screen. It's highly unfunctional. So okay,
+clearly something is not working in this app
+
+205
+00:18:32,100 --> 00:18:37,450
+that I need to work out. I kind of had a suspicion
+that maybe Android didn't like all this fancy
+
+206
+00:18:37,450 --> 00:18:44,450
+CSS. I had kind of heard rumors that Android
+wasn't so good with new CSS3 stuff. So I suspected
+
+207
+00:18:45,170 --> 00:18:50,650
+that it was having trouble actually rendering
+this. So what I did was I spent an entire
+
+208
+00:18:50,650 --> 00:18:57,450
+afternoon sitting there commenting out CSS.
+Redeploying my APK to my phone. Scrolling
+
+209
+00:18:57,450 --> 00:19:01,890
+and scrolling and scrolling, waiting to see
+if I got a white screen. That was probably
+
+210
+00:19:01,890 --> 00:19:08,110
+one of the most boring afternoons in my life.
+So eventually I did figure out that if I commented
+
+211
+00:19:08,110 --> 00:19:14,090
+out enough of the fancy CSS, that I wouldn't
+get white screens anymore. And I didn't want
+
+212
+00:19:14,090 --> 00:19:19,110
+to have to sit there and figure out exactly
+how much CSS Android can handle because it
+
+213
+00:19:19,110 --> 00:19:23,240
+was just really boring. So I decided, well,
+you know what, I'm going to get rid of all
+
+214
+00:19:23,240 --> 00:19:28,100
+of it, right? I will take away the border
+radius, the gradients, box shadows, and so
+
+215
+00:19:28,100 --> 00:19:32,880
+it ended up looking really flat.
+Then conveniently Android came out with their
+
+216
+00:19:32,880 --> 00:19:39,200
+design guidelines which were the opposite
+of iPhone's and their design guidelines were:
+
+217
+00:19:39,200 --> 00:19:46,090
+Flat, not gradient, square. And I thought
+"Wow, that's perfect. It's like you knew that
+
+218
+00:19:46,090 --> 00:19:49,520
+you were incapable of handling CSS 3."
+[ Laughter ]
+
+219
+00:19:49,520 --> 00:19:54,420
+>>Pamela Fox: So that worked out really well,
+actually. But the thing is that I still wanted
+
+220
+00:19:54,420 --> 00:19:59,050
+to have the iPhone look and feel for iPhone
+users and the Android, you know, look and
+
+221
+00:19:59,050 --> 00:20:03,770
+feel for the Android users and I was doing
+this from the same code base, so I needed
+
+222
+00:20:03,770 --> 00:20:09,600
+to detect Android. So you can see here the
+transformation from the iPhone to the Android.
+
+223
+00:20:09,600 --> 00:20:16,410
+So to detect Android, it's a little more complex
+than you would imagine. I was doing the standard
+
+224
+00:20:16,410 --> 00:20:21,030
+user agent check for popular Android devices.
+I was also using the phone gap API that they
+
+225
+00:20:21,030 --> 00:20:25,540
+provide for checking device. And I was also
+checking the URL parameter because I test
+
+226
+00:20:25,540 --> 00:20:29,870
+my mobile Webapp in the browser as well, so
+I wanted to be able to just fake Android when
+
+227
+00:20:29,870 --> 00:20:33,540
+I was testing the browser.
+But finally, when I decided to add Android,
+
+228
+00:20:33,540 --> 00:20:38,410
+I add the Android class to the body tag and
+then in my CSS, I can just say, "Oh, okay,
+
+229
+00:20:38,410 --> 00:20:43,450
+if we're looking at a mobile class inside
+the Android body class, then just reset all
+
+230
+00:20:43,450 --> 00:20:49,570
+of these fancy things," right? Box shadow
+none, no border radius, get rid of all of
+
+231
+00:20:49,570 --> 00:20:52,720
+that, reset it all to zero.
+And that worked.
+
+232
+00:20:52,720 --> 00:20:58,190
+So what I learned here is that just because
+something is supported does not mean it's
+
+233
+00:20:58,190 --> 00:21:02,330
+supported well, right?
+It's really easy to throw in support for these
+
+234
+00:21:02,330 --> 00:21:07,330
+things. It's much harder to make them work
+really well and be really performant, especially
+
+235
+00:21:07,330 --> 00:21:13,750
+for this CSS 3 stuff, right?
+So you really need a check for that. And especially
+
+236
+00:21:13,750 --> 00:21:17,590
+if you're using these features in bulk, right?
+Part of my problem was that I had a -- kind
+
+237
+00:21:17,590 --> 00:21:22,290
+of an infinite scrolling interface so there
+was potentially lots and lots of these features
+
+238
+00:21:22,290 --> 00:21:26,770
+that were kind of building up and being used
+by the browser. I think if I only had, you
+
+239
+00:21:26,770 --> 00:21:32,570
+know, a limited amount of usage of it, I probably
+could have more easily controlled it and predicted
+
+240
+00:21:32,570 --> 00:21:37,100
+what it -- how it would perform. But since
+I had more and more of this CSS 3 features
+
+241
+00:21:37,100 --> 00:21:42,870
+building up, I think that contributed to Android
+kind of freaking out and going "Ahh, that's
+
+242
+00:21:42,870 --> 00:21:44,910
+too many!"
+I'm just guessing that's what Android does.
+
+243
+00:21:44,910 --> 00:21:47,090
+[ Laughter ]
+>>Pamela Fox: So if you're going to -- if
+
+244
+00:21:47,090 --> 00:21:51,300
+you have any sort of interfaces which potentially
+get, you know, bigger and bigger amounts of
+
+245
+00:21:51,300 --> 00:21:56,840
+content and don't have a finite cap, really
+be careful about your performance there. Right?
+
+246
+00:21:56,840 --> 00:22:03,840
+I worked on the Google Wave team years ago,
+and we had that problem with waves, right?
+
+247
+00:22:05,130 --> 00:22:09,700
+Waves that got way too long. They just had
+too much DOM inside them so we really had
+
+248
+00:22:09,700 --> 00:22:13,570
+to look at that DOM and say "Okay, we probably
+shouldn't be using a table to make all of
+
+249
+00:22:13,570 --> 00:22:17,070
+our buttons," right?
+Because that really, really adds up when you
+
+250
+00:22:17,070 --> 00:22:21,900
+get these really long waves.
+So definitely anyplace where you've got this
+
+251
+00:22:21,900 --> 00:22:25,080
+scrolling or lots of things adding up, look
+out for it.
+
+252
+00:22:25,080 --> 00:22:29,650
+Now, for browsers, I just want browsers to
+know their limits, right?
+
+253
+00:22:29,650 --> 00:22:35,500
+I would much rather that Android realize that
+it couldn't render my fancy CSS and just not
+
+254
+00:22:35,500 --> 00:22:38,700
+have done it, right?
+Instead of pretending it could do it and then
+
+255
+00:22:38,700 --> 00:22:44,740
+rendering a white screen. Because white screens
+are really not easy to use, right?
+
+256
+00:22:44,740 --> 00:22:48,990
+It's like worse than blue screens. At least
+blue screens, you know it's a blue screen
+
+257
+00:22:48,990 --> 00:22:51,470
+of death. You're like, "Oh, okay, die. I'm
+just going to restart it."
+
+258
+00:22:51,470 --> 00:22:56,240
+White screens, it's like "Hey, I don't know
+what's going on here." It's kind of abstract.
+
+259
+00:22:56,240 --> 00:23:00,790
+So browsers should just know their limits,
+right? So should all of us.
+
+260
+00:23:00,790 --> 00:23:04,370
+[ Laughter ]
+>>Pamela Fox: Okay. So finally, I want to
+
+261
+00:23:04,370 --> 00:23:08,650
+talk about a sign-up process that we have
+at Coursera that I helped on a few months
+
+262
+00:23:08,650 --> 00:23:10,890
+ago.
+So we introduced this thing called Signature
+
+263
+00:23:10,890 --> 00:23:15,650
+Track which is a way of taking courses while
+verifying your identity, and there are a few
+
+264
+00:23:15,650 --> 00:23:20,070
+technical components of Signature Track and
+we wanted to make sure that people knew about
+
+265
+00:23:20,070 --> 00:23:24,180
+these technical requirements before they signed
+up, because I didn't want users to get halfway
+
+266
+00:23:24,180 --> 00:23:28,430
+through this multi-step sign-up process and
+then realize that there was no way they would
+
+267
+00:23:28,430 --> 00:23:31,280
+have been able to complete it and then, you
+know, they get all mad, like "Coursera, why
+
+268
+00:23:31,280 --> 00:23:36,650
+do you tease me like that?"
+So these were the -- you know, the requirements
+
+269
+00:23:36,650 --> 00:23:43,610
+were that you needed to have a physical keyboard
+because we do this keystroke biometrics algorithm,
+
+270
+00:23:43,610 --> 00:23:48,500
+and it doesn't work so well on soft keyboards.
+So we wanted you to have a real physical keyboard.
+
+271
+00:23:48,500 --> 00:23:51,770
+You needed to have a webcam because we took
+a picture of your face every time you took
+
+272
+00:23:51,770 --> 00:23:56,510
+a quiz and when you signed up and so -- to
+match it to your ID. So we couldn't have you
+
+273
+00:23:56,510 --> 00:24:01,090
+do it if you didn't have a webcam.
+And you needed to have a modern browser and
+
+274
+00:24:01,090 --> 00:24:05,340
+also you needed to have Flash because we're
+using Flash to get the webcam stuff. I know
+
+275
+00:24:05,340 --> 00:24:09,840
+that you can do it in HTML5 but it didn't
+work so well.
+
+276
+00:24:09,840 --> 00:24:15,290
+So I needed to figure out how to do checks
+for all of these. The first thing was a physical
+
+277
+00:24:15,290 --> 00:24:19,390
+keyboard, and that was a little tricky because
+there's no such thing as asking the browser
+
+278
+00:24:19,390 --> 00:24:23,490
+if there's a physical keyboard attached.
+So we said, "All right. Well, maybe we should
+
+279
+00:24:23,490 --> 00:24:27,540
+just look to see if it's a touch device."
+So we started off with this check here, like,
+
+280
+00:24:27,540 --> 00:24:31,830
+"Oh, does ontouch start in window or document
+touch? Then okay, we're on a touch device."
+
+281
+00:24:31,830 --> 00:24:35,430
+And we rolled that out but we immediately
+got cases where it thought you were on a touch
+
+282
+00:24:35,430 --> 00:24:39,800
+device and you weren't and vice versa.
+And people would actually have physical keyboards
+
+283
+00:24:39,800 --> 00:24:45,150
+and we're like, "All right. We are just going
+to black-list mobile browsers. So basically
+
+284
+00:24:45,150 --> 00:24:49,020
+you're only going to be able to do this on
+your desktop browser, and we'll give you a
+
+285
+00:24:49,020 --> 00:24:53,290
+link to let us know that if you actually do
+have a physical keyboard, we'll give you that
+
+286
+00:24:53,290 --> 00:24:56,950
+option." Right?
+So we ended up doing that, because we needed
+
+287
+00:24:56,950 --> 00:25:00,800
+something -- I just needed something that
+worked to get this out fast. But the thing
+
+288
+00:25:00,800 --> 00:25:04,880
+is, we do tell -- we would tell people, right?
+So for every -- every time I would detect
+
+289
+00:25:04,880 --> 00:25:09,200
+something about a user, I would let them know
+like "Hey, this is the reason that we're not
+
+290
+00:25:09,200 --> 00:25:12,370
+letting you do it."
+So that then they could see and then they
+
+291
+00:25:12,370 --> 00:25:16,390
+could contact us and say, "Oh, hey, you say
+that you blocked me because I didn't have
+
+292
+00:25:16,390 --> 00:25:20,500
+a hard keyboard but actually I do," and then
+we could decide to unblock them or we could
+
+293
+00:25:20,500 --> 00:25:24,700
+change our blocking process. Right?
+We actually -- we haven't gotten any emails
+
+294
+00:25:24,700 --> 00:25:27,220
+about that check yet, so I guess it's kind
+of working.
+
+295
+00:25:27,220 --> 00:25:33,220
+Now, I just want to give an aside now on touch
+events because touch events are really, really
+
+296
+00:25:33,220 --> 00:25:37,770
+interesting things, and there's been a lot
+of very interesting articles lately about
+
+297
+00:25:37,770 --> 00:25:42,710
+touch events and whether you should be supporting
+-- detecting them and how.
+
+298
+00:25:42,710 --> 00:25:46,350
+So here's -- you know, if we want to look
+for touch events, there's a couple things
+
+299
+00:25:46,350 --> 00:25:52,060
+we have to do across different browsers to
+find out if that browser is capable of doing
+
+300
+00:25:52,060 --> 00:25:55,530
+touch events.
+But there's a difference between a browser
+
+301
+00:25:55,530 --> 00:25:59,250
+supporting touch events and the user actually
+using touch events, right?
+
+302
+00:25:59,250 --> 00:26:04,440
+So if you're on an Android tablet, you could
+still connect a mouse to your tablet, right?
+
+303
+00:26:04,440 --> 00:26:08,900
+And you could actually potentially be using
+a Web site and switching between using a mouse
+
+304
+00:26:08,900 --> 00:26:11,940
+and using your finger on the same Web page,
+right?
+
+305
+00:26:11,940 --> 00:26:16,630
+So that means as a developer you shouldn't
+be relying on just the fact that something
+
+306
+00:26:16,630 --> 00:26:20,960
+is a touch device as meaning that that's actually
+-- that you should just be doing everything
+
+307
+00:26:20,960 --> 00:26:25,210
+reacting to touch, because a lot of times
+users can connect these other devices as well.
+
+308
+00:26:25,210 --> 00:26:28,850
+And I think this is going to become more and
+more common that we'll have these devices
+
+309
+00:26:28,850 --> 00:26:31,270
+that are both.
+I mean, we all just got that Chrome Pixel,
+
+310
+00:26:31,270 --> 00:26:36,420
+right? And the Chrome Pixel is a touchscreen
+and a keyboard and you have the little mousey
+
+311
+00:26:36,420 --> 00:26:39,620
+down there, right?
+So this is becoming more and more the reality,
+
+312
+00:26:39,620 --> 00:26:44,230
+so we have to be really careful that when
+we're looking for touch, that we consider
+
+313
+00:26:44,230 --> 00:26:48,070
+the fact that they could still be using click
+events, right?
+
+314
+00:26:48,070 --> 00:26:54,880
+So the standard way -- or one way that you
+could actually not care about this is that
+
+315
+00:26:54,880 --> 00:26:59,000
+you could listen to a touch event, and if
+you get a touch event, you would just trigger
+
+316
+00:26:59,000 --> 00:27:03,080
+your listener for the click event and basically
+they would both do the same thing.
+
+317
+00:27:03,080 --> 00:27:05,830
+Right?
+So that way, the user could go between using
+
+318
+00:27:05,830 --> 00:27:10,710
+touch and using click and your Web page should
+respond exactly the same way.
+
+319
+00:27:10,710 --> 00:27:14,330
+So if you are doing anything right now or
+thinking about doing something where you're
+
+320
+00:27:14,330 --> 00:27:18,580
+detecting touch events and doing something
+different, think to yourself "How would this
+
+321
+00:27:18,580 --> 00:27:24,820
+work if the user also had a -- a mouse attached?
+How would it work if they switched between
+
+322
+00:27:24,820 --> 00:27:29,300
+the mouse and the touchscreen halfway through
+the interaction," right? That's kind of the
+
+323
+00:27:29,300 --> 00:27:33,750
+-- the trickiest, but it could happen, right?
+And there's some really interesting articles
+
+324
+00:27:33,750 --> 00:27:37,000
+about that there.
+Okay. So that's an aside.
+
+325
+00:27:37,000 --> 00:27:42,030
+Oh, we also need to check the Flash plugin
+and I just used the SWF object library for
+
+326
+00:27:42,030 --> 00:27:45,390
+this, which is -- it's a nice well-supported
+library and it will even tell you the Flash
+
+327
+00:27:45,390 --> 00:27:48,650
+Player versions, in case you want to support
+particular versions.
+
+328
+00:27:48,650 --> 00:27:54,080
+And I also wanted to check for a webcam. Unfortunately,
+there is no way to check for a webcam unless
+
+329
+00:27:54,080 --> 00:27:59,990
+you actually put up the webcam prompt and
+ask the user to give permission, right?
+
+330
+00:27:59,990 --> 00:28:04,270
+And I wanted to check for this before they
+even got to the webcam part of the process.
+
+331
+00:28:04,270 --> 00:28:08,860
+So I gave up, and I just put a -- we put up
+a little modal that said "Hey, remember, you
+
+332
+00:28:08,860 --> 00:28:13,640
+need a webcam," and, you know, presumably
+if they saw that and decided to keep going,
+
+333
+00:28:13,640 --> 00:28:17,970
+even though they didn't have a webcam, well,
+that's their prerogative.
+
+334
+00:28:17,970 --> 00:28:24,450
+So sometimes you just can't detect things
+and you have to -- you have to accept that.
+
+335
+00:28:24,450 --> 00:28:30,650
+So in this case, I learned that, you know,
+you can't detect things all the time and you
+
+336
+00:28:30,650 --> 00:28:35,360
+have to do different things, and if you do
+decide to block the users, which, you know,
+
+337
+00:28:35,360 --> 00:28:39,870
+can be a bad thing, but if you do block them,
+tell them why you blocked them, give them
+
+338
+00:28:39,870 --> 00:28:45,390
+an option to contact you and explain, you
+know -- you know, what their -- their particular
+
+339
+00:28:45,390 --> 00:28:49,660
+setup is, and maybe you'll realize then that
+the code you were using could actually be
+
+340
+00:28:49,660 --> 00:28:53,380
+much improved.
+And for browsers, I would really like for
+
+341
+00:28:53,380 --> 00:28:57,820
+browsers to give us a way to detect those
+physical devices and plugins, right? So I
+
+342
+00:28:57,820 --> 00:29:00,620
+wouldn't have to go through all this effort
+to try and figure it out. So something like
+
+343
+00:29:00,620 --> 00:29:05,640
+is there a physical keyboard, are they using
+it right now, do they have a webcam, do they
+
+344
+00:29:05,640 --> 00:29:09,040
+have Flash. Those would have all made my life
+much, much easier.
+
+345
+00:29:09,040 --> 00:29:14,860
+All right. So to finish up, this is a reminder
+of why this all matters. This is a visualization
+
+346
+00:29:14,860 --> 00:29:18,950
+of browser support for a particular feature
+and there's lots more visualizations of this.
+
+347
+00:29:18,950 --> 00:29:23,340
+But the point is that, yeah, we're going to
+have unequal distribution of feature support
+
+348
+00:29:23,340 --> 00:29:27,620
+for a long time going forward. Basically forever,
+right? People will keep coming up with new
+
+349
+00:29:27,620 --> 00:29:31,660
+things. Browsers will keep not implementing
+them at the same rate, keep implementing in
+
+350
+00:29:31,660 --> 00:29:35,710
+different ways with different performance
+concerns, with different attributes supported,
+
+351
+00:29:35,710 --> 00:29:37,990
+and we're going to just have to keep dealing
+with that, right?
+
+352
+00:29:37,990 --> 00:29:41,590
+So this is something that we're going to have
+to think about for years to come.
+
+353
+00:29:41,590 --> 00:29:47,510
+Now, browsers are aware of this and browsers
+are trying to help, so browsers, they did
+
+354
+00:29:47,510 --> 00:29:53,090
+introduce this CSS conditionals Level 3 spec,
+which actually has this @supports rule for
+
+355
+00:29:53,090 --> 00:29:57,210
+CSS where you can say, "Oh, hey, does this
+browser actually support this CSS" and then
+
+356
+00:29:57,210 --> 00:30:02,340
+you could serve different styles. And they've
+got the same in JavaScript, window.supportCSS,
+
+357
+00:30:02,340 --> 00:30:04,850
+and this is actually supported by three browsers
+now.
+
+358
+00:30:04,850 --> 00:30:08,500
+So the cool thing is that browsers are actually
+realizing that, yeah, this is something developers
+
+359
+00:30:08,500 --> 00:30:12,220
+care about and they're trying to come up with
+more ways for us to figure it out, but this
+
+360
+00:30:12,220 --> 00:30:15,500
+is still -- this is really cutting-edge and
+most of you, you know, we won't be able to
+
+361
+00:30:15,500 --> 00:30:20,500
+use this quite yet, right?
+So in the meantime, what should be your strategy?
+
+362
+00:30:20,500 --> 00:30:24,670
+First of all, don't assume it's going to be
+easy, because sometimes it's not, and if you
+
+363
+00:30:24,670 --> 00:30:28,630
+assume it's easy, you might look for an easy
+solution and overlook all the complexities.
+
+364
+00:30:28,630 --> 00:30:33,900
+Don't just copy the first answer off stackoverflow,
+which is something I do a lot but I'm trying
+
+365
+00:30:33,900 --> 00:30:35,920
+to -- I'm trying to cut back on it.
+[ Laughter ]
+
+366
+00:30:35,920 --> 00:30:41,360
+>>Pamela Fox: Try -- do use the tried-and-true
+techniques, right? So use popular and well-tested
+
+367
+00:30:41,360 --> 00:30:44,610
+libraries. Look at the number of forks, the
+number of issues, the number of contributors,
+
+368
+00:30:44,610 --> 00:30:48,190
+look at how recently the change was. Browse
+through the issue tracker and see what people
+
+369
+00:30:48,190 --> 00:30:51,750
+say about it, right?
+And if you're not sure, just ask, right?
+
+370
+00:30:51,750 --> 00:30:56,220
+When I was trying to figure out the Signature
+Track process, I just emailed my buddies on
+
+371
+00:30:56,220 --> 00:31:00,470
+the Chrome team and said, "Hey, is there anything
+I'm not thinking of here?" Right?
+
+372
+00:31:00,470 --> 00:31:05,520
+And now we don't all have buddies on the Chrome
+team but we do have Paul Irish's Twitter account
+
+373
+00:31:05,520 --> 00:31:09,750
+so I recommend just tweeting at him because
+he really likes to answer these things and
+
+374
+00:31:09,750 --> 00:31:14,000
+he's got the lowdown, so don't be afraid to
+ask. There's a lot of people out there that
+
+375
+00:31:14,000 --> 00:31:17,640
+will answer. And do try feature detection
+first, right?
+
+376
+00:31:17,640 --> 00:31:20,900
+So use Modernizr and you can see all the different
+ways of using it.
+
+377
+00:31:20,900 --> 00:31:26,700
+Also, if you do need to do user agent detection,
+use this library called UA parser. It's maintained
+
+378
+00:31:26,700 --> 00:31:33,200
+by Browser Stack and contributed by Google
+and Facebook, so it's got a lot of great well-tested
+
+379
+00:31:33,200 --> 00:31:36,690
+RegExes in it and it's supported in lots of
+different languages.
+
+380
+00:31:36,690 --> 00:31:39,860
+And you can also mix and match, right? You
+can see if something works and then maybe
+
+381
+00:31:39,860 --> 00:31:43,500
+black-list it for certain browsers that you
+know have problems, right? Certain browsers
+
+382
+00:31:43,500 --> 00:31:49,990
+and versions. That's the best kind of blacklist.
+So basically the conclusion here is that we
+
+383
+00:31:49,990 --> 00:31:52,810
+don't have that. Do you guys know what that
+is up there?
+
+384
+00:31:52,810 --> 00:31:58,580
+Yeah, so that's a sonic screwdriver from Doctor
+Who, and basically it can do everything, right?
+
+385
+00:31:58,580 --> 00:32:03,230
+We don't have something that can do everything.
+We don't have the perfect solution in web
+
+386
+00:32:03,230 --> 00:32:10,060
+development. That's just how it is. But we
+do have a lot of tools in our toolbox, and
+
+387
+00:32:10,060 --> 00:32:13,140
+we can learn how to use those tools and we
+can combine them together and we can try to
+
+388
+00:32:13,140 --> 00:32:18,210
+use the more sophisticated ones first. And
+we also have each other, so that we can learn
+
+389
+00:32:18,210 --> 00:32:22,380
+from each other about how to learn these tools,
+right? So we're not alone in it, so when you're
+
+390
+00:32:22,380 --> 00:32:26,880
+figuring this out, look to each other for
+the solutions, document what you find out,
+
+391
+00:32:26,880 --> 00:32:32,220
+write it up, open-source your code, and then
+we'll all learn how to do all this detection
+
+392
+00:32:32,220 --> 00:32:37,660
+together so that we can fully take advantage
+of everything the web has for us today.
+
+393
+00:32:37,660 --> 00:32:44,380
+Got it?
+Done!
+
+394
+00:32:44,380 --> 00:32:51,380
+[ Applause ]
+So questions? Yeah? Anyone have questions?
+
+395
+00:32:54,760 --> 00:33:01,590
+Speechless. Doctor Who episodes, perhaps?
+[ Humming ]
+
+396
+00:33:01,590 --> 00:33:08,590
+>>Pamela Fox: There's a little microphony
+thing there.
+
+397
+00:33:08,660 --> 00:33:15,660
+>>> Okay. So there seems to be kind of an
+underlying theme to all of this, and that
+
+398
+00:33:15,900 --> 00:33:20,470
+is, you're doing all this checking. It almost
+feels like you're trying to implement what
+
+399
+00:33:20,470 --> 00:33:27,320
+you can when you can, rather than trying to
+develop to implement -- or to cover as many
+
+400
+00:33:27,320 --> 00:33:32,120
+browsers as possible and then dealing with
+exceptions. Am I just kind of reading into
+
+401
+00:33:32,120 --> 00:33:36,790
+that the wrong way or...
+>>Pamela Fox: So you're wondering am I trying
+
+402
+00:33:36,790 --> 00:33:42,010
+to use new things -- am I trying to like overly
+hard to use new things versus using the older
+
+403
+00:33:42,010 --> 00:33:45,190
+things?
+>>> No, I wouldn't say "overly hard," but
+
+404
+00:33:45,190 --> 00:33:48,950
+it seems like -- and not just you. I see a
+lot of developers out there feel like there's
+
+405
+00:33:48,950 --> 00:33:54,940
+this push, this emphasis to use everything
+possibly available even if it causes 10 times
+
+406
+00:33:54,940 --> 00:33:55,960
+the work.
+>>Pamela Fox: Right. Yeah. No, I think that's
+
+407
+00:33:55,960 --> 00:33:58,430
+a good point, right?
+>>> You know.
+
+408
+00:33:58,430 --> 00:34:04,070
+>>Pamela Fox: I think that we see the new
+stuff and we get really excited about it and
+
+409
+00:34:04,070 --> 00:34:08,030
+it makes us feel good to try out the new stuff
+because we feel like we're on the cutting
+
+410
+00:34:08,030 --> 00:34:12,079
+edge.
+It's kind of like not-invented-here syndrome,
+
+411
+00:34:12,079 --> 00:34:15,389
+right? Like it helps us kind of feel like
+inventors if we're using the new stuff too
+
+412
+00:34:15,389 --> 00:34:20,869
+and we're going on this alone. But it's true.
+So I -- so nowadays, like at Coursera, most
+
+413
+00:34:20,869 --> 00:34:26,789
+of the time I will just try and go with the
+tried-and-true techniques now because I -- now
+
+414
+00:34:26,789 --> 00:34:31,359
+that I've had this much experience with trying
+the new stuff, you know, I like knowing that
+
+415
+00:34:31,359 --> 00:34:35,509
+it's there, but I also know that if I'm going
+to try it out, I'm probably going to be one
+
+416
+00:34:35,509 --> 00:34:38,950
+of the first people to really try it out in
+a big app and I'm going to have to struggle
+
+417
+00:34:38,950 --> 00:34:42,809
+with figuring that out. And sometimes I'm
+up for that challenge because it can be quite
+
+418
+00:34:42,809 --> 00:34:45,450
+interesting, but sometimes I just want it
+to work.
+
+419
+00:34:45,450 --> 00:34:49,889
+>>> Okay. So I hadn't quite formed the question
+till now that you've said that.
+
+420
+00:34:49,889 --> 00:34:53,379
+In your experience, these things that are
+out there, are they generally stable enough
+
+421
+00:34:53,379 --> 00:35:00,039
+that it's -- it's okay for the better part
+of the user base to try to use them and deal
+
+422
+00:35:00,039 --> 00:35:04,930
+with them, or should -- if you've got a really
+deal with the general public, should you just
+
+423
+00:35:04,930 --> 00:35:09,009
+stick with those tried-and-true methods?
+>>Pamela Fox: It really depends on what they
+
+424
+00:35:09,009 --> 00:35:14,519
+are. Some of them have been out there for
+longer than others. I guess I've experienced,
+
+425
+00:35:14,519 --> 00:35:20,480
+even with -- even with local storage, that
+browsers introduce new bugs and it's even
+
+426
+00:35:20,480 --> 00:35:25,029
+been around for a couple years.
+We use HTML5 video at Coursera and we still
+
+427
+00:35:25,029 --> 00:35:29,109
+have a lot of problems with it, and it's been
+out for a year or so, so we've started defaulting
+
+428
+00:35:29,109 --> 00:35:32,630
+users to Flash instead.
+>>> Okay. That right there says a lot.
+
+429
+00:35:32,630 --> 00:35:36,059
+>>Pamela Fox: So sometimes there are advantages
+to stuff, right? We're using HTML5 video at
+
+430
+00:35:36,059 --> 00:35:40,640
+Coursera because we get playback, right? We
+can use the speedup buttons. So we're using
+
+431
+00:35:40,640 --> 00:35:44,950
+it there because we're getting a real advantage
+to using it. So if there is a real advantage
+
+432
+00:35:44,950 --> 00:35:49,490
+in terms of performance or productivity -- right?
+-- like, you know, border radius I'm going
+
+433
+00:35:49,490 --> 00:35:52,609
+to use that and just not care if it doesn't
+work in other browsers, right? Because I get
+
+434
+00:35:52,609 --> 00:35:58,510
+a big advantage there and not -- and not a
+big decrease, so it's a balance.
+
+435
+00:35:58,510 --> 00:36:02,339
+>>> Thank you.
+>>> Regarding your fancy CSS woes, did you
+
+436
+00:36:02,339 --> 00:36:08,710
+file any bugs?
+>>Pamela Fox: So did I file bugs on the Android
+
+437
+00:36:08,710 --> 00:36:12,119
+whiteout?
+>>> And was it Chrome or was it the Android
+
+438
+00:36:12,119 --> 00:36:14,220
+browser?
+>>Pamela Fox: This was Android Webkit, so
+
+439
+00:36:14,220 --> 00:36:17,619
+the thing is, when you doing phone gap, you
+have to use the embedded Web view, which means
+
+440
+00:36:17,619 --> 00:36:22,819
+using the Android Webkit, also known as like
+the worst Webkit ever. So there -- I mean,
+
+441
+00:36:22,819 --> 00:36:29,819
+there were a lot of issues with that Webkit.
+I think I filed some -- some issues on that,
+
+442
+00:36:30,339 --> 00:36:33,380
+but I don't know if I filed on the whiteout
+in particular, because it's -- it's something
+
+443
+00:36:33,380 --> 00:36:37,539
+where you'd have to give them the test case
+and it's kind of a -- sometimes it can be
+
+444
+00:36:37,539 --> 00:36:41,309
+really complex to come up with the test cases
+for people, and I feel bad reporting bugs
+
+445
+00:36:41,309 --> 00:36:44,530
+without a really nice test case for it. So
+I probably didn't.
+
+446
+00:36:44,530 --> 00:36:48,579
+>>> I gotcha. Cool. We'd like to help fix
+those.
+
+447
+00:36:48,579 --> 00:36:55,579
+>>Pamela Fox: Nice. Anything else?
+All right. How many of you use Modernizr now?
+
+448
+00:36:55,580 --> 00:36:57,839
+[ Show of hands ]
+>>Pamela Fox: Cool.
+
+449
+00:36:57,839 --> 00:37:00,569
+Any of you guys do UA parser?
+[ Show of hands ]
+
+450
+00:37:00,569 --> 00:37:04,829
+>>Pamela Fox: Oh, yeah, one. Yeah, I actually
+had never even heard of it before, so...
+
+451
+00:37:04,829 --> 00:37:09,349
+>> (Speaker is off microphone.)
+>>Pamela Fox: Why doesn't Modernizr have it
+
+452
+00:37:09,349 --> 00:37:13,869
+in its Flash? So there's a whole issue on
+it. So this is what I recommend. Like when
+
+453
+00:37:13,869 --> 00:37:17,539
+you use Modernizr, you'll find it doesn't
+have checks for -- there's lots of things
+
+454
+00:37:17,539 --> 00:37:20,869
+it doesn't have checks for, right? Many of
+the things I check for these days, like playback
+
+455
+00:37:20,869 --> 00:37:24,750
+rate on the video element, Modernizr doesn't
+have that.
+
+456
+00:37:24,750 --> 00:37:28,890
+But if you look in the issue tracker, you
+will often find discussions about it, right?
+
+457
+00:37:28,890 --> 00:37:32,200
+So anytime you use a library, look in the
+issue tracker, right?
+
+458
+00:37:32,200 --> 00:37:35,430
+So I always look in the issue tracker. So
+you've got to, like, look and see what are
+
+459
+00:37:35,430 --> 00:37:38,470
+the common issues that people are having,
+right? To see, "Oh, is that something that's
+
+460
+00:37:38,470 --> 00:37:42,000
+going to hit me too?"
+And also look for interesting discussions,
+
+461
+00:37:42,000 --> 00:37:46,079
+especially with Modernizr.
+And I also look to see just when people respond
+
+462
+00:37:46,079 --> 00:37:49,630
+to issues, if they're nice or if they're mean,
+because if I'm thinking about using a library
+
+463
+00:37:49,630 --> 00:37:53,779
+and all the responses on the issue tracker
+are kind of mean, then I don't use it.
+
+464
+00:37:53,779 --> 00:37:57,680
+[ Laughter ]
+>>Pamela Fox: So I definitely check out -- when
+
+465
+00:37:57,680 --> 00:38:02,099
+I'm thinking of using a library, I check out
+their issue tracker and their code history
+
+466
+00:38:02,099 --> 00:38:07,819
+fairly thoroughly, right? Because anytime
+you use a library, it's an investment because
+
+467
+00:38:07,819 --> 00:38:11,259
+you'll encounter issues with it.
+So they don't have a Flash support but they
+
+468
+00:38:11,259 --> 00:38:16,569
+do have a long thread about it and I followed
+a few links from there, but in the end, SWF
+
+469
+00:38:16,569 --> 00:38:23,009
+object was the -- the best option. It's the
+most accurate.
+
+470
+00:38:23,009 --> 00:38:28,729
+Cool. All right. You're free to go.
+[ Applause ]
+

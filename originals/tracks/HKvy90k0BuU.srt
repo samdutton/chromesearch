@@ -1,0 +1,2115 @@
+1
+00:00:00,750 --> 00:00:01,000
+
+2
+00:00:00,780 --> 00:00:01,030
+
+3
+00:00:00,820 --> 00:00:03,649
+So my name is James Hawkins. I'm the tech
+
+4
+00:00:03,649 --> 00:00:08,210
+lead of the Chrome team in Los Angeles, and
+for the past year we've been working very
+
+5
+00:00:08,210 --> 00:00:13,900
+closely with the Google+ Photos team on a
+new product. That's the Google+ Photos Chrome
+
+6
+00:00:13,900 --> 00:00:18,119
+app.
+So this is a Chrome packaged app, and if you'll
+
+7
+00:00:18,119 --> 00:00:24,609
+remember, packaged apps were announced a little
+over a year ago and this is, you know, the
+
+8
+00:00:24,609 --> 00:00:30,420
+key piece of Chrome's app platform.
+Packaged apps give you the ability to have
+
+9
+00:00:30,420 --> 00:00:34,140
+extended permissions. You can do a little
+bit more. You can have a more native look
+
+10
+00:00:34,140 --> 00:00:39,270
+and feel with your app. It's a step above
+what you can do with the web platform today.
+
+11
+00:00:39,270 --> 00:00:41,899
+So we're going to talk about Google+ Photos
+Chrome app.
+
+12
+00:00:41,899 --> 00:00:48,899
+Actually, instead of talking about it, let's
+cut to the demo.
+
+13
+00:00:51,520 --> 00:00:58,520
+Okay. So this is Google+ Photos, the Chrome
+app. This is my personal account. I've got
+
+14
+00:01:03,250 --> 00:01:08,520
+all my photos loaded up into it. We're doing
+some nice scrolling. And if you note, I'm
+
+15
+00:01:08,520 --> 00:01:12,530
+on a Pixel right here, so we obviously have
+touchscreen capabilities to do scrolling with
+
+16
+00:01:12,530 --> 00:01:16,290
+this.
+Okay. So we're viewing some photos. Let's
+
+17
+00:01:16,290 --> 00:01:18,420
+say I want to go in and check out a particular
+photo.
+
+18
+00:01:18,420 --> 00:01:24,920
+All right. I've got this photo and I've got
+my nice information, my tags and details.
+
+19
+00:01:24,920 --> 00:01:30,040
+Very neat.
+But I just went and used my camera, took a
+
+20
+00:01:30,040 --> 00:01:33,909
+bunch of pictures, and I've got it on an SD
+card. I'd like to upload these to the cloud.
+
+21
+00:01:33,909 --> 00:01:40,909
+I want to share it with my friends. So let's
+go ahead and do that. Close this.
+
+22
+00:01:48,119 --> 00:01:52,180
+So here we go.
+The app was already open and it's already
+
+23
+00:01:52,180 --> 00:01:56,509
+started importing photos and it's going to
+start uploading them. We can view the ones
+
+24
+00:01:56,509 --> 00:02:01,770
+that are on this SD card.
+Cool. So these are the pictures that I just
+
+25
+00:02:01,770 --> 00:02:05,729
+took. Got a little notification that we have
+some photos copied and they're being uploaded
+
+26
+00:02:05,729 --> 00:02:11,560
+right now.
+We got a notification that we're finding the
+
+27
+00:02:11,560 --> 00:02:15,650
+best photos and there we go.
+What you just saw is something that you heard
+
+28
+00:02:15,650 --> 00:02:21,970
+about in the keynote. This is autocuration.
+So in the back end, Google said, "We're looking
+
+29
+00:02:21,970 --> 00:02:25,480
+at your photos. We want to see what are the
+best photos of the ones you just took. Let's
+
+30
+00:02:25,480 --> 00:02:30,920
+make it very simple for you to share the best
+photos that you have with your -- with your
+
+31
+00:02:30,920 --> 00:02:34,730
+friends, your families, et cetera."
+For example, this is -- this photo has been
+
+32
+00:02:34,730 --> 00:02:39,680
+deemed to be underexposed. Cool. All right.
+That's fine. I'm not too picky. I just want
+
+33
+00:02:39,680 --> 00:02:46,680
+the best photos to go up.
+So we want to share these.
+
+34
+00:02:46,700 --> 00:02:53,700
+Cool. I shared it with my family. Cool new
+photos.
+
+35
+00:03:08,530 --> 00:03:15,530
+And so this is -- these are the photos that
+I just shared. We can change the name. No,
+
+36
+00:03:15,730 --> 00:03:20,080
+it's '13.
+[ Laughter ]
+
+37
+00:03:20,080 --> 00:03:27,080
+>>James Hawkins: It is early, after all.
+Cool. So this is Google+ Photos. You've got
+
+38
+00:03:29,680 --> 00:03:34,819
+the autocuration magic behind the scenes.
+You've got a very slick interface, very fast
+
+39
+00:03:34,819 --> 00:03:40,340
+viewing of all your photos, just really nice
+scrolling. And we're going to talk a bit today
+
+40
+00:03:40,340 --> 00:03:47,340
+about what it took to develop this product
+as a Chrome packaged app on the platform.
+
+41
+00:03:48,480 --> 00:03:52,810
+>> (Speaker is off microphone.)
+>>James Hawkins: This is not available yet.
+
+42
+00:03:52,810 --> 00:03:59,360
+It will be available soon.
+So we started developing this product with
+
+43
+00:03:59,360 --> 00:04:03,349
+a set of goals in mind. What did we want to
+accomplish?
+
+44
+00:04:03,349 --> 00:04:08,170
+When we started development, the only way
+to view photos in Chrome OS was through the
+
+45
+00:04:08,170 --> 00:04:13,200
+file manager, and even then that was not the
+best experience. You could do some minimal
+
+46
+00:04:13,200 --> 00:04:17,630
+editing. You couldn't really share very easily.
+And, you know, the viewing experience was
+
+47
+00:04:17,630 --> 00:04:22,300
+just a stopgap. That's not to say it's not
+good, but we wanted to do something better.
+
+48
+00:04:22,300 --> 00:04:27,240
+We wanted a better photos experience for Chrome
+OS.
+
+49
+00:04:27,240 --> 00:04:33,370
+In addition, we wanted a place where the Google+
+Photos team could experiment with new UI,
+
+50
+00:04:33,370 --> 00:04:40,250
+new back-end functionality like we were talking
+about with autocuration. In fact, autocuration
+
+51
+00:04:40,250 --> 00:04:44,680
+was not available to the public in, you know,
+the Google+ desktop until, you know, we just
+
+52
+00:04:44,680 --> 00:04:49,580
+announced it at I/O a couple days ago, and
+so this was -- this product was the only place
+
+53
+00:04:49,580 --> 00:04:55,860
+where the autocuration team could see autocuration
+live, see how it worked out, get a lot of
+
+54
+00:04:55,860 --> 00:04:59,940
+feedback on the feature, and so this is going
+to continue to be one of the places where
+
+55
+00:04:59,940 --> 00:05:06,490
+that feature development happens, like sandbox,
+if you will.
+
+56
+00:05:06,490 --> 00:05:10,960
+And coming from the Chrome team side of things,
+we wanted to make sure that the platform had
+
+57
+00:05:10,960 --> 00:05:15,780
+everything that we needed in order to be very
+successful and very easy for people to develop
+
+58
+00:05:15,780 --> 00:05:19,139
+apps. What's missing? Could we identify it?
+What are the bugs?
+
+59
+00:05:19,139 --> 00:05:23,320
+A lot of -- you know, it's a very nascent
+platform and a lot of the APIs that are being
+
+60
+00:05:23,320 --> 00:05:28,820
+developed are even right now in development,
+and we wanted to test them out, have a user
+
+61
+00:05:28,820 --> 00:05:33,690
+for the platform instead of, you know, giving
+it to you guys and you guys have to cut your
+
+62
+00:05:33,690 --> 00:05:38,449
+teeth on it, which is not the best experience.
+We wanted to do that ourselves, to spare you
+
+63
+00:05:38,449 --> 00:05:43,380
+guys some pain.
+And as a part of that as well, we are Chrome
+
+64
+00:05:43,380 --> 00:05:47,860
+developers in addition to doing some of this
+front-end stuff, so when we did find areas
+
+65
+00:05:47,860 --> 00:05:53,210
+that were lacking in the platform, we could
+go in and, you know, add those APIs that were
+
+66
+00:05:53,210 --> 00:05:59,180
+missing. And I'll talk about one of those
+specifically later on.
+
+67
+00:05:59,180 --> 00:06:06,180
+So Chrome, as you know, has three core principles.
+You want your UI to be extremely quick, extremely
+
+68
+00:06:06,220 --> 00:06:11,330
+fast. You want animations to be very snappy
+and fluid. When you have jank, you have stuttering,
+
+69
+00:06:11,330 --> 00:06:15,930
+you have a really bad user experience. It's
+jarring for the user.
+
+70
+00:06:15,930 --> 00:06:21,780
+Keeping your app very simple to me means getting
+out of the way. Get your UI out of the way
+
+71
+00:06:21,780 --> 00:06:26,050
+of the user, out of the way of what they're
+trying to do. And sometimes that is actually
+
+72
+00:06:26,050 --> 00:06:30,930
+the hardest thing to accomplish.
+Security, obviously, is extremely important.
+
+73
+00:06:30,930 --> 00:06:36,340
+You want to keep your users secure. Not only
+from your app misbehaving but from malicious
+
+74
+00:06:36,340 --> 00:06:43,340
+attackers that, you know, can get -- can use
+your app to harm your user. You want to make
+
+75
+00:06:43,440 --> 00:06:47,440
+sure that that is not possible.
+So we took these principles to mind when we
+
+76
+00:06:47,440 --> 00:06:51,910
+were developing the app, and the challenges
+that we faced when developing the app, I'm
+
+77
+00:06:51,910 --> 00:06:58,910
+going to frame around these core principles.
+Speed. You got to be fast. Everybody wants
+
+78
+00:07:01,259 --> 00:07:07,660
+to be fast.
+One of the first problems we ran into was
+
+79
+00:07:07,660 --> 00:07:12,580
+with having to have a clientside photo and
+needing to know if we needed to upload it
+
+80
+00:07:12,580 --> 00:07:16,539
+or not. You obviously don't want to waste
+bandwidth if the user already has that photo
+
+81
+00:07:16,539 --> 00:07:22,759
+in the cloud, and so the way we did that is
+to store SHA-512 hashes of these photos in
+
+82
+00:07:22,759 --> 00:07:27,080
+the cloud when it was already uploaded and
+so when we have a new photo to upload, we
+
+83
+00:07:27,080 --> 00:07:31,849
+have to calculate that hash to say, "Hey,
+do you have this photo or not; and if not,
+
+84
+00:07:31,849 --> 00:07:38,849
+we don't need to upload it."
+So we have a little demo here. This is a quite
+
+85
+00:07:41,490 --> 00:07:46,610
+large image. It's about 12 megabytes, I think.
+And this is just one example of what the user
+
+86
+00:07:46,610 --> 00:07:50,729
+could be uploading that we need to get the
+-- the hash of.
+
+87
+00:07:50,729 --> 00:07:56,569
+And we found that the JavaScript implementation,
+while we could optimize it as much as we possibly
+
+88
+00:07:56,569 --> 00:08:02,720
+could, it could never compare to a native
+implementation. And we got that native implementation
+
+89
+00:08:02,720 --> 00:08:07,580
+through Native Client, which allows you to
+run C++ binaries in your Webapp. It's a really
+
+90
+00:08:07,580 --> 00:08:12,629
+amazing technology that is extremely useful,
+especially for this use case, where you need
+
+91
+00:08:12,629 --> 00:08:17,349
+to do data processing, you want to get bare
+bones as close to the middle as possible.
+
+92
+00:08:17,349 --> 00:08:21,259
+So I'm going to do a little demo. We have
+hashing done in JavaScript and we have hashing
+
+93
+00:08:21,259 --> 00:08:25,150
+done in Native Client and we're going to get
+the timings of those and we'll see what the
+
+94
+00:08:25,150 --> 00:08:32,150
+difference is.
+Okay. Almost 3 seconds compared to 200 milliseconds.
+
+95
+00:08:34,860 --> 00:08:39,390
+That is an order of magnitude difference.
+That's amazing. Not to mention the fact that
+
+96
+00:08:39,390 --> 00:08:44,080
+Native Client doesn't block the UI, the main
+thread, whereas this JavaScript implementation
+
+97
+00:08:44,080 --> 00:08:48,269
+does.
+So if you're taking 3 seconds to hash an image,
+
+98
+00:08:48,269 --> 00:08:52,519
+your user is doing nothing. They're looking
+at your app not doing anything. So Native
+
+99
+00:08:52,519 --> 00:08:58,540
+Client saved us on this one. And in fact,
+you know, with more native-like apps being
+
+100
+00:08:58,540 --> 00:09:02,820
+produced for the Web, I think we're going
+to see Native Client being used a tremendous
+
+101
+00:09:02,820 --> 00:09:06,440
+amount.
+One of the first big apps that was done with
+
+102
+00:09:06,440 --> 00:09:11,860
+Native Client was actually games and it makes
+perfect sense. You've got to have high -- super-high
+
+103
+00:09:11,860 --> 00:09:18,860
+performance, so calculating with a lot of
+data.
+
+104
+00:09:21,360 --> 00:09:26,110
+So actually, I want to go in and let's look
+at this and see how we hooked up with Native
+
+105
+00:09:26,110 --> 00:09:33,110
+Client.
+So we're going to go into the JavaScript,
+
+106
+00:09:38,700 --> 00:09:43,100
+and the meat of this is the nacl hash for
+the nacl implementation. We'll ignore the
+
+107
+00:09:43,100 --> 00:09:50,100
+JavaScript for now. We're going to do document.getelementbyID
+fileio, so let's go see what that was.
+
+108
+00:09:51,279 --> 00:09:57,120
+That is -- and I'm going to zoom this up so
+you guys can see it.
+
+109
+00:09:57,120 --> 00:10:04,120
+That's an embed of type xnacl. This fileio.nmf
+is in nacl manifest format and it specifies,
+
+110
+00:10:05,720 --> 00:10:10,220
+you know, what the binary is for -- I'm not
+going to open it up but it specifies what
+
+111
+00:10:10,220 --> 00:10:16,250
+the binary is that needs to be run.
+We communicate with this -- go down here -- with
+
+112
+00:10:16,250 --> 00:10:21,420
+post message, so we post message the filename,
+and inside the implementation of the nacl
+
+113
+00:10:21,420 --> 00:10:26,930
+module, we take that filename, do the hashing
+on it in C++, that's compiled, and post message
+
+114
+00:10:26,930 --> 00:10:31,470
+-- and send a message back through the nacl
+API to the app and we handle that message
+
+115
+00:10:31,470 --> 00:10:34,550
+here.
+So this is essentially how we are doing it
+
+116
+00:10:34,550 --> 00:10:40,019
+in Native Client. It's actually really simple.
+So this is, what, maybe 10 lines total of
+
+117
+00:10:40,019 --> 00:10:44,490
+code for handling this? And C++ code on the
+other side.
+
+118
+00:10:44,490 --> 00:10:48,880
+The meat of it is getting the nacl module
+built, which there are tons of tutorials out
+
+119
+00:10:48,880 --> 00:10:55,880
+there. It's not that hard.
+Go to full screen.
+
+120
+00:11:08,950 --> 00:11:15,950
+Okay. Hold on.
+Just one second.
+
+121
+00:11:21,700 --> 00:11:28,700
+>> (Speaker is off microphone.)
+>>James Hawkins: Oh, yeah. Thank you very
+
+122
+00:11:29,170 --> 00:11:36,170
+much. I was zoomed in.
+So the next issue that we were running into
+
+123
+00:11:42,510 --> 00:11:49,459
+is the Data Store layer. So with photos, there
+are users that have, say, 40,000 photos. This
+
+124
+00:11:49,459 --> 00:11:53,690
+is a case that we have to handle. It's very
+difficult. And the fact that this app needs
+
+125
+00:11:53,690 --> 00:11:58,860
+to be native, needs to act like a real app
+on your platform, you have to have offline
+
+126
+00:11:58,860 --> 00:12:03,649
+support which means you need to store your
+user's data locally to some degree. You don't
+
+127
+00:12:03,649 --> 00:12:08,950
+have to store everything, but at least the
+metadata. So for photos you'd have maybe a
+
+128
+00:12:08,950 --> 00:12:14,240
+link to where the file is on the filesystem
+and the dimensions of the photo and any other
+
+129
+00:12:14,240 --> 00:12:18,120
+metadata that you have.
+This needs to be stored somewhere in your
+
+130
+00:12:18,120 --> 00:12:25,089
+data layer and we use index DB to do this.
+The problem that we ran into with our initial
+
+131
+00:12:25,089 --> 00:12:31,540
+implementation is that we were not using transactions
+in index DB appropriately and this was kind
+
+132
+00:12:31,540 --> 00:12:36,649
+of killer because it's not -- it's not immediately
+obvious what you're doing wrong when your
+
+133
+00:12:36,649 --> 00:12:41,019
+reads are going really slowly, unless you're
+very familiar with the API.
+
+134
+00:12:41,019 --> 00:12:47,260
+So I'll give you a demo here. We have writing
+a thousand records, reading, removing them,
+
+135
+00:12:47,260 --> 00:12:51,540
+et cetera, and with transaction and with no
+transaction. We'll see what the differences
+
+136
+00:12:51,540 --> 00:12:58,540
+are. Okay. It's taking a long time.
+So again, this is -- and this is even worse.
+
+137
+00:13:00,290 --> 00:13:06,829
+This is two orders of magnitude worse without
+transactions. It's very simple. Let's go in
+
+138
+00:13:06,829 --> 00:13:13,829
+and see what the transactions do.
+So you open a transaction -- let me zoom this
+
+139
+00:13:22,660 --> 00:13:29,660
+up, and I -- thank you very much. I will zoom
+back out when I'm done with this.
+
+140
+00:13:33,130 --> 00:13:37,240
+So we have a notification when the transaction
+is complete. That is when we say, "I've done
+
+141
+00:13:37,240 --> 00:13:42,630
+all of my thousand operations," and you just
+do all of your operations at once using the
+
+142
+00:13:42,630 --> 00:13:48,670
+transaction object. You get this -- the object
+store out from the transaction. You do your
+
+143
+00:13:48,670 --> 00:13:54,440
+operation on the store. And once this goes
+out of scope, the transaction will be complete
+
+144
+00:13:54,440 --> 00:13:58,329
+and it will be done.
+The implementation that doesn't use transaction
+
+145
+00:13:58,329 --> 00:14:05,329
+has one database transaction per call, so
+every time you're doing a new call, you're
+
+146
+00:14:05,850 --> 00:14:12,850
+creating a new transaction. Very inefficient.
+So I think the biggest part of making this
+
+147
+00:14:26,320 --> 00:14:31,579
+app very performant is the scrolling performance,
+and this was the biggest challenge for us
+
+148
+00:14:31,579 --> 00:14:34,380
+to solve.
+There's a lot of optimizations you have to
+
+149
+00:14:34,380 --> 00:14:37,769
+do all across the board. You have to make
+sure that you don't have any leaks. You have
+
+150
+00:14:37,769 --> 00:14:43,040
+to make sure that you're doing the right thing
+in order to be on fast scroll path.
+
+151
+00:14:43,040 --> 00:14:48,769
+This needs to be very non-choppy. Otherwise,
+if it is choppy, your user's jarred and they're
+
+152
+00:14:48,769 --> 00:14:53,470
+just very confused. It looks like not a native
+app; it looks like a Webapp.
+
+153
+00:14:53,470 --> 00:14:59,040
+And so the solution for this is the fast scroll
+path.
+
+154
+00:14:59,040 --> 00:15:04,339
+The fast scroll path is where the GPU does
+the scrolling for you. Off-load the processing
+
+155
+00:15:04,339 --> 00:15:09,350
+for handling this chunk of image -- video
+memory. You've got everything rendered into
+
+156
+00:15:09,350 --> 00:15:13,230
+it. And whenever you scroll, you just ask
+the GPU to do the op set for you. This is
+
+157
+00:15:13,230 --> 00:15:17,339
+common in, you know, games, graphics, whatever,
+and we're starting to add this to the browser
+
+158
+00:15:17,339 --> 00:15:21,300
+in a lot of places.
+Keep in mind that this is very preliminary
+
+159
+00:15:21,300 --> 00:15:25,579
+and the GPU team is working very hard on this,
+but it is -- there are a lot of things you
+
+160
+00:15:25,579 --> 00:15:29,699
+have to keep in mind.
+When you do scrolling, the element that you
+
+161
+00:15:29,699 --> 00:15:33,990
+scroll has to be the body element. That's
+the first thing. And I say that right off
+
+162
+00:15:33,990 --> 00:15:39,949
+the bat because it's not obvious that that
+is a requirement or a constraint, and you
+
+163
+00:15:39,949 --> 00:15:45,529
+can set up your DOM, your HTML structure,
+in such a way that it's very hard, after the
+
+164
+00:15:45,529 --> 00:15:51,839
+fact, to move scrolling to the body, and we
+ran into that problem. It was a total pain.
+
+165
+00:15:51,839 --> 00:15:58,060
+For example, let's go look at the app for
+a second.
+
+166
+00:15:58,060 --> 00:16:01,930
+We have our main content here in the middle
+-- and I'm going to go into the single-photo
+
+167
+00:16:01,930 --> 00:16:06,370
+view to show you more -- and the toolbar on
+the top and this sidebar on the right. The
+
+168
+00:16:06,370 --> 00:16:11,040
+toolbar and the sidebar were siblings of the
+main content and this was all in one wrapper
+
+169
+00:16:11,040 --> 00:16:14,769
+that could be scrolled. This doesn't work
+because you're not in the body and in order
+
+170
+00:16:14,769 --> 00:16:20,829
+to be on the body element, we had to make
+the toolbar and the sidebar fixed position,
+
+171
+00:16:20,829 --> 00:16:26,339
+and that has its own intricacies, like, for
+example, the scrollbar goes all the way up
+
+172
+00:16:26,339 --> 00:16:30,850
+through the toolbar. There's really not anything
+we can do about that right now and if that's
+
+173
+00:16:30,850 --> 00:16:34,699
+the worst of our problems that gets us this
+type of scrolling, this fast scrolling, then
+
+174
+00:16:34,699 --> 00:16:41,699
+it's definitely worth it.
+You also want to make sure when you're handling
+
+175
+00:16:42,600 --> 00:16:47,779
+the scroll event that you're not doing too
+much work. This is when the -- the browser
+
+176
+00:16:47,779 --> 00:16:52,079
+is saying, "I'm about to scroll, I'm about
+to change your UI, the page." If you start
+
+177
+00:16:52,079 --> 00:16:55,509
+doing a lot of processing, maybe you start
+loading a bunch of image elements, a lot of
+
+178
+00:16:55,509 --> 00:16:59,399
+photo elements, that's going to make -- that
+inherently is going to make the scrolling
+
+179
+00:16:59,399 --> 00:17:05,579
+a lot worse, a lot slower. So you want to
+off-load your processing to a time that is
+
+180
+00:17:05,579 --> 00:17:09,380
+not in your body scrolling.
+Perhaps queuing up and batching operations
+
+181
+00:17:09,380 --> 00:17:13,900
+that could be done later.
+And we'll talk about that in one of our solutions.
+
+182
+00:17:13,900 --> 00:17:19,000
+One thing that we had to do was to reduce
+image loads, so when you set the source attribute
+
+183
+00:17:19,000 --> 00:17:23,740
+on an image element, the browser, no matter
+whether it's in the viewport or not, the image
+
+184
+00:17:23,740 --> 00:17:28,580
+element has to decode the image. And we've
+found that the decoding can be very expensive
+
+185
+00:17:28,580 --> 00:17:35,140
+and it obviously scales with the size of the
+image, so you want to question expensive operations
+
+186
+00:17:35,140 --> 00:17:39,260
+like that.
+And setting image source is one of those expensive
+
+187
+00:17:39,260 --> 00:17:44,950
+operations.
+So we talked about batching your heavy processing
+
+188
+00:17:44,950 --> 00:17:49,280
+so that you're not doing everything in your
+scroll. One way to do this, and the best way
+
+189
+00:17:49,280 --> 00:17:55,090
+right now, is to have a call back to this
+method called requestAnimationFrame.
+
+190
+00:17:55,090 --> 00:18:02,090
+This method is a way for the browser to alert
+you, "Hey, I'm about to do an animation and
+
+191
+00:18:02,260 --> 00:18:05,780
+you should do some heavy processing in this
+time period, batch it all up, do everything
+
+192
+00:18:05,780 --> 00:18:10,539
+at once because we're going to swap everything
+out," and this is a way for the browser to
+
+193
+00:18:10,539 --> 00:18:17,539
+say, "This will be less janky." And so whenever
+we do scrolling, we do requestAnimationFrame
+
+194
+00:18:17,580 --> 00:18:22,900
+and then we obviously need to load more elements,
+so in requestAnimationFrame, the callback,
+
+195
+00:18:22,900 --> 00:18:27,289
+we do that image loading then, because that's
+when the browser says, "Do your heavy intensive
+
+196
+00:18:27,289 --> 00:18:33,410
+processing." And this is really great to have
+high performance in your scrolling.
+
+197
+00:18:33,410 --> 00:18:38,450
+Another thing that I think is starting to
+be more well-known but it is not that well-known,
+
+198
+00:18:38,450 --> 00:18:42,770
+I think, and it's not very -- necessarily
+intuitive is that when you measure certain
+
+199
+00:18:42,770 --> 00:18:48,710
+properties on DOM elements, you can cause
+reflows, which may call repaints, and painting
+
+200
+00:18:48,710 --> 00:18:51,470
+is the one thing you want to minimize at all
+costs.
+
+201
+00:18:51,470 --> 00:18:54,750
+If you're doing a bunch of paints, then you
+don't have the benefit of the GPU doing the
+
+202
+00:18:54,750 --> 00:19:00,080
+scroll for you, because you're just thrashing
+what the GPU had.
+
+203
+00:19:00,080 --> 00:19:04,299
+Scroll top, for example. If you're reading
+scroll top, not writing to it, if you read
+
+204
+00:19:04,299 --> 00:19:08,870
+it, you're going to do a reflow and you could
+potentially repaint. Another one is get client
+
+205
+00:19:08,870 --> 00:19:13,490
+bounding rect on elements, and you know what?
+It's kind of iffy on some of these whether
+
+206
+00:19:13,490 --> 00:19:18,830
+it will cause a reflow or not. There are several
+good articles and I recommend looking up reflow,
+
+207
+00:19:18,830 --> 00:19:23,679
+HTML reflow, to get a lot of information about
+this. But this is something you have to keep
+
+208
+00:19:23,679 --> 00:19:29,820
+in mind. This is the next stage of app development
+and this type of performance is -- is what
+
+209
+00:19:29,820 --> 00:19:36,770
+the -- these apps are going be to doing, and
+you want to your app to be this performant.
+
+210
+00:19:36,770 --> 00:19:43,770
+Garbage collection is nasty. JavaScript is
+a fun language and obviously the way the memory
+
+211
+00:19:44,309 --> 00:19:49,000
+layout works is very fortunate in some ways
+but garbage collection is not one of those
+
+212
+00:19:49,000 --> 00:19:53,669
+ways, so you want to try to minimize garbage
+collection by minimizing the pressure buildup
+
+213
+00:19:53,669 --> 00:19:58,240
+on memory.
+One of the ways that we do that in this photos
+
+214
+00:19:58,240 --> 00:20:04,559
+app is, you know, if you consider it, you
+have your main viewport and you have image
+
+215
+00:20:04,559 --> 00:20:09,190
+elements for each of the photos that the user
+wants to see, and we obviously have to preload
+
+216
+00:20:09,190 --> 00:20:15,110
+before and after the viewport, and that could
+be 40,000 DOM nodes. That's too many. That's
+
+217
+00:20:15,110 --> 00:20:17,650
+going to cause a lot of garbage collection
+and a lot of memory pressure that you don't
+
+218
+00:20:17,650 --> 00:20:21,710
+need.
+Consider that you can compress those nodes
+
+219
+00:20:21,710 --> 00:20:28,710
+given like, say, a square of a 1024 by 768
+higher up that is not visible in the viewport.
+
+220
+00:20:29,610 --> 00:20:32,630
+Get rid of all those nodes. You can either
+store them around somewhere, but at least
+
+221
+00:20:32,630 --> 00:20:39,000
+keep them out of the tree and replace them
+with one div that's sized the exact same size,
+
+222
+00:20:39,000 --> 00:20:43,059
+so that's like compressing what you had before.
+And that will keep the structure of your document,
+
+223
+00:20:43,059 --> 00:20:47,750
+will not change the size of the entire body,
+so the user won't even be aware that you've
+
+224
+00:20:47,750 --> 00:20:51,520
+taken nodes out.
+Nifty little trick you can do.
+
+225
+00:20:51,520 --> 00:20:56,460
+It is really important. Leaks are bad. Everybody
+knows that. But you got to pay attention to
+
+226
+00:20:56,460 --> 00:21:03,070
+it. The profiler inside of Chrome itself can
+really help with this. And let's take a look
+
+227
+00:21:03,070 --> 00:21:10,070
+real quick.
+Nope. So profiles here allows you to take
+
+228
+00:21:16,900 --> 00:21:23,090
+a heap snapshot. Obviously, the heap snapshot
+for this is not going to be entirely interesting,
+
+229
+00:21:23,090 --> 00:21:25,289
+but it does show you some of the objects that
+are going on.
+
+230
+00:21:25,289 --> 00:21:31,400
+So we have the slide deck object. And there
+are two of them. So I may question, if I only
+
+231
+00:21:31,400 --> 00:21:35,539
+have one set of slides, why do I have two
+slide decks? I don't know the answer to that.
+
+232
+00:21:35,539 --> 00:21:39,960
+Could be a leak.
+We found in many instances of just going through
+
+233
+00:21:39,960 --> 00:21:44,510
+this -- and you can arrange things by, for
+example, dominators which are saying, this
+
+234
+00:21:44,510 --> 00:21:49,020
+thing is huge. Obviously, you want to go through
+the native stuff at the top that's not yours
+
+235
+00:21:49,020 --> 00:21:54,690
+and get down to where you're allocating stuff
+and say, We are -- This is too heavy. This
+
+236
+00:21:54,690 --> 00:22:00,460
+slide deck is too heavy, for example.
+And that will just -- that's just one way
+
+237
+00:22:00,460 --> 00:22:04,419
+to say, I need to go in here and start looking
+for places where I may be leaking. I may not
+
+238
+00:22:04,419 --> 00:22:07,260
+be freeing references, removing references,
+et cetera.
+
+239
+00:22:07,260 --> 00:22:12,260
+There are a lot of tools that can help with
+this. In our experience, they're not very
+
+240
+00:22:12,260 --> 00:22:17,280
+great. There's not a lot of tools right now
+that have a very low false-positive rate,
+
+241
+00:22:17,280 --> 00:22:21,100
+but it can point you in the right direction.
+And it doesn't hurt to just have a -- run
+
+242
+00:22:21,100 --> 00:22:24,659
+it every once in a while and say, These are
+the known false-positives. These are the ones
+
+243
+00:22:24,659 --> 00:22:29,549
+we need to fix.
+Listeners can get very expensive. We had an
+
+244
+00:22:29,549 --> 00:22:35,289
+instance where you would start the app with
+no photos and we had 40,000 listeners. What
+
+245
+00:22:35,289 --> 00:22:40,010
+are they listening to? I mean, that doesn't
+even make sense. You need to make sure that
+
+246
+00:22:40,010 --> 00:22:43,140
+things are being detached appropriately. They
+stop listening.
+
+247
+00:22:43,140 --> 00:22:48,200
+They can be dangerous not just in the memory
+footprint but also in the processing footprint.
+
+248
+00:22:48,200 --> 00:22:52,909
+If these listeners are being fired on events
+and they don't need to be listening, then
+
+249
+00:22:52,909 --> 00:22:56,309
+they're going to some processing that is unnecessary
+and that's going to hurt your performance
+
+250
+00:22:56,309 --> 00:22:59,570
+as well.
+And we already talked about profiling memory
+
+251
+00:22:59,570 --> 00:23:06,570
+usage, so we'll skip that.
+So back to simplicity. I truly think that
+
+252
+00:23:07,110 --> 00:23:12,159
+this is one of the most difficult things that
+you have to solve in an app, how to get out
+
+253
+00:23:12,159 --> 00:23:18,289
+of the way so that the user can just see what
+they want to see, do what they want to do,
+
+254
+00:23:18,289 --> 00:23:23,380
+minimize your UI footprint, et cetera.
+And the Chrome platform is really starting
+
+255
+00:23:23,380 --> 00:23:28,760
+to take over this and give you APIs that allow
+you to get out of the way.
+
+256
+00:23:28,760 --> 00:23:35,760
+The biggest one we had, one of the big ones
+we had was with sign-in. Signing into an app
+
+257
+00:23:35,890 --> 00:23:41,200
+really feels like a Web page that you have
+to sign into, especially if you don't have
+
+258
+00:23:41,200 --> 00:23:45,750
+the ability to sign in once and have that
+persistent across multiple lifetimes, multiple
+
+259
+00:23:45,750 --> 00:23:50,370
+instances of the app. It just doesn't feel
+native. And we do. That's our goal, is to
+
+260
+00:23:50,370 --> 00:23:54,220
+feel native.
+Also, if you are signing in, that's a step,
+
+261
+00:23:54,220 --> 00:23:58,490
+that's a roadblock to the user getting to
+do what they want to do. And so we really
+
+262
+00:23:58,490 --> 00:24:04,940
+needed a way around this, and thankfully the
+Chrome platform has a way. There is this thing
+
+263
+00:24:04,940 --> 00:24:10,860
+called the identity API which allows you to
+retrieve the OAuth2 token of the user that's
+
+264
+00:24:10,860 --> 00:24:14,320
+currently signed in.
+Now, this app is right now designed for Chrome
+
+265
+00:24:14,320 --> 00:24:19,820
+OS but the identity API works on all platforms.
+So if the user is signed into the browser,
+
+266
+00:24:19,820 --> 00:24:26,320
+you can get their OAuth2 token for their Google
+account. For example, in this app, I didn't
+
+267
+00:24:26,320 --> 00:24:31,250
+have to sign in. There is no sign-in button
+anywhere. When you start the app, I don't
+
+268
+00:24:31,250 --> 00:24:35,919
+ask you to sign in, or I'm not asked to sign
+in. I mean, that all comes from the identity
+
+269
+00:24:35,919 --> 00:24:40,809
+API and the fact that on Chrome OS specifically,
+you're always signed into the browser. So
+
+270
+00:24:40,809 --> 00:24:45,130
+for an app on Chrome OS, you shouldn't have
+to sign in if you're using Google accounts.
+
+271
+00:24:45,130 --> 00:24:51,600
+Now, you may not be using Google accounts.
+And the identity API has a solution for that.
+
+272
+00:24:51,600 --> 00:24:58,470
+It is called launchWebauthflow. So with that
+API, you can pass in a third-party URL end
+
+273
+00:24:58,470 --> 00:25:04,350
+point for OAuth2. And under the hood, all
+of the workings -- all of the workings happen.
+
+274
+00:25:04,350 --> 00:25:08,890
+A pop-up happens -- a pop-up is shown that
+allows the user to log in.
+
+275
+00:25:08,890 --> 00:25:13,110
+Now, obviously, that doesn't solve the issue
+of getting out of the way and not having a
+
+276
+00:25:13,110 --> 00:25:16,450
+dialogue; but if you are not using Google
+accounts, which is a fair point, you need
+
+277
+00:25:16,450 --> 00:25:22,470
+a way to sign in the user to your app. And
+that token can be persisted across instances
+
+278
+00:25:22,470 --> 00:25:26,610
+of the app.
+So, for example, in this, in this code sample
+
+279
+00:25:26,610 --> 00:25:31,830
+here, we are calling getauthtoken and we are
+storing that token. So for the lifetime of
+
+280
+00:25:31,830 --> 00:25:35,950
+the app, we don't have to keep calling getauthtoken.
+We just have the token around and we build
+
+281
+00:25:35,950 --> 00:25:42,950
+this request with this token to, for example,
+the photos back-end at Google. We will do
+
+282
+00:25:43,779 --> 00:25:47,039
+a request to read all of the photos of the
+user.
+
+283
+00:25:47,039 --> 00:25:51,419
+And so what we've done is we have the token
+stored. We just keep using this same token
+
+284
+00:25:51,419 --> 00:25:58,419
+for all of the requests in the app. It is
+really easy to use.
+
+285
+00:25:59,390 --> 00:26:06,390
+So, like I said, I had a camera and I had
+a SD card in it, and I plugged it in and the
+
+286
+00:26:08,150 --> 00:26:13,870
+right thing just happened. It is a photos
+app. I have installed this app. I said, I
+
+287
+00:26:13,870 --> 00:26:18,760
+trust this app to do what I need it to do,
+including the fact that it says it has access
+
+288
+00:26:18,760 --> 00:26:24,320
+to your media.
+Currently, in the Web today, and in most native
+
+289
+00:26:24,320 --> 00:26:30,700
+apps as well, you have to select the media
+specifically, say, by the file open dialogue,
+
+290
+00:26:30,700 --> 00:26:34,990
+which I consider the worst piece of UI in
+browser history. It is awful. But everybody
+
+291
+00:26:34,990 --> 00:26:38,870
+has to go through that.
+The alternative is Flash, but even then you
+
+292
+00:26:38,870 --> 00:26:45,870
+still have to do file, directory browsing,
+et cetera. We wanted to get rid of that.
+
+293
+00:26:46,580 --> 00:26:51,340
+The solution to this was the media gallery
+API which is like the pinnacle API of this
+
+294
+00:26:51,340 --> 00:26:57,940
+app. It is what makes this app pop. It's what
+makes it real. The media galleries API allows
+
+295
+00:26:57,940 --> 00:27:04,940
+the developer to have access to media devices,
+so SD cards, platform media, like my pictures
+
+296
+00:27:05,620 --> 00:27:11,460
+or the photos on a Mac.
+And it has seamless access. You don't have
+
+297
+00:27:11,460 --> 00:27:15,820
+to ask the user at the time of app running,
+at the app running, only at installation and
+
+298
+00:27:15,820 --> 00:27:21,520
+only that one time. So in this app, we have
+UI that shows up a notification that says,
+
+299
+00:27:21,520 --> 00:27:25,200
+You just plugged in a card. We will start
+uploading. And you have the ability to stop
+
+300
+00:27:25,200 --> 00:27:29,990
+the uploading, but that action happens right
+away. The user doesn't have to wait; and the
+
+301
+00:27:29,990 --> 00:27:35,710
+user doesn't have to do the file open dialogue,
+which is just awful.
+
+302
+00:27:35,710 --> 00:27:42,210
+So here's a little code snapshot of how to
+use this. The API call is getmediafilesystems.
+
+303
+00:27:42,210 --> 00:27:48,850
+And if you're familiar with it, it returns
+a DOM filesystem which has its own file entries
+
+304
+00:27:48,850 --> 00:27:52,720
+inside of that. It's directory structure.
+You can read through this with the filesystem
+
+305
+00:27:52,720 --> 00:27:58,289
+API. So this is really neat. We don't have
+-- we just had this one little layer on top
+
+306
+00:27:58,289 --> 00:28:05,130
+of the already-existing filesystem API that
+restricts what is shown to the -- to the app
+
+307
+00:28:05,130 --> 00:28:10,080
+to just media locations.
+For example, when I plugged in the SD card,
+
+308
+00:28:10,080 --> 00:28:14,700
+it knew that it had DSIM -- a DSIM folder
+and we said, we think this is a media. It
+
+309
+00:28:14,700 --> 00:28:19,270
+is a simple heuristic, but it really solves
+a lot of the -- 90% of the use cases that
+
+310
+00:28:19,270 --> 00:28:22,419
+we are looking for.
+If you plugged in an external drive and it
+
+311
+00:28:22,419 --> 00:28:26,770
+had a DSIM directory, we would say that this
+probably has photos on it as well and we would
+
+312
+00:28:26,770 --> 00:28:33,770
+start loading that.
+So the first time I saw the Pixel screen,
+
+313
+00:28:38,830 --> 00:28:43,309
+it was detached from the actual laptop. It
+was not even put together yet. It was this
+
+314
+00:28:43,309 --> 00:28:46,919
+little piece. And he said, You have to see
+this, one of the developers of the Pixel.
+
+315
+00:28:46,919 --> 00:28:51,559
+And he showed it to me and it was just mind
+blowing the picture he showed on it. I had
+
+316
+00:28:51,559 --> 00:28:55,399
+never seen something like this.
+And then he started swiping it and moving
+
+317
+00:28:55,399 --> 00:28:59,919
+things around. The touch on this one screen,
+it was just amazing.
+
+318
+00:28:59,919 --> 00:29:05,100
+And so you have the ability when writing apps
+not just for this but, say, for tablets as
+
+319
+00:29:05,100 --> 00:29:11,320
+well, like high DPI tablets. You obviously
+have Mac books that have high-retina display.
+
+320
+00:29:11,320 --> 00:29:15,149
+You want to make sure that you're optimizing
+for these form factors which are becoming
+
+321
+00:29:15,149 --> 00:29:22,149
+more and more prevalent.
+And for the high-resolution display, it is
+
+322
+00:29:22,380 --> 00:29:29,299
+not hard. You just provide 2X assets, high-resolution
+assets. The API to do this is in CSS itself.
+
+323
+00:29:29,299 --> 00:29:36,299
+It is called Webkit Media Set, and you can
+specify the multiplicative factors, so 1X
+
+324
+00:29:36,299 --> 00:29:39,559
+or 2X and you just pass in the right resource
+through that.
+
+325
+00:29:39,559 --> 00:29:44,779
+One thing to keep in mind is that you want
+to make sure to set the background size of
+
+326
+00:29:44,779 --> 00:29:51,779
+your asset to the low res. So we have this
+closed icon, and it is 32 pixels in the low-res
+
+327
+00:29:51,990 --> 00:29:58,250
+asset. When we load the high-res asset, we
+still want it to be 32 pixels on the -- 32
+
+328
+00:29:58,250 --> 00:30:02,940
+pixels on the screen so that doesn't blow
+up unproportionally. We just have it more
+
+329
+00:30:02,940 --> 00:30:08,500
+dense inside of those 32 pixels.
+You want to make sure you do this, especially
+
+330
+00:30:08,500 --> 00:30:13,980
+if your user is going to be on a high-resolution
+display, because on most browsers, and definitely
+
+331
+00:30:13,980 --> 00:30:20,200
+in Chrome, the scaling algorithm for images
+to scale up to high resolution is optimized
+
+332
+00:30:20,200 --> 00:30:25,200
+for speed, not quality. You'll get very blurry
+images. And, you know, your user is going
+
+333
+00:30:25,200 --> 00:30:27,630
+to get a headache after a while. It looks
+really bad.
+
+334
+00:30:27,630 --> 00:30:33,070
+We had a regression one time where the high-resolution
+assets were not being loaded properly and
+
+335
+00:30:33,070 --> 00:30:37,200
+everybody was like, Oh, my gosh. This is -- this
+is awful. Something is clearly wrong with
+
+336
+00:30:37,200 --> 00:30:42,350
+this app. Imagine if your user saw that and
+they not expecting it, they just know something
+
+337
+00:30:42,350 --> 00:30:48,610
+is wrong.
+And to touch support, this is a really fun
+
+338
+00:30:48,610 --> 00:30:53,149
+thing to touch. And they always say, you know,
+why would you touch this -- this laptop screen?
+
+339
+00:30:53,149 --> 00:30:57,740
+People don't want to reach over their keyboard
+to do it. But the more you use this, the more
+
+340
+00:30:57,740 --> 00:31:02,659
+you start touching everything around you.
+Like, you reach over everything. I touch my
+
+341
+00:31:02,659 --> 00:31:09,090
+work 32-inch monitor expecting it to do something
+and it doesn't. It is extremely frustrating.
+
+342
+00:31:09,090 --> 00:31:13,429
+More and more displays are going to be touch,
+whether it's a hybrid, whether it can be converted,
+
+343
+00:31:13,429 --> 00:31:17,440
+et cetera.
+Your app should really handle, if not touch
+
+344
+00:31:17,440 --> 00:31:24,350
+gestures specifically, like, dragging and
+touchstart, touchend, to consider what your
+
+345
+00:31:24,350 --> 00:31:31,350
+user actions should be.
+For example, consider the photos view. So
+
+346
+00:31:31,899 --> 00:31:37,279
+we have this photo here. I admit, I was in
+the wrong when we were having this discussion.
+
+347
+00:31:37,279 --> 00:31:42,429
+I felt that we should have double clicked
+to activate these objects. So if I wanted
+
+348
+00:31:42,429 --> 00:31:46,510
+to go into the single photo view for this
+photo, I should have double click. And that
+
+349
+00:31:46,510 --> 00:31:52,769
+was me coming from wanting to have a more
+native experience. And in native apps and
+
+350
+00:31:52,769 --> 00:31:56,860
+in the filesystem, browsing around things,
+you double click to activate, for the most
+
+351
+00:31:56,860 --> 00:31:59,890
+part. And I thought that would be a more native
+experience.
+
+352
+00:31:59,890 --> 00:32:03,590
+But then we had the issue of, well, what do
+you do when you're tapping? Do you double
+
+353
+00:32:03,590 --> 00:32:10,070
+tap the screen? No. That doesn't work.
+We could have it where you -- with the mouse
+
+354
+00:32:10,070 --> 00:32:14,679
+or a track pad that you double click. And
+then with touch, you single click. But then
+
+355
+00:32:14,679 --> 00:32:19,130
+you have a very confusing UX. Your user doesn't
+know what to do. And then they are going to
+
+356
+00:32:19,130 --> 00:32:24,669
+start doing the wrong thing the entire time.
+They will start double touching the screen.
+
+357
+00:32:24,669 --> 00:32:31,029
+So the key take-away for this one is just
+to consider that tap support is very important.
+
+358
+00:32:31,029 --> 00:32:37,440
+Users are going to start using tap and touchscreens.
+And you don't necessarily have to have full
+
+359
+00:32:37,440 --> 00:32:40,140
+touch support. Just think about what your
+UX is going to be.
+
+360
+00:32:40,140 --> 00:32:44,679
+I know a lot of you are engineers. Maybe some
+of you are designers in UX. But it is all
+
+361
+00:32:44,679 --> 00:32:50,330
+of our responsibility to create the best-looking
+app.
+
+362
+00:32:50,330 --> 00:32:56,860
+So on to security, that last principle. This
+section, you know, it can come off a little
+
+363
+00:32:56,860 --> 00:33:02,789
+dry. It's kind of difficult to deal with.
+But security's extremely important for the
+
+364
+00:33:02,789 --> 00:33:09,789
+user. And there are a lot of things in the
+platform that at first feel like you have
+
+365
+00:33:09,919 --> 00:33:14,899
+to deal with; but at the end, assuming you
+start designing the app the right way from
+
+366
+00:33:14,899 --> 00:33:21,899
+the beginning, you are much better off. Your
+user is much safer.
+
+367
+00:33:22,419 --> 00:33:29,169
+So content security policy is this essentially
+whitelist, blacklist that says your app has
+
+368
+00:33:29,169 --> 00:33:35,179
+access to these resources, these remote URLs,
+these domains, et cetera. And by default,
+
+369
+00:33:35,179 --> 00:33:40,350
+you really don't have access to hardly anything
+at all. As you are adding a whitelist for
+
+370
+00:33:40,350 --> 00:33:43,769
+resources your app shouldn't have access to,
+you know, you consider, like, your back-end
+
+371
+00:33:43,769 --> 00:33:47,710
+server. You obviously need access to that
+and nothing else.
+
+372
+00:33:47,710 --> 00:33:53,750
+So if an attacker gets ahold of your app,
+something gets injected and starts making
+
+373
+00:33:53,750 --> 00:33:59,190
+requests to some malicious server, those requests
+are going to be denied because they are blocked
+
+374
+00:33:59,190 --> 00:34:04,380
+by content security policy.
+The key thing here is to start designing your
+
+375
+00:34:04,380 --> 00:34:09,169
+app from the very beginning with content security
+policy in mind. You can't load remote scripts.
+
+376
+00:34:09,169 --> 00:34:14,960
+You can't use eval. And for this, this was
+kind of a problem because we -- we're getting
+
+377
+00:34:14,960 --> 00:34:19,909
+JSON objects back from the server. And so
+we had to translate those into objects using
+
+378
+00:34:19,909 --> 00:34:24,919
+eval, and we couldn't do that.
+So what we ended up doing was having a Sandboxed
+
+379
+00:34:24,919 --> 00:34:30,040
+iframe that had the use of eval inside of
+it and we passed the JSON objects into this
+
+380
+00:34:30,040 --> 00:34:35,389
+iframe. It would do the eval, get the object
+back, and then post a message back to the
+
+381
+00:34:35,389 --> 00:34:40,389
+app, this object. So if something malicious
+goes on, the eval is going wonky, that Sandbox
+
+382
+00:34:40,389 --> 00:34:44,770
+iframe has no permissions whatsoever. All
+it can do is communicate back and forth. So
+
+383
+00:34:44,770 --> 00:34:51,770
+you are pretty safe as far as that goes.
+Making requests. So you can't say image source
+
+384
+00:34:54,079 --> 00:34:59,050
+equal remote. You actually have to pull down
+the bits for that image. All of these photos
+
+385
+00:34:59,050 --> 00:35:04,300
+we have to pull them down from the server.
+XMLHttpRequest is the way we do this. You
+
+386
+00:35:04,300 --> 00:35:10,780
+just create your URL for the request, send
+it off. You get your response. You should
+
+387
+00:35:10,780 --> 00:35:15,349
+save it in your data layer obviously. And
+then once you get that, the UI -- the data
+
+388
+00:35:15,349 --> 00:35:22,349
+gets bubbled up through your UI.
+Another tip as far as thinking what you should
+
+389
+00:35:23,410 --> 00:35:28,010
+do from the beginning, designing from the
+beginning, resource compilation comes in very
+
+390
+00:35:28,010 --> 00:35:32,599
+handy with packaged apps. We particularly
+use closure, but there are a lot of tools
+
+391
+00:35:32,599 --> 00:35:37,820
+that you can use to do the same thing.
+You're going to say essentially in your main
+
+392
+00:35:37,820 --> 00:35:44,290
+HTML of the packaged app script equals some
+local file. So you could say a bunch of local
+
+393
+00:35:44,290 --> 00:35:48,099
+files, but it is a lot easier to just have
+your code compiled, have if minified, et cetera,
+
+394
+00:35:48,099 --> 00:35:55,099
+and say script equals this local file.
+So to wrap it up, we look back at what our
+
+395
+00:35:58,820 --> 00:36:05,820
+goals were, and I think we really achieved
+those goals. We identified holes in the platform,
+
+396
+00:36:06,010 --> 00:36:10,060
+APIs that were missing. We added media gallery
+APIs.
+
+397
+00:36:10,060 --> 00:36:16,670
+We tested a lot of features from Google+ Photos.
+We got autocuration working really well. And
+
+398
+00:36:16,670 --> 00:36:21,369
+we just pushed the platform to its limits.
+How far can you go with this? How hard is
+
+399
+00:36:21,369 --> 00:36:25,050
+it for developers to use this? I think the
+answer is not very hard.
+
+400
+00:36:25,050 --> 00:36:30,579
+The biggest thing you have to do is to understand
+your constraints from the very beginning,
+
+401
+00:36:30,579 --> 00:36:35,099
+understand that you don't have access to remote
+URLs. Understand that if you want fast scrolling,
+
+402
+00:36:35,099 --> 00:36:39,780
+you need to scroll your body.
+Obviously, the platform is constantly changing.
+
+403
+00:36:39,780 --> 00:36:45,430
+Things are being fixed. I know I've reached
+out to the GPU team a lot to say, "This is
+
+404
+00:36:45,430 --> 00:36:51,770
+not easy enough. We have to fix this." And
+just imagine the evolution that's happening
+
+405
+00:36:51,770 --> 00:36:56,270
+right now. You can see it at I/O.
+This platform is just moving forward at this
+
+406
+00:36:56,270 --> 00:36:59,670
+speed of light, the things that you're going
+to be able to do. It's getting a lot easier,
+
+407
+00:36:59,670 --> 00:37:06,670
+and it is getting a lot better.
+So packaged apps, yeah, we definitely want
+
+408
+00:37:07,160 --> 00:37:12,410
+that. And I think the way to think about it
+in terms of how does it relate to Web apps
+
+409
+00:37:12,410 --> 00:37:18,140
+is that you could have the core of your app
+have functionality that is available cross-platform,
+
+410
+00:37:18,140 --> 00:37:23,700
+is not necessarily specific to Chrome, doesn't
+have these extended APIs and permissions that
+
+411
+00:37:23,700 --> 00:37:27,690
+are requested. And in doing that, you are
+going to have a lot safer API.
+
+412
+00:37:27,690 --> 00:37:32,690
+For example, you got to use XMLHttpRequest.
+You are going to have content security policy
+
+413
+00:37:32,690 --> 00:37:37,290
+support, all of that from the get-go. And
+that's just your core bundle.
+
+414
+00:37:37,290 --> 00:37:40,930
+Layered on top of this is all the goodies
+that you get from the platform. You get the
+
+415
+00:37:40,930 --> 00:37:46,940
+identity API, so use it. If you have it, use
+it. You get media galleries API, use it. And
+
+416
+00:37:46,940 --> 00:37:52,619
+if not, degrade gracefully. And this is how
+if you build your app, whether it is for Chrome
+
+417
+00:37:52,619 --> 00:37:57,650
+packaged apps specifically or if you are going
+to deploy it on the Web across multiple browsers,
+
+418
+00:37:57,650 --> 00:38:02,550
+if you do this, you can have one product that
+can work on multiple platforms. And on some
+
+419
+00:38:02,550 --> 00:38:07,140
+platforms, it just has more functionality.
+We've done that with Google+ Photos Chrome
+
+420
+00:38:07,140 --> 00:38:10,849
+app, and we think it is working out really
+well.
+
+421
+00:38:10,849 --> 00:38:16,040
+So I actually think we don't have time for
+questions. We only have about a minute left.
+
+422
+00:38:16,040 --> 00:38:20,430
+But I will be at the office hours bar if you
+want to come by and ask any questions you
+
+423
+00:38:20,430 --> 00:38:26,329
+have. It has been a real pleasure. Thank you
+very much for attending, and hope to see you
+
+424
+00:38:26,329 --> 00:38:29,150
+guys soon.
+[ Applause ]
+

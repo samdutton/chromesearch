@@ -1,0 +1,2096 @@
+1
+00:00:00,000 --> 00:00:07,000
+>> BIDELMAN: All right, so people are still
+sort of filtering in but we can get started.
+
+2
+00:00:07,299 --> 00:00:14,079
+Thank you for coming. This is, What is a Web
+App, and it's going to introduce you to the
+
+3
+00:00:14,079 --> 00:00:19,260
+Chrome Web Store and building an application
+for the Chrome Web Store, so hopefully, you're
+
+4
+00:00:19,260 --> 00:00:25,640
+in the right place. Just a little bit about
+myself for those that haven't seen me present
+
+5
+00:00:25,640 --> 00:00:31,170
+today. I--my name is Eric Bidelman. That's
+my Twitter handle there @ebidel at the top.
+
+6
+00:00:31,170 --> 00:00:36,480
+I'm a developer programs engineer at Google.
+I've worked on a bunch of different APIs and
+
+7
+00:00:36,480 --> 00:00:41,969
+helped their developers with Google Docs and
+Sites and Base and OAuth. And now, I'm doing
+
+8
+00:00:41,969 --> 00:00:46,629
+things with Chrome and HTML5 and evangelizing
+the open Web and all the cool stuff you can
+
+9
+00:00:46,629 --> 00:00:53,629
+do with Chrome and modern browsers. So, today,
+we're going to talk a little bit about Chrome;
+
+10
+00:00:54,010 --> 00:00:59,850
+what is it, where we--where were we, where
+we're at now. And also in regards to HTML5,
+
+11
+00:00:59,850 --> 00:01:04,430
+what's going on in HTML5 space in Chrome because
+ultimately, you know, we're building Web apps,
+
+12
+00:01:04,430 --> 00:01:09,820
+we're going to be building them using technologies
+like HTML5. And then we'll switch gears and
+
+13
+00:01:09,820 --> 00:01:14,860
+sort of think and talk about what a Web app
+looks like. So thinking gets your mind thinking
+
+14
+00:01:14,860 --> 00:01:19,550
+about the certain components of a Web app
+and how they look, how they feel. We'll talk
+
+15
+00:01:19,550 --> 00:01:24,300
+about the Chrome Web Store, how do you publish
+an application, how do you write an app and
+
+16
+00:01:24,300 --> 00:01:29,810
+write or install the Web application. That's
+kind of a new concept. There's two types;
+
+17
+00:01:29,810 --> 00:01:33,800
+there's a host app and a package app. I'll
+discuss both compatibility and then we'll
+
+18
+00:01:33,800 --> 00:01:40,800
+take questions if we have time. So let's jump
+right into HTML5 and Chrome. So you saw some
+
+19
+00:01:43,600 --> 00:01:48,380
+of this in the keynote but I just want to
+reiterate it, why Chrome as sort of a developer
+
+20
+00:01:48,380 --> 00:01:53,080
+platform? Well, here's a--here's an interesting
+graph. So you can see the initial beta of
+
+21
+00:01:53,080 --> 00:01:58,770
+Chrome all the way down to Chrome 9. And this
+is a benchmark of the V8 JavaScript engine
+
+22
+00:01:58,770 --> 00:02:03,890
+that Chrome runs. This is the--the version
+five of that benchmark. But you can tell that
+
+23
+00:02:03,890 --> 00:02:08,560
+the--obviously, the bigger bars mean better
+and better performance. So over the last releases,
+
+24
+00:02:08,560 --> 00:02:12,319
+I mean, we just keep getting faster and faster
+and faster. This is why applications like
+
+25
+00:02:12,319 --> 00:02:19,319
+Gmail and these big JavaScript-heavy and JavaScript-centric
+applications work and work really well. Chrome
+
+26
+00:02:20,120 --> 00:02:24,840
+has 70 million plus active users. That's something
+we announced at Google I/O. And that number
+
+27
+00:02:24,840 --> 00:02:29,280
+is only getting bigger. So if you're targeting
+Chrome, if you're targeting it for the Web
+
+28
+00:02:29,280 --> 00:02:34,350
+Store, you have a huge potential user base
+to reach. Stable channel update happen every
+
+29
+00:02:34,350 --> 00:02:39,280
+six weeks. So, we are iterating on this thing
+lighting fast. And it's really nice that all
+
+30
+00:02:39,280 --> 00:02:44,090
+browser vendors now are competing. You have
+Safari, you have Firefox, you have IE9 and
+
+31
+00:02:44,090 --> 00:02:49,380
+Chrome sort of driving the Web forward and
+building these HTML5 APIs at lightning speeds.
+
+32
+00:02:49,380 --> 00:02:53,040
+You have new Canary build on Windows that
+you can download. It's nightly build of Chrome
+
+33
+00:02:53,040 --> 00:02:57,490
+that you can test the latest and greatest,
+the bleeding edge features, as they come out.
+
+34
+00:02:57,490 --> 00:03:03,530
+I mentioned 400% JavaScript performance improvement.
+So just a--it's a really exciting space to
+
+35
+00:03:03,530 --> 00:03:09,250
+be in. So why HTML5? Well, you've seen a lot
+of cool demos today. I did some of the keynote.
+
+36
+00:03:09,250 --> 00:03:13,890
+We've talked about them a little bit. I'll
+just sort of break up this talk a little bit.
+
+37
+00:03:13,890 --> 00:03:19,349
+I'm going to switch to this mic and just show
+you a few cool demos throughout the entire
+
+38
+00:03:19,349 --> 00:03:26,349
+thing. This is one I actually found today.
+So, this is using the Drag and Drop API that
+
+39
+00:03:28,959 --> 00:03:33,150
+we demoed in the keynote but this one's a
+little different. So let me find a nice image
+
+40
+00:03:33,150 --> 00:03:40,150
+to drop on here. I'll do the Chrome logo.
+So this image data was read using the File
+
+41
+00:03:47,099 --> 00:03:51,370
+Reader API in JavaScript and you can tell,
+you know, it's the Chrome logo. It's all pixilated.
+
+42
+00:03:51,370 --> 00:03:55,400
+But the really cool thing about this is that
+it's using Canvas and it's breaking this image
+
+43
+00:03:55,400 --> 00:04:00,050
+pixel data up because you can read the pixel
+level. And so, I can create a nice 3D cool
+
+44
+00:04:00,050 --> 00:04:07,050
+aspect of the--of the Chrome logo as I traverse
+around. Really kind of cool. He's also incorporated
+
+45
+00:04:08,709 --> 00:04:13,569
+the device orientation API. So here's another
+example where I move the computer and it turns.
+
+46
+00:04:13,569 --> 00:04:20,569
+Pretty neat. All right. So, that's why Chrome,
+why HTML5. Now, why the Web? Why would you
+
+47
+00:04:31,590 --> 00:04:35,510
+want, if you're a desktop application software
+developer, why would you want to switch to
+
+48
+00:04:35,510 --> 00:04:40,590
+the Web? Well, I think there's really three
+key reasons. The first one, there's--I mean,
+
+49
+00:04:40,590 --> 00:04:45,090
+it's got--and maybe it's not obvious, I don't
+know. But the zero installment, right, you
+
+50
+00:04:45,090 --> 00:04:48,520
+can access your application--your users can
+access your application from anywhere and
+
+51
+00:04:48,520 --> 00:04:53,820
+anytime on the Web; there's zero install.
+There's no friction in that. You know, they
+
+52
+00:04:53,820 --> 00:04:57,160
+get the latest security updates and features
+that you roll out. When you click "deploy,"
+
+53
+00:04:57,160 --> 00:05:03,190
+they get the latest and greatest every time.
+It's a seamless update. Cross-platform and
+
+54
+00:05:03,190 --> 00:05:08,530
+device support; this one, you know, this one
+might be obvious, too. But obviously HTML5
+
+55
+00:05:08,530 --> 00:05:13,370
+is an emerging technology and it's still being
+built up by the various browsers. But in the
+
+56
+00:05:13,370 --> 00:05:17,130
+long term here, everyone's going to support
+it. It's going to be used across multiple
+
+57
+00:05:17,130 --> 00:05:21,280
+platforms, maybe for the term right ones and
+run anywhere. Well, that's sort of the idea
+
+58
+00:05:21,280 --> 00:05:28,280
+behind, you know, the Web. But it's really
+not just Chrome and the desktop, right? There's
+
+59
+00:05:30,030 --> 00:05:34,919
+different spaces. There's things like Android
+and the smartphones that support HTML5 and
+
+60
+00:05:34,919 --> 00:05:39,320
+these web technologies. There's also a new
+product, Google TV, right, that launched which
+
+61
+00:05:39,320 --> 00:05:43,020
+has Chrome built into it and a modern browser
+that can run these cool technologies. So,
+
+62
+00:05:43,020 --> 00:05:47,919
+you're running your apps not only on small
+device but, say, a 40-inch screen. So it's
+
+63
+00:05:47,919 --> 00:05:52,510
+a very different type of application environment
+that you're used to. And, of course, those
+
+64
+00:05:52,510 --> 00:05:56,160
+two products, in particular, share WebKit
+as the rendering engine. So you know if it
+
+65
+00:05:56,160 --> 00:06:02,530
+works, say, in Safari. It's probably going
+to work in Chrome, Google TV, and Android
+
+66
+00:06:02,530 --> 00:06:09,530
+as well. So, what does a Web app look like?
+I mean, we've talked about sort of applications
+
+67
+00:06:10,979 --> 00:06:15,030
+on the Web. I think you guys kind of know.
+We use these everyday but here are sort of
+
+68
+00:06:15,030 --> 00:06:19,389
+my ideas of what a good, solid Web application,
+at least the kind that we're looking for for
+
+69
+00:06:19,389 --> 00:06:25,449
+the Store, I have. So, one, it's goal-oriented.
+It should be very task-driven. You go there
+
+70
+00:06:25,449 --> 00:06:29,460
+to serve a purpose and you maybe do--maybe
+it's a music player app and you're searching
+
+71
+00:06:29,460 --> 00:06:36,460
+for music or you're playing music. It's very
+task-driven and focused. The UI is tight.
+
+72
+00:06:36,540 --> 00:06:40,509
+It's beautiful and immersive. So, again, I
+think, you know, as engineers we often get
+
+73
+00:06:40,509 --> 00:06:45,970
+in this niche where we're not the best designers,
+I would say, but if you hire a designer, I
+
+74
+00:06:45,970 --> 00:06:50,490
+guarantee you're going to have more traffic.
+CSS3, you know, the graphical capabilities
+
+75
+00:06:50,490 --> 00:06:55,460
+in the HTML5 now are amazing. And so, you
+can really make a beautiful and immersive
+
+76
+00:06:55,460 --> 00:06:59,750
+site that sort of takes up the whole browser
+space or whole rendering space on whatever
+
+77
+00:06:59,750 --> 00:07:04,900
+device you're on. You should sort of get lost
+in the UI. It shouldn't feel--it should feel
+
+78
+00:07:04,900 --> 00:07:11,490
+like a native app basically. And in that regard,
+it should have a rich user experience. Lastly,
+
+79
+00:07:11,490 --> 00:07:16,330
+it should be fast. I showed you the JavaScript
+performance graphs earlier. But there's also
+
+80
+00:07:16,330 --> 00:07:20,389
+APIs that we talked about in some prior sessions
+that really make this stuff lightning fast;
+
+81
+00:07:20,389 --> 00:07:25,020
+things like Offline, things like Web Workers
+and Web Sockets for real time communication.
+
+82
+00:07:25,020 --> 00:07:29,100
+So, it should feel native but it's on the
+Web. So now let me show you what I'm talking
+
+83
+00:07:29,100 --> 00:07:36,100
+about.
+
+84
+00:07:39,590 --> 00:07:43,370
+This is a Web site. And I won't go to these
+sites, but this is--this will sort of give
+
+85
+00:07:43,370 --> 00:07:47,740
+you sort of a general idea of what some of
+these--what a Web app, in my opinion, looks
+
+86
+00:07:47,740 --> 00:07:51,460
+like. So here's an example from the Associated
+Press. It--you go there for a reason. You
+
+87
+00:07:51,460 --> 00:07:54,889
+go there to read news articles. It's fully
+immersive. It's thinking about into things
+
+88
+00:07:54,889 --> 00:08:00,770
+like rounding corners and all the cool stuff
+you can do in CSS. Another great example of
+
+89
+00:08:00,770 --> 00:08:07,770
+a music player, Twitter app. I mean, this
+look and feel like native, say, iPad apps
+
+90
+00:08:07,819 --> 00:08:14,669
+or iPhone apps but they're Web apps. This
+one's really simple. I mentioned focus-driven
+
+91
+00:08:14,669 --> 00:08:20,430
+and very goal-oriented. You know, everytimezone.com,
+the whole purpose of the site is just to go
+
+92
+00:08:20,430 --> 00:08:24,110
+there if you forgot what time zone you're
+in and how it translates to other time zones.
+
+93
+00:08:24,110 --> 00:08:29,889
+But it's using things like SVG and Canvas
+to present a really cool user interface. So
+
+94
+00:08:29,889 --> 00:08:34,560
+you get the idea, right? These are--these
+are Web apps but they look native and they
+
+95
+00:08:34,560 --> 00:08:41,560
+feel native. All right, I promised awesome
+demos to get you guys excited so here's the
+
+96
+00:08:46,690 --> 00:08:53,690
+second awesome demo. Actually, I need Firefox
+for this. So, Firefox, there's a new API in
+
+97
+00:08:58,860 --> 00:09:04,020
+HTML5, it's the audio data API. And what that
+allows you to do is actually read data, say,
+
+98
+00:09:04,020 --> 00:09:09,339
+from an MP3 file as you're going to see in
+a second, and you can process that data and
+
+99
+00:09:09,339 --> 00:09:14,320
+do anything with it you want. So you get the
+raw byte information from the data stream.
+
+100
+00:09:14,320 --> 00:09:18,760
+You can also create audio on the fly using
+this API. So here's an example of using HTML5
+
+101
+00:09:18,760 --> 00:09:23,580
+audio. This is the audio tag and this is what
+it looks like rendered in Firefox and Canvas
+
+102
+00:09:23,580 --> 00:09:30,140
+to play an MP3 file. But at the same time,
+it's rendering the spectrum of that sound.
+
+103
+00:09:30,140 --> 00:09:34,620
+It's doing this on the fly in JavaScript in
+real time and it looks fantastic, right? I
+
+104
+00:09:34,620 --> 00:09:41,620
+mean, there's no lag here whatsoever. I could
+play it all day, but I won't. Here's just
+
+105
+00:09:45,649 --> 00:09:52,649
+another quick example of the auto data API.
+This is also in Canvas. Is my sound out? Let
+
+106
+00:09:53,760 --> 00:10:00,760
+me do a refresh. My--is my audio on in the
+computer? Maybe not. But what you would hear
+
+107
+00:10:10,390 --> 00:10:16,640
+would be sound. As I press these different
+dots it generates a sound based on the color
+
+108
+00:10:16,640 --> 00:10:22,260
+pallet. So it's pretty cool, low to high based
+on sort of the frequency of the image. Maybe
+
+109
+00:10:22,260 --> 00:10:29,260
+the auto data API was on mute for that particular
+demo. So that's sort of setting up the Chrome
+
+110
+00:10:33,730 --> 00:10:37,360
+Web Store, all that, you know, billing an
+app, what is an app, what does it look like,
+
+111
+00:10:37,360 --> 00:10:44,050
+how does it feel, how does it act, what technologies
+to use. So here--here's what the Chrome Web
+
+112
+00:10:44,050 --> 00:10:47,290
+Store is. And before I sort of talk about
+the Chrome Web Store, I want to talk about
+
+113
+00:10:47,290 --> 00:10:51,990
+the current problem sort of on the Web today.
+You have--I don't know about you guys but
+
+114
+00:10:51,990 --> 00:10:55,769
+this is how my tab page looks every, you know,
+afternoon after I've been at work for the
+
+115
+00:10:55,769 --> 00:11:01,580
+whole day. I have a couple different new sites
+open. I have maybe--you see three instances
+
+116
+00:11:01,580 --> 00:11:06,930
+of Gmail open because I'm lost in my tabs
+and maybe I've signed in to different accounts.
+
+117
+00:11:06,930 --> 00:11:10,370
+You know, I have new sites, I have apps, I
+have Facebook open, I have TechCrunch; all
+
+118
+00:11:10,370 --> 00:11:15,720
+these different--these applications that we
+use, Facebook, and the readers and everything.
+
+119
+00:11:15,720 --> 00:11:18,740
+It's different, the Web is different, much
+different than it used to be. These are not
+
+120
+00:11:18,740 --> 00:11:23,560
+sites anymore, these are apps. People are
+spending all their time in these. So the Browser
+
+121
+00:11:23,560 --> 00:11:27,240
+UI really hasn't sort of kept up with this
+pace of innovation and thinking along these
+
+122
+00:11:27,240 --> 00:11:33,529
+same lines, it's not ideal for the scenario.
+Same thing with permissions. So a lot of really
+
+123
+00:11:33,529 --> 00:11:39,870
+neat HTML5 APIs like Geolocation, Storage,
+Notifications API. There's some other ones
+
+124
+00:11:39,870 --> 00:11:44,029
+in the pipeline, like device access will be
+something that will require permission. So
+
+125
+00:11:44,029 --> 00:11:48,610
+it requires user interaction in order to make
+this stuff work. So what you end up with,
+
+126
+00:11:48,610 --> 00:11:53,570
+if you have this really killer app that has
+all these awesome APIs, you know, on page
+
+127
+00:11:53,570 --> 00:11:59,140
+load, you get four or five permissions and
+it's ugly. I don't know about you guys but
+
+128
+00:11:59,140 --> 00:12:04,560
+that's not ideal user experience. So we can
+do better. The last problem of the Chrome
+
+129
+00:12:04,560 --> 00:12:10,029
+Web Store--I hope in saying to solve, is that
+you have all these users out there. And if
+
+130
+00:12:10,029 --> 00:12:16,120
+you do a search for Google.com today--I'm
+putting a really cool animation. If you do
+
+131
+00:12:16,120 --> 00:12:21,709
+a search for Google.com today, right, you--and
+you find the best photo app or something,
+
+132
+00:12:21,709 --> 00:12:26,040
+photo sharing app. You know, you're not necessarily
+going to get the best photo sharing app out
+
+133
+00:12:26,040 --> 00:12:31,920
+there, Google Search is not ideal for discovering
+applications on the Web. So you have all these
+
+134
+00:12:31,920 --> 00:12:36,399
+apps, you have all these developers, how do
+you sort of connect them together for developers
+
+135
+00:12:36,399 --> 00:12:42,230
+to reach a new market? And of course, that's
+sort of where the Chrome Web Store comes in.
+
+136
+00:12:42,230 --> 00:12:47,550
+So the Web Store is going to be about discoverability,
+right? You should be able to find the killer
+
+137
+00:12:47,550 --> 00:12:52,820
+apps you want, install them on a Chrome. Or
+in general, it's any browsers that you access
+
+138
+00:12:52,820 --> 00:12:57,519
+the store and you should be able to find those
+applications. And the best ones will surface
+
+139
+00:12:57,519 --> 00:13:01,410
+to the top based on user ratings and reviews.
+So if your app is killer, if you're a small
+
+140
+00:13:01,410 --> 00:13:06,529
+time developer, you know, your app can rise
+to the top if you do a good job and users
+
+141
+00:13:06,529 --> 00:13:12,540
+like what they're seeing. It's all about distribution,
+so reaching those users. Auto-update for package
+
+142
+00:13:12,540 --> 00:13:17,399
+apps. We'll talk about package apps in a bit
+but it's the same auto-update. If any of you
+
+143
+00:13:17,399 --> 00:13:21,720
+went to the Chrome extensions talk earlier,
+Chrome extensions, once you upload them to
+
+144
+00:13:21,720 --> 00:13:26,610
+the gallery and upload a new version they
+are auto-updated for all users of your extension.
+
+145
+00:13:26,610 --> 00:13:30,470
+So the same thing will be true for packaged
+apps for the Chrome Web Store. If you, you
+
+146
+00:13:30,470 --> 00:13:35,300
+know, hit deploy, if you hit publish to the
+Web Store, your applications will get updated
+
+147
+00:13:35,300 --> 00:13:40,040
+for all users of your app. So that's pretty
+cool. Obviously, revenue for developers is
+
+148
+00:13:40,040 --> 00:13:46,589
+huge. You know, you can make money off a Web
+app. That's kind of a new idea, I would say.
+
+149
+00:13:46,589 --> 00:13:51,089
+And themes and extensions will be part of
+this too. So you'll be able to sell extensions,
+
+150
+00:13:51,089 --> 00:13:58,089
+you will be able to sell themes as well. Themes
+meaning, themes for Google Chrome.
+So the whole process of publishing app on
+
+151
+00:14:03,180 --> 00:14:08,410
+the Web Store, you're in complete control.
+So we don't do, you know, app approval or
+
+152
+00:14:08,410 --> 00:14:13,380
+anything like that. You pay a one time registration
+fee and you're all set, you can go ahead and
+
+153
+00:14:13,380 --> 00:14:17,730
+publish. Unless your app does something malicious
+or it's flagged by users, you know, we won't
+
+154
+00:14:17,730 --> 00:14:22,070
+interact, we won't intervene at all. So you
+create the app, you upload it to the store
+
+155
+00:14:22,070 --> 00:14:26,810
+and you provide the product information. There's
+things like screenshots and videos, and then
+
+156
+00:14:26,810 --> 00:14:32,120
+you get published, and you reach users and
+sell your application. So it's very frictionless.
+
+157
+00:14:32,120 --> 00:14:36,680
+We have a payment system set-up with a licensing
+API that you can talk to. Who's installed
+
+158
+00:14:36,680 --> 00:14:42,790
+my app, you know, to make sure they're valid
+users for the hosted apps at least. It uses
+
+159
+00:14:42,790 --> 00:14:49,000
+OpenID and OAuth, so two technologies that
+are open standards using RESTful API. And
+
+160
+00:14:49,000 --> 00:14:53,350
+we also provide things like analytics in the
+store. So, you know, how many times did this
+
+161
+00:14:53,350 --> 00:14:58,019
+user or how many times did this user--people
+have installed this application, uninstalled
+
+162
+00:14:58,019 --> 00:15:04,959
+it, viewed the listing page, and so on and
+so forth. So, there's this been this asterisk
+
+163
+00:15:04,959 --> 00:15:10,430
+here on all the payment stuff for a couple
+slides now, that's because when we do launch
+
+164
+00:15:10,430 --> 00:15:14,950
+the store later in the year, you have to have
+a U.S. bank account in order to publish on
+
+165
+00:15:14,950 --> 00:15:21,950
+a store. So, until it's--this sort of officially
+launched in Brazil, you won't have the ability
+
+166
+00:15:22,329 --> 00:15:25,660
+to publish an application. But you can prepare
+yourself for it. And I do recommend you do
+
+167
+00:15:25,660 --> 00:15:30,630
+that. We'll talk about how. I just want to
+mention, when we do launch, they'll be, you
+
+168
+00:15:30,630 --> 00:15:35,529
+know, free. You can have a free application.
+You can pay to install so a user can choose
+
+169
+00:15:35,529 --> 00:15:40,260
+to pay a one time fee to install your application.
+There'll be subscriptions both monthly and
+
+170
+00:15:40,260 --> 00:15:45,720
+annually. There'll be a freemium model so
+you can upload a free version of apps so the
+
+171
+00:15:45,720 --> 00:15:49,820
+users can have a trial version. If they like
+your app they can choose to install the premium
+
+172
+00:15:49,820 --> 00:15:53,880
+version. And then you can choose your own
+adventure. So, you're not, again, locked in
+
+173
+00:15:53,880 --> 00:15:58,250
+to any technology or any payment solution.
+You can use your own. You can even sell your
+
+174
+00:15:58,250 --> 00:16:02,540
+app on your own, you know, server if you wanted
+to, there's no restrictions. But the, again,
+
+175
+00:16:02,540 --> 00:16:07,610
+the benefit of the store here is that, for
+the discoverability and ease of integration.
+
+176
+00:16:07,610 --> 00:16:12,610
+So what can you do to prepare if you can't
+sell anything. Before I do that, I want to
+
+177
+00:16:12,610 --> 00:16:19,610
+show you another cool example because they're
+awesome. I'll make sure I have sound. Yes.
+
+178
+00:16:28,190 --> 00:16:33,949
+Okay, so this is also using the audio data
+API. This is our--basically what they've done
+
+179
+00:16:33,949 --> 00:16:37,980
+is, is create a sound sampler, and I'll just
+play it for you right now using a--what is
+
+180
+00:16:37,980 --> 00:16:44,980
+it, the D key or S key. Let me try to refresh.
+Can you guys hear that? Could you turn that
+
+181
+00:16:52,940 --> 00:16:59,940
+up a little bit? So this is reading an MP3
+file and then producing a spectrum. But what
+
+182
+00:17:08,239 --> 00:17:14,509
+I can do using Audio Data API I ran, I can
+sample different portions. I can also read
+
+183
+00:17:14,509 --> 00:17:20,669
+this thing backwards if I wanted to and really
+get the full effect there. But just--certainly
+
+184
+00:17:20,669 --> 00:17:26,100
+the capabilities of things you can do with
+audio and video and multimedia HTML5, it's
+
+185
+00:17:26,100 --> 00:17:33,100
+pretty amazing. Okay, I'm done with the audio,
+thank you. All right, so I've mentioned installation.
+
+186
+00:17:41,529 --> 00:17:48,529
+How do you install a Web application? In Chrome
+at least, if users visit the store and see
+
+187
+00:17:49,590 --> 00:17:54,950
+your listing and want to, you know, purchase
+your user free application, they can install
+
+188
+00:17:54,950 --> 00:17:59,289
+their app--your application inside of Chrome.
+So this is an image of what the new tab page
+
+189
+00:17:59,289 --> 00:18:05,119
+will probably or might look like and this
+is available in the developer channel of Chrome.
+
+190
+00:18:05,119 --> 00:18:10,470
+So, you can install applications. And basically
+what it is it has this big icon, a launch
+
+191
+00:18:10,470 --> 00:18:14,489
+icon to your app so you just can access, you
+know, their favorite applications really quickly.
+
+192
+00:18:14,489 --> 00:18:21,470
+And so there will also be a link to the store
+where they can find and discover new ones.
+
+193
+00:18:21,470 --> 00:18:26,429
+So I mentioned the launcher. This is, you
+know, an example of what an icon would look
+
+194
+00:18:26,429 --> 00:18:30,009
+like and the options that are available to
+you. Users have the full choice to sort of
+
+195
+00:18:30,009 --> 00:18:36,429
+open the application regular tab in Google
+Chrome. Excuse me. It can open as a pin tab
+
+196
+00:18:36,429 --> 00:18:43,289
+so they can actually sort of move the app
+over to side by itself so it's away from the
+
+197
+00:18:43,289 --> 00:18:47,129
+rest of the tabs sort of to minimize that
+clutter that you saw. Or they can choose to
+
+198
+00:18:47,129 --> 00:18:52,619
+run full screen which is kind of cool for
+things like games, or hopefully not uninstall
+
+199
+00:18:52,619 --> 00:18:57,249
+your apps. So that's why that one's pushed
+down so far. Unless there's--there's also
+
+200
+00:18:57,249 --> 00:19:01,970
+an option to have sort of a pop-up panel UI.
+So if you have something, maybe like a count--a
+
+201
+00:19:01,970 --> 00:19:06,739
+calculator widget or a clock, you can run
+that in a little panel pop-up. The tab and
+
+202
+00:19:06,739 --> 00:19:10,710
+the panel are something you can programmatically
+choose. The pin tab and full screen are just
+
+203
+00:19:10,710 --> 00:19:17,220
+something the user has to manually select
+from this list. But what this allows you to
+
+204
+00:19:17,220 --> 00:19:21,609
+do--so, it's got the convenient new tab page,
+but it simplifies the permissions model. So
+
+205
+00:19:21,609 --> 00:19:25,889
+if you have an app that uses Geolocation,
+Notifications and Storage, it's basically
+
+206
+00:19:25,889 --> 00:19:30,309
+just, you know, do you trust this application,
+click to install and that's it. They don't
+
+207
+00:19:30,309 --> 00:19:34,070
+have to grant access to all these different
+APIs separately. It's sort of at the trust
+
+208
+00:19:34,070 --> 00:19:38,549
+level of the store and installing application
+and you hereby say that you trust the application
+
+209
+00:19:38,549 --> 00:19:44,019
+to do whatever it needs to do. So let's talk
+about hosted apps. Hosted apps are probably
+
+210
+00:19:44,019 --> 00:19:49,590
+going to be, in my opinion, they're super
+easy to create for the store. If you have
+
+211
+00:19:49,590 --> 00:19:55,159
+an existing Web site, it's literally a matter
+of wrapping that existing Web site in a manifest
+
+212
+00:19:55,159 --> 00:19:59,960
+file. Very similar to extensions, it's actually
+the same model. So if you have a Web site,
+
+213
+00:19:59,960 --> 00:20:04,779
+you add some metadata to it and boom you're
+done. You upload to the store and you've already
+
+214
+00:20:04,779 --> 00:20:09,789
+created the app, right, there's nothing else
+to do. But what it does is you have the--all
+
+215
+00:20:09,789 --> 00:20:14,529
+the permissions. So this is what, you know,
+a pop-up would look like. This app, Google
+
+216
+00:20:14,529 --> 00:20:19,190
+Maps, running in the Web Store would require
+your physical location for the Geolocation
+
+217
+00:20:19,190 --> 00:20:24,009
+and storage for offline access. And so, you
+click to install. There's three permissions
+
+218
+00:20:24,009 --> 00:20:29,080
+right now, I mentioned them before. As new
+APIs become available they'll be added to
+
+219
+00:20:29,080 --> 00:20:35,059
+the list as well. So how do you--if you have
+a Web app that exists on the Web today, how
+
+220
+00:20:35,059 --> 00:20:38,299
+do you detect that the user has installed
+this application? How do you know they're
+
+221
+00:20:38,299 --> 00:20:44,669
+launching it from Chrome instead of just visiting,
+you know, the app from a URL or a bookmark?
+
+222
+00:20:44,669 --> 00:20:49,749
+And what we'll have available for you is--it's
+not really an API, but it's a property. So,
+
+223
+00:20:49,749 --> 00:20:54,739
+Window Chrome app is installed, you can check
+that. If that property exists on the Chrome
+
+224
+00:20:54,739 --> 00:20:59,960
+app object then you know the user's installed
+the app. And then, they paid money if they
+
+225
+00:20:59,960 --> 00:21:03,669
+purchased it or if it's free. Otherwise, you
+know, they're just visiting it as a normal
+
+226
+00:21:03,669 --> 00:21:08,119
+user without install. So you can display maybe
+a different UI, you can display, "Would you
+
+227
+00:21:08,119 --> 00:21:14,129
+like to purchase this app?" or something.
+So, let me just demo this and show you what
+
+228
+00:21:14,129 --> 00:21:20,200
+this looks like. I have taken the liberty
+and spent countless hours in creating a really
+
+229
+00:21:20,200 --> 00:21:25,090
+nice demo application. It runs on my local
+machine right now but obviously, this could
+
+230
+00:21:25,090 --> 00:21:29,619
+be any domain, any Web site. On the Web, we
+could wrap Google.com if we want it to. We
+
+231
+00:21:29,619 --> 00:21:34,190
+could wrap Google Maps if we wanted to in
+a hosted app. But I will show you what this
+
+232
+00:21:34,190 --> 00:21:41,080
+looks like in all of its glory. So the first
+thing you'll notice is that this is just a,
+
+233
+00:21:41,080 --> 00:21:44,809
+you know, helloworld.html. And this is not
+really a Web app. It's just a static page.
+
+234
+00:21:44,809 --> 00:21:50,340
+But it happens to use a lot of cool HTML5
+APIs. This is text. This is using the fonts
+
+235
+00:21:50,340 --> 00:21:55,859
+API and all that good CSS stuff. But you'll
+notice that the first thing when the page
+
+236
+00:21:55,859 --> 00:22:01,159
+loads, it wants to use Geolocation. So I get
+the browser pop-up, right? This app wants
+
+237
+00:22:01,159 --> 00:22:05,429
+physical access to your location. So I'll
+say, "Yes," because I do trust this app, I
+
+238
+00:22:05,429 --> 00:22:09,929
+built it. And for some reason, of course,
+it's putting us in the water. That's really
+
+239
+00:22:09,929 --> 00:22:16,929
+interesting. So, it's probably because of
+the Ethernet. Oh, fantastic. Well, we got
+
+240
+00:22:17,269 --> 00:22:23,029
+close to Brazil, okay. Let me try that again.
+I want to see. The wireless is probably more
+
+241
+00:22:23,029 --> 00:22:29,590
+accurate but I assure you Geolocation does
+work. So, let's say that worked. Now it's
+
+242
+00:22:29,590 --> 00:22:35,330
+got my location. I've granted it permission.
+But this app, you know, it's, obviously, it's
+
+243
+00:22:35,330 --> 00:22:41,539
+not ideal but it also wants to send notifications.
+So when I hit "send notification," right,
+
+244
+00:22:41,539 --> 00:22:45,109
+I get another dialogue. And you get the point,
+right? This is kind of annoying. In order
+
+245
+00:22:45,109 --> 00:22:51,200
+to really experience this app I have to go
+through all these hurdles. So, now that I've
+
+246
+00:22:51,200 --> 00:22:56,509
+obviously done that I can send notifications.
+It's an HTML5 notification. This last one
+
+247
+00:22:56,509 --> 00:23:02,090
+is using the FileWriter API, which is a brand
+new API that recently landed in Chrome, in
+
+248
+00:23:02,090 --> 00:23:06,299
+Chrome dev channel. So you can actually write
+files and write directories and read directories
+
+249
+00:23:06,299 --> 00:23:10,960
+and files using Javascript. And the reason
+I'm getting code exceeded error here is because
+
+250
+00:23:10,960 --> 00:23:16,299
+I don't have the proper permission set. Right
+now in Chrome, at least for the foreseeable
+
+251
+00:23:16,299 --> 00:23:20,899
+near future, you have to be an application
+and request the permission in your manifest
+
+252
+00:23:20,899 --> 00:23:26,789
+file in order to write and read files. I'll
+show you the code for that just so you believe
+
+253
+00:23:26,789 --> 00:23:33,789
+me. So I'm not out putting random text.
+So this is what the file looks. This is what
+an API looks like. There's a new sort of method
+
+254
+00:23:41,989 --> 00:23:47,389
+on the window object. So I can request the
+file system, I want temporary file access.
+
+255
+00:23:47,389 --> 00:23:53,669
+I'll give it a size and then I, you know,
+give success and error callbacks. The success
+
+256
+00:23:53,669 --> 00:23:58,369
+callback will take the file system object
+that's passed to that callback and it will
+
+257
+00:23:58,369 --> 00:24:02,969
+basically do a get file. If it finds that
+file, it will try--excuse me, if it finds
+
+258
+00:24:02,969 --> 00:24:06,820
+that file, it will try to read it, otherwise
+since I have this create "true," if it doesn't
+
+259
+00:24:06,820 --> 00:24:11,249
+exist I'll try to create it. In this case,
+it doesn't exist on my local storage system
+
+260
+00:24:11,249 --> 00:24:16,309
+so I get that code exceeded error. So, my
+error callback is handed--or is handled instead
+
+261
+00:24:16,309 --> 00:24:23,149
+of the success callback. And you can do other
+things like read directories and whatnot,
+
+262
+00:24:23,149 --> 00:24:30,149
+but that is not the point. Last thing I wanted
+to show is that I am making that check for--if
+
+263
+00:24:30,789 --> 00:24:35,049
+this app is installed using the easy install
+parameter. So you can sell the message here.
+
+264
+00:24:35,049 --> 00:24:40,460
+You know, this launch, this was normally--this
+app was launched via bookmarker or link so
+
+265
+00:24:40,460 --> 00:24:46,779
+I just navigated to this page. Okay, so that's
+a normal web app, I've already built that.
+
+266
+00:24:46,779 --> 00:24:52,019
+Let's see what this looks like as installable
+hosted application. So the first thing you're
+
+267
+00:24:52,019 --> 00:24:57,090
+going to do is create a manifest.json file.
+So the exact same process as creating an extension.
+
+268
+00:24:57,090 --> 00:25:01,690
+You give a name, you know, description of
+your app, you have logos. There's various
+
+269
+00:25:01,690 --> 00:25:05,149
+logos you can provide for the store, there's
+one for the launcher icon, there's one for
+
+270
+00:25:05,149 --> 00:25:09,609
+fab icon, there's one for, you know, the listing
+in the store itself. So you have a lot of
+
+271
+00:25:09,609 --> 00:25:15,340
+flexibility and options there. But the new
+property for the store itself is this app
+
+272
+00:25:15,340 --> 00:25:20,590
+object, this app JSON object. And the first
+property in there is the launch URL. The launch
+
+273
+00:25:20,590 --> 00:25:26,950
+URL is the URL of your application. So if
+I was to just package this app, this app that
+
+274
+00:25:26,950 --> 00:25:30,269
+I created, you know, in 10 minutes for the
+Web Store, this is all I would need to do.
+
+275
+00:25:30,269 --> 00:25:35,379
+I would just need to write, you know, these
+10 lines of JSON, package that up, upload
+
+276
+00:25:35,379 --> 00:25:42,379
+it to the store and boom, I'm done. But if
+users are using Chrome they can obviously
+
+277
+00:25:42,889 --> 00:25:48,599
+have a better experience. So the first thing
+optionally that we can do, I mentioned that
+
+278
+00:25:48,599 --> 00:25:52,149
+you can launch in different modes. You can
+launch as panel app, you can give it a size
+
+279
+00:25:52,149 --> 00:25:57,669
+and a width. By default, it's tabs so we'll
+just leave that out. But I mentioned permission.
+
+280
+00:25:57,669 --> 00:26:02,009
+So again, just like the extensions there's
+different permission bits that you can set.
+
+281
+00:26:02,009 --> 00:26:07,200
+My app is going to have Geolocation unlimited
+storage for FileWriter and also notifications.
+
+282
+00:26:07,200 --> 00:26:13,509
+So I can set those inside the manifest file
+so I can say this app will need these permissions.
+
+283
+00:26:13,509 --> 00:26:19,789
+And those permissions will apply to any URLs
+that I list in the URLs array under the app
+
+284
+00:26:19,789 --> 00:26:26,419
+object. So any URLs basically get the white-listing
+of these permissions. If you're not within
+
+285
+00:26:26,419 --> 00:26:33,419
+this list then you don't have unlimited storage
+notifications for Geolocation. So to show
+
+286
+00:26:36,320 --> 00:26:43,320
+you this in action, I will close this. I could
+keep it open, but I'll close it. Using the
+
+287
+00:26:45,570 --> 00:26:51,809
+Chrome extensions API, I will navigate to
+my app. So I'm just basically uploading or
+
+288
+00:26:51,809 --> 00:26:56,159
+loading up an unpackaged application. It's
+got all my files in there. You know, there's
+
+289
+00:26:56,159 --> 00:27:00,929
+a helloworld.html, there's a HTML file for
+the notification and there's the manifest
+
+290
+00:27:00,929 --> 00:27:07,759
+file. I'll click select and actually, it's
+already here so it didn't do anything. But
+
+291
+00:27:07,759 --> 00:27:14,759
+I'll enable that application. And so, the
+first thing you notice is my first app is
+
+292
+00:27:15,330 --> 00:27:20,419
+available now in my new tab page. So I can
+choose to launch this in different modes,
+
+293
+00:27:20,419 --> 00:27:27,419
+or I can just see what this looks like when
+I launch it. So, you notice a couple of things.
+
+294
+00:27:30,619 --> 00:27:34,649
+Just to prove that this does work, I will
+refresh this page. I just got rid of the Geolocation
+
+295
+00:27:34,649 --> 00:27:39,159
+permission. I said I don't want to access
+the Geolocation anymore, but since I'm a Web
+
+296
+00:27:39,159 --> 00:27:43,239
+app now, since I'm an install-hosted app,
+it's automatically got the Geolocation. I
+
+297
+00:27:43,239 --> 00:27:50,239
+can send notifications without a permission
+setting to pop-up. There it is. And you see
+
+298
+00:27:51,830 --> 00:27:54,820
+a new message here. You see log file created
+so the file system API is actually working
+
+299
+00:27:54,820 --> 00:27:59,509
+now. We can create files because we have that
+permission set. And obviously, at the bottom
+
+300
+00:27:59,509 --> 00:28:03,849
+there, you know, we're making the check to
+see if we're installed via the app store using
+
+301
+00:28:03,849 --> 00:28:08,809
+the Chrome Web Store and indeed, we are. So,
+a better user experience but very trivial.
+
+302
+00:28:08,809 --> 00:28:13,489
+I added three permissions to this web app
+to make it a better experience for all users.
+
+303
+00:28:13,489 --> 00:28:20,489
+It's just fantastic.
+So that was hosted apps. But there's another
+type of app called a packaged app. And packaged
+
+304
+00:28:27,789 --> 00:28:32,570
+apps are very similar to Chrome extensions.
+In fact, they basically are glorified Chrome
+
+305
+00:28:32,570 --> 00:28:37,039
+extensions. So you have a normal Web site
+but you add some extra metadata and you wrap
+
+306
+00:28:37,039 --> 00:28:43,479
+it up in a CRX file, which is basically a
+zip file. It supports auto-updating so, again,
+
+307
+00:28:43,479 --> 00:28:47,529
+when you upload a new version in the store,
+all your users are auto-updated. So, when
+
+308
+00:28:47,529 --> 00:28:51,989
+would you use this over hosted web application?
+Well, there's a couple of reasons. So if you
+
+309
+00:28:51,989 --> 00:28:56,859
+don't require a server for one. If you just
+want to package up a Flash game for instance,
+
+310
+00:28:56,859 --> 00:29:00,519
+a SWF file, you can absolutely do that. And
+you don't want to--or you don't have a server
+
+311
+00:29:00,519 --> 00:29:03,999
+component that you want to talk to or host
+that application anywhere. You can just choose
+
+312
+00:29:03,999 --> 00:29:07,849
+it, choose to upload it to the Web Store and
+boom, it's there, and then people can download
+
+313
+00:29:07,849 --> 00:29:11,929
+it from there. There's tighter integration
+with Chrome so we'll talk about some of the
+
+314
+00:29:11,929 --> 00:29:16,070
+APIs that are available to the packaged apps.
+And they have elevated permissions because
+
+315
+00:29:16,070 --> 00:29:22,460
+they're packaged. They're installed in Chrome
+whereas a Web app doesn't have that same liberty.
+
+316
+00:29:22,460 --> 00:29:27,619
+And lastly, if you don't care about supporting
+other browsers, I mean, that's fine. You know,
+
+317
+00:29:27,619 --> 00:29:30,469
+if you want to just start at Chrome, that's
+totally cool. It's just like an extension.
+
+318
+00:29:30,469 --> 00:29:36,339
+It will only be run in Chrome so you don't
+have to worry about sort of developing for
+
+319
+00:29:36,339 --> 00:29:40,229
+all these different browsers. But there's
+more things you can do with in a packaged
+
+320
+00:29:40,229 --> 00:29:45,089
+app. So you have full access to all the extensions
+APIs, except browser action and page action.
+
+321
+00:29:45,089 --> 00:29:52,089
+How many people went to the extensions talk
+by the way? A few people? Okay. So page action
+
+322
+00:29:52,769 --> 00:29:57,219
+and browser actions are the little icons that
+appear when you install a Chrome extensions
+
+323
+00:29:57,219 --> 00:30:02,589
+in the top right corner of the browser that
+do interaction. Again, you can do things like
+
+324
+00:30:02,589 --> 00:30:07,539
+content scripts and background pages. Content
+scripts inject the Javascript or CSS onto
+
+325
+00:30:07,539 --> 00:30:12,070
+a page based on a set of rules that you specify.
+Background pages are great for things like
+
+326
+00:30:12,070 --> 00:30:17,469
+polling. You can do cross-domain XHR request,
+which is pretty cool, in background pages.
+
+327
+00:30:17,469 --> 00:30:22,719
+Obviously, that's not something a normal web
+application can do because of the restrictions.
+
+328
+00:30:22,719 --> 00:30:27,269
+But there's really much, much more. So you
+can write a packaged, you know, Web app for
+
+329
+00:30:27,269 --> 00:30:30,769
+the Chrome Web Store that does things with
+context menus. So you can modify the right
+
+330
+00:30:30,769 --> 00:30:35,679
+click menu and add your options there. Tab
+and window manipulation, Omnibar, you can
+
+331
+00:30:35,679 --> 00:30:40,399
+tie into the Chrome's URL bar with your own
+API, it provides search results or do what
+
+332
+00:30:40,399 --> 00:30:45,129
+ever you want there. History, bookmarks and
+cookies, these are thing that, at least bookmarks
+
+333
+00:30:45,129 --> 00:30:52,129
+and history, that, you know, normal Web app
+can't do but a Chrome extension has a permission.
+
+334
+00:30:56,989 --> 00:31:03,169
+So that's sort of an overview of the Web Store.
+And I've mentioned, you know, you heard a
+
+335
+00:31:03,169 --> 00:31:07,269
+lot about--you heard a lot of preaching about
+HTML5 today. And a lot of people think it's
+
+336
+00:31:07,269 --> 00:31:13,820
+not ready, there's been some posts recently.
+I would say it is ready and it's definitely
+
+337
+00:31:13,820 --> 00:31:19,729
+ready to experiment with at the very least.
+Here's a picture of 2008, the browser support
+
+338
+00:31:19,729 --> 00:31:26,019
+in 2008, for various APIs. So you have Geolocation,
+forms, you know, Web Workers. It's very sparse.
+
+339
+00:31:26,019 --> 00:31:32,759
+So this is two years ago. One year ago, we're
+getting a lot better. So, you know, Chrome2
+
+340
+00:31:32,759 --> 00:31:37,179
+comes along. It's got most support here. Firefox
+is catching up, IE is still kind of lagging
+
+341
+00:31:37,179 --> 00:31:42,169
+behind. But by 2010, you just can see this
+graph really starting to fill out, right?
+
+342
+00:31:42,169 --> 00:31:47,749
+So most WebKit browsers have pretty much everything
+implemented. You know, Firefox4 is there.
+
+343
+00:31:47,749 --> 00:31:52,049
+I guess you did, wow, cool. So you edited
+IE9. So IE9 is doing a fantastic job with
+
+344
+00:31:52,049 --> 00:31:58,389
+a lot of these APIs, video, audio for example,
+SVG. So you can imagine in a year, you know,
+
+345
+00:31:58,389 --> 00:32:02,259
+where this is going to be. It's just absolutely
+ridiculous how fast the innovation is happening.
+
+346
+00:32:02,259 --> 00:32:09,259
+Time for an awesome demo. So you saw--you've
+seen the device orientation API a lot today.
+
+347
+00:32:19,719 --> 00:32:24,499
+Here is another example of, you know, using
+an interactive game. So I can speed this up
+
+348
+00:32:24,499 --> 00:32:29,429
+if I tilt it forward. Anyway, I have three
+lives so hopefully it would be fast because
+
+349
+00:32:29,429 --> 00:32:36,429
+this is the best I've ever done, promise.
+I'll try something tricky. [MAKES NOISE] But
+
+350
+00:32:41,429 --> 00:32:45,139
+now this is--now that this stuff is all native
+to the browser, right, you really have different
+
+351
+00:32:45,139 --> 00:32:52,139
+interactions with applications then ever before.
+I will just kill myself, no? Well, you get
+
+352
+00:32:56,099 --> 00:33:03,099
+the point. There we go. Seven twenty-seven,
+it's not too bad. So here is the current browser
+
+353
+00:33:07,849 --> 00:33:14,849
+share as of September 2010. And just soaked
+this in for a little bit. This is sort of
+
+354
+00:33:15,320 --> 00:33:19,739
+the state right now. You know, it's not September
+anymore so the numbers have change a little
+
+355
+00:33:19,739 --> 00:33:26,009
+bit. But in general, you get the idea. Modern
+browsers are taking up, you know, a good chunk
+
+356
+00:33:26,009 --> 00:33:30,849
+of that. But for the most part, people running
+IE6, 7 and 8. Which is fine but the problem
+
+357
+00:33:30,849 --> 00:33:35,599
+is you can't leverage these cool APIs and
+target those browsers, it's just impossible.
+
+358
+00:33:35,599 --> 00:33:40,839
+So what you do as a developer is you have
+to hack around things, right? This is the
+
+359
+00:33:40,839 --> 00:33:47,839
+Acid3 test rendered by Chrome. And here's
+what it looks like rendered by IE6, I believe.
+
+360
+00:33:47,879 --> 00:33:52,519
+So again, between thes two different versions,
+say this is the layout and color scheme of
+
+361
+00:33:52,519 --> 00:33:56,599
+your site, you know, you have all cool CSS
+tricks and then--but other users are seeing
+
+362
+00:33:56,599 --> 00:34:02,509
+this, that's not ideal, they get the score
+of 20 out of 100. So products like Google
+
+363
+00:34:02,509 --> 00:34:08,030
+Wave for instance, just as an example, did
+something, you know, they choose not to support
+
+364
+00:34:08,030 --> 00:34:12,980
+IE6 anymore because the development cost is
+way too much. You end up having to have JavaScript
+
+365
+00:34:12,980 --> 00:34:19,250
+hacks and, you know, spending way more time
+than you need to working around these issues.
+
+366
+00:34:19,250 --> 00:34:25,339
+So Wave chose to do is have a prompt. So if
+you're in one of these--if you're in Internet
+
+367
+00:34:25,339 --> 00:34:29,299
+Explorer let's just not support you at all.
+We have too many, you know, awesome capabilities
+
+368
+00:34:29,299 --> 00:34:35,299
+that you can access. So go ahead and install
+Google Chrome Frame and Google Chrome Frame
+
+369
+00:34:35,299 --> 00:34:40,169
+is a plug-in. If--we probably talked about
+this way too much today, but that's because
+
+370
+00:34:40,169 --> 00:34:44,190
+a lot of people don't know about it, unfortunately.
+Google Chrome Frame is a plug-in that users
+
+371
+00:34:44,190 --> 00:34:50,369
+install for IE. And basically what it does
+is if you imagine the browser of IE6, for
+
+372
+00:34:50,369 --> 00:34:56,980
+example, I think it's not IE6 but this is
+the image I found, the user installs the plug-in
+
+373
+00:34:56,980 --> 00:35:01,980
+and the entire rendering portion. So anything
+in the tab, the actual Web page itself, is
+
+374
+00:35:01,980 --> 00:35:07,119
+all rendered with a Chrome rendering engine.
+So you get things like CSS3, you get things
+
+375
+00:35:07,119 --> 00:35:11,220
+like Geo location. All the stuff that's not
+in that older browser, you get for free. You
+
+376
+00:35:11,220 --> 00:35:16,269
+also get speed and performance. You get the
+security and sandbox of Google Chrome, which
+
+377
+00:35:16,269 --> 00:35:21,250
+is one of the best in my opinions. And it's
+auto-updated along with Chrome, so they get
+
+378
+00:35:21,250 --> 00:35:25,529
+the latest and greatest when the plug-in,
+the new plug in is pushed. And that includes
+
+379
+00:35:25,529 --> 00:35:30,019
+things like the--integrated Flash in the PDF
+or inside of Chrome. So also open source so
+
+380
+00:35:30,019 --> 00:35:37,019
+you can go check out the code if you want.
+As a developer, it really literally couldn't
+
+381
+00:35:37,849 --> 00:35:42,210
+be any easier to put this thing with inside
+of your app, with inside of your site. So
+
+382
+00:35:42,210 --> 00:35:46,769
+if you are writing a hosted app and you want
+other users, not just Chrome users, you know,
+
+383
+00:35:46,769 --> 00:35:53,019
+IE6 users for example, to access these APIs
+in your Web app to its full potential, all
+
+384
+00:35:53,019 --> 00:35:59,599
+you have to do is include a meta tag on your
+HTML page using the chrome=1 for the content.
+
+385
+00:35:59,599 --> 00:36:04,049
+Or if you can't, you know, add that to every
+page you can send a header with the same value
+
+386
+00:36:04,049 --> 00:36:08,970
+there. Super simple. The only problem with
+this is that the user has to have the plug-in
+
+387
+00:36:08,970 --> 00:36:15,849
+installed. So if they don't then there's no
+benefit there. But there's zero cost you as
+
+388
+00:36:15,849 --> 00:36:21,890
+a developer. So that was sort of a high level
+overview of the Chrome Web Store. I just want
+
+389
+00:36:21,890 --> 00:36:26,510
+to mention that, you know, we talked--I showed
+you an application, sort of how do you package
+
+390
+00:36:26,510 --> 00:36:31,019
+it for a hosted app, talked a little bit about
+package apps. But the building an app for
+
+391
+00:36:31,019 --> 00:36:35,380
+the store is your choice, right? There's no
+limitation on technology whatsoever. You can
+
+392
+00:36:35,380 --> 00:36:38,829
+choose one from the Web stack, you know, the
+open Web stack platform. But you can write
+
+393
+00:36:38,829 --> 00:36:43,500
+a Flash game. You can use a Silverlight, the
+plug in. You can do things like native client,
+
+394
+00:36:43,500 --> 00:36:48,119
+which is running C++ in the browser. That's
+a Chrome-specific thing but again, it's your
+
+395
+00:36:48,119 --> 00:36:53,069
+choice of technology. So anything you want,
+a LAMP stack, you know, choose your own adventure
+
+396
+00:36:53,069 --> 00:36:59,980
+if you will. So I think the takeaways here
+are that the Web is innovating, right? We're
+
+397
+00:36:59,980 --> 00:37:05,680
+seeing things like you saw it all today, HTML,
+JS and hardware acceleration. There's literally
+
+398
+00:37:05,680 --> 00:37:09,510
+a parity with the desktop now. And I guarantee
+you within six months to a year, you're going
+
+399
+00:37:09,510 --> 00:37:14,319
+to have things like device integration. So
+you can access the microphone, and USB drives,
+
+400
+00:37:14,319 --> 00:37:21,319
+and all that great stuff, camera, for instance,
+using the webcam. So don't wait until 2022
+
+401
+00:37:23,079 --> 00:37:28,089
+that--that's I think what the W3C said when
+the HTML5 will finally be ready. I assure
+
+402
+00:37:28,089 --> 00:37:31,769
+you it's out there and living well. And I
+think with the pace of innovation that's happening
+
+403
+00:37:31,769 --> 00:37:35,920
+right now were really seeing that in action.
+Features are first class citizens. You know,
+
+404
+00:37:35,920 --> 00:37:40,099
+things like video and audio we take for granted
+with Flash and in other plug-ins. But now
+
+405
+00:37:40,099 --> 00:37:44,309
+we've the ability to do these and manipulate
+them using JavaScript inside of the--in the
+
+406
+00:37:44,309 --> 00:37:48,240
+native platform. The Chrome Web Store is a
+great way to monetize your applications, your
+
+407
+00:37:48,240 --> 00:37:53,619
+existing application. Or create entirely a
+new one, right? And if users are visiting
+
+408
+00:37:53,619 --> 00:37:56,930
+the Web Store in Chrome and they choose to
+install the app then they have a little bit
+
+409
+00:37:56,930 --> 00:38:00,990
+better experiences if you, you know, set up
+the manifest file correctly. And you can finally
+
+410
+00:38:00,990 --> 00:38:05,849
+monetize an application on the Web, which
+is pretty exciting. So your HTML5 investment
+
+411
+00:38:05,849 --> 00:38:11,880
+will be rewarded. A couple of essential links.
+You know, here's the documentation links for
+
+412
+00:38:11,880 --> 00:38:18,180
+Web Store, for Web apps in relation to Web
+Store extensions. But do stay in touch. You
+
+413
+00:38:18,180 --> 00:38:24,260
+can follow us in Twitter. Our developer operations
+team is @ChromiumDev. We tweet a bunch of
+
+414
+00:38:24,260 --> 00:38:28,289
+great stuff there. You can ask questions in
+both of these forms, one is for--dedicated
+
+415
+00:38:28,289 --> 00:38:34,650
+to HTML5 questions and one is dedicated for
+Chromium apps, Chrome apps. But also file
+
+416
+00:38:34,650 --> 00:38:37,960
+bugs. If you find issues, that's the only
+way we know about this stuff. And you, as
+
+417
+00:38:37,960 --> 00:38:44,440
+developers, you know, really, we know we listen
+to you guys. Lastly, here's the feedback link,
+
+418
+00:38:44,440 --> 00:38:50,130
+mgddbr, if you'd like to give me feedback.
+So I'll take Q&A now and I thank you for your
+
+419
+00:38:50,130 --> 00:38:50,380
+time.
+

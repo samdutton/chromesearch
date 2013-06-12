@@ -1,0 +1,5794 @@
+1
+00:00:00,000 --> 00:00:07,410
+
+2
+00:00:07,410 --> 00:00:08,480
+ADDY OSMANI: Hey guys.
+
+3
+00:00:08,480 --> 00:00:10,700
+And welcome to "The Breakpoint,"
+a brand new show
+
+4
+00:00:10,700 --> 00:00:13,030
+on Google Developers Live,
+where we're going to be
+
+5
+00:00:13,030 --> 00:00:17,040
+focusing on DevTools and
+tooling in general.
+
+6
+00:00:17,040 --> 00:00:21,010
+My name is Addy Osmani and
+joining me is Paul Irish.
+
+7
+00:00:21,010 --> 00:00:23,550
+PAUL LEWIS: That's not
+technically true.
+
+8
+00:00:23,550 --> 00:00:24,250
+ADDY OSMANI: Who are you?
+
+9
+00:00:24,250 --> 00:00:25,240
+PAUL LEWIS: I'm Paul Lewis.
+
+10
+00:00:25,240 --> 00:00:26,390
+ADDY OSMANI: You're
+not Paul Irish.
+
+11
+00:00:26,390 --> 00:00:26,860
+PAUL LEWIS: No.
+
+12
+00:00:26,860 --> 00:00:27,780
+I'm not Paul Irish.
+
+13
+00:00:27,780 --> 00:00:30,320
+I made a mask to try and
+cover up for the fact.
+
+14
+00:00:30,320 --> 00:00:33,070
+I don't think it worked
+out if I'm honest.
+
+15
+00:00:33,070 --> 00:00:34,270
+Yeah, I'm Paul Lewis, Developer
+
+16
+00:00:34,270 --> 00:00:36,100
+Programs engineer at Google.
+
+17
+00:00:36,100 --> 00:00:37,940
+The reason I'm standing
+in for Paul Irish
+
+18
+00:00:37,940 --> 00:00:39,050
+today is he's unwell.
+
+19
+00:00:39,050 --> 00:00:41,490
+So get better soon, Paul.
+
+20
+00:00:41,490 --> 00:00:41,880
+ADDY OSMANI: Get well soon!
+
+21
+00:00:41,880 --> 00:00:42,285
+PAUL LEWIS: Yeah.
+
+22
+00:00:42,285 --> 00:00:42,690
+ADDY OSMANI: Yeah.
+
+23
+00:00:42,690 --> 00:00:43,930
+PAUL LEWIS: So we're
+here to talk about
+
+24
+00:00:43,930 --> 00:00:45,400
+DevTools and Yeoman.
+
+25
+00:00:45,400 --> 00:00:46,490
+ADDY OSMANI: Yeah, we're
+here to talk about
+
+26
+00:00:46,490 --> 00:00:49,400
+DevTools and tooling.
+
+27
+00:00:49,400 --> 00:00:50,760
+Tooling's important.
+
+28
+00:00:50,760 --> 00:00:52,592
+There have been a lot of
+developers recently that have
+
+29
+00:00:52,592 --> 00:00:55,960
+been starting to take a long,
+hard look at their workflow
+
+30
+00:00:55,960 --> 00:00:57,220
+and the different tools
+that they use on
+
+31
+00:00:57,220 --> 00:00:58,530
+a day-to-day basis.
+
+32
+00:00:58,530 --> 00:01:01,250
+And hopefully in the show over
+the next couple of episodes,
+
+33
+00:01:01,250 --> 00:01:02,910
+we're going to give you some
+tips and tricks on how you can
+
+34
+00:01:02,910 --> 00:01:05,970
+improve your workflow and
+the tools that you use.
+
+35
+00:01:05,970 --> 00:01:07,985
+So, Paul?
+
+36
+00:01:07,985 --> 00:01:08,400
+PAUL LEWIS: Yup.
+
+37
+00:01:08,400 --> 00:01:09,490
+ADDY OSMANI: What do you
+think about tooling?
+
+38
+00:01:09,490 --> 00:01:11,170
+PAUL LEWIS: So well, we
+were talking about
+
+39
+00:01:11,170 --> 00:01:11,780
+this earlier today.
+
+40
+00:01:11,780 --> 00:01:15,800
+And we were talking about the
+kind of things that you do
+
+41
+00:01:15,800 --> 00:01:18,040
+almost on a day-to-day basis,
+like when you start an
+
+42
+00:01:18,040 --> 00:01:19,300
+application for the
+first time.
+
+43
+00:01:19,300 --> 00:01:22,830
+You go off and you get the
+dependencies that you need,
+
+44
+00:01:22,830 --> 00:01:23,570
+the libraries.
+
+45
+00:01:23,570 --> 00:01:26,260
+Maybe you even look around and
+say, well, what do I need?
+
+46
+00:01:26,260 --> 00:01:27,640
+You'll come to this conclusion,
+I'm going to do,
+
+47
+00:01:27,640 --> 00:01:28,700
+say, an MVC app.
+
+48
+00:01:28,700 --> 00:01:29,210
+ADDY OSMANI: Yeah.
+
+49
+00:01:29,210 --> 00:01:32,310
+PAUL LEWIS: OK, so I'm going to
+maybe get Backbone or Ember
+
+50
+00:01:32,310 --> 00:01:33,180
+or one of these things.
+
+51
+00:01:33,180 --> 00:01:33,520
+ADDY OSMANI: Yeah, or Angular.
+
+52
+00:01:33,520 --> 00:01:34,340
+Something like that, yeah.
+
+53
+00:01:34,340 --> 00:01:35,030
+PAUL LEWIS: Yup,
+Angular, yeah.
+
+54
+00:01:35,030 --> 00:01:37,170
+So then I go off and
+I download that.
+
+55
+00:01:37,170 --> 00:01:39,300
+Find maybe the repo,
+go and get that.
+
+56
+00:01:39,300 --> 00:01:41,640
+Start coding.
+
+57
+00:01:41,640 --> 00:01:43,570
+There's a bit of fun in the
+middle of there where I'm
+
+58
+00:01:43,570 --> 00:01:47,120
+constantly back and forth,
+iterating in my editor and
+
+59
+00:01:47,120 --> 00:01:50,110
+also checking in the browser
+back and forth.
+
+60
+00:01:50,110 --> 00:01:54,110
+And then I build it because I
+want to compress my assets--
+
+61
+00:01:54,110 --> 00:01:54,870
+ADDY OSMANI: Yeah.
+
+62
+00:01:54,870 --> 00:01:56,680
+PAUL LEWIS: --and you get all
+the scripts together.
+
+63
+00:01:56,680 --> 00:01:57,850
+ADDY OSMANI: That's sounds
+awfully manual.
+
+64
+00:01:57,850 --> 00:02:00,040
+There's like a whole lot of
+manual grunt work there.
+
+65
+00:02:00,040 --> 00:02:01,442
+PAUL LEWIS: If I'm honest,
+if I'm doing grunt
+
+66
+00:02:01,442 --> 00:02:02,650
+work, I like it.
+
+67
+00:02:02,650 --> 00:02:06,720
+If I'm honest, that is pretty
+much how I used build apps.
+
+68
+00:02:06,720 --> 00:02:08,720
+And I understand that Yeoman
+is going to help me out.
+
+69
+00:02:08,720 --> 00:02:09,930
+ADDY OSMANI: Well, hopefully,
+it will.
+
+70
+00:02:09,930 --> 00:02:11,980
+We found that a lot of
+developers are pretty much
+
+71
+00:02:11,980 --> 00:02:13,550
+doing exactly what Paul
+Lewis is doing.
+
+72
+00:02:13,550 --> 00:02:15,520
+It's like they're manually
+going and getting their
+
+73
+00:02:15,520 --> 00:02:16,310
+dependencies.
+
+74
+00:02:16,310 --> 00:02:18,750
+They're manually writing out
+an awful lot of boilerplate
+
+75
+00:02:18,750 --> 00:02:21,360
+code whenever they want to
+create a new application.
+
+76
+00:02:21,360 --> 00:02:24,780
+And we think that instead of
+being one of those developers
+
+77
+00:02:24,780 --> 00:02:28,160
+that take like 45 minutes to get
+set up whenever you want
+
+78
+00:02:28,160 --> 00:02:29,630
+to create a new project,
+you should just
+
+79
+00:02:29,630 --> 00:02:30,585
+like take five minutes.
+
+80
+00:02:30,585 --> 00:02:32,830
+If you've got your workflow down
+properly, it should just
+
+81
+00:02:32,830 --> 00:02:34,370
+take you 5 or 10 minutes.
+
+82
+00:02:34,370 --> 00:02:36,900
+And then you can have a working
+prototype going just
+
+83
+00:02:36,900 --> 00:02:39,040
+soon after if you've got
+your workflow down.
+
+84
+00:02:39,040 --> 00:02:40,550
+So we're going to give you some
+tips on how to do that
+
+85
+00:02:40,550 --> 00:02:41,950
+today with Yeoman.
+
+86
+00:02:41,950 --> 00:02:44,940
+But before we do that, we're
+going to take a look at some
+
+87
+00:02:44,940 --> 00:02:48,390
+of the new stuff that's landed
+in the Chrome DevTools, or
+
+88
+00:02:48,390 --> 00:02:51,490
+Developer Tools, over the
+past couple months.
+
+89
+00:02:51,490 --> 00:02:54,910
+So let me switch to my screen.
+
+90
+00:02:54,910 --> 00:02:57,140
+OK, so this is Chrome Stable
+at the moment.
+
+91
+00:02:57,140 --> 00:03:00,340
+And I guess one of the big
+things that we added in the
+
+92
+00:03:00,340 --> 00:03:03,600
+past couple months was better
+support for mobile debugging
+
+93
+00:03:03,600 --> 00:03:05,760
+and debugging your mobile
+web apps just
+
+94
+00:03:05,760 --> 00:03:07,330
+as easily as possible.
+
+95
+00:03:07,330 --> 00:03:09,760
+So I'm currently in Settings
+at the moment.
+
+96
+00:03:09,760 --> 00:03:11,440
+Let me exit that out.
+
+97
+00:03:11,440 --> 00:03:13,820
+Most people who are familiar
+with the Developer Tools
+
+98
+00:03:13,820 --> 00:03:17,310
+probably know that you can go
+into the cog at the very right
+
+99
+00:03:17,310 --> 00:03:19,280
+corner of the screen,
+and that will open
+
+100
+00:03:19,280 --> 00:03:21,110
+up a bunch of settings.
+
+101
+00:03:21,110 --> 00:03:23,830
+You can then go to the Overrides
+tab, and in there,
+
+102
+00:03:23,830 --> 00:03:24,850
+you'll see a few options.
+
+103
+00:03:24,850 --> 00:03:27,880
+You'll see User Agent,
+Device Metrics, and
+
+104
+00:03:27,880 --> 00:03:29,410
+Emulate Touch Events.
+
+105
+00:03:29,410 --> 00:03:32,210
+Now, just to give you a quick
+visual demo of what this does,
+
+106
+00:03:32,210 --> 00:03:35,420
+if I go and I select User Agent,
+so I pick a specific
+
+107
+00:03:35,420 --> 00:03:38,640
+browser or perhaps a browser
+pair with an operating system
+
+108
+00:03:38,640 --> 00:03:41,550
+I go and I configure some device
+metrics, I can actually
+
+109
+00:03:41,550 --> 00:03:43,820
+go and preview what this
+site looks like.
+
+110
+00:03:43,820 --> 00:03:47,210
+So I'm previewing what
+google.com looks like on an
+
+111
+00:03:47,210 --> 00:03:49,280
+iPhone using iOS 5.
+
+112
+00:03:49,280 --> 00:03:52,380
+And I've set my device metrics
+to have a set screen
+
+113
+00:03:52,380 --> 00:03:54,710
+resolution of 320 by 480.
+
+114
+00:03:54,710 --> 00:03:58,130
+I can also change the font scale
+factor if I want to see
+
+115
+00:03:58,130 --> 00:04:00,660
+how fonts may render differently
+on mobile devices.
+
+116
+00:04:00,660 --> 00:04:02,640
+And I can also emulate
+touch events.
+
+117
+00:04:02,640 --> 00:04:04,910
+I'm not going to show you
+how that works just yet.
+
+118
+00:04:04,910 --> 00:04:05,760
+But it's--
+
+119
+00:04:05,760 --> 00:04:06,565
+what do you think, Paul?
+
+120
+00:04:06,565 --> 00:04:06,730
+Is it useful?
+
+121
+00:04:06,730 --> 00:04:07,730
+PAUL LEWIS: That's amazing,
+actually.
+
+122
+00:04:07,730 --> 00:04:10,800
+So you can quickly choose--
+
+123
+00:04:10,800 --> 00:04:12,590
+like you say, I want
+to see what this
+
+124
+00:04:12,590 --> 00:04:13,720
+looks like for an iPhone.
+
+125
+00:04:13,720 --> 00:04:15,080
+I want to see what this looks
+like-- what else do we
+
+126
+00:04:15,080 --> 00:04:16,110
+have in that list?
+
+127
+00:04:16,110 --> 00:04:17,029
+ADDY OSMANI: Oh, we've
+got a ton of stuff.
+
+128
+00:04:17,029 --> 00:04:17,369
+PAUL LEWIS: No.
+
+129
+00:04:17,369 --> 00:04:20,820
+ADDY OSMANI: We've got iPads,
+Android devices, BlackBerrys,
+
+130
+00:04:20,820 --> 00:04:22,790
+and then the browsers that
+you're used to on desktop.
+
+131
+00:04:22,790 --> 00:04:24,790
+And we've got other options as
+well in case you want to
+
+132
+00:04:24,790 --> 00:04:25,880
+customize it.
+
+133
+00:04:25,880 --> 00:04:26,350
+PAUL LEWIS: I like it.
+
+134
+00:04:26,350 --> 00:04:28,300
+ADDY OSMANI: We've got a ton
+of options in there.
+
+135
+00:04:28,300 --> 00:04:29,550
+But this is useful.
+
+136
+00:04:29,550 --> 00:04:31,650
+
+137
+00:04:31,650 --> 00:04:33,420
+I was about to show people
+Chrome Canary and some of the
+
+138
+00:04:33,420 --> 00:04:33,880
+new stuff in there.
+
+139
+00:04:33,880 --> 00:04:35,290
+Do you use Canary for your--
+
+140
+00:04:35,290 --> 00:04:35,570
+PAUL LEWIS: Yeah.
+
+141
+00:04:35,570 --> 00:04:40,570
+So I think this is what we
+say regularly anyway.
+
+142
+00:04:40,570 --> 00:04:42,720
+Because you can have Canary
+alongside Chrome Stable.
+
+143
+00:04:42,720 --> 00:04:44,580
+So it's kind of good to
+have Canary open.
+
+144
+00:04:44,580 --> 00:04:48,490
+You can see what's kind of
+coming down the line and just
+
+145
+00:04:48,490 --> 00:04:50,430
+check that everything still
+play nicely, get
+
+146
+00:04:50,430 --> 00:04:51,300
+access to new features.
+
+147
+00:04:51,300 --> 00:04:51,740
+ADDY OSMANI: Exactly.
+
+148
+00:04:51,740 --> 00:04:52,740
+PAUL LEWIS: Which is I'm pretty
+sure what you're going
+
+149
+00:04:52,740 --> 00:04:53,360
+to do here.
+
+150
+00:04:53,360 --> 00:04:54,170
+ADDY OSMANI: Exactly.
+
+151
+00:04:54,170 --> 00:04:55,520
+PAUL LEWIS: And have Stable
+alongside it so you can
+
+152
+00:04:55,520 --> 00:04:58,680
+actually see what all your users
+are seeing when they're
+
+153
+00:04:58,680 --> 00:04:59,005
+building your app.
+
+154
+00:04:59,005 --> 00:05:00,540
+ADDY OSMANI: Yeah, so most of
+the time, I think people will
+
+155
+00:05:00,540 --> 00:05:02,790
+be using Chrome Stable when
+they're testing out, like you
+
+156
+00:05:02,790 --> 00:05:04,530
+said, what their
+users have got.
+
+157
+00:05:04,530 --> 00:05:07,350
+But if you want to be using the
+latest, hottest features
+
+158
+00:05:07,350 --> 00:05:09,780
+in the Chrome Developer Tools
+there's no reason why you
+
+159
+00:05:09,780 --> 00:05:13,310
+can't be using Canary for
+your debugging instead.
+
+160
+00:05:13,310 --> 00:05:16,140
+So I'm going to show
+you some new stuff.
+
+161
+00:05:16,140 --> 00:05:20,340
+Before we go and try out some
+features, if you take a look
+
+162
+00:05:20,340 --> 00:05:23,090
+at Chrome Flags--
+
+163
+00:05:23,090 --> 00:05:24,510
+PAUL LEWIS: Which you should
+do anyway, right?
+
+164
+00:05:24,510 --> 00:05:24,690
+ADDY OSMANI: Yeah.
+
+165
+00:05:24,690 --> 00:05:25,840
+PAUL LEWIS: Because there's
+tons of really cool
+
+166
+00:05:25,840 --> 00:05:26,190
+things you can do.
+
+167
+00:05:26,190 --> 00:05:27,360
+ADDY OSMANI: There is so
+much stuff in here.
+
+168
+00:05:27,360 --> 00:05:29,150
+PAUL LEWIS: The one I've been
+playing with recently is the
+
+169
+00:05:29,150 --> 00:05:33,890
+ability to pipe the microphone
+through to the Web Audio API,
+
+170
+00:05:33,890 --> 00:05:34,840
+which is amazing.
+
+171
+00:05:34,840 --> 00:05:35,760
+ADDY OSMANI: Yeah, that
+stuff just landed
+
+172
+00:05:35,760 --> 00:05:36,690
+recently, too, right?
+
+173
+00:05:36,690 --> 00:05:37,510
+PAUL LEWIS: Just the last
+couple of weeks.
+
+174
+00:05:37,510 --> 00:05:40,960
+So that's a really good way to
+see, as we said, what's coming
+
+175
+00:05:40,960 --> 00:05:41,360
+down the line.
+
+176
+00:05:41,360 --> 00:05:42,920
+So definitely like to
+do some of that.
+
+177
+00:05:42,920 --> 00:05:43,800
+ADDY OSMANI: Yeah.
+
+178
+00:05:43,800 --> 00:05:45,840
+So because we're looking at
+the Developer Tools at the
+
+179
+00:05:45,840 --> 00:05:48,460
+moment, scroll down to the
+option that says Enable
+
+180
+00:05:48,460 --> 00:05:50,050
+Developer Tools Experiments.
+
+181
+00:05:50,050 --> 00:05:52,130
+And this a new option that will
+let you take a look at
+
+182
+00:05:52,130 --> 00:05:53,210
+some of the features
+that we've been
+
+183
+00:05:53,210 --> 00:05:54,890
+working on very recently.
+
+184
+00:05:54,890 --> 00:05:57,680
+They're not all finished
+and polished off.
+
+185
+00:05:57,680 --> 00:06:00,040
+But you can try them right away
+and see what's going on
+
+186
+00:06:00,040 --> 00:06:02,060
+and if they're going to be
+useful to your workflow.
+
+187
+00:06:02,060 --> 00:06:04,260
+So I've gone and I've
+enabled them.
+
+188
+00:06:04,260 --> 00:06:07,420
+I need to actually go and
+relaunch my browser now, just
+
+189
+00:06:07,420 --> 00:06:09,640
+so those changes will
+take effect.
+
+190
+00:06:09,640 --> 00:06:10,840
+That will load up
+very quickly.
+
+191
+00:06:10,840 --> 00:06:13,840
+I've got all my tabs back,
+which is awesome.
+
+192
+00:06:13,840 --> 00:06:17,720
+And now, I'm just going to
+go back to tab I was on.
+
+193
+00:06:17,720 --> 00:06:19,050
+And let's go through some
+of the features.
+
+194
+00:06:19,050 --> 00:06:21,320
+So I'm clicking on the
+cog once again.
+
+195
+00:06:21,320 --> 00:06:23,020
+And now you'll notice
+that we have a new
+
+196
+00:06:23,020 --> 00:06:24,910
+Experiments tab, right?
+
+197
+00:06:24,910 --> 00:06:26,750
+So let's go to Experiments.
+
+198
+00:06:26,750 --> 00:06:28,190
+I've going to bump up the font
+size a little bit so people
+
+199
+00:06:28,190 --> 00:06:30,000
+can see these.
+
+200
+00:06:30,000 --> 00:06:31,740
+Now, you see a warning
+at the very top.
+
+201
+00:06:31,740 --> 00:06:34,680
+Basically, these experiments
+are subject to change.
+
+202
+00:06:34,680 --> 00:06:36,960
+They're not finalized
+or stable just yet.
+
+203
+00:06:36,960 --> 00:06:38,590
+But you can try them out.
+
+204
+00:06:38,590 --> 00:06:40,355
+So some of things on this list--
+have you been using any
+
+205
+00:06:40,355 --> 00:06:40,500
+of this stuff?
+
+206
+00:06:40,500 --> 00:06:40,890
+PAUL LEWIS: Yes.
+
+207
+00:06:40,890 --> 00:06:43,425
+I've been using the file
+system inspection one.
+
+208
+00:06:43,425 --> 00:06:43,900
+ADDY OSMANI: What
+does that do?
+
+209
+00:06:43,900 --> 00:06:46,160
+PAUL LEWIS: So it gives you--
+alongside all the other
+
+210
+00:06:46,160 --> 00:06:50,310
+resources that you see, so any
+the Index DB tables all those
+
+211
+00:06:50,310 --> 00:06:52,170
+kind things, you'll see a new
+one appear at the bottom,
+
+212
+00:06:52,170 --> 00:06:52,990
+which is the File System.
+
+213
+00:06:52,990 --> 00:06:56,470
+So anything you use, anything
+you store using the Chrome
+
+214
+00:06:56,470 --> 00:06:59,470
+File System is available
+there.
+
+215
+00:06:59,470 --> 00:07:01,410
+So it's really convenient if
+you just wanted to see what
+
+216
+00:07:01,410 --> 00:07:03,610
+Chrome actually stored under the
+hood when you use the file
+
+217
+00:07:03,610 --> 00:07:04,480
+system API.
+
+218
+00:07:04,480 --> 00:07:05,990
+ADDY OSMANI: That is so cool.
+
+219
+00:07:05,990 --> 00:07:07,250
+So there's a bunch
+of stuff in here.
+
+220
+00:07:07,250 --> 00:07:08,520
+There's Snippet support.
+
+221
+00:07:08,520 --> 00:07:10,270
+There's CSS Regions support.
+
+222
+00:07:10,270 --> 00:07:13,030
+So have you taken a look
+at CSS Regions before?
+
+223
+00:07:13,030 --> 00:07:13,610
+PAUL LEWIS: I have.
+
+224
+00:07:13,610 --> 00:07:14,060
+ADDY OSMANI: You have?
+
+225
+00:07:14,060 --> 00:07:14,946
+PAUL LEWIS: I have.
+
+226
+00:07:14,946 --> 00:07:15,900
+You going to show us?
+
+227
+00:07:15,900 --> 00:07:17,900
+ADDY OSMANI: I'm not going to
+show a demo of this just yet.
+
+228
+00:07:17,900 --> 00:07:20,770
+I want to show people Snippets
+and some other things.
+
+229
+00:07:20,770 --> 00:07:23,250
+But basically with CSS
+Regions, we have some
+
+230
+00:07:23,250 --> 00:07:26,850
+experimental support of how you
+can go and inspect name
+
+231
+00:07:26,850 --> 00:07:29,850
+flows on the page and take a
+look at sort of any other
+
+232
+00:07:29,850 --> 00:07:32,750
+highlighted regions that you
+want to see in your document
+
+233
+00:07:32,750 --> 00:07:34,530
+at the moment, which is cool.
+
+234
+00:07:34,530 --> 00:07:35,980
+We've got a bunch
+of other stuff.
+
+235
+00:07:35,980 --> 00:07:38,760
+PAUL LEWIS: I like this Override
+Device Geolocation.
+
+236
+00:07:38,760 --> 00:07:39,740
+That's really handy.
+
+237
+00:07:39,740 --> 00:07:41,520
+Because again if you
+find yourself--
+
+238
+00:07:41,520 --> 00:07:42,790
+you're building the site
+with geolocation.
+
+239
+00:07:42,790 --> 00:07:44,410
+You're like, yeah, but
+how does this work
+
+240
+00:07:44,410 --> 00:07:46,710
+in the middle of--
+
+241
+00:07:46,710 --> 00:07:47,700
+I was going to say in the
+middle of London.
+
+242
+00:07:47,700 --> 00:07:48,310
+I'm in the middle of London.
+
+243
+00:07:48,310 --> 00:07:49,320
+Well done, Paul.
+
+244
+00:07:49,320 --> 00:07:50,530
+The middle of the US.
+
+245
+00:07:50,530 --> 00:07:51,370
+I'm not there.
+
+246
+00:07:51,370 --> 00:07:52,170
+I'm in London.
+
+247
+00:07:52,170 --> 00:07:54,430
+So that would be brilliant
+for that.
+
+248
+00:07:54,430 --> 00:07:55,800
+ADDY OSMANI: This sounds like
+the type of feature that would
+
+249
+00:07:55,800 --> 00:07:57,110
+let me change your location--
+
+250
+00:07:57,110 --> 00:07:57,450
+PAUL LEWIS: Yes.
+
+251
+00:07:57,450 --> 00:07:58,020
+ADDY OSMANI: --if I wanted to.
+
+252
+00:07:58,020 --> 00:07:59,210
+This sounds exciting.
+
+253
+00:07:59,210 --> 00:08:01,180
+PAUL LEWIS: That's mean.
+
+254
+00:08:01,180 --> 00:08:02,600
+ADDY OSMANI: You were expecting
+anything else?
+
+255
+00:08:02,600 --> 00:08:03,310
+PAUL LEWIS: No, I wasn't.
+
+256
+00:08:03,310 --> 00:08:03,880
+ADDY OSMANI: OK, right.
+
+257
+00:08:03,880 --> 00:08:06,280
+All right so Override
+Device Geolocation.
+
+258
+00:08:06,280 --> 00:08:07,110
+What does that do?
+
+259
+00:08:07,110 --> 00:08:08,140
+So if we go back--
+
+260
+00:08:08,140 --> 00:08:09,160
+let's enable it first of all.
+
+261
+00:08:09,160 --> 00:08:12,120
+So Override Device
+Geolocation.
+
+262
+00:08:12,120 --> 00:08:14,086
+Let's enable a few of these so
+I can actually show them to
+
+263
+00:08:14,086 --> 00:08:16,050
+you, right?
+
+264
+00:08:16,050 --> 00:08:17,810
+PAUL LEWIS: Presumably we need
+a restart there, right?
+
+265
+00:08:17,810 --> 00:08:21,390
+ADDY OSMANI: Yes, we need
+to reopen the DevTools.
+
+266
+00:08:21,390 --> 00:08:23,800
+Whoop.
+
+267
+00:08:23,800 --> 00:08:26,190
+And now you'll see that there's
+a bunch of other
+
+268
+00:08:26,190 --> 00:08:28,570
+overrides that have introduced
+since the Overrides tab.
+
+269
+00:08:28,570 --> 00:08:31,820
+Now with Override Geolocation,
+if I were to select that I can
+
+270
+00:08:31,820 --> 00:08:35,770
+then go and type in custom
+long/lat details, which I can
+
+271
+00:08:35,770 --> 00:08:37,590
+use when I'm debugging
+my applications.
+
+272
+00:08:37,590 --> 00:08:40,559
+So I don't have to go and worry
+about hard coding values
+
+273
+00:08:40,559 --> 00:08:41,780
+or anything like that
+into my app.
+
+274
+00:08:41,780 --> 00:08:45,130
+I can just do it while I'm
+debugging and have my app sort
+
+275
+00:08:45,130 --> 00:08:47,860
+of react to that, which
+is pretty cool.
+
+276
+00:08:47,860 --> 00:08:50,790
+Another thing that we've got
+is the ability to override
+
+277
+00:08:50,790 --> 00:08:52,610
+device orientation.
+
+278
+00:08:52,610 --> 00:08:54,490
+So if you wanted to sort of
+see what would happen if
+
+279
+00:08:54,490 --> 00:08:56,840
+someone turned around the
+devices they're using--
+
+280
+00:08:56,840 --> 00:08:58,470
+PAUL LEWIS: It's almost like you
+wouldn't want to take your
+
+281
+00:08:58,470 --> 00:08:59,850
+laptop and go, whee, with it.
+
+282
+00:08:59,850 --> 00:09:00,740
+ADDY OSMANI: Exactly.
+
+283
+00:09:00,740 --> 00:09:02,720
+And there have been people that
+have been doing that.
+
+284
+00:09:02,720 --> 00:09:03,100
+PAUL LEWIS: Really?
+
+285
+00:09:03,100 --> 00:09:03,620
+ADDY OSMANI: Yes.
+
+286
+00:09:03,620 --> 00:09:05,530
+I've seen people in some
+offices doing that.
+
+287
+00:09:05,530 --> 00:09:06,060
+PAUL LEWIS: Well,
+that's awkward.
+
+288
+00:09:06,060 --> 00:09:07,240
+ADDY OSMANI: It's crazy.
+
+289
+00:09:07,240 --> 00:09:08,425
+PAUL LEWIS: Imagine the
+looks you'd get.
+
+290
+00:09:08,425 --> 00:09:12,760
+And now through the power of the
+Chrome DevTools, no more.
+
+291
+00:09:12,760 --> 00:09:13,450
+PAUL LEWIS: You've got them.
+
+292
+00:09:13,450 --> 00:09:14,600
+It's awesome.
+
+293
+00:09:14,600 --> 00:09:17,870
+So one other thing that I
+enabled was something called
+
+294
+00:09:17,870 --> 00:09:19,190
+Snippets support.
+
+295
+00:09:19,190 --> 00:09:20,870
+Have you used Snippets before?
+
+296
+00:09:20,870 --> 00:09:21,660
+PAUL LEWIS: I have
+used Snippets.
+
+297
+00:09:21,660 --> 00:09:23,325
+But what are you going
+to do here?
+
+298
+00:09:23,325 --> 00:09:24,110
+ADDY OSMANI: What am
+I going to do here?
+
+299
+00:09:24,110 --> 00:09:25,160
+I'm just going to show you
+what Snippets are.
+
+300
+00:09:25,160 --> 00:09:26,290
+PAUL LEWIS: Oh, I like it.
+
+301
+00:09:26,290 --> 00:09:27,870
+ADDY OSMANI: So we've got a
+bunch of tabs in Chrome
+
+302
+00:09:27,870 --> 00:09:28,990
+Developer Tools.
+
+303
+00:09:28,990 --> 00:09:32,460
+If I go to sources and you've
+enabled Snippets in the
+
+304
+00:09:32,460 --> 00:09:36,270
+experiments, you can actually
+go to a Snippets sub-tab.
+
+305
+00:09:36,270 --> 00:09:39,390
+And you're able to now sort
+of create new Snippets.
+
+306
+00:09:39,390 --> 00:09:41,560
+And Snippets are basically just
+blocks of scripts that
+
+307
+00:09:41,560 --> 00:09:44,250
+you can create, save, or
+execute, and easily store them
+
+308
+00:09:44,250 --> 00:09:45,500
+inside the DevTools in
+case you want to
+
+309
+00:09:45,500 --> 00:09:46,970
+use them at any point.
+
+310
+00:09:46,970 --> 00:09:49,960
+So I can go and I can add in
+custom functions doing--
+
+311
+00:09:49,960 --> 00:09:55,330
+
+312
+00:09:55,330 --> 00:09:56,380
+or something.
+
+313
+00:09:56,380 --> 00:09:57,320
+I don't know.
+
+314
+00:09:57,320 --> 00:09:59,140
+You could have any sort of
+function you want in here and
+
+315
+00:09:59,140 --> 00:10:01,010
+just have it execute.
+
+316
+00:10:01,010 --> 00:10:02,450
+And it all works.
+
+317
+00:10:02,450 --> 00:10:04,020
+It's pretty neat.
+
+318
+00:10:04,020 --> 00:10:06,310
+PAUL LEWIS: So how would
+you then use
+
+319
+00:10:06,310 --> 00:10:07,910
+that Snippet in your--
+
+320
+00:10:07,910 --> 00:10:09,140
+so you've created
+this Snippet--
+
+321
+00:10:09,140 --> 00:10:12,350
+ADDY OSMANI: Yeah, so you can
+go and run this if you want.
+
+322
+00:10:12,350 --> 00:10:13,720
+This code isn't going to run
+because it doesn't actually
+
+323
+00:10:13,720 --> 00:10:14,690
+have anything in there.
+
+324
+00:10:14,690 --> 00:10:16,270
+But you can then go and
+run these Snippets
+
+325
+00:10:16,270 --> 00:10:17,400
+any time you want.
+
+326
+00:10:17,400 --> 00:10:19,080
+You can have them interact
+with the page if
+
+327
+00:10:19,080 --> 00:10:19,890
+you want to do that.
+
+328
+00:10:19,890 --> 00:10:20,360
+PAUL LEWIS: Oh, OK.
+
+329
+00:10:20,360 --> 00:10:21,960
+ADDY OSMANI: And it's just
+supposed to be a nice little
+
+330
+00:10:21,960 --> 00:10:23,000
+addition to your work.
+
+331
+00:10:23,000 --> 00:10:25,010
+PAUL LEWIS: So let's so you
+created some kind of script
+
+332
+00:10:25,010 --> 00:10:27,510
+that helps you debug.
+
+333
+00:10:27,510 --> 00:10:27,930
+ADDY OSMANI: Yeah.
+
+334
+00:10:27,930 --> 00:10:30,350
+PAUL LEWIS: So I mean I'm
+very much in the GPU and
+
+335
+00:10:30,350 --> 00:10:30,950
+performance thing.
+
+336
+00:10:30,950 --> 00:10:33,510
+So I'm very much kind of
+thinking, hey, I could have a
+
+337
+00:10:33,510 --> 00:10:36,270
+little Snippet that could do
+something crazy with the WebGL
+
+338
+00:10:36,270 --> 00:10:38,360
+context that I only want to
+do when I'm debugging.
+
+339
+00:10:38,360 --> 00:10:40,000
+I don't want to include it
+as a script to my thing.
+
+340
+00:10:40,000 --> 00:10:41,350
+I could create a Snippet.
+
+341
+00:10:41,350 --> 00:10:41,625
+ADDY OSMANI: Exactly.
+
+342
+00:10:41,625 --> 00:10:43,280
+PAUL LEWIS: I just run that
+whenever I've got a problem.
+
+343
+00:10:43,280 --> 00:10:43,334
+ADDY OSMANI: Exactly.
+
+344
+00:10:43,334 --> 00:10:45,460
+And you can just go straight
+back into the Snippets tab and
+
+345
+00:10:45,460 --> 00:10:46,900
+run that code any time
+you want, which is
+
+346
+00:10:46,900 --> 00:10:47,680
+really, really fun.
+
+347
+00:10:47,680 --> 00:10:48,600
+PAUL LEWIS: Sold.
+
+348
+00:10:48,600 --> 00:10:49,440
+ADDY OSMANI: Awesome.
+
+349
+00:10:49,440 --> 00:10:51,450
+So one other thing I wanted
+to talk about.
+
+350
+00:10:51,450 --> 00:10:52,800
+So we've taken a look
+at some of the
+
+351
+00:10:52,800 --> 00:10:54,330
+experiments in Chrome Canary.
+
+352
+00:10:54,330 --> 00:10:55,720
+We've taken a look at
+what's in stable.
+
+353
+00:10:55,720 --> 00:10:58,840
+One other thing that we think
+developers should care about
+
+354
+00:10:58,840 --> 00:11:01,320
+are the Developer Tools
+Extensions that are available
+
+355
+00:11:01,320 --> 00:11:02,260
+at the moment.
+
+356
+00:11:02,260 --> 00:11:05,500
+One that I've written about
+previously was called Tincr.
+
+357
+00:11:05,500 --> 00:11:07,700
+And I'm going to show you a
+preview of what Tincr does.
+
+358
+00:11:07,700 --> 00:11:09,090
+It's pretty awesome.
+
+359
+00:11:09,090 --> 00:11:12,330
+So I'm just going to serve
+up a directory.
+
+360
+00:11:12,330 --> 00:11:14,900
+This is my TodoMVC project.
+
+361
+00:11:14,900 --> 00:11:18,760
+And I probably want to go and
+switch off my overrides just
+
+362
+00:11:18,760 --> 00:11:20,400
+so I can see the entire page.
+
+363
+00:11:20,400 --> 00:11:21,400
+It's so cool.
+
+364
+00:11:21,400 --> 00:11:22,480
+PAUL LEWIS: You see how
+easy that was, right?
+
+365
+00:11:22,480 --> 00:11:23,050
+ADDY OSMANI: That's
+really nice.
+
+366
+00:11:23,050 --> 00:11:24,380
+PAUL LEWIS: He just takes that
+box over and takes that one
+
+367
+00:11:24,380 --> 00:11:25,720
+check, that box.
+
+368
+00:11:25,720 --> 00:11:26,630
+ADDY OSMANI: It's so nice.
+
+369
+00:11:26,630 --> 00:11:27,280
+PAUL LEWIS: Oh, yeah.
+
+370
+00:11:27,280 --> 00:11:28,480
+ADDY OSMANI: Now, Tincr is
+there's something that's
+
+371
+00:11:28,480 --> 00:11:33,530
+available over at the Tincr
+website, so tin.cr.
+
+372
+00:11:33,530 --> 00:11:36,810
+And what Tincr does is it allows
+you to make changes
+
+373
+00:11:36,810 --> 00:11:39,720
+within the Developer Tools to a
+page and have those changes
+
+374
+00:11:39,720 --> 00:11:43,330
+actually be saved and persist to
+your original source files.
+
+375
+00:11:43,330 --> 00:11:46,640
+So if I made like style changes
+or changes to script
+
+376
+00:11:46,640 --> 00:11:48,810
+or anything like that, those
+changes can actually be saved
+
+377
+00:11:48,810 --> 00:11:49,940
+to the source files.
+
+378
+00:11:49,940 --> 00:11:51,050
+PAUL LEWIS: This is what I was
+talking about earlier.
+
+379
+00:11:51,050 --> 00:11:51,450
+ADDY OSMANI: Yeah.
+
+380
+00:11:51,450 --> 00:11:53,810
+PAUL LEWIS: Like when you're
+building an application and
+
+381
+00:11:53,810 --> 00:11:55,940
+then you're like, oh, I'll
+switch to Chrome.
+
+382
+00:11:55,940 --> 00:11:58,520
+Ah, I'll just change that in
+the DevTools because that
+
+383
+00:11:58,520 --> 00:11:59,400
+color's slightly off.
+
+384
+00:11:59,400 --> 00:12:01,350
+And then you kind of have to
+remember if you make like 10
+
+385
+00:12:01,350 --> 00:12:02,870
+or 15 changes--
+
+386
+00:12:02,870 --> 00:12:03,690
+ADDY OSMANI: It's a big deal.
+
+387
+00:12:03,690 --> 00:12:05,020
+You've got to copy those
+things over here.
+
+388
+00:12:05,020 --> 00:12:05,980
+Or you have to make sure
+that you don't
+
+389
+00:12:05,980 --> 00:12:07,140
+like reload your page.
+
+390
+00:12:07,140 --> 00:12:07,830
+It's a pain.
+
+391
+00:12:07,830 --> 00:12:09,110
+PAUL LEWIS: Or if you do reload
+your page, you're like,
+
+392
+00:12:09,110 --> 00:12:10,810
+no, I've lost all
+those things.
+
+393
+00:12:10,810 --> 00:12:11,860
+ADDY OSMANI: Exactly.
+
+394
+00:12:11,860 --> 00:12:13,270
+Exactly.
+
+395
+00:12:13,270 --> 00:12:16,030
+Right, so with Tincr, what you
+do is you first choose the
+
+396
+00:12:16,030 --> 00:12:17,490
+type of project that
+you're working on.
+
+397
+00:12:17,490 --> 00:12:19,640
+I'm currently inside a new
+Tincr tab that's in the
+
+398
+00:12:19,640 --> 00:12:22,980
+DevTools, which you'll have when
+you install it, right?
+
+399
+00:12:22,980 --> 00:12:26,200
+So I'm selecting the type of
+project I'm working on.
+
+400
+00:12:26,200 --> 00:12:29,820
+I'm going to browse to the root
+of where this project is
+
+401
+00:12:29,820 --> 00:12:31,320
+because Tincr requires that.
+
+402
+00:12:31,320 --> 00:12:34,480
+And by default, it'll
+automatically refresh to sort
+
+403
+00:12:34,480 --> 00:12:35,970
+of show you the changes
+that you've made.
+
+404
+00:12:35,970 --> 00:12:39,270
+And it'll automatically save.
+
+405
+00:12:39,270 --> 00:12:42,430
+So let me refresh my page very
+quickly and go back.
+
+406
+00:12:42,430 --> 00:12:44,110
+And let's say we want
+to make a change.
+
+407
+00:12:44,110 --> 00:12:47,130
+Like let's say I want to change
+the color of my buttons
+
+408
+00:12:47,130 --> 00:12:47,880
+to something else.
+
+409
+00:12:47,880 --> 00:12:50,140
+PAUL LEWIS: I, for one, am
+disappointed you didn't change
+
+410
+00:12:50,140 --> 00:12:52,680
+it to Comic Sans, that you went
+straight to the color
+
+411
+00:12:52,680 --> 00:12:53,220
+thing there.
+
+412
+00:12:53,220 --> 00:12:54,970
+But, you know, each
+to their own.
+
+413
+00:12:54,970 --> 00:12:57,590
+I can't fault you for just
+changing the color.
+
+414
+00:12:57,590 --> 00:12:59,530
+ADDY OSMANI: This is really the
+standard of developer we
+
+415
+00:12:59,530 --> 00:13:01,960
+were able to get instead
+of Paul Irish.
+
+416
+00:13:01,960 --> 00:13:02,455
+It's heartbreaking.
+
+417
+00:13:02,455 --> 00:13:03,700
+PAUL LEWIS: Desparate times,
+desperate measures.
+
+418
+00:13:03,700 --> 00:13:04,990
+Any port in a storm,
+I believe is the--
+
+419
+00:13:04,990 --> 00:13:05,580
+ADDY OSMANI: Pretty much.
+
+420
+00:13:05,580 --> 00:13:06,140
+Pretty much.
+
+421
+00:13:06,140 --> 00:13:06,840
+PAUL LEWIS: OK.
+
+422
+00:13:06,840 --> 00:13:08,020
+ADDY OSMANI: OK.
+
+423
+00:13:08,020 --> 00:13:09,780
+So I've gone and I've
+changed the color of
+
+424
+00:13:09,780 --> 00:13:11,610
+my buttons to blue.
+
+425
+00:13:11,610 --> 00:13:14,290
+Now, as long as you know nothing
+has broken, nothing's
+
+426
+00:13:14,290 --> 00:13:16,540
+gone wrong, when I refresh my
+page, and you can confirm I've
+
+427
+00:13:16,540 --> 00:13:17,390
+just refreshed my page--
+
+428
+00:13:17,390 --> 00:13:17,590
+PAUL LEWIS: Yeah.
+
+429
+00:13:17,590 --> 00:13:19,010
+ADDY OSMANI: --the changes
+have persisted.
+
+430
+00:13:19,010 --> 00:13:21,440
+And if go and I take a look at
+source of this document, what
+
+431
+00:13:21,440 --> 00:13:24,240
+you'll find is that in my style
+sheet that change has
+
+432
+00:13:24,240 --> 00:13:24,920
+been saved.
+
+433
+00:13:24,920 --> 00:13:26,990
+So I don't even have to go
+back to my editor or
+
+434
+00:13:26,990 --> 00:13:27,700
+anything like that.
+
+435
+00:13:27,700 --> 00:13:29,850
+The change is saved, and
+it's already there.
+
+436
+00:13:29,850 --> 00:13:33,870
+What's even cooler is if you go
+to Sources and you take a
+
+437
+00:13:33,870 --> 00:13:38,890
+look at where this stuff is--
+so let me go to Sources and
+
+438
+00:13:38,890 --> 00:13:42,310
+figure out what file
+I was working in.
+
+439
+00:13:42,310 --> 00:13:46,030
+I can right click on a file
+and take a look at local
+
+440
+00:13:46,030 --> 00:13:47,030
+modifications to it.
+
+441
+00:13:47,030 --> 00:13:49,870
+So let's see what local
+modifications remain.
+
+442
+00:13:49,870 --> 00:13:52,300
+I think it was this file.
+
+443
+00:13:52,300 --> 00:13:53,560
+Where are we?
+
+444
+00:13:53,560 --> 00:13:54,930
+Let's see.
+
+445
+00:13:54,930 --> 00:13:56,070
+So it's because I've
+refreshed it.
+
+446
+00:13:56,070 --> 00:13:58,180
+Let's just make another change
+so I can actually take a look
+
+447
+00:13:58,180 --> 00:13:59,190
+at local modifications.
+
+448
+00:13:59,190 --> 00:14:01,600
+So let's say we've changed
+this to green, right?
+
+449
+00:14:01,600 --> 00:14:02,850
+I go to Sources.
+
+450
+00:14:02,850 --> 00:14:05,290
+
+451
+00:14:05,290 --> 00:14:06,950
+Let's see if this will work.
+
+452
+00:14:06,950 --> 00:14:10,190
+So now what you'll see in local
+modifications is all the
+
+453
+00:14:10,190 --> 00:14:11,720
+changes that I've made
+to this file.
+
+454
+00:14:11,720 --> 00:14:13,160
+And you actually get a
+really, really nice
+
+455
+00:14:13,160 --> 00:14:15,440
+diff of those changes.
+
+456
+00:14:15,440 --> 00:14:17,350
+Depending on whether you've gone
+and you've refreshed the
+
+457
+00:14:17,350 --> 00:14:20,590
+page or not, you can actually
+see the entire history of what
+
+458
+00:14:20,590 --> 00:14:23,590
+you've been doing to the page
+and decide about what changes
+
+459
+00:14:23,590 --> 00:14:25,200
+you want to keep and what
+changes you don't want to
+
+460
+00:14:25,200 --> 00:14:26,960
+keep, which I think is useful.
+
+461
+00:14:26,960 --> 00:14:27,720
+PAUL LEWIS: Yeah, I
+was noticing that.
+
+462
+00:14:27,720 --> 00:14:29,830
+Because you've got a revert,
+which I assume reverts all
+
+463
+00:14:29,830 --> 00:14:31,580
+changes that you made locally.
+
+464
+00:14:31,580 --> 00:14:34,830
+And then there's presumably
+a per-change
+
+465
+00:14:34,830 --> 00:14:35,990
+Apply Original Content.
+
+466
+00:14:35,990 --> 00:14:37,010
+ADDY OSMANI: Yeah, and it'll
+show you the time that you
+
+467
+00:14:37,010 --> 00:14:38,020
+made the changes
+and everything.
+
+468
+00:14:38,020 --> 00:14:39,320
+It's really, really useful.
+
+469
+00:14:39,320 --> 00:14:40,250
+PAUL LEWIS: I like.
+
+470
+00:14:40,250 --> 00:14:40,790
+ADDY OSMANI: You like?
+
+471
+00:14:40,790 --> 00:14:41,930
+Excellent.
+
+472
+00:14:41,930 --> 00:14:42,210
+Right.
+
+473
+00:14:42,210 --> 00:14:44,880
+So we've shown you some stuff in
+the Chrome Developer Tools.
+
+474
+00:14:44,880 --> 00:14:47,640
+Let's talk a little bit more
+about tooling and how we can
+
+475
+00:14:47,640 --> 00:14:49,310
+solve some of the problems
+you talked about earlier.
+
+476
+00:14:49,310 --> 00:14:49,590
+PAUL LEWIS: Right.
+
+477
+00:14:49,590 --> 00:14:51,460
+Because earlier we
+established that
+
+478
+00:14:51,460 --> 00:14:52,715
+basically my workflow sucks.
+
+479
+00:14:52,715 --> 00:14:53,890
+Now, I'll be honest.
+
+480
+00:14:53,890 --> 00:14:55,600
+I've moved on a little
+bit from that point.
+
+481
+00:14:55,600 --> 00:14:56,340
+But nonetheless--
+
+482
+00:14:56,340 --> 00:14:57,250
+ADDY OSMANI: Notice
+he said little.
+
+483
+00:14:57,250 --> 00:14:57,610
+Just a little.
+
+484
+00:14:57,610 --> 00:14:58,330
+Tiny amount.
+
+485
+00:14:58,330 --> 00:14:58,470
+Tiny amount.
+
+486
+00:14:58,470 --> 00:14:59,900
+OK.
+
+487
+00:14:59,900 --> 00:15:03,090
+PAUL LEWIS: But all the same, I
+think parts of that workflow
+
+488
+00:15:03,090 --> 00:15:04,530
+still remain for me.
+
+489
+00:15:04,530 --> 00:15:07,980
+And I think, like we said, for a
+lot of developers, it's very
+
+490
+00:15:07,980 --> 00:15:10,610
+much kind of the situation.
+
+491
+00:15:10,610 --> 00:15:12,600
+It's very difficult
+to just shift.
+
+492
+00:15:12,600 --> 00:15:14,210
+Because people have
+got deadlines.
+
+493
+00:15:14,210 --> 00:15:15,360
+They've got these things to--
+
+494
+00:15:15,360 --> 00:15:15,980
+ADDY OSMANI: Yeah, of course.
+
+495
+00:15:15,980 --> 00:15:18,330
+PAUL LEWIS: --the actual
+coding to do.
+
+496
+00:15:18,330 --> 00:15:20,870
+So I guess we're going to talk
+about Yeoman, right?
+
+497
+00:15:20,870 --> 00:15:21,490
+ADDY OSMANI: We're
+going to talk a
+
+498
+00:15:21,490 --> 00:15:23,610
+little bit about Yeoman.
+
+499
+00:15:23,610 --> 00:15:24,900
+PAUL LEWIS: Solid.
+
+500
+00:15:24,900 --> 00:15:25,740
+ADDY OSMANI: Awesome, right.
+
+501
+00:15:25,740 --> 00:15:28,640
+So Yeoman is basically an
+opinionated workflow for
+
+502
+00:15:28,640 --> 00:15:31,570
+creating compelling modern
+web applications.
+
+503
+00:15:31,570 --> 00:15:34,670
+For people that haven't tried it
+out yet or haven't checked
+
+504
+00:15:34,670 --> 00:15:38,020
+out the site, we're available
+at yeoman.io.
+
+505
+00:15:38,020 --> 00:15:40,870
+And this is sort of a project
+that a few people, so me, Paul
+
+506
+00:15:40,870 --> 00:15:44,310
+Irish, Sindre Sorhus,
+and Mickael Daniel--
+
+507
+00:15:44,310 --> 00:15:44,810
+PAUL LEWIS: Paul Irish.
+
+508
+00:15:44,810 --> 00:15:47,240
+ADDY OSMANI: --Paul Irish
+--created few months ago and
+
+509
+00:15:47,240 --> 00:15:48,440
+we've been working on it.
+
+510
+00:15:48,440 --> 00:15:51,230
+And it sort of builds on top of
+a ton of other great tools
+
+511
+00:15:51,230 --> 00:15:54,690
+like Grunt and Twitter
+Bootstrap and so on.
+
+512
+00:15:54,690 --> 00:15:56,710
+And I'm just going to show
+you what it does.
+
+513
+00:15:56,710 --> 00:15:58,630
+It's easier to show than
+just keep talking.
+
+514
+00:15:58,630 --> 00:15:59,580
+PAUL LEWIS: So one of the things
+that you said, though,
+
+515
+00:15:59,580 --> 00:16:01,340
+was that this is an
+opinionated tool.
+
+516
+00:16:01,340 --> 00:16:02,540
+ADDY OSMANI: Yeah.
+
+517
+00:16:02,540 --> 00:16:04,610
+ADDY OSMANI: What do you mean
+an opinionated tool?
+
+518
+00:16:04,610 --> 00:16:04,840
+ADDY OSMANI: Right.
+
+519
+00:16:04,840 --> 00:16:08,710
+So there are like a huge ton of
+options that people have on
+
+520
+00:16:08,710 --> 00:16:09,700
+the front end these days.
+
+521
+00:16:09,700 --> 00:16:12,480
+Like do you use SaaS,
+Less, Compass?
+
+522
+00:16:12,480 --> 00:16:14,080
+There's a ton of options.
+
+523
+00:16:14,080 --> 00:16:16,110
+And then you have a whole other
+side of things when it
+
+524
+00:16:16,110 --> 00:16:18,090
+comes to like the JavaScript
+that you write for apps.
+
+525
+00:16:18,090 --> 00:16:18,560
+PAUL LEWIS: Right.
+
+526
+00:16:18,560 --> 00:16:20,350
+ADDY OSMANI: Like are you
+talking about using specific
+
+527
+00:16:20,350 --> 00:16:21,150
+frameworks?
+
+528
+00:16:21,150 --> 00:16:23,850
+Or how do you structure
+your whole app,
+
+529
+00:16:23,850 --> 00:16:24,740
+and all those things.
+
+530
+00:16:24,740 --> 00:16:27,240
+There's a lot of stuff that
+people have to think about it.
+
+531
+00:16:27,240 --> 00:16:27,630
+PAUL LEWIS: Yes.
+
+532
+00:16:27,630 --> 00:16:29,860
+ADDY OSMANI: And we thought
+what if we were to try
+
+533
+00:16:29,860 --> 00:16:32,710
+capturing what we think is the
+best set of options for you
+
+534
+00:16:32,710 --> 00:16:35,630
+develop a modern app into
+a single workflow.
+
+535
+00:16:35,630 --> 00:16:37,490
+And that's basically
+what Yeoman is.
+
+536
+00:16:37,490 --> 00:16:39,160
+It's a bunch of tools brought
+together that
+
+537
+00:16:39,160 --> 00:16:40,960
+we hope works well.
+
+538
+00:16:40,960 --> 00:16:45,140
+So let me take you to a demo
+of Yeoman and show you how
+
+539
+00:16:45,140 --> 00:16:46,410
+that works.
+
+540
+00:16:46,410 --> 00:16:48,250
+OK, so I've got my screen
+open at the moment.
+
+541
+00:16:48,250 --> 00:16:50,440
+And I'm going to also have a
+text editor that I'm going to
+
+542
+00:16:50,440 --> 00:16:52,160
+switch to you in just a sec.
+
+543
+00:16:52,160 --> 00:16:55,290
+Right, so with Yeoman to
+kickstart off our new project,
+
+544
+00:16:55,290 --> 00:16:56,970
+you just use Yeoman Init.
+
+545
+00:16:56,970 --> 00:16:59,820
+So I've typed in Yeoman Init.
+
+546
+00:16:59,820 --> 00:17:02,340
+
+547
+00:17:02,340 --> 00:17:04,970
+Waiting for this to go and
+ask me some questions.
+
+548
+00:17:04,970 --> 00:17:07,900
+So when you sort of fire this
+off, it'll go ask you some
+
+549
+00:17:07,900 --> 00:17:10,079
+questions about what you want
+to do in your application.
+
+550
+00:17:10,079 --> 00:17:12,760
+Like do you want to include
+Twitter Bootstrap?
+
+551
+00:17:12,760 --> 00:17:14,760
+Do you want to include the
+Twitter Bootstrap plug-ins?
+
+552
+00:17:14,760 --> 00:17:16,369
+Because like, let's face it,
+when you're developing a
+
+553
+00:17:16,369 --> 00:17:18,939
+prototype, you want something
+that's pretty.
+
+554
+00:17:18,939 --> 00:17:20,530
+It doesn't have to be the
+prettiest thing in the world.
+
+555
+00:17:20,530 --> 00:17:22,880
+You don't have to go necessarily
+using Bootstrap in
+
+556
+00:17:22,880 --> 00:17:26,160
+production, but it's great
+for prototypes, right?
+
+557
+00:17:26,160 --> 00:17:28,140
+So do you want to include the
+Twitter Bootstrap plug-ins?
+
+558
+00:17:28,140 --> 00:17:30,930
+If you're a JavaScript app
+developer, maybe you want to
+
+559
+00:17:30,930 --> 00:17:32,620
+use RequireJS and AMD.
+
+560
+00:17:32,620 --> 00:17:33,815
+So we'll ask you about
+that as well.
+
+561
+00:17:33,815 --> 00:17:34,930
+PAUL LEWIS: So I assume the
+questions that it's asking are
+
+562
+00:17:34,930 --> 00:17:37,800
+based on your experience, Paul
+Irish's experience, the team's
+
+563
+00:17:37,800 --> 00:17:40,530
+experience on the kind of tools
+that people need and
+
+564
+00:17:40,530 --> 00:17:41,980
+want in their workflow, right?
+
+565
+00:17:41,980 --> 00:17:42,690
+ADDY OSMANI: Yes, absolutely.
+
+566
+00:17:42,690 --> 00:17:43,200
+PAUL LEWIS: Cool.
+
+567
+00:17:43,200 --> 00:17:45,330
+ADDY OSMANI: So, while you're
+talking, basically what it's
+
+568
+00:17:45,330 --> 00:17:47,410
+gone and it's done is it's gone
+and fetched the latest
+
+569
+00:17:47,410 --> 00:17:49,570
+version of all these
+dependencies, and it's put
+
+570
+00:17:49,570 --> 00:17:52,080
+them into a local directory that
+you can use for your app.
+
+571
+00:17:52,080 --> 00:17:54,800
+We've also gone and sort of
+scaffolded out some very basic
+
+572
+00:17:54,800 --> 00:17:55,860
+unit tests.
+
+573
+00:17:55,860 --> 00:17:56,970
+Unit testing's important.
+
+574
+00:17:56,970 --> 00:17:58,400
+Do you unit test your code?
+
+575
+00:17:58,400 --> 00:17:58,880
+PAUL LEWIS: Yes.
+
+576
+00:17:58,880 --> 00:17:59,310
+ADDY OSMANI: Yes?
+
+577
+00:17:59,310 --> 00:17:59,910
+PAUL LEWIS: Not always.
+
+578
+00:17:59,910 --> 00:17:59,960
+ADDY OSMANI: Not always.
+
+579
+00:17:59,960 --> 00:18:01,520
+PAUL LEWIS: If I'm honest,
+not always.
+
+580
+00:18:01,520 --> 00:18:04,930
+But if it's built in,
+it makes it easier.
+
+581
+00:18:04,930 --> 00:18:06,280
+ADDY OSMANI: OK, good.
+
+582
+00:18:06,280 --> 00:18:07,620
+So we do that stuff for you.
+
+583
+00:18:07,620 --> 00:18:10,240
+And you can then go and like
+preview what this has created
+
+584
+00:18:10,240 --> 00:18:12,060
+using server command.
+
+585
+00:18:12,060 --> 00:18:14,930
+So I'm guessing in previous
+years when you're like a web
+
+586
+00:18:14,930 --> 00:18:17,240
+app developer and working with
+a bunch of other code, maybe
+
+587
+00:18:17,240 --> 00:18:20,710
+you used like Map or Wamp
+or all that stuff.
+
+588
+00:18:20,710 --> 00:18:21,560
+PAUL LEWIS: Always
+one of those.
+
+589
+00:18:21,560 --> 00:18:21,800
+PAUL LEWIS: Right.
+
+590
+00:18:21,800 --> 00:18:25,000
+So we thought why don't we just
+add this to a command and
+
+591
+00:18:25,000 --> 00:18:26,190
+fire off a server.
+
+592
+00:18:26,190 --> 00:18:28,850
+So if you type in Yeoman Server,
+it'll actually go and
+
+593
+00:18:28,850 --> 00:18:32,290
+fire off a server using the
+contents of the application
+
+594
+00:18:32,290 --> 00:18:33,920
+that you working on
+just right now.
+
+595
+00:18:33,920 --> 00:18:35,510
+And it'll actually show
+you a preview.
+
+596
+00:18:35,510 --> 00:18:39,280
+So on screen at the moment, we
+have a preview of our compiled
+
+597
+00:18:39,280 --> 00:18:40,440
+Twitter Bootstrap files.
+
+598
+00:18:40,440 --> 00:18:42,450
+We were using Compass sources.
+
+599
+00:18:42,450 --> 00:18:44,320
+So this is complied Twitter
+Bootstrap files.
+
+600
+00:18:44,320 --> 00:18:45,730
+You have HTML5 Boilerplate.
+
+601
+00:18:45,730 --> 00:18:48,500
+You have RequireJS and
+a few other pieces.
+
+602
+00:18:48,500 --> 00:18:51,100
+And you can go and start coding
+right away which is
+
+603
+00:18:51,100 --> 00:18:52,930
+fun, right?
+
+604
+00:18:52,930 --> 00:18:58,790
+So one other thing I wanted to
+show you guys was how Yeoman
+
+605
+00:18:58,790 --> 00:19:02,350
+can help you with something
+called LiveReload.
+
+606
+00:19:02,350 --> 00:19:04,190
+Have you heard of LiveReload
+before?
+
+607
+00:19:04,190 --> 00:19:05,120
+PAUL LEWIS: Let's assume
+I have not.
+
+608
+00:19:05,120 --> 00:19:07,050
+That would make life a lot
+easier for you right now,
+
+609
+00:19:07,050 --> 00:19:07,590
+wouldn't it?
+
+610
+00:19:07,590 --> 00:19:07,920
+ADDY OSMANI: Yes.
+
+611
+00:19:07,920 --> 00:19:09,540
+Yes, it would.
+
+612
+00:19:09,540 --> 00:19:12,500
+OK, before I show
+this to you, so
+
+613
+00:19:12,500 --> 00:19:15,080
+LiveReload is pretty awesome.
+
+614
+00:19:15,080 --> 00:19:17,890
+It's this functionality that
+allows you to make changes in
+
+615
+00:19:17,890 --> 00:19:20,840
+your application, whether it's
+your style sheets, or your
+
+616
+00:19:20,840 --> 00:19:23,780
+scripts, your markup or
+anything, and have the browser
+
+617
+00:19:23,780 --> 00:19:26,096
+automatically reload whenever
+changes are made
+
+618
+00:19:26,096 --> 00:19:27,190
+to your local files.
+
+619
+00:19:27,190 --> 00:19:29,080
+So you don't have to go and
+refresh it yourself.
+
+620
+00:19:29,080 --> 00:19:32,110
+You get this constant sort of
+parallel view of what's going
+
+621
+00:19:32,110 --> 00:19:35,160
+on in the browser and what's
+going on in your source.
+
+622
+00:19:35,160 --> 00:19:36,550
+So let's see if this
+works right now.
+
+623
+00:19:36,550 --> 00:19:39,430
+So I've just created a brand
+new application.
+
+624
+00:19:39,430 --> 00:19:45,665
+I'm going to my index and let me
+see about replacing Wotcha!
+
+625
+00:19:45,665 --> 00:19:47,000
+with Wotcha Paul!
+
+626
+00:19:47,000 --> 00:19:49,110
+And as we can see it's gone,
+and it's automatically
+
+627
+00:19:49,110 --> 00:19:50,100
+reloaded the page.
+
+628
+00:19:50,100 --> 00:19:52,230
+I didn't have to do
+anything at all.
+
+629
+00:19:52,230 --> 00:19:55,020
+It's gone, and it's compiled
+the compass files.
+
+630
+00:19:55,020 --> 00:19:56,980
+If I had copied script, it
+would be automatically
+
+631
+00:19:56,980 --> 00:19:58,430
+compiling that stuff for me.
+
+632
+00:19:58,430 --> 00:20:01,210
+If I had RequireJS files, it'd
+be doing the exact same thing.
+
+633
+00:20:01,210 --> 00:20:02,120
+And it's just really nice.
+
+634
+00:20:02,120 --> 00:20:04,810
+It means I don't have to go
+and put together a whole
+
+635
+00:20:04,810 --> 00:20:07,600
+workflow and build process
+that does this stuff.
+
+636
+00:20:07,600 --> 00:20:08,420
+PAUL LEWIS: Awesome.
+
+637
+00:20:08,420 --> 00:20:09,920
+ADDY OSMANI: Which is nice.
+
+638
+00:20:09,920 --> 00:20:14,260
+Sort of on top of that, how were
+you saying that you were
+
+639
+00:20:14,260 --> 00:20:15,410
+handling dependencies before?
+
+640
+00:20:15,410 --> 00:20:17,390
+You were manually going against
+the web, right?
+
+641
+00:20:17,390 --> 00:20:20,290
+PAUL LEWIS: Yeah, The classic
+situation is there's a new
+
+642
+00:20:20,290 --> 00:20:24,640
+version of a library, or I want
+to add another library
+
+643
+00:20:24,640 --> 00:20:25,590
+after this point, right?
+
+644
+00:20:25,590 --> 00:20:25,810
+ADDY OSMANI: Yeah.
+
+645
+00:20:25,810 --> 00:20:27,750
+PAUL LEWIS: So we created a
+project but it's like, ah, now
+
+646
+00:20:27,750 --> 00:20:30,410
+I realize I need this other
+library in there.
+
+647
+00:20:30,410 --> 00:20:31,540
+ADDY OSMANI: Yeah.
+
+648
+00:20:31,540 --> 00:20:33,000
+PAUL LEWIS: So, yeah, I go off,
+find it in framework's
+
+649
+00:20:33,000 --> 00:20:34,430
+like I did with my original
+dependencies.
+
+650
+00:20:34,430 --> 00:20:37,090
+So I just go off, get it, and
+drag it in, and hope for the
+
+651
+00:20:37,090 --> 00:20:38,380
+best, generally speaking.
+
+652
+00:20:38,380 --> 00:20:38,620
+ADDY OSMANI: Yeah.
+
+653
+00:20:38,620 --> 00:20:39,670
+It's a pain.
+
+654
+00:20:39,670 --> 00:20:41,360
+It's, again, one of those
+manual things
+
+655
+00:20:41,360 --> 00:20:41,930
+that you have to do.
+
+656
+00:20:41,930 --> 00:20:44,000
+You've got to go and open up
+your browser and figure out
+
+657
+00:20:44,000 --> 00:20:46,650
+where the dependencies, whether
+you're using the most
+
+658
+00:20:46,650 --> 00:20:47,820
+up-to-date version or not.
+
+659
+00:20:47,820 --> 00:20:50,300
+So we figured, well, why don't
+we make this a little bit more
+
+660
+00:20:50,300 --> 00:20:52,790
+straightforward?
+
+661
+00:20:52,790 --> 00:20:54,230
+So let's say there's a
+dependency you wanted.
+
+662
+00:20:54,230 --> 00:20:56,495
+You mentioned Backbone
+apps earlier on.
+
+663
+00:20:56,495 --> 00:20:58,010
+PAUL LEWIS: Yeah, let's do it.
+
+664
+00:20:58,010 --> 00:20:58,320
+ADDY OSMANI: Let's see.
+
+665
+00:20:58,320 --> 00:20:59,630
+Let's say that we started
+off with a very
+
+666
+00:20:59,630 --> 00:21:01,150
+basic application structure.
+
+667
+00:21:01,150 --> 00:21:03,550
+And we want to get Backbone
+into our app.
+
+668
+00:21:03,550 --> 00:21:07,100
+So maybe the first thing that
+we do is try to look and see
+
+669
+00:21:07,100 --> 00:21:09,900
+is Backbone available
+via Yeoman?
+
+670
+00:21:09,900 --> 00:21:11,720
+And it's going to go and it's
+going to search out.
+
+671
+00:21:11,720 --> 00:21:13,740
+And what you can see here on
+the screen at the moment is
+
+672
+00:21:13,740 --> 00:21:17,350
+that not only is Backbone
+available, but there are a ton
+
+673
+00:21:17,350 --> 00:21:20,290
+of Backbone extensions and
+adapters and plug-ins also
+
+674
+00:21:20,290 --> 00:21:21,300
+available as well.
+
+675
+00:21:21,300 --> 00:21:24,190
+And I can easily install any of
+these via the command line.
+
+676
+00:21:24,190 --> 00:21:27,950
+So if I were to do Yeoman
+install Backbone just to start
+
+677
+00:21:27,950 --> 00:21:33,680
+us off, that'll go and it'll
+install Backbone for me.
+
+678
+00:21:33,680 --> 00:21:36,660
+PAUL LEWIS: What happens if I do
+this and then there's a new
+
+679
+00:21:36,660 --> 00:21:40,210
+version of Backbone
+released tomorrow?
+
+680
+00:21:40,210 --> 00:21:41,480
+It's early on in the project.
+
+681
+00:21:41,480 --> 00:21:42,900
+I feel like I've got the room.
+
+682
+00:21:42,900 --> 00:21:44,670
+I can test this in
+this new version.
+
+683
+00:21:44,670 --> 00:21:45,320
+What do I do then?
+
+684
+00:21:45,320 --> 00:21:45,910
+How does that work?
+
+685
+00:21:45,910 --> 00:21:48,300
+ADDY OSMANI: Then all you have
+to do is we have-- similar to
+
+686
+00:21:48,300 --> 00:21:49,640
+install, we have an
+update command.
+
+687
+00:21:49,640 --> 00:21:52,755
+So if you typed in "yeoman
+update backbone," it would go
+
+688
+00:21:52,755 --> 00:21:53,980
+and it would get the
+latest version of
+
+689
+00:21:53,980 --> 00:21:55,860
+Backbone for you as well.
+
+690
+00:21:55,860 --> 00:21:58,200
+And something you may have
+noticed, some people may have
+
+691
+00:21:58,200 --> 00:22:02,400
+noticed, is if you take a look
+at the lines in here, you'll
+
+692
+00:22:02,400 --> 00:22:04,490
+notice that it didn't just
+go and fetch Backbone.
+
+693
+00:22:04,490 --> 00:22:07,280
+It actually went and it fetched
+Underscore as well.
+
+694
+00:22:07,280 --> 00:22:10,600
+So we're using Twitter's Bower
+project as our package
+
+695
+00:22:10,600 --> 00:22:11,890
+management registry.
+
+696
+00:22:11,890 --> 00:22:15,135
+And when we typed in "yeoman
+install backbone," it went and
+
+697
+00:22:15,135 --> 00:22:17,940
+it tried to fetch the latest
+version of Backbone, figured
+
+698
+00:22:17,940 --> 00:22:20,780
+out that Backbone has a few
+other dependencies, and it
+
+699
+00:22:20,780 --> 00:22:22,520
+also went and grabbed
+those dependencies
+
+700
+00:22:22,520 --> 00:22:24,600
+for us, which is--
+
+701
+00:22:24,600 --> 00:22:27,060
+PAUL LEWIS: That's awesome
+because, yeah, it's like you
+
+702
+00:22:27,060 --> 00:22:30,840
+may have, as you say,
+dependencies on dependencies.
+
+703
+00:22:30,840 --> 00:22:32,230
+Dependency-ception.
+
+704
+00:22:32,230 --> 00:22:33,280
+ADDY OSMANI: Dependency-ception.
+
+705
+00:22:33,280 --> 00:22:33,980
+PAUL LEWIS: I love it.
+
+706
+00:22:33,980 --> 00:22:34,940
+ADDY OSMANI: Of course you do.
+
+707
+00:22:34,940 --> 00:22:35,950
+PAUL LEWIS: Why wouldn't I?
+
+708
+00:22:35,950 --> 00:22:36,700
+ADDY OSMANI: God knows.
+
+709
+00:22:36,700 --> 00:22:37,650
+God knows.
+
+710
+00:22:37,650 --> 00:22:41,230
+OK, so we've covered previewing
+stuff and what you
+
+711
+00:22:41,230 --> 00:22:44,080
+do when you're writing a
+very basic application.
+
+712
+00:22:44,080 --> 00:22:46,090
+Then you've got your build
+process, right?
+
+713
+00:22:46,090 --> 00:22:46,240
+PAUL LEWIS: Yeah,.
+
+714
+00:22:46,240 --> 00:22:46,590
+So right.
+
+715
+00:22:46,590 --> 00:22:50,320
+So this is the point at which,
+let's call him old Paul.
+
+716
+00:22:50,320 --> 00:22:50,703
+ADDY OSMANI: Yes.
+
+717
+00:22:50,703 --> 00:22:51,086
+Old Paul.
+
+718
+00:22:51,086 --> 00:22:52,570
+PAUL LEWIS: The unreformed.
+
+719
+00:22:52,570 --> 00:22:53,900
+The unwashed.
+
+720
+00:22:53,900 --> 00:22:58,340
+I would probably write myself,
+oh, let's see, an ANT script.
+
+721
+00:22:58,340 --> 00:23:00,710
+I would use a UE.jar
+or something like
+
+722
+00:23:00,710 --> 00:23:02,310
+that to go off and--
+
+723
+00:23:02,310 --> 00:23:04,690
+hey, I've been around
+a while--
+
+724
+00:23:04,690 --> 00:23:10,100
+to concatenate and minify my
+JavaScript, minify my CSS,
+
+725
+00:23:10,100 --> 00:23:11,190
+make it all good.
+
+726
+00:23:11,190 --> 00:23:13,990
+And then I sort of manually
+change the paths and all that
+
+727
+00:23:13,990 --> 00:23:14,995
+kind of stuff in my app.
+
+728
+00:23:14,995 --> 00:23:15,380
+ADDY OSMANI: Yeah.
+
+729
+00:23:15,380 --> 00:23:17,170
+PAUL LEWIS: And be like,
+yeah, this works
+
+730
+00:23:17,170 --> 00:23:18,670
+with my minified version.
+
+731
+00:23:18,670 --> 00:23:20,870
+And then push it out live.
+
+732
+00:23:20,870 --> 00:23:21,260
+ADDY OSMANI: Cool.
+
+733
+00:23:21,260 --> 00:23:22,810
+PAUL LEWIS: You've got something
+better for me?
+
+734
+00:23:22,810 --> 00:23:23,340
+ADDY OSMANI: Hopefully.
+
+735
+00:23:23,340 --> 00:23:24,120
+PAUL LEWIS: Yes.
+
+736
+00:23:24,120 --> 00:23:27,000
+ADDY OSMANI: Right, so we took
+a long, hard look at how
+
+737
+00:23:27,000 --> 00:23:28,890
+people were actually building
+their projects.
+
+738
+00:23:28,890 --> 00:23:31,300
+And, like we said, there's a ton
+of tools people use on the
+
+739
+00:23:31,300 --> 00:23:32,280
+front end these says.
+
+740
+00:23:32,280 --> 00:23:36,130
+You've got like SaaS and
+CoffeeScript and RequireJS and
+
+741
+00:23:36,130 --> 00:23:36,880
+what have you.
+
+742
+00:23:36,880 --> 00:23:38,720
+And then when you're trying
+to deploy something to
+
+743
+00:23:38,720 --> 00:23:41,335
+production, you also have to
+care about optimizing the rest
+
+744
+00:23:41,335 --> 00:23:42,390
+of your project.
+
+745
+00:23:42,390 --> 00:23:45,500
+Like not just the stuff you're
+used to like minification and
+
+746
+00:23:45,500 --> 00:23:49,120
+concatenation, but also things
+like revving your files and
+
+747
+00:23:49,120 --> 00:23:51,960
+optimizing all of the images
+in your project as well.
+
+748
+00:23:51,960 --> 00:23:54,005
+Now, some people, when you're
+putting together your own
+
+749
+00:23:54,005 --> 00:23:56,460
+build process, you might just
+go and say, OK, well, I'm
+
+750
+00:23:56,460 --> 00:23:58,950
+going to pick an image
+optimization library.
+
+751
+00:23:58,950 --> 00:24:01,600
+Cool, it'll do its own
+stuff for me, right?
+
+752
+00:24:01,600 --> 00:24:04,590
+What we did was we actually went
+and researched all of the
+
+753
+00:24:04,590 --> 00:24:06,910
+most popular image optimization
+solutions that
+
+754
+00:24:06,910 --> 00:24:07,720
+are available.
+
+755
+00:24:07,720 --> 00:24:10,900
+And we picked the two most
+efficient ones in terms of
+
+756
+00:24:10,900 --> 00:24:13,290
+making sure that you get as
+lasting an experience as
+
+757
+00:24:13,290 --> 00:24:15,810
+possible with the small
+file sizes as well.
+
+758
+00:24:15,810 --> 00:24:18,480
+And when you run Yeoman
+Build, this is
+
+759
+00:24:18,480 --> 00:24:19,280
+where the magic happens.
+
+760
+00:24:19,280 --> 00:24:22,160
+It'll actually go and it'll
+build out your entire project.
+
+761
+00:24:22,160 --> 00:24:23,650
+It'll compile any sort of
+
+762
+00:24:23,650 --> 00:24:25,300
+abstractions that you're using.
+
+763
+00:24:25,300 --> 00:24:28,310
+As you can see, it's both
+running a number of tasks on
+
+764
+00:24:28,310 --> 00:24:30,040
+your images as well
+as other stuff.
+
+765
+00:24:30,040 --> 00:24:30,850
+And there we have it.
+
+766
+00:24:30,850 --> 00:24:32,230
+The project is completely
+done.
+
+767
+00:24:32,230 --> 00:24:34,330
+I've just finished off a
+sentence and my project is now
+
+768
+00:24:34,330 --> 00:24:37,513
+ready for me to deploy to
+production if I wanted it.
+
+769
+00:24:37,513 --> 00:24:38,500
+PAUL LEWIS: I'm blown away.
+
+770
+00:24:38,500 --> 00:24:39,110
+ADDY OSMANI: It's done.
+
+771
+00:24:39,110 --> 00:24:40,480
+That is amazing.
+
+772
+00:24:40,480 --> 00:24:41,355
+PAUL LEWIS: Done
+without errors.
+
+773
+00:24:41,355 --> 00:24:41,870
+ADDY OSMANI: Done without
+errors, yeah.
+
+774
+00:24:41,870 --> 00:24:44,080
+PAUL LEWIS: That's unusual
+for me, certainly.
+
+775
+00:24:44,080 --> 00:24:46,520
+But let's carry on.
+
+776
+00:24:46,520 --> 00:24:47,350
+ADDY OSMANI: We're hoping
+that this will
+
+777
+00:24:47,350 --> 00:24:48,850
+improve you as a developer.
+
+778
+00:24:48,850 --> 00:24:49,070
+PAUL LEWIS: Whoa.
+
+779
+00:24:49,070 --> 00:24:49,920
+ADDY OSMANI: This
+is specifically
+
+780
+00:24:49,920 --> 00:24:50,850
+built for you, Paul.
+
+781
+00:24:50,850 --> 00:24:52,278
+PAUL LEWIS: Wow.
+
+782
+00:24:52,278 --> 00:24:55,880
+I am so lucky.
+
+783
+00:24:55,880 --> 00:24:58,400
+ADDY OSMANI: OK, so we've taken
+a look at the Yeoman
+
+784
+00:24:58,400 --> 00:25:02,280
+workflow and how it works
+for basic projects.
+
+785
+00:25:02,280 --> 00:25:04,480
+I'm going to talk very quickly
+about generators.
+
+786
+00:25:04,480 --> 00:25:05,010
+PAUL LEWIS: Right.
+
+787
+00:25:05,010 --> 00:25:06,310
+ADDY OSMANI: So you
+were talking.
+
+788
+00:25:06,310 --> 00:25:10,780
+PAUL LEWIS: So one of the things
+that came up when we
+
+789
+00:25:10,780 --> 00:25:13,620
+were talking about Yeoman and
+I was asking some questions
+
+790
+00:25:13,620 --> 00:25:16,520
+is, OK, you do something
+like Backbone.
+
+791
+00:25:16,520 --> 00:25:19,530
+But there are these models,
+there's controllers, there's
+
+792
+00:25:19,530 --> 00:25:21,920
+all those kinds of things that
+you do as well, right?
+
+793
+00:25:21,920 --> 00:25:25,550
+So what if I don't
+want Backbone.
+
+794
+00:25:25,550 --> 00:25:27,575
+What if I actually want to start
+a project with Angular
+
+795
+00:25:27,575 --> 00:25:30,400
+or Backbone or any of these?
+
+796
+00:25:30,400 --> 00:25:32,000
+Do I have to go through this
+multi-step process with
+
+797
+00:25:32,000 --> 00:25:34,570
+Yeoman, or can we kind of
+shortcut this whole thing?
+
+798
+00:25:34,570 --> 00:25:35,290
+ADDY OSMANI: Yeah.
+
+799
+00:25:35,290 --> 00:25:38,160
+So Yeoman, with them, we wanted
+to do something fun.
+
+800
+00:25:38,160 --> 00:25:41,210
+So we put it over the generator
+system in Rails,
+
+801
+00:25:41,210 --> 00:25:44,290
+over the node, and we make
+available a bunch of
+
+802
+00:25:44,290 --> 00:25:46,250
+different, what we
+call, scaffolds.
+
+803
+00:25:46,250 --> 00:25:46,750
+PAUL LEWIS: OK.
+
+804
+00:25:46,750 --> 00:25:48,760
+ADDY OSMANI: Scaffold
+degenerators that allow you to
+
+805
+00:25:48,760 --> 00:25:52,180
+scaffold out new projects
+using an MVC framework.
+
+806
+00:25:52,180 --> 00:25:54,340
+So we've got a bunch of them
+that we support at the moment.
+
+807
+00:25:54,340 --> 00:25:57,400
+We've got Angular,
+Backbone, Ember.
+
+808
+00:25:57,400 --> 00:25:58,560
+And a bunch of others.
+
+809
+00:25:58,560 --> 00:26:01,070
+And the idea is that rather
+than you having to go and
+
+810
+00:26:01,070 --> 00:26:04,270
+write the boilerplate for a new
+model, or controller, or
+
+811
+00:26:04,270 --> 00:26:07,130
+router, we'll actually
+do that for you.
+
+812
+00:26:07,130 --> 00:26:08,610
+Let me show you a very
+quick preview.
+
+813
+00:26:08,610 --> 00:26:11,800
+And I guess then we're going to
+be introducing our special
+
+814
+00:26:11,800 --> 00:26:12,330
+guess for today.
+
+815
+00:26:12,330 --> 00:26:12,720
+PAUL LEWIS: Oh, yes.
+
+816
+00:26:12,720 --> 00:26:14,870
+ADDY OSMANI: We've got
+a special guest.
+
+817
+00:26:14,870 --> 00:26:18,110
+So let's say that I want to
+start up a brand new project.
+
+818
+00:26:18,110 --> 00:26:20,280
+We're going to call
+this Paul L.
+
+819
+00:26:20,280 --> 00:26:21,780
+PAUL LEWIS: Oh, is
+this for me?
+
+820
+00:26:21,780 --> 00:26:23,170
+ADDY OSMANI: Is this
+jinxing it?
+
+821
+00:26:23,170 --> 00:26:23,990
+PAUL LEWIS: Well, yeah.
+
+822
+00:26:23,990 --> 00:26:24,870
+ADDY OSMANI: It has to.
+
+823
+00:26:24,870 --> 00:26:26,010
+PAUL LEWIS: It's going to
+be erratic at best.
+
+824
+00:26:26,010 --> 00:26:26,620
+ADDY OSMANI: Probably.
+
+825
+00:26:26,620 --> 00:26:27,140
+PAUL LEWIS: If I'm honest.
+
+826
+00:26:27,140 --> 00:26:29,400
+ADDY OSMANI: OK, so let's say
+I'm doing Yeoman and Backbone.
+
+827
+00:26:29,400 --> 00:26:31,770
+I want to create a new
+Backbone application.
+
+828
+00:26:31,770 --> 00:26:35,550
+And what you've seen it go and
+do just now is scaffold out
+
+829
+00:26:35,550 --> 00:26:38,080
+everything I need for a very,
+very basic Backbone app.
+
+830
+00:26:38,080 --> 00:26:39,150
+I've got my index.
+
+831
+00:26:39,150 --> 00:26:39,870
+I've got jQuery.
+
+832
+00:26:39,870 --> 00:26:42,510
+I've got Underscore
+or Low-Dash.
+
+833
+00:26:42,510 --> 00:26:44,260
+I've got a bunch
+of unit tests.
+
+834
+00:26:44,260 --> 00:26:47,580
+And I've also got my first
+set of application files.
+
+835
+00:26:47,580 --> 00:26:51,680
+So I've got my first router, my
+first view, template files,
+
+836
+00:26:51,680 --> 00:26:53,460
+model, collection.
+
+837
+00:26:53,460 --> 00:26:55,750
+And if you go into these files,
+it'll actually contain
+
+838
+00:26:55,750 --> 00:26:58,170
+the boilerplate for each of
+those pieces for you.
+
+839
+00:26:58,170 --> 00:26:59,870
+So you can just focus
+on writing the
+
+840
+00:26:59,870 --> 00:27:01,480
+logic for your app.
+
+841
+00:27:01,480 --> 00:27:03,700
+Now, that's cool and all.
+
+842
+00:27:03,700 --> 00:27:07,080
+But I think people will like to
+see what the Angular guys
+
+843
+00:27:07,080 --> 00:27:07,715
+have been working on.
+
+844
+00:27:07,715 --> 00:27:08,350
+PAUL LEWIS: Oh, yeah.
+
+845
+00:27:08,350 --> 00:27:10,060
+ADDY OSMANI: This has
+been pretty awesome.
+
+846
+00:27:10,060 --> 00:27:10,860
+PAUL LEWIS: Absolutely.
+
+847
+00:27:10,860 --> 00:27:15,810
+So the AngularJS team
+were pretty awesome.
+
+848
+00:27:15,810 --> 00:27:17,615
+They came in early on in
+the Yeoman project.
+
+849
+00:27:17,615 --> 00:27:21,170
+And they were like, well, can we
+actually build a generator
+
+850
+00:27:21,170 --> 00:27:24,050
+that can replace some of the
+other Angular projects at the
+
+851
+00:27:24,050 --> 00:27:25,990
+moment that are trying to help
+people with scaffolding?
+
+852
+00:27:25,990 --> 00:27:28,680
+And can Yeoman help give a
+much better generation
+
+853
+00:27:28,680 --> 00:27:30,130
+experience for people so
+they don't have to
+
+854
+00:27:30,130 --> 00:27:31,660
+write as much code?
+
+855
+00:27:31,660 --> 00:27:35,810
+So I'm happy to introduce Brian
+Ford from the Angular
+
+856
+00:27:35,810 --> 00:27:38,570
+team who is going to be showing
+us some of the stuff
+
+857
+00:27:38,570 --> 00:27:42,800
+that he's been working on
+Angular to do with Yeoman.
+
+858
+00:27:42,800 --> 00:27:43,620
+BRIAN FORD: All right.
+
+859
+00:27:43,620 --> 00:27:45,040
+Hey, guys.
+
+860
+00:27:45,040 --> 00:27:48,830
+So as Addy said, I'm from
+the Angular team.
+
+861
+00:27:48,830 --> 00:27:54,210
+I was tasked with doing some
+exploratory work and seeing
+
+862
+00:27:54,210 --> 00:27:56,740
+how Yeoman could really
+help us out.
+
+863
+00:27:56,740 --> 00:28:00,200
+And I was really pleasantly
+surprised.
+
+864
+00:28:00,200 --> 00:28:02,330
+We experimented with this
+thing that we called the
+
+865
+00:28:02,330 --> 00:28:04,990
+Angular seed, which
+was kind of like a
+
+866
+00:28:04,990 --> 00:28:06,180
+boilerplate for Angular.
+
+867
+00:28:06,180 --> 00:28:11,430
+So it gave you kind of a
+folder structure and an
+
+868
+00:28:11,430 --> 00:28:15,650
+index.html that's pretty
+inspired by HTML5 boilerplate,
+
+869
+00:28:15,650 --> 00:28:17,380
+and some other stuff.
+
+870
+00:28:17,380 --> 00:28:20,250
+And we have a pretty vibrant
+open source community.
+
+871
+00:28:20,250 --> 00:28:24,280
+And we had a lot of people work
+this project and kind of
+
+872
+00:28:24,280 --> 00:28:27,380
+say, well, I want
+SaaS support.
+
+873
+00:28:27,380 --> 00:28:30,880
+I want Bootstrap in there,
+or I want RequireJS.
+
+874
+00:28:30,880 --> 00:28:32,990
+I want these different things.
+
+875
+00:28:32,990 --> 00:28:37,680
+And so we were really excited
+about Yeoman because it was
+
+876
+00:28:37,680 --> 00:28:39,440
+really a pain to--
+
+877
+00:28:39,440 --> 00:28:41,710
+every time we released a new
+version or there were some API
+
+878
+00:28:41,710 --> 00:28:44,856
+change, all these projects
+had to change.
+
+879
+00:28:44,856 --> 00:28:46,310
+And it was just a big hassle.
+
+880
+00:28:46,310 --> 00:28:50,530
+And there wasn't like one
+definitive like here's where
+
+881
+00:28:50,530 --> 00:28:53,846
+you should go for the best
+practices for starting a new
+
+882
+00:28:53,846 --> 00:28:54,820
+Angular app.
+
+883
+00:28:54,820 --> 00:28:58,260
+So I think Yeoman's a really
+exciting project for not just
+
+884
+00:28:58,260 --> 00:29:03,570
+Angular, but any of these new
+MVC frameworks to look at.
+
+885
+00:29:03,570 --> 00:29:09,750
+So with that in mind, some of
+the generators that I wrote,
+
+886
+00:29:09,750 --> 00:29:14,970
+they not only just generate
+models, views, controllers,
+
+887
+00:29:14,970 --> 00:29:18,130
+directives, which is something
+awesome in Angular.
+
+888
+00:29:18,130 --> 00:29:20,050
+By the way, if you guys haven't
+checked out Angular
+
+889
+00:29:20,050 --> 00:29:21,850
+yet, you definitely should.
+
+890
+00:29:21,850 --> 00:29:23,480
+It's a really cool library.
+
+891
+00:29:23,480 --> 00:29:25,640
+It's a really fresh
+approach, I think.
+
+892
+00:29:25,640 --> 00:29:27,840
+And I think that you'll find
+that it also really helps
+
+893
+00:29:27,840 --> 00:29:30,240
+speed up the app building
+process.
+
+894
+00:29:30,240 --> 00:29:31,210
+So a quick plug there.
+
+895
+00:29:31,210 --> 00:29:33,760
+Check it out if you haven't.
+
+896
+00:29:33,760 --> 00:29:34,790
+But it does all these things.
+
+897
+00:29:34,790 --> 00:29:38,850
+But it not only does these,
+but it'll rewrite routing
+
+898
+00:29:38,850 --> 00:29:43,400
+configurations, and it makes
+little tweaks to other files
+
+899
+00:29:43,400 --> 00:29:45,180
+in a really non-destructive
+way.
+
+900
+00:29:45,180 --> 00:29:48,440
+So we're not just rewriting
+some file every time.
+
+901
+00:29:48,440 --> 00:29:50,260
+It's going in there, and
+it's rewriting things.
+
+902
+00:29:50,260 --> 00:29:51,930
+So it keep all of
+your changes.
+
+903
+00:29:51,930 --> 00:29:56,000
+But as you add new routes and
+things, it'll automatically
+
+904
+00:29:56,000 --> 00:29:59,570
+give you that boilerplate code
+there so you can just keep
+
+905
+00:29:59,570 --> 00:30:01,970
+hacking away on your app.
+
+906
+00:30:01,970 --> 00:30:06,270
+So I'm going to switch then over
+to my screen and give a
+
+907
+00:30:06,270 --> 00:30:11,060
+quick demo of what this
+actually looks like.
+
+908
+00:30:11,060 --> 00:30:12,400
+All right.
+
+909
+00:30:12,400 --> 00:30:13,720
+Oh, there we go.
+
+910
+00:30:13,720 --> 00:30:15,560
+PAUL LEWIS: Look at those
+gorgeous people on his screen.
+
+911
+00:30:15,560 --> 00:30:16,940
+ADDY OSMANI: There
+are so pretty.
+
+912
+00:30:16,940 --> 00:30:19,610
+PAUL LEWIS: Oh, I know.
+
+913
+00:30:19,610 --> 00:30:21,710
+BRIAN FORD: So here we
+are at our terminal.
+
+914
+00:30:21,710 --> 00:30:26,000
+I'm going to do a Yeoman
+Init Angular.
+
+915
+00:30:26,000 --> 00:30:28,660
+
+916
+00:30:28,660 --> 00:30:31,270
+So Addy showed off what happens
+when you run Yeoman
+
+917
+00:30:31,270 --> 00:30:34,940
+Init Backbone, I think it was.
+
+918
+00:30:34,940 --> 00:30:38,020
+But we have pretty much the
+same thing going on here,
+
+919
+00:30:38,020 --> 00:30:39,940
+perhaps a few less choices.
+
+920
+00:30:39,940 --> 00:30:42,720
+So would you like to include
+Twitter Bootstrap?
+
+921
+00:30:42,720 --> 00:30:43,640
+Yes, for sure.
+
+922
+00:30:43,640 --> 00:30:45,370
+Twitter Bootstrap's awesome.
+
+923
+00:30:45,370 --> 00:30:48,920
+Would you like to use Twitter
+Bootstrap for Compass, which
+
+924
+00:30:48,920 --> 00:30:50,420
+is an extension of SaaS?
+
+925
+00:30:50,420 --> 00:30:52,300
+So it's the SaaS version.
+
+926
+00:30:52,300 --> 00:30:53,820
+Yes, that's awesome.
+
+927
+00:30:53,820 --> 00:30:55,530
+I love SaaS.
+
+928
+00:30:55,530 --> 00:30:56,590
+So there we go.
+
+929
+00:30:56,590 --> 00:30:56,950
+Bam.
+
+930
+00:30:56,950 --> 00:30:59,950
+It created a ton of files.
+
+931
+00:30:59,950 --> 00:31:03,540
+You'll see there are a lot of
+these different style things.
+
+932
+00:31:03,540 --> 00:31:06,910
+But then also it gives you some
+common Angular files,
+
+933
+00:31:06,910 --> 00:31:10,080
+sets up your application, sets
+up a single controller.
+
+934
+00:31:10,080 --> 00:31:11,570
+And it also sets up--
+
+935
+00:31:11,570 --> 00:31:13,420
+here, this is one of the coolest
+things about the
+
+936
+00:31:13,420 --> 00:31:18,440
+Angular generators, is it also
+sets up a unit test by default
+
+937
+00:31:18,440 --> 00:31:19,490
+for everything that you make.
+
+938
+00:31:19,490 --> 00:31:21,940
+So you're already set up
+to do unit testing.
+
+939
+00:31:21,940 --> 00:31:24,475
+You don't have to fiddle
+around with
+
+940
+00:31:24,475 --> 00:31:25,430
+some boilerplate code.
+
+941
+00:31:25,430 --> 00:31:27,630
+It'll automatically
+put that in there.
+
+942
+00:31:27,630 --> 00:31:28,680
+And so that's really cool.
+
+943
+00:31:28,680 --> 00:31:31,940
+Unit testing's a really, really
+huge part of developing
+
+944
+00:31:31,940 --> 00:31:32,770
+AngularJS apps.
+
+945
+00:31:32,770 --> 00:31:35,920
+We want web apps to be really
+robust and testable.
+
+946
+00:31:35,920 --> 00:31:39,170
+And we want to have these
+tools to support
+
+947
+00:31:39,170 --> 00:31:40,690
+that sort of workflow.
+
+948
+00:31:40,690 --> 00:31:44,290
+So let's see what this
+looks like right now.
+
+949
+00:31:44,290 --> 00:31:46,960
+
+950
+00:31:46,960 --> 00:31:48,480
+So my Linus box is goofy.
+
+951
+00:31:48,480 --> 00:31:52,000
+I think it's going to
+launch up Firefox.
+
+952
+00:31:52,000 --> 00:31:53,800
+But we're going to ignore
+that and go to Chrome.
+
+953
+00:31:53,800 --> 00:31:56,100
+There we go there's Firefox.
+
+954
+00:31:56,100 --> 00:31:57,270
+Cheerio!
+
+955
+00:31:57,270 --> 00:31:57,840
+All right.
+
+956
+00:31:57,840 --> 00:31:59,215
+PAUL LEWIS: Oh, the irony.
+
+957
+00:31:59,215 --> 00:32:02,000
+BRIAN FORD: Yeah, the irony.
+
+958
+00:32:02,000 --> 00:32:05,840
+So here you can see you might
+recognize the Twitter
+
+959
+00:32:05,840 --> 00:32:07,850
+Bootstrap here.
+
+960
+00:32:07,850 --> 00:32:10,750
+And it says we have these
+things installed.
+
+961
+00:32:10,750 --> 00:32:16,375
+So let's go ahead and go into
+Apps Script Controller Main.
+
+962
+00:32:16,375 --> 00:32:18,260
+Ooh, that's some big font.
+
+963
+00:32:18,260 --> 00:32:19,120
+All right.
+
+964
+00:32:19,120 --> 00:32:21,930
+Let's add another
+item in there.
+
+965
+00:32:21,930 --> 00:32:24,210
+Let's see, technically we
+also have Bootstrap,
+
+966
+00:32:24,210 --> 00:32:27,350
+so let's add that.
+
+967
+00:32:27,350 --> 00:32:31,730
+And we save it, and we get that
+auto-refresh awesomeness.
+
+968
+00:32:31,730 --> 00:32:33,760
+So that's pretty cool.
+
+969
+00:32:33,760 --> 00:32:39,870
+But let's see how we can further
+support building an
+
+970
+00:32:39,870 --> 00:32:41,920
+Angular app with Yeoman.
+
+971
+00:32:41,920 --> 00:32:46,040
+So let's say I want
+another route.
+
+972
+00:32:46,040 --> 00:32:49,760
+Maybe I'll open up a new tab
+in my terminal here.
+
+973
+00:32:49,760 --> 00:32:56,810
+So we would do Yeoman
+Init Angular route.
+
+974
+00:32:56,810 --> 00:32:58,765
+Maybe I'll do like "hi, Paul,"
+or something like that.
+
+975
+00:32:58,765 --> 00:33:01,750
+PAUL LEWIS: I like this theme.
+
+976
+00:33:01,750 --> 00:33:03,070
+ADDY OSMANI: I think perhaps
+he was referring
+
+977
+00:33:03,070 --> 00:33:03,820
+to our other Paul.
+
+978
+00:33:03,820 --> 00:33:06,340
+PAUL LEWIS: Oh.
+
+979
+00:33:06,340 --> 00:33:08,700
+BRIAN FORD: We can do a "hi,
+other Paul" as well.
+
+980
+00:33:08,700 --> 00:33:09,690
+PAUL LEWIS: I said at
+the start, we're
+
+981
+00:33:09,690 --> 00:33:11,050
+hot-swappable, you know?
+
+982
+00:33:11,050 --> 00:33:12,525
+You just pick a Paul.
+
+983
+00:33:12,525 --> 00:33:14,750
+It's all good.
+
+984
+00:33:14,750 --> 00:33:16,200
+BRIAN FORD: Full Paul
+interpolation?
+
+985
+00:33:16,200 --> 00:33:16,950
+PAUL LEWIS: Absolutely.
+
+986
+00:33:16,950 --> 00:33:19,430
+BRIAN FORD: All right.
+
+987
+00:33:19,430 --> 00:33:21,280
+PAUL LEWIS: You get increasing
+amount of hair.
+
+988
+00:33:21,280 --> 00:33:23,790
+BRIAN FORD: And you can actually
+just go to "hi,
+
+989
+00:33:23,790 --> 00:33:27,870
+Paul." And this is the
+"hi, Paul" view.
+
+990
+00:33:27,870 --> 00:33:31,040
+But let's add something in
+here so that way we can
+
+991
+00:33:31,040 --> 00:33:32,290
+navigate around.
+
+992
+00:33:32,290 --> 00:33:34,510
+
+993
+00:33:34,510 --> 00:33:36,880
+It's hard to scroll through
+these things we you have this
+
+994
+00:33:36,880 --> 00:33:38,240
+awesome huge text.
+
+995
+00:33:38,240 --> 00:33:40,190
+OK.
+
+996
+00:33:40,190 --> 00:33:44,170
+So maybe we add a nav
+element here.
+
+997
+00:33:44,170 --> 00:33:47,370
+
+998
+00:33:47,370 --> 00:34:02,530
+And we say that this goes to
+"hi, Paul." One of the things
+
+999
+00:34:02,530 --> 00:34:08,280
+that we're working on right
+now is supporting HTML5
+
+1000
+00:34:08,280 --> 00:34:11,520
+routing by defaults in Yeoman.
+
+1001
+00:34:11,520 --> 00:34:13,230
+Right now we don't do that.
+
+1002
+00:34:13,230 --> 00:34:16,000
+But I think there's actually a
+pending pull request that adds
+
+1003
+00:34:16,000 --> 00:34:21,250
+that so that you don't have to
+have this ugly little hashmap.
+
+1004
+00:34:21,250 --> 00:34:23,123
+Then we can just do
+home, I guess.
+
+1005
+00:34:23,123 --> 00:34:29,762
+
+1006
+00:34:29,762 --> 00:34:32,460
+All right, so we've got home and
+we've got "hi, Paul," so
+
+1007
+00:34:32,460 --> 00:34:33,100
+that's pretty cool.
+
+1008
+00:34:33,100 --> 00:34:36,050
+We already set up some really
+simple routing.
+
+1009
+00:34:36,050 --> 00:34:38,920
+And if we check our app here,
+here's where it actually set
+
+1010
+00:34:38,920 --> 00:34:39,949
+up this routing.
+
+1011
+00:34:39,949 --> 00:34:43,670
+So you'll see we have both the
+"hi, Paul" and the "hi, other
+
+1012
+00:34:43,670 --> 00:34:47,290
+Paul." And it already configured
+a controller and
+
+1013
+00:34:47,290 --> 00:34:49,320
+the view, and it has it
+already hooked up.
+
+1014
+00:34:49,320 --> 00:34:52,300
+And if we wanted to
+do maybe add like
+
+1015
+00:34:52,300 --> 00:34:56,960
+some ID in here, right?
+
+1016
+00:34:56,960 --> 00:35:01,360
+Then this will persist
+even if I were to add
+
+1017
+00:35:01,360 --> 00:35:02,540
+another route to it.
+
+1018
+00:35:02,540 --> 00:35:05,710
+So all of these changes that you
+make, they're not going to
+
+1019
+00:35:05,710 --> 00:35:08,880
+get overwritten by
+the generators.
+
+1020
+00:35:08,880 --> 00:35:09,360
+ADDY OSMANI: That's awesome.
+
+1021
+00:35:09,360 --> 00:35:10,060
+It's seems like--
+
+1022
+00:35:10,060 --> 00:35:10,590
+BRIAN FORD: And actually
+there's--
+
+1023
+00:35:10,590 --> 00:35:11,830
+sorry, what was that?
+
+1024
+00:35:11,830 --> 00:35:14,490
+ADDY OSMANI: It seems like
+almost the process of building
+
+1025
+00:35:14,490 --> 00:35:17,540
+Angular app has in many cases
+been replaced by just a few
+
+1026
+00:35:17,540 --> 00:35:19,200
+lines of the command line.
+
+1027
+00:35:19,200 --> 00:35:21,010
+BRIAN FORD: Yeah, I mean,
+it's very simply.
+
+1028
+00:35:21,010 --> 00:35:24,200
+You just write a few things in
+the command line, and then you
+
+1029
+00:35:24,200 --> 00:35:26,320
+basically just open up your
+controller, and you're just
+
+1030
+00:35:26,320 --> 00:35:28,890
+like right in the meat and
+potatoes of your app.
+
+1031
+00:35:28,890 --> 00:35:31,760
+So, for instance, if I wanted
+to make it so I could edit
+
+1032
+00:35:31,760 --> 00:35:35,520
+this list right now, it's
+actually really super simple.
+
+1033
+00:35:35,520 --> 00:35:38,150
+So we just want to expose--
+
+1034
+00:35:38,150 --> 00:35:41,080
+this is like Angular jargon
+here, but we just want to
+
+1035
+00:35:41,080 --> 00:35:50,560
+expose onto our scope a method
+that maybe adds to our list of
+
+1036
+00:35:50,560 --> 00:35:53,100
+awesome things.
+
+1037
+00:35:53,100 --> 00:35:56,140
+So I'll push scope.new
+awesome thing.
+
+1038
+00:35:56,140 --> 00:36:01,740
+
+1039
+00:36:01,740 --> 00:36:07,230
+And this is like some awesome
+Angular almost voodoo we have
+
+1040
+00:36:07,230 --> 00:36:08,280
+going on here.
+
+1041
+00:36:08,280 --> 00:36:17,390
+So if we go over here to our
+main view, we can just add an
+
+1042
+00:36:17,390 --> 00:36:20,220
+input box here.
+
+1043
+00:36:20,220 --> 00:36:27,770
+And we can say ng-model equals
+new awesome thing and then
+
+1044
+00:36:27,770 --> 00:36:30,570
+maybe we want an input.
+
+1045
+00:36:30,570 --> 00:36:33,860
+I'll make this look nice because
+we're using Bootstrap,
+
+1046
+00:36:33,860 --> 00:36:35,110
+ng-click=add.
+
+1047
+00:36:35,110 --> 00:36:41,930
+
+1048
+00:36:41,930 --> 00:36:43,187
+PAUL LEWIS: I love this
+Because you've
+
+1049
+00:36:43,187 --> 00:36:44,700
+gone straight into--
+
+1050
+00:36:44,700 --> 00:36:47,640
+like we're saying, all the set
+up-y type stuff, the really,
+
+1051
+00:36:47,640 --> 00:36:50,980
+really dull stuff, if I'm
+honest, like the wiring this
+
+1052
+00:36:50,980 --> 00:36:54,410
+and the-- less wiring and
+more actual fun stuff.
+
+1053
+00:36:54,410 --> 00:36:54,580
+ADDY OSMANI: Yeah.
+
+1054
+00:36:54,580 --> 00:36:54,900
+PAUL LEWIS: Let's face it.
+
+1055
+00:36:54,900 --> 00:36:56,630
+ADDY OSMANI: I'm guessing that
+if he kept on going for like
+
+1056
+00:36:56,630 --> 00:36:59,340
+another 10 or 20 minutes, he
+would easily have a nice
+
+1057
+00:36:59,340 --> 00:37:00,690
+prototype of his app.
+
+1058
+00:37:00,690 --> 00:37:01,460
+PAUL LEWIS: I love it.
+
+1059
+00:37:01,460 --> 00:37:02,470
+ADDY OSMANI: It's awesome.
+
+1060
+00:37:02,470 --> 00:37:04,050
+PAUL LEWIS: I've got a feeling
+he's about to add
+
+1061
+00:37:04,050 --> 00:37:05,730
+something to this list.
+
+1062
+00:37:05,730 --> 00:37:06,060
+BRIAN FORD: Yup.
+
+1063
+00:37:06,060 --> 00:37:06,840
+PAUL LEWIS: Boom, there it is.
+
+1064
+00:37:06,840 --> 00:37:07,260
+ADDY OSMANI: Sweet.
+
+1065
+00:37:07,260 --> 00:37:07,940
+That is awesome.
+
+1066
+00:37:07,940 --> 00:37:08,640
+BRIAN FORD: I don't know if you
+guys can see it very well.
+
+1067
+00:37:08,640 --> 00:37:10,800
+ADDY OSMANI: Yes, yes, we can.
+
+1068
+00:37:10,800 --> 00:37:13,820
+BRIAN FORD: Yeah, again, I think
+Angular and Yeoman are a
+
+1069
+00:37:13,820 --> 00:37:16,690
+great team together.
+
+1070
+00:37:16,690 --> 00:37:19,920
+Angular really focuses on
+minimal boilerplate.
+
+1071
+00:37:19,920 --> 00:37:22,300
+But no matter what framework you
+use, you're still going to
+
+1072
+00:37:22,300 --> 00:37:25,910
+have different references
+across files, different
+
+1073
+00:37:25,910 --> 00:37:28,200
+controllers, and views and
+things that you need to link
+
+1074
+00:37:28,200 --> 00:37:30,880
+together when you're making
+these new things.
+
+1075
+00:37:30,880 --> 00:37:33,060
+And so Yeoman is really
+cool for that.
+
+1076
+00:37:33,060 --> 00:37:35,640
+And plus you get all of the
+awesome things that Addy
+
+1077
+00:37:35,640 --> 00:37:37,420
+mentioned earlier.
+
+1078
+00:37:37,420 --> 00:37:39,250
+The build process is there.
+
+1079
+00:37:39,250 --> 00:37:43,270
+The testing is there, just all
+these things, the image
+
+1080
+00:37:43,270 --> 00:37:43,930
+minification.
+
+1081
+00:37:43,930 --> 00:37:47,270
+So it's just really,
+really awesome.
+
+1082
+00:37:47,270 --> 00:37:50,250
+I couldn't imagine developing
+apps any other
+
+1083
+00:37:50,250 --> 00:37:54,260
+way since using Yeoman.
+
+1084
+00:37:54,260 --> 00:37:55,690
+PAUL LEWIS: That's what you
+want to hear, right?
+
+1085
+00:37:55,690 --> 00:37:56,060
+ADDY OSMANI: Exactly.
+
+1086
+00:37:56,060 --> 00:37:57,330
+PAUL LEWIS: That's wonderful.
+
+1087
+00:37:57,330 --> 00:37:58,070
+Awesome.
+
+1088
+00:37:58,070 --> 00:38:00,530
+Yeah, thank you so much, Brian,
+for showing us through
+
+1089
+00:38:00,530 --> 00:38:01,520
+the Angular generators.
+
+1090
+00:38:01,520 --> 00:38:02,340
+That's awesome.
+
+1091
+00:38:02,340 --> 00:38:02,740
+PAUL LEWIS: Yeah.
+
+1092
+00:38:02,740 --> 00:38:05,240
+I guess what we should do is we
+should take a look at the
+
+1093
+00:38:05,240 --> 00:38:05,960
+questions on the Moderator.
+
+1094
+00:38:05,960 --> 00:38:06,410
+ADDY OSMANI: Yeah.
+
+1095
+00:38:06,410 --> 00:38:08,410
+We're almost out of time so
+let's look at some questions.
+
+1096
+00:38:08,410 --> 00:38:09,230
+PAUL LEWIS: Yeah, let's
+see what we've got.
+
+1097
+00:38:09,230 --> 00:38:13,040
+So we maybe not be able to get
+through all 13 questions, but
+
+1098
+00:38:13,040 --> 00:38:13,630
+thank you for them.
+
+1099
+00:38:13,630 --> 00:38:16,036
+And we will obviously get
+through the ones that we can.
+
+1100
+00:38:16,036 --> 00:38:16,830
+ADDY OSMANI: Yeah.
+
+1101
+00:38:16,830 --> 00:38:19,370
+PAUL LEWIS: So let's start
+with the top one.
+
+1102
+00:38:19,370 --> 00:38:21,440
+So first, "congrats on the
+successful launch." That's
+
+1103
+00:38:21,440 --> 00:38:24,310
+very kind of you. "Plans on
+letting people define their
+
+1104
+00:38:24,310 --> 00:38:25,180
+own code structure.
+
+1105
+00:38:25,180 --> 00:38:27,550
+Today it's rather hard to
+introduce Yeoman into an
+
+1106
+00:38:27,550 --> 00:38:29,820
+existing environment due to
+the requirements on folder
+
+1107
+00:38:29,820 --> 00:38:32,420
+structure, et cetera." Also,
+as a bonus here, "Windows
+
+1108
+00:38:32,420 --> 00:38:33,730
+support soon?"
+
+1109
+00:38:33,730 --> 00:38:36,200
+ADDY OSMANI: So people have been
+requesting the ability to
+
+1110
+00:38:36,200 --> 00:38:39,640
+drop in existing projects into
+Yeoman and just have it work.
+
+1111
+00:38:39,640 --> 00:38:41,360
+And we totally get that.
+
+1112
+00:38:41,360 --> 00:38:44,720
+So we're taking a look at better
+initial configuration
+
+1113
+00:38:44,720 --> 00:38:47,920
+so that if you have a project
+with a different directory
+
+1114
+00:38:47,920 --> 00:38:51,220
+structure to what we think you
+should be using, we're going
+
+1115
+00:38:51,220 --> 00:38:54,460
+to give you a nice easy way in
+the next couple of releases to
+
+1116
+00:38:54,460 --> 00:38:57,180
+just sort of say, OK, well,
+here's where my scripts are.
+
+1117
+00:38:57,180 --> 00:38:58,570
+Here's where my styles are.
+
+1118
+00:38:58,570 --> 00:39:00,500
+And here's how the rest of
+my app is structured.
+
+1119
+00:39:00,500 --> 00:39:03,135
+And hopefully, you'll be able
+to just use Yeoman right out
+
+1120
+00:39:03,135 --> 00:39:04,590
+of the box without
+too many issues.
+
+1121
+00:39:04,590 --> 00:39:08,680
+PAUL LEWIS: So on that, though,
+it's presumably worth
+
+1122
+00:39:08,680 --> 00:39:10,550
+saying that Yeoman still
+is opinionated.
+
+1123
+00:39:10,550 --> 00:39:11,090
+ADDY OSMANI: Yes.
+
+1124
+00:39:11,090 --> 00:39:14,470
+PAUL LEWIS: And that is
+a core part of Yeoman.
+
+1125
+00:39:14,470 --> 00:39:15,350
+So it's probably, what?
+
+1126
+00:39:15,350 --> 00:39:16,600
+A compromise somewhere
+in there?
+
+1127
+00:39:16,600 --> 00:39:17,033
+ADDY OSMANI: Yeah.
+
+1128
+00:39:17,033 --> 00:39:19,140
+PAUL LEWIS: So it's like,
+yes, you can tweak
+
+1129
+00:39:19,140 --> 00:39:19,660
+things a little bit.
+
+1130
+00:39:19,660 --> 00:39:21,510
+But do expect it to still
+be Yeoman-ish.
+
+1131
+00:39:21,510 --> 00:39:22,190
+ADDY OSMANI: Absolutely.
+
+1132
+00:39:22,190 --> 00:39:26,040
+And we always tell people if
+you find that what you're
+
+1133
+00:39:26,040 --> 00:39:28,720
+trying to do is a little bit
+too much outside of our own
+
+1134
+00:39:28,720 --> 00:39:31,900
+opinions, we do recommend,
+though, do check out Grunts,
+
+1135
+00:39:31,900 --> 00:39:34,630
+which is a project that
+Yeoman builds on.
+
+1136
+00:39:34,630 --> 00:39:37,090
+Because it allows you to
+customize a lot more.
+
+1137
+00:39:37,090 --> 00:39:40,380
+It's more for those people that
+know what they're doing.
+
+1138
+00:39:40,380 --> 00:39:43,080
+They've got a good idea of all
+the tools they want to support
+
+1139
+00:39:43,080 --> 00:39:45,360
+and want something a
+lot more custom.
+
+1140
+00:39:45,360 --> 00:39:47,630
+There's also a question
+about Windows support.
+
+1141
+00:39:47,630 --> 00:39:50,860
+So we don't officially support
+Windows just yet.
+
+1142
+00:39:50,860 --> 00:39:54,110
+But I will say I was doing
+a tooling workshop in
+
+1143
+00:39:54,110 --> 00:39:55,270
+Amsterdam last week.
+
+1144
+00:39:55,270 --> 00:39:57,890
+And I'd say half the class had
+Windows boxes, and they were
+
+1145
+00:39:57,890 --> 00:39:59,370
+all up and using Yeoman.
+
+1146
+00:39:59,370 --> 00:40:01,490
+So it does work at the moment.
+
+1147
+00:40:01,490 --> 00:40:04,150
+There are one or two little
+tweaks we still have to make
+
+1148
+00:40:04,150 --> 00:40:05,670
+to improve the user
+experience.
+
+1149
+00:40:05,670 --> 00:40:07,170
+But Windows support is coming.
+
+1150
+00:40:07,170 --> 00:40:08,590
+It's definitely something
+that's on our radar.
+
+1151
+00:40:08,590 --> 00:40:09,860
+PAUL LEWIS: Awesome.
+
+1152
+00:40:09,860 --> 00:40:14,910
+OK, so "can Yeoman be expanded
+for other languages, such as
+
+1153
+00:40:14,910 --> 00:40:16,230
+PHP?"
+
+1154
+00:40:16,230 --> 00:40:16,900
+ADDY OSMANI: Interesting
+question.
+
+1155
+00:40:16,900 --> 00:40:19,850
+So quite a few people have also
+been saying, you know,
+
+1156
+00:40:19,850 --> 00:40:21,380
+I've got an existing back end.
+
+1157
+00:40:21,380 --> 00:40:24,470
+Maybe it's written in PHP,
+or Rails, or .net,
+
+1158
+00:40:24,470 --> 00:40:25,450
+or something else.
+
+1159
+00:40:25,450 --> 00:40:28,540
+And we want to try helping
+developers with the broader
+
+1160
+00:40:28,540 --> 00:40:29,470
+stack as well.
+
+1161
+00:40:29,470 --> 00:40:31,790
+There are a ton of different
+variations on that, though.
+
+1162
+00:40:31,790 --> 00:40:34,490
+And we obviously can't help
+everybody with everything.
+
+1163
+00:40:34,490 --> 00:40:37,270
+So what we're going to try doing
+some time in the near
+
+1164
+00:40:37,270 --> 00:40:40,830
+future is giving you a solution
+for how you can
+
+1165
+00:40:40,830 --> 00:40:43,710
+integrate your existing back
+end with a front end that's
+
+1166
+00:40:43,710 --> 00:40:45,620
+powered by a Yeoman workflow.
+
+1167
+00:40:45,620 --> 00:40:47,220
+It's definitely something
+that we're looking at.
+
+1168
+00:40:47,220 --> 00:40:49,330
+And it'll probably just take
+a little while longer to
+
+1169
+00:40:49,330 --> 00:40:50,890
+properly think through
+the design of that.
+
+1170
+00:40:50,890 --> 00:40:52,900
+PAUL LEWIS: OK, that actually
+taps into another question.
+
+1171
+00:40:52,900 --> 00:40:55,365
+So you've answered that one
+by proxy, which is great.
+
+1172
+00:40:55,365 --> 00:40:57,540
+"It would be awesome"--
+apparently--
+
+1173
+00:40:57,540 --> 00:41:02,280
+"if Wordpress and other CMS
+had integration as well."
+
+1174
+00:41:02,280 --> 00:41:03,990
+ADDY OSMANI: It's interesting
+when you say integration.
+
+1175
+00:41:03,990 --> 00:41:05,420
+What do you think integration
+means there?
+
+1176
+00:41:05,420 --> 00:41:08,630
+PAUL LEWIS: Well, it's
+a good question.
+
+1177
+00:41:08,630 --> 00:41:13,170
+Well, the question here from
+Simon, he's sort of saying
+
+1178
+00:41:13,170 --> 00:41:16,200
+"Wordpress database, HTML5
+boilerplate-themed build
+
+1179
+00:41:16,200 --> 00:41:18,050
+script, boo."
+
+1180
+00:41:18,050 --> 00:41:21,220
+ADDY OSMANI: So, actually, a
+nice fellow called Romain
+
+1181
+00:41:21,220 --> 00:41:23,700
+Berger came up with a Wordpress
+
+1182
+00:41:23,700 --> 00:41:24,890
+generator for Yeoman.
+
+1183
+00:41:24,890 --> 00:41:27,110
+I haven't taken a full
+look at it just yet.
+
+1184
+00:41:27,110 --> 00:41:29,820
+But the idea there is that
+you can actually generate
+
+1185
+00:41:29,820 --> 00:41:33,790
+Wordpress projects
+using Yeoman.
+
+1186
+00:41:33,790 --> 00:41:35,980
+PAUL LEWIS: I guess that
+seems to be what
+
+1187
+00:41:35,980 --> 00:41:36,530
+the question's asking.
+
+1188
+00:41:36,530 --> 00:41:37,950
+It's like, OK, yeah.
+
+1189
+00:41:37,950 --> 00:41:42,120
+Because if you were to scaffold
+out today at front
+
+1190
+00:41:42,120 --> 00:41:47,150
+end, it would be, I suppose,
+ignorant of any particular CMS
+
+1191
+00:41:47,150 --> 00:41:47,530
+or whatever.
+
+1192
+00:41:47,530 --> 00:41:47,785
+ADDY OSMANI: Yeah.
+
+1193
+00:41:47,785 --> 00:41:49,885
+PAUL LEWIS: So it's good to
+know that there are, in
+
+1194
+00:41:49,885 --> 00:41:50,810
+theory, generators.
+
+1195
+00:41:50,810 --> 00:41:53,030
+And yes, I mean, that's the
+point of the community, right?
+
+1196
+00:41:53,030 --> 00:41:53,530
+ADDY OSMANI: Definitely.
+
+1197
+00:41:53,530 --> 00:41:56,010
+PAUL LEWIS: If you want to write
+these generators, you
+
+1198
+00:41:56,010 --> 00:41:57,540
+can look at the existing
+generators, you
+
+1199
+00:41:57,540 --> 00:41:58,970
+can create your own.
+
+1200
+00:41:58,970 --> 00:42:00,860
+There's pull requests, as
+you say, for Wordpress.
+
+1201
+00:42:00,860 --> 00:42:01,220
+ADDY OSMANI: Absolutely.
+
+1202
+00:42:01,220 --> 00:42:02,770
+PAUL LEWIS: So get involved.
+
+1203
+00:42:02,770 --> 00:42:03,150
+Help out.
+
+1204
+00:42:03,150 --> 00:42:04,600
+ADDY OSMANI: Yeah, that'd
+be awesome.
+
+1205
+00:42:04,600 --> 00:42:07,200
+PAUL LEWIS: That's what we're
+hoping people will do.
+
+1206
+00:42:07,200 --> 00:42:08,920
+ADDY OSMANI: Let's take
+one more question and
+
+1207
+00:42:08,920 --> 00:42:09,730
+then we're going to--
+
+1208
+00:42:09,730 --> 00:42:13,040
+PAUL LEWIS: Can you talk a
+little about Yeoman Insight?
+
+1209
+00:42:13,040 --> 00:42:14,750
+What are the plans to
+share this wonderful
+
+1210
+00:42:14,750 --> 00:42:15,540
+data with the world?
+
+1211
+00:42:15,540 --> 00:42:16,310
+Thank you, Eric.
+
+1212
+00:42:16,310 --> 00:42:17,000
+ADDY OSMANI: Oh, of course.
+
+1213
+00:42:17,000 --> 00:42:17,620
+Yes.
+
+1214
+00:42:17,620 --> 00:42:22,070
+So Yeoman Insight was this idea
+to help track some of the
+
+1215
+00:42:22,070 --> 00:42:23,520
+different things that
+developers are doing
+
+1216
+00:42:23,520 --> 00:42:24,760
+on the front end.
+
+1217
+00:42:24,760 --> 00:42:27,730
+The idea is that we don't really
+have this sort of great
+
+1218
+00:42:27,730 --> 00:42:30,650
+source of information about
+what frameworks people are
+
+1219
+00:42:30,650 --> 00:42:33,360
+using, whether people are
+building large-scale
+
+1220
+00:42:33,360 --> 00:42:36,270
+applications or something a
+little bit smaller, what the
+
+1221
+00:42:36,270 --> 00:42:38,420
+pain points of people's
+workflows are.
+
+1222
+00:42:38,420 --> 00:42:41,920
+And so Insight is sort of this
+opt-in feature of Yeoman.
+
+1223
+00:42:41,920 --> 00:42:43,670
+So it's completely optional.
+
+1224
+00:42:43,670 --> 00:42:44,760
+You don't have to use it.
+
+1225
+00:42:44,760 --> 00:42:46,790
+We do like you to, if you can.
+
+1226
+00:42:46,790 --> 00:42:49,090
+But basically, it'll track some
+of the stuff that you're
+
+1227
+00:42:49,090 --> 00:42:51,730
+doing and send it back to us.
+
+1228
+00:42:51,730 --> 00:42:53,130
+We aggregate the data.
+
+1229
+00:42:53,130 --> 00:42:55,890
+And at some point in the near
+future, we're going to share a
+
+1230
+00:42:55,890 --> 00:42:57,340
+lot of that information.
+
+1231
+00:42:57,340 --> 00:42:59,830
+So we'll let you know what
+frameworks people have been
+
+1232
+00:42:59,830 --> 00:43:02,520
+installing and using with their
+apps, what the most
+
+1233
+00:43:02,520 --> 00:43:05,910
+popular commands are, whether
+people are just using Yeoman
+
+1234
+00:43:05,910 --> 00:43:09,790
+for tons and tons of smaller
+projects or just on much
+
+1235
+00:43:09,790 --> 00:43:12,740
+larger beefier things
+in production.
+
+1236
+00:43:12,740 --> 00:43:15,480
+But, yeah, we're hopefully going
+to plan on getting that
+
+1237
+00:43:15,480 --> 00:43:16,380
+data out soon.
+
+1238
+00:43:16,380 --> 00:43:17,610
+PAUL LEWIS: I know that you said
+this was last question.
+
+1239
+00:43:17,610 --> 00:43:18,580
+But I did see one at
+the bottom here.
+
+1240
+00:43:18,580 --> 00:43:20,220
+Is that Paul Irish
+on the right?
+
+1241
+00:43:20,220 --> 00:43:21,720
+I think, no.
+
+1242
+00:43:21,720 --> 00:43:24,000
+Unless Paul Irish suddenly
+became British.
+
+1243
+00:43:24,000 --> 00:43:26,060
+There's Paul Irish
+now on the left.
+
+1244
+00:43:26,060 --> 00:43:28,910
+Unless Paul Irish became British
+and lost all his hair.
+
+1245
+00:43:28,910 --> 00:43:30,110
+No, I'm Paul Irish.
+
+1246
+00:43:30,110 --> 00:43:32,780
+But Paul Irish is unwell
+this week.
+
+1247
+00:43:32,780 --> 00:43:34,240
+So hopefully he gets better.
+
+1248
+00:43:34,240 --> 00:43:34,740
+ADDY OSMANI: Get well soon.
+
+1249
+00:43:34,740 --> 00:43:36,080
+Get well soon.
+
+1250
+00:43:36,080 --> 00:43:37,710
+So on that that's it.
+
+1251
+00:43:37,710 --> 00:43:38,730
+PAUL LEWIS: Thank you
+for joining us.
+
+1252
+00:43:38,730 --> 00:43:40,940
+ADDY OSMANI: Thank you to my
+special guest, Paul Lewis, for
+
+1253
+00:43:40,940 --> 00:43:41,770
+stepping in.
+
+1254
+00:43:41,770 --> 00:43:42,440
+PAUL LEWIS: Thank you.
+
+1255
+00:43:42,440 --> 00:43:44,010
+ADDY OSMANI: And we'll see
+you again on the next
+
+1256
+00:43:44,010 --> 00:43:45,480
+"Breakpoint." Thank
+you very much.
+
+1257
+00:43:45,480 --> 00:43:46,600
+PAUL LEWIS: Thank you, Brian.
+
+1258
+00:43:46,600 --> 00:43:46,900
+BRIAN FORD: Yup.
+
+1259
+00:43:46,900 --> 00:43:48,150
+PAUL LEWIS: See you later.
+
+1260
+00:43:48,150 --> 00:44:00,500
+

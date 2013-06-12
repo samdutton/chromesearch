@@ -1,0 +1,2539 @@
+1
+00:00:02,300 --> 00:00:06,439
+>>Ibrahim Elbouchikhi: Hello. Good morning,
+everyone. Welcome to the making money on Google
+
+2
+00:00:06,439 --> 00:00:11,250
+Play session. My name is Ibrahim Elbouchikhi.
+I'm project manager for commerce on Google
+
+3
+00:00:11,250 --> 00:00:15,510
+Play, and Bob Meese over there is my colleague
+who is from business development on Google
+
+4
+00:00:15,510 --> 00:00:19,960
+Play.
+Let's get started. Where's the clicker?
+
+5
+00:00:19,960 --> 00:00:26,960
+Clicker? Here, sorry.
+Okay. So first I wanted to start by just saying
+
+6
+00:00:27,939 --> 00:00:32,910
+thank you. Over the past 12 months we've talked
+to a lot of you, got a lot of great feedback
+
+7
+00:00:32,910 --> 00:00:37,129
+that we baked into the product. A lot of the
+features that you will see next have really
+
+8
+00:00:37,129 --> 00:00:42,800
+been developed in -- by working with you and
+getting your feedback. So let's continue that,
+
+9
+00:00:42,800 --> 00:00:46,879
+let's continue that conversation. Keep sending
+the feedback, the good, the bad, the ugly,
+
+10
+00:00:46,879 --> 00:00:50,629
+and we promise we'll keep working on it and
+making things better.
+
+11
+00:00:50,629 --> 00:00:54,800
+We'll start off with the office hours which
+is happening next, so come by the Google Play
+
+12
+00:00:54,800 --> 00:00:59,890
+office hours section and we'll talk there.
+So the agenda for today, we'll first share
+
+13
+00:00:59,890 --> 00:01:03,899
+some data. These are metrics that we feel
+are interesting for you as you build your
+
+14
+00:01:03,899 --> 00:01:07,340
+business on Google Play.
+We'll then give you a product update. These
+
+15
+00:01:07,340 --> 00:01:10,860
+are features we've launched recently and their
+impact as well as features we look forward
+
+16
+00:01:10,860 --> 00:01:15,010
+to in the midterm.
+Finally we'll talk about some case studies
+
+17
+00:01:15,010 --> 00:01:18,820
+about what some of our most commercially successful
+partners are doing.
+
+18
+00:01:18,820 --> 00:01:25,330
+And finally we'll close out with Q and A in
+the office hours by the Google Play section.
+
+19
+00:01:25,330 --> 00:01:32,330
+So let's get started with some data. Last
+year Chris Yerga got on stage, I think exactly
+
+20
+00:01:32,820 --> 00:01:37,900
+this room, and showed us the growth trajectory
+of in-app. It looked something like ridiculous,
+
+21
+00:01:37,900 --> 00:01:43,030
+well, reverse, like going up to the right.
+And we were very excited about that growth.
+
+22
+00:01:43,030 --> 00:01:47,210
+This year we've actually done something even
+more incredible, which is that we've multiplied
+
+23
+00:01:47,210 --> 00:01:52,750
+in-app revenue by seven. So over the past
+12 months -- there are very few industries,
+
+24
+00:01:52,750 --> 00:01:58,190
+companies, countries, anything that grows
+that fast over 12 months, and this is a testament
+
+25
+00:01:58,190 --> 00:02:02,370
+to all the work you have all been doing.
+Users are engaged with the applications you've
+
+26
+00:02:02,370 --> 00:02:07,030
+been building and they're willing to pay for
+them and are really enjoying them. So that's
+
+27
+00:02:07,030 --> 00:02:11,370
+just incredible.
+So we wanted to look beyond the number and
+
+28
+00:02:11,370 --> 00:02:15,550
+say what is this telling us about the Google
+Play and Android user? And one thing we've
+
+29
+00:02:15,550 --> 00:02:20,940
+learned is we've heard this a lot from our
+Japanese partners, which is omotenashi. And
+
+30
+00:02:20,940 --> 00:02:26,980
+what omotenashi means essentially, it's hospitality,
+but it's got a bit of a deeper sense. It's
+
+31
+00:02:26,980 --> 00:02:32,850
+got more of a personalized experience. It's
+almost like not a buyer and seller relationship,
+
+32
+00:02:32,850 --> 00:02:36,540
+it's a host and a guest.
+And what this is, it's essentially what in-app
+
+33
+00:02:36,540 --> 00:02:41,360
+represents, right? In-app is about getting
+the user to enjoy the application, to really
+
+34
+00:02:41,360 --> 00:02:47,450
+get immersed into it before getting to monetization.
+We've heard this a lot in all sorts of saying,
+
+35
+00:02:47,450 --> 00:02:51,290
+focus on the user experience and the money
+will follow. And that's exactly what in-app
+
+36
+00:02:51,290 --> 00:02:53,910
+represents.
+Now, in-app is not for everyone and we've
+
+37
+00:02:53,910 --> 00:02:58,850
+got very successful subscription partners
+as well as paid app developers, but if you're
+
+38
+00:02:58,850 --> 00:03:05,430
+able to inject some omotenashi into your application,
+please try, and that's the message from this
+
+39
+00:03:05,430 --> 00:03:09,330
+number.
+Subscriptions launched about 12 months ago
+
+40
+00:03:09,330 --> 00:03:14,660
+as well, and since launch we're very excited
+that the number of subscribers has doubled
+
+41
+00:03:14,660 --> 00:03:21,050
+each quarter. Subscriptions have a pretty
+high hurdle. The user has to see continuous
+
+42
+00:03:21,050 --> 00:03:27,800
+value. They have to commit to recurring subscription,
+and it's a pretty high hurdle for subscription,
+
+43
+00:03:27,800 --> 00:03:32,580
+but yet we're seeing more and more users taking
+that step and that's again because of the
+
+44
+00:03:32,580 --> 00:03:35,500
+applications and the content you've all been
+creating for our users.
+
+45
+00:03:35,500 --> 00:03:40,470
+There's no better example today than Pandora,
+which is a partner on the top grossing list,
+
+46
+00:03:40,470 --> 00:03:45,040
+one of the few non-games that's completely
+based on subscriptions.
+
+47
+00:03:45,040 --> 00:03:52,040
+Now, Android is a global platform clearly
+and Google Play store is equally global. We
+
+48
+00:03:52,740 --> 00:03:58,880
+have buyers in 134 markets, so by pushing
+that button in the Google Play developer console
+
+49
+00:03:58,880 --> 00:04:04,830
+and pushing your app for sale you're making
+it available to buyers in 134 countries.
+
+50
+00:04:04,830 --> 00:04:09,800
+This is unprecedented distribution. Never
+before has distribution been this easy and
+
+51
+00:04:09,800 --> 00:04:13,800
+efficient. For you as a developer, wherever
+you are in the world, whether you're a solo
+
+52
+00:04:13,800 --> 00:04:19,389
+developer or a multinational corporation,
+we take care of everything for you and we
+
+53
+00:04:19,389 --> 00:04:22,860
+just have to push that button and get your
+application out there.
+
+54
+00:04:22,860 --> 00:04:28,539
+Now, the countries that we've overlaid on
+the map, some of them are probably already
+
+55
+00:04:28,539 --> 00:04:32,539
+in your mind, they are particularly large,
+growing fast, but there are also other countries
+
+56
+00:04:32,539 --> 00:04:37,729
+that we feel will play a big part of the next
+12 months so we're excited about that. We've
+
+57
+00:04:37,729 --> 00:04:42,479
+launched a lot of features around localization
+and translations at I/O so take advantage
+
+58
+00:04:42,479 --> 00:04:49,240
+of that and map them up to that set of countries,
+the 134, and hopefully you will see success
+
+59
+00:04:49,240 --> 00:04:54,270
+globally.
+Tablets have been a big part of Android over
+
+60
+00:04:54,270 --> 00:04:59,800
+the past 12 months. And the way the conversation
+generally goes is that we ask you to optimize
+
+61
+00:04:59,800 --> 00:05:04,360
+your apps for tablets, and as a business owner
+you look at the cost and you say that's additional
+
+62
+00:05:04,360 --> 00:05:10,240
+cost. Is that where I invest my resources?
+And I know you have very limited resources
+
+63
+00:05:10,240 --> 00:05:13,039
+like everyone else.
+And the number I want to share with you today
+
+64
+00:05:13,039 --> 00:05:20,039
+is a tablet monetizes 1.7 extra rate of a
+phone, so that additional cost of optimizing
+
+65
+00:05:20,289 --> 00:05:25,960
+your tablets, your application for tablets,
+is well worthwhile. And we want to see more
+
+66
+00:05:25,960 --> 00:05:29,370
+of our developers doing just that.
+We've launched a lot of features on our end
+
+67
+00:05:29,370 --> 00:05:33,860
+as well, whether it's the optimization tips
+for tablets or the guidelines to help you
+
+68
+00:05:33,860 --> 00:05:38,469
+do this as well.
+The other metric that's interesting is recent
+
+69
+00:05:38,469 --> 00:05:45,469
+platform releases monetize at 2.2X their prior
+versions. What this is telling us is, again,
+
+70
+00:05:45,520 --> 00:05:51,599
+as you build your application take advantage
+of the latest platform features. Whether it's
+
+71
+00:05:51,599 --> 00:05:58,599
+Google+ sign-in or all of the APIs that launched
+at I/O this week, all of that coming together
+
+72
+00:05:58,969 --> 00:06:03,969
+actually has a tangible impact on your revenue.
+It is not just nice to have, they might be
+
+73
+00:06:03,969 --> 00:06:08,770
+actually required for you and you can more
+than double your revenue by actually adopting
+
+74
+00:06:08,770 --> 00:06:13,900
+those new features.
+Next this is a very intuitive message, right,
+
+75
+00:06:13,900 --> 00:06:17,789
+higher rated applications monetize better.
+We wanted to give you a sense of just how
+
+76
+00:06:17,789 --> 00:06:21,749
+much better.
+If you go from 1 to 2 let's not talk about
+
+77
+00:06:21,749 --> 00:06:27,150
+those, but if you go from 2 to 3-star you
+are actually almost doubling your revenue.
+
+78
+00:06:27,150 --> 00:06:32,099
+And again, if you go from 3 to 4 stars you're
+actually almost tripling your revenue. So
+
+79
+00:06:32,099 --> 00:06:37,819
+a conversation we have around quality and
+reply to reviews and fixing bugs and good
+
+80
+00:06:37,819 --> 00:06:43,139
+customer experience and good support, all
+of that has now a tangible impact on your
+
+81
+00:06:43,139 --> 00:06:46,819
+revenue. And that's what we're going to demonstrate
+with these metrics.
+
+82
+00:06:46,819 --> 00:06:52,219
+Finally, as it was mentioned in the keynote,
+over the past year we've more than doubled
+
+83
+00:06:52,219 --> 00:06:57,559
+average revenue per user. This is even given
+the incredible growth that Android itself
+
+84
+00:06:57,559 --> 00:07:03,740
+has been having, 900 million devices has grown
+our pool by 2.5X.
+
+85
+00:07:03,740 --> 00:07:08,669
+This is the baseline metric that every platform
+is measured by. How profitable are we for
+
+86
+00:07:08,669 --> 00:07:13,020
+you? And this is really exciting for us, this
+particular development. It's a testament to
+
+87
+00:07:13,020 --> 00:07:18,939
+the type of experiences you've been creating
+and how engaging and immersive they have been.
+
+88
+00:07:18,939 --> 00:07:24,669
+So we'll go now into the product update portion.
+And I know it might be obvious or it might
+
+89
+00:07:24,669 --> 00:07:29,219
+be intuitive, but I always like to start with
+the baseline understanding of our mission.
+
+90
+00:07:29,219 --> 00:07:34,319
+We have a bunch of people who work on payments
+sprinkled around the room and all of us show
+
+91
+00:07:34,319 --> 00:07:38,509
+up to work everyday because we want to make
+our developers successful, and in the context
+
+92
+00:07:38,509 --> 00:07:42,080
+of payment we want to make sure we maximize
+your income.
+
+93
+00:07:42,080 --> 00:07:46,050
+So when you work hard and build an application,
+an awesome application, we want to make sure
+
+94
+00:07:46,050 --> 00:07:50,229
+you're getting the most value out of that
+work. That's just the baseline understanding.
+
+95
+00:07:50,229 --> 00:07:56,169
+That's why we show up to work everyday and
+a lot of us that's our goal and objective.
+
+96
+00:07:56,169 --> 00:08:00,789
+So with that in mind I again like to think
+of things in terms of frameworks to just simplify
+
+97
+00:08:00,789 --> 00:08:04,369
+the conversation. In this case I picked a
+really simple framework.
+
+98
+00:08:04,369 --> 00:08:08,199
+We try to maximize your income, which means
+we're going to increase your sales and reduce
+
+99
+00:08:08,199 --> 00:08:13,960
+your costs. So our conversation going forward
+is going to be in this context, how are we
+
+100
+00:08:13,960 --> 00:08:20,159
+maximizing your sales and reducing your cost
+in order to maximize your income?
+
+101
+00:08:20,159 --> 00:08:24,499
+We've also talked to you about what drives
+your sales, and you've told us a bunch of
+
+102
+00:08:24,499 --> 00:08:29,179
+things. One is the number of devices out there.
+How many tablets do we have? The other thing
+
+103
+00:08:29,179 --> 00:08:33,469
+was how many markets you're targeting. So
+if we're growing really fast in a particular
+
+104
+00:08:33,469 --> 00:08:37,969
+region, but you're actually not localizing
+to it or tailoring the experience to it, you're
+
+105
+00:08:37,969 --> 00:08:42,250
+not really benefiting from that.
+The aspect is the quality of your application.
+
+106
+00:08:42,250 --> 00:08:47,269
+We just saw if you go from three to four you're
+tripling your revenue. Your aspect is how
+
+107
+00:08:47,269 --> 00:08:51,139
+many buyers do we have, how many credit cards
+do we have on file, how many carrier billing
+
+108
+00:08:51,139 --> 00:08:55,290
+accounts do we have?
+And then the purchase experience, how smooth
+
+109
+00:08:55,290 --> 00:08:59,759
+is it, how well does it convert? This all
+impacts your sales.
+
+110
+00:08:59,759 --> 00:09:03,759
+And finally, all of these things that happen
+after the fact, whether it's cancellations
+
+111
+00:09:03,759 --> 00:09:07,699
+because of a poor user experience. The user
+did not get the item they purchased and they
+
+112
+00:09:07,699 --> 00:09:11,779
+call and that becomes a poor user experience.
+So all of these things drive your sales.
+
+113
+00:09:11,779 --> 00:09:16,279
+In terms of costs you've told us about three
+big buckets. These are things we've talked
+
+114
+00:09:16,279 --> 00:09:21,199
+about in terms of tablets and optimizing for
+them or adopting new platform features. Engineering
+
+115
+00:09:21,199 --> 00:09:26,370
+work. You've got to have engineers and you've
+got to have QA, you have to have back office
+
+116
+00:09:26,370 --> 00:09:31,810
+and accounting. You have user acquisition
+costs. So marketing, paid installs, whatever
+
+117
+00:09:31,810 --> 00:09:34,519
+it is.
+Then you have your support costs. These are
+
+118
+00:09:34,519 --> 00:09:39,440
+the three buckets that your costs largely
+fit into.
+
+119
+00:09:39,440 --> 00:09:43,060
+So with that in mind I want to share with
+you some things we did to help in each of
+
+120
+00:09:43,060 --> 00:09:47,290
+these areas.
+So more forms of payment. This is clearly
+
+121
+00:09:47,290 --> 00:09:52,329
+comes up all the time. What have we done over
+the past 12 months to address that?
+
+122
+00:09:52,329 --> 00:09:56,920
+First off is the Google Play gift card. It
+actually only launched in July of last year.
+
+123
+00:09:56,920 --> 00:09:58,550
+And since then it's --
+[ Applause ]
+
+124
+00:09:58,550 --> 00:10:01,180
+>>Ibrahim Elbouchikhi: Woo, that's right.
+>>Bob Meese: Somebody is happy.
+
+125
+00:10:01,180 --> 00:10:05,000
+>>Ibrahim Elbouchikhi: It only launched in
+July of last year and since then it's become
+
+126
+00:10:05,000 --> 00:10:11,310
+incredibly successful for us. And it's omnipresent
+in U.S. retail locations, it's in the U.K.
+
+127
+00:10:11,310 --> 00:10:15,959
+now. You can see us continue to invest in
+the Google Play gift card. The whole prepaid
+
+128
+00:10:15,959 --> 00:10:20,759
+form of payment is critical to us.
+The other aspect is we launched campaigns.
+
+129
+00:10:20,759 --> 00:10:25,639
+And what campaigns are essentially in this
+case, if you bought a Galaxy S3 you get a
+
+130
+00:10:25,639 --> 00:10:31,000
+free Galaxy s3, which is awesome, but also
+you got $50 to spend on Google Play.
+
+131
+00:10:31,000 --> 00:10:35,720
+What this does is, one, it ingests money that
+gets spent on your applications. And two,
+
+132
+00:10:35,720 --> 00:10:41,910
+it lowers the hurdle for users to go from
+a free app buyer, consumer to actually a purchaser.
+
+133
+00:10:41,910 --> 00:10:46,610
+And our experiments have shown that when the
+user makes one, two, three purchases, they're
+
+134
+00:10:46,610 --> 00:10:51,790
+much more likely to make the fourth and fifth
+even when their credit is over.
+
+135
+00:10:51,790 --> 00:10:57,069
+Finally, carrier billing. The exciting number
+I want to share with you today is that 50%
+
+136
+00:10:57,069 --> 00:11:02,769
+of Google Play 30-day actives are now on carriers
+that support carrier billing.
+
+137
+00:11:02,769 --> 00:11:07,940
+What that means is that they are one button
+click away from becoming buyers. They don't
+
+138
+00:11:07,940 --> 00:11:12,250
+have to type numbers, no expiration dates,
+they just have to enable it and then they
+
+139
+00:11:12,250 --> 00:11:15,779
+can start buying. And this is a really critical
+number for us.
+
+140
+00:11:15,779 --> 00:11:19,769
+And as a background, if you're not aware of
+what carrier billing is, it's essentially
+
+141
+00:11:19,769 --> 00:11:24,379
+the ability to put your purchases on your
+monthly bill. This is something that's unique
+
+142
+00:11:24,379 --> 00:11:29,629
+to Google Play and we've invested a lot in
+the technology behind it.
+
+143
+00:11:29,629 --> 00:11:32,899
+So the other thing you said is the purchase
+flow. We've heard a lot about our purchase
+
+144
+00:11:32,899 --> 00:11:35,160
+flow in the past.
+I don't know if you've been through the new
+
+145
+00:11:35,160 --> 00:11:39,139
+store as well as the new purchase flow, but
+it's a really exciting development for us
+
+146
+00:11:39,139 --> 00:11:43,709
+and a lot of the design came in from feedback
+you gave us, which was that you wanted the
+
+147
+00:11:43,709 --> 00:11:49,500
+purchase flow to be contextual. You want it
+to be fast and you want it to be simple. So
+
+148
+00:11:49,500 --> 00:11:53,250
+we did just that.
+In addition to that we made it a lot faster.
+
+149
+00:11:53,250 --> 00:11:57,649
+So in this particular client release that
+came out a few weeks ago we have seen a 35%
+
+150
+00:11:57,649 --> 00:12:02,540
+drop in latency.
+In addition to that we're seeing really good
+
+151
+00:12:02,540 --> 00:12:08,040
+user feedback and we're seeing a pick up in
+conversion as well.
+
+152
+00:12:08,040 --> 00:12:14,279
+Now, let's shift gears to costs. We've heard
+a lot from you around accounting and back
+
+153
+00:12:14,279 --> 00:12:18,040
+office. And if you're a small developer you
+might not worry too much about this, but for
+
+154
+00:12:18,040 --> 00:12:23,029
+our large partners it was a big problem. You
+couldn't get your reports on a timely basis,
+
+155
+00:12:23,029 --> 00:12:27,279
+you couldn't get them programmatically out
+of our database, and so we've done just that.
+
+156
+00:12:27,279 --> 00:12:31,480
+So with the rollout of the Google Wallet merchant
+center, now -- if you don't have it you should
+
+157
+00:12:31,480 --> 00:12:35,810
+get it in a few weeks. You will be able to
+use a very simple script to download all of
+
+158
+00:12:35,810 --> 00:12:40,480
+your monthly reports and ingest them into
+your back end and do whatever you want with
+
+159
+00:12:40,480 --> 00:12:46,279
+them, most likely reconcile.
+The other aspect is support costs. And the
+
+160
+00:12:46,279 --> 00:12:51,199
+thing about support costs is if you look at
+the top level costs of lost purchases you
+
+161
+00:12:51,199 --> 00:12:56,310
+might feel that, well, it's bad, but it's
+not terrible, but the impact of support goes
+
+162
+00:12:56,310 --> 00:13:00,949
+well beyond that.
+One is there is a cost of the lost sale and
+
+163
+00:13:00,949 --> 00:13:06,509
+there's a fixed cost of supporting that call.
+So somebody calls 10 minutes to support that
+
+164
+00:13:06,509 --> 00:13:11,000
+user, that's a lot of money, but the worst
+part is you've acquired that buyer with a
+
+165
+00:13:11,000 --> 00:13:17,420
+certain lifetime value assumption. And what
+this does to it is it truncates their lifetime.
+
+166
+00:13:17,420 --> 00:13:24,009
+It cuts it short. So your math as you're looking
+at this it's going to -- does it add for me,
+
+167
+00:13:24,009 --> 00:13:29,410
+it really gets messed up.
+So support, as little as you might not pay
+
+168
+00:13:29,410 --> 00:13:35,120
+a lot of attention to it, it's actually critical
+to your revenue, your cost and sales. And
+
+169
+00:13:35,120 --> 00:13:41,740
+what's the exciting metric here is IAB V3.
+IAB V3 launched in December and since then
+
+170
+00:13:41,740 --> 00:13:48,019
+Gamevil has seen a drop 90% drop in customer
+contact rates for games where they have implemented
+
+171
+00:13:48,019 --> 00:13:54,620
+IAB V3. There was a talk about it, on Wednesday
+about it. Please go watch it on YouTube and
+
+172
+00:13:54,620 --> 00:13:59,709
+thank that person over there for designing
+IAB V3.
+
+173
+00:13:59,709 --> 00:14:04,560
+So anyways, basically this is really awesome.
+You just need to do it.
+
+174
+00:14:04,560 --> 00:14:08,779
+So in-app order status API. This is another
+big ask from you, which is essentially the
+
+175
+00:14:08,779 --> 00:14:13,660
+ability for you to take the purchase token
+that we send you back and turn around and
+
+176
+00:14:13,660 --> 00:14:18,139
+verify the status of that purchase.
+This is for two reasons. You could do it for
+
+177
+00:14:18,139 --> 00:14:22,759
+either verifying authenticity of the purchase
+or just the state.
+
+178
+00:14:22,759 --> 00:14:27,980
+And we're launching this in a few weeks worldwide.
+So all of our developers will have access
+
+179
+00:14:27,980 --> 00:14:34,060
+to this and it should help a lot with reconciling
+your purchases and even preventing fraud.
+
+180
+00:14:34,060 --> 00:14:41,060
+Okay. The other thing is in-app billing testing.
+You probably heard this already, but we're
+
+181
+00:14:41,449 --> 00:14:46,040
+now simplifying in-app billing testing by
+allowing your licensed test accounts, the
+
+182
+00:14:46,040 --> 00:14:50,600
+one you already configured in the Google Play
+developer console to make purchases without
+
+183
+00:14:50,600 --> 00:14:57,600
+being charged. Everything else is the same,
+just no more holds, no bins, no delays, none
+
+184
+00:14:58,499 --> 00:15:01,769
+of that bad stuff.
+We think this is going to be super exciting,
+
+185
+00:15:01,769 --> 00:15:06,529
+super helpful in streamlining your experience
+and testing and making sure that you're not
+
+186
+00:15:06,529 --> 00:15:10,509
+wasting time stuck in those sorts of things.
+When you see that message that says this is
+
+187
+00:15:10,509 --> 00:15:14,720
+a test purchase you know that you're not actually
+being charged as it says in the remainder
+
+188
+00:15:14,720 --> 00:15:19,899
+sentence.
+All right. So to summarize, so for your sales
+
+189
+00:15:19,899 --> 00:15:24,160
+we've got 50% of our users now on carrier
+billing, we have the Google Play gift cards,
+
+190
+00:15:24,160 --> 00:15:28,279
+we have promo campaigns and we have a faster,
+better purchase flow.
+
+191
+00:15:28,279 --> 00:15:33,269
+For your costs we've got a pragmatic access
+to your reports, easy in-app testing, better
+
+192
+00:15:33,269 --> 00:15:38,970
+user experience with in-app billing V3 and
+order status check API to prevent fraud as
+
+193
+00:15:38,970 --> 00:15:43,059
+well as reconcile your purchases.
+So this is the summary list of things we've
+
+194
+00:15:43,059 --> 00:15:50,059
+done and already doing in the next few weeks
+to help you maximize your income.
+
+195
+00:15:50,309 --> 00:15:55,350
+So looking forward a little bit, you can see
+us invest more heavily in Google Play gift
+
+196
+00:15:55,350 --> 00:16:00,600
+card. We'll push it into our biggest markets
+and you will see us continue to do that.
+
+197
+00:16:00,600 --> 00:16:05,850
+The next thing we'll do is carrier billing.
+It's in 12 countries today. See us push that
+
+198
+00:16:05,850 --> 00:16:12,069
+further over the next few months and over
+the next 12 months. Those add up.
+
+199
+00:16:12,069 --> 00:16:15,999
+And then the purchase experience, right? So
+we've already made a huge improvement in our
+
+200
+00:16:15,999 --> 00:16:19,290
+last release, but we're actually going to
+go even further.
+
+201
+00:16:19,290 --> 00:16:22,939
+The one thing we've done so far -- the one
+thing we've done really critically is that
+
+202
+00:16:22,939 --> 00:16:28,279
+we've instrumented the purchase flow so that
+we can analyze it and study it and continue
+
+203
+00:16:28,279 --> 00:16:33,120
+to improve it very quickly. So look for us
+to do a lot more experimentation, lots more
+
+204
+00:16:33,120 --> 00:16:37,279
+fine tuning, so when you send us a buyer,
+when you get a user to commit to making a
+
+205
+00:16:37,279 --> 00:16:42,240
+purchase on your app, we want to convert as
+many of those as possible unless they change
+
+206
+00:16:42,240 --> 00:16:45,790
+their mind.
+And so look for us to do a lot more of that
+
+207
+00:16:45,790 --> 00:16:51,129
+and look for us to support more forms of payment.
+Gift cards are just the beginning.
+
+208
+00:16:51,129 --> 00:16:57,350
+And finally, seller support in more countries.
+We're all -- one of the objectives and missions
+
+209
+00:16:57,350 --> 00:17:02,100
+of all of us is that anyone, anyone around
+the world can make a living on Google Play.
+
+210
+00:17:02,100 --> 00:17:06,780
+And we want to get there. It's taken a long
+time. It's slower than we would like it to
+
+211
+00:17:06,780 --> 00:17:12,310
+be as well, but we do want to get to that
+point where anyone around the planet can code
+
+212
+00:17:12,310 --> 00:17:17,350
+an awesome app and make a living out of it.
+And we'll get there.
+
+213
+00:17:17,350 --> 00:17:21,710
+So why is it an exciting year ahead? I think
+there's a convergence of a few things for
+
+214
+00:17:21,710 --> 00:17:25,339
+us on play.
+First of all, we've got a global payments
+
+215
+00:17:25,339 --> 00:17:31,320
+reach. We're really getting to the point where
+we've got FOBs in many, many countries and
+
+216
+00:17:31,320 --> 00:17:35,660
+that's going to really help with our conversion.
+The next thing is we're seeing higher buyer
+
+217
+00:17:35,660 --> 00:17:39,880
+engagement, as you've seen in the numbers
+before, across the board. Whether it's in-app
+
+218
+00:17:39,880 --> 00:17:45,640
+subscriptions or paid apps, users are willing
+to buy and are willing to pay for the experiences
+
+219
+00:17:45,640 --> 00:17:48,940
+you're creating, and that's really good news
+for us.
+
+220
+00:17:48,940 --> 00:17:55,810
+Finally, we're really putting the final pieces
+together for world class commerce infrastructure
+
+221
+00:17:55,810 --> 00:18:00,150
+and developer tools. We want to get you back
+to doing the things that you do well and do
+
+222
+00:18:00,150 --> 00:18:04,210
+best, which is building awesome applications.
+We want to take you away from spending time
+
+223
+00:18:04,210 --> 00:18:08,600
+trying to figure out why your account is blocked
+for testing purposes or why you have to download
+
+224
+00:18:08,600 --> 00:18:12,590
+these reports in some way or the other. We
+want to do all of that and make sure you do
+
+225
+00:18:12,590 --> 00:18:16,970
+what you do best, which is build awesome applications.
+That's all for me. I'm going to hand it over
+
+226
+00:18:16,970 --> 00:18:23,810
+to Bob, who is going to cover a few case studies.
+>>Bob Meese: Thanks, Ibrahim. And hello, everyone.
+
+227
+00:18:23,810 --> 00:18:28,310
+So to get the growth rates that we're seeing,
+we're clearly doing a lot to help support
+
+228
+00:18:28,310 --> 00:18:32,460
+that growth, but much of the work is also
+being done by our developers. So this section
+
+229
+00:18:32,460 --> 00:18:36,660
+of the presentation we're really focused on
+the work of those great developers and we're
+
+230
+00:18:36,660 --> 00:18:41,360
+focusing specifically on the most commercially
+successful developers. And by commercially
+
+231
+00:18:41,360 --> 00:18:44,720
+successful I mean the developers that are
+not just building great products that their
+
+232
+00:18:44,720 --> 00:18:49,570
+users love that are being installed in large
+numbers in many cases, but these are the developers
+
+233
+00:18:49,570 --> 00:18:55,540
+that are making money on Google Play.
+I'll focus on two key parts in this section,
+
+234
+00:18:55,540 --> 00:18:59,330
+so one will just be to help you understand
+more about what these developers are doing
+
+235
+00:18:59,330 --> 00:19:04,930
+and then I'd also like to focus on how you
+can apply some of these lessons to your own
+
+236
+00:19:04,930 --> 00:19:10,940
+businesses.
+So as Ibrahim says, we've seen a 7X increase
+
+237
+00:19:10,940 --> 00:19:15,920
+in the last year in-app revenue. Signs of
+in-app revenue growth are all over the Play
+
+238
+00:19:15,920 --> 00:19:20,520
+Store. If you look at the top grossing apps
+right now, all of the top grossing apps are
+
+239
+00:19:20,520 --> 00:19:24,440
+free to play.
+But with every rule there's always an exception
+
+240
+00:19:24,440 --> 00:19:28,900
+and so we have a fun game we like to play
+called "Where's Minecraft?"
+
+241
+00:19:28,900 --> 00:19:33,680
+There it is down there at number 22. So we
+are not saying you need to push everything
+
+242
+00:19:33,680 --> 00:19:40,030
+free to play. Minecraft is an amazing game.
+It's an iconic brand with a very loyal following.
+
+243
+00:19:40,030 --> 00:19:44,810
+We think it will continue to be successful
+so we are not asking you to follow the crowd
+
+244
+00:19:44,810 --> 00:19:50,360
+to do that; however, also recognize the dominant
+trend towards free to play. It's very important
+
+245
+00:19:50,360 --> 00:19:54,970
+to recognize that. The bar for success for
+a paid title in the top grossing charts is
+
+246
+00:19:54,970 --> 00:20:00,280
+very high.
+More than anything, the trend that we see
+
+247
+00:20:00,280 --> 00:20:07,280
+is developers allowing users to defer that
+payment decision. We see a three-step funnel
+
+248
+00:20:07,490 --> 00:20:12,190
+to monetization.
+So the first step is really around acquisition.
+
+249
+00:20:12,190 --> 00:20:16,990
+So this is about expanding this top of the
+funnel as wide as you possibly can, getting
+
+250
+00:20:16,990 --> 00:20:20,170
+as many users as you can to press that install
+button.
+
+251
+00:20:20,170 --> 00:20:24,570
+The install counts on Google Play are public
+within a certain band, and just go check out
+
+252
+00:20:24,570 --> 00:20:29,760
+some of your favorite paid apps and free apps
+and check out the large, large difference
+
+253
+00:20:29,760 --> 00:20:33,120
+in the large number of free installs that
+happen on Google Play.
+
+254
+00:20:33,120 --> 00:20:37,310
+Second, retention.
+And we think this is really an underappreciated
+
+255
+00:20:37,310 --> 00:20:41,340
+part of the funnel. It's part of the omotenashi
+that Ibrahim was mentioning earlier. It's
+
+256
+00:20:41,340 --> 00:20:45,220
+an area where our smartest developers are
+spending more and more of their time. And
+
+257
+00:20:45,220 --> 00:20:50,430
+the thing you need to focus on here is really
+on earning, the ability to ask those users
+
+258
+00:20:50,430 --> 00:20:52,630
+for money. It's not something you can take
+for granted.
+
+259
+00:20:52,630 --> 00:20:55,910
+For example, if I asked all of you to rate
+my talk a couple of minutes into it right
+
+260
+00:20:55,910 --> 00:20:59,180
+now, you might ask for a little bit more time
+to see, like, hey, what's this guy actually
+
+261
+00:20:59,180 --> 00:21:03,780
+going to talk about; right? And the same sort
+of principle applies here. How do your users
+
+262
+00:21:03,780 --> 00:21:09,820
+get into your product, provide value to them,
+have them coming back over time. And clearly
+
+263
+00:21:09,820 --> 00:21:15,110
+we've seen signs that users are more likely
+to pay after they've had an experience.
+
+264
+00:21:15,110 --> 00:21:19,730
+And then finally, obviously pressing that
+buy button in monetization. And what we've
+
+265
+00:21:19,730 --> 00:21:24,860
+found, and it's very important, is there's
+a lot of differences in terms of when and
+
+266
+00:21:24,860 --> 00:21:30,440
+how developers ask users to pay.
+And now I'll do a first case study that introduces
+
+267
+00:21:30,440 --> 00:21:37,440
+these three principles.
+So Kiwi is an Android-focused developer lead
+
+268
+00:21:39,530 --> 00:21:42,820
+by Omar Saddiqui. Omar is actually going to
+be joining us for the Office Hours session
+
+269
+00:21:42,820 --> 00:21:47,800
+afterwards, and Shipwrecked has been their
+most successful game on Google Play. It will
+
+270
+00:21:47,800 --> 00:21:50,210
+also be the subject of the case study in the
+following slides.
+
+271
+00:21:50,210 --> 00:21:54,580
+Kiwi has three other games on Google Play
+including Monsterama Park, Brightwood Adventures
+
+272
+00:21:54,580 --> 00:21:57,150
+and Monsterama Planet, which was recently
+released.
+
+273
+00:21:57,150 --> 00:22:02,920
+And when we spoke with them, they said for
+acquisition, really invest in your Play Store
+
+274
+00:22:02,920 --> 00:22:05,850
+page.
+It sounds basic, but the little things matter.
+
+275
+00:22:05,850 --> 00:22:10,700
+You see here in the description, "Millions
+of players agree that Shipwrecked's Lost Island,
+
+276
+00:22:10,700 --> 00:22:15,370
+an Editor's Choice app, is one of the top
+free games on Android."
+
+277
+00:22:15,370 --> 00:22:19,800
+In just a few words, they communicate a lot
+of powerful principles. It's one of the first
+
+278
+00:22:19,800 --> 00:22:24,970
+experiences that a user has with your application,
+and these words really create a powerful impression.
+
+279
+00:22:24,970 --> 00:22:30,050
+Also, on the right you see videos. We found
+that videos is a very powerful way to communicate
+
+280
+00:22:30,050 --> 00:22:34,700
+the value of your product, and it helps differentiate
+you against all of the other products that
+
+281
+00:22:34,700 --> 00:22:39,720
+do not have videos in the titles.
+Second, retention, as we said, is very important.
+
+282
+00:22:39,720 --> 00:22:44,770
+Here, when you think of retention, thinking
+about rewarding those user actions that you
+
+283
+00:22:44,770 --> 00:22:49,400
+want your users to take. So here on the left,
+as you see that, it's very important to have
+
+284
+00:22:49,400 --> 00:22:54,370
+daily retention, and you see your reward,
+a daily login bonus, that rewards those players
+
+285
+00:22:54,370 --> 00:22:59,460
+for taking the actions you want them to take.
+On the right, you see a leveling up. You see
+
+286
+00:22:59,460 --> 00:23:03,850
+the time and effort that your users are spending
+in that application being rewarded through
+
+287
+00:23:03,850 --> 00:23:08,160
+new content and new features being unlocked
+and other rewards happening.
+
+288
+00:23:08,160 --> 00:23:14,430
+Further on retention, keeping the content
+fresh and unlocking big new content -- in
+
+289
+00:23:14,430 --> 00:23:19,630
+this case, a full new island, Atlantis in
+this case -- allows your users to stay engaged
+
+290
+00:23:19,630 --> 00:23:23,990
+with the game or the application and explore
+all of this new content.
+
+291
+00:23:23,990 --> 00:23:29,750
+Also, you can even think about reinventing
+the user experience. When Shipwrecked first
+
+292
+00:23:29,750 --> 00:23:34,610
+launched, it was really focused around exploration
+and collection. After launch, they added a
+
+293
+00:23:34,610 --> 00:23:39,560
+trading mechanic which users actually loved.
+It was a bit of a risk, but the users love
+
+294
+00:23:39,560 --> 00:23:46,560
+this, and they keep coming back to the game
+over and over.
+
+295
+00:23:47,660 --> 00:23:51,770
+On the topic of monetization, we found that
+merchandising really matters. I think this
+
+296
+00:23:51,770 --> 00:23:55,700
+monkey is great here. He is pointing out this
+"arrrsome" deal if you can't see the little
+
+297
+00:23:55,700 --> 00:24:01,020
+text there. The 24 gold for $2.99, who can
+beat that? You can see below it, you can go
+
+298
+00:24:01,020 --> 00:24:05,240
+to the full store but why not pull out one
+of the most attractive offers and put it right
+
+299
+00:24:05,240 --> 00:24:12,240
+there to make it easy for users to buy.
+And so as you saw with Kiwi, acquisition is
+
+300
+00:24:12,370 --> 00:24:17,440
+about improving your placed lower page. Retention
+is about rewarding the user behaviors that
+
+301
+00:24:17,440 --> 00:24:22,920
+you want to promote and about reinventing
+the user experience. And monetization, merchandising
+
+302
+00:24:22,920 --> 00:24:25,460
+matters.
+But it's not just enough to go linearly through
+
+303
+00:24:25,460 --> 00:24:30,070
+this. What we're seeing the most successful
+developers on Google Play do is they create
+
+304
+00:24:30,070 --> 00:24:34,420
+a virtuous cycle by feeding back to acquisition
+several different ways.
+
+305
+00:24:34,420 --> 00:24:39,260
+So those developers that are able to find
+success and make money on Google Play can
+
+306
+00:24:39,260 --> 00:24:44,710
+reinvest those earnings through paid user
+acquisition to feel for future growth of their
+
+307
+00:24:44,710 --> 00:24:49,480
+products.
+Similarly, those developers that have a great
+
+308
+00:24:49,480 --> 00:24:53,800
+number of retained users can cross promote
+those users, especially the developers that
+
+309
+00:24:53,800 --> 00:24:59,100
+have multiple titles, back into acquisition.
+And then finally, those developers that are
+
+310
+00:24:59,100 --> 00:25:03,200
+fortunate enough to reach the top list, that
+becomes a self-fulfilling cycle. You need
+
+311
+00:25:03,200 --> 00:25:08,450
+a lot of installs to get there, but you get
+a lot of installs from being there.
+
+312
+00:25:08,450 --> 00:25:11,570
+And now I'll talk about some of these concepts
+with the other case studies.
+
+313
+00:25:11,570 --> 00:25:15,240
+The second one we'll introduce today is DeNA,
+and the game we'll mostly focus on is their
+
+314
+00:25:15,240 --> 00:25:20,790
+successful game, Blood Brothers. They have
+a couple other hit titles including Marvel,
+
+315
+00:25:20,790 --> 00:25:26,650
+War of Heroes and Rage of Bahamut, which was
+a clear breakout hit through 2012. DeNA also
+
+316
+00:25:26,650 --> 00:25:33,270
+has six other games in the top 100 top grossing.
+So because they have so many successful titles,
+
+317
+00:25:33,270 --> 00:25:37,740
+they really focus on cross promotion. In this
+case, I was playing Blood Brothers on the
+
+318
+00:25:37,740 --> 00:25:42,510
+left. While I was playing, I received this
+promotion, "Play Marvel and receive 50 Mobacoin."
+
+319
+00:25:42,510 --> 00:25:47,970
+It's a way for them to target a very attractive
+user base, the users who are playing their
+
+320
+00:25:47,970 --> 00:25:54,660
+existing games, and use them to acquire them
+for the new games they're launching.
+
+321
+00:25:54,660 --> 00:25:59,370
+It's also important for retention to provide
+very clear objectives. The central objective
+
+322
+00:25:59,370 --> 00:26:03,480
+in the game Blood Brothers is a card collection
+mechanic. It's all around strengthening your
+
+323
+00:26:03,480 --> 00:26:09,190
+characters, which they call familiars.
+All of the core game loops in the game support
+
+324
+00:26:09,190 --> 00:26:14,120
+this core objective. It's a very powerful
+thing. They focus you on a single core objective,
+
+325
+00:26:14,120 --> 00:26:17,970
+and then you have a game loop of adventuring,
+battling, leveling up your characters, all
+
+326
+00:26:17,970 --> 00:26:22,290
+feeling back into that one objective of strengthening
+your characters.
+
+327
+00:26:22,290 --> 00:26:26,820
+Even as you add more complexity to the game,
+when you battle and you win, you capture a
+
+328
+00:26:26,820 --> 00:26:30,120
+character, there's a variety of ways you can
+combine these characters all back towards
+
+329
+00:26:30,120 --> 00:26:34,480
+that central objective of strengthening your
+characters.
+
+330
+00:26:34,480 --> 00:26:39,760
+And one thing that's particularly worth calling
+out is DeNA success with events. So events
+
+331
+00:26:39,760 --> 00:26:44,790
+are variations on the standard game play that
+happen for a very limited amount of time,
+
+332
+00:26:44,790 --> 00:26:50,040
+a fixed duration, that provide important rewards.
+And in this case, they provide rare characters
+
+333
+00:26:50,040 --> 00:26:55,080
+which are extremely valuable within the context
+of the game, again feeding back to strengthening
+
+334
+00:26:55,080 --> 00:27:00,090
+your characters. But the importance here is
+creating that sense of urgency through having
+
+335
+00:27:00,090 --> 00:27:03,610
+a limited time window and providing something
+that's very valuable.
+
+336
+00:27:03,610 --> 00:27:10,610
+And that combination is very powerful.
+You say how powerful is it? The monetization
+
+337
+00:27:13,700 --> 00:27:19,590
+in that game actually doubles on an average-revenue-per-user
+basis during these events. So there's a clear
+
+338
+00:27:19,590 --> 00:27:25,600
+payoff to finding the ways to make your game
+work for users, to create that sense of urgency,
+
+339
+00:27:25,600 --> 00:27:29,200
+to give the players that great experience,
+to provide a slightly different game experience,
+
+340
+00:27:29,200 --> 00:27:32,820
+to give them a different way to interact with
+other users. And clearly there's a financial
+
+341
+00:27:32,820 --> 00:27:39,820
+reward for doing this within the game.
+Next one I'd like to talk about is Kabam,
+
+342
+00:27:40,410 --> 00:27:46,090
+another very successful developer who moved
+just last year from the Web over to mobile.
+
+343
+00:27:46,090 --> 00:27:50,750
+So in Kabam's case, we're going to focus their
+case study on Kings of the Camelot, Battle
+
+344
+00:27:50,750 --> 00:27:53,120
+for the North.
+They also have several other successful titles
+
+345
+00:27:53,120 --> 00:27:58,840
+on Google Play, including The Hobbit, Arcane
+Empires, and the soon to release Fast & Furious
+
+346
+00:27:58,840 --> 00:28:04,450
+6.
+One of the lessons from Kabam was always be
+
+347
+00:28:04,450 --> 00:28:10,260
+testing. Kabam focuses on core gaming users.
+Core gaming users monetize much better than
+
+348
+00:28:10,260 --> 00:28:14,540
+your average user, and as a result of being
+able to earn that revenue, they're able to
+
+349
+00:28:14,540 --> 00:28:19,660
+reinvest those earnings back into paid user
+acquisition. In this case here, they're doing
+
+350
+00:28:19,660 --> 00:28:24,270
+a split test on several different campaigns.
+On the campaign on the left, you can see a
+
+351
+00:28:24,270 --> 00:28:29,390
+campaign focused around characters and concept.
+On the campaign on the right, you can see
+
+352
+00:28:29,390 --> 00:28:33,020
+a campaign much more focused around a realistic
+depiction of game play.
+
+353
+00:28:33,020 --> 00:28:37,610
+Kabam is always testing, and so based on the
+relative success of each of these campaigns,
+
+354
+00:28:37,610 --> 00:28:42,630
+they can add more resources to one, take them
+away from another, and be very flexible in
+
+355
+00:28:42,630 --> 00:28:48,680
+growing their overall user base.
+In terms of retention, as I mentioned, Kabam
+
+356
+00:28:48,680 --> 00:28:53,650
+recently came from Web over to mobile, and
+they quickly realized a difference in those
+
+357
+00:28:53,650 --> 00:28:56,320
+users.
+The mobile sessions were much more frequent.
+
+358
+00:28:56,320 --> 00:28:59,570
+There were many more sessions through the
+course of the day, but they were also shorter,
+
+359
+00:28:59,570 --> 00:29:03,880
+and so one of the first things they did was
+change the way they did the content refreshes
+
+360
+00:29:03,880 --> 00:29:08,490
+to make them more frequent.
+You can also see visually depicted here, on
+
+361
+00:29:08,490 --> 00:29:13,310
+the left, that's the Web game, and there's
+a very rich landscape of game-play elements.
+
+362
+00:29:13,310 --> 00:29:17,230
+Many of the major elements are spread further
+apart. It's really designed to be played with
+
+363
+00:29:17,230 --> 00:29:21,650
+a mouse and keyboard, obviously. And on the
+right, you have a much more streamlined game
+
+364
+00:29:21,650 --> 00:29:26,040
+experience on mobile. Many of the user actions
+are able to be taken right from your thumb
+
+365
+00:29:26,040 --> 00:29:32,590
+in a very easy way.
+Now, monetization. Kabam really focuses on
+
+366
+00:29:32,590 --> 00:29:38,230
+providing visual consistency. As I said, it's
+really important how you ask your users for
+
+367
+00:29:38,230 --> 00:29:42,850
+payment. In their case, they want to minimize
+any confusion, and so here, through all three
+
+368
+00:29:42,850 --> 00:29:49,850
+screens, you can see the exact identical presentation
+throughout.
+
+369
+00:29:51,460 --> 00:29:55,740
+The final case study today will be on Pandora.
+Pandora is a company that's extremely well-known.
+
+370
+00:29:55,740 --> 00:30:01,360
+It hardly needs an introduction. The leading
+Internet radio service.
+
+371
+00:30:01,360 --> 00:30:04,720
+Kabam is one of those lucky few apps that
+has reached the top of the lists, and so from
+
+372
+00:30:04,720 --> 00:30:09,840
+there -- it's hard to get there, but when
+you do, it's quite powerful. But what I really
+
+373
+00:30:09,840 --> 00:30:16,840
+want to focus on with Pandora that's a recent
+change that they've made is around monetization.
+
+374
+00:30:17,180 --> 00:30:21,530
+And so as Ibrahim alluded to earlier is you
+can see in the chart here, something changed
+
+375
+00:30:21,530 --> 00:30:25,790
+in February. And what was that change?
+So the thing that changed in February is Pandora
+
+376
+00:30:25,790 --> 00:30:31,010
+implemented our in-app billing subscriptions.
+Previously, before that time, while the revenue
+
+377
+00:30:31,010 --> 00:30:35,180
+and payments were much flatter, you had to
+go from your mobile device over to Pandora
+
+378
+00:30:35,180 --> 00:30:40,150
+on Web and sign up for subscription there
+to be able to use the subscriptions on mobile.
+
+379
+00:30:40,150 --> 00:30:43,890
+By reducing all of that payment friction,
+by allowing a user to purchase directly from
+
+380
+00:30:43,890 --> 00:30:47,170
+the mobile device, they saw a big bump in
+overall payments.
+
+381
+00:30:47,170 --> 00:30:53,720
+But it doesn't stop there. It gets even better
+the next month, because what happened here?
+
+382
+00:30:53,720 --> 00:31:00,720
+So at this time, Pandora still allowed users
+40 free hours of mobile listening per month.
+
+383
+00:31:00,970 --> 00:31:06,350
+But for those users who reached those 40 free
+hours and still wanted more, Pandora asked
+
+384
+00:31:06,350 --> 00:31:11,850
+them to pay. And that's what really allows
+this. And omotenashi is the theme. It's finding
+
+385
+00:31:11,850 --> 00:31:16,770
+that mix of you have users. You're providing
+a great value to users. For free you're providing
+
+386
+00:31:16,770 --> 00:31:21,960
+40 free hours of mobile listening per month,
+but yet there's so many users who want to
+
+387
+00:31:21,960 --> 00:31:27,850
+help you build your business, they love your
+product so much they're happy to pay at that
+
+388
+00:31:27,850 --> 00:31:33,970
+time.
+So in summary, when you're thinking about
+
+389
+00:31:33,970 --> 00:31:37,810
+acquisition, think about improving your Play
+Store page and investing in your Play Store
+
+390
+00:31:37,810 --> 00:31:43,250
+page. Consider cross promotion, especially
+with multiple different applications.
+
+391
+00:31:43,250 --> 00:31:49,600
+For those applications that are making money,
+reinvest those earnings for paid user acquisition.
+
+392
+00:31:49,600 --> 00:31:54,460
+And of course everybody wants to get at the
+top of the charts.
+
+393
+00:31:54,460 --> 00:31:59,900
+For retention, really think about rewarding
+the user actions that you're trying to promote.
+
+394
+00:31:59,900 --> 00:32:06,900
+And consider reinventing your user experience.
+It's really important to provide clear objectives
+
+395
+00:32:08,630 --> 00:32:15,630
+to users, and to support those objectives
+with the overall user experience.
+
+396
+00:32:16,530 --> 00:32:21,220
+Design for mobile. It's important, and users
+will notice.
+
+397
+00:32:21,220 --> 00:32:25,460
+In (indiscernible) monetization the way that
+you merchandise within your products on mobile
+
+398
+00:32:25,460 --> 00:32:32,460
+matters. If you change new game play mechanics,
+users will notice and you can drive huge success.
+
+399
+00:32:35,590 --> 00:32:40,980
+Present a consistent visual experience. And
+finally, there's still -- there's developers
+
+400
+00:32:40,980 --> 00:32:44,780
+that have charts like this, and we're looking
+forward to even more of these in the coming
+
+401
+00:32:44,780 --> 00:32:49,360
+year.
+And so that concludes the prepared part for
+
+402
+00:32:49,360 --> 00:32:53,620
+our talk. As we mentioned, following this
+talk we'll be taking Q&A in the Office Hour
+
+403
+00:32:53,620 --> 00:32:56,240
+areas. We'd also like to point out a few other
+--
+
+404
+00:32:56,240 --> 00:32:57,550
+>>Ibrahim Elbouchikhi: We have time to do
+the questions.
+
+405
+00:32:57,550 --> 00:33:01,730
+>>Bob Meese: Yeah, we can do a few now, but
+we'd like to specifically point out a few
+
+406
+00:33:01,730 --> 00:33:05,400
+we thought were particularly noteworthy and
+valuable for your time.
+
+407
+00:33:05,400 --> 00:33:09,860
+And then most importantly, we'd like to say
+thank you. We would like to thank you all
+
+408
+00:33:09,860 --> 00:33:14,500
+of you for your time today. We would like
+to thank some of the developers who were part
+
+409
+00:33:14,500 --> 00:33:18,550
+of this. I see Kabam here in the front row.
+Thank you guys very much. And then thank you
+
+410
+00:33:18,550 --> 00:33:23,130
+to all of the developers on Google Play. It's
+been an amazing past year, but the future,
+
+411
+00:33:23,130 --> 00:33:30,130
+I believe, is even brighter.
+>>> I had one quick question. Can I ask now?
+
+412
+00:33:31,020 --> 00:33:36,980
+[ Applause ]
+>>> You said something about the carrier billing,
+
+413
+00:33:36,980 --> 00:33:40,110
+apart from the gift card. What is that carrier
+billing?
+
+414
+00:33:40,110 --> 00:33:44,100
+>>Ibrahim Elbouchikhi: So carrier billing
+is basically the ability for a user to put
+
+415
+00:33:44,100 --> 00:33:50,120
+their purchases on a monthly bill. So the
+same bill you get from your provider, you
+
+416
+00:33:50,120 --> 00:33:54,090
+just put all your purchases on that bill.
+And so it just adds up to that.
+
+417
+00:33:54,090 --> 00:33:57,230
+>>> So if you want to do international calling
+or something, is it used for that or for what?
+
+418
+00:33:57,230 --> 00:34:00,810
+>>Bob Meese: It's just for buying in-app products.
+So when you're, let's say, playing a game
+
+419
+00:34:00,810 --> 00:34:04,610
+or you're even subscribing to Pandora, you
+can put your Pandora subscription on your
+
+420
+00:34:04,610 --> 00:34:07,870
+monthly phone bill.
+>>> Oh, that way.
+
+421
+00:34:07,870 --> 00:34:11,560
+>>Ibrahim Elbouchikhi: Yeah.
+>>> Hello. I'm having a little bit of time
+
+422
+00:34:11,560 --> 00:34:16,530
+just judging business models and evaluating
+business models when I'm thinking about developing
+
+423
+00:34:16,530 --> 00:34:21,750
+apps. Like, for example, you're talking about
+7x improvements, 5x improvements, 2x improvements,
+
+424
+00:34:21,750 --> 00:34:24,889
+and all that sounds great but zero times five
+is still zero.
+
+425
+00:34:24,889 --> 00:34:29,129
+So the question is what does it mean to be
+in the hundred top-grossing apps? Is there
+
+426
+00:34:29,129 --> 00:34:35,429
+any charts of, like, revenue, actual dollars
+per month if you're a certain percentile of
+
+427
+00:34:35,429 --> 00:34:40,919
+your app in that top-grossing list? I'm having
+a really hard time finding useful data in
+
+428
+00:34:40,919 --> 00:34:43,399
+that direction.
+>>Ibrahim Elbouchikhi: So I would say that's
+
+429
+00:34:43,399 --> 00:34:49,800
+probably like partner data. We generally can't
+share information like that about how much
+
+430
+00:34:49,800 --> 00:34:55,379
+revenue people make in our different rankings.
+It varies a lot depending what type of application
+
+431
+00:34:55,379 --> 00:35:00,030
+is up there. Clearly, if you have a $9.99
+a month subscription and you are at the top
+
+432
+00:35:00,030 --> 00:35:05,530
+gross end, that gets you up there faster.
+It varies a lot, so it's hard for us to give
+
+433
+00:35:05,530 --> 00:35:09,680
+a firm number there.
+>>> Even if it's completely anonymized statistic,
+
+434
+00:35:09,680 --> 00:35:15,630
+like if your app is in the top 2% you can
+expect, I don't know, $3,000 a month?
+
+435
+00:35:15,630 --> 00:35:18,240
+>>Bob Meese: You want more just what is the
+data behind it.
+
+436
+00:35:18,240 --> 00:35:23,790
+>>> Just very rough guidelines. Can I expect
+to make 30 bucks a month, 3,000 bucks a month,
+
+437
+00:35:23,790 --> 00:35:28,400
+300,000 bucks a month if I have a top 2% app?
+It's just really hard to get a feeling for
+
+438
+00:35:28,400 --> 00:35:29,820
+this.
+>>Bob Meese: Sure. I mean, if you're interested
+
+439
+00:35:29,820 --> 00:35:32,960
+enough, there's data that's out there. A number
+of the developers are publicly traded, and
+
+440
+00:35:32,960 --> 00:35:35,550
+so there you can get a sense of what their
+revenues are.
+
+441
+00:35:35,550 --> 00:35:41,130
+As Ibrahim said, it's challenging for us to
+share our partners' data. We all have confidentiality
+
+442
+00:35:41,130 --> 00:35:43,010
+agreements.
+We've tried as much as possible through this
+
+443
+00:35:43,010 --> 00:35:47,220
+presentation to be as open, and over time
+we've become more and more open. But if you
+
+444
+00:35:47,220 --> 00:35:49,300
+want to talk more, we can find you at Office
+Hours.
+
+445
+00:35:49,300 --> 00:35:54,770
+>>> Okay. Thanks.
+>>> Now with version three of in-app billing,
+
+446
+00:35:54,770 --> 00:36:00,960
+how soon can we expect to be able to do multiple
+purchases of a single item? For instance,
+
+447
+00:36:00,960 --> 00:36:07,370
+purchase 200 tokens for two bucks and have
+Google Play handle the maintenance of that?
+
+448
+00:36:07,370 --> 00:36:13,420
+>>Ibrahim Elbouchikhi: So that's (indiscernible)
+configuring one skew that equals 200 tokens.
+
+449
+00:36:13,420 --> 00:36:16,760
+>>> Yeah.
+>>Ibrahim Elbouchikhi: It's not in the immediate
+
+450
+00:36:16,760 --> 00:36:20,840
+roadmap, but it's something we've talked about
+in the past. So I'll take that back to the
+
+451
+00:36:20,840 --> 00:36:25,350
+team and see if we can prioritize it.
+And the use case, is it just a maintenance
+
+452
+00:36:25,350 --> 00:36:28,700
+issue or --
+>>> I mean, I can do it right now, but I'll
+
+453
+00:36:28,700 --> 00:36:32,950
+have to build my own server infrastructure
+to manage the consumption of those 200 tokens.
+
+454
+00:36:32,950 --> 00:36:37,780
+So what I'd really like to do is allow the
+user to purchase 200 tokens, and then as they
+
+455
+00:36:37,780 --> 00:36:42,870
+use them in game, I just tell Google Play
+consume one token, consume one token.
+
+456
+00:36:42,870 --> 00:36:46,650
+>>Ibrahim Elbouchikhi: Okay. Yeah, that makes
+sense.
+
+457
+00:36:46,650 --> 00:36:53,100
+>>> Hi. Do you have any tip or -- what's better?
+To enlighten the pro app or do a light app
+
+458
+00:36:53,100 --> 00:36:57,530
+in a purchase?
+>>Ibrahim Elbouchikhi: I'm sorry; I didn't
+
+459
+00:36:57,530 --> 00:37:01,200
+get that.
+>>Bob Meese: You're saying whether you do
+
+460
+00:37:01,200 --> 00:37:03,790
+two different applications or whether you
+do a free app with an in-app purchase?
+
+461
+00:37:03,790 --> 00:37:06,630
+>>> Yeah.
+>>Bob Meese: One error we found is whenever
+
+462
+00:37:06,630 --> 00:37:11,360
+developers have two different apps, it creates
+a lot of overhead. So some of the general
+
+463
+00:37:11,360 --> 00:37:16,500
+guidance is simplifying, finding one application
+to invest all of your resources behind. Otherwise,
+
+464
+00:37:16,500 --> 00:37:20,120
+it can lead to confusion.
+So the general best practice is invest in
+
+465
+00:37:20,120 --> 00:37:23,630
+a single app, especially for smaller developers.
+>>Ibrahim Elbouchikhi: And the upgrade experience
+
+466
+00:37:23,630 --> 00:37:27,200
+is not as nice; right? Because you have to
+get them to go install a different app and
+
+467
+00:37:27,200 --> 00:37:32,850
+buy another app versus just in-app purchase
+any upgrade, you unlock the new content immediately
+
+468
+00:37:32,850 --> 00:37:35,329
+in the app.
+>>> Thanks.
+
+469
+00:37:35,329 --> 00:37:42,329
+>>> Yeah, I was wondering if you are considering
+doing promo codes for paid apps? And are you
+
+470
+00:37:42,690 --> 00:37:48,340
+also considering affiliate programs?
+>>Ibrahim Elbouchikhi: Yeah, those are things
+
+471
+00:37:48,340 --> 00:37:53,130
+that we've looked into as well. We've launched
+the promotional campaigns in terms of promo
+
+472
+00:37:53,130 --> 00:37:59,990
+codes for money, so you can actually get $50,
+as I mentioned, in the earlier Galaxy S3 campaign.
+
+473
+00:37:59,990 --> 00:38:05,690
+We're looking as well into being able to allow
+developers to issue promo codes and have them
+
+474
+00:38:05,690 --> 00:38:09,849
+redeemed by -- whether it's the press or reviewers
+or whomever it is. Yes.
+
+475
+00:38:09,849 --> 00:38:14,570
+>>> And what about the affiliate programs?
+Do you -- Are you going to launch that soon?
+
+476
+00:38:14,570 --> 00:38:19,340
+>>Ibrahim Elbouchikhi: I don't think it will
+launch soon, but we'll definitely talk about
+
+477
+00:38:19,340 --> 00:38:25,690
+them, especially in the content side of Google
+Play. But we'll definitely take that back
+
+478
+00:38:25,690 --> 00:38:29,250
+to the team.
+>>> All right. Thanks.
+
+479
+00:38:29,250 --> 00:38:35,340
+>>> How are you defining what is a top app?
+Is it, you know, the top sales that day? That
+
+480
+00:38:35,340 --> 00:38:38,520
+week? That month?
+And are you also doing any editorializing
+
+481
+00:38:38,520 --> 00:38:40,870
+around that where you're just putting in things
+like you like?
+
+482
+00:38:40,870 --> 00:38:45,470
+>>Bob Meese: No, no. All the top lists are
+straight up algorithmic, and there, it's revenue
+
+483
+00:38:45,470 --> 00:38:49,970
+transacted through Google Play, and it's generally
+over a week time frame.
+
+484
+00:38:49,970 --> 00:38:50,809
+>>> One week time frame?
+>>Bob Meese: Yep.
+
+485
+00:38:50,809 --> 00:38:55,190
+>>> Same thing across free/paid apps -- or
+free apps, paid apps, et cetera?
+
+486
+00:38:55,190 --> 00:38:59,150
+>>Ibrahim Elbouchikhi: There was a talk earlier
+about discovery that Ankit Jain gave. It's
+
+487
+00:38:59,150 --> 00:39:03,140
+one of those we've highlighted, and that was
+actually all about that, all about discovery
+
+488
+00:39:03,140 --> 00:39:10,140
+and top lists and those sorts of things.
+>>> You had an example about the kind of creative
+
+489
+00:39:11,040 --> 00:39:15,750
+that works well in the Play Store and what
+your listing should contain. Do you have similar
+
+490
+00:39:15,750 --> 00:39:21,280
+recipes or insights about how to do paid user
+acquisition, which you also briefly mentioned?
+
+491
+00:39:21,280 --> 00:39:25,940
+What works in paid user acquisition?
+>>Bob Meese: We observe it. We don't make
+
+492
+00:39:25,940 --> 00:39:30,100
+recommendations. There's a part of Google's
+business which is fully separate from us with,
+
+493
+00:39:30,100 --> 00:39:33,130
+you know, the ads business, which focuses
+more on that.
+
+494
+00:39:33,130 --> 00:39:39,070
+For us, the conversation today was more around
+observing more so than recommending, but there's
+
+495
+00:39:39,070 --> 00:39:41,870
+plenty of other smart people, either other
+developers that are out there that are doing
+
+496
+00:39:41,870 --> 00:39:47,110
+it or the vendors themselves, that I'm sure
+will be happy to educate you.
+
+497
+00:39:47,110 --> 00:39:53,040
+>>> If I have a paid application with low
+download numbers, one way I could boost those
+
+498
+00:39:53,040 --> 00:40:00,040
+is to offer it free for a period of time,
+say a week or a month or even a day. Is that
+
+499
+00:40:01,550 --> 00:40:05,550
+still not possible, and why?
+>>Ibrahim Elbouchikhi: Converting a free app
+
+500
+00:40:05,550 --> 00:40:09,790
+to a paid app.
+>>> Other way. I have a paid app now. I want
+
+501
+00:40:09,790 --> 00:40:12,560
+to make it free for a day or a week.
+>>Ibrahim Elbouchikhi: And then bring it back.
+
+502
+00:40:12,560 --> 00:40:14,650
+>>> Mm-hmm.
+>>Ibrahim Elbouchikhi: We'll have to take
+
+503
+00:40:14,650 --> 00:40:19,990
+that back to the Developer Console team. That's
+more of how do we manage the skew and what
+
+504
+00:40:19,990 --> 00:40:25,440
+types of skews are out there, and like each
+product and categorization, but I'll bring
+
+505
+00:40:25,440 --> 00:40:28,550
+that back to the team.
+>>Bob Meese: And I think that's it. Our time
+
+506
+00:40:28,550 --> 00:40:30,720
+is up. So we really appreciate your questions.
+Please, follow up with --
+
+507
+00:40:30,720 --> 00:40:32,420
+>>Ibrahim Elbouchikhi: Yeah, Office Hours.
+Thanks.
+
+508
+00:40:32,420 --> 00:40:33,030
+[ Applause ]
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Download VTT files</title>
+
+</head>
+
+<body>
+
+<div id="data"></div>
+
+<!-- // http://img.youtube.com/vi/3pxf3Ju2row/hqdefault.jpg -->
+
+<script type="text/javascript">
+var videos = {};
+var videoIds = ["Oic22dQMRXQ", "fX0j4c_NAFY", "3-WYu_p5rdU", "WhZpKdQcKhU", "zxuA-wyajhY", "ytJKdipILiU", "FY5iiuQRyEE"];
+
+function getVideoData(videoId){
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://gdata.youtube.com/feeds/api/videos/" + videoId +"?alt=json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var obj = JSON.parse(xhr.responseText);
+        var content = obj.entry.content.$t;
+        var video = {};
+        video.summary = content;
+        // video.speakers = content.split(/[\n\n|\r\n\r\n]/)[0];
+        // // video.subtitle = content[1];
+        // // video.description = content[2];
+        video.viewCount = obj.entry.yt$statistics.viewCount;
+        try{
+            video.rating = obj.entry.gd$rating.average;
+        } catch(e) {
+            console.log(obj.entry);
+        }
+        video.title = obj.entry.title.$t;
+        video.id = videoId;
+        videos[videoId] = video;
+        if (Object.keys(videos).length === videoIds.length){ // last one
+            console.log(videos);
+            document.getElementById("data").innerHTML = JSON.stringify(videos);
+            var keys = Object.keys(videos);
+            for (var i = 0; i != videoIds.length; ++i){
+                var id = videoIds[i];
+                if (keys.indexOf(id) === -1){
+                    console.log(id);
+                }
+            }
+        }
+      }
+    }
+
+    xhr.send();
+}
+
+for (var i = 0; i != videoIds.length; ++i){
+    getVideoData(videoIds[i]);
+}
+
+// var newVideos = {};
+// for (var i = 0; i != videos.length; ++i){
+//     var video = videos[i];
+//     newVideos[video.id] = {content: video.content, rating: video.rating, speakers: video.speakers, title: video.title, viewCount: video.viewCount};
+
+// }
+// document.getElementById("data").innerHTML = JSON.stringify(newVideos);
+</script>
+
+
+
+</body>
+
+</html>

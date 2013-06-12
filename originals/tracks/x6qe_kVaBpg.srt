@@ -1,0 +1,1921 @@
+1
+00:00:02,889 --> 00:00:07,660
+>>Paul Irish: Hi, everyone. Hello. My name
+is Paul Irish and we're going to dive into
+
+2
+00:00:07,660 --> 00:00:10,709
+the Chrome DevTools.
+Since Google I/O last year there's been a
+
+3
+00:00:10,709 --> 00:00:14,889
+lot of work put into DevTools. I'm going to
+show just a little bit of some of the features
+
+4
+00:00:14,889 --> 00:00:19,550
+that have landed.
+So the way that we're going to go into this,
+
+5
+00:00:19,550 --> 00:00:24,029
+we're going to dive into some of the improvements
+made to authoring, just building out and working
+
+6
+00:00:24,029 --> 00:00:28,259
+with the tools to iterate on your -- your
+application, your site; dive into what that
+
+7
+00:00:28,259 --> 00:00:32,840
+looks like on mobile; and then dive into some
+of the ground-breaking performance features
+
+8
+00:00:32,840 --> 00:00:39,280
+that really change how you can get insight
+and understand how to fix performance situations
+
+9
+00:00:39,280 --> 00:00:42,789
+with your app.
+All right. So first stop, I want to play a
+
+10
+00:00:42,789 --> 00:00:47,469
+little bit of this video. This is Remy Sharp,
+and a bit ago he made a short video on kind
+
+11
+00:00:47,469 --> 00:00:51,090
+of how he never even leaves the DevTools when
+he does development.
+
+12
+00:00:51,090 --> 00:00:54,780
+>>> So what I'm going to do here is just make
+a feature and just hopefully you already know
+
+13
+00:00:54,780 --> 00:00:59,800
+about this and you can just kind of stick
+your mouse cursor straight in and we can just
+
+14
+00:00:59,800 --> 00:01:05,290
+go to blue and if I hit "command S" --
+>>Paul Irish: So what he's showing here is
+
+15
+00:01:05,290 --> 00:01:10,380
+actually two separate things. One is that
+he has live edit in the JavaScript. Any changes
+
+16
+00:01:10,380 --> 00:01:14,210
+he's making in the JavaScript are immediately
+patched up to V8 and it starts evaluating
+
+17
+00:01:14,210 --> 00:01:17,350
+the new code.
+And the second feature, separately, is he's
+
+18
+00:01:17,350 --> 00:01:22,570
+making these changes back to disk and saving
+them so that they persist to disk.
+
+19
+00:01:22,570 --> 00:01:27,530
+We like this. We think this is really powerful
+and if you've seen the Brent Victor talk,
+
+20
+00:01:27,530 --> 00:01:32,890
+having a -- an environment where you can iterate
+live against your production application that
+
+21
+00:01:32,890 --> 00:01:36,750
+you're building really changes the whole development
+lifecycle.
+
+22
+00:01:36,750 --> 00:01:41,810
+So today, I'm going to share with you something
+called "workspaces."
+
+23
+00:01:41,810 --> 00:01:47,850
+Actually, I have a problem with this slide.
+First of all, there's a capital "O." Okay.
+
+24
+00:01:47,850 --> 00:01:53,710
+One second. I'm just going to fix this. Okay.
+Let's see. We're going to go down here and
+
+25
+00:01:53,710 --> 00:01:58,869
+then actually the styling is not totally keen
+-- I'm not -- we could make this better, I
+
+26
+00:01:58,869 --> 00:02:02,130
+think.
+I'm going to add some text shadow, probably.
+
+27
+00:02:02,130 --> 00:02:08,720
+Let's give it some of this. Yeah, it's like
+a little glow. I like that. Wow!
+
+28
+00:02:08,720 --> 00:02:15,720
+Maybe change up the color. Let's see. I'll
+just make it a little bit lighter.
+
+29
+00:02:19,400 --> 00:02:25,530
+And bump the font size.
+Ooh. Line height. Sheesh. Okay, okay, okay.
+
+30
+00:02:25,530 --> 00:02:31,260
+1.1 sounds about good. Yeah.
+All right. So I've made these changes. I should
+
+31
+00:02:31,260 --> 00:02:35,750
+probably, you know, copy them. Or maybe I'll
+go over here and I could copy them over from
+
+32
+00:02:35,750 --> 00:02:41,870
+here, go back to sublime and see we're in
+my default CSS.
+
+33
+00:02:41,870 --> 00:02:48,870
+Section, line height. Wait. Um... okay, I
+-- let's see if I can get this on screen at
+
+34
+00:02:52,000 --> 00:02:56,030
+the same time here.
+Okay. Yeah. Sure.
+
+35
+00:02:56,030 --> 00:03:02,489
+So, uh, line height and colors. Brighten that
+up.
+
+36
+00:03:02,489 --> 00:03:09,489
+And let's see. Ahh. Then I have a little bit
+of box shadow. 10px, black, seems good.
+
+37
+00:03:18,159 --> 00:03:24,650
+Come down here, and what you're seeing, actually
+-- so all my changes that I'm making in styling
+
+38
+00:03:24,650 --> 00:03:26,200
+--
+[ Applause ]
+
+39
+00:03:26,200 --> 00:03:33,200
+>>Paul Irish: All my changes that I'm making
+here in the style panel are persistent to
+
+40
+00:03:33,989 --> 00:03:38,780
+disk and I immediately have them over here.
+Now, I can make my edits here or I can come
+
+41
+00:03:38,780 --> 00:03:45,189
+over here and actually just kill this box
+shadow and, you know, tweak my line height.
+
+42
+00:03:45,189 --> 00:03:50,129
+But I have the editability in both places.
+I can also come back, say, for instance, to
+
+43
+00:03:50,129 --> 00:03:57,129
+-- to sublime. Maybe I'm going to make my
+change down here, so instead -- I'm going
+
+44
+00:03:58,790 --> 00:04:03,590
+to kill the box shadow down here and we'll
+change the color over to indigo. That one's
+
+45
+00:04:03,590 --> 00:04:08,159
+been -- I like that style.
+Come back, and immediately my change comes
+
+46
+00:04:08,159 --> 00:04:13,019
+up in the DevTools. No refresh.
+[ Applause ]
+
+47
+00:04:13,019 --> 00:04:19,880
+>>Paul Irish: So I'm really keen on this,
+and I think it's really powerful, but it's
+
+48
+00:04:19,880 --> 00:04:24,200
+backed up by a bit of -- a bit of work. So
+--
+
+49
+00:04:24,200 --> 00:04:30,480
+Ah. One last thing. The capitalization that
+I didn't even get to. So let's take a look
+
+50
+00:04:30,480 --> 00:04:37,150
+at that.
+So these are HTML styles -- HTML slides, but
+
+51
+00:04:37,150 --> 00:04:44,150
+I'm using markdown to actually generate them,
+so if I want to change this, I should probably
+
+52
+00:04:44,360 --> 00:04:47,460
+edit my markdowns.
+So what I'm going to do is just hit command
+
+53
+00:04:47,460 --> 00:04:54,460
+"O" inside here, bring up my slides for markdown,
+and inside here -- so this is just my markdown
+
+54
+00:04:55,820 --> 00:05:02,820
+source. I'm going to change the capitalization,
+hit "save," hit "refresh," and we got my changes
+
+55
+00:05:02,920 --> 00:05:07,190
+in place here.
+So this is really powerful and we're really
+
+56
+00:05:07,190 --> 00:05:12,150
+excited about what we can do here.
+Workspaces allows you to map what's coming
+
+57
+00:05:12,150 --> 00:05:18,900
+into the browser to the local filesystem,
+so in this case, I have -- this is the workspace
+
+58
+00:05:18,900 --> 00:05:25,010
+for my slides. I have the entire local filesystem
+and that's been mapped by DevTools to what's
+
+59
+00:05:25,010 --> 00:05:31,820
+coming in the browser.
+So I can edit my JavaScript, my CSS, my HTML,
+
+60
+00:05:31,820 --> 00:05:36,550
+my markdown files. Even the DevTools engineering
+team who is building this edits their -- their
+
+61
+00:05:36,550 --> 00:05:42,120
+C++ bindings directly inside the DevTools.
+The style changes that I'm making inside the
+
+62
+00:05:42,120 --> 00:05:48,650
+style pane persist. I can edit. The changes
+are kept. I can undo, redo any of the changes
+
+63
+00:05:48,650 --> 00:05:53,270
+in here, which is just command "Z," command
+shift "Z," and this is great because I'm able
+
+64
+00:05:53,270 --> 00:05:59,360
+to maintain my context for styling.
+So I don't have to be bopping in and out of
+
+65
+00:05:59,360 --> 00:06:04,170
+a different editor to make these changes.
+I can make them all here in one place.
+
+66
+00:06:04,170 --> 00:06:09,790
+All right. So this is looking pretty good.
+I'm going to move on.
+
+67
+00:06:09,790 --> 00:06:14,680
+Last year at I/O, we asked everyone what features
+you wanted inside of DevTools, and one of
+
+68
+00:06:14,680 --> 00:06:19,500
+the top things that people wanted was support
+for Sass. Because you're editing in Sass,
+
+69
+00:06:19,500 --> 00:06:25,310
+you're authoring there, but then in the DevTools
+you're seeing CSS and you kind of need to
+
+70
+00:06:25,310 --> 00:06:29,300
+manually map back and forth.
+So this is something that we've been working
+
+71
+00:06:29,300 --> 00:06:34,210
+on, and I wanted to show you how this works.
+So I'm going to bring up a little copy of
+
+72
+00:06:34,210 --> 00:06:38,950
+HTML5 Please. This is a site with a small
+node back end but the styles are written in
+
+73
+00:06:38,950 --> 00:06:43,010
+Sass, and we want to take a look at how that
+works.
+
+74
+00:06:43,010 --> 00:06:50,010
+So let's take this little views badge right
+here. Now normally, if I am looking at the
+
+75
+00:06:51,410 --> 00:06:55,810
+styling, I'm going to see something like this,
+right?
+
+76
+00:06:55,810 --> 00:07:02,540
+So we got the green box shadow, border right,
+and background. We're all using this green,
+
+77
+00:07:02,540 --> 00:07:06,580
+and in fact, it's using just a little bit
+darker as it goes down.
+
+78
+00:07:06,580 --> 00:07:12,390
+Now, I can click over to see my CSS, but as
+I said, this is compiled, so -- from my Sass,
+
+79
+00:07:12,390 --> 00:07:16,060
+so it's not very helpful.
+So let's turn on Sass debugging.
+
+80
+00:07:16,060 --> 00:07:20,410
+So when I go into DevTool settings -- I like
+using the question mark for this, a quick
+
+81
+00:07:20,410 --> 00:07:24,520
+little shortcut -- go into experiments, turn
+on Sass debugging, and now I'm just going
+
+82
+00:07:24,520 --> 00:07:27,630
+to refresh the page so that this is all looking
+good.
+
+83
+00:07:27,630 --> 00:07:31,660
+And now the first difference that you're going
+to see is that right here we're listing the
+
+84
+00:07:31,660 --> 00:07:36,400
+original place inside the Sass file where
+this was -- where this was found.
+
+85
+00:07:36,400 --> 00:07:43,120
+So I can click over to that and we're looking
+inside my Sass file where this -- where this
+
+86
+00:07:43,120 --> 00:07:46,830
+selector was found.
+So we got my use, and it looks like we're
+
+87
+00:07:46,830 --> 00:07:51,120
+applying a mix-in inside here. Okay. Cool.
+But actually I want to change this green,
+
+88
+00:07:51,120 --> 00:07:53,960
+so I'm going to have to do a little bit more
+hunting.
+
+89
+00:07:53,960 --> 00:07:59,660
+So as I hold down the command key, I actually
+get a little bit of visual feedback. As I
+
+90
+00:07:59,660 --> 00:08:03,680
+hover, I get these little underlines, so I'm
+going to try clicking "background." We're
+
+91
+00:08:03,680 --> 00:08:08,720
+going to jump immediately into where that
+mix-in was defined. I can see my background,
+
+92
+00:08:08,720 --> 00:08:15,410
+my box shadow, my border right.
+All right. But yeah, we got this color. It
+
+93
+00:08:15,410 --> 00:08:20,700
+comes in. It's getting darkened and I want
+to edit the color. So let's do that.
+
+94
+00:08:20,700 --> 00:08:26,010
+I'm going to command-click on the color itself
+and over here we dive into the variables of
+
+95
+00:08:26,010 --> 00:08:31,800
+that CSS file where the color was actually
+defined. My cursor goes right to the definition.
+
+96
+00:08:31,800 --> 00:08:38,800
+So now let's see. I will probably want to
+make a change. As I said, I'm really into
+
+97
+00:08:38,900 --> 00:08:43,430
+indigo lately.
+All right. I'm going to hit command "S."
+
+98
+00:08:43,430 --> 00:08:50,430
+Now, one of the cool things that we have set
+up is that if you have -- if you have a Sass
+
+99
+00:08:51,270 --> 00:08:57,990
+watch set up, so you're watching, you have
+the -- the daemon sitting there waiting for
+
+100
+00:08:57,990 --> 00:09:04,150
+any changes to disk, we can actually use that
+and then as new changes come into disk, we
+
+101
+00:09:04,150 --> 00:09:06,730
+can apply them.
+So let me give this a shot.
+
+102
+00:09:06,730 --> 00:09:13,310
+I'm going to come back in here and make sure
+that that setting is on. Okay. Autoreload
+
+103
+00:09:13,310 --> 00:09:20,310
+CSS upon Sass save.
+Come over and it looks like -- there we go.
+
+104
+00:09:24,640 --> 00:09:26,140
+Nice!
+[ Applause ]
+
+105
+00:09:26,140 --> 00:09:33,140
+>>Paul Irish: All right. So I can make any
+changes to my Sass right here inside the DevTools,
+
+106
+00:09:35,570 --> 00:09:38,320
+change the color. Maybe I'm -- I should go
+back to that green. It's probably better than
+
+107
+00:09:38,320 --> 00:09:45,190
+all these changes. Just hit command "S" and
+due to workspaces, as we saw before, my local
+
+108
+00:09:45,190 --> 00:09:50,840
+development folder is mapped to what's coming
+in over the wire from local host, and so my
+
+109
+00:09:50,840 --> 00:09:56,220
+changes are saved back to disk and my watch
+picks it back up and DevTools takes care of
+
+110
+00:09:56,220 --> 00:10:02,240
+refreshing the styles right inside the browser.
+So this is really cool. We have full traceability
+
+111
+00:10:02,240 --> 00:10:08,300
+from any UI, from selectors, properties, variables,
+back to the mix-ins, the functions, the places
+
+112
+00:10:08,300 --> 00:10:12,439
+in the original sources where they were defined.
+And the fact that this is powered by sourcemaps
+
+113
+00:10:12,439 --> 00:10:16,430
+-- you've heard about sourcemaps for JavaScript.
+This is the exact same technology, only used
+
+114
+00:10:16,430 --> 00:10:20,920
+for CSS, and the DevTools team contributed
+the sourcemap implementation into the core
+
+115
+00:10:20,920 --> 00:10:25,640
+Sass compiler to enable this functionality.
+And we have the automatic reloaded style sheet
+
+116
+00:10:25,640 --> 00:10:30,680
+so as you edit inside the DevTools, you can
+just keep going and see the changes as they
+
+117
+00:10:30,680 --> 00:10:34,950
+come in.
+All right. So these two features combined
+
+118
+00:10:34,950 --> 00:10:41,440
+really kind of change things. It really means
+that DevTools can become my editor. I can
+
+119
+00:10:41,440 --> 00:10:47,250
+style as I type, whether it's in CSS or Sass.
+These changes can be persisted to disk because
+
+120
+00:10:47,250 --> 00:10:51,760
+I'm mapping them right into my local folders.
+My -- inside JavaScript I can re-evaluate
+
+121
+00:10:51,760 --> 00:10:57,500
+that -- re-evaluate it on the fly with live
+edit and where I author is where I debug.
+
+122
+00:10:57,500 --> 00:11:01,050
+It's really powerful and we're excited about
+what we can do now with this.
+
+123
+00:11:01,050 --> 00:11:06,050
+All right. Now that we've covered kind of
+taking a look at giving you more productive
+
+124
+00:11:06,050 --> 00:11:09,620
+tools when authoring sites, let's bring that
+to mobile.
+
+125
+00:11:09,620 --> 00:11:16,600
+All right. So last year we talked about remote
+debugging Chrome on Android. Powerful stuff.
+
+126
+00:11:16,600 --> 00:11:21,010
+But it does require a bit of command line
+hackery. So who is a -- raise your hand if
+
+127
+00:11:21,010 --> 00:11:23,900
+you've debugged Chrome on Android.
+[ Show of hands ]
+
+128
+00:11:23,900 --> 00:11:27,750
+>>Paul Irish: Cool. Yeah. That's great. And
+raise your hand if you really enjoyed dealing
+
+129
+00:11:27,750 --> 00:11:33,660
+with ADB on the command line and memorizing
+this -- that little guy at the bottom. One
+
+130
+00:11:33,660 --> 00:11:37,730
+second. This is why you don't do hot spots
+on your log screen.
+
+131
+00:11:37,730 --> 00:11:42,300
+All right. Cool.
+So this little guy. Yeah.
+
+132
+00:11:42,300 --> 00:11:45,530
+Not the most fun.
+So we thought that this could be better and
+
+133
+00:11:45,530 --> 00:11:50,550
+so this is our new and kind of experimental
+UI for dealing with this.
+
+134
+00:11:50,550 --> 00:11:57,550
+So first thing is, beforehand you had to download
+the Android SDK to make this work. Now there's
+
+135
+00:12:00,029 --> 00:12:04,170
+this little Chrome Extension. See this guy?
+We're just going to click on this guy and
+
+136
+00:12:04,170 --> 00:12:10,210
+start up ADB. So actually the Chrome Extension
+itself ships with ADB, which means I can just
+
+137
+00:12:10,210 --> 00:12:13,930
+turn him on there and he's going to turn on
+green once ADB is running, and this means
+
+138
+00:12:13,930 --> 00:12:18,190
+I don't need to download the SDK whatsoever,
+just the 5-meg Chrome Extension that takes
+
+139
+00:12:18,190 --> 00:12:25,190
+care of this for me.
+All right. Now, I'm going to plug in my phone.
+
+140
+00:12:26,029 --> 00:12:32,400
+Let's see. And that's my password.
+[ Laughter ]
+
+141
+00:12:32,400 --> 00:12:37,940
+>>Paul Irish: All right. I'm about to plug
+it in and let me switch back to the screen
+
+142
+00:12:37,940 --> 00:12:44,940
+because it detects right away that my device
+is in. Awesome! Good!
+
+143
+00:12:45,340 --> 00:12:50,220
+So now that that's in, let's check it out.
+So I'm going to click again and go to devices,
+
+144
+00:12:50,220 --> 00:12:54,529
+view devices.
+What this takes me to is the Chrome inspect
+
+145
+00:12:54,529 --> 00:12:57,970
+page, or about inspect.
+You might have been here before if you've
+
+146
+00:12:57,970 --> 00:13:02,150
+had to download the background page for a
+Chrome Extension or a shared worker. It shows
+
+147
+00:13:02,150 --> 00:13:08,690
+you all the targets that you could debug.
+And now, any targets that you have to debug
+
+148
+00:13:08,690 --> 00:13:11,160
+on a phone that's connected are going to show
+up here.
+
+149
+00:13:11,160 --> 00:13:15,840
+So here's my Galaxy Nexus that I have connected
+and we're seeing the page that I have open
+
+150
+00:13:15,840 --> 00:13:22,800
+right here.
+So let's take a look. All right. Rock n' roll!
+
+151
+00:13:22,800 --> 00:13:29,800
+So this is the full DevTools. Let me go over
+to Timeline and I'm just going to record a
+
+152
+00:13:30,840 --> 00:13:37,840
+quick Timeline as I scroll the page.
+And there we go.
+
+153
+00:13:37,910 --> 00:13:43,910
+[ Applause ]
+>>Paul Irish: It's really powerful and we're
+
+154
+00:13:43,910 --> 00:13:49,580
+excited about having this -- the full functionality
+of the DevTools available so conveniently.
+
+155
+00:13:49,580 --> 00:13:53,100
+And this is not just the full functionality
+of the DevTools, but any Chrome Extensions
+
+156
+00:13:53,100 --> 00:13:58,089
+or DevTools extensions that you want. Before,
+you didn't have available. Now, say, for instance,
+
+157
+00:13:58,089 --> 00:14:03,510
+you want to run Google PageSpeed against your
+situation on the phone. Right here -- my phone
+
+158
+00:14:03,510 --> 00:14:08,860
+is actually still on 3G, and so I'm able to
+understand in real network conditions what
+
+159
+00:14:08,860 --> 00:14:14,500
+Google PageSpeed is going to tell me.
+But there is still a problem, so let's say
+
+160
+00:14:14,500 --> 00:14:19,210
+-- switch back here and I come over to this
+file.
+
+161
+00:14:19,210 --> 00:14:26,210
+So before I was debugging, what, HTML5 Please
+and it was coming over local host, and sometimes
+
+162
+00:14:28,550 --> 00:14:33,839
+I'm not able to have that available on my
+phone. Just doesn't come up.
+
+163
+00:14:33,839 --> 00:14:37,620
+So we thought we could probably fix this,
+too.
+
+164
+00:14:37,620 --> 00:14:44,620
+So if I have this up here, I'm going to inspect
+this target and go into the DevTools settings,
+
+165
+00:14:45,660 --> 00:14:50,540
+and you'll see here a new setting that's called
+port forwarding. And so now I can just add
+
+166
+00:14:50,540 --> 00:14:57,540
+in I want to map over port 9000, get that
+going, and we'll come back over here and refresh
+
+167
+00:15:01,500 --> 00:15:05,410
+and we're good.
+[ Applause ]
+
+168
+00:15:05,410 --> 00:15:12,410
+>>Paul Irish: So this is fantastic because
+I can even use the functionality that I was
+
+169
+00:15:13,779 --> 00:15:19,200
+showing you before. If I want to use workspaces
+and make a change so this is the HTML of the
+
+170
+00:15:19,200 --> 00:15:26,200
+page and I'm actually just going to make a
+change to the source markup, just hit command
+
+171
+00:15:27,279 --> 00:15:34,279
+"S," command "R," and I come back over here
+and we just load up the brand-new version.
+
+172
+00:15:35,640 --> 00:15:39,940
+Command "R" again, you know, for good luck.
+[ Laughter ]
+
+173
+00:15:39,940 --> 00:15:44,230
+>>Paul Irish: And we're good.
+[ Applause ]
+
+174
+00:15:44,230 --> 00:15:51,230
+>>Paul Irish: All right. So I've just connected
+with -- with really -- with a lot of ease
+
+175
+00:15:52,120 --> 00:15:57,050
+to here. I have workspaces, I have Sass debugging,
+I have a lot of power, and I can focus my
+
+176
+00:15:57,050 --> 00:16:01,300
+development in improving this mobile experience,
+which is really fantastic.
+
+177
+00:16:01,300 --> 00:16:08,300
+All right. So no command line setup, see all
+your debug targets in about inspect, great
+
+178
+00:16:10,580 --> 00:16:15,750
+feature set available, everything that's on
+desktop is available for Chrome on Android,
+
+179
+00:16:15,750 --> 00:16:20,330
+and port forwarding to make this local development
+feedback loop really fantastic and smooth.
+
+180
+00:16:20,330 --> 00:16:27,330
+All right. Now, bringing this back up, I've
+covered authoring, I've covered what we can
+
+181
+00:16:28,750 --> 00:16:33,860
+do to make this experience better on mobile.
+Now, to dig into performance a little bit.
+
+182
+00:16:33,860 --> 00:16:38,290
+There's fantastic features and I'm going to
+cover a few of the brand-new ones.
+
+183
+00:16:38,290 --> 00:16:42,190
+But the first thing when coming to performance
+is that you've really got to focus on the
+
+184
+00:16:42,190 --> 00:16:47,339
+right priorities, finding your biggest bottlenecks
+and focusing on those first. And the Timeline
+
+185
+00:16:47,339 --> 00:16:51,250
+is the best tool for this, and I want to show
+this with a good example.
+
+186
+00:16:51,250 --> 00:16:57,250
+So here I have -- this is like an infographic
+parallax site and what we do as we scroll
+
+187
+00:16:57,250 --> 00:17:02,089
+down, we've got this kind of orange circle
+growth, we've got these white little guys
+
+188
+00:17:02,089 --> 00:17:07,740
+that are going to -- physics kind of going
+out, we got this kind of section. It's parallax.
+
+189
+00:17:07,740 --> 00:17:13,319
+It's really an attractive site.
+And then down here, a little bit more changes.
+
+190
+00:17:13,319 --> 00:17:17,870
+I'm going to come back up to the top and now
+let's take a look at this inside the Timeline.
+
+191
+00:17:17,870 --> 00:17:22,650
+I'm going to bring the DevTools down to the
+bottom. You can actually just drag it down.
+
+192
+00:17:22,650 --> 00:17:29,170
+All right. I'm going to start a Timeline recording
+with command "E," and just scroll through
+
+193
+00:17:29,170 --> 00:17:34,860
+the page.
+All right.
+
+194
+00:17:34,860 --> 00:17:40,940
+Now, what's really cool about what the Timeline
+tells us is it basically tells us the narrative
+
+195
+00:17:40,940 --> 00:17:46,870
+of performance of this site. As I scrolled
+through, a few things happened.
+
+196
+00:17:46,870 --> 00:17:51,610
+Up at the top, it was pretty quiet and it
+was just the headline, and then here we got
+
+197
+00:17:51,610 --> 00:17:57,179
+into this green section. What this was is
+a lot of draw calls. Time is spent inside
+
+198
+00:17:57,179 --> 00:18:03,190
+draw and painting, and this is when all of
+these orange circles are coming up and populating
+
+199
+00:18:03,190 --> 00:18:05,540
+this screen.
+Then we get into a lot of yellow, and what
+
+200
+00:18:05,540 --> 00:18:10,590
+this is is JavaScript execution, of course.
+And this is coming in because of all the computation
+
+201
+00:18:10,590 --> 00:18:14,800
+required to make this functionality happen.
+Then things are kind of pretty chill as we
+
+202
+00:18:14,800 --> 00:18:21,530
+go through this middle area. We got -- we're
+mostly hitting our target of 60fps, so we're
+
+203
+00:18:21,530 --> 00:18:26,230
+staying within our frame budgets, no big problems.
+And then down towards the end where we have
+
+204
+00:18:26,230 --> 00:18:30,290
+this kind of effect, we're getting kind of
+a cacophony of color. Lots of different things
+
+205
+00:18:30,290 --> 00:18:34,809
+happening at once. Looks like a good amount
+of re-calc style, layout, paint, and then
+
+206
+00:18:34,809 --> 00:18:40,030
+also JavaScript all happening at the same
+time. But overall we get this really great
+
+207
+00:18:40,030 --> 00:18:45,429
+view of what the situations are, and first,
+I want to call out that this is not really
+
+208
+00:18:45,429 --> 00:18:49,110
+a DevTools talk here at Chrome I/O. There's
+a lot of other talks and some of them have
+
+209
+00:18:49,110 --> 00:18:54,140
+already happened, but if you want to dive
+into how to figure out, you know, when you
+
+210
+00:18:54,140 --> 00:18:58,760
+have a lot of green, you're going to want
+to check out these talks from the jankfree
+
+211
+00:18:58,760 --> 00:19:05,260
+talk and the device agnostic development talk.
+Yellow, as luck would have it, is Follow the
+
+212
+00:19:05,260 --> 00:19:09,710
+Yellow Brick Road to JavaScript performance.
+That just worked out really well.
+
+213
+00:19:09,710 --> 00:19:15,120
+The G -- if you're look at GCs and memory,
+there was a great talk earlier about Gmail's
+
+214
+00:19:15,120 --> 00:19:18,860
+memory and performance and how the Chrome
+DevTools help there.
+
+215
+00:19:18,860 --> 00:19:23,000
+Compositing there's actually great stuff,
+and also layout, excellent stuff. So dig into
+
+216
+00:19:23,000 --> 00:19:27,260
+those talks as well so you can find out how
+to use these tools in more detail.
+
+217
+00:19:27,260 --> 00:19:33,150
+But I want to show a brand-new feature and
+let me show how it works.
+
+218
+00:19:33,150 --> 00:19:40,150
+All right. So we're looking at this little
+section here where we have the -- the -- all
+
+219
+00:19:41,120 --> 00:19:46,630
+the little balls that are kind of about to
+move around once I start scrolling.
+
+220
+00:19:46,630 --> 00:19:50,490
+And I'm going to record a JavaScript profile
+because, as we saw, a lot of yellow in that
+
+221
+00:19:50,490 --> 00:19:55,010
+section, and we want to know what's going
+on. Let's just try it. I will hit command
+
+222
+00:19:55,010 --> 00:20:02,010
+D once this gets going. Come on.
+There we go.
+
+223
+00:20:05,400 --> 00:20:12,400
+Nice. All right. Command D to start and stop
+really fast. And so what you get, yeah, is
+
+224
+00:20:13,990 --> 00:20:19,720
+JavaScript profile. And so what we're seeing
+here in aggregate where my costs were spent.
+
+225
+00:20:19,720 --> 00:20:24,270
+And this is good. But in some cases, it doesn't
+tell the whole story.
+
+226
+00:20:24,270 --> 00:20:28,460
+You're interested in a picture that kind of
+tells the story over time and you are just
+
+227
+00:20:28,460 --> 00:20:32,490
+seeing it at aggregate level. But here we
+can turn on the flame chart down at the bottom
+
+228
+00:20:32,490 --> 00:20:38,220
+and we get to see a different look. This is
+over time where my time was spent inside V8.
+
+229
+00:20:38,220 --> 00:20:44,100
+And in zoomout view, you get a sense of: Am
+I doing the same sort of operations over time?
+
+230
+00:20:44,100 --> 00:20:49,580
+But I can also dive in a little bit closer
+and understand what's going on.
+
+231
+00:20:49,580 --> 00:20:52,080
+>>> Wow.
+[ Applause ]
+
+232
+00:20:52,080 --> 00:20:59,080
+>>Paul Irish: So I want to point out a little
+bit on how to read this. Callstack is the
+
+233
+00:21:00,950 --> 00:21:05,990
+Y axis. So height doesn't matter too much.
+What you are looking for is wide bars that
+
+234
+00:21:05,990 --> 00:21:12,990
+are taking up time. In this case, it looks
+like -- let's see, this little flame over
+
+235
+00:21:13,059 --> 00:21:18,590
+here, we have a little bit of a pub sub. It
+is not too heavy. But it looks like most of
+
+236
+00:21:18,590 --> 00:21:25,590
+our ticks are inside of d3, inside of this
+quadtreeview call and then a lot of insertchilds
+
+237
+00:21:25,679 --> 00:21:30,260
+construct right here.
+We are able to get a good visual view of where
+
+238
+00:21:30,260 --> 00:21:34,390
+our costs are, and then we can dive in and
+make some optimizations later.
+
+239
+00:21:34,390 --> 00:21:39,870
+All right. We also have a new experiment for
+profiling Canvas, and I want to show you how
+
+240
+00:21:39,870 --> 00:21:46,740
+this works. So this is just a WebGL experiment,
+and we are going to open up the profiling
+
+241
+00:21:46,740 --> 00:21:49,940
+panel. And we are going to select "capture
+canvas frame."
+
+242
+00:21:49,940 --> 00:21:56,940
+Now, it just captured one frame of the canvas.
+And it is going to dig into all the draw calls.
+
+243
+00:21:58,059 --> 00:22:02,049
+Here we'll listen to every single draw call
+that's happened to that canvas and we can
+
+244
+00:22:02,049 --> 00:22:06,780
+just go down, down, down, apply them one by
+one, and see how they affect and how this
+
+245
+00:22:06,780 --> 00:22:11,950
+frame is built up over time.
+And then we can open up one of those draw
+
+246
+00:22:11,950 --> 00:22:16,730
+calls and see all the functions that contributed
+to that specific draw. And if we want, we
+
+247
+00:22:16,730 --> 00:22:21,490
+can click over to the sources panel to see
+the source of each of those functions.
+
+248
+00:22:21,490 --> 00:22:27,440
+Now, this is just a platform. We have great
+recording to be able to instrument record
+
+249
+00:22:27,440 --> 00:22:31,630
+and replay canvas. This is both 2D Canvas
+and WebGL.
+
+250
+00:22:31,630 --> 00:22:36,140
+Now, what really happens next is up to you.
+There is -- we could add a lot of features
+
+251
+00:22:36,140 --> 00:22:39,990
+to this but we are interested in your feedback
+to hear what would be most useful to make
+
+252
+00:22:39,990 --> 00:22:42,740
+this great and improve the performance of
+your apps.
+
+253
+00:22:42,740 --> 00:22:48,840
+All right. So five more key performance features.
+I don't have too much time, but I want to
+
+254
+00:22:48,840 --> 00:22:53,790
+show them off pretty quick.
+All right. Continuous repainting mode. Fantastic
+
+255
+00:22:53,790 --> 00:22:57,150
+if you are seeing a lot of green in your timeline
+view. You have a lot of paint costs and you
+
+256
+00:22:57,150 --> 00:23:02,049
+want to find out why. Turn on continuous repaint
+mode. This is going to tell the browser to
+
+257
+00:23:02,049 --> 00:23:06,830
+paint, paint, paint. And then you are able
+to turn off DOM, turn off different styles,
+
+258
+00:23:06,830 --> 00:23:11,700
+see what is affecting your paints the most.
+In some cases, it is a little hard to see.
+
+259
+00:23:11,700 --> 00:23:15,710
+Maybe box shadow and border reduce are on.
+Maybe they are not too additive. It is a little
+
+260
+00:23:15,710 --> 00:23:19,720
+tricky. This will give you a lot of insight.
+The fps meter has been in there for a while,
+
+261
+00:23:19,720 --> 00:23:24,020
+but it has been getting a lot of upgrades.
+You are able to see how fast you are throwing
+
+262
+00:23:24,020 --> 00:23:28,890
+frames to the graphics context. You will get
+a histogram view over here, a min and max.
+
+263
+00:23:28,890 --> 00:23:33,630
+And the GPU memory. This is really important
+on mobile where you only have a set amount
+
+264
+00:23:33,630 --> 00:23:37,450
+of GPU memory. If you are constantly evicting
+things out of the GPU memory, it might be
+
+265
+00:23:37,450 --> 00:23:41,090
+slowing down how fast the user is actually
+seeing things. And this going to give you
+
+266
+00:23:41,090 --> 00:23:44,540
+a lot of insight.
+Show paint, rects and layer borders, these
+
+267
+00:23:44,540 --> 00:23:48,919
+are settings inside the DevTools. Great for
+understanding if you are getting a lot of
+
+268
+00:23:48,919 --> 00:23:54,840
+paints, what is the size and shape of these
+paints. Maybe it is the entire screen is repainted
+
+269
+00:23:54,840 --> 00:23:59,970
+-- repainting every time you scroll. We want
+to understand that and find out why.
+
+270
+00:23:59,970 --> 00:24:04,530
+In this screen shot, we can see that our a
+little dataset div just got repainted, and
+
+271
+00:24:04,530 --> 00:24:09,230
+we got a composite layer border around this
+side. This is actually the scroll bar, which
+
+272
+00:24:09,230 --> 00:24:15,559
+the browser is now compositing on top of the
+page content.
+
+273
+00:24:15,559 --> 00:24:21,410
+Object allocation tracking is brand-new. This
+is basically taking continuous heap snapshots
+
+274
+00:24:21,410 --> 00:24:26,890
+over time. And you are able to identify where
+objects are being created and identify the
+
+275
+00:24:26,890 --> 00:24:32,360
+retain path. Great if you are digging into
+the memory performance of your app.
+
+276
+00:24:32,360 --> 00:24:37,840
+Layout thrashing is a big problem with DOM
+-- with the Web application's DOM performance.
+
+277
+00:24:37,840 --> 00:24:43,309
+So a lot of times, you will be touching the
+DOM. It will cause layout thrashing or reflows.
+
+278
+00:24:43,309 --> 00:24:48,919
+And here we're able to not only see a few
+things. So in timeline, you are going to see
+
+279
+00:24:48,919 --> 00:24:54,090
+a little icon if DevTools detects this is
+a forced synchronous layout. It is going to
+
+280
+00:24:54,090 --> 00:24:57,620
+tell you it might be a possible performance
+bottleneck. You are doing more layouts than
+
+281
+00:24:57,620 --> 00:25:02,169
+you have to. The user is not even seeing the
+work you're forcing. Then it will tell you
+
+282
+00:25:02,169 --> 00:25:07,690
+the call stacks, why exactly the layout was
+forced, and why it was invalidated. You can
+
+283
+00:25:07,690 --> 00:25:11,429
+dig into the sources right there and see the
+actual call that forced it.
+
+284
+00:25:11,429 --> 00:25:17,309
+Now this is brand-new stuff. Identify what
+nodes need layout, how many there are, what
+
+285
+00:25:17,309 --> 00:25:23,040
+the total tree size that's getting reflowed
+is, and where the document root is. Sometimes
+
+286
+00:25:23,040 --> 00:25:28,049
+-- sometimes the entire document is being
+laid out again. Other times it is just a partial
+
+287
+00:25:28,049 --> 00:25:34,440
+layout.
+All right. So a lot of stuff here. And you
+
+288
+00:25:34,440 --> 00:25:40,590
+can try it out today. We have just been working
+-- put in a lot of work on the DevTools documentation.
+
+289
+00:25:40,590 --> 00:25:45,010
+So not even -- there is a lot more I didn't
+even show, and we have great docs to back
+
+290
+00:25:45,010 --> 00:25:49,370
+it up. I encourage you to check those out.
+And everything I showed today, all these features,
+
+291
+00:25:49,370 --> 00:25:54,040
+are available in Chrome Canary now. So you
+can go, check them out, give them a shot,
+
+292
+00:25:54,040 --> 00:26:01,040
+give us your feedback. Thank you guys very
+much.
+
+293
+00:26:04,369 --> 00:26:08,400
+[ Applause ]
+And we have some time for questions. So I'm
+
+294
+00:26:08,400 --> 00:26:15,190
+going to invite Pavel up on stage with me.
+And if you have any questions, I encourage
+
+295
+00:26:15,190 --> 00:26:19,419
+you to line up at the mics.
+Sir?
+
+296
+00:26:19,419 --> 00:26:23,809
+>>> Hello. I was just wondering how much of
+this is available if you use GWIT to develop
+
+297
+00:26:23,809 --> 00:26:28,419
+the Web site?
+>>Paul Irish: GWIT? GWIT? >>> Google Web toolkit.
+
+298
+00:26:28,419 --> 00:26:32,860
+>>Pavel Feldman: It depends on whether you
+are using Sourcemaps for GWIT. If you are
+
+299
+00:26:32,860 --> 00:26:38,750
+using Sourcemaps, you have got all the debugging
+capabilities. Sourcemaps and Workspace are
+
+300
+00:26:38,750 --> 00:26:42,210
+working well together. So you get pretty much
+all of it.
+
+301
+00:26:42,210 --> 00:26:47,230
+>>> So it is integrated as the Sass you showed?
+>>Pavel Feldman: Yeah. So you will need to
+
+302
+00:26:47,230 --> 00:26:54,230
+take care of generating JavaScript off your
+Java. And you might need to add a bit of extra
+
+303
+00:26:54,490 --> 00:26:59,960
+to reload it so that it was reloaded automatically.
+But you can edit Java. You can save it to
+
+304
+00:26:59,960 --> 00:27:06,010
+disk. Sourcemaps will be catching up. You
+can debug using Workspace and Sass in the
+
+305
+00:27:06,010 --> 00:27:07,850
+time.
+>>> Cool, thank you.
+
+306
+00:27:07,850 --> 00:27:13,090
+>>> Hi, I'm (saying name) from LinkedIn Mobile.
+So Chrome DevTools are amazing. They're awesome.
+
+307
+00:27:13,090 --> 00:27:18,230
+But what would be even more awesome, right,
+is if we could use all these, the heap profile,
+
+308
+00:27:18,230 --> 00:27:22,860
+the performance profile in Node. And there
+is a few projects, Node Inspector, Webkit
+
+309
+00:27:22,860 --> 00:27:26,370
+Agent, Node Agent, that have been doing a
+pretty good job but the problem is that they
+
+310
+00:27:26,370 --> 00:27:30,169
+can't keep up with the development speed of
+the Chrome DevTool team and the V8 team. And
+
+311
+00:27:30,169 --> 00:27:35,919
+I'm curious if there are any plans to support
+no debugging memory management in Node?
+
+312
+00:27:35,919 --> 00:27:42,919
+>>Paul Irish: So node -- I know Node Agent
+-- Node Inspector, of course, is not as maintained
+
+313
+00:27:42,919 --> 00:27:44,880
+as it was before.
+>>> It's dead. Officially dead.
+
+314
+00:27:44,880 --> 00:27:49,620
+>>Paul Irish: Node Agent is picking up where
+it left off. Great profiling capabilities.
+
+315
+00:27:49,620 --> 00:27:54,000
+In fact, I was just talking to the author
+of it, like, three days ago about getting
+
+316
+00:27:54,000 --> 00:27:58,490
+flame chart support inside there. Be trivial
+for him to add.
+
+317
+00:27:58,490 --> 00:28:04,410
+Those are all done over the V8 protocol. So
+it's not too hard to bring in the front end
+
+318
+00:28:04,410 --> 00:28:10,010
+which is completely open source, just the
+Web app, and hook up to the V8 protocol and
+
+319
+00:28:10,010 --> 00:28:13,559
+bring in those features. So --
+>>> At the same time, it's hard, right, because
+
+320
+00:28:13,559 --> 00:28:17,210
+there is no support for breakpoints. There
+is no support for stepping through code into
+
+321
+00:28:17,210 --> 00:28:23,630
+Webkit Agent. So I'm just curious if is any
+desire for the Chrome team to actually enable
+
+322
+00:28:23,630 --> 00:28:30,590
+remote V8 debugging.
+>>Pavel Feldman: So we are not using the old
+
+323
+00:28:30,590 --> 00:28:36,780
+V8 protocol for debugging in Chrome DevTools
+at the moment. We are based on the Webkit
+
+324
+00:28:36,780 --> 00:28:43,780
+or now Chrome remote debugging protocol. So
+it requires some native code supported in
+
+325
+00:28:44,070 --> 00:28:50,160
+Node and exposing particular features including
+support of the transport over the WebSockets
+
+326
+00:28:50,160 --> 00:28:55,919
+for the whole story to work.
+So it is just an effort. We are happy to assist
+
+327
+00:28:55,919 --> 00:29:02,919
+there or work with Node on making it greater,
+better, and faster. But it just requires some
+
+328
+00:29:03,200 --> 00:29:06,989
+work.
+>>> Excellent. Thank you.
+
+329
+00:29:06,989 --> 00:29:12,309
+>>> Hi. I heard there were some experiments
+at integrating Code Mirror and ACE into the
+
+330
+00:29:12,309 --> 00:29:18,000
+syntax highlighting. Is there any ETA where
+you are headed with any of that?
+
+331
+00:29:18,000 --> 00:29:22,350
+>>Pavel Feldman: Sure. Code Mirror, you can
+enable it today in settings and you will be
+
+332
+00:29:22,350 --> 00:29:28,710
+using it is as your default editor. We are
+still figuring out the editor story. We are
+
+333
+00:29:28,710 --> 00:29:33,539
+unhappy with anything we see because we need
+to -- we are kind of a unique situation where
+
+334
+00:29:33,539 --> 00:29:38,740
+you need to be able to debug obfuscated Gmail
+where lines are tens of thousands of characters.
+
+335
+00:29:38,740 --> 00:29:45,740
+At the same time, you want to wrap it, native
+feedback and feel for the editing.
+
+336
+00:29:46,250 --> 00:29:50,270
+So we are still unhappy with everything we
+have. We are working on the hybrid approach
+
+337
+00:29:50,270 --> 00:29:53,610
+that would address all of these and make it
+the best editor.
+
+338
+00:29:53,610 --> 00:30:00,610
+>>> Cool. Thank you.
+>>> Hi there. Great stuff. The Chrome extension
+
+339
+00:30:01,429 --> 00:30:07,480
+that you showed off, I don't see it on the
+DevTools site. Is it out or is it? Is it just
+
+340
+00:30:07,480 --> 00:30:14,480
+in your Github repo? Where is that? The Android
+thing that kicks ass. Like, how do we download
+
+341
+00:30:15,820 --> 00:30:18,710
+it?
+>>Pavel Feldman: It is in my github repo.
+
+342
+00:30:18,710 --> 00:30:22,039
+>>Paul Irish: This is how I always get to
+it.
+
+343
+00:30:22,039 --> 00:30:29,039
+>>Pavel Feldman: A little disclaimer. The
+way it works, it bundles ADB. It bundles ADB
+
+344
+00:30:30,080 --> 00:30:36,080
+and it works only for Mac only at this moment.
+It may be easy to make it work on Linux, not
+
+345
+00:30:36,080 --> 00:30:40,929
+as easy to make it work on Windows because
+of the USB drivers.
+
+346
+00:30:40,929 --> 00:30:45,490
+We are working hard to resolve that and make
+it useful everywhere and convenient to everybody.
+
+347
+00:30:45,490 --> 00:30:49,809
+But it's currently in the preview mode. That's
+why you don't see it on our Web page.
+
+348
+00:30:49,809 --> 00:30:56,809
+>>> Okay. Thanks.
+>>> The 
+editor features you have shown will make it
+
+349
+00:30:57,730 --> 00:31:02,650
+much more convenient to use a device like
+a Chromebook Pixel to do real Web development.
+
+350
+00:31:02,650 --> 00:31:08,799
+I'm wondering if the Workspace features that
+you showed have filesystem access? So if you
+
+351
+00:31:08,799 --> 00:31:13,559
+have user local mydev files running on your
+machine, will you be able to edit those from
+
+352
+00:31:13,559 --> 00:31:18,850
+the Chrome DevTools on the Chromebook?
+>>Pavel Feldman: Under the hood, it is the
+
+353
+00:31:18,850 --> 00:31:21,820
+filesystem API that's mapping things directly
+to your filesystem.
+
+354
+00:31:21,820 --> 00:31:26,530
+On any device that has filesystem, Workspace
+will work, including Chrome OS where you can
+
+355
+00:31:26,530 --> 00:31:33,530
+map it to your downloads folder or your drive.
+We are generally unhappy with the -- our development
+
+356
+00:31:34,270 --> 00:31:39,470
+story on Chrome as yet, and we are working
+on it because important things such as version
+
+357
+00:31:39,470 --> 00:31:45,470
+control integration are missing. So we want
+a complete, full-fledged story there. We are
+
+358
+00:31:45,470 --> 00:31:49,340
+just not there yet.
+>>> Thanks.
+
+359
+00:31:49,340 --> 00:31:54,299
+>>> Hello. So two -- first one quick question.
+So you were trying when you edited a file
+
+360
+00:31:54,299 --> 00:31:59,659
+in your editor in Sublime, it will it load
+automatically in DevTools and I guess not
+
+361
+00:31:59,659 --> 00:32:03,780
+just in the DevTools but, like, in the pages,
+right?
+
+362
+00:32:03,780 --> 00:32:08,340
+The question is -- second question is more
+about how far are you -- do you think you
+
+363
+00:32:08,340 --> 00:32:14,230
+will take DevTools in terms of editing? Like,
+for example, I work on backbone applications
+
+364
+00:32:14,230 --> 00:32:19,960
+where it would be great if I could jump to
+definition of the method from one class to
+
+365
+00:32:19,960 --> 00:32:26,110
+its superclass and kind of things.
+>>Pavel Feldman: Okay. ID future center refactorings,
+
+366
+00:32:26,110 --> 00:32:31,230
+we are editing because you want it. And we
+started with the debugging. We considered
+
+367
+00:32:31,230 --> 00:32:36,059
+ourselves as a debugging instrumenting platform.
+But we can see that there is so much failure
+
+368
+00:32:36,059 --> 00:32:40,450
+that can be added through by adding basic
+editing capabilities that we are on this route
+
+369
+00:32:40,450 --> 00:32:44,940
+now. And the time will show how far we would
+like to go there.
+
+370
+00:32:44,940 --> 00:32:48,710
+But things like code completion are definitely
+in our plans.
+
+371
+00:32:48,710 --> 00:32:53,730
+>>Paul Irish: One of the other things -- Chrome
+DevTools actually uses -- you have heard of
+
+372
+00:32:53,730 --> 00:32:59,929
+the uglify minifier. When it was working on
+the 2.0 with Sourcemaps support, we helped
+
+373
+00:32:59,929 --> 00:33:06,929
+their crown funding contribution for that.
+Similarly, we used Code Mirror. Code Mirror
+
+374
+00:33:07,690 --> 00:33:12,760
+is available, and the author behind Code Mirror
+has been working on a new kind of insight
+
+375
+00:33:12,760 --> 00:33:17,700
+for static analysis of JavaScript called TURN.
+And we contributed also to that, and we are
+
+376
+00:33:17,700 --> 00:33:24,700
+watching that project very closely.
+Sir, in the back?
+
+377
+00:33:26,830 --> 00:33:33,830
+>>> The things that you showed us with OS
+are awesome. Do you have any plans to support
+
+378
+00:33:34,429 --> 00:33:39,809
+other frameworks such as layers or stylus?
+>>Paul Irish: So I should have pointed out
+
+379
+00:33:39,809 --> 00:33:46,740
+that what I showed was abstracted style support.
+It's all based -- as I mentioned, it is all
+
+380
+00:33:46,740 --> 00:33:52,909
+based off of Sourcemaps. And so nothing in
+our implementation is specific to Sass. It
+
+381
+00:33:52,909 --> 00:33:58,350
+is just to specific to Sourcemap support.
+So if Sourcemaps are supported inside the
+
+382
+00:33:58,350 --> 00:34:04,170
+compiler for either layers or stylus, then
+DevTools will start working with them today.
+
+383
+00:34:04,170 --> 00:34:06,590
+>>> Thank you.
+>>Paul Irish: All right. Thanks, everyone.
+
+384
+00:34:06,590 --> 00:34:07,620
+Appreciate it.
+[ Applause ]
+

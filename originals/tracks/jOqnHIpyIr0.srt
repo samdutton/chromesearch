@@ -1,0 +1,4841 @@
+1
+00:00:00,000 --> 00:00:00,470
+
+2
+00:00:00,470 --> 00:00:01,850
+ALFRED SPECTOR: So welcome
+to all of you.
+
+3
+00:00:01,850 --> 00:00:04,030
+My name is Alfred Specter.
+
+4
+00:00:04,030 --> 00:00:06,710
+I'm head of research at Google,
+and I do some other
+
+5
+00:00:06,710 --> 00:00:07,570
+things as well.
+
+6
+00:00:07,570 --> 00:00:10,120
+In particular, I've met some of
+you that have been part of
+
+7
+00:00:10,120 --> 00:00:12,080
+our intern program, and that's
+something that I have the
+
+8
+00:00:12,080 --> 00:00:15,670
+great pleasure of leading
+within Google.
+
+9
+00:00:15,670 --> 00:00:18,310
+I've had a diverse background,
+like many of us, doing a bunch
+
+10
+00:00:18,310 --> 00:00:20,550
+of different things, but I was
+an academic for a while, and
+
+11
+00:00:20,550 --> 00:00:23,200
+I've been in business, and an
+entrepreneur, et cetera.
+
+12
+00:00:23,200 --> 00:00:28,330
+In this session, we're going
+to talk about a few things.
+
+13
+00:00:28,330 --> 00:00:31,190
+First, we're going to talk about
+our approach to research
+
+14
+00:00:31,190 --> 00:00:34,430
+and engineering, because I think
+it's something which
+
+15
+00:00:34,430 --> 00:00:37,030
+should be of interest to you at
+Google IO, because I think
+
+16
+00:00:37,030 --> 00:00:40,510
+it's the thing that will keep
+us on the cutting edge and
+
+17
+00:00:40,510 --> 00:00:42,950
+really keep the kind of sessions
+that you've heard
+
+18
+00:00:42,950 --> 00:00:46,790
+about, say, in the keynotes
+yesterday morning, going.
+
+19
+00:00:46,790 --> 00:00:51,120
+Second, I want to just talk a
+little bit about how we relate
+
+20
+00:00:51,120 --> 00:00:55,730
+to the world of research and
+innovation outside of Google.
+
+21
+00:00:55,730 --> 00:00:59,080
+Most of you are part of that
+world, and you're essential to
+
+22
+00:00:59,080 --> 00:01:00,690
+what we're trying to do.
+
+23
+00:01:00,690 --> 00:01:04,319
+Third thing is, as a panel,
+we'll talk about things that
+
+24
+00:01:04,319 --> 00:01:05,080
+are of interest to us.
+
+25
+00:01:05,080 --> 00:01:06,840
+What we're working on,
+and what are our
+
+26
+00:01:06,840 --> 00:01:08,580
+views of the future?
+
+27
+00:01:08,580 --> 00:01:10,930
+At the end, let me just
+mention it now--
+
+28
+00:01:10,930 --> 00:01:13,200
+there will be a survey.
+
+29
+00:01:13,200 --> 00:01:14,190
+Please fill it out.
+
+30
+00:01:14,190 --> 00:01:17,900
+We are requested by the powers
+that be to ask you to do that,
+
+31
+00:01:17,900 --> 00:01:20,180
+and we would indeed
+like you to do it.
+
+32
+00:01:20,180 --> 00:01:24,900
+On the panel, and you can see
+in front, on your right is
+
+33
+00:01:24,900 --> 00:01:28,160
+Thad Starner, who is at Google,
+and also a professor
+
+34
+00:01:28,160 --> 00:01:30,180
+of computing at Georgia Tech.
+
+35
+00:01:30,180 --> 00:01:32,910
+He is the TLM-- the technical
+lead manager--
+
+36
+00:01:32,910 --> 00:01:34,920
+of Google Glass.
+
+37
+00:01:34,920 --> 00:01:37,120
+So you can imagine kinds
+of things that he'll be
+
+38
+00:01:37,120 --> 00:01:38,950
+interested in talking
+with you about.
+
+39
+00:01:38,950 --> 00:01:41,370
+Computer vision, virtual
+reality, machine learning,
+
+40
+00:01:41,370 --> 00:01:44,430
+image and video and the like.
+
+41
+00:01:44,430 --> 00:01:48,970
+Next to Thad in the gray shirt
+is Peter Norvig, who is our
+
+42
+00:01:48,970 --> 00:01:51,170
+director of research here
+in Mountain View.
+
+43
+00:01:51,170 --> 00:01:54,080
+He headed search quality at
+Google at one time, in the
+
+44
+00:01:54,080 --> 00:01:55,860
+very early days of Google.
+
+45
+00:01:55,860 --> 00:01:59,080
+He's an acknowledged leader in
+artificial intelligence, has
+
+46
+00:01:59,080 --> 00:02:01,240
+co-written the most
+popular book.
+
+47
+00:02:01,240 --> 00:02:06,630
+Also, he created, with Sebastian
+Thrun, the AI course
+
+48
+00:02:06,630 --> 00:02:08,210
+which got MOOCs going.
+
+49
+00:02:08,210 --> 00:02:11,490
+How many of you took Peter's
+AI course in the room?
+
+50
+00:02:11,490 --> 00:02:13,290
+So you all know Peter
+very well--
+
+51
+00:02:13,290 --> 00:02:15,220
+or not all of you, but--
+
+52
+00:02:15,220 --> 00:02:17,060
+Ah, Peter recognizes you all.
+
+53
+00:02:17,060 --> 00:02:18,730
+Yes indeed.
+
+54
+00:02:18,730 --> 00:02:23,045
+And then on your left is Jeff
+Dean, who's a Google fellow.
+
+55
+00:02:23,045 --> 00:02:24,980
+He's been at Google for
+quite a while--
+
+56
+00:02:24,980 --> 00:02:27,250
+was involved the earliest
+days of implementing our
+
+57
+00:02:27,250 --> 00:02:30,610
+advertising systems, and has
+been, really, a pillar of
+
+58
+00:02:30,610 --> 00:02:33,610
+strength and of creativity in
+creating the distributed
+
+59
+00:02:33,610 --> 00:02:36,810
+computing infrastructure at
+Google with Sanjay Ghemawat.
+
+60
+00:02:36,810 --> 00:02:39,060
+They invented MapReduce.
+
+61
+00:02:39,060 --> 00:02:40,940
+And he's a member of the
+National Academy of
+
+62
+00:02:40,940 --> 00:02:41,450
+Engineering.
+
+63
+00:02:41,450 --> 00:02:45,350
+And recently, Sanjay and Jeff
+won the ACM Infosys Foundation
+
+64
+00:02:45,350 --> 00:02:47,040
+Software Systems Award.
+
+65
+00:02:47,040 --> 00:02:51,200
+I think that was the research
+systems innovation of the
+
+66
+00:02:51,200 --> 00:02:53,860
+decade 2000 to 2010.
+
+67
+00:02:53,860 --> 00:02:54,730
+That's my view.
+
+68
+00:02:54,730 --> 00:02:57,710
+And we can hear about what Jeff
+is currently working on--
+
+69
+00:02:57,710 --> 00:02:59,480
+MapReduce 2 or 3,
+or I don't know.
+
+70
+00:02:59,480 --> 00:03:02,310
+We'll find out when he talks.
+
+71
+00:03:02,310 --> 00:03:06,100
+So just to start, as I think
+about research at Google, the
+
+72
+00:03:06,100 --> 00:03:09,330
+most interesting thing for me
+is that if we think of the
+
+73
+00:03:09,330 --> 00:03:12,010
+Google mission statement
+to organize the world's
+
+74
+00:03:12,010 --> 00:03:14,120
+information and make it
+universally accessible and
+
+75
+00:03:14,120 --> 00:03:19,420
+useful, it's basically a candy
+store for computer scientists
+
+76
+00:03:19,420 --> 00:03:20,760
+and related disciplines.
+
+77
+00:03:20,760 --> 00:03:24,170
+Statistics and mathematics and
+related aspects of engineering
+
+78
+00:03:24,170 --> 00:03:25,390
+and the like.
+
+79
+00:03:25,390 --> 00:03:29,080
+There's so many problems in our
+field that are included
+
+80
+00:03:29,080 --> 00:03:32,870
+within that, and understanding,
+and building
+
+81
+00:03:32,870 --> 00:03:36,395
+very large scale systems, and
+security, and user experience,
+
+82
+00:03:36,395 --> 00:03:38,070
+dot dot dot.
+
+83
+00:03:38,070 --> 00:03:42,330
+So virtually every problem in
+the field is subsumed within
+
+84
+00:03:42,330 --> 00:03:45,060
+that mission statement, and
+we get to go work on it.
+
+85
+00:03:45,060 --> 00:03:49,160
+So that's sort of the really fun
+part of being at Google.
+
+86
+00:03:49,160 --> 00:03:51,570
+The second thing that I think
+makes Google research
+
+87
+00:03:51,570 --> 00:03:55,120
+interesting is that we blur
+the boundaries between
+
+88
+00:03:55,120 --> 00:03:56,810
+research and engineering.
+
+89
+00:03:56,810 --> 00:03:57,725
+And why is that?
+
+90
+00:03:57,725 --> 00:04:01,280
+Why don't we believe that we
+should have some number of
+
+91
+00:04:01,280 --> 00:04:04,190
+people isolated in a
+room somewhere-- a
+
+92
+00:04:04,190 --> 00:04:05,630
+very nice room, maybe--
+
+93
+00:04:05,630 --> 00:04:07,680
+thinking great thoughts,
+inventing the future.
+
+94
+00:04:07,680 --> 00:04:10,570
+And then we'll go tell the
+engineers what to go do.
+
+95
+00:04:10,570 --> 00:04:14,390
+We don't believe that for
+a number of reasons.
+
+96
+00:04:14,390 --> 00:04:16,829
+One reason is that building
+systems--
+
+97
+00:04:16,829 --> 00:04:18,390
+building large scale systems--
+
+98
+00:04:18,390 --> 00:04:22,810
+requires every bit as much
+creativity as a new idea on
+
+99
+00:04:22,810 --> 00:04:24,110
+how to go do something.
+
+100
+00:04:24,110 --> 00:04:27,880
+So there isn't a differential
+in terms of creativity, in
+
+101
+00:04:27,880 --> 00:04:30,300
+terms of hard work,
+intelligence, et cetera,
+
+102
+00:04:30,300 --> 00:04:32,990
+oftentimes in building something
+in a way that's
+
+103
+00:04:32,990 --> 00:04:37,330
+really valuable and useful, and
+in thinking of the idea.
+
+104
+00:04:37,330 --> 00:04:41,130
+A second reason, I think, is
+that our field, computer
+
+105
+00:04:41,130 --> 00:04:45,230
+science, and of course, the
+engineering related fields as
+
+106
+00:04:45,230 --> 00:04:49,310
+well, is increasingly an
+engineering discipline, not
+
+107
+00:04:49,310 --> 00:04:51,820
+just a mathematical discipline,
+and also
+
+108
+00:04:51,820 --> 00:04:57,040
+increasingly a field
+which is empirical.
+
+109
+00:04:57,040 --> 00:05:00,050
+So our field, initially, if you
+think about it and go back
+
+110
+00:05:00,050 --> 00:05:01,970
+to the earliest days, it
+was very significantly
+
+111
+00:05:01,970 --> 00:05:05,540
+mathematical-- the work of
+Turing, mathematician, really.
+
+112
+00:05:05,540 --> 00:05:07,890
+A lot of von Neumann's work
+was mathematical.
+
+113
+00:05:07,890 --> 00:05:10,550
+There was ever increasing
+engineering as we built
+
+114
+00:05:10,550 --> 00:05:13,970
+fancier and fancier hardware
+devices and software stacks
+
+115
+00:05:13,970 --> 00:05:14,890
+and the like.
+
+116
+00:05:14,890 --> 00:05:17,670
+So engineering became a
+big part of the field.
+
+117
+00:05:17,670 --> 00:05:20,910
+And then in the last
+10 to 20 years--
+
+118
+00:05:20,910 --> 00:05:22,920
+really since the advent
+of machine learning--
+
+119
+00:05:22,920 --> 00:05:26,250
+it's become an empirical
+discipline, which means access
+
+120
+00:05:26,250 --> 00:05:31,060
+to large scale data, lots of
+usage, and large scale is
+
+121
+00:05:31,060 --> 00:05:32,540
+really important to the field.
+
+122
+00:05:32,540 --> 00:05:34,860
+So now there's a tripod
+under the field.
+
+123
+00:05:34,860 --> 00:05:38,100
+So if you separate research from
+all the data in usage,
+
+124
+00:05:38,100 --> 00:05:40,840
+you skip a lot of the
+engineering, and particularly,
+
+125
+00:05:40,840 --> 00:05:43,300
+you skip the empirical
+nature of the field.
+
+126
+00:05:43,300 --> 00:05:46,840
+So we think you can't do that,
+and that has motivated or kind
+
+127
+00:05:46,840 --> 00:05:49,030
+of blurred the boundaries
+between research and
+
+128
+00:05:49,030 --> 00:05:52,330
+engineering approach.
+
+129
+00:05:52,330 --> 00:05:55,500
+Slav Petrov, Peter Norvig, and
+I wrote a paper in the
+
+130
+00:05:55,500 --> 00:05:59,010
+communications of the ACM last
+summer called Google's Hybrid
+
+131
+00:05:59,010 --> 00:06:02,180
+Approach to Research where we
+made these arguments as
+
+132
+00:06:02,180 --> 00:06:04,560
+clearly as we know how.
+
+133
+00:06:04,560 --> 00:06:07,540
+So what it leads to is a
+situation where we are we
+
+134
+00:06:07,540 --> 00:06:10,290
+organize, what I would say,
+opportunistically, in whatever
+
+135
+00:06:10,290 --> 00:06:13,410
+way makes the most sense to
+accomplish something.
+
+136
+00:06:13,410 --> 00:06:14,700
+So sometimes it makes sense.
+
+137
+00:06:14,700 --> 00:06:18,180
+We have a very goal driven
+effort that's product driven,
+
+138
+00:06:18,180 --> 00:06:19,800
+like, say, Google Glass.
+
+139
+00:06:19,800 --> 00:06:22,550
+There's an awful lot of research
+that's needed that in
+
+140
+00:06:22,550 --> 00:06:25,180
+order to make that really work
+right, but it makes sense to
+
+141
+00:06:25,180 --> 00:06:27,650
+let that go off and
+do its thing.
+
+142
+00:06:27,650 --> 00:06:30,750
+Google X does that, and to think
+about it as part of a
+
+143
+00:06:30,750 --> 00:06:34,520
+goal directed activity to
+produce Google Glass.
+
+144
+00:06:34,520 --> 00:06:36,630
+Sometimes it's a technology
+based effort.
+
+145
+00:06:36,630 --> 00:06:38,730
+Sometimes we don't have
+a specific goal.
+
+146
+00:06:38,730 --> 00:06:40,930
+We want to improve
+a technology.
+
+147
+00:06:40,930 --> 00:06:43,300
+And sometimes we do that in
+conjunction with existing
+
+148
+00:06:43,300 --> 00:06:46,450
+systems, when we want to
+improve, say, recommendation
+
+149
+00:06:46,450 --> 00:06:49,770
+algorithms in something
+that we're doing.
+
+150
+00:06:49,770 --> 00:06:51,710
+Or it may be something
+that's new.
+
+151
+00:06:51,710 --> 00:06:54,730
+We have a better way of doing
+OCR, and we think we do, and
+
+152
+00:06:54,730 --> 00:06:57,060
+we have a separate team that's
+separate from the engineering
+
+153
+00:06:57,060 --> 00:06:59,120
+team to a large degree, because
+we think we have a
+
+154
+00:06:59,120 --> 00:07:01,850
+better approach to optical
+character recognition.
+
+155
+00:07:01,850 --> 00:07:04,590
+So we organize in whatever way
+makes sense, and we all work
+
+156
+00:07:04,590 --> 00:07:06,080
+for the same company,
+and there's an
+
+157
+00:07:06,080 --> 00:07:07,980
+enormous amount of fluidity.
+
+158
+00:07:07,980 --> 00:07:11,860
+Part of the reason it works is
+that we treat engineering with
+
+159
+00:07:11,860 --> 00:07:14,500
+enormous respect across the
+whole business, as I said
+
+160
+00:07:14,500 --> 00:07:18,160
+earlier, and we feel that our
+engineering team is enormously
+
+161
+00:07:18,160 --> 00:07:21,970
+talented and capable of whatever
+classes of challenges
+
+162
+00:07:21,970 --> 00:07:26,390
+that we have, whether invention
+of new things or
+
+163
+00:07:26,390 --> 00:07:28,340
+making things work.
+
+164
+00:07:28,340 --> 00:07:30,530
+Last thing I would say about
+Google research-- and to those
+
+165
+00:07:30,530 --> 00:07:34,560
+of you that are researchers, I
+hope this isn't problematic--
+
+166
+00:07:34,560 --> 00:07:38,430
+we view that good research is
+defined by impact, not by
+
+167
+00:07:38,430 --> 00:07:39,730
+publication.
+
+168
+00:07:39,730 --> 00:07:41,810
+So publication is a
+part of impact.
+
+169
+00:07:41,810 --> 00:07:44,990
+A good publication is extremely
+important, so we
+
+170
+00:07:44,990 --> 00:07:46,430
+certainly endorse that.
+
+171
+00:07:46,430 --> 00:07:49,850
+So we endorse peer reviewed
+publications that are cited by
+
+172
+00:07:49,850 --> 00:07:52,390
+lots of people that change
+the nature of the field.
+
+173
+00:07:52,390 --> 00:07:55,720
+It's an excellent way of
+information dissemination.
+
+174
+00:07:55,720 --> 00:07:57,920
+But in this day and age, unlike
+the day and age of,
+
+175
+00:07:57,920 --> 00:08:00,300
+say, Sir Isaac Newton and the
+Royal Society when this
+
+176
+00:08:00,300 --> 00:08:02,120
+started, it's a different
+world.
+
+177
+00:08:02,120 --> 00:08:04,630
+There are other ways of
+disseminating information.
+
+178
+00:08:04,630 --> 00:08:05,860
+So open source.
+
+179
+00:08:05,860 --> 00:08:08,920
+I would argue that the Android
+open source release or the
+
+180
+00:08:08,920 --> 00:08:12,320
+Chromium open source release
+are fantastically valuable
+
+181
+00:08:12,320 --> 00:08:16,470
+publications which teach an
+enormous amount of the world.
+
+182
+00:08:16,470 --> 00:08:20,860
+Indeed, standards are
+publications that codify the
+
+183
+00:08:20,860 --> 00:08:21,920
+best practices.
+
+184
+00:08:21,920 --> 00:08:24,290
+And they're also, of course,
+extremely useful.
+
+185
+00:08:24,290 --> 00:08:26,690
+And indeed, our products and
+other people's products also
+
+186
+00:08:26,690 --> 00:08:29,630
+are forms of publication and
+engineering discipline,
+
+187
+00:08:29,630 --> 00:08:32,830
+because they push the state of
+the art, and they declare a
+
+188
+00:08:32,830 --> 00:08:33,465
+state of the art.
+
+189
+00:08:33,465 --> 00:08:36,360
+And usually people sort of
+understand why they work, and
+
+190
+00:08:36,360 --> 00:08:39,520
+that indeed sets a new level
+underneath the field.
+
+191
+00:08:39,520 --> 00:08:43,659
+So we all try to achieve
+impact, and we measure
+
+192
+00:08:43,659 --> 00:08:47,010
+ourselves based on impact,
+inclusive of papers, but other
+
+193
+00:08:47,010 --> 00:08:48,810
+things as well.
+
+194
+00:08:48,810 --> 00:08:51,930
+By no means do we do everything
+ourselves.
+
+195
+00:08:51,930 --> 00:08:55,780
+We strongly support and
+work with universities
+
+196
+00:08:55,780 --> 00:08:56,770
+on a regular basis.
+
+197
+00:08:56,770 --> 00:08:58,285
+It's not coincidental that--
+
+198
+00:08:58,285 --> 00:09:02,790
+I mean, it's not like the only
+person that feels he's part of
+
+199
+00:09:02,790 --> 00:09:05,250
+a university, as well at
+Google with Thad here.
+
+200
+00:09:05,250 --> 00:09:08,070
+There are many people that have
+lots of university ties
+
+201
+00:09:08,070 --> 00:09:11,080
+in one way, shape, or
+form at Google.
+
+202
+00:09:11,080 --> 00:09:14,790
+We fund about a couple hundred
+research grants a year at
+
+203
+00:09:14,790 --> 00:09:15,880
+universities.
+
+204
+00:09:15,880 --> 00:09:19,980
+We have the 1 to 2,000 technical
+interns at Google
+
+205
+00:09:19,980 --> 00:09:23,120
+every summer from universities,
+and we fund
+
+206
+00:09:23,120 --> 00:09:24,360
+fellowships around the world.
+
+207
+00:09:24,360 --> 00:09:27,320
+It's really important to us that
+the university community
+
+208
+00:09:27,320 --> 00:09:31,310
+be really healthy, inventing
+new things, and of course,
+
+209
+00:09:31,310 --> 00:09:33,220
+training lots of students.
+
+210
+00:09:33,220 --> 00:09:36,740
+The open source world is also
+extremely important to us.
+
+211
+00:09:36,740 --> 00:09:39,800
+So we are large supporters
+of open source.
+
+212
+00:09:39,800 --> 00:09:43,110
+Large amounts of the code that
+we use are based on it, and we
+
+213
+00:09:43,110 --> 00:09:46,020
+contribute large amounts of code
+to the open source world.
+
+214
+00:09:46,020 --> 00:09:48,570
+One of our most innovative
+programs there combines
+
+215
+00:09:48,570 --> 00:09:50,270
+education and open source.
+
+216
+00:09:50,270 --> 00:09:51,800
+It's the Summer of
+Code program.
+
+217
+00:09:51,800 --> 00:09:52,880
+Any of you know about this?
+
+218
+00:09:52,880 --> 00:09:54,230
+Google Summer of Code?
+
+219
+00:09:54,230 --> 00:09:56,890
+So there, we support large
+numbers, usually of fairly
+
+220
+00:09:56,890 --> 00:09:58,710
+young students in the summer--
+
+221
+00:09:58,710 --> 00:10:00,880
+1,000 to 1,500--
+
+222
+00:10:00,880 --> 00:10:02,730
+that work on open
+source projects.
+
+223
+00:10:02,730 --> 00:10:04,360
+And we think it's a good way
+to contribute to their
+
+224
+00:10:04,360 --> 00:10:09,270
+education, and to keep that
+community going along as well.
+
+225
+00:10:09,270 --> 00:10:11,420
+And of course, then, there's
+the developer ecosystem.
+
+226
+00:10:11,420 --> 00:10:15,220
+Developers are doing, in many
+ways, the most advanced work
+
+227
+00:10:15,220 --> 00:10:17,900
+with platforms and technologies
+that Google has,
+
+228
+00:10:17,900 --> 00:10:21,150
+and we recognize the enormous
+value that you engender for
+
+229
+00:10:21,150 --> 00:10:25,260
+our users, and that reflects
+on what we do as well.
+
+230
+00:10:25,260 --> 00:10:27,220
+All in all, the track record's
+been pretty good.
+
+231
+00:10:27,220 --> 00:10:28,720
+We've done a lot of
+innovative things.
+
+232
+00:10:28,720 --> 00:10:31,470
+A lot of what you heard about
+yesterday morning in terms of
+
+233
+00:10:31,470 --> 00:10:35,000
+being able to combine
+information and to do valuable
+
+234
+00:10:35,000 --> 00:10:37,430
+in speech recognition and
+natural language processing
+
+235
+00:10:37,430 --> 00:10:38,760
+and understanding--
+
+236
+00:10:38,760 --> 00:10:41,620
+all those things come out of
+research projects initially,
+
+237
+00:10:41,620 --> 00:10:43,700
+at Google and elsewhere.
+
+238
+00:10:43,700 --> 00:10:47,250
+If you look at all the beautiful
+image processing,
+
+239
+00:10:47,250 --> 00:10:49,880
+the sort of automation and image
+processing, that's image
+
+240
+00:10:49,880 --> 00:10:52,680
+processing work that is grounded
+in some of the best
+
+241
+00:10:52,680 --> 00:10:53,640
+research that we know.
+
+242
+00:10:53,640 --> 00:10:57,120
+And I could go on, but I'd be
+talking too long, then.
+
+243
+00:10:57,120 --> 00:11:00,030
+So what I'd like to do is to
+come down and join the panel
+
+244
+00:11:00,030 --> 00:11:02,440
+for a while while they talk
+about some things that are on
+
+245
+00:11:02,440 --> 00:11:05,590
+their mind, and then we'll take
+questions, all right?
+
+246
+00:11:05,590 --> 00:11:08,210
+So Jeff, why don't
+you go first?
+
+247
+00:11:08,210 --> 00:11:09,916
+What's on your mind?
+
+248
+00:11:09,916 --> 00:11:11,320
+JEFF DEAN: Sure.
+
+249
+00:11:11,320 --> 00:11:12,660
+Is this on?
+
+250
+00:11:12,660 --> 00:11:13,910
+Can you hear me?
+
+251
+00:11:13,910 --> 00:11:18,520
+
+252
+00:11:18,520 --> 00:11:19,690
+OK.
+
+253
+00:11:19,690 --> 00:11:23,150
+So I guess I'll just tell
+you what I've been
+
+254
+00:11:23,150 --> 00:11:25,670
+working on most recently.
+
+255
+00:11:25,670 --> 00:11:28,960
+I've been working on a large
+scale distributed machine
+
+256
+00:11:28,960 --> 00:11:31,680
+learning system that essentially
+is trying to use
+
+257
+00:11:31,680 --> 00:11:36,190
+biologically inspired neural
+networks to solve a number of
+
+258
+00:11:36,190 --> 00:11:40,790
+difficult problems in speech
+recognition, vision, computer
+
+259
+00:11:40,790 --> 00:11:44,090
+vision, and natural language
+processing.
+
+260
+00:11:44,090 --> 00:11:46,530
+Essentially, the idea is that
+you take large amounts of
+
+261
+00:11:46,530 --> 00:11:49,490
+data, and you try to
+automatically infer higher and
+
+262
+00:11:49,490 --> 00:11:51,530
+higher levels of abstraction.
+
+263
+00:11:51,530 --> 00:11:54,570
+Rather than hand engineering
+features and then trying to do
+
+264
+00:11:54,570 --> 00:11:57,060
+fairly shallow machine learning
+kinds of techniques,
+
+265
+00:11:57,060 --> 00:12:01,270
+instead, we start with the raw
+data, and by using very large
+
+266
+00:12:01,270 --> 00:12:03,680
+amounts of data and
+computational power, we can
+
+267
+00:12:03,680 --> 00:12:06,020
+have the system automatically
+learn what are important
+
+268
+00:12:06,020 --> 00:12:09,210
+patterns to extract
+out of data.
+
+269
+00:12:09,210 --> 00:12:11,220
+There was a New York Times
+article about some of our
+
+270
+00:12:11,220 --> 00:12:14,350
+vision work on automatically
+recognizing cats.
+
+271
+00:12:14,350 --> 00:12:15,510
+I don't know how many
+of you saw that.
+
+272
+00:12:15,510 --> 00:12:19,540
+But essentially, the idea is we
+never told the system what
+
+273
+00:12:19,540 --> 00:12:22,180
+a cat was, and we built a system
+where at least one of
+
+274
+00:12:22,180 --> 00:12:25,230
+the neurons in the system was
+very selective for whether or
+
+275
+00:12:25,230 --> 00:12:26,660
+not it contained a cat.
+
+276
+00:12:26,660 --> 00:12:30,850
+That's not that useful in and
+of itself, but it turns out
+
+277
+00:12:30,850 --> 00:12:34,480
+the vision system that you can
+build, when you pre-train it
+
+278
+00:12:34,480 --> 00:12:35,900
+with this kind of thing,
+is actually quite
+
+279
+00:12:35,900 --> 00:12:36,810
+state of the art.
+
+280
+00:12:36,810 --> 00:12:39,150
+And we've also been applying
+this to speech recognition.
+
+281
+00:12:39,150 --> 00:12:44,700
+So we've been collaborating with
+a speech team to deploy
+
+282
+00:12:44,700 --> 00:12:47,850
+deep neural nets as the acoustic
+modeling portion of
+
+283
+00:12:47,850 --> 00:12:49,640
+our speech recognition systems,
+and that's given very
+
+284
+00:12:49,640 --> 00:12:51,950
+significant reductions
+in [INAUDIBLE] rate.
+
+285
+00:12:51,950 --> 00:12:54,800
+And then we're looking at
+interesting representations of
+
+286
+00:12:54,800 --> 00:12:57,750
+text, where you represent words
+in very high dimensional
+
+287
+00:12:57,750 --> 00:13:01,950
+spaces, so that similar words
+are close together in a 1,000
+
+288
+00:13:01,950 --> 00:13:04,190
+dimensional space or something,
+and that seems like
+
+289
+00:13:04,190 --> 00:13:07,740
+a pretty important and powerful
+way of reasoning
+
+290
+00:13:07,740 --> 00:13:08,990
+about text.
+
+291
+00:13:08,990 --> 00:13:10,890
+
+292
+00:13:10,890 --> 00:13:12,590
+PETER NORVIG: OK.
+
+293
+00:13:12,590 --> 00:13:16,690
+My main efforts lately have
+been in online education.
+
+294
+00:13:16,690 --> 00:13:20,660
+We built a open source system
+for creating classes.
+
+295
+00:13:20,660 --> 00:13:24,040
+We just had the fourth release
+last week, but I won't say
+
+296
+00:13:24,040 --> 00:13:26,540
+anything more about that,
+because right after this
+
+297
+00:13:26,540 --> 00:13:29,780
+session, in this room, I'm
+going to talk about it in
+
+298
+00:13:29,780 --> 00:13:30,860
+another session.
+
+299
+00:13:30,860 --> 00:13:33,670
+So stick in your seats if you
+want to hear about that.
+
+300
+00:13:33,670 --> 00:13:37,270
+Instead, I'll talk about
+something just because
+
+301
+00:13:37,270 --> 00:13:39,470
+yesterday I was talking with
+one of the team members who
+
+302
+00:13:39,470 --> 00:13:43,860
+was so excited that they had
+their launch here at IO of the
+
+303
+00:13:43,860 --> 00:13:45,720
+music recommendation system.
+
+304
+00:13:45,720 --> 00:13:49,420
+And this, in some ways, is
+similar to the type of thing
+
+305
+00:13:49,420 --> 00:13:51,430
+Jeff was talking about,
+that it's a
+
+306
+00:13:51,430 --> 00:13:53,030
+machine learning system.
+
+307
+00:13:53,030 --> 00:13:58,910
+And I think maybe the main point
+isn't that it was music,
+
+308
+00:13:58,910 --> 00:14:01,470
+because we didn't really have
+that many experts on music.
+
+309
+00:14:01,470 --> 00:14:03,780
+We had people who like music.
+
+310
+00:14:03,780 --> 00:14:08,090
+But the exciting thing is that
+we have a process for doing
+
+311
+00:14:08,090 --> 00:14:08,940
+that type of learning.
+
+312
+00:14:08,940 --> 00:14:11,700
+So we start to say, well,
+what do we have?
+
+313
+00:14:11,700 --> 00:14:14,450
+Well, we've got the raw files.
+
+314
+00:14:14,450 --> 00:14:18,230
+They've got sound waves, we've
+got the four-year transform of
+
+315
+00:14:18,230 --> 00:14:21,020
+those sound waves, and that
+gives us some input.
+
+316
+00:14:21,020 --> 00:14:22,510
+Then we have the metadata.
+
+317
+00:14:22,510 --> 00:14:26,360
+We have what's the title, the
+artist, and so on, the genre
+
+318
+00:14:26,360 --> 00:14:29,770
+of the music that's sort of
+associated with that track,
+
+319
+00:14:29,770 --> 00:14:32,570
+and we have the meta metadata
+of everything that's been
+
+320
+00:14:32,570 --> 00:14:35,470
+written on the web about
+those artists.
+
+321
+00:14:35,470 --> 00:14:38,790
+And then we have the social data
+of people who like this
+
+322
+00:14:38,790 --> 00:14:40,530
+one also like that one.
+
+323
+00:14:40,530 --> 00:14:43,970
+And from that, and from the
+processes that we built up
+
+324
+00:14:43,970 --> 00:14:46,390
+saying we know how to gather a
+lot of data, we know how to
+
+325
+00:14:46,390 --> 00:14:49,850
+store it, we know how to process
+it in a distributed
+
+326
+00:14:49,850 --> 00:14:53,170
+fashion, and we know some
+mechanisms for building
+
+327
+00:14:53,170 --> 00:14:55,230
+machine learning systems,
+we were able to
+
+328
+00:14:55,230 --> 00:14:56,500
+come up with something.
+
+329
+00:14:56,500 --> 00:14:57,880
+And I've been pretty
+happy with it.
+
+330
+00:14:57,880 --> 00:15:00,610
+I've been playing with it and
+comparing it to other
+
+331
+00:15:00,610 --> 00:15:03,460
+recommendation systems, and
+for me, it does better.
+
+332
+00:15:03,460 --> 00:15:05,820
+Maybe I like weird
+kinds of music.
+
+333
+00:15:05,820 --> 00:15:09,870
+But it does a great job, and
+it's just a demonstration of
+
+334
+00:15:09,870 --> 00:15:13,670
+how far you can get by applying
+this methodology of
+
+335
+00:15:13,670 --> 00:15:14,920
+learning from data.
+
+336
+00:15:14,920 --> 00:15:18,010
+
+337
+00:15:18,010 --> 00:15:20,010
+THAD STARNER: So I'll tell you
+guys what I'm most passionate
+
+338
+00:15:20,010 --> 00:15:21,660
+about right now.
+
+339
+00:15:21,660 --> 00:15:23,010
+Let me ask a question
+of the audience.
+
+340
+00:15:23,010 --> 00:15:25,760
+How many of you actually know
+sign language, or a little bit
+
+341
+00:15:25,760 --> 00:15:27,100
+of sign language?
+
+342
+00:15:27,100 --> 00:15:29,230
+Wow, very good.
+
+343
+00:15:29,230 --> 00:15:30,140
+Anybody good enough to actually
+
+344
+00:15:30,140 --> 00:15:32,060
+translate what I'm saying?
+
+345
+00:15:32,060 --> 00:15:33,310
+No?
+
+346
+00:15:33,310 --> 00:15:35,170
+
+347
+00:15:35,170 --> 00:15:39,720
+So 95% of deaf children are born
+to hearing parents, and
+
+348
+00:15:39,720 --> 00:15:42,320
+most of those hearing parents
+will never learn sign language
+
+349
+00:15:42,320 --> 00:15:44,760
+well enough to teach it
+to their children.
+
+350
+00:15:44,760 --> 00:15:47,950
+What happens is, as an
+infant, you actually
+
+351
+00:15:47,950 --> 00:15:49,000
+gain short term memory.
+
+352
+00:15:49,000 --> 00:15:51,380
+You learn short term memory
+through the process of
+
+353
+00:15:51,380 --> 00:15:52,310
+learning language.
+
+354
+00:15:52,310 --> 00:15:55,180
+And so the deaf children I work
+with get neither access
+
+355
+00:15:55,180 --> 00:15:58,070
+to English, because they can't
+hear, or sign language,
+
+356
+00:15:58,070 --> 00:16:01,450
+because their parents don't
+learn sign, until they get to
+
+357
+00:16:01,450 --> 00:16:02,310
+kindergarten.
+
+358
+00:16:02,310 --> 00:16:04,780
+And that means that while you
+and I might be able to
+
+359
+00:16:04,780 --> 00:16:08,670
+remember five digits, like,
+say, 45156, the children I
+
+360
+00:16:08,670 --> 00:16:10,730
+work with can remember
+two digits.
+
+361
+00:16:10,730 --> 00:16:11,960
+And that affects them
+for the rest of
+
+362
+00:16:11,960 --> 00:16:13,480
+their life, most often.
+
+363
+00:16:13,480 --> 00:16:16,050
+It's a barrier for education,
+it's a barrier for jobs, it's
+
+364
+00:16:16,050 --> 00:16:17,960
+a barrier for life.
+
+365
+00:16:17,960 --> 00:16:22,430
+So what we're trying to do is
+create applications that help
+
+366
+00:16:22,430 --> 00:16:26,300
+hearing parents of deaf infants
+learn how to sign.
+
+367
+00:16:26,300 --> 00:16:28,890
+We have an application you'll
+see coming out later on
+
+368
+00:16:28,890 --> 00:16:32,680
+Android on the Play that
+is called Smart Sign.
+
+369
+00:16:32,680 --> 00:16:35,750
+It allows parents to get
+lessons in little
+
+370
+00:16:35,750 --> 00:16:38,210
+microinteractions throughout
+the day where they'll get a
+
+371
+00:16:38,210 --> 00:16:41,810
+new sign that is shown to them
+on their cell phone.
+
+372
+00:16:41,810 --> 00:16:43,890
+Right now, I have a sign
+linguist who works with me at
+
+373
+00:16:43,890 --> 00:16:44,750
+Georgia Tech.
+
+374
+00:16:44,750 --> 00:16:46,760
+He's betting that it's going to
+be even better with glass.
+
+375
+00:16:46,760 --> 00:16:49,410
+He wants to have pop up little
+sign language lessons
+
+376
+00:16:49,410 --> 00:16:53,040
+throughout your day, depending
+on what context you're in.
+
+377
+00:16:53,040 --> 00:16:56,630
+You also, if you're working with
+an older child, and you
+
+378
+00:16:56,630 --> 00:17:00,760
+don't know what sign that you
+need, you can actually say,
+
+379
+00:17:00,760 --> 00:17:04,200
+OK, Glass, what is the
+sign for horse?
+
+380
+00:17:04,200 --> 00:17:06,950
+And it shows it to you
+in your eye piece.
+
+381
+00:17:06,950 --> 00:17:09,450
+So that way, you can actually
+use the sign while you're in
+
+382
+00:17:09,450 --> 00:17:11,410
+conversation with your child.
+
+383
+00:17:11,410 --> 00:17:14,300
+Another thing we're doing is
+making a game that helps these
+
+384
+00:17:14,300 --> 00:17:17,930
+deaf children acquire language
+skills, and we're actually
+
+385
+00:17:17,930 --> 00:17:21,609
+using computer vision to track
+the hands and actually verify
+
+386
+00:17:21,609 --> 00:17:24,440
+that they're signing the right
+thing to progress in the game.
+
+387
+00:17:24,440 --> 00:17:25,054
+It's called Copycat.
+
+388
+00:17:25,054 --> 00:17:27,839
+If you go to YouTube and look
+for my name and Copycat and
+
+389
+00:17:27,839 --> 00:17:30,260
+Smart Sign, you'll find
+these applications.
+
+390
+00:17:30,260 --> 00:17:32,340
+And hopefully, what we can do
+is actually get these things
+
+391
+00:17:32,340 --> 00:17:35,880
+out there, get them publicly
+available, so that more
+
+392
+00:17:35,880 --> 00:17:38,650
+hearing parents can more easily
+learn sign language,
+
+393
+00:17:38,650 --> 00:17:40,660
+and more of these deaf children
+can actually acquire
+
+394
+00:17:40,660 --> 00:17:44,050
+the memory span and the word
+span that we would like to see
+
+395
+00:17:44,050 --> 00:17:47,130
+in their normal education.
+
+396
+00:17:47,130 --> 00:17:48,150
+ALFRED SPECTOR: Great.
+
+397
+00:17:48,150 --> 00:17:51,190
+I'm going to go up and act
+as moderator in a minute.
+
+398
+00:17:51,190 --> 00:17:53,380
+But before I do that, I'll just
+mention one thing that's
+
+399
+00:17:53,380 --> 00:17:55,950
+been on my mind, and even a
+bet with one of the senior
+
+400
+00:17:55,950 --> 00:17:58,010
+vice presidents that
+I have on this.
+
+401
+00:17:58,010 --> 00:18:00,870
+And one of the questions is,
+to what extent do we really
+
+402
+00:18:00,870 --> 00:18:05,130
+have all the tools today to do
+extremely deep artificial
+
+403
+00:18:05,130 --> 00:18:06,390
+intelligence?
+
+404
+00:18:06,390 --> 00:18:08,970
+So the question that I think
+about a lot is, we have the
+
+405
+00:18:08,970 --> 00:18:11,480
+Knowledge Graph, we have the
+ability to parse natural
+
+406
+00:18:11,480 --> 00:18:15,490
+language, we have neural network
+technology, we have
+
+407
+00:18:15,490 --> 00:18:18,990
+enormous opportunities to gain
+feedback from users as to
+
+408
+00:18:18,990 --> 00:18:22,360
+whether things that we do are
+right, pleasing, or not right,
+
+409
+00:18:22,360 --> 00:18:23,630
+or not pleasing.
+
+410
+00:18:23,630 --> 00:18:27,130
+If we combine all of these
+things together, with humans
+
+411
+00:18:27,130 --> 00:18:31,000
+in the loop, continually
+providing feedback, do our
+
+412
+00:18:31,000 --> 00:18:34,620
+systems become, really, in
+all way intelligent?
+
+413
+00:18:34,620 --> 00:18:35,970
+Is that sufficient?
+
+414
+00:18:35,970 --> 00:18:38,290
+And you could call that the
+combination hypothesis,
+
+415
+00:18:38,290 --> 00:18:41,780
+something I have been calling
+it for a decade, that as we
+
+416
+00:18:41,780 --> 00:18:44,410
+combine all of these different
+things together, different
+
+417
+00:18:44,410 --> 00:18:46,930
+technologies that years ago, AI
+people would've fought and
+
+418
+00:18:46,930 --> 00:18:48,630
+said, that's not important.
+
+419
+00:18:48,630 --> 00:18:49,510
+We don't need that.
+
+420
+00:18:49,510 --> 00:18:50,680
+We'll just do this.
+
+421
+00:18:50,680 --> 00:18:51,820
+I think we need them all.
+
+422
+00:18:51,820 --> 00:18:54,720
+And if we do them all, will
+that yield what we want?
+
+423
+00:18:54,720 --> 00:18:57,690
+We'll be able to take an image
+and write a textual
+
+424
+00:18:57,690 --> 00:19:00,030
+explanation of what that
+image is about.
+
+425
+00:19:00,030 --> 00:19:02,430
+Not just, there's a face, and
+there's the Empire State
+
+426
+00:19:02,430 --> 00:19:03,130
+Building, or whatever.
+
+427
+00:19:03,130 --> 00:19:05,560
+But can we describe what
+we humans would
+
+428
+00:19:05,560 --> 00:19:07,110
+say about that image?
+
+429
+00:19:07,110 --> 00:19:10,690
+When we do a summarization of
+a paragraph, can we not just
+
+430
+00:19:10,690 --> 00:19:12,930
+be sort of heuristically clever
+and pull out a few
+
+431
+00:19:12,930 --> 00:19:15,530
+subjects and objects, but
+can we really get the
+
+432
+00:19:15,530 --> 00:19:17,070
+right tenor of it?
+
+433
+00:19:17,070 --> 00:19:18,610
+Can we actually get
+the negations
+
+434
+00:19:18,610 --> 00:19:20,110
+correctly, et cetera?
+
+435
+00:19:20,110 --> 00:19:21,630
+It's a good question.
+
+436
+00:19:21,630 --> 00:19:24,260
+It'll be very interesting
+to see how far we go.
+
+437
+00:19:24,260 --> 00:19:27,280
+What I feel today about that is,
+we have an enormous amount
+
+438
+00:19:27,280 --> 00:19:29,450
+of runway to push this.
+
+439
+00:19:29,450 --> 00:19:32,130
+So I think the kinds of
+demonstrations you saw in the
+
+440
+00:19:32,130 --> 00:19:34,580
+morning when you talk to your
+machine and it tells you
+
+441
+00:19:34,580 --> 00:19:35,310
+things you want to know--
+
+442
+00:19:35,310 --> 00:19:37,850
+I think they're going
+to go really far.
+
+443
+00:19:37,850 --> 00:19:40,300
+But how far, we don't
+know, I think.
+
+444
+00:19:40,300 --> 00:19:42,130
+And I think that's one of the
+really interesting open
+
+445
+00:19:42,130 --> 00:19:45,100
+questions that we, and I hope
+all of you in the research
+
+446
+00:19:45,100 --> 00:19:47,060
+world, are looking at as well.
+
+447
+00:19:47,060 --> 00:19:51,530
+So let me turn to a different
+role here, and I will play
+
+448
+00:19:51,530 --> 00:19:54,500
+moderator as best as I can.
+
+449
+00:19:54,500 --> 00:19:56,920
+All right.
+
+450
+00:19:56,920 --> 00:19:59,860
+What's the distinction between
+research within the research
+
+451
+00:19:59,860 --> 00:20:01,960
+group and research within
+the rest of the company?
+
+452
+00:20:01,960 --> 00:20:03,810
+Peter, why don't you
+take that one here?
+
+453
+00:20:03,810 --> 00:20:06,530
+You've been doing research and
+being in the company and
+
+454
+00:20:06,530 --> 00:20:08,900
+everything for longer
+than I have.
+
+455
+00:20:08,900 --> 00:20:11,920
+PETER NORVIG: I guess we try not
+to make a big distinction.
+
+456
+00:20:11,920 --> 00:20:16,620
+We do have a separate research
+group, but whether you're in
+
+457
+00:20:16,620 --> 00:20:20,840
+research or in engineering is
+more driven by what area
+
+458
+00:20:20,840 --> 00:20:24,830
+you're working on than by how
+researchy you are, and whether
+
+459
+00:20:24,830 --> 00:20:27,900
+you were a professor, or how
+many papers you want to write,
+
+460
+00:20:27,900 --> 00:20:29,380
+and those kinds of things.
+
+461
+00:20:29,380 --> 00:20:33,020
+So when I was running search
+quality, that was in the
+
+462
+00:20:33,020 --> 00:20:34,960
+engineering organization,
+and so everybody I
+
+463
+00:20:34,960 --> 00:20:36,510
+hired was an engineer.
+
+464
+00:20:36,510 --> 00:20:40,170
+And it didn't matter how
+many PhDs they had.
+
+465
+00:20:40,170 --> 00:20:41,610
+If you're working on
+an engineering
+
+466
+00:20:41,610 --> 00:20:42,880
+project, you're an engineer.
+
+467
+00:20:42,880 --> 00:20:45,420
+If you're doing something that
+we aren't doing yet, then we
+
+468
+00:20:45,420 --> 00:20:48,930
+can call you a research
+scientist.
+
+469
+00:20:48,930 --> 00:20:51,160
+ALFRED SPECTOR: I think that
+probably answers that one.
+
+470
+00:20:51,160 --> 00:20:52,410
+I'm going to click yes.
+
+471
+00:20:52,410 --> 00:20:55,130
+
+472
+00:20:55,130 --> 00:20:58,720
+Where can we read and/or learn
+about current non-secret
+
+473
+00:20:58,720 --> 00:21:01,950
+Google research projects?
+
+474
+00:21:01,950 --> 00:21:02,620
+Non-secret.
+
+475
+00:21:02,620 --> 00:21:04,400
+Well, that's good, because if
+they're secret, I think we
+
+476
+00:21:04,400 --> 00:21:06,020
+know the answer to that.
+
+477
+00:21:06,020 --> 00:21:07,890
+Jeff, do you want
+to try that one?
+
+478
+00:21:07,890 --> 00:21:08,330
+JEFF DEAN: Sure.
+
+479
+00:21:08,330 --> 00:21:12,910
+So on research.google.com,
+there's actually a link to
+
+480
+00:21:12,910 --> 00:21:16,780
+recent publications that people
+have made, categorized
+
+481
+00:21:16,780 --> 00:21:18,700
+into a whole bunch of
+different areas.
+
+482
+00:21:18,700 --> 00:21:22,400
+So that's one way.
+
+483
+00:21:22,400 --> 00:21:24,760
+People at Google often give
+external talks that are
+
+484
+00:21:24,760 --> 00:21:28,500
+videotaped, so you can find
+those on the web about less
+
+485
+00:21:28,500 --> 00:21:30,160
+fully developed work that's
+not quite ready for
+
+486
+00:21:30,160 --> 00:21:32,980
+publication.
+
+487
+00:21:32,980 --> 00:21:35,810
+I think going to conferences
+is another good way.
+
+488
+00:21:35,810 --> 00:21:39,460
+We often publish papers there,
+chat with people informally at
+
+489
+00:21:39,460 --> 00:21:43,050
+conferences, sort of the normal
+way that the research
+
+490
+00:21:43,050 --> 00:21:46,130
+community collaborates.
+
+491
+00:21:46,130 --> 00:21:46,350
+ALFRED SPECTOR: Right.
+
+492
+00:21:46,350 --> 00:21:50,720
+And indeed, there is a G+ Google
+research group that you
+
+493
+00:21:50,720 --> 00:21:53,870
+can subscribe to, and that's
+also something that--
+
+494
+00:21:53,870 --> 00:21:56,000
+Research at Google is what it's
+called, I believe, right?
+
+495
+00:21:56,000 --> 00:21:58,310
+So you should subscribe to
+that as well, and I think
+
+496
+00:21:58,310 --> 00:22:02,120
+you'll see a lot of what
+we're doing there.
+
+497
+00:22:02,120 --> 00:22:02,410
+Let's see.
+
+498
+00:22:02,410 --> 00:22:08,560
+The next question is, Google
+is hard to approach
+
+499
+00:22:08,560 --> 00:22:10,490
+externally, both for figuring
+out who is working on a
+
+500
+00:22:10,490 --> 00:22:13,000
+specific problem, and for
+knowing what you're getting
+
+501
+00:22:13,000 --> 00:22:14,190
+into when you apply for a job.
+
+502
+00:22:14,190 --> 00:22:17,000
+How should academics
+form successful
+
+503
+00:22:17,000 --> 00:22:19,490
+interactions with Google?
+
+504
+00:22:19,490 --> 00:22:21,640
+All the team members here are
+looking at me on this one.
+
+505
+00:22:21,640 --> 00:22:24,260
+I guess I don't get to delegate
+this one here.
+
+506
+00:22:24,260 --> 00:22:26,650
+So it's a fine question.
+
+507
+00:22:26,650 --> 00:22:31,960
+I mean, we are either happily or
+regrettably a big company.
+
+508
+00:22:31,960 --> 00:22:34,270
+Lou Gerstner once said, every
+little company wants to be
+
+509
+00:22:34,270 --> 00:22:36,540
+big, and every big company
+wants to be little.
+
+510
+00:22:36,540 --> 00:22:37,980
+There's some truth in
+that statement.
+
+511
+00:22:37,980 --> 00:22:39,840
+So it would be nice if we were
+little, and then you'd know
+
+512
+00:22:39,840 --> 00:22:41,900
+who to talk to, because there
+are only 10 of us.
+
+513
+00:22:41,900 --> 00:22:46,740
+I think that the best approach
+is actually to find someone
+
+514
+00:22:46,740 --> 00:22:49,390
+you know at Google
+and talk to them.
+
+515
+00:22:49,390 --> 00:22:53,640
+I'm guessing that most of you
+know somebody at the company,
+
+516
+00:22:53,640 --> 00:22:57,180
+and I would try to vector
+through them to find someone.
+
+517
+00:22:57,180 --> 00:22:59,630
+I think this is still
+a personal world.
+
+518
+00:22:59,630 --> 00:23:00,370
+We're all humans.
+
+519
+00:23:00,370 --> 00:23:00,900
+We talk.
+
+520
+00:23:00,900 --> 00:23:03,380
+We send email, and chat,
+and such things.
+
+521
+00:23:03,380 --> 00:23:05,040
+I think that's really
+a very good
+
+522
+00:23:05,040 --> 00:23:07,230
+approach for doing things.
+
+523
+00:23:07,230 --> 00:23:12,340
+But then you could also vector
+off of the various things that
+
+524
+00:23:12,340 --> 00:23:15,500
+we have on our websites and
+find out from there.
+
+525
+00:23:15,500 --> 00:23:17,090
+So I think that's probably
+the best approach.
+
+526
+00:23:17,090 --> 00:23:18,770
+Maybe we need to build
+a system for this or
+
+527
+00:23:18,770 --> 00:23:19,470
+something like this.
+
+528
+00:23:19,470 --> 00:23:21,510
+I don't know.
+
+529
+00:23:21,510 --> 00:23:23,120
+All right, let's see.
+
+530
+00:23:23,120 --> 00:23:28,970
+Is a Ph.D. Degree a must for
+doing research at Google?
+
+531
+00:23:28,970 --> 00:23:31,570
+Can external people contribute
+in some way even without
+
+532
+00:23:31,570 --> 00:23:32,220
+joining the team?
+
+533
+00:23:32,220 --> 00:23:34,063
+Anyone want to take that one?
+
+534
+00:23:34,063 --> 00:23:36,920
+PETER NORVIG: Yeah, I guess
+I could take it.
+
+535
+00:23:36,920 --> 00:23:40,650
+So I think a Ph.D. Is indicative
+of the kind of
+
+536
+00:23:40,650 --> 00:23:42,880
+person that we like to hire--
+
+537
+00:23:42,880 --> 00:23:46,120
+a person who's shown that they
+have a passionate interest,
+
+538
+00:23:46,120 --> 00:23:49,470
+and that they can carry through
+work over the period
+
+539
+00:23:49,470 --> 00:23:52,220
+of many years, and come up with
+something successful.
+
+540
+00:23:52,220 --> 00:23:55,180
+And so getting a Ph.D. Is a good
+way to demonstrate you're
+
+541
+00:23:55,180 --> 00:23:56,440
+that kind of person.
+
+542
+00:23:56,440 --> 00:23:58,080
+But if you can demonstrate
+it some other way,
+
+543
+00:23:58,080 --> 00:23:59,680
+that's just as good.
+
+544
+00:23:59,680 --> 00:24:02,310
+We don't really care if
+you have the degree.
+
+545
+00:24:02,310 --> 00:24:04,970
+We care what type of
+person you are.
+
+546
+00:24:04,970 --> 00:24:06,040
+ALFRED SPECTOR: Right.
+
+547
+00:24:06,040 --> 00:24:08,174
+Absolutely.
+
+548
+00:24:08,174 --> 00:24:10,065
+THAD STARNER: I'll
+add to that.
+
+549
+00:24:10,065 --> 00:24:10,410
+ALFRED SPECTOR: Great.
+
+550
+00:24:10,410 --> 00:24:12,320
+THAD STARNER: Again, as Alfred
+was saying, there's not much
+
+551
+00:24:12,320 --> 00:24:14,470
+distinction between engineering
+and research, and
+
+552
+00:24:14,470 --> 00:24:17,090
+oftentimes, some of the best
+research is people
+
+553
+00:24:17,090 --> 00:24:20,550
+transitioning from engineering
+into doing something with the
+
+554
+00:24:20,550 --> 00:24:22,920
+research teams, and they
+can come from any level
+
+555
+00:24:22,920 --> 00:24:23,190
+background.
+
+556
+00:24:23,190 --> 00:24:25,360
+It's more about being able to
+do the work and having the
+
+557
+00:24:25,360 --> 00:24:28,550
+intellectual curiosity and
+discipline to do it.
+
+558
+00:24:28,550 --> 00:24:30,300
+JEFF DEAN: I'll even
+add something.
+
+559
+00:24:30,300 --> 00:24:33,490
+One thing I find, even in my own
+work, is that I go through
+
+560
+00:24:33,490 --> 00:24:36,600
+cycles of working on a very
+exploratory thing where I'm
+
+561
+00:24:36,600 --> 00:24:39,440
+doing more research, and then
+as that sort of comes to
+
+562
+00:24:39,440 --> 00:24:42,810
+fruition, hopefully I'll bring
+it closer to actually building
+
+563
+00:24:42,810 --> 00:24:43,770
+a real product out of it.
+
+564
+00:24:43,770 --> 00:24:47,250
+And that sort of shifts what I
+do to more of an engineering
+
+565
+00:24:47,250 --> 00:24:49,460
+thing, where I know what
+needs to be done.
+
+566
+00:24:49,460 --> 00:24:53,020
+And then when that's sort of at
+a good spot, then I go back
+
+567
+00:24:53,020 --> 00:24:55,090
+and find some more researchy
+thing to do.
+
+568
+00:24:55,090 --> 00:24:57,390
+And so even individual
+people kind of cycle
+
+569
+00:24:57,390 --> 00:24:59,890
+through this continuum.
+
+570
+00:24:59,890 --> 00:25:01,700
+ALFRED SPECTOR: Right.
+
+571
+00:25:01,700 --> 00:25:03,780
+Can external people contribute
+some way even
+
+572
+00:25:03,780 --> 00:25:05,950
+without joining the team?
+
+573
+00:25:05,950 --> 00:25:08,710
+The answer is, we have quite a
+few collaborations going on
+
+574
+00:25:08,710 --> 00:25:11,670
+externally with folks.
+
+575
+00:25:11,670 --> 00:25:14,840
+It often works well when open
+source platforms are the
+
+576
+00:25:14,840 --> 00:25:17,430
+basis, because then intellectual
+property issues
+
+577
+00:25:17,430 --> 00:25:18,230
+don't get in the way.
+
+578
+00:25:18,230 --> 00:25:20,200
+But there's an awful lot
+of that at Google.
+
+579
+00:25:20,200 --> 00:25:23,400
+We do an awful lot in the
+open source community.
+
+580
+00:25:23,400 --> 00:25:24,650
+So I think so.
+
+581
+00:25:24,650 --> 00:25:28,130
+When there's deep IP involved,
+then that's always
+
+582
+00:25:28,130 --> 00:25:31,110
+challenging, and there's just,
+I'm afraid, no way around it.
+
+583
+00:25:31,110 --> 00:25:34,350
+But we do, in fact, collaborate
+with thousands and
+
+584
+00:25:34,350 --> 00:25:37,750
+thousands of people through our
+open source platforms that
+
+585
+00:25:37,750 --> 00:25:40,670
+either we lead on or that others
+lead on and that we
+
+586
+00:25:40,670 --> 00:25:42,341
+contribute to.
+
+587
+00:25:42,341 --> 00:25:46,840
+All right, who is
+our Steve Jobs?
+
+588
+00:25:46,840 --> 00:25:50,730
+And who picks who--
+
+589
+00:25:50,730 --> 00:25:54,520
+this looks like who singular
+picks the big ideas, or is it
+
+590
+00:25:54,520 --> 00:25:56,880
+distributed?
+
+591
+00:25:56,880 --> 00:25:58,020
+Jeff, you want to
+try that one?
+
+592
+00:25:58,020 --> 00:25:59,270
+Or maybe everyone should
+answer that.
+
+593
+00:25:59,270 --> 00:25:59,650
+JEFF DEAN: Sure.
+
+594
+00:25:59,650 --> 00:26:02,660
+I mean, I think it's a
+combination of things.
+
+595
+00:26:02,660 --> 00:26:07,090
+One is a lot of times, new ideas
+come from someone just
+
+596
+00:26:07,090 --> 00:26:09,950
+tinkering on their own and
+exploring some new thing that
+
+597
+00:26:09,950 --> 00:26:13,210
+they think Google should
+be doing, and
+
+598
+00:26:13,210 --> 00:26:14,190
+that we're not currently.
+
+599
+00:26:14,190 --> 00:26:19,480
+And a lot of times, those sort
+of prototypes or ideas become
+
+600
+00:26:19,480 --> 00:26:21,880
+full fledged projects that
+really push the company
+
+601
+00:26:21,880 --> 00:26:23,540
+forward in some area.
+
+602
+00:26:23,540 --> 00:26:27,670
+And other times, Larry or Sergei
+will say, why aren't we
+
+603
+00:26:27,670 --> 00:26:29,290
+doing this?
+
+604
+00:26:29,290 --> 00:26:30,750
+And then that will sort
+of form a team.
+
+605
+00:26:30,750 --> 00:26:35,170
+It's a combination of these
+things, and great new ideas
+
+606
+00:26:35,170 --> 00:26:38,820
+come from all over, so it's not
+like we wait until Larry
+
+607
+00:26:38,820 --> 00:26:41,300
+says we should do this.
+
+608
+00:26:41,300 --> 00:26:44,700
+But if he does say that, he's
+often right, and you should
+
+609
+00:26:44,700 --> 00:26:45,950
+pay attention.
+
+610
+00:26:45,950 --> 00:26:48,980
+
+611
+00:26:48,980 --> 00:26:51,190
+ALFRED SPECTOR: I think
+generally our strength is
+
+612
+00:26:51,190 --> 00:26:52,600
+actually that we're
+
+613
+00:26:52,600 --> 00:26:54,380
+distributed, to a large extent.
+
+614
+00:26:54,380 --> 00:26:58,830
+Certainly, and you heard Larry
+yesterday, he's encouraging
+
+615
+00:26:58,830 --> 00:27:00,130
+big things.
+
+616
+00:27:00,130 --> 00:27:06,000
+So we are possessing a CEO now,
+and with Eric as well,
+
+617
+00:27:06,000 --> 00:27:10,200
+that has encouraged really
+significant results that
+
+618
+00:27:10,200 --> 00:27:13,930
+benefit lots and lots of
+users in the world.
+
+619
+00:27:13,930 --> 00:27:15,120
+So he's always done that.
+
+620
+00:27:15,120 --> 00:27:17,290
+He's always pushed for
+discontinuities.
+
+621
+00:27:17,290 --> 00:27:19,820
+So that's a big role
+that he plays.
+
+622
+00:27:19,820 --> 00:27:22,010
+But Larry can't do everything
+himself.
+
+623
+00:27:22,010 --> 00:27:23,850
+He'd be the first to
+tell you that.
+
+624
+00:27:23,850 --> 00:27:27,720
+So he depends on many of us to
+have good ideas, and to come
+
+625
+00:27:27,720 --> 00:27:29,810
+up with things that
+we want to go do.
+
+626
+00:27:29,810 --> 00:27:36,260
+And some of them arise, as Jeff
+said, sort of naturally
+
+627
+00:27:36,260 --> 00:27:37,940
+from an existing project.
+
+628
+00:27:37,940 --> 00:27:39,660
+That's, I would say, probably
+the most common thing that
+
+629
+00:27:39,660 --> 00:27:42,190
+happens is something sort of
+just sort of obvious to do
+
+630
+00:27:42,190 --> 00:27:44,340
+next when you're doing a
+project, and a lot of what we
+
+631
+00:27:44,340 --> 00:27:47,450
+do is undoubtedly
+based on that.
+
+632
+00:27:47,450 --> 00:27:48,760
+All right.
+
+633
+00:27:48,760 --> 00:27:51,950
+Last year, Google's CFO
+mentioned at an innovation
+
+634
+00:27:51,950 --> 00:27:56,230
+conference in Montreal that
+Google's mantra is to make
+
+635
+00:27:56,230 --> 00:27:57,810
+sure each project is capable of
+
+636
+00:27:57,810 --> 00:27:59,920
+affecting one million people.
+
+637
+00:27:59,920 --> 00:28:03,260
+How do we balance this reach
+with research and revenue
+
+638
+00:28:03,260 --> 00:28:04,510
+generation?
+
+639
+00:28:04,510 --> 00:28:08,270
+
+640
+00:28:08,270 --> 00:28:13,430
+Well, I think some things start
+small and grow, and I
+
+641
+00:28:13,430 --> 00:28:14,550
+think that's the answer.
+
+642
+00:28:14,550 --> 00:28:16,930
+And we don't always know which
+ones will do that.
+
+643
+00:28:16,930 --> 00:28:21,670
+So we certainly are desirous of
+doing things that are truly
+
+644
+00:28:21,670 --> 00:28:24,480
+impactful, and we're a
+big company, so our
+
+645
+00:28:24,480 --> 00:28:26,550
+standards are high.
+
+646
+00:28:26,550 --> 00:28:29,030
+But we don't really know which
+ones are going to do that, so
+
+647
+00:28:29,030 --> 00:28:31,720
+we start some things
+that don't work.
+
+648
+00:28:31,720 --> 00:28:33,120
+And we don't know.
+
+649
+00:28:33,120 --> 00:28:36,040
+There are numerous efforts
+that I'm involved in.
+
+650
+00:28:36,040 --> 00:28:38,400
+Some you see, some
+you don't see.
+
+651
+00:28:38,400 --> 00:28:40,940
+And we don't know if they'll
+work, which is the nature of
+
+652
+00:28:40,940 --> 00:28:41,970
+engineering and research.
+
+653
+00:28:41,970 --> 00:28:43,620
+You don't know.
+
+654
+00:28:43,620 --> 00:28:45,010
+You must see that in
+the Glass world.
+
+655
+00:28:45,010 --> 00:28:46,270
+There's some things you
+try, and don't--
+
+656
+00:28:46,270 --> 00:28:47,650
+THAD STARNER: One of the things
+is, there's so many
+
+657
+00:28:47,650 --> 00:28:51,990
+niche things you can do with
+wearable computers that aren't
+
+658
+00:28:51,990 --> 00:28:54,020
+going to affect a
+million people.
+
+659
+00:28:54,020 --> 00:28:56,130
+They could be $100 million
+businesses, but they're not
+
+660
+00:28:56,130 --> 00:28:57,520
+the big win you expect.
+
+661
+00:28:57,520 --> 00:29:02,220
+And you try to make the product
+such that other people
+
+662
+00:29:02,220 --> 00:29:03,150
+go out and do that.
+
+663
+00:29:03,150 --> 00:29:05,830
+You try and enable it,
+not close any doors.
+
+664
+00:29:05,830 --> 00:29:09,220
+And you try and make sure that
+the academics who are
+
+665
+00:29:09,220 --> 00:29:11,040
+interested in accessibility
+can do what they
+
+666
+00:29:11,040 --> 00:29:12,950
+want with the device.
+
+667
+00:29:12,950 --> 00:29:15,760
+People who are interested in
+industrial things like repair
+
+668
+00:29:15,760 --> 00:29:17,600
+and inspection means that
+they can do what they
+
+669
+00:29:17,600 --> 00:29:18,810
+want with the device.
+
+670
+00:29:18,810 --> 00:29:21,150
+Try not to shut anybody out.
+
+671
+00:29:21,150 --> 00:29:24,730
+But it also allows people to
+really explore quickly, grow
+
+672
+00:29:24,730 --> 00:29:28,570
+quickly, and see where the big
+hits are going to be, not just
+
+673
+00:29:28,570 --> 00:29:31,320
+at Google, but out in the
+world in general.
+
+674
+00:29:31,320 --> 00:29:32,710
+ALFRED SPECTOR: Are there people
+that would like to come
+
+675
+00:29:32,710 --> 00:29:34,680
+up to a microphone live?
+
+676
+00:29:34,680 --> 00:29:40,180
+We have audio recognition
+capabilities here on stage,
+
+677
+00:29:40,180 --> 00:29:41,160
+and can deal with that.
+
+678
+00:29:41,160 --> 00:29:44,572
+So if anyone would like
+to come up, feel free.
+
+679
+00:29:44,572 --> 00:29:46,740
+You can make your way to a
+microphone while we're doing
+
+680
+00:29:46,740 --> 00:29:48,860
+the next question.
+
+681
+00:29:48,860 --> 00:29:50,870
+Could you go to the
+mic please?
+
+682
+00:29:50,870 --> 00:29:52,130
+Because we'd love to
+hear your question.
+
+683
+00:29:52,130 --> 00:29:57,580
+
+684
+00:29:57,580 --> 00:30:00,340
+AUDIENCE: My question is, in
+those days, there was a
+
+685
+00:30:00,340 --> 00:30:02,370
+professor by name [INAUDIBLE].
+
+686
+00:30:02,370 --> 00:30:07,020
+He converted the water energy
+into the productive energy.
+
+687
+00:30:07,020 --> 00:30:09,900
+So why can't Google use the
+energy which is generated in
+
+688
+00:30:09,900 --> 00:30:12,230
+the Bermuda Triangle to some
+constructive energy?
+
+689
+00:30:12,230 --> 00:30:16,190
+
+690
+00:30:16,190 --> 00:30:16,790
+ALFRED SPECTOR: So, I'm sorry.
+
+691
+00:30:16,790 --> 00:30:18,660
+So why can't we use
+the energy--
+
+692
+00:30:18,660 --> 00:30:20,380
+AUDIENCE: Generated in the
+Bermuda Triangle near the
+
+693
+00:30:20,380 --> 00:30:21,980
+Atlantic Ocean, you know?
+
+694
+00:30:21,980 --> 00:30:23,230
+And use it for some constructive
+energy.
+
+695
+00:30:23,230 --> 00:30:26,100
+And Because those
+ideas are now--
+
+696
+00:30:26,100 --> 00:30:26,940
+THAD STARNER: I'll take that.
+
+697
+00:30:26,940 --> 00:30:27,710
+ALFRED SPECTOR: OK, fine.
+
+698
+00:30:27,710 --> 00:30:28,960
+All right.
+
+699
+00:30:28,960 --> 00:30:30,920
+
+700
+00:30:30,920 --> 00:30:32,960
+THAD STARNER: So one of my
+specialties is energy
+
+701
+00:30:32,960 --> 00:30:36,120
+harvesting, particularly
+for mobile devices.
+
+702
+00:30:36,120 --> 00:30:39,490
+But it turns out that trying
+to gather environmental
+
+703
+00:30:39,490 --> 00:30:42,375
+energy, especially for things
+like ocean power and that sort
+
+704
+00:30:42,375 --> 00:30:45,320
+of stuff, you can do things like
+PVDF stave, that sort of
+
+705
+00:30:45,320 --> 00:30:47,270
+stuff, but it's very hard to
+do that at any sort of
+
+706
+00:30:47,270 --> 00:30:48,750
+scalable level.
+
+707
+00:30:48,750 --> 00:30:52,010
+If you're interested in that, go
+check out something called
+
+708
+00:30:52,010 --> 00:30:52,700
+Ocean Engineering.
+
+709
+00:30:52,700 --> 00:30:55,960
+It's a little company in the
+little town I grew up where
+
+710
+00:30:55,960 --> 00:30:58,410
+they actually are looking at
+these sorts of things about
+
+711
+00:30:58,410 --> 00:31:01,330
+generating power
+from the ocean.
+
+712
+00:31:01,330 --> 00:31:02,230
+ALFRED SPECTOR: Another
+question, yes.
+
+713
+00:31:02,230 --> 00:31:03,980
+AUDIENCE: My name is
+Loretta Cheeks.
+
+714
+00:31:03,980 --> 00:31:07,650
+I'm a PhD at ASU in CS.
+
+715
+00:31:07,650 --> 00:31:09,030
+I have two questions.
+
+716
+00:31:09,030 --> 00:31:12,990
+The gentleman on the end, with
+the Glass-- are you thinking
+
+717
+00:31:12,990 --> 00:31:16,840
+about making the Glass
+accessible to the autism
+
+718
+00:31:16,840 --> 00:31:23,370
+community, or anyone who
+need independent living
+
+719
+00:31:23,370 --> 00:31:24,090
+capabilities?
+
+720
+00:31:24,090 --> 00:31:28,410
+Because it would be a big help
+for a lot of reasons.
+
+721
+00:31:28,410 --> 00:31:32,020
+And the next question-- do you
+have a tool that's comparable
+
+722
+00:31:32,020 --> 00:31:35,580
+to Weka, that will allow you
+to do some of the feature
+
+723
+00:31:35,580 --> 00:31:39,050
+extractions and data mining
+type of things?
+
+724
+00:31:39,050 --> 00:31:41,190
+THAD STARNER: So I can take both
+of those, because these
+
+725
+00:31:41,190 --> 00:31:43,830
+guys don't know what I'm
+working on the space.
+
+726
+00:31:43,830 --> 00:31:48,690
+So this is another example
+where we're trying to
+
+727
+00:31:48,690 --> 00:31:51,320
+specifically keep Glass
+open for people
+
+728
+00:31:51,320 --> 00:31:53,510
+who in these spaces.
+
+729
+00:31:53,510 --> 00:31:58,560
+A good friend of mine at Georgia
+Tech, Gregory Abowd,
+
+730
+00:31:58,560 --> 00:32:01,330
+works very much with autism,
+and we're reaching out to
+
+731
+00:32:01,330 --> 00:32:05,040
+academics right now with Glass
+to try to give them early
+
+732
+00:32:05,040 --> 00:32:08,960
+access to the device, and to
+some of the inner guts, so
+
+733
+00:32:08,960 --> 00:32:11,200
+they can actually use it for
+these particular things.
+
+734
+00:32:11,200 --> 00:32:14,400
+And you'll see Gregory using
+it, not just in future.
+
+735
+00:32:14,400 --> 00:32:16,740
+Now, as far as the feature
+extraction.
+
+736
+00:32:16,740 --> 00:32:19,810
+So Weka is really great for
+when you have, say, you're
+
+737
+00:32:19,810 --> 00:32:21,490
+comparing two images together.
+
+738
+00:32:21,490 --> 00:32:27,530
+One of my specialties is in
+time sequences, and we're
+
+739
+00:32:27,530 --> 00:32:29,740
+doing something called
+pattern discovery.
+
+740
+00:32:29,740 --> 00:32:32,310
+One of the things we're looking
+at right now is
+
+741
+00:32:32,310 --> 00:32:34,710
+looking at birdsong, and
+trying to pull out the
+
+742
+00:32:34,710 --> 00:32:35,600
+fundamental units of birdsong.
+
+743
+00:32:35,600 --> 00:32:37,710
+We're looking at dolphin
+vocalizations, trying to pull
+
+744
+00:32:37,710 --> 00:32:41,400
+out the fundamental parts of
+dolphin vocalizations.
+
+745
+00:32:41,400 --> 00:32:46,820
+It's very hard to do, but you
+can see some of that in a PhD
+
+746
+00:32:46,820 --> 00:32:49,310
+thesis by David Minen that
+you can download
+
+747
+00:32:49,310 --> 00:32:50,280
+and take a look at.
+
+748
+00:32:50,280 --> 00:32:51,990
+And that's for time
+varying signals.
+
+749
+00:32:51,990 --> 00:32:56,130
+And that looks for things
+that are repeated.
+
+750
+00:32:56,130 --> 00:33:01,350
+And you try to explain time
+by what's called motifs.
+
+751
+00:33:01,350 --> 00:33:03,240
+And if you're interested in
+that, come talk to me later.
+
+752
+00:33:03,240 --> 00:33:05,030
+It's one of the things that
+we're very much interested in.
+
+753
+00:33:05,030 --> 00:33:06,450
+As a matter of fact, it's why I
+got into wearable computing
+
+754
+00:33:06,450 --> 00:33:07,630
+in the first place.
+
+755
+00:33:07,630 --> 00:33:09,240
+I'm trying to-- and this
+is something I
+
+756
+00:33:09,240 --> 00:33:10,380
+should tell Alfred about.
+
+757
+00:33:10,380 --> 00:33:12,790
+One of the reasons I started
+wearable computing was I
+
+758
+00:33:12,790 --> 00:33:14,880
+really wanted to make a computer
+that sees as we see,
+
+759
+00:33:14,880 --> 00:33:18,130
+hears as we hear, tracks the
+motions of our hands, and
+
+760
+00:33:18,130 --> 00:33:20,950
+discovers the activities of
+our daily lives, learns to
+
+761
+00:33:20,950 --> 00:33:23,200
+string those together in the
+sort of scripts and frames
+
+762
+00:33:23,200 --> 00:33:26,340
+standpoint, and actually learns
+what it is to be human.
+
+763
+00:33:26,340 --> 00:33:30,280
+Not just what it is to describe
+a particular image,
+
+764
+00:33:30,280 --> 00:33:33,410
+but actually the meaning of
+it in the human world.
+
+765
+00:33:33,410 --> 00:33:34,990
+With that.
+
+766
+00:33:34,990 --> 00:33:35,820
+ALFRED SPECTOR: Thank you.
+
+767
+00:33:35,820 --> 00:33:36,700
+PETER NORVIG: Let
+me add to that.
+
+768
+00:33:36,700 --> 00:33:40,660
+We do have a service called the
+Prediction APIs, where you
+
+769
+00:33:40,660 --> 00:33:44,580
+ship us your data and we run a
+suite of algorithms over it,
+
+770
+00:33:44,580 --> 00:33:45,930
+and we send back classifications
+or
+
+771
+00:33:45,930 --> 00:33:47,710
+regressions.
+
+772
+00:33:47,710 --> 00:33:49,197
+ALFRED SPECTOR: That's a cloud
+service you can find if you
+
+773
+00:33:49,197 --> 00:33:51,490
+type prediction API Google
+or something like that.
+
+774
+00:33:51,490 --> 00:33:52,410
+You'll see how to use it.
+
+775
+00:33:52,410 --> 00:33:54,870
+And it's meant to be
+quite easy to use.
+
+776
+00:33:54,870 --> 00:33:55,780
+It's just as Peter said.
+
+777
+00:33:55,780 --> 00:33:58,090
+You give it some data, you
+give it some examples, we
+
+778
+00:33:58,090 --> 00:34:00,730
+train, and then off you go.
+
+779
+00:34:00,730 --> 00:34:01,710
+All right, let's see.
+
+780
+00:34:01,710 --> 00:34:03,920
+I think in the back was
+the first question.
+
+781
+00:34:03,920 --> 00:34:04,420
+You.
+
+782
+00:34:04,420 --> 00:34:08,810
+Yes, you, sir, in
+the blue shirt.
+
+783
+00:34:08,810 --> 00:34:11,600
+AUDIENCE: My company works
+with education, so I'm
+
+784
+00:34:11,600 --> 00:34:14,440
+privileged to see every day the
+impact the tools that you
+
+785
+00:34:14,440 --> 00:34:16,770
+build, the work that
+you do has on
+
+786
+00:34:16,770 --> 00:34:19,389
+students and parents globally.
+
+787
+00:34:19,389 --> 00:34:23,429
+And I think it's quite profound
+how the tools you
+
+788
+00:34:23,429 --> 00:34:25,659
+build enable social change.
+
+789
+00:34:25,659 --> 00:34:28,060
+I'm curious whether at Google
+research you look at the
+
+790
+00:34:28,060 --> 00:34:30,960
+impact of social change, and
+what it means, for example,
+
+791
+00:34:30,960 --> 00:34:34,360
+for things like collaborative
+consumption.
+
+792
+00:34:34,360 --> 00:34:35,370
+ALFRED SPECTOR: I don't
+actually know--
+
+793
+00:34:35,370 --> 00:34:37,380
+does everyone know the word
+collaborative consumption?
+
+794
+00:34:37,380 --> 00:34:41,297
+I don't know that term, so could
+you define that for us?
+
+795
+00:34:41,297 --> 00:34:41,719
+AUDIENCE: I'm not sure.
+
+796
+00:34:41,719 --> 00:34:43,380
+There's probably experts
+in the room.
+
+797
+00:34:43,380 --> 00:34:44,159
+ALFRED SPECTOR: Briefly, yes.
+
+798
+00:34:44,159 --> 00:34:44,879
+AUDIENCE: Briefly.
+
+799
+00:34:44,879 --> 00:34:47,620
+The idea is a lot of the tools
+we build, particularly in
+
+800
+00:34:47,620 --> 00:34:49,989
+Silicon Valley, are geared
+at consumption.
+
+801
+00:34:49,989 --> 00:34:51,770
+Collaborative consumption is
+about building things like
+
+802
+00:34:51,770 --> 00:34:52,710
+communal gardens.
+
+803
+00:34:52,710 --> 00:34:56,380
+It's about ways of using
+resources we already have in a
+
+804
+00:34:56,380 --> 00:34:58,110
+way that's shared.
+
+805
+00:34:58,110 --> 00:34:58,900
+ALFRED SPECTOR: OK, got it.
+
+806
+00:34:58,900 --> 00:35:01,640
+AUDIENCE: Autonomous cars,
+great example.
+
+807
+00:35:01,640 --> 00:35:03,540
+ALFRED SPECTOR: So the way I
+would put that is I think the
+
+808
+00:35:03,540 --> 00:35:06,440
+group that's most interested
+in topics like that is
+
+809
+00:35:06,440 --> 00:35:10,290
+google.org's engineering team,
+which is extremely interested
+
+810
+00:35:10,290 --> 00:35:16,060
+in how we can use technology
+to be a lever to improve
+
+811
+00:35:16,060 --> 00:35:21,260
+governance, participation, and
+democracy, to try to create
+
+812
+00:35:21,260 --> 00:35:24,340
+greater transparency in
+government, to make energy
+
+813
+00:35:24,340 --> 00:35:29,720
+consumption more efficient, to
+allow for grids to be more
+
+814
+00:35:29,720 --> 00:35:33,430
+effectively managed and
+utilized, and the like.
+
+815
+00:35:33,430 --> 00:35:35,840
+So I think those would be the
+places where we are doing work
+
+816
+00:35:35,840 --> 00:35:38,560
+that's most related to that
+in google.org, so you
+
+817
+00:35:38,560 --> 00:35:40,100
+could check into that.
+
+818
+00:35:40,100 --> 00:35:40,670
+AUDIENCE: Thank you.
+
+819
+00:35:40,670 --> 00:35:42,470
+ALFRED SPECTOR: Yes, sir,
+in the orange, or red.
+
+820
+00:35:42,470 --> 00:35:43,850
+AUDIENCE: Hi there.
+
+821
+00:35:43,850 --> 00:35:45,280
+Peter from Toronto.
+
+822
+00:35:45,280 --> 00:35:50,330
+It strikes me that if any team
+is capable of bringing SkyNet
+
+823
+00:35:50,330 --> 00:35:51,725
+online, it's this team.
+
+824
+00:35:51,725 --> 00:35:54,890
+
+825
+00:35:54,890 --> 00:35:58,940
+My actual question is, how often
+do ethical debates arise
+
+826
+00:35:58,940 --> 00:36:00,190
+in decision making?
+
+827
+00:36:00,190 --> 00:36:04,880
+
+828
+00:36:04,880 --> 00:36:05,280
+THAD STARNER: First
+
+829
+00:36:05,280 --> 00:36:07,087
+conversation I had with Sergei.
+
+830
+00:36:07,087 --> 00:36:11,490
+
+831
+00:36:11,490 --> 00:36:13,560
+I've been doing wearable
+computing for 20 years.
+
+832
+00:36:13,560 --> 00:36:14,820
+Part of my daily life.
+
+833
+00:36:14,820 --> 00:36:17,310
+And one of the first things we
+did is said, OK, here are the
+
+834
+00:36:17,310 --> 00:36:20,490
+things are probably going
+to happen, and
+
+835
+00:36:20,490 --> 00:36:21,690
+let's build out slowly.
+
+836
+00:36:21,690 --> 00:36:24,540
+Let's have small communities
+using this who can actually
+
+837
+00:36:24,540 --> 00:36:28,250
+get familiar with how these
+devices can be used in a
+
+838
+00:36:28,250 --> 00:36:31,050
+socially appropriate manner,
+and then let's build it out
+
+839
+00:36:31,050 --> 00:36:33,570
+larger and larger and
+scale these things.
+
+840
+00:36:33,570 --> 00:36:36,810
+And so I think it comes up
+routinely within Google, from
+
+841
+00:36:36,810 --> 00:36:38,315
+what I've seen.
+
+842
+00:36:38,315 --> 00:36:40,830
+PETER NORVIG: Yeah, we were able
+to get down from Asimov's
+
+843
+00:36:40,830 --> 00:36:43,385
+three laws to one law--
+don't be evil.
+
+844
+00:36:43,385 --> 00:36:46,130
+
+845
+00:36:46,130 --> 00:36:49,810
+But it is a constant struggle to
+try to interpret that, and
+
+846
+00:36:49,810 --> 00:36:54,270
+say, if we make a move in one
+direction, are the outcomes
+
+847
+00:36:54,270 --> 00:36:55,120
+going to be good or not?
+
+848
+00:36:55,120 --> 00:36:59,550
+And to do that, you have to
+look ahead many steps.
+
+849
+00:36:59,550 --> 00:37:03,750
+And we keep trying to do
+a better job of that.
+
+850
+00:37:03,750 --> 00:37:06,370
+ALFRED SPECTOR: Just in my
+thinking, there's an enormous
+
+851
+00:37:06,370 --> 00:37:09,190
+amount of distribution of
+thinking about those issues
+
+852
+00:37:09,190 --> 00:37:10,450
+throughout Google.
+
+853
+00:37:10,450 --> 00:37:12,840
+So it's not that there's a group
+of ethicists somewhere
+
+854
+00:37:12,840 --> 00:37:14,100
+that rule on things.
+
+855
+00:37:14,100 --> 00:37:17,410
+I think all of us as engineers
+and scientists in Google think
+
+856
+00:37:17,410 --> 00:37:20,640
+deeply about what are the
+consequences, pro and con, of
+
+857
+00:37:20,640 --> 00:37:21,410
+what we might do?
+
+858
+00:37:21,410 --> 00:37:24,400
+How can we mitigate the con
+and maximize the pro?
+
+859
+00:37:24,400 --> 00:37:27,040
+And just speaking as a member
+of the National Academy of
+
+860
+00:37:27,040 --> 00:37:28,730
+Engineering, those of you
+who are engineers, we
+
+861
+00:37:28,730 --> 00:37:29,960
+should all do that.
+
+862
+00:37:29,960 --> 00:37:33,110
+It should be part and parcel
+of our code of ethics as
+
+863
+00:37:33,110 --> 00:37:35,400
+engineers that we do no harm.
+
+864
+00:37:35,400 --> 00:37:40,550
+
+865
+00:37:40,550 --> 00:37:42,730
+AUDIENCE: My name is Vajay.
+
+866
+00:37:42,730 --> 00:37:46,900
+So my question is, so it used
+to be that Google presented
+
+867
+00:37:46,900 --> 00:37:50,660
+search results and relevancy
+irregardless of the
+
+868
+00:37:50,660 --> 00:37:51,830
+individual, right?
+
+869
+00:37:51,830 --> 00:37:55,930
+And now there's a sense that
+relevancy depends on who is
+
+870
+00:37:55,930 --> 00:37:57,820
+asking for it.
+
+871
+00:37:57,820 --> 00:38:00,060
+So the way I look at the current
+way of thinking about
+
+872
+00:38:00,060 --> 00:38:04,100
+the Knowledge Graph and trying
+to assess semantics from the
+
+873
+00:38:04,100 --> 00:38:07,030
+broader amount of information,
+that's sort of done at the
+
+874
+00:38:07,030 --> 00:38:09,590
+moment, or my impression
+is, done
+
+875
+00:38:09,590 --> 00:38:11,540
+irregardless of the person.
+
+876
+00:38:11,540 --> 00:38:16,620
+And I'm wondering, on the
+research team, what the
+
+877
+00:38:16,620 --> 00:38:19,270
+philosophy is behind the balance
+of how semantics are
+
+878
+00:38:19,270 --> 00:38:24,650
+determined based on the
+individual, as opposed to the
+
+879
+00:38:24,650 --> 00:38:26,120
+entire corpus?
+
+880
+00:38:26,120 --> 00:38:28,950
+I don't know if that
+makes sense.
+
+881
+00:38:28,950 --> 00:38:30,830
+JEFF DEAN: Yeah, I can
+take this one.
+
+882
+00:38:30,830 --> 00:38:34,610
+I mean, I think really, you do
+want personalized results.
+
+883
+00:38:34,610 --> 00:38:37,620
+Because if you know, for
+example, that I like spicy
+
+884
+00:38:37,620 --> 00:38:41,310
+food, and I query for
+restaurants in some new town,
+
+885
+00:38:41,310 --> 00:38:44,380
+it should bias those results
+to my interests.
+
+886
+00:38:44,380 --> 00:38:48,900
+And so there's a bit of a
+tension between how much do
+
+887
+00:38:48,900 --> 00:38:51,760
+you weigh those personal
+interests for some new query
+
+888
+00:38:51,760 --> 00:38:55,880
+you've done or some new
+information need, and what the
+
+889
+00:38:55,880 --> 00:38:57,000
+general populace thinks.
+
+890
+00:38:57,000 --> 00:39:01,070
+And I think there's a variety
+of different levels at which
+
+891
+00:39:01,070 --> 00:39:01,700
+you do this.
+
+892
+00:39:01,700 --> 00:39:05,080
+You can adjust things based on
+the language someone speaks.
+
+893
+00:39:05,080 --> 00:39:06,910
+You can adjust it based on
+the country they're in.
+
+894
+00:39:06,910 --> 00:39:10,740
+You can adjust it based on their
+current location at a
+
+895
+00:39:10,740 --> 00:39:11,760
+very fine grain level.
+
+896
+00:39:11,760 --> 00:39:13,470
+Are they standing
+in downtown Palo
+
+897
+00:39:13,470 --> 00:39:14,770
+Alto, or in San Francisco?
+
+898
+00:39:14,770 --> 00:39:17,160
+That could affect things
+quite significantly.
+
+899
+00:39:17,160 --> 00:39:23,430
+And so it's a constant not
+really tension, but you're
+
+900
+00:39:23,430 --> 00:39:26,150
+really trying to balance all
+these different factors, and a
+
+901
+00:39:26,150 --> 00:39:27,430
+lot of it is data driven.
+
+902
+00:39:27,430 --> 00:39:31,590
+So you try to understand when
+you want to weigh certain
+
+903
+00:39:31,590 --> 00:39:34,880
+personalized factors much more
+than in other circumstances.
+
+904
+00:39:34,880 --> 00:39:38,210
+AUDIENCE: So is that balance
+something that more has to be
+
+905
+00:39:38,210 --> 00:39:41,525
+tweaked, or can that itself
+also come [INAUDIBLE]?
+
+906
+00:39:41,525 --> 00:39:42,930
+JEFF DEAN: That can also
+be machine learned.
+
+907
+00:39:42,930 --> 00:39:46,110
+So you can do a lot of machine
+learning on the kinds of
+
+908
+00:39:46,110 --> 00:39:47,080
+actions people take.
+
+909
+00:39:47,080 --> 00:39:51,730
+Like, we do a lot of online
+testing of different kinds of
+
+910
+00:39:51,730 --> 00:39:56,270
+algorithmic changes, and look
+at those sorts of--
+
+911
+00:39:56,270 --> 00:39:58,200
+ALFRED SPECTOR: We
+have to move on.
+
+912
+00:39:58,200 --> 00:40:00,660
+So I'm going to do a bunch of
+questions very quickly, and
+
+913
+00:40:00,660 --> 00:40:02,900
+then we'll move this, because
+we're running down to the last
+
+914
+00:40:02,900 --> 00:40:07,750
+four minutes, and I think we
+need to stay on schedule here.
+
+915
+00:40:07,750 --> 00:40:10,550
+One question is, we do open
+source on some projects and
+
+916
+00:40:10,550 --> 00:40:11,760
+publish papers.
+
+917
+00:40:11,760 --> 00:40:14,980
+Is there a rule of thumb for
+what we release as open source
+
+918
+00:40:14,980 --> 00:40:17,430
+and what remains proprietary
+code?
+
+919
+00:40:17,430 --> 00:40:19,410
+I would say there's not
+a rule of thumb.
+
+920
+00:40:19,410 --> 00:40:21,650
+But something that does guide
+us in the release of code is
+
+921
+00:40:21,650 --> 00:40:22,970
+that there's some things
+that are just very
+
+922
+00:40:22,970 --> 00:40:24,550
+difficult to release.
+
+923
+00:40:24,550 --> 00:40:26,060
+So it would have been
+very difficult--
+
+924
+00:40:26,060 --> 00:40:29,050
+we thought about releasing
+our MapReduce software.
+
+925
+00:40:29,050 --> 00:40:31,440
+We really thought deeply,
+particularly when Hadoop was
+
+926
+00:40:31,440 --> 00:40:32,270
+coming out.
+
+927
+00:40:32,270 --> 00:40:35,580
+But it was so intertwined for
+reasons of optimization with
+
+928
+00:40:35,580 --> 00:40:38,990
+the rest of our stack that it
+was actually very difficult to
+
+929
+00:40:38,990 --> 00:40:40,690
+consider doing, so
+we didn't do it.
+
+930
+00:40:40,690 --> 00:40:42,560
+So I would say there's
+no rule of thumb.
+
+931
+00:40:42,560 --> 00:40:45,610
+The difference between
+research and X?
+
+932
+00:40:45,610 --> 00:40:48,510
+Xs tended to focus on a
+collection of topics that are
+
+933
+00:40:48,510 --> 00:40:52,040
+not things that the rest of
+Google is already doing.
+
+934
+00:40:52,040 --> 00:40:55,900
+So that's the differentiation
+between X and other innovation
+
+935
+00:40:55,900 --> 00:40:57,170
+that's been going
+on at Google.
+
+936
+00:40:57,170 --> 00:40:58,290
+That's a rule of thumb.
+
+937
+00:40:58,290 --> 00:41:01,120
+I can't say it's hard and fast,
+but that's my impression
+
+938
+00:41:01,120 --> 00:41:02,820
+of what the differences
+are, and I think
+
+939
+00:41:02,820 --> 00:41:04,140
+it's generally right.
+
+940
+00:41:04,140 --> 00:41:07,340
+Last question here that I had
+is does research develop end
+
+941
+00:41:07,340 --> 00:41:10,460
+user products or prototypes?
+
+942
+00:41:10,460 --> 00:41:12,140
+And the answer is yes.
+
+943
+00:41:12,140 --> 00:41:13,760
+OK, now we can take the
+two questions if
+
+944
+00:41:13,760 --> 00:41:14,600
+we want back there.
+
+945
+00:41:14,600 --> 00:41:15,940
+We do both.
+
+946
+00:41:15,940 --> 00:41:16,310
+Go ahead.
+
+947
+00:41:16,310 --> 00:41:18,240
+You need to find a mic.
+
+948
+00:41:18,240 --> 00:41:19,880
+I didn't mean to dismiss
+the two folks that
+
+949
+00:41:19,880 --> 00:41:21,510
+had stood so long.
+
+950
+00:41:21,510 --> 00:41:22,925
+I apologize for that.
+
+951
+00:41:22,925 --> 00:41:25,460
+AUDIENCE: Name's Frank
+from Florida.
+
+952
+00:41:25,460 --> 00:41:28,390
+We've come so far in the
+last 5, 10 years.
+
+953
+00:41:28,390 --> 00:41:31,680
+What's your thoughts on where
+we'll 10 years from now in
+
+954
+00:41:31,680 --> 00:41:32,730
+this industry?
+
+955
+00:41:32,730 --> 00:41:36,090
+What do you see computer
+software doing?
+
+956
+00:41:36,090 --> 00:41:39,060
+In 30 seconds each, guys.
+
+957
+00:41:39,060 --> 00:41:41,640
+JEFF DEAN: I think we're
+making real progress on
+
+958
+00:41:41,640 --> 00:41:42,980
+perceptual problems.
+
+959
+00:41:42,980 --> 00:41:46,840
+So things like speech
+recognition and vision are
+
+960
+00:41:46,840 --> 00:41:49,090
+showing dramatic improvements
+over the last few years, and I
+
+961
+00:41:49,090 --> 00:41:50,740
+think that's going to continue,
+because we sort of
+
+962
+00:41:50,740 --> 00:41:53,290
+have a handle on what the right
+approaches are, and we
+
+963
+00:41:53,290 --> 00:41:55,800
+just need to scale them up and
+make them work better.
+
+964
+00:41:55,800 --> 00:41:59,010
+And that's really going to
+change a lot in terms of how
+
+965
+00:41:59,010 --> 00:42:00,340
+you interact with the computers
+
+966
+00:42:00,340 --> 00:42:01,940
+or computing devices.
+
+967
+00:42:01,940 --> 00:42:05,810
+I think they're going to kind
+of vanish into much smaller
+
+968
+00:42:05,810 --> 00:42:09,280
+devices that you carry around,
+and aren't big full size
+
+969
+00:42:09,280 --> 00:42:10,990
+laptops that you
+interact with.
+
+970
+00:42:10,990 --> 00:42:11,950
+ALFRED SPECTOR: Peter.
+
+971
+00:42:11,950 --> 00:42:13,350
+PETER NORVIG: Yeah, I would
+agree with that.
+
+972
+00:42:13,350 --> 00:42:16,960
+I think we're getting
+more contextualized.
+
+973
+00:42:16,960 --> 00:42:20,460
+A computer is not something
+that you go to to use.
+
+974
+00:42:20,460 --> 00:42:25,090
+It's something that's around you
+all the time, and sort of
+
+975
+00:42:25,090 --> 00:42:27,090
+more integrated into your life,
+rather than being a
+
+976
+00:42:27,090 --> 00:42:29,241
+separate thing.
+
+977
+00:42:29,241 --> 00:42:32,040
+THAD STARNER: OK, I'll play
+the mad scientist.
+
+978
+00:42:32,040 --> 00:42:33,720
+I believe that we are currently
+living in the
+
+979
+00:42:33,720 --> 00:42:35,900
+singularity, to borrow
+[INAUDIBLE]
+
+980
+00:42:35,900 --> 00:42:40,310
+term, and I believe that we'll
+see that where the tool stops
+
+981
+00:42:40,310 --> 00:42:42,830
+and the mind begins will
+start becoming blurry.
+
+982
+00:42:42,830 --> 00:42:45,170
+We'll be able to start thinking
+with our tools in new
+
+983
+00:42:45,170 --> 00:42:47,690
+ways we haven't been able
+to think before.
+
+984
+00:42:47,690 --> 00:42:48,920
+ALFRED SPECTOR: OK, last
+question I think
+
+985
+00:42:48,920 --> 00:42:49,780
+I can take in blue.
+
+986
+00:42:49,780 --> 00:42:50,180
+I'm sorry.
+
+987
+00:42:50,180 --> 00:42:52,060
+We'll be happy to answer
+the next one
+
+988
+00:42:52,060 --> 00:42:53,300
+privately after the talk.
+
+989
+00:42:53,300 --> 00:42:54,170
+Yes, sir.
+
+990
+00:42:54,170 --> 00:42:56,820
+AUDIENCE: So we've seen some
+recent announcements on
+
+991
+00:42:56,820 --> 00:42:59,950
+Google's involvement with
+quantum computing, and I'd be
+
+992
+00:42:59,950 --> 00:43:02,720
+interested to hear the viewpoint
+on the classes of
+
+993
+00:43:02,720 --> 00:43:05,380
+algorithms, the problems that
+can solved, and the usefulness
+
+994
+00:43:05,380 --> 00:43:06,630
+of that at Google
+in the future.
+
+995
+00:43:06,630 --> 00:43:09,260
+
+996
+00:43:09,260 --> 00:43:11,360
+ALFRED SPECTOR: Well, so I
+think no one really knows
+
+997
+00:43:11,360 --> 00:43:13,640
+exactly where all this
+is going to go.
+
+998
+00:43:13,640 --> 00:43:17,440
+I don't think we truly know, but
+it's gotten to the point
+
+999
+00:43:17,440 --> 00:43:20,810
+where it definitely may very
+well be interesting.
+
+1000
+00:43:20,810 --> 00:43:23,690
+There may be classes of programs
+that this D-Wave
+
+1001
+00:43:23,690 --> 00:43:27,260
+architecture actually is
+plausibly good at solving
+
+1002
+00:43:27,260 --> 00:43:29,770
+relating to, say, image
+and such things.
+
+1003
+00:43:29,770 --> 00:43:31,080
+So we're trying to learn.
+
+1004
+00:43:31,080 --> 00:43:33,350
+We're trying to also
+push the future.
+
+1005
+00:43:33,350 --> 00:43:36,150
+We want to contribute not just
+the technologies that are ripe
+
+1006
+00:43:36,150 --> 00:43:39,070
+for harvesting tomorrow, but
+in some cases, for the ones
+
+1007
+00:43:39,070 --> 00:43:40,610
+that will be important
+in the longer term.
+
+1008
+00:43:40,610 --> 00:43:43,071
+JEFF DEAN: Yeah, I think it's
+still pretty early.
+
+1009
+00:43:43,071 --> 00:43:44,470
+ALFRED SPECTOR: All right, I
+guess we're going to get the
+
+1010
+00:43:44,470 --> 00:43:46,070
+last question, because
+you're--
+
+1011
+00:43:46,070 --> 00:43:50,360
+AUDIENCE: Is there any kind of
+research going on combining
+
+1012
+00:43:50,360 --> 00:43:54,660
+Glass technology with connect
+technology, where like, person
+
+1013
+00:43:54,660 --> 00:43:59,260
+in front of you doing sign
+language, and then it spits
+
+1014
+00:43:59,260 --> 00:44:06,760
+out your language saying, like,
+there's some kind of
+
+1015
+00:44:06,760 --> 00:44:09,970
+translator in between?
+
+1016
+00:44:09,970 --> 00:44:11,680
+THAD STARNER: I think I can't
+comment on any of
+
+1017
+00:44:11,680 --> 00:44:12,540
+those sorts of things.
+
+1018
+00:44:12,540 --> 00:44:14,830
+ALFRED SPECTOR: We'll try
+to handle it separately.
+
+1019
+00:44:14,830 --> 00:44:15,330
+Come on up.
+
+1020
+00:44:15,330 --> 00:44:18,420
+So look, let me just remind you
+all, if you could please
+
+1021
+00:44:18,420 --> 00:44:20,230
+fill out the form.
+
+1022
+00:44:20,230 --> 00:44:22,300
+I don't know how to get it here
+for you, but if you go
+
+1023
+00:44:22,300 --> 00:44:25,595
+and do something here, you
+can find the form.
+
+1024
+00:44:25,595 --> 00:44:27,340
+Why don't you get that here?
+
+1025
+00:44:27,340 --> 00:44:29,910
+And we thank you for coming.
+
+1026
+00:44:29,910 --> 00:44:31,950
+There's going to be big
+changes in education.
+
+1027
+00:44:31,950 --> 00:44:33,400
+Stay around and hear
+about that.
+
+1028
+00:44:33,400 --> 00:44:35,366
+That's my two cents.
+
+1029
+00:44:35,366 --> 00:44:36,616
+Thanks, guys.
+
+1030
+00:44:36,616 --> 00:44:37,608
+

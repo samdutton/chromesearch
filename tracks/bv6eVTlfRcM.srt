@@ -1,0 +1,4179 @@
+1
+00:00:00,000 --> 00:00:00,295
+
+2
+00:00:00,295 --> 00:00:00,950
+SEAN MADAY: All right.
+
+3
+00:00:00,950 --> 00:00:02,820
+Good afternoon, everybody.
+
+4
+00:00:02,820 --> 00:00:04,140
+Thanks for taking the
+time to join us.
+
+5
+00:00:04,140 --> 00:00:05,060
+My name is Sean Maday.
+
+6
+00:00:05,060 --> 00:00:07,305
+I'm a product manager on the
+Maps for Business team.
+
+7
+00:00:07,305 --> 00:00:08,560
+AVNISH BHATNAGAR:
+And I'm Avnish.
+
+8
+00:00:08,560 --> 00:00:10,310
+I'm a technical solutions
+engineer in
+
+9
+00:00:10,310 --> 00:00:11,692
+the Enterprise team.
+
+10
+00:00:11,692 --> 00:00:14,030
+SEAN MADAY: Our goal today is
+to talk to you a little bit
+
+11
+00:00:14,030 --> 00:00:16,500
+about a project that's near and
+our heart, and that is the
+
+12
+00:00:16,500 --> 00:00:18,790
+ability to take the consumer
+experience of Google Earth and
+
+13
+00:00:18,790 --> 00:00:21,550
+Google Maps, and take it
+completely offline, behind the
+
+14
+00:00:21,550 --> 00:00:23,480
+firewall, or into kind
+of bandwidth
+
+15
+00:00:23,480 --> 00:00:25,470
+disenfranchised areas.
+
+16
+00:00:25,470 --> 00:00:27,760
+We're going to throw a bunch of
+nomenclature at you today.
+
+17
+00:00:27,760 --> 00:00:31,960
+And we're going to try to
+paint a picture for you.
+
+18
+00:00:31,960 --> 00:00:34,280
+But it would be helpful for us
+if we could just kind of do a
+
+19
+00:00:34,280 --> 00:00:35,550
+quick poll of the audience.
+
+20
+00:00:35,550 --> 00:00:36,670
+And I'm going to ask
+a few questions.
+
+21
+00:00:36,670 --> 00:00:38,890
+How many of you have ever heard
+of or used Google Earth
+
+22
+00:00:38,890 --> 00:00:41,210
+Enterprise?
+
+23
+00:00:41,210 --> 00:00:41,460
+Great.
+
+24
+00:00:41,460 --> 00:00:43,020
+OK.
+
+25
+00:00:43,020 --> 00:00:45,900
+For those joining us via video,
+there's thousands of
+
+26
+00:00:45,900 --> 00:00:47,710
+people in attendance, and they
+all raised their hand.
+
+27
+00:00:47,710 --> 00:00:49,060
+How about Portable?
+
+28
+00:00:49,060 --> 00:00:50,420
+How many of you have
+ever used Portable?
+
+29
+00:00:50,420 --> 00:00:51,960
+The product we call Portable?
+
+30
+00:00:51,960 --> 00:00:52,610
+OK.
+
+31
+00:00:52,610 --> 00:00:53,270
+Great.
+
+32
+00:00:53,270 --> 00:00:54,170
+How about Google Maps Engine?
+
+33
+00:00:54,170 --> 00:00:55,420
+How many of you have
+ever been hands on
+
+34
+00:00:55,420 --> 00:00:56,685
+with Google Maps Engine?
+
+35
+00:00:56,685 --> 00:00:57,120
+Great.
+
+36
+00:00:57,120 --> 00:00:57,360
+OK.
+
+37
+00:00:57,360 --> 00:00:58,070
+That's very helpful.
+
+38
+00:00:58,070 --> 00:00:58,660
+Thank you.
+
+39
+00:00:58,660 --> 00:01:00,920
+As we go forward, for those of
+you who weren't familiar with
+
+40
+00:01:00,920 --> 00:01:03,870
+any of those three products,
+we'll make sure that we make
+
+41
+00:01:03,870 --> 00:01:06,220
+that clear to you.
+
+42
+00:01:06,220 --> 00:01:09,090
+Before we begin, I want to touch
+on some current events.
+
+43
+00:01:09,090 --> 00:01:12,210
+
+44
+00:01:12,210 --> 00:01:15,830
+You woke up this morning to
+headlines that a series of
+
+45
+00:01:15,830 --> 00:01:19,430
+really severe tornadoes had
+struck just southwest of the
+
+46
+00:01:19,430 --> 00:01:20,680
+Dallas-Fort Worth area.
+
+47
+00:01:20,680 --> 00:01:23,620
+
+48
+00:01:23,620 --> 00:01:27,310
+A lot of times, we see this
+type of headline.
+
+49
+00:01:27,310 --> 00:01:30,330
+But these headlines get kind
+of lost in the news cycle.
+
+50
+00:01:30,330 --> 00:01:34,490
+But instrumental to the relief
+and response effort in the
+
+51
+00:01:34,490 --> 00:01:36,570
+aftermath of a critical
+incident, or a natural
+
+52
+00:01:36,570 --> 00:01:39,660
+disaster like this,
+is usually a map.
+
+53
+00:01:39,660 --> 00:01:42,980
+And the context that that map
+could provide to us as kind of
+
+54
+00:01:42,980 --> 00:01:46,610
+fellow Americans, or fellow
+citizens of Earth, but also to
+
+55
+00:01:46,610 --> 00:01:50,870
+first responders and emergency
+managers who are going to be
+
+56
+00:01:50,870 --> 00:01:54,420
+trying to restore and provide
+relief for those affected.
+
+57
+00:01:54,420 --> 00:01:56,345
+So I just want to provide some
+context with the map.
+
+58
+00:01:56,345 --> 00:01:58,120
+I'll show you here.
+
+59
+00:01:58,120 --> 00:02:01,450
+These are the four counties that
+were primarily affected.
+
+60
+00:02:01,450 --> 00:02:04,840
+The green dots, or the green
+placemarks you see here, were
+
+61
+00:02:04,840 --> 00:02:06,960
+kind of initial observations
+that were recorded this
+
+62
+00:02:06,960 --> 00:02:10,759
+morning by several local
+news affiliates.
+
+63
+00:02:10,759 --> 00:02:13,930
+And then the blue placemarks
+you see here are actually
+
+64
+00:02:13,930 --> 00:02:16,430
+confirmed touchdowns that the
+National Weather Service just
+
+65
+00:02:16,430 --> 00:02:19,950
+put out a few hours ago.
+
+66
+00:02:19,950 --> 00:02:22,300
+As we zoom in and we pan around
+these affected areas,
+
+67
+00:02:22,300 --> 00:02:24,510
+the map is a really interesting
+way for us to kind
+
+68
+00:02:24,510 --> 00:02:26,980
+of get some appreciation for
+what this human terrain and
+
+69
+00:02:26,980 --> 00:02:31,060
+this natural landscape
+looks like.
+
+70
+00:02:31,060 --> 00:02:32,850
+For those emergency managers
+who are going to be
+
+71
+00:02:32,850 --> 00:02:36,060
+responsible for understanding
+the scope and extent of this
+
+72
+00:02:36,060 --> 00:02:38,840
+devastation, and for those first
+responders who are going
+
+73
+00:02:38,840 --> 00:02:42,260
+to be going door to door,
+assessing damage and looking
+
+74
+00:02:42,260 --> 00:02:45,520
+for those who are injured or
+afflicted, these sorts of maps
+
+75
+00:02:45,520 --> 00:02:49,395
+can be absolutely critical to
+understanding and getting the
+
+76
+00:02:49,395 --> 00:02:50,930
+lay of the land.
+
+77
+00:02:50,930 --> 00:02:53,340
+So what we want to do today is
+we want to illustrate to you
+
+78
+00:02:53,340 --> 00:02:57,330
+that these maps are obviously
+very impactful and very useful
+
+79
+00:02:57,330 --> 00:03:00,310
+in an online setting, but they
+can become even more useful.
+
+80
+00:03:00,310 --> 00:03:02,310
+They can become a
+force multiplier
+
+81
+00:03:02,310 --> 00:03:04,300
+in an offline scenario.
+
+82
+00:03:04,300 --> 00:03:05,720
+Actually, the demo I'm
+showing you here
+
+83
+00:03:05,720 --> 00:03:06,840
+is completely offline.
+
+84
+00:03:06,840 --> 00:03:10,190
+This is all running on my local
+machine from the local
+
+85
+00:03:10,190 --> 00:03:12,260
+host URL you see at the
+top of the screen.
+
+86
+00:03:12,260 --> 00:03:15,530
+All of these map tiles were cut
+from Google Maps Engine.
+
+87
+00:03:15,530 --> 00:03:18,710
+These are Google Map tiles
+down to level 17.
+
+88
+00:03:18,710 --> 00:03:21,960
+You get some very granular,
+street level understanding.
+
+89
+00:03:21,960 --> 00:03:23,640
+But all of this is
+coming offline.
+
+90
+00:03:23,640 --> 00:03:25,810
+So in the aftermath of these
+critical incidents, when
+
+91
+00:03:25,810 --> 00:03:27,740
+there's limited or no
+connectivity to the outside
+
+92
+00:03:27,740 --> 00:03:31,470
+world, that's really where this
+story of offline begins.
+
+93
+00:03:31,470 --> 00:03:35,920
+As we take you through today,
+that's going to kind of set
+
+94
+00:03:35,920 --> 00:03:37,930
+the expectation for what you
+should see, and what we're
+
+95
+00:03:37,930 --> 00:03:42,200
+going to show you, and how you
+can extend on these platforms.
+
+96
+00:03:42,200 --> 00:03:44,090
+You've heard some big numbers
+over the last few days from
+
+97
+00:03:44,090 --> 00:03:46,860
+folks like Brian McClendon
+and Manu Markes.
+
+98
+00:03:46,860 --> 00:03:52,100
+And they've talked to you about
+the absolute ubiquity of
+
+99
+00:03:52,100 --> 00:03:54,610
+the Google Maps and Google
+Earth platforms.
+
+100
+00:03:54,610 --> 00:03:57,720
+A billion users a week, a
+million websites out there on
+
+101
+00:03:57,720 --> 00:04:01,200
+the open internet have
+implemented the Maps API.
+
+102
+00:04:01,200 --> 00:04:03,700
+Google Maps has become the
+platform whereby people go to
+
+103
+00:04:03,700 --> 00:04:05,475
+make fast, informed decisions
+about geography.
+
+104
+00:04:05,475 --> 00:04:06,190
+Right?
+
+105
+00:04:06,190 --> 00:04:10,350
+So asset tracking, looking for
+information about where to
+
+106
+00:04:10,350 --> 00:04:13,140
+live, where to shop,
+what to buy.
+
+107
+00:04:13,140 --> 00:04:15,480
+Google Earth becomes the
+substrate, or the backdrop, by
+
+108
+00:04:15,480 --> 00:04:19,560
+which these sorts of
+engagements occur.
+
+109
+00:04:19,560 --> 00:04:21,750
+The focus of our team, and then
+the focus of the product
+
+110
+00:04:21,750 --> 00:04:24,540
+we're going to show you today,
+is really on how to extend
+
+111
+00:04:24,540 --> 00:04:27,130
+this functionality into
+situations and scenarios where
+
+112
+00:04:27,130 --> 00:04:30,250
+that connectivity to the outside
+world is unavailable
+
+113
+00:04:30,250 --> 00:04:32,780
+or is significantly degraded.
+
+114
+00:04:32,780 --> 00:04:34,910
+We talked to the emergency
+management, or emergency
+
+115
+00:04:34,910 --> 00:04:37,190
+response type scenario, but
+there are many other scenarios
+
+116
+00:04:37,190 --> 00:04:40,460
+that play a role here.
+
+117
+00:04:40,460 --> 00:04:43,400
+Paramount among them, things
+like research and outreach.
+
+118
+00:04:43,400 --> 00:04:46,750
+Things that take researchers
+and scientists to far off
+
+119
+00:04:46,750 --> 00:04:49,240
+areas of the globe where they
+just don't have connectivity
+
+120
+00:04:49,240 --> 00:04:50,550
+to the rest of the world.
+
+121
+00:04:50,550 --> 00:04:52,690
+Then there's certainly lots of
+interesting defense and public
+
+122
+00:04:52,690 --> 00:04:57,130
+safety applications for this
+sort of technology.
+
+123
+00:04:57,130 --> 00:04:58,900
+So with that, let's dive
+and talk a little
+
+124
+00:04:58,900 --> 00:05:00,760
+bit more about Portable.
+
+125
+00:05:00,760 --> 00:05:05,090
+Google Maps Engine Portable, or
+Portable, as we call it, is
+
+126
+00:05:05,090 --> 00:05:07,060
+the product that takes the
+familiarity of Google Earth
+
+127
+00:05:07,060 --> 00:05:10,360
+and Google Maps offline behind
+the firewall, deploys it on
+
+128
+00:05:10,360 --> 00:05:12,520
+your own network, on your
+own local device.
+
+129
+00:05:12,520 --> 00:05:15,080
+We have builds of Portable for
+Mac, Windows, and laptop.
+
+130
+00:05:15,080 --> 00:05:16,390
+And to be totally
+transparent--
+
+131
+00:05:16,390 --> 00:05:18,060
+I want to be very clear-- this
+is an enterprise track.
+
+132
+00:05:18,060 --> 00:05:19,660
+These are generally
+paid products.
+
+133
+00:05:19,660 --> 00:05:22,830
+Although we have a very
+robust outreach, and
+
+134
+00:05:22,830 --> 00:05:24,260
+develop for good effort.
+
+135
+00:05:24,260 --> 00:05:29,800
+If you work with an NGO, or
+you work in the nonprofit
+
+136
+00:05:29,800 --> 00:05:32,650
+space, we would love to get you
+a grant for this sort of
+
+137
+00:05:32,650 --> 00:05:35,620
+functionality so that you can
+empower your constituents with
+
+138
+00:05:35,620 --> 00:05:37,580
+this technology.
+
+139
+00:05:37,580 --> 00:05:43,730
+We're also excited to foreshadow
+some releases in
+
+140
+00:05:43,730 --> 00:05:46,940
+the months ahead, where we will
+take this capability to
+
+141
+00:05:46,940 --> 00:05:48,235
+Android tablets and
+smartphones.
+
+142
+00:05:48,235 --> 00:05:51,360
+
+143
+00:05:51,360 --> 00:05:55,830
+Portable, as it exists today,
+is a laptop application,
+
+144
+00:05:55,830 --> 00:05:57,610
+desktop application,
+which builds for
+
+145
+00:05:57,610 --> 00:06:00,560
+Mac, Linux, and Windows.
+
+146
+00:06:00,560 --> 00:06:03,350
+It scales from one to 10 users,
+so you could either run
+
+147
+00:06:03,350 --> 00:06:06,190
+the scenario locally on your
+individual machine, or sit in
+
+148
+00:06:06,190 --> 00:06:09,030
+a small tactical operations,
+or team type environment,
+
+149
+00:06:09,030 --> 00:06:10,670
+where you could share
+that experience
+
+150
+00:06:10,670 --> 00:06:12,940
+across up to 10 devices.
+
+151
+00:06:12,940 --> 00:06:15,270
+And at its essence, behind
+Portable is really just a
+
+152
+00:06:15,270 --> 00:06:16,980
+lightweight, Tornado
+web server.
+
+153
+00:06:16,980 --> 00:06:18,880
+For those of you who aren't
+familiar with Tornado, it's an
+
+154
+00:06:18,880 --> 00:06:22,160
+open sourced, kind of massively
+scalable web serving
+
+155
+00:06:22,160 --> 00:06:23,080
+application.
+
+156
+00:06:23,080 --> 00:06:25,750
+Very powerful, and it provides
+the foundation by which we
+
+157
+00:06:25,750 --> 00:06:27,000
+deliver the Portable
+functionality.
+
+158
+00:06:27,000 --> 00:06:30,610
+
+159
+00:06:30,610 --> 00:06:33,810
+As we step deeper into this
+Portable ecosystem, Portable
+
+160
+00:06:33,810 --> 00:06:38,150
+is the client software that will
+serve up a Maps on Earth
+
+161
+00:06:38,150 --> 00:06:38,910
+experience.
+
+162
+00:06:38,910 --> 00:06:41,590
+But what it serves is a portable
+cache, or as we may
+
+163
+00:06:41,590 --> 00:06:43,040
+refer to it, a cut.
+
+164
+00:06:43,040 --> 00:06:46,020
+A map or a globe that has been
+packaged and prepared for
+
+165
+00:06:46,020 --> 00:06:47,290
+offline use.
+
+166
+00:06:47,290 --> 00:06:49,590
+There's a couple ways
+right now to build
+
+167
+00:06:49,590 --> 00:06:50,930
+one of these cuts.
+
+168
+00:06:50,930 --> 00:06:52,410
+The first is with Google
+Earth Enterprise.
+
+169
+00:06:52,410 --> 00:06:54,200
+For those of you who've used
+Google Earth Enterprise, or
+
+170
+00:06:54,200 --> 00:06:56,390
+have access to Google Earth
+Enterprise, you have the
+
+171
+00:06:56,390 --> 00:07:00,790
+ability to extract a portion,
+or even the entirety of your
+
+172
+00:07:00,790 --> 00:07:05,990
+Google Earth Enterprise Maps on
+Earth experience into this
+
+173
+00:07:05,990 --> 00:07:08,490
+file format so that
+you can use it in
+
+174
+00:07:08,490 --> 00:07:10,100
+these offline settings.
+
+175
+00:07:10,100 --> 00:07:12,190
+We're also really excited to
+bring online in the next
+
+176
+00:07:12,190 --> 00:07:15,660
+couple months the capability to
+cut this rich map data out
+
+177
+00:07:15,660 --> 00:07:18,520
+of the Google Maps
+Engine enclave.
+
+178
+00:07:18,520 --> 00:07:21,600
+All of you, I'm sure, have
+heard, but we would love to
+
+179
+00:07:21,600 --> 00:07:23,540
+get to Google Maps Engine
+into your hands.
+
+180
+00:07:23,540 --> 00:07:26,080
+If you come visit us at the
+Sandbox, come visit us at the
+
+181
+00:07:26,080 --> 00:07:28,000
+booth, we'll give you
+information so that you can
+
+182
+00:07:28,000 --> 00:07:30,260
+start a free trial of the Google
+Maps Engine platform.
+
+183
+00:07:30,260 --> 00:07:32,740
+It's a very exciting way to take
+lots of imagery, terrain,
+
+184
+00:07:32,740 --> 00:07:35,920
+and vector data, process it in
+the cloud, and then very soon,
+
+185
+00:07:35,920 --> 00:07:37,880
+you'll be able to pull out
+these maps and earth
+
+186
+00:07:37,880 --> 00:07:41,130
+experiences for completely
+offline use.
+
+187
+00:07:41,130 --> 00:07:44,335
+The output of either of these
+two processes is a .GLC file.
+
+188
+00:07:44,335 --> 00:07:44,640
+Right?
+
+189
+00:07:44,640 --> 00:07:46,460
+This is your portable cut.
+
+190
+00:07:46,460 --> 00:07:49,660
+With that cut, you could do
+some interesting things.
+
+191
+00:07:49,660 --> 00:07:51,950
+But let's first dive into
+what that cut is.
+
+192
+00:07:51,950 --> 00:07:53,590
+That cut, as we call it,
+is really just a
+
+193
+00:07:53,590 --> 00:07:55,656
+single binary file.
+
+194
+00:07:55,656 --> 00:07:56,830
+It can be very large.
+
+195
+00:07:56,830 --> 00:07:57,660
+It can be very small.
+
+196
+00:07:57,660 --> 00:08:01,260
+It's really restricted only by
+the file size limitations of
+
+197
+00:08:01,260 --> 00:08:03,250
+your file system.
+
+198
+00:08:03,250 --> 00:08:06,830
+It carries the .GLC extension.
+
+199
+00:08:06,830 --> 00:08:09,160
+In the past, if you have used
+Google Earth Enterprise, you
+
+200
+00:08:09,160 --> 00:08:11,510
+may have seen a .GLM
+or .GLB file.
+
+201
+00:08:11,510 --> 00:08:13,900
+.GLC is the new, kind of
+standard wrapper that will
+
+202
+00:08:13,900 --> 00:08:17,440
+encompass all of these Portable
+caches going forward.
+
+203
+00:08:17,440 --> 00:08:21,130
+We also have the ability to
+include into this binary file
+
+204
+00:08:21,130 --> 00:08:24,390
+a custom point of interest
+search, so that it your users,
+
+205
+00:08:24,390 --> 00:08:26,950
+or your constituents, your
+stakeholders, need to search
+
+206
+00:08:26,950 --> 00:08:29,130
+against this rich corpus of
+data you're giving them
+
+207
+00:08:29,130 --> 00:08:31,360
+offline, we want to give you
+the ability to define the
+
+208
+00:08:31,360 --> 00:08:35,600
+points that they can
+search against.
+
+209
+00:08:35,600 --> 00:08:38,240
+So now that we have this cut
+that we've taken from Google
+
+210
+00:08:38,240 --> 00:08:40,760
+Earth Enterprise or Google Maps
+Engine, we can drop it
+
+211
+00:08:40,760 --> 00:08:42,669
+seamlessly into the
+Portable server.
+
+212
+00:08:42,669 --> 00:08:44,780
+And once it's on the Portable
+server, we have some really
+
+213
+00:08:44,780 --> 00:08:49,080
+interesting ways to interact and
+extend this functionality.
+
+214
+00:08:49,080 --> 00:08:51,530
+Avnish is going to dig into
+this a little deeper.
+
+215
+00:08:51,530 --> 00:08:55,360
+But at a high level, you can
+think of this as the Earth API
+
+216
+00:08:55,360 --> 00:08:57,170
+and the Maps API you're
+familiar with from the
+
+217
+00:08:57,170 --> 00:09:00,950
+consumer internet, packaged
+and deployed in a slightly
+
+218
+00:09:00,950 --> 00:09:04,150
+modified data on your
+local device.
+
+219
+00:09:04,150 --> 00:09:06,000
+You can also interact with these
+caches via the Google
+
+220
+00:09:06,000 --> 00:09:08,630
+Earth Enterprise client, that
+is to say our version of
+
+221
+00:09:08,630 --> 00:09:11,090
+Google Earth Pro that isn't
+hardwired to Google servers.
+
+222
+00:09:11,090 --> 00:09:12,640
+We'll show you some examples
+of that when we
+
+223
+00:09:12,640 --> 00:09:14,600
+jump into the demos.
+
+224
+00:09:14,600 --> 00:09:17,100
+Then of course, we have some
+interesting and evolving ways
+
+225
+00:09:17,100 --> 00:09:20,040
+for you to interact with this
+Portable Map or Earth
+
+226
+00:09:20,040 --> 00:09:24,050
+experience using Android
+devices.
+
+227
+00:09:24,050 --> 00:09:26,090
+So with that, let's talk through
+how we create one of
+
+228
+00:09:26,090 --> 00:09:28,180
+these Portable maps or globes.
+
+229
+00:09:28,180 --> 00:09:31,070
+The basic building block of
+cutting a Portable is really
+
+230
+00:09:31,070 --> 00:09:32,740
+to define your area
+of interest.
+
+231
+00:09:32,740 --> 00:09:35,070
+And that's done with
+the KML polygon.
+
+232
+00:09:35,070 --> 00:09:36,600
+It can be as simple
+or as complex a
+
+233
+00:09:36,600 --> 00:09:38,470
+polygon as you see fit.
+
+234
+00:09:38,470 --> 00:09:42,230
+It can be a single polygon, or
+it could be a multi-polygon,
+
+235
+00:09:42,230 --> 00:09:43,800
+depending on your use cases.
+
+236
+00:09:43,800 --> 00:09:47,210
+It is specified simply
+with KML.
+
+237
+00:09:47,210 --> 00:09:49,020
+Once you have specified your
+KML, you'll make some
+
+238
+00:09:49,020 --> 00:09:51,190
+decisions about how deep
+into the cuts.
+
+239
+00:09:51,190 --> 00:09:53,220
+And when I say deep, I'm talking
+about how many zoom
+
+240
+00:09:53,220 --> 00:09:56,480
+levels deep into the cut you
+will want to extract that
+
+241
+00:09:56,480 --> 00:09:59,030
+data, and then how far outside
+the cut you're going to want
+
+242
+00:09:59,030 --> 00:10:00,820
+to extract that data.
+
+243
+00:10:00,820 --> 00:10:02,650
+For those of you who aren't
+familiar with zoom levels,
+
+244
+00:10:02,650 --> 00:10:05,520
+it's the way that we take a lot
+of map data and make it
+
+245
+00:10:05,520 --> 00:10:08,770
+discoverable at different zoom
+levels with varying degrees of
+
+246
+00:10:08,770 --> 00:10:13,650
+resolution and numbers of tiles,
+based on how far in or
+
+247
+00:10:13,650 --> 00:10:15,020
+out you have zoomed
+and panned.
+
+248
+00:10:15,020 --> 00:10:19,260
+
+249
+00:10:19,260 --> 00:10:22,430
+Today, for those of you using
+Google Earth Enterprise or who
+
+250
+00:10:22,430 --> 00:10:24,410
+have access to a Google Earth
+Enterprise system, you have a
+
+251
+00:10:24,410 --> 00:10:26,300
+couple different ways to kick
+off one of these cuts.
+
+252
+00:10:26,300 --> 00:10:28,830
+The first is with a simple
+HTML5 interface.
+
+253
+00:10:28,830 --> 00:10:30,850
+That is something I'll
+show you right now.
+
+254
+00:10:30,850 --> 00:10:36,350
+
+255
+00:10:36,350 --> 00:10:38,800
+This is the cutting interface
+that will be released with
+
+256
+00:10:38,800 --> 00:10:41,550
+Google Earth Enterprise 4.5 in
+just another couple weeks.
+
+257
+00:10:41,550 --> 00:10:43,610
+Here, I'm looking at a
+two dimensional map.
+
+258
+00:10:43,610 --> 00:10:46,970
+This map has fairly low
+resolution satellite imagery
+
+259
+00:10:46,970 --> 00:10:48,430
+for the entire world.
+
+260
+00:10:48,430 --> 00:10:49,870
+Four kilometer satellite
+imagery.
+
+261
+00:10:49,870 --> 00:10:52,080
+So fairly low resolution.
+
+262
+00:10:52,080 --> 00:10:54,790
+But as I zoom and pan, you'll
+notice the map is truly a
+
+263
+00:10:54,790 --> 00:10:55,360
+Google map.
+
+264
+00:10:55,360 --> 00:10:58,020
+This looks, and feels, and
+interacts like a Google map.
+
+265
+00:10:58,020 --> 00:11:00,190
+From the cutter here, I have the
+ability to define an area
+
+266
+00:11:00,190 --> 00:11:01,120
+of interest.
+
+267
+00:11:01,120 --> 00:11:05,260
+So let's say I want to take kind
+of the Western seaboard
+
+268
+00:11:05,260 --> 00:11:10,680
+of the United States, just shy
+of the Washington border.
+
+269
+00:11:10,680 --> 00:11:13,210
+And once I've defined my polygon
+here, I can also kind
+
+270
+00:11:13,210 --> 00:11:15,960
+of redefine the points
+of interest.
+
+271
+00:11:15,960 --> 00:11:18,480
+From there, I'll have the
+ability to state a name.
+
+272
+00:11:18,480 --> 00:11:22,650
+So maybe I want to call this
+my West Coast Globe.
+
+273
+00:11:22,650 --> 00:11:24,220
+I can throw in a description.
+
+274
+00:11:24,220 --> 00:11:26,760
+As you can imagine, over time,
+you can generate a lot of
+
+275
+00:11:26,760 --> 00:11:27,875
+these cuts on your
+local machine.
+
+276
+00:11:27,875 --> 00:11:29,415
+You can generate a lot
+of these cuts that go
+
+277
+00:11:29,415 --> 00:11:30,170
+out into the field.
+
+278
+00:11:30,170 --> 00:11:32,250
+So you're going to want to be as
+descriptive as possible to
+
+279
+00:11:32,250 --> 00:11:36,580
+make sure that you capture what
+is inside of this cut.
+
+280
+00:11:36,580 --> 00:11:38,860
+Certainly here, we'll just
+make an example.
+
+281
+00:11:38,860 --> 00:11:42,360
+But you can be as verbose
+as you would like.
+
+282
+00:11:42,360 --> 00:11:45,270
+Using these pull-down menus,
+we'll decide again how deep we
+
+283
+00:11:45,270 --> 00:11:47,510
+want to cut inside the polygon,
+and how deep we want
+
+284
+00:11:47,510 --> 00:11:48,880
+to cut outside the polygon.
+
+285
+00:11:48,880 --> 00:11:50,990
+So here, I'm simply going
+to make some arbitrary
+
+286
+00:11:50,990 --> 00:11:51,920
+selections.
+
+287
+00:11:51,920 --> 00:11:54,490
+We'll say zoom level four
+for the entire world.
+
+288
+00:11:54,490 --> 00:11:56,340
+That's a very low resolution.
+
+289
+00:11:56,340 --> 00:11:58,820
+The entire world represented on
+a very few number of tiles.
+
+290
+00:11:58,820 --> 00:12:02,270
+And we'll cut to level 18
+inside the polygon.
+
+291
+00:12:02,270 --> 00:12:05,810
+That is a large number of tiles,
+down to generally about
+
+292
+00:12:05,810 --> 00:12:08,380
+one meter resolution, if we
+were talking in imagery.
+
+293
+00:12:08,380 --> 00:12:09,630
+And then we can kick
+off that cut.
+
+294
+00:12:09,630 --> 00:12:10,680
+It's an asynchronous process.
+
+295
+00:12:10,680 --> 00:12:12,750
+It kind of happens here
+in the browser window.
+
+296
+00:12:12,750 --> 00:12:14,650
+Lots of dialogue coming
+back to tell us how
+
+297
+00:12:14,650 --> 00:12:16,050
+big that cut is getting.
+
+298
+00:12:16,050 --> 00:12:18,060
+And this was a fairly small
+cut, because I had low
+
+299
+00:12:18,060 --> 00:12:19,370
+resolution imagery.
+
+300
+00:12:19,370 --> 00:12:23,090
+So it's indicated that
+the cut is complete.
+
+301
+00:12:23,090 --> 00:12:25,750
+In addition to that user
+interface, The HTML5 user
+
+302
+00:12:25,750 --> 00:12:28,160
+interface that we package with
+Google Earth Enterprise, we
+
+303
+00:12:28,160 --> 00:12:30,680
+also have command line utilities
+that would allow you
+
+304
+00:12:30,680 --> 00:12:31,960
+to script this workflow.
+
+305
+00:12:31,960 --> 00:12:33,870
+We'll dig a little deeper into
+that in a couple slides.
+
+306
+00:12:33,870 --> 00:12:36,760
+But some really exciting ways
+there to kick off cuts
+
+307
+00:12:36,760 --> 00:12:38,560
+programmatically.
+
+308
+00:12:38,560 --> 00:12:39,910
+And the neat thing here--
+
+309
+00:12:39,910 --> 00:12:42,320
+and this is kind of a departure
+from the capability
+
+310
+00:12:42,320 --> 00:12:46,710
+we've been able to offer with
+the online version of Google
+
+311
+00:12:46,710 --> 00:12:48,690
+Earth or Google Earth
+Enterprise--
+
+312
+00:12:48,690 --> 00:12:51,750
+we have the ability with
+Portable to let you offer your
+
+313
+00:12:51,750 --> 00:12:54,980
+users and your viewers up to
+five layers of imagery.
+
+314
+00:12:54,980 --> 00:12:56,750
+So I'd like to show
+you that now.
+
+315
+00:12:56,750 --> 00:12:58,710
+Here I'm logged into the Google
+
+316
+00:12:58,710 --> 00:12:59,900
+Earth Enterprise client.
+
+317
+00:12:59,900 --> 00:13:01,460
+I'm going to zip back to
+Portable, and I'm going to
+
+318
+00:13:01,460 --> 00:13:03,970
+change the Portable map that
+I'm currently serving.
+
+319
+00:13:03,970 --> 00:13:06,290
+So this is the Portable
+interface as it exists.
+
+320
+00:13:06,290 --> 00:13:08,770
+As I mentioned to you, HTML5
+interface, it looks about the
+
+321
+00:13:08,770 --> 00:13:10,590
+same on Mac, Windows,
+or Linux.
+
+322
+00:13:10,590 --> 00:13:12,220
+Here, I'm going to say that
+I want to serve up my
+
+323
+00:13:12,220 --> 00:13:14,990
+Las Vegas 3D globe.
+
+324
+00:13:14,990 --> 00:13:17,030
+Now that that's serving, I can
+jump back to the Earth
+
+325
+00:13:17,030 --> 00:13:17,970
+Enterprise client.
+
+326
+00:13:17,970 --> 00:13:20,840
+And in addition to being logged
+into Google's globe,
+
+327
+00:13:20,840 --> 00:13:22,800
+which isn't necessary, but just
+happens to be what I have
+
+328
+00:13:22,800 --> 00:13:25,350
+here, I'm going to log in to
+my local host address.
+
+329
+00:13:25,350 --> 00:13:27,440
+You'll notice in the lower left
+hand corner, I've now
+
+330
+00:13:27,440 --> 00:13:30,170
+added a second database
+that I can explore.
+
+331
+00:13:30,170 --> 00:13:33,550
+And as we zoom in, I can
+actually turn off all the
+
+332
+00:13:33,550 --> 00:13:34,980
+imagery, terrain, and vector
+data associated
+
+333
+00:13:34,980 --> 00:13:35,710
+with Google's globe.
+
+334
+00:13:35,710 --> 00:13:38,540
+So we just see this small patch
+of alpha massed imagery
+
+335
+00:13:38,540 --> 00:13:42,510
+that we cut over the
+Las Vegas strip.
+
+336
+00:13:42,510 --> 00:13:44,940
+Now you'll notice in the lower
+left hand corner, we have five
+
+337
+00:13:44,940 --> 00:13:46,580
+different imagery layers
+that represent
+
+338
+00:13:46,580 --> 00:13:48,320
+this particular scene.
+
+339
+00:13:48,320 --> 00:13:51,350
+So as a user now, I can come
+back and forth, and look at
+
+340
+00:13:51,350 --> 00:13:52,290
+these individual dates.
+
+341
+00:13:52,290 --> 00:13:54,810
+I can see what this scene
+looked like in 2010.
+
+342
+00:13:54,810 --> 00:13:56,930
+I can see what it looked
+like in 2003.
+
+343
+00:13:56,930 --> 00:13:59,510
+We've had this ability to
+support historic imagery in
+
+344
+00:13:59,510 --> 00:14:00,970
+Google Earth for a long time.
+
+345
+00:14:00,970 --> 00:14:03,380
+But Portable gives you the
+flexibility to actually use
+
+346
+00:14:03,380 --> 00:14:06,190
+the transparency slider to step
+back and forth between
+
+347
+00:14:06,190 --> 00:14:07,510
+these individual scenes.
+
+348
+00:14:07,510 --> 00:14:09,740
+So we can really look at how
+this landscape has changed
+
+349
+00:14:09,740 --> 00:14:11,610
+between any of the five imagery
+layers that are
+
+350
+00:14:11,610 --> 00:14:13,720
+denoted in lower left
+hand corner of our
+
+351
+00:14:13,720 --> 00:14:15,410
+Google Earth display.
+
+352
+00:14:15,410 --> 00:14:16,910
+Very cool way to kind
+of understand
+
+353
+00:14:16,910 --> 00:14:18,160
+that change over time.
+
+354
+00:14:18,160 --> 00:14:21,570
+
+355
+00:14:21,570 --> 00:14:23,960
+We're really excited, and we
+have a really strong team of
+
+356
+00:14:23,960 --> 00:14:27,280
+engineers working hard on the
+ability to allow cutting of
+
+357
+00:14:27,280 --> 00:14:28,930
+portables from Google
+Maps Engine.
+
+358
+00:14:28,930 --> 00:14:32,480
+So this is coming soon, a little
+bit later in 2013.
+
+359
+00:14:32,480 --> 00:14:35,090
+But in the Google Maps Engine
+interface, we'll have a
+
+360
+00:14:35,090 --> 00:14:38,260
+browser-based capability for
+you to define the polygon,
+
+361
+00:14:38,260 --> 00:14:40,730
+your point of interest, choose
+the layers you want to cut,
+
+362
+00:14:40,730 --> 00:14:42,450
+and kick off an asynchronous
+cut.
+
+363
+00:14:42,450 --> 00:14:45,230
+Take large amounts of map data,
+combine them into a
+
+364
+00:14:45,230 --> 00:14:48,360
+single binary file that you can
+pull from the cloud, and
+
+365
+00:14:48,360 --> 00:14:51,560
+serve locally on
+your machines.
+
+366
+00:14:51,560 --> 00:14:52,560
+This is working today.
+
+367
+00:14:52,560 --> 00:14:54,870
+Actually, some of the demos I'm
+showing you here, like the
+
+368
+00:14:54,870 --> 00:14:57,300
+Texas demo, was actually cut
+from Google Maps Engine.
+
+369
+00:14:57,300 --> 00:15:00,830
+Again, we're just kind of
+working on making this
+
+370
+00:15:00,830 --> 00:15:02,040
+capability more robust.
+
+371
+00:15:02,040 --> 00:15:03,730
+We're really excited to get
+it in the hands of trusted
+
+372
+00:15:03,730 --> 00:15:05,500
+testers in the next
+couple months.
+
+373
+00:15:05,500 --> 00:15:08,280
+In addition to what we're
+offering inside of the HTML5
+
+374
+00:15:08,280 --> 00:15:11,200
+interface, we also are going to
+allow programmatic access.
+
+375
+00:15:11,200 --> 00:15:14,510
+Again, you could kick off these
+cuts programmatically.
+
+376
+00:15:14,510 --> 00:15:17,470
+Our vision going forward is
+really to offer some composite
+
+377
+00:15:17,470 --> 00:15:20,000
+solutions that allow you to
+leverage both the cloud,
+
+378
+00:15:20,000 --> 00:15:24,520
+you're on-premise geospatial
+investments, and new emerging
+
+379
+00:15:24,520 --> 00:15:28,010
+form factors for devices to
+create familiar Google Earth
+
+380
+00:15:28,010 --> 00:15:30,570
+and Google Maps experiences that
+your users can interact
+
+381
+00:15:30,570 --> 00:15:31,940
+with completely offline.
+
+382
+00:15:31,940 --> 00:15:33,940
+Whether those tiles come from
+Google Earth Enterprise,
+
+383
+00:15:33,940 --> 00:15:36,950
+Google Maps Engine, maybe even
+cutting Google basemap tiles,
+
+384
+00:15:36,950 --> 00:15:39,160
+as we mature that capability,
+you should be able to
+
+385
+00:15:39,160 --> 00:15:41,960
+consolidate these individual
+cuts, and create the custom
+
+386
+00:15:41,960 --> 00:15:44,390
+map environment that your
+users need, but with the
+
+387
+00:15:44,390 --> 00:15:47,130
+familiarity that Google Earth
+and Google Maps has instilled
+
+388
+00:15:47,130 --> 00:15:48,380
+in these consumers.
+
+389
+00:15:48,380 --> 00:15:50,800
+
+390
+00:15:50,800 --> 00:15:53,840
+Right in line with this
+is this ability to cut
+
+391
+00:15:53,840 --> 00:15:54,490
+programmatically.
+
+392
+00:15:54,490 --> 00:15:56,940
+What I really like about this
+is we hearken back to that
+
+393
+00:15:56,940 --> 00:15:58,500
+disaster response scenario.
+
+394
+00:15:58,500 --> 00:16:02,130
+This gives us some really
+exciting ways to proactively
+
+395
+00:16:02,130 --> 00:16:05,500
+respond to natural disasters
+and critical incidents.
+
+396
+00:16:05,500 --> 00:16:06,890
+What do I mean by that.?
+
+397
+00:16:06,890 --> 00:16:08,740
+Well, the National Weather
+Service puts out the map you
+
+398
+00:16:08,740 --> 00:16:10,570
+see in the upper left
+hand corner.
+
+399
+00:16:10,570 --> 00:16:13,500
+24 hours a day, 365 days a year,
+they're monitoring all
+
+400
+00:16:13,500 --> 00:16:16,220
+3,141 different counties
+in the United States.
+
+401
+00:16:16,220 --> 00:16:17,820
+And they're monitoring the
+weather patterns that are
+
+402
+00:16:17,820 --> 00:16:19,920
+affecting the people inside
+of those counties.
+
+403
+00:16:19,920 --> 00:16:22,310
+They're putting out this
+large, common, alerting
+
+404
+00:16:22,310 --> 00:16:25,560
+protocol, XML, or CAP, as
+they kind of call it.
+
+405
+00:16:25,560 --> 00:16:28,140
+At every given moment, this
+thing is updated.
+
+406
+00:16:28,140 --> 00:16:30,760
+It shows which counties are
+under a flood advisory, which
+
+407
+00:16:30,760 --> 00:16:35,370
+counties are under a severe
+winter weather advisory, which
+
+408
+00:16:35,370 --> 00:16:37,350
+counties are under a
+tornado warning.
+
+409
+00:16:37,350 --> 00:16:40,880
+With this sort of rich data, and
+the programmatic access to
+
+410
+00:16:40,880 --> 00:16:43,820
+cutting that is currently
+available today in Google
+
+411
+00:16:43,820 --> 00:16:45,910
+Earth Enterprise and quickly
+becoming available in Google
+
+412
+00:16:45,910 --> 00:16:48,350
+Maps Engine, we can start
+to script some
+
+413
+00:16:48,350 --> 00:16:49,880
+really interesting solutions.
+
+414
+00:16:49,880 --> 00:16:52,960
+So for instance, the Texas demo
+I showed you earlier,
+
+415
+00:16:52,960 --> 00:16:55,290
+simply scrape through this XML,
+look for counties that
+
+416
+00:16:55,290 --> 00:16:59,470
+had progressed from a tornado
+watch to a tornado warning.
+
+417
+00:16:59,470 --> 00:17:02,700
+It then combined the geographic
+bounds for those
+
+418
+00:17:02,700 --> 00:17:05,520
+counties into a single polygon,
+passed that polygon
+
+419
+00:17:05,520 --> 00:17:08,540
+into the Google Maps Engine
+cutter, and allowed us to kick
+
+420
+00:17:08,540 --> 00:17:11,140
+off that cut programmatically
+the minute those
+
+421
+00:17:11,140 --> 00:17:12,500
+warnings were issued.
+
+422
+00:17:12,500 --> 00:17:15,150
+So to follow that chain of kind
+of thinking, that would
+
+423
+00:17:15,150 --> 00:17:19,410
+allow your organization, or
+first responders anywhere, to
+
+424
+00:17:19,410 --> 00:17:23,119
+have access to this rich,
+offline map data by the time
+
+425
+00:17:23,119 --> 00:17:24,720
+that they get the alert that
+a storm is impending.
+
+426
+00:17:24,720 --> 00:17:27,680
+
+427
+00:17:27,680 --> 00:17:30,390
+To do this, we'll just throw up
+a couple code samples that
+
+428
+00:17:30,390 --> 00:17:31,540
+would let you kind
+of dig into this.
+
+429
+00:17:31,540 --> 00:17:33,770
+But it's as simple as just using
+some Python to reach
+
+430
+00:17:33,770 --> 00:17:36,940
+out, grab that XML from the
+National Weather Service, read
+
+431
+00:17:36,940 --> 00:17:39,880
+it into your local system, parse
+through it, and then as
+
+432
+00:17:39,880 --> 00:17:42,850
+you parse through it, look
+for alerts that pass your
+
+433
+00:17:42,850 --> 00:17:43,860
+particular threshold.
+
+434
+00:17:43,860 --> 00:17:46,690
+Those warnings, those alerts,
+tornadoes, floods, whatever
+
+435
+00:17:46,690 --> 00:17:49,670
+may fit your absolute
+use case.
+
+436
+00:17:49,670 --> 00:17:52,300
+Another interesting
+implementation of this is
+
+437
+00:17:52,300 --> 00:17:55,070
+something that our colleague,
+Sean Wohltman, has put a lot
+
+438
+00:17:55,070 --> 00:17:58,340
+of passion behind for the last
+few years, and that is making
+
+439
+00:17:58,340 --> 00:18:02,650
+this data available offline in
+response to large hurricanes.
+
+440
+00:18:02,650 --> 00:18:04,900
+And so the National Weather
+Service, in conjunction with
+
+441
+00:18:04,900 --> 00:18:08,130
+the National Oceanographic and
+Atmospheric Administration,
+
+442
+00:18:08,130 --> 00:18:11,620
+puts out these cones of
+uncertainty whenever a major
+
+443
+00:18:11,620 --> 00:18:15,650
+hurricane is bound for
+the United States.
+
+444
+00:18:15,650 --> 00:18:18,820
+We can, again, follow the same
+workflow to reach out, grab
+
+445
+00:18:18,820 --> 00:18:22,620
+that data, do something with
+that polygon to convert it to
+
+446
+00:18:22,620 --> 00:18:25,760
+KML, so that we can use it
+inside the Google Maps Engine
+
+447
+00:18:25,760 --> 00:18:28,510
+or Google Earth Enterprise
+cutting infrastructure.
+
+448
+00:18:28,510 --> 00:18:31,120
+Here, this was as simple as
+just a wget to grab it.
+
+449
+00:18:31,120 --> 00:18:33,790
+We needed to unzip the zip
+file that the National
+
+450
+00:18:33,790 --> 00:18:35,990
+Oceanographic and Atmospheric
+Administration and the
+
+451
+00:18:35,990 --> 00:18:38,220
+National Weather Service had put
+out, and then just use an
+
+452
+00:18:38,220 --> 00:18:41,870
+open source vector processing
+tool, like OGR, to convert it
+
+453
+00:18:41,870 --> 00:18:43,960
+from a shape file into a KML.
+
+454
+00:18:43,960 --> 00:18:45,920
+Once we have that KML,
+we can feed it
+
+455
+00:18:45,920 --> 00:18:46,920
+into Google Maps Engine.
+
+456
+00:18:46,920 --> 00:18:48,340
+We can feed it into Google
+Earth Enterprise.
+
+457
+00:18:48,340 --> 00:18:50,510
+And we can do that
+programmatically to cut this
+
+458
+00:18:50,510 --> 00:18:52,640
+data, and make it available.
+
+459
+00:18:52,640 --> 00:18:55,030
+So now that we've set the
+foundation for what Portable
+
+460
+00:18:55,030 --> 00:18:57,110
+is, and what it can do for you,
+Avnish is going to talk
+
+461
+00:18:57,110 --> 00:18:59,670
+about how motivated and creative
+developers like
+
+462
+00:18:59,670 --> 00:19:02,060
+yourself can extend this
+functionality to do
+
+463
+00:19:02,060 --> 00:19:03,060
+interesting things in your
+
+464
+00:19:03,060 --> 00:19:05,372
+applications completely offline.
+
+465
+00:19:05,372 --> 00:19:06,622
+AVNISH BHATNAGAR:
+Thanks, Sean.
+
+466
+00:19:06,622 --> 00:19:10,850
+
+467
+00:19:10,850 --> 00:19:15,930
+So Sean has nicely described the
+workflow for cutting, and
+
+468
+00:19:15,930 --> 00:19:18,930
+creating, and serving your
+portable globes.
+
+469
+00:19:18,930 --> 00:19:21,050
+So now, let's say you've done
+all that, and now you have
+
+470
+00:19:21,050 --> 00:19:26,380
+this GLB, GLC file that's
+sitting on your hard disk.
+
+471
+00:19:26,380 --> 00:19:30,590
+It could be tens of megabytes,
+or several terabytes in size,
+
+472
+00:19:30,590 --> 00:19:33,310
+depending on your cut
+that you made.
+
+473
+00:19:33,310 --> 00:19:36,420
+Now you're interested in serving
+this out, and building
+
+474
+00:19:36,420 --> 00:19:38,880
+your applications
+on top of it.
+
+475
+00:19:38,880 --> 00:19:42,350
+Now sure, you could launch the
+Enterprise Client or the
+
+476
+00:19:42,350 --> 00:19:47,620
+Mobile Client that come out of
+the box with these products,
+
+477
+00:19:47,620 --> 00:19:49,000
+and do your globe that way.
+
+478
+00:19:49,000 --> 00:19:51,820
+But where's the fun
+in that, right?
+
+479
+00:19:51,820 --> 00:19:56,740
+You want to be able to build
+your own custom applications
+
+480
+00:19:56,740 --> 00:19:59,680
+that are targeted for your
+specific use case and
+
+481
+00:19:59,680 --> 00:20:00,740
+environment.
+
+482
+00:20:00,740 --> 00:20:01,920
+So how do you do that?
+
+483
+00:20:01,920 --> 00:20:05,680
+Well, the key is the Google
+APIs that you
+
+484
+00:20:05,680 --> 00:20:06,620
+all know and love.
+
+485
+00:20:06,620 --> 00:20:09,710
+Namely the Google Maps API,
+the Google Earth, the
+
+486
+00:20:09,710 --> 00:20:10,960
+JavaScript API.
+
+487
+00:20:10,960 --> 00:20:13,310
+
+488
+00:20:13,310 --> 00:20:17,360
+Now conveniently, we offer
+these with the product.
+
+489
+00:20:17,360 --> 00:20:22,380
+They come bundled with Google
+Earth Enterprise server, as
+
+490
+00:20:22,380 --> 00:20:25,110
+well as the Portable server.
+
+491
+00:20:25,110 --> 00:20:28,590
+They are typically kept in--
+
+492
+00:20:28,590 --> 00:20:32,630
+they align in terms of the
+version with the latest frozen
+
+493
+00:20:32,630 --> 00:20:36,530
+release that's out
+on google.com.
+
+494
+00:20:36,530 --> 00:20:40,220
+Fundamentally, the version of
+the API that comes with the
+
+495
+00:20:40,220 --> 00:20:45,980
+Portable server is the same as
+what you find on google.com
+
+496
+00:20:45,980 --> 00:20:52,040
+with respect to the events, such
+as the mouse over, click,
+
+497
+00:20:52,040 --> 00:20:53,470
+double click.
+
+498
+00:20:53,470 --> 00:20:55,260
+You have the same type
+of controls.
+
+499
+00:20:55,260 --> 00:21:00,940
+Zoom, pan, scale, plus all
+the custom controls.
+
+500
+00:21:00,940 --> 00:21:04,370
+You have overlays, such
+as symbols, markers,
+
+501
+00:21:04,370 --> 00:21:06,350
+polylines, et cetera.
+
+502
+00:21:06,350 --> 00:21:11,920
+But there are some subtle
+differences in the API that we
+
+503
+00:21:11,920 --> 00:21:14,830
+provide with the Portable server
+compared to the one
+
+504
+00:21:14,830 --> 00:21:18,080
+that you load on google.com.
+
+505
+00:21:18,080 --> 00:21:20,720
+Some of those differences
+include the way you actually
+
+506
+00:21:20,720 --> 00:21:23,460
+call and invoke those APIs.
+
+507
+00:21:23,460 --> 00:21:24,670
+Because obviously, you're
+not going to be
+
+508
+00:21:24,670 --> 00:21:26,060
+getting them from Google.
+
+509
+00:21:26,060 --> 00:21:27,950
+You're going to be getting them
+from the Portable server.
+
+510
+00:21:27,950 --> 00:21:32,020
+So they need to be loaded in
+your web page from there.
+
+511
+00:21:32,020 --> 00:21:36,980
+And there's certain classes that
+are offered to make it
+
+512
+00:21:36,980 --> 00:21:41,430
+easier to interact with the
+2D and the 3D map tiles.
+
+513
+00:21:41,430 --> 00:21:44,060
+And I'm going to talk about
+that in a moment.
+
+514
+00:21:44,060 --> 00:21:46,980
+And as you might also guess,
+there's no support for certain
+
+515
+00:21:46,980 --> 00:21:52,890
+types of services, like the
+Direction service, Panaramio,
+
+516
+00:21:52,890 --> 00:21:56,330
+Street View, et cetera, services
+that require access
+
+517
+00:21:56,330 --> 00:21:58,110
+to Google's infrastructure.
+
+518
+00:21:58,110 --> 00:22:01,160
+
+519
+00:22:01,160 --> 00:22:05,390
+So before we get into the sort
+of nitty gritty, let me review
+
+520
+00:22:05,390 --> 00:22:11,600
+the workflow for hosting
+a 2D map on Portable.
+
+521
+00:22:11,600 --> 00:22:14,730
+Typically, you're going to build
+your 2D map either in
+
+522
+00:22:14,730 --> 00:22:17,710
+Google Earth Enterprise
+Fusion, or, as Sean
+
+523
+00:22:17,710 --> 00:22:20,540
+demonstrated, in Google
+Maps Engine.
+
+524
+00:22:20,540 --> 00:22:24,340
+You're going to choose the
+layers of interest, your
+
+525
+00:22:24,340 --> 00:22:28,400
+imagery, your vector layers,
+possibly some terrain.
+
+526
+00:22:28,400 --> 00:22:30,980
+At that point, you're going
+to publish that 2D map.
+
+527
+00:22:30,980 --> 00:22:34,970
+In the case of GME, that's just
+a matter of one click,
+
+528
+00:22:34,970 --> 00:22:37,780
+and making it available to
+the folks that you share.
+
+529
+00:22:37,780 --> 00:22:40,930
+And in the case of Fusion, you
+would typically publish it to
+
+530
+00:22:40,930 --> 00:22:43,100
+an Earth Enterprise server.
+
+531
+00:22:43,100 --> 00:22:50,380
+At that point, you're going
+to cut a piece of that map
+
+532
+00:22:50,380 --> 00:22:54,080
+corresponding to the region of
+interest, exactly the way Sean
+
+533
+00:22:54,080 --> 00:22:55,370
+demonstrated.
+
+534
+00:22:55,370 --> 00:22:58,540
+The output of that is going
+to be that GLC file.
+
+535
+00:22:58,540 --> 00:23:01,140
+At that point, you're going to
+start serving that GLC file to
+
+536
+00:23:01,140 --> 00:23:04,590
+the Portable server, and then
+you can start building your
+
+537
+00:23:04,590 --> 00:23:09,635
+custom HTML applications that
+load the JavaScript API.
+
+538
+00:23:09,635 --> 00:23:12,910
+
+539
+00:23:12,910 --> 00:23:18,440
+What I'd like to do now, I have
+here a little USB memory
+
+540
+00:23:18,440 --> 00:23:23,770
+stick that contains a GLC file
+from a globe that I published
+
+541
+00:23:23,770 --> 00:23:25,470
+from Google Earth Enterprise.
+
+542
+00:23:25,470 --> 00:23:29,030
+It's a relatively small one.
+
+543
+00:23:29,030 --> 00:23:33,360
+A few hundred megabytes from a
+sample, natural view globe
+
+544
+00:23:33,360 --> 00:23:35,180
+that I had created.
+
+545
+00:23:35,180 --> 00:23:40,090
+It's just got the base imagery
+layer, and maybe one or two
+
+546
+00:23:40,090 --> 00:23:41,340
+vector layers.
+
+547
+00:23:41,340 --> 00:23:44,120
+
+548
+00:23:44,120 --> 00:23:46,990
+According to the blue box, I had
+built that globe of mine
+
+549
+00:23:46,990 --> 00:23:51,180
+in Fusion, and then I published
+it to my Earth
+
+550
+00:23:51,180 --> 00:23:55,360
+Enterprise Server, the red box,
+and then I cut it using
+
+551
+00:23:55,360 --> 00:23:59,130
+the Portable cutter UI.
+
+552
+00:23:59,130 --> 00:24:03,560
+So what I'm going to do
+now is insert this
+
+553
+00:24:03,560 --> 00:24:09,140
+USB disk on my laptop.
+
+554
+00:24:09,140 --> 00:24:10,780
+And before doing that,
+I'm going to go
+
+555
+00:24:10,780 --> 00:24:15,960
+completely off the grid.
+
+556
+00:24:15,960 --> 00:24:17,345
+Turn off Wi-Fi here.
+
+557
+00:24:17,345 --> 00:24:21,140
+
+558
+00:24:21,140 --> 00:24:23,290
+It was like one of those corny
+moments in a movie where they
+
+559
+00:24:23,290 --> 00:24:25,640
+use the title of the movie
+in the actual dialogue.
+
+560
+00:24:25,640 --> 00:24:27,750
+I said off the grid.
+
+561
+00:24:27,750 --> 00:24:29,000
+I like it.
+
+562
+00:24:29,000 --> 00:24:36,600
+
+563
+00:24:36,600 --> 00:24:42,570
+So I fire up my natural view,
+US Portable globe, which
+
+564
+00:24:42,570 --> 00:24:44,920
+automatically by double clicking
+it, kicks off the
+
+565
+00:24:44,920 --> 00:24:46,660
+Portable server that
+I have running here
+
+566
+00:24:46,660 --> 00:24:50,360
+on my Windows laptop.
+
+567
+00:24:50,360 --> 00:24:53,350
+I click on View the
+Map in a Browser.
+
+568
+00:24:53,350 --> 00:24:55,980
+It shows me a preview,
+essentially,
+
+569
+00:24:55,980 --> 00:24:58,820
+of the globe I created.
+
+570
+00:24:58,820 --> 00:25:02,480
+Now, if you look at the URL
+here, at this point, this map,
+
+571
+00:25:02,480 --> 00:25:06,870
+this globe is being served
+from my Windows
+
+572
+00:25:06,870 --> 00:25:09,280
+machine on Port 9335.
+
+573
+00:25:09,280 --> 00:25:11,470
+So at this point, I can
+start interacting
+
+574
+00:25:11,470 --> 00:25:14,980
+with this globe directly.
+
+575
+00:25:14,980 --> 00:25:17,940
+So I have a little Hello World
+example that I'm going to go
+
+576
+00:25:17,940 --> 00:25:20,145
+over, that I'm going
+to load here.
+
+577
+00:25:20,145 --> 00:25:26,360
+
+578
+00:25:26,360 --> 00:25:29,560
+And let's take a look at the
+source code for this.
+
+579
+00:25:29,560 --> 00:25:38,680
+
+580
+00:25:38,680 --> 00:25:42,600
+These three lines here is where
+I actually load the
+
+581
+00:25:42,600 --> 00:25:48,710
+Google Maps API that's on
+my Portable server.
+
+582
+00:25:48,710 --> 00:25:55,350
+After the bootstrap loader,
+the fusion_maps_v3 and the
+
+583
+00:25:55,350 --> 00:25:59,380
+other JavaScript helper file
+essentially load the entire
+
+584
+00:25:59,380 --> 00:26:03,710
+Google Maps API into
+this application.
+
+585
+00:26:03,710 --> 00:26:07,140
+So that's one of the
+differences.
+
+586
+00:26:07,140 --> 00:26:12,500
+Then down here, you'll note
+the use the class called
+
+587
+00:26:12,500 --> 00:26:15,090
+GFusionMap, which is--
+
+588
+00:26:15,090 --> 00:26:17,220
+you can think of it as
+an extension of the
+
+589
+00:26:17,220 --> 00:26:18,470
+google.maps.mapclass.
+
+590
+00:26:18,470 --> 00:26:20,800
+
+591
+00:26:20,800 --> 00:26:24,750
+And it's what you need to
+instantiate in order to create
+
+592
+00:26:24,750 --> 00:26:29,580
+your 2D map in your HTML
+container, which is typically
+
+593
+00:26:29,580 --> 00:26:31,520
+a development.
+
+594
+00:26:31,520 --> 00:26:36,180
+This class accepts the same
+options as google.maps.map,
+
+595
+00:26:36,180 --> 00:26:40,270
+and can be used in
+the same way.
+
+596
+00:26:40,270 --> 00:26:41,386
+And that's it.
+
+597
+00:26:41,386 --> 00:26:46,020
+That's all you need to do to
+load 2D map in this simple
+
+598
+00:26:46,020 --> 00:26:47,270
+Hello World application.
+
+599
+00:26:47,270 --> 00:26:50,310
+
+600
+00:26:50,310 --> 00:26:54,050
+Let's look at, maybe,
+a few more examples.
+
+601
+00:26:54,050 --> 00:26:59,570
+I have one that loads some
+symbols and polylines.
+
+602
+00:26:59,570 --> 00:27:07,610
+
+603
+00:27:07,610 --> 00:27:13,800
+Now, here what I'm displaying is
+certain markers that can be
+
+604
+00:27:13,800 --> 00:27:16,400
+used to decorate not
+just points, but
+
+605
+00:27:16,400 --> 00:27:19,470
+polylines, as well.
+
+606
+00:27:19,470 --> 00:27:22,790
+It's making use of the
+visualization features of the
+
+607
+00:27:22,790 --> 00:27:24,350
+Google Maps API.
+
+608
+00:27:24,350 --> 00:27:29,770
+But you'll note this math is
+completely interactive.
+
+609
+00:27:29,770 --> 00:27:32,640
+In other words, I interact with
+this map in the same way
+
+610
+00:27:32,640 --> 00:27:36,120
+that I would any Google map.
+
+611
+00:27:36,120 --> 00:27:39,410
+This was the area that I cut
+in the San Francisco.
+
+612
+00:27:39,410 --> 00:27:41,670
+The area outside
+of it is, well,
+
+613
+00:27:41,670 --> 00:27:43,250
+outside of my cut region.
+
+614
+00:27:43,250 --> 00:27:48,180
+But I can zoom in to the highest
+resolution that was in
+
+615
+00:27:48,180 --> 00:27:49,485
+my original basemap.
+
+616
+00:27:49,485 --> 00:27:53,710
+
+617
+00:27:53,710 --> 00:27:57,180
+And I can zoom, pan, scale,
+all that good stuff.
+
+618
+00:27:57,180 --> 00:28:02,080
+
+619
+00:28:02,080 --> 00:28:04,335
+Again, this is running
+completely offline.
+
+620
+00:28:04,335 --> 00:28:06,480
+Let's have a look at
+another example.
+
+621
+00:28:06,480 --> 00:28:07,735
+Perhaps a heat map.
+
+622
+00:28:07,735 --> 00:28:14,000
+
+623
+00:28:14,000 --> 00:28:18,780
+This is showing a time-based
+based animation of the
+
+624
+00:28:18,780 --> 00:28:24,810
+expansion of Walmart stores
+since the 1960s until now.
+
+625
+00:28:24,810 --> 00:28:28,100
+You can, again, use the
+visualization capabilities in
+
+626
+00:28:28,100 --> 00:28:31,770
+the Google Maps API, varying
+the intensity and the color
+
+627
+00:28:31,770 --> 00:28:33,990
+spectrum of the heat map.
+
+628
+00:28:33,990 --> 00:28:39,690
+And as before, I can interact
+with this just as with any
+
+629
+00:28:39,690 --> 00:28:43,400
+other Google map.
+
+630
+00:28:43,400 --> 00:28:46,230
+I believe I have one other
+example here to show
+
+631
+00:28:46,230 --> 00:28:48,910
+SEAN MADAY: These are the same
+visualization demonstrations
+
+632
+00:28:48,910 --> 00:28:50,980
+and code examples you'll
+find online using
+
+633
+00:28:50,980 --> 00:28:52,250
+public the Maps API.
+
+634
+00:28:52,250 --> 00:28:54,530
+The power here, of course, is
+that it's all running off of
+
+635
+00:28:54,530 --> 00:28:57,560
+Avnish's local machine via
+that local host URL.
+
+636
+00:28:57,560 --> 00:28:58,810
+AVNISH BHATNAGAR: Right.
+
+637
+00:28:58,810 --> 00:29:01,560
+
+638
+00:29:01,560 --> 00:29:04,580
+Again, this is another
+time-based based animation
+
+639
+00:29:04,580 --> 00:29:09,378
+showing the expansion of
+these Walmart stores.
+
+640
+00:29:09,378 --> 00:29:11,310
+SEAN MADAY: Our goal with these
+demonstrations and code
+
+641
+00:29:11,310 --> 00:29:12,750
+samples is really to highlight
+to you the
+
+642
+00:29:12,750 --> 00:29:14,000
+flexibility of this platform.
+
+643
+00:29:14,000 --> 00:29:20,652
+
+644
+00:29:20,652 --> 00:29:23,440
+AVNISH BHATNAGAR: And this is
+against my base map that I had
+
+645
+00:29:23,440 --> 00:29:27,100
+cut, and it's all being
+served out of this USB
+
+646
+00:29:27,100 --> 00:29:30,895
+drive that I have here.
+
+647
+00:29:30,895 --> 00:29:32,145
+Let's go back.
+
+648
+00:29:32,145 --> 00:29:41,020
+
+649
+00:29:41,020 --> 00:29:43,250
+I guess I got to get back
+online to resume the
+
+650
+00:29:43,250 --> 00:29:44,500
+presentation.
+
+651
+00:29:44,500 --> 00:29:49,150
+
+652
+00:29:49,150 --> 00:29:50,290
+SEAN MADAY: We can use mine.
+
+653
+00:29:50,290 --> 00:29:52,180
+Here you go.
+
+654
+00:29:52,180 --> 00:29:53,190
+I got mine on.
+
+655
+00:29:53,190 --> 00:29:54,200
+AVNISH BHATNAGAR: OK, thanks.
+
+656
+00:29:54,200 --> 00:29:56,515
+SEAN MADAY: Yep.
+
+657
+00:29:56,515 --> 00:29:59,065
+AVNISH BHATNAGAR: So in that
+Hello World example that I
+
+658
+00:29:59,065 --> 00:30:02,140
+just showed you, I've
+highlighted the lines here
+
+659
+00:30:02,140 --> 00:30:06,080
+that would be needed to load
+the JavaScript API off the
+
+660
+00:30:06,080 --> 00:30:10,020
+Portable server instead
+of from google.com.
+
+661
+00:30:10,020 --> 00:30:13,550
+And again, you want to pay close
+attention to the use of
+
+662
+00:30:13,550 --> 00:30:20,044
+this GFusionMap, which is what
+you would need to instantiate.
+
+663
+00:30:20,044 --> 00:30:21,600
+SEAN MADAY: All these
+slides will be made
+
+664
+00:30:21,600 --> 00:30:22,680
+available after the talk.
+
+665
+00:30:22,680 --> 00:30:25,140
+So again, these code samples
+aren't meant to be eye charts.
+
+666
+00:30:25,140 --> 00:30:27,050
+We want to leave these with you
+as a resource that you can
+
+667
+00:30:27,050 --> 00:30:27,760
+reference later.
+
+668
+00:30:27,760 --> 00:30:29,220
+AVNISH BHATNAGAR: Right.
+
+669
+00:30:29,220 --> 00:30:35,140
+And very analogous to the 2D
+maps, we offer the 3D map API,
+
+670
+00:30:35,140 --> 00:30:38,210
+which is a Google Earth API.
+
+671
+00:30:38,210 --> 00:30:42,620
+It also is supported through
+the use of the Google Earth
+
+672
+00:30:42,620 --> 00:30:45,210
+plug-in, which runs on
+Windows and Mac.
+
+673
+00:30:45,210 --> 00:30:50,320
+And that API includes all the
+capabilities that you're
+
+674
+00:30:50,320 --> 00:30:53,460
+probably familiar with from
+placemarks, to balloons, and
+
+675
+00:30:53,460 --> 00:30:55,890
+historic imagery, et cetera.
+
+676
+00:30:55,890 --> 00:30:59,100
+In addition, it offers the
+capability to connect to
+
+677
+00:30:59,100 --> 00:31:01,530
+multiple globes.
+
+678
+00:31:01,530 --> 00:31:08,130
+So this is a snippet of a Hello
+World example for 3D.
+
+679
+00:31:08,130 --> 00:31:11,530
+Again, you're going to load the
+JavaScript API from the
+
+680
+00:31:11,530 --> 00:31:13,990
+Portable server locally.
+
+681
+00:31:13,990 --> 00:31:17,030
+That's what the script
+typeline is.
+
+682
+00:31:17,030 --> 00:31:19,570
+In the
+google.earth.createinstance
+
+683
+00:31:19,570 --> 00:31:24,800
+call, there's a fourth
+parameter, which is the URL of
+
+684
+00:31:24,800 --> 00:31:27,140
+the database that you're
+connecting to.
+
+685
+00:31:27,140 --> 00:31:31,450
+An alternative database, other
+than Google's default one.
+
+686
+00:31:31,450 --> 00:31:34,260
+And in this case, I'm pointing
+back to my local machine
+
+687
+00:31:34,260 --> 00:31:37,960
+because my portable server
+is running on Port 9335.
+
+688
+00:31:37,960 --> 00:31:40,930
+Other than that; you
+use the Earth API
+
+689
+00:31:40,930 --> 00:31:42,180
+exactly the same way.
+
+690
+00:31:42,180 --> 00:31:46,090
+
+691
+00:31:46,090 --> 00:31:50,640
+So its sensibility doesn't
+just end with the Maps
+
+692
+00:31:50,640 --> 00:31:52,240
+and the Earth API.
+
+693
+00:31:52,240 --> 00:31:56,050
+It can be leveraged through
+Python, as well.
+
+694
+00:31:56,050 --> 00:31:58,990
+And Sean is going to speak
+about them now.
+
+695
+00:31:58,990 --> 00:32:01,660
+SEAN MADAY: As I mentioned to
+you, the basis of laptop
+
+696
+00:32:01,660 --> 00:32:04,700
+Portable is really the open
+source Tornado web server.
+
+697
+00:32:04,700 --> 00:32:09,930
+Inherent in that, and packaged
+in that, is the most current
+
+698
+00:32:09,930 --> 00:32:11,630
+release of Python.
+
+699
+00:32:11,630 --> 00:32:16,210
+So we're providing you APIs and
+tools that allow you to
+
+700
+00:32:16,210 --> 00:32:19,460
+leverage that Python inside of
+your offline applications to
+
+701
+00:32:19,460 --> 00:32:22,370
+interact with the Google Earth
+or Google Maps offline
+
+702
+00:32:22,370 --> 00:32:24,100
+environments.
+
+703
+00:32:24,100 --> 00:32:26,800
+So you can imagine this as a
+framework for adding extension
+
+704
+00:32:26,800 --> 00:32:30,540
+services on top of the Google
+Earth and Google Maps portable
+
+705
+00:32:30,540 --> 00:32:34,400
+experiences that you get as
+a baseline with Portable.
+
+706
+00:32:34,400 --> 00:32:36,060
+You can execute Python
+scripts.
+
+707
+00:32:36,060 --> 00:32:38,910
+You can install standard
+Python libraries.
+
+708
+00:32:38,910 --> 00:32:42,040
+You can engage in some
+interesting interaction
+
+709
+00:32:42,040 --> 00:32:45,520
+between the Maps environment and
+the type of backend system
+
+710
+00:32:45,520 --> 00:32:47,410
+that would normally be reserved
+for a web server.
+
+711
+00:32:47,410 --> 00:32:47,660
+Right?
+
+712
+00:32:47,660 --> 00:32:50,400
+So as you can see in the chart
+here, you could grab
+
+713
+00:32:50,400 --> 00:32:52,550
+view-based parameters from
+either Google Earth or Google
+
+714
+00:32:52,550 --> 00:32:56,440
+Maps, grab those click-based
+events from the Google Maps
+
+715
+00:32:56,440 --> 00:32:58,730
+environment, pass those to
+this Python engine, do
+
+716
+00:32:58,730 --> 00:33:00,790
+something interesting with
+them, and return those
+
+717
+00:33:00,790 --> 00:33:04,120
+responses as either JSON or KML,
+depending on if you're
+
+718
+00:33:04,120 --> 00:33:06,720
+using Google Earth
+or Google Maps.
+
+719
+00:33:06,720 --> 00:33:08,610
+So one example of that-- and
+just two code snippets.
+
+720
+00:33:08,610 --> 00:33:10,960
+Again, don't expect you to read
+these, but want to make
+
+721
+00:33:10,960 --> 00:33:13,400
+sure that we provide them in the
+slide so you can reference
+
+722
+00:33:13,400 --> 00:33:14,760
+them after the talk.
+
+723
+00:33:14,760 --> 00:33:17,400
+First is just creating a network
+link, and specifying
+
+724
+00:33:17,400 --> 00:33:20,930
+which parameters from that
+network link should be passed
+
+725
+00:33:20,930 --> 00:33:24,290
+back from the Google Earth
+environment back
+
+726
+00:33:24,290 --> 00:33:27,750
+to the Python server.
+
+727
+00:33:27,750 --> 00:33:32,980
+Then a couple lines of Python
+here to grab those parameters
+
+728
+00:33:32,980 --> 00:33:35,660
+from the URL, do something with
+them, and then return
+
+729
+00:33:35,660 --> 00:33:37,640
+that experience as KML.
+
+730
+00:33:37,640 --> 00:33:39,200
+Let me show you an example
+of that here.
+
+731
+00:33:39,200 --> 00:33:40,260
+I'm back in Google Earth.
+
+732
+00:33:40,260 --> 00:33:43,760
+I'll turn back on some of our
+Google's offline imagery.
+
+733
+00:33:43,760 --> 00:33:45,730
+Now, as I zoom and pan here,
+you'll notice I have this
+
+734
+00:33:45,730 --> 00:33:47,880
+network link on the left side.
+
+735
+00:33:47,880 --> 00:33:50,130
+This is pointing back to a local
+service running on my
+
+736
+00:33:50,130 --> 00:33:51,480
+local host address here.
+
+737
+00:33:51,480 --> 00:33:54,780
+So local host 9235, and
+the extension service.
+
+738
+00:33:54,780 --> 00:33:57,680
+All the service is really doing
+is taking the center
+
+739
+00:33:57,680 --> 00:33:59,700
+point for the screen, or just
+about the center point for a
+
+740
+00:33:59,700 --> 00:34:04,250
+screen, based on terrain, and
+returning it to me as a KML.
+
+741
+00:34:04,250 --> 00:34:06,790
+This interaction is the type of
+interaction you'd expect to
+
+742
+00:34:06,790 --> 00:34:10,120
+see with a KML network link in
+a backend web server on the
+
+743
+00:34:10,120 --> 00:34:12,060
+internet, or on your
+local network.
+
+744
+00:34:12,060 --> 00:34:14,989
+Here, all of this KML is being
+generated on the fly by that
+
+745
+00:34:14,989 --> 00:34:16,760
+Python engine running
+with Portable.
+
+746
+00:34:16,760 --> 00:34:19,750
+So a very simple Hello
+World-type demonstration.
+
+747
+00:34:19,750 --> 00:34:23,040
+Our goal today was really just
+to show you this platform and
+
+748
+00:34:23,040 --> 00:34:27,500
+this product, to let you know
+that our team is working very
+
+749
+00:34:27,500 --> 00:34:30,739
+intently on taking the
+capabilities of Google Earth
+
+750
+00:34:30,739 --> 00:34:33,409
+and Google Maps from the
+online cloud-based
+
+751
+00:34:33,409 --> 00:34:36,370
+environments down to those
+tactical scenarios where
+
+752
+00:34:36,370 --> 00:34:39,340
+internet connectivity is
+degraded or unavailable.
+
+753
+00:34:39,340 --> 00:34:41,750
+We're really looking to your
+creativity, and your technical
+
+754
+00:34:41,750 --> 00:34:44,900
+expertise, to take this
+platform, build it out in
+
+755
+00:34:44,900 --> 00:34:47,760
+interesting ways, integrate it
+with your offline applications
+
+756
+00:34:47,760 --> 00:34:50,650
+for your constituents and
+stakeholders, and take this
+
+757
+00:34:50,650 --> 00:34:53,460
+ecosystem forward.
+
+758
+00:34:53,460 --> 00:34:55,620
+With that, we're just about
+to wrap up here.
+
+759
+00:34:55,620 --> 00:34:58,850
+I would like to just say that
+I'm very fortunate that I get
+
+760
+00:34:58,850 --> 00:35:00,410
+to be the product
+manager for this
+
+761
+00:35:00,410 --> 00:35:01,300
+awesome suite of products.
+
+762
+00:35:01,300 --> 00:35:02,880
+I get to come out and
+present to you.
+
+763
+00:35:02,880 --> 00:35:05,270
+But I'd be remiss if I passed on
+this opportunity to really
+
+764
+00:35:05,270 --> 00:35:07,460
+thank the awesome team of
+engineers we have back in
+
+765
+00:35:07,460 --> 00:35:11,470
+Mountain View, and abroad, who
+are doing really impressive
+
+766
+00:35:11,470 --> 00:35:14,810
+things at Google scale to take
+the world's geospatial data,
+
+767
+00:35:14,810 --> 00:35:18,050
+make it consumable online and
+offline for your use.
+
+768
+00:35:18,050 --> 00:35:19,620
+With that, we have about
+four and 1/2 minutes.
+
+769
+00:35:19,620 --> 00:35:24,660
+We would love to entertain any
+questions you might have Sir,
+
+770
+00:35:24,660 --> 00:35:26,240
+in the back of the room, you
+want to come use the mic so we
+
+771
+00:35:26,240 --> 00:35:27,490
+can capture it for the video?
+
+772
+00:35:27,490 --> 00:35:34,410
+
+773
+00:35:34,410 --> 00:35:34,860
+Thank you.
+
+774
+00:35:34,860 --> 00:35:37,140
+Sorry to make you walk
+across the room.
+
+775
+00:35:37,140 --> 00:35:38,530
+So now can you go use
+that microphone?
+
+776
+00:35:38,530 --> 00:35:39,362
+No.
+
+777
+00:35:39,362 --> 00:35:42,260
+AUDIENCE: So big use case
+here is data capture.
+
+778
+00:35:42,260 --> 00:35:44,500
+How are we doing with capturing
+data then uploading
+
+779
+00:35:44,500 --> 00:35:46,525
+it back to Google Maps Engine?
+
+780
+00:35:46,525 --> 00:35:46,970
+SEAN MADAY: Yeah.
+
+781
+00:35:46,970 --> 00:35:47,530
+Great question.
+
+782
+00:35:47,530 --> 00:35:50,490
+So we view this as the offline
+product that gives you the
+
+783
+00:35:50,490 --> 00:35:52,030
+view-only capability.
+
+784
+00:35:52,030 --> 00:35:54,700
+Then what we can envision are
+some interesting ways that you
+
+785
+00:35:54,700 --> 00:35:58,530
+could use local storage, either
+through the HTML5 spec,
+
+786
+00:35:58,530 --> 00:36:03,100
+or possibly with that Python
+engine, you could do some
+
+787
+00:36:03,100 --> 00:36:05,250
+local writing to the device.
+
+788
+00:36:05,250 --> 00:36:07,240
+Handle that field data
+collection piece, and then
+
+789
+00:36:07,240 --> 00:36:10,280
+sync that back up via the Google
+Maps Engine API, which
+
+790
+00:36:10,280 --> 00:36:12,460
+was just announced and released
+last week, and then
+
+791
+00:36:12,460 --> 00:36:14,110
+kind of reiterated yesterday.
+
+792
+00:36:14,110 --> 00:36:16,750
+A full vector API for Google
+Maps Engine that allows you to
+
+793
+00:36:16,750 --> 00:36:19,190
+write points, lines,
+and polygons.
+
+794
+00:36:19,190 --> 00:36:20,100
+So the pieces are there.
+
+795
+00:36:20,100 --> 00:36:22,220
+I think that's really where
+the developers come in.
+
+796
+00:36:22,220 --> 00:36:24,760
+We like to think of ourselves
+as a platform company.
+
+797
+00:36:24,760 --> 00:36:26,150
+We like to provide the
+platforms and the
+
+798
+00:36:26,150 --> 00:36:29,050
+capabilities, and then we rely
+on you all and your expertise
+
+799
+00:36:29,050 --> 00:36:31,560
+to make this relevant in your
+individual vertical markets.
+
+800
+00:36:31,560 --> 00:36:33,020
+AUDIENCE: Just a quick
+extension.
+
+801
+00:36:33,020 --> 00:36:37,970
+So there's no thoughts about
+sort of editing on--
+
+802
+00:36:37,970 --> 00:36:41,120
+well, I guess wouldn't be on the
+fly-- but stopping merge
+
+803
+00:36:41,120 --> 00:36:42,640
+issues, and that
+kind of stuff?
+
+804
+00:36:42,640 --> 00:36:45,380
+SEAN MADAY: So the Google Maps
+Engine API handles some of
+
+805
+00:36:45,380 --> 00:36:46,260
+that version control.
+
+806
+00:36:46,260 --> 00:36:48,060
+Then some of that is on their
+roadmap for how they're going
+
+807
+00:36:48,060 --> 00:36:50,270
+to handle and deconflict.
+
+808
+00:36:50,270 --> 00:36:54,230
+Again, what's really exciting
+at Google is we tackle these
+
+809
+00:36:54,230 --> 00:36:56,420
+massive scale problems.
+
+810
+00:36:56,420 --> 00:37:00,040
+The underlying infrastructure
+for the Google Maps Engine API
+
+811
+00:37:00,040 --> 00:37:02,670
+is a really impressive piece of
+technology called Spanner.
+
+812
+00:37:02,670 --> 00:37:04,060
+There's a great white
+paper on the open
+
+813
+00:37:04,060 --> 00:37:04,990
+internet about Spanner.
+
+814
+00:37:04,990 --> 00:37:06,430
+Check it out.
+
+815
+00:37:06,430 --> 00:37:12,440
+It really handles all of these
+conflicting edits in a very
+
+816
+00:37:12,440 --> 00:37:14,630
+elegant way, and does really
+interesting things at a kind
+
+817
+00:37:14,630 --> 00:37:16,160
+of a global database scale.
+
+818
+00:37:16,160 --> 00:37:17,850
+So definitely check that out.
+
+819
+00:37:17,850 --> 00:37:21,510
+And the integration of the
+Google Maps Engine API with
+
+820
+00:37:21,510 --> 00:37:23,910
+the offline capabilities of
+Portable is exactly the type
+
+821
+00:37:23,910 --> 00:37:27,230
+of thing we're intent on helping
+develop, and helping
+
+822
+00:37:27,230 --> 00:37:28,840
+move forward in this
+ecosystem.
+
+823
+00:37:28,840 --> 00:37:29,650
+AUDIENCE: Thanks very much.
+
+824
+00:37:29,650 --> 00:37:31,340
+SEAN MADAY: Thank you.
+
+825
+00:37:31,340 --> 00:37:35,540
+AUDIENCE: I have a question
+about the new JavaScript API
+
+826
+00:37:35,540 --> 00:37:38,610
+that's probably coming
+out for Google Maps.
+
+827
+00:37:38,610 --> 00:37:41,410
+The preview functionality that
+we saw, and it kind of brings
+
+828
+00:37:41,410 --> 00:37:45,930
+a three dimensional aspects
+to a lot of the Maps API.
+
+829
+00:37:45,930 --> 00:37:48,880
+For Portable, will it also get
+that same functionality at the
+
+830
+00:37:48,880 --> 00:37:51,840
+same time as the preview gets
+rolled out to become
+
+831
+00:37:51,840 --> 00:37:52,600
+mainstream?
+
+832
+00:37:52,600 --> 00:37:54,730
+SEAN MADAY: Interesting
+question.
+
+833
+00:37:54,730 --> 00:37:57,650
+Interesting way to phrase
+the question.
+
+834
+00:37:57,650 --> 00:37:59,520
+As you can imagine,
+we are kind of an
+
+835
+00:37:59,520 --> 00:38:00,510
+API-driven company, right?
+
+836
+00:38:00,510 --> 00:38:02,190
+So don't have any announcements
+to make, but
+
+837
+00:38:02,190 --> 00:38:04,260
+we're very focused on how we can
+allow you all, and empower
+
+838
+00:38:04,260 --> 00:38:05,690
+you all, to build on
+these platforms.
+
+839
+00:38:05,690 --> 00:38:08,160
+What you saw the other day with
+the new Google Maps is
+
+840
+00:38:08,160 --> 00:38:11,310
+really kind of a cutting edge,
+immersive experience that
+
+841
+00:38:11,310 --> 00:38:12,870
+still needs some assurance.
+
+842
+00:38:12,870 --> 00:38:14,150
+Still needs to grow
+a little bit.
+
+843
+00:38:14,150 --> 00:38:16,900
+As that does, as there's more
+functionality and capability
+
+844
+00:38:16,900 --> 00:38:21,730
+added there, we're very focused
+on and taking the best
+
+845
+00:38:21,730 --> 00:38:23,330
+and brightest of that technology
+and making it
+
+846
+00:38:23,330 --> 00:38:24,360
+available offline.
+
+847
+00:38:24,360 --> 00:38:28,750
+But today, Google Maps Engine
+Portable, and what we're doing
+
+848
+00:38:28,750 --> 00:38:31,890
+with offline, is really focused
+on that consumer Maps
+
+849
+00:38:31,890 --> 00:38:33,940
+and Earth experience that users
+have been accustomed to
+
+850
+00:38:33,940 --> 00:38:34,970
+for the last two years.
+
+851
+00:38:34,970 --> 00:38:37,660
+Those are the platforms that,
+today, consumers are using to
+
+852
+00:38:37,660 --> 00:38:41,120
+make fast, informed decisions
+about geography.
+
+853
+00:38:41,120 --> 00:38:42,680
+AUDIENCE: Thank you.
+
+854
+00:38:42,680 --> 00:38:43,700
+SEAN MADAY: Thank you.
+
+855
+00:38:43,700 --> 00:38:44,830
+AUDIENCE: OK,.
+
+856
+00:38:44,830 --> 00:38:47,430
+I would like to know with the
+Google Maps Portable, so we
+
+857
+00:38:47,430 --> 00:38:51,770
+can craft a Google Maps online
+to an offline basis, and also
+
+858
+00:38:51,770 --> 00:38:57,060
+allow for some of the Maps API
+that do not need to have
+
+859
+00:38:57,060 --> 00:38:57,720
+internet access.
+
+860
+00:38:57,720 --> 00:38:59,930
+Am I correct?
+
+861
+00:38:59,930 --> 00:39:01,480
+SEAN MADAY: It's a great point,
+and a great point of
+
+862
+00:39:01,480 --> 00:39:03,820
+clarification I'm glad
+you brought up.
+
+863
+00:39:03,820 --> 00:39:06,120
+In the public version of Google
+Earth, for instance,
+
+864
+00:39:06,120 --> 00:39:07,980
+you're seeing lots of different
+imagery that Google
+
+865
+00:39:07,980 --> 00:39:10,570
+has acquired from a variety of
+different imagery providers.
+
+866
+00:39:10,570 --> 00:39:14,220
+And we commingle and mix a lot
+of those pixels to provide a
+
+867
+00:39:14,220 --> 00:39:16,380
+really cohesive visualization
+experience.
+
+868
+00:39:16,380 --> 00:39:20,040
+We don't expect to release the
+ability to cut from Google's
+
+869
+00:39:20,040 --> 00:39:22,300
+public imagery repository.
+
+870
+00:39:22,300 --> 00:39:24,920
+What we are intensely focused
+on is how you can cut your
+
+871
+00:39:24,920 --> 00:39:27,400
+imagery out of Google Maps
+Engine, and then how, also, we
+
+872
+00:39:27,400 --> 00:39:31,590
+can leverage the power of the
+data we use to build Google
+
+873
+00:39:31,590 --> 00:39:33,990
+Maps tiles, the two dimensional
+tiles, and allow
+
+874
+00:39:33,990 --> 00:39:37,010
+you to take those offline for
+use behind the firewall.
+
+875
+00:39:37,010 --> 00:39:39,370
+We, or on your local device.
+
+876
+00:39:39,370 --> 00:39:43,370
+So that capability for the
+Google Map tiles offline is
+
+877
+00:39:43,370 --> 00:39:44,500
+rapidly coming online.
+
+878
+00:39:44,500 --> 00:39:46,460
+We're really looking for the
+right trusted testers in the
+
+879
+00:39:46,460 --> 00:39:48,790
+ecosystem who could help us
+prove that capability and that
+
+880
+00:39:48,790 --> 00:39:49,950
+functionality.
+
+881
+00:39:49,950 --> 00:39:53,590
+But to just be very clear,
+cutting Google's imagery is
+
+882
+00:39:53,590 --> 00:39:56,300
+not something that's currently
+on our roadmap.
+
+883
+00:39:56,300 --> 00:39:57,350
+Thank you.
+
+884
+00:39:57,350 --> 00:39:58,510
+With that, we're out of time.
+
+885
+00:39:58,510 --> 00:40:00,390
+I would like to thank you
+all for your time.
+
+886
+00:40:00,390 --> 00:40:03,020
+And Avnish and I will be around
+afterward, if you'd
+
+887
+00:40:03,020 --> 00:40:05,940
+like to engage in any
+further discussion.
+
+888
+00:40:05,940 --> 00:40:06,240
+Thanks.
+
+889
+00:40:06,240 --> 00:40:08,090
+Have a great day.
+

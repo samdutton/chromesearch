@@ -1,0 +1,4398 @@
+1
+00:00:00,000 --> 00:00:00,470
+
+2
+00:00:00,470 --> 00:00:03,101
+COLT MCANLIS: Hello everyone.
+
+3
+00:00:03,101 --> 00:00:04,290
+Oh, come on guys.
+
+4
+00:00:04,290 --> 00:00:06,680
+Look up from your pixels.
+
+5
+00:00:06,680 --> 00:00:07,610
+Let's try this again.
+
+6
+00:00:07,610 --> 00:00:08,860
+Hello everyone.
+
+7
+00:00:08,860 --> 00:00:09,620
+AUDIENCE: Hello.
+
+8
+00:00:09,620 --> 00:00:10,700
+COLT MCANLIS: All right.
+
+9
+00:00:10,700 --> 00:00:12,750
+That's the type of pre-lunch
+enthusiasm I
+
+10
+00:00:12,750 --> 00:00:14,950
+would expect on a Thursday.
+
+11
+00:00:14,950 --> 00:00:18,140
+I can't see all of your
+hangovers, that's good.
+
+12
+00:00:18,140 --> 00:00:18,910
+All right, hello everyone.
+
+13
+00:00:18,910 --> 00:00:20,380
+My name is Colt McAnlis.
+
+14
+00:00:20,380 --> 00:00:23,190
+I'm a developer advocate at
+Google working on Chrome.
+
+15
+00:00:23,190 --> 00:00:26,060
+And joining me today is the
+amazingly talented Grace
+
+16
+00:00:26,060 --> 00:00:28,720
+Kloba, who happens to be
+the technical lead
+
+17
+00:00:28,720 --> 00:00:30,660
+on Chrome for Android.
+
+18
+00:00:30,660 --> 00:00:33,630
+So all of the cool Chrome on
+mobile questions can go to her
+
+19
+00:00:33,630 --> 00:00:34,600
+after the talk.
+
+20
+00:00:34,600 --> 00:00:35,800
+But if you have questions
+about my shirt,
+
+21
+00:00:35,800 --> 00:00:36,330
+that come to me.
+
+22
+00:00:36,330 --> 00:00:39,190
+What we're here today to talk
+to you about is how to
+
+23
+00:00:39,190 --> 00:00:43,510
+supercharge your websites, both
+on mobile and on desktop,
+
+24
+00:00:43,510 --> 00:00:46,410
+with the help of using the
+GPU and a lot of amazing
+
+25
+00:00:46,410 --> 00:00:49,050
+intrinsics that we've put
+inside of Chrome.
+
+26
+00:00:49,050 --> 00:00:51,660
+Quick show of hands, how many
+of you attended the Jank
+
+27
+00:00:51,660 --> 00:00:54,140
+Busters talk yesterday?
+
+28
+00:00:54,140 --> 00:00:55,260
+Awesome, that's a good set.
+
+29
+00:00:55,260 --> 00:00:56,060
+That's a good set.
+
+30
+00:00:56,060 --> 00:00:57,970
+You can view the content that
+we're going to talk about
+
+31
+00:00:57,970 --> 00:01:02,100
+today as a pairing of what Nat
+talked about yesterday.
+
+32
+00:01:02,100 --> 00:01:03,790
+Today we're going to talk about
+how to use the GPU to
+
+33
+00:01:03,790 --> 00:01:05,110
+get awesome stuff done.
+
+34
+00:01:05,110 --> 00:01:07,280
+Now before we begin, I want
+to point you all to this
+
+35
+00:01:07,280 --> 00:01:09,810
+beautiful perfmatters hashtag.
+
+36
+00:01:09,810 --> 00:01:11,550
+Quick show of hands, how many
+of you have seen this on the
+
+37
+00:01:11,550 --> 00:01:13,370
+interwebs so far?
+
+38
+00:01:13,370 --> 00:01:15,000
+You all are my favorite
+people.
+
+39
+00:01:15,000 --> 00:01:16,590
+Hugs for everyone after that.
+
+40
+00:01:16,590 --> 00:01:17,840
+Come find me later.
+
+41
+00:01:17,840 --> 00:01:19,980
+If you see something today
+that inspires you, some
+
+42
+00:01:19,980 --> 00:01:22,150
+statistic you didn't know, or
+some cool technique that you
+
+43
+00:01:22,150 --> 00:01:24,300
+haven't heard of before, please
+feel free to go to your
+
+44
+00:01:24,300 --> 00:01:26,040
+social media outlet
+of choice and use
+
+45
+00:01:26,040 --> 00:01:27,350
+the perfmatters hashtag.
+
+46
+00:01:27,350 --> 00:01:28,080
+Spread the word.
+
+47
+00:01:28,080 --> 00:01:28,720
+Spread the love.
+
+48
+00:01:28,720 --> 00:01:31,690
+That's what we're all here
+at Google to do.
+
+49
+00:01:31,690 --> 00:01:33,180
+I'll quit wasting time
+at this point.
+
+50
+00:01:33,180 --> 00:01:34,630
+Let's dig into it.
+
+51
+00:01:34,630 --> 00:01:37,720
+Before we can talk about how the
+GPU is used to supercharge
+
+52
+00:01:37,720 --> 00:01:40,640
+your website into awesome town,
+we first need to start
+
+53
+00:01:40,640 --> 00:01:43,430
+with a little bit of history so
+that you can understand how
+
+54
+00:01:43,430 --> 00:01:45,750
+Chrome actually draws
+your web page.
+
+55
+00:01:45,750 --> 00:01:48,750
+It all starts at the top with
+a very complex series of
+
+56
+00:01:48,750 --> 00:01:51,510
+algorithms known as software
+rasterization.
+
+57
+00:01:51,510 --> 00:01:54,110
+Effectively, this suite of
+tools, or algorithms and
+
+58
+00:01:54,110 --> 00:01:56,940
+computation, is responsible
+for taking a high-order
+
+59
+00:01:56,940 --> 00:01:59,570
+primitive, like this beautiful
+little glyph we have here,
+
+60
+00:01:59,570 --> 00:02:01,970
+subdividing it into
+boundary pixels.
+
+61
+00:02:01,970 --> 00:02:03,750
+And then finally, adding
+color to it and
+
+62
+00:02:03,750 --> 00:02:05,070
+pushing it to your screen.
+
+63
+00:02:05,070 --> 00:02:08,120
+So we can actually subdivide it,
+add some color to it, and
+
+64
+00:02:08,120 --> 00:02:10,090
+you can see that this is
+programmer art, so, of course,
+
+65
+00:02:10,090 --> 00:02:12,590
+my at symbol is very,
+very pixelated.
+
+66
+00:02:12,590 --> 00:02:15,010
+Now Chrome will use this
+concept of software
+
+67
+00:02:15,010 --> 00:02:17,870
+rasterization as your
+page is loaded.
+
+68
+00:02:17,870 --> 00:02:19,020
+Chrome loads your page.
+
+69
+00:02:19,020 --> 00:02:21,260
+It'll actually go through and
+software rasterize everything
+
+70
+00:02:21,260 --> 00:02:24,080
+you see, so all of the glyphs
+that you see, your images, the
+
+71
+00:02:24,080 --> 00:02:27,050
+small text, the lines on the
+screen, the borders, the
+
+72
+00:02:27,050 --> 00:02:29,070
+rounded edges, the
+drop shadows.
+
+73
+00:02:29,070 --> 00:02:31,460
+This is all being pushed
+through the software
+
+74
+00:02:31,460 --> 00:02:34,870
+rasterization path into
+a single large bitmap.
+
+75
+00:02:34,870 --> 00:02:37,790
+And then what happens is, as you
+scroll, what Chrome will
+
+76
+00:02:37,790 --> 00:02:40,670
+do is it'll do the smart thing
+and it'll actually go through
+
+77
+00:02:40,670 --> 00:02:43,770
+a series of memory copy
+operations and effectively
+
+78
+00:02:43,770 --> 00:02:46,750
+take all of those lines, the
+scan lines in the bitmap, and
+
+79
+00:02:46,750 --> 00:02:49,670
+mem copy them to a position
+that's higher in the bitmap.
+
+80
+00:02:49,670 --> 00:02:52,030
+And then it'll go back through
+and only software rasterize
+
+81
+00:02:52,030 --> 00:02:54,810
+what hasn't been seen
+on the page.
+
+82
+00:02:54,810 --> 00:02:55,990
+This, of course, means
+that Chrome is
+
+83
+00:02:55,990 --> 00:02:56,910
+doing the smart thing.
+
+84
+00:02:56,910 --> 00:02:59,560
+It's not spending all of its
+time software rasterizing divs
+
+85
+00:02:59,560 --> 00:03:00,970
+as they're positioned
+on the page.
+
+86
+00:03:00,970 --> 00:03:05,610
+It's only updating what is
+new and what is awesome.
+
+87
+00:03:05,610 --> 00:03:07,690
+GRACE KLOBA: So it's
+2013, right?
+
+88
+00:03:07,690 --> 00:03:10,900
+Most of the sites has animation,
+transition, to make
+
+89
+00:03:10,900 --> 00:03:12,170
+it look good.
+
+90
+00:03:12,170 --> 00:03:14,210
+So what is animation?
+
+91
+00:03:14,210 --> 00:03:18,350
+It's essentially bits update
+to the screen constantly to
+
+92
+00:03:18,350 --> 00:03:20,360
+make it feel like a movie.
+
+93
+00:03:20,360 --> 00:03:23,900
+So let's take a look
+at this example.
+
+94
+00:03:23,900 --> 00:03:28,590
+We have this rubber duck
+animated through the river to
+
+95
+00:03:28,590 --> 00:03:29,690
+the other side.
+
+96
+00:03:29,690 --> 00:03:31,820
+So for every frame, we
+have to move the
+
+97
+00:03:31,820 --> 00:03:35,180
+duck to a new location.
+
+98
+00:03:35,180 --> 00:03:38,630
+This means for every frame, we
+have to paint to the duck in
+
+99
+00:03:38,630 --> 00:03:41,930
+the new location with
+a new background.
+
+100
+00:03:41,930 --> 00:03:44,650
+And then go back to where
+the duck used to be and
+
+101
+00:03:44,650 --> 00:03:46,880
+then erase the duck.
+
+102
+00:03:46,880 --> 00:03:48,680
+And [INAUDIBLE]
+
+103
+00:03:48,680 --> 00:03:51,680
+just clean background.
+
+104
+00:03:51,680 --> 00:03:54,030
+Essentially, for every
+frame, we have to
+
+105
+00:03:54,030 --> 00:03:57,490
+paint these two regions.
+
+106
+00:03:57,490 --> 00:04:01,700
+And there's a new trend,
+the retina display.
+
+107
+00:04:01,700 --> 00:04:05,310
+So it makes the display look
+pretty because it doubles the
+
+108
+00:04:05,310 --> 00:04:08,610
+screen resolution, which
+quadruples the number of the
+
+109
+00:04:08,610 --> 00:04:11,390
+pixels pushed onto the screen.
+
+110
+00:04:11,390 --> 00:04:14,980
+So Colt mentioned earlier during
+the scrolling for every
+
+111
+00:04:14,980 --> 00:04:17,470
+frame we do a mem copy.
+
+112
+00:04:17,470 --> 00:04:19,190
+That's not free.
+
+113
+00:04:19,190 --> 00:04:23,040
+It's even not cheap with the
+retina display because we're
+
+114
+00:04:23,040 --> 00:04:27,140
+pushing quadruple number of the
+pixel to the screen while
+
+115
+00:04:27,140 --> 00:04:29,992
+the memory bus speed
+hasn't caught up.
+
+116
+00:04:29,992 --> 00:04:34,320
+And in the animation case, for
+every frame we have to paint
+
+117
+00:04:34,320 --> 00:04:35,630
+the two regions.
+
+118
+00:04:35,630 --> 00:04:38,720
+So now that region is quadruple
+the size, which
+
+119
+00:04:38,720 --> 00:04:41,730
+means a much longer
+paint times.
+
+120
+00:04:41,730 --> 00:04:45,320
+So if we look at the chart,
+the number keep going up.
+
+121
+00:04:45,320 --> 00:04:49,430
+It's not coming down anytime
+soon, at least I was not told.
+
+122
+00:04:49,430 --> 00:04:51,040
+So Colt, what do we do?
+
+123
+00:04:51,040 --> 00:04:53,390
+COLT MCANLIS: Well, you see,
+because these things keep
+
+124
+00:04:53,390 --> 00:04:55,420
+getting larger and larger and
+larger, we have to take
+
+125
+00:04:55,420 --> 00:04:57,640
+advantage of the hardware that's
+resident on the system.
+
+126
+00:04:57,640 --> 00:04:59,860
+So everyone should have
+pixels by now.
+
+127
+00:04:59,860 --> 00:05:00,890
+I see most of you
+typing on them.
+
+128
+00:05:00,890 --> 00:05:02,400
+And everyone should have one
+of these beautiful little
+
+129
+00:05:02,400 --> 00:05:04,710
+phones in your pocket as well.
+
+130
+00:05:04,710 --> 00:05:07,040
+All of these contain one common
+element, is they have a
+
+131
+00:05:07,040 --> 00:05:08,790
+new piece of hardware-- well,
+an old piece of hardware
+
+132
+00:05:08,790 --> 00:05:12,120
+really-- called a graphics
+processing unit, or a GPU.
+
+133
+00:05:12,120 --> 00:05:15,160
+Now, GPUs were actually created
+in the mid to late
+
+134
+00:05:15,160 --> 00:05:18,080
+'90s to effectively help with
+a concept of software
+
+135
+00:05:18,080 --> 00:05:20,910
+rasterization needed for
+games and boring
+
+136
+00:05:20,910 --> 00:05:22,600
+stuff like CAD software.
+
+137
+00:05:22,600 --> 00:05:25,390
+Effectively, architects came
+together and created dedicated
+
+138
+00:05:25,390 --> 00:05:27,780
+hardware to do software
+rasterization.
+
+139
+00:05:27,780 --> 00:05:29,110
+And then we started calling
+it hardware
+
+140
+00:05:29,110 --> 00:05:30,920
+rasterization after that.
+
+141
+00:05:30,920 --> 00:05:34,760
+These GPUs super excel at doing
+software rasterization.
+
+142
+00:05:34,760 --> 00:05:38,250
+They are amazingly capable
+to push pixels
+
+143
+00:05:38,250 --> 00:05:38,910
+around on the screen.
+
+144
+00:05:38,910 --> 00:05:41,030
+They do it better than anything
+else we have out on
+
+145
+00:05:41,030 --> 00:05:42,230
+the market today.
+
+146
+00:05:42,230 --> 00:05:45,240
+So the cool thing is that if the
+GPU is actually the best
+
+147
+00:05:45,240 --> 00:05:47,890
+at moving pixels and doing
+software rasterization, the
+
+148
+00:05:47,890 --> 00:05:50,070
+question for Chrome is, how do
+we utilize this piece of
+
+149
+00:05:50,070 --> 00:05:53,420
+hardware to make your webpages
+render faster?
+
+150
+00:05:53,420 --> 00:05:57,640
+Now, as we already talked about,
+you can look at our
+
+151
+00:05:57,640 --> 00:06:00,000
+upload diagram in a hierarchical
+view of this.
+
+152
+00:06:00,000 --> 00:06:01,670
+So we start with our
+page layout.
+
+153
+00:06:01,670 --> 00:06:04,070
+And that, of course, is
+rasterized by the CPU.
+
+154
+00:06:04,070 --> 00:06:06,850
+Then every frame that you make
+small updates, the CPU is
+
+155
+00:06:06,850 --> 00:06:08,830
+responsible for updating
+and presenting those
+
+156
+00:06:08,830 --> 00:06:10,310
+pixels to the screen.
+
+157
+00:06:10,310 --> 00:06:12,560
+Now this means that there's a
+lot of work going on in the
+
+158
+00:06:12,560 --> 00:06:14,990
+CPU as you do small scrolls,
+big scrolls, and then
+
+159
+00:06:14,990 --> 00:06:17,610
+animations over the page.
+
+160
+00:06:17,610 --> 00:06:19,330
+Because of the fact of that
+the GPU is actually really
+
+161
+00:06:19,330 --> 00:06:21,200
+good at pushing pixels, it makes
+sense then that we can
+
+162
+00:06:21,200 --> 00:06:24,700
+insert the GPU between the CPU
+and the actual monitor.
+
+163
+00:06:24,700 --> 00:06:27,940
+So this means that the CPU can
+do a single upload the GPU and
+
+164
+00:06:27,940 --> 00:06:30,800
+allow the GPU to handle
+finalized positioning on the
+
+165
+00:06:30,800 --> 00:06:32,230
+screen on your behalf.
+
+166
+00:06:32,230 --> 00:06:34,570
+This reduces the overall amount
+of CPU work that has to
+
+167
+00:06:34,570 --> 00:06:38,790
+be done rendering your
+pages a lot faster.
+
+168
+00:06:38,790 --> 00:06:40,014
+Clicky.
+
+169
+00:06:40,014 --> 00:06:42,300
+Ah, there we go.
+
+170
+00:06:42,300 --> 00:06:45,830
+GRACE KLOBA: So recalling the
+CPU mode, we allocate one big
+
+171
+00:06:45,830 --> 00:06:50,340
+bitmap to cover the entire
+visible regions.
+
+172
+00:06:50,340 --> 00:06:54,990
+In the GPU mode, we divided the
+page into smaller tiles.
+
+173
+00:06:54,990 --> 00:07:00,810
+And each tile is cached in the
+GPU memory as a texture.
+
+174
+00:07:00,810 --> 00:07:06,350
+So let's reexamine the case
+where we scroll the page.
+
+175
+00:07:06,350 --> 00:07:10,250
+When the page is first loaded,
+we allocate enough number of
+
+176
+00:07:10,250 --> 00:07:14,120
+the tiles to cover the
+visible areas.
+
+177
+00:07:14,120 --> 00:07:16,990
+And then when the page is
+scrolling down, some of the
+
+178
+00:07:16,990 --> 00:07:20,560
+tiles from the previous frame
+are still visible.
+
+179
+00:07:20,560 --> 00:07:23,640
+But they are drawn in a
+different position relative to
+
+180
+00:07:23,640 --> 00:07:27,350
+the window of the screen.
+
+181
+00:07:27,350 --> 00:07:30,480
+So one key difference
+here is we can't
+
+182
+00:07:30,480 --> 00:07:32,220
+read off the mem copy.
+
+183
+00:07:32,220 --> 00:07:37,870
+So retina display, nice and
+we are fine with it.
+
+184
+00:07:37,870 --> 00:07:40,540
+Similar as a software rendering
+mode, there will be
+
+185
+00:07:40,540 --> 00:07:41,790
+new content to show.
+
+186
+00:07:41,790 --> 00:07:45,430
+And then we just allocate the
+new tiles, render them in the
+
+187
+00:07:45,430 --> 00:07:49,260
+CPU, and upload them to
+the GPU textures.
+
+188
+00:07:49,260 --> 00:07:52,120
+Some of the old tiles from
+the previous frame
+
+189
+00:07:52,120 --> 00:07:54,080
+now they are invisible.
+
+190
+00:07:54,080 --> 00:07:57,470
+If there's enough GPU memory,
+we leave them in the cache.
+
+191
+00:07:57,470 --> 00:08:01,710
+So if the page is scrolling up,
+they will be visible and
+
+192
+00:08:01,710 --> 00:08:03,090
+we have them right away.
+
+193
+00:08:03,090 --> 00:08:06,940
+There's no need to
+do a CPU paint.
+
+194
+00:08:06,940 --> 00:08:10,420
+If you continue scrolling down,
+at some point we're
+
+195
+00:08:10,420 --> 00:08:12,590
+going to run out
+of GPU memory.
+
+196
+00:08:12,590 --> 00:08:18,360
+What happens is we go back to
+the oldest tiles, which user
+
+197
+00:08:18,360 --> 00:08:21,920
+hasn't seen for a while,
+and we recycle them.
+
+198
+00:08:21,920 --> 00:08:25,560
+This means if those tiles will
+be visible again, we have to
+
+199
+00:08:25,560 --> 00:08:28,800
+go back to the CPU to paint them
+and upload them to the
+
+200
+00:08:28,800 --> 00:08:30,950
+GPU texture.
+
+201
+00:08:30,950 --> 00:08:34,480
+So the amount of the GPU memory
+available is really
+
+202
+00:08:34,480 --> 00:08:35,980
+device dependent.
+
+203
+00:08:35,980 --> 00:08:39,530
+The goal for us is to keep as
+much as possible in the GPU
+
+204
+00:08:39,530 --> 00:08:43,970
+memory, so when user interacting
+with a page, we
+
+205
+00:08:43,970 --> 00:08:47,860
+can avoid going to
+the CPU to paint.
+
+206
+00:08:47,860 --> 00:08:52,480
+Before we move on to the next
+topic, I want to mention,
+
+207
+00:08:52,480 --> 00:08:55,140
+Chrome can also do
+pre-painting.
+
+208
+00:08:55,140 --> 00:08:58,330
+So earlier, I mentioned when the
+page is the first loaded
+
+209
+00:08:58,330 --> 00:09:02,790
+Chrome allocates enough tiles
+for the visible areas.
+
+210
+00:09:02,790 --> 00:09:06,600
+During the idle cycle, we
+proactively paint the area
+
+211
+00:09:06,600 --> 00:09:10,100
+just outside of the
+visible region.
+
+212
+00:09:10,100 --> 00:09:14,290
+And this prediction also
+is gesture aware.
+
+213
+00:09:14,290 --> 00:09:17,970
+So for example, if you're
+scrolling down a page, the
+
+214
+00:09:17,970 --> 00:09:22,240
+pre-paint will pre-paint the
+area below the current visible
+
+215
+00:09:22,240 --> 00:09:24,550
+area because that's the
+direction going.
+
+216
+00:09:24,550 --> 00:09:28,100
+
+217
+00:09:28,100 --> 00:09:30,060
+COLT MCANLIS: So this is really
+cool for scrolling, but
+
+218
+00:09:30,060 --> 00:09:31,860
+it actually puts us in a little
+bit of a bind when we
+
+219
+00:09:31,860 --> 00:09:33,140
+start talking about
+the same duck
+
+220
+00:09:33,140 --> 00:09:34,500
+animation as we saw before.
+
+221
+00:09:34,500 --> 00:09:36,920
+By the way, ducks should be
+the new animation thing in
+
+222
+00:09:36,920 --> 00:09:38,210
+presentations, in my
+personal opinion.
+
+223
+00:09:38,210 --> 00:09:39,050
+I'm going to start
+this movement.
+
+224
+00:09:39,050 --> 00:09:41,090
+Too many people put cats
+in their slides.
+
+225
+00:09:41,090 --> 00:09:43,073
+I really think ducks are ready
+for a comeback, especially if
+
+226
+00:09:43,073 --> 00:09:44,330
+you've ever been bitten
+by a duck.
+
+227
+00:09:44,330 --> 00:09:46,050
+Actually it hurts a lot.
+
+228
+00:09:46,050 --> 00:09:47,700
+Anyhow, as we have the duck--
+
+229
+00:09:47,700 --> 00:09:48,530
+that's my aside, right?
+
+230
+00:09:48,530 --> 00:09:48,980
+We got time.
+
+231
+00:09:48,980 --> 00:09:50,620
+We got plenty of time.
+
+232
+00:09:50,620 --> 00:09:51,460
+Story time with Colt.
+
+233
+00:09:51,460 --> 00:09:52,690
+You can hashtag that.
+
+234
+00:09:52,690 --> 00:09:53,910
+That'll be fun.
+
+235
+00:09:53,910 --> 00:09:55,810
+Anyhow, as the duck is actually
+flowing across the
+
+236
+00:09:55,810 --> 00:09:57,780
+pond here, we run
+into a problem.
+
+237
+00:09:57,780 --> 00:10:00,540
+Where before, in the software
+mode, we would actually
+
+238
+00:10:00,540 --> 00:10:03,890
+rasterize the regions that
+were dirtied by the duck
+
+239
+00:10:03,890 --> 00:10:07,090
+moving around, we now actually
+have to rasterize more pixels
+
+240
+00:10:07,090 --> 00:10:10,350
+because we have to redraw
+the entire tile that's
+
+241
+00:10:10,350 --> 00:10:11,480
+touched by the duck.
+
+242
+00:10:11,480 --> 00:10:13,430
+So as you can see here, we have
+the duck moving from a
+
+243
+00:10:13,430 --> 00:10:15,500
+one by two over to
+a two by two.
+
+244
+00:10:15,500 --> 00:10:18,240
+We have to redo all of
+those tiles at once.
+
+245
+00:10:18,240 --> 00:10:20,760
+So we're touching a lot more
+pixels during our animation.
+
+246
+00:10:20,760 --> 00:10:22,770
+So this means the GPU tiles
+can actually get us
+
+247
+00:10:22,770 --> 00:10:25,260
+into a bit of a bind.
+
+248
+00:10:25,260 --> 00:10:27,550
+Clicky.
+
+249
+00:10:27,550 --> 00:10:29,950
+Clicky.
+
+250
+00:10:29,950 --> 00:10:30,770
+Hashtag clicky.
+
+251
+00:10:30,770 --> 00:10:31,420
+There you go.
+
+252
+00:10:31,420 --> 00:10:32,670
+Can you do it for me?
+
+253
+00:10:32,670 --> 00:10:37,640
+
+254
+00:10:37,640 --> 00:10:40,100
+I think we just broke
+the internet.
+
+255
+00:10:40,100 --> 00:10:40,920
+Anyone?
+
+256
+00:10:40,920 --> 00:10:42,170
+Can anyone fix the internet?
+
+257
+00:10:42,170 --> 00:10:47,280
+
+258
+00:10:47,280 --> 00:10:48,550
+You are all tweeting
+right now.
+
+259
+00:10:48,550 --> 00:10:50,050
+That's the problem.
+
+260
+00:10:50,050 --> 00:10:51,390
+You are all going
+and tweeting.
+
+261
+00:10:51,390 --> 00:10:52,410
+You're hashtagging.
+
+262
+00:10:52,410 --> 00:10:54,270
+AUDIENCE: Don't you
+mean Google+?
+
+263
+00:10:54,270 --> 00:10:55,420
+COLT MCANLIS: Google+'ing,
+thank you.
+
+264
+00:10:55,420 --> 00:10:56,670
+Actually, thank you for that.
+
+265
+00:10:56,670 --> 00:11:01,680
+
+266
+00:11:01,680 --> 00:11:02,930
+OK.
+
+267
+00:11:02,930 --> 00:11:05,760
+
+268
+00:11:05,760 --> 00:11:06,800
+I can reboot it.
+
+269
+00:11:06,800 --> 00:11:08,080
+That might work.
+
+270
+00:11:08,080 --> 00:11:08,990
+Maybe I should install Vista.
+
+271
+00:11:08,990 --> 00:11:10,610
+That'll actually help too.
+
+272
+00:11:10,610 --> 00:11:15,320
+
+273
+00:11:15,320 --> 00:11:16,570
+Or did we freeze?
+
+274
+00:11:16,570 --> 00:11:19,920
+
+275
+00:11:19,920 --> 00:11:20,970
+I'm going to do a song
+and dance while he
+
+276
+00:11:20,970 --> 00:11:21,750
+tries to fix this.
+
+277
+00:11:21,750 --> 00:11:22,706
+What do you want on here?
+
+278
+00:11:22,706 --> 00:11:23,142
+AUDIENCE: What's that?
+
+279
+00:11:23,142 --> 00:11:24,672
+COLT MCANLIS: What do you
+want me to click here?
+
+280
+00:11:24,672 --> 00:11:26,058
+AUDIENCE: So go into
+the movie.
+
+281
+00:11:26,058 --> 00:11:28,830
+
+282
+00:11:28,830 --> 00:11:30,100
+COLT MCANLIS: He's going
+to fix this.
+
+283
+00:11:30,100 --> 00:11:31,720
+I'm going to tell some great
+stories about rasterization
+
+284
+00:11:31,720 --> 00:11:32,250
+real quick.
+
+285
+00:11:32,250 --> 00:11:34,210
+So for those of you who don't
+know, who haven't been over to
+
+286
+00:11:34,210 --> 00:11:36,520
+the Chrome booth yet, we
+actually have an entire area
+
+287
+00:11:36,520 --> 00:11:38,140
+there dedicated to
+performance.
+
+288
+00:11:38,140 --> 00:11:40,590
+So a lot of you web developers
+out here who are running into
+
+289
+00:11:40,590 --> 00:11:43,590
+problems with compute processes,
+rendering issues,
+
+290
+00:11:43,590 --> 00:11:45,580
+or even network load times,
+please come by
+
+291
+00:11:45,580 --> 00:11:46,850
+and stop by the booth.
+
+292
+00:11:46,850 --> 00:11:47,380
+Talk to us.
+
+293
+00:11:47,380 --> 00:11:50,400
+We've got pretty much all of
+the genius brains of Google
+
+294
+00:11:50,400 --> 00:11:54,090
+who work on performance day and
+night there waiting to ask
+
+295
+00:11:54,090 --> 00:11:56,490
+you questions, and to answer
+your problems, and to run your
+
+296
+00:11:56,490 --> 00:11:58,310
+site through our tools,
+and to solve all
+
+297
+00:11:58,310 --> 00:12:00,621
+sorts of critical things.
+
+298
+00:12:00,621 --> 00:12:01,550
+Still need more time?
+
+299
+00:12:01,550 --> 00:12:01,800
+Cool.
+
+300
+00:12:01,800 --> 00:12:02,600
+I can keep doing this.
+
+301
+00:12:02,600 --> 00:12:04,490
+All right, so for too long,
+we've actually been spending a
+
+302
+00:12:04,490 --> 00:12:08,890
+lot of time talking about
+network or web performance in
+
+303
+00:12:08,890 --> 00:12:10,740
+just terms of page wait.
+
+304
+00:12:10,740 --> 00:12:12,790
+So we're very concerned
+about load time.
+
+305
+00:12:12,790 --> 00:12:15,840
+But as we've started getting
+more web apps on mobile and
+
+306
+00:12:15,840 --> 00:12:19,350
+web apps doing crazy things, we
+realized that the wait that
+
+307
+00:12:19,350 --> 00:12:21,740
+the user experiences your app
+while they're inside of it
+
+308
+00:12:21,740 --> 00:12:25,250
+actually has a large--
+
+309
+00:12:25,250 --> 00:12:25,760
+GRACE KLOBA: We're back.
+
+310
+00:12:25,760 --> 00:12:26,140
+COLT MCANLIS: We're back?
+
+311
+00:12:26,140 --> 00:12:27,640
+Oh, well I was in the
+middle of something.
+
+312
+00:12:27,640 --> 00:12:28,006
+Hold on.
+
+313
+00:12:28,006 --> 00:12:28,190
+Hold on.
+
+314
+00:12:28,190 --> 00:12:29,340
+Wait, no, I'm not done yet.
+
+315
+00:12:29,340 --> 00:12:29,760
+GRACE KLOBA: OK.
+
+316
+00:12:29,760 --> 00:12:32,320
+COLT MCANLIS: We realized that
+how the user experiences your
+
+317
+00:12:32,320 --> 00:12:34,610
+app inside of it actually has
+a lot to do with how much
+
+318
+00:12:34,610 --> 00:12:36,510
+money they're willing to spend
+and how much you get from that
+
+319
+00:12:36,510 --> 00:12:38,270
+user in terms of retention.
+
+320
+00:12:38,270 --> 00:12:40,120
+So this means that we have to
+start worrying about the other
+
+321
+00:12:40,120 --> 00:12:42,690
+factors too, things like compute
+performance and render
+
+322
+00:12:42,690 --> 00:12:46,950
+performance, which brings us
+back to how we can utilize the
+
+323
+00:12:46,950 --> 00:12:50,390
+GPU to get awesome stuff done.
+
+324
+00:12:50,390 --> 00:12:51,560
+Did I break it again?
+
+325
+00:12:51,560 --> 00:12:53,300
+Maybe it's my clicker.
+
+326
+00:12:53,300 --> 00:12:54,280
+There we go.
+
+327
+00:12:54,280 --> 00:12:59,250
+OK, so to rehash, after a five
+minute soliloquy, we have this
+
+328
+00:12:59,250 --> 00:13:00,560
+duck effectively moving
+to the screen.
+
+329
+00:13:00,560 --> 00:13:02,810
+It would be ideal if we
+could effectively
+
+330
+00:13:02,810 --> 00:13:04,190
+know the context here.
+
+331
+00:13:04,190 --> 00:13:05,870
+Is that we have the duck
+moving and we have the
+
+332
+00:13:05,870 --> 00:13:07,080
+background static.
+
+333
+00:13:07,080 --> 00:13:09,240
+It would great if we could
+somehow separate these two
+
+334
+00:13:09,240 --> 00:13:12,440
+items so that the GPU can handle
+positioning of the duck
+
+335
+00:13:12,440 --> 00:13:15,130
+and we won't have to use all
+of the extra CPU cycles
+
+336
+00:13:15,130 --> 00:13:16,380
+painting the duck in position.
+
+337
+00:13:16,380 --> 00:13:18,890
+
+338
+00:13:18,890 --> 00:13:20,920
+And this is actually what we
+can do inside of Chrome.
+
+339
+00:13:20,920 --> 00:13:22,890
+We actually allow some
+annotations and some
+
+340
+00:13:22,890 --> 00:13:25,230
+intrinsics that you can add to
+your page that allow you to
+
+341
+00:13:25,230 --> 00:13:29,670
+separate page elements into
+separate GPU layers.
+
+342
+00:13:29,670 --> 00:13:31,690
+What this means is that
+effectively each layer has its
+
+343
+00:13:31,690 --> 00:13:32,750
+own set of tiles.
+
+344
+00:13:32,750 --> 00:13:34,270
+They're uploaded once
+to the GPU.
+
+345
+00:13:34,270 --> 00:13:36,340
+And then the GPU can position
+these things around without
+
+346
+00:13:36,340 --> 00:13:38,610
+any interaction in the CPU.
+
+347
+00:13:38,610 --> 00:13:41,070
+Of course, this turbo charges
+the duck in their animation
+
+348
+00:13:41,070 --> 00:13:42,940
+allowing it to do awesome stuff
+through the screen.
+
+349
+00:13:42,940 --> 00:13:45,320
+And it allows the CPU to sit
+back and drink margaritas and
+
+350
+00:13:45,320 --> 00:13:46,870
+basically chill out
+while the GPU does
+
+351
+00:13:46,870 --> 00:13:48,120
+all the heavy lifting.
+
+352
+00:13:48,120 --> 00:13:53,150
+
+353
+00:13:53,150 --> 00:13:55,640
+Sorry, we're having fun
+technical problems.
+
+354
+00:13:55,640 --> 00:13:57,060
+What kind of conference would
+this be if you don't get a
+
+355
+00:13:57,060 --> 00:13:59,970
+blue screen while installing
+printer software?
+
+356
+00:13:59,970 --> 00:14:02,430
+Anyhow, so this is how the
+GPU stuff is working.
+
+357
+00:14:02,430 --> 00:14:04,400
+Now let's actually talk about
+how you, as a developer, can
+
+358
+00:14:04,400 --> 00:14:06,130
+control all of these things.
+
+359
+00:14:06,130 --> 00:14:08,930
+First, it's worth pointing out
+that there's a set of page
+
+360
+00:14:08,930 --> 00:14:12,170
+elements that are auto promoted
+to their own layer
+
+361
+00:14:12,170 --> 00:14:15,090
+once your HTML is parsed and
+your page is loaded.
+
+362
+00:14:15,090 --> 00:14:17,000
+Depending on your platform,
+and your build, and your
+
+363
+00:14:17,000 --> 00:14:20,680
+hardware spec, things like
+canvas, video, iframe, and
+
+364
+00:14:20,680 --> 00:14:22,300
+plug-ins are all promoted
+to their own
+
+365
+00:14:22,300 --> 00:14:23,580
+layer on your behalf.
+
+366
+00:14:23,580 --> 00:14:24,440
+You don't have to do anything.
+
+367
+00:14:24,440 --> 00:14:26,900
+And this is fantastic because
+most the time these type of
+
+368
+00:14:26,900 --> 00:14:29,890
+page elements spend their
+entirety updating large
+
+369
+00:14:29,890 --> 00:14:31,040
+portions of the screen.
+
+370
+00:14:31,040 --> 00:14:32,810
+They could be overlapping
+with other tiles.
+
+371
+00:14:32,810 --> 00:14:34,240
+Recall the animation
+that you saw with
+
+372
+00:14:34,240 --> 00:14:35,070
+the duck moving around.
+
+373
+00:14:35,070 --> 00:14:37,440
+So we're spending lots of times
+updating and rasterizing
+
+374
+00:14:37,440 --> 00:14:40,670
+pixels we don't actually
+need to.
+
+375
+00:14:40,670 --> 00:14:43,540
+GRACE KLOBA: There is also a
+set of the CSS properties
+
+376
+00:14:43,540 --> 00:14:45,700
+which will manually
+promote the page
+
+377
+00:14:45,700 --> 00:14:48,220
+element to its own layer.
+
+378
+00:14:48,220 --> 00:14:52,060
+For example, all the 3D
+Transform, like TranslateZ,
+
+379
+00:14:52,060 --> 00:14:54,170
+Translate3D.
+
+380
+00:14:54,170 --> 00:14:58,190
+This making sense because these
+transforms can be easily
+
+381
+00:14:58,190 --> 00:15:01,470
+accelerated on the GPU.
+
+382
+00:15:01,470 --> 00:15:06,300
+It's worth noting the 2D
+transform does not promote the
+
+383
+00:15:06,300 --> 00:15:09,660
+element to its own layer, which
+means they will be still
+
+384
+00:15:09,660 --> 00:15:11,540
+rendered in the software mode.
+
+385
+00:15:11,540 --> 00:15:14,240
+
+386
+00:15:14,240 --> 00:15:17,370
+COLT MCANLIS: Now those two
+examples are effectively load
+
+387
+00:15:17,370 --> 00:15:18,840
+time modifications.
+
+388
+00:15:18,840 --> 00:15:21,780
+So effectively, you parse the
+page elements, or you parse
+
+389
+00:15:21,780 --> 00:15:24,090
+the page, and these things are
+auto promoted on your behalf.
+
+390
+00:15:24,090 --> 00:15:26,280
+It's worth pointing out that
+there's a set of CSS
+
+391
+00:15:26,280 --> 00:15:29,370
+properties that allow you to
+push things to a separate
+
+392
+00:15:29,370 --> 00:15:30,610
+layer at run time.
+
+393
+00:15:30,610 --> 00:15:34,560
+And the two tags you need to
+be concerned with are CSS
+
+394
+00:15:34,560 --> 00:15:36,650
+animations for opacity
+and transform.
+
+395
+00:15:36,650 --> 00:15:39,260
+How these effectively work is
+that when the page loads, an
+
+396
+00:15:39,260 --> 00:15:41,910
+element on the page will stay
+static with the base layer.
+
+397
+00:15:41,910 --> 00:15:45,950
+Once the animation begins, the
+element in question will
+
+398
+00:15:45,950 --> 00:15:48,730
+actually be promoted
+to its own layer.
+
+399
+00:15:48,730 --> 00:15:51,640
+So the CPU has to spin up,
+create a new layer, paint the
+
+400
+00:15:51,640 --> 00:15:54,270
+data into the new layer, as
+well as go back and paint
+
+401
+00:15:54,270 --> 00:15:56,730
+where the object used to
+be in the base layer.
+
+402
+00:15:56,730 --> 00:15:59,620
+Then as the animation occurs,
+the GPU and the CPU are
+
+403
+00:15:59,620 --> 00:16:02,130
+working in harmony creating
+happy ducks through the
+
+404
+00:16:02,130 --> 00:16:04,720
+universe in a plethora of all
+the quacks that you hear
+
+405
+00:16:04,720 --> 00:16:05,800
+through the cosmos.
+
+406
+00:16:05,800 --> 00:16:08,270
+And then at the end of the
+animation, the duck then has
+
+407
+00:16:08,270 --> 00:16:14,115
+to be promoted back to the
+base layer where it--
+
+408
+00:16:14,115 --> 00:16:14,560
+there we go.
+
+409
+00:16:14,560 --> 00:16:15,620
+Maybe it's my clicker.
+
+410
+00:16:15,620 --> 00:16:18,610
+The duck has to be demoted back
+to the base layer, which
+
+411
+00:16:18,610 --> 00:16:21,160
+means we have to kill the
+original layer we had and then
+
+412
+00:16:21,160 --> 00:16:24,070
+rerasterize the area where
+the duck finally lands.
+
+413
+00:16:24,070 --> 00:16:26,770
+
+414
+00:16:26,770 --> 00:16:28,950
+I'm just going to let you click
+everything from now on.
+
+415
+00:16:28,950 --> 00:16:30,070
+Of course, this means
+that we run into
+
+416
+00:16:30,070 --> 00:16:31,480
+some interesting concepts.
+
+417
+00:16:31,480 --> 00:16:33,740
+So if we start an animation and
+all of a sudden we see a
+
+418
+00:16:33,740 --> 00:16:37,220
+hitch in our performance, this
+means that the CPU may be
+
+419
+00:16:37,220 --> 00:16:39,370
+doing too much work and actually
+firing up, doing
+
+420
+00:16:39,370 --> 00:16:43,280
+rasterization, and moving on.
+
+421
+00:16:43,280 --> 00:16:45,220
+Which means of course we have
+to start talking about well,
+
+422
+00:16:45,220 --> 00:16:47,100
+why isn't everything in a
+layer and what are the
+
+423
+00:16:47,100 --> 00:16:49,090
+consequences and tradeoffs
+of doing that?
+
+424
+00:16:49,090 --> 00:16:50,920
+Well the first off thing is you
+shouldn't put everything
+
+425
+00:16:50,920 --> 00:16:51,610
+in its own layer.
+
+426
+00:16:51,610 --> 00:16:53,940
+Even though the GPU can move
+these things around and
+
+427
+00:16:53,940 --> 00:16:55,940
+position them, there's actually
+some consequences you
+
+428
+00:16:55,940 --> 00:16:56,900
+should be aware of.
+
+429
+00:16:56,900 --> 00:16:59,420
+First off, is the cost
+of too many layers.
+
+430
+00:16:59,420 --> 00:17:01,790
+You need to know that each layer
+you put on the screen
+
+431
+00:17:01,790 --> 00:17:03,110
+effectively creates
+more tiles.
+
+432
+00:17:03,110 --> 00:17:06,720
+And as Grace mentioned before,
+the GPU has a static
+
+433
+00:17:06,720 --> 00:17:10,920
+non-growable memory resource
+in its texture cache.
+
+434
+00:17:10,920 --> 00:17:14,500
+So what happens is as these
+tiles are invalidated and more
+
+435
+00:17:14,500 --> 00:17:17,599
+tiles exist, if the cache is
+full, we effectively have to
+
+436
+00:17:17,599 --> 00:17:20,400
+push old tiles out of the cache
+before we can actually
+
+437
+00:17:20,400 --> 00:17:21,849
+put the new tiles in.
+
+438
+00:17:21,849 --> 00:17:24,460
+This is going to put a lot of
+pressure on your cache, which
+
+439
+00:17:24,460 --> 00:17:26,690
+is going to result in more
+evictions, which is going to
+
+440
+00:17:26,690 --> 00:17:30,120
+result in a lot of additional
+CPU overhead painting new
+
+441
+00:17:30,120 --> 00:17:32,540
+tiles that would have previously
+been resident
+
+442
+00:17:32,540 --> 00:17:35,300
+inside of the cache.
+
+443
+00:17:35,300 --> 00:17:38,170
+In addition to the tile
+overhead, you also have to
+
+444
+00:17:38,170 --> 00:17:39,830
+take into account just
+the additional
+
+445
+00:17:39,830 --> 00:17:41,250
+processing that's involved.
+
+446
+00:17:41,250 --> 00:17:44,070
+Now, this is minimal compared
+to the cache thrashing.
+
+447
+00:17:44,070 --> 00:17:47,580
+But effectively, each layer that
+you add has to be sorted
+
+448
+00:17:47,580 --> 00:17:48,420
+every frame.
+
+449
+00:17:48,420 --> 00:17:50,840
+There has to be occlusion
+determinations that occur.
+
+450
+00:17:50,840 --> 00:17:53,110
+And then Chrome can actually
+go through and do union
+
+451
+00:17:53,110 --> 00:17:54,990
+processing to determine whether
+or not it should
+
+452
+00:17:54,990 --> 00:17:55,820
+actually draw something.
+
+453
+00:17:55,820 --> 00:17:57,560
+So let's say you have an object
+and then you have an
+
+454
+00:17:57,560 --> 00:18:00,650
+opaque layer in front of it, we
+may be actually able to not
+
+455
+00:18:00,650 --> 00:18:03,421
+draw that lower object because
+it's actually hidden.
+
+456
+00:18:03,421 --> 00:18:08,610
+
+457
+00:18:08,610 --> 00:18:12,130
+GRACE KLOBA: So there's
+overhead, as Colt mentioned,
+
+458
+00:18:12,130 --> 00:18:14,400
+when the animation starts.
+
+459
+00:18:14,400 --> 00:18:17,230
+We pay extra cost to
+promote the page
+
+460
+00:18:17,230 --> 00:18:19,730
+element to its own layer.
+
+461
+00:18:19,730 --> 00:18:24,080
+So if there is a lot of pixels
+during the paint that may take
+
+462
+00:18:24,080 --> 00:18:28,510
+a longer time, which means
+there's a long delay for the
+
+463
+00:18:28,510 --> 00:18:30,570
+animation to start.
+
+464
+00:18:30,570 --> 00:18:35,540
+So what you can do is, as we
+earlier mentioned, the CSS
+
+465
+00:18:35,540 --> 00:18:39,460
+properties can permanently
+move the page
+
+466
+00:18:39,460 --> 00:18:41,140
+element to its own layer.
+
+467
+00:18:41,140 --> 00:18:44,950
+So you can either translateZ(0)
+to promote it in
+
+468
+00:18:44,950 --> 00:18:46,660
+the page loading time.
+
+469
+00:18:46,660 --> 00:18:49,490
+Of course, the tradeoff
+is it's going to
+
+470
+00:18:49,490 --> 00:18:51,460
+use a lot of memory.
+
+471
+00:18:51,460 --> 00:18:53,770
+So now the job is--
+
+472
+00:18:53,770 --> 00:18:57,490
+it's your job to make the
+decision whether you want
+
+473
+00:18:57,490 --> 00:19:00,320
+animation to start instantly
+or you want to
+
+474
+00:19:00,320 --> 00:19:01,570
+preserve the memory.
+
+475
+00:19:01,570 --> 00:19:04,440
+
+476
+00:19:04,440 --> 00:19:06,470
+Let's look at another example.
+
+477
+00:19:06,470 --> 00:19:11,050
+So on a mobile site, it's a
+common case to try to slide in
+
+478
+00:19:11,050 --> 00:19:14,660
+some content from off
+screen to on screen.
+
+479
+00:19:14,660 --> 00:19:17,810
+So for example, we have
+this helpful duck.
+
+480
+00:19:17,810 --> 00:19:21,170
+When the page loaded, the
+duck is off screen.
+
+481
+00:19:21,170 --> 00:19:25,660
+And then it has a display now.
+
+482
+00:19:25,660 --> 00:19:30,010
+So when the user asks the duck
+for help and then what you
+
+483
+00:19:30,010 --> 00:19:33,890
+probably would do is change the
+display property from none
+
+484
+00:19:33,890 --> 00:19:37,390
+to block and start
+the animation.
+
+485
+00:19:37,390 --> 00:19:41,560
+Unfortunately, we cannot start
+the animation right away
+
+486
+00:19:41,560 --> 00:19:44,330
+because we have to go
+to paint the duck .
+
+487
+00:19:44,330 --> 00:19:48,750
+If this duck is fat, big, taking
+a lot of pixels, it may
+
+488
+00:19:48,750 --> 00:19:51,040
+take a little bit longer time.
+
+489
+00:19:51,040 --> 00:19:53,490
+So what do we do?
+
+490
+00:19:53,490 --> 00:19:59,830
+Remember earlier, we mentioned
+Chrome does pre-paint.
+
+491
+00:19:59,830 --> 00:20:04,415
+So if you keep that display
+block property, even when the
+
+492
+00:20:04,415 --> 00:20:08,310
+duck is off the screen and also
+use a previous trick we
+
+493
+00:20:08,310 --> 00:20:13,030
+mentioned, using the
+translateZ(0) to permanently
+
+494
+00:20:13,030 --> 00:20:17,040
+promote it to its own layer,
+after page loaded, before the
+
+495
+00:20:17,040 --> 00:20:20,210
+animation start, Chrome
+will paint the
+
+496
+00:20:20,210 --> 00:20:22,120
+duck in its own layer.
+
+497
+00:20:22,120 --> 00:20:26,170
+So when user calls the duck for
+help, the duck will just
+
+498
+00:20:26,170 --> 00:20:29,090
+jump out right away.
+
+499
+00:20:29,090 --> 00:20:31,430
+Of course, everything
+there is a tradeoff.
+
+500
+00:20:31,430 --> 00:20:35,280
+If the user never calls the duck
+for help, we still spend
+
+501
+00:20:35,280 --> 00:20:39,950
+cycles on the CPU to paint the
+duck and then allocated memory
+
+502
+00:20:39,950 --> 00:20:44,220
+on the GPU to cache it.
+
+503
+00:20:44,220 --> 00:20:46,130
+COLT MCANLIS: So what basically
+we're getting at
+
+504
+00:20:46,130 --> 00:20:48,730
+here is that with these small
+annotations and these CSS
+
+505
+00:20:48,730 --> 00:20:50,940
+properties, you can actually
+control how the GPU is being
+
+506
+00:20:50,940 --> 00:20:52,200
+used to render your page.
+
+507
+00:20:52,200 --> 00:20:54,660
+So you guys can make faster
+loading websites, faster
+
+508
+00:20:54,660 --> 00:20:56,960
+rendering websites, which make
+your users happier, which
+
+509
+00:20:56,960 --> 00:20:58,460
+means your websites
+make more money.
+
+510
+00:20:58,460 --> 00:21:00,840
+And then your boss recognizes
+your contribution and gives
+
+511
+00:21:00,840 --> 00:21:02,160
+you the bonus and promotion.
+
+512
+00:21:02,160 --> 00:21:05,420
+So really, we're here to help
+you get promotions so you can
+
+513
+00:21:05,420 --> 00:21:06,740
+drink margaritas and stuff.
+
+514
+00:21:06,740 --> 00:21:09,540
+Now with that, that we're giving
+to you, we're asking
+
+515
+00:21:09,540 --> 00:21:12,610
+you to then understand that as
+we inject the GPU into the
+
+516
+00:21:12,610 --> 00:21:15,130
+process, some parts of the
+architecture of how Chrome
+
+517
+00:21:15,130 --> 00:21:17,930
+works changes, which You
+need to be aware of.
+
+518
+00:21:17,930 --> 00:21:20,110
+Most important of that
+is how input is being
+
+519
+00:21:20,110 --> 00:21:21,300
+handled with this.
+
+520
+00:21:21,300 --> 00:21:23,470
+Because we're actually taking
+what was a single-threaded
+
+521
+00:21:23,470 --> 00:21:26,910
+process and adding some new
+components into it.
+
+522
+00:21:26,910 --> 00:21:28,980
+GRACE KLOBA: So before we talk
+about this new [INAUDIBLE]
+
+523
+00:21:28,980 --> 00:21:33,380
+threaded compositing, let's take
+a look at how without it
+
+524
+00:21:33,380 --> 00:21:34,520
+how it works.
+
+525
+00:21:34,520 --> 00:21:37,520
+So threaded compositing is a new
+concept that we added into
+
+526
+00:21:37,520 --> 00:21:38,570
+the Chrome.
+
+527
+00:21:38,570 --> 00:21:39,200
+And the Chrome [INAUDIBLE]
+
+528
+00:21:39,200 --> 00:21:41,460
+working on Chrome for
+Android, Chrome for
+
+529
+00:21:41,460 --> 00:21:43,460
+Chrome OS, and on Windows.
+
+530
+00:21:43,460 --> 00:21:46,830
+We're soon going to turn
+it on the Mac.
+
+531
+00:21:46,830 --> 00:21:52,070
+So when something changed
+[INAUDIBLE]
+
+532
+00:21:52,070 --> 00:21:53,400
+that's what do you did.
+
+533
+00:21:53,400 --> 00:21:57,630
+And then we will do the paint
+and the composite
+
+534
+00:21:57,630 --> 00:22:00,600
+on the BLINK thread.
+
+535
+00:22:00,600 --> 00:22:04,340
+And then present this content
+through the GPU commands to
+
+536
+00:22:04,340 --> 00:22:05,470
+the driver.
+
+537
+00:22:05,470 --> 00:22:09,890
+But the driver only consume
+the GPU commands up to the
+
+538
+00:22:09,890 --> 00:22:11,450
+refresh rate.
+
+539
+00:22:11,450 --> 00:22:16,000
+For example, at a 60 FPS display
+it only consume the
+
+540
+00:22:16,000 --> 00:22:21,700
+frame at 16.6 millisecond time
+frame, which means there's no
+
+541
+00:22:21,700 --> 00:22:25,740
+need, in our case, even the
+paint and to composite a small
+
+542
+00:22:25,740 --> 00:22:28,430
+amount of the work, there is
+still no need to paint it
+
+543
+00:22:28,430 --> 00:22:31,780
+twice using a 16 milliseconds
+frame.
+
+544
+00:22:31,780 --> 00:22:34,440
+COLT MCANLIS: And to be fair,
+that diagram is actually a
+
+545
+00:22:34,440 --> 00:22:35,310
+little misleading.
+
+546
+00:22:35,310 --> 00:22:38,340
+The what's going on under the
+hood in these browsers is not
+
+547
+00:22:38,340 --> 00:22:39,290
+actually that simple.
+
+548
+00:22:39,290 --> 00:22:42,210
+It's actually chaos in a jar,
+what's really going on.
+
+549
+00:22:42,210 --> 00:22:43,970
+Effectively, if you look at
+our single-threaded model
+
+550
+00:22:43,970 --> 00:22:46,910
+here, you have lots and lots
+of resources and events
+
+551
+00:22:46,910 --> 00:22:50,200
+fighting for time slices on this
+single-threaded model.
+
+552
+00:22:50,200 --> 00:22:51,920
+So things like parsing,
+layout, paint,
+
+553
+00:22:51,920 --> 00:22:52,760
+all of these things.
+
+554
+00:22:52,760 --> 00:22:54,600
+So what happens is if we
+actually get one of these
+
+555
+00:22:54,600 --> 00:22:57,690
+VBLANKS coming along asking for
+updated data, there's a
+
+556
+00:22:57,690 --> 00:23:00,480
+good chance that with all
+of the processing that's
+
+557
+00:23:00,480 --> 00:23:03,480
+occurring that the thread has
+not actually had a chance to
+
+558
+00:23:03,480 --> 00:23:09,320
+paint and give the VBLANK an
+updated vision of the scene.
+
+559
+00:23:09,320 --> 00:23:11,620
+Now, what's really interesting
+about this, when you dig a
+
+560
+00:23:11,620 --> 00:23:13,490
+little bit deeper, is that
+there's some things that you,
+
+561
+00:23:13,490 --> 00:23:14,800
+as a developer, can control.
+
+562
+00:23:14,800 --> 00:23:17,040
+So if we look at the breakdown
+of the blocks here, things
+
+563
+00:23:17,040 --> 00:23:20,070
+like Touch Events, JavaScript
+Events, onload callbacks, you
+
+564
+00:23:20,070 --> 00:23:23,250
+as developers really are in
+control of how long those
+
+565
+00:23:23,250 --> 00:23:26,960
+events take on the JavaScript
+processing thread.
+
+566
+00:23:26,960 --> 00:23:28,130
+Now, there's some other
+things though that you
+
+567
+00:23:28,130 --> 00:23:28,970
+really can't control.
+
+568
+00:23:28,970 --> 00:23:31,420
+You can wave your hands at it
+and maybe do some juju dances,
+
+569
+00:23:31,420 --> 00:23:33,600
+but it's really not going to
+change because on the browser
+
+570
+00:23:33,600 --> 00:23:35,920
+side of things, that's
+controlled--
+
+571
+00:23:35,920 --> 00:23:38,590
+things like layout, paints,
+and compositing.
+
+572
+00:23:38,590 --> 00:23:41,220
+Now, the good thing is that some
+of these can actually be
+
+573
+00:23:41,220 --> 00:23:44,240
+moved off onto different threads
+because of modern
+
+574
+00:23:44,240 --> 00:23:45,110
+architectures.
+
+575
+00:23:45,110 --> 00:23:46,730
+Like most of the phones in your
+pockets actually have
+
+576
+00:23:46,730 --> 00:23:50,740
+multiple cores, which means we
+can utilize modern techniques
+
+577
+00:23:50,740 --> 00:23:52,280
+for threaded programming.
+
+578
+00:23:52,280 --> 00:23:54,570
+Now, there's a great technique
+that Chrome does use called
+
+579
+00:23:54,570 --> 00:23:57,060
+multi-threaded painting, which
+actually allows us to take the
+
+580
+00:23:57,060 --> 00:23:58,950
+paint block, which traditionally
+was single
+
+581
+00:23:58,950 --> 00:24:01,750
+threaded sharing time with all
+of your JavaScript events, and
+
+582
+00:24:01,750 --> 00:24:04,770
+actually thread that out off
+to multiple threads, which
+
+583
+00:24:04,770 --> 00:24:06,290
+reduces the amount
+of time it takes.
+
+584
+00:24:06,290 --> 00:24:08,150
+Now, we're not going to talk
+about that today because
+
+585
+00:24:08,150 --> 00:24:09,360
+that's not on the GPU.
+
+586
+00:24:09,360 --> 00:24:11,390
+Instead, what we're going to
+talk about today is this other
+
+587
+00:24:11,390 --> 00:24:14,280
+block here, which is actually
+the composite operation.
+
+588
+00:24:14,280 --> 00:24:18,400
+The best way to think about this
+is after your painting is
+
+589
+00:24:18,400 --> 00:24:20,830
+done, remember that Chrome has
+to go back and actually create
+
+590
+00:24:20,830 --> 00:24:24,200
+all of these graphics driver
+commands, GPU commands, to
+
+591
+00:24:24,200 --> 00:24:26,450
+take those textures and upload
+them to the GPU and then
+
+592
+00:24:26,450 --> 00:24:27,950
+actually do that submit.
+
+593
+00:24:27,950 --> 00:24:29,685
+Of course, that isn't
+actually free.
+
+594
+00:24:29,685 --> 00:24:31,790
+It actually cuts into
+your frame time.
+
+595
+00:24:31,790 --> 00:24:33,930
+So what we want to talk about
+today is how we move that off
+
+596
+00:24:33,930 --> 00:24:37,020
+onto a different thread and
+what that means for you.
+
+597
+00:24:37,020 --> 00:24:39,450
+So we now have the BLINK thread,
+which is effectively
+
+598
+00:24:39,450 --> 00:24:40,700
+responsible--
+
+599
+00:24:40,700 --> 00:24:43,050
+
+600
+00:24:43,050 --> 00:24:44,680
+if there's one thing you should
+all take away from this
+
+601
+00:24:44,680 --> 00:24:47,180
+today is that there are tons of
+technical problems on this
+
+602
+00:24:47,180 --> 00:24:49,480
+side of the stage.
+
+603
+00:24:49,480 --> 00:24:51,250
+Basically we have our BLINK
+thread, which handles all of
+
+604
+00:24:51,250 --> 00:24:53,260
+our JavaScript processing,
+including layout and other
+
+605
+00:24:53,260 --> 00:24:54,080
+sorts of things.
+
+606
+00:24:54,080 --> 00:24:56,520
+And we can actually move the
+composite operation down onto
+
+607
+00:24:56,520 --> 00:24:57,480
+a separate thread.
+
+608
+00:24:57,480 --> 00:25:01,470
+So this means that whenever the
+system can define that a
+
+609
+00:25:01,470 --> 00:25:04,940
+composite is actually needed, we
+can actually go through and
+
+610
+00:25:04,940 --> 00:25:07,150
+kick off a composite onto
+a separate thread.
+
+611
+00:25:07,150 --> 00:25:10,420
+
+612
+00:25:10,420 --> 00:25:11,750
+And one more.
+
+613
+00:25:11,750 --> 00:25:12,490
+GRACE KLOBA: One more.
+
+614
+00:25:12,490 --> 00:25:12,720
+OK.
+
+615
+00:25:12,720 --> 00:25:14,370
+COLT MCANLIS: There we go.
+
+616
+00:25:14,370 --> 00:25:14,900
+Too far.
+
+617
+00:25:14,900 --> 00:25:16,480
+No, go back.
+
+618
+00:25:16,480 --> 00:25:19,850
+The universe, you divided
+by 0, no.
+
+619
+00:25:19,850 --> 00:25:20,710
+GRACE KLOBA: OK.
+
+620
+00:25:20,710 --> 00:25:23,970
+Calm down.
+
+621
+00:25:23,970 --> 00:25:26,460
+So it's good.
+
+622
+00:25:26,460 --> 00:25:28,910
+We move the composite into
+a separate thread.
+
+623
+00:25:28,910 --> 00:25:33,240
+So we offload some work
+from the BLINK thread.
+
+624
+00:25:33,240 --> 00:25:37,170
+But there is a key change we
+made is let the composite
+
+625
+00:25:37,170 --> 00:25:41,850
+thread to accept input events
+when it is possible.
+
+626
+00:25:41,850 --> 00:25:46,530
+For example, scroll events can
+be received and processed on
+
+627
+00:25:46,530 --> 00:25:49,100
+the composite thread without
+the intervention
+
+628
+00:25:49,100 --> 00:25:51,000
+of the BLINK thread.
+
+629
+00:25:51,000 --> 00:25:59,050
+This allows us to scroll as fast
+as possible even there is
+
+630
+00:25:59,050 --> 00:26:04,570
+a long JavaScript is executing
+in the BLINK thread.
+
+631
+00:26:04,570 --> 00:26:08,690
+It is the for this exactly
+reason we ask you to let the
+
+632
+00:26:08,690 --> 00:26:09,940
+browser to scroll.
+
+633
+00:26:09,940 --> 00:26:12,910
+
+634
+00:26:12,910 --> 00:26:17,660
+Simply put, if you're using
+touch events or mousewheel
+
+635
+00:26:17,660 --> 00:26:22,330
+events to drive the scroll, the
+benefit of the threaded
+
+636
+00:26:22,330 --> 00:26:25,150
+compositing is thrown
+out of the window.
+
+637
+00:26:25,150 --> 00:26:29,370
+The custom scroll libraries
+normally will put a touch
+
+638
+00:26:29,370 --> 00:26:32,830
+handler, mousewheel handler,
+and then they will call
+
+639
+00:26:32,830 --> 00:26:34,370
+prevent default.
+
+640
+00:26:34,370 --> 00:26:38,960
+So the result is there's no
+scroll events happen or get
+
+641
+00:26:38,960 --> 00:26:41,770
+sent to compositers thread.
+
+642
+00:26:41,770 --> 00:26:46,600
+What compositers thread can do
+is just wait for the BLINK
+
+643
+00:26:46,600 --> 00:26:50,130
+thread to process the JavaScript
+doing the layout
+
+644
+00:26:50,130 --> 00:26:51,060
+and then paint.
+
+645
+00:26:51,060 --> 00:26:54,020
+This is essentially go back to
+the single thread [INAUDIBLE].
+
+646
+00:26:54,020 --> 00:26:56,750
+
+647
+00:26:56,750 --> 00:26:57,330
+COLT MCANLIS: Now,
+this is actually
+
+648
+00:26:57,330 --> 00:26:58,610
+pretty common on mobile.
+
+649
+00:26:58,610 --> 00:27:00,560
+So how many of you guys actually
+have a mobile website
+
+650
+00:27:00,560 --> 00:27:03,655
+that has a static header
+at the top of it?
+
+651
+00:27:03,655 --> 00:27:04,800
+A good amount of hands.
+
+652
+00:27:04,800 --> 00:27:05,760
+So OK, keep your hands up.
+
+653
+00:27:05,760 --> 00:27:06,500
+Keep your hands up.
+
+654
+00:27:06,500 --> 00:27:09,200
+How many of you, in order to
+keep that banner at the top of
+
+655
+00:27:09,200 --> 00:27:12,810
+the page, actually intercept
+the scroll handler?
+
+656
+00:27:12,810 --> 00:27:14,490
+Still a couple of you, OK.
+
+657
+00:27:14,490 --> 00:27:15,650
+Well, I'm here to let
+you know that that's
+
+658
+00:27:15,650 --> 00:27:17,210
+actually a bad practice.
+
+659
+00:27:17,210 --> 00:27:19,820
+So just like Grace said, that
+when you intercept the scroll
+
+660
+00:27:19,820 --> 00:27:22,490
+handler on Chrome for Android,
+what you're effectively doing
+
+661
+00:27:22,490 --> 00:27:25,200
+is throwing out all of the
+cool stuff you get from
+
+662
+00:27:25,200 --> 00:27:26,160
+multi-threaded compositing.
+
+663
+00:27:26,160 --> 00:27:28,110
+And the result of that is what
+you're going to see is that as
+
+664
+00:27:28,110 --> 00:27:30,560
+the page scrolls, the scroll's
+going to happen and the
+
+665
+00:27:30,560 --> 00:27:32,850
+headers going to move, whether
+you like it or not.
+
+666
+00:27:32,850 --> 00:27:34,610
+And then your JavaScript
+code is actually going
+
+667
+00:27:34,610 --> 00:27:35,720
+to execute and fire.
+
+668
+00:27:35,720 --> 00:27:37,280
+And then you'll see your header
+snap to the position
+
+669
+00:27:37,280 --> 00:27:38,430
+that you want it to go to.
+
+670
+00:27:38,430 --> 00:27:41,020
+So if we have this beautiful
+Duck Surfing 101 page here and
+
+671
+00:27:41,020 --> 00:27:43,680
+you have the page scroll, you
+actually want this thing to
+
+672
+00:27:43,680 --> 00:27:45,250
+stay static.
+
+673
+00:27:45,250 --> 00:27:46,950
+Now, instead of actually
+intercepting the scroll
+
+674
+00:27:46,950 --> 00:27:49,470
+handler, you can take advantage
+of these CSS
+
+675
+00:27:49,470 --> 00:27:51,210
+properties that we've been using
+and actually put the
+
+676
+00:27:51,210 --> 00:27:53,090
+header in its own layer.
+
+677
+00:27:53,090 --> 00:27:56,475
+So if you actually add a
+position fixed as well as a
+
+678
+00:27:56,475 --> 00:27:59,580
+z-index 0 to this thing-- or
+z-index anything really, just
+
+679
+00:27:59,580 --> 00:28:02,600
+as long as a z-index is there
+so you can create proper
+
+680
+00:28:02,600 --> 00:28:03,825
+context stacking.
+
+681
+00:28:03,825 --> 00:28:06,200
+What this will do is actually
+promote the header into its
+
+682
+00:28:06,200 --> 00:28:08,880
+own layer and allow the page
+itself to transition
+
+683
+00:28:08,880 --> 00:28:09,400
+underneath it.
+
+684
+00:28:09,400 --> 00:28:12,250
+So you will get the overhead of
+having your own layer, but
+
+685
+00:28:12,250 --> 00:28:14,440
+you won't get the ghost chasing
+effect that you're
+
+686
+00:28:14,440 --> 00:28:15,680
+going to see on top of mobile.
+
+687
+00:28:15,680 --> 00:28:17,560
+If you want a really great
+example of who does this
+
+688
+00:28:17,560 --> 00:28:22,470
+right, definitely check out
+the Google I/O 2013 mobile
+
+689
+00:28:22,470 --> 00:28:24,280
+site where we do this on
+the session agenda.
+
+690
+00:28:24,280 --> 00:28:26,250
+You can actually see as things
+scroll, we have these static
+
+691
+00:28:26,250 --> 00:28:28,280
+headers at the top and it
+does it the right way.
+
+692
+00:28:28,280 --> 00:28:28,950
+Look at the source code.
+
+693
+00:28:28,950 --> 00:28:32,020
+It's a great example.
+
+694
+00:28:32,020 --> 00:28:34,330
+And so with that though, it's
+worth pointing out, that we
+
+695
+00:28:34,330 --> 00:28:36,810
+just gave you an example that
+we didn't talk about before.
+
+696
+00:28:36,810 --> 00:28:38,090
+We talked about TranslateZ.
+
+697
+00:28:38,090 --> 00:28:39,825
+We talked about overflow.
+
+698
+00:28:39,825 --> 00:28:42,210
+We talked about those other
+things and that will promote
+
+699
+00:28:42,210 --> 00:28:43,770
+items into their own
+layer as well.
+
+700
+00:28:43,770 --> 00:28:46,050
+But in reality, you may have
+inadvertently put something
+
+701
+00:28:46,050 --> 00:28:48,280
+into a layer without really
+knowing about it, which means
+
+702
+00:28:48,280 --> 00:28:49,950
+that we are not leaving
+you abandoned here.
+
+703
+00:28:49,950 --> 00:28:52,530
+We actually have updated our
+tools to tell you how the GPU
+
+704
+00:28:52,530 --> 00:28:54,330
+is doing things.
+
+705
+00:28:54,330 --> 00:28:57,780
+First off, there's a fantastic
+set of flags that you can turn
+
+706
+00:28:57,780 --> 00:28:59,700
+on in Chrome's dev tools
+that will tell you
+
+707
+00:28:59,700 --> 00:29:01,010
+where the layers are.
+
+708
+00:29:01,010 --> 00:29:02,830
+First off, if you open up dev
+tools you actually see this
+
+709
+00:29:02,830 --> 00:29:05,190
+beautiful awesome little flag
+there that says, Show
+
+710
+00:29:05,190 --> 00:29:06,600
+Composited Borders.
+
+711
+00:29:06,600 --> 00:29:09,630
+What effectively this does is
+any of your layers it will add
+
+712
+00:29:09,630 --> 00:29:13,090
+an orange border around the
+boundaries of the layer.
+
+713
+00:29:13,090 --> 00:29:15,950
+So I randomly took a picture
+of a random website on the
+
+714
+00:29:15,950 --> 00:29:16,800
+internet here.
+
+715
+00:29:16,800 --> 00:29:19,750
+And you can actually see that
+what we have here is lots and
+
+716
+00:29:19,750 --> 00:29:21,280
+lots and lots of layers.
+
+717
+00:29:21,280 --> 00:29:22,880
+That's what each one of those
+orange borders means.
+
+718
+00:29:22,880 --> 00:29:26,620
+So part of their feed here,
+effectively, is each layer.
+
+719
+00:29:26,620 --> 00:29:28,270
+If you look at the source code
+of this, you'll actually see
+
+720
+00:29:28,270 --> 00:29:30,800
+that each one of those leaf
+elements in the DOM has
+
+721
+00:29:30,800 --> 00:29:32,420
+TranslateZ on it.
+
+722
+00:29:32,420 --> 00:29:34,160
+So once again, you're seeing
+that this would come to bad
+
+723
+00:29:34,160 --> 00:29:35,810
+performance like we've
+already talked about.
+
+724
+00:29:35,810 --> 00:29:37,300
+Because each one of those
+layers is going to have
+
+725
+00:29:37,300 --> 00:29:38,250
+additional tiles.
+
+726
+00:29:38,250 --> 00:29:40,290
+All of those tiles are going to
+be fighting for residency
+
+727
+00:29:40,290 --> 00:29:41,670
+inside of GPU memory.
+
+728
+00:29:41,670 --> 00:29:44,330
+And of course, this is going to
+slow things down on mobile.
+
+729
+00:29:44,330 --> 00:29:46,970
+Now the cool thing is that it's
+not always axial aligned
+
+730
+00:29:46,970 --> 00:29:47,990
+like one of the images there.
+
+731
+00:29:47,990 --> 00:29:50,090
+You can see that they actually
+have this loading icon that is
+
+732
+00:29:50,090 --> 00:29:53,190
+going to be rotated with a CSS
+transform as well as a little
+
+733
+00:29:53,190 --> 00:29:54,460
+animated gif too.
+
+734
+00:29:54,460 --> 00:29:57,650
+And you can see that the cool
+borders match that as well.
+
+735
+00:29:57,650 --> 00:29:59,520
+Now, it's worth pointing out
+that these borders, as they're
+
+736
+00:29:59,520 --> 00:30:02,800
+rendered, actually obey
+occlusion ordering.
+
+737
+00:30:02,800 --> 00:30:04,230
+So effectively, if you've got
+that nice little spinning
+
+738
+00:30:04,230 --> 00:30:06,220
+thing and then an image in
+front of it, you won't
+
+739
+00:30:06,220 --> 00:30:07,340
+actually see that border.
+
+740
+00:30:07,340 --> 00:30:11,850
+So take that into account
+as you're moving along.
+
+741
+00:30:11,850 --> 00:30:14,540
+Another great tool that you can
+actually dive into is one
+
+742
+00:30:14,540 --> 00:30:16,410
+called chrome://tracing.
+
+743
+00:30:16,410 --> 00:30:19,310
+Now chrome://tracing
+personally--
+
+744
+00:30:19,310 --> 00:30:22,860
+hey, I'm a beat box guy now.
+
+745
+00:30:22,860 --> 00:30:24,600
+Chrome://tracing is actually
+my favorite tool inside of
+
+746
+00:30:24,600 --> 00:30:26,930
+Chrome because it will actually
+tell you what Chrome
+
+747
+00:30:26,930 --> 00:30:28,420
+is doing under the hood.
+
+748
+00:30:28,420 --> 00:30:30,920
+Effectively, it gives you a
+hierarchical view of the call
+
+749
+00:30:30,920 --> 00:30:34,300
+stack that's happening inside of
+Chrome based upon what your
+
+750
+00:30:34,300 --> 00:30:35,390
+website is doing.
+
+751
+00:30:35,390 --> 00:30:38,360
+So I actually put together a
+little test page to give you
+
+752
+00:30:38,360 --> 00:30:39,330
+this graphic here.
+
+753
+00:30:39,330 --> 00:30:42,440
+And effectively, all the test
+page did was load a bunch of
+
+754
+00:30:42,440 --> 00:30:46,710
+large images, like 1024's and
+2048's, and actually resize
+
+755
+00:30:46,710 --> 00:30:50,200
+them with a width and height
+parameter down to 64 by 64's.
+
+756
+00:30:50,200 --> 00:30:52,160
+And this is what
+chrome://tracing showed me.
+
+757
+00:30:52,160 --> 00:30:55,040
+So first off, the 1024 by
+1024 actually took 51
+
+758
+00:30:55,040 --> 00:30:56,420
+milliseconds to decode.
+
+759
+00:30:56,420 --> 00:30:58,970
+And then after that,
+it took another 29
+
+760
+00:30:58,970 --> 00:31:00,910
+milliseconds to resize.
+
+761
+00:31:00,910 --> 00:31:02,690
+So think of it this way, for
+all of you guys in here who
+
+762
+00:31:02,690 --> 00:31:04,890
+are doing responsive web design,
+and you're sending
+
+763
+00:31:04,890 --> 00:31:07,230
+your full resolution desktop
+images down to your mobile
+
+764
+00:31:07,230 --> 00:31:08,980
+client because you feel that
+that's the only way you can
+
+765
+00:31:08,980 --> 00:31:11,540
+handle viewport differences,
+you could be
+
+766
+00:31:11,540 --> 00:31:13,020
+wasting a lot of time.
+
+767
+00:31:13,020 --> 00:31:15,190
+Instead, you can see that the
+next image that I had in the
+
+768
+00:31:15,190 --> 00:31:16,770
+list was much smaller.
+
+769
+00:31:16,770 --> 00:31:18,410
+It was about 128 by 128.
+
+770
+00:31:18,410 --> 00:31:20,420
+So the decode took less
+time, as well as the
+
+771
+00:31:20,420 --> 00:31:21,840
+resize took less time.
+
+772
+00:31:21,840 --> 00:31:24,060
+So the cool thing to take away
+from this slide is that we can
+
+773
+00:31:24,060 --> 00:31:27,410
+actually figure out how your
+page is using the GPU by
+
+774
+00:31:27,410 --> 00:31:29,900
+looking at some patterns that
+you can see inside of
+
+775
+00:31:29,900 --> 00:31:32,650
+chrome://tracing.
+
+776
+00:31:32,650 --> 00:31:35,250
+GRACE KLOBA: So earlier we
+talked about browser scroll
+
+777
+00:31:35,250 --> 00:31:37,240
+versus JavaScript scroll.
+
+778
+00:31:37,240 --> 00:31:39,930
+Let's take a look in the
+chrome://tracing.
+
+779
+00:31:39,930 --> 00:31:47,000
+So in this case, the top row
+is a compositers thread.
+
+780
+00:31:47,000 --> 00:31:51,080
+The bottom row called
+[? CrRendererMain ?]
+
+781
+00:31:51,080 --> 00:31:53,290
+is essentially the
+BLINK thread.
+
+782
+00:31:53,290 --> 00:31:58,090
+The number on the left is a
+process ID because compositer
+
+783
+00:31:58,090 --> 00:32:01,950
+and the BLINK thread are both in
+the render process, so they
+
+784
+00:32:01,950 --> 00:32:06,390
+have the same number,
+same process ID.
+
+785
+00:32:06,390 --> 00:32:11,260
+Chrome trace also comes with
+this nice FPS guideline.
+
+786
+00:32:11,260 --> 00:32:18,870
+So it's running at a 60 FPS,
+repeated at 16.6 milliseconds.
+
+787
+00:32:18,870 --> 00:32:20,570
+In this case, [INAUDIBLE]
+
+788
+00:32:20,570 --> 00:32:24,680
+line data was the first
+composite in this window.
+
+789
+00:32:24,680 --> 00:32:31,850
+As you can see, the scroll is
+updated nicely at 60 FPS, even
+
+790
+00:32:31,850 --> 00:32:35,070
+when we have a long paint
+happening in the BLINK thread.
+
+791
+00:32:35,070 --> 00:32:37,940
+
+792
+00:32:37,940 --> 00:32:40,780
+Let's take look at
+another trace.
+
+793
+00:32:40,780 --> 00:32:44,180
+This is done on the same device
+with the same version
+
+794
+00:32:44,180 --> 00:32:45,780
+of the Chrome.
+
+795
+00:32:45,780 --> 00:32:48,360
+Instead, we load a different
+page, of course.
+
+796
+00:32:48,360 --> 00:32:50,450
+Otherwise, it should be same.
+
+797
+00:32:50,450 --> 00:32:54,900
+So in this page, the JavaScript
+is hijacking the
+
+798
+00:32:54,900 --> 00:33:00,830
+touch events, and then drive
+the scrolling of the page.
+
+799
+00:33:00,830 --> 00:33:05,920
+First thing we did is pull back
+our IPS guideline and
+
+800
+00:33:05,920 --> 00:33:08,860
+left the line with the
+first composite.
+
+801
+00:33:08,860 --> 00:33:12,960
+Immediately, you will notice
+between the second and the
+
+802
+00:33:12,960 --> 00:33:18,600
+third composite, it took 33
+milliseconds instead of the 16
+
+803
+00:33:18,600 --> 00:33:20,640
+milliseconds.
+
+804
+00:33:20,640 --> 00:33:22,190
+Why?
+
+805
+00:33:22,190 --> 00:33:26,310
+Because in this case, we also
+have a long paint happening in
+
+806
+00:33:26,310 --> 00:33:27,700
+the BLINK thread.
+
+807
+00:33:27,700 --> 00:33:32,600
+And because the scrolling is
+driven by the JavaScript, so
+
+808
+00:33:32,600 --> 00:33:36,640
+the composite step in the
+compositers thread cannot
+
+809
+00:33:36,640 --> 00:33:41,480
+start until the paint
+is finished.
+
+810
+00:33:41,480 --> 00:33:49,720
+So again, the thing you want to
+learn from this example is
+
+811
+00:33:49,720 --> 00:33:53,380
+let the browser scroll.
+
+812
+00:33:53,380 --> 00:33:55,140
+COLT MCANLIS: And with that, we
+can recap what we've talked
+
+813
+00:33:55,140 --> 00:33:56,020
+about today.
+
+814
+00:33:56,020 --> 00:33:58,050
+Four main bullet points to
+walk away from this talk.
+
+815
+00:33:58,050 --> 00:34:01,230
+Number one, making a
+presentation is a lot more
+
+816
+00:34:01,230 --> 00:34:03,220
+technically difficult apparently
+than writing a
+
+817
+00:34:03,220 --> 00:34:05,960
+whole web browser.
+
+818
+00:34:05,960 --> 00:34:07,750
+First off is actually
+GPU plus layers
+
+819
+00:34:07,750 --> 00:34:09,010
+equals faster rendering.
+
+820
+00:34:09,010 --> 00:34:11,110
+By actually getting the GPU
+into the mix and actually
+
+821
+00:34:11,110 --> 00:34:13,600
+using layers, we can allow it
+to alleviate a lot of the
+
+822
+00:34:13,600 --> 00:34:15,540
+processing burden that would
+previously exist in
+
+823
+00:34:15,540 --> 00:34:17,580
+rasterization on the CPU.
+
+824
+00:34:17,580 --> 00:34:20,170
+But that comes with a caveat
+though, is that too many
+
+825
+00:34:20,170 --> 00:34:21,940
+layers is going to be a
+seriously bad time.
+
+826
+00:34:21,940 --> 00:34:23,540
+If you put too many layers out
+there, everything's going to
+
+827
+00:34:23,540 --> 00:34:26,560
+be fighting for residency inside
+of the GPU tile cache
+
+828
+00:34:26,560 --> 00:34:28,139
+and that's going to create
+some problems.
+
+829
+00:34:28,139 --> 00:34:30,489
+In addition to that, that's
+going to create some changes
+
+830
+00:34:30,489 --> 00:34:33,340
+in how input is handled,
+especially for mobile devices,
+
+831
+00:34:33,340 --> 00:34:35,300
+which means that you guys
+should really let Chrome
+
+832
+00:34:35,300 --> 00:34:37,090
+handle the scrolling
+of things.
+
+833
+00:34:37,090 --> 00:34:38,280
+You're going to have a
+smoother frame rate.
+
+834
+00:34:38,280 --> 00:34:39,409
+It's going to give your
+users a better
+
+835
+00:34:39,409 --> 00:34:40,429
+impression of your site.
+
+836
+00:34:40,429 --> 00:34:41,940
+You're going to make lots of
+money and get really cool
+
+837
+00:34:41,940 --> 00:34:42,194
+promotions.
+
+838
+00:34:42,194 --> 00:34:44,699
+And then you can send Grace and
+I emails thanking us for
+
+839
+00:34:44,699 --> 00:34:46,650
+all of our time and effort
+that we put into this
+
+840
+00:34:46,650 --> 00:34:48,270
+technically flawed talk.
+
+841
+00:34:48,270 --> 00:34:50,050
+And then finally, if you're not
+really sure what's going
+
+842
+00:34:50,050 --> 00:34:52,210
+on, please use tooling to
+verify what's going
+
+843
+00:34:52,210 --> 00:34:53,050
+on under the hood.
+
+844
+00:34:53,050 --> 00:34:55,280
+Use things like show composited
+borders, as well as
+
+845
+00:34:55,280 --> 00:34:57,190
+about tracing and get
+a really good deep
+
+846
+00:34:57,190 --> 00:34:59,160
+dive of what's happening.
+
+847
+00:34:59,160 --> 00:35:01,650
+So with that, we thank you all
+so much for giving us your
+
+848
+00:35:01,650 --> 00:35:02,620
+time today.
+
+849
+00:35:02,620 --> 00:35:05,660
+Before we take off, I want
+to actually, once again,
+
+850
+00:35:05,660 --> 00:35:07,920
+encourage all of you to use the
+perfmatters hashtag for
+
+851
+00:35:07,920 --> 00:35:09,340
+any of your web performance
+related things.
+
+852
+00:35:09,340 --> 00:35:13,150
+As well as invite you
+to join the Google+
+
+853
+00:35:13,150 --> 00:35:14,570
+web performance community.
+
+854
+00:35:14,570 --> 00:35:17,660
+You can see the short link
+there goo.gl/webperf.
+
+855
+00:35:17,660 --> 00:35:18,840
+It's a fantastic community.
+
+856
+00:35:18,840 --> 00:35:21,020
+We've got lots of the big brains
+in web performance all
+
+857
+00:35:21,020 --> 00:35:21,850
+contributing there.
+
+858
+00:35:21,850 --> 00:35:25,360
+It's a community of awesome
+web performance stuff.
+
+859
+00:35:25,360 --> 00:35:27,760
+With that, it looks like we've
+got about four minutes and 30
+
+860
+00:35:27,760 --> 00:35:29,530
+seconds for questions.
+
+861
+00:35:29,530 --> 00:35:30,390
+The mics are here.
+
+862
+00:35:30,390 --> 00:35:32,230
+Please give us your thoughts.
+
+863
+00:35:32,230 --> 00:35:34,510
+Thank you.
+
+864
+00:35:34,510 --> 00:35:44,410
+[APPLAUSE]
+
+865
+00:35:44,410 --> 00:35:47,230
+AUDIENCE: I have three brief
+questions if I can read my own
+
+866
+00:35:47,230 --> 00:35:47,770
+handwriting.
+
+867
+00:35:47,770 --> 00:35:48,780
+COLT MCANLIS: Wait, how
+brief can they be?
+
+868
+00:35:48,780 --> 00:35:50,400
+You wrote them down.
+
+869
+00:35:50,400 --> 00:35:51,860
+AUDIENCE: That was so I
+could pay attention.
+
+870
+00:35:51,860 --> 00:35:53,710
+COLT MCANLIS: That's not
+a brief question.
+
+871
+00:35:53,710 --> 00:35:56,040
+AUDIENCE: What is the limit
+to the number of tiles?
+
+872
+00:35:56,040 --> 00:36:00,580
+Is it 100 tiles, 1,000 tiles,
+10 tiles, in the mem
+
+873
+00:36:00,580 --> 00:36:02,405
+cache of the GPU?
+
+874
+00:36:02,405 --> 00:36:05,120
+GRACE KLOBA: It really
+depends.
+
+875
+00:36:05,120 --> 00:36:10,240
+As we mentioned, the impact
+of the tiles is memory.
+
+876
+00:36:10,240 --> 00:36:11,080
+So we try to do--
+
+877
+00:36:11,080 --> 00:36:12,240
+[? the parsing ?]
+
+878
+00:36:12,240 --> 00:36:16,800
+is the tile is fully behind
+it, we're not
+
+879
+00:36:16,800 --> 00:36:18,090
+going to render it.
+
+880
+00:36:18,090 --> 00:36:21,910
+But if there is overlap because
+of the tile size, you
+
+881
+00:36:21,910 --> 00:36:23,290
+of course pay the overhead.
+
+882
+00:36:23,290 --> 00:36:25,760
+So that depends on how
+much you overlap.
+
+883
+00:36:25,760 --> 00:36:28,650
+AUDIENCE: So I guess the main
+question is, how big is the
+
+884
+00:36:28,650 --> 00:36:32,170
+memory that's allocated
+to the GPU?
+
+885
+00:36:32,170 --> 00:36:33,940
+GRACE KLOBA: As I think I
+mentioned earlier, it's really
+
+886
+00:36:33,940 --> 00:36:35,645
+device dependent.
+
+887
+00:36:35,645 --> 00:36:37,990
+So for example, [INAUDIBLE]
+
+888
+00:36:37,990 --> 00:36:43,950
+the Android mobile device,
+we're basically using the
+
+889
+00:36:43,950 --> 00:36:45,810
+memory limit, which is--
+
+890
+00:36:45,810 --> 00:36:49,410
+most of today's mobile devices
+are unified memory.
+
+891
+00:36:49,410 --> 00:36:56,080
+So the total memory on the
+Galaxy Nexus is 1 gig, on the
+
+892
+00:36:56,080 --> 00:36:57,990
+Nexus 10 it's 2 gig.
+
+893
+00:36:57,990 --> 00:36:59,520
+That's overall memory.
+
+894
+00:36:59,520 --> 00:37:02,815
+But available for the GPU we use
+that one as a measurement
+
+895
+00:37:02,815 --> 00:37:06,900
+and also using the screen
+resolution as a measurement.
+
+896
+00:37:06,900 --> 00:37:09,680
+In these two cases, we probably
+allocated a limited,
+
+897
+00:37:09,680 --> 00:37:12,600
+so around 256 meg.
+
+898
+00:37:12,600 --> 00:37:14,880
+AUDIENCE: OK, so it's actually
+part of the RAM is--
+
+899
+00:37:14,880 --> 00:37:15,920
+GRACE KLOBA: Yeah,
+part of the RAM.
+
+900
+00:37:15,920 --> 00:37:18,370
+And then we have to be
+conservative because there's
+
+901
+00:37:18,370 --> 00:37:19,020
+other apps.
+
+902
+00:37:19,020 --> 00:37:23,030
+So we basically allocate a
+budget based on the device
+
+903
+00:37:23,030 --> 00:37:26,077
+memory limit and the
+screen resolution.
+
+904
+00:37:26,077 --> 00:37:27,860
+AUDIENCE: OK, should I go to the
+back of the line or ask--
+
+905
+00:37:27,860 --> 00:37:28,150
+COLT MCANLIS: Yeah,
+if you don't mind.
+
+906
+00:37:28,150 --> 00:37:29,190
+We'll get some more
+questions in here.
+
+907
+00:37:29,190 --> 00:37:29,980
+This side over here.
+
+908
+00:37:29,980 --> 00:37:33,670
+AUDIENCE: Hi, question is, are
+there any good methods for
+
+909
+00:37:33,670 --> 00:37:37,080
+syncing scrolling between
+different panes, if you want
+
+910
+00:37:37,080 --> 00:37:42,950
+to create a paned approach, that
+don't rely on JavaScript?
+
+911
+00:37:42,950 --> 00:37:44,290
+GRACE KLOBA: Different page?
+
+912
+00:37:44,290 --> 00:37:45,040
+AUDIENCE: Panes.
+
+913
+00:37:45,040 --> 00:37:47,170
+So for example, your
+iOS session
+
+914
+00:37:47,170 --> 00:37:48,010
+example was a good one.
+
+915
+00:37:48,010 --> 00:37:51,020
+I noticed on iOS on Safari
+that while the vertical
+
+916
+00:37:51,020 --> 00:37:53,530
+scrolling sticks nicely, the
+horizontal scrolling doesn't
+
+917
+00:37:53,530 --> 00:37:54,340
+work at all.
+
+918
+00:37:54,340 --> 00:37:56,160
+It doesn't keep it in
+sync as you scroll.
+
+919
+00:37:56,160 --> 00:37:59,680
+So are there mechanisms to have
+different divs within a
+
+920
+00:37:59,680 --> 00:38:02,470
+web page where the scrolling in
+one direction or the other
+
+921
+00:38:02,470 --> 00:38:05,850
+is synced between them, and yet,
+still have some of the
+
+922
+00:38:05,850 --> 00:38:09,260
+advantages of layering?
+
+923
+00:38:09,260 --> 00:38:12,800
+GRACE KLOBA: I think, if I
+understand the question, is
+
+924
+00:38:12,800 --> 00:38:16,180
+you want the vertical scroll
+handled by the browser, but
+
+925
+00:38:16,180 --> 00:38:18,670
+the left and the right
+handled by content?
+
+926
+00:38:18,670 --> 00:38:20,520
+AUDIENCE: Yeah, think of Google
+spreadsheet where you
+
+927
+00:38:20,520 --> 00:38:24,010
+have the ability to split panes
+and go both directions.
+
+928
+00:38:24,010 --> 00:38:28,730
+Well, when I scroll horizontally
+I need both the
+
+929
+00:38:28,730 --> 00:38:33,040
+header, or top and bottom
+panes, to stay in sync.
+
+930
+00:38:33,040 --> 00:38:33,630
+COLT MCANLIS: I think the--
+
+931
+00:38:33,630 --> 00:38:34,785
+AUDIENCE: When I scroll
+vertically I need--
+
+932
+00:38:34,785 --> 00:38:36,035
+COLT MCANLIS: You have
+to invoke dark magic.
+
+933
+00:38:36,035 --> 00:38:39,830
+
+934
+00:38:39,830 --> 00:38:41,040
+That's a tricky one.
+
+935
+00:38:41,040 --> 00:38:44,100
+Let's dig deep on that if
+you guys wouldn't mind.
+
+936
+00:38:44,100 --> 00:38:45,420
+We're actually running
+out of time here.
+
+937
+00:38:45,420 --> 00:38:47,560
+And I know there's lots of
+question, so Grace and I will
+
+938
+00:38:47,560 --> 00:38:49,550
+actually be at the Chrome
+Office Hours for
+
+939
+00:38:49,550 --> 00:38:50,500
+the next half hour.
+
+940
+00:38:50,500 --> 00:38:53,180
+Please, everyone in line and
+anyone else who has questions,
+
+941
+00:38:53,180 --> 00:38:54,190
+please come meet us there.
+
+942
+00:38:54,190 --> 00:38:56,110
+Let's talk more about this stuff
+and help you guys out.
+
+943
+00:38:56,110 --> 00:38:57,270
+Once again, thank you
+for your time today.
+
+944
+00:38:57,270 --> 00:38:58,170
+Appreciate it.
+
+945
+00:38:58,170 --> 00:39:01,778
+[APPLAUSE]
+

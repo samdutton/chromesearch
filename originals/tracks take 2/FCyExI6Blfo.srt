@@ -1,0 +1,195 @@
+1
+00:00:01,150 --> 00:00:04,240
+What is PageSpeed Service and how does it
+work?
+
+2
+00:00:04,240 --> 00:00:09,769
+Web pages today contain a lot more than HTML.
+They combine stylesheets, images, videos,
+
+3
+00:00:09,769 --> 00:00:15,009
+Javascript files and other components to give
+the rich interactive experience we now expect
+
+4
+00:00:15,009 --> 00:00:16,250
+on the web.
+
+5
+00:00:16,250 --> 00:00:21,509
+This means however that to display a web page,
+a browser has to make several HTTP requests,
+
+6
+00:00:21,509 --> 00:00:26,220
+as many as 43 requests for the average web
+page, to fetch all these resources from the
+
+7
+00:00:26,220 --> 00:00:28,480
+server hosting your site.
+
+8
+00:00:28,480 --> 00:00:33,610
+Many such network requests to fetch files
+one after another increases wait time and
+
+9
+00:00:33,610 --> 00:00:39,410
+slows down the page. Slow web pages can make
+visitors to your site less engaged and even
+
+10
+00:00:39,410 --> 00:00:43,420
+frustrated, leading to lower conversion and
+lost revenue.
+
+11
+00:00:43,420 --> 00:00:48,300
+Google PageSpeed Service is an online service
+you can use to automatically speed up your
+
+12
+00:00:48,300 --> 00:00:54,120
+website. It rewrites web pages dynamically
+to apply several performance-improving practices,
+
+13
+00:00:54,120 --> 00:00:59,950
+and then serves the optimized pages via Google
+servers to reduce page load time.
+
+14
+00:00:59,950 --> 00:01:03,870
+When you first setup PageSpeed Service for
+your site, you’ll be guided to change its
+
+15
+00:01:03,870 --> 00:01:10,140
+DNS entry so that your domain name points
+to PageSpeed servers. Once completed, PageSpeed
+
+16
+00:01:10,140 --> 00:01:15,470
+servers will serve your web pages and intelligently
+cache their resources to serve them to users
+
+17
+00:01:15,470 --> 00:01:20,430
+faster. They’ll also fetch newer content
+from your original host server so that the
+
+18
+00:01:20,430 --> 00:01:24,670
+latest version of your website is always served
+to users.
+
+19
+00:01:24,670 --> 00:01:29,800
+PageSpeed servers are located in Google operated
+datacenters distributed around the world.
+
+20
+00:01:29,800 --> 00:01:34,630
+So your site will benefit from the speed,
+efficiency and security of the same infrastructure
+
+21
+00:01:34,630 --> 00:01:37,260
+that powers all of Google.
+
+22
+00:01:37,260 --> 00:01:42,409
+PageSpeed rewriters use a combination of techniques
+to optimize web pages. One of them is to reduce
+
+23
+00:01:42,409 --> 00:01:47,860
+the number and size of the resources to be
+fetched. PageSpeed Service rewrites web pages
+
+24
+00:01:47,860 --> 00:01:53,409
+to merge and compress Javascript, stylesheet
+and image files, and to parallelize the download
+
+25
+00:01:53,409 --> 00:02:00,070
+of these files wherever possible. This means
+fewer HTTP requests and lower round-trip times,
+
+26
+00:02:00,070 --> 00:02:03,790
+so your web page gets delivered to the browser
+faster.
+
+27
+00:02:03,790 --> 00:02:08,319
+Another technique is to reduce the perceived
+page load time. This is the minimum time that
+
+28
+00:02:08,319 --> 00:02:11,730
+users have to wait before they can view the
+page.
+
+29
+00:02:11,730 --> 00:02:16,709
+The typical web page today is long and has
+many visual elements. But only a small portion
+
+30
+00:02:16,709 --> 00:02:21,519
+of the page is initially visible in the browser
+once the page has loaded.
+
+31
+00:02:21,519 --> 00:02:26,069
+PageSpeed Service can rewrite a web page so
+that the parts of the page that users expect
+
+32
+00:02:26,069 --> 00:02:31,989
+to see first get downloaded first. This means
+users can engage with your site right away,
+
+33
+00:02:31,989 --> 00:02:36,980
+without having to wait for the full page to
+load. The rewriters can also cache parts of
+
+34
+00:02:36,980 --> 00:02:41,189
+the page that don’t change frequently so
+they get delivered to the browser quickly
+
+35
+00:02:41,189 --> 00:02:43,409
+on future visits to your site.
+
+36
+00:02:43,409 --> 00:02:48,859
+This combination of advanced rewriter technology
+and global serving infrastructure can dramatically
+
+37
+00:02:48,859 --> 00:02:54,909
+reduce the load time of your web pages, often
+by as much as 40%. Faster web pages improve
+
+38
+00:02:54,909 --> 00:02:59,950
+the experience of visitors to your site and
+so can increase both traffic and customer
+
+39
+00:02:59,950 --> 00:03:01,180
+conversion.
+
+40
+00:03:01,180 --> 00:03:05,309
+So get started with PageSpeed Service today
+and discover how fast your websites can be!
+

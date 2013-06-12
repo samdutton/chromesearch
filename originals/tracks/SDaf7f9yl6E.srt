@@ -1,0 +1,2654 @@
+1
+00:00:03,199 --> 00:00:06,660
+>>Ellie Powers: All right. Hi, everybody.
+Good morning.
+
+2
+00:00:06,660 --> 00:00:10,500
+Good morning!
+Good morning. Wow, it's amazing to see so
+
+3
+00:00:10,500 --> 00:00:14,129
+many people out in the morning, and hello
+to you back there who waved to me. Thank you.
+
+4
+00:00:14,129 --> 00:00:19,270
+So I'm Ellie Powers. I'm the product manager
+for Google Play developer, so many of you
+
+5
+00:00:19,270 --> 00:00:21,910
+guys here.
+>>Miles Barr: Hi. I'm Miles Barr. I'm the
+
+6
+00:00:21,910 --> 00:00:25,550
+engineering manager for apps in Google Play.
+>>Riccardo Govoni: Hello, I'm Riccardo, tech
+
+7
+00:00:25,550 --> 00:00:29,390
+lead for the Google Play Developer Console.
+>>Ellie Powers: All right. And some of you
+
+8
+00:00:29,390 --> 00:00:34,579
+saw us earlier this week at I/O, and so what
+we're going to be doing today is to give you
+
+9
+00:00:34,579 --> 00:00:38,800
+even more of what we showed you. So you will
+get to see more details on the features that
+
+10
+00:00:38,800 --> 00:00:41,980
+we announced as well as a couple more new
+things.
+
+11
+00:00:41,980 --> 00:00:48,980
+So let's go back in the past for a second.
+Last year, Android Market -- do you remember
+
+12
+00:00:51,820 --> 00:00:56,649
+that? It was a recent memory. And Google Play
+was brand-new. And all of you who publish
+
+13
+00:00:56,649 --> 00:01:00,610
+apps on Google Play were using something that
+looked like this. This is the old Developer
+
+14
+00:01:00,610 --> 00:01:04,430
+Console. I hope you've completely forgotten
+about it but if you haven't it looked a little
+
+15
+00:01:04,430 --> 00:01:10,439
+bit like a Web form from 1999.
+So Miles and I came on the stage at I/O last
+
+16
+00:01:10,439 --> 00:01:14,979
+year and said, guys, we've totally heard you.
+Your businesses are really taking off and
+
+17
+00:01:14,979 --> 00:01:18,869
+you need something that's really going to
+scale; right? You need some professional tools
+
+18
+00:01:18,869 --> 00:01:21,899
+to support all the great things that you're
+doing now.
+
+19
+00:01:21,899 --> 00:01:27,009
+And we said, "Don't worry. We've got your
+back. We've been working on something great."
+
+20
+00:01:27,009 --> 00:01:31,799
+It's the new Developer Console.
+So back in London where we're all based, we
+
+21
+00:01:31,799 --> 00:01:37,369
+were excited to see your response. You started
+sending us thousands of pieces of feedback.
+
+22
+00:01:37,369 --> 00:01:41,979
+It just all started pouring in. And many of
+you may be wondering, I sent in that feedback
+
+23
+00:01:41,979 --> 00:01:46,079
+and then what happened? Did anyone read it?
+Did it just go into a hole?
+
+24
+00:01:46,079 --> 00:01:50,959
+So I can tell you, rest assured, your feedback
+was read, and I know that because I actually
+
+25
+00:01:50,959 --> 00:01:55,490
+read every single piece of feedback that you
+sent in via the feedback ling at the top of
+
+26
+00:01:55,490 --> 00:01:59,060
+the new Developer Console.
+So I can tell you that, actually, we were
+
+27
+00:01:59,060 --> 00:02:03,569
+delighted to see that the number one piece
+of feedback that came in was, hey, guys, this
+
+28
+00:02:03,569 --> 00:02:06,639
+new Developer Console, it's a lot better than
+the old one.
+
+29
+00:02:06,639 --> 00:02:09,509
+And so we were relieved that at least we were
+going in the right direction.
+
+30
+00:02:09,509 --> 00:02:13,200
+[ Applause ]
+>>Ellie Powers: All right. Thank you! Thank
+
+31
+00:02:13,200 --> 00:02:16,739
+you so much.
+We were absolutely delighted to see that positive
+
+32
+00:02:16,739 --> 00:02:21,400
+response. But also what started coming in
+was a bunch of feature requests. "Hey, this
+
+33
+00:02:21,400 --> 00:02:27,370
+is great, but." "Could you also do." "How
+about this?" "I also need that." "You really
+
+34
+00:02:27,370 --> 00:02:31,310
+should be doing more."
+And we said absolutely. We totally agree with
+
+35
+00:02:31,310 --> 00:02:34,319
+that. And so that's why we've been rolling
+out a ton of new features.
+
+36
+00:02:34,319 --> 00:02:40,090
+So what we're going to do today for you here
+with some great demos is to show you how Google
+
+37
+00:02:40,090 --> 00:02:45,819
+Play is evolving rapidly. We're rapidly moving
+to bring you tons of new features that are
+
+38
+00:02:45,819 --> 00:02:50,349
+going to grow with your business and help
+you support Google Play's enormous audience
+
+39
+00:02:50,349 --> 00:02:52,189
+around the world.
+So let's walk through what we're going to
+
+40
+00:02:52,189 --> 00:02:54,659
+do today.
+So again, we're going to be going into more
+
+41
+00:02:54,659 --> 00:02:57,799
+detail on what you've already seen and also
+seeing new stuff.
+
+42
+00:02:57,799 --> 00:03:02,329
+We're going to be going through three different
+areas. We have publishing your app your way
+
+43
+00:03:02,329 --> 00:03:07,310
+on Google Play, how you can take control of
+publishing in our store, connecting directly
+
+44
+00:03:07,310 --> 00:03:10,459
+with customers.
+Secondly, we're going to be talking about
+
+45
+00:03:10,459 --> 00:03:15,269
+optimizing your app, how we're giving you
+more data so you can deeper into how people
+
+46
+00:03:15,269 --> 00:03:19,920
+are using your app and improve it. And then,
+finally, how you can expand your app globally
+
+47
+00:03:19,920 --> 00:03:24,700
+to take advantage of Google Play's global
+footprint and reach more audiences in new
+
+48
+00:03:24,700 --> 00:03:28,689
+markets, expanding your business.
+So without further ado, we're going to look
+
+49
+00:03:28,689 --> 00:03:31,469
+at cool new stuff, and Miles Barr is going
+to take us through that.
+
+50
+00:03:31,469 --> 00:03:35,659
+>>Miles Barr: Thanks, Ellie. I want to start
+today by talking about how Google Play keeps
+
+51
+00:03:35,659 --> 00:03:40,459
+you in control of publishing your app. Our
+philosophy has always been to put no barriers
+
+52
+00:03:40,459 --> 00:03:44,540
+between you and your users. When you have
+a new version of your app ready, you can push
+
+53
+00:03:44,540 --> 00:03:49,810
+it out to everyone at the same time.
+This can be very daunting, though, as anyone
+
+54
+00:03:49,810 --> 00:03:54,290
+who has pushed a new app with a serious bug
+knows, so we figured we can do better.
+
+55
+00:03:54,290 --> 00:03:58,810
+So I was happy to announce on Wednesday that
+we launched the beta testing and staged rollout
+
+56
+00:03:58,810 --> 00:04:03,999
+feature in Google Play. This means you can
+start testing a new version of your app with
+
+57
+00:04:03,999 --> 00:04:08,739
+a small group of alpha testers, and when it's
+ready, move on to a larger group of beta testers,
+
+58
+00:04:08,739 --> 00:04:11,709
+and once you're comfortable that your app
+is ready for prime time, you can roll out
+
+59
+00:04:11,709 --> 00:04:17,389
+in stages to the rest of your user base.
+This means you can keep your startup's new
+
+60
+00:04:17,389 --> 00:04:21,640
+apps under wraps. You can try out a major
+new UI with just your power users, or you
+
+61
+00:04:21,640 --> 00:04:28,640
+can even give a preview to the press.
+And why is this important? Because we want
+
+62
+00:04:29,350 --> 00:04:33,780
+to ensure that your users are always happy
+with your app.
+
+63
+00:04:33,780 --> 00:04:40,260
+So let's take a look at how this works.
+Here we are in the Developer Console. As you
+
+64
+00:04:40,260 --> 00:04:45,690
+can see, there are two new tabs, alpha testing
+and beta testing. These are essentially the
+
+65
+00:04:45,690 --> 00:04:50,540
+same thing. They're two targeted groups that
+allows you to send a version of your app to
+
+66
+00:04:50,540 --> 00:04:56,410
+specific set of users. If your user is in
+both tests, they will receive the alpha one.
+
+67
+00:04:56,410 --> 00:05:02,240
+At Google, our philosophy is to test our software
+early and often, so whenever a build is ready,
+
+68
+00:05:02,240 --> 00:05:05,910
+we send it to our team so they can try it
+out. So let's switch to the alpha. So we'll
+
+69
+00:05:05,910 --> 00:05:10,050
+do the same here.
+So first we've got our new APK, and what we're
+
+70
+00:05:10,050 --> 00:05:13,110
+going to do is we're going to target our team,
+and we're going to do this with a mailing
+
+71
+00:05:13,110 --> 00:05:18,300
+list. So Riccardo is entering our team mailing
+list here.
+
+72
+00:05:18,300 --> 00:05:23,500
+Now, when you target a user for a beta test
+or an alpha test, they are not automatically
+
+73
+00:05:23,500 --> 00:05:28,750
+opted in. For them to receive the version,
+they need to go to this link here and opt
+
+74
+00:05:28,750 --> 00:05:33,740
+into the test. And this is available on the
+Web and on the phone, and it explains to your
+
+75
+00:05:33,740 --> 00:05:37,810
+users what being a tester is and they can
+opt in. And if at any point they want to opt
+
+76
+00:05:37,810 --> 00:05:41,440
+out of the test, they can come back to the
+same page, opt out and uninstall the test
+
+77
+00:05:41,440 --> 00:05:48,440
+version of your app.
+Now, beta test and alpha test are private.
+
+78
+00:05:48,560 --> 00:05:52,970
+What this means is until a user opts in to
+your test, they'll see no details about the
+
+79
+00:05:52,970 --> 00:05:58,310
+app on the Play Store.
+Similarly, we don't allow reviews of prerelease
+
+80
+00:05:58,310 --> 00:06:02,030
+versions, so none of the details of your new
+app will leak.
+
+81
+00:06:02,030 --> 00:06:07,410
+We recommend using mailing list or Google+
+community to talk to your testers. We do collect
+
+82
+00:06:07,410 --> 00:06:11,030
+statistics and crash report data on your test
+versions so you can track the progress of
+
+83
+00:06:11,030 --> 00:06:15,180
+how it's going.
+So let's say the alpha test has gone great
+
+84
+00:06:15,180 --> 00:06:20,890
+so we're going to move it to beta. And this
+time we want to have a wider set of testers
+
+85
+00:06:20,890 --> 00:06:25,110
+so instead of a mailing list I'm going to
+use a Google+ community.
+
+86
+00:06:25,110 --> 00:06:30,610
+This community some of our most engaged users.
+They love our app. They love testing early
+
+87
+00:06:30,610 --> 00:06:34,680
+versions and giving us feedback on the new
+features.
+
+88
+00:06:34,680 --> 00:06:38,080
+So Riccardo is going to just let the group
+know that we've got a new beta test ready
+
+89
+00:06:38,080 --> 00:06:45,080
+and they can opt in.
+Now, when setting up a beta test, it's important
+
+90
+00:06:45,090 --> 00:06:48,690
+to get a good representation of your users,
+and by this I mean make sure you have a good
+
+91
+00:06:48,690 --> 00:06:53,070
+mix of devices, people who speak different
+languages and people on different carriers.
+
+92
+00:06:53,070 --> 00:06:57,410
+You want to ensure your app works for everyone
+once you publish it.
+
+93
+00:06:57,410 --> 00:07:02,160
+Okay. So we've got a lot of feedback for our
+beta test, we fix some bugs, and this latest
+
+94
+00:07:02,160 --> 00:07:05,970
+version we're comfortable with, so we want
+to get it out to production. I'm feeling pretty
+
+95
+00:07:05,970 --> 00:07:10,060
+good about it because it's been through so
+many rounds of testing, but sometimes a bug
+
+96
+00:07:10,060 --> 00:07:15,610
+does slip through, and what happens when you
+launch it? That means you get a lot of unhappy
+
+97
+00:07:15,610 --> 00:07:18,400
+users and one-star reviews.
+So we're going to be on the safe side here
+
+98
+00:07:18,400 --> 00:07:23,320
+and we're going to do a stage rollout. So
+rather than choosing everyone, we're going
+
+99
+00:07:23,320 --> 00:07:29,100
+to start with about 10% of our users.
+At this point users can now review your app
+
+100
+00:07:29,100 --> 00:07:33,390
+so you can see the feedback of how it's doing.
+And if there's a problem, you can stop the
+
+101
+00:07:33,390 --> 00:07:38,510
+rollout, create a fix, and then we'll push
+that fixed version to that same original 10%
+
+102
+00:07:38,510 --> 00:07:43,420
+of users.
+>>Riccardo Govoni: Shall we go to everybody?
+
+103
+00:07:43,420 --> 00:07:45,790
+>>Miles Barr: Hmm?
+>>Riccardo Govoni: Shall we go to everybody?
+
+104
+00:07:45,790 --> 00:07:52,790
+>>Miles Barr: Yep, let's go to everyone.
+All right. And you can also use this feature
+
+105
+00:07:53,430 --> 00:07:57,470
+to control traffic to your back-ends. We know
+sometimes when you release a new version of
+
+106
+00:07:57,470 --> 00:08:02,610
+your app, the traffic patterns differ. So
+by just looking at 10%, making sure your back-end
+
+107
+00:08:02,610 --> 00:08:09,610
+servers can handle the load, you can be sure
+once you push it to everyone, your app will
+
+108
+00:08:10,260 --> 00:08:12,140
+work great.
+Okay. Let's hear about how someone has been
+
+109
+00:08:12,140 --> 00:08:16,980
+using beta testing. Wattpad is a great app
+that gives you access to over 10 million free
+
+110
+00:08:16,980 --> 00:08:22,100
+books and short stories. They have been beta
+testing since the beginning and they do this
+
+111
+00:08:22,100 --> 00:08:26,780
+by having two different apps in the Play Store,
+the beta version and live one. The beta version
+
+112
+00:08:26,780 --> 00:08:32,519
+they push every week and the live one about
+once a month. Each feature they add to their
+
+113
+00:08:32,519 --> 00:08:36,240
+app goes through three to four rounds of beta
+testing, so they get lots of feedback and
+
+114
+00:08:36,240 --> 00:08:40,570
+they decide if it makes the cut and should
+go to the multi-release.
+
+115
+00:08:40,570 --> 00:08:45,070
+A great example of this is the new UI you
+see up here. They recently changed how users'
+
+116
+00:08:45,070 --> 00:08:49,820
+books appear in their library. This is quite
+a big change. They wanted to see how users
+
+117
+00:08:49,820 --> 00:08:56,270
+react to it. Unsurprisingly, they found that
+some users got it, some didn't. There was
+
+118
+00:08:56,270 --> 00:09:00,870
+a bit of confusion. So before they launched
+it, they added a tutorial section explaining
+
+119
+00:09:00,870 --> 00:09:05,190
+what the change was and of how to find your
+books. This led to a seamless rollout to the
+
+120
+00:09:05,190 --> 00:09:12,190
+rest of their users.
+Previously, while they have been beta testing
+
+121
+00:09:12,840 --> 00:09:16,370
+before we launched our feature, this meant
+that they had to create two listings and also
+
+122
+00:09:16,370 --> 00:09:21,320
+manage their testers outside of Google Play.
+With the launch of today's feature, you can
+
+123
+00:09:21,320 --> 00:09:26,380
+retain store listing and also use Google tools
+like Google groups and Google+ communities
+
+124
+00:09:26,380 --> 00:09:33,380
+to manage your testers.
+All right. Wattpad has a huge beta testing
+
+125
+00:09:37,090 --> 00:09:42,090
+community of 25,000 users but they've told
+us that they've seen benefits back when they
+
+126
+00:09:42,090 --> 00:09:47,610
+only had ten users. This gave them access
+to a wider range of devices than their testing
+
+127
+00:09:47,610 --> 00:09:53,630
+in-house and it also meant they got early
+testing from real users. So if you only get
+
+128
+00:09:53,630 --> 00:09:57,240
+one star again, you know you haven't been
+beta testing.
+
+129
+00:09:57,240 --> 00:10:01,840
+All right. Now I want to talk to you about
+tablets.
+
+130
+00:10:01,840 --> 00:10:07,420
+There are over 900 million Android devices
+activated now, and a growing part of that
+
+131
+00:10:07,420 --> 00:10:12,930
+is tablets.
+On androiddeveloper.com, we now show you the
+
+132
+00:10:12,930 --> 00:10:18,250
+proportion of devices by screen size and screen
+density. Tablets have large and extra large
+
+133
+00:10:18,250 --> 00:10:23,330
+screens, so you can get a good idea of how
+many tablets are out there.
+
+134
+00:10:23,330 --> 00:10:27,980
+Also on developer.android.com we've launched
+the tablet app called a checklist. This explains
+
+135
+00:10:27,980 --> 00:10:32,330
+Google's criteria of what makes a good tablet
+app and gives you advice on how to optimize
+
+136
+00:10:32,330 --> 00:10:37,510
+your app for tablets. If you haven't seen
+this already, please go to developer.android.com
+
+137
+00:10:37,510 --> 00:10:43,110
+and check it out.
+Also, in the Developer Console, here in the
+
+138
+00:10:43,110 --> 00:10:47,960
+optimization tip section, we automatically
+scan an app against the checklist to see how
+
+139
+00:10:47,960 --> 00:10:52,960
+you're doing. If there's anything which your
+app doesn't meet, we explain it and tell you
+
+140
+00:10:52,960 --> 00:10:56,570
+how to fix it.
+So it's important to follow these tips so
+
+141
+00:10:56,570 --> 00:10:59,950
+you create a great tablet experience for your
+users.
+
+142
+00:10:59,950 --> 00:11:05,870
+Also, once you created a great new tablet
+UI, nice multi-pane using the fragments API,
+
+143
+00:11:05,870 --> 00:11:10,020
+you want to show it off. So last month in
+the Play Store we gave you the ability to
+
+144
+00:11:10,020 --> 00:11:14,029
+upload tablet screen shots so you can show
+how your app will look on a seven-inch and
+
+145
+00:11:14,029 --> 00:11:19,350
+ten-inch tablet.
+When a user goes to the Play Store on a tablet,
+
+146
+00:11:19,350 --> 00:11:24,900
+they'll see the tablet screen shots first,
+and on the phone, they'll see the phone ones.
+
+147
+00:11:24,900 --> 00:11:28,279
+On Wednesday we announced that the top lists
+on tablets will be able to be filtered down
+
+148
+00:11:28,279 --> 00:11:32,170
+so users will only see those apps designed
+specifically for tablets.
+
+149
+00:11:32,170 --> 00:11:36,070
+[ Applause ]
+>>Miles Barr: Thanks.
+
+150
+00:11:36,070 --> 00:11:41,890
+So make sure you follow all these guidelines
+so your app doesn't get left behind.
+
+151
+00:11:41,890 --> 00:11:45,500
+So let's take a look at a great tablet app.
+I'm sure you've heard of Evernote. If you
+
+152
+00:11:45,500 --> 00:11:49,020
+haven't, it's an app that lets you collect
+notes, record Web pages, everything, and keeps
+
+153
+00:11:49,020 --> 00:11:54,870
+you -- syncs across all your devices.
+Evernote has been creating a tablet app ever
+
+154
+00:11:54,870 --> 00:12:01,870
+since we launched Honeycomb back in 2011.
+They created a beautiful multi-pane UI and
+
+155
+00:12:04,860 --> 00:12:09,290
+spent a lot of hard work on their tablet experience.
+It's all this hard work that's kept them a
+
+156
+00:12:09,290 --> 00:12:14,250
+consistent editor's choice in Google Play.
+And it's not just a hit with us. It's also
+
+157
+00:12:14,250 --> 00:12:18,130
+a hit with their users. As you can see here,
+the second most popular device is a Nexus
+
+158
+00:12:18,130 --> 00:12:22,860
+7, a tablet.
+Evernote has thought long and hard about what
+
+159
+00:12:22,860 --> 00:12:26,710
+makes a good tablet experience. If I'm on
+the phone, their users want to take -- call
+
+160
+00:12:26,710 --> 00:12:30,420
+it a Quick Note, will maybe pull up a piece
+of information, but on a tablet they spend
+
+161
+00:12:30,420 --> 00:12:33,970
+a lot more time organizing and planning and
+getting real work done.
+
+162
+00:12:33,970 --> 00:12:40,970
+Here is what the V.P. of product had to say.
+By focusing on creating a great tablet experience,
+
+163
+00:12:42,120 --> 00:12:46,130
+they created more engaged users, and these
+users have gone on to become paid subscribers
+
+164
+00:12:46,130 --> 00:12:52,690
+of Evernote.
+All right. Now I want to talk about a feature
+
+165
+00:12:52,690 --> 00:12:57,220
+that's coming later this summer. A lot of
+you have sort of told us you want to give
+
+166
+00:12:57,220 --> 00:13:00,610
+access to the console to a lot of more people
+in your company. In fact if you were in the
+
+167
+00:13:00,610 --> 00:13:06,700
+Fireside Chat yesterday, a lot of you asked
+for finer grain controls to the Developer
+
+168
+00:13:06,700 --> 00:13:11,600
+Console. So late this summer we'll be releasing
+several new permissions in the Play Store
+
+169
+00:13:11,600 --> 00:13:15,770
+allowing you to control exactly what each
+of your users can do. And these permissions
+
+170
+00:13:15,770 --> 00:13:20,540
+can also be set on a per-application basis.
+So if you ever wanted to give someone in your
+
+171
+00:13:20,540 --> 00:13:25,050
+company access to your stats but make sure
+they don't mess around with your APKs, you'll
+
+172
+00:13:25,050 --> 00:13:32,050
+soon be able to do that so please stay tuned.
+Last year here at I/O, we announced the pilot
+
+173
+00:13:33,550 --> 00:13:38,160
+to our reply to reviews feature. This allowed
+you as a developer to reply directly to your
+
+174
+00:13:38,160 --> 00:13:41,900
+users.
+I'm happy to say after lots of rounds of testing
+
+175
+00:13:41,900 --> 00:13:47,070
+and tweaking we've now made this available
+to every single developer on Google Play.
+
+176
+00:13:47,070 --> 00:13:53,350
+[ Applause ]
+>>Miles Barr: It gives you a direct channel
+
+177
+00:13:53,350 --> 00:13:57,170
+to your users, so if you haven't started using
+this already please read up on our policies
+
+178
+00:13:57,170 --> 00:14:02,750
+and guidelines and start replying now.
+Now I'm going to tell you how one developer
+
+179
+00:14:02,750 --> 00:14:07,740
+has been using this feature.
+TextPlus is an app that lets you chat with
+
+180
+00:14:07,740 --> 00:14:11,990
+your friends all around the world through
+free SMS's and cheaper calls. TextPlus has
+
+181
+00:14:11,990 --> 00:14:16,580
+gone all in on replying to reviews. Everyone
+on their team takes part in this, from the
+
+182
+00:14:16,580 --> 00:14:20,500
+engineers, the product managers, and of course
+their customer support team.
+
+183
+00:14:20,500 --> 00:14:23,990
+Every day, twice a day they look to see if
+they have any new reviews and reply directly
+
+184
+00:14:23,990 --> 00:14:28,740
+to them. By doing this they've really connected
+to their users and found out where their biggest
+
+185
+00:14:28,740 --> 00:14:32,750
+pain points are.
+For each negative review they try to turn
+
+186
+00:14:32,750 --> 00:14:37,580
+around that user's experience by giving them
+advice and pointers to more help. If they
+
+187
+00:14:37,580 --> 00:14:41,339
+succeed those users typically change their
+review to a positive one.
+
+188
+00:14:41,339 --> 00:14:46,380
+But they don't stop just there. For their
+positive reviews, the five-star reviews, they
+
+189
+00:14:46,380 --> 00:14:49,950
+find these reviews are their most engaged
+users, their biggest advocates to tell other
+
+190
+00:14:49,950 --> 00:14:54,810
+people about the app.
+They use the reply-to-review feature to speak
+
+191
+00:14:54,810 --> 00:14:59,190
+directly to them to get their opinions on
+new features and what else they want to see
+
+192
+00:14:59,190 --> 00:15:05,360
+in this app.
+By focusing on the user and having this attentive
+
+193
+00:15:05,360 --> 00:15:09,230
+customer support, the newer versions of TextPlus
+have a higher average higher rating in the
+
+194
+00:15:09,230 --> 00:15:15,760
+store than the previous versions did.
+Here's what they had to say about it.
+
+195
+00:15:15,760 --> 00:15:21,700
+They have used this direct line to the users
+to prioritize a what features they can focus
+
+196
+00:15:21,700 --> 00:15:26,100
+on and now they have happier users and higher
+scores within the store.
+
+197
+00:15:26,100 --> 00:15:29,130
+Now I'm going to hand over to Riccardo, our
+tech lead, to tell you more about data.
+
+198
+00:15:29,130 --> 00:15:35,200
+>>Riccardo Govoni: Thanks, Miles. Hello, everybody.
+So Miles showed you how you have more control
+
+199
+00:15:35,200 --> 00:15:39,470
+on the way you deploy your app to your users
+and how you present it to them. Now I want
+
+200
+00:15:39,470 --> 00:15:44,399
+to shift your attention to data. I want to
+show you how Developer Console helps you make
+
+201
+00:15:44,399 --> 00:15:48,250
+informed decisions about your app and your
+business and helps you figure out what is
+
+202
+00:15:48,250 --> 00:15:53,480
+the next most important thing to focus on.
+Over the course of the last year, we expanded
+
+203
+00:15:53,480 --> 00:15:56,980
+the amount of data that we make available
+in Developer Console. I think you're familiar
+
+204
+00:15:56,980 --> 00:16:02,630
+with the standard metrics, installs and uninstalls,
+per user, per device, divided across six different
+
+205
+00:16:02,630 --> 00:16:07,510
+dimensions, country, SDK version, application
+version, language and more. But in the past
+
+206
+00:16:07,510 --> 00:16:11,310
+few months we rolled out a few more metrics,
+and we announced a couple, even a couple of
+
+207
+00:16:11,310 --> 00:16:15,029
+these were given in the keynote, so let me
+focus on them for a second.
+
+208
+00:16:15,029 --> 00:16:21,270
+One I want to talk about now is rating stats.
+Rating stats show you how the users' star
+
+209
+00:16:21,270 --> 00:16:26,050
+rating for your application changed over time.
+This is the metric you want to look at when
+
+210
+00:16:26,050 --> 00:16:29,660
+you want to see whether the new version of
+your application that you just rolled out
+
+211
+00:16:29,660 --> 00:16:33,660
+is getting the same good user reviews, good
+user satisfaction compared to the previous
+
+212
+00:16:33,660 --> 00:16:39,440
+version. We offer this in two variants. So
+you have the cumulative rating. This is the
+
+213
+00:16:39,440 --> 00:16:44,170
+overall aggregated rating over the lifetime
+of your application. This is good for the
+
+214
+00:16:44,170 --> 00:16:47,860
+long-term view, when you want to review what
+you did historically in the past and the decision
+
+215
+00:16:47,860 --> 00:16:51,870
+that you made at the time.
+Another one that we offer is the daily average
+
+216
+00:16:51,870 --> 00:16:57,730
+rating. This is the aggregated over all daily
+ratings over the lifetime of your app and
+
+217
+00:16:57,730 --> 00:17:01,600
+this is good for the short-term view, when
+you want to spot problems early on.
+
+218
+00:17:01,600 --> 00:17:06,350
+I want to mention a couple of cases where
+this is particularly useful. One is reply
+
+219
+00:17:06,350 --> 00:17:10,659
+to reviews.
+So you can use this metric to identify segments
+
+220
+00:17:10,659 --> 00:17:15,860
+of your user base where customer satisfaction
+is not as good as you would expect. And from
+
+221
+00:17:15,860 --> 00:17:20,850
+that, you can then jump to reply to reviews,
+as Miles just described, and provide dedicated
+
+222
+00:17:20,850 --> 00:17:25,809
+customer support exactly to those users.
+On the other side it works the other way around
+
+223
+00:17:25,809 --> 00:17:30,179
+as well. If you're spending a lot of time
+doing customer support and offering replies
+
+224
+00:17:30,179 --> 00:17:34,710
+to your users, then you might want to use
+this metric to verify the effectiveness of
+
+225
+00:17:34,710 --> 00:17:39,309
+what you've done and see that you are actually
+achieving the results that you are expecting.
+
+226
+00:17:39,309 --> 00:17:44,419
+Another feature in which this is particularly
+useful is stage rollouts. Unlike offline beta
+
+227
+00:17:44,419 --> 00:17:50,090
+where a user cannot leave reviews or ratings,
+during stage rollout users will able to rate
+
+228
+00:17:50,090 --> 00:17:53,769
+and review your app. And that means when you
+are at 5% of a stage rollout, if you have
+
+229
+00:17:53,769 --> 00:17:57,049
+a brand-new application out there, you're
+on the edge of your chair, you want to make
+
+230
+00:17:57,049 --> 00:18:01,710
+sure everything is fine, you might want to
+use this metric to see whether everything
+
+231
+00:18:01,710 --> 00:18:06,690
+is doing as well as you expect.
+In this example we rolled out a new version
+
+232
+00:18:06,690 --> 00:18:10,399
+of our application in mid-April, the orange
+line, but it never really caught up with the
+
+233
+00:18:10,399 --> 00:18:13,789
+baseline, which is the green line. So this
+is maybe the point where you want to pause
+
+234
+00:18:13,789 --> 00:18:19,590
+your stage rollout and decide what to do.
+Like all the other metrics that we have, if
+
+235
+00:18:19,590 --> 00:18:23,309
+the breakdown by the top ten values, like
+the top ten countries, or et cetera, is not
+
+236
+00:18:23,309 --> 00:18:26,999
+enough, obviously you can always export as
+a SVC and you get the full data payload so
+
+237
+00:18:26,999 --> 00:18:32,460
+you can integrate it with your tools.
+Another thing we want to talk about is filtering
+
+238
+00:18:32,460 --> 00:18:37,450
+crash reports because we now allow you to
+filter crash reports by application version,
+
+239
+00:18:37,450 --> 00:18:43,070
+since a few weeks. Again, now that we have
+Beta testing, this is extremely useful because
+
+240
+00:18:43,070 --> 00:18:47,029
+it means you can look at the crash reports
+that are coming only from your alpha version,
+
+241
+00:18:47,029 --> 00:18:52,759
+maybe it was a little more crashy, and decide
+what to do. During a stage rollout, we keep
+
+242
+00:18:52,759 --> 00:18:57,879
+collecting crash reports so you can see and
+decide what to do for your stage rollout,
+
+243
+00:18:57,879 --> 00:19:03,980
+whether to pause it or continue it based on
+the amount of crashes you are getting.
+
+244
+00:19:03,980 --> 00:19:08,460
+So now everything is fine. Users are happy.
+You're not getting any crashes. Unicorns and
+
+245
+00:19:08,460 --> 00:19:13,659
+rainbows all over the place. It's time to
+talk about money. I want to talk about the
+
+246
+00:19:13,659 --> 00:19:17,830
+new page that we launched on Wednesday which
+is revenue charts.
+
+247
+00:19:17,830 --> 00:19:21,350
+I always found it a bit annoying that just
+to figure out how much money you made yesterday
+
+248
+00:19:21,350 --> 00:19:26,230
+you had to go to Developer Console, download
+the SVC report, put in a graphic in a spreadsheet
+
+249
+00:19:26,230 --> 00:19:29,820
+program, aggregate everything just to see
+how much money you made yesterday and I think
+
+250
+00:19:29,820 --> 00:19:34,429
+that was just nonsense and so we decided to
+fix it and starting Wednesday you have this
+
+251
+00:19:34,429 --> 00:19:41,080
+new page. How all the revenue for your app
+changed over time. Aggregated daily, you can
+
+252
+00:19:41,080 --> 00:19:46,509
+divide it or inspect it by country and by
+source of revenue, say by applications, revenue
+
+253
+00:19:46,509 --> 00:19:50,519
+generated from application sales, in in-app
+products or subscriptions.
+
+254
+00:19:50,519 --> 00:19:53,909
+I think this is great to get an overview of
+how your application is doing at a glance.
+
+255
+00:19:53,909 --> 00:19:57,610
+You can come here every day, look at how much
+money you made yesterday.
+
+256
+00:19:57,610 --> 00:20:01,779
+And it lets you also do some sort of analysis.
+You can, you know, look at whether you are
+
+257
+00:20:01,779 --> 00:20:05,690
+ahead of your company targets or not, whether
+some countries are performing as well as you
+
+258
+00:20:05,690 --> 00:20:09,929
+would expect. But I also know that many of
+you want to integrate this data with your
+
+259
+00:20:09,929 --> 00:20:14,009
+own custom financial reporting tools and data
+pipelines.
+
+260
+00:20:14,009 --> 00:20:18,609
+So another thing that we're doing in the coming
+few weeks is that all the financial reporting
+
+261
+00:20:18,609 --> 00:20:22,720
+from the Google Play Developer Console will
+be available in Google Cloud Storage. What
+
+262
+00:20:22,720 --> 00:20:28,049
+that means is that by using the utilities
+provided by Google Cloud Storage, like GSU2,
+
+263
+00:20:28,049 --> 00:20:31,769
+you will be able to have programmatic access
+to your financial reporting, to your financial
+
+264
+00:20:31,769 --> 00:20:35,570
+data so you can integrate it with your own
+data pipelines.
+
+265
+00:20:35,570 --> 00:20:41,090
+The other benefit of this is that thanks to
+the new permission model, granular permissions
+
+266
+00:20:41,090 --> 00:20:46,029
+that Miles just described, you will be able
+to set up a dedicated account that will only
+
+267
+00:20:46,029 --> 00:20:50,159
+have access to financial data, and only be
+used for accessing financial data in cloud
+
+268
+00:20:50,159 --> 00:20:53,989
+storage. And that account will not be able
+to mash up with your APK configuration or
+
+269
+00:20:53,989 --> 00:21:00,989
+something. So you can separate roles there.
+Okay. Let's talk about referral tracking and
+
+270
+00:21:01,460 --> 00:21:04,269
+usage.
+So another thing I would like all of you to
+
+271
+00:21:04,269 --> 00:21:08,989
+have is one place, one single place, where
+you can see all the data that pertains and
+
+272
+00:21:08,989 --> 00:21:13,119
+is about your application. And I know that
+many of you are using Google Analytics to
+
+273
+00:21:13,119 --> 00:21:18,149
+track user engagement and user interaction
+with your application. But so far, the experience
+
+274
+00:21:18,149 --> 00:21:22,419
+was fragmented. You had to go to the developer
+console to see device and install metrics.
+
+275
+00:21:22,419 --> 00:21:28,369
+You had to go to Google Analytics to see activity
+and user engagement. And soon, so in the coming
+
+276
+00:21:28,369 --> 00:21:32,609
+few weeks, you will be able to link together
+Google Analytics and Google Play Developer
+
+277
+00:21:32,609 --> 00:21:37,279
+Console. And what that means is that once
+linked together in the Google Play Developer
+
+278
+00:21:37,279 --> 00:21:41,399
+Console -- sorry, in Google Analytics, you
+will have access to additional new metrics.
+
+279
+00:21:41,399 --> 00:21:46,869
+In particular, you will be able to see how
+many views, downloads, and installs your marketing
+
+280
+00:21:46,869 --> 00:21:50,600
+campaigns triggered on Google Play.
+And this is really good, because it gives
+
+281
+00:21:50,600 --> 00:21:55,149
+you a better view of the conversion funnel.
+You can see much more details about how your
+
+282
+00:21:55,149 --> 00:22:00,499
+users discover your app and then want to install
+your app and then became daily active users.
+
+283
+00:22:00,499 --> 00:22:07,499
+This integration goes both ways. So you will
+have access to engagement metrics directly
+
+284
+00:22:09,889 --> 00:22:13,320
+from the play developer console. So next to
+installs and other metrics, you will also
+
+285
+00:22:13,320 --> 00:22:20,320
+see engagement, like, number of active users.
+Okay. So a few more things about optimization
+
+286
+00:22:22,220 --> 00:22:27,139
+tips.
+So Miles spent a few minutes talking about
+
+287
+00:22:27,139 --> 00:22:32,029
+how you can use the optimization tips section
+to learn whether your app is well designed
+
+288
+00:22:32,029 --> 00:22:36,019
+for tablets, whether it meets the quality
+checklist requirements, and et cetera.
+
+289
+00:22:36,019 --> 00:22:39,919
+But I have bigger plans for the optimization
+tips section. I want that to become the place
+
+290
+00:22:39,919 --> 00:22:45,070
+where you go to discover personalized recommendations
+and insights that are specific to your app
+
+291
+00:22:45,070 --> 00:22:48,919
+and your context.
+So starting from a few days ago, from Wednesday,
+
+292
+00:22:48,919 --> 00:22:53,669
+you now have additional tips present in that
+section, what we call them localization tips.
+
+293
+00:22:53,669 --> 00:23:00,440
+They help you how to reach a broader audience
+and how to expand your app to multiple countries.
+
+294
+00:23:00,440 --> 00:23:04,179
+When you decide it's time to go global, you
+know, you have to do a number of things. You
+
+295
+00:23:04,179 --> 00:23:08,169
+have to localize your APK, you have to then
+localize your store listings. You may even
+
+296
+00:23:08,169 --> 00:23:13,399
+want to consider localizing your screen shots,
+because for some markets, that's really important.
+
+297
+00:23:13,399 --> 00:23:17,330
+And most importantly, you have to decide which
+countries to focus on first, where should
+
+298
+00:23:17,330 --> 00:23:21,820
+I go first.
+So now in the optimization tips sections,
+
+299
+00:23:21,820 --> 00:23:25,679
+you will get these localization insights that
+will guide you in the process. They will tell
+
+300
+00:23:25,679 --> 00:23:29,330
+you whether you're missing anything. Maybe
+you localized your APK, but you forgot to
+
+301
+00:23:29,330 --> 00:23:33,330
+localize your listing. And we'll also help
+you identify opportunities. They, for example,
+
+302
+00:23:33,330 --> 00:23:37,429
+will tell you, you may have a lot of users
+from Russia. Even though you never localized
+
+303
+00:23:37,429 --> 00:23:43,989
+your app there, that's a great opportunity
+that you should go into.
+
+304
+00:23:43,989 --> 00:23:50,539
+Which brings me to the next topic, which is
+reaching Play global audience.
+
+305
+00:23:50,539 --> 00:23:56,909
+When you decide to go -- oops, too bad. When
+you decide to go global, the first and most
+
+306
+00:23:56,909 --> 00:24:01,669
+important thing that you want to do is localize
+your application contents. And many developers
+
+307
+00:24:01,669 --> 00:24:04,629
+are already doing that and expanding into
+new markets.
+
+308
+00:24:04,629 --> 00:24:08,220
+And as a non-native English speaker, as some
+of you may have guessed from my funny accent
+
+309
+00:24:08,220 --> 00:24:13,840
+-- I'm Italian -- I think one of the most
+important things is to make sure that your
+
+310
+00:24:13,840 --> 00:24:18,519
+app is available to as many users in as many
+countries and as many languages as possible,
+
+311
+00:24:18,519 --> 00:24:22,229
+but still providing the same high-quality
+experience that you would provide to users
+
+312
+00:24:22,229 --> 00:24:27,549
+who speak your own language.
+And we announced on Wednesday that now from
+
+313
+00:24:27,549 --> 00:24:32,509
+the Google Play Developer Console, you have
+access to professional translations in collaboration
+
+314
+00:24:32,509 --> 00:24:39,299
+with the Google Translation Manager team.
+Let me show you how this works.
+
+315
+00:24:39,299 --> 00:24:44,059
+So in the APK screen, at the very bottom,
+there will be the recently used section, which
+
+316
+00:24:44,059 --> 00:24:48,759
+is called the app translation that you can
+use to start to request a professional translation.
+
+317
+00:24:48,759 --> 00:24:53,090
+Just click the button, starts a wizard that
+will guide you through the process. You pick
+
+318
+00:24:53,090 --> 00:24:58,639
+a project name. That is just for your convenience.
+Some of you may have multiple projects going
+
+319
+00:24:58,639 --> 00:25:05,169
+on at any same time. Pick the version -- sorry,
+the language you're translating from. You
+
+320
+00:25:05,169 --> 00:25:09,119
+then upload the strings. If you're using the
+Android developer tools, you can use that
+
+321
+00:25:09,119 --> 00:25:16,029
+directly from the Eclipse plug-in. Otherwise,
+you can just upload the XML files.
+
+322
+00:25:16,029 --> 00:25:23,029
+Once that's done, you wait. Then you go, you
+pick the languages you want to translate into.
+
+323
+00:25:23,350 --> 00:25:27,320
+I'm going to pick, I don't know, Japanese
+and Korean. Those are just two markets that
+
+324
+00:25:27,320 --> 00:25:31,669
+you cannot be outside of.
+You pick the service level. The service level
+
+325
+00:25:31,669 --> 00:25:36,090
+basically decides how many users, how many
+people are actually looking at your strings
+
+326
+00:25:36,090 --> 00:25:43,090
+and contributing to the translation in a translation
+company you pick. You get an idea of the price.
+
+327
+00:25:43,210 --> 00:25:46,450
+You choose the translation company you want
+to use. You get an indication of how long
+
+328
+00:25:46,450 --> 00:25:50,279
+it's going to take and how much it's going
+to cost. Obviously, the cost of the translation
+
+329
+00:25:50,279 --> 00:25:56,039
+depends on how many words you have in your
+strings file.
+
+330
+00:25:56,039 --> 00:26:00,409
+And then you get a confirmation page where
+you can reorder and get started with your
+
+331
+00:26:00,409 --> 00:26:04,840
+translation.
+The moment you confirm that, the translation
+
+332
+00:26:04,840 --> 00:26:09,200
+company will start right away translating
+your strings. And from the developer console,
+
+333
+00:26:09,200 --> 00:26:12,409
+you will be able to check progress. You will
+be able to see how far (indiscernible) the
+
+334
+00:26:12,409 --> 00:26:17,419
+translation is in translating all your content.
+While they're doing their work, you will be
+
+335
+00:26:17,419 --> 00:26:20,739
+able to communicate with them, answer any
+questions that might arise, troubleshooting,
+
+336
+00:26:20,739 --> 00:26:26,100
+these kind of things. And then once all the
+strings are done, you will be able to -- again,
+
+337
+00:26:26,100 --> 00:26:32,330
+from the developer console -- download them,
+put them into your APK, pack everything, and
+
+338
+00:26:32,330 --> 00:26:35,249
+publish.
+And this feature is rolling out in private
+
+339
+00:26:35,249 --> 00:26:38,970
+beta, just like we did for the developer console
+itself last year, which means that if you
+
+340
+00:26:38,970 --> 00:26:44,119
+go to the APK page right now, you will see
+a sign-up form where you can see -- where
+
+341
+00:26:44,119 --> 00:26:50,749
+you can leave your contact details. And then
+we will shortly start rolling this out to
+
+342
+00:26:50,749 --> 00:26:53,369
+everybody.
+I want to reinforce again the importance of
+
+343
+00:26:53,369 --> 00:26:57,940
+reaching a global audience. I want to speak
+for a few seconds about Gameloft. I think
+
+344
+00:26:57,940 --> 00:27:02,590
+all of you know who Gameloft is. They are
+a successful games company. They are based
+
+345
+00:27:02,590 --> 00:27:07,929
+in Europe. They realized very early the importance
+of targeting multiple languages and multiple
+
+346
+00:27:07,929 --> 00:27:13,269
+locales. They're currently available to 12
+languages: English, German, Italian, French,
+
+347
+00:27:13,269 --> 00:27:18,830
+Chinese, Japanese, and a few other European
+and Asian languages. And they have (indiscernible)
+
+348
+00:27:18,830 --> 00:27:23,389
+experiences they want to share with you. One
+is when they wanted to localize Ice Age Village
+
+349
+00:27:23,389 --> 00:27:28,539
+to Russian. So Ice Age Village has a user
+base of 10 million users. And they discovered
+
+350
+00:27:28,539 --> 00:27:33,940
+that 14% of those users are actually Russian
+users. That's the second biggest market after
+
+351
+00:27:33,940 --> 00:27:38,909
+English users.
+Another case that they had is when they decided
+
+352
+00:27:38,909 --> 00:27:43,869
+to localize My Little Pony to Turkish. As
+part of a global application update, they
+
+353
+00:27:43,869 --> 00:27:48,330
+had the Turkish localization. And they discovered
+very interesting figures. So the number of
+
+354
+00:27:48,330 --> 00:27:55,330
+active users in Turkey jumped up by 95% compared
+to 20 to 25% that did in other countries.
+
+355
+00:27:55,989 --> 00:27:59,979
+And that was thanks to the presence of localized
+content rather than just a simple application
+
+356
+00:27:59,979 --> 00:28:04,799
+update.
+The revenue jumped up by 600% in Turkey. And
+
+357
+00:28:04,799 --> 00:28:09,519
+the revenue per daily active users jumped
+up by 300%.
+
+358
+00:28:09,519 --> 00:28:14,049
+Another tip that you might want to use that
+I took advantage of, they used local holidays
+
+359
+00:28:14,049 --> 00:28:17,720
+and other local knowledge to make promotions
+and sales, like they did, for example, for
+
+360
+00:28:17,720 --> 00:28:24,720
+the Chinese New Year.
+So let me stress it one more time: Think global.
+
+361
+00:28:24,769 --> 00:28:28,190
+Always aim to target a really global audience
+in multiple countries and multiple languages.
+
+362
+00:28:28,190 --> 00:28:32,450
+I hope that this feature that we just announced
+will help you do that easily. And if you want
+
+363
+00:28:32,450 --> 00:28:36,720
+to learn more, there's a session at noon,
+I think, which is Building Android Apps for
+
+364
+00:28:36,720 --> 00:28:40,299
+a Global Audience, where you can learn more
+on how this translation process works and
+
+365
+00:28:40,299 --> 00:28:46,059
+the details behind that.
+Having said that, let me go back to Ellie.
+
+366
+00:28:46,059 --> 00:28:52,269
+>>Ellie Powers: All right. Thanks, Riccardo.
+Today, we've given you an overview of everything
+
+367
+00:28:52,269 --> 00:28:56,229
+we're bringing you to try to help you grow
+your businesses across these three areas,
+
+368
+00:28:56,229 --> 00:29:00,499
+first, publishing your app, having more control
+over it, connecting directly with your user
+
+369
+00:29:00,499 --> 00:29:05,479
+base. Secondly, gaining insight into your
+users and what they're doing with your app.
+
+370
+00:29:05,479 --> 00:29:09,700
+And then expanding your app to grow your user
+base into new markets.
+
+371
+00:29:09,700 --> 00:29:13,840
+So because there was a lot of stuff, we're
+going to give you a quick summary of everything
+
+372
+00:29:13,840 --> 00:29:16,379
+that's new.
+So, first of all, we have, of course, beta
+
+373
+00:29:16,379 --> 00:29:20,840
+testing and staged rollouts, which allows
+you to get user feedback early in the process
+
+374
+00:29:20,840 --> 00:29:25,759
+and respond to it.
+Secondly, we're giving you summaries and overviews
+
+375
+00:29:25,759 --> 00:29:30,299
+of user ratings and your revenues so that
+you can check those stats at your fingertips
+
+376
+00:29:30,299 --> 00:29:34,539
+very easily.
+Next, we're giving you tablet-specific screen
+
+377
+00:29:34,539 --> 00:29:39,229
+shots so you can show off your awesome tablet
+layouts. And if your app isn't designed for
+
+378
+00:29:39,229 --> 00:29:43,109
+tablets yet, we give you optimization tips
+to help you make it that way.
+
+379
+00:29:43,109 --> 00:29:47,440
+We're also helping you identify how to localize
+your app and where you should go first with
+
+380
+00:29:47,440 --> 00:29:51,720
+new localization tips.
+We also announced that everyone can now reply
+
+381
+00:29:51,720 --> 00:29:55,629
+to reviews.
+But stay tuned, because there's a lot more
+
+382
+00:29:55,629 --> 00:30:00,369
+coming this summer. So we have three new areas
+where you should watch for some announcements
+
+383
+00:30:00,369 --> 00:30:04,210
+on the Android Developers Blog in the future.
+First of all, we're going to be having those
+
+384
+00:30:04,210 --> 00:30:09,090
+extra access controls so you can grant more
+people access to the developer console without
+
+385
+00:30:09,090 --> 00:30:15,320
+getting worried. We're also adding new Google
+Analytics integration figures. So these were
+
+386
+00:30:15,320 --> 00:30:20,409
+the campaign referral tracking flows, that
+conversion funnel, and also seeing your Google
+
+387
+00:30:20,409 --> 00:30:23,649
+Analytics usage data directly in the developer
+console.
+
+388
+00:30:23,649 --> 00:30:28,749
+And, finally, if you're interested in translating
+your app with our new App Translation Service,
+
+389
+00:30:28,749 --> 00:30:32,970
+which is being offered in partnership with
+our internationalization team, sign up today
+
+390
+00:30:32,970 --> 00:30:37,159
+in the developer console. It's at the bottom
+of the APK page if you're looking for it.
+
+391
+00:30:37,159 --> 00:30:42,070
+Okay. So as I said at the beginning, everything
+that we're doing is with you, Google Play
+
+392
+00:30:42,070 --> 00:30:47,690
+developers, in mind. And we need to keep getting
+your feedback in order to plan our next 12
+
+393
+00:30:47,690 --> 00:30:51,619
+months and even farther in the future.
+We hope you'll join us for office hours today
+
+394
+00:30:51,619 --> 00:30:56,669
+following this session. We hope that you also
+rush right back after that, because at 12:00,
+
+395
+00:30:56,669 --> 00:31:00,440
+there's a very important session on monetization.
+And everyone is looking for more information
+
+396
+00:31:00,440 --> 00:31:03,289
+about money.
+So if you're watching this session online
+
+397
+00:31:03,289 --> 00:31:06,979
+and you missed the office hours, you want
+to make sure that you're following Android
+
+398
+00:31:06,979 --> 00:31:11,450
+developers on Google+, because that's the
+best place to go to see new announcements
+
+399
+00:31:11,450 --> 00:31:16,099
+about what's happening in the world of Android
+development. You can watch Hangouts. We always
+
+400
+00:31:16,099 --> 00:31:20,289
+post our blog post there as well. And we go
+and look for your feedback about what you're
+
+401
+00:31:20,289 --> 00:31:25,499
+looking to see on Google Play.
+So that's it. And the next thing we're going
+
+402
+00:31:25,499 --> 00:31:30,389
+to do now is start by taking some questions.
+We have about eight minutes left. So if you'd
+
+403
+00:31:30,389 --> 00:31:34,789
+like to come to the microphone at the front,
+or I think there may be possibly one there
+
+404
+00:31:34,789 --> 00:31:38,299
+as well, that will be great. We'll alternate
+between the two microphones.
+
+405
+00:31:38,299 --> 00:31:40,620
+You in the red hat at the front, what would
+you like to ask?
+
+406
+00:31:40,620 --> 00:31:44,909
+>>> Hi, Chuck Grove from AWeber Communications.
+I actually have two really quick questions.
+
+407
+00:31:44,909 --> 00:31:51,289
+I had a lot more, but I narrowed it down to
+two. So with the new alpha/beta production
+
+408
+00:31:51,289 --> 00:31:56,399
+system for launching a new version, is there
+still a concept of draft APKs? And if so,
+
+409
+00:31:56,399 --> 00:32:01,139
+how does that relate to testing in-app billing?
+>>Ellie Powers: Great question.
+
+410
+00:32:01,139 --> 00:32:05,779
+>>Miles Barr: Can I take this one? Yes?
+When you go to the advanced mode part of the
+
+411
+00:32:05,779 --> 00:32:10,409
+tab, you can upload draft APKs. So that's
+sort of still separate from alpha and beta
+
+412
+00:32:10,409 --> 00:32:16,200
+testing. You can imagine the alpha and beta
+tabs is exactly the same as production. And
+
+413
+00:32:16,200 --> 00:32:19,979
+the drafts are shared across all three sections.
+Correct?
+
+414
+00:32:19,979 --> 00:32:24,210
+>>Riccardo Govoni: Yep.
+>>Miles Barr: So they will have access to
+
+415
+00:32:24,210 --> 00:32:26,899
+in-app billing for testing purposes.
+>>Riccardo Govoni: So specific for in-app
+
+416
+00:32:26,899 --> 00:32:32,479
+billing, I think we still have a few improvements
+to do. But from the in-app billing sandbox
+
+417
+00:32:32,479 --> 00:32:37,539
+that was announced in these days, you can
+both use the tester section and the developer
+
+418
+00:32:37,539 --> 00:32:41,950
+profile to decide testers that will have access,
+for example, before in-app billing experience
+
+419
+00:32:41,950 --> 00:32:46,499
+without a link to actually pay. Or you can
+use beta testing and then side loading that
+
+420
+00:32:46,499 --> 00:32:53,499
+APK, for example, to do fake purchases.
+>>> Okay. Thank you.
+
+421
+00:32:55,440 --> 00:32:59,989
+And then my other question was about the staged
+rollouts for the actual listing. If you want
+
+422
+00:32:59,989 --> 00:33:04,149
+to add some new screen shots, new description,
+things like that, if you're doing a staged
+
+423
+00:33:04,149 --> 00:33:07,149
+rollout, is only the people who are getting
+the update going to see the new listing or
+
+424
+00:33:07,149 --> 00:33:09,570
+is everyone going to see it?
+>>Riccardo Govoni: No. At the moment, there's
+
+425
+00:33:09,570 --> 00:33:14,369
+just still one listing. So you may want to
+be -- you want to pay attention to that for
+
+426
+00:33:14,369 --> 00:33:17,509
+the moment, for the time being. So if you
+put something in your store listing, for example,
+
+427
+00:33:17,509 --> 00:33:21,950
+a brand-new feature, and you're still rolled
+out only to 5% of the users, you know, it
+
+428
+00:33:21,950 --> 00:33:25,909
+may be -- you have to communicate it publicly.
+Maybe you say to say that we are rolling a
+
+429
+00:33:25,909 --> 00:33:30,109
+new version, and that's the feature that they're
+getting and they will be getting over the
+
+430
+00:33:30,109 --> 00:33:32,460
+next few days.
+>>> So you say "for the time being." That
+
+431
+00:33:32,460 --> 00:33:34,849
+makes me hopeful about what's to company.
+>>Riccardo Govoni: Yes.
+
+432
+00:33:34,849 --> 00:33:37,819
+>>Ellie Powers: Always looking for feedback.
+In the back, please.
+
+433
+00:33:37,819 --> 00:33:41,149
+>>> Hi. My name is Manford (saying name).
+I have an interest in automating the whole
+
+434
+00:33:41,149 --> 00:33:44,950
+process of the deployment, how we're staging
+and deployment.
+
+435
+00:33:44,950 --> 00:33:50,559
+Is there some sort of, like, plan towards
+being allowed to, like, integrate on a continuous
+
+436
+00:33:50,559 --> 00:33:55,269
+integration server to automatically, as part
+of, say, a nightly build with QA tests that
+
+437
+00:33:55,269 --> 00:34:00,429
+are automated, push it out to a staged environment
+automatically? I mean, at the moment, I'm
+
+438
+00:34:00,429 --> 00:34:05,609
+doing with Selenium, but that's a hack; right?
+So is there some sort of plan to, like, have
+
+439
+00:34:05,609 --> 00:34:07,669
+an API maybe so it could even be integrated
+in build tools?
+
+440
+00:34:07,669 --> 00:34:09,050
+>>Ellie Powers: Would you like --
+[ Applause ]
+
+441
+00:34:09,050 --> 00:34:15,950
+>>Ellie Powers: Yeah! All right. We totally
+heard you. This has been a super popular developer
+
+442
+00:34:15,950 --> 00:34:20,260
+request; right? Everyone's got their own system,
+and we're really excited with the beta testing
+
+443
+00:34:20,260 --> 00:34:23,849
+that more and more people want to be pushing
+their APKs even more often.
+
+444
+00:34:23,849 --> 00:34:27,770
+So I guess, you know, we won't say too much
+about the future. But we definitely will say
+
+445
+00:34:27,770 --> 00:34:31,500
+that we've heard that, we're thinking about
+it, and, you know, as soon as we have anything
+
+446
+00:34:31,500 --> 00:34:34,919
+to share, we'll definitely let you know. But
+we definitely hear you on that one. That's
+
+447
+00:34:34,919 --> 00:34:39,139
+a very common request that we get.
+>>> Thank you.
+
+448
+00:34:39,139 --> 00:34:43,369
+>>> So in the Play Store, you guys added the
+design for tablets feature because you recognize
+
+449
+00:34:43,369 --> 00:34:46,760
+that phones and tablets are fundamentally
+different in their apps.
+
+450
+00:34:46,760 --> 00:34:51,230
+With more smart Glass products coming out,
+is that going to be extensible to other types
+
+451
+00:34:51,230 --> 00:34:54,960
+of products? And if one were to manufacture
+such a product, how would they engage with
+
+452
+00:34:54,960 --> 00:34:59,770
+you guys to make sure that that feature would
+happen and set the criterias and all that
+
+453
+00:34:59,770 --> 00:35:02,710
+kind of stuff?
+>>Ellie Powers: All right. Take this one?
+
+454
+00:35:02,710 --> 00:35:07,029
+>>Miles Barr: It's a good one.
+So right now we're only sort of focusing on
+
+455
+00:35:07,029 --> 00:35:12,569
+tablets. But we're aware, you know, within
+our own team -- well, our team and externally,
+
+456
+00:35:12,569 --> 00:35:16,160
+lots of different form factors that are coming
+out. So, you know, when you think of things
+
+457
+00:35:16,160 --> 00:35:22,900
+like Google TV, it's something we consider.
+I think we want to wait for a particular device
+
+458
+00:35:22,900 --> 00:35:28,309
+class to sort of take off or begin to get
+a foothold before we change the store. But
+
+459
+00:35:28,309 --> 00:35:31,779
+definitely other form factors is something
+we would consider.
+
+460
+00:35:31,779 --> 00:35:34,559
+>>> Okay. Thank you.
+>>Ellie Powers: All right.
+
+461
+00:35:34,559 --> 00:35:40,900
+>>> I have a question about the device distribution
+of my app in the Play Store.
+
+462
+00:35:40,900 --> 00:35:45,289
+So when I see, like, the top ten devices where
+my app is doing good. But what are the top
+
+463
+00:35:45,289 --> 00:35:49,640
+ten devices on an aggregated level in the
+Play Store? That I don't know. And it might
+
+464
+00:35:49,640 --> 00:35:55,380
+be the case that the top app -- device on
+my app might be fifth in the global stack
+
+465
+00:35:55,380 --> 00:36:01,099
+ranking and I might be leaving a lot of money
+on the table because my app really doesn't
+
+466
+00:36:01,099 --> 00:36:06,460
+do well on the top devices on a global ranking.
+Is there any way I can get access to that
+
+467
+00:36:06,460 --> 00:36:10,500
+data?
+>>Miles Barr: So short answer, no. But the
+
+468
+00:36:10,500 --> 00:36:13,970
+aim is that you shouldn't be focusing on particular
+types of devices. You should be making sure
+
+469
+00:36:13,970 --> 00:36:20,059
+your app works across all devices, you know,
+in the same great experience. So don't worry
+
+470
+00:36:20,059 --> 00:36:26,440
+too much about specific devices. Try, you
+know, to use a beta testing feature. Try to
+
+471
+00:36:26,440 --> 00:36:28,950
+reach more users on different devices to make
+sure it works well.
+
+472
+00:36:28,950 --> 00:36:32,260
+You know, if you're doing some really sort
+of cutting-edge stuff, we've seen people,
+
+473
+00:36:32,260 --> 00:36:37,420
+you know, really push the boundaries of 3D,
+and sometimes that causes problems. You know,
+
+474
+00:36:37,420 --> 00:36:41,430
+you can look at the crash reports section
+in particular to find out if there's a problem
+
+475
+00:36:41,430 --> 00:36:46,339
+device and how best to fix on it.
+But definitely don't try to optimize your
+
+476
+00:36:46,339 --> 00:36:53,339
+app for a specific set of devices. You know,
+make sure it's a great experience for everyone.
+
+477
+00:36:53,380 --> 00:36:56,010
+>>> Thank you.
+>>> John (saying name) with RadarNow! USNaviguide.
+
+478
+00:36:56,010 --> 00:37:01,319
+I have some APKs in my developer console that
+are years old and essentially abandoned. And
+
+479
+00:37:01,319 --> 00:37:05,819
+now with the rollout of the beta feature,
+I'm going to have all these beta versions
+
+480
+00:37:05,819 --> 00:37:10,130
+of our apps stuck out there. Is there going
+to be a feature to archive or delete, you
+
+481
+00:37:10,130 --> 00:37:14,400
+know, old and abandoned APKs?
+>>Ellie Powers: Yeah, this is also a very
+
+482
+00:37:14,400 --> 00:37:17,690
+popular request. I saw some applause over
+there.
+
+483
+00:37:17,690 --> 00:37:22,000
+So it depends. So right now, many of you may
+not know this, but if you have not published
+
+484
+00:37:22,000 --> 00:37:27,910
+an app, you can delete it today. Yeah.
+So if you go to the developer console, on
+
+485
+00:37:27,910 --> 00:37:32,630
+the right-hand side, there's a little, I don't
+know, gray button, and you can select "delete."
+
+486
+00:37:32,630 --> 00:37:35,200
+>>> Well, these are, like, apps that --
+>>Ellie Powers: I know. If you've published
+
+487
+00:37:35,200 --> 00:37:38,480
+them, I totally hear you on that. I see a
+lot of feedback. It's definitely in the top
+
+488
+00:37:38,480 --> 00:37:41,630
+ten things that we're seeing coming in with
+the feedback. So we hear you on that.
+
+489
+00:37:41,630 --> 00:37:46,130
+I guess with the alpha and beta, just to be
+really clear, those are in the same store
+
+490
+00:37:46,130 --> 00:37:49,849
+listing, so it's not going to litter up your
+app page anymore. But we definitely hear folks
+
+491
+00:37:49,849 --> 00:37:54,240
+who have apps that they don't work on anymore,
+and they kind of want to hide that. So we're
+
+492
+00:37:54,240 --> 00:37:56,220
+definitely looking into that possibility.
+>>> Well, I have beta versions for testing.
+
+493
+00:37:56,220 --> 00:38:00,160
+And now --
+>>Ellie Powers: Okay. With different package
+
+494
+00:38:00,160 --> 00:38:00,980
+names.
+>>> Yes. Yeah.
+
+495
+00:38:00,980 --> 00:38:04,539
+>>Ellie Powers: Okay. I see. Yeah, we have
+definitely heard that. I guess we're not announcing
+
+496
+00:38:04,539 --> 00:38:07,950
+any changes today that are happening there.
+But we've definitely heard that as a top ten
+
+497
+00:38:07,950 --> 00:38:08,910
+request.
+>>> Thanks very much.
+
+498
+00:38:08,910 --> 00:38:12,339
+>>Riccardo Govoni: Is that just something
+that you would like to hide from the applications
+
+499
+00:38:12,339 --> 00:38:14,380
+list?
+>>> Yeah. It would be okay if we could just
+
+500
+00:38:14,380 --> 00:38:18,799
+archive them so they're not sticking there
+right in our face every time we go in. You
+
+501
+00:38:18,799 --> 00:38:23,170
+know, I mean, sometimes also it would be good
+to order, be able to order the list so that
+
+502
+00:38:23,170 --> 00:38:27,809
+the ones that we're using and that are popular
+at the top instead of, I don't know exactly,
+
+503
+00:38:27,809 --> 00:38:31,640
+you might have it alphabetically now or something.
+>>Miles Barr: I think it's alphabet, yeah.
+
+504
+00:38:31,640 --> 00:38:34,529
+>>> But archiving, just archive, you know,
+hide or something.
+
+505
+00:38:34,529 --> 00:38:37,710
+>>Ellie Powers: Yeah, a lot of folks have
+wanted to hide the unpublished ones, like,
+
+506
+00:38:37,710 --> 00:38:41,109
+once they're not using it anymore, to hide
+them. So we definitely have heard that one.
+
+507
+00:38:41,109 --> 00:38:45,520
+>>> Great. Thanks very much.
+Oh, I love the comments thing, by the way.
+
+508
+00:38:45,520 --> 00:38:49,170
+I've had it for a year. It's great.
+>>Ellie Powers: Oh, yeah? Awesome. I'm glad.
+
+509
+00:38:49,170 --> 00:38:51,510
+The back.
+>>> Hi. My question is about staged rollouts
+
+510
+00:38:51,510 --> 00:38:55,740
+and how do you determine which percentage
+of users is it? And is it the same percentage
+
+511
+00:38:55,740 --> 00:39:00,770
+of users each time or is it different? So
+when you release new versions of the app,
+
+512
+00:39:00,770 --> 00:39:03,299
+is it always going to be that same 10% that
+you're going to be --
+
+513
+00:39:03,299 --> 00:39:09,430
+>>Riccardo Govoni: So --
+>>Miles Barr: So it's random per staged rollout.
+
+514
+00:39:09,430 --> 00:39:14,250
+So by that, so when you're rolling out a new
+version, we sort of have a different random
+
+515
+00:39:14,250 --> 00:39:20,289
+seed to select which 10%. But we keep that
+seed during that rollout process. So if you
+
+516
+00:39:20,289 --> 00:39:25,240
+don't want to push that out to 100%, you want
+to place it in another APK. Those original
+
+517
+00:39:25,240 --> 00:39:28,650
+10% will get the update.
+>>> So you can have, then, 2 -- like, you
+
+518
+00:39:28,650 --> 00:39:34,410
+can have a 2.0 to everyone, a 2.1 to 10%,
+and a then 2.2 to a different 10%? Is that
+
+519
+00:39:34,410 --> 00:39:35,880
+possible?
+>>Miles Barr: No. There's only one staged
+
+520
+00:39:35,880 --> 00:39:38,539
+rollout at any time.
+>>Riccardo Govoni: So anytime you do a staged
+
+521
+00:39:38,539 --> 00:39:42,260
+rollout, we pick a different part of the population.
+So, you know, it's not the same guys that
+
+522
+00:39:42,260 --> 00:39:46,950
+get the same testing APK stack. But during
+a staged rollout, if you decide that the particular
+
+523
+00:39:46,950 --> 00:39:51,170
+APK needs changing, then you can change it
+and the same group of users will receive that.
+
+524
+00:39:51,170 --> 00:39:53,890
+>>> Okay. Great. Thank you.
+>>Miles Barr: And also, to clarify, staged
+
+525
+00:39:53,890 --> 00:39:55,640
+rollouts, not for testing.
+>>> Yeah. Sorry.
+
+526
+00:39:55,640 --> 00:39:57,940
+>>> Okay.
+>>Miles Barr: Only staged rollout when you're
+
+527
+00:39:57,940 --> 00:40:00,510
+ready for everyone to get it.
+>>Ellie Powers: All right. So it looks like
+
+528
+00:40:00,510 --> 00:40:04,650
+we basically have five seconds left. But don't
+worry. I still see some folks wanting to ask
+
+529
+00:40:04,650 --> 00:40:07,740
+questions. We're just going to head back to
+office hours. And don't forget that there's
+
+530
+00:40:07,740 --> 00:40:12,190
+a monetization section here in an hour, or
+in --
+
+531
+00:40:12,190 --> 00:40:12,770
+[ Applause ]
+

@@ -1,0 +1,1590 @@
+1
+00:00:00,179 --> 00:00:06,149
+>> Dan Heberden: Hello. As you have been looking
+it at for 15 minutes, I'm Dan Heberden. So
+
+2
+00:00:06,149 --> 00:00:11,840
+enough about that. I will get my slides up
+here.
+
+3
+00:00:11,840 --> 00:00:18,840
+So this is bower, at least the very basic
+beginnings of what you would start to use
+
+4
+00:00:20,240 --> 00:00:27,240
+where you just run bower install jQuery and
+you see that it went and got jQuery, installed
+
+5
+00:00:27,650 --> 00:00:33,320
+it for us in the current folder. What we didn't
+have to do is specify a version. We didn't
+
+6
+00:00:33,320 --> 00:00:39,800
+have to find out what the latest version is
+or whatever one we wanted.
+
+7
+00:00:39,800 --> 00:00:44,600
+And what does getting jQuery look like for
+you? Or I mean really any library, but jQuery
+
+8
+00:00:44,600 --> 00:00:51,600
+is a good example.
+Oops, sorry about that.
+
+9
+00:00:51,960 --> 00:00:58,960
+Does that mean going to jquery.com and downloading
+that? Does that mean going to the github repo
+
+10
+00:01:00,570 --> 00:01:06,070
+and looking for maybe a built copy? Do you
+have to clone the repo and then build it with
+
+11
+00:01:06,070 --> 00:01:13,070
+their build tools? Do you memorize URL and
+use wget or curl and pull it down?
+
+12
+00:01:14,250 --> 00:01:21,250
+Bower helps because it makes installing tools
+much easier. And it uses a manifest file to
+
+13
+00:01:22,600 --> 00:01:29,600
+declare what it is that you actually want
+to download or to use in your project. And
+
+14
+00:01:30,200 --> 00:01:36,170
+those downloads are centralized into a commonplace,
+which are very helpful, and it by itself resolves
+
+15
+00:01:36,170 --> 00:01:43,170
+dependencies.
+So before I get into all the pieces of what
+
+16
+00:01:45,700 --> 00:01:51,840
+bower is, I would like to show you what it
+looks like with a canon of other tools, a
+
+17
+00:01:51,840 --> 00:01:57,399
+full suite. And so Yeoman and Grunt are required,
+yes, are great tools. If you haven't gotten
+
+18
+00:01:57,399 --> 00:02:01,049
+a chance to look at them or learn about them,
+I really recommend diving into them.
+
+19
+00:02:01,049 --> 00:02:07,740
+But we are just going to run a quick example
+to just show off some stuff that bower can
+
+20
+00:02:07,740 --> 00:02:11,859
+do.
+So first we would do is get Yeoman. Yeoman
+
+21
+00:02:11,859 --> 00:02:18,069
+is just a scaffolding tool that lets you define
+-- there's a couple generators out there.
+
+22
+00:02:18,069 --> 00:02:22,709
+There are, like, 16 that it comes with and
+then a bunch more that help you scaffold typical
+
+23
+00:02:22,709 --> 00:02:25,590
+applications.
+And the typical application we want to scaffold
+
+24
+00:02:25,590 --> 00:02:32,529
+is a requirejs app. So we can just get generator-requirejs.
+You can do this yourself but it is kind of
+
+25
+00:02:32,529 --> 00:02:38,809
+nice to get everything already to go without
+having to do a lot of work.
+
+26
+00:02:38,809 --> 00:02:45,809
+I will show you what that looks like. Just
+make a quick -- 
+so assuming I have gotten those two things,
+
+27
+00:02:50,549 --> 00:02:56,889
+I can just run Yeoman with required requirejs
+and it will do a couple of things. It will
+
+28
+00:02:56,889 --> 00:02:59,669
+ask me some questions, what I want the app
+to be called.
+
+29
+00:02:59,669 --> 00:03:05,040
+We are just going to make a quick weather
+app. So we will say my-weather-app and a default
+
+30
+00:03:05,040 --> 00:03:07,989
+description. Now, I'm not going to hit enter
+now just because that's going to go through
+
+31
+00:03:07,989 --> 00:03:12,739
+and download everything from NPM and everything
+from bower and everything that we need. And
+
+32
+00:03:12,739 --> 00:03:19,739
+I don't really trust the WiFi.
+So I'm going to just change to the baked cake
+
+33
+00:03:20,989 --> 00:03:27,629
+in the oven. And we can see actually -- I
+will just do this -- that it already gave
+
+34
+00:03:27,629 --> 00:03:32,510
+us a lot of stuff just out the gate. It gave
+us an app directory with requirejs config
+
+35
+00:03:32,510 --> 00:03:39,510
+file that calls the main file here. And we
+can -- it just says jQuery in there, but we
+
+36
+00:03:40,969 --> 00:03:44,819
+can put anything in there.
+But it also did some other stuff. It set us
+
+37
+00:03:44,819 --> 00:03:51,239
+up with Grunt. So we have concatenation and
+minification, js hinting and that kind stuff
+
+38
+00:03:51,239 --> 00:03:55,529
+already set up.
+It made a packaged JSON; and it did put our
+
+39
+00:03:55,529 --> 00:04:00,519
+name in there for us, which is really convenient.
+So some nice convenience measures.
+
+40
+00:04:00,519 --> 00:04:07,519
+So let's go ahead and actually write some
+stuff. Now, for making a weather app, probably
+
+41
+00:04:07,650 --> 00:04:13,229
+someone has done the work of getting weather.
+I'm sure actually thousands of people have
+
+42
+00:04:13,229 --> 00:04:17,229
+probably done that all by theirselves without
+even looking to see if anyone has done that.
+
+43
+00:04:17,229 --> 00:04:21,370
+So let's just use bower, and we'll search
+for weather.
+
+44
+00:04:21,370 --> 00:04:28,139
+I will make that a little bit bigger.
+So it looks like Dan Heberden, I don't know
+
+45
+00:04:28,139 --> 00:04:35,139
+who that guy is, but he made a weather thing.
+And I'm going to trust it for the sake of
+
+46
+00:04:37,270 --> 00:04:44,270
+this presentation.
+So, I can just install bower -- or use bower
+
+47
+00:04:44,479 --> 00:04:49,550
+to install weather. And I will save that to
+my configuration file. If you have used NPM,
+
+48
+00:04:49,550 --> 00:04:53,300
+that's the same kind of thing. We will talk
+more about what these pieces mean.
+
+49
+00:04:53,300 --> 00:05:00,300
+You can see here it went in and got the weather
+component. It also got the stuff that the
+
+50
+00:05:01,710 --> 00:05:07,270
+component needs, which is jQuery.
+And so now if I go back to my application
+
+51
+00:05:07,270 --> 00:05:13,990
+here, I not only have the things that were
+part of the original application, requirejs
+
+52
+00:05:13,990 --> 00:05:20,560
+and jQuery and Qnit, but I also have my weather
+module. So let's go ahead and use that. Since
+
+53
+00:05:20,560 --> 00:05:27,560
+this is an AMD module, I will just jump over
+into my main file here; and I can just reference
+
+54
+00:05:32,120 --> 00:05:39,120
+it directly.
+Hop back to my slides. That is not the right
+
+55
+00:05:50,080 --> 00:05:57,080
+slide.
+There we go. Okay.
+
+56
+00:06:02,659 --> 00:06:09,659
+So in our app, we would put in some HTML for
+our actual weather information, just temperature
+
+57
+00:06:10,099 --> 00:06:17,099
+and status, that kind of stuff. And then inside
+of that, we can use that weather component
+
+58
+00:06:17,129 --> 00:06:23,330
+that we installed. So we'll just use require
+to get that and typical AMD stuff here, so
+
+59
+00:06:23,330 --> 00:06:29,969
+nothing too crazy, and make a function that
+actually uses the position object that the
+
+60
+00:06:29,969 --> 00:06:36,969
+weather API returns with temperature and condition
+and that kind of stuff.
+
+61
+00:06:37,460 --> 00:06:41,240
+And then actually get our current position.
+So we'll use geolocation, get our current
+
+62
+00:06:41,240 --> 00:06:48,240
+position, and pump that latitude and longitude
+into our weather module.
+
+63
+00:06:48,280 --> 00:06:55,280
+I have the finished product here. Hopefully,
+this will work with the connection. So I have
+
+64
+00:07:01,180 --> 00:07:06,669
+a connect server actually part of this whole
+suite here, which is nice via Grunt, so I
+
+65
+00:07:06,669 --> 00:07:13,669
+can start a Web server on local host.
+You see here that that worked pretty well
+
+66
+00:07:23,779 --> 00:07:30,550
+out of the box and was able to make a server
+connection, do all that stuff, but we didn't
+
+67
+00:07:30,550 --> 00:07:36,029
+have to worry about finding this module and
+putting it in. We were just able to take advantage
+
+68
+00:07:36,029 --> 00:07:42,360
+of it.
+Let's look at what happened here, and this
+
+69
+00:07:42,360 --> 00:07:48,809
+is the bower.json that was generated from
+what we did. And we have a requirejs and JS
+
+70
+00:07:48,809 --> 00:07:52,889
+dependencies that came out of the box. But
+when we installed weather, it also added that
+
+71
+00:07:52,889 --> 00:07:58,699
+version here. The tilde means it is going
+to keep the minor version. So if that goes
+
+72
+00:07:58,699 --> 00:08:05,309
+to 0.2.4, it will go ahead and install that.
+So we looked at kind of a quick demo of what
+
+73
+00:08:05,309 --> 00:08:08,529
+that would look like using that with other
+tools.
+
+74
+00:08:08,529 --> 00:08:15,529
+I do want to show you one really neat thing
+since I have this up. And that is using all
+
+75
+00:08:16,879 --> 00:08:21,870
+of these tools together. And this is mostly
+just a plug for Grunt and how well it does
+
+76
+00:08:21,870 --> 00:08:25,680
+all of this stuff.
+I just ran every task that is set up with
+
+77
+00:08:25,680 --> 00:08:31,629
+this, so I'm hinting. I'm running my test
+suite. I'm getting all of the dependencies
+
+78
+00:08:31,629 --> 00:08:36,130
+via requirejs and putting them all together.
+And now I'm concatenating and minifying all
+
+79
+00:08:36,130 --> 00:08:43,130
+of that together. So my original uncompressed
+file of 326K is now 23K. That's pretty cool.
+
+80
+00:08:47,089 --> 00:08:51,120
+So if you aren't doing this or haven't looked
+in these kind of tools, I highly suggest doing
+
+81
+00:08:51,120 --> 00:08:58,120
+that. One HTTP request to get all of the site
+running. That's pretty neat.
+
+82
+00:08:59,050 --> 00:09:06,050
+So why a clientside package manager? When
+using clientside tools should be easy. I mean,
+
+83
+00:09:09,980 --> 00:09:16,980
+sure going to hotscripts.com and finding some
+script was really fun ten years ago.
+
+84
+00:09:17,550 --> 00:09:22,350
+There's a problem with open and public code
+being committed into repositories. And I don't
+
+85
+00:09:22,350 --> 00:09:26,610
+know about you, but I don't really like waiting
+for github to download gargantuan repositories
+
+86
+00:09:26,610 --> 00:09:33,510
+all the time. What happens is older and buggy
+versions of libraries or frameworks or plug-ins
+
+87
+00:09:33,510 --> 00:09:38,440
+get stuck in projects, and it is harder to
+work around getting a new one in there. And
+
+88
+00:09:38,440 --> 00:09:43,300
+then there is a hesitancy to use an existing
+solution because it is kind of a pain to go
+
+89
+00:09:43,300 --> 00:09:48,510
+out and find what's available.
+When you do find out there is a great plug-in
+
+90
+00:09:48,510 --> 00:09:53,440
+or piece, you have to go find out what it
+needs to run and that can be a hassle.
+
+91
+00:09:53,440 --> 00:09:59,670
+Bower, of course, makes it awesome, hence
+this talk. Let's look into bower. Let's look
+
+92
+00:09:59,670 --> 00:10:06,089
+into what pieces it has that will help you.
+We saw installation before. We can just install
+
+93
+00:10:06,089 --> 00:10:11,769
+a component and it will go and grab all of
+that stuff. It will grab all the pieces, put
+
+94
+00:10:11,769 --> 00:10:18,769
+that into our folder. We can also do that
+via manifest files. So we can declare what
+
+95
+00:10:18,959 --> 00:10:23,860
+we want, run bower install, and it will just
+go through that manifest file just like NPM
+
+96
+00:10:23,860 --> 00:10:28,670
+and get the pieces that are required along
+with anything that those pieces require and
+
+97
+00:10:28,670 --> 00:10:32,740
+anything those pieces require until it has
+everything that you need.
+
+98
+00:10:32,740 --> 00:10:38,220
+And, of course, if you edit the manifest file,
+we want to change this -- say, there was a
+
+99
+00:10:38,220 --> 00:10:45,220
+bug and we want to force version 0.2.0, we
+can do that and run bower install and it will
+
+100
+00:10:45,560 --> 00:10:49,779
+go get the right files and make sure everything
+is okay as far as dependencies go.
+
+101
+00:10:49,779 --> 00:10:55,029
+Now, if you want to do this from the command
+line, you can do that pretty easily just by
+
+102
+00:10:55,029 --> 00:11:00,089
+putting in the module name that you want and
+then a hash mark and then a version. And that
+
+103
+00:11:00,089 --> 00:11:03,750
+will do the same thing if you need to do that
+from the command line. In this case, we want
+
+104
+00:11:03,750 --> 00:11:10,750
+jQuery 1.8.0. And so we can force that.
+And you can manually edit it, that's fine.
+
+105
+00:11:14,170 --> 00:11:21,170
+But we have this same as NPM--save and --savedev
+and those let you just express what you want
+
+106
+00:11:22,370 --> 00:11:28,920
+to install but also put that into your manifest
+file because chances are you will want that
+
+107
+00:11:28,920 --> 00:11:35,920
+any time you recreate this project or someone
+else clones this project and gets it.
+
+108
+00:11:36,600 --> 00:11:42,110
+But at this point, bower is mostly just a
+glorified URL shortener. Like, this is nice
+
+109
+00:11:42,110 --> 00:11:45,759
+but this isn't really what's really going
+to help you.
+
+110
+00:11:45,759 --> 00:11:50,850
+So upgrading is where bower also shines in
+making your life a lot easier in dealing with
+
+111
+00:11:50,850 --> 00:11:57,850
+clientside libraries and frameworks and plug-ins.
+Since required packages don't have to be committed
+
+112
+00:11:59,470 --> 00:12:06,009
+into your repository, it makes discoverability
+and it makes working with these libraries
+
+113
+00:12:06,009 --> 00:12:10,740
+much easier.
+Check out bower ls. It gives you a quick look
+
+114
+00:12:10,740 --> 00:12:16,170
+at what your current project looks like. And
+so in this case, we just installed jQuery
+
+115
+00:12:16,170 --> 00:12:22,540
+1.8.0, it is going to let us know that 2.0.0
+is out and that we can look into upgrading
+
+116
+00:12:22,540 --> 00:12:25,970
+to that. We didn't have to go to the jQuery
+site or make sure we follow the blog. And
+
+117
+00:12:25,970 --> 00:12:31,509
+this is for any particular plug-in or piece
+that you follow. But it also hunts down the
+
+118
+00:12:31,509 --> 00:12:37,180
+dependencies just to make sure that everything
+is fine as far as what it requires as well.
+
+119
+00:12:37,180 --> 00:12:43,660
+So we have a nice map of what our project
+looks like.
+
+120
+00:12:43,660 --> 00:12:49,149
+Bower update will take the current version
+and install it to the highest minor version
+
+121
+00:12:49,149 --> 00:12:53,269
+possible. So in this case, it will go to 1.8.3.
+And that's nice if you want to just make sure
+
+122
+00:12:53,269 --> 00:12:58,440
+that while there shouldn't be any problems,
+run the test suite, give it a run-through,
+
+123
+00:12:58,440 --> 00:13:04,810
+and then make sure you can deploy your site
+using these latest versions.
+
+124
+00:13:04,810 --> 00:13:09,829
+Let's talk about the power of bower.json,
+having something that expresses your clientside
+
+125
+00:13:09,829 --> 00:13:16,829
+needs in your application. And the easiest
+way to do that is this: Just obliterate the
+
+126
+00:13:17,699 --> 00:13:20,769
+components directory.
+And, of course, this would cripple your app
+
+127
+00:13:20,769 --> 00:13:27,769
+all together. And it is just as easy as running
+bower install to get all of that stuff back.
+
+128
+00:13:28,810 --> 00:13:35,810
+Now, bower is just a package manager. Bower
+doesn't give you minified code. Bower doesn't
+
+129
+00:13:37,930 --> 00:13:44,930
+concatenate things. It doesn't load modules
+for you and it won't. You say what you want,
+
+130
+00:13:45,529 --> 00:13:48,940
+and bower gets it. Because there is plenty
+of great tools out there. There is tons of
+
+131
+00:13:48,940 --> 00:13:53,370
+build tools. There's tons of things to help
+you do certain tasks. Bower doesn't need to
+
+132
+00:13:53,370 --> 00:13:58,279
+do that for you. But what it does need to
+do is play well with others.
+
+133
+00:13:58,279 --> 00:14:03,129
+And so since it is written in JavaScript and
+since it is a node library, you can just require
+
+134
+00:14:03,129 --> 00:14:08,300
+it and do the same things that you can do
+from the command line, search, install, look
+
+135
+00:14:08,300 --> 00:14:13,629
+at what packages are available, and control
+it from maybe a custom build tool that you
+
+136
+00:14:13,629 --> 00:14:20,629
+have, or Grunt.
+Another thing that is really nice and available
+
+137
+00:14:25,759 --> 00:14:32,759
+for you is the plug-in that Ben Schwarz made
+for Sublime Text. I am not a Sublime Text
+
+138
+00:14:33,379 --> 00:14:38,100
+user so I might bumble around this a little
+bit. But I wanted to show you what this could
+
+139
+00:14:38,100 --> 00:14:45,100
+look like.
+Actually, let me do this from here.
+
+140
+00:14:47,110 --> 00:14:54,110
+All right. So here's a typical Sublime project.
+And the typical way that you run the built-in
+
+141
+00:15:09,089 --> 00:15:16,089
+tools, command-shift-P. When you install this
+tool, it adds a bower -- can't really change
+
+142
+00:15:17,490 --> 00:15:22,810
+the font, unfortunately, of that particular
+part of Sublime. I don't think so. Nope.
+
+143
+00:15:22,810 --> 00:15:27,709
+But what it lists there, if you can't see
+it, is bower: Install, bower: Configure project
+
+144
+00:15:27,709 --> 00:15:34,709
+and bower: Discover packages.
+And so from here, I can run bower install
+
+145
+00:15:35,500 --> 00:15:42,500
+and that gives me kind of an interactive search
+so I can look for Angular and find that package
+
+146
+00:15:42,629 --> 00:15:46,420
+and install it right from Sublime. So I don't
+even have to hop into the command line, if
+
+147
+00:15:46,420 --> 00:15:50,410
+I don't want to. Of course, if you have Little
+Snitch running, it will ask you every time
+
+148
+00:15:50,410 --> 00:15:56,800
+but that's okay.
+Just from Sublime, I was able to add something
+
+149
+00:15:56,800 --> 00:16:03,800
+into my bower.json file and it downloaded
+it into my components directory where I have
+
+150
+00:16:04,040 --> 00:16:08,829
+Angular now.
+So that's pretty nice. But there is another
+
+151
+00:16:08,829 --> 00:16:15,829
+tool that this exposes, or links to, rather,
+which is Discover Packages. So sindre made
+
+152
+00:16:17,569 --> 00:16:24,569
+this, sindresorhus on github and Twitter.
+This is a search Web site for bower where
+
+153
+00:16:26,680 --> 00:16:32,389
+you can take a look. And you can do the same
+thing, Angular, and get some available metrics
+
+154
+00:16:32,389 --> 00:16:37,879
+about what matched that search, when it was
+last updated, how many forks and stars, a
+
+155
+00:16:37,879 --> 00:16:42,779
+little bit more information to help you make
+a good decision about what piece you want
+
+156
+00:16:42,779 --> 00:16:49,779
+to add in and discover things.
+Currently there is 2,048, so exactly 2K components,
+
+157
+00:16:50,379 --> 00:16:55,730
+which is fantastic.
+Let's look at the Angular stuff just really
+
+158
+00:16:55,730 --> 00:17:00,500
+quickly. I have a quick demo about what that
+could look like, if you aren't a requirejs
+
+159
+00:17:00,500 --> 00:17:07,500
+fan or if you just like Angular.
+So we're making a typical Angular app. Have
+
+160
+00:17:17,150 --> 00:17:24,150
+our namespace in the HTML, my app. And show
+you the basic template of HTML. And we will
+
+161
+00:17:24,590 --> 00:17:31,590
+go ahead and install that Angular component
+that's available.
+
+162
+00:17:33,540 --> 00:17:40,540
+So add our Angular script into our project.
+And then add some basic module codes, so we'll
+
+163
+00:17:41,930 --> 00:17:46,040
+depend on my app and create a controller.
+And this is going to make an itemized list.
+
+164
+00:17:46,040 --> 00:17:51,780
+So we see the UL up at the top. It is going
+to make just a repeatable list element -- or
+
+165
+00:17:51,780 --> 00:17:58,780
+list item based off of this item list.
+But let's say that we want to make this actually
+
+166
+00:17:58,890 --> 00:18:05,890
+work with markdown instead. And I'm sure that
+there's some kind of markdown Angular thing
+
+167
+00:18:07,150 --> 00:18:12,470
+that's existing out there. So we can search
+for Angular and just parse out anything that
+
+168
+00:18:12,470 --> 00:18:19,470
+mentioned markdown. And we can also use this
+Web site here or use Sublime text.
+
+169
+00:18:27,820 --> 00:18:33,010
+Angular markdown brings up the same thing.
+Whatever way you choose to get there, you
+
+170
+00:18:33,010 --> 00:18:38,210
+can. And so at the end of the day, we install
+that Angular markdown directive. And we see
+
+171
+00:18:38,210 --> 00:18:43,140
+that it installed Showdown. That's what it
+requires for the markdown parsing. And then
+
+172
+00:18:43,140 --> 00:18:48,570
+we have Angular, of course, which is the directive
+piece -- or what it depends on to actually
+
+173
+00:18:48,570 --> 00:18:51,900
+run. We already installed that, so it doesn't
+matter.
+
+174
+00:18:51,900 --> 00:18:56,290
+So now we have our three components that we
+need to add which is Angular itself, the markdown
+
+175
+00:18:56,290 --> 00:19:03,290
+parser, and then the Angular markdown directive.
+So we can add that module now as a dependency.
+
+176
+00:19:07,900 --> 00:19:12,470
+It has already been included as a script tag,
+so it is now available. So we can include
+
+177
+00:19:12,470 --> 00:19:18,790
+it just like we would in a regular app.
+Make sure that we specify that this item will
+
+178
+00:19:18,790 --> 00:19:25,790
+be parsed using that with the btf markdown
+down here, the latter part of that li.
+
+179
+00:19:27,810 --> 00:19:32,070
+And then just add some markdown. So in this
+case, on the last item we're just making that
+
+180
+00:19:32,070 --> 00:19:39,070
+some pretty basic markdown. And what that
+looks like -- 
+
+181
+00:19:50,540 --> 00:19:56,340
+this is the full HTML. That got really big.
+This was the full HTML that we have now that
+
+182
+00:19:56,340 --> 00:20:01,030
+was generated. These are our components all
+installed. Angular, angular markdown, directive
+
+183
+00:20:01,030 --> 00:20:08,030
+and showdown. Bower is updated with the two
+pieces that we need. And there's it running
+
+184
+00:20:18,840 --> 00:20:24,780
+those three items through the generator and
+it is parsing markdown. So that didn't take
+
+185
+00:20:24,780 --> 00:20:29,930
+a lot of work to go hunt down these pieces.
+Imagine that part where you find out, yes,
+
+186
+00:20:29,930 --> 00:20:34,430
+there is an Angular director for parsing markdown
+and now I need to get showdown. Now we need
+
+187
+00:20:34,430 --> 00:20:40,960
+to look where they put their built file. You
+are well aware that could be on their web
+
+188
+00:20:40,960 --> 00:20:45,640
+site. That could be in some DIS file in their
+GitHub repo or in their source file but you
+
+189
+00:20:45,640 --> 00:20:51,170
+are not quite sure which one it is. And that
+gets complicated and that takes time and that
+
+190
+00:20:51,170 --> 00:20:57,140
+is a particular barrier of entry to use that
+particular plug-in. But that is also time
+
+191
+00:20:57,140 --> 00:21:04,140
+you don't need to spend. There's also a really
+nice component or ability of being able to
+
+192
+00:21:05,290 --> 00:21:12,290
+work with a directory that's managed by a
+tool and that is, if we go back to our step
+
+193
+00:21:13,500 --> 00:21:20,500
+three here, so I have my Bower.json file.
+If I want to see what my app looks like with
+
+194
+00:21:27,690 --> 00:21:34,580
+a particular piece, I can just install any
+version I want. If I want to test, say requirejs3
+
+195
+00:21:34,580 --> 00:21:39,760
+comes out and I want to test that with my
+application, I can just install that using
+
+196
+00:21:39,760 --> 00:21:45,300
+Bower. And if my whole app just completely
+explodes or I find a bug and report it to
+
+197
+00:21:45,300 --> 00:21:52,300
+requirejs on I install JQuery 2.0.1 and I
+find a bug, I can report that bug. I can help
+
+198
+00:21:53,300 --> 00:21:58,400
+the community. I can help those projects that
+I depend on. But then I can just switch back
+
+199
+00:21:58,400 --> 00:22:05,400
+to the version that I need and it wasn't a
+big deal. I didn't have to, like, rename jquery.old.js
+
+200
+00:22:06,050 --> 00:22:12,740
+and put in the new one. If you have ever done
+that -- I know you have -- you don't have
+
+201
+00:22:12,740 --> 00:22:19,740
+to anymore. So we never had to hunt down Angular.
+We were able is to find everything really
+
+202
+00:22:23,680 --> 00:22:30,390
+easy and most of all the scripts are in a
+consistent place. Now, we looked at the JS
+
+203
+00:22:30,390 --> 00:22:36,660
+demo earlier. I was using components as the
+full path. Components weather then weather.js.
+
+204
+00:22:36,660 --> 00:22:43,620
+You can use -- there's a Grunt contribution
+plug-in for that that actually adds those
+
+205
+00:22:43,620 --> 00:22:47,850
+to your path automatically. So I could have
+just had JQuery and weather and it would have
+
+206
+00:22:47,850 --> 00:22:54,110
+just worked. There's tools out there. Bower
+has a lot of pieces to integrate with Rails,
+
+207
+00:22:54,110 --> 00:23:00,040
+with different node build tools. There's a
+lot of community around making it integrate
+
+208
+00:23:00,040 --> 00:23:07,040
+with whatever word process that you have.
+So what's coming up? There's a lot of great
+
+209
+00:23:08,840 --> 00:23:14,290
+stuff that we looked at but obviously there's
+room for improvement. We're not perfect. This
+
+210
+00:23:14,290 --> 00:23:20,930
+is still a new project. And so some of the
+things that we want to do are hosted packages.
+
+211
+00:23:20,930 --> 00:23:24,350
+We want you to be able to authenticate with
+the registration server. We have started working
+
+212
+00:23:24,350 --> 00:23:31,180
+on this. You could rename a package if you
+added one or delete it. You would be able
+
+213
+00:23:31,180 --> 00:23:37,460
+to push a copy of a built file if you don't
+want that maybe in your repository. You can
+
+214
+00:23:37,460 --> 00:23:43,550
+push that up to us directly. And, of course,
+we can give a cached copy. If you don't have
+
+215
+00:23:43,550 --> 00:23:48,860
+git or you want that even faster, we can just
+push the file that you want down, which is
+
+216
+00:23:48,860 --> 00:23:55,860
+really helpful. Andre, who is the lead developer
+for Bower, Marco and him have been working
+
+217
+00:23:58,510 --> 00:24:04,210
+on a rewrite of Bower to make it faster, to
+make it easier for us to work on and add better
+
+218
+00:24:04,210 --> 00:24:11,210
+features. So this is the quick video he made.
+Let's go full screen here. I'll probably pause
+
+219
+00:24:13,350 --> 00:24:20,350
+it. It's a really short video. So this is
+his dependencies list. These are pretty big
+
+220
+00:24:21,600 --> 00:24:27,540
+pieces. These are a lot of pieces. This is
+pretty indicative of a typical real-world
+
+221
+00:24:27,540 --> 00:24:34,540
+app as far as how many components are there.
+So what he has here is on the left is going
+
+222
+00:24:36,450 --> 00:24:43,450
+to be with the rewrite and then on the right
+is the current version. And so those run.
+
+223
+00:24:45,490 --> 00:24:52,490
+Bower just goes to town getting everything.
+So you see on the left it is already much
+
+224
+00:24:56,420 --> 00:25:02,330
+faster. He was able to get all of that content
+in just 8.8 seconds, whereas the current one
+
+225
+00:25:02,330 --> 00:25:09,330
+is 13. And then if you have cache, which Bower
+has, once you've actually done this once and
+
+226
+00:25:12,500 --> 00:25:17,410
+you've gotten -- most of these repos are using
+across different projects, it's now down to
+
+227
+00:25:17,410 --> 00:25:24,410
+2.3 seconds versus 5.7 on the current version.
+And then, you know, that time you are on a
+
+228
+00:25:25,100 --> 00:25:29,640
+plane and you need to recreate the project
+and you know you have all that cached, one
+
+229
+00:25:29,640 --> 00:25:36,640
+second. So this isn't a big commitment as
+far as having a process around getting these
+
+230
+00:25:37,090 --> 00:25:43,380
+packages. Running, even on the current version,
+it's still pretty fast and it's only going
+
+231
+00:25:43,380 --> 00:25:49,670
+to get faster and it's only going to get better.
+And so working this tool into your work flow
+
+232
+00:25:49,670 --> 00:25:53,600
+not only should make your life easier but
+it should do a faster job of hunting down
+
+233
+00:25:53,600 --> 00:25:57,650
+all these things for you than you possibly
+could. As developers, that's the whole point.
+
+234
+00:25:57,650 --> 00:26:04,650
+Of course, working on the regular stuff, more
+docs, less bugs. Unless you want more bugs.
+
+235
+00:26:06,370 --> 00:26:13,340
+I guess we could put them in. And more packages
+and more integration. That's really the biggest
+
+236
+00:26:13,340 --> 00:26:19,590
+piece of this, is we want to make Bower something
+that works with -- that is extendible to work
+
+237
+00:26:19,590 --> 00:26:24,700
+with any tools and we can just write whatever
+middleware, whatever plug-ins to make it work
+
+238
+00:26:24,700 --> 00:26:30,880
+so you can take advantage of it in the way
+that you see fit. We can focus on just getting
+
+239
+00:26:30,880 --> 00:26:37,880
+packages, getting stuff for you in a sane
+way. But we need help with that. We need help
+
+240
+00:26:38,730 --> 00:26:44,760
+on Bower. We need help with these pieces and
+so github.com/bower, all the pieces that we're
+
+241
+00:26:44,760 --> 00:26:51,300
+working on are there. Bower IRC channel and
+freenode, definitely come in. Chat with us
+
+242
+00:26:51,300 --> 00:26:56,340
+and let us know if you are running into any
+problems. We have a Bower Google group and,
+
+243
+00:26:56,340 --> 00:27:02,510
+that's it. So I think we have -- the timer
+was going pretty crazy, so I'm not sure exactly
+
+244
+00:27:02,510 --> 00:27:09,510
+what it all means for time. But I think I
+have time for questions. Anyway.
+
+245
+00:27:10,539 --> 00:27:17,539
+[ Applause ]
+I should note, too, that if you want to, we
+
+246
+00:27:17,820 --> 00:27:24,820
+have a bunch of Bower stickers and if you
+liked the logo, which is pretty new by Dave
+
+247
+00:27:26,860 --> 00:27:33,780
+Dessandro, a pretty neat logo. If you want
+to support that on your laptop or child's
+
+248
+00:27:33,780 --> 00:27:40,780
+forehead, definitely come up and get a Bower
+sticker.
+
+249
+00:27:41,260 --> 00:27:46,410
+>>> So this is awesome, really awesome. I
+haven't used it yet but I definitely would
+
+250
+00:27:46,410 --> 00:27:53,100
+love to start using this on my projects. So
+this kind of is all the client side components
+
+251
+00:27:53,100 --> 00:27:58,660
+and so on and usually all our projects are
+-- have, you know, server side and client
+
+252
+00:27:58,660 --> 00:28:05,660
+side together. Is there -- I don't know how
+to -- is there any sort of integration between
+
+253
+00:28:05,870 --> 00:28:10,230
+different kinds of service side packaging
+systems as well or packages?
+
+254
+00:28:10,230 --> 00:28:15,450
+>>Dan Heberden: The integration, that's where
+we want to make sure that as a developer you
+
+255
+00:28:15,450 --> 00:28:22,450
+are the one calling the shots. And so a good
+demo of this is actually my -- this presentation.
+
+256
+00:28:25,140 --> 00:28:28,570
+So I hooked up -- which ended up not working
+that great because there's a lot of network
+
+257
+00:28:28,570 --> 00:28:34,380
+connections in here. But I wanted to hook
+up my phone so that I could have the next
+
+258
+00:28:34,380 --> 00:28:40,590
+slide show up on my phone. So I wanted to
+use socket.io, and so looking at that, I was,
+
+259
+00:28:40,590 --> 00:28:47,590
+like, I better use Bower because I'm writing
+a talk about Bower. And so if I have my node
+
+260
+00:28:49,460 --> 00:28:56,210
+modules, I have socket.io, so in this case
+I know I need socket.io on the server, so
+
+261
+00:28:56,210 --> 00:29:03,210
+I just add that to my package.json. And then
+Bower search socket, give you a few different
+
+262
+00:29:03,260 --> 00:29:08,740
+ones available. You can see there's a client
+available to get. So it's still going to be
+
+263
+00:29:08,740 --> 00:29:15,390
+two separate pieces because they will be two
+separate libs, but having the ability to hop
+
+264
+00:29:15,390 --> 00:29:19,730
+between the two really ease easily and have
+NPM installed and Bower installed as part
+
+265
+00:29:19,730 --> 00:29:25,520
+of your process. When you showed Yeoman earlier,
+that actually runs both for you as well. Even
+
+266
+00:29:25,520 --> 00:29:30,270
+if you are building something that scaffolds
+an app that you maybe build in often, you
+
+267
+00:29:30,270 --> 00:29:33,900
+can have that as part of your work flow of
+just, okay, here's my server side components,
+
+268
+00:29:33,900 --> 00:29:38,260
+here's all my client side components. Go.
+>>> I guess we can always script if you want
+
+269
+00:29:38,260 --> 00:29:44,960
+just a single install, get everything from
+scratch, whatever script these components
+
+270
+00:29:44,960 --> 00:29:46,400
+as well.
+>>Dan Heberden: Yes, that's why I look at
+
+271
+00:29:46,400 --> 00:29:50,520
+Yeoman generators or something similar to
+do that.
+
+272
+00:29:50,520 --> 00:29:56,660
+>>> Thanks.
+>>> Hi, I had a question. We use Bower at
+
+273
+00:29:56,660 --> 00:30:02,830
+our company and one thing I noticed is that
+when you Bower install something like Bootstrap,
+
+274
+00:30:02,830 --> 00:30:09,830
+you get, like, 15 LS files and 15 JS files
+and it's not built. Is there any way to integrate
+
+275
+00:30:13,840 --> 00:30:19,360
+with Bower to have it, you know, automatically
+build that as soon as I download it? Some
+
+276
+00:30:19,360 --> 00:30:25,030
+packages actually do have the build files,
+you know, in the source. But just looking
+
+277
+00:30:25,030 --> 00:30:29,140
+for a way to kind of improve that work flow,
+I guess.
+
+278
+00:30:29,140 --> 00:30:35,560
+>>Dan Heberden: Yeah. There's a -- so Bower
+won't be the tool that builds that because
+
+279
+00:30:35,560 --> 00:30:40,780
+you can imagine that might be a make file.
+In the case of Bootstrap, it is a make file.
+
+280
+00:30:40,780 --> 00:30:46,120
+That can be node, whatever. So there needs
+to be a way to make that built version available.
+
+281
+00:30:46,120 --> 00:30:50,490
+Now, the way that Bootstrap does it, they
+actually hide it in the docs folder. So, like,
+
+282
+00:30:50,490 --> 00:30:56,000
+you go into docs, that's where the built JS
+and CSS files are. What we have been working
+
+283
+00:30:56,000 --> 00:31:01,320
+on is, there's a main property inside of Bowers,
+a manifest file. So we are working on the
+
+284
+00:31:01,320 --> 00:31:07,120
+spec to bring that to more light so that the
+actual file that you want is not only highlighted
+
+285
+00:31:07,120 --> 00:31:11,200
+to you, here it is, but even, like, possibly
+moved to root or something that makes that
+
+286
+00:31:11,200 --> 00:31:16,130
+easier. Also, the hosted part will mean, if
+you have a complicated build process, you
+
+287
+00:31:16,130 --> 00:31:22,030
+can publish your built copy if you don't want
+in your repo. Like, I like it in the repo,
+
+288
+00:31:22,030 --> 00:31:26,060
+I think that's a cool thing. Obviously, not
+everyone agrees with me. We are working on
+
+289
+00:31:26,060 --> 00:31:29,200
+that for sure.
+>>> Great, thanks.
+
+290
+00:31:29,200 --> 00:31:33,590
+>>> Can I use my own modules that are not
+in the directory, for example, in the Bower
+
+291
+00:31:33,590 --> 00:31:36,630
+file?
+>>Dan Heberden: Yeah, if you want to -- so
+
+292
+00:31:36,630 --> 00:31:40,770
+if it's something in the corporate environment
+you don't have. You don't want to publish
+
+293
+00:31:40,770 --> 00:31:47,330
+certain things or you have private code, you
+can reference any git repository and just
+
+294
+00:31:47,330 --> 00:31:54,330
+specify the git URL and a tag. So actually
+when I was working on -- oops -- on this.
+
+295
+00:32:04,220 --> 00:32:09,120
+So code mirror is, like, man, I don't want
+to have to commit this into project. Of course,
+
+296
+00:32:09,120 --> 00:32:14,210
+click, I'm writing a talk about Bower, I can
+use that. I was just able to point it to the
+
+297
+00:32:14,210 --> 00:32:19,860
+get repo for code mirror. It just pulled it
+for me. So even without someone going through
+
+298
+00:32:19,860 --> 00:32:24,870
+the work of making their project Bower compatible,
+I was still able to just throw it in there
+
+299
+00:32:24,870 --> 00:32:30,090
+and use that so you can use that and specify
+a tag if you wanted to for a specific version
+
+300
+00:32:30,090 --> 00:32:34,520
+of that.
+>>> Thank you.
+
+301
+00:32:34,520 --> 00:32:39,460
+>>> On the server side, you have the luxury
+of, if two modules require the same thing
+
+302
+00:32:39,460 --> 00:32:44,620
+but have different version requirements, you
+can just load them as dependencies of the
+
+303
+00:32:44,620 --> 00:32:49,100
+dependencies and each one gets called in for
+the correct spot. On the client you can't
+
+304
+00:32:49,100 --> 00:32:56,100
+run JQuery 1.4.2 for one module and 2.0 for
+another module. So what's the solution on
+
+305
+00:32:56,480 --> 00:33:01,970
+the client side for mismatched dependency?
+>>Dan Heberden: That will show up on the Bower
+
+306
+00:33:01,970 --> 00:33:07,180
+LS. But it's going to ultimately be your decision
+to mitigate that. Because, like you said,
+
+307
+00:33:07,180 --> 00:33:14,180
+there's no easy way out. And so that's where
+you making the decision of what to do and
+
+308
+00:33:14,490 --> 00:33:21,270
+which library is going to be the correct one
+or will work. We're working on finding out
+
+309
+00:33:21,270 --> 00:33:25,630
+the best way to do that. Like should our process
+stop altogether and say there's a conflict
+
+310
+00:33:25,630 --> 00:33:29,710
+and you have to resolve this first? Or should
+we just carry on and hope that you can figure
+
+311
+00:33:29,710 --> 00:33:34,980
+it out yourself. We're working on some better
+feedback on that. It's still, like, it will
+
+312
+00:33:34,980 --> 00:33:38,740
+still show you that we have two different
+versions and you are going to have to figure
+
+313
+00:33:38,740 --> 00:33:45,280
+out which one to put in. But that's where,
+again, the developer needs to be the decision
+
+314
+00:33:45,280 --> 00:33:50,330
+maker and Bower doesn't want to be -- doesn't
+need to be a tool that forces you into a box
+
+315
+00:33:50,330 --> 00:33:54,310
+in particular situations because you might
+be very well aware, oh, this person just didn't
+
+316
+00:33:54,310 --> 00:34:00,420
+update their dependency list. I guess that's
+it for questions. Thank you very much for
+
+317
+00:34:00,420 --> 00:34:02,220
+your attention. Come get a sticker, if you
+want.
+
+318
+00:34:02,220 --> 00:34:02,470
+[ Applause ]
+
