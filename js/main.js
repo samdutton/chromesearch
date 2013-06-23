@@ -35,9 +35,48 @@ function getVideoData() {
 	}
 }
 
-// function handleVideosComplete(){
-// 	console.log("finished! ", videos);
-// }
+function handleGotAllTrackData(){
+	isReady = true;
+	var div = document.querySelector('div#queryExplanation');
+	div.style.color = '#ccc';
+	div.innerText =
+		'Enter text to search transcripts, then click on a result to view video.';
+	var input = document.querySelector('input#query');
+	input.disabled = false;
+	input.focus();
+}
+
+function addTrack(videoId, trackText){
+	var lines = trackText.match(/^.*((\r\n|\n|\r)|$)/gm);
+	var cues = videos[videoId].cues;
+	var currentCue = {"text": "", "videoId": videoId};
+	for (var i = 0; i != lines.length; ++i){
+		var line = lines[i];
+		// if line is just a cue ID (i.e. just digits)
+		if (line.match(/^\d+\s*$/)){
+			if (currentCue.text) {
+				// get rid of redundant whitespace after combining lines
+				currentCue.text.trim();
+				cues.push(currentCue);
+		  	currentCue = {"text": "", "videoId": videoId}; // remove text!
+			}
+		} else if (line.match(/^\s*$/)){ // line is empty
+			continue;
+		} else { // line is timings or text
+			var timings = line.match(/\d\d:\d\d:\d\d.\d\d\d/g);
+		  if (!timings){ // line is text
+		  	// replace return with a space: cues may be split between two lines
+				currentCue.text += line.replace(/\n/, " ");
+			} else if (timings.length === 2) { // line is timing
+				currentCue.startTime = toDecimalSeconds(timings[0]);
+			}
+		}
+	}
+	numTracks += 1;
+	if (numTracks === MINTRACKS) {
+		handleGotAllTrackData();
+	}
+}
 
 // video data will also be updated from YouTube data API
 function getCueData(videoId){
@@ -46,44 +85,7 @@ function getCueData(videoId){
 	xhr.open("GET", trackPath + videoId + trackSuffix);
 	xhr.onreadystatechange = function() {
 	  if (xhr.readyState === 4 && xhr.status === 200) {
-	  	var track = xhr.responseText;
-	  	var lines = track.match(/^.*((\r\n|\n|\r)|$)/gm);
-	  	var cues = videos[videoId].cues;
-	  	var currentCue = {"text": "", "videoId": videoId};
-	  	for (var i = 0; i != lines.length; ++i){
-	  		var line = lines[i];
-	  		// if line is just a cue ID (i.e. just digits)
-	  		if (line.match(/^\d+\s*$/)){
-	  			if (currentCue.text) {
-	  				// get rid of redundant whitespace after combining lines
-	  				currentCue.text.trim();
-	  				cues.push(currentCue);
-				  	currentCue = {"text": "", "videoId": videoId}; // remove text!
-	  			}
-	  		} else if (line.match(/^\s*$/)){ // line is empty
-	  			continue;
-	  		} else { // line is timings or text
-	  			var timings = line.match(/\d\d:\d\d:\d\d.\d\d\d/g);
-	  		  if (!timings){ // line is text
-	  		  	// replace return with a space: cues may be split between two lines
-						currentCue.text += line.replace(/\n/, " ");
-					} else if (timings.length === 2) { // line is timing
-	  				currentCue.startTime = toDecimalSeconds(timings[0]);
-					}
-	  		}
-	  	}
-	  	numTracks += 1;
-  		if (numTracks === MINTRACKS) {
-  			isReady = true;
-  			var div = document.querySelector('div#queryExplanation');
-  			div.style.color = '#ccc';
-  			div.innerText =
-  				'Enter text to search transcripts, then click on a result to view video.';
-  			var input = document.querySelector('input#query');
-  			input.disabled = false;
-  			input.focus();
-  		}
-
+	  	addTrack(videoId, xhr.responseText);
   	} // xhr.readyState === 4 && xhr.status === 200
   } // xhr.onreadystatechange
 	xhr.send();
@@ -231,16 +233,6 @@ $query.bind('input', function() {
 		getResults(query);
 	}, 300);
 });
-
-function elapsedTimer(message) {
-    if (elapsedTimer.isStarted) {
-        console.log(message, (Date.now() - elapsedTimer.startTime));
-        elapsedTimer.startTime = Date.now();
-    } else {
-        elapsedTimer.startTime = Date.now();
-        elapsedTimer.isStarted = true;
-    }
-}
 
 // srt format is 01:01:58,310 (it's French, hence the comma)
 // hours:minutes:seconds,milliseconds

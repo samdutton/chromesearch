@@ -40,7 +40,7 @@ function getVideoData(videoId){
         video.title = obj.entry.title.$t;
         video.id = videoId;
         videos[videoId] = video;
-        if (Object.keys(videos).length === videoIds.length){ // last one
+        if (Object.keys(videos).length === videoIds.length){ // last one -- hack!
             console.log(videos);
             document.getElementById("data").innerHTML = JSON.stringify(videos);
             var keys = Object.keys(videos);
