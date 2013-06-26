@@ -53,7 +53,8 @@ function addTrack(videoId, trackText){
 	for (var i = 0; i != lines.length; ++i){
 		var line = lines[i];
 		// if line is just a cue ID (i.e. just digits)
-		if (line.match(/^\d+\s*$/)){
+		// or if this is the last line -- then add the cue
+		if (line.match(/^\d+\s*$/) || i == lines.length - 1){
 			if (currentCue.text) {
 				// get rid of redundant whitespace after combining lines
 				currentCue.text.trim();
