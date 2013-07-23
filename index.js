@@ -105,7 +105,7 @@ function init(){
       } else if (response.statusCode == 200) {
       	videos = JSON.parse(body);
         numVideos = Object.keys(videos).length;
-        console.log('numVideos: ', numVideos);
+        console.log(numVideos + ' videos');
   			// console.log(videos['07HaQwxAo5s']);
   	    getVideoData();
       }
