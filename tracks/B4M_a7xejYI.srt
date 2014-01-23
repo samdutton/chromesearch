@@ -1,0 +1,168 @@
+1
+00:00:03,899 --> 00:00:04,149
+Teleprompter copy:
+
+2
+00:00:03,899 --> 00:00:07,589
+Hi, I'm Matt, and I'm a software engineer
+working on Google Chrome.
+
+3
+00:00:07,589 --> 00:00:10,990
+I'm going to tell you about extension message
+passing, which allows the different components
+
+4
+00:00:10,990 --> 00:00:13,650
+of your extension to communicate with each
+other.
+
+5
+00:00:13,650 --> 00:00:17,710
+Content scripts run in a separate JavaScript
+environment from the rest of your extension,
+
+6
+00:00:17,710 --> 00:00:20,859
+to allow them direct access to a web page's
+DOM.
+
+7
+00:00:20,859 --> 00:00:25,359
+For security reasons, this JavaScript environment
+is unprivileged, just like the web page it
+
+8
+00:00:25,359 --> 00:00:26,800
+affects.
+
+9
+00:00:26,800 --> 00:00:30,730
+That means that if you want to access some
+extension API from your content script, you
+
+10
+00:00:30,730 --> 00:00:35,329
+need a way to communicate between your content
+script and the privileged part of your extension.
+
+11
+00:00:35,329 --> 00:00:37,410
+This is where message passing comes in.
+
+12
+00:00:37,410 --> 00:00:41,520
+Message passing allows the different pieces
+of your extension to communicate.
+
+13
+00:00:41,520 --> 00:00:45,340
+Usually you'll want to send messages between
+a content script and a background page, but
+
+14
+00:00:45,340 --> 00:00:50,010
+message passing works from any page to any
+other page or pages in your extension.
+
+15
+00:00:50,010 --> 00:00:53,550
+You can even send a message to another extension
+as long as you know that extension's unique
+
+16
+00:00:53,550 --> 00:00:54,670
+ID.
+
+17
+00:00:54,670 --> 00:00:58,370
+Let's walk through a simple example to see
+how message passing works.
+
+18
+00:00:58,370 --> 00:01:01,570
+Let's say we want to write an RSS feed reading
+extension.
+
+19
+00:01:01,570 --> 00:01:06,009
+We want a button to appear in the URL bar
+whenever the current page has an RSS feed
+
+20
+00:01:06,009 --> 00:01:07,900
+available.
+
+21
+00:01:07,900 --> 00:01:11,890
+To start, we write a content script that examines
+the page to detect an RSS feed.
+
+22
+00:01:11,890 --> 00:01:17,080
+Since the content script doesn't have access
+to modify the browser UI, it needs to ask
+
+23
+00:01:17,080 --> 00:01:19,010
+the background page to do that.
+
+24
+00:01:19,010 --> 00:01:23,010
+The call to sendRequest passes the list of
+feeds found by the content script up to the
+
+25
+00:01:23,010 --> 00:01:24,610
+background page.
+
+26
+00:01:24,610 --> 00:01:26,640
+Our background page looks like this:
+
+27
+00:01:26,640 --> 00:01:31,390
+The first line adds a listener to the onRequest
+event, which is fired when our content script
+
+28
+00:01:31,390 --> 00:01:33,370
+calls sendRequest.
+
+29
+00:01:33,370 --> 00:01:38,050
+In our listener, we check if there were any
+feeds found, and if so, display the page action
+
+30
+00:01:38,050 --> 00:01:39,659
+for that page.
+
+31
+00:01:39,659 --> 00:01:42,890
+That's how you send a single request to your
+extension from a content script.
+
+32
+00:01:42,890 --> 00:01:47,220
+There is a slightly more involved API if you
+need to have a longer lived conversation with
+
+33
+00:01:47,220 --> 00:01:49,640
+multiple back-and-forth messages.
+
+34
+00:01:49,640 --> 00:01:55,370
+To find out more details, visit the extension
+documentation page at code.google.com/chrome/extensions
+
+35
+00:01:55,370 --> 00:01:56,170
+<show URL>
+http://code.google.com/chrome/extensions/index.html
+
+36
+00:01:56,170 --> 00:01:56,439
+</url>
+

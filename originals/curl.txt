@@ -1,0 +1,6 @@
+curl -o file#1.#2 "http://address/file[1-3].{sit,dmg,txt}";
+
+video.google.com/timedtext?v=E8C8ouiXHHk&lang=en&format=vtt
+
+
+curl -O "view-source:http://video.google.com/timedtext?v=E8C8ouiXHHk&lang=en&format=vtt";

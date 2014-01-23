@@ -1,0 +1,2445 @@
+1
+00:00:01,300 --> 00:00:06,260
+>>Ankit Jain: Good morning, everyone. It's
+so great to see so many of you early here
+
+2
+00:00:06,260 --> 00:00:11,700
+on day three of Google I/O.
+Last night, I wasn't sure if I was going to
+
+3
+00:00:11,700 --> 00:00:16,439
+make it this early.
+My name is Ankit Jain, and I lead all things
+
+4
+00:00:16,439 --> 00:00:21,119
+search and discovery for Google Play. I'm
+extremely excited to be here and share this
+
+5
+00:00:21,119 --> 00:00:25,269
+material with you today.
+As most of you know, we've never discussed
+
+6
+00:00:25,269 --> 00:00:31,329
+our search or discovery engine publicly before
+today. But before I get started, I wanted
+
+7
+00:00:31,329 --> 00:00:36,000
+to get to know you guys a little better.
+With a raise of hands, how many of you are
+
+8
+00:00:36,000 --> 00:00:40,960
+making money on Google Play today?
+Great. How many of you would like to make
+
+9
+00:00:40,960 --> 00:00:45,949
+even more money on Google Play?
+Great. For those on YouTube, pretty much everyone
+
+10
+00:00:45,949 --> 00:00:52,219
+would like to make even more money.
+Let's step out of our normally roles as developers
+
+11
+00:00:52,219 --> 00:00:56,820
+or business owners and for a second, let's
+step into the shoes of our users, and think
+
+12
+00:00:56,820 --> 00:01:01,100
+like a user when you come to the store.
+How many of you have installed an app just
+
+13
+00:01:01,100 --> 00:01:06,140
+while browsing, you were bored, you opened
+the Play Store, saw something interesting,
+
+14
+00:01:06,140 --> 00:01:10,690
+clicked through, and installed it?
+Okay. How many of you have installed an app
+
+15
+00:01:10,690 --> 00:01:16,660
+because you thought about, I need to get something
+done. I need a recipe app, or I need to find
+
+16
+00:01:16,660 --> 00:01:19,620
+a train schedule, went looked for it, and
+then installed it.
+
+17
+00:01:19,620 --> 00:01:24,560
+Okay. That's a smaller -- smaller portion.
+And how many of you have installed an app
+
+18
+00:01:24,560 --> 00:01:28,280
+because a friend of yours told you, "Hey,
+you really have to go check out this app."
+
+19
+00:01:28,280 --> 00:01:32,130
+And then you go to the store, look for it,
+and install it.
+
+20
+00:01:32,130 --> 00:01:34,810
+Great.
+So my goal today is to talk to you about how
+
+21
+00:01:34,810 --> 00:01:40,640
+we try to bring these online and offline thought
+processes of how all of us install apps and
+
+22
+00:01:40,640 --> 00:01:45,770
+how we try to get that discovered on Play.
+So I'm going to present you with three high-level
+
+23
+00:01:45,770 --> 00:01:50,020
+sets of information. The first one is our
+vision for the new Google Play Store.
+
+24
+00:01:50,020 --> 00:01:54,590
+The second is some of the details of the search
+and discovery algorithms that we have and
+
+25
+00:01:54,590 --> 00:01:57,770
+how you can take advantage of them to get
+discovered more.
+
+26
+00:01:57,770 --> 00:02:02,590
+And, finally, I want to leave you with five
+very concrete examples of what you can do
+
+27
+00:02:02,590 --> 00:02:05,130
+to get discovered more on Play.
+Sounds good?
+
+28
+00:02:05,130 --> 00:02:08,069
+All right. Great. So let's get right into
+it.
+
+29
+00:02:08,069 --> 00:02:13,310
+A few weeks ago, we rolled out the new version
+of the Google Play Store. It's very different
+
+30
+00:02:13,310 --> 00:02:18,280
+from what we had in the past, a year ago,
+a few of us stepped aside and said if we could
+
+31
+00:02:18,280 --> 00:02:23,230
+reimagine the entire store, the new Google
+Play experience, what would it be like?
+
+32
+00:02:23,230 --> 00:02:28,370
+The goal was to come up with something that
+was dynamic, very fresh. The user should be
+
+33
+00:02:28,370 --> 00:02:33,730
+trained and look forward to coming back into
+the store, something that is personalized,
+
+34
+00:02:33,730 --> 00:02:37,120
+yet personal.
+So some of you might be thinking, Ankit, what
+
+35
+00:02:37,120 --> 00:02:41,510
+are you saying? Personalized, yet personal.
+What's the difference there?
+
+36
+00:02:41,510 --> 00:02:46,510
+Well, personalized, to me, is something that
+is personally relevant, related to what you
+
+37
+00:02:46,510 --> 00:02:51,300
+have told us in the past, what users have
+purchased, what -- personally relevant because
+
+38
+00:02:51,300 --> 00:02:56,490
+it's popular in the user's area. Personally
+relevant because the user has shown interest
+
+39
+00:02:56,490 --> 00:03:01,430
+in certain categories or in certain developers.
+Or personally relevant because your friends
+
+40
+00:03:01,430 --> 00:03:04,740
+are showing interest in those things.
+Then we want to take you to the next level.
+
+41
+00:03:04,740 --> 00:03:09,120
+We want to make it personal by showing you
+and annotating each of these recommendations
+
+42
+00:03:09,120 --> 00:03:13,250
+or each of the pieces of content in our store
+with why you should get it.
+
+43
+00:03:13,250 --> 00:03:17,190
+This could be a +1 by a friend. This could
+be a review by a friend. Or this could be
+
+44
+00:03:17,190 --> 00:03:22,660
+something based on the new Google Play Game
+Services that three others are currently playing
+
+45
+00:03:22,660 --> 00:03:28,030
+Puzzles & Dragons. We should tell the user,
+this is why you should get it. And our goal
+
+46
+00:03:28,030 --> 00:03:32,069
+was to help each and every one of you, each
+and every one of our developers, to get people
+
+47
+00:03:32,069 --> 00:03:35,880
+more engaged installs. Because at the end
+of the day, that's what's really going to
+
+48
+00:03:35,880 --> 00:03:40,860
+move the needle. Those are the users that
+build sustainable and great businesses.
+
+49
+00:03:40,860 --> 00:03:46,190
+So our goal was threefold: First, to help
+our users find what they're looking for as
+
+50
+00:03:46,190 --> 00:03:51,580
+effortlessly and seamlessly as possible. Second,
+to help Android ship more, and more beautiful,
+
+51
+00:03:51,580 --> 00:03:58,580
+apps. And, finally, to help all of you build
+even more thriving businesses on top of our
+
+52
+00:04:00,130 --> 00:04:04,450
+platform.
+So let's get to the meat of today's talk.
+
+53
+00:04:04,450 --> 00:04:08,069
+Let's talk about our major install source.
+At the ends of the day, nothing can be built
+
+54
+00:04:08,069 --> 00:04:12,910
+unless you have installs. Specifically, I
+want to talk about how to get engaged installs.
+
+55
+00:04:12,910 --> 00:04:17,250
+So most of you have reached -- many of you
+reached out to me in the past and said, "Hey,
+
+56
+00:04:17,250 --> 00:04:22,469
+I'm ranked number five or number ten or number
+50 on these top lists or on these trending
+
+57
+00:04:22,469 --> 00:04:26,580
+lists." These are what I call our browse and
+discovery features. I like to break them into
+
+58
+00:04:26,580 --> 00:04:29,889
+three subcomponents.
+The first are these top charts, the top lists,
+
+59
+00:04:29,889 --> 00:04:35,340
+the editors' picks, the trending lists. The
+next are the features that we launched at
+
+60
+00:04:35,340 --> 00:04:40,129
+Google I/O last year. These were the personalized
+recommendations. Some of you saw these as
+
+61
+00:04:40,129 --> 00:04:44,400
+part of the Google Play home page experience
+in the cluster there. Others might have seen
+
+62
+00:04:44,400 --> 00:04:49,900
+this on the widgets on the Nexus 7 and the
+Nexus 10 on the home screens there.
+
+63
+00:04:49,900 --> 00:04:54,870
+And the last set of features that we have
+for discovery, based on your context, are
+
+64
+00:04:54,870 --> 00:05:00,210
+the related and cross-sell items. These are
+the users who viewed X also viewed Y on the
+
+65
+00:05:00,210 --> 00:05:04,830
+details page of all of your apps. Also, the
+other set, which is users who installed this
+
+66
+00:05:04,830 --> 00:05:08,610
+app also installed these other apps, which
+is also on your details pages. And we'll get
+
+67
+00:05:08,610 --> 00:05:14,439
+into details of each of these and how we look
+at them and how the algorithms are built.
+
+68
+00:05:14,439 --> 00:05:19,430
+What most developers don't think about as
+much is the search component. For the average
+
+69
+00:05:19,430 --> 00:05:24,990
+app, search actually makes up the vast majority
+of installs. And when I think about search,
+
+70
+00:05:24,990 --> 00:05:30,379
+I like to break it down and look at our query
+stream from -- in terms of two kinds of queries.
+
+71
+00:05:30,379 --> 00:05:33,870
+The first are the kinds of queries that many
+of you raised your hand for, which are, I
+
+72
+00:05:33,870 --> 00:05:38,199
+had to get something done, so I looked it
+up. I needed to look up a recipe. I wanted
+
+73
+00:05:38,199 --> 00:05:42,860
+to find a restaurant review in a city that
+I'm in. I wanted to find multiplayer games
+
+74
+00:05:42,860 --> 00:05:49,439
+or free games, or RPG games, the kind of categorical
+queries. You know the general idea of what
+
+75
+00:05:49,439 --> 00:05:55,569
+you want or what you want to do, and then
+you use search to find the right app for -- to
+
+76
+00:05:55,569 --> 00:05:58,699
+fulfill that.
+The second kind of query is where you know
+
+77
+00:05:58,699 --> 00:06:03,719
+exactly what you're looking for. This is when
+a presented has told you about an app or if
+
+78
+00:06:03,719 --> 00:06:06,069
+you heard about it through marketing, navigational
+queries.
+
+79
+00:06:06,069 --> 00:06:10,930
+Hey, I want to get a hotel tonight. I want
+to get Beautylish, or I want to get Angry
+
+80
+00:06:10,930 --> 00:06:15,029
+Birds, which is not necessarily a single app,
+it could be a set of apps, but you know what
+
+81
+00:06:15,029 --> 00:06:19,520
+direction you want to look in. That's navigational
+queries.
+
+82
+00:06:19,520 --> 00:06:25,129
+Just to show you how important search is,
+in any given day, 12% of our active users
+
+83
+00:06:25,129 --> 00:06:31,039
+come back to the store and search at least
+once for apps. In any given week, half of
+
+84
+00:06:31,039 --> 00:06:34,479
+our users come to our store and search for
+apps.
+
+85
+00:06:34,479 --> 00:06:39,789
+And even -- given the number of apps we have,
+in any given month, there's over 6 million
+
+86
+00:06:39,789 --> 00:06:44,520
+unique phrases that are being searched for.
+So really thinking about search is important
+
+87
+00:06:44,520 --> 00:06:48,289
+as you try to figure out how to get discovered
+on Play.
+
+88
+00:06:48,289 --> 00:06:52,520
+So just to put what we've talked about, I've
+talked about our vision for Google Play and
+
+89
+00:06:52,520 --> 00:06:58,740
+how our goal is to present each user with
+a personalized play, made personal. How search
+
+90
+00:06:58,740 --> 00:07:04,169
+and browse are the two main sources of installs
+in the store. And, finally, a lot of this
+
+91
+00:07:04,169 --> 00:07:08,409
+happens because our goal is to bring the rest
+of Google to Play. That was the transition
+
+92
+00:07:08,409 --> 00:07:12,719
+from Android Market into Google Play. It was
+to integrate all of our systems together and
+
+93
+00:07:12,719 --> 00:07:17,919
+make Google Play a very smart store, make
+it your store.
+
+94
+00:07:17,919 --> 00:07:23,089
+So now that we've talked about it, let's step
+back and think about how we think of our search
+
+95
+00:07:23,089 --> 00:07:27,080
+and discovery systems.
+When we built our search engines and our discovery
+
+96
+00:07:27,080 --> 00:07:31,619
+engines, we have two options. Either we can
+spend a lot of time trying to detect the apps
+
+97
+00:07:31,619 --> 00:07:35,909
+that are bad or spammy or simply annoying,
+or we can spend a lot of time trying to figure
+
+98
+00:07:35,909 --> 00:07:40,520
+out which apps are good.
+And we spend a lot more time focusing on what's
+
+99
+00:07:40,520 --> 00:07:45,149
+good, because if we can promote the apps that
+are not just good from what we can tell, based
+
+100
+00:07:45,149 --> 00:07:49,689
+on your APK, based on your metadata, based
+on what users are telling us about each of
+
+101
+00:07:49,689 --> 00:07:54,999
+the apps, then other -- other users are also
+going to find these delightful experiences.
+
+102
+00:07:54,999 --> 00:08:00,229
+And so this part of the talk is going to be
+talking about how you can complement your
+
+103
+00:08:00,229 --> 00:08:05,469
+app with good app metadata.
+So the most important piece of your app metadata
+
+104
+00:08:05,469 --> 00:08:10,860
+is your title. It's important to be creative,
+but it's just as important, if not more important,
+
+105
+00:08:10,860 --> 00:08:15,139
+to be very clear.
+So this -- so this example up on screen is
+
+106
+00:08:15,139 --> 00:08:20,039
+about an app named Beautylish.
+As you can see, most of you might not have
+
+107
+00:08:20,039 --> 00:08:23,649
+heard of it, some of you might have heard
+of it, but right after you see the title,
+
+108
+00:08:23,649 --> 00:08:30,539
+you know this is about makeup and beauty tips.
+So what this title helps you do is helps the
+
+109
+00:08:30,539 --> 00:08:36,459
+developer reinforce not just their branding,
+but also what their app is about.
+
+110
+00:08:36,459 --> 00:08:41,159
+As you see this more and more often, either
+in the store or even once you have it installed
+
+111
+00:08:41,159 --> 00:08:45,230
+in your list of apps on your home screen,
+it's very clear that Beautylish is the app
+
+112
+00:08:45,230 --> 00:08:50,870
+I go to for makeup and beauty tips. So I highly
+recommend thinking about the name of your
+
+113
+00:08:50,870 --> 00:08:57,170
+app. It also helps a lot for SEO. When someone
+looks up beauty tips or makeup tips, these
+
+114
+00:08:57,170 --> 00:09:01,990
+guys are the top of that list just because
+everyone associates the two of those terms
+
+115
+00:09:01,990 --> 00:09:06,430
+together.
+The next important part of your details page
+
+116
+00:09:06,430 --> 00:09:12,829
+in your metadata is your description. You
+can write as long a description as you want,
+
+117
+00:09:12,829 --> 00:09:17,230
+but I always say get the main message out
+first.
+
+118
+00:09:17,230 --> 00:09:21,050
+Star Chart does a great job here. Their first
+sentence says, "You can now have a virtual
+
+119
+00:09:21,050 --> 00:09:25,910
+planetarium in your pocket." Again, if you've
+never used this app, you already know what
+
+120
+00:09:25,910 --> 00:09:31,620
+it's about. After that, you can go on, describe
+it in more detail, list the awards you have,
+
+121
+00:09:31,620 --> 00:09:36,480
+and just have your sales and marketing pitches
+for your users. But right up-front, make sure
+
+122
+00:09:36,480 --> 00:09:41,850
+your user knows what your app is about.
+And on a smaller phone, that's the part that's
+
+123
+00:09:41,850 --> 00:09:46,910
+above the fold. So you want to make sure on
+that first screen itself it's extremely clear
+
+124
+00:09:46,910 --> 00:09:51,170
+what your goal is, what utility you provide
+or what entertainment value or whatever the
+
+125
+00:09:51,170 --> 00:09:55,529
+goal of your app is, what it provides.
+Now, that also, again, helps a lot with getting
+
+126
+00:09:55,529 --> 00:10:01,350
+found. This app is extremely optimized for
+star charts, star maps, virtual planetariums.
+
+127
+00:10:01,350 --> 00:10:05,540
+So the beginning of descriptions are extremely
+important, both from a user's perspective
+
+128
+00:10:05,540 --> 00:10:11,769
+and also from our search engine's perspective.
+The next couple of slides, I'm going to talk
+
+129
+00:10:11,769 --> 00:10:18,750
+about how you can use your app details page
+to mimic the real user experience. It's important
+
+130
+00:10:18,750 --> 00:10:24,209
+that you set the expectations of your user
+to be very realistic, to really be what your
+
+131
+00:10:24,209 --> 00:10:27,350
+app is going to be like.
+The first place to do this is in your screen
+
+132
+00:10:27,350 --> 00:10:32,839
+shots. In our developer console, we let you
+upload screen shots for tablets, for phones,
+
+133
+00:10:32,839 --> 00:10:36,730
+and really show the user what it's going to
+be like once you install the app.
+
+134
+00:10:36,730 --> 00:10:41,019
+Now, if you don't do this, and your app experience
+is actually very different from your screen
+
+135
+00:10:41,019 --> 00:10:46,410
+shots, it can have a very negative effect
+on all of your systems. Why? Because, well,
+
+136
+00:10:46,410 --> 00:10:50,860
+the user loves what they see in your details
+page. They install your app. They open the
+
+137
+00:10:50,860 --> 00:10:55,730
+app. And then they see something very different.
+What are they going to do? Well, most users
+
+138
+00:10:55,730 --> 00:11:00,190
+will uninstall the app. Some of those users
+will go back to the store and give you a low
+
+139
+00:11:00,190 --> 00:11:04,379
+rating, maybe even write you a negative review.
+And that negative feedback cycle is going
+
+140
+00:11:04,379 --> 00:11:09,959
+to hurt you more than help you.
+And so really thinking about how do you present
+
+141
+00:11:09,959 --> 00:11:14,430
+the user with the right -- setting the right
+expectation and then delivering on it, that's
+
+142
+00:11:14,430 --> 00:11:20,190
+the message here. We're looking for apps that
+do deliver on their promises.
+
+143
+00:11:20,190 --> 00:11:26,040
+Video previews are the next level of screen
+shots. With a short video, you're able to
+
+144
+00:11:26,040 --> 00:11:31,959
+show the user really what it's like to play
+with your app. And developers have told us
+
+145
+00:11:31,959 --> 00:11:36,610
+that uploading a video can really help gain
+user adoption. And users in a lot of studies
+
+146
+00:11:36,610 --> 00:11:41,800
+have told us that video previews are amongst
+the most convincing features of an app details
+
+147
+00:11:41,800 --> 00:11:45,120
+page.
+Again, the whole goal here is to tell your
+
+148
+00:11:45,120 --> 00:11:49,829
+user what your app does. If you can convince
+them and make sure that -- and communicate
+
+149
+00:11:49,829 --> 00:11:54,170
+what your app's promise is and then deliver
+on it, you're going to delight them, and they're
+
+150
+00:11:54,170 --> 00:12:00,870
+going to recommend to you other users as well.
+So I talked about reviews and ratings in terms
+
+151
+00:12:00,870 --> 00:12:06,689
+of the feedback loop. And this is a key part
+of our search and discovery experience.
+
+152
+00:12:06,689 --> 00:12:11,870
+Now, the first piece of this comes because
+people come back and review your app, whether
+
+153
+00:12:11,870 --> 00:12:16,189
+it's good or bad. The second piece is, we
+really try to order our reviews and ratings
+
+154
+00:12:16,189 --> 00:12:21,120
+in an order that is relevant to the user.
+So you are going to see reviews that are on
+
+155
+00:12:21,120 --> 00:12:25,350
+the same device as the current user, in the
+same country as the current user, and as time
+
+156
+00:12:25,350 --> 00:12:30,569
+goes on, people that are in a user's circle
+or people that the users trust are going to
+
+157
+00:12:30,569 --> 00:12:34,579
+come at the top of these reviews.
+So investing in making sure that your users
+
+158
+00:12:34,579 --> 00:12:39,069
+are reviewing and rating your apps will be
+key going forward, because that's a very strong
+
+159
+00:12:39,069 --> 00:12:44,610
+signal for us at Google Play.
+So I'm going to step back and tell you a story
+
+160
+00:12:44,610 --> 00:12:49,509
+about a developer, a developer in India that
+I was talking to a few weeks ago. And his
+
+161
+00:12:49,509 --> 00:12:54,990
+goal was to target the rural population. As
+you can see on the graph on the right, about
+
+162
+00:12:54,990 --> 00:13:01,699
+75% of India's population lives in rural cities.
+His goal was to target the audience that had
+
+163
+00:13:01,699 --> 00:13:07,410
+low- to mid-end phones and was on slow to
+2G networks. He had really optimized his app
+
+164
+00:13:07,410 --> 00:13:11,370
+to give a delightful experience for these
+users.
+
+165
+00:13:11,370 --> 00:13:16,420
+But then he reached out to me and said, Ankit,
+when I look at my reviews, I have this polarized
+
+166
+00:13:16,420 --> 00:13:22,259
+view, there's a whole bunch of five stars
+with people saying I could never imagine technology
+
+167
+00:13:22,259 --> 00:13:27,069
+would change my world this way. And also a
+lot of one stars with people saying, "Complete
+
+168
+00:13:27,069 --> 00:13:31,370
+crap. I can't believe I downloaded this. Uninstalling
+it right now."
+
+169
+00:13:31,370 --> 00:13:36,120
+Right? And he was perplexed. He wasn't sure
+what was going on. We dug a little deeper.
+
+170
+00:13:36,120 --> 00:13:41,720
+One of the things we noticed was that he was
+getting a lot of positive reaction from the
+
+171
+00:13:41,720 --> 00:13:46,189
+people in rural areas, his target audience.
+And he was getting a lot of negative reviews
+
+172
+00:13:46,189 --> 00:13:51,509
+from the people on the 4G networks, on the
+top-of-the-line devices, because his app just
+
+173
+00:13:51,509 --> 00:13:56,620
+was not designed for them. His goal was not
+to go after that market. And so the thing
+
+174
+00:13:56,620 --> 00:14:01,709
+that he ended up doing was, he went to the
+developer console and targeted his app to
+
+175
+00:14:01,709 --> 00:14:05,279
+the countries and carriers where his target
+audience really was. And since then, he's
+
+176
+00:14:05,279 --> 00:14:09,709
+already seen an uptick in his average rating
+and his reviews. And, hopefully, that continues
+
+177
+00:14:09,709 --> 00:14:14,579
+over time. But my message here to you is think
+about who you're trying to target. For most
+
+178
+00:14:14,579 --> 00:14:17,959
+apps, you don't have to worry about this.
+You can let your app get to everybody. But
+
+179
+00:14:17,959 --> 00:14:24,230
+if your app is targeted at a specific set
+of target audience, make sure those are the
+
+180
+00:14:24,230 --> 00:14:29,389
+people helping you get even more adoption.
+You don't want people not in your target audience
+
+181
+00:14:29,389 --> 00:14:36,389
+polluting your reviewer rating.
+So we've talked about creating a very creative,
+
+182
+00:14:37,449 --> 00:14:41,810
+yet clear, message through your title and
+description. To mimic your real world experience
+
+183
+00:14:41,810 --> 00:14:45,850
+through your images, your screen shots, and
+your video previews. And, finally, really
+
+184
+00:14:45,850 --> 00:14:52,019
+about understanding your audience. This is
+what's going to help you optimize your -- your
+
+185
+00:14:52,019 --> 00:14:56,930
+app details page.
+So let's see how this manifests itself. At
+
+186
+00:14:56,930 --> 00:15:00,180
+the end of the day, there's the top charts
+and the search engines. What are the things
+
+187
+00:15:00,180 --> 00:15:04,279
+we look for? Once you do all of these great
+things in your app details page, how does
+
+188
+00:15:04,279 --> 00:15:08,310
+it feed back?
+And no search or discovery system would be
+
+189
+00:15:08,310 --> 00:15:13,300
+complete without really taking into account
+the statistics that we're constantly collecting.
+
+190
+00:15:13,300 --> 00:15:17,600
+So the first piece of this, as most of you
+probably have already figured out, are the
+
+191
+00:15:17,600 --> 00:15:21,220
+installs. Of course we care about how many
+installs each app has. The more you have,
+
+192
+00:15:21,220 --> 00:15:25,670
+the higher up in the rankings you'll go.
+We also care about how many uninstalls you
+
+193
+00:15:25,670 --> 00:15:29,389
+have, because that's the metric for us to
+know whether users are having a good or a
+
+194
+00:15:29,389 --> 00:15:32,819
+bad experience.
+Now, some of you are game developers out there,
+
+195
+00:15:32,819 --> 00:15:37,829
+and you might say, hey, my game overall takes
+one gig of memory or two gigs of memory on
+
+196
+00:15:37,829 --> 00:15:42,189
+a person's device. So after they're done playing
+my game, of course they're going to uninstall
+
+197
+00:15:42,189 --> 00:15:46,100
+my app, because they want to play the next
+game. You know, they've already won every
+
+198
+00:15:46,100 --> 00:15:49,600
+level there is. Why are you going to hurt
+me? And that's why we have the third static,
+
+199
+00:15:49,600 --> 00:15:54,139
+which is long installs.
+If a person plays through or uses an app for
+
+200
+00:15:54,139 --> 00:15:59,170
+a long period of time, we don't want to penalize
+it. Our goal is really to detect the behavior
+
+201
+00:15:59,170 --> 00:16:02,809
+which is, hey, I installed an app, I really
+did not have a good experience, so I'm uninstalling
+
+202
+00:16:02,809 --> 00:16:07,120
+it right away.
+So the long install encapsulated that phenomenon
+
+203
+00:16:07,120 --> 00:16:10,509
+in it.
+In the coming months, one of the things that
+
+204
+00:16:10,509 --> 00:16:15,319
+we want to focus on is engagement, and really
+understanding for each of your apps when are
+
+205
+00:16:15,319 --> 00:16:19,600
+people using it, how are they using it, and
+how is it different across different kinds
+
+206
+00:16:19,600 --> 00:16:23,069
+of apps. For example, Google Now, I just go
+to it when I need to pick up my latest boarding
+
+207
+00:16:23,069 --> 00:16:28,559
+pass. I'm not going to spend tens of minutes
+or hours on it. But there might be a game
+
+208
+00:16:28,559 --> 00:16:33,019
+where I spend an hour or two on it. But that
+doesn't mean one is better than the other.
+
+209
+00:16:33,019 --> 00:16:35,850
+They're just different kinds of functions
+they're providing.
+
+210
+00:16:35,850 --> 00:16:40,209
+This is an area where having a conversation
+with all of you is great. And I really look
+
+211
+00:16:40,209 --> 00:16:43,939
+forward to having some of your feedback. So
+a lot of this is about setting the stage for
+
+212
+00:16:43,939 --> 00:16:47,670
+the first conversation. We've never discussed
+any of this before. So if you guys have ideas,
+
+213
+00:16:47,670 --> 00:16:51,579
+please let us know.
+I'll talk about Google Play services -- the
+
+214
+00:16:51,579 --> 00:16:55,519
+game services that we launched and how we're
+going to use that for engagement in the coming
+
+215
+00:16:55,519 --> 00:17:01,410
+months as well.
+Here's a query that I get very often from
+
+216
+00:17:01,410 --> 00:17:07,250
+developers. "Hey, for some search query, I'm
+number three even though the app ranked above
+
+217
+00:17:07,250 --> 00:17:11,510
+mine has fewer installs and has a lower rating
+than me."
+
+218
+00:17:11,510 --> 00:17:16,620
+Right? I'm sure many of you have thought about
+this as well.
+
+219
+00:17:16,620 --> 00:17:20,420
+On the previous slide, I talked about the
+uninstall rate. Not only do we look at the
+
+220
+00:17:20,420 --> 00:17:23,670
+number of people that are uninstalling your
+app compared to the number of people installing
+
+221
+00:17:23,670 --> 00:17:29,390
+it. We also have some amount of a recent -- recent
+uninstall rate as well.
+
+222
+00:17:29,390 --> 00:17:35,770
+The idea here is that you might have an app
+that has not been updated in a couple of years,
+
+223
+00:17:35,770 --> 00:17:40,770
+and now more people are uninstalling your
+app than installing it. Or there's a newer
+
+224
+00:17:40,770 --> 00:17:45,140
+app, or your app could be on the other sides
+of this where you made an update and now a
+
+225
+00:17:45,140 --> 00:17:48,890
+lot of people are really keeping your app.
+That's going to help you move up in the rankings.
+
+226
+00:17:48,890 --> 00:17:54,080
+We want to make sure users are getting the
+best apps as easily as possible.
+
+227
+00:17:54,080 --> 00:17:56,960
+So I hope this answers this very common question
+that I get.
+
+228
+00:17:56,960 --> 00:18:03,960
+>>> (off mike) it's a shooting star phenomenon.
+>>Ankit Jain: So the other piece of what we've
+
+229
+00:18:06,370 --> 00:18:10,570
+talked about a lot at Google I/O this year
+is personalization across all of our products
+
+230
+00:18:10,570 --> 00:18:15,570
+at Google. And Google Play is no exception
+to this. We're constantly slicing and dicing
+
+231
+00:18:15,570 --> 00:18:20,590
+all of the data that we're collecting in order
+to personalize and improve each user's experience.
+
+232
+00:18:20,590 --> 00:18:25,750
+One -- I'll give you a couple of examples.
+The query Yahoo! in the U.S. leads to people
+
+233
+00:18:25,750 --> 00:18:28,260
+installing the Yahoo! app or the Yahoo! Mail
+app.
+
+234
+00:18:28,260 --> 00:18:32,250
+In Japan, however, people are installing the
+Yahoo! Japan app. And over time, our systems
+
+235
+00:18:32,250 --> 00:18:37,040
+learned this and figured out, hey, in Japan,
+show Yahoo! Japan as number one. In the U.S.,
+
+236
+00:18:37,040 --> 00:18:40,170
+show Yahoo! and Yahoo! Mail as number one
+and number two.
+
+237
+00:18:40,170 --> 00:18:45,240
+Similarly, on tablets, people tends to install
+different apps than they do on mobile devices.
+
+238
+00:18:45,240 --> 00:18:49,960
+Again, using the feedback loops of what people
+are searching for, what they're clicking on,
+
+239
+00:18:49,960 --> 00:18:54,170
+and what they're enjoying and installing,
+we're able to really tailor the search experience
+
+240
+00:18:54,170 --> 00:18:59,570
+and the search results per device type, per
+locale, and across a whole bunch of different
+
+241
+00:18:59,570 --> 00:19:05,280
+dimensions.
+About a year ago, in addition to having the
+
+242
+00:19:05,280 --> 00:19:11,180
+search suggestions as you type, we added the
+ability to have navigational search suggestions.
+
+243
+00:19:11,180 --> 00:19:15,800
+These are suggestions that Google believes
+are the right one for a user. So as the user
+
+244
+00:19:15,800 --> 00:19:21,470
+is typing in "sub," most users tend to actually
+go straight to Subway Surfers. So we allow
+
+245
+00:19:21,470 --> 00:19:25,740
+them to do that right from the search suggest
+box. If you click on that navigational suggestion,
+
+246
+00:19:25,740 --> 00:19:29,460
+you won't go to a search results page. You'll
+go straight to the app's details page. It
+
+247
+00:19:29,460 --> 00:19:32,220
+even shows you the icon of the app that it's
+going to take you straight to.
+
+248
+00:19:32,220 --> 00:19:38,010
+Now, if a user wants to find the tips or the
+strategies or other apps that are around Subway
+
+249
+00:19:38,010 --> 00:19:42,000
+Surfers, they can still complete their query
+and look at the app details page. Again, the
+
+250
+00:19:42,000 --> 00:19:49,000
+theme here is that we're trying to make it
+easier for users to get what they want.
+
+251
+00:19:49,370 --> 00:19:53,460
+Let's switch gears a little bit, and I'll
+let you guys look at this for a couple of
+
+252
+00:19:53,460 --> 00:20:00,460
+seconds. There's a lot of data up there.
+So a lot of you always have asked us the question
+
+253
+00:20:08,810 --> 00:20:13,360
+how are your top lists generated? When are
+they generated and what's the rationale behind
+
+254
+00:20:13,360 --> 00:20:16,620
+them?
+Like any search or discovery system we're
+
+255
+00:20:16,620 --> 00:20:23,620
+constantly tuning our systems. And this is
+a snapshot of what it looks like recently.
+
+256
+00:20:24,710 --> 00:20:29,960
+There's a basic quality barrier that's there.
+There are some review and rating metrics that
+
+257
+00:20:29,960 --> 00:20:34,500
+we take into account, but at a high level
+we create top lists daily per country, per
+
+258
+00:20:34,500 --> 00:20:39,550
+category and even per device type.
+You guys saw some of the design for tablet
+
+259
+00:20:39,550 --> 00:20:44,790
+top lists that were launched earlier at I/O,
+and our top paid free and grossing lists are
+
+260
+00:20:44,790 --> 00:20:49,820
+really targeting first-time users to Google
+Play or people who just got a new device because
+
+261
+00:20:49,820 --> 00:20:53,870
+they're looking for the basic apps they need
+to load up in order to get their stuff done.
+
+262
+00:20:53,870 --> 00:20:58,680
+What's most popular on Google Play?
+The top new paid and top new lists are targeting
+
+263
+00:20:58,680 --> 00:21:02,970
+users who have the basic apps and saying,
+Hey, what's new right now, what's new and
+
+264
+00:21:02,970 --> 00:21:07,020
+popular?
+And for that reason we limit it to the apps
+
+265
+00:21:07,020 --> 00:21:12,010
+that have been published in the last 30 days.
+And this is very important because many app
+
+266
+00:21:12,010 --> 00:21:17,290
+developers launch an app in a single country
+and then over time roll it out to a bunch
+
+267
+00:21:17,290 --> 00:21:20,710
+of countries.
+So I get a question a lot of times saying,
+
+268
+00:21:20,710 --> 00:21:26,340
+Hey, I just launched in Italy last week and
+it's going gangbusters. We're just getting
+
+269
+00:21:26,340 --> 00:21:30,650
+more installs than we ever have. How come
+we're not in the top new free or top paid
+
+270
+00:21:30,650 --> 00:21:33,490
+list?
+Well, the reason is your original launch might
+
+271
+00:21:33,490 --> 00:21:39,780
+have been six months ago so you're not qualified
+to be in the top new list of even new countries
+
+272
+00:21:39,780 --> 00:21:44,240
+that you launch in. It's a global publish
+date that we look at.
+
+273
+00:21:44,240 --> 00:21:49,070
+So think about your global rollout strategy,
+if being in the top new list is part of your
+
+274
+00:21:49,070 --> 00:21:54,910
+strategy, a 30-day window extremely important.
+And the metrics across these are different.
+
+275
+00:21:54,910 --> 00:21:59,340
+For the grossing we look at the revenues.
+For the others we look at installs over the
+
+276
+00:21:59,340 --> 00:22:03,630
+last several days.
+The next list that I want to talk about is
+
+277
+00:22:03,630 --> 00:22:09,610
+our trending list, and this is one that has
+had no clarity about it ever.
+
+278
+00:22:09,610 --> 00:22:13,620
+Internally we like to call this our movers
+and shakers list. Our goal here is to present
+
+279
+00:22:13,620 --> 00:22:19,830
+the user with a system that can give them
+what's really hot right now. Amongst all the
+
+280
+00:22:19,830 --> 00:22:26,330
+apps on Google Play, what are the apps that
+a lot of users, more than we predict, are
+
+281
+00:22:26,330 --> 00:22:30,000
+being installed?
+We have a predicted growth rate. This predicted
+
+282
+00:22:30,000 --> 00:22:34,840
+growth rate takes into consideration where
+in your app life cycle you are and how many
+
+283
+00:22:34,840 --> 00:22:39,940
+installs you have.
+And if a given app performs significantly
+
+284
+00:22:39,940 --> 00:22:43,910
+better, if it starts getting installs much
+faster than what we predict, it makes it into
+
+285
+00:22:43,910 --> 00:22:48,550
+this movers and shakers or trending list.
+So when the soccer World Cup was going on
+
+286
+00:22:48,550 --> 00:22:53,300
+a few years ago, the FIFA app was at the top
+of this list.
+
+287
+00:22:53,300 --> 00:22:58,130
+Last year when the unfortunate tsunami hit
+Japan, many radiation tracking apps were at
+
+288
+00:22:58,130 --> 00:23:01,970
+the top of this list.
+Any app can be can be part of this list and
+
+289
+00:23:01,970 --> 00:23:07,250
+we're looking at a 30-day window to figure
+out really what's hot right now.
+
+290
+00:23:07,250 --> 00:23:13,640
+I mentioned the related and cross-sell features
+that we have. On every app's details page
+
+291
+00:23:13,640 --> 00:23:18,050
+there are the people who viewed this also
+viewed these other apps and the users who
+
+292
+00:23:18,050 --> 00:23:20,740
+installed this app also installed these other
+apps.
+
+293
+00:23:20,740 --> 00:23:24,680
+So let's go through a few examples. The first
+one is Bank of America. The user looking to
+
+294
+00:23:24,680 --> 00:23:29,350
+do banking, when they're considering a banking
+app they might consider other banking apps,
+
+295
+00:23:29,350 --> 00:23:33,960
+PayPal or Wells Fargo, but once they've decided
+to get the Bank of America app they're more
+
+296
+00:23:33,960 --> 00:23:39,620
+likely to install a complementary app, not
+a supplementary app. Here you see them installing
+
+297
+00:23:39,620 --> 00:23:45,150
+a trading app such as Merrill Edge or another
+app by the same developer, the BOFA help app.
+
+298
+00:23:45,150 --> 00:23:50,580
+In the middle is an example of a user looking
+to get a Bible. Users looking to get a Bible
+
+299
+00:23:50,580 --> 00:23:55,250
+might consider the various options, but once
+they get the Bible they will get other religious
+
+300
+00:23:55,250 --> 00:23:59,010
+apps, not other Bible apps, so it's complementary
+to what they've gotten.
+
+301
+00:23:59,010 --> 00:24:04,620
+The third is example is a widget that helps
+users show the time on their home screen.
+
+302
+00:24:04,620 --> 00:24:09,760
+They might consider digit clock or dash clock,
+but once they installed the dash clock, they
+
+303
+00:24:09,760 --> 00:24:13,590
+bought into that style, that ecosystem, so
+then they're more likely to install other
+
+304
+00:24:13,590 --> 00:24:18,630
+widgets or other add-ons that have the same
+style, have the unified experience on their
+
+305
+00:24:18,630 --> 00:24:24,440
+Android device.
+Last year at Google I/O we launched personalized
+
+306
+00:24:24,440 --> 00:24:29,780
+recommendations. As I said, these were on
+the home screen of the Google Play home page
+
+307
+00:24:29,780 --> 00:24:35,320
+and they've been performing extremely well.
+With the new launch of Google Play we really
+
+308
+00:24:35,320 --> 00:24:40,840
+decided to double-down on this and start personalizing
+many different parts of our system.
+
+309
+00:24:40,840 --> 00:24:44,590
+So I thought it's a good opportunity for me
+to tell you what really we look for. We have
+
+310
+00:24:44,590 --> 00:24:49,610
+over 80 signals not just from Google Play,
+but also from the rest of Google, but some
+
+311
+00:24:49,610 --> 00:24:54,390
+of our major signals include apps that are
+complementary and supplementary to apps that
+
+312
+00:24:54,390 --> 00:24:58,660
+users installed in the past. We look at apps
+that are popular in a user's area. We look
+
+313
+00:24:58,660 --> 00:25:05,400
+at apps that have been +1'd by a user's Circles,
+reviewed by a user's Circles. We also look
+
+314
+00:25:05,400 --> 00:25:10,210
+at apps that are developed by some of you,
+if the user has already shown interest in
+
+315
+00:25:10,210 --> 00:25:13,710
+your developer account and by other apps by
+you.
+
+316
+00:25:13,710 --> 00:25:19,470
+So here are some recommendations for three
+different users. You can see +1's by people's
+
+317
+00:25:19,470 --> 00:25:23,350
+friends. You can see apps that are similar
+other things they have bought and also apps
+
+318
+00:25:23,350 --> 00:25:28,520
+that are popular in their area.
+So how does this manifest itself? So this
+
+319
+00:25:28,520 --> 00:25:34,320
+is the home page that we envisioned. This
+is going to start rolling out to users in
+
+320
+00:25:34,320 --> 00:25:38,990
+the coming months.
+On the left is my grandma's home page. That's
+
+321
+00:25:38,990 --> 00:25:45,350
+what she sees. She grew up very close to military
+quarters in India because my grandpa lived
+
+322
+00:25:45,350 --> 00:25:49,800
+in that area.
+And she was very interested in getting stuff
+
+323
+00:25:49,800 --> 00:25:56,800
+done. We call her the colonel of the family.
+So for her growing up in a military area means
+
+324
+00:25:59,940 --> 00:26:04,440
+you play a lot of cards. She actually plays
+two to four hours of card games a day. It's
+
+325
+00:26:04,440 --> 00:26:09,230
+ridiculous. I don't know how she does it.
+So seeing the tablet highlight apps for her
+
+326
+00:26:09,230 --> 00:26:13,590
+and seeing the card games right up there is
+really what's relevant to her.
+
+327
+00:26:13,590 --> 00:26:18,300
+For me, I travel a lot and so on the tablet
+highlight section not only do you see Google
+
+328
+00:26:18,300 --> 00:26:22,440
+Translate, which I should get so that I can
+communicate with people all around the world,
+
+329
+00:26:22,440 --> 00:26:25,890
+but it also tells me why. It tells me that
+my friend (Indiscernible) has +1'd this app.
+
+330
+00:26:25,890 --> 00:26:32,890
+He had a great experience so that helps me
+improve trust in the system and get this app.
+
+331
+00:26:33,520 --> 00:26:37,470
+You can take this a step further. On all of
+our category home pages -- both of these are
+
+332
+00:26:37,470 --> 00:26:42,480
+for me. On the left, I live in San Francisco,
+so you see the San Francisco Giants app, you
+
+333
+00:26:42,480 --> 00:26:45,910
+see the Oakland baseball app, you see a Sacramento
+Kings app.
+
+334
+00:26:45,910 --> 00:26:51,650
+On the right is the news home page. You see
+news apps and magazine apps that are related
+
+335
+00:26:51,650 --> 00:26:55,950
+to what I've bought in the past. I have Pulse
+and people who have Pulse tend to also enjoy
+
+336
+00:26:55,950 --> 00:27:00,010
+the "New York Times."
+It's amazing to me the "Times of India" comes
+
+337
+00:27:00,010 --> 00:27:04,750
+on my personalized home page, but it wouldn't
+on some of yours just because my friends tend
+
+338
+00:27:04,750 --> 00:27:11,710
+to come from that part of the world and they
+say this is a great app, to adopt it.
+
+339
+00:27:11,710 --> 00:27:16,970
+How can we apply personalization to search?
+I've talked about using location. So a user
+
+340
+00:27:16,970 --> 00:27:22,000
+in Japan will see different results for Yahoo!
+than a user in the U.S. But we think categorical
+
+341
+00:27:22,000 --> 00:27:27,790
+queries are a place that we can really help
+the user find what they're looking for.
+
+342
+00:27:27,790 --> 00:27:31,590
+Imagine a user searches for free games. If
+we know that they like word games, showing
+
+343
+00:27:31,590 --> 00:27:36,290
+them free word games makes a lot of sense.
+If they like RPG games, that will help them
+
+344
+00:27:36,290 --> 00:27:43,290
+get a much faster acquisition rate.
+For train schedules, a user in New York should
+
+345
+00:27:44,660 --> 00:27:50,260
+get the subway train schedule, a user in San
+Francisco should get the BART train schedule
+
+346
+00:27:50,260 --> 00:27:54,520
+or the Cal train schedule. It just makes sense.
+So over the coming months we're going to roll
+
+347
+00:27:54,520 --> 00:28:00,250
+out more experiments, and finally to everybody,
+personalization across categorical searches.
+
+348
+00:28:00,250 --> 00:28:05,980
+So I've thrown a lot of things at you so far.
+So just to step back and summarize, we've
+
+349
+00:28:05,980 --> 00:28:10,600
+talked about the search statistics, the feedback
+loops that we've looked at in order to improve
+
+350
+00:28:10,600 --> 00:28:15,040
+or search and discovery systems. We talked
+about navigational search suggestions. We
+
+351
+00:28:15,040 --> 00:28:20,510
+talked about how our top charts are created
+across each category, generated daily and
+
+352
+00:28:20,510 --> 00:28:24,940
+across every country. We talked about what
+trending apps are, what it means to be in
+
+353
+00:28:24,940 --> 00:28:29,820
+there and how you can get in there. We talked
+about how related and cross-sell works. And
+
+354
+00:28:29,820 --> 00:28:33,380
+we also talked about how we're starting to
+personalize play and how that's going to roll
+
+355
+00:28:33,380 --> 00:28:38,480
+out over the coming months and how that really
+fulfills our vision of a personalized play
+
+356
+00:28:38,480 --> 00:28:43,200
+made personal.
+So I promised you guys I would leave you with
+
+357
+00:28:43,200 --> 00:28:47,160
+five things that you can do to improve your
+discoverability on play. So let's get right
+
+358
+00:28:47,160 --> 00:28:51,600
+into it, but before we do that I want to tell
+you it's just as important to build a good
+
+359
+00:28:51,600 --> 00:28:57,350
+app. So take the time to go through those
+app developer guidelines on developer.android.com
+
+360
+00:28:57,350 --> 00:29:01,600
+and make sure you have a good app. You can
+complement that by optimizing on the store,
+
+361
+00:29:01,600 --> 00:29:07,500
+but at the end of the day nothing substitutes
+a very good experience for your app.
+
+362
+00:29:07,500 --> 00:29:13,560
+Two months ago we added a list of guidelines,
+the tablet app guidelines, what it means to
+
+363
+00:29:13,560 --> 00:29:20,030
+be designed for tablets. And I highly recommend
+that you get the design for tablet designation.
+
+364
+00:29:20,030 --> 00:29:25,440
+Earlier at I/O we announced design for tablets
+top lists on some of our home pages. Over
+
+365
+00:29:25,440 --> 00:29:31,870
+time this is going to roll across the store
+so a tablet user gets the best experience
+
+366
+00:29:31,870 --> 00:29:36,190
+possible by showing the apps and promoting
+the apps that have gone through the trouble
+
+367
+00:29:36,190 --> 00:29:40,300
+of making that experience better.
+So you're going to see this not just in the
+
+368
+00:29:40,300 --> 00:29:46,410
+top list, but over time in search and in all
+of our other discovery features as well.
+
+369
+00:29:46,410 --> 00:29:51,320
+The developer console helps you with the optimization
+tips that they have added and the next talk
+
+370
+00:29:51,320 --> 00:29:55,340
+by Ellie, Miles and Riccardo will go through
+this in detail, what you can do to really
+
+371
+00:29:55,340 --> 00:30:00,770
+get some of these designations. So get the
+design for tablet designation.
+
+372
+00:30:00,770 --> 00:30:06,790
+Number two -- and this is a much less known
+fact about the way we do search ranking at
+
+373
+00:30:06,790 --> 00:30:10,060
+Google Play.
+Today most articles that are published on
+
+374
+00:30:10,060 --> 00:30:16,410
+the Web about play apps have a link at the
+end that says Google Play Store or play link.
+
+375
+00:30:16,410 --> 00:30:20,840
+Actually, over 99% of anchors that we get
+into the Google Play Store just have those
+
+376
+00:30:20,840 --> 00:30:25,570
+two phrases and that doesn't help us at all.
+We want to help you get discovered even more
+
+377
+00:30:25,570 --> 00:30:27,950
+on play.
+Sure, you tell us a little bit about your
+
+378
+00:30:27,950 --> 00:30:32,320
+app, but if a trusted source -- on the right,
+for example, Tech Crunch, is telling us what
+
+379
+00:30:32,320 --> 00:30:37,880
+your app is about. Even before you have any
+installs, we can trust it and start boosting
+
+380
+00:30:37,880 --> 00:30:41,690
+you for those terms.
+So next time you're talking to a blog writer
+
+381
+00:30:41,690 --> 00:30:47,430
+or someone writing an article about your app,
+have them give you some link juice. Have them
+
+382
+00:30:47,430 --> 00:30:52,380
+put something interesting in those links linking
+to your app.
+
+383
+00:30:52,380 --> 00:30:58,410
+The third one is to avoid common mistakes.
+I told you there were six million and more
+
+384
+00:30:58,410 --> 00:31:02,600
+unique phrases that are searched for every
+month. What I didn't tell you is over half
+
+385
+00:31:02,600 --> 00:31:09,550
+of them are misspelled. That's amazing that
+half the people are mistyping queries, but
+
+386
+00:31:09,550 --> 00:31:14,100
+that's how the query stream is on mobile today.
+So as Google, what we have to do is we have
+
+387
+00:31:14,100 --> 00:31:18,010
+to aggressively correct for it. We have to
+make sure we help the user find what they're
+
+388
+00:31:18,010 --> 00:31:22,740
+looking for even if it's a typo.
+So the one thing you can learn from this is
+
+389
+00:31:22,740 --> 00:31:28,960
+don't name your app something that is a cute
+but a common misspelling of a very popular
+
+390
+00:31:28,960 --> 00:31:33,400
+app because chances are you will get -- a
+user looking for your app will get auto corrected
+
+391
+00:31:33,400 --> 00:31:38,580
+into something that you're not happy with.
+A second thing I already talked about using
+
+392
+00:31:38,580 --> 00:31:44,060
+the targeting expressions on the developer
+console carefully, which countries and carriers
+
+393
+00:31:44,060 --> 00:31:45,990
+you're targeting depending on your target
+audience.
+
+394
+00:31:45,990 --> 00:31:50,620
+And the third one again is one that we have
+-- that is a little subtle, but I think it's
+
+395
+00:31:50,620 --> 00:31:57,600
+important. If you do have a developer URL
+that is not a play.google.com link or a code.google.com
+
+396
+00:31:57,600 --> 00:32:02,480
+link, something that is your home on the Web,
+if it exists do make sure you upload that
+
+397
+00:32:02,480 --> 00:32:06,740
+in the developer console.
+Why? Well, we crawl the Web, we index the
+
+398
+00:32:06,740 --> 00:32:12,390
+Web for our Web search engine and we use a
+lot of those signals in order to help you.
+
+399
+00:32:12,390 --> 00:32:17,610
+If we know that you're the kind of developer
+that is about a specific subset of the world,
+
+400
+00:32:17,610 --> 00:32:21,310
+we will help you get discovered when people
+are looking for those terms on Google Play.
+
+401
+00:32:21,310 --> 00:32:28,310
+So again, if you have a developer URL other
+than something at Google.com, do upload that.
+
+402
+00:32:28,840 --> 00:32:35,840
+Number four is to make your APK smaller, right?
+Users tend to install smaller apps a lot more
+
+403
+00:32:36,300 --> 00:32:41,100
+than they do larger apps and they tend to
+uninstall larger apps at a higher rate as
+
+404
+00:32:41,100 --> 00:32:44,360
+well.
+Let's think about why. As your phone runs
+
+405
+00:32:44,360 --> 00:32:48,770
+out of memory, there is a finite amount of
+memory, users tend to go through the list
+
+406
+00:32:48,770 --> 00:32:53,190
+of apps they have in decreasing order of size
+and start uninstalling the apps that they're
+
+407
+00:32:53,190 --> 00:32:58,400
+using least actively.
+So the further down that list you are, the
+
+408
+00:32:58,400 --> 00:33:03,700
+less likely you are to be uninstalled. So
+make your APK size smaller.
+
+409
+00:33:03,700 --> 00:33:08,120
+In the coming months we'll start looking deeper
+into the APK from a search and discovery perspective
+
+410
+00:33:08,120 --> 00:33:12,370
+as well. We're going to look at the kind of
+SDK's you're linking with, the libraries you're
+
+411
+00:33:12,370 --> 00:33:17,220
+linking with, to figure out what is your app
+really about, looking at the kind of sites
+
+412
+00:33:17,220 --> 00:33:22,340
+that your app is connecting with by emulating
+it and try to figure out what is your app
+
+413
+00:33:22,340 --> 00:33:26,970
+about so we can help users find apps that
+will help them do what they're looking to
+
+414
+00:33:26,970 --> 00:33:30,870
+do.
+And the last one, and this is something many
+
+415
+00:33:30,870 --> 00:33:36,820
+of you have asked us for, is to create a second
+channel of distribution, the viral channel.
+
+416
+00:33:36,820 --> 00:33:40,510
+There hasn't been too much of a viral channel,
+and I'm going to go to go through a through
+
+417
+00:33:40,510 --> 00:33:42,860
+things that we'll be pushing over the coming
+months.
+
+418
+00:33:42,860 --> 00:33:48,230
+The first are highly rated apps. These are
+apps that your friends, your circles and others
+
+419
+00:33:48,230 --> 00:33:53,510
+that you trust have rated highly in our store.
+So here are some apps that are rated highly
+
+420
+00:33:53,510 --> 00:33:59,050
+for me. On the right you see the Quora app
+is rated highly by my roommate David, he rated
+
+421
+00:33:59,050 --> 00:34:04,990
+it five stars. Then Logo Quiz, my friend Rivika
+said it's an extremely fun game, so addicting
+
+422
+00:34:04,990 --> 00:34:09,119
+she couldn't stop.
+That's the personal touch that we can add
+
+423
+00:34:09,119 --> 00:34:13,629
+to the Google Play Store. Some of these apps
+have never been on the home page. This is
+
+424
+00:34:13,629 --> 00:34:20,230
+the easiest way for each of you to get on
+Google Play's home page, have your users review
+
+425
+00:34:20,230 --> 00:34:25,929
+your apps. Their friends will start seeing
+them on their Google Play home page.
+
+426
+00:34:25,929 --> 00:34:31,210
+I've talked a lot about +1's already. +1's
+have been an integral part of our system since
+
+427
+00:34:31,210 --> 00:34:33,940
+we first launched personalized recommendations
+last year.
+
+428
+00:34:33,940 --> 00:34:38,050
+The reason I bring it up again is because
+there's an API which I'm not sure why many
+
+429
+00:34:38,050 --> 00:34:44,610
+of you are not using. This API is available
+on the Google+ recommendations API page and
+
+430
+00:34:44,610 --> 00:34:50,710
+it enables you to allow your users to +1 an
+app from within your app so you don't have
+
+431
+00:34:50,710 --> 00:34:54,950
+to have a message that says "Go to Google
+Play and +1 my app."
+
+432
+00:34:54,950 --> 00:34:58,790
+You don't need to have your users leave your
+experience. Keep them in your app. We want
+
+433
+00:34:58,790 --> 00:35:01,990
+to make it easier.
+So we already have in-app billing for you
+
+434
+00:35:01,990 --> 00:35:05,830
+guys. There's in-app +1. And in the coming
+months we're going to also have in-app rate
+
+435
+00:35:05,830 --> 00:35:08,380
+and review.
+So again, we don't want your users to leave
+
+436
+00:35:08,380 --> 00:35:11,900
+your app. If we can do what they need to do
+from within your app, great and we're going
+
+437
+00:35:11,900 --> 00:35:17,650
+to help you with that as well.
+The last thing to create the viral loop is
+
+438
+00:35:17,650 --> 00:35:22,580
+to integrate with Google Play Game Services.
+At first what you will get is when someone
+
+439
+00:35:22,580 --> 00:35:25,900
+opens your app they can see which of their
+friends are playing, they can find opponents.
+
+440
+00:35:25,900 --> 00:35:30,130
+It makes your app more interactive. You have
+the multiplayer, you have the leaderboards.
+
+441
+00:35:30,130 --> 00:35:34,040
+It makes your app social.
+In the longer term, though this along with
+
+442
+00:35:34,040 --> 00:35:39,150
+the Google+ moments API, which allows you
+to share specific pieces of information, "I'm
+
+443
+00:35:39,150 --> 00:35:44,240
+currently playing this game" or "I am at level
+27 of this game," will allow us in the store
+
+444
+00:35:44,240 --> 00:35:50,590
+to annotate and make things more personal.
+How great would it be if my home page said,
+
+445
+00:35:50,590 --> 00:35:53,960
+"Right now Shelavi is looking for an opponent
+on Riptide."
+
+446
+00:35:53,960 --> 00:35:58,570
+That's not only the best way to get someone
+to install your app, but open it right away,
+
+447
+00:35:58,570 --> 00:36:02,770
+get you those engaged users that you're looking
+for.
+
+448
+00:36:02,770 --> 00:36:06,470
+So I highly recommend integrating with the
+Google Play game services.
+
+449
+00:36:06,470 --> 00:36:11,110
+Again, the five things that you should do
+to get discovered more on play, get the design
+
+450
+00:36:11,110 --> 00:36:16,610
+for tablets designation, start getting helpful
+Web anchors, avoid some of the common mistakes
+
+451
+00:36:16,610 --> 00:36:21,660
+about misspelling because we have to auto
+correct for them, and targeting your audience
+
+452
+00:36:21,660 --> 00:36:27,850
+correctly, reduce the size of your APK and
+then really start closing that viral loop.
+
+453
+00:36:27,850 --> 00:36:34,580
+Help your users promote you in addition to
+depending on just the store.
+
+454
+00:36:34,580 --> 00:36:39,870
+So we've talked a lot about user acquisition.
+I've talked about the organic growth that
+
+455
+00:36:39,870 --> 00:36:44,560
+you can get from the search and discovery
+aspects of the Google Play Store. We've talked
+
+456
+00:36:44,560 --> 00:36:49,150
+about the viral aspect of search and discovery.
+And many of you already know about the paid
+
+457
+00:36:49,150 --> 00:36:52,080
+aspect, which is important to some of your
+businesses as well.
+
+458
+00:36:52,080 --> 00:36:57,080
+I won't talk too much about it, but what I
+will say is that investing in paid user acquisition
+
+459
+00:36:57,080 --> 00:37:03,780
+can have a very positive impact on organic
+and viral growth as well. And so if you can,
+
+460
+00:37:03,780 --> 00:37:08,020
+it is something to think about in the bigger
+picture of things.
+
+461
+00:37:08,020 --> 00:37:14,710
+Now, user acquisition is just the first step
+in creating lifetime value for your users.
+
+462
+00:37:14,710 --> 00:37:19,640
+As a business owner I always like to think
+about my key metrics and have a very good
+
+463
+00:37:19,640 --> 00:37:24,030
+handle on them. And the one that I've found
+in the mobile space and any user-centered
+
+464
+00:37:24,030 --> 00:37:27,090
+space is the lifetime value of every one of
+my users.
+
+465
+00:37:27,090 --> 00:37:30,680
+We talked about user acquisition. Let me briefly
+mention the other two.
+
+466
+00:37:30,680 --> 00:37:36,450
+User retention I like to break into two different
+ratios. The first is a short-term user retention
+
+467
+00:37:36,450 --> 00:37:41,460
+ratio. This is how do I initially keep my
+users?
+
+468
+00:37:41,460 --> 00:37:46,580
+Most of the time this happens because the
+users like what you're promising them. They
+
+469
+00:37:46,580 --> 00:37:49,570
+install your app, they open it.
+The long-term user retention ratio, which
+
+470
+00:37:49,570 --> 00:37:53,470
+is very much like the long install metric
+that I talked about, is the ongoing mechanics
+
+471
+00:37:53,470 --> 00:37:59,200
+of your app or what are you -- you delivering
+on your promise?
+
+472
+00:37:59,200 --> 00:38:05,370
+So an example of Scramble With Friends, initially
+they got a lot of their users because it was
+
+473
+00:38:05,370 --> 00:38:09,960
+very much like the word games that we grew
+up with, but over time their social, their
+
+474
+00:38:09,960 --> 00:38:13,590
+interactive features are what kept it growing
+and made it successful.
+
+475
+00:38:13,590 --> 00:38:17,860
+User monetization, I look at it in terms of
+two different lenses. The big picture is the
+
+476
+00:38:17,860 --> 00:38:23,500
+revenue per install, and that makes sense.
+It's a very good macro metric and it's comparable
+
+477
+00:38:23,500 --> 00:38:27,940
+to your user acquisition cost, your cost per
+install is low so you can do that. But the
+
+478
+00:38:27,940 --> 00:38:33,090
+real picture is the revenue per active user.
+That's what you have most control over, the
+
+479
+00:38:33,090 --> 00:38:37,540
+people that are in your system, in your game,
+in your app, and how can you tune it to make
+
+480
+00:38:37,540 --> 00:38:40,630
+the most money?
+So as you think about your users try to break
+
+481
+00:38:40,630 --> 00:38:44,060
+it down into key metrics and have a very good
+handle on them.
+
+482
+00:38:44,060 --> 00:38:49,130
+So I hope this talk has helped you get a good
+idea of how we build some of our search and
+
+483
+00:38:49,130 --> 00:38:54,440
+discovery systems. My goal was to really start
+this conversation. I want to continue it.
+
+484
+00:38:54,440 --> 00:38:59,610
+And none of this would have been possible
+without my team at Google Play. So this is
+
+485
+00:38:59,610 --> 00:39:03,480
+my shout-out to them. Thank you for doing
+all the great stuff that you've done.
+
+486
+00:39:03,480 --> 00:39:08,380
+And for all of you, thank you for being here
+so early. I would like to continue this conversation.
+
+487
+00:39:08,380 --> 00:39:12,930
+I'll be at office hours right after this,
+so if you have any questions please come there.
+
+488
+00:39:12,930 --> 00:39:17,950
+Or you can reach out to me on Google+ or Twitter
+and I'm happy to continue this. Thank you
+
+489
+00:39:17,950 --> 00:39:18,329
+very much.
+[ Applause ]
+

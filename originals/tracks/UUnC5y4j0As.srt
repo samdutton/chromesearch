@@ -1,0 +1,115 @@
+1
+00:00:02,639 --> 00:00:07,109
+Hi! My name is Christian and I am the Product
+Manager for Native Client, a technology that
+
+2
+00:00:07,109 --> 00:00:12,010
+allows you to run native code in the browser
+in a safe way. In developer events, I am often
+
+3
+00:00:12,010 --> 00:00:16,330
+asked in what ways Native Client can help
+developers. In this video, I am going to present
+
+4
+00:00:16,330 --> 00:00:21,220
+the most common use cases where our team thinks
+Native Client can make a huge difference.
+
+5
+00:00:21,220 --> 00:00:25,990
+Many developers have large code bases written
+in C or C++ and want to use this code to build
+
+6
+00:00:25,990 --> 00:00:31,289
+web applications. So, rewriting everything
+in JavaScript would take a long time. With
+
+7
+00:00:31,289 --> 00:00:35,620
+Native Client it is fairly easy to port your
+existing code to the web platform.
+
+8
+00:00:35,620 --> 00:00:40,090
+For example one engineer working at Spacetime
+Studios ported Star Legends - an MMO with
+
+9
+00:00:40,090 --> 00:00:46,440
+half a million lines of code in just 2 weeks!
+There are also many cases where an application
+
+10
+00:00:46,440 --> 00:00:50,649
+has significant performance requirements.
+While we’ve seen amazing improvements in
+
+11
+00:00:50,649 --> 00:00:55,219
+JavaScript performance the last couple of
+years, some applications need all the performance
+
+12
+00:00:55,219 --> 00:01:00,030
+they can get. Native Client runs native code,
+so you can create these performance intensive
+
+13
+00:01:00,030 --> 00:01:03,429
+applications for the web.
+If you’ve developed a desktop app that you
+
+14
+00:01:03,429 --> 00:01:07,850
+want to make portable across operating systems,
+we believe Native Client can help you out,
+
+15
+00:01:07,850 --> 00:01:13,390
+especially if your app performs heavy computation
+like many games, photo editing and video editing
+
+16
+00:01:13,390 --> 00:01:19,220
+apps. With Native Client you only have to
+maintain one code base but your app can run
+
+17
+00:01:19,220 --> 00:01:25,450
+on Windows, Mac, Linux, and Chrome OS.
+Finally, we understand that for some web apps
+
+18
+00:01:25,450 --> 00:01:30,070
+you may prefer to write parts of them in languages
+other than JavaScript. Native Client currently
+
+19
+00:01:30,070 --> 00:01:34,920
+has the tools that allow you to write web
+applications that run C and C++ code in the
+
+20
+00:01:34,920 --> 00:01:40,200
+browser. Mono also works on Native Client,
+so you can run the .NET family of languages,
+
+21
+00:01:40,200 --> 00:01:45,280
+such as C#. And in the future we’ll work
+to support even more languages.
+
+22
+00:01:45,280 --> 00:01:48,610
+These are the most common use cases where
+we believe Native Client can be helpful for
+
+23
+00:01:48,610 --> 00:01:52,680
+developers. If you are interested in learning
+more, check out our website at gonacl.com
+

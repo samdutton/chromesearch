@@ -1,0 +1,259 @@
+a {
+color: #77aaff;
+text-decoration: none;
+}
+
+a:hover {
+color: #88bbff;
+text-decoration: underline;
+}
+
+a#viewSource {
+display: block;
+font-size: 18px;
+margin: 30px 0 0 0;
+border-top: 1px solid #999;
+padding: 20px 0 0 0;
+}
+
+div#links a {
+display: block;
+line-height: 2em;
+}
+
+body {
+background: #666;
+font-family: Arial, sans-serif;
+overflow-y: scroll;
+padding: 20px;
+}
+
+button {
+margin: 0 10px 0 0;
+/*
+padding: 5px;
+min-width: 70px;
+font-size: 1.2em;
+ */
+}
+
+button[disabled] {
+color: white;
+}
+
+details.transcript {
+margin: 0 0 0.5em 0;
+padding: 0 0 0 18px;
+}
+
+details.videoDetails {
+margin: 0 0 0.5em 0;
+}
+
+div#container {
+background: #000;
+margin: 0 auto 0 auto;
+padding: 15px 30px 20px 30px;
+width: 640px;
+}
+
+div#info {
+margin: 0 0 20px 0;
+}
+
+div#queryExplanation {
+color: red;
+margin: 0 10px 0 0;
+}
+
+div#numResults {
+color: darkRed;
+margin: 0 0 1em 0;
+}
+
+div#results {
+/*max-height: 300px;*/
+margin: 0 0 1em 0;
+overflow-y: auto;
+}
+
+div.cue {
+cursor: pointer;
+font-size: 12px;
+margin: 0 0 1em 0;
+line-height: 1.3em;
+padding: 0 0 0 40px;
+text-indent: -40px;
+}
+
+div.cues {
+margin: 1em 0 0 0;
+padding: 0 0 0 1em;
+}
+
+div.transcript{
+  color: white;
+  font-size: 10px;
+}
+
+div.video {
+margin: 0 0 1.3em 0;
+border-bottom: 1px dotted #999;
+padding: 0 0 0.6em 0;
+}
+
+div.video div.videoRating {
+color: #666;
+font-size: 10px;
+margin: 0 0 0.4em 0;
+clear: left;
+}
+
+div.video div.videoViewCount {
+border-bottom: 1px solid #333;
+color: #666;
+font-size: 10px;
+margin: 0 0 0.6em 0;
+padding: 0 0 0.6em 0;
+}
+
+div.video div.speakers {
+color: #999;
+font-size: 13px;
+margin: 0 0 1em 0;
+padding: 0 0 0 16px;
+}
+
+div.video div.videoSummary {
+color: #ddd;
+font-size: 11px;
+margin: 0 0 5px 0;
+line-height: 1.6em;
+padding: 28px 0 0 0;
+}
+
+div.video div.videoTitle {
+color: #ccc;
+font-size: 12px;
+margin: 0 0 0.4em 0;
+}
+
+span.cueText em {
+font-style: normal;
+background: rgba(224, 79, 23, 0.49);
+}
+
+h1 {
+border-bottom: 1px solid #aaa;
+color: white;
+font-family: Arial, sans-serif;
+margin: 0 0 30px 0;
+padding: 0 0 10px 0;
+}
+
+h2 {
+color: #ccc;
+font-family: Arial, sans-serif;
+margin: 30px 0 0 0;
+}
+
+iframe {
+background-color: #222;
+margin: 0 0 20px 0;
+}
+
+img {
+border: none;
+}
+
+img.videoThumbnail {
+float: left;
+height: 180px;
+margin: 9px 10px 0 0;
+width: 240px;
+}
+
+input#query {
+font-family: Arial, sans-serif;
+font-size: 14px;
+padding: 5px;
+width: 627px;
+margin:  0 0 10px 0;
+}
+
+p {
+color: #eee;
+font-size: 14px;
+line-height: 1.4em;
+}
+
+p#data {
+font-family: monospace;
+line-height: 1.2em;
+max-height: 1000px;
+overflow-y: auto;
+border-top: 1px dotted #666;
+padding: 16px 0 0 0;
+}
+
+p.borderBelow {
+border-bottom: 1px solid #aaa;
+padding: 0 0 20px 0;
+}
+
+details.transcript p {
+color: #ddd;
+font-size: 13px;
+line-height: 1.5em;
+}
+
+pre {
+  color: #ddd;
+}
+
+span.cueStartTime {
+color: #aaa;
+}
+
+span.cueText {
+color: #ccc;
+}
+
+span.cueText:hover {
+color: white;
+}
+
+span.inputLabel {
+color: #eee;
+float: left;
+font-size: 11px;
+font-family: Arial, sans-serif;
+line-height: 1em;
+}
+
+summary {
+color: white;
+cursor: pointer;
+display: block; /* for browsers that don't support <summary> */
+font-weight: bold;
+outline: none;
+}
+
+summary.transcriptTitle {
+font-size: 13px;
+margin: 0 0 1em 0;
+padding: 0 0 0 18px;
+text-indent: -18px;
+line-height: 1.2em;
+}
+
+summary.videoTitle {
+margin: 0 0 0 0;
+padding: 0 0 0 18px;
+text-indent: -18px;
+line-height: 1.2em;
+}
+
+video {
+background: #222;
+}

@@ -1,0 +1,5125 @@
+1
+00:00:00,000 --> 00:00:00,130
+
+2
+00:00:00,130 --> 00:00:01,390
+MISKO HEVERY: Hi, my name
+is Misko Hevery.
+
+3
+00:00:01,390 --> 00:00:04,340
+I'm the father of AngularJS.
+
+4
+00:00:04,340 --> 00:00:05,495
+BRAD GREEN: And I'm Brad
+Green, and I will play
+
+5
+00:00:05,495 --> 00:00:07,880
+Angular's manager today.
+
+6
+00:00:07,880 --> 00:00:09,561
+It's what I do.
+
+7
+00:00:09,561 --> 00:00:12,370
+All right, so we wanted to take
+some time in front of you
+
+8
+00:00:12,370 --> 00:00:15,220
+folks-- thanks for coming, by
+the way-- talking about what
+
+9
+00:00:15,220 --> 00:00:17,590
+it is that drove us
+to build Angular.
+
+10
+00:00:17,590 --> 00:00:19,480
+Because we think, when people
+come and look at the Angular
+
+11
+00:00:19,480 --> 00:00:22,720
+framework, a lot of times they
+see the features of Angular,
+
+12
+00:00:22,720 --> 00:00:24,520
+and maybe we're not very clear
+about what we meant.
+
+13
+00:00:24,520 --> 00:00:26,410
+When they come to see the
+features, they see what we
+
+14
+00:00:26,410 --> 00:00:28,480
+call the three D's--
+
+15
+00:00:28,480 --> 00:00:32,350
+directives, dependency
+injection, and data-binding.
+
+16
+00:00:32,350 --> 00:00:34,690
+But we're passionate about some
+very different things.
+
+17
+00:00:34,690 --> 00:00:37,800
+We just happened to arrive at
+these features along the way.
+
+18
+00:00:37,800 --> 00:00:40,680
+So Misko, why don't you talk
+about what do you care the
+
+19
+00:00:40,680 --> 00:00:42,230
+most about web development?
+
+20
+00:00:42,230 --> 00:00:43,240
+MISKO HEVERY: So web
+development, if you think
+
+21
+00:00:43,240 --> 00:00:45,682
+about it, is all about getting
+data to the browser, and then
+
+22
+00:00:45,682 --> 00:00:47,010
+back to the database.
+
+23
+00:00:47,010 --> 00:00:49,320
+And so one of the things that
+you end up doing is a whole
+
+24
+00:00:49,320 --> 00:00:53,260
+lot of boilerplate marshaling
+of the data back and forth.
+
+25
+00:00:53,260 --> 00:00:55,310
+And after you build a couple
+of web applications, you're
+
+26
+00:00:55,310 --> 00:00:57,210
+just getting tired of writing
+the same thing
+
+27
+00:00:57,210 --> 00:00:58,695
+over and over again.
+
+28
+00:00:58,695 --> 00:01:00,830
+And it's kind of getting in the
+way of just building the
+
+29
+00:01:00,830 --> 00:01:02,340
+actual stuff.
+
+30
+00:01:02,340 --> 00:01:04,500
+And so, the boilerplate is one
+of the things that we really
+
+31
+00:01:04,500 --> 00:01:06,580
+wanted to eliminate as
+much as possible
+
+32
+00:01:06,580 --> 00:01:07,790
+inside of our codebase.
+
+33
+00:01:07,790 --> 00:01:08,170
+BRAD GREEN: Right.
+
+34
+00:01:08,170 --> 00:01:11,140
+So we thought that if we can
+distill our apps-- if we could
+
+35
+00:01:11,140 --> 00:01:12,540
+boil them down, maybe--
+
+36
+00:01:12,540 --> 00:01:15,240
+to their essence, about just
+what adds value to the app,
+
+37
+00:01:15,240 --> 00:01:16,190
+then it'd be very much--
+
+38
+00:01:16,190 --> 00:01:18,460
+it's easier to build these
+applications, but also easier
+
+39
+00:01:18,460 --> 00:01:19,220
+to understand.
+
+40
+00:01:19,220 --> 00:01:21,750
+We spend a lot more time reading
+code than writing it.
+
+41
+00:01:21,750 --> 00:01:23,460
+So we thought that
+would be cool.
+
+42
+00:01:23,460 --> 00:01:25,100
+MISKO HEVERY: So the next
+thing is, every single
+
+43
+00:01:25,100 --> 00:01:27,070
+application I've ever been
+on, it was structured
+
+44
+00:01:27,070 --> 00:01:28,420
+in some other way.
+
+45
+00:01:28,420 --> 00:01:31,310
+And having a common way of
+structuring the application
+
+46
+00:01:31,310 --> 00:01:33,080
+means the developer
+can easily bring--
+
+47
+00:01:33,080 --> 00:01:36,370
+come up to speed on your
+codebase, and we can easily
+
+48
+00:01:36,370 --> 00:01:37,270
+move between projects.
+
+49
+00:01:37,270 --> 00:01:39,240
+And so giving structure to the
+applications is another
+
+50
+00:01:39,240 --> 00:01:40,060
+important thing.
+
+51
+00:01:40,060 --> 00:01:42,290
+BRAD GREEN: What is
+that shape, Misko?
+
+52
+00:01:42,290 --> 00:01:44,010
+MISKO HEVERY: That's
+a scaffolding, sir.
+
+53
+00:01:44,010 --> 00:01:44,580
+BRAD GREEN: Do you know how
+to draw scaffolding?
+
+54
+00:01:44,580 --> 00:01:44,870
+MISKO HEVERY: No.
+
+55
+00:01:44,870 --> 00:01:46,330
+I do not get paid to draw.
+
+56
+00:01:46,330 --> 00:01:47,450
+I get paid to write code.
+
+57
+00:01:47,450 --> 00:01:48,050
+BRAD GREEN: OK, good thing.
+
+58
+00:01:48,050 --> 00:01:49,580
+Good thing.
+
+59
+00:01:49,580 --> 00:01:52,090
+MISKO HEVERY: And then lastly,
+I'm a big fan of testability,
+
+60
+00:01:52,090 --> 00:01:54,940
+and so we put a lot of testing
+effort into our framework.
+
+61
+00:01:54,940 --> 00:01:57,680
+But it's not enough to just
+build a framework
+
+62
+00:01:57,680 --> 00:01:58,850
+which itself is tested.
+
+63
+00:01:58,850 --> 00:02:00,970
+It's all about making sure
+that the people--
+
+64
+00:02:00,970 --> 00:02:03,820
+developers writing code, using
+the framework will have easy
+
+65
+00:02:03,820 --> 00:02:04,480
+time testing.
+
+66
+00:02:04,480 --> 00:02:07,230
+And so one of things we wanted
+to make sure is the way the
+
+67
+00:02:07,230 --> 00:02:10,259
+framework is structured
+naturally leads you down the
+
+68
+00:02:10,259 --> 00:02:11,340
+stability path
+
+69
+00:02:11,340 --> 00:02:11,730
+BRAD GREEN: That's right.
+
+70
+00:02:11,730 --> 00:02:14,720
+And we believe that if you're
+shipping software, you better
+
+71
+00:02:14,720 --> 00:02:15,810
+be shipping tested software.
+
+72
+00:02:15,810 --> 00:02:17,310
+So we really wanted
+to make that easy.
+
+73
+00:02:17,310 --> 00:02:20,920
+So let's go back to a few years
+to 2009, where I think I
+
+74
+00:02:20,920 --> 00:02:22,760
+said, Misko, you should
+go learn JavaScript.
+
+75
+00:02:22,760 --> 00:02:24,140
+This seems like the new thing.
+
+76
+00:02:24,140 --> 00:02:25,100
+And what did you do?
+
+77
+00:02:25,100 --> 00:02:27,810
+What was your first inclination
+as a newbie in the
+
+78
+00:02:27,810 --> 00:02:28,550
+world of JavaScript?
+
+79
+00:02:28,550 --> 00:02:29,150
+What did you do?
+
+80
+00:02:29,150 --> 00:02:29,960
+MISKO HEVERY: Well,
+write a framework.
+
+81
+00:02:29,960 --> 00:02:30,820
+What else would you do?
+
+82
+00:02:30,820 --> 00:02:31,790
+BRAD GREEN: That's right,
+every newbie
+
+83
+00:02:31,790 --> 00:02:33,060
+should write a framework.
+
+84
+00:02:33,060 --> 00:02:34,650
+It's a good policy.
+
+85
+00:02:34,650 --> 00:02:36,910
+MISKO HEVERY: So the idea behind
+Angular-- the original
+
+86
+00:02:36,910 --> 00:02:39,210
+Angular was actually a little
+different, which was that
+
+87
+00:02:39,210 --> 00:02:41,640
+there's a lot of web designers
+out there, people who are not
+
+88
+00:02:41,640 --> 00:02:44,700
+really programmers, developers
+per se, but they know how to
+
+89
+00:02:44,700 --> 00:02:46,860
+put HTML together because
+it's so declarative, and
+
+90
+00:02:46,860 --> 00:02:48,260
+it's easy to do.
+
+91
+00:02:48,260 --> 00:02:51,590
+And so, could we enable the web
+designers to be able to
+
+92
+00:02:51,590 --> 00:02:55,390
+build a very trivial, simple
+application just by a dropping
+
+93
+00:02:55,390 --> 00:02:58,620
+little bit of extra markup
+logic into the HTML?
+
+94
+00:02:58,620 --> 00:03:00,880
+So you don't even have to
+manage your backend.
+
+95
+00:03:00,880 --> 00:03:03,320
+You have some database in the
+cloud, and you include the
+
+96
+00:03:03,320 --> 00:03:05,910
+script tag, put a little bit
+of extra tags, and all of a
+
+97
+00:03:05,910 --> 00:03:09,370
+sudden, your form becomes
+persistable form and can send
+
+98
+00:03:09,370 --> 00:03:11,040
+email, and things
+of that sort.
+
+99
+00:03:11,040 --> 00:03:11,350
+BRAD GREEN: That's right.
+
+100
+00:03:11,350 --> 00:03:13,140
+You know, this eye-stabbingly
+yellow logo, right?
+
+101
+00:03:13,140 --> 00:03:15,490
+MISKO HEVERY: You have something
+against yellow?
+
+102
+00:03:15,490 --> 00:03:16,160
+BRAD GREEN: I got better.
+
+103
+00:03:16,160 --> 00:03:17,291
+MISKO HEVERY: All right.
+
+104
+00:03:17,291 --> 00:03:20,510
+BRAD GREEN: All right, so fast
+forward just a little bit to--
+
+105
+00:03:20,510 --> 00:03:22,120
+we were on a project together.
+
+106
+00:03:22,120 --> 00:03:23,850
+And I remember Misko--
+this was a project
+
+107
+00:03:23,850 --> 00:03:25,100
+called Google Feedback.
+
+108
+00:03:25,100 --> 00:03:28,240
+And Misko, you and the other
+developers on the project were
+
+109
+00:03:28,240 --> 00:03:31,990
+kind of unhappy with our
+development pace?
+
+110
+00:03:31,990 --> 00:03:32,630
+MISKO HEVERY: Yes.
+
+111
+00:03:32,630 --> 00:03:34,350
+The velocity was not so great.
+
+112
+00:03:34,350 --> 00:03:37,310
+We spent about six months, three
+of us working on this
+
+113
+00:03:37,310 --> 00:03:38,340
+particular project.
+
+114
+00:03:38,340 --> 00:03:42,870
+17,000 lines of code later, we
+were really not making the
+
+115
+00:03:42,870 --> 00:03:44,190
+progress we wanted to make.
+
+116
+00:03:44,190 --> 00:03:45,130
+And so we're frustrated.
+
+117
+00:03:45,130 --> 00:03:47,162
+And so in my frustration, I went
+to Brad, and I said, you
+
+118
+00:03:47,162 --> 00:03:49,190
+know, Brad, I'm working on this
+thing in my free time,
+
+119
+00:03:49,190 --> 00:03:50,320
+kind of an open source
+project.
+
+120
+00:03:50,320 --> 00:03:54,780
+And I bet you I could rewrite
+the whole thing in two weeks.
+
+121
+00:03:54,780 --> 00:03:56,660
+BRAD GREEN: And I said, go for
+it, because two weeks--
+
+122
+00:03:56,660 --> 00:03:57,890
+whatever.
+
+123
+00:03:57,890 --> 00:03:59,450
+But I don't think you quite
+made it in two weeks.
+
+124
+00:03:59,450 --> 00:04:00,510
+MISKO HEVERY: No, I didn't
+make it in two weeks.
+
+125
+00:04:00,510 --> 00:04:02,280
+It took me three weeks.
+
+126
+00:04:02,280 --> 00:04:06,540
+And 1,500 lines of code later,
+we actually have rewritten the
+
+127
+00:04:06,540 --> 00:04:07,820
+whole application.
+
+128
+00:04:07,820 --> 00:04:08,990
+BRAD GREEN: I was impressed.
+
+129
+00:04:08,990 --> 00:04:11,310
+And this was kind of the start
+where I though, well, Angular
+
+130
+00:04:11,310 --> 00:04:14,000
+seems like it could be a thing
+unto itself, not just a part
+
+131
+00:04:14,000 --> 00:04:15,690
+of Google Feedback as
+the way it was.
+
+132
+00:04:15,690 --> 00:04:18,540
+And this is where we decided we
+would spin it off into its
+
+133
+00:04:18,540 --> 00:04:20,540
+own entity.
+
+134
+00:04:20,540 --> 00:04:23,630
+MISKO HEVERY: So what exactly
+is it to build a single-page
+
+135
+00:04:23,630 --> 00:04:24,170
+application?
+
+136
+00:04:24,170 --> 00:04:26,450
+Well, you have a database, and
+you the browser, and the stuff
+
+137
+00:04:26,450 --> 00:04:28,610
+in the middle is really what
+we're talking about, right?
+
+138
+00:04:28,610 --> 00:04:31,710
+And so to have a single-page
+application is really all
+
+139
+00:04:31,710 --> 00:04:34,420
+about modifying the DOM-- you
+know, the divs, the spans, the
+
+140
+00:04:34,420 --> 00:04:36,490
+uls, the lis, the tables,
+and so forth.
+
+141
+00:04:36,490 --> 00:04:39,650
+You need to transfer it from
+one state to another state,
+
+142
+00:04:39,650 --> 00:04:41,160
+because that essentially
+is going to drive
+
+143
+00:04:41,160 --> 00:04:42,790
+the rendering engine.
+
+144
+00:04:42,790 --> 00:04:44,860
+But the thing that's different
+between [? round-tree ?]
+
+145
+00:04:44,860 --> 00:04:46,870
+applications and single-page
+applications that you have to
+
+146
+00:04:46,870 --> 00:04:50,070
+deal a lot of it about the
+internal thing called RAM.
+
+147
+00:04:50,070 --> 00:04:50,620
+BRAD GREEN: Memory.
+
+148
+00:04:50,620 --> 00:04:51,120
+MISKO HEVERY: Memory.
+
+149
+00:04:51,120 --> 00:04:51,290
+Memory, I see.
+
+150
+00:04:51,290 --> 00:04:52,250
+BRAD GREEN: We call it
+memory these days.
+
+151
+00:04:52,250 --> 00:04:54,050
+MISKO HEVERY: So the heap
+of the program, right?
+
+152
+00:04:54,050 --> 00:04:57,150
+So instead of getting the data
+in line with your HTML to get
+
+153
+00:04:57,150 --> 00:04:58,790
+data separately, you load
+it into the memory.
+
+154
+00:04:58,790 --> 00:05:01,860
+And now the problem becomes once
+we get it to memory, how
+
+155
+00:05:01,860 --> 00:05:03,530
+do we get it to the DOM?
+
+156
+00:05:03,530 --> 00:05:06,070
+And then back when the user
+interacts into the memory, and
+
+157
+00:05:06,070 --> 00:05:07,090
+into the database?
+
+158
+00:05:07,090 --> 00:05:11,320
+And so our passion really became
+how do we simplify this
+
+159
+00:05:11,320 --> 00:05:14,600
+flow of data to the DOM, and
+back to the database.
+
+160
+00:05:14,600 --> 00:05:16,730
+And this is essentially
+what became Angular.
+
+161
+00:05:16,730 --> 00:05:17,120
+BRAD GREEN: Right.
+
+162
+00:05:17,120 --> 00:05:18,080
+And we got a logo.
+
+163
+00:05:18,080 --> 00:05:20,460
+But let's see how this works.
+
+164
+00:05:20,460 --> 00:05:24,590
+And we're going to go to an
+example of the basics of
+
+165
+00:05:24,590 --> 00:05:25,730
+moving back and forth.
+
+166
+00:05:25,730 --> 00:05:27,330
+And this is one of
+those three D's--
+
+167
+00:05:27,330 --> 00:05:29,230
+and we'll actually describe
+them-- not our goals.
+
+168
+00:05:29,230 --> 00:05:31,190
+But it's important.
+
+169
+00:05:31,190 --> 00:05:33,450
+So data-binding, the
+way this works.
+
+170
+00:05:33,450 --> 00:05:34,700
+We've got a--
+
+171
+00:05:34,700 --> 00:05:36,970
+just in a template, we're
+actually able to express kind
+
+172
+00:05:36,970 --> 00:05:37,850
+of an interesting case.
+
+173
+00:05:37,850 --> 00:05:39,640
+Well, let's actually see how
+this works before we
+
+174
+00:05:39,640 --> 00:05:41,000
+dive into the code.
+
+175
+00:05:41,000 --> 00:05:44,170
+So Misko's a text box here,
+and you'll notice how he
+
+176
+00:05:44,170 --> 00:05:48,030
+types, the words that he types
+appears below, and the word
+
+177
+00:05:48,030 --> 00:05:49,790
+"hi" appears when there's
+something in the box.
+
+178
+00:05:49,790 --> 00:05:52,810
+So if he deletes all the text in
+the box, the word "hi" goes
+
+179
+00:05:52,810 --> 00:05:54,500
+away, and we don't
+see anything.
+
+180
+00:05:54,500 --> 00:05:57,470
+So let's go back and take a
+look at how this works.
+
+181
+00:05:57,470 --> 00:06:01,300
+So at the top, you'll notice
+in the HTML tag, we have an
+
+182
+00:06:01,300 --> 00:06:02,690
+extra attribute that
+is not actually
+
+183
+00:06:02,690 --> 00:06:05,280
+part of the HTML spec.
+
+184
+00:06:05,280 --> 00:06:07,340
+And there-- all these things
+in green are--
+
+185
+00:06:07,340 --> 00:06:08,760
+these are extensions
+we've added.
+
+186
+00:06:08,760 --> 00:06:09,790
+And we call them directives.
+
+187
+00:06:09,790 --> 00:06:11,770
+But they allow us to assemble
+the application
+
+188
+00:06:11,770 --> 00:06:12,830
+in interesting ways.
+
+189
+00:06:12,830 --> 00:06:16,600
+And here on the input field,
+what we've said is that the
+
+190
+00:06:16,600 --> 00:06:18,830
+model for our data-- the place
+in memory where this lives--
+
+191
+00:06:18,830 --> 00:06:21,510
+we're going to name it with an
+object called "user," and we
+
+192
+00:06:21,510 --> 00:06:24,110
+have a property called "name."
+And that we want this thing
+
+193
+00:06:24,110 --> 00:06:28,020
+synced up, so that whenever
+somebody types that in memory,
+
+194
+00:06:28,020 --> 00:06:30,980
+it should update this
+user.name, and we
+
+195
+00:06:30,980 --> 00:06:31,820
+can use that elsewhere.
+
+196
+00:06:31,820 --> 00:06:34,940
+So right below it in the
+paragraph tag, we want to
+
+197
+00:06:34,940 --> 00:06:35,770
+place that text.
+
+198
+00:06:35,770 --> 00:06:37,280
+So what we do in double
+curlies-- we call this
+
+199
+00:06:37,280 --> 00:06:38,370
+interpolation--
+
+200
+00:06:38,370 --> 00:06:40,800
+we're able to place that text
+right in there just by putting
+
+201
+00:06:40,800 --> 00:06:41,390
+those double curlies in.
+
+202
+00:06:41,390 --> 00:06:43,770
+This is a familiar syntax
+that's used in other
+
+203
+00:06:43,770 --> 00:06:45,240
+templatinig languages.
+
+204
+00:06:45,240 --> 00:06:48,550
+But we're also able to use it
+not only to modify what data
+
+205
+00:06:48,550 --> 00:06:51,230
+is there, but to control whether
+it's shown or hidden.
+
+206
+00:06:51,230 --> 00:06:55,300
+So in the p tag, we have ng-show
+equals username.
+
+207
+00:06:55,300 --> 00:06:57,680
+Well, what this says is that
+showing and hiding should be
+
+208
+00:06:57,680 --> 00:06:59,840
+controlled by presence
+of text in there.
+
+209
+00:06:59,840 --> 00:07:01,400
+If there's no text, hide it.
+
+210
+00:07:01,400 --> 00:07:03,570
+If there's text, show it.
+
+211
+00:07:03,570 --> 00:07:05,660
+But we had an interesting eureka
+moment in here, which
+
+212
+00:07:05,660 --> 00:07:09,470
+is that our templating system
+was actually HTML, which means
+
+213
+00:07:09,470 --> 00:07:12,590
+you can use all your existing
+HTML editors, such as
+
+214
+00:07:12,590 --> 00:07:15,510
+Dreamweaver, or your HTML editor
+inside of your IDE.
+
+215
+00:07:15,510 --> 00:07:19,010
+And this is in stark contrast
+to most other templating
+
+216
+00:07:19,010 --> 00:07:23,010
+systems that happen to be
+templating languages of their
+
+217
+00:07:23,010 --> 00:07:26,100
+own, and just happen to produce
+HTML on the end.
+
+218
+00:07:26,100 --> 00:07:28,980
+This is actually HTML
+all the way through.
+
+219
+00:07:28,980 --> 00:07:31,400
+And that makes it easy for
+people to pick up and learn,
+
+220
+00:07:31,400 --> 00:07:34,430
+such as for web developers-- or,
+for web designers who are
+
+221
+00:07:34,430 --> 00:07:37,855
+already familiar with
+the HTML paradigm.
+
+222
+00:07:37,855 --> 00:07:39,790
+BRAD GREEN: That's right, but
+data-binding isn't the whole
+
+223
+00:07:39,790 --> 00:07:40,450
+story, right?
+
+224
+00:07:40,450 --> 00:07:43,730
+So we also want to put in but
+some other bits when we create
+
+225
+00:07:43,730 --> 00:07:44,720
+an application.
+
+226
+00:07:44,720 --> 00:07:46,340
+MISKO HEVERY: So at the
+beginning, I mentioned the
+
+227
+00:07:46,340 --> 00:07:50,020
+idea was, could I build a very
+simple web application without
+
+228
+00:07:50,020 --> 00:07:52,530
+having actually any kind
+of logic inside--
+
+229
+00:07:52,530 --> 00:07:55,810
+without having to write any
+logic, any program just by
+
+230
+00:07:55,810 --> 00:07:56,700
+using data-binding?
+
+231
+00:07:56,700 --> 00:07:59,530
+And if you wanted to build a
+real application, sooner or
+
+232
+00:07:59,530 --> 00:08:01,390
+later you come to the situation
+where, well, you
+
+233
+00:08:01,390 --> 00:08:02,620
+have to put the logic
+in there.
+
+234
+00:08:02,620 --> 00:08:05,140
+And so it's not sufficient to
+just have a good data-binding
+
+235
+00:08:05,140 --> 00:08:08,690
+story, but also have a good
+story about how do we manage
+
+236
+00:08:08,690 --> 00:08:10,960
+all the code that has to be
+written, and how does the code
+
+237
+00:08:10,960 --> 00:08:13,470
+interact with the data-binding,
+as well.
+
+238
+00:08:13,470 --> 00:08:13,840
+BRAD GREEN: That's right.
+
+239
+00:08:13,840 --> 00:08:15,170
+And let's take a look
+at another example.
+
+240
+00:08:15,170 --> 00:08:19,000
+So here we've got a slightly
+more complex example where
+
+241
+00:08:19,000 --> 00:08:21,770
+we've got two files-- one
+index.html on the left, end
+
+242
+00:08:21,770 --> 00:08:24,190
+UserController.js
+on the right.
+
+243
+00:08:24,190 --> 00:08:25,900
+And again, let's take a look
+at how this works before we
+
+244
+00:08:25,900 --> 00:08:27,350
+walk through the code.
+
+245
+00:08:27,350 --> 00:08:31,380
+So Misko's going to open his
+second tab, and we've got a
+
+246
+00:08:31,380 --> 00:08:32,120
+text input.
+
+247
+00:08:32,120 --> 00:08:32,880
+We've got the word
+"Larry" in there.
+
+248
+00:08:32,880 --> 00:08:34,675
+And when he clicks the word--
+
+249
+00:08:34,675 --> 00:08:38,909
+the bye button, it says, "bye
+Larry." Nothing too complex.
+
+250
+00:08:38,909 --> 00:08:43,549
+But if he changes the text and
+clicks bye, it updates to use
+
+251
+00:08:43,549 --> 00:08:44,720
+"Google I/O" as the text.
+
+252
+00:08:44,720 --> 00:08:46,420
+OK, let's take a look
+at how we do this.
+
+253
+00:08:46,420 --> 00:08:47,480
+So now, we've got--
+
+254
+00:08:47,480 --> 00:08:47,960
+we need some logic.
+
+255
+00:08:47,960 --> 00:08:51,980
+We need some way to take that
+text that somebody typed, and
+
+256
+00:08:51,980 --> 00:08:56,760
+move it somewhere where we can
+use in our bye button.
+
+257
+00:08:56,760 --> 00:09:01,180
+So our template on the left-hand
+side, we're adding
+
+258
+00:09:01,180 --> 00:09:02,390
+another piece to the template.
+
+259
+00:09:02,390 --> 00:09:06,010
+We are now telling Angular to
+construct a template that
+
+260
+00:09:06,010 --> 00:09:07,075
+relates to some code.
+
+261
+00:09:07,075 --> 00:09:09,500
+And in this case, we're
+specifying that a class called
+
+262
+00:09:09,500 --> 00:09:11,840
+UserController we're going
+to use to manage
+
+263
+00:09:11,840 --> 00:09:13,790
+this part of the DOM.
+
+264
+00:09:13,790 --> 00:09:16,690
+And this is some new syntax,
+so for people who have used
+
+265
+00:09:16,690 --> 00:09:20,170
+Angular before, this is some new
+syntactic sugar we'll be
+
+266
+00:09:20,170 --> 00:09:20,820
+releasing tomorrow.
+
+267
+00:09:20,820 --> 00:09:23,760
+But we're able to create an
+alias for UserController.
+
+268
+00:09:23,760 --> 00:09:26,520
+We're just going to call it
+UControl and then we can refer
+
+269
+00:09:26,520 --> 00:09:27,670
+to it later.
+
+270
+00:09:27,670 --> 00:09:32,430
+And what we'll see is that we
+can put attributes on UControl
+
+271
+00:09:32,430 --> 00:09:34,050
+that we want to access
+as part of our model.
+
+272
+00:09:34,050 --> 00:09:37,670
+So the input will bind to
+UControl.user.first.
+
+273
+00:09:37,670 --> 00:09:41,230
+And for clicking the button--
+when users click it-- it will
+
+274
+00:09:41,230 --> 00:09:43,910
+specific an ng-click there that
+UControl should call the
+
+275
+00:09:43,910 --> 00:09:48,270
+bye function that we defined
+there on the right-hand side.
+
+276
+00:09:48,270 --> 00:09:49,900
+MISKO HEVERY: But I wanted to
+point out something over here,
+
+277
+00:09:49,900 --> 00:09:52,890
+which is that the UserController
+has no access
+
+278
+00:09:52,890 --> 00:09:53,950
+to the DOM.
+
+279
+00:09:53,950 --> 00:09:57,160
+There's also no special thing
+you have to inherit from, no
+
+280
+00:09:57,160 --> 00:10:00,475
+special way that you have to
+instantiate your model, other
+
+281
+00:10:00,475 --> 00:10:01,700
+than regular object.
+
+282
+00:10:01,700 --> 00:10:04,190
+And notice there is no API one
+has to call inside of Angular.
+
+283
+00:10:04,190 --> 00:10:08,300
+This is really just a plain
+old JavaScript type that
+
+284
+00:10:08,300 --> 00:10:10,180
+exists in JavaScript.
+
+285
+00:10:10,180 --> 00:10:10,655
+BRAD GREEN: Right.
+
+286
+00:10:10,655 --> 00:10:12,410
+And maybe even more importantly,
+notice that
+
+287
+00:10:12,410 --> 00:10:15,490
+there's no new-- we never call
+new on UserController.
+
+288
+00:10:15,490 --> 00:10:16,430
+We don't create it.
+
+289
+00:10:16,430 --> 00:10:20,210
+Just by specifying in the
+ng-controller tag, Angular
+
+290
+00:10:20,210 --> 00:10:21,990
+knows enough to create it at
+the right moment when this
+
+291
+00:10:21,990 --> 00:10:23,880
+view comes into my
+application.
+
+292
+00:10:23,880 --> 00:10:26,210
+It creates a controller, and
+attaches it-- or, it hands it
+
+293
+00:10:26,210 --> 00:10:27,760
+the right things in the DOM.
+
+294
+00:10:27,760 --> 00:10:29,360
+MISKO HEVERY: Right So when
+you have a model-view
+
+295
+00:10:29,360 --> 00:10:33,400
+controller, in Angular,
+everything is driven by the
+
+296
+00:10:33,400 --> 00:10:35,870
+view on the left-hand
+side over here.
+
+297
+00:10:35,870 --> 00:10:38,750
+And the view says I need the
+controller, and so the
+
+298
+00:10:38,750 --> 00:10:40,710
+instantiation of the controller
+has to happen,
+
+299
+00:10:40,710 --> 00:10:43,190
+which then goes ahead and
+instantiates the model.
+
+300
+00:10:43,190 --> 00:10:46,150
+Now the thing to notice over
+here is that all of the arrows
+
+301
+00:10:46,150 --> 00:10:48,050
+point away from the
+view, and into the
+
+302
+00:10:48,050 --> 00:10:49,110
+controller or the model.
+
+303
+00:10:49,110 --> 00:10:51,440
+And because the arrows point in
+this particular direction,
+
+304
+00:10:51,440 --> 00:10:53,770
+it means that one doesn't have
+to start with the view.
+
+305
+00:10:53,770 --> 00:10:56,760
+One can start with instantiating
+the controller
+
+306
+00:10:56,760 --> 00:10:58,380
+and the model separately.
+
+307
+00:10:58,380 --> 00:11:00,590
+And this is very wonderful
+in tests.
+
+308
+00:11:00,590 --> 00:11:03,360
+And also, this allows you to
+easily reskin your application
+
+309
+00:11:03,360 --> 00:11:04,470
+for different devices.
+
+310
+00:11:04,470 --> 00:11:05,090
+BRAD GREEN: Right.
+
+311
+00:11:05,090 --> 00:11:08,510
+And what this really means is
+that my view and my controller
+
+312
+00:11:08,510 --> 00:11:11,530
+and my model are decoupled,
+meaning I could change the
+
+313
+00:11:11,530 --> 00:11:14,810
+view with the same business
+logic and the same model for
+
+314
+00:11:14,810 --> 00:11:18,390
+maybe different devices,
+or different use cases.
+
+315
+00:11:18,390 --> 00:11:20,690
+So Misko, let's talk about
+how this assembly of the
+
+316
+00:11:20,690 --> 00:11:22,750
+application actually
+works then.
+
+317
+00:11:22,750 --> 00:11:25,280
+MISKO HEVERY: So here, we're
+taking a simple case, which we
+
+318
+00:11:25,280 --> 00:11:27,140
+just saw with the hello world,
+and making it a little more
+
+319
+00:11:27,140 --> 00:11:30,120
+complicated by saying instead
+of popping up a dialog box,
+
+320
+00:11:30,120 --> 00:11:33,140
+maybe we can use a voice
+synthesis to actually say the
+
+321
+00:11:33,140 --> 00:11:36,900
+words that we're about to
+display in the LR box.
+
+322
+00:11:36,900 --> 00:11:39,290
+So in this case, we again need
+to have a UserController, but
+
+323
+00:11:39,290 --> 00:11:43,110
+notice the UserController says
+it needs VoiceSynth.
+
+324
+00:11:43,110 --> 00:11:45,250
+And below, we have a definition
+of what Voicesynth
+
+325
+00:11:45,250 --> 00:11:48,360
+might look like, which then uses
+the web audio to actually
+
+326
+00:11:48,360 --> 00:11:50,690
+speak to-- to generate
+the text, and speak
+
+327
+00:11:50,690 --> 00:11:51,800
+it through the speakers.
+
+328
+00:11:51,800 --> 00:11:55,280
+And a thing to notice over here
+is that the view says it
+
+329
+00:11:55,280 --> 00:11:56,980
+needs a UserController.
+
+330
+00:11:56,980 --> 00:11:58,720
+And the dependency injection
+system that tries to
+
+331
+00:11:58,720 --> 00:12:00,280
+instantiate the controller,
+but it notices--
+
+332
+00:12:00,280 --> 00:12:00,810
+a-ha--
+
+333
+00:12:00,810 --> 00:12:03,060
+but in order to get the
+UserController going, I need
+
+334
+00:12:03,060 --> 00:12:04,370
+to have a VoiceSynth object.
+
+335
+00:12:04,370 --> 00:12:06,830
+So then it goes one level lower
+and says, OK, let me
+
+336
+00:12:06,830 --> 00:12:08,160
+make one of the voice synth.
+
+337
+00:12:08,160 --> 00:12:11,370
+But again, it sees, well, I need
+a web audio, so it goes
+
+338
+00:12:11,370 --> 00:12:13,860
+one level further yet,
+and it tries-- it
+
+339
+00:12:13,860 --> 00:12:14,720
+instantiates web audio.
+
+340
+00:12:14,720 --> 00:12:16,280
+Hopefully, that has
+no dependencies.
+
+341
+00:12:16,280 --> 00:12:18,530
+And then it takes the web audio
+instance, puts it inside
+
+342
+00:12:18,530 --> 00:12:21,370
+of the VoiceSynth instance,
+which then is placed inside of
+
+343
+00:12:21,370 --> 00:12:22,760
+the UserController instance.
+
+344
+00:12:22,760 --> 00:12:25,305
+And the whole controller is then
+handed over to the view.
+
+345
+00:12:25,305 --> 00:12:27,380
+BRAD GREEN: But let's talk a
+little bit about how this
+
+346
+00:12:27,380 --> 00:12:27,950
+actually works.
+
+347
+00:12:27,950 --> 00:12:29,910
+Like nowhere in my
+UserController do I actually
+
+348
+00:12:29,910 --> 00:12:32,160
+directly refer to VoiceSynth?
+
+349
+00:12:32,160 --> 00:12:32,750
+MISKO HEVERY: That's right.
+
+350
+00:12:32,750 --> 00:12:35,390
+So normally, when you have a
+constructor parameter, such as
+
+351
+00:12:35,390 --> 00:12:37,110
+over here, those don't matter.
+
+352
+00:12:37,110 --> 00:12:39,490
+I mean, they're only there for
+the user-- for the developer
+
+353
+00:12:39,490 --> 00:12:40,950
+to kind of understand
+what's going on.
+
+354
+00:12:40,950 --> 00:12:44,860
+But in our case, we actually
+look at the actual text, and
+
+355
+00:12:44,860 --> 00:12:48,330
+we use the VoiceSynth key to
+match it up against the
+
+356
+00:12:48,330 --> 00:12:50,810
+VoiceSynth class so that
+we can instantiate it.
+
+357
+00:12:50,810 --> 00:12:51,910
+BRAD GREEN: Right, very cool.
+
+358
+00:12:51,910 --> 00:12:54,820
+Now this is great for
+building my app, and
+
+359
+00:12:54,820 --> 00:12:55,730
+rearranging my app.
+
+360
+00:12:55,730 --> 00:12:57,440
+If I go to refactor my
+application, this is cool.
+
+361
+00:12:57,440 --> 00:12:58,795
+But it's also great
+in testing.
+
+362
+00:12:58,795 --> 00:12:59,870
+MISKO HEVERY: That's right.
+
+363
+00:12:59,870 --> 00:13:01,640
+So let's say we wanted
+to test this thing.
+
+364
+00:13:01,640 --> 00:13:03,550
+So first of all, we probably
+don't want to instantiate the
+
+365
+00:13:03,550 --> 00:13:04,980
+whole HTML5 DOM.
+
+366
+00:13:04,980 --> 00:13:05,690
+That's expensive.
+
+367
+00:13:05,690 --> 00:13:08,840
+So we'll start a layer lower,
+and we're going to say, well,
+
+368
+00:13:08,840 --> 00:13:10,930
+that's just instantiated
+UserController.
+
+369
+00:13:10,930 --> 00:13:12,180
+But tests don't hear.
+
+370
+00:13:12,180 --> 00:13:13,060
+They don't have ears.
+
+371
+00:13:13,060 --> 00:13:14,490
+BRAD GREEN: They hear
+very poorly.
+
+372
+00:13:14,490 --> 00:13:15,860
+MISKO HEVERY: Yes.
+
+373
+00:13:15,860 --> 00:13:19,830
+And so we would really like to
+do is replace the VoiceSynth--
+
+374
+00:13:19,830 --> 00:13:21,270
+the actual voice synthesizer--
+
+375
+00:13:21,270 --> 00:13:22,740
+with a VoiceSynthMock.
+
+376
+00:13:22,740 --> 00:13:24,490
+And so what we're really
+trying to tell to the
+
+377
+00:13:24,490 --> 00:13:26,570
+dependency injection system is
+that we're going to change the
+
+378
+00:13:26,570 --> 00:13:30,090
+recipe by which you build the
+application slightly so that
+
+379
+00:13:30,090 --> 00:13:33,140
+we can get a subset of the
+application going configured
+
+380
+00:13:33,140 --> 00:13:34,440
+in a slightly different way.
+
+381
+00:13:34,440 --> 00:13:36,670
+And once we get the subset,
+it's very easy to apply
+
+382
+00:13:36,670 --> 00:13:39,650
+stimulus to it, and assert that
+the right methods get
+
+383
+00:13:39,650 --> 00:13:41,160
+called on a VoiceSynth.
+
+384
+00:13:41,160 --> 00:13:41,301
+BRAD GREEN: Right.
+
+385
+00:13:41,301 --> 00:13:43,330
+OK, let's take minute and step
+back, and talk about what do
+
+386
+00:13:43,330 --> 00:13:44,740
+we got so far.
+
+387
+00:13:44,740 --> 00:13:46,670
+MISKO HEVERY: So we have this
+imperative world, and we have
+
+388
+00:13:46,670 --> 00:13:49,330
+this declarative world,
+imperative world being, let's
+
+389
+00:13:49,330 --> 00:13:51,910
+say I wanted to center
+something.
+
+390
+00:13:51,910 --> 00:13:54,400
+In imperative world, you have
+to compute the width of the
+
+391
+00:13:54,400 --> 00:13:57,090
+page, the width of the thing you
+want to center, divide it
+
+392
+00:13:57,090 --> 00:13:59,390
+by half to get the midpoint,
+align the midpoints, and then
+
+393
+00:13:59,390 --> 00:14:01,080
+render the text that you want.
+
+394
+00:14:01,080 --> 00:14:04,870
+The trouble with this way of
+doing it is when somebody else
+
+395
+00:14:04,870 --> 00:14:07,470
+comes afterwards and looks at
+the code, and they're going to
+
+396
+00:14:07,470 --> 00:14:08,600
+have to reverse-engineer.
+
+397
+00:14:08,600 --> 00:14:11,330
+What is the side effect
+of this piece of code?
+
+398
+00:14:11,330 --> 00:14:14,420
+Declarative is, on the other
+hand, if you simply say I want
+
+399
+00:14:14,420 --> 00:14:16,990
+to center to this thing, and
+it doesn't matter where the
+
+400
+00:14:16,990 --> 00:14:17,840
+implementation is.
+
+401
+00:14:17,840 --> 00:14:20,470
+And actually, the concept of
+centering might actually be
+
+402
+00:14:20,470 --> 00:14:21,970
+implemented slightly differently
+in different
+
+403
+00:14:21,970 --> 00:14:25,890
+browsers, as long as the end
+result is the same thing.
+
+404
+00:14:25,890 --> 00:14:29,110
+And so, up to now, usually when
+you have a framework, the
+
+405
+00:14:29,110 --> 00:14:31,550
+developers really are just, hand
+it over, and say, you get
+
+406
+00:14:31,550 --> 00:14:34,150
+to use this imperative thing--
+this is you, you can play with
+
+407
+00:14:34,150 --> 00:14:35,410
+it any way you want.
+
+408
+00:14:35,410 --> 00:14:38,350
+But the declarative thing, well,
+we'll have the framework
+
+409
+00:14:38,350 --> 00:14:41,440
+give you some vocabulary for
+the declarative stuff, but
+
+410
+00:14:41,440 --> 00:14:43,410
+it's essentially fixed.
+
+411
+00:14:43,410 --> 00:14:45,880
+So we thought, wouldn't it be
+great if we could take this
+
+412
+00:14:45,880 --> 00:14:47,460
+vocabulary and extend it.
+
+413
+00:14:47,460 --> 00:14:52,030
+And this was our a-ha moment,
+and saying, hm, why are we in
+
+414
+00:14:52,030 --> 00:14:54,180
+some way special that we can
+create vocabulary, but the
+
+415
+00:14:54,180 --> 00:14:54,890
+developer can't?
+
+416
+00:14:54,890 --> 00:14:58,380
+What if we gave the same tools
+to the developer, as well?
+
+417
+00:14:58,380 --> 00:15:02,060
+And so we have a change in
+Angular in that the developer
+
+418
+00:15:02,060 --> 00:15:04,880
+gets to use the imperative or
+gets to use the declarative
+
+419
+00:15:04,880 --> 00:15:08,820
+world, depending on what they
+feel like is the best way to
+
+420
+00:15:08,820 --> 00:15:10,480
+solve this particular problem.
+
+421
+00:15:10,480 --> 00:15:10,780
+BRAD GREEN: That's right.
+
+422
+00:15:10,780 --> 00:15:11,925
+Let's take a look at
+some examples.
+
+423
+00:15:11,925 --> 00:15:14,990
+So we've seen how directives can
+be used to express the way
+
+424
+00:15:14,990 --> 00:15:17,380
+we wire our application together
+with ng-model and
+
+425
+00:15:17,380 --> 00:15:20,970
+ng-controller, and the way we
+change the structure of the
+
+426
+00:15:20,970 --> 00:15:23,035
+DOM with ng-show, as we saw.
+
+427
+00:15:23,035 --> 00:15:26,030
+But you can also use it to
+create reusable components.
+
+428
+00:15:26,030 --> 00:15:29,700
+For example, if I wanted maybe
+a star rating component, I
+
+429
+00:15:29,700 --> 00:15:31,910
+could, after implementing it,
+then just use it in my
+
+430
+00:15:31,910 --> 00:15:33,990
+template by saying,
+angle-bracket-rating, and then
+
+431
+00:15:33,990 --> 00:15:38,600
+pass the data to it that it
+needs through its attributes.
+
+432
+00:15:38,600 --> 00:15:41,290
+You can create more complex
+things where you've got
+
+433
+00:15:41,290 --> 00:15:44,880
+nested, or components that
+need to collaborate.
+
+434
+00:15:44,880 --> 00:15:48,190
+For example, a set of tabs
+will have the information
+
+435
+00:15:48,190 --> 00:15:49,870
+about which one is highlighted,
+and which one
+
+436
+00:15:49,870 --> 00:15:51,460
+should I paint with
+a box around it.
+
+437
+00:15:51,460 --> 00:15:54,340
+And then the individual tabs
+inside will contain the title
+
+438
+00:15:54,340 --> 00:15:55,970
+and the content.
+
+439
+00:15:55,970 --> 00:15:58,940
+You could also do it not just
+by element name, but also by
+
+440
+00:15:58,940 --> 00:15:59,680
+attribute name.
+
+441
+00:15:59,680 --> 00:16:01,660
+And so you can create things
+like a tool tip, where you
+
+442
+00:16:01,660 --> 00:16:04,310
+could place it on a span or on
+a tab or in a rating, or
+
+443
+00:16:04,310 --> 00:16:06,340
+anything else in the UI.
+
+444
+00:16:06,340 --> 00:16:09,060
+OK, we've covered kind of
+the basics in Angular.
+
+445
+00:16:09,060 --> 00:16:13,990
+And now let's take it back to
+the way we were kind of
+
+446
+00:16:13,990 --> 00:16:17,370
+creating apps before we wrote
+the Angular framework.
+
+447
+00:16:17,370 --> 00:16:19,460
+We weren't using jQuery, but
+we're going to use jQuery here
+
+448
+00:16:19,460 --> 00:16:21,090
+because we feel like a
+lot of folks know it.
+
+449
+00:16:21,090 --> 00:16:22,300
+We've got a simple
+application.
+
+450
+00:16:22,300 --> 00:16:23,790
+Misko's going to show us.
+
+451
+00:16:23,790 --> 00:16:25,250
+MISKO HEVERY: It says you're
+going to tap dance, but you
+
+452
+00:16:25,250 --> 00:16:25,910
+got no shoes.
+
+453
+00:16:25,910 --> 00:16:27,180
+BRAD GREEN: I took them
+off because I knew
+
+454
+00:16:27,180 --> 00:16:29,730
+that line was in there.
+
+455
+00:16:29,730 --> 00:16:31,970
+And then we're going to rewrite
+the application in
+
+456
+00:16:31,970 --> 00:16:34,100
+Angular, and show some
+of the differences.
+
+457
+00:16:34,100 --> 00:16:36,000
+MISKO HEVERY: So here's a
+very simple application.
+
+458
+00:16:36,000 --> 00:16:39,170
+All it really does is it shows
+you a list of projects.
+
+459
+00:16:39,170 --> 00:16:41,690
+And what you can do is you can
+add, and it brings you to the
+
+460
+00:16:41,690 --> 00:16:42,600
+detailed view.
+
+461
+00:16:42,600 --> 00:16:44,580
+Notice when I click the Add,
+it's a single-page
+
+462
+00:16:44,580 --> 00:16:46,730
+application, the URL didn't
+actually change.
+
+463
+00:16:46,730 --> 00:16:47,840
+It's the same URL.
+
+464
+00:16:47,840 --> 00:16:51,350
+I can say something over here,
+hit Save, and now I have my
+
+465
+00:16:51,350 --> 00:16:53,180
+new item inside of the list.
+
+466
+00:16:53,180 --> 00:16:55,970
+I can further click on
+it, and delete it.
+
+467
+00:16:55,970 --> 00:16:58,070
+BRAD GREEN: I should mention,
+there is a very simple RESTful
+
+468
+00:16:58,070 --> 00:17:01,700
+server running a node on the
+backend here that we used to
+
+469
+00:17:01,700 --> 00:17:03,360
+persist the project.
+
+470
+00:17:03,360 --> 00:17:04,069
+MISKO HEVERY: So really,
+it's just an
+
+471
+00:17:04,069 --> 00:17:05,839
+application with two views--
+
+472
+00:17:05,839 --> 00:17:06,650
+very simple.
+
+473
+00:17:06,650 --> 00:17:09,250
+And what's strange about this
+thing is that it takes me two
+
+474
+00:17:09,250 --> 00:17:12,390
+sentences to explain what it
+does, yet it takes me about
+
+475
+00:17:12,390 --> 00:17:15,720
+200 lines of both HTML and
+JavaScript to actually
+
+476
+00:17:15,720 --> 00:17:16,839
+implement this.
+
+477
+00:17:16,839 --> 00:17:19,599
+And so there's a little bit of
+a disconnect over there.
+
+478
+00:17:19,599 --> 00:17:20,520
+So what does this look like?
+
+479
+00:17:20,520 --> 00:17:22,609
+Well, so this is a
+list of projects.
+
+480
+00:17:22,609 --> 00:17:26,329
+And in this case, we have a
+template, which is a table.
+
+481
+00:17:26,329 --> 00:17:28,920
+And inside of the table head,
+we have this plus on the
+
+482
+00:17:28,920 --> 00:17:30,000
+right-hand side.
+
+483
+00:17:30,000 --> 00:17:31,640
+And notice what we
+have to do here.
+
+484
+00:17:31,640 --> 00:17:34,140
+We have to say, well, there's a
+link-- so that it looks like
+
+485
+00:17:34,140 --> 00:17:36,800
+a link-- but actually, it
+actually goes nowhere.
+
+486
+00:17:36,800 --> 00:17:39,280
+Inside of JavaScript later on,
+I'll show you, you basically
+
+487
+00:17:39,280 --> 00:17:42,910
+have to set up a click listener,
+and we have to
+
+488
+00:17:42,910 --> 00:17:44,880
+prevent the default behavior of
+the browser-- which is to
+
+489
+00:17:44,880 --> 00:17:46,470
+navigate to a link--
+
+490
+00:17:46,470 --> 00:17:48,790
+and actually just modify
+the DOM to
+
+491
+00:17:48,790 --> 00:17:50,690
+render the details page.
+
+492
+00:17:50,690 --> 00:17:54,150
+And this kind of breaks the
+paradigm of what a web
+
+493
+00:17:54,150 --> 00:17:56,240
+application is supposed to be.
+
+494
+00:17:56,240 --> 00:17:58,960
+And so we'll show you how
+Angular can make better usage
+
+495
+00:17:58,960 --> 00:17:59,910
+of this thing.
+
+496
+00:17:59,910 --> 00:18:03,180
+The other thing is that in the
+table row, the same kind of a
+
+497
+00:18:03,180 --> 00:18:06,130
+click has to happen, but there's
+no-- it isn't clear
+
+498
+00:18:06,130 --> 00:18:07,950
+what the text goes
+inside of here.
+
+499
+00:18:07,950 --> 00:18:10,870
+And so we actually have to get
+a hold of this thing from the
+
+500
+00:18:10,870 --> 00:18:12,710
+JavaScript side, as well.
+
+501
+00:18:12,710 --> 00:18:15,350
+We do something similar for the
+form for the details view.
+
+502
+00:18:15,350 --> 00:18:17,480
+So let's have a look at how
+is this implemented in
+
+503
+00:18:17,480 --> 00:18:18,580
+JavaScript.
+
+504
+00:18:18,580 --> 00:18:20,390
+So the first thing you're
+going to notice is that
+
+505
+00:18:20,390 --> 00:18:23,500
+there's a tremendous number of
+selectors that have to get
+
+506
+00:18:23,500 --> 00:18:25,620
+executed in order to get
+a hold of the right
+
+507
+00:18:25,620 --> 00:18:26,860
+pieces of the DOM.
+
+508
+00:18:26,860 --> 00:18:29,310
+And what the selectors
+essentially end up doing is
+
+509
+00:18:29,310 --> 00:18:32,110
+they are essentially creating
+the arrow going in the
+
+510
+00:18:32,110 --> 00:18:35,350
+opposite direction from the code
+to the view that creates
+
+511
+00:18:35,350 --> 00:18:38,050
+coupling, and it makes it
+difficult for a web designer
+
+512
+00:18:38,050 --> 00:18:40,910
+to come in and move things
+around, and number break the
+
+513
+00:18:40,910 --> 00:18:42,660
+CSS selectors that
+select them.
+
+514
+00:18:42,660 --> 00:18:44,610
+BRAD GREEN: Even if we're using
+IDs, it's still fragile.
+
+515
+00:18:44,610 --> 00:18:47,000
+It's still something that you
+have to be careful about when
+
+516
+00:18:47,000 --> 00:18:47,960
+you move things around.
+
+517
+00:18:47,960 --> 00:18:48,770
+MISKO HEVERY: That's right.
+
+518
+00:18:48,770 --> 00:18:52,540
+And so this basically shows you
+how we rendered the page
+
+519
+00:18:52,540 --> 00:18:54,110
+on the right-hand side.
+
+520
+00:18:54,110 --> 00:18:55,250
+So we had this show method--
+
+521
+00:18:55,250 --> 00:18:56,950
+what it does is, well, it has
+to assume that there might
+
+522
+00:18:56,950 --> 00:18:59,360
+have been a different page
+before, so it has to remove
+
+523
+00:18:59,360 --> 00:19:00,880
+the existing content.
+
+524
+00:19:00,880 --> 00:19:03,280
+It has to add its
+template to it.
+
+525
+00:19:03,280 --> 00:19:06,400
+It has to remove any existing
+projects that happened to be
+
+526
+00:19:06,400 --> 00:19:08,310
+inside of the template before.
+
+527
+00:19:08,310 --> 00:19:10,650
+And it has to set up this click
+listener, which I talked
+
+528
+00:19:10,650 --> 00:19:13,820
+to you-- mentioned briefly
+before, which does the
+
+529
+00:19:13,820 --> 00:19:16,690
+navigation for one
+page to another.
+
+530
+00:19:16,690 --> 00:19:19,080
+We then go and do an
+Ajax to the server.
+
+531
+00:19:19,080 --> 00:19:22,900
+And for each project, we
+basically do clone of the
+
+532
+00:19:22,900 --> 00:19:26,690
+table row, write the data into
+the right locations.
+
+533
+00:19:26,690 --> 00:19:29,140
+And again, we have to set up
+a click listener which
+
+534
+00:19:29,140 --> 00:19:32,372
+transitions us from the
+detail to the--
+
+535
+00:19:32,372 --> 00:19:35,140
+I'm sorry, from the list view
+to the detail view.
+
+536
+00:19:35,140 --> 00:19:39,380
+And so, what's lost in the
+process over here is it's not
+
+537
+00:19:39,380 --> 00:19:41,110
+clear what this thing
+actually does.
+
+538
+00:19:41,110 --> 00:19:44,460
+There's tons of DOM
+manipulation, and the actual
+
+539
+00:19:44,460 --> 00:19:46,250
+business logic of
+this particulate
+
+540
+00:19:46,250 --> 00:19:49,710
+page is lost in here.
+
+541
+00:19:49,710 --> 00:19:50,040
+BRAD GREEN: Right.
+
+542
+00:19:50,040 --> 00:19:51,340
+So let's fast forward,
+and let's
+
+543
+00:19:51,340 --> 00:19:52,315
+reimplement it in Angular.
+
+544
+00:19:52,315 --> 00:19:54,120
+Let's see how it's different.
+
+545
+00:19:54,120 --> 00:19:57,340
+
+546
+00:19:57,340 --> 00:19:58,680
+MISKO HEVERY: So let's look
+at the template again.
+
+547
+00:19:58,680 --> 00:20:00,530
+What we have done is we have
+removed the templates from
+
+548
+00:20:00,530 --> 00:20:03,700
+index.html and replaced them
+with something called a view.
+
+549
+00:20:03,700 --> 00:20:07,160
+So this is essentially a hole
+into which individual pages
+
+550
+00:20:07,160 --> 00:20:08,180
+will be loaded.
+
+551
+00:20:08,180 --> 00:20:11,350
+And the actual pages get moved
+into a separate file.
+
+552
+00:20:11,350 --> 00:20:13,690
+BRAD GREEN: Now this template,
+the top of the template right
+
+553
+00:20:13,690 --> 00:20:15,770
+now-- if this was a more complex
+application, this is
+
+554
+00:20:15,770 --> 00:20:18,890
+where we would put maybe are top
+nav, or our left-hand nav.
+
+555
+00:20:18,890 --> 00:20:19,690
+But here it's simple.
+
+556
+00:20:19,690 --> 00:20:22,160
+We just have one view that
+we swap in and out.
+
+557
+00:20:22,160 --> 00:20:22,850
+MISKO HEVERY: Exactly.
+
+558
+00:20:22,850 --> 00:20:25,600
+Now notice, instead of
+registering a click listener
+
+559
+00:20:25,600 --> 00:20:30,480
+for this href, we let the href
+do what the web does best,
+
+560
+00:20:30,480 --> 00:20:31,550
+which is create links.
+
+561
+00:20:31,550 --> 00:20:34,440
+So this case, we're saying,
+look, there is a sub-view of
+
+562
+00:20:34,440 --> 00:20:37,730
+this particular page, which is
+the slash project with no ID.
+
+563
+00:20:37,730 --> 00:20:39,330
+And this is what's
+tied to the URL.
+
+564
+00:20:39,330 --> 00:20:42,690
+So now if I reload this
+application, and I click on
+
+565
+00:20:42,690 --> 00:20:45,160
+the plus, notice that
+the URL has changed.
+
+566
+00:20:45,160 --> 00:20:48,200
+Now a nice side effect of this
+is all of a sudden, our back
+
+567
+00:20:48,200 --> 00:20:50,990
+and forth button just work
+without really any effort
+
+568
+00:20:50,990 --> 00:20:51,680
+whatsoever.
+
+569
+00:20:51,680 --> 00:20:53,300
+BRAD GREEN: Now, we could have
+done that in the jQuery
+
+570
+00:20:53,300 --> 00:20:53,890
+reversion--
+
+571
+00:20:53,890 --> 00:20:54,500
+just a lot more work.
+
+572
+00:20:54,500 --> 00:20:55,340
+MISKO HEVERY: We could have
+done it, and it would
+
+573
+00:20:55,340 --> 00:20:56,140
+be a lot more work.
+
+574
+00:20:56,140 --> 00:20:59,130
+But this is a model that people
+are very familiar with,
+
+575
+00:20:59,130 --> 00:21:00,940
+that developers are familiar
+with, because it's the kind of
+
+576
+00:21:00,940 --> 00:21:04,080
+round-trip application model,
+except the round-trip, it all
+
+577
+00:21:04,080 --> 00:21:05,470
+happens in the browser.
+
+578
+00:21:05,470 --> 00:21:06,810
+There's no actual
+round-tripping.
+
+579
+00:21:06,810 --> 00:21:11,860
+This is still a single-page
+application that we have here.
+
+580
+00:21:11,860 --> 00:21:14,600
+So the next thing to notice is
+that, instead of manually
+
+581
+00:21:14,600 --> 00:21:17,280
+making clones on the table
+row, we have this other
+
+582
+00:21:17,280 --> 00:21:20,130
+directive called an ng-repeat,
+which basically says for each
+
+583
+00:21:20,130 --> 00:21:22,550
+project in the list
+of projects--
+
+584
+00:21:22,550 --> 00:21:23,680
+and I'll explain where
+the list of
+
+585
+00:21:23,680 --> 00:21:25,170
+projects comes in a second--
+
+586
+00:21:25,170 --> 00:21:27,720
+we just want to have a copy of
+the TR, and this does the
+
+587
+00:21:27,720 --> 00:21:32,170
+copying and cloning and managing
+it automatically.
+
+588
+00:21:32,170 --> 00:21:35,870
+The next thing is that all of
+the double curlies shown over
+
+589
+00:21:35,870 --> 00:21:38,790
+here naturally show us where
+things belong, so we don't
+
+590
+00:21:38,790 --> 00:21:41,480
+have to have selectors
+to place them there.
+
+591
+00:21:41,480 --> 00:21:45,140
+And finally, again, we have an
+example of deep-linking where,
+
+592
+00:21:45,140 --> 00:21:48,080
+if you want to click on an Edit
+button, it just means
+
+593
+00:21:48,080 --> 00:21:51,910
+that we want to update the URL
+with a specific ID in the URL
+
+594
+00:21:51,910 --> 00:21:53,390
+that becomes bookmarkable.
+
+595
+00:21:53,390 --> 00:21:55,800
+And again, all the magic
+of bookmarks happens
+
+596
+00:21:55,800 --> 00:21:57,820
+automatically for us.
+
+597
+00:21:57,820 --> 00:22:01,210
+So let's look at how this
+changes inside of the
+
+598
+00:22:01,210 --> 00:22:02,440
+JavaScript.
+
+599
+00:22:02,440 --> 00:22:05,530
+And this is the goal that we
+were more after, which was, if
+
+600
+00:22:05,530 --> 00:22:07,520
+you want to explain to somebody
+what this particular
+
+601
+00:22:07,520 --> 00:22:09,700
+page does, it's just as
+simple as saying, give
+
+602
+00:22:09,700 --> 00:22:10,740
+me a list of projects.
+
+603
+00:22:10,740 --> 00:22:11,760
+It's a single sentence.
+
+604
+00:22:11,760 --> 00:22:13,640
+And I want this to be a single
+statement inside
+
+605
+00:22:13,640 --> 00:22:15,000
+of my code, as well.
+
+606
+00:22:15,000 --> 00:22:16,770
+So in this case, we're saying
+we have a project list
+
+607
+00:22:16,770 --> 00:22:18,840
+controller that is a single
+item in there.
+
+608
+00:22:18,840 --> 00:22:21,500
+So how did we know to load this
+particular controller?
+
+609
+00:22:21,500 --> 00:22:23,170
+Well, if we look over
+here, this is
+
+610
+00:22:23,170 --> 00:22:24,020
+where we set up routes.
+
+611
+00:22:24,020 --> 00:22:26,530
+We're saying we're emulating
+kind of a round-trip
+
+612
+00:22:26,530 --> 00:22:28,040
+application, but
+in the browser.
+
+613
+00:22:28,040 --> 00:22:30,670
+So we have to say that
+when the URL--
+
+614
+00:22:30,670 --> 00:22:32,030
+which is shown right here--
+
+615
+00:22:32,030 --> 00:22:35,230
+is a regular slash, we activate
+the project list
+
+616
+00:22:35,230 --> 00:22:37,880
+controller and the project
+list template.
+
+617
+00:22:37,880 --> 00:22:40,380
+And so the project list
+controller simply says, go to
+
+618
+00:22:40,380 --> 00:22:43,080
+the database, and fetch
+me a project query.
+
+619
+00:22:43,080 --> 00:22:43,720
+BRAD GREEN: OK, so
+there's something
+
+620
+00:22:43,720 --> 00:22:44,660
+interesting going on here.
+
+621
+00:22:44,660 --> 00:22:46,090
+We should explain.
+
+622
+00:22:46,090 --> 00:22:48,230
+When we query, we're actually
+connecting to the database,
+
+623
+00:22:48,230 --> 00:22:49,690
+but you'll notice, there's
+no call-backs there.
+
+624
+00:22:49,690 --> 00:22:51,390
+What's really going on, Miska?
+
+625
+00:22:51,390 --> 00:22:52,980
+MISKO HEVERY: So this is a place
+where we get to take
+
+626
+00:22:52,980 --> 00:22:55,900
+advantage of data-binding
+in a very unique way.
+
+627
+00:22:55,900 --> 00:22:58,240
+So project.query query does
+essentially an XHR in the
+
+628
+00:22:58,240 --> 00:22:59,510
+background.
+
+629
+00:22:59,510 --> 00:23:02,350
+And the way it does this is that
+it returns immediately,
+
+630
+00:23:02,350 --> 00:23:05,160
+but it returns an empty set,
+because the server will
+
+631
+00:23:05,160 --> 00:23:07,450
+respond in some future
+point in time with
+
+632
+00:23:07,450 --> 00:23:08,900
+the actual data set.
+
+633
+00:23:08,900 --> 00:23:10,650
+And it takes that ng-array,
+and just
+
+634
+00:23:10,650 --> 00:23:11,880
+assigns it to the project.
+
+635
+00:23:11,880 --> 00:23:15,100
+So when the ng-repeat gets
+notified to say, hey, I have a
+
+636
+00:23:15,100 --> 00:23:20,050
+new data for you inside of the
+projects, it simply says, oh,
+
+637
+00:23:20,050 --> 00:23:22,710
+there's nothing there, and
+therefore it renders nothing.
+
+638
+00:23:22,710 --> 00:23:25,370
+But at some future point in
+time, the data actually does
+
+639
+00:23:25,370 --> 00:23:28,290
+show up, and updates the same
+instance of the array, which
+
+640
+00:23:28,290 --> 00:23:32,450
+then automatically causes the
+ng-repeat to unroll itself and
+
+641
+00:23:32,450 --> 00:23:34,470
+make as many copies of the
+project as you have.
+
+642
+00:23:34,470 --> 00:23:37,040
+So in the simple situation where
+all you need is to fetch
+
+643
+00:23:37,040 --> 00:23:39,980
+some data and render it, we can
+actually bypass the whole
+
+644
+00:23:39,980 --> 00:23:42,380
+need to have a call back.
+
+645
+00:23:42,380 --> 00:23:44,600
+Now the second thing is, where
+did the project come from?
+
+646
+00:23:44,600 --> 00:23:46,520
+This is where dependency
+injection comes in, and this
+
+647
+00:23:46,520 --> 00:23:48,760
+is how the application actually
+gets assembled, which
+
+648
+00:23:48,760 --> 00:23:50,460
+we kind of mentioned
+that earlier.
+
+649
+00:23:50,460 --> 00:23:54,840
+So right above here, it says a
+project can be made by using
+
+650
+00:23:54,840 --> 00:23:56,250
+something called a resource.
+
+651
+00:23:56,250 --> 00:23:59,960
+A resource is just a service in
+Angular that we can use to
+
+652
+00:23:59,960 --> 00:24:04,160
+build JavaScript types for the
+RESTful backend services.
+
+653
+00:24:04,160 --> 00:24:07,980
+So we're just saying, this is
+going to be a standard RESTful
+
+654
+00:24:07,980 --> 00:24:11,010
+object, which we can just
+use query on to
+
+655
+00:24:11,010 --> 00:24:13,120
+fetch the data set.
+
+656
+00:24:13,120 --> 00:24:16,310
+And again, notice that the
+application gets automatically
+
+657
+00:24:16,310 --> 00:24:17,340
+assembled for us.
+
+658
+00:24:17,340 --> 00:24:20,290
+So just simply by navigating
+to the right URL causes the
+
+659
+00:24:20,290 --> 00:24:22,710
+right route to be activated,
+which then activates the right
+
+660
+00:24:22,710 --> 00:24:26,510
+controller, which then knows to
+go and make a new project,
+
+661
+00:24:26,510 --> 00:24:29,430
+which then knows to build the
+project using the resource.
+
+662
+00:24:29,430 --> 00:24:31,670
+And the whole application gets
+assembled without us ever
+
+663
+00:24:31,670 --> 00:24:34,020
+having to do any
+of this stuff.
+
+664
+00:24:34,020 --> 00:24:36,100
+Similarly, inside of the
+project [? details ?]
+
+665
+00:24:36,100 --> 00:24:39,630
+controller, we can simply say,
+show me an existing project or
+
+666
+00:24:39,630 --> 00:24:42,280
+a new project, depending on
+whether we have an ID or not.
+
+667
+00:24:42,280 --> 00:24:43,430
+BRAD GREEN: So how many lines
+of code do we have?
+
+668
+00:24:43,430 --> 00:24:45,720
+MISKO HEVERY: So we are about
+40 lines of code.
+
+669
+00:24:45,720 --> 00:24:48,210
+And we actually added a new
+behavior, because we have
+
+670
+00:24:48,210 --> 00:24:49,630
+deep-linking available for us.
+
+671
+00:24:49,630 --> 00:24:50,780
+BRAD GREEN: OK, that's
+very cool.
+
+672
+00:24:50,780 --> 00:24:53,460
+As your manager, however, I need
+to ask you to add more
+
+673
+00:24:53,460 --> 00:24:54,730
+features to this application.
+
+674
+00:24:54,730 --> 00:24:55,082
+MISKO HEVERY: More features?
+
+675
+00:24:55,082 --> 00:24:55,170
+OK
+
+676
+00:24:55,170 --> 00:24:56,760
+BRAD GREEN: Miska, could you
+please add more features?
+
+677
+00:24:56,760 --> 00:24:58,020
+MISKO HEVERY: What feature
+would you like to add?
+
+678
+00:24:58,020 --> 00:24:58,730
+BRAD GREEN: OK, well, thanks.
+
+679
+00:24:58,730 --> 00:25:00,770
+So this is a list
+of projects--
+
+680
+00:25:00,770 --> 00:25:02,030
+probably frameworks.
+
+681
+00:25:02,030 --> 00:25:04,000
+People like to write frameworks,
+as we know.
+
+682
+00:25:04,000 --> 00:25:04,850
+It could get long.
+
+683
+00:25:04,850 --> 00:25:07,980
+How about add the ability to
+filter how many frameworks are
+
+684
+00:25:07,980 --> 00:25:10,040
+there if I want to search
+for the one I want.
+
+685
+00:25:10,040 --> 00:25:11,330
+MISKO HEVERY: So the first thing
+you need to add is an
+
+686
+00:25:11,330 --> 00:25:12,910
+input box, right?
+
+687
+00:25:12,910 --> 00:25:15,360
+So if I refresh now, I
+have an input box.
+
+688
+00:25:15,360 --> 00:25:19,230
+And if I type into it, this text
+actually ends up in the
+
+689
+00:25:19,230 --> 00:25:22,310
+memory location called
+search text.
+
+690
+00:25:22,310 --> 00:25:24,320
+Now we need to do something
+with this particular case.
+
+691
+00:25:24,320 --> 00:25:26,200
+Now one of things we have-- and
+I'm sure you're familiar
+
+692
+00:25:26,200 --> 00:25:29,140
+with in UNIX-- is the concept of
+filters, which we have, as
+
+693
+00:25:29,140 --> 00:25:31,210
+well as using a simple
+pipe-character.
+
+694
+00:25:31,210 --> 00:25:33,710
+And we can run it through kind
+of a special [? mini-ask ?]
+
+695
+00:25:33,710 --> 00:25:34,640
+functions.
+
+696
+00:25:34,640 --> 00:25:36,310
+In this case, there's a function
+called filter--
+
+697
+00:25:36,310 --> 00:25:37,660
+I know the naming is
+a bit confusing.
+
+698
+00:25:37,660 --> 00:25:39,010
+BRAD GREEN: I see, yeah.
+
+699
+00:25:39,010 --> 00:25:40,560
+MISKO HEVERY: But what a filter
+does it just looks
+
+700
+00:25:40,560 --> 00:25:43,980
+through the list of objects in
+an array, and sees if any of
+
+701
+00:25:43,980 --> 00:25:47,300
+the objects happen to have a
+text inside of it that matches
+
+702
+00:25:47,300 --> 00:25:50,050
+the search text criteria inside
+of the input box.
+
+703
+00:25:50,050 --> 00:25:53,360
+So now if I refresh this, you
+will see that as I type the
+
+704
+00:25:53,360 --> 00:25:57,170
+word "web," it will show only
+those projects that actually
+
+705
+00:25:57,170 --> 00:26:00,510
+have the word "web"
+inside of them.
+
+706
+00:26:00,510 --> 00:26:02,650
+Notice how the repeater
+automatically grows and
+
+707
+00:26:02,650 --> 00:26:05,230
+shrinks as the filtering
+changes.
+
+708
+00:26:05,230 --> 00:26:06,490
+BRAD GREEN: OK, very cool.
+
+709
+00:26:06,490 --> 00:26:10,485
+However, modern applications use
+animation to show me-- to
+
+710
+00:26:10,485 --> 00:26:11,810
+give me a more intuitive
+sense of what's going.
+
+711
+00:26:11,810 --> 00:26:13,980
+Could you maybe animate
+the items in the
+
+712
+00:26:13,980 --> 00:26:15,040
+list in and out as--
+
+713
+00:26:15,040 --> 00:26:16,430
+MISKO HEVERY: Do you understand
+how complicated
+
+714
+00:26:16,430 --> 00:26:16,910
+animations are?
+
+715
+00:26:16,910 --> 00:26:17,280
+BRAD GREEN: I don't.
+
+716
+00:26:17,280 --> 00:26:18,350
+I'm a manager.
+
+717
+00:26:18,350 --> 00:26:20,488
+MISKO HEVERY: I see.
+
+718
+00:26:20,488 --> 00:26:23,470
+[APPLAUSE]
+
+719
+00:26:23,470 --> 00:26:24,190
+So animations--
+
+720
+00:26:24,190 --> 00:26:26,570
+as you guys all know, I'm sure--
+are complex things,
+
+721
+00:26:26,570 --> 00:26:29,500
+because you have to add things
+to the DOM before they
+
+722
+00:26:29,500 --> 00:26:31,690
+actually come on to stage, then
+you have to transition
+
+723
+00:26:31,690 --> 00:26:36,050
+them to keep track of timers,
+remove things, and so on.
+
+724
+00:26:36,050 --> 00:26:38,450
+And this is where the power of
+the declarative world really
+
+725
+00:26:38,450 --> 00:26:38,940
+comes from.
+
+726
+00:26:38,940 --> 00:26:41,970
+Because really, what I want to
+express to when I'm building
+
+727
+00:26:41,970 --> 00:26:45,340
+the application is there is
+something called animation.
+
+728
+00:26:45,340 --> 00:26:48,350
+And I want to animate this thing
+using a slide animation.
+
+729
+00:26:48,350 --> 00:26:50,560
+A slide animation is just
+something I've declared inside
+
+730
+00:26:50,560 --> 00:26:54,580
+of my CSS, as this is the set
+of transitions we want to
+
+731
+00:26:54,580 --> 00:26:56,730
+apply to the system.
+
+732
+00:26:56,730 --> 00:27:00,040
+But actually managing the
+DOM's add and removing,
+
+733
+00:27:00,040 --> 00:27:02,520
+setting the classes at the right
+time is actually managed
+
+734
+00:27:02,520 --> 00:27:05,050
+by this ng-animate directive.
+
+735
+00:27:05,050 --> 00:27:06,480
+So let's refresh this.
+
+736
+00:27:06,480 --> 00:27:12,470
+And notice, as I type "web" now,
+it removes and adds item
+
+737
+00:27:12,470 --> 00:27:15,715
+in the correct way with just
+a couple of keystrokes.
+
+738
+00:27:15,715 --> 00:27:21,540
+[APPLAUSE]
+
+739
+00:27:21,540 --> 00:27:22,080
+BRAD GREEN: Sassy.
+
+740
+00:27:22,080 --> 00:27:23,060
+Very sassy.
+
+741
+00:27:23,060 --> 00:27:26,150
+All right, so we're kind of at
+the end of our coding portion.
+
+742
+00:27:26,150 --> 00:27:29,790
+Miska has, however, added some
+other interesting features
+
+743
+00:27:29,790 --> 00:27:31,450
+also in sort of a
+declarative way.
+
+744
+00:27:31,450 --> 00:27:32,320
+But we'll just demo them.
+
+745
+00:27:32,320 --> 00:27:34,240
+You can go to the GitHub
+repository.
+
+746
+00:27:34,240 --> 00:27:36,390
+We'll give you a link at
+the end of the session.
+
+747
+00:27:36,390 --> 00:27:39,130
+But you can also do things like
+animate between views.
+
+748
+00:27:39,130 --> 00:27:40,830
+So if I was on a mobile device,
+I would want to be
+
+749
+00:27:40,830 --> 00:27:42,700
+able to slide back and forth.
+
+750
+00:27:42,700 --> 00:27:46,140
+We've also done form validation,
+so you can have
+
+751
+00:27:46,140 --> 00:27:48,850
+things that are required, or
+that are not really required
+
+752
+00:27:48,850 --> 00:27:50,860
+but they have to be in a
+specific reg-x format, like
+
+753
+00:27:50,860 --> 00:27:53,150
+something must be a URL.
+
+754
+00:27:53,150 --> 00:27:55,440
+And these things, as I
+mentioned, we can add in also
+
+755
+00:27:55,440 --> 00:27:56,430
+a purely declarative way.
+
+756
+00:27:56,430 --> 00:27:57,710
+These are well-understood
+problems.
+
+757
+00:27:57,710 --> 00:28:00,730
+We can just put them
+in the template.
+
+758
+00:28:00,730 --> 00:28:03,620
+So we should talk about a couple
+of other things before
+
+759
+00:28:03,620 --> 00:28:05,250
+we wrap up.
+
+760
+00:28:05,250 --> 00:28:08,500
+One of the things that
+people tell us is
+
+761
+00:28:08,500 --> 00:28:10,340
+fantastic about Angular--
+
+762
+00:28:10,340 --> 00:28:11,630
+besides the framework--
+
+763
+00:28:11,630 --> 00:28:12,830
+is the community.
+
+764
+00:28:12,830 --> 00:28:16,340
+And there thousands--
+
+765
+00:28:16,340 --> 00:28:19,850
+hundreds of thousands of folks
+in the community who do a
+
+766
+00:28:19,850 --> 00:28:22,640
+great job of helping each other,
+documenting new things
+
+767
+00:28:22,640 --> 00:28:25,400
+in Angular, adding code,
+all kinds of things.
+
+768
+00:28:25,400 --> 00:28:27,080
+There are meet-ups that
+happen regularly.
+
+769
+00:28:27,080 --> 00:28:30,840
+There are-- on our Google group,
+on Twitter, on Stack
+
+770
+00:28:30,840 --> 00:28:32,690
+Overflow, and Google+.
+
+771
+00:28:32,690 --> 00:28:34,576
+There's a tremendous
+community.
+
+772
+00:28:34,576 --> 00:28:36,990
+There's an IRC channel that's
+very active, too.
+
+773
+00:28:36,990 --> 00:28:38,970
+As you can see from the map,
+there are actually still some
+
+774
+00:28:38,970 --> 00:28:41,420
+places in the world where we
+would love to see monthly
+
+775
+00:28:41,420 --> 00:28:44,073
+meet-ups, and we'd love to help
+you make these happen.
+
+776
+00:28:44,073 --> 00:28:46,890
+Let's go next.
+
+777
+00:28:46,890 --> 00:28:52,800
+So the rest of the ecosystem,
+Angular kind of fits a small
+
+778
+00:28:52,800 --> 00:28:55,120
+piece of the whole web
+development puzzle.
+
+779
+00:28:55,120 --> 00:28:57,630
+And I think this is kind of
+cool, because it's made space
+
+780
+00:28:57,630 --> 00:29:00,560
+for other people to create
+things that fit in the world.
+
+781
+00:29:00,560 --> 00:29:02,870
+We've developed some of them,
+but a lot of other folks have
+
+782
+00:29:02,870 --> 00:29:03,700
+created things, too.
+
+783
+00:29:03,700 --> 00:29:06,930
+So in the world of tools, one of
+the things we created is a
+
+784
+00:29:06,930 --> 00:29:10,140
+Chrome Developer Tools plug-in
+called Batarang.
+
+785
+00:29:10,140 --> 00:29:14,050
+And Batarang lets you visualize
+your application,
+
+786
+00:29:14,050 --> 00:29:20,180
+visualize your data-bindings,
+where your template is set up,
+
+787
+00:29:20,180 --> 00:29:22,480
+optimize the performance,
+and debug it--
+
+788
+00:29:22,480 --> 00:29:25,070
+for all of the Angular-specific
+concepts.
+
+789
+00:29:25,070 --> 00:29:28,560
+The good folks over WebStorm
+have created a plug-in that
+
+790
+00:29:28,560 --> 00:29:30,530
+makes it Angular-syntax aware.
+
+791
+00:29:30,530 --> 00:29:33,560
+And a lot of us use WebStorm
+on the team because of it.
+
+792
+00:29:33,560 --> 00:29:36,460
+We've been working with Addy
+Osmani and Paul Irish and the
+
+793
+00:29:36,460 --> 00:29:39,810
+other folks on Yeoman to make
+it very easy to scaffold an
+
+794
+00:29:39,810 --> 00:29:42,490
+Angular application, to update
+its dependencies, and then to
+
+795
+00:29:42,490 --> 00:29:44,830
+build and deploy it
+when you're ready.
+
+796
+00:29:44,830 --> 00:29:48,210
+And then, one of our team
+members, Vojta, has done
+
+797
+00:29:48,210 --> 00:29:49,400
+something I think is
+extra special.
+
+798
+00:29:49,400 --> 00:29:51,090
+We talk a lot about testing.
+
+799
+00:29:51,090 --> 00:29:53,040
+But making the framework
+testable was
+
+800
+00:29:53,040 --> 00:29:54,690
+not the full story.
+
+801
+00:29:54,690 --> 00:29:57,700
+He wrote a test-runner
+called Karma.
+
+802
+00:29:57,700 --> 00:30:01,320
+And Karma, we think, is the
+fastest, most reliable,
+
+803
+00:30:01,320 --> 00:30:02,650
+easiest test-runner
+on the planet.
+
+804
+00:30:02,650 --> 00:30:04,650
+Matter of fact, I would say
+it would change your life.
+
+805
+00:30:04,650 --> 00:30:05,790
+We should do a demo
+of that later.
+
+806
+00:30:05,790 --> 00:30:06,660
+But it's awesome.
+
+807
+00:30:06,660 --> 00:30:07,480
+Go download it.
+
+808
+00:30:07,480 --> 00:30:09,720
+Search for karma test-runner.
+
+809
+00:30:09,720 --> 00:30:10,860
+It's awesome.
+
+810
+00:30:10,860 --> 00:30:15,230
+Now when we were talking about
+directives, we said that you
+
+811
+00:30:15,230 --> 00:30:18,050
+can write your own things,
+like star ratings and
+
+812
+00:30:18,050 --> 00:30:19,120
+tabs and tool tips.
+
+813
+00:30:19,120 --> 00:30:21,560
+And it turns out a lot you don't
+want to be doing that.
+
+814
+00:30:21,560 --> 00:30:25,980
+And so, there are a ton
+of directives--
+
+815
+00:30:25,980 --> 00:30:26,690
+web components--
+
+816
+00:30:26,690 --> 00:30:28,150
+that you can just use.
+
+817
+00:30:28,150 --> 00:30:29,970
+And we have things like the
+Angular UI Project.
+
+818
+00:30:29,970 --> 00:30:33,530
+It's not part of Angular but,
+they've collected a number of
+
+819
+00:30:33,530 --> 00:30:35,250
+the web components from
+across the web.
+
+820
+00:30:35,250 --> 00:30:38,210
+And they're specifically a
+Twitter Bootstrap theme set of
+
+821
+00:30:38,210 --> 00:30:40,200
+components.
+
+822
+00:30:40,200 --> 00:30:42,590
+There are also commercial
+versions, like KendoUI and
+
+823
+00:30:42,590 --> 00:30:46,430
+Wijmo So you can come out of the
+box with a whole bunch of
+
+824
+00:30:46,430 --> 00:30:47,840
+components that you just
+snap together like
+
+825
+00:30:47,840 --> 00:30:50,180
+LEGOs in your template.
+
+826
+00:30:50,180 --> 00:30:53,360
+In the rest of the world of
+libraries, there are things
+
+827
+00:30:53,360 --> 00:30:57,920
+like BreezeJS that gives you a
+very rich set of tools for
+
+828
+00:30:57,920 --> 00:31:01,540
+manipulating data that comes
+from SQL and NoSQL databases.
+
+829
+00:31:01,540 --> 00:31:04,390
+If you want a database in the
+cloud, there's Firebase, who
+
+830
+00:31:04,390 --> 00:31:07,110
+have created Angular-specific
+binding so that you can use
+
+831
+00:31:07,110 --> 00:31:09,730
+them with our data-binding
+system.
+
+832
+00:31:09,730 --> 00:31:12,060
+And the folks at Salesforce
+recently created a developer
+
+833
+00:31:12,060 --> 00:31:14,950
+tools pack that lets you create
+Angular applications
+
+834
+00:31:14,950 --> 00:31:19,030
+with Salesforce on the backend
+on mobile devices.
+
+835
+00:31:19,030 --> 00:31:21,740
+And then there's books.
+
+836
+00:31:21,740 --> 00:31:22,410
+I actually--
+
+837
+00:31:22,410 --> 00:31:23,750
+I wrote one of them, the
+one with the fish.
+
+838
+00:31:23,750 --> 00:31:27,060
+I think that is the most
+handsome of the books.
+
+839
+00:31:27,060 --> 00:31:27,460
+But there--
+
+840
+00:31:27,460 --> 00:31:29,570
+I think last count, there
+are seven books.
+
+841
+00:31:29,570 --> 00:31:31,400
+Really, you should
+buy them all.
+
+842
+00:31:31,400 --> 00:31:34,190
+I could not choose.
+
+843
+00:31:34,190 --> 00:31:36,140
+All right, so thank
+you everybody.
+
+844
+00:31:36,140 --> 00:31:37,280
+Thanks so much.
+
+845
+00:31:37,280 --> 00:31:38,190
+We--
+
+846
+00:31:38,190 --> 00:31:42,210
+at the lower right-hand side
+is the link for our GitHub
+
+847
+00:31:42,210 --> 00:31:43,910
+repository, for the demos
+that you saw today.
+
+848
+00:31:43,910 --> 00:31:46,630
+Misko and I are available on
+Twitter and Google+ if you
+
+849
+00:31:46,630 --> 00:31:48,150
+want to reach out to us.
+
+850
+00:31:48,150 --> 00:31:51,580
+We're going to be in the Chrome
+Sandbox upstairs for
+
+851
+00:31:51,580 --> 00:31:52,300
+the next half hour.
+
+852
+00:31:52,300 --> 00:31:54,000
+We've got a little bit of
+time for questions.
+
+853
+00:31:54,000 --> 00:31:55,340
+But we'll be there.
+
+854
+00:31:55,340 --> 00:31:56,390
+We'd love to answer questions.
+
+855
+00:31:56,390 --> 00:32:00,180
+We've got some stickers
+to hand out upstairs.
+
+856
+00:32:00,180 --> 00:32:03,250
+And then Angular books are going
+to be in that Chrome
+
+857
+00:32:03,250 --> 00:32:06,940
+Sandbox area on Thursday and
+Friday all day long.
+
+858
+00:32:06,940 --> 00:32:07,960
+Thank you for coming.
+
+859
+00:32:07,960 --> 00:32:09,212
+Really appreciate it.
+
+860
+00:32:09,212 --> 00:32:17,510
+[APPLAUSE]
+
+861
+00:32:17,510 --> 00:32:20,070
+So, let's go over
+here on the mic.
+
+862
+00:32:20,070 --> 00:32:22,670
+AUDIENCE: So good to
+see Angular at I/O.
+
+863
+00:32:22,670 --> 00:32:25,220
+BRAD GREEN: Thank you.
+
+864
+00:32:25,220 --> 00:32:27,700
+AUDIENCE: So my question is, how
+do you configure the curly
+
+865
+00:32:27,700 --> 00:32:30,060
+braces for data-binding?
+
+866
+00:32:30,060 --> 00:32:31,540
+That is configurable, right?
+
+867
+00:32:31,540 --> 00:32:34,520
+I'm using Jekyll with Liquid
+templates, and there are curly
+
+868
+00:32:34,520 --> 00:32:35,730
+braces used there as well.
+
+869
+00:32:35,730 --> 00:32:37,270
+So I'd like to be able
+to configure that.
+
+870
+00:32:37,270 --> 00:32:39,270
+And do you recommend
+against it?
+
+871
+00:32:39,270 --> 00:32:42,350
+MISKO HEVERY: Yes, so there is a
+interpolation provider which
+
+872
+00:32:42,350 --> 00:32:45,230
+allows you to configure the
+starting and ending set of
+
+873
+00:32:45,230 --> 00:32:47,616
+sequence of characters
+that will do this.
+
+874
+00:32:47,616 --> 00:32:49,180
+And so you could use that.
+
+875
+00:32:49,180 --> 00:32:52,190
+The caveat is that, if you're
+using a third-party library or
+
+876
+00:32:52,190 --> 00:32:56,950
+third-party widget library that
+assumes curly braces, you
+
+877
+00:32:56,950 --> 00:32:59,200
+might break them.
+
+878
+00:32:59,200 --> 00:33:00,230
+It's not true?
+
+879
+00:33:00,230 --> 00:33:02,200
+[INAUDIBLE]
+
+880
+00:33:02,200 --> 00:33:02,870
+Oh, we compensate.
+
+881
+00:33:02,870 --> 00:33:04,255
+Oh, we fixed it now.
+
+882
+00:33:04,255 --> 00:33:04,970
+BRAD GREEN: OK, good.
+
+883
+00:33:04,970 --> 00:33:05,780
+MISKO HEVERY: You can change
+it using the--
+
+884
+00:33:05,780 --> 00:33:06,110
+BRAD GREEN: It just works.
+
+885
+00:33:06,110 --> 00:33:06,820
+It just works.
+
+886
+00:33:06,820 --> 00:33:07,830
+Thank you, Igor.
+
+887
+00:33:07,830 --> 00:33:08,410
+AUDIENCE: Great, thanks.
+
+888
+00:33:08,410 --> 00:33:10,560
+BRAD GREEN: All right, sure.
+
+889
+00:33:10,560 --> 00:33:12,670
+AUDIENCE: I come from China
+as a [INAUDIBLE]
+
+890
+00:33:12,670 --> 00:33:13,250
+[? TGD ?]
+
+891
+00:33:13,250 --> 00:33:14,040
+organizer.
+
+892
+00:33:14,040 --> 00:33:21,045
+So I notice that a map,
+a pocket of all
+
+893
+00:33:21,045 --> 00:33:23,490
+the Angular's community.
+
+894
+00:33:23,490 --> 00:33:26,980
+But in fact, AngularJS
+[? dot-send ?]
+
+895
+00:33:26,980 --> 00:33:29,880
+is building just users
+[INAUDIBLE].
+
+896
+00:33:29,880 --> 00:33:32,530
+In fact, in China,
+it is very--
+
+897
+00:33:32,530 --> 00:33:34,570
+so many people like AngularJS.
+
+898
+00:33:34,570 --> 00:33:43,930
+so my question is how make the
+AngularJS community, and you
+
+899
+00:33:43,930 --> 00:33:48,270
+can address--
+
+900
+00:33:48,270 --> 00:33:49,560
+you can know it.
+
+901
+00:33:49,560 --> 00:33:52,550
+I just want to--
+
+902
+00:33:52,550 --> 00:33:56,830
+I think you [? might ?].
+
+903
+00:33:56,830 --> 00:33:58,970
+You're not quite [? sure? ?]
+
+904
+00:33:58,970 --> 00:34:00,015
+BRAD GREEN: I'm kind of
+missing the question.
+
+905
+00:34:00,015 --> 00:34:00,570
+AUDIENCE: I'm trying
+to say [INAUDIBLE]
+
+906
+00:34:00,570 --> 00:34:00,700
+[INTERPOSING VOICES]
+
+907
+00:34:00,700 --> 00:34:01,805
+MISKO HEVERY: I think he's
+saying there's an awesome
+
+908
+00:34:01,805 --> 00:34:02,660
+[INAUDIBLE]
+
+909
+00:34:02,660 --> 00:34:03,060
+AUDIENCE: [INAUDIBLE]
+
+910
+00:34:03,060 --> 00:34:04,730
+BRAD GREEN: You're saying in
+China, there's a fantastic
+
+911
+00:34:04,730 --> 00:34:07,130
+JavaScript community, and
+there's AngularJS going on.
+
+912
+00:34:07,130 --> 00:34:09,679
+AUDIENCE: But we lost
+it in your map.
+
+913
+00:34:09,679 --> 00:34:11,190
+So I have a question, why--
+
+914
+00:34:11,190 --> 00:34:11,550
+BRAD GREEN: Ah.
+
+915
+00:34:11,550 --> 00:34:13,880
+Tell me where it should go,
+and I'll put it on my map.
+
+916
+00:34:13,880 --> 00:34:15,393
+AUDIENCE: OK, thank you.
+
+917
+00:34:15,393 --> 00:34:17,820
+BRAD GREEN: Yeah, that
+would be awesome.
+
+918
+00:34:17,820 --> 00:34:18,620
+Thank you, thank you.
+
+919
+00:34:18,620 --> 00:34:22,260
+AUDIENCE: How is Google using
+AngularJS internally?
+
+920
+00:34:22,260 --> 00:34:24,175
+Are there going to be
+apps that we use?
+
+921
+00:34:24,175 --> 00:34:25,150
+Or that consumers use?
+
+922
+00:34:25,150 --> 00:34:25,387
+BRAD GREEN: Yeah.
+
+923
+00:34:25,387 --> 00:34:28,210
+We've built a lot of internal
+apps on Angular.
+
+924
+00:34:28,210 --> 00:34:30,449
+Google Feedback was
+one of them.
+
+925
+00:34:30,449 --> 00:34:33,409
+The two big external
+applications that we've built
+
+926
+00:34:33,409 --> 00:34:35,380
+on top of it is DoubleClick,
+which makes
+
+927
+00:34:35,380 --> 00:34:36,404
+some money for Google.
+
+928
+00:34:36,404 --> 00:34:38,159
+This is display advertising.
+
+929
+00:34:38,159 --> 00:34:39,790
+I mean a lot, actually.
+
+930
+00:34:39,790 --> 00:34:44,969
+And then YouTube has
+built their--
+
+931
+00:34:44,969 --> 00:34:48,360
+it's kind of like an embedded
+in the PlayStation 3
+
+932
+00:34:48,360 --> 00:34:48,880
+application.
+
+933
+00:34:48,880 --> 00:34:51,239
+So the live player that you get
+with PlayStation 3, that's
+
+934
+00:34:51,239 --> 00:34:52,280
+built in Angular.
+
+935
+00:34:52,280 --> 00:34:53,394
+There's some more stuff
+on the way.
+
+936
+00:34:53,394 --> 00:34:54,460
+Can't pre-announce it.
+
+937
+00:34:54,460 --> 00:34:56,030
+AUDIENCE: Yeah, because that's
+always a concern that you guys
+
+938
+00:34:56,030 --> 00:34:58,640
+keep using it so that it
+keeps growing, right?
+
+939
+00:34:58,640 --> 00:34:59,730
+BRAD GREEN: Indeed, indeed.
+
+940
+00:34:59,730 --> 00:35:01,140
+It's well-loved within Google.
+
+941
+00:35:01,140 --> 00:35:02,420
+AUDIENCE: OK.
+
+942
+00:35:02,420 --> 00:35:03,680
+BRAD GREEN: Thank you.
+
+943
+00:35:03,680 --> 00:35:04,830
+And over here.
+
+944
+00:35:04,830 --> 00:35:06,810
+AUDIENCE: First question
+is, the query--
+
+945
+00:35:06,810 --> 00:35:09,230
+it does have a call back,
+though, right, if I need it?
+
+946
+00:35:09,230 --> 00:35:09,620
+BRAD GREEN: That's right.
+
+947
+00:35:09,620 --> 00:35:11,010
+You can have a call back
+if you want to.
+
+948
+00:35:11,010 --> 00:35:11,520
+AUDIENCE: OK.
+
+949
+00:35:11,520 --> 00:35:13,570
+BRAD GREEN: Yeah, for catching
+errors, and there's some other
+
+950
+00:35:13,570 --> 00:35:15,170
+reasons you might want
+[INAUDIBLE].
+
+951
+00:35:15,170 --> 00:35:16,830
+AUDIENCE: And secondly, we think
+Google-- is there any
+
+952
+00:35:16,830 --> 00:35:20,110
+sort of internal fight
+with Backbone?
+
+953
+00:35:20,110 --> 00:35:21,765
+BRAD GREEN: There's actually
+no fight with Backbone in
+
+954
+00:35:21,765 --> 00:35:24,470
+terms of Google.
+
+955
+00:35:24,470 --> 00:35:24,660
+No.
+
+956
+00:35:24,660 --> 00:35:25,586
+There's none.
+
+957
+00:35:25,586 --> 00:35:27,130
+None whatsoever.
+
+958
+00:35:27,130 --> 00:35:27,810
+AUDIENCE: Thank you.
+
+959
+00:35:27,810 --> 00:35:28,460
+BRAD GREEN: Yeah.
+
+960
+00:35:28,460 --> 00:35:29,200
+Yes?
+
+961
+00:35:29,200 --> 00:35:30,020
+AUDIENCE: Hi, yes.
+
+962
+00:35:30,020 --> 00:35:33,990
+I just started using Angular for
+the first time actually a
+
+963
+00:35:33,990 --> 00:35:34,700
+couple of weeks ago.
+
+964
+00:35:34,700 --> 00:35:35,170
+BRAD GREEN: Thank you.
+
+965
+00:35:35,170 --> 00:35:35,430
+Awesome.
+
+966
+00:35:35,430 --> 00:35:37,670
+AUDIENCE: And I absolutely
+freaking love it.
+
+967
+00:35:37,670 --> 00:35:39,100
+MISKO HEVERY: Thank you.
+
+968
+00:35:39,100 --> 00:35:39,980
+AUDIENCE: So--
+
+969
+00:35:39,980 --> 00:35:40,740
+BRAD GREEN: Next question.
+
+970
+00:35:40,740 --> 00:35:41,650
+Awesome.
+
+971
+00:35:41,650 --> 00:35:42,330
+No, go.
+
+972
+00:35:42,330 --> 00:35:42,680
+AUDIENCE: The search
+
+973
+00:35:42,680 --> 00:35:44,660
+functionality, it's really nice.
+
+974
+00:35:44,660 --> 00:35:47,930
+But can you talk a little bit
+about patterns to use when the
+
+975
+00:35:47,930 --> 00:35:50,930
+data set is big, and it
+needs to be paged in
+
+976
+00:35:50,930 --> 00:35:52,920
+and out, and how--
+
+977
+00:35:52,920 --> 00:35:56,000
+what's the right way of setting
+up your services?
+
+978
+00:35:56,000 --> 00:35:57,740
+MISKO HEVERY: I think that's
+way beyond what we
+
+979
+00:35:57,740 --> 00:35:58,990
+can answer on stage.
+
+980
+00:35:58,990 --> 00:35:59,380
+BRAD GREEN: Yeah.
+
+981
+00:35:59,380 --> 00:36:02,740
+I mean, I can point you-- there
+are several services
+
+982
+00:36:02,740 --> 00:36:05,990
+that help doing this, for help
+doing the pagination, and
+
+983
+00:36:05,990 --> 00:36:08,300
+doing sort of an infinite scroll
+effect, which is what
+
+984
+00:36:08,300 --> 00:36:10,410
+folks often want.
+
+985
+00:36:10,410 --> 00:36:12,155
+AUDIENCE: The search, the
+actual search, right?
+
+986
+00:36:12,155 --> 00:36:14,170
+The ng-search stuff.
+
+987
+00:36:14,170 --> 00:36:16,210
+Not just the scrolling,
+but the actual--
+
+988
+00:36:16,210 --> 00:36:16,720
+BRAD GREEN: Yeah.
+
+989
+00:36:16,720 --> 00:36:17,700
+So that as you type.
+
+990
+00:36:17,700 --> 00:36:20,200
+You want it like the Google
+homepage search style thing.
+
+991
+00:36:20,200 --> 00:36:20,890
+AUDIENCE: Yeah, even
+if I set up like a
+
+992
+00:36:20,890 --> 00:36:22,630
+backend search stuff.
+
+993
+00:36:22,630 --> 00:36:24,300
+BRAD GREEN: As Misko said,
+there are some details--
+
+994
+00:36:24,300 --> 00:36:27,290
+maybe come up to the Chrome
+Sandbox, and let's have
+
+995
+00:36:27,290 --> 00:36:27,320
+a chat about it.
+
+996
+00:36:27,320 --> 00:36:27,419
+MISKO HEVERY: Yes.
+
+997
+00:36:27,419 --> 00:36:28,080
+That's a better way of-- yes.
+
+998
+00:36:28,080 --> 00:36:28,340
+AUDIENCE: Thank you.
+
+999
+00:36:28,340 --> 00:36:29,850
+BRAD GREEN: Yeah Over here?
+
+1000
+00:36:29,850 --> 00:36:33,050
+AUDIENCE: OK, first of all,
+thank you for making Angular.
+
+1001
+00:36:33,050 --> 00:36:36,210
+You saved my bacon like two
+months ago making a site.
+
+1002
+00:36:36,210 --> 00:36:39,070
+It's really awesome.
+
+1003
+00:36:39,070 --> 00:36:40,910
+Two questions.
+
+1004
+00:36:40,910 --> 00:36:46,430
+First, what are your
+recommendations towards search
+
+1005
+00:36:46,430 --> 00:36:50,070
+engine optimization for sites
+built with Angular?
+
+1006
+00:36:50,070 --> 00:36:54,800
+And the other one is, I'm
+currently trying to get a site
+
+1007
+00:36:54,800 --> 00:37:00,070
+done in Angular, but the manager
+is concerned about
+
+1008
+00:37:00,070 --> 00:37:03,600
+users who don't have JavaScript
+enabled, or what--
+
+1009
+00:37:03,600 --> 00:37:04,630
+MISKO HEVERY: What year
+is this again?
+
+1010
+00:37:04,630 --> 00:37:08,010
+BRAD GREEN: I think it's 2002.
+
+1011
+00:37:08,010 --> 00:37:12,110
+But no-- so I can't help your
+manager, because he is living
+
+1012
+00:37:12,110 --> 00:37:14,420
+somewhere else.
+
+1013
+00:37:14,420 --> 00:37:16,650
+But as far as--
+
+1014
+00:37:16,650 --> 00:37:17,630
+what was the first question?
+
+1015
+00:37:17,630 --> 00:37:18,150
+AUDIENCE: SEO.
+
+1016
+00:37:18,150 --> 00:37:19,190
+BRAD GREEN: SEO, yeah.
+
+1017
+00:37:19,190 --> 00:37:21,350
+So there's a recipe for SEO.
+
+1018
+00:37:21,350 --> 00:37:23,535
+There's a website called
+"Year Of Moo." It's
+
+1019
+00:37:23,535 --> 00:37:25,450
+this guy named Mateo.
+
+1020
+00:37:25,450 --> 00:37:28,080
+He worked with us on the
+animation directive actually.
+
+1021
+00:37:28,080 --> 00:37:30,270
+And he is a very
+good documented
+
+1022
+00:37:30,270 --> 00:37:31,460
+path for doing this.
+
+1023
+00:37:31,460 --> 00:37:35,440
+Search for "Year of
+Moo" angular SEO.
+
+1024
+00:37:35,440 --> 00:37:37,330
+MISKO HEVERY: And it has to
+do with the headless--
+
+1025
+00:37:37,330 --> 00:37:39,840
+BRAD GREEN: Using PhantomJS to
+kind of render your pages.
+
+1026
+00:37:39,840 --> 00:37:40,220
+AUDIENCE: OK.
+
+1027
+00:37:40,220 --> 00:37:44,310
+And that wouldn't be penalized
+by you guys, as Google?
+
+1028
+00:37:44,310 --> 00:37:44,730
+Because--
+
+1029
+00:37:44,730 --> 00:37:45,060
+BRAD GREEN: No.
+
+1030
+00:37:45,060 --> 00:37:46,200
+AUDIENCE: Since users are--
+
+1031
+00:37:46,200 --> 00:37:48,180
+BRAD GREEN: There's no way
+for Google to know.
+
+1032
+00:37:48,180 --> 00:37:49,530
+We see what you finally
+render.
+
+1033
+00:37:49,530 --> 00:37:50,970
+AUDIENCE: Oh, OK Thank you.
+
+1034
+00:37:50,970 --> 00:37:51,270
+BRAD GREEN: Sure.
+
+1035
+00:37:51,270 --> 00:37:52,470
+Yeah?
+
+1036
+00:37:52,470 --> 00:37:55,290
+AUDIENCE: So we already built a
+map with Backbone and other
+
+1037
+00:37:55,290 --> 00:37:59,600
+stuff, and we don't have a--
+it's like a financial app.
+
+1038
+00:37:59,600 --> 00:38:03,580
+So now, do you think I could
+introduce Angular and, with
+
+1039
+00:38:03,580 --> 00:38:07,650
+it's help-- because it's a huge
+app, a trading app, but
+
+1040
+00:38:07,650 --> 00:38:10,740
+lot of Backbone, and a
+lot of stuff in it.
+
+1041
+00:38:10,740 --> 00:38:12,610
+BRAD GREEN: So what is the
+core of the question?
+
+1042
+00:38:12,610 --> 00:38:13,900
+Could you rewrite in Angular?
+
+1043
+00:38:13,900 --> 00:38:15,800
+AUDIENCE: I mean, do I have
+to only rewrite something?
+
+1044
+00:38:15,800 --> 00:38:19,510
+Or will it-- can I use
+this as a part of it?
+
+1045
+00:38:19,510 --> 00:38:20,440
+Or how will this help--
+
+1046
+00:38:20,440 --> 00:38:20,660
+MISKO HEVERY: Yeah.
+
+1047
+00:38:20,660 --> 00:38:21,990
+I think [INAUDIBLE]
+
+1048
+00:38:21,990 --> 00:38:23,060
+is [INAUDIBLE] do a
+full rewrite, or
+
+1049
+00:38:23,060 --> 00:38:24,280
+you can do it partially.
+
+1050
+00:38:24,280 --> 00:38:25,790
+And one of the things we wanted
+to make sure that
+
+1051
+00:38:25,790 --> 00:38:28,110
+Angular plays nicely with other
+frameworks so that you
+
+1052
+00:38:28,110 --> 00:38:31,850
+could rewrite an app one
+page at a time, or
+
+1053
+00:38:31,850 --> 00:38:32,450
+something like that.
+
+1054
+00:38:32,450 --> 00:38:33,720
+So there's even--
+
+1055
+00:38:33,720 --> 00:38:35,870
+I've seen some blog posts about
+people trying to get
+
+1056
+00:38:35,870 --> 00:38:37,630
+Angular to run together
+with Backbone.
+
+1057
+00:38:37,630 --> 00:38:39,490
+So they'll use Backbone for the
+models, and Angular for
+
+1058
+00:38:39,490 --> 00:38:41,370
+the data-binding
+and rendering.
+
+1059
+00:38:41,370 --> 00:38:42,640
+So that should be possible.
+
+1060
+00:38:42,640 --> 00:38:47,180
+AUDIENCE: Yeah, because we use
+data-binding of the Backbones.
+
+1061
+00:38:47,180 --> 00:38:47,740
+Thanks.
+
+1062
+00:38:47,740 --> 00:38:48,970
+MISKO HEVERY: I think we can
+make time for one more
+
+1063
+00:38:48,970 --> 00:38:50,220
+question, and then time
+is running out.
+
+1064
+00:38:50,220 --> 00:38:50,540
+BRAD GREEN: Yes.
+
+1065
+00:38:50,540 --> 00:38:50,970
+Right over here?
+
+1066
+00:38:50,970 --> 00:38:54,320
+And we'll hit the rest of
+you up in the sandbox.
+
+1067
+00:38:54,320 --> 00:38:56,050
+AUDIENCE: All right,
+score for me.
+
+1068
+00:38:56,050 --> 00:38:58,030
+So I actually have been using
+it for the past half
+
+1069
+00:38:58,030 --> 00:38:59,200
+year, and loving it.
+
+1070
+00:38:59,200 --> 00:39:02,110
+I have two very specific
+questions about ng-switch.
+
+1071
+00:39:02,110 --> 00:39:05,590
+So one of them is, lately I've
+been doing a lot of nested
+
+1072
+00:39:05,590 --> 00:39:06,320
+ng-switches.
+
+1073
+00:39:06,320 --> 00:39:07,380
+One inside--
+
+1074
+00:39:07,380 --> 00:39:10,140
+like for instance, one is true,
+and inside that another
+
+1075
+00:39:10,140 --> 00:39:12,330
+ng-switch, and sometimes
+a third.
+
+1076
+00:39:12,330 --> 00:39:15,050
+Should I be concerned about
+doing nested ng-switch?
+
+1077
+00:39:15,050 --> 00:39:17,530
+That's question number one.
+
+1078
+00:39:17,530 --> 00:39:19,040
+MISKO HEVERY: If you're just
+going to nest just a few
+
+1079
+00:39:19,040 --> 00:39:21,660
+ng-switches, it shouldn't
+be an issue.
+
+1080
+00:39:21,660 --> 00:39:24,090
+If you're gonna nest 50 of them,
+then maybe you should
+
+1081
+00:39:24,090 --> 00:39:25,140
+look at a different
+way of doing it.
+
+1082
+00:39:25,140 --> 00:39:26,250
+AUDIENCE: Yeah, OK.
+
+1083
+00:39:26,250 --> 00:39:26,790
+That's good to know.
+
+1084
+00:39:26,790 --> 00:39:31,210
+So the second one is, is there a
+good way to do undefine with
+
+1085
+00:39:31,210 --> 00:39:33,420
+ng-switch, because I haven't
+been able to do that very
+
+1086
+00:39:33,420 --> 00:39:34,210
+successfully.
+
+1087
+00:39:34,210 --> 00:39:36,570
+So what I always have been doing
+is to actually have the
+
+1088
+00:39:36,570 --> 00:39:38,240
+wrapper do a return
+true or false.
+
+1089
+00:39:38,240 --> 00:39:40,980
+And then have it go to web
+[? branch ?] when true, and
+
+1090
+00:39:40,980 --> 00:39:42,190
+then when false--
+
+1091
+00:39:42,190 --> 00:39:45,000
+versus when I tried to do one
+undefined, it just doesn't
+
+1092
+00:39:45,000 --> 00:39:47,140
+seem to fall to the
+right branch.
+
+1093
+00:39:47,140 --> 00:39:50,860
+So not sure if anybody else has
+seen this similar problem.
+
+1094
+00:39:50,860 --> 00:39:51,610
+BRAD GREEN: I didn't
+quite get it.
+
+1095
+00:39:51,610 --> 00:39:53,840
+But maybe let's continue
+this back upstairs.
+
+1096
+00:39:53,840 --> 00:39:54,260
+AUDIENCE: Yeah, OK.
+
+1097
+00:39:54,260 --> 00:39:54,910
+Cool.
+
+1098
+00:39:54,910 --> 00:39:55,820
+BRAD GREEN: Thank
+you everybody.
+
+1099
+00:39:55,820 --> 00:39:56,030
+MISKO HEVERY: Thank you
+
+1100
+00:39:56,030 --> 00:39:57,810
+BRAD GREEN: Thanks so
+much for coming
+
+1101
+00:39:57,810 --> 00:39:59,665
+

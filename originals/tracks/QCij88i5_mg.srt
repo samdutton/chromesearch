@@ -1,0 +1,986 @@
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:02,050
+ANNA PATTERSON: Now I want to
+introduce Johanna Wright.
+
+3
+00:00:02,050 --> 00:00:06,780
+She's the Lead Product Manager
+of Search for many years,
+
+4
+00:00:06,780 --> 00:00:10,380
+launching such innovations as
+Universal Search, Instant, and
+
+5
+00:00:10,380 --> 00:00:12,250
+the Knowledge Graph.
+
+6
+00:00:12,250 --> 00:00:15,500
+And now she's leading up Search
+in Android, including
+
+7
+00:00:15,500 --> 00:00:19,392
+Google Now, Voice Search,
+and Speech.
+
+8
+00:00:19,392 --> 00:00:27,740
+[APPLAUSE]
+
+9
+00:00:27,740 --> 00:00:31,720
+JOHANNA WRIGHT: Let's step
+back to January 2003.
+
+10
+00:00:31,720 --> 00:00:33,790
+At this point in time,
+I'm living in my
+
+11
+00:00:33,790 --> 00:00:35,500
+father in-law's house.
+
+12
+00:00:35,500 --> 00:00:39,760
+He's put a nice curtain up for
+my section of the living room,
+
+13
+00:00:39,760 --> 00:00:43,380
+where my husband and I share
+an air mattress.
+
+14
+00:00:43,380 --> 00:00:44,740
+The sun streams in.
+
+15
+00:00:44,740 --> 00:00:46,880
+6:00 AM we wake up every
+morning because of the
+
+16
+00:00:46,880 --> 00:00:49,610
+unbearable Orange County heat.
+
+17
+00:00:49,610 --> 00:00:53,790
+Air mattress is popped,
+and I'm unemployed.
+
+18
+00:00:53,790 --> 00:00:57,930
+Just six months earlier, I was a
+young tech exec in New York,
+
+19
+00:00:57,930 --> 00:01:01,400
+first during the dot-com
+boom and then bust.
+
+20
+00:01:01,400 --> 00:01:04,760
+But my company that I worked at
+had finally shut its doors.
+
+21
+00:01:04,760 --> 00:01:07,730
+And my husband and I decided
+to get on our bicycles and
+
+22
+00:01:07,730 --> 00:01:12,990
+ride across the country
+to lovely, sunny LA.
+
+23
+00:01:12,990 --> 00:01:14,520
+Riding across the country
+with your new
+
+24
+00:01:14,520 --> 00:01:16,820
+husband is a lot of fun.
+
+25
+00:01:16,820 --> 00:01:20,980
+Showing up in LA, a new city,
+with no job, not so much fun.
+
+26
+00:01:20,980 --> 00:01:23,630
+
+27
+00:01:23,630 --> 00:01:25,850
+Then the rejection letters from
+business schools started
+
+28
+00:01:25,850 --> 00:01:27,750
+pouring in.
+
+29
+00:01:27,750 --> 00:01:32,250
+And it's January, and there's
+only one business school I
+
+30
+00:01:32,250 --> 00:01:33,110
+haven't heard back from.
+
+31
+00:01:33,110 --> 00:01:35,690
+But I'm not feeling too
+optimistic because they're
+
+32
+00:01:35,690 --> 00:01:38,020
+supposed to interview all of
+their candidates, and they're
+
+33
+00:01:38,020 --> 00:01:39,760
+going to mail out their verdict
+two days later, and
+
+34
+00:01:39,760 --> 00:01:42,260
+they still haven't
+interviewed me.
+
+35
+00:01:42,260 --> 00:01:45,130
+But then I got an email from
+UCLA that said we want to
+
+36
+00:01:45,130 --> 00:01:47,780
+interview you.
+
+37
+00:01:47,780 --> 00:01:51,160
+And since my confidence had been
+shot, my response was,
+
+38
+00:01:51,160 --> 00:01:56,800
+"You do?" I was fortunate enough
+to get to go to UCLA
+
+39
+00:01:56,800 --> 00:02:01,380
+for business school, and then
+I got a job at Google.
+
+40
+00:02:01,380 --> 00:02:04,130
+And today I'm going to talk
+about my career starting out
+
+41
+00:02:04,130 --> 00:02:06,420
+at Google and what it was like
+to be a Product Manager at
+
+42
+00:02:06,420 --> 00:02:09,280
+Google and give some bits
+of advice about product
+
+43
+00:02:09,280 --> 00:02:10,850
+management.
+
+44
+00:02:10,850 --> 00:02:14,110
+But my first piece of career
+advice is that your career is
+
+45
+00:02:14,110 --> 00:02:15,640
+not going to be linear.
+
+46
+00:02:15,640 --> 00:02:17,010
+Expect to be disrupted.
+
+47
+00:02:17,010 --> 00:02:21,600
+This is a disruptive industry,
+and you, too, may someday be
+
+48
+00:02:21,600 --> 00:02:25,340
+unemployed on your
+father-in-law's couch.
+
+49
+00:02:25,340 --> 00:02:28,140
+What's really going to matter is
+the energy and the tenacity
+
+50
+00:02:28,140 --> 00:02:30,500
+with which you pick yourself
+up and take
+
+51
+00:02:30,500 --> 00:02:33,430
+on your next adventure.
+
+52
+00:02:33,430 --> 00:02:35,970
+OK, so let's jump into Google.
+
+53
+00:02:35,970 --> 00:02:38,660
+I was hired to be a Product
+Manager working in Search.
+
+54
+00:02:38,660 --> 00:02:40,840
+My boss gave me two
+options of jobs.
+
+55
+00:02:40,840 --> 00:02:43,260
+One was something called
+Universal Search.
+
+56
+00:02:43,260 --> 00:02:46,310
+Universal Search was the project
+where we took all the
+
+57
+00:02:46,310 --> 00:02:48,000
+content from our different
+back ends--
+
+58
+00:02:48,000 --> 00:02:49,580
+maps, videos, images--
+
+59
+00:02:49,580 --> 00:02:52,340
+and we put them in the main
+search results pane.
+
+60
+00:02:52,340 --> 00:02:55,310
+The other option that she gave
+me was to do something called
+
+61
+00:02:55,310 --> 00:02:56,770
+Premium Content Search.
+
+62
+00:02:56,770 --> 00:02:59,630
+This is where we searched all
+the content behind pay walls
+
+63
+00:02:59,630 --> 00:03:02,300
+and put it in the
+search results.
+
+64
+00:03:02,300 --> 00:03:05,710
+Both these things seemed pretty
+interesting, and I was
+
+65
+00:03:05,710 --> 00:03:08,010
+so new to Google, I didn't have
+any context or judgment
+
+66
+00:03:08,010 --> 00:03:09,830
+to make a decision.
+
+67
+00:03:09,830 --> 00:03:12,030
+Fortunately for me, I had gone
+to the same business school as
+
+68
+00:03:12,030 --> 00:03:15,450
+Susan Wojcicki, my fellow
+panelist, and so I asked her
+
+69
+00:03:15,450 --> 00:03:17,810
+for some advice.
+
+70
+00:03:17,810 --> 00:03:20,630
+Susan looked at me like
+I had two heads.
+
+71
+00:03:20,630 --> 00:03:21,040
+What?
+
+72
+00:03:21,040 --> 00:03:22,960
+Of course you should do
+Universal Search.
+
+73
+00:03:22,960 --> 00:03:26,370
+That's our business, Johanna.
+
+74
+00:03:26,370 --> 00:03:29,430
+So this leads to another
+piece of career wisdom.
+
+75
+00:03:29,430 --> 00:03:31,590
+What does a good opportunity
+look like?
+
+76
+00:03:31,590 --> 00:03:32,560
+Well, a good opportunity
+looks like
+
+77
+00:03:32,560 --> 00:03:33,980
+something that's strategic.
+
+78
+00:03:33,980 --> 00:03:35,310
+If you're doing something
+that's in line with the
+
+79
+00:03:35,310 --> 00:03:38,785
+company's mission and it has
+not been done before, well,
+
+80
+00:03:38,785 --> 00:03:42,590
+then it's very likely to
+be a good opportunity.
+
+81
+00:03:42,590 --> 00:03:44,900
+OK, so let me jump into
+Universal Search.
+
+82
+00:03:44,900 --> 00:03:47,530
+
+83
+00:03:47,530 --> 00:03:49,070
+This was 2005 at Google.
+
+84
+00:03:49,070 --> 00:03:50,490
+Google was growing like crazy.
+
+85
+00:03:50,490 --> 00:03:53,180
+It was very chaotic.
+
+86
+00:03:53,180 --> 00:03:55,580
+And it's kind of
+hard to know--
+
+87
+00:03:55,580 --> 00:03:58,790
+for me it was hard to know how
+projects got assigned, what
+
+88
+00:03:58,790 --> 00:03:59,910
+you're working on.
+
+89
+00:03:59,910 --> 00:04:02,480
+And I got paired up with an
+infrastructure team while I
+
+90
+00:04:02,480 --> 00:04:04,550
+was working on Universal
+Search.
+
+91
+00:04:04,550 --> 00:04:07,200
+This was a great team, but a
+team that was very focused on
+
+92
+00:04:07,200 --> 00:04:09,110
+building infrastructure,
+and they didn't want
+
+93
+00:04:09,110 --> 00:04:10,590
+to build any features.
+
+94
+00:04:10,590 --> 00:04:13,750
+And I was a Product Manager, and
+I was being judged on the
+
+95
+00:04:13,750 --> 00:04:14,740
+features that I launched.
+
+96
+00:04:14,740 --> 00:04:16,480
+And so it was pretty stressful,
+because I wasn't
+
+97
+00:04:16,480 --> 00:04:18,339
+delivering anything.
+
+98
+00:04:18,339 --> 00:04:22,240
+And so what I ended up doing was
+creating a set of mocks, a
+
+99
+00:04:22,240 --> 00:04:24,130
+series of mocks of what
+Universal Search could look
+
+100
+00:04:24,130 --> 00:04:26,880
+like, and then I created a
+little PowerPoint deck, and I
+
+101
+00:04:26,880 --> 00:04:30,900
+walked around Google, and I
+introduced myself to anyone
+
+102
+00:04:30,900 --> 00:04:32,720
+who looked like they might want
+to be a Features Tech
+
+103
+00:04:32,720 --> 00:04:35,890
+Lead to see if they wanted
+to join my project.
+
+104
+00:04:35,890 --> 00:04:37,950
+And I was fortunate enough to
+meet a person named David
+
+105
+00:04:37,950 --> 00:04:41,860
+Bailey, who wanted to join on
+and lead the features side of
+
+106
+00:04:41,860 --> 00:04:43,220
+the effort.
+
+107
+00:04:43,220 --> 00:04:47,720
+And then the project really
+started to get legs.
+
+108
+00:04:47,720 --> 00:04:50,290
+So here's the beginning of my
+product management specific
+
+109
+00:04:50,290 --> 00:04:53,180
+advice, and that is
+to paint a vision.
+
+110
+00:04:53,180 --> 00:04:55,920
+Once you paint a vision and you
+share your vision, people
+
+111
+00:04:55,920 --> 00:04:56,410
+will follow.
+
+112
+00:04:56,410 --> 00:05:00,310
+It'll be a lot easier to follow
+once you have a vision.
+
+113
+00:05:00,310 --> 00:05:02,670
+OK, so David and I started.
+
+114
+00:05:02,670 --> 00:05:04,900
+There was a big mountain
+in front of us.
+
+115
+00:05:04,900 --> 00:05:06,030
+We didn't really know
+what to do.
+
+116
+00:05:06,030 --> 00:05:08,050
+This project had failed a
+number of times before.
+
+117
+00:05:08,050 --> 00:05:10,080
+We didn't really know
+why it had failed.
+
+118
+00:05:10,080 --> 00:05:15,040
+And I had this idea that we
+should do a user study.
+
+119
+00:05:15,040 --> 00:05:16,150
+Just trying to figure out what
+to do, we said, well, let's
+
+120
+00:05:16,150 --> 00:05:17,720
+just do a user study.
+
+121
+00:05:17,720 --> 00:05:19,170
+So we pulled together
+a prototype
+
+122
+00:05:19,170 --> 00:05:20,710
+to do our user study.
+
+123
+00:05:20,710 --> 00:05:23,900
+And once we had this prototype,
+the people around
+
+124
+00:05:23,900 --> 00:05:27,620
+us in Google started to be
+able to imagine that this
+
+125
+00:05:27,620 --> 00:05:31,860
+product might come to life and
+that something might happen.
+
+126
+00:05:31,860 --> 00:05:34,510
+And so this brings me to my
+second piece of product
+
+127
+00:05:34,510 --> 00:05:37,150
+management advice, which is that
+if you don't really know
+
+128
+00:05:37,150 --> 00:05:39,900
+what to do, you should
+just do something.
+
+129
+00:05:39,900 --> 00:05:41,540
+Do something to move
+the ball forward.
+
+130
+00:05:41,540 --> 00:05:45,640
+
+131
+00:05:45,640 --> 00:05:48,440
+I was very fortunate, though,
+that a user study was what we
+
+132
+00:05:48,440 --> 00:05:52,750
+decided to do, because
+people loved it.
+
+133
+00:05:52,750 --> 00:05:53,670
+And it was so awesome.
+
+134
+00:05:53,670 --> 00:05:56,590
+We learned that the project
+and the product had legs.
+
+135
+00:05:56,590 --> 00:05:59,320
+So I remember sitting in the
+labs, and it was in the spring
+
+136
+00:05:59,320 --> 00:06:02,690
+of 2006, for our user study.
+
+137
+00:06:02,690 --> 00:06:03,920
+And one of the searches
+we asked people to
+
+138
+00:06:03,920 --> 00:06:05,530
+do was Barry Bonds.
+
+139
+00:06:05,530 --> 00:06:08,340
+Now, this was a long time ago.
+
+140
+00:06:08,340 --> 00:06:09,210
+This was the Dark Ages.
+
+141
+00:06:09,210 --> 00:06:11,090
+YouTube was just starting out.
+
+142
+00:06:11,090 --> 00:06:13,660
+But there was a home video that
+someone had uploaded of
+
+143
+00:06:13,660 --> 00:06:17,210
+Barry Bonds tying Babe Ruth's
+home run record.
+
+144
+00:06:17,210 --> 00:06:21,310
+And the participant in our
+study, she clicked on the
+
+145
+00:06:21,310 --> 00:06:26,060
+video, she watched the ball sail
+out into the field, and
+
+146
+00:06:26,060 --> 00:06:28,140
+she had this big smile
+on her face.
+
+147
+00:06:28,140 --> 00:06:30,830
+It wasn't unnatural at all that
+she saw this video in the
+
+148
+00:06:30,830 --> 00:06:32,540
+search results.
+
+149
+00:06:32,540 --> 00:06:35,910
+So we knew the project
+had legs, and it was
+
+150
+00:06:35,910 --> 00:06:38,870
+just a great moment.
+
+151
+00:06:38,870 --> 00:06:43,070
+So my final and most important
+piece of product management
+
+152
+00:06:43,070 --> 00:06:45,580
+advice is to listen
+to your users.
+
+153
+00:06:45,580 --> 00:06:49,120
+And even more importantly, use
+your products yourself.
+
+154
+00:06:49,120 --> 00:06:52,170
+Just this weekend when I was
+using Android Search, I
+
+155
+00:06:52,170 --> 00:06:55,820
+noticed that speech recognition
+is slow, like
+
+156
+00:06:55,820 --> 00:06:57,490
+maybe one in seven times.
+
+157
+00:06:57,490 --> 00:06:59,750
+I don't know why, but I'm
+really glad that we're
+
+158
+00:06:59,750 --> 00:07:01,582
+investing in speed.
+
+159
+00:07:01,582 --> 00:07:04,250
+Then I also had some magical
+experiences with Google Now.
+
+160
+00:07:04,250 --> 00:07:07,590
+So I was invited to go to a
+birthday party in Burlingame,
+
+161
+00:07:07,590 --> 00:07:09,890
+and Google Now reminded
+me about the party.
+
+162
+00:07:09,890 --> 00:07:12,040
+And it even told me that
+Burlingame was 30 minutes from
+
+163
+00:07:12,040 --> 00:07:16,180
+my house, which I didn't know,
+and it was super helpful.
+
+164
+00:07:16,180 --> 00:07:18,270
+The more you use your products,
+the easier it is to
+
+165
+00:07:18,270 --> 00:07:21,290
+make decisions and to have an
+intuitive feel for what you
+
+166
+00:07:21,290 --> 00:07:22,540
+should be doing.
+
+167
+00:07:22,540 --> 00:07:24,820
+
+168
+00:07:24,820 --> 00:07:27,360
+So let's summarize my product
+management advice.
+
+169
+00:07:27,360 --> 00:07:29,858
+One, paint a vision.
+
+170
+00:07:29,858 --> 00:07:32,510
+Two, when you don't know what
+to do, just make mini
+
+171
+00:07:32,510 --> 00:07:33,240
+milestones.
+
+172
+00:07:33,240 --> 00:07:35,380
+Roll that ball forward.
+
+173
+00:07:35,380 --> 00:07:36,930
+And three, use your products.
+
+174
+00:07:36,930 --> 00:07:40,240
+
+175
+00:07:40,240 --> 00:07:42,120
+Since this is a Women's
+Techmakers event, I thought
+
+176
+00:07:42,120 --> 00:07:44,450
+I'd close with my very
+own lean-in story.
+
+177
+00:07:44,450 --> 00:07:47,740
+
+178
+00:07:47,740 --> 00:07:49,950
+So back when all this Universal
+Search stuff was
+
+179
+00:07:49,950 --> 00:07:52,880
+going on, I ended up
+getting pregnant.
+
+180
+00:07:52,880 --> 00:07:55,700
+And when I was eight months
+pregnant, my boss, Marissa
+
+181
+00:07:55,700 --> 00:08:00,020
+Mayer, suggested that I lead a
+team of senior engineers to
+
+182
+00:08:00,020 --> 00:08:03,060
+come up with the search strategy
+for the next year.
+
+183
+00:08:03,060 --> 00:08:07,680
+Now, the search strategy, the
+process, the normal process,
+
+184
+00:08:07,680 --> 00:08:10,690
+was to set this meeting in
+mid-November, but my baby was
+
+185
+00:08:10,690 --> 00:08:14,000
+supposed to be born at
+the end of October.
+
+186
+00:08:14,000 --> 00:08:15,620
+And they're like, hey, no
+problem, we'll just
+
+187
+00:08:15,620 --> 00:08:17,480
+move the date up.
+
+188
+00:08:17,480 --> 00:08:22,840
+Didn't give me very much time
+to prepare, and my baby was
+
+189
+00:08:22,840 --> 00:08:23,670
+something that you
+call transverse.
+
+190
+00:08:23,670 --> 00:08:27,130
+So he's lying on his side, and
+I had to have a C-section.
+
+191
+00:08:27,130 --> 00:08:28,666
+So they moved the date up.
+
+192
+00:08:28,666 --> 00:08:31,360
+I moved my C-section to the
+very last possible date.
+
+193
+00:08:31,360 --> 00:08:32,960
+We met in the middle.
+
+194
+00:08:32,960 --> 00:08:36,800
+And on Wednesday, I gave the
+strategy presentation.
+
+195
+00:08:36,800 --> 00:08:38,195
+On Thursday, I had my baby.
+
+196
+00:08:38,195 --> 00:08:42,159
+
+197
+00:08:42,159 --> 00:08:44,720
+Now, this might be horrifying
+to some of you, but to me it
+
+198
+00:08:44,720 --> 00:08:45,850
+was invigorating.
+
+199
+00:08:45,850 --> 00:08:48,280
+And it set me up to have a
+leadership role in Search when
+
+200
+00:08:48,280 --> 00:08:51,670
+I returned from my leave.
+
+201
+00:08:51,670 --> 00:08:54,590
+And the point I want you to take
+away is not that you need
+
+202
+00:08:54,590 --> 00:08:56,900
+to sacrifice your family
+for your career.
+
+203
+00:08:56,900 --> 00:08:59,510
+I feel fortunate enough that
+I haven't had to do that.
+
+204
+00:08:59,510 --> 00:09:02,080
+You see, there was no question
+in my mind that given that
+
+205
+00:09:02,080 --> 00:09:05,290
+opportunity, I would want to
+give that presentation.
+
+206
+00:09:05,290 --> 00:09:09,990
+And it was really huge that
+my manager believed in me.
+
+207
+00:09:09,990 --> 00:09:12,340
+So the takeaway that I'd like
+us to take is that as
+
+208
+00:09:12,340 --> 00:09:16,010
+managers, we shouldn't assume
+people's abilities or desires.
+
+209
+00:09:16,010 --> 00:09:17,500
+We should ask.
+
+210
+00:09:17,500 --> 00:09:20,120
+As managers, it's our job to
+enable greatness in our teams.
+
+211
+00:09:20,120 --> 00:09:22,820
+
+212
+00:09:22,820 --> 00:09:32,278
+[APPLAUSE]
+

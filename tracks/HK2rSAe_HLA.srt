@@ -1,0 +1,104 @@
+1
+00:00:02,770 --> 00:00:07,900
+Hi! My name is Colt MCAnlis, and I am a Developer
+Advocate for Native Client. In this video,
+
+2
+00:00:07,900 --> 00:00:12,730
+I am going to explain how you can get started
+using Native Client to create applications.
+
+3
+00:00:12,730 --> 00:00:17,410
+The first thing you need to do is get the
+SDK and run naclsdk update. This downloads
+
+4
+00:00:17,410 --> 00:00:21,560
+and unpacks the up-to-date tools, headers
+and libraries that you’ll need to build
+
+5
+00:00:21,560 --> 00:00:25,960
+Native Client applications.
+Then my recommendation is to become more familiar
+
+6
+00:00:25,960 --> 00:00:30,650
+with Pepper. Pepper is a set of bindings that
+expose the power of the web platform to C
+
+7
+00:00:30,650 --> 00:00:36,120
+and C++, giving your program the same capabilities
+that JavaScript has. You can start by running
+
+8
+00:00:36,120 --> 00:00:42,530
+some of the examples and inspect their code.
+Understanding the build process is also critical.
+
+9
+00:00:42,530 --> 00:00:46,100
+Start by running the SCons builders, and then
+look at the output.
+
+10
+00:00:46,100 --> 00:00:49,750
+Once you familiarized yourself with Native
+Client’s basic architecture, then you are
+
+11
+00:00:49,750 --> 00:00:54,530
+ready to build your project. If you are porting
+or building your app from an existing code
+
+12
+00:00:54,530 --> 00:00:58,130
+base, then you’ll need to make three key
+changes:
+
+13
+00:00:58,130 --> 00:01:03,149
+First you’ll need to make your C and C++
+source code portable; for that use only the
+
+14
+00:01:03,149 --> 00:01:08,719
+portable dialect of C and C++.
+Second you will need to use the Pepper interfaces
+
+15
+00:01:08,719 --> 00:01:14,340
+to access resources like graphics, audio,
+and input devices. This step makes the resulting
+
+16
+00:01:14,340 --> 00:01:18,979
+application OS-independent, because Pepper
+is an OS-independent API.
+
+17
+00:01:18,979 --> 00:01:23,159
+Third if your application uses hardware accelerated
+graphics, you will need to adapt it to use
+
+18
+00:01:23,159 --> 00:01:27,569
+OpenGL ES 2.0.
+Once your project is done, then you need to
+
+19
+00:01:27,569 --> 00:01:31,999
+package it as a Chrome Web Store app - this
+way you will be able to reach more than 200
+
+20
+00:01:31,999 --> 00:01:36,709
+millions Chrome users.
+To learn more on how to use Native Client
+
+21
+00:01:36,709 --> 00:01:38,979
+check out our documentation at gonacl.com.
+

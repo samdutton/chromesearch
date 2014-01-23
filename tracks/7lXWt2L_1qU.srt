@@ -1,0 +1,1658 @@
+1
+00:00:00,000 --> 00:00:06,050
+
+2
+00:00:06,050 --> 00:00:08,490
+LOUIS GRAY: Welcome back to
+Google Developers Live at I/O.
+
+3
+00:00:08,490 --> 00:00:09,980
+Louis Gray here from
+the Moscone
+
+4
+00:00:09,980 --> 00:00:11,970
+Center at San Francisco.
+
+5
+00:00:11,970 --> 00:00:14,950
+I've got Chris Lyon, hardware
+engineer on the Chromebook
+
+6
+00:00:14,950 --> 00:00:17,060
+Pixel here with me,
+as well as Andrew
+
+7
+00:00:17,060 --> 00:00:19,450
+Bowers, director of product.
+
+8
+00:00:19,450 --> 00:00:21,270
+So I'm really excited to have
+you guys both onstage.
+
+9
+00:00:21,270 --> 00:00:22,710
+Thanks for joining me again.
+
+10
+00:00:22,710 --> 00:00:22,790
+CHRIS LYON: Thank you.
+
+11
+00:00:22,790 --> 00:00:23,200
+ANDREW BOWERS: Thank you.
+
+12
+00:00:23,200 --> 00:00:25,200
+LOUIS GRAY: Now, the Chromebook
+Pixel, it's just
+
+13
+00:00:25,200 --> 00:00:27,620
+been one of the best devices
+I've ever had.
+
+14
+00:00:27,620 --> 00:00:29,390
+Just straight out.
+
+15
+00:00:29,390 --> 00:00:31,200
+Chrome OS has really been
+something that's really
+
+16
+00:00:31,200 --> 00:00:33,280
+intriguing to me for
+a long time.
+
+17
+00:00:33,280 --> 00:00:35,680
+We've really enjoyed having
+the ability to have all my
+
+18
+00:00:35,680 --> 00:00:36,760
+content in one place.
+
+19
+00:00:36,760 --> 00:00:39,120
+And you can switch from computer
+to computer, and it
+
+20
+00:00:39,120 --> 00:00:40,350
+follows you.
+
+21
+00:00:40,350 --> 00:00:43,370
+But for the first time ever,
+this is a device that was
+
+22
+00:00:43,370 --> 00:00:46,770
+completely designed in
+hardware by Google.
+
+23
+00:00:46,770 --> 00:00:48,570
+So I wanted to talk to
+you guys about that.
+
+24
+00:00:48,570 --> 00:00:51,570
+And talk me through that
+process, in terms of how did
+
+25
+00:00:51,570 --> 00:00:52,580
+that happen?
+
+26
+00:00:52,580 --> 00:00:54,960
+And what were we trying
+to achieve?
+
+27
+00:00:54,960 --> 00:00:55,400
+ANDREW BOWERS: Yeah.
+
+28
+00:00:55,400 --> 00:00:58,110
+So the first thing we were
+trying to do is really just
+
+29
+00:00:58,110 --> 00:01:02,350
+create the best Chromebook
+possible, no holds barred, and
+
+30
+00:01:02,350 --> 00:01:04,530
+really thinking about someone
+who's using a Chromebook all
+
+31
+00:01:04,530 --> 00:01:05,430
+day long as well.
+
+32
+00:01:05,430 --> 00:01:07,900
+So a lot of focus, attention
+to detail, on
+
+33
+00:01:07,900 --> 00:01:08,970
+how the device feels.
+
+34
+00:01:08,970 --> 00:01:10,780
+We really want the hardware
+to disappear.
+
+35
+00:01:10,780 --> 00:01:13,430
+We want to make it feel like an
+immersive movie, where you
+
+36
+00:01:13,430 --> 00:01:15,910
+forget that you're in a movie
+theater and you're just really
+
+37
+00:01:15,910 --> 00:01:17,130
+focused on what you're doing.
+
+38
+00:01:17,130 --> 00:01:19,460
+And so part of that's making
+that hardware disappear so you
+
+39
+00:01:19,460 --> 00:01:22,320
+don't feel the keyboard, the
+trackpad, things like that.
+
+40
+00:01:22,320 --> 00:01:24,280
+LOUIS GRAY: Now, what are the
+kind of attributes in hardware
+
+41
+00:01:24,280 --> 00:01:25,420
+that you were trying
+to get to?
+
+42
+00:01:25,420 --> 00:01:28,510
+How did you decide whether it
+had an 11-inch screen or a
+
+43
+00:01:28,510 --> 00:01:29,950
+15-inch screen?
+
+44
+00:01:29,950 --> 00:01:32,380
+What were the things where you
+made a decision on that?
+
+45
+00:01:32,380 --> 00:01:34,410
+How do you go about deciding?
+
+46
+00:01:34,410 --> 00:01:36,520
+CHRIS LYON: So for those items,
+when we were setting
+
+47
+00:01:36,520 --> 00:01:38,890
+out in the early design process,
+we did a large number
+
+48
+00:01:38,890 --> 00:01:42,270
+of user studies on various
+screen sizes, various
+
+49
+00:01:42,270 --> 00:01:45,060
+configurations, keyboard
+placement, et cetera.
+
+50
+00:01:45,060 --> 00:01:48,730
+And a lot of those various
+parameters all fit together to
+
+51
+00:01:48,730 --> 00:01:51,470
+give us the proper shape
+of the laptop.
+
+52
+00:01:51,470 --> 00:01:53,960
+One of the early goals was
+we definitely wanted an
+
+53
+00:01:53,960 --> 00:01:56,370
+absolutely full metal
+enclosure.
+
+54
+00:01:56,370 --> 00:01:59,800
+It feels very nice hold,
+really solid design.
+
+55
+00:01:59,800 --> 00:02:02,070
+But that comes with a lot of
+additional challenges as to
+
+56
+00:02:02,070 --> 00:02:03,480
+how you fit all of the
+other components
+
+57
+00:02:03,480 --> 00:02:04,960
+together inside the system.
+
+58
+00:02:04,960 --> 00:02:05,800
+LOUIS GRAY: OK.
+
+59
+00:02:05,800 --> 00:02:08,620
+And so when I look at this,
+having tried the previous
+
+60
+00:02:08,620 --> 00:02:10,690
+Chromebook models that were
+plastic, they'd come out.
+
+61
+00:02:10,690 --> 00:02:11,810
+They were very light.
+
+62
+00:02:11,810 --> 00:02:13,270
+This one has a stronger feel.
+
+63
+00:02:13,270 --> 00:02:14,730
+It's kind of more industrial.
+
+64
+00:02:14,730 --> 00:02:16,970
+And one of the things that's
+happened as a result of
+
+65
+00:02:16,970 --> 00:02:20,330
+making, I guess, the ultimate
+Chromebook is it's a little
+
+66
+00:02:20,330 --> 00:02:23,080
+bit more expensive than the
+original Chromebook.
+
+67
+00:02:23,080 --> 00:02:23,680
+We've been looking at.
+
+68
+00:02:23,680 --> 00:02:24,460
+Samsung.
+
+69
+00:02:24,460 --> 00:02:26,630
+I've got three of those
+at my house.
+
+70
+00:02:26,630 --> 00:02:27,370
+Got one for my wife.
+
+71
+00:02:27,370 --> 00:02:28,200
+Got one for myself.
+
+72
+00:02:28,200 --> 00:02:29,380
+Got two for my parents.
+
+73
+00:02:29,380 --> 00:02:30,750
+And they're all $249.
+
+74
+00:02:30,750 --> 00:02:32,950
+And obviously, the Pixel
+is a different beast.
+
+75
+00:02:32,950 --> 00:02:35,660
+It's starting at, I think,
+$1,249, and you basically got
+
+76
+00:02:35,660 --> 00:02:37,020
+a little bit more expensive.
+
+77
+00:02:37,020 --> 00:02:38,530
+So what was the thought
+behind that?
+
+78
+00:02:38,530 --> 00:02:41,240
+Was that something where we
+wanted to set it up kind of as
+
+79
+00:02:41,240 --> 00:02:42,810
+a reference model?
+
+80
+00:02:42,810 --> 00:02:45,730
+Or do we expect these to
+be for the mass market?
+
+81
+00:02:45,730 --> 00:02:48,710
+CHRIS LYON: So Pixel should be
+thought of as a halo device,
+
+82
+00:02:48,710 --> 00:02:52,190
+something where we really want
+to showcase a large number of
+
+83
+00:02:52,190 --> 00:02:54,830
+new technologies that aren't
+necessarily in the other
+
+84
+00:02:54,830 --> 00:02:57,530
+Chromebooks, but things that
+we want developers to
+
+85
+00:02:57,530 --> 00:02:58,930
+experiment with--
+
+86
+00:02:58,930 --> 00:03:02,730
+things like the high pixel
+density touchscreen, things
+
+87
+00:03:02,730 --> 00:03:03,940
+like keyboard backlight.
+
+88
+00:03:03,940 --> 00:03:05,980
+I'm not sure if you're
+aware, but there's a
+
+89
+00:03:05,980 --> 00:03:07,530
+microphone array in here.
+
+90
+00:03:07,530 --> 00:03:09,620
+There's two up top
+for beam forming.
+
+91
+00:03:09,620 --> 00:03:11,330
+There's noise cancellation.
+
+92
+00:03:11,330 --> 00:03:14,130
+There's the LTE.
+
+93
+00:03:14,130 --> 00:03:15,790
+This is the first Chromebook
+with that.
+
+94
+00:03:15,790 --> 00:03:18,060
+And again, these are a number of
+features where the hardware
+
+95
+00:03:18,060 --> 00:03:19,350
+has to lead the software
+a bit.
+
+96
+00:03:19,350 --> 00:03:21,460
+We have to get the features out
+there, build a critical
+
+97
+00:03:21,460 --> 00:03:25,910
+mass of users, and then
+encourage the developers to
+
+98
+00:03:25,910 --> 00:03:27,100
+target those features.
+
+99
+00:03:27,100 --> 00:03:29,070
+LOUIS GRAY: You mentioned
+the high screen density.
+
+100
+00:03:29,070 --> 00:03:31,920
+One thing about the Pixel is
+that you shouldn't have to
+
+101
+00:03:31,920 --> 00:03:32,870
+ever see a pixel.
+
+102
+00:03:32,870 --> 00:03:34,490
+I mean, that's sort of what
+we've been talking about.
+
+103
+00:03:34,490 --> 00:03:35,170
+You say Chrome.
+
+104
+00:03:35,170 --> 00:03:37,320
+You want to get the Chrome out
+of the way, the browser, and
+
+105
+00:03:37,320 --> 00:03:39,970
+really have the user be directly
+interfacing with
+
+106
+00:03:39,970 --> 00:03:41,480
+their data, with
+their content.
+
+107
+00:03:41,480 --> 00:03:42,790
+I'm glad you mentioned LTE.
+
+108
+00:03:42,790 --> 00:03:45,090
+I'm actually on LTE right now.
+
+109
+00:03:45,090 --> 00:03:48,440
+The Wi-Fi at the conference has
+been really exceptional.
+
+110
+00:03:48,440 --> 00:03:49,290
+It goes up.
+
+111
+00:03:49,290 --> 00:03:49,980
+It goes down.
+
+112
+00:03:49,980 --> 00:03:51,800
+There's a lot of people fighting
+for attention, and
+
+113
+00:03:51,800 --> 00:03:54,060
+I've really cut through all
+of that by getting on LTE.
+
+114
+00:03:54,060 --> 00:03:56,630
+And having it on this type of
+a device has really been
+
+115
+00:03:56,630 --> 00:03:57,590
+exceptional.
+
+116
+00:03:57,590 --> 00:04:00,190
+And so when I look at the Pixel
+specifically, there's
+
+117
+00:04:00,190 --> 00:04:02,950
+really those three things
+that have set it apart--
+
+118
+00:04:02,950 --> 00:04:06,450
+the inclusion of the LTE, the
+high density pixel screen, and
+
+119
+00:04:06,450 --> 00:04:08,370
+the touch aspect of it.
+
+120
+00:04:08,370 --> 00:04:10,910
+Now, touch is something you
+traditionally accept with a
+
+121
+00:04:10,910 --> 00:04:12,990
+tablet or a mobile phone.
+
+122
+00:04:12,990 --> 00:04:15,740
+What was the thought process
+behind having a touchscreen?
+
+123
+00:04:15,740 --> 00:04:18,810
+And how are we seeing users
+behave with the touchscreen,
+
+124
+00:04:18,810 --> 00:04:21,630
+or possibly developers
+coding for it?
+
+125
+00:04:21,630 --> 00:04:23,350
+ANDREW BOWERS: So I think that
+you hit on it right there,
+
+126
+00:04:23,350 --> 00:04:24,950
+which is touchscreens
+are becoming
+
+127
+00:04:24,950 --> 00:04:26,580
+pervasive in our lives.
+
+128
+00:04:26,580 --> 00:04:27,800
+So they're on your phone.
+
+129
+00:04:27,800 --> 00:04:28,580
+They're on tablets.
+
+130
+00:04:28,580 --> 00:04:31,960
+They're even on ATMs and
+the gas station pumps.
+
+131
+00:04:31,960 --> 00:04:35,010
+And so if you look at children
+interacting with a laptop,
+
+132
+00:04:35,010 --> 00:04:36,850
+they've probably used their
+parents' phone or their
+
+133
+00:04:36,850 --> 00:04:39,680
+tablet, and so they're touching
+the screen already.
+
+134
+00:04:39,680 --> 00:04:43,140
+And so it's just a very
+intuitive way versus an
+
+135
+00:04:43,140 --> 00:04:45,610
+indirect on a trackpad
+or a mouse.
+
+136
+00:04:45,610 --> 00:04:47,620
+And so we're seeing it become
+more and more pervasive, and
+
+137
+00:04:47,620 --> 00:04:49,640
+we think of it as yet
+another way to
+
+138
+00:04:49,640 --> 00:04:51,040
+interact with the computer.
+
+139
+00:04:51,040 --> 00:04:53,070
+It's not the only way you
+interact with a laptop, but
+
+140
+00:04:53,070 --> 00:04:53,620
+it's another way.
+
+141
+00:04:53,620 --> 00:04:56,560
+So to give you an example, on
+Tuesday I spent five hours on
+
+142
+00:04:56,560 --> 00:04:58,600
+a plane, a cramped seat.
+
+143
+00:04:58,600 --> 00:05:01,470
+But I could hold my Pixel like
+this, and I could scroll and
+
+144
+00:05:01,470 --> 00:05:04,190
+archive email on the plane
+much more easily.
+
+145
+00:05:04,190 --> 00:05:07,120
+LOUIS GRAY: The viewers at home
+can't see your hands.
+
+146
+00:05:07,120 --> 00:05:07,870
+ANDREW BOWERS: That's
+a good point.
+
+147
+00:05:07,870 --> 00:05:10,990
+So a lot of times, you'll find
+you'll use something in a
+
+148
+00:05:10,990 --> 00:05:11,580
+different way.
+
+149
+00:05:11,580 --> 00:05:14,810
+Like for instance, when you're
+cramped in on plane, using it
+
+150
+00:05:14,810 --> 00:05:17,600
+like this rather than having
+to use the trackpad.
+
+151
+00:05:17,600 --> 00:05:21,320
+So it opens up new
+opportunities.
+
+152
+00:05:21,320 --> 00:05:21,520
+LOUIS GRAY: Right.
+
+153
+00:05:21,520 --> 00:05:21,730
+Absolutely.
+
+154
+00:05:21,730 --> 00:05:22,610
+And I've seen that a lot.
+
+155
+00:05:22,610 --> 00:05:25,290
+There's one really cool thing
+that you get the right screen
+
+156
+00:05:25,290 --> 00:05:28,180
+combination, you can rotate the
+entire screen 90 degrees
+
+157
+00:05:28,180 --> 00:05:29,930
+or 180 degrees to be fixed.
+
+158
+00:05:29,930 --> 00:05:33,160
+And literally, you look at the
+Chromebook right side up, even
+
+159
+00:05:33,160 --> 00:05:35,690
+if it's on its side, which
+is kind of entertaining.
+
+160
+00:05:35,690 --> 00:05:38,530
+And so for a lot of people who
+have like a vertical monitor,
+
+161
+00:05:38,530 --> 00:05:40,530
+I can see them possibly
+extending out and having that
+
+162
+00:05:40,530 --> 00:05:41,640
+vertical monitor.
+
+163
+00:05:41,640 --> 00:05:45,190
+And the processor in here is
+strong enough that they can
+
+164
+00:05:45,190 --> 00:05:48,090
+push all those pixels even in
+that new configuration.
+
+165
+00:05:48,090 --> 00:05:49,790
+So I want to talk a little
+bit about the speed.
+
+166
+00:05:49,790 --> 00:05:51,865
+This is obviously faster.
+
+167
+00:05:51,865 --> 00:05:52,980
+It's faster.
+
+168
+00:05:52,980 --> 00:05:53,830
+It's brighter.
+
+169
+00:05:53,830 --> 00:05:55,100
+It's got a lot of attributes
+to it.
+
+170
+00:05:55,100 --> 00:05:56,600
+So what about the speed?
+
+171
+00:05:56,600 --> 00:05:57,600
+How did that come into play?
+
+172
+00:05:57,600 --> 00:05:59,560
+CHRIS LYON: So we designed the
+Pixel to be Chrome fast.
+
+173
+00:05:59,560 --> 00:06:02,660
+The idea here was hardware
+should not get in the way of
+
+174
+00:06:02,660 --> 00:06:03,710
+the experience.
+
+175
+00:06:03,710 --> 00:06:05,760
+We wanted this to be able to
+show off the browser and the
+
+176
+00:06:05,760 --> 00:06:09,060
+operating system as
+well as possible.
+
+177
+00:06:09,060 --> 00:06:12,480
+This is an Intel
+i5 CPU in here.
+
+178
+00:06:12,480 --> 00:06:17,070
+There's four gigabytes of RAM,
+pretty standard other features
+
+179
+00:06:17,070 --> 00:06:18,550
+internally aside from that.
+
+180
+00:06:18,550 --> 00:06:24,050
+But it's more than
+enough for web
+
+181
+00:06:24,050 --> 00:06:26,860
+applications, for HTML5 games.
+
+182
+00:06:26,860 --> 00:06:30,640
+And it should actually enable a
+significant amount of future
+
+183
+00:06:30,640 --> 00:06:31,500
+development coming there.
+
+184
+00:06:31,500 --> 00:06:34,710
+One of the things we're really
+excited about is HTML5 games
+
+185
+00:06:34,710 --> 00:06:35,680
+are becoming more and
+more popular.
+
+186
+00:06:35,680 --> 00:06:38,700
+And actually, we're seeing
+developers make use of the
+
+187
+00:06:38,700 --> 00:06:40,700
+touchscreen, of the
+high PPI display.
+
+188
+00:06:40,700 --> 00:06:42,490
+And we're really hoping that
+as we can build more of a
+
+189
+00:06:42,490 --> 00:06:45,840
+critical mass of systems out
+there with those features that
+
+190
+00:06:45,840 --> 00:06:49,940
+people will be implementing
+more and more higher end
+
+191
+00:06:49,940 --> 00:06:50,640
+applications.
+
+192
+00:06:50,640 --> 00:06:52,110
+So we really wanted to make
+sure that it had the
+
+193
+00:06:52,110 --> 00:06:53,550
+horsepower under the
+hood there to be
+
+194
+00:06:53,550 --> 00:06:54,130
+able to handle that.
+
+195
+00:06:54,130 --> 00:06:56,115
+ANDREW BOWERS: And just to
+add to that real quick.
+
+196
+00:06:56,115 --> 00:06:58,956
+I think one of the ways we also
+think about is not we
+
+197
+00:06:58,956 --> 00:07:01,460
+don't want consumers to have to
+think about what processor
+
+198
+00:07:01,460 --> 00:07:02,860
+do they have in the machine.
+
+199
+00:07:02,860 --> 00:07:04,800
+We just want it to be, is
+it fast enough for what
+
+200
+00:07:04,800 --> 00:07:06,090
+I want it to do?
+
+201
+00:07:06,090 --> 00:07:08,520
+And so we want to get
+to that world too.
+
+202
+00:07:08,520 --> 00:07:10,170
+LOUIS GRAY: And one of things
+that I've experienced having
+
+203
+00:07:10,170 --> 00:07:12,350
+the touchscreen on the laptop
+is you can have more of an
+
+204
+00:07:12,350 --> 00:07:15,680
+immersive experience, be
+it with Maps or Photos.
+
+205
+00:07:15,680 --> 00:07:18,070
+There's something really
+breathtaking about diving into
+
+206
+00:07:18,070 --> 00:07:21,140
+Google Maps or the Google+
+Photos experience and just
+
+207
+00:07:21,140 --> 00:07:22,710
+being able to pinch to zoom
+and getting right
+
+208
+00:07:22,710 --> 00:07:23,380
+into what you want.
+
+209
+00:07:23,380 --> 00:07:25,870
+And you just swipe to the side
+and have it go away.
+
+210
+00:07:25,870 --> 00:07:27,990
+And it's something that's
+really become natural.
+
+211
+00:07:27,990 --> 00:07:30,280
+It's one of those funny things
+about having a glossy screen
+
+212
+00:07:30,280 --> 00:07:31,750
+that you touch all the time.
+
+213
+00:07:31,750 --> 00:07:33,810
+I was in the car the other day
+making a quick web change--
+
+214
+00:07:33,810 --> 00:07:35,690
+I was on LTE-- and I
+saw my fingerprints
+
+215
+00:07:35,690 --> 00:07:36,830
+all over the screen.
+
+216
+00:07:36,830 --> 00:07:39,560
+How do you guys handle just
+managing that type of thing,
+
+217
+00:07:39,560 --> 00:07:42,080
+where you get a little bit dirty
+and you clean it off?
+
+218
+00:07:42,080 --> 00:07:43,670
+So what do you think about
+that kind of stuff?
+
+219
+00:07:43,670 --> 00:07:45,140
+ANDREW BOWERS: It's
+called a cloth.
+
+220
+00:07:45,140 --> 00:07:46,940
+CHRIS LYON: It is actually a big
+engineering challenge, and
+
+221
+00:07:46,940 --> 00:07:49,210
+it is something that we
+put a fair amount of
+
+222
+00:07:49,210 --> 00:07:50,430
+work into with Pixel.
+
+223
+00:07:50,430 --> 00:07:52,120
+Obviously, there's still a
+long ways to go in that
+
+224
+00:07:52,120 --> 00:07:55,310
+direction, and it's something
+we're continuing to research.
+
+225
+00:07:55,310 --> 00:07:56,320
+LOUIS GRAY: Yeah, it's one
+of those fun things.
+
+226
+00:07:56,320 --> 00:07:58,490
+And you don't realize how often
+you touch it until you
+
+227
+00:07:58,490 --> 00:08:00,739
+get the little bit of glare, and
+you're like wow, I touch
+
+228
+00:08:00,739 --> 00:08:01,760
+this thing all the time.
+
+229
+00:08:01,760 --> 00:08:02,930
+You've got the hands on there.
+
+230
+00:08:02,930 --> 00:08:05,300
+CHRIS LYON: One of the nice
+things though-- the screen is
+
+231
+00:08:05,300 --> 00:08:08,620
+Gorilla Glass coating,
+just very resilient.
+
+232
+00:08:08,620 --> 00:08:11,310
+So at least even if you are
+smudging it, you don't have to
+
+233
+00:08:11,310 --> 00:08:12,090
+worry about damaging it.
+
+234
+00:08:12,090 --> 00:08:13,930
+LOUIS GRAY: What I find is I
+often am reaching to other
+
+235
+00:08:13,930 --> 00:08:16,610
+people's computers and expecting
+that I can impact
+
+236
+00:08:16,610 --> 00:08:17,310
+the touchscreen.
+
+237
+00:08:17,310 --> 00:08:17,940
+And I'm like, are
+you kidding me?
+
+238
+00:08:17,940 --> 00:08:20,240
+Why are you using
+that product?
+
+239
+00:08:20,240 --> 00:08:21,680
+CHRIS LYON: Actually, that's
+been an interesting problem in
+
+240
+00:08:21,680 --> 00:08:22,110
+the office.
+
+241
+00:08:22,110 --> 00:08:24,950
+So when we were using these
+initially internally a lot,
+
+242
+00:08:24,950 --> 00:08:26,920
+people got in the habit of when
+they'd written an email
+
+243
+00:08:26,920 --> 00:08:30,110
+then just pushing the Send or
+the Compose button on there.
+
+244
+00:08:30,110 --> 00:08:32,510
+And you'd see people walking
+around when this was still
+
+245
+00:08:32,510 --> 00:08:34,700
+secret and we couldn't have
+them in every meeting.
+
+246
+00:08:34,700 --> 00:08:36,299
+And they'd have their ThinkPad
+out, and they'd push the
+
+247
+00:08:36,299 --> 00:08:37,059
+screen, and they'd get mad.
+
+248
+00:08:37,059 --> 00:08:38,110
+LOUIS GRAY: Nothing
+would happen.
+
+249
+00:08:38,110 --> 00:08:40,010
+CHRIS LYON: Definitely a number
+of our vendors and
+
+250
+00:08:40,010 --> 00:08:42,270
+partners probably caught
+on to that.
+
+251
+00:08:42,270 --> 00:08:43,709
+LOUIS GRAY: We have like five
+minutes left, so I want to
+
+252
+00:08:43,709 --> 00:08:45,470
+talk a little about Chrome OS.
+
+253
+00:08:45,470 --> 00:08:47,690
+Now, you know Chrome OS is still
+a little bit new for a
+
+254
+00:08:47,690 --> 00:08:49,980
+lot of people, and it's really
+kind of growing in maturity in
+
+255
+00:08:49,980 --> 00:08:50,900
+terms of the capability.
+
+256
+00:08:50,900 --> 00:08:54,030
+Every time Chrome gets better,
+Chrome OS gets better.
+
+257
+00:08:54,030 --> 00:08:56,580
+And about two years ago-- maybe
+it was even three at
+
+258
+00:08:56,580 --> 00:08:59,440
+this point-- with the Cr-48
+model coming out, really kind
+
+259
+00:08:59,440 --> 00:09:01,280
+of the first reference
+point of having a
+
+260
+00:09:01,280 --> 00:09:02,570
+Chrome device out there.
+
+261
+00:09:02,570 --> 00:09:04,120
+It wasn't super fast.
+
+262
+00:09:04,120 --> 00:09:06,140
+There were some aspects of the
+hardware which were not
+
+263
+00:09:06,140 --> 00:09:08,270
+perfect, but it was a
+fun reference point.
+
+264
+00:09:08,270 --> 00:09:10,620
+And since then, we've continued
+to see iterations
+
+265
+00:09:10,620 --> 00:09:15,725
+from Chrome via devices from
+Samsung, Lenovo, HP, Acer.
+
+266
+00:09:15,725 --> 00:09:17,240
+I hope I've mentioned
+them all.
+
+267
+00:09:17,240 --> 00:09:19,450
+And you've seen people come up
+with different price points
+
+268
+00:09:19,450 --> 00:09:20,520
+and different sizes.
+
+269
+00:09:20,520 --> 00:09:23,450
+Now, what has been your kind of
+response to see how Chrome
+
+270
+00:09:23,450 --> 00:09:25,070
+OS is evolving?
+
+271
+00:09:25,070 --> 00:09:27,010
+And what is left?
+
+272
+00:09:27,010 --> 00:09:29,340
+What is kind of the last things
+that the Chrome OS
+
+273
+00:09:29,340 --> 00:09:32,030
+should be doing, where people
+can really safely leave more
+
+274
+00:09:32,030 --> 00:09:36,190
+traditional operating systems?
+
+275
+00:09:36,190 --> 00:09:38,960
+ANDREW BOWERS: So the Samsung
+Chromebook has been the number
+
+276
+00:09:38,960 --> 00:09:42,540
+one laptop on Amazon for about
+190 days since its launch,
+
+277
+00:09:42,540 --> 00:09:43,710
+consecutively.
+
+278
+00:09:43,710 --> 00:09:47,220
+And so I think that speaks for
+itself in terms of what people
+
+279
+00:09:47,220 --> 00:09:48,530
+are ready for.
+
+280
+00:09:48,530 --> 00:09:51,600
+With the Pixel, we've taken it
+a step further as well in
+
+281
+00:09:51,600 --> 00:09:54,140
+terms of there are a lot of
+people that wanted high-end
+
+282
+00:09:54,140 --> 00:09:55,430
+hardware, precision hardware.
+
+283
+00:09:55,430 --> 00:09:57,720
+They spend 10 hours a
+day on a Chromebook.
+
+284
+00:09:57,720 --> 00:10:01,540
+And so when we say for everyone,
+we don't just mean
+
+285
+00:10:01,540 --> 00:10:05,580
+people that want a very
+affordable laptop, but also a
+
+286
+00:10:05,580 --> 00:10:08,110
+precision experience with a
+great keyboard and trackpad
+
+287
+00:10:08,110 --> 00:10:08,850
+and touchscreen.
+
+288
+00:10:08,850 --> 00:10:11,210
+And so with the Pixel, we're
+bringing that as well.
+
+289
+00:10:11,210 --> 00:10:13,250
+So you cover different
+needs out there
+
+290
+00:10:13,250 --> 00:10:14,280
+for different people.
+
+291
+00:10:14,280 --> 00:10:14,590
+LOUIS GRAY: Sure.
+
+292
+00:10:14,590 --> 00:10:16,510
+And I think you're mentioning
+that you say for everyone, but
+
+293
+00:10:16,510 --> 00:10:18,650
+it's also for everything.
+
+294
+00:10:18,650 --> 00:10:22,320
+As someone who's very Google
+Drive-centric, with all of my
+
+295
+00:10:22,320 --> 00:10:24,840
+files and my applications there,
+going to Gmail, going
+
+296
+00:10:24,840 --> 00:10:27,800
+to my Google+, I really believe
+at this point every
+
+297
+00:10:27,800 --> 00:10:29,770
+computer is my computer.
+
+298
+00:10:29,770 --> 00:10:30,850
+So long as I can get
+to my Google
+
+299
+00:10:30,850 --> 00:10:32,160
+content, it's all there.
+
+300
+00:10:32,160 --> 00:10:34,320
+But actually, I'd much rather
+be using a Pixel.
+
+301
+00:10:34,320 --> 00:10:36,250
+If you handed me a ThinkPad,
+I'd be fine.
+
+302
+00:10:36,250 --> 00:10:38,530
+I'd be able to boot up Chrome
+and do all my work.
+
+303
+00:10:38,530 --> 00:10:40,610
+But with the Pixel, it just
+has such kind of a
+
+304
+00:10:40,610 --> 00:10:42,470
+professional, high quality
+experience.
+
+305
+00:10:42,470 --> 00:10:44,640
+You don't want to suffer the
+screen display of something
+
+306
+00:10:44,640 --> 00:10:46,610
+else which isn't as strong.
+
+307
+00:10:46,610 --> 00:10:48,880
+And even just the little bits
+with like the keys and the
+
+308
+00:10:48,880 --> 00:10:52,130
+hardware and the trackpad are
+so professionally designed.
+
+309
+00:10:52,130 --> 00:10:54,230
+And so I think you can really
+see that, for those people who
+
+310
+00:10:54,230 --> 00:10:56,083
+do get an opportunity to
+get their hands on it
+
+311
+00:10:56,083 --> 00:10:57,700
+to check that out.
+
+312
+00:10:57,700 --> 00:11:00,220
+So for the many people who are
+watching on the livestream,
+
+313
+00:11:00,220 --> 00:11:02,386
+how do they get their
+hands on a Pixel?
+
+314
+00:11:02,386 --> 00:11:04,270
+ANDREW BOWERS: So they can go
+to the Google Play store
+
+315
+00:11:04,270 --> 00:11:07,380
+online or bestbuy.com as well.
+
+316
+00:11:07,380 --> 00:11:08,670
+LOUIS GRAY: And Best Buy
+has them in display.
+
+317
+00:11:08,670 --> 00:11:11,510
+I remember that's actually
+where I bought the three
+
+318
+00:11:11,510 --> 00:11:12,820
+Samsung Chromebooks
+that I got.
+
+319
+00:11:12,820 --> 00:11:14,360
+I almost cleaned them out.
+
+320
+00:11:14,360 --> 00:11:16,770
+And I think I sold five other
+ones in the 10 minutes I was
+
+321
+00:11:16,770 --> 00:11:18,290
+there just playing demo.
+
+322
+00:11:18,290 --> 00:11:20,680
+And so I think it's great that
+you have the Pixels out there
+
+323
+00:11:20,680 --> 00:11:22,410
+getting really big
+distribution.
+
+324
+00:11:22,410 --> 00:11:24,490
+Anything else that the viewers
+should know about the Pixel
+
+325
+00:11:24,490 --> 00:11:26,950
+before we cut?
+
+326
+00:11:26,950 --> 00:11:29,440
+ANDREW BOWERS: I think that you
+really have to experience
+
+327
+00:11:29,440 --> 00:11:33,460
+it to understand what it
+is and what it means.
+
+328
+00:11:33,460 --> 00:11:36,240
+And I think it brings
+Chromebooks to a whole other
+
+329
+00:11:36,240 --> 00:11:39,095
+level of user that want
+to use Chromebooks.
+
+330
+00:11:39,095 --> 00:11:41,940
+And so we hope that it'll open
+up a lot of opportunities for
+
+331
+00:11:41,940 --> 00:11:44,420
+people to experience Chromebooks
+and how easy they
+
+332
+00:11:44,420 --> 00:11:46,586
+are to use and how great it
+is to live with them.
+
+333
+00:11:46,586 --> 00:11:48,370
+LOUIS GRAY: Well, thank you
+very much, both for you
+
+334
+00:11:48,370 --> 00:11:50,600
+joining me on stage and for
+all the work that you did
+
+335
+00:11:50,600 --> 00:11:52,110
+putting into this product.
+
+336
+00:11:52,110 --> 00:11:54,940
+It's obviously something I use
+every single day, not just at
+
+337
+00:11:54,940 --> 00:11:55,470
+the conference.
+
+338
+00:11:55,470 --> 00:11:57,780
+And I constantly run into
+my kids saying, hey,
+
+339
+00:11:57,780 --> 00:11:58,290
+Daddy, look at that.
+
+340
+00:11:58,290 --> 00:12:00,420
+And they'll click on my
+touchscreen and accidentally
+
+341
+00:12:00,420 --> 00:12:01,900
+click on an ad or something.
+
+342
+00:12:01,900 --> 00:12:04,080
+But they understand exactly
+how to interface with a
+
+343
+00:12:04,080 --> 00:12:05,560
+touchscreen, because they've
+been growing up with tablets.
+
+344
+00:12:05,560 --> 00:12:08,080
+And we're seeing really the next
+generation of personal
+
+345
+00:12:08,080 --> 00:12:09,620
+computing happen right
+in front of us.
+
+346
+00:12:09,620 --> 00:12:10,980
+So thank you very
+much for that.
+
+347
+00:12:10,980 --> 00:12:11,300
+CHRIS LYON: Thank you.
+
+348
+00:12:11,300 --> 00:12:13,150
+LOUIS GRAY: So for all of you
+watching on this livestream,
+
+349
+00:12:13,150 --> 00:12:14,520
+appreciate you joining us.
+
+350
+00:12:14,520 --> 00:12:16,380
+We're going to kick you
+back to the sessions.
+
+351
+00:12:16,380 --> 00:12:19,360
+I believe up next we have
+an event with Android.
+
+352
+00:12:19,360 --> 00:12:21,860
+You won't want to miss Reto
+Meier talking with Hugo Barra
+
+353
+00:12:21,860 --> 00:12:23,110
+and Hiroshi Lockheimer.
+
+354
+00:12:23,110 --> 00:12:29,423
+

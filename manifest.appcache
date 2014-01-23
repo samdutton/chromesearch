@@ -1,0 +1,9 @@
+CACHE MANIFEST
+#version 1.0 16-11-2012
+
+CACHE:
+# index.html is cached by default anyway -- this is just to be explicit
+index.html
+../css/main.css
+../js/lib/ga.js
+../favicon.ico

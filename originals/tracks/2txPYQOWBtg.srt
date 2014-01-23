@@ -1,0 +1,3219 @@
+1
+00:00:01,100 --> 00:00:05,950
+>>Alex Komoroske: Let's get started.
+>>Dimitri Glazkov: Let's get started. So what
+
+2
+00:00:05,950 --> 00:00:12,950
+the heck of Web components?
+>>Alex Komoroske: So When you guys saw that
+
+3
+00:00:13,810 --> 00:00:18,140
+word component, you probably thought what
+is that? Well, I submit that each and every
+
+4
+00:00:18,140 --> 00:00:25,140
+one of you know what a component is because
+you use them today. You use them in lots of
+
+5
+00:00:34,760 --> 00:00:41,760
+different cases. So the first case is in embedded
+widgets. So here if you have a Google+ button
+
+6
+00:00:49,350 --> 00:00:56,350
+inside your site or a like button or something
+like that --
+
+7
+00:01:00,419 --> 00:01:07,419
+>> Dimitri Glazkov: Or a Twitter button.
+>>Alex Komoroske: This is a third-party bit
+
+8
+00:01:13,500 --> 00:01:20,500
+of code that's running within your site. It's
+something where you have trust issues, right?
+
+9
+00:01:23,060 --> 00:01:30,060
+They don't want to allow you to mess with
+all of their stuff or (indiscernible) privileged
+
+10
+00:01:34,039 --> 00:01:41,039
+APIs, and they also don't want you to style
+their stuff. So they talk a lot about discipline.
+
+11
+00:01:46,429 --> 00:01:53,429
+Like, "Thou shalt not use anything under -- sell
+anything under my little ID" and stuff like
+
+12
+00:01:57,920 --> 00:02:03,659
+that.
+>>Dimitri Glazkov: Right, and of course we
+
+13
+00:02:03,659 --> 00:02:10,659
+as user of those widgets go, "Eh, it's more
+like an etiquette." Try not to do that stuff
+
+14
+00:02:19,050 --> 00:02:26,050
+and we'll mess with that the way we want to
+to make it look nice.
+
+15
+00:02:43,020 --> 00:02:50,020
+>>Alex Komoroske: And so in fact, what everybody
+does, they give up on these iframes, but that's
+
+16
+00:03:03,040 --> 00:03:10,040
+not really ideal.
+So another use case is when you are writing
+
+17
+00:03:20,260 --> 00:03:27,260
+your own app, and say you want a tabstrip,
+well, you shouldn't have to create a tabstrip
+
+18
+00:03:31,540 --> 00:03:38,540
+because there are thousands of them that other
+people have created; you just want to use
+
+19
+00:03:38,570 --> 00:03:44,870
+those.
+So you just want to grab in a widget or a
+
+20
+00:03:44,870 --> 00:03:50,950
+component that someone else has written, and
+put it inside of your app.
+
+21
+00:03:50,950 --> 00:03:57,950
+>>Dimitri Glazkov: And there are entire libraries
+written nowadays, and some of them are quite
+
+22
+00:04:00,970 --> 00:04:06,850
+complete, libraries, and widgets and all of
+the different UI elements that you might want
+
+23
+00:04:06,850 --> 00:04:10,760
+to put together.
+And of course, unfortunately, the problem
+
+24
+00:04:10,760 --> 00:04:17,760
+there is that all of these libraries espouse
+their own strategy on how to execute the UI
+
+25
+00:04:19,140 --> 00:04:26,140
+widget composition and how those things come
+together. And so like one of the top stock
+
+26
+00:04:28,350 --> 00:04:33,200
+overflow
+questions would be how do I use the widget
+
+27
+00:04:33,200 --> 00:04:38,060
+from Framework Foo in Framework R, right?
+>>Alex Komoroske: Unfortunately, they follow
+
+28
+00:04:38,060 --> 00:04:45,060
+different conventions, so often the answer
+is you use a lot of duct tape, a lot of script,
+
+29
+00:04:48,870 --> 00:04:55,870
+jam them together as best you can.
+>>Dimitri Glazkov: Don't touch those parts.
+
+30
+00:04:57,420 --> 00:05:04,420
+>>Alex Komoroske: And don't do this, whatever
+you do. So the final one is custom-built widgets.
+
+31
+00:05:06,120 --> 00:05:13,120
+Are you hungry? So bear with me for a second.
+You are all familiar with spaghetti code,
+
+32
+00:05:14,270 --> 00:05:21,270
+right? Where you have all of these crazy stuff
+to do, really hacky. When you are writing
+
+33
+00:05:22,090 --> 00:05:29,090
+your own apps, you want to have this better
+fit of encapsulation, right? Because that's
+
+34
+00:05:30,880 --> 00:05:37,880
+how you build more complex things. But it's
+hard to do in the above platform, so the best
+
+35
+00:05:46,720 --> 00:05:53,720
+that you can kind of get is lasagne. You've
+got layers, but they're still kind of messy,
+
+36
+00:05:58,720 --> 00:06:05,720
+right? So even when you are building any kind
+of app, you are building these custom elements
+
+37
+00:06:07,800 --> 00:06:13,190
+for yourself.
+>>Dimitri Glazkov: The components is, you
+
+38
+00:06:13,190 --> 00:06:20,190
+know, one use of that.
+>>Alex Komoroske: So let's go dive into our
+
+39
+00:06:21,960 --> 00:06:28,960
+example we will be talking through today.
+We're going to build a poll app and show you
+
+40
+00:06:32,200 --> 00:06:39,200
+how we built this today. So here it is. It's
+a pretty app.
+
+41
+00:06:43,919 --> 00:06:50,919
+It's got a cool HTML file logo, it's got a
+title, a subtitle, different options. If you
+
+42
+00:06:57,320 --> 00:07:04,320
+aren't familiar with them, you can hover over
+them to see the information about them. You
+
+43
+00:07:05,960 --> 00:07:12,960
+can select them. I selected things. You can
+also see the results. See what other people
+
+44
+00:07:13,360 --> 00:07:20,360
+have voted for. But let's dive into how this
+stuff actually
+
+45
+00:07:21,120 --> 00:07:25,139
+works. So I'm going to open up Web inspector
+here,
+
+46
+00:07:25,139 --> 00:07:31,710
+I have got this way zoomed in, which is why
+it looks so funky.
+
+47
+00:07:31,710 --> 00:07:35,480
+>>Dimitri Glazkov: And if you look at this
+today, and this is a written -- you know,
+
+48
+00:07:35,480 --> 00:07:42,480
+this is a pretty cutting edge technology even
+by today's standard. Shout out for David who
+
+49
+00:07:43,280 --> 00:07:47,550
+wrote this code. It's using what you would
+call the modern
+
+50
+00:07:47,550 --> 00:07:54,050
+principles of Web design, and that is, you
+know, you do see your components right away.
+
+51
+00:07:54,050 --> 00:08:01,050
+You see the poll is one component, which is
+a backbone view; and then you see the choices
+
+52
+00:08:03,240 --> 00:08:09,310
+view, results view, and all of those different
+things that are put together into a widget
+
+53
+00:08:09,310 --> 00:08:14,030
+hierarchy of some sort, right? Unfortunately,
+some of the things immediately
+
+54
+00:08:14,030 --> 00:08:17,889
+start jumping out at you and going what's
+going on here?
+
+55
+00:08:17,889 --> 00:08:22,190
+See those strings there? Your HTML became
+just a string, right? It's not a markup anymore.
+
+56
+00:08:22,190 --> 00:08:24,180
+It's just the cottage cheese in your Lasagne,
+right?
+
+57
+00:08:24,180 --> 00:08:29,350
+And so at this point you are starting to go
+and say, "Well, I'm not really working in
+
+58
+00:08:29,350 --> 00:08:34,779
+HTML anymore; I'm working in this parallel
+world that the framework has designed for
+
+59
+00:08:34,779 --> 00:08:39,909
+me. And then what happens is this framework
+will do the right thing and project the actual
+
+60
+00:08:39,909 --> 00:08:43,289
+HTML or DOM tree into the browser for user
+to see. And, of course, when the user clicks
+
+61
+00:08:43,289 --> 00:08:50,079
+on something, the backward thing happens,
+you know. The framework traverses the events
+
+62
+00:08:50,079 --> 00:08:57,079
+back to your tree to your object hierarchy
+and tells you what happened. It's not just
+
+63
+00:08:57,540 --> 00:09:00,029
+the deal that was clicked; it's your poll
+that was selected.
+
+64
+00:09:00,029 --> 00:09:07,029
+Ah-ha, I understand this now. So if you look
+at this markup right now, you actually see
+
+65
+00:09:07,439 --> 00:09:11,660
+this very clearly. It's that markup is not
+necessarily representative of what the poll
+
+66
+00:09:11,660 --> 00:09:17,629
+is; it's actually a lot of things in addition
+to just what should be a very simple widget
+
+67
+00:09:17,629 --> 00:09:22,869
+layout, right? You have poll and you have
+choices and that's it. What else should be
+
+68
+00:09:22,869 --> 00:09:29,869
+going on here? But there is actually a lot
+of markup going on. That's because the markup
+
+69
+00:09:34,399 --> 00:09:39,649
+is essentially a projection. And even worse,
+today, if you load this page, it's just a
+
+70
+00:09:39,649 --> 00:09:43,980
+DIV in markup. What happens is the framework
+then blows up
+
+71
+00:09:43,980 --> 00:09:50,680
+this DIV using the JavaScript and creates
+the actual framework out of it.
+
+72
+00:09:50,680 --> 00:09:55,279
+So -- you think this is bad?
+>>Alex Komoroske: Right. So I actually have
+
+73
+00:09:55,279 --> 00:10:02,019
+something that haunts my nightmares, and it
+will haunt yours, too, after I show you.
+
+74
+00:10:02,019 --> 00:10:08,009
+So if you open -- if you go to, say, just
+Gmail which we all use, know and love, if
+
+75
+00:10:08,009 --> 00:10:14,100
+you switch and look at the Web inspector in
+here, you inspect some random elements -- what
+
+76
+00:10:14,100 --> 00:10:20,029
+is going on?
+>>Dimitri Glazkov: Oh, my God! What is this?
+
+77
+00:10:20,029 --> 00:10:27,029
+This should be a very simple widget tree,
+right? There's like a list of things and then
+
+78
+00:10:27,459 --> 00:10:31,639
+there's -- oh, my God look at this! Stairway
+to hell. [Laughter]
+
+79
+00:10:31,639 --> 00:10:34,300
+>>Dimitri Glazkov: Right? What's going on
+there?
+
+80
+00:10:34,300 --> 00:10:39,920
+>>Alex Komoroske: This doesn't make any sense.
+And so -- this is in this bizarro. You know,
+
+81
+00:10:39,920 --> 00:10:46,920
+I bet a lot of you watching this were saying,
+"Oh, well that's just how you do it, right?"
+
+82
+00:10:48,449 --> 00:10:55,449
+Like, why are you talking about why this is
+insane? This is just how you make it work.
+
+83
+00:10:58,480 --> 00:11:05,480
+You know what, Dimitri? I submit that everyone
+in this room who said that is insane. Right?
+
+84
+00:11:06,429 --> 00:11:09,110
+[Laughter].
+>>Alex Komoroske: This is insane, this is
+
+85
+00:11:09,110 --> 00:11:14,319
+crazy.
+>>Dimitri Glazkov: We're insane, yay! All
+
+86
+00:11:14,319 --> 00:11:21,319
+right. But the thing is that -- it is true,
+we are
+
+87
+00:11:21,660 --> 00:11:28,660
+doing something to work around the issues
+in the browser. And we're writing a lot of
+
+88
+00:11:29,350 --> 00:11:36,350
+code. We're writing frameworks to help us
+do this -- these bits of code. Then with more
+
+89
+00:11:38,369 --> 00:11:45,300
+code that we write, we have more opportunities
+for -- for losing test coverage, for example,
+
+90
+00:11:45,300 --> 00:11:52,300
+and not knowing exactly what's happening.
+And clearly more code you ship over the wire,
+
+91
+00:11:56,220 --> 00:12:03,220
+the slower your application will go, right?
+And the development time suffers, of course.
+
+92
+00:12:05,540 --> 00:12:09,839
+Unless you stay in the confines of that specific
+framework, right?
+
+93
+00:12:09,839 --> 00:12:16,839
+>>Alex Komoroske: So that's sort of on a low
+level why this is bad. On a high level, this
+
+94
+00:12:19,550 --> 00:12:26,189
+is bad, too. Right? If you looked at this
+DOM, this isn't very
+
+95
+00:12:26,189 --> 00:12:33,189
+symmetric at all. I had to look through it.
+I didn't really understand what those things
+
+96
+00:12:33,899 --> 00:12:39,220
+were doing. The Gmail example, of course,
+is way on one end of the spectrum. But actually
+
+97
+00:12:39,220 --> 00:12:45,869
+if we look at our index, Google, we see the
+Web is getting less and less semantic as we
+
+98
+00:12:45,869 --> 00:12:51,470
+go. There's more DIVs and spans. It's harder
+to understand what's going on.
+
+99
+00:12:51,470 --> 00:12:58,089
+>>Dimitri Glazkov: And more empty DIVs, like
+I mentioned before, right? You try to index
+
+100
+00:12:58,089 --> 00:13:04,589
+a page, you go there, you say, oh, there's
+nothing there, no, no, that's actually an
+
+101
+00:13:04,589 --> 00:13:10,619
+NPR app but loads all kinds of images. You
+have to run script to understand that it does
+
+102
+00:13:10,619 --> 00:13:17,189
+that, right?
+>>Alex Komoroske: So running script means
+
+103
+00:13:17,189 --> 00:13:24,189
+that you have to -- to make any kind of complicated
+app, you have to run script. You can't be
+
+104
+00:13:31,980 --> 00:13:38,980
+a web author; you have to be a Web developer
+to make something work today. Okay. So I have
+
+105
+00:13:40,569 --> 00:13:47,569
+one bit of good news. You guys are all insane,
+but it's not your
+
+106
+00:13:48,179 --> 00:13:55,179
+fault. It's the fault of the platform right
+now and that's why you have to do these things.
+
+107
+00:14:03,059 --> 00:14:07,420
+>>Dimitri Glazkov: That's right.
+>>Alex Komoroske: So if you look at this,
+
+108
+00:14:07,420 --> 00:14:14,420
+the rare thing of it, is the Web platform
+has all of these amazing technologies that
+
+109
+00:14:16,860 --> 00:14:22,499
+do all kinds of really cool stuff. But there
+are a few little potholes. A few little tiny
+
+110
+00:14:22,499 --> 00:14:28,329
+things that don't work correctly or that are
+difficult. And you run into them. You're on
+
+111
+00:14:28,329 --> 00:14:32,790
+this information super highway, everything
+is working great, you run into a pothole,
+
+112
+00:14:32,790 --> 00:14:37,619
+and you say, "Ooop, I can't handle this."
+But that's okay.
+
+113
+00:14:37,619 --> 00:14:44,239
+I have script, I have an escape hatch. I will
+do this in JavaScript. It will be okay. So
+
+114
+00:14:44,239 --> 00:14:48,329
+you go a little tiny bit off road. That's
+fine, right?
+
+115
+00:14:48,329 --> 00:14:50,829
+Now you run into another pothole, a deeper
+pothole offroad. This means you're offroad,
+
+116
+00:14:50,829 --> 00:14:53,889
+right? And it's a pothole that wouldn't have
+been
+
+117
+00:14:53,889 --> 00:14:58,049
+there had you been on the highway, had you
+been able to use these normal technologies,
+
+118
+00:14:58,049 --> 00:15:02,949
+but you're offroad. That's okay. You write
+a little bit more script, you go a little
+
+119
+00:15:02,949 --> 00:15:03,980
+bit more offroad. Things are wrong, right?
+Unfortunately, this
+
+120
+00:15:03,980 --> 00:15:09,170
+leads into a pit of despair, right? Like the
+more offroad you go, after a certain point
+
+121
+00:15:09,170 --> 00:15:13,329
+you are drawing your own cursor, you've completely
+escaped the browser here.
+
+122
+00:15:13,329 --> 00:15:17,299
+[Laughter].
+>>Alex Komoroske: You are sort of building
+
+123
+00:15:17,299 --> 00:15:22,499
+inside this escape hatch. JavaScript is an
+escape hatch. If the (indiscernible) doesn't
+
+124
+00:15:22,499 --> 00:15:28,899
+do what you need, you are now building everything
+inside of the escape hatch. That's crazy.
+
+125
+00:15:28,899 --> 00:15:35,899
+Even if you don't think that you are doing
+it, you think you are doing a very good job
+
+126
+00:15:37,350 --> 00:15:44,350
+of being semantic and all of that stuff, well,
+the framework they are using is doing it for
+
+127
+00:15:45,609 --> 00:15:49,559
+you. They are going completely offroad to
+do this kind of stuff.
+
+128
+00:15:49,559 --> 00:15:55,579
+>>Dimitri Glazkov: Right. And a lot of this
+framework becomes so robust. And in order
+
+129
+00:15:55,579 --> 00:16:00,339
+to become robust, in order to offer the experience
+to you that makes sense, they build entire
+
+130
+00:16:00,339 --> 00:16:04,709
+rendering engines into the browser, so you
+have this turducken of the thing. The rendering
+
+131
+00:16:04,709 --> 00:16:08,569
+engine is just a rendering surface, and then
+there's another one that's being loaded to
+
+132
+00:16:08,569 --> 00:16:13,399
+the js file that actually does the stuff for
+you. And so it's pretty sad.
+
+133
+00:16:13,399 --> 00:16:17,859
+>>Alex Komoroske: So, yeah, we've been talking
+all doom and gloom so far. We're going to
+
+134
+00:16:17,859 --> 00:16:23,420
+turn the page here, and the good news is that
+although we look like normal people, Dimitri
+
+135
+00:16:23,420 --> 00:16:26,720
+and I actually come to you from the future.
+[Laughter]
+
+136
+00:16:26,720 --> 00:16:29,999
+>>Dimitri Glazkov: Yes. We did come from the
+future. You must know there are multiple versions
+
+137
+00:16:29,999 --> 00:16:33,759
+of the future, and there is one, for example,
+where the alien invasion begins in 15 minutes
+
+138
+00:16:33,759 --> 00:16:36,809
+and the Web platform essentially becomes irrelevant.
+>>Alex Komoroske: But there also good time
+
+139
+00:16:36,809 --> 00:16:41,079
+lines. The time line we're from is the one
+where there's free beer and there's Web components,
+
+140
+00:16:41,079 --> 00:16:43,109
+so it's not all bad. So what we want to do
+is we want to talk to
+
+141
+00:16:43,109 --> 00:16:47,769
+you about how Web components solves this problem.
+>>Dimitri Glazkov: So the Web components is
+
+142
+00:16:47,769 --> 00:16:54,769
+this new set of technologies that we looked
+at -- we created by looking at those potholes
+
+143
+00:16:55,540 --> 00:17:02,540
+and decided to fill them naturally as things
+that fit inside of the Web platform as a whole.
+
+144
+00:17:06,470 --> 00:17:13,470
+Rather than building a whole new crazy thing
+on the side, which we always have done before,
+
+145
+00:17:13,639 --> 00:17:19,370
+we decided we're going to fill those holes
+naturally into something that feels like just
+
+146
+00:17:19,370 --> 00:17:26,139
+part of the Web platform. Just part of the
+standard things that you normally do in the
+
+147
+00:17:26,139 --> 00:17:30,940
+browser. Not a script and not some crazy invention
+that is completely brand new.
+
+148
+00:17:30,940 --> 00:17:36,990
+And so what we did is we kind of found out
+that there's three pieces that are missing
+
+149
+00:17:36,990 --> 00:17:41,980
+and these pieces are Shadow DOM, the custom
+elements, and the templates.
+
+150
+00:17:41,980 --> 00:17:47,149
+>>Alex Komoroske: So let me walk you through
+what each of these ones means in practice.
+
+151
+00:17:47,149 --> 00:17:52,169
+So again, all of these three things are what
+come underneath the umbrella of Web components.
+
+152
+00:17:52,169 --> 00:17:56,340
+So the first is Shadow DOM. Shadow DOM is
+what allows you to encapsulate stuff in the
+
+153
+00:17:56,340 --> 00:18:00,090
+DOM to hide away all of that crush that you
+need to make it look correct.
+
+154
+00:18:00,090 --> 00:18:07,090
+Custom elements is what allows you to define
+your own tabs. When the HTML parser runs into
+
+155
+00:18:07,929 --> 00:18:11,799
+your widget, it can instantiate it immediately
+for you.
+
+156
+00:18:11,799 --> 00:18:17,120
+Finally, templates allows you to define HTML
+DOM snippets very easily. So today you are
+
+157
+00:18:17,120 --> 00:18:24,120
+doing this in long bits of strings and script,
+or you are doing script tags with some -- with
+
+158
+00:18:26,730 --> 00:18:33,460
+some templates there. This basically just
+allows you to define it directly in your HTML,
+
+159
+00:18:33,460 --> 00:18:40,460
+have it sort of frozen off to the side, so
+you can swap it in when you need it.
+
+160
+00:18:40,919 --> 00:18:45,279
+>>Dimitri Glazkov: It's kind of neat to decide
+that developers are -- really like this master
+
+161
+00:18:45,279 --> 00:18:49,070
+framework, right. There's problems with the
+Web platform, but no matter what, developers
+
+162
+00:18:49,070 --> 00:18:51,980
+force will work around them or flow around
+those problems.
+
+163
+00:18:51,980 --> 00:18:54,899
+>>Alex Komoroske: They will find a way.
+>>Dimitri Glazkov: Exactly.
+
+164
+00:18:54,899 --> 00:19:01,250
+>>Alex Komoroske: So this is sort of like
+the low level what the technologies do, but
+
+165
+00:19:01,250 --> 00:19:04,210
+what does this actually mean in practice?
+>>Dimitri Glazkov: Well, in practice, what
+
+166
+00:19:04,210 --> 00:19:09,269
+you are really are looking for is something
+that allows you to tell -- allows you to tell
+
+167
+00:19:09,269 --> 00:19:13,510
+the browser exactly what you mean. This, for
+example, would be the markup that
+
+168
+00:19:13,510 --> 00:19:20,000
+you are actually are trying to communicate
+to the browser. I have a poll, I have choices,
+
+169
+00:19:20,000 --> 00:19:27,000
+and there's things that -- that are essentially
+data for my poll, right? Why should there
+
+170
+00:19:27,159 --> 00:19:30,500
+be anything else? Right, right, right?!!
+>>> Right!
+
+171
+00:19:30,500 --> 00:19:37,470
+>>Dimitri Glazkov: All right! So the three
+pieces fit very neatly into this idea. First
+
+172
+00:19:37,470 --> 00:19:44,149
+Shadow DOM allows you to take the scaffolding
+all of the weird DIVs that are really irrelevant
+
+173
+00:19:44,149 --> 00:19:49,809
+to the semantic of the markup, and hide them
+into the Shadow DOM -- which we will talk
+
+174
+00:19:49,809 --> 00:19:55,350
+more about later. Then the custom elements
+allow you to define new tags, right? New tags,
+
+175
+00:19:55,350 --> 00:20:02,350
+awesome? X-poll, right? And specify behavior
+and assign things on top of them.
+
+176
+00:20:02,380 --> 00:20:09,340
+Then, of course, the templates allow you to
+stop treating markup as string, which is always
+
+177
+00:20:09,340 --> 00:20:12,730
+nice.
+>>Alex Komoroske: So that's how they help
+
+178
+00:20:12,730 --> 00:20:17,360
+tactically, but they also, of course, are
+really important on the high level. So if
+
+179
+00:20:17,360 --> 00:20:22,580
+you have this world, this is all you need
+to pass down to the browser to have that rich
+
+180
+00:20:22,580 --> 00:20:26,740
+poll experience exist, that means that you
+don't need this bizarro script. DOM can be
+
+181
+00:20:26,740 --> 00:20:29,130
+your only hierarchy. You don't need to have
+this parallel bizarro hierarchy on the side.
+
+182
+00:20:29,130 --> 00:20:33,809
+>>Dimitri Glazkov: You no longer need to build
+your widget hierarchy as just a, you know,
+
+183
+00:20:33,809 --> 00:20:37,509
+an object tree somewhere off to the side.
+The one that projects the DOM is a kabuki
+
+184
+00:20:37,509 --> 00:20:41,409
+theater of some sort.
+>>Alex Komoroske: So DOM can become this lingua
+
+185
+00:20:41,409 --> 00:20:48,409
+franca of the Web. It also means that you
+would have real encapsulation, so you wouldn't
+
+186
+00:20:48,799 --> 00:20:53,419
+have to worry about people coming in and messing
+with your innards and messing up how your
+
+187
+00:20:53,419 --> 00:20:55,690
+component works, because they can't because
+it would be a barrier.
+
+188
+00:20:55,690 --> 00:20:58,049
+So it's not just etiquette or discipline.
+It's an actual encapsulation barrier. Also
+
+189
+00:20:58,049 --> 00:21:02,610
+if DOM is the composition mechanism, it already
+composes really nicely. You can put a span,
+
+190
+00:21:02,610 --> 00:21:07,870
+DIVs, all kinds of stuff, right? If you have
+that as the framework that you
+
+191
+00:21:07,870 --> 00:21:13,070
+use for composability, that means that you
+have compatible composability. So if you have
+
+192
+00:21:13,070 --> 00:21:18,940
+a widget from Framework A and Framework B,
+they can live together harmoniously without
+
+193
+00:21:18,940 --> 00:21:24,240
+having to figure out which widgets they have
+-- it's just DOM.
+
+194
+00:21:24,240 --> 00:21:28,490
+>>Dimitri Glazkov: Right. And where that one
+widget begins and where one widget ends. That's
+
+195
+00:21:28,490 --> 00:21:32,070
+another important thing. Let's be clear. Web
+components is not a set of those widgets.
+
+196
+00:21:32,070 --> 00:21:35,429
+It's just a platform on which the future frameworks,
+you know, the future where we're from? Can
+
+197
+00:21:35,429 --> 00:21:36,950
+build those new frameworks.
+>>Alex Komoroske: So it's a foundation for
+
+198
+00:21:36,950 --> 00:21:40,549
+this stuff. Okay. So this -- actually, Web
+components
+
+199
+00:21:40,549 --> 00:21:47,549
+as you may have guessed, makes all of this
+stuff real. So we're going to show you what
+
+200
+00:21:49,120 --> 00:21:54,659
+it looks like in practice. So let me switch.
+This is the demo that we showed; it's built
+
+201
+00:21:54,659 --> 00:21:59,090
+using the best practices of today. And this
+is what the -- what the one with
+
+202
+00:21:59,090 --> 00:22:03,299
+Web components looks like. Right? Looks exactly
+the same.
+
+203
+00:22:03,299 --> 00:22:08,590
+>>Dimitri Glazkov: Yeah. Right. So in the
+future, all applications are going to look
+
+204
+00:22:08,590 --> 00:22:13,700
+exactly the same, right? This is the lesson
+that we are learning? Well, actually, no.
+
+205
+00:22:13,700 --> 00:22:17,970
+What's interesting here, this is actually
+a functional application, but instead of all
+
+206
+00:22:17,970 --> 00:22:21,779
+of these weird spans and DIVs inside of it,
+it has a very clear, very concise markup.
+
+207
+00:22:21,779 --> 00:22:28,009
+This markup is exactly the same as the actual
+DOM structure off this document, right?
+
+208
+00:22:28,009 --> 00:22:32,669
+So whatever you ship over the wire is exactly
+the same thing that is represented as DOM.
+
+209
+00:22:32,669 --> 00:22:36,480
+You don't have to create this thing that the
+frameworks -- the rendering decorate where
+
+210
+00:22:36,480 --> 00:22:43,480
+you just first load the page and then you
+go find those things that you want to upgrade
+
+211
+00:22:43,620 --> 00:22:50,230
+and make them into the right stuff, you don't
+have to do that anymore. All of this happens
+
+212
+00:22:50,230 --> 00:22:52,210
+magically?
+>>Alex Komoroske: Magically, that's actually
+
+213
+00:22:52,210 --> 00:22:58,490
+a good point. I was going to ask, clearly
+we saw all of the extra stuff that's required
+
+214
+00:22:58,490 --> 00:23:04,799
+to make this poll demo work. But it's not
+here, so what's going on? All right. Well,
+
+215
+00:23:04,799 --> 00:23:08,610
+let's look.
+>>Dimitri Glazkov: And kind of the way that
+
+216
+00:23:08,610 --> 00:23:13,880
+you look at this is in the Web platform, we
+never had this opportunity to -- to build
+
+217
+00:23:13,880 --> 00:23:18,639
+in layering. Layering is like a cool thing.
+It's not -- it's also related to the lasagne
+
+218
+00:23:18,639 --> 00:23:21,759
+thing. But all of the frameworks, if you look
+at
+
+219
+00:23:21,759 --> 00:23:28,759
+them together, all of the JavaScript frameworks
+that are built out today are nothing but attempts
+
+220
+00:23:29,789 --> 00:23:36,100
+to provide a layering in the browser. Because
+what they want to do is they want to create
+
+221
+00:23:36,100 --> 00:23:39,580
+an environment in which the users of this
+framework don't have to think about the details.
+
+222
+00:23:39,580 --> 00:23:43,379
+And then the developers of the new widgets,
+the builders of the components, the ones who
+
+223
+00:23:43,379 --> 00:23:45,690
+work inside of the framework, actually have
+flexibility and power to, you know, provide
+
+224
+00:23:45,690 --> 00:23:45,940
+those new services to the -- to the higher
+level.
+
+225
+00:23:45,879 --> 00:23:51,330
+>>Alex Komoroske: By having this built into
+the browser, it means that there's no build
+
+226
+00:23:51,330 --> 00:23:55,639
+step, there's no extra framework you can use,
+you might be able to build the users of this
+
+227
+00:23:55,639 --> 00:24:02,639
+components, which is what the vast majority
+of the Web developers will be doing, it's
+
+228
+00:24:06,220 --> 00:24:11,200
+super simple, you do an import, you use these
+tags, it just works, however, if you really
+
+229
+00:24:11,200 --> 00:24:17,100
+want to understand the magic going on behind
+this, you need to go a little bit behind the
+
+230
+00:24:17,100 --> 00:24:22,240
+scenes, you have to see these more powerful
+concepts that are a little bit more confusing
+
+231
+00:24:22,240 --> 00:24:27,480
+that have a lot more to learn about.
+>>Dimitri Glazkov: We have a choice here,
+
+232
+00:24:27,480 --> 00:24:33,080
+do you guys want to continue or should we
+just stop right here, behind the scenes!!??
+
+233
+00:24:33,080 --> 00:24:35,870
+Yes.
+>>Alex Komoroske: Okay. So we're going to
+
+234
+00:24:35,870 --> 00:24:42,870
+go behind the scenes. If at this point you
+say what the heck is going on, that's okay,
+
+235
+00:24:43,019 --> 00:24:47,340
+you can just be a user of these components
+and not have to worry about it. Dimitri, why
+
+236
+00:24:47,340 --> 00:24:51,190
+don't you take us behind the scenes?
+>>Dimitri Glazkov: First we're going to talk
+
+237
+00:24:51,190 --> 00:24:55,429
+about Shadow DOM. Believe it or not, Shadow
+DOM already exists on the browsers, well and
+
+238
+00:24:55,429 --> 00:25:01,269
+alive, and the one and good example would
+be a video tag. Let's take a look at this
+
+239
+00:25:01,269 --> 00:25:05,779
+video tag right here embedded into this presentation,
+because, you know, our presentations are actually
+
+240
+00:25:05,779 --> 00:25:11,049
+HTML as well. Right? Okay. So as you can see
+you have really neat video tag right there,
+
+241
+00:25:11,049 --> 00:25:15,269
+right? Video/video, everything looks great,
+but there's actually more stuff happening.
+
+242
+00:25:15,269 --> 00:25:20,129
+There's slider there in the time line, and
+all these things. How do browser developers
+
+243
+00:25:20,129 --> 00:25:25,480
+do this? Right? How do they draw those things?
+Well, they have a couple of choices: One of
+
+244
+00:25:25,480 --> 00:25:31,740
+them is build the whole thing from scratch
+to build their own, testing right into this
+
+245
+00:25:31,740 --> 00:25:36,169
+thing, and we're kind of actually lazy and
+we didn't do that. What we did instead is
+
+246
+00:25:36,169 --> 00:25:41,580
+we invented a way where we could stash away
+a DOM tree where we can build those things
+
+247
+00:25:41,580 --> 00:25:46,080
+out of just normal CSS and DOM, and operate
+on them just the normal way, and then we present
+
+248
+00:25:46,080 --> 00:25:48,620
+it to you as if this is a built-in functionality,
+and this DOM tree, we obviously called Shadow
+
+249
+00:25:48,620 --> 00:25:49,509
+DOM, right?
+It's in the shadows.
+
+250
+00:25:49,509 --> 00:25:52,490
+>>Alex Komoroske: So how can we see what's
+going on here?
+
+251
+00:25:52,490 --> 00:25:58,299
+>>Dimitri Glazkov: So one of the interesting
+things is in Chrome browser, today you can
+
+252
+00:25:58,299 --> 00:26:04,110
+opt in to this experiment and you can say,
+well, I want to be able to show Shadow DOM,
+
+253
+00:26:04,110 --> 00:26:09,379
+and so if you're a load inspector, you will
+see that, when you inspect the video, suddenly
+
+254
+00:26:09,379 --> 00:26:14,029
+there's more stuff inside of it. It's that
+thing called shadow root. That's that hidden
+
+255
+00:26:14,029 --> 00:26:19,539
+DOM that you can't see. Let's go inside of
+it. Oh, there's a DIV. Oh, interesting input
+
+256
+00:26:19,539 --> 00:26:26,539
+type button. That's actually the play button,
+and then the input type or this style, open
+
+257
+00:26:27,779 --> 00:26:34,070
+that one right there, that will be a type
+range. That's the slider, right? That's the
+
+258
+00:26:34,070 --> 00:26:39,220
+thing. So what we did is we really,
+really cheated in a pretty big way, right?
+
+259
+00:26:39,220 --> 00:26:43,679
+We just -- instead of building all this stuff
+in C++, you know, and all this stuff, it's
+
+260
+00:26:43,679 --> 00:26:47,960
+just DOM. And, in fact, when you play this
+video, and you know how the timeline goes
+
+261
+00:26:47,960 --> 00:26:53,350
+away, that is just a CSS transition, right?
+It's nothing special.
+
+262
+00:26:53,350 --> 00:26:58,419
+>>Alex Komoroske: So what you're saying is
+that this stuff, this isn't new, Shadow DOM
+
+263
+00:26:58,419 --> 00:27:03,820
+has existed in some browsers already. What
+is new is exposing it to web developers.
+
+264
+00:27:03,820 --> 00:27:09,600
+>>Dimitri Glazkov: Right. So what we did next,
+we said, well, wouldn't it be cool if Web
+
+265
+00:27:09,600 --> 00:27:10,990
+developers could have the same power, and
+wouldn't you agree that would be cool? Would
+
+266
+00:27:10,990 --> 00:27:12,320
+that be cool?
+All right. So that's what Shadow DOM is about.
+
+267
+00:27:12,320 --> 00:27:15,889
+It's about encapsulation and providing you
+with the ability to add these extra chunks
+
+268
+00:27:15,889 --> 00:27:19,169
+on DOM tree and render them as if they're
+part of the bigger rendering.
+
+269
+00:27:19,169 --> 00:27:26,169
+>>Alex Komoroske: Okay. This is kind of complicated,
+so let's go through this in a little bit more
+
+270
+00:27:26,389 --> 00:27:29,200
+depth.
+>>Dimitri Glazkov: All right. Sounds good.
+
+271
+00:27:29,200 --> 00:27:36,200
+So the next slide here that we see, we have
+a nice diagram. As you can see it's peas and
+
+272
+00:27:36,549 --> 00:27:41,480
+radishes, clearly. So the green notes, the
+peas represent the document tree, that's the
+
+273
+00:27:41,480 --> 00:27:48,379
+actual tree that you see when you go into
+the inspector, and that's the one that is
+
+274
+00:27:48,379 --> 00:27:53,169
+parsed, when the browser parses your markup,
+and the pink stuff is the Shadow DOM tree,
+
+275
+00:27:53,169 --> 00:27:59,409
+so the Shadow DOM allows you to associate
+a special subtree with every DOM element,
+
+276
+00:27:59,409 --> 00:28:06,409
+and then this subtree, you can build and create
+DIVs and all kinds of things inside of it,
+
+277
+00:28:06,480 --> 00:28:11,700
+but then when it's rendered, you actually
+see the shadow subtree rendered instead of
+
+278
+00:28:11,700 --> 00:28:18,149
+the contents of that node, the element that
+you associate it with.
+
+279
+00:28:18,149 --> 00:28:23,429
+>>Alex Komoroske: Okay. So let me go over
+this one more time. So what we have here on
+
+280
+00:28:23,429 --> 00:28:29,840
+the left, we have these green nodes, or just
+the logical DOM that we're all familiar with,
+
+281
+00:28:29,840 --> 00:28:36,840
+and then off to the right we have a sort of
+parallel DOM hierarchy.
+
+282
+00:28:36,940 --> 00:28:43,769
+>>Dimitri Glazkov: That's right.
+>>Alex Komoroske: And so it's sort of stashed
+
+283
+00:28:43,769 --> 00:28:49,960
+off to the side. But if the Shadow DOM is
+defined, when we render, what we see, is as
+
+284
+00:28:49,960 --> 00:28:52,899
+though the pink nodes were underneath the
+green nodes.
+
+285
+00:28:52,899 --> 00:28:56,159
+>>Dimitri Glazkov: That's right.
+>> Alex Komoroske: So magically the green
+
+286
+00:28:56,159 --> 00:29:00,070
+ones are still there.
+>> Dimitri Glazkov: Right. So this is a really,
+
+287
+00:29:00,070 --> 00:29:07,070
+really cool concept right here, it's a render
+time composition. You don't have to move those
+
+288
+00:29:07,820 --> 00:29:11,749
+nodes around. They're still there -- if you
+walk your, you know, first child, next child
+
+289
+00:29:11,749 --> 00:29:15,330
+thing, next sibling, there's going to be only
+the green tree inside of it, but at render
+
+290
+00:29:15,330 --> 00:29:18,799
+time, the shadow DOM tree will be placed on
+top and rendered as if it's there.
+
+291
+00:29:18,799 --> 00:29:23,990
+>> Alex Komoroske: I had real stuff in that
+-- in that real in the green DOM tree. I want
+
+292
+00:29:23,990 --> 00:29:27,700
+to show that. It's kind of weird this is sort
+of (indiscernible)
+
+293
+00:29:27,700 --> 00:29:28,179
+>>Dimitri Glazkov: Right. Yeah, this use case
+is pretty good for a video, but you suddenly
+
+294
+00:29:28,179 --> 00:29:35,179
+lost that other green peas things that were
+hanging off the element, so what do we do
+
+295
+00:29:35,200 --> 00:29:37,809
+there?
+We have this really, really cool concept called
+
+296
+00:29:37,809 --> 00:29:42,470
+insertion point. Insertion points are special
+elements that you can put into your Shadow
+
+297
+00:29:42,470 --> 00:29:48,389
+DOM subtree to designate where the children
+of the shadow root will poke through, and
+
+298
+00:29:48,389 --> 00:29:52,950
+so as you can see there, I have two insertion
+points and when it's rendering, again at render
+
+299
+00:29:52,950 --> 00:29:56,799
+time only, those children will shine through
+inside of the Shadow DOM tree, so in a way
+
+300
+00:29:56,799 --> 00:30:03,799
+it allows you to have this way to compose
+the Shadow DOM subtree around your documents
+
+301
+00:30:08,499 --> 00:30:10,950
+node.
+>> Alex Komoroske: This is the same thing
+
+302
+00:30:10,950 --> 00:30:12,600
+that frameworks are doing today, right, because
+you have like your markup, then you call this
+
+303
+00:30:12,600 --> 00:30:19,600
+magic decorate method on it, then it swaps
+your DOM directly into the place it needs
+
+304
+00:30:20,889 --> 00:30:23,460
+to be to render.
+>>Dimitri Glazkov: That's right.
+
+305
+00:30:23,460 --> 00:30:28,830
+>>Alex Komoroske: This leaves it in the same
+place as before so you can still interact
+
+306
+00:30:28,830 --> 00:30:33,279
+with it like you did before.
+>>Dimitri Glazkov: The cool thing here, exactly
+
+307
+00:30:33,279 --> 00:30:40,279
+right, is that this is entirely render time,
+so you don't have to touch the DOM, in fact
+
+308
+00:30:44,110 --> 00:30:49,190
+the DOM stays exactly the same. What happens
+is this happens only at render time, so only
+
+309
+00:30:49,190 --> 00:30:55,899
+when this stuff shows up on the page is things
+appear in the right spot.
+
+310
+00:30:55,899 --> 00:31:02,159
+>>Alex Komoroske: Okay. So this is all very
+abstract. Let's go through a more concrete
+
+311
+00:31:02,159 --> 00:31:04,669
+example.
+>>Dimitri Glazkov: Sure. For example, the
+
+312
+00:31:04,669 --> 00:31:09,019
+<x-choice> element that we have just seen
+in the markup example here is implemented
+
+313
+00:31:09,019 --> 00:31:16,019
+using Shadow DOM, so you can see there it's
+a very simple subtree. The Shadow DOM subtree
+
+314
+00:31:18,409 --> 00:31:25,409
+has a DIV in it and has a little mask which
+stands for the little icon there, but then
+
+315
+00:31:25,889 --> 00:31:32,889
+you have this really interesting thing called
+content. Content is a name of the insertion
+
+316
+00:31:35,519 --> 00:31:42,519
+point; it's the HTML element which represents
+the insertion point. And then you see it has
+
+317
+00:31:45,320 --> 00:31:50,059
+a select attribute in a value that looks very
+similar to something. What does it look like?
+
+318
+00:31:50,059 --> 00:31:52,330
+People from the audience?
+Is that --
+
+319
+00:31:52,330 --> 00:31:55,450
+>>Alex Komoroske: CSS?
+>>Dimitri Glazkov: Right, so that's what you
+
+320
+00:31:55,450 --> 00:32:02,450
+use. You use CSS selectors to say which items
+will show through in my insertion point? And
+
+321
+00:32:04,860 --> 00:32:11,860
+so what we say here is the H3, first of
+type, which is the first H3 we find as child,
+
+322
+00:32:12,740 --> 00:32:16,649
+is going to show up right here instead of
+this thing when rendering, and then we have
+
+323
+00:32:16,649 --> 00:32:21,119
+a little aside item for our tool tip, and
+then we say, eh, everything else, universal
+
+324
+00:32:21,119 --> 00:32:24,200
+selector goes inside there.
+>>Alex Komoroske: So what we're doing basically
+
+325
+00:32:24,200 --> 00:32:28,100
+is we're using CSS to decide which elements
+to sort of funnel and tele-port where when
+
+326
+00:32:28,100 --> 00:32:30,169
+we render.
+>>Dimitri Glazkov: That's right.
+
+327
+00:32:30,169 --> 00:32:35,690
+>>Alex Komoroske: Okay. So what we're actually
+kind of doing here too is we're almost defining
+
+328
+00:32:35,690 --> 00:32:42,690
+a declarative API. We say if you provide some
+H3s, the first ones, what we'll use as the
+
+329
+00:32:42,850 --> 00:32:48,309
+actual name for the thing and later ones we'll
+just establish another --
+
+330
+00:32:48,309 --> 00:32:52,730
+>>Dimitri Glazkov: So you have this not only
+mechanism to stash things away into the subtree,
+
+331
+00:32:52,730 --> 00:32:55,419
+you also have a mechanism to now declaratively
+project some of the items. You don't have
+
+332
+00:32:55,419 --> 00:33:02,419
+to write a bit of script to do this. This
+is all built in. This is standard stuff. Awesome?
+
+333
+00:33:03,919 --> 00:33:10,919
+Awesome. All right. Okay.
+And so the next thing is we need to take these
+
+334
+00:33:12,570 --> 00:33:17,419
+Shadow DOM subtrees and build them into something
+useful, and that's where custom elements come
+
+335
+00:33:17,419 --> 00:33:21,730
+in. Custom elements allow you to define a
+new element, and for that purpose we have
+
+336
+00:33:21,730 --> 00:33:25,580
+the new HTML element -- that's a good name
+for it -- which allows you to specify and
+
+337
+00:33:25,580 --> 00:33:27,619
+say, well, there's my element, <x-choice>,
+and inside of it, the template. Remember the
+
+338
+00:33:27,619 --> 00:33:31,499
+template? That's where my Shadow DOM subtree
+instance is. Every time I create a new <x-choice>,
+
+339
+00:33:31,499 --> 00:33:33,539
+that will be stamped out and create a new
+instance of the Shadow DOM subtree. And then
+
+340
+00:33:33,539 --> 00:33:37,740
+you can run script inside of it to do lots
+of cool things. For example, you can declare
+
+341
+00:33:37,740 --> 00:33:41,090
+an imperative API, and say, well, the <x-choice>
+method needs extra methods -- or <x-choice>
+
+342
+00:33:41,090 --> 00:33:45,350
+object needs extra methods or properties on
+it, and you can do this. And also you can
+
+343
+00:33:45,350 --> 00:33:50,470
+define things like life cycle hooks, like
+I want to run some scripts, register events
+
+344
+00:33:50,470 --> 00:33:54,690
+every time a new instance is created, right?
+That's useful stuff.
+
+345
+00:33:54,690 --> 00:34:01,690
+>>Alex Komoroske: So that's how you define
+it as a component author. For component users
+
+346
+00:34:03,070 --> 00:34:10,070
+all you have to do, you include this link
+to the components and point to the document
+
+347
+00:34:13,080 --> 00:34:20,080
+where this thing is defined, and then you
+can just use it like any other built-in tag
+
+348
+00:34:28,970 --> 00:34:35,970
+in your page. And also, so you talked about
+those imperative APIs we defined here, was
+
+349
+00:34:36,630 --> 00:34:43,630
+selected on this thing. If I go through and
+grab this element out of the DOM using various
+
+350
+00:34:49,080 --> 00:34:54,429
+lectures, say, I can just call that method
+directly on that object, the DOM object. The
+
+351
+00:34:54,429 --> 00:34:57,710
+DOM object is the object.
+>>Dimitri Glazkov: Right. And there's no faking
+
+352
+00:34:57,710 --> 00:35:02,270
+there, right? There's no need to create separate
+objects or view or things, your DOM objects
+
+353
+00:35:02,270 --> 00:35:07,470
+are the actual things that you operate on.
+When you query the standard DOM APIs, use
+
+354
+00:35:07,470 --> 00:35:12,760
+them, whatever comes back to you is going
+to be those things that you define.
+
+355
+00:35:12,760 --> 00:35:17,190
+>>Alex Komoroske: You don't have to know the
+convention of the framework, how we stash
+
+356
+00:35:17,190 --> 00:35:24,190
+things and how DOM are related.
+>>Dimitri Glazkov: And also the link rail,
+
+357
+00:35:26,920 --> 00:35:33,390
+the new rail components, gives you the opportunity
+to create the packaging mechanism to build
+
+358
+00:35:33,390 --> 00:35:40,390
+packaging right into the browser. You don't
+have to have a build script that then compiles
+
+359
+00:35:40,930 --> 00:35:47,730
+all this thing into one gob of code. You don't
+have to have five script tags loaded into
+
+360
+00:35:47,730 --> 00:35:54,570
+your page. One link rail, you can load other
+link rails if you want, you will have more
+
+361
+00:35:54,570 --> 00:36:01,570
+components that you want to reuse, and that's
+all it takes. So it's packaging. It's reuse.
+
+362
+00:36:05,050 --> 00:36:10,030
+And also the ability to have one DOM hierarchy
+instead of multiple tree objects.
+
+363
+00:36:10,030 --> 00:36:17,030
+>>Alex Komoroske: So one of the problems we
+have today on the Web platform is styles sort
+
+364
+00:36:18,510 --> 00:36:23,640
+of naturally go all over the place. And so
+when you're designing a style for your component,
+
+365
+00:36:23,640 --> 00:36:29,700
+it might go and mess up somebody else inadvertently.
+>>Dimitri Glazkov: That is a very common problem,
+
+366
+00:36:29,700 --> 00:36:35,950
+especially if your object tree is pretty complex.
+At some point you really start losing sight
+
+367
+00:36:35,950 --> 00:36:42,950
+of where -- which selector, and you know,
+how many of you guys have committed the Cardinal
+
+368
+00:36:46,080 --> 00:36:53,080
+sin of pound important? Okay. Be honest here
+now. And so in Shadow DOM, there is some really
+
+369
+00:36:53,140 --> 00:36:58,490
+cool stuff here. In Shadow DOM the styles
+are implicitly or explicitly scoped inside
+
+370
+00:36:58,490 --> 00:37:05,490
+of the Shadow DOM subtree. So even if you
+put a universal selector inside of the Shadow
+
+371
+00:37:07,200 --> 00:37:14,200
+DOM subtree, it will only apply instead of
+inside of the Shadow DOM subtree. So it will
+
+372
+00:37:14,660 --> 00:37:18,960
+not go and bleed out into a document. Similarly,
+styles that you apply in the document will
+
+373
+00:37:18,960 --> 00:37:23,410
+not bleed into your Shadow DOM subtree. So
+you have a very nice style separation boundary
+
+374
+00:37:23,410 --> 00:37:26,560
+which really works extremely well for widget
+case scenarios where you want to have the
+
+375
+00:37:26,560 --> 00:37:33,330
+boundaries defined and you don't want people
+to stomp on your styles, and you want to keep
+
+376
+00:37:33,330 --> 00:37:40,330
+some sort of sanity inside of your application.
+>>Alex Komoroske: Okay. So that is sort of
+
+377
+00:37:41,310 --> 00:37:45,440
+behind the scenes. Thank you for that, Dimitri.
+I actually just got a call from a designer,
+
+378
+00:37:45,440 --> 00:37:52,440
+he's watching on the live stream, and he says
+that we shouldn't have used accordion, we
+
+379
+00:37:55,280 --> 00:38:02,280
+should have used a tab strip in our demo.
+>>Dimitri Glazkov: I actually agree with the
+
+380
+00:38:02,590 --> 00:38:08,910
+designer, accordions are kind of weird anyway,
+right, a cross between a piano and a harmonica,
+
+381
+00:38:08,910 --> 00:38:15,910
+really? Oh, you're talking about a widget.
+I'm sorry. Okay, yes. So that is actually
+
+382
+00:38:17,380 --> 00:38:18,680
+really easy,
+because we're using just markup, we're just
+
+383
+00:38:18,680 --> 00:38:21,630
+swapping tags, so the idea of swapping out
+components now becomes just changing your
+
+384
+00:38:21,630 --> 00:38:26,690
+markup, right? So now we have to just include
+in your component and then change X accordion
+
+385
+00:38:26,690 --> 00:38:31,830
+to be X tabs, and it's, you know, it's -- we'll
+just see what happens, right?
+
+386
+00:38:31,830 --> 00:38:36,950
+>>Alex Komoroske: Okay. So you say I have
+to include the new component, which I actually
+
+387
+00:38:36,950 --> 00:38:40,650
+already did when you were talking, and I needed
+to change X-accordion to X-tabs, is that right?
+
+388
+00:38:40,650 --> 00:38:43,260
+Save that, switch back to the demo and just
+refresh.
+
+389
+00:38:43,260 --> 00:38:46,450
+>>Dimitri Glazkov: And now we have tabs. Applause,
+please. [ APPLAUSE ]
+
+390
+00:38:46,450 --> 00:38:51,870
+>>Dimitri Glazkov: No wing suit drop, no wing
+suits, but at least, you know, some cool tricks,
+
+391
+00:38:51,870 --> 00:38:55,750
+right, at some point. All right. So this looks
+really, really awesome and I'm already kind
+
+392
+00:38:55,750 --> 00:39:02,750
+of enamored with this. I don't know about
+you guys. But I really want this poll on my
+
+393
+00:39:04,580 --> 00:39:08,860
+website now.
+>>Alex Komoroske: On your site.
+
+394
+00:39:08,860 --> 00:39:15,860
+>>Dimitri Glazkov: On my site.
+>>Alex Komoroske: just so guys know, I'll
+
+395
+00:39:16,080 --> 00:39:20,920
+show you what Dimitri's website looks like.
+It's beautiful. It's really special. It's
+
+396
+00:39:20,920 --> 00:39:27,920
+awesome. So, no offense, Dimitri. I definitely
+hear that you want to have this poll on your
+
+397
+00:39:30,990 --> 00:39:37,990
+site. I'm a little bit concerned that you
+might mark with it a bit, but that's okay.
+
+398
+00:39:38,160 --> 00:39:43,600
+I'm going to package this up for you so that
+you can include it on your site without you
+
+399
+00:39:43,600 --> 00:39:49,960
+worrying about how you're going to set this
+up. First of all, I don't want you to be able
+
+400
+00:39:49,960 --> 00:39:54,070
+to change the text for the choices, that way
+you could stack the deck.
+
+401
+00:39:54,070 --> 00:39:58,920
+>>Dimitri Glazkov: I could add my own choices,
+right? CSS 3. Why not CSS 4 or 7?
+
+402
+00:39:58,920 --> 00:40:04,050
+>>Alex Komoroske: So what I'm going to do
+actually is I'm going to create a new element
+
+403
+00:40:04,050 --> 00:40:07,720
+called awesome poll, obviously.
+>>Dimitri Glazkov: Has to be awesome, awesome
+
+404
+00:40:07,720 --> 00:40:11,770
+site, right.
+>>Alex Komoroske: And then to hide it from
+
+405
+00:40:11,770 --> 00:40:17,210
+people who are vetting it, I'm going to take
+and put in my Shadow DOM one of those polls
+
+406
+00:40:17,210 --> 00:40:19,420
+so you can't see it.
+>>Dimitri Glazkov: Okay.
+
+407
+00:40:19,420 --> 00:40:26,180
+>>Alex Komoroske: Then what I'll do is I'll
+allow yourself to define sort of where this
+
+408
+00:40:26,180 --> 00:40:32,950
+configuration is, and I'll then create all
+the stuff inside the X poll in my own little
+
+409
+00:40:32,950 --> 00:40:36,400
+area.
+>>Dimitri Glazkov: Have you guys seen inception?
+
+410
+00:40:36,400 --> 00:40:38,690
+And if you haven't, please leave the room
+now. It's like we have to go one level deeper,
+
+411
+00:40:38,690 --> 00:40:42,020
+right? Shadow DOM inside of the Shadow DOM.
+You know, seriously cool stuff.
+
+412
+00:40:42,020 --> 00:40:44,860
+>>Alex Komoroske: Okay. So what we'll do,
+so then you can just put that right in your
+
+413
+00:40:44,860 --> 00:40:47,100
+page and you will have the poll right there.
+Awesome.
+
+414
+00:40:47,100 --> 00:40:50,680
+>>Dimitri Glazkov: Wow, this is -- well...
+>>Alex Komoroske: What?
+
+415
+00:40:50,680 --> 00:40:56,720
+>>Dimitri Glazkov: It kind of looks not like
+my site actually. The place my vote clearly
+
+416
+00:40:56,720 --> 00:41:00,640
+doesn't have enough exclamation points. I
+don't know. I kind of want to customize it
+
+417
+00:41:00,640 --> 00:41:01,770
+a little.
+>>Alex Komoroske: Okay. Okay. So you're right.
+
+418
+00:41:01,770 --> 00:41:06,430
+This is actually technically just as good
+as an iframe basically. Doesn't give you any
+
+419
+00:41:06,430 --> 00:41:10,830
+way to customize it. So you have such an interesting
+vocabulary and way of speaking.
+
+420
+00:41:10,830 --> 00:41:13,500
+>>Dimitri Glazkov: I do. I'm a very colorful
+person.
+
+421
+00:41:13,500 --> 00:41:18,000
+>>Alex Komoroske: I don't want you to have
+control over everything, but I guess -- I
+
+422
+00:41:18,000 --> 00:41:23,660
+guess subtitle and the button will allow you
+to override. So I'm going to define in my
+
+423
+00:41:23,660 --> 00:41:29,970
+poll, I'm going to allow you to have a declarative
+API, allow you to define your own aside for
+
+424
+00:41:29,970 --> 00:41:33,960
+that subtitle and your own label text.
+>>Dimitri Glazkov: That sounds good.
+
+425
+00:41:33,960 --> 00:41:39,190
+>>Alex Komoroske: What we'll do is we'll switch
+back to your site. Right here. I already wrote
+
+426
+00:41:39,190 --> 00:41:43,320
+in here where you had this customization,
+save that, switch back to my demo, refresh,
+
+427
+00:41:43,320 --> 00:41:46,360
+and vote for CSS 3 because it's awesome, and
+vote now.
+
+428
+00:41:46,360 --> 00:41:49,390
+>>Dimitri Glazkov: Now I have plenty of exclamation
+points, right, guys?
+
+429
+00:41:49,390 --> 00:41:51,510
+Think about what just happened. Just stop
+for a second. I have customized a poll without
+
+430
+00:41:51,510 --> 00:41:53,480
+mucking it up, because Alex is a developer
+of this custom component, of this web component,
+
+431
+00:41:53,480 --> 00:41:56,670
+the awesome poll, only gave me the guardrails
+to step into this specific areas, and that's
+
+432
+00:41:56,670 --> 00:42:03,670
+all. And the way I do this is by markup. I
+don't have to go GS and do some weird muckety
+
+433
+00:42:04,810 --> 00:42:11,810
+muckety JSON stuff. Well, you know, the font
+kind of looks like a clean and creepy. I want
+
+434
+00:42:12,960 --> 00:42:18,090
+something huggable and wonderful. What could
+be more wonderful than comic SANS? It's from
+
+435
+00:42:18,090 --> 00:42:23,050
+the perfection, right? So what we're going
+to do -- I want to say
+
+436
+00:42:23,050 --> 00:42:28,599
+that I'm not going to do this unless you let
+me customize the font.
+
+437
+00:42:28,599 --> 00:42:34,330
+>>> I admire design aesthetic, I think it's
+very unique, but I don't want you to be able
+
+438
+00:42:34,330 --> 00:42:40,810
+to run all over this stuff and break everything,
+so I guess what I'm going to allow you to
+
+439
+00:42:40,810 --> 00:42:43,600
+do is change a couple of things in here, before
+I do that, I'm want to walk you through how
+
+440
+00:42:43,600 --> 00:42:48,070
+I'm going to do this. So CSS variables is
+one new technology, the spec is nearing completion.
+
+441
+00:42:48,070 --> 00:42:51,600
+We actually have it implemented in Chrome
+behind the flag. CSS variables --
+
+442
+00:42:51,600 --> 00:42:54,920
+>>Dimitri Glazkov: Wait, wait, wait, did you
+just say CSS variables? Guys, are you getting
+
+443
+00:42:54,920 --> 00:42:57,830
+this? Are you getting the CSS variables?
+>>Alex Komoroske: Yeah, it's kind of cool,
+
+444
+00:42:57,830 --> 00:43:00,770
+right, because today you have to have, define
+pound FFF, one, two, three, four, like 8,000
+
+445
+00:43:00,770 --> 00:43:05,030
+places in you're CSS. This allows you basically
+to define it once. So they're actually really,
+
+446
+00:43:05,030 --> 00:43:09,420
+really powerful. You can do all kinds of cool
+stuff with cascade and referencing other variables.
+
+447
+00:43:09,420 --> 00:43:13,660
+We don't need that today. I really encourage
+you guys to look more into CSS variables and
+
+448
+00:43:13,660 --> 00:43:16,090
+all the crazy, amazing stuff it can do, but
+the cool thing about CSS variables is it allows
+
+449
+00:43:16,090 --> 00:43:19,810
+a very natural place for me to allow you to
+override what I want. So when I'm writing
+
+450
+00:43:19,810 --> 00:43:22,850
+my poll, I'll use CSS variables very deliberately
+in places that I want you to be able to hook
+
+451
+00:43:22,850 --> 00:43:26,840
+in and change my stuff.
+>>Dimitri Glazkov: So these are my styling
+
+452
+00:43:26,840 --> 00:43:33,810
+hooks. I can't go anywhere and mess with anything
+else.
+
+453
+00:43:33,810 --> 00:43:37,770
+>>Alex Komoroske: I'm only giving you -- allowing
+you to change a few things. So in this case
+
+454
+00:43:37,770 --> 00:43:44,770
+I'll allow you to change maybe the font and
+also the color that we use as the primary
+
+455
+00:43:51,600 --> 00:43:52,010
+color.
+>>Dimitri Glazkov: Colors are important.
+
+456
+00:43:52,010 --> 00:43:54,760
+>>Alex Komoroske: What you'll do on your sheet
+is you'll just style -- direct some styles,
+
+457
+00:43:54,760 --> 00:43:56,600
+these variables at my poll, and then it will
+magically just work.
+
+458
+00:43:56,600 --> 00:44:00,740
+>>Dimitri Glazkov: I want to see this.
+>>Alex Komoroske: I'm going to switch to CSS,
+
+459
+00:44:00,740 --> 00:44:03,240
+and I'm going to uncomment -- I've already
+written --
+
+460
+00:44:03,240 --> 00:44:07,600
+>>Dimitri Glazkov: You made the right choice.
+>>Alex Komoroske: Comic sans, I thought you
+
+461
+00:44:07,600 --> 00:44:10,020
+would like that. I'm going to switch back
+to my -- to your site. Refresh. There you
+
+462
+00:44:10,020 --> 00:44:13,040
+go --
+>>Dimitri Glazkov: This is now awesome. I
+
+463
+00:44:13,040 --> 00:44:15,860
+can do this. [ APPLAUSE ]
+But again take a second to think about this.
+
+464
+00:44:15,860 --> 00:44:17,780
+Now you as the developer of the widget or
+a component can give specific instructions
+
+465
+00:44:17,780 --> 00:44:18,490
+to the browser on what to permit the user
+of the component to do. Isn't that awesome?
+
+466
+00:44:18,490 --> 00:44:18,740
+Isn't that styling APIs?
+Who wants this? Who wants this? [ Applause
+
+467
+00:44:18,670 --> 00:44:18,920
+]
+>>Alex Komoroske: I want this.
+
+468
+00:44:18,750 --> 00:44:19,450
+>>Dimitri Glazkov: All right!
+>>Alex Komoroske: Cool. So we've walked you
+
+469
+00:44:19,450 --> 00:44:26,450
+through a couple of examples of how to use
+this stuff and also some of the tactical uses
+
+470
+00:44:26,640 --> 00:44:31,190
+you can have with this.
+And actually is a bigger deal than just that.
+
+471
+00:44:31,190 --> 00:44:37,110
+The way that I think of that actually -- I'm
+actually a little bit dramatic, I guess sometimes,
+
+472
+00:44:37,110 --> 00:44:44,110
+is the declarative Renaissance. So way long
+time go, you just used HTML, you just wrote
+
+473
+00:44:50,800 --> 00:44:57,800
+(indiscernible) code straightforward, and
+then we started using JavaScript a lot for
+
+474
+00:45:04,410 --> 00:45:09,210
+a lot of stuff, right? But now this allows
+people to return back to writing things very
+
+475
+00:45:09,210 --> 00:45:11,020
+declaratively in most cases. There's a lot
+of stuff that allows that to happen.
+
+476
+00:45:11,020 --> 00:45:17,700
+>>> And like one of the most important things
+that I think is -- the ability to actually
+
+477
+00:45:17,700 --> 00:45:22,780
+talk via an API. Or tell the browser, specify
+to -- to let the user know: These are the
+
+478
+00:45:22,780 --> 00:45:26,970
+things that you can do and no more. And no
+matter how much you hack about on this or
+
+479
+00:45:26,970 --> 00:45:27,680
+do whatever this -- whatever, you can't mess
+up my stuff. My stuff is safe. I gave you
+
+480
+00:45:27,680 --> 00:45:32,160
+these hooks, that's all that you can do. You
+have CSS variables for the styling API and
+
+481
+00:45:32,160 --> 00:45:36,430
+you have the components, the Shadow DOM technology,
+to allow you to have the markup API. And then
+
+482
+00:45:36,430 --> 00:45:40,590
+you, of course, can define -- define the imperative
+API on custom elements. So the Web components
+
+483
+00:45:40,590 --> 00:45:41,270
+give you those three things. To essentially
+explicitly define APIs on the components now.
+
+484
+00:45:41,270 --> 00:45:41,520
+Awesome stuff.
+>>Alex Komoroske: So another one that's really
+
+485
+00:45:41,370 --> 00:45:41,620
+cool is we talked about before, if DOM is
+your composition mechanism, then components
+
+486
+00:45:41,520 --> 00:45:43,590
+from different libraries just work together.
+This is neat, I'm like oh, cool, you can get
+
+487
+00:45:43,590 --> 00:45:46,310
+whatever widget you want. But it also means
+that today we have to spend all of this time
+
+488
+00:45:46,310 --> 00:45:49,640
+recreating tabstrips and calendar controls
+and everything in each and every framework.
+
+489
+00:45:49,640 --> 00:45:53,720
+And, of course, each time you do it, you probably
+aren't going to get 100% perfect, but 80%
+
+490
+00:45:53,720 --> 00:45:55,410
+of the way there. But if everyone can use
+any calendar component, then people will start
+
+491
+00:45:55,410 --> 00:46:02,410
+using the better one, it will be more of an
+incentive to build really, really awesome,
+
+492
+00:46:07,390 --> 00:46:14,390
+accessible, beautiful, interactive components.
+You will see a lot better components as well.
+
+493
+00:46:14,980 --> 00:46:15,230
+>>Dimitri Glazkov: Right. No longer you have
+to pledge allegiance to a specific framework.
+
+494
+00:46:14,980 --> 00:46:15,420
+That little mini browser that was built inside
+of your browser, you can say well, no longer
+
+495
+00:46:15,420 --> 00:46:16,370
+I am just specifically a backbone man. I can
+just use markup and mix them around, because
+
+496
+00:46:16,370 --> 00:46:18,070
+this is just markup. It's a common media.
+Just standard stuff is in the DOM, in your
+
+497
+00:46:18,070 --> 00:46:18,410
+browser.
+If you look at this, you can clearly see another
+
+498
+00:46:18,410 --> 00:46:19,390
+advantage. For a -- for a company or a team
+of people working on the same Web applications,
+
+499
+00:46:19,390 --> 00:46:20,840
+ability to encapsulate offers tremendous advantages,
+right? Because now you can work on this stuff
+
+500
+00:46:20,840 --> 00:46:21,090
+without worrying about stepping on each other's
+toes, you can have a clean separation, you
+
+501
+00:46:20,840 --> 00:46:21,090
+can build work flows that actually make sense
+and not have this crazy schemes of discipline
+
+502
+00:46:20,840 --> 00:46:21,090
+built into this. Making that sure your selectors
+have to start with #foo and all of that thing
+
+503
+00:46:20,840 --> 00:46:21,090
+that you have to do today when you build complex
+applications.
+
+504
+00:46:20,950 --> 00:46:21,200
+>>Alex Komoroske: Cool. So the other case
+is that again most cases are fully declarative.
+
+505
+00:46:21,180 --> 00:46:21,430
+So these people who don't know script, they
+don't have a CS degree, they can still be
+
+506
+00:46:21,390 --> 00:46:22,530
+really productive. They can build really cool
+stuff with these components.
+
+507
+00:46:22,530 --> 00:46:25,070
+>>Dimitri Glazkov: Right. And one of the other
+things here is because the browser is taking
+
+508
+00:46:25,070 --> 00:46:25,330
+care of loading and understanding the packaging
+obligations, the rendering of the things,
+
+509
+00:46:25,330 --> 00:46:25,580
+it can go much faster because the browser
+ultimately kind of knows more about rendering
+
+510
+00:46:25,330 --> 00:46:25,580
+than any author or any JavaScript engineer
+could do because we have a little more hooks
+
+511
+00:46:25,330 --> 00:46:25,580
+than standard JavaScript application could.
+>>Alex Komoroske: The final one, and this
+
+512
+00:46:25,330 --> 00:46:25,580
+one is kind of crazy, so bear with me, is
+the rise of shared semantics. So today your
+
+513
+00:46:25,400 --> 00:46:25,650
+semantics might only apply within your site
+because there's no good way to share them.
+
+514
+00:46:25,400 --> 00:46:26,200
+But if you allow people to define these tags
+that are useful to Web developers, it's very
+
+515
+00:46:26,200 --> 00:46:31,390
+obvious if we are -- for example, we will
+see these x-polls, it's very obvious that
+
+516
+00:46:31,390 --> 00:46:38,390
+people find that useful. And so this is a
+great way for Web developers to experiment
+
+517
+00:46:45,710 --> 00:46:47,700
+with new components and things. After a while,
+maybe you will see that everyone is using
+
+518
+00:46:47,700 --> 00:46:49,560
+tabstrips, they are using it in the same basic
+way, well, we just roll that into the spec,
+
+519
+00:46:49,560 --> 00:46:49,940
+roll that into the standard.
+>>Dimitri Glazkov: Directly into HTML.
+
+520
+00:46:49,940 --> 00:46:50,540
+>>Alex Komoroske: Directly into the browser.
+Why do you have to define your own? This is
+
+521
+00:46:50,540 --> 00:46:51,140
+a great place for Web developers to experiment,
+show us the way as browser developers, about
+
+522
+00:46:51,140 --> 00:46:51,610
+what stuff we should be directly baking in.
+>>Dimitri Glazkov: Right. And if you look
+
+523
+00:46:51,610 --> 00:46:55,000
+at it from another slightly different perspective,
+is that today there is no path from local
+
+524
+00:46:55,000 --> 00:47:02,000
+semantics, the semantics of your framework,
+to the global semantics, the public semantics
+
+525
+00:47:03,150 --> 00:47:07,230
+of HTML. Once you've built that thing imperatively,
+there is no existence of the actual tags,
+
+526
+00:47:07,230 --> 00:47:13,010
+there is no path to the tags. You can just
+study those things, and look at the patterns
+
+527
+00:47:13,010 --> 00:47:17,770
+and wonder what is the right thing. But there
+is no path. With the custom tags, you actually
+
+528
+00:47:17,770 --> 00:47:20,720
+start having this path because these are just
+tags. And now all that you have to do is run
+
+529
+00:47:20,720 --> 00:47:21,490
+a really,
+really large query, which Google can do actually,
+
+530
+00:47:21,490 --> 00:47:22,330
+and figure out which elements are common.
+Then you can know precisely which tags are
+
+531
+00:47:22,330 --> 00:47:23,630
+winning, which tags deserve to become more
+public and at some point make it into the
+
+532
+00:47:23,630 --> 00:47:23,880
+-- into the HTML spec, for example.
+>>Alex Komoroske: It's really cool stuff.
+
+533
+00:47:23,660 --> 00:47:23,910
+Again, Dimitri and I come from the future,
+so that's why we can talk about all of this
+
+534
+00:47:23,840 --> 00:47:24,090
+amazing stuff. The good news is actually that
+the future isn't quite as far away as you
+
+535
+00:47:23,920 --> 00:47:24,170
+might think. We aren't from, like, years in
+the future; we're from, like, a few months
+
+536
+00:47:24,000 --> 00:47:24,250
+in the future, basically.
+So shadow DOM and CSS variables are both implemented
+
+537
+00:47:24,060 --> 00:47:24,310
+in Chrome today. They are behind the 5. They
+aren't released on the Web yet, but if you
+
+538
+00:47:24,150 --> 00:47:24,400
+really want to you can go on and play with
+them. There are lots of effective polyfills.
+
+539
+00:47:24,230 --> 00:47:24,540
+Polyfills are basically shims that allow you
+to use functionality before it's directly
+
+540
+00:47:24,540 --> 00:47:24,790
+in the browser. We'll talk about those in
+a second. And another thing is this is not
+
+541
+00:47:24,590 --> 00:47:24,840
+a Chrome thing. This is being done in standards,
+we have a lot of other browser vendors are
+
+542
+00:47:24,700 --> 00:47:24,950
+extremely excited about the number of folks
+from those are in the audience today. We are
+
+543
+00:47:24,730 --> 00:47:24,980
+really working, this is a collaborative effort,
+a concerted effort with everybody to build
+
+544
+00:47:24,750 --> 00:47:25,000
+this. So this is something that you can actually
+look forward to using relatively soon.
+
+545
+00:47:24,780 --> 00:47:25,030
+>>Dimitri Glazkov: It's happening, guys, it's
+coming, seriously.
+
+546
+00:47:24,790 --> 00:47:25,230
+>>Alex Komoroske: So what can you guys do
+that you are all jazzed up about this stuff?
+
+547
+00:47:25,230 --> 00:47:25,890
+Well, you can help the future arrive faster.
+The one way -- there's lots of links and information
+
+548
+00:47:25,890 --> 00:47:26,220
+on this slide. What you should do right now
+if you are already a member of the Web components
+
+549
+00:47:26,220 --> 00:47:26,540
+plus page is follow us. We have a Google short
+link right there for you. This is where we
+
+550
+00:47:26,540 --> 00:47:26,790
+post interested updates about the spec, the
+implementations, cool examples, blog posts.
+
+551
+00:47:26,750 --> 00:47:27,190
+It's the one place that you can really learn
+about all of this stuff going on. And right
+
+552
+00:47:27,190 --> 00:47:27,440
+after this we're going to post all of these
+links to that plus page. If you want to, you
+
+553
+00:47:27,340 --> 00:47:27,590
+can read the introduction
+to Web components. You probably learn that
+
+554
+00:47:27,480 --> 00:47:27,730
+specs are really hard to read and they often
+are, but actually Dimitri has done an amazing
+
+555
+00:47:27,570 --> 00:47:27,820
+job writing an explainer, that goes through
+all of these concepts, in quiet some depth
+
+556
+00:47:27,640 --> 00:47:27,890
+but in a very readable way.
+>>Dimitri Glazkov: I promise there's no comic
+
+557
+00:47:27,700 --> 00:47:27,950
+sans on that page. If you are scared.
+>>Alex Komoroske: You can also read the CSS
+
+558
+00:47:27,780 --> 00:47:28,030
+variable spec, understand more how that stuff
+works, all of the amazing stuff that you can
+
+559
+00:47:27,860 --> 00:47:28,110
+do with it. It's really more powerful than
+it looks.
+
+560
+00:47:27,910 --> 00:47:28,160
+>>Dimitri Glazkov: The other thing is that
+there is actually a lot of really cool discussions
+
+561
+00:47:27,990 --> 00:47:28,240
+happening right now in your present about
+the Web components and working out all of
+
+562
+00:47:28,180 --> 00:47:28,430
+the corner cases, working out the kinks of
+how things should work precisely. I mean we're
+
+563
+00:47:28,240 --> 00:47:28,490
+in the future, all of those things are solved,
+we don't have to worry about them, but you
+
+564
+00:47:28,310 --> 00:47:28,560
+guys have to worry about it. Because getting
+this stuff done just right and making sure
+
+565
+00:47:28,360 --> 00:47:28,610
+this does not suck is really, really important.
+So, please, if you have any, you know, gumption
+
+566
+00:47:28,430 --> 00:47:28,680
+for bike shedding, or really, really endless
+discussions with no end, please join the standards
+
+567
+00:47:28,480 --> 00:47:28,730
+list and start listening in, start understanding
+what's going on, what's happening.
+
+568
+00:47:28,530 --> 00:47:28,780
+>>Alex Komoroske: It's also possible to start
+building with this stuff today. Dimitri has
+
+569
+00:47:28,580 --> 00:47:28,830
+written a polyfill for Web components, all
+it requires is Shadow DOM, so you would have
+
+570
+00:47:28,830 --> 00:47:29,340
+to turn it on in Chrome to play around with
+it. That's a really cool thing that actually
+
+571
+00:47:29,340 --> 00:47:29,780
+makes the polyfill for this entire thing,
+everything that we have shown you today is
+
+572
+00:47:29,780 --> 00:47:30,090
+how we actually did --
+>>Dimitri Glazkov: You know those self driving
+
+573
+00:47:30,090 --> 00:47:30,550
+cars? It's like that. It's like a very, very
+early prototype that you can possibly drive.
+
+574
+00:47:30,550 --> 00:47:30,990
+Bad things may happen, I can't guarantee--
+>>Alex Komoroske: Don't use that one for anything
+
+575
+00:47:30,990 --> 00:47:31,420
+in production today are written by Daniel
+Buchner, who I believe is right there from
+
+576
+00:47:31,420 --> 00:47:31,820
+Mozilla, he's built this really cool library
+called x-tags. X-tags is basically a polyfill
+
+577
+00:47:31,820 --> 00:47:32,340
+for the custom elements part of what we showed
+you today. The cool thing about that is this
+
+578
+00:47:32,340 --> 00:47:32,590
+actually
+works in all major browsers. It uses a number
+
+579
+00:47:32,520 --> 00:47:33,240
+of very clever hacks to do it, but you actually
+can start building real apps on top of this
+
+580
+00:47:33,240 --> 00:47:33,490
+today if you want.
+>>Dimitri Glazkov: Daniel is actually actively
+
+581
+00:47:33,390 --> 00:47:33,640
+at work building a pretty, pretty solid toolkit
+on top of this, the UI widget library that
+
+582
+00:47:33,640 --> 00:47:33,890
+would potentially power some really, really
+cool applications in the future.
+
+583
+00:47:33,800 --> 00:47:34,060
+>>Alex Komoroske: That's really cool, so check
+that out once we post the link to that plus
+
+584
+00:47:34,060 --> 00:47:34,330
+page.
+All right, great! So that's all that we have
+
+585
+00:47:34,330 --> 00:47:36,010
+for you today, we wanted to share a little
+bit more about Web components, it's a really
+
+586
+00:47:36,010 --> 00:47:36,510
+exciting thing for the future. Thanks so much
+for coming out. [ Applause ]
+
+587
+00:47:36,510 --> 00:47:37,140
+>>Dimitri Glazkov: And -- and in the future
+-- the future bus leaves in 10 minutes, but
+
+588
+00:47:37,140 --> 00:47:37,600
+until then we can answer your questions if
+you would like.
+
+589
+00:47:37,600 --> 00:47:37,970
+>>Alex Komoroske: Come up to one of these
+microphones that we've got here in the aisles.
+
+590
+00:47:37,970 --> 00:47:38,220
+>>> What about events?
+>>Alex Komoroske: What about events is the
+
+591
+00:47:37,980 --> 00:47:38,230
+question we got from the audience.
+>>Dimitri Glazkov: The events are actually
+
+592
+00:47:38,000 --> 00:47:38,250
+also handled by the Shadow DOM specifications,
+and there's really neat things that we do
+
+593
+00:47:38,010 --> 00:47:38,260
+to make sure that the information in the event
+never escapes outside of the Shadow DOM subtree,
+
+594
+00:47:38,030 --> 00:47:38,280
+but the events are heard. It's called retargeting.
+What happens is that if something fires, like,
+
+595
+00:47:38,040 --> 00:47:38,290
+for example, if you click a play button in
+your video element, the event or the click
+
+596
+00:47:38,060 --> 00:47:38,310
+event propagates out, but it looks like it
+came from the video element. Does that make
+
+597
+00:47:38,070 --> 00:47:38,320
+sense? So it's actually a really complex part
+of those things, and we fought extremely hard
+
+598
+00:47:38,090 --> 00:47:38,340
+to make sure that Shadow DOM feels transparent
+to the user and it doesn't look like it's
+
+599
+00:47:38,110 --> 00:47:38,360
+affecting any actual normal operation of the
+events. But the information from the inside
+
+600
+00:47:38,120 --> 00:47:38,370
+of the Shadow DOM subtree never leaks out
+on the outside.
+
+601
+00:47:38,130 --> 00:47:38,380
+>>Alex Komoroske: We've got a question at
+this mic.
+
+602
+00:47:38,140 --> 00:47:38,390
+>>> So it sounds like a lot of this is helping
+you with bringing in dependencies and encapsulating
+
+603
+00:47:38,160 --> 00:47:38,410
+code. Have you guys thought much in the spec
+about dependency management, you know, I mean,
+
+604
+00:47:38,170 --> 00:47:38,420
+obviously a lot of Java developers and a lot
+of developers in general use Maven for that,
+
+605
+00:47:38,190 --> 00:47:38,440
+so you don't get dependency explosion with
+inside your app. There's that encapsulated
+
+606
+00:47:38,200 --> 00:47:38,450
+part but, you know, in a team you want to
+try and use consistent dependencies across.
+
+607
+00:47:38,220 --> 00:47:38,470
+Has that been addressed in the spec at all?
+>>Dimitri Glazkov: At this point there is
+
+608
+00:47:38,230 --> 00:47:38,480
+just early discussions on how this actual
+linking of the custom elements, the packaging,
+
+609
+00:47:38,250 --> 00:47:38,500
+will happen, so this is actually a good time
+to start talking and start discussing this
+
+610
+00:47:38,260 --> 00:47:38,510
+type of thing. I mean you saw that in the
+future and you saw it works but, you know,
+
+611
+00:47:38,280 --> 00:47:38,530
+later on.
+>>> What about like with media queries where
+
+612
+00:47:38,290 --> 00:47:38,540
+the widget, the component need to adapt based
+on certain break points, and usually those
+
+613
+00:47:38,300 --> 00:47:38,550
+break points are going to be different based
+on whatever context of the app they are used
+
+614
+00:47:38,320 --> 00:47:38,570
+in. Right. So one of the interesting things
+there is that first of all we made sure that
+
+615
+00:47:38,340 --> 00:47:38,590
+Shadow DOM actually operates within the confines
+of CSS, we are not inventing anything abnormal,
+
+616
+00:47:38,350 --> 00:47:38,600
+so all of the CSS machinery the way that you
+operate on it will just work. It just feels,
+
+617
+00:47:38,370 --> 00:47:38,620
+it has the same -- it will feel like it's
+just part of the documents. So you will get
+
+618
+00:47:38,390 --> 00:47:38,640
+all of the same information about the size
+and media queries, things like that.
+
+619
+00:47:38,400 --> 00:47:38,650
+>>> (Inaudible).
+>>> I'm an extension developer in the users
+
+620
+00:47:38,410 --> 00:47:38,660
+group aficionado, and there's lots of templated
+sites out there that don't use that yet, but
+
+621
+00:47:38,430 --> 00:47:38,680
+that would be great to extend. And are you
+thinking about how to integrate this into
+
+622
+00:47:38,440 --> 00:47:38,690
+the Chrome extension API so that we can add
+components where there are none and change
+
+623
+00:47:38,460 --> 00:47:38,710
+them?
+>>Dimitri Glazkov: Shadow DOM is actually
+
+624
+00:47:38,460 --> 00:47:38,710
+one of the really, really use cases for extensions,
+the ones that modify the page on the fly.
+
+625
+00:47:38,480 --> 00:47:38,730
+Because what you can do is you can build a
+Shadow DOM into an element and the document
+
+626
+00:47:38,500 --> 00:47:38,750
+doesn't know that it's there. And so yes,
+it's a very common use case, yes, it's coming.
+
+627
+00:47:38,520 --> 00:47:38,770
+>>> Thank you.
+>>> I'm a (indiscernible) developer but I
+
+628
+00:47:38,520 --> 00:47:38,770
+was thinking could you invent the map API
+into the Shadow DOM so it would build a custom
+
+629
+00:47:38,540 --> 00:47:38,790
+tech for example a store locator and give
+that to a customer and say, hey, do this and
+
+630
+00:47:38,560 --> 00:47:38,810
+--
+>>Alex Komoroske: That's a phenomenal use
+
+631
+00:47:38,560 --> 00:47:38,810
+case, doing exactly that. In fact, one of
+the components of x-tag --
+
+632
+00:47:38,580 --> 00:47:38,830
+>>Dimitri Glazkov: Talk to this guy, he's
+already got one.
+
+633
+00:47:38,590 --> 00:47:38,840
+>>Alex Komoroske: That's an awesome use case
+for it. Yeah.
+
+634
+00:47:38,600 --> 00:47:38,850
+>>Dimitri Glazkov: Come on, bring it on!
+>>Alex Komoroske: Anything else?
+
+635
+00:47:38,610 --> 00:47:38,860
+>>> What about the SCO, like there's potential
+information like the SI tag that would be
+
+636
+00:47:38,620 --> 00:47:38,870
+less important, would Google bot pick that
+up because it's not potentially rendered on
+
+637
+00:47:38,640 --> 00:47:38,890
+the page?
+>>> We don't work on the search team so we
+
+638
+00:47:38,650 --> 00:47:38,900
+don't know the answer to that question. We
+can imagine there's going to be interesting
+
+639
+00:47:38,660 --> 00:47:38,910
+changes in the way that people --
+>>Dimitri Glazkov: It doesn't have to be on
+
+640
+00:47:38,670 --> 00:47:38,920
+the SI tag, it can be on H1 or poll, if you
+want it to. It's up to you to define it as
+
+641
+00:47:38,700 --> 00:47:38,950
+the author of the API.
+>>Alex Komoroske: If there are any other questions,
+
+642
+00:47:38,710 --> 00:47:38,960
+Dimitri and I will be hanging around for few
+minutes afterwards if you want to ask us any
+
+643
+00:47:38,730 --> 00:47:38,980
+other questions. Thanks so much. [ Applause
+]
+
+644
+00:47:38,730 --> 00:47:38,980
+>>Dimitri Glazkov: Yay!
+

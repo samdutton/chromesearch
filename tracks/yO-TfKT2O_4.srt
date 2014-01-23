@@ -1,0 +1,2494 @@
+1
+00:00:00,000 --> 00:00:05,580
+
+2
+00:00:05,580 --> 00:00:06,050
+Hello.
+
+3
+00:00:06,050 --> 00:00:06,930
+Welcome.
+
+4
+00:00:06,930 --> 00:00:10,770
+This is the second part of our
+DevTools tips and tricks.
+
+5
+00:00:10,770 --> 00:00:13,790
+So in this part, we're going to
+take a look at some of the
+
+6
+00:00:13,790 --> 00:00:17,900
+internals or some of the ways
+you can extend DevTools or
+
+7
+00:00:17,900 --> 00:00:20,355
+even use it in different ways
+for different applications
+
+8
+00:00:20,355 --> 00:00:23,030
+entirely, which I think
+is very cool.
+
+9
+00:00:23,030 --> 00:00:26,890
+So once again, you can follow
+along by going to
+
+10
+00:00:26,890 --> 00:00:28,640
+bit.ly/devtools-tips.
+
+11
+00:00:28,640 --> 00:00:29,900
+You can see the slides.
+
+12
+00:00:29,900 --> 00:00:30,810
+You can see the examples.
+
+13
+00:00:30,810 --> 00:00:32,485
+You can follow the links.
+
+14
+00:00:32,485 --> 00:00:35,890
+But in the meantime, just check
+out some of the things
+
+15
+00:00:35,890 --> 00:00:37,225
+that you can do with DevTools.
+
+16
+00:00:37,225 --> 00:00:40,210
+So the first thing that we
+talked about in the previous
+
+17
+00:00:40,210 --> 00:00:43,140
+episode, when we actually looked
+at DevTools, was the
+
+18
+00:00:43,140 --> 00:00:44,300
+Audit panel.
+
+19
+00:00:44,300 --> 00:00:47,480
+And the really cool part about
+the Audit panel, we saw a
+
+20
+00:00:47,480 --> 00:00:49,850
+couple of built-in audits, like
+network and performance.
+
+21
+00:00:49,850 --> 00:00:53,200
+But you can add your own
+functionality into here, which
+
+22
+00:00:53,200 --> 00:00:53,930
+is really nice.
+
+23
+00:00:53,930 --> 00:00:59,040
+So if you have any sort of style
+guidelines or team best
+
+24
+00:00:59,040 --> 00:01:02,680
+practices or other things that
+you have agreement on with
+
+25
+00:01:02,680 --> 00:01:05,770
+your team, you can actually
+codify them into this plugin,
+
+26
+00:01:05,770 --> 00:01:08,720
+inject them right into DevTools,
+and just hit Run,
+
+27
+00:01:08,720 --> 00:01:11,400
+and it'll verify.
+
+28
+00:01:11,400 --> 00:01:14,090
+We have this silly example
+here, but I think it
+
+29
+00:01:14,090 --> 00:01:17,110
+illustrates the point of
+Readability plugin, which just
+
+30
+00:01:17,110 --> 00:01:20,100
+looks at, hey, the font
+size on this page
+
+31
+00:01:20,100 --> 00:01:20,930
+is maybe too small.
+
+32
+00:01:20,930 --> 00:01:22,270
+It's not legible.
+
+33
+00:01:22,270 --> 00:01:23,850
+We should bump it up.
+
+34
+00:01:23,850 --> 00:01:27,940
+So to get this functionality, it
+literally just takes about
+
+35
+00:01:27,940 --> 00:01:29,270
+10 lines of JavaScript.
+
+36
+00:01:29,270 --> 00:01:32,000
+So first, we're going to add
+a new audit category called
+
+37
+00:01:32,000 --> 00:01:33,000
+Readability.
+
+38
+00:01:33,000 --> 00:01:37,470
+And then, we're going to inject
+the feedback that we
+
+39
+00:01:37,470 --> 00:01:38,340
+want back to the user.
+
+40
+00:01:38,340 --> 00:01:41,360
+So we're going to say,
+we found two styles
+
+41
+00:01:41,360 --> 00:01:42,170
+with a small font.
+
+42
+00:01:42,170 --> 00:01:44,950
+So I guess I should say that
+when you run this audit, you
+
+43
+00:01:44,950 --> 00:01:45,830
+have access to the page.
+
+44
+00:01:45,830 --> 00:01:47,990
+So you can do all of your logic,
+and then, based on
+
+45
+00:01:47,990 --> 00:01:49,130
+that, you would admit
+these rules.
+
+46
+00:01:49,130 --> 00:01:53,320
+So we found two styles with the
+small font, and we can add
+
+47
+00:01:53,320 --> 00:01:55,510
+severity and other things, and
+all of the sudden, you're
+
+48
+00:01:55,510 --> 00:01:57,680
+looking at this nice report
+in Chrome DevTools.
+
+49
+00:01:57,680 --> 00:02:01,570
+So you can find broken links,
+best practices, et cetera.
+
+50
+00:02:01,570 --> 00:02:02,750
+Now, very, very handy.
+
+51
+00:02:02,750 --> 00:02:05,740
+So if you're finding yourself
+repeating the same work at any
+
+52
+00:02:05,740 --> 00:02:07,540
+point in time, this
+is the tool that
+
+53
+00:02:07,540 --> 00:02:08,835
+you want to be using.
+
+54
+00:02:08,835 --> 00:02:13,110
+Similarly, you can actually
+extend the panel in Chrome,
+
+55
+00:02:13,110 --> 00:02:17,680
+which is to say, instead of just
+adding functionality into
+
+56
+00:02:17,680 --> 00:02:21,570
+the Audit panel, you can
+put it into other
+
+57
+00:02:21,570 --> 00:02:22,560
+places within Chrome.
+
+58
+00:02:22,560 --> 00:02:25,870
+So for example, we've just added
+this Font Picker panel,
+
+59
+00:02:25,870 --> 00:02:28,810
+which can live in all the
+various locations.
+
+60
+00:02:28,810 --> 00:02:32,120
+And you click on an element, you
+can have [? contextual ?]
+
+61
+00:02:32,120 --> 00:02:32,970
+control of that element.
+
+62
+00:02:32,970 --> 00:02:35,350
+You can actually inject
+additional properties, like
+
+63
+00:02:35,350 --> 00:02:36,880
+what is a font name
+and other things.
+
+64
+00:02:36,880 --> 00:02:39,560
+So if you have your Templating
+Engine or some other
+
+65
+00:02:39,560 --> 00:02:41,950
+framework, you can actually
+embed some of the additional
+
+66
+00:02:41,950 --> 00:02:44,650
+functionality right
+into Chrome.
+
+67
+00:02:44,650 --> 00:02:45,780
+Once again, quite nice.
+
+68
+00:02:45,780 --> 00:02:48,765
+A little bit more advanced
+than Audit.
+
+69
+00:02:48,765 --> 00:02:52,950
+But nonetheless, this is the
+right tool if that's what
+
+70
+00:02:52,950 --> 00:02:54,000
+you're looking for.
+
+71
+00:02:54,000 --> 00:02:55,310
+Now, this one is kind
+of interesting.
+
+72
+00:02:55,310 --> 00:02:58,235
+I know that I've certainly
+spent--
+
+73
+00:02:58,235 --> 00:03:00,640
+I feel fine admitting it-- that
+I spent way too much time
+
+74
+00:03:00,640 --> 00:03:04,815
+customizing all of my various
+IDs for what's the perfect,
+
+75
+00:03:04,815 --> 00:03:09,290
+ideal color scheme and font
+sizes, et cetera.
+
+76
+00:03:09,290 --> 00:03:11,600
+Good news, you can actually
+do the same thing in
+
+77
+00:03:11,600 --> 00:03:12,810
+DevTools, as well.
+
+78
+00:03:12,810 --> 00:03:15,850
+I know that I certainly spend a
+lot of time in DevTools, and
+
+79
+00:03:15,850 --> 00:03:18,830
+I like that to be consistent
+with the rest of the system.
+
+80
+00:03:18,830 --> 00:03:22,710
+So you can actually drop in
+your own custom CSS to
+
+81
+00:03:22,710 --> 00:03:27,700
+re-style all of the style sheets
+or all of DevTools.
+
+82
+00:03:27,700 --> 00:03:30,690
+And you can check out
+these slides later.
+
+83
+00:03:30,690 --> 00:03:33,890
+There's this link to a post that
+I put together, which has
+
+84
+00:03:33,890 --> 00:03:36,140
+a lot of really cool and
+nice looking themes.
+
+85
+00:03:36,140 --> 00:03:39,340
+You can just drop that in and
+completely re-style your
+
+86
+00:03:39,340 --> 00:03:41,710
+Chrome DevTools, which
+is quite cool--
+
+87
+00:03:41,710 --> 00:03:44,812
+and the supplies on
+all platforms.
+
+88
+00:03:44,812 --> 00:03:47,310
+Now, debugging is something
+that we get a lot
+
+89
+00:03:47,310 --> 00:03:47,940
+of questions about.
+
+90
+00:03:47,940 --> 00:03:50,960
+This is a very, very powerful
+feature of Chrome.
+
+91
+00:03:50,960 --> 00:03:53,875
+So this applies to both mobile
+and regular debugging.
+
+92
+00:03:53,875 --> 00:03:55,860
+So there are two ways
+
+93
+00:03:55,860 --> 00:03:58,050
+basically to leverage debugging.
+
+94
+00:03:58,050 --> 00:04:02,140
+One is you start your Chrome
+instance with this extra flag
+
+95
+00:04:02,140 --> 00:04:04,670
+called Remote Debugging
+port, and then you
+
+96
+00:04:04,670 --> 00:04:05,920
+give it a port number.
+
+97
+00:04:05,920 --> 00:04:08,950
+And similarly, when you're
+running on your phone, you
+
+98
+00:04:08,950 --> 00:04:11,235
+just need to set up
+port forwarding.
+
+99
+00:04:11,235 --> 00:04:13,270
+So for example, I have
+my Android phone.
+
+100
+00:04:13,270 --> 00:04:14,695
+I can connect it
+to my computer.
+
+101
+00:04:14,695 --> 00:04:16,875
+I have Chrome running
+on my phone.
+
+102
+00:04:16,875 --> 00:04:19,314
+ADB is the Android Debugger.
+
+103
+00:04:19,314 --> 00:04:23,440
+So I'm just going to set up port
+forwarding, and then you
+
+104
+00:04:23,440 --> 00:04:27,790
+can debug your web pages that
+are running on your phone but
+
+105
+00:04:27,790 --> 00:04:29,030
+directly in your DevTools.
+
+106
+00:04:29,030 --> 00:04:31,450
+So let me show you an
+actual example here.
+
+107
+00:04:31,450 --> 00:04:35,820
+So I'm going to start Chrome
+Canary with the
+
+108
+00:04:35,820 --> 00:04:38,206
+remote-debugging-port=9222.
+
+109
+00:04:38,206 --> 00:04:39,990
+I'm going to run this.
+
+110
+00:04:39,990 --> 00:04:42,210
+It opened this guy right here.
+
+111
+00:04:42,210 --> 00:04:43,676
+I'm just going to
+open google.com.
+
+112
+00:04:43,676 --> 00:04:45,610
+So far, nothing too
+interesting.
+
+113
+00:04:45,610 --> 00:04:46,840
+It works.
+
+114
+00:04:46,840 --> 00:04:50,040
+Now, in this other tab, I'm
+going to do something
+
+115
+00:04:50,040 --> 00:04:51,400
+interesting.
+
+116
+00:04:51,400 --> 00:04:54,515
+We know that we are running
+the debugger on port 922.
+
+117
+00:04:54,515 --> 00:04:57,940
+So if I just send the request
+to the /JSON endpoint, it
+
+118
+00:04:57,940 --> 00:04:59,790
+actually returns me a bunch
+of metadata about
+
+119
+00:04:59,790 --> 00:05:01,715
+all the open tabs.
+
+120
+00:05:01,715 --> 00:05:04,730
+And in here, you can see that
+the first tab that is open is,
+
+121
+00:05:04,730 --> 00:05:07,015
+in fact, google.com, which is
+the page that we opened.
+
+122
+00:05:07,015 --> 00:05:07,880
+No surprise.
+
+123
+00:05:07,880 --> 00:05:12,430
+And we also give you this
+WebSocket Debugger URL, which
+
+124
+00:05:12,430 --> 00:05:15,730
+means that we can connect to
+this endpoint and start doing
+
+125
+00:05:15,730 --> 00:05:16,510
+interesting things.
+
+126
+00:05:16,510 --> 00:05:18,570
+And of course, at this point,
+you're probably asking what
+
+127
+00:05:18,570 --> 00:05:21,012
+are those interesting things?
+
+128
+00:05:21,012 --> 00:05:28,670
+Well, if we go back, one thing
+you can do is actually take
+
+129
+00:05:28,670 --> 00:05:33,650
+another client, which is not
+even necessarily DevTools,
+
+130
+00:05:33,650 --> 00:05:37,120
+connect that tool to Chrome
+and drive it.
+
+131
+00:05:37,120 --> 00:05:40,930
+So for example, here I have
+just a very simple Ruby
+
+132
+00:05:40,930 --> 00:05:43,630
+Script, which will actually
+drive Chrome and drive it
+
+133
+00:05:43,630 --> 00:05:47,230
+through the debugging protocol
+that we support in Chrome.
+
+134
+00:05:47,230 --> 00:05:49,440
+So let's take a look at
+what's happening here.
+
+135
+00:05:49,440 --> 00:05:52,180
+We query this URL that
+we just saw.
+
+136
+00:05:52,180 --> 00:05:56,105
+We fetch the first WebSocket
+Debugger URL.
+
+137
+00:05:56,105 --> 00:05:58,670
+So this would be
+our Google URL.
+
+138
+00:05:58,670 --> 00:06:00,420
+And then we connect
+to it, and we just
+
+139
+00:06:00,420 --> 00:06:01,490
+send a couple of commands.
+
+140
+00:06:01,490 --> 00:06:03,720
+The first one is network.enable,
+which means
+
+141
+00:06:03,720 --> 00:06:06,590
+that, hey, I want you to enable
+network debugging from
+
+142
+00:06:06,590 --> 00:06:07,180
+this point forward.
+
+143
+00:06:07,180 --> 00:06:08,930
+I want to get data for this.
+
+144
+00:06:08,930 --> 00:06:11,110
+So think of it just as in
+your Chrome DevTools.
+
+145
+00:06:11,110 --> 00:06:12,180
+You're clicking on the
+Network panel.
+
+146
+00:06:12,180 --> 00:06:13,940
+That's effectively what
+you're doing here.
+
+147
+00:06:13,940 --> 00:06:16,940
+And then the next request,
+request number two, I'm
+
+148
+00:06:16,940 --> 00:06:20,680
+saying, hey, please navigate
+yourself-- so I'm talking to
+
+149
+00:06:20,680 --> 00:06:21,620
+this specific tab--
+
+150
+00:06:21,620 --> 00:06:26,185
+please navigate to twitter.com
+and search for DevTools.
+
+151
+00:06:26,185 --> 00:06:26,560
+OK.
+
+152
+00:06:26,560 --> 00:06:27,610
+So far, so good.
+
+153
+00:06:27,610 --> 00:06:31,280
+And Chrome will do that, and it
+will actually then spit out
+
+154
+00:06:31,280 --> 00:06:32,170
+all of this network data.
+
+155
+00:06:32,170 --> 00:06:34,080
+And how is it going to look?
+
+156
+00:06:34,080 --> 00:06:36,040
+Well, it's going to look
+something like this, except
+
+157
+00:06:36,040 --> 00:06:37,830
+there's going to be lots
+and lots more data.
+
+158
+00:06:37,830 --> 00:06:41,270
+So for example, as we're loading
+Twitter, there's a lot
+
+159
+00:06:41,270 --> 00:06:42,260
+of resources on that page.
+
+160
+00:06:42,260 --> 00:06:45,130
+You're going to see a lot
+of requests coming in.
+
+161
+00:06:45,130 --> 00:06:45,660
+Here's an example.
+
+162
+00:06:45,660 --> 00:06:48,860
+We have a request that is being
+made by Chrome, and
+
+163
+00:06:48,860 --> 00:06:50,660
+Chrome was logging this,
+saying, look,
+
+164
+00:06:50,660 --> 00:06:52,190
+I'm making XHR requests.
+
+165
+00:06:52,190 --> 00:06:53,630
+This is an AJAX request.
+
+166
+00:06:53,630 --> 00:06:57,445
+I'm asking for the current
+trends in English language.
+
+167
+00:06:57,445 --> 00:07:00,745
+By the way, I got a 200
+for this request.
+
+168
+00:07:00,745 --> 00:07:02,260
+I didn't use the cache.
+
+169
+00:07:02,260 --> 00:07:04,750
+I didn't reuse the connection
+for whatever reason.
+
+170
+00:07:04,750 --> 00:07:07,250
+And by the way, here's all of
+the timing data for this
+
+171
+00:07:07,250 --> 00:07:09,550
+request-- how long I spent
+connecting, doing a DNS
+
+172
+00:07:09,550 --> 00:07:10,620
+lookup, and other things.
+
+173
+00:07:10,620 --> 00:07:15,120
+So kind of very low level, but
+it's, once again, all the data
+
+174
+00:07:15,120 --> 00:07:17,400
+you would need to construct
+your Timeline or something
+
+175
+00:07:17,400 --> 00:07:22,330
+else, which actually hints at
+the next thing, which is
+
+176
+00:07:22,330 --> 00:07:26,060
+Chrome DevTools, itself,
+is a web app.
+
+177
+00:07:26,060 --> 00:07:30,775
+So once again, we have our
+Chrome Canary here.
+
+178
+00:07:30,775 --> 00:07:33,430
+So these two are two different
+versions of Canary, and this
+
+179
+00:07:33,430 --> 00:07:35,610
+is a regular version
+of Chrome.
+
+180
+00:07:35,610 --> 00:07:38,025
+So we have the debugger
+running on
+
+181
+00:07:38,025 --> 00:07:39,275
+the one on the right.
+
+182
+00:07:39,275 --> 00:07:43,460
+So I'm going to go into here
+and go to localhost:9222.
+
+183
+00:07:43,460 --> 00:07:46,280
+This is where we run
+the debugger.
+
+184
+00:07:46,280 --> 00:07:46,930
+And look at that.
+
+185
+00:07:46,930 --> 00:07:49,480
+We have the tab.
+
+186
+00:07:49,480 --> 00:07:51,380
+We can see the tab that we
+have opened, which is
+
+187
+00:07:51,380 --> 00:07:51,790
+google.com.
+
+188
+00:07:51,790 --> 00:07:54,320
+And if I click on this, it'll
+load up DevTools.
+
+189
+00:07:54,320 --> 00:07:56,320
+And you'll notice that as I
+hover over the different
+
+190
+00:07:56,320 --> 00:07:58,750
+elements, it actually
+highlights it on
+
+191
+00:07:58,750 --> 00:07:59,860
+the page on the right.
+
+192
+00:07:59,860 --> 00:08:03,000
+So this is one instance of
+Chrome talking to another.
+
+193
+00:08:03,000 --> 00:08:05,650
+This is the same workflow that
+would happen when you're
+
+194
+00:08:05,650 --> 00:08:06,300
+running it on your phone.
+
+195
+00:08:06,300 --> 00:08:09,810
+We're just doing it with
+two side-by-side
+
+196
+00:08:09,810 --> 00:08:11,345
+Chrome run times here.
+
+197
+00:08:11,345 --> 00:08:13,000
+So why is this interesting?
+
+198
+00:08:13,000 --> 00:08:15,610
+Well, this really highlights
+the fact that DevTools,
+
+199
+00:08:15,610 --> 00:08:17,170
+itself, is a web app.
+
+200
+00:08:17,170 --> 00:08:20,890
+And just to prove the point, we
+can actually open DevTools
+
+201
+00:08:20,890 --> 00:08:22,060
+on DevTools.
+
+202
+00:08:22,060 --> 00:08:26,620
+So if you're seeing double,
+that's as intended, because,
+
+203
+00:08:26,620 --> 00:08:29,216
+for example, as I hover--
+
+204
+00:08:29,216 --> 00:08:29,630
+whoops.
+
+205
+00:08:29,630 --> 00:08:30,350
+That's the wrong one.
+
+206
+00:08:30,350 --> 00:08:32,820
+If I hover on this element
+here, you can
+
+207
+00:08:32,820 --> 00:08:33,900
+actually see it being--
+
+208
+00:08:33,900 --> 00:08:37,020
+so here I'm debugging DevTools
+on the right, which is
+
+209
+00:08:37,020 --> 00:08:37,975
+debugging this page.
+
+210
+00:08:37,975 --> 00:08:40,940
+So going a little bit meta here,
+but this is very cool,
+
+211
+00:08:40,940 --> 00:08:43,590
+which means that you
+can take this code.
+
+212
+00:08:43,590 --> 00:08:45,990
+You can actually modify it.
+
+213
+00:08:45,990 --> 00:08:47,985
+If you have some really awesome
+improvement that
+
+214
+00:08:47,985 --> 00:08:51,440
+you've wanted on DevTools, we'd
+love to hear what it is.
+
+215
+00:08:51,440 --> 00:08:53,960
+You can go right in, modify it,
+play with it, and do all
+
+216
+00:08:53,960 --> 00:08:55,530
+kinds of interesting stuff.
+
+217
+00:08:55,530 --> 00:08:57,210
+So let me close that.
+
+218
+00:08:57,210 --> 00:08:59,576
+It can get a little
+bit confusing.
+
+219
+00:08:59,576 --> 00:09:02,540
+Let's go back in here.
+
+220
+00:09:02,540 --> 00:09:07,760
+So we talked about connecting
+to a debug endpoint.
+
+221
+00:09:07,760 --> 00:09:15,050
+We talked about consuming the
+WebSocket feed, and in fact,
+
+222
+00:09:15,050 --> 00:09:15,740
+that's what DevTools uses.
+
+223
+00:09:15,740 --> 00:09:19,850
+It connects to the WebSocket
+endpoint, consumes that data,
+
+224
+00:09:19,850 --> 00:09:23,080
+and then just puts everything
+to the screen.
+
+225
+00:09:23,080 --> 00:09:27,070
+But what if something else
+generated this debug feed?
+
+226
+00:09:27,070 --> 00:09:29,570
+And this is an example
+I love to use.
+
+227
+00:09:29,570 --> 00:09:30,590
+I think this is really,
+really cool.
+
+228
+00:09:30,590 --> 00:09:35,260
+So guys at square.com built this
+really cool open source
+
+229
+00:09:35,260 --> 00:09:36,720
+project called PonyDebugger.
+
+230
+00:09:36,720 --> 00:09:39,490
+And their observation was
+that, hey, we use Chrome
+
+231
+00:09:39,490 --> 00:09:42,330
+DevTools all the time for
+developing our web apps.
+
+232
+00:09:42,330 --> 00:09:44,310
+We'd like to use it for
+developing our native apps,
+
+233
+00:09:44,310 --> 00:09:45,370
+our iOS apps.
+
+234
+00:09:45,370 --> 00:09:51,280
+So what they did was they
+started emitting.
+
+235
+00:09:51,280 --> 00:09:52,610
+So they basically looked
+at our debug
+
+236
+00:09:52,610 --> 00:09:53,870
+protocol, which is defined.
+
+237
+00:09:53,870 --> 00:09:55,570
+You can actually find
+the docs in it.
+
+238
+00:09:55,570 --> 00:09:58,970
+And they are emitting this data
+straight out of their
+
+239
+00:09:58,970 --> 00:10:00,810
+native apps, iOS apps.
+
+240
+00:10:00,810 --> 00:10:04,985
+And their apps are making
+requests through the network.
+
+241
+00:10:04,985 --> 00:10:07,210
+So they're just opening this
+data, and they're then
+
+242
+00:10:07,210 --> 00:10:11,810
+connecting to this WebSocket
+endpoint with DevTools.
+
+243
+00:10:11,810 --> 00:10:14,800
+And they can see all of the data
+as you would expect, all
+
+244
+00:10:14,800 --> 00:10:16,810
+of the network waterfalls,
+and all of the rest.
+
+245
+00:10:16,810 --> 00:10:21,810
+So this is iOS device emitting
+these events, and it's
+
+246
+00:10:21,810 --> 00:10:24,460
+basically debugging it in Chrome
+DevTools, which I think
+
+247
+00:10:24,460 --> 00:10:26,280
+is really, really awesome.
+
+248
+00:10:26,280 --> 00:10:29,280
+And not only that, but, of
+course, you also have Core
+
+249
+00:10:29,280 --> 00:10:30,560
+Data in iOS.
+
+250
+00:10:30,560 --> 00:10:33,850
+So they were able to hook up
+Core Data and use Chrome
+
+251
+00:10:33,850 --> 00:10:35,880
+DevTools to drill in directly.
+
+252
+00:10:35,880 --> 00:10:38,470
+So for example, you have User
+Model, and User Model has all
+
+253
+00:10:38,470 --> 00:10:40,010
+different properties,
+et cetera.
+
+254
+00:10:40,010 --> 00:10:43,310
+So once again, this is Chrome
+DevTools being used to debug
+
+255
+00:10:43,310 --> 00:10:48,204
+not Chrome, but something else
+entirely, which is awesome.
+
+256
+00:10:48,204 --> 00:10:50,580
+Now, shifting gears
+a little bit--
+
+257
+00:10:50,580 --> 00:10:51,550
+benchmarking.
+
+258
+00:10:51,550 --> 00:10:55,890
+Benchmarking is a very hard
+thing to do right, very easy
+
+259
+00:10:55,890 --> 00:10:59,120
+to get wrong, because you tend
+to forget something.
+
+260
+00:10:59,120 --> 00:11:01,600
+And it's easy to forget
+something, because there's so
+
+261
+00:11:01,600 --> 00:11:04,630
+many different layers of caches,
+socket pools, and
+
+262
+00:11:04,630 --> 00:11:07,100
+other things that are being
+maintained by your browser, by
+
+263
+00:11:07,100 --> 00:11:09,590
+your operating system, your
+DNS caches, et cetera.
+
+264
+00:11:09,590 --> 00:11:13,640
+So we have a very handy tool
+that can help you do this
+
+265
+00:11:13,640 --> 00:11:16,390
+better or do it right.
+
+266
+00:11:16,390 --> 00:11:20,030
+And to get that running, you
+actually need to install an
+
+267
+00:11:20,030 --> 00:11:20,955
+additional extension.
+
+268
+00:11:20,955 --> 00:11:22,840
+It's the Chrome Benchmarking
+Extension.
+
+269
+00:11:22,840 --> 00:11:26,360
+You can install it from
+the Chrome App Store.
+
+270
+00:11:26,360 --> 00:11:29,710
+And then to make use of it,
+you actually need to start
+
+271
+00:11:29,710 --> 00:11:31,040
+Chrome with a new flag.
+
+272
+00:11:31,040 --> 00:11:32,850
+So just like previously we were
+using Remote Debugging
+
+273
+00:11:32,850 --> 00:11:36,520
+flag, here we need to
+enable benchmarking.
+
+274
+00:11:36,520 --> 00:11:40,460
+And what this allows the
+extension to do is it gives it
+
+275
+00:11:40,460 --> 00:11:44,240
+control to be able to close all
+the socket pools, flush
+
+276
+00:11:44,240 --> 00:11:48,190
+those, flush the DNS cache,
+all kinds of internals of
+
+277
+00:11:48,190 --> 00:11:52,075
+Chrome that you don't get
+exposed to day to day.
+
+278
+00:11:52,075 --> 00:11:56,710
+So combining those two together,
+they'll help you
+
+279
+00:11:56,710 --> 00:11:58,245
+automate benchmarking.
+
+280
+00:11:58,245 --> 00:12:00,190
+And I'll show you this
+in a second.
+
+281
+00:12:00,190 --> 00:12:06,560
+One other tip that I have is
+this is specific to OS X, I
+
+282
+00:12:06,560 --> 00:12:06,780
+should say.
+
+283
+00:12:06,780 --> 00:12:11,130
+But if you're running on a Mac,
+there's this very cool
+
+284
+00:12:11,130 --> 00:12:14,800
+app that's not related to Chrome
+at all called Appify,
+
+285
+00:12:14,800 --> 00:12:20,110
+which allows you to take any
+sort of command with a couple
+
+286
+00:12:20,110 --> 00:12:23,775
+of parameters and wrap it into
+what looks like an app.
+
+287
+00:12:23,775 --> 00:12:26,072
+So sound simple?
+
+288
+00:12:26,072 --> 00:12:27,660
+So I have Chrome Benchmark.
+
+289
+00:12:27,660 --> 00:12:30,330
+I just package it as an
+app so I can run this.
+
+290
+00:12:30,330 --> 00:12:34,116
+Actually, to do that I would
+have to quit this.
+
+291
+00:12:34,116 --> 00:12:35,605
+So Benchmark--
+
+292
+00:12:35,605 --> 00:12:37,600
+it'll start up an instance
+of Chrome.
+
+293
+00:12:37,600 --> 00:12:41,786
+
+294
+00:12:41,786 --> 00:12:43,145
+There we go.
+
+295
+00:12:43,145 --> 00:12:45,950
+And so we're running with this
+flag, and the extension is
+
+296
+00:12:45,950 --> 00:12:46,250
+right here.
+
+297
+00:12:46,250 --> 00:12:47,705
+I'm going to load it up.
+
+298
+00:12:47,705 --> 00:12:50,490
+And it gives me this interface,
+where I can type in
+
+299
+00:12:50,490 --> 00:12:53,250
+a couple of different URLs or,
+in fact, as many as you want.
+
+300
+00:12:53,250 --> 00:12:54,710
+You can load an entire file.
+
+301
+00:12:54,710 --> 00:12:57,920
+I'm going to just run this
+against two endpoints.
+
+302
+00:12:57,920 --> 00:13:02,520
+So google.com and, let's
+say, yahoo.com.
+
+303
+00:13:02,520 --> 00:13:04,865
+So you can specify the
+number of iterations.
+
+304
+00:13:04,865 --> 00:13:07,430
+I'm going to say three.
+
+305
+00:13:07,430 --> 00:13:08,720
+We don't have all day.
+
+306
+00:13:08,720 --> 00:13:10,700
+Clear connections,
+clear cache--
+
+307
+00:13:10,700 --> 00:13:12,620
+I'm not going to test
+for a SPDY, but this
+
+308
+00:13:12,620 --> 00:13:14,630
+can do a SPDY check.
+
+309
+00:13:14,630 --> 00:13:17,545
+So hit Run and watch
+what happens.
+
+310
+00:13:17,545 --> 00:13:20,160
+So now this extension is
+literally opening up these
+
+311
+00:13:20,160 --> 00:13:23,930
+tabs, firing off these requests,
+loads the page,
+
+312
+00:13:23,930 --> 00:13:27,160
+closes the tab, flushes
+everything, repeats this
+
+313
+00:13:27,160 --> 00:13:30,320
+process, and is going to do it
+three times for each of the
+
+314
+00:13:30,320 --> 00:13:31,190
+URLs we specified.
+
+315
+00:13:31,190 --> 00:13:33,190
+So this is basically automating
+this experience.
+
+316
+00:13:33,190 --> 00:13:36,860
+And the best part is that it
+aggregates all of this data
+
+317
+00:13:36,860 --> 00:13:38,990
+and gives us a report
+afterwards.
+
+318
+00:13:38,990 --> 00:13:43,530
+So wow, the Yahoo! pages are
+taking quite a while to load
+
+319
+00:13:43,530 --> 00:13:45,782
+for whatever reason.
+
+320
+00:13:45,782 --> 00:13:47,952
+So now we're loading
+google.com.
+
+321
+00:13:47,952 --> 00:13:51,330
+And you can see that here
+we've had three
+
+322
+00:13:51,330 --> 00:13:53,572
+runs in each case.
+
+323
+00:13:53,572 --> 00:13:56,440
+As you saw, so we have standard
+deviation in the load
+
+324
+00:13:56,440 --> 00:13:59,770
+time, so one of the pages
+took a long time.
+
+325
+00:13:59,770 --> 00:14:02,450
+So the standard deviation
+was really high.
+
+326
+00:14:02,450 --> 00:14:03,990
+I wonder what happened there.
+
+327
+00:14:03,990 --> 00:14:06,580
+And we can also just
+click on these two
+
+328
+00:14:06,580 --> 00:14:07,870
+guys and click Compare.
+
+329
+00:14:07,870 --> 00:14:10,390
+And you can see that the Google
+pages were pretty
+
+330
+00:14:10,390 --> 00:14:11,510
+consistent.
+
+331
+00:14:11,510 --> 00:14:12,730
+Something funny happened
+there.
+
+332
+00:14:12,730 --> 00:14:13,940
+Maybe it was my network.
+
+333
+00:14:13,940 --> 00:14:18,420
+But you can see the huge
+variation between these runs
+
+334
+00:14:18,420 --> 00:14:19,710
+for yahoo.com.
+
+335
+00:14:19,710 --> 00:14:22,010
+So you can put in more URLs.
+
+336
+00:14:22,010 --> 00:14:23,960
+Definitely use this tool.
+
+337
+00:14:23,960 --> 00:14:28,680
+It gives you nice metrics for
+things like load meantime,
+
+338
+00:14:28,680 --> 00:14:32,640
+time to first paint, which is
+very handy, the meantime, and
+
+339
+00:14:32,640 --> 00:14:34,300
+a number of other things.
+
+340
+00:14:34,300 --> 00:14:37,620
+So very handy if you're doing
+any sort of benchmarking.
+
+341
+00:14:37,620 --> 00:14:40,406
+This is the way you
+should do it.
+
+342
+00:14:40,406 --> 00:14:44,190
+And speaking of the internals
+of the Chrome networking
+
+343
+00:14:44,190 --> 00:14:47,630
+stack, there's actually quite
+a bit of data that you have
+
+344
+00:14:47,630 --> 00:14:51,330
+access to if you're trying to
+debug the performance of your
+
+345
+00:14:51,330 --> 00:14:51,915
+application.
+
+346
+00:14:51,915 --> 00:14:55,700
+So we have the Omnibox,
+which-- and this is
+
+347
+00:14:55,700 --> 00:14:56,130
+kind of on the side.
+
+348
+00:14:56,130 --> 00:14:58,730
+This is more personal curiosity,
+if you will.
+
+349
+00:14:58,730 --> 00:15:02,415
+But we have the Omnibox, which
+helps you with autocomplete
+
+350
+00:15:02,415 --> 00:15:05,210
+and trying to help you figure
+out where you're trying to go.
+
+351
+00:15:05,210 --> 00:15:07,880
+So all of this data is stored
+in Chrome Predictor.
+
+352
+00:15:07,880 --> 00:15:12,150
+So if you just grab this and
+type it into your Chrome and
+
+353
+00:15:12,150 --> 00:15:15,440
+hit Enter, you'll see all the
+predictions that Chrome stores
+
+354
+00:15:15,440 --> 00:15:18,920
+that you've typed, and you can
+see the guesses that Chrome
+
+355
+00:15:18,920 --> 00:15:21,060
+will make, which actually
+makes for quite
+
+356
+00:15:21,060 --> 00:15:22,986
+interesting to explore.
+
+357
+00:15:22,986 --> 00:15:25,800
+The other section that I'll
+highlight is Chrome
+
+358
+00:15:25,800 --> 00:15:26,280
+net-internals.
+
+359
+00:15:26,280 --> 00:15:29,500
+If you happen to play with us,
+you definitely should.
+
+360
+00:15:29,500 --> 00:15:32,670
+There's a lot of useful
+tools hidden in here.
+
+361
+00:15:32,670 --> 00:15:34,980
+So if I go into Chrome
+net-internals--
+
+362
+00:15:34,980 --> 00:15:38,090
+let me go into Sockets, and here
+you can see all of the
+
+363
+00:15:38,090 --> 00:15:40,380
+open sockets currently
+in Chrome.
+
+364
+00:15:40,380 --> 00:15:41,580
+You can actually flush them.
+
+365
+00:15:41,580 --> 00:15:42,330
+You can close them.
+
+366
+00:15:42,330 --> 00:15:43,630
+You can do all kinds of stuff.
+
+367
+00:15:43,630 --> 00:15:47,062
+You can look at your
+current cache.
+
+368
+00:15:47,062 --> 00:15:51,260
+So Timeline DNS, the records
+that are being kept by Chrome.
+
+369
+00:15:51,260 --> 00:15:53,690
+So all this data is in here.
+
+370
+00:15:53,690 --> 00:15:56,320
+And I'll show you one specific
+example for SPDY.
+
+371
+00:15:56,320 --> 00:16:01,705
+So SPDY is a layer below HTTP.
+
+372
+00:16:01,705 --> 00:16:08,150
+So when you look at resources
+fetched via SPDY, you actually
+
+373
+00:16:08,150 --> 00:16:10,590
+won't see any difference in
+your Timeline, because
+
+374
+00:16:10,590 --> 00:16:12,650
+basically it's just HTTP.
+
+375
+00:16:12,650 --> 00:16:15,425
+But they do look different
+on the wire.
+
+376
+00:16:15,425 --> 00:16:18,965
+So right now, we have two
+SPDY connections open.
+
+377
+00:16:18,965 --> 00:16:20,350
+Now, let me show
+you an example.
+
+378
+00:16:20,350 --> 00:16:26,650
+So I have this really silly
+spdy.io which just prints
+
+379
+00:16:26,650 --> 00:16:29,975
+"Hello World." There
+you have it.
+
+380
+00:16:29,975 --> 00:16:32,850
+We can go back into our Chrome
+
+381
+00:16:32,850 --> 00:16:34,300
+net-internals, and look at that.
+
+382
+00:16:34,300 --> 00:16:37,510
+We have a SPDY connection that
+is currently open to the
+
+383
+00:16:37,510 --> 00:16:40,370
+server, and we have
+the ID of it.
+
+384
+00:16:40,370 --> 00:16:44,160
+So we can click on this, and
+you see the actual session.
+
+385
+00:16:44,160 --> 00:16:47,970
+You click on that, and all of
+a sudden, you see all of the
+
+386
+00:16:47,970 --> 00:16:49,070
+data as it is on the wire.
+
+387
+00:16:49,070 --> 00:16:52,080
+So these are the SPDY frames
+being exchanged between the
+
+388
+00:16:52,080 --> 00:16:52,660
+client and the server.
+
+389
+00:16:52,660 --> 00:16:54,360
+So we're sending a [? Sen ?]
+
+390
+00:16:54,360 --> 00:16:56,235
+Stream with all kinds
+of parameters.
+
+391
+00:16:56,235 --> 00:16:57,890
+This should look
+very familiar.
+
+392
+00:16:57,890 --> 00:17:00,560
+It's basically HCP,
+but it is wrapped
+
+393
+00:17:00,560 --> 00:17:01,680
+in a different protocol.
+
+394
+00:17:01,680 --> 00:17:04,416
+So if you're curious about SPDY,
+if you want to play with
+
+395
+00:17:04,416 --> 00:17:06,349
+it, if you want to just explore
+it, this is the place
+
+396
+00:17:06,349 --> 00:17:11,002
+to take a peek and learn
+what's happening.
+
+397
+00:17:11,002 --> 00:17:13,428
+So let's close that
+and head back.
+
+398
+00:17:13,428 --> 00:17:16,770
+Similarly, Chrome stores a
+lot of histogram data.
+
+399
+00:17:16,770 --> 00:17:20,089
+So this is performance-related
+data specific to your browser.
+
+400
+00:17:20,089 --> 00:17:22,630
+This data is collected
+throughout the lifetime of the
+
+401
+00:17:22,630 --> 00:17:24,569
+browser or since
+you opened it.
+
+402
+00:17:24,569 --> 00:17:29,210
+So you can look at things like
+what is the average or the
+
+403
+00:17:29,210 --> 00:17:31,490
+mean or what is the
+distribution, actually, of the
+
+404
+00:17:31,490 --> 00:17:33,970
+DNS look-ups.
+
+405
+00:17:33,970 --> 00:17:37,820
+So if I open this, there's a
+lot of histograms in here.
+
+406
+00:17:37,820 --> 00:17:41,110
+But if I look for
+DNS Success--
+
+407
+00:17:41,110 --> 00:17:43,562
+let me just look for Success--
+
+408
+00:17:43,562 --> 00:17:45,240
+Attempt Success Duration.
+
+409
+00:17:45,240 --> 00:17:47,820
+So you can see that most of the
+DNS requests that I make
+
+410
+00:17:47,820 --> 00:17:50,550
+get completed very fast, so
+within zero milliseconds,
+
+411
+00:17:50,550 --> 00:17:53,030
+which means their cached, which
+is exactly what we want.
+
+412
+00:17:53,030 --> 00:17:55,080
+But then there's this long tail,
+and then there's this
+
+413
+00:17:55,080 --> 00:17:57,350
+funny spike at about
+300 milliseconds.
+
+414
+00:17:57,350 --> 00:18:01,930
+So this is the detailed
+histogram metadata about just
+
+415
+00:18:01,930 --> 00:18:03,400
+your network performance.
+
+416
+00:18:03,400 --> 00:18:07,600
+So if you have a suspicion that
+maybe your ISP or your
+
+417
+00:18:07,600 --> 00:18:10,865
+DNS server's not working well,
+this is the place to find out.
+
+418
+00:18:10,865 --> 00:18:14,020
+Lots of other data aside from
+DNS in here, as well.
+
+419
+00:18:14,020 --> 00:18:16,642
+So just fun to play
+around with.
+
+420
+00:18:16,642 --> 00:18:20,000
+And the last thing that I'll
+mention, and this is more
+
+421
+00:18:20,000 --> 00:18:22,470
+specific to Chrome, so some of
+these other things like socket
+
+422
+00:18:22,470 --> 00:18:24,680
+pools and other things are
+basically present in all the
+
+423
+00:18:24,680 --> 00:18:25,590
+web browsers today.
+
+424
+00:18:25,590 --> 00:18:28,170
+One of the nice features of
+Chrome is that it actually
+
+425
+00:18:28,170 --> 00:18:31,090
+learns the topology of
+the network or your
+
+426
+00:18:31,090 --> 00:18:31,920
+site, if you will.
+
+427
+00:18:31,920 --> 00:18:36,470
+So let's say I have never
+visited cnn.com, The first
+
+428
+00:18:36,470 --> 00:18:38,240
+time I load it, Chrome knows
+nothing about it.
+
+429
+00:18:38,240 --> 00:18:40,955
+So we just go about loading
+the page as you would.
+
+430
+00:18:40,955 --> 00:18:44,880
+But we remember which
+sub-domains or which domains
+
+431
+00:18:44,880 --> 00:18:47,000
+we've used to fetch some
+of those resources.
+
+432
+00:18:47,000 --> 00:18:48,860
+So for example, if you're
+putting a lot of your assets
+
+433
+00:18:48,860 --> 00:18:52,070
+on some CDN and we're fetching
+a lot of resources, we'll
+
+434
+00:18:52,070 --> 00:18:52,790
+remember that.
+
+435
+00:18:52,790 --> 00:18:57,260
+Such that the next time you load
+cnn.com, we will actually
+
+436
+00:18:57,260 --> 00:19:01,380
+see if it makes sense to
+preemptively open that
+
+437
+00:19:01,380 --> 00:19:03,170
+connection to your CDN.
+
+438
+00:19:03,170 --> 00:19:06,725
+Such that when you do make that
+request for the asset, we
+
+439
+00:19:06,725 --> 00:19:08,010
+already have the connection
+open, and it
+
+440
+00:19:08,010 --> 00:19:09,195
+can be fetched faster.
+
+441
+00:19:09,195 --> 00:19:11,060
+Now, that doesn't mean that
+Chrome will do that every
+
+442
+00:19:11,060 --> 00:19:15,540
+single time, but in this example
+for igvita.com, you
+
+443
+00:19:15,540 --> 00:19:18,865
+can see that these are the
+resources that we remembered.
+
+444
+00:19:18,865 --> 00:19:22,140
+We know that this page uses
+the Google Fonts.
+
+445
+00:19:22,140 --> 00:19:23,410
+It uses a Plus Button.
+
+446
+00:19:23,410 --> 00:19:24,550
+It uses Google Analytics.
+
+447
+00:19:24,550 --> 00:19:28,850
+So we've remembered those, and
+next time around, we may
+
+448
+00:19:28,850 --> 00:19:31,850
+actually use this information
+to speed up the
+
+449
+00:19:31,850 --> 00:19:33,280
+performance of your site.
+
+450
+00:19:33,280 --> 00:19:36,800
+So very interesting and fun
+to play around with.
+
+451
+00:19:36,800 --> 00:19:41,880
+And you can go into the
+Chrome/DNS and look at these
+
+452
+00:19:41,880 --> 00:19:45,365
+host names and see what's
+happening there.
+
+453
+00:19:45,365 --> 00:19:49,810
+Now, this last one here
+is chrome://tracing.
+
+454
+00:19:49,810 --> 00:19:51,050
+Very powerful, very
+interesting.
+
+455
+00:19:51,050 --> 00:19:55,340
+It was originally built by
+and for Chrome engineers.
+
+456
+00:19:55,340 --> 00:19:57,910
+So we were trying to figure
+out how to improve
+
+457
+00:19:57,910 --> 00:19:58,660
+performance of Chrome.
+
+458
+00:19:58,660 --> 00:20:02,265
+What's actually happening in
+the guts of Chrome, itself?
+
+459
+00:20:02,265 --> 00:20:05,210
+But a lot of people have started
+using this, because it
+
+460
+00:20:05,210 --> 00:20:08,280
+is, in fact, very useful, not
+just for understanding how
+
+461
+00:20:08,280 --> 00:20:10,880
+Chrome works, but how your code
+
+462
+00:20:10,880 --> 00:20:12,760
+interacts with Chrome code.
+
+463
+00:20:12,760 --> 00:20:15,230
+So for example, if you're
+running, or if you're writing
+
+464
+00:20:15,230 --> 00:20:18,700
+a game or something that is
+really exercising all of the
+
+465
+00:20:18,700 --> 00:20:21,520
+features of Chrome and really
+trying to leverage the GPU and
+
+466
+00:20:21,520 --> 00:20:23,720
+other things, this is definitely
+something that you
+
+467
+00:20:23,720 --> 00:20:24,270
+want to check out.
+
+468
+00:20:24,270 --> 00:20:26,860
+And there's a great article
+on this on HTML5 Rocks.
+
+469
+00:20:26,860 --> 00:20:31,460
+But let me show you what
+this actually does.
+
+470
+00:20:31,460 --> 00:20:36,960
+So we can go into
+chrome://tracing--
+
+471
+00:20:36,960 --> 00:20:38,210
+whoops.
+
+472
+00:20:38,210 --> 00:20:40,942
+
+473
+00:20:40,942 --> 00:20:44,960
+Chrome://tracing, we can hit
+Record, and let's go to one of
+
+474
+00:20:44,960 --> 00:20:45,630
+these tabs.
+
+475
+00:20:45,630 --> 00:20:46,910
+And there we go.
+
+476
+00:20:46,910 --> 00:20:49,435
+We'll just scroll around for
+a little while and go back.
+
+477
+00:20:49,435 --> 00:20:51,775
+Hit Stop.
+
+478
+00:20:51,775 --> 00:20:57,190
+Now, we have a lot of different
+tabs open, so you
+
+479
+00:20:57,190 --> 00:21:01,130
+see the individual threads of
+each tab and how those are
+
+480
+00:21:01,130 --> 00:21:01,510
+interacting.
+
+481
+00:21:01,510 --> 00:21:04,350
+But right here, we have
+a bunch of activity.
+
+482
+00:21:04,350 --> 00:21:06,050
+So this is the Renderer
+thread.
+
+483
+00:21:06,050 --> 00:21:07,990
+And we were just scrolling, and
+we had that kind of slow
+
+484
+00:21:07,990 --> 00:21:08,770
+interaction.
+
+485
+00:21:08,770 --> 00:21:11,250
+So the Renderer was doing
+a lot of working here.
+
+486
+00:21:11,250 --> 00:21:14,230
+And we can actually zoom in
+on this region and see.
+
+487
+00:21:14,230 --> 00:21:15,465
+So this is--
+
+488
+00:21:15,465 --> 00:21:17,600
+or these are other-- the
+specific frames that are being
+
+489
+00:21:17,600 --> 00:21:19,340
+rendered, and this is the
+work that's being done.
+
+490
+00:21:19,340 --> 00:21:22,570
+So we continue zooming in, we
+can pan around, and we can see
+
+491
+00:21:22,570 --> 00:21:23,160
+the actual work.
+
+492
+00:21:23,160 --> 00:21:26,630
+So we have a Render widget
+that's calling.
+
+493
+00:21:26,630 --> 00:21:28,810
+So these are internal
+names within Chrome.
+
+494
+00:21:28,810 --> 00:21:30,760
+So if you want to find
+out what Chrome is
+
+495
+00:21:30,760 --> 00:21:32,150
+doing, this is fantastic.
+
+496
+00:21:32,150 --> 00:21:34,560
+And we can continue zooming in,
+and we can see that at a
+
+497
+00:21:34,560 --> 00:21:37,170
+specific frame here, we're
+actually drawing the pattern.
+
+498
+00:21:37,170 --> 00:21:40,520
+So we're calling a function
+within Chrome called Image
+
+499
+00:21:40,520 --> 00:21:41,150
+Draw Pattern.
+
+500
+00:21:41,150 --> 00:21:44,290
+And this is what's outputting
+those Chrome logos.
+
+501
+00:21:44,290 --> 00:21:46,380
+But if you want to find out
+more as to how that works,
+
+502
+00:21:46,380 --> 00:21:49,390
+perhaps you're trying to
+debug something, that's
+
+503
+00:21:49,390 --> 00:21:50,380
+the way to do it.
+
+504
+00:21:50,380 --> 00:21:53,450
+But not only that, this, by
+itself, is kind of useful
+
+505
+00:21:53,450 --> 00:21:56,030
+because you get to peek inside
+of Chrome and figure out maybe
+
+506
+00:21:56,030 --> 00:21:57,980
+you have a performance
+bottleneck that you just can't
+
+507
+00:21:57,980 --> 00:21:58,720
+figure out.
+
+508
+00:21:58,720 --> 00:22:00,340
+That's the place to figure
+out what's happening.
+
+509
+00:22:00,340 --> 00:22:04,735
+But even better, you can
+actually inject your own
+
+510
+00:22:04,735 --> 00:22:10,170
+labels into here to figure out
+where is my code and how does
+
+511
+00:22:10,170 --> 00:22:12,700
+my code interface with
+other code within the
+
+512
+00:22:12,700 --> 00:22:13,270
+internals of Chrome?
+
+513
+00:22:13,270 --> 00:22:17,860
+So to do that, in your apps, you
+can use console.time and
+
+514
+00:22:17,860 --> 00:22:20,110
+console.timeEnd to mark
+a start and an
+
+515
+00:22:20,110 --> 00:22:21,260
+endpoint for any interval.
+
+516
+00:22:21,260 --> 00:22:23,830
+And then, in this case,
+I'm saying update.
+
+517
+00:22:23,830 --> 00:22:27,690
+And if we repeated the same
+exercise and then zoomed in on
+
+518
+00:22:27,690 --> 00:22:30,710
+that specific section, we
+would actually see these
+
+519
+00:22:30,710 --> 00:22:32,230
+blocks here-- so update
+and render.
+
+520
+00:22:32,230 --> 00:22:36,080
+So this is your code running
+within the context of all the
+
+521
+00:22:36,080 --> 00:22:36,920
+other code within Chrome.
+
+522
+00:22:36,920 --> 00:22:39,680
+So if you're really pushing
+the performance of the
+
+523
+00:22:39,680 --> 00:22:44,130
+browser, this is a great way to
+get a full picture of not
+
+524
+00:22:44,130 --> 00:22:49,664
+just high-level JavaScript
+API.
+
+525
+00:22:49,664 --> 00:22:53,040
+And that will give you access
+to CPU-GPU and many, many
+
+526
+00:22:53,040 --> 00:22:54,555
+other things.
+
+527
+00:22:54,555 --> 00:22:59,690
+So with that, that's all the
+tips we had for now.
+
+528
+00:22:59,690 --> 00:23:02,610
+You can check out the slides,
+and I encourage you to do so.
+
+529
+00:23:02,610 --> 00:23:05,190
+There's a lot of links that you
+should explore in there at
+
+530
+00:23:05,190 --> 00:23:08,520
+bit.ly/devtools-tips.
+
+531
+00:23:08,520 --> 00:23:09,770
+Thank you.
+
+532
+00:23:09,770 --> 00:23:34,533
+

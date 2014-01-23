@@ -1,0 +1,3674 @@
+1
+00:00:00,000 --> 00:00:01,020
+
+2
+00:00:01,020 --> 00:00:02,130
+MALE SPEAKER: Shanghai
+GDG is a very
+
+3
+00:00:02,130 --> 00:00:04,200
+interesting developer community.
+
+4
+00:00:04,200 --> 00:00:05,040
+FEMALE SPEAKER: I'm
+glad somebody
+
+5
+00:00:05,040 --> 00:00:06,300
+has asked this question.
+
+6
+00:00:06,300 --> 00:00:07,475
+MALE SPEAKER: This is where
+the magic happens.
+
+7
+00:00:07,475 --> 00:00:08,730
+FEMALE SPEAKER: This is
+primarily a question and
+
+8
+00:00:08,730 --> 00:00:09,147
+answer show.
+
+9
+00:00:09,147 --> 00:00:11,765
+So if any of you out there would
+like to ask questions.
+
+10
+00:00:11,765 --> 00:00:20,460
+
+11
+00:00:20,460 --> 00:00:23,130
+IDO GREEN: Hello and
+welcome to GDLI--
+
+12
+00:00:23,130 --> 00:00:25,360
+Google Developer Live Israel.
+
+13
+00:00:25,360 --> 00:00:26,690
+Thank you for joining us.
+
+14
+00:00:26,690 --> 00:00:29,870
+Today we are going to speak
+about mobile web apps and
+
+15
+00:00:29,870 --> 00:00:33,040
+what, as a font developer, we
+should think about when we are
+
+16
+00:00:33,040 --> 00:00:37,270
+coming to develop a new product
+or a new service or a
+
+17
+00:00:37,270 --> 00:00:39,580
+new layout to our website
+or web app.
+
+18
+00:00:39,580 --> 00:00:42,780
+And of course, we want it to be
+available in all the mobile
+
+19
+00:00:42,780 --> 00:00:45,350
+devices that are out there.
+
+20
+00:00:45,350 --> 00:00:49,280
+One common denominator of this
+we see again and again in all
+
+21
+00:00:49,280 --> 00:00:51,570
+the devices that we have today,
+and certainly in the
+
+22
+00:00:51,570 --> 00:00:55,450
+near future in new devices, is
+one great piece of software,
+
+23
+00:00:55,450 --> 00:00:57,870
+which is the browser.
+
+24
+00:00:57,870 --> 00:01:00,780
+On most of the devices today,
+we have Chrome.
+
+25
+00:01:00,780 --> 00:01:03,590
+And that's really good news in
+the sense that you have the
+
+26
+00:01:03,590 --> 00:01:06,150
+latest and greatest
+in terms of HTML5
+
+27
+00:01:06,150 --> 00:01:08,900
+APIs that are supported.
+
+28
+00:01:08,900 --> 00:01:12,010
+And in this short presentation,
+I'll try to go
+
+29
+00:01:12,010 --> 00:01:15,820
+over the different main points
+that you want to think about
+
+30
+00:01:15,820 --> 00:01:19,770
+when you are creating a new
+mobile web app in terms of the
+
+31
+00:01:19,770 --> 00:01:23,860
+design, the building blocks,
+and the tools or libraries
+
+32
+00:01:23,860 --> 00:01:25,680
+that you might want to
+leverage, and not
+
+33
+00:01:25,680 --> 00:01:27,050
+reinvent the wheel.
+
+34
+00:01:27,050 --> 00:01:29,910
+Without further ado, let me
+jump into the slides.
+
+35
+00:01:29,910 --> 00:01:32,600
+And if you'll have any
+questions, I'll be more than
+
+36
+00:01:32,600 --> 00:01:36,960
+happy to try and answer them
+at the end of the show.
+
+37
+00:01:36,960 --> 00:01:41,640
+So here in the first slide,
+of course, we are using
+
+38
+00:01:41,640 --> 00:01:42,920
+geolocation.
+
+39
+00:01:42,920 --> 00:01:47,330
+And just do view source, and
+you'll see how easy it is to
+
+40
+00:01:47,330 --> 00:01:51,390
+tap into the special ability
+that we have today with mobile
+
+41
+00:01:51,390 --> 00:01:55,300
+devices, and then just to get
+from the browser, the location
+
+42
+00:01:55,300 --> 00:01:59,000
+of the user, and offer them
+immediately more relevant
+
+43
+00:01:59,000 --> 00:02:01,580
+information based on
+the geoinformation
+
+44
+00:02:01,580 --> 00:02:03,480
+that we have on them.
+
+45
+00:02:03,480 --> 00:02:07,470
+If you have any questions during
+the show or after it,
+
+46
+00:02:07,470 --> 00:02:13,430
+you're most welcome to come and
+Ping me on G+ or Twitter.
+
+47
+00:02:13,430 --> 00:02:18,190
+All the slides that I'm going
+through are now live under
+
+48
+00:02:18,190 --> 00:02:20,630
+ido-green.appspot.com.
+
+49
+00:02:20,630 --> 00:02:23,460
+And of course, we'll have a
+summary with a transcript in
+
+50
+00:02:23,460 --> 00:02:25,360
+my blog after the show.
+
+51
+00:02:25,360 --> 00:02:27,840
+If you have some hashtags,
+those are one of the most
+
+52
+00:02:27,840 --> 00:02:31,600
+popular ones that I'm using in
+order to see what's new there
+
+53
+00:02:31,600 --> 00:02:34,960
+and to keep myself up to date
+with new things that are
+
+54
+00:02:34,960 --> 00:02:38,710
+coming very rapidly into
+the ecosystem.
+
+55
+00:02:38,710 --> 00:02:43,100
+So what we'll try to cover in
+the next 25, 30 minutes will
+
+56
+00:02:43,100 --> 00:02:45,130
+be just to give a short
+brief of the state of
+
+57
+00:02:45,130 --> 00:02:46,990
+the mobile web today.
+
+58
+00:02:46,990 --> 00:02:50,180
+Then we'll talk a little bit
+about design philosophy, what
+
+59
+00:02:50,180 --> 00:02:53,500
+are the main things that we want
+to consider and evaluate
+
+60
+00:02:53,500 --> 00:02:56,640
+when we are coming to design
+a new mobile web app.
+
+61
+00:02:56,640 --> 00:03:01,180
+Then we'll give some best
+practices and tips about how
+
+62
+00:03:01,180 --> 00:03:03,280
+to build a mobile web app.
+
+63
+00:03:03,280 --> 00:03:09,220
+And here is a link of a very,
+very cool new game that Chrome
+
+64
+00:03:09,220 --> 00:03:10,400
+Experiments launched.
+
+65
+00:03:10,400 --> 00:03:14,120
+And the beauty here is that
+basically we're having the
+
+66
+00:03:14,120 --> 00:03:16,870
+remote control in our
+phone, in our Chrome
+
+67
+00:03:16,870 --> 00:03:18,370
+on the mobile device.
+
+68
+00:03:18,370 --> 00:03:20,425
+And we're using the
+larger screen.
+
+69
+00:03:20,425 --> 00:03:23,370
+It could be Chrome on
+the TV or Chrome on
+
+70
+00:03:23,370 --> 00:03:24,960
+your laptop or desktop.
+
+71
+00:03:24,960 --> 00:03:26,820
+And the game is running
+on the bigger screen.
+
+72
+00:03:26,820 --> 00:03:29,350
+But the remote control for the
+game is on your phone.
+
+73
+00:03:29,350 --> 00:03:34,090
+And that's, in a way, just
+starting to gain the best of
+
+74
+00:03:34,090 --> 00:03:38,140
+both worlds in terms
+of slickness.
+
+75
+00:03:38,140 --> 00:03:41,010
+Last but not least, we'll try
+to give some tips and best
+
+76
+00:03:41,010 --> 00:03:43,860
+practices to save you time and
+effort and make you more
+
+77
+00:03:43,860 --> 00:03:46,090
+productive.
+
+78
+00:03:46,090 --> 00:03:49,310
+One little warning, many things
+that we are speaking
+
+79
+00:03:49,310 --> 00:03:53,330
+here-- and yeah, that's a very,
+very cool new effect
+
+80
+00:03:53,330 --> 00:03:56,370
+that we've been using for the
+past two years, actually--
+
+81
+00:03:56,370 --> 00:03:59,320
+is just to tell you that we are
+on the bleeding edge here
+
+82
+00:03:59,320 --> 00:04:00,810
+in terms of some of
+the features.
+
+83
+00:04:00,810 --> 00:04:05,070
+So if we're thinking or talking
+about certain things,
+
+84
+00:04:05,070 --> 00:04:12,480
+please go to places like
+caniuse.com, or any other site
+
+85
+00:04:12,480 --> 00:04:16,050
+that's giving you a nice set
+of things to see which
+
+86
+00:04:16,050 --> 00:04:18,910
+browsers, in terms of your
+users, are using them.
+
+87
+00:04:18,910 --> 00:04:20,940
+And then you could evaluate
+if you want to use
+
+88
+00:04:20,940 --> 00:04:22,720
+this specific API.
+
+89
+00:04:22,720 --> 00:04:24,950
+For instance, let's take
+drag and drop.
+
+90
+00:04:24,950 --> 00:04:27,810
+You can see immediately which
+browser are supporting it, and
+
+91
+00:04:27,810 --> 00:04:30,050
+which mobile browsers aren't
+supporting it.
+
+92
+00:04:30,050 --> 00:04:32,860
+So you'll know exactly
+what users
+
+93
+00:04:32,860 --> 00:04:35,030
+could enjoy it or whatnot.
+
+94
+00:04:35,030 --> 00:04:38,670
+Another really nice way to
+think about it is to use
+
+95
+00:04:38,670 --> 00:04:41,840
+libraries like Modernizer and
+then have feature detection
+
+96
+00:04:41,840 --> 00:04:45,390
+and not browser sniffing,
+which is not good.
+
+97
+00:04:45,390 --> 00:04:47,370
+And with the feature detection,
+basically you will
+
+98
+00:04:47,370 --> 00:04:51,960
+know exactly what are the set
+of features or capabilities
+
+99
+00:04:51,960 --> 00:04:54,160
+that certain mobile
+app is giving you.
+
+100
+00:04:54,160 --> 00:04:59,320
+And then based on that, you
+could use responsive design
+
+101
+00:04:59,320 --> 00:05:03,480
+and progressive enhancement in
+order to make sure that some
+
+102
+00:05:03,480 --> 00:05:06,220
+of the users will be able to
+be productive, even if they
+
+103
+00:05:06,220 --> 00:05:09,850
+are working on older phone,
+while if your user is coming
+
+104
+00:05:09,850 --> 00:05:12,710
+from the latest greatest in
+terms of the hardware, you
+
+105
+00:05:12,710 --> 00:05:17,140
+could offer them more, and your
+app will work smoothly,
+
+106
+00:05:17,140 --> 00:05:19,180
+better in terms of performance,
+and maybe have
+
+107
+00:05:19,180 --> 00:05:22,040
+some nice set of features
+that aren't
+
+108
+00:05:22,040 --> 00:05:24,310
+supported on older devices.
+
+109
+00:05:24,310 --> 00:05:26,680
+We jumped into some
+mobile trains.
+
+110
+00:05:26,680 --> 00:05:28,850
+Well, the main outcome
+from this slide is
+
+111
+00:05:28,850 --> 00:05:30,280
+that mobile is big.
+
+112
+00:05:30,280 --> 00:05:34,840
+And mobile usage is actually
+going to overtake desktop.
+
+113
+00:05:34,840 --> 00:05:38,200
+Basically we see the pace
+growing rapidly.
+
+114
+00:05:38,200 --> 00:05:43,000
+And it might be even before
+we reach 2014.
+
+115
+00:05:43,000 --> 00:05:48,790
+Another important thing here
+is we have already nice
+
+116
+00:05:48,790 --> 00:05:52,430
+research from third party
+companies-- so take it with a
+
+117
+00:05:52,430 --> 00:05:53,820
+grain of salt--
+
+118
+00:05:53,820 --> 00:05:58,070
+about seeing that actually
+the mobile web is here.
+
+119
+00:05:58,070 --> 00:05:58,730
+It's here to stay.
+
+120
+00:05:58,730 --> 00:06:02,000
+And lots of users
+are using it.
+
+121
+00:06:02,000 --> 00:06:05,200
+Here's a specific case
+that Chitika did.
+
+122
+00:06:05,200 --> 00:06:11,990
+We see it happening in the ISO
+world, happening right now
+
+123
+00:06:11,990 --> 00:06:13,240
+pretty rapidly.
+
+124
+00:06:13,240 --> 00:06:15,350
+
+125
+00:06:15,350 --> 00:06:17,950
+When we're speaking about mobile
+browser, the good news
+
+126
+00:06:17,950 --> 00:06:23,040
+is that most of them got very
+nice elegant browsers that are
+
+127
+00:06:23,040 --> 00:06:27,170
+supporting quite a lot
+of HTML5 features.
+
+128
+00:06:27,170 --> 00:06:32,790
+In terms of the coverage, it's
+around 95% of web kit.
+
+129
+00:06:32,790 --> 00:06:35,380
+And that's including
+iOS, Android,
+
+130
+00:06:35,380 --> 00:06:38,370
+BlackBerry, and some others.
+
+131
+00:06:38,370 --> 00:06:42,150
+The main features that we are
+still missing are WebGL, Web
+
+132
+00:06:42,150 --> 00:06:46,240
+Audio API, that probably is
+coming really soon in some of
+
+133
+00:06:46,240 --> 00:06:50,740
+the browsers, and Shared
+Web Workers.
+
+134
+00:06:50,740 --> 00:06:54,230
+In progress, we have today
+nice cool things like the
+
+135
+00:06:54,230 --> 00:06:59,400
+Camera API and IndexedDB which
+is a full blown NoSQL database
+
+136
+00:06:59,400 --> 00:07:01,840
+that we have today in
+Chrome for Android.
+
+137
+00:07:01,840 --> 00:07:04,490
+For other ecosystems,
+like iOS, you'll
+
+138
+00:07:04,490 --> 00:07:06,360
+want to use Web SQL.
+
+139
+00:07:06,360 --> 00:07:13,990
+But since this spec is
+deprecated from 2010, you
+
+140
+00:07:13,990 --> 00:07:16,570
+might want to use something like
+launcher, and then have
+
+141
+00:07:16,570 --> 00:07:19,907
+the ability to switch on the fly
+between the database that
+
+142
+00:07:19,907 --> 00:07:20,600
+you're working.
+
+143
+00:07:20,600 --> 00:07:23,770
+So if you'll use launcher, and
+we'll have the link to this
+
+144
+00:07:23,770 --> 00:07:26,880
+library at the end of the
+slides, you could work with
+
+145
+00:07:26,880 --> 00:07:29,910
+both Web SQL IndexedDB.
+
+146
+00:07:29,910 --> 00:07:33,470
+And if other browser are
+supporting, let's say, local
+
+147
+00:07:33,470 --> 00:07:35,800
+storage, you'd be able
+to work with that.
+
+148
+00:07:35,800 --> 00:07:38,160
+So that's a nice way to approach
+things, and then
+
+149
+00:07:38,160 --> 00:07:43,800
+enjoy both worlds in supporting
+several ecosystems,
+
+150
+00:07:43,800 --> 00:07:46,420
+just to make sure that you'll
+be able to work with offline
+
+151
+00:07:46,420 --> 00:07:53,570
+first and offer your users the
+best environment and best
+
+152
+00:07:53,570 --> 00:07:57,490
+experience with your
+search and app.
+
+153
+00:07:57,490 --> 00:08:03,560
+This is just a quick graph to
+show how quickly we're seeing
+
+154
+00:08:03,560 --> 00:08:09,050
+Android going up, and how WebKit
+is supported on all the
+
+155
+00:08:09,050 --> 00:08:12,030
+major platforms, as I mentioned
+before, Android,
+
+156
+00:08:12,030 --> 00:08:14,410
+iPhone, BlackBerry, iPod
+Touch, et cetera.
+
+157
+00:08:14,410 --> 00:08:17,260
+
+158
+00:08:17,260 --> 00:08:21,920
+When we come into the old debate
+between web and native,
+
+159
+00:08:21,920 --> 00:08:25,170
+it's always refreshing to
+think about using and
+
+160
+00:08:25,170 --> 00:08:27,240
+leveraging the best
+tools for the job.
+
+161
+00:08:27,240 --> 00:08:32,190
+So in terms of being close to
+the metal and using all of the
+
+162
+00:08:32,190 --> 00:08:34,820
+great features that you have
+today, let's take, for
+
+163
+00:08:34,820 --> 00:08:38,230
+example, on Android platform,
+you probably want to create
+
+164
+00:08:38,230 --> 00:08:41,720
+native apps so it will work as
+close as possible to the
+
+165
+00:08:41,720 --> 00:08:44,000
+metal, and will give you
+all the full range
+
+166
+00:08:44,000 --> 00:08:47,030
+of different APIs.
+
+167
+00:08:47,030 --> 00:08:51,730
+The web, on the other end,
+is a unified platform.
+
+168
+00:08:51,730 --> 00:08:54,910
+As we mentioned before, you
+have it on different
+
+169
+00:08:54,910 --> 00:08:55,860
+ecosystems.
+
+170
+00:08:55,860 --> 00:08:57,610
+In all of them, you'll
+have the browser.
+
+171
+00:08:57,610 --> 00:09:01,150
+And even on all the forms, you
+do have the browsers that will
+
+172
+00:09:01,150 --> 00:09:05,730
+be able to read your HTML and
+show the user what you want
+
+173
+00:09:05,730 --> 00:09:07,750
+them to consume.
+
+174
+00:09:07,750 --> 00:09:09,930
+Native, of course, is
+a moving target.
+
+175
+00:09:09,930 --> 00:09:13,470
+And we're seeing it being
+improved very rapidly,
+
+176
+00:09:13,470 --> 00:09:15,540
+although we're seeing
+the web pushing the
+
+177
+00:09:15,540 --> 00:09:17,070
+boundaries again and again.
+
+178
+00:09:17,070 --> 00:09:19,445
+And the APIs guys are getting
+closer and closer.
+
+179
+00:09:19,445 --> 00:09:22,330
+
+180
+00:09:22,330 --> 00:09:27,330
+This standardization on the web
+is moving a bit slowly.
+
+181
+00:09:27,330 --> 00:09:31,425
+But the good news, or the half
+full part of the cup is that
+
+182
+00:09:31,425 --> 00:09:32,320
+it's catching up.
+
+183
+00:09:32,320 --> 00:09:36,560
+And the pace is getting
+better and better.
+
+184
+00:09:36,560 --> 00:09:42,340
+Here there's a link to a Scott
+Jason presentation about what
+
+185
+00:09:42,340 --> 00:09:47,180
+he thinks mobile web will look
+like in the next few years.
+
+186
+00:09:47,180 --> 00:09:49,060
+And I highly encourage
+you to check it out.
+
+187
+00:09:49,060 --> 00:09:55,180
+It's really worth
+your 45 minutes.
+
+188
+00:09:55,180 --> 00:10:01,190
+Here are some really nice
+examples, just to see what
+
+189
+00:10:01,190 --> 00:10:02,980
+others are doing there.
+
+190
+00:10:02,980 --> 00:10:07,270
+"Financial Times," it's, of
+course, a media company.
+
+191
+00:10:07,270 --> 00:10:11,880
+And their app is really a nice
+way to show you how you could
+
+192
+00:10:11,880 --> 00:10:14,410
+tap into the offline
+world with a full
+
+193
+00:10:14,410 --> 00:10:16,530
+blown mobile web app.
+
+194
+00:10:16,530 --> 00:10:23,060
+Workflowy, it's to do list on
+steroids, or actually a way
+
+195
+00:10:23,060 --> 00:10:26,220
+for you to organize your things
+and thoughts on lists,
+
+196
+00:10:26,220 --> 00:10:28,510
+also working very nicely.
+
+197
+00:10:28,510 --> 00:10:31,660
+And of course, mobile Twitter,
+which is another good example.
+
+198
+00:10:31,660 --> 00:10:34,510
+And we have plenty of
+other examples.
+
+199
+00:10:34,510 --> 00:10:37,580
+I'll have links to how you could
+gain more ideas in the
+
+200
+00:10:37,580 --> 00:10:39,510
+next slide.
+
+201
+00:10:39,510 --> 00:10:42,940
+Here's a link that shows us
+another research company that
+
+202
+00:10:42,940 --> 00:10:46,780
+basically users want to work
+with the mobile web.
+
+203
+00:10:46,780 --> 00:10:49,140
+They are using the browsers
+more and more.
+
+204
+00:10:49,140 --> 00:10:53,090
+And in some cases, it makes
+perfect sense for them to open
+
+205
+00:10:53,090 --> 00:10:55,810
+the browser, launch your
+dedicated web app to a
+
+206
+00:10:55,810 --> 00:11:00,990
+specific task or goal, achieve
+what they wanted, and move on.
+
+207
+00:11:00,990 --> 00:11:04,330
+Some bold, good examples,
+we mentioned Twitter.
+
+208
+00:11:04,330 --> 00:11:08,610
+Gmail, of course, it's a full
+blown mobile web app that are
+
+209
+00:11:08,610 --> 00:11:11,990
+working really nicely and giving
+you really nice special
+
+210
+00:11:11,990 --> 00:11:14,280
+features in terms of the
+capabilities, the offline
+
+211
+00:11:14,280 --> 00:11:17,490
+features, and all the
+other great benefits
+
+212
+00:11:17,490 --> 00:11:19,220
+that we have in Gmail.
+
+213
+00:11:19,220 --> 00:11:22,840
+Another nice way to think about
+this, like with this app
+
+214
+00:11:22,840 --> 00:11:25,740
+for Footspotting, where you have
+a limited real estate,
+
+215
+00:11:25,740 --> 00:11:28,880
+try to do your best to tap into
+what the user is wanting
+
+216
+00:11:28,880 --> 00:11:31,060
+to achieve with your
+dedicated app.
+
+217
+00:11:31,060 --> 00:11:33,920
+So in that example, we certainly
+don't need any
+
+218
+00:11:33,920 --> 00:11:36,120
+footer, header, sidebar,
+or things that
+
+219
+00:11:36,120 --> 00:11:37,230
+will clutter the app.
+
+220
+00:11:37,230 --> 00:11:38,830
+Very clean approach.
+
+221
+00:11:38,830 --> 00:11:44,910
+And you can see more and more
+way of thinking in those
+
+222
+00:11:44,910 --> 00:11:47,570
+words, in apps like
+[INAUDIBLE]
+
+223
+00:11:47,570 --> 00:11:51,400
+and other really
+nice examples.
+
+224
+00:11:51,400 --> 00:11:56,230
+So let's try and speak
+briefly about design.
+
+225
+00:11:56,230 --> 00:11:59,550
+First, in the old days, we have
+this notion of going to
+
+226
+00:11:59,550 --> 00:12:00,780
+the designer.
+
+227
+00:12:00,780 --> 00:12:03,320
+He's or she's working
+with the Photoshop,
+
+228
+00:12:03,320 --> 00:12:04,490
+giving us the assets.
+
+229
+00:12:04,490 --> 00:12:07,290
+Then we need someone to
+cut the HTML and CSS.
+
+230
+00:12:07,290 --> 00:12:13,110
+And very cluttered, not truly
+elegant or agile methodology.
+
+231
+00:12:13,110 --> 00:12:17,190
+Today, I tried to break it here
+into pieces that actually
+
+232
+00:12:17,190 --> 00:12:21,390
+allow us to work much faster,
+iterate faster, and see how
+
+233
+00:12:21,390 --> 00:12:24,980
+we're prototyping and getting
+ideas out there as soon as we
+
+234
+00:12:24,980 --> 00:12:27,720
+can, just to validate them
+before we are going to the
+
+235
+00:12:27,720 --> 00:12:29,350
+last phase of production.
+
+236
+00:12:29,350 --> 00:12:32,390
+So today, you'll see more and
+more people doing design
+
+237
+00:12:32,390 --> 00:12:35,630
+through wire frames, or even
+trying to mock up how it will
+
+238
+00:12:35,630 --> 00:12:37,370
+look like pretty quickly.
+
+239
+00:12:37,370 --> 00:12:39,550
+And there's plenty of online
+tools that make you
+
+240
+00:12:39,550 --> 00:12:40,680
+productive with it.
+
+241
+00:12:40,680 --> 00:12:43,970
+The basic asset is to put the
+ideas on paper, on board, on a
+
+242
+00:12:43,970 --> 00:12:47,790
+napkin, or on any platform that
+you want, and then quite
+
+243
+00:12:47,790 --> 00:12:51,110
+quickly to sketch it with HTML
+and a bit of CSS, just to see
+
+244
+00:12:51,110 --> 00:12:53,280
+how it will look like,
+how it will feel.
+
+245
+00:12:53,280 --> 00:12:58,360
+Then we want to achieve a bit
+of responsiveness and logic.
+
+246
+00:12:58,360 --> 00:13:02,310
+And probably those cases will
+go to the upper right block
+
+247
+00:13:02,310 --> 00:13:04,970
+here, and add some JavaScript
+to add our own
+
+248
+00:13:04,970 --> 00:13:07,420
+magic to the prototype.
+
+249
+00:13:07,420 --> 00:13:10,130
+And from there, basically we're
+going to the polish
+
+250
+00:13:10,130 --> 00:13:13,965
+phase, which I call that the
+important phase that separate
+
+251
+00:13:13,965 --> 00:13:16,800
+the true professional one's from
+that amateur ones, where
+
+252
+00:13:16,800 --> 00:13:20,780
+we want you to work as slick as
+we can as fast as we can.
+
+253
+00:13:20,780 --> 00:13:23,300
+And this is actually a place
+where we are going back to the
+
+254
+00:13:23,300 --> 00:13:26,380
+scheduled prototype, but
+want to iterate over it
+
+255
+00:13:26,380 --> 00:13:28,520
+as fast as we can.
+
+256
+00:13:28,520 --> 00:13:31,380
+Of course we want a test-driven
+development in a
+
+257
+00:13:31,380 --> 00:13:34,960
+way, or to have a final phase of
+continuous integration, and
+
+258
+00:13:34,960 --> 00:13:38,210
+to do some really testing on
+real devices, just to make
+
+259
+00:13:38,210 --> 00:13:41,380
+sure that we have a nice
+coverage with the 28-year
+
+260
+00:13:41,380 --> 00:13:44,330
+rules, or any other rules that
+you want to do in order to
+
+261
+00:13:44,330 --> 00:13:46,840
+make sure that the vast majority
+of your users will be
+
+262
+00:13:46,840 --> 00:13:49,450
+able to be productive
+and enjoy your app.
+
+263
+00:13:49,450 --> 00:13:51,670
+And last but not least, of
+course, we want to push it to
+
+264
+00:13:51,670 --> 00:13:55,800
+production, have our alpha beta
+release candidate, and,
+
+265
+00:13:55,800 --> 00:13:58,730
+of course, the first
+version out there.
+
+266
+00:13:58,730 --> 00:14:03,180
+But as we all know, today, the
+end of the trip is just one
+
+267
+00:14:03,180 --> 00:14:04,700
+stepping stone in it.
+
+268
+00:14:04,700 --> 00:14:07,780
+We'll want to iterate again
+and again and have more
+
+269
+00:14:07,780 --> 00:14:11,220
+features over time.
+
+270
+00:14:11,220 --> 00:14:14,210
+When we're coming to speak about
+it, basically the one
+
+271
+00:14:14,210 --> 00:14:18,320
+fundamental shifting in thinking
+is that we're not
+
+272
+00:14:18,320 --> 00:14:20,080
+speaking about pages anymore.
+
+273
+00:14:20,080 --> 00:14:23,440
+We're more working on this
+one page application.
+
+274
+00:14:23,440 --> 00:14:25,660
+And we want to make sure that
+we do the best with the
+
+275
+00:14:25,660 --> 00:14:31,030
+limited real estate and give a
+set of guidance or a set of
+
+276
+00:14:31,030 --> 00:14:34,080
+tools for users to achieve
+their goals with maximum
+
+277
+00:14:34,080 --> 00:14:35,650
+efficiency.
+
+278
+00:14:35,650 --> 00:14:37,380
+We'll want to use components.
+
+279
+00:14:37,380 --> 00:14:39,340
+So we don't want to reinvent
+the wheel.
+
+280
+00:14:39,340 --> 00:14:43,240
+And the web as a platform,
+actually, is going to give us
+
+281
+00:14:43,240 --> 00:14:45,490
+just that in the near future.
+
+282
+00:14:45,490 --> 00:14:48,830
+So now, if you want to check the
+water, just try AngularJS
+
+283
+00:14:48,830 --> 00:14:51,780
+with directives, which basically
+giving you a really
+
+284
+00:14:51,780 --> 00:14:55,500
+nice way to think about reusing
+your code, don't
+
+285
+00:14:55,500 --> 00:14:58,150
+repeat yourself, and just
+leveraging things that you
+
+286
+00:14:58,150 --> 00:15:00,290
+already did in the past.
+
+287
+00:15:00,290 --> 00:15:05,220
+As we mentioned, in mobile and,
+of course, in mobile web,
+
+288
+00:15:05,220 --> 00:15:07,130
+less is more in most
+of the cases.
+
+289
+00:15:07,130 --> 00:15:09,710
+Because we don't have a lot of
+real estate and the user got
+
+290
+00:15:09,710 --> 00:15:14,060
+some fat fingers in most of
+the cases, we'll want few
+
+291
+00:15:14,060 --> 00:15:18,170
+buttons, few words, just to make
+sure that we are aiming
+
+292
+00:15:18,170 --> 00:15:21,890
+or making the life of our users
+as easy as possible, as
+
+293
+00:15:21,890 --> 00:15:23,550
+efficient as possible.
+
+294
+00:15:23,550 --> 00:15:25,900
+Here is just a nice example of
+[? Path ?] and what they did
+
+295
+00:15:25,900 --> 00:15:28,000
+with their menu button.
+
+296
+00:15:28,000 --> 00:15:31,240
+And if you'll search on GitHub,
+you'll find lots of
+
+297
+00:15:31,240 --> 00:15:34,120
+repositories that give you just
+that, nice interactions
+
+298
+00:15:34,120 --> 00:15:38,750
+of collapsing the different
+options from the bottom left
+
+299
+00:15:38,750 --> 00:15:43,490
+corner back and forth, a very
+nice way to think about.
+
+300
+00:15:43,490 --> 00:15:46,590
+And another two tips here to
+remember, that on mobile
+
+301
+00:15:46,590 --> 00:15:49,510
+devices we do have the landscape
+that is changing.
+
+302
+00:15:49,510 --> 00:15:54,700
+So we want to do the best in
+order to use media queries and
+
+303
+00:15:54,700 --> 00:15:57,520
+just be able to communicate
+it to the user.
+
+304
+00:15:57,520 --> 00:16:02,260
+And of course, using just
+Photoshop is not as efficient
+
+305
+00:16:02,260 --> 00:16:03,530
+as we wanted to see.
+
+306
+00:16:03,530 --> 00:16:07,010
+And in lots of cases, we
+probably could do less with
+
+307
+00:16:07,010 --> 00:16:07,930
+Photoshop and mobile.
+
+308
+00:16:07,930 --> 00:16:11,060
+We're just prototyping
+and using HTML,
+
+309
+00:16:11,060 --> 00:16:12,310
+JavaScript, and CSS.
+
+310
+00:16:12,310 --> 00:16:15,370
+
+311
+00:16:15,370 --> 00:16:19,200
+Here are some really nice bold
+examples, that you really
+
+312
+00:16:19,200 --> 00:16:20,900
+don't want to reinvent
+the wheel.
+
+313
+00:16:20,900 --> 00:16:23,290
+You want to be inspire.
+
+314
+00:16:23,290 --> 00:16:26,150
+And pttrns.com and
+mobile-patterns are just those
+
+315
+00:16:26,150 --> 00:16:29,500
+two sites that give you the
+ability to go and see what
+
+316
+00:16:29,500 --> 00:16:34,640
+others did when they needed a
+map application or a long
+
+317
+00:16:34,640 --> 00:16:37,820
+list, or any other things
+that they wanted to do.
+
+318
+00:16:37,820 --> 00:16:41,100
+And it just will save you time
+and efforts, and make sure
+
+319
+00:16:41,100 --> 00:16:44,690
+that you'll be able to do
+nice things with them.
+
+320
+00:16:44,690 --> 00:16:47,890
+Let's just, for the sake of
+argument, open it so we'll be
+
+321
+00:16:47,890 --> 00:16:49,320
+able to see.
+
+322
+00:16:49,320 --> 00:16:51,790
+So here are some
+recently added.
+
+323
+00:16:51,790 --> 00:16:56,450
+But let's say that we want to
+see what interesting things
+
+324
+00:16:56,450 --> 00:16:58,040
+people have done with lists.
+
+325
+00:16:58,040 --> 00:17:00,990
+You have a very nice collection
+of things here just
+
+326
+00:17:00,990 --> 00:17:03,810
+to inspire you and to
+take it from there.
+
+327
+00:17:03,810 --> 00:17:07,430
+
+328
+00:17:07,430 --> 00:17:11,190
+And of course, the nice
+example of a path.
+
+329
+00:17:11,190 --> 00:17:15,470
+So we wanted to do this quick
+sketch-up to see how things
+
+330
+00:17:15,470 --> 00:17:17,220
+are working.
+
+331
+00:17:17,220 --> 00:17:20,710
+And here are a few nice
+online tools.
+
+332
+00:17:20,710 --> 00:17:23,810
+I will just add that on top of
+these tools, you could go
+
+333
+00:17:23,810 --> 00:17:26,720
+today to jQuery mobile site,
+and you'll have basically
+
+334
+00:17:26,720 --> 00:17:29,520
+[INAUDIBLE] there that lets you
+mock up real quickly and
+
+335
+00:17:29,520 --> 00:17:33,250
+get even the structure of the
+HTML from your mock, really
+
+336
+00:17:33,250 --> 00:17:34,750
+nice and easy to use.
+
+337
+00:17:34,750 --> 00:17:38,050
+Balsamiq is, of course, a very
+popular, nice web app that
+
+338
+00:17:38,050 --> 00:17:41,090
+gives you the ability to do
+those things efficiently, and
+
+339
+00:17:41,090 --> 00:17:43,780
+others, modern web apps
+that are there.
+
+340
+00:17:43,780 --> 00:17:47,680
+And you could retrieve them
+from the Chrome Web Store.
+
+341
+00:17:47,680 --> 00:17:50,490
+One thing to remember after we
+did our sketching is that you
+
+342
+00:17:50,490 --> 00:17:57,820
+want to make sure that what you
+designed is doing the best
+
+343
+00:17:57,820 --> 00:17:59,670
+for the phone or
+for the tablet.
+
+344
+00:17:59,670 --> 00:18:00,890
+They are not the same.
+
+345
+00:18:00,890 --> 00:18:04,670
+And one thing that we could
+probably save ourself is the
+
+346
+00:18:04,670 --> 00:18:09,310
+notion of let's aim and do
+whatever we can with all the
+
+347
+00:18:09,310 --> 00:18:16,170
+devices that have 4" by 3"
+screens or 16" by 9", just to
+
+348
+00:18:16,170 --> 00:18:19,010
+make sure that we are not going
+too crazy with the media
+
+349
+00:18:19,010 --> 00:18:24,080
+queries to adjust our app to
+each and every device.
+
+350
+00:18:24,080 --> 00:18:28,310
+But a nice example that you see
+here with Flipboard, check
+
+351
+00:18:28,310 --> 00:18:30,860
+their app on a tablet
+and on a phone.
+
+352
+00:18:30,860 --> 00:18:32,240
+It's completely different.
+
+353
+00:18:32,240 --> 00:18:36,550
+Even the ability to do the flip
+itself, they didn't use
+
+354
+00:18:36,550 --> 00:18:39,740
+the muscle memory that users
+have in the tablet, which is
+
+355
+00:18:39,740 --> 00:18:40,980
+horizontal reason flip.
+
+356
+00:18:40,980 --> 00:18:43,540
+And they choose on the phone
+to do it vertically because
+
+357
+00:18:43,540 --> 00:18:45,710
+it's just a better experience.
+
+358
+00:18:45,710 --> 00:18:49,190
+And that's a great example to do
+what is best for our users,
+
+359
+00:18:49,190 --> 00:18:53,730
+and, of course, validate
+it with testing.
+
+360
+00:18:53,730 --> 00:18:57,050
+When we're speaking about
+adaptive apps, apps that are
+
+361
+00:18:57,050 --> 00:19:02,240
+less bind into a specific
+screen, we're talking
+
+362
+00:19:02,240 --> 00:19:07,560
+basically about doing a re-paint
+and refresh of our
+
+363
+00:19:07,560 --> 00:19:11,760
+DOM, of our structure based on
+the real estate that we're
+
+364
+00:19:11,760 --> 00:19:13,600
+getting in the app itself.
+
+365
+00:19:13,600 --> 00:19:17,380
+And we know that one of the
+main pitfalls is that it's
+
+366
+00:19:17,380 --> 00:19:21,550
+really hard to use the same DOM
+tree for all form factors.
+
+367
+00:19:21,550 --> 00:19:24,120
+So we're seeing today a nice
+interesting debate between,
+
+368
+00:19:24,120 --> 00:19:28,750
+OK, let's have one DOM and
+just use different media
+
+369
+00:19:28,750 --> 00:19:30,370
+queries with different CSS.
+
+370
+00:19:30,370 --> 00:19:35,650
+Or let's do some sniffing in
+advance to see which device is
+
+371
+00:19:35,650 --> 00:19:40,145
+coming, and then just make sure
+that we are sending back
+
+372
+00:19:40,145 --> 00:19:44,470
+the dedicated HTML CSS and
+JavaScript that will do the
+
+373
+00:19:44,470 --> 00:19:47,150
+best for this specific medium.
+
+374
+00:19:47,150 --> 00:19:50,710
+When we're speaking about all
+those adaptive apps, we want
+
+375
+00:19:50,710 --> 00:19:53,530
+to use some sort of a temperate
+library, in order to
+
+376
+00:19:53,530 --> 00:19:58,120
+make sure that our DOM
+refreshing and repainting will
+
+377
+00:19:58,120 --> 00:19:59,790
+be as efficient as possible.
+
+378
+00:19:59,790 --> 00:20:03,710
+And we'll see in the next slides
+how we could do that.
+
+379
+00:20:03,710 --> 00:20:06,490
+And of course, when we're using
+responsive design, we
+
+380
+00:20:06,490 --> 00:20:11,290
+want to use things like read
+box, Flexbox, and not, of
+
+381
+00:20:11,290 --> 00:20:14,390
+course, absolute position or
+relative position, because it
+
+382
+00:20:14,390 --> 00:20:16,920
+won't work nicely on the
+different devices as we have
+
+383
+00:20:16,920 --> 00:20:19,820
+today, not to mention
+future devices.
+
+384
+00:20:19,820 --> 00:20:24,540
+When we're using the CSS3 new
+grid layouts or Flexbox
+
+385
+00:20:24,540 --> 00:20:29,870
+layout, we could do ourself a
+favor and just focus on those
+
+386
+00:20:29,870 --> 00:20:33,680
+form factors, which will make
+our life a bit easier, and are
+
+387
+00:20:33,680 --> 00:20:38,650
+still very good for the vast
+majority of the users.
+
+388
+00:20:38,650 --> 00:20:42,230
+Here is the link
+for [INAUDIBLE]
+
+389
+00:20:42,230 --> 00:20:45,630
+site, which contains a huge
+amount of really nice
+
+390
+00:20:45,630 --> 00:20:46,760
+information.
+
+391
+00:20:46,760 --> 00:20:49,080
+And of course, media queries,
+which is letting you see
+
+392
+00:20:49,080 --> 00:20:52,350
+different examples in the wild
+and getting some ideas how
+
+393
+00:20:52,350 --> 00:20:56,490
+your web app or website should
+look on a desktop, tablet, and
+
+394
+00:20:56,490 --> 00:20:58,700
+a mobile device.
+
+395
+00:20:58,700 --> 00:21:02,020
+Let's jump real quick
+to building.
+
+396
+00:21:02,020 --> 00:21:04,280
+Of course, when we're shifted
+more and more logic to the
+
+397
+00:21:04,280 --> 00:21:07,490
+client side, we want some clear
+separation between our
+
+398
+00:21:07,490 --> 00:21:09,500
+data and our views.
+
+399
+00:21:09,500 --> 00:21:12,900
+And that's why we see a
+flourishing in all the MV-star
+
+400
+00:21:12,900 --> 00:21:14,390
+frameworks today.
+
+401
+00:21:14,390 --> 00:21:21,150
+And if in the past we used to
+have this logic in the server,
+
+402
+00:21:21,150 --> 00:21:24,400
+and just sending to the client
+HTML pages that represent this
+
+403
+00:21:24,400 --> 00:21:28,080
+logic, we're seeing more and
+more movement of a thicker
+
+404
+00:21:28,080 --> 00:21:31,550
+client that contain more
+and more knowledge.
+
+405
+00:21:31,550 --> 00:21:34,210
+And that's come with the notion
+of offline first, when
+
+406
+00:21:34,210 --> 00:21:36,780
+basically we want the user to be
+productive, even when there
+
+407
+00:21:36,780 --> 00:21:39,880
+is no connection or a
+flaky connection.
+
+408
+00:21:39,880 --> 00:21:42,850
+Just a clear scanner to see what
+we're talking about when
+
+409
+00:21:42,850 --> 00:21:46,690
+we're speaking about model view
+controller framework, and
+
+410
+00:21:46,690 --> 00:21:50,390
+specifically in the case of
+mobile web app, we do want our
+
+411
+00:21:50,390 --> 00:21:54,350
+views to have the dedicated
+view for each form factor.
+
+412
+00:21:54,350 --> 00:21:57,180
+So we'll have one view for
+desktop, maybe another one for
+
+413
+00:21:57,180 --> 00:21:59,760
+TV here on the right
+side, and of course
+
+414
+00:21:59,760 --> 00:22:01,490
+for tablets and phone.
+
+415
+00:22:01,490 --> 00:22:05,630
+We could share the same
+controller to hold our data
+
+416
+00:22:05,630 --> 00:22:08,280
+and to update our view.
+
+417
+00:22:08,280 --> 00:22:12,630
+And here is a link to what
+[INAUDIBLE] did, which is a
+
+418
+00:22:12,630 --> 00:22:16,770
+great, great thing in terms of
+comparing the different MVC
+
+419
+00:22:16,770 --> 00:22:19,100
+frameworks that are out there.
+
+420
+00:22:19,100 --> 00:22:22,900
+Another nice code snippet that
+you could take here is to do
+
+421
+00:22:22,900 --> 00:22:26,130
+something like that in order
+to understand which form
+
+422
+00:22:26,130 --> 00:22:30,160
+factor the user is using, and
+then make sure that your code
+
+423
+00:22:30,160 --> 00:22:33,650
+and other goodness
+is bring to them.
+
+424
+00:22:33,650 --> 00:22:36,360
+
+425
+00:22:36,360 --> 00:22:38,790
+And I see here people
+are saying
+
+426
+00:22:38,790 --> 00:22:40,540
+dedicate view for Glass.
+
+427
+00:22:40,540 --> 00:22:41,220
+Absolutely.
+
+428
+00:22:41,220 --> 00:22:43,780
+I can't agree more, actually.
+
+429
+00:22:43,780 --> 00:22:45,760
+In terms of the products
+of choice, basically
+
+430
+00:22:45,760 --> 00:22:46,680
+we'll see it again.
+
+431
+00:22:46,680 --> 00:22:49,980
+We had it in the service side a
+few years back, when you see
+
+432
+00:22:49,980 --> 00:22:52,520
+a huge flourishing in all
+the MVC frameworks
+
+433
+00:22:52,520 --> 00:22:53,960
+in Java, for instance.
+
+434
+00:22:53,960 --> 00:22:57,570
+And now we have the same with
+JavaScript and the client side
+
+435
+00:22:57,570 --> 00:22:58,800
+MVC frameworks.
+
+436
+00:22:58,800 --> 00:23:00,770
+Here we don't jump into
+it, because we don't
+
+437
+00:23:00,770 --> 00:23:01,540
+have too much time.
+
+438
+00:23:01,540 --> 00:23:04,830
+I'll just mention those three
+really bold examples.
+
+439
+00:23:04,830 --> 00:23:10,610
+And with five seconds promotion
+to Angular, I really
+
+440
+00:23:10,610 --> 00:23:13,310
+encourage you to check it, not
+because it's an open source
+
+441
+00:23:13,310 --> 00:23:17,100
+project that started in Google,
+of course not, just
+
+442
+00:23:17,100 --> 00:23:20,920
+because it's a true passion of
+mine to see how people are
+
+443
+00:23:20,920 --> 00:23:24,940
+thinking about dynamic HTML, not
+static HTML, and how you
+
+444
+00:23:24,940 --> 00:23:26,290
+have dependency [? injection ?]
+
+445
+00:23:26,290 --> 00:23:29,360
+and test-driven development
+in a JavaScript framework.
+
+446
+00:23:29,360 --> 00:23:32,830
+Really, really cool stuff.
+
+447
+00:23:32,830 --> 00:23:34,970
+This is one of the compression
+tables that you'll see if
+
+448
+00:23:34,970 --> 00:23:37,350
+you'll go to the link and the
+work, the hard work that
+
+449
+00:23:37,350 --> 00:23:38,080
+[INAUDIBLE]
+
+450
+00:23:38,080 --> 00:23:38,380
+did.
+
+451
+00:23:38,380 --> 00:23:40,300
+I highly encourage you to see.
+
+452
+00:23:40,300 --> 00:23:44,330
+And basically even here, don't
+take my word to AngularJS or
+
+453
+00:23:44,330 --> 00:23:47,280
+to the wisdom of the crowd,
+quote unquote, that's going
+
+454
+00:23:47,280 --> 00:23:48,340
+with Backbone.
+
+455
+00:23:48,340 --> 00:23:52,930
+Just do small research for
+yourself and choose the best
+
+456
+00:23:52,930 --> 00:23:55,730
+tool for the job.
+
+457
+00:23:55,730 --> 00:24:00,190
+The TodoMVC, of course, what we
+mention, the link is here.
+
+458
+00:24:00,190 --> 00:24:04,110
+When we want to run our complex
+app, and we want to do
+
+459
+00:24:04,110 --> 00:24:07,580
+some DOM manipulation, we know
+that we need to do it as
+
+460
+00:24:07,580 --> 00:24:09,060
+efficient as possible.
+
+461
+00:24:09,060 --> 00:24:13,540
+And here the big secret, which
+is basically not a secret at
+
+462
+00:24:13,540 --> 00:24:17,260
+all, is to use a JavaScript
+templating mechanism.
+
+463
+00:24:17,260 --> 00:24:21,010
+Nicely, we have it now baked
+into Chrome and hopefully
+
+464
+00:24:21,010 --> 00:24:22,790
+other modem browser
+real quick.
+
+465
+00:24:22,790 --> 00:24:24,750
+So this is the link
+with [INAUDIBLE].
+
+466
+00:24:24,750 --> 00:24:27,420
+So you'll be able to tap
+into it and to read.
+
+467
+00:24:27,420 --> 00:24:29,700
+It's a very good tutorial
+that Eric Bidelman
+
+468
+00:24:29,700 --> 00:24:32,900
+did on HTML5 Rock.
+
+469
+00:24:32,900 --> 00:24:35,890
+But here we'll just show you how
+you could do it even today
+
+470
+00:24:35,890 --> 00:24:39,190
+that will basically support
+all the browsers.
+
+471
+00:24:39,190 --> 00:24:42,880
+We're using an embedded and a
+certain new type to make sure
+
+472
+00:24:42,880 --> 00:24:45,400
+that our templating engine
+will work with it.
+
+473
+00:24:45,400 --> 00:24:47,950
+And we'll bundle it
+into the HTML.
+
+474
+00:24:47,950 --> 00:24:50,290
+And then we could use several
+templating engines.
+
+475
+00:24:50,290 --> 00:24:55,160
+So here I use mustache.js, which
+is a very popular choice
+
+476
+00:24:55,160 --> 00:24:57,610
+of the logic-less templating
+engine.
+
+477
+00:24:57,610 --> 00:25:00,550
+And you could see the example,
+even if you never saw it in
+
+478
+00:25:00,550 --> 00:25:04,370
+advance, that what we have here
+is basically three parts.
+
+479
+00:25:04,370 --> 00:25:05,740
+One is the templating.
+
+480
+00:25:05,740 --> 00:25:09,010
+And if you'll move your head to
+the right, you'll see why
+
+481
+00:25:09,010 --> 00:25:12,930
+they call it mustache, because
+of these little guys.
+
+482
+00:25:12,930 --> 00:25:15,140
+And here we'll just declare
+what we're going to
+
+483
+00:25:15,140 --> 00:25:16,760
+have in each spot.
+
+484
+00:25:16,760 --> 00:25:19,610
+Then we're using a payload
+of our JSON.
+
+485
+00:25:19,610 --> 00:25:23,150
+And the result, what the
+templating engine will put in
+
+486
+00:25:23,150 --> 00:25:25,580
+our page will be this mark-up
+that the browser
+
+487
+00:25:25,580 --> 00:25:26,830
+will know how to render.
+
+488
+00:25:26,830 --> 00:25:29,160
+
+489
+00:25:29,160 --> 00:25:31,770
+Another cool thing that we
+should leverage today when we
+
+490
+00:25:31,770 --> 00:25:36,320
+are approaching the world of
+mobile web app is some new
+
+491
+00:25:36,320 --> 00:25:40,430
+CSS3 products.
+
+492
+00:25:40,430 --> 00:25:44,590
+And basically I'm talking
+about [INAUDIBLE]
+
+493
+00:25:44,590 --> 00:25:48,620
+which giving us some goodies,
+not really a synthetic sugar
+
+494
+00:25:48,620 --> 00:25:52,760
+but more of real tools to work
+with, like variables, like
+
+495
+00:25:52,760 --> 00:25:56,870
+nesting, and mixing and
+inheritance in CSS.
+
+496
+00:25:56,870 --> 00:26:02,580
+So your ability to work more
+efficiently with CSS will gain
+
+497
+00:26:02,580 --> 00:26:06,330
+you more hour of sleep
+and happy users.
+
+498
+00:26:06,330 --> 00:26:10,450
+And one nice thing to remember
+is that when you're working
+
+499
+00:26:10,450 --> 00:26:13,700
+with it, basically it's easy
+today even to debug it because
+
+500
+00:26:13,700 --> 00:26:16,790
+you have the ability to go
+quickly in Chrome Dev tools
+
+501
+00:26:16,790 --> 00:26:24,990
+and tap into the source itself
+of the CSS or the source code,
+
+502
+00:26:24,990 --> 00:26:27,060
+with Map Source, of course.
+
+503
+00:26:27,060 --> 00:26:29,330
+Some best practices
+for the layout--
+
+504
+00:26:29,330 --> 00:26:33,050
+of course avoid the horrible
+tables that have been with us
+
+505
+00:26:33,050 --> 00:26:34,580
+in the late '90s.
+
+506
+00:26:34,580 --> 00:26:37,870
+No absolute position, not
+even relative position.
+
+507
+00:26:37,870 --> 00:26:41,510
+We do want to use something
+like the Flexbox.
+
+508
+00:26:41,510 --> 00:26:41,890
+Why?
+
+509
+00:26:41,890 --> 00:26:45,090
+Because we basically are able
+to communicate the browser
+
+510
+00:26:45,090 --> 00:26:47,400
+exactly what we want
+it to achieve.
+
+511
+00:26:47,400 --> 00:26:52,680
+Things like, OK separate now
+those boxes and make the
+
+512
+00:26:52,680 --> 00:26:57,200
+middle boxes twice the size from
+the other boxes, or make
+
+513
+00:26:57,200 --> 00:27:01,490
+all of them in a row or
+a column, et cetera.
+
+514
+00:27:01,490 --> 00:27:05,400
+It's all trivial with Flexbox,
+and just challenging you to do
+
+515
+00:27:05,400 --> 00:27:07,750
+it with the regular CSS.
+
+516
+00:27:07,750 --> 00:27:11,335
+It will be much, much harder,
+and more code for you to read
+
+517
+00:27:11,335 --> 00:27:14,020
+later when you're coming to
+maintain the web app.
+
+518
+00:27:14,020 --> 00:27:17,490
+This little example is just to
+show you how you can control
+
+519
+00:27:17,490 --> 00:27:20,630
+here on the orientation.
+
+520
+00:27:20,630 --> 00:27:22,540
+So here it's horizontal.
+
+521
+00:27:22,540 --> 00:27:24,680
+If the user is flipping the
+phone, you could do it
+
+522
+00:27:24,680 --> 00:27:26,050
+vertical as well.
+
+523
+00:27:26,050 --> 00:27:29,580
+And very easy to control
+the different
+
+524
+00:27:29,580 --> 00:27:31,225
+components of your Flexbox.
+
+525
+00:27:31,225 --> 00:27:33,770
+
+526
+00:27:33,770 --> 00:27:36,030
+The one caveat here is
+that we're talking
+
+527
+00:27:36,030 --> 00:27:37,630
+about the new Flexbox.
+
+528
+00:27:37,630 --> 00:27:40,360
+And there are relatively really
+few changes that you
+
+529
+00:27:40,360 --> 00:27:41,880
+need to pay attention to.
+
+530
+00:27:41,880 --> 00:27:44,770
+This is just to show you how you
+could easily control them.
+
+531
+00:27:44,770 --> 00:27:49,400
+And really nice talks on
+developer.google.com/live
+
+532
+00:27:49,400 --> 00:27:51,010
+showing you more how
+to work with it.
+
+533
+00:27:51,010 --> 00:27:53,580
+
+534
+00:27:53,580 --> 00:27:59,765
+Some tips to remember is that
+if you want to have a fixed
+
+535
+00:27:59,765 --> 00:28:02,250
+position for your head or
+footers, it used to be a big
+
+536
+00:28:02,250 --> 00:28:03,700
+no-no in all the browsers.
+
+537
+00:28:03,700 --> 00:28:06,720
+Now both on Mobile Safari and,
+of course, Chrome for Android,
+
+538
+00:28:06,720 --> 00:28:09,520
+you just need to do
+position fix.
+
+539
+00:28:09,520 --> 00:28:12,770
+If you have an element that you
+want to scroll elements
+
+540
+00:28:12,770 --> 00:28:16,510
+inside it, just do
+overall scroll.
+
+541
+00:28:16,510 --> 00:28:20,510
+And last but not least, if you
+want this nice responsive
+
+542
+00:28:20,510 --> 00:28:25,260
+acceleration, deceleration
+scrolling in WebKit, and as we
+
+543
+00:28:25,260 --> 00:28:28,810
+mentioned at the beginning, 90%
+plus of the browser are
+
+544
+00:28:28,810 --> 00:28:32,890
+supporting it, just do WebKit
+overflow scrolling touch, and
+
+545
+00:28:32,890 --> 00:28:37,870
+you'll be able to gain
+this nice ability.
+
+546
+00:28:37,870 --> 00:28:41,040
+One important thing to note
+about touch is that it's very
+
+547
+00:28:41,040 --> 00:28:42,520
+different for our mouse.
+
+548
+00:28:42,520 --> 00:28:44,280
+We need to make sure that
+we are listening
+
+549
+00:28:44,280 --> 00:28:45,600
+to the right events.
+
+550
+00:28:45,600 --> 00:28:51,070
+And one common pitfall is to
+bind events to the click.
+
+551
+00:28:51,070 --> 00:28:53,870
+On mobile and touch screens,
+of course the browser will
+
+552
+00:28:53,870 --> 00:28:57,130
+wait 300 milliseconds, because
+it needs to distinguish one
+
+553
+00:28:57,130 --> 00:28:58,490
+click to two clicks.
+
+554
+00:28:58,490 --> 00:29:01,440
+And this is why I put the link
+here to Fast Click Library
+
+555
+00:29:01,440 --> 00:29:03,740
+that the "Financial Times"
+did, actually [INAUDIBLE]
+
+556
+00:29:03,740 --> 00:29:06,700
+that was bought by the
+"Financial Times," and which
+
+557
+00:29:06,700 --> 00:29:10,170
+basically listened to the touch
+start in making sure
+
+558
+00:29:10,170 --> 00:29:13,700
+that it's much smoother and
+much more responsive.
+
+559
+00:29:13,700 --> 00:29:17,450
+And the other good link here is
+just to best practices of
+
+560
+00:29:17,450 --> 00:29:19,590
+developing for multi-touch
+blog posts
+
+561
+00:29:19,590 --> 00:29:22,650
+that Boris Smus wrote.
+
+562
+00:29:22,650 --> 00:29:27,120
+When we're coming to the world
+of offline, and specifically
+
+563
+00:29:27,120 --> 00:29:30,220
+mobile web apps, we want to make
+sure that our app will
+
+564
+00:29:30,220 --> 00:29:33,340
+work even when there's
+no connection.
+
+565
+00:29:33,340 --> 00:29:33,640
+Why?
+
+566
+00:29:33,640 --> 00:29:37,290
+Because in the cases where we
+have a flaky connection, or on
+
+567
+00:29:37,290 --> 00:29:40,780
+an airplane or submarine, the
+user could be productive.
+
+568
+00:29:40,780 --> 00:29:44,030
+And a great example is
+[INAUDIBLE], of course.
+
+569
+00:29:44,030 --> 00:29:47,520
+And today, lucky for us, we have
+all the building blocks.
+
+570
+00:29:47,520 --> 00:29:49,970
+So I know that they are not
+perfect and they could
+
+571
+00:29:49,970 --> 00:29:51,250
+improve over time.
+
+572
+00:29:51,250 --> 00:29:55,850
+And I see the guys that are
+mentioning and trying to point
+
+573
+00:29:55,850 --> 00:29:59,080
+their fingers to some
+known candidates.
+
+574
+00:29:59,080 --> 00:30:01,050
+But here they will get better.
+
+575
+00:30:01,050 --> 00:30:04,010
+And actually we are able to work
+with them today, so why
+
+576
+00:30:04,010 --> 00:30:05,990
+not tap in to them?
+
+577
+00:30:05,990 --> 00:30:06,980
+To storing [? updates ?]
+
+578
+00:30:06,980 --> 00:30:10,590
+of course, we have all
+the good things here.
+
+579
+00:30:10,590 --> 00:30:17,420
+And to know when to do the sync,
+basically the main API
+
+580
+00:30:17,420 --> 00:30:18,440
+that we want to use
+is Navigator
+
+581
+00:30:18,440 --> 00:30:21,200
+online or Window online.
+
+582
+00:30:21,200 --> 00:30:23,960
+As I mentioned before, Lawnchair
+is one good library
+
+583
+00:30:23,960 --> 00:30:27,080
+to use when we want to make
+sure that we all doing the
+
+584
+00:30:27,080 --> 00:30:30,690
+best with the certain app or
+certain browser that our app
+
+585
+00:30:30,690 --> 00:30:34,070
+have to use, which will
+basically give us the ability
+
+586
+00:30:34,070 --> 00:30:37,760
+to enjoy all those nice APIs,
+depending on what the
+
+587
+00:30:37,760 --> 00:30:41,640
+different browser on the user
+device is supporting.
+
+588
+00:30:41,640 --> 00:30:44,930
+And here is a short tutorial
+that I wrote a while back to
+
+589
+00:30:44,930 --> 00:30:48,810
+help people converge from WebSQL
+to IndexedDB, just
+
+590
+00:30:48,810 --> 00:30:50,990
+because WebSQL is a
+depricated API.
+
+591
+00:30:50,990 --> 00:30:55,030
+So you don't want to start
+a new project with it.
+
+592
+00:30:55,030 --> 00:30:59,990
+One thing that held mobile
+web apps was the
+
+593
+00:30:59,990 --> 00:31:01,095
+ability to debug them.
+
+594
+00:31:01,095 --> 00:31:03,856
+It wasn't too easy.
+
+595
+00:31:03,856 --> 00:31:07,210
+Of course, for Chrome for
+Android, your life is good.
+
+596
+00:31:07,210 --> 00:31:09,620
+And you could do lots of things
+immediately and have
+
+597
+00:31:09,620 --> 00:31:14,260
+basically Chrome Dev tools
+and work with them very
+
+598
+00:31:14,260 --> 00:31:17,330
+efficiently on your
+mobile as well.
+
+599
+00:31:17,330 --> 00:31:21,450
+But for other platforms, we
+have JS Console that Remy
+
+600
+00:31:21,450 --> 00:31:24,670
+Sharp wrote, and all the other
+good links here that you are
+
+601
+00:31:24,670 --> 00:31:27,860
+most welcome to check, and
+other nice things.
+
+602
+00:31:27,860 --> 00:31:30,510
+I don't know how many people
+know, but basically in Chrome
+
+603
+00:31:30,510 --> 00:31:33,090
+browser we have a
+server as well.
+
+604
+00:31:33,090 --> 00:31:35,837
+So you could run it with this
+remote debugging port, which
+
+605
+00:31:35,837 --> 00:31:39,440
+is basically part of WebKit,
+and have the ability to tap
+
+606
+00:31:39,440 --> 00:31:44,570
+and run Dev Tool, or connect
+your Dev Tool to client
+
+607
+00:31:44,570 --> 00:31:47,850
+browsers, and again, gain all
+the capabilities and the
+
+608
+00:31:47,850 --> 00:31:52,430
+benefits that we have
+in Chrome Dev Tools.
+
+609
+00:31:52,430 --> 00:31:57,920
+Testing, MVC or the clear
+separation between our data
+
+610
+00:31:57,920 --> 00:32:01,230
+and our views allow us,
+basically, to test our models.
+
+611
+00:32:01,230 --> 00:32:03,510
+And QUnit is one
+great example.
+
+612
+00:32:03,510 --> 00:32:05,590
+When we're coming to test our
+views, it's much more
+
+613
+00:32:05,590 --> 00:32:06,520
+challenging.
+
+614
+00:32:06,520 --> 00:32:09,430
+And here are some good
+links to help you
+
+615
+00:32:09,430 --> 00:32:11,980
+achieve that as well.
+
+616
+00:32:11,980 --> 00:32:12,800
+Speed--
+
+617
+00:32:12,800 --> 00:32:15,230
+[INAUDIBLE]
+
+618
+00:32:15,230 --> 00:32:20,100
+all the recent studies shows
+form all the big names, like
+
+619
+00:32:20,100 --> 00:32:22,510
+Amazon, Facebook,
+Google, Yahoo,
+
+620
+00:32:22,510 --> 00:32:24,440
+every millisecond count.
+
+621
+00:32:24,440 --> 00:32:27,470
+And you do want your users
+happy and smiling.
+
+622
+00:32:27,470 --> 00:32:29,710
+And that's why you need
+to focus on mobile web
+
+623
+00:32:29,710 --> 00:32:32,680
+performance, and web performance
+as a whole.
+
+624
+00:32:32,680 --> 00:32:36,250
+And luckily for all
+of us, [INAUDIBLE]
+
+625
+00:32:36,250 --> 00:32:41,940
+on developer.google.com/live is
+doing great shows about web
+
+626
+00:32:41,940 --> 00:32:45,140
+performance and pushing
+the web faster.
+
+627
+00:32:45,140 --> 00:32:48,770
+And I highly encourage
+you to see his shows.
+
+628
+00:32:48,770 --> 00:32:52,460
+Really, really quality,
+great stuff there.
+
+629
+00:32:52,460 --> 00:32:55,620
+When we're coming to
+optimization, there are a few
+
+630
+00:32:55,620 --> 00:32:57,450
+tools that are helping
+us today.
+
+631
+00:32:57,450 --> 00:33:00,910
+Blaze.io, that is part of Akamai
+let us know exactly
+
+632
+00:33:00,910 --> 00:33:03,310
+what's going with our
+apps from different
+
+633
+00:33:03,310 --> 00:33:04,720
+places in the world.
+
+634
+00:33:04,720 --> 00:33:08,770
+And this other link here is
+Mobile Perf for bookmarketlet
+
+635
+00:33:08,770 --> 00:33:12,020
+that Steve Souders did to enable
+you to tap into a lot
+
+636
+00:33:12,020 --> 00:33:13,990
+of information from your mobile
+web app, and then
+
+637
+00:33:13,990 --> 00:33:16,470
+analyze it, of course,
+on the desktop.
+
+638
+00:33:16,470 --> 00:33:17,520
+And SPDY.
+
+639
+00:33:17,520 --> 00:33:23,360
+SPDY is basically a new
+experimental protocol designed
+
+640
+00:33:23,360 --> 00:33:28,050
+by Google to reduce the
+latency of web pages.
+
+641
+00:33:28,050 --> 00:33:29,690
+And it's in Chrome.
+
+642
+00:33:29,690 --> 00:33:31,720
+So you could use it today.
+
+643
+00:33:31,720 --> 00:33:34,400
+It will work much faster
+for your users.
+
+644
+00:33:34,400 --> 00:33:37,247
+And you have mode
+SPDY in a patch.
+
+645
+00:33:37,247 --> 00:33:39,800
+So if you have control of your
+servers, I highly encourage
+
+646
+00:33:39,800 --> 00:33:40,720
+you to check it out.
+
+647
+00:33:40,720 --> 00:33:43,050
+The link here will show you how
+easy it is to install it
+
+648
+00:33:43,050 --> 00:33:45,238
+and customize it.
+
+649
+00:33:45,238 --> 00:33:48,510
+Last but not least, some
+tips and tricks.
+
+650
+00:33:48,510 --> 00:33:54,080
+We have today few tech stocks
+that choose the route of
+
+651
+00:33:54,080 --> 00:33:56,290
+convention over configuration.
+
+652
+00:33:56,290 --> 00:33:59,740
+And some really brilliant people
+with lots of experience
+
+653
+00:33:59,740 --> 00:34:04,290
+on their hands choose the best
+tools out there to make your
+
+654
+00:34:04,290 --> 00:34:05,780
+life more productive.
+
+655
+00:34:05,780 --> 00:34:09,980
+And Yeoman and Thorax are just
+two bold examples that I
+
+656
+00:34:09,980 --> 00:34:12,699
+highly encourage you to check
+out when you are coming to
+
+657
+00:34:12,699 --> 00:34:14,610
+start a new project.
+
+658
+00:34:14,610 --> 00:34:17,900
+If you are developing on
+iOS, there's a new--
+
+659
+00:34:17,900 --> 00:34:21,570
+it's not new, actually-- but a
+nice way to be able to see
+
+660
+00:34:21,570 --> 00:34:24,530
+more loggin, and that's by
+setting Safari developer and
+
+661
+00:34:24,530 --> 00:34:27,179
+then just opening the console.
+
+662
+00:34:27,179 --> 00:34:30,590
+To simulate touch events,
+you have it today
+
+663
+00:34:30,590 --> 00:34:31,650
+in Chrome Dev Tools.
+
+664
+00:34:31,650 --> 00:34:33,489
+And let me showing you
+how you could do it.
+
+665
+00:34:33,489 --> 00:34:36,423
+
+666
+00:34:36,423 --> 00:34:40,498
+If you'll come here to the
+bottom right corner and click
+
+667
+00:34:40,498 --> 00:34:45,760
+on the setting, you'll
+be able to open the
+
+668
+00:34:45,760 --> 00:34:46,719
+setting of the Dev Tools.
+
+669
+00:34:46,719 --> 00:34:49,179
+Probably for you it will
+open in general.
+
+670
+00:34:49,179 --> 00:34:53,550
+But if you'll go to Override
+here, you'll need to click
+
+671
+00:34:53,550 --> 00:34:56,100
+here on Emulate Events.
+
+672
+00:34:56,100 --> 00:34:58,070
+Let me make it bigger.
+
+673
+00:34:58,070 --> 00:35:01,980
+And once you do that, you'll be
+able to listen to all the
+
+674
+00:35:01,980 --> 00:35:04,930
+different touch events and make
+sure that your mobile web
+
+675
+00:35:04,930 --> 00:35:06,260
+apps is answering them.
+
+676
+00:35:06,260 --> 00:35:12,040
+It's not a replacement to
+testing it on simulator or on
+
+677
+00:35:12,040 --> 00:35:13,580
+a physical device.
+
+678
+00:35:13,580 --> 00:35:16,080
+But it's just making the
+developer life more productive
+
+679
+00:35:16,080 --> 00:35:19,270
+when they could use it while
+they're developing it, and
+
+680
+00:35:19,270 --> 00:35:21,420
+make sure that at least you're
+answering all the right events
+
+681
+00:35:21,420 --> 00:35:25,470
+in the right DOM and using the
+audit and performance tab in
+
+682
+00:35:25,470 --> 00:35:28,400
+the Chrome Dev Tools to make
+sure that you are optimizing
+
+683
+00:35:28,400 --> 00:35:34,570
+even before you are reaching
+the physical device.
+
+684
+00:35:34,570 --> 00:35:37,250
+Privatization, of course, it's
+very, very important.
+
+685
+00:35:37,250 --> 00:35:42,050
+And like any app, we want to
+focus on the MVP or the task
+
+686
+00:35:42,050 --> 00:35:45,280
+that you want to user to
+achieve with maximum
+
+687
+00:35:45,280 --> 00:35:47,380
+efficiency.
+
+688
+00:35:47,380 --> 00:35:50,650
+Take advantage, of course, of
+mobile specific functionality,
+
+689
+00:35:50,650 --> 00:35:54,230
+like the geolocation, like the
+camera, things that are very
+
+690
+00:35:54,230 --> 00:35:55,240
+important for users.
+
+691
+00:35:55,240 --> 00:35:58,090
+And of course, not
+to mention touch.
+
+692
+00:35:58,090 --> 00:36:01,310
+When you're building to the
+mobile platform, always think
+
+693
+00:36:01,310 --> 00:36:05,640
+about speed, because it's
+really, really different from
+
+694
+00:36:05,640 --> 00:36:08,920
+what users are expecting or
+getting when they're using
+
+695
+00:36:08,920 --> 00:36:11,210
+their desktops or laptops.
+
+696
+00:36:11,210 --> 00:36:13,610
+And of course, optimization
+don't start it
+
+697
+00:36:13,610 --> 00:36:14,970
+before you need to.
+
+698
+00:36:14,970 --> 00:36:20,580
+But do pay attention and
+do it as the last step.
+
+699
+00:36:20,580 --> 00:36:25,890
+So to keep yourself updated with
+Chrome as a platform, we
+
+700
+00:36:25,890 --> 00:36:29,600
+have Chrome today on mobile
+devices, tablets, desktops,
+
+701
+00:36:29,600 --> 00:36:32,480
+laptops, and TVs, that's
+a great site to
+
+702
+00:36:32,480 --> 00:36:34,360
+check Chrome status.
+
+703
+00:36:34,360 --> 00:36:38,640
+All the latest and greatest in
+terms of HTML5 APIs are there.
+
+704
+00:36:38,640 --> 00:36:42,400
+And you could see exactly which
+Chromium browser will
+
+705
+00:36:42,400 --> 00:36:45,040
+support them, or supporting
+them already.
+
+706
+00:36:45,040 --> 00:36:48,150
+Another great site to keep
+yourself updated, it's
+
+707
+00:36:48,150 --> 00:36:49,400
+updates.html5.rock.
+
+708
+00:36:49,400 --> 00:36:51,680
+
+709
+00:36:51,680 --> 00:36:54,910
+As you can see, we're keeping
+it fresh all the time.
+
+710
+00:36:54,910 --> 00:36:59,280
+And here are just a list of
+resources that you might want
+
+711
+00:36:59,280 --> 00:37:02,200
+to check and leverage
+after our show.
+
+712
+00:37:02,200 --> 00:37:04,740
+
+713
+00:37:04,740 --> 00:37:07,830
+So that's basically
+what I had.
+
+714
+00:37:07,830 --> 00:37:10,580
+If we have any questions, this
+is a great time to ask them.
+
+715
+00:37:10,580 --> 00:37:14,020
+Just feel free over the chat
+or through the handout.
+
+716
+00:37:14,020 --> 00:37:18,380
+
+717
+00:37:18,380 --> 00:37:21,960
+So I see one question here
+from [INAUDIBLE]
+
+718
+00:37:21,960 --> 00:37:25,530
+is for newbies, "what would you
+recommend to start with
+
+719
+00:37:25,530 --> 00:37:29,440
+for mobile web development?"
+So let's go--
+
+720
+00:37:29,440 --> 00:37:30,300
+I see [INAUDIBLE]
+
+721
+00:37:30,300 --> 00:37:36,450
+already answered him
+about slide 34.
+
+722
+00:37:36,450 --> 00:37:37,700
+Let's see.
+
+723
+00:37:37,700 --> 00:37:41,590
+
+724
+00:37:41,590 --> 00:37:44,210
+So I will actually answer
+it in two ways.
+
+725
+00:37:44,210 --> 00:37:47,190
+One is, of course, you want to
+check Yeoman or Thorax in
+
+726
+00:37:47,190 --> 00:37:50,340
+terms of the full stacks
+that you want to start
+
+727
+00:37:50,340 --> 00:37:51,590
+from the ground up.
+
+728
+00:37:51,590 --> 00:37:55,110
+Those stacks will give you the
+best practices in terms of the
+
+729
+00:37:55,110 --> 00:38:00,260
+libraries, the tools, and the
+ability to compile and
+
+730
+00:38:00,260 --> 00:38:03,310
+optimize your app itself.
+
+731
+00:38:03,310 --> 00:38:07,310
+By as a newbie, I will go and
+just check what jQuery Mobile
+
+732
+00:38:07,310 --> 00:38:09,010
+or [INAUDIBLE]
+
+733
+00:38:09,010 --> 00:38:09,870
+are doing.
+
+734
+00:38:09,870 --> 00:38:15,400
+And those are really good
+frameworks slash libraries to
+
+735
+00:38:15,400 --> 00:38:16,960
+start working with them.
+
+736
+00:38:16,960 --> 00:38:20,210
+And of course, you have Twitter
+Bootstrap Responsive
+
+737
+00:38:20,210 --> 00:38:22,540
+as another great
+starting point.
+
+738
+00:38:22,540 --> 00:38:26,720
+They're basically giving you
+a nice CSS template, a
+
+739
+00:38:26,720 --> 00:38:29,590
+responsive template to start
+your mobile web app.
+
+740
+00:38:29,590 --> 00:38:33,760
+An in Twitter Bootstrap, for
+instance, you have also a nice
+
+741
+00:38:33,760 --> 00:38:39,050
+range of jQuery plug-ins that
+allow you to have all the
+
+742
+00:38:39,050 --> 00:38:41,190
+common functionality that
+you might need.
+
+743
+00:38:41,190 --> 00:38:43,670
+jQuery Mobile is a really nice
+one, because they already did
+
+744
+00:38:43,670 --> 00:38:48,450
+lots leg works for you by
+checking and making sure that
+
+745
+00:38:48,450 --> 00:38:50,620
+the platform itself will
+work on a really
+
+746
+00:38:50,620 --> 00:38:54,060
+wide range of devices.
+
+747
+00:38:54,060 --> 00:38:56,830
+And [INAUDIBLE], of course,
+are doing lots of fun nice
+
+748
+00:38:56,830 --> 00:39:00,970
+things in terms of the touch
+library that they have.
+
+749
+00:39:00,970 --> 00:39:03,080
+It's more complicated,
+I agree.
+
+750
+00:39:03,080 --> 00:39:05,705
+But if you are building a
+complicated app that your
+
+751
+00:39:05,705 --> 00:39:10,090
+users will spend a lot of time
+in it, it's a really nice
+
+752
+00:39:10,090 --> 00:39:12,910
+library that will serve you in
+the end of the day lots of
+
+753
+00:39:12,910 --> 00:39:18,360
+wheels that you'll probably
+need to reinvent yourself.
+
+754
+00:39:18,360 --> 00:39:19,200
+[? Dodger ?]
+
+755
+00:39:19,200 --> 00:39:21,960
+Mobile is another
+good candidate.
+
+756
+00:39:21,960 --> 00:39:23,820
+And I'm sure there are
+plenty of others that
+
+757
+00:39:23,820 --> 00:39:24,940
+I'm not aware of.
+
+758
+00:39:24,940 --> 00:39:27,790
+Those are the ones that
+I played in the past.
+
+759
+00:39:27,790 --> 00:39:31,080
+But you are most welcome to
+check and let me know.
+
+760
+00:39:31,080 --> 00:39:34,680
+And I'll be able to update
+actually those slides and the
+
+761
+00:39:34,680 --> 00:39:37,650
+blog post that we'll have as
+a summary for this talk.
+
+762
+00:39:37,650 --> 00:39:40,620
+
+763
+00:39:40,620 --> 00:39:43,540
+Any other questions
+or comments?
+
+764
+00:39:43,540 --> 00:39:48,377
+
+765
+00:39:48,377 --> 00:39:52,640
+OK, guys, so thank
+you very much.
+
+766
+00:39:52,640 --> 00:39:55,660
+Oh, how did I create
+this presentation?
+
+767
+00:39:55,660 --> 00:39:56,930
+Just do view source.
+
+768
+00:39:56,930 --> 00:39:59,700
+It's all HTML, HTML5.
+
+769
+00:39:59,700 --> 00:40:03,090
+You are most welcome
+to take it.
+
+770
+00:40:03,090 --> 00:40:05,720
+The structure of the
+presentation itself is sitting
+
+771
+00:40:05,720 --> 00:40:08,750
+on code.google.com.
+
+772
+00:40:08,750 --> 00:40:10,410
+Just have fun.
+
+773
+00:40:10,410 --> 00:40:12,050
+OK, guys, thank you very much.
+
+774
+00:40:12,050 --> 00:40:13,130
+And be strong.
+
+775
+00:40:13,130 --> 00:40:14,380
+Until next time, bye-bye.
+
+776
+00:40:14,380 --> 00:40:19,263
+

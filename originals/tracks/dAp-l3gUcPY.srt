@@ -1,0 +1,4219 @@
+1
+00:00:00,000 --> 00:00:00,340
+
+2
+00:00:00,340 --> 00:00:03,190
+MALE SPEAKER 1: Shanghai GDG
+is a very interesting
+
+3
+00:00:03,190 --> 00:00:04,160
+developer community.
+
+4
+00:00:04,160 --> 00:00:05,000
+FEMALE SPEAKER 1: I'm
+glad somebody
+
+5
+00:00:05,000 --> 00:00:06,240
+has asked this question.
+
+6
+00:00:06,240 --> 00:00:07,353
+MALE SPEAKER 2: This is where
+the magic happens.
+
+7
+00:00:07,353 --> 00:00:08,730
+FEMALE SPEAKER 2: This is
+primarily a question and
+
+8
+00:00:08,730 --> 00:00:10,570
+answer show, so if any
+of you out there
+
+9
+00:00:10,570 --> 00:00:11,820
+would like to ask questions.
+
+10
+00:00:11,820 --> 00:00:16,620
+
+11
+00:00:16,620 --> 00:00:17,370
+COLT MCANLIS: Hello.
+
+12
+00:00:17,370 --> 00:00:17,650
+Hello.
+
+13
+00:00:17,650 --> 00:00:18,580
+I'm live?
+
+14
+00:00:18,580 --> 00:00:19,640
+Fantastic, awesome.
+
+15
+00:00:19,640 --> 00:00:21,280
+They're telling me I'm live,
+so hello everyone.
+
+16
+00:00:21,280 --> 00:00:21,680
+Welcome.
+
+17
+00:00:21,680 --> 00:00:25,330
+Thank you so much for coming
+to our GDL session, talking
+
+18
+00:00:25,330 --> 00:00:27,560
+about webify your game.
+
+19
+00:00:27,560 --> 00:00:29,100
+I am your host for the day.
+
+20
+00:00:29,100 --> 00:00:31,850
+My name is Colt McAnlis, and I'm
+a developer advocate here
+
+21
+00:00:31,850 --> 00:00:34,950
+working at Google, focusing
+on web gaming.
+
+22
+00:00:34,950 --> 00:00:36,680
+What I want to talk to you guys
+about today, I want to
+
+23
+00:00:36,680 --> 00:00:39,400
+take about 30 minutes of your
+time, 30 to 45 minutes, and
+
+24
+00:00:39,400 --> 00:00:44,620
+talk about how you can make
+more successful games, and
+
+25
+00:00:44,620 --> 00:00:48,180
+what you need to be doing in
+this ecosystem that we have in
+
+26
+00:00:48,180 --> 00:00:49,780
+order to prosper.
+
+27
+00:00:49,780 --> 00:00:51,990
+I think to understand that, we
+need to take a step back.
+
+28
+00:00:51,990 --> 00:00:54,540
+We need to go all the way back
+to 2009 and take a look at the
+
+29
+00:00:54,540 --> 00:00:57,440
+gaming ecosystem at that time.
+
+30
+00:00:57,440 --> 00:00:59,840
+In 2009, two major
+things happened.
+
+31
+00:00:59,840 --> 00:01:03,000
+Number one was the rise
+of web social gaming.
+
+32
+00:01:03,000 --> 00:01:06,040
+We saw a lot of social
+distributed gaming coming
+
+33
+00:01:06,040 --> 00:01:08,580
+through the cloud, coming
+through these viral networks,
+
+34
+00:01:08,580 --> 00:01:11,640
+being able to tap a new
+generation, a new bucket of
+
+35
+00:01:11,640 --> 00:01:14,530
+customers that typically weren't
+considered gamers.
+
+36
+00:01:14,530 --> 00:01:16,920
+These weren't people that big
+gaming companies were
+
+37
+00:01:16,920 --> 00:01:18,790
+advertising to, or even thought
+that there was a
+
+38
+00:01:18,790 --> 00:01:20,000
+market there.
+
+39
+00:01:20,000 --> 00:01:22,850
+Number two that happened in 2009
+was that we finally saw
+
+40
+00:01:22,850 --> 00:01:24,570
+the boom of the mobile gaming.
+
+41
+00:01:24,570 --> 00:01:26,900
+Now the mobile ecosystem had
+been there for a number of
+
+42
+00:01:26,900 --> 00:01:30,110
+years, but really didn't
+come into its
+
+43
+00:01:30,110 --> 00:01:32,660
+stride until about 2009.
+
+44
+00:01:32,660 --> 00:01:35,190
+Now, the rise of these two
+things brought something to
+
+45
+00:01:35,190 --> 00:01:38,140
+game development the no one
+had really seen before.
+
+46
+00:01:38,140 --> 00:01:41,660
+And that was that any game
+developer could go out and
+
+47
+00:01:41,660 --> 00:01:44,490
+make a very small budget game
+and get it in front of
+
+48
+00:01:44,490 --> 00:01:46,430
+millions of people.
+
+49
+00:01:46,430 --> 00:01:49,720
+When you have this vacuum that
+was created for demand, of
+
+50
+00:01:49,720 --> 00:01:52,610
+individuals wanting content both
+in the social game space
+
+51
+00:01:52,610 --> 00:01:55,910
+as well as the mobile space, it
+gave rise to something that
+
+52
+00:01:55,910 --> 00:01:57,660
+none of us really expected
+at the time.
+
+53
+00:01:57,660 --> 00:02:01,370
+But it really generated the
+indie game developer.
+
+54
+00:02:01,370 --> 00:02:04,990
+And this is a situation where
+you have sort of the casual
+
+55
+00:02:04,990 --> 00:02:08,300
+development space of just
+making websites, or easy
+
+56
+00:02:08,300 --> 00:02:11,420
+scripting, or people who come
+to the table wanting small
+
+57
+00:02:11,420 --> 00:02:15,890
+content, coupled with sort of
+the high-precision, high
+
+58
+00:02:15,890 --> 00:02:18,750
+frequency game development
+processes that we'd seen in
+
+59
+00:02:18,750 --> 00:02:21,600
+AAA development, as well as
+skill sets that had come to
+
+60
+00:02:21,600 --> 00:02:24,890
+the world for mobile handheld
+development that we've seen
+
+61
+00:02:24,890 --> 00:02:26,630
+from other large publishers.
+
+62
+00:02:26,630 --> 00:02:30,570
+And this really gave rise to
+this developer who basically
+
+63
+00:02:30,570 --> 00:02:34,570
+became our fan icon for the
+games industry overnight.
+
+64
+00:02:34,570 --> 00:02:37,960
+It seemed like we were flooded
+with tons and tons of stories
+
+65
+00:02:37,960 --> 00:02:40,210
+about how individuals would
+spend the weekend in the
+
+66
+00:02:40,210 --> 00:02:43,940
+garage making a game, and
+putting it up on the web or
+
+67
+00:02:43,940 --> 00:02:46,690
+mobile, and then turning around
+and making $100,000 on
+
+68
+00:02:46,690 --> 00:02:47,830
+it in the next week.
+
+69
+00:02:47,830 --> 00:02:51,940
+And this type of information,
+when received by the general
+
+70
+00:02:51,940 --> 00:02:54,950
+populace of game developers,
+created what I like to call
+
+71
+00:02:54,950 --> 00:02:57,540
+the modern gaming gold rush.
+
+72
+00:02:57,540 --> 00:03:00,070
+We had tons and tons and tons
+of developers leaving their
+
+73
+00:03:00,070 --> 00:03:03,170
+established companies with
+401(k)s and stock options,
+
+74
+00:03:03,170 --> 00:03:06,220
+branching out into the
+world of unknown self
+
+75
+00:03:06,220 --> 00:03:09,140
+entrepreneurship, looking to
+make the next big game.
+
+76
+00:03:09,140 --> 00:03:11,740
+And a lot of them actually had
+a very, very good success.
+
+77
+00:03:11,740 --> 00:03:14,720
+Now over time, though, we have
+to come to the conclusion that
+
+78
+00:03:14,720 --> 00:03:16,850
+it's no longer 2009.
+
+79
+00:03:16,850 --> 00:03:19,320
+In fact, it's 2012 now, and
+a lot of the things that
+
+80
+00:03:19,320 --> 00:03:22,230
+happened back then are
+no longer the case.
+
+81
+00:03:22,230 --> 00:03:25,850
+First off, a lot of these social
+games in the social
+
+82
+00:03:25,850 --> 00:03:28,070
+networks have kind
+of taken a fall.
+
+83
+00:03:28,070 --> 00:03:30,610
+What we've seen is that the
+social networks themselves
+
+84
+00:03:30,610 --> 00:03:33,780
+have reduced a lot of the
+sharing and viral features
+
+85
+00:03:33,780 --> 00:03:37,190
+that originally made those first
+generation of games so
+
+86
+00:03:37,190 --> 00:03:38,800
+successful and so popular.
+
+87
+00:03:38,800 --> 00:03:41,430
+It was very easy for them to
+basically flood your stream of
+
+88
+00:03:41,430 --> 00:03:44,660
+information with, buy my pink
+cow, buy my pink cow.
+
+89
+00:03:44,660 --> 00:03:47,350
+In addition to that, because of
+the early success, we saw a
+
+90
+00:03:47,350 --> 00:03:51,650
+huge influence and a huge pool
+of money come in from venture
+
+91
+00:03:51,650 --> 00:03:53,970
+capitalists and other small
+game development studios,
+
+92
+00:03:53,970 --> 00:03:56,270
+which effectively just
+flooded the space.
+
+93
+00:03:56,270 --> 00:03:58,790
+There's tons of clones, tons of
+one-offs, everyone trying
+
+94
+00:03:58,790 --> 00:04:02,340
+to do the same thing with a
+different skin to kind of keep
+
+95
+00:04:02,340 --> 00:04:04,370
+your eyeballs and get
+your attention
+
+96
+00:04:04,370 --> 00:04:06,910
+through their clicks.
+
+97
+00:04:06,910 --> 00:04:09,670
+On the other side of the
+dime is mobile gaming.
+
+98
+00:04:09,670 --> 00:04:12,220
+Now what mobile gaming
+has done now--
+
+99
+00:04:12,220 --> 00:04:13,260
+don't get me wrong,
+mobile gaming is
+
+100
+00:04:13,260 --> 00:04:14,650
+doing amazingly well.
+
+101
+00:04:14,650 --> 00:04:16,930
+In fact, I think the latest
+statistics still show like
+
+102
+00:04:16,930 --> 00:04:21,209
+some 27 billion million umpteen
+zillion devices that
+
+103
+00:04:21,209 --> 00:04:23,530
+are released and activated
+every day.
+
+104
+00:04:23,530 --> 00:04:25,260
+But what we're seeing there
+is that the market and the
+
+105
+00:04:25,260 --> 00:04:28,720
+ecosystem has been driven more
+by indie game developers than
+
+106
+00:04:28,720 --> 00:04:29,970
+any other ecosystem.
+
+107
+00:04:29,970 --> 00:04:33,900
+And the result there has been
+just a flood of content, just
+
+108
+00:04:33,900 --> 00:04:36,970
+an overwhelming number of
+applications that have ended
+
+109
+00:04:36,970 --> 00:04:38,880
+up in that ecosystem.
+
+110
+00:04:38,880 --> 00:04:41,680
+And the result has kind of been
+difficult, because large
+
+111
+00:04:41,680 --> 00:04:43,780
+game developers, publishers who
+traditionally weren't in
+
+112
+00:04:43,780 --> 00:04:46,960
+the space before, have now
+entered into the space, and
+
+113
+00:04:46,960 --> 00:04:50,200
+are competing against these
+indies for the same little 128
+
+114
+00:04:50,200 --> 00:04:53,590
+pixels by 96 pixel screen real
+estate in the promotional
+
+115
+00:04:53,590 --> 00:04:54,670
+systems that are there.
+
+116
+00:04:54,670 --> 00:04:56,800
+So the indies are coming to the
+table with lots of great
+
+117
+00:04:56,800 --> 00:04:59,050
+ideas and having to fight
+against people with lots of
+
+118
+00:04:59,050 --> 00:05:00,970
+marketing dollars.
+
+119
+00:05:00,970 --> 00:05:03,840
+Which means something very
+interesting, is that with the
+
+120
+00:05:03,840 --> 00:05:06,790
+birth of everything that
+happened in 2009, it's never
+
+121
+00:05:06,790 --> 00:05:10,450
+been easier or more
+cost-effective to make a game
+
+122
+00:05:10,450 --> 00:05:12,690
+and get it in front of
+millions of people.
+
+123
+00:05:12,690 --> 00:05:16,950
+The problem though, is it's
+still just as hard to market
+
+124
+00:05:16,950 --> 00:05:19,820
+that game and actually convince
+all the people in the
+
+125
+00:05:19,820 --> 00:05:23,010
+crowd that your content
+is worth looking at.
+
+126
+00:05:23,010 --> 00:05:25,590
+So what we end up with, is you
+have a whole fleet of indie
+
+127
+00:05:25,590 --> 00:05:28,700
+developers all making content,
+expecting the environment to
+
+128
+00:05:28,700 --> 00:05:30,750
+still resemble what it looked
+like in 2009, when
+
+129
+00:05:30,750 --> 00:05:32,170
+that's not the case.
+
+130
+00:05:32,170 --> 00:05:33,480
+So what should you be doing?
+
+131
+00:05:33,480 --> 00:05:35,170
+If you're a game developer
+today, how do you get your
+
+132
+00:05:35,170 --> 00:05:36,060
+message out?
+
+133
+00:05:36,060 --> 00:05:37,330
+How you embrace users?
+
+134
+00:05:37,330 --> 00:05:40,130
+How do you market your product
+properly when this may not be
+
+135
+00:05:40,130 --> 00:05:42,120
+necessarily be your
+wheelhouse?
+
+136
+00:05:42,120 --> 00:05:45,830
+The good news is that there's
+a very established ecosystem
+
+137
+00:05:45,830 --> 00:05:50,480
+that's well-versed in
+understanding how to get your
+
+138
+00:05:50,480 --> 00:05:53,290
+signal out there with lots of
+noise in the ecosystem.
+
+139
+00:05:53,290 --> 00:05:56,040
+And that multiverse is
+called the internet.
+
+140
+00:05:56,040 --> 00:05:58,070
+So the question really for this
+talk, and what I really
+
+141
+00:05:58,070 --> 00:06:00,730
+want to address to everyone here
+today is what can the web
+
+142
+00:06:00,730 --> 00:06:03,770
+to teach us about making
+more successful games?
+
+143
+00:06:03,770 --> 00:06:06,340
+And I'm not saying put all
+your games on the web.
+
+144
+00:06:06,340 --> 00:06:10,370
+I'm talking about learning and
+adapting and bringing the
+
+145
+00:06:10,370 --> 00:06:14,060
+principles and traits of the web
+into your game development
+
+146
+00:06:14,060 --> 00:06:16,600
+process, and your game, to
+make it more successful.
+
+147
+00:06:16,600 --> 00:06:20,190
+Or better yet, what makes
+clicking a link and seeing a
+
+148
+00:06:20,190 --> 00:06:23,880
+cat such a compelling vehicle
+for content that people
+
+149
+00:06:23,880 --> 00:06:24,820
+continuously do it?
+
+150
+00:06:24,820 --> 00:06:28,430
+That cat right there alone has
+some ungodly number of
+
+151
+00:06:28,430 --> 00:06:30,290
+hundreds of thousands
+of views.
+
+152
+00:06:30,290 --> 00:06:32,780
+That's an amazing vehicle
+and an amazing process.
+
+153
+00:06:32,780 --> 00:06:35,690
+So what we're going to talk
+about today is three ways that
+
+154
+00:06:35,690 --> 00:06:37,590
+you're going to be able to
+webify your game, and
+
+155
+00:06:37,590 --> 00:06:42,720
+hopefully, or more specifically,
+have success in
+
+156
+00:06:42,720 --> 00:06:43,870
+making better games.
+
+157
+00:06:43,870 --> 00:06:46,350
+The first part is going to be to
+ship all of your platforms.
+
+158
+00:06:46,350 --> 00:06:51,120
+Now there's a great story that
+I'm going to tell, and if this
+
+159
+00:06:51,120 --> 00:06:52,970
+story's about you,
+I apologize.
+
+160
+00:06:52,970 --> 00:06:55,510
+I was actually at a game
+developer conference a few
+
+161
+00:06:55,510 --> 00:06:58,025
+weeks ago, and talked to a lot
+of people on the floor, and
+
+162
+00:06:58,025 --> 00:07:01,170
+was just getting a pulse on
+what game developers were
+
+163
+00:07:01,170 --> 00:07:01,760
+going through.
+
+164
+00:07:01,760 --> 00:07:04,430
+And I was talking to this
+developer who was lamenting
+
+165
+00:07:04,430 --> 00:07:07,520
+over the state of the mobile
+ecosystem, and how he wasn't
+
+166
+00:07:07,520 --> 00:07:09,900
+making millions and millions
+of dollars like he was
+
+167
+00:07:09,900 --> 00:07:10,880
+expecting to.
+
+168
+00:07:10,880 --> 00:07:13,670
+And so I said to him, hey that's
+cool, how are you doing
+
+169
+00:07:13,670 --> 00:07:14,850
+in the other ecosystems?
+
+170
+00:07:14,850 --> 00:07:18,830
+How are you doing not on mobile,
+or in the competing
+
+171
+00:07:18,830 --> 00:07:20,040
+mobile ecosystem?
+
+172
+00:07:20,040 --> 00:07:23,050
+And his response was, I'm
+not in those ecosystems.
+
+173
+00:07:23,050 --> 00:07:24,380
+I'm only in this one place.
+
+174
+00:07:24,380 --> 00:07:27,160
+You can only find
+my program here.
+
+175
+00:07:27,160 --> 00:07:29,010
+And I kind of stopped and looked
+at him, like wait,
+
+176
+00:07:29,010 --> 00:07:30,440
+you're not anywhere else?
+
+177
+00:07:30,440 --> 00:07:32,770
+Why are you not embracing
+these other ecosystems?
+
+178
+00:07:32,770 --> 00:07:35,620
+He says, well, I don't think
+it's worth my time, and/or I
+
+179
+00:07:35,620 --> 00:07:38,010
+don't have money to do it.
+
+180
+00:07:38,010 --> 00:07:41,680
+This was not news to me.
+
+181
+00:07:41,680 --> 00:07:44,960
+But I definitely think it was
+one of those spots where I can
+
+182
+00:07:44,960 --> 00:07:46,840
+honestly say, I believe
+that game developers
+
+183
+00:07:46,840 --> 00:07:48,530
+are doing it wrong.
+
+184
+00:07:48,530 --> 00:07:50,710
+If you're a game developer and
+you're making a piece of
+
+185
+00:07:50,710 --> 00:07:53,590
+content, you should be
+understanding that the success
+
+186
+00:07:53,590 --> 00:07:56,990
+of your studio and the success
+of your content is directly
+
+187
+00:07:56,990 --> 00:08:00,280
+related to how many people can
+access it and purchase it.
+
+188
+00:08:00,280 --> 00:08:02,290
+In marketing or in sales,
+you call this
+
+189
+00:08:02,290 --> 00:08:03,830
+the top of the funnel.
+
+190
+00:08:03,830 --> 00:08:07,150
+If you only have two million
+potential customers, and you
+
+191
+00:08:07,150 --> 00:08:10,310
+hope to get 10% out of it, is
+that going to keep your studio
+
+192
+00:08:10,310 --> 00:08:11,590
+afloat over time?
+
+193
+00:08:11,590 --> 00:08:13,370
+This is the critical question.
+
+194
+00:08:13,370 --> 00:08:17,390
+Should you be locking your
+content only to one platform?
+
+195
+00:08:17,390 --> 00:08:19,490
+There's a great quote by
+a guy named Mark Cuban.
+
+196
+00:08:19,490 --> 00:08:20,890
+Hopefully you know who he is.
+
+197
+00:08:20,890 --> 00:08:24,040
+His comment is, make your
+product easier to buy than
+
+198
+00:08:24,040 --> 00:08:27,760
+your competition or you're going
+to find them buying your
+
+199
+00:08:27,760 --> 00:08:29,660
+competitor product
+instead of yours.
+
+200
+00:08:29,660 --> 00:08:30,800
+Now this is very important.
+
+201
+00:08:30,800 --> 00:08:33,360
+So let's take a real world
+application for example.
+
+202
+00:08:33,360 --> 00:08:34,240
+Let's say you've
+got a headache.
+
+203
+00:08:34,240 --> 00:08:35,669
+I've got a really bad headache,
+and I'm sitting at
+
+204
+00:08:35,669 --> 00:08:37,390
+home, and I'm out of any
+headache medicine.
+
+205
+00:08:37,390 --> 00:08:39,039
+I get my car.
+
+206
+00:08:39,039 --> 00:08:41,690
+I'm going to drive to the
+closest, most convenient place
+
+207
+00:08:41,690 --> 00:08:43,059
+to get headache medicine.
+
+208
+00:08:43,059 --> 00:08:44,640
+I'm going to walk in the store,
+and I'm going to pick
+
+209
+00:08:44,640 --> 00:08:47,220
+from the things that are
+available on that shelf for me
+
+210
+00:08:47,220 --> 00:08:49,340
+to purchase.
+
+211
+00:08:49,340 --> 00:08:52,440
+Now if your product isn't being
+served or delivered
+
+212
+00:08:52,440 --> 00:08:55,180
+there, then there's no
+opportunity for me to purchase
+
+213
+00:08:55,180 --> 00:08:55,840
+your product.
+
+214
+00:08:55,840 --> 00:08:56,990
+Even though I may like
+your product.
+
+215
+00:08:56,990 --> 00:08:57,850
+I may know your product.
+
+216
+00:08:57,850 --> 00:09:00,190
+I may have purchased it two
+miles down the road in a
+
+217
+00:09:00,190 --> 00:09:01,040
+different store.
+
+218
+00:09:01,040 --> 00:09:03,390
+The fact is that right now,
+I'm going to choose the
+
+219
+00:09:03,390 --> 00:09:06,420
+easiest option to purchase
+the product as possible.
+
+220
+00:09:06,420 --> 00:09:09,000
+So what happens is, let's say
+you have your content.
+
+221
+00:09:09,000 --> 00:09:11,230
+Your content's out in the wild,
+and you put it on a
+
+222
+00:09:11,230 --> 00:09:12,260
+specific platform.
+
+223
+00:09:12,260 --> 00:09:15,380
+Well that's fine for the users
+that have already breached the
+
+224
+00:09:15,380 --> 00:09:17,610
+barrier of entry to get
+to your content.
+
+225
+00:09:17,610 --> 00:09:18,870
+This is pretty easy for them.
+
+226
+00:09:18,870 --> 00:09:22,010
+You just have to find a way to
+connect from your platform to
+
+227
+00:09:22,010 --> 00:09:22,900
+the people.
+
+228
+00:09:22,900 --> 00:09:25,460
+But there's a whole group of
+people over here who maybe
+
+229
+00:09:25,460 --> 00:09:27,910
+entirely willing to
+pay you oodles of
+
+230
+00:09:27,910 --> 00:09:29,450
+money for your content.
+
+231
+00:09:29,450 --> 00:09:32,540
+You may find your true fans
+here, or your connoisseurs, or
+
+232
+00:09:32,540 --> 00:09:35,220
+your collectors, who have no
+ability to actually access
+
+233
+00:09:35,220 --> 00:09:37,700
+your content because they may
+not already be on the
+
+234
+00:09:37,700 --> 00:09:41,580
+platform, or are unwilling to
+adopt that platform due to
+
+235
+00:09:41,580 --> 00:09:42,210
+various reasons.
+
+236
+00:09:42,210 --> 00:09:44,040
+Maybe they don't sign up for an
+email, or they don't want
+
+237
+00:09:44,040 --> 00:09:48,180
+to buy $700 worth of hardware
+in order to then pay extra
+
+238
+00:09:48,180 --> 00:09:49,410
+money for your content.
+
+239
+00:09:49,410 --> 00:09:52,240
+And really what you should be
+doing, is because of the fact
+
+240
+00:09:52,240 --> 00:09:54,030
+that games are digitally
+distributable--
+
+241
+00:09:54,030 --> 00:09:56,510
+we have the ability to just go
+and download the content--
+
+242
+00:09:56,510 --> 00:09:59,490
+you should really be embracing
+the ability to allow the user
+
+243
+00:09:59,490 --> 00:10:03,162
+to get the content directly
+from you as the developer.
+
+244
+00:10:03,162 --> 00:10:07,260
+Four or five years ago, this
+kind of was unheard of because
+
+245
+00:10:07,260 --> 00:10:08,320
+of the avenues online.
+
+246
+00:10:08,320 --> 00:10:10,700
+It was really hard for a
+standard developer to actually
+
+247
+00:10:10,700 --> 00:10:13,950
+put the product online and sell
+it to people directly.
+
+248
+00:10:13,950 --> 00:10:15,530
+There was lots of DRM
+issues out there.
+
+249
+00:10:15,530 --> 00:10:17,100
+Console was kind of
+the big thing.
+
+250
+00:10:17,100 --> 00:10:18,770
+A lot of people didn't
+put focus in this.
+
+251
+00:10:18,770 --> 00:10:21,470
+But today, in 2012,
+is very different.
+
+252
+00:10:21,470 --> 00:10:25,200
+I want to talk to specifically
+about a great success story.
+
+253
+00:10:25,200 --> 00:10:27,780
+There's a game out there
+called Gratuitous Space
+
+254
+00:10:27,780 --> 00:10:29,470
+Battles, by Positech Games.
+
+255
+00:10:29,470 --> 00:10:30,800
+And it's a fantastic game.
+
+256
+00:10:30,800 --> 00:10:31,820
+It's beautifully done.
+
+257
+00:10:31,820 --> 00:10:33,010
+It's all in 2D.
+
+258
+00:10:33,010 --> 00:10:35,600
+And it was done by basically a
+little indie developer that
+
+259
+00:10:35,600 --> 00:10:37,550
+shipped it in 2009.
+
+260
+00:10:37,550 --> 00:10:40,630
+Now the developer of this, Cliff
+Harris, actually came
+
+261
+00:10:40,630 --> 00:10:43,110
+out at a great talk called World
+of Love a long time ago.
+
+262
+00:10:43,110 --> 00:10:46,010
+And the whole point of his talk
+was, hey, I'm an indie.
+
+263
+00:10:46,010 --> 00:10:46,950
+I need money.
+
+264
+00:10:46,950 --> 00:10:50,210
+Here's how I'm going outside of
+these channels to market my
+
+265
+00:10:50,210 --> 00:10:52,240
+game and get money from
+other avenues.
+
+266
+00:10:52,240 --> 00:10:55,570
+And one of the big things he
+came to with this was that he
+
+267
+00:10:55,570 --> 00:10:58,920
+believed dominantly that you
+should be allowing users to
+
+268
+00:10:58,920 --> 00:11:00,270
+buy from your website.
+
+269
+00:11:00,270 --> 00:11:02,640
+And in fact, if you actually
+visit the Gratuitous Battles
+
+270
+00:11:02,640 --> 00:11:05,300
+website, you can actually
+see tons of icons there.
+
+271
+00:11:05,300 --> 00:11:09,390
+You can buy with Amazon, with
+PayPal, with Google Checkout.
+
+272
+00:11:09,390 --> 00:11:12,240
+There is a plethora of ways
+for you to give him your
+
+273
+00:11:12,240 --> 00:11:14,910
+money, if you already are
+signed in, or have an
+
+274
+00:11:14,910 --> 00:11:18,200
+established rapport, or an
+account on file, and whatnot.
+
+275
+00:11:18,200 --> 00:11:22,800
+This is really cool, because it
+allows him to effectively
+
+276
+00:11:22,800 --> 00:11:27,450
+connect with his customers
+outside of the ebb and flow of
+
+277
+00:11:27,450 --> 00:11:29,170
+digital distribution
+platforms.
+
+278
+00:11:29,170 --> 00:11:31,920
+He can actually connect at
+a much deeper level.
+
+279
+00:11:31,920 --> 00:11:33,970
+And his website goes on
+further to say this.
+
+280
+00:11:33,970 --> 00:11:34,980
+If you actually got us website,
+
+281
+00:11:34,980 --> 00:11:35,770
+he's got a great quote.
+
+282
+00:11:35,770 --> 00:11:40,040
+He says, you should buy from
+us because of the fact that
+
+283
+00:11:40,040 --> 00:11:43,860
+when you buy from us, I
+get 91% of the money.
+
+284
+00:11:43,860 --> 00:11:47,710
+Only 9% actually goes to the
+credit card payment people.
+
+285
+00:11:47,710 --> 00:11:49,720
+And this is really cool, because
+this allows him to
+
+286
+00:11:49,720 --> 00:11:51,430
+actually connect with
+his users, say
+
+287
+00:11:51,430 --> 00:11:52,480
+hey, I'm a real person.
+
+288
+00:11:52,480 --> 00:11:53,700
+I have a real job.
+
+289
+00:11:53,700 --> 00:11:55,640
+Please buy the content
+directly from me.
+
+290
+00:11:55,640 --> 00:11:57,180
+It's fantastic.
+
+291
+00:11:57,180 --> 00:12:00,820
+He goes on further to say if
+you do buy from me, I will
+
+292
+00:12:00,820 --> 00:12:03,780
+send you pictures of cats.
+
+293
+00:12:03,780 --> 00:12:06,980
+Now where else on the internet
+are you going to be able to
+
+294
+00:12:06,980 --> 00:12:10,790
+find the ability to connect with
+users like this at that
+
+295
+00:12:10,790 --> 00:12:11,370
+deep of a level?
+
+296
+00:12:11,370 --> 00:12:14,530
+You can't actually connect
+like this in digital
+
+297
+00:12:14,530 --> 00:12:15,420
+distribution platforms.
+
+298
+00:12:15,420 --> 00:12:17,130
+Specifically, when a user wants
+your product, they have
+
+299
+00:12:17,130 --> 00:12:19,310
+to go to some site that explains
+your product, and
+
+300
+00:12:19,310 --> 00:12:21,050
+accept permissions and
+get it from there.
+
+301
+00:12:21,050 --> 00:12:23,520
+No, these guys over here that
+make Gratuitous Space Battles
+
+302
+00:12:23,520 --> 00:12:27,550
+are telling you, please, buy my
+product and I will give you
+
+303
+00:12:27,550 --> 00:12:28,810
+pictures of cats.
+
+304
+00:12:28,810 --> 00:12:31,740
+Only on the internet can you
+have that sort of relationship
+
+305
+00:12:31,740 --> 00:12:32,250
+with the user.
+
+306
+00:12:32,250 --> 00:12:33,810
+And best off, look at that.
+
+307
+00:12:33,810 --> 00:12:36,740
+He's saying that if you give me
+your email and don't even
+
+308
+00:12:36,740 --> 00:12:38,270
+buy the product, I'll just
+send you cat pictures.
+
+309
+00:12:38,270 --> 00:12:39,200
+This is great.
+
+310
+00:12:39,200 --> 00:12:42,750
+He has the ability to create an
+entire marketing chain and
+
+311
+00:12:42,750 --> 00:12:45,680
+email list, a group of people
+who are interested in his
+
+312
+00:12:45,680 --> 00:12:48,400
+product, and are willing to
+receive pictures of cats, that
+
+313
+00:12:48,400 --> 00:12:50,390
+he can then market
+to over time.
+
+314
+00:12:50,390 --> 00:12:53,370
+He has the ability to have a
+connection with his user
+
+315
+00:12:53,370 --> 00:12:55,880
+because they're going direct
+to his website that other
+
+316
+00:12:55,880 --> 00:12:58,750
+developers can't get because
+they're relying entirely on a
+
+317
+00:12:58,750 --> 00:13:00,840
+silo distribution.
+
+318
+00:13:00,840 --> 00:13:02,910
+And with this, you have to
+understand that you also get
+
+319
+00:13:02,910 --> 00:13:04,140
+other benefits.
+
+320
+00:13:04,140 --> 00:13:09,440
+And the second thing is, from
+our three set, is that with
+
+321
+00:13:09,440 --> 00:13:11,510
+the ability to connect with
+your user, you have the
+
+322
+00:13:11,510 --> 00:13:13,920
+ability to actually talk
+with them earlier.
+
+323
+00:13:13,920 --> 00:13:15,880
+You have the ability to
+get their feedback.
+
+324
+00:13:15,880 --> 00:13:18,180
+You have the ability to make
+changes and make a product
+
+325
+00:13:18,180 --> 00:13:20,000
+that they actually care about.
+
+326
+00:13:20,000 --> 00:13:21,870
+So anyone know this guy?
+
+327
+00:13:21,870 --> 00:13:23,100
+This is Michelangelo.
+
+328
+00:13:23,100 --> 00:13:26,100
+He's very famous for carving
+this statue,
+
+329
+00:13:26,100 --> 00:13:27,290
+the statue of David.
+
+330
+00:13:27,290 --> 00:13:30,720
+Now when Michelangelo was later
+in his life, he actually
+
+331
+00:13:30,720 --> 00:13:32,930
+give a great quote to someone
+that says, "Along with the
+
+332
+00:13:32,930 --> 00:13:36,380
+milk of my nurse, I received the
+knack of handling a chisel
+
+333
+00:13:36,380 --> 00:13:39,020
+and hammer, with which
+I make my figures."
+
+334
+00:13:39,020 --> 00:13:41,550
+Now for those of you don't know
+the life of Michelangelo,
+
+335
+00:13:41,550 --> 00:13:45,010
+his family actually fell on some
+hard times, and he, as a
+
+336
+00:13:45,010 --> 00:13:48,460
+young child, actually had to
+go live with his wet nurse.
+
+337
+00:13:48,460 --> 00:13:50,470
+The wet nurse and her
+family actually
+
+338
+00:13:50,470 --> 00:13:53,170
+lived in a marble quarry.
+
+339
+00:13:53,170 --> 00:13:55,700
+The father of the family
+actually mined marble, which
+
+340
+00:13:55,700 --> 00:13:58,670
+meant that Michelangelo, as a
+young child living in this
+
+341
+00:13:58,670 --> 00:14:01,840
+environment, had marble just
+laying around his house for
+
+342
+00:14:01,840 --> 00:14:03,470
+him to play with.
+
+343
+00:14:03,470 --> 00:14:07,030
+During this entire time, he was
+able to go outside, chisel
+
+344
+00:14:07,030 --> 00:14:09,300
+marble, play with marble,
+manipulate marble.
+
+345
+00:14:09,300 --> 00:14:12,840
+He had a feedback loop of how
+to play with marble that his
+
+346
+00:14:12,840 --> 00:14:14,910
+competitors had never gotten.
+
+347
+00:14:14,910 --> 00:14:17,640
+He had spend more time failing
+and playing with marble by the
+
+348
+00:14:17,640 --> 00:14:20,370
+time he was 12 than any other
+sculptors had done their
+
+349
+00:14:20,370 --> 00:14:22,700
+entire lifetime, because
+how expensive
+
+350
+00:14:22,700 --> 00:14:24,040
+marble was at that time.
+
+351
+00:14:24,040 --> 00:14:26,900
+The point of this was that
+Michelangelo had found that
+
+352
+00:14:26,900 --> 00:14:30,100
+iteration in a medium resulted
+in better results.
+
+353
+00:14:30,100 --> 00:14:31,920
+And the fact that he could
+iterate better than his
+
+354
+00:14:31,920 --> 00:14:34,470
+competitors resulted
+in his success.
+
+355
+00:14:34,470 --> 00:14:37,990
+And the statue David is a
+perfect example of that.
+
+356
+00:14:37,990 --> 00:14:41,850
+AAA game development does
+not necessarily follow
+
+357
+00:14:41,850 --> 00:14:43,170
+this path very well.
+
+358
+00:14:43,170 --> 00:14:46,240
+Now what you see with a big
+budget title typically in a
+
+359
+00:14:46,240 --> 00:14:48,980
+console development cycle right
+now, is that you end up
+
+360
+00:14:48,980 --> 00:14:50,760
+with an early prototype phase.
+
+361
+00:14:50,760 --> 00:14:52,410
+And then you'll probably go
+through about two or three
+
+362
+00:14:52,410 --> 00:14:54,230
+years worth of development
+cycle.
+
+363
+00:14:54,230 --> 00:14:57,610
+And only then, after the
+internal development cycle for
+
+364
+00:14:57,610 --> 00:15:00,190
+three years, will you actually
+go into public beta.
+
+365
+00:15:00,190 --> 00:15:01,870
+Now take a look at this.
+
+366
+00:15:01,870 --> 00:15:04,910
+The only time that the public,
+the consumers, the people that
+
+367
+00:15:04,910 --> 00:15:06,270
+are actually going to be buying
+the product, have
+
+368
+00:15:06,270 --> 00:15:09,020
+actually seen the product and
+played with the product, is
+
+369
+00:15:09,020 --> 00:15:10,570
+during this beta phase.
+
+370
+00:15:10,570 --> 00:15:12,330
+This means that all of the
+feedback that they've gotten
+
+371
+00:15:12,330 --> 00:15:15,440
+on their content has
+been internal only.
+
+372
+00:15:15,440 --> 00:15:18,580
+With that in mind, it kind of
+makes a lot of sense that most
+
+373
+00:15:18,580 --> 00:15:21,740
+console games always ship
+their slip date.
+
+374
+00:15:21,740 --> 00:15:23,900
+Once you go into beta, you get
+all this feedback from people
+
+375
+00:15:23,900 --> 00:15:26,560
+saying these icons are wrong, or
+I don't like this, or this
+
+376
+00:15:26,560 --> 00:15:28,955
+thing is overpowered, or they
+stress the system in new ways,
+
+377
+00:15:28,955 --> 00:15:31,460
+and then the shipping gets
+slipped again and again, or as
+
+378
+00:15:31,460 --> 00:15:33,190
+long as they financially
+can hand out.
+
+379
+00:15:33,190 --> 00:15:35,250
+And then finally the product
+hits the shelves.
+
+380
+00:15:35,250 --> 00:15:37,040
+Now what this means is, if you
+look at this development
+
+381
+00:15:37,040 --> 00:15:40,010
+cycle, you end up with a four
+year development span costing
+
+382
+00:15:40,010 --> 00:15:42,680
+$40 million, where the user
+is only brought in the
+
+383
+00:15:42,680 --> 00:15:46,640
+conversation the last
+25% or 30%.
+
+384
+00:15:46,640 --> 00:15:50,590
+Those are the people actually
+buying your product.
+
+385
+00:15:50,590 --> 00:15:52,780
+And yet you don't actually have
+a conversation with them
+
+386
+00:15:52,780 --> 00:15:55,480
+about the product until much
+later in the cycle.
+
+387
+00:15:55,480 --> 00:15:57,420
+What you actually see is that
+they're going through this.
+
+388
+00:15:57,420 --> 00:15:59,580
+Internally, they say, is this
+product awesome yet?
+
+389
+00:15:59,580 --> 00:16:01,000
+If not, let's change
+a bunch of stuff
+
+390
+00:16:01,000 --> 00:16:02,050
+and see if it's again.
+
+391
+00:16:02,050 --> 00:16:04,800
+And then oops, we ran out
+of time, let's ship it.
+
+392
+00:16:04,800 --> 00:16:07,380
+The problem here again is that
+there should be a bubble in
+
+393
+00:16:07,380 --> 00:16:10,830
+there where it says, is this
+awesome yet, consumer?
+
+394
+00:16:10,830 --> 00:16:14,490
+And the consumer says, yes or
+no, here's my feedback.
+
+395
+00:16:14,490 --> 00:16:18,410
+Minecraft is a perfect example
+of where this went right.
+
+396
+00:16:18,410 --> 00:16:20,420
+For those of you guys who don't
+know the story of how
+
+397
+00:16:20,420 --> 00:16:24,030
+Minecraft got off the ground,
+in 2009, Minecraft actually
+
+398
+00:16:24,030 --> 00:16:25,820
+went public with an alpha.
+
+399
+00:16:25,820 --> 00:16:29,450
+And with that, you could
+actually buy the alpha and get
+
+400
+00:16:29,450 --> 00:16:30,740
+the full version later.
+
+401
+00:16:30,740 --> 00:16:32,210
+Effectively, what the developers
+were doing is, they
+
+402
+00:16:32,210 --> 00:16:33,440
+still had day jobs.
+
+403
+00:16:33,440 --> 00:16:35,270
+They shipped Minecraft
+on the side.
+
+404
+00:16:35,270 --> 00:16:38,703
+And they said, hey, if you're
+willing to pay me now, $20,
+
+405
+00:16:38,703 --> 00:16:42,000
+$25, something like that, then
+when the full version comes
+
+406
+00:16:42,000 --> 00:16:44,570
+out later, you'll get the full
+version plus all the upgrades
+
+407
+00:16:44,570 --> 00:16:46,190
+and all the other cool stuff.
+
+408
+00:16:46,190 --> 00:16:49,350
+What this allowed them to do
+was actually find a pool of
+
+409
+00:16:49,350 --> 00:16:52,360
+true fans, people actually cared
+about the product, early
+
+410
+00:16:52,360 --> 00:16:56,080
+this development cycle, that are
+willing to pay for it and
+
+411
+00:16:56,080 --> 00:16:58,970
+then receive feedback
+from it over time.
+
+412
+00:16:58,970 --> 00:17:00,480
+The result of this was
+actually amazing.
+
+413
+00:17:00,480 --> 00:17:02,870
+In 2010, they actually
+shipped their beta.
+
+414
+00:17:02,870 --> 00:17:06,859
+And, funny story, the actual
+company was founded in 2010,
+
+415
+00:17:06,859 --> 00:17:11,329
+when Paypal actually suspended
+their account from the alpha
+
+416
+00:17:11,329 --> 00:17:14,190
+purchases, when it ended up with
+like $700,000 in there.
+
+417
+00:17:14,190 --> 00:17:17,630
+PayPal actually thought it was
+a hack, some piracy was going
+
+418
+00:17:17,630 --> 00:17:18,690
+on, something bad
+was happening.
+
+419
+00:17:18,690 --> 00:17:22,400
+And they had to found their
+company in order to properly
+
+420
+00:17:22,400 --> 00:17:23,869
+receive these funds
+and tunnel them
+
+421
+00:17:23,869 --> 00:17:25,390
+into development properly.
+
+422
+00:17:25,390 --> 00:17:29,320
+The cool thing about this is
+that users were paying the
+
+423
+00:17:29,320 --> 00:17:34,030
+company to provide feedback
+about their product.
+
+424
+00:17:34,030 --> 00:17:39,330
+In any other medium that you
+want external feedback, you
+
+425
+00:17:39,330 --> 00:17:41,980
+usually have to go
+pay someone else.
+
+426
+00:17:41,980 --> 00:17:44,340
+If you want a consultant to come
+in and tell you how your
+
+427
+00:17:44,340 --> 00:17:47,460
+blinds should be shaped, or you
+want external writers to
+
+428
+00:17:47,460 --> 00:17:51,880
+comment on your new manifest
+portfolio, whatever it is, you
+
+429
+00:17:51,880 --> 00:17:53,300
+usually have to go find
+these people and pay
+
+430
+00:17:53,300 --> 00:17:54,500
+them for their opinion.
+
+431
+00:17:54,500 --> 00:17:58,320
+Game developers were paying
+Mojang to give
+
+432
+00:17:58,320 --> 00:17:59,350
+their opinion to them.
+
+433
+00:17:59,350 --> 00:18:02,310
+This is a completely different
+ecosystem that gamers are
+
+434
+00:18:02,310 --> 00:18:03,560
+willing to justify.
+
+435
+00:18:03,560 --> 00:18:05,430
+I'm willing to pay you
+and tell you how to
+
+436
+00:18:05,430 --> 00:18:06,380
+make the game better.
+
+437
+00:18:06,380 --> 00:18:08,300
+That's fantastic, and the
+results show themselves.
+
+438
+00:18:08,300 --> 00:18:11,610
+In 2011, the PC and mobile game
+actually shipped, the
+
+439
+00:18:11,610 --> 00:18:12,490
+stable versions.
+
+440
+00:18:12,490 --> 00:18:14,745
+And they actually had so many
+people that loved the game and
+
+441
+00:18:14,745 --> 00:18:17,060
+did so many things, they had
+the MineCon convention.
+
+442
+00:18:17,060 --> 00:18:20,250
+How many games do you know
+actually start from nothing,
+
+443
+00:18:20,250 --> 00:18:22,310
+build a community, and actually
+have a convention
+
+444
+00:18:22,310 --> 00:18:24,020
+that ships a couple
+of years later?
+
+445
+00:18:24,020 --> 00:18:26,160
+Today, it's reported that
+Minecraft has over 9 million
+
+446
+00:18:26,160 --> 00:18:28,230
+sales and has lots of
+SKUs cross-platform.
+
+447
+00:18:28,230 --> 00:18:31,410
+This is a perfect example of
+shipping early, getting
+
+448
+00:18:31,410 --> 00:18:33,270
+feedback from users,
+and then creating a
+
+449
+00:18:33,270 --> 00:18:35,900
+success story from it.
+
+450
+00:18:35,900 --> 00:18:39,490
+Little known fact in the mobile
+ecosystem, Angry Birds
+
+451
+00:18:39,490 --> 00:18:41,970
+was actually the 30th
+game that Rovio
+
+452
+00:18:41,970 --> 00:18:43,390
+shipped in three years.
+
+453
+00:18:43,390 --> 00:18:46,030
+That's actually a great
+statistic, 30
+
+454
+00:18:46,030 --> 00:18:48,640
+games in three years.
+
+455
+00:18:48,640 --> 00:18:52,820
+What Rovio was able to do, was
+able to ship games quickly,
+
+456
+00:18:52,820 --> 00:18:56,730
+receive feedback about them
+as a unit, as a product--
+
+457
+00:18:56,730 --> 00:18:59,640
+like, they didn't have the time
+to do a full cycle and
+
+458
+00:18:59,640 --> 00:19:02,760
+say, how do you want this game
+to change, and do that for
+
+459
+00:19:02,760 --> 00:19:04,460
+three years with their
+customers.
+
+460
+00:19:04,460 --> 00:19:06,660
+They would basically make a
+product, get information, ship
+
+461
+00:19:06,660 --> 00:19:09,250
+it quickly, receive as much
+feedback as they can from
+
+462
+00:19:09,250 --> 00:19:11,890
+that, incorporate that into the
+next product that allowed
+
+463
+00:19:11,890 --> 00:19:14,710
+them to be featured once again
+in the mobile ecosystem.
+
+464
+00:19:14,710 --> 00:19:16,610
+Because that's how it works in
+mobile right now, is it's
+
+465
+00:19:16,610 --> 00:19:19,560
+easier to get a new piece of
+content featured than it is an
+
+466
+00:19:19,560 --> 00:19:21,290
+existing piece of content.
+
+467
+00:19:21,290 --> 00:19:23,430
+So for them to stay on the top
+the charts, they had to keep
+
+468
+00:19:23,430 --> 00:19:24,650
+pushing out new products.
+
+469
+00:19:24,650 --> 00:19:26,730
+And Angry Birds was the
+result of that.
+
+470
+00:19:26,730 --> 00:19:29,850
+They were able to get feedback
+and incorporate it quickly.
+
+471
+00:19:29,850 --> 00:19:32,400
+A more recent example, a game
+called Temple Run, was
+
+472
+00:19:32,400 --> 00:19:34,970
+actually the 11th game
+in four years.
+
+473
+00:19:34,970 --> 00:19:36,640
+You should be seeing
+a trend here.
+
+474
+00:19:36,640 --> 00:19:38,710
+Game developers who are shipping
+more games in the
+
+475
+00:19:38,710 --> 00:19:41,320
+mobile space are getting better
+feedback cycle with
+
+476
+00:19:41,320 --> 00:19:42,290
+their users.
+
+477
+00:19:42,290 --> 00:19:45,170
+And then game developers in
+the PC space, in the web
+
+478
+00:19:45,170 --> 00:19:47,810
+space, are able to have better
+connectivity with their users
+
+479
+00:19:47,810 --> 00:19:50,860
+and get more feedback sooner,
+allowing them to make a better
+
+480
+00:19:50,860 --> 00:19:54,060
+product over time.
+
+481
+00:19:54,060 --> 00:19:56,270
+And the cool thing is, that
+once you have the user's
+
+482
+00:19:56,270 --> 00:19:58,590
+attention, once you're able to
+distribute to them from all
+
+483
+00:19:58,590 --> 00:20:02,500
+the platforms, once you're able
+to actually get them in a
+
+484
+00:20:02,500 --> 00:20:04,900
+dialogue from you, you'll find
+it one of the most important
+
+485
+00:20:04,900 --> 00:20:07,000
+things that you can do
+is get them into
+
+486
+00:20:07,000 --> 00:20:08,080
+your product quickly.
+
+487
+00:20:08,080 --> 00:20:09,780
+And this is probably the most
+technical discussion we're
+
+488
+00:20:09,780 --> 00:20:11,770
+going to have today about
+webify your game.
+
+489
+00:20:11,770 --> 00:20:15,750
+And it's the concept
+of instant on.
+
+490
+00:20:15,750 --> 00:20:18,110
+If you read the papers about the
+internet, you should know
+
+491
+00:20:18,110 --> 00:20:22,290
+that the internet is ruled by
+a law of three seconds.
+
+492
+00:20:22,290 --> 00:20:25,080
+And that is that a user will
+abandon a website if it isn't
+
+493
+00:20:25,080 --> 00:20:26,760
+loaded in three seconds.
+
+494
+00:20:26,760 --> 00:20:29,370
+A perfect example of this, a
+long time ago, in a galaxy
+
+495
+00:20:29,370 --> 00:20:32,160
+far, far away, there was a
+company called Google who had
+
+496
+00:20:32,160 --> 00:20:33,490
+a very amazing search engine.
+
+497
+00:20:33,490 --> 00:20:36,340
+And they actually asked their
+users, would you like to see
+
+498
+00:20:36,340 --> 00:20:38,140
+more results per page?
+
+499
+00:20:38,140 --> 00:20:39,890
+Would you like 30 results
+or 10 results?
+
+500
+00:20:39,890 --> 00:20:42,540
+Overwhelmingly, of course, the
+users of the search engine
+
+501
+00:20:42,540 --> 00:20:44,520
+said, please give us 30.
+
+502
+00:20:44,520 --> 00:20:46,520
+When they implemented it and got
+all the engineering done,
+
+503
+00:20:46,520 --> 00:20:49,400
+what they found was that their
+click-through traffic actually
+
+504
+00:20:49,400 --> 00:20:51,490
+dropped about 20%.
+
+505
+00:20:51,490 --> 00:20:52,690
+And they didn't understand
+why.
+
+506
+00:20:52,690 --> 00:20:54,790
+They implemented what the users
+want, but yet they were
+
+507
+00:20:54,790 --> 00:20:55,850
+losing traffic.
+
+508
+00:20:55,850 --> 00:20:58,870
+When they went back and looked
+at everything, they noticed
+
+509
+00:20:58,870 --> 00:21:04,800
+that the extra results caused
+a half of a second delay in
+
+510
+00:21:04,800 --> 00:21:06,700
+the site loading.
+
+511
+00:21:06,700 --> 00:21:11,560
+Half a second of delay was
+resulting in 20% of the users
+
+512
+00:21:11,560 --> 00:21:13,520
+just abandoning the website.
+
+513
+00:21:13,520 --> 00:21:16,400
+The internet is a consumer's
+market.
+
+514
+00:21:16,400 --> 00:21:18,980
+They understand that
+data is everywhere.
+
+515
+00:21:18,980 --> 00:21:22,240
+And if I think that your site is
+slow, and I know that I can
+
+516
+00:21:22,240 --> 00:21:23,540
+get that data somewhere
+else, I'm just going
+
+517
+00:21:23,540 --> 00:21:24,150
+to exit your site.
+
+518
+00:21:24,150 --> 00:21:26,340
+Because I feel I can find it
+faster than waiting for your
+
+519
+00:21:26,340 --> 00:21:27,410
+slow site to load.
+
+520
+00:21:27,410 --> 00:21:28,730
+This is the rule of
+the internet.
+
+521
+00:21:28,730 --> 00:21:29,320
+It's the law.
+
+522
+00:21:29,320 --> 00:21:32,370
+And there's tons of papers that
+have shown personalities
+
+523
+00:21:32,370 --> 00:21:34,800
+and studies that reflect
+that yes, three
+
+524
+00:21:34,800 --> 00:21:37,680
+seconds is the limit.
+
+525
+00:21:37,680 --> 00:21:40,100
+Now there's a great quote that
+shows that this actually
+
+526
+00:21:40,100 --> 00:21:41,940
+affects game developers
+as well.
+
+527
+00:21:41,940 --> 00:21:44,300
+There's a great quote from
+Rich Helleman, who gave a
+
+528
+00:21:44,300 --> 00:21:47,230
+fantastic talk at New
+Game in 2011.
+
+529
+00:21:47,230 --> 00:21:50,430
+He says, "Increasingly, the
+capacity we are arguing for
+
+530
+00:21:50,430 --> 00:21:55,230
+with our customers is not their
+money, but their time."
+
+531
+00:21:55,230 --> 00:21:58,450
+Rich understands that the
+important thing to do now, in
+
+532
+00:21:58,450 --> 00:22:01,470
+the ecosystem that we're in now
+with gaming, is get the
+
+533
+00:22:01,470 --> 00:22:03,430
+user's time.
+
+534
+00:22:03,430 --> 00:22:07,340
+Because the time will
+result in the money.
+
+535
+00:22:07,340 --> 00:22:09,390
+A long time ago with console,
+the most important thing to do
+
+536
+00:22:09,390 --> 00:22:10,510
+was get the money.
+
+537
+00:22:10,510 --> 00:22:12,110
+Because then the time
+came afterwards.
+
+538
+00:22:12,110 --> 00:22:15,080
+Once I had your purchase, you
+would then spend 30 hours
+
+539
+00:22:15,080 --> 00:22:16,070
+playing my products.
+
+540
+00:22:16,070 --> 00:22:18,020
+But that was because the
+ecosystem wasn't as saturated
+
+541
+00:22:18,020 --> 00:22:19,500
+as it is today.
+
+542
+00:22:19,500 --> 00:22:22,120
+Now, game developers are
+fighting for nuances of
+
+543
+00:22:22,120 --> 00:22:25,000
+attention that the user can
+spend with their product.
+
+544
+00:22:25,000 --> 00:22:27,260
+And if they can get your
+attention and make you a user,
+
+545
+00:22:27,260 --> 00:22:29,610
+they know they can get you make
+you become a customer.
+
+546
+00:22:29,610 --> 00:22:34,670
+So now game developers have to
+respect the user's time.
+
+547
+00:22:34,670 --> 00:22:36,240
+This is a great example.
+
+548
+00:22:36,240 --> 00:22:36,850
+Anyone know this game?
+
+549
+00:22:36,850 --> 00:22:38,240
+This is Mass Effect 2.
+
+550
+00:22:38,240 --> 00:22:40,770
+Probably one of the largest
+criticisms for this game was
+
+551
+00:22:40,770 --> 00:22:43,390
+actually their elevator
+loading screens.
+
+552
+00:22:43,390 --> 00:22:46,040
+This actually had a huge
+uproar on the internet.
+
+553
+00:22:46,040 --> 00:22:47,530
+Lots of people were very
+critical of this.
+
+554
+00:22:47,530 --> 00:22:50,270
+In fact, one of the most common
+forum posts you could
+
+555
+00:22:50,270 --> 00:22:55,020
+find is, OMG, WTF, what about
+these loading screens?
+
+556
+00:22:55,020 --> 00:22:57,150
+I could go make a cheeseburger
+and come back before the next
+
+557
+00:22:57,150 --> 00:22:57,980
+level is loaded.
+
+558
+00:22:57,980 --> 00:23:01,410
+And what you saw here was a very
+negative uproar to long
+
+559
+00:23:01,410 --> 00:23:02,300
+load times.
+
+560
+00:23:02,300 --> 00:23:04,530
+Now the internet has seen the
+same thing in practice.
+
+561
+00:23:04,530 --> 00:23:07,220
+There's actually been research
+that finds that users who
+
+562
+00:23:07,220 --> 00:23:12,470
+experience slow load times for
+a website are more likely to
+
+563
+00:23:12,470 --> 00:23:15,710
+complain to their friends
+about the experience.
+
+564
+00:23:15,710 --> 00:23:19,810
+Which means that you've not
+only lost a current user.
+
+565
+00:23:19,810 --> 00:23:22,830
+You've actually lost another
+potential user who may view
+
+566
+00:23:22,830 --> 00:23:25,080
+your site as not worth
+their time.
+
+567
+00:23:25,080 --> 00:23:27,800
+In fact, the uproar for Mass
+Effect was so large, a very
+
+568
+00:23:27,800 --> 00:23:32,200
+popular web game comic blog--
+
+569
+00:23:32,200 --> 00:23:33,030
+blogish--
+
+570
+00:23:33,030 --> 00:23:34,550
+I don't even know how they even
+
+571
+00:23:34,550 --> 00:23:35,520
+define themselves anymore.
+
+572
+00:23:35,520 --> 00:23:38,380
+Anyhow, Penny Arcade did a
+comic on this, where they
+
+573
+00:23:38,380 --> 00:23:42,170
+basically said, this alien
+civilization has died from the
+
+574
+00:23:42,170 --> 00:23:44,020
+ecosystem and I don't
+know what happened,
+
+575
+00:23:44,020 --> 00:23:45,010
+but I have an idea.
+
+576
+00:23:45,010 --> 00:23:47,560
+It's probably because they all
+died in the elevators waiting
+
+577
+00:23:47,560 --> 00:23:48,760
+to go from floor to floor.
+
+578
+00:23:48,760 --> 00:23:50,650
+And basically what happened is,
+for all the people who had
+
+579
+00:23:50,650 --> 00:23:53,360
+never played Mass Effect 2,
+and this was the only
+
+580
+00:23:53,360 --> 00:23:57,770
+experience they got was Penny
+Arcade saying, whoa, the load
+
+581
+00:23:57,770 --> 00:24:00,070
+times are too long, there was
+a whole pool of customers
+
+582
+00:24:00,070 --> 00:24:02,530
+who've now been negatively
+influenced simply
+
+583
+00:24:02,530 --> 00:24:04,682
+because of load time.
+
+584
+00:24:04,682 --> 00:24:07,330
+And it's important to understand
+that load time is a
+
+585
+00:24:07,330 --> 00:24:09,270
+technical problem.
+
+586
+00:24:09,270 --> 00:24:10,590
+It's not necessarily
+a design problem.
+
+587
+00:24:10,590 --> 00:24:13,150
+Design can hide the technical
+limitations.
+
+588
+00:24:13,150 --> 00:24:15,240
+But in reality, what you're
+doing is you're fighting
+
+589
+00:24:15,240 --> 00:24:16,190
+through multiple stages here.
+
+590
+00:24:16,190 --> 00:24:19,210
+First off, you've got some
+medium, be it compact disc or
+
+591
+00:24:19,210 --> 00:24:21,430
+actually hard drive, that needs
+to get transferred into
+
+592
+00:24:21,430 --> 00:24:24,390
+memory, and that's typically
+limited by the transfer rates
+
+593
+00:24:24,390 --> 00:24:25,850
+of the medium to memory.
+
+594
+00:24:25,850 --> 00:24:27,820
+And then from the memory, you've
+got to get it back over
+
+595
+00:24:27,820 --> 00:24:30,300
+the GPU, if you're doing any
+sort of rendering, or even
+
+596
+00:24:30,300 --> 00:24:33,110
+just transform the data into
+some form that your system is
+
+597
+00:24:33,110 --> 00:24:33,760
+going to use.
+
+598
+00:24:33,760 --> 00:24:37,190
+So loading up a binary trees, or
+spatial hierarchies, or A*
+
+599
+00:24:37,190 --> 00:24:38,020
+path finding.
+
+600
+00:24:38,020 --> 00:24:39,890
+All that data has got
+to be processed.
+
+601
+00:24:39,890 --> 00:24:42,180
+And so for you to have something
+like instant load
+
+602
+00:24:42,180 --> 00:24:43,870
+times, to get your product
+to actually load in three
+
+603
+00:24:43,870 --> 00:24:47,370
+seconds, you have to optimize
+each one of these scenarios
+
+604
+00:24:47,370 --> 00:24:49,060
+independently.
+
+605
+00:24:49,060 --> 00:24:50,890
+Another great example is a
+game called Half-Life.
+
+606
+00:24:50,890 --> 00:24:53,710
+This was probably one of the
+first that came to the table
+
+607
+00:24:53,710 --> 00:24:55,140
+with a unique solution.
+
+608
+00:24:55,140 --> 00:24:57,110
+So for those of you who've
+played Half-Life and the
+
+609
+00:24:57,110 --> 00:24:58,190
+series sort of following--
+
+610
+00:24:58,190 --> 00:25:00,280
+Half-Life 2, and Left 4 Dead,
+and all those other ones--
+
+611
+00:25:00,280 --> 00:25:02,700
+you'll notice that at the end
+of a level, you'll typically
+
+612
+00:25:02,700 --> 00:25:06,920
+have about 400 foot worth of
+additional space for you just
+
+613
+00:25:06,920 --> 00:25:07,620
+kind of run.
+
+614
+00:25:07,620 --> 00:25:09,460
+There's no monsters there, you
+don't know what's going on.
+
+615
+00:25:09,460 --> 00:25:10,720
+You're just jumping over
+some creates and
+
+616
+00:25:10,720 --> 00:25:11,920
+running up some ladders.
+
+617
+00:25:11,920 --> 00:25:13,730
+But then all of the sudden
+you'll see this screen, which
+
+618
+00:25:13,730 --> 00:25:15,240
+is that little loading blip.
+
+619
+00:25:15,240 --> 00:25:18,090
+And that loading blip will come
+on and then disappear.
+
+620
+00:25:18,090 --> 00:25:21,160
+What the artists and designers
+and programmers at Valve were
+
+621
+00:25:21,160 --> 00:25:23,800
+able to do was actually add
+extra geometry into the
+
+622
+00:25:23,800 --> 00:25:24,600
+environment.
+
+623
+00:25:24,600 --> 00:25:26,300
+And when you would hit a
+specific trigger point, they
+
+624
+00:25:26,300 --> 00:25:29,570
+would be able to start loading
+in the next level of content
+
+625
+00:25:29,570 --> 00:25:32,280
+while you're running through
+these extra 400 foot.
+
+626
+00:25:32,280 --> 00:25:34,680
+The result was that you would
+only see that loading blip for
+
+627
+00:25:34,680 --> 00:25:36,570
+a very small amount of time.
+
+628
+00:25:36,570 --> 00:25:38,830
+Rather than having to go through
+a full level load,
+
+629
+00:25:38,830 --> 00:25:40,880
+they were able to predict what
+you're going to do and how
+
+630
+00:25:40,880 --> 00:25:42,990
+you're going to do it, and
+start the stream earlier.
+
+631
+00:25:42,990 --> 00:25:46,350
+Because they knew that the
+medium of getting from disk to
+
+632
+00:25:46,350 --> 00:25:48,240
+memory was the slow part,
+and that they could
+
+633
+00:25:48,240 --> 00:25:50,580
+hide it with design.
+
+634
+00:25:50,580 --> 00:25:53,390
+So the question we have overall
+in instant on is can
+
+635
+00:25:53,390 --> 00:25:55,950
+your load times be under
+three seconds?
+
+636
+00:25:55,950 --> 00:26:00,050
+Can the gaming community as a
+whole adopt this feature of
+
+637
+00:26:00,050 --> 00:26:00,760
+the internet?
+
+638
+00:26:00,760 --> 00:26:03,290
+Can your game be instant on?
+
+639
+00:26:03,290 --> 00:26:06,750
+And what I'm not talking about
+here is instant on only from
+
+640
+00:26:06,750 --> 00:26:07,790
+disk to memory.
+
+641
+00:26:07,790 --> 00:26:10,410
+So if you're actually doing
+digital distribution, and the
+
+642
+00:26:10,410 --> 00:26:12,930
+user goes in purchases your
+content, they're going to have
+
+643
+00:26:12,930 --> 00:26:14,930
+to wait around for your content
+to be downloaded.
+
+644
+00:26:14,930 --> 00:26:17,660
+I'm not talking about instant
+on after this point.
+
+645
+00:26:17,660 --> 00:26:20,340
+I'm talking about instant on
+from the user saying, buy,
+
+646
+00:26:20,340 --> 00:26:23,440
+thank you, or clicking a link,
+or getting a referral, or
+
+647
+00:26:23,440 --> 00:26:26,140
+having the ability to access
+your content for the very
+
+648
+00:26:26,140 --> 00:26:29,700
+first time, all the way
+to actually being
+
+649
+00:26:29,700 --> 00:26:30,260
+able to play it.
+
+650
+00:26:30,260 --> 00:26:32,620
+Can they do that in
+three seconds?
+
+651
+00:26:32,620 --> 00:26:36,190
+Now if you're not getting your
+product to your user through a
+
+652
+00:26:36,190 --> 00:26:39,835
+digital distribution platform,
+then really, the avenue that
+
+653
+00:26:39,835 --> 00:26:42,900
+you have to look at is how you
+can get content to your users
+
+654
+00:26:42,900 --> 00:26:44,940
+through the internet.
+
+655
+00:26:44,940 --> 00:26:48,970
+You'll notice each one of these
+arrows has already a ton
+
+656
+00:26:48,970 --> 00:26:50,990
+of literature out there on how
+you can optimize that, how you
+
+657
+00:26:50,990 --> 00:26:53,040
+can make load times from disk
+to memory faster, and memory
+
+658
+00:26:53,040 --> 00:26:54,940
+to GPU, et cetera, et
+cetera, et cetera.
+
+659
+00:26:54,940 --> 00:26:57,740
+But what really hasn't been
+talked about, because it's not
+
+660
+00:26:57,740 --> 00:27:00,450
+been really conquered yet,
+is how you can increase--
+
+661
+00:27:00,450 --> 00:27:02,540
+or decrease load times from
+internet to memory.
+
+662
+00:27:02,540 --> 00:27:04,270
+So let's talk about
+that for a second.
+
+663
+00:27:04,270 --> 00:27:07,180
+So let's say you have a user who
+sits in the United States
+
+664
+00:27:07,180 --> 00:27:08,630
+and he wants a piece
+of content.
+
+665
+00:27:08,630 --> 00:27:11,970
+Well, that content will be on
+some server, sitting in some
+
+666
+00:27:11,970 --> 00:27:14,580
+basement of some dude's house,
+and that content can be
+
+667
+00:27:14,580 --> 00:27:16,690
+shipped to them over
+the inter-tubes.
+
+668
+00:27:16,690 --> 00:27:20,180
+The issue is, once the user ends
+up far, far away, that
+
+669
+00:27:20,180 --> 00:27:22,580
+the ability to get that content
+quickly diminishes.
+
+670
+00:27:22,580 --> 00:27:24,210
+And this is because
+of two factors,
+
+671
+00:27:24,210 --> 00:27:25,850
+bandwidth and latency.
+
+672
+00:27:25,850 --> 00:27:28,130
+Now, bandwidth is typically
+what you pay for when you
+
+673
+00:27:28,130 --> 00:27:29,940
+actually go to your internet
+service provider.
+
+674
+00:27:29,940 --> 00:27:32,120
+They usually have some sort of
+package system, and they limit
+
+675
+00:27:32,120 --> 00:27:34,150
+it based upon throttling
+all these other things.
+
+676
+00:27:34,150 --> 00:27:37,120
+But what they're talking about
+is buying bandwidth.
+
+677
+00:27:37,120 --> 00:27:39,620
+The second problem, latency,
+you actually can't
+
+678
+00:27:39,620 --> 00:27:40,950
+control that much.
+
+679
+00:27:40,950 --> 00:27:44,790
+Latency, or the speed of
+latency, is actually limited
+
+680
+00:27:44,790 --> 00:27:47,870
+by physics, which is actually
+limited by how fast light can
+
+681
+00:27:47,870 --> 00:27:49,270
+travel over time--
+
+682
+00:27:49,270 --> 00:27:50,330
+or over distance.
+
+683
+00:27:50,330 --> 00:27:55,530
+Which means that even though
+you are buying 100 million
+
+684
+00:27:55,530 --> 00:27:58,390
+speed connection in America and
+they have hundred million
+
+685
+00:27:58,390 --> 00:28:01,510
+speed connection in Australia,
+that data this is going to hit
+
+686
+00:28:01,510 --> 00:28:02,970
+a limit on how fast you
+can get to those
+
+687
+00:28:02,970 --> 00:28:04,940
+guys across the globe.
+
+688
+00:28:04,940 --> 00:28:08,070
+How this is fixed is by
+duplicating that data.
+
+689
+00:28:08,070 --> 00:28:10,240
+So rather than allowing that
+data to sit only one server,
+
+690
+00:28:10,240 --> 00:28:12,770
+you allow it to be duplicated
+in Australia so that it can
+
+691
+00:28:12,770 --> 00:28:15,020
+actually get to that
+user much quicker.
+
+692
+00:28:15,020 --> 00:28:17,990
+Now this concept is actually
+duplicated in a lot of places.
+
+693
+00:28:17,990 --> 00:28:20,760
+And you can actually see that by
+duplicating the data across
+
+694
+00:28:20,760 --> 00:28:23,510
+many data centers, you can get
+it to users all over the world
+
+695
+00:28:23,510 --> 00:28:24,210
+very quickly.
+
+696
+00:28:24,210 --> 00:28:26,720
+Now this is at its
+core a content
+
+697
+00:28:26,720 --> 00:28:28,900
+delivery network, or CDN.
+
+698
+00:28:28,900 --> 00:28:31,000
+This is sort of the backbone of
+the internet, the ability
+
+699
+00:28:31,000 --> 00:28:32,910
+to distribute content to people
+quickly because it's
+
+700
+00:28:32,910 --> 00:28:34,340
+duplicated in lots of places.
+
+701
+00:28:34,340 --> 00:28:36,410
+So as a developer, if you want
+to get your content, and
+
+702
+00:28:36,410 --> 00:28:39,300
+you're selling it worldwide, if
+you're selling your game,
+
+703
+00:28:39,300 --> 00:28:41,270
+you need to make sure that
+you're using CDNs to
+
+704
+00:28:41,270 --> 00:28:42,950
+distribute your content.
+
+705
+00:28:42,950 --> 00:28:45,010
+Now there's some interesting
+properties with this.
+
+706
+00:28:45,010 --> 00:28:46,060
+Let's talk about load
+times again.
+
+707
+00:28:46,060 --> 00:28:48,090
+So let's say the you're a AAA
+game, and you have one
+
+708
+00:28:48,090 --> 00:28:49,660
+gigabyte of content.
+
+709
+00:28:49,660 --> 00:28:51,630
+That's actually going to take
+about seven minutes to
+
+710
+00:28:51,630 --> 00:28:54,530
+transfer on a 20 megabits
+per second connection.
+
+711
+00:28:54,530 --> 00:28:56,720
+So if you've got one gig, you
+want to get it to a user,
+
+712
+00:28:56,720 --> 00:28:58,240
+that's seven minutes of their
+time that they're going to
+
+713
+00:28:58,240 --> 00:28:59,760
+have to sit around and wait.
+
+714
+00:28:59,760 --> 00:29:02,750
+So if you assume, just naively,
+that that one
+
+715
+00:29:02,750 --> 00:29:05,040
+gigabyte is uncompressed, then
+your first step to say is,
+
+716
+00:29:05,040 --> 00:29:07,290
+hey, well, what if we just
+simply compressed this data?
+
+717
+00:29:07,290 --> 00:29:09,460
+How fast we get the user?
+
+718
+00:29:09,460 --> 00:29:11,280
+Gzip is a very standard
+compression.
+
+719
+00:29:11,280 --> 00:29:13,990
+It's supported by most web
+servers as well as web
+
+720
+00:29:13,990 --> 00:29:16,395
+browsers, and the zlib
+library, and
+
+721
+00:29:16,395 --> 00:29:17,220
+lots of other things.
+
+722
+00:29:17,220 --> 00:29:19,880
+That will actually take a given
+set of one gigabyte
+
+723
+00:29:19,880 --> 00:29:23,190
+content and get down to
+about 330 megabytes.
+
+724
+00:29:23,190 --> 00:29:26,370
+That 330 megs will take about
+two minutes and 12 seconds to
+
+725
+00:29:26,370 --> 00:29:28,350
+transfer and decompress.
+
+726
+00:29:28,350 --> 00:29:30,720
+Because we have to take into
+account the time to actually
+
+727
+00:29:30,720 --> 00:29:32,570
+decompress the data.
+
+728
+00:29:32,570 --> 00:29:34,050
+Now, that's fine.
+
+729
+00:29:34,050 --> 00:29:35,370
+That's great, but can
+we get lower?
+
+730
+00:29:35,370 --> 00:29:37,930
+If you look at the internet,
+there's actually some new
+
+731
+00:29:37,930 --> 00:29:40,550
+cutting edge compression
+algorithms out there.
+
+732
+00:29:40,550 --> 00:29:43,720
+One of them, probably my
+favorite, is one called LZHAM.
+
+733
+00:29:43,720 --> 00:29:46,170
+That will actually take that
+same one gig of data and get
+
+734
+00:29:46,170 --> 00:29:48,740
+it down to about 204 megabytes,
+which reduces your
+
+735
+00:29:48,740 --> 00:29:50,825
+transfer time and decompression
+time to one
+
+736
+00:29:50,825 --> 00:29:52,530
+minute and 18 seconds.
+
+737
+00:29:52,530 --> 00:29:53,270
+Now this is good, right?
+
+738
+00:29:53,270 --> 00:29:55,160
+We're starting to see that as
+your data gets compressed,
+
+739
+00:29:55,160 --> 00:29:57,310
+more can come to the
+user faster.
+
+740
+00:29:57,310 --> 00:30:00,030
+Let's take a look at another
+thing, using CDNs.
+
+741
+00:30:00,030 --> 00:30:02,950
+There's an implicit cost
+with using a CDN.
+
+742
+00:30:02,950 --> 00:30:05,300
+So let's say that you've
+got some super
+
+743
+00:30:05,300 --> 00:30:06,410
+successful web game.
+
+744
+00:30:06,410 --> 00:30:09,570
+And let's say at your best,
+you're doing about 3.4 million
+
+745
+00:30:09,570 --> 00:30:11,870
+unique users a day.
+
+746
+00:30:11,870 --> 00:30:13,870
+These are people that have
+never seen your content
+
+747
+00:30:13,870 --> 00:30:16,800
+before, coming to your content
+for the very first time, and
+
+748
+00:30:16,800 --> 00:30:17,880
+receiving your content.
+
+749
+00:30:17,880 --> 00:30:20,440
+Now obviously, this is a worst
+case scenario, because if you
+
+750
+00:30:20,440 --> 00:30:24,260
+get 3.4 million users every day
+coming to your game, you
+
+751
+00:30:24,260 --> 00:30:26,720
+probably don't care about
+transfer times.
+
+752
+00:30:26,720 --> 00:30:27,950
+So that's a separate
+discussion.
+
+753
+00:30:27,950 --> 00:30:30,100
+So if you're actually
+transferring 3.4 million users
+
+754
+00:30:30,100 --> 00:30:33,500
+a day, one gigabyte of data is
+actually going to cost you
+
+755
+00:30:33,500 --> 00:30:37,610
+about $9,600 to get that
+data to those users
+
+756
+00:30:37,610 --> 00:30:39,120
+every single day.
+
+757
+00:30:39,120 --> 00:30:41,620
+With compression with gzip,
+that actually cuts down to
+
+758
+00:30:41,620 --> 00:30:43,360
+about $2,900.
+
+759
+00:30:43,360 --> 00:30:47,040
+So you see the number of bits
+crossing the wire reduced,
+
+760
+00:30:47,040 --> 00:30:49,840
+reduce the cost involved with
+distributing that content.
+
+761
+00:30:49,840 --> 00:30:52,280
+And of course, LZHAM then cuts
+it down even further, getting
+
+762
+00:30:52,280 --> 00:30:54,940
+you to about $1,900 a day.
+
+763
+00:30:54,940 --> 00:30:58,120
+So that's actually still a lot
+of data and a lot of cost.
+
+764
+00:30:58,120 --> 00:31:00,440
+If you have 3.4 million users,
+you have to actually take a
+
+765
+00:31:00,440 --> 00:31:05,420
+look and say, do we need to ship
+one gigabyte to a user
+
+766
+00:31:05,420 --> 00:31:08,020
+before they're allowed to see
+a pixel on the screen?
+
+767
+00:31:08,020 --> 00:31:09,710
+I'm sure if you look at your
+assets and you look at your
+
+768
+00:31:09,710 --> 00:31:11,820
+design, you'll find that that's
+not actually the case.
+
+769
+00:31:11,820 --> 00:31:14,490
+You could probably actually get
+a much smaller subset to
+
+770
+00:31:14,490 --> 00:31:16,800
+your users, allow them to see
+the content quickly, and then
+
+771
+00:31:16,800 --> 00:31:18,630
+stream in the rest
+of background.
+
+772
+00:31:18,630 --> 00:31:20,910
+Which is the concept of, you
+should only be sending to
+
+773
+00:31:20,910 --> 00:31:22,690
+users what they need.
+
+774
+00:31:22,690 --> 00:31:24,850
+What's the minimal amount of
+data you can send to them?
+
+775
+00:31:24,850 --> 00:31:26,760
+Especially if you're
+paying for it.
+
+776
+00:31:26,760 --> 00:31:29,050
+If you have a user who's not
+paying for your content--
+
+777
+00:31:29,050 --> 00:31:31,970
+let's say you have a freemium
+app, or there's a trial
+
+778
+00:31:31,970 --> 00:31:33,350
+application or something
+like that.
+
+779
+00:31:33,350 --> 00:31:36,760
+These users are connecting to
+your servers, downloading your
+
+780
+00:31:36,760 --> 00:31:39,200
+data, and you're paying for that
+transfer for someone who
+
+781
+00:31:39,200 --> 00:31:40,120
+may not be paying to you.
+
+782
+00:31:40,120 --> 00:31:42,070
+And so you want to minimize the
+amount of data that they
+
+783
+00:31:42,070 --> 00:31:44,480
+receive that comes out
+of your pocket.
+
+784
+00:31:44,480 --> 00:31:46,090
+There's a great example
+of this, a
+
+785
+00:31:46,090 --> 00:31:48,050
+very successful example.
+
+786
+00:31:48,050 --> 00:31:48,980
+I hope you all know it.
+
+787
+00:31:48,980 --> 00:31:50,680
+It's called World of Warcraft.
+
+788
+00:31:50,680 --> 00:31:54,680
+World of Warcraft came out with
+a great streaming demo a
+
+789
+00:31:54,680 --> 00:31:56,480
+while ago, called Try WoW.
+
+790
+00:31:56,480 --> 00:31:59,290
+And what Try WoW did, was
+effectively bundle the first
+
+791
+00:31:59,290 --> 00:32:02,570
+25 megabytes of the World of
+Warcraft experience into a
+
+792
+00:32:02,570 --> 00:32:04,930
+single package, a single
+executable, that the user
+
+793
+00:32:04,930 --> 00:32:08,960
+could download very quickly on
+a 20 megabits per second pipe
+
+794
+00:32:08,960 --> 00:32:10,650
+that actually came down around
+10 seconds or so.
+
+795
+00:32:10,650 --> 00:32:13,040
+And then after that, while the
+user was configuring their
+
+796
+00:32:13,040 --> 00:32:14,910
+character and learning a little
+bit about the game,
+
+797
+00:32:14,910 --> 00:32:19,090
+they were actually streaming in
+the next 20 hours or so of
+
+798
+00:32:19,090 --> 00:32:21,560
+gameplay and caching it
+locally on the disk.
+
+799
+00:32:21,560 --> 00:32:25,270
+So the user only actually had
+to grab 25 megs first, then
+
+800
+00:32:25,270 --> 00:32:26,380
+they could start playing
+the game.
+
+801
+00:32:26,380 --> 00:32:28,310
+And then as they started
+progressing and experiencing
+
+802
+00:32:28,310 --> 00:32:31,140
+more content, they would get the
+larger and larger pieces
+
+803
+00:32:31,140 --> 00:32:32,590
+of content coming down.
+
+804
+00:32:32,590 --> 00:32:35,400
+This allowed the developer of
+World of Warcraft to kind of
+
+805
+00:32:35,400 --> 00:32:38,160
+balance what content came
+through the pipe, how much
+
+806
+00:32:38,160 --> 00:32:42,080
+cost did it take them to acquire
+a new user, how much
+
+807
+00:32:42,080 --> 00:32:43,860
+they were losing to people who
+were trying to game but not
+
+808
+00:32:43,860 --> 00:32:45,390
+actually purchasing of the
+content, et cetera.
+
+809
+00:32:45,390 --> 00:32:47,630
+They had lot more data because
+they were segmenting the
+
+810
+00:32:47,630 --> 00:32:49,540
+content properly.
+
+811
+00:32:49,540 --> 00:32:52,390
+So now if we assume that
+204 megs that LZHAM was
+
+812
+00:32:52,390 --> 00:32:55,030
+compressing our gig to, and we
+tried to bundle it up like
+
+813
+00:32:55,030 --> 00:32:58,020
+this-- let's say 24 megs went
+to two million users a day,
+
+814
+00:32:58,020 --> 00:33:01,410
+and 172 of that megs one to
+1.4 million users a day.
+
+815
+00:33:01,410 --> 00:33:03,840
+This actually changes your
+scale and your cost quite
+
+816
+00:33:03,840 --> 00:33:04,700
+significantly.
+
+817
+00:33:04,700 --> 00:33:09,450
+The 24 meg is actually going
+to cost you $132 a day.
+
+818
+00:33:09,450 --> 00:33:12,890
+And then you're going to pay
+around $700 for the 172 megs.
+
+819
+00:33:12,890 --> 00:33:16,210
+The total is about half of
+what you were paying by
+
+820
+00:33:16,210 --> 00:33:18,000
+sending a gig to every user.
+
+821
+00:33:18,000 --> 00:33:19,640
+And this is a very successful
+strategy.
+
+822
+00:33:19,640 --> 00:33:22,720
+It allows you to also understand
+your content and
+
+823
+00:33:22,720 --> 00:33:23,410
+the deeper level.
+
+824
+00:33:23,410 --> 00:33:26,370
+It lets you care about what your
+users are experiencing,
+
+825
+00:33:26,370 --> 00:33:29,850
+how they're experiencing, and
+what data is needed from your
+
+826
+00:33:29,850 --> 00:33:32,640
+studio to get them the right
+vision of your message.
+
+827
+00:33:32,640 --> 00:33:36,400
+It's like taking a blog and
+compressing into 140 bytes, or
+
+828
+00:33:36,400 --> 00:33:37,800
+140 characters, so
+you can get your
+
+829
+00:33:37,800 --> 00:33:39,940
+message out to the people.
+
+830
+00:33:39,940 --> 00:33:42,300
+Now there's a great game that
+goes even further than this.
+
+831
+00:33:42,300 --> 00:33:44,130
+It's a game called Realm
+of the Mad God.
+
+832
+00:33:44,130 --> 00:33:44,890
+Hopefully you've played it.
+
+833
+00:33:44,890 --> 00:33:46,750
+It's a fantastic product
+that's up on the web.
+
+834
+00:33:46,750 --> 00:33:49,090
+And because it's a web game,
+these guys have actually
+
+835
+00:33:49,090 --> 00:33:50,880
+optimized in a different
+direction.
+
+836
+00:33:50,880 --> 00:33:55,020
+Their entire game
+is 1.29 megs.
+
+837
+00:33:55,020 --> 00:33:56,180
+That's the whole product.
+
+838
+00:33:56,180 --> 00:34:00,460
+Effectively it's a fantasy
+MMO shooter online.
+
+839
+00:34:00,460 --> 00:34:02,380
+So you've got tons of people
+shooting bullets at each other
+
+840
+00:34:02,380 --> 00:34:03,230
+and dodging.
+
+841
+00:34:03,230 --> 00:34:04,200
+It's really cool.
+
+842
+00:34:04,200 --> 00:34:06,930
+The point is that with that 1.29
+megs, if they distribute
+
+843
+00:34:06,930 --> 00:34:09,139
+that to 3.4 million unique
+users a day,
+
+844
+00:34:09,139 --> 00:34:11,610
+that costs them $12.
+
+845
+00:34:11,610 --> 00:34:14,580
+So they've taken a very unique
+approach to the problem.
+
+846
+00:34:14,580 --> 00:34:19,880
+How small can we make this
+product, because load times
+
+847
+00:34:19,880 --> 00:34:21,360
+matter on the internet.
+
+848
+00:34:21,360 --> 00:34:24,610
+It takes about 1.3 seconds to
+transfer and boot up Realm of
+
+849
+00:34:24,610 --> 00:34:26,300
+the Mad God the first time
+you've played it.
+
+850
+00:34:26,300 --> 00:34:28,969
+And if 3.4 million users are
+getting that content every
+
+851
+00:34:28,969 --> 00:34:31,170
+day, it only costs
+the developer $12
+
+852
+00:34:31,170 --> 00:34:32,500
+to ship that content.
+
+853
+00:34:32,500 --> 00:34:35,989
+This is a great intersection
+point of understanding
+
+854
+00:34:35,989 --> 00:34:38,989
+transfer time plus
+cost ratios.
+
+855
+00:34:38,989 --> 00:34:41,110
+And this is where you're going
+to have to start optimizing as
+
+856
+00:34:41,110 --> 00:34:42,250
+game developers.
+
+857
+00:34:42,250 --> 00:34:44,570
+If you want your content to be
+available outside of the
+
+858
+00:34:44,570 --> 00:34:46,469
+digital distribution platforms
+that you have today, so that
+
+859
+00:34:46,469 --> 00:34:49,340
+you can have a deeper, richer
+conversation with your
+
+860
+00:34:49,340 --> 00:34:52,139
+consumers, you can get feedback
+with them earlier,
+
+861
+00:34:52,139 --> 00:34:54,400
+you need the ability to have
+your game load quickly and the
+
+862
+00:34:54,400 --> 00:34:57,240
+cost of scales involved with
+that are minimized.
+
+863
+00:34:57,240 --> 00:34:59,080
+There's a great quote, and
+I'll leave you with this.
+
+864
+00:34:59,080 --> 00:35:03,250
+"It is not the strongest of the
+species that survives, nor
+
+865
+00:35:03,250 --> 00:35:05,460
+the most intelligent, but the
+one most responsive to
+
+866
+00:35:05,460 --> 00:35:08,400
+change." This is a great
+quote about evolution.
+
+867
+00:35:08,400 --> 00:35:11,040
+What we're seeing in the games
+industry right now is a very
+
+868
+00:35:11,040 --> 00:35:12,470
+evolution-based moment.
+
+869
+00:35:12,470 --> 00:35:15,130
+We've got tons and tons of
+little organisms out there all
+
+870
+00:35:15,130 --> 00:35:18,000
+fighting for life, trying to
+stay stable, trying to create
+
+871
+00:35:18,000 --> 00:35:19,910
+their own little niches
+and ecosystems.
+
+872
+00:35:19,910 --> 00:35:22,360
+And some will survive,
+and some won't.
+
+873
+00:35:22,360 --> 00:35:25,670
+Your product, your game, your
+studio, in order to be
+
+874
+00:35:25,670 --> 00:35:30,410
+responsive to last out this time
+of change, you need to be
+
+875
+00:35:30,410 --> 00:35:33,050
+willing to adopt new
+technologies, new standards of
+
+876
+00:35:33,050 --> 00:35:35,810
+development, and think in new
+ways to reach your customer.
+
+877
+00:35:35,810 --> 00:35:39,030
+And that is the basis of
+webifying your game.
+
+878
+00:35:39,030 --> 00:35:40,060
+Thank you so much
+for your time.
+
+879
+00:35:40,060 --> 00:35:41,020
+I appreciate it.
+
+880
+00:35:41,020 --> 00:35:44,020
+We'll go to questions here
+in a minute, once they
+
+881
+00:35:44,020 --> 00:35:44,720
+kill the live feed.
+
+882
+00:35:44,720 --> 00:35:46,010
+Again, I'm Colt McAnlis.
+
+883
+00:35:46,010 --> 00:35:47,280
+This is how you get
+a hold of me.
+
+884
+00:35:47,280 --> 00:35:48,560
+Go, webify your game.
+
+885
+00:35:48,560 --> 00:35:49,360
+Make things awesome.
+
+886
+00:35:49,360 --> 00:35:50,610
+Thank you very much.
+
+887
+00:35:50,610 --> 00:36:07,333
+

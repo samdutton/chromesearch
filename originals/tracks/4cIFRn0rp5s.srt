@@ -1,0 +1,6609 @@
+1
+00:00:00,000 --> 00:01:01,377
+[MUSIC PLAYING]
+
+2
+00:01:01,377 --> 00:01:03,260
+MALE SPEAKER: Shanghai
+GDG is a very
+
+3
+00:01:03,260 --> 00:01:05,340
+interesting developer community.
+
+4
+00:01:05,340 --> 00:01:06,180
+FEMALE SPEAKER: I'm
+glad somebody
+
+5
+00:01:06,180 --> 00:01:07,930
+has asked this question.
+
+6
+00:01:07,930 --> 00:01:08,590
+MALE SPEAKER: This is where
+the magic happens.
+
+7
+00:01:08,590 --> 00:01:09,880
+FEMALE SPEAKER: This is
+primarily a question and
+
+8
+00:01:09,880 --> 00:01:10,450
+answer show.
+
+9
+00:01:10,450 --> 00:01:12,800
+So if any of you out there would
+like to ask questions--
+
+10
+00:01:12,800 --> 00:01:21,481
+
+11
+00:01:21,481 --> 00:01:22,275
+PAUL KINLAN: Hi everyone.
+
+12
+00:01:22,275 --> 00:01:26,190
+I'm Paul Kinlan, and welcome to
+our fourth installment of
+
+13
+00:01:26,190 --> 00:01:30,005
+the Chrome Apps weekly
+roundup of all
+
+14
+00:01:30,005 --> 00:01:31,740
+things latest and greatest.
+
+15
+00:01:31,740 --> 00:01:34,980
+This week is about file
+storage APIs.
+
+16
+00:01:34,980 --> 00:01:37,280
+We are actually missing the most
+important person at the
+
+17
+00:01:37,280 --> 00:01:38,210
+Hangout at the moment.
+
+18
+00:01:38,210 --> 00:01:39,120
+PAUL LEWIS: We are?
+
+19
+00:01:39,120 --> 00:01:41,370
+PAUL KINLAN: So he'll be
+here soon, we hope.
+
+20
+00:01:41,370 --> 00:01:42,760
+But anyway, I'd like to
+introduce myself.
+
+21
+00:01:42,760 --> 00:01:43,590
+I'm Paul Kinlan.
+
+22
+00:01:43,590 --> 00:01:46,710
+I'm a developer advocate at
+Google, and I'm working on the
+
+23
+00:01:46,710 --> 00:01:48,950
+Chrome Apps project to kind
+of help to get developers
+
+24
+00:01:48,950 --> 00:01:51,527
+interested, excited, and learn
+more about the platform that
+
+25
+00:01:51,527 --> 00:01:53,030
+we're building to Chrome.
+
+26
+00:01:53,030 --> 00:01:54,840
+And I would like to introduce
+Paul Lewis.
+
+27
+00:01:54,840 --> 00:01:56,340
+PAUL LEWIS: Oh, as you
+said, I'm Paul Lewis.
+
+28
+00:01:56,340 --> 00:01:58,690
+I'm a developer programs
+engineer here at Google.
+
+29
+00:01:58,690 --> 00:02:01,620
+I'm also on the Chrome Apps
+team, and I write tutorial
+
+30
+00:02:01,620 --> 00:02:05,100
+samples, and help the developers
+build their apps.
+
+31
+00:02:05,100 --> 00:02:07,060
+PAUL KINLAN: Generally kick
+ass web [INAUDIBLE] stuff.
+
+32
+00:02:07,060 --> 00:02:08,505
+PAUL LEWIS: That's
+also what I do.
+
+33
+00:02:08,505 --> 00:02:08,770
+PAUL KINLAN: Yeah.
+
+34
+00:02:08,770 --> 00:02:09,490
+PAUL LEWIS: Or what
+I try to do.
+
+35
+00:02:09,490 --> 00:02:10,850
+PAUL KINLAN: Yeah, it's
+kind of cool.
+
+36
+00:02:10,850 --> 00:02:12,350
+As you can tell, we're both
+English, but we're
+
+37
+00:02:12,350 --> 00:02:14,570
+broadcasting from
+Mountain View.
+
+38
+00:02:14,570 --> 00:02:16,126
+So it's kind of weird.
+
+39
+00:02:16,126 --> 00:02:17,280
+We're all in weird time zones.
+
+40
+00:02:17,280 --> 00:02:18,240
+It's crazy.
+
+41
+00:02:18,240 --> 00:02:19,550
+And on our Hangout--
+
+42
+00:02:19,550 --> 00:02:21,780
+I hope we can speak to them OK,
+but on our Hangout, we've
+
+43
+00:02:21,780 --> 00:02:23,800
+got Renato.
+
+44
+00:02:23,800 --> 00:02:24,500
+RENATO MANGINI: Hello.
+
+45
+00:02:24,500 --> 00:02:26,070
+I am Renato Mangini.
+
+46
+00:02:26,070 --> 00:02:31,180
+I am speaking from Brazil, and
+I also am a Chrome developer,
+
+47
+00:02:31,180 --> 00:02:35,360
+engineer, for the Developer
+Relations Team.
+
+48
+00:02:35,360 --> 00:02:39,040
+Yeah, and that's cool.
+
+49
+00:02:39,040 --> 00:02:39,440
+PAUL KINLAN: All right.
+
+50
+00:02:39,440 --> 00:02:41,010
+Awesome.
+
+51
+00:02:41,010 --> 00:02:41,380
+Cool.
+
+52
+00:02:41,380 --> 00:02:44,700
+So We are waiting for one more
+person, Eric Bidelman.
+
+53
+00:02:44,700 --> 00:02:48,680
+He's our developer relations
+guru for file system API.
+
+54
+00:02:48,680 --> 00:02:50,660
+I believe he has a book
+as well, about
+
+55
+00:02:50,660 --> 00:02:52,390
+the file system API.
+
+56
+00:02:52,390 --> 00:02:54,440
+PAUL LEWIS: No doubt he will
+tell us all about that.
+
+57
+00:02:54,440 --> 00:02:56,510
+PAUL KINLAN: Yes, with his
+Amazon referral code in.
+
+58
+00:02:56,510 --> 00:02:57,990
+PAUL LEWIS: Yeah.
+
+59
+00:02:57,990 --> 00:02:59,110
+PAUL KINLAN: Anyway,
+yes he has a book.
+
+60
+00:02:59,110 --> 00:03:00,260
+We're waiting for him.
+
+61
+00:03:00,260 --> 00:03:01,240
+He should be here pretty soon.
+
+62
+00:03:01,240 --> 00:03:03,205
+And he's going to show you
+some really cool stuff.
+
+63
+00:03:03,205 --> 00:03:05,620
+But before we do that, I'd just
+like to kind of pass it
+
+64
+00:03:05,620 --> 00:03:08,160
+over to Renato to actually talk
+about some of the changes
+
+65
+00:03:08,160 --> 00:03:11,310
+that have happened in the
+platform this week.
+
+66
+00:03:11,310 --> 00:03:11,850
+RENATO MANGINI: Yeah.
+
+67
+00:03:11,850 --> 00:03:14,580
+Thank you, Paul.
+
+68
+00:03:14,580 --> 00:03:18,610
+The last two weeks we have
+one very big change
+
+69
+00:03:18,610 --> 00:03:20,630
+on the window object.
+
+70
+00:03:20,630 --> 00:03:25,710
+Before, you used methods to
+control the window using the
+
+71
+00:03:25,710 --> 00:03:31,260
+Window API, like focus, and
+minimize, maximize, and other
+
+72
+00:03:31,260 --> 00:03:32,740
+controlling methods.
+
+73
+00:03:32,740 --> 00:03:37,760
+And you used these methods
+on the same window object
+
+74
+00:03:37,760 --> 00:03:40,110
+you are using to--
+
+75
+00:03:40,110 --> 00:03:44,020
+that exposed the DOM to
+your JavaScript code.
+
+76
+00:03:44,020 --> 00:03:49,250
+However, this week, we landed
+a change that there's a
+
+77
+00:03:49,250 --> 00:03:53,480
+wrapper around the DOM, and this
+wrapper contains other
+
+78
+00:03:53,480 --> 00:03:55,160
+Window APIs.
+
+79
+00:03:55,160 --> 00:04:01,600
+And you can access the same old
+DOM object as before using
+
+80
+00:04:01,600 --> 00:04:08,030
+the child.dom object property
+on the window.
+
+81
+00:04:08,030 --> 00:04:09,080
+PAUL LEWIS: So you're not--
+
+82
+00:04:09,080 --> 00:04:12,190
+RENATO MANGINI: So
+now you have to--
+
+83
+00:04:12,190 --> 00:04:12,560
+sorry.
+
+84
+00:04:12,560 --> 00:04:13,260
+Go ahead.
+
+85
+00:04:13,260 --> 00:04:15,040
+PAUL LEWIS: I was going to ask
+you a question about it.
+
+86
+00:04:15,040 --> 00:04:17,357
+So if before you were getting
+a reference to a window and
+
+87
+00:04:17,357 --> 00:04:20,720
+you were calling Create Element
+on the document inside
+
+88
+00:04:20,720 --> 00:04:22,870
+that window or something
+like that, now you have
+
+89
+00:04:22,870 --> 00:04:26,130
+to go via this DOM--
+
+90
+00:04:26,130 --> 00:04:28,580
+RENATO MANGINI: Yeah,
+child.dom.
+
+91
+00:04:28,580 --> 00:04:33,740
+Before, you called the focus,
+for example, and the Create
+
+92
+00:04:33,740 --> 00:04:35,330
+Element at the same object.
+
+93
+00:04:35,330 --> 00:04:36,580
+And now you have--
+
+94
+00:04:36,580 --> 00:04:39,070
+
+95
+00:04:39,070 --> 00:04:44,410
+the DOM element is the same DOM
+window you are used to,
+
+96
+00:04:44,410 --> 00:04:47,160
+but this object is
+a property of a
+
+97
+00:04:47,160 --> 00:04:49,930
+high-level app window object.
+
+98
+00:04:49,930 --> 00:04:50,230
+PAUL KINLAN: Cool.
+
+99
+00:04:50,230 --> 00:04:50,500
+So what--
+
+100
+00:04:50,500 --> 00:04:54,860
+RENATO MANGINI: And this app
+window object contains all the
+
+101
+00:04:54,860 --> 00:04:57,770
+specific methods for
+the window API.
+
+102
+00:04:57,770 --> 00:04:59,350
+PAUL KINLAN: OK, so that gives
+us the ability to, say,
+
+103
+00:04:59,350 --> 00:05:01,370
+minimize or maximize and
+those types of things.
+
+104
+00:05:01,370 --> 00:05:04,100
+Are there very specific
+window APIs opposed
+
+105
+00:05:04,100 --> 00:05:05,910
+to DOM-level APIs?
+
+106
+00:05:05,910 --> 00:05:06,970
+RENATO MANGINI: Yeah, exactly.
+
+107
+00:05:06,970 --> 00:05:12,360
+He can get this app window
+high-level object using the
+
+108
+00:05:12,360 --> 00:05:14,700
+current methods.
+
+109
+00:05:14,700 --> 00:05:17,410
+You just call
+chrome.app.window.current
+
+110
+00:05:17,410 --> 00:05:19,300
+method, and you get
+the reference for
+
+111
+00:05:19,300 --> 00:05:21,100
+this app window object.
+
+112
+00:05:21,100 --> 00:05:23,560
+And you also get this
+reference--
+
+113
+00:05:23,560 --> 00:05:27,620
+when you create a window, you
+get this reference back, so
+
+114
+00:05:27,620 --> 00:05:30,110
+you can use it or
+you can access
+
+115
+00:05:30,110 --> 00:05:32,490
+directly using the current.
+
+116
+00:05:32,490 --> 00:05:34,280
+PAUL KINLAN: So if there's even
+anyone who's built any
+
+117
+00:05:34,280 --> 00:05:37,440
+applications which use to post
+a message to communicate
+
+118
+00:05:37,440 --> 00:05:39,650
+between windows, which I think
+one of the folks up here with
+
+119
+00:05:39,650 --> 00:05:40,680
+demos does.
+
+120
+00:05:40,680 --> 00:05:42,470
+I'm assuming we're going to
+have to change the code to
+
+121
+00:05:42,470 --> 00:05:43,760
+actually just map that,
+but it shouldn't be
+
+122
+00:05:43,760 --> 00:05:45,260
+too much of a change.
+
+123
+00:05:45,260 --> 00:05:45,800
+RENATO MANGINI: Yeah.
+
+124
+00:05:45,800 --> 00:05:48,730
+Instead of accessing the window
+object returned by
+
+125
+00:05:48,730 --> 00:05:54,430
+Create to make changes on the
+DOM, objectively, you have to
+
+126
+00:05:54,430 --> 00:06:00,700
+pass the child.dom instead
+of the window itself.
+
+127
+00:06:00,700 --> 00:06:01,140
+PAUL LEWIS: Cool.
+
+128
+00:06:01,140 --> 00:06:02,900
+Awesome.
+
+129
+00:06:02,900 --> 00:06:05,120
+RENATO MANGINI: OK.
+
+130
+00:06:05,120 --> 00:06:09,990
+And the second change is the
+Media Gallery's .get media
+
+131
+00:06:09,990 --> 00:06:12,200
+file system is no longer
+experimental.
+
+132
+00:06:12,200 --> 00:06:15,390
+And you have to have specific
+permission for
+
+133
+00:06:15,390 --> 00:06:17,240
+Media Gallery's read.
+
+134
+00:06:17,240 --> 00:06:24,280
+We didn't mention Media
+Galleries yet here, but we'll
+
+135
+00:06:24,280 --> 00:06:26,360
+have a session in the future
+to talk about that.
+
+136
+00:06:26,360 --> 00:06:30,160
+But if you have already
+developed something using the
+
+137
+00:06:30,160 --> 00:06:33,700
+Media Galleries, just be warned
+that now it's not
+
+138
+00:06:33,700 --> 00:06:34,770
+experimental anymore.
+
+139
+00:06:34,770 --> 00:06:36,480
+PAUL KINLAN: Can you explain
+briefly about the Media
+
+140
+00:06:36,480 --> 00:06:38,740
+Gallery PIS?
+
+141
+00:06:38,740 --> 00:06:39,730
+RENATO MANGINI: Yeah.
+
+142
+00:06:39,730 --> 00:06:45,090
+When you call the GET media file
+systems, you get access
+
+143
+00:06:45,090 --> 00:06:48,520
+to all the file systems that
+contain media, photos, videos,
+
+144
+00:06:48,520 --> 00:06:49,610
+and et cetera.
+
+145
+00:06:49,610 --> 00:06:54,710
+For example, if you plug in a
+camera or a USB drive, you can
+
+146
+00:06:54,710 --> 00:07:00,320
+access these objects in a kind
+of sandbox of file system that
+
+147
+00:07:00,320 --> 00:07:03,066
+you only have read
+permissions.
+
+148
+00:07:03,066 --> 00:07:04,480
+PAUL LEWIS: Good news, folks.
+
+149
+00:07:04,480 --> 00:07:06,980
+We have Eric Bidelman.
+
+150
+00:07:06,980 --> 00:07:08,390
+ERIC BIDELMAN: Hey.
+
+151
+00:07:08,390 --> 00:07:09,290
+PAUL KINLAN: He's here.
+
+152
+00:07:09,290 --> 00:07:10,820
+He's ready to work.
+
+153
+00:07:10,820 --> 00:07:12,320
+PAUL KINLAN: So yeah,
+so how are you?
+
+154
+00:07:12,320 --> 00:07:12,610
+ERIC BIDELMAN: Yeah, good.
+
+155
+00:07:12,610 --> 00:07:13,250
+PAUL LEWIS: Good.
+
+156
+00:07:13,250 --> 00:07:15,920
+[INTERPOSING VOICES]
+
+157
+00:07:15,920 --> 00:07:16,900
+PAUL LEWIS: Yes, fantastic.
+
+158
+00:07:16,900 --> 00:07:19,190
+It was an opportunity to
+hang out with you so--
+
+159
+00:07:19,190 --> 00:07:20,000
+ERIC BIDELMAN: Ah,
+that's beautiful.
+
+160
+00:07:20,000 --> 00:07:21,172
+PAUL LEWIS: Well,
+he humored me.
+
+161
+00:07:21,172 --> 00:07:23,170
+He couldn't turn it down.
+
+162
+00:07:23,170 --> 00:07:23,600
+ERIC BIDELMAN: Sorry I'm late.
+
+163
+00:07:23,600 --> 00:07:23,640
+PAUL KINLAN: Cool.
+
+164
+00:07:23,640 --> 00:07:24,360
+So we're just going--
+
+165
+00:07:24,360 --> 00:07:25,610
+ERIC BIDELMAN: Keep going.
+
+166
+00:07:25,610 --> 00:07:27,530
+
+167
+00:07:27,530 --> 00:07:28,680
+ERIC BIDELMAN: It's up to me?
+
+168
+00:07:28,680 --> 00:07:29,675
+PAUL LEWIS: Yes, it is.
+
+169
+00:07:29,675 --> 00:07:30,860
+ERIC BIDELMAN: Want to talk
+about the file system API?
+
+170
+00:07:30,860 --> 00:07:31,320
+PAUL KINLAN: We doing
+file systems.
+
+171
+00:07:31,320 --> 00:07:32,420
+PAUL LEWIS: Oh, yeah.
+
+172
+00:07:32,420 --> 00:07:35,790
+Just as a quick background, last
+week, guys, in case you
+
+173
+00:07:35,790 --> 00:07:37,440
+didn't catch it, we talked
+about the storage APIs--
+
+174
+00:07:37,440 --> 00:07:40,740
+chrome.storage.local and
+chrome.storage.sync, which is
+
+175
+00:07:40,740 --> 00:07:46,255
+great if you're going to be
+storing, say, app settings and
+
+176
+00:07:46,255 --> 00:07:48,080
+app states and things like that,
+so small bits of data.
+
+177
+00:07:48,080 --> 00:07:51,510
+But when it comes to storing
+blobs and bigger files, then
+
+178
+00:07:51,510 --> 00:07:54,893
+the fastest MAPI is your best
+friend, and so we get Eric in
+
+179
+00:07:54,893 --> 00:07:55,840
+to talk about that.
+
+180
+00:07:55,840 --> 00:07:56,400
+ERIC BIDELMAN: That's right.
+
+181
+00:07:56,400 --> 00:07:57,140
+That's where I come in.
+
+182
+00:07:57,140 --> 00:07:58,497
+PAUL KINLAN: Can you tell us
+about your book, please?
+
+183
+00:07:58,497 --> 00:07:59,720
+We've already pimped it.
+
+184
+00:07:59,720 --> 00:08:00,820
+ERIC BIDELMAN: Oh really?
+
+185
+00:08:00,820 --> 00:08:04,360
+So I actually really enjoy-- the
+HTML5 file system API is
+
+186
+00:08:04,360 --> 00:08:06,950
+what these guys are alluding to,
+and also the Chrome file
+
+187
+00:08:06,950 --> 00:08:10,890
+system API that sort of
+extends the W3C API.
+
+188
+00:08:10,890 --> 00:08:12,570
+But yeah, I got pretty excited
+about it one day, and I
+
+189
+00:08:12,570 --> 00:08:14,140
+decided to write a book on it.
+
+190
+00:08:14,140 --> 00:08:16,720
+So if you are interested in
+what we're talking about
+
+191
+00:08:16,720 --> 00:08:18,080
+today, go check that out.
+
+192
+00:08:18,080 --> 00:08:18,840
+I'm not going to plug it.
+
+193
+00:08:18,840 --> 00:08:20,580
+These guys have already
+done that for me.
+
+194
+00:08:20,580 --> 00:08:23,800
+But if you want to share my
+screen, we'll just start off
+
+195
+00:08:23,800 --> 00:08:25,050
+with a demo.
+
+196
+00:08:25,050 --> 00:08:29,828
+
+197
+00:08:29,828 --> 00:08:32,309
+Do we have confirmation?
+
+198
+00:08:32,309 --> 00:08:32,700
+PAUL KINLAN: I don't know.
+
+199
+00:08:32,700 --> 00:08:34,960
+Did we get confirmation that
+the screen is now shared?
+
+200
+00:08:34,960 --> 00:08:36,950
+ERIC BIDELMAN: I just want
+to make sure people are--
+
+201
+00:08:36,950 --> 00:08:37,490
+yes.
+
+202
+00:08:37,490 --> 00:08:38,756
+ERIC BIDELMAN: We do.
+
+203
+00:08:38,756 --> 00:08:39,242
+We do have confirmation.
+
+204
+00:08:39,242 --> 00:08:43,630
+All right, so I built a quick
+little Google Drive upload
+
+205
+00:08:43,630 --> 00:08:46,340
+client, a Chrome app that you
+can sort of drag and drop
+
+206
+00:08:46,340 --> 00:08:48,780
+files on to, or you can upload
+them to Google Docs.
+
+207
+00:08:48,780 --> 00:08:53,600
+And it uses both the Chrome file
+system API and also the
+
+208
+00:08:53,600 --> 00:08:56,510
+W3C open-web API.
+
+209
+00:08:56,510 --> 00:08:58,080
+So let's give this a go.
+
+210
+00:08:58,080 --> 00:09:01,280
+I'm just going to click
+my drive icon here.
+
+211
+00:09:01,280 --> 00:09:02,295
+So this is the app.
+
+212
+00:09:02,295 --> 00:09:04,270
+It's not that glorious
+right now.
+
+213
+00:09:04,270 --> 00:09:04,620
+There we go.
+
+214
+00:09:04,620 --> 00:09:07,230
+So we just pulled in
+some of my Google
+
+215
+00:09:07,230 --> 00:09:09,170
+Docs from Google Drive.
+
+216
+00:09:09,170 --> 00:09:10,720
+I've got the list here.
+
+217
+00:09:10,720 --> 00:09:11,645
+I can open these in Drive.
+
+218
+00:09:11,645 --> 00:09:13,570
+I can refresh this.
+
+219
+00:09:13,570 --> 00:09:16,020
+This is a frameless app, so I've
+implemented my own close
+
+220
+00:09:16,020 --> 00:09:18,282
+button with some of the newer
+stuff that you guys probably
+
+221
+00:09:18,282 --> 00:09:20,130
+covered without me there.
+
+222
+00:09:20,130 --> 00:09:22,850
+But we're missing one thing
+here, and that is amazing
+
+223
+00:09:22,850 --> 00:09:25,580
+icons on this left
+corner here.
+
+224
+00:09:25,580 --> 00:09:27,660
+So typically, you'd
+have file icons.
+
+225
+00:09:27,660 --> 00:09:31,580
+For an audio file, you'd see a
+little audio icon, or a text
+
+226
+00:09:31,580 --> 00:09:34,012
+file, you'd see a text icon.
+
+227
+00:09:34,012 --> 00:09:35,310
+So we don't have that here.
+
+228
+00:09:35,310 --> 00:09:36,100
+What's going on?
+
+229
+00:09:36,100 --> 00:09:41,376
+Well, of course, we can use
+our friendly inspector.
+
+230
+00:09:41,376 --> 00:09:44,450
+And so if we actually pull up
+the console, you see all of
+
+231
+00:09:44,450 --> 00:09:46,670
+these crazy console errors.
+
+232
+00:09:46,670 --> 00:09:50,190
+And this is our worst and best
+friend at the same time--
+
+233
+00:09:50,190 --> 00:09:53,190
+CSP, the Content Security
+Policy.
+
+234
+00:09:53,190 --> 00:09:56,650
+So you see what's happening is
+I just requested all my docs
+
+235
+00:09:56,650 --> 00:09:58,770
+from Google Doc, and I'm pulling
+them down, and I'm
+
+236
+00:09:58,770 --> 00:10:02,700
+trying to load these
+image files.
+
+237
+00:10:02,700 --> 00:10:06,670
+So it's coming from some kind
+of ssl.gstatic.com domain.
+
+238
+00:10:06,670 --> 00:10:09,190
+Not within our app, and
+I'm getting these
+
+239
+00:10:09,190 --> 00:10:10,430
+not-seen origin areas.
+
+240
+00:10:10,430 --> 00:10:12,523
+PAUL KINLAN: Can you explain a
+little bit why we have these
+
+241
+00:10:12,523 --> 00:10:13,410
+errors in place?
+
+242
+00:10:13,410 --> 00:10:15,400
+ERIC BIDELMAN: So CSP
+is generally a great
+
+243
+00:10:15,400 --> 00:10:16,200
+thing for the web.
+
+244
+00:10:16,200 --> 00:10:17,220
+It's a great thing for apps.
+
+245
+00:10:17,220 --> 00:10:18,700
+It makes your app more secure.
+
+246
+00:10:18,700 --> 00:10:21,630
+It gives you some guarantees
+about where information is
+
+247
+00:10:21,630 --> 00:10:23,000
+coming from.
+
+248
+00:10:23,000 --> 00:10:25,530
+And so it's basically
+a security thing.
+
+249
+00:10:25,530 --> 00:10:27,120
+It's a great security feature.
+
+250
+00:10:27,120 --> 00:10:29,360
+And one thing that's on by
+default is not being able to
+
+251
+00:10:29,360 --> 00:10:32,450
+just set an image source
+tag or a video source.
+
+252
+00:10:32,450 --> 00:10:35,335
+You actually have to pull the
+asset into your application
+
+253
+00:10:35,335 --> 00:10:36,585
+and import it somehow.
+
+254
+00:10:36,585 --> 00:10:39,920
+
+255
+00:10:39,920 --> 00:10:42,290
+PAUL KINLAN: I think just to
+come to one act a little bit
+
+256
+00:10:42,290 --> 00:10:44,830
+there, is this is actually a
+relatively big change for web
+
+257
+00:10:44,830 --> 00:10:45,620
+developers, right?
+
+258
+00:10:45,620 --> 00:10:47,990
+Web developers normally expect
+to be able to reference an
+
+259
+00:10:47,990 --> 00:10:51,420
+image source file, pull it
+straight in, and you start
+
+260
+00:10:51,420 --> 00:10:52,150
+working with it.
+
+261
+00:10:52,150 --> 00:10:55,280
+And when you go through that
+with generally native systems,
+
+262
+00:10:55,280 --> 00:10:58,090
+like iPhone and Android, is that
+they're very much used to
+
+263
+00:10:58,090 --> 00:11:01,080
+actually downloading assets
+inside the application and
+
+264
+00:11:01,080 --> 00:11:02,400
+dealing with them that way.
+
+265
+00:11:02,400 --> 00:11:04,806
+I think today we're going to
+talk about why we're going to
+
+266
+00:11:04,806 --> 00:11:07,180
+do this and how developers
+can.
+
+267
+00:11:07,180 --> 00:11:08,570
+PAUL LEWIS: Yeah, we've been
+saying this for weeks, and
+
+268
+00:11:08,570 --> 00:11:10,320
+you'll hear us say it
+over and over again.
+
+269
+00:11:10,320 --> 00:11:11,250
+Offline first.
+
+270
+00:11:11,250 --> 00:11:13,965
+It really is how these apps
+need to be built.
+
+271
+00:11:13,965 --> 00:11:16,710
+You need to be thinking offline
+first, and then how do
+
+272
+00:11:16,710 --> 00:11:19,440
+I get additional stuff
+remotely, if needed.
+
+273
+00:11:19,440 --> 00:11:19,990
+ERIC BIDELMAN: That's
+a very good point.
+
+274
+00:11:19,990 --> 00:11:23,500
+CSP's there for security, but
+it's also in place for trying
+
+275
+00:11:23,500 --> 00:11:24,920
+to make the app more offline.
+
+276
+00:11:24,920 --> 00:11:26,440
+So it should work
+offline first.
+
+277
+00:11:26,440 --> 00:11:28,820
+And one way to do that is not
+being able to reference an
+
+278
+00:11:28,820 --> 00:11:31,440
+image anywhere on the web you
+have to actually bring it into
+
+279
+00:11:31,440 --> 00:11:32,960
+your application.
+
+280
+00:11:32,960 --> 00:11:36,570
+So this is the sample, the
+Google Drive sample.
+
+281
+00:11:36,570 --> 00:11:38,190
+I'm not going to show you
+all the code here.
+
+282
+00:11:38,190 --> 00:11:42,340
+But basically what I'm doing
+is I'm making a request to
+
+283
+00:11:42,340 --> 00:11:45,140
+their Google Drive API, making
+the feed request.
+
+284
+00:11:45,140 --> 00:11:46,540
+PAUL KINLAN: Can I just
+ask one thing?
+
+285
+00:11:46,540 --> 00:11:46,780
+ERIC BIDELMAN: Yeah.
+
+286
+00:11:46,780 --> 00:11:46,860
+Sure.
+
+287
+00:11:46,860 --> 00:11:47,920
+PAUL KINLAN: You always get this
+question all the time.
+
+288
+00:11:47,920 --> 00:11:48,340
+ERIC BIDELMAN: Sure, sure.
+
+289
+00:11:48,340 --> 00:11:49,700
+PAUL KINLAN: What editor
+are you using?
+
+290
+00:11:49,700 --> 00:11:50,880
+ERIC BIDELMAN: It's
+a Sublime text.
+
+291
+00:11:50,880 --> 00:11:51,500
+Why do you ask?
+
+292
+00:11:51,500 --> 00:11:52,800
+It's my favorite editor.
+
+293
+00:11:52,800 --> 00:11:53,960
+It's fantastic.
+
+294
+00:11:53,960 --> 00:11:56,500
+I used to be a Textmate
+fan, but Sublime--
+
+295
+00:11:56,500 --> 00:11:57,380
+PAUL LEWIS: Is sublime.
+
+296
+00:11:57,380 --> 00:11:59,340
+[LAUGHING]
+
+297
+00:11:59,340 --> 00:12:01,790
+PAUL LEWIS: No pun intended.
+
+298
+00:12:01,790 --> 00:12:02,380
+ERIC BIDELMAN: It's
+a great editor.
+
+299
+00:12:02,380 --> 00:12:04,672
+It's got a lot of plug-ins you
+can install for it, so I
+
+300
+00:12:04,672 --> 00:12:07,380
+highly recommend it if you're
+doing any kind of front-end
+
+301
+00:12:07,380 --> 00:12:09,200
+development.
+
+302
+00:12:09,200 --> 00:12:13,150
+So here we are back in
+the G Drive app.
+
+303
+00:12:13,150 --> 00:12:15,480
+And basically I'm just making
+the AJAX request, right?
+
+304
+00:12:15,480 --> 00:12:18,810
+I'm using ANGLER JS,
+so it's got some
+
+305
+00:12:18,810 --> 00:12:21,320
+nice little HTTP wrappers.
+
+306
+00:12:21,320 --> 00:12:24,070
+So I'm making it to the
+main dockless feed.
+
+307
+00:12:24,070 --> 00:12:27,470
+And so here's the magic here
+in the success call back.
+
+308
+00:12:27,470 --> 00:12:30,450
+So I pull down the entries from
+the feed, and you can see
+
+309
+00:12:30,450 --> 00:12:33,820
+I've got this handy sort
+of uncomment for CSP.
+
+310
+00:12:33,820 --> 00:12:36,980
+So right now what this tries to
+do is, again, just send an
+
+311
+00:12:36,980 --> 00:12:42,180
+image source to that
+gstatic URL we saw.
+
+312
+00:12:42,180 --> 00:12:44,730
+And since it's not of the origin
+of my application, it's
+
+313
+00:12:44,730 --> 00:12:45,330
+going to fail.
+
+314
+00:12:45,330 --> 00:12:47,330
+It's going to fail CSP.
+
+315
+00:12:47,330 --> 00:12:50,010
+So instead what we're going to
+do is we're going to make that
+
+316
+00:12:50,010 --> 00:12:52,640
+AJAX request to that
+image file.
+
+317
+00:12:52,640 --> 00:12:54,125
+And then we're going to save it,
+and we're going to create
+
+318
+00:12:54,125 --> 00:12:55,660
+a blob URL from that.
+
+319
+00:12:55,660 --> 00:12:58,680
+So essentially what we're
+doing is making an AJAX
+
+320
+00:12:58,680 --> 00:13:01,930
+request, bringing in the image
+to our application locally,
+
+321
+00:13:01,930 --> 00:13:04,730
+and then creating like a URL
+handle to that image.
+
+322
+00:13:04,730 --> 00:13:08,710
+So then CSP hopefully should
+work out for us.
+
+323
+00:13:08,710 --> 00:13:11,956
+So if you go back to the app,
+refresh the app because I made
+
+324
+00:13:11,956 --> 00:13:14,460
+a code change, check
+out our console.
+
+325
+00:13:14,460 --> 00:13:15,580
+So this time, boom.
+
+326
+00:13:15,580 --> 00:13:19,410
+We have fantastic little
+glorious images and icons on
+
+327
+00:13:19,410 --> 00:13:20,850
+the left there.
+
+328
+00:13:20,850 --> 00:13:21,850
+PAUL KINLAN: Oh, so in this
+case, you were just getting
+
+329
+00:13:21,850 --> 00:13:24,401
+the blob from the XML you
+requested and not even saving
+
+330
+00:13:24,401 --> 00:13:25,070
+it locally.
+
+331
+00:13:25,070 --> 00:13:25,270
+ERIC BIDELMAN: That's right.
+
+332
+00:13:25,270 --> 00:13:26,750
+So in this case--
+
+333
+00:13:26,750 --> 00:13:29,510
+so this is a certain progression
+here, Paul.
+
+334
+00:13:29,510 --> 00:13:29,990
+PAUL KINLAN: Oh, that's cool.
+
+335
+00:13:29,990 --> 00:13:30,300
+ERIC BIDELMAN: Yeah.
+
+336
+00:13:30,300 --> 00:13:31,720
+So we made an XHR.
+
+337
+00:13:31,720 --> 00:13:33,950
+You can see I have like 100 of
+these icons that I've just
+
+338
+00:13:33,950 --> 00:13:37,350
+fetched, just using an
+XML HTTP request.
+
+339
+00:13:37,350 --> 00:13:39,830
+And then I've used the
+Create Object URL to
+
+340
+00:13:39,830 --> 00:13:41,265
+create a blob to this.
+
+341
+00:13:41,265 --> 00:13:44,220
+So if you actually right-click
+these guys to inspect the
+
+342
+00:13:44,220 --> 00:13:49,640
+element in the inspector, you
+can see that these image
+
+343
+00:13:49,640 --> 00:13:51,630
+sources are all blob URLs.
+
+344
+00:13:51,630 --> 00:13:54,390
+So they're not just referencing
+the normal icon
+
+345
+00:13:54,390 --> 00:13:56,920
+file that I got from the feed,
+but we actually created a
+
+346
+00:13:56,920 --> 00:13:58,910
+handle for those files.
+
+347
+00:13:58,910 --> 00:13:59,780
+So that's cool.
+
+348
+00:13:59,780 --> 00:14:00,960
+Now we have images.
+
+349
+00:14:00,960 --> 00:14:01,480
+We have icons.
+
+350
+00:14:01,480 --> 00:14:02,280
+We're fetching them.
+
+351
+00:14:02,280 --> 00:14:04,140
+PAUL LEWIS: But you said
+you've got 100 of those
+
+352
+00:14:04,140 --> 00:14:05,430
+requests firing off, right?
+
+353
+00:14:05,430 --> 00:14:05,660
+ERIC BIDELMAN: Right.
+
+354
+00:14:05,660 --> 00:14:08,390
+PAUL LEWIS: So if somebody's off
+the network or whatever--
+
+355
+00:14:08,390 --> 00:14:09,020
+PAUL KINLAN: Exactly.
+
+356
+00:14:09,020 --> 00:14:09,670
+PAUL LEWIS: They're still--
+
+357
+00:14:09,670 --> 00:14:09,990
+ERIC BIDELMAN: Right.
+
+358
+00:14:09,990 --> 00:14:13,380
+So if I switch Wi-Fi off, which
+I'm not, but you're
+
+359
+00:14:13,380 --> 00:14:13,810
+absolutely right.
+
+360
+00:14:13,810 --> 00:14:14,710
+This won't work offline.
+
+361
+00:14:14,710 --> 00:14:17,010
+We'll get a bunch of
+invalid images.
+
+362
+00:14:17,010 --> 00:14:20,120
+And if I refresh this, you can
+see in my console, there's
+
+363
+00:14:20,120 --> 00:14:22,270
+another 100 of these
+things being--
+
+364
+00:14:22,270 --> 00:14:24,850
+every time I give my new feed,
+my new list of docs, it's
+
+365
+00:14:24,850 --> 00:14:27,340
+coming back with 100
+image requests.
+
+366
+00:14:27,340 --> 00:14:28,190
+So that's not ideal.
+
+367
+00:14:28,190 --> 00:14:28,800
+It's not ideal for offline.
+
+368
+00:14:28,800 --> 00:14:30,900
+It's not ideal for
+performance.
+
+369
+00:14:30,900 --> 00:14:35,050
+So what we can do is, I
+implemented this amazing
+
+370
+00:14:35,050 --> 00:14:38,790
+success callback with file
+system caching method.
+
+371
+00:14:38,790 --> 00:14:42,680
+So what this guy is going to
+do is actually do the same
+
+372
+00:14:42,680 --> 00:14:46,130
+thing, so request all the images
+using XHR, create blob
+
+373
+00:14:46,130 --> 00:14:47,040
+URLs from them.
+
+374
+00:14:47,040 --> 00:14:49,440
+But at the same time, it's going
+to save those images
+
+375
+00:14:49,440 --> 00:14:51,140
+using the file system API.
+
+376
+00:14:51,140 --> 00:14:54,160
+So we're essentially just
+caching all those icon files
+
+377
+00:14:54,160 --> 00:14:56,240
+and saving them for later.
+
+378
+00:14:56,240 --> 00:14:58,070
+And so the meat of that
+looks like this.
+
+379
+00:14:58,070 --> 00:15:01,960
+We'll just make that XML
+HTTP request as a blob.
+
+380
+00:15:01,960 --> 00:15:03,795
+So we'll pull down
+all the images.
+
+381
+00:15:03,795 --> 00:15:06,920
+We'll get the blob, so it will
+essentially get the image file
+
+382
+00:15:06,920 --> 00:15:11,870
+from the response, and we'll
+write that image file out to
+
+383
+00:15:11,870 --> 00:15:14,190
+the file system API.
+
+384
+00:15:14,190 --> 00:15:16,970
+And so that write method
+is up here.
+
+385
+00:15:16,970 --> 00:15:17,890
+It's pretty simple.
+
+386
+00:15:17,890 --> 00:15:22,350
+So this is boilerplate how
+you'd use the HTML5 file
+
+387
+00:15:22,350 --> 00:15:23,450
+system API.
+
+388
+00:15:23,450 --> 00:15:26,530
+You essentially get this root
+directory representing the
+
+389
+00:15:26,530 --> 00:15:29,910
+root of your application where
+you can store files.
+
+390
+00:15:29,910 --> 00:15:31,250
+You give it a folder name.
+
+391
+00:15:31,250 --> 00:15:33,160
+I'll just call it Test Folder.
+
+392
+00:15:33,160 --> 00:15:36,200
+We'll create that folder if it
+doesn't exist in our app.
+
+393
+00:15:36,200 --> 00:15:38,210
+And then we'll just essentially
+loop through all
+
+394
+00:15:38,210 --> 00:15:39,810
+these and write each blob.
+
+395
+00:15:39,810 --> 00:15:40,950
+So we'll call it Get File.
+
+396
+00:15:40,950 --> 00:15:42,690
+It will create this
+file for us.
+
+397
+00:15:42,690 --> 00:15:45,555
+If it doesn't exist, we'll
+create a writer object, so
+
+398
+00:15:45,555 --> 00:15:48,700
+we're writing data to
+this file entry.
+
+399
+00:15:48,700 --> 00:15:53,470
+You can set up event handlers
+for errors or when the write
+
+400
+00:15:53,470 --> 00:15:54,073
+is complete.
+
+401
+00:15:54,073 --> 00:15:56,700
+We'll just call it
+filewriter.write, and we'll
+
+402
+00:15:56,700 --> 00:15:57,920
+write that blob out.
+
+403
+00:15:57,920 --> 00:16:01,100
+So XHR to end the images, 100 of
+those guys, and then write
+
+404
+00:16:01,100 --> 00:16:04,030
+each of them locally to
+the file system URL--
+
+405
+00:16:04,030 --> 00:16:06,410
+or the file system
+API, excuse me.
+
+406
+00:16:06,410 --> 00:16:13,230
+So I'm going to switch my
+callback out to the amazing
+
+407
+00:16:13,230 --> 00:16:15,300
+one with caching and
+give us a refresh.
+
+408
+00:16:15,300 --> 00:16:21,310
+
+409
+00:16:21,310 --> 00:16:21,610
+All right.
+
+410
+00:16:21,610 --> 00:16:24,590
+So to the user, nothing
+new is happening.
+
+411
+00:16:24,590 --> 00:16:25,590
+We got the images.
+
+412
+00:16:25,590 --> 00:16:27,220
+It's all working splendidly.
+
+413
+00:16:27,220 --> 00:16:30,060
+But what you see in my console
+now is that we made the image
+
+414
+00:16:30,060 --> 00:16:32,590
+request, but we also wrote
+100 files out to
+
+415
+00:16:32,590 --> 00:16:34,240
+the file system API.
+
+416
+00:16:34,240 --> 00:16:37,260
+So if I refresh this, hopefully
+what you don't see
+
+417
+00:16:37,260 --> 00:16:41,380
+here in the console now is
+100 XHRs and 100 writes.
+
+418
+00:16:41,380 --> 00:16:44,660
+So, indeed, we do have local
+files, and we can again, verif
+
+419
+00:16:44,660 --> 00:16:45,460
+that a couple of ways.
+
+420
+00:16:45,460 --> 00:16:47,520
+We can go into the inspector.
+
+421
+00:16:47,520 --> 00:16:51,130
+And we can see that now these
+image sources are set to file
+
+422
+00:16:51,130 --> 00:16:53,860
+system URIs instead
+of blob URLs.
+
+423
+00:16:53,860 --> 00:16:55,155
+So these are being cached.
+
+424
+00:16:55,155 --> 00:16:56,160
+These are local to
+our app now.
+
+425
+00:16:56,160 --> 00:16:56,840
+PAUL KINLAN: So I've
+noticed you've got
+
+426
+00:16:56,840 --> 00:16:57,640
+your temporary storage?
+
+427
+00:16:57,640 --> 00:16:58,350
+ERIC BIDELMAN: Yeah.
+
+428
+00:16:58,350 --> 00:16:59,580
+PAUL KINLAN: Can you explain
+a little bit
+
+429
+00:16:59,580 --> 00:17:00,850
+about temporary storage?
+
+430
+00:17:00,850 --> 00:17:01,230
+ERIC BIDELMAN: Sure.
+
+431
+00:17:01,230 --> 00:17:05,400
+So the file system API has
+two storage modes.
+
+432
+00:17:05,400 --> 00:17:07,690
+One is the ability to store
+temporary files.
+
+433
+00:17:07,690 --> 00:17:09,010
+It's great for caching.
+
+434
+00:17:09,010 --> 00:17:10,369
+In this case, we're
+pulling an image.
+
+435
+00:17:10,369 --> 00:17:11,930
+We're caching them.
+
+436
+00:17:11,930 --> 00:17:14,690
+You're not guaranteed to have
+data there when you fetch it
+
+437
+00:17:14,690 --> 00:17:15,460
+the second time.
+
+438
+00:17:15,460 --> 00:17:21,359
+So as space requirements and
+space becomes an issue, Chrome
+
+439
+00:17:21,359 --> 00:17:24,839
+and the browser will kick that
+out, so it will evict data.
+
+440
+00:17:24,839 --> 00:17:27,180
+Persistent storage is the other
+type of storage, and
+
+441
+00:17:27,180 --> 00:17:28,460
+that's just what
+it sounds like.
+
+442
+00:17:28,460 --> 00:17:29,950
+It's persistent.
+
+443
+00:17:29,950 --> 00:17:32,110
+And so you're guaranteed to
+always have that data unless
+
+444
+00:17:32,110 --> 00:17:34,270
+the user or yourself
+revokes it.
+
+445
+00:17:34,270 --> 00:17:35,260
+PAUL KINLAN: So how much
+storage do you have?
+
+446
+00:17:35,260 --> 00:17:37,980
+So is temporary storage
+flexible or is it--
+
+447
+00:17:37,980 --> 00:17:43,010
+ERIC BIDELMAN: So temporary
+storage is a per-origin basis.
+
+448
+00:17:43,010 --> 00:17:45,460
+Well, with the Chrome APIs,
+you can actually request
+
+449
+00:17:45,460 --> 00:17:46,860
+unlimited storage.
+
+450
+00:17:46,860 --> 00:17:49,810
+So using the unlimited storage
+in the MAPIs file, that's a
+
+451
+00:17:49,810 --> 00:17:52,546
+great way to just say
+my app can store
+
+452
+00:17:52,546 --> 00:17:53,330
+whatever it needs to.
+
+453
+00:17:53,330 --> 00:17:55,620
+There's no space requirements.
+
+454
+00:17:55,620 --> 00:17:58,896
+And then you can request as much
+as you need, basically.
+
+455
+00:17:58,896 --> 00:17:59,595
+PAUL KINLAN: That's very cool.
+
+456
+00:17:59,595 --> 00:18:00,340
+Thank you.
+
+457
+00:18:00,340 --> 00:18:01,220
+ERIC BIDELMAN: Yeah,
+no problem.
+
+458
+00:18:01,220 --> 00:18:02,790
+And I want to point out
+one last thing.
+
+459
+00:18:02,790 --> 00:18:06,170
+I'm using Canary for this,
+and so I want to plug--
+
+460
+00:18:06,170 --> 00:18:10,340
+we just added file system API
+support into the dev tools,
+
+461
+00:18:10,340 --> 00:18:11,080
+which is really cool.
+
+462
+00:18:11,080 --> 00:18:11,620
+PAUL KINLAN: Seriously?
+
+463
+00:18:11,620 --> 00:18:11,970
+ERIC BIDELMAN: Yeah.
+
+464
+00:18:11,970 --> 00:18:13,180
+You guys probably noticed,
+didn't you?
+
+465
+00:18:13,180 --> 00:18:14,520
+PAUL LEWIS: No, I
+did not notice.
+
+466
+00:18:14,520 --> 00:18:18,208
+ERIC BIDELMAN: So under
+Resource, this is my number
+
+467
+00:18:18,208 --> 00:18:19,980
+one requested feature for a
+long time, because it's
+
+468
+00:18:19,980 --> 00:18:20,500
+actually really hard.
+
+469
+00:18:20,500 --> 00:18:21,970
+PAUL KINLAN: I can actually
+swear this is a question on
+
+470
+00:18:21,970 --> 00:18:22,420
+the Q&A.
+
+471
+00:18:22,420 --> 00:18:23,120
+ERIC BIDELMAN: Is it?
+
+472
+00:18:23,120 --> 00:18:25,710
+Well, check another
+one off the list.
+
+473
+00:18:25,710 --> 00:18:28,370
+But the hardest part is actually
+knowing what's in the
+
+474
+00:18:28,370 --> 00:18:29,070
+file system.
+
+475
+00:18:29,070 --> 00:18:33,160
+And so by now having dev tools
+support, this is just huge.
+
+476
+00:18:33,160 --> 00:18:35,810
+So if I click on this, I can see
+that, yes, that folder I
+
+477
+00:18:35,810 --> 00:18:37,500
+created, that test folder--
+
+478
+00:18:37,500 --> 00:18:40,820
+apologies if this
+is really small.
+
+479
+00:18:40,820 --> 00:18:42,680
+I open the test folder, and all
+those images, all those
+
+480
+00:18:42,680 --> 00:18:45,030
+icons, have been cached and
+stored in the file system.
+
+481
+00:18:45,030 --> 00:18:46,250
+PAUL KINLAN: Cool.
+
+482
+00:18:46,250 --> 00:18:47,990
+ERIC BIDELMAN: And
+here's a pro tip.
+
+483
+00:18:47,990 --> 00:18:50,280
+The only reason I'm using a
+folder here is just to be able
+
+484
+00:18:50,280 --> 00:18:52,330
+to delete it very quickly.
+
+485
+00:18:52,330 --> 00:18:53,870
+So I can come down here
+into dev tools and
+
+486
+00:18:53,870 --> 00:18:56,830
+just nuke that folder.
+
+487
+00:18:56,830 --> 00:18:57,290
+PAUL KINLAN: Awww!
+
+488
+00:18:57,290 --> 00:18:59,960
+ERIC BIDELMAN: Yeah, and so if
+I refresh it now, my app is
+
+489
+00:18:59,960 --> 00:19:02,650
+going to go through that whole
+process of making XHRs,
+
+490
+00:19:02,650 --> 00:19:05,870
+pulling it back in, and now
+they're re-cached again.
+
+491
+00:19:05,870 --> 00:19:07,450
+PAUL KINLAN: So one
+question for you.
+
+492
+00:19:07,450 --> 00:19:11,230
+This doesn't necessarily relate
+to the file system API.
+
+493
+00:19:11,230 --> 00:19:13,590
+When you did requests after this
+blob, did you have to do
+
+494
+00:19:13,590 --> 00:19:14,950
+anything special to
+the requests?
+
+495
+00:19:14,950 --> 00:19:18,025
+Because I've literally never
+been able to get response or a
+
+496
+00:19:18,025 --> 00:19:20,320
+response-type blob
+ever working.
+
+497
+00:19:20,320 --> 00:19:20,910
+ERIC BIDELMAN: Really?
+
+498
+00:19:20,910 --> 00:19:21,250
+PAUL KINLAN: Yeah.
+
+499
+00:19:21,250 --> 00:19:23,010
+ERIC BIDELMAN: That sounds
+like a user error.
+
+500
+00:19:23,010 --> 00:19:24,480
+PAUL LEWIS: An error between
+the chair and the
+
+501
+00:19:24,480 --> 00:19:25,710
+keyboard, my friend.
+
+502
+00:19:25,710 --> 00:19:27,560
+ERIC BIDELMAN: This little bit
+right here is the only real
+
+503
+00:19:27,560 --> 00:19:28,260
+magic you need.
+
+504
+00:19:28,260 --> 00:19:32,260
+So normally, XHR pulls
+text in, right?
+
+505
+00:19:32,260 --> 00:19:34,350
+And you have to do
+crazy things like
+
+506
+00:19:34,350 --> 00:19:36,060
+base64 encode text.
+
+507
+00:19:36,060 --> 00:19:39,380
+Now you can set response type to
+blob, and it just acts as a
+
+508
+00:19:39,380 --> 00:19:40,300
+binary file.
+
+509
+00:19:40,300 --> 00:19:41,560
+PAUL KINLAN: Nice.
+
+510
+00:19:41,560 --> 00:19:43,910
+So if I didn't pass that, I
+would have to use a ray buffer
+
+511
+00:19:43,910 --> 00:19:47,510
+and then convert the ray buffer
+to the other blob and--
+
+512
+00:19:47,510 --> 00:19:48,590
+ERIC BIDELMAN: That's true.
+
+513
+00:19:48,590 --> 00:19:53,650
+At some point, I think Chrome
+only supported a ray buffer,
+
+514
+00:19:53,650 --> 00:19:54,210
+but we've changed that.
+
+515
+00:19:54,210 --> 00:19:55,100
+We added blob support.
+
+516
+00:19:55,100 --> 00:19:57,780
+So you don't have to go from a
+ray buffer to blob and then
+
+517
+00:19:57,780 --> 00:19:58,100
+back and forth.
+
+518
+00:19:58,100 --> 00:19:59,065
+PAUL LEWIS: That sounds
+a lot cleaner.
+
+519
+00:19:59,065 --> 00:19:59,360
+ERIC BIDELMAN: Yeah.
+
+520
+00:19:59,360 --> 00:20:01,240
+It's a lot cleaner.
+
+521
+00:20:01,240 --> 00:20:04,770
+And obviously, the big use
+case here is for caching
+
+522
+00:20:04,770 --> 00:20:07,500
+things that are not native to
+your application and bringing
+
+523
+00:20:07,500 --> 00:20:09,960
+them in, whether it's video,
+whether its images, whether
+
+524
+00:20:09,960 --> 00:20:12,460
+it's any type of static asset.
+
+525
+00:20:12,460 --> 00:20:16,080
+PAUL LEWIS: So earlier on, you
+said that the Chrome Apps
+
+526
+00:20:16,080 --> 00:20:19,420
+version of this API is slightly
+different to the W3C.
+
+527
+00:20:19,420 --> 00:20:20,830
+What are the main differences
+that developers
+
+528
+00:20:20,830 --> 00:20:21,950
+need to be aware of?
+
+529
+00:20:21,950 --> 00:20:22,740
+ERIC BIDELMAN: Right.
+
+530
+00:20:22,740 --> 00:20:23,990
+Good call.
+
+531
+00:20:23,990 --> 00:20:25,890
+
+532
+00:20:25,890 --> 00:20:28,250
+Before I do that, I just want to
+plug-- if you're interested
+
+533
+00:20:28,250 --> 00:20:30,930
+in what we just showed there
+with the file system writing
+
+534
+00:20:30,930 --> 00:20:35,610
+data, writing folders, check out
+our "HTML5 Rocks" article
+
+535
+00:20:35,610 --> 00:20:37,780
+that I'm showing now.
+
+536
+00:20:37,780 --> 00:20:41,916
+That is all about the
+W3C HTML5 API.
+
+537
+00:20:41,916 --> 00:20:44,460
+But what Chrome does
+in particular--
+
+538
+00:20:44,460 --> 00:20:47,880
+and this is the documentation
+page for it-- is extend the
+
+539
+00:20:47,880 --> 00:20:50,740
+capabilities of the
+file system API.
+
+540
+00:20:50,740 --> 00:20:53,720
+So we have chrome.fileSystem,
+which has a slew
+
+541
+00:20:53,720 --> 00:20:55,770
+of APIs under it.
+
+542
+00:20:55,770 --> 00:21:00,200
+The biggest thing is that unlike
+the W3C API, you can
+
+543
+00:21:00,200 --> 00:21:03,570
+actually Save As, so
+there's Save As
+
+544
+00:21:03,570 --> 00:21:04,740
+functionality in this API.
+
+545
+00:21:04,740 --> 00:21:08,240
+You can open a file and actually
+write out t outside
+
+546
+00:21:08,240 --> 00:21:09,480
+the browser space.
+
+547
+00:21:09,480 --> 00:21:12,420
+So you can choose any file on
+your hard drive and then read
+
+548
+00:21:12,420 --> 00:21:13,515
+and write to that file.
+
+549
+00:21:13,515 --> 00:21:16,990
+So it's sort of breaking out
+of this browser security
+
+550
+00:21:16,990 --> 00:21:20,920
+model, the file system that
+the HTML5 one has.
+
+551
+00:21:20,920 --> 00:21:22,430
+PAUL KINLAN: So the interesting
+thing--
+
+552
+00:21:22,430 --> 00:21:24,185
+I think it's really interesting,
+anyway--
+
+553
+00:21:24,185 --> 00:21:25,340
+ERIC BIDELMAN: I think it's
+interesting, too.
+
+554
+00:21:25,340 --> 00:21:26,620
+PAUL LEWIS: I don't even know
+where this is going.
+
+555
+00:21:26,620 --> 00:21:27,895
+PAUL KINLAN: I want to know
+where this is going, because
+
+556
+00:21:27,895 --> 00:21:29,976
+[INAUDIBLE].
+
+557
+00:21:29,976 --> 00:21:30,390
+PAUL LEWIS: Huh?
+
+558
+00:21:30,390 --> 00:21:30,860
+No!
+
+559
+00:21:30,860 --> 00:21:31,890
+PAUL LEWIS: Really?
+
+560
+00:21:31,890 --> 00:21:34,210
+[INTERPOSING VOICES]
+
+561
+00:21:34,210 --> 00:21:36,480
+PAUL KINLAN: I'm allowed to
+say the word Web Intents.
+
+562
+00:21:36,480 --> 00:21:39,706
+So you're shocked when you
+bring up Web Intents in--
+
+563
+00:21:39,706 --> 00:21:40,580
+PAUL LEWIS: I'm trying
+to get it in.
+
+564
+00:21:40,580 --> 00:21:40,850
+PAUL KINLAN: I've noticed.
+
+565
+00:21:40,850 --> 00:21:42,299
+[INTERPOSING VOICES]
+
+566
+00:21:42,299 --> 00:21:43,750
+[LAUGHTER]
+
+567
+00:21:43,750 --> 00:21:45,780
+PAUL LEWIS: Generally
+speaking, yes.
+
+568
+00:21:45,780 --> 00:21:48,240
+PAUL KINLAN: So the interesting
+thing is that one
+
+569
+00:21:48,240 --> 00:21:52,610
+of the things with the Chrome
+Apps effort is that in theory,
+
+570
+00:21:52,610 --> 00:21:54,850
+you show be able to find a
+file on your file system,
+
+571
+00:21:54,850 --> 00:21:57,610
+right-click Open With, and then
+find your web application
+
+572
+00:21:57,610 --> 00:22:01,540
+or your link to that there and
+open that file inside your web
+
+573
+00:22:01,540 --> 00:22:02,590
+application.
+
+574
+00:22:02,590 --> 00:22:03,620
+We're not quite there
+just yet.
+
+575
+00:22:03,620 --> 00:22:06,722
+But there's a series of command
+line brackets, which I
+
+576
+00:22:06,722 --> 00:22:08,140
+can't remember off the top of my
+head, where you can launch
+
+577
+00:22:08,140 --> 00:22:10,545
+your application with a
+parameter which is the name to
+
+578
+00:22:10,545 --> 00:22:16,410
+a file on your page, like in
+your file systems, like C:/,
+
+579
+00:22:16,410 --> 00:22:18,980
+like programfiles/images, or
+whatever it is how they've
+
+580
+00:22:18,980 --> 00:22:20,370
+done Windows.
+
+581
+00:22:20,370 --> 00:22:23,080
+Specify the file, and then in
+the unlaunched command,
+
+582
+00:22:23,080 --> 00:22:24,305
+there's a data element.
+
+583
+00:22:24,305 --> 00:22:26,890
+That data is the intent object,
+and once you have a
+
+584
+00:22:26,890 --> 00:22:28,610
+reference to the file-- because
+if it comes in as a
+
+585
+00:22:28,610 --> 00:22:31,550
+file object rather than a blob,
+it's your app, you know
+
+586
+00:22:31,550 --> 00:22:33,180
+it's a file on the user
+system, but you can't
+
+587
+00:22:33,180 --> 00:22:33,690
+write to it, right?
+
+588
+00:22:33,690 --> 00:22:34,560
+Properly?
+
+589
+00:22:34,560 --> 00:22:35,730
+You don't have the
+permissions.
+
+590
+00:22:35,730 --> 00:22:38,460
+And the theory is, and it's what
+we're still working on,
+
+591
+00:22:38,460 --> 00:22:42,300
+is that you get rightful file
+entry for that intent object.
+
+592
+00:22:42,300 --> 00:22:44,040
+That converts it to something
+that you can read and write
+
+593
+00:22:44,040 --> 00:22:48,090
+to, and then you can offer
+the progressive save.
+
+594
+00:22:48,090 --> 00:22:50,296
+The way Web Intents works is
+you'll send something out to
+
+595
+00:22:50,296 --> 00:22:52,460
+another application, edit
+it, and then bring it
+
+596
+00:22:52,460 --> 00:22:53,260
+back into your app.
+
+597
+00:22:53,260 --> 00:22:55,690
+And that doesn't work so well
+for any applications where you
+
+598
+00:22:55,690 --> 00:22:58,940
+want to write the document
+and just keep saving it.
+
+599
+00:22:58,940 --> 00:22:59,690
+ERIC BIDELMAN: Autosave,
+right?
+
+600
+00:22:59,690 --> 00:23:00,810
+That's a great use
+case right there.
+
+601
+00:23:00,810 --> 00:23:03,150
+PAUL KINLAN: And that's exactly
+the type of thing that
+
+602
+00:23:03,150 --> 00:23:06,430
+we're trying to do, is allow you
+to launch your application
+
+603
+00:23:06,430 --> 00:23:08,960
+with Web Intents, but then
+enhance the file system
+
+604
+00:23:08,960 --> 00:23:11,680
+capabilities with
+the same thing.
+
+605
+00:23:11,680 --> 00:23:13,050
+ERIC BIDELMAN: Do you guys want
+to-- should we just show
+
+606
+00:23:13,050 --> 00:23:16,795
+a quick demo of some of the
+Chrome file system API actions
+
+607
+00:23:16,795 --> 00:23:19,450
+for reading and writing
+a file out?
+
+608
+00:23:19,450 --> 00:23:21,070
+ERIC BIDELMAN: It doesn't use
+Web Intents, but I think what
+
+609
+00:23:21,070 --> 00:23:22,580
+Paul's saying--
+
+610
+00:23:22,580 --> 00:23:23,930
+PAUL LEWIS: Aww.
+
+611
+00:23:23,930 --> 00:23:25,500
+PAUL KINLAN: You don't
+want to see it.
+
+612
+00:23:25,500 --> 00:23:26,190
+ERIC BIDELMAN: One at a time.
+
+613
+00:23:26,190 --> 00:23:27,025
+PAUL LEWIS: Actually, the thing
+you were saying about
+
+614
+00:23:27,025 --> 00:23:28,550
+the Open With, that'd be cool.
+
+615
+00:23:28,550 --> 00:23:32,210
+In the Q&A in previous weeks--
+it's actually really good that
+
+616
+00:23:32,210 --> 00:23:33,630
+we are heading in
+that direction.
+
+617
+00:23:33,630 --> 00:23:36,010
+So that answers that question
+really well.
+
+618
+00:23:36,010 --> 00:23:37,680
+PAUL KINLAN: Yeah, so if
+we can see a demo.
+
+619
+00:23:37,680 --> 00:23:40,750
+ERIC BIDELMAN: Yeah, there's
+another demo in our project
+
+620
+00:23:40,750 --> 00:23:43,630
+page for the Chrome App samples,
+and that's just this
+
+621
+00:23:43,630 --> 00:23:46,720
+basic app for file
+system access.
+
+622
+00:23:46,720 --> 00:23:48,676
+And this is using the Chrome--
+
+623
+00:23:48,676 --> 00:23:49,970
+come on, page.
+
+624
+00:23:49,970 --> 00:23:50,320
+There we go.
+
+625
+00:23:50,320 --> 00:23:54,730
+And can we just make sure
+we're sharing my screen.
+
+626
+00:23:54,730 --> 00:23:58,550
+So a basic demo.
+
+627
+00:23:58,550 --> 00:24:00,860
+It's essentially just
+a file picker.
+
+628
+00:24:00,860 --> 00:24:01,600
+Nothing new here.
+
+629
+00:24:01,600 --> 00:24:03,690
+You can do this on
+the web today.
+
+630
+00:24:03,690 --> 00:24:07,874
+But what I'm going to
+do is select a file.
+
+631
+00:24:07,874 --> 00:24:10,054
+Let's see.
+
+632
+00:24:10,054 --> 00:24:12,640
+We'll do this awesome
+web page.
+
+633
+00:24:12,640 --> 00:24:13,940
+So I just selected a web page.
+
+634
+00:24:13,940 --> 00:24:15,990
+I wrote it as a text file.
+
+635
+00:24:15,990 --> 00:24:17,870
+And this is using the
+file of your API.
+
+636
+00:24:17,870 --> 00:24:19,750
+I've read that HTML file.
+
+637
+00:24:19,750 --> 00:24:20,540
+Here's all the HTML.
+
+638
+00:24:20,540 --> 00:24:23,580
+I can go ahead and edit this
+file if I wanted to.
+
+639
+00:24:23,580 --> 00:24:26,800
+This is just an example of an
+"HTML5 Rocks" article that I
+
+640
+00:24:26,800 --> 00:24:27,730
+have started and not finished.
+
+641
+00:24:27,730 --> 00:24:29,440
+Don't tell anybody.
+
+642
+00:24:29,440 --> 00:24:33,150
+But what we can do now that the
+regular HTML5 file system
+
+643
+00:24:33,150 --> 00:24:35,630
+API can do is actually
+save out this file.
+
+644
+00:24:35,630 --> 00:24:37,790
+We can save this anywhere on
+our hard drive, which is
+
+645
+00:24:37,790 --> 00:24:39,040
+really cool.
+
+646
+00:24:39,040 --> 00:24:41,240
+So I think we'll implement
+a Save As button.
+
+647
+00:24:41,240 --> 00:24:45,440
+I can call this debugging2.html
+and save this
+
+648
+00:24:45,440 --> 00:24:46,830
+to my desktop.
+
+649
+00:24:46,830 --> 00:24:50,110
+And boom, when I do that, the
+file's going to be saved.
+
+650
+00:24:50,110 --> 00:24:52,603
+And just to show you, I'm going
+to reopen that file I
+
+651
+00:24:52,603 --> 00:24:54,850
+just saved out in this
+application.
+
+652
+00:24:54,850 --> 00:24:57,840
+So debugging2 that we
+just saved out.
+
+653
+00:24:57,840 --> 00:25:00,500
+And I didn't change
+anything, but I--.
+
+654
+00:25:00,500 --> 00:25:00,780
+PAUL KINLAN: The path did.
+
+655
+00:25:00,780 --> 00:25:01,970
+ERIC BIDELMAN: The path did.
+
+656
+00:25:01,970 --> 00:25:02,220
+That's right.
+
+657
+00:25:02,220 --> 00:25:03,170
+So you can tell it's--
+
+658
+00:25:03,170 --> 00:25:04,233
+nice job.
+
+659
+00:25:04,233 --> 00:25:05,170
+Nice job, Paul.
+
+660
+00:25:05,170 --> 00:25:05,610
+PAUL KINLAN: Thank you.
+
+661
+00:25:05,610 --> 00:25:06,050
+Whew!
+
+662
+00:25:06,050 --> 00:25:07,420
+ERIC BIDELMAN: So we're
+just writing a file.
+
+663
+00:25:07,420 --> 00:25:10,620
+We've opened a file for reading,
+and we've also saved
+
+664
+00:25:10,620 --> 00:25:12,370
+a file to whatever
+name we want.
+
+665
+00:25:12,370 --> 00:25:16,750
+And that's sort of just one of
+many extensions that this--
+
+666
+00:25:16,750 --> 00:25:18,360
+PAUL KINLAN: So this is
+on our GET repository?
+
+667
+00:25:18,360 --> 00:25:20,330
+ERIC BIDELMAN: This sample is
+on our GET repository, yeah.
+
+668
+00:25:20,330 --> 00:25:20,390
+PAUL KINLAN: Cool.
+
+669
+00:25:20,390 --> 00:25:21,870
+OK cool.
+
+670
+00:25:21,870 --> 00:25:23,155
+PAUL KINLAN: And is
+your Google Drive
+
+671
+00:25:23,155 --> 00:25:24,190
+uploaded there as well?
+
+672
+00:25:24,190 --> 00:25:24,380
+ERIC BIDELMAN: Yeah.
+
+673
+00:25:24,380 --> 00:25:26,650
+So those are both samples
+in the repository.
+
+674
+00:25:26,650 --> 00:25:26,870
+PAUL KINLAN: OK.
+
+675
+00:25:26,870 --> 00:25:29,090
+So we should probably share them
+after the program notes.
+
+676
+00:25:29,090 --> 00:25:29,940
+ERIC BIDELMAN: Sure.
+
+677
+00:25:29,940 --> 00:25:34,790
+And just as a caveat, what the
+Google Drive example doesn't
+
+678
+00:25:34,790 --> 00:25:36,660
+have is the file system
+stuff integrated.
+
+679
+00:25:36,660 --> 00:25:39,570
+So I'll actually check that in
+later today and make sure the
+
+680
+00:25:39,570 --> 00:25:42,200
+caching works so you guys
+can check that out.
+
+681
+00:25:42,200 --> 00:25:44,015
+PAUL LEWIS: When somebody comes
+to uninstall the app,
+
+682
+00:25:44,015 --> 00:25:45,960
+what happens to the files
+that they've thrown
+
+683
+00:25:45,960 --> 00:25:46,840
+into the file system?
+
+684
+00:25:46,840 --> 00:25:49,410
+Are they just removed?
+
+685
+00:25:49,410 --> 00:25:50,680
+ERIC BIDELMAN: Good question.
+
+686
+00:25:50,680 --> 00:25:51,910
+PAUL KINLAN: Yes.
+
+687
+00:25:51,910 --> 00:25:53,930
+RENATO MANGINI: Yeah.
+
+688
+00:25:53,930 --> 00:25:54,760
+Can I take this?
+
+689
+00:25:54,760 --> 00:25:55,760
+Step in?
+
+690
+00:25:55,760 --> 00:25:56,160
+PAUL LEWIS: Yeah.
+
+691
+00:25:56,160 --> 00:25:57,410
+[INTERPOSING VOICES]
+
+692
+00:25:57,410 --> 00:26:00,890
+
+693
+00:26:00,890 --> 00:26:01,570
+RENATO MANGINI: Yes.
+
+694
+00:26:01,570 --> 00:26:06,270
+When you uninstall an app out
+of the file system, the app
+
+695
+00:26:06,270 --> 00:26:08,940
+requested is totally removed.
+
+696
+00:26:08,940 --> 00:26:14,296
+When you install it back, if the
+same app is request of the
+
+697
+00:26:14,296 --> 00:26:18,400
+file system, a new fresh file
+system is assigned, too.
+
+698
+00:26:18,400 --> 00:26:24,420
+So there's no reuse of the send
+box a file system area.
+
+699
+00:26:24,420 --> 00:26:30,360
+It's totally to your app while
+it's installed, and when you
+
+700
+00:26:30,360 --> 00:26:33,790
+remove, it's done.
+
+701
+00:26:33,790 --> 00:26:35,450
+PAUL KINLAN: The theory is,
+right, you could actually go
+
+702
+00:26:35,450 --> 00:26:38,330
+and find this directory inside
+your file system, but you
+
+703
+00:26:38,330 --> 00:26:40,470
+can't easily read the files
+because all the directory
+
+704
+00:26:40,470 --> 00:26:42,430
+names, everything's
+confiscated.
+
+705
+00:26:42,430 --> 00:26:45,050
+So you can't actually discern
+any of the information that's
+
+706
+00:26:45,050 --> 00:26:45,700
+been saved.
+
+707
+00:26:45,700 --> 00:26:46,230
+ERIC BIDELMAN: Yeah, and
+normally, it's usually
+
+708
+00:26:46,230 --> 00:26:48,705
+actually quite difficult
+to know what's going
+
+709
+00:26:48,705 --> 00:26:51,140
+on under the hood.
+
+710
+00:26:51,140 --> 00:26:54,000
+PAUL KINLAN: And then to answer
+the-- well, not to
+
+711
+00:26:54,000 --> 00:26:54,730
+answer the point,
+because no one
+
+712
+00:26:54,730 --> 00:26:56,212
+actually asked the question.
+
+713
+00:26:56,212 --> 00:27:00,476
+But just to go full loop, I'll
+say, wow, I can't believe I
+
+714
+00:27:00,476 --> 00:27:00,895
+even said that.
+
+715
+00:27:00,895 --> 00:27:02,085
+PAUL LEWIS: Well, you did.
+
+716
+00:27:02,085 --> 00:27:02,390
+PAUL KINLAN: I did.
+
+717
+00:27:02,390 --> 00:27:03,720
+PAUL LEWIS: And the internet
+never forgets.
+
+718
+00:27:03,720 --> 00:27:05,740
+It's there on record,
+my friend.
+
+719
+00:27:05,740 --> 00:27:07,160
+PAUL KINLAN: If you save
+something to the desktop like
+
+720
+00:27:07,160 --> 00:27:09,360
+you did before, that's a
+different type of thing.
+
+721
+00:27:09,360 --> 00:27:11,200
+But save it to your file system,
+it will always be
+
+722
+00:27:11,200 --> 00:27:12,750
+there regardless of whether
+your application has been
+
+723
+00:27:12,750 --> 00:27:13,750
+removed or not.
+
+724
+00:27:13,750 --> 00:27:17,200
+PAUL LEWIS: So the difference
+is if you save the app with
+
+725
+00:27:17,200 --> 00:27:19,592
+the extended permissions,
+then great.
+
+726
+00:27:19,592 --> 00:27:20,300
+Off you go.
+
+727
+00:27:20,300 --> 00:27:22,550
+It's not going to get removed
+when you uninstall the app.
+
+728
+00:27:22,550 --> 00:27:23,820
+PAUL KINLAN: Yeah, and also,
+just to kind of--
+
+729
+00:27:23,820 --> 00:27:24,610
+I think one final point.
+
+730
+00:27:24,610 --> 00:27:26,660
+I know the Chrome Apps team is
+really interested in people's
+
+731
+00:27:26,660 --> 00:27:29,683
+feedback about how we can work
+with images and data and pull
+
+732
+00:27:29,683 --> 00:27:33,190
+them in because it is a change
+from what we do on the web.
+
+733
+00:27:33,190 --> 00:27:36,660
+Normally native app developers
+are pretty used to this way.
+
+734
+00:27:36,660 --> 00:27:39,345
+You download the image, cache it
+somewhere, and then display
+
+735
+00:27:39,345 --> 00:27:40,520
+inside the app.
+
+736
+00:27:40,520 --> 00:27:42,740
+It's a big change for web
+developers and we want your
+
+737
+00:27:42,740 --> 00:27:45,730
+feedback to see if we can make
+it as smooth as possible.
+
+738
+00:27:45,730 --> 00:27:48,325
+I don't know whether we'll see
+the pure reference text done
+
+739
+00:27:48,325 --> 00:27:50,880
+on images from the back
+end because we
+
+740
+00:27:50,880 --> 00:27:51,680
+can't control it, right?
+
+741
+00:27:51,680 --> 00:27:54,605
+That's the whole point, is that
+if you're in control, we
+
+742
+00:27:54,605 --> 00:27:57,360
+can maybe provide a framework
+like in the file just to go
+
+743
+00:27:57,360 --> 00:28:00,820
+off and start caching things,
+make it a little bit easier.
+
+744
+00:28:00,820 --> 00:28:02,720
+ERIC BIDELMAN: I think some
+kind of really interesting
+
+745
+00:28:02,720 --> 00:28:06,020
+super simple, easy-to-use
+caching library on top a lot
+
+746
+00:28:06,020 --> 00:28:09,290
+of this new stuff, it would be
+very trivial to write but very
+
+747
+00:28:09,290 --> 00:28:10,820
+helpful, I think,
+for a lot of it.
+
+748
+00:28:10,820 --> 00:28:10,900
+PAUL KINLAN: Yeah.
+
+749
+00:28:10,900 --> 00:28:14,910
+And you've already written the
+API helper for file systems?
+
+750
+00:28:14,910 --> 00:28:17,385
+ERIC BIDELMAN: You plug me
+before I plug myself.
+
+751
+00:28:17,385 --> 00:28:19,720
+PAUL KINLAN: So when I do the
+Web Intents one, you've got to
+
+752
+00:28:19,720 --> 00:28:20,470
+pick me up like crazy, man.
+
+753
+00:28:20,470 --> 00:28:20,770
+ERIC BIDELMAN: Oh really?
+
+754
+00:28:20,770 --> 00:28:21,200
+OK.
+
+755
+00:28:21,200 --> 00:28:22,950
+I'm all over it, man.
+
+756
+00:28:22,950 --> 00:28:26,030
+But yeah, so I wrote this
+library called filer.js that
+
+757
+00:28:26,030 --> 00:28:28,100
+Paul alluded to, and it's really
+great if you want to
+
+758
+00:28:28,100 --> 00:28:30,485
+work with the file system
+APIs in general.
+
+759
+00:28:30,485 --> 00:28:34,025
+It wraps everything
+in LS and--
+
+760
+00:28:34,025 --> 00:28:34,500
+PAUL KINLAN: Yeah, a
+nice simple one.
+
+761
+00:28:34,500 --> 00:28:35,640
+ERIC BIDELMAN: Yeah,
+like a Unix-type
+
+762
+00:28:35,640 --> 00:28:38,240
+command for copy, move.
+
+763
+00:28:38,240 --> 00:28:39,210
+There's good stuff there.
+
+764
+00:28:39,210 --> 00:28:42,742
+And it sort of extracts a lot
+of the asynchronous mumbo
+
+765
+00:28:42,742 --> 00:28:44,320
+jumbo that you have
+to go through.
+
+766
+00:28:44,320 --> 00:28:46,330
+PAUL KINLAN: So, actuall, we
+have a question that normally
+
+767
+00:28:46,330 --> 00:28:46,700
+people ask.
+
+768
+00:28:46,700 --> 00:28:51,130
+Is why are our APIs
+asynchronous?
+
+769
+00:28:51,130 --> 00:28:51,810
+ERIC BIDELMAN: Yeah, it's not
+actually synchronous.
+
+770
+00:28:51,810 --> 00:28:52,800
+PAUL KINLAN: Can we just answer
+that question now?
+
+771
+00:28:52,800 --> 00:28:53,400
+PAUL LEWIS: Let's do that.
+
+772
+00:28:53,400 --> 00:28:54,360
+ERIC BIDELMAN: Let's
+take care of it.
+
+773
+00:28:54,360 --> 00:28:55,160
+Who wants to answer it?
+
+774
+00:28:55,160 --> 00:28:56,198
+PAUL KINLAN: Who wants
+to answer it?
+
+775
+00:28:56,198 --> 00:28:57,542
+Oh, no.
+
+776
+00:28:57,542 --> 00:28:59,190
+[INTERPOSING VOICES]
+
+777
+00:28:59,190 --> 00:29:01,630
+PAUL KINLAN: So the Chrome team
+are really keen on making
+
+778
+00:29:01,630 --> 00:29:04,450
+sure the browser and the whole
+user experience never blocks.
+
+779
+00:29:04,450 --> 00:29:06,340
+And particularly when we're
+dealing with data, you may
+
+780
+00:29:06,340 --> 00:29:07,697
+take this to the Chrome
+storage API and not
+
+781
+00:29:07,697 --> 00:29:10,215
+particularly the file
+system API.
+
+782
+00:29:10,215 --> 00:29:13,340
+We tell each other the user
+experience never blocks
+
+783
+00:29:13,340 --> 00:29:15,910
+because the local storage
+API has to block.
+
+784
+00:29:15,910 --> 00:29:18,040
+You know at that moment when you
+save a key and it does a
+
+785
+00:29:18,040 --> 00:29:20,355
+whole lot of weird stuff where
+it opens the entire data space
+
+786
+00:29:20,355 --> 00:29:23,380
+storage file behinds the scenes
+and writes it back in
+
+787
+00:29:23,380 --> 00:29:24,790
+and pulls it back out.
+
+788
+00:29:24,790 --> 00:29:27,120
+With an asynchronous API, we can
+make sure we're consistent
+
+789
+00:29:27,120 --> 00:29:29,370
+across tabs, across windows
+applications, all
+
+790
+00:29:29,370 --> 00:29:30,650
+those types of things.
+
+791
+00:29:30,650 --> 00:29:33,275
+But also, we can provide an
+experience that doesn't block.
+
+792
+00:29:33,275 --> 00:29:35,790
+And I think that's the
+biggest one there.
+
+793
+00:29:35,790 --> 00:29:36,495
+ERIC BIDELMAN: For
+this API, right?
+
+794
+00:29:36,495 --> 00:29:38,726
+We're talking about a ton of--
+you saw me write a hundred
+
+795
+00:29:38,726 --> 00:29:40,610
+images out to-- we're doing
+disk I/O, right?
+
+796
+00:29:40,610 --> 00:29:41,100
+PAUL KINLAN: Yes.
+
+797
+00:29:41,100 --> 00:29:42,930
+ERIC BIDELMAN: And that's the
+last thing you want to do is
+
+798
+00:29:42,930 --> 00:29:45,360
+block your user experience
+doing operations.
+
+799
+00:29:45,360 --> 00:29:46,550
+PAUL KINLAN: Especially
+if you fling
+
+800
+00:29:46,550 --> 00:29:47,540
+the whole user interface.
+
+801
+00:29:47,540 --> 00:29:49,140
+You scroll down a
+thousand items.
+
+802
+00:29:49,140 --> 00:29:52,770
+You don't want to have to fire
+up all the requests and--
+
+803
+00:29:52,770 --> 00:29:54,960
+PAUL LEWIS: Arguably you could
+be downloading a massive video
+
+804
+00:29:54,960 --> 00:29:56,400
+file as well, right?
+
+805
+00:29:56,400 --> 00:29:57,880
+And writing that might
+take some time.
+
+806
+00:29:57,880 --> 00:30:00,220
+There's no guarantee that the
+thing you're writing to is
+
+807
+00:30:00,220 --> 00:30:01,750
+going to be quick storage.
+
+808
+00:30:01,750 --> 00:30:02,880
+So--
+
+809
+00:30:02,880 --> 00:30:03,240
+PAUL KINLAN: Yes.
+
+810
+00:30:03,240 --> 00:30:06,210
+PAUL LEWIS: --imagine writing
+a big file to slow storage.
+
+811
+00:30:06,210 --> 00:30:07,310
+Your app just hangs.
+
+812
+00:30:07,310 --> 00:30:08,830
+Users get upset.
+
+813
+00:30:08,830 --> 00:30:11,220
+It's all bad.
+
+814
+00:30:11,220 --> 00:30:13,960
+PAUL KINLAN: When you look at JS
+now, we see all these APIs
+
+815
+00:30:13,960 --> 00:30:16,465
+now pretty much async only.
+
+816
+00:30:16,465 --> 00:30:18,190
+We're trying to get
+[INAUDIBLE]
+
+817
+00:30:18,190 --> 00:30:19,740
+on blocks, so developers,
+especially JavaScript
+
+818
+00:30:19,740 --> 00:30:22,000
+developers, are starting
+to get used to it.
+
+819
+00:30:22,000 --> 00:30:25,000
+So it's the mind shift from,
+well, I had key value pair
+
+820
+00:30:25,000 --> 00:30:26,855
+originally, and it
+was synchronous.
+
+821
+00:30:26,855 --> 00:30:29,880
+I just saved some data, and
+it went and [INAUDIBLE].
+
+822
+00:30:29,880 --> 00:30:31,990
+And now [INAUDIBLE].
+
+823
+00:30:31,990 --> 00:30:33,850
+Maybe we can provide some apps,
+like Backbone did when
+
+824
+00:30:33,850 --> 00:30:36,250
+we were doing some experiments
+on Backbone.
+
+825
+00:30:36,250 --> 00:30:39,240
+Lawnchair, when Paul
+was experimenting
+
+826
+00:30:39,240 --> 00:30:40,920
+with Lawnchair, right?
+
+827
+00:30:40,920 --> 00:30:43,780
+That is an inherently
+asynchronous API.
+
+828
+00:30:43,780 --> 00:30:46,040
+PAUL LEWIS: One of the
+challenges, I think, for the
+
+829
+00:30:46,040 --> 00:30:50,030
+[INAUDIBLE], if you have a
+number of operations that you
+
+830
+00:30:50,030 --> 00:30:51,690
+need to complete and they're
+going to happen
+
+831
+00:30:51,690 --> 00:30:54,230
+asynchronously, and you want to
+coordinate an action when
+
+832
+00:30:54,230 --> 00:30:56,540
+several of those have
+actually completed.
+
+833
+00:30:56,540 --> 00:30:57,390
+But that's the challenge.
+
+834
+00:30:57,390 --> 00:31:00,515
+I think it is a different
+mindset that
+
+835
+00:31:00,515 --> 00:31:01,130
+you need to be in.
+
+836
+00:31:01,130 --> 00:31:02,410
+PAUL KINLAN: So I happened
+to write a library.
+
+837
+00:31:02,410 --> 00:31:03,090
+PAUL LEWIS: Did you?
+
+838
+00:31:03,090 --> 00:31:03,550
+PAUL KINLAN: Yes, I did.
+
+839
+00:31:03,550 --> 00:31:05,126
+PAUL LEWIS: That's funny.
+
+840
+00:31:05,126 --> 00:31:07,540
+PAUL KINLAN: It's almost
+that you hear about it.
+
+841
+00:31:07,540 --> 00:31:08,533
+PAUL LEWIS: Goodness.
+
+842
+00:31:08,533 --> 00:31:10,610
+PAUL KINLAN: Observer, yes, it
+was an experimental library,
+
+843
+00:31:10,610 --> 00:31:12,530
+but the idea is--
+
+844
+00:31:12,530 --> 00:31:14,020
+ERIC BIDELMAN: Is
+it [INAUDIBLE]?
+
+845
+00:31:14,020 --> 00:31:16,760
+PAUL KINLAN: It's any normal
+asynchronous callback.
+
+846
+00:31:16,760 --> 00:31:20,900
+What you basically say is, it
+monitors changes on an object.
+
+847
+00:31:20,900 --> 00:31:24,960
+So if you have a callback which,
+say, manipulates a JSON
+
+848
+00:31:24,960 --> 00:31:27,520
+object, which is not
+[INAUDIBLE], it doesn't
+
+849
+00:31:27,520 --> 00:31:30,940
+particularly care about the
+asynchronous API or the
+
+850
+00:31:30,940 --> 00:31:32,660
+geolocation API.
+
+851
+00:31:32,660 --> 00:31:34,310
+It just says, well, this
+date when it's updated,
+
+852
+00:31:34,310 --> 00:31:35,280
+I'll watch for it.
+
+853
+00:31:35,280 --> 00:31:39,210
+And then when all these three
+other different variables were
+
+854
+00:31:39,210 --> 00:31:41,770
+also updated, fire this
+piece of logic.
+
+855
+00:31:41,770 --> 00:31:43,120
+ERIC BIDELMAN: So you basically
+implemented Object
+
+856
+00:31:43,120 --> 00:31:46,330
+on Observe before it was time.
+
+857
+00:31:46,330 --> 00:31:46,630
+PAUL KINLAN: Maybe.
+
+858
+00:31:46,630 --> 00:31:47,690
+ERIC BIDELMAN: Does everybody
+know what
+
+859
+00:31:47,690 --> 00:31:48,150
+Object on Observe is?
+
+860
+00:31:48,150 --> 00:31:51,092
+PAUL LEWIS: I do, but I would
+love to hear you explain it.
+
+861
+00:31:51,092 --> 00:31:52,590
+ERIC BIDELMAN: Well, I searched
+the web, and I'll
+
+862
+00:31:52,590 --> 00:31:54,330
+probably find interesting
+links.
+
+863
+00:31:54,330 --> 00:31:58,410
+Object on Observe is the ability
+to actually do exactly
+
+864
+00:31:58,410 --> 00:32:00,190
+what you're saying natively
+in the browser.
+
+865
+00:32:00,190 --> 00:32:03,390
+So a lot of MVC frameworks,
+for instance, use sort of
+
+866
+00:32:03,390 --> 00:32:05,870
+dirty checking to know what's
+changed in an object and
+
+867
+00:32:05,870 --> 00:32:07,940
+update their data binding.
+
+868
+00:32:07,940 --> 00:32:11,310
+Instead, Object on Observe is
+something that's being specced
+
+869
+00:32:11,310 --> 00:32:14,120
+out in the TC39--
+
+870
+00:32:14,120 --> 00:32:14,590
+PAUL KINLAN: [INAUDIBLE].
+
+871
+00:32:14,590 --> 00:32:14,830
+PAUL LEWIS: Yeah.
+
+872
+00:32:14,830 --> 00:32:16,940
+ERIC BIDELMAN: --record, but
+it just as it appears.
+
+873
+00:32:16,940 --> 00:32:18,800
+But it's being specced out, and
+it actually brings this
+
+874
+00:32:18,800 --> 00:32:21,880
+natively to the browser, so you
+can instantiate an object
+
+875
+00:32:21,880 --> 00:32:23,955
+and know exactly what's changed
+on it, what properties
+
+876
+00:32:23,955 --> 00:32:26,340
+have been added or removed.
+
+877
+00:32:26,340 --> 00:32:27,970
+So essentially, no more
+dirty checking.
+
+878
+00:32:27,970 --> 00:32:30,980
+We can know this in an informant
+way now, and so MVC
+
+879
+00:32:30,980 --> 00:32:32,910
+frameworks are going to
+definitely benefit from this.
+
+880
+00:32:32,910 --> 00:32:36,010
+
+881
+00:32:36,010 --> 00:32:38,950
+RENATO MANGINI: The Observer
+is already
+
+882
+00:32:38,950 --> 00:32:41,290
+on the Canary, right?
+
+883
+00:32:41,290 --> 00:32:43,180
+ERIC BIDELMAN: It's not.
+
+884
+00:32:43,180 --> 00:32:45,520
+If you just do a search on
+Object on Observe, there's
+
+885
+00:32:45,520 --> 00:32:47,810
+been a couple of great
+posts already on it.
+
+886
+00:32:47,810 --> 00:32:50,060
+And there's a special build
+of Chromium that has it
+
+887
+00:32:50,060 --> 00:32:51,910
+implemented that you can
+start playing around.
+
+888
+00:32:51,910 --> 00:32:54,330
+There's a really fantastic
+demo, too.
+
+889
+00:32:54,330 --> 00:32:56,230
+PAUL LEWIS: [INAUDIBLE].
+
+890
+00:32:56,230 --> 00:32:59,820
+RENATO MANGINI: I think there's
+an implementation
+
+891
+00:32:59,820 --> 00:33:03,885
+already, because last week I
+gave a talk, and I used the
+
+892
+00:33:03,885 --> 00:33:09,740
+Observer on my IO slides,
+and it worked.
+
+893
+00:33:09,740 --> 00:33:11,080
+PAUL LEWIS: See, he's
+a trailblazer.
+
+894
+00:33:11,080 --> 00:33:11,840
+ERIC BIDELMAN: Trailblazer.
+
+895
+00:33:11,840 --> 00:33:14,260
+RENATO MANGINI: I think
+it just landed.
+
+896
+00:33:14,260 --> 00:33:15,985
+It's recent stuff.
+
+897
+00:33:15,985 --> 00:33:17,420
+PAUL KINLAN: That's
+pretty cool.
+
+898
+00:33:17,420 --> 00:33:18,880
+PAUL LEWIS: So give
+that a shot, see--
+
+899
+00:33:18,880 --> 00:33:21,410
+PAUL KINLAN: It's going to be
+so cool for data binding.
+
+900
+00:33:21,410 --> 00:33:23,560
+PAUL LEWIS: It's going to be
+cool in any number of ways.
+
+901
+00:33:23,560 --> 00:33:26,570
+When I wrote the 3D engine, one
+of the biggest challenges
+
+902
+00:33:26,570 --> 00:33:27,940
+is when objects change.
+
+903
+00:33:27,940 --> 00:33:30,040
+[INTERPOSING VOICES]
+
+904
+00:33:30,040 --> 00:33:30,963
+PAUL LEWIS: That's all right.
+
+905
+00:33:30,963 --> 00:33:31,890
+Let's not go there.
+
+906
+00:33:31,890 --> 00:33:32,300
+But--
+
+907
+00:33:32,300 --> 00:33:34,400
+PAUL KINLAN: Do it.
+
+908
+00:33:34,400 --> 00:33:36,630
+RENATO MANGINI: Hey, do
+you want to hear what
+
+909
+00:33:36,630 --> 00:33:38,310
+I did on this talk?
+
+910
+00:33:38,310 --> 00:33:39,550
+PAUL KINLAN: Yeah.
+
+911
+00:33:39,550 --> 00:33:43,710
+RENATO MANGINI: I put some
+of servers on the slides
+
+912
+00:33:43,710 --> 00:33:48,200
+themselves, and every time a
+class changed, I called a
+
+913
+00:33:48,200 --> 00:33:49,970
+specific JavaScript function.
+
+914
+00:33:49,970 --> 00:33:55,150
+And this JavaScript function got
+the slide color, the most
+
+915
+00:33:55,150 --> 00:34:01,670
+used color on the slide and
+the central USB to DMX
+
+916
+00:34:01,670 --> 00:34:03,250
+lightning hardware.
+
+917
+00:34:03,250 --> 00:34:07,950
+So I changed the stage color,
+background color, when I
+
+918
+00:34:07,950 --> 00:34:10,150
+switched it from one
+slide to the other.
+
+919
+00:34:10,150 --> 00:34:10,440
+PAUL LEWIS: No way.
+
+920
+00:34:10,440 --> 00:34:15,820
+I So you actually were just
+using the Chrome USB API to
+
+921
+00:34:15,820 --> 00:34:16,639
+make everything--
+
+922
+00:34:16,639 --> 00:34:17,320
+RENATO MANGINI: Yes.
+
+923
+00:34:17,320 --> 00:34:18,940
+PAUL LEWIS: --to organize
+your presenting.
+
+924
+00:34:18,940 --> 00:34:19,370
+RENATO MANGINI: Yeah.
+
+925
+00:34:19,370 --> 00:34:22,389
+And it was available
+for 1,000 people.
+
+926
+00:34:22,389 --> 00:34:23,889
+And it worked.
+
+927
+00:34:23,889 --> 00:34:26,420
+PAUL LEWIS: [INAUDIBLE].
+
+928
+00:34:26,420 --> 00:34:27,350
+RENATO MANGINI: Yeah.
+
+929
+00:34:27,350 --> 00:34:29,750
+I'm waiting for an
+organization--
+
+930
+00:34:29,750 --> 00:34:30,460
+PAUL LEWIS: Is it out?
+
+931
+00:34:30,460 --> 00:34:32,320
+RENATO MANGINI: No, it's
+not ready yet.
+
+932
+00:34:32,320 --> 00:34:35,530
+It will probably be later
+of this week.
+
+933
+00:34:35,530 --> 00:34:36,356
+PAUL LEWIS: That's definitely
+something
+
+934
+00:34:36,356 --> 00:34:38,000
+we're going to be showing.
+
+935
+00:34:38,000 --> 00:34:39,960
+PAUL KINLAN: So do realize
+because we've got a hackathon
+
+936
+00:34:39,960 --> 00:34:41,699
+next week, it's an
+internal one.
+
+937
+00:34:41,699 --> 00:34:43,159
+He can't actually
+do that then.
+
+938
+00:34:43,159 --> 00:34:45,320
+If he comes on and shows
+off his thing at the
+
+939
+00:34:45,320 --> 00:34:46,270
+end of the two days--
+
+940
+00:34:46,270 --> 00:34:47,270
+PAUL LEWIS: Yeah,
+you're barred.
+
+941
+00:34:47,270 --> 00:34:48,610
+[INTERPOSING VOICES]
+
+942
+00:34:48,610 --> 00:34:50,570
+RENATO MANGINI: Absolutely,
+absolutely.
+
+943
+00:34:50,570 --> 00:34:51,739
+We'll talk about that.
+
+944
+00:34:51,739 --> 00:34:53,030
+ERIC BIDELMAN: Just to clarify,
+it sounds like you're
+
+945
+00:34:53,030 --> 00:34:55,712
+using mutation observers
+and not Object on
+
+946
+00:34:55,712 --> 00:34:57,630
+Observe, which are--
+
+947
+00:34:57,630 --> 00:34:59,170
+RENATO MANGINI: Yeah,
+yeah, true.
+
+948
+00:34:59,170 --> 00:34:59,630
+ERIC BIDELMAN: To clarify
+for everyone.
+
+949
+00:34:59,630 --> 00:35:00,440
+RENATO MANGINI: That's true.
+
+950
+00:35:00,440 --> 00:35:01,610
+ERIC BIDELMAN: Actually,
+observers are cool, too.
+
+951
+00:35:01,610 --> 00:35:02,910
+We should probably
+do an amazing
+
+952
+00:35:02,910 --> 00:35:04,105
+session on that sometime.
+
+953
+00:35:04,105 --> 00:35:05,330
+PAUL KINLAN: Yeah, mutations
+are like-- yeah.
+
+954
+00:35:05,330 --> 00:35:06,450
+ERIC BIDELMAN: Yeah,
+two different
+
+955
+00:35:06,450 --> 00:35:07,850
+things, but similar type.
+
+956
+00:35:07,850 --> 00:35:10,430
+You just watch for changes,
+whether it's at the object
+
+957
+00:35:10,430 --> 00:35:12,575
+level or at the DOM level.
+
+958
+00:35:12,575 --> 00:35:14,030
+PAUL KINLAN: Cool.
+
+959
+00:35:14,030 --> 00:35:14,335
+RENATO MANGINI: Yeah.
+
+960
+00:35:14,335 --> 00:35:15,350
+True.
+
+961
+00:35:15,350 --> 00:35:16,780
+Sorry about that.
+
+962
+00:35:16,780 --> 00:35:18,010
+PAUL LEWIS: No problem, man.
+
+963
+00:35:18,010 --> 00:35:19,560
+Should we switch to
+the Q&A then?
+
+964
+00:35:19,560 --> 00:35:22,316
+PAUL KINLAN: I think we should
+go to the Q&A, see what kind
+
+965
+00:35:22,316 --> 00:35:23,080
+of questions people
+are asking.
+
+966
+00:35:23,080 --> 00:35:24,950
+RENATO MANGINI: One
+last thing.
+
+967
+00:35:24,950 --> 00:35:31,625
+Eric, can we discuss about the
+use case from Chrome storage
+
+968
+00:35:31,625 --> 00:35:33,830
+and the file system API?
+
+969
+00:35:33,830 --> 00:35:35,690
+I'm a developer.
+
+970
+00:35:35,690 --> 00:35:39,590
+Why should I use Chrome
+storage or file
+
+971
+00:35:39,590 --> 00:35:42,050
+system APIs and when?
+
+972
+00:35:42,050 --> 00:35:43,400
+ERIC BIDELMAN: Well,
+everybody--
+
+973
+00:35:43,400 --> 00:35:43,980
+PAUL KINLAN: Quickly.
+
+974
+00:35:43,980 --> 00:35:44,680
+ERIC BIDELMAN: It's
+way better.
+
+975
+00:35:44,680 --> 00:35:47,140
+Just like Web Intents is way
+better for everybody.
+
+976
+00:35:47,140 --> 00:35:48,333
+No, I'm just kidding.
+
+977
+00:35:48,333 --> 00:35:48,806
+PAUL KINLAN: Oh!
+
+978
+00:35:48,806 --> 00:35:50,576
+Not Web Intents.
+
+979
+00:35:50,576 --> 00:35:51,856
+PAUL LEWIS: You guys.
+
+980
+00:35:51,856 --> 00:35:54,180
+ERIC BIDELMAN: So there's a
+couple of different use cases.
+
+981
+00:35:54,180 --> 00:35:58,350
+You can start everything
+in the file system API
+
+982
+00:35:58,350 --> 00:35:59,870
+if you wanted to.
+
+983
+00:35:59,870 --> 00:36:02,380
+But Chrome Storage has
+the really great
+
+984
+00:36:02,380 --> 00:36:04,450
+ability to do syncing.
+
+985
+00:36:04,450 --> 00:36:06,430
+So there's sync that's
+involved.
+
+986
+00:36:06,430 --> 00:36:08,540
+You don't, as a developer, have
+to worry about syncing
+
+987
+00:36:08,540 --> 00:36:11,080
+data from your client and
+keeping things across
+
+988
+00:36:11,080 --> 00:36:12,890
+different installs of
+your application.
+
+989
+00:36:12,890 --> 00:36:16,120
+So that's one super anything
+about Chrome Storage API.
+
+990
+00:36:16,120 --> 00:36:19,240
+The other thing is, if you need
+a small amount of data,
+
+991
+00:36:19,240 --> 00:36:22,080
+there's no reason not to
+use Chrome Storage.
+
+992
+00:36:22,080 --> 00:36:23,010
+It's great for that.
+
+993
+00:36:23,010 --> 00:36:26,990
+It's for small chunks of
+data, very simple data.
+
+994
+00:36:26,990 --> 00:36:29,100
+Think of it as a syncable
+solution
+
+995
+00:36:29,100 --> 00:36:30,200
+replacement for App Cat--
+
+996
+00:36:30,200 --> 00:36:32,590
+or excuse me, local storage.
+
+997
+00:36:32,590 --> 00:36:34,310
+PAUL KINLAN: App Cat, that
+would be pretty cool.
+
+998
+00:36:34,310 --> 00:36:36,120
+ERIC BIDELMAN: That would
+be really nice.
+
+999
+00:36:36,120 --> 00:36:38,670
+Whereas the file system API, if
+you need more complex data.
+
+1000
+00:36:38,670 --> 00:36:41,220
+If you need to store and create
+folders, if you need to
+
+1001
+00:36:41,220 --> 00:36:45,660
+store imagery and binary files
+and blobs and videos and store
+
+1002
+00:36:45,660 --> 00:36:49,090
+way more stuff than basic small
+amount of data, that's
+
+1003
+00:36:49,090 --> 00:36:52,564
+your best bet right there,
+is the file system API.
+
+1004
+00:36:52,564 --> 00:36:53,011
+RENATO MANGINI: That's
+awesome.
+
+1005
+00:36:53,011 --> 00:36:54,946
+PAUL KINLAN: So I think we
+have a question about
+
+1006
+00:36:54,946 --> 00:36:57,925
+synchronizing if you want to
+save a file and synchronize it
+
+1007
+00:36:57,925 --> 00:36:59,310
+across devices.
+
+1008
+00:36:59,310 --> 00:37:02,130
+We don't have synchronized files
+system API, which will
+
+1009
+00:37:02,130 --> 00:37:03,040
+be absolutely killer.
+
+1010
+00:37:03,040 --> 00:37:04,240
+ERIC BIDELMAN: That would
+be really killer.
+
+1011
+00:37:04,240 --> 00:37:06,260
+PAUL KINLAN: I think the--
+
+1012
+00:37:06,260 --> 00:37:07,510
+we haven't exactly explored
+this pattern
+
+1013
+00:37:07,510 --> 00:37:08,255
+too much at the moment.
+
+1014
+00:37:08,255 --> 00:37:10,700
+The general thought is to use
+them from Drive potentially
+
+1015
+00:37:10,700 --> 00:37:14,540
+using some of the API that
+Eric used today.
+
+1016
+00:37:14,540 --> 00:37:15,560
+Synchronize it through Drive.
+
+1017
+00:37:15,560 --> 00:37:18,840
+And if you want to share a key
+in the settings between your
+
+1018
+00:37:18,840 --> 00:37:22,540
+two different apps, then you
+share the basic what to pick
+
+1019
+00:37:22,540 --> 00:37:27,460
+out back from Drive via the
+Chrome sync storage mechanisms
+
+1020
+00:37:27,460 --> 00:37:28,330
+essentially.
+
+1021
+00:37:28,330 --> 00:37:31,456
+Whether it's tokens, with tokens
+you can do that with
+
+1022
+00:37:31,456 --> 00:37:34,060
+Google Drive, at least,
+and then bring that
+
+1023
+00:37:34,060 --> 00:37:35,480
+back in that way.
+
+1024
+00:37:35,480 --> 00:37:38,310
+So it's non-sequenced, you have
+to implement with Drive,
+
+1025
+00:37:38,310 --> 00:37:41,660
+but then it also allows you to
+do it with Dropbox and all
+
+1026
+00:37:41,660 --> 00:37:41,820
+those other different APIs.
+
+1027
+00:37:41,820 --> 00:37:45,510
+PAUL LEWIS: If this is a use
+case that is of interest, we'd
+
+1028
+00:37:45,510 --> 00:37:47,530
+love to get that feedback.
+
+1029
+00:37:47,530 --> 00:37:49,970
+It's stuff that we can talk
+through with the engineers,
+
+1030
+00:37:49,970 --> 00:37:53,666
+and if that's the kind of things
+that you app developers
+
+1031
+00:37:53,666 --> 00:37:55,090
+want, then just let us know.
+
+1032
+00:37:55,090 --> 00:37:55,500
+PAUL KINLAN: Yeah.
+
+1033
+00:37:55,500 --> 00:37:56,095
+ERIC BIDELMAN: It's
+already the plan.
+
+1034
+00:37:56,095 --> 00:37:59,270
+PAUL KINLAN: So onto
+the questions.
+
+1035
+00:37:59,270 --> 00:38:01,840
+Let me pick the nice
+questions.
+
+1036
+00:38:01,840 --> 00:38:02,650
+Paul.
+
+1037
+00:38:02,650 --> 00:38:03,030
+PAUL LEWIS: Yes.
+
+1038
+00:38:03,030 --> 00:38:03,140
+PAUL KINLAN: You are awesome.
+
+1039
+00:38:03,140 --> 00:38:05,360
+PAUL LEWIS: Thank you.
+
+1040
+00:38:05,360 --> 00:38:06,690
+PAUL KINLAN: No one said that.
+
+1041
+00:38:06,690 --> 00:38:06,920
+ERIC BIDELMAN: Wait a minute.
+
+1042
+00:38:06,920 --> 00:38:08,405
+That was downloaded, man.
+
+1043
+00:38:08,405 --> 00:38:08,900
+[LAUGHTER]
+
+1044
+00:38:08,900 --> 00:38:10,145
+PAUL LEWIS: That was
+inappropriate.
+
+1045
+00:38:10,145 --> 00:38:13,280
+[LAUGHTER]
+
+1046
+00:38:13,280 --> 00:38:13,850
+PAUL KINLAN: Apologies.
+
+1047
+00:38:13,850 --> 00:38:15,820
+Let me refresh in two seconds.
+
+1048
+00:38:15,820 --> 00:38:18,010
+The first question that would
+be the most popular one is
+
+1049
+00:38:18,010 --> 00:38:28,410
+when will it be possible to
+upload new packaged apps
+
+1050
+00:38:28,410 --> 00:38:31,770
+manifest v2 from the
+Chrome Store?
+
+1051
+00:38:31,770 --> 00:38:33,770
+We don't particularly have an
+answer to that right now.
+
+1052
+00:38:33,770 --> 00:38:37,170
+
+1053
+00:38:37,170 --> 00:38:39,400
+The thing is, right now at the
+moment, it's still only
+
+1054
+00:38:39,400 --> 00:38:42,080
+available in Canary and Dev.
+
+1055
+00:38:42,080 --> 00:38:43,950
+Some of them might have
+gone to [INAUDIBLE].
+
+1056
+00:38:43,950 --> 00:38:45,830
+I'm not too sure.
+
+1057
+00:38:45,830 --> 00:38:48,680
+You want to make sure the
+framework is in a lot better
+
+1058
+00:38:48,680 --> 00:38:51,846
+state than the development
+experimental phase that we're
+
+1059
+00:38:51,846 --> 00:38:52,540
+in at the moment.
+
+1060
+00:38:52,540 --> 00:38:55,230
+So we don't have an answer right
+now, but we will tell
+
+1061
+00:38:55,230 --> 00:38:58,090
+you as soon as it's going to
+happen, and we'll talk you
+
+1062
+00:38:58,090 --> 00:38:59,950
+through the whole process
+of uploading and
+
+1063
+00:38:59,950 --> 00:39:00,870
+everything like this.
+
+1064
+00:39:00,870 --> 00:39:03,020
+That doesn't mean you can't make
+applications and get them
+
+1065
+00:39:03,020 --> 00:39:05,010
+installed and everything,
+but it's a
+
+1066
+00:39:05,010 --> 00:39:06,150
+little bit more complex.
+
+1067
+00:39:06,150 --> 00:39:08,170
+You have to load them in through
+the load extensions
+
+1068
+00:39:08,170 --> 00:39:09,260
+menu and that kind of stuff.
+
+1069
+00:39:09,260 --> 00:39:10,150
+PAUL LEWIS: Yeah.
+
+1070
+00:39:10,150 --> 00:39:12,540
+PAUL KINLAN: So it's not
+production-ready just yet.
+
+1071
+00:39:12,540 --> 00:39:13,950
+We need a lot of feedback.
+
+1072
+00:39:13,950 --> 00:39:15,460
+Obviously, this is why we're
+doing all these talks at the
+
+1073
+00:39:15,460 --> 00:39:17,960
+moment to kind of get this.
+
+1074
+00:39:17,960 --> 00:39:20,480
+My question back to you, Jarek?
+
+1075
+00:39:20,480 --> 00:39:21,800
+Harek?
+
+1076
+00:39:21,800 --> 00:39:22,690
+PAUL LEWIS: I think
+it's Yarek.
+
+1077
+00:39:22,690 --> 00:39:23,040
+PAUL KINLAN: Yarek?
+
+1078
+00:39:23,040 --> 00:39:24,810
+PAUL LEWIS: Yeah, I believe he's
+from Poland, so Yarek.
+
+1079
+00:39:24,810 --> 00:39:25,120
+PAUL KINLAN: Oh, Yarek.
+
+1080
+00:39:25,120 --> 00:39:27,300
+Sorry, I apologize if
+I got that wrong.
+
+1081
+00:39:27,300 --> 00:39:30,800
+Just send us things that you
+want that the Chrome App Store
+
+1082
+00:39:30,800 --> 00:39:32,780
+to be able to do for you
+as well as far as
+
+1083
+00:39:32,780 --> 00:39:34,360
+the Chrome Apps packaged--
+
+1084
+00:39:34,360 --> 00:39:36,900
+Version 2 packaged app
+end point as well.
+
+1085
+00:39:36,900 --> 00:39:39,520
+Because if there's things that
+frustrate you now, we want to
+
+1086
+00:39:39,520 --> 00:39:43,492
+get those things fixed in the
+next versions at least.
+
+1087
+00:39:43,492 --> 00:39:44,870
+That was kind of diplomatic,
+wasn't it?
+
+1088
+00:39:44,870 --> 00:39:46,280
+It's kind of cool.
+
+1089
+00:39:46,280 --> 00:39:46,910
+Next question.
+
+1090
+00:39:46,910 --> 00:39:50,090
+Why Chrome Storage [INAUDIBLE]
+
+1091
+00:39:50,090 --> 00:39:51,330
+is so small?
+
+1092
+00:39:51,330 --> 00:39:52,790
+Right now, it's set to 4K.
+
+1093
+00:39:52,790 --> 00:39:55,420
+It's not enough if you want to
+store user-defined keyword
+
+1094
+00:39:55,420 --> 00:39:58,050
+shortcuts in a medium-sized
+app.
+
+1095
+00:39:58,050 --> 00:39:59,210
+So I believe this is per item.
+
+1096
+00:39:59,210 --> 00:40:00,290
+PAUL LEWIS: Per item.
+
+1097
+00:40:00,290 --> 00:40:02,290
+So you could store--
+
+1098
+00:40:02,290 --> 00:40:04,190
+each key would--
+
+1099
+00:40:04,190 --> 00:40:05,740
+PAUL KINLAN: Each key
+is a separate item.
+
+1100
+00:40:05,740 --> 00:40:07,460
+PAUL LEWIS: So 4K for a single
+keyboard shortcut would be
+
+1101
+00:40:07,460 --> 00:40:07,890
+quite a lot.
+
+1102
+00:40:07,890 --> 00:40:08,335
+ERIC BIDELMAN: Yeah.
+
+1103
+00:40:08,335 --> 00:40:08,780
+PAUL KINLAN: Yeah.
+
+1104
+00:40:08,780 --> 00:40:10,590
+So I think it's just the way you
+structure your app, right?
+
+1105
+00:40:10,590 --> 00:40:12,390
+Basically, break it out
+into different keys
+
+1106
+00:40:12,390 --> 00:40:14,000
+with different bindings.
+
+1107
+00:40:14,000 --> 00:40:16,470
+If you have something where you
+can't discover those keys,
+
+1108
+00:40:16,470 --> 00:40:19,490
+because it might be just like
+a complete custom space, is
+
+1109
+00:40:19,490 --> 00:40:20,820
+have a mapping object
+to say what types of
+
+1110
+00:40:20,820 --> 00:40:21,870
+keys are inside there.
+
+1111
+00:40:21,870 --> 00:40:24,350
+But you should be able to get
+most of it done inside 4K.
+
+1112
+00:40:24,350 --> 00:40:26,810
+PAUL LEWIS: The key to this
+is to understand that
+
+1113
+00:40:26,810 --> 00:40:27,930
+chrome.storage.sync--
+
+1114
+00:40:27,930 --> 00:40:28,410
+PAUL KINLAN: [INAUDIBLE].
+
+1115
+00:40:28,410 --> 00:40:32,700
+PAUL LEWIS: It wasn't, but it
+can be now that you've asked.
+
+1116
+00:40:32,700 --> 00:40:36,220
+PAUL LEWIS: Is to remember that
+we're not aiming for a
+
+1117
+00:40:36,220 --> 00:40:39,530
+storage solution here that is
+storing these big chunks of
+
+1118
+00:40:39,530 --> 00:40:42,050
+data all in one go.
+
+1119
+00:40:42,050 --> 00:40:45,210
+We need to break these things
+down into smaller--
+
+1120
+00:40:45,210 --> 00:40:49,380
+I want to say bit-sized chunks,
+but that's not right.
+
+1121
+00:40:49,380 --> 00:40:50,340
+You just break it down.
+
+1122
+00:40:50,340 --> 00:40:52,850
+And like you said, it's about
+structuring your app and
+
+1123
+00:40:52,850 --> 00:40:56,210
+working with those quotas for
+that app because it allows us
+
+1124
+00:40:56,210 --> 00:40:57,270
+to sync better, basically.
+
+1125
+00:40:57,270 --> 00:40:58,730
+PAUL KINLAN:Yeah, I mean, the
+more feedback that we get--
+
+1126
+00:40:58,730 --> 00:40:59,770
+PAUL LEWIS: But if--
+yeah, if it's a--
+
+1127
+00:40:59,770 --> 00:41:01,620
+PAUL KINLAN: If every single
+developer says that--
+
+1128
+00:41:01,620 --> 00:41:01,880
+PAUL LEWIS: Right.
+
+1129
+00:41:01,880 --> 00:41:03,780
+You want that, then
+let us know.
+
+1130
+00:41:03,780 --> 00:41:06,100
+PAUL KINLAN: Could you explain
+the phone source sync
+
+1131
+00:41:06,100 --> 00:41:07,350
+[INAUDIBLE]?
+
+1132
+00:41:07,350 --> 00:41:09,410
+
+1133
+00:41:09,410 --> 00:41:09,850
+PAUL LEWIS: Yeah.
+
+1134
+00:41:09,850 --> 00:41:12,910
+So there's a difference between
+the quotes, which are
+
+1135
+00:41:12,910 --> 00:41:15,370
+just the amount that you can
+write, and then this is about
+
+1136
+00:41:15,370 --> 00:41:17,810
+how often you can write
+that stuff.
+
+1137
+00:41:17,810 --> 00:41:21,340
+So again, this is stopping
+you from flooding loads
+
+1138
+00:41:21,340 --> 00:41:24,900
+of data to the API.
+
+1139
+00:41:24,900 --> 00:41:26,940
+PAUL KINLAN: If it's applied
+between, in theory, you could
+
+1140
+00:41:26,940 --> 00:41:27,490
+change it--
+
+1141
+00:41:27,490 --> 00:41:27,850
+PAUL LEWIS: OK.
+
+1142
+00:41:27,850 --> 00:41:29,005
+PAUL KINLAN: --you'd
+probably presume.
+
+1143
+00:41:29,005 --> 00:41:30,970
+But why you'd want to because
+all the users wouldn't have
+
+1144
+00:41:30,970 --> 00:41:32,800
+that flag, unfortunately.
+
+1145
+00:41:32,800 --> 00:41:33,800
+I think it's more--
+
+1146
+00:41:33,800 --> 00:41:34,790
+ERIC BIDELMAN: I have a
+question for you guys.
+
+1147
+00:41:34,790 --> 00:41:35,650
+PAUL KINLAN: OK.
+
+1148
+00:41:35,650 --> 00:41:38,375
+ERIC BIDELMAN: Is there a way to
+explicitly say want my app
+
+1149
+00:41:38,375 --> 00:41:39,905
+to start synchronizing?
+
+1150
+00:41:39,905 --> 00:41:42,460
+Like you store a bunch
+of stuff, and it just
+
+1151
+00:41:42,460 --> 00:41:43,750
+queues it up, right?
+
+1152
+00:41:43,750 --> 00:41:44,110
+PAUL KINLAN: Yeah.
+
+1153
+00:41:44,110 --> 00:41:47,190
+The way it kind of works
+is [INAUDIBLE].
+
+1154
+00:41:47,190 --> 00:41:53,410
+
+1155
+00:41:53,410 --> 00:41:54,610
+ERIC BIDELMAN: So Chrome
+the browser just
+
+1156
+00:41:54,610 --> 00:41:55,010
+handles that, right?
+
+1157
+00:41:55,010 --> 00:41:57,340
+PAUL LEWIS: Yeah, it works
+it out for you.
+
+1158
+00:41:57,340 --> 00:41:57,570
+ERIC BIDELMAN: Cool.
+
+1159
+00:41:57,570 --> 00:41:59,340
+PAUL LEWIS: It's supposed to
+be seamless for you, as a
+
+1160
+00:41:59,340 --> 00:42:02,600
+developer, to not have to get
+your hands dirty with
+
+1161
+00:42:02,600 --> 00:42:03,030
+[INAUDIBLE].
+
+1162
+00:42:03,030 --> 00:42:04,380
+ERIC BIDELMAN: Syncing
+is our problem.
+
+1163
+00:42:04,380 --> 00:42:07,720
+The less you have to do,
+the better, for sure.
+
+1164
+00:42:07,720 --> 00:42:08,200
+PAUL KINLAN: Yes.
+
+1165
+00:42:08,200 --> 00:42:09,730
+And actually this leads on
+to another question.
+
+1166
+00:42:09,730 --> 00:42:12,180
+Let's say I have accidentally
+exceeded the maximum number of
+
+1167
+00:42:12,180 --> 00:42:13,790
+write operations per hour.
+
+1168
+00:42:13,790 --> 00:42:16,110
+Does that mean that from now on,
+data that I write to the
+
+1169
+00:42:16,110 --> 00:42:17,190
+Chrome Storage sync
+is ignored?
+
+1170
+00:42:17,190 --> 00:42:20,800
+Or will it be kept in local
+storage and synced later?
+
+1171
+00:42:20,800 --> 00:42:22,870
+That's a really good question,
+which I don't actually know
+
+1172
+00:42:22,870 --> 00:42:23,626
+the answer to.
+
+1173
+00:42:23,626 --> 00:42:26,210
+And we'll speak to the
+engineering team today, and
+
+1174
+00:42:26,210 --> 00:42:27,750
+we'll post a response
+to that question.
+
+1175
+00:42:27,750 --> 00:42:29,740
+I think that's the easiest
+thing to say.
+
+1176
+00:42:29,740 --> 00:42:30,790
+Because I could tell you
+something, and it would
+
+1177
+00:42:30,790 --> 00:42:33,165
+probably end up being
+completely wrong.
+
+1178
+00:42:33,165 --> 00:42:34,995
+PAUL LEWIS: Yeah, there are only
+two options, but it would
+
+1179
+00:42:34,995 --> 00:42:37,650
+probably be the wrong
+one, right?
+
+1180
+00:42:37,650 --> 00:42:42,250
+PAUL KINLAN: Next question is
+how can an automated deploy
+
+1181
+00:42:42,250 --> 00:42:44,580
+script interact with the Chrome
+Store to upload an
+
+1182
+00:42:44,580 --> 00:42:45,880
+updated extension?
+
+1183
+00:42:45,880 --> 00:42:47,560
+If this is not currently
+supported, when
+
+1184
+00:42:47,560 --> 00:42:50,050
+can we expect it?
+
+1185
+00:42:50,050 --> 00:42:51,830
+It's not currently supported
+and I don't know when
+
+1186
+00:42:51,830 --> 00:42:52,700
+we can expect it.
+
+1187
+00:42:52,700 --> 00:42:54,270
+[INAUDIBLE].
+
+1188
+00:42:54,270 --> 00:42:55,650
+PAUL LEWIS: OK.
+
+1189
+00:42:55,650 --> 00:42:58,520
+PAUL KINLAN: So it's
+kind of awkward.
+
+1190
+00:42:58,520 --> 00:43:01,450
+I spoke to quite a few
+developers who, as part of
+
+1191
+00:43:01,450 --> 00:43:04,030
+their build script, they want it
+to alter that so it will be
+
+1192
+00:43:04,030 --> 00:43:04,530
+automatically updated.
+
+1193
+00:43:04,530 --> 00:43:07,540
+Because from the Chrome
+App Store, it's manual
+
+1194
+00:43:07,540 --> 00:43:09,310
+intervention essentially.
+
+1195
+00:43:09,310 --> 00:43:10,920
+And you should be able
+to get around it, but
+
+1196
+00:43:10,920 --> 00:43:12,060
+right now you can't.
+
+1197
+00:43:12,060 --> 00:43:14,690
+So it's a manual
+operation only.
+
+1198
+00:43:14,690 --> 00:43:19,095
+Again, this is great feedback
+just to send back to the team.
+
+1199
+00:43:19,095 --> 00:43:21,670
+RENATO MANGINI: Can
+I ask Chris to
+
+1200
+00:43:21,670 --> 00:43:25,660
+submit a bug on crbug.com?
+
+1201
+00:43:25,660 --> 00:43:26,230
+PAUL KINLAN: Yes.
+
+1202
+00:43:26,230 --> 00:43:27,220
+You can.
+
+1203
+00:43:27,220 --> 00:43:29,610
+RENATO MANGINI: So
+please, Chris.
+
+1204
+00:43:29,610 --> 00:43:31,700
+ERIC BIDELMAN: Chris, if you're
+out there, bro, can you
+
+1205
+00:43:31,700 --> 00:43:34,698
+submit a new.crbug.com?
+
+1206
+00:43:34,698 --> 00:43:35,130
+PAUL LEWIS: That
+would be great.
+
+1207
+00:43:35,130 --> 00:43:35,330
+PAUL KINLAN: Yeah.
+
+1208
+00:43:35,330 --> 00:43:35,880
+We'll track it from there.
+
+1209
+00:43:35,880 --> 00:43:37,970
+And you can email me,
+PaulKinlan@google.com, so I
+
+1210
+00:43:37,970 --> 00:43:41,565
+can star it and then refer
+it to the correct teams.
+
+1211
+00:43:41,565 --> 00:43:42,910
+So yes.
+
+1212
+00:43:42,910 --> 00:43:44,450
+So--
+
+1213
+00:43:44,450 --> 00:43:45,440
+oh, right.
+
+1214
+00:43:45,440 --> 00:43:46,210
+Here we go.
+
+1215
+00:43:46,210 --> 00:43:48,680
+Do you have any plans of
+exposing the chrome.storage
+
+1216
+00:43:48,680 --> 00:43:51,550
+API in dev tools as it's already
+in the local storage
+
+1217
+00:43:51,550 --> 00:43:53,130
+and indexed DB?
+
+1218
+00:43:53,130 --> 00:43:55,350
+And this is Yarek again.
+
+1219
+00:43:55,350 --> 00:43:57,250
+We didn't mention that
+the file system API.
+
+1220
+00:43:57,250 --> 00:43:57,660
+PAUL LEWIS: Yeah.
+
+1221
+00:43:57,660 --> 00:43:58,727
+PAUL KINLAN: In there we
+haven't got Chrome
+
+1222
+00:43:58,727 --> 00:44:00,810
+Storage, have we?
+
+1223
+00:44:00,810 --> 00:44:02,070
+ERIC BIDELMAN: We don't.
+
+1224
+00:44:02,070 --> 00:44:03,870
+I think dev tools support is
+one of these things-- it's
+
+1225
+00:44:03,870 --> 00:44:05,810
+sort of a chicken-and-egg
+problem, at least with the
+
+1226
+00:44:05,810 --> 00:44:07,710
+file system API.
+
+1227
+00:44:07,710 --> 00:44:10,490
+Without the ability to debug,
+you sort of lose the ability
+
+1228
+00:44:10,490 --> 00:44:12,860
+to really recover an app really
+quickly and learn
+
+1229
+00:44:12,860 --> 00:44:14,530
+what's going on.
+
+1230
+00:44:14,530 --> 00:44:16,700
+Same thing with indexed DB.
+
+1231
+00:44:16,700 --> 00:44:20,970
+The sooner, the better as far
+as dev tools support.
+
+1232
+00:44:20,970 --> 00:44:23,390
+Storage APIs for Chrome, it's
+going to be one of these
+
+1233
+00:44:23,390 --> 00:44:26,440
+things that the dev tools team
+needs to prioritize.
+
+1234
+00:44:26,440 --> 00:44:28,795
+But they're always looking for
+new stuff to implement, so if
+
+1235
+00:44:28,795 --> 00:44:31,987
+you think this is super
+important, I think we should
+
+1236
+00:44:31,987 --> 00:44:32,560
+file a bug for this, too.
+
+1237
+00:44:32,560 --> 00:44:34,080
+PAUL LEWIS: I was going to say,
+yeah, anything like this,
+
+1238
+00:44:34,080 --> 00:44:34,510
+where you're--
+
+1239
+00:44:34,510 --> 00:44:35,590
+ERIC BIDELMAN: So
+that you're up.
+
+1240
+00:44:35,590 --> 00:44:38,390
+PAUL LEWIS: Yeah, throw it
+straight into [INAUDIBLE]
+
+1241
+00:44:38,390 --> 00:44:43,600
+and let us know, and we will
+start chasing that.
+
+1242
+00:44:43,600 --> 00:44:45,670
+PAUL KINLAN: Yeah, so the Chrome
+team will work on the
+
+1243
+00:44:45,670 --> 00:44:49,290
+start issues and all
+the other things.
+
+1244
+00:44:49,290 --> 00:44:50,220
+PAUL LEWIS: It's a good
+pro tip, actually.
+
+1245
+00:44:50,220 --> 00:44:52,130
+Don't put "me, too"
+in the comments.
+
+1246
+00:44:52,130 --> 00:44:52,550
+PAUL KINLAN: Yes.
+
+1247
+00:44:52,550 --> 00:44:53,430
+PAUL LEWIS: Star it.
+
+1248
+00:44:53,430 --> 00:44:55,550
+That's the best way
+to let the--
+
+1249
+00:44:55,550 --> 00:44:56,840
+PAUL KINLAN: Yeah, me,
+too, is bad grammar.
+
+1250
+00:44:56,840 --> 00:44:58,090
+It's me also.
+
+1251
+00:44:58,090 --> 00:45:00,040
+
+1252
+00:45:00,040 --> 00:45:02,487
+PAUL LEWIS: Aside from the
+linguistic issue there, let's
+
+1253
+00:45:02,487 --> 00:45:05,120
+say it's more helpful to the
+engineering team to see stars.
+
+1254
+00:45:05,120 --> 00:45:07,190
+They all like stars.
+
+1255
+00:45:07,190 --> 00:45:10,470
+PAUL KINLAN: So a new a new
+question in from Eli Grant.
+
+1256
+00:45:10,470 --> 00:45:14,430
+Is the type Save File
+UI coming to a
+
+1257
+00:45:14,430 --> 00:45:16,168
+anchor download attribute?
+
+1258
+00:45:16,168 --> 00:45:17,450
+ERIC BIDELMAN: Good.
+
+1259
+00:45:17,450 --> 00:45:18,360
+That's a great question.
+
+1260
+00:45:18,360 --> 00:45:22,500
+So as far as I know, this is a
+big feature request on the web
+
+1261
+00:45:22,500 --> 00:45:24,540
+today, is being able
+to do that Save As.
+
+1262
+00:45:24,540 --> 00:45:26,910
+You save out a file that you've
+created in JavaScript
+
+1263
+00:45:26,910 --> 00:45:27,340
+or something.
+
+1264
+00:45:27,340 --> 00:45:29,460
+And unfortunately, I don't
+think anybody has a good
+
+1265
+00:45:29,460 --> 00:45:30,850
+answer to this right now.
+
+1266
+00:45:30,850 --> 00:45:33,140
+All the mailings are
+working groups.
+
+1267
+00:45:33,140 --> 00:45:36,670
+As soon as you open up the
+user's hard drive to reading
+
+1268
+00:45:36,670 --> 00:45:41,330
+and writing data and anything
+outside the browser, sandbox,
+
+1269
+00:45:41,330 --> 00:45:43,110
+it's a whole security issue.
+
+1270
+00:45:43,110 --> 00:45:46,740
+So I would say not any time soon
+as far as I can tell, but
+
+1271
+00:45:46,740 --> 00:45:52,505
+this is why the Chrome Apps APIs
+have expanded on the W3C
+
+1272
+00:45:52,505 --> 00:45:54,900
+HTML5 API to do more.
+
+1273
+00:45:54,900 --> 00:45:56,910
+We have the permission
+model, the manifests.
+
+1274
+00:45:56,910 --> 00:45:58,830
+You can have some guarantees
+there as far
+
+1275
+00:45:58,830 --> 00:46:00,295
+as security is concerned.
+
+1276
+00:46:00,295 --> 00:46:02,970
+But this is something,
+obviously, we hope to bring to
+
+1277
+00:46:02,970 --> 00:46:05,480
+the open web.
+
+1278
+00:46:05,480 --> 00:46:07,460
+Any web app can use those
+set Save As for now.
+
+1279
+00:46:07,460 --> 00:46:10,040
+PAUL KINLAN: So I'm going to
+mention Web Intents again.
+
+1280
+00:46:10,040 --> 00:46:13,226
+Is that something in the future
+we hope that files will
+
+1281
+00:46:13,226 --> 00:46:15,336
+be able to be opened
+with Web Intents?
+
+1282
+00:46:15,336 --> 00:46:15,730
+To download?
+
+1283
+00:46:15,730 --> 00:46:17,600
+ERIC BIDELMAN: That
+would be cool.
+
+1284
+00:46:17,600 --> 00:46:19,440
+PAUL KINLAN: Yeah, we do have
+an RS feed in [INAUDIBLE].
+
+1285
+00:46:19,440 --> 00:46:20,350
+PAUL LEWIS: You should
+make that happen.
+
+1286
+00:46:20,350 --> 00:46:23,370
+PAUL KINLAN: Yeah,
+[INAUDIBLE].
+
+1287
+00:46:23,370 --> 00:46:26,978
+PAUL LEWIS: Well, you did
+prioritize the anchor so far.
+
+1288
+00:46:26,978 --> 00:46:28,228
+Really?
+
+1289
+00:46:28,228 --> 00:46:30,730
+
+1290
+00:46:30,730 --> 00:46:32,780
+ERIC BIDELMAN: So just to point
+out that the download
+
+1291
+00:46:32,780 --> 00:46:33,900
+attributes are actually
+really powerful.
+
+1292
+00:46:33,900 --> 00:46:35,600
+With an attribute,
+you can download
+
+1293
+00:46:35,600 --> 00:46:37,870
+and name a file anything.
+
+1294
+00:46:37,870 --> 00:46:40,870
+The only thing that it doesn't
+have going for it is the
+
+1295
+00:46:40,870 --> 00:46:42,920
+ability to save it wherever
+you want and--
+
+1296
+00:46:42,920 --> 00:46:43,843
+PAUL KINLAN: I think that's
+where the question is going.
+
+1297
+00:46:43,843 --> 00:46:46,710
+It's saying can I open
+[INAUDIBLE].
+
+1298
+00:46:46,710 --> 00:46:47,230
+ERIC BIDELMAN: Exactly.
+
+1299
+00:46:47,230 --> 00:46:49,320
+So you can't read and write
+to My Pictures folder.
+
+1300
+00:46:49,320 --> 00:46:53,300
+It'll just go in the browser's
+generic download folder.
+
+1301
+00:46:53,300 --> 00:46:56,490
+But we're one step closer.
+
+1302
+00:46:56,490 --> 00:46:58,260
+PAUL KINLAN: We don't have
+enough time for many more
+
+1303
+00:46:58,260 --> 00:46:59,650
+questions, unfortunately.
+
+1304
+00:46:59,650 --> 00:47:00,720
+We can do two more, though.
+
+1305
+00:47:00,720 --> 00:47:04,220
+I am a staff of University of
+Nigeria, and our university
+
+1306
+00:47:04,220 --> 00:47:05,570
+web site is there.
+
+1307
+00:47:05,570 --> 00:47:08,852
+It has an email link.
+
+1308
+00:47:08,852 --> 00:47:11,280
+Am I qualified to attend
+this show?
+
+1309
+00:47:11,280 --> 00:47:12,230
+Yes.
+
+1310
+00:47:12,230 --> 00:47:12,740
+PAUL LEWIS: Everyone's
+qualified.
+
+1311
+00:47:12,740 --> 00:47:13,640
+PAUL KINLAN: Everyone's
+qualified.
+
+1312
+00:47:13,640 --> 00:47:16,470
+We don't know whether we're
+available with future live
+
+1313
+00:47:16,470 --> 00:47:20,030
+stream instance in Nigeria,
+but the videos should be
+
+1314
+00:47:20,030 --> 00:47:24,250
+available worldwide after
+they're recorded.
+
+1315
+00:47:24,250 --> 00:47:24,480
+PAUL LEWIS: Yeah.
+
+1316
+00:47:24,480 --> 00:47:25,280
+PAUL KINLAN: If you'd
+like to watch.
+
+1317
+00:47:25,280 --> 00:47:27,516
+And then we'll seen one of the
+last questions, which is
+
+1318
+00:47:27,516 --> 00:47:29,980
+really cool.
+
+1319
+00:47:29,980 --> 00:47:32,990
+I did see a question come in and
+pop up a second ago, which
+
+1320
+00:47:32,990 --> 00:47:35,490
+I thought was really
+interesting.
+
+1321
+00:47:35,490 --> 00:47:36,600
+Just a general question.
+
+1322
+00:47:36,600 --> 00:47:38,740
+Which kind of model patterns
+do you use when you're
+
+1323
+00:47:38,740 --> 00:47:39,820
+developing in JavaScript?
+
+1324
+00:47:39,820 --> 00:47:41,730
+And what do you think about
+things like RequireJS,
+
+1325
+00:47:41,730 --> 00:47:46,290
+CommonJS and the async module
+definition, et cetera?
+
+1326
+00:47:46,290 --> 00:47:47,145
+It's a long question.
+
+1327
+00:47:47,145 --> 00:47:48,620
+I don't know whether we've
+got an amazing amount of
+
+1328
+00:47:48,620 --> 00:47:51,930
+time to answer it.
+
+1329
+00:47:51,930 --> 00:47:54,185
+I think we need to build the
+structure of our apps a lot
+
+1330
+00:47:54,185 --> 00:47:54,980
+better than we do
+at the moment.
+
+1331
+00:47:54,980 --> 00:47:56,600
+It's an absolute pain
+and a nightmare.
+
+1332
+00:47:56,600 --> 00:47:58,400
+Whether the actual--
+
+1333
+00:47:58,400 --> 00:47:59,650
+it's still the build time.
+
+1334
+00:47:59,650 --> 00:48:02,040
+
+1335
+00:48:02,040 --> 00:48:04,330
+You structure your application
+with modules when you build it
+
+1336
+00:48:04,330 --> 00:48:07,280
+and compile it, but then it's
+all compiled into one min.js
+
+1337
+00:48:07,280 --> 00:48:10,290
+file when you're ready
+for deployment.
+
+1338
+00:48:10,290 --> 00:48:16,760
+PAUL LEWIS: The whole min.js
+file thing is really--
+
+1339
+00:48:16,760 --> 00:48:18,680
+I wouldn't say it's bad
+practice, because it's really
+
+1340
+00:48:18,680 --> 00:48:20,810
+good practice for the
+drive-by web.
+
+1341
+00:48:20,810 --> 00:48:23,880
+It's not that it's less of an
+issue with that, but the thing
+
+1342
+00:48:23,880 --> 00:48:26,170
+that comes in here is that
+if you minify all the
+
+1343
+00:48:26,170 --> 00:48:28,480
+JavaScripts, yeah, you're
+delivering a smaller file.
+
+1344
+00:48:28,480 --> 00:48:30,360
+But it's not the same thing as
+reducing the number of request
+
+1345
+00:48:30,360 --> 00:48:34,690
+for the drive-by web, which
+is a really cool thing.
+
+1346
+00:48:34,690 --> 00:48:36,930
+PAUL KINLAN: We need to do
+tests, actually, to see.
+
+1347
+00:48:36,930 --> 00:48:38,715
+Because we don't know, even
+though it's on the file system
+
+1348
+00:48:38,715 --> 00:48:42,140
+and stored locally, when they
+are loaded in 10,000 is much
+
+1349
+00:48:42,140 --> 00:48:43,680
+different from loading one in.
+
+1350
+00:48:43,680 --> 00:48:44,090
+PAUL LEWIS: Yeah.
+
+1351
+00:48:44,090 --> 00:48:48,420
+So I think it bears some
+investigation as to what the
+
+1352
+00:48:48,420 --> 00:48:52,320
+right pattern is for allowing
+developers to write the
+
+1353
+00:48:52,320 --> 00:48:52,440
+best-possible app.
+
+1354
+00:48:52,440 --> 00:48:53,550
+PAUL KINLAN: I just
+generally think--
+
+1355
+00:48:53,550 --> 00:48:55,640
+I want to ponder on this
+question a little bit.
+
+1356
+00:48:55,640 --> 00:48:57,710
+The great thing about web
+application development and
+
+1357
+00:48:57,710 --> 00:49:00,140
+site development, app
+development for JavaScript, is
+
+1358
+00:49:00,140 --> 00:49:02,040
+that we've got a lot of
+different libraries which you
+
+1359
+00:49:02,040 --> 00:49:05,780
+can use for reference
+right now.
+
+1360
+00:49:05,780 --> 00:49:08,630
+I don't have any preference
+between the RequireJS and
+
+1361
+00:49:08,630 --> 00:49:10,140
+CommonJS instance.
+
+1362
+00:49:10,140 --> 00:49:13,700
+PAUL LEWIS: What I would say in
+the context of CSP for some
+
+1363
+00:49:13,700 --> 00:49:16,390
+of these libraries is it's worth
+bearing in mind that not
+
+1364
+00:49:16,390 --> 00:49:18,510
+all the functionality--
+
+1365
+00:49:18,510 --> 00:49:21,290
+say, for example, an MVC
+framework, if you're used to
+
+1366
+00:49:21,290 --> 00:49:24,340
+using that, It may be that it
+does some things with EVAL or
+
+1367
+00:49:24,340 --> 00:49:29,580
+new function or rooting or
+things like this that under
+
+1368
+00:49:29,580 --> 00:49:31,800
+CSP rules aren't allowed.
+
+1369
+00:49:31,800 --> 00:49:34,460
+So you may find that some of the
+things you're trying to do
+
+1370
+00:49:34,460 --> 00:49:38,510
+on a day-to-day basis have to be
+adjusted in the context of
+
+1371
+00:49:38,510 --> 00:49:39,070
+Chrome Apps.
+
+1372
+00:49:39,070 --> 00:49:40,340
+But there is some guidance,
+and we're going to be
+
+1373
+00:49:40,340 --> 00:49:43,430
+expanding on that over the three
+weeks to do with MVC
+
+1374
+00:49:43,430 --> 00:49:44,980
+frameworks specifically
+for Chrome Apps.
+
+1375
+00:49:44,980 --> 00:49:48,370
+And we're going through the
+commonly used frameworks, and
+
+1376
+00:49:48,370 --> 00:49:50,490
+we're documenting what's
+different, what you might need
+
+1377
+00:49:50,490 --> 00:49:52,350
+to adjust, and those
+kinds of things.
+
+1378
+00:49:52,350 --> 00:49:54,650
+PAUL KINLAN: And I think an
+important point as well, is if
+
+1379
+00:49:54,650 --> 00:49:57,100
+you've used CommonJS or
+RequireJS and it doesn't work
+
+1380
+00:49:57,100 --> 00:49:58,970
+in Chrome platform apps,
+please let us know.
+
+1381
+00:49:58,970 --> 00:50:01,280
+File a bug on [INAUDIBLE].
+
+1382
+00:50:01,280 --> 00:50:03,490
+Email us as well, because we
+want to make sure that all the
+
+1383
+00:50:03,490 --> 00:50:06,460
+development tools that web
+developers are used to in
+
+1384
+00:50:06,460 --> 00:50:08,600
+building these applications
+will work from day one,
+
+1385
+00:50:08,600 --> 00:50:09,420
+essentially.
+
+1386
+00:50:09,420 --> 00:50:12,270
+If they don't, then we have to
+make a good decision why we're
+
+1387
+00:50:12,270 --> 00:50:13,780
+not going to fix it.
+
+1388
+00:50:13,780 --> 00:50:17,150
+Or just try and fit it, that's
+the easier thing.
+
+1389
+00:50:17,150 --> 00:50:18,440
+ERIC BIDELMAN: This is kind of
+forward-thinking, but I'm also
+
+1390
+00:50:18,440 --> 00:50:20,530
+really excited about
+ES6 modules.
+
+1391
+00:50:20,530 --> 00:50:23,520
+So a lot of this module loading
+that you're doing in
+
+1392
+00:50:23,520 --> 00:50:25,766
+frameworks that require Common,
+you're going to be
+
+1393
+00:50:25,766 --> 00:50:27,270
+able to do it natively
+in JavaScript soon.
+
+1394
+00:50:27,270 --> 00:50:29,280
+So that's going to
+be really cool.
+
+1395
+00:50:29,280 --> 00:50:29,440
+PAUL KINLAN: Yeah.
+
+1396
+00:50:29,440 --> 00:50:30,350
+PAUL LEWIS: [INAUDIBLE]
+
+1397
+00:50:30,350 --> 00:50:31,540
+working with some of those?
+
+1398
+00:50:31,540 --> 00:50:33,146
+ERIC BIDELMAN: Yeah, he's has
+been checking it out and doing
+
+1399
+00:50:33,146 --> 00:50:34,580
+some investigations there.
+
+1400
+00:50:34,580 --> 00:50:39,690
+But very forward-thinking, but
+it's still important to get
+
+1401
+00:50:39,690 --> 00:50:40,953
+excited about it.
+
+1402
+00:50:40,953 --> 00:50:41,920
+PAUL KINLAN: Cool.
+
+1403
+00:50:41,920 --> 00:50:42,630
+I think we're done.
+
+1404
+00:50:42,630 --> 00:50:44,020
+I think we answered
+all the questions.
+
+1405
+00:50:44,020 --> 00:50:44,280
+ERIC BIDELMAN: We're done?
+
+1406
+00:50:44,280 --> 00:50:45,630
+That was fun.
+
+1407
+00:50:45,630 --> 00:50:46,200
+PAUL KINLAN: It was good.
+
+1408
+00:50:46,200 --> 00:50:47,260
+It was great to have you here.
+
+1409
+00:50:47,260 --> 00:50:48,400
+ERIC BIDELMAN: Hey, sorry
+I'm late, guys.
+
+1410
+00:50:48,400 --> 00:50:50,301
+PAUL KINLAN: Thank you for
+coming to Mountain View all
+
+1411
+00:50:50,301 --> 00:50:51,860
+the way from Mountain View.
+
+1412
+00:50:51,860 --> 00:50:53,700
+We'll make this trip regularly
+for you to come
+
+1413
+00:50:53,700 --> 00:50:54,820
+out just to do this.
+
+1414
+00:50:54,820 --> 00:50:55,400
+ERIC BIDELMAN: All
+right, all right.
+
+1415
+00:50:55,400 --> 00:50:57,420
+PAUL LEWIS: I was thinking about
+him coming to London.
+
+1416
+00:50:57,420 --> 00:50:58,460
+ERIC BIDELMAN: Yes.
+
+1417
+00:50:58,460 --> 00:51:01,220
+PAUL KINLAN: [INAUDIBLE]?
+
+1418
+00:51:01,220 --> 00:51:02,150
+PAUL LEWIS: Yes.
+
+1419
+00:51:02,150 --> 00:51:03,580
+PAUL KINLAN: Anyway,
+I'm diverging
+
+1420
+00:51:03,580 --> 00:51:04,415
+from this whole thing.
+
+1421
+00:51:04,415 --> 00:51:06,080
+I'm trying to close this
+whole thing out.
+
+1422
+00:51:06,080 --> 00:51:07,140
+Thank you very much
+for watching.
+
+1423
+00:51:07,140 --> 00:51:12,500
+If you have any questions, get
+them on [INAUDIBLE], or email
+
+1424
+00:51:12,500 --> 00:51:14,050
+me, Paulkinlan@google.com.
+
+1425
+00:51:14,050 --> 00:51:16,340
+Email the lists that
+we have as well.
+
+1426
+00:51:16,340 --> 00:51:17,190
+Please let us know.
+
+1427
+00:51:17,190 --> 00:51:21,070
+And we'll see you next week with
+the topic which is TBA.
+
+1428
+00:51:21,070 --> 00:51:25,240
+PAUL LEWIS: Yes, we will
+be putting out the--
+
+1429
+00:51:25,240 --> 00:51:25,700
+PAUL KINLAN: [INAUDIBLE].
+
+1430
+00:51:25,700 --> 00:51:26,070
+PAUL LEWIS: Yeah.
+
+1431
+00:51:26,070 --> 00:51:27,070
+[INAUDIBLE]
+
+1432
+00:51:27,070 --> 00:51:27,430
+stuff.
+
+1433
+00:51:27,430 --> 00:51:29,730
+So look out for that,
+and let us know
+
+1434
+00:51:29,730 --> 00:51:31,030
+what you want us cover.
+
+1435
+00:51:31,030 --> 00:51:32,860
+PAUL KINLAN: Thank
+you very much.
+
+1436
+00:51:32,860 --> 00:51:33,340
+Bye.
+
+1437
+00:51:33,340 --> 00:51:34,590
+PAUL LEWIS: Bye.
+
+1438
+00:51:34,590 --> 00:51:47,567
+
