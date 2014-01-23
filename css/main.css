@@ -231,6 +231,10 @@ font-family: Arial, sans-serif;
 line-height: 1em;
 }
 
+span.speakerName {
+  color: white;
+}
+
 summary {
 color: white;
 cursor: pointer;

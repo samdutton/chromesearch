@@ -76,21 +76,33 @@ function getCueData(videoId){
           var timings = line.match(/\d\d:\d\d:\d\d.\d\d\d/g);
           if (!timings){ // line is text
             // replace return with a space: cues may be split between two lines
-            line = line.replace(/\n/, " ");
-            currentCue.text += line;
+            // get rid of angle brackets at start of line (for speakers)
+            line = line.replace(/\n/, " ").replace(/^>+/, '');
             // if  this line introduces a speaker, add currentPara to paras
             // then start a 'new' currentPara with the text of this line
-            if (line.match(/^([A-Z\s]+:)|>+/)) {
-              // get rid of >> and >>> at beginning of line
-              // capitalize speaker names (Fred Nerk not FRED NERK)
-              line = line.replace(speakerRegEx, capitalize('\\$1')).replace(/^>+/, '');
+            // speaker lines begin with a name followed by a colon
+            if (line.match(/^[A-Za-z\-\s]+:/)) {
+              // capitalize speaker names: Fred Nerk not FRED NERK
+              if (line.match(/^[A-Z\-\s]+:/)) {
+                var allcaps = line.match(/^([A-Z\-\s]+):/)[1];
+                var speakerName = tweakName(capitalize(allcaps));
+                line = line.replace(/^([A-Z\-\s]+)/, speakerName);
+              }
+              line = line.replace(/^([A-Za-z\-\s]+):/,
+                '<span class="speakerName">$1</span>:');
+              // a line introducing a speaker means a new currentPara
+              // ...so push the 'old' currentPara
               if (currentPara !== '') {
                 paras.push(currentPara.trim());
               }
+              // ...and set the value for the 'new' one
               currentPara = line;
             } else {
+              // if the current line does not introduce a speaker
+              // add it to currentPara
               currentPara += line;
             }
+            currentCue.text += line;
           } else if (timings.length === 2) { // line is timing
             currentCue.startTime = toDecimalSeconds(timings[0]);
           }
@@ -327,4 +339,8 @@ function toHoursMinutesSeconds(decimalSeconds){
 function capitalize(string){
   return string.toLowerCase().replace(/\b[a-z](?=[a-z]+)/g, function(letter) {
     return letter.toUpperCase(); } )
+}
+
+function tweakName(name){
+  return name.replace('Pete Lepage', 'Pete LePage');
 }
