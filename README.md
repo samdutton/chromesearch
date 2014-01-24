@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <p>Enter text to search the manual transcripts from the Edge Conference in London, 9 February 2013.</p>
+=======
+<p>Enter text to search the manual transcripts for 270+ videos by Google Chrome developers.</p>
+>>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
   <p style="border-bottom: 1px solid #444; padding: 0 0 1em 0;">Click on a result to view video.</p>
   <p>A timed transcript file in SRT format for each video is stored in the <em>tracks</em> folder. SRT files look like this (each item is called a cue): </p>
   <pre>1
