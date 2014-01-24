@@ -1215,7 +1215,7 @@ our TCP client socket.
 255
 00:16:12,334 --> 00:16:14,300
 And then, obviously, here
-we're actually just 
+we're actually just
 
 256
 00:16:14,300 --> 00:16:19,234
@@ -1343,7 +1343,7 @@ Yes.
 
 283
 00:17:36,334 --> 00:17:38,801
-man: So Wan-Teh mentioned
+Roman: So Wan-Teh mentioned
 reasons for switching away
 
 284

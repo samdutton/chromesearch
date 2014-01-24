@@ -2090,7 +2090,7 @@ number should we have?" And the honest answer
 
 419
 00:36:41,530 --> 00:36:47,600
-is: It depends on your application.
+Paul Lewis: It depends on your application.
 But have that person -- a lot of times when
 
 420

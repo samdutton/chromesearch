@@ -1330,7 +1330,7 @@ Just making sure you guys are paying attention.
 
 267
 00:21:38,309 --> 00:21:44,640
->>Eric Bidleman: The real Number 5 is serverless
+>>Eric Bidelman: The real Number 5 is serverless
 downloads. So we got data in the file system,
 
 268
@@ -2046,7 +2046,7 @@ right, do a photo booth effect.
 410
 00:33:36,150 --> 00:33:36,600
 [chuckling]
->>Eric Bidleman: All right. That's enough
+>>Eric Bidelman: All right. That's enough
 
 411
 00:33:36,600 --> 00:33:43,600
@@ -2086,7 +2086,7 @@ it is.
 418
 00:34:29,460 --> 00:34:33,520
 [ APPLAUSE ]
->>Eric Bidleman: Yeah. This one is cool.
+>>Eric Bidelman: Yeah. This one is cool.
 
 419
 00:34:33,520 --> 00:34:40,349

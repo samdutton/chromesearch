@@ -57,6 +57,7 @@ function getCueData(videoId){
       var track = xhr.responseText;
       var cues = videos[videoId].cues = [];
       var paras = videos[videoId].paras = [];
+      var speakers = videos[videoId].speakers = [];
       var lines = track.match(/^.*((\r\n|\n|\r)|$)/gm);
       var currentCue = {"text": "", "videoId": videoId};
       var currentPara = '';
@@ -81,13 +82,21 @@ function getCueData(videoId){
             // if  this line introduces a speaker, add currentPara to paras
             // then start a 'new' currentPara with the text of this line
             // speaker lines begin with a name followed by a colon
-            if (line.match(/^[A-Za-z\-\s]+:/)) {
+            // space and word after colon is to lines using colon for punctuation
+            if (/^[A-Z][A-Za-z]+ ?[A-Za-z]*\-?[A-Za-z]*: \w/.test(line)) {
+              var speakerName = line.match(/^([A-Za-z\-\s]+):/)[1];
               // capitalize speaker names: Fred Nerk not FRED NERK
               if (line.match(/^[A-Z\-\s]+:/)) {
                 var allcaps = line.match(/^([A-Z\-\s]+):/)[1];
-                var speakerName = tweakName(capitalize(allcaps));
+                speakerName = capitalize(allcaps);
                 line = line.replace(/^([A-Z\-\s]+)/, speakerName);
               }
+              speakerName = tweakName(speakerName);
+              if (speakers.indexOf(speakerName) === -1 && ['Audience', 'Male Speaker', 'Female Speaker', 'All', 'Playback', 'Man', 'Announcer', 'Moderator', 'Producer', 'Fundamentals'].indexOf(speakerName) === -1){
+                console.log(videoId, speakerName);
+                speakers.push(speakerName);
+              }
+
               line = line.replace(/^([A-Za-z\-\s]+):/,
                 '<span class="speakerName">$1</span>:');
               // a line introducing a speaker means a new currentPara
@@ -342,7 +351,7 @@ function capitalize(string){
 }
 
 function tweakName(name){
-  return name.replace('Pete Lepage', 'Pete LePage'). replace('Colt Mcanlis', 'Colt McAnlis').replace('Matthew Mcnulty', 'Matthew McNulty');
+  return name.replace('Pete Lepage', 'Pete LePage'). replace('Colt Mcanlis', 'Colt McAnlis').replace('Matthew Mcnulty', 'Matthew McNulty').replace('John Mcgowan', 'John McGowan').replace('John Mccutchan', 'John McCutchan').replace('Pete Beverloo', 'Peter Beverloo').replace(/^Irish$/, 'Paul Irish').replace(/^Feldman$/, 'Pavel Feldman').replace(/^Fisher$/, 'Darin Fisher').replace('Tv Raman', 'TV Raman').replace('Matt Mcnulty', 'Matthew McNulty').replace('Wiltzius', 'Tom Wiltzius').replace(/^Kay$/, 'Erik Kay').replace(/^Cromwell$/, 'Ray Cromwell').replace(/^Wilson$/, 'Chris Wilson').replace('Kc Austin', 'KC Austin');
 }
 
 // from http://stackoverflow.com/questions/3665115/create-a-file-in-memory-for-user-to-download-not-through-server

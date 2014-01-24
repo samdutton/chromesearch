@@ -29,7 +29,7 @@ of Google Developer Day.
 
 8
 00:00:25,067 --> 00:00:28,233
-this fourth edition of 
+this fourth edition of
 Developer Day in Brazil.
 
 9
@@ -57,17 +57,17 @@ in our development platforms.
 
 14
 00:00:47,467 --> 00:00:50,933
-It's  a shame that we couldn't 
+It's  a shame that we couldn't
 get a few more seats
 
 15
 00:00:50,933 --> 00:00:53,767
-for those who wanted 
+for those who wanted
 to be here with us.
 
 16
 00:00:53,767 --> 00:00:58,800
-We're going to try to get a few 
+We're going to try to get a few
 more chairs in the next hour.
 
 17
@@ -77,7 +77,7 @@ But let's begin with
 18
 00:01:02,500 --> 00:01:06,667
 let's begin with a little
-talking a bit about 
+talking a bit about
 
 19
 00:01:06,667 --> 00:01:08,300
@@ -98,7 +98,7 @@ and that's why it's great to be here
 
 23
 00:01:17,200 --> 00:01:23,333
-but I've been keeping up with 
+but I've been keeping up with
 what's going on back home
 
 24
@@ -111,7 +111,7 @@ when theres a world championship
 
 26
 00:01:24,933 --> 00:01:27,267
-my shirt's still yellow 
+my shirt's still yellow
 
 27
 00:01:27,267 --> 00:01:32,033
@@ -138,7 +138,7 @@ Speaking a little more seriously
 
 32
 00:01:42,100 --> 00:01:45,533
-the Brazilian economy that we 
+the Brazilian economy that we
 that I read about
 
 33
@@ -147,7 +147,7 @@ certainly ouside of Brazil itself
 
 34
 00:01:47,900 --> 00:01:50,567
-is going through a 
+is going through a
 "very, very good period"
 
 35
@@ -166,7 +166,7 @@ online users in Brazil
 
 38
 00:02:02,167 --> 00:02:02,767
-that's 
+that's
 
 39
 00:02:02,767 --> 00:02:08,033
@@ -209,7 +209,7 @@ of Brazil are in this room today.
 47
 00:02:36,967 --> 00:02:42,300
 We're really grateful and very
-honored that you've chosen 
+honored that you've chosen
 
 48
 00:02:42,300 --> 00:02:44,267
@@ -217,7 +217,7 @@ to spend the day with us today.
 
 49
 00:02:44,267 --> 00:02:49,333
-I'm going to talk a little about 
+I'm going to talk a little about
 sharing our vision with developers.
 
 50
@@ -231,7 +231,7 @@ very advantageous to you
 
 52
 00:02:56,600 --> 00:03:01,833
-One request we were showing 
+One request we were showing
 on the screen when you came in
 
 53
@@ -249,7 +249,7 @@ because we're going to do demos
 
 56
 00:03:13,633 --> 00:03:18,733
-that require a network with no fields and 
+that require a network with no fields and
 the demo will run better if you
 
 57
@@ -258,12 +258,12 @@ aren't running hotspots
 
 58
 00:03:20,633 --> 00:03:25,600
-So I ask that you 
+So I ask that you
 follow this request
 
 59
 00:03:25,600 --> 00:03:27,800
-And before beginning with 
+And before beginning with
 the keynote presentation
 
 60
@@ -290,7 +290,7 @@ I skipped
 
 65
 00:03:39,400 --> 00:03:42,900
-I skipped to the next slide; 
+I skipped to the next slide;
 some of you may have already seen
 
 66
@@ -328,7 +328,7 @@ a platform for monetization
 
 73
 00:04:07,400 --> 00:04:11,700
-And we were really happy 
+And we were really happy
 to be able to announce the support of
 
 74
@@ -384,7 +384,7 @@ to the developer and not to Google.
 
 85
 00:05:04,200 --> 00:05:08,233
-You can find out more 
+You can find out more
 information about Jambool
 
 86
@@ -399,7 +399,7 @@ that Patrick [inaudible] will give.
 
 88
 00:05:16,767 --> 00:05:18,967
-We're very happy 
+We're very happy
 to be able to announce this.
 
 89
@@ -491,11 +491,11 @@ either stalled or even decreased.
 
 108
 00:06:31,400 --> 00:06:35,667
-And we see that the web apps 
+And we see that the web apps
 
 109
 00:06:35,667 --> 00:06:42,400
-thanks mainly in large part due to 
+thanks mainly in large part due to
 "HTML5 in the last 18 months, 2 years"
 
 110
@@ -539,7 +539,7 @@ and throughout the day.
 
 118
 00:07:14,933 --> 00:07:19,233
-HTML5 has only been around 
+HTML5 has only been around
 for less than two years
 
 119
@@ -592,7 +592,7 @@ by browsers on smartphones.
 
 129
 00:08:06,033 --> 00:08:09,400
-And that's what we're going to talk 
+And that's what we're going to talk
 a little more about
 
 130
@@ -601,7 +601,7 @@ about its growth in the mobile field.
 
 131
 00:08:12,867 --> 00:08:19,967
-So the path we've been following 
+So the path we've been following
 shows a lot of progress in that area.
 
 132
@@ -633,12 +633,12 @@ that the web offer
 
 138
 00:08:35,300 --> 00:08:39,300
-as many features as 
+as many features as
 native operating systems
 
 139
 00:08:39,300 --> 00:08:42,333
-Here we're going to start 
+Here we're going to start
 talking now a bit about
 
 140
@@ -651,7 +651,7 @@ Up to now
 
 142
 00:08:48,800 --> 00:08:52,567
-the platform was limited with respect to 
+the platform was limited with respect to
 that kind of feature.
 
 143
@@ -696,7 +696,7 @@ available
 
 152
 00:09:20,333 --> 00:09:25,200
-and now we have more and more 
+and now we have more and more
 APIs to access a microphone.
 
 153
@@ -727,7 +727,7 @@ to talk about hardware access
 
 159
 00:09:48,233 --> 00:09:49,333
-Eric Bidleman
+Eric Bidelman
 
 160
 00:09:49,333 --> 00:09:51,733
@@ -743,7 +743,7 @@ He'll--
 
 163
 00:09:55,533 --> 00:09:58,033
-He practiced Portuguese a lot 
+He practiced Portuguese a lot
 these last couple of weeks
 
 164
@@ -753,7 +753,7 @@ in English.
 
 165
 00:10:01,433 --> 00:10:05,733
-If you have the headsets 
+If you have the headsets
 you got when you came in
 
 166
@@ -969,7 +969,7 @@ mas isso aqui é Canvas 3D
 
 217
 00:12:05,833 --> 00:12:10,867
-podemos ligar com o WebGL 
+podemos ligar com o WebGL
 que usa OpenGL ES2.0 no web
 
 218
@@ -990,7 +990,7 @@ de fotos
 
 222
 00:12:23,800 --> 00:12:27,033
-patrocinado pela 
+patrocinado pela
 gente lá na Cool Iris.
 
 223
@@ -1009,7 +1009,7 @@ A diferencia aqui é que isto
 
 226
 00:12:35,767 --> 00:12:38,833
-Entao eu posso interactuar com ele 
+Entao eu posso interactuar com ele
 usando eventos por toque
 
 227
@@ -1048,7 +1048,7 @@ com esse demo
 
 235
 00:12:53,500 --> 00:12:56,367
-foi de conectá-lo com a busca de imagems 
+foi de conectá-lo com a busca de imagems
 de Google
 
 236
@@ -1177,7 +1177,7 @@ posso adicionar muitos mais
 
 266
 00:14:06,533 --> 00:14:07,667
-E isso está funcionando com 
+E isso está funcionando com
 de novo
 
 267
@@ -1237,12 +1237,12 @@ voce pode agora fazer na web
 
 280
 00:14:35,833 --> 00:14:39,000
-Vou mostrar para voces do que 
+Vou mostrar para voces do que
 eu estou falando.
 
 281
 00:14:39,000 --> 00:14:41,600
-HTML5 tem a posibilidade de 
+HTML5 tem a posibilidade de
 fazer drag-and-drop
 
 282
@@ -1262,7 +1262,7 @@ no meu directory local
 
 285
 00:14:52,333 --> 00:14:57,667
-e eu posso agarrá-las 
+e eu posso agarrá-las
 do Mac para o aplicativo do web
 
 286
@@ -1359,7 +1359,7 @@ com a mínima de code
 
 307
 00:15:53,867 --> 00:15:55,767
-Vamos voltar para ver isso 
+Vamos voltar para ver isso
 em full screen
 
 308
@@ -1442,7 +1442,7 @@ Muito legal.
 
 326
 00:16:46,367 --> 00:16:49,167
-O últiimo demo que vou mostrar 
+O últiimo demo que vou mostrar
 é um API para a orientação do aparelho.
 
 327
@@ -1638,7 +1638,7 @@ very excited
 
 371
 00:19:02,333 --> 00:19:04,067
-with our demos and 
+with our demos and
 
 372
 00:19:04,067 --> 00:19:07,233
@@ -1656,7 +1656,7 @@ But every good thing has its challenges.
 375
 00:19:14,567 --> 00:19:21,433
 And we think that we understand
-many of the challenges faced 
+many of the challenges faced
 
 376
 00:19:21,433 --> 00:19:23,333
@@ -1669,8 +1669,8 @@ like this one to talk with you
 
 378
 00:19:26,433 --> 00:19:31,000
-and understand what you 
-most want to work on 
+and understand what you
+most want to work on
 
 379
 00:19:31,000 --> 00:19:34,033
@@ -1702,7 +1702,7 @@ the greatest number of users.
 
 385
 00:19:49,000 --> 00:19:54,467
-So that users can 
+So that users can
 discover your applications.
 
 386
@@ -1795,7 +1795,7 @@ on the Chrome developer dashboard.
 
 405
 00:21:05,867 --> 00:21:09,933
-And we hope 
+And we hope
 that the development of Chrome
 
 406
@@ -1804,8 +1804,8 @@ of the Chrome store
 
 407
 00:21:11,200 --> 00:21:16,367
-of the Chrome store is as successful as 
-the development 
+of the Chrome store is as successful as
+the development
 
 408
 00:21:16,367 --> 00:21:20,000
@@ -1823,7 +1823,7 @@ more than 70 million users worldwide.
 
 411
 00:21:27,100 --> 00:21:31,667
-that's a big number and the rate 
+that's a big number and the rate
 of growth is really very fast.
 
 412
@@ -1857,7 +1857,7 @@ with the advances in HTML5.
 
 418
 00:21:52,933 --> 00:21:54,133
-And we're very 
+And we're very
 
 419
 00:21:54,133 --> 00:21:56,300
@@ -1972,7 +1972,7 @@ de estar aqui hoje em Sao Paulo
 
 444
 00:23:05,467 --> 00:23:08,300
-e dá muita emoção 
+e dá muita emoção
 ver tantos de voces.
 
 445
@@ -2070,7 +2070,7 @@ e o tamanho da memoria que temos visto
 
 465
 00:24:21,833 --> 00:24:27,400
-cada 10 anos pasamos por 
+cada 10 anos pasamos por
 uma revolucao no mundo de computar.
 
 466
@@ -2335,7 +2335,7 @@ We are 120 professionals in the business today.
 
 525
 00:27:47,233 --> 00:27:50,300
-And I have to say that it's my 
+And I have to say that it's my
 pleasure to work every day
 
 526
@@ -2359,7 +2359,7 @@ BTBuckets.
 
 530
 00:28:01,833 --> 00:28:05,000
-an experience that was born 
+an experience that was born
 from inside Predicta
 
 531
@@ -2388,7 +2388,7 @@ behavioral segmentation
 
 536
 00:28:18,267 --> 00:28:22,567
-and we went looking for a structure 
+and we went looking for a structure
 for cloud computing
 
 537
@@ -2418,7 +2418,7 @@ to the the strory of
 
 543
 00:28:40,800 --> 00:28:43,933
-I decided to call my friend 
+I decided to call my friend
 that you see on the screen.
 
 544
@@ -2458,7 +2458,7 @@ This is Wagner.
 
 553
 00:29:00,733 --> 00:29:03,967
-Wagner is one of our 
+Wagner is one of our
 infrastructure engineers.
 
 554
@@ -2489,7 +2489,7 @@ Wagner came up to me and said...
 560
 00:29:17,233 --> 00:29:20,333
 "I love what I do, but I feel like"
-you're paying me 
+you're paying me
 
 561
 00:29:20,333 --> 00:29:23,233
@@ -2535,7 +2535,7 @@ Our online infrastructure engineer.
 571
 00:29:44,000 --> 00:29:47,567
 Infrastructure engineers are important
-because they bring credibility 
+because they bring credibility
 
 572
 00:29:47,567 --> 00:29:49,633
@@ -2547,7 +2547,7 @@ And when you're selling applications
 
 574
 00:29:51,467 --> 00:29:54,967
-when we developers 
+when we developers
 are selling applications
 
 575
@@ -2588,12 +2588,12 @@ A turbine is universal.
 
 583
 00:30:20,733 --> 00:30:23,733
-We manage to meet with 
+We manage to meet with
 clients from all around the world
 
 584
 00:30:23,733 --> 00:30:26,600
-and show them that we use 
+and show them that we use
 App Engine and know that
 
 585
@@ -2613,7 +2613,7 @@ it isn't everything.
 
 588
 00:30:35,967 --> 00:30:38,167
-We also have to 
+We also have to
 "look at profitability, too."
 
 589
@@ -2688,11 +2688,11 @@ But with App Engine
 604
 00:31:13,767 --> 00:31:15,267
 a real case that happened
-with us 
+with us
 
 605
 00:31:15,267 --> 00:31:17,900
-more or less about 
+more or less about
 2 or 3 months ago
 
 606
@@ -2754,7 +2754,7 @@ and different this is.
 
 619
 00:31:46,700 --> 00:31:50,067
-when you're running 
+when you're running
 your own infrastructure.
 
 620
@@ -2831,7 +2831,7 @@ the whole world
 
 636
 00:32:29,267 --> 00:32:33,067
-this is a map of worldwide users 
+this is a map of worldwide users
 of BTBuckets today
 
 637
@@ -2978,7 +2978,7 @@ e hardware
 
 670
 00:34:02,433 --> 00:34:08,100
-em applicar remendos 
+em applicar remendos
 que pode receber cada X semanas
 
 671
@@ -3052,7 +3052,7 @@ E se olhamos para o futuro
 
 686
 00:34:55,233 --> 00:34:59,200
-aquí estão algumas das coisas 
+aquí estão algumas das coisas
 que vão chegar no AppEngine.
 
 687
@@ -3122,12 +3122,12 @@ para que o seu app interactue
 
 701
 00:35:52,867 --> 00:35:55,133
-você pode atuar com os usuários 
+você pode atuar com os usuários
 no momento
 
 702
 00:35:55,133 --> 00:36:01,933
-que dá outras posibilidades 
+que dá outras posibilidades
 de comunicação.
 
 703
@@ -3258,7 +3258,7 @@ vem com Hosted SQL
 
 730
 00:37:32,967 --> 00:37:36,167
-porque sabemos 
+porque sabemos
 que muitos desenvolvedores
 
 731
@@ -3268,7 +3268,7 @@ no mundo enterprise para aplicativos internas.
 
 732
 00:37:42,333 --> 00:37:46,367
-App Engine para Negócios terá uma 
+App Engine para Negócios terá uma
 caracteristica de seguridade by default
 
 733
@@ -3287,7 +3287,7 @@ acesso aos aplicativos internos.
 
 736
 00:37:55,333 --> 00:37:58,333
-Não vai ter que preocuparse 
+Não vai ter que preocuparse
 com autenticação ou leaks.
 
 737
@@ -3341,7 +3341,7 @@ para controlar tudo isso.
 
 747
 00:38:40,367 --> 00:38:42,600
-Quando usam App Engine 
+Quando usam App Engine
 para Negócios
 
 748
@@ -3351,7 +3351,7 @@ para configurar
 
 749
 00:38:45,300 --> 00:38:49,033
-e controlar o acesso 
+e controlar o acesso
 e politicas de seguridade.
 
 750
@@ -3395,7 +3395,7 @@ O Cloud está pronto para mim?
 
 759
 00:39:13,600 --> 00:39:17,067
-qual é a segurança que tenho 
+qual é a segurança que tenho
 se quero sair do seu Cloud
 
 760
@@ -3529,7 +3529,7 @@ que vai lançá-lo no nosso cloud
 
 789
 00:40:43,233 --> 00:40:46,000
-E é somente na hora de lançar 
+E é somente na hora de lançar
 que você escolhe
 
 790
@@ -3697,7 +3697,7 @@ nos conhecemos mais ou menos um ano atrás
 
 825
 00:42:49,533 --> 00:42:54,767
-E estou muito emocionado 
+E estou muito emocionado
 para anunciar que a partir de ontem
 
 826
@@ -3747,7 +3747,7 @@ Chris Reimsdale.
 
 836
 00:43:24,200 --> 00:43:25,933
-temos que fazer com que 
+temos que fazer com que
 é fácil de desenvolver também.
 
 837
@@ -3809,7 +3809,7 @@ Agora para ver isso em ação
 
 849
 00:43:57,100 --> 00:43:59,867
-eu vou passar à utilidade 
+eu vou passar à utilidade
 "de command line, SpringRoo"
 
 850
@@ -3979,11 +3979,11 @@ antes de lançar.
 
 887
 00:45:19,233 --> 00:45:21,300
-Com o URL 
+Com o URL
 
 888
 00:45:21,300 --> 00:45:25,133
-Eu posso fazer click e 
+Eu posso fazer click e
 abrir com Firefox.
 
 889
@@ -4007,12 +4007,12 @@ de depuração dentro de Eclipse.
 
 893
 00:45:34,467 --> 00:45:37,133
-Agora tem muitos componentes 
+Agora tem muitos componentes
 lançados por este IDE
 
 894
 00:45:37,133 --> 00:45:39,900
-e se quer saber 
+e se quer saber
 o que está acontecendo
 
 895
@@ -4102,7 +4102,7 @@ E um comentário
 
 915
 00:46:11,233 --> 00:46:13,033
-isso é um demo e não quero 
+isso é um demo e não quero
 amanezá-lo
 
 916
@@ -4181,7 +4181,7 @@ de vista do usuário é fantástico.
 
 933
 00:46:43,000 --> 00:46:44,100
-Mas agora que vimos o que 
+Mas agora que vimos o que
 podemos fazer com este app
 
 934
@@ -4200,7 +4200,7 @@ quando está desenvolvendo o seu app
 
 937
 00:46:51,767 --> 00:46:53,433
-vai começar com 
+vai começar com
 o seu data model.
 
 938
@@ -4297,7 +4297,7 @@ os meus controladores.
 960
 00:47:40,167 --> 00:47:43,433
 Tenho que mudar o código
-para transportar o objeto 
+para transportar o objeto
 
 961
 00:47:43,433 --> 00:47:45,567
@@ -4375,7 +4375,7 @@ tomar a alteração
 
 978
 00:48:29,833 --> 00:48:31,133
-e propagá-la 
+e propagá-la
 pelo aplicativo
 
 979
@@ -4422,7 +4422,7 @@ Mas este não é o caso.
 
 989
 00:48:46,600 --> 00:48:50,567
-Porque somente tenho que 
+Porque somente tenho que
 voltar ao aplicativo
 
 990
@@ -4462,7 +4462,7 @@ mas poderoso é que
 
 998
 00:49:05,967 --> 00:49:08,300
-mesmo que temos muitas 
+mesmo que temos muitas
 ferramentas para usar
 
 999
@@ -4515,7 +4515,7 @@ como o DMWearZ Fabric.
 
 1009
 00:49:33,200 --> 00:49:34,967
-Você pode lançâ-lo 
+Você pode lançâ-lo
 no cloud que quiser.
 
 1010
@@ -4555,7 +4555,7 @@ Obrigado.
 
 1018
 00:49:55,767 --> 00:50:03,167
-É isso que temos da sessão 
+É isso que temos da sessão
 de cloud computing.
 
 1019
@@ -4679,7 +4679,7 @@ experience to see the growth
 
 1046
 00:51:14,600 --> 00:51:19,700
-of this platform and of the mobile GSS 
+of this platform and of the mobile GSS
 platform and of the internet in general.
 
 1047
@@ -4753,12 +4753,12 @@ And 1.2 billion PCs.
 
 1062
 00:52:05,833 --> 00:52:07,100
-There are... 
+There are...
 almost...
 
 1063
 00:52:07,100 --> 00:52:11,200
-almost 3 and a half times 
+almost 3 and a half times
 more mobile devices than PCs.
 
 1064
@@ -4793,11 +4793,11 @@ a business opportunity
 
 1071
 00:52:33,967 --> 00:52:35,067
-we're going to go to 
+we're going to go to
 
 1072
 00:52:35,067 --> 00:52:38,600
-business opportunity 
+business opportunity
 is really very big.
 
 1073
@@ -4838,7 +4838,7 @@ and that it's growing very fast
 
 1081
 00:53:02,400 --> 00:53:07,300
-but the historical data are going to 
+but the historical data are going to
 give a different perspective.
 
 1082
@@ -4888,7 +4888,7 @@ iMode was for many
 
 1092
 00:53:36,067 --> 00:53:40,300
-also a very important experience 
+also a very important experience
 for online access.
 
 1093
@@ -4912,7 +4912,7 @@ a little young for this
 
 1097
 00:53:58,033 --> 00:54:02,967
-but a lot of people remember 
+but a lot of people remember
 that in terms of a big explosion
 
 1098
@@ -4951,7 +4951,7 @@ And this is a very recent phenomenon.
 
 1106
 00:54:27,733 --> 00:54:34,333
-The iPhone and iPad made all of this from the 
+The iPhone and iPad made all of this from the
 past look like children's toys.
 
 1107
@@ -5046,7 +5046,7 @@ time on our servers.
 
 1126
 00:55:45,300 --> 00:55:49,100
-And these are only the devices 
+And these are only the devices
 that we see on our servers.
 
 1127
@@ -5056,7 +5056,7 @@ in China or other places
 
 1128
 00:55:53,233 --> 00:55:58,433
-that aren't compatible and that 
+that aren't compatible and that
 don't use Google services.
 
 1129
@@ -5134,7 +5134,7 @@ this growth.
 
 1145
 00:56:45,733 --> 00:56:48,200
-And last Monday 
+And last Monday
 we announced
 
 1146
@@ -5201,7 +5201,7 @@ And so one thing I want to...
 1160
 00:57:34,100 --> 00:57:37,567
 one of the biggest reasons for
-Android's growth 
+Android's growth
 
 1161
 00:57:37,567 --> 00:57:42,200
@@ -5210,7 +5210,7 @@ of apps for the platform.
 
 1162
 00:57:42,200 --> 00:57:46,967
-I want to thank all of the 
+I want to thank all of the
 active developers in the Android market
 
 1163
@@ -5283,7 +5283,7 @@ And...
 
 1178
 00:58:31,300 --> 00:58:33,967
-and when we talk about 
+and when we talk about
 each app
 
 1179
@@ -5391,7 +5391,7 @@ cloud to device messaging.
 
 1202
 00:59:56,433 --> 00:59:59,500
-It lets you send 
+It lets you send
 a message from your server
 
 1203
@@ -5495,7 +5495,7 @@ on my Mac
 
 1224
 01:01:08,000 --> 01:01:13,067
-with the same account that 
+with the same account that
 I've logged in with on my Android
 
 1225
@@ -5508,7 +5508,7 @@ It send street informaiton
 
 1227
 01:01:17,933 --> 01:01:19,800
-which roads I take 
+which roads I take
 
 1228
 01:01:19,800 --> 01:01:22,033
@@ -5547,7 +5547,7 @@ to improve corporate user's lives.
 
 1236
 01:01:45,400 --> 01:01:47,267
-Eric spoke a little about 
+Eric spoke a little about
 the importance
 
 1237
@@ -5562,7 +5562,7 @@ details here
 
 1239
 01:01:58,400 --> 01:02:00,900
-but this latest information 
+but this latest information
 will help you
 
 1240
@@ -5585,12 +5585,12 @@ what we recently announced.
 
 1244
 01:02:15,000 --> 01:02:18,967
-That's in the area of 
+That's in the area of
 payments on Android.
 
 1245
 01:02:18,967 --> 01:02:22,000
-This is something we know: 
+This is something we know:
 the monetization of apps
 
 1246
@@ -5611,7 +5611,7 @@ to more and more countries.
 1249
 01:02:35,000 --> 01:02:39,967
 And we're pleased to announce
-that the inroads into the  
+that the inroads into the
 
 1250
 01:02:39,967 --> 01:02:42,033
@@ -5650,7 +5650,7 @@ for payments on the Android market.
 
 1258
 01:03:12,967 --> 01:03:16,500
-And you should know 
+And you should know
 that yesterday
 
 1259
@@ -5704,7 +5704,7 @@ Good morning.
 
 1270
 01:03:46,267 --> 01:03:50,433
-yesterday we announced 
+yesterday we announced
 two new features for Android.
 
 1271
@@ -5726,7 +5726,7 @@ I first...
 
 1275
 01:04:03,633 --> 01:04:06,433
-I don't want to take too much 
+I don't want to take too much
 of your time.
 
 1276
@@ -5823,7 +5823,7 @@ you had three options
 
 1296
 01:05:17,000 --> 01:05:19,267
-But if you clicked on 
+But if you clicked on
 navegation by car
 
 1297
@@ -5871,7 +5871,7 @@ the same features of Maps
 
 1307
 01:05:45,633 --> 01:05:48,167
-that you know 
+that you know
 are here on the navegation.
 
 1308
@@ -5891,7 +5891,7 @@ If you click this little button here
 1311
 01:05:55,300 --> 01:05:58,233
 you'll get to see an aerial view
-of how 
+of how
 
 1312
 01:05:58,233 --> 01:06:02,833
@@ -6052,7 +6052,7 @@ or text from your cellphones
 
 1346
 01:07:46,200 --> 01:07:48,433
-because this really needs 
+because this really needs
 the Internet
 
 1347
@@ -6121,7 +6121,7 @@ I wanted to show off photos of my city
 
 1362
 01:08:27,200 --> 01:08:32,533
-I'm going to try something a little 
+I'm going to try something a little
 more complicated and ambitious
 
 1363
@@ -6146,7 +6146,7 @@ Good.
 
 1368
 01:08:51,433 --> 01:08:54,133
-And this feature is available 
+And this feature is available
 in other apps.
 
 1369
@@ -6203,12 +6203,12 @@ from IMDB
 
 1381
 01:09:27,333 --> 01:09:30,200
-It's a third-party app  
+It's a third-party app
 that's not from Android.
 
 1382
 01:09:30,200 --> 01:09:32,933
-It's an app like you 
+It's an app like you
 might have developed.
 
 1383
@@ -6241,12 +6241,12 @@ that has a search feature
 
 1390
 01:09:55,133 --> 01:09:58,233
-It will be covered 
+It will be covered
 it's already available
 
 1391
 01:09:58,233 --> 01:10:01,467
-But the interesting thing is that 
+But the interesting thing is that
 in a session this afternoon.
 
 1392
@@ -6269,12 +6269,12 @@ You can use
 
 1396
 01:10:09,633 --> 01:10:12,700
-you can count on the little mike 
+you can count on the little mike
 
 1397
 01:10:12,700 --> 01:10:13,800
 to make your searches.
-being available and you'll be able 
+being available and you'll be able
 
 1398
 01:10:13,800 --> 01:10:16,333
@@ -6282,7 +6282,7 @@ being available and you'll be able
 
 1399
 01:10:16,333 --> 01:10:19,067
-so any application 
+so any application
 since yesterday
 
 1400
@@ -6343,7 +6343,7 @@ If you want
 
 1414
 01:10:57,467 --> 01:11:01,833
-If you'd like to 
+If you'd like to
 
 1415
 01:11:01,833 --> 01:11:06,200
@@ -6357,7 +6357,7 @@ this afternoon
 
 1417
 01:11:07,533 --> 01:11:13,800
-to be avaiable in the Android lounge 
+to be avaiable in the Android lounge
 
 1418
 01:11:13,800 --> 01:11:14,933
@@ -6366,7 +6366,7 @@ between 11:15 and 12:15.
 
 1419
 01:11:14,933 --> 01:11:19,233
-It was a great pleasure to participate in this 
+It was a great pleasure to participate in this
 
 1420
 01:11:19,233 --> 01:11:19,733
@@ -6384,7 +6384,7 @@ that we're excited
 
 1423
 01:11:23,600 --> 01:11:27,533
-with the development 
+with the development
 
 1424
 01:11:27,533 --> 01:11:28,400
