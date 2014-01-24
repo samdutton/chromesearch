@@ -1,0 +1,2360 @@
+1
+00:00:07,279 --> 00:00:14,179
+>>Paul Irish: Cool. All right, guys. My name
+is Paul Irish and I am a developer advocate
+
+2
+00:00:14,179 --> 00:00:17,930
+on the Chrome team.
+I want to talk a little bit about tooling.
+
+3
+00:00:17,930 --> 00:00:23,630
+So this is about building Web apps, finding
+the right software to make your process of
+
+4
+00:00:23,630 --> 00:00:28,980
+building Web apps fun, awesome, enjoyable,
+less stressful, more productive, things like
+
+5
+00:00:28,980 --> 00:00:31,579
+that.
+Now, I'm going to talk a little bit about
+
+6
+00:00:31,579 --> 00:00:35,670
+kind of how we're building Web apps today
+and how I think we can build them in the future,
+
+7
+00:00:35,670 --> 00:00:40,510
+but for a second I want to take a few steps
+back and walk back a few years, back to 2006
+
+8
+00:00:40,510 --> 00:00:47,050
+because this is the year that I wrote like
+my first website where I was like doing all
+
+9
+00:00:47,050 --> 00:00:53,069
+the right things when it came to Web standards.
+And I felt so good about the way that I was
+
+10
+00:00:53,069 --> 00:00:57,620
+doing it, so I was actually here and I did
+something probably like this, and I was doing
+
+11
+00:00:57,620 --> 00:01:04,620
+a little bit of this and then this and then
+that and then that and that, da, da...
+
+12
+00:01:04,690 --> 00:01:06,979
+This is typical, right?
+[Laughter]
+
+13
+00:01:06,979 --> 00:01:13,280
+>>Paul Irish: Oh, there we go. Nice! Cool.
+[ Applause ]
+
+14
+00:01:13,280 --> 00:01:19,340
+>>Paul Irish: All right. I'm really glad we
+don't have to type that out anymore. That's
+
+15
+00:01:19,340 --> 00:01:22,680
+really nice.
+But this is like -- so what I actually did
+
+16
+00:01:22,680 --> 00:01:28,289
+is when I made this site, and it turned out
+to be really nice, I did the whole thing in
+
+17
+00:01:28,289 --> 00:01:35,289
+Notepad. And I think we consider it a little
+funny now that I would write like pretty significant
+
+18
+00:01:39,149 --> 00:01:46,149
+site in Notepad, but at the time I was like,
+"I'm a craftsman over my markup and I will
+
+19
+00:01:48,140 --> 00:01:55,140
+be one with it, and the closest I can be in
+it is in Notepad exe." So I just used that.
+
+20
+00:01:55,509 --> 00:02:02,500
+And it just seems kind of silly. I thought
+I was so close to it, but really it's not
+
+21
+00:02:02,500 --> 00:02:07,119
+really craftsmanship. That was handcraft.
+That was like the Web's development equivalent
+
+22
+00:02:07,119 --> 00:02:13,730
+to whittling a stick.
+And handcraft is more about choosing tools
+
+23
+00:02:13,730 --> 00:02:19,769
+well, finding the right tools to get the job
+done and assist you.
+
+24
+00:02:19,769 --> 00:02:26,470
+And I noticed this too, I started at Google
+about two years ago, and looking around when
+
+25
+00:02:26,470 --> 00:02:31,290
+you're surrounded by really smart people,
+and you notice what the really productive
+
+26
+00:02:31,290 --> 00:02:36,760
+developers do. And they know their -- they
+have tools that they use, they know them really
+
+27
+00:02:36,760 --> 00:02:41,830
+well, and they embrace them. And so I kind
+of like noticed that there was a theme going
+
+28
+00:02:41,830 --> 00:02:45,849
+on here.
+And so I want to talk a little bit about tools.
+
+29
+00:02:45,849 --> 00:02:50,180
+And this is not about, you know, Google development
+tools. This is about -- you know, you don't
+
+30
+00:02:50,180 --> 00:02:56,069
+have to be building the next Gmail for this
+kind stuff to apply to you. It's for everyone.
+
+31
+00:02:56,069 --> 00:03:02,459
+A lot of people have been noticing this recently.
+And I just want you to, like, think about
+
+32
+00:03:02,459 --> 00:03:06,769
+remember there was a point at which you didn't
+actually use version control. You might have
+
+33
+00:03:06,769 --> 00:03:10,000
+been on a team and you're like, Hey, I'm going
+to be editing, indexing HTML. Can you hold
+
+34
+00:03:10,000 --> 00:03:17,000
+on just a second? Okay, you can do it now.
+Like source safe. It was, like, annoying,
+
+35
+00:03:17,540 --> 00:03:24,540
+but version control made it a lot better.
+And we can focus on development, not tiresome
+
+36
+00:03:25,379 --> 00:03:28,150
+debugging when you don't want to be doing
+it.
+
+37
+00:03:28,150 --> 00:03:32,640
+And then how much time have you lost when
+you actually had a colon where you were supposed
+
+38
+00:03:32,640 --> 00:03:38,180
+to have a semi colon or an extra comma at
+the end of your little object in JavaScript,
+
+39
+00:03:38,180 --> 00:03:43,260
+and you were like ah!
+There's lots of funny things. I'm not going
+
+40
+00:03:43,260 --> 00:03:48,360
+to click to it. It's a little not safe to
+work, commit logs from last night, pulling
+
+41
+00:03:48,360 --> 00:03:55,360
+in logs from GitHub where people happen to
+use expletives because they're a bit frustrated.
+
+42
+00:03:55,390 --> 00:04:00,620
+People that are making silly mistakes that
+they probably don't need to.
+
+43
+00:04:00,620 --> 00:04:04,969
+So we're seeing a little bit of shift towards
+looking at tools assisting us. And Rebecca
+
+44
+00:04:04,969 --> 00:04:10,969
+Murphy did a great post about this sort of
+shift recently, and she said we're seeing
+
+45
+00:04:10,969 --> 00:04:16,190
+us focus from valuing trivia to valuing tools.
+And a similar thing was said a little bit
+
+46
+00:04:16,190 --> 00:04:21,470
+ago by Michael Lop, known by Rams online.
+He's an engineering manager at Apple. He said,
+
+47
+00:04:21,470 --> 00:04:26,440
+There's a short list of tools that you must
+be rabid about, rabid, foaming at the mouth
+
+48
+00:04:26,440 --> 00:04:33,440
+crazy. And he went on to talk about how he
+used his editor, his terminal and what made
+
+49
+00:04:33,520 --> 00:04:38,400
+him productive.
+And I think this is important to really identify
+
+50
+00:04:38,400 --> 00:04:44,479
+what you feel great about. And so I've done
+a little bit of research and it talks about
+
+51
+00:04:44,479 --> 00:04:48,460
+this, and there's a lot of tools.
+When I say tools, it like covers a lot of
+
+52
+00:04:48,460 --> 00:04:53,770
+things. So this is a quick way of trying to
+visualize from start to end what are all the
+
+53
+00:04:53,770 --> 00:04:57,940
+tools that I use from the birth of a project
+to deploying it out to the world.
+
+54
+00:04:57,940 --> 00:05:02,030
+And we're going to kind of walk through a
+little bit of this, but focusing on your developer
+
+55
+00:05:02,030 --> 00:05:06,030
+workflow.
+So I'll just -- we're going to walk through
+
+56
+00:05:06,030 --> 00:05:11,000
+the current workflow for Web app developers.
+And really the way we'll start this off is
+
+57
+00:05:11,000 --> 00:05:15,449
+in your shell.
+In your shell -- I'll bring mine up right
+
+58
+00:05:15,449 --> 00:05:19,210
+now.
+Cool.
+
+59
+00:05:19,210 --> 00:05:24,900
+The first thing is I think you should make
+it sexy. Feel good about this terminal that
+
+60
+00:05:24,900 --> 00:05:30,759
+you're typing into. There's a really great
+community on GitHub around dot files, configuration
+
+61
+00:05:30,759 --> 00:05:37,150
+files for your bash prompt or your ZHS prompt,
+other application configurations. So I encourage
+
+62
+00:05:37,150 --> 00:05:42,060
+you to go check that out, see what other people
+are doing and customize your shell and share
+
+63
+00:05:42,060 --> 00:05:47,970
+your customizations with other people.
+There's a few favorites that I have. One of
+
+64
+00:05:47,970 --> 00:05:54,970
+them is a directory jumper called Z. I'll
+show that now. I can jump to any folder that
+
+65
+00:05:55,169 --> 00:05:59,270
+I've been in somewhat recently. I'll jump
+over to the modernizer project.
+
+66
+00:05:59,270 --> 00:06:04,910
+You can type any portion of that word, hit
+Z. We jump right into that. Now we'll actually
+
+67
+00:06:04,910 --> 00:06:11,599
+go over to the HTML Please project. Just type
+in "Z please," and we jump over into that
+
+68
+00:06:11,599 --> 00:06:18,599
+folder, nice and easy. Cool.
+Now, moving on past my shell -- actually,
+
+69
+00:06:18,660 --> 00:06:25,660
+first, the server alias. This is pretty cool.
+This alias, this is just a bit of bash. We
+
+70
+00:06:28,940 --> 00:06:33,800
+are just firing up a simple Web server, no
+big deal. At the same time we're opening up
+
+71
+00:06:33,800 --> 00:06:40,800
+browser tab. Configurable port if we want,
+but we'll default to 8,000 if we want. I'll
+
+72
+00:06:46,009 --> 00:06:48,169
+do that now, type in server. Cool.
+And refresh. Yeah, cool, awesome, good.
+
+73
+00:06:48,169 --> 00:06:52,599
+So we have my local HTML5 Please running right
+here.
+
+74
+00:06:52,599 --> 00:06:59,599
+Now, coming back, the next part is the editor.
+And the editor, you might have your own preferences.
+
+75
+00:07:03,289 --> 00:07:09,270
+That's fine, but the key to a good editor
+is that it's an onion application, which is
+
+76
+00:07:09,270 --> 00:07:13,080
+to say that there's a nice learning curve
+where you can kind of peel back the layers
+
+77
+00:07:13,080 --> 00:07:20,080
+of functionality and kind of grow from novice
+to expert at a very easy pace.
+
+78
+00:07:20,479 --> 00:07:25,680
+So the other thing with an editor is that
+more than any other tool, this is where your
+
+79
+00:07:25,680 --> 00:07:30,030
+investment in time and learning it well and
+learning the features inside of it will pay
+
+80
+00:07:30,030 --> 00:07:35,490
+off huge dividends.
+So I'll bring up mine right now.
+
+81
+00:07:35,490 --> 00:07:42,490
+Let's see. I'm actually using Sublime text
+and we'll bring this up and move it over here,
+
+82
+00:07:43,190 --> 00:07:50,190
+and we're going to bring up actually my script
+for this file.
+
+83
+00:07:51,699 --> 00:07:58,699
+Nice. Cool.
+Now, one of the things that I've noticed developing
+
+84
+00:07:58,840 --> 00:08:03,550
+recently is that I've kind of, like, learned
+new tricks, I like some of the features in
+
+85
+00:08:03,550 --> 00:08:08,599
+this editor. And one of the things that I
+added to my editor workflow recently was having
+
+86
+00:08:08,599 --> 00:08:15,599
+linting. And code linting built-in write live.
+So I'll show you what I mean right now.
+
+87
+00:08:17,800 --> 00:08:23,979
+So here I have these three variable declarations.
+It's cool. I didn't actually write these three
+
+88
+00:08:23,979 --> 00:08:30,979
+lines, but maybe I'll refactor them a little
+bit. Select them. I will align -- that's nice.
+
+89
+00:08:31,430 --> 00:08:38,430
+Good thing. I'll do a multiline select. Move
+that over. That's cool. And then I'll go over
+
+90
+00:08:39,290 --> 00:08:45,150
+and fix that. And good.
+Now, one of the things that it's helping me
+
+91
+00:08:45,150 --> 00:08:51,910
+out with here is I have this white box right
+here and this is linter plug-in that's running
+
+92
+00:08:51,910 --> 00:08:55,310
+inside Sublime and it's telling me I have
+a problem.
+
+93
+00:08:55,310 --> 00:09:01,110
+Now, way down at the bottom it says "H2 is
+not defined."
+
+94
+00:09:01,110 --> 00:09:08,110
+And I'm like, but you're right here. Hmm.
+And what is the problem in this right here?
+
+95
+00:09:09,960 --> 00:09:16,330
+Yes, my semi colon should be a comma and I
+should be stringing my variable declarations.
+
+96
+00:09:16,330 --> 00:09:20,210
+That's so nice.
+Yes. It's cool.
+
+97
+00:09:20,210 --> 00:09:26,420
+All right. So yeah, I got lifing back and
+it was able to, like, save me from an implied
+
+98
+00:09:26,420 --> 00:09:29,300
+global variable, which we don't want. I probably
+would have caught that. It would have been
+
+99
+00:09:29,300 --> 00:09:34,580
+a syntax error when I refresh the page, but
+I'm getting it caught right here immediately.
+
+100
+00:09:34,580 --> 00:09:41,150
+So I like this. In fact, I think code linting
+is your first unit test. Typically the first
+
+101
+00:09:41,150 --> 00:09:47,010
+unit test that you might write is the global
+there, does this thing exist. And even before
+
+102
+00:09:47,010 --> 00:09:52,720
+that you get feedback on if it's available.
+And in JavaScript this is particularly important.
+
+103
+00:09:52,720 --> 00:09:59,090
+Some of the languages have rich static analysis
+features. JavaScript is a little hairy in
+
+104
+00:09:59,090 --> 00:10:05,310
+that sort of thing, but we have code linting.
+I'm using JS right here, and I can get immediate
+
+105
+00:10:05,310 --> 00:10:10,780
+feedback on is my code syntactically sound
+and is there anything that I should watch
+
+106
+00:10:10,780 --> 00:10:16,900
+out for, like what we just saw?
+So one of the parts of this is I really like
+
+107
+00:10:16,900 --> 00:10:22,080
+getting the realtime feedback. If you've seen
+the talk by Brett Victor, Invented on Principle,
+
+108
+00:10:22,080 --> 00:10:28,380
+one of the things that he talks about is having
+immediate feedback between your code and your
+
+109
+00:10:28,380 --> 00:10:33,220
+results and getting that feedback.
+And so I'm going to show a little bit of kind
+
+110
+00:10:33,220 --> 00:10:37,870
+of what kind of tools provide this sort of
+workflow these days.
+
+111
+00:10:37,870 --> 00:10:44,870
+So I'll move this back over here and I'll
+open up the style folder or the style sheet
+
+112
+00:10:45,600 --> 00:10:52,600
+that we have. I think it's style.scss.
+So we're using Sass and Compass, and I'm going
+
+113
+00:10:54,170 --> 00:11:01,170
+to jump down to H1.
+So what I'm going to do is just make an edit
+
+114
+00:11:02,880 --> 00:11:07,190
+in the text shadow and we'll just change this
+part of the text shadow from this right here
+
+115
+00:11:07,190 --> 00:11:13,850
+up to 41 pixels and save it.
+Now, nothing happens. I refresh the page.
+
+116
+00:11:13,850 --> 00:11:19,560
+Okay, cool. That's good. But I can turn on
+this library load extension, which is just
+
+117
+00:11:19,560 --> 00:11:25,620
+available inside Chrome. It communicates with
+the system application back here. And now
+
+118
+00:11:25,620 --> 00:11:30,960
+any changes that I make are in fact live.
+So I make a change, I just hit save. I don't
+
+119
+00:11:30,960 --> 00:11:37,440
+have to go over and hit refresh. That's good.
+So I'll actually just say that that sounds
+
+120
+00:11:37,440 --> 00:11:42,540
+pretty good. And I will go down here and add
+a little bit more functionality.
+
+121
+00:11:42,540 --> 00:11:49,540
+Let's see, I'll do a CSS transition that I
+want to see .4 seconds. I'll apply that to
+
+122
+00:11:52,450 --> 00:11:59,450
+all things. And then add a hover state to
+it. I think this time we'll do a transform.
+
+123
+00:12:03,940 --> 00:12:09,460
+Nice.
+Okay. So I just hit saved, I come over here
+
+124
+00:12:09,460 --> 00:12:16,460
+with my mouse and -- nice. This is definitely
+an improvement and I will be committing this
+
+125
+00:12:16,540 --> 00:12:19,410
+to the repo right now.
+[Laughter]
+
+126
+00:12:19,410 --> 00:12:23,740
+>>Paul Irish: Or not.
+But that's cool. But I'm getting my immediate
+
+127
+00:12:23,740 --> 00:12:30,740
+feedback, so I'm getting my Sass immediately
+recompiled on the fly and then my CSS is being
+
+128
+00:12:31,960 --> 00:12:37,200
+served back to the browser. Without even the
+browser refreshing I can change the page,
+
+129
+00:12:37,200 --> 00:12:43,130
+my scroll position is maintained and just
+the style sheet is being swapped in, which
+
+130
+00:12:43,130 --> 00:12:48,350
+is really nice.
+All right. So I'm going to show a little bit
+
+131
+00:12:48,350 --> 00:12:53,050
+of the browser dev tools inside Chrome, some
+features that help especially with building
+
+132
+00:12:53,050 --> 00:12:59,060
+applications that you may not be aware of.
+The first is sourceURL. And this is a feature
+
+133
+00:12:59,060 --> 00:13:06,060
+that's been in the browser for quite awhile.
+This is a little demo set up by Ryan Sutton,
+
+134
+00:13:07,960 --> 00:13:12,850
+and so we have a little bit of Coffescript
+right here in the middle.
+
+135
+00:13:12,850 --> 00:13:18,260
+I'm going to make a small little edit to this
+Coffescript first.
+
+136
+00:13:18,260 --> 00:13:24,310
+Nice. Cool.
+I'll bring up the Chrome dev tools. And -- that's
+
+137
+00:13:24,310 --> 00:13:30,350
+pretty good. Nice.
+Now, normally I can take this Coffescript,
+
+138
+00:13:30,350 --> 00:13:36,110
+I can run it through Coffescript.js, compile
+it into its JavaScript form, and if I run
+
+139
+00:13:36,110 --> 00:13:41,600
+it, it goes through eval. And normally when
+you take text and run it through eval, it
+
+140
+00:13:41,600 --> 00:13:45,060
+evaluates, but it just kind of disappears
+into thin air.
+
+141
+00:13:45,060 --> 00:13:51,800
+SourceURL is a way to basically treat that
+as a file. So if you see down at the bottom
+
+142
+00:13:51,800 --> 00:13:58,740
+I'm adding googleio.js and adding to compile.
+Now you see it over here in the Chrome dev
+
+143
+00:13:58,740 --> 00:14:05,680
+tools. And if you look over here we have what
+I just added in the Coffescript, now compiled
+
+144
+00:14:05,680 --> 00:14:09,500
+to JavaScript, and at the side over here is
+the sourceURL.
+
+145
+00:14:09,500 --> 00:14:16,300
+So this little line is indicating, hey, dev
+tools. I got this text, I threw it into eval,
+
+146
+00:14:16,300 --> 00:14:20,250
+but can you treat it as a file? Thanks very
+much, that would be great.
+
+147
+00:14:20,250 --> 00:14:26,580
+So this is really nice, too. So not only is
+it a file, but I get all the features that
+
+148
+00:14:26,580 --> 00:14:33,580
+I would expect. So let's say break points.
+First I'll just make sure that my cube function
+
+149
+00:14:33,790 --> 00:14:39,460
+is working all nicely.
+Yes, good. Cube files 125. At a break point
+
+150
+00:14:39,460 --> 00:14:46,460
+cube of five we break. I can't actually check
+the value of X right now. We're looking good.
+
+151
+00:14:47,460 --> 00:14:54,430
+Yes, sure, we'll continue.
+Or I can do a live edit. I can immediately
+
+152
+00:14:54,430 --> 00:15:00,510
+change this file on the fly, we'll return
+2 from square so now let me ask for a cube
+
+153
+00:15:00,510 --> 00:15:07,050
+and it should be 5 times 2. Cool. And we get
+our result, which is 10.
+
+154
+00:15:07,050 --> 00:15:13,490
+So I'm getting live edit and break points
+on some JavaScript which was compiled down
+
+155
+00:15:13,490 --> 00:15:20,490
+from Coffescript all on the fly. I'm showing
+up as real files. That's pretty nice.
+
+156
+00:15:20,510 --> 00:15:27,310
+Ember actually uses sourceURL to great effect
+to -- Ember the JavaScript library, to emulate
+
+157
+00:15:27,310 --> 00:15:32,420
+modules, which is really, really cool.
+Another feature I want to show real quick
+
+158
+00:15:32,420 --> 00:15:39,420
+is source maps. So if I bring back open my
+local HTML5 Please and view the source, down
+
+159
+00:15:41,480 --> 00:15:47,850
+at the bottom is my original sources for the
+project.
+
+160
+00:15:47,850 --> 00:15:53,910
+Looks like we had some script tags pulling
+in a few libraries and then this script.js
+
+161
+00:15:53,910 --> 00:15:59,770
+that I did before, but what really gets served
+to the browser is script.min.js, which is
+
+162
+00:15:59,770 --> 00:16:06,770
+minified. My Chrome extension is critifying
+this for me, but I really want you to see
+
+163
+00:16:09,090 --> 00:16:13,360
+that it's minified. Okay, cool. Thank you,
+Chrome extension.
+
+164
+00:16:13,360 --> 00:16:19,830
+All right. So the browser is actually receiving
+the minified source, of course,
+
+165
+00:16:19,830 --> 00:16:25,800
+But down at the very bottom of it is a little
+indication similar to what we saw with sourceURL,
+
+166
+00:16:25,800 --> 00:16:31,380
+only this time it's source mapping URL.
+And this points over to a map file. And this
+
+167
+00:16:31,380 --> 00:16:36,790
+map file does -- basically takes the identifiers
+in this compiled source and maps it back to
+
+168
+00:16:36,790 --> 00:16:39,430
+my original sources and says these are the
+files.
+
+169
+00:16:39,430 --> 00:16:44,760
+And so what I can get are the results.
+I open up my dev tools and instead of seeing
+
+170
+00:16:44,760 --> 00:16:50,420
+script.min.js I see my original sources all
+in here.
+
+171
+00:16:50,420 --> 00:16:57,420
+And the cool thing is that the same thing
+works over here. Here's my nice edits that
+
+172
+00:16:57,500 --> 00:17:04,500
+I made. I can apply break points and click
+on any -- and now we're actually broken in
+
+173
+00:17:04,620 --> 00:17:09,939
+my original source even though the browser
+is interpreting the minified version. So this
+
+174
+00:17:09,939 --> 00:17:13,540
+is great for an environment like production
+where you're serving up the compiled sources,
+
+175
+00:17:13,540 --> 00:17:18,420
+but you want to be able to debug the original
+things you typed up.
+
+176
+00:17:18,420 --> 00:17:23,390
+All right. Cool.
+Lastly, if you noticed, this might look a
+
+177
+00:17:23,390 --> 00:17:27,880
+little different to you. First of all, the
+dev tools are on the right-hand side. If you
+
+178
+00:17:27,880 --> 00:17:33,630
+open up the settings panel which is down here
+in the bottom right, we have a few things
+
+179
+00:17:33,630 --> 00:17:39,790
+in there. So doc to right, which moves it
+over there. Really like it in doc to right
+
+180
+00:17:39,790 --> 00:17:46,790
+mode. We have our step to bugging on the right-hand
+side and I can get that out of the way. My
+
+181
+00:17:46,920 --> 00:17:51,450
+file's over here and I can get that out of
+the way and view my scripts in their full
+
+182
+00:17:51,450 --> 00:17:56,950
+glory. I can also jump to different scripts.
+Instead of using this menu I can kind of hit
+
+183
+00:17:56,950 --> 00:18:03,950
+Command O and see all those scripts that are
+available. It's kind of get completion there.
+
+184
+00:18:06,170 --> 00:18:12,150
+Or Command Shift O and see all the functions
+that are defined in this file, and now I'll
+
+185
+00:18:12,150 --> 00:18:17,200
+just bind -- yes, the sort function is what
+I'm looking for. I can jump immediately to
+
+186
+00:18:17,200 --> 00:18:21,080
+that definition.
+So a lot of nice things to make dealing with
+
+187
+00:18:21,080 --> 00:18:25,700
+a large JavaScript code base a bit easier
+instead of the dev tools.
+
+188
+00:18:25,700 --> 00:18:32,700
+All right. Now, I wonder about testing for
+a moment. And this right here is actually
+
+189
+00:18:33,160 --> 00:18:40,160
+a picture from a series that we have up in
+the bathrooms at the Googleplex in Mountain
+
+190
+00:18:40,810 --> 00:18:47,730
+View, California. The series is called Testing
+on the Toilet. So each week there's a new
+
+191
+00:18:47,730 --> 00:18:53,490
+sheet that gives you some good tips for writing
+test against your software. Good reading material,
+
+192
+00:18:53,490 --> 00:18:56,190
+too.
+But it's important to write unit tests, so
+
+193
+00:18:56,190 --> 00:19:01,500
+I have a few ideas here.
+First is that you should author your test
+
+194
+00:19:01,500 --> 00:19:07,130
+in whatever you feel most comfortable in,
+so these days for JavaScript it would probably
+
+195
+00:19:07,130 --> 00:19:14,130
+be Jasmine Q unit or mocha. They all have
+kind of different assertion styles, and find
+
+196
+00:19:14,740 --> 00:19:21,060
+whichever you like and you feel comfortable
+writing those assertions in. Build up a large
+
+197
+00:19:21,060 --> 00:19:26,820
+test suite and then it feels so nice as a
+security blanket when you're doing refactoring.
+
+198
+00:19:26,820 --> 00:19:31,720
+The other thing is you can execute these tests
+that you've written in a variety of different
+
+199
+00:19:31,720 --> 00:19:36,880
+sessions, so like -- settings. The first one
+is, of course, in the browser, so this is
+
+200
+00:19:36,880 --> 00:19:43,880
+the HTML5 test suite. Run inside Q unit, inside
+the browser. Pretty common. You can also run
+
+201
+00:19:44,310 --> 00:19:51,310
+the same tests inside a headless browser,
+on demand, on the command line, so I'll show
+
+202
+00:19:52,310 --> 00:19:58,830
+that right now, I'll use grunt, which is a
+node-based command line tool and type grunt
+
+203
+00:19:58,830 --> 00:20:05,830
+Q unit. So this is actually going to fire
+up phantom.js, which is a headless WebKit
+
+204
+00:20:06,010 --> 00:20:11,640
+instance, toss in those Q unit test suite
+and then check that those indeed five assertions
+
+205
+00:20:11,640 --> 00:20:17,380
+did pass. So I'm able to run the exact same
+tests just without leaving my command line
+
+206
+00:20:17,380 --> 00:20:24,350
+here. I can also run this -- run tests after
+I push it up to version control, and let something
+
+207
+00:20:24,350 --> 00:20:28,670
+like continuous integration server test these
+things, so we do this on the modernizer project.
+
+208
+00:20:28,670 --> 00:20:34,760
+So this is Travis. Every time we put up a
+new commit on GitHub, Travis comes in, pulls
+
+209
+00:20:34,760 --> 00:20:40,540
+down the latest, and actually does a similar
+thing, it takes our Q unit test, throws it
+
+210
+00:20:40,540 --> 00:20:45,830
+into phantom.js, and then -- and then we're
+looking good. It tells us if we're indeed
+
+211
+00:20:45,830 --> 00:20:52,830
+passing or had a little bit where I made some
+commits and broke some things. We fixed that.
+
+212
+00:20:53,600 --> 00:20:59,220
+It's good. Another cool one. This is really
+nice, again, from Ryan Setton. He wrote a
+
+213
+00:20:59,220 --> 00:21:04,460
+tool where we can take tests, not only get
+results on the command line, but be able to
+
+214
+00:21:04,460 --> 00:21:11,460
+test browsers in the cloud, so I'm going to
+take this same test suite that's in Q unit,
+
+215
+00:21:13,320 --> 00:21:19,380
+and toss it to bunyup, and bunyup will then
+take that and call up a browser static, which
+
+216
+00:21:19,380 --> 00:21:24,170
+has a lot of browsers in the cloud and also
+mobile emulators. I'm not going to wait for
+
+217
+00:21:24,170 --> 00:21:30,620
+this finish, but it just called up some IOS
+emulators, and it's gonna -- and it can check
+
+218
+00:21:30,620 --> 00:21:33,930
+my test suite against those and get the results
+back.
+
+219
+00:21:33,930 --> 00:21:39,080
+So this is really nice. I can write my tests,
+be able to execute them, in a number of different
+
+220
+00:21:39,080 --> 00:21:46,080
+devices and browsers on the fly without ever
+leaving right here. All right. When you have
+
+221
+00:21:46,830 --> 00:21:50,320
+a build system, you wrote all this stuff,
+you need to get it out to production. A lot
+
+222
+00:21:50,320 --> 00:21:56,430
+of things you need to do with a pretty hefty
+Web app, and tackling all of these on your
+
+223
+00:21:56,430 --> 00:22:01,140
+own every time -- every time you make changes
+is not going to work out so well, so you're
+
+224
+00:22:01,140 --> 00:22:05,870
+going to need some help. I'm going to get
+into a little bit of this later. But after
+
+225
+00:22:05,870 --> 00:22:10,750
+you deploy, one of the things that I think
+that we often forget is keeping track of your
+
+226
+00:22:10,750 --> 00:22:16,920
+errors that clients have. So this is a screen
+shot from errorception, and it's showing my
+
+227
+00:22:16,920 --> 00:22:23,920
+report from a Web app that I somewhat hastily
+put up with some friends, and telling me that
+
+228
+00:22:24,050 --> 00:22:31,050
+I actually have -- people are hitting some
+JavaScript errors in I9 and Chrome, and, you
+
+229
+00:22:31,640 --> 00:22:36,450
+know, I didn't hit any of these errors, and
+none of the other developers did, but -- but
+
+230
+00:22:36,450 --> 00:22:40,690
+real users in the field are hitting these,
+so I can get these reports and make sure that
+
+231
+00:22:40,690 --> 00:22:47,690
+I can fix all these for everyone. Okay. So
+that was a lot of stuff, and sorry, but -- so
+
+232
+00:22:51,420 --> 00:22:56,640
+I was showing a lot of things, and it was
+kind of like this is here, this is here, and
+
+233
+00:22:56,640 --> 00:23:00,020
+the feeling that I got was that this was kind
+of like -- I mean, there's a lot of tools,
+
+234
+00:23:00,020 --> 00:23:06,620
+and they're all useful, but they kind of didn't
+have this smooth integration, so me and some
+
+235
+00:23:06,620 --> 00:23:10,490
+people on my team thought about this and we
+thought maybe there's something that we could
+
+236
+00:23:10,490 --> 00:23:15,970
+do to kind of make this work flow a bit more
+smooth. And so I'm going to talk to you today
+
+237
+00:23:15,970 --> 00:23:22,970
+about a project that we're going to show off
+called Yeoman. So the ideas behind Yeoman
+
+238
+00:23:23,330 --> 00:23:28,210
+is that we think you should be able to go
+from your idea to a rough prototype in ten
+
+239
+00:23:28,210 --> 00:23:32,960
+minutes. I say "rough", but I mean like a
+prototype that you're actually going to continue
+
+240
+00:23:32,960 --> 00:23:37,260
+developing, like you're using all the tools
+inside that prototype that you would normally
+
+241
+00:23:37,260 --> 00:23:41,190
+use in a Web app, and you're going to keep
+going from that. We also want to make sure
+
+242
+00:23:41,190 --> 00:23:45,880
+that we can reduce friction from the things
+that you should be doing, such as testing.
+
+243
+00:23:45,880 --> 00:23:50,280
+And now, you probably heard that you should
+not repeat yourself when you're coding; same
+
+244
+00:23:50,280 --> 00:23:55,190
+thing applies to your tools. You shouldn't
+have to type -- you shouldn't have to run
+
+245
+00:23:55,190 --> 00:24:02,190
+build.sh every single time you change a file.
+So these things should be automatic. So what
+
+246
+00:24:03,390 --> 00:24:09,940
+Yeoman is is it's an open source set of tools,
+frameworks, libraries, that accelerate building
+
+247
+00:24:09,940 --> 00:24:15,630
+good Web apps. So has some things in it, so
+authoring abstractions, linting, testing,
+
+248
+00:24:15,630 --> 00:24:21,750
+build tools, these things that I've been talking
+about, but we've been focusing on providing
+
+249
+00:24:21,750 --> 00:24:27,760
+nice, smooth developer ergonomics so it feels
+good to use. So there's a few things inside
+
+250
+00:24:27,760 --> 00:24:33,610
+of it. Things -- these names you should be
+familiar with: Compass, sass, CoffeeScript,
+
+251
+00:24:33,610 --> 00:24:40,610
+module support, by the way of AMD, and ecmascript
+6. We'll get to that in a minute. Twitter
+
+252
+00:24:40,809 --> 00:24:46,210
+bootstrap, stripped HTML5 boilerplate, some
+testing things, Jasmine, phantom jas, image
+
+253
+00:24:46,210 --> 00:24:51,230
+compression. All right. So I'm going to do
+a demo and I'm actually going to skip the
+
+254
+00:24:51,230 --> 00:24:57,180
+first step, the first step is a little shell
+script that gets your developer environment
+
+255
+00:24:57,180 --> 00:25:04,180
+all set and going, gets you installed with
+node and NPM and home brew. Get a few of the
+
+256
+00:25:04,860 --> 00:25:07,809
+dependencies out of the way. You're going
+to want, because, you know, sometimes I'll
+
+257
+00:25:07,809 --> 00:25:12,390
+end up switching to a new machine, and getting
+your own developer environment going takes
+
+258
+00:25:12,390 --> 00:25:16,809
+awhile. So we wanted to make sure that you
+could get rid of that -- an old set in a few
+
+259
+00:25:16,809 --> 00:25:23,809
+minutes. All right. So I'm going to go to
+temp. Nice. All right. We're going to kick
+
+260
+00:25:28,930 --> 00:25:34,220
+off a new project. So a lot of what we have
+in Yeoman is accessible on the command line,
+
+261
+00:25:34,220 --> 00:25:41,040
+and so I can just type Yeoman command, and
+we have a few things available in here. We
+
+262
+00:25:41,040 --> 00:25:47,880
+have init, build, server, test, and some other
+stuff we're going to get to later. So what
+
+263
+00:25:47,880 --> 00:25:53,490
+we're going to do here is we're going to start
+a new project. I'll name this project IO app.
+
+264
+00:25:53,490 --> 00:26:00,490
+And inside our app, we're going to type Yeoman
+in it. Cool. So we're starting off a new project.
+
+265
+00:26:02,640 --> 00:26:06,480
+Things are good. It's going to ask us a few
+questions. What's the name of the project.
+
+266
+00:26:06,480 --> 00:26:12,520
+Description. It's going to pull a little bit
+of the get metadata from my get config, so
+
+267
+00:26:12,520 --> 00:26:17,130
+some of these defaults probably will make
+sense for me. And that's good. Now, it's going
+
+268
+00:26:17,130 --> 00:26:21,420
+to take all of this and create a nice little
+package .json file which I might want. Now
+
+269
+00:26:21,420 --> 00:26:27,710
+there's a few things it's going to ask me
+if I want. Do I want Twitter bootstrap? Yeah.
+
+270
+00:26:27,710 --> 00:26:33,140
+Required JS? I'll pull that in for now. And
+experimental support for ecmascript 6 modules,
+
+271
+00:26:33,140 --> 00:26:39,380
+let's do it. All right. I say yes, we get
+a bunch of files written and we're good. Just
+
+272
+00:26:39,380 --> 00:26:43,950
+to show kind of what this created, I'm going
+to take a tree and pipe it through to Les,
+
+273
+00:26:43,950 --> 00:26:50,950
+so let's see, we've got a good deal of bootstrap
+here, and then bootstrap -- a little bit of
+
+274
+00:26:53,320 --> 00:27:00,320
+HTML5 boilerplate going on here, some more
+bootstrap, Jasmine going on down here. Cool.
+
+275
+00:27:01,180 --> 00:27:08,180
+Now -- now, the next thing I'm just going
+to open this up inside my text editor, and
+
+276
+00:27:12,690 --> 00:27:18,020
+so we have here a little stripped version
+of HTML5 boilerplate and I'll add in some
+
+277
+00:27:18,020 --> 00:27:25,020
+text, and I'm actually just going to use a
+little bit of zen coding to save some time.
+
+278
+00:27:26,120 --> 00:27:33,120
+Nice. Hello I/O. Yeoman in action. Now, we
+have a server built into Yeoman. And the cool
+
+279
+00:27:38,170 --> 00:27:44,550
+thing here is that we're actually taking -- because
+when you run a server, you actually want to
+
+280
+00:27:44,550 --> 00:27:49,010
+be able to watch your changes too. So you
+set up a server. It immediately actually opens
+
+281
+00:27:49,010 --> 00:27:56,010
+up that result inside the browser as well,
+and you're off. So now I'm going to open up
+
+282
+00:27:58,179 --> 00:28:04,210
+my style sheet. All right. And we have in
+here, we're going to pull in Twitter bootstrap,
+
+283
+00:28:04,210 --> 00:28:11,210
+and I'll bring that in here, and now watch
+as I hit save on this file. Hit save. I'll
+
+284
+00:28:14,640 --> 00:28:19,760
+watch task. Notice that it immediately changes.
+And then we run it through compass, we hit
+
+285
+00:28:19,760 --> 00:28:25,330
+the reload task and you saw that it changes
+up here. So I'm now able to add whatever I
+
+286
+00:28:25,330 --> 00:28:32,330
+want inside my text editor, and get immediate
+results down at the bottom, or in my browser.
+
+287
+00:28:34,160 --> 00:28:41,160
+So do a little bit of styles here. Save. That
+looks pretty good. A little bit of color over
+
+288
+00:28:42,510 --> 00:28:49,510
+here. Save. Nice. Cool. So I'm able to just
+go run all this immediately through Coffee
+
+289
+00:28:52,370 --> 00:28:59,120
+Script -- sorry, through compass, compile
+it down to my resulting CSS and then get the
+
+290
+00:28:59,120 --> 00:29:02,650
+results immediately showing over here. The
+cool thing is that we're actually not even
+
+291
+00:29:02,650 --> 00:29:09,370
+using any sort of Chrome extension to get
+the lab reload functionality inside -- inside
+
+292
+00:29:09,370 --> 00:29:16,360
+the view in my browser. Now, this is cool,
+and I wanted to bring up testing, because
+
+293
+00:29:16,360 --> 00:29:19,150
+I mentioned that before. We can just go over
+to slash test, and we have our Jasmine test
+
+294
+00:29:19,150 --> 00:29:26,150
+suite, all green, looking good, we see in
+the browser, looks good. Like I said before,
+
+295
+00:29:28,730 --> 00:29:33,809
+I think it's really nice to have this available
+at the command line two, so we'll type in
+
+296
+00:29:33,809 --> 00:29:38,500
+Yeoman test. We're going to take that jasmine
+suite and throw it into phantom.js and get
+
+297
+00:29:38,500 --> 00:29:45,500
+our same passing results. Cool. I should mention
+here that we're using grunt again to use a
+
+298
+00:29:47,800 --> 00:29:54,800
+lot of this system level functionality. It's
+a great project for this sort of thing, and
+
+299
+00:29:55,610 --> 00:30:02,610
+we're leaning heavily on it. All right. Cool.
+Now, let's move over to another project. I
+
+300
+00:30:04,630 --> 00:30:11,630
+want to bring up this application, and we'll
+kick it off right now. Bring this up. Nice.
+
+301
+00:30:15,720 --> 00:30:22,720
+All right. So this should look pretty familiar
+to you. This is your standard to-do app. Common
+
+302
+00:30:25,420 --> 00:30:30,679
+-- a large portion of this came from the to
+do MBC project where you can see a basic to
+
+303
+00:30:30,679 --> 00:30:37,679
+do app built in a number of different frameworks
+and libraries. So let's see, go to I/O, do
+
+304
+00:30:40,080 --> 00:30:46,679
+a talk. Nice. Cool. So we've got this basic
+functionality, and that's good. I want to
+
+305
+00:30:46,679 --> 00:30:52,940
+show a little bit of how this was built. So
+right inside here, we view source, and we're
+
+306
+00:30:52,940 --> 00:30:59,940
+pulling in required.js and the main module
+that we're pulling in is main. And so I'm
+
+307
+00:31:00,000 --> 00:31:06,030
+actually going to take a quick detour and
+talk about modules. All right. So modules,
+
+308
+00:31:06,030 --> 00:31:12,990
+the quick elevator pitch on modules is that
+the key to building a large Web app is to
+
+309
+00:31:12,990 --> 00:31:19,980
+not construct a large Web app; it is to break
+it up into small libraries and small parts.
+
+310
+00:31:19,980 --> 00:31:26,190
+Writing code into small files feels good,
+and we can do that when we use modules. With
+
+311
+00:31:26,190 --> 00:31:31,330
+structured modules we can also define what
+our dependencies are, and when we do this,
+
+312
+00:31:31,330 --> 00:31:36,190
+we're actually able to just define our dependencies
+a single time, so let's say we're not using
+
+313
+00:31:36,190 --> 00:31:41,940
+modules, so you would probably have your HTML
+file, you would have bunch of script tags
+
+314
+00:31:41,940 --> 00:31:45,580
+in the order that they need to be in, and
+then you have your build system which is going
+
+315
+00:31:45,580 --> 00:31:49,500
+to, you know, concatenate all your files,
+and you have to specify your order and your
+
+316
+00:31:49,500 --> 00:31:54,860
+dependencies over there as well. Modules we
+can only -- we can just define that structure
+
+317
+00:31:54,860 --> 00:32:01,860
+just in one place. Another advantage is that
+as you develop, you might stop using code,
+
+318
+00:32:02,890 --> 00:32:09,679
+and in modules, code you stop using just gets
+stripped out when it goes out to builds. So
+
+319
+00:32:09,679 --> 00:32:13,870
+there's a few different ways to write modules,
+and I'm going to show two of them here. The
+
+320
+00:32:13,870 --> 00:32:19,809
+first is AMD modules, so these are asynchronous
+modules. They have dependency resolution,
+
+321
+00:32:19,809 --> 00:32:26,720
+help you to not write global variables, and
+it has a very rich plug-in ecosystem that
+
+322
+00:32:26,720 --> 00:32:33,720
+I'm going to show as well as smart-build optimization.
+So this is an example of, let's say, a to
+
+323
+00:32:34,280 --> 00:32:41,040
+do controller, and we're going to pull in
+this file, and bring it in to our app as a
+
+324
+00:32:41,040 --> 00:32:46,200
+to do view, and then our to do controller
+is going to return an object that includes
+
+325
+00:32:46,200 --> 00:32:52,970
+some stuff and then a render method. All right.
+Cool. Now, on to the next module. This is
+
+326
+00:32:52,970 --> 00:32:59,260
+ES 6 modules, ecmascript 6 also ecmascript
+harmony.
+
+327
+00:32:59,260 --> 00:33:06,260
+Now, this is actually coming from ecmascript
+committee, TC39, who thought that, you know,
+
+328
+00:33:07,100 --> 00:33:10,260
+people were kind of doing this in the JavaScript
+world; let's find a way to make this actually
+
+329
+00:33:10,260 --> 00:33:17,260
+happen in the language itself, so offering
+a native solution. Has a flexible syntax,
+
+330
+00:33:17,299 --> 00:33:23,559
+beyond what we have just down here, so what
+we have is we're pulling in a module called
+
+331
+00:33:23,559 --> 00:33:29,679
+"to do view", from this file, and importing
+it into this file, we have some functionality,
+
+332
+00:33:29,679 --> 00:33:32,799
+and then we can export whatever we want, so
+in this case we're going to export a function
+
+333
+00:33:32,799 --> 00:33:39,799
+called render where we do some stuff. Actually
+point out I am saying ES 6. There is a little
+
+334
+00:33:40,170 --> 00:33:45,870
+bit of conversation happening like right now
+about if this is going to make it into ecmascript
+
+335
+00:33:45,870 --> 00:33:52,360
+version 6 or the next version after that,
+so we'll see how that goes. But we wanted
+
+336
+00:33:52,360 --> 00:33:59,360
+to experiment with this, and see if Yeoman
+could give us an ability to try out this style.
+
+337
+00:34:00,540 --> 00:34:07,540
+So back to -- back to the code. I said that
+this was using required.js, so I'm going to
+
+338
+00:34:08,359 --> 00:34:15,359
+open up the -- our source of this app, and
+I'll open up main.js. So this is the module
+
+339
+00:34:19,300 --> 00:34:25,030
+it's pulling in, and looks like we're initializing
+an app right after we pull in the task app
+
+340
+00:34:25,030 --> 00:34:32,030
+module, and we have a little coffee script
+pre-filter on this, so looks like -- all right,
+
+341
+00:34:33,669 --> 00:34:40,669
+cool. So this is indeed AMD, but it is of
+course CoffeeScript. You can see at the top
+
+342
+00:34:43,970 --> 00:34:50,280
+we're playing in a few other modules into
+this file, and then we have our application
+
+343
+00:34:50,280 --> 00:34:57,070
+set up where we're defining our structure
+of our to dos. Now, one of these modules that
+
+344
+00:34:57,070 --> 00:35:04,070
+we're pulling this is this fun module, nice.
+And we're pulling it in with an HM pre-filter,
+
+345
+00:35:05,130 --> 00:35:12,130
+stands for harmony. So I'm going to go over
+to that real quick. Fun. All right. So this
+
+346
+00:35:13,060 --> 00:35:20,060
+here is an ecmascript harmony module. We are
+pulling a few things into it. So we're pulling
+
+347
+00:35:21,460 --> 00:35:28,460
+in speech, from -- from this guy over here,
+and this is actually the E speak speech synthesizer
+
+348
+00:35:29,380 --> 00:35:36,380
+client, and the cool thing about this speech
+synthesizer is that it's actually written
+
+349
+00:35:37,600 --> 00:35:43,800
+in C++, but it was run through emscripten
+which is a research project by Mozilla that
+
+350
+00:35:43,800 --> 00:35:50,800
+can port C++ into JavaScript, and so now we're
+taking that and we're exposing it through
+
+351
+00:35:51,450 --> 00:35:57,950
+ecmascript harmony modules and bringing that
+out, so we pull in this module, and we also
+
+352
+00:35:57,950 --> 00:36:03,570
+got this guy going on here, and down here
+we're going to use this speech module at the
+
+353
+00:36:03,570 --> 00:36:10,570
+bottom, and pull out this speak method. Cool.
+Coming back into our app. I can see down here
+
+354
+00:36:12,540 --> 00:36:19,540
+when we create a new item, I'm going to uncomment
+out this guy, and comment out this guy. Nice.
+
+355
+00:36:22,780 --> 00:36:29,339
+Come back here, and refresh the page. Good.
+And now let's try this out.
+
+356
+00:36:29,339 --> 00:36:36,339
+>>> Remember to ace the demo.
+>>Paul Irish: Yeah. Nice, cool. So nailed
+
+357
+00:36:36,850 --> 00:36:43,850
+it. Awesome. All right. So the cool thing
+here is that we have a C++ library that was
+
+358
+00:36:45,500 --> 00:36:52,500
+ported into JavaScript via emscripten, exposed
+via ecmascript 6 module into our CoffeeScript
+
+359
+00:36:53,020 --> 00:37:00,020
+application compiled down into ecmascript
+5 JavaScript, and now we've got a (indiscernible),
+
+360
+00:37:01,270 --> 00:37:08,270
+so I think we're in a good place. Cool. All
+right. One of the things that we wanted to
+
+361
+00:37:08,280 --> 00:37:14,840
+do with Yeoman is find out how we can iterate
+on it in a way that kind of was based on how
+
+362
+00:37:14,840 --> 00:37:21,530
+people are using it. So we have a thing in
+there that can report exactly anonymous metrics
+
+363
+00:37:21,530 --> 00:37:27,780
+around what are the commands that are typed
+in, so any kind of Yeoman commands, and this
+
+364
+00:37:27,780 --> 00:37:33,430
+way we can get a better idea on how people
+are using it, so they can make good changes
+
+365
+00:37:33,430 --> 00:37:38,410
+and really make sure that the tool fits its
+users. Another thing that it can do is answer
+
+366
+00:37:38,410 --> 00:37:44,580
+questions like what's the popularity difference
+between backbone and ember, or what's the
+
+367
+00:37:44,580 --> 00:37:51,060
+adoption rate of ES 6 modules?
+So I think this is really cool. And we also
+
+368
+00:37:51,060 --> 00:37:55,109
+want to make sure that all this -- all this
+data is accessible to anyone that wants to
+
+369
+00:37:55,109 --> 00:38:02,109
+see it. I want to take a moment just to talk
+about package management. So I don't know
+
+370
+00:38:02,869 --> 00:38:09,630
+about you guys, but if I have to update like
+a library that I depend on somewhere, the
+
+371
+00:38:09,630 --> 00:38:15,760
+first thing that happens is someone probably
+tells me, hey, that Jay creates 1.5 up to
+
+372
+00:38:15,760 --> 00:38:20,260
+1.8 alpha. You should probably update. Okay,
+okay. I'll go to the site, I'll find the download
+
+373
+00:38:20,260 --> 00:38:25,060
+button, and I'll download that to my downloads,
+then I'll move that into the app folder, and
+
+374
+00:38:25,060 --> 00:38:29,650
+then I'll like fix the script tag because
+it's a new version file and fix that, and
+
+375
+00:38:29,650 --> 00:38:36,650
+that's -- that's not great, so why do we need
+package management for clientside JavaScript?
+
+376
+00:38:36,740 --> 00:38:42,490
+Because what I just described is not fun.
+And then more like an Ecosystem level, common
+
+377
+00:38:42,490 --> 00:38:48,200
+code gets duplicated across a good size app,
+you probably have code to bind a function
+
+378
+00:38:48,200 --> 00:38:53,160
+to a scope like four times. Another thing
+that happens is that libraries get fragmented.
+
+379
+00:38:53,160 --> 00:38:58,940
+This is why we have things like the jQuery
+empire and then the YUI and dojo and closure
+
+380
+00:38:58,940 --> 00:39:05,510
+areas where things are not really interoperable,
+and we have fragmented communities and libraries.
+
+381
+00:39:05,510 --> 00:39:12,510
+So with package management, we can have something
+like a longer dependency chain. A good example
+
+382
+00:39:13,070 --> 00:39:18,210
+of this is the Chaplin project which helps
+building applications in backbone. Chaplin
+
+383
+00:39:18,210 --> 00:39:23,660
+depends on backbone and some other libraries
+which depend on jQuery and underscore. That
+
+384
+00:39:23,660 --> 00:39:30,320
+comes really easy. Better package management,
+we can define that dependency tree which informs
+
+385
+00:39:30,320 --> 00:39:35,340
+a build system to be really smart about building
+that out for a very optimized output for production.
+
+386
+00:39:35,340 --> 00:39:40,680
+Then as a library author, it's really nice
+for your users to both consume your library
+
+387
+00:39:40,680 --> 00:39:45,770
+as a regular old install and also as a dependency
+of something else. How about instead of all
+
+388
+00:39:45,770 --> 00:39:51,130
+of those steps, we just have something Yeoman
+installed backbone, we have to update it instead
+
+389
+00:39:51,130 --> 00:39:55,619
+of all of these steps, Yeoman, very casually,
+hey, man, JavaScript library update, you have
+
+390
+00:39:55,619 --> 00:40:02,619
+got to update your backbone, it's the new
+thing. You're like, cool, cool, I got it,
+
+391
+00:40:03,540 --> 00:40:08,859
+Yeoman, update backbone.
+So I'm going to show you a quick look at Bower.
+
+392
+00:40:08,859 --> 00:40:15,859
+Bower is a package manager, it's being built
+by Jacob Thorton, who is one of the devs behind
+
+393
+00:40:16,040 --> 00:40:22,070
+Twitter bootstrap and Alex MacCaw behind The
+Spine (indiscernible).
+
+394
+00:40:22,070 --> 00:40:29,070
+And what we did is we basically took Bower
+and wrapped it right inside of Yeoman so that
+
+395
+00:40:30,900 --> 00:40:37,900
+again this accesses through the same interface.
+So we're over here in the I/O app and we'll
+
+396
+00:40:39,520 --> 00:40:46,520
+do Yeoman install backbone.
+So right now, what it's doing, is Yeoman is
+
+397
+00:40:48,730 --> 00:40:55,730
+talking to Bower, Bower is going to go and
+talk to the registry, say, Hey, I need backbone,
+
+398
+00:40:55,990 --> 00:41:02,380
+cool. I just got the backbone package, it's
+dependent -- my dependencies are underscore
+
+399
+00:41:02,380 --> 00:41:05,720
+and jQuery, please get those, okay, cool,
+got those.
+
+400
+00:41:05,720 --> 00:41:12,369
+And now we've installed into our app into
+the js browser modules backbone jQuery and
+
+401
+00:41:12,369 --> 00:41:17,530
+underscore.
+So if I go into js browser modules, we have
+
+402
+00:41:17,530 --> 00:41:22,070
+all of our files right there.
+So I'm saving a lot of time not going and
+
+403
+00:41:22,070 --> 00:41:25,670
+getting all of these things and keeping them
+up to date. I'm able to manage my dependencies
+
+404
+00:41:25,670 --> 00:41:30,830
+from my app right here on the command line,
+which is really nice.
+
+405
+00:41:30,830 --> 00:41:36,980
+So this is -- this is where things are going
+with that. So -- so in summary for Yeoman,
+
+406
+00:41:36,980 --> 00:41:43,240
+we can start out new projects really easily.
+We get a fast, iterative loop when we are
+
+407
+00:41:43,240 --> 00:41:50,240
+doing development. Understanding preprocessors
+like Sass and CoffeeScript, module systems
+
+408
+00:41:51,720 --> 00:41:58,570
+like AMD and ES6.
+I didn't show how we can run our files against
+
+409
+00:41:58,570 --> 00:42:05,570
+js hint. Or even the build script, which is
+pretty robust. It's built actually on the
+
+410
+00:42:05,619 --> 00:42:11,020
+original build script for the HTML5 boilerplate.
+But we have done a lot of research into image
+
+411
+00:42:11,020 --> 00:42:17,950
+optimization and found the most effective
+loss list image compression we can do.
+
+412
+00:42:17,950 --> 00:42:23,580
+So Yeoman is available on the dev val for
+preview, if you go to Yeoman.io you can sign
+
+413
+00:42:23,580 --> 00:42:30,090
+up and get notified when it's totally ready.
+We're just doing a little bit of buckling
+
+414
+00:42:30,090 --> 00:42:34,750
+to make sure that we're looking good. We also
+want to make sure that our package manager
+
+415
+00:42:34,750 --> 00:42:38,359
+has enough packages so that when you want
+to start an app and add things, everything
+
+416
+00:42:38,359 --> 00:42:43,200
+is there for you as you want it.
+So we're letting in a few people, just to
+
+417
+00:42:43,200 --> 00:42:48,030
+kind of kick the tires and we'll have it out
+available for everyone publicly soon.
+
+418
+00:42:48,030 --> 00:42:52,380
+All right. So ... summary. Tools are your
+friends, they're good, they increase your
+
+419
+00:42:52,380 --> 00:42:56,690
+productivity, lower your stress, help you
+out when you use them in a work flow that
+
+420
+00:42:56,690 --> 00:43:02,080
+works really well for you. We're working on
+Yeoman. Tell -- make it easier to consume
+
+421
+00:43:02,080 --> 00:43:05,970
+these smart tooling choices and help you build
+compelling web apps.
+
+422
+00:43:05,970 --> 00:43:10,580
+And thank you very much.
+[ Applause ]
+
+423
+00:43:10,580 --> 00:43:17,580
+>>Paul Irish: If you have any questions, go
+ahead and step up to the mics in the aisles
+
+424
+00:43:29,310 --> 00:43:36,310
+and that would be rad.
+>>> Thanks, Paul.
+
+425
+00:43:38,410 --> 00:43:44,340
+>>Paul Irish: You're welcome.
+>>> So Paul.
+
+426
+00:43:44,340 --> 00:43:48,810
+>>Paul Irish: Sir?
+>>> I saw Jasmine, is there going to be other
+
+427
+00:43:48,810 --> 00:43:54,970
+testing like plug-ins or --
+>>Paul Irish: So since we are built on -- on
+
+428
+00:43:54,970 --> 00:44:01,970
+Grunt, if you are familiar with that, swapping
+it out for -- for a different testing suite
+
+429
+00:44:03,300 --> 00:44:09,960
+is as easy as editing the Grunt file. So it's
+not too bad. But we -- we made choices that
+
+430
+00:44:09,960 --> 00:44:16,440
+-- we wanted to have some smart defaults in
+there, so we went with Jasmine because we
+
+431
+00:44:16,440 --> 00:44:22,260
+really like its style. So it is configurable,
+but we wanted to have something that gets
+
+432
+00:44:22,260 --> 00:44:25,080
+you off and going from the start.
+>>> Awesome.
+
+433
+00:44:25,080 --> 00:44:28,920
+>>Paul Irish: Cool.
+>>> Can I get an invite? [Laughter]
+
+434
+00:44:28,920 --> 00:44:34,810
+>>Paul Irish: Yeah, yeah.
+You talk to me, talk to me.
+
+435
+00:44:34,810 --> 00:44:40,930
+>>> Um, when you -- after you installed Yeoman
+and you were making changes, changes were
+
+436
+00:44:40,930 --> 00:44:44,440
+loading in the browser, was that live reload
+or was that something in Yeoman?
+
+437
+00:44:44,440 --> 00:44:51,440
+>>Paul Irish: So we are actually leveraging
+the JavaScript shim that the live reload project
+
+438
+00:44:53,470 --> 00:44:59,450
+used and we're injecting that into the page.
+And so we're using a portion of the live reload,
+
+439
+00:44:59,450 --> 00:45:03,190
+but it's really just JavaScript that's making
+that happen.
+
+440
+00:45:03,190 --> 00:45:06,359
+>>> Okay. So ensure one doesn't have to have
+live reload to have that feature.
+
+441
+00:45:06,359 --> 00:45:12,450
+>>Paul Irish: Right. That feature comes through
+Yeoman, so you don't even have to have anything
+
+442
+00:45:12,450 --> 00:45:14,730
+else installed yet.
+>>> Okay, thanks.
+
+443
+00:45:14,730 --> 00:45:19,020
+>>> So you showed us the testing and the development
+side. I'm guessing part of the build process
+
+444
+00:45:19,020 --> 00:45:24,250
+that you didn't have time to show us was building
+for deployment. Would that also include being
+
+445
+00:45:24,250 --> 00:45:31,250
+able to use the closure compiler to have source
+mapping? Um ... yeah. Right now, um -- right
+
+446
+00:45:33,300 --> 00:45:40,300
+now our build step goes through uglify, but
+we're looking at a nice way to run it through
+
+447
+00:45:40,890 --> 00:45:47,760
+a closure compiler, because I like source
+maps just as much as you do. So there's -- there's
+
+448
+00:45:47,760 --> 00:45:54,070
+a few issues and discussions open to get source
+mapping into Uglify and to CoffeeScript, neither
+
+449
+00:45:54,070 --> 00:45:58,060
+of them have landed yet. So we're waiting
+for that, but in the meantime, yeah, I would
+
+450
+00:45:58,060 --> 00:46:01,430
+really love to find a nice way to get source
+maps into the closure compiler.
+
+451
+00:46:01,430 --> 00:46:06,400
+>>> Right. And there was an issue around having
+multiple source maps and trying to read from
+
+452
+00:46:06,400 --> 00:46:12,800
+each other. I'll catch you at the code lab.
+>>Paul Irish: Sure, yeah, sounds good. Sir?
+
+453
+00:46:12,800 --> 00:46:19,800
+>>> All right. What kind of requirements do
+I need -- for my server when I want to deploy
+
+454
+00:46:21,140 --> 00:46:27,030
+this Yeoman created app?
+>>Paul Irish: Um, no specific requirement.
+
+455
+00:46:27,030 --> 00:46:34,030
+It's completely up to you. So -- so it's -- it's
+basically we don't make any requirements as
+
+456
+00:46:35,190 --> 00:46:39,520
+far as your back end. It stays completely
+client side only whereas another solution
+
+457
+00:46:39,520 --> 00:46:43,510
+might say this is your database on the backend
+or we're going to serve it up to Engine X
+
+458
+00:46:43,510 --> 00:46:46,849
+or something like that, but that is completely
+up to you.
+
+459
+00:46:46,849 --> 00:46:52,759
+>>> I see. Okay.
+>>Paul Irish: Yes, sir, one more.
+
+460
+00:46:52,759 --> 00:46:59,759
+>>> This one is for Louie. So how much do
+you know about like the Bower package manager,
+
+461
+00:47:00,590 --> 00:47:05,730
+how hard is it going to be to get a package
+into it?
+
+462
+00:47:05,730 --> 00:47:09,630
+I noticed that it looked like it was cloning,
+so if you push that back up to GitHub, like,
+
+463
+00:47:09,630 --> 00:47:16,630
+is there like weird issues?
+>>Paul Irish: Um ... well, I can answer the
+
+464
+00:47:18,230 --> 00:47:22,390
+first part at least.
+So it was previously called nest and I'm accessing
+
+465
+00:47:22,390 --> 00:47:29,390
+it, this way. And registering a new package
+is as easy as that. Bower. Register the name
+
+466
+00:47:32,480 --> 00:47:39,480
+and the URL of the get repo. It's very, very
+easy and there's a package.json file that
+
+467
+00:47:39,480 --> 00:47:44,170
+has the meta data available for the package.
+There's no strict dependency on GitHub, but
+
+468
+00:47:44,170 --> 00:47:51,170
+there is a strict dependency on git, and clone
+each package, find out its dependencies and
+
+469
+00:47:52,830 --> 00:47:58,410
+the team is finding ways to optimize that
+and say, for instance, grab the zip download
+
+470
+00:47:58,410 --> 00:48:05,410
+if it's a GitHub situation instead of cloning
+the entire repo, finding out how to make that
+
+471
+00:48:07,560 --> 00:48:08,460
+really nice.
+Cool? All right. Thank you guys, appreciate
+
+472
+00:48:08,460 --> 00:48:08,710
+it.
+[ Applause ]
+

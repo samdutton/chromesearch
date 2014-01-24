@@ -41,7 +41,6 @@ button[disabled] {
 color: white;
 }
 
-<<<<<<< HEAD
 details.transcript {
 margin: 0 0 0.5em 0;
 padding: 0 0 0 18px;
@@ -49,10 +48,6 @@ padding: 0 0 0 18px;
 
 details.videoDetails {
 margin: 0 0 0.5em 0;
-=======
-details.videoDetails{
-margin: 0 0 0.3em 0;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 }
 
 div#container {
@@ -84,11 +79,7 @@ overflow-y: auto;
 
 div.cue {
 cursor: pointer;
-<<<<<<< HEAD
 font-size: 12px;
-=======
-font-size: 10pt;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 margin: 0 0 1em 0;
 line-height: 1.3em;
 padding: 0 0 0 40px;
@@ -100,14 +91,11 @@ margin: 1em 0 0 0;
 padding: 0 0 0 1em;
 }
 
-<<<<<<< HEAD
 div.transcript{
   color: white;
   font-size: 10px;
 }
 
-=======
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 div.video {
 margin: 0 0 1.3em 0;
 border-bottom: 1px dotted #999;
@@ -116,11 +104,7 @@ padding: 0 0 0.6em 0;
 
 div.video div.videoRating {
 color: #666;
-<<<<<<< HEAD
 font-size: 10px;
-=======
-font-size: 10pt;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 margin: 0 0 0.4em 0;
 clear: left;
 }
@@ -128,34 +112,21 @@ clear: left;
 div.video div.videoViewCount {
 border-bottom: 1px solid #333;
 color: #666;
-<<<<<<< HEAD
 font-size: 10px;
-=======
-font-size: 10pt;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 margin: 0 0 0.6em 0;
 padding: 0 0 0.6em 0;
 }
 
 div.video div.speakers {
 color: #999;
-<<<<<<< HEAD
 font-size: 13px;
 margin: 0 0 1em 0;
-=======
-font-size: 11pt;
-margin: 0 0 -0.1em 0;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 padding: 0 0 0 16px;
 }
 
 div.video div.videoSummary {
 color: #ddd;
-<<<<<<< HEAD
 font-size: 11px;
-=======
-font-size: 11pt;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 margin: 0 0 5px 0;
 line-height: 1.6em;
 padding: 28px 0 0 0;
@@ -163,11 +134,7 @@ padding: 28px 0 0 0;
 
 div.video div.videoTitle {
 color: #ccc;
-<<<<<<< HEAD
 font-size: 12px;
-=======
-font-size: 12pt;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 margin: 0 0 0.4em 0;
 }
 
@@ -208,11 +175,7 @@ width: 240px;
 
 input#query {
 font-family: Arial, sans-serif;
-<<<<<<< HEAD
 font-size: 14px;
-=======
-font-size: 14pt;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 padding: 5px;
 width: 627px;
 margin:  0 0 10px 0;
@@ -238,15 +201,12 @@ border-bottom: 1px solid #aaa;
 padding: 0 0 20px 0;
 }
 
-<<<<<<< HEAD
 details.transcript p {
 color: #ddd;
 font-size: 13px;
 line-height: 1.5em;
 }
 
-=======
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 pre {
   color: #ddd;
 }
@@ -266,16 +226,11 @@ color: white;
 span.inputLabel {
 color: #eee;
 float: left;
-<<<<<<< HEAD
 font-size: 11px;
-=======
-font-size: 11pt;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 font-family: Arial, sans-serif;
 line-height: 1em;
 }
 
-<<<<<<< HEAD
 span.speakerName {
   color: white;
 }
@@ -284,16 +239,10 @@ summary {
 color: white;
 cursor: pointer;
 display: block; /* for browsers that don't support <summary> */
-=======
-summary{
-color: white;
-cursor: pointer;
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 font-weight: bold;
 outline: none;
 }
 
-<<<<<<< HEAD
 summary.transcriptTitle {
 font-size: 13px;
 margin: 0 0 1em 0;
@@ -303,10 +252,6 @@ line-height: 1.2em;
 }
 
 summary.videoTitle {
-=======
-summary.videoTitle {
-display: block; /* for browsers that don't support <summary> */
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 margin: 0 0 0 0;
 padding: 0 0 0 18px;
 text-indent: -18px;

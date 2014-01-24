@@ -17,11 +17,7 @@
 
 <script type="text/javascript">
 var videos = {};
-<<<<<<< HEAD
 var videoIds = ["mJieRxJ91Y4", "aELff9AOodQ", "qKa-3eUBeQk", "hgR8M-eFhNk", "4Sm-DbIOqiU", "qEEk1HqvDx0", "a-VluxK-UIk", "pKW2VQXpWzQ", "tOgmQxg4Iy0", "BSvquSYGoXQ", "bZRPetpUcjQ", "6FnC6Fdn8vc", "sJ8EX61fFWQ", "392VTLQyKDc", "E0ojKLzXoZ4", "j3YbNHtnYo4", "VKTWdaupft0", "hfs5p1BKpxQ", "f3NctLbtsNE", "FqsU3TbUw_s", "l-BA9Ee2XuM", "DH1vTVkqCDQ", "YyQYhhy1dZI", "MOEiQ6sjeaI", "Z7sRMg0f5Hk", "BTlzw5UAjQs", "20fGtfnxJuo", "8MMmg3bDOjc", "Z0a54kbdDMA", "z7sTRdSpA04", "Q7rEFEMpwe4", "gZH1d2Co1X0", "Vb0BzsaCZM0", "8wsjMER9fT0", "E7Bafn-pr2s", "2dwBB2Xa_B0", "gDP2_z3Jibw", "8QXvoPB7O94", "iKhxgcR1GZg", "MvKEomoiKBA", "pC35x6iIPmo", "-sylAVVkRro", "_43oGk9HgaU", "HhsPNcVy-w8", "O3W1yuq-ZlE", "whGwm0Lky2s", "IyVh74_SPCI", "Xj2pE7E6B30", "1Dywv7Vs-q8", "m25A-va79Fw", "7N9CNPJP6bE", "HVviF06S1T8", "WiOl0Y06xV4", "HAqjyCH_LOE", "RWmzxyMf2cE", "9xjpmpX4NJE", "Omt5YX1KgK4", "_n5pm5w8nz8", "Al3SEbeK61s", "wbSrpr_t0Vs", "Li0-FRqy7rk", "pud4CWVjV1g", "YIgSucMNFAo", "XwSFg8nqBFA", "2SLSAUo_Bqw", "RQ_55XPCcyc", "DbI0otnPm7s", "MDV1rLKo7xk", "Y5nxL99lLd4", "2M62oecMzmg", "F0LP2G0ko24", "QzB9nMb-HlI", "KTV9ZFLamm8", "jOqCzNyKuhk", "z0_jD8nO5Zw", "Lj4FYWvZrow", "irGDN5Ysi_A", "CK5GFgDjN5Y", "GpRbh0gUPEo", "1Qr8Huh2POQ", "bv64kK_5QVY", "Q_Ud7Q2F0F8", "OmfliNQsk88", "WX0J5fgGZ5Y", "A_KIiRTlXC0", "rXLNC8yCRnw", "WeIyyx5CEV0", "CNy0TWUXnQA", "SOO9Kb1-JJU", "W_pobU6v1Bk", "ZouqXQlenEY", "bSADRSs6m8o", "O5az5D51ACQ", "tADvcuYn8Po", "T-rOtfAsHNw", "Q9duSsEH6Qs", "c8oJEiDc2q0", "5XdzRoYo0wM", "gVraK5SiH_A", "dkOmuyL7ffM", "KIiCSdRCqXc", "_Gsrvya_T2Y", "38H7WpsTD0M", "uR5urTx8S4E", "ZF8vytXJlj8", "eH8KwfdkSqU", "zqatj4Nzl3E", "Dr3STRBtTp0", "Lpk1dYdo62o", "NupdqRkFL0Y", "V2ZdkiIop7c", "a9TPlPc-QBE", "kVSo4buDAEE", "FTaR2NAq0j4", "G8_KsYkAsEQ"];
-=======
-var videoIds = ["Oic22dQMRXQ", "fX0j4c_NAFY", "3-WYu_p5rdU", "WhZpKdQcKhU", "zxuA-wyajhY", "ytJKdipILiU", "FY5iiuQRyEE"];
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
 
 function getVideoData(videoId){
     var xhr = new XMLHttpRequest();
@@ -35,28 +31,16 @@ function getVideoData(videoId){
         // video.speakers = content.split(/[\n\n|\r\n\r\n]/)[0];
         // // video.subtitle = content[1];
         // // video.description = content[2];
-<<<<<<< HEAD
         try{
           video.viewCount = obj.entry.yt$statistics.viewCount;
           video.rating = obj.entry.gd$rating.average;
         } catch(e) {
           console.log(obj.entry);
-=======
-        video.viewCount = obj.entry.yt$statistics.viewCount;
-        try{
-            video.rating = obj.entry.gd$rating.average;
-        } catch(e) {
-            console.log(obj.entry);
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
         }
         video.title = obj.entry.title.$t;
         video.id = videoId;
         videos[videoId] = video;
-<<<<<<< HEAD
         if (Object.keys(videos).length === videoIds.length){ // last one
-=======
-        if (Object.keys(videos).length === videoIds.length){ // last one -- hack!
->>>>>>> 7a52c37228ffcbf563b102f2ee1394ae1b4b0296
             console.log(videos);
             document.getElementById("data").innerHTML = JSON.stringify(videos);
             var keys = Object.keys(videos);

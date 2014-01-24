@@ -1,0 +1,7851 @@
+1
+00:00:03,167 --> 00:00:04,834
+Meier: So good afternoon,
+everyone.
+
+2
+00:00:04,834 --> 00:00:06,334
+Thanks for coming along.
+
+3
+00:00:06,334 --> 00:00:08,334
+It's impressive to see
+a packed room,
+
+4
+00:00:08,334 --> 00:00:10,167
+considering the quality of some
+of the other sessions on,
+
+5
+00:00:10,167 --> 00:00:11,834
+but, uh, thanks
+for coming along.
+
+6
+00:00:11,834 --> 00:00:13,334
+My name's Reto Meier.
+
+7
+00:00:13,334 --> 00:00:15,000
+I'm a developer advocate
+for Android.
+
+8
+00:00:15,000 --> 00:00:16,501
+This is Michael Mahemoff.
+
+9
+00:00:16,501 --> 00:00:18,501
+He's a developer advocate
+on the Chrome team.
+
+10
+00:00:18,501 --> 00:00:20,834
+Today we're gonna have, uh,
+a bit of a lighthearted debate,
+
+11
+00:00:20,834 --> 00:00:23,167
+looking at some of
+the comparative differences
+
+12
+00:00:23,167 --> 00:00:26,501
+or advantages of developing
+for mobile,
+
+13
+00:00:26,501 --> 00:00:28,667
+uh, using
+either native libraries
+
+14
+00:00:28,667 --> 00:00:32,000
+or, uh, Web tools.
+
+15
+00:00:32,000 --> 00:00:33,834
+So before we get started,
+
+16
+00:00:33,834 --> 00:00:36,667
+um, it would be good for us
+to have an idea of the audience,
+
+17
+00:00:36,667 --> 00:00:38,167
+see where we stand,
+
+18
+00:00:38,167 --> 00:00:40,167
+see which of us needs to be,
+um, more convincing.
+
+19
+00:00:40,167 --> 00:00:43,000
+So with a show of hands,
+how many of you
+
+20
+00:00:43,000 --> 00:00:46,834
+are doing Web-based
+mobile development?
+
+21
+00:00:46,834 --> 00:00:48,834
+Ooh, I could be in trouble here.
+Mahemoff: Pretty good.
+
+22
+00:00:48,834 --> 00:00:51,534
+Pretty good.
+And the Android track? Nice.
+
+23
+00:00:51,534 --> 00:00:54,334
+Meier: And, uh, and how many of
+you are, uh, android developers?
+
+24
+00:00:54,334 --> 00:00:55,834
+Outstanding.
+
+25
+00:00:55,834 --> 00:00:57,667
+Mahemoff: I think you're
+on safe ground, too.
+
+26
+00:00:57,667 --> 00:00:59,501
+Meier: Yeah, I like this.
+I like this.
+
+27
+00:00:59,501 --> 00:01:01,567
+All right, so we're both gonna
+have to be really convincing.
+
+28
+00:01:01,567 --> 00:01:04,234
+That--that works.
+That works pretty well.
+
+29
+00:01:04,234 --> 00:01:07,067
+So, uh, to get started,
+I'm gonna introduce, uh,
+
+30
+00:01:07,067 --> 00:01:10,734
+or let Michael take us off
+with some mobile tips
+
+31
+00:01:10,734 --> 00:01:12,734
+for Web development.
+Mahemoff: Excellent.
+
+32
+00:01:12,734 --> 00:01:15,734
+So yes, uh, I'm making the case
+for HTML5.
+
+33
+00:01:15,734 --> 00:01:18,067
+And of course,
+when I talk about HTML5,
+
+34
+00:01:18,067 --> 00:01:20,901
+I'm not just referring
+to the actual technical spec.
+
+35
+00:01:20,901 --> 00:01:22,901
+I'm talking about all the cool
+Web technologies
+
+36
+00:01:22,901 --> 00:01:24,434
+we can use today--
+
+37
+00:01:24,434 --> 00:01:26,734
+uh, the open Web stack of HTML5
+
+38
+00:01:26,734 --> 00:01:30,234
+or HTML, CSS, and JavaScript,
+
+39
+00:01:30,234 --> 00:01:33,400
+and just this general trend
+towards getting more know-how
+
+40
+00:01:33,400 --> 00:01:36,767
+about how we're doing things,
+about faster browser run times,
+
+41
+00:01:36,767 --> 00:01:40,567
+and a whole community that's
+evolving around these standards.
+
+42
+00:01:40,567 --> 00:01:43,567
+I want to frame this argument
+around these three points,
+
+43
+00:01:43,567 --> 00:01:47,400
+so basically to say that HTML5
+is a technology
+
+44
+00:01:47,400 --> 00:01:50,234
+that is here on the various
+mobile platforms,
+
+45
+00:01:50,234 --> 00:01:52,400
+and then I want to tell you
+that HTML5
+
+46
+00:01:52,400 --> 00:01:54,901
+is a very capable technology
+as well,
+
+47
+00:01:54,901 --> 00:01:56,901
+because, you know,
+I could say that--that, uh,
+
+48
+00:01:56,901 --> 00:01:59,901
+batteries are also available
+on the various mobile platforms,
+
+49
+00:01:59,901 --> 00:02:01,801
+but they won't write
+your killer apps.
+
+50
+00:02:01,801 --> 00:02:04,133
+Hopefully I can show you
+that HTML5 will.
+
+51
+00:02:04,133 --> 00:02:06,634
+And finally, to talk
+about some of the openness
+
+52
+00:02:06,634 --> 00:02:09,801
+and the fact that it's such
+a widespread standard
+
+53
+00:02:09,801 --> 00:02:13,133
+as an advantage even over
+a single native capability
+
+54
+00:02:13,133 --> 00:02:15,133
+or a single native platform.
+
+55
+00:02:15,133 --> 00:02:17,133
+So in summary,
+to show you that HTML5
+
+56
+00:02:17,133 --> 00:02:20,133
+on the mobile devices rocks.
+
+57
+00:02:20,133 --> 00:02:23,968
+Firstly, the HTML5
+is here on various mobiles.
+
+58
+00:02:23,968 --> 00:02:26,300
+And that--those are--
+
+59
+00:02:26,300 --> 00:02:28,968
+that's a bit of a summary
+of some of the native platforms
+
+60
+00:02:28,968 --> 00:02:30,467
+you have to consider
+
+61
+00:02:30,467 --> 00:02:32,467
+when you're actually going
+to reach people
+
+62
+00:02:32,467 --> 00:02:34,467
+on the different
+mobile devices--
+
+63
+00:02:34,467 --> 00:02:36,801
+um, Linux systems,
+Microsoft, Apple,
+
+64
+00:02:36,801 --> 00:02:39,467
+and all these
+different versions.
+
+65
+00:02:39,467 --> 00:02:41,300
+Each of those things have got
+
+66
+00:02:41,300 --> 00:02:45,133
+their own programming language
+to deal with.
+
+67
+00:02:45,133 --> 00:02:48,801
+And, you know, APIs and SDKs--
+all of those things differ.
+
+68
+00:02:48,801 --> 00:02:52,133
+And you're gonna be having
+to do a lot of relearning
+
+69
+00:02:52,133 --> 00:02:54,300
+or a lot of outsourcing
+and a lot of work
+
+70
+00:02:54,300 --> 00:02:56,968
+if you want to actually target
+all the different users
+
+71
+00:02:56,968 --> 00:02:59,133
+using these various
+mobile devices.
+
+72
+00:02:59,133 --> 00:03:01,367
+So this is why you get
+comments like this.
+
+73
+00:03:01,367 --> 00:03:03,367
+Uh, this one's
+from the magazine industry.
+
+74
+00:03:03,367 --> 00:03:05,367
+They've got the sort of monthly
+or weekly publications
+
+75
+00:03:05,367 --> 00:03:07,868
+coming out
+and just struggling, you know?
+
+76
+00:03:07,868 --> 00:03:09,868
+It's costing them a lot
+of time and money
+
+77
+00:03:09,868 --> 00:03:12,701
+to actually have to go through
+and test, you know,
+
+78
+00:03:12,701 --> 00:03:14,868
+see what the content's like
+on all these different
+
+79
+00:03:14,868 --> 00:03:17,200
+sort of, uh,
+all these platforms
+
+80
+00:03:17,200 --> 00:03:20,534
+that they're putting
+their apps out onto.
+
+81
+00:03:20,534 --> 00:03:22,534
+It starts to become compelling
+to think about--
+
+82
+00:03:22,534 --> 00:03:24,200
+could we have one platform
+
+83
+00:03:24,200 --> 00:03:26,701
+to target all of these
+different devices?
+
+84
+00:03:26,701 --> 00:03:28,367
+And HTML5 is here.
+
+85
+00:03:28,367 --> 00:03:30,934
+It's working on the mobiles
+of today.
+
+86
+00:03:30,934 --> 00:03:33,033
+You couldn't imagine getting
+a new phone
+
+87
+00:03:33,033 --> 00:03:34,701
+without having a browser.
+
+88
+00:03:34,701 --> 00:03:37,567
+And many of them do have
+the latest features of HTML5.
+
+89
+00:03:37,567 --> 00:03:39,534
+You know, they're--many
+of these phones using WebKit,
+
+90
+00:03:39,534 --> 00:03:41,367
+which is what we also use
+
+91
+00:03:41,367 --> 00:03:43,467
+on the desktop browsers
+like Chrome.
+
+92
+00:03:43,467 --> 00:03:45,667
+They're also on the tablets
+
+93
+00:03:45,667 --> 00:03:49,667
+and even on other devices
+as well, like TVs.
+
+94
+00:03:49,667 --> 00:03:52,334
+So they have browsers.
+
+95
+00:03:52,334 --> 00:03:54,334
+You can put your apps
+in browsers.
+
+96
+00:03:54,334 --> 00:03:58,167
+Users click on links when they
+see a tweet, for instance.
+
+97
+00:03:58,167 --> 00:04:00,000
+They'll click on a link,
+and they'll--
+
+98
+00:04:00,000 --> 00:04:01,901
+that's what they will be opening
+is the browser.
+
+99
+00:04:01,901 --> 00:04:03,734
+So you need to be there
+on the mobile Web,
+
+100
+00:04:03,734 --> 00:04:05,567
+ready inside people's browsers.
+
+101
+00:04:05,567 --> 00:04:08,067
+And you can also embed your--
+your apps,
+
+102
+00:04:08,067 --> 00:04:10,067
+or your Web view--
+your Web apps
+
+103
+00:04:10,067 --> 00:04:13,067
+inside native apps as well.
+There are techniques for this.
+
+104
+00:04:13,067 --> 00:04:16,067
+On the whole, uh,
+the various operating systems
+
+105
+00:04:16,067 --> 00:04:18,567
+have said we don't want
+the experience
+
+106
+00:04:18,567 --> 00:04:21,067
+of the user having to click
+when they see a link,
+
+107
+00:04:21,067 --> 00:04:23,400
+and then it would open up
+a separate browser app.
+
+108
+00:04:23,400 --> 00:04:27,067
+So the various native platforms
+tend to provide a way
+
+109
+00:04:27,067 --> 00:04:30,901
+to actually embed a Web view
+inside a native app.
+
+110
+00:04:30,901 --> 00:04:32,901
+And because of that,
+Web advan--
+
+111
+00:04:32,901 --> 00:04:35,067
+Web developers have taken
+advantage of that
+
+112
+00:04:35,067 --> 00:04:38,067
+to actually embed
+their own Web app
+
+113
+00:04:38,067 --> 00:04:41,901
+inside the native app
+that they've actually published.
+
+114
+00:04:41,901 --> 00:04:45,067
+So when you look at these
+various programming languages,
+
+115
+00:04:45,067 --> 00:04:47,234
+you can also look at it
+another way.
+
+116
+00:04:47,234 --> 00:04:51,067
+You can say, "well, let's just
+deal with it as one platform,
+
+117
+00:04:51,067 --> 00:04:53,734
+"one programming language,
+one set of APIs,
+
+118
+00:04:53,734 --> 00:04:57,400
+one set of design patterns
+and conventions."
+
+119
+00:04:57,400 --> 00:04:59,567
+But is this for real?
+
+120
+00:04:59,567 --> 00:05:01,634
+Like, can you really try
+to pull this off,
+
+121
+00:05:01,634 --> 00:05:03,300
+this idea of one platform
+
+122
+00:05:03,300 --> 00:05:05,300
+and one programming API
+everywhere?
+
+123
+00:05:05,300 --> 00:05:06,968
+The reason it works
+
+124
+00:05:06,968 --> 00:05:09,300
+is--is not because of some magic
+
+125
+00:05:09,300 --> 00:05:11,801
+that says that you write
+the same app everywhere,
+
+126
+00:05:11,801 --> 00:05:13,634
+it's because you do
+actually have
+
+127
+00:05:13,634 --> 00:05:15,300
+the same technologies
+everywhere,
+
+128
+00:05:15,300 --> 00:05:17,167
+but you still have to do
+some customization
+
+129
+00:05:17,167 --> 00:05:18,968
+and make things fit the device
+
+130
+00:05:18,968 --> 00:05:21,634
+you're actually working with.
+
+131
+00:05:21,634 --> 00:05:23,634
+So right at the heart
+of the Web
+
+132
+00:05:23,634 --> 00:05:25,300
+is all of these concepts
+
+133
+00:05:25,300 --> 00:05:27,467
+of dealing with multiple types
+of devices.
+
+134
+00:05:27,467 --> 00:05:29,467
+The Web has these
+three technologies--
+
+135
+00:05:29,467 --> 00:05:31,467
+HTML, JavaScript, and CSS,
+
+136
+00:05:31,467 --> 00:05:33,133
+you know that the--
+
+137
+00:05:33,133 --> 00:05:35,300
+they distinguish the content,
+being the HTML--
+
+138
+00:05:35,300 --> 00:05:37,133
+that's something like
+a content creator.
+
+139
+00:05:37,133 --> 00:05:38,801
+It might be a journalist--
+
+140
+00:05:38,801 --> 00:05:40,801
+that's the thing that they're
+actually creating.
+
+141
+00:05:40,801 --> 00:05:42,467
+The JavaScript is the logic.
+
+142
+00:05:42,467 --> 00:05:44,300
+That's the thing
+that programmers create
+
+143
+00:05:44,300 --> 00:05:46,634
+to actually control
+the user computer interaction.
+
+144
+00:05:46,634 --> 00:05:49,634
+And the CSS is the kind of thing
+designers work on.
+
+145
+00:05:49,634 --> 00:05:51,501
+And so because you get
+that separation,
+
+146
+00:05:51,501 --> 00:05:53,801
+you can reuse a lot across
+the different devices.
+
+147
+00:05:53,801 --> 00:05:55,801
+You can have almost the same,
+
+148
+00:05:55,801 --> 00:05:57,801
+or exactly the same HTML,
+
+149
+00:05:57,801 --> 00:06:00,300
+uh, the actual content.
+
+150
+00:06:00,300 --> 00:06:02,367
+You can reuse a lot
+of the JavaScript.
+
+151
+00:06:02,367 --> 00:06:04,868
+And you can hopefully leverage
+some of the CSS
+
+152
+00:06:04,868 --> 00:06:06,701
+and then customize it further.
+
+153
+00:06:06,701 --> 00:06:08,701
+We actually just showed that
+in the previous talk,
+
+154
+00:06:08,701 --> 00:06:11,534
+uh, that I was involved with
+earlier on today,
+
+155
+00:06:11,534 --> 00:06:13,367
+uh, just doing exactly that,
+
+156
+00:06:13,367 --> 00:06:15,701
+having very different
+sort of user experiences
+
+157
+00:06:15,701 --> 00:06:19,367
+but the same markup
+and most of the same JavaScript.
+
+158
+00:06:19,367 --> 00:06:21,367
+So this is something
+that the Web's always had,
+
+159
+00:06:21,367 --> 00:06:23,367
+because the Web evolved
+from a situation
+
+160
+00:06:23,367 --> 00:06:25,868
+where it wasn't tied
+to any one particular device
+
+161
+00:06:25,868 --> 00:06:27,534
+or operating system.
+
+162
+00:06:27,534 --> 00:06:30,868
+The Web spread like wildfire
+and continues to spread today
+
+163
+00:06:30,868 --> 00:06:33,367
+because it does run
+on this huge variety
+
+164
+00:06:33,367 --> 00:06:37,000
+of different platforms
+and operating systems.
+
+165
+00:06:37,000 --> 00:06:39,667
+Graceful degradation
+is another aspect of that,
+
+166
+00:06:39,667 --> 00:06:42,000
+dealing with different types
+of devices
+
+167
+00:06:42,000 --> 00:06:43,834
+and different levels of support.
+
+168
+00:06:43,834 --> 00:06:46,334
+So we talk about all these
+latest and greatest
+
+169
+00:06:46,334 --> 00:06:49,334
+HTML5 features you've seen
+like in the keynote today.
+
+170
+00:06:49,334 --> 00:06:51,834
+They're not all there
+in all of the browsers.
+
+171
+00:06:51,834 --> 00:06:55,167
+But they don't--the app
+just doesn't just go and explode
+
+172
+00:06:55,167 --> 00:06:57,501
+if--if your use--
+if you're relying on something.
+
+173
+00:06:57,501 --> 00:06:59,501
+If you're doing it right
+and doing it the way
+
+174
+00:06:59,501 --> 00:07:01,901
+Web developers
+have always learned to do it,
+
+175
+00:07:01,901 --> 00:07:03,400
+you can fall back,
+
+176
+00:07:03,400 --> 00:07:05,400
+and the Web actually supports
+that intrinsically.
+
+177
+00:07:05,400 --> 00:07:07,734
+So you've got this capability
+to--to say--
+
+178
+00:07:07,734 --> 00:07:10,400
+the <canvas> tag--okay,
+I don't have Canvas.
+
+179
+00:07:10,400 --> 00:07:12,234
+Then I'll just fall back nicely.
+
+180
+00:07:12,234 --> 00:07:14,067
+That's the content
+that will be shown
+
+181
+00:07:14,067 --> 00:07:15,901
+instead of the <canvas> tag.
+
+182
+00:07:15,901 --> 00:07:17,734
+If the attribute
+is not supported
+
+183
+00:07:17,734 --> 00:07:19,234
+because you're always--
+
+184
+00:07:19,234 --> 00:07:21,067
+HTML5 is always adding
+new attributes
+
+185
+00:07:21,067 --> 00:07:23,067
+to do extra things,
+like in this case to show--
+
+186
+00:07:23,067 --> 00:07:25,567
+to let you select
+multiple files.
+
+187
+00:07:25,567 --> 00:07:27,567
+So in this case
+that's not supported. Fine.
+
+188
+00:07:27,567 --> 00:07:29,567
+That will just get ignored.
+
+189
+00:07:29,567 --> 00:07:31,601
+There won't be an error,
+it will just get ignored,
+
+190
+00:07:31,601 --> 00:07:34,067
+and you can just choose
+a single file instead.
+
+191
+00:07:34,067 --> 00:07:36,567
+The style--the font's
+not supported in this case.
+
+192
+00:07:36,567 --> 00:07:38,567
+So we can actually choose
+the best possible font
+
+193
+00:07:38,567 --> 00:07:40,067
+we would want.
+
+194
+00:07:40,067 --> 00:07:42,067
+HTML5 lets us be very flexible
+with our fonts.
+
+195
+00:07:42,067 --> 00:07:44,734
+We can actually--again, we can
+fall back to a font that does.
+
+196
+00:07:44,734 --> 00:07:46,234
+So this is all the way--
+
+197
+00:07:46,234 --> 00:07:49,901
+the whole spirit
+of the way the Web works.
+
+198
+00:07:49,901 --> 00:07:52,734
+Cascading Style Sheets
+is another aspect of this.
+
+199
+00:07:52,734 --> 00:07:55,234
+So you can actually have
+one style sheet,
+
+200
+00:07:55,234 --> 00:07:57,567
+and then that gets overridden
+by other style sheets.
+
+201
+00:07:57,567 --> 00:07:59,734
+So you can say, well,
+we've got our desktop app.
+
+202
+00:07:59,734 --> 00:08:02,300
+You can just publish
+a normal app for the Web first,
+
+203
+00:08:02,300 --> 00:08:05,300
+see if it takes off, see
+if it's interesting to people.
+
+204
+00:08:05,300 --> 00:08:08,133
+People can start using it
+on the mobile already.
+
+205
+00:08:08,133 --> 00:08:09,801
+And then a couple
+of years later,
+
+206
+00:08:09,801 --> 00:08:12,634
+you decide, well, now we can
+start to customize a bit more
+
+207
+00:08:12,634 --> 00:08:14,133
+for the mobile
+
+208
+00:08:14,133 --> 00:08:16,133
+and have those rules
+override the previous rules.
+
+209
+00:08:16,133 --> 00:08:18,133
+And then you can go
+even further than that.
+
+210
+00:08:18,133 --> 00:08:19,634
+You can say, well,
+
+211
+00:08:19,634 --> 00:08:21,300
+we specifically care
+about Android,
+
+212
+00:08:21,300 --> 00:08:23,133
+or we specifically care
+about, um, the Motorola Xoom
+
+213
+00:08:23,133 --> 00:08:24,634
+or whatever.
+
+214
+00:08:24,634 --> 00:08:26,467
+You can go as far as you want,
+
+215
+00:08:26,467 --> 00:08:28,133
+and actually customize
+as much detail,
+
+216
+00:08:28,133 --> 00:08:29,801
+but you don't always have to.
+
+217
+00:08:29,801 --> 00:08:31,634
+You can start
+from a basic point,
+
+218
+00:08:31,634 --> 00:08:33,634
+get your app up and running,
+and see if people like it,
+
+219
+00:08:33,634 --> 00:08:35,501
+and then tune it from there.
+
+220
+00:08:35,501 --> 00:08:39,033
+The Web's always had an idea
+about fluid layouts as well.
+
+221
+00:08:39,033 --> 00:08:42,167
+So just by the nature of the way
+the rendering works,
+
+222
+00:08:42,167 --> 00:08:44,667
+things tend to stretch
+in a reasonable way.
+
+223
+00:08:44,667 --> 00:08:46,334
+And even more so,
+
+224
+00:08:46,334 --> 00:08:48,834
+people have got
+well-established techniques now
+
+225
+00:08:48,834 --> 00:08:51,334
+for doing these kinds
+of fluid designs
+
+226
+00:08:51,334 --> 00:08:55,167
+to deal with all sorts of
+different screen resolutions.
+
+227
+00:08:55,167 --> 00:08:57,834
+Uh, we've got sort of like
+the idea of--
+
+228
+00:08:57,834 --> 00:08:59,667
+of one cloud.
+
+229
+00:08:59,667 --> 00:09:03,567
+Um, this is a very big--
+big idea in our industry.
+
+230
+00:09:03,567 --> 00:09:06,234
+And now what I'm saying to you
+is with HTML5
+
+231
+00:09:06,234 --> 00:09:08,901
+you've got the ability to scale
+horizontally very quickly,
+
+232
+00:09:08,901 --> 00:09:11,100
+because you're reusing
+a lot of the logic.
+
+233
+00:09:11,100 --> 00:09:13,400
+You're--you're using
+the same technologies
+
+234
+00:09:13,400 --> 00:09:14,901
+when you're jumping
+
+235
+00:09:14,901 --> 00:09:16,734
+onto these different types
+of devices.
+
+236
+00:09:16,734 --> 00:09:18,734
+So you might actually still be
+customizing a bit,
+
+237
+00:09:18,734 --> 00:09:20,734
+but you can do that
+a lot quicker.
+
+238
+00:09:20,734 --> 00:09:23,567
+So that's sort of the view
+from, like, HTML5
+
+239
+00:09:23,567 --> 00:09:25,400
+as a platform.
+
+240
+00:09:25,400 --> 00:09:28,234
+Um, on the mobiles,
+HTML5 as a platform,
+
+241
+00:09:28,234 --> 00:09:30,734
+as far
+as the functionality goes,
+
+242
+00:09:30,734 --> 00:09:33,400
+it's starting to get
+these technologies
+
+243
+00:09:33,400 --> 00:09:35,400
+that will rival
+the native technologies.
+
+244
+00:09:35,400 --> 00:09:37,234
+So we've got user interfaces--
+
+245
+00:09:37,234 --> 00:09:39,067
+let you see a lot of great
+Canvas things,
+
+246
+00:09:39,067 --> 00:09:40,901
+like "Angry Birds" and so on.
+
+247
+00:09:40,901 --> 00:09:43,067
+But there's also things
+beneath the surface as well,
+
+248
+00:09:43,067 --> 00:09:44,601
+the networking
+
+249
+00:09:44,601 --> 00:09:46,901
+and offline-type capabilities,
+too, that we need.
+
+250
+00:09:46,901 --> 00:09:49,067
+And I'll show you some demos
+of this in a moment,
+
+251
+00:09:49,067 --> 00:09:51,901
+but first I'll--I'll go through
+some code examples,
+
+252
+00:09:51,901 --> 00:09:54,067
+just to show you
+the kind of APIs
+
+253
+00:09:54,067 --> 00:09:56,400
+that will support
+these sorts of things
+
+254
+00:09:56,400 --> 00:09:59,234
+we've always had
+in the mobile browsers.
+
+255
+00:09:59,234 --> 00:10:01,901
+So we've got, for instance,
+geolocation.
+
+256
+00:10:01,901 --> 00:10:04,067
+We can actually--
+these are the kinds of things
+
+257
+00:10:04,067 --> 00:10:06,567
+that are actually in many cases
+inspired by mobiles,
+
+258
+00:10:06,567 --> 00:10:08,400
+but they've come back
+into the Web
+
+259
+00:10:08,400 --> 00:10:10,400
+so they can be used
+in mobile Web apps
+
+260
+00:10:10,400 --> 00:10:12,400
+as well as on the desktop
+and elsewhere.
+
+261
+00:10:12,400 --> 00:10:16,067
+Um, very straightforward API
+for doing geolocation,
+
+262
+00:10:16,067 --> 00:10:19,567
+and as with all
+of these sorts of APIs,
+
+263
+00:10:19,567 --> 00:10:21,400
+it's potentially sensitive.
+
+264
+00:10:21,400 --> 00:10:23,400
+So just like you would get
+on an Android app--
+
+265
+00:10:23,400 --> 00:10:25,234
+you know,
+you'll actually get asked
+
+266
+00:10:25,234 --> 00:10:26,901
+if you'll give it permission,
+
+267
+00:10:26,901 --> 00:10:28,734
+the Web has that concept
+now, too.
+
+268
+00:10:28,734 --> 00:10:30,567
+You can do multi-touch,
+
+269
+00:10:30,567 --> 00:10:32,400
+so we do now have touch events,
+
+270
+00:10:32,400 --> 00:10:34,234
+and specifically we have
+the ability
+
+271
+00:10:34,234 --> 00:10:36,567
+to do multi-touch
+as part of the Web--
+
+272
+00:10:36,567 --> 00:10:38,567
+the standard ways
+of handling events as well.
+
+273
+00:10:38,567 --> 00:10:40,400
+We get an array--
+you can see there,
+
+274
+00:10:40,400 --> 00:10:42,567
+when there's a touch event,
+you get an array
+
+275
+00:10:42,567 --> 00:10:45,400
+of all the touch objects.
+
+276
+00:10:45,400 --> 00:10:47,400
+We can do device orientation.
+
+277
+00:10:47,400 --> 00:10:49,400
+So there--that's now part
+of the standard, too.
+
+278
+00:10:49,400 --> 00:10:51,267
+It works on Chrome
+on the desktop
+
+279
+00:10:51,267 --> 00:10:52,901
+and some tablets as well.
+
+280
+00:10:52,901 --> 00:10:54,734
+Starting to get there.
+
+281
+00:10:54,734 --> 00:10:57,734
+And we've got standards
+for speech recognition.
+
+282
+00:10:57,734 --> 00:10:59,734
+Uh, apologies,
+that's a little small.
+
+283
+00:10:59,734 --> 00:11:01,968
+So that's input x-webkit-speech.
+
+284
+00:11:01,968 --> 00:11:05,467
+That works on Chrome
+to do speech recognition.
+
+285
+00:11:05,467 --> 00:11:07,634
+And there are device APIs
+as well
+
+286
+00:11:07,634 --> 00:11:10,467
+to actually just capture
+different types of media.
+
+287
+00:11:10,467 --> 00:11:12,634
+And you can see that they're
+actually building
+
+288
+00:11:12,634 --> 00:11:14,300
+on the existing standard.
+
+289
+00:11:14,300 --> 00:11:16,801
+So it's just a file input,
+but if you give it
+
+290
+00:11:16,801 --> 00:11:18,968
+this extra attribute
+of what it accepts,
+
+291
+00:11:18,968 --> 00:11:21,300
+the devices will be smart enough
+
+292
+00:11:21,300 --> 00:11:23,467
+to actually switch
+into that form.
+
+293
+00:11:23,467 --> 00:11:26,834
+And on the output side
+of things,
+
+294
+00:11:26,834 --> 00:11:29,634
+uh, we can do markup
+and styling with semantic tags.
+
+295
+00:11:29,634 --> 00:11:33,300
+So we've actually got these
+kind of much richer things--
+
+296
+00:11:33,300 --> 00:11:36,467
+much richer ways to explain
+the content on our page.
+
+297
+00:11:36,467 --> 00:11:38,133
+And this is really useful,
+right?
+
+298
+00:11:38,133 --> 00:11:39,968
+This means you create
+your Web app like this,
+
+299
+00:11:39,968 --> 00:11:41,968
+you've already got your content.
+You've handled your SEO.
+
+300
+00:11:41,968 --> 00:11:44,968
+You've got your--almost like
+a kind of API built in,
+
+301
+00:11:44,968 --> 00:11:47,133
+because you've got this content
+sitting there openly
+
+302
+00:11:47,133 --> 00:11:48,634
+on the internet.
+
+303
+00:11:48,634 --> 00:11:50,634
+You don't have to. You can
+close it off if you want,
+
+304
+00:11:50,634 --> 00:11:52,634
+but the Web tends
+to be open by default,
+
+305
+00:11:52,634 --> 00:11:55,968
+unless you get that kind
+of sharing experience
+
+306
+00:11:55,968 --> 00:11:58,501
+just by structuring your apps
+like this.
+
+307
+00:11:58,501 --> 00:12:00,801
+And--and then you can style it
+really nicely, too.
+
+308
+00:12:00,801 --> 00:12:03,033
+So CSS 3 gives you
+all these ways
+
+309
+00:12:03,033 --> 00:12:04,701
+of decorating that content
+
+310
+00:12:04,701 --> 00:12:06,868
+and getting the best
+of both worlds.
+
+311
+00:12:06,868 --> 00:12:08,534
+You've got Canvas,
+
+312
+00:12:08,534 --> 00:12:11,200
+so for doing
+even richer graphics--Canvas.
+
+313
+00:12:11,200 --> 00:12:14,367
+You've seen 3-D Canvas
+or WebGL today as well.
+
+314
+00:12:14,367 --> 00:12:17,200
+Um, we can do these kinds
+of graphics,
+
+315
+00:12:17,200 --> 00:12:20,734
+um, more and more inside
+the various mobile devices.
+
+316
+00:12:20,734 --> 00:12:24,033
+And multimedia as well
+is possible, too.
+
+317
+00:12:24,033 --> 00:12:26,200
+So we can actually do video
+and audio now
+
+318
+00:12:26,200 --> 00:12:27,868
+as part of HTML5.
+
+319
+00:12:27,868 --> 00:12:30,701
+This is an example of a native
+app that's on the iPad.
+
+320
+00:12:30,701 --> 00:12:34,534
+"Just One More"--they're using
+Vimeo's HTML5 video API
+
+321
+00:12:34,534 --> 00:12:38,033
+to actually show videos
+inside this native app.
+
+322
+00:12:38,033 --> 00:12:39,868
+I'm gonna switch gears now.
+
+323
+00:12:39,868 --> 00:12:41,868
+I'll show you a demo
+of some of these things
+
+324
+00:12:41,868 --> 00:12:44,033
+I'm talking about here.
+
+325
+00:12:44,033 --> 00:12:45,968
+Let's see.
+
+326
+00:12:45,968 --> 00:12:47,901
+Get this guy on.
+
+327
+00:12:50,367 --> 00:12:53,200
+Whoa, which one are we on?
+
+328
+00:12:53,200 --> 00:12:55,868
+Two, four?
+
+329
+00:12:55,868 --> 00:12:57,801
+Meier: Two.
+Mahemoff: Two, gotcha.
+
+330
+00:13:02,000 --> 00:13:05,200
+So this is geolocation.
+
+331
+00:13:05,200 --> 00:13:07,667
+So just to prove this works,
+let's see how it goes.
+
+332
+00:13:07,667 --> 00:13:10,167
+So it's asking me if I want
+to share my location.
+
+333
+00:13:10,167 --> 00:13:12,334
+So we've got the coordinates
+showing up,
+
+334
+00:13:12,334 --> 00:13:14,501
+and it's doing a bit
+of mashing up
+
+335
+00:13:14,501 --> 00:13:17,334
+to actually show the weather
+and so on.
+
+336
+00:13:17,334 --> 00:13:21,000
+Multi-touch test--so this is
+inside a browser.
+
+337
+00:13:21,000 --> 00:13:23,000
+As you can see here,
+
+338
+00:13:23,000 --> 00:13:25,267
+it'll actually detect all ten.
+
+339
+00:13:29,334 --> 00:13:31,334
+I'm gonna leave that one.
+There's a more fun one.
+
+340
+00:13:31,334 --> 00:13:32,834
+So this is 3-D,
+
+341
+00:13:32,834 --> 00:13:35,267
+3-D transformations with CSS 3.
+
+342
+00:13:38,634 --> 00:13:40,434
+So that--you know,
+this is decorated.
+
+343
+00:13:40,434 --> 00:13:42,267
+We can actually decorate
+content this way.
+
+344
+00:13:42,267 --> 00:13:43,934
+And this is bitly.
+
+345
+00:13:43,934 --> 00:13:46,300
+So we'll jump here.
+
+346
+00:13:46,300 --> 00:13:49,434
+Uh, it's generating those graphs
+in real time
+
+347
+00:13:49,434 --> 00:13:51,801
+inside the browser.
+
+348
+00:13:51,801 --> 00:13:53,801
+But the most fun one
+
+349
+00:13:53,801 --> 00:13:56,601
+is the one I've actually written
+for this talk.
+
+350
+00:13:56,601 --> 00:13:58,601
+So you can see I've taken
+a few photos
+
+351
+00:13:58,601 --> 00:14:00,434
+around the place here.
+
+352
+00:14:00,434 --> 00:14:02,501
+Inside the browser--
+
+353
+00:14:02,501 --> 00:14:05,267
+let's see if I can get
+this working upside down here.
+
+354
+00:14:09,334 --> 00:14:10,767
+There we go.
+
+355
+00:14:13,033 --> 00:14:15,934
+And this app's running
+offline as well.
+
+356
+00:14:19,667 --> 00:14:22,968
+So it--whoops.
+Back up.
+
+357
+00:14:22,968 --> 00:14:25,334
+Yeah, so this app
+is actually running offline,
+
+358
+00:14:25,334 --> 00:14:27,334
+so it's just stored,
+so now I'm in the DOM.
+
+359
+00:14:27,334 --> 00:14:31,167
+So I'll go and put you guys
+in the DOM as well,
+
+360
+00:14:31,167 --> 00:14:34,000
+in local storage.
+
+361
+00:14:34,000 --> 00:14:36,667
+Wait for it. I'm gonna
+switch the camera around.
+
+362
+00:14:36,667 --> 00:14:38,667
+So say hi. Sorry, I can only
+get the middle row here,
+
+363
+00:14:38,667 --> 00:14:41,501
+the middle aisle,
+but go on, say, "hi, I/O."
+
+364
+00:14:41,501 --> 00:14:44,334
+That--whoops, wrong way.
+
+365
+00:14:44,334 --> 00:14:46,267
+[laughter]
+
+366
+00:14:48,334 --> 00:14:50,167
+Mahemoff: All right.
+
+367
+00:14:50,167 --> 00:14:52,501
+And it's kind of jumping around,
+
+368
+00:14:52,501 --> 00:14:55,667
+which way--whichever way I go.
+
+369
+00:14:55,667 --> 00:14:57,501
+I'll leave the--okay.
+
+370
+00:14:57,501 --> 00:14:59,834
+So now you guys
+are in local storage as well.
+
+371
+00:14:59,834 --> 00:15:03,734
+So--so I can actually--
+if I reload this...
+
+372
+00:15:03,734 --> 00:15:07,400
+Actually... I don't know.
+
+373
+00:15:07,400 --> 00:15:09,300
+I'll reload it
+just to show you
+
+374
+00:15:09,300 --> 00:15:11,133
+that--that's
+actually coming--
+
+375
+00:15:11,133 --> 00:15:13,300
+well, anyway,
+it won't go offline,
+
+376
+00:15:13,300 --> 00:15:14,801
+but it will work.
+
+377
+00:15:14,801 --> 00:15:16,634
+You can try this later on.
+
+378
+00:15:16,634 --> 00:15:18,801
+If you try that URL--
+html5photos.appspot.com,
+
+379
+00:15:18,801 --> 00:15:20,467
+you can see how that works.
+
+380
+00:15:20,467 --> 00:15:22,467
+You can try it on the tablets
+you got yesterday,
+
+381
+00:15:22,467 --> 00:15:24,300
+'cause I've tested it.
+It works on there.
+
+382
+00:15:24,300 --> 00:15:26,133
+It's just a basic
+proof of concept.
+
+383
+00:15:26,133 --> 00:15:27,968
+And it also works
+on the desktop,
+
+384
+00:15:27,968 --> 00:15:29,801
+um, where you can
+actually use it
+
+385
+00:15:29,801 --> 00:15:31,634
+as a way of keeping
+photos offline
+
+386
+00:15:31,634 --> 00:15:33,300
+just by using the file import
+
+387
+00:15:33,300 --> 00:15:36,968
+and pulling photos
+from your hard drive.
+
+388
+00:15:36,968 --> 00:15:39,834
+Now let me jump back.
+
+389
+00:15:39,834 --> 00:15:42,968
+But it's more than just the user
+interface side of things,
+
+390
+00:15:42,968 --> 00:15:45,133
+it's also about doing
+these sorts of things
+
+391
+00:15:45,133 --> 00:15:47,133
+in, uh, you know--
+
+392
+00:15:47,133 --> 00:15:49,133
+the sort of back-end
+functionality as well,
+
+393
+00:15:49,133 --> 00:15:51,033
+so things like networking.
+
+394
+00:15:51,033 --> 00:15:53,467
+The--where the Web
+really took off
+
+395
+00:15:53,467 --> 00:15:56,300
+was a few years ago when we had
+this concept of Ajax.
+
+396
+00:15:56,300 --> 00:15:58,133
+It was the recognition
+
+397
+00:15:58,133 --> 00:16:00,801
+that suddenly the user could be
+working in the browser,
+
+398
+00:16:00,801 --> 00:16:03,033
+and at the same time you could
+have all this communication
+
+399
+00:16:03,033 --> 00:16:05,033
+going on back to the server
+
+400
+00:16:05,033 --> 00:16:07,367
+that sent down that application.
+
+401
+00:16:07,367 --> 00:16:09,033
+For security reasons,
+
+402
+00:16:09,033 --> 00:16:11,033
+you couldn't actually go
+to other domains.
+
+403
+00:16:11,033 --> 00:16:13,033
+A few hacks have come about
+to make that possible,
+
+404
+00:16:13,033 --> 00:16:14,701
+but now we've actually got that
+
+405
+00:16:14,701 --> 00:16:16,534
+built into the standards
+as well.
+
+406
+00:16:16,534 --> 00:16:18,534
+So we can start to do
+really sophisticated mash-ups
+
+407
+00:16:18,534 --> 00:16:20,367
+by using cross-origin
+or resource sharing
+
+408
+00:16:20,367 --> 00:16:22,868
+and going across
+to other domains.
+
+409
+00:16:22,868 --> 00:16:24,534
+And we also have WebSocket
+
+410
+00:16:24,534 --> 00:16:26,367
+and some other technologies
+as well
+
+411
+00:16:26,367 --> 00:16:28,200
+to do proper real-time
+streaming.
+
+412
+00:16:28,200 --> 00:16:30,200
+So it's not just a case
+of the browser making a request.
+
+413
+00:16:30,200 --> 00:16:32,033
+We can also do
+a live communication channel
+
+414
+00:16:32,033 --> 00:16:33,534
+back and forth.
+
+415
+00:16:33,534 --> 00:16:35,534
+You can see,
+Rumpetroll will work already
+
+416
+00:16:35,534 --> 00:16:39,133
+on some mobile devices.
+
+417
+00:16:39,133 --> 00:16:40,701
+Uh, offline--
+
+418
+00:16:40,701 --> 00:16:42,868
+so this app here,
+it does work offline.
+
+419
+00:16:42,868 --> 00:16:44,534
+You can try it for yourselves.
+
+420
+00:16:44,534 --> 00:16:46,367
+Just visit it once
+and then take it offline.
+
+421
+00:16:46,367 --> 00:16:48,033
+And try it
+and then hit "reload."
+
+422
+00:16:48,033 --> 00:16:49,534
+You'll see it'll work.
+
+423
+00:16:49,534 --> 00:16:51,200
+It's using
+the application cache--
+
+424
+00:16:51,200 --> 00:16:52,701
+very straightforward technology
+
+425
+00:16:52,701 --> 00:16:55,701
+where essentially you just need
+to list your assets.
+
+426
+00:16:55,701 --> 00:16:57,367
+And some of you might have seen
+
+427
+00:16:57,367 --> 00:16:59,200
+the Chrome
+Web store talk yesterday,
+
+428
+00:16:59,200 --> 00:17:01,033
+where people like
+"The New York Times"
+
+429
+00:17:01,033 --> 00:17:03,767
+were mentioning that it's
+not just about being offline.
+
+430
+00:17:03,767 --> 00:17:06,267
+It's also a massive
+performance improvement.
+
+431
+00:17:06,267 --> 00:17:09,100
+So the same sort of situation
+as a native app,
+
+432
+00:17:09,100 --> 00:17:10,767
+where you have your content--
+
+433
+00:17:10,767 --> 00:17:12,601
+you have your app
+as well as your content
+
+434
+00:17:12,601 --> 00:17:14,934
+that are all stored
+inside the device,
+
+435
+00:17:14,934 --> 00:17:16,934
+you can do the same thing
+with the Web now.
+
+436
+00:17:16,934 --> 00:17:18,767
+You don't have to make it
+like every time
+
+437
+00:17:18,767 --> 00:17:22,300
+you go and start this app,
+it's gonna load the whole thing.
+
+438
+00:17:22,300 --> 00:17:25,300
+And offline storage is
+another aspect of this as well.
+
+439
+00:17:25,300 --> 00:17:27,133
+So you can actually have,
+you know--
+
+440
+00:17:27,133 --> 00:17:29,133
+storing not just
+the application logic,
+
+441
+00:17:29,133 --> 00:17:32,334
+but also the actual content.
+
+442
+00:17:32,334 --> 00:17:35,968
+So that's showing you that HTML5
+is here on the mobiles,
+
+443
+00:17:35,968 --> 00:17:38,968
+and it's also a very capable
+technology.
+
+444
+00:17:38,968 --> 00:17:40,634
+But it's more than that.
+
+445
+00:17:40,634 --> 00:17:42,467
+It's also just some
+intrinsic things
+
+446
+00:17:42,467 --> 00:17:44,133
+about the way the Web works.
+
+447
+00:17:44,133 --> 00:17:46,400
+And I think they're
+quite compelling for developers.
+
+448
+00:17:46,400 --> 00:17:48,467
+It is based on standards,
+
+449
+00:17:48,467 --> 00:17:50,968
+So while it takes
+a little bit longer
+
+450
+00:17:50,968 --> 00:17:52,634
+for those standards to evolve,
+
+451
+00:17:52,634 --> 00:17:54,968
+and it's kind of a messy
+standards process,
+
+452
+00:17:54,968 --> 00:17:58,133
+ultimately what you end up with
+is several implementations
+
+453
+00:17:58,133 --> 00:17:59,634
+of these standards,
+
+454
+00:17:59,634 --> 00:18:01,701
+and these implementations,
+like you've seen--
+
+455
+00:18:01,701 --> 00:18:03,701
+with these massive performance
+increases we've seen
+
+456
+00:18:03,701 --> 00:18:05,734
+from the likes of Chrome,
+
+457
+00:18:05,734 --> 00:18:07,534
+that it causes a lot
+of competition
+
+458
+00:18:07,534 --> 00:18:09,367
+between the different browsers
+
+459
+00:18:09,367 --> 00:18:10,868
+to keep innovating,
+
+460
+00:18:10,868 --> 00:18:13,200
+and also to keep coming up
+with new standards.
+
+461
+00:18:13,200 --> 00:18:15,033
+Like I've tried to show you
+here today,
+
+462
+00:18:15,033 --> 00:18:17,033
+it's okay for a browser
+to go ahead
+
+463
+00:18:17,033 --> 00:18:18,868
+and come up with a new feature
+
+464
+00:18:18,868 --> 00:18:21,367
+that might not yet be
+on the other browsers,
+
+465
+00:18:21,367 --> 00:18:23,033
+because you have ways
+to degrade,
+
+466
+00:18:23,033 --> 00:18:25,033
+and there is a standards process
+for the other browsers
+
+467
+00:18:25,033 --> 00:18:27,033
+to adopt those standards, too.
+
+468
+00:18:27,033 --> 00:18:30,367
+And--and it's also the fact
+that you're on the Web.
+
+469
+00:18:30,367 --> 00:18:32,367
+You've got that content
+sitting on the Web,
+
+470
+00:18:32,367 --> 00:18:34,868
+so you've already got a lot
+of your search, uh, problem
+
+471
+00:18:34,868 --> 00:18:36,367
+already solved
+
+472
+00:18:36,367 --> 00:18:38,400
+and the ability of making it
+accessible as well
+
+473
+00:18:38,400 --> 00:18:41,701
+to things like screen readers.
+
+474
+00:18:41,701 --> 00:18:43,701
+The actual technology of the Web
+
+475
+00:18:43,701 --> 00:18:46,701
+is becoming more and more,
+um, popular.
+
+476
+00:18:46,701 --> 00:18:48,701
+It's very much already
+for a few years now--
+
+477
+00:18:48,701 --> 00:18:50,701
+it seems to be what people
+like to think of
+
+478
+00:18:50,701 --> 00:18:53,033
+as a lingua franca,
+a language that--
+
+479
+00:18:53,033 --> 00:18:55,367
+just by its privileged place
+in the browser,
+
+480
+00:18:55,367 --> 00:18:57,367
+everyone has to know
+some JavaScript
+
+481
+00:18:57,367 --> 00:18:59,200
+and some HTML5.
+
+482
+00:18:59,200 --> 00:19:01,934
+There are now huge communities
+of Web developers
+
+483
+00:19:01,934 --> 00:19:04,434
+who consider it their first
+and favorite language.
+
+484
+00:19:04,434 --> 00:19:06,934
+There are other people who
+still prefer other languages,
+
+485
+00:19:06,934 --> 00:19:09,267
+but they still know
+a lot of these technologies.
+
+486
+00:19:09,267 --> 00:19:11,267
+And we even have
+server-side technologies
+
+487
+00:19:11,267 --> 00:19:12,801
+like Node now,
+
+488
+00:19:12,801 --> 00:19:14,934
+that let you write
+the entire app on the server
+
+489
+00:19:14,934 --> 00:19:18,100
+and the browser in the same, uh,
+set of core technologies
+
+490
+00:19:18,100 --> 00:19:20,434
+and the same programming
+language.
+
+491
+00:19:20,434 --> 00:19:22,267
+So you can see why people
+like this.
+
+492
+00:19:22,267 --> 00:19:24,100
+This is a quote
+from "The Onion" here,
+
+493
+00:19:24,100 --> 00:19:26,100
+but it is actually serious,
+I'm told.
+
+494
+00:19:26,100 --> 00:19:28,434
+Um, it is basically--
+they're making the point
+
+495
+00:19:28,434 --> 00:19:30,434
+that they've got the iPad app,
+
+496
+00:19:30,434 --> 00:19:32,934
+and they're doing it in HTML5,
+because they already know it.
+
+497
+00:19:32,934 --> 00:19:35,601
+They already have a Web site.
+They have to have a Web site.
+
+498
+00:19:35,601 --> 00:19:37,601
+They have
+to have things running
+
+499
+00:19:37,601 --> 00:19:39,267
+as apps on the Web.
+
+500
+00:19:39,267 --> 00:19:41,601
+So they're just leveraging
+all of that existing skill
+
+501
+00:19:41,601 --> 00:19:45,133
+and--and resources.
+
+502
+00:19:45,133 --> 00:19:46,601
+And finally,
+
+503
+00:19:46,601 --> 00:19:48,934
+HTML5 is a very well-supported
+technology now.
+
+504
+00:19:48,934 --> 00:19:50,767
+It's been around
+for a long time.
+
+505
+00:19:50,767 --> 00:19:52,767
+And you've got some great
+libraries that have evolved
+
+506
+00:19:52,767 --> 00:19:54,601
+since the whole Ajax revolution,
+
+507
+00:19:54,601 --> 00:19:57,100
+libraries like jQuery
+that you hear a lot about.
+
+508
+00:19:57,100 --> 00:19:59,100
+Um, there's great
+debugging tools.
+
+509
+00:19:59,100 --> 00:20:00,934
+There's Chrome Dev Tools
+for instance,
+
+510
+00:20:00,934 --> 00:20:03,601
+that make life a lot easier
+for developers.
+
+511
+00:20:03,601 --> 00:20:05,601
+And there's a whole community
+as well.
+
+512
+00:20:05,601 --> 00:20:07,934
+So there's a lot of, uh--
+it's very easy
+
+513
+00:20:07,934 --> 00:20:09,934
+to--to get on board
+with HTML5
+
+514
+00:20:09,934 --> 00:20:12,100
+You just open up a text editor
+and write something
+
+515
+00:20:12,100 --> 00:20:14,434
+and run--run it in your browser.
+Everyone can do that.
+
+516
+00:20:14,434 --> 00:20:16,767
+And just to actually skill up
+from there
+
+517
+00:20:16,767 --> 00:20:18,801
+is a lot easier
+than it used to be.
+
+518
+00:20:18,801 --> 00:20:20,601
+And there's just this
+huge community of blogs
+
+519
+00:20:20,601 --> 00:20:22,934
+and tutorials
+and everything around it.
+
+520
+00:20:22,934 --> 00:20:24,767
+So I think
+I will leave it there
+
+521
+00:20:24,767 --> 00:20:26,767
+and give it to Reto.
+
+522
+00:20:26,767 --> 00:20:29,267
+Meier: All right,
+thanks very much, Mike.
+
+523
+00:20:29,267 --> 00:20:32,200
+[applause]
+Mahemoff: Thank you.
+
+524
+00:20:35,501 --> 00:20:38,000
+Meier: He'll be back later,
+but, uh, I'm sure he...
+
+525
+00:20:38,000 --> 00:20:40,000
+Mahemoff: Appreciated anyway.
+Meier: appreciates the applause.
+
+526
+00:20:40,000 --> 00:20:41,834
+Um, so he's made
+a good point, right?
+
+527
+00:20:41,834 --> 00:20:43,667
+Um, there's some really
+interesting stuff there,
+
+528
+00:20:43,667 --> 00:20:46,000
+some really compelling reasons
+why, you know,
+
+529
+00:20:46,000 --> 00:20:49,501
+building applications
+for mobile phones on the Web
+
+530
+00:20:49,501 --> 00:20:51,167
+is a really good idea.
+
+531
+00:20:51,167 --> 00:20:53,167
+Uh, what really appeals to me
+is this idea
+
+532
+00:20:53,167 --> 00:20:55,167
+that you have this
+cross-functional approach,
+
+533
+00:20:55,167 --> 00:20:57,000
+that you have an app
+you write once,
+
+534
+00:20:57,000 --> 00:20:58,834
+and it works across
+all the smartphones,
+
+535
+00:20:58,834 --> 00:21:00,667
+or at least all the modern
+smartphones
+
+536
+00:21:00,667 --> 00:21:02,567
+where you want your app
+to be used.
+
+537
+00:21:02,567 --> 00:21:05,567
+So why would you risk--
+why would you risk losing that?
+
+538
+00:21:05,567 --> 00:21:08,067
+You know, why build an app
+which is only one platform?
+
+539
+00:21:08,067 --> 00:21:10,734
+Well, there's
+100 million reasons,
+
+540
+00:21:10,734 --> 00:21:12,567
+in one instance,
+why you might want to.
+
+541
+00:21:12,567 --> 00:21:14,400
+There's a lot of Android apps
+out there.
+
+542
+00:21:14,400 --> 00:21:16,234
+And we want to try
+and create something
+
+543
+00:21:16,234 --> 00:21:18,234
+that's optimized
+for those users.
+
+544
+00:21:18,234 --> 00:21:20,234
+Before I get into the details,
+I want to talk a little bit
+
+545
+00:21:20,234 --> 00:21:22,067
+about the terminology
+we're using.
+
+546
+00:21:22,067 --> 00:21:23,901
+So we've thrown the word
+"native" around
+
+547
+00:21:23,901 --> 00:21:25,601
+quite a lot already.
+
+548
+00:21:25,601 --> 00:21:27,234
+Um, if you're Android
+developers,
+
+549
+00:21:27,234 --> 00:21:29,067
+often when we're talking
+about native apps,
+
+550
+00:21:29,067 --> 00:21:31,234
+we talk about something
+slightly different
+
+551
+00:21:31,234 --> 00:21:33,067
+from what we might be
+considering.
+
+552
+00:21:33,067 --> 00:21:34,901
+So for today when we're
+talking about native,
+
+553
+00:21:34,901 --> 00:21:36,601
+it's really anything built
+
+554
+00:21:36,601 --> 00:21:38,567
+specifically for
+the Android platform.
+
+555
+00:21:38,567 --> 00:21:40,567
+'Cause there's actually a few
+ways that you can do this.
+
+556
+00:21:40,567 --> 00:21:42,567
+It's not just about
+writing things
+
+557
+00:21:42,567 --> 00:21:44,734
+for the Java virtual machine.
+
+558
+00:21:44,734 --> 00:21:46,567
+That is the most common way
+of doing it.
+
+559
+00:21:46,567 --> 00:21:48,400
+So most of you guys,
+if you're Android developers,
+
+560
+00:21:48,400 --> 00:21:50,901
+are probably writing things
+using Java Syntax,
+
+561
+00:21:50,901 --> 00:21:54,400
+which is going to be running
+on the Dalvik virtual machine.
+
+562
+00:21:54,400 --> 00:21:57,234
+And that's certainly the, uh,
+the majority of apps.
+
+563
+00:21:57,234 --> 00:21:59,267
+We also have a number
+of different alternatives.
+
+564
+00:21:59,267 --> 00:22:02,467
+And one of those is actually
+what we call native development.
+
+565
+00:22:02,467 --> 00:22:04,467
+Um, so that's using
+the native development kit.
+
+566
+00:22:04,467 --> 00:22:07,634
+And you can actually build apps
+using C or C++.
+
+567
+00:22:07,634 --> 00:22:09,968
+And that takes you one level
+further down.
+
+568
+00:22:09,968 --> 00:22:11,968
+So rather than running on top
+of the virtual machine,
+
+569
+00:22:11,968 --> 00:22:13,801
+you're actually running
+much closer
+
+570
+00:22:13,801 --> 00:22:15,634
+to the metal underneath that.
+
+571
+00:22:15,634 --> 00:22:17,801
+Uh, we also launched something
+called Renderscript,
+
+572
+00:22:17,801 --> 00:22:20,133
+which is a way that you
+can write even faster,
+
+573
+00:22:20,133 --> 00:22:21,968
+um, graphics code.
+
+574
+00:22:21,968 --> 00:22:23,968
+And that's how things
+like the, uh,
+
+575
+00:22:23,968 --> 00:22:26,300
+Google Books
+page turn animation works,
+
+576
+00:22:26,300 --> 00:22:27,968
+The YouTube dynamic gallery.
+
+577
+00:22:27,968 --> 00:22:30,634
+All of that stuff
+is written in Renderscript,
+
+578
+00:22:30,634 --> 00:22:32,634
+uh, which is actually--
+the coding language there
+
+579
+00:22:32,634 --> 00:22:34,801
+is a variation of C--C99
+
+580
+00:22:34,801 --> 00:22:36,467
+And we also have the ability
+
+581
+00:22:36,467 --> 00:22:38,300
+of using the Android
+Scripting Layer
+
+582
+00:22:38,300 --> 00:22:40,300
+to be able to write things
+in scripting languages,
+
+583
+00:22:40,300 --> 00:22:42,801
+things like Python, Perl,
+those sorts of languages.
+
+584
+00:22:42,801 --> 00:22:44,801
+You can actually build apps
+
+585
+00:22:44,801 --> 00:22:47,133
+using those languages as well,
+though they'll have to run on--
+
+586
+00:22:47,133 --> 00:22:50,467
+on top of an additional
+interpreter.
+
+587
+00:22:50,467 --> 00:22:52,968
+So when I say, you know,
+I want you to build native apps,
+
+588
+00:22:52,968 --> 00:22:54,801
+I can mean any of these things.
+
+589
+00:22:54,801 --> 00:22:56,634
+I don't really mind
+how you do it,
+
+590
+00:22:56,634 --> 00:22:58,634
+but I do want you to focus
+on Android specifically,
+
+591
+00:22:58,634 --> 00:23:02,033
+and on the hardware layer.
+
+592
+00:23:02,033 --> 00:23:04,033
+So what are the advantages?
+
+593
+00:23:04,033 --> 00:23:07,033
+Why--why are we wanting
+to build native apps?
+
+594
+00:23:07,033 --> 00:23:10,367
+It's really because it gives you
+a much richer experience.
+
+595
+00:23:10,367 --> 00:23:12,868
+You're able to build things
+which have much broader access
+
+596
+00:23:12,868 --> 00:23:14,534
+to the underlying hardware.
+
+597
+00:23:14,534 --> 00:23:16,200
+And it's not just that.
+
+598
+00:23:16,200 --> 00:23:17,868
+You also have
+a closer integration
+
+599
+00:23:17,868 --> 00:23:19,534
+to the system features.
+
+600
+00:23:19,534 --> 00:23:21,367
+You have this ability
+to create apps
+
+601
+00:23:21,367 --> 00:23:22,868
+which are optimized
+
+602
+00:23:22,868 --> 00:23:24,868
+specifically for the hardware
+that they're running on,
+
+603
+00:23:24,868 --> 00:23:26,868
+specifically for the systems
+that they're running on
+
+604
+00:23:26,868 --> 00:23:28,868
+and with the other software
+that's gonna be running
+
+605
+00:23:28,868 --> 00:23:30,367
+on those systems.
+
+606
+00:23:30,367 --> 00:23:32,200
+So it gives you the ability
+to write something
+
+607
+00:23:32,200 --> 00:23:34,367
+that's not just an app,
+which is running on a screen,
+
+608
+00:23:34,367 --> 00:23:36,367
+which could be running
+on any hardware.
+
+609
+00:23:36,367 --> 00:23:38,367
+It lets you create something
+which is optimized
+
+610
+00:23:38,367 --> 00:23:40,367
+for the things beyond
+the screen size,
+
+611
+00:23:40,367 --> 00:23:42,300
+with the hardware
+which it's running on as well.
+
+612
+00:23:45,834 --> 00:23:47,667
+So why--again, why develop?
+
+613
+00:23:47,667 --> 00:23:49,501
+So for me it's all about power.
+
+614
+00:23:49,501 --> 00:23:51,334
+It's the ability
+to write something
+
+615
+00:23:51,334 --> 00:23:53,334
+that's faster, smoother,
+more efficient,
+
+616
+00:23:53,334 --> 00:23:55,334
+and that was a key element
+in one of the presentations
+
+617
+00:23:55,334 --> 00:23:56,834
+I gave yesterday
+
+618
+00:23:56,834 --> 00:23:59,834
+around how to build
+great mobile apps for Android.
+
+619
+00:23:59,834 --> 00:24:01,901
+And it's all about trying
+to make things
+
+620
+00:24:01,901 --> 00:24:04,567
+as smooth, as fast,
+and efficient as possible.
+
+621
+00:24:04,567 --> 00:24:06,067
+The thing about mobiles
+
+622
+00:24:06,067 --> 00:24:08,067
+is that they are
+resource-constrained devices.
+
+623
+00:24:08,067 --> 00:24:09,901
+They're getting
+increasingly powerful.
+
+624
+00:24:09,901 --> 00:24:13,400
+They're great with tablets,
+dual-core, all of these things.
+
+625
+00:24:13,400 --> 00:24:14,901
+But it is fundamentally
+
+626
+00:24:14,901 --> 00:24:17,067
+still a resource-constrained
+device.
+
+627
+00:24:17,067 --> 00:24:19,734
+Manufacturers are gonna try
+and make the devices smaller,
+
+628
+00:24:19,734 --> 00:24:21,901
+and they're gonna try and make
+the batteries last longer.
+
+629
+00:24:21,901 --> 00:24:23,734
+And that's gonna come
+as a priority
+
+630
+00:24:23,734 --> 00:24:25,567
+above making them run faster,
+
+631
+00:24:25,567 --> 00:24:27,901
+which means that every ounce
+of efficiency
+
+632
+00:24:27,901 --> 00:24:29,734
+that you can pull
+out of a device
+
+633
+00:24:29,734 --> 00:24:32,734
+to make your app work better
+is going to be valuable.
+
+634
+00:24:32,734 --> 00:24:35,067
+And so when it comes to the idea
+of building something natively
+
+635
+00:24:35,067 --> 00:24:36,901
+or building something
+on the Web,
+
+636
+00:24:36,901 --> 00:24:38,901
+you--you're basically asking
+the question
+
+637
+00:24:38,901 --> 00:24:40,901
+can you afford to lose
+the additional efficiency
+
+638
+00:24:40,901 --> 00:24:42,567
+and power requirements
+
+639
+00:24:42,567 --> 00:24:44,901
+by sticking another layer
+in between your app
+
+640
+00:24:44,901 --> 00:24:48,734
+and the device
+that it's running on?
+
+641
+00:24:48,734 --> 00:24:51,067
+The thing is
+all of that is true,
+
+642
+00:24:51,067 --> 00:24:54,400
+and even if the functionality
+of HTML5
+
+643
+00:24:54,400 --> 00:24:56,400
+was exactly the same
+as native,
+
+644
+00:24:56,400 --> 00:24:58,400
+then that--
+that's already a reason
+
+645
+00:24:58,400 --> 00:25:00,400
+to think about building
+native instead.
+
+646
+00:25:00,400 --> 00:25:02,968
+But there's a whole bunch
+of additional functionality
+
+647
+00:25:02,968 --> 00:25:04,634
+which you can take advantage of,
+
+648
+00:25:04,634 --> 00:25:06,300
+which is why I really think
+
+649
+00:25:06,300 --> 00:25:08,801
+if--if you can't improve
+on a Web app
+
+650
+00:25:08,801 --> 00:25:11,801
+using some of the native--
+the Android SDK APIs,
+
+651
+00:25:11,801 --> 00:25:14,601
+then you're probably
+just not trying hard enough.
+
+652
+00:25:14,601 --> 00:25:17,133
+And so that's a laugh
+from the Android part--
+
+653
+00:25:17,133 --> 00:25:19,167
+part of the crowd.
+I thank you for that.
+
+654
+00:25:19,167 --> 00:25:20,801
+But no, seriously, there is--
+
+655
+00:25:20,801 --> 00:25:23,133
+there are so many things
+which you can do now
+
+656
+00:25:23,133 --> 00:25:25,634
+using the, uh,
+the native APIs.
+
+657
+00:25:25,634 --> 00:25:28,133
+And it's--it's really
+all about innovation.
+
+658
+00:25:28,133 --> 00:25:30,634
+So the--the great thing
+about the Web
+
+659
+00:25:30,634 --> 00:25:32,634
+is that it's
+standards-based, right?
+
+660
+00:25:32,634 --> 00:25:34,634
+The whole advantage
+is that you write it once,
+
+661
+00:25:34,634 --> 00:25:36,801
+and you can optimize it
+for a number of platforms,
+
+662
+00:25:36,801 --> 00:25:38,801
+but fundamentally
+you can write it once
+
+663
+00:25:38,801 --> 00:25:40,801
+and run it all across the Web.
+
+664
+00:25:40,801 --> 00:25:42,634
+And that's fantastic.
+
+665
+00:25:42,634 --> 00:25:45,801
+The way that works is because
+it's all standards-based.
+
+666
+00:25:45,801 --> 00:25:47,467
+And the problem with standards
+
+667
+00:25:47,467 --> 00:25:49,300
+is that they necessarily
+have to trail innovation.
+
+668
+00:25:49,300 --> 00:25:51,467
+You can't--you can try
+to set a standard
+
+669
+00:25:51,467 --> 00:25:53,801
+before a piece
+of hardware exists.
+
+670
+00:25:53,801 --> 00:25:55,801
+It doesn't generally work
+really well.
+
+671
+00:25:55,801 --> 00:25:57,801
+A much better approach
+is to find out
+
+672
+00:25:57,801 --> 00:25:59,801
+what's happening.
+What are people innovating with?
+
+673
+00:25:59,801 --> 00:26:01,868
+What are people using?
+And then create standards
+
+674
+00:26:01,868 --> 00:26:05,367
+to be able to make that
+more broadly available.
+
+675
+00:26:05,367 --> 00:26:07,033
+that's fantastic.
+
+676
+00:26:07,033 --> 00:26:09,200
+But what we're seeing is
+a lot of the most popular apps,
+
+677
+00:26:09,200 --> 00:26:10,868
+a lot of the most
+successful apps
+
+678
+00:26:10,868 --> 00:26:12,868
+are right at the leading edge
+of that innovation trail.
+
+679
+00:26:12,868 --> 00:26:15,634
+And that goes both in terms
+of hardware and software.
+
+680
+00:26:18,033 --> 00:26:20,734
+If you're looking
+at hardware itself,
+
+681
+00:26:20,734 --> 00:26:23,033
+the rate at which
+mobile hardware innovation
+
+682
+00:26:23,033 --> 00:26:25,067
+has been traveling
+over the last few years
+
+683
+00:26:25,067 --> 00:26:26,534
+is phenomenal.
+
+684
+00:26:26,534 --> 00:26:28,534
+If you think--compare that
+to Netbooks, notebooks,
+
+685
+00:26:28,534 --> 00:26:30,367
+any sort of desktop computer,
+
+686
+00:26:30,367 --> 00:26:32,701
+it's been pretty much
+the same thing for decades.
+
+687
+00:26:32,701 --> 00:26:34,701
+Right? Once the joystick
+fell out of favor,
+
+688
+00:26:34,701 --> 00:26:38,033
+it was screen, keyboard, mouse,
+
+689
+00:26:38,033 --> 00:26:40,367
+and then different ways
+to, uh, to connect peripherals.
+
+690
+00:26:40,367 --> 00:26:43,367
+But fundamentally it was
+the same user experience.
+
+691
+00:26:43,367 --> 00:26:45,868
+With mobiles
+that's completely changed.
+
+692
+00:26:45,868 --> 00:26:49,200
+It's only a few years ago
+when the first iPhone came out
+
+693
+00:26:49,200 --> 00:26:52,367
+that we started to have
+multi-touch on mobile devices,
+
+694
+00:26:52,367 --> 00:26:54,701
+accelerometers for being able
+to do game control.
+
+695
+00:26:54,701 --> 00:26:57,534
+And then, you know,
+Android comes on the scene,
+
+696
+00:26:57,534 --> 00:27:00,200
+we get access
+to the video APIs, compass.
+
+697
+00:27:00,200 --> 00:27:02,767
+Background apps start to appear.
+
+698
+00:27:02,767 --> 00:27:05,400
+And then every year
+that's improved.
+
+699
+00:27:05,400 --> 00:27:08,434
+So next was Bluetooth,
+multiple screen sizes.
+
+700
+00:27:08,434 --> 00:27:10,767
+Then last year we had
+gyroscopes,
+
+701
+00:27:10,767 --> 00:27:12,267
+front-facing cameras.
+
+702
+00:27:12,267 --> 00:27:14,267
+And these things have really
+revolutionized a lot of apps.
+
+703
+00:27:14,267 --> 00:27:16,267
+Think about some of the apps
+which you use
+
+704
+00:27:16,267 --> 00:27:18,601
+which are only possible
+because of these innovations.
+
+705
+00:27:18,601 --> 00:27:20,934
+And the leaders were the ones
+which were able to get in there
+
+706
+00:27:20,934 --> 00:27:23,434
+and take advantage
+of those new APIs
+
+707
+00:27:23,434 --> 00:27:25,100
+as soon as they were released,
+
+708
+00:27:25,100 --> 00:27:26,934
+without having to wait
+for everyone else
+
+709
+00:27:26,934 --> 00:27:29,934
+to be able to, uh,
+to do it as well.
+
+710
+00:27:29,934 --> 00:27:32,968
+This year we've seen barometers
+on the Motorola Xoom.
+
+711
+00:27:32,968 --> 00:27:35,267
+I haven't seen anyone use that
+very constructively yet,
+
+712
+00:27:35,267 --> 00:27:37,100
+but I am looking forward to it.
+
+713
+00:27:37,100 --> 00:27:39,267
+NFC--huge.
+
+714
+00:27:39,267 --> 00:27:41,934
+It's a staggering technology,
+which is starting to roll out.
+
+715
+00:27:41,934 --> 00:27:43,767
+You can wait until every phone
+has NFC,
+
+716
+00:27:43,767 --> 00:27:46,767
+or you can start building apps
+which take advantage of it now
+
+717
+00:27:46,767 --> 00:27:48,434
+and be a market leader
+
+718
+00:27:48,434 --> 00:27:50,934
+for when everyone does
+have, uh, NFC.
+
+719
+00:27:50,934 --> 00:27:54,267
+Tablets, USB accessories,
+uh, Android@Home--
+
+720
+00:27:54,267 --> 00:27:56,267
+all of this great stuff
+which we've seen launched
+
+721
+00:27:56,267 --> 00:27:57,934
+over the last couple days.
+
+722
+00:27:57,934 --> 00:27:59,934
+All of that is an opportunity
+for you to create
+
+723
+00:27:59,934 --> 00:28:01,834
+something new,
+something innovative,
+
+724
+00:28:01,834 --> 00:28:03,834
+um, to be at the real forefront
+
+725
+00:28:03,834 --> 00:28:06,367
+of that market.
+
+726
+00:28:06,367 --> 00:28:08,667
+What we're seeing these days
+is the device manufacturers--
+
+727
+00:28:08,667 --> 00:28:11,000
+they're using hardware
+as a way to differentiate.
+
+728
+00:28:11,000 --> 00:28:13,000
+And that's one of the advantages
+of Android.
+
+729
+00:28:13,000 --> 00:28:15,000
+They all have the same
+software platform,
+
+730
+00:28:15,000 --> 00:28:17,000
+so they need to build
+cleverer hardware.
+
+731
+00:28:17,000 --> 00:28:19,000
+They need to come up
+with new features.
+
+732
+00:28:19,000 --> 00:28:21,000
+So this is what we've seen over
+the last three or four years.
+
+733
+00:28:21,000 --> 00:28:23,000
+Imagine what we're gonna see
+in the future.
+
+734
+00:28:23,000 --> 00:28:25,000
+I think it's gonna continue
+to innovate
+
+735
+00:28:25,000 --> 00:28:26,834
+and continue to grow.
+
+736
+00:28:26,834 --> 00:28:29,834
+We've seen exactly the same
+thing on the software side.
+
+737
+00:28:29,834 --> 00:28:31,834
+Right? So along
+with that hardware,
+
+738
+00:28:31,834 --> 00:28:35,501
+we've also seen great
+innovations in mobile APIs.
+
+739
+00:28:35,501 --> 00:28:37,834
+And these are some examples
+of some apps
+
+740
+00:28:37,834 --> 00:28:40,000
+which have really taken
+advantage of this
+
+741
+00:28:40,000 --> 00:28:41,501
+and become market leaders,
+
+742
+00:28:41,501 --> 00:28:43,501
+whether it's Google Maps using
+location-based services,
+
+743
+00:28:43,501 --> 00:28:45,834
+which we all totally take
+for granted now, right?
+
+744
+00:28:45,834 --> 00:28:48,167
+We all know that our phones
+know where we are.
+
+745
+00:28:48,167 --> 00:28:49,834
+Uh, you know,
+this is just assumed
+
+746
+00:28:49,834 --> 00:28:51,501
+that every mobile device
+can do this,
+
+747
+00:28:51,501 --> 00:28:53,501
+but it's actually
+a relatively recent thing.
+
+748
+00:28:53,501 --> 00:28:55,167
+Uh, Shazam using audio input,
+
+749
+00:28:55,167 --> 00:28:56,834
+Goggles using video input
+
+750
+00:28:56,834 --> 00:28:58,501
+to do video recognition--
+image recognition.
+
+751
+00:28:58,501 --> 00:29:01,067
+"Angry Birds"--touch screens.
+
+752
+00:29:01,067 --> 00:29:03,067
+The way games are played
+has changed.
+
+753
+00:29:03,067 --> 00:29:05,901
+It has been totally
+revolutionized by smartphones
+
+754
+00:29:05,901 --> 00:29:08,567
+with accelerometer input,
+um, compasses, video,
+
+755
+00:29:08,567 --> 00:29:10,501
+all of these sorts of things.
+
+756
+00:29:12,367 --> 00:29:14,300
+So really what I'm saying
+
+757
+00:29:14,300 --> 00:29:16,300
+is leverage the hardware
+that's available,
+
+758
+00:29:16,300 --> 00:29:18,834
+particularly when new platforms
+are coming out.
+
+759
+00:29:18,834 --> 00:29:20,834
+So we've all been using
+smartphones for a long time.
+
+760
+00:29:20,834 --> 00:29:23,167
+It's been, what, three years,
+so it's passé now.
+
+761
+00:29:23,167 --> 00:29:25,000
+What we're looking at now
+is tablets.
+
+762
+00:29:25,000 --> 00:29:26,834
+And all of you guys
+have tablets,
+
+763
+00:29:26,834 --> 00:29:29,501
+so there's no excuse for not
+getting into tablet development.
+
+764
+00:29:29,501 --> 00:29:31,000
+And--and it's more, right?
+
+765
+00:29:31,000 --> 00:29:33,000
+There's Google TV--that's
+around the corner as well--
+
+766
+00:29:33,000 --> 00:29:34,667
+I mean literally
+around the corner.
+
+767
+00:29:34,667 --> 00:29:36,334
+It's actually out.
+
+768
+00:29:36,334 --> 00:29:38,000
+Um, and we're seeing things--
+
+769
+00:29:38,000 --> 00:29:39,834
+we're seeing Android really,
+you know,
+
+770
+00:29:39,834 --> 00:29:41,667
+populate a much broader
+spectrum of devices,
+
+771
+00:29:41,667 --> 00:29:44,334
+whether it's cars
+or, you know, whatever else.
+
+772
+00:29:44,334 --> 00:29:46,534
+We're seeing
+this single platform
+
+773
+00:29:46,534 --> 00:29:49,334
+as a place where you can really
+take advantage of the hardware.
+
+774
+00:29:49,334 --> 00:29:52,167
+We're gonna build the APIs to
+make it easier for you to use.
+
+775
+00:29:52,167 --> 00:29:54,000
+And that's what
+
+776
+00:29:54,000 --> 00:29:56,167
+the Android accessories
+development kit
+
+777
+00:29:56,167 --> 00:29:57,834
+is all about as well.
+
+778
+00:29:57,834 --> 00:29:59,667
+It's trying to give you
+as developers access
+
+779
+00:29:59,667 --> 00:30:01,667
+to be able to program
+for more things.
+
+780
+00:30:01,667 --> 00:30:03,501
+I mean, this is
+really revolutionary.
+
+781
+00:30:03,501 --> 00:30:05,334
+We're now living
+through a time
+
+782
+00:30:05,334 --> 00:30:07,334
+when we're making it possible
+to write code
+
+783
+00:30:07,334 --> 00:30:10,834
+which runs specifically on
+different hardware platforms.
+
+784
+00:30:10,834 --> 00:30:13,167
+It wasn't that long ago
+that it was very difficult
+
+785
+00:30:13,167 --> 00:30:15,167
+to actually get a piece
+of software you wrote
+
+786
+00:30:15,167 --> 00:30:18,334
+to run on an actual phone that
+someone would go out and buy.
+
+787
+00:30:18,334 --> 00:30:20,334
+And now that's something
+that you can do right now.
+
+788
+00:30:20,334 --> 00:30:22,334
+If you get bored during one
+of the presentations,
+
+789
+00:30:22,334 --> 00:30:24,334
+you can write an app,
+launch it on Market,
+
+790
+00:30:24,334 --> 00:30:26,000
+and it'll be there.
+
+791
+00:30:26,000 --> 00:30:27,834
+And what we're seeing
+is that this is now
+
+792
+00:30:27,834 --> 00:30:29,667
+propagating across
+a whole variety of hardware.
+
+793
+00:30:29,667 --> 00:30:32,334
+So one of the key messages
+I want to take away from you--
+
+794
+00:30:32,334 --> 00:30:35,000
+or give you guys
+to take away from this
+
+795
+00:30:35,000 --> 00:30:37,501
+is think about
+the actual hardware
+
+796
+00:30:37,501 --> 00:30:39,334
+that your software
+is running on.
+
+797
+00:30:39,334 --> 00:30:41,167
+If you're building something
+for Google TV,
+
+798
+00:30:41,167 --> 00:30:43,167
+you should think about the APIs
+that are specific to that.
+
+799
+00:30:43,167 --> 00:30:45,000
+How can you integrate
+TV guide information
+
+800
+00:30:45,000 --> 00:30:48,000
+or, you know, whatever else
+makes sense for that hardware?
+
+801
+00:30:48,000 --> 00:30:50,834
+And it's the same with tablets.
+It's the same with smartphones.
+
+802
+00:30:50,834 --> 00:30:52,868
+And that--and that's what
+native gives you
+
+803
+00:30:52,868 --> 00:30:54,667
+is the ability to start
+using that hardware
+
+804
+00:30:54,667 --> 00:30:56,834
+as soon as it's available,
+rather than having to wait
+
+805
+00:30:56,834 --> 00:30:58,767
+until it becomes ubiquitous.
+
+806
+00:31:01,300 --> 00:31:03,501
+And so this is some--
+some of the stuff
+
+807
+00:31:03,501 --> 00:31:05,501
+which is available,
+uh, right now
+
+808
+00:31:05,501 --> 00:31:07,334
+for native development.
+
+809
+00:31:07,334 --> 00:31:09,667
+Um, so obviously you can develop
+for smartphones,
+
+810
+00:31:09,667 --> 00:31:11,167
+tablets, and TVs.
+
+811
+00:31:11,167 --> 00:31:12,834
+Audio input is ubiquitous.
+
+812
+00:31:12,834 --> 00:31:14,667
+Video input from front-
+and rear-facing cameras
+
+813
+00:31:14,667 --> 00:31:16,167
+is all there today.
+
+814
+00:31:16,167 --> 00:31:19,667
+Uh, 10-finger multi-touch input,
+um, which I will grant you,
+
+815
+00:31:19,667 --> 00:31:21,667
+Mike, is now also available
+on, uh,
+
+816
+00:31:21,667 --> 00:31:25,167
+on many mobile platforms for
+Web-based development as well.
+
+817
+00:31:25,167 --> 00:31:29,000
+And things like
+a generic sensor API,
+
+818
+00:31:29,000 --> 00:31:31,167
+so that as new hardware sensors
+get added
+
+819
+00:31:31,167 --> 00:31:33,000
+to, uh, pieces of hardware,
+
+820
+00:31:33,000 --> 00:31:35,000
+you're able to integrate that
+into your applications
+
+821
+00:31:35,000 --> 00:31:36,501
+really easily.
+
+822
+00:31:36,501 --> 00:31:38,501
+And that's where we're seeing
+things like orientation,
+
+823
+00:31:38,501 --> 00:31:41,334
+accelerometers, barometers,
+a variety of new hardware.
+
+824
+00:31:41,334 --> 00:31:43,834
+I think there's gonna be a lot
+of growth in that area as well.
+
+825
+00:31:43,834 --> 00:31:45,834
+One of the key things as well,
+
+826
+00:31:45,834 --> 00:31:47,501
+which isn't as common,
+
+827
+00:31:47,501 --> 00:31:49,667
+is this ability to get
+right to the low levels.
+
+828
+00:31:49,667 --> 00:31:51,667
+So having access
+to the telephony, Bluetooth,
+
+829
+00:31:51,667 --> 00:31:53,167
+SIP stacks, USB--
+
+830
+00:31:53,167 --> 00:31:55,501
+all of these things make it--
+make it possible
+
+831
+00:31:55,501 --> 00:31:57,334
+for you to create apps
+
+832
+00:31:57,334 --> 00:32:01,000
+which fundamentally interact
+with hardware.
+
+833
+00:32:01,000 --> 00:32:03,067
+And in fact, it goes
+that one step further,
+
+834
+00:32:03,067 --> 00:32:05,133
+because your native apps
+aren't just something
+
+835
+00:32:05,133 --> 00:32:07,901
+which sits in a sandbox,
+in an application sandbox,
+
+836
+00:32:07,901 --> 00:32:09,567
+or within the browser.
+
+837
+00:32:09,567 --> 00:32:11,901
+They become part of
+the ecosystem on the device.
+
+838
+00:32:11,901 --> 00:32:13,901
+So that means
+that you can do things.
+
+839
+00:32:13,901 --> 00:32:15,901
+You can actually work
+with the system.
+
+840
+00:32:15,901 --> 00:32:17,734
+You can listen
+for system events.
+
+841
+00:32:17,734 --> 00:32:19,400
+So if you want to build an app
+
+842
+00:32:19,400 --> 00:32:21,734
+which is going to, uh,
+listen for incoming calls,
+
+843
+00:32:21,734 --> 00:32:24,734
+do a reverse number lookup,
+and display who the caller is,
+
+844
+00:32:24,734 --> 00:32:26,234
+you can do that.
+
+845
+00:32:26,234 --> 00:32:29,901
+You can register an intent
+to listen for incoming calls.
+
+846
+00:32:29,901 --> 00:32:31,734
+You can do the same thing
+with other apps.
+
+847
+00:32:31,734 --> 00:32:33,567
+So if you want to have an app
+
+848
+00:32:33,567 --> 00:32:35,400
+where you want to display
+a location,
+
+849
+00:32:35,400 --> 00:32:37,067
+you're able to make a call,
+
+850
+00:32:37,067 --> 00:32:38,734
+again using
+the intent framework,
+
+851
+00:32:38,734 --> 00:32:41,234
+to say have something display
+this on a map.
+
+852
+00:32:41,234 --> 00:32:43,400
+And if Google Maps is installed,
+it'll do that for you.
+
+853
+00:32:43,400 --> 00:32:45,400
+You can do the same thing
+in reverse.
+
+854
+00:32:45,400 --> 00:32:48,067
+So if you have an app that can,
+uh, book hotels,
+
+855
+00:32:48,067 --> 00:32:49,901
+and you say, "well, look,
+any app which wants
+
+856
+00:32:49,901 --> 00:32:51,734
+"to be able to do this,
+just send me
+
+857
+00:32:51,734 --> 00:32:53,567
+the name of the hotel,
+and I will book it for you."
+
+858
+00:32:53,567 --> 00:32:55,400
+So it's a way that you can have
+all of these apps
+
+859
+00:32:55,400 --> 00:32:56,901
+interacting with each other,
+
+860
+00:32:56,901 --> 00:32:58,734
+as well as interacting
+with the citizen--
+
+861
+00:32:58,734 --> 00:33:00,400
+uh, with the system itself,
+
+862
+00:33:00,400 --> 00:33:02,968
+because they are
+all first-class citizens,
+
+863
+00:33:02,968 --> 00:33:04,801
+which means you can replace
+any of the apps
+
+864
+00:33:04,801 --> 00:33:06,334
+on the device as well.
+
+865
+00:33:06,334 --> 00:33:08,133
+If you think you can build
+a better home screen,
+
+866
+00:33:08,133 --> 00:33:09,968
+build it, launch it,
+put it in Market,
+
+867
+00:33:09,968 --> 00:33:11,801
+and people will be able
+to use it--
+
+868
+00:33:11,801 --> 00:33:13,634
+same with dialers,
+same with contact managers.
+
+869
+00:33:13,634 --> 00:33:15,300
+Anything which is on the phone
+
+870
+00:33:15,300 --> 00:33:19,133
+you're able to create
+an alternative for.
+
+871
+00:33:19,133 --> 00:33:21,133
+Another thing which I really
+like about native apps
+
+872
+00:33:21,133 --> 00:33:23,300
+is that they can be
+truly background.
+
+873
+00:33:23,300 --> 00:33:24,801
+And obviously the most--
+
+874
+00:33:24,801 --> 00:33:27,234
+the most common use case
+for this is a concurrent app,
+
+875
+00:33:27,234 --> 00:33:29,334
+like, have a music player
+in the background,
+
+876
+00:33:29,334 --> 00:33:31,801
+and then you can continue
+browsing at the same time.
+
+877
+00:33:31,801 --> 00:33:33,634
+But it's really more than that.
+
+878
+00:33:33,634 --> 00:33:36,300
+Native apps let you be able
+to have much fresher data
+
+879
+00:33:36,300 --> 00:33:38,801
+by being able
+to continue to update
+
+880
+00:33:38,801 --> 00:33:40,968
+in the background,
+even if the app isn't running.
+
+881
+00:33:40,968 --> 00:33:43,467
+So you don't have
+the associated battery drain
+
+882
+00:33:43,467 --> 00:33:45,300
+of having something
+which constantly runs.
+
+883
+00:33:45,300 --> 00:33:46,968
+You can set an alarm
+
+884
+00:33:46,968 --> 00:33:49,300
+and say when connectivity
+returns, do this.
+
+885
+00:33:49,300 --> 00:33:52,033
+Or if, uh, if an incoming call
+comes in,
+
+886
+00:33:52,033 --> 00:33:54,367
+that's when I want my app
+to be started up
+
+887
+00:33:54,367 --> 00:33:55,868
+and to be active.
+
+888
+00:33:55,868 --> 00:33:58,367
+And for all other times
+it can be completely stopped.
+
+889
+00:33:58,367 --> 00:34:00,367
+It can be not running at all.
+
+890
+00:34:00,367 --> 00:34:03,601
+You can also do things
+like a server-side push...
+
+891
+00:34:03,601 --> 00:34:06,100
+so Cloud to Device Messaging
+lets you transmit a message
+
+892
+00:34:06,100 --> 00:34:08,100
+from a server to your app
+to say
+
+893
+00:34:08,100 --> 00:34:09,767
+you have new information,
+
+894
+00:34:09,767 --> 00:34:11,601
+so start up
+and download something
+
+895
+00:34:11,601 --> 00:34:14,467
+or notify the user of something.
+
+896
+00:34:14,467 --> 00:34:16,801
+You can actually do
+the same thing on the device.
+
+897
+00:34:16,801 --> 00:34:20,133
+Uh, so again, you can have these
+recurring background alarms,
+
+898
+00:34:20,133 --> 00:34:22,467
+so your device--your app
+can be completely off.
+
+899
+00:34:22,467 --> 00:34:24,467
+In fact, the device
+can be on standby.
+
+900
+00:34:24,467 --> 00:34:26,467
+And you can say, look,
+every hour,
+
+901
+00:34:26,467 --> 00:34:29,133
+I want you to wake up, pull down
+the latest news headlines
+
+902
+00:34:29,133 --> 00:34:31,801
+or tweets
+or whatever it is you want.
+
+903
+00:34:31,801 --> 00:34:33,968
+And then as soon as the app
+gets launched,
+
+904
+00:34:33,968 --> 00:34:37,300
+It's able to have that fresh,
+up-to-date data.
+
+905
+00:34:37,300 --> 00:34:38,968
+And the advantage here
+is twofold.
+
+906
+00:34:38,968 --> 00:34:40,801
+Not only do you get
+fresher data
+
+907
+00:34:40,801 --> 00:34:42,634
+without having to do
+an exclusive reset.
+
+908
+00:34:42,634 --> 00:34:44,467
+but you also save
+on battery life,
+
+909
+00:34:44,467 --> 00:34:46,501
+because your app doesn't need
+to be constantly running
+
+910
+00:34:46,501 --> 00:34:49,300
+in the background in order
+to get those updates.
+
+911
+00:34:49,300 --> 00:34:51,300
+Full offline support,
+I mean, this is something
+
+912
+00:34:51,300 --> 00:34:54,300
+which again is coming to HTML,
+
+913
+00:34:54,300 --> 00:34:56,133
+but it's something
+which is really rich
+
+914
+00:34:56,133 --> 00:34:57,634
+on the native platform.
+
+915
+00:34:57,634 --> 00:34:59,968
+So not only can you have,
+you know, your app data cached,
+
+916
+00:34:59,968 --> 00:35:02,033
+you can actually download
+the entire contents,
+
+917
+00:35:02,033 --> 00:35:03,534
+store them on the device,
+
+918
+00:35:03,534 --> 00:35:05,868
+and have them available
+for things like search.
+
+919
+00:35:05,868 --> 00:35:08,367
+I use GMAIL every morning
+on my way into work.
+
+920
+00:35:08,367 --> 00:35:10,200
+I triage my e-mail--
+
+921
+00:35:10,200 --> 00:35:11,868
+constructive use of my time.
+
+922
+00:35:11,868 --> 00:35:14,200
+The thing is I commute to work
+via the London Underground,
+
+923
+00:35:14,200 --> 00:35:16,033
+which means I have
+no internet connection
+
+924
+00:35:16,033 --> 00:35:18,534
+for most of that journey,
+but it doesn't matter.
+
+925
+00:35:18,534 --> 00:35:20,701
+I open up GMAIL.
+I read all of my messages.
+
+926
+00:35:20,701 --> 00:35:23,033
+Archive, reply to--
+put it in my pocket.
+
+927
+00:35:23,033 --> 00:35:24,868
+And then as I walk
+to the office,
+
+928
+00:35:24,868 --> 00:35:27,367
+it gets a 3G connection,
+and everything is synced.
+
+929
+00:35:27,367 --> 00:35:30,367
+By the time I sit at my desk,
+everything is up to date.
+
+930
+00:35:30,367 --> 00:35:32,200
+And it's that rich
+offline support
+
+931
+00:35:32,200 --> 00:35:35,200
+without ever really needing
+to be online at all,
+
+932
+00:35:35,200 --> 00:35:39,033
+uh, which creates a really great
+user experience.
+
+933
+00:35:39,033 --> 00:35:41,033
+One of the other things--
+and this is something
+
+934
+00:35:41,033 --> 00:35:43,033
+which I really like
+about Android specifically--
+
+935
+00:35:43,033 --> 00:35:45,701
+is the fact that your apps
+become more than just, uh,
+
+936
+00:35:45,701 --> 00:35:47,868
+an icon in the launcher.
+
+937
+00:35:47,868 --> 00:35:49,868
+You can create
+home screen widgets,
+
+938
+00:35:49,868 --> 00:35:51,367
+live wallpapers.
+
+939
+00:35:51,367 --> 00:35:53,734
+Uh, you can have notifications
+which get triggered to--
+
+940
+00:35:53,734 --> 00:35:56,033
+to tell you of things like, uh,
+you know, incoming e-mail
+
+941
+00:35:56,033 --> 00:35:57,534
+or instant messages.
+
+942
+00:35:57,534 --> 00:35:59,868
+And because all apps are created
+equal on the platform,
+
+943
+00:35:59,868 --> 00:36:02,767
+you can do anything which any
+of the native apps can do.
+
+944
+00:36:02,767 --> 00:36:04,434
+And so this is
+a really great way
+
+945
+00:36:04,434 --> 00:36:07,100
+of being able to make
+your content much more engaging.
+
+946
+00:36:07,100 --> 00:36:08,934
+So someone doesn't
+have to remember
+
+947
+00:36:08,934 --> 00:36:10,767
+to navigate to your site
+or look up a bookmark
+
+948
+00:36:10,767 --> 00:36:12,767
+or even start your app
+in the launcher.
+
+949
+00:36:12,767 --> 00:36:14,601
+By having widgets,
+notifications,
+
+950
+00:36:14,601 --> 00:36:16,267
+you're able to pull
+more traffic,
+
+951
+00:36:16,267 --> 00:36:18,601
+more engagement,
+more users into your app.
+
+952
+00:36:18,601 --> 00:36:20,434
+'Cause that's ultimately
+what you want
+
+953
+00:36:20,434 --> 00:36:22,267
+is for people to use
+your app more.
+
+954
+00:36:22,267 --> 00:36:24,934
+Downloading it is really
+only the first step.
+
+955
+00:36:24,934 --> 00:36:27,501
+So this is a little summary
+of all of the things
+
+956
+00:36:27,501 --> 00:36:29,934
+that you can do
+using native APIs
+
+957
+00:36:29,934 --> 00:36:31,934
+across all
+of the Android devices.
+
+958
+00:36:31,934 --> 00:36:33,434
+And there are additional things,
+
+959
+00:36:33,434 --> 00:36:35,267
+which limit it
+to some of the newer versions,
+
+960
+00:36:35,267 --> 00:36:38,267
+but this is pretty
+fundamentally everything
+
+961
+00:36:38,267 --> 00:36:40,267
+that is there.
+
+962
+00:36:40,267 --> 00:36:42,767
+So, uh, I'm gonna
+hand back over to Mike.
+
+963
+00:36:42,767 --> 00:36:45,267
+Mahemoff: Okay, so I just wanted
+to really summarize
+
+964
+00:36:45,267 --> 00:36:46,767
+our two arguments,
+
+965
+00:36:46,767 --> 00:36:48,601
+and then we'll shift gears
+a little bit
+
+966
+00:36:48,601 --> 00:36:50,100
+towards making this practical.
+
+967
+00:36:50,100 --> 00:36:51,934
+So to sum up,
+really what I'm saying here
+
+968
+00:36:51,934 --> 00:36:53,934
+is that HTML5 is a technology
+
+969
+00:36:53,934 --> 00:36:56,601
+that's here now
+on the mobile devices
+
+970
+00:36:56,601 --> 00:36:59,133
+as well as any other--
+many other types of hardware.
+
+971
+00:36:59,133 --> 00:37:01,667
+It's a capable platform as well,
+
+972
+00:37:01,667 --> 00:37:04,334
+so it's got these events,
+UI capabilities I've shown you,
+
+973
+00:37:04,334 --> 00:37:06,334
+and beyond that.
+
+974
+00:37:06,334 --> 00:37:08,667
+And it's an open technology.
+It's something that many people
+
+975
+00:37:08,667 --> 00:37:11,000
+in your organizations
+probably already know.
+
+976
+00:37:11,000 --> 00:37:13,000
+And you have to have
+Web apps anyway.
+
+977
+00:37:13,000 --> 00:37:14,667
+People will use the browser.
+
+978
+00:37:14,667 --> 00:37:17,501
+So it's got all those benefits.
+
+979
+00:37:17,501 --> 00:37:20,000
+On the other side of things,
+Reto's pointed out
+
+980
+00:37:20,000 --> 00:37:22,501
+native apps tend to be
+more integrated,
+
+981
+00:37:22,501 --> 00:37:25,167
+with the--the deeper
+hardware integration
+
+982
+00:37:25,167 --> 00:37:27,000
+that tends to stay a step ahead,
+
+983
+00:37:27,000 --> 00:37:30,501
+um, as well as the fact that
+you've got the user experience
+
+984
+00:37:30,501 --> 00:37:33,200
+that's, like, built into
+that native look and feel
+
+985
+00:37:33,200 --> 00:37:35,167
+for each of the platforms.
+
+986
+00:37:35,167 --> 00:37:37,834
+Um, so really the next point
+really is just to say,
+
+987
+00:37:37,834 --> 00:37:39,801
+like, what can we actually do
+about these things?
+
+988
+00:37:39,801 --> 00:37:41,801
+Meier: How many of you guys
+were hoping
+
+989
+00:37:41,801 --> 00:37:43,634
+that we would give you
+one answer
+
+990
+00:37:43,634 --> 00:37:45,467
+so you would be able
+to come out knowing?
+
+991
+00:37:45,467 --> 00:37:47,300
+[laughter]
+Meier: Yeah, a few of you?
+
+992
+00:37:47,300 --> 00:37:49,300
+It's--it's really not that
+straightforward, right?
+
+993
+00:37:49,300 --> 00:37:51,133
+It's not as easy
+as which should I do?
+
+994
+00:37:51,133 --> 00:37:52,801
+If--if it was that easy,
+
+995
+00:37:52,801 --> 00:37:54,634
+then Google would just do one.
+
+996
+00:37:54,634 --> 00:37:56,300
+But we don't.
+We do both.
+
+997
+00:37:56,300 --> 00:37:58,801
+And fundamentally,
+that's the answer, right?
+
+998
+00:37:58,801 --> 00:38:01,534
+You--you can't just be focusing
+on one thing.
+
+999
+00:38:01,534 --> 00:38:03,367
+It's--it's pretty clear
+at this point
+
+1000
+00:38:03,367 --> 00:38:05,200
+that the Web is the future,
+
+1001
+00:38:05,200 --> 00:38:07,434
+so you cannot ignore this
+as a platform.
+
+1002
+00:38:07,434 --> 00:38:09,100
+And if you want real reach,
+
+1003
+00:38:09,100 --> 00:38:10,767
+then building a mobile app,
+
+1004
+00:38:10,767 --> 00:38:12,767
+um, which is Web-based,
+
+1005
+00:38:12,767 --> 00:38:15,100
+is--is kind of a no-brainer.
+
+1006
+00:38:15,100 --> 00:38:17,100
+You can build one app,
+and it's gonna run
+
+1007
+00:38:17,100 --> 00:38:18,934
+all across all of these devices.
+
+1008
+00:38:18,934 --> 00:38:21,601
+And for a lot of content,
+that's gonna make perfect sense.
+
+1009
+00:38:21,601 --> 00:38:24,267
+You should be building something
+which everyone can use.
+
+1010
+00:38:24,267 --> 00:38:26,767
+But at the same time,
+there's all these native APIs,
+
+1011
+00:38:26,767 --> 00:38:28,934
+all of these native advantages
+which can let you
+
+1012
+00:38:28,934 --> 00:38:30,601
+build something really great.
+
+1013
+00:38:30,601 --> 00:38:32,601
+So fundamentally,
+I guess what we're saying
+
+1014
+00:38:32,601 --> 00:38:34,601
+is maybe build a Web app
+for everyone,
+
+1015
+00:38:34,601 --> 00:38:36,601
+and if you've already got
+a Web site,
+
+1016
+00:38:36,601 --> 00:38:38,434
+then it kind of
+should already be
+
+1017
+00:38:38,434 --> 00:38:40,300
+a mobile-optimized
+Web site as well.
+
+1018
+00:38:40,300 --> 00:38:43,100
+That's increasingly how people
+are trying to access Web content
+
+1019
+00:38:43,100 --> 00:38:44,767
+is on mobile browsers.
+
+1020
+00:38:44,767 --> 00:38:46,434
+So that's kind of a gimme.
+
+1021
+00:38:46,434 --> 00:38:48,601
+Beyond that you want
+to then create
+
+1022
+00:38:48,601 --> 00:38:51,267
+an optimized version
+using those native APIs
+
+1023
+00:38:51,267 --> 00:38:53,267
+to build something better.
+
+1024
+00:38:53,267 --> 00:38:54,934
+One of the ways you can do this
+
+1025
+00:38:54,934 --> 00:38:57,000
+while leveraging the work
+you've already done
+
+1026
+00:38:57,000 --> 00:38:58,934
+is by using WebViews.
+
+1027
+00:38:58,934 --> 00:39:00,767
+Most of the smartphone platforms
+
+1028
+00:39:00,767 --> 00:39:03,000
+have something equivalent
+to a WebView,
+
+1029
+00:39:03,000 --> 00:39:05,000
+but I'm gonna talk
+about Android specifically.
+
+1030
+00:39:05,000 --> 00:39:07,167
+But this is a way that you can
+embed Web content
+
+1031
+00:39:07,167 --> 00:39:10,000
+into your native applications.
+
+1032
+00:39:10,000 --> 00:39:12,334
+It--it's kind of an obvious
+thing to do here.
+
+1033
+00:39:12,334 --> 00:39:15,000
+If you've got content which
+has already being formatted,
+
+1034
+00:39:15,000 --> 00:39:16,834
+looks beautiful,
+you've got your UX people
+
+1035
+00:39:16,834 --> 00:39:19,434
+building stuff in HTML,
+why not use that
+
+1036
+00:39:19,434 --> 00:39:22,000
+to display the content
+within your applications?
+
+1037
+00:39:22,000 --> 00:39:25,501
+What you do then is that becomes
+the mainstay of your app,
+
+1038
+00:39:25,501 --> 00:39:27,501
+and then everything else
+becomes chrome.
+
+1039
+00:39:27,501 --> 00:39:29,834
+So you then--you know,
+all of the action bars,
+
+1040
+00:39:29,834 --> 00:39:31,834
+all of interaction
+with accelerometers,
+
+1041
+00:39:31,834 --> 00:39:34,834
+with the native hardware--
+you can do all of that stuff,
+
+1042
+00:39:34,834 --> 00:39:36,834
+but then just display
+the content
+
+1043
+00:39:36,834 --> 00:39:39,100
+specifically using a WebView.
+
+1044
+00:39:41,501 --> 00:39:44,501
+And in fact, if you've been
+using the Google I/O app
+
+1045
+00:39:44,501 --> 00:39:45,834
+throughout the conference,
+
+1046
+00:39:45,834 --> 00:39:48,000
+you've already been using an app
+which does exactly this.
+
+1047
+00:39:48,000 --> 00:39:50,334
+So all of the, uh,
+the maps are actually done
+
+1048
+00:39:50,334 --> 00:39:52,000
+not using a MapView,
+
+1049
+00:39:52,000 --> 00:39:53,667
+but by using a WebView,
+
+1050
+00:39:53,667 --> 00:39:56,000
+which using the Google Maps API.
+
+1051
+00:39:56,000 --> 00:39:58,667
+And you can see we've got
+the real-time stream of tweets,
+
+1052
+00:39:58,667 --> 00:40:00,167
+I think.
+
+1053
+00:40:00,167 --> 00:40:02,334
+Um, and that also is going
+to be just a WebView,
+
+1054
+00:40:02,334 --> 00:40:05,334
+um, which has a particular
+amount of content put into it.
+
+1055
+00:40:05,334 --> 00:40:07,167
+Everything else
+is purely native.
+
+1056
+00:40:07,167 --> 00:40:09,501
+So all of the action bar stuff,
+all of the things
+
+1057
+00:40:09,501 --> 00:40:11,501
+which are optimized
+for tablets or smartphones
+
+1058
+00:40:11,501 --> 00:40:13,000
+is all done natively.
+
+1059
+00:40:13,000 --> 00:40:15,000
+But we have this ability
+to just wrap the content,
+
+1060
+00:40:15,000 --> 00:40:18,167
+um, for specific parts
+of the app
+
+1061
+00:40:18,167 --> 00:40:21,501
+using a WebView.
+
+1062
+00:40:21,501 --> 00:40:23,501
+Mahemoff: And I just want
+to finish off
+
+1063
+00:40:23,501 --> 00:40:25,501
+with just a few tips
+on just HTML5
+
+1064
+00:40:25,501 --> 00:40:27,334
+and JavaScript in general
+
+1065
+00:40:27,334 --> 00:40:29,334
+when you're dealing
+with mobile devices
+
+1066
+00:40:29,334 --> 00:40:32,334
+and going across
+the various platforms.
+
+1067
+00:40:32,334 --> 00:40:34,667
+Firstly, there are
+libraries available.
+
+1068
+00:40:34,667 --> 00:40:37,334
+I already mentioned
+that you've got these libraries
+
+1069
+00:40:37,334 --> 00:40:40,000
+that are now very powerful
+and very widely used,
+
+1070
+00:40:40,000 --> 00:40:41,501
+like jQuery,
+
+1071
+00:40:41,501 --> 00:40:44,000
+that are just used
+for general Web applications.
+
+1072
+00:40:44,000 --> 00:40:45,667
+Those things also work.
+
+1073
+00:40:45,667 --> 00:40:48,000
+They work quite nicely
+in most cases
+
+1074
+00:40:48,000 --> 00:40:50,334
+on the mobile devices as well.
+
+1075
+00:40:50,334 --> 00:40:52,667
+and at the same time,
+there are more and more
+
+1076
+00:40:52,667 --> 00:40:56,334
+mobile-specific HTML5
+frameworks and libraries
+
+1077
+00:40:56,334 --> 00:40:58,000
+that you can hook into.
+
+1078
+00:40:58,000 --> 00:41:00,501
+So there are things like--
+um, we've got Sencha Touch here.
+
+1079
+00:41:00,501 --> 00:41:02,567
+This is an example of an app
+they've created
+
+1080
+00:41:02,567 --> 00:41:04,400
+that works
+right across the board,
+
+1081
+00:41:04,400 --> 00:41:06,400
+showing a conference schedule.
+
+1082
+00:41:06,400 --> 00:41:08,067
+SproutCore--it's a touch app.
+
+1083
+00:41:08,067 --> 00:41:09,734
+You can see the same kind of app
+
+1084
+00:41:09,734 --> 00:41:11,567
+running in the Chrome
+Web store as well.
+
+1085
+00:41:11,567 --> 00:41:13,734
+So it's that experience,
+or that--that philosophy
+
+1086
+00:41:13,734 --> 00:41:15,400
+of writing the same app.
+
+1087
+00:41:15,400 --> 00:41:17,901
+In the case of the mobile
+or the tablets,
+
+1088
+00:41:17,901 --> 00:41:19,734
+you can swipe
+and just go across.
+
+1089
+00:41:19,734 --> 00:41:22,634
+Otherwise you use the mouse
+on the desktop.
+
+1090
+00:41:22,634 --> 00:41:24,634
+Um, it's an NPR app, actually.
+
+1091
+00:41:24,634 --> 00:41:26,667
+And--and jQuery mobile
+
+1092
+00:41:26,667 --> 00:41:28,968
+is kind of the new kid
+on the block here
+
+1093
+00:41:28,968 --> 00:41:30,968
+and--and already very popular,
+because it's based--
+
+1094
+00:41:30,968 --> 00:41:33,467
+or it's the similar sort
+of concept as jQuery
+
+1095
+00:41:33,467 --> 00:41:35,300
+with the same team.
+
+1096
+00:41:35,300 --> 00:41:38,200
+Um, it's--
+it's actually very, um,
+
+1097
+00:41:38,200 --> 00:41:40,634
+sort of more of
+a micro kernel approach,
+
+1098
+00:41:40,634 --> 00:41:42,801
+um, and it's got
+the ability to theme,
+
+1099
+00:41:42,801 --> 00:41:44,634
+so you can cover
+the different devices,
+
+1100
+00:41:44,634 --> 00:41:46,634
+and a very permissive license
+as well,
+
+1101
+00:41:46,634 --> 00:41:48,634
+being MIT based.
+
+1102
+00:41:48,634 --> 00:41:51,300
+Think about
+progressive enhancement,
+
+1103
+00:41:51,300 --> 00:41:54,968
+the idea that you have
+your raw, basic Web site,
+
+1104
+00:41:54,968 --> 00:41:57,634
+uh, a traditional Web site,
+just some markup,
+
+1105
+00:41:57,634 --> 00:41:59,968
+again, something we showed
+in the previous session
+
+1106
+00:41:59,968 --> 00:42:02,033
+on--on mobile development
+for the Web
+
+1107
+00:42:02,033 --> 00:42:04,701
+is--you know,
+this actually does work.
+
+1108
+00:42:04,701 --> 00:42:07,367
+We showed this working
+in your basic browsers
+
+1109
+00:42:07,367 --> 00:42:08,868
+like Opera Mini.
+
+1110
+00:42:08,868 --> 00:42:11,033
+And many people do
+actually still access the Web
+
+1111
+00:42:11,033 --> 00:42:13,033
+from very traditional, uh,
+
+1112
+00:42:13,033 --> 00:42:15,200
+from very traditional devices,
+
+1113
+00:42:15,200 --> 00:42:17,534
+you know, that have very basic
+Web capabilities
+
+1114
+00:42:17,534 --> 00:42:19,200
+on the mobiles.
+
+1115
+00:42:19,200 --> 00:42:21,200
+And if you do your app right,
+you can actually get it working
+
+1116
+00:42:21,200 --> 00:42:22,701
+for those as well.
+
+1117
+00:42:22,701 --> 00:42:24,534
+And then you go ahead
+and you enhance it,
+
+1118
+00:42:24,534 --> 00:42:26,033
+so you're actually--
+
+1119
+00:42:26,033 --> 00:42:28,033
+in this case we're basically
+"hijacking" these links
+
+1120
+00:42:28,033 --> 00:42:31,367
+to actually say
+if we do have JavaScript here,
+
+1121
+00:42:31,367 --> 00:42:33,234
+we're gonna go further,
+
+1122
+00:42:33,234 --> 00:42:35,033
+and we're gonna
+actually not go ahead
+
+1123
+00:42:35,033 --> 00:42:36,701
+and click to reload the page.
+
+1124
+00:42:36,701 --> 00:42:39,033
+Instead we're gonna do
+something dynamic.
+
+1125
+00:42:39,033 --> 00:42:41,033
+We can do fallbacks.
+So I already showed you,
+
+1126
+00:42:41,033 --> 00:42:43,033
+you can do fallback with
+something like <canvas>
+
+1127
+00:42:43,033 --> 00:42:44,534
+or any other tag.
+
+1128
+00:42:44,534 --> 00:42:46,367
+If it doesn't exist,
+the--the browser
+
+1129
+00:42:46,367 --> 00:42:49,534
+or the HTML5 runtime,
+it will still process it.
+
+1130
+00:42:49,534 --> 00:42:51,534
+And we can do that sort of thing
+with video, too.
+
+1131
+00:42:51,534 --> 00:42:54,033
+We can fall back from,
+you know, one format
+
+1132
+00:42:54,033 --> 00:42:56,200
+to another format
+to Flash
+
+1133
+00:42:56,200 --> 00:42:59,200
+to just downloading.
+
+1134
+00:42:59,200 --> 00:43:00,868
+We can do feature detection--
+
+1135
+00:43:00,868 --> 00:43:02,767
+um, very important thing
+nowadays--
+
+1136
+00:43:02,767 --> 00:43:05,601
+based on the premise
+that you can't try to detect
+
+1137
+00:43:05,601 --> 00:43:07,601
+every sort of different device.
+
+1138
+00:43:07,601 --> 00:43:09,434
+It's just not practical.
+
+1139
+00:43:09,434 --> 00:43:11,100
+And even if you could,
+
+1140
+00:43:11,100 --> 00:43:12,934
+you wouldn't want
+to create separate apps
+
+1141
+00:43:12,934 --> 00:43:14,601
+for all these different devices.
+
+1142
+00:43:14,601 --> 00:43:16,434
+So rather than having
+this whole, uh,
+
+1143
+00:43:16,434 --> 00:43:17,934
+combinatorial explosion
+
+1144
+00:43:17,934 --> 00:43:20,100
+of--of apps
+you have to deal with,
+
+1145
+00:43:20,100 --> 00:43:21,934
+just put a little bit
+of intelligence
+
+1146
+00:43:21,934 --> 00:43:23,767
+into your app
+to make some decisions
+
+1147
+00:43:23,767 --> 00:43:25,767
+as the app is actually running
+about what to do
+
+1148
+00:43:25,767 --> 00:43:28,767
+and then perhaps download
+some extra content
+
+1149
+00:43:28,767 --> 00:43:31,100
+or some extra type
+of application logic,
+
+1150
+00:43:31,100 --> 00:43:32,934
+depending on what are
+the capabilities
+
+1151
+00:43:32,934 --> 00:43:34,434
+of the current device?
+
+1152
+00:43:34,434 --> 00:43:36,434
+Like I said before,
+HTML5 is not perfect.
+
+1153
+00:43:36,434 --> 00:43:38,100
+It's not a magic bullet.
+
+1154
+00:43:38,100 --> 00:43:41,100
+You still have to do some
+difference of logic and so on
+
+1155
+00:43:41,100 --> 00:43:43,100
+to reach all these
+different devices.
+
+1156
+00:43:43,100 --> 00:43:46,200
+But the benefit you get
+is a vast amount of reuse.
+
+1157
+00:43:48,267 --> 00:43:50,267
+There's library support
+for this sort of thing, too.
+
+1158
+00:43:50,267 --> 00:43:52,267
+So we've got a library
+called Modernizr
+
+1159
+00:43:52,267 --> 00:43:54,267
+that's becoming
+extremely popular,
+
+1160
+00:43:54,267 --> 00:43:56,767
+um, which actually does
+the detection for you.
+
+1161
+00:43:56,767 --> 00:43:59,434
+On a previous slide, I showed
+the kind of low-level detection
+
+1162
+00:43:59,434 --> 00:44:00,934
+you can do,
+
+1163
+00:44:00,934 --> 00:44:03,334
+sort of doing things
+like creating something
+
+1164
+00:44:03,334 --> 00:44:05,334
+and seeing if it
+actually was created
+
+1165
+00:44:05,334 --> 00:44:07,334
+or setting an attribute
+and seeing--
+
+1166
+00:44:07,334 --> 00:44:09,000
+reading it back to see
+
+1167
+00:44:09,000 --> 00:44:10,834
+if the browser
+actually recognized it.
+
+1168
+00:44:10,834 --> 00:44:12,834
+You don't really have to do
+those low-level things anymore
+
+1169
+00:44:12,834 --> 00:44:14,334
+for feature detection,
+
+1170
+00:44:14,334 --> 00:44:16,167
+because there are libraries
+like Modernizr
+
+1171
+00:44:16,167 --> 00:44:18,000
+that do it for you.
+
+1172
+00:44:18,000 --> 00:44:20,834
+There's also a slightly
+higher-level layer on Modernizr
+
+1173
+00:44:20,834 --> 00:44:22,334
+that will actually--
+
+1174
+00:44:22,334 --> 00:44:24,167
+uh, it doesn't have
+to be Modernizr,
+
+1175
+00:44:24,167 --> 00:44:26,501
+but it--it's basically, uh,
+around those kind of use cases
+
+1176
+00:44:26,501 --> 00:44:29,501
+for people who are using
+Modernizr, called YepNope.
+
+1177
+00:44:29,501 --> 00:44:32,334
+And basically just--
+basically it says, you know,
+
+1178
+00:44:32,334 --> 00:44:34,334
+if you've got this feature,
+we're gonna download
+
+1179
+00:44:34,334 --> 00:44:36,167
+an extra layer
+of JavaScript and CSS.
+
+1180
+00:44:36,167 --> 00:44:38,834
+If not, we'll use
+something else.
+
+1181
+00:44:38,834 --> 00:44:41,667
+Polyfills is the idea
+
+1182
+00:44:41,667 --> 00:44:44,167
+that you don't necessarily
+have to fall back.
+
+1183
+00:44:44,167 --> 00:44:46,667
+I've already talked
+about graceful degradation.
+
+1184
+00:44:46,667 --> 00:44:49,167
+But what if you could actually
+just fake it, right?
+
+1185
+00:44:49,167 --> 00:44:52,834
+And actually say we don't have
+this particular feature.
+
+1186
+00:44:52,834 --> 00:44:54,334
+We might not have SVG
+
+1187
+00:44:54,334 --> 00:44:56,667
+in a browser like IE 6
+for instance,
+
+1188
+00:44:56,667 --> 00:44:58,334
+So we'll just fake it.
+
+1189
+00:44:58,334 --> 00:45:00,167
+We'll fake it
+with something else.
+
+1190
+00:45:00,167 --> 00:45:02,734
+Um, so in this case we can say
+there's a library called canvg,
+
+1191
+00:45:02,734 --> 00:45:06,234
+um, which will actually fake SVG
+using Canvas
+
+1192
+00:45:06,234 --> 00:45:09,234
+for things that have Canvas
+but not SVG.
+
+1193
+00:45:09,234 --> 00:45:11,734
+Um, storage--so I've already
+shown you a little bit
+
+1194
+00:45:11,734 --> 00:45:14,734
+about local storage to make
+your apps work offline.
+
+1195
+00:45:14,734 --> 00:45:17,067
+Really old browsers,
+uh, don't have
+
+1196
+00:45:17,067 --> 00:45:19,567
+even the basic
+local storage support.
+
+1197
+00:45:19,567 --> 00:45:21,567
+So for those browsers,
+you can resort
+
+1198
+00:45:21,567 --> 00:45:23,400
+to everyone's friend,
+the old cookie,
+
+1199
+00:45:23,400 --> 00:45:26,901
+and store a very minimum--
+minimal amount of data,
+
+1200
+00:45:26,901 --> 00:45:29,901
+but you can still do something
+useful with that,
+
+1201
+00:45:29,901 --> 00:45:31,901
+and likewise geolocation
+and so on.
+
+1202
+00:45:31,901 --> 00:45:34,901
+And the point about these is
+you can use them yourself,
+
+1203
+00:45:34,901 --> 00:45:37,067
+so you can talk
+to that more modern API.
+
+1204
+00:45:37,067 --> 00:45:38,901
+And eventually when
+those devices
+
+1205
+00:45:38,901 --> 00:45:40,567
+and browsers become deprecated,
+
+1206
+00:45:40,567 --> 00:45:43,567
+you can just switch off the--
+any kind of checking.
+
+1207
+00:45:43,567 --> 00:45:45,901
+But also for
+third-party libraries,
+
+1208
+00:45:45,901 --> 00:45:47,567
+these are really powerful,
+
+1209
+00:45:47,567 --> 00:45:49,234
+because the third-party
+libraries
+
+1210
+00:45:49,234 --> 00:45:51,234
+might be taking advantage
+of those newer features.
+
+1211
+00:45:51,234 --> 00:45:52,901
+And you can sort of jump in.
+
+1212
+00:45:52,901 --> 00:45:54,567
+JavaScript's
+a very dynamic language
+
+1213
+00:45:54,567 --> 00:45:56,567
+that lets you do these things
+like what's called
+
+1214
+00:45:56,567 --> 00:45:58,567
+"monkey-patching"
+or "hijacking."
+
+1215
+00:45:58,567 --> 00:46:00,234
+So you can sort of
+intercept things
+
+1216
+00:46:00,234 --> 00:46:02,467
+and say, actually, no,
+the object you're talking to--
+
+1217
+00:46:02,467 --> 00:46:06,133
+do this instead.
+Use this object.
+
+1218
+00:46:06,133 --> 00:46:08,801
+And finally, I wanted
+to share with you--
+
+1219
+00:46:08,801 --> 00:46:11,801
+I spoke to Roman, who actually
+created the I/O app
+
+1220
+00:46:11,801 --> 00:46:13,467
+that you have seen--
+
+1221
+00:46:13,467 --> 00:46:15,467
+just the sort of techniques
+that you can use
+
+1222
+00:46:15,467 --> 00:46:16,968
+and he's using there
+
+1223
+00:46:16,968 --> 00:46:18,801
+to actually communicate
+back and forth
+
+1224
+00:46:18,801 --> 00:46:20,801
+between the native components
+of Android
+
+1225
+00:46:20,801 --> 00:46:23,300
+and--and the HTML5 components.
+
+1226
+00:46:23,300 --> 00:46:26,133
+So if you are creating one
+of those sorts of hybrid apps
+
+1227
+00:46:26,133 --> 00:46:28,634
+that Reto was advocating
+a moment ago,
+
+1228
+00:46:28,634 --> 00:46:30,968
+you can go in both directions
+with Android.
+
+1229
+00:46:30,968 --> 00:46:33,300
+You can basically have
+a native part,
+
+1230
+00:46:33,300 --> 00:46:36,133
+um, talk to
+the--the JavaScript part,
+
+1231
+00:46:36,133 --> 00:46:39,300
+basically making calls
+using that loadURL command.
+
+1232
+00:46:39,300 --> 00:46:41,634
+So, um, if you've got a WebView,
+
+1233
+00:46:41,634 --> 00:46:44,634
+instead of actually loadURL
+opening up a new Web site,
+
+1234
+00:46:44,634 --> 00:46:46,133
+as you'd expect,
+
+1235
+00:46:46,133 --> 00:46:48,300
+you can just pass it JavaScript
+commands the same way.
+
+1236
+00:46:48,300 --> 00:46:50,467
+Some of you might know
+
+1237
+00:46:50,467 --> 00:46:52,467
+you can write those kinds
+of JavaScript commands
+
+1238
+00:46:52,467 --> 00:46:55,367
+on--on the actual browser,
+like the way bookmarklets work.
+
+1239
+00:46:55,367 --> 00:46:57,100
+And in the opposite direction,
+
+1240
+00:46:57,100 --> 00:47:01,033
+HTML5 can actually talk
+to the native components,
+
+1241
+00:47:01,033 --> 00:47:04,367
+using this pretty cool method
+
+1242
+00:47:04,367 --> 00:47:06,701
+that's addJavaScriptInterface.
+
+1243
+00:47:06,701 --> 00:47:09,033
+So it lets you kind of,
+uh, send in
+
+1244
+00:47:09,033 --> 00:47:12,033
+a native component
+into the JavaScript app,
+
+1245
+00:47:12,033 --> 00:47:14,033
+and you basically provide
+an interface for that.
+
+1246
+00:47:14,033 --> 00:47:16,701
+That gives you full
+communication between the two
+
+1247
+00:47:16,701 --> 00:47:19,200
+and lets you writes--
+write one of those hybrid apps.
+
+1248
+00:47:19,200 --> 00:47:21,200
+I think that's about all.
+
+1249
+00:47:21,200 --> 00:47:23,000
+We've got some resources there
+to help you with.
+
+1250
+00:47:23,000 --> 00:47:24,667
+And I think that's it.
+
+1251
+00:47:24,667 --> 00:47:26,667
+I think we can take
+questions now, yeah.
+
+1252
+00:47:26,667 --> 00:47:28,334
+Great, thank you.
+Meier: Thanks.
+
+1253
+00:47:28,334 --> 00:47:31,267
+[applause]
+
+1254
+00:47:35,000 --> 00:47:37,000
+man: Um, one of the technologies
+
+1255
+00:47:37,000 --> 00:47:39,000
+that you didn't talk about,
+
+1256
+00:47:39,000 --> 00:47:42,667
+and they also have a--
+sort of a similar message
+
+1257
+00:47:42,667 --> 00:47:45,834
+is, um, Adobe Flex and AIR,
+
+1258
+00:47:45,834 --> 00:47:47,834
+uh, because that's available
+
+1259
+00:47:47,834 --> 00:47:50,000
+on Android, on Blackberry,
+PlayBook,
+
+1260
+00:47:50,000 --> 00:47:53,501
+and also there is a way
+to get it onto iOS.
+
+1261
+00:47:53,501 --> 00:47:55,501
+Um, what would you suggest
+the strategy--
+
+1262
+00:47:55,501 --> 00:47:58,334
+like, Adobe AIR versus HTML5...
+Mahemoff: Okay.
+
+1263
+00:47:58,334 --> 00:47:59,834
+man: versus native?
+
+1264
+00:47:59,834 --> 00:48:01,734
+Mahemoff: Yeah, I think
+it's an interesting
+
+1265
+00:48:01,734 --> 00:48:03,901
+sort of third situation
+with, uh,
+
+1266
+00:48:03,901 --> 00:48:05,567
+the Flash and AIR and so on.
+
+1267
+00:48:05,567 --> 00:48:07,434
+Um, I guess the way
+I see Flash--
+
+1268
+00:48:07,434 --> 00:48:09,234
+people always ask me
+about Flash.
+
+1269
+00:48:09,234 --> 00:48:11,901
+Um, I think it's been
+a good technology on the Web
+
+1270
+00:48:11,901 --> 00:48:13,901
+for actually going, uh,
+a step ahead,
+
+1271
+00:48:13,901 --> 00:48:15,901
+like the same sort of way
+Reto's talked
+
+1272
+00:48:15,901 --> 00:48:17,901
+about native technologies
+going a step ahead.
+
+1273
+00:48:17,901 --> 00:48:19,901
+I think Flash
+has always done that.
+
+1274
+00:48:19,901 --> 00:48:21,901
+It's now gonna be a challenge
+to see if it can
+
+1275
+00:48:21,901 --> 00:48:23,567
+keep on going in that direction.
+
+1276
+00:48:23,567 --> 00:48:26,567
+I think the Web
+has some obvious advantages.
+
+1277
+00:48:26,567 --> 00:48:28,567
+Um, the fact that people
+do just have to have
+
+1278
+00:48:28,567 --> 00:48:31,067
+normal Web sites
+as an open technology
+
+1279
+00:48:31,067 --> 00:48:33,067
+without any one
+particular vendor
+
+1280
+00:48:33,067 --> 00:48:35,734
+controlling its destiny,
+if you like,
+
+1281
+00:48:35,734 --> 00:48:38,067
+so I think that's where
+the challenge
+
+1282
+00:48:38,067 --> 00:48:40,267
+for that whole set
+of technologies is,
+
+1283
+00:48:40,267 --> 00:48:42,234
+like to keep staying
+ahead of the game.
+
+1284
+00:48:42,234 --> 00:48:45,234
+So you can have those kind
+of native technologies,
+
+1285
+00:48:45,234 --> 00:48:47,901
+um, but actually go across
+the different devices.
+
+1286
+00:48:47,901 --> 00:48:49,901
+Meier: Yeah, I think
+that's the big challenge
+
+1287
+00:48:49,901 --> 00:48:51,400
+for the Adobe stuff,
+
+1288
+00:48:51,400 --> 00:48:53,400
+or really anything other
+than sort of Web or native,
+
+1289
+00:48:53,400 --> 00:48:55,234
+which are the two extremes,
+
+1290
+00:48:55,234 --> 00:48:58,234
+is not getting stuck with
+the negatives of both worlds.
+
+1291
+00:48:58,234 --> 00:49:00,234
+You know, it doesn't work
+on everything,
+
+1292
+00:49:00,234 --> 00:49:02,801
+and it doesn't have a full range
+of native support.
+
+1293
+00:49:02,801 --> 00:49:04,801
+I think that's where
+the challenge is gonna be.
+
+1294
+00:49:04,801 --> 00:49:06,634
+Mahemoff: And there's also--
+in some respects,
+
+1295
+00:49:06,634 --> 00:49:08,467
+there's been better tooling,
+traditionally,
+
+1296
+00:49:08,467 --> 00:49:09,968
+for Flash as well.
+
+1297
+00:49:09,968 --> 00:49:11,968
+So that's where the advantage
+over the Web has been,
+
+1298
+00:49:11,968 --> 00:49:14,300
+but now there's starting to be
+a lot more tools for--
+
+1299
+00:49:14,300 --> 00:49:16,133
+and actually not just
+those sort of libraries
+
+1300
+00:49:16,133 --> 00:49:17,634
+I've talked about,
+
+1301
+00:49:17,634 --> 00:49:19,467
+but people are
+just starting to write
+
+1302
+00:49:19,467 --> 00:49:21,300
+sort of animation toolkits
+and so on as well. Yeah.
+
+1303
+00:49:21,300 --> 00:49:22,968
+man: Thank you.
+man: Uh, yeah,
+
+1304
+00:49:22,968 --> 00:49:25,968
+if you're developing
+one of these hybrid apps,
+
+1305
+00:49:25,968 --> 00:49:28,300
+uh, you've talked about
+the JavaScript bridging,
+
+1306
+00:49:28,300 --> 00:49:30,634
+is there also a way
+where you can manipulate
+
+1307
+00:49:30,634 --> 00:49:32,467
+or take over the cache
+
+1308
+00:49:32,467 --> 00:49:35,634
+or the loading of subresources
+within the WebView?
+
+1309
+00:49:35,634 --> 00:49:37,634
+You can do that on iPhone.
+
+1310
+00:49:37,634 --> 00:49:39,968
+Is there an analogous way
+to do that on Android?
+
+1311
+00:49:39,968 --> 00:49:41,968
+Meier: Uh, I'm not sure.
+
+1312
+00:49:41,968 --> 00:49:43,968
+It's not an area which
+I've looked at too closely.
+
+1313
+00:49:43,968 --> 00:49:45,968
+I believe that you have
+pretty much
+
+1314
+00:49:45,968 --> 00:49:48,467
+full control over what happens
+within a WebView,
+
+1315
+00:49:48,467 --> 00:49:50,300
+but, um, don't take
+my word for it.
+
+1316
+00:49:50,300 --> 00:49:52,634
+I think they're still doing
+Android office hours upstairs.
+
+1317
+00:49:52,634 --> 00:49:54,467
+It'd be a good question
+to ask someone there
+
+1318
+00:49:54,467 --> 00:49:56,300
+from the browser team,
+if you can find one.
+
+1319
+00:49:56,300 --> 00:49:58,133
+man: Is there a particular
+person you'd recommend?
+
+1320
+00:49:58,133 --> 00:50:00,300
+Meier: I'm not sure
+who's around, so no.
+
+1321
+00:50:00,300 --> 00:50:02,968
+man: Okay. Thanks.
+Meier: No problem.
+
+1322
+00:50:02,968 --> 00:50:06,634
+man: The, um,
+tabbed view you had
+
+1323
+00:50:06,634 --> 00:50:08,634
+that included the HTML5 photos,
+
+1324
+00:50:08,634 --> 00:50:10,801
+was there a URL
+for that whole thing?
+
+1325
+00:50:10,801 --> 00:50:12,801
+Mahemoff: Uh, I haven't got
+a URL for the whole thing.
+
+1326
+00:50:12,801 --> 00:50:14,801
+Um, I can put it on Twitter,
+I guess, afterwards,
+
+1327
+00:50:14,801 --> 00:50:17,133
+after this talk...
+[speaking indistinctly]
+
+1328
+00:50:17,133 --> 00:50:18,968
+man: Okay, but there was
+no helper app to get that photo?
+
+1329
+00:50:18,968 --> 00:50:20,634
+It was just looking
+for a file...
+
+1330
+00:50:20,634 --> 00:50:22,133
+[voices overlapping]
+
+1331
+00:50:22,133 --> 00:50:23,968
+Mahemoff: Sorry, the URL
+specifically for the photo app--
+
+1332
+00:50:23,968 --> 00:50:25,634
+man: Well, that was
+html5photos.appspot.
+
+1333
+00:50:25,634 --> 00:50:27,467
+Mahemoff: Yeah.
+man: And my battery died.
+
+1334
+00:50:27,467 --> 00:50:29,467
+Excuse me. Um, but that thing
+will trigger the camera
+
+1335
+00:50:29,467 --> 00:50:31,467
+without a helper app?
+
+1336
+00:50:31,467 --> 00:50:33,968
+Mahemoff: Uh, trigger
+the camera is--
+
+1337
+00:50:33,968 --> 00:50:35,801
+oh, well, that's just
+on the slides,
+
+1338
+00:50:35,801 --> 00:50:37,467
+so I've got the--
+there's no URL.
+
+1339
+00:50:37,467 --> 00:50:39,300
+I mean, it's just
+"input type=file"--
+
+1340
+00:50:39,300 --> 00:50:41,133
+man: Right, but you hit
+the button. You got a photo.
+
+1341
+00:50:41,133 --> 00:50:43,133
+Mahemoff: Yeah, that's just
+a special kind of input type.
+
+1342
+00:50:43,133 --> 00:50:44,767
+man: Okay.
+Mahemoff: So I've done
+
+1343
+00:50:44,767 --> 00:50:47,100
+"input type=file"
+with a special except.
+
+1344
+00:50:47,100 --> 00:50:49,100
+You'll see that on the slides
+when they come out.
+
+1345
+00:50:49,100 --> 00:50:50,767
+It's just a single line,
+basically.
+
+1346
+00:50:50,767 --> 00:50:52,767
+And then I'm using,
+uh, Reader,
+
+1347
+00:50:52,767 --> 00:50:54,300
+so you can actually--
+
+1348
+00:50:54,300 --> 00:50:56,267
+there's also file APIs,
+basically--
+
+1349
+00:50:56,267 --> 00:50:58,100
+This is on HTML5 Rocks,
+actually,
+
+1350
+00:50:58,100 --> 00:50:59,767
+how you can actually
+manipulate--
+
+1351
+00:50:59,767 --> 00:51:01,834
+man: Oh, it is all there, okay.
+Mahemoff: Yeah, once you've
+
+1352
+00:51:01,834 --> 00:51:04,334
+got the file, you use
+file input with that except
+
+1353
+00:51:04,334 --> 00:51:08,167
+to actually put the file
+in that--that element.
+
+1354
+00:51:08,167 --> 00:51:10,834
+and you can then read it
+using FileReader API.
+
+1355
+00:51:10,834 --> 00:51:12,834
+man: Okay, thank you.
+Mahemoff: Okay.
+
+1356
+00:51:12,834 --> 00:51:14,834
+woman: Hi, uh, first of all,
+awesome talk.
+
+1357
+00:51:14,834 --> 00:51:16,667
+I actually was gonna
+ask a question
+
+1358
+00:51:16,667 --> 00:51:18,667
+based on the fact
+that I'm sure you actually get
+
+1359
+00:51:18,667 --> 00:51:20,334
+more of this input than I do.
+
+1360
+00:51:20,334 --> 00:51:22,167
+So I didn't see this
+on your list,
+
+1361
+00:51:22,167 --> 00:51:24,000
+but do you think security
+and transparency
+
+1362
+00:51:24,000 --> 00:51:25,501
+is actually a factor?
+
+1363
+00:51:25,501 --> 00:51:27,367
+So what I mean is, like,
+when I look at an HTML5 app,
+
+1364
+00:51:27,367 --> 00:51:29,167
+I can pretty much kind of look
+at the HTML source.
+
+1365
+00:51:29,167 --> 00:51:31,000
+I can figure out the JavaScript.
+I can figure out
+
+1366
+00:51:31,000 --> 00:51:32,667
+what's happening
+behind the scenes.
+
+1367
+00:51:32,667 --> 00:51:34,501
+And I can use user scripts.
+I can use extensions.
+
+1368
+00:51:34,501 --> 00:51:36,334
+I can kind of manipulate stuff
+in there.
+
+1369
+00:51:36,334 --> 00:51:38,167
+Native apps don't let you
+do that.
+
+1370
+00:51:38,167 --> 00:51:40,000
+And you know, even back
+in the JTime days,
+
+1371
+00:51:40,000 --> 00:51:41,834
+you wanted to kind of
+do things to hide stuff
+
+1372
+00:51:41,834 --> 00:51:43,334
+from your competitors.
+
+1373
+00:51:43,334 --> 00:51:45,501
+So are you seeing developers
+see that as one of the reasons
+
+1374
+00:51:45,501 --> 00:51:48,334
+for picking one over the other?
+Just curious.
+
+1375
+00:51:48,334 --> 00:51:50,167
+Meier: Uh, well,
+from the native side,
+
+1376
+00:51:50,167 --> 00:51:52,000
+it's not something
+that I've come across.
+
+1377
+00:51:52,000 --> 00:51:53,834
+I mean, certainly
+there's certain industries,
+
+1378
+00:51:53,834 --> 00:51:55,834
+particularly around banking,
+but to be honest,
+
+1379
+00:51:55,834 --> 00:51:57,334
+they are very comfortable
+
+1380
+00:51:57,334 --> 00:51:59,167
+with the way things work
+on the Web now.
+
+1381
+00:51:59,167 --> 00:52:01,234
+The advantage of the Web--it's
+been around for a long time.
+
+1382
+00:52:01,234 --> 00:52:03,067
+And there's some
+really great security things
+
+1383
+00:52:03,067 --> 00:52:04,567
+built into it,
+
+1384
+00:52:04,567 --> 00:52:06,567
+and there's a certain level
+of comfort.
+
+1385
+00:52:06,567 --> 00:52:08,234
+Um, so as far as obscurity goes,
+
+1386
+00:52:08,234 --> 00:52:10,067
+I haven't seen anyone
+develop a native app
+
+1387
+00:52:10,067 --> 00:52:12,067
+in order to make their code
+more obscure.
+
+1388
+00:52:12,067 --> 00:52:14,901
+Um, but I would imagine
+that from a user point of view,
+
+1389
+00:52:14,901 --> 00:52:16,567
+I guess, turning that round.
+
+1390
+00:52:16,567 --> 00:52:18,400
+So a lot of the banks
+are more comfortable
+
+1391
+00:52:18,400 --> 00:52:20,234
+with a Web app,
+because they are--
+
+1392
+00:52:20,234 --> 00:52:22,067
+they understand
+the security model.
+
+1393
+00:52:22,067 --> 00:52:24,734
+They know that the users
+understand the security model.
+
+1394
+00:52:24,734 --> 00:52:28,067
+Um, so for users, yes.
+Developers, probably less.
+
+1395
+00:52:28,067 --> 00:52:30,067
+Mahemoff: And yeah--
+one the Web side of things,
+
+1396
+00:52:30,067 --> 00:52:31,734
+it's a little bit different.
+
+1397
+00:52:31,734 --> 00:52:33,734
+We've seen this at the Chrome
+Web store, for instance.
+
+1398
+00:52:33,734 --> 00:52:35,734
+People tend to be concerned
+about two things.
+
+1399
+00:52:35,734 --> 00:52:38,067
+One is the application,
+so people actually potentially
+
+1400
+00:52:38,067 --> 00:52:40,234
+stealing the application
+because it's open.
+
+1401
+00:52:40,234 --> 00:52:42,067
+And the other is
+the content, right,
+
+1402
+00:52:42,067 --> 00:52:44,067
+so actually, uh,
+digital rights management
+
+1403
+00:52:44,067 --> 00:52:46,868
+and people actually being able
+to lift movies and music
+
+1404
+00:52:46,868 --> 00:52:48,534
+that those are actually serving.
+
+1405
+00:52:48,534 --> 00:52:50,367
+Um, there's a couple of things
+to say about that.
+
+1406
+00:52:50,367 --> 00:52:52,200
+Firstly, there was
+a really good comment yesterday
+
+1407
+00:52:52,200 --> 00:52:53,701
+in the Web store panel
+
+1408
+00:52:53,701 --> 00:52:55,534
+by the chap
+from "New York Times"
+
+1409
+00:52:55,534 --> 00:52:57,200
+who just made a point
+
+1410
+00:52:57,200 --> 00:52:59,033
+that people who tend
+to be really good,
+
+1411
+00:52:59,033 --> 00:53:00,868
+the people that you have
+to worry about as competitors,
+
+1412
+00:53:00,868 --> 00:53:02,767
+don't tend to be the kind
+of people who would
+
+1413
+00:53:02,767 --> 00:53:04,434
+actually consider
+doing that anyway.
+
+1414
+00:53:04,434 --> 00:53:06,767
+Um, but beyond that, it's--
+I think the way I like to see it
+
+1415
+00:53:06,767 --> 00:53:08,934
+is that these technologies are--
+
+1416
+00:53:08,934 --> 00:53:11,601
+have sort of a standard default
+that you can vary.
+
+1417
+00:53:11,601 --> 00:53:13,601
+So the Web tends to be
+open by default,
+
+1418
+00:53:13,601 --> 00:53:16,434
+but if you want, you can apply
+obfuscation and so on
+
+1419
+00:53:16,434 --> 00:53:18,267
+to--to close it off.
+
+1420
+00:53:18,267 --> 00:53:20,267
+And likewise, uh,
+native technologies
+
+1421
+00:53:20,267 --> 00:53:22,601
+tend to be closed by default.
+They're sort of binary.
+
+1422
+00:53:22,601 --> 00:53:24,434
+But if you want, you can
+always put the source up on...
+
+1423
+00:53:24,434 --> 00:53:26,100
+woman: Yeah.
+Mahemoff: you know,
+
+1424
+00:53:26,100 --> 00:53:28,100
+on a repository or something.
+So it kind of works both ways.
+
+1425
+00:53:28,100 --> 00:53:30,100
+And it's really down
+to the developers to...
+
+1426
+00:53:30,100 --> 00:53:32,434
+woman: Thank you.
+Mahemoff: My pleasure.
+
+1427
+00:53:32,434 --> 00:53:34,267
+Meier: Yeah.
+man: Right.
+
+1428
+00:53:34,267 --> 00:53:35,767
+So I have two or three comments.
+
+1429
+00:53:35,767 --> 00:53:38,767
+The first one is
+you talked about, um,
+
+1430
+00:53:38,767 --> 00:53:41,267
+I guess, on this side,
+uh, about--
+
+1431
+00:53:41,267 --> 00:53:43,100
+sorry--
+
+1432
+00:53:43,100 --> 00:53:45,434
+the fact that, you know,
+one of the advantages
+
+1433
+00:53:45,434 --> 00:53:47,267
+of native is--is, you know,
+
+1434
+00:53:47,267 --> 00:53:49,100
+less stress on the power.
+
+1435
+00:53:49,100 --> 00:53:51,601
+And you didn't address this
+on your HTML5.
+
+1436
+00:53:51,601 --> 00:53:53,601
+I think that's a huge,
+important thing,
+
+1437
+00:53:53,601 --> 00:53:55,934
+because power is so critical.
+
+1438
+00:53:55,934 --> 00:53:57,767
+Um, the other thing is--
+and I guess
+
+1439
+00:53:57,767 --> 00:53:59,601
+I'll just summarize it
+by this--
+
+1440
+00:53:59,601 --> 00:54:01,334
+is why--why not talk--
+
+1441
+00:54:01,334 --> 00:54:04,501
+why not tinker just, like,
+GWT instead?
+
+1442
+00:54:04,501 --> 00:54:06,834
+Which is, you know,
+write it for Android
+
+1443
+00:54:06,834 --> 00:54:10,334
+and then compile it
+for HTML5.
+
+1444
+00:54:10,334 --> 00:54:13,167
+You know, and I'm sure there's
+gonna be cases
+
+1445
+00:54:13,167 --> 00:54:15,167
+where you're talking advantage
+of the hardware,
+
+1446
+00:54:15,167 --> 00:54:17,000
+and that compilation
+wouldn't work.
+
+1447
+00:54:17,000 --> 00:54:18,834
+But at least a lot
+of the skunk work
+
+1448
+00:54:18,834 --> 00:54:20,667
+that you would do in HTML5
+
+1449
+00:54:20,667 --> 00:54:23,000
+can be done for you
+by the compiler.
+
+1450
+00:54:23,000 --> 00:54:26,000
+Mahemoff: I don't understand
+how you can write it in Android
+
+1451
+00:54:26,000 --> 00:54:28,000
+and then compile it in HTML5.
+man: You write it in Java--
+
+1452
+00:54:28,000 --> 00:54:29,834
+like, right now,
+if you write it in GWT,
+
+1453
+00:54:29,834 --> 00:54:31,667
+you can compile it
+and it works--
+
+1454
+00:54:31,667 --> 00:54:33,501
+Mahemoff: Oh, okay, using GWT.
+man: Yeah, so now you do
+
+1455
+00:54:33,501 --> 00:54:35,334
+an Android version of that.
+Mahemoff: Yeah.
+
+1456
+00:54:35,334 --> 00:54:37,167
+And that's--that's
+the "Angry Birds" strategy
+
+1457
+00:54:37,167 --> 00:54:39,167
+that's working in GWT,
+so there is a possibility there.
+
+1458
+00:54:39,167 --> 00:54:40,667
+Meier: Yeah, absolutely.
+
+1459
+00:54:40,667 --> 00:54:43,000
+I think part of--
+if I understand your question
+
+1460
+00:54:43,000 --> 00:54:45,167
+or comment correctly--
+I think one of the risks
+
+1461
+00:54:45,167 --> 00:54:47,367
+if you're using
+something like GWT,
+
+1462
+00:54:47,367 --> 00:54:49,167
+it's the same sort of issue
+that you may have
+
+1463
+00:54:49,167 --> 00:54:50,834
+with something
+like the Adobe solutions,
+
+1464
+00:54:50,834 --> 00:54:53,834
+which is you build something
+which is generic.
+
+1465
+00:54:53,834 --> 00:54:56,667
+Then you may as well build it
+using Web technologies.
+
+1466
+00:54:56,667 --> 00:54:59,501
+And certainly GWT is a great way
+to build Web technologies,
+
+1467
+00:54:59,501 --> 00:55:01,567
+but I don't think that we
+would get to a scenario
+
+1468
+00:55:01,567 --> 00:55:03,901
+where we would want that
+to output Android code.
+
+1469
+00:55:03,901 --> 00:55:05,901
+man: No, I'm saying
+the other way around.
+
+1470
+00:55:05,901 --> 00:55:07,901
+Meier: The other way around.
+man: No, you write...
+
+1471
+00:55:07,901 --> 00:55:09,901
+Meier: Write Android code.
+man: just in Android,
+
+1472
+00:55:09,901 --> 00:55:13,400
+and then you tweak the compiler,
+the Java compiler,
+
+1473
+00:55:13,400 --> 00:55:15,901
+so that it generates HTML5.
+
+1474
+00:55:15,901 --> 00:55:17,734
+Meier: HTML5. Okay.
+So again, it's--
+
+1475
+00:55:17,734 --> 00:55:19,567
+man: Because you have
+the code already.
+
+1476
+00:55:19,567 --> 00:55:21,400
+[voices overlapping]
+Mahemoff: It can work.
+
+1477
+00:55:21,400 --> 00:55:23,234
+It's another strategy, depending
+on where you come from.
+
+1478
+00:55:23,234 --> 00:55:25,067
+I actually had a partner
+who did this
+
+1479
+00:55:25,067 --> 00:55:26,901
+who actually--
+with the Chrome Web store.
+
+1480
+00:55:26,901 --> 00:55:28,734
+They already had an Android app,
+
+1481
+00:55:28,734 --> 00:55:30,567
+and they were able
+to really quickly--
+
+1482
+00:55:30,567 --> 00:55:32,400
+actually, I was really surprised
+about how quickly
+
+1483
+00:55:32,400 --> 00:55:34,234
+they could use GWT
+to actually turn it
+
+1484
+00:55:34,234 --> 00:55:35,901
+into a very capable Web app.
+
+1485
+00:55:35,901 --> 00:55:37,567
+So it is definitely a strategy,
+
+1486
+00:55:37,567 --> 00:55:39,400
+if you've already got
+the code base
+
+1487
+00:55:39,400 --> 00:55:41,400
+and all the understanding
+about how to do that, yeah.
+
+1488
+00:55:41,400 --> 00:55:43,567
+man: What about
+the power thing for--
+
+1489
+00:55:43,567 --> 00:55:45,400
+Mahemoff: Yeah, it's a good
+question, actually,
+
+1490
+00:55:45,400 --> 00:55:47,067
+'cause Reto was talking
+about this.
+
+1491
+00:55:47,067 --> 00:55:49,067
+Um, Chrome now actually has
+the concept
+
+1492
+00:55:49,067 --> 00:55:50,567
+of background apps.
+
+1493
+00:55:50,567 --> 00:55:52,400
+And it is just Chrome
+at this stage,
+
+1494
+00:55:52,400 --> 00:55:54,267
+but a lot of the things
+that Chrome introduces
+
+1495
+00:55:54,267 --> 00:55:56,567
+are intended to eventually
+become standards.
+
+1496
+00:55:56,567 --> 00:55:59,400
+And so--and it does actually
+have this concept
+
+1497
+00:55:59,400 --> 00:56:00,901
+that you'll see--
+
+1498
+00:56:00,901 --> 00:56:02,968
+"New York Times"
+is one, uh, company.
+
+1499
+00:56:02,968 --> 00:56:04,968
+There's quite a few
+that are starting to use it.
+
+1500
+00:56:04,968 --> 00:56:07,968
+Um, so it can actually run
+in the background.
+
+1501
+00:56:07,968 --> 00:56:11,467
+Um, and actually, it kinda goes
+against your point, too,
+
+1502
+00:56:11,467 --> 00:56:13,300
+because it's actually using
+more battery
+
+1503
+00:56:13,300 --> 00:56:14,968
+while it's in the background.
+
+1504
+00:56:14,968 --> 00:56:17,133
+Um, so, yeah, I mean, it's--
+
+1505
+00:56:17,133 --> 00:56:20,634
+I don't know--why would you say
+that it's using more battery?
+
+1506
+00:56:20,634 --> 00:56:22,634
+man: Well, I mean,
+I know iOS quite well,
+
+1507
+00:56:22,634 --> 00:56:25,133
+and I can tell you
+that iOS you get events,
+
+1508
+00:56:25,133 --> 00:56:27,834
+and you have to put
+your app to sleep.
+
+1509
+00:56:27,834 --> 00:56:29,801
+Mahemoff: Right. I see.
+man: And I think in Android
+
+1510
+00:56:29,801 --> 00:56:31,801
+you have similar events.
+I'm exploring them now.
+
+1511
+00:56:31,801 --> 00:56:33,801
+So you--you essentially
+are participating
+
+1512
+00:56:33,801 --> 00:56:35,801
+as part of the platform...
+Mahemoff: Yeah.
+
+1513
+00:56:35,801 --> 00:56:37,634
+man: which is trying
+as hard as it can
+
+1514
+00:56:37,634 --> 00:56:39,300
+to, you know,
+maximize battery life.
+
+1515
+00:56:39,300 --> 00:56:41,300
+Mahemoff: So that's in contrast
+to keeping a Web app running...
+
+1516
+00:56:41,300 --> 00:56:43,133
+man: Yeah, that's right.
+Mahemoff: the whole time.
+
+1517
+00:56:43,133 --> 00:56:44,968
+And that's where
+the background apps do help,
+
+1518
+00:56:44,968 --> 00:56:46,801
+because with Chrome
+you've got the ability
+
+1519
+00:56:46,801 --> 00:56:48,467
+to launch these
+background windows,
+
+1520
+00:56:48,467 --> 00:56:50,467
+which are invisible windows
+that can just wake up.
+
+1521
+00:56:50,467 --> 00:56:52,801
+You know, we'll just run a timer
+and just wake up every hour
+
+1522
+00:56:52,801 --> 00:56:54,801
+or whatever and just do a poll.
+
+1523
+00:56:54,801 --> 00:56:56,801
+So it's just starting
+very early to get there
+
+1524
+00:56:56,801 --> 00:56:58,634
+as far as the standards go.
+
+1525
+00:56:58,634 --> 00:57:00,467
+Meier: I think what we're
+gonna find
+
+1526
+00:57:00,467 --> 00:57:02,367
+is that one of the advantages
+behind Android
+
+1527
+00:57:02,367 --> 00:57:04,200
+is that it's ultra optimized
+for mobile--
+
+1528
+00:57:04,200 --> 00:57:07,367
+like least power,
+most efficient, et cetera.
+
+1529
+00:57:07,367 --> 00:57:09,367
+The reality is--
+is that the Web browsers
+
+1530
+00:57:09,367 --> 00:57:11,200
+which are running
+on these platforms
+
+1531
+00:57:11,200 --> 00:57:13,033
+are gonna have exactly
+those same things.
+
+1532
+00:57:13,033 --> 00:57:16,033
+So Chrome originally was not
+designed as a mobile browser.
+
+1533
+00:57:16,033 --> 00:57:17,701
+That wasn't the focus.
+
+1534
+00:57:17,701 --> 00:57:19,701
+The focus was around
+all these other cool things,
+
+1535
+00:57:19,701 --> 00:57:21,534
+which everyone uses
+and wants to be able to do
+
+1536
+00:57:21,534 --> 00:57:23,200
+in the most efficient way.
+
+1537
+00:57:23,200 --> 00:57:24,868
+As we see things now,
+
+1538
+00:57:24,868 --> 00:57:27,200
+more developers creating
+browsers for these platforms,
+
+1539
+00:57:27,200 --> 00:57:29,534
+that's gonna have to be
+their focus as well.
+
+1540
+00:57:29,534 --> 00:57:31,200
+And so there'll be solutions
+
+1541
+00:57:31,200 --> 00:57:33,033
+to things
+like the background stuff,
+
+1542
+00:57:33,033 --> 00:57:36,033
+but also, um,
+also just more efficiency,
+
+1543
+00:57:36,033 --> 00:57:38,033
+generally speaking.
+
+1544
+00:57:38,033 --> 00:57:39,701
+Mahemoff: Yeah.
+man: So my question's
+
+1545
+00:57:39,701 --> 00:57:42,534
+around if you do the HTML5 apps
+
+1546
+00:57:42,534 --> 00:57:45,534
+or take a Chrome Web app
+out of the Web store,
+
+1547
+00:57:45,534 --> 00:57:47,367
+can you put it
+in the Marketplace, too--
+
+1548
+00:57:47,367 --> 00:57:49,200
+Android Marketplace?
+
+1549
+00:57:49,200 --> 00:57:51,200
+Mahemoff: You can
+using some technologies.
+
+1550
+00:57:51,200 --> 00:57:52,701
+So there's ways, actually--
+
+1551
+00:57:52,701 --> 00:57:54,534
+ways of actually
+compiling it down
+
+1552
+00:57:54,534 --> 00:57:56,033
+with some frameworks,
+
+1553
+00:57:56,033 --> 00:57:58,033
+but there's also ways
+of actually doing it yourself,
+
+1554
+00:57:58,033 --> 00:58:00,701
+like what Reto was suggesting,
+the kind of thing that the I/O--
+
+1555
+00:58:00,701 --> 00:58:02,434
+man: So hybrid--hybrid apps,
+you can--
+
+1556
+00:58:02,434 --> 00:58:04,267
+then you can put
+it in Marketplace.
+
+1557
+00:58:04,267 --> 00:58:06,267
+Mahemoff: Yeah, and there are--
+there are also frameworks,
+
+1558
+00:58:06,267 --> 00:58:08,267
+and there are ways
+of actually not just taking
+
+1559
+00:58:08,267 --> 00:58:10,100
+the kind of approach
+we've done here,
+
+1560
+00:58:10,100 --> 00:58:11,601
+but actually compiling it.
+
+1561
+00:58:11,601 --> 00:58:13,434
+So there are starting to be
+some technologies
+
+1562
+00:58:13,434 --> 00:58:15,267
+that people are doing
+to actually take, um,
+
+1563
+00:58:15,267 --> 00:58:17,267
+like, something that talks
+to Canvas on the desktop,
+
+1564
+00:58:17,267 --> 00:58:20,267
+and then it will go to OpenGL
+on--inside an Android.
+
+1565
+00:58:20,267 --> 00:58:23,601
+man: And then that would qualify
+to be in Marketplace, too.
+
+1566
+00:58:23,601 --> 00:58:25,434
+Okay.
+Mahemoff: Well, you still
+
+1567
+00:58:25,434 --> 00:58:27,934
+have to wrap it
+as a native app, but yeah.
+
+1568
+00:58:27,934 --> 00:58:30,934
+man: My question is related
+to this one.
+
+1569
+00:58:30,934 --> 00:58:33,601
+Uh, the way
+that Chrome Web store
+
+1570
+00:58:33,601 --> 00:58:35,434
+connects apps to users,
+
+1571
+00:58:35,434 --> 00:58:37,767
+which are pure Web apps,
+
+1572
+00:58:37,767 --> 00:58:40,100
+uh, doesn't it make sense
+to have a similar store
+
+1573
+00:58:40,100 --> 00:58:42,767
+that connects mobile Web apps
+to the users
+
+1574
+00:58:42,767 --> 00:58:44,601
+where people can discover
+mobile Web apps
+
+1575
+00:58:44,601 --> 00:58:46,434
+in some kind of a store?
+
+1576
+00:58:46,434 --> 00:58:48,100
+Meier: Yeah,
+that would make sense.
+
+1577
+00:58:48,100 --> 00:58:50,767
+Um, I think the question
+of how you put, um,
+
+1578
+00:58:50,767 --> 00:58:53,934
+Chrome apps designed for mobile,
+and make them more discoverable,
+
+1579
+00:58:53,934 --> 00:58:55,934
+uh, on mobile devices
+or Android devices...
+
+1580
+00:58:55,934 --> 00:58:57,767
+man: And don't have
+to wrap it up
+
+1581
+00:58:57,767 --> 00:58:59,601
+just so that they can be
+discovered,
+
+1582
+00:58:59,601 --> 00:59:01,501
+so they can be first-class
+citizens on their own,
+
+1583
+00:59:01,501 --> 00:59:03,000
+being mobile Web apps.
+
+1584
+00:59:03,000 --> 00:59:04,667
+Meier: So I'm not sure
+internally
+
+1585
+00:59:04,667 --> 00:59:06,667
+of what the plans are--
+two separate teams.
+
+1586
+00:59:06,667 --> 00:59:08,834
+So I have no idea.
+Personally, my preference
+
+1587
+00:59:08,834 --> 00:59:12,167
+would be to see search become
+the way that you discover it,
+
+1588
+00:59:12,167 --> 00:59:14,200
+so that you have search,
+which is much better
+
+1589
+00:59:14,200 --> 00:59:17,000
+at discovering
+both native Android APKs
+
+1590
+00:59:17,000 --> 00:59:19,501
+and Web-based apps as well,
+
+1591
+00:59:19,501 --> 00:59:22,000
+rather than sort of having
+different markets
+
+1592
+00:59:22,000 --> 00:59:23,667
+or indeed any market.
+
+1593
+00:59:23,667 --> 00:59:25,667
+But I have no idea
+what the actual plans are.
+
+1594
+00:59:25,667 --> 00:59:27,667
+man: All right, thanks.
+Meier: Last question.
+
+1595
+00:59:27,667 --> 00:59:29,501
+man: Uh, this is really more
+of a comment
+
+1596
+00:59:29,501 --> 00:59:31,000
+than anything else.
+
+1597
+00:59:31,000 --> 00:59:33,000
+I guess one thing is that,
+"A," if you guys are building
+
+1598
+00:59:33,000 --> 00:59:35,501
+kind of a hybrid app
+in this case,
+
+1599
+00:59:35,501 --> 00:59:37,167
+you should probably
+remind people
+
+1600
+00:59:37,167 --> 00:59:39,501
+that the actual rendering engine
+
+1601
+00:59:39,501 --> 00:59:41,667
+is not the same as what
+they would have
+
+1602
+00:59:41,667 --> 00:59:43,167
+in a browser or whatnot,
+
+1603
+00:59:43,167 --> 00:59:45,167
+like for instance,
+what the gentleman said there
+
+1604
+00:59:45,167 --> 00:59:48,000
+about iOS--you know, the--
+people are very surprised
+
+1605
+00:59:48,000 --> 00:59:50,334
+when they get a UI WebView
+and it doesn't have, like,
+
+1606
+00:59:50,334 --> 00:59:51,834
+JIT compilation
+
+1607
+00:59:51,834 --> 00:59:54,834
+on like mobile Safari
+or something like that.
+
+1608
+00:59:54,834 --> 00:59:58,334
+Um, two, for the, uh,
+
+1609
+00:59:58,334 --> 01:00:00,334
+HTML5 portion of it,
+
+1610
+01:00:00,334 --> 01:00:03,167
+remember, too, that the network
+is the most expensive thing
+
+1611
+01:00:03,167 --> 01:00:04,667
+when dealing with mobile,
+
+1612
+01:00:04,667 --> 01:00:06,334
+less so than
+the power consumption
+
+1613
+01:00:06,334 --> 01:00:08,000
+and all that other stuff,
+
+1614
+01:00:08,000 --> 01:00:10,000
+so if you're dealing
+with lots of, you know--
+
+1615
+01:00:10,000 --> 01:00:12,334
+I know that Android 2.0 and 2.1
+
+1616
+01:00:12,334 --> 01:00:14,334
+supports HTML5 Web Workers,
+
+1617
+01:00:14,334 --> 01:00:16,667
+and 2.2 and 2.3 do not anymore.
+
+1618
+01:00:16,667 --> 01:00:18,667
+Thanks.
+[laughter]
+
+1619
+01:00:18,667 --> 01:00:20,667
+Meier: You're welcome.
+man: Um, if you're doing that,
+
+1620
+01:00:20,667 --> 01:00:22,667
+you're, like, you know,
+pulling up a couple threads
+
+1621
+01:00:22,667 --> 01:00:24,667
+in the background and spitting
+off extra resources--
+
+1622
+01:00:24,667 --> 01:00:26,167
+that's very expensive.
+
+1623
+01:00:26,167 --> 01:00:28,000
+Um, and then three,
+your solution
+
+1624
+01:00:28,000 --> 01:00:31,334
+doesn't always work
+in certain situations,
+
+1625
+01:00:31,334 --> 01:00:34,167
+um, it's appeared
+in an HTML5 Web app,
+
+1626
+01:00:34,167 --> 01:00:35,667
+because, say, you're European,
+
+1627
+01:00:35,667 --> 01:00:38,501
+and you use somebody
+like Vodafone
+
+1628
+01:00:38,501 --> 01:00:41,667
+or, um, you know,
+Orange or something like that,
+
+1629
+01:00:41,667 --> 01:00:44,501
+that use things like
+content transformers actually
+
+1630
+01:00:44,501 --> 01:00:48,334
+at, uh, the--
+in the network operator level.
+
+1631
+01:00:48,334 --> 01:00:52,000
+Your app is just toast.
+
+1632
+01:00:52,000 --> 01:00:54,200
+And yours actually works.
+
+1633
+01:00:54,200 --> 01:00:56,167
+Meier: It's definitely, uh,
+
+1634
+01:00:56,167 --> 01:00:58,000
+there's definitely
+no easy solutions.
+
+1635
+01:00:58,000 --> 01:00:59,834
+And I guess that's
+an important takeaway
+
+1636
+01:00:59,834 --> 01:01:01,901
+is that you really need to look
+at your market,
+
+1637
+01:01:01,901 --> 01:01:03,734
+look at the devices,
+and look at the technology,
+
+1638
+01:01:03,734 --> 01:01:05,734
+so you can figure out something
+that works best
+
+1639
+01:01:05,734 --> 01:01:07,567
+for the what you're
+trying to create.
+
+1640
+01:01:07,567 --> 01:01:09,400
+man: Yeah. And, like,
+I guess what the gentlemen
+
+1641
+01:01:09,400 --> 01:01:11,067
+was saying before about GWT--
+
+1642
+01:01:11,067 --> 01:01:13,567
+it was that it would great
+to be able to take GWT itself,
+
+1643
+01:01:13,567 --> 01:01:16,567
+have it export out HTML5.
+
+1644
+01:01:16,567 --> 01:01:18,567
+Um, it does a little bit
+of the exploratory
+
+1645
+01:01:18,567 --> 01:01:20,901
+on the device,
+sends it back to the server,
+
+1646
+01:01:20,901 --> 01:01:23,234
+and actually optimizes
+for that device,
+
+1647
+01:01:23,234 --> 01:01:25,734
+so that you wouldn't have
+to have that back-and-forth
+
+1648
+01:01:25,734 --> 01:01:27,734
+that you would with Modernizr
+or those other tricks
+
+1649
+01:01:27,734 --> 01:01:29,234
+that you introduced.
+
+1650
+01:01:29,234 --> 01:01:31,067
+Meier: All right then.
+Mahemoff: Good points.
+
+1651
+01:01:31,067 --> 01:01:32,734
+Thank you.
+Meier: All right.
+
+1652
+01:01:32,734 --> 01:01:34,467
+Thanks very much, everyone.
+[applause]
+

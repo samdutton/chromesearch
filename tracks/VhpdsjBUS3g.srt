@@ -1,0 +1,2305 @@
+1
+00:00:02,659 --> 00:00:07,040
+>>John McCutchan: Hello, everyone. I'm John
+McCutchan. I'm part of the Chrome DevRel team
+
+2
+00:00:07,040 --> 00:00:12,360
+and my focus is on making the web fast, and
+that's what I'm hoping to teach you today:
+
+3
+00:00:12,360 --> 00:00:19,189
+How to make your page very fast with V8.
+So this talk's going to get into some pretty
+
+4
+00:00:19,189 --> 00:00:23,830
+low-level details about how V8 works and how
+you can surface some signals, so hopefully
+
+5
+00:00:23,830 --> 00:00:28,570
+that's really exciting to you because it's
+exciting to me.
+
+6
+00:00:28,570 --> 00:00:34,420
+So today I want to talk about Oz. Specifically,
+Find Your Way to Oz, the Chrome experiment
+
+7
+00:00:34,420 --> 00:00:37,950
+that came out in February.
+Let's just take a look at a video of what
+
+8
+00:00:37,950 --> 00:00:42,579
+the experience is like.
+This is all running inside the browser and
+
+9
+00:00:42,579 --> 00:00:47,320
+it's a game. There's about four games and
+it's all themed around the new Wizard of Oz
+
+10
+00:00:47,320 --> 00:00:52,829
+movie.
+So the first one is like the carnival cutout.
+
+11
+00:00:52,829 --> 00:00:59,829
+You put your face into this -- this wooden
+painting and it's using a webcam. Let me just
+
+12
+00:01:00,969 --> 00:01:07,520
+kill the ad.
+So the next one is a music box, and you can
+
+13
+00:01:07,520 --> 00:01:13,880
+actually kind of compose your own theme that,
+you know, kind of fits with the Wizard of
+
+14
+00:01:13,880 --> 00:01:16,069
+Oz theme.
+And then when you -- after you're finished,
+
+15
+00:01:16,069 --> 00:01:20,720
+when you're walking around throughout the
+Wizard of Oz, the park, it will be playing
+
+16
+00:01:20,720 --> 00:01:27,720
+the song that you've made, and this is using
+Web Audio.
+
+17
+00:01:31,690 --> 00:01:37,830
+So the next attraction at the circus is make
+your own zoetrope, and for those of you who
+
+18
+00:01:37,830 --> 00:01:42,709
+are too young to know what a zoetrope is,
+including myself, it kind of predated animation
+
+19
+00:01:42,709 --> 00:01:47,060
+in film and, you know, you kind of -- this
+thing spun around in a circle and showed you
+
+20
+00:01:47,060 --> 00:01:52,670
+a very simplistic animation like this. And
+again, this is using the webcam and capturing
+
+21
+00:01:52,670 --> 00:01:57,880
+video from your computer and then putting
+you into the game world.
+
+22
+00:01:57,880 --> 00:02:02,229
+The final attraction is really impressive.
+It's a hot air balloon ride where you have
+
+23
+00:02:02,229 --> 00:02:09,229
+to navigate this big tornado and, you know,
+kind of escape -- Find Your Way 
+to Oz.
+
+24
+00:02:13,560 --> 00:02:17,140
+So really impressive graphics. I mean, this
+looks great. There's a really in-depth article
+
+25
+00:02:17,140 --> 00:02:23,780
+on how they actually accomplished this effect,
+and it's very interesting. It kind of incorporated
+
+26
+00:02:23,780 --> 00:02:28,310
+a lot of things from how they do effects in
+film where they have like a mat painting and
+
+27
+00:02:28,310 --> 00:02:32,170
+they're kind of composing all of these different
+layers together, but it's all running with
+
+28
+00:02:32,170 --> 00:02:37,880
+WebGL.
+So this is Find Your Way to Oz. It's really
+
+29
+00:02:37,880 --> 00:02:42,030
+exciting. I recommend that you check it out.
+Like I said, it's been using -- it's using
+
+30
+00:02:42,030 --> 00:02:47,740
+all of the latest HTML5 features. It's using
+WebGL. It was developed by unit9 and this
+
+31
+00:02:47,740 --> 00:02:52,210
+was a partnership between Disney and Google,
+and unit9 did a great job. It won a few awards.
+
+32
+00:02:52,210 --> 00:02:58,830
+It's a really exciting project.
+But late in development, there was a really
+
+33
+00:02:58,830 --> 00:03:04,170
+serious performance problem and it wasn't
+a trivial problem. We were seeing something
+
+34
+00:03:04,170 --> 00:03:07,290
+that -- you know, we're looking at memory
+usage and seeing the graph along the bottom
+
+35
+00:03:07,290 --> 00:03:11,340
+here where we're just seeing like this sawtooth-like
+shape where it just keeps using more memory
+
+36
+00:03:11,340 --> 00:03:15,640
+and the garbage collection kicks in and cleans
+it up and no one could really figure this
+
+37
+00:03:15,640 --> 00:03:19,190
+out.
+This was late. This was not good. The product
+
+38
+00:03:19,190 --> 00:03:24,160
+needed to ship. Delays were a possibility
+and we really had to make sure that this -- this
+
+39
+00:03:24,160 --> 00:03:29,350
+didn't get out of hand.
+So lucky for unit9, they were able to call
+
+40
+00:03:29,350 --> 00:03:34,150
+in some performance detectives and this is
+Yacov and Yung from the V8 team and they were
+
+41
+00:03:34,150 --> 00:03:40,209
+actually able to help kind of hold unit9's
+hand and figure out what was going on inside
+
+42
+00:03:40,209 --> 00:03:44,000
+of their game.
+So I hope that you in the audience, after
+
+43
+00:03:44,000 --> 00:03:49,180
+going through this talk, will be able to do
+the same things that unit9 did that the V8
+
+44
+00:03:49,180 --> 00:03:56,180
+team taught them. So hopefully you all will
+become performance detectives by the end.
+
+45
+00:03:56,190 --> 00:04:00,319
+So before we go into what the problem was
+and how we resolved it, let's spend a few
+
+46
+00:04:00,319 --> 00:04:07,319
+minutes talking about why performance matters.
+So if we look at a typical frame in a browser,
+
+47
+00:04:09,040 --> 00:04:12,319
+the first thing that happens is you have to
+handle input. The users click something or
+
+48
+00:04:12,319 --> 00:04:17,410
+they press a button.
+After handling input, scripts start executing.
+
+49
+00:04:17,410 --> 00:04:23,030
+All the -- the state of the page gets updated,
+and actually this often triggers a layout
+
+50
+00:04:23,030 --> 00:04:28,570
+change, and so the browser has to re-lay out
+all the elements inside the page, and then
+
+51
+00:04:28,570 --> 00:04:32,500
+after this, it's got to paint all of the elements.
+They're changed the contents. What's inside
+
+52
+00:04:32,500 --> 00:04:37,410
+of there has changed. This is a lot of work.
+And then finally, it all gets composited onto
+
+53
+00:04:37,410 --> 00:04:43,930
+the screen. This just loops and you actually
+have to do this 60 times a second and you
+
+54
+00:04:43,930 --> 00:04:48,630
+have 16 milliseconds to accomplish all of
+this. If you don't, you're going to drop a
+
+55
+00:04:48,630 --> 00:04:54,660
+frame and you're going to get jank.
+So "jank" is the slang term for like kind
+
+56
+00:04:54,660 --> 00:05:00,070
+of a -- an unpleasant, unsmooth site experience.
+When you're scrolling on a page and it kind
+
+57
+00:05:00,070 --> 00:05:04,610
+of clips and it jumps, it doesn't feel smooth,
+that's jank. When you're playing an online
+
+58
+00:05:04,610 --> 00:05:08,650
+game and it drops a frame or some -- you know,
+something kind of weird happens, it pauses
+
+59
+00:05:08,650 --> 00:05:13,389
+for a second, that's jank.
+And so if you miss -- I mean, if you cannot
+
+60
+00:05:13,389 --> 00:05:18,080
+get all -- through all the steps in 16 milliseconds,
+you're going to have a janky page and users
+
+61
+00:05:18,080 --> 00:05:22,850
+don't really like that.
+So where does all this performance go? Where
+
+62
+00:05:22,850 --> 00:05:26,690
+does that 16 milliseconds -- where does it
+go?
+
+63
+00:05:26,690 --> 00:05:32,540
+So if we look at this graph here, it's kind
+of difficult to parse, but each column represents
+
+64
+00:05:32,540 --> 00:05:38,370
+a very mainstream site on the web, like Google
+Docs or Gmail or Wikipedia or something like
+
+65
+00:05:38,370 --> 00:05:44,500
+that. And what we really care about for this
+talk is the red candy-striped section along
+
+66
+00:05:44,500 --> 00:05:47,360
+the bottom.
+This is actually the time that your page is
+
+67
+00:05:47,360 --> 00:05:54,360
+spending inside V8.
+And what we see is that, you know, for Google
+
+68
+00:05:54,840 --> 00:06:00,860
+Apps, when the page isn't idle, we're actually
+spending between 50 to 70% of the time inside
+
+69
+00:06:00,860 --> 00:06:06,699
+idle. And for other popular sites, it's in
+the range of 20 to 40%.
+
+70
+00:06:06,699 --> 00:06:13,699
+So of that 16 milliseconds, a Google app is
+spending 50% of it, at least, executing scripts.
+
+71
+00:06:17,720 --> 00:06:22,220
+So performance matters because you want your
+site to grow. You want to attract more users,
+
+72
+00:06:22,220 --> 00:06:24,610
+and users care about the performance of the
+site.
+
+73
+00:06:24,610 --> 00:06:27,919
+In particular, it's been highlighted, you
+know, in recent times with battery life. If
+
+74
+00:06:27,919 --> 00:06:31,960
+you go to a page that performs poorly, the
+-- you know, the battery in your mobile device
+
+75
+00:06:31,960 --> 00:06:35,949
+is going to drain quicker and people are going
+to stop coming back because it's just not
+
+76
+00:06:35,949 --> 00:06:41,270
+the greatest experience.
+Users also want smoother applications. They
+
+77
+00:06:41,270 --> 00:06:45,479
+want that, like, smooth experience when they
+scroll. They want their game to run flawlessly
+
+78
+00:06:45,479 --> 00:06:50,300
+and never have a hiccup on any frame. And
+they want more features. All of these things
+
+79
+00:06:50,300 --> 00:06:54,229
+-- it's actually kind of difficult to satisfy
+these requests, because they're all sort of
+
+80
+00:06:54,229 --> 00:06:57,830
+competing with each other.
+But you as the developer, you have to satisfy
+
+81
+00:06:57,830 --> 00:07:02,389
+all of these requests. It's -- you want to
+maximize battery life, you want the smoothest
+
+82
+00:07:02,389 --> 00:07:05,740
+application, and you want the most featureful
+application. And without that, you're not
+
+83
+00:07:05,740 --> 00:07:11,100
+going to see a really strong growth in the
+traffic to your site.
+
+84
+00:07:11,100 --> 00:07:15,169
+So let's get back to the mystery and dig in
+a little bit.
+
+85
+00:07:15,169 --> 00:07:19,630
+So solving a performance problem is actually
+a lot like solving a crime. The first thing
+
+86
+00:07:19,630 --> 00:07:22,690
+you have to do is you have to dig in and get
+-- collect some evidence and really figure
+
+87
+00:07:22,690 --> 00:07:26,960
+out what's happening.
+And then from the evidence, you're going to
+
+88
+00:07:26,960 --> 00:07:31,680
+find some suspects, and you're going to kind
+of interrogate the suspects and figure out
+
+89
+00:07:31,680 --> 00:07:35,259
+like which one of them is likely responsible
+for your performance problem.
+
+90
+00:07:35,259 --> 00:07:39,240
+And then finally, you're going to go into
+the forensics lab and really prove that they're
+
+91
+00:07:39,240 --> 00:07:43,150
+responsible and dig up some information that
+will hopefully let you solve the crime and
+
+92
+00:07:43,150 --> 00:07:47,660
+fix the performance problem.
+So let's get started on the -- the mystery
+
+93
+00:07:47,660 --> 00:07:54,660
+that the unit9 team faced with Oz.
+So evidence collection. You want to start
+
+94
+00:07:57,850 --> 00:08:01,860
+off asking some pretty fundamental questions
+about the site that you're looking at. If
+
+95
+00:08:01,860 --> 00:08:05,509
+it's your site, then you can probably very
+quickly zoom through this, but if you're helping
+
+96
+00:08:05,509 --> 00:08:10,300
+someone else, then you really -- it might
+seem silly to start at such a basic question,
+
+97
+00:08:10,300 --> 00:08:12,690
+but it's important to contextualize what you're
+doing.
+
+98
+00:08:12,690 --> 00:08:18,320
+So the -- Oz is a real-time interactive 3D
+game. It's taking advantage of WebGL. It has
+
+99
+00:08:18,320 --> 00:08:25,320
+to run smooth. It has to fit that 16-millisecond
+time slice or else it's going to perform badly.
+
+100
+00:08:26,860 --> 00:08:31,130
+So the next question you want to ask yourself,
+are the developers following the best practices?
+
+101
+00:08:31,130 --> 00:08:36,639
+If they're not, then the likely solution to
+the performance problem is probably something
+
+102
+00:08:36,639 --> 00:08:40,659
+really simple. They probably just aren't aware
+of the best practices and are making some
+
+103
+00:08:40,659 --> 00:08:46,100
+silly error and it's great. You can fix it
+in no time.
+
+104
+00:08:46,100 --> 00:08:50,279
+But unit9 are really good developers and they
+were following the best practices and they
+
+105
+00:08:50,279 --> 00:08:53,910
+were well-read and they were up-to-date on
+all of the things that you have to do to make
+
+106
+00:08:53,910 --> 00:08:58,819
+a really smooth and, you know, impressive
+3D game in the browser.
+
+107
+00:08:58,819 --> 00:09:04,589
+So it wasn't something simple. I mean, why
+would I be here talking about if it was such
+
+108
+00:09:04,589 --> 00:09:11,050
+a trivial problem?
+So specifically what kind of performance problem
+
+109
+00:09:11,050 --> 00:09:14,800
+are you seeing? And when you're at this stage
+in your investigation, you want to really
+
+110
+00:09:14,800 --> 00:09:20,209
+kind of nail it down because this is going
+to lead you to suspects. And specifically,
+
+111
+00:09:20,209 --> 00:09:26,910
+they were seeing once per second the frame
+rate dropped significantly. And to add a little
+
+112
+00:09:26,910 --> 00:09:30,769
+bit of extra information to it, it was actually
+correlated with GC activity.
+
+113
+00:09:30,769 --> 00:09:34,490
+So right when the frame rate dropped, they
+actually saw that the -- there was a lot of
+
+114
+00:09:34,490 --> 00:09:39,269
+GC activity. Garbage collector was running.
+So that gives you a bit of a clue as to maybe
+
+115
+00:09:39,269 --> 00:09:46,269
+where should you start your investigation.
+We're seeing a frame rate drop with GC activity.
+
+116
+00:09:46,360 --> 00:09:50,869
+And in particular, the GC activity was massive.
+Once per second. 10 megabytes of garbage was
+
+117
+00:09:50,869 --> 00:09:56,279
+being collected. And so you want to ask yourself,
+"Is 10 megabytes per second of garbage expected?"
+
+118
+00:09:56,279 --> 00:10:01,249
+Because in some applications, this might be
+-- that might be a reasonable amount of garbage.
+
+119
+00:10:01,249 --> 00:10:06,679
+In this case, it's not.
+They should be generating almost no garbage
+
+120
+00:10:06,679 --> 00:10:10,999
+per second. And that was what the developers'
+expectations were. So something really strange
+
+121
+00:10:10,999 --> 00:10:17,980
+was happening and we really needed to figure
+it out. So to help us come up with suspects,
+
+122
+00:10:17,980 --> 00:10:23,300
+we need to understand what triggers a garbage
+collection, because if we're seeing a correlation
+
+123
+00:10:23,300 --> 00:10:28,069
+with a performance drop with garbage collection,
+we have to understand why garbage collection
+
+124
+00:10:28,069 --> 00:10:35,069
+happens.
+So let's walk through V8 memory management
+
+125
+00:10:37,529 --> 00:10:42,550
+in a bit more detail and walk through a GC
+pause.
+
+126
+00:10:42,550 --> 00:10:47,829
+So to help understand the performance characteristics
+of a GC pause, we have to understand where
+
+127
+00:10:47,829 --> 00:10:52,910
+the cost in allocated memory comes from, and
+it's not in allocating the memory itself.
+
+128
+00:10:52,910 --> 00:10:57,749
+That's actually really cheap. It's incredibly
+fast to allocate memory in V8.
+
+129
+00:10:57,749 --> 00:11:02,800
+The performance problem -- the cost of allocating
+memory actually comes after a while you've
+
+130
+00:11:02,800 --> 00:11:06,550
+allocated enough objects and you've actually
+exhausted the memory pool.
+
+131
+00:11:06,550 --> 00:11:11,209
+So at that point the V8 runtime is forced
+to run a garbage collection and this can take
+
+132
+00:11:11,209 --> 00:11:15,319
+milliseconds. And if we remember, like you
+have 16 milliseconds to get through the entire
+
+133
+00:11:15,319 --> 00:11:22,319
+frame. You spend 5 of it doing a GC, you've
+lost your frame. You cannot recover from that.
+
+134
+00:11:24,019 --> 00:11:28,209
+So V8 manages memory in a generational split.
+So values are split between young and old
+
+135
+00:11:28,209 --> 00:11:32,249
+and their age is actually kind of estimated
+based on the number of garbage collections
+
+136
+00:11:32,249 --> 00:11:37,050
+in which they survive.
+So as an object lives through collections,
+
+137
+00:11:37,050 --> 00:11:41,119
+it gets older.
+And over time, the older values are promoted
+
+138
+00:11:41,119 --> 00:11:48,119
+from the young generation to the old generation.
+So the young generation offers really fast
+
+139
+00:11:48,439 --> 00:11:54,959
+allocation, which I've already stated. Collection
+is fast in relation to the cost of an old
+
+140
+00:11:54,959 --> 00:11:59,529
+generation collection. And it's frequently
+collected. When you're using the Chrome DevTools
+
+141
+00:11:59,529 --> 00:12:06,089
+Timeline panel and you see a GC event, as
+you can see on the slide here that's the young
+
+142
+00:12:06,089 --> 00:12:12,049
+generation being collected.
+In contrast, the old generation offers fast
+
+143
+00:12:12,049 --> 00:12:17,100
+allocation, but relative to young generation,
+the collection is slower. Luckily, though,
+
+144
+00:12:17,100 --> 00:12:21,379
+it happens infrequently.
+And part of that collection actually runs
+
+145
+00:12:21,379 --> 00:12:25,660
+concurrently with the mutator, which is your
+JavaScript thread. It does some incremental
+
+146
+00:12:25,660 --> 00:12:29,899
+marking and there's a few different types
+of collections that can occur in the old generation,
+
+147
+00:12:29,899 --> 00:12:34,119
+but typically when you've -- when you see
+a frame drop in your game or, you know, you
+
+148
+00:12:34,119 --> 00:12:39,149
+see weird scrolling behavior and it's a GC
+problem, it's the young generation. So let's
+
+149
+00:12:39,149 --> 00:12:45,089
+really focus on that.
+So why is collecting the young generation
+
+150
+00:12:45,089 --> 00:12:49,649
+so much faster? Well, to help you understand
+that, you have to -- you have to kind of intuitively
+
+151
+00:12:49,649 --> 00:12:54,920
+understand the cost of a GC is proportional
+to the number of live objects. So the number
+
+152
+00:12:54,920 --> 00:13:00,910
+of objects which survive the GC is how you
+can estimate how long this GC's going to take.
+
+153
+00:13:00,910 --> 00:13:06,549
+So because we split the objects into two generations,
+the young and the old, the young kind of,
+
+154
+00:13:06,549 --> 00:13:13,309
+by definition, has a very high death rate.
+Very few objects survive many young generation
+
+155
+00:13:13,309 --> 00:13:18,629
+collections. You know, in contrast, old generation
+by the very nature of what's in the old generation,
+
+156
+00:13:18,629 --> 00:13:23,339
+these objects have lived for a long time so
+you can't expect that, hey, let's do an old
+
+157
+00:13:23,339 --> 00:13:26,689
+generation collection, they're probably all
+now garbage. That doesn't make a lot of sense
+
+158
+00:13:26,689 --> 00:13:33,369
+because they've historically lived for a long
+time inside your program.
+
+159
+00:13:33,369 --> 00:13:37,069
+So let's look at how the young generation
+actually operates. So the young generation
+
+160
+00:13:37,069 --> 00:13:43,420
+is split into two semi-spaces equally sized,
+the to space and the from space.
+
+161
+00:13:43,420 --> 00:13:48,019
+Values are allocated from the to space, so
+when your JavaScript executes a new statement,
+
+162
+00:13:48,019 --> 00:13:53,199
+new foo, it pulls some memory from the to
+space. The from space is used during GC and
+
+163
+00:13:53,199 --> 00:13:57,619
+we'll get to that shortly.
+So assuming that we started with an empty
+
+164
+00:13:57,619 --> 00:14:03,589
+to space, it's all full of unallocated memory,
+page allocates Object A and then Object B,
+
+165
+00:14:03,589 --> 00:14:08,739
+and then C, and D. Everything up until this
+point is great. Things are really humming
+
+166
+00:14:08,739 --> 00:14:11,329
+along.
+But unfortunately the page then tries to allocate
+
+167
+00:14:11,329 --> 00:14:16,799
+Object E. Now, at this point we've actually
+exhausted the amount of memory in the young
+
+168
+00:14:16,799 --> 00:14:22,420
+generation and we cannot do this.
+So things back up a little bit. Object E wasn't
+
+169
+00:14:22,420 --> 00:14:26,910
+allocated because there just wasn't room for
+it. The page is paused. Everything stops.
+
+170
+00:14:26,910 --> 00:14:33,069
+The rendering stops like exactly at that line
+of code where you called new. Everything pauses.
+
+171
+00:14:33,069 --> 00:14:37,100
+A collection gets triggered. So the first
+thing in a collection is that the from and
+
+172
+00:14:37,100 --> 00:14:41,699
+the to space, they're just swapped. The labels
+are swapped. The old from space, which is
+
+173
+00:14:41,699 --> 00:14:47,079
+empty, becomes the new to space.
+The next stage is that all the live values
+
+174
+00:14:47,079 --> 00:14:54,079
+inside the young generation are discovered.
+These are marked and the next step is to copy
+
+175
+00:14:55,100 --> 00:14:57,569
+them. And this is where a lot of the time
+is actually spent. It's in this copy. And
+
+176
+00:14:57,569 --> 00:15:01,949
+this is what -- when I said earlier that the
+cost of the GC is proportional to the number
+
+177
+00:15:01,949 --> 00:15:06,489
+of objects which survive, you have to copy
+these objects across from one space to the
+
+178
+00:15:06,489 --> 00:15:09,790
+other, and this is where a lot of that time
+goes.
+
+179
+00:15:09,790 --> 00:15:15,629
+So in this example, A and C survived and we've
+copied them to the new to space and here we
+
+180
+00:15:15,629 --> 00:15:22,629
+go. The page can resume and allocate Object
+E.
+
+181
+00:15:25,109 --> 00:15:29,459
+So what you intuitively have to understand
+is that each allocation moves you closer to
+
+182
+00:15:29,459 --> 00:15:35,639
+this pause. So if you're dealing with a -- you
+know, something where timing really matters,
+
+183
+00:15:35,639 --> 00:15:40,220
+you almost want to operate under the assumption
+that you cannot allocate memory. You want
+
+184
+00:15:40,220 --> 00:15:43,019
+to kind of preallocate everything ahead of
+time.
+
+185
+00:15:43,019 --> 00:15:47,669
+Because the collection completely pauses your
+application, and this brings higher latency,
+
+186
+00:15:47,669 --> 00:15:52,359
+so just imagine that a user clicks a button
+and then right then inside your click handler
+
+187
+00:15:52,359 --> 00:15:56,999
+you allocate some new object. Boom, you've
+hit the GC pause and like these are actually
+
+188
+00:15:56,999 --> 00:16:00,929
+fields. Like "Hey, I clicked," and there's
+just this moment where nothing is happening
+
+189
+00:16:00,929 --> 00:16:05,689
+and it offers a bad user experience. In games,
+you get dropped frames. You know, ultimately
+
+190
+00:16:05,689 --> 00:16:12,689
+this just leads to unhappy users who may not
+come back to your site.
+
+191
+00:16:17,319 --> 00:16:22,019
+So now that we understand what happens in
+a GC pause and how you get to a GC pause,
+
+192
+00:16:22,019 --> 00:16:27,350
+it's time to start looking at some suspects.
+And we've got these sneaky guys right here
+
+193
+00:16:27,350 --> 00:16:34,350
+-- blue, red, and green -- who are incognito.
+So the first suspect is pretty -- you know,
+
+194
+00:16:35,609 --> 00:16:40,069
+this should really jump to your mind at this
+point -- is just calling new. Maybe Oz is
+
+195
+00:16:40,069 --> 00:16:43,879
+calling new all the time and they're just
+like allocating all of these objects throughout
+
+196
+00:16:43,879 --> 00:16:48,579
+the frame and then, like, they're triggering
+the GC pause and they haven't retained references
+
+197
+00:16:48,579 --> 00:16:51,619
+to any of these objects, so they're all just
+garbage and it gets collected and that's where
+
+198
+00:16:51,619 --> 00:16:56,389
+that 10 megs come from.
+So a careful audit of the code base confirmed
+
+199
+00:16:56,389 --> 00:17:00,149
+that there was no calls to new within the
+frame. And actually unit9 said that would
+
+200
+00:17:00,149 --> 00:17:03,529
+have been really embarrassing, and this goes
+back to them being -- they're following the
+
+201
+00:17:03,529 --> 00:17:06,660
+best practices. They're well aware of what
+they should and shouldn't be doing inside
+
+202
+00:17:06,660 --> 00:17:13,660
+their game.
+So suspect Number 2 is code running in unoptimized
+
+203
+00:17:14,940 --> 00:17:20,300
+mode. And let's talk about why this is a suspect.
+If we look at JavaScript on the slide, we
+
+204
+00:17:20,300 --> 00:17:25,550
+can see that there is some computation and
+they calculate A and B and C and then they
+
+205
+00:17:25,550 --> 00:17:32,550
+do some multiplication and update the X position
+of some sprite in the game.
+
+206
+00:17:34,460 --> 00:17:38,400
+So in unoptimized mode, there is actually
+a lot of implicit memory allocations. Why
+
+207
+00:17:38,400 --> 00:17:43,210
+we don't see any calls to new on the slide,
+there is actually behind the scenes many calls
+
+208
+00:17:43,210 --> 00:17:50,210
+to new or their equivalent.
+So, when we calculate P times D, a new object
+
+209
+00:17:50,420 --> 00:17:57,100
+is allocated. Similarly, for C plus 3 and
+3.3 times dt, new objects are being allocated
+
+210
+00:17:57,100 --> 00:18:00,350
+at each one of these points. It is not clear
+to you as a developer when you are looking
+
+211
+00:18:00,350 --> 00:18:03,870
+at the code, but this is actually what's happening
+behind the scenes.
+
+212
+00:18:03,870 --> 00:18:09,110
+And then even when we calculate A times B,
+it is not assigned anywhere; but, still, memory
+
+213
+00:18:09,110 --> 00:18:13,740
+is reserved for the result.
+And then the result there is multiplied with
+
+214
+00:18:13,740 --> 00:18:20,650
+C. More memory is allocated.
+In contrast, if this function was running
+
+215
+00:18:20,650 --> 00:18:25,540
+in optimized mode, there would actually only
+be a single memory allocation and that's what
+
+216
+00:18:25,540 --> 00:18:29,420
+the final result is assigned to the field
+inside the object.
+
+217
+00:18:29,420 --> 00:18:33,500
+You can see that there is a huge difference
+between the amount of memory that is churned
+
+218
+00:18:33,500 --> 00:18:39,080
+through in unoptimized mode compared to optimized
+mode.
+
+219
+00:18:39,080 --> 00:18:46,080
+And actually V8 recently optimized for this
+case so only the first time that X is updated
+
+220
+00:18:46,290 --> 00:18:53,290
+will memory be allocated. So it has got even
+better.
+
+221
+00:18:54,420 --> 00:18:58,920
+So let's walk through, like, how you transition
+between unoptimized mode and optimized mode
+
+222
+00:18:58,920 --> 00:19:03,220
+and exactly kind of what's the state machine
+under the hood.
+
+223
+00:19:03,220 --> 00:19:08,420
+So all code starts off unoptimized. The first
+time your function runs, it is always going
+
+224
+00:19:08,420 --> 00:19:12,720
+to be unoptimized. That's fine. After a little
+while though, V8 will say, Hey, this function
+
+225
+00:19:12,720 --> 00:19:19,390
+is actually pretty hot, meaning it is executing
+a lot. And it is going to attempt to optimize
+
+226
+00:19:19,390 --> 00:19:23,100
+that function. So it is going to transition
+from the unoptimized state to the optimized
+
+227
+00:19:23,100 --> 00:19:28,860
+state. But as is kind of natural in JavaScript,
+there is occasionally some deoptimization
+
+228
+00:19:28,860 --> 00:19:34,790
+events. Some assumption that was baked into
+the optimization has been violated so then
+
+229
+00:19:34,790 --> 00:19:38,730
+the function gets kicked back over to the
+unoptimized state.
+
+230
+00:19:38,730 --> 00:19:43,850
+This is actually okay. This kind of naturally
+happens throughout JavaScript's execution
+
+231
+00:19:43,850 --> 00:19:47,720
+lifetime. And then, again, after a little
+while, V8 says, You know what? I have got
+
+232
+00:19:47,720 --> 00:19:50,900
+some better information with this function.
+It is still pretty hot. Let me try to optimize
+
+233
+00:19:50,900 --> 00:19:56,530
+it in a better way so we can handle both of
+the cases that we've seen so far.
+
+234
+00:19:56,530 --> 00:20:02,660
+Unfortunately, what happens is that after
+too many de-optimizations, your function actually
+
+235
+00:20:02,660 --> 00:20:06,980
+just gets sent down to unoptimized hell and
+you never get to escape. Like, once you are
+
+236
+00:20:06,980 --> 00:20:11,730
+in this place, that's it, you are always going
+to run in unoptimized mode.
+
+237
+00:20:11,730 --> 00:20:17,240
+There are also other ways to get into unoptimized
+hell. You can use certain code constructs.
+
+238
+00:20:17,240 --> 00:20:22,070
+We will see an example in a little bit. But
+if your function has a try catch block in
+
+239
+00:20:22,070 --> 00:20:27,410
+it, V8 today just doesn't optimize for that.
+So right away as soon as the function is seen
+
+240
+00:20:27,410 --> 00:20:32,970
+by V8, it just gets slotted into, you know,
+permanently unoptimized state and it is just
+
+241
+00:20:32,970 --> 00:20:36,620
+going to sit there.
+These constructs could be optimized for, but
+
+242
+00:20:36,620 --> 00:20:41,790
+it just hasn't been a priority up to this
+point.
+
+243
+00:20:41,790 --> 00:20:46,470
+So we've definitely got a potential suspect
+here. It's possible that some code inside
+
+244
+00:20:46,470 --> 00:20:52,050
+Oz is running in unoptimized mode. And, you
+know, there actually is no way to surface
+
+245
+00:20:52,050 --> 00:20:56,680
+this using Chrome DevTools. You can't figure
+out just looking inside the dev panel, Hey,
+
+246
+00:20:56,680 --> 00:21:01,030
+this function is unoptimized. Let's fix it.
+So we have a potential suspect.
+
+247
+00:21:01,030 --> 00:21:06,580
+So the third suspect is a common JavaScript
+performance strap and that's actually modifying
+
+248
+00:21:06,580 --> 00:21:13,030
+object shape. So if we -- V8 behind the scenes
+creates these hidden classes for objects.
+
+249
+00:21:13,030 --> 00:21:18,860
+So the point constructor assigns the X field
+and then the Y field. And that -- that order,
+
+250
+00:21:18,860 --> 00:21:23,710
+the sequence of assigning the fields in the
+constructor generates the class ID. So A little
+
+251
+00:21:23,710 --> 00:21:30,410
+bit later on after constructing P, somewhere
+in the program, someone just adds a new field
+
+252
+00:21:30,410 --> 00:21:33,640
+to the P object, which is completely fine
+inside JavaScript.
+
+253
+00:21:33,640 --> 00:21:40,640
+But that new field inside P, that instance,
+creates a new class ID. So this is going to
+
+254
+00:21:40,690 --> 00:21:47,240
+trigger a deoptimization.
+So let's walk through kind of what happens.
+
+255
+00:21:47,240 --> 00:21:51,800
+This calls back to that state machine we were
+just looking at. So at first we see this point
+
+256
+00:21:51,800 --> 00:21:56,530
+object, the class ID for it. And code is running
+in unoptimized state because it is the beginning
+
+257
+00:21:56,530 --> 00:22:00,820
+of execution and that's expected.
+So after a little bit of time, V8 detects
+
+258
+00:22:00,820 --> 00:22:07,820
+that some functions using point are hot and
+let's optimize for them. But then the shape
+
+259
+00:22:08,240 --> 00:22:11,470
+is modified. And this point prime class is
+created.
+
+260
+00:22:11,470 --> 00:22:16,360
+So now there's two point classes kind of floating
+around inside the internal state of V8. There's
+
+261
+00:22:16,360 --> 00:22:23,100
+point with XY and there is point with XYZ.
+So the next time a call site sees this point
+
+262
+00:22:23,100 --> 00:22:27,690
+prime class when it is expecting a point class,
+it actually de-optimizes and we go across
+
+263
+00:22:27,690 --> 00:22:34,440
+that graph back to the unoptimized state.
+But after a little while, the code is optimized
+
+264
+00:22:34,440 --> 00:22:41,440
+to support both point and point prime classes.
+So, again, a careful audit confirmed there
+
+265
+00:22:42,360 --> 00:22:46,630
+were no shape changes. This is a really common
+JavaScript performance trap. And, again, the
+
+266
+00:22:46,630 --> 00:22:53,030
+unit9 guys were really well-read. So it is
+not surprising that this was not the problem.
+
+267
+00:22:53,030 --> 00:22:59,000
+And in some ways, suspect Number 3 is a special
+case of suspect Number 2.
+
+268
+00:22:59,000 --> 00:23:03,530
+So suspect Number 1, calling new, its alibi,
+wasn't even at the crime scene. No one was
+
+269
+00:23:03,530 --> 00:23:07,140
+doing that.
+Suspect Number 2 has no alibi. So it seems
+
+270
+00:23:07,140 --> 00:23:11,800
+like a pretty likely suspect at this point.
+And the third one, suspect Number 3, shape
+
+271
+00:23:11,800 --> 00:23:15,790
+change, again, not at the crime scene so we
+are really narrowing in. It really seems likely
+
+272
+00:23:15,790 --> 00:23:20,610
+that a big chunk of code is running in unoptimized
+mode. And now we need to get to the lab and
+
+273
+00:23:20,610 --> 00:23:26,260
+prove this.
+So there is a lot of tools that you can use
+
+274
+00:23:26,260 --> 00:23:29,830
+to help diagnose and really dig into performance
+problems.
+
+275
+00:23:29,830 --> 00:23:33,630
+First is Chrome DevTools. And that's the panel
+that you can bring up inside Chrome, and it
+
+276
+00:23:33,630 --> 00:23:38,240
+ships with Chrome. But this is a real performance
+mystery, so we're just going to jump right
+
+277
+00:23:38,240 --> 00:23:43,660
+past it. We are already past Chrome DevTools.
+The next is about tracing. And this is a really
+
+278
+00:23:43,660 --> 00:23:49,730
+great tool for diagnosing the internal GPU
+state inside Chrome and some other really
+
+279
+00:23:49,730 --> 00:23:54,800
+low-level information. But, again, like, we're
+past this. This is a really strange performance
+
+280
+00:23:54,800 --> 00:23:59,000
+problem.
+So we've got to jump right down to the nitty-gritty.
+
+281
+00:23:59,000 --> 00:24:04,370
+We have got to go to the V8 tools. The V8
+tools actually ship with V8 source code. So
+
+282
+00:24:04,370 --> 00:24:08,630
+if you want to use these tools, you have to
+go to Google code and grab V8 and compile
+
+283
+00:24:08,630 --> 00:24:13,480
+it and then you get access to these tools.
+As we will see, these tools were necessary
+
+284
+00:24:13,480 --> 00:24:19,450
+to diagnose this performance problem.
+So what we want to do is we want to confirm
+
+285
+00:24:19,450 --> 00:24:26,450
+that unoptimized code is running and then
+determine why that code isn't being optimized.
+
+286
+00:24:26,550 --> 00:24:30,280
+So the first thing we want to do is we want
+to capture a V8 timeline. And the way you
+
+287
+00:24:30,280 --> 00:24:36,680
+do that is you run Chrome with this crazy
+command line flag, Chrome, no Sandbox, JS
+
+288
+00:24:36,680 --> 00:24:41,710
+flags, prof, noprof2-lazy, log-timer events.
+Kind of strange but it gives you a lot of
+
+289
+00:24:41,710 --> 00:24:46,190
+really good information.
+So after running Chrome with this and you
+
+290
+00:24:46,190 --> 00:24:49,320
+run your site for a little while, you close
+it down. Inside the directory that you launched
+
+291
+00:24:49,320 --> 00:24:53,880
+Chrome from will be a v8.logfile. This is
+a text file which you are free to open up
+
+292
+00:24:53,880 --> 00:24:58,520
+and look inside but it is a little bit cryptic.
+So V8 ships with some tools that will parse
+
+293
+00:24:58,520 --> 00:25:04,200
+this logfile and generate really useful information
+for you.
+
+294
+00:25:04,200 --> 00:25:09,370
+So after running plot timer events on the
+log, you are going to get a PNG that actually
+
+295
+00:25:09,370 --> 00:25:14,460
+shows you a big timeline of the state of V8
+and what's happening. So let's kind of walk
+
+296
+00:25:14,460 --> 00:25:21,460
+through what's in this diagram here.
+So along the left-hand side are rows representing
+
+297
+00:25:23,190 --> 00:25:28,600
+different states that V8 is executing in.
+And you will see a colored vertical tick whenever
+
+298
+00:25:28,600 --> 00:25:34,550
+V8 is in that state. So along the top is some
+different garbage collector states. And I
+
+299
+00:25:34,550 --> 00:25:39,320
+have arrowed out the scavenger, and that's
+the young generation collection.
+
+300
+00:25:39,320 --> 00:25:44,740
+Along the bottom there, you can see the V8.execute
+state and that's when it is executing script
+
+301
+00:25:44,740 --> 00:25:49,990
+code. You will see, though, where the blue
+line for the scavenger, you can actually see
+
+302
+00:25:49,990 --> 00:25:54,890
+that there is a blank spot on the execute.
+And this fits with our understanding of the
+
+303
+00:25:54,890 --> 00:26:01,890
+way GC works. When GC is active, your script
+isn't executing.
+
+304
+00:26:01,980 --> 00:26:07,350
+So along the middle is this colored band showing
+you the code kind. And this is really helpful
+
+305
+00:26:07,350 --> 00:26:12,300
+because we suspect that we're running some
+unoptimized code and looking at the timeline.
+
+306
+00:26:12,300 --> 00:26:16,950
+It really does look like we are.
+So the bright green is optimized code. So
+
+307
+00:26:16,950 --> 00:26:22,320
+when you see that across, you know that everything
+executing across those ticks is optimized.
+
+308
+00:26:22,320 --> 00:26:28,350
+What we see in the graph is we see this blue-purply
+kind of color, and this is unoptimized code.
+
+309
+00:26:28,350 --> 00:26:33,770
+And it is executing in different stubs and
+different runtime methods inside V8.
+
+310
+00:26:33,770 --> 00:26:40,340
+So it looks like our hunch was correct and
+that we are executing some unoptimized code.
+
+311
+00:26:40,340 --> 00:26:46,380
+So if we look at the transition where we switch
+from running optimized code to unoptimized
+
+312
+00:26:46,380 --> 00:26:50,680
+code, it might be difficult to see on the
+slides because that's a little bit blown out.
+
+313
+00:26:50,680 --> 00:26:55,680
+But you can actually see that there is a whole
+bunch of scavenges across that time slice.
+
+314
+00:26:55,680 --> 00:26:59,330
+You can actually see there are little gaps
+in the execution that fit perfectly with when
+
+315
+00:26:59,330 --> 00:27:03,390
+these scavengers were occurring.
+So here we are. Oz is running smoothly. And
+
+316
+00:27:03,390 --> 00:27:07,270
+then we are at that one-second mark and it
+hiccups down and it starts running unoptimized
+
+317
+00:27:07,270 --> 00:27:11,250
+code for some reason. And we can see that
+there is all these scavenges, and this fits
+
+318
+00:27:11,250 --> 00:27:18,250
+exactly with what we saw inside Chrome DevTools.
+Another really helpful piece of information
+
+319
+00:27:18,900 --> 00:27:23,480
+inside the timeline is this graph along the
+bottom. And this is the pause times graph.
+
+320
+00:27:23,480 --> 00:27:26,990
+So you can see at the beginning, there is
+actually a whole bunch of pause times. You
+
+321
+00:27:26,990 --> 00:27:30,990
+can see these black vertical bars sticking
+up on the bottom on the left-hand side. That's
+
+322
+00:27:30,990 --> 00:27:33,270
+when it is parsing the script, and it is actually
+just getting going.
+
+323
+00:27:33,270 --> 00:27:38,520
+And then we're in optimized function time.
+You don't see any pause times there. It is
+
+324
+00:27:38,520 --> 00:27:42,570
+just this flat curve.
+And then right when we transition into running
+
+325
+00:27:42,570 --> 00:27:48,270
+unoptimized code and we see all these scavenges,
+we also see correlated spikes in pause times.
+
+326
+00:27:48,270 --> 00:27:53,200
+So you can see that the scripts have stopped
+executing right when the scavenges occur,
+
+327
+00:27:53,200 --> 00:27:59,830
+right when we transition to unoptimized code.
+So now we need to figure out what function
+
+328
+00:27:59,830 --> 00:28:03,290
+is that? I mean, we've confirmed that there's
+unoptimized code running. But we really have
+
+329
+00:28:03,290 --> 00:28:08,050
+to nail down who is responsible for it.
+So, again, we run Chrome with the same command
+
+330
+00:28:08,050 --> 00:28:13,820
+line flags but this time we take the V8 log
+and we run the Mac tick processor. And so
+
+331
+00:28:13,820 --> 00:28:18,550
+when you download V8 and you build it, you
+are going to get a tick processor for whatever
+
+332
+00:28:18,550 --> 00:28:22,330
+platform you build it on. So there is a Windows
+one, a Linux one. In this case, we are on
+
+333
+00:28:22,330 --> 00:28:26,620
+a Mac so we will run the Mac tick processor.
+When you run that on the V8 log, you actually
+
+334
+00:28:26,620 --> 00:28:33,620
+get this nice helpful table of functions sorted
+by how frequently they're seen by the profiler.
+
+335
+00:28:35,440 --> 00:28:41,380
+So next to drawsprites, you see this asterisk;
+and that indicates that the function in question
+
+336
+00:28:41,380 --> 00:28:47,620
+is optimized. But if we look at the top, this
+is the function that is running the most -- most
+
+337
+00:28:47,620 --> 00:28:52,890
+often in the profile capture. Updatesprites
+doesn't have a asterisk next to it. So this
+
+338
+00:28:52,890 --> 00:28:59,240
+seems like the likely culprit here. Something
+in updatesprites is causing it not to be optimized.
+
+339
+00:28:59,240 --> 00:29:03,000
+And so let's try to figure out what's going
+on.
+
+340
+00:29:03,000 --> 00:29:08,340
+So, how can we determine why a function is
+not optimized? This is actually where it gets
+
+341
+00:29:08,340 --> 00:29:13,390
+a little hairy. You run Chrome with a different
+set of flags you run with trace deopt and
+
+342
+00:29:13,390 --> 00:29:17,800
+trace opt verbose.
+What happens is actually a lot of text just
+
+343
+00:29:17,800 --> 00:29:21,790
+gets dumped to the terminal that you launched
+Chrome from. It is just this wall of text.
+
+344
+00:29:21,790 --> 00:29:25,800
+You likely want to pipe it to a text file
+and look at it later on.
+
+345
+00:29:25,800 --> 00:29:30,900
+But digging through that, we looked for updatesprites
+and we actually found that, Hey, here's this
+
+346
+00:29:30,900 --> 00:29:36,160
+line that says "disabled optimization for
+updatesprites, reason: Forinstatement is not
+
+347
+00:29:36,160 --> 00:29:39,640
+the fast case."
+It seems kind of cryptic at this point, but
+
+348
+00:29:39,640 --> 00:29:43,620
+I think when we look at the source code of
+updatesprites, we might get a better idea
+
+349
+00:29:43,620 --> 00:29:50,620
+of what's going on.
+So, here's equivalent of the problem code
+
+350
+00:29:54,660 --> 00:30:01,660
+in Oz. We have this function updatesprites.
+And it just iterates using a for-in loop across
+
+351
+00:30:01,720 --> 00:30:06,230
+the sprites array. And then inside of this
+loop, it just does a bunch of arithmetic.
+
+352
+00:30:06,230 --> 00:30:10,500
+And if we remember earlier, when you are running
+in unoptimized mode and you are performing
+
+353
+00:30:10,500 --> 00:30:14,620
+arithmetic, you actually are allocating all
+of these objects, like, just for temporary
+
+354
+00:30:14,620 --> 00:30:21,620
+values that aren't being stored anywhere.
+And here we see this for-in statement. And
+
+355
+00:30:22,250 --> 00:30:26,860
+this function was not being optimized specifically
+because of this loop construct.
+
+356
+00:30:26,860 --> 00:30:31,100
+And earlier when I was showing you the diagram
+of the different states that your functions
+
+357
+00:30:31,100 --> 00:30:36,340
+can be in inside V8, there is way to get into
+unoptimized hell by just using a code construct
+
+358
+00:30:36,340 --> 00:30:41,130
+that V8 doesn't optimize for today. It is
+not that V8 can't optimize for it, but it
+
+359
+00:30:41,130 --> 00:30:46,730
+just hasn't yet.
+So this seems like we've kind of found our
+
+360
+00:30:46,730 --> 00:30:51,360
+suspect here. It is this single line of code,
+is triggering V8 to say, You know what? I
+
+361
+00:30:51,360 --> 00:30:54,510
+can't optimize this. I will just treat it
+as an unoptimized function.
+
+362
+00:30:54,510 --> 00:31:01,510
+We couldn't really have this. So, ah, yes,
+arithmetic has implicit allocations.
+
+363
+00:31:02,950 --> 00:31:07,890
+So the fix is actually really simple. You
+just move the arithmetic into its own function
+
+364
+00:31:07,890 --> 00:31:14,420
+and this function doesn't have the forinstatement
+so it can actually be optimized by V8.
+
+365
+00:31:14,420 --> 00:31:19,929
+And we can leave that for-in loop inside the
+unoptimized function and just call the updatesprite
+
+366
+00:31:19,929 --> 00:31:24,230
+method.
+So if we look at the memory of such graph
+
+367
+00:31:24,230 --> 00:31:30,230
+before and after, we can see a really clear
+difference. We're no longer seeing this huge
+
+368
+00:31:30,230 --> 00:31:35,920
+sawtooth spike up and then come down with
+a GC. We are seeing a nice, natural growth
+
+369
+00:31:35,920 --> 00:31:42,690
+curve which -- which you want to see.
+So case closed, right? I mean, we figured
+
+370
+00:31:42,690 --> 00:31:47,890
+it out. But, actually, the GC pause time was
+a bit of a red herring because the real performance
+
+371
+00:31:47,890 --> 00:31:53,520
+problem was that all this arithmetic was executing
+in unoptimized mode. That's just significantly
+
+372
+00:31:53,520 --> 00:31:57,440
+slower.
+So, the GC pause time actually led us to fixing
+
+373
+00:31:57,440 --> 00:32:04,440
+the problem but it wasn't the problem in itself.
+But it was a really, really simple fix. I
+
+374
+00:32:04,670 --> 00:32:08,000
+mean, you saw how simple it was. Just move
+the loop body into its own function. It was
+
+375
+00:32:08,000 --> 00:32:11,500
+great.
+But what was really helpful and what I hope
+
+376
+00:32:11,500 --> 00:32:17,620
+you can take away from this talk is that unit9,
+the developers who built Oz, they understood
+
+377
+00:32:17,620 --> 00:32:21,880
+how to look under the hood. They understood
+how to pull out all this information and surface
+
+378
+00:32:21,880 --> 00:32:26,950
+these signals inside V8. And they on their
+own without the help of the V8 team were able
+
+379
+00:32:26,950 --> 00:32:31,960
+to go and identify many other functions which
+would have got stuck in deoptimization hell
+
+380
+00:32:31,960 --> 00:32:38,500
+and just generally improved the performance
+of their code.
+
+381
+00:32:38,500 --> 00:32:44,970
+So in conclusion, V8 offers three tools. There's
+the timeline plot tool which is this bird's
+
+382
+00:32:44,970 --> 00:32:50,480
+eye view of V8 activity. There is the tick
+processor, which is going to give you a table
+
+383
+00:32:50,480 --> 00:32:54,710
+of hot functions. And, remember, there is
+a asterisk next to the functions which are
+
+384
+00:32:54,710 --> 00:32:59,150
+optimized. If you are running into a similar
+problem, you are going to want to look for
+
+385
+00:32:59,150 --> 00:33:03,210
+functions that lack the asterisk.
+And then the deoptimization log. This actually
+
+386
+00:33:03,210 --> 00:33:10,210
+gives you deep insight into the optimization
+state machine that we looked at previously.
+
+387
+00:33:10,610 --> 00:33:16,620
+So, solving a performance problem is just
+like solving a crime in real life. You first
+
+388
+00:33:16,620 --> 00:33:20,350
+have to start with evidence collection. And
+it is really important to ask the right questions
+
+389
+00:33:20,350 --> 00:33:27,090
+because you might start going down the path
+that leads you to no performance improvement.
+
+390
+00:33:27,090 --> 00:33:31,330
+After you've collected the right set of evidence,
+you move on to suspects. You try and narrow
+
+391
+00:33:31,330 --> 00:33:37,670
+it down to a few likely culprits. And then
+after interrogating your suspects, you want
+
+392
+00:33:37,670 --> 00:33:41,640
+to move on to the forensics lab and use these
+tools to prove your case.
+
+393
+00:33:41,640 --> 00:33:46,110
+So, of course, you want to start with Chrome
+DevTools and then maybe about tracing before
+
+394
+00:33:46,110 --> 00:33:51,110
+you get to V8. But sometimes these performance
+problems are so mysterious that the only way
+
+395
+00:33:51,110 --> 00:33:58,100
+that you're going to be able to solve them
+is by using these tools that we just covered.
+
+396
+00:33:58,100 --> 00:34:03,750
+So thank you.
+[ Applause ]
+
+397
+00:34:03,750 --> 00:34:10,750
+So don't forget to check out perf alley. And
+we have a few minutes for questions. But afterwards,
+
+398
+00:34:14,019 --> 00:34:20,519
+I will be up doing some Chrome office hours
+upstairs. If you have any questions, please
+
+399
+00:34:20,519 --> 00:34:26,220
+come to the mic.
+>>> Hi. So I'm curious if I used -- if I had
+
+400
+00:34:26,220 --> 00:34:31,809
+used a closure compiler to compile my JavaScript,
+does it automatically figure out that these
+
+401
+00:34:31,809 --> 00:34:36,869
+constructs could lead to unoptimized code
+and remove them? Or what happens?
+
+402
+00:34:36,869 --> 00:34:39,700
+>>John McCutchan: That's actually a good question
+for the closure team.
+
+403
+00:34:39,700 --> 00:34:42,419
+>>> Uh-huh.
+>>John McCutchan: But I would hope that some
+
+404
+00:34:42,419 --> 00:34:48,399
+constructs they are aware are slower. Of course,
+it varies over which JavaScript engine is
+
+405
+00:34:48,399 --> 00:34:49,589
+executing the code.
+>>> Okay.
+
+406
+00:34:49,589 --> 00:34:51,729
+>>John McCutchan: Everyone has a slightly
+different performance profile.
+
+407
+00:34:51,729 --> 00:34:56,109
+>>> I mean, is there some or any static analysis,
+some kind of tool I could put my JavaScript
+
+408
+00:34:56,109 --> 00:35:01,150
+into to tell me when I'm using constructs
+like this? Because it seems like this you
+
+409
+00:35:01,150 --> 00:35:04,480
+could have caught very easily without actually
+running it, right?
+
+410
+00:35:04,480 --> 00:35:08,230
+>>John McCutchan: Well, in some sense, yeah,
+it does kind of seem that way. You will note
+
+411
+00:35:08,230 --> 00:35:13,410
+that the message was actually -- the forinstatement
+is not the fast case. So the fact that it
+
+412
+00:35:13,410 --> 00:35:16,849
+couldn't be optimized really depended on the
+runtime behavior.
+
+413
+00:35:16,849 --> 00:35:21,640
+But I agree, it would be nice to have a static
+analysis tool that was kept current with JavaScript
+
+414
+00:35:21,640 --> 00:35:25,989
+engines because this is always changing. So
+you wouldn't want to have a tool that's a
+
+415
+00:35:25,989 --> 00:35:28,819
+year old because some of the advice might
+just be wrong.
+
+416
+00:35:28,819 --> 00:35:34,150
+>>> Right, okay. Cool.
+>>> Hi, I'm James Harding. I was wondering,
+
+417
+00:35:34,150 --> 00:35:38,619
+is there a way that you can tell V8 you are
+going to allocate a bunch of objects, especially
+
+418
+00:35:38,619 --> 00:35:42,869
+like if a user goes to a page where, like,
+the developer, like, we know that there's
+
+419
+00:35:42,869 --> 00:35:46,069
+going to be thousands of objects that are
+going to be allocated when they visit that
+
+420
+00:35:46,069 --> 00:35:48,079
+page, is there any way to sort of optimize
+that?
+
+421
+00:35:48,079 --> 00:35:52,660
+>>John McCutchan: There is no way to tell
+V8, hey, I'm going to allocate thousands of
+
+422
+00:35:52,660 --> 00:35:58,259
+objects, don't do any GC. What you could do
+is at that initial -- when the page is first
+
+423
+00:35:58,259 --> 00:36:01,670
+loading and the scripts are first executing,
+you can preallocate a lot of these objects
+
+424
+00:36:01,670 --> 00:36:06,420
+and then keep them around.
+>>> Okay, thank you.
+
+425
+00:36:06,420 --> 00:36:11,380
+>>> So this kind of goes back to the first
+question. You said that static tools probably
+
+426
+00:36:11,380 --> 00:36:15,079
+wouldn't be good because, I mean, the advice
+changes, right? I mean, the engine changes
+
+427
+00:36:15,079 --> 00:36:19,579
+and what was good before is no longer good.
+But I see that same problem with something
+
+428
+00:36:19,579 --> 00:36:24,450
+like this, right? Like, you make that change
+now, but that change that you made now is
+
+429
+00:36:24,450 --> 00:36:29,059
+no longer good in the future? Right? Because
+this changes a lot, like the V8 engine.
+
+430
+00:36:29,059 --> 00:36:32,960
+>>John McCutchan: Yeah, so it does. But what
+I'm trying to get across here is how to use
+
+431
+00:36:32,960 --> 00:36:35,730
+these tools to uncover any performance problem.
+>>> Yeah.
+
+432
+00:36:35,730 --> 00:36:38,459
+>>John McCutchan: Not just highlight this
+for-in loop.
+
+433
+00:36:38,459 --> 00:36:45,150
+>>> Right. Do you think that V8 -- I don't
+know how to say this -- is stable enough to,
+
+434
+00:36:45,150 --> 00:36:48,839
+like, justify that? Because, I mean, I wouldn't
+want to do something like this, which is quite
+
+435
+00:36:48,839 --> 00:36:55,180
+a bit of investment, to have, like, two months
+later, like -- I don't know a lot about V8.
+
+436
+00:36:55,180 --> 00:36:58,920
+Do you think it is stable enough that this
+kind of investment is worth it?
+
+437
+00:36:58,920 --> 00:37:03,519
+>>John McCutchan: Well, again, this work was
+done because the performance was bad already.
+
+438
+00:37:03,519 --> 00:37:05,549
+>>> Uh-huh.
+>>John McCutchan: So, I mean, that's the first
+
+439
+00:37:05,549 --> 00:37:09,660
+question you should ask yourself, is: Are
+things performing fine? In which case, you
+
+440
+00:37:09,660 --> 00:37:15,730
+should stop, because great, there is no problem.
+But V8 does change a lot. But I wouldn't expect
+
+441
+00:37:15,730 --> 00:37:20,920
+V8 to take something that once ran fast and
+make it run slow.
+
+442
+00:37:20,920 --> 00:37:27,509
+>>> Okay. Thanks.
+>>> Hi. I'm (saying name) from LinkedIn Mobile.
+
+443
+00:37:27,509 --> 00:37:33,069
+I'm curious, what are you guys doing with
+the Chrome DevTools to help bring better some
+
+444
+00:37:33,069 --> 00:37:38,299
+of the P analysis and performance analysis
+to node GAS? Because right now there's a lot
+
+445
+00:37:38,299 --> 00:37:40,579
+of community projects out there that kind
+of attempt to do that.
+
+446
+00:37:40,579 --> 00:37:45,559
+It would really be nice if there was a Google-blessed
+way of profiling V8 in node GAS for long-running
+
+447
+00:37:45,559 --> 00:37:48,869
+processes in memory management.
+>>John McCutchan: That would be nice, but
+
+448
+00:37:48,869 --> 00:37:53,039
+I'm not the right person to ask that question.
+I think it would be great, too. We have a
+
+449
+00:37:53,039 --> 00:37:57,349
+question at the back microphone now.
+>>> Yeah. So these tools look really cool.
+
+450
+00:37:57,349 --> 00:38:01,220
+I would like to use them. I don't particularly
+want to download V8 to do so. Do you know
+
+451
+00:38:01,220 --> 00:38:04,559
+if there are any plans to source this sort
+of information in Chrome? It seems like it
+
+452
+00:38:04,559 --> 00:38:05,809
+would be useful to Chrome --
+[ Multiple people speaking simultaneously
+
+453
+00:38:05,809 --> 00:38:07,799
+]
+>>John McCutchan: There is discussions about
+
+454
+00:38:07,799 --> 00:38:12,890
+how we can surface some of these signals into
+Chrome DevTools or maybe about tracing so
+
+455
+00:38:12,890 --> 00:38:15,730
+you don't have to go and grab the V8 source
+code.
+
+456
+00:38:15,730 --> 00:38:21,930
+But it's going to be kind of like this -- it
+is going to be a continuous transition so
+
+457
+00:38:21,930 --> 00:38:25,779
+you could still get into situations where,
+you know, we've surfaced a whole bunch of
+
+458
+00:38:25,779 --> 00:38:29,319
+signals but you still need to go and grab
+the tools to find that one signal that we
+
+459
+00:38:29,319 --> 00:38:34,609
+haven't surfaced yet. But yeah. We're aware
+of the desire to have this stuff come up into
+
+460
+00:38:34,609 --> 00:38:38,200
+DevTools.
+All right. Thank you.
+
+461
+00:38:38,200 --> 00:38:38,920
+[ Applause ]
+

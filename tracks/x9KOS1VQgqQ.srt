@@ -1,0 +1,6083 @@
+1
+00:00:00,000 --> 00:00:01,872
+
+2
+00:00:01,872 --> 00:00:04,220
+MIKE WEST: Good afternoon.
+
+3
+00:00:04,220 --> 00:00:05,190
+I hope you all had
+a good lunch.
+
+4
+00:00:05,190 --> 00:00:08,039
+I hope it was as tasty
+as mine was.
+
+5
+00:00:08,039 --> 00:00:10,850
+I'm glad you all have shown
+up for a talk like this.
+
+6
+00:00:10,850 --> 00:00:12,580
+It's relatively specific.
+
+7
+00:00:12,580 --> 00:00:15,410
+And I'm hoping that means that
+all of you are very interested
+
+8
+00:00:15,410 --> 00:00:17,010
+in the topic and will have some
+really good questions
+
+9
+00:00:17,010 --> 00:00:17,980
+afterwards.
+
+10
+00:00:17,980 --> 00:00:19,980
+This will be about 45 minutes.
+
+11
+00:00:19,980 --> 00:00:22,300
+And then I'm going to try to
+leave a good amount of time at
+
+12
+00:00:22,300 --> 00:00:24,090
+the end for questions, because
+there are a lot of things
+
+13
+00:00:24,090 --> 00:00:26,150
+going on in the extension
+space.
+
+14
+00:00:26,150 --> 00:00:28,500
+There are a lot of things that I
+think are really interesting
+
+15
+00:00:28,500 --> 00:00:30,750
+and that are going, I think,
+to have a little bit of an
+
+16
+00:00:30,750 --> 00:00:32,210
+impact on the way
+that you develop
+
+17
+00:00:32,210 --> 00:00:34,150
+extensions going forward.
+
+18
+00:00:34,150 --> 00:00:36,440
+But before we get too much into
+that, extensions are kind
+
+19
+00:00:36,440 --> 00:00:37,870
+of awesome, aren't they?
+
+20
+00:00:37,870 --> 00:00:40,980
+Extensions are great because
+they allow you to customize
+
+21
+00:00:40,980 --> 00:00:45,360
+the browser in ways that we
+simply couldn't do when we
+
+22
+00:00:45,360 --> 00:00:47,940
+distribute the browser
+to a broad audience.
+
+23
+00:00:47,940 --> 00:00:50,240
+Extensions give you the ability
+to personalize the way
+
+24
+00:00:50,240 --> 00:00:52,320
+you interact not only
+with the web but
+
+25
+00:00:52,320 --> 00:00:53,990
+with the browser itself.
+
+26
+00:00:53,990 --> 00:00:57,650
+A good example of this is me
+building this presentation.
+
+27
+00:00:57,650 --> 00:01:01,640
+I used an extension called Clear
+Cache by a guy named
+
+28
+00:01:01,640 --> 00:01:03,280
+Benjamin Bojko.
+
+29
+00:01:03,280 --> 00:01:05,379
+This is an extension that's
+really quite excellent.
+
+30
+00:01:05,379 --> 00:01:07,500
+And it's really, really good
+for web developers because
+
+31
+00:01:07,500 --> 00:01:10,770
+what it does is, you click a
+button, it clears your cache,
+
+32
+00:01:10,770 --> 00:01:13,340
+and then reloads the page that
+you're currently looking at.
+
+33
+00:01:13,340 --> 00:01:14,920
+This is really, really helpful,
+
+34
+00:01:14,920 --> 00:01:16,690
+astoundingly so, actually.
+
+35
+00:01:16,690 --> 00:01:19,370
+And what's really interesting
+about this is that it actually
+
+36
+00:01:19,370 --> 00:01:21,390
+has powers above and beyond
+what we would
+
+37
+00:01:21,390 --> 00:01:22,890
+give to a normal website.
+
+38
+00:01:22,890 --> 00:01:25,680
+It's able to actually dive deep
+down into the browser and
+
+39
+00:01:25,680 --> 00:01:28,550
+use some APIs in order
+to remove data.
+
+40
+00:01:28,550 --> 00:01:30,960
+Or, if it was a different
+extension, to change settings
+
+41
+00:01:30,960 --> 00:01:32,380
+or something along
+those lines.
+
+42
+00:01:32,380 --> 00:01:34,260
+I think we'd all be pretty
+surprised if we went to a
+
+43
+00:01:34,260 --> 00:01:36,750
+website and it suddenly cleared
+my browsing data.
+
+44
+00:01:36,750 --> 00:01:39,100
+That would be a bit odd.
+
+45
+00:01:39,100 --> 00:01:42,200
+What's interesting about these,
+however, is that we see
+
+46
+00:01:42,200 --> 00:01:44,750
+a little bit of bloat in
+the extension space.
+
+47
+00:01:44,750 --> 00:01:47,450
+We see a little bit of bloat
+in a couple of ways, two
+
+48
+00:01:47,450 --> 00:01:48,200
+distinct ways.
+
+49
+00:01:48,200 --> 00:01:51,320
+First, we see extensions that
+are actually requesting more
+
+50
+00:01:51,320 --> 00:01:54,400
+permissions than they actually
+need to do their job.
+
+51
+00:01:54,400 --> 00:01:57,280
+If we look at Clear Cache, for
+instance, we see that even
+
+52
+00:01:57,280 --> 00:01:59,970
+though it's only clearing my
+browsing data, it actually
+
+53
+00:01:59,970 --> 00:02:03,450
+requests host permissions
+to the entire internet.
+
+54
+00:02:03,450 --> 00:02:05,185
+It does this for a very
+good reason actually.
+
+55
+00:02:05,185 --> 00:02:08,160
+It does it because it wants
+to clear cookies on an
+
+56
+00:02:08,160 --> 00:02:10,100
+origin-specific basis.
+
+57
+00:02:10,100 --> 00:02:12,740
+We don't yet have an API that
+allows you to do that, which
+
+58
+00:02:12,740 --> 00:02:15,360
+means that the only mechanism
+that the developer actually
+
+59
+00:02:15,360 --> 00:02:19,150
+has at this point is to request
+a large and dangerous
+
+60
+00:02:19,150 --> 00:02:23,100
+permission in order to do a very
+small and focused task.
+
+61
+00:02:23,100 --> 00:02:25,020
+This is something that we
+definitely want to fix.
+
+62
+00:02:25,020 --> 00:02:27,320
+And there are a lot of things
+in the extension system that
+
+63
+00:02:27,320 --> 00:02:30,360
+we think we can fix
+along these lines.
+
+64
+00:02:30,360 --> 00:02:33,350
+The other area that we see
+bloated with regard to
+
+65
+00:02:33,350 --> 00:02:38,710
+extensions is the resource usage
+that extensions actually
+
+66
+00:02:38,710 --> 00:02:42,990
+use when they're active
+on your computer.
+
+67
+00:02:42,990 --> 00:02:45,240
+We'll talk a little bit about
+how we're going to try to
+
+68
+00:02:45,240 --> 00:02:48,410
+address both of these issues
+in a little bit.
+
+69
+00:02:48,410 --> 00:02:53,140
+One last thing we see in the
+extension ecosystem is the
+
+70
+00:02:53,140 --> 00:02:56,070
+fact that while extensions
+themselves are quite secure--
+
+71
+00:02:56,070 --> 00:02:59,930
+and we think we have a really
+good handle on dealing with
+
+72
+00:02:59,930 --> 00:03:02,120
+explicitly malware
+extensions--
+
+73
+00:03:02,120 --> 00:03:04,750
+we see problems with regard
+to extensions that
+
+74
+00:03:04,750 --> 00:03:06,670
+are benign but buggy.
+
+75
+00:03:06,670 --> 00:03:09,780
+This means that the extension
+itself is doing things that
+
+76
+00:03:09,780 --> 00:03:10,740
+are quite important.
+
+77
+00:03:10,740 --> 00:03:14,330
+And it's doing things in a way
+that simply opens up a hole or
+
+78
+00:03:14,330 --> 00:03:18,630
+two within the extension
+process itself.
+
+79
+00:03:18,630 --> 00:03:21,530
+This is a bit problematic
+because, as we said earlier,
+
+80
+00:03:21,530 --> 00:03:24,950
+extensions have permissions that
+go well above and beyond
+
+81
+00:03:24,950 --> 00:03:26,800
+what's available on
+the open web.
+
+82
+00:03:26,800 --> 00:03:29,680
+This makes extensions a
+juicy target indeed.
+
+83
+00:03:29,680 --> 00:03:31,580
+We'll talk a little bit about
+how we're going to address
+
+84
+00:03:31,580 --> 00:03:35,200
+that with the concept of
+Manifest Version 2.
+
+85
+00:03:35,200 --> 00:03:37,650
+Manifest Version 2 is something
+that was introduced
+
+86
+00:03:37,650 --> 00:03:41,340
+in Chrome 18 as the first set
+of breaking changes in the
+
+87
+00:03:41,340 --> 00:03:42,830
+extension system.
+
+88
+00:03:42,830 --> 00:03:45,660
+Manifest Version 2 basically
+is exactly the same as
+
+89
+00:03:45,660 --> 00:03:48,330
+Manifest Version 1 with a little
+bit of extra stuff
+
+90
+00:03:48,330 --> 00:03:50,860
+layered on top, a few
+restrictions but also a few
+
+91
+00:03:50,860 --> 00:03:51,980
+new abilities.
+
+92
+00:03:51,980 --> 00:03:55,190
+We'll talk about those now.
+
+93
+00:03:55,190 --> 00:03:57,790
+The attacks that I talked
+about earlier would look
+
+94
+00:03:57,790 --> 00:03:58,740
+something like this.
+
+95
+00:03:58,740 --> 00:03:59,930
+And these are the sorts
+of things that
+
+96
+00:03:59,930 --> 00:04:01,510
+we're trying to address.
+
+97
+00:04:01,510 --> 00:04:05,170
+Extensions dive deep into
+a web page by injecting
+
+98
+00:04:05,170 --> 00:04:06,170
+JavaScript.
+
+99
+00:04:06,170 --> 00:04:08,450
+This injected JavaScript might,
+for instance, in a
+
+100
+00:04:08,450 --> 00:04:11,430
+mapping application or a mapping
+extension look for
+
+101
+00:04:11,430 --> 00:04:13,360
+addresses on the page
+and try to do
+
+102
+00:04:13,360 --> 00:04:14,460
+something useful with them.
+
+103
+00:04:14,460 --> 00:04:15,830
+It might want to
+display a map.
+
+104
+00:04:15,830 --> 00:04:18,100
+It might want to go out to the
+Google Maps API or something
+
+105
+00:04:18,100 --> 00:04:19,640
+along those lines.
+
+106
+00:04:19,640 --> 00:04:23,140
+It grabs this information via
+inner HTML and passes it to
+
+107
+00:04:23,140 --> 00:04:25,570
+the background page
+via a message.
+
+108
+00:04:25,570 --> 00:04:28,520
+The background page or a pop-up
+or anything along those
+
+109
+00:04:28,520 --> 00:04:31,650
+lines might then try to use this
+information by injecting
+
+110
+00:04:31,650 --> 00:04:33,370
+it into the background
+page or into a
+
+111
+00:04:33,370 --> 00:04:35,960
+pop-up using inner HTML.
+
+112
+00:04:35,960 --> 00:04:38,240
+The problem happens when
+this information isn't
+
+113
+00:04:38,240 --> 00:04:41,470
+well-processed, when you don't
+really ensure that you're only
+
+114
+00:04:41,470 --> 00:04:45,210
+getting information that you can
+easily and safely inject
+
+115
+00:04:45,210 --> 00:04:46,630
+the inner HTML.
+
+116
+00:04:46,630 --> 00:04:49,860
+If, for instance, the website
+injected some script tags
+
+117
+00:04:49,860 --> 00:04:52,760
+inside of the thing your
+extension is looking for, then
+
+118
+00:04:52,760 --> 00:04:55,880
+you've got a big problem because
+at this point you've
+
+119
+00:04:55,880 --> 00:04:59,650
+just injected untrusted script
+into a high-permission area of
+
+120
+00:04:59,650 --> 00:05:00,860
+your extension.
+
+121
+00:05:00,860 --> 00:05:02,450
+This is a big problem,
+in fact.
+
+122
+00:05:02,450 --> 00:05:06,400
+It's something that a team of
+researchers at University of
+
+123
+00:05:06,400 --> 00:05:10,800
+California at Berkeley have
+found exists not really to a
+
+124
+00:05:10,800 --> 00:05:14,550
+really wide margin within
+the extension system.
+
+125
+00:05:14,550 --> 00:05:17,930
+They went through about 100
+extensions and found
+
+126
+00:05:17,930 --> 00:05:21,690
+vulnerabilities like this
+in about 40 of them.
+
+127
+00:05:21,690 --> 00:05:25,470
+However, they found that 94%
+of the vulnerabilities that
+
+128
+00:05:25,470 --> 00:05:28,480
+they found-- which included
+either loading resources over
+
+129
+00:05:28,480 --> 00:05:33,190
+HTTP as opposed to HTTPS or
+the sort of inline scripts
+
+130
+00:05:33,190 --> 00:05:34,540
+injection issue--
+
+131
+00:05:34,540 --> 00:05:37,890
+would've been solved if both of
+these issues could somehow
+
+132
+00:05:37,890 --> 00:05:39,020
+be removed.
+
+133
+00:05:39,020 --> 00:05:40,430
+We think there's a
+way to do that.
+
+134
+00:05:40,430 --> 00:05:42,780
+And I'll talk about it
+in just a moment.
+
+135
+00:05:42,780 --> 00:05:47,380
+Manifest Version 2 introduces,
+then, two large changes that
+
+136
+00:05:47,380 --> 00:05:49,790
+we think are going to help make
+the extension ecosystem
+
+137
+00:05:49,790 --> 00:05:53,150
+more secure and a couple of
+small cleanup changes.
+
+138
+00:05:53,150 --> 00:05:55,620
+The two big changes are a
+default content security
+
+139
+00:05:55,620 --> 00:05:59,070
+policy and web accessible
+resources.
+
+140
+00:05:59,070 --> 00:06:02,810
+Manifest Version 1 is, as of
+Chrome 18, deprecated.
+
+141
+00:06:02,810 --> 00:06:04,980
+We'll talk a little bit about
+the schedule that we have in
+
+142
+00:06:04,980 --> 00:06:07,210
+mind later on.
+
+143
+00:06:07,210 --> 00:06:09,370
+Manifest Version 2 is very
+easy to opt into.
+
+144
+00:06:09,370 --> 00:06:12,430
+It's simply an attribute inside
+of your manifest file.
+
+145
+00:06:12,430 --> 00:06:14,650
+You say, Manifest Version 2 and
+then we know that you're
+
+146
+00:06:14,650 --> 00:06:16,800
+opting into the new system.
+
+147
+00:06:16,800 --> 00:06:19,570
+The structural changes are
+very straightforward.
+
+148
+00:06:19,570 --> 00:06:22,060
+First of all, we've made the
+background property a little
+
+149
+00:06:22,060 --> 00:06:22,920
+bit smarter.
+
+150
+00:06:22,920 --> 00:06:26,100
+Instead of creating a background
+.html page that
+
+151
+00:06:26,100 --> 00:06:29,420
+really contains nothing except
+script, you can simply inject
+
+152
+00:06:29,420 --> 00:06:32,200
+scripts by using the scripts
+property inside background.
+
+153
+00:06:32,200 --> 00:06:35,760
+You could load a library, load
+your main.js and go without
+
+154
+00:06:35,760 --> 00:06:38,250
+actually creating an HTML page
+that doesn't do really
+
+155
+00:06:38,250 --> 00:06:41,030
+anything at all other than
+load these scripts.
+
+156
+00:06:41,030 --> 00:06:44,410
+And also, we've made some
+cleanup within the APIs
+
+157
+00:06:44,410 --> 00:06:44,890
+themselves.
+
+158
+00:06:44,890 --> 00:06:46,085
+For example, we had
+chrome.extension
+
+159
+00:06:46,085 --> 00:06:47,335
+.getTabContentses.
+
+160
+00:06:47,335 --> 00:06:49,400
+
+161
+00:06:49,400 --> 00:06:50,440
+That's not actually a typo.
+
+162
+00:06:50,440 --> 00:06:51,950
+That was part of the API.
+
+163
+00:06:51,950 --> 00:06:53,180
+We've removed that.
+
+164
+00:06:53,180 --> 00:06:55,210
+Instead, you should use
+extension get Views.
+
+165
+00:06:55,210 --> 00:06:58,660
+There are a couple of other
+places where we've combined or
+
+166
+00:06:58,660 --> 00:07:01,690
+we've removed pluralization that
+wasn't necessary, things
+
+167
+00:07:01,690 --> 00:07:02,340
+along those lines.
+
+168
+00:07:02,340 --> 00:07:04,840
+If you go to the extension
+documentation, you can see a
+
+169
+00:07:04,840 --> 00:07:09,260
+complete list of all the API
+changes that happened.
+
+170
+00:07:09,260 --> 00:07:11,740
+Let's talk, then, about the
+first of the two big changes.
+
+171
+00:07:11,740 --> 00:07:14,430
+The first one is Web Accessible
+Resources.
+
+172
+00:07:14,430 --> 00:07:17,370
+Web Accessible Resources gives
+you a mechanism of determining
+
+173
+00:07:17,370 --> 00:07:21,010
+exactly which resources inside
+your extension should be
+
+174
+00:07:21,010 --> 00:07:23,890
+available outside the context
+of your extension.
+
+175
+00:07:23,890 --> 00:07:26,880
+If you need to inject a script
+file or an image or anything
+
+176
+00:07:26,880 --> 00:07:29,930
+along these lines into a
+website, what you'll need to
+
+177
+00:07:29,930 --> 00:07:32,730
+do is actually specify
+that resource within
+
+178
+00:07:32,730 --> 00:07:34,090
+your manifest file.
+
+179
+00:07:34,090 --> 00:07:36,650
+Here we've shown web accessible
+resources
+
+180
+00:07:36,650 --> 00:07:38,740
+public.png.
+
+181
+00:07:38,740 --> 00:07:42,370
+public.png loads, private.png
+fails.
+
+182
+00:07:42,370 --> 00:07:44,950
+So at this point, you simply
+have the ability to whitelist
+
+183
+00:07:44,950 --> 00:07:48,710
+the specific resources within
+your extension that are
+
+184
+00:07:48,710 --> 00:07:51,270
+available outside the context
+of your extension.
+
+185
+00:07:51,270 --> 00:07:52,510
+This solves a couple
+of problems.
+
+186
+00:07:52,510 --> 00:07:55,710
+For instance, we've seen a lot
+of extension developers using
+
+187
+00:07:55,710 --> 00:07:59,400
+the query string on a options
+page or a background page or
+
+188
+00:07:59,400 --> 00:08:01,470
+something that gets
+loaded in order to
+
+189
+00:08:01,470 --> 00:08:02,790
+actually do some work.
+
+190
+00:08:02,790 --> 00:08:06,970
+It was then impossible to script
+that page by loading it
+
+191
+00:08:06,970 --> 00:08:09,080
+outside the context
+of the extension.
+
+192
+00:08:09,080 --> 00:08:12,810
+This will remove that sort
+of vulnerability.
+
+193
+00:08:12,810 --> 00:08:15,910
+Content Security Policy, then,
+is the second of these two
+
+194
+00:08:15,910 --> 00:08:18,550
+large changes within
+Manifest Version 2.
+
+195
+00:08:18,550 --> 00:08:20,730
+This is probably the
+biggest change.
+
+196
+00:08:20,730 --> 00:08:22,600
+And it's something that I'm
+going to spend a good amount
+
+197
+00:08:22,600 --> 00:08:26,220
+of time on walking you through
+because it's very important.
+
+198
+00:08:26,220 --> 00:08:29,250
+Content Security Policy gives
+you a mechanism of mitigating
+
+199
+00:08:29,250 --> 00:08:31,990
+the risk of cross-site scripting
+attacks by very
+
+200
+00:08:31,990 --> 00:08:35,169
+specifically whitelisting the
+origins that are allowed to
+
+201
+00:08:35,169 --> 00:08:38,429
+load resources inside of
+a certain context.
+
+202
+00:08:38,429 --> 00:08:41,860
+In this case, we're defining a
+policy for extensions that
+
+203
+00:08:41,860 --> 00:08:46,230
+enables you to determine that
+origin one-- so my website--
+
+204
+00:08:46,230 --> 00:08:47,750
+I should be able to
+load resources.
+
+205
+00:08:47,750 --> 00:08:49,840
+I should be able to load script
+from that website.
+
+206
+00:08:49,840 --> 00:08:52,770
+I shouldn't, however, be able
+to load resources from the
+
+207
+00:08:52,770 --> 00:08:54,590
+evil.example.com.
+
+208
+00:08:54,590 --> 00:08:58,030
+If somehow people were able to
+inject code into my background
+
+209
+00:08:58,030 --> 00:09:00,320
+page that tried to load
+resources from an
+
+210
+00:09:00,320 --> 00:09:03,010
+unwhitelisted origin, it
+would simply fail.
+
+211
+00:09:03,010 --> 00:09:05,080
+This gives us a good measure
+of security.
+
+212
+00:09:05,080 --> 00:09:07,220
+And it's something that we're
+really excited about, not only
+
+213
+00:09:07,220 --> 00:09:09,700
+for extensions but also
+for the open web.
+
+214
+00:09:09,700 --> 00:09:11,480
+There's going to be a really
+good talk on Friday that I
+
+215
+00:09:11,480 --> 00:09:12,990
+think you should all attend
+if you're at all
+
+216
+00:09:12,990 --> 00:09:14,280
+interested in security.
+
+217
+00:09:14,280 --> 00:09:17,590
+And really everyone should be.
+
+218
+00:09:17,590 --> 00:09:18,960
+There's a lot of
+detail on this.
+
+219
+00:09:18,960 --> 00:09:21,170
+I'm not going to go into a
+whole lot of detail about
+
+220
+00:09:21,170 --> 00:09:24,160
+Content Security Policy itself,
+how it actually works,
+
+221
+00:09:24,160 --> 00:09:26,350
+and how you define a Content
+Security Policy.
+
+222
+00:09:26,350 --> 00:09:29,330
+We've just published an article
+on HTML5Rocks, which
+
+223
+00:09:29,330 --> 00:09:31,130
+is an excellent website
+by the way.
+
+224
+00:09:31,130 --> 00:09:33,515
+If you go there, you can get
+a really good overview of
+
+225
+00:09:33,515 --> 00:09:34,720
+Content Security Policy.
+
+226
+00:09:34,720 --> 00:09:37,560
+And I think that's probably a
+good use of 10 or so minutes
+
+227
+00:09:37,560 --> 00:09:39,330
+of your time.
+
+228
+00:09:39,330 --> 00:09:41,860
+The default Content Security
+Policy that we're defining
+
+229
+00:09:41,860 --> 00:09:46,240
+within the context of Manifest
+Version 2 is script src self,
+
+230
+00:09:46,240 --> 00:09:47,920
+object src self.
+
+231
+00:09:47,920 --> 00:09:49,670
+This has a couple of impacts.
+
+232
+00:09:49,670 --> 00:09:53,490
+The basic idea is that you can
+only load script from inside
+
+233
+00:09:53,490 --> 00:09:55,890
+of the context of your
+extensions, so inside your
+
+234
+00:09:55,890 --> 00:09:58,770
+extension package coming
+from the same origin.
+
+235
+00:09:58,770 --> 00:10:02,310
+You can also only load Flash and
+other plug-in information
+
+236
+00:10:02,310 --> 00:10:04,040
+via the same mechanism.
+
+237
+00:10:04,040 --> 00:10:06,700
+So these sorts of things we
+would like you to bundle with
+
+238
+00:10:06,700 --> 00:10:08,530
+your extension when possible.
+
+239
+00:10:08,530 --> 00:10:10,410
+It has a couple of
+impacts then.
+
+240
+00:10:10,410 --> 00:10:13,580
+First, no JavaScript can be
+loaded by default from third
+
+241
+00:10:13,580 --> 00:10:14,725
+party servers.
+
+242
+00:10:14,725 --> 00:10:16,650
+No objects can be loaded
+by default
+
+243
+00:10:16,650 --> 00:10:18,240
+from third-party servers.
+
+244
+00:10:18,240 --> 00:10:19,530
+No inline JavaScript--
+
+245
+00:10:19,530 --> 00:10:20,890
+this includes script tags.
+
+246
+00:10:20,890 --> 00:10:24,140
+It also includes things like
+inline event handlers in
+
+247
+00:10:24,140 --> 00:10:25,620
+JavaScript URLs.
+
+248
+00:10:25,620 --> 00:10:29,720
+It's simply impossible, you
+see, to differentiate code
+
+249
+00:10:29,720 --> 00:10:34,650
+that was injected maliciously
+from code that was inlined in
+
+250
+00:10:34,650 --> 00:10:37,430
+your web page intentionally.
+
+251
+00:10:37,430 --> 00:10:40,220
+There is no difference between
+the two as far as the HTML
+
+252
+00:10:40,220 --> 00:10:41,230
+parser is concerned.
+
+253
+00:10:41,230 --> 00:10:43,810
+It's simply impossible to
+make that determination.
+
+254
+00:10:43,810 --> 00:10:46,170
+And the Security Policy then
+takes the safest route, which
+
+255
+00:10:46,170 --> 00:10:48,550
+is banning it entirely.
+
+256
+00:10:48,550 --> 00:10:51,130
+No eval, this is an
+interesting topic.
+
+257
+00:10:51,130 --> 00:10:53,230
+And we'll talk about it a little
+bit more later on.
+
+258
+00:10:53,230 --> 00:10:57,420
+But for the moment, by default,
+eval is disallowed.
+
+259
+00:10:57,420 --> 00:11:00,530
+This includes not only eval
+itself but also things like
+
+260
+00:11:00,530 --> 00:11:04,810
+new function, set timeout that
+uses a string, and set
+
+261
+00:11:04,810 --> 00:11:06,050
+interval that uses a string.
+
+262
+00:11:06,050 --> 00:11:08,610
+So anything that takes strings
+and converts them directly
+
+263
+00:11:08,610 --> 00:11:11,690
+into executed JavaScript is
+something that we simply can't
+
+264
+00:11:11,690 --> 00:11:16,330
+allow within the protected
+context of the extension.
+
+265
+00:11:16,330 --> 00:11:20,040
+Ideally, this means that we'll
+be free from XSS attacks
+
+266
+00:11:20,040 --> 00:11:21,950
+within the context
+of the extension.
+
+267
+00:11:21,950 --> 00:11:23,760
+That probably isn't
+completely true.
+
+268
+00:11:23,760 --> 00:11:27,190
+But Content Security Policy gets
+us a heck of a lot closer
+
+269
+00:11:27,190 --> 00:11:30,000
+to that than we are today.
+
+270
+00:11:30,000 --> 00:11:31,700
+So let's talk in a little
+bit more detail
+
+271
+00:11:31,700 --> 00:11:33,470
+about third-party resources.
+
+272
+00:11:33,470 --> 00:11:35,600
+I said that by default you
+aren't allowed to load
+
+273
+00:11:35,600 --> 00:11:37,040
+third-party resources.
+
+274
+00:11:37,040 --> 00:11:38,210
+This is the case.
+
+275
+00:11:38,210 --> 00:11:41,910
+You can, however, loosen this
+policy to include HTTPS
+
+276
+00:11:41,910 --> 00:11:44,770
+sources, that is secure
+HTTP sources as
+
+277
+00:11:44,770 --> 00:11:47,260
+opposed to HTTP sources.
+
+278
+00:11:47,260 --> 00:11:50,350
+If you go to a coffee bar and
+hook up to their wi-fi, you
+
+279
+00:11:50,350 --> 00:11:54,160
+really have no guarantee that
+anything you load over HTTP is
+
+280
+00:11:54,160 --> 00:11:55,980
+actually what the
+server sent you.
+
+281
+00:11:55,980 --> 00:11:58,590
+It's incredibly trivial to
+go in and manipulate that
+
+282
+00:11:58,590 --> 00:12:00,780
+content, injecting new content,
+
+283
+00:12:00,780 --> 00:12:02,510
+or changing it entirely.
+
+284
+00:12:02,510 --> 00:12:05,310
+HTTPS, however, is an entirely
+different story.
+
+285
+00:12:05,310 --> 00:12:08,860
+Because it's encrypted, it's
+much, much more difficult to
+
+286
+00:12:08,860 --> 00:12:12,140
+inject anything malicious
+into an HTTPS string.
+
+287
+00:12:12,140 --> 00:12:14,800
+At that point, we feel pretty
+good about allowing you to
+
+288
+00:12:14,800 --> 00:12:18,260
+load things like Google
+Analytics over HTTPS as
+
+289
+00:12:18,260 --> 00:12:19,810
+opposed to HTTP.
+
+290
+00:12:19,810 --> 00:12:22,970
+So if there are third-party
+JavaScripts that you need to
+
+291
+00:12:22,970 --> 00:12:25,780
+load within the context of your
+extension, we would ask
+
+292
+00:12:25,780 --> 00:12:29,100
+you to specify within the
+Content Security Policy that
+
+293
+00:12:29,100 --> 00:12:31,840
+you define for your extension.
+
+294
+00:12:31,840 --> 00:12:34,130
+You could write something like
+this, script src self, which
+
+295
+00:12:34,130 --> 00:12:36,930
+means you can load things from
+your own extension's origin,
+
+296
+00:12:36,930 --> 00:12:40,310
+but also https://ssl.goog
+le-analytics.com.
+
+297
+00:12:40,310 --> 00:12:43,200
+This will enable you then to
+load Google Analytics, do the
+
+298
+00:12:43,200 --> 00:12:46,230
+things you need to do with this
+external library, but do
+
+299
+00:12:46,230 --> 00:12:48,230
+it in a very safe way.
+
+300
+00:12:48,230 --> 00:12:50,710
+We'd actually, however, be
+thrilled if you locked things
+
+301
+00:12:50,710 --> 00:12:54,200
+down even further than the
+defaults that we've set.
+
+302
+00:12:54,200 --> 00:12:57,120
+You can start with a default
+source of none, and then list
+
+303
+00:12:57,120 --> 00:13:00,080
+every single type of resource
+that you need to load and the
+
+304
+00:13:00,080 --> 00:13:02,450
+origins associated with
+those resources.
+
+305
+00:13:02,450 --> 00:13:03,860
+This gives you a much--
+
+306
+00:13:03,860 --> 00:13:08,330
+a higher degree of security than
+simply using the defaults
+
+307
+00:13:08,330 --> 00:13:09,260
+that we've set.
+
+308
+00:13:09,260 --> 00:13:11,760
+The defaults take care of the
+most dangerous things, that is
+
+309
+00:13:11,760 --> 00:13:13,460
+scripts and objects.
+
+310
+00:13:13,460 --> 00:13:16,100
+But if you want to deal with
+everything else as well, we'd
+
+311
+00:13:16,100 --> 00:13:18,970
+be quite happy.
+
+312
+00:13:18,970 --> 00:13:21,000
+Inline JavaScript, however,
+is something that we
+
+313
+00:13:21,000 --> 00:13:22,230
+simply can't loosen.
+
+314
+00:13:22,230 --> 00:13:25,750
+This is actually the core of
+Content Security Policy.
+
+315
+00:13:25,750 --> 00:13:27,750
+Because you can't differentiate
+between
+
+316
+00:13:27,750 --> 00:13:31,120
+maliciously injected code and
+non-maliciously intentional
+
+317
+00:13:31,120 --> 00:13:38,930
+code, we simply can't allow this
+policy to be loosened.
+
+318
+00:13:38,930 --> 00:13:41,550
+If you have code that looks
+something like this, it's
+
+319
+00:13:41,550 --> 00:13:43,970
+actually not really best
+practice anyway, right.
+
+320
+00:13:43,970 --> 00:13:46,450
+We have JavaScript,
+CSS, and HTML.
+
+321
+00:13:46,450 --> 00:13:48,460
+But all have very different
+purposes.
+
+322
+00:13:48,460 --> 00:13:49,830
+HTML is there for markup.
+
+323
+00:13:49,830 --> 00:13:52,160
+CSS is there for your
+presentation.
+
+324
+00:13:52,160 --> 00:13:54,170
+And JavaScript is there
+for behavior.
+
+325
+00:13:54,170 --> 00:13:57,050
+Separating those out into
+separate files makes your code
+
+326
+00:13:57,050 --> 00:14:00,700
+easier to understand and is
+really best practice anyway.
+
+327
+00:14:00,700 --> 00:14:04,280
+If you haven code like this, you
+can very easily rewrite it
+
+328
+00:14:04,280 --> 00:14:05,920
+into two separate files.
+
+329
+00:14:05,920 --> 00:14:09,020
+So instead of having an inline
+event handler on a button, you
+
+330
+00:14:09,020 --> 00:14:10,230
+would have an external
+JavaScript
+
+331
+00:14:10,230 --> 00:14:11,450
+file that gets loaded.
+
+332
+00:14:11,450 --> 00:14:13,820
+This JavaScript file would hook
+up an event listener.
+
+333
+00:14:13,820 --> 00:14:15,470
+And at that point, when you
+click on the button,
+
+334
+00:14:15,470 --> 00:14:17,210
+amazingness will still happen.
+
+335
+00:14:17,210 --> 00:14:18,670
+You'll get the exact
+same effect.
+
+336
+00:14:18,670 --> 00:14:20,970
+But you'll get it in a way
+that we can ensure safe.
+
+337
+00:14:20,970 --> 00:14:24,260
+
+338
+00:14:24,260 --> 00:14:27,370
+Eval, on the other hand,
+is a bit problematic.
+
+339
+00:14:27,370 --> 00:14:30,510
+We can't really allow it by
+default because your extension
+
+340
+00:14:30,510 --> 00:14:32,400
+might be working with untrusted
+
+341
+00:14:32,400 --> 00:14:33,990
+data coming from users.
+
+342
+00:14:33,990 --> 00:14:37,370
+So user-generated data being
+potentially turned directly
+
+343
+00:14:37,370 --> 00:14:39,880
+into executed JavaScript,
+that's problematic.
+
+344
+00:14:39,880 --> 00:14:42,710
+And it's simply something that
+we can't allow within the
+
+345
+00:14:42,710 --> 00:14:44,330
+context, within this
+high-permission
+
+346
+00:14:44,330 --> 00:14:46,460
+context, of an extension.
+
+347
+00:14:46,460 --> 00:14:49,490
+We understand, however, that
+it's pretty important for a
+
+348
+00:14:49,490 --> 00:14:50,640
+couple of use cases.
+
+349
+00:14:50,640 --> 00:14:53,080
+There are a few of you that
+really, really need to use
+
+350
+00:14:53,080 --> 00:14:56,100
+eval and especially eval-like
+constructs.
+
+351
+00:14:56,100 --> 00:14:59,720
+New Function, for instance, is
+used in a wide variety of
+
+352
+00:14:59,720 --> 00:15:00,640
+templating libraries.
+
+353
+00:15:00,640 --> 00:15:01,420
+And we understand.
+
+354
+00:15:01,420 --> 00:15:04,520
+We've heard the feedback that
+that's incredibly important to
+
+355
+00:15:04,520 --> 00:15:06,950
+the way that many
+of you develop.
+
+356
+00:15:06,950 --> 00:15:09,660
+We think we have an alternative
+or a work around
+
+357
+00:15:09,660 --> 00:15:12,370
+for this that we're happy with
+and that we hope you'll be
+
+358
+00:15:12,370 --> 00:15:13,780
+happy with as well.
+
+359
+00:15:13,780 --> 00:15:17,680
+The idea is that you create a
+sandbox in which eval can
+
+360
+00:15:17,680 --> 00:15:20,320
+execute in a non
+dangerous way.
+
+361
+00:15:20,320 --> 00:15:23,110
+Let's talk a little bit about
+how that might work.
+
+362
+00:15:23,110 --> 00:15:24,200
+We have your extension.
+
+363
+00:15:24,200 --> 00:15:26,930
+And inside of your extension,
+you create an iframe.
+
+364
+00:15:26,930 --> 00:15:29,670
+This iframe is sandboxed,
+meaning that it has fewer
+
+365
+00:15:29,670 --> 00:15:32,070
+permissions than the
+extension itself.
+
+366
+00:15:32,070 --> 00:15:35,880
+We defined in the previous
+page sandbox.html.
+
+367
+00:15:35,880 --> 00:15:39,310
+We load sandbox.html
+in an iframe.
+
+368
+00:15:39,310 --> 00:15:41,210
+It's then pushed off
+into a separate
+
+369
+00:15:41,210 --> 00:15:43,010
+origin from your extension.
+
+370
+00:15:43,010 --> 00:15:45,600
+This means it doesn't have
+access to any data that your
+
+371
+00:15:45,600 --> 00:15:47,100
+extension has stored.
+
+372
+00:15:47,100 --> 00:15:50,190
+And it doesn't have access
+to the dangerous
+
+373
+00:15:50,190 --> 00:15:52,530
+chrome.star name space.
+
+374
+00:15:52,530 --> 00:15:56,400
+So any of the things that your
+extension can do, you'll need
+
+375
+00:15:56,400 --> 00:15:59,160
+to deal with the sandbox in
+much the same way that you
+
+376
+00:15:59,160 --> 00:16:01,770
+deal with content scripts
+and injected scripts.
+
+377
+00:16:01,770 --> 00:16:05,310
+You'll pass messages into the
+sandbox containing data that
+
+378
+00:16:05,310 --> 00:16:06,900
+you'd like to see processed.
+
+379
+00:16:06,900 --> 00:16:10,820
+Then you'll pass processed data
+back out of the sandbox
+
+380
+00:16:10,820 --> 00:16:14,250
+into your extension giving you
+the ability to, for instance,
+
+381
+00:16:14,250 --> 00:16:17,080
+pass on a context for a template
+and get templated
+
+382
+00:16:17,080 --> 00:16:20,380
+HTML or rendered
+HTML back out.
+
+383
+00:16:20,380 --> 00:16:23,600
+At that point, you can inject
+that HTML into your pop-up
+
+384
+00:16:23,600 --> 00:16:26,730
+page or into your background
+page without worrying about
+
+385
+00:16:26,730 --> 00:16:29,880
+whether it's dangerous or not
+because that new HTML, that
+
+386
+00:16:29,880 --> 00:16:33,590
+newly generated HTML, would
+then be executed inside a
+
+387
+00:16:33,590 --> 00:16:37,030
+context that's protected by
+Content Security Policy.
+
+388
+00:16:37,030 --> 00:16:40,090
+Even if an attacker was
+completely able to hijack
+
+389
+00:16:40,090 --> 00:16:43,310
+everything within your sandbox
+HTML file, the worst they
+
+390
+00:16:43,310 --> 00:16:46,640
+could do is present links or
+something that would be useful
+
+391
+00:16:46,640 --> 00:16:49,610
+for a user or that looks useful
+for a user to click on.
+
+392
+00:16:49,610 --> 00:16:51,300
+They couldn't actually
+execute any code.
+
+393
+00:16:51,300 --> 00:16:52,890
+They couldn't exfiltrate data.
+
+394
+00:16:52,890 --> 00:16:54,770
+At that point, we're pretty
+happy with this as a
+
+395
+00:16:54,770 --> 00:16:56,270
+compromise.
+
+396
+00:16:56,270 --> 00:16:58,900
+The code for this would look
+relatively straightforward.
+
+397
+00:16:58,900 --> 00:17:00,990
+As I said, you would inject
+an iframe-- in this case,
+
+398
+00:17:00,990 --> 00:17:04,329
+sandbox.html, which again was
+defined in the manifest file
+
+399
+00:17:04,329 --> 00:17:06,200
+as being a sandboxed file.
+
+400
+00:17:06,200 --> 00:17:10,140
+When this file is loaded, you
+would fill that iframe with
+
+401
+00:17:10,140 --> 00:17:10,970
+templating goodness.
+
+402
+00:17:10,970 --> 00:17:13,650
+So at this point, I'm using
+something like Handlebars.
+
+403
+00:17:13,650 --> 00:17:15,710
+Many of you are using different
+frameworks.
+
+404
+00:17:15,710 --> 00:17:17,880
+They would generally
+work the same way.
+
+405
+00:17:17,880 --> 00:17:22,550
+You want to inject or you want
+to code a sandboxed page that
+
+406
+00:17:22,550 --> 00:17:25,240
+contains all of this templating
+information and
+
+407
+00:17:25,240 --> 00:17:29,110
+then create sandbox.js,
+which has--
+
+408
+00:17:29,110 --> 00:17:33,270
+will basically create an API
+on top of your sandbox that
+
+409
+00:17:33,270 --> 00:17:35,810
+allows messages to be passed in
+with a certain command and
+
+410
+00:17:35,810 --> 00:17:37,240
+a certain context.
+
+411
+00:17:37,240 --> 00:17:39,420
+Then you'll be able to execute
+that information.
+
+412
+00:17:39,420 --> 00:17:41,440
+So I create a template at
+the top of the page.
+
+413
+00:17:41,440 --> 00:17:43,490
+This is just the way
+Handlebars works.
+
+414
+00:17:43,490 --> 00:17:45,600
+And then I listen for
+a message event.
+
+415
+00:17:45,600 --> 00:17:48,280
+When a message event comes in
+with the command of render,
+
+416
+00:17:48,280 --> 00:17:53,230
+then I post a message back to
+the extension containing some
+
+417
+00:17:53,230 --> 00:17:54,110
+templated data.
+
+418
+00:17:54,110 --> 00:17:58,020
+So I execute template with the
+context that I passed in.
+
+419
+00:17:58,020 --> 00:17:59,370
+This gives me new HTML.
+
+420
+00:17:59,370 --> 00:18:00,300
+I pass it back out.
+
+421
+00:18:00,300 --> 00:18:01,840
+And I can do whatever
+I want with it in a
+
+422
+00:18:01,840 --> 00:18:03,550
+relatively safe way.
+
+423
+00:18:03,550 --> 00:18:05,290
+That side would look
+like this.
+
+424
+00:18:05,290 --> 00:18:07,630
+When I click on the browser
+action, I pass information
+
+425
+00:18:07,630 --> 00:18:09,510
+into the iframe content
+window.
+
+426
+00:18:09,510 --> 00:18:12,440
+And I get the information back
+out as a message event.
+
+427
+00:18:12,440 --> 00:18:15,350
+This gives me the ability then,
+as I said, to sandbox
+
+428
+00:18:15,350 --> 00:18:16,640
+the way that eval works.
+
+429
+00:18:16,640 --> 00:18:19,360
+This means I can do the
+dangerous things.
+
+430
+00:18:19,360 --> 00:18:21,890
+But I do them in a context in
+which those things are no
+
+431
+00:18:21,890 --> 00:18:23,140
+longer dangerous.
+
+432
+00:18:23,140 --> 00:18:26,060
+
+433
+00:18:26,060 --> 00:18:28,560
+The Support Schedule for
+Manifest Version 1 is as
+
+434
+00:18:28,560 --> 00:18:30,780
+follows at the moment.
+
+435
+00:18:30,780 --> 00:18:34,510
+Chrome 21 is coming out
+mid to end of August.
+
+436
+00:18:34,510 --> 00:18:37,440
+At this point, no new extensions
+built using
+
+437
+00:18:37,440 --> 00:18:39,570
+Manifest Version 1 will
+be accepted in
+
+438
+00:18:39,570 --> 00:18:41,080
+the Chrome Web Store.
+
+439
+00:18:41,080 --> 00:18:43,510
+It's not, however, the case that
+old extensions at this
+
+440
+00:18:43,510 --> 00:18:45,280
+point will have any problems
+whatsoever.
+
+441
+00:18:45,280 --> 00:18:48,130
+Old extensions will be
+grandfathered in.
+
+442
+00:18:48,130 --> 00:18:50,290
+If you currently have an
+extension in the store that's
+
+443
+00:18:50,290 --> 00:18:52,240
+using Manifest Version
+1, you're fine
+
+444
+00:18:52,240 --> 00:18:53,030
+for a little while.
+
+445
+00:18:53,030 --> 00:18:55,570
+But this is our message
+to you.
+
+446
+00:18:55,570 --> 00:18:57,220
+Manifest Version 1
+is deprecated.
+
+447
+00:18:57,220 --> 00:19:00,085
+We really need to move to a
+system that is more secure,
+
+448
+00:19:00,085 --> 00:19:02,820
+that gives us these guarantees
+in a way that we
+
+449
+00:19:02,820 --> 00:19:04,420
+simply can't do now.
+
+450
+00:19:04,420 --> 00:19:06,750
+We've had Content Security
+Policy in the extension system
+
+451
+00:19:06,750 --> 00:19:07,600
+for a while.
+
+452
+00:19:07,600 --> 00:19:10,090
+And it simply hasn't gotten
+enough adoption for it to be
+
+453
+00:19:10,090 --> 00:19:12,830
+useful for us as a security
+mechanism.
+
+454
+00:19:12,830 --> 00:19:17,890
+We're going to need to migrate
+extensions over to the new
+
+455
+00:19:17,890 --> 00:19:18,880
+Manifest version.
+
+456
+00:19:18,880 --> 00:19:21,910
+And we're doing it with
+a schedule as follows.
+
+457
+00:19:21,910 --> 00:19:25,370
+Chrome 23, Chrome will stop
+packaging Manifest Version 1.
+
+458
+00:19:25,370 --> 00:19:28,770
+This means if you want to
+package a Manifest Version 1
+
+459
+00:19:28,770 --> 00:19:31,590
+extension for distribution
+outside the Chrome Web Store,
+
+460
+00:19:31,590 --> 00:19:33,180
+you won't be able to do it
+through Chrome anymore.
+
+461
+00:19:33,180 --> 00:19:35,600
+You'll need to write something
+on your own.
+
+462
+00:19:35,600 --> 00:19:39,660
+Some time in Q1 2013, we're
+looking at Manifest Version 1s
+
+463
+00:19:39,660 --> 00:19:42,010
+not appearing in search
+any longer.
+
+464
+00:19:42,010 --> 00:19:44,650
+This is the point at which old
+extensions are going to start
+
+465
+00:19:44,650 --> 00:19:46,610
+seeing impacts from this.
+
+466
+00:19:46,610 --> 00:19:50,040
+Some time in the middle of Q--
+of 2013, Manifest Version 1
+
+467
+00:19:50,040 --> 00:19:52,640
+items will simply be unpublished
+from the store.
+
+468
+00:19:52,640 --> 00:19:54,480
+We're going to be publishing
+warnings about this.
+
+469
+00:19:54,480 --> 00:19:56,830
+We're going to be sending
+emails out about this.
+
+470
+00:19:56,830 --> 00:19:59,580
+We're going to make it very
+clear what's going on.
+
+471
+00:19:59,580 --> 00:20:02,620
+And we're very much hoping that
+we can get you guys to
+
+472
+00:20:02,620 --> 00:20:04,300
+come along with us.
+
+473
+00:20:04,300 --> 00:20:09,810
+In 2013, whenever we're happy
+with the way things are going,
+
+474
+00:20:09,810 --> 00:20:12,380
+we'll turn off Manifest
+Version 1
+
+475
+00:20:12,380 --> 00:20:14,190
+inside of Chrome, period.
+
+476
+00:20:14,190 --> 00:20:17,290
+This means even extensions
+that are loaded within--
+
+477
+00:20:17,290 --> 00:20:19,970
+in Enterprise, for instance,
+will simply not work anymore
+
+478
+00:20:19,970 --> 00:20:21,390
+in new versions of Chrome.
+
+479
+00:20:21,390 --> 00:20:24,640
+So we're definitely looking to
+move people over relatively
+
+480
+00:20:24,640 --> 00:20:27,630
+quickly for Manifest Version
+1 to Manifest Version 2.
+
+481
+00:20:27,630 --> 00:20:29,400
+We're really looking for
+feedback about this.
+
+482
+00:20:29,400 --> 00:20:32,250
+We want to know what the pain
+points are so that we can make
+
+483
+00:20:32,250 --> 00:20:33,310
+the system better.
+
+484
+00:20:33,310 --> 00:20:35,530
+We've heard your feedback with
+regard to templating.
+
+485
+00:20:35,530 --> 00:20:38,180
+We think sandboxing is a
+good alternative there.
+
+486
+00:20:38,180 --> 00:20:40,430
+If there are other pain points
+that are really causing
+
+487
+00:20:40,430 --> 00:20:43,380
+problems in this migration, we
+really want to hear about it
+
+488
+00:20:43,380 --> 00:20:46,020
+so that we can fix it and make
+it easy for you guys to
+
+489
+00:20:46,020 --> 00:20:49,370
+migrate from one to the other.
+
+490
+00:20:49,370 --> 00:20:51,840
+We've talked a little bit about
+Manifest Version 2.
+
+491
+00:20:51,840 --> 00:20:53,400
+It's a big change.
+
+492
+00:20:53,400 --> 00:20:56,150
+It, however, has a lot of
+benefits that we think are
+
+493
+00:20:56,150 --> 00:20:57,450
+really valuable.
+
+494
+00:20:57,450 --> 00:21:01,100
+And it also is going to enable
+us to build new APIs that are
+
+495
+00:21:01,100 --> 00:21:02,080
+more targeted.
+
+496
+00:21:02,080 --> 00:21:04,570
+And these new APIs, we think,
+are going to be really
+
+497
+00:21:04,570 --> 00:21:06,100
+interesting for developers.
+
+498
+00:21:06,100 --> 00:21:08,270
+Let's talk a little bit
+about some of them.
+
+499
+00:21:08,270 --> 00:21:11,760
+So, many of the APIs that we've
+produced over the last
+
+500
+00:21:11,760 --> 00:21:14,760
+three years in the extension
+framework have been very much
+
+501
+00:21:14,760 --> 00:21:15,790
+like chainsaws.
+
+502
+00:21:15,790 --> 00:21:16,500
+They're large.
+
+503
+00:21:16,500 --> 00:21:17,320
+They're powerful.
+
+504
+00:21:17,320 --> 00:21:19,870
+But it's relatively easy to
+sever a limb if you're not
+
+505
+00:21:19,870 --> 00:21:21,030
+being careful.
+
+506
+00:21:21,030 --> 00:21:23,090
+What we'd like to produce is
+something much more like
+
+507
+00:21:23,090 --> 00:21:24,760
+X-Acto knives or scalpels--
+
+508
+00:21:24,760 --> 00:21:27,760
+something that's very fine in
+detail that gives you the
+
+509
+00:21:27,760 --> 00:21:31,180
+ability to do the things that
+you need to do, but do it in a
+
+510
+00:21:31,180 --> 00:21:33,220
+way that's much less dangerous,
+that doesn't
+
+511
+00:21:33,220 --> 00:21:36,180
+require the same permission set,
+specifically with regard
+
+512
+00:21:36,180 --> 00:21:37,920
+to host permission.
+
+513
+00:21:37,920 --> 00:21:40,170
+What we also want to do,
+however, is reduce the number
+
+514
+00:21:40,170 --> 00:21:42,250
+of resources that are
+used by extensions
+
+515
+00:21:42,250 --> 00:21:44,710
+on an ongoing basis.
+
+516
+00:21:44,710 --> 00:21:46,210
+You see here that I have--
+
+517
+00:21:46,210 --> 00:21:47,570
+and I have a lot of extensions
+installed.
+
+518
+00:21:47,570 --> 00:21:50,100
+I've basically installed every
+Google extension that I could
+
+519
+00:21:50,100 --> 00:21:53,070
+find on the first couple of
+pages of the Chrome Web Store.
+
+520
+00:21:53,070 --> 00:21:55,220
+What we see here is, first
+of all, it's relatively
+
+521
+00:21:55,220 --> 00:21:56,360
+difficult to use.
+
+522
+00:21:56,360 --> 00:21:59,440
+But if we look at the Task
+Manager, we'll see that all of
+
+523
+00:21:59,440 --> 00:22:00,360
+these extensions--
+
+524
+00:22:00,360 --> 00:22:03,100
+even though they're doing
+absolutely nothing right now--
+
+525
+00:22:03,100 --> 00:22:07,320
+are taking up a large number of
+resources, anywhere from 20
+
+526
+00:22:07,320 --> 00:22:09,510
+to 30 meg, depending
+on the extension.
+
+527
+00:22:09,510 --> 00:22:11,050
+It isn't quite as bad
+as it sounds.
+
+528
+00:22:11,050 --> 00:22:12,700
+Much of this memory is
+shared because of
+
+529
+00:22:12,700 --> 00:22:13,980
+multi process model.
+
+530
+00:22:13,980 --> 00:22:16,650
+But it's still much more than we
+think extensions should be
+
+531
+00:22:16,650 --> 00:22:19,220
+using when they're not doing
+anything at all.
+
+532
+00:22:19,220 --> 00:22:21,250
+We'd like to kill off
+those processes.
+
+533
+00:22:21,250 --> 00:22:23,310
+And we'd like to shrink the
+amount of resource that's
+
+534
+00:22:23,310 --> 00:22:25,660
+being used an ongoing basis.
+
+535
+00:22:25,660 --> 00:22:27,450
+The mechanism we are looking
+at for doing
+
+536
+00:22:27,450 --> 00:22:28,400
+that is event pages.
+
+537
+00:22:28,400 --> 00:22:31,030
+We published a blog post on
+Chromium.org about this, I
+
+538
+00:22:31,030 --> 00:22:32,490
+think, last week.
+
+539
+00:22:32,490 --> 00:22:35,670
+The idea of event pages is that
+they work very similarly
+
+540
+00:22:35,670 --> 00:22:36,810
+to background pages.
+
+541
+00:22:36,810 --> 00:22:39,430
+But they disappear when you're
+not actually using them.
+
+542
+00:22:39,430 --> 00:22:41,700
+So we can kill the
+process entirely.
+
+543
+00:22:41,700 --> 00:22:43,900
+This has a large number
+of benefits.
+
+544
+00:22:43,900 --> 00:22:47,900
+First of all, by killing the
+process, we ensure that even
+
+545
+00:22:47,900 --> 00:22:50,340
+if there's a leak somewhere in
+your extension, by killing
+
+546
+00:22:50,340 --> 00:22:52,980
+that background process, we
+can also kill the leaks.
+
+547
+00:22:52,980 --> 00:22:56,270
+So even if there's a leaky
+extension, we reclaim all of
+
+548
+00:22:56,270 --> 00:22:59,440
+those resources simply by
+reaping the entire process.
+
+549
+00:22:59,440 --> 00:23:02,510
+It also gives us the ability to
+move to a more event-driven
+
+550
+00:23:02,510 --> 00:23:05,780
+model, something that we think
+is really going to be useful
+
+551
+00:23:05,780 --> 00:23:09,020
+for low memory devices,
+like Chrome OS.
+
+552
+00:23:09,020 --> 00:23:10,980
+If you're looking at a
+Chromebook, it's not going to
+
+553
+00:23:10,980 --> 00:23:13,250
+be possible for you to load
+hundreds and hundreds of
+
+554
+00:23:13,250 --> 00:23:15,610
+extensions if each of them is
+taking up memory in the
+
+555
+00:23:15,610 --> 00:23:18,320
+background, regardless of
+whether they're active or not.
+
+556
+00:23:18,320 --> 00:23:21,180
+We want to make sure that on
+these low resource devices
+
+557
+00:23:21,180 --> 00:23:23,750
+that we point those resources
+towards the things that you're
+
+558
+00:23:23,750 --> 00:23:26,480
+actually doing as opposed to the
+things you might be doing.
+
+559
+00:23:26,480 --> 00:23:29,630
+
+560
+00:23:29,630 --> 00:23:30,830
+Event pages are opt-in.
+
+561
+00:23:30,830 --> 00:23:32,090
+And it's very straightforward.
+
+562
+00:23:32,090 --> 00:23:34,090
+When you use the new background
+page syntax, you
+
+563
+00:23:34,090 --> 00:23:35,740
+simply write, persistent
+false.
+
+564
+00:23:35,740 --> 00:23:37,390
+So you set this flag to false.
+
+565
+00:23:37,390 --> 00:23:39,770
+And at that point, your
+background page will simply be
+
+566
+00:23:39,770 --> 00:23:42,670
+killed when it's not doing
+anything useful.
+
+567
+00:23:42,670 --> 00:23:44,410
+The life cycle is as follows.
+
+568
+00:23:44,410 --> 00:23:47,160
+We load the background
+page on installation.
+
+569
+00:23:47,160 --> 00:23:49,890
+At that point, we record all
+of the events that are
+
+570
+00:23:49,890 --> 00:23:51,580
+registered within the
+background page.
+
+571
+00:23:51,580 --> 00:23:54,160
+So your background page might
+look something like this.
+
+572
+00:23:54,160 --> 00:23:56,050
+It might be a main.js.
+
+573
+00:23:56,050 --> 00:23:57,950
+You might register for
+a couple of events.
+
+574
+00:23:57,950 --> 00:24:00,860
+Chrome will remember and persist
+all of these events.
+
+575
+00:24:00,860 --> 00:24:04,810
+Then when your background page
+is killed, we can start it up
+
+576
+00:24:04,810 --> 00:24:07,890
+again based upon these events,
+based upon user interaction.
+
+577
+00:24:07,890 --> 00:24:10,140
+So in the middle, I register
+for chrome
+
+578
+00:24:10,140 --> 00:24:11,780
+browser action unclicked.
+
+579
+00:24:11,780 --> 00:24:14,070
+Chrome will remember this, even
+when the background page
+
+580
+00:24:14,070 --> 00:24:15,090
+isn't there anymore.
+
+581
+00:24:15,090 --> 00:24:17,510
+If I click on the browser
+action, it'll restart the
+
+582
+00:24:17,510 --> 00:24:21,225
+process, spin it back up again,
+and execute or pass in
+
+583
+00:24:21,225 --> 00:24:24,790
+this event so that I can execute
+something useful.
+
+584
+00:24:24,790 --> 00:24:27,780
+You'll see two new events,
+chrome runtime on installed
+
+585
+00:24:27,780 --> 00:24:29,900
+and chrome runtime on suspend.
+
+586
+00:24:29,900 --> 00:24:33,770
+Chrome runtime on installed is
+triggered on installation but
+
+587
+00:24:33,770 --> 00:24:35,210
+also on every update.
+
+588
+00:24:35,210 --> 00:24:38,250
+This gives you the ability to
+determine whether or not the
+
+589
+00:24:38,250 --> 00:24:40,550
+extension is being installed
+for the first time, which
+
+590
+00:24:40,550 --> 00:24:44,630
+gives you a good opportunity to
+use the Chrome storage APIs
+
+591
+00:24:44,630 --> 00:24:47,650
+in order to set some values, to
+do some set up, to set some
+
+592
+00:24:47,650 --> 00:24:50,760
+flags or whatever it is that
+your extension actually needs.
+
+593
+00:24:50,760 --> 00:24:53,370
+But on update, you can also
+do things like migration.
+
+594
+00:24:53,370 --> 00:24:55,370
+So if you're using index to be
+in the background, you could
+
+595
+00:24:55,370 --> 00:24:56,670
+at this point check the version
+
+596
+00:24:56,670 --> 00:24:57,870
+of the current database.
+
+597
+00:24:57,870 --> 00:25:01,000
+And if it's the old database
+then migrate to the new one.
+
+598
+00:25:01,000 --> 00:25:02,680
+So this, we think, is going
+to give you some good
+
+599
+00:25:02,680 --> 00:25:06,505
+opportunities for dealing with
+these sorts of events that
+
+600
+00:25:06,505 --> 00:25:08,650
+were difficult to deal
+with in the past.
+
+601
+00:25:08,650 --> 00:25:11,340
+Chrome runtime on suspend is
+called when the background
+
+602
+00:25:11,340 --> 00:25:12,810
+page is about to be killed.
+
+603
+00:25:12,810 --> 00:25:15,860
+So when Chrome recognizes that
+the background page isn't
+
+604
+00:25:15,860 --> 00:25:18,240
+doing anything-- it doesn't have
+any pop-ups open, you're
+
+605
+00:25:18,240 --> 00:25:20,150
+not inspecting it at the moment,
+it doesn't have any
+
+606
+00:25:20,150 --> 00:25:22,770
+active network requests, and
+things along these lines--
+
+607
+00:25:22,770 --> 00:25:24,930
+will go ahead and send an
+on suspend event to the
+
+608
+00:25:24,930 --> 00:25:26,060
+background page.
+
+609
+00:25:26,060 --> 00:25:28,220
+You'll have a little bit of time
+here to do any sort of
+
+610
+00:25:28,220 --> 00:25:29,670
+last minute saving.
+
+611
+00:25:29,670 --> 00:25:32,390
+This isn't a good time to start
+uploading 10 megs of
+
+612
+00:25:32,390 --> 00:25:34,170
+data to an external server.
+
+613
+00:25:34,170 --> 00:25:35,790
+You should be saving
+as you go.
+
+614
+00:25:35,790 --> 00:25:38,560
+Basically, you should be ready
+to die as soon as this thing
+
+615
+00:25:38,560 --> 00:25:39,450
+is called--
+
+616
+00:25:39,450 --> 00:25:41,190
+or your process should
+be ready to die.
+
+617
+00:25:41,190 --> 00:25:43,970
+You, of course, should
+not be ready to die.
+
+618
+00:25:43,970 --> 00:25:45,660
+Chrome runtime on suspend
+will be called.
+
+619
+00:25:45,660 --> 00:25:46,480
+It'll execute.
+
+620
+00:25:46,480 --> 00:25:49,440
+And then some arbitrary period
+of time later, your process
+
+621
+00:25:49,440 --> 00:25:50,910
+will be killed entirely.
+
+622
+00:25:50,910 --> 00:25:52,700
+It'll be spun back up
+again when any of
+
+623
+00:25:52,700 --> 00:25:55,520
+these events are triggered.
+
+624
+00:25:55,520 --> 00:25:58,000
+It's not, however, the case that
+you can only respond to
+
+625
+00:25:58,000 --> 00:25:59,130
+user driven events.
+
+626
+00:25:59,130 --> 00:26:01,120
+Some of your writing extensions
+that need to go out
+
+627
+00:26:01,120 --> 00:26:04,230
+to the web, pull some data,
+store it locally, and then be
+
+628
+00:26:04,230 --> 00:26:06,400
+ready and responsive
+for your users.
+
+629
+00:26:06,400 --> 00:26:09,320
+We've then created an Alarms
+API that works exactly for
+
+630
+00:26:09,320 --> 00:26:10,480
+this use case.
+
+631
+00:26:10,480 --> 00:26:13,420
+At some point in the future,
+you can wake your extension
+
+632
+00:26:13,420 --> 00:26:16,830
+back up, do some processing,
+and then go back to sleep.
+
+633
+00:26:16,830 --> 00:26:19,410
+For example, you can create
+a period in minutes, which
+
+634
+00:26:19,410 --> 00:26:21,540
+simply means that your extension
+will be triggered
+
+635
+00:26:21,540 --> 00:26:23,550
+every 10 minutes
+at this point.
+
+636
+00:26:23,550 --> 00:26:25,960
+Every 10 minutes, you can go out
+to the web, pull some new
+
+637
+00:26:25,960 --> 00:26:29,140
+information, store it locally,
+and be ready for your user's
+
+638
+00:26:29,140 --> 00:26:31,620
+response whenever-- or ready
+to respond to your user
+
+639
+00:26:31,620 --> 00:26:34,400
+whenever they actually interact
+with your extension.
+
+640
+00:26:34,400 --> 00:26:38,100
+You can do this as a one off,
+as a repeating, or at some
+
+641
+00:26:38,100 --> 00:26:39,210
+specific point in the future.
+
+642
+00:26:39,210 --> 00:26:42,180
+We give you a lot
+of options here.
+
+643
+00:26:42,180 --> 00:26:45,480
+Another area in which we see
+extensions actually requesting
+
+644
+00:26:45,480 --> 00:26:49,370
+more permissions than they need
+is keyboard shortcuts.
+
+645
+00:26:49,370 --> 00:26:51,480
+Key bindings, at the moment,
+are a big mess
+
+646
+00:26:51,480 --> 00:26:52,920
+in extension land.
+
+647
+00:26:52,920 --> 00:26:56,500
+To bind to a specific keyboard
+shortcut, you have to request
+
+648
+00:26:56,500 --> 00:26:59,370
+host permissions to all URLs,
+so the entire internet.
+
+649
+00:26:59,370 --> 00:27:00,750
+Then you inject a content
+script that
+
+650
+00:27:00,750 --> 00:27:02,210
+listens for key presses.
+
+651
+00:27:02,210 --> 00:27:04,580
+And you really, really hope
+that this content script
+
+652
+00:27:04,580 --> 00:27:06,985
+doesn't actually interfere in
+some way with the application
+
+653
+00:27:06,985 --> 00:27:10,180
+that your user is running or get
+overwritten in some way by
+
+654
+00:27:10,180 --> 00:27:12,170
+the application user
+is running.
+
+655
+00:27:12,170 --> 00:27:14,060
+We can do much better
+than this.
+
+656
+00:27:14,060 --> 00:27:16,690
+Our attempt at doing better is
+the keybindings API, which is
+
+657
+00:27:16,690 --> 00:27:18,370
+currently an experimental.
+
+658
+00:27:18,370 --> 00:27:21,070
+The keybindings API is a
+declarative API that allows
+
+659
+00:27:21,070 --> 00:27:22,910
+you to say, I want to respond.
+
+660
+00:27:22,910 --> 00:27:24,610
+Or I have a couple
+of commands.
+
+661
+00:27:24,610 --> 00:27:27,090
+And these commands should be
+associated with specific
+
+662
+00:27:27,090 --> 00:27:29,230
+suggested keyboard shortcuts.
+
+663
+00:27:29,230 --> 00:27:29,900
+This is--
+
+664
+00:27:29,900 --> 00:27:31,870
+should be, I think, be
+relatively straightforward.
+
+665
+00:27:31,870 --> 00:27:33,140
+You define a list of commands.
+
+666
+00:27:33,140 --> 00:27:34,630
+Each of the commands
+has a description
+
+667
+00:27:34,630 --> 00:27:35,770
+associated with it.
+
+668
+00:27:35,770 --> 00:27:38,720
+And each of the commands has
+a list of suggested keys.
+
+669
+00:27:38,720 --> 00:27:41,280
+You can set up different
+suggested keys for the default
+
+670
+00:27:41,280 --> 00:27:42,860
+or for a specific platform.
+
+671
+00:27:42,860 --> 00:27:45,420
+We think this gives you
+a lot of flexibility.
+
+672
+00:27:45,420 --> 00:27:48,080
+Inside of your extension will
+look a little bit like this.
+
+673
+00:27:48,080 --> 00:27:51,160
+You'll hook it into the on
+command event of keybindings.
+
+674
+00:27:51,160 --> 00:27:53,010
+And, at that point, you'll
+get a string.
+
+675
+00:27:53,010 --> 00:27:55,250
+And that string is going to be
+the same string you defined in
+
+676
+00:27:55,250 --> 00:27:56,530
+the manifest file.
+
+677
+00:27:56,530 --> 00:27:57,370
+You'll get this command.
+
+678
+00:27:57,370 --> 00:27:59,960
+You can respond to it
+in some useful way.
+
+679
+00:27:59,960 --> 00:28:03,020
+What you might have seen is
+Execute Browser Action as a
+
+680
+00:28:03,020 --> 00:28:06,330
+specific command that will
+allow you to execute the
+
+681
+00:28:06,330 --> 00:28:09,430
+pop-up or execute the On Clicked
+event of your browser
+
+682
+00:28:09,430 --> 00:28:11,780
+action with a keyboard
+shortcut.
+
+683
+00:28:11,780 --> 00:28:14,110
+This is something that hasn't
+been possible before, even by
+
+684
+00:28:14,110 --> 00:28:15,350
+injecting content scripts.
+
+685
+00:28:15,350 --> 00:28:17,350
+And it's going to be a big
+benefit, we think, of moving
+
+686
+00:28:17,350 --> 00:28:19,000
+over to the keybindings API.
+
+687
+00:28:19,000 --> 00:28:21,470
+You'll be able to, for instance,
+just do a pop-up by
+
+688
+00:28:21,470 --> 00:28:24,330
+executing some keyboard
+shortcut.
+
+689
+00:28:24,330 --> 00:28:25,440
+There are a couple
+of to-dos here.
+
+690
+00:28:25,440 --> 00:28:26,400
+It's not done.
+
+691
+00:28:26,400 --> 00:28:28,520
+As you notice, it's
+an experimental.
+
+692
+00:28:28,520 --> 00:28:30,820
+Mac support is simply
+nonexistent at the moment.
+
+693
+00:28:30,820 --> 00:28:31,520
+We're working on it.
+
+694
+00:28:31,520 --> 00:28:33,170
+But it's going to take
+a little time.
+
+695
+00:28:33,170 --> 00:28:36,060
+And we also don't have any UI
+for dealing with conflicts.
+
+696
+00:28:36,060 --> 00:28:38,430
+We have some UI for assigning
+shortcuts.
+
+697
+00:28:38,430 --> 00:28:39,910
+But it's just not there yet.
+
+698
+00:28:39,910 --> 00:28:42,350
+We actually just implemented
+saving last week.
+
+699
+00:28:42,350 --> 00:28:43,810
+You could look at
+it beforehand.
+
+700
+00:28:43,810 --> 00:28:47,020
+But this week you can actually
+save new keyboard shortcuts.
+
+701
+00:28:47,020 --> 00:28:47,760
+So we're getting there.
+
+702
+00:28:47,760 --> 00:28:49,900
+Slowly but surely.
+
+703
+00:28:49,900 --> 00:28:51,760
+Let's talk a little bit
+about network APIs.
+
+704
+00:28:51,760 --> 00:28:54,010
+There a couple of really
+interesting APIs that we've
+
+705
+00:28:54,010 --> 00:28:55,800
+released over the last year.
+
+706
+00:28:55,800 --> 00:28:59,980
+And the usage of those APIs has
+surprised us in some ways
+
+707
+00:28:59,980 --> 00:29:02,985
+but is also, we think, pointing
+towards things that
+
+708
+00:29:02,985 --> 00:29:05,060
+we can do in the future
+to make things better.
+
+709
+00:29:05,060 --> 00:29:06,360
+That future thing
+is going to be a
+
+710
+00:29:06,360 --> 00:29:08,430
+declarative web request API.
+
+711
+00:29:08,430 --> 00:29:10,280
+To understand why that's
+important and why that's
+
+712
+00:29:10,280 --> 00:29:12,610
+valuable, let's first talk a
+little bit about the web
+
+713
+00:29:12,610 --> 00:29:15,390
+request API that exists today.
+
+714
+00:29:15,390 --> 00:29:17,150
+The web request API looks
+something like this.
+
+715
+00:29:17,150 --> 00:29:19,810
+In this case, I went to block
+my user from going to
+
+716
+00:29:19,810 --> 00:29:20,910
+malicious websites.
+
+717
+00:29:20,910 --> 00:29:25,180
+As we all know, malicious
+websites have an evil=1 as the
+
+718
+00:29:25,180 --> 00:29:26,770
+last get parameter.
+
+719
+00:29:26,770 --> 00:29:27,650
+I mean, it's great.
+
+720
+00:29:27,650 --> 00:29:29,750
+It's really useful that they do
+this because it allows us
+
+721
+00:29:29,750 --> 00:29:31,520
+to block their requests.
+
+722
+00:29:31,520 --> 00:29:33,150
+Blocking their requests looks
+something like this,
+
+723
+00:29:33,150 --> 00:29:35,330
+chrome.webreques
+t.onbeforerequest--
+
+724
+00:29:35,330 --> 00:29:37,110
+so before the request is
+actually sent out of my
+
+725
+00:29:37,110 --> 00:29:39,450
+computer to do something
+useful.
+
+726
+00:29:39,450 --> 00:29:41,860
+You see the last item here
+contains a few flags, in this
+
+727
+00:29:41,860 --> 00:29:42,890
+case blocking.
+
+728
+00:29:42,890 --> 00:29:45,610
+This is the first synchronous
+API that we've created.
+
+729
+00:29:45,610 --> 00:29:48,650
+And the synchronicity of
+the API is a little bit
+
+730
+00:29:48,650 --> 00:29:50,180
+problematic for us.
+
+731
+00:29:50,180 --> 00:29:52,020
+It's problematic for the
+following reasons.
+
+732
+00:29:52,020 --> 00:29:53,880
+Chrome looks more or
+less like this.
+
+733
+00:29:53,880 --> 00:29:56,630
+We have a browser process that
+manages a wide variety of
+
+734
+00:29:56,630 --> 00:29:58,310
+renderer processes.
+
+735
+00:29:58,310 --> 00:30:01,800
+Each tab, more or less, has
+its own renderer process.
+
+736
+00:30:01,800 --> 00:30:05,510
+So, if a web page wants to load
+a URL, if they're using a
+
+737
+00:30:05,510 --> 00:30:09,000
+web request API, the web page
+will say, OK, I'd like to load
+
+738
+00:30:09,000 --> 00:30:09,830
+this image.
+
+739
+00:30:09,830 --> 00:30:11,860
+That request will be sent
+up to the browser.
+
+740
+00:30:11,860 --> 00:30:14,260
+The browser they need to make a
+decision should the web page
+
+741
+00:30:14,260 --> 00:30:15,590
+load the image or not.
+
+742
+00:30:15,590 --> 00:30:19,080
+To make that decision, something
+it sends a message
+
+743
+00:30:19,080 --> 00:30:20,110
+down to the extension.
+
+744
+00:30:20,110 --> 00:30:21,790
+The extension--
+
+745
+00:30:21,790 --> 00:30:24,980
+or the message then hops from
+c to JavaScript in order to
+
+746
+00:30:24,980 --> 00:30:27,640
+make the determination to do
+something useful to execute
+
+747
+00:30:27,640 --> 00:30:30,380
+this code up above and then
+sends that information back to
+
+748
+00:30:30,380 --> 00:30:31,730
+the browser process.
+
+749
+00:30:31,730 --> 00:30:34,500
+In parallel, it's sending these
+requests out to all the
+
+750
+00:30:34,500 --> 00:30:37,500
+extensions that have registered
+for a web request
+
+751
+00:30:37,500 --> 00:30:40,630
+that filters into this
+specific request.
+
+752
+00:30:40,630 --> 00:30:43,050
+Sending all of this information
+back and forth
+
+753
+00:30:43,050 --> 00:30:45,570
+between the processes
+is costly.
+
+754
+00:30:45,570 --> 00:30:47,980
+It's more costly than we
+actually expected it to be.
+
+755
+00:30:47,980 --> 00:30:50,140
+If you go to Chrome histograms,
+you can see
+
+756
+00:30:50,140 --> 00:30:52,870
+exactly how costly it
+is on your computer.
+
+757
+00:30:52,870 --> 00:30:54,570
+I created a bit of a
+torture test here.
+
+758
+00:30:54,570 --> 00:30:56,540
+But, you see-- actually, you
+probably can't see because
+
+759
+00:30:56,540 --> 00:30:57,700
+it's really small.
+
+760
+00:30:57,700 --> 00:31:00,720
+But at the bottom here, the
+longest request or the longest
+
+761
+00:31:00,720 --> 00:31:04,700
+wait between sending a message
+from my page to the extension
+
+762
+00:31:04,700 --> 00:31:06,980
+and back was over two seconds.
+
+763
+00:31:06,980 --> 00:31:08,070
+Now, this isn't typical.
+
+764
+00:31:08,070 --> 00:31:10,460
+Most of the requests are
+happening in well under 100
+
+765
+00:31:10,460 --> 00:31:11,440
+milliseconds.
+
+766
+00:31:11,440 --> 00:31:14,280
+But over two seconds to
+process a request is
+
+767
+00:31:14,280 --> 00:31:15,110
+incredible.
+
+768
+00:31:15,110 --> 00:31:17,300
+That's much longer than it
+should actually take to load
+
+769
+00:31:17,300 --> 00:31:18,890
+the resource in the
+first place.
+
+770
+00:31:18,890 --> 00:31:20,660
+We need to do better
+than this.
+
+771
+00:31:20,660 --> 00:31:22,400
+And we think we can.
+
+772
+00:31:22,400 --> 00:31:27,780
+The declarative web request API
+is a declarative mechanism
+
+773
+00:31:27,780 --> 00:31:30,620
+for determining whether or not a
+request should be blocked or
+
+774
+00:31:30,620 --> 00:31:33,210
+redirected or anything
+along these lines.
+
+775
+00:31:33,210 --> 00:31:35,660
+You declare a declarative
+web request permission.
+
+776
+00:31:35,660 --> 00:31:38,690
+And you create a series
+of rules.
+
+777
+00:31:38,690 --> 00:31:43,370
+You might do this in the on
+install event of your
+
+778
+00:31:43,370 --> 00:31:44,710
+background page.
+
+779
+00:31:44,710 --> 00:31:45,720
+You create a rule.
+
+780
+00:31:45,720 --> 00:31:48,340
+Rules contain conditions
+and actions.
+
+781
+00:31:48,340 --> 00:31:50,640
+If the request matches
+the condition--
+
+782
+00:31:50,640 --> 00:31:53,110
+so if they're going to
+evil.example.com--
+
+783
+00:31:53,110 --> 00:31:55,280
+then we're going to
+block the request.
+
+784
+00:31:55,280 --> 00:31:58,740
+Once we've created this large
+array of rules, we add all of
+
+785
+00:31:58,740 --> 00:32:01,310
+the rules into Chrome.
+
+786
+00:32:01,310 --> 00:32:03,440
+And we can do this incredibly
+efficiently.
+
+787
+00:32:03,440 --> 00:32:06,250
+Adding the rules to Chrome
+standardizes the way that we
+
+788
+00:32:06,250 --> 00:32:09,550
+deal with network requests,
+giving us the ability to very
+
+789
+00:32:09,550 --> 00:32:11,870
+efficiently store the
+information in the browser
+
+790
+00:32:11,870 --> 00:32:14,200
+process as opposed to pushing
+everything down to the
+
+791
+00:32:14,200 --> 00:32:15,560
+extension process.
+
+792
+00:32:15,560 --> 00:32:16,920
+This has a couple
+of advantages.
+
+793
+00:32:16,920 --> 00:32:18,870
+First, we don't have
+to do so much IPC
+
+794
+00:32:18,870 --> 00:32:20,620
+messaging between processes.
+
+795
+00:32:20,620 --> 00:32:24,920
+But second, because we've
+defined a single mechanism for
+
+796
+00:32:24,920 --> 00:32:29,590
+declaring these sorts of rules,
+we can do it very, very
+
+797
+00:32:29,590 --> 00:32:32,090
+efficiently indeed.
+
+798
+00:32:32,090 --> 00:32:34,430
+You can set conditions
+on basically every
+
+799
+00:32:34,430 --> 00:32:35,500
+piece of the URL.
+
+800
+00:32:35,500 --> 00:32:36,790
+So you can look for ports.
+
+801
+00:32:36,790 --> 00:32:38,280
+You can look for paths.
+
+802
+00:32:38,280 --> 00:32:40,140
+And you can look for
+query strings.
+
+803
+00:32:40,140 --> 00:32:42,140
+You can also look at the
+entire URL if that
+
+804
+00:32:42,140 --> 00:32:44,326
+suits your use case.
+
+805
+00:32:44,326 --> 00:32:47,280
+We haven't yet added regex
+for the entire URL.
+
+806
+00:32:47,280 --> 00:32:48,470
+We're working on that.
+
+807
+00:32:48,470 --> 00:32:50,970
+What we have added, however, is
+a variety of conditions--
+
+808
+00:32:50,970 --> 00:32:53,630
+or, I'm sorry, a variety
+of actions.
+
+809
+00:32:53,630 --> 00:32:56,210
+The actions that are associated
+with these URLs
+
+810
+00:32:56,210 --> 00:32:57,810
+are, for instance,
+cancel requests.
+
+811
+00:32:57,810 --> 00:32:59,080
+This is probably the
+most common.
+
+812
+00:32:59,080 --> 00:33:00,790
+You simply don't want
+to make this request
+
+813
+00:33:00,790 --> 00:33:01,450
+in the first place.
+
+814
+00:33:01,450 --> 00:33:03,610
+You don't want to send
+any information out.
+
+815
+00:33:03,610 --> 00:33:05,470
+What we also all you
+to do is redirect.
+
+816
+00:33:05,470 --> 00:33:08,610
+And you can redirect not only to
+a specific URL, but you can
+
+817
+00:33:08,610 --> 00:33:10,270
+redirect using a regex.
+
+818
+00:33:10,270 --> 00:33:13,530
+For instance, you could redirect
+all HTTP requests to
+
+819
+00:33:13,530 --> 00:33:16,550
+the exact same request
+on HTTPS.
+
+820
+00:33:16,550 --> 00:33:18,800
+Unfortunately, it isn't quite
+that simple, which is why
+
+821
+00:33:18,800 --> 00:33:20,470
+HTTPS Everywhere exists.
+
+822
+00:33:20,470 --> 00:33:23,850
+But we think this is going to
+give extensions like HTTPS
+
+823
+00:33:23,850 --> 00:33:27,340
+Everywhere the ability to create
+this really complicated
+
+824
+00:33:27,340 --> 00:33:30,520
+rule set without actually
+jumping into JavaScript in
+
+825
+00:33:30,520 --> 00:33:31,770
+order to make that
+determination.
+
+826
+00:33:31,770 --> 00:33:35,060
+
+827
+00:33:35,060 --> 00:33:37,450
+We also give you the ability
+to deal with the request
+
+828
+00:33:37,450 --> 00:33:39,810
+headers and the response headers
+that you can set and
+
+829
+00:33:39,810 --> 00:33:43,870
+remove headers simply based upon
+the URL that the user is
+
+830
+00:33:43,870 --> 00:33:47,010
+actually going to.
+
+831
+00:33:47,010 --> 00:33:48,310
+You can ignore rules.
+
+832
+00:33:48,310 --> 00:33:50,540
+So if you're familiar at all
+with email, you've probably
+
+833
+00:33:50,540 --> 00:33:51,640
+set up a bunch of rules.
+
+834
+00:33:51,640 --> 00:33:54,940
+And you have things like, if
+this, then do this and ignore
+
+835
+00:33:54,940 --> 00:33:56,210
+the rest of the rules.
+
+836
+00:33:56,210 --> 00:33:58,050
+This allows you to set
+a priority with
+
+837
+00:33:58,050 --> 00:33:59,010
+each of these rules.
+
+838
+00:33:59,010 --> 00:34:01,680
+So when you create really
+complex rule sets, multiple
+
+839
+00:34:01,680 --> 00:34:02,620
+things might match.
+
+840
+00:34:02,620 --> 00:34:04,910
+And you want to make sure that
+the right thing actually
+
+841
+00:34:04,910 --> 00:34:06,720
+executes based upon
+that action.
+
+842
+00:34:06,720 --> 00:34:08,400
+So you set a priority
+with the rule.
+
+843
+00:34:08,400 --> 00:34:10,820
+And at the end of your actions,
+you can say, ignore
+
+844
+00:34:10,820 --> 00:34:13,159
+any other rules that are lower
+priority than this one.
+
+845
+00:34:13,159 --> 00:34:17,659
+
+846
+00:34:17,659 --> 00:34:21,130
+The act of tab permission is the
+last new thing that I want
+
+847
+00:34:21,130 --> 00:34:22,500
+to talk about today.
+
+848
+00:34:22,500 --> 00:34:25,219
+The active tab permission is
+something that we think is
+
+849
+00:34:25,219 --> 00:34:26,820
+going to be really
+quite powerful.
+
+850
+00:34:26,820 --> 00:34:29,340
+It's something that we, I think,
+are very excited about.
+
+851
+00:34:29,340 --> 00:34:33,530
+What it does is allow you to
+deal with specific hosts
+
+852
+00:34:33,530 --> 00:34:36,449
+without requesting permission
+for those hosts.
+
+853
+00:34:36,449 --> 00:34:39,790
+We see a lot of extensions out
+there that really only need to
+
+854
+00:34:39,790 --> 00:34:42,810
+interact with the page the user
+is currently viewing.
+
+855
+00:34:42,810 --> 00:34:45,440
+For example, Google has a
+dictionary extension, which
+
+856
+00:34:45,440 --> 00:34:48,900
+allows you to grab a word out
+of a page and give you a
+
+857
+00:34:48,900 --> 00:34:50,030
+definition for that word.
+
+858
+00:34:50,030 --> 00:34:51,219
+It's incredibly useful.
+
+859
+00:34:51,219 --> 00:34:54,120
+But in order to act, it injects
+content scripts into
+
+860
+00:34:54,120 --> 00:34:56,900
+every page that you go
+to and then listens
+
+861
+00:34:56,900 --> 00:34:58,270
+for a browser action.
+
+862
+00:34:58,270 --> 00:35:01,180
+When you click on the browser
+action or use a context menu,
+
+863
+00:35:01,180 --> 00:35:04,810
+it then grabs the thing that
+you've currently selected,
+
+864
+00:35:04,810 --> 00:35:06,500
+does something useful with
+it, and displays
+
+865
+00:35:06,500 --> 00:35:07,820
+the result to you.
+
+866
+00:35:07,820 --> 00:35:10,170
+It has to request host
+permissions to every website
+
+867
+00:35:10,170 --> 00:35:12,280
+on the net in order
+to do that.
+
+868
+00:35:12,280 --> 00:35:15,850
+Active tab permission would give
+it the ability to, based
+
+869
+00:35:15,850 --> 00:35:19,200
+upon a user's gesture, inject
+script into a page that it
+
+870
+00:35:19,200 --> 00:35:21,150
+hasn't requested permissions
+for.
+
+871
+00:35:21,150 --> 00:35:23,310
+In this case, I would request
+permission for
+
+872
+00:35:23,310 --> 00:35:25,440
+active tab and tabs.
+
+873
+00:35:25,440 --> 00:35:27,130
+You'll note that I'm not
+requesting any host
+
+874
+00:35:27,130 --> 00:35:28,980
+permissions at this point.
+
+875
+00:35:28,980 --> 00:35:31,540
+I can, however, listen
+for a browser action.
+
+876
+00:35:31,540 --> 00:35:34,560
+I could also listen for a
+context menu and act upon that
+
+877
+00:35:34,560 --> 00:35:37,340
+action by injecting script
+into this page.
+
+878
+00:35:37,340 --> 00:35:39,760
+We're using the user's
+interaction with either the
+
+879
+00:35:39,760 --> 00:35:44,040
+browser action or the context
+menu in order to give the
+
+880
+00:35:44,040 --> 00:35:46,970
+extension the ability to inject
+script into this new
+
+881
+00:35:46,970 --> 00:35:50,230
+context, even though it hasn't
+explicitly requested
+
+882
+00:35:50,230 --> 00:35:51,490
+permission for it.
+
+883
+00:35:51,490 --> 00:35:53,240
+We think this is going to be
+really useful, not only for
+
+884
+00:35:53,240 --> 00:35:55,430
+the Google dictionary extension
+but for the wide
+
+885
+00:35:55,430 --> 00:35:58,260
+variety of extensions that we
+see in the Chrome Web Store
+
+886
+00:35:58,260 --> 00:36:01,160
+that are looking for exactly
+this sort of functionality.
+
+887
+00:36:01,160 --> 00:36:04,120
+We see many extensions that
+really don't need permission
+
+888
+00:36:04,120 --> 00:36:04,990
+for the entire web.
+
+889
+00:36:04,990 --> 00:36:07,710
+But they don't have any other
+mechanism of doing it.
+
+890
+00:36:07,710 --> 00:36:09,520
+We'd love to see people
+experimenting with this.
+
+891
+00:36:09,520 --> 00:36:11,940
+It's in canary right now.
+
+892
+00:36:11,940 --> 00:36:16,070
+It'll be in dev relatively
+soon.
+
+893
+00:36:16,070 --> 00:36:18,150
+So we've talked about a wide
+variety of things.
+
+894
+00:36:18,150 --> 00:36:20,720
+What do we actually want
+to see happen?
+
+895
+00:36:20,720 --> 00:36:23,460
+And what do we think that we can
+do together as a community
+
+896
+00:36:23,460 --> 00:36:25,950
+in order to strengthen
+this ecosystem?
+
+897
+00:36:25,950 --> 00:36:29,230
+The first thing is to really
+take a hard look at Manifest
+
+898
+00:36:29,230 --> 00:36:32,810
+Version 2 and start migrating
+extensions over to it.
+
+899
+00:36:32,810 --> 00:36:36,170
+Manifest Version 2 gives us
+really good guarantees about
+
+900
+00:36:36,170 --> 00:36:39,410
+the way that the extension can
+function and the security that
+
+901
+00:36:39,410 --> 00:36:40,370
+comes along with that.
+
+902
+00:36:40,370 --> 00:36:44,070
+If we ban inline JavaScript,
+there's a huge win associated
+
+903
+00:36:44,070 --> 00:36:47,200
+with that, not only for us but
+also for the users that are
+
+904
+00:36:47,200 --> 00:36:49,340
+using extensions at the
+end of the day.
+
+905
+00:36:49,340 --> 00:36:50,640
+They get a safer ecosystem.
+
+906
+00:36:50,640 --> 00:36:55,190
+And they can more easily install
+extensions with the
+
+907
+00:36:55,190 --> 00:36:57,560
+understanding that those
+extensions are safe.
+
+908
+00:36:57,560 --> 00:36:59,960
+We'd love to see people start
+migrating over to Manifest
+
+909
+00:36:59,960 --> 00:37:02,590
+Version 2 and, as I said,
+talking to us
+
+910
+00:37:02,590 --> 00:37:03,780
+about the pain points.
+
+911
+00:37:03,780 --> 00:37:06,690
+We've really heard what people
+have said with regard to eval.
+
+912
+00:37:06,690 --> 00:37:08,400
+We've created a work
+around for that.
+
+913
+00:37:08,400 --> 00:37:10,540
+That's the model that we'd like
+to see going forward.
+
+914
+00:37:10,540 --> 00:37:13,710
+We really want to understand
+what the problems are that you
+
+915
+00:37:13,710 --> 00:37:15,950
+guys are going to face when
+you're building extensions in
+
+916
+00:37:15,950 --> 00:37:20,060
+the future under these
+new restrictions.
+
+917
+00:37:20,060 --> 00:37:22,930
+You can report issues either
+by filing a bug at
+
+918
+00:37:22,930 --> 00:37:27,530
+new.crbug.com or by hopping onto
+the Chromium extensions
+
+919
+00:37:27,530 --> 00:37:28,500
+mailing list.
+
+920
+00:37:28,500 --> 00:37:29,550
+So you can send an email
+to chromium-extensi
+
+921
+00:37:29,550 --> 00:37:34,140
+ons@chromium.org or subscribe
+to the mailing list yourself
+
+922
+00:37:34,140 --> 00:37:35,440
+if you'd like to do that.
+
+923
+00:37:35,440 --> 00:37:38,530
+That's via groups.google.com.
+
+924
+00:37:38,530 --> 00:37:41,090
+We'd then like for you to take
+a look at the new APIs that
+
+925
+00:37:41,090 --> 00:37:41,940
+are coming out.
+
+926
+00:37:41,940 --> 00:37:45,620
+In the past, we've had the
+concept of experimental APIs.
+
+927
+00:37:45,620 --> 00:37:48,010
+We're going to start doing
+away with that slowly.
+
+928
+00:37:48,010 --> 00:37:51,020
+Instead, we're going to start
+experimenting via channels.
+
+929
+00:37:51,020 --> 00:37:54,250
+That is, an API will be
+available in dev but not in
+
+930
+00:37:54,250 --> 00:37:56,850
+beta or beta but not stable.
+
+931
+00:37:56,850 --> 00:37:59,760
+This, I think, will give us a
+much larger audience for the
+
+932
+00:37:59,760 --> 00:38:01,240
+new APIs that are coming out.
+
+933
+00:38:01,240 --> 00:38:05,790
+Instead of only targeting the
+users that have set the
+
+934
+00:38:05,790 --> 00:38:08,190
+experimental flag-- that means
+they've gone into flags,
+
+935
+00:38:08,190 --> 00:38:10,650
+they've set experimental and so
+on, which is a very small
+
+936
+00:38:10,650 --> 00:38:12,760
+number of people indeed--
+
+937
+00:38:12,760 --> 00:38:14,350
+you'll be able to target
+everyone who is
+
+938
+00:38:14,350 --> 00:38:15,200
+on a certain channel.
+
+939
+00:38:15,200 --> 00:38:18,530
+So everyone using dev can start
+installing extensions
+
+940
+00:38:18,530 --> 00:38:20,870
+that are using these new
+privileges or the new
+
+941
+00:38:20,870 --> 00:38:22,700
+extension APIs that
+are coming out.
+
+942
+00:38:22,700 --> 00:38:25,920
+And as soon as that moves to
+beta, your audience broadens
+
+943
+00:38:25,920 --> 00:38:27,030
+even further.
+
+944
+00:38:27,030 --> 00:38:29,090
+We think this will give you the
+ability to start playing
+
+945
+00:38:29,090 --> 00:38:32,190
+around with extension APIs
+earlier without forcing your
+
+946
+00:38:32,190 --> 00:38:34,150
+users to do something
+that they're not at
+
+947
+00:38:34,150 --> 00:38:34,830
+all comfortable with.
+
+948
+00:38:34,830 --> 00:38:38,110
+That is going in deep into
+Chrome and setting some sort
+
+949
+00:38:38,110 --> 00:38:40,480
+of flag that they don't
+understand.
+
+950
+00:38:40,480 --> 00:38:44,010
+Finally, again, we'd really love
+to hear what the issues
+
+951
+00:38:44,010 --> 00:38:47,330
+are, what the pain points are,
+what we can address, and what
+
+952
+00:38:47,330 --> 00:38:50,260
+we can address together, what
+the things are that are really
+
+953
+00:38:50,260 --> 00:38:52,450
+going to be problematic going
+forward because we want to
+
+954
+00:38:52,450 --> 00:38:53,560
+solve these things.
+
+955
+00:38:53,560 --> 00:38:57,060
+We want people to start using
+the new Manifest version and
+
+956
+00:38:57,060 --> 00:38:58,260
+the new APIs.
+
+957
+00:38:58,260 --> 00:39:00,540
+And that's simply not going to
+happen if there are blockers.
+
+958
+00:39:00,540 --> 00:39:02,480
+So we want to understand
+those blockers.
+
+959
+00:39:02,480 --> 00:39:04,480
+And we want to fix them to
+the best of our ability.
+
+960
+00:39:04,480 --> 00:39:07,160
+
+961
+00:39:07,160 --> 00:39:09,570
+You can contact me at
+any of these places.
+
+962
+00:39:09,570 --> 00:39:14,600
+So I'm on Twitter, I'm on G+,
+that's my website on GitHub.
+
+963
+00:39:14,600 --> 00:39:16,630
+Or you can send me an email
+personally, mkwst@google.com.
+
+964
+00:39:16,630 --> 00:39:19,390
+
+965
+00:39:19,390 --> 00:39:20,790
+I'd be happy to hear from you.
+
+966
+00:39:20,790 --> 00:39:22,830
+And I'd be happy to hear from
+now if you have any questions
+
+967
+00:39:22,830 --> 00:39:25,340
+or comments.
+
+968
+00:39:25,340 --> 00:39:30,100
+[APPLAUSE]
+
+969
+00:39:30,100 --> 00:39:30,420
+Sorry.
+
+970
+00:39:30,420 --> 00:39:32,100
+There are microphones
+in the middle.
+
+971
+00:39:32,100 --> 00:39:33,430
+So if you can walk over,
+then everyone
+
+972
+00:39:33,430 --> 00:39:36,475
+can hear the questions.
+
+973
+00:39:36,475 --> 00:39:38,810
+AUDIENCE: So I have two
+questions, if that's OK.
+
+974
+00:39:38,810 --> 00:39:39,912
+MIKE WEST: Yeah, that's fine.
+
+975
+00:39:39,912 --> 00:39:40,200
+AUDIENCE: Cool.
+
+976
+00:39:40,200 --> 00:39:44,820
+So what's the-- but with these
+background pages that die when
+
+977
+00:39:44,820 --> 00:39:45,180
+they're not--
+
+978
+00:39:45,180 --> 00:39:47,000
+MIKE WEST: Event pages, yes.
+
+979
+00:39:47,000 --> 00:39:48,440
+AUDIENCE: What's the preferred
+practice for push
+
+980
+00:39:48,440 --> 00:39:50,600
+notifications to Chrome
+extensions?
+
+981
+00:39:50,600 --> 00:39:52,610
+MIKE WEST: Push notifications
+will be events
+
+982
+00:39:52,610 --> 00:39:53,520
+just like any other.
+
+983
+00:39:53,520 --> 00:39:55,280
+That is, you can subscribe
+to them.
+
+984
+00:39:55,280 --> 00:39:57,260
+Chrome will recognize that
+you've subscribed to them.
+
+985
+00:39:57,260 --> 00:40:01,110
+And when one comes in, you'll
+get an event notification in
+
+986
+00:40:01,110 --> 00:40:03,350
+exactly the same way that
+you would before.
+
+987
+00:40:03,350 --> 00:40:04,600
+There really should
+be very little
+
+988
+00:40:04,600 --> 00:40:06,200
+difference with event pages.
+
+989
+00:40:06,200 --> 00:40:08,730
+It's just subscribing to events
+and dealing with that
+
+990
+00:40:08,730 --> 00:40:09,240
+subscription.
+
+991
+00:40:09,240 --> 00:40:10,560
+AUDIENCE: OK, cool.
+
+992
+00:40:10,560 --> 00:40:14,470
+My other question is, I can't
+help but notice some parallels
+
+993
+00:40:14,470 --> 00:40:18,186
+between, like, malicious Chrome
+applications being out
+
+994
+00:40:18,186 --> 00:40:20,020
+there and malicious Android
+applications.
+
+995
+00:40:20,020 --> 00:40:23,610
+And the Android team at Google
+has made Bouncer, which for
+
+996
+00:40:23,610 --> 00:40:26,770
+those who aren't familiar, it's
+a dynamic analysis tool
+
+997
+00:40:26,770 --> 00:40:28,430
+that runs your Android code.
+
+998
+00:40:28,430 --> 00:40:31,475
+And if it detects malicious
+behavior, it
+
+999
+00:40:31,475 --> 00:40:32,540
+rejects you, basically.
+
+1000
+00:40:32,540 --> 00:40:35,820
+Do you see anything like this
+in the future for Chrome
+
+1001
+00:40:35,820 --> 00:40:37,260
+extensions?
+
+1002
+00:40:37,260 --> 00:40:38,970
+MIKE WEST: As I said, I think
+we're pretty happy with our
+
+1003
+00:40:38,970 --> 00:40:41,660
+ability to deal with malicious
+Chrome extensions, the
+
+1004
+00:40:41,660 --> 00:40:44,980
+extensions that are actually
+doing damage intentionally.
+
+1005
+00:40:44,980 --> 00:40:47,240
+The thing that we find much more
+difficult to deal with
+
+1006
+00:40:47,240 --> 00:40:50,470
+are the benign extensions that
+are doing really good things
+
+1007
+00:40:50,470 --> 00:40:52,450
+but are doing them in
+dangerous ways.
+
+1008
+00:40:52,450 --> 00:40:55,020
+These sorts of things, we think,
+are better addressed
+
+1009
+00:40:55,020 --> 00:40:59,150
+simply by applying a policy to
+the extensions that forces
+
+1010
+00:40:59,150 --> 00:41:02,160
+them to do things
+the right way.
+
+1011
+00:41:02,160 --> 00:41:04,010
+I hope that answers
+your question.
+
+1012
+00:41:04,010 --> 00:41:04,490
+AUDIENCE: Sounds good.
+
+1013
+00:41:04,490 --> 00:41:05,030
+Thanks.
+
+1014
+00:41:05,030 --> 00:41:06,280
+MIKE WEST: Thank you.
+
+1015
+00:41:06,280 --> 00:41:08,980
+
+1016
+00:41:08,980 --> 00:41:12,960
+AUDIENCE: Are there any plans
+to have tighter integration
+
+1017
+00:41:12,960 --> 00:41:17,100
+for having my web application
+detect that you have an
+
+1018
+00:41:17,100 --> 00:41:19,070
+extension installed and
+be able to have
+
+1019
+00:41:19,070 --> 00:41:20,080
+them communicate together?
+
+1020
+00:41:20,080 --> 00:41:22,980
+Because right now, if I want
+to pass information between
+
+1021
+00:41:22,980 --> 00:41:25,840
+extension and my page, I have to
+use an inner HTML with some
+
+1022
+00:41:25,840 --> 00:41:27,430
+random element on the page.
+
+1023
+00:41:27,430 --> 00:41:29,280
+MIKE WEST: I mean, if you have
+an extension that should
+
+1024
+00:41:29,280 --> 00:41:32,340
+interact in some way with
+a page, you can have an
+
+1025
+00:41:32,340 --> 00:41:34,840
+interaction point--
+
+1026
+00:41:34,840 --> 00:41:36,820
+well, I mean, you can send
+messages to the extension.
+
+1027
+00:41:36,820 --> 00:41:40,190
+So if you have a defined API,
+you can send messages over.
+
+1028
+00:41:40,190 --> 00:41:42,780
+You would have to have
+that endpoint as a
+
+1029
+00:41:42,780 --> 00:41:44,190
+web-accessible resource.
+
+1030
+00:41:44,190 --> 00:41:47,280
+So that's where the new
+stuff would come in.
+
+1031
+00:41:47,280 --> 00:41:49,770
+What we would also suggest is
+that you use the inline
+
+1032
+00:41:49,770 --> 00:41:50,870
+install mechanism.
+
+1033
+00:41:50,870 --> 00:41:54,290
+That would actually enable you
+to install the extension if it
+
+1034
+00:41:54,290 --> 00:41:55,870
+isn't already installed
+on the website.
+
+1035
+00:41:55,870 --> 00:41:58,290
+So you could prompt the user and
+then install it directly
+
+1036
+00:41:58,290 --> 00:42:00,530
+from the page without hopping
+over to the web store.
+
+1037
+00:42:00,530 --> 00:42:02,115
+AUDIENCE: And one more
+question is, is
+
+1038
+00:42:02,115 --> 00:42:05,070
+there any plans to--
+
+1039
+00:42:05,070 --> 00:42:09,310
+for example, we wrote a Chrome
+extension that would let users
+
+1040
+00:42:09,310 --> 00:42:11,490
+give us feedback about an
+application or if they
+
+1041
+00:42:11,490 --> 00:42:14,310
+experienced a bug with our
+application, they could send
+
+1042
+00:42:14,310 --> 00:42:16,470
+us a screen shot basically of
+what they were looking at when
+
+1043
+00:42:16,470 --> 00:42:17,210
+it happened.
+
+1044
+00:42:17,210 --> 00:42:20,770
+We wanted to be able to get
+access to the console log from
+
+1045
+00:42:20,770 --> 00:42:22,950
+the extension so that we could
+see what error they got.
+
+1046
+00:42:22,950 --> 00:42:25,610
+Is there any plans to get that
+kind of information available?
+
+1047
+00:42:25,610 --> 00:42:27,200
+MIKE WEST: Within your
+background page, you should be
+
+1048
+00:42:27,200 --> 00:42:30,310
+able to use window.onerror in
+the exact same way that you do
+
+1049
+00:42:30,310 --> 00:42:31,320
+on web pages.
+
+1050
+00:42:31,320 --> 00:42:33,570
+That would give you any
+errors that happens.
+
+1051
+00:42:33,570 --> 00:42:36,310
+And you'd be able to report
+those in the same way that you
+
+1052
+00:42:36,310 --> 00:42:37,530
+can on the open web.
+
+1053
+00:42:37,530 --> 00:42:40,100
+AUDIENCE: But not like, for
+example, informational
+
+1054
+00:42:40,100 --> 00:42:43,410
+messages, debug messages
+we might output.
+
+1055
+00:42:43,410 --> 00:42:45,810
+MIKE WEST: No, if you're
+outputting the messages, then
+
+1056
+00:42:45,810 --> 00:42:48,310
+you could package those
+up in some way
+
+1057
+00:42:48,310 --> 00:42:49,430
+and save them locally.
+
+1058
+00:42:49,430 --> 00:42:51,400
+And then if an error occurs,
+you could send them.
+
+1059
+00:42:51,400 --> 00:42:54,910
+But there's no mechanism that
+the extension framework itself
+
+1060
+00:42:54,910 --> 00:42:56,475
+gives you to make
+that possible.
+
+1061
+00:42:56,475 --> 00:42:56,860
+MIKE WEST: Got you.
+
+1062
+00:42:56,860 --> 00:42:57,340
+Thanks.
+
+1063
+00:42:57,340 --> 00:42:57,500
+MIKE WEST: Yeah.
+
+1064
+00:42:57,500 --> 00:42:58,750
+No worries.
+
+1065
+00:42:58,750 --> 00:43:00,740
+
+1066
+00:43:00,740 --> 00:43:04,000
+AUDIENCE: As the Android is
+having the Chrome browser, do
+
+1067
+00:43:04,000 --> 00:43:05,960
+you guys have any plans
+for building the
+
+1068
+00:43:05,960 --> 00:43:08,300
+extension for the Android?
+
+1069
+00:43:08,300 --> 00:43:10,110
+MIKE WEST: There's nothing to
+announce at this point.
+
+1070
+00:43:10,110 --> 00:43:11,050
+It's difficult.
+
+1071
+00:43:11,050 --> 00:43:14,866
+And it's difficult.
+
+1072
+00:43:14,866 --> 00:43:17,540
+AUDIENCE: OK, thanks.
+
+1073
+00:43:17,540 --> 00:43:18,460
+AUDIENCE: Nice talk.
+
+1074
+00:43:18,460 --> 00:43:21,480
+I have a question about
+the permission.
+
+1075
+00:43:21,480 --> 00:43:23,610
+It's really cool to have
+permissions and extensions.
+
+1076
+00:43:23,610 --> 00:43:27,000
+That's very cool what
+has been done.
+
+1077
+00:43:27,000 --> 00:43:30,220
+But for the normal user,
+everyone's saying-- you know
+
+1078
+00:43:30,220 --> 00:43:31,930
+that when you have in Chrome Web
+Store, you have all these
+
+1079
+00:43:31,930 --> 00:43:34,030
+permissions saying, old
+browser history,
+
+1080
+00:43:34,030 --> 00:43:35,120
+every single thing.
+
+1081
+00:43:35,120 --> 00:43:37,750
+Is that going to be taken
+care of as well?
+
+1082
+00:43:37,750 --> 00:43:40,800
+Like the whole point of us
+putting all these permissions
+
+1083
+00:43:40,800 --> 00:43:42,490
+in our extensions right now,
+it's going to be more work for
+
+1084
+00:43:42,490 --> 00:43:44,020
+us to figure out we need.
+
+1085
+00:43:44,020 --> 00:43:47,490
+But it would be cool if the
+Chrome app store says, oh,
+
+1086
+00:43:47,490 --> 00:43:48,990
+this user's using web sockets.
+
+1087
+00:43:48,990 --> 00:43:54,070
+Or this user's using those kind
+of new HTML technologies
+
+1088
+00:43:54,070 --> 00:43:57,760
+that you're exposing this
+website or exposing this
+
+1089
+00:43:57,760 --> 00:43:58,870
+hacker website and
+stuff like that.
+
+1090
+00:43:58,870 --> 00:44:01,460
+MIKE WEST: I think what I should
+have made clear earlier
+
+1091
+00:44:01,460 --> 00:44:04,590
+is that by not requesting host
+permissions, we can actually
+
+1092
+00:44:04,590 --> 00:44:07,610
+make the permission messages
+much less scary.
+
+1093
+00:44:07,610 --> 00:44:09,580
+Instead of requesting permission
+to the entire
+
+1094
+00:44:09,580 --> 00:44:13,320
+internet by having, you know,
+all URLs as part of your host
+
+1095
+00:44:13,320 --> 00:44:16,370
+permissions, if you only
+request active tab--
+
+1096
+00:44:16,370 --> 00:44:19,080
+because that always goes through
+a user gesture--
+
+1097
+00:44:19,080 --> 00:44:20,650
+we actually don't have
+to show a permission
+
+1098
+00:44:20,650 --> 00:44:21,710
+warning at that point.
+
+1099
+00:44:21,710 --> 00:44:24,990
+The permission is explicitly
+granted by the user when they
+
+1100
+00:44:24,990 --> 00:44:26,540
+directly interact with
+your extension.
+
+1101
+00:44:26,540 --> 00:44:27,800
+AUDIENCE: That's
+on the timeline
+
+1102
+00:44:27,800 --> 00:44:29,900
+to fix up the messages.
+
+1103
+00:44:29,900 --> 00:44:31,870
+MIKE WEST: It's on the timeline
+in that we're going
+
+1104
+00:44:31,870 --> 00:44:34,430
+to create new APIs that
+are less dangerous.
+
+1105
+00:44:34,430 --> 00:44:37,700
+And those new APIs will come
+with less scary permission
+
+1106
+00:44:37,700 --> 00:44:39,940
+messages because they simply
+are less scary.
+
+1107
+00:44:39,940 --> 00:44:43,320
+AUDIENCE: And my next question
+is, I like the on suspend and
+
+1108
+00:44:43,320 --> 00:44:45,890
+on install, because before we
+used to do them version check
+
+1109
+00:44:45,890 --> 00:44:47,030
+all the time.
+
+1110
+00:44:47,030 --> 00:44:49,710
+And for the on install, is there
+a way to know if it's
+
+1111
+00:44:49,710 --> 00:44:52,880
+updated or installed without
+doing a local storage check?
+
+1112
+00:44:52,880 --> 00:44:54,930
+MIKE WEST: No, you would have
+to set something locally.
+
+1113
+00:44:54,930 --> 00:44:56,680
+AUDIENCE: How about
+the on suspend?
+
+1114
+00:44:56,680 --> 00:44:59,170
+Is there a way to revoke
+suspension?
+
+1115
+00:44:59,170 --> 00:44:59,880
+MIKE WEST: No.
+
+1116
+00:44:59,880 --> 00:45:01,420
+AUDIENCE: So we can't
+do event preval--
+
+1117
+00:45:01,420 --> 00:45:05,130
+MIKE WEST: No, if your extension
+is suspended, it's
+
+1118
+00:45:05,130 --> 00:45:07,635
+going to be suspended unless the
+user interacts with it in
+
+1119
+00:45:07,635 --> 00:45:10,850
+some way or unless it's being
+kept alive by either having a
+
+1120
+00:45:10,850 --> 00:45:11,990
+long network request --
+
+1121
+00:45:11,990 --> 00:45:14,170
+AUDIENCE: So there's no way to
+wake it up instantly, like--
+
+1122
+00:45:14,170 --> 00:45:15,450
+MIKE WEST: That would
+be the alarms API.
+
+1123
+00:45:15,450 --> 00:45:17,740
+So you can say that at some
+point in the future, I want to
+
+1124
+00:45:17,740 --> 00:45:18,930
+wake up again.
+
+1125
+00:45:18,930 --> 00:45:21,760
+So inside of the on suspend
+event , you could certainly
+
+1126
+00:45:21,760 --> 00:45:23,080
+say, you know, in five minutes,
+
+1127
+00:45:23,080 --> 00:45:24,530
+wake me up to do something.
+
+1128
+00:45:24,530 --> 00:45:27,322
+But that would be
+your mechanism.
+
+1129
+00:45:27,322 --> 00:45:27,920
+AUDIENCE: OK, thank you.
+
+1130
+00:45:27,920 --> 00:45:29,201
+MIKE WEST: Thank you.
+
+1131
+00:45:29,201 --> 00:45:29,630
+AUDIENCE: Hi.
+
+1132
+00:45:29,630 --> 00:45:33,200
+Are there any updates on
+detecting when a user
+
+1133
+00:45:33,200 --> 00:45:35,200
+uninstalls an extension?
+
+1134
+00:45:35,200 --> 00:45:37,410
+MIKE WEST: None that
+I know of, no.
+
+1135
+00:45:37,410 --> 00:45:39,560
+That's definitely something
+that we can talk about.
+
+1136
+00:45:39,560 --> 00:45:43,192
+I'd suggest, if there's not
+already a bug filed, file a
+
+1137
+00:45:43,192 --> 00:45:44,240
+bug and send them to me.
+
+1138
+00:45:44,240 --> 00:45:44,970
+AUDIENCE: It's there.
+
+1139
+00:45:44,970 --> 00:45:45,970
+MIKE WEST: OK.
+
+1140
+00:45:45,970 --> 00:45:47,520
+Send me the ID, if
+you don't mind.
+
+1141
+00:45:47,520 --> 00:45:48,800
+AUDIENCE: I can do that.
+
+1142
+00:45:48,800 --> 00:45:49,490
+MIKE WEST: I'll take
+a look at it.
+
+1143
+00:45:49,490 --> 00:45:49,880
+Thank you.
+
+1144
+00:45:49,880 --> 00:45:50,560
+AUDIENCE: Thank you.
+
+1145
+00:45:50,560 --> 00:45:51,810
+MIKE WEST: Thank you.
+
+1146
+00:45:51,810 --> 00:45:55,280
+
+1147
+00:45:55,280 --> 00:45:56,890
+AUDIENCE: Question about
+potentially selling
+
+1148
+00:45:56,890 --> 00:45:59,890
+extensions, do you-- is there a
+plan in the store to extend
+
+1149
+00:45:59,890 --> 00:46:02,060
+the apps, like purchase ability
+
+1150
+00:46:02,060 --> 00:46:04,620
+APIs into Chrome extension?
+
+1151
+00:46:04,620 --> 00:46:06,470
+MIKE WEST: There's nothing
+to announce.
+
+1152
+00:46:06,470 --> 00:46:08,650
+I don't know of any plans.
+
+1153
+00:46:08,650 --> 00:46:12,010
+AUDIENCE: OK then, a subset to
+that, what would Chrome's--
+
+1154
+00:46:12,010 --> 00:46:15,880
+or, potentially, what would
+the thought be on,
+
+1155
+00:46:15,880 --> 00:46:19,470
+hypothetically, bundling an app
+in the store and the app's
+
+1156
+00:46:19,470 --> 00:46:24,020
+sole existence just be a license
+file that I can sell
+
+1157
+00:46:24,020 --> 00:46:27,490
+and then use the Chrome
+management permissions to
+
+1158
+00:46:27,490 --> 00:46:30,080
+check the existence of
+installation of both and
+
+1159
+00:46:30,080 --> 00:46:33,140
+thereby shoehorn some way
+to sell an extension.
+
+1160
+00:46:33,140 --> 00:46:36,740
+If I managed to do that, would
+that somehow get me kicked out
+
+1161
+00:46:36,740 --> 00:46:37,300
+of the store?
+
+1162
+00:46:37,300 --> 00:46:40,140
+MIKE WEST: It sounds
+interesting.
+
+1163
+00:46:40,140 --> 00:46:40,880
+AUDIENCE: All right,
+well, [INAUDIBLE].
+
+1164
+00:46:40,880 --> 00:46:41,500
+MIKE WEST: That's the
+first I've heard of
+
+1165
+00:46:41,500 --> 00:46:42,080
+something like that.
+
+1166
+00:46:42,080 --> 00:46:43,330
+So--
+
+1167
+00:46:43,330 --> 00:46:45,380
+
+1168
+00:46:45,380 --> 00:46:47,950
+AUDIENCE: Currently, building
+cross-browser extensions
+
+1169
+00:46:47,950 --> 00:46:50,850
+across different browsers
+is a pain.
+
+1170
+00:46:50,850 --> 00:46:54,210
+The more and more we use
+advanced Chrome APIs, we are
+
+1171
+00:46:54,210 --> 00:46:57,090
+alienating ourselves from
+Safari and Firefox.
+
+1172
+00:46:57,090 --> 00:46:59,190
+I'm not even talking about IE.
+
+1173
+00:46:59,190 --> 00:47:01,850
+Like browsers-- even like Safari
+that chooses that kit,
+
+1174
+00:47:01,850 --> 00:47:03,840
+we are alienating ourselves.
+
+1175
+00:47:03,840 --> 00:47:08,537
+Are there any plans from
+Chromium to prescribe a base
+
+1176
+00:47:08,537 --> 00:47:12,970
+set of APIs or form a consortium
+so that these are
+
+1177
+00:47:12,970 --> 00:47:14,860
+some basic APIs that
+should be present
+
+1178
+00:47:14,860 --> 00:47:16,860
+across all the browsers.
+
+1179
+00:47:16,860 --> 00:47:19,410
+[INTERPOSING VOICES]
+
+1180
+00:47:19,410 --> 00:47:21,780
+MIKE WEST: Part of the issue,
+I think, is that extensions
+
+1181
+00:47:21,780 --> 00:47:23,960
+really enable you to dive deeply
+into the way that a
+
+1182
+00:47:23,960 --> 00:47:24,820
+browser works.
+
+1183
+00:47:24,820 --> 00:47:28,880
+And they're really well bound
+together with the way the
+
+1184
+00:47:28,880 --> 00:47:31,700
+browser itself works.
+
+1185
+00:47:31,700 --> 00:47:36,080
+I think there probably would be
+value in figuring out some
+
+1186
+00:47:36,080 --> 00:47:41,570
+way of dealing with extensions
+in a cross-browser fashion.
+
+1187
+00:47:41,570 --> 00:47:44,570
+What we think, however, is that
+extensions are really
+
+1188
+00:47:44,570 --> 00:47:46,050
+based on web technologies.
+
+1189
+00:47:46,050 --> 00:47:48,270
+And to whatever extent possible,
+you should be
+
+1190
+00:47:48,270 --> 00:47:51,750
+building things in HTML and
+CSS and JavaScript.
+
+1191
+00:47:51,750 --> 00:47:54,260
+And those sorts of things,
+especially the back end
+
+1192
+00:47:54,260 --> 00:47:57,070
+portion, should be reusable
+across browsers.
+
+1193
+00:47:57,070 --> 00:47:59,740
+I think you can look at
+extensions, like HTTPS
+
+1194
+00:47:59,740 --> 00:48:02,430
+Everywhere, that have presence
+on multiple browsers.
+
+1195
+00:48:02,430 --> 00:48:04,530
+And what they've basically done
+is create a library in
+
+1196
+00:48:04,530 --> 00:48:07,350
+the back end and then put a
+thin shell on top of that
+
+1197
+00:48:07,350 --> 00:48:10,650
+library that lets them target
+both Firefox and Chrome.
+
+1198
+00:48:10,650 --> 00:48:12,530
+We think that's a pretty
+successful model because it
+
+1199
+00:48:12,530 --> 00:48:14,980
+enables them to do the things
+that they do really well--
+
+1200
+00:48:14,980 --> 00:48:16,270
+building this library--
+
+1201
+00:48:16,270 --> 00:48:18,990
+and then allow the browsers to
+do the things that they do
+
+1202
+00:48:18,990 --> 00:48:21,930
+really well by having specific
+APIs for each.
+
+1203
+00:48:21,930 --> 00:48:22,920
+But you're entirely correct.
+
+1204
+00:48:22,920 --> 00:48:25,960
+It would be nice if everything
+was the same everywhere.
+
+1205
+00:48:25,960 --> 00:48:28,490
+That's simply not where
+we are right now.
+
+1206
+00:48:28,490 --> 00:48:30,770
+AUDIENCE: I have another
+question about extending on
+
+1207
+00:48:30,770 --> 00:48:32,230
+the malicious extensions.
+
+1208
+00:48:32,230 --> 00:48:34,920
+Say if an extension currently
+requests x number of
+
+1209
+00:48:34,920 --> 00:48:38,340
+permissions and on a remote
+update it's going to access
+
+1210
+00:48:38,340 --> 00:48:41,220
+more permissions to do
+some thing that it
+
+1211
+00:48:41,220 --> 00:48:42,050
+shouldn't be doing.
+
+1212
+00:48:42,050 --> 00:48:44,690
+Are there any things
+to prevent that?
+
+1213
+00:48:44,690 --> 00:48:46,130
+Like, say, one of the--
+
+1214
+00:48:46,130 --> 00:48:47,750
+it might not be intentional.
+
+1215
+00:48:47,750 --> 00:48:50,510
+One of those popular extensions
+are putting
+
+1216
+00:48:50,510 --> 00:48:52,580
+affiliate links on
+Google search.
+
+1217
+00:48:52,580 --> 00:48:54,330
+Like, basically, it could put
+a content script and do
+
+1218
+00:48:54,330 --> 00:48:55,270
+anything it wants.
+
+1219
+00:48:55,270 --> 00:48:58,190
+What are steps from those?
+
+1220
+00:48:58,190 --> 00:49:00,190
+MIKE WEST: Currently, if an
+extension requests more
+
+1221
+00:49:00,190 --> 00:49:03,110
+permissions, then it'll be
+disabled on update until the
+
+1222
+00:49:03,110 --> 00:49:04,880
+user specifically enables it.
+
+1223
+00:49:04,880 --> 00:49:07,900
+So, they'll get an info bar at
+the top of-- or, actually,
+
+1224
+00:49:07,900 --> 00:49:08,700
+it's not an info bar anymore.
+
+1225
+00:49:08,700 --> 00:49:11,110
+It's a pop-up that says, this
+extension requested more
+
+1226
+00:49:11,110 --> 00:49:11,900
+permissions.
+
+1227
+00:49:11,900 --> 00:49:13,640
+It's been disabled.
+
+1228
+00:49:13,640 --> 00:49:15,730
+And you can re-enable
+it from that menu.
+
+1229
+00:49:15,730 --> 00:49:17,880
+So it gives you the ability to
+determine that the extension
+
+1230
+00:49:17,880 --> 00:49:20,130
+is now requesting more
+permissions and to evaluate
+
+1231
+00:49:20,130 --> 00:49:22,980
+that based on what you know
+that the extension does.
+
+1232
+00:49:22,980 --> 00:49:25,020
+What we'd also like to see is
+people moving more towards
+
+1233
+00:49:25,020 --> 00:49:28,340
+optional permissions, which we
+introduced a few months ago.
+
+1234
+00:49:28,340 --> 00:49:29,960
+I'm not exactly sure
+when it came out.
+
+1235
+00:49:29,960 --> 00:49:31,250
+But, by having optional
+
+1236
+00:49:31,250 --> 00:49:33,140
+permissions, we don't actually--
+
+1237
+00:49:33,140 --> 00:49:36,310
+if you request new optional
+permissions in a new extension
+
+1238
+00:49:36,310 --> 00:49:38,640
+update, we don't give you this
+info bar because it actually
+
+1239
+00:49:38,640 --> 00:49:40,820
+doesn't change the way
+the extension works.
+
+1240
+00:49:40,820 --> 00:49:43,440
+But it gives you the ability
+then to explicitly request
+
+1241
+00:49:43,440 --> 00:49:46,320
+those new things from the user
+when the time is right.
+
+1242
+00:49:46,320 --> 00:49:47,050
+So geolocation--
+
+1243
+00:49:47,050 --> 00:49:50,140
+for instance-- if I need to
+interact in some way with a
+
+1244
+00:49:50,140 --> 00:49:52,890
+user's location, I can make
+geolocation an optional
+
+1245
+00:49:52,890 --> 00:49:53,580
+permission.
+
+1246
+00:49:53,580 --> 00:49:55,200
+And then when the user actually
+interacts with the
+
+1247
+00:49:55,200 --> 00:49:57,780
+extension and needs that new
+permission, I can ask them
+
+1248
+00:49:57,780 --> 00:50:00,390
+then, when it's really quite
+relevant to the way that
+
+1249
+00:50:00,390 --> 00:50:01,996
+they're working.
+
+1250
+00:50:01,996 --> 00:50:02,840
+AUDIENCE: Thanks.
+
+1251
+00:50:02,840 --> 00:50:04,090
+MIKE WEST: Thank you.
+
+1252
+00:50:04,090 --> 00:50:06,360
+
+1253
+00:50:06,360 --> 00:50:06,855
+Go ahead.
+
+1254
+00:50:06,855 --> 00:50:08,340
+OK, one more.
+
+1255
+00:50:08,340 --> 00:50:09,830
+Two more.
+
+1256
+00:50:09,830 --> 00:50:12,170
+AUDIENCE: Hi, I work
+at Genentech.
+
+1257
+00:50:12,170 --> 00:50:17,360
+And we are trying to deploy
+Chrome for Business for all of
+
+1258
+00:50:17,360 --> 00:50:20,140
+our employees at Roche
+and Genentech.
+
+1259
+00:50:20,140 --> 00:50:20,970
+I was wondering--
+
+1260
+00:50:20,970 --> 00:50:21,950
+and we also have--
+
+1261
+00:50:21,950 --> 00:50:25,630
+currently, we just use the
+consumer Chrome browser and
+
+1262
+00:50:25,630 --> 00:50:27,840
+build extensions on it.
+
+1263
+00:50:27,840 --> 00:50:33,200
+Are there any limitations to
+using Chrome for business as
+
+1264
+00:50:33,200 --> 00:50:35,420
+far as building extensions
+goes?
+
+1265
+00:50:35,420 --> 00:50:38,760
+Or is it just the exact same
+sort of functionality?
+
+1266
+00:50:38,760 --> 00:50:42,420
+MIKE WEST: You actually have
+a really good mechanism for
+
+1267
+00:50:42,420 --> 00:50:44,440
+deploying Chrome inside
+of Enterprise.
+
+1268
+00:50:44,440 --> 00:50:46,500
+So it's very Enterprise ready.
+
+1269
+00:50:46,500 --> 00:50:48,820
+You can deploy it as an SI
+package and deal with
+
+1270
+00:50:48,820 --> 00:50:51,390
+corporate policies via,
+you know, like Active
+
+1271
+00:50:51,390 --> 00:50:52,610
+Directory or something.
+
+1272
+00:50:52,610 --> 00:50:55,170
+Via Active Directory you can
+actually set a list of
+
+1273
+00:50:55,170 --> 00:50:58,290
+extensions that should be auto
+installed or that are banned
+
+1274
+00:50:58,290 --> 00:51:00,430
+within the context of
+an organization.
+
+1275
+00:51:00,430 --> 00:51:03,370
+So, by using group policy in
+the same way that your IT
+
+1276
+00:51:03,370 --> 00:51:06,970
+department is probably quite
+familiar with, they'll be able
+
+1277
+00:51:06,970 --> 00:51:11,180
+to deploy Chrome locally and
+actually deal in a very
+
+1278
+00:51:11,180 --> 00:51:13,140
+detailed manner with the
+extensions that are
+
+1279
+00:51:13,140 --> 00:51:15,940
+pre-installed and also the
+extensions that aren't allowed
+
+1280
+00:51:15,940 --> 00:51:17,006
+to be installed.
+
+1281
+00:51:17,006 --> 00:51:17,450
+AUDIENCE: OK.
+
+1282
+00:51:17,450 --> 00:51:18,490
+Thank you.
+
+1283
+00:51:18,490 --> 00:51:19,740
+MIKE WEST: Thank you.
+
+1284
+00:51:19,740 --> 00:51:21,830
+
+1285
+00:51:21,830 --> 00:51:22,210
+Great.
+
+1286
+00:51:22,210 --> 00:51:23,240
+Thank you very much
+for your time.
+
+1287
+00:51:23,240 --> 00:51:26,000
+If you have any questions later
+on, I'll be at office
+
+1288
+00:51:26,000 --> 00:51:28,380
+hours pretty much
+all the time.
+
+1289
+00:51:28,380 --> 00:51:29,670
+So just come hang out.
+
+1290
+00:51:29,670 --> 00:51:31,930
+We'd be happy to answer any
+questions that you have.
+
+1291
+00:51:31,930 --> 00:51:33,180
+Thank you very much.
+
+1292
+00:51:33,180 --> 00:51:35,395
+
