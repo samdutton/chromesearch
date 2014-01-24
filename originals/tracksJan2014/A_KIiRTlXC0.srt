@@ -1,0 +1,4634 @@
+1
+00:00:00,000 --> 00:01:15,349
+[MUSIC PLAYING]
+
+2
+00:01:15,349 --> 00:01:25,400
+
+3
+00:01:25,400 --> 00:01:27,330
+JAKE ARCHIBALD: Hi, welcome
+to Google Developers Live.
+
+4
+00:01:27,330 --> 00:01:28,880
+This is mobile web Thursday.
+
+5
+00:01:28,880 --> 00:01:30,350
+But actually, we're not live.
+
+6
+00:01:30,350 --> 00:01:31,730
+We're pre-recording this.
+
+7
+00:01:31,730 --> 00:01:33,980
+And I guess it's not really
+Google Developers, either,
+
+8
+00:01:33,980 --> 00:01:36,740
+because you're not
+one of the gang.
+
+9
+00:01:36,740 --> 00:01:40,000
+So I guess it's just developers
+not live in a
+
+10
+00:01:40,000 --> 00:01:40,710
+Google studio.
+
+11
+00:01:40,710 --> 00:01:46,890
+So it's not GDL it's DNLIAGS,
+din-a-lags, DNLIAGS.
+
+12
+00:01:46,890 --> 00:01:48,410
+That's cool.
+
+13
+00:01:48,410 --> 00:01:50,310
+It kind of sounds a bit
+like dinner ladies.
+
+14
+00:01:50,310 --> 00:01:51,550
+We could go with that.
+
+15
+00:01:51,550 --> 00:01:52,120
+REMY SHARP: Din ladies.
+
+16
+00:01:52,120 --> 00:01:52,770
+JAKE ARCHIBALD: Yeah.
+
+17
+00:01:52,770 --> 00:01:56,650
+Anyway the studio today, we've
+got Remy Sharp from off of the
+
+18
+00:01:56,650 --> 00:02:00,010
+internet, from down
+in Brighton.
+
+19
+00:02:00,010 --> 00:02:03,486
+And I certainly hope he's going
+to brighten the studio.
+
+20
+00:02:03,486 --> 00:02:04,300
+REMY SHARP: [DRUM ROLL]
+
+21
+00:02:04,300 --> 00:02:06,250
+JAKE ARCHIBALD: Yeah.
+
+22
+00:02:06,250 --> 00:02:08,259
+This is the third one that I've
+done of this, so I can
+
+23
+00:02:08,259 --> 00:02:10,810
+teach you some TV
+producing tips.
+
+24
+00:02:10,810 --> 00:02:15,550
+So whenever you do a complete
+zinger like that, it's good to
+
+25
+00:02:15,550 --> 00:02:18,550
+kind of look at the camera and
+just smile and nod a bit,
+
+26
+00:02:18,550 --> 00:02:21,120
+because you want to give people
+time to recover from
+
+27
+00:02:21,120 --> 00:02:23,810
+their kind of gut-wrenching
+laughter, or else they'll
+
+28
+00:02:23,810 --> 00:02:27,160
+start missing the important
+facts and stuff.
+
+29
+00:02:27,160 --> 00:02:31,000
+So you're the big boss
+of Left Logic, right?
+
+30
+00:02:31,000 --> 00:02:31,920
+REMY SHARP: That's right.
+
+31
+00:02:31,920 --> 00:02:35,870
+I run my own little
+JavaScript-based development
+
+32
+00:02:35,870 --> 00:02:38,890
+agency thingamajiggy
+in Brighton.
+
+33
+00:02:38,890 --> 00:02:39,380
+JAKE ARCHIBALD: Cool.
+
+34
+00:02:39,380 --> 00:02:42,990
+So let's see what you Hove
+got in store for us.
+
+35
+00:02:42,990 --> 00:02:44,890
+It kind of works, because
+Brighton and Hove, right?
+
+36
+00:02:44,890 --> 00:02:45,696
+No, it doesn't work.
+
+37
+00:02:45,696 --> 00:02:46,870
+REMY SHARP: Separate place.
+
+38
+00:02:46,870 --> 00:02:50,260
+JAKE ARCHIBALD: So you built a
+game for Google I/O, right?
+
+39
+00:02:50,260 --> 00:02:51,140
+REMY SHARP: Yeah, that's right.
+
+40
+00:02:51,140 --> 00:02:52,550
+If I--
+
+41
+00:02:52,550 --> 00:02:53,800
+well, we can demo
+it now, right?
+
+42
+00:02:53,800 --> 00:02:54,250
+JAKE ARCHIBALD: Yeah.
+
+43
+00:02:54,250 --> 00:02:55,890
+It's called-- what
+is it called?
+
+44
+00:02:55,890 --> 00:02:57,950
+Face balls, ball faces?
+
+45
+00:02:57,950 --> 00:03:00,850
+REMY SHARP: Well, I'll show you
+the game, and then I'll
+
+46
+00:03:00,850 --> 00:03:01,680
+give you some back story.
+
+47
+00:03:01,680 --> 00:03:02,490
+So--
+
+48
+00:03:02,490 --> 00:03:03,700
+JAKE ARCHIBALD: Live
+demos never fail.
+
+49
+00:03:03,700 --> 00:03:06,460
+REMY SHARP: The game's called
+"Head Shots." You don't see
+
+50
+00:03:06,460 --> 00:03:08,960
+that bit where we did
+it earlier, and the
+
+51
+00:03:08,960 --> 00:03:09,850
+whole machine crashed.
+
+52
+00:03:09,850 --> 00:03:10,440
+JAKE ARCHIBALD: Oh yeah.
+
+53
+00:03:10,440 --> 00:03:12,250
+If we seem a little bit
+depressed, it's because we've
+
+54
+00:03:12,250 --> 00:03:13,640
+done a whole half an
+hour recording.
+
+55
+00:03:13,640 --> 00:03:15,030
+It went really well.
+
+56
+00:03:15,030 --> 00:03:19,610
+And then Paul Kinlan, who's our
+resident DJ today, just
+
+57
+00:03:19,610 --> 00:03:21,235
+kind of started crying.
+
+58
+00:03:21,235 --> 00:03:23,160
+A little tear ran down his
+face, and he said, the
+
+59
+00:03:23,160 --> 00:03:24,140
+machine's crashed, dude.
+
+60
+00:03:24,140 --> 00:03:24,810
+Machine's crashed.
+
+61
+00:03:24,810 --> 00:03:27,100
+So this is our second
+go at all of this.
+
+62
+00:03:27,100 --> 00:03:27,720
+But it's going to be
+better, right?
+
+63
+00:03:27,720 --> 00:03:27,980
+REMY SHARP: Yes.
+
+64
+00:03:27,980 --> 00:03:29,100
+JAKE ARCHIBALD: We should
+positive about
+
+65
+00:03:29,100 --> 00:03:29,930
+it rather than depressed.
+
+66
+00:03:29,930 --> 00:03:30,440
+REMY SHARP: It's going
+to be amazing.
+
+67
+00:03:30,440 --> 00:03:34,420
+So this amazing game is called
+"Head Shots," and I'm going to
+
+68
+00:03:34,420 --> 00:03:36,630
+amazingly hit New Game.
+
+69
+00:03:36,630 --> 00:03:37,780
+And it's going to give
+me a PIN number.
+
+70
+00:03:37,780 --> 00:03:41,326
+And that PIN number, Jake is
+going to put into his phone.
+
+71
+00:03:41,326 --> 00:03:42,220
+JAKE ARCHIBALD: I am.
+
+72
+00:03:42,220 --> 00:03:43,030
+It's a good feeling,
+by the way.
+
+73
+00:03:43,030 --> 00:03:43,435
+REMY SHARP: Thanks.
+
+74
+00:03:43,435 --> 00:03:44,600
+JAKE ARCHIBALD: This
+is excellent.
+
+75
+00:03:44,600 --> 00:03:47,610
+I really like-- because I'm on
+the PIN screen now, and it's
+
+76
+00:03:47,610 --> 00:03:49,365
+nice that when I go into the--
+
+77
+00:03:49,365 --> 00:03:50,720
+I don't know if this
+is going to work.
+
+78
+00:03:50,720 --> 00:03:53,120
+When I go into the screen to
+enter the PIN, it comes up,
+
+79
+00:03:53,120 --> 00:03:57,610
+and it's only got the numbers,
+the digits on there, which
+
+80
+00:03:57,610 --> 00:03:58,840
+it's just putting them--
+
+81
+00:03:58,840 --> 00:03:59,900
+REMY SHARP: No, it's not.
+
+82
+00:03:59,900 --> 00:04:01,195
+It's a pattern.
+
+83
+00:04:01,195 --> 00:04:04,550
+So I think I might
+not have mobile
+
+84
+00:04:04,550 --> 00:04:05,740
+connectivity, which is--
+
+85
+00:04:05,740 --> 00:04:06,880
+yes I do.
+
+86
+00:04:06,880 --> 00:04:08,620
+JAKE ARCHIBALD: We could put an
+awkward transition in here
+
+87
+00:04:08,620 --> 00:04:10,970
+where we just put like a screen
+and some hold music
+
+88
+00:04:10,970 --> 00:04:11,630
+until we're ready.
+
+89
+00:04:11,630 --> 00:04:13,842
+[HUMMING MUSIC]
+
+90
+00:04:13,842 --> 00:04:16,769
+REMY SHARP: Let's
+try that again.
+
+91
+00:04:16,769 --> 00:04:17,709
+JAKE ARCHIBALD: And
+we're back.
+
+92
+00:04:17,709 --> 00:04:19,700
+And we had a massive network
+failure, right?
+
+93
+00:04:19,700 --> 00:04:22,810
+Because you're using a data
+roaming SIM card.
+
+94
+00:04:22,810 --> 00:04:24,170
+You didn't realize you
+were doing that.
+
+95
+00:04:24,170 --> 00:04:26,070
+And you've run out of credit,
+which is probably costing you
+
+96
+00:04:26,070 --> 00:04:26,820
+quite a lot of money.
+
+97
+00:04:26,820 --> 00:04:30,510
+But we'll take you for a
+beer to make up for it.
+
+98
+00:04:30,510 --> 00:04:31,210
+That'll be OK.
+
+99
+00:04:31,210 --> 00:04:32,060
+REMY SHARP: Beer equals data.
+
+100
+00:04:32,060 --> 00:04:33,130
+JAKE ARCHIBALD: This
+could be the moment
+
+101
+00:04:33,130 --> 00:04:34,580
+where Remy became bankrupt.
+
+102
+00:04:34,580 --> 00:04:37,070
+But we're going to soldier on.
+
+103
+00:04:37,070 --> 00:04:38,800
+What we're going to do is you've
+got a pre-recorded
+
+104
+00:04:38,800 --> 00:04:40,560
+video of the game working.
+
+105
+00:04:40,560 --> 00:04:42,500
+We're going to look at that.
+
+106
+00:04:42,500 --> 00:04:45,400
+There was a great moment where
+Paul was going to have the
+
+107
+00:04:45,400 --> 00:04:50,190
+whole camera running through us
+fumbling and trying to make
+
+108
+00:04:50,190 --> 00:04:51,200
+the stream work and failing.
+
+109
+00:04:51,200 --> 00:04:52,820
+But Remy, you came up with
+a good solution,
+
+110
+00:04:52,820 --> 00:04:53,410
+though, didn't you?
+
+111
+00:04:53,410 --> 00:04:59,060
+You just fired out a string of
+obscene words, and that means
+
+112
+00:04:59,060 --> 00:05:00,010
+we can't put it out.
+
+113
+00:05:00,010 --> 00:05:01,670
+So I might use that
+trick next time.
+
+114
+00:05:01,670 --> 00:05:03,320
+REMY SHARP: So yeah, that pretty
+much guaranteed it
+
+115
+00:05:03,320 --> 00:05:04,440
+could never make it
+to the public.
+
+116
+00:05:04,440 --> 00:05:06,090
+JAKE ARCHIBALD: Exactly,
+exactly.
+
+117
+00:05:06,090 --> 00:05:07,680
+So yeah, let's go through
+the video.
+
+118
+00:05:07,680 --> 00:05:11,170
+REMY SHARP: Yeah, I'll walk you
+through "Head Shots," the
+
+119
+00:05:11,170 --> 00:05:14,160
+pre-recorded version of
+the interactive game.
+
+120
+00:05:14,160 --> 00:05:16,490
+So you're presented with
+a welcome screen.
+
+121
+00:05:16,490 --> 00:05:18,980
+You tap on New Game
+or Join Game.
+
+122
+00:05:18,980 --> 00:05:22,260
+So in this case, I'm going
+to join a game.
+
+123
+00:05:22,260 --> 00:05:25,950
+I'm given a PIN number by the
+other player, which actually
+
+124
+00:05:25,950 --> 00:05:26,760
+is going to be me.
+
+125
+00:05:26,760 --> 00:05:29,570
+So get prepared for your
+minds to be blown.
+
+126
+00:05:29,570 --> 00:05:32,520
+And then when it prompts you, it
+asks you if you want access
+
+127
+00:05:32,520 --> 00:05:34,650
+to the camera or not.
+
+128
+00:05:34,650 --> 00:05:35,250
+I say yes.
+
+129
+00:05:35,250 --> 00:05:36,710
+And you can see my face
+being streamed
+
+130
+00:05:36,710 --> 00:05:38,190
+directly into the camera.
+
+131
+00:05:38,190 --> 00:05:40,720
+So here I get to throw a
+ball at my own face.
+
+132
+00:05:40,720 --> 00:05:43,050
+And boom, in my face.
+
+133
+00:05:43,050 --> 00:05:45,210
+One down.
+
+134
+00:05:45,210 --> 00:05:47,365
+And then the other player kind
+of flicks back, and you'll see
+
+135
+00:05:47,365 --> 00:05:49,480
+him throw the ball towards
+me like that.
+
+136
+00:05:49,480 --> 00:05:50,990
+Awful shot, Remy, terrible.
+
+137
+00:05:50,990 --> 00:05:54,290
+And again.
+
+138
+00:05:54,290 --> 00:05:55,150
+Ah.
+
+139
+00:05:55,150 --> 00:05:57,270
+See now, I look like I hit
+myself in the face with my
+
+140
+00:05:57,270 --> 00:05:58,060
+ball, but I didn't.
+
+141
+00:05:58,060 --> 00:05:59,150
+JAKE ARCHIBALD: So it's actually
+a live stream there?
+
+142
+00:05:59,150 --> 00:06:00,320
+REMY SHARP: It's
+a live stream.
+
+143
+00:06:00,320 --> 00:06:03,210
+It's UDP data, peer to peer.
+
+144
+00:06:03,210 --> 00:06:08,610
+In this case, I was at home
+using my own local network,
+
+145
+00:06:08,610 --> 00:06:11,270
+which means that the
+connectivity should be superb,
+
+146
+00:06:11,270 --> 00:06:17,010
+because it's basically point
+to point, almost.
+
+147
+00:06:17,010 --> 00:06:21,410
+There is one part that sits
+on the server, the
+
+148
+00:06:21,410 --> 00:06:23,010
+discoverability of the game.
+
+149
+00:06:23,010 --> 00:06:26,530
+So knowing what PIN number, the
+PIN number is what joins
+
+150
+00:06:26,530 --> 00:06:27,830
+us together in the
+first place.
+
+151
+00:06:27,830 --> 00:06:29,265
+So there's a web--
+
+152
+00:06:29,265 --> 00:06:30,540
+oh, I hit myself again.
+
+153
+00:06:30,540 --> 00:06:33,440
+
+154
+00:06:33,440 --> 00:06:36,320
+The server is running a
+WebSockets server, which we
+
+155
+00:06:36,320 --> 00:06:43,230
+use to basically go up to and
+say, what is the WebRTC
+
+156
+00:06:43,230 --> 00:06:45,690
+library, tell me what I need to
+know to be able to connect
+
+157
+00:06:45,690 --> 00:06:46,590
+to this person.
+
+158
+00:06:46,590 --> 00:06:53,100
+It then sends down this data,
+this magical data about where
+
+159
+00:06:53,100 --> 00:06:55,020
+the person's located, I guess.
+
+160
+00:06:55,020 --> 00:06:57,590
+And then it starts using things
+like STUN, straight out
+
+161
+00:06:57,590 --> 00:07:02,300
+of "Star Wars," "Star Trek,"
+in fact, TURN servers, ICE.
+
+162
+00:07:02,300 --> 00:07:04,960
+Because we like a bit of ICE
+as well, some cool words.
+
+163
+00:07:04,960 --> 00:07:07,005
+JAKE ARCHIBALD: So this is all
+part of WebRTC, right?
+
+164
+00:07:07,005 --> 00:07:07,340
+REMY SHARP: Yeah.
+
+165
+00:07:07,340 --> 00:07:12,120
+And that then penetrates all the
+firewalls and proxies and
+
+166
+00:07:12,120 --> 00:07:17,490
+gets us to hold hands and share
+data and eventually be
+
+167
+00:07:17,490 --> 00:07:19,300
+able to get a peer
+to peer point.
+
+168
+00:07:19,300 --> 00:07:19,910
+Hopefully.
+
+169
+00:07:19,910 --> 00:07:21,590
+It's still new technology,
+that's the thing.
+
+170
+00:07:21,590 --> 00:07:22,610
+JAKE ARCHIBALD: It's good.
+
+171
+00:07:22,610 --> 00:07:25,860
+I deliberately made a decision
+not to learn any WebRTC
+
+172
+00:07:25,860 --> 00:07:28,260
+because it would make
+this interview flow
+
+173
+00:07:28,260 --> 00:07:28,980
+a lot better, right?
+
+174
+00:07:28,980 --> 00:07:31,390
+It's not just because I'm
+slightly incompetent, and
+
+175
+00:07:31,390 --> 00:07:33,500
+there's a big part of web
+technology that I haven't even
+
+176
+00:07:33,500 --> 00:07:34,260
+looked at yet.
+
+177
+00:07:34,260 --> 00:07:36,070
+This is a deliberate interview
+technique.
+
+178
+00:07:36,070 --> 00:07:36,730
+It's quite good.
+
+179
+00:07:36,730 --> 00:07:37,620
+REMY SHARP: Sound, sound.
+
+180
+00:07:37,620 --> 00:07:39,080
+JAKE ARCHIBALD: Shall we have
+a look at some of the code
+
+181
+00:07:39,080 --> 00:07:41,670
+that you're using to actually
+make this connection happen?
+
+182
+00:07:41,670 --> 00:07:42,000
+REMY SHARP: Yeah.
+
+183
+00:07:42,000 --> 00:07:47,555
+So like you, I'm not that
+well versed with WebRTC.
+
+184
+00:07:47,555 --> 00:07:52,680
+I should say as a caveat that
+I'm a developer with the
+
+185
+00:07:52,680 --> 00:07:56,430
+approached that basically
+bash away at
+
+186
+00:07:56,430 --> 00:07:58,460
+something until it fits.
+
+187
+00:07:58,460 --> 00:08:01,010
+And I watched my son putting
+some blocks into a wall.
+
+188
+00:08:01,010 --> 00:08:03,856
+And basically, the way he was
+getting the blocks through the
+
+189
+00:08:03,856 --> 00:08:05,260
+wall was the same
+way as I code.
+
+190
+00:08:05,260 --> 00:08:07,210
+I basically just keep turning it
+and turning it, and once it
+
+191
+00:08:07,210 --> 00:08:09,060
+works, it works,
+and I move on.
+
+192
+00:08:09,060 --> 00:08:10,650
+JAKE ARCHIBALD: Even if it's not
+the right shape, it fits.
+
+193
+00:08:10,650 --> 00:08:12,875
+REMY SHARP: Yeah, if you can
+take a circle and turn it so
+
+194
+00:08:12,875 --> 00:08:15,380
+it looks like a square and push
+it through a square hole,
+
+195
+00:08:15,380 --> 00:08:17,280
+then superb.
+
+196
+00:08:17,280 --> 00:08:19,230
+JAKE ARCHIBALD: So we should
+say the WebRTC stuff that
+
+197
+00:08:19,230 --> 00:08:22,920
+you're using there requires a
+beta version of Chrome for
+
+198
+00:08:22,920 --> 00:08:23,625
+Android at the moment.
+
+199
+00:08:23,625 --> 00:08:24,390
+REMY SHARP: Yes, sorry.
+
+200
+00:08:24,390 --> 00:08:26,980
+JAKE ARCHIBALD: But it's in
+the full stable version of
+
+201
+00:08:26,980 --> 00:08:27,850
+Chrome desktop.
+
+202
+00:08:27,850 --> 00:08:30,580
+And it's also in the beta
+version of Firefox as well.
+
+203
+00:08:30,580 --> 00:08:31,340
+REMY SHARP: Yeah.
+
+204
+00:08:31,340 --> 00:08:32,120
+JAKE ARCHIBALD: But even though
+it's in the beta,
+
+205
+00:08:32,120 --> 00:08:34,820
+you're having to turn on
+some flags before that.
+
+206
+00:08:34,820 --> 00:08:35,270
+REMY SHARP: Yeah.
+
+207
+00:08:35,270 --> 00:08:37,390
+So it might be worth
+just looking at the
+
+208
+00:08:37,390 --> 00:08:42,590
+phone briefly, producer.
+
+209
+00:08:42,590 --> 00:08:44,640
+So down here, oh gosh,
+somewhere.
+
+210
+00:08:44,640 --> 00:08:50,050
+So you probably have to do like
+Find in Page, WebRTC.
+
+211
+00:08:50,050 --> 00:08:50,850
+And there we go.
+
+212
+00:08:50,850 --> 00:08:54,910
+So we've got the WebRTC flag
+has been enabled manually.
+
+213
+00:08:54,910 --> 00:09:02,130
+And then you get the goodness
+of the WebRTC technology.
+
+214
+00:09:02,130 --> 00:09:05,900
+Which I should, before I
+show you some code, is
+
+215
+00:09:05,900 --> 00:09:08,360
+three sets of APIs.
+
+216
+00:09:08,360 --> 00:09:11,960
+So WebRTC is firstly,
+getUserMedia, which is the API
+
+217
+00:09:11,960 --> 00:09:16,930
+that gets you the webcam and
+basic video and audio.
+
+218
+00:09:16,930 --> 00:09:19,750
+And we've seen lots of demos
+where people are mashing it up
+
+219
+00:09:19,750 --> 00:09:22,230
+with WebGL and so on.
+
+220
+00:09:22,230 --> 00:09:26,390
+The second part is the
+DataChannel API, so
+
+221
+00:09:26,390 --> 00:09:29,770
+RTCDataChannel, which is like
+WebSockets but gives you that
+
+222
+00:09:29,770 --> 00:09:31,930
+peer to peer connection.
+
+223
+00:09:31,930 --> 00:09:33,260
+JAKE ARCHIBALD: So you're not
+just restricted to sending
+
+224
+00:09:33,260 --> 00:09:33,990
+video and audio.
+
+225
+00:09:33,990 --> 00:09:35,640
+It's normal data as well.
+
+226
+00:09:35,640 --> 00:09:36,340
+REMY SHARP: Yeah, yeah.
+
+227
+00:09:36,340 --> 00:09:39,800
+And with that, there's a flag
+that allows you to set whether
+
+228
+00:09:39,800 --> 00:09:42,560
+it's reliable or not.
+
+229
+00:09:42,560 --> 00:09:45,000
+And reliable, true or
+false, means switch
+
+230
+00:09:45,000 --> 00:09:46,690
+between UDP or TCP.
+
+231
+00:09:46,690 --> 00:09:51,630
+So you can use this for first
+person shooter type games,
+
+232
+00:09:51,630 --> 00:09:54,380
+where it doesn't matter how many
+bullets you fire, maybe.
+
+233
+00:09:54,380 --> 00:09:55,060
+I don't know.
+
+234
+00:09:55,060 --> 00:09:57,380
+I'm not the best games
+developer, which is why I
+
+235
+00:09:57,380 --> 00:09:58,100
+wrote a game.
+
+236
+00:09:58,100 --> 00:09:59,265
+JAKE ARCHIBALD: I don't
+call it UDP.
+
+237
+00:09:59,265 --> 00:10:01,640
+I call it UPD.
+
+238
+00:10:01,640 --> 00:10:03,110
+REMY SHARP: Because we've
+done this four times, I
+
+239
+00:10:03,110 --> 00:10:04,122
+now know that joke.
+
+240
+00:10:04,122 --> 00:10:04,600
+JAKE ARCHIBALD: Yeah.
+
+241
+00:10:04,600 --> 00:10:06,770
+I'm trying to recreate all the
+spontaneous jokes we did in
+
+242
+00:10:06,770 --> 00:10:08,010
+the first record.
+
+243
+00:10:08,010 --> 00:10:09,095
+I don't think that one
+was actually--
+
+244
+00:10:09,095 --> 00:10:09,410
+REMY SHARP: On the second.
+
+245
+00:10:09,410 --> 00:10:10,200
+JAKE ARCHIBALD: On the
+second record.
+
+246
+00:10:10,200 --> 00:10:13,590
+Yeah, we're having a difficult
+time trying to do--
+
+247
+00:10:13,590 --> 00:10:15,740
+REMY SHARP: Technology.
+
+248
+00:10:15,740 --> 00:10:18,530
+And the third part is
+the DataChannel API.
+
+249
+00:10:18,530 --> 00:10:23,130
+So the DataChannel is what
+allows me to stream video into
+
+250
+00:10:23,130 --> 00:10:25,780
+your device or stream video
+out to multiple
+
+251
+00:10:25,780 --> 00:10:27,320
+devices peer to peer.
+
+252
+00:10:27,320 --> 00:10:30,080
+So it's those three technologies
+put together that
+
+253
+00:10:30,080 --> 00:10:31,700
+gives you all of WebRTC.
+
+254
+00:10:31,700 --> 00:10:33,600
+JAKE ARCHIBALD: So when we were
+seeing the video there
+
+255
+00:10:33,600 --> 00:10:36,540
+and the game logic being sent,
+that was just direct from
+
+256
+00:10:36,540 --> 00:10:37,250
+device to device.
+
+257
+00:10:37,250 --> 00:10:38,865
+It wasn't all going through
+a central circle.
+
+258
+00:10:38,865 --> 00:10:39,280
+REMY SHARP: Yeah.
+
+259
+00:10:39,280 --> 00:10:39,550
+JAKE ARCHIBALD: OK.
+
+260
+00:10:39,550 --> 00:10:43,450
+So if you were making a game
+that was player to player, you
+
+261
+00:10:43,450 --> 00:10:45,920
+don't need to have a huge server
+that could control 100
+
+262
+00:10:45,920 --> 00:10:48,520
+games at once, because you can
+sort of pass it off to
+
+263
+00:10:48,520 --> 00:10:49,300
+individuals.
+
+264
+00:10:49,300 --> 00:10:51,610
+REMY SHARP: Which does also
+kind of bring its own
+
+265
+00:10:51,610 --> 00:10:54,630
+problems, like where does
+the game logic belong?
+
+266
+00:10:54,630 --> 00:10:56,710
+How do you protect your game
+from being hacked?
+
+267
+00:10:56,710 --> 00:11:00,260
+The way that I cleverly got
+around that problem was to not
+
+268
+00:11:00,260 --> 00:11:01,480
+put any protection in there.
+
+269
+00:11:01,480 --> 00:11:04,000
+So if you want to hack
+the game, you can do.
+
+270
+00:11:04,000 --> 00:11:06,780
+If I'm playing Jake and throwing
+my balls at his face,
+
+271
+00:11:06,780 --> 00:11:08,460
+then I could just cheat.
+
+272
+00:11:08,460 --> 00:11:10,955
+And I could say, every single
+one of them hit.
+
+273
+00:11:10,955 --> 00:11:12,640
+And I would win.
+
+274
+00:11:12,640 --> 00:11:14,740
+But obviously, I've cheated
+you, and that would
+
+275
+00:11:14,740 --> 00:11:16,345
+make us both sad.
+
+276
+00:11:16,345 --> 00:11:17,940
+JAKE ARCHIBALD: It's for fun.
+
+277
+00:11:17,940 --> 00:11:18,650
+It's not a competitive--
+
+278
+00:11:18,650 --> 00:11:19,860
+REMY SHARP: Yeah, there's
+no leader board or
+
+279
+00:11:19,860 --> 00:11:21,790
+anything like that.
+
+280
+00:11:21,790 --> 00:11:25,790
+So if I show you some of the
+code, a lot of it's kind of--
+
+281
+00:11:25,790 --> 00:11:28,870
+there's events flying back and
+forth inside of the game.
+
+282
+00:11:28,870 --> 00:11:32,630
+So when the game actually
+starts--
+
+283
+00:11:32,630 --> 00:11:34,150
+let me scroll up just
+a little bit.
+
+284
+00:11:34,150 --> 00:11:39,490
+I was actually on the right
+line of code, pinchange.
+
+285
+00:11:39,490 --> 00:11:43,070
+I have this event that says
+pinchange, which the server
+
+286
+00:11:43,070 --> 00:11:44,990
+will give me a new PIN
+to start the game.
+
+287
+00:11:44,990 --> 00:11:48,920
+And when you enter a PIN into
+your phone to start the "Head
+
+288
+00:11:48,920 --> 00:11:52,010
+Shots" game, it will trigger
+this event called pinchange,
+
+289
+00:11:52,010 --> 00:11:55,530
+which tells the entire
+application, right, go and
+
+290
+00:11:55,530 --> 00:11:59,550
+connect to the WebSocket
+on the server
+
+291
+00:11:59,550 --> 00:12:01,030
+and send it the PIN.
+
+292
+00:12:01,030 --> 00:12:03,750
+And that's the room
+I'm joining.
+
+293
+00:12:03,750 --> 00:12:04,950
+Because we need to be in
+a room to be able to
+
+294
+00:12:04,950 --> 00:12:06,140
+communicate--
+
+295
+00:12:06,140 --> 00:12:08,520
+to discover each other
+in the first place.
+
+296
+00:12:08,520 --> 00:12:12,880
+Once we've gotten into
+that room, it then
+
+297
+00:12:12,880 --> 00:12:14,620
+fires a bunch of events.
+
+298
+00:12:14,620 --> 00:12:16,760
+JAKE ARCHIBALD: So this dollar
+on you've got there is just--
+
+299
+00:12:16,760 --> 00:12:17,800
+REMY SHARP: Yeah, so I
+should say this is
+
+300
+00:12:17,800 --> 00:12:19,350
+not jQuery or Prototype.
+
+301
+00:12:19,350 --> 00:12:23,950
+This is I've written my own
+little library that's min.js,
+
+302
+00:12:23,950 --> 00:12:29,160
+this tiny library just to
+give me a few bits of--
+
+303
+00:12:29,160 --> 00:12:30,040
+a few shortcuts.
+
+304
+00:12:30,040 --> 00:12:32,800
+So on is an event listener.
+
+305
+00:12:32,800 --> 00:12:35,740
+And dollar on is just hitting
+a dummy element.
+
+306
+00:12:35,740 --> 00:12:39,460
+So I've got this one, it's like
+a simple pub/sub system.
+
+307
+00:12:39,460 --> 00:12:43,980
+And dollar is just
+querySelectorAll with a smiley
+
+308
+00:12:43,980 --> 00:12:48,190
+face because it needs
+a value, basically.
+
+309
+00:12:48,190 --> 00:12:49,480
+JAKE ARCHIBALD: I completely
+understand doing that.
+
+310
+00:12:49,480 --> 00:12:51,680
+Because I kind of worry about
+the amount of finger skin that
+
+311
+00:12:51,680 --> 00:12:53,980
+I've lost to typing
+addEventListener and
+
+312
+00:12:53,980 --> 00:12:58,560
+querySelectorAll when it--
+yeah, on and dollar.
+
+313
+00:12:58,560 --> 00:13:02,530
+REMY SHARP: So I've got this
+global event, pinchange, which
+
+314
+00:13:02,530 --> 00:13:05,700
+then tells the code to
+go ahead and connect.
+
+315
+00:13:05,700 --> 00:13:12,430
+And this line above, rtc.on
+connect, RTC is the webrtc.io
+
+316
+00:13:12,430 --> 00:13:14,050
+library's global object.
+
+317
+00:13:14,050 --> 00:13:17,170
+So there are a bunch of
+different WebRTC libraries.
+
+318
+00:13:17,170 --> 00:13:20,920
+I settled on webrtc.io, mostly
+because the demo was there in
+
+319
+00:13:20,920 --> 00:13:21,490
+the first place.
+
+320
+00:13:21,490 --> 00:13:22,980
+The demo is very hackable.
+
+321
+00:13:22,980 --> 00:13:24,610
+It meant that I had my prototype
+up and running
+
+322
+00:13:24,610 --> 00:13:25,260
+really quickly.
+
+323
+00:13:25,260 --> 00:13:27,470
+It took me a couple of hours to
+get my prototype working,
+
+324
+00:13:27,470 --> 00:13:29,070
+just based on that code.
+
+325
+00:13:29,070 --> 00:13:30,500
+There are a few bugs in it.
+
+326
+00:13:30,500 --> 00:13:34,340
+I should send pull requests
+to fix the bugs.
+
+327
+00:13:34,340 --> 00:13:41,560
+There's some others, peer.js,
+simplewebrtc.js.
+
+328
+00:13:41,560 --> 00:13:43,360
+I've got a feeling there's
+another word in there
+
+329
+00:13:43,360 --> 00:13:46,080
+somewhere, but maybe not.
+
+330
+00:13:46,080 --> 00:13:47,580
+These are two libraries.
+
+331
+00:13:47,580 --> 00:13:51,000
+I think peer.js only did data,
+and simplewebrtc only did
+
+332
+00:13:51,000 --> 00:13:53,860
+video and audio, but that
+have changed by now.
+
+333
+00:13:53,860 --> 00:13:56,130
+This was a month ago or two
+months ago I was working on
+
+334
+00:13:56,130 --> 00:13:56,540
+the project.
+
+335
+00:13:56,540 --> 00:14:01,390
+So webrtc.io is the one I
+settled on just because I
+
+336
+00:14:01,390 --> 00:14:03,640
+needed to kind of hit the ground
+running with WebRTC.
+
+337
+00:14:03,640 --> 00:14:05,960
+JAKE ARCHIBALD: I think this
+is the real domain of
+
+338
+00:14:05,960 --> 00:14:07,060
+libraries in the future.
+
+339
+00:14:07,060 --> 00:14:10,410
+We used to use libraries just
+to fix all the cross-browser
+
+340
+00:14:10,410 --> 00:14:11,160
+issues with the DOM.
+
+341
+00:14:11,160 --> 00:14:13,560
+But I think if you're dealing
+with just modern browsers, the
+
+342
+00:14:13,560 --> 00:14:15,310
+need to do something like
+that is less and less.
+
+343
+00:14:15,310 --> 00:14:18,210
+Like you have there just a tiny
+micro-library to save
+
+344
+00:14:18,210 --> 00:14:19,270
+yourself some typing.
+
+345
+00:14:19,270 --> 00:14:21,750
+But we've got all of these new
+web APIs, and a lot of them
+
+346
+00:14:21,750 --> 00:14:23,910
+are really low-level,
+like WebGL
+
+347
+00:14:23,910 --> 00:14:26,070
+especially, Web Audio, WebRTC.
+
+348
+00:14:26,070 --> 00:14:29,860
+So I think this is where
+libraries can really guide the
+
+349
+00:14:29,860 --> 00:14:32,300
+standards to show, these
+are the common
+
+350
+00:14:32,300 --> 00:14:33,110
+actions people are doing.
+
+351
+00:14:33,110 --> 00:14:35,290
+And then that'll feed back into
+the spec and hopefully
+
+352
+00:14:35,290 --> 00:14:36,110
+make it simpler.
+
+353
+00:14:36,110 --> 00:14:38,920
+REMY SHARP: So like in the
+webrtc.io library, there's
+
+354
+00:14:38,920 --> 00:14:45,190
+code that looks for the Opus
+codec or way of sending video,
+
+355
+00:14:45,190 --> 00:14:48,410
+which has to do with Firefox and
+getting interoperability
+
+356
+00:14:48,410 --> 00:14:51,030
+between Firefox and Chrome.
+
+357
+00:14:51,030 --> 00:14:52,250
+I wouldn't know how
+to do that.
+
+358
+00:14:52,250 --> 00:14:54,690
+And they're taking the message
+and doing some kind of
+
+359
+00:14:54,690 --> 00:14:57,850
+rewriting magic stuff.
+
+360
+00:14:57,850 --> 00:14:58,510
+So magic.
+
+361
+00:14:58,510 --> 00:15:01,790
+That's what I'm looking for out
+of my library is magic.
+
+362
+00:15:01,790 --> 00:15:04,990
+So when I get this connect
+event, I then connect the
+
+363
+00:15:04,990 --> 00:15:06,940
+video, which is basically I
+want to take your face and
+
+364
+00:15:06,940 --> 00:15:09,820
+stream it straight
+into my phone.
+
+365
+00:15:09,820 --> 00:15:12,465
+And that connect video
+looks like this.
+
+366
+00:15:12,465 --> 00:15:15,060
+
+367
+00:15:15,060 --> 00:15:16,750
+Pretty straightforward.
+
+368
+00:15:16,750 --> 00:15:19,770
+I check that I can do
+PeerConnection API.
+
+369
+00:15:19,770 --> 00:15:21,570
+I set up these options,
+which says video
+
+370
+00:15:21,570 --> 00:15:23,810
+should be 320 by 180.
+
+371
+00:15:23,810 --> 00:15:25,790
+I'll come onto that
+in a second.
+
+372
+00:15:25,790 --> 00:15:28,970
+And then WebRTC has this
+helper, createStream.
+
+373
+00:15:28,970 --> 00:15:34,950
+And it fires this callback,
+which I then trigger a custom
+
+374
+00:15:34,950 --> 00:15:37,600
+event that says the local
+stream is ready.
+
+375
+00:15:37,600 --> 00:15:39,820
+And if I'm in debug mode, I
+actually want to see it.
+
+376
+00:15:39,820 --> 00:15:43,190
+And the way that I've got my
+game set up is that the local
+
+377
+00:15:43,190 --> 00:15:43,740
+feed is ready.
+
+378
+00:15:43,740 --> 00:15:44,810
+The remote feed is ready.
+
+379
+00:15:44,810 --> 00:15:47,470
+When they're both ready, we're
+ready to play the game and
+
+380
+00:15:47,470 --> 00:15:49,920
+actually throw the balls.
+
+381
+00:15:49,920 --> 00:15:54,610
+Just going onto this bit, the
+video mandatory maxWidth.
+
+382
+00:15:54,610 --> 00:15:59,090
+This is to say, basically, send
+the video at 320 by 180.
+
+383
+00:15:59,090 --> 00:16:01,690
+And that's because my game only
+has a very small kind of
+
+384
+00:16:01,690 --> 00:16:04,730
+icon for the video.
+
+385
+00:16:04,730 --> 00:16:08,980
+I had this kind of assumption
+that, because it's with peer
+
+386
+00:16:08,980 --> 00:16:10,810
+to peer, that latency wouldn't
+be a problem.
+
+387
+00:16:10,810 --> 00:16:15,110
+But realistically, if we're
+playing a game, I could be
+
+388
+00:16:15,110 --> 00:16:17,020
+playing someone in the
+US from the UK.
+
+389
+00:16:17,020 --> 00:16:19,740
+I'm still going over the wire,
+still a lot of data.
+
+390
+00:16:19,740 --> 00:16:21,505
+This isn't a Skype
+application.
+
+391
+00:16:21,505 --> 00:16:23,850
+It doesn't need all that data
+to be going over the wire.
+
+392
+00:16:23,850 --> 00:16:25,520
+So I might as well make
+it as small as I
+
+393
+00:16:25,520 --> 00:16:27,550
+need it in the game.
+
+394
+00:16:27,550 --> 00:16:29,530
+JAKE ARCHIBALD: Would it make
+sense to have a similar option
+
+395
+00:16:29,530 --> 00:16:30,470
+for frames per second?
+
+396
+00:16:30,470 --> 00:16:31,980
+Is it something that you
+could bring down?
+
+397
+00:16:31,980 --> 00:16:32,260
+REMY SHARP: Yeah.
+
+398
+00:16:32,260 --> 00:16:35,140
+I think that there's stuff
+to do with aspect ratio
+
+399
+00:16:35,140 --> 00:16:36,160
+that you can set.
+
+400
+00:16:36,160 --> 00:16:37,750
+There might be stuff to do
+with frames per second.
+
+401
+00:16:37,750 --> 00:16:38,810
+Not all of it's implemented.
+
+402
+00:16:38,810 --> 00:16:39,550
+That's the thing.
+
+403
+00:16:39,550 --> 00:16:42,270
+And I, in fact, found that this
+wasn't doing anything for
+
+404
+00:16:42,270 --> 00:16:46,190
+my code, because there's a bug
+in webrtc.io where it's just
+
+405
+00:16:46,190 --> 00:16:49,990
+ignoring this value, which
+could be fixed already.
+
+406
+00:16:49,990 --> 00:16:53,030
+But it's really new,
+this technology.
+
+407
+00:16:53,030 --> 00:16:54,800
+So there's some parts that you
+read about, like there's
+
+408
+00:16:54,800 --> 00:16:56,150
+mandatory and optional.
+
+409
+00:16:56,150 --> 00:16:59,450
+And I don't know if there's
+frames per second.
+
+410
+00:16:59,450 --> 00:17:00,120
+There could well be.
+
+411
+00:17:00,120 --> 00:17:04,550
+It makes sense that you
+would have that.
+
+412
+00:17:04,550 --> 00:17:06,139
+JAKE ARCHIBALD: So
+if the device--
+
+413
+00:17:06,139 --> 00:17:08,660
+I assume there's equivalents
+for minimum
+
+414
+00:17:08,660 --> 00:17:09,670
+width and minimum height?
+
+415
+00:17:09,670 --> 00:17:11,380
+REMY SHARP: Yeah, I think so.
+
+416
+00:17:11,380 --> 00:17:12,930
+JAKE ARCHIBALD: So I guess that
+would be somewhere where
+
+417
+00:17:12,930 --> 00:17:14,960
+if the device was incapable of
+doing that, it would kind of
+
+418
+00:17:14,960 --> 00:17:15,725
+announce that.
+
+419
+00:17:15,725 --> 00:17:17,030
+REMY SHARP: Yeah.
+
+420
+00:17:17,030 --> 00:17:22,130
+I don't know what happens if
+it can't make it smaller.
+
+421
+00:17:22,130 --> 00:17:22,420
+Right.
+
+422
+00:17:22,420 --> 00:17:25,740
+So now, in this code, we've
+made a connection to the
+
+423
+00:17:25,740 --> 00:17:28,160
+WebSockets server, discovered
+the room, shared what room
+
+424
+00:17:28,160 --> 00:17:29,500
+we're joining.
+
+425
+00:17:29,500 --> 00:17:32,040
+We've got your face
+into the game.
+
+426
+00:17:32,040 --> 00:17:36,140
+So this rtc.createStream is
+behind the scenes basically
+
+427
+00:17:36,140 --> 00:17:39,310
+going to send it down the
+PeerConnection API.
+
+428
+00:17:39,310 --> 00:17:44,940
+And this piece of code exposes
+this init method.
+
+429
+00:17:44,940 --> 00:17:48,470
+And the init method inits
+the connection.
+
+430
+00:17:48,470 --> 00:17:51,800
+And what that does is basically
+listen for remote
+
+431
+00:17:51,800 --> 00:17:55,050
+streams, which is basically
+me joining your game.
+
+432
+00:17:55,050 --> 00:17:58,840
+And when I join your game, it
+attaches the stream, which is
+
+433
+00:17:58,840 --> 00:18:04,035
+the getUserMedia stream,
+typically, to an element that
+
+434
+00:18:04,035 --> 00:18:05,800
+has an ID of remote.
+
+435
+00:18:05,800 --> 00:18:08,850
+And then I have this extra
+check, which is where I've
+
+436
+00:18:08,850 --> 00:18:12,620
+found problems with not this
+particular line of code.
+
+437
+00:18:12,620 --> 00:18:14,950
+But this is the line of code
+that blocks the game from
+
+438
+00:18:14,950 --> 00:18:15,340
+actually running.
+
+439
+00:18:15,340 --> 00:18:17,260
+So when we were testing
+earlier, we
+
+440
+00:18:17,260 --> 00:18:19,210
+were having some problems.
+
+441
+00:18:19,210 --> 00:18:21,720
+There's some kind of weird
+network situation where the
+
+442
+00:18:21,720 --> 00:18:23,230
+data channel wouldn't open.
+
+443
+00:18:23,230 --> 00:18:25,100
+And if the data channel doesn't
+open, the game's not
+
+444
+00:18:25,100 --> 00:18:27,250
+ready to play.
+
+445
+00:18:27,250 --> 00:18:29,640
+And only when the data channel
+is open does it trigger the
+
+446
+00:18:29,640 --> 00:18:33,280
+remote is ready or
+readyremote.
+
+447
+00:18:33,280 --> 00:18:36,730
+And when the readyremote
+triggers, the game has a full
+
+448
+00:18:36,730 --> 00:18:39,940
+connection, both
+video and data.
+
+449
+00:18:39,940 --> 00:18:45,150
+As in video and kind
+of arbitrary data.
+
+450
+00:18:45,150 --> 00:18:46,590
+JAKE ARCHIBALD: Is this
+the point where the
+
+451
+00:18:46,590 --> 00:18:47,850
+race condition happens?
+
+452
+00:18:47,850 --> 00:18:48,220
+REMY SHARP: Right.
+
+453
+00:18:48,220 --> 00:18:54,990
+OK, so the first version of this
+code, I really wanted to
+
+454
+00:18:54,990 --> 00:18:57,770
+embrace the web in terms of
+having URLs to access
+
+455
+00:18:57,770 --> 00:18:58,150
+different pages.
+
+456
+00:18:58,150 --> 00:18:59,880
+So I had a welcome page.
+
+457
+00:18:59,880 --> 00:19:02,350
+You hit Join, you go
+to the join page.
+
+458
+00:19:02,350 --> 00:19:04,150
+And you have to put
+in a PIN code.
+
+459
+00:19:04,150 --> 00:19:06,760
+And when you hit go, it would
+take you to a waiting page,
+
+460
+00:19:06,760 --> 00:19:09,680
+and it would have this hanging
+XHR request that would sit,
+
+461
+00:19:09,680 --> 00:19:13,590
+asking the server, is
+the game ready?
+
+462
+00:19:13,590 --> 00:19:15,430
+And the game would say, no,
+I'm in waiting stage.
+
+463
+00:19:15,430 --> 00:19:18,410
+I'm going to leave this
+XHR connection open.
+
+464
+00:19:18,410 --> 00:19:21,440
+Now you would have your phone,
+or I'd do it, whichever way
+
+465
+00:19:21,440 --> 00:19:23,175
+round I started.
+
+466
+00:19:23,175 --> 00:19:26,350
+And you would start a game, and
+you would get a PIN code.
+
+467
+00:19:26,350 --> 00:19:28,340
+I've done this the wrong way
+around, but you're still with
+
+468
+00:19:28,340 --> 00:19:28,900
+me anyways.
+
+469
+00:19:28,900 --> 00:19:30,040
+JAKE ARCHIBALD: Yeah,
+yeah, I'm following.
+
+470
+00:19:30,040 --> 00:19:32,980
+REMY SHARP: You get a PIN code,
+and it has the same
+
+471
+00:19:32,980 --> 00:19:35,340
+hanging XHR request
+to the server.
+
+472
+00:19:35,340 --> 00:19:38,090
+And the game's one,
+two, three.
+
+473
+00:19:38,090 --> 00:19:39,770
+And the server says, right,
+we now have two
+
+474
+00:19:39,770 --> 00:19:40,840
+players in the game.
+
+475
+00:19:40,840 --> 00:19:43,630
+Change the state from
+waiting to ready,
+
+476
+00:19:43,630 --> 00:19:44,730
+which closes the XHR.
+
+477
+00:19:44,730 --> 00:19:47,635
+The hanging XHR request comes
+back to both of us.
+
+478
+00:19:47,635 --> 00:19:50,350
+It refreshes the page on
+both of our devices.
+
+479
+00:19:50,350 --> 00:19:54,360
+And we're immediately then both
+asked at the same time,
+
+480
+00:19:54,360 --> 00:19:57,710
+do you want to give access
+to the audio and video?
+
+481
+00:19:57,710 --> 00:20:01,350
+Do you want to open up a data
+stream to the other person?
+
+482
+00:20:01,350 --> 00:20:04,836
+And what I've found was it would
+go, yep, they are, then
+
+483
+00:20:04,836 --> 00:20:05,810
+oh, it's broken.
+
+484
+00:20:05,810 --> 00:20:07,300
+JAKE ARCHIBALD: So you tried to
+explain this to me before
+
+485
+00:20:07,300 --> 00:20:08,080
+we started recording.
+
+486
+00:20:08,080 --> 00:20:11,430
+And it wasn't quite
+going on ahead.
+
+487
+00:20:11,430 --> 00:20:14,930
+So we decided, and I'm very
+excited about the props, you
+
+488
+00:20:14,930 --> 00:20:16,290
+were going to try and
+explain this.
+
+489
+00:20:16,290 --> 00:20:17,160
+REMY SHARP: I have an analogy.
+
+490
+00:20:17,160 --> 00:20:18,370
+JAKE ARCHIBALD: So we have--
+
+491
+00:20:18,370 --> 00:20:19,230
+what do we have?
+
+492
+00:20:19,230 --> 00:20:19,360
+What is this?
+
+493
+00:20:19,360 --> 00:20:20,290
+REMY SHARP: So this
+is my analogy for
+
+494
+00:20:20,290 --> 00:20:21,390
+trying to make a call.
+
+495
+00:20:21,390 --> 00:20:24,080
+So I'm trying to make
+a call to you.
+
+496
+00:20:24,080 --> 00:20:26,810
+And I have my WebRTC
+paper cup phone.
+
+497
+00:20:26,810 --> 00:20:28,560
+And the thing is, you're trying
+to make a call to me,
+
+498
+00:20:28,560 --> 00:20:30,280
+and you have your WebRTC
+paper cup phone.
+
+499
+00:20:30,280 --> 00:20:35,050
+So if I put my phone up to my
+ear, and I try and make a call
+
+500
+00:20:35,050 --> 00:20:36,810
+to you, you want to
+do the same thing.
+
+501
+00:20:36,810 --> 00:20:38,640
+So we're both trying to make
+a call to each other.
+
+502
+00:20:38,640 --> 00:20:39,520
+JAKE ARCHIBALD: I can
+hear the ocean.
+
+503
+00:20:39,520 --> 00:20:41,110
+REMY SHARP: And I'm going to--
+
+504
+00:20:41,110 --> 00:20:41,260
+concentrate.
+
+505
+00:20:41,260 --> 00:20:42,510
+JAKE ARCHIBALD: Sorry.
+
+506
+00:20:42,510 --> 00:20:44,140
+
+507
+00:20:44,140 --> 00:20:45,830
+REMY SHARP: I'm going to try
+and make a call to you.
+
+508
+00:20:45,830 --> 00:20:46,830
+So I'm going to give you this
+side, and you're going to put
+
+509
+00:20:46,830 --> 00:20:49,180
+it up to your ear.
+
+510
+00:20:49,180 --> 00:20:50,870
+And you're going to give
+me your phone.
+
+511
+00:20:50,870 --> 00:20:51,460
+JAKE ARCHIBALD: Yeah, because
+you need to make a call to me.
+
+512
+00:20:51,460 --> 00:20:51,600
+REMY SHARP: Yeah.
+
+513
+00:20:51,600 --> 00:20:53,410
+And then I'm going to listen.
+
+514
+00:20:53,410 --> 00:20:56,510
+And see now, we're dangling.
+
+515
+00:20:56,510 --> 00:20:58,880
+We have dangly bits.
+
+516
+00:20:58,880 --> 00:21:01,640
+And this is why there's
+like a flash of--
+
+517
+00:21:01,640 --> 00:21:04,250
+the moment I had the phone
+still, there was a flash of
+
+518
+00:21:04,250 --> 00:21:04,790
+connectivity.
+
+519
+00:21:04,790 --> 00:21:07,750
+And the moment I kind of
+let go, it just goes.
+
+520
+00:21:07,750 --> 00:21:11,520
+So that was with the help of
+Paul Kinlan that I needed to
+
+521
+00:21:11,520 --> 00:21:13,850
+rewrite all my code into
+a single-page app.
+
+522
+00:21:13,850 --> 00:21:15,560
+And by rewriting the code--
+
+523
+00:21:15,560 --> 00:21:16,770
+JAKE ARCHIBALD: Are we done?
+
+524
+00:21:16,770 --> 00:21:17,470
+Sorry.
+
+525
+00:21:17,470 --> 00:21:22,580
+REMY SHARP: By rewriting the
+code into a single-page app,
+
+526
+00:21:22,580 --> 00:21:26,380
+what happens is you start the
+game, and you get your phone,
+
+527
+00:21:26,380 --> 00:21:28,346
+and you make your connection,
+and you tell me what
+
+528
+00:21:28,346 --> 00:21:29,180
+the PIN number is.
+
+529
+00:21:29,180 --> 00:21:31,980
+And instead of me trying to
+dial you, I already know
+
+530
+00:21:31,980 --> 00:21:32,840
+you're there.
+
+531
+00:21:32,840 --> 00:21:34,450
+And you give me the cup.
+
+532
+00:21:34,450 --> 00:21:37,370
+So then we can talk
+to each other.
+
+533
+00:21:37,370 --> 00:21:38,760
+JAKE ARCHIBALD: That's
+not-- oh yes,
+
+534
+00:21:38,760 --> 00:21:40,680
+that's how phones work.
+
+535
+00:21:40,680 --> 00:21:42,620
+REMY SHARP: It should
+be ear to ear.
+
+536
+00:21:42,620 --> 00:21:43,460
+JAKE ARCHIBALD: I guess it's--
+
+537
+00:21:43,460 --> 00:21:44,550
+REMY SHARP: Streaming
+consciousness.
+
+538
+00:21:44,550 --> 00:21:46,580
+JAKE ARCHIBALD: I think
+if WebRTC is--
+
+539
+00:21:46,580 --> 00:21:48,760
+because the model we've built
+here is you're either talking
+
+540
+00:21:48,760 --> 00:21:49,080
+or listening.
+
+541
+00:21:49,080 --> 00:21:50,550
+But WebRTC can do both, right?
+
+542
+00:21:50,550 --> 00:21:52,090
+So you would have--
+
+543
+00:21:52,090 --> 00:21:53,490
+REMY SHARP: I would have
+a second one for data.
+
+544
+00:21:53,490 --> 00:21:55,520
+JAKE ARCHIBALD: No,
+other way around.
+
+545
+00:21:55,520 --> 00:21:59,630
+So my ear to your mouth.
+
+546
+00:21:59,630 --> 00:22:00,786
+REMY SHARP: This is why--
+
+547
+00:22:00,786 --> 00:22:01,640
+JAKE ARCHIBALD: There we go.
+
+548
+00:22:01,640 --> 00:22:03,160
+So that's WebRTC, right?
+
+549
+00:22:03,160 --> 00:22:04,260
+REMY SHARP: This is
+the data-- yeah.
+
+550
+00:22:04,260 --> 00:22:05,510
+JAKE ARCHIBALD: This is two
+developers who don't know how
+
+551
+00:22:05,510 --> 00:22:07,270
+basic telephony works.
+
+552
+00:22:07,270 --> 00:22:09,080
+OK.
+
+553
+00:22:09,080 --> 00:22:09,570
+That helps.
+
+554
+00:22:09,570 --> 00:22:12,110
+I think that actually,
+everyone would really
+
+555
+00:22:12,110 --> 00:22:14,370
+understand there, especially
+with the cups.
+
+556
+00:22:14,370 --> 00:22:16,930
+REMY SHARP: The thing is, I
+don't know if there's a bug in
+
+557
+00:22:16,930 --> 00:22:20,600
+my code, there's a bug in the
+webrtc.io library, or if
+
+558
+00:22:20,600 --> 00:22:25,100
+there's just a bug generally
+in the workflow of WebRTC.
+
+559
+00:22:25,100 --> 00:22:29,170
+And it was on Paul Kinlan's
+advice to move to a
+
+560
+00:22:29,170 --> 00:22:31,610
+single-page app so that
+you don't have that
+
+561
+00:22:31,610 --> 00:22:32,410
+race condition anymore.
+
+562
+00:22:32,410 --> 00:22:34,930
+And it solved the problem, and
+I just wanted to move on and
+
+563
+00:22:34,930 --> 00:22:36,810
+work on the rest
+of the problem.
+
+564
+00:22:36,810 --> 00:22:43,360
+But one day I'll revisit that
+and try and work out where the
+
+565
+00:22:43,360 --> 00:22:43,830
+problem is.
+
+566
+00:22:43,830 --> 00:22:48,020
+And the thing is it's such new
+technology that we need to be
+
+567
+00:22:48,020 --> 00:22:49,250
+making these mistakes.
+
+568
+00:22:49,250 --> 00:22:50,530
+And maybe that's the way
+that you have to do it.
+
+569
+00:22:50,530 --> 00:22:52,660
+You need the single-page
+app for persistence.
+
+570
+00:22:52,660 --> 00:22:55,640
+The example I was giving you
+before, when we were talking
+
+571
+00:22:55,640 --> 00:23:01,110
+earlier, is if JSBin had a
+video stream, if you were
+
+572
+00:23:01,110 --> 00:23:03,480
+teaching using JSBin, and you
+had WebRTC in a video down in
+
+573
+00:23:03,480 --> 00:23:07,180
+the corner, if you wanted to
+create a new bin, and you had
+
+574
+00:23:07,180 --> 00:23:09,720
+everyone kind of following
+along, you couldn't refresh
+
+575
+00:23:09,720 --> 00:23:13,050
+the page, because when you
+refresh, it will lose the
+
+576
+00:23:13,050 --> 00:23:14,450
+WebRTC connection.
+
+577
+00:23:14,450 --> 00:23:14,820
+You'll kill it.
+
+578
+00:23:14,820 --> 00:23:19,410
+So you'll need a single-page
+app to say, right, new bin,
+
+579
+00:23:19,410 --> 00:23:22,880
+and it keeps the video, and I
+can tell the people in my
+
+580
+00:23:22,880 --> 00:23:26,970
+class that here's the URL
+via the chat window.
+
+581
+00:23:26,970 --> 00:23:29,350
+So someone should build
+me that feature, too.
+
+582
+00:23:29,350 --> 00:23:30,456
+But yeah.
+
+583
+00:23:30,456 --> 00:23:31,470
+Anyway.
+
+584
+00:23:31,470 --> 00:23:33,670
+JAKE ARCHIBALD: So the
+other part of it was
+
+585
+00:23:33,670 --> 00:23:35,090
+the graphics, right?
+
+586
+00:23:35,090 --> 00:23:39,120
+You had things moving
+in multiple layers.
+
+587
+00:23:39,120 --> 00:23:41,060
+How did you go about drawing
+what we were
+
+588
+00:23:41,060 --> 00:23:41,990
+seeing on the screen?
+
+589
+00:23:41,990 --> 00:23:45,470
+REMY SHARP: So I started off
+with just DOM nodes.
+
+590
+00:23:45,470 --> 00:23:47,290
+And the idea was
+I'd just make--
+
+591
+00:23:47,290 --> 00:23:51,990
+I'd use a scale, translate
+scale, transform scale.
+
+592
+00:23:51,990 --> 00:23:53,830
+I know how to code it.
+
+593
+00:23:53,830 --> 00:23:55,900
+I don't know how to say it.
+
+594
+00:23:55,900 --> 00:23:58,800
+And that would work, right?
+
+595
+00:23:58,800 --> 00:24:01,825
+So I thought I'd sit down with
+Seb Lee-Delisle and just
+
+596
+00:24:01,825 --> 00:24:03,640
+borrow some advice off him.
+
+597
+00:24:03,640 --> 00:24:06,730
+And he kind of went, no.
+
+598
+00:24:06,730 --> 00:24:08,280
+You need to use three.js.
+
+599
+00:24:08,280 --> 00:24:14,530
+So I kind of put aside my lame
+attempts at doing 3D with just
+
+600
+00:24:14,530 --> 00:24:16,180
+scaling a DOM, which
+you can do.
+
+601
+00:24:16,180 --> 00:24:19,200
+It's more that I wouldn't
+have managed to do it.
+
+602
+00:24:19,200 --> 00:24:20,000
+It would have looked crap.
+
+603
+00:24:20,000 --> 00:24:23,830
+And he pointed out that by using
+three.js, we're able to
+
+604
+00:24:23,830 --> 00:24:26,800
+create a camera and a point of
+view, and there's a real 3D
+
+605
+00:24:26,800 --> 00:24:28,120
+scene there in the
+first place.
+
+606
+00:24:28,120 --> 00:24:31,680
+And the character that you're
+throwing the ball at would
+
+607
+00:24:31,680 --> 00:24:34,200
+look the right size and
+the right perspective.
+
+608
+00:24:34,200 --> 00:24:35,870
+And the ball as it
+went through 3D
+
+609
+00:24:35,870 --> 00:24:37,290
+space would scale correctly.
+
+610
+00:24:37,290 --> 00:24:41,400
+Not your dodgy algorithm
+to scale it.
+
+611
+00:24:41,400 --> 00:24:44,525
+JAKE ARCHIBALD: I had the same
+problem because I haven't done
+
+612
+00:24:44,525 --> 00:24:45,460
+a lot of 3D programming.
+
+613
+00:24:45,460 --> 00:24:47,170
+So when it came to doing
+something where something was
+
+614
+00:24:47,170 --> 00:24:49,400
+going to go away from the
+camera, my first reaction was,
+
+615
+00:24:49,400 --> 00:24:50,400
+well, I've got the
+scale value.
+
+616
+00:24:50,400 --> 00:24:51,950
+I can just move from
+one to the other.
+
+617
+00:24:51,950 --> 00:24:55,140
+And you start to realize that
+it doesn't quite move in the
+
+618
+00:24:55,140 --> 00:24:57,580
+same way, because it doesn't
+have the perspective.
+
+619
+00:24:57,580 --> 00:25:01,140
+It's scaling linearly, whereas
+when something moves further
+
+620
+00:25:01,140 --> 00:25:03,170
+away from you, it doesn't
+scale linearly.
+
+621
+00:25:03,170 --> 00:25:06,480
+And I hacked it by using a
+sine wave or something.
+
+622
+00:25:06,480 --> 00:25:09,720
+And it has that uncanny
+valley of, it
+
+623
+00:25:09,720 --> 00:25:11,080
+doesn't look quite right.
+
+624
+00:25:11,080 --> 00:25:12,880
+So that's-- three.js
+would solve that.
+
+625
+00:25:12,880 --> 00:25:14,480
+REMY SHARP: Yeah, that's what
+he was pointing out, that by
+
+626
+00:25:14,480 --> 00:25:17,360
+using three.js to do this
+properly, it will feel right
+
+627
+00:25:17,360 --> 00:25:19,250
+and will look right.
+
+628
+00:25:19,250 --> 00:25:22,850
+So I spent a couple of hours
+with him and created this new
+
+629
+00:25:22,850 --> 00:25:27,010
+kind of scene with the floor,
+and this object, it would
+
+630
+00:25:27,010 --> 00:25:30,420
+throw into the scene and
+bounce off the floor.
+
+631
+00:25:30,420 --> 00:25:30,910
+Great.
+
+632
+00:25:30,910 --> 00:25:34,510
+Took that back to the office,
+loaded it on the Android, had
+
+633
+00:25:34,510 --> 00:25:36,440
+a beautiful 60 frames per
+second on the desktop.
+
+634
+00:25:36,440 --> 00:25:39,680
+Got a beautiful four frames
+per second on the Android.
+
+635
+00:25:39,680 --> 00:25:43,820
+Pretty much wept into my lap.
+
+636
+00:25:43,820 --> 00:25:45,480
+JAKE ARCHIBALD: What renderer
+were you using
+
+637
+00:25:45,480 --> 00:25:46,290
+in three.js, though?
+
+638
+00:25:46,290 --> 00:25:47,770
+REMY SHARP: So that's just
+the canvas renderer.
+
+639
+00:25:47,770 --> 00:25:49,210
+JAKE ARCHIBALD: Normal
+2D canvas, yeah?
+
+640
+00:25:49,210 --> 00:25:50,200
+REMY SHARP: The 2D
+canvas, yeah.
+
+641
+00:25:50,200 --> 00:25:53,390
+And it's only post-project
+I was like, oh, maybe I
+
+642
+00:25:53,390 --> 00:25:55,910
+should've had the
+WebGL renderer.
+
+643
+00:25:55,910 --> 00:25:59,110
+Because I was allowed to choose
+any technology I want.
+
+644
+00:25:59,110 --> 00:26:01,530
+But, you know, hindsight.
+
+645
+00:26:01,530 --> 00:26:05,670
+So I actually realized that the
+problem that I was facing
+
+646
+00:26:05,670 --> 00:26:07,845
+was I was rendering a massive
+scene, or a massive scene for
+
+647
+00:26:07,845 --> 00:26:09,990
+the device, at least.
+
+648
+00:26:09,990 --> 00:26:12,930
+And I found that by putting--
+
+649
+00:26:12,930 --> 00:26:16,390
+so I originally had both video
+feeds going into the DOMs.
+
+650
+00:26:16,390 --> 00:26:20,390
+Both streams of video
+were fueling these
+
+651
+00:26:20,390 --> 00:26:21,910
+two video DOM nodes.
+
+652
+00:26:21,910 --> 00:26:24,320
+And then I had this big canvas
+that was being repainted all
+
+653
+00:26:24,320 --> 00:26:26,860
+the time, the entire background,
+the whole thing.
+
+654
+00:26:26,860 --> 00:26:29,190
+So I changed the
+code to being--
+
+655
+00:26:29,190 --> 00:26:31,350
+I created two three.js scenes.
+
+656
+00:26:31,350 --> 00:26:36,180
+One is the background, which
+is the background, the 3D
+
+657
+00:26:36,180 --> 00:26:40,030
+floor, and the character who
+is mostly stationary.
+
+658
+00:26:40,030 --> 00:26:43,450
+And then the second front
+layer is the ball that
+
+659
+00:26:43,450 --> 00:26:46,070
+bounces, kind of comes down,
+bounces, and then goes off and
+
+660
+00:26:46,070 --> 00:26:48,880
+reacts to the user flicking,
+basically.
+
+661
+00:26:48,880 --> 00:26:50,760
+And instead of having two videos
+in there, I got rid of
+
+662
+00:26:50,760 --> 00:26:54,270
+the second video, the video of
+me, because I wouldn't need to
+
+663
+00:26:54,270 --> 00:26:55,990
+see myself when I'm
+playing you.
+
+664
+00:26:55,990 --> 00:26:58,690
+And I just have your
+face in there.
+
+665
+00:26:58,690 --> 00:27:01,950
+And that got the frames per
+second back up to--
+
+666
+00:27:01,950 --> 00:27:05,060
+I think on Nexus 4, I was seeing
+50 frames per second.
+
+667
+00:27:05,060 --> 00:27:07,780
+That isn't the end
+of the project.
+
+668
+00:27:07,780 --> 00:27:11,020
+It kept on dipping up
+and down, and I
+
+669
+00:27:11,020 --> 00:27:12,130
+would change something.
+
+670
+00:27:12,130 --> 00:27:13,500
+And suddenly it'd be 50
+frames per second.
+
+671
+00:27:13,500 --> 00:27:15,045
+I'd change something else,
+and suddenly it was
+
+672
+00:27:15,045 --> 00:27:16,270
+20 frames per second.
+
+673
+00:27:16,270 --> 00:27:19,550
+And I could have just been
+mashing my keys, and that
+
+674
+00:27:19,550 --> 00:27:21,760
+would have kept changing,
+basically.
+
+675
+00:27:21,760 --> 00:27:24,080
+JAKE ARCHIBALD: So by having the
+ball in its own layer, it
+
+676
+00:27:24,080 --> 00:27:26,060
+means you can move that
+independently without having
+
+677
+00:27:26,060 --> 00:27:28,410
+to redraw this whole
+background.
+
+678
+00:27:28,410 --> 00:27:30,440
+REMY SHARP: That layer
+wasn't even moving.
+
+679
+00:27:30,440 --> 00:27:33,170
+It's just that there was less to
+draw, less pixels to commit
+
+680
+00:27:33,170 --> 00:27:34,090
+to that canvas.
+
+681
+00:27:34,090 --> 00:27:36,840
+JAKE ARCHIBALD: Yeah, and then
+composite, it does the rest.
+
+682
+00:27:36,840 --> 00:27:38,630
+REMY SHARP: Yeah, exactly, so
+you could see through, and
+
+683
+00:27:38,630 --> 00:27:40,660
+you'd see the background
+of the character.
+
+684
+00:27:40,660 --> 00:27:43,506
+And I would fake the--
+
+685
+00:27:43,506 --> 00:27:47,270
+the ball would think it's hit
+your face, but what I've
+
+686
+00:27:47,270 --> 00:27:51,730
+worked out is this is where
+Jake's face should be and
+
+687
+00:27:51,730 --> 00:27:55,580
+bounce off of that, then cause
+the background, the second
+
+688
+00:27:55,580 --> 00:27:58,420
+layer with the character to kind
+of animate and fall down
+
+689
+00:27:58,420 --> 00:28:01,556
+and cry and spit blood
+and eyeball falls out
+
+690
+00:28:01,556 --> 00:28:02,290
+and stuff like that.
+
+691
+00:28:02,290 --> 00:28:03,830
+JAKE ARCHIBALD: It reminds
+me of my childhood.
+
+692
+00:28:03,830 --> 00:28:06,340
+I guess what you forfeit, then,
+is you wouldn't be able
+
+693
+00:28:06,340 --> 00:28:07,250
+to make the ball go behind
+the player, right?
+
+694
+00:28:07,250 --> 00:28:09,070
+Because you've got those
+two separate layers.
+
+695
+00:28:09,070 --> 00:28:11,390
+But you don't have
+that problem.
+
+696
+00:28:11,390 --> 00:28:12,320
+REMY SHARP: I did actually.
+
+697
+00:28:12,320 --> 00:28:14,030
+I do do that.
+
+698
+00:28:14,030 --> 00:28:19,150
+There is some code in there
+that, again, with Seb's help--
+
+699
+00:28:19,150 --> 00:28:21,380
+I'm not a 3D programmer
+in the first place.
+
+700
+00:28:21,380 --> 00:28:24,540
+And he was showing me, pointing
+out the point where
+
+701
+00:28:24,540 --> 00:28:26,880
+the ball in the 3D scene would
+have moved-- so if this is the
+
+702
+00:28:26,880 --> 00:28:28,750
+character here, and this
+is our scene, the
+
+703
+00:28:28,750 --> 00:28:30,020
+ball would move forward.
+
+704
+00:28:30,020 --> 00:28:32,490
+And with the--
+
+705
+00:28:32,490 --> 00:28:34,070
+which one is that, x?
+
+706
+00:28:34,070 --> 00:28:34,610
+JAKE ARCHIBALD: We'll
+pretend it's x.
+
+707
+00:28:34,610 --> 00:28:35,040
+REMY SHARP: That's x.
+
+708
+00:28:35,040 --> 00:28:39,770
+And so when the x went behind
+the character, I actually
+
+709
+00:28:39,770 --> 00:28:42,820
+flipped the canvases around.
+
+710
+00:28:42,820 --> 00:28:45,650
+
+711
+00:28:45,650 --> 00:28:48,270
+Because I was only painting the
+floor and the character on
+
+712
+00:28:48,270 --> 00:28:50,780
+there, the mountains are
+actually completely
+
+713
+00:28:50,780 --> 00:28:55,550
+background, like a CSS
+background on the actual body
+
+714
+00:28:55,550 --> 00:28:56,460
+of the element.
+
+715
+00:28:56,460 --> 00:28:58,260
+So it can go behind it.
+
+716
+00:28:58,260 --> 00:29:01,780
+There are moments where I think
+the ball can bounce off
+
+717
+00:29:01,780 --> 00:29:04,150
+of something, and suddenly it's
+coming forward, but it's
+
+718
+00:29:04,150 --> 00:29:04,990
+behind, or--
+
+719
+00:29:04,990 --> 00:29:05,765
+JAKE ARCHIBALD: I've seen
+you bounce it back.
+
+720
+00:29:05,765 --> 00:29:07,480
+REMY SHARP: There's something,
+if you hit it between the
+
+721
+00:29:07,480 --> 00:29:10,360
+legs, there's something about
+hitting that I've noticed.
+
+722
+00:29:10,360 --> 00:29:12,710
+If you hit the character between
+the legs, the ball's
+
+723
+00:29:12,710 --> 00:29:14,340
+z-index doesn't work
+out quite right.
+
+724
+00:29:14,340 --> 00:29:16,270
+JAKE ARCHIBALD: Hang on, what?
+
+725
+00:29:16,270 --> 00:29:17,260
+REMY SHARP: I don't
+really know.
+
+726
+00:29:17,260 --> 00:29:18,790
+It's tricky to debug.
+
+727
+00:29:18,790 --> 00:29:19,510
+JAKE ARCHIBALD: Let's
+gloss over that.
+
+728
+00:29:19,510 --> 00:29:23,760
+Your game is just rife
+with innuendo.
+
+729
+00:29:23,760 --> 00:29:25,490
+"Head Shots" was definitely the
+best name you could have
+
+730
+00:29:25,490 --> 00:29:26,050
+picked for this.
+
+731
+00:29:26,050 --> 00:29:26,930
+Everything else is wrong.
+
+732
+00:29:26,930 --> 00:29:29,175
+REMY SHARP: There's these little
+areas that basically
+
+733
+00:29:29,175 --> 00:29:32,730
+I've shaved corners off to try
+and get a game that works and
+
+734
+00:29:32,730 --> 00:29:36,832
+people can see the technology
+that is available natively in
+
+735
+00:29:36,832 --> 00:29:38,200
+the browser without plug-ins.
+
+736
+00:29:38,200 --> 00:29:41,250
+And if there's a few hitches
+here and there, I'm
+
+737
+00:29:41,250 --> 00:29:42,385
+kind of OK with it.
+
+738
+00:29:42,385 --> 00:29:46,430
+It's the kind of thing I'd like
+to go back and revisit.
+
+739
+00:29:46,430 --> 00:29:47,400
+JAKE ARCHIBALD: What drove
+the physics, then?
+
+740
+00:29:47,400 --> 00:29:48,820
+Because you've got the sort
+of bouncy physics.
+
+741
+00:29:48,820 --> 00:29:50,400
+Was that just code you wrote, or
+was that something that's--
+
+742
+00:29:50,400 --> 00:29:51,873
+you've got to use another
+library, or
+
+743
+00:29:51,873 --> 00:29:53,160
+is that within three.js?
+
+744
+00:29:53,160 --> 00:29:53,770
+REMY SHARP: So I'd
+like to show you
+
+745
+00:29:53,770 --> 00:29:55,135
+some of the code here.
+
+746
+00:29:55,135 --> 00:29:56,995
+In--
+
+747
+00:29:56,995 --> 00:30:00,400
+oh, where is it-- the game.js.
+
+748
+00:30:00,400 --> 00:30:03,690
+It, again, is just kind of
+having Seb, but I think I knew
+
+749
+00:30:03,690 --> 00:30:05,900
+this already.
+
+750
+00:30:05,900 --> 00:30:11,020
+There's a lot of code
+in the 3D stuff.
+
+751
+00:30:11,020 --> 00:30:12,640
+JAKE ARCHIBALD: This is stuff
+you wrote, right?
+
+752
+00:30:12,640 --> 00:30:14,240
+REMY SHARP: This is
+code I've written.
+
+753
+00:30:14,240 --> 00:30:18,700
+Seb did give me kind of large
+chunks like the hit detection.
+
+754
+00:30:18,700 --> 00:30:22,550
+He gave me that, and the
+projection, which I can
+
+755
+00:30:22,550 --> 00:30:24,440
+explain is mind-numbing.
+
+756
+00:30:24,440 --> 00:30:28,490
+So this stuff, he gave me,
+when we sat down for that
+
+757
+00:30:28,490 --> 00:30:32,000
+two-hour session, he kind of
+helped me get right as well.
+
+758
+00:30:32,000 --> 00:30:34,190
+He literally had to come around
+to my office and sit
+
+759
+00:30:34,190 --> 00:30:35,780
+with me and say, Remy, Remy,
+what are you doing?
+
+760
+00:30:35,780 --> 00:30:37,600
+Why are you doing this?
+
+761
+00:30:37,600 --> 00:30:40,180
+JAKE ARCHIBALD: So I can see
+when it hits, the velocity is
+
+762
+00:30:40,180 --> 00:30:41,625
+obviously going to go in
+the other direction.
+
+763
+00:30:41,625 --> 00:30:43,840
+REMY SHARP: Exactly.
+
+764
+00:30:43,840 --> 00:30:47,160
+So this, because we're doing
+multiply recalls, we're
+
+765
+00:30:47,160 --> 00:30:50,910
+basically flipping the direction
+every time it hits
+
+766
+00:30:50,910 --> 00:30:53,030
+that boundary.
+
+767
+00:30:53,030 --> 00:30:55,390
+So it's not that clever.
+
+768
+00:30:55,390 --> 00:30:57,010
+There's not much physics there
+in the first place.
+
+769
+00:30:57,010 --> 00:31:01,620
+It just kind of slows it down.
+
+770
+00:31:01,620 --> 00:31:02,220
+Actually, there's no physics.
+
+771
+00:31:02,220 --> 00:31:04,570
+It's not proper physics,
+at least.
+
+772
+00:31:04,570 --> 00:31:06,240
+There's just-- that's
+not the code.
+
+773
+00:31:06,240 --> 00:31:07,280
+It's not pretty.
+
+774
+00:31:07,280 --> 00:31:12,150
+But it's just multiply by 0.7
+each time on each bounce, so
+
+775
+00:31:12,150 --> 00:31:15,820
+it just eventually gets less
+and less and less.
+
+776
+00:31:15,820 --> 00:31:18,130
+JAKE ARCHIBALD: So how did you
+go about building this?
+
+777
+00:31:18,130 --> 00:31:19,180
+What was your strategy?
+
+778
+00:31:19,180 --> 00:31:22,300
+Were you building it mostly in
+the browser, or were you
+
+779
+00:31:22,300 --> 00:31:24,550
+building it alongside the
+phone for the whole
+
+780
+00:31:24,550 --> 00:31:26,720
+development process?
+
+781
+00:31:26,720 --> 00:31:29,200
+REMY SHARP: It's
+a bit of a mix.
+
+782
+00:31:29,200 --> 00:31:31,470
+Certainly, in fact,
+that's pretty
+
+783
+00:31:31,470 --> 00:31:33,350
+much my workflow generally.
+
+784
+00:31:33,350 --> 00:31:36,210
+I try to do a bulk amount of
+work directly in the browser.
+
+785
+00:31:36,210 --> 00:31:41,380
+So I've got Chrome
+and Canary here.
+
+786
+00:31:41,380 --> 00:31:46,430
+So I do the bulk of my work
+on the desktop browser.
+
+787
+00:31:46,430 --> 00:31:50,120
+And where I can, I'll be--
+
+788
+00:31:50,120 --> 00:31:52,880
+let's dock that bad boy.
+
+789
+00:31:52,880 --> 00:31:55,050
+Where I can, I'll use dev
+tools to do all my
+
+790
+00:31:55,050 --> 00:31:56,080
+development.
+
+791
+00:31:56,080 --> 00:31:59,080
+And I've started using that in
+JSBin as well, actually, just
+
+792
+00:31:59,080 --> 00:32:01,210
+using dev tools to
+do the coding.
+
+793
+00:32:01,210 --> 00:32:04,105
+Let's make this nice and big.
+
+794
+00:32:04,105 --> 00:32:08,830
+I'm a big fan of right-click,
+Save As, and then linking--
+
+795
+00:32:08,830 --> 00:32:10,426
+what's background.js?
+
+796
+00:32:10,426 --> 00:32:11,955
+That doesn't sound
+like a real file.
+
+797
+00:32:11,955 --> 00:32:16,160
+
+798
+00:32:16,160 --> 00:32:17,630
+Oh, confusing.
+
+799
+00:32:17,630 --> 00:32:18,490
+Hang on.
+
+800
+00:32:18,490 --> 00:32:18,920
+Bear with me.
+
+801
+00:32:18,920 --> 00:32:21,290
+So I don't know what that is.
+
+802
+00:32:21,290 --> 00:32:21,930
+No domain.
+
+803
+00:32:21,930 --> 00:32:24,330
+You guys build browsers.
+
+804
+00:32:24,330 --> 00:32:25,800
+JAKE ARCHIBALD: Hey,
+it's your site.
+
+805
+00:32:25,800 --> 00:32:28,522
+REMY SHARP: That's true.
+
+806
+00:32:28,522 --> 00:32:31,030
+Oh, it's because no JavaScript
+loaded on this page.
+
+807
+00:32:31,030 --> 00:32:32,660
+You have to actually
+get into a game.
+
+808
+00:32:32,660 --> 00:32:32,920
+JAKE ARCHIBALD: Ah, I see.
+
+809
+00:32:32,920 --> 00:32:34,990
+So the first intro page--
+
+810
+00:32:34,990 --> 00:32:36,100
+REMY SHARP: The first page
+doesn't have any
+
+811
+00:32:36,100 --> 00:32:36,860
+JavaScript in there.
+
+812
+00:32:36,860 --> 00:32:38,010
+JAKE ARCHIBALD: That
+makes sense.
+
+813
+00:32:38,010 --> 00:32:39,590
+So part of the reason I guess
+we're building it as just a
+
+814
+00:32:39,590 --> 00:32:41,920
+single-page app is because
+you've got the full screen
+
+815
+00:32:41,920 --> 00:32:43,120
+support in there as well.
+
+816
+00:32:43,120 --> 00:32:46,820
+And once you have full screen,
+if you were to change URL,
+
+817
+00:32:46,820 --> 00:32:47,540
+you'd lose that.
+
+818
+00:32:47,540 --> 00:32:49,620
+REMY SHARP: Yeah.
+
+819
+00:32:49,620 --> 00:32:56,700
+So going back, using dev tools
+here, there's a bug with the
+
+820
+00:32:56,700 --> 00:32:58,170
+PIN code coming down.
+
+821
+00:32:58,170 --> 00:33:02,990
+I will find the code
+that handles that.
+
+822
+00:33:02,990 --> 00:33:05,830
+So let's just assume
+it's start.js.
+
+823
+00:33:05,830 --> 00:33:10,680
+And I tend to just to be safe,
+right-click, Save As, and then
+
+824
+00:33:10,680 --> 00:33:14,290
+put it to the right
+directory, so JS.
+
+825
+00:33:14,290 --> 00:33:16,350
+And just overwrite it.
+
+826
+00:33:16,350 --> 00:33:20,440
+And I have live reload
+turned on, don't I?
+
+827
+00:33:20,440 --> 00:33:22,236
+Have I?
+
+828
+00:33:22,236 --> 00:33:23,500
+Let's allow that.
+
+829
+00:33:23,500 --> 00:33:25,400
+And then I'll be just making
+changes directly into this
+
+830
+00:33:25,400 --> 00:33:27,150
+code, so it's saving
+directly to disk.
+
+831
+00:33:27,150 --> 00:33:30,260
+So I'm trying to debug what
+PIN number is coming in.
+
+832
+00:33:30,260 --> 00:33:32,810
+So console log pin, save.
+
+833
+00:33:32,810 --> 00:33:35,900
+I think I've got live
+reload going on.
+
+834
+00:33:35,900 --> 00:33:38,100
+JAKE ARCHIBALD: I like how the
+dev tools are building up to
+
+835
+00:33:38,100 --> 00:33:39,020
+their own ID.
+
+836
+00:33:39,020 --> 00:33:45,120
+I think going back a few years
+or certainly months, there was
+
+837
+00:33:45,120 --> 00:33:48,050
+kind of a push back on that.
+
+838
+00:33:48,050 --> 00:33:50,630
+It was like they didn't want
+it to turn into a full ID.
+
+839
+00:33:50,630 --> 00:33:52,110
+But I think that's kind
+of drifting now.
+
+840
+00:33:52,110 --> 00:33:54,080
+And it's nice to see some of
+those features where you could
+
+841
+00:33:54,080 --> 00:33:55,940
+just start developing straight
+into the dev tools.
+
+842
+00:33:55,940 --> 00:33:56,180
+REMY SHARP: Yeah.
+
+843
+00:33:56,180 --> 00:33:58,630
+I'm a huge fan of--
+
+844
+00:33:58,630 --> 00:34:01,616
+sorry, I'm just going to save
+it and live reload.
+
+845
+00:34:01,616 --> 00:34:05,840
+I'm a huge fan of coding
+directly in dev tools.
+
+846
+00:34:05,840 --> 00:34:08,860
+Particularly with the animation
+loops, where I've
+
+847
+00:34:08,860 --> 00:34:13,940
+got a loop that's rendering the
+canvas each time, being
+
+848
+00:34:13,940 --> 00:34:17,510
+able to just change that inside
+of the loop, seeing the
+
+849
+00:34:17,510 --> 00:34:19,750
+change instantly
+is huge for me.
+
+850
+00:34:19,750 --> 00:34:22,870
+Being able to replay XHR.
+
+851
+00:34:22,870 --> 00:34:25,810
+Because I'm doing an XHR request
+for the status of the
+
+852
+00:34:25,810 --> 00:34:28,850
+game, and if it kept coming back
+and failing because there
+
+853
+00:34:28,850 --> 00:34:30,380
+was something wrong with the
+server, all you need to do is
+
+854
+00:34:30,380 --> 00:34:31,580
+boot the server back
+up and then
+
+855
+00:34:31,580 --> 00:34:34,400
+replay the network request.
+
+856
+00:34:34,400 --> 00:34:37,100
+And then I get to get that--
+
+857
+00:34:37,100 --> 00:34:37,469
+where is it?
+
+858
+00:34:37,469 --> 00:34:41,396
+Replay, replay--
+
+859
+00:34:41,396 --> 00:34:42,460
+it's somewhere, isn't it?
+
+860
+00:34:42,460 --> 00:34:43,750
+JAKE ARCHIBALD: See,
+this is the thing.
+
+861
+00:34:43,750 --> 00:34:45,440
+This is the part I was hoping
+you would show me, because
+
+862
+00:34:45,440 --> 00:34:47,510
+it's the feature I've
+not actually used
+
+863
+00:34:47,510 --> 00:34:49,370
+in development myself.
+
+864
+00:34:49,370 --> 00:34:50,900
+I've always just, developing,
+refresh the
+
+865
+00:34:50,900 --> 00:34:53,020
+page, do it all again.
+
+866
+00:34:53,020 --> 00:34:57,870
+So when you came to do stuff on
+the device, did you use the
+
+867
+00:34:57,870 --> 00:35:00,350
+remote tools there?
+
+868
+00:35:00,350 --> 00:35:00,770
+I say that.
+
+869
+00:35:00,770 --> 00:35:01,820
+I saw you use it before.
+
+870
+00:35:01,820 --> 00:35:02,480
+REMY SHARP: Yeah.
+
+871
+00:35:02,480 --> 00:35:04,110
+JAKE ARCHIBALD: That's an
+interview technique to pretend
+
+872
+00:35:04,110 --> 00:35:07,880
+that I don't actually know
+what you're doing.
+
+873
+00:35:07,880 --> 00:35:09,950
+REMY SHARP: Like I said, the
+first bulk is done on desktop.
+
+874
+00:35:09,950 --> 00:35:13,840
+And then the tweaking and the
+refinement, I do between the
+
+875
+00:35:13,840 --> 00:35:14,930
+phone and desktop.
+
+876
+00:35:14,930 --> 00:35:19,990
+So do you want me to join me
+show you it live on the phone?
+
+877
+00:35:19,990 --> 00:35:21,080
+JAKE ARCHIBALD: Yeah, it'd
+be cool to see that.
+
+878
+00:35:21,080 --> 00:35:24,990
+REMY SHARP: We might have to
+pause during setup and--
+
+879
+00:35:24,990 --> 00:35:28,750
+JAKE ARCHIBALD: Oh, well, if
+it's too much effort, we can
+
+880
+00:35:28,750 --> 00:35:30,432
+do something else.
+
+881
+00:35:30,432 --> 00:35:31,520
+Because it would be interesting
+to see.
+
+882
+00:35:31,520 --> 00:35:33,510
+Because I know that we've
+changed some stuff in Canary
+
+883
+00:35:33,510 --> 00:35:37,350
+that makes it easier to
+do device discovery
+
+884
+00:35:37,350 --> 00:35:40,430
+as part of dev tools.
+
+885
+00:35:40,430 --> 00:35:44,180
+So we had this thing for so long
+where you would have to
+
+886
+00:35:44,180 --> 00:35:45,750
+open up a command line.
+
+887
+00:35:45,750 --> 00:35:47,360
+We had a whole sort
+of ADB thing.
+
+888
+00:35:47,360 --> 00:35:49,510
+The last time I was here,
+I was doing that.
+
+889
+00:35:49,510 --> 00:35:52,580
+You have to type the thing that
+everyone can remember.
+
+890
+00:35:52,580 --> 00:35:53,890
+I can't even remember it
+off the top of my head.
+
+891
+00:35:53,890 --> 00:35:55,690
+I know it's in my
+bash history.
+
+892
+00:35:55,690 --> 00:35:58,660
+But we're getting around a lot
+of that stuff now with the
+
+893
+00:35:58,660 --> 00:36:00,950
+inspect menu in Canary.
+
+894
+00:36:00,950 --> 00:36:01,640
+How's that going, Remy?
+
+895
+00:36:01,640 --> 00:36:02,770
+I'm doing a very good
+job of filling.
+
+896
+00:36:02,770 --> 00:36:03,440
+REMY SHARP: You're good.
+
+897
+00:36:03,440 --> 00:36:04,130
+I'm almost there, actually.
+
+898
+00:36:04,130 --> 00:36:04,410
+JAKE ARCHIBALD: Oh, brilliant.
+
+899
+00:36:04,410 --> 00:36:06,500
+REMY SHARP: So what I'm doing
+here is basically finding the
+
+900
+00:36:06,500 --> 00:36:08,455
+IP address of this machine, and
+I want to point my mobile
+
+901
+00:36:08,455 --> 00:36:12,920
+phone to the IP address
+of the machine.
+
+902
+00:36:12,920 --> 00:36:14,200
+So 192--
+
+903
+00:36:14,200 --> 00:36:15,710
+I hope this works--
+
+904
+00:36:15,710 --> 00:36:17,800
+168.--
+
+905
+00:36:17,800 --> 00:36:19,150
+JAKE ARCHIBALD: All of the stuff
+we've been doing so far
+
+906
+00:36:19,150 --> 00:36:21,550
+has been just successful
+straightaway on the first try,
+
+907
+00:36:21,550 --> 00:36:22,650
+which is great.
+
+908
+00:36:22,650 --> 00:36:24,270
+REMY SHARP: Pretty much
+out of the box.
+
+909
+00:36:24,270 --> 00:36:29,400
+It's like we can't do
+anything wrong here.
+
+910
+00:36:29,400 --> 00:36:32,370
+So wow, look at that.
+
+911
+00:36:32,370 --> 00:36:33,220
+Right.
+
+912
+00:36:33,220 --> 00:36:34,970
+So I've got--
+
+913
+00:36:34,970 --> 00:36:37,060
+this is literally the setup
+that I will use.
+
+914
+00:36:37,060 --> 00:36:40,890
+I'll point my phone to my
+machine that I'm working on.
+
+915
+00:36:40,890 --> 00:36:44,063
+I'm working in Chrome, so I've
+got Chrome Inspector.
+
+916
+00:36:44,063 --> 00:36:46,865
+
+917
+00:36:46,865 --> 00:36:47,840
+What am I doing?
+
+918
+00:36:47,840 --> 00:36:48,750
+I'm not taking that route.
+
+919
+00:36:48,750 --> 00:36:50,280
+So sorry.
+
+920
+00:36:50,280 --> 00:36:53,730
+I use Chrome, all right.
+
+921
+00:36:53,730 --> 00:37:00,160
+I now have live reload
+mixed into things.
+
+922
+00:37:00,160 --> 00:37:06,430
+And say I want to make a change
+to this font size.
+
+923
+00:37:06,430 --> 00:37:08,640
+Let's see if this just works.
+
+924
+00:37:08,640 --> 00:37:09,640
+1.5 is way too small.
+
+925
+00:37:09,640 --> 00:37:11,756
+We want 7.5.
+
+926
+00:37:11,756 --> 00:37:12,555
+Oh yes.
+
+927
+00:37:12,555 --> 00:37:14,650
+JAKE ARCHIBALD: That's not
+going to work, is it?
+
+928
+00:37:14,650 --> 00:37:15,550
+REMY SHARP: That should
+have worked.
+
+929
+00:37:15,550 --> 00:37:17,580
+So it should have caused--
+
+930
+00:37:17,580 --> 00:37:18,110
+JAKE ARCHIBALD: Oh wow.
+
+931
+00:37:18,110 --> 00:37:20,020
+REMY SHARP: Well, I don't want
+to hit refresh on the phone
+
+932
+00:37:20,020 --> 00:37:22,100
+manually, because I've got
+live reload in there.
+
+933
+00:37:22,100 --> 00:37:23,040
+It should be doing it.
+
+934
+00:37:23,040 --> 00:37:24,500
+JAKE ARCHIBALD: Oh
+there we go.
+
+935
+00:37:24,500 --> 00:37:29,500
+REMY SHARP: So I'm making
+changes in dev tools in Chrome
+
+936
+00:37:29,500 --> 00:37:31,550
+that it's saving.
+
+937
+00:37:31,550 --> 00:37:35,000
+Because it's saving the
+style.css directly to disk,
+
+938
+00:37:35,000 --> 00:37:37,800
+it's causing the live reload
+to trigger, which causes my
+
+939
+00:37:37,800 --> 00:37:39,280
+mobile phone to update.
+
+940
+00:37:39,280 --> 00:37:43,810
+Which means it can make those
+fine grained adjustments.
+
+941
+00:37:43,810 --> 00:37:47,300
+Like maybe the height of the
+page isn't quite right,
+
+942
+00:37:47,300 --> 00:37:48,950
+because there's too
+much scroll.
+
+943
+00:37:48,950 --> 00:37:51,670
+I want to bring the About
+links up a little bit.
+
+944
+00:37:51,670 --> 00:37:54,400
+I doubt I'll be able to
+do this properly.
+
+945
+00:37:54,400 --> 00:37:56,600
+JAKE ARCHIBALD: So I suppose
+you could connect dev tools
+
+946
+00:37:56,600 --> 00:37:58,000
+straight to the phone and
+make these changes.
+
+947
+00:37:58,000 --> 00:38:00,490
+But the benefit you've got here
+is that you're linked to
+
+948
+00:38:00,490 --> 00:38:03,580
+the files on the disk on your
+laptop, and you're getting to
+
+949
+00:38:03,580 --> 00:38:05,220
+see the changes both
+on desktop and on
+
+950
+00:38:05,220 --> 00:38:06,470
+mobile at the same time.
+
+951
+00:38:06,470 --> 00:38:06,805
+REMY SHARP: Yeah.
+
+952
+00:38:06,805 --> 00:38:10,122
+And I'm kind of hoping that--
+
+953
+00:38:10,122 --> 00:38:11,490
+oh, it's not affecting it now.
+
+954
+00:38:11,490 --> 00:38:15,405
+But I'm kind of hoping that
+because I can go ahead and
+
+955
+00:38:15,405 --> 00:38:18,410
+inspect the page that we're
+looking at on the phone
+
+956
+00:38:18,410 --> 00:38:21,661
+directly from Canary here--
+
+957
+00:38:21,661 --> 00:38:23,630
+I think I've got all kinds
+of things running here.
+
+958
+00:38:23,630 --> 00:38:24,420
+So--
+
+959
+00:38:24,420 --> 00:38:25,020
+JAKE ARCHIBALD: That's
+the bit I like.
+
+960
+00:38:25,020 --> 00:38:27,270
+Because that's the bit, we don't
+have to use ADB anymore
+
+961
+00:38:27,270 --> 00:38:30,520
+to do that weird incantation
+just to connect to the device.
+
+962
+00:38:30,520 --> 00:38:33,720
+
+963
+00:38:33,720 --> 00:38:35,410
+REMY SHARP: This, for me, is
+perfect, because I've got the
+
+964
+00:38:35,410 --> 00:38:37,620
+newest version of dev tools.
+
+965
+00:38:37,620 --> 00:38:39,110
+I've got all the
+network stacks.
+
+966
+00:38:39,110 --> 00:38:40,360
+Refresh there.
+
+967
+00:38:40,360 --> 00:38:42,800
+
+968
+00:38:42,800 --> 00:38:45,270
+Let me try that again.
+
+969
+00:38:45,270 --> 00:38:47,550
+Yeah, so I've got the
+full network stack.
+
+970
+00:38:47,550 --> 00:38:52,000
+Here, if I had XHR requests, I
+could replay them actually on
+
+971
+00:38:52,000 --> 00:38:52,900
+the device.
+
+972
+00:38:52,900 --> 00:38:57,650
+My full debugger, break
+points and so on.
+
+973
+00:38:57,650 --> 00:39:00,950
+The one bit that I'm missing,
+and since I'm here at Google--
+
+974
+00:39:00,950 --> 00:39:02,200
+JAKE ARCHIBALD: Hi, welcome
+to Google Developers Live.
+
+975
+00:39:02,200 --> 00:39:03,380
+This is mobile web Thur--
+
+976
+00:39:03,380 --> 00:39:04,900
+Hi, welcome to Google
+Developers Live.
+
+977
+00:39:04,900 --> 00:39:06,450
+This is mobile web Thursday.
+
+978
+00:39:06,450 --> 00:39:07,920
+But actually, we're not live.
+
+979
+00:39:07,920 --> 00:39:09,250
+We're pre-recording this.
+
+980
+00:39:09,250 --> 00:39:11,490
+And I guess it's not really
+Google Developers either,
+
+981
+00:39:11,490 --> 00:39:14,310
+because you're not
+one of the gang.
+
+982
+00:39:14,310 --> 00:39:17,600
+So I guess it's just developers,
+not live, in the
+
+983
+00:39:17,600 --> 00:39:18,310
+Google studios.
+
+984
+00:39:18,310 --> 00:39:21,585
+It's not GDL, it's DNLIAGS.
+
+985
+00:39:21,585 --> 00:39:23,380
+Din-a-lags.
+
+986
+00:39:23,380 --> 00:39:24,460
+DNLIAGS.
+
+987
+00:39:24,460 --> 00:39:25,550
+That's cool.
+
+988
+00:39:25,550 --> 00:39:27,890
+That sounds a bit like dinner
+ladies, I don't know.
+
+989
+00:39:27,890 --> 00:39:28,780
+We could go with that.
+
+990
+00:39:28,780 --> 00:39:29,620
+REMY SHARP: Din ladies.
+
+991
+00:39:29,620 --> 00:39:30,340
+JAKE ARCHIBALD: Yeah.
+
+992
+00:39:30,340 --> 00:39:34,010
+Anyway, in the studio today,
+we've got Remy Sharp, from off
+
+993
+00:39:34,010 --> 00:39:37,570
+of the internet, from
+down in Brighton.
+
+994
+00:39:37,570 --> 00:39:41,462
+And I certainly hope he's going
+to brighten the studio.
+
+995
+00:39:41,462 --> 00:39:42,310
+REMY SHARP: [DRUM ROLL].
+
+996
+00:39:42,310 --> 00:39:43,810
+JAKE ARCHIBALD: Yeah.
+
+997
+00:39:43,810 --> 00:39:45,830
+This is the third one that I've
+done of this, so I can
+
+998
+00:39:45,830 --> 00:39:48,380
+kind of teach you some
+TV producing tips.
+
+999
+00:39:48,380 --> 00:39:53,120
+So whenever you do a complete
+zinger like that, it's good to
+
+1000
+00:39:53,120 --> 00:39:56,120
+kind of look at the camera and
+just smile and nod a bit.
+
+1001
+00:39:56,120 --> 00:39:58,690
+Because you want to give people
+time to recover from
+
+1002
+00:39:58,690 --> 00:39:59,940
+their kind of gut-wrenching--
+
+1003
+00:39:59,940 --> 00:41:07,583
+

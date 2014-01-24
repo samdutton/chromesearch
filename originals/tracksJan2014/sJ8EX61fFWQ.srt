@@ -1,0 +1,2536 @@
+1
+00:00:00,000 --> 00:00:01,041
+PARISA TABRIZ: Thank you.
+
+2
+00:00:01,041 --> 00:00:01,800
+Thank you.
+
+3
+00:00:01,800 --> 00:00:03,600
+OK, 30 minutes to lunch.
+
+4
+00:00:03,600 --> 00:00:06,280
+We can do this together.
+
+5
+00:00:06,280 --> 00:00:10,100
+So my talk is called "got ssl?"
+
+6
+00:00:10,100 --> 00:00:12,910
+As you guys know, more people
+are connected to the web today
+
+7
+00:00:12,910 --> 00:00:15,390
+than ever before and
+from more places.
+
+8
+00:00:15,390 --> 00:00:18,400
+So we're connected with
+our laptops and our phones,
+
+9
+00:00:18,400 --> 00:00:20,850
+our tablets probably
+soon enough,
+
+10
+00:00:20,850 --> 00:00:24,270
+with personal devices
+and accessories.
+
+11
+00:00:24,270 --> 00:00:28,740
+And we access the internet from
+untrusted and sometimes even
+
+12
+00:00:28,740 --> 00:00:31,290
+hostile networks.
+
+13
+00:00:31,290 --> 00:00:33,430
+With so much of our
+lives moving online,
+
+14
+00:00:33,430 --> 00:00:34,930
+it's imperative
+we're taking steps
+
+15
+00:00:34,930 --> 00:00:38,030
+to protect our data
+and our users' data.
+
+16
+00:00:38,030 --> 00:00:42,170
+So this talk is my call to arms
+to all of you as developers.
+
+17
+00:00:42,170 --> 00:00:43,880
+And in the next
+30 minutes, I hope
+
+18
+00:00:43,880 --> 00:00:47,450
+to convince you about the
+necessity and practicality
+
+19
+00:00:47,450 --> 00:00:50,180
+of SSL, and then give
+you some pointers
+
+20
+00:00:50,180 --> 00:00:54,610
+to show you how to
+actually make that happen.
+
+21
+00:00:54,610 --> 00:00:57,730
+So this is probably a
+good place to start.
+
+22
+00:00:57,730 --> 00:00:58,610
+What's SSL?
+
+23
+00:00:58,610 --> 00:01:00,780
+It stands for Secure
+Sockets Layer,
+
+24
+00:01:00,780 --> 00:01:04,230
+and it's a cryptographic
+protocol designed
+
+25
+00:01:04,230 --> 00:01:08,012
+to provide communication
+security over the internet.
+
+26
+00:01:08,012 --> 00:01:11,240
+I imagine a lot of
+people have heard of it.
+
+27
+00:01:11,240 --> 00:01:13,370
+I'll just still
+do a quick intro.
+
+28
+00:01:13,370 --> 00:01:15,430
+It guarantees
+privacy, and it does
+
+29
+00:01:15,430 --> 00:01:18,035
+this via encryption
+and integrity.
+
+30
+00:01:18,035 --> 00:01:21,300
+So this prevents somebody
+from snooping or tampering
+
+31
+00:01:21,300 --> 00:01:24,360
+with the internet connection.
+
+32
+00:01:24,360 --> 00:01:27,880
+It's had its share of
+security flaws over the years,
+
+33
+00:01:27,880 --> 00:01:30,890
+but it's the leading and
+primary way today and really
+
+34
+00:01:30,890 --> 00:01:33,450
+the only way to ensure any
+kind of data communication
+
+35
+00:01:33,450 --> 00:01:35,716
+security on the internet.
+
+36
+00:01:35,716 --> 00:01:37,090
+There's a couple
+of acronyms that
+
+37
+00:01:37,090 --> 00:01:39,100
+are thrown around
+interchangeably.
+
+38
+00:01:39,100 --> 00:01:41,900
+So very quickly,
+I'll clarify these.
+
+39
+00:01:41,900 --> 00:01:45,970
+TLS, if you've heard of it, is
+for most intents and purposes
+
+40
+00:01:45,970 --> 00:01:47,300
+the same as SSL.
+
+41
+00:01:47,300 --> 00:01:49,520
+You can consider them synonyms.
+
+42
+00:01:49,520 --> 00:01:55,450
+If we want to be precise,
+SSL 3.1 was renamed to TLS.
+
+43
+00:01:55,450 --> 00:01:59,130
+SSL was the original name of
+the specification when this came
+
+44
+00:01:59,130 --> 00:02:01,940
+out in the mid-'90s
+from Netscape.
+
+45
+00:02:01,940 --> 00:02:04,270
+And TLS is the
+IETF Standard name.
+
+46
+00:02:04,270 --> 00:02:05,680
+But they're interchangeable.
+
+47
+00:02:05,680 --> 00:02:11,060
+I will refer to the protocol
+as SSL throughout this talk.
+
+48
+00:02:11,060 --> 00:02:15,060
+And then HTTPS is HTTP over SSL.
+
+49
+00:02:15,060 --> 00:02:17,590
+And I imagine most people
+are familiar with this, too.
+
+50
+00:02:17,590 --> 00:02:19,270
+It's actually not a protocol.
+
+51
+00:02:19,270 --> 00:02:20,670
+But it's really
+just the layering
+
+52
+00:02:20,670 --> 00:02:25,900
+of the security capabilities
+of SSL and standard HTTP.
+
+53
+00:02:25,900 --> 00:02:28,400
+So if you're into
+internet protocol stacks,
+
+54
+00:02:28,400 --> 00:02:31,200
+this is how it looks.
+
+55
+00:02:31,200 --> 00:02:34,500
+I'll leave it as an
+exercise for all of you guys
+
+56
+00:02:34,500 --> 00:02:37,980
+to read about the specifics
+of the SSL protocol.
+
+57
+00:02:37,980 --> 00:02:41,330
+But you should know that
+it consists of two phases.
+
+58
+00:02:41,330 --> 00:02:43,600
+So there's this
+first initial phase
+
+59
+00:02:43,600 --> 00:02:47,990
+between the client-- often
+case your browser-- and the web
+
+60
+00:02:47,990 --> 00:02:48,490
+server.
+
+61
+00:02:48,490 --> 00:02:50,890
+And this is based on
+public/private key
+
+62
+00:02:50,890 --> 00:02:52,650
+cryptography.
+
+63
+00:02:52,650 --> 00:02:54,690
+This initial part
+of the protocol
+
+64
+00:02:54,690 --> 00:02:56,960
+is a handshake, which
+is used to create
+
+65
+00:02:56,960 --> 00:02:59,500
+a shared key, a shared secret.
+
+66
+00:02:59,500 --> 00:03:02,280
+And this shared secret is used
+by the second part of the SSL
+
+67
+00:03:02,280 --> 00:03:04,935
+protocol to actually encrypt
+the communication of a session.
+
+68
+00:03:04,935 --> 00:03:08,370
+
+69
+00:03:08,370 --> 00:03:11,890
+So networking on the
+internet feels safe, right?
+
+70
+00:03:11,890 --> 00:03:13,280
+We open up a browser.
+
+71
+00:03:13,280 --> 00:03:15,760
+We send a request
+to load some page
+
+72
+00:03:15,760 --> 00:03:18,280
+in sort of the
+comfort of our device.
+
+73
+00:03:18,280 --> 00:03:21,050
+The response page is
+delivered back to us.
+
+74
+00:03:21,050 --> 00:03:22,660
+It feels like it's immediate.
+
+75
+00:03:22,660 --> 00:03:23,480
+It's fast.
+
+76
+00:03:23,480 --> 00:03:26,550
+It feels like we're talking
+directly to the website.
+
+77
+00:03:26,550 --> 00:03:28,750
+But in reality, we
+know that it's not
+
+78
+00:03:28,750 --> 00:03:32,250
+like this direct connection.
+
+79
+00:03:32,250 --> 00:03:35,690
+And if you serve data over
+plain HTTP between your browser
+
+80
+00:03:35,690 --> 00:03:38,750
+and the server, you have
+absolutely no guarantees
+
+81
+00:03:38,750 --> 00:03:43,190
+that the data that's been sent
+from your client to the server
+
+82
+00:03:43,190 --> 00:03:47,885
+has not been tampered with or
+snooped by some person that
+
+83
+00:03:47,885 --> 00:03:50,720
+has access to the
+network along the way.
+
+84
+00:03:50,720 --> 00:03:54,007
+So I'm sure people are
+familiar with the comic XKCD.
+
+85
+00:03:54,007 --> 00:03:55,840
+It's really hard for
+me to do a presentation
+
+86
+00:03:55,840 --> 00:03:58,000
+without including some
+comic, because there's
+
+87
+00:03:58,000 --> 00:03:59,630
+just always something relevant.
+
+88
+00:03:59,630 --> 00:04:03,900
+I'll give people a second
+to note our (Wo)man
+
+89
+00:04:03,900 --> 00:04:07,027
+in the Middle on the
+open Wi-Fi network.
+
+90
+00:04:07,027 --> 00:04:08,860
+She's performing a
+man-in-the-middle attack.
+
+91
+00:04:08,860 --> 00:04:12,700
+And as the name of
+the attack suggests,
+
+92
+00:04:12,700 --> 00:04:16,100
+this is when an attacker
+places himself or herself
+
+93
+00:04:16,100 --> 00:04:19,100
+or their malicious software
+in between a victim
+
+94
+00:04:19,100 --> 00:04:22,130
+and a valuable resource.
+
+95
+00:04:22,130 --> 00:04:24,705
+And in today's talk, I'm going
+to say that's your website.
+
+96
+00:04:24,705 --> 00:04:27,840
+
+97
+00:04:27,840 --> 00:04:31,770
+So there are almost always
+a few places someone
+
+98
+00:04:31,770 --> 00:04:34,150
+can access the network
+between a request coming
+
+99
+00:04:34,150 --> 00:04:37,300
+from a browser and
+the actual web server.
+
+100
+00:04:37,300 --> 00:04:40,390
+So, for example, who's on
+Google Guest right now?
+
+101
+00:04:40,390 --> 00:04:42,920
+I imagine there's a couple
+people-- OK, lots of people.
+
+102
+00:04:42,920 --> 00:04:45,390
+So this is going
+through the Wi-Fi router
+
+103
+00:04:45,390 --> 00:04:46,280
+that's run by Google.
+
+104
+00:04:46,280 --> 00:04:48,220
+I don't know who it's run by.
+
+105
+00:04:48,220 --> 00:04:49,890
+Maybe you do, and
+maybe you trust them.
+
+106
+00:04:49,890 --> 00:04:54,230
+But then it's going on to
+some ISP and potentially
+
+107
+00:04:54,230 --> 00:04:57,770
+other intermediate
+proxies between you
+
+108
+00:04:57,770 --> 00:05:00,490
+on your laptop or your
+phone and that site
+
+109
+00:05:00,490 --> 00:05:03,670
+and then through all those
+hops on the way back.
+
+110
+00:05:03,670 --> 00:05:06,750
+And if you are using HTTP,
+this is an entirely clear text
+
+111
+00:05:06,750 --> 00:05:07,890
+protocol.
+
+112
+00:05:07,890 --> 00:05:10,860
+Again, you have no guarantee
+that this data has not
+
+113
+00:05:10,860 --> 00:05:12,230
+been logged or tampered with.
+
+114
+00:05:12,230 --> 00:05:15,280
+That's going to be the
+meme through this talk.
+
+115
+00:05:15,280 --> 00:05:18,110
+Do you know or trust the people
+that run each one of those
+
+116
+00:05:18,110 --> 00:05:19,360
+hops?
+
+117
+00:05:19,360 --> 00:05:23,600
+If not, you should be concerned.
+
+118
+00:05:23,600 --> 00:05:28,210
+So even more depressingly,
+even if you want HTTPS,
+
+119
+00:05:28,210 --> 00:05:30,030
+you can actually still
+run into some issues
+
+120
+00:05:30,030 --> 00:05:32,600
+if the site doesn't avoid
+some common downgrade
+
+121
+00:05:32,600 --> 00:05:36,160
+vectors from HTTPS to HTTP.
+
+122
+00:05:36,160 --> 00:05:42,230
+Users very rarely type in the
+full URL, the scheme HTTPS
+
+123
+00:05:42,230 --> 00:05:44,380
+and the URL of where
+they want to go
+
+124
+00:05:44,380 --> 00:05:46,160
+when they want to
+visit some site.
+
+125
+00:05:46,160 --> 00:05:48,840
+So these things end up
+automatically-- you're
+
+126
+00:05:48,840 --> 00:05:50,610
+either being
+redirected by the site
+
+127
+00:05:50,610 --> 00:05:53,804
+or you're clicking some
+link and going there.
+
+128
+00:05:53,804 --> 00:05:55,220
+And all of these
+are opportunities
+
+129
+00:05:55,220 --> 00:05:56,136
+for downgrade attacks.
+
+130
+00:05:56,136 --> 00:05:58,030
+I'm going to talk
+at the end about how
+
+131
+00:05:58,030 --> 00:05:59,230
+to actually avoid those.
+
+132
+00:05:59,230 --> 00:06:01,180
+But the internet
+is a scary place.
+
+133
+00:06:01,180 --> 00:06:03,790
+
+134
+00:06:03,790 --> 00:06:07,670
+I'm going to go over just two
+tools that make these types
+
+135
+00:06:07,670 --> 00:06:10,860
+of man-in-the-middle
+attacks really easy.
+
+136
+00:06:10,860 --> 00:06:12,350
+I encourage you
+to check them out.
+
+137
+00:06:12,350 --> 00:06:14,930
+Maybe someone is running them
+in the audience right now.
+
+138
+00:06:14,930 --> 00:06:18,790
+But the first one
+is called SSLstrip.
+
+139
+00:06:18,790 --> 00:06:20,920
+So man-in-the-middle attacks
+have been known about
+
+140
+00:06:20,920 --> 00:06:22,170
+for a really long time.
+
+141
+00:06:22,170 --> 00:06:25,100
+This tool came out
+in 2009, just as kind
+
+142
+00:06:25,100 --> 00:06:26,730
+of a proof of concept
+of how easy these
+
+143
+00:06:26,730 --> 00:06:29,880
+are to actually mount.
+
+144
+00:06:29,880 --> 00:06:33,520
+But what SSLstrip does
+is it exploits the fact
+
+145
+00:06:33,520 --> 00:06:37,590
+that often sites
+are still sending
+
+146
+00:06:37,590 --> 00:06:38,837
+some requests over HTTP.
+
+147
+00:06:38,837 --> 00:06:40,920
+As I mentioned, most people
+don't type it directly
+
+148
+00:06:40,920 --> 00:06:41,720
+into the browser.
+
+149
+00:06:41,720 --> 00:06:43,906
+They're either clicking
+a link or actually
+
+150
+00:06:43,906 --> 00:06:45,280
+getting redirected
+from the site.
+
+151
+00:06:45,280 --> 00:06:48,370
+So there's this window of
+opportunity for somebody
+
+152
+00:06:48,370 --> 00:06:53,220
+to man-in-the-middle and
+actually replace outbound links
+
+153
+00:06:53,220 --> 00:06:57,140
+that are intended to be
+HTTPS with HTTP in back.
+
+154
+00:06:57,140 --> 00:07:01,350
+And also it does some
+homograph-style URL
+
+155
+00:07:01,350 --> 00:07:01,880
+replacement.
+
+156
+00:07:01,880 --> 00:07:04,330
+And it even throws
+in a lock icon.
+
+157
+00:07:04,330 --> 00:07:08,062
+So people that are looking for
+that as a sense of security
+
+158
+00:07:08,062 --> 00:07:10,020
+get that warm, fuzzy
+feeling, but unfortunately
+
+159
+00:07:10,020 --> 00:07:11,812
+without the security.
+
+160
+00:07:11,812 --> 00:07:14,200
+SSLstrip came out in 2009.
+
+161
+00:07:14,200 --> 00:07:16,820
+One that got quite a
+lot of broad attention
+
+162
+00:07:16,820 --> 00:07:18,960
+was called Firesheep.
+
+163
+00:07:18,960 --> 00:07:21,555
+This one came out the
+following year, in 2010.
+
+164
+00:07:21,555 --> 00:07:23,930
+And it was much more usable
+from the attacker standpoint.
+
+165
+00:07:23,930 --> 00:07:26,610
+You had a nice user interface.
+
+166
+00:07:26,610 --> 00:07:29,670
+So that's probably why it got
+a little bit more attention.
+
+167
+00:07:29,670 --> 00:07:32,380
+Firesheep was a passive
+man-in-the-middle attack,
+
+168
+00:07:32,380 --> 00:07:36,000
+and then it just listened
+to an opened Wi-Fi network
+
+169
+00:07:36,000 --> 00:07:39,280
+for cookies that were
+being sent in the clear,
+
+170
+00:07:39,280 --> 00:07:40,550
+authentication cookies.
+
+171
+00:07:40,550 --> 00:07:42,970
+And then it would pop
+up people's accounts
+
+172
+00:07:42,970 --> 00:07:45,070
+that it was able to hijack.
+
+173
+00:07:45,070 --> 00:07:49,470
+And you could just click on
+them and automatically listen in
+
+174
+00:07:49,470 --> 00:07:54,090
+on someone's chat or log
+into their Facebook account.
+
+175
+00:07:54,090 --> 00:07:57,140
+
+176
+00:07:57,140 --> 00:08:01,570
+So a site without SSL
+is telling its users
+
+177
+00:08:01,570 --> 00:08:06,730
+that they don't care about
+their privacy and integrity.
+
+178
+00:08:06,730 --> 00:08:12,080
+So in the '90s, HTTPS was
+mainly considered something
+
+179
+00:08:12,080 --> 00:08:14,080
+that the banking
+industry had to consider.
+
+180
+00:08:14,080 --> 00:08:16,630
+But it's just not
+about banking anymore.
+
+181
+00:08:16,630 --> 00:08:20,230
+And serving over plain
+HTTP is totally insecure.
+
+182
+00:08:20,230 --> 00:08:22,940
+Leave with that message.
+
+183
+00:08:22,940 --> 00:08:24,870
+Neither the browser
+nor the server
+
+184
+00:08:24,870 --> 00:08:29,130
+can trust any of the data
+that's sent over HTTP.
+
+185
+00:08:29,130 --> 00:08:32,100
+And this is a sad state for
+users and site operators
+
+186
+00:08:32,100 --> 00:08:33,360
+as well.
+
+187
+00:08:33,360 --> 00:08:35,179
+And we know it's not
+just a plausible risk.
+
+188
+00:08:35,179 --> 00:08:38,860
+So we have evidence of both
+targeted and large-scale
+
+189
+00:08:38,860 --> 00:08:41,120
+government-run
+snooping operations.
+
+190
+00:08:41,120 --> 00:08:43,872
+[LAUGHTER]
+
+191
+00:08:43,872 --> 00:08:45,080
+PARISA TABRIZ: Awkward laugh.
+
+192
+00:08:45,080 --> 00:08:49,930
+
+193
+00:08:49,930 --> 00:08:52,650
+If you care about the privacy
+and integrity of your users'
+
+194
+00:08:52,650 --> 00:08:55,350
+data, you need to be using SSL.
+
+195
+00:08:55,350 --> 00:08:58,110
+I would even go so
+far as to say if you
+
+196
+00:08:58,110 --> 00:09:03,180
+don't care about the privacy and
+integrity of your user's data,
+
+197
+00:09:03,180 --> 00:09:05,310
+how interesting is the
+app that you're writing?
+
+198
+00:09:05,310 --> 00:09:07,330
+There are very few
+exceptions that I
+
+199
+00:09:07,330 --> 00:09:12,270
+can think of where this should
+not be seen as a requirement.
+
+200
+00:09:12,270 --> 00:09:16,670
+OK, so hopefully, you
+guys all want SSL now.
+
+201
+00:09:16,670 --> 00:09:18,280
+So time to get it.
+
+202
+00:09:18,280 --> 00:09:21,640
+And I will continue
+my sales pitch
+
+203
+00:09:21,640 --> 00:09:26,010
+by saying that SSL is fast,
+cheap, and easier than ever
+
+204
+00:09:26,010 --> 00:09:29,880
+to get, which is good news.
+
+205
+00:09:29,880 --> 00:09:33,600
+So on my slide, I have a
+quote from Adam Langley, who
+
+206
+00:09:33,600 --> 00:09:37,060
+works at Google and has done
+a tremendous amount of work
+
+207
+00:09:37,060 --> 00:09:39,850
+getting SSL support at
+Google and then kind
+
+208
+00:09:39,850 --> 00:09:45,170
+of across internet.
+
+209
+00:09:45,170 --> 00:09:48,330
+One of the most common excuses
+that I hear from developers
+
+210
+00:09:48,330 --> 00:09:51,930
+about why they don't have SSL
+is the performance and cost
+
+211
+00:09:51,930 --> 00:09:53,250
+impact.
+
+212
+00:09:53,250 --> 00:09:55,780
+And to be fair,
+10 years ago, this
+
+213
+00:09:55,780 --> 00:09:59,920
+was a legitimate
+concern and complaint.
+
+214
+00:09:59,920 --> 00:10:01,905
+I mention this first
+part of the SSL protocol.
+
+215
+00:10:01,905 --> 00:10:04,290
+You do public key
+cryptography, and this
+
+216
+00:10:04,290 --> 00:10:07,630
+is expensive computationally.
+
+217
+00:10:07,630 --> 00:10:10,180
+All of the cost is
+in its handshake.
+
+218
+00:10:10,180 --> 00:10:14,800
+After that, it's never really
+been too much of an issue.
+
+219
+00:10:14,800 --> 00:10:17,100
+10 years ago, this required
+dedicated hardware.
+
+220
+00:10:17,100 --> 00:10:18,750
+It's not the case today.
+
+221
+00:10:18,750 --> 00:10:24,090
+This quote was from
+2010, when Google started
+
+222
+00:10:24,090 --> 00:10:27,497
+supporting SSL for Gmail
+by default for all users.
+
+223
+00:10:27,497 --> 00:10:29,080
+And it required no
+additional hardware
+
+224
+00:10:29,080 --> 00:10:32,150
+and really had a very
+limited performance impact.
+
+225
+00:10:32,150 --> 00:10:35,950
+So it's not too expensive.
+
+226
+00:10:35,950 --> 00:10:38,440
+Running an application
+over SSL is really
+
+227
+00:10:38,440 --> 00:10:40,730
+no different from
+communicating directly on TCP.
+
+228
+00:10:40,730 --> 00:10:43,740
+So there's very few
+application modifications
+
+229
+00:10:43,740 --> 00:10:47,070
+you need to do as far
+as performance goes.
+
+230
+00:10:47,070 --> 00:10:50,730
+You'll want to check
+out operational pieces
+
+231
+00:10:50,730 --> 00:10:55,130
+to actually SSL deployment,
+like how and where you deploy
+
+232
+00:10:55,130 --> 00:10:59,510
+your SSL servers, and record
+size, and memory buffers,
+
+233
+00:10:59,510 --> 00:11:01,589
+and a lot of little
+configuration things,
+
+234
+00:11:01,589 --> 00:11:03,130
+which I'm not going
+to go over today,
+
+235
+00:11:03,130 --> 00:11:07,980
+but which there's a really
+good reference for in this book
+
+236
+00:11:07,980 --> 00:11:09,650
+that I have linked.
+
+237
+00:11:09,650 --> 00:11:11,970
+They're sort of links sprinkled
+throughout the slides,
+
+238
+00:11:11,970 --> 00:11:13,590
+if anything is interesting.
+
+239
+00:11:13,590 --> 00:11:16,720
+This book "High Performance
+Browser Networking"
+
+240
+00:11:16,720 --> 00:11:19,960
+is by Ilya, who I think
+spoke either earlier
+
+241
+00:11:19,960 --> 00:11:22,150
+yesterday or a speaking today.
+
+242
+00:11:22,150 --> 00:11:23,955
+And it has a great
+checklist of things
+
+243
+00:11:23,955 --> 00:11:26,890
+that you'll want to
+consider when deploying SSL.
+
+244
+00:11:26,890 --> 00:11:27,860
+And it's free.
+
+245
+00:11:27,860 --> 00:11:29,540
+So again, no excuse.
+
+246
+00:11:29,540 --> 00:11:34,930
+SSL is not a
+performance hindrance.
+
+247
+00:11:34,930 --> 00:11:37,980
+It's also free!
+
+248
+00:11:37,980 --> 00:11:42,730
+So you can get free
+certs from StartSSL.com.
+
+249
+00:11:42,730 --> 00:11:46,620
+This is just one that I've used
+and I know other people use.
+
+250
+00:11:46,620 --> 00:11:48,720
+You can get free for
+noncommercial uses.
+
+251
+00:11:48,720 --> 00:11:52,210
+If you have a commercially
+use, it's something like $60.
+
+252
+00:11:52,210 --> 00:11:55,030
+So it's cheap.
+
+253
+00:11:55,030 --> 00:11:57,790
+And we have it.
+
+254
+00:11:57,790 --> 00:11:59,130
+It's fast.
+
+255
+00:11:59,130 --> 00:12:00,624
+It's cheap.
+
+256
+00:12:00,624 --> 00:12:02,040
+And I'm even going
+to go as so far
+
+257
+00:12:02,040 --> 00:12:05,870
+as to say that SSL
+is easy to deploy.
+
+258
+00:12:05,870 --> 00:12:08,160
+It's deceptively easy
+to deploy, in fact.
+
+259
+00:12:08,160 --> 00:12:11,915
+So there's a couple of mistakes
+that people need to avoid.
+
+260
+00:12:11,915 --> 00:12:13,290
+But there's a
+really useful guide
+
+261
+00:12:13,290 --> 00:12:14,539
+that's put out by SSLLabs.com.
+
+262
+00:12:14,539 --> 00:12:17,210
+And it goes over
+all of the things
+
+263
+00:12:17,210 --> 00:12:18,940
+that you need to do in detail.
+
+264
+00:12:18,940 --> 00:12:21,420
+And more importantly, it
+has an automated tester,
+
+265
+00:12:21,420 --> 00:12:24,450
+so you can actually check
+that you did everything right
+
+266
+00:12:24,450 --> 00:12:26,959
+and fix all the mistakes,
+and then feel confident
+
+267
+00:12:26,959 --> 00:12:28,750
+that you're getting
+all these things right.
+
+268
+00:12:28,750 --> 00:12:32,810
+So SSL is fast, it's
+cheap, it's easy.
+
+269
+00:12:32,810 --> 00:12:35,650
+
+270
+00:12:35,650 --> 00:12:38,740
+Get it, and then
+let's get it right.
+
+271
+00:12:38,740 --> 00:12:40,590
+So you can test
+for your actual SSL
+
+272
+00:12:40,590 --> 00:12:42,200
+deployment using SSLLabs.com.
+
+273
+00:12:42,200 --> 00:12:46,020
+But I want to go over a
+couple of the application bugs
+
+274
+00:12:46,020 --> 00:12:47,085
+that I see most commonly.
+
+275
+00:12:47,085 --> 00:12:49,980
+
+276
+00:12:49,980 --> 00:12:52,710
+So all sites fall
+into three categories
+
+277
+00:12:52,710 --> 00:12:54,540
+when it comes to SSL adoption.
+
+278
+00:12:54,540 --> 00:12:58,252
+There are the sites which
+don't offer it at all.
+
+279
+00:12:58,252 --> 00:13:00,880
+For HTTP-only
+sites, users should
+
+280
+00:13:00,880 --> 00:13:04,370
+expect absolutely no security.
+
+281
+00:13:04,370 --> 00:13:06,501
+At least they know
+what they're getting.
+
+282
+00:13:06,501 --> 00:13:09,410
+Then there's sites that
+only serve exclusively
+
+283
+00:13:09,410 --> 00:13:12,600
+over HTTPS or on SSL.
+
+284
+00:13:12,600 --> 00:13:17,480
+And in this case, users should
+expect private and untempered
+
+285
+00:13:17,480 --> 00:13:19,890
+communication for the
+most part, barring
+
+286
+00:13:19,890 --> 00:13:22,802
+any bugs we don't know about.
+
+287
+00:13:22,802 --> 00:13:24,360
+And the world is a happy place.
+
+288
+00:13:24,360 --> 00:13:27,750
+And then there are the sites
+that intentionally or sometimes
+
+289
+00:13:27,750 --> 00:13:32,135
+even inadvertently are serving
+both over HTTP and HTTPS.
+
+290
+00:13:32,135 --> 00:13:35,280
+
+291
+00:13:35,280 --> 00:13:38,940
+We call this mixed content
+or sites with mixed content.
+
+292
+00:13:38,940 --> 00:13:42,480
+And this is where we
+run into some problems.
+
+293
+00:13:42,480 --> 00:13:44,050
+So unfortunately,
+situations where
+
+294
+00:13:44,050 --> 00:13:48,810
+you're serving some of
+your site or some resources
+
+295
+00:13:48,810 --> 00:13:56,650
+that you're fetching over HTTP
+can lead to downgrade attacks.
+
+296
+00:13:56,650 --> 00:13:59,330
+If you can avoid the
+situation, you should do it.
+
+297
+00:13:59,330 --> 00:14:02,380
+If not, and this is the
+case for a lot of sites,
+
+298
+00:14:02,380 --> 00:14:05,390
+you're going to need to take
+some extra considerations
+
+299
+00:14:05,390 --> 00:14:07,040
+into account.
+
+300
+00:14:07,040 --> 00:14:10,060
+So as I said, if you're
+serving anything over HTTP,
+
+301
+00:14:10,060 --> 00:14:12,760
+you need to take some
+extra steps to avoid some
+
+302
+00:14:12,760 --> 00:14:14,550
+man-in-the-middle attacks.
+
+303
+00:14:14,550 --> 00:14:17,390
+These are specific classes
+of man-in-the-middle attacks,
+
+304
+00:14:17,390 --> 00:14:19,680
+so I talked about
+downgrade attacks.
+
+305
+00:14:19,680 --> 00:14:21,630
+You can also leak cookies.
+
+306
+00:14:21,630 --> 00:14:23,370
+If anybody can
+tamper the data, they
+
+307
+00:14:23,370 --> 00:14:26,140
+can inject script
+and actually do
+
+308
+00:14:26,140 --> 00:14:29,100
+a cross-site scripting
+attack and render
+
+309
+00:14:29,100 --> 00:14:33,910
+script which kind of
+uses whatever security
+
+310
+00:14:33,910 --> 00:14:37,452
+you would have gotten with SSL.
+
+311
+00:14:37,452 --> 00:14:39,830
+Even if you don't
+care about security,
+
+312
+00:14:39,830 --> 00:14:41,580
+you need to care about
+mixed content bugs,
+
+313
+00:14:41,580 --> 00:14:43,620
+because browsers
+are going to make
+
+314
+00:14:43,620 --> 00:14:46,870
+the experience for
+your users worse.
+
+315
+00:14:46,870 --> 00:14:51,250
+So as of Chrome 29, Chrome
+blocks mixed content
+
+316
+00:14:51,250 --> 00:14:55,220
+that is coming from an iFrame,
+JavaScript, cascading style
+
+317
+00:14:55,220 --> 00:14:57,730
+sheets, and plug-in
+loads by default.
+
+318
+00:14:57,730 --> 00:14:59,560
+Firefox has similar behavior.
+
+319
+00:14:59,560 --> 00:15:02,840
+And you can see in
+the top bar, that's
+
+320
+00:15:02,840 --> 00:15:04,220
+what the Chrome bar looks like.
+
+321
+00:15:04,220 --> 00:15:06,870
+If a user tries to visit
+your site over SSL,
+
+322
+00:15:06,870 --> 00:15:10,904
+but you have any kind of active
+content being served over HTTP,
+
+323
+00:15:10,904 --> 00:15:12,320
+it's not going to
+load by default.
+
+324
+00:15:12,320 --> 00:15:14,220
+And they're going to actually
+have to click to load.
+
+325
+00:15:14,220 --> 00:15:15,690
+So your page is
+probably going to break.
+
+326
+00:15:15,690 --> 00:15:17,530
+Your user's going to
+be annoyed because they
+
+327
+00:15:17,530 --> 00:15:19,696
+have to press a button just
+to get the page to work.
+
+328
+00:15:19,696 --> 00:15:21,970
+And that sucks.
+
+329
+00:15:21,970 --> 00:15:26,690
+Also, browsers block other
+types of content like images--
+
+330
+00:15:26,690 --> 00:15:28,810
+or they don't block them,
+but you automatically
+
+331
+00:15:28,810 --> 00:15:31,050
+lose your green icon.
+
+332
+00:15:31,050 --> 00:15:35,350
+So you lose that warm,
+fuzzy kind of assurance
+
+333
+00:15:35,350 --> 00:15:39,960
+to users that you care about
+security, because you're
+
+334
+00:15:39,960 --> 00:15:42,260
+serving some mixed content.
+
+335
+00:15:42,260 --> 00:15:44,790
+You'll see a little warning in
+Chrome that you can click on.
+
+336
+00:15:44,790 --> 00:15:49,570
+So as I said, even if you
+don't care about mixed content,
+
+337
+00:15:49,570 --> 00:15:51,720
+for security's sake,
+you should care about it
+
+338
+00:15:51,720 --> 00:15:54,670
+because users are going to get
+a degraded experience when they
+
+339
+00:15:54,670 --> 00:15:56,875
+visit your sites, at least
+in Chrome and Firefox.
+
+340
+00:15:56,875 --> 00:15:59,380
+
+341
+00:15:59,380 --> 00:16:02,240
+So how do we actually
+fix mixed content bugs?
+
+342
+00:16:02,240 --> 00:16:04,705
+Thankfully, it's fairly easy.
+
+343
+00:16:04,705 --> 00:16:07,080
+What we need to do is make
+sure that all of our resources
+
+344
+00:16:07,080 --> 00:16:12,390
+are loaded by HTTPS, that
+are loaded on a HTTPS page
+
+345
+00:16:12,390 --> 00:16:14,480
+by HTTPS.
+
+346
+00:16:14,480 --> 00:16:16,620
+So if these resources
+are on the same domain,
+
+347
+00:16:16,620 --> 00:16:19,350
+you can just use relative URLs.
+
+348
+00:16:19,350 --> 00:16:21,200
+If you have to use
+an absolute path,
+
+349
+00:16:21,200 --> 00:16:24,830
+you want to omit the
+scheme or the protocol,
+
+350
+00:16:24,830 --> 00:16:27,130
+and the browser will
+figure it out by itself.
+
+351
+00:16:27,130 --> 00:16:29,250
+In the second
+example, I actually
+
+352
+00:16:29,250 --> 00:16:32,720
+include an example of a
+scheme-relative URL, which
+
+353
+00:16:32,720 --> 00:16:34,970
+can look kind of funky if
+you've never seen it before,
+
+354
+00:16:34,970 --> 00:16:38,180
+but it works.
+
+355
+00:16:38,180 --> 00:16:40,880
+So that's how you fix
+mixed content bugs.
+
+356
+00:16:40,880 --> 00:16:42,960
+Not too hard.
+
+357
+00:16:42,960 --> 00:16:48,009
+Mixed content is a big
+one, maybe, arguably,
+
+358
+00:16:48,009 --> 00:16:50,300
+the one that's a little bit
+harder to fix because there
+
+359
+00:16:50,300 --> 00:16:51,716
+may be multiple
+instances of this.
+
+360
+00:16:51,716 --> 00:16:55,510
+But another really common
+application bug that I've seen
+
+361
+00:16:55,510 --> 00:16:59,324
+is not preventing sensitive
+cookies from leaking over HTTP.
+
+362
+00:16:59,324 --> 00:17:00,740
+So if your cookies
+are sensitive--
+
+363
+00:17:00,740 --> 00:17:03,620
+and in a lot of cases, they are.
+
+364
+00:17:03,620 --> 00:17:06,030
+They're doing something
+with authentication or safe
+
+365
+00:17:06,030 --> 00:17:08,980
+preferences-- it's
+imperative that you ensure
+
+366
+00:17:08,980 --> 00:17:12,683
+they don't get sent
+over an HTTP connection.
+
+367
+00:17:12,683 --> 00:17:14,099
+And to do this,
+you have to ensure
+
+368
+00:17:14,099 --> 00:17:17,040
+that you have the secure bit
+set on your site cookie header.
+
+369
+00:17:17,040 --> 00:17:19,890
+It's unfortunate
+that it requires
+
+370
+00:17:19,890 --> 00:17:22,950
+that, because a lot of
+apps have missed that.
+
+371
+00:17:22,950 --> 00:17:25,099
+And this is actually
+how Firesheep worked.
+
+372
+00:17:25,099 --> 00:17:27,450
+It relied on the fact
+that a lot of sites
+
+373
+00:17:27,450 --> 00:17:31,510
+were not setting sensitive
+cookies with a secure bit,
+
+374
+00:17:31,510 --> 00:17:36,500
+and they're easy
+to sniff and used
+
+375
+00:17:36,500 --> 00:17:38,520
+to hijack people's accounts.
+
+376
+00:17:38,520 --> 00:17:42,630
+
+377
+00:17:42,630 --> 00:17:46,030
+So a recent
+interesting development
+
+378
+00:17:46,030 --> 00:17:48,640
+in the wild world
+of SSL is something
+
+379
+00:17:48,640 --> 00:17:51,250
+called Strict
+Transport Security.
+
+380
+00:17:51,250 --> 00:17:53,690
+This is a mechanism that
+allows websites to opt
+
+381
+00:17:53,690 --> 00:17:59,610
+in for HTTPS-only rendering
+and also strict HTTPS
+
+382
+00:17:59,610 --> 00:18:01,429
+start validation.
+
+383
+00:18:01,429 --> 00:18:02,970
+So the first tool
+I mentioned, called
+
+384
+00:18:02,970 --> 00:18:06,410
+SSLstrip, it exploited the
+fact that most people don't
+
+385
+00:18:06,410 --> 00:18:09,225
+type in HTTPS when
+they visit a site.
+
+386
+00:18:09,225 --> 00:18:11,600
+They're typing just the domain
+name or clicking on a link
+
+387
+00:18:11,600 --> 00:18:14,070
+or going to some bookmark.
+
+388
+00:18:14,070 --> 00:18:17,570
+And in that case, there's a
+small window of opportunity
+
+389
+00:18:17,570 --> 00:18:20,350
+where the user makes HTTP
+request that someone's allowed
+
+390
+00:18:20,350 --> 00:18:21,460
+to man-in-the-middle.
+
+391
+00:18:21,460 --> 00:18:26,050
+So Strict Transport Security,
+or HSTS, as it's abbreviated,
+
+392
+00:18:26,050 --> 00:18:30,650
+attempts to address that threat.
+
+393
+00:18:30,650 --> 00:18:33,750
+Once this header is
+saved in the browser,
+
+394
+00:18:33,750 --> 00:18:36,300
+it's going to bump up
+automatically all HTTP traffic
+
+395
+00:18:36,300 --> 00:18:38,330
+to HTTPS.
+
+396
+00:18:38,330 --> 00:18:45,010
+And it will reject
+any attempts to visit
+
+397
+00:18:45,010 --> 00:18:48,300
+that site over a
+non-encrypted channel.
+
+398
+00:18:48,300 --> 00:18:51,220
+So this is actually really good.
+
+399
+00:18:51,220 --> 00:18:55,180
+I'm seeing more
+sites adopt this.
+
+400
+00:18:55,180 --> 00:18:58,530
+There's still a very, very
+small window of opportunity that
+
+401
+00:18:58,530 --> 00:19:02,300
+an attacker can
+man-in-the-middle,
+
+402
+00:19:02,300 --> 00:19:04,690
+where someone's just
+installed the browser,
+
+403
+00:19:04,690 --> 00:19:07,680
+and they actually don't
+have this header set yet
+
+404
+00:19:07,680 --> 00:19:09,410
+by the application.
+
+405
+00:19:09,410 --> 00:19:12,090
+So Chrome and Firefox
+actually come up
+
+406
+00:19:12,090 --> 00:19:15,790
+with some hard-coded
+sites that have
+
+407
+00:19:15,790 --> 00:19:19,860
+elected into always using HSTS.
+
+408
+00:19:19,860 --> 00:19:21,380
+Some examples are
+Twitter, Paypal.
+
+409
+00:19:21,380 --> 00:19:23,640
+There's Google Sites
+on there and LastPass.
+
+410
+00:19:23,640 --> 00:19:25,640
+If you as a developer
+want your site
+
+411
+00:19:25,640 --> 00:19:27,640
+to only be ever
+accessed over SSL,
+
+412
+00:19:27,640 --> 00:19:30,760
+you can actually
+just file a bug.
+
+413
+00:19:30,760 --> 00:19:33,200
+If you visit the
+link on the slide,
+
+414
+00:19:33,200 --> 00:19:35,240
+you'll get all the
+right contacts.
+
+415
+00:19:35,240 --> 00:19:39,360
+And we can include your site as
+well in this hard-coded list.
+
+416
+00:19:39,360 --> 00:19:43,520
+But that's Strict
+Transport Security.
+
+417
+00:19:43,520 --> 00:19:45,340
+Another cool and
+even more recent
+
+418
+00:19:45,340 --> 00:19:48,660
+development is something
+called Public Key Pinning.
+
+419
+00:19:48,660 --> 00:19:50,690
+So Public Key
+Pinning is designed
+
+420
+00:19:50,690 --> 00:19:53,120
+to give website
+operators a means
+
+421
+00:19:53,120 --> 00:19:56,530
+to restrict which certificate
+authorities can actually
+
+422
+00:19:56,530 --> 00:19:59,290
+issue certificates
+for their sites.
+
+423
+00:19:59,290 --> 00:20:05,890
+So this feature's been deployed
+for Google Chrome for a while,
+
+424
+00:20:05,890 --> 00:20:09,150
+and it has proven to
+be useful in preventing
+
+425
+00:20:09,150 --> 00:20:11,570
+attacks and actually making
+the public aware of them.
+
+426
+00:20:11,570 --> 00:20:14,860
+So if people-- you potentially
+heard about on the news
+
+427
+00:20:14,860 --> 00:20:17,070
+how there was a Dutch
+CA that was exploited
+
+428
+00:20:17,070 --> 00:20:22,100
+in issuing forged
+certificates for Google.com.
+
+429
+00:20:22,100 --> 00:20:24,843
+
+430
+00:20:24,843 --> 00:20:26,760
+It was believed
+that hackers were
+
+431
+00:20:26,760 --> 00:20:28,590
+targeting Iranian citizens.
+
+432
+00:20:28,590 --> 00:20:31,300
+Cert pinning is the feature
+that actually allowed
+
+433
+00:20:31,300 --> 00:20:35,810
+us to detect these forged certs.
+
+434
+00:20:35,810 --> 00:20:40,030
+So there are two proposals
+being worked on right now
+
+435
+00:20:40,030 --> 00:20:42,450
+to try to make this a standard.
+
+436
+00:20:42,450 --> 00:20:45,020
+And we're hoping
+that that happens
+
+437
+00:20:45,020 --> 00:20:48,590
+and that other
+websites can actually
+
+438
+00:20:48,590 --> 00:20:52,240
+use the public key pinning
+feature at some point.
+
+439
+00:20:52,240 --> 00:20:56,670
+
+440
+00:20:56,670 --> 00:20:59,590
+So I've spent my
+entire time talking
+
+441
+00:20:59,590 --> 00:21:02,780
+about how awesome
+SSL is, but I do
+
+442
+00:21:02,780 --> 00:21:06,290
+want to make sure people
+leave with a totally
+
+443
+00:21:06,290 --> 00:21:08,120
+accurate impression of
+what this gives you.
+
+444
+00:21:08,120 --> 00:21:10,950
+Because SSL is not a
+security silver bullet.
+
+445
+00:21:10,950 --> 00:21:11,450
+It's good.
+
+446
+00:21:11,450 --> 00:21:13,320
+You need to do it.
+
+447
+00:21:13,320 --> 00:21:16,285
+It's not security magic
+dust, and the only thing
+
+448
+00:21:16,285 --> 00:21:17,100
+you have to do.
+
+449
+00:21:17,100 --> 00:21:20,210
+So go over a couple disclaimers.
+
+450
+00:21:20,210 --> 00:21:22,840
+So first SSL-- it
+doesn't actually
+
+451
+00:21:22,840 --> 00:21:25,940
+guarantee 100% privacy.
+
+452
+00:21:25,940 --> 00:21:29,440
+So we're piggybacking HTTP
+entirely on top of SSL.
+
+453
+00:21:29,440 --> 00:21:31,940
+So we know that all
+of that is encrypted.
+
+454
+00:21:31,940 --> 00:21:35,212
+We get the request
+URL, query parameters,
+
+455
+00:21:35,212 --> 00:21:37,170
+contents of the page,
+headers and cookies-- all
+
+456
+00:21:37,170 --> 00:21:38,378
+that's encrypted and private.
+
+457
+00:21:38,378 --> 00:21:40,290
+So this is good.
+
+458
+00:21:40,290 --> 00:21:46,600
+But SSL is working on
+top of the TCP layer,
+
+459
+00:21:46,600 --> 00:21:50,577
+which requires IP
+address and port numbers.
+
+460
+00:21:50,577 --> 00:21:52,910
+So these are necessarily going
+to be leaking to somebody
+
+461
+00:21:52,910 --> 00:21:57,480
+who's listening on
+an open network.
+
+462
+00:21:57,480 --> 00:22:00,350
+And also, while you can't
+infer the actual contents
+
+463
+00:22:00,350 --> 00:22:02,040
+of the communication,
+you can still
+
+464
+00:22:02,040 --> 00:22:04,164
+infer the amount and duration
+of the communication.
+
+465
+00:22:04,164 --> 00:22:07,080
+So you're potentially left
+open to some kind of traffic
+
+466
+00:22:07,080 --> 00:22:11,140
+analysis or pattern
+analysis attacks.
+
+467
+00:22:11,140 --> 00:22:15,790
+And in very specific
+services, it's
+
+468
+00:22:15,790 --> 00:22:17,610
+been demonstrated
+that you can infer
+
+469
+00:22:17,610 --> 00:22:19,334
+something useful from this.
+
+470
+00:22:19,334 --> 00:22:21,500
+And people have countered
+this with padding attacks.
+
+471
+00:22:21,500 --> 00:22:23,730
+But the reality is this
+is just not something
+
+472
+00:22:23,730 --> 00:22:26,000
+that the vast majority
+of applications
+
+473
+00:22:26,000 --> 00:22:27,870
+are going to need
+to worry about.
+
+474
+00:22:27,870 --> 00:22:31,700
+But you should know that there
+are some information side
+
+475
+00:22:31,700 --> 00:22:34,090
+channels that are being leaked.
+
+476
+00:22:34,090 --> 00:22:37,240
+So also, as I said, SSL
+is a transfer protocol,
+
+477
+00:22:37,240 --> 00:22:41,680
+so attacks at other layers
+are not going to be prevented.
+
+478
+00:22:41,680 --> 00:22:43,940
+So in particular,
+IP level threats,
+
+479
+00:22:43,940 --> 00:22:46,900
+a denial of service attacks,
+or any kind of network spoofing
+
+480
+00:22:46,900 --> 00:22:49,640
+attacks, they're are
+not protected by SSL.
+
+481
+00:22:49,640 --> 00:22:52,724
+And then also, you'll have to
+consider other web application
+
+482
+00:22:52,724 --> 00:22:53,390
+vulnerabilities.
+
+483
+00:22:53,390 --> 00:22:56,820
+If you've heard of cross-site
+scripting or SQL injections,
+
+484
+00:22:56,820 --> 00:22:59,430
+these things are
+prevented by SSL.
+
+485
+00:22:59,430 --> 00:23:03,470
+So you still got to think
+about that, but that said,
+
+486
+00:23:03,470 --> 00:23:07,770
+SSL is the best
+thing we have today
+
+487
+00:23:07,770 --> 00:23:12,060
+as far as protecting
+users' communication, data
+
+488
+00:23:12,060 --> 00:23:16,392
+communication, and ensuring
+any kind of level of security
+
+489
+00:23:16,392 --> 00:23:17,600
+for your site and your users.
+
+490
+00:23:17,600 --> 00:23:20,450
+
+491
+00:23:20,450 --> 00:23:26,890
+So earlier this week, a couple
+of days ago, the EFF published
+
+492
+00:23:26,890 --> 00:23:31,690
+this article with associated
+info graphic about
+
+493
+00:23:31,690 --> 00:23:34,750
+SSL's adoption from the
+list of companies in their
+
+494
+00:23:34,750 --> 00:23:36,330
+"Who's Got Your Back?" program.
+
+495
+00:23:36,330 --> 00:23:39,010
+So the program
+are companies that
+
+496
+00:23:39,010 --> 00:23:44,030
+have committed to preventing
+unlawful government
+
+497
+00:23:44,030 --> 00:23:46,500
+access to their data.
+
+498
+00:23:46,500 --> 00:23:48,560
+I think it's interesting.
+
+499
+00:23:48,560 --> 00:23:54,000
+Go Google, go Twitter, go
+Dropbox and some other ones
+
+500
+00:23:54,000 --> 00:23:56,497
+that are getting five stars
+across the board for what
+
+501
+00:23:56,497 --> 00:23:57,080
+they're doing.
+
+502
+00:23:57,080 --> 00:23:59,790
+But I think this is interesting
+for people as a user.
+
+503
+00:23:59,790 --> 00:24:00,960
+You should check this out.
+
+504
+00:24:00,960 --> 00:24:04,840
+And you should be demanding
+SSL for the services you use.
+
+505
+00:24:04,840 --> 00:24:07,980
+So file bugs,
+chime in on forums,
+
+506
+00:24:07,980 --> 00:24:11,270
+and grab your
+digital pitchforks.
+
+507
+00:24:11,270 --> 00:24:13,440
+Demand SSL for what you use.
+
+508
+00:24:13,440 --> 00:24:16,290
+And provide it for users, too.
+
+509
+00:24:16,290 --> 00:24:18,180
+This is another cool project.
+
+510
+00:24:18,180 --> 00:24:22,510
+It's called SSL Pulse,
+and this project
+
+511
+00:24:22,510 --> 00:24:25,230
+aims to measure the
+effect of security of SSL
+
+512
+00:24:25,230 --> 00:24:27,190
+across the internet.
+
+513
+00:24:27,190 --> 00:24:30,840
+So they look at about
+200,000 SSL-enabled websites
+
+514
+00:24:30,840 --> 00:24:34,430
+from Alexa's list of
+most popular sites.
+
+515
+00:24:34,430 --> 00:24:36,530
+They refresh their
+data every month.
+
+516
+00:24:36,530 --> 00:24:39,257
+And this is just two graphs.
+
+517
+00:24:39,257 --> 00:24:40,965
+I encourage you to
+check out the project,
+
+518
+00:24:40,965 --> 00:24:42,756
+because they show a
+lot of other statistics
+
+519
+00:24:42,756 --> 00:24:45,710
+about where we're at SSL-wise.
+
+520
+00:24:45,710 --> 00:24:50,230
+And they kept the same
+methodology and sample approach
+
+521
+00:24:50,230 --> 00:24:54,385
+for the past two years, so you
+can kind of see trends in SSL.
+
+522
+00:24:54,385 --> 00:25:00,650
+A year ago today, November 2012,
+we had about just under 15%
+
+523
+00:25:00,650 --> 00:25:01,640
+of SSL adoption.
+
+524
+00:25:01,640 --> 00:25:04,070
+So it's really cool
+to see that we're now
+
+525
+00:25:04,070 --> 00:25:07,970
+over 50% adoption, at
+least in these top sites.
+
+526
+00:25:07,970 --> 00:25:11,330
+But we need your help to
+help push that even further.
+
+527
+00:25:11,330 --> 00:25:14,410
+
+528
+00:25:14,410 --> 00:25:17,630
+And yeah, that's it.
+
+529
+00:25:17,630 --> 00:25:19,430
+I hope you're not
+just hungry for lunch,
+
+530
+00:25:19,430 --> 00:25:20,960
+but hungry to get SSL working.
+
+531
+00:25:20,960 --> 00:25:27,316
+I promise you that if you're
+not enjoying the summit or need
+
+532
+00:25:27,316 --> 00:25:28,690
+something to do
+this evening, you
+
+533
+00:25:28,690 --> 00:25:32,830
+can get SSL set up on a personal
+site for free-- startSSL.com--
+
+534
+00:25:32,830 --> 00:25:35,000
+in less than an hour,
+and that's while you're
+
+535
+00:25:35,000 --> 00:25:38,380
+chatting with your friends and
+like eating a bag of chips.
+
+536
+00:25:38,380 --> 00:25:39,680
+Test it out.
+
+537
+00:25:39,680 --> 00:25:41,000
+Get it working.
+
+538
+00:25:41,000 --> 00:25:42,650
+Get SSL.
+
+539
+00:25:42,650 --> 00:25:45,937
+[APPLAUSE]
+
