@@ -342,5 +342,14 @@ function capitalize(string){
 }
 
 function tweakName(name){
-  return name.replace('Pete Lepage', 'Pete LePage');
+  return name.replace('Pete Lepage', 'Pete LePage'). replace('Colt Mcanlis', 'Colt McAnlis').replace('Matthew Mcnulty', 'Matthew McNulty');
+}
+
+// from http://stackoverflow.com/questions/3665115/create-a-file-in-memory-for-user-to-download-not-through-server
+// download('test.html', '<em>Hello</em> world!');
+function download(filename, text) {
+    var pom = document.createElement('a');
+    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    pom.setAttribute('download', filename);
+    pom.click();
 }
