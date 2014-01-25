@@ -21,16 +21,16 @@ display: block;
 line-height: 2em;
 }
 
-a.transcriptDownload {
+a.download {
 display: block;
 font-size: 13px;
 font-weight: bold;
-left: 88px;
-position: relative;
+left: 85px;
 text-decoration: underline;
+width: 72px;
+position: relative;
 top: 15px;
 z-index: 1;
-width: 72px;
 }
 
 body {
@@ -53,10 +53,12 @@ button[disabled] {
 color: white;
 }
 
-details.transcript {
+details {
+margin: 0 0 0.7em 0;
 }
 
-details.video {
+details.matches {
+margin: 0 0 0 0;
 }
 
 div#container {
@@ -132,6 +134,7 @@ padding: 0 0 0.6em 0;
 div.video div.speakers {
 color: #999;
 font-size: 13px;
+line-height: 1.5em;
 margin: 0 0 1em 0;
 /* padding: 0 0 0 0; */
 }
@@ -142,12 +145,6 @@ font-size: 11px;
 margin: 0 0 5px 0;
 line-height: 1.6em;
 padding: 28px 0 0 0;
-}
-
-div.video h2 {
-color: #ccc;
-font-size: 16px;
-margin: 0 0 0.5em 0;
 }
 
 span.cueText em {
@@ -165,8 +162,9 @@ padding: 0 0 10px 0;
 
 h2 {
 color: #ccc;
-font-family: Arial, sans-serif;
-margin: 30px 0 0 0;
+font-size: 16px;
+line-height: 1.5em;
+margin: 0 0 0.5em 0;
 }
 
 iframe {
@@ -251,19 +249,10 @@ summary {
 color: white;
 cursor: pointer;
 display: block; /* for browsers that don't support <summary> */
+font-size: 13px;
 font-weight: bold;
+line-height: 1.2em;
 outline: none;
-}
-
-summary.transcript {
-font-size: 13px;
-line-height: 1.2em;
-}
-
-summary.video {
-font-size: 13px;
-margin: 0 0 0 0;
-line-height: 1.2em;
 }
 
 video {

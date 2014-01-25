@@ -198,7 +198,7 @@ function displayResults(results) { // results is an array of cues
     $numResults.html(numResults + " result(s)");
   }
 
-  var videoId, videoDiv;
+  var matchesDetails, videoId, videoDiv;
   // each result is a cue, each cue has the id of its video
   for (var i = 0; i !== numResults; ++i) {
     var cue = results[i];
@@ -208,27 +208,39 @@ function displayResults(results) { // results is an array of cues
       videoDiv = document.createElement('div');
       videoDiv.classList.add('video');
       var video = videos[videoId];
-      displayVideo(videoDiv, video);
+
+      addVideoDetails(videoDiv, video);
+
+      matchesDetails = document.createElement('details');
+      matchesDetails.classList.add('matches');
+      var summary = document.createElement('summary');
+      summary.textContent = 'Matches';
+      matchesDetails.appendChild(summary);
+      videoDiv.appendChild(matchesDetails);
+
+      addTranscriptDetails(videoDiv, video);
+
+      resultsDiv.append(videoDiv);
     }
-    displayCue(videoDiv, cue);
+    addMatch(matchesDetails, cue);
   }
 }
 
-// create a new videoDiv and add video information
-function displayVideo(videoDiv, video){
+// create a new details element and add video information
+function addVideoDetails(videoDiv, video){
   var h2 = document.createElement('h2');
-  h2.textContent = video.title;
+  h2.innerHTML = video.title; // title may include HTML
   videoDiv.appendChild(h2);
 
   if (video.speakers && video.speakers.length !== 0){
     var speakersDiv = document.createElement('div');
     speakersDiv.classList.add('speakers');
-    speakersDiv.textContent = video.speakers.join(', ');
+    speakersDiv.innerHTML =
+      video.speakers.join(', ').replace(/([^,]) /g, '\$1&nbsp;');
     videoDiv.appendChild(speakersDiv);
   }
 
   var details = document.createElement('details');
-  details.classList.add('video');
   details.title = 'Click to view video';
   var summary = document.createElement('summary');
   summary.classList.add('video');
@@ -255,7 +267,10 @@ function displayVideo(videoDiv, video){
   details.appendChild(videoViewCount);
 
   videoDiv.appendChild(details);
+}
 
+// create a new details element and add the transcript
+function addTranscriptDetails(videoDiv, video){
   var transcriptDiv = document.createElement('div');
   var transcriptHTML = '';
   // for each of the video.paras, add a paragraph to the transcript
@@ -263,37 +278,36 @@ function displayVideo(videoDiv, video){
     var paraText = video.paras[i];
     // if longer than 1000 characters break up into paragraphs
     // indent first line of all but first paragraph.
-    transcriptHTML += "<p>" + paraText.replace(/--/g, ' &mdash; ') + "</p>\n\n";
+    transcriptHTML += "<p>" + paraText + "</p>\n\n";
   }
-  transcriptDiv.innerHTML = transcriptHTML;
+  transcriptDiv.innerHTML = transcriptHTML.replace(/--/g, ' &mdash; ');
 
-  var transcriptDownload = document.createElement('a');
-  transcriptDownload.classList.add('transcriptDownload');
-  transcriptDownload.download = video.title.replace(/ /g, '_') + '.html';
-  var downloadHTML = '<style>* {font-family: "Open Sans", sans-serif}\np {color: #444;}\n</style>\n\n<h1>' + video.title + '</h1>\n\n' + '<h2>' + video.speakers.join(', ') + '</h2>\n\n' + transcriptHTML;
-  transcriptDownload.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
-  transcriptDownload.textContent = 'Download';
-  videoDiv.appendChild(transcriptDownload);
+  var details = document.createElement('details');
+  var summary = document.createElement('summary');
+  summary.classList.add('transcript');
+  summary.title = 'Click to view transcript';
+  summary.textContent = 'Transcript';
+  details.appendChild(summary);
+  details.appendChild(transcriptDiv);
 
-  var transcriptDetails = document.createElement('details');
-  transcriptDetails.classList.add('transcript');
+  var downloadLink = document.createElement('a');
+  downloadLink.classList.add('download');
+  downloadLink.download = video.title.replace(/ /g, '_') + '.html';
+  var style = '<style>* {font-family: "Open Sans", sans-serif}\nbody {padding: 2em}\np {color: #444;}\n</style>\n\n';
+  var downloadHTML = style + '<h1>' + video.title + '</h1>\n\n' + '<h2>' + video.speakers.join(', ') + '</h2>\n\n' + transcriptHTML;
+  downloadLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
+  downloadLink.textContent = 'download';
+  videoDiv.appendChild(downloadLink);
 
-  var transcriptSummary = document.createElement('summary');
-  transcriptSummary.classList.add('transcript');
-  transcriptSummary.title = 'Click to view transcript';
-  transcriptSummary.textContent = 'Transcript';
-  transcriptDetails.appendChild(transcriptSummary);
-  transcriptDetails.appendChild(transcriptDiv);
-
-  videoDiv.appendChild(transcriptDetails);
-  resultsDiv.append(videoDiv);
+  videoDiv.appendChild(details);
 }
 
-function displayCue(videoDiv, cue){
+
+function addMatch(matchesDetails, cue){
   var cuesDiv = document.createElement('div');
   cuesDiv.classList.add('cues');
   cuesDiv.title = 'Click to play video at this point';
-  videoDiv.appendChild(cuesDiv);
+  matchesDetails.appendChild(cuesDiv);
 
   var cueStartTimeHTML = "<span class='cueStartTime'>" +
     toHoursMinutesSeconds(cue.startTime) + ": </span>";
