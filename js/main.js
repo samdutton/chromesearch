@@ -93,12 +93,12 @@ function getCueData(videoId){
               }
               speakerName = tweakName(speakerName);
               if (speakers.indexOf(speakerName) === -1 && ['Audience', 'Male Speaker', 'Female Speaker', 'All', 'Playback', 'Man', 'Announcer', 'Moderator', 'Producer', 'Fundamentals'].indexOf(speakerName) === -1){
-                console.log(videoId, speakerName);
+//                console.log(videoId, speakerName);
                 speakers.push(speakerName);
               }
 
               line = line.replace(/^([A-Za-z\-\s]+):/,
-                '<span class="speakerName">$1</span>:');
+                '<strong class="speakerName">' + speakerName + '</strong>:');
               // a line introducing a speaker means a new currentPara
               // ...so push the 'old' currentPara
               if (currentPara !== '') {
@@ -215,8 +215,8 @@ function displayResults(results) { // results is an array of cues
 
 // create a new videoDiv and add video information
 function displayVideo(videoDiv, video){
-  var videoDetails = $("<details class='videoDetails' />");
-  videoDetails.append("<summary class='videoTitle' title='Click to view video information'>" +
+  var videoDetails = $("<details class='video' />");
+  videoDetails.append("<summary class='video' title='Click to view video information'>" +
       video.title + "</summary>");
   videoDetails.append("<img class='videoThumbnail' src='http://img.youtube.com/vi/" +
     video.id + "/hqdefault.jpg' title='Default thumbnail image' />");
@@ -233,12 +233,35 @@ function displayVideo(videoDiv, video){
     videoDiv.append("<div class='speakers'>" + video.speakers.join(", ") + "</div>");
   }
 
-  var transcriptDetails = $("<details class='transcript' />");
-  transcriptDetails.append("<summary class='transcriptTitle' title='Click to view transcript'>Transcript</summary>");
+ var transcriptContent = '';
+  // for each of the video.paras, add a paragraph to the transcript
   for (var i = 0; i !== video.paras.length; ++i) {
     var paraText = video.paras[i];
-    transcriptDetails.append("<p>" + paraText + "</p>");
+    // if longer than 1000 characters break up into paragraphs
+    // indent first line of all but first paragraph.
+    transcriptContent += "<p>" + paraText + "</p>\n\n";
   }
+
+  var transcriptDownload = document.createElement('a');
+  transcriptDownload.classList.add('transcriptDownload');
+  transcriptDownload.download = video.title.replace(/ /g, '_') + '.html';
+  var downloadHTML = '<h1>' + video.title + '</h1>\n\n' + '<h2>' + video.speakers.join(', ') + '</h2>\n\n' + transcriptContent;
+  transcriptDownload.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
+  transcriptDownload.textContent = 'Download';
+  videoDiv.append(transcriptDownload);
+
+  var transcriptDetails = document.createElement('details');
+  transcriptDetails.classList.add('transcript');
+
+  var transcriptSummary = document.createElement('summary');
+  transcriptSummary.classList.add('transcript');
+  transcriptSummary.title = 'Click to view transcript';
+  transcriptSummary.textContent = 'Transcript';
+  transcriptDetails.appendChild(transcriptSummary);
+
+  transcriptDetails.innerHTML += transcriptContent;
+
+
   videoDiv.append(transcriptDetails);
   resultsDiv.append(videoDiv);
 }
@@ -356,9 +379,9 @@ function tweakName(name){
 
 // from http://stackoverflow.com/questions/3665115/create-a-file-in-memory-for-user-to-download-not-through-server
 // download('test.html', '<em>Hello</em> world!');
-function download(filename, text) {
-    var pom = document.createElement('a');
-    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    pom.setAttribute('download', filename);
-    pom.click();
-}
+// function download(filename, text) {
+    // var pom = document.createElement('a');
+    // pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    // pom.setAttribute('download', filename);
+//     pom.click();
+// }

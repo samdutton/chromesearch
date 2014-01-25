@@ -21,6 +21,15 @@ display: block;
 line-height: 2em;
 }
 
+a.transcriptDownload {
+font-size: 13px;
+font-weight: bold;
+left: 165px;
+padding: 2px 0 0 0;
+position: absolute;
+text-decoration: underline;
+}
+
 body {
 background: #666;
 font-family: Arial, sans-serif;
@@ -46,7 +55,7 @@ margin: 0 0 0.5em 0;
 padding: 0 0 0 18px;
 }
 
-details.videoDetails {
+details.video {
 margin: 0 0 0.5em 0;
 }
 
@@ -243,15 +252,16 @@ font-weight: bold;
 outline: none;
 }
 
-summary.transcriptTitle {
+summary.transcript {
+display: inline;
 font-size: 13px;
-margin: 0 0 1em 0;
+margin: 0 1em 0 0;
 padding: 0 0 0 18px;
 text-indent: -18px;
 line-height: 1.2em;
 }
 
-summary.videoTitle {
+summary.video {
 margin: 0 0 0 0;
 padding: 0 0 0 18px;
 text-indent: -18px;
