@@ -205,7 +205,8 @@ function displayResults(results) { // results is an array of cues
     // for each new video id create a new videoDiv
     if (!videoId || videoId !== cue.videoId) {
       videoId = cue.videoId;
-      videoDiv = $("<div class='video' />");
+      videoDiv = document.createElement('div');
+      videoDiv.classList.add('video');
       var video = videos[videoId];
       displayVideo(videoDiv, video);
     }
@@ -215,40 +216,64 @@ function displayResults(results) { // results is an array of cues
 
 // create a new videoDiv and add video information
 function displayVideo(videoDiv, video){
-  var videoDetails = $("<details class='video' />");
-  videoDetails.append("<summary class='video' title='Click to view video information'>" +
-      video.title + "</summary>");
-  videoDetails.append("<img class='videoThumbnail' src='http://img.youtube.com/vi/" +
-    video.id + "/hqdefault.jpg' title='Default thumbnail image' />");
-  if (!!video.summary){
-    videoDetails.append("<div class='videoSummary'>" + video.summary + "</div>");
-  }
-  videoDetails.append("<div class='videoRating'><strong>Rating: </strong>" +
-    video.rating + "</div>");
-  videoDetails.append("<div class='videoViewCount'><strong>View count: </strong>" +
-    video.viewCount + "</div>");
-  videoDiv.append(videoDetails);
+  var h2 = document.createElement('h2');
+  h2.textContent = video.title;
+  videoDiv.appendChild(h2);
 
   if (video.speakers && video.speakers.length !== 0){
-    videoDiv.append("<div class='speakers'>" + video.speakers.join(", ") + "</div>");
+    var speakersDiv = document.createElement('div');
+    speakersDiv.classList.add('speakers');
+    speakersDiv.textContent = video.speakers.join(', ');
+    videoDiv.appendChild(speakersDiv);
   }
 
- var transcriptContent = '';
+  var details = document.createElement('details');
+  details.classList.add('video');
+  details.title = 'Click to view video';
+  var summary = document.createElement('summary');
+  summary.classList.add('video');
+  summary.textContent = 'Video';
+  details.appendChild(summary);
+  // details.append("<img class='videoThumbnail' src='http://img.youtube.com/vi/" +
+  //   video.id + "/hqdefault.jpg' title='Default thumbnail image' />");
+
+  if (!!video.summary){
+    var summaryDiv = document.createElement('div');
+    summaryDiv.classList.add('summary');
+    summaryDiv.textContent = video.summary;
+    details.appendChild(summaryDiv);
+  }
+
+  var videoRating = document.createElement('div');
+  videoRating.classList.add('videoRating');
+  videoRating.innerHTML = '<strong>Rating: </strong>' + video.rating;
+  details.appendChild(videoRating);
+
+  var videoViewCount = document.createElement('div');
+  videoViewCount.classList.add('videoViewCount');
+  videoViewCount.innerHTML = '<strong>View count: </strong>' + video.viewCount;
+  details.appendChild(videoViewCount);
+
+  videoDiv.appendChild(details);
+
+  var transcriptDiv = document.createElement('div');
+  var transcriptHTML = '';
   // for each of the video.paras, add a paragraph to the transcript
   for (var i = 0; i !== video.paras.length; ++i) {
     var paraText = video.paras[i];
     // if longer than 1000 characters break up into paragraphs
     // indent first line of all but first paragraph.
-    transcriptContent += "<p>" + paraText + "</p>\n\n";
+    transcriptHTML += "<p>" + paraText.replace(/--/g, ' &mdash; ') + "</p>\n\n";
   }
+  transcriptDiv.innerHTML = transcriptHTML;
 
   var transcriptDownload = document.createElement('a');
   transcriptDownload.classList.add('transcriptDownload');
   transcriptDownload.download = video.title.replace(/ /g, '_') + '.html';
-  var downloadHTML = '<h1>' + video.title + '</h1>\n\n' + '<h2>' + video.speakers.join(', ') + '</h2>\n\n' + transcriptContent;
+  var downloadHTML = '<style>* {font-family: "Open Sans", sans-serif}\np {color: #444;}\n</style>\n\n<h1>' + video.title + '</h1>\n\n' + '<h2>' + video.speakers.join(', ') + '</h2>\n\n' + transcriptHTML;
   transcriptDownload.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
   transcriptDownload.textContent = 'Download';
-  videoDiv.append(transcriptDownload);
+  videoDiv.appendChild(transcriptDownload);
 
   var transcriptDetails = document.createElement('details');
   transcriptDetails.classList.add('transcript');
@@ -258,36 +283,33 @@ function displayVideo(videoDiv, video){
   transcriptSummary.title = 'Click to view transcript';
   transcriptSummary.textContent = 'Transcript';
   transcriptDetails.appendChild(transcriptSummary);
+  transcriptDetails.appendChild(transcriptDiv);
 
-  transcriptDetails.innerHTML += transcriptContent;
-
-
-  videoDiv.append(transcriptDetails);
+  videoDiv.appendChild(transcriptDetails);
   resultsDiv.append(videoDiv);
 }
 
 function displayCue(videoDiv, cue){
-  cuesDiv = $("<div class='cues' title='Click to play video at this point' />");
-  videoDiv.append(cuesDiv);
+  var cuesDiv = document.createElement('div');
+  cuesDiv.classList.add('cues');
+  cuesDiv.title = 'Click to play video at this point';
+  videoDiv.appendChild(cuesDiv);
 
   var cueStartTimeHTML = "<span class='cueStartTime'>" +
     toHoursMinutesSeconds(cue.startTime) + ": </span>";
   var cueTextHTML = cue.text.replace(new RegExp("(" + query +
     ")", "gi"), "<em>$1</em>"); // empasise query
   cueTextHTML = "<span class='cueText'>" + cueTextHTML + "</span>";
-  // add cue to div.cues
-  var cueDiv =
-    $("<div class='cue'>" +
-    cueStartTimeHTML +
-    cueTextHTML +
-    "</div>");
+
+  var cueDiv = document.createElement('div');
+  cueDiv.classList.add('cue');
+  cueDiv.innerHTML = cueStartTimeHTML + cueTextHTML;
   addClickHandler(cueDiv, cue);
-  cuesDiv.append(cueDiv);
+  cuesDiv.appendChild(cueDiv);
 }
 
-// toggle display of cue or query results
 function addClickHandler(cueDiv, cue) {
-  cueDiv.click(function() {
+  cueDiv.onclick = function() {
     // don't reload video if the clicked cue is for current video
     if (youTubePlayer.src.indexOf(cue.videoId) != -1){
       callPlayer("youTubePlayer", "seekTo", [cue.startTime]);
@@ -297,7 +319,7 @@ function addClickHandler(cueDiv, cue) {
         "?start=" + cue.startTime +
         "&autoplay=1&enablejsapi=1"
     }
-  });
+  };
 }
 
 function getResults(query){

@@ -1,0 +1,2877 @@
+1
+00:00:00,000 --> 00:00:09,070
+
+2
+00:00:09,070 --> 00:00:12,150
+IDO GREEN: Hello and welcome to
+another episode of GDL-IL,
+
+3
+00:00:12,150 --> 00:00:12,830
+GDL Israel.
+
+4
+00:00:12,830 --> 00:00:15,360
+Today we're going to speak about
+a few things that are
+
+5
+00:00:15,360 --> 00:00:18,870
+related to Google Cloud
+platforms, HTML5, new
+
+6
+00:00:18,870 --> 00:00:21,240
+features, and new APIs that you
+could leverage when you're
+
+7
+00:00:21,240 --> 00:00:24,160
+building a modern web
+application or a modern mobile
+
+8
+00:00:24,160 --> 00:00:26,000
+web application.
+
+9
+00:00:26,000 --> 00:00:28,650
+So without further ado,
+let's jump to the
+
+10
+00:00:28,650 --> 00:00:30,690
+slides that I prepared.
+
+11
+00:00:30,690 --> 00:00:33,710
+Some of them are based on my
+talk in the last Google I/O
+
+12
+00:00:33,710 --> 00:00:36,440
+and I'll put links in the show
+notes so you'll be able to
+
+13
+00:00:36,440 --> 00:00:38,070
+check them out.
+
+14
+00:00:38,070 --> 00:00:41,730
+So before jump into see how
+we're building a modern web
+
+15
+00:00:41,730 --> 00:00:45,490
+app, let's put ourselves on
+the same page and try to
+
+16
+00:00:45,490 --> 00:00:48,776
+define to ourselves what is
+a modern web application.
+
+17
+00:00:48,776 --> 00:00:50,710
+A few of the main
+characteristics that we see
+
+18
+00:00:50,710 --> 00:00:54,650
+now with all the modern web
+applications that are good and
+
+19
+00:00:54,650 --> 00:00:57,630
+quality is that all of them
+are self-contained.
+
+20
+00:00:57,630 --> 00:01:01,435
+All of them are coming with one
+specific goal in mind and
+
+21
+00:01:01,435 --> 00:01:04,050
+they're trying to give the users
+the best capability to
+
+22
+00:01:04,050 --> 00:01:05,720
+achieve their goal.
+
+23
+00:01:05,720 --> 00:01:08,700
+Most of the apps will be built
+with offline first
+
+24
+00:01:08,700 --> 00:01:12,220
+methodologies, so exactly like
+Eric Schmidt coined the term,
+
+25
+00:01:12,220 --> 00:01:14,170
+mobile first a few years back.
+
+26
+00:01:14,170 --> 00:01:17,210
+Today, we want to think about
+those apps as offline first.
+
+27
+00:01:17,210 --> 00:01:20,490
+So very similar to what you see
+today with native apps.
+
+28
+00:01:20,490 --> 00:01:24,680
+Those apps will have one
+connection to the server.
+
+29
+00:01:24,680 --> 00:01:27,070
+Download the skeleton of the
+app itself mainly the
+
+30
+00:01:27,070 --> 00:01:29,380
+structure of the JavaScript
+HTML and CSS
+
+31
+00:01:29,380 --> 00:01:31,000
+that defined the app.
+
+32
+00:01:31,000 --> 00:01:34,190
+And later on the application
+could make more connections to
+
+33
+00:01:34,190 --> 00:01:36,970
+bring data and be more useful.
+
+34
+00:01:36,970 --> 00:01:39,100
+As we're shifting more and more
+logic to the client side
+
+35
+00:01:39,100 --> 00:01:42,810
+from the server side, we see a
+flourishing in the MVC, MV*
+
+36
+00:01:42,810 --> 00:01:43,840
+Frameworks.
+
+37
+00:01:43,840 --> 00:01:46,380
+We want to avoid our spaghetti
+code and we want to have a
+
+38
+00:01:46,380 --> 00:01:50,240
+clear separation between
+our data and our views.
+
+39
+00:01:50,240 --> 00:01:52,030
+All the apps will
+be device aware.
+
+40
+00:01:52,030 --> 00:01:56,670
+We have today devices that have
+that two inch screen and
+
+41
+00:01:56,670 --> 00:01:59,350
+TVs they have 100 inch screen.
+
+42
+00:01:59,350 --> 00:02:03,790
+All of them have Chrome inside
+or any other web browser and
+
+43
+00:02:03,790 --> 00:02:06,950
+we want the user to be able
+to be productive.
+
+44
+00:02:06,950 --> 00:02:10,250
+It doesn't matter what is the
+real estate of the screen that
+
+45
+00:02:10,250 --> 00:02:11,580
+she's working with.
+
+46
+00:02:11,580 --> 00:02:14,800
+So we need to think about when
+we're designing the app and
+
+47
+00:02:14,800 --> 00:02:17,440
+then when we're building it so
+it will do the best with the
+
+48
+00:02:17,440 --> 00:02:21,490
+limited real estate that each
+and every device is allowing.
+
+49
+00:02:21,490 --> 00:02:25,500
+Parameters is a hash tag that
+we're using during Google I/O
+
+50
+00:02:25,500 --> 00:02:29,110
+just to make it as important
+as possible.
+
+51
+00:02:29,110 --> 00:02:32,370
+Users love apps that are
+snappy and work fast.
+
+52
+00:02:32,370 --> 00:02:35,150
+And we want to make sure that
+the web apps will work as fast
+
+53
+00:02:35,150 --> 00:02:38,730
+as possible with 60
+frame per second.
+
+54
+00:02:38,730 --> 00:02:41,940
+Above it is of course waste
+and below it the user will
+
+55
+00:02:41,940 --> 00:02:45,960
+make his life or her life
+less attractive.
+
+56
+00:02:45,960 --> 00:02:47,280
+So why offline first?
+
+57
+00:02:47,280 --> 00:02:50,030
+There are very good reasons
+down here but I would like
+
+58
+00:02:50,030 --> 00:02:51,850
+just to emphasize that
+we want performance.
+
+59
+00:02:51,850 --> 00:02:57,110
+We want the app to work as fast
+as the app or the user to
+
+60
+00:02:57,110 --> 00:02:58,840
+wait on an AJAX connection.
+
+61
+00:02:58,840 --> 00:03:01,010
+We want to make sure
+that the app
+
+62
+00:03:01,010 --> 00:03:03,060
+returning as fast as possible.
+
+63
+00:03:03,060 --> 00:03:06,380
+And then doing in the background
+the syncing and
+
+64
+00:03:06,380 --> 00:03:09,720
+making sure that we have the
+knowledge and the data both on
+
+65
+00:03:09,720 --> 00:03:11,280
+the client and on the server.
+
+66
+00:03:11,280 --> 00:03:14,020
+Of course, it's very useful
+when you have flaky
+
+67
+00:03:14,020 --> 00:03:16,630
+connections like in coffee
+shops or on the
+
+68
+00:03:16,630 --> 00:03:18,090
+car or on the road.
+
+69
+00:03:18,090 --> 00:03:20,530
+And of course, in cases that you
+don't have any connection
+
+70
+00:03:20,530 --> 00:03:22,710
+like a submarine
+or an airplane.
+
+71
+00:03:22,710 --> 00:03:26,950
+In our demo that we'll show you
+soon, we used Lawnchair.
+
+72
+00:03:26,950 --> 00:03:29,310
+And the main goal here or the
+main outcome from this slide
+
+73
+00:03:29,310 --> 00:03:31,840
+is just to take into
+consideration that you do want
+
+74
+00:03:31,840 --> 00:03:35,860
+to use some sort of
+abstraction layer.
+
+75
+00:03:35,860 --> 00:03:37,000
+How to achieve offline?
+
+76
+00:03:37,000 --> 00:03:40,880
+Luckily, for us, today HTML5
+is quite robust in terms of
+
+77
+00:03:40,880 --> 00:03:44,070
+the APIs that it allows us to
+leverage when we come in to
+
+78
+00:03:44,070 --> 00:03:45,380
+achieve this goal.
+
+79
+00:03:45,380 --> 00:03:48,550
+So first we want to store the
+assets and the basics skeleton
+
+80
+00:03:48,550 --> 00:03:50,820
+of the app and we'll do
+that with AppCache.
+
+81
+00:03:50,820 --> 00:03:53,880
+And then we want to store data
+so we have a simple key value
+
+82
+00:03:53,880 --> 00:03:56,360
+API which is local storage
+web storage.
+
+83
+00:03:56,360 --> 00:03:59,160
+And for the ones that need the
+full blown database on the
+
+84
+00:03:59,160 --> 00:04:01,550
+client side, they could
+use IndexedDB which
+
+85
+00:04:01,550 --> 00:04:03,060
+is a new SQL database.
+
+86
+00:04:03,060 --> 00:04:06,400
+Or if you do want to use file,
+like you're using in any other
+
+87
+00:04:06,400 --> 00:04:09,770
+platform, real files could be
+text string files and it could
+
+88
+00:04:09,770 --> 00:04:13,390
+be binary files, just
+use the File API.
+
+89
+00:04:13,390 --> 00:04:17,190
+The main challenge with offline
+is that you do need to
+
+90
+00:04:17,190 --> 00:04:19,279
+pretend at the beginning that
+there is no internet
+
+91
+00:04:19,279 --> 00:04:21,870
+connection so you have just
+a skeleton of your app.
+
+92
+00:04:21,870 --> 00:04:25,495
+And then you want to do in the
+background a very smart sync
+
+93
+00:04:25,495 --> 00:04:28,930
+layer that will know what data
+the user needs now and what
+
+94
+00:04:28,930 --> 00:04:31,210
+data should be saved in
+the one source of
+
+95
+00:04:31,210 --> 00:04:32,750
+truth the server side.
+
+96
+00:04:32,750 --> 00:04:36,790
+Here at the bottom, you could
+see the one simple API that we
+
+97
+00:04:36,790 --> 00:04:40,120
+have today, which will allow
+us to know when the user is
+
+98
+00:04:40,120 --> 00:04:44,890
+offline for sure, then we could
+have assumption that the
+
+99
+00:04:44,890 --> 00:04:52,380
+user is online if the offline
+return code is false.
+
+100
+00:04:52,380 --> 00:04:56,010
+How we're achieving AppCache
+it's very, very simple.
+
+101
+00:04:56,010 --> 00:04:58,780
+We do need to define the
+one manifest file,
+
+102
+00:04:58,780 --> 00:05:00,010
+like you see here.
+
+103
+00:05:00,010 --> 00:05:03,150
+And in this manifest file,
+basically will define what is
+
+104
+00:05:03,150 --> 00:05:06,340
+the asset that we want to
+leave on the client
+
+105
+00:05:06,340 --> 00:05:08,070
+side all the time.
+
+106
+00:05:08,070 --> 00:05:12,880
+So in this very simple example
+you could see here that we are
+
+107
+00:05:12,880 --> 00:05:17,180
+caching the main JavaScript
+file, some simple CSS that is
+
+108
+00:05:17,180 --> 00:05:20,930
+based on Twitter Bootstrap, and
+one image, just a really
+
+109
+00:05:20,930 --> 00:05:22,750
+hello world example.
+
+110
+00:05:22,750 --> 00:05:26,870
+One thing that you do want to
+keep in mind is that if this
+
+111
+00:05:26,870 --> 00:05:30,460
+file is changed, the browser
+will be smart enough to go to
+
+112
+00:05:30,460 --> 00:05:32,730
+the server and download
+a new version.
+
+113
+00:05:32,730 --> 00:05:35,500
+So you never ever want to cache
+the manifest itself
+
+114
+00:05:35,500 --> 00:05:37,930
+because you won't be able to
+upgrade your app which is
+
+115
+00:05:37,930 --> 00:05:40,120
+definitely not something
+you want to do.
+
+116
+00:05:40,120 --> 00:05:43,060
+Another thing here is to
+have this comment.
+
+117
+00:05:43,060 --> 00:05:46,270
+So usually any change in this
+file will force the browser to
+
+118
+00:05:46,270 --> 00:05:49,600
+make another connection and
+fetch a new version.
+
+119
+00:05:49,600 --> 00:05:53,360
+And one easy way to control this
+is just by making sure
+
+120
+00:05:53,360 --> 00:05:56,340
+that your build tool is changing
+this one line and
+
+121
+00:05:56,340 --> 00:05:59,620
+just increasing the version.
+
+122
+00:05:59,620 --> 00:06:03,820
+As you can see here with the
+link I use dot com, AppCache
+
+123
+00:06:03,820 --> 00:06:08,220
+is quite popular in all the
+different mobile web browsers
+
+124
+00:06:08,220 --> 00:06:09,050
+supporting it.
+
+125
+00:06:09,050 --> 00:06:10,840
+So you could definitely
+leverage it.
+
+126
+00:06:10,840 --> 00:06:13,360
+It will work when the user
+is online as well.
+
+127
+00:06:13,360 --> 00:06:16,660
+So you're achieving the boost in
+performance because assets
+
+128
+00:06:16,660 --> 00:06:20,210
+that are already there on the
+client side are not making any
+
+129
+00:06:20,210 --> 00:06:21,350
+network connection.
+
+130
+00:06:21,350 --> 00:06:25,130
+So if you have a few images or
+an icon for your app, you
+
+131
+00:06:25,130 --> 00:06:28,530
+don't need to go and fetch it
+from the server after the
+
+132
+00:06:28,530 --> 00:06:30,470
+first download.
+
+133
+00:06:30,470 --> 00:06:34,040
+In terms of storage APIs today,
+here you can see the
+
+134
+00:06:34,040 --> 00:06:37,370
+lay of the land and we do have
+local storage, as I said, on
+
+135
+00:06:37,370 --> 00:06:39,670
+all the different
+mobile browsers.
+
+136
+00:06:39,670 --> 00:06:43,950
+With Web SQL and IndexedDB we
+have a bit of an issue because
+
+137
+00:06:43,950 --> 00:06:48,960
+as you can see, Web SQL is
+supported on all the different
+
+138
+00:06:48,960 --> 00:06:53,860
+platforms, but IndexedDB is so
+far not supported on iOS.
+
+139
+00:06:53,860 --> 00:06:57,090
+So when you do want to work with
+a full blown database on
+
+140
+00:06:57,090 --> 00:07:01,780
+the client side, you do want
+to check one of the
+
+141
+00:07:01,780 --> 00:07:04,720
+abstraction layers here, just to
+make sure that you are more
+
+142
+00:07:04,720 --> 00:07:06,520
+productive.
+
+143
+00:07:06,520 --> 00:07:09,740
+The IndexedDB scheme basically
+will let you work with the Web
+
+144
+00:07:09,740 --> 00:07:12,740
+SQL and IndexedDB
+in the same way.
+
+145
+00:07:12,740 --> 00:07:16,040
+And you could search later on
+my blog I wrote a blog post
+
+146
+00:07:16,040 --> 00:07:19,650
+that let's you transfer
+your Web SQL code
+
+147
+00:07:19,650 --> 00:07:21,200
+to IndexedDB code.
+
+148
+00:07:21,200 --> 00:07:23,290
+The main reason is
+that Web SQL is a
+
+149
+00:07:23,290 --> 00:07:25,890
+deprecated API from 2010.
+
+150
+00:07:25,890 --> 00:07:29,390
+So as you all know, as the best
+practice says not to work
+
+151
+00:07:29,390 --> 00:07:33,020
+with a deprecated API that won't
+be develop maintain.
+
+152
+00:07:33,020 --> 00:07:37,140
+And you do want to move to an
+API that is supported by the
+
+153
+00:07:37,140 --> 00:07:39,570
+W3C and the browser vendors.
+
+154
+00:07:39,570 --> 00:07:42,360
+And that's why we highly
+recommend to move and work
+
+155
+00:07:42,360 --> 00:07:43,480
+with IndexedDB.
+
+156
+00:07:43,480 --> 00:07:45,910
+Not to mention that IndexedDB
+by default is working with
+
+157
+00:07:45,910 --> 00:07:50,200
+JSON objects so it's much
+simpler to work with your
+
+158
+00:07:50,200 --> 00:07:52,030
+JavaScript code of course.
+
+159
+00:07:52,030 --> 00:07:55,210
+Let's speak briefly about
+designing modern web
+
+160
+00:07:55,210 --> 00:07:57,120
+applications.
+
+161
+00:07:57,120 --> 00:08:00,943
+The new way to do it is quite
+different from the old one in
+
+162
+00:08:00,943 --> 00:08:04,920
+the sense that we don't have
+today this long, wonderful
+
+163
+00:08:04,920 --> 00:08:08,490
+process of let's ship the design
+to the designer, they
+
+164
+00:08:08,490 --> 00:08:12,840
+will dream things in their
+Photoshop, giving us the PSD.
+
+165
+00:08:12,840 --> 00:08:15,970
+We'll need the process to break
+it down to HTML and CSS,
+
+166
+00:08:15,970 --> 00:08:17,750
+and then show them
+what we did.
+
+167
+00:08:17,750 --> 00:08:20,640
+Then they're returning to us
+with answers that we did a
+
+168
+00:08:20,640 --> 00:08:23,210
+horrible job et cetera,
+et cetera.
+
+169
+00:08:23,210 --> 00:08:26,340
+Today, most of the startups and
+other companies people are
+
+170
+00:08:26,340 --> 00:08:28,630
+trying to move as fast
+as possible.
+
+171
+00:08:28,630 --> 00:08:32,780
+And the right way to think about
+agile programming and
+
+172
+00:08:32,780 --> 00:08:37,240
+agile methodology is to have the
+initial design or really
+
+173
+00:08:37,240 --> 00:08:41,110
+the white frames and the main
+framework of all the
+
+174
+00:08:41,110 --> 00:08:41,309
+[INAUDIBLE]
+
+175
+00:08:41,309 --> 00:08:45,410
+work and do already coding
+in HTML and text.
+
+176
+00:08:45,410 --> 00:08:47,280
+So have some sketch.
+
+177
+00:08:47,280 --> 00:08:48,810
+The main building blocks
+are there.
+
+178
+00:08:48,810 --> 00:08:49,960
+You could use Balsamiq.
+
+179
+00:08:49,960 --> 00:08:55,790
+You could do lots of different
+modern apps that are in Chrome
+
+180
+00:08:55,790 --> 00:08:58,410
+Web Store that will help
+you achieve this
+
+181
+00:08:58,410 --> 00:09:00,470
+crude design phase.
+
+182
+00:09:00,470 --> 00:09:04,080
+And then, quite quickly, you
+could move on and do a more
+
+183
+00:09:04,080 --> 00:09:07,730
+thorough sketch by just adding
+a layer of the CSS, so making
+
+184
+00:09:07,730 --> 00:09:08,660
+it a bit prettier.
+
+185
+00:09:08,660 --> 00:09:10,410
+So it's not just blocks now.
+
+186
+00:09:10,410 --> 00:09:13,050
+It's maybe blocks with some
+color and some shape.
+
+187
+00:09:13,050 --> 00:09:15,830
+So it's letting us grasp and
+see how it will work.
+
+188
+00:09:15,830 --> 00:09:19,965
+Then we want some sort of a
+prototype and we'll use it, or
+
+189
+00:09:19,965 --> 00:09:21,830
+we'll add the layer of
+the JavaScript with
+
+190
+00:09:21,830 --> 00:09:23,220
+our logic in it.
+
+191
+00:09:23,220 --> 00:09:26,160
+And then the other is just-- and
+that's actually the main
+
+192
+00:09:26,160 --> 00:09:29,140
+phase that you could see, the
+major difference between
+
+193
+00:09:29,140 --> 00:09:32,340
+professionals and amateurs that
+polish phase could be
+
+194
+00:09:32,340 --> 00:09:34,730
+tiny, could be a very long
+and thorough one.
+
+195
+00:09:34,730 --> 00:09:37,730
+But in that phase you could
+actually see if the app is
+
+196
+00:09:37,730 --> 00:09:40,320
+going to be a really
+shine one or not.
+
+197
+00:09:40,320 --> 00:09:43,120
+And I'm speaking just about the
+user experience right now.
+
+198
+00:09:43,120 --> 00:09:45,470
+Then, of course, it's trivial
+to want to do some real
+
+199
+00:09:45,470 --> 00:09:49,230
+thorough testing, maybe use a
+real device lab just to make
+
+200
+00:09:49,230 --> 00:09:52,110
+sure that the app is working
+on the targeted devices.
+
+201
+00:09:52,110 --> 00:09:54,240
+And then production
+and iterating more
+
+202
+00:09:54,240 --> 00:09:56,140
+and more and more.
+
+203
+00:09:56,140 --> 00:09:59,820
+When we approaching it, we do
+want to think about the web
+
+204
+00:09:59,820 --> 00:10:03,940
+apps and the mobile web apps
+as full-blown applications.
+
+205
+00:10:03,940 --> 00:10:07,660
+So it's quite different from
+the old days-- and speaking
+
+206
+00:10:07,660 --> 00:10:11,100
+just about 13 months back
+or something like that--
+
+207
+00:10:11,100 --> 00:10:12,730
+it's not pages anymore.
+
+208
+00:10:12,730 --> 00:10:17,170
+And you do need to take it into
+consideration and make
+
+209
+00:10:17,170 --> 00:10:19,770
+sure that you're designing from
+bottom up and not just
+
+210
+00:10:19,770 --> 00:10:23,480
+trying to put some nice colors
+and some nice shiny bottom on
+
+211
+00:10:23,480 --> 00:10:24,495
+top of the current app.
+
+212
+00:10:24,495 --> 00:10:27,090
+It will be much harder
+to achieve it.
+
+213
+00:10:27,090 --> 00:10:31,370
+Another way to achieve large
+scale apps is just to think or
+
+214
+00:10:31,370 --> 00:10:34,540
+to break the problem to
+different models, different
+
+215
+00:10:34,540 --> 00:10:38,940
+components, and in the near
+future we'll see a huge
+
+216
+00:10:38,940 --> 00:10:42,400
+improvement in terms of web
+components that the platform,
+
+217
+00:10:42,400 --> 00:10:44,560
+the web itself is going
+to support.
+
+218
+00:10:44,560 --> 00:10:48,130
+We'll do some more talks in the
+future, in the near future
+
+219
+00:10:48,130 --> 00:10:51,320
+in GDL-IL and in GDL enlarge.
+
+220
+00:10:51,320 --> 00:10:53,890
+And I highly encourage you to
+check it out because it's one
+
+221
+00:10:53,890 --> 00:10:56,850
+of those revolutions that's
+starting right now.
+
+222
+00:10:56,850 --> 00:11:00,130
+You will be able to take web
+components or to use
+
+223
+00:11:00,130 --> 00:11:01,780
+components in your web app.
+
+224
+00:11:01,780 --> 00:11:02,810
+It will make two things.
+
+225
+00:11:02,810 --> 00:11:06,180
+One, there will be ecosystem
+so developers could sell
+
+226
+00:11:06,180 --> 00:11:07,050
+components.
+
+227
+00:11:07,050 --> 00:11:11,280
+And another great benefit is
+that every component in your
+
+228
+00:11:11,280 --> 00:11:12,870
+app will be encapsulated.
+
+229
+00:11:12,870 --> 00:11:16,940
+So we are achieving here the
+holy grail of encapsulation
+
+230
+00:11:16,940 --> 00:11:19,630
+and that's of course a great
+thing, a great benefit that
+
+231
+00:11:19,630 --> 00:11:21,530
+you don't need to
+repeat yourself.
+
+232
+00:11:21,530 --> 00:11:25,240
+And achieve lots of great
+benefits in terms of
+
+233
+00:11:25,240 --> 00:11:28,890
+maintaining, scaling, testing,
+and just making sure that you
+
+234
+00:11:28,890 --> 00:11:32,550
+are able to build large
+apps with really
+
+235
+00:11:32,550 --> 00:11:36,350
+solid building blocks.
+
+236
+00:11:36,350 --> 00:11:37,410
+Less is more.
+
+237
+00:11:37,410 --> 00:11:40,240
+In lots of those apps, if you
+remember, we're trying to aim
+
+238
+00:11:40,240 --> 00:11:42,610
+or to achieve one
+specific goal.
+
+239
+00:11:42,610 --> 00:11:45,430
+So it's very different from
+the portals of the old way
+
+240
+00:11:45,430 --> 00:11:47,610
+that we had on sites that
+you're trying to achieve
+
+241
+00:11:47,610 --> 00:11:49,630
+everything and then you
+achieve nothing.
+
+242
+00:11:49,630 --> 00:11:53,980
+Here, if your app is taking
+photos, do just that.
+
+243
+00:11:53,980 --> 00:11:59,330
+Try to do it the best you can,
+but do just one specific goal.
+
+244
+00:11:59,330 --> 00:12:04,000
+When we're speaking about using
+and reusing code and
+
+245
+00:12:04,000 --> 00:12:06,400
+things, that most important
+thing is to try not to
+
+246
+00:12:06,400 --> 00:12:10,160
+reinvent the wheel and invest
+lots of time and effort on
+
+247
+00:12:10,160 --> 00:12:14,010
+some problem that is already
+solved, or someone built a
+
+248
+00:12:14,010 --> 00:12:15,600
+library that solved it.
+
+249
+00:12:15,600 --> 00:12:18,540
+Here, I'm just [INAUDIBLE] to
+check out when you're thinking
+
+250
+00:12:18,540 --> 00:12:20,320
+about your next project.
+
+251
+00:12:20,320 --> 00:12:24,110
+And please don't let Web or
+Enterprise be an excuse for
+
+252
+00:12:24,110 --> 00:12:28,160
+poor design and poor UX and
+a poor user experience.
+
+253
+00:12:28,160 --> 00:12:31,810
+When you are making your design
+phase, try to think
+
+254
+00:12:31,810 --> 00:12:37,390
+about forms, tablets, or just
+the same form of devices.
+
+255
+00:12:37,390 --> 00:12:41,310
+So if you have a phone and a
+tablet that are both within
+
+256
+00:12:41,310 --> 00:12:45,500
+aspect ratio of four by three
+or 16 by 9, probably it's a
+
+257
+00:12:45,500 --> 00:12:47,140
+good corner to cut.
+
+258
+00:12:47,140 --> 00:12:50,960
+And make sure that your design
+is supporting those two
+
+259
+00:12:50,960 --> 00:12:52,530
+screens in the same way.
+
+260
+00:12:52,530 --> 00:12:55,450
+It will make your life easier
+and actually the user
+
+261
+00:12:55,450 --> 00:12:56,750
+won't notice it.
+
+262
+00:12:56,750 --> 00:13:01,820
+Here in the example you could
+see Flipboard that having two
+
+263
+00:13:01,820 --> 00:13:08,270
+different approaches to their
+tablet app and the mobile app.
+
+264
+00:13:08,270 --> 00:13:12,420
+By the way, they didn't even
+use the memory muscles that
+
+265
+00:13:12,420 --> 00:13:15,200
+user gained from the
+tablet experience.
+
+266
+00:13:15,200 --> 00:13:18,060
+And on the phone, they just
+decided that the flip will be
+
+267
+00:13:18,060 --> 00:13:20,770
+vertical and not horizontal
+because it's a better user
+
+268
+00:13:20,770 --> 00:13:22,020
+experience.
+
+269
+00:13:22,020 --> 00:13:24,050
+
+270
+00:13:24,050 --> 00:13:27,760
+When we're speaking about the
+unknown and different screen
+
+271
+00:13:27,760 --> 00:13:34,030
+sizes, you do want to adapt to
+the adaptive app philosophy.
+
+272
+00:13:34,030 --> 00:13:37,350
+Since it's really hard to just
+encapsulate everything that
+
+273
+00:13:37,350 --> 00:13:40,350
+you think about in the dome, you
+do want to make sure that
+
+274
+00:13:40,350 --> 00:13:45,750
+the app itself will be
+responsive in the sense that
+
+275
+00:13:45,750 --> 00:13:49,090
+it will do the best within
+the same form factor.
+
+276
+00:13:49,090 --> 00:13:52,000
+It could be four three
+and it could be 16 9.
+
+277
+00:13:52,000 --> 00:13:54,510
+And you don't want to use
+progressive enhancement.
+
+278
+00:13:54,510 --> 00:13:56,770
+One of the main benefits
+of the web is that it's
+
+279
+00:13:56,770 --> 00:14:00,260
+everywhere and even smartphones
+that are not so
+
+280
+00:14:00,260 --> 00:14:02,870
+smart contain some sort
+of a web browser.
+
+281
+00:14:02,870 --> 00:14:07,520
+So the most basic capabilities
+should be achieved with the
+
+282
+00:14:07,520 --> 00:14:08,990
+minimum requirement.
+
+283
+00:14:08,990 --> 00:14:12,210
+And then on top of that, if
+you're getting really new
+
+284
+00:14:12,210 --> 00:14:15,620
+shiny phone that have quad core
+and lots of capabilities
+
+285
+00:14:15,620 --> 00:14:20,390
+and supporting many HTML5 APIs,
+yeah, progress on it,
+
+286
+00:14:20,390 --> 00:14:22,140
+give it a better user
+experience.
+
+287
+00:14:22,140 --> 00:14:25,880
+But make sure that the users are
+able to do something with
+
+288
+00:14:25,880 --> 00:14:29,490
+your app even if they don't have
+the greatest and latest
+
+289
+00:14:29,490 --> 00:14:31,420
+in terms of their web browser.
+
+290
+00:14:31,420 --> 00:14:33,450
+A great example is Gmail.
+
+291
+00:14:33,450 --> 00:14:36,260
+If your connection is really
+slow or the web browser is not
+
+292
+00:14:36,260 --> 00:14:39,850
+supported, you will be
+downgraded to an HTML version
+
+293
+00:14:39,850 --> 00:14:41,130
+that lets you be productive.
+
+294
+00:14:41,130 --> 00:14:43,910
+But it's definitely nothing to
+compare with the full blown
+
+295
+00:14:43,910 --> 00:14:47,990
+Gmail that will work on Chrome,
+definitely, if you're
+
+296
+00:14:47,990 --> 00:14:50,800
+working with the offline
+Gmail capabilities from
+
+297
+00:14:50,800 --> 00:14:52,830
+the Chrome Web Store.
+
+298
+00:14:52,830 --> 00:14:56,240
+When we come to build a web
+application, there are few
+
+299
+00:14:56,240 --> 00:15:00,920
+things that we need to think
+about and just keep working
+
+300
+00:15:00,920 --> 00:15:01,540
+and polished.
+
+301
+00:15:01,540 --> 00:15:04,410
+So one is, of course, the basic
+fundamental separation
+
+302
+00:15:04,410 --> 00:15:06,610
+between our data
+and our views.
+
+303
+00:15:06,610 --> 00:15:10,160
+That's one of the main reason
+that we see many different
+
+304
+00:15:10,160 --> 00:15:12,780
+frameworks out there that are
+coming to solve this problem
+
+305
+00:15:12,780 --> 00:15:18,210
+and making our life more, let's
+say, painless or more
+
+306
+00:15:18,210 --> 00:15:21,270
+beneficial in terms
+of productiveness.
+
+307
+00:15:21,270 --> 00:15:22,880
+It's not just the separation.
+
+308
+00:15:22,880 --> 00:15:27,030
+It's coming to tackle a few
+things that developers are
+
+309
+00:15:27,030 --> 00:15:30,890
+tackling again and again, like
+two-way data bending, like
+
+310
+00:15:30,890 --> 00:15:35,150
+dependency injection, testing
+capabilities, and the way to
+
+311
+00:15:35,150 --> 00:15:42,410
+hold in your code the state
+and the data of your user.
+
+312
+00:15:42,410 --> 00:15:45,320
+One of my favorite client
+side framework
+
+313
+00:15:45,320 --> 00:15:47,080
+these days is AngularJS.
+
+314
+00:15:47,080 --> 00:15:50,020
+AngularJS is one of those
+open source projects
+
+315
+00:15:50,020 --> 00:15:52,310
+that started in Google.
+
+316
+00:15:52,310 --> 00:15:54,910
+I found it to be really useful
+and lots of people are using
+
+317
+00:15:54,910 --> 00:15:56,990
+it, both internally
+and externally.
+
+318
+00:15:56,990 --> 00:16:01,030
+And lucky for us webfront
+developers at large, it's an
+
+319
+00:16:01,030 --> 00:16:02,650
+open source project now.
+
+320
+00:16:02,650 --> 00:16:05,770
+And what I do like in this
+framework is that it took a
+
+321
+00:16:05,770 --> 00:16:08,240
+very different approach
+from all the other
+
+322
+00:16:08,240 --> 00:16:10,440
+frameworks out there.
+
+323
+00:16:10,440 --> 00:16:13,530
+Those smart guys that came with
+a heavy Java background
+
+324
+00:16:13,530 --> 00:16:17,160
+decided to bake dependency
+injection and testable
+
+325
+00:16:17,160 --> 00:16:20,060
+capabilities in the framework
+from day one.
+
+326
+00:16:20,060 --> 00:16:24,880
+And it's one of those power
+features that really make you
+
+327
+00:16:24,880 --> 00:16:27,890
+more productive, specifically
+where the apps is growing
+
+328
+00:16:27,890 --> 00:16:29,720
+quite fast.
+
+329
+00:16:29,720 --> 00:16:33,760
+It also has two-way
+data binding.
+
+330
+00:16:33,760 --> 00:16:36,610
+And one of the beauty things
+that I really like is that
+
+331
+00:16:36,610 --> 00:16:41,790
+it's basically looking at HTML
+and just making it dynamic.
+
+332
+00:16:41,790 --> 00:16:44,506
+Other great things that I highly
+encourage you to check
+
+333
+00:16:44,506 --> 00:16:47,510
+out is the directives in Angular
+that basically is a
+
+334
+00:16:47,510 --> 00:16:51,440
+web component of the future,
+but today in Angular.
+
+335
+00:16:51,440 --> 00:16:53,820
+So you could be really
+productive by encapsulating
+
+336
+00:16:53,820 --> 00:16:57,150
+your code, making a directive,
+and then use it, and reuse it
+
+337
+00:16:57,150 --> 00:16:59,210
+again and again.
+
+338
+00:16:59,210 --> 00:17:01,310
+When we're speaking about the
+mobile world today and the
+
+339
+00:17:01,310 --> 00:17:04,560
+flourishing of mobile devices,
+in most of the cases if you
+
+340
+00:17:04,560 --> 00:17:08,099
+built on your server some strong
+API, you will want to
+
+341
+00:17:08,099 --> 00:17:11,339
+consume it from different
+devices, different browsers,
+
+342
+00:17:11,339 --> 00:17:12,920
+and different platforms.
+
+343
+00:17:12,920 --> 00:17:18,060
+And it's one way to just use
+with the RESTful API from your
+
+344
+00:17:18,060 --> 00:17:22,319
+mobile or web app, and another
+way just to use it from your
+
+345
+00:17:22,319 --> 00:17:26,319
+native iOS or native
+Android app.
+
+346
+00:17:26,319 --> 00:17:29,450
+With that, we're just going to
+Cloud endpoints and why it's
+
+347
+00:17:29,450 --> 00:17:31,920
+extremely good for you.
+
+348
+00:17:31,920 --> 00:17:35,660
+We always have this long, long
+way to achieve our great app
+
+349
+00:17:35,660 --> 00:17:39,510
+and our great unique knowledge
+by dealing with a server.
+
+350
+00:17:39,510 --> 00:17:41,740
+And server is not
+an easy problem.
+
+351
+00:17:41,740 --> 00:17:45,220
+And usually you need to think
+about lots of things and scale
+
+352
+00:17:45,220 --> 00:17:48,830
+it on your own and making sure
+that you are being able to
+
+353
+00:17:48,830 --> 00:17:53,150
+handle with huge amount of logs
+and sharing sharding and
+
+354
+00:17:53,150 --> 00:17:55,190
+lots of pain points.
+
+355
+00:17:55,190 --> 00:17:58,810
+And in the end of the day, even
+if you're starting with a
+
+356
+00:17:58,810 --> 00:18:01,870
+simple API at the beginning,
+quite quickly you see that you
+
+357
+00:18:01,870 --> 00:18:04,840
+need to deal with a spike in
+traffic that's making things
+
+358
+00:18:04,840 --> 00:18:06,840
+even more hard.
+
+359
+00:18:06,840 --> 00:18:10,200
+And you do want to have some
+sort of communication or
+
+360
+00:18:10,200 --> 00:18:15,450
+authentication, serialization,
+and not to mention search and
+
+361
+00:18:15,450 --> 00:18:19,460
+other APIs if you want to use
+over again and again.
+
+362
+00:18:19,460 --> 00:18:23,100
+Luckily for us, I won't touch
+on it too deeply, but with
+
+363
+00:18:23,100 --> 00:18:25,680
+Google App Engine, platform
+is a service.
+
+364
+00:18:25,680 --> 00:18:29,470
+We have all those things being
+taken care of for us and
+
+365
+00:18:29,470 --> 00:18:32,800
+that's being taken care of for
+us by the top experts in the
+
+366
+00:18:32,800 --> 00:18:36,860
+world, lots of different high
+scale app like Khan Academy,
+
+367
+00:18:36,860 --> 00:18:40,040
+Pulse, and others are hosted
+on App Engine.
+
+368
+00:18:40,040 --> 00:18:42,790
+And App Engine has the
+automating scanning and lots
+
+369
+00:18:42,790 --> 00:18:45,190
+of other benefits for you.
+
+370
+00:18:45,190 --> 00:18:50,070
+We have App Engine technology
+supporting today Java, Go,
+
+371
+00:18:50,070 --> 00:18:52,670
+Python, and PHP.
+
+372
+00:18:52,670 --> 00:18:56,290
+And the main thing here is
+that for us, front end
+
+373
+00:18:56,290 --> 00:18:59,550
+developers, I just pointed the
+arrow here on the right, you
+
+374
+00:18:59,550 --> 00:19:02,940
+want to focus on what you're
+bringing to the table, and not
+
+375
+00:19:02,940 --> 00:19:07,270
+tackling with the usual
+administrative stuff that you
+
+376
+00:19:07,270 --> 00:19:09,900
+do want someone else to
+take care of for you.
+
+377
+00:19:09,900 --> 00:19:11,940
+With Cloud Endpoints the
+beauty is that you're
+
+378
+00:19:11,940 --> 00:19:15,050
+basically sitting on top Google
+App Engine, but with a
+
+379
+00:19:15,050 --> 00:19:20,330
+certain or unique interface that
+lets you later on consume
+
+380
+00:19:20,330 --> 00:19:22,190
+your API from any platform.
+
+381
+00:19:22,190 --> 00:19:22,986
+It could be Android.
+
+382
+00:19:22,986 --> 00:19:23,870
+It could be iOS.
+
+383
+00:19:23,870 --> 00:19:26,230
+It could be the web.
+
+384
+00:19:26,230 --> 00:19:29,560
+Let's just got back up for one
+second, the truck, and see
+
+385
+00:19:29,560 --> 00:19:31,000
+what we're talking about.
+
+386
+00:19:31,000 --> 00:19:34,190
+Basically, we're having Google
+API as a discovery API.
+
+387
+00:19:34,190 --> 00:19:38,130
+And in this discovery API, you
+could see this JSON format
+
+388
+00:19:38,130 --> 00:19:41,560
+that lets you understand what
+the API itself is doing and
+
+389
+00:19:41,560 --> 00:19:43,790
+how you could tap into
+it and leverage it.
+
+390
+00:19:43,790 --> 00:19:47,790
+In our short example, it's the
+UR: shorter and you can see
+
+391
+00:19:47,790 --> 00:19:49,570
+here that you have the
+full description.
+
+392
+00:19:49,570 --> 00:19:52,420
+And as a developer, you could
+come, consume it, and then use
+
+393
+00:19:52,420 --> 00:19:53,550
+it quite quickly.
+
+394
+00:19:53,550 --> 00:19:55,940
+The benefit with Google Cloud
+Endpoint is that you could
+
+395
+00:19:55,940 --> 00:19:59,340
+have this discovery document
+for your needs.
+
+396
+00:19:59,340 --> 00:20:04,170
+So if you're working in a
+company that has a front end
+
+397
+00:20:04,170 --> 00:20:07,420
+team and a back end team, this
+discovery document that Google
+
+398
+00:20:07,420 --> 00:20:11,740
+lets you have and leverage,
+could be the one point that
+
+399
+00:20:11,740 --> 00:20:14,370
+those two teams are
+interacting.
+
+400
+00:20:14,370 --> 00:20:17,930
+And this is one way to just
+work more productively.
+
+401
+00:20:17,930 --> 00:20:21,600
+Luckily for us, we have many
+client libraries that already
+
+402
+00:20:21,600 --> 00:20:25,160
+contain those APIs and making
+your life easier.
+
+403
+00:20:25,160 --> 00:20:27,740
+So I won't touch about the
+service side, but you could
+
+404
+00:20:27,740 --> 00:20:30,860
+imagine that there are even more
+libraries than the ones
+
+405
+00:20:30,860 --> 00:20:32,530
+that I choose to mention here.
+
+406
+00:20:32,530 --> 00:20:35,180
+On the mobile, we're having a
+very nice coverage with all
+
+407
+00:20:35,180 --> 00:20:36,850
+the main platforms out there.
+
+408
+00:20:36,850 --> 00:20:39,225
+And of course, for the web, we
+have it with JavaScript for
+
+409
+00:20:39,225 --> 00:20:42,650
+node and for Dart.
+
+410
+00:20:42,650 --> 00:20:45,290
+Just to see how simple it is, so
+basically what you need to
+
+411
+00:20:45,290 --> 00:20:51,730
+do is just load with this one
+called the Google API client
+
+412
+00:20:51,730 --> 00:20:53,090
+and giving it a callback.
+
+413
+00:20:53,090 --> 00:20:55,540
+Once you've given it a callback
+in the init, will
+
+414
+00:20:55,540 --> 00:21:00,250
+come here, and then we could
+load the shorter API, the ads
+
+415
+00:21:00,250 --> 00:21:05,145
+API, map API, any API that you
+want you could just specify
+
+416
+00:21:05,145 --> 00:21:08,370
+the version if your application
+is supporting a
+
+417
+00:21:08,370 --> 00:21:09,640
+specific version.
+
+418
+00:21:09,640 --> 00:21:12,240
+And of course, giving it here
+another callback so you could
+
+419
+00:21:12,240 --> 00:21:14,030
+start running and doing
+interesting stuff
+
+420
+00:21:14,030 --> 00:21:16,930
+with the API itself.
+
+421
+00:21:16,930 --> 00:21:21,620
+So what we saw here is that it's
+basically giving you the
+
+422
+00:21:21,620 --> 00:21:24,610
+one ability to just focus on
+what you're doing good and
+
+423
+00:21:24,610 --> 00:21:26,440
+what you are excelling
+at and then
+
+424
+00:21:26,440 --> 00:21:28,510
+consuming from any platform.
+
+425
+00:21:28,510 --> 00:21:31,950
+Let's have a quick look about
+how simple it is to work with
+
+426
+00:21:31,950 --> 00:21:33,250
+our app that will built.
+
+427
+00:21:33,250 --> 00:21:35,415
+And we built an app that
+is called Pictures.
+
+428
+00:21:35,415 --> 00:21:39,420
+
+429
+00:21:39,420 --> 00:21:41,350
+We'll do it in a second
+and I'll show you a
+
+430
+00:21:41,350 --> 00:21:42,210
+live demo of the app.
+
+431
+00:21:42,210 --> 00:21:45,460
+But here you can see how
+easy it is to get a
+
+432
+00:21:45,460 --> 00:21:46,810
+photo from the app.
+
+433
+00:21:46,810 --> 00:21:51,270
+So we'll have this GET request
+with the photo and the ID.
+
+434
+00:21:51,270 --> 00:21:53,540
+And here we're getting
+the response back.
+
+435
+00:21:53,540 --> 00:21:58,560
+So we're getting the photo
+encoded in 64 base, and all
+
+436
+00:21:58,560 --> 00:22:01,430
+the metadata that we
+have on this photo.
+
+437
+00:22:01,430 --> 00:22:02,460
+An insert.
+
+438
+00:22:02,460 --> 00:22:04,710
+An insert on the data
+on the server side.
+
+439
+00:22:04,710 --> 00:22:08,430
+Here is the shortest Python
+example that we gave you.
+
+440
+00:22:08,430 --> 00:22:11,820
+How easy it is to work with
+the Python version.
+
+441
+00:22:11,820 --> 00:22:14,170
+But for the ones that are
+passionate about Python and
+
+442
+00:22:14,170 --> 00:22:16,830
+want to see more how you
+leverage and built Cloud
+
+443
+00:22:16,830 --> 00:22:21,520
+Endpoint with Python, we'll have
+a full show in the near
+
+444
+00:22:21,520 --> 00:22:24,580
+future that will just focus
+on the server side.
+
+445
+00:22:24,580 --> 00:22:27,910
+On the client side, you can see
+here that in our drag and
+
+446
+00:22:27,910 --> 00:22:31,950
+drop example, we're going and
+when the user is clicking on
+
+447
+00:22:31,950 --> 00:22:35,790
+the Save button, we're just
+going online three to five and
+
+448
+00:22:35,790 --> 00:22:39,870
+just fetching all the attributes
+from our phone,
+
+449
+00:22:39,870 --> 00:22:43,336
+having a simple short case on
+line seven for the photo
+
+450
+00:22:43,336 --> 00:22:45,650
+itself because it's
+a bit trickier.
+
+451
+00:22:45,650 --> 00:22:49,760
+And then we're just going and
+call Google API with our own
+
+452
+00:22:49,760 --> 00:22:53,030
+unique API that we created,
+which is called Pictures.
+
+453
+00:22:53,030 --> 00:22:56,980
+And just calling photo.insert
+with the payload features.
+
+454
+00:22:56,980 --> 00:22:58,605
+Then what we need to
+do is just execute
+
+455
+00:22:58,605 --> 00:23:00,340
+it and have a callback.
+
+456
+00:23:00,340 --> 00:23:02,480
+As you can see here in the
+callback, we just want to make
+
+457
+00:23:02,480 --> 00:23:05,290
+sure that everything is done
+properly and give the user the
+
+458
+00:23:05,290 --> 00:23:07,540
+notification that the photo
+has been saved.
+
+459
+00:23:07,540 --> 00:23:11,770
+Or if something went wrong and
+we have 400 or any other error
+
+460
+00:23:11,770 --> 00:23:16,560
+code, we want to confirm it and
+notify the user about it.
+
+461
+00:23:16,560 --> 00:23:18,760
+The update example will
+be exactly the same.
+
+462
+00:23:18,760 --> 00:23:20,850
+We just use the endpoint
+of [INAUDIBLE].
+
+463
+00:23:20,850 --> 00:23:22,170
+So it's quite sweet.
+
+464
+00:23:22,170 --> 00:23:26,500
+And for the ones that are saying
+now, hey, come on, it's
+
+465
+00:23:26,500 --> 00:23:27,620
+not very efficient.
+
+466
+00:23:27,620 --> 00:23:30,250
+You change, let's say, the name
+and you've given me all
+
+467
+00:23:30,250 --> 00:23:33,940
+the upload again, we do have the
+endpoint of patch which is
+
+468
+00:23:33,940 --> 00:23:37,430
+giving you the ability just to
+give the server the deltas
+
+469
+00:23:37,430 --> 00:23:40,130
+that you've changed.
+
+470
+00:23:40,130 --> 00:23:44,690
+So we saw the most basic
+crude operation.
+
+471
+00:23:44,690 --> 00:23:49,190
+And to get at list of out
+photos, it's very simple here.
+
+472
+00:23:49,190 --> 00:23:52,340
+You can see, I'm just calling
+the list and then I'm
+
+473
+00:23:52,340 --> 00:23:55,010
+executing and going on
+the item itself.
+
+474
+00:23:55,010 --> 00:23:56,790
+And of course, add photos
+could do something
+
+475
+00:23:56,790 --> 00:23:58,950
+interesting for us.
+
+476
+00:23:58,950 --> 00:24:01,300
+Let's jump to the demo.
+
+477
+00:24:01,300 --> 00:24:04,430
+And let me just show you
+how the app is working.
+
+478
+00:24:04,430 --> 00:24:07,020
+So I'll share my screen.
+
+479
+00:24:07,020 --> 00:24:09,225
+Hopefully, the right one.
+
+480
+00:24:09,225 --> 00:24:15,350
+
+481
+00:24:15,350 --> 00:24:18,640
+Let's see that I'm sharing.
+
+482
+00:24:18,640 --> 00:24:19,890
+Yes.
+
+483
+00:24:19,890 --> 00:24:23,340
+
+484
+00:24:23,340 --> 00:24:24,700
+OK.
+
+485
+00:24:24,700 --> 00:24:30,950
+So this is the screen and I'll
+put the show notes recording
+
+486
+00:24:30,950 --> 00:24:34,200
+of this demo that we did on
+a live mobile device.
+
+487
+00:24:34,200 --> 00:24:37,130
+But for now, just to show
+you quickly how the
+
+488
+00:24:37,130 --> 00:24:38,470
+app itself is working.
+
+489
+00:24:38,470 --> 00:24:41,290
+So as you can see, we have
+here the ready button.
+
+490
+00:24:41,290 --> 00:24:45,300
+And for now, I won't disconnect
+the network because
+
+491
+00:24:45,300 --> 00:24:48,550
+I'm doing a Hangout and we do
+need the network, but if you
+
+492
+00:24:48,550 --> 00:24:53,422
+want later on to go to Pictures
+App on [INAUDIBLE]
+
+493
+00:24:53,422 --> 00:24:55,550
+and play with the app you'll
+yourself, you'll be able to
+
+494
+00:24:55,550 --> 00:24:58,280
+see that if you are after, of
+course, you're downloading the
+
+495
+00:24:58,280 --> 00:25:01,890
+app and working with it, you are
+disconnecting your machine
+
+496
+00:25:01,890 --> 00:25:02,920
+from the network.
+
+497
+00:25:02,920 --> 00:25:07,510
+This button will change its
+color from green to red and it
+
+498
+00:25:07,510 --> 00:25:09,070
+will be written here offline.
+
+499
+00:25:09,070 --> 00:25:11,210
+So you'll know that you
+are now offline.
+
+500
+00:25:11,210 --> 00:25:13,430
+But everything should work.
+
+501
+00:25:13,430 --> 00:25:16,440
+Right now we are online and
+let's say that enough I see my
+
+502
+00:25:16,440 --> 00:25:18,300
+amazing photos that
+I already took.
+
+503
+00:25:18,300 --> 00:25:20,350
+Let's try and add a new photo.
+
+504
+00:25:20,350 --> 00:25:22,460
+So I'm taking a photo.
+
+505
+00:25:22,460 --> 00:25:27,440
+In our case, it's just
+opening in our file.
+
+506
+00:25:27,440 --> 00:25:30,680
+And I'll try and we
+have your QR code.
+
+507
+00:25:30,680 --> 00:25:34,030
+I'll give it a title
+and description.
+
+508
+00:25:34,030 --> 00:25:36,210
+And I'm saving it.
+
+509
+00:25:36,210 --> 00:25:38,170
+Now notice when I'm clicking
+on Save, we getting a
+
+510
+00:25:38,170 --> 00:25:41,240
+confirmation that the QR picture
+was saved locally
+
+511
+00:25:41,240 --> 00:25:42,290
+quite quickly.
+
+512
+00:25:42,290 --> 00:25:44,380
+Because we save it in the
+local storage very fast.
+
+513
+00:25:44,380 --> 00:25:46,700
+And now you could see that
+we're getting another
+
+514
+00:25:46,700 --> 00:25:49,450
+confirmation that the photo
+was sent and been
+
+515
+00:25:49,450 --> 00:25:50,940
+saved in the Cloud.
+
+516
+00:25:50,940 --> 00:25:52,640
+They beauty here is that
+you [INAUDIBLE]
+
+517
+00:25:52,640 --> 00:25:56,690
+and we did it, of course, the
+two face commit here just for
+
+518
+00:25:56,690 --> 00:25:57,570
+the demo purposes.
+
+519
+00:25:57,570 --> 00:26:00,340
+But to show you, the developers,
+how quickly it was
+
+520
+00:26:00,340 --> 00:26:02,420
+to save it locally, to making
+sure that we're doing the
+
+521
+00:26:02,420 --> 00:26:05,560
+right thing, and the user, even
+if he doesn't have any
+
+522
+00:26:05,560 --> 00:26:08,580
+connection or very flaky
+connection, the responsiveness
+
+523
+00:26:08,580 --> 00:26:12,000
+is immediate and the user
+gets something quickly.
+
+524
+00:26:12,000 --> 00:26:14,670
+The other side of things is
+that we do want this one
+
+525
+00:26:14,670 --> 00:26:17,330
+source of true and we do want
+to share the information in
+
+526
+00:26:17,330 --> 00:26:17,780
+the server.
+
+527
+00:26:17,780 --> 00:26:21,730
+So from each and every device
+that the user will go later
+
+528
+00:26:21,730 --> 00:26:23,950
+on, she would be able to
+download and see all the
+
+529
+00:26:23,950 --> 00:26:26,500
+photos, and that's what
+made it very nice.
+
+530
+00:26:26,500 --> 00:26:29,340
+So we have one source of true,
+but then we're saving it
+
+531
+00:26:29,340 --> 00:26:31,000
+locally as well quickly.
+
+532
+00:26:31,000 --> 00:26:33,490
+Let me show here one of
+the beauties of the
+
+533
+00:26:33,490 --> 00:26:34,415
+web platform today.
+
+534
+00:26:34,415 --> 00:26:37,820
+If I'm opening DEV tool here by
+right clicking and inspect
+
+535
+00:26:37,820 --> 00:26:41,690
+element on the take photo item,
+you could see here--
+
+536
+00:26:41,690 --> 00:26:44,025
+and let me make it
+much larger--
+
+537
+00:26:44,025 --> 00:26:48,330
+
+538
+00:26:48,330 --> 00:26:51,290
+you see here I wrote the comment
+the magic is here.
+
+539
+00:26:51,290 --> 00:26:54,840
+Basically, this one line, not
+the label, sorry, the input--
+
+540
+00:26:54,840 --> 00:26:57,790
+the label is just to make
+the button nicer.
+
+541
+00:26:57,790 --> 00:26:59,710
+And that's one hack that you'll
+need to do if you want
+
+542
+00:26:59,710 --> 00:27:03,560
+such a nice button and not the
+default one that the browsers
+
+543
+00:27:03,560 --> 00:27:06,810
+are now giving you and
+it's not so sexy.
+
+544
+00:27:06,810 --> 00:27:08,890
+But the nice here is that the
+platform itself letting you
+
+545
+00:27:08,890 --> 00:27:10,900
+today have this input field.
+
+546
+00:27:10,900 --> 00:27:14,210
+And once you've put in the
+[INAUDIBLE] except image,
+
+547
+00:27:14,210 --> 00:27:18,810
+capture camera, if you run it on
+a mobile web browser, let's
+
+548
+00:27:18,810 --> 00:27:26,140
+say a Nexus 4 or any modern
+Android device, or iPhone, you
+
+549
+00:27:26,140 --> 00:27:29,820
+will get the ability to take a
+photo now from the camera, or
+
+550
+00:27:29,820 --> 00:27:32,640
+to choose a photo that you
+already saved on your mobile
+
+551
+00:27:32,640 --> 00:27:38,020
+device without PhoneGap, without
+any other external
+
+552
+00:27:38,020 --> 00:27:39,580
+source that you need
+to compile or to
+
+553
+00:27:39,580 --> 00:27:41,090
+bake into your app.
+
+554
+00:27:41,090 --> 00:27:45,040
+So we see clearly that the web
+platform and mobile browsers
+
+555
+00:27:45,040 --> 00:27:48,490
+are running fast into
+the right direction.
+
+556
+00:27:48,490 --> 00:27:50,890
+And that's basically letting you
+now, of course, that I'm
+
+557
+00:27:50,890 --> 00:27:54,880
+not in a mobile environment just
+do the right thing and
+
+558
+00:27:54,880 --> 00:27:56,210
+just to choose a file.
+
+559
+00:27:56,210 --> 00:27:58,505
+So let's choose quickly
+another file.
+
+560
+00:27:58,505 --> 00:28:02,100
+
+561
+00:28:02,100 --> 00:28:04,330
+Not a very good one.
+
+562
+00:28:04,330 --> 00:28:07,400
+Conversation, conversation,
+let's save it.
+
+563
+00:28:07,400 --> 00:28:09,990
+Again, you could see that you
+put in the right place.
+
+564
+00:28:09,990 --> 00:28:12,570
+And it will give me another
+confirmation once it's being
+
+565
+00:28:12,570 --> 00:28:16,420
+saved in the server side.
+
+566
+00:28:16,420 --> 00:28:21,160
+Of course, we have some nice
+capabilities to do sharing
+
+567
+00:28:21,160 --> 00:28:27,660
+with G+ API, but I guess we'll
+touch on them on the next
+
+568
+00:28:27,660 --> 00:28:30,680
+episode because I see that quite
+quickly we're running
+
+569
+00:28:30,680 --> 00:28:32,090
+out of time.
+
+570
+00:28:32,090 --> 00:28:40,890
+Just jump really quick to the
+main takeaway from the talk.
+
+571
+00:28:40,890 --> 00:28:43,810
+Basically, what we wanted to
+show you is that it's a really
+
+572
+00:28:43,810 --> 00:28:47,430
+powerful solution to build
+your next API and then
+
+573
+00:28:47,430 --> 00:28:49,530
+services on Google
+Cloud Endpoints.
+
+574
+00:28:49,530 --> 00:28:52,490
+And we highly encourage
+you to check it out.
+
+575
+00:28:52,490 --> 00:28:55,940
+Other great aspect today to
+front end developers, it's
+
+576
+00:28:55,940 --> 00:29:00,220
+HTML5 APIs and the readiness of
+the mobile web to give more
+
+577
+00:29:00,220 --> 00:29:05,280
+and more capabilities and
+ability to be close to the
+
+578
+00:29:05,280 --> 00:29:07,880
+device and close to
+the metal to the
+
+579
+00:29:07,880 --> 00:29:09,510
+developer and to the user.
+
+580
+00:29:09,510 --> 00:29:10,590
+So things like [INAUDIBLE]
+
+581
+00:29:10,590 --> 00:29:15,720
+API, rotation, orientation,
+accelerometer, Blue Tooth, et
+
+582
+00:29:15,720 --> 00:29:18,950
+cetera, are being baked into
+the platform quite quickly.
+
+583
+00:29:18,950 --> 00:29:21,390
+Some of them are
+already there.
+
+584
+00:29:21,390 --> 00:29:25,090
+And AngularJS is one framework
+that lets you be more
+
+585
+00:29:25,090 --> 00:29:26,090
+productive.
+
+586
+00:29:26,090 --> 00:29:29,630
+And it contains some of the cool
+aspects like directives
+
+587
+00:29:29,630 --> 00:29:33,020
+that are basically what web
+components will look in the
+
+588
+00:29:33,020 --> 00:29:34,300
+near future.
+
+589
+00:29:34,300 --> 00:29:37,970
+And in mobile web browsers, you
+should leverage new cool
+
+590
+00:29:37,970 --> 00:29:40,950
+things that are going to be
+there quite quickly, like Web
+
+591
+00:29:40,950 --> 00:29:45,540
+RTC, multi-threads in Web
+Workers, and flourishing
+
+592
+00:29:45,540 --> 00:29:50,850
+movement in CSS 3, layouts
+and other great benefits.
+
+593
+00:29:50,850 --> 00:29:53,100
+So thank you very much
+for your time.
+
+594
+00:29:53,100 --> 00:29:56,170
+If you have any questions,
+please feel free
+
+595
+00:29:56,170 --> 00:29:57,760
+to ping me on G+.
+
+596
+00:29:57,760 --> 00:30:00,790
+You could find me here
+or on Twitter.
+
+597
+00:30:00,790 --> 00:30:04,030
+The code for the app itself will
+be on GitHub, actually
+
+598
+00:30:04,030 --> 00:30:07,810
+it's right there on GitHub right
+now and you are most
+
+599
+00:30:07,810 --> 00:30:09,050
+welcome to take it.
+
+600
+00:30:09,050 --> 00:30:11,560
+And the slides will be later
+on ido-green@appsspot.com.
+
+601
+00:30:11,560 --> 00:30:15,055
+
+602
+00:30:15,055 --> 00:30:20,230
+So let's see if we have any
+questions right now.
+
+603
+00:30:20,230 --> 00:30:21,200
+I see that we don't.
+
+604
+00:30:21,200 --> 00:30:24,380
+So until next time, thank you
+very much and bye bye.
+
+605
+00:30:24,380 --> 00:30:32,890
+

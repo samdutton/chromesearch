@@ -1,0 +1,3748 @@
+1
+00:00:00,000 --> 00:00:08,570
+
+2
+00:00:08,570 --> 00:00:11,240
+It's always the analog things,
+like projectors, that cause
+
+3
+00:00:11,240 --> 00:00:13,890
+problems for things like this.
+
+4
+00:00:13,890 --> 00:00:16,140
+Well, thank you very
+much for coming.
+
+5
+00:00:16,140 --> 00:00:17,260
+My name's Greg DeMichillie.
+
+6
+00:00:17,260 --> 00:00:19,610
+I'm the director of product
+management for the Cloud
+
+7
+00:00:19,610 --> 00:00:20,860
+Platform at Google.
+
+8
+00:00:20,860 --> 00:00:23,700
+That means I lead the team of
+product managers responsible
+
+9
+00:00:23,700 --> 00:00:27,370
+for things like App Engine and
+Compute Engine, the developer
+
+10
+00:00:27,370 --> 00:00:30,800
+experience, our developer tools,
+the billing system, and
+
+11
+00:00:30,800 --> 00:00:34,790
+basically anything that you
+touch as an end user developer
+
+12
+00:00:34,790 --> 00:00:36,560
+coming to the Google Cloud.
+
+13
+00:00:36,560 --> 00:00:39,220
+Because of the way we work at
+Google, I'm also responsible
+
+14
+00:00:39,220 --> 00:00:41,220
+for the product management
+teams that build the
+
+15
+00:00:41,220 --> 00:00:44,360
+fundamental infrastructure that
+Google itself runs on.
+
+16
+00:00:44,360 --> 00:00:48,020
+So if you think about what we
+do, we allow you to build on
+
+17
+00:00:48,020 --> 00:00:50,750
+the same infrastructure that
+we use ourselves at Google.
+
+18
+00:00:50,750 --> 00:00:53,140
+And our team of product managers
+is responsible for
+
+19
+00:00:53,140 --> 00:00:56,430
+both the internal and external
+facing parts of that.
+
+20
+00:00:56,430 --> 00:00:58,290
+I've got a background
+in developer tools.
+
+21
+00:00:58,290 --> 00:01:01,120
+I was at Microsoft for
+10 years in the '90s.
+
+22
+00:01:01,120 --> 00:01:03,980
+And so I've been building
+things for
+
+23
+00:01:03,980 --> 00:01:05,349
+developers my whole career.
+
+24
+00:01:05,349 --> 00:01:07,670
+And I'm really happy to be here
+in Telaviv where there's
+
+25
+00:01:07,670 --> 00:01:11,580
+such a vibrant community of
+start-ups and ISVs and IT.
+
+26
+00:01:11,580 --> 00:01:13,590
+I've only been here so far
+one day, and this is my
+
+27
+00:01:13,590 --> 00:01:14,540
+first trip to Israel.
+
+28
+00:01:14,540 --> 00:01:18,560
+But it's really exciting to be
+here, so thank you for coming.
+
+29
+00:01:18,560 --> 00:01:22,770
+I thought today I'd start at a
+high level and then go down
+
+30
+00:01:22,770 --> 00:01:25,010
+into giving you an overview
+of what the Cloud Platform
+
+31
+00:01:25,010 --> 00:01:26,810
+actually has to offer.
+
+32
+00:01:26,810 --> 00:01:29,320
+First of all, if you think about
+what's happening in the
+
+33
+00:01:29,320 --> 00:01:32,340
+way we build applications today,
+there's a number of
+
+34
+00:01:32,340 --> 00:01:34,260
+things that have fundamentally
+changed the way we build
+
+35
+00:01:34,260 --> 00:01:35,280
+applications.
+
+36
+00:01:35,280 --> 00:01:38,940
+The first is this almost
+limitless capacity that we
+
+37
+00:01:38,940 --> 00:01:42,530
+have available, and not just
+available, but cheaply.
+
+38
+00:01:42,530 --> 00:01:45,610
+A statistic I saw the other day
+said for about $600 you
+
+39
+00:01:45,610 --> 00:01:49,830
+can buy enough disk storage to
+store all the world's music.
+
+40
+00:01:49,830 --> 00:01:51,480
+That's phenomenal if
+you think about it.
+
+41
+00:01:51,480 --> 00:01:54,660
+You think about a time not that
+long ago when, to build
+
+42
+00:01:54,660 --> 00:01:57,210
+an application, you had
+to buy hardware.
+
+43
+00:01:57,210 --> 00:01:58,450
+You had to buy storage.
+
+44
+00:01:58,450 --> 00:02:00,050
+You had to buy networking.
+
+45
+00:02:00,050 --> 00:02:02,750
+Before your first customer even
+came to your website, you
+
+46
+00:02:02,750 --> 00:02:04,850
+had thousands and thousands
+of dollars that you
+
+47
+00:02:04,850 --> 00:02:06,510
+had to put up front.
+
+48
+00:02:06,510 --> 00:02:09,930
+Now, with the way that the cloud
+is developing, you don't
+
+49
+00:02:09,930 --> 00:02:11,160
+have to do that.
+
+50
+00:02:11,160 --> 00:02:14,640
+You really have limitless
+capacity available on demand
+
+51
+00:02:14,640 --> 00:02:19,330
+when you need it in
+a real time way.
+
+52
+00:02:19,330 --> 00:02:22,340
+And if you think about the way
+applications tend to work,
+
+53
+00:02:22,340 --> 00:02:24,490
+they tend to fall into
+a couple patterns.
+
+54
+00:02:24,490 --> 00:02:26,810
+The first kind of application
+pattern you see a lot is the
+
+55
+00:02:26,810 --> 00:02:28,910
+classic batch computing.
+
+56
+00:02:28,910 --> 00:02:33,440
+Every night at 2AM, my system
+runs a report from all of
+
+57
+00:02:33,440 --> 00:02:34,500
+yesterday's sales.
+
+58
+00:02:34,500 --> 00:02:36,050
+And at 4AM it's done.
+
+59
+00:02:36,050 --> 00:02:39,010
+And then it sits idle for
+the next 22 hours.
+
+60
+00:02:39,010 --> 00:02:43,740
+And in that model, you buy a
+computer and you pay for it 24
+
+61
+00:02:43,740 --> 00:02:46,010
+hours a day even though it
+actually is only running a
+
+62
+00:02:46,010 --> 00:02:48,670
+task for two hours overnight.
+
+63
+00:02:48,670 --> 00:02:50,600
+And so you have wasted money.
+
+64
+00:02:50,600 --> 00:02:53,640
+Another pattern you see is
+the hyper growth company.
+
+65
+00:02:53,640 --> 00:02:56,440
+You're in a startup, and you're
+doubling every week the
+
+66
+00:02:56,440 --> 00:02:58,590
+number of users you have.
+
+67
+00:02:58,590 --> 00:03:01,480
+And now you're faced with the
+task of-- can I even by
+
+68
+00:03:01,480 --> 00:03:02,770
+computers fast enough?
+
+69
+00:03:02,770 --> 00:03:05,720
+Can I go online and order
+hardware and get it installed
+
+70
+00:03:05,720 --> 00:03:06,860
+fast enough to keep up?
+
+71
+00:03:06,860 --> 00:03:09,220
+And the answer is
+no, you can't.
+
+72
+00:03:09,220 --> 00:03:12,220
+So you're immediately faced with
+the choice of buying too
+
+73
+00:03:12,220 --> 00:03:15,750
+much to satisfy your growth,
+or having unsatisfied
+
+74
+00:03:15,750 --> 00:03:18,650
+customers because you can't
+keep up with the growth of
+
+75
+00:03:18,650 --> 00:03:20,810
+your company.
+
+76
+00:03:20,810 --> 00:03:24,060
+We see the unpredictable
+bursting.
+
+77
+00:03:24,060 --> 00:03:26,530
+My application is running
+fine and I'm serving
+
+78
+00:03:26,530 --> 00:03:27,580
+my customer's needs.
+
+79
+00:03:27,580 --> 00:03:32,710
+And then I end up being on
+the front page of Reddit.
+
+80
+00:03:32,710 --> 00:03:35,290
+Or I get picked up
+by a blogger.
+
+81
+00:03:35,290 --> 00:03:38,060
+And all of a sudden, out of the
+blue, my network traffic
+
+82
+00:03:38,060 --> 00:03:41,280
+goes up 10, 20, 50 times.
+
+83
+00:03:41,280 --> 00:03:42,510
+What do I do?
+
+84
+00:03:42,510 --> 00:03:45,670
+As a business, I can't afford
+to provision enough capacity
+
+85
+00:03:45,670 --> 00:03:48,810
+just in case I get massively
+popular.
+
+86
+00:03:48,810 --> 00:03:51,830
+So I end up again having
+unsatisfied customers because
+
+87
+00:03:51,830 --> 00:03:54,550
+I couldn't meet up
+with demand.
+
+88
+00:03:54,550 --> 00:03:58,540
+And the fourth pattern you see a
+lot is predictable bursting.
+
+89
+00:03:58,540 --> 00:04:00,050
+Think of FIFA.
+
+90
+00:04:00,050 --> 00:04:03,180
+Very predictably, every four
+years the World Cup happens
+
+91
+00:04:03,180 --> 00:04:05,990
+and there's a huge uptake
+in their traffic
+
+92
+00:04:05,990 --> 00:04:06,960
+load that they have.
+
+93
+00:04:06,960 --> 00:04:09,360
+And very predictably, once
+the World Cup's over, it
+
+94
+00:04:09,360 --> 00:04:10,590
+settles back down.
+
+95
+00:04:10,590 --> 00:04:11,920
+So what do they do?
+
+96
+00:04:11,920 --> 00:04:14,920
+Do they buy enough capacity to
+handle that peak when they
+
+97
+00:04:14,920 --> 00:04:18,250
+know it's coming, even though
+it's going to be wasted?
+
+98
+00:04:18,250 --> 00:04:21,769
+Or do they again have this risk
+of potentially having
+
+99
+00:04:21,769 --> 00:04:24,980
+unsatisfied customers because
+they couldn't meet the demand?
+
+100
+00:04:24,980 --> 00:04:29,520
+All of these speak to the need
+to move away from the model of
+
+101
+00:04:29,520 --> 00:04:31,390
+owning your own hardware,
+provisioning your own
+
+102
+00:04:31,390 --> 00:04:34,590
+hardware, and onto a model
+where you can provision
+
+103
+00:04:34,590 --> 00:04:36,300
+hardware on the fly.
+
+104
+00:04:36,300 --> 00:04:39,810
+And your application can use as
+much compute resources as
+
+105
+00:04:39,810 --> 00:04:44,600
+it needs, but only the resources
+that it needs.
+
+106
+00:04:44,600 --> 00:04:46,500
+So how does that relate
+to Google?
+
+107
+00:04:46,500 --> 00:04:49,720
+Well, it turns out Google has
+been facing this exact problem
+
+108
+00:04:49,720 --> 00:04:51,060
+for 14 years.
+
+109
+00:04:51,060 --> 00:04:54,850
+From the moment we built Google
+Search, we had the
+
+110
+00:04:54,850 --> 00:04:59,000
+problems of-- how do you deal
+with going from thousands of
+
+111
+00:04:59,000 --> 00:05:01,660
+users to millions or
+billions of users?
+
+112
+00:05:01,660 --> 00:05:06,600
+How do you provision capacity so
+that you're not wasting it?
+
+113
+00:05:06,600 --> 00:05:09,510
+How do you get power
+efficiency?
+
+114
+00:05:09,510 --> 00:05:14,030
+And along the way, we've had to
+invent a number of hardware
+
+115
+00:05:14,030 --> 00:05:17,110
+and software techniques just
+to make Google work.
+
+116
+00:05:17,110 --> 00:05:20,430
+If you think about it, when we
+set out to build a search
+
+117
+00:05:20,430 --> 00:05:23,920
+engine for the internet, the
+first thing you realize is you
+
+118
+00:05:23,920 --> 00:05:28,470
+need to store multiple copies
+of the entire worldwide web.
+
+119
+00:05:28,470 --> 00:05:29,760
+How do you do that?
+
+120
+00:05:29,760 --> 00:05:32,710
+There's no file system out there
+when we started that
+
+121
+00:05:32,710 --> 00:05:35,190
+could hold three, four,
+five copies of the
+
+122
+00:05:35,190 --> 00:05:36,240
+entire worldwide web.
+
+123
+00:05:36,240 --> 00:05:37,770
+So we had to invent that.
+
+124
+00:05:37,770 --> 00:05:41,650
+There were no storage systems we
+could go buy off the shelf
+
+125
+00:05:41,650 --> 00:05:42,870
+that would satisfy that.
+
+126
+00:05:42,870 --> 00:05:45,250
+So we had to invent storage
+technologies.
+
+127
+00:05:45,250 --> 00:05:48,110
+And time and time again, as
+we've built things like Search
+
+128
+00:05:48,110 --> 00:05:52,380
+and Apps and Gmail, we've had
+to build out the fundamental
+
+129
+00:05:52,380 --> 00:05:55,400
+hardware and software
+infrastructure.
+
+130
+00:05:55,400 --> 00:05:58,440
+And what we're doing with the
+Cloud Platform is we're taking
+
+131
+00:05:58,440 --> 00:06:01,810
+all of that infrastructure that
+we had to build for Apps,
+
+132
+00:06:01,810 --> 00:06:07,120
+and Search, and Gmail, and Maps,
+and Android, and Docs.
+
+133
+00:06:07,120 --> 00:06:10,580
+And we're now opening it up so
+that your applications can run
+
+134
+00:06:10,580 --> 00:06:12,320
+on that same infrastructure.
+
+135
+00:06:12,320 --> 00:06:14,010
+These are some photos
+of some of the data
+
+136
+00:06:14,010 --> 00:06:15,120
+centers that we have.
+
+137
+00:06:15,120 --> 00:06:17,390
+And frankly they're as
+pretty to look at as
+
+138
+00:06:17,390 --> 00:06:19,840
+they are to run on.
+
+139
+00:06:19,840 --> 00:06:21,950
+I think this one is in Finland,
+I'm not certain.
+
+140
+00:06:21,950 --> 00:06:24,900
+
+141
+00:06:24,900 --> 00:06:27,760
+And it's not just the
+infrastructure of servers and
+
+142
+00:06:27,760 --> 00:06:30,710
+storage, it's also networking.
+
+143
+00:06:30,710 --> 00:06:34,730
+One of the things you may not
+know is that last year Google,
+
+144
+00:06:34,730 --> 00:06:38,100
+in partnership with a couple
+other companies, we ran our
+
+145
+00:06:38,100 --> 00:06:41,170
+own cable underneath the Pacific
+Ocean to connect the
+
+146
+00:06:41,170 --> 00:06:43,020
+US to Asia Pacific.
+
+147
+00:06:43,020 --> 00:06:45,450
+In fact, we're the
+only non-telco--
+
+148
+00:06:45,450 --> 00:06:47,220
+non telecommunications
+company--
+
+149
+00:06:47,220 --> 00:06:52,560
+that owns its own submarine
+cable under the ocean.
+
+150
+00:06:52,560 --> 00:06:55,370
+And we do that because we
+needed high capacity
+
+151
+00:06:55,370 --> 00:06:58,750
+networking for our data centers
+in the US to our data
+
+152
+00:06:58,750 --> 00:07:01,100
+centers in Asia Pacific.
+
+153
+00:07:01,100 --> 00:07:02,440
+And this picture here--
+
+154
+00:07:02,440 --> 00:07:04,230
+see in the middle-- actually
+you can't quite see it, is
+
+155
+00:07:04,230 --> 00:07:06,630
+actually the cable being
+laid at the bottom
+
+156
+00:07:06,630 --> 00:07:07,750
+of the Pacific Ocean.
+
+157
+00:07:07,750 --> 00:07:11,910
+The trench being laid, the
+optic cable being run.
+
+158
+00:07:11,910 --> 00:07:13,950
+Those are the kind of
+investments that we're doing
+
+159
+00:07:13,950 --> 00:07:16,810
+in our infrastructure in
+order to keep pace
+
+160
+00:07:16,810 --> 00:07:18,670
+with what we need.
+
+161
+00:07:18,670 --> 00:07:21,570
+And we're inviting you
+along for the ride.
+
+162
+00:07:21,570 --> 00:07:23,410
+It doesn't stop there.
+
+163
+00:07:23,410 --> 00:07:26,320
+Last year we announced publicly
+that we're spending
+
+164
+00:07:26,320 --> 00:07:31,390
+2.9 billion US in additional
+infrastructure.
+
+165
+00:07:31,390 --> 00:07:34,870
+Data centers, more computers,
+more storage, networking
+
+166
+00:07:34,870 --> 00:07:38,220
+capacity, power efficiency.
+
+167
+00:07:38,220 --> 00:07:40,060
+And this is going to continue.
+
+168
+00:07:40,060 --> 00:07:46,310
+And we really don't see a
+slowing down in this.
+
+169
+00:07:46,310 --> 00:07:48,630
+But it's not just hardware.
+
+170
+00:07:48,630 --> 00:07:50,130
+It's also about software.
+
+171
+00:07:50,130 --> 00:07:52,510
+I alluded to this earlier when I
+talked about Search, and the
+
+172
+00:07:52,510 --> 00:07:56,350
+fact we had to invent
+our own file system.
+
+173
+00:07:56,350 --> 00:07:59,590
+That has shown up time
+and time again.
+
+174
+00:07:59,590 --> 00:08:03,150
+In 2004, we released
+a public paper on a
+
+175
+00:08:03,150 --> 00:08:04,870
+technology called MapReduce.
+
+176
+00:08:04,870 --> 00:08:08,820
+You now know that as the
+foundation of Hadoop, right?
+
+177
+00:08:08,820 --> 00:08:11,500
+Internally, we've actually
+already moved off MapReduce
+
+178
+00:08:11,500 --> 00:08:12,980
+and we're on to the
+next generation,
+
+179
+00:08:12,980 --> 00:08:15,000
+something we call Flume.
+
+180
+00:08:15,000 --> 00:08:17,900
+And that's the technology we're
+using to do our own
+
+181
+00:08:17,900 --> 00:08:19,980
+MapReduce like workloads
+at Google.
+
+182
+00:08:19,980 --> 00:08:22,410
+Similarly, we've made
+investments in software like
+
+183
+00:08:22,410 --> 00:08:26,180
+BigTable, which is a storage
+technology that allows you to
+
+184
+00:08:26,180 --> 00:08:30,750
+do NoSQL-like data storage
+with incredibly high
+
+185
+00:08:30,750 --> 00:08:31,800
+reliability.
+
+186
+00:08:31,800 --> 00:08:33,590
+And again, we've published
+a paper on that.
+
+187
+00:08:33,590 --> 00:08:36,640
+And that is the foundation of
+what you see in the Cloud
+
+188
+00:08:36,640 --> 00:08:38,870
+Datastore that we'll
+talk about.
+
+189
+00:08:38,870 --> 00:08:42,690
+Dremel, a technology to allow
+you to do querying of
+
+190
+00:08:42,690 --> 00:08:47,230
+non-relational data with the
+SQL-like language interface.
+
+191
+00:08:47,230 --> 00:08:50,820
+Spanner, Colossus, these are
+all places where we've
+
+192
+00:08:50,820 --> 00:08:53,640
+advanced the state of computer
+science, we've published
+
+193
+00:08:53,640 --> 00:08:57,740
+papers, and we're building now
+our Cloud Platform products on
+
+194
+00:08:57,740 --> 00:08:58,480
+top of those.
+
+195
+00:08:58,480 --> 00:09:03,950
+So that as we continue to invest
+in the software to run
+
+196
+00:09:03,950 --> 00:09:06,520
+our own business, we're exposing
+those to you as
+
+197
+00:09:06,520 --> 00:09:09,010
+developers and you'll see that
+as we go through the actual
+
+198
+00:09:09,010 --> 00:09:10,260
+components of the
+Cloud Platform.
+
+199
+00:09:10,260 --> 00:09:14,540
+
+200
+00:09:14,540 --> 00:09:17,600
+And in fact, it's just us when
+we've invited other people to
+
+201
+00:09:17,600 --> 00:09:20,000
+come look at our product.
+
+202
+00:09:20,000 --> 00:09:20,550
+Wired--
+
+203
+00:09:20,550 --> 00:09:23,560
+we gave Wired a tour of some of
+our data centers and they
+
+204
+00:09:23,560 --> 00:09:26,880
+really came away with it's not
+just about software and
+
+205
+00:09:26,880 --> 00:09:31,480
+hardware, it's the combination
+of software, hardware, and our
+
+206
+00:09:31,480 --> 00:09:35,640
+efficiency that allows us to
+actually run and deploy that
+
+207
+00:09:35,640 --> 00:09:37,240
+hardware and software.
+
+208
+00:09:37,240 --> 00:09:40,410
+That's another favorite pictures
+of mine of one of our
+
+209
+00:09:40,410 --> 00:09:41,370
+data centers.
+
+210
+00:09:41,370 --> 00:09:44,290
+It's interesting, the people
+ask the color of the pipes,
+
+211
+00:09:44,290 --> 00:09:45,160
+did we just paint those?
+
+212
+00:09:45,160 --> 00:09:46,710
+Because they're the
+Google colors.
+
+213
+00:09:46,710 --> 00:09:47,910
+It turns out it's not true.
+
+214
+00:09:47,910 --> 00:09:52,440
+There's a standard color coding
+in data centers of red,
+
+215
+00:09:52,440 --> 00:09:53,920
+blue, yellow, and green.
+
+216
+00:09:53,920 --> 00:09:56,670
+Meaning things like
+hot air, cool air,
+
+217
+00:09:56,670 --> 00:09:57,960
+hot water, cool water.
+
+218
+00:09:57,960 --> 00:10:00,310
+And it turns out that the
+standard is pretty much the
+
+219
+00:10:00,310 --> 00:10:01,430
+same as the Google colors.
+
+220
+00:10:01,430 --> 00:10:04,050
+But everybody else just paints
+or puts a little
+
+221
+00:10:04,050 --> 00:10:05,230
+stripe around the pipe.
+
+222
+00:10:05,230 --> 00:10:06,450
+And so we thought,
+why not paint the
+
+223
+00:10:06,450 --> 00:10:07,470
+whole pipe that color?
+
+224
+00:10:07,470 --> 00:10:08,830
+Just because we think
+it looks better.
+
+225
+00:10:08,830 --> 00:10:10,520
+And if you're going to work in
+one of our data centers, why
+
+226
+00:10:10,520 --> 00:10:12,440
+shouldn't you work in a
+nice environment too?
+
+227
+00:10:12,440 --> 00:10:15,260
+
+228
+00:10:15,260 --> 00:10:18,460
+With that, as background, let
+me take you through an
+
+229
+00:10:18,460 --> 00:10:22,020
+overview of the Cloud Platform
+itself that we offer to you as
+
+230
+00:10:22,020 --> 00:10:23,830
+developers.
+
+231
+00:10:23,830 --> 00:10:28,210
+First thing is it is a platform
+aimed at application
+
+232
+00:10:28,210 --> 00:10:29,880
+and IT developers.
+
+233
+00:10:29,880 --> 00:10:32,840
+Google also has software
+as a service product,
+
+234
+00:10:32,840 --> 00:10:34,340
+like Gmail a Docs.
+
+235
+00:10:34,340 --> 00:10:36,410
+I'm not going to talk
+about those today.
+
+236
+00:10:36,410 --> 00:10:39,370
+They're fabulous products, we
+use them ourselves constantly.
+
+237
+00:10:39,370 --> 00:10:42,220
+We're going to talk today
+about infrastructure and
+
+238
+00:10:42,220 --> 00:10:45,370
+platform as a service in the
+form of Compute Engine, App
+
+239
+00:10:45,370 --> 00:10:47,850
+Engine, and the associated
+products.
+
+240
+00:10:47,850 --> 00:10:50,460
+So first, just make sure we're
+level set about the
+
+241
+00:10:50,460 --> 00:10:52,750
+differences between those
+different components.
+
+242
+00:10:52,750 --> 00:10:55,500
+Basically, when you look at the
+Cloud Platform, you can
+
+243
+00:10:55,500 --> 00:11:00,430
+choose how much control you want
+to maintain and how much
+
+244
+00:11:00,430 --> 00:11:03,840
+automation you want us
+to provide for you.
+
+245
+00:11:03,840 --> 00:11:07,500
+Starting with infrastructure as
+a service, at that level,
+
+246
+00:11:07,500 --> 00:11:10,420
+we will manage for you your
+networking, your storage, your
+
+247
+00:11:10,420 --> 00:11:12,310
+servers, and your
+virtualization.
+
+248
+00:11:12,310 --> 00:11:16,000
+You still have complete
+flexibility and control over
+
+249
+00:11:16,000 --> 00:11:19,000
+what operating system you run,
+what middleware you run, what
+
+250
+00:11:19,000 --> 00:11:21,110
+applications you deploy.
+
+251
+00:11:21,110 --> 00:11:24,580
+If you go to Platform as a
+service, you give up a little
+
+252
+00:11:24,580 --> 00:11:27,780
+bit of that direct control in
+that we now manage your
+
+253
+00:11:27,780 --> 00:11:30,400
+operating systems and middleware
+and run time.
+
+254
+00:11:30,400 --> 00:11:33,570
+But in exchange for that, you
+get much higher levels of
+
+255
+00:11:33,570 --> 00:11:37,230
+productivity because we can
+provide auto scaling, auto
+
+256
+00:11:37,230 --> 00:11:38,340
+load balancing--
+
+257
+00:11:38,340 --> 00:11:41,870
+we can provide more of that
+for you automatically.
+
+258
+00:11:41,870 --> 00:11:44,380
+Think about this as the
+equivalent of programming in a
+
+259
+00:11:44,380 --> 00:11:46,030
+high level language
+and programming
+
+260
+00:11:46,030 --> 00:11:47,090
+in a low level language.
+
+261
+00:11:47,090 --> 00:11:49,740
+Some things you write in C
+because you have total
+
+262
+00:11:49,740 --> 00:11:51,720
+control, and it lets you
+do everything you want.
+
+263
+00:11:51,720 --> 00:11:54,430
+But if you write things in C,
+you have to worry about more
+
+264
+00:11:54,430 --> 00:11:55,340
+of that yourself.
+
+265
+00:11:55,340 --> 00:11:57,900
+If you write in a language like
+Java, you don't think
+
+266
+00:11:57,900 --> 00:11:59,690
+about [INAUDIBLE] management
+anymore.
+
+267
+00:11:59,690 --> 00:12:01,170
+It's provided automatically.
+
+268
+00:12:01,170 --> 00:12:05,440
+But you give up a little bit
+in terms of flexibility.
+
+269
+00:12:05,440 --> 00:12:10,400
+We support whatever place you
+want to be on this continuum,
+
+270
+00:12:10,400 --> 00:12:13,735
+from you manage it yourself to
+we manage it automatically.
+
+271
+00:12:13,735 --> 00:12:17,570
+
+272
+00:12:17,570 --> 00:12:19,060
+Let's look at specifically
+what makes
+
+273
+00:12:19,060 --> 00:12:20,110
+up the Cloud Platform.
+
+274
+00:12:20,110 --> 00:12:22,140
+Think of it in three
+broad buckets.
+
+275
+00:12:22,140 --> 00:12:23,600
+First is Compute.
+
+276
+00:12:23,600 --> 00:12:27,730
+This is the actual application
+logic of the system you're
+
+277
+00:12:27,730 --> 00:12:30,130
+developing, the actual
+Compute Services.
+
+278
+00:12:30,130 --> 00:12:32,730
+Of course, you can't have an
+application if you don't also
+
+279
+00:12:32,730 --> 00:12:33,850
+have storage.
+
+280
+00:12:33,850 --> 00:12:38,080
+And we have a range of storage
+products from traditional SQL
+
+281
+00:12:38,080 --> 00:12:44,250
+in a cloud hosted environment,
+to no SQL, to file system like
+
+282
+00:12:44,250 --> 00:12:45,750
+storage as well.
+
+283
+00:12:45,750 --> 00:12:48,320
+And then finally, there's a set
+of application services
+
+284
+00:12:48,320 --> 00:12:50,130
+that you want to use
+regardless of what
+
+285
+00:12:50,130 --> 00:12:52,170
+technologies you're using.
+
+286
+00:12:52,170 --> 00:12:56,230
+Around things like querying of
+data, integrating with Mobile
+
+287
+00:12:56,230 --> 00:12:58,960
+back-ends caching, queues,
+things like that.
+
+288
+00:12:58,960 --> 00:13:02,170
+And we're going to walk through
+each of these in turn.
+
+289
+00:13:02,170 --> 00:13:05,520
+But it's important to point out
+that this is a snapshot in
+
+290
+00:13:05,520 --> 00:13:08,570
+time and we're evolving
+very quickly.
+
+291
+00:13:08,570 --> 00:13:13,110
+In fact, in the last 12 months,
+we've rolled out 163
+
+292
+00:13:13,110 --> 00:13:15,220
+new features or major
+improvements
+
+293
+00:13:15,220 --> 00:13:16,760
+in the Cloud Platform.
+
+294
+00:13:16,760 --> 00:13:21,350
+Everything from new instance
+types in our virtual machines,
+
+295
+00:13:21,350 --> 00:13:27,360
+to new programming languages in
+App Engine, to new pricing,
+
+296
+00:13:27,360 --> 00:13:29,650
+new charging, lower prices.
+
+297
+00:13:29,650 --> 00:13:32,690
+What I'm presenting to you is
+a snapshot in time, but we
+
+298
+00:13:32,690 --> 00:13:35,940
+continue to roll out
+new features on
+
+299
+00:13:35,940 --> 00:13:37,290
+a very rapid basis.
+
+300
+00:13:37,290 --> 00:13:40,040
+And in fact, we actually
+see this accelerating.
+
+301
+00:13:40,040 --> 00:13:42,500
+Not just holding still,
+but getting faster.
+
+302
+00:13:42,500 --> 00:13:45,350
+As we hire more people, as we
+invest more, we find that
+
+303
+00:13:45,350 --> 00:13:48,230
+we're actually able to increase
+the velocity at which
+
+304
+00:13:48,230 --> 00:13:50,930
+we roll out new features.
+
+305
+00:13:50,930 --> 00:13:54,650
+Let's take a look inside each of
+the parts of the platform.
+
+306
+00:13:54,650 --> 00:13:56,920
+We'll start with the
+Compute side.
+
+307
+00:13:56,920 --> 00:13:59,740
+Again, this is where the bulk
+of your application logic
+
+308
+00:13:59,740 --> 00:14:02,730
+sits, the actual core of what
+your application does.
+
+309
+00:14:02,730 --> 00:14:04,520
+And we provide two different
+models here.
+
+310
+00:14:04,520 --> 00:14:08,410
+One is infrastructure as a
+service in Compute Engine,
+
+311
+00:14:08,410 --> 00:14:10,650
+where you specify virtual
+machines and you
+
+312
+00:14:10,650 --> 00:14:12,050
+have complete control.
+
+313
+00:14:12,050 --> 00:14:15,390
+And App Engine, which is highly
+managed environment.
+
+314
+00:14:15,390 --> 00:14:17,540
+Let's start with
+Compute Engine.
+
+315
+00:14:17,540 --> 00:14:19,980
+The main value of Compute Engine
+is it's a familiar
+
+316
+00:14:19,980 --> 00:14:20,750
+environment.
+
+317
+00:14:20,750 --> 00:14:25,830
+If you're running a Debian
+operating system on premises,
+
+318
+00:14:25,830 --> 00:14:29,140
+on a machine under your desk,
+you can very quickly spin up a
+
+319
+00:14:29,140 --> 00:14:31,810
+virtual machine that runs that
+same operating system.
+
+320
+00:14:31,810 --> 00:14:34,660
+Install the same software,
+manage it with the same tools,
+
+321
+00:14:34,660 --> 00:14:36,870
+run the same applications.
+
+322
+00:14:36,870 --> 00:14:41,210
+But what you get with running
+it on Google is you get the
+
+323
+00:14:41,210 --> 00:14:42,930
+Google network, for one.
+
+324
+00:14:42,930 --> 00:14:45,790
+Google has a very, very high
+performance network.
+
+325
+00:14:45,790 --> 00:14:48,670
+You also get very, very
+fast start up times.
+
+326
+00:14:48,670 --> 00:14:51,490
+We have virtual machines
+that launch--
+
+327
+00:14:51,490 --> 00:14:53,890
+from the time you provision the
+machine until they're up
+
+328
+00:14:53,890 --> 00:14:57,210
+and running in about the
+10 second range.
+
+329
+00:14:57,210 --> 00:14:59,910
+And frankly, we think that's
+a little slow.
+
+330
+00:14:59,910 --> 00:15:03,540
+We believe we have room
+to lower that further.
+
+331
+00:15:03,540 --> 00:15:05,970
+And if you think about that,
+that again-- that changes how
+
+332
+00:15:05,970 --> 00:15:07,240
+you think about application
+development.
+
+333
+00:15:07,240 --> 00:15:10,120
+If you could spin up a new
+instance of part of your
+
+334
+00:15:10,120 --> 00:15:13,510
+application in seconds, it
+changes the way you think
+
+335
+00:15:13,510 --> 00:15:15,540
+about application development.
+
+336
+00:15:15,540 --> 00:15:19,150
+Particularly when you add in
+some of the other capabilities
+
+337
+00:15:19,150 --> 00:15:21,370
+I'm going to talk about.
+
+338
+00:15:21,370 --> 00:15:23,770
+In addition, of course, we have
+persistent disk that you
+
+339
+00:15:23,770 --> 00:15:25,990
+could store to 10 terabytes
+of persistent
+
+340
+00:15:25,990 --> 00:15:27,700
+disk per virtual machine.
+
+341
+00:15:27,700 --> 00:15:31,570
+There's a wide range
+of operating system
+
+342
+00:15:31,570 --> 00:15:32,570
+and instance types.
+
+343
+00:15:32,570 --> 00:15:37,710
+Everything from a fraction of
+a core if you're running--
+
+344
+00:15:37,710 --> 00:15:40,650
+I think we have 1/5 of core-- so
+if you're running very like
+
+345
+00:15:40,650 --> 00:15:42,780
+workloads that you only need
+to run to short periods of
+
+346
+00:15:42,780 --> 00:15:47,750
+time, all the way up to eight
+and 16 core machines with a
+
+347
+00:15:47,750 --> 00:15:49,700
+lot of memory.
+
+348
+00:15:49,700 --> 00:15:52,195
+One of the features we announced
+at I/O that I think
+
+349
+00:15:52,195 --> 00:15:56,120
+is pretty exciting is really
+related to billing.
+
+350
+00:15:56,120 --> 00:15:57,400
+And I know billing
+sounds boring.
+
+351
+00:15:57,400 --> 00:15:59,100
+How could there be anything
+interesting about billing?
+
+352
+00:15:59,100 --> 00:16:00,900
+But bear with me.
+
+353
+00:16:00,900 --> 00:16:04,390
+If you think about the way
+most cloud providers work
+
+354
+00:16:04,390 --> 00:16:07,220
+today, you fire up a
+virtual machine.
+
+355
+00:16:07,220 --> 00:16:10,090
+It runs, and even if you run
+it for 20 minutes you get
+
+356
+00:16:10,090 --> 00:16:11,260
+billed for an hour.
+
+357
+00:16:11,260 --> 00:16:14,365
+So if you run for 61 minutes,
+you're billed for two hours.
+
+358
+00:16:14,365 --> 00:16:16,940
+
+359
+00:16:16,940 --> 00:16:19,010
+What we've introduced
+is we actually now
+
+360
+00:16:19,010 --> 00:16:20,770
+have per minute billing.
+
+361
+00:16:20,770 --> 00:16:24,210
+So you actually only pay for the
+specific number of minutes
+
+362
+00:16:24,210 --> 00:16:25,750
+that your virtual machine
+is running.
+
+363
+00:16:25,750 --> 00:16:28,720
+If you take that combined with
+the fact that you can start a
+
+364
+00:16:28,720 --> 00:16:33,160
+machine up in a few 10s of
+seconds or 10 seconds, you
+
+365
+00:16:33,160 --> 00:16:35,860
+literally can start to throw
+cores at a problem.
+
+366
+00:16:35,860 --> 00:16:40,510
+Because you can economically
+afford to spin up 1,000 cores
+
+367
+00:16:40,510 --> 00:16:42,550
+for 10 minutes, for
+20 minutes.
+
+368
+00:16:42,550 --> 00:16:45,120
+In most cloud providers, if
+you spin up 1,000 cores,
+
+369
+00:16:45,120 --> 00:16:48,530
+you're going to spend a full
+hour minimum cost.
+
+370
+00:16:48,530 --> 00:16:50,160
+Think about the way develop
+applications.
+
+371
+00:16:50,160 --> 00:16:54,350
+And think about places where you
+could use a lot of compute
+
+372
+00:16:54,350 --> 00:16:56,800
+capacity for a very short
+period of time.
+
+373
+00:16:56,800 --> 00:17:00,410
+We're actually now allowing you
+to do that economically.
+
+374
+00:17:00,410 --> 00:17:02,770
+I talked about the
+persistent disks.
+
+375
+00:17:02,770 --> 00:17:05,770
+You can have up to 10 terabytes
+of persistent disk
+
+376
+00:17:05,770 --> 00:17:07,710
+that's attached to your VM's.
+
+377
+00:17:07,710 --> 00:17:10,240
+We also allow you to have
+multiple VM's attached to the
+
+378
+00:17:10,240 --> 00:17:11,819
+same persistent disk.
+
+379
+00:17:11,819 --> 00:17:14,000
+Which, again, is a very
+convenient way for you share
+
+380
+00:17:14,000 --> 00:17:16,230
+information between instances.
+
+381
+00:17:16,230 --> 00:17:19,920
+We have over 64 different
+instance types with operating
+
+382
+00:17:19,920 --> 00:17:22,339
+system support ranging from
+CentOS and Debian.
+
+383
+00:17:22,339 --> 00:17:25,550
+
+384
+00:17:25,550 --> 00:17:28,890
+We have things ranging from
+fraction of a core up to one,
+
+385
+00:17:28,890 --> 00:17:31,140
+two, four, eight
+core machines.
+
+386
+00:17:31,140 --> 00:17:34,650
+You can choose whether you want
+a local disk attached to
+
+387
+00:17:34,650 --> 00:17:37,380
+your device, or you don't
+want a local disk.
+
+388
+00:17:37,380 --> 00:17:39,760
+You can save money if you don't
+actually require a local
+
+389
+00:17:39,760 --> 00:17:43,160
+disk running on your
+virtual machine.
+
+390
+00:17:43,160 --> 00:17:44,960
+And we are rolling out
+all the additional
+
+391
+00:17:44,960 --> 00:17:45,990
+features that you expect.
+
+392
+00:17:45,990 --> 00:17:49,460
+Things like load balancing, we
+now have in preview so that
+
+393
+00:17:49,460 --> 00:17:51,850
+you can attach a cloud hosted
+load balancer in
+
+394
+00:17:51,850 --> 00:17:53,150
+front of your systems.
+
+395
+00:17:53,150 --> 00:17:55,660
+And over the next year you'll
+see us roll out more
+
+396
+00:17:55,660 --> 00:17:56,830
+capabilities here.
+
+397
+00:17:56,830 --> 00:18:01,470
+You'll see us add more operating
+system support to
+
+398
+00:18:01,470 --> 00:18:02,540
+our platform.
+
+399
+00:18:02,540 --> 00:18:05,790
+You'll see us add not just level
+three, but level seven
+
+400
+00:18:05,790 --> 00:18:06,670
+load balancing.
+
+401
+00:18:06,670 --> 00:18:10,700
+Auto scaling, all sorts of
+capabilities will either soon
+
+402
+00:18:10,700 --> 00:18:14,280
+be in a Trusted Tester or we've
+already demoed them at
+
+403
+00:18:14,280 --> 00:18:17,580
+I/O.
+
+404
+00:18:17,580 --> 00:18:21,110
+That's the do-it-yourself
+model of just give me a
+
+405
+00:18:21,110 --> 00:18:22,040
+virtual machine.
+
+406
+00:18:22,040 --> 00:18:24,830
+Is it's familiar, it's
+what I know, it's a
+
+407
+00:18:24,830 --> 00:18:26,130
+low barrier to entry.
+
+408
+00:18:26,130 --> 00:18:29,530
+But if you do that, you're still
+managing things like how
+
+409
+00:18:29,530 --> 00:18:30,850
+you do auto scaling.
+
+410
+00:18:30,850 --> 00:18:33,270
+You're still configuring
+your operating systems.
+
+411
+00:18:33,270 --> 00:18:35,750
+You're still patching you're
+operating systems.
+
+412
+00:18:35,750 --> 00:18:39,570
+If you have a software problem,
+it's your engineers
+
+413
+00:18:39,570 --> 00:18:41,880
+who are debugging your
+software problem.
+
+414
+00:18:41,880 --> 00:18:45,120
+App Engine is a platform
+as a service.
+
+415
+00:18:45,120 --> 00:18:47,840
+With App Engine, it's a fully
+managed platform.
+
+416
+00:18:47,840 --> 00:18:50,780
+We wear the pagers, so if
+there's something that goes
+
+417
+00:18:50,780 --> 00:18:54,210
+wrong in the system it's Peter
+and his engineers who get the
+
+418
+00:18:54,210 --> 00:18:57,060
+2AM phone call, not you.
+
+419
+00:18:57,060 --> 00:19:01,100
+It is a very easy development
+model.
+
+420
+00:19:01,100 --> 00:19:04,470
+You just upload your code, and
+then we actually deploy it out
+
+421
+00:19:04,470 --> 00:19:05,770
+to the application.
+
+422
+00:19:05,770 --> 00:19:08,960
+And it really allows you to
+focus on the parts that make
+
+423
+00:19:08,960 --> 00:19:10,660
+your application unique.
+
+424
+00:19:10,660 --> 00:19:14,160
+If you think about it as the
+developer, the mega trend over
+
+425
+00:19:14,160 --> 00:19:17,670
+the last 20 years for developers
+is you want to
+
+426
+00:19:17,670 --> 00:19:21,710
+spend more time writing code
+that makes your app different.
+
+427
+00:19:21,710 --> 00:19:25,000
+Not boilerplate code that's
+the same in every single
+
+428
+00:19:25,000 --> 00:19:27,410
+application.
+
+429
+00:19:27,410 --> 00:19:31,760
+App Engine is the next
+step in that process.
+
+430
+00:19:31,760 --> 00:19:34,840
+App Engine automatically scales
+both the front ends and
+
+431
+00:19:34,840 --> 00:19:36,560
+the back ends of your
+application.
+
+432
+00:19:36,560 --> 00:19:39,630
+And, in fact, if you are having
+no traffic, we scale
+
+433
+00:19:39,630 --> 00:19:42,080
+you down to zero and
+you pay nothing.
+
+434
+00:19:42,080 --> 00:19:44,580
+And again, that's the sort of
+thing you can get with a fully
+
+435
+00:19:44,580 --> 00:19:46,920
+managed platform like
+App Engine.
+
+436
+00:19:46,920 --> 00:19:50,040
+In terms of features, we
+support the popular
+
+437
+00:19:50,040 --> 00:19:50,600
+programming .
+
+438
+00:19:50,600 --> 00:19:53,630
+Languages for quite a while
+we've supported Java and
+
+439
+00:19:53,630 --> 00:19:55,090
+Python and Go.
+
+440
+00:19:55,090 --> 00:19:57,050
+We've just now rolled out--
+we announced at I/O--
+
+441
+00:19:57,050 --> 00:19:58,620
+support for PHP.
+
+442
+00:19:58,620 --> 00:20:01,410
+So if you're a PHP developer,
+you can now bring your PHP
+
+443
+00:20:01,410 --> 00:20:04,020
+code and run it on App Engine.
+
+444
+00:20:04,020 --> 00:20:07,670
+We provide a variety
+of storage options.
+
+445
+00:20:07,670 --> 00:20:09,560
+And I'll talk more about storage
+a little later, but
+
+446
+00:20:09,560 --> 00:20:12,740
+both SQL and NoSQL storage
+you can access.
+
+447
+00:20:12,740 --> 00:20:14,250
+There's a variety of services.
+
+448
+00:20:14,250 --> 00:20:17,290
+If you want Memcache to make
+your application faster with
+
+449
+00:20:17,290 --> 00:20:20,030
+App Engine, you don't have to
+go and configure a Memcache.
+
+450
+00:20:20,030 --> 00:20:22,760
+You going in the console, you
+check a box that's saying I
+
+451
+00:20:22,760 --> 00:20:23,990
+want Memcache.
+
+452
+00:20:23,990 --> 00:20:26,710
+How much storage do I want?
+
+453
+00:20:26,710 --> 00:20:31,570
+If you want, you can get shared
+Memcache so your memory
+
+454
+00:20:31,570 --> 00:20:33,540
+cache is shared among
+applications.
+
+455
+00:20:33,540 --> 00:20:35,370
+If you want to pay a little
+bit more, you could have
+
+456
+00:20:35,370 --> 00:20:38,150
+dedicated Memcache that's for
+the exclusive use of your
+
+457
+00:20:38,150 --> 00:20:39,070
+application.
+
+458
+00:20:39,070 --> 00:20:42,270
+And you could specify exactly
+how much cache you want.
+
+459
+00:20:42,270 --> 00:20:46,590
+We provision it, we manage it
+for you, all automatically.
+
+460
+00:20:46,590 --> 00:20:48,800
+Also, all the typical things
+you would expect.
+
+461
+00:20:48,800 --> 00:20:52,900
+There are local development
+tools so that you can run your
+
+462
+00:20:52,900 --> 00:20:56,160
+code locally on your laptop to
+test out your application,
+
+463
+00:20:56,160 --> 00:20:57,160
+make sure it works.
+
+464
+00:20:57,160 --> 00:20:59,130
+With one command line,
+upload the code and
+
+465
+00:20:59,130 --> 00:21:01,500
+you're up and running.
+
+466
+00:21:01,500 --> 00:21:04,090
+Peter's going to talk a lot more
+about App Engine, I think
+
+467
+00:21:04,090 --> 00:21:05,960
+specifically on PHP
+and some of these
+
+468
+00:21:05,960 --> 00:21:06,750
+things in a little bit.
+
+469
+00:21:06,750 --> 00:21:09,200
+So I'm not going to spend too
+much time on App Engine
+
+470
+00:21:09,200 --> 00:21:10,450
+specifically.
+
+471
+00:21:10,450 --> 00:21:12,950
+
+472
+00:21:12,950 --> 00:21:14,880
+That's the compute side.
+
+473
+00:21:14,880 --> 00:21:16,760
+Now you've got your application
+[INAUDIBLE]
+
+474
+00:21:16,760 --> 00:21:17,640
+and hosted.
+
+475
+00:21:17,640 --> 00:21:18,910
+What about storage?
+
+476
+00:21:18,910 --> 00:21:21,860
+Well, storage comes in a
+couple different forms.
+
+477
+00:21:21,860 --> 00:21:23,830
+The first is cloud storage.
+
+478
+00:21:23,830 --> 00:21:27,510
+Cloud storage is your hard
+drive in the sky.
+
+479
+00:21:27,510 --> 00:21:30,550
+You just have a bucket you write
+to, you just give us a
+
+480
+00:21:30,550 --> 00:21:31,660
+blob of data.
+
+481
+00:21:31,660 --> 00:21:33,460
+We store it and you
+can retrieve it.
+
+482
+00:21:33,460 --> 00:21:35,700
+Think about it logically as
+the equivalent of Google
+
+483
+00:21:35,700 --> 00:21:39,600
+Drive, in that your application
+has its own-- your
+
+484
+00:21:39,600 --> 00:21:41,660
+project has its own
+storage place.
+
+485
+00:21:41,660 --> 00:21:45,260
+You write things into folders,
+you retrieve them.
+
+486
+00:21:45,260 --> 00:21:49,710
+We also have two types of
+application data storage.
+
+487
+00:21:49,710 --> 00:21:53,880
+There's Cloud SQL, which is a
+cloud hosted version of MySQL.
+
+488
+00:21:53,880 --> 00:21:57,005
+So all the things you're
+familiar with with MySQL apply
+
+489
+00:21:57,005 --> 00:21:58,440
+a Cloud SQL.
+
+490
+00:21:58,440 --> 00:22:02,490
+And we also Cloud Datastore,
+which is a NoSQL key value
+
+491
+00:22:02,490 --> 00:22:03,430
+pair system.
+
+492
+00:22:03,430 --> 00:22:06,080
+And I'll talk specifically
+about what that means.
+
+493
+00:22:06,080 --> 00:22:07,930
+And finally, we have persistent
+disks, which I
+
+494
+00:22:07,930 --> 00:22:08,620
+alluded to.
+
+495
+00:22:08,620 --> 00:22:11,940
+Which are those virtual hardware
+disks that can be
+
+496
+00:22:11,940 --> 00:22:15,920
+attached to virtual machines
+inside a Compute Engine.
+
+497
+00:22:15,920 --> 00:22:19,170
+Let's talk about these
+one at a time.
+
+498
+00:22:19,170 --> 00:22:22,780
+NoSQL, key value pairs,
+SQL storage--
+
+499
+00:22:22,780 --> 00:22:24,120
+so traditional [? scheme ?]
+
+500
+00:22:24,120 --> 00:22:25,140
+environment--
+
+501
+00:22:25,140 --> 00:22:27,030
+blob store--
+
+502
+00:22:27,030 --> 00:22:28,450
+in terms of cloud storage--
+
+503
+00:22:28,450 --> 00:22:30,150
+and then block store.
+
+504
+00:22:30,150 --> 00:22:31,640
+So let's take them one by one.
+
+505
+00:22:31,640 --> 00:22:32,840
+Cloud storage.
+
+506
+00:22:32,840 --> 00:22:36,760
+This is the analogous
+to Google Drive.
+
+507
+00:22:36,760 --> 00:22:40,930
+It is high performance.
+
+508
+00:22:40,930 --> 00:22:43,430
+You have very large
+storage capacity.
+
+509
+00:22:43,430 --> 00:22:46,430
+If you are familiar with Amazon
+S3, we actually have an
+
+510
+00:22:46,430 --> 00:22:47,930
+S3 compatible interface.
+
+511
+00:22:47,930 --> 00:22:50,620
+If you're currently using
+Amazon, it's actually very
+
+512
+00:22:50,620 --> 00:22:54,860
+easy for you to start using
+Cloud Storage either as a
+
+513
+00:22:54,860 --> 00:22:58,760
+redundant version or if you want
+to migrate away from S3
+
+514
+00:22:58,760 --> 00:23:02,160
+on to Cloud Storage we make
+that very simple to do.
+
+515
+00:23:02,160 --> 00:23:06,080
+The key value here is that we
+provide Google networking,
+
+516
+00:23:06,080 --> 00:23:10,310
+Google network performance,
+extremely high durability, low
+
+517
+00:23:10,310 --> 00:23:12,600
+cost, and an SLA associated
+with it.
+
+518
+00:23:12,600 --> 00:23:15,470
+
+519
+00:23:15,470 --> 00:23:17,570
+Datastore is a particularly
+interesting one.
+
+520
+00:23:17,570 --> 00:23:20,690
+This is the key value
+NoSQL storage.
+
+521
+00:23:20,690 --> 00:23:23,780
+And again, if you think back
+to when I talked about
+
+522
+00:23:23,780 --> 00:23:26,440
+building what we needed to build
+for Google, that one of
+
+523
+00:23:26,440 --> 00:23:28,520
+the first things we realized
+again when we were building
+
+524
+00:23:28,520 --> 00:23:32,330
+Search was there was no existing
+NoSQL store that was
+
+525
+00:23:32,330 --> 00:23:35,560
+close to providing the
+reliability and the
+
+526
+00:23:35,560 --> 00:23:39,120
+performance that we
+needed for Search.
+
+527
+00:23:39,120 --> 00:23:42,160
+So we had to build our own, and
+what we built is in fact
+
+528
+00:23:42,160 --> 00:23:44,840
+the underpinnings
+of Datastore.
+
+529
+00:23:44,840 --> 00:23:47,010
+Accessible anywhere.
+
+530
+00:23:47,010 --> 00:23:49,260
+This is the same--
+
+531
+00:23:49,260 --> 00:23:51,590
+what we've done is we've taken
+this high replication
+
+532
+00:23:51,590 --> 00:23:54,350
+Datastore that used to be just
+part of App Engine, and we've
+
+533
+00:23:54,350 --> 00:23:57,230
+made it available to any
+application anywhere.
+
+534
+00:23:57,230 --> 00:23:59,630
+So Cloud Datastore can be
+accessed from Compute Engine,
+
+535
+00:23:59,630 --> 00:24:02,250
+from App Engine, actually
+even from Amazon--
+
+536
+00:24:02,250 --> 00:24:06,550
+if you have applications hosted
+there, you can access
+
+537
+00:24:06,550 --> 00:24:07,940
+the Cloud Datastore.
+
+538
+00:24:07,940 --> 00:24:13,310
+One of the really interesting
+qualities this has is when you
+
+539
+00:24:13,310 --> 00:24:17,450
+query the Datastore, the speed
+doesn't depend on the size of
+
+540
+00:24:17,450 --> 00:24:18,460
+the data set.
+
+541
+00:24:18,460 --> 00:24:21,670
+If you have a one megabyte data
+set, a query will take
+
+542
+00:24:21,670 --> 00:24:25,410
+the same amount of time for one
+terabyte data set as a one
+
+543
+00:24:25,410 --> 00:24:26,990
+megabyte data set.
+
+544
+00:24:26,990 --> 00:24:29,790
+So if you think about that, that
+also changes the way you
+
+545
+00:24:29,790 --> 00:24:31,410
+think about application.
+
+546
+00:24:31,410 --> 00:24:34,030
+We automatically replicate
+your data across
+
+547
+00:24:34,030 --> 00:24:35,230
+multiple data centers--
+
+548
+00:24:35,230 --> 00:24:36,610
+as many as five--
+
+549
+00:24:36,610 --> 00:24:39,780
+which means you have very high
+reliability, even in the event
+
+550
+00:24:39,780 --> 00:24:42,630
+of natural disasters
+or power outages.
+
+551
+00:24:42,630 --> 00:24:46,530
+We are able to deliver
+reliability that's far beyond
+
+552
+00:24:46,530 --> 00:24:47,970
+what you would get from--
+certainly from
+
+553
+00:24:47,970 --> 00:24:49,370
+any on premise system--
+
+554
+00:24:49,370 --> 00:24:52,800
+but even from most
+cloud providers.
+
+555
+00:24:52,800 --> 00:24:54,820
+The statistic I find
+shocking--
+
+556
+00:24:54,820 --> 00:24:58,020
+or pleasantly surprised in--
+
+557
+00:24:58,020 --> 00:25:01,970
+Datastore is currently serving
+over 4.5 trillion
+
+558
+00:25:01,970 --> 00:25:03,960
+requests per month.
+
+559
+00:25:03,960 --> 00:25:05,680
+Not billion, even.
+
+560
+00:25:05,680 --> 00:25:06,920
+Trillion.
+
+561
+00:25:06,920 --> 00:25:12,520
+This is a very reliable, very
+high uptime service.
+
+562
+00:25:12,520 --> 00:25:16,800
+And it's the core of our
+NoSQL offerings.
+
+563
+00:25:16,800 --> 00:25:19,190
+It automatically scales, again,
+so you don't have to
+
+564
+00:25:19,190 --> 00:25:19,840
+provision it.
+
+565
+00:25:19,840 --> 00:25:24,250
+It's a schemaless system, so
+if you are adding data you
+
+566
+00:25:24,250 --> 00:25:25,470
+just simply add new data.
+
+567
+00:25:25,470 --> 00:25:27,600
+You don't ever have
+to do a SQL--
+
+568
+00:25:27,600 --> 00:25:30,050
+a schema-like update.
+
+569
+00:25:30,050 --> 00:25:34,520
+It's available through both a
+RESTful interface and directly
+
+570
+00:25:34,520 --> 00:25:35,990
+from App Engine.
+
+571
+00:25:35,990 --> 00:25:38,190
+And again, it has built in
+redundancy so that you
+
+572
+00:25:38,190 --> 00:25:41,970
+automatically get replication
+in order to work from a
+
+573
+00:25:41,970 --> 00:25:44,580
+variety of languages
+and data centers.
+
+574
+00:25:44,580 --> 00:25:47,720
+
+575
+00:25:47,720 --> 00:25:52,730
+Cloud SQL is a cloud hosted
+version of MySQL, put simply.
+
+576
+00:25:52,730 --> 00:25:56,150
+If you're familiar with MySQL,
+this is a version of MySQL
+
+577
+00:25:56,150 --> 00:25:58,230
+except where we do all
+the management and
+
+578
+00:25:58,230 --> 00:26:00,600
+configuration for you.
+
+579
+00:26:00,600 --> 00:26:05,210
+It is available in both European
+and US data centers,
+
+580
+00:26:05,210 --> 00:26:07,200
+depending on your preference.
+
+581
+00:26:07,200 --> 00:26:10,550
+It has very easy migration and
+data portability, because
+
+582
+00:26:10,550 --> 00:26:13,660
+again, it is a version
+of MySQL.
+
+583
+00:26:13,660 --> 00:26:15,530
+It's just one where we're
+doing all the
+
+584
+00:26:15,530 --> 00:26:16,780
+management for you.
+
+585
+00:26:16,780 --> 00:26:21,520
+
+586
+00:26:21,520 --> 00:26:24,460
+Between Cloud SQL and Datastore,
+you really have a
+
+587
+00:26:24,460 --> 00:26:26,870
+choice depending on what your
+application is using.
+
+588
+00:26:26,870 --> 00:26:28,210
+There's really no one
+size fit all.
+
+589
+00:26:28,210 --> 00:26:30,755
+Sometimes I get asked, well,
+should I use Cloud SQL or
+
+590
+00:26:30,755 --> 00:26:31,720
+should I like Datastore?
+
+591
+00:26:31,720 --> 00:26:33,480
+It really depends on
+what you're doing.
+
+592
+00:26:33,480 --> 00:26:35,000
+Datastore is--
+
+593
+00:26:35,000 --> 00:26:39,420
+like I said-- a NoSQL, and
+it's designed around very
+
+594
+00:26:39,420 --> 00:26:42,190
+large scale applications.
+
+595
+00:26:42,190 --> 00:26:44,530
+Cloud SQL is a more traditional
+environment
+
+596
+00:26:44,530 --> 00:26:46,820
+designed to leverage all
+the existing tools and
+
+597
+00:26:46,820 --> 00:26:48,720
+infrastructure that you're
+familiar with.
+
+598
+00:26:48,720 --> 00:26:51,470
+So depending on both your
+application type and your
+
+599
+00:26:51,470 --> 00:26:54,320
+data, one may be better
+or worse or a better
+
+600
+00:26:54,320 --> 00:26:55,570
+choice than the other.
+
+601
+00:26:55,570 --> 00:26:58,410
+
+602
+00:26:58,410 --> 00:27:00,890
+Let me go and talk about App
+Services a little bit, which
+
+603
+00:27:00,890 --> 00:27:02,140
+is the third major category.
+
+604
+00:27:02,140 --> 00:27:04,740
+
+605
+00:27:04,740 --> 00:27:07,330
+BigQuery is a set of
+technologies--
+
+606
+00:27:07,330 --> 00:27:09,660
+it's a fully managed,
+big data analytics .
+
+607
+00:27:09,660 --> 00:27:13,030
+Service what that means is
+BigQuery allows you to upload
+
+608
+00:27:13,030 --> 00:27:17,320
+your data in whatever form you
+have, and allows you to do
+
+609
+00:27:17,320 --> 00:27:23,080
+SQL-like analytical queries on
+it without having to configure
+
+610
+00:27:23,080 --> 00:27:27,780
+data cubes or ETL or any of the
+things that make querying
+
+611
+00:27:27,780 --> 00:27:30,580
+big data so difficult.
+
+612
+00:27:30,580 --> 00:27:33,870
+And again, if you think about
+where this comes from, one of
+
+613
+00:27:33,870 --> 00:27:36,400
+the problems we faced early
+on at Google was
+
+614
+00:27:36,400 --> 00:27:38,100
+analyzing log files.
+
+615
+00:27:38,100 --> 00:27:38,820
+Right?
+
+616
+00:27:38,820 --> 00:27:42,570
+Why did the Maps application
+behave strangely for this user
+
+617
+00:27:42,570 --> 00:27:44,280
+or in this region?
+
+618
+00:27:44,280 --> 00:27:47,780
+Well, to do that, we actually
+needed to be able to look
+
+619
+00:27:47,780 --> 00:27:50,890
+across the application
+logs for Maps.
+
+620
+00:27:50,890 --> 00:27:53,060
+Across all these different
+servers and users and
+
+621
+00:27:53,060 --> 00:27:53,840
+geographies.
+
+622
+00:27:53,840 --> 00:27:55,310
+And again, what were
+we going to do?
+
+623
+00:27:55,310 --> 00:27:59,030
+Build a data cube and take all
+of the logs globally from the
+
+624
+00:27:59,030 --> 00:28:00,190
+Maps application?
+
+625
+00:28:00,190 --> 00:28:01,400
+I don't think so.
+
+626
+00:28:01,400 --> 00:28:04,830
+So we developed a technology
+that's the basis of BigQuery
+
+627
+00:28:04,830 --> 00:28:09,600
+that allows us to queries in a
+SQL-like language against all
+
+628
+00:28:09,600 --> 00:28:12,500
+these different data stores.
+
+629
+00:28:12,500 --> 00:28:16,770
+That means that you can again
+query terabytes of data using
+
+630
+00:28:16,770 --> 00:28:18,410
+a SQL-like interface.
+
+631
+00:28:18,410 --> 00:28:21,170
+A great use for this case is
+just what we use it for--
+
+632
+00:28:21,170 --> 00:28:22,710
+application logging.
+
+633
+00:28:22,710 --> 00:28:25,680
+You can upload the log files of
+your application and then
+
+634
+00:28:25,680 --> 00:28:29,090
+your business analysts can
+quickly do queries to find out
+
+635
+00:28:29,090 --> 00:28:33,490
+which users are using which
+features, or which users are
+
+636
+00:28:33,490 --> 00:28:35,340
+experiencing what
+kind of errors.
+
+637
+00:28:35,340 --> 00:28:37,790
+Basically any sort of
+data that you have
+
+638
+00:28:37,790 --> 00:28:39,040
+stored your log files.
+
+639
+00:28:39,040 --> 00:28:43,160
+
+640
+00:28:43,160 --> 00:28:47,210
+Cloud Endpoints is a service
+that's designed for a mobile
+
+641
+00:28:47,210 --> 00:28:50,630
+app [AUDIO DROP].
+
+642
+00:28:50,630 --> 00:28:54,030
+How many of you are building
+mobile applications?
+
+643
+00:28:54,030 --> 00:28:54,420
+Yes.
+
+644
+00:28:54,420 --> 00:28:56,210
+And the rest of you that aren't,
+you probably will at
+
+645
+00:28:56,210 --> 00:28:57,300
+some point.
+
+646
+00:28:57,300 --> 00:29:00,030
+One of the challenges you face
+as a mobile developer is
+
+647
+00:29:00,030 --> 00:29:03,780
+connecting up your mobile
+application to your back end
+
+648
+00:29:03,780 --> 00:29:04,720
+data logic.
+
+649
+00:29:04,720 --> 00:29:06,230
+Because mobile applications--
+
+650
+00:29:06,230 --> 00:29:07,320
+even games--
+
+651
+00:29:07,320 --> 00:29:09,980
+don't consist of just
+client side code.
+
+652
+00:29:09,980 --> 00:29:12,840
+Their client side code plus
+server side code that does
+
+653
+00:29:12,840 --> 00:29:16,430
+things like high score
+processing, or rankings, or
+
+654
+00:29:16,430 --> 00:29:19,610
+selecting a player for
+you to play against.
+
+655
+00:29:19,610 --> 00:29:23,000
+Cloud Endpoints is a technology
+that allows you to
+
+656
+00:29:23,000 --> 00:29:27,220
+very easily connect up your back
+end code to your clients.
+
+657
+00:29:27,220 --> 00:29:30,430
+You can go into App Engine, you
+can pick a component of
+
+658
+00:29:30,430 --> 00:29:31,230
+App Engine.
+
+659
+00:29:31,230 --> 00:29:35,150
+With one click, you can create
+a Cloud Endpoint.
+
+660
+00:29:35,150 --> 00:29:37,520
+And what that does, is it
+creates a [INAUDIBLE]
+
+661
+00:29:37,520 --> 00:29:42,050
+REST interface, and it creates
+the client side library for
+
+662
+00:29:42,050 --> 00:29:45,940
+iOS and Android that allows you
+to just make a call on the
+
+663
+00:29:45,940 --> 00:29:48,690
+client and invoke code
+on the server.
+
+664
+00:29:48,690 --> 00:29:50,840
+You don't have to worry about
+data marshalling, you don't
+
+665
+00:29:50,840 --> 00:29:54,690
+have to worry about OAuth or any
+of that hassles associated
+
+666
+00:29:54,690 --> 00:29:59,255
+with connecting up your
+client side code to
+
+667
+00:29:59,255 --> 00:30:02,090
+your server side code.
+
+668
+00:30:02,090 --> 00:30:05,210
+Cloud Endpoints is really
+designed on allowing you to
+
+669
+00:30:05,210 --> 00:30:07,480
+focus on the part of the
+application that you care
+
+670
+00:30:07,480 --> 00:30:09,320
+about and not about
+[? blue ?] code.
+
+671
+00:30:09,320 --> 00:30:11,860
+
+672
+00:30:11,860 --> 00:30:13,840
+So who's using this?
+
+673
+00:30:13,840 --> 00:30:16,850
+One of the things we hear a
+lot is gee, that sounds
+
+674
+00:30:16,850 --> 00:30:18,000
+interesting, but I don't
+want to be the
+
+675
+00:30:18,000 --> 00:30:19,350
+first one do anything.
+
+676
+00:30:19,350 --> 00:30:21,350
+I want to know that there's
+somebody else out there who's
+
+677
+00:30:21,350 --> 00:30:23,150
+actually being successful
+with it.
+
+678
+00:30:23,150 --> 00:30:25,080
+Let me give you a couple
+examples of some customers who
+
+679
+00:30:25,080 --> 00:30:27,090
+are actually using
+this technology.
+
+680
+00:30:27,090 --> 00:30:30,470
+First of all, we currently
+have about three million
+
+681
+00:30:30,470 --> 00:30:33,370
+active applications on a monthly
+basis running on top
+
+682
+00:30:33,370 --> 00:30:35,330
+of the Google Cloud Platform.
+
+683
+00:30:35,330 --> 00:30:40,560
+So it represents everything from
+small applications up to
+
+684
+00:30:40,560 --> 00:30:43,090
+very large applications that
+companies are betting their
+
+685
+00:30:43,090 --> 00:30:45,660
+whole business on.
+
+686
+00:30:45,660 --> 00:30:47,470
+First one is Snap Chat.
+
+687
+00:30:47,470 --> 00:30:48,960
+I don't know if you guys
+are aware of Snap Chat.
+
+688
+00:30:48,960 --> 00:30:51,090
+It's an incredibly popular
+photo sharing
+
+689
+00:30:51,090 --> 00:30:53,100
+application for iOS.
+
+690
+00:30:53,100 --> 00:30:55,960
+It allows you to take a picture,
+send it to somebody,
+
+691
+00:30:55,960 --> 00:30:58,550
+and then they can see the
+picture and then after some
+
+692
+00:30:58,550 --> 00:31:01,650
+period of time, the picture
+expires and is deleted.
+
+693
+00:31:01,650 --> 00:31:03,700
+They're currently delivering
+about 150
+
+694
+00:31:03,700 --> 00:31:05,880
+million photos a day.
+
+695
+00:31:05,880 --> 00:31:08,540
+All running through the Google
+Cloud Platform, both on the
+
+696
+00:31:08,540 --> 00:31:12,480
+storage side and the
+compute side.
+
+697
+00:31:12,480 --> 00:31:17,640
+Song Pop is a game
+that allows--
+
+698
+00:31:17,640 --> 00:31:21,040
+it plays a song, and then you
+have to compete to who can
+
+699
+00:31:21,040 --> 00:31:24,000
+identify what the song
+is the fastest.
+
+700
+00:31:24,000 --> 00:31:28,030
+They currently serve about 18
+terabytes of media a day
+
+701
+00:31:28,030 --> 00:31:29,820
+coming out of the
+Cloud Platform.
+
+702
+00:31:29,820 --> 00:31:32,840
+And they have about 80 million
+users on a daily basis
+
+703
+00:31:32,840 --> 00:31:36,110
+accessing Song Pop.
+
+704
+00:31:36,110 --> 00:31:37,790
+How many have heard
+of Eurovision?
+
+705
+00:31:37,790 --> 00:31:39,220
+Everybody, right?
+
+706
+00:31:39,220 --> 00:31:41,730
+Eurovision, this year-- they
+were faced with the problem of
+
+707
+00:31:41,730 --> 00:31:43,520
+their online voting system.
+
+708
+00:31:43,520 --> 00:31:47,270
+They knew that they were going
+to have a big traffic spike.
+
+709
+00:31:47,270 --> 00:31:49,460
+They knew it was going to come
+in a short period of time.
+
+710
+00:31:49,460 --> 00:31:50,840
+And they knew that when
+it was done, they
+
+711
+00:31:50,840 --> 00:31:52,100
+didn't need the capacity.
+
+712
+00:31:52,100 --> 00:31:55,560
+So Eurovision came to us and
+said would you help us build
+
+713
+00:31:55,560 --> 00:31:56,800
+out this infrastructure?
+
+714
+00:31:56,800 --> 00:32:01,200
+They used Compute Engine, and at
+its peak, they were serving
+
+715
+00:32:01,200 --> 00:32:04,100
+50,000 requests per second
+as people we're
+
+716
+00:32:04,100 --> 00:32:05,740
+logging on to vote.
+
+717
+00:32:05,740 --> 00:32:09,090
+90% of those requests were
+served in less than 24
+
+718
+00:32:09,090 --> 00:32:12,140
+milliseconds response time.
+
+719
+00:32:12,140 --> 00:32:13,780
+That was all built on
+Compute Engine.
+
+720
+00:32:13,780 --> 00:32:16,270
+They were able to scale
+up, meet the needs.
+
+721
+00:32:16,270 --> 00:32:19,210
+Now that it's scaled down, their
+bill has gone back down
+
+722
+00:32:19,210 --> 00:32:20,460
+to nearly zero.
+
+723
+00:32:20,460 --> 00:32:23,760
+
+724
+00:32:23,760 --> 00:32:28,650
+Scalar is a US company that
+does cloud management.
+
+725
+00:32:28,650 --> 00:32:32,110
+And, in fact, they've done a
+number of benchmarks of VM
+
+726
+00:32:32,110 --> 00:32:34,720
+start up time, VM performance,
+network performance, disk
+
+727
+00:32:34,720 --> 00:32:35,570
+performance.
+
+728
+00:32:35,570 --> 00:32:38,190
+If you're interested in a really
+good benchmarking of
+
+729
+00:32:38,190 --> 00:32:42,220
+how we compare with other VM
+cloud based environments,
+
+730
+00:32:42,220 --> 00:32:44,330
+they're a great place to look.
+
+731
+00:32:44,330 --> 00:32:48,000
+They're the ones who've really
+done a lot of really good work
+
+732
+00:32:48,000 --> 00:32:49,790
+to put our performance
+in context
+
+733
+00:32:49,790 --> 00:32:51,160
+with other cloud platforms.
+
+734
+00:32:51,160 --> 00:32:54,990
+I definitely recommend you
+take a look at them.
+
+735
+00:32:54,990 --> 00:33:00,100
+Udacity is an online educational
+software.
+
+736
+00:33:00,100 --> 00:33:03,270
+And what I like about them is I
+loved the quote that I have
+
+737
+00:33:03,270 --> 00:33:04,900
+here from their software
+engineer.
+
+738
+00:33:04,900 --> 00:33:07,670
+Which gets at the point I've
+been talking about.
+
+739
+00:33:07,670 --> 00:33:10,640
+"I'd rather be democratizing
+education than scaling
+
+740
+00:33:10,640 --> 00:33:12,170
+memcache [? D." ?]
+
+741
+00:33:12,170 --> 00:33:14,730
+And I think that's the essence
+of what we're trying to do
+
+742
+00:33:14,730 --> 00:33:16,590
+here with the Cloud Platform.
+
+743
+00:33:16,590 --> 00:33:18,180
+You've got some great
+idea for an
+
+744
+00:33:18,180 --> 00:33:20,090
+application you want to build.
+
+745
+00:33:20,090 --> 00:33:23,600
+We want to let you spend your
+waking hours building that
+
+746
+00:33:23,600 --> 00:33:27,190
+application, not mucking about
+with a bunch of frankly boring
+
+747
+00:33:27,190 --> 00:33:29,970
+infrastructure that somebody
+else can provide for you.
+
+748
+00:33:29,970 --> 00:33:32,780
+
+749
+00:33:32,780 --> 00:33:36,050
+Pulse is an online news reading
+application that
+
+750
+00:33:36,050 --> 00:33:39,940
+allows you to read RSS
+another news feeds.
+
+751
+00:33:39,940 --> 00:33:42,940
+Talk about that hyper growth
+model we talked about.
+
+752
+00:33:42,940 --> 00:33:47,250
+In 18 months their user
+base went up 70 times.
+
+753
+00:33:47,250 --> 00:33:50,540
+Without the Cloud Platform,
+there's just simply no way
+
+754
+00:33:50,540 --> 00:33:52,480
+they would've been able
+to maintain that.
+
+755
+00:33:52,480 --> 00:33:55,050
+Their users would have had
+experience, and frankly their
+
+756
+00:33:55,050 --> 00:33:56,620
+business would have just
+crashed and burned.
+
+757
+00:33:56,620 --> 00:33:59,700
+
+758
+00:33:59,700 --> 00:34:01,300
+Last thing I want to talk
+about-- just raw
+
+759
+00:34:01,300 --> 00:34:03,970
+performance with MapR.
+
+760
+00:34:03,970 --> 00:34:06,640
+There's a benchmark out there
+called MinuteSort.
+
+761
+00:34:06,640 --> 00:34:12,820
+And what MinuteSort does is it
+basically says how many random
+
+762
+00:34:12,820 --> 00:34:14,980
+numbers can you sort
+in one minute.
+
+763
+00:34:14,980 --> 00:34:18,020
+
+764
+00:34:18,020 --> 00:34:20,210
+The world record for that
+was just broken on
+
+765
+00:34:20,210 --> 00:34:21,480
+top of Compute Engine.
+
+766
+00:34:21,480 --> 00:34:24,810
+And what I find fascinating
+about it is not just that it
+
+767
+00:34:24,810 --> 00:34:29,060
+was able to sort one and 1/2
+terabytes of random numbers in
+
+768
+00:34:29,060 --> 00:34:33,010
+60 seconds using 8,000 cores,
+but that the previous
+
+769
+00:34:33,010 --> 00:34:36,489
+benchmark was done on
+custom hardware.
+
+770
+00:34:36,489 --> 00:34:38,474
+And I believe cost on the
+order of about a million
+
+771
+00:34:38,474 --> 00:34:40,630
+dollars-- the hardware.
+
+772
+00:34:40,630 --> 00:34:43,250
+This version was done on a
+publicly available cloud
+
+773
+00:34:43,250 --> 00:34:47,409
+platform with Compute
+Engine for--
+
+774
+00:34:47,409 --> 00:34:48,750
+I'll have to look
+up the number--
+
+775
+00:34:48,750 --> 00:34:51,540
+I believe it's on the order of
+a couple thousand dollars.
+
+776
+00:34:51,540 --> 00:34:55,130
+So it's a radical difference
+in the price performance.
+
+777
+00:34:55,130 --> 00:34:57,710
+And it really demonstrates one
+of the core values we've
+
+778
+00:34:57,710 --> 00:35:01,090
+placed on Compute Engine, which
+is very high performance
+
+779
+00:35:01,090 --> 00:35:03,125
+and very high consistency
+of performance.
+
+780
+00:35:03,125 --> 00:35:06,420
+
+781
+00:35:06,420 --> 00:35:10,750
+So with that, I want a
+transition over to Peter who's
+
+782
+00:35:10,750 --> 00:35:12,290
+going to talk in detail
+about App Engine.
+
+783
+00:35:12,290 --> 00:35:17,140
+If I leave it with one thing
+about the Cloud Platform, it's
+
+784
+00:35:17,140 --> 00:35:21,840
+that we are investing in
+fundamental infrastructure at
+
+785
+00:35:21,840 --> 00:35:23,750
+Google because we need to.
+
+786
+00:35:23,750 --> 00:35:27,210
+Because we're building out
+things like Search and Maps.
+
+787
+00:35:27,210 --> 00:35:29,990
+And with Cloud Platform we're
+really opening up that same
+
+788
+00:35:29,990 --> 00:35:33,190
+infrastructure that we are using
+ourselves for you to run
+
+789
+00:35:33,190 --> 00:35:34,630
+your applications on.
+
+790
+00:35:34,630 --> 00:35:36,170
+This is the beginning
+of a process.
+
+791
+00:35:36,170 --> 00:35:38,950
+You can expect over the next
+year we're going to have more
+
+792
+00:35:38,950 --> 00:35:42,510
+features, more performance, as
+we continue to invest more and
+
+793
+00:35:42,510 --> 00:35:43,260
+more of this.
+
+794
+00:35:43,260 --> 00:35:46,260
+And I'd love to talk to you
+during the Q&A or during the
+
+795
+00:35:46,260 --> 00:35:49,510
+break to find out more about
+what you're doing and how our
+
+796
+00:35:49,510 --> 00:35:51,930
+Cloud Platform could be the
+basis for your next great
+
+797
+00:35:51,930 --> 00:35:53,300
+application.
+
+798
+00:35:53,300 --> 00:35:57,130
+So with that, I think Peter is
+next to give you a drill down
+
+799
+00:35:57,130 --> 00:35:58,380
+on App Engine.
+
+800
+00:35:58,380 --> 00:36:09,602
+

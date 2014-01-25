@@ -1,0 +1,5009 @@
+1
+00:00:00,000 --> 00:00:09,652
+
+2
+00:00:09,652 --> 00:00:11,110
+BRAD GREEN: Good
+morning, everyone.
+
+3
+00:00:11,110 --> 00:00:11,790
+I'm Brad Green.
+
+4
+00:00:11,790 --> 00:00:14,420
+I'm the manager of the Angular
+project here at Google.
+
+5
+00:00:14,420 --> 00:00:17,610
+And I'm joined by John
+and Darrel from TiKL.
+
+6
+00:00:17,610 --> 00:00:20,050
+And they're going to
+talk to us about building
+
+7
+00:00:20,050 --> 00:00:23,200
+Chrome Apps with AngularJS.
+
+8
+00:00:23,200 --> 00:00:24,200
+And I'm sorry, you guys.
+
+9
+00:00:24,200 --> 00:00:25,330
+For this holiday
+addition, John's
+
+10
+00:00:25,330 --> 00:00:27,420
+actually wearing some
+spectacular Christmas pants,
+
+11
+00:00:27,420 --> 00:00:30,410
+but you can't see it on camera.
+
+12
+00:00:30,410 --> 00:00:33,690
+Maybe at the end, we
+can get a shot of that.
+
+13
+00:00:33,690 --> 00:00:35,250
+So hey guys, tell
+us a little bit
+
+14
+00:00:35,250 --> 00:00:36,810
+about what TiKL
+does before we get
+
+15
+00:00:36,810 --> 00:00:38,770
+into the presentation
+about building apps.
+
+16
+00:00:38,770 --> 00:00:39,520
+DARREL SUMI: Sure.
+
+17
+00:00:39,520 --> 00:00:40,436
+JOHN FEIG: Sure, yeah.
+
+18
+00:00:40,436 --> 00:00:43,040
+We're mainly a
+mobile app company.
+
+19
+00:00:43,040 --> 00:00:46,370
+We have several
+communications apps.
+
+20
+00:00:46,370 --> 00:00:48,890
+We have three on Android.
+
+21
+00:00:48,890 --> 00:00:50,772
+And wait-- no, we
+have four on Android.
+
+22
+00:00:50,772 --> 00:00:52,480
+DARREL SUMI: Four on
+Android, two on iOS.
+
+23
+00:00:52,480 --> 00:00:54,340
+JOHN FEIG: Two on iOS.
+
+24
+00:00:54,340 --> 00:00:58,462
+So we've got TiKL, which
+is like a walkie-talkie.
+
+25
+00:00:58,462 --> 00:00:59,920
+It works just like
+a walkie-talkie.
+
+26
+00:00:59,920 --> 00:01:01,480
+It's pretty fun.
+
+27
+00:01:01,480 --> 00:01:05,209
+We have Talkray, which is
+our main focus these days,
+
+28
+00:01:05,209 --> 00:01:07,310
+which is a unified
+communications app.
+
+29
+00:01:07,310 --> 00:01:12,004
+You do texting, calling-- it
+does groups up to 25 people.
+
+30
+00:01:12,004 --> 00:01:13,420
+KeeChat, which is
+what we're going
+
+31
+00:01:13,420 --> 00:01:16,170
+to be talking about
+today, which is
+
+32
+00:01:16,170 --> 00:01:19,650
+group texting with usernames.
+
+33
+00:01:19,650 --> 00:01:23,260
+And then we have a new app out
+that we launched a couple weeks
+
+34
+00:01:23,260 --> 00:01:28,180
+ago, which is a
+PTT recorded app,
+
+35
+00:01:28,180 --> 00:01:29,980
+so you can send voice
+mails back and forth.
+
+36
+00:01:29,980 --> 00:01:33,030
+It's called VoMessenger.
+
+37
+00:01:33,030 --> 00:01:35,642
+BRAD GREEN: So you guys have
+been primarily doing Java and--
+
+38
+00:01:35,642 --> 00:01:36,350
+DARREL SUMI: Yes.
+
+39
+00:01:36,350 --> 00:01:38,183
+BRAD GREEN: --maybe
+Objective-C development.
+
+40
+00:01:38,183 --> 00:01:40,980
+And you've just recently
+come into the web
+
+41
+00:01:40,980 --> 00:01:42,430
+way of developing things.
+
+42
+00:01:42,430 --> 00:01:45,539
+And so how long have
+you been doing this?
+
+43
+00:01:45,539 --> 00:01:47,330
+DARREL SUMI: Since we
+started as a company,
+
+44
+00:01:47,330 --> 00:01:52,010
+it's probably-- I don't
+know, five months or so where
+
+45
+00:01:52,010 --> 00:01:54,150
+we've been kind of
+jumped into this.
+
+46
+00:01:54,150 --> 00:01:58,133
+JOHN FEIG: Yeah, we started over
+the summer doing the web stuff.
+
+47
+00:01:58,133 --> 00:01:59,020
+DARREL SUMI: Yeah.
+
+48
+00:01:59,020 --> 00:02:00,395
+I mean, both of
+us have obviously
+
+49
+00:02:00,395 --> 00:02:03,430
+dabbled in a lot of
+web stuff before.
+
+50
+00:02:03,430 --> 00:02:06,230
+But this is our first
+real, larger project.
+
+51
+00:02:06,230 --> 00:02:07,785
+JOHN FEIG: Yeah, right.
+
+52
+00:02:07,785 --> 00:02:09,160
+Definitely the
+first big project.
+
+53
+00:02:09,160 --> 00:02:11,035
+And the company, as a
+company, doesn't really
+
+54
+00:02:11,035 --> 00:02:15,230
+have much experience
+with web things.
+
+55
+00:02:15,230 --> 00:02:17,140
+TiKL was started in 2010.
+
+56
+00:02:17,140 --> 00:02:18,770
+They had the TiKL
+app for a while.
+
+57
+00:02:18,770 --> 00:02:20,310
+And then we jumped into Talkray.
+
+58
+00:02:20,310 --> 00:02:23,110
+And that was iOS and Android.
+
+59
+00:02:23,110 --> 00:02:25,490
+And we've basically been
+focused on mobile exclusively
+
+60
+00:02:25,490 --> 00:02:27,247
+until this product.
+
+61
+00:02:27,247 --> 00:02:28,330
+BRAD GREEN: OK, very cool.
+
+62
+00:02:28,330 --> 00:02:28,590
+All right.
+
+63
+00:02:28,590 --> 00:02:30,540
+Well, then, let's jump
+into the presentation.
+
+64
+00:02:30,540 --> 00:02:32,040
+And tell us about
+what you guys have
+
+65
+00:02:32,040 --> 00:02:33,662
+learned about the environment.
+
+66
+00:02:33,662 --> 00:02:34,370
+JOHN FEIG: Great.
+
+67
+00:02:34,370 --> 00:02:39,510
+So we can start with the slides.
+
+68
+00:02:39,510 --> 00:02:41,560
+So this is KeeChat.
+
+69
+00:02:41,560 --> 00:02:42,310
+DARREL SUMI: Yeah.
+
+70
+00:02:42,310 --> 00:02:44,010
+So these are just a
+couple screenshots
+
+71
+00:02:44,010 --> 00:02:46,200
+of what the mobile
+app looks like.
+
+72
+00:02:46,200 --> 00:02:50,250
+So basically, like what we said,
+it's a unified messaging app.
+
+73
+00:02:50,250 --> 00:02:53,570
+So you can send regular
+texting images to anyone
+
+74
+00:02:53,570 --> 00:02:54,515
+within our system.
+
+75
+00:02:54,515 --> 00:02:57,020
+
+76
+00:02:57,020 --> 00:02:59,420
+JOHN FEIG: And we recently
+built a Chrome App out of it.
+
+77
+00:02:59,420 --> 00:03:03,150
+We started with a
+web version of this.
+
+78
+00:03:03,150 --> 00:03:07,650
+And then we sort of
+transitioned to a Chrome App.
+
+79
+00:03:07,650 --> 00:03:09,300
+And we'll talk a
+little bit about why
+
+80
+00:03:09,300 --> 00:03:13,010
+we picked Angular and Chrome.
+
+81
+00:03:13,010 --> 00:03:13,760
+DARREL SUMI: Yeah.
+
+82
+00:03:13,760 --> 00:03:17,320
+Angular really fit with, like
+we said, our background in Java.
+
+83
+00:03:17,320 --> 00:03:20,310
+We wanted the look and
+feel of the entire thing
+
+84
+00:03:20,310 --> 00:03:24,050
+to be very much like an
+app, less a traditional web
+
+85
+00:03:24,050 --> 00:03:26,460
+style of doing things.
+
+86
+00:03:26,460 --> 00:03:29,600
+And everything, like the
+MVC architecture of Angular,
+
+87
+00:03:29,600 --> 00:03:32,120
+really fit into the
+pre-existing model
+
+88
+00:03:32,120 --> 00:03:35,022
+that we had built everything
+around on the mobile side.
+
+89
+00:03:35,022 --> 00:03:35,730
+JOHN FEIG: Right.
+
+90
+00:03:35,730 --> 00:03:36,510
+Yeah.
+
+91
+00:03:36,510 --> 00:03:39,360
+It was very comfortable
+for us to look at
+
+92
+00:03:39,360 --> 00:03:42,560
+because it just felt a lot like
+being able to build an app.
+
+93
+00:03:42,560 --> 00:03:45,480
+And you can see
+here the structure
+
+94
+00:03:45,480 --> 00:03:49,400
+that we chose for KeeChat,
+which is basically
+
+95
+00:03:49,400 --> 00:03:54,070
+Angular's suggested structure
+for especially large projects.
+
+96
+00:03:54,070 --> 00:03:57,790
+So we broke it out into
+controllers and services
+
+97
+00:03:57,790 --> 00:04:02,100
+and models are the
+main components here,
+
+98
+00:04:02,100 --> 00:04:06,985
+trying to pick apart
+with the MVC architecture
+
+99
+00:04:06,985 --> 00:04:07,860
+and do this properly.
+
+100
+00:04:07,860 --> 00:04:10,700
+And it was really
+nice to have services.
+
+101
+00:04:10,700 --> 00:04:15,290
+For us, coming from Java,
+where they're sort of like
+
+102
+00:04:15,290 --> 00:04:15,790
+singletons.
+
+103
+00:04:15,790 --> 00:04:19,140
+They work in a similar way.
+
+104
+00:04:19,140 --> 00:04:20,560
+There's a lot of nice stuff.
+
+105
+00:04:20,560 --> 00:04:22,640
+And organizing
+your code like this
+
+106
+00:04:22,640 --> 00:04:24,640
+really helps in larger projects.
+
+107
+00:04:24,640 --> 00:04:27,252
+
+108
+00:04:27,252 --> 00:04:27,960
+DARREL SUMI: Yes.
+
+109
+00:04:27,960 --> 00:04:30,640
+So I guess one of the
+reasons, or one of the things,
+
+110
+00:04:30,640 --> 00:04:35,520
+is why did we chose to do a
+Chrome App off the Angular app.
+
+111
+00:04:35,520 --> 00:04:38,960
+Why not just keep it a
+website kind of thing?
+
+112
+00:04:38,960 --> 00:04:41,270
+So obviously, the biggest
+one is the Chrome Web Store.
+
+113
+00:04:41,270 --> 00:04:44,480
+That's a great way to get
+distribution for our app.
+
+114
+00:04:44,480 --> 00:04:46,660
+The other one is
+that, like I said,
+
+115
+00:04:46,660 --> 00:04:48,810
+we really wanted to make
+it feel like an app.
+
+116
+00:04:48,810 --> 00:04:50,550
+We wanted users who
+came from our mobile
+
+117
+00:04:50,550 --> 00:04:53,470
+to be able to experience
+the same kind of experience
+
+118
+00:04:53,470 --> 00:04:56,270
+that we provided
+on their computers.
+
+119
+00:04:56,270 --> 00:04:58,260
+So one of the big
+things is notifications.
+
+120
+00:04:58,260 --> 00:05:01,620
+That makes it feel like a
+much more rich experience.
+
+121
+00:05:01,620 --> 00:05:04,710
+And obviously, raw sockets
+were pretty important for us
+
+122
+00:05:04,710 --> 00:05:07,000
+because we're a
+communication app.
+
+123
+00:05:07,000 --> 00:05:08,480
+JOHN FEIG: Yeah.
+
+124
+00:05:08,480 --> 00:05:13,160
+We had played around with a
+couple different socket clients
+
+125
+00:05:13,160 --> 00:05:17,330
+and decided that for
+us to get out the door,
+
+126
+00:05:17,330 --> 00:05:20,690
+raw sockets was going to be the
+easiest way for us to do it.
+
+127
+00:05:20,690 --> 00:05:24,270
+So that was something that
+was available in Chrome Apps
+
+128
+00:05:24,270 --> 00:05:27,370
+that really you
+can't do in HTML5.
+
+129
+00:05:27,370 --> 00:05:30,980
+There's WebSockets, but
+it's not the same thing.
+
+130
+00:05:30,980 --> 00:05:34,400
+Java can use
+WebSockets in Java 7,
+
+131
+00:05:34,400 --> 00:05:37,350
+but we're not running
+Java 7 on the server.
+
+132
+00:05:37,350 --> 00:05:39,515
+
+133
+00:05:39,515 --> 00:05:40,890
+DARREL SUMI: So
+some of the tools
+
+134
+00:05:40,890 --> 00:05:44,070
+we use are-- we'll just briefly
+go over this-- Yeoman, Grunt,
+
+135
+00:05:44,070 --> 00:05:45,260
+Bower, and Karma.
+
+136
+00:05:45,260 --> 00:05:46,590
+Karma's our testing suite.
+
+137
+00:05:46,590 --> 00:05:50,670
+The other three really help
+us organize our code a lot,
+
+138
+00:05:50,670 --> 00:05:53,150
+bring in all the dependencies,
+keep everything clean.
+
+139
+00:05:53,150 --> 00:05:53,440
+JOHN FEIG: Yeah.
+
+140
+00:05:53,440 --> 00:05:54,565
+It's pretty standard stuff.
+
+141
+00:05:54,565 --> 00:05:57,270
+And it was really nice
+with Grunt, actually.
+
+142
+00:05:57,270 --> 00:05:58,330
+You can run Grunt server.
+
+143
+00:05:58,330 --> 00:05:59,700
+And it has listeners for things.
+
+144
+00:05:59,700 --> 00:06:01,870
+And so it was really funny.
+
+145
+00:06:01,870 --> 00:06:05,340
+Because when we were really
+running through this stuff,
+
+146
+00:06:05,340 --> 00:06:12,090
+it was faster developing on the
+web than it was for Android.
+
+147
+00:06:12,090 --> 00:06:14,420
+Because you'd change something,
+and then your browser
+
+148
+00:06:14,420 --> 00:06:16,239
+would get updated right away.
+
+149
+00:06:16,239 --> 00:06:16,780
+I don't know.
+
+150
+00:06:16,780 --> 00:06:17,980
+It was kind of funny.
+
+151
+00:06:17,980 --> 00:06:22,210
+DARREL SUMI: Yeah, we're just
+used to waiting, compiling,
+
+152
+00:06:22,210 --> 00:06:24,794
+and doing all this stuff
+for Android development.
+
+153
+00:06:24,794 --> 00:06:25,460
+JOHN FEIG: Yeah.
+
+154
+00:06:25,460 --> 00:06:27,490
+And we didn't even have to hit
+Refresh on the browser window
+
+155
+00:06:27,490 --> 00:06:27,990
+here.
+
+156
+00:06:27,990 --> 00:06:30,645
+So it's kind of nice.
+
+157
+00:06:30,645 --> 00:06:34,209
+DARREL SUMI: So one of the
+main concerns, when you're
+
+158
+00:06:34,209 --> 00:06:35,750
+thinking about
+building a Chrome App,
+
+159
+00:06:35,750 --> 00:06:37,880
+is what are all the
+dependencies in your project
+
+160
+00:06:37,880 --> 00:06:43,370
+that you're going to need to
+re-work around the Chrome Apps.
+
+161
+00:06:43,370 --> 00:06:46,080
+And one of them, the
+big one, was RequireJS.
+
+162
+00:06:46,080 --> 00:06:48,940
+So we used Require a lot.
+
+163
+00:06:48,940 --> 00:06:53,112
+It's a great modularization tool
+that you can use-- or library.
+
+164
+00:06:53,112 --> 00:06:54,070
+A lot of people use it.
+
+165
+00:06:54,070 --> 00:06:56,020
+It's a very common thing.
+
+166
+00:06:56,020 --> 00:06:57,860
+But they kind of
+conflict a little bit
+
+167
+00:06:57,860 --> 00:07:01,580
+with the module
+system in Angular.
+
+168
+00:07:01,580 --> 00:07:05,032
+They don't necessarily
+directly-- they're
+
+169
+00:07:05,032 --> 00:07:05,990
+not against each other.
+
+170
+00:07:05,990 --> 00:07:09,390
+In fact, that they're
+orthogonal ideas of the way
+
+171
+00:07:09,390 --> 00:07:12,240
+they treat modularization.
+
+172
+00:07:12,240 --> 00:07:14,840
+But they are going to step
+over each other a little bit,
+
+173
+00:07:14,840 --> 00:07:16,920
+so you've got to understand
+if you really need it
+
+174
+00:07:16,920 --> 00:07:19,855
+and how to deal with it.
+
+175
+00:07:19,855 --> 00:07:22,230
+JOHN FEIG: For us, we had all
+these third-party libraries
+
+176
+00:07:22,230 --> 00:07:23,790
+that we just had to use.
+
+177
+00:07:23,790 --> 00:07:26,400
+And some of those
+required Require.
+
+178
+00:07:26,400 --> 00:07:30,220
+So it's like, OK, we're
+stuck using Require.
+
+179
+00:07:30,220 --> 00:07:33,030
+It's kind of painful to
+get implemented properly
+
+180
+00:07:33,030 --> 00:07:35,140
+with Angular.
+
+181
+00:07:35,140 --> 00:07:38,580
+If you can avoid it, it's
+probably better to avoid it,
+
+182
+00:07:38,580 --> 00:07:39,080
+but--
+
+183
+00:07:39,080 --> 00:07:40,788
+DARREL SUMI: But it's
+still a great tool.
+
+184
+00:07:40,788 --> 00:07:42,930
+And if you need it, there
+are several resources
+
+185
+00:07:42,930 --> 00:07:45,610
+online that show examples
+of how exactly to do it.
+
+186
+00:07:45,610 --> 00:07:47,152
+So it's not-- there's
+ways around it.
+
+187
+00:07:47,152 --> 00:07:48,776
+JOHN FEIG: And I have
+read that Angular
+
+188
+00:07:48,776 --> 00:07:50,780
+is supposed to be getting
+better about trying
+
+189
+00:07:50,780 --> 00:07:51,977
+to integrate with Require.
+
+190
+00:07:51,977 --> 00:07:53,810
+BRAD GREEN: We do want
+to work on that more.
+
+191
+00:07:53,810 --> 00:07:57,120
+So like you say, these
+are two orthogonal things.
+
+192
+00:07:57,120 --> 00:08:01,510
+One is about what does my
+JavaScript class need in order
+
+193
+00:08:01,510 --> 00:08:02,010
+to run.
+
+194
+00:08:02,010 --> 00:08:03,740
+The other is, what order
+should I load vals.
+
+195
+00:08:03,740 --> 00:08:03,886
+DARREL SUMI: Right.
+
+196
+00:08:03,886 --> 00:08:05,530
+Dependency order and then lazy
+loading, and things like that.
+
+197
+00:08:05,530 --> 00:08:07,180
+BRAD GREEN: It would be nice
+if these worked well together.
+
+198
+00:08:07,180 --> 00:08:09,221
+This is some future thing
+we'd like to get right.
+
+199
+00:08:09,221 --> 00:08:11,677
+
+200
+00:08:11,677 --> 00:08:12,510
+JOHN FEIG: So, yeah.
+
+201
+00:08:12,510 --> 00:08:14,009
+I guess now we're
+just going to dive
+
+202
+00:08:14,009 --> 00:08:18,760
+into what the process of
+converting a web Angular
+
+203
+00:08:18,760 --> 00:08:20,530
+app to a Chrome App was.
+
+204
+00:08:20,530 --> 00:08:23,160
+
+205
+00:08:23,160 --> 00:08:25,720
+DARREL SUMI: So just kind
+of the quick few basics
+
+206
+00:08:25,720 --> 00:08:27,800
+that every kind of
+Chrome App needs
+
+207
+00:08:27,800 --> 00:08:30,730
+is that it's going to need a
+manifest.json file that pretty
+
+208
+00:08:30,730 --> 00:08:33,715
+much describes all the
+permissions and the app name
+
+209
+00:08:33,715 --> 00:08:37,289
+and things that
+go into the store.
+
+210
+00:08:37,289 --> 00:08:40,010
+There's going to be a
+background.js file that
+
+211
+00:08:40,010 --> 00:08:42,774
+describes several entry
+points into the app,
+
+212
+00:08:42,774 --> 00:08:44,190
+like what happens
+when you install
+
+213
+00:08:44,190 --> 00:08:46,930
+the app, what happens on launch.
+
+214
+00:08:46,930 --> 00:08:49,650
+And you're going to need here,
+obviously, your index files,
+
+215
+00:08:49,650 --> 00:08:51,200
+your main index file.
+
+216
+00:08:51,200 --> 00:08:53,600
+But there's a trick to this
+one is that it sometimes
+
+217
+00:08:53,600 --> 00:08:56,790
+differs from what you normally
+would have in your Angular
+
+218
+00:08:56,790 --> 00:08:58,387
+project.
+
+219
+00:08:58,387 --> 00:08:58,970
+JOHN FEIG: OK.
+
+220
+00:08:58,970 --> 00:09:02,590
+So we can look at the manifest
+here for a little demo app
+
+221
+00:09:02,590 --> 00:09:04,300
+that I did.
+
+222
+00:09:04,300 --> 00:09:06,320
+And it's really pretty basic.
+
+223
+00:09:06,320 --> 00:09:08,480
+You've got your
+name, description.
+
+224
+00:09:08,480 --> 00:09:12,360
+You have the entry point of
+the JavaScript for your app
+
+225
+00:09:12,360 --> 00:09:15,080
+to find, which is background.js.
+
+226
+00:09:15,080 --> 00:09:18,420
+That's a pretty standard
+thing within Chrome Apps.
+
+227
+00:09:18,420 --> 00:09:21,110
+And then permissions--
+so for example,
+
+228
+00:09:21,110 --> 00:09:26,230
+I need to be able to talk to
+the ajax.googleapis.com site.
+
+229
+00:09:26,230 --> 00:09:29,540
+And I also need to have
+storage permissions.
+
+230
+00:09:29,540 --> 00:09:31,925
+And then you also
+specify your icons.
+
+231
+00:09:31,925 --> 00:09:33,675
+DARREL SUMI: Yeah,
+pretty straightforward.
+
+232
+00:09:33,675 --> 00:09:35,820
+And like I said,
+for the background,
+
+233
+00:09:35,820 --> 00:09:39,090
+you can pretty much
+describe generic things
+
+234
+00:09:39,090 --> 00:09:40,310
+about your Chrome App.
+
+235
+00:09:40,310 --> 00:09:43,480
+So in this case, all we said is
+the width is going to be 1,200,
+
+236
+00:09:43,480 --> 00:09:45,984
+the height's going to be 700.
+
+237
+00:09:45,984 --> 00:09:46,650
+JOHN FEIG: Yeah.
+
+238
+00:09:46,650 --> 00:09:49,897
+And then your index
+is chomeindex.html.
+
+239
+00:09:49,897 --> 00:09:51,480
+And you can name it
+whatever you want.
+
+240
+00:09:51,480 --> 00:09:54,920
+But I think it's easy just
+to call it Chrome Index.
+
+241
+00:09:54,920 --> 00:09:58,160
+And your regular one's Index.
+
+242
+00:09:58,160 --> 00:09:58,710
+OK.
+
+243
+00:09:58,710 --> 00:10:00,751
+DARREL SUMI: So once you
+add all these things in,
+
+244
+00:10:00,751 --> 00:10:02,880
+and you think, OK, this
+is going to-- things
+
+245
+00:10:02,880 --> 00:10:03,480
+are going to look good.
+
+246
+00:10:03,480 --> 00:10:04,438
+And you try running it.
+
+247
+00:10:04,438 --> 00:10:05,984
+Of course, nothing works, right?
+
+248
+00:10:05,984 --> 00:10:06,650
+JOHN FEIG: Yeah.
+
+249
+00:10:06,650 --> 00:10:07,440
+You get a lot of red.
+
+250
+00:10:07,440 --> 00:10:08,523
+DARREL SUMI: Right, right.
+
+251
+00:10:08,523 --> 00:10:11,620
+And so one of the main,
+first ways to approach this
+
+252
+00:10:11,620 --> 00:10:14,880
+is there's a thing
+called a Content Security
+
+253
+00:10:14,880 --> 00:10:17,290
+Policy that web
+browsers implement.
+
+254
+00:10:17,290 --> 00:10:20,100
+It basically
+restricts what you can
+
+255
+00:10:20,100 --> 00:10:24,950
+do so that third-party external
+code doesn't maliciously
+
+256
+00:10:24,950 --> 00:10:28,050
+run some hacks on
+your website and cause
+
+257
+00:10:28,050 --> 00:10:30,930
+all kinds of problems.
+
+258
+00:10:30,930 --> 00:10:32,410
+So this is something
+that's already
+
+259
+00:10:32,410 --> 00:10:33,560
+out in most web browsers.
+
+260
+00:10:33,560 --> 00:10:37,930
+But then Chrome Apps have
+a tighter restriction
+
+261
+00:10:37,930 --> 00:10:40,250
+on this Content Security Policy.
+
+262
+00:10:40,250 --> 00:10:43,840
+So the three main things that
+differ from traditional web are
+
+263
+00:10:43,840 --> 00:10:46,480
+is that it's going to
+restrict any inline scripting.
+
+264
+00:10:46,480 --> 00:10:49,470
+It's going to restrict
+any external resources.
+
+265
+00:10:49,470 --> 00:10:53,480
+So if you link to some extra
+library somewhere else,
+
+266
+00:10:53,480 --> 00:10:56,050
+you can't necessarily
+just link to that
+
+267
+00:10:56,050 --> 00:10:57,882
+to bring that script in.
+
+268
+00:10:57,882 --> 00:10:59,340
+And it's going to
+restrict anything
+
+269
+00:10:59,340 --> 00:11:03,340
+that pretty much converts
+strings into JavaScript.
+
+270
+00:11:03,340 --> 00:11:07,220
+So things that use the eval
+or new Function methods
+
+271
+00:11:07,220 --> 00:11:10,390
+are not going to
+work in Chrome Apps.
+
+272
+00:11:10,390 --> 00:11:14,100
+So the second thing
+that I talked about,
+
+273
+00:11:14,100 --> 00:11:17,032
+the external resources,
+so the first thing
+
+274
+00:11:17,032 --> 00:11:19,240
+you're going to look at is
+what third-party libraries
+
+275
+00:11:19,240 --> 00:11:21,450
+you bring in that
+you might actually
+
+276
+00:11:21,450 --> 00:11:24,076
+reference from a
+CDN or something.
+
+277
+00:11:24,076 --> 00:11:25,950
+These you can't bring
+into your app directly,
+
+278
+00:11:25,950 --> 00:11:27,408
+so you're going to
+have to download
+
+279
+00:11:27,408 --> 00:11:30,382
+these libraries or any
+styles, or fonts, images,
+
+280
+00:11:30,382 --> 00:11:32,340
+any other kind of static
+content that you might
+
+281
+00:11:32,340 --> 00:11:34,880
+be able to just bring
+into your app and have it
+
+282
+00:11:34,880 --> 00:11:36,801
+hosted straight from there.
+
+283
+00:11:36,801 --> 00:11:38,800
+And so you're going to
+have to modify your index
+
+284
+00:11:38,800 --> 00:11:41,180
+file, obviously, because that's
+where all these things get
+
+285
+00:11:41,180 --> 00:11:41,680
+referenced.
+
+286
+00:11:41,680 --> 00:11:44,630
+
+287
+00:11:44,630 --> 00:11:49,340
+So here's a quick example of how
+the index that you might have
+
+288
+00:11:49,340 --> 00:11:52,160
+for your regular
+Angular projects
+
+289
+00:11:52,160 --> 00:11:54,120
+will differ from the Chrome one.
+
+290
+00:11:54,120 --> 00:11:57,700
+So first one, when
+we reference the app,
+
+291
+00:11:57,700 --> 00:11:59,196
+is going to be a ngCsp.
+
+292
+00:11:59,196 --> 00:12:00,820
+JOHN FEIG: I don't
+think it highlights.
+
+293
+00:12:00,820 --> 00:12:02,486
+DARREL SUMI: Yeah,
+it doesn't highlight.
+
+294
+00:12:02,486 --> 00:12:04,560
+There's going to
+be a ngCsp Angular
+
+295
+00:12:04,560 --> 00:12:06,990
+tag that you're
+going to put there.
+
+296
+00:12:06,990 --> 00:12:09,170
+What this describes
+is that it tells
+
+297
+00:12:09,170 --> 00:12:14,060
+Angular to be in a
+CSP mode, essentially.
+
+298
+00:12:14,060 --> 00:12:16,430
+Angular has a lot
+of optimizations
+
+299
+00:12:16,430 --> 00:12:20,300
+that use things like the
+eval and new Function,
+
+300
+00:12:20,300 --> 00:12:25,180
+I believe, basically
+just to optimize Angular.
+
+301
+00:12:25,180 --> 00:12:27,789
+But for it to run
+in the Chrome App,
+
+302
+00:12:27,789 --> 00:12:29,580
+you have to restrict
+those kinds of things.
+
+303
+00:12:29,580 --> 00:12:31,676
+So it has a CSP mode
+that'll get around that.
+
+304
+00:12:31,676 --> 00:12:33,270
+BRAD GREEN: It's actually
+only a few little things.
+
+305
+00:12:33,270 --> 00:12:34,790
+You don't lose very much at all.
+
+306
+00:12:34,790 --> 00:12:34,950
+DARREL SUMI: OK.
+
+307
+00:12:34,950 --> 00:12:35,270
+Well, yeah.
+
+308
+00:12:35,270 --> 00:12:35,770
+Great.
+
+309
+00:12:35,770 --> 00:12:37,500
+BRAD GREEN: It's one
+small optimization.
+
+310
+00:12:37,500 --> 00:12:38,717
+But yes, you do lose it.
+
+311
+00:12:38,717 --> 00:12:39,800
+DARREL SUMI: Right, right.
+
+312
+00:12:39,800 --> 00:12:42,790
+And so you do need
+to specify that.
+
+313
+00:12:42,790 --> 00:12:45,700
+And obviously, now that
+you downloaded-- say,
+
+314
+00:12:45,700 --> 00:12:47,731
+in this example
+it's a Socket.IO.
+
+315
+00:12:47,731 --> 00:12:49,230
+We were referencing
+it from the CDN.
+
+316
+00:12:49,230 --> 00:12:51,840
+And so now we just have to
+bring it into your own project
+
+317
+00:12:51,840 --> 00:12:53,112
+and reference it that way.
+
+318
+00:12:53,112 --> 00:12:54,070
+Pretty straightforward.
+
+319
+00:12:54,070 --> 00:12:54,695
+JOHN FEIG: Yep.
+
+320
+00:12:54,695 --> 00:12:58,570
+And then you try running it
+again, and it's still broken.
+
+321
+00:12:58,570 --> 00:12:59,830
+So--
+
+322
+00:12:59,830 --> 00:13:03,940
+DARREL SUMI: OK, so here's a
+little demo-- let me switch.
+
+323
+00:13:03,940 --> 00:13:08,910
+Here's a little demo of
+a socket app that I made.
+
+324
+00:13:08,910 --> 00:13:14,160
+So basically, all this is--
+it's just a small little test
+
+325
+00:13:14,160 --> 00:13:18,000
+demo that connects
+to a Node.js server.
+
+326
+00:13:18,000 --> 00:13:20,270
+The Node.js server
+starts counting
+
+327
+00:13:20,270 --> 00:13:22,620
+every one, two,
+three-- every second.
+
+328
+00:13:22,620 --> 00:13:24,360
+And it would reply
+back on Socket.IO
+
+329
+00:13:24,360 --> 00:13:28,220
+to the client and display
+what the current count is,
+
+330
+00:13:28,220 --> 00:13:29,810
+essentially.
+
+331
+00:13:29,810 --> 00:13:32,040
+Really simple-- that's
+all that's happening.
+
+332
+00:13:32,040 --> 00:13:35,890
+And so here, you'll see that
+the counter's incrementing.
+
+333
+00:13:35,890 --> 00:13:38,220
+But at this point,
+the Angular project
+
+334
+00:13:38,220 --> 00:13:41,530
+doesn't know anything about
+what the count was previously.
+
+335
+00:13:41,530 --> 00:13:44,000
+It doesn't know anything
+about who its friends are.
+
+336
+00:13:44,000 --> 00:13:47,722
+These are all initialized and
+given to us by the Node server.
+
+337
+00:13:47,722 --> 00:13:50,204
+
+338
+00:13:50,204 --> 00:13:50,870
+JOHN FEIG: Yeah.
+
+339
+00:13:50,870 --> 00:13:52,440
+You don't want to
+dive into-- OK.
+
+340
+00:13:52,440 --> 00:13:53,190
+DARREL SUMI: Whoa.
+
+341
+00:13:53,190 --> 00:13:55,515
+
+342
+00:13:55,515 --> 00:13:56,460
+Whoops.
+
+343
+00:13:56,460 --> 00:13:56,960
+There we go.
+
+344
+00:13:56,960 --> 00:13:58,220
+OK.
+
+345
+00:13:58,220 --> 00:14:04,350
+So one of the key components to
+Angular as well as Chrome Apps
+
+346
+00:14:04,350 --> 00:14:06,700
+is that the way you
+think about web servers
+
+347
+00:14:06,700 --> 00:14:11,570
+traditionally is switched
+to be using an API server.
+
+348
+00:14:11,570 --> 00:14:14,559
+So the web server you need
+to treat as an API server.
+
+349
+00:14:14,559 --> 00:14:16,600
+And what that means is
+that the web server is not
+
+350
+00:14:16,600 --> 00:14:20,930
+going to hand down HTML or
+things like that, where it's
+
+351
+00:14:20,930 --> 00:14:24,134
+traditionally-- they might
+have injected information, say.
+
+352
+00:14:24,134 --> 00:14:25,800
+You grab information
+from your database,
+
+353
+00:14:25,800 --> 00:14:28,384
+and you put it in your friends
+list or something, for example.
+
+354
+00:14:28,384 --> 00:14:30,758
+And it's not going to inject
+[? a string ?] into the HTML
+
+355
+00:14:30,758 --> 00:14:32,270
+and hand you back the HTML.
+
+356
+00:14:32,270 --> 00:14:35,730
+Rather, all that's going to
+exist in your Angular app
+
+357
+00:14:35,730 --> 00:14:36,970
+already.
+
+358
+00:14:36,970 --> 00:14:38,870
+And really, what your
+server should be doing
+
+359
+00:14:38,870 --> 00:14:42,560
+is sending back just the data,
+none of the UI components.
+
+360
+00:14:42,560 --> 00:14:45,270
+So in this example,
+this is how the HTML
+
+361
+00:14:45,270 --> 00:14:49,350
+looks like for the
+example I just showed you.
+
+362
+00:14:49,350 --> 00:14:51,380
+Pretty much all we know
+on the Angular side
+
+363
+00:14:51,380 --> 00:14:54,000
+is that there's
+going to be a count.
+
+364
+00:14:54,000 --> 00:14:56,100
+There's going to be
+a count listed here.
+
+365
+00:14:56,100 --> 00:14:56,950
+Whoops.
+
+366
+00:14:56,950 --> 00:14:57,470
+That doesn't do that.
+
+367
+00:14:57,470 --> 00:14:58,190
+JOHN FEIG: [LAUGHTER] No.
+
+368
+00:14:58,190 --> 00:14:58,223
+DARREL SUMI: OK.
+
+369
+00:14:58,223 --> 00:15:00,230
+So there's going to be a
+count referenced there.
+
+370
+00:15:00,230 --> 00:15:02,940
+And we're going to be repeating
+over a list of friends.
+
+371
+00:15:02,940 --> 00:15:05,107
+But we don't know who the
+friends are at this point.
+
+372
+00:15:05,107 --> 00:15:06,189
+There might be one friend.
+
+373
+00:15:06,189 --> 00:15:07,320
+There might be hundreds.
+
+374
+00:15:07,320 --> 00:15:08,482
+And we don't know.
+
+375
+00:15:08,482 --> 00:15:10,630
+But really, you need to
+treat your web server
+
+376
+00:15:10,630 --> 00:15:12,381
+to give you those
+things as an API server.
+
+377
+00:15:12,381 --> 00:15:14,588
+BRAD GREEN: And this is the
+great thing about Angular
+
+378
+00:15:14,588 --> 00:15:16,700
+is you're going to build
+your app this way anyway.
+
+379
+00:15:16,700 --> 00:15:18,470
+So there's not much
+in the transition.
+
+380
+00:15:18,470 --> 00:15:19,178
+JOHN FEIG: Right.
+
+381
+00:15:19,178 --> 00:15:20,210
+DARREL SUMI: Exactly.
+
+382
+00:15:20,210 --> 00:15:22,512
+JOHN FEIG: So we're going
+to look at Socket.IO here.
+
+383
+00:15:22,512 --> 00:15:23,178
+DARREL SUMI: OK.
+
+384
+00:15:23,178 --> 00:15:23,928
+JOHN FEIG: Whoops.
+
+385
+00:15:23,928 --> 00:15:24,672
+Uh-oh.
+
+386
+00:15:24,672 --> 00:15:26,994
+That's not good.
+
+387
+00:15:26,994 --> 00:15:27,660
+DARREL SUMI: OK.
+
+388
+00:15:27,660 --> 00:15:31,400
+So here is some of the
+code for this example.
+
+389
+00:15:31,400 --> 00:15:34,550
+And this is all, by the way,
+{public} GitHub {repress},
+
+390
+00:15:34,550 --> 00:15:36,342
+so that you can look
+it later on your time.
+
+391
+00:15:36,342 --> 00:15:37,008
+JOHN FEIG: Yeah.
+
+392
+00:15:37,008 --> 00:15:38,180
+We have links at the end.
+
+393
+00:15:38,180 --> 00:15:40,230
+DARREL SUMI: Right, right.
+
+394
+00:15:40,230 --> 00:15:45,290
+So this is the main controller
+for the example I was just
+
+395
+00:15:45,290 --> 00:15:46,340
+[? saying ?].
+
+396
+00:15:46,340 --> 00:15:49,170
+So basically, there is
+going to be a count that's
+
+397
+00:15:49,170 --> 00:15:51,469
+initialized at zero and
+an empty friends list.
+
+398
+00:15:51,469 --> 00:15:53,260
+Like I said, you don't
+really know anything
+
+399
+00:15:53,260 --> 00:15:55,785
+about what's happening.
+
+400
+00:15:55,785 --> 00:15:57,160
+And the way we
+have it structured
+
+401
+00:15:57,160 --> 00:16:00,820
+is that initially, you
+just connect to the server.
+
+402
+00:16:00,820 --> 00:16:03,060
+The server is, like I
+said, a Node.js server
+
+403
+00:16:03,060 --> 00:16:06,170
+that's running locally.
+
+404
+00:16:06,170 --> 00:16:10,270
+And here is a service that
+controls the communication
+
+405
+00:16:10,270 --> 00:16:12,390
+to that Node server.
+
+406
+00:16:12,390 --> 00:16:15,060
+So in server connect,
+where you start off,
+
+407
+00:16:15,060 --> 00:16:18,920
+essentially we just connect
+to-- I have a hard-coded thing
+
+408
+00:16:18,920 --> 00:16:21,580
+to look a host right here.
+
+409
+00:16:21,580 --> 00:16:23,750
+And at this point, we
+don't know any kind
+
+410
+00:16:23,750 --> 00:16:25,280
+of data that's been
+passed through.
+
+411
+00:16:25,280 --> 00:16:28,590
+We just know that we
+started with nothing.
+
+412
+00:16:28,590 --> 00:16:31,830
+So what we do is we
+tell it to connect.
+
+413
+00:16:31,830 --> 00:16:35,880
+And when we connect, we event
+an emit back to our controller,
+
+414
+00:16:35,880 --> 00:16:37,600
+saying, hey, we've connected.
+
+415
+00:16:37,600 --> 00:16:38,811
+And at this point--
+
+416
+00:16:38,811 --> 00:16:41,060
+BRAD GREEN: Actually, Darrel,
+maybe just bump the font
+
+417
+00:16:41,060 --> 00:16:42,045
+up a point or two.
+
+418
+00:16:42,045 --> 00:16:42,820
+DARREL SUMI: Sure.
+
+419
+00:16:42,820 --> 00:16:43,320
+What was it?
+
+420
+00:16:43,320 --> 00:16:44,700
+Command-Plus?
+
+421
+00:16:44,700 --> 00:16:45,495
+JOHN FEIG: Yeah.
+
+422
+00:16:45,495 --> 00:16:46,536
+DARREL SUMI: There we go.
+
+423
+00:16:46,536 --> 00:16:47,814
+BRAD GREEN: That'll be good.
+
+424
+00:16:47,814 --> 00:16:48,980
+JOHN FEIG: Sorry about that.
+
+425
+00:16:48,980 --> 00:16:51,014
+
+426
+00:16:51,014 --> 00:16:52,430
+DARREL SUMI: So
+in our controller,
+
+427
+00:16:52,430 --> 00:16:57,605
+when you do connect, we're
+going to tell it to initialize,
+
+428
+00:16:57,605 --> 00:16:59,450
+initialize our state.
+
+429
+00:16:59,450 --> 00:17:02,090
+So at this point,
+your API server
+
+430
+00:17:02,090 --> 00:17:05,960
+doesn't really know anything
+about where you've left off
+
+431
+00:17:05,960 --> 00:17:06,724
+or what it is.
+
+432
+00:17:06,724 --> 00:17:08,890
+It's just going to start
+counting from some random--
+
+433
+00:17:08,890 --> 00:17:11,490
+from zero, if the server
+doesn't know anything.
+
+434
+00:17:11,490 --> 00:17:15,165
+So it helps if you pass in some
+kind of initialization data
+
+435
+00:17:15,165 --> 00:17:16,980
+to tell it, hey, this
+is where we left off.
+
+436
+00:17:16,980 --> 00:17:19,940
+And this leads into
+a key point of how
+
+437
+00:17:19,940 --> 00:17:22,389
+you want to treat
+offline and online mode.
+
+438
+00:17:22,389 --> 00:17:25,210
+But we'll get to
+that in a second.
+
+439
+00:17:25,210 --> 00:17:29,350
+And so we initialize it
+with our current count,
+
+440
+00:17:29,350 --> 00:17:32,040
+which at this point is zero.
+
+441
+00:17:32,040 --> 00:17:36,080
+And when we get a response
+back from the server here,
+
+442
+00:17:36,080 --> 00:17:39,190
+and it responds here,
+we'll get back some data.
+
+443
+00:17:39,190 --> 00:17:41,510
+And in the data--
+like I just know
+
+444
+00:17:41,510 --> 00:17:45,550
+it's going to contain the
+current count and just
+
+445
+00:17:45,550 --> 00:17:48,090
+a list of friends, which
+doesn't really change.
+
+446
+00:17:48,090 --> 00:17:50,700
+And then from that point
+onward, the socket's
+
+447
+00:17:50,700 --> 00:17:54,610
+going to connect-- it's going
+to listen for a counter update
+
+448
+00:17:54,610 --> 00:17:56,650
+event that's going to
+get pushed down once
+
+449
+00:17:56,650 --> 00:17:59,070
+every second from
+the Node server.
+
+450
+00:17:59,070 --> 00:18:01,870
+And it's just going emit
+the count right here.
+
+451
+00:18:01,870 --> 00:18:05,290
+So the count is actually
+incremented on the server side.
+
+452
+00:18:05,290 --> 00:18:07,620
+So all that kind of
+logic-- obviously,
+
+453
+00:18:07,620 --> 00:18:09,900
+this is a contrived
+example of what
+
+454
+00:18:09,900 --> 00:18:12,040
+you might want to pass
+down, what information you
+
+455
+00:18:12,040 --> 00:18:13,498
+want to pass down
+from your server.
+
+456
+00:18:13,498 --> 00:18:16,540
+But essentially,
+the server's going
+
+457
+00:18:16,540 --> 00:18:18,920
+to be handling all that
+kind of data management,
+
+458
+00:18:18,920 --> 00:18:22,527
+a lot of that
+stuff that goes on.
+
+459
+00:18:22,527 --> 00:18:24,360
+But you'll notice here
+that this is all just
+
+460
+00:18:24,360 --> 00:18:30,538
+standard Socket.IO stuff if
+you have worked with it before.
+
+461
+00:18:30,538 --> 00:18:34,000
+[INAUDIBLE] All right.
+
+462
+00:18:34,000 --> 00:18:37,060
+
+463
+00:18:37,060 --> 00:18:38,254
+JOHN FEIG: There we go.
+
+464
+00:18:38,254 --> 00:18:38,920
+DARREL SUMI: OK.
+
+465
+00:18:38,920 --> 00:18:40,680
+Right.
+
+466
+00:18:40,680 --> 00:18:42,930
+And so one of the
+things that you
+
+467
+00:18:42,930 --> 00:18:45,440
+have to consider when you
+build your Chrome app,
+
+468
+00:18:45,440 --> 00:18:48,340
+and for Angular as
+well, is how this
+
+469
+00:18:48,340 --> 00:18:50,910
+is going to get treated
+in an offline mode
+
+470
+00:18:50,910 --> 00:18:54,220
+or in a state where you're not
+sure about the connectivity
+
+471
+00:18:54,220 --> 00:18:55,330
+of things.
+
+472
+00:18:55,330 --> 00:18:58,300
+So you do need to handle things
+like disconnections or crappy
+
+473
+00:18:58,300 --> 00:18:59,830
+connections.
+
+474
+00:18:59,830 --> 00:19:04,660
+And a lot of that needs to go
+into any kind of socket code
+
+475
+00:19:04,660 --> 00:19:05,500
+that you write.
+
+476
+00:19:05,500 --> 00:19:07,240
+So luckily, Socket.IO
+handles a lot
+
+477
+00:19:07,240 --> 00:19:09,285
+of the disconnect and
+auto-reconnect logic.
+
+478
+00:19:09,285 --> 00:19:10,910
+But if you're working
+with raw sockets,
+
+479
+00:19:10,910 --> 00:19:13,862
+you're going to need to handle
+these kinds of things, as well.
+
+480
+00:19:13,862 --> 00:19:15,653
+But more than just the
+actual connectivity,
+
+481
+00:19:15,653 --> 00:19:18,650
+you need to think about
+how your app is going
+
+482
+00:19:18,650 --> 00:19:22,070
+to work from the
+user's standpoint
+
+483
+00:19:22,070 --> 00:19:23,990
+when you don't
+have connectivity.
+
+484
+00:19:23,990 --> 00:19:29,150
+If you start up the app, will
+you be showing a blank page?
+
+485
+00:19:29,150 --> 00:19:31,390
+If you lose connection
+in the middle, what's
+
+486
+00:19:31,390 --> 00:19:33,890
+going to happen to, let's
+say, in our example,
+
+487
+00:19:33,890 --> 00:19:35,772
+the counter that
+you have going on?
+
+488
+00:19:35,772 --> 00:19:36,480
+JOHN FEIG: Right.
+
+489
+00:19:36,480 --> 00:19:38,540
+You don't want to just
+throw up a Refresh button
+
+490
+00:19:38,540 --> 00:19:40,340
+and make the user
+think about that stuff.
+
+491
+00:19:40,340 --> 00:19:44,080
+You want to handle
+it in a smart way
+
+492
+00:19:44,080 --> 00:19:47,137
+so that it's as
+automatic as it can be.
+
+493
+00:19:47,137 --> 00:19:48,220
+DARREL SUMI: Right, right.
+
+494
+00:19:48,220 --> 00:19:51,480
+So in our example-- can
+we go-- what's it called?
+
+495
+00:19:51,480 --> 00:19:53,720
+Terminate the server.
+
+496
+00:19:53,720 --> 00:19:55,032
+JOHN FEIG: Oh, the-- OK.
+
+497
+00:19:55,032 --> 00:19:56,340
+Um, yeah.
+
+498
+00:19:56,340 --> 00:19:59,792
+
+499
+00:19:59,792 --> 00:20:00,292
+There we go.
+
+500
+00:20:00,292 --> 00:20:03,750
+
+501
+00:20:03,750 --> 00:20:05,232
+OK.
+
+502
+00:20:05,232 --> 00:20:06,854
+Server's up there.
+
+503
+00:20:06,854 --> 00:20:07,520
+DARREL SUMI: OK.
+
+504
+00:20:07,520 --> 00:20:08,510
+So we just--
+
+505
+00:20:08,510 --> 00:20:08,910
+JOHN FEIG: Server's dead.
+
+506
+00:20:08,910 --> 00:20:10,700
+DARREL SUMI: Yeah, killed
+our server, essentially.
+
+507
+00:20:10,700 --> 00:20:12,199
+And when you go
+back to this, you'll
+
+508
+00:20:12,199 --> 00:20:13,750
+notice that the
+counter has stopped.
+
+509
+00:20:13,750 --> 00:20:15,250
+You'll probably
+want to do something
+
+510
+00:20:15,250 --> 00:20:17,521
+to signify that you're in
+an offline mode, maybe.
+
+511
+00:20:17,521 --> 00:20:19,020
+That might help,
+so the user doesn't
+
+512
+00:20:19,020 --> 00:20:22,010
+get confused, like, why
+isn't anything working?
+
+513
+00:20:22,010 --> 00:20:24,920
+But you notice that the count
+is just stopped at here.
+
+514
+00:20:24,920 --> 00:20:26,950
+But if you were to
+redo the server,
+
+515
+00:20:26,950 --> 00:20:31,270
+or reconnect it, after
+some retrial logic,
+
+516
+00:20:31,270 --> 00:20:33,890
+it's going to
+essentially start back
+
+517
+00:20:33,890 --> 00:20:35,660
+from where we previously
+were counting.
+
+518
+00:20:35,660 --> 00:20:37,920
+So you don't want to
+necessarily start from scratch
+
+519
+00:20:37,920 --> 00:20:39,370
+every time you reconnect.
+
+520
+00:20:39,370 --> 00:20:42,420
+You want to leave the user
+off where they were before
+
+521
+00:20:42,420 --> 00:20:44,340
+and [? smoothen
+?] the transition
+
+522
+00:20:44,340 --> 00:20:45,370
+between these things.
+
+523
+00:20:45,370 --> 00:20:46,950
+JOHN FEIG: You
+can see it worked.
+
+524
+00:20:46,950 --> 00:20:49,075
+We were stuck at 419, and
+now we're counting again.
+
+525
+00:20:49,075 --> 00:20:50,158
+DARREL SUMI: Right, right.
+
+526
+00:20:50,158 --> 00:20:52,865
+So you don't necessarily want
+to start at zero every time.
+
+527
+00:20:52,865 --> 00:20:57,377
+
+528
+00:20:57,377 --> 00:20:59,230
+JOHN FEIG: OK.
+
+529
+00:20:59,230 --> 00:21:02,190
+So go here.
+
+530
+00:21:02,190 --> 00:21:03,900
+DARREL SUMI: So
+this whole example
+
+531
+00:21:03,900 --> 00:21:06,990
+was, [? obviously, ?] just
+a regular Angular app.
+
+532
+00:21:06,990 --> 00:21:10,124
+And the same thing works for--
+
+533
+00:21:10,124 --> 00:21:11,165
+JOHN FEIG: Kill this one.
+
+534
+00:21:11,165 --> 00:21:11,915
+DARREL SUMI: Yeah.
+
+535
+00:21:11,915 --> 00:21:14,310
+Same thing works--
+the transition
+
+536
+00:21:14,310 --> 00:21:16,940
+from bringing Socket.IO
+into Chrome Apps
+
+537
+00:21:16,940 --> 00:21:19,600
+is really, really simple,
+pretty much like what
+
+538
+00:21:19,600 --> 00:21:22,800
+we showed earlier where you
+reference the Socket.IO, not
+
+539
+00:21:22,800 --> 00:21:25,490
+from CDN but from
+your own project.
+
+540
+00:21:25,490 --> 00:21:27,800
+After you do that,
+that's pretty much it.
+
+541
+00:21:27,800 --> 00:21:29,450
+There isn't a
+whole lot of things
+
+542
+00:21:29,450 --> 00:21:31,325
+that you need to do to
+get Socket.IO working.
+
+543
+00:21:31,325 --> 00:21:33,050
+It actually just
+works out of the box.
+
+544
+00:21:33,050 --> 00:21:34,510
+JOHN FEIG: Yeah, which was
+really surprising to me
+
+545
+00:21:34,510 --> 00:21:36,670
+because I thought that
+this might be restricted
+
+546
+00:21:36,670 --> 00:21:38,003
+or it might be really difficult.
+
+547
+00:21:38,003 --> 00:21:40,490
+But Socket.IO just works.
+
+548
+00:21:40,490 --> 00:21:43,238
+
+549
+00:21:43,238 --> 00:21:45,265
+Where do you want to go?
+
+550
+00:21:45,265 --> 00:21:48,620
+DARREL SUMI: Yeah, there we go.
+
+551
+00:21:48,620 --> 00:21:51,530
+And so on top of
+Socket.IO, Chrome Apps
+
+552
+00:21:51,530 --> 00:21:54,230
+provides a really
+great Sockets API.
+
+553
+00:21:54,230 --> 00:21:57,340
+It gives you access to
+raw TCP and UDP sockets.
+
+554
+00:21:57,340 --> 00:22:00,560
+It's through the
+chrome.socket API.
+
+555
+00:22:00,560 --> 00:22:04,260
+I have an example on the GitHub
+that is the same exact demo
+
+556
+00:22:04,260 --> 00:22:08,560
+that we just showed but
+just rewritten for TCP.
+
+557
+00:22:08,560 --> 00:22:11,220
+So if you want to look at
+that, here's a link for that.
+
+558
+00:22:11,220 --> 00:22:13,530
+But we necessarily
+won't go into that code.
+
+559
+00:22:13,530 --> 00:22:15,820
+JOHN FEIG: It's a
+little bit more verbose,
+
+560
+00:22:15,820 --> 00:22:17,970
+but it's also a
+lot more powerful.
+
+561
+00:22:17,970 --> 00:22:21,470
+Like I mentioned at
+the top, you get access
+
+562
+00:22:21,470 --> 00:22:25,880
+to real raw sockets with
+this, which, like I said,
+
+563
+00:22:25,880 --> 00:22:28,050
+we just needed for our app.
+
+564
+00:22:28,050 --> 00:22:29,800
+BRAD GREEN: Just so
+folks can think about,
+
+565
+00:22:29,800 --> 00:22:30,758
+which one would I need?
+
+566
+00:22:30,758 --> 00:22:32,760
+What did you guys need
+the raw sockets for?
+
+567
+00:22:32,760 --> 00:22:35,860
+JOHN FEIG: So we're sending
+binary data back and forth
+
+568
+00:22:35,860 --> 00:22:36,530
+to the server.
+
+569
+00:22:36,530 --> 00:22:39,620
+Socket.IO sends back
+and forth strings.
+
+570
+00:22:39,620 --> 00:22:44,000
+So if you want to send that
+sort of data over Socket.IO,
+
+571
+00:22:44,000 --> 00:22:46,097
+you have to encode
+it as a string first.
+
+572
+00:22:46,097 --> 00:22:48,180
+And then you have to decode
+it on the server side.
+
+573
+00:22:48,180 --> 00:22:50,221
+You also have to have
+server-side components that
+
+574
+00:22:50,221 --> 00:22:51,960
+can handle Socket.IO.
+
+575
+00:22:51,960 --> 00:22:55,730
+Depending on the server that
+you're running the sockets,
+
+576
+00:22:55,730 --> 00:22:59,446
+you might have a good Socket.IO
+library available to you.
+
+577
+00:22:59,446 --> 00:23:01,320
+Like if you're running
+Node, it's really easy
+
+578
+00:23:01,320 --> 00:23:03,245
+to just pull in Socket.IO.
+
+579
+00:23:03,245 --> 00:23:05,590
+But if you're
+running Java, there's
+
+580
+00:23:05,590 --> 00:23:09,260
+not really a great
+solution for Socket.IO.
+
+581
+00:23:09,260 --> 00:23:11,812
+So it's a lot easier to
+use raw sockets there.
+
+582
+00:23:11,812 --> 00:23:14,395
+DARREL SUMI: It just depends on
+what your current architecture
+
+583
+00:23:14,395 --> 00:23:15,440
+is and structures.
+
+584
+00:23:15,440 --> 00:23:17,230
+For us, since we came
+from a mobile app
+
+585
+00:23:17,230 --> 00:23:20,980
+with a pre-existing system, it
+was easier to plug into that
+
+586
+00:23:20,980 --> 00:23:23,997
+rather than recreate everything
+on a different system.
+
+587
+00:23:23,997 --> 00:23:24,705
+JOHN FEIG: Right.
+
+588
+00:23:24,705 --> 00:23:27,230
+And there's also WebSockets,
+too, like we mentioned.
+
+589
+00:23:27,230 --> 00:23:31,680
+And those are maybe a little
+bit more available on servers.
+
+590
+00:23:31,680 --> 00:23:34,180
+So it just depends on
+what your needs are.
+
+591
+00:23:34,180 --> 00:23:37,110
+But it's really nice to have
+Chrome sockets available.
+
+592
+00:23:37,110 --> 00:23:40,532
+
+593
+00:23:40,532 --> 00:23:42,490
+So the next thing that
+you want to think about,
+
+594
+00:23:42,490 --> 00:23:46,970
+in terms of how your app
+behaves when it's offline,
+
+595
+00:23:46,970 --> 00:23:48,840
+is your local storage stuff.
+
+596
+00:23:48,840 --> 00:23:51,090
+And this is actually
+something that I
+
+597
+00:23:51,090 --> 00:23:57,150
+started with in my demo,
+which is a little podcast app,
+
+598
+00:23:57,150 --> 00:23:59,980
+before I even thought about
+converting this into a Chrome
+
+599
+00:23:59,980 --> 00:24:01,562
+App.
+
+600
+00:24:01,562 --> 00:24:03,020
+The main reason is
+because I wanted
+
+601
+00:24:03,020 --> 00:24:04,425
+it to behave like an app.
+
+602
+00:24:04,425 --> 00:24:09,070
+I wanted people to be able
+to subscribe to podcasts
+
+603
+00:24:09,070 --> 00:24:10,980
+and then listen to episodes.
+
+604
+00:24:10,980 --> 00:24:13,310
+I wanted it to keep
+track of how much they
+
+605
+00:24:13,310 --> 00:24:15,392
+had listened to so far.
+
+606
+00:24:15,392 --> 00:24:18,890
+One thing that really
+drives me nuts is I
+
+607
+00:24:18,890 --> 00:24:25,580
+have a couple tools that
+I use, aside from my app,
+
+608
+00:24:25,580 --> 00:24:27,700
+for listening to
+podcasts, and they always
+
+609
+00:24:27,700 --> 00:24:29,510
+forget where I left off.
+
+610
+00:24:29,510 --> 00:24:31,010
+And some of the
+podcasts I listen to
+
+611
+00:24:31,010 --> 00:24:33,260
+are multiple hours long.
+
+612
+00:24:33,260 --> 00:24:37,240
+And if the thing goes down or
+you accidentally click Refresh,
+
+613
+00:24:37,240 --> 00:24:40,005
+and you start back at zero
+when you're an hour and a half
+
+614
+00:24:40,005 --> 00:24:43,160
+in, that's not too fun .
+
+615
+00:24:43,160 --> 00:24:45,140
+So this stuff is
+really important.
+
+616
+00:24:45,140 --> 00:24:47,006
+It's really useful.
+
+617
+00:24:47,006 --> 00:24:50,650
+And storing stuff
+on the client side
+
+618
+00:24:50,650 --> 00:24:53,750
+in certain cases-- like
+for KeeChat for example,
+
+619
+00:24:53,750 --> 00:24:58,400
+all of your chats are stored
+locally-- your contacts list.
+
+620
+00:24:58,400 --> 00:25:00,010
+You want all that stuff local.
+
+621
+00:25:00,010 --> 00:25:02,940
+Especially if it's just
+going to be for you,
+
+622
+00:25:02,940 --> 00:25:05,710
+there's no reason to
+have it on the server.
+
+623
+00:25:05,710 --> 00:25:07,700
+So there are some
+slight differences
+
+624
+00:25:07,700 --> 00:25:10,930
+between how Chrome handles
+local storage versus how
+
+625
+00:25:10,930 --> 00:25:14,200
+HTML5 handles local storage.
+
+626
+00:25:14,200 --> 00:25:15,950
+And I will show you right here.
+
+627
+00:25:15,950 --> 00:25:20,320
+So the big difference is
+that HTML5 is synchronous.
+
+628
+00:25:20,320 --> 00:25:22,950
+It has a synchronous API
+for local storage, which
+
+629
+00:25:22,950 --> 00:25:28,670
+means that you can just say,
+myVal equals localStorage key.
+
+630
+00:25:28,670 --> 00:25:31,085
+So that's just getting the
+thing right off a disk.
+
+631
+00:25:31,085 --> 00:25:32,012
+It blocks in-line.
+
+632
+00:25:32,012 --> 00:25:34,220
+And so you're going to be
+blocking on whatever thread
+
+633
+00:25:34,220 --> 00:25:36,010
+you're calling that on.
+
+634
+00:25:36,010 --> 00:25:38,950
+And Chrome is asynchronous.
+
+635
+00:25:38,950 --> 00:25:41,630
+So it's going to go
+out to disk and then
+
+636
+00:25:41,630 --> 00:25:44,452
+return in a callback the thing.
+
+637
+00:25:44,452 --> 00:25:45,910
+And you can just
+follow along here.
+
+638
+00:25:45,910 --> 00:25:49,650
+I highlighted in blue the
+value that I'm trying to set.
+
+639
+00:25:49,650 --> 00:25:53,500
+And then orange
+here is the value
+
+640
+00:25:53,500 --> 00:25:55,580
+that's coming back from disk.
+
+641
+00:25:55,580 --> 00:25:59,770
+So in the HTML5
+example at the top,
+
+642
+00:25:59,770 --> 00:26:02,050
+that's just one line
+that we have to call.
+
+643
+00:26:02,050 --> 00:26:04,350
+But again, it blocks there.
+
+644
+00:26:04,350 --> 00:26:09,710
+And then the example below
+is a little bit more verbose,
+
+645
+00:26:09,710 --> 00:26:15,310
+but you can see we start
+out with null set to that.
+
+646
+00:26:15,310 --> 00:26:19,140
+And then we define
+a callback function
+
+647
+00:26:19,140 --> 00:26:21,490
+that's going to take
+a single parameter
+
+648
+00:26:21,490 --> 00:26:25,182
+and assign it to the
+value that we want set.
+
+649
+00:26:25,182 --> 00:26:26,600
+Oh, boy.
+
+650
+00:26:26,600 --> 00:26:28,556
+Ha.
+
+651
+00:26:28,556 --> 00:26:30,930
+There we go.
+
+652
+00:26:30,930 --> 00:26:34,040
+And then we do this
+chrome.storage.local.get.
+
+653
+00:26:34,040 --> 00:26:37,010
+And then the first
+parameter is the key,
+
+654
+00:26:37,010 --> 00:26:40,620
+which is the same key
+that we have up above.
+
+655
+00:26:40,620 --> 00:26:43,940
+And then whatever
+gets returned is
+
+656
+00:26:43,940 --> 00:26:46,540
+going to get passed
+to a function.
+
+657
+00:26:46,540 --> 00:26:50,087
+And it's going to be
+callback and then data, key.
+
+658
+00:26:50,087 --> 00:26:51,170
+So you get an object back.
+
+659
+00:26:51,170 --> 00:26:55,220
+And you have to pull the
+value out of the object.
+
+660
+00:26:55,220 --> 00:26:56,610
+It's really not too tough.
+
+661
+00:26:56,610 --> 00:27:00,110
+It's just slightly different
+because it's asynchronous.
+
+662
+00:27:00,110 --> 00:27:03,019
+And the big deal
+here is that there
+
+663
+00:27:03,019 --> 00:27:05,310
+may be some third-party
+libraries, especially if you're
+
+664
+00:27:05,310 --> 00:27:07,820
+in a larger project,
+that make assumptions
+
+665
+00:27:07,820 --> 00:27:12,890
+about having the synchronous
+API for local storage.
+
+666
+00:27:12,890 --> 00:27:15,170
+So there was one
+library that we ran
+
+667
+00:27:15,170 --> 00:27:20,600
+into that was a pretty integral
+part of KeeChat that just made
+
+668
+00:27:20,600 --> 00:27:24,150
+assumptions all over the
+place about local storage
+
+669
+00:27:24,150 --> 00:27:25,810
+being synchronous.
+
+670
+00:27:25,810 --> 00:27:30,420
+And we made assumptions--
+we kind of used their API
+
+671
+00:27:30,420 --> 00:27:34,460
+in a synchronous way because
+those were synchronous calls.
+
+672
+00:27:34,460 --> 00:27:37,310
+So it made sense to use
+it in a synchronous way.
+
+673
+00:27:37,310 --> 00:27:41,020
+So what happened was when we
+did this change to Chrome,
+
+674
+00:27:41,020 --> 00:27:45,460
+we had to go through
+and rewrite quite a bit
+
+675
+00:27:45,460 --> 00:27:47,320
+of that third-party
+library to make
+
+676
+00:27:47,320 --> 00:27:50,200
+it function asynchronously.
+
+677
+00:27:50,200 --> 00:27:53,550
+That was one of the
+more painful things.
+
+678
+00:27:53,550 --> 00:27:54,970
+It wasn't a huge deal.
+
+679
+00:27:54,970 --> 00:27:57,040
+And it wasn't
+technically difficult.
+
+680
+00:27:57,040 --> 00:28:00,700
+It was just annoying because
+you have this dependency.
+
+681
+00:28:00,700 --> 00:28:02,860
+And it's not working for you.
+
+682
+00:28:02,860 --> 00:28:06,500
+So that stuff you
+might run into.
+
+683
+00:28:06,500 --> 00:28:07,867
+But--
+
+684
+00:28:07,867 --> 00:28:09,700
+DARREL SUMI: So pretty
+much, you always want
+
+685
+00:28:09,700 --> 00:28:11,840
+to check and see what
+kind of assumptions
+
+686
+00:28:11,840 --> 00:28:15,132
+any third-party banks on
+the access to the APIs,
+
+687
+00:28:15,132 --> 00:28:16,590
+as well as the
+thing like we talked
+
+688
+00:28:16,590 --> 00:28:18,980
+about earlier-- the
+Content Security Policy.
+
+689
+00:28:18,980 --> 00:28:21,660
+A lot of these libraries are
+going to make assumptions,
+
+690
+00:28:21,660 --> 00:28:23,995
+a lot of them more
+towards the way web
+
+691
+00:28:23,995 --> 00:28:28,350
+has been done up till
+now and not the Angular
+
+692
+00:28:28,350 --> 00:28:32,460
+way or the Chrome App way.
+
+693
+00:28:32,460 --> 00:28:36,350
+JOHN FEIG: And another great
+way to persist data locally
+
+694
+00:28:36,350 --> 00:28:42,030
+is with IndexedDB,
+which is an HTML5 API.
+
+695
+00:28:42,030 --> 00:28:43,750
+And it can actually
+be a much better fit
+
+696
+00:28:43,750 --> 00:28:44,840
+for certain types of data.
+
+697
+00:28:44,840 --> 00:28:47,423
+So if you have larger data sets,
+anything that's not a string,
+
+698
+00:28:47,423 --> 00:28:50,910
+really, you probably
+want to use IndexedDB.
+
+699
+00:28:50,910 --> 00:28:55,040
+It's a NoSQL
+database on a client.
+
+700
+00:28:55,040 --> 00:28:59,740
+The API's a little-- it takes
+a little getting used to.
+
+701
+00:28:59,740 --> 00:29:02,376
+It's a little verbose.
+
+702
+00:29:02,376 --> 00:29:07,030
+I actually wrote
+a wrapper to help
+
+703
+00:29:07,030 --> 00:29:08,680
+with doing things with Angular.
+
+704
+00:29:08,680 --> 00:29:12,730
+So it's an AngularJS
+IndexedDB wrapper
+
+705
+00:29:12,730 --> 00:29:14,095
+so you can just inject it.
+
+706
+00:29:14,095 --> 00:29:17,680
+And then you just do
+much simpler calls.
+
+707
+00:29:17,680 --> 00:29:22,380
+But here's an example
+of IndexedDB Put.
+
+708
+00:29:22,380 --> 00:29:24,872
+So you have a datastore.
+
+709
+00:29:24,872 --> 00:29:25,705
+You have a database.
+
+710
+00:29:25,705 --> 00:29:28,410
+
+711
+00:29:28,410 --> 00:29:30,455
+The storeName is
+kind of like a table.
+
+712
+00:29:30,455 --> 00:29:35,110
+So it's like-- I mean,
+it's a datastore for NoSQL.
+
+713
+00:29:35,110 --> 00:29:38,520
+And we're just going to put
+some data, which is an object,
+
+714
+00:29:38,520 --> 00:29:44,180
+so it's going to be key
+value pairs in that object.
+
+715
+00:29:44,180 --> 00:29:48,290
+And so you have a reference
+to the database already.
+
+716
+00:29:48,290 --> 00:29:50,290
+You have to have
+opened the database.
+
+717
+00:29:50,290 --> 00:29:53,490
+And there's a whole
+process for that.
+
+718
+00:29:53,490 --> 00:29:55,770
+And then you get a transaction.
+
+719
+00:29:55,770 --> 00:29:58,530
+With the storeName, it has
+to be in read-write mode
+
+720
+00:29:58,530 --> 00:30:02,000
+if you're going to
+be persisting things.
+
+721
+00:30:02,000 --> 00:30:06,420
+I'm going to say objectStore,
+dot put, and then your object.
+
+722
+00:30:06,420 --> 00:30:08,680
+And then, hopefully,
+you'll go through this on,
+
+723
+00:30:08,680 --> 00:30:12,894
+success callback
+that has your event.
+
+724
+00:30:12,894 --> 00:30:14,310
+And now what I'm
+doing here is I'm
+
+725
+00:30:14,310 --> 00:30:17,970
+emitting an event through
+Angular, through the Angular
+
+726
+00:30:17,970 --> 00:30:22,680
+scope, that this data was put,
+and then on what database,
+
+727
+00:30:22,680 --> 00:30:24,640
+and what storeName.
+
+728
+00:30:24,640 --> 00:30:27,572
+And then I have a similar
+event in the error case.
+
+729
+00:30:27,572 --> 00:30:29,030
+DARREL SUMI: And
+this whole wrapper
+
+730
+00:30:29,030 --> 00:30:30,700
+is put as a Angular
+service, right?
+
+731
+00:30:30,700 --> 00:30:31,580
+JOHN FEIG: Mm-hm.
+
+732
+00:30:31,580 --> 00:30:31,810
+Yep.
+
+733
+00:30:31,810 --> 00:30:32,643
+So it's a singleton.
+
+734
+00:30:32,643 --> 00:30:36,242
+You can call it when
+you set up your app.
+
+735
+00:30:36,242 --> 00:30:37,950
+I tried to make it as
+simple as possible.
+
+736
+00:30:37,950 --> 00:30:43,000
+And we actually used the
+same library in KeeChat.
+
+737
+00:30:43,000 --> 00:30:45,733
+It cut way down on
+the amount of code
+
+738
+00:30:45,733 --> 00:30:48,990
+that I had to write
+over trying to do things
+
+739
+00:30:48,990 --> 00:30:49,854
+with local storage.
+
+740
+00:30:49,854 --> 00:30:52,270
+BRAD GREEN: And you'll be able
+to share that link with us?
+
+741
+00:30:52,270 --> 00:30:52,670
+DARREL SUMI: Yes.
+
+742
+00:30:52,670 --> 00:30:53,210
+JOHN FEIG: Yep, yep.
+
+743
+00:30:53,210 --> 00:30:53,920
+It's at the end.
+
+744
+00:30:53,920 --> 00:30:55,147
+BRAD GREEN: Great.
+
+745
+00:30:55,147 --> 00:30:56,980
+JOHN FEIG: So I actually
+also have a wrapper
+
+746
+00:30:56,980 --> 00:31:02,550
+for the local storage to choose
+between Chrome versus the HTML5
+
+747
+00:31:02,550 --> 00:31:03,050
+thing.
+
+748
+00:31:03,050 --> 00:31:05,770
+It tests to see if
+chrome.storage exists.
+
+749
+00:31:05,770 --> 00:31:07,255
+And if it does, it uses that.
+
+750
+00:31:07,255 --> 00:31:08,630
+And you can also
+set it up to use
+
+751
+00:31:08,630 --> 00:31:12,490
+the sync, chrome.storage.sync
+versus local,
+
+752
+00:31:12,490 --> 00:31:15,800
+which will sync any
+of those strings
+
+753
+00:31:15,800 --> 00:31:17,470
+across multiple
+instances of Chrome.
+
+754
+00:31:17,470 --> 00:31:20,050
+So if you're logged into
+Chrome on your laptop at home
+
+755
+00:31:20,050 --> 00:31:21,800
+and your laptop at
+work, you can actually
+
+756
+00:31:21,800 --> 00:31:26,440
+have that stuff synced
+up, which is nice.
+
+757
+00:31:26,440 --> 00:31:30,270
+So back to the slide.
+
+758
+00:31:30,270 --> 00:31:31,960
+Angular has-- it's
+just an aside,
+
+759
+00:31:31,960 --> 00:31:34,930
+but Angular has these
+really nice event emitters.
+
+760
+00:31:34,930 --> 00:31:37,380
+In KeeChat, we used a
+third-party event emitter
+
+761
+00:31:37,380 --> 00:31:40,300
+library because we had--
+like I mentioned at the top,
+
+762
+00:31:40,300 --> 00:31:41,880
+there's some
+third-party libraries
+
+763
+00:31:41,880 --> 00:31:43,880
+that make assumptions
+about what's available.
+
+764
+00:31:43,880 --> 00:31:46,240
+One of those assumptions
+was that event emitters
+
+765
+00:31:46,240 --> 00:31:48,470
+would be available.
+
+766
+00:31:48,470 --> 00:31:51,710
+In my podcast demo,
+I didn't need that.
+
+767
+00:31:51,710 --> 00:31:53,610
+I didn't really use
+much third-party stuff.
+
+768
+00:31:53,610 --> 00:31:57,360
+So I could use the
+Angular event emitters,
+
+769
+00:31:57,360 --> 00:32:02,540
+which are really nice because
+this is done on the scope,
+
+770
+00:32:02,540 --> 00:32:03,401
+on Angular's scope.
+
+771
+00:32:03,401 --> 00:32:04,900
+So Angular knows
+about these things.
+
+772
+00:32:04,900 --> 00:32:08,270
+You don't have to
+run scope.apply
+
+773
+00:32:08,270 --> 00:32:10,960
+to get the digest cycle going.
+
+774
+00:32:10,960 --> 00:32:17,280
+So when you send a controller
+an event, it's going to show up.
+
+775
+00:32:17,280 --> 00:32:19,290
+So it's a really simple API.
+
+776
+00:32:19,290 --> 00:32:24,850
+You listen for-- you register
+for events with scope.on.
+
+777
+00:32:24,850 --> 00:32:30,460
+You say, like, i_am_event
+is the string that's
+
+778
+00:32:30,460 --> 00:32:31,820
+going to identify this.
+
+779
+00:32:31,820 --> 00:32:34,640
+And then the second
+parameter is a function
+
+780
+00:32:34,640 --> 00:32:37,710
+with two parameters,
+event and data.
+
+781
+00:32:37,710 --> 00:32:40,280
+The event I never use at all.
+
+782
+00:32:40,280 --> 00:32:42,730
+But data is important.
+
+783
+00:32:42,730 --> 00:32:46,650
+And so then you can emit
+it with rootScope.emit.
+
+784
+00:32:46,650 --> 00:32:48,430
+And it's rootScope
+because you're usually
+
+785
+00:32:48,430 --> 00:32:50,080
+going to be doing
+this from a service.
+
+786
+00:32:50,080 --> 00:32:52,200
+Services can't get
+scope injected.
+
+787
+00:32:52,200 --> 00:32:54,700
+And they probably wouldn't
+be on the same scope anyway.
+
+788
+00:32:54,700 --> 00:32:58,197
+So rootScope is what you use.
+
+789
+00:32:58,197 --> 00:33:00,280
+DARREL SUMI: The syntax--
+the whole notion of this
+
+790
+00:33:00,280 --> 00:33:03,450
+is fairly common, standard
+event emitter type of paradigm
+
+791
+00:33:03,450 --> 00:33:07,960
+that people are probably
+used to for any other system.
+
+792
+00:33:07,960 --> 00:33:10,940
+It's just that these events
+get passed through the scope,
+
+793
+00:33:10,940 --> 00:33:14,552
+so you do have to understand how
+it goes up and down the scope.
+
+794
+00:33:14,552 --> 00:33:15,260
+JOHN FEIG: Right.
+
+795
+00:33:15,260 --> 00:33:15,777
+Yeah.
+
+796
+00:33:15,777 --> 00:33:17,110
+There are a couple options here.
+
+797
+00:33:17,110 --> 00:33:21,690
+So it's depending on where
+you're firing events from
+
+798
+00:33:21,690 --> 00:33:24,740
+and where you want to get
+them to, you might need emit
+
+799
+00:33:24,740 --> 00:33:26,956
+or you might need broadcast.
+
+800
+00:33:26,956 --> 00:33:28,510
+And they take the
+same parameters.
+
+801
+00:33:28,510 --> 00:33:33,000
+But broadcast basically sends
+things down to children.
+
+802
+00:33:33,000 --> 00:33:35,670
+Emit goes up the stack.
+
+803
+00:33:35,670 --> 00:33:39,520
+So you have to know
+which one you need.
+
+804
+00:33:39,520 --> 00:33:42,010
+But yeah, event emitters
+are really useful.
+
+805
+00:33:42,010 --> 00:33:44,760
+And they really
+help clean up code.
+
+806
+00:33:44,760 --> 00:33:47,220
+And you don't have to have
+as many things explicitly
+
+807
+00:33:47,220 --> 00:33:49,305
+calling one another.
+
+808
+00:33:49,305 --> 00:33:50,680
+DARREL SUMI: It
+just really helps
+
+809
+00:33:50,680 --> 00:33:54,210
+keep your code structured
+in a really nice, clean way
+
+810
+00:33:54,210 --> 00:33:55,290
+and modularized that way.
+
+811
+00:33:55,290 --> 00:33:56,206
+JOHN FEIG: Right Yeah.
+
+812
+00:33:56,206 --> 00:33:59,860
+It really cuts down on
+interdependency stuff.
+
+813
+00:33:59,860 --> 00:34:06,170
+And then I have just one other
+quick example of IndexedDB Get.
+
+814
+00:34:06,170 --> 00:34:09,210
+So very similar to
+Put, this is just
+
+815
+00:34:09,210 --> 00:34:12,710
+getting some item
+out of the database.
+
+816
+00:34:12,710 --> 00:34:15,960
+This time, we're
+going to just use
+
+817
+00:34:15,960 --> 00:34:20,340
+a key, which can be a string,
+whatever the type for your key
+
+818
+00:34:20,340 --> 00:34:22,699
+is.
+
+819
+00:34:22,699 --> 00:34:26,375
+And so we have a similar thing
+where we get the transaction
+
+820
+00:34:26,375 --> 00:34:28,000
+out of the database
+with the storeName.
+
+821
+00:34:28,000 --> 00:34:29,389
+You don't need to be
+in read-write mode.
+
+822
+00:34:29,389 --> 00:34:30,847
+You don't need to
+pass the mode in.
+
+823
+00:34:30,847 --> 00:34:33,013
+The default is just read.
+
+824
+00:34:33,013 --> 00:34:34,429
+And then the
+onsuccess case again,
+
+825
+00:34:34,429 --> 00:34:40,579
+we're emitting something with
+Angular's rootScope emitter.
+
+826
+00:34:40,579 --> 00:34:41,870
+We say, we've gotten this item.
+
+827
+00:34:41,870 --> 00:34:45,310
+And then we're going to
+pass an array of results.
+
+828
+00:34:45,310 --> 00:34:47,360
+So this is nice.
+
+829
+00:34:47,360 --> 00:34:50,280
+With IndexedDB, I like
+to always pass back
+
+830
+00:34:50,280 --> 00:34:53,550
+the database name, the
+storeName, and then the data so
+
+831
+00:34:53,550 --> 00:34:56,583
+that in my controller-- whatever
+is getting this data, if it's
+
+832
+00:34:56,583 --> 00:34:58,930
+a service controller or
+whatever, I can first
+
+833
+00:34:58,930 --> 00:35:03,460
+check to see-- OK, getitem
+is pretty generic, right?
+
+834
+00:35:03,460 --> 00:35:07,740
+And since this is a service
+library that I wrote,
+
+835
+00:35:07,740 --> 00:35:11,610
+I'm not going to have
+dozens of different names
+
+836
+00:35:11,610 --> 00:35:14,330
+for these things.
+
+837
+00:35:14,330 --> 00:35:18,010
+If I have common
+names, and I pass back
+
+838
+00:35:18,010 --> 00:35:21,630
+identifiers in the
+data, it just helps
+
+839
+00:35:21,630 --> 00:35:24,870
+so that I can register the
+listener with that common name
+
+840
+00:35:24,870 --> 00:35:31,130
+and then just inspect things
+that come back on those event
+
+841
+00:35:31,130 --> 00:35:33,085
+listeners when I get them.
+
+842
+00:35:33,085 --> 00:35:35,800
+
+843
+00:35:35,800 --> 00:35:39,710
+So after you do your local
+storage, convert things
+
+844
+00:35:39,710 --> 00:35:43,160
+to IndexedDB, it's
+still not going to work.
+
+845
+00:35:43,160 --> 00:35:45,920
+You probably have
+some dynamic content
+
+846
+00:35:45,920 --> 00:35:47,740
+that you need to handle.
+
+847
+00:35:47,740 --> 00:35:50,830
+DARREL SUMI: And this goes
+back to the notion of the CSP
+
+848
+00:35:50,830 --> 00:35:53,050
+that you can't bring
+in external content
+
+849
+00:35:53,050 --> 00:35:55,982
+and just think it's going
+to run all fine and dandy.
+
+850
+00:35:55,982 --> 00:35:56,690
+JOHN FEIG: Right.
+
+851
+00:35:56,690 --> 00:35:58,648
+So actually, this would
+probably be a good time
+
+852
+00:35:58,648 --> 00:36:02,510
+to explain one thing here.
+
+853
+00:36:02,510 --> 00:36:06,547
+So this is my little
+podcast app that I did.
+
+854
+00:36:06,547 --> 00:36:08,380
+And this is actually
+the Chrome App version.
+
+855
+00:36:08,380 --> 00:36:12,500
+So you can see, I
+launched it there.
+
+856
+00:36:12,500 --> 00:36:15,690
+And so this middle
+section here you can see
+
+857
+00:36:15,690 --> 00:36:19,450
+is all pulled in
+with a web request.
+
+858
+00:36:19,450 --> 00:36:23,480
+So this side-- the
+Add Podcast and List
+
+859
+00:36:23,480 --> 00:36:26,150
+a Podcast side-- that's local.
+
+860
+00:36:26,150 --> 00:36:28,290
+And then I have
+this section up top.
+
+861
+00:36:28,290 --> 00:36:31,710
+This-- you've got a
+playlist here on the left.
+
+862
+00:36:31,710 --> 00:36:32,830
+That's local.
+
+863
+00:36:32,830 --> 00:36:36,440
+But then the content
+with text that
+
+864
+00:36:36,440 --> 00:36:42,220
+pulls in information about
+either the show or all
+
+865
+00:36:42,220 --> 00:36:47,310
+these episodes, that's all being
+pulled in with a web request.
+
+866
+00:36:47,310 --> 00:36:50,960
+And you need XHR to do that.
+
+867
+00:36:50,960 --> 00:36:53,780
+And it's a slightly
+different call
+
+868
+00:36:53,780 --> 00:36:56,660
+that I had to make in
+the Chrome environment
+
+869
+00:36:56,660 --> 00:37:01,760
+versus with just the
+Angular web environment.
+
+870
+00:37:01,760 --> 00:37:07,150
+And so here's what you can
+use to get, say, an image.
+
+871
+00:37:07,150 --> 00:37:11,890
+And this is an example of
+getting an image out of imgur.
+
+872
+00:37:11,890 --> 00:37:15,550
+So I am going to set it up
+with just a regular HTTP.
+
+873
+00:37:15,550 --> 00:37:18,810
+This is Angular's
+HTTP thing that
+
+874
+00:37:18,810 --> 00:37:22,484
+can be injected into your app.
+
+875
+00:37:22,484 --> 00:37:25,710
+As I said, the method's
+Get-- here's the URL.
+
+876
+00:37:25,710 --> 00:37:29,080
+And it's going to be a blob
+response so that I can actually
+
+877
+00:37:29,080 --> 00:37:33,350
+set it as the
+source of an image.
+
+878
+00:37:33,350 --> 00:37:36,960
+In a success case, you
+get all this stuff back.
+
+879
+00:37:36,960 --> 00:37:38,680
+Again, I'm going to
+ignore everything
+
+880
+00:37:38,680 --> 00:37:41,830
+except for the data
+that's coming back.
+
+881
+00:37:41,830 --> 00:37:44,790
+I keep scrolling.
+
+882
+00:37:44,790 --> 00:37:45,620
+And there.
+
+883
+00:37:45,620 --> 00:37:48,227
+
+884
+00:37:48,227 --> 00:37:50,310
+So I'm going to ignore
+everything except the data.
+
+885
+00:37:50,310 --> 00:37:56,632
+I have in my HTML this
+image tag with an ID
+
+886
+00:37:56,632 --> 00:37:57,840
+that I specified, onepod_img.
+
+887
+00:37:57,840 --> 00:38:01,080
+
+888
+00:38:01,080 --> 00:38:03,690
+So I'm going to grab
+a reference to it.
+
+889
+00:38:03,690 --> 00:38:06,040
+And then I can set
+the source with
+
+890
+00:38:06,040 --> 00:38:09,780
+this
+window.webkitURL.createObjectURL
+
+891
+00:38:09,780 --> 00:38:10,570
+and then the data.
+
+892
+00:38:10,570 --> 00:38:14,390
+And that's going to allow me
+to just take that data that's
+
+893
+00:38:14,390 --> 00:38:19,600
+the result of this web
+request, which is-- actually,
+
+894
+00:38:19,600 --> 00:38:21,650
+it works the same
+way as the XHR stuff.
+
+895
+00:38:21,650 --> 00:38:23,860
+It's just a slightly
+different API.
+
+896
+00:38:23,860 --> 00:38:27,230
+And then set that
+into the image.
+
+897
+00:38:27,230 --> 00:38:29,870
+And there's an error
+case where it failed.
+
+898
+00:38:29,870 --> 00:38:32,620
+And hopefully, it
+won't fail for you.
+
+899
+00:38:32,620 --> 00:38:34,670
+And you also have to
+make sure that imgur
+
+900
+00:38:34,670 --> 00:38:36,050
+is in your permissions.
+
+901
+00:38:36,050 --> 00:38:39,930
+So this is not something
+that-- it's not my server,
+
+902
+00:38:39,930 --> 00:38:42,180
+so I have to put it in
+the permissions thing.
+
+903
+00:38:42,180 --> 00:38:44,030
+Once I do that, it should be OK.
+
+904
+00:38:44,030 --> 00:38:44,270
+DARREL SUMI: Right.
+
+905
+00:38:44,270 --> 00:38:45,870
+And you'll notice that
+there's other things that
+
+906
+00:38:45,870 --> 00:38:47,640
+might need to go into
+your permissions.
+
+907
+00:38:47,640 --> 00:38:49,800
+So any of the
+Chrome Apps require
+
+908
+00:38:49,800 --> 00:38:52,450
+you to specify either,
+like what he said,
+
+909
+00:38:52,450 --> 00:38:54,790
+which domains you might be
+getting external content
+
+910
+00:38:54,790 --> 00:38:57,910
+from that you put in
+your approved list.
+
+911
+00:38:57,910 --> 00:39:00,652
+But also things like
+your storage here.
+
+912
+00:39:00,652 --> 00:39:02,860
+You have to tell it that
+you're going to use storage.
+
+913
+00:39:02,860 --> 00:39:04,550
+And even for your
+sockets, if you're
+
+914
+00:39:04,550 --> 00:39:07,530
+going to use the
+Chrome Socket API,
+
+915
+00:39:07,530 --> 00:39:09,190
+you need to specify
+that, hey, I'm
+
+916
+00:39:09,190 --> 00:39:11,405
+going to allow TCP connections.
+
+917
+00:39:11,405 --> 00:39:15,340
+
+918
+00:39:15,340 --> 00:39:18,020
+JOHN FEIG: And then we're going
+to keep iterating on this.
+
+919
+00:39:18,020 --> 00:39:23,970
+So one thing that was
+interesting was-- here's
+
+920
+00:39:23,970 --> 00:39:33,580
+my controller to get individual
+episodes of a podcast.
+
+921
+00:39:33,580 --> 00:39:41,980
+And this is the method
+here, makeRequest,
+
+922
+00:39:41,980 --> 00:39:47,380
+that's going to actually get
+the data for each episode--
+
+923
+00:39:47,380 --> 00:39:52,160
+or for each podcast, actually,
+and all the episodes within it.
+
+924
+00:39:52,160 --> 00:39:54,210
+So I do the test up top to see.
+
+925
+00:39:54,210 --> 00:39:57,582
+If it's chrome.storage, then
+I'm in the Chrome environment.
+
+926
+00:39:57,582 --> 00:39:59,290
+There's probably a
+better way to do that.
+
+927
+00:39:59,290 --> 00:40:02,610
+But that's the
+thing that I used.
+
+928
+00:40:02,610 --> 00:40:05,320
+And now we get this request URL,
+which is a really long thing.
+
+929
+00:40:05,320 --> 00:40:07,360
+What's interesting
+here is I'm actually
+
+930
+00:40:07,360 --> 00:40:10,260
+using a Google service.
+
+931
+00:40:10,260 --> 00:40:13,840
+So with the Content
+Security Policy, again,
+
+932
+00:40:13,840 --> 00:40:17,860
+and since this is
+a podcast app, so I
+
+933
+00:40:17,860 --> 00:40:21,120
+needed to go through
+a single place that's
+
+934
+00:40:21,120 --> 00:40:23,263
+going to return
+the proper headers.
+
+935
+00:40:23,263 --> 00:40:26,030
+
+936
+00:40:26,030 --> 00:40:32,690
+So very basically, with
+an RSS feed app like mine,
+
+937
+00:40:32,690 --> 00:40:36,110
+you want to be able to
+subscribe to whoever.
+
+938
+00:40:36,110 --> 00:40:39,310
+And whoever may not
+have a server that's
+
+939
+00:40:39,310 --> 00:40:43,230
+going to return you the
+headers that allow you to make
+
+940
+00:40:43,230 --> 00:40:47,700
+requests, like cross-site
+requests to it.
+
+941
+00:40:47,700 --> 00:40:49,690
+So what Google's
+done is to set up
+
+942
+00:40:49,690 --> 00:40:53,050
+a service that allows you
+to get these RSS feeds
+
+943
+00:40:53,050 --> 00:40:54,160
+from a single location.
+
+944
+00:40:54,160 --> 00:40:55,820
+So I can say,
+ajax.googleapis.com.
+
+945
+00:40:55,820 --> 00:40:58,900
+
+946
+00:40:58,900 --> 00:41:00,340
+I'm giving that one permission.
+
+947
+00:41:00,340 --> 00:41:03,130
+It returns me back
+the proper header
+
+948
+00:41:03,130 --> 00:41:05,710
+so that the requests are valid.
+
+949
+00:41:05,710 --> 00:41:07,800
+And everybody's happy.
+
+950
+00:41:07,800 --> 00:41:11,870
+The one big difference
+between the HTML5 version
+
+951
+00:41:11,870 --> 00:41:15,390
+and the Chrome version
+is in the HTML5 version,
+
+952
+00:41:15,390 --> 00:41:21,390
+I can actually use this .jsonp
+thing, which, basically,
+
+953
+00:41:21,390 --> 00:41:23,830
+this returns as a callback.
+
+954
+00:41:23,830 --> 00:41:25,000
+I don't really need this.
+
+955
+00:41:25,000 --> 00:41:27,455
+
+956
+00:41:27,455 --> 00:41:29,580
+There's probably a way that
+I could get rid of this
+
+957
+00:41:29,580 --> 00:41:31,440
+completely in and do
+them both the same way.
+
+958
+00:41:31,440 --> 00:41:34,730
+But it's a little nicer.
+
+959
+00:41:34,730 --> 00:41:36,320
+This is how I was
+doing things before,
+
+960
+00:41:36,320 --> 00:41:41,990
+where it was-- you see a
+callback equals JSON_CALLBACK
+
+961
+00:41:41,990 --> 00:41:43,530
+and the URL here.
+
+962
+00:41:43,530 --> 00:41:47,350
+And that works with this API.
+
+963
+00:41:47,350 --> 00:41:52,046
+And then for Chrome, if you do
+that, it'll throw red at you
+
+964
+00:41:52,046 --> 00:41:56,860
+and say, you're not
+allowed to specify
+
+965
+00:41:56,860 --> 00:42:00,250
+callbacks and responses.
+
+966
+00:42:00,250 --> 00:42:05,310
+So instead, you just
+do a regular HTTP get.
+
+967
+00:42:05,310 --> 00:42:07,830
+And then in the
+success, you can still
+
+968
+00:42:07,830 --> 00:42:10,580
+parse the data the same way.
+
+969
+00:42:10,580 --> 00:42:14,370
+So that was the only
+difference here, really.
+
+970
+00:42:14,370 --> 00:42:16,250
+And then, obviously,
+the other thing
+
+971
+00:42:16,250 --> 00:42:19,770
+is you've got to be
+able to load images.
+
+972
+00:42:19,770 --> 00:42:22,780
+And as I showed you
+before, it's the same deal.
+
+973
+00:42:22,780 --> 00:42:27,190
+
+974
+00:42:27,190 --> 00:42:28,260
+So yeah.
+
+975
+00:42:28,260 --> 00:42:32,920
+And then you just iterate until
+you don't have any more red.
+
+976
+00:42:32,920 --> 00:42:35,310
+There probably are going to
+be other issues that you'll
+
+977
+00:42:35,310 --> 00:42:37,980
+run into outside of this stuff.
+
+978
+00:42:37,980 --> 00:42:39,750
+DARREL SUMI: So just to recap.
+
+979
+00:42:39,750 --> 00:42:42,095
+You have to really understand
+where the Content Security
+
+980
+00:42:42,095 --> 00:42:42,970
+Policy's coming from.
+
+981
+00:42:42,970 --> 00:42:46,800
+That's going to be the major
+source for most of the errors.
+
+982
+00:42:46,800 --> 00:42:49,710
+But you have to look into each
+of the third-party libraries
+
+983
+00:42:49,710 --> 00:42:50,700
+that you use.
+
+984
+00:42:50,700 --> 00:42:53,260
+A lot of them will make
+assumptions of what environment
+
+985
+00:42:53,260 --> 00:42:56,970
+they're working in,
+whether that be how they
+
+986
+00:42:56,970 --> 00:43:02,100
+access sockets, how they access
+local storage, what they're
+
+987
+00:43:02,100 --> 00:43:03,990
+used to being brought in.
+
+988
+00:43:03,990 --> 00:43:09,841
+So if they use a AMD or Require
+style of being packaged up,
+
+989
+00:43:09,841 --> 00:43:11,340
+you got to understand
+how that's all
+
+990
+00:43:11,340 --> 00:43:13,840
+wrapped around those libraries.
+
+991
+00:43:13,840 --> 00:43:15,810
+JOHN FEIG: Yeah.
+
+992
+00:43:15,810 --> 00:43:23,195
+So I can show-- so
+here's the app in Chrome.
+
+993
+00:43:23,195 --> 00:43:24,480
+Oh, I closed it out.
+
+994
+00:43:24,480 --> 00:43:25,351
+Never mind.
+
+995
+00:43:25,351 --> 00:43:25,850
+Yeah.
+
+996
+00:43:25,850 --> 00:43:28,332
+So here's the app in Chrome.
+
+997
+00:43:28,332 --> 00:43:29,040
+This stuff works.
+
+998
+00:43:29,040 --> 00:43:34,880
+It remembers where
+you left off because I
+
+999
+00:43:34,880 --> 00:43:39,950
+saved that information
+in local storage.
+
+1000
+00:43:39,950 --> 00:43:43,220
+So I have this method,
+refreshInterval.
+
+1001
+00:43:43,220 --> 00:43:47,350
+So every-- I think it's
+three seconds, until it's
+
+1002
+00:43:47,350 --> 00:43:56,610
+done playing, I send a message
+to say, update the progress
+
+1003
+00:43:56,610 --> 00:43:57,770
+with the current time.
+
+1004
+00:43:57,770 --> 00:43:59,520
+DARREL SUMI: And this gets
+saved into the local storage.
+
+1005
+00:43:59,520 --> 00:44:01,720
+JOHN FEIG: It gets saved
+into the local storage,
+
+1006
+00:44:01,720 --> 00:44:04,940
+whereas this data is
+saved in IndexedDB.
+
+1007
+00:44:04,940 --> 00:44:08,110
+I originally wrote it
+with local storage.
+
+1008
+00:44:08,110 --> 00:44:11,240
+And I switched it over to
+IndexedDB and cut down like-- I
+
+1009
+00:44:11,240 --> 00:44:13,570
+just deleted a third of my code.
+
+1010
+00:44:13,570 --> 00:44:14,730
+It was really nice.
+
+1011
+00:44:14,730 --> 00:44:15,660
+DARREL SUMI: And
+just to reiterate,
+
+1012
+00:44:15,660 --> 00:44:17,284
+the whole point of
+that is to make sure
+
+1013
+00:44:17,284 --> 00:44:21,710
+that the transition from offline
+mode to online is smooth.
+
+1014
+00:44:21,710 --> 00:44:23,810
+So if you do lose
+connection, it does
+
+1015
+00:44:23,810 --> 00:44:25,721
+remember where you left off.
+
+1016
+00:44:25,721 --> 00:44:28,095
+And that's really important
+for the whole user experience
+
+1017
+00:44:28,095 --> 00:44:29,310
+point of view.
+
+1018
+00:44:29,310 --> 00:44:30,485
+JOHN FEIG: Yeah.
+
+1019
+00:44:30,485 --> 00:44:32,110
+And there's definitely
+some other stuff
+
+1020
+00:44:32,110 --> 00:44:34,900
+that I'd like to
+get to in this app,
+
+1021
+00:44:34,900 --> 00:44:38,400
+like basically downloading
+the audio ahead of time.
+
+1022
+00:44:38,400 --> 00:44:40,920
+So that if you have no
+internet connection,
+
+1023
+00:44:40,920 --> 00:44:43,260
+you can still play your stuff.
+
+1024
+00:44:43,260 --> 00:44:46,080
+That I did not get to.
+
+1025
+00:44:46,080 --> 00:44:50,590
+But it's still a
+pretty functional tool.
+
+1026
+00:44:50,590 --> 00:44:53,920
+It's nicer than some
+of the other web tools
+
+1027
+00:44:53,920 --> 00:44:58,230
+that I've used, which
+is why I built it.
+
+1028
+00:44:58,230 --> 00:45:02,347
+And then we've got--
+just throw up some links.
+
+1029
+00:45:02,347 --> 00:45:04,430
+We'll make the presentation
+available to everybody
+
+1030
+00:45:04,430 --> 00:45:07,790
+so that they can look at
+the stuff on their own.
+
+1031
+00:45:07,790 --> 00:45:13,380
+We have our app that we're
+modeling this talk on.
+
+1032
+00:45:13,380 --> 00:45:15,760
+This was actually--
+I think, basically,
+
+1033
+00:45:15,760 --> 00:45:21,700
+all we really needed to do to
+get KeeChat up and running.
+
+1034
+00:45:21,700 --> 00:45:24,340
+The content security stuff was
+more of a minor issue for us.
+
+1035
+00:45:24,340 --> 00:45:27,890
+And then we didn't really
+have anything outside
+
+1036
+00:45:27,890 --> 00:45:30,650
+of this that turned out
+to be much a problem.
+
+1037
+00:45:30,650 --> 00:45:32,990
+It was a pretty
+straightforward conversion.
+
+1038
+00:45:32,990 --> 00:45:36,209
+It took me very little time to
+get up and running-- really,
+
+1039
+00:45:36,209 --> 00:45:37,000
+just a couple days.
+
+1040
+00:45:37,000 --> 00:45:40,710
+And this is a pretty
+decent-size project.
+
+1041
+00:45:40,710 --> 00:45:44,244
+So I was very surprised
+at how quickly
+
+1042
+00:45:44,244 --> 00:45:45,660
+we were able to
+do the conversion.
+
+1043
+00:45:45,660 --> 00:45:46,910
+DARREL SUMI: Yeah, definitely.
+
+1044
+00:45:46,910 --> 00:45:49,280
+If you come from the Angular
+setup, it's really easy.
+
+1045
+00:45:49,280 --> 00:45:52,330
+
+1046
+00:45:52,330 --> 00:45:55,510
+JOHN FEIG: And now, we've got
+Darrel's socket demo linked,
+
+1047
+00:45:55,510 --> 00:45:57,980
+which has both the server
+side and the client side
+
+1048
+00:45:57,980 --> 00:45:59,010
+in the same project.
+
+1049
+00:45:59,010 --> 00:45:59,718
+DARREL SUMI: Yes.
+
+1050
+00:45:59,718 --> 00:46:01,030
+Yep, yep.
+
+1051
+00:46:01,030 --> 00:46:03,690
+JOHN FEIG: And then
+I have two versions
+
+1052
+00:46:03,690 --> 00:46:05,490
+of the source for my app.
+
+1053
+00:46:05,490 --> 00:46:07,140
+So I created a
+couple branches so
+
+1054
+00:46:07,140 --> 00:46:10,610
+that you can look at before
+I started the Chrome App
+
+1055
+00:46:10,610 --> 00:46:13,500
+conversion and after
+it was finished.
+
+1056
+00:46:13,500 --> 00:46:17,390
+And these specific branches
+will not have any more commits,
+
+1057
+00:46:17,390 --> 00:46:22,380
+so they'll be exactly what
+I presented to you today.
+
+1058
+00:46:22,380 --> 00:46:24,680
+And then I wrote a
+couple little libraries
+
+1059
+00:46:24,680 --> 00:46:27,510
+that work nice with Angular
+and some of these APIs,
+
+1060
+00:46:27,510 --> 00:46:32,440
+like the IndexedDB and
+localStorage wrapper.
+
+1061
+00:46:32,440 --> 00:46:38,952
+And I have to get documentation
+up for those, but they work.
+
+1062
+00:46:38,952 --> 00:46:40,370
+BRAD GREEN: Good, good.
+
+1063
+00:46:40,370 --> 00:46:41,580
+Guys, thanks so much.
+
+1064
+00:46:41,580 --> 00:46:44,450
+This was a really nice
+introduction for Chrome Apps
+
+1065
+00:46:44,450 --> 00:46:47,750
+and the differences between
+an HTML5 app and a Chrome App.
+
+1066
+00:46:47,750 --> 00:46:50,460
+I think it'll get people
+started really quickly.
+
+1067
+00:46:50,460 --> 00:46:52,740
+And for everyone else,
+thanks for joining us today.
+
+1068
+00:46:52,740 --> 00:46:54,226
+We will see you on the web.
+
+1069
+00:46:54,226 --> 00:46:56,350
+We'll share all of these
+links to the presentation.
+
+1070
+00:46:56,350 --> 00:46:58,920
+We love to take questions
+on Google+ and Twitter.
+
+1071
+00:46:58,920 --> 00:47:01,217
+And we'll see you
+at the next GDL.
+
+1072
+00:47:01,217 --> 00:47:02,550
+JOHN FEIG: Thanks for having us.
+
+1073
+00:47:02,550 --> 00:47:04,216
+DARREL SUMI: Yeah,
+thanks for having us.
+
+1074
+00:47:04,216 --> 00:47:05,350
+BRAD GREEN: Thanks, guys.
+
+1075
+00:47:05,350 --> 00:47:08,305
+

@@ -1,0 +1,2532 @@
+1
+00:00:00,000 --> 00:00:07,580
+
+2
+00:00:07,580 --> 00:00:10,250
+ADAM GROSSMAN: Word of warning,
+I'm getting over a cold.
+
+3
+00:00:10,250 --> 00:00:14,410
+So I'm really hoping that my
+voice lasts the entire thing.
+
+4
+00:00:14,410 --> 00:00:15,720
+So I'll try to keep this short.
+
+5
+00:00:15,720 --> 00:00:19,880
+And also, full
+disclosure, right now,
+
+6
+00:00:19,880 --> 00:00:22,370
+I'm a little bit
+high on the "tussin."
+
+7
+00:00:22,370 --> 00:00:25,890
+And it turns out, I
+just learned this right
+
+8
+00:00:25,890 --> 00:00:27,990
+before coming here,
+that you're not
+
+9
+00:00:27,990 --> 00:00:31,190
+supposed to mix cold
+medicine with whiskey.
+
+10
+00:00:31,190 --> 00:00:37,440
+I didn't know that, but
+that train has sailed,
+
+11
+00:00:37,440 --> 00:00:44,290
+so we're going to
+make the best of it.
+
+12
+00:00:44,290 --> 00:00:45,530
+I'm Adam Grossman.
+
+13
+00:00:45,530 --> 00:00:50,110
+I work for a tiny, little, two
+person company called Dark Sky.
+
+14
+00:00:50,110 --> 00:00:53,350
+
+15
+00:00:53,350 --> 00:00:55,780
+We make weather
+prediction software.
+
+16
+00:00:55,780 --> 00:00:58,200
+We have an iOS app
+called Dart Sky.
+
+17
+00:00:58,200 --> 00:01:00,690
+We have a weather API
+for other developers.
+
+18
+00:01:00,690 --> 00:01:04,400
+And we make, more
+recently, a weather website
+
+19
+00:01:04,400 --> 00:01:07,845
+called forecast.io.
+
+20
+00:01:07,845 --> 00:01:09,220
+If you want to
+give us heartburn,
+
+21
+00:01:09,220 --> 00:01:11,150
+you can call it forecastio.
+
+22
+00:01:11,150 --> 00:01:13,060
+And it looks like
+this on the desktop.
+
+23
+00:01:13,060 --> 00:01:18,010
+And on mobile, it
+looks more like this.
+
+24
+00:01:18,010 --> 00:01:21,190
+That's the iPhone
+version, and we really
+
+25
+00:01:21,190 --> 00:01:25,800
+tried hard to make
+the mobile experience
+
+26
+00:01:25,800 --> 00:01:28,500
+feel like a native app.
+
+27
+00:01:28,500 --> 00:01:30,200
+So you save it to
+your home screen.
+
+28
+00:01:30,200 --> 00:01:32,030
+In fact, we require
+it, and that's
+
+29
+00:01:32,030 --> 00:01:34,660
+a very controversial decision.
+
+30
+00:01:34,660 --> 00:01:35,910
+It lives in your home screen.
+
+31
+00:01:35,910 --> 00:01:37,070
+It's got a little icon.
+
+32
+00:01:37,070 --> 00:01:38,840
+It fits in with
+all the other apps.
+
+33
+00:01:38,840 --> 00:01:41,834
+
+34
+00:01:41,834 --> 00:01:43,500
+And you launch it,
+and you get something
+
+35
+00:01:43,500 --> 00:01:44,708
+that looks like a native app.
+
+36
+00:01:44,708 --> 00:01:46,489
+And when you slide
+between views,
+
+37
+00:01:46,489 --> 00:01:48,280
+it's nice, smooth
+animation, and we've even
+
+38
+00:01:48,280 --> 00:01:51,020
+got a nice, smoothly
+animating radar map.
+
+39
+00:01:51,020 --> 00:01:57,052
+And the reason we did this,
+and I don't recommend it
+
+40
+00:01:57,052 --> 00:01:58,510
+for all apps, but
+the reason we did
+
+41
+00:01:58,510 --> 00:02:02,679
+this is because if you want
+a weather app on your phone,
+
+42
+00:02:02,679 --> 00:02:04,345
+and you've got your
+phone and you're out
+
+43
+00:02:04,345 --> 00:02:05,930
+and you want to
+access the weather,
+
+44
+00:02:05,930 --> 00:02:09,220
+the last thing you want to
+do is open your web browser,
+
+45
+00:02:09,220 --> 00:02:11,640
+navigate to some weather
+website, enter your location,
+
+46
+00:02:11,640 --> 00:02:12,940
+and wait for it to load.
+
+47
+00:02:12,940 --> 00:02:15,990
+We just want to launch an
+app and get the weather.
+
+48
+00:02:15,990 --> 00:02:18,490
+So if we had gone the
+more traditional route,
+
+49
+00:02:18,490 --> 00:02:21,480
+I think a lot of people
+just wouldn't use it,
+
+50
+00:02:21,480 --> 00:02:24,510
+so that's the reason
+why we did it.
+
+51
+00:02:24,510 --> 00:02:28,120
+Now, a lot of ink
+has been spilled
+
+52
+00:02:28,120 --> 00:02:32,990
+on the topic of mobile
+web UI performance
+
+53
+00:02:32,990 --> 00:02:38,320
+and the bigger picture question
+of what's the future of mobile?
+
+54
+00:02:38,320 --> 00:02:42,580
+Is it native apps, or
+is it the mobile web?
+
+55
+00:02:42,580 --> 00:02:44,620
+And more recently,
+the question has
+
+56
+00:02:44,620 --> 00:02:49,520
+been, why are mobile web apps so
+crummy compared to native apps?
+
+57
+00:02:49,520 --> 00:02:51,070
+And they are.
+
+58
+00:02:51,070 --> 00:02:53,230
+If you take the
+average mobile web
+
+59
+00:02:53,230 --> 00:02:55,910
+and you compare it to
+the average native app,
+
+60
+00:02:55,910 --> 00:02:57,400
+it doesn't perform as well.
+
+61
+00:02:57,400 --> 00:03:00,230
+And of course, there
+are always exceptions.
+
+62
+00:03:00,230 --> 00:03:04,960
+And if you do some Googling,
+the general consensus,
+
+63
+00:03:04,960 --> 00:03:06,460
+if there is such a
+thing on the web,
+
+64
+00:03:06,460 --> 00:03:10,850
+is that web apps are slow,
+because JavaScript is slow.
+
+65
+00:03:10,850 --> 00:03:13,260
+There was a great article,
+great blog post put out
+
+66
+00:03:13,260 --> 00:03:16,220
+by a guy named Drew
+Crawford called,
+
+67
+00:03:16,220 --> 00:03:18,620
+"Why Mobile Web Apps are Slow."
+
+68
+00:03:18,620 --> 00:03:20,390
+And he did a comparison.
+
+69
+00:03:20,390 --> 00:03:25,050
+He showed benchmarks of
+JavaScript versus native code.
+
+70
+00:03:25,050 --> 00:03:28,020
+And he found, of course,
+that especially on mobile,
+
+71
+00:03:28,020 --> 00:03:30,450
+JavaScript is way
+slower than native code.
+
+72
+00:03:30,450 --> 00:03:33,282
+And his conclusion
+is that web apps
+
+73
+00:03:33,282 --> 00:03:35,240
+can't compete with native
+apps, because they're
+
+74
+00:03:35,240 --> 00:03:36,690
+written in JavaScript.
+
+75
+00:03:36,690 --> 00:03:40,860
+And JavaScript has to
+compete with, on iOS,
+
+76
+00:03:40,860 --> 00:03:43,130
+Objective C, which
+is nice and fast.
+
+77
+00:03:43,130 --> 00:03:46,490
+On Android, it's generally Java.
+
+78
+00:03:46,490 --> 00:03:48,670
+Even BlackBerry,
+presumably, Fortran.
+
+79
+00:03:48,670 --> 00:03:52,380
+[LAUGHTER]
+
+80
+00:03:52,380 --> 00:03:55,680
+ADAM GROSSMAN: And
+all of these are fast,
+
+81
+00:03:55,680 --> 00:03:57,760
+and JavaScript is
+comparatively much slower.
+
+82
+00:03:57,760 --> 00:04:00,910
+And that's why mobile
+web apps are slow.
+
+83
+00:04:00,910 --> 00:04:02,360
+This is not true.
+
+84
+00:04:02,360 --> 00:04:06,230
+Web apps are not slow and crummy
+because JavaScript is slow.
+
+85
+00:04:06,230 --> 00:04:10,370
+And the reason is really
+simple-- graphical rendering
+
+86
+00:04:10,370 --> 00:04:14,080
+on the web does not
+happen in JavaScript,
+
+87
+00:04:14,080 --> 00:04:18,190
+unless you're doing pixel by
+pixel graphics on a canvas
+
+88
+00:04:18,190 --> 00:04:21,600
+element, nothing is being
+drawn by JavaScript,
+
+89
+00:04:21,600 --> 00:04:25,746
+it's all being drawn by the
+engine underneath it, which
+
+90
+00:04:25,746 --> 00:04:26,870
+has been heavily optimized.
+
+91
+00:04:26,870 --> 00:04:30,820
+And in fact, on iOS,
+graphical rendering
+
+92
+00:04:30,820 --> 00:04:33,830
+is not done in
+Objective C. It, most
+
+93
+00:04:33,830 --> 00:04:35,420
+of it, at least
+the heavy lifting,
+
+94
+00:04:35,420 --> 00:04:37,300
+is offloaded onto the GPU.
+
+95
+00:04:37,300 --> 00:04:39,500
+And in fact, you can
+prove this to yourself
+
+96
+00:04:39,500 --> 00:04:40,900
+with a little
+thought experiment.
+
+97
+00:04:40,900 --> 00:04:44,090
+Imagine ripping out your GPU,
+the little chip on your iPhone,
+
+98
+00:04:44,090 --> 00:04:46,280
+and being forced to do
+everything in Objective C,
+
+99
+00:04:46,280 --> 00:04:49,527
+you would get a really
+crummy experience.
+
+100
+00:04:49,527 --> 00:04:51,610
+So really, when it comes
+to graphical performance,
+
+101
+00:04:51,610 --> 00:04:53,120
+it's not about JavaScript.
+
+102
+00:04:53,120 --> 00:04:57,640
+It's not about Objective
+C. So it brings us
+
+103
+00:04:57,640 --> 00:05:00,920
+back to the original question,
+why are mobile web apps so
+
+104
+00:05:00,920 --> 00:05:04,490
+crummy compared to native apps?
+
+105
+00:05:04,490 --> 00:05:08,360
+And to answer this
+question, I think
+
+106
+00:05:08,360 --> 00:05:13,540
+I have to stop and give
+you the two rules for how
+
+107
+00:05:13,540 --> 00:05:15,990
+to create performant
+mobile web apps.
+
+108
+00:05:15,990 --> 00:05:17,680
+There's only two rules
+you need to know.
+
+109
+00:05:17,680 --> 00:05:21,350
+And you only need to know these
+two rules and nothing else.
+
+110
+00:05:21,350 --> 00:05:23,080
+So you might want to grab a pen.
+
+111
+00:05:23,080 --> 00:05:25,480
+The two rules for
+performant mobile web
+
+112
+00:05:25,480 --> 00:05:31,810
+UI-- number one is to do
+stuff that is performant.
+
+113
+00:05:31,810 --> 00:05:35,750
+Number two, second
+rule, is avoid stuff
+
+114
+00:05:35,750 --> 00:05:38,790
+that performs poorly.
+
+115
+00:05:38,790 --> 00:05:41,965
+Now, before I continue, a
+brief anecdotal interlude.
+
+116
+00:05:41,965 --> 00:05:45,180
+
+117
+00:05:45,180 --> 00:05:47,897
+Growing up, I played baseball.
+
+118
+00:05:47,897 --> 00:05:49,230
+I was on the little league team.
+
+119
+00:05:49,230 --> 00:05:52,310
+And I had a little league
+coach-- that's not him.
+
+120
+00:05:52,310 --> 00:05:56,501
+He was much fatter, and
+that's the wrong sport.
+
+121
+00:05:56,501 --> 00:06:00,181
+[LAUGHTER]
+
+122
+00:06:00,181 --> 00:06:02,555
+ADAM GROSSMAN: And one day,
+he gathered all of us around,
+
+123
+00:06:02,555 --> 00:06:05,020
+and he said, kids,
+I'm going to tell you
+
+124
+00:06:05,020 --> 00:06:08,160
+the key to winning
+any baseball game.
+
+125
+00:06:08,160 --> 00:06:11,120
+And of course, our ears
+perked up, and we leaned up.
+
+126
+00:06:11,120 --> 00:06:14,342
+And he said, the key to
+winning any baseball game
+
+127
+00:06:14,342 --> 00:06:16,050
+is to score more runs
+than your opponent.
+
+128
+00:06:16,050 --> 00:06:18,710
+
+129
+00:06:18,710 --> 00:06:22,229
+Thanks coach, you're
+a really bad coach.
+
+130
+00:06:22,229 --> 00:06:23,770
+And it turns out,
+he was a bad coach.
+
+131
+00:06:23,770 --> 00:06:26,190
+We lost most of the
+games that year.
+
+132
+00:06:26,190 --> 00:06:32,350
+And I know that this rule
+seems very similar, in spirit,
+
+133
+00:06:32,350 --> 00:06:36,950
+to my two rules for
+performant mobile web UI.
+
+134
+00:06:36,950 --> 00:06:38,776
+But they're not.
+
+135
+00:06:38,776 --> 00:06:40,150
+They're not the
+same, and I think
+
+136
+00:06:40,150 --> 00:06:42,410
+there's some interesting
+things that we
+
+137
+00:06:42,410 --> 00:06:46,440
+can pull from this if
+we really, really try.
+
+138
+00:06:46,440 --> 00:06:49,080
+The first thing to notice
+is that, on the surface,
+
+139
+00:06:49,080 --> 00:06:52,157
+these two rules seem like
+the same rule, just worded
+
+140
+00:06:52,157 --> 00:06:53,740
+in two different
+ways so I can fill up
+
+141
+00:06:53,740 --> 00:06:55,772
+two points on the slide.
+
+142
+00:06:55,772 --> 00:06:59,660
+But really, I think
+they're different.
+
+143
+00:06:59,660 --> 00:07:03,000
+And one of these
+rules is much harder
+
+144
+00:07:03,000 --> 00:07:04,794
+to accomplish than
+the other rule.
+
+145
+00:07:04,794 --> 00:07:07,210
+And if you were going to ask
+someone who was just starting
+
+146
+00:07:07,210 --> 00:07:10,560
+up in web development
+which rule was easy
+
+147
+00:07:10,560 --> 00:07:12,490
+and which rule was
+hard, he would say,
+
+148
+00:07:12,490 --> 00:07:17,520
+the hard rule is the first one,
+doing stuff that performs well,
+
+149
+00:07:17,520 --> 00:07:19,639
+finding the techniques
+that you need.
+
+150
+00:07:19,639 --> 00:07:21,680
+Because there's a lot of
+stuff you need to learn.
+
+151
+00:07:21,680 --> 00:07:23,140
+And learning is hard.
+
+152
+00:07:23,140 --> 00:07:27,250
+And you have to learn about
+CSS transitions, and appcache,
+
+153
+00:07:27,250 --> 00:07:30,700
+and browser compatibility,
+and all of that,
+
+154
+00:07:30,700 --> 00:07:31,710
+and that's really hard.
+
+155
+00:07:31,710 --> 00:07:34,060
+Meanwhile, rule
+number two, avoiding
+
+156
+00:07:34,060 --> 00:07:36,850
+stuff that's easy-- that's
+not doing something,
+
+157
+00:07:36,850 --> 00:07:38,650
+and not doing something
+is really easy.
+
+158
+00:07:38,650 --> 00:07:41,884
+And you can just try things,
+and if you look on your phone
+
+159
+00:07:41,884 --> 00:07:43,300
+and they don't
+perform well, well,
+
+160
+00:07:43,300 --> 00:07:44,760
+you just don't include it.
+
+161
+00:07:44,760 --> 00:07:48,140
+And so that's really easy.
+
+162
+00:07:48,140 --> 00:07:53,120
+But I think true enlightenment
+comes from the realization
+
+163
+00:07:53,120 --> 00:07:56,860
+that the situation is
+reversed, that, in actuality,
+
+164
+00:07:56,860 --> 00:08:00,080
+the hard one is to avoid
+stuff that performs poorly.
+
+165
+00:08:00,080 --> 00:08:03,980
+And the easy one is to do
+stuff that performs well.
+
+166
+00:08:03,980 --> 00:08:07,050
+I need my water.
+
+167
+00:08:07,050 --> 00:08:13,890
+So I've been doing web
+development for a while.
+
+168
+00:08:13,890 --> 00:08:17,890
+I was doing freelance
+before I started Dart Sky.
+
+169
+00:08:17,890 --> 00:08:21,891
+But I'd never done any big
+mobile project like Forecast.
+
+170
+00:08:21,891 --> 00:08:23,640
+And I didn't know,
+really, where to start.
+
+171
+00:08:23,640 --> 00:08:25,806
+I didn't know what the
+performance bottlenecks were.
+
+172
+00:08:25,806 --> 00:08:33,970
+So well, what I did
+was I went to Google.
+
+173
+00:08:33,970 --> 00:08:37,110
+And I asked Google,
+hey Google, how do I
+
+174
+00:08:37,110 --> 00:08:39,840
+make smooth animations
+in mobile web apps?
+
+175
+00:08:39,840 --> 00:08:43,110
+And Google said, hey
+here are some links
+
+176
+00:08:43,110 --> 00:08:46,712
+you might like to read, and
+there's a whole bunch of them.
+
+177
+00:08:46,712 --> 00:08:48,670
+And the first thing you
+learn is that if you're
+
+178
+00:08:48,670 --> 00:08:51,370
+going to make mobile
+animations that are performant,
+
+179
+00:08:51,370 --> 00:08:53,761
+you should use CSS
+transitions and transforms,
+
+180
+00:08:53,761 --> 00:08:56,010
+because they're hardware
+accelerated and they're fast.
+
+181
+00:08:56,010 --> 00:08:58,490
+So I went back to Google
+and I said, tell me
+
+182
+00:08:58,490 --> 00:09:00,919
+about CSS transforms
+and transitions.
+
+183
+00:09:00,919 --> 00:09:03,210
+And it worked, even though
+I spelled transitions wrong.
+
+184
+00:09:03,210 --> 00:09:05,750
+
+185
+00:09:05,750 --> 00:09:08,370
+And suddenly, in
+a weekend, I was
+
+186
+00:09:08,370 --> 00:09:12,002
+able to make my animations fast
+and perfornant on my iPhone.
+
+187
+00:09:12,002 --> 00:09:13,460
+So then I went onto
+the next thing.
+
+188
+00:09:13,460 --> 00:09:15,114
+I asked Google
+about touch events.
+
+189
+00:09:15,114 --> 00:09:16,530
+And it told me
+about touch events,
+
+190
+00:09:16,530 --> 00:09:19,029
+how to capture the event when
+your figure touches the phone.
+
+191
+00:09:19,029 --> 00:09:23,352
+And suddenly, my smooth
+animations were interactive.
+
+192
+00:09:23,352 --> 00:09:24,560
+You could interact with them.
+
+193
+00:09:24,560 --> 00:09:26,640
+And then I got
+excited, and I went on.
+
+194
+00:09:26,640 --> 00:09:28,057
+And I asked Google
+about appcache.
+
+195
+00:09:28,057 --> 00:09:29,431
+It is this thing
+I'd heard about.
+
+196
+00:09:29,431 --> 00:09:31,470
+I always heard that it
+was tough and confusing,
+
+197
+00:09:31,470 --> 00:09:33,519
+but you ask Google about
+it, and it gives you
+
+198
+00:09:33,519 --> 00:09:35,560
+the links, the blog posts,
+that you need to know.
+
+199
+00:09:35,560 --> 00:09:38,860
+And the appcache is
+something that, well,
+
+200
+00:09:38,860 --> 00:09:40,520
+it tells the browser
+to cache the app,
+
+201
+00:09:40,520 --> 00:09:41,936
+so the next time
+you go to it, you
+
+202
+00:09:41,936 --> 00:09:46,410
+don't have to pull in all
+of the HTML and JavaScript.
+
+203
+00:09:46,410 --> 00:09:49,710
+And suddenly,
+you're interactive,
+
+204
+00:09:49,710 --> 00:09:52,000
+smooth animations
+now loads quickly.
+
+205
+00:09:52,000 --> 00:09:54,100
+And finally, you want
+to make it into an app
+
+206
+00:09:54,100 --> 00:09:55,120
+that you save to
+your home screen.
+
+207
+00:09:55,120 --> 00:09:57,370
+So we ask Google, how do I save
+mobile apps to the home screen?
+
+208
+00:09:57,370 --> 00:09:58,911
+Because that would
+be really awesome.
+
+209
+00:09:58,911 --> 00:10:02,720
+And it tells you about
+meta tags that you
+
+210
+00:10:02,720 --> 00:10:03,910
+can include in your page.
+
+211
+00:10:03,910 --> 00:10:08,550
+It's really easy, and when
+you include those meta tags,
+
+212
+00:10:08,550 --> 00:10:12,040
+the Chrome disappears, the
+Back button and what have you,
+
+213
+00:10:12,040 --> 00:10:15,110
+and you now have an app
+that fills the screen.
+
+214
+00:10:15,110 --> 00:10:18,070
+And you also find about meta
+tags for specifying icons.
+
+215
+00:10:18,070 --> 00:10:20,910
+So in very little work, in
+about two weekends of Googling,
+
+216
+00:10:20,910 --> 00:10:21,930
+it's not tough.
+
+217
+00:10:21,930 --> 00:10:26,037
+In two weekends,
+you can have an app
+
+218
+00:10:26,037 --> 00:10:27,870
+that lives on your home
+screen, has an icon.
+
+219
+00:10:27,870 --> 00:10:30,370
+And when you launch the icon,
+you get an app in full screen.
+
+220
+00:10:30,370 --> 00:10:33,680
+And its performant, and
+it's great, and suddenly,
+
+221
+00:10:33,680 --> 00:10:37,040
+"The New York Times" is asking
+you to give presentations.
+
+222
+00:10:37,040 --> 00:10:41,390
+And I think that was the
+body from someone else.
+
+223
+00:10:41,390 --> 00:10:42,960
+That's not my body.
+
+224
+00:10:42,960 --> 00:10:46,072
+So learning the techniques
+that perform well
+
+225
+00:10:46,072 --> 00:10:47,530
+is actually pretty
+straightforward.
+
+226
+00:10:47,530 --> 00:10:49,905
+It doesn't take that long,
+especially if you're already
+
+227
+00:10:49,905 --> 00:10:51,450
+a web developer.
+
+228
+00:10:51,450 --> 00:10:56,470
+And we like to think that
+web development is difficult,
+
+229
+00:10:56,470 --> 00:10:57,820
+because it's our jobs.
+
+230
+00:10:57,820 --> 00:10:59,180
+It's our livelihoods.
+
+231
+00:10:59,180 --> 00:11:02,420
+But in reality, the hard
+part is all the stuff
+
+232
+00:11:02,420 --> 00:11:04,800
+that happens behind the
+scenes-- all the people that
+
+233
+00:11:04,800 --> 00:11:07,520
+work on the web kit team,
+people at Google and Apple
+
+234
+00:11:07,520 --> 00:11:11,010
+and Mozilla who are making the
+tools, doing the hard work,
+
+235
+00:11:11,010 --> 00:11:15,195
+to give us the handful of
+tools to make mobile apps that
+
+236
+00:11:15,195 --> 00:11:16,910
+perform well.
+
+237
+00:11:16,910 --> 00:11:19,280
+So this is easy,
+and I really think
+
+238
+00:11:19,280 --> 00:11:22,530
+that avoiding techniques
+that perform poorly
+
+239
+00:11:22,530 --> 00:11:25,340
+is the hard part.
+
+240
+00:11:25,340 --> 00:11:27,480
+This is a little bit
+counter intuitive,
+
+241
+00:11:27,480 --> 00:11:30,880
+because introducing crummy
+performance on the web is
+
+242
+00:11:30,880 --> 00:11:32,770
+really an active endeavour.
+
+243
+00:11:32,770 --> 00:11:34,960
+The default is good performance.
+
+244
+00:11:34,960 --> 00:11:40,110
+So one of my favorite mobile
+websites is Wikipedia,
+
+245
+00:11:40,110 --> 00:11:43,090
+and this is one of the
+only content-heavy sites
+
+246
+00:11:43,090 --> 00:11:45,220
+where I actually prefer
+their mobile site
+
+247
+00:11:45,220 --> 00:11:49,020
+over their desktop
+site on my phone.
+
+248
+00:11:49,020 --> 00:11:50,210
+And it performs beautifully.
+
+249
+00:11:50,210 --> 00:11:52,330
+I think the most complicated
+thing on this site
+
+250
+00:11:52,330 --> 00:11:54,520
+is an autocomplete
+in the search.
+
+251
+00:11:54,520 --> 00:11:56,730
+But they don't try
+to do anything fancy,
+
+252
+00:11:56,730 --> 00:11:59,080
+and because of that, they
+get great performance.
+
+253
+00:11:59,080 --> 00:12:01,400
+It scrolls beautifully.
+
+254
+00:12:01,400 --> 00:12:03,680
+When you click on a sub
+heading that's collapsed,
+
+255
+00:12:03,680 --> 00:12:05,190
+it just appears.
+
+256
+00:12:05,190 --> 00:12:09,504
+And no jittery
+animations, because there
+
+257
+00:12:09,504 --> 00:12:10,420
+aren't any animations.
+
+258
+00:12:10,420 --> 00:12:14,090
+So really, good
+performance is the default.
+
+259
+00:12:14,090 --> 00:12:18,737
+And when you come
+across crummy websites,
+
+260
+00:12:18,737 --> 00:12:20,820
+it's because someone is
+actively making it crummy.
+
+261
+00:12:20,820 --> 00:12:22,460
+And that's a very
+perplexing thing.
+
+262
+00:12:22,460 --> 00:12:25,590
+One example is I
+was reading a blog,
+
+263
+00:12:25,590 --> 00:12:28,260
+and it had a mobile
+interface, and I
+
+264
+00:12:28,260 --> 00:12:31,580
+was scrolling through
+it, vertically.
+
+265
+00:12:31,580 --> 00:12:34,370
+And as you're apt to do,
+because your thumb is
+
+266
+00:12:34,370 --> 00:12:37,950
+on a weird swivel, I couldn't
+scroll perfectly up and down.
+
+267
+00:12:37,950 --> 00:12:39,720
+And I managed to
+go a bit sideways.
+
+268
+00:12:39,720 --> 00:12:41,640
+And all of a sudden,
+this red semicircle
+
+269
+00:12:41,640 --> 00:12:46,120
+appeared, and it had this chunky
+animated bitty, disgusting
+
+270
+00:12:46,120 --> 00:12:47,300
+loading screen.
+
+271
+00:12:47,300 --> 00:12:51,885
+The UI froze up, and then
+a new blog post loaded.
+
+272
+00:12:51,885 --> 00:12:53,510
+And it was because
+someone tried to get
+
+273
+00:12:53,510 --> 00:12:57,230
+fancy with a sweeping gesture
+to load up new blog posts.
+
+274
+00:12:57,230 --> 00:12:58,440
+And it failed miserably.
+
+275
+00:12:58,440 --> 00:13:03,430
+And this is someone who was
+not heeding rule number two.
+
+276
+00:13:03,430 --> 00:13:06,300
+Another example is
+on the ESPN site.
+
+277
+00:13:06,300 --> 00:13:11,340
+I just saw this, where
+you get a main headline,
+
+278
+00:13:11,340 --> 00:13:15,172
+and then you get one
+sub-story, and a More link.
+
+279
+00:13:15,172 --> 00:13:17,130
+And when you click that
+More link, it comes up,
+
+280
+00:13:17,130 --> 00:13:19,020
+and you get more articles.
+
+281
+00:13:19,020 --> 00:13:22,390
+And when you do that, it is
+this chunky, horrible animation
+
+282
+00:13:22,390 --> 00:13:24,020
+that's a few frames a second.
+
+283
+00:13:24,020 --> 00:13:27,090
+And doing this in a
+way that is smooth
+
+284
+00:13:27,090 --> 00:13:30,560
+takes no extra work than doing
+it in a way that's not smooth.
+
+285
+00:13:30,560 --> 00:13:32,520
+And this is a major website.
+
+286
+00:13:32,520 --> 00:13:37,000
+And they've failed to
+heed rule number two.
+
+287
+00:13:37,000 --> 00:13:39,160
+There are design
+examples of this, too.
+
+288
+00:13:39,160 --> 00:13:42,560
+Any time you see
+content that spills over
+
+289
+00:13:42,560 --> 00:13:45,910
+or a nav that spills
+over your content,
+
+290
+00:13:45,910 --> 00:13:51,140
+as someone who has actively
+incorporated crummy design.
+
+291
+00:13:51,140 --> 00:13:54,540
+My favorite example
+is this website.
+
+292
+00:13:54,540 --> 00:13:58,390
+You go here, and I exaggerated
+it by putting it in landscape,
+
+293
+00:13:58,390 --> 00:14:00,670
+but you have browser Chrome
+on the top and the bottom.
+
+294
+00:14:00,670 --> 00:14:04,150
+And then they've introduced
+a header and a footer that's
+
+295
+00:14:04,150 --> 00:14:05,790
+always there, fixed positioning.
+
+296
+00:14:05,790 --> 00:14:09,760
+And I don't understand
+the Share links.
+
+297
+00:14:09,760 --> 00:14:12,700
+It's as if you're going to get
+halfway through the article,
+
+298
+00:14:12,700 --> 00:14:16,080
+and you just can't wait
+to share it on Twitter.
+
+299
+00:14:16,080 --> 00:14:18,320
+So it's there, and
+again so it's not
+
+300
+00:14:18,320 --> 00:14:22,890
+just performance in terms
+of making smooth animations,
+
+301
+00:14:22,890 --> 00:14:24,512
+it's also the design, too.
+
+302
+00:14:24,512 --> 00:14:25,970
+And this is someone
+actively making
+
+303
+00:14:25,970 --> 00:14:27,580
+the design worse by doing this.
+
+304
+00:14:27,580 --> 00:14:29,250
+The rest of the site
+looks really nice,
+
+305
+00:14:29,250 --> 00:14:30,950
+but this one aspect.
+
+306
+00:14:30,950 --> 00:14:33,710
+So why do we do it?
+
+307
+00:14:33,710 --> 00:14:35,310
+If it's an active
+thing, it seems
+
+308
+00:14:35,310 --> 00:14:38,390
+like it should be
+really easy to avoid.
+
+309
+00:14:38,390 --> 00:14:42,260
+And it seems to be a bigger
+problem on the mobile web
+
+310
+00:14:42,260 --> 00:14:44,480
+than in native apps.
+
+311
+00:14:44,480 --> 00:14:45,500
+And why is that?
+
+312
+00:14:45,500 --> 00:14:48,180
+I think this rule,
+avoid stuff that
+
+313
+00:14:48,180 --> 00:14:52,700
+performs poorly, I think the key
+difference between native apps
+
+314
+00:14:52,700 --> 00:14:55,040
+and mobile web apps
+is that this rule is
+
+315
+00:14:55,040 --> 00:14:57,040
+really easy to break on the web.
+
+316
+00:14:57,040 --> 00:15:00,440
+And it's really hard to break
+when you make native apps.
+
+317
+00:15:00,440 --> 00:15:03,390
+So what do I mean by this?
+
+318
+00:15:03,390 --> 00:15:07,320
+On the web, you're given all
+sorts of ways to do things.
+
+319
+00:15:07,320 --> 00:15:09,210
+And generally, the
+way that you've
+
+320
+00:15:09,210 --> 00:15:12,242
+learned them, when you're
+just making static content,
+
+321
+00:15:12,242 --> 00:15:13,700
+is not the way you
+should do things
+
+322
+00:15:13,700 --> 00:15:16,010
+when you're trying to make
+dynamic animations that
+
+323
+00:15:16,010 --> 00:15:16,950
+perform well.
+
+324
+00:15:16,950 --> 00:15:19,390
+So one example is, say
+you make a static page,
+
+325
+00:15:19,390 --> 00:15:21,540
+and you want to position
+something absolutely,
+
+326
+00:15:21,540 --> 00:15:24,900
+so you give it a CSS
+position absolute,
+
+327
+00:15:24,900 --> 00:15:27,300
+and you set its top
+and left attributes,
+
+328
+00:15:27,300 --> 00:15:29,842
+and you put it somewhere.
+
+329
+00:15:29,842 --> 00:15:31,550
+And now, say you want
+to make it dynamic,
+
+330
+00:15:31,550 --> 00:15:32,508
+you want to animate it.
+
+331
+00:15:32,508 --> 00:15:34,970
+I think the first thing we
+all do is we load up jQuery,
+
+332
+00:15:34,970 --> 00:15:37,840
+and we animate the top and
+left attributes in jQuery.
+
+333
+00:15:37,840 --> 00:15:40,445
+And when you try it,
+historically, that
+
+334
+00:15:40,445 --> 00:15:42,660
+has given really poor
+performance on mobile.
+
+335
+00:15:42,660 --> 00:15:47,210
+You should really be
+using CSS transitions.
+
+336
+00:15:47,210 --> 00:15:50,540
+Meanwhile, on native apps,
+and this is especially true
+
+337
+00:15:50,540 --> 00:15:55,460
+in iOS-- as far as native apps
+go, I'm only an iOS developer.
+
+338
+00:15:55,460 --> 00:15:58,700
+But I imagine this
+is true in Android.
+
+339
+00:15:58,700 --> 00:16:03,910
+Apple makes it really hard to
+do things that perform poorly.
+
+340
+00:16:03,910 --> 00:16:07,862
+Apple has a UI kit,
+and core animation,
+
+341
+00:16:07,862 --> 00:16:10,320
+and there's all sorts of juicy
+things you can do with this.
+
+342
+00:16:10,320 --> 00:16:12,977
+And you can't find anything
+in there that performs poorly.
+
+343
+00:16:12,977 --> 00:16:15,060
+If you try to break it and
+try to do these things,
+
+344
+00:16:15,060 --> 00:16:16,650
+it's really hard to do that.
+
+345
+00:16:16,650 --> 00:16:18,610
+Because Apple has
+it locked down.
+
+346
+00:16:18,610 --> 00:16:21,630
+And they only give you
+tools that perform well.
+
+347
+00:16:21,630 --> 00:16:26,817
+And one big example of this
+is it is possible to make,
+
+348
+00:16:26,817 --> 00:16:28,650
+of course, iOS apps
+that don't perform well.
+
+349
+00:16:28,650 --> 00:16:30,810
+And the biggest
+way to do this is
+
+350
+00:16:30,810 --> 00:16:33,790
+to do custom drawing operations.
+
+351
+00:16:33,790 --> 00:16:38,250
+And also in the iOS world, there
+are things called UI views,
+
+352
+00:16:38,250 --> 00:16:42,450
+and UI views, you can think of
+them as divs in the HTML world.
+
+353
+00:16:42,450 --> 00:16:44,310
+They're just generic,
+rectangle containers
+
+354
+00:16:44,310 --> 00:16:45,600
+that you can put stuff in.
+
+355
+00:16:45,600 --> 00:16:47,990
+And you can implement
+an optional method
+
+356
+00:16:47,990 --> 00:16:50,760
+on them called drawrect.
+
+357
+00:16:50,760 --> 00:16:53,110
+It's optional, you usually
+don't want to use it.
+
+358
+00:16:53,110 --> 00:16:55,900
+But when you implement
+it, it turns a UI view
+
+359
+00:16:55,900 --> 00:16:58,330
+into, essentially, a
+canvas element, where
+
+360
+00:16:58,330 --> 00:17:00,100
+you can do canvas drawing to it.
+
+361
+00:17:00,100 --> 00:17:03,610
+And actually, the syntax is
+very similar to the syntax
+
+362
+00:17:03,610 --> 00:17:07,920
+for a canvas drawing, presumably
+because canvas was originally
+
+363
+00:17:07,920 --> 00:17:09,859
+developed by Apple.
+
+364
+00:17:09,859 --> 00:17:14,099
+So Apple cares so much
+about you not using this
+
+365
+00:17:14,099 --> 00:17:16,535
+that they'll actually
+put this optional method.
+
+366
+00:17:16,535 --> 00:17:18,410
+When you go into Xcode
+and you create a file,
+
+367
+00:17:18,410 --> 00:17:19,759
+they'll put this method here.
+
+368
+00:17:19,759 --> 00:17:21,550
+They'll comment it out,
+and in the comment,
+
+369
+00:17:21,550 --> 00:17:23,242
+they tell you not to use it.
+
+370
+00:17:23,242 --> 00:17:24,950
+And I think the only
+reason they actually
+
+371
+00:17:24,950 --> 00:17:26,783
+put this here is so
+that they could tell you
+
+372
+00:17:26,783 --> 00:17:28,930
+that it adversely
+affects performance.
+
+373
+00:17:28,930 --> 00:17:33,110
+And so I think this is
+the biggest difference
+
+374
+00:17:33,110 --> 00:17:37,910
+between the native
+world and the web world
+
+375
+00:17:37,910 --> 00:17:41,070
+is that just it's really
+hard to break this rule.
+
+376
+00:17:41,070 --> 00:17:43,890
+So where do we go from here?
+
+377
+00:17:43,890 --> 00:17:47,210
+How do we avoid making
+crummy web apps?
+
+378
+00:17:47,210 --> 00:17:51,550
+I think the biggest thing,
+more so than on native apps,
+
+379
+00:17:51,550 --> 00:17:53,730
+is discipline.
+
+380
+00:17:53,730 --> 00:17:55,890
+We need to take
+great care that we
+
+381
+00:17:55,890 --> 00:17:58,150
+don't introduce
+poor performance.
+
+382
+00:17:58,150 --> 00:18:04,140
+Some things to watch out
+for are-- well, the biggest
+
+383
+00:18:04,140 --> 00:18:06,480
+thing to watch out for,
+and this is something
+
+384
+00:18:06,480 --> 00:18:10,960
+that I fall for all the
+time, is falling in love
+
+385
+00:18:10,960 --> 00:18:11,980
+with a bad idea.
+
+386
+00:18:11,980 --> 00:18:14,694
+So maybe you have
+an idea-- presumably
+
+387
+00:18:14,694 --> 00:18:16,110
+the person who
+made that blog post
+
+388
+00:18:16,110 --> 00:18:17,485
+with the really
+awful swiping, he
+
+389
+00:18:17,485 --> 00:18:21,520
+fell in love with the idea of
+swiping to get back and forth
+
+390
+00:18:21,520 --> 00:18:23,670
+between blog posts.
+
+391
+00:18:23,670 --> 00:18:25,090
+For me, it's been
+a lot of things.
+
+392
+00:18:25,090 --> 00:18:27,040
+I wanted to implement
+a thing in Forecast
+
+393
+00:18:27,040 --> 00:18:29,830
+for deleting saved locations,
+where when you clicked
+
+394
+00:18:29,830 --> 00:18:33,510
+the Delete button, the
+thing jumps up, crinkles up,
+
+395
+00:18:33,510 --> 00:18:36,220
+gets thrown away into a
+trash bin, and fades out.
+
+396
+00:18:36,220 --> 00:18:39,480
+And it's really seductive to
+fall in love with an idea.
+
+397
+00:18:39,480 --> 00:18:41,860
+And when you test it,
+it will often work,
+
+398
+00:18:41,860 --> 00:18:44,830
+because you're testing
+in a environment that's
+
+399
+00:18:44,830 --> 00:18:48,029
+not a real world environment.
+
+400
+00:18:48,029 --> 00:18:50,070
+And it turns out, when
+you actually implement it,
+
+401
+00:18:50,070 --> 00:18:52,611
+when it's actually interacting
+with other things on the page,
+
+402
+00:18:52,611 --> 00:18:53,460
+sometimes it fails.
+
+403
+00:18:53,460 --> 00:18:55,790
+And if you fall in
+love with a bad idea,
+
+404
+00:18:55,790 --> 00:18:59,380
+it's sometimes really hard to
+let it go, and it stays in.
+
+405
+00:18:59,380 --> 00:19:01,610
+And sometimes you
+don't listen when
+
+406
+00:19:01,610 --> 00:19:04,580
+your friends try to
+talk you out of it.
+
+407
+00:19:04,580 --> 00:19:07,070
+And they say that
+idea's no good for you.
+
+408
+00:19:07,070 --> 00:19:08,620
+And that's fine.
+
+409
+00:19:08,620 --> 00:19:11,260
+Experiment, fool
+around a little bit,
+
+410
+00:19:11,260 --> 00:19:13,920
+we're young, but
+don't settle down
+
+411
+00:19:13,920 --> 00:19:17,010
+too easily if it turns out
+that the idea turns out
+
+412
+00:19:17,010 --> 00:19:18,750
+to be no good for you.
+
+413
+00:19:18,750 --> 00:19:20,887
+I don't know why I
+used this picture
+
+414
+00:19:20,887 --> 00:19:23,220
+of an example of a couple
+that's no good for each other.
+
+415
+00:19:23,220 --> 00:19:25,890
+They look really happy.
+
+416
+00:19:25,890 --> 00:19:27,855
+[LAUGHTER]
+
+417
+00:19:27,855 --> 00:19:29,402
+AUDIENCE: [INAUDIBLE].
+
+418
+00:19:29,402 --> 00:19:30,860
+ADAM GROSSMAN:
+Yeah, if one of them
+
+419
+00:19:30,860 --> 00:19:32,776
+decides to change their
+hair before the other.
+
+420
+00:19:32,776 --> 00:19:35,230
+
+421
+00:19:35,230 --> 00:19:37,590
+Another thing to
+avoid is, of course,
+
+422
+00:19:37,590 --> 00:19:39,080
+designer-developer disconnect.
+
+423
+00:19:39,080 --> 00:19:40,540
+And this is true,
+tends to be true,
+
+424
+00:19:40,540 --> 00:19:43,040
+at larger organizations, where
+you have a designer designing
+
+425
+00:19:43,040 --> 00:19:45,190
+something or a team of
+designers and they hand it
+
+426
+00:19:45,190 --> 00:19:46,840
+down to developers.
+
+427
+00:19:46,840 --> 00:19:50,570
+And time was you could design
+something in Photoshop,
+
+428
+00:19:50,570 --> 00:19:52,460
+because websites were static.
+
+429
+00:19:52,460 --> 00:19:54,720
+And developers
+could implement it,
+
+430
+00:19:54,720 --> 00:19:57,870
+and sometimes they had to do
+disgusting things like chop it
+
+431
+00:19:57,870 --> 00:20:01,830
+up into a grid of images and
+use tables, but it worked.
+
+432
+00:20:01,830 --> 00:20:05,156
+But now, especially
+on the mobile web,
+
+433
+00:20:05,156 --> 00:20:06,780
+websites are dynamic,
+they're animated.
+
+434
+00:20:06,780 --> 00:20:09,060
+And it's really hard to
+design for that, especially
+
+435
+00:20:09,060 --> 00:20:10,300
+in Photoshop.
+
+436
+00:20:10,300 --> 00:20:12,187
+So designers may have
+these great ideas
+
+437
+00:20:12,187 --> 00:20:14,270
+for how to do things, how
+to interact with things.
+
+438
+00:20:14,270 --> 00:20:16,390
+And when it comes time
+to actually develop them,
+
+439
+00:20:16,390 --> 00:20:17,620
+it doesn't work.
+
+440
+00:20:17,620 --> 00:20:22,190
+And I think that, very often,
+developers don't speak up
+
+441
+00:20:22,190 --> 00:20:25,140
+about it, and it stays in there.
+
+442
+00:20:25,140 --> 00:20:28,900
+So I think the way to avoid this
+is to really-- developers, take
+
+443
+00:20:28,900 --> 00:20:33,197
+ownership in any design work
+and any app you working on.
+
+444
+00:20:33,197 --> 00:20:35,530
+I don't know any organization
+where a developer couldn't
+
+445
+00:20:35,530 --> 00:20:38,210
+go back to the designers,
+and even back to management,
+
+446
+00:20:38,210 --> 00:20:41,100
+and say, this is a great
+idea, but it turns out,
+
+447
+00:20:41,100 --> 00:20:43,140
+when we actually implement
+it, it doesn't work.
+
+448
+00:20:43,140 --> 00:20:46,420
+So there needs to be
+this cyclical process
+
+449
+00:20:46,420 --> 00:20:49,140
+of development.
+
+450
+00:20:49,140 --> 00:20:53,020
+Another thing to avoid is
+one platform preference.
+
+451
+00:20:53,020 --> 00:20:54,910
+I am an iPhone guy.
+
+452
+00:20:54,910 --> 00:20:56,240
+I love my iPhone.
+
+453
+00:20:56,240 --> 00:20:58,620
+I will never switch to Android.
+
+454
+00:20:58,620 --> 00:21:02,436
+I have a bunch of Android
+phones, and I never use them.
+
+455
+00:21:02,436 --> 00:21:04,890
+I have a Firefox OS
+device, and I really
+
+456
+00:21:04,890 --> 00:21:07,951
+want the Firefox OS
+device to be great.
+
+457
+00:21:07,951 --> 00:21:08,950
+But it's not that great.
+
+458
+00:21:08,950 --> 00:21:11,810
+And so I'm really
+about iOS, and this
+
+459
+00:21:11,810 --> 00:21:14,480
+is to the severe
+detriment of Forecast.
+
+460
+00:21:14,480 --> 00:21:18,910
+Because it works way better on
+iOS than it does on Android.
+
+461
+00:21:18,910 --> 00:21:20,160
+So this is something to avoid.
+
+462
+00:21:20,160 --> 00:21:23,340
+And this is the lesson
+I need to learn.
+
+463
+00:21:23,340 --> 00:21:25,350
+But I haven't.
+
+464
+00:21:25,350 --> 00:21:27,030
+I can put it in a slide.
+
+465
+00:21:27,030 --> 00:21:32,980
+The next thing to avoid is
+what I call test blindness.
+
+466
+00:21:32,980 --> 00:21:38,365
+And when you develop an app,
+as you progress in development,
+
+467
+00:21:38,365 --> 00:21:40,240
+you're constantly using
+it, you're constantly
+
+468
+00:21:40,240 --> 00:21:42,500
+interacting with it, you're
+loading it on your phone.
+
+469
+00:21:42,500 --> 00:21:45,540
+And pretty soon, you
+learn how to avoid
+
+470
+00:21:45,540 --> 00:21:48,080
+interacting with it in
+a way that breaks it.
+
+471
+00:21:48,080 --> 00:21:50,100
+You know all the
+little, hidden gotchas,
+
+472
+00:21:50,100 --> 00:21:52,500
+and subconsciously,
+you avoid it.
+
+473
+00:21:52,500 --> 00:21:54,090
+And I do this all the time.
+
+474
+00:21:54,090 --> 00:21:55,530
+I'll do something, and
+I'll think it has no bugs.
+
+475
+00:21:55,530 --> 00:21:57,030
+And then I'll hand
+it to my wife,
+
+476
+00:21:57,030 --> 00:21:59,340
+and the very first thing
+she does is break it.
+
+477
+00:21:59,340 --> 00:22:00,923
+She'll double tap
+on things you're not
+
+478
+00:22:00,923 --> 00:22:02,290
+supposed to double tap on.
+
+479
+00:22:02,290 --> 00:22:04,248
+She'll slide when you're
+not supposed to slide,
+
+480
+00:22:04,248 --> 00:22:06,220
+and it completely falls apart.
+
+481
+00:22:06,220 --> 00:22:10,580
+And so the way I know that I'm
+falling for test blindness is
+
+482
+00:22:10,580 --> 00:22:14,090
+when I show a new app to
+someone new on my phone,
+
+483
+00:22:14,090 --> 00:22:18,420
+and instead of handing
+it to them, I load it up,
+
+484
+00:22:18,420 --> 00:22:19,520
+and I show it to them.
+
+485
+00:22:19,520 --> 00:22:21,740
+And I show them how I'm
+interacting with it.
+
+486
+00:22:21,740 --> 00:22:22,839
+Isn't this a great thing?
+
+487
+00:22:22,839 --> 00:22:24,130
+And I don't hand over my phone.
+
+488
+00:22:24,130 --> 00:22:25,890
+And I've seen other
+developers do this, too,
+
+489
+00:22:25,890 --> 00:22:27,360
+when they're working on
+something, especially when it's
+
+490
+00:22:27,360 --> 00:22:27,950
+in beta.
+
+491
+00:22:27,950 --> 00:22:29,824
+And if you're afraid to
+hand over your phone,
+
+492
+00:22:29,824 --> 00:22:32,640
+if you try to show people it
+by you interacting with it,
+
+493
+00:22:32,640 --> 00:22:36,840
+then you're probably
+succumbing to test blindness.
+
+494
+00:22:36,840 --> 00:22:40,240
+So these are the
+things to avoid,
+
+495
+00:22:40,240 --> 00:22:43,010
+and there's lots of
+other things to avoid.
+
+496
+00:22:43,010 --> 00:22:46,440
+But it really
+boils down to this.
+
+497
+00:22:46,440 --> 00:22:49,780
+The only way that we're going
+to compete with native apps
+
+498
+00:22:49,780 --> 00:22:53,450
+is through unflinching
+diligence to keep crumminess out
+
+499
+00:22:53,450 --> 00:22:54,800
+of our apps.
+
+500
+00:22:54,800 --> 00:22:56,259
+Native app developers
+have it easy.
+
+501
+00:22:56,259 --> 00:22:57,716
+They got it by
+default, but we have
+
+502
+00:22:57,716 --> 00:22:59,980
+to spend every waking
+minute that we're developing
+
+503
+00:22:59,980 --> 00:23:04,235
+a mobile web app and make sure
+that the crumminess doesn't
+
+504
+00:23:04,235 --> 00:23:04,860
+get introduced.
+
+505
+00:23:04,860 --> 00:23:08,960
+Because once it's there, it's
+really hard to get rid of it.
+
+506
+00:23:08,960 --> 00:23:10,621
+Thank you.
+
+507
+00:23:10,621 --> 00:23:11,120
+[APPLAUSE]
+
+508
+00:23:11,120 --> 00:23:13,955
+ADAM GROSSMAN: One quick thing.
+
+509
+00:23:13,955 --> 00:23:16,050
+I do have one
+anecdotal postscript
+
+510
+00:23:16,050 --> 00:23:21,440
+that has nothing to do with the
+mobile web app UI performance.
+
+511
+00:23:21,440 --> 00:23:23,602
+I had one slide in
+here where I was
+
+512
+00:23:23,602 --> 00:23:26,060
+going to talk about how web
+development is so easy that you
+
+513
+00:23:26,060 --> 00:23:28,130
+could teach my
+grandmother to do it.
+
+514
+00:23:28,130 --> 00:23:30,410
+So here is my grandmother,
+presumably rocking out
+
+515
+00:23:30,410 --> 00:23:33,779
+in BBEdit, listening
+to 5by5 podcasts.
+
+516
+00:23:33,779 --> 00:23:35,320
+Actually, this is
+not my grandmother.
+
+517
+00:23:35,320 --> 00:23:38,600
+I had to do a Google Image
+search for old ladies
+
+518
+00:23:38,600 --> 00:23:39,540
+on a computer.
+
+519
+00:23:39,540 --> 00:23:42,970
+And there's a lot of images
+of old ladies on computers.
+
+520
+00:23:42,970 --> 00:23:46,970
+But one really strange
+phenomenon is even more
+
+521
+00:23:46,970 --> 00:23:48,870
+than there are old
+ladies on computers,
+
+522
+00:23:48,870 --> 00:23:51,812
+there are a bunch of old
+ladies smoking cigars.
+
+523
+00:23:51,812 --> 00:23:52,630
+[LAUGHTER]
+
+524
+00:23:52,630 --> 00:23:55,140
+ADAM GROSSMAN: I don't
+understand this phenomenon.
+
+525
+00:23:55,140 --> 00:23:56,280
+It's all over.
+
+526
+00:23:56,280 --> 00:24:00,470
+The web is filled with
+old lady smoking cigars.
+
+527
+00:24:00,470 --> 00:24:02,810
+This one's my favorite.
+
+528
+00:24:02,810 --> 00:24:06,140
+It's an explicable, and this is
+maybe the Robitussin talking,
+
+529
+00:24:06,140 --> 00:24:09,084
+but I love that
+we live in a world
+
+530
+00:24:09,084 --> 00:24:10,375
+where such a thing is possible.
+
+531
+00:24:10,375 --> 00:24:11,440
+[LAUGHTER]
+
+532
+00:24:11,440 --> 00:24:12,960
+ADAM GROSSMAN: Thank you.
+
+533
+00:24:12,960 --> 00:24:20,255
+[APPLAUSE]
+

@@ -22,12 +22,15 @@ line-height: 2em;
 }
 
 a.transcriptDownload {
+display: block;
 font-size: 13px;
 font-weight: bold;
-left: 165px;
-padding: 2px 0 0 0;
-position: absolute;
+left: 88px;
+position: relative;
 text-decoration: underline;
+top: 15px;
+z-index: 1;
+width: 72px;
 }
 
 body {
@@ -51,12 +54,9 @@ color: white;
 }
 
 details.transcript {
-margin: 0 0 0.5em 0;
-padding: 0 0 0 18px;
 }
 
 details.video {
-margin: 0 0 0.5em 0;
 }
 
 div#container {
@@ -76,8 +76,11 @@ margin: 0 10px 0 0;
 }
 
 div#numResults {
-color: darkRed;
+color: rgb(230, 0, 0);
+font-weight: bold;
 margin: 0 0 1em 0;
+padding: 0 0 1em 0;
+border-bottom: 1px solid #666;
 }
 
 div#results {
@@ -101,8 +104,8 @@ padding: 0 0 0 1em;
 }
 
 div.transcript{
-  color: white;
-  font-size: 10px;
+color: white;
+font-size: 10px;
 }
 
 div.video {
@@ -130,7 +133,7 @@ div.video div.speakers {
 color: #999;
 font-size: 13px;
 margin: 0 0 1em 0;
-padding: 0 0 0 16px;
+/* padding: 0 0 0 0; */
 }
 
 div.video div.videoSummary {
@@ -141,10 +144,10 @@ line-height: 1.6em;
 padding: 28px 0 0 0;
 }
 
-div.video div.videoTitle {
+div.video h2 {
 color: #ccc;
-font-size: 12px;
-margin: 0 0 0.4em 0;
+font-size: 16px;
+margin: 0 0 0.5em 0;
 }
 
 span.cueText em {
@@ -240,7 +243,7 @@ font-family: Arial, sans-serif;
 line-height: 1em;
 }
 
-span.speakerName {
+strong.speakerName {
   color: white;
 }
 
@@ -253,18 +256,13 @@ outline: none;
 }
 
 summary.transcript {
-display: inline;
 font-size: 13px;
-margin: 0 1em 0 0;
-padding: 0 0 0 18px;
-text-indent: -18px;
 line-height: 1.2em;
 }
 
 summary.video {
+font-size: 13px;
 margin: 0 0 0 0;
-padding: 0 0 0 18px;
-text-indent: -18px;
 line-height: 1.2em;
 }
 

@@ -1,0 +1,3533 @@
+1
+00:00:00,000 --> 00:00:00,465
+
+2
+00:00:00,465 --> 00:00:01,715
+PETE LEPAGE: Sounds good.
+
+3
+00:00:01,715 --> 00:00:10,436
+
+4
+00:00:10,436 --> 00:01:09,698
+[MUSIC PLAYING]
+
+5
+00:01:09,698 --> 00:01:17,168
+
+6
+00:01:17,168 --> 00:02:18,340
+[MUSIC PLAYING]
+
+7
+00:02:18,340 --> 00:02:19,070
+PETE LEPAGE: All right.
+
+8
+00:02:19,070 --> 00:02:20,720
+Well, welcome everybody.
+
+9
+00:02:20,720 --> 00:02:24,010
+And thanks for joining us for
+another installment of "Behind
+
+10
+00:02:24,010 --> 00:02:27,280
+The Divs," a look behind the
+scenes of one of the great new
+
+11
+00:02:27,280 --> 00:02:29,020
+Chrome experiments.
+
+12
+00:02:29,020 --> 00:02:29,790
+I'm Pete LePage.
+
+13
+00:02:29,790 --> 00:02:32,050
+I'm a developer advocate
+on the Chrome team.
+
+14
+00:02:32,050 --> 00:02:35,490
+And joining me today, we've got
+two of the engineers who
+
+15
+00:02:35,490 --> 00:02:38,490
+are behind building
+of Chrome Racer.
+
+16
+00:02:38,490 --> 00:02:42,720
+So with that I want to introduce
+Michael Anthony and
+
+17
+00:02:42,720 --> 00:02:46,200
+Andy Thelander who are joining
+us from LA, right?
+
+18
+00:02:46,200 --> 00:02:46,550
+MICHAEL ANTHONY: Yeah.
+
+19
+00:02:46,550 --> 00:02:46,900
+ANDY THELANDER: That's right.
+
+20
+00:02:46,900 --> 00:02:47,050
+PETE LEPAGE: Awesome.
+
+21
+00:02:47,050 --> 00:02:48,710
+Well, welcome guys.
+
+22
+00:02:48,710 --> 00:02:51,280
+Why don't you introduce
+yourselves?
+
+23
+00:02:51,280 --> 00:02:51,653
+MICHAEL ANTHONY: Thanks.
+
+24
+00:02:51,653 --> 00:02:52,580
+Yeah, I'm Michael.
+
+25
+00:02:52,580 --> 00:02:54,670
+I'm a technical director
+at Active Theory.
+
+26
+00:02:54,670 --> 00:02:58,245
+And on Racer I coded the car's
+gameplay and the across device
+
+27
+00:02:58,245 --> 00:02:59,420
+communication.
+
+28
+00:02:59,420 --> 00:03:01,192
+ANDY THELANDER: And,
+hey, I'm Andy.
+
+29
+00:03:01,192 --> 00:03:03,780
+I'm the creative technologist
+at Active Theory.
+
+30
+00:03:03,780 --> 00:03:06,320
+And I did the finalization,
+[INAUDIBLE], tweaking the UI,
+
+31
+00:03:06,320 --> 00:03:10,180
+[INAUDIBLE] and animation,
+just all the OS stuff.
+
+32
+00:03:10,180 --> 00:03:11,490
+PETE LEPAGE: Very cool.
+
+33
+00:03:11,490 --> 00:03:13,990
+Well, this is a really
+neat experiment.
+
+34
+00:03:13,990 --> 00:03:17,040
+And congrats on getting it shown
+at Google I/O where it
+
+35
+00:03:17,040 --> 00:03:18,650
+was launched for
+the first time,
+
+36
+00:03:18,650 --> 00:03:21,570
+especially in the keynote.
+
+37
+00:03:21,570 --> 00:03:25,350
+And you guys just published an
+"HTML5 Rocks" article on sort
+
+38
+00:03:25,350 --> 00:03:26,400
+of how you built it.
+
+39
+00:03:26,400 --> 00:03:28,500
+So today we're going to take
+a look at some of that.
+
+40
+00:03:28,500 --> 00:03:31,950
+But as you guys are watching
+at home, if you have
+
+41
+00:03:31,950 --> 00:03:34,440
+questions, if there are things
+that you want to ask either
+
+42
+00:03:34,440 --> 00:03:37,490
+Michael or Andy, feel free to
+post them to Google Moderator.
+
+43
+00:03:37,490 --> 00:03:42,400
+The link will show up
+periodically throughout our
+
+44
+00:03:42,400 --> 00:03:44,850
+show, just there on the
+bottom of the screen.
+
+45
+00:03:44,850 --> 00:03:46,130
+And you can post those.
+
+46
+00:03:46,130 --> 00:03:55,140
+The link for those who are
+watching is goo.gl/JFu7J.
+
+47
+00:03:55,140 --> 00:03:58,600
+But I want to jump into one of
+the first questions that I had
+
+48
+00:03:58,600 --> 00:04:00,220
+for you guys.
+
+49
+00:04:00,220 --> 00:04:03,300
+Walk me through a little bit
+about what happens when a
+
+50
+00:04:03,300 --> 00:04:04,750
+player joins a game.
+
+51
+00:04:04,750 --> 00:04:08,200
+So, like, I go, I grab my phone,
+and I say connect.
+
+52
+00:04:08,200 --> 00:04:10,710
+What happens when you get
+all those players
+
+53
+00:04:10,710 --> 00:04:12,410
+connecting to a game?
+
+54
+00:04:12,410 --> 00:04:16,920
+MICHAEL ANTHONY: So when one
+person creates the game, it
+
+55
+00:04:16,920 --> 00:04:19,440
+hits the central App Engine
+server and that gives you the
+
+56
+00:04:19,440 --> 00:04:23,090
+code that you need to share
+with the other players.
+
+57
+00:04:23,090 --> 00:04:26,350
+PETE LEPAGE: So when you say
+code, what do you mean code?
+
+58
+00:04:26,350 --> 00:04:28,840
+MICHAEL ANTHONY: So that five
+character code that the other
+
+59
+00:04:28,840 --> 00:04:29,800
+players have to did punch in.
+
+60
+00:04:29,800 --> 00:04:29,930
+PETE LEPAGE: OK.
+
+61
+00:04:29,930 --> 00:04:33,420
+So that's so that you
+know which users are
+
+62
+00:04:33,420 --> 00:04:34,220
+connecting to which.
+
+63
+00:04:34,220 --> 00:04:36,340
+We're not talking about HTML5,
+or JavaScript code or
+
+64
+00:04:36,340 --> 00:04:37,830
+anything like that.
+
+65
+00:04:37,830 --> 00:04:38,700
+MICHAEL ANTHONY: Right, yeah.
+
+66
+00:04:38,700 --> 00:04:41,780
+It's just a key that you punch
+in with your keyboard on the
+
+67
+00:04:41,780 --> 00:04:43,750
+other devices.
+
+68
+00:04:43,750 --> 00:04:46,720
+So there's a bunch of servers
+all over the world.
+
+69
+00:04:46,720 --> 00:04:48,400
+And there's a few in American
+and some in Europe.
+
+70
+00:04:48,400 --> 00:04:51,830
+And basically, when your device
+hits the app, it will
+
+71
+00:04:51,830 --> 00:04:54,540
+ping the servers and choose
+the closest location.
+
+72
+00:04:54,540 --> 00:04:56,135
+And that's going to be
+your relay server.
+
+73
+00:04:56,135 --> 00:04:56,510
+PETE LEPAGE: OK.
+
+74
+00:04:56,510 --> 00:04:58,730
+MICHAEL ANTHONY: So when the
+other devices punch in that
+
+75
+00:04:58,730 --> 00:05:02,540
+initial game code, they connect
+to that same relay
+
+76
+00:05:02,540 --> 00:05:03,790
+server that the host is on.
+
+77
+00:05:03,790 --> 00:05:07,820
+And then the host shares which
+track has been selected.
+
+78
+00:05:07,820 --> 00:05:10,400
+So all the devices render the
+track, and they build the
+
+79
+00:05:10,400 --> 00:05:12,850
+track out, and show the
+appropriate portion.
+
+80
+00:05:12,850 --> 00:05:16,910
+And then, you get the ready,
+set, go screen and you tap
+
+81
+00:05:16,910 --> 00:05:18,770
+when everybody's
+ready to play.
+
+82
+00:05:18,770 --> 00:05:20,625
+It slides up, and
+the game begins.
+
+83
+00:05:20,625 --> 00:05:20,880
+PETE LEPAGE: OK.
+
+84
+00:05:20,880 --> 00:05:24,140
+So let's dive in a little bit
+more on what's happening with
+
+85
+00:05:24,140 --> 00:05:26,530
+each of those steps
+technically.
+
+86
+00:05:26,530 --> 00:05:32,600
+So when you do that initial
+connection to figure out what
+
+87
+00:05:32,600 --> 00:05:35,260
+server is the fastest one,
+what are you doing there?
+
+88
+00:05:35,260 --> 00:05:37,550
+Why are you trying to figure
+out which one's the fast--
+
+89
+00:05:37,550 --> 00:05:39,670
+well, obviously we know
+performance matters.
+
+90
+00:05:39,670 --> 00:05:43,230
+But what's the sort of
+steps on figuring
+
+91
+00:05:43,230 --> 00:05:44,750
+out which one's closest?
+
+92
+00:05:44,750 --> 00:05:47,150
+How are you doing that?
+
+93
+00:05:47,150 --> 00:05:48,600
+MICHAEL ANTHONY:
+So [INAUDIBLE]
+
+94
+00:05:48,600 --> 00:05:51,380
+when the site loads, actually,
+during the preloader.
+
+95
+00:05:51,380 --> 00:05:57,275
+It basically sends a ping to
+each relay that's available.
+
+96
+00:05:57,275 --> 00:05:58,880
+PETE LEPAGE: OK.
+
+97
+00:05:58,880 --> 00:06:02,320
+MICHAEL ANTHONY: So I believe
+it's about 8 relays.
+
+98
+00:06:02,320 --> 00:06:05,220
+Ed Goose at PA Consulting
+actually built all the App
+
+99
+00:06:05,220 --> 00:06:05,980
+Engine stuff.
+
+100
+00:06:05,980 --> 00:06:06,550
+PETE LEPAGE: Oh, cool.
+
+101
+00:06:06,550 --> 00:06:07,460
+MICHAEL ANTHONY: And
+he set it all up.
+
+102
+00:06:07,460 --> 00:06:12,030
+So it'll actually give the app
+a list of all the relays that
+
+103
+00:06:12,030 --> 00:06:13,990
+are available, and it's
+a few in each region.
+
+104
+00:06:13,990 --> 00:06:16,570
+There's hundreds of relays, but
+it only serves up the two
+
+105
+00:06:16,570 --> 00:06:19,080
+with the lowest load
+at the moment.
+
+106
+00:06:19,080 --> 00:06:20,450
+And it'll give you the
+list of relays.
+
+107
+00:06:20,450 --> 00:06:22,410
+And it'll do a bunch of pings.
+
+108
+00:06:22,410 --> 00:06:24,200
+And it will choose the
+median, obviously.
+
+109
+00:06:24,200 --> 00:06:26,670
+Because accounting for all the
+different network factors
+
+110
+00:06:26,670 --> 00:06:29,330
+it'll ping each server a few
+times and choose the median.
+
+111
+00:06:29,330 --> 00:06:32,250
+And then the one with the lowest
+ping, which is usually
+
+112
+00:06:32,250 --> 00:06:35,490
+about 50 milliseconds, will be
+the one that's selected.
+
+113
+00:06:35,490 --> 00:06:36,360
+PETE LEPAGE: OK.
+
+114
+00:06:36,360 --> 00:06:36,890
+Cool.
+
+115
+00:06:36,890 --> 00:06:40,460
+So once you've selected that
+initial server that you're
+
+116
+00:06:40,460 --> 00:06:47,290
+connecting to, and then the
+other phones or tablets,
+
+117
+00:06:47,290 --> 00:06:49,760
+whatever the devices are, they
+know which one you're
+
+118
+00:06:49,760 --> 00:06:51,870
+connecting to based on that.
+
+119
+00:06:51,870 --> 00:06:53,860
+And they're all sitting
+roughly in
+
+120
+00:06:53,860 --> 00:06:55,010
+the same space, right?
+
+121
+00:06:55,010 --> 00:06:57,530
+So you know that they're
+probably all on the same
+
+122
+00:06:57,530 --> 00:06:59,310
+network and that
+kind of thing.
+
+123
+00:06:59,310 --> 00:06:59,925
+MICHAEL ANTHONY: Yup.
+
+124
+00:06:59,925 --> 00:07:05,960
+PETE LEPAGE: Now do you think
+that there are HTML5 APIs that
+
+125
+00:07:05,960 --> 00:07:07,320
+would have been helpful
+for this?
+
+126
+00:07:07,320 --> 00:07:11,080
+Do you think the network
+performance API would have
+
+127
+00:07:11,080 --> 00:07:13,150
+been useful?
+
+128
+00:07:13,150 --> 00:07:15,200
+MICHAEL ANTHONY: I mean, WebRTC
+would have been ideal.
+
+129
+00:07:15,200 --> 00:07:15,520
+PETE LEPAGE: Oh, right.
+
+130
+00:07:15,520 --> 00:07:17,320
+MICHAEL ANTHONY: But I mean,
+that's just making it's way to
+
+131
+00:07:17,320 --> 00:07:18,610
+desktop right now.
+
+132
+00:07:18,610 --> 00:07:21,200
+So it's a bit of a ways
+off on mobile.
+
+133
+00:07:21,200 --> 00:07:25,630
+I mean, the difference between
+WebRTC and WebSockets is that
+
+134
+00:07:25,630 --> 00:07:27,850
+with WebSockets the devices
+don't communicate directly
+
+135
+00:07:27,850 --> 00:07:28,560
+with each other.
+
+136
+00:07:28,560 --> 00:07:29,190
+PETE LEPAGE: Right.
+
+137
+00:07:29,190 --> 00:07:30,970
+MICHAEL ANTHONY: You start with
+the relay server, which
+
+138
+00:07:30,970 --> 00:07:33,700
+then relays that message out
+to all the other players.
+
+139
+00:07:33,700 --> 00:07:35,940
+With WebRTC they would actually
+be able to directly
+
+140
+00:07:35,940 --> 00:07:37,410
+communicate with each other.
+
+141
+00:07:37,410 --> 00:07:39,610
+PETE LEPAGE: So you're using
+WebSockets then for each
+
+142
+00:07:39,610 --> 00:07:43,640
+device to connect to that main
+server, and then you're
+
+143
+00:07:43,640 --> 00:07:46,480
+sending the data out between
+all of them.
+
+144
+00:07:46,480 --> 00:07:46,840
+MICHAEL ANTHONY: Exactly.
+
+145
+00:07:46,840 --> 00:07:48,420
+PETE LEPAGE: Right, OK.
+
+146
+00:07:48,420 --> 00:07:49,860
+MICHAEL ANTHONY: So in essence
+they're all connected to each
+
+147
+00:07:49,860 --> 00:07:51,310
+other, but not without
+a little help.
+
+148
+00:07:51,310 --> 00:07:52,270
+PETE LEPAGE: Right.
+
+149
+00:07:52,270 --> 00:07:54,410
+So once you've got them all
+connected and you've
+
+150
+00:07:54,410 --> 00:07:58,740
+established sort of, OK, we've
+got these three or however
+
+151
+00:07:58,740 --> 00:08:03,380
+many devices that we want to
+play with, how do you figure
+
+152
+00:08:03,380 --> 00:08:07,130
+out how big your track
+should be?
+
+153
+00:08:07,130 --> 00:08:10,830
+And what are you using
+to build that track?
+
+154
+00:08:10,830 --> 00:08:13,480
+MICHAEL ANTHONY: So what it'll
+do is it will look at the
+
+155
+00:08:13,480 --> 00:08:16,320
+total widths of all the devices
+and it'll look at the
+
+156
+00:08:16,320 --> 00:08:17,685
+height of the smallest device.
+
+157
+00:08:17,685 --> 00:08:18,720
+PETE LEPAGE: OK.
+
+158
+00:08:18,720 --> 00:08:20,210
+MICHAEL ANTHONY: Obviously,
+those are the kind of
+
+159
+00:08:20,210 --> 00:08:22,320
+dimensions that the tracks
+have to fit in.
+
+160
+00:08:22,320 --> 00:08:23,370
+If it was any taller than
+the smallest device, it
+
+161
+00:08:23,370 --> 00:08:24,370
+would look cut off.
+
+162
+00:08:24,370 --> 00:08:25,610
+PETE LEPAGE: Right.
+
+163
+00:08:25,610 --> 00:08:28,050
+MICHAEL ANTHONY: So then once
+it gets all those dimensions
+
+164
+00:08:28,050 --> 00:08:31,860
+and it'll figure out sort of
+what each phone is and where
+
+165
+00:08:31,860 --> 00:08:33,520
+it needs to sit in
+the lineup--
+
+166
+00:08:33,520 --> 00:08:36,490
+and by line up I mean
+when players join--
+
+167
+00:08:36,490 --> 00:08:38,190
+they're assigned a specific
+joining order.
+
+168
+00:08:38,190 --> 00:08:40,815
+And s when it gives you the
+colored screens and tells you
+
+169
+00:08:40,815 --> 00:08:44,049
+you need to reshuffle your phone
+to fit in this order.
+
+170
+00:08:44,049 --> 00:08:47,000
+And that's set up deliberately
+so you get that rainbow color.
+
+171
+00:08:47,000 --> 00:08:49,160
+So it'll always start with blue
+and end with red, and it
+
+172
+00:08:49,160 --> 00:08:52,080
+will add colors in the middle,
+yellow and green and orange.
+
+173
+00:08:52,080 --> 00:08:52,950
+PETE LEPAGE: OK.
+
+174
+00:08:52,950 --> 00:08:56,310
+Now do the players get added in
+the order that they type in
+
+175
+00:08:56,310 --> 00:08:59,980
+their code or is it
+sort of random?
+
+176
+00:08:59,980 --> 00:09:01,460
+ANDY THELANDER: So it's
+based on the color.
+
+177
+00:09:01,460 --> 00:09:03,250
+So if player one joins,
+he'll be blue.
+
+178
+00:09:03,250 --> 00:09:05,230
+If player two joins,
+he'll be red.
+
+179
+00:09:05,230 --> 00:09:07,060
+And if player one leaves
+and then comes back,
+
+180
+00:09:07,060 --> 00:09:07,790
+he'll be blue again.
+
+181
+00:09:07,790 --> 00:09:08,100
+PETE LEPAGE: OK.
+
+182
+00:09:08,100 --> 00:09:10,160
+MICHAEL ANTHONY: And then those
+join in between those
+
+183
+00:09:10,160 --> 00:09:13,100
+two, they get situated in
+between those two colors.
+
+184
+00:09:13,100 --> 00:09:15,660
+So the next player would
+be yellow and then
+
+185
+00:09:15,660 --> 00:09:16,730
+green and then orange.
+
+186
+00:09:16,730 --> 00:09:17,020
+PETE LEPAGE: OK.
+
+187
+00:09:17,020 --> 00:09:18,970
+So player one's always going
+to be on the front.
+
+188
+00:09:18,970 --> 00:09:21,590
+And player two's always going
+to be on the back.
+
+189
+00:09:21,590 --> 00:09:23,570
+And everybody else will
+fit in the middle.
+
+190
+00:09:23,570 --> 00:09:23,940
+MICHAEL ANTHONY: Yup.
+
+191
+00:09:23,940 --> 00:09:24,310
+ANDY THELANDER: Yeah.
+
+192
+00:09:24,310 --> 00:09:25,050
+PETE LEPAGE: OK, cool.
+
+193
+00:09:25,050 --> 00:09:28,590
+Now when I was reading through
+the "HTML5 Rocks" article that
+
+194
+00:09:28,590 --> 00:09:31,360
+you guys wrote, you ended up
+using, I think it was,
+
+195
+00:09:31,360 --> 00:09:34,950
+Paper.js to render the track.
+
+196
+00:09:34,950 --> 00:09:38,540
+So I'm kind of curious why you
+didn't just use the track--
+
+197
+00:09:38,540 --> 00:09:40,840
+and you rendered the
+track with Canvas--
+
+198
+00:09:40,840 --> 00:09:44,860
+why you don't just use that
+SVG element sort of as an
+
+199
+00:09:44,860 --> 00:09:49,590
+image sprite and position it
+and scale it as necessary?
+
+200
+00:09:49,590 --> 00:09:50,040
+MICHAEL ANTHONY: Yeah.
+
+201
+00:09:50,040 --> 00:09:53,050
+I mean, the reason for that is
+Stewart Smith at Creative Lab
+
+202
+00:09:53,050 --> 00:09:54,780
+created the initial prototype
+for the game.
+
+203
+00:09:54,780 --> 00:09:55,720
+He had done it with Paper.
+
+204
+00:09:55,720 --> 00:09:58,920
+And so we kind of just went off
+of what he got working.
+
+205
+00:09:58,920 --> 00:09:59,320
+PETE LEPAGE: OK.
+
+206
+00:09:59,320 --> 00:10:04,300
+MICHAEL ANTHONY: And Paper.js
+actually makes it really easy.
+
+207
+00:10:04,300 --> 00:10:07,650
+SVG would kind of just be raw,
+you put the track on the
+
+208
+00:10:07,650 --> 00:10:09,360
+screen and that's kind
+of all you get.
+
+209
+00:10:09,360 --> 00:10:13,145
+With Paper it's just an amazing
+math library as well.
+
+210
+00:10:13,145 --> 00:10:15,725
+PETE LEPAGE: Oh, OK.
+
+211
+00:10:15,725 --> 00:10:18,210
+MICHAEL ANTHONY: It'll basically
+give us some methods
+
+212
+00:10:18,210 --> 00:10:20,520
+to calculate tangents and arc
+tangents and all kinds of
+
+213
+00:10:20,520 --> 00:10:23,050
+stuff that we need to basically
+move the car each
+
+214
+00:10:23,050 --> 00:10:26,920
+frame and get the position
+rotation x and y values.
+
+215
+00:10:26,920 --> 00:10:27,270
+ANDY THELANDER: Yeah.
+
+216
+00:10:27,270 --> 00:10:30,140
+So Paper.js really helps to
+cost down the track, so we
+
+217
+00:10:30,140 --> 00:10:32,210
+don't need to [INAUDIBLE] the
+image and find out where the
+
+218
+00:10:32,210 --> 00:10:33,360
+points are.
+
+219
+00:10:33,360 --> 00:10:34,725
+We can just give it the
+coordinants, like a
+
+220
+00:10:34,725 --> 00:10:36,245
+percentage-based [INAUDIBLE]
+should be on the track and
+
+221
+00:10:36,245 --> 00:10:37,050
+then it puts it there.
+
+222
+00:10:37,050 --> 00:10:37,840
+MICHAEL ANTHONY:
+Yeah, exactly.
+
+223
+00:10:37,840 --> 00:10:38,570
+PETE LEPAGE: OK.
+
+224
+00:10:38,570 --> 00:10:41,960
+So it provides a lot more
+features in terms of knowing
+
+225
+00:10:41,960 --> 00:10:43,650
+where the car is, which
+direction it's
+
+226
+00:10:43,650 --> 00:10:45,000
+maybe traveling in.
+
+227
+00:10:45,000 --> 00:10:46,070
+MICHAEL ANTHONY: Exactly.
+
+228
+00:10:46,070 --> 00:10:47,510
+PETE LEPAGE: OK, cool.
+
+229
+00:10:47,510 --> 00:10:48,350
+ANDY THELANDER: Because
+I mean, SVG is
+
+230
+00:10:48,350 --> 00:10:51,390
+just made up of curves.
+
+231
+00:10:51,390 --> 00:10:55,450
+And so Paper can hook into that
+and then it can calculate
+
+232
+00:10:55,450 --> 00:10:58,220
+for itself whereabouts
+it needs to be.
+
+233
+00:10:58,220 --> 00:11:00,110
+So it really helped
+in that aspect.
+
+234
+00:11:00,110 --> 00:11:01,580
+PETE LEPAGE: Right, OK.
+
+235
+00:11:01,580 --> 00:11:04,460
+What other things did you find
+Paper was useful for?
+
+236
+00:11:04,460 --> 00:11:05,750
+Or what else did you
+use Paper for?
+
+237
+00:11:05,750 --> 00:11:08,150
+Or was that sort of the
+primary purpose of it?
+
+238
+00:11:08,150 --> 00:11:09,440
+MICHAEL ANTHONY: That was
+the main purpose of it.
+
+239
+00:11:09,440 --> 00:11:12,610
+The other things that it was
+really useful for, so
+
+240
+00:11:12,610 --> 00:11:14,660
+basically we had to make
+the tracks fit across--
+
+241
+00:11:14,660 --> 00:11:18,380
+if you had an iPad and a Nexus
+4 and then if you had iPhone
+
+242
+00:11:18,380 --> 00:11:21,386
+to the mix, the width and height
+of the screen-- we can
+
+243
+00:11:21,386 --> 00:11:23,650
+never assume they were any
+specific dimensions.
+
+244
+00:11:23,650 --> 00:11:27,320
+It had to work across any
+combination of devices.
+
+245
+00:11:27,320 --> 00:11:30,825
+And Paper was awesome because
+we basically had a bunch of
+
+246
+00:11:30,825 --> 00:11:32,960
+different tracks at different
+widths to accommodate the
+
+247
+00:11:32,960 --> 00:11:35,050
+phones from one screen
+to five screen.
+
+248
+00:11:35,050 --> 00:11:37,470
+But we also had to take those
+and kind of stretch them a bit
+
+249
+00:11:37,470 --> 00:11:40,750
+and scale them to fit
+any combination.
+
+250
+00:11:40,750 --> 00:11:44,610
+So Paper was awesome because
+you could apply a scale
+
+251
+00:11:44,610 --> 00:11:48,380
+matrix, and it would directly
+correlate to the car still
+
+252
+00:11:48,380 --> 00:11:49,630
+following around the path.
+
+253
+00:11:49,630 --> 00:11:52,440
+So it made it really, really
+easy to make the car move.
+
+254
+00:11:52,440 --> 00:11:52,980
+PETE LEPAGE: Oh, nice.
+
+255
+00:11:52,980 --> 00:11:54,710
+Cool, cool.
+
+256
+00:11:54,710 --> 00:11:58,310
+Now one of the things that
+you guys did a lot of was
+
+257
+00:11:58,310 --> 00:11:59,310
+animations, right?
+
+258
+00:11:59,310 --> 00:12:02,690
+And this was a pretty
+huge thing.
+
+259
+00:12:02,690 --> 00:12:07,630
+Talk to me a little bit about
+how you animated and got good
+
+260
+00:12:07,630 --> 00:12:12,840
+performance so that you didn't
+have any jankiness.
+
+261
+00:12:12,840 --> 00:12:16,610
+ANDY THELANDER: Yeah, so it's
+just visual chemistry almost
+
+262
+00:12:16,610 --> 00:12:18,070
+between the code.
+
+263
+00:12:18,070 --> 00:12:21,700
+So we apply CSS animations
+with JavaScript.
+
+264
+00:12:21,700 --> 00:12:22,670
+But when you [AUDIO OUT]
+
+265
+00:12:22,670 --> 00:12:24,670
+so that they don't stack up
+and delay each other.
+
+266
+00:12:24,670 --> 00:12:24,940
+PETE LEPAGE: Right.
+
+267
+00:12:24,940 --> 00:12:27,430
+ANDY THELANDER: So you make this
+nice linear path where
+
+268
+00:12:27,430 --> 00:12:29,910
+it's nicely step timed out in
+between each animation.
+
+269
+00:12:29,910 --> 00:12:32,955
+
+270
+00:12:32,955 --> 00:12:36,780
+For process, a heavy JavaScript
+calculations, like
+
+271
+00:12:36,780 --> 00:12:40,780
+building the track, we've had to
+refer it to CSS animations
+
+272
+00:12:40,780 --> 00:12:41,870
+on an infinite loop.
+
+273
+00:12:41,870 --> 00:12:44,180
+Just because it takes away a
+little processing of applying
+
+274
+00:12:44,180 --> 00:12:45,960
+a tween to an object.
+
+275
+00:12:45,960 --> 00:12:46,330
+PETE LEPAGE: Yup.
+
+276
+00:12:46,330 --> 00:12:47,922
+ANDY THELANDER: And just change
+class name name and it
+
+277
+00:12:47,922 --> 00:12:49,410
+just animates.
+
+278
+00:12:49,410 --> 00:12:51,250
+MICHAEL ANTHONY: What's nice
+right now is that on mobile
+
+279
+00:12:51,250 --> 00:12:54,780
+CSS animations will run actually
+in a separate thread
+
+280
+00:12:54,780 --> 00:12:55,750
+to the main UI.
+
+281
+00:12:55,750 --> 00:12:56,920
+So while JavaScript--
+
+282
+00:12:56,920 --> 00:13:01,980
+basically, while it was
+generating that track code,
+
+283
+00:13:01,980 --> 00:13:03,910
+you've got your 16 milliseconds
+frame budget, of
+
+284
+00:13:03,910 --> 00:13:05,530
+course, to get 60 frames
+per second.
+
+285
+00:13:05,530 --> 00:13:09,460
+And I'm sure the track rendering
+was taking up
+
+286
+00:13:09,460 --> 00:13:11,750
+probably at least 50%
+to 80% of that.
+
+287
+00:13:11,750 --> 00:13:12,130
+PETE LEPAGE: Wow.
+
+288
+00:13:12,130 --> 00:13:15,920
+MICHAEL ANTHONY: So if you were
+to use a JavaScript-based
+
+289
+00:13:15,920 --> 00:13:18,400
+time animation frame by frame,
+it would be very janky.
+
+290
+00:13:18,400 --> 00:13:21,090
+But by using the CSS animation
+it was still very smooth
+
+291
+00:13:21,090 --> 00:13:23,490
+because it was running
+separately to the JavaScript
+
+292
+00:13:23,490 --> 00:13:24,080
+processing.
+
+293
+00:13:24,080 --> 00:13:24,950
+PETE LEPAGE: Right.
+
+294
+00:13:24,950 --> 00:13:27,190
+Now in your experience, are
+there places where you would
+
+295
+00:13:27,190 --> 00:13:31,230
+say, I would absolutely say
+you really should use
+
+296
+00:13:31,230 --> 00:13:35,120
+JavaScript animations verses
+CSS animations and places
+
+297
+00:13:35,120 --> 00:13:38,040
+where you should use CSS
+over JavaScript?
+
+298
+00:13:38,040 --> 00:13:42,800
+Because to me it's one of
+those things that CSS is
+
+299
+00:13:42,800 --> 00:13:44,460
+almost always going
+to do it better.
+
+300
+00:13:44,460 --> 00:13:47,820
+But are there places where
+you disagree with that?
+
+301
+00:13:47,820 --> 00:13:48,430
+ANDY THELANDER: So yeah.
+
+302
+00:13:48,430 --> 00:13:51,350
+For CSS betweens we definitely
+use CSS just because it takes
+
+303
+00:13:51,350 --> 00:13:54,430
+no processing from JavaScript,
+and you can do other things in
+
+304
+00:13:54,430 --> 00:13:57,020
+the background.
+
+305
+00:13:57,020 --> 00:13:59,310
+Through JavaScript animation,
+it's probably step-by-step.
+
+306
+00:13:59,310 --> 00:14:04,180
+So scroll sites use a
+lot of JavaScript.
+
+307
+00:14:04,180 --> 00:14:07,030
+And Canvas automation,
+obviously, you need to do it
+
+308
+00:14:07,030 --> 00:14:07,485
+in JavaScripts.
+
+309
+00:14:07,485 --> 00:14:10,140
+But that's really only
+use is when we use
+
+310
+00:14:10,140 --> 00:14:12,740
+requstAnimationFrame
+and update between
+
+311
+00:14:12,740 --> 00:14:14,820
+manually each frame.
+
+312
+00:14:14,820 --> 00:14:16,300
+MICHAEL ANTHONY: If you're just
+moving things around like
+
+313
+00:14:16,300 --> 00:14:20,510
+in Racer when the lobby comes
+in and the bars slide in,
+
+314
+00:14:20,510 --> 00:14:22,170
+that's CSS animation.
+
+315
+00:14:22,170 --> 00:14:23,970
+It's [INAUDIBLE] transitions,
+actually.
+
+316
+00:14:23,970 --> 00:14:25,110
+It's perfect for that.
+
+317
+00:14:25,110 --> 00:14:29,340
+If you're doing a complex
+calculation-type animation
+
+318
+00:14:29,340 --> 00:14:34,230
+where your using Canvas
+or even some sort of--
+
+319
+00:14:34,230 --> 00:14:35,050
+ANDY THELANDER: Like
+the loader.
+
+320
+00:14:35,050 --> 00:14:37,130
+The loader at the start
+is all Canvas.
+
+321
+00:14:37,130 --> 00:14:38,480
+Those 5 lines are [INAUDIBLE]
+
+322
+00:14:38,480 --> 00:14:41,210
+Canvas, just tweening
+a value in a
+
+323
+00:14:41,210 --> 00:14:42,140
+requestAnimationFrame loop.
+
+324
+00:14:42,140 --> 00:14:43,650
+MICHAEL ANTHONY: But the rule of
+thumb is if you can use CSS
+
+325
+00:14:43,650 --> 00:14:45,746
+animations, absolutely do.
+
+326
+00:14:45,746 --> 00:14:46,160
+PETE LEPAGE: Yeah.
+
+327
+00:14:46,160 --> 00:14:46,570
+Cool.
+
+328
+00:14:46,570 --> 00:14:48,570
+That makes sense.
+
+329
+00:14:48,570 --> 00:14:50,630
+Well, let's talk a little
+bit about what's
+
+330
+00:14:50,630 --> 00:14:51,930
+going back and forth.
+
+331
+00:14:51,930 --> 00:14:57,340
+So now that we've got the track
+rendered, we've got our
+
+332
+00:14:57,340 --> 00:15:01,500
+positions on screen, three,
+two, one, like,
+
+333
+00:15:01,500 --> 00:15:02,280
+it's time to go.
+
+334
+00:15:02,280 --> 00:15:04,850
+We've got to start touching
+our screens to
+
+335
+00:15:04,850 --> 00:15:05,890
+make our cars go.
+
+336
+00:15:05,890 --> 00:15:08,780
+What data is going back
+and forth in order
+
+337
+00:15:08,780 --> 00:15:12,100
+to track each car?
+
+338
+00:15:12,100 --> 00:15:14,190
+Yeah, let's start with that.
+
+339
+00:15:14,190 --> 00:15:16,130
+MICHAEL ANTHONY: So let's
+pretend we have
+
+340
+00:15:16,130 --> 00:15:18,014
+a two player race.
+
+341
+00:15:18,014 --> 00:15:21,420
+And both cars are on the
+left screen to start.
+
+342
+00:15:21,420 --> 00:15:24,906
+And then one car moves through
+the left screen and is now on
+
+343
+00:15:24,906 --> 00:15:26,310
+the right screen.
+
+344
+00:15:26,310 --> 00:15:31,020
+Every frame, or every few frames
+let's say, each device
+
+345
+00:15:31,020 --> 00:15:34,230
+looks at which cars are actually
+on the screen.
+
+346
+00:15:34,230 --> 00:15:36,670
+And it bundles all the
+information about cars, their
+
+347
+00:15:36,670 --> 00:15:39,700
+position, their velocity,
+their laps
+
+348
+00:15:39,700 --> 00:15:41,610
+positioning on the track.
+
+349
+00:15:41,610 --> 00:15:44,230
+If it's on that screen, it says
+information out to the
+
+350
+00:15:44,230 --> 00:15:44,870
+other phones.
+
+351
+00:15:44,870 --> 00:15:47,700
+And the other phones update
+their cars with that new
+
+352
+00:15:47,700 --> 00:15:49,040
+information.
+
+353
+00:15:49,040 --> 00:15:49,710
+PETE LEPAGE: OK.
+
+354
+00:15:49,710 --> 00:15:51,790
+MICHAEL ANTHONY: If the car's
+not on the screen, it receives
+
+355
+00:15:51,790 --> 00:15:53,800
+that information from
+the other phone
+
+356
+00:15:53,800 --> 00:15:56,030
+and updates its values.
+
+357
+00:15:56,030 --> 00:16:00,010
+And the reason for this
+is basically when
+
+358
+00:16:00,010 --> 00:16:01,320
+you press the throttle--
+
+359
+00:16:01,320 --> 00:16:03,270
+and that's another event
+that gets sent--
+
+360
+00:16:03,270 --> 00:16:05,540
+you touch and you turn the
+throttle on that message gets
+
+361
+00:16:05,540 --> 00:16:06,580
+sent to all the players.
+
+362
+00:16:06,580 --> 00:16:09,575
+And so each phone individually
+is actually rendering the
+
+363
+00:16:09,575 --> 00:16:13,060
+track just as if you were
+playing with only one player.
+
+364
+00:16:13,060 --> 00:16:17,530
+But let's say it took 20
+milliseconds to receive my
+
+365
+00:16:17,530 --> 00:16:19,645
+throttle event, but your phone
+took 40 milliseconds.
+
+366
+00:16:19,645 --> 00:16:22,870
+So now the cars, they're going
+to start at different times
+
+367
+00:16:22,870 --> 00:16:23,940
+and be out of sync.
+
+368
+00:16:23,940 --> 00:16:24,600
+PETE LEPAGE: OK.
+
+369
+00:16:24,600 --> 00:16:26,700
+MICHAEL ANTHONY: So there's a
+few tricks that'll happen to
+
+370
+00:16:26,700 --> 00:16:30,955
+make up that difference in
+time for when it starts.
+
+371
+00:16:30,955 --> 00:16:33,630
+But even still, as they're
+moving we found that they
+
+372
+00:16:33,630 --> 00:16:35,500
+would kind of come out
+of sync a bit.
+
+373
+00:16:35,500 --> 00:16:39,050
+So when the car's off screen, we
+update it every four frames
+
+374
+00:16:39,050 --> 00:16:42,740
+or so, which actually keeps
+it very, very close.
+
+375
+00:16:42,740 --> 00:16:44,600
+So when it comes time to
+crossover from screen to
+
+376
+00:16:44,600 --> 00:16:46,440
+screen, it's in the
+right place.
+
+377
+00:16:46,440 --> 00:16:48,600
+And then your phone takes
+over and you see it.
+
+378
+00:16:48,600 --> 00:16:50,890
+And the whole things
+appears smooth.
+
+379
+00:16:50,890 --> 00:16:53,210
+PETE LEPAGE: Cool.
+
+380
+00:16:53,210 --> 00:16:56,100
+So when the car is on a
+screen, that screen is
+
+381
+00:16:56,100 --> 00:16:58,730
+responsible for its position.
+
+382
+00:16:58,730 --> 00:16:59,125
+MICHAEL ANTHONY: Yeah.
+
+383
+00:16:59,125 --> 00:16:59,520
+ANDY THELANDER: Yeah.
+
+384
+00:16:59,520 --> 00:17:02,960
+PETE LEPAGE: But then when it
+goes on to another screen, it
+
+385
+00:17:02,960 --> 00:17:03,840
+gets that data.
+
+386
+00:17:03,840 --> 00:17:08,150
+It says, hey where are you,
+every four frames, so much
+
+387
+00:17:08,150 --> 00:17:09,450
+less frequently.
+
+388
+00:17:09,450 --> 00:17:09,850
+MICHAEL ANTHONY: Yeah.
+
+389
+00:17:09,850 --> 00:17:10,650
+ANDY THELANDER: Yeah, exactly.
+
+390
+00:17:10,650 --> 00:17:13,114
+I mean, that's the benefit of
+the concept is that a car can
+
+391
+00:17:13,114 --> 00:17:14,510
+only appear at one
+screen at a time.
+
+392
+00:17:14,510 --> 00:17:17,530
+So we only really need to make
+sure that at that moment on
+
+393
+00:17:17,530 --> 00:17:19,119
+that screen it needs
+to be smooth.
+
+394
+00:17:19,119 --> 00:17:22,150
+Whereas if it's off the screen
+on your phone then it can just
+
+395
+00:17:22,150 --> 00:17:24,310
+jump frame by frame.
+
+396
+00:17:24,310 --> 00:17:24,800
+PETE LEPAGE: Right.
+
+397
+00:17:24,800 --> 00:17:27,450
+That makes sense.
+
+398
+00:17:27,450 --> 00:17:30,080
+So you're obviously using
+WebSockets to send data.
+
+399
+00:17:30,080 --> 00:17:35,060
+What is each, for lack of a
+better term, packet or data
+
+400
+00:17:35,060 --> 00:17:35,740
+chunk look like?
+
+401
+00:17:35,740 --> 00:17:38,950
+What are you sending with
+each particular piece?
+
+402
+00:17:38,950 --> 00:17:40,630
+MICHAEL ANTHONY: It's not
+actually that small.
+
+403
+00:17:40,630 --> 00:17:43,040
+I know with Roll It those guys
+are able to get it super,
+
+404
+00:17:43,040 --> 00:17:44,010
+super tiny [INAUDIBLE].
+
+405
+00:17:44,010 --> 00:17:44,340
+PETE LEPAGE: Yeah.
+
+406
+00:17:44,340 --> 00:17:47,370
+They got it down to, like,
+maybe 20 bytes or
+
+407
+00:17:47,370 --> 00:17:48,590
+something like that.
+
+408
+00:17:48,590 --> 00:17:50,220
+MICHAEL ANTHONY: Yeah, we're
+probably working with a few
+
+409
+00:17:50,220 --> 00:17:51,900
+more than that.
+
+410
+00:17:51,900 --> 00:17:56,340
+Probably not quite a kilobyte,
+maybe somewhere around there.
+
+411
+00:17:56,340 --> 00:18:00,340
+But basically, it was just a
+JavaScript object that was
+
+412
+00:18:00,340 --> 00:18:03,230
+converted to a shrink just with
+JSON and [INAUDIBLE].
+
+413
+00:18:03,230 --> 00:18:04,260
+PETE LEPAGE: OK.
+
+414
+00:18:04,260 --> 00:18:06,500
+MICHAEL ANTHONY: And the
+object contains--
+
+415
+00:18:06,500 --> 00:18:09,220
+actually in some cases it
+was actually pretty big.
+
+416
+00:18:09,220 --> 00:18:12,010
+Because when it was sent
+information about car, let's
+
+417
+00:18:12,010 --> 00:18:13,880
+say one car had all five
+screens, it would have an
+
+418
+00:18:13,880 --> 00:18:19,080
+array with object data with
+position, velocity
+
+419
+00:18:19,080 --> 00:18:19,985
+for each of the cars.
+
+420
+00:18:19,985 --> 00:18:21,450
+PETE LEPAGE: Right.
+
+421
+00:18:21,450 --> 00:18:24,790
+MICHAEL ANTHONY: But at one
+point early on I kind of
+
+422
+00:18:24,790 --> 00:18:28,582
+thought, all right, well
+converting this object to a
+
+423
+00:18:28,582 --> 00:18:30,620
+string might be a little bit too
+verbose and we might need
+
+424
+00:18:30,620 --> 00:18:32,000
+to make it smaller.
+
+425
+00:18:32,000 --> 00:18:35,450
+And then I started thinking
+about coming up with shorthand
+
+426
+00:18:35,450 --> 00:18:37,420
+ways and then parsing that
+on the other phones.
+
+427
+00:18:37,420 --> 00:18:40,020
+But to be honest, it never
+quite got there.
+
+428
+00:18:40,020 --> 00:18:42,986
+The latency issues were solved
+well before we ever had to go
+
+429
+00:18:42,986 --> 00:18:44,790
+down that path of
+optimization.
+
+430
+00:18:44,790 --> 00:18:45,460
+PETE LEPAGE: Interesting.
+
+431
+00:18:45,460 --> 00:18:46,150
+OK.
+
+432
+00:18:46,150 --> 00:18:50,820
+So you've got a JSON object that
+has on array with each
+
+433
+00:18:50,820 --> 00:18:55,960
+car which includes the velocity,
+the location.
+
+434
+00:18:55,960 --> 00:18:59,130
+Are there any other things that
+you're storing in there?
+
+435
+00:18:59,130 --> 00:19:01,910
+MICHAEL ANTHONY: I
+think there's--
+
+436
+00:19:01,910 --> 00:19:03,065
+you know I'm not sure off
+the to of my head.
+
+437
+00:19:03,065 --> 00:19:04,060
+I kind of forget.
+
+438
+00:19:04,060 --> 00:19:07,410
+But I think it was definitely
+the velocity, the x and y
+
+439
+00:19:07,410 --> 00:19:12,820
+position, how far along
+the path it had been.
+
+440
+00:19:12,820 --> 00:19:14,480
+I think that might
+have been it.
+
+441
+00:19:14,480 --> 00:19:15,286
+PETE LEPAGE: OK.
+
+442
+00:19:15,286 --> 00:19:16,220
+ANDY THELANDER: [INAUDIBLE],
+see
+
+443
+00:19:16,220 --> 00:19:17,410
+whether that car is finished.
+
+444
+00:19:17,410 --> 00:19:18,030
+MICHAEL ANTHONY: Oh, yeah.
+
+445
+00:19:18,030 --> 00:19:18,880
+ANDY THELANDER: That's
+pretty much it.
+
+446
+00:19:18,880 --> 00:19:20,610
+PETE LEPAGE: Yeah, I guess
+that make sense, too.
+
+447
+00:19:20,610 --> 00:19:23,260
+So that's tracking
+where the car is.
+
+448
+00:19:23,260 --> 00:19:26,750
+What about the data whether I'm
+on the throttle or not,
+
+449
+00:19:26,750 --> 00:19:28,830
+whether I'm touching
+the screen?
+
+450
+00:19:28,830 --> 00:19:31,160
+MICHAEL ANTHONY: Yeah.
+
+451
+00:19:31,160 --> 00:19:32,820
+That's one of the smaller
+events that gets sent.
+
+452
+00:19:32,820 --> 00:19:36,100
+So as soon as you touch it it
+just sends which player you
+
+453
+00:19:36,100 --> 00:19:38,790
+are, and that you throttled
+on or off.
+
+454
+00:19:38,790 --> 00:19:42,550
+And each device then keeps--
+
+455
+00:19:42,550 --> 00:19:45,116
+when it receives an on event it
+turns the car on, when it
+
+456
+00:19:45,116 --> 00:19:46,800
+sees an off event it
+turns the car off.
+
+457
+00:19:46,800 --> 00:19:47,480
+PETE LEPAGE: OK.
+
+458
+00:19:47,480 --> 00:19:52,170
+So that's just a single toggle
+on, hey, I'm touching.
+
+459
+00:19:52,170 --> 00:19:54,400
+And then there's a
+single toggle off
+
+460
+00:19:54,400 --> 00:19:55,330
+once I've stop touching.
+
+461
+00:19:55,330 --> 00:19:58,410
+So you're not doing a
+continuous, like, I'm
+
+462
+00:19:58,410 --> 00:20:00,130
+touching, touching, touching,
+touching, kind of thing.
+
+463
+00:20:00,130 --> 00:20:00,620
+MICHAEL ANTHONY: Right.
+
+464
+00:20:00,620 --> 00:20:01,530
+PETE LEPAGE: OK.
+
+465
+00:20:01,530 --> 00:20:01,900
+MICHAEL ANTHONY: Yeah.
+
+466
+00:20:01,900 --> 00:20:05,040
+I mean, sending the less
+
+467
+00:20:05,040 --> 00:20:06,670
+messages the better, basically.
+
+468
+00:20:06,670 --> 00:20:08,190
+PETE LEPAGE: Right.
+
+469
+00:20:08,190 --> 00:20:09,080
+Cool.
+
+470
+00:20:09,080 --> 00:20:14,060
+And so does each device only
+have one socket connection up
+
+471
+00:20:14,060 --> 00:20:16,800
+to the server, or are you
+using multiple different
+
+472
+00:20:16,800 --> 00:20:22,550
+sockets, one for the location
+and one for touch and
+
+473
+00:20:22,550 --> 00:20:23,640
+acceleration?
+
+474
+00:20:23,640 --> 00:20:25,530
+MICHAEL ANTHONY: Nope,
+just one socket.
+
+475
+00:20:25,530 --> 00:20:25,910
+PETE LEPAGE: Cool.
+
+476
+00:20:25,910 --> 00:20:29,210
+OK, awesome.
+
+477
+00:20:29,210 --> 00:20:31,920
+So then the server doesn't
+really maintain
+
+478
+00:20:31,920 --> 00:20:33,130
+any state at all.
+
+479
+00:20:33,130 --> 00:20:37,130
+It's sending that data
+back and forth then.
+
+480
+00:20:37,130 --> 00:20:39,030
+MICHAEL ANTHONY: Kind of.
+
+481
+00:20:39,030 --> 00:20:40,786
+It is just a pass through
+for the data.
+
+482
+00:20:40,786 --> 00:20:43,070
+But there's actually quite a
+lot of state on the server
+
+483
+00:20:43,070 --> 00:20:47,090
+related to the game lobby,
+which players are joined.
+
+484
+00:20:47,090 --> 00:20:50,040
+Because the server has to keep
+track of the color order,
+
+485
+00:20:50,040 --> 00:20:50,990
+which is really important.
+
+486
+00:20:50,990 --> 00:20:53,960
+Because it always has to
+maintain that rainbow, HSL,
+
+487
+00:20:53,960 --> 00:20:54,910
+blue to red.
+
+488
+00:20:54,910 --> 00:21:00,680
+So for each game, if someone's
+blue and they leave, it needs
+
+489
+00:21:00,680 --> 00:21:03,470
+to make sure that blue gets
+reassigned for the next person
+
+490
+00:21:03,470 --> 00:21:04,660
+that joins.
+
+491
+00:21:04,660 --> 00:21:09,140
+And also, if players join
+mid-race they basically just
+
+492
+00:21:09,140 --> 00:21:11,400
+see a leader board until
+the race is finished.
+
+493
+00:21:11,400 --> 00:21:13,910
+So it kind of keeps track of
+all these different states.
+
+494
+00:21:13,910 --> 00:21:15,250
+PETE LEPAGE: Oh, OK.
+
+495
+00:21:15,250 --> 00:21:19,980
+So you're not actually showing
+them sort of a version of the
+
+496
+00:21:19,980 --> 00:21:22,520
+board in a small screen
+or anything like that.
+
+497
+00:21:22,520 --> 00:21:24,510
+You're just showing them
+the leader board of
+
+498
+00:21:24,510 --> 00:21:26,210
+who's in front first.
+
+499
+00:21:26,210 --> 00:21:26,495
+MICHAEL ANTHONY: Right.
+
+500
+00:21:26,495 --> 00:21:26,780
+Yup.
+
+501
+00:21:26,780 --> 00:21:27,750
+PETE LEPAGE: OK.
+
+502
+00:21:27,750 --> 00:21:28,760
+Cool.
+
+503
+00:21:28,760 --> 00:21:30,470
+So as you guys were--
+
+504
+00:21:30,470 --> 00:21:32,610
+I'll just sort of mention
+this as you guys
+
+505
+00:21:32,610 --> 00:21:34,250
+are watching at home.
+
+506
+00:21:34,250 --> 00:21:35,670
+Please be sure to post
+your questions.
+
+507
+00:21:35,670 --> 00:21:41,550
+We've got a few questions that
+have popped in here.
+
+508
+00:21:41,550 --> 00:21:44,540
+But the link is just down
+there at the bottom.
+
+509
+00:21:44,540 --> 00:21:47,620
+As you guys were building
+this, what kinds of like
+
+510
+00:21:47,620 --> 00:21:50,660
+performance things were
+you thinking about?
+
+511
+00:21:50,660 --> 00:21:55,430
+And how did you approach
+making sure that the
+
+512
+00:21:55,430 --> 00:21:58,990
+application was just fast,
+it worked really well?
+
+513
+00:21:58,990 --> 00:21:59,270
+ANDY THELANDER: Yeah.
+
+514
+00:21:59,270 --> 00:22:01,300
+So something we had to really
+consider was getting
+
+515
+00:22:01,300 --> 00:22:03,020
+animations timed right.
+
+516
+00:22:03,020 --> 00:22:05,620
+So when the screen goes up and
+when the ready, set, go
+
+517
+00:22:05,620 --> 00:22:07,660
+starts, they need to be
+timed and synced.
+
+518
+00:22:07,660 --> 00:22:10,230
+And so what we do is send out
+a pulse between the devices
+
+519
+00:22:10,230 --> 00:22:13,750
+saying, my animation sequence
+is complete, I'm ready to
+
+520
+00:22:13,750 --> 00:22:14,770
+animate the next sequence.
+
+521
+00:22:14,770 --> 00:22:16,450
+And then that pulse gets sent
+to the other phones.
+
+522
+00:22:16,450 --> 00:22:18,850
+And then once the server
+receives all of that, it sends
+
+523
+00:22:18,850 --> 00:22:22,130
+out the data that the phones
+can now animate
+
+524
+00:22:22,130 --> 00:22:23,450
+the ready, set, go.
+
+525
+00:22:23,450 --> 00:22:24,240
+MICHAEL ANTHONY: And then,
+of course, the animations
+
+526
+00:22:24,240 --> 00:22:28,600
+themselves are all CSS
+transitions or animations.
+
+527
+00:22:28,600 --> 00:22:31,440
+And so that really makes
+a huge difference with
+
+528
+00:22:31,440 --> 00:22:31,930
+performance.
+
+529
+00:22:31,930 --> 00:22:35,520
+And as far as rendering the cars
+along the path, I mean,
+
+530
+00:22:35,520 --> 00:22:39,890
+that was one part that was
+particularly tricky.
+
+531
+00:22:39,890 --> 00:22:43,130
+And what we ended up finding was
+that on iOS, the smoothest
+
+532
+00:22:43,130 --> 00:22:46,470
+way to make the cars accelerate
+was using the
+
+533
+00:22:46,470 --> 00:22:50,510
+translate 3D property and
+a rotation transform.
+
+534
+00:22:50,510 --> 00:22:53,300
+On Android, the fastest way was
+actually to calculate the
+
+535
+00:22:53,300 --> 00:22:55,980
+matrix values directly in
+JavaScript, and then apply it
+
+536
+00:22:55,980 --> 00:22:56,840
+as a transform matrix.
+
+537
+00:22:56,840 --> 00:22:58,550
+PETE LEPAGE: Oh, OK.
+
+538
+00:22:58,550 --> 00:23:01,450
+So a little bit of experimenting
+with each of the
+
+539
+00:23:01,450 --> 00:23:03,790
+different platforms to make sure
+that you've got the best
+
+540
+00:23:03,790 --> 00:23:05,010
+performance.
+
+541
+00:23:05,010 --> 00:23:07,030
+MICHAEL ANTHONY: Lots
+of experimenting.
+
+542
+00:23:07,030 --> 00:23:12,530
+When they demoed it at I/O, we
+were there and we saw it a few
+
+543
+00:23:12,530 --> 00:23:13,260
+days before.
+
+544
+00:23:13,260 --> 00:23:17,080
+And what happened was they
+plugged in video out from each
+
+545
+00:23:17,080 --> 00:23:19,830
+device, which I'm sure everybody
+who's done screen
+
+546
+00:23:19,830 --> 00:23:24,030
+capture realizes that it
+actually saps the power off
+
+547
+00:23:24,030 --> 00:23:27,320
+the devices because now it has
+to render two screens.
+
+548
+00:23:27,320 --> 00:23:30,155
+He actually had to, like, the
+night before kind of figure
+
+549
+00:23:30,155 --> 00:23:30,970
+out-- and that's when
+we figured out the
+
+550
+00:23:30,970 --> 00:23:32,315
+whole matrix thing.
+
+551
+00:23:32,315 --> 00:23:33,300
+PETE LEPAGE: Oh.
+
+552
+00:23:33,300 --> 00:23:35,370
+MICHAEL ANTHONY: Was because,
+OK, now it looks kind of
+
+553
+00:23:35,370 --> 00:23:38,693
+choppy because the video
+out-- and so we had to
+
+554
+00:23:38,693 --> 00:23:40,550
+kind of solve that.
+
+555
+00:23:40,550 --> 00:23:42,375
+PETE LEPAGE: Those are
+always the fun,
+
+556
+00:23:42,375 --> 00:23:43,730
+pre-keynote kinds of things--
+
+557
+00:23:43,730 --> 00:23:44,670
+MICHAEL ANTHONY: Yes.
+
+558
+00:23:44,670 --> 00:23:47,650
+PETE LEPAGE: --and good
+little story for
+
+559
+00:23:47,650 --> 00:23:49,900
+folks who are watching.
+
+560
+00:23:49,900 --> 00:23:53,330
+So there's a question that was
+posted in Google Moderator,
+
+561
+00:23:53,330 --> 00:23:55,270
+and it's from the Florian
+in France.
+
+562
+00:23:55,270 --> 00:23:58,120
+And I'll take a stab
+at answering this.
+
+563
+00:23:58,120 --> 00:24:01,640
+But on Android, Web Audio
+support is behind a flag in
+
+564
+00:24:01,640 --> 00:24:02,710
+Chrome Beta right now.
+
+565
+00:24:02,710 --> 00:24:04,170
+When's it going to
+be available for
+
+566
+00:24:04,170 --> 00:24:06,210
+all users in stable?
+
+567
+00:24:06,210 --> 00:24:08,760
+And Florian, it's coming soon.
+
+568
+00:24:08,760 --> 00:24:11,250
+We don't have a specific
+date on it yet.
+
+569
+00:24:11,250 --> 00:24:13,850
+There's a bunch of sort of
+little technical things that
+
+570
+00:24:13,850 --> 00:24:17,400
+we're just trying to make sure
+that works really well across
+
+571
+00:24:17,400 --> 00:24:18,730
+all devices.
+
+572
+00:24:18,730 --> 00:24:23,050
+So there's a set of device--
+
+573
+00:24:23,050 --> 00:24:27,200
+I think it's part of the CPU
+that's required in order to be
+
+574
+00:24:27,200 --> 00:24:29,090
+able to use Web Audio.
+
+575
+00:24:29,090 --> 00:24:32,730
+And so we're just making sure
+that for devices that have it,
+
+576
+00:24:32,730 --> 00:24:35,360
+we've got a great experience,
+and devices that don't have
+
+577
+00:24:35,360 --> 00:24:37,770
+it, that we have a reasonable
+fallback experience, that
+
+578
+00:24:37,770 --> 00:24:39,430
+there's not going to
+be anything sort
+
+579
+00:24:39,430 --> 00:24:43,100
+of awkward in there.
+
+580
+00:24:43,100 --> 00:24:46,310
+So please keep posting
+your questions.
+
+581
+00:24:46,310 --> 00:24:49,940
+I'm kind of curious a little bit
+for Michael and Andy about
+
+582
+00:24:49,940 --> 00:24:55,400
+your workflow in terms of how
+you went from the prototypes
+
+583
+00:24:55,400 --> 00:25:00,010
+and that stuff to the tools
+that you used and how you
+
+584
+00:25:00,010 --> 00:25:01,860
+actually got everything
+up to the server.
+
+585
+00:25:01,860 --> 00:25:04,890
+What was that process like?
+
+586
+00:25:04,890 --> 00:25:07,500
+ANDY THELANDER: So in terms of
+what programs we used, we used
+
+587
+00:25:07,500 --> 00:25:07,710
+[INAUDIBLE]
+
+588
+00:25:07,710 --> 00:25:11,580
+Studio for an [? ID ?],
+SourceTree through Git, and
+
+589
+00:25:11,580 --> 00:25:12,950
+[INAUDIBLE]
+
+590
+00:25:12,950 --> 00:25:13,590
+machines.
+
+591
+00:25:13,590 --> 00:25:17,120
+But in terms of how we operate,
+when we're developing
+
+592
+00:25:17,120 --> 00:25:19,630
+for mobile we usually do it on
+the desktop just because we
+
+593
+00:25:19,630 --> 00:25:23,280
+find that's the quickest way
+to refresh and just quickly
+
+594
+00:25:23,280 --> 00:25:24,870
+iterate on our code.
+
+595
+00:25:24,870 --> 00:25:27,470
+So for this particular project,
+to simulate multiple
+
+596
+00:25:27,470 --> 00:25:30,380
+devices we had to do multiple
+browser windows.
+
+597
+00:25:30,380 --> 00:25:30,810
+PETE LEPAGE: OK.
+
+598
+00:25:30,810 --> 00:25:32,925
+ANDY THELANDER: That worked
+really well, just because we
+
+599
+00:25:32,925 --> 00:25:35,980
+could line them up like you
+would in an array of devices.
+
+600
+00:25:35,980 --> 00:25:41,150
+And we just set a flag in our
+code, that force mobile, and
+
+601
+00:25:41,150 --> 00:25:45,810
+we can force the mobile layout
+and it's the same as multiple
+
+602
+00:25:45,810 --> 00:25:46,790
+mobile devices.
+
+603
+00:25:46,790 --> 00:25:47,470
+MICHAEL ANTHONY: Right.
+
+604
+00:25:47,470 --> 00:25:50,690
+Yeah, until it actually
+was ready to deploy.
+
+605
+00:25:50,690 --> 00:25:52,430
+And then you test the
+[INAUDIBLE] devices and your
+
+606
+00:25:52,430 --> 00:25:54,840
+like, ah, that animation is
+too complex for mobile and
+
+607
+00:25:54,840 --> 00:25:56,390
+kind of tweak it a bit.
+
+608
+00:25:56,390 --> 00:25:59,360
+But then we eventually had
+this massive array.
+
+609
+00:25:59,360 --> 00:26:01,880
+We had a table just next to our
+desks with this huge array
+
+610
+00:26:01,880 --> 00:26:02,340
+of devices.
+
+611
+00:26:02,340 --> 00:26:03,900
+We had all kinds of Android
+and iOS devices.
+
+612
+00:26:03,900 --> 00:26:05,320
+And we put them in order.
+
+613
+00:26:05,320 --> 00:26:07,180
+And we'd try one player
+to five player to
+
+614
+00:26:07,180 --> 00:26:09,450
+everything in between.
+
+615
+00:26:09,450 --> 00:26:13,230
+And we would work that way.
+
+616
+00:26:13,230 --> 00:26:16,690
+We have a noJS solution that
+we kind of whipped up that
+
+617
+00:26:16,690 --> 00:26:19,510
+basically when we do console.log
+on the device,
+
+618
+00:26:19,510 --> 00:26:22,530
+it'll turn up in our desktop
+Chrome Console and we can
+
+619
+00:26:22,530 --> 00:26:23,700
+inspect objects and such.
+
+620
+00:26:23,700 --> 00:26:25,050
+PETE LEPAGE: Ah, interesting.
+
+621
+00:26:25,050 --> 00:26:25,570
+How did you do that?
+
+622
+00:26:25,570 --> 00:26:28,240
+What was involved in that?
+
+623
+00:26:28,240 --> 00:26:32,440
+MICHAEL ANTHONY: It's just a
+simple Socket.IO noJS server.
+
+624
+00:26:32,440 --> 00:26:34,640
+On the front end it includes a
+script that has Socket.IO.
+
+625
+00:26:34,640 --> 00:26:36,820
+just a tiny bit of logic, and
+just a small bit of logic on
+
+626
+00:26:36,820 --> 00:26:39,410
+the server that basically
+says--
+
+627
+00:26:39,410 --> 00:26:42,350
+on the mobile device it kind
+of hijacks console.log.
+
+628
+00:26:42,350 --> 00:26:45,510
+And instead of doing the
+normal thing, in sends
+
+629
+00:26:45,510 --> 00:26:48,550
+whatever that message was just
+to a socket server, which gets
+
+630
+00:26:48,550 --> 00:26:51,345
+routed to the desktop version
+that knows it's desktop, and
+
+631
+00:26:51,345 --> 00:26:53,100
+it just consoles out
+[INAUDIBLE].
+
+632
+00:26:53,100 --> 00:26:55,080
+PETE LEPAGE: So there you can
+actually see what's going on
+
+633
+00:26:55,080 --> 00:26:56,880
+on each of the different
+devices.
+
+634
+00:26:56,880 --> 00:26:57,240
+MICHAEL ANTHONY: Yeah.
+
+635
+00:26:57,240 --> 00:27:02,820
+It was much easier that way than
+using the Android remote
+
+636
+00:27:02,820 --> 00:27:04,470
+debugging, because that
+would only work on
+
+637
+00:27:04,470 --> 00:27:05,630
+one device at a time.
+
+638
+00:27:05,630 --> 00:27:06,810
+In this case we had five.
+
+639
+00:27:06,810 --> 00:27:08,150
+But there were times
+where we did--
+
+640
+00:27:08,150 --> 00:27:10,300
+OK, we have a rendering issue.
+
+641
+00:27:10,300 --> 00:27:11,390
+We need to see what's
+going on.
+
+642
+00:27:11,390 --> 00:27:14,420
+And we'd plug in an Android
+device to the remote inspector
+
+643
+00:27:14,420 --> 00:27:17,170
+and kind of look at the
+time-line panel and see where
+
+644
+00:27:17,170 --> 00:27:18,730
+the paint was, that
+sort of thing.
+
+645
+00:27:18,730 --> 00:27:19,380
+PETE LEPAGE: Yeah.
+
+646
+00:27:19,380 --> 00:27:21,520
+Interesting.
+
+647
+00:27:21,520 --> 00:27:25,310
+Di you use any other tools
+to help on the mobile?
+
+648
+00:27:25,310 --> 00:27:30,140
+So anything like Adobe's Edge or
+any of the other automation
+
+649
+00:27:30,140 --> 00:27:33,810
+tools or even the Chrome
+Developer Tools for mobile?
+
+650
+00:27:33,810 --> 00:27:35,160
+MICHAEL ANTHONY: We did use the
+Chrome Developer Tools for
+
+651
+00:27:35,160 --> 00:27:35,765
+mobile quite a bit.
+
+652
+00:27:35,765 --> 00:27:37,390
+We didn't use Adobe Edge.
+
+653
+00:27:37,390 --> 00:27:39,350
+I'd actually like to give that
+a try at some point.
+
+654
+00:27:39,350 --> 00:27:44,420
+I'm actually working on
+a little mobile app--
+
+655
+00:27:44,420 --> 00:27:47,810
+I guess it's similar to Adobe
+Edge just because we do a few
+
+656
+00:27:47,810 --> 00:27:50,140
+things kind of weird internally
+that would just
+
+657
+00:27:50,140 --> 00:27:51,090
+automate our process.
+
+658
+00:27:51,090 --> 00:27:52,310
+PETE LEPAGE: Yeah.
+
+659
+00:27:52,310 --> 00:27:53,570
+Cool, cool.
+
+660
+00:27:53,570 --> 00:27:55,380
+That's somewhat useful.
+
+661
+00:27:55,380 --> 00:27:58,620
+Of the Chrome Developer Tools,
+did you find you used any of
+
+662
+00:27:58,620 --> 00:28:02,180
+the emulation features?
+
+663
+00:28:02,180 --> 00:28:05,370
+of the Chrome Developer Tools on
+desktop to try and see how
+
+664
+00:28:05,370 --> 00:28:07,440
+things would behave on mobile?
+
+665
+00:28:07,440 --> 00:28:09,180
+MICHAEL ANTHONY:
+No, we didn't.
+
+666
+00:28:09,180 --> 00:28:11,000
+You just relied on the
+devices themselves.
+
+667
+00:28:11,000 --> 00:28:12,980
+Because in this case, we
+actually had them all.
+
+668
+00:28:12,980 --> 00:28:14,970
+If we didn't have them all,
+we probably would do that.
+
+669
+00:28:14,970 --> 00:28:16,020
+PETE LEPAGE: Yeah.
+
+670
+00:28:16,020 --> 00:28:17,520
+Yeah.
+
+671
+00:28:17,520 --> 00:28:21,550
+So I guess I've got one other
+question for you.
+
+672
+00:28:21,550 --> 00:28:23,446
+Well, I've got two.
+
+673
+00:28:23,446 --> 00:28:27,690
+Of all of the tools that you
+guys have used and all of the
+
+674
+00:28:27,690 --> 00:28:31,250
+APIs and the stuff that's
+available on the web, so
+
+675
+00:28:31,250 --> 00:28:34,900
+anything you wish you had today
+that is not available
+
+676
+00:28:34,900 --> 00:28:38,180
+that would have made
+your lives easier?
+
+677
+00:28:38,180 --> 00:28:39,750
+MICHAEL ANTHONY: Being able to
+know if the device has fallen
+
+678
+00:28:39,750 --> 00:28:40,933
+asleep or not.
+
+679
+00:28:40,933 --> 00:28:41,620
+PETE LEPAGE: Oh, OK.
+
+680
+00:28:41,620 --> 00:28:43,630
+MICHAEL ANTHONY: It sounds
+simple, but it actually is
+
+681
+00:28:43,630 --> 00:28:45,985
+really kind of complex,
+especially when dealing with
+
+682
+00:28:45,985 --> 00:28:46,300
+WebSockets.
+
+683
+00:28:46,300 --> 00:28:49,598
+Because if the device just falls
+asleep on its own, or
+
+684
+00:28:49,598 --> 00:28:51,210
+let's say you get a phone call
+in the middle of the game, the
+
+685
+00:28:51,210 --> 00:28:53,610
+game's broken because your part
+of the track is missing.
+
+686
+00:28:53,610 --> 00:28:55,894
+So we need to send an event to
+tell everybody, hey, you've
+
+687
+00:28:55,894 --> 00:28:57,040
+got to start over.
+
+688
+00:28:57,040 --> 00:28:59,740
+But the problem is when the
+browser goes to sleep, it
+
+689
+00:28:59,740 --> 00:29:03,030
+doesn't actually close
+the WebSocket so
+
+690
+00:29:03,030 --> 00:29:05,340
+there's no way to know.
+
+691
+00:29:05,340 --> 00:29:08,200
+And so what we had to do is on
+the server keep track of
+
+692
+00:29:08,200 --> 00:29:09,370
+basically pulse events.
+
+693
+00:29:09,370 --> 00:29:11,190
+Because it would stop sending
+events, but the socket would
+
+694
+00:29:11,190 --> 00:29:12,090
+remain open.
+
+695
+00:29:12,090 --> 00:29:14,450
+So if it did receive a pulse for
+a certain amount of time,
+
+696
+00:29:14,450 --> 00:29:17,700
+it would basically say, OK, this
+device is disconnected.
+
+697
+00:29:17,700 --> 00:29:22,900
+And also on the client side,
+basically every frame we
+
+698
+00:29:22,900 --> 00:29:25,550
+checked the time stamp and how
+long they'd been since the
+
+699
+00:29:25,550 --> 00:29:26,880
+last frame executed.
+
+700
+00:29:26,880 --> 00:29:28,540
+So if it's been a few seconds,
+you know the
+
+701
+00:29:28,540 --> 00:29:29,720
+device has fallen asleep.
+
+702
+00:29:29,720 --> 00:29:32,550
+And then you can show the
+message saying you need to
+
+703
+00:29:32,550 --> 00:29:34,990
+refresh the page.
+
+704
+00:29:34,990 --> 00:29:36,390
+PETE LEPAGE: That's an
+interesting one.
+
+705
+00:29:36,390 --> 00:29:39,840
+And I've not heard of any
+discussions of that.
+
+706
+00:29:39,840 --> 00:29:41,530
+I would encourage you--
+
+707
+00:29:41,530 --> 00:29:45,435
+and any time as a developer if
+you're watching this show and
+
+708
+00:29:45,435 --> 00:29:48,090
+you're working on something and
+your like, I wish I had
+
+709
+00:29:48,090 --> 00:29:52,880
+this feature, go file a bug
+on the Chromium bugs list.
+
+710
+00:29:52,880 --> 00:29:57,580
+new.crbug.com is the easiest
+way to get a bug filed.
+
+711
+00:29:57,580 --> 00:30:04,860
+new.mcrbug.com is a quick, easy
+way to get a bug filed
+
+712
+00:30:04,860 --> 00:30:06,920
+for mobile Chrome.
+
+713
+00:30:06,920 --> 00:30:08,800
+But that's a great
+feature request.
+
+714
+00:30:08,800 --> 00:30:11,225
+And that's something that I'll
+take back to the team and
+
+715
+00:30:11,225 --> 00:30:12,780
+we'll definitely look into.
+
+716
+00:30:12,780 --> 00:30:13,510
+MICHAEL ANTHONY: Cool.
+
+717
+00:30:13,510 --> 00:30:17,140
+PETE LEPAGE: So my last question
+for you guys, kind of
+
+718
+00:30:17,140 --> 00:30:20,490
+an easy one, what was
+your high score?
+
+719
+00:30:20,490 --> 00:30:24,190
+What do we need to beat
+while trying to play?
+
+720
+00:30:24,190 --> 00:30:25,980
+ANDY THELANDER: Just don't
+fly off the track.
+
+721
+00:30:25,980 --> 00:30:27,670
+MICHAEL ANTHONY: Yeah.
+
+722
+00:30:27,670 --> 00:30:30,417
+ANDY THELANDER: We got pretty
+good at playing the game.
+
+723
+00:30:30,417 --> 00:30:34,410
+If you tap right before you go
+through a corner, it doesn't
+
+724
+00:30:34,410 --> 00:30:35,410
+fly off the track.
+
+725
+00:30:35,410 --> 00:30:36,500
+PETE LEPAGE: OK.
+
+726
+00:30:36,500 --> 00:30:37,890
+MICHAEL ANTHONY: That might
+be how we coded it.
+
+727
+00:30:37,890 --> 00:30:39,330
+We're not too sure.
+
+728
+00:30:39,330 --> 00:30:41,034
+But, yeah, that's [INAUDIBLE].
+
+729
+00:30:41,034 --> 00:30:42,040
+PETE LEPAGE: Not that
+you're giving away,
+
+730
+00:30:42,040 --> 00:30:43,210
+like, any secret hints.
+
+731
+00:30:43,210 --> 00:30:44,710
+Or actually--
+
+732
+00:30:44,710 --> 00:30:45,670
+OK, one more question.
+
+733
+00:30:45,670 --> 00:30:48,530
+Any good cheats or anything like
+that developers should be
+
+734
+00:30:48,530 --> 00:30:51,670
+aware of that they
+can play with?
+
+735
+00:30:51,670 --> 00:30:53,110
+MICHAEL ANTHONY: I don't think
+there's any cheats.
+
+736
+00:30:53,110 --> 00:30:55,140
+ANDY THELANDER: Yeah, no
+Easter eggs there.
+
+737
+00:30:55,140 --> 00:30:57,795
+MICHAEL ANTHONY: It's more like,
+if you tap and release
+
+738
+00:30:57,795 --> 00:31:00,680
+at a steady interval, you're
+not going to fly off.
+
+739
+00:31:00,680 --> 00:31:03,180
+You're going to give up a little
+bit of maximum speed,
+
+740
+00:31:03,180 --> 00:31:04,710
+but you're going to
+be safer that way.
+
+741
+00:31:04,710 --> 00:31:06,190
+PETE LEPAGE: Cool.
+
+742
+00:31:06,190 --> 00:31:07,270
+Awesome.
+
+743
+00:31:07,270 --> 00:31:09,840
+Well, guys thank you very,
+very much for joining us.
+
+744
+00:31:09,840 --> 00:31:13,430
+For those of you who are
+watching at home, you should
+
+745
+00:31:13,430 --> 00:31:17,480
+definitely check out the
+game at g.co/racer.
+
+746
+00:31:17,480 --> 00:31:19,940
+And you should check out the
+"HTML5 Rocks" article that
+
+747
+00:31:19,940 --> 00:31:20,580
+these guys wrote.
+
+748
+00:31:20,580 --> 00:31:22,990
+It was really good, really
+interesting.
+
+749
+00:31:22,990 --> 00:31:24,130
+I learned a little bit.
+
+750
+00:31:24,130 --> 00:31:26,560
+I thought it was a fascinating
+article to
+
+751
+00:31:26,560 --> 00:31:28,070
+get behind the scenes.
+
+752
+00:31:28,070 --> 00:31:29,310
+So with that, I want
+to say thanks
+
+753
+00:31:29,310 --> 00:31:30,580
+everybody for joining us.
+
+754
+00:31:30,580 --> 00:31:33,560
+Thanks to Michael and Andy for
+joining us and getting up
+
+755
+00:31:33,560 --> 00:31:35,800
+early in LA this morning.
+
+756
+00:31:35,800 --> 00:31:36,050
+ANDY THELANDER: Nice.
+
+757
+00:31:36,050 --> 00:31:36,882
+[INAUDIBLE].
+
+758
+00:31:36,882 --> 00:31:39,100
+PETE LEPAGE: And thanks
+everybody.
+
+759
+00:31:39,100 --> 00:31:40,350
+Have a great day.
+
+760
+00:31:40,350 --> 00:31:52,100
+
+761
+00:31:52,100 --> 00:33:17,055
+[MUSIC PLAYING]
+

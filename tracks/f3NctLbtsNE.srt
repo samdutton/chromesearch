@@ -1,0 +1,3939 @@
+1
+00:00:00,000 --> 00:00:01,010
+MALE SPEAKER: OK.
+
+2
+00:00:01,010 --> 00:00:04,200
+So I was going on about the
+offline first stuff earlier.
+
+3
+00:00:04,200 --> 00:00:05,700
+But there's somewhere
+where this has
+
+4
+00:00:05,700 --> 00:00:08,698
+been happening for
+years in Chrome apps.
+
+5
+00:00:08,698 --> 00:00:10,656
+They've been providing
+privileged APIs and sort
+
+6
+00:00:10,656 --> 00:00:14,470
+of showing the open web and
+what it could be in the future.
+
+7
+00:00:14,470 --> 00:00:17,045
+And to talk about that, a
+warm welcome to Joe Marini.
+
+8
+00:00:17,045 --> 00:00:17,545
+[APPLAUSE]
+
+9
+00:00:17,545 --> 00:00:19,765
+JOE MARINI: All right.
+
+10
+00:00:19,765 --> 00:00:21,730
+Hi, everybody.
+
+11
+00:00:21,730 --> 00:00:22,870
+All right.
+
+12
+00:00:22,870 --> 00:00:23,370
+Mic on?
+
+13
+00:00:23,370 --> 00:00:24,791
+You guys can hear me OK?
+
+14
+00:00:24,791 --> 00:00:25,290
+Yeah?
+
+15
+00:00:25,290 --> 00:00:25,550
+All right.
+
+16
+00:00:25,550 --> 00:00:26,290
+How's everyone feeling?
+
+17
+00:00:26,290 --> 00:00:26,970
+AUDIENCE: Woo!
+
+18
+00:00:26,970 --> 00:00:27,710
+JOE MARINI: Good?
+
+19
+00:00:27,710 --> 00:00:28,210
+I know.
+
+20
+00:00:28,210 --> 00:00:29,186
+It's 5 o'clock.
+
+21
+00:00:29,186 --> 00:00:29,685
+I know.
+
+22
+00:00:29,685 --> 00:00:32,759
+You can see I've used my extreme
+clout as a Google speaker
+
+23
+00:00:32,759 --> 00:00:36,780
+to secure the highly
+sought after 5PM slot.
+
+24
+00:00:36,780 --> 00:00:38,840
+I appreciate you guys
+sticking around, though.
+
+25
+00:00:38,840 --> 00:00:39,340
+Yeah.
+
+26
+00:00:39,340 --> 00:00:41,690
+I'm going to be talking
+about Chrome apps today.
+
+27
+00:00:41,690 --> 00:00:42,392
+A couple things.
+
+28
+00:00:42,392 --> 00:00:44,350
+First of all, I'm going
+to try to speak slowly.
+
+29
+00:00:44,350 --> 00:00:45,250
+I am a New Yorker.
+
+30
+00:00:45,250 --> 00:00:48,750
+That does not come easy to
+me, but I'll give it a shot.
+
+31
+00:00:48,750 --> 00:00:50,584
+Second thing, please
+keep your arms and legs
+
+32
+00:00:50,584 --> 00:00:52,874
+next to your seat at all
+times until the presentation's
+
+33
+00:00:52,874 --> 00:00:54,290
+come to a full
+and complete stop.
+
+34
+00:00:54,290 --> 00:00:55,960
+And then we'll go
+into-- we'll do PNaCl,
+
+35
+00:00:55,960 --> 00:00:57,665
+and then we'll have some beers.
+
+36
+00:00:57,665 --> 00:01:00,760
+Just before I get
+started, how many people
+
+37
+00:01:00,760 --> 00:01:03,970
+have heard of Chrome
+packaged apps before today?
+
+38
+00:01:03,970 --> 00:01:04,940
+Wow, everybody.
+
+39
+00:01:04,940 --> 00:01:05,790
+That's fantastic.
+
+40
+00:01:05,790 --> 00:01:06,290
+All right.
+
+41
+00:01:06,290 --> 00:01:07,720
+How many people have gone
+to the Chrome Web Store
+
+42
+00:01:07,720 --> 00:01:09,900
+to get content,
+extensions, apps, whatever?
+
+43
+00:01:09,900 --> 00:01:10,400
+All right.
+
+44
+00:01:10,400 --> 00:01:10,850
+Just about everybody.
+
+45
+00:01:10,850 --> 00:01:11,540
+That's awesome.
+
+46
+00:01:11,540 --> 00:01:13,650
+How about you guys
+in the live stream?
+
+47
+00:01:13,650 --> 00:01:14,790
+Yeah?
+
+48
+00:01:14,790 --> 00:01:16,097
+I'm imagining hands going up.
+
+49
+00:01:16,097 --> 00:01:17,430
+I'm imagining it's a good thing.
+
+50
+00:01:17,430 --> 00:01:18,574
+Awesome, great.
+
+51
+00:01:18,574 --> 00:01:19,240
+OK, that's good.
+
+52
+00:01:19,240 --> 00:01:20,250
+This is me.
+
+53
+00:01:20,250 --> 00:01:23,600
+I'm Developer Relations
+here at Chrome
+
+54
+00:01:23,600 --> 00:01:27,320
+on the Chrome team for Chrome
+apps, extensions, Chrome Web
+
+55
+00:01:27,320 --> 00:01:27,940
+Store.
+
+56
+00:01:27,940 --> 00:01:29,080
+That's my contact info.
+
+57
+00:01:29,080 --> 00:01:31,300
+Please feel free to
+reach out and say hi.
+
+58
+00:01:31,300 --> 00:01:32,250
+I am friendly.
+
+59
+00:01:32,250 --> 00:01:35,694
+I will respond usually nicely.
+
+60
+00:01:35,694 --> 00:01:37,110
+Please feel free
+to ask questions.
+
+61
+00:01:37,110 --> 00:01:38,530
+I love getting questions.
+
+62
+00:01:38,530 --> 00:01:41,110
+So before I would begin,
+I figured three slides in,
+
+63
+00:01:41,110 --> 00:01:43,620
+it's always useful to do demos,
+because I think demos really
+
+64
+00:01:43,620 --> 00:01:46,110
+resonate more than just
+pictures on a slide.
+
+65
+00:01:46,110 --> 00:01:49,850
+So let me just quickly
+show you a couple demos.
+
+66
+00:01:49,850 --> 00:01:52,120
+We've been at Chrome
+Apps for a while now.
+
+67
+00:01:52,120 --> 00:01:54,120
+This is "The Economist" app.
+
+68
+00:01:54,120 --> 00:01:55,145
+You may have seen this.
+
+69
+00:01:55,145 --> 00:01:57,520
+So you can go to the Chrome
+Web Store and get this today.
+
+70
+00:01:57,520 --> 00:01:59,120
+It's basically an app.
+
+71
+00:01:59,120 --> 00:02:01,820
+You notice right away
+there's no URL bar,
+
+72
+00:02:01,820 --> 00:02:05,090
+there's no Back button, right?
+
+73
+00:02:05,090 --> 00:02:08,880
+On the Mac here, there's
+an actual real Menu bar.
+
+74
+00:02:08,880 --> 00:02:12,810
+I can choose a story, I
+can keyboard through it.
+
+75
+00:02:12,810 --> 00:02:15,830
+It's got some nice
+performance there.
+
+76
+00:02:15,830 --> 00:02:16,640
+What else?
+
+77
+00:02:16,640 --> 00:02:18,240
+Let me show you something else.
+
+78
+00:02:18,240 --> 00:02:20,700
+Here is an Internet
+Relay Chat client
+
+79
+00:02:20,700 --> 00:02:23,430
+that we built using Chrome apps.
+
+80
+00:02:23,430 --> 00:02:26,650
+Again, all HTML5,
+all JavaScript.
+
+81
+00:02:26,650 --> 00:02:29,750
+You guys are probably wondering
+what this red light down here
+
+82
+00:02:29,750 --> 00:02:30,250
+is.
+
+83
+00:02:30,250 --> 00:02:32,374
+I was going to show this
+later, but I might as well
+
+84
+00:02:32,374 --> 00:02:33,140
+show it now.
+
+85
+00:02:33,140 --> 00:02:36,970
+So Chrome apps have the ability
+to work with the hardware
+
+86
+00:02:36,970 --> 00:02:37,890
+platform.
+
+87
+00:02:37,890 --> 00:02:39,390
+So what I'm going
+to do is I'm going
+
+88
+00:02:39,390 --> 00:02:41,980
+to jump over to this little
+sub-network I have set up.
+
+89
+00:02:41,980 --> 00:02:44,480
+And I'm going to come
+over to this demo.
+
+90
+00:02:44,480 --> 00:02:47,230
+Philips makes these light
+bulbs that you can actually
+
+91
+00:02:47,230 --> 00:02:48,790
+attach to the
+internet in your house
+
+92
+00:02:48,790 --> 00:02:51,310
+and just control them with
+your smartphone and stuff.
+
+93
+00:02:51,310 --> 00:02:54,690
+So you can see that as I'm
+changing the dials here
+
+94
+00:02:54,690 --> 00:02:56,830
+on my Chrome app, I'm
+actually changing the color.
+
+95
+00:02:56,830 --> 00:02:57,760
+I know, ooh, ah.
+
+96
+00:02:57,760 --> 00:02:58,920
+[APPLAUSE]
+
+97
+00:02:58,920 --> 00:03:00,560
+JOE MARINI: Isn't that cool?
+
+98
+00:03:00,560 --> 00:03:04,180
+Native apps, my friends,
+in HTML5 and JavaScript.
+
+99
+00:03:04,180 --> 00:03:05,930
+But I think probably
+one of the best demos
+
+100
+00:03:05,930 --> 00:03:07,870
+of all-- how many
+people use Sublime?
+
+101
+00:03:07,870 --> 00:03:08,780
+Sublime Text users?
+
+102
+00:03:08,780 --> 00:03:09,280
+Awesome.
+
+103
+00:03:09,280 --> 00:03:09,580
+Yes.
+
+104
+00:03:09,580 --> 00:03:09,820
+Watch.
+
+105
+00:03:09,820 --> 00:03:10,680
+This is really cool.
+
+106
+00:03:10,680 --> 00:03:13,050
+So I'm going to fire
+up Sublime Text.
+
+107
+00:03:13,050 --> 00:03:13,550
+All right.
+
+108
+00:03:13,550 --> 00:03:14,770
+And here' my Sublime editor.
+
+109
+00:03:14,770 --> 00:03:16,280
+I'm going to size
+it down a little
+
+110
+00:03:16,280 --> 00:03:18,170
+bit if I can use my mouse.
+
+111
+00:03:18,170 --> 00:03:19,280
+There we go.
+
+112
+00:03:19,280 --> 00:03:22,866
+So there's Sublime right there.
+
+113
+00:03:22,866 --> 00:03:24,850
+Just make it a
+little bit smaller.
+
+114
+00:03:24,850 --> 00:03:25,530
+All right.
+
+115
+00:03:25,530 --> 00:03:26,850
+And I'm going to go over here.
+
+116
+00:03:26,850 --> 00:03:27,180
+Whoops.
+
+117
+00:03:27,180 --> 00:03:28,260
+And I'm going to
+launch this-- whoops.
+
+118
+00:03:28,260 --> 00:03:29,968
+I'm going to launch
+this other app called
+
+119
+00:03:29,968 --> 00:03:32,450
+Caret, which is a Chrome app.
+
+120
+00:03:32,450 --> 00:03:35,410
+It was built by a guy
+in his spare time,
+
+121
+00:03:35,410 --> 00:03:38,330
+and it's available on the
+Chrome Web Store today.
+
+122
+00:03:38,330 --> 00:03:40,435
+And I've got the two windows.
+
+123
+00:03:40,435 --> 00:03:40,936
+All right.
+
+124
+00:03:40,936 --> 00:03:42,851
+And I'm going to go ahead
+and add a directory.
+
+125
+00:03:42,851 --> 00:03:43,500
+Why not?
+
+126
+00:03:43,500 --> 00:03:44,420
+Sure, that one.
+
+127
+00:03:44,420 --> 00:03:45,721
+That looks great.
+
+128
+00:03:45,721 --> 00:03:46,220
+OK.
+
+129
+00:03:46,220 --> 00:03:47,344
+Which one's the Chrome app?
+
+130
+00:03:47,344 --> 00:03:48,871
+Which one's the native app?
+
+131
+00:03:48,871 --> 00:03:49,370
+Right?
+
+132
+00:03:49,370 --> 00:03:50,870
+Pretty good, huh?
+
+133
+00:03:50,870 --> 00:03:53,230
+I mean, this is
+HTML5 and JavaScript.
+
+134
+00:03:53,230 --> 00:03:55,690
+It's just fantastic stuff.
+
+135
+00:03:55,690 --> 00:03:56,434
+All right.
+
+136
+00:03:56,434 --> 00:03:57,850
+I'm not good enough
+with the mouse
+
+137
+00:03:57,850 --> 00:03:59,100
+to do the three-card monte.
+
+138
+00:03:59,100 --> 00:04:00,380
+Otherwise, I'd spin
+them around and ask
+
+139
+00:04:00,380 --> 00:04:02,421
+you to pick which one was
+which, but I'm actually
+
+140
+00:04:02,421 --> 00:04:03,840
+not going to do that.
+
+141
+00:04:03,840 --> 00:04:04,760
+All right.
+
+142
+00:04:04,760 --> 00:04:08,410
+Let's go back to
+the-- all right.
+
+143
+00:04:08,410 --> 00:04:10,900
+Of course, the question--
+that all looks great,
+
+144
+00:04:10,900 --> 00:04:12,630
+and it performs well.
+
+145
+00:04:12,630 --> 00:04:14,410
+You could see that
+we can do cool stuff.
+
+146
+00:04:14,410 --> 00:04:16,269
+But still, you might
+have this question,
+
+147
+00:04:16,269 --> 00:04:19,720
+like, why would I
+build a Chrome app?
+
+148
+00:04:19,720 --> 00:04:22,470
+Why would I build a native
+app when the web is so great?
+
+149
+00:04:22,470 --> 00:04:23,790
+And the web is great.
+
+150
+00:04:23,790 --> 00:04:24,750
+We don't disagree.
+
+151
+00:04:24,750 --> 00:04:25,600
+We're Google.
+
+152
+00:04:25,600 --> 00:04:26,385
+We love the web.
+
+153
+00:04:26,385 --> 00:04:28,110
+Web apps are fantastic.
+
+154
+00:04:28,110 --> 00:04:30,870
+There's lots of great
+web apps out there today,
+
+155
+00:04:30,870 --> 00:04:33,160
+and they've been
+around for a long time.
+
+156
+00:04:33,160 --> 00:04:36,170
+The problem is that there
+comes a time when web apps just
+
+157
+00:04:36,170 --> 00:04:38,030
+really aren't all that great.
+
+158
+00:04:38,030 --> 00:04:40,270
+There comes a time when
+web apps are decidedly not
+
+159
+00:04:40,270 --> 00:04:42,122
+quite so awesome.
+
+160
+00:04:42,122 --> 00:04:43,080
+Offline is one of them.
+
+161
+00:04:43,080 --> 00:04:44,204
+We've all seen this, right?
+
+162
+00:04:44,204 --> 00:04:46,162
+You're trying to
+use the browser,
+
+163
+00:04:46,162 --> 00:04:48,370
+and you lose the internet
+connection for some reason,
+
+164
+00:04:48,370 --> 00:04:50,350
+and you get this
+nice, white screen.
+
+165
+00:04:50,350 --> 00:04:53,290
+Native apps don't do this.
+
+166
+00:04:53,290 --> 00:04:55,660
+The internet may come
+and go, but they're not
+
+167
+00:04:55,660 --> 00:04:58,370
+doing this white
+error screens for you.
+
+168
+00:04:58,370 --> 00:04:59,200
+Games, right?
+
+169
+00:04:59,200 --> 00:04:59,970
+We all play games.
+
+170
+00:04:59,970 --> 00:05:00,510
+Well, not everybody.
+
+171
+00:05:00,510 --> 00:05:01,676
+But I play games on the web.
+
+172
+00:05:01,676 --> 00:05:03,000
+Web games are great.
+
+173
+00:05:03,000 --> 00:05:06,970
+You got this full keyboard,
+this accurate pointing device.
+
+174
+00:05:06,970 --> 00:05:10,895
+But there are times when
+games are just not as great.
+
+175
+00:05:10,895 --> 00:05:13,020
+Wouldn't it be awesome if
+you could give your users
+
+176
+00:05:13,020 --> 00:05:17,950
+the ability to use real hardware
+controllers and game sticks
+
+177
+00:05:17,950 --> 00:05:19,210
+and so on to play games with?
+
+178
+00:05:19,210 --> 00:05:21,590
+This is really hard
+to do on the Open web.
+
+179
+00:05:21,590 --> 00:05:24,970
+There's some APIs that you
+can use for accessing the game
+
+180
+00:05:24,970 --> 00:05:27,370
+controller API, but not
+everybody supports it.
+
+181
+00:05:27,370 --> 00:05:29,140
+And not all of them
+work, and so on.
+
+182
+00:05:29,140 --> 00:05:32,870
+So there are definitely
+some problems among others.
+
+183
+00:05:32,870 --> 00:05:36,120
+See, these are two of
+the more important ones.
+
+184
+00:05:36,120 --> 00:05:42,100
+So Chrome apps are intended
+to help solve this problem.
+
+185
+00:05:42,100 --> 00:05:44,600
+They run offline by default.
+
+186
+00:05:44,600 --> 00:05:46,310
+They're basically
+designed by default
+
+187
+00:05:46,310 --> 00:05:49,650
+to run when there is
+no internet connection.
+
+188
+00:05:49,650 --> 00:05:51,820
+Because all the resources
+are packaged locally
+
+189
+00:05:51,820 --> 00:05:53,600
+like a regular native app.
+
+190
+00:05:53,600 --> 00:05:57,250
+So offline is a very big
+pillar of how Chrome apps work.
+
+191
+00:05:57,250 --> 00:06:02,020
+They also run across all
+the popular platforms.
+
+192
+00:06:02,020 --> 00:06:05,350
+Out of the box, by default,
+it's HTML5 and JavaScript.
+
+193
+00:06:05,350 --> 00:06:08,370
+You get Mac, Windows,
+Linux, Chrome OS,
+
+194
+00:06:08,370 --> 00:06:11,190
+which is kind of like
+Linux, iOS, and Android.
+
+195
+00:06:11,190 --> 00:06:14,230
+Just out of the box--
+HTML5 and JavaScript.
+
+196
+00:06:14,230 --> 00:06:16,595
+And I'll get into that later.
+
+197
+00:06:16,595 --> 00:06:17,970
+I just showed a
+couple of minutes
+
+198
+00:06:17,970 --> 00:06:20,820
+ago that you have access
+to the native hardware
+
+199
+00:06:20,820 --> 00:06:23,030
+platform and the native OS.
+
+200
+00:06:23,030 --> 00:06:25,410
+So you can do things
+like access the USB port,
+
+201
+00:06:25,410 --> 00:06:27,340
+Bluetooth, the network.
+
+202
+00:06:27,340 --> 00:06:29,340
+So they give you these
+really great capabilities
+
+203
+00:06:29,340 --> 00:06:32,930
+that the native web does not
+yet have, or if it does have,
+
+204
+00:06:32,930 --> 00:06:35,230
+it's kind of spotty.
+
+205
+00:06:35,230 --> 00:06:40,502
+They give you a rich, immersive,
+engaging user experience.
+
+206
+00:06:40,502 --> 00:06:42,210
+Who would have thought
+that someday you'd
+
+207
+00:06:42,210 --> 00:06:44,770
+be able to build
+something like Sublime
+
+208
+00:06:44,770 --> 00:06:48,840
+Text as a native app out
+of HTML5 and JavaScript?
+
+209
+00:06:48,840 --> 00:06:51,350
+I put the two side by side,
+they look really great next
+
+210
+00:06:51,350 --> 00:06:52,120
+to each other.
+
+211
+00:06:52,120 --> 00:06:57,561
+One's native, one's HTML5
+native, but a great experience.
+
+212
+00:06:57,561 --> 00:06:58,060
+Whoops.
+
+213
+00:06:58,060 --> 00:07:00,930
+And finally, one of the
+great things about the web
+
+214
+00:07:00,930 --> 00:07:03,250
+is that you get this
+distribution model where
+
+215
+00:07:03,250 --> 00:07:05,230
+you update your
+code on the server,
+
+216
+00:07:05,230 --> 00:07:07,460
+and then people just
+get the updated app.
+
+217
+00:07:07,460 --> 00:07:08,800
+And that's all great.
+
+218
+00:07:08,800 --> 00:07:11,140
+So the way that we address
+this in Chrome apps
+
+219
+00:07:11,140 --> 00:07:13,320
+is the Chrome Web Store
+handles distribution,
+
+220
+00:07:13,320 --> 00:07:14,610
+it handles updates.
+
+221
+00:07:14,610 --> 00:07:16,599
+So you write your app,
+you put it in the store,
+
+222
+00:07:16,599 --> 00:07:18,140
+people download it,
+they're using it,
+
+223
+00:07:18,140 --> 00:07:20,830
+they're all loving life,
+you ship an update.
+
+224
+00:07:20,830 --> 00:07:24,050
+And then we use the
+same update mechanism
+
+225
+00:07:24,050 --> 00:07:26,080
+that the Google servers
+and Chrome uses.
+
+226
+00:07:26,080 --> 00:07:28,354
+So every, whatever,
+four or five hours,
+
+227
+00:07:28,354 --> 00:07:29,770
+the runtime is
+pinging the server,
+
+228
+00:07:29,770 --> 00:07:31,095
+saying, hey, is there a
+new version, hey, is there
+
+229
+00:07:31,095 --> 00:07:31,880
+a new version?
+
+230
+00:07:31,880 --> 00:07:33,980
+If there is, the user
+gets the updated version,
+
+231
+00:07:33,980 --> 00:07:36,250
+everything's great.
+
+232
+00:07:36,250 --> 00:07:39,610
+These are the kinds of
+issues that Chrome apps are
+
+233
+00:07:39,610 --> 00:07:41,045
+intended to address.
+
+234
+00:07:41,045 --> 00:07:42,150
+All right.
+
+235
+00:07:42,150 --> 00:07:43,580
+Now, I'm assuming
+that many of you
+
+236
+00:07:43,580 --> 00:07:45,880
+probably have existing web apps.
+
+237
+00:07:45,880 --> 00:07:47,380
+And there are some
+differences when
+
+238
+00:07:47,380 --> 00:07:50,402
+you're building native Chrome
+apps using web technologies
+
+239
+00:07:50,402 --> 00:07:51,610
+that you need to be aware of.
+
+240
+00:07:51,610 --> 00:07:53,056
+And I'll cover some of that.
+
+241
+00:07:53,056 --> 00:07:53,930
+So let me just begin.
+
+242
+00:07:53,930 --> 00:07:55,930
+First, let's talk a
+little bit about offline.
+
+243
+00:07:55,930 --> 00:07:57,150
+I'm going to go through
+each one of these
+
+244
+00:07:57,150 --> 00:07:58,420
+in a little bit more depth.
+
+245
+00:07:58,420 --> 00:08:01,540
+So let's talk about for a
+second what offline really
+
+246
+00:08:01,540 --> 00:08:03,700
+means, because offline
+means different things.
+
+247
+00:08:03,700 --> 00:08:06,520
+Yes, there's I
+have no connection.
+
+248
+00:08:06,520 --> 00:08:09,530
+The network cord was
+ripped out, or I'm
+
+249
+00:08:09,530 --> 00:08:13,070
+in some place like the desert
+or an airplane or whatever,
+
+250
+00:08:13,070 --> 00:08:14,970
+and I just don't have
+an internet connection.
+
+251
+00:08:14,970 --> 00:08:16,640
+That's one form of offline.
+
+252
+00:08:16,640 --> 00:08:18,190
+But there's another
+form of offline
+
+253
+00:08:18,190 --> 00:08:20,310
+which is crappy offline.
+
+254
+00:08:20,310 --> 00:08:23,280
+Maybe you're in a cafe, and
+you forgot to tip the barista,
+
+255
+00:08:23,280 --> 00:08:26,530
+and now the Wi-Fi is
+mysteriously not working.
+
+256
+00:08:26,530 --> 00:08:29,600
+Maybe you work with Jake
+in the UK Google office,
+
+257
+00:08:29,600 --> 00:08:31,790
+and you go to the bathroom,
+and there's no internet.
+
+258
+00:08:31,790 --> 00:08:34,450
+Maybe you're in a
+super-oversubscribed awesome
+
+259
+00:08:34,450 --> 00:08:37,159
+conference, and the Wi-Fi
+is really busy in the room.
+
+260
+00:08:37,159 --> 00:08:39,620
+So these are all kinds of
+situations and edge cases
+
+261
+00:08:39,620 --> 00:08:41,606
+where offline really matters.
+
+262
+00:08:41,606 --> 00:08:43,230
+And again, think back
+to using Sublime.
+
+263
+00:08:43,230 --> 00:08:46,450
+You're sitting, typing
+along, the internet goes out.
+
+264
+00:08:46,450 --> 00:08:47,900
+Sublime doesn't care.
+
+265
+00:08:47,900 --> 00:08:50,560
+It's not like it's getting
+its UI from the internet
+
+266
+00:08:50,560 --> 00:08:51,910
+and updating it in real time.
+
+267
+00:08:51,910 --> 00:08:55,090
+You just keep right on working.
+
+268
+00:08:55,090 --> 00:08:57,340
+That's because all those
+resources are stored locally.
+
+269
+00:08:57,340 --> 00:08:59,294
+They're packaged up
+in a package that you
+
+270
+00:08:59,294 --> 00:09:00,835
+don't have to generate
+UI on the fly.
+
+271
+00:09:00,835 --> 00:09:03,960
+You don't have some PHP
+script writing out HTML.
+
+272
+00:09:03,960 --> 00:09:06,470
+So native apps had this
+really great advantage
+
+273
+00:09:06,470 --> 00:09:12,180
+in that regard where they just
+recover from this natively.
+
+274
+00:09:12,180 --> 00:09:14,849
+So in Chrome apps,
+all your resources
+
+275
+00:09:14,849 --> 00:09:16,390
+are packaged up
+locally, and your app
+
+276
+00:09:16,390 --> 00:09:17,970
+can be launched any time.
+
+277
+00:09:17,970 --> 00:09:19,690
+Now, what this means
+is you have to plan
+
+278
+00:09:19,690 --> 00:09:22,070
+for having a great
+offline experience.
+
+279
+00:09:22,070 --> 00:09:24,774
+Not everybody thinks
+about this stuff.
+
+280
+00:09:24,774 --> 00:09:26,190
+The question, of
+course, comes up,
+
+281
+00:09:26,190 --> 00:09:28,890
+well, what about Service
+Worker, what about app cache?
+
+282
+00:09:28,890 --> 00:09:32,480
+Yes, Service Worker, I agree, it
+solves a lot of these problems.
+
+283
+00:09:32,480 --> 00:09:34,790
+There are things where
+Service Worker is great for.
+
+284
+00:09:34,790 --> 00:09:37,870
+But think, it's not just
+a technology problem.
+
+285
+00:09:37,870 --> 00:09:39,880
+It's a user behavior problem.
+
+286
+00:09:39,880 --> 00:09:42,730
+We've spent the last
+20 years teaching users
+
+287
+00:09:42,730 --> 00:09:44,840
+that browsers don't work
+when they're offline.
+
+288
+00:09:44,840 --> 00:09:47,750
+So even if we had perfect
+app cache and Service Worker
+
+289
+00:09:47,750 --> 00:09:52,380
+tomorrow, you'd still have to
+overcome this user inertia of I
+
+290
+00:09:52,380 --> 00:09:56,250
+don't open my browser,
+because why would I.
+
+291
+00:09:56,250 --> 00:09:57,801
+So there's all these issues.
+
+292
+00:09:57,801 --> 00:09:59,550
+So to plan for a great
+offline experience,
+
+293
+00:09:59,550 --> 00:10:01,133
+there's certain
+things you have to do.
+
+294
+00:10:01,133 --> 00:10:03,620
+First, you're going to have
+to factor your app in order
+
+295
+00:10:03,620 --> 00:10:04,540
+to work offline.
+
+296
+00:10:04,540 --> 00:10:07,370
+So take the HTML, separate it
+from the JavaScript, and so on.
+
+297
+00:10:07,370 --> 00:10:09,240
+It's always a good idea
+to abstract the app
+
+298
+00:10:09,240 --> 00:10:12,842
+a little bit so that it's
+talking to a data layer.
+
+299
+00:10:12,842 --> 00:10:14,300
+Think about how
+Sublime is working.
+
+300
+00:10:14,300 --> 00:10:16,480
+You're working on
+your code, it's simply
+
+301
+00:10:16,480 --> 00:10:18,380
+working on the data,
+and then the data layer
+
+302
+00:10:18,380 --> 00:10:20,300
+is handling the part
+of talking to the cloud
+
+303
+00:10:20,300 --> 00:10:22,501
+or talking to local.storage
+or whatever it is.
+
+304
+00:10:22,501 --> 00:10:24,000
+So if you can make
+that abstraction,
+
+305
+00:10:24,000 --> 00:10:25,242
+things get a lot easier.
+
+306
+00:10:25,242 --> 00:10:26,950
+You have to think a
+little bit about what
+
+307
+00:10:26,950 --> 00:10:29,480
+your app's offline
+features are going to be.
+
+308
+00:10:29,480 --> 00:10:31,241
+And yes, some
+applications just don't
+
+309
+00:10:31,241 --> 00:10:32,740
+work very well when
+they're offline,
+
+310
+00:10:32,740 --> 00:10:34,570
+but that doesn't
+mean they're useless.
+
+311
+00:10:34,570 --> 00:10:37,470
+Think about an app like Skype.
+
+312
+00:10:37,470 --> 00:10:39,950
+Skype-- 95% of
+the value of Skype
+
+313
+00:10:39,950 --> 00:10:42,410
+is only there when
+I have a connection.
+
+314
+00:10:42,410 --> 00:10:44,200
+But when I don't
+have a connection,
+
+315
+00:10:44,200 --> 00:10:45,634
+I shouldn't be hosed.
+
+316
+00:10:45,634 --> 00:10:47,800
+I should at least be able
+to manage my contact list,
+
+317
+00:10:47,800 --> 00:10:49,841
+I should at least be able
+to see my call history.
+
+318
+00:10:49,841 --> 00:10:51,490
+So there's still
+some value there.
+
+319
+00:10:51,490 --> 00:10:53,180
+So these are the kinds of things
+you'll have to think about.
+
+320
+00:10:53,180 --> 00:10:54,680
+Like, what kinds
+of features does it
+
+321
+00:10:54,680 --> 00:10:59,640
+makes sense for my app to
+have when it's offline?
+
+322
+00:10:59,640 --> 00:11:01,770
+Since it's Chrome
+and since it's HTML5,
+
+323
+00:11:01,770 --> 00:11:03,160
+you do have access
+to things like
+
+324
+00:11:03,160 --> 00:11:05,100
+the navigator.onLine property.
+
+325
+00:11:05,100 --> 00:11:07,470
+I agree with Jake,
+it's not perfect,
+
+326
+00:11:07,470 --> 00:11:08,844
+it's better than nothing.
+
+327
+00:11:08,844 --> 00:11:11,510
+The good news is that most users
+don't plug their network cables
+
+328
+00:11:11,510 --> 00:11:13,640
+into soil.
+
+329
+00:11:13,640 --> 00:11:15,795
+I've only done it twice,
+and once was by accident.
+
+330
+00:11:15,795 --> 00:11:19,267
+
+331
+00:11:19,267 --> 00:11:20,350
+Most people don't do that.
+
+332
+00:11:20,350 --> 00:11:22,808
+They actually do plug it into
+the wall, they use the Wi-Fi.
+
+333
+00:11:22,808 --> 00:11:24,090
+So it's better than nothing.
+
+334
+00:11:24,090 --> 00:11:26,330
+And we give you lots
+of ways to store data.
+
+335
+00:11:26,330 --> 00:11:28,390
+Now, there's a couple
+things that we don't do.
+
+336
+00:11:28,390 --> 00:11:30,160
+We don't give you
+window.localStorage,
+
+337
+00:11:30,160 --> 00:11:32,930
+because it's synchronous and
+that blocks the UX thread.
+
+338
+00:11:32,930 --> 00:11:35,037
+So we can't have the user
+sitting there twiddling
+
+339
+00:11:35,037 --> 00:11:37,120
+their thumbs while you're
+moving megabytes of data
+
+340
+00:11:37,120 --> 00:11:37,950
+back and forth.
+
+341
+00:11:37,950 --> 00:11:39,620
+So we try to fix
+that by giving you
+
+342
+00:11:39,620 --> 00:11:42,400
+asynchronous versions
+of synchronous APIs
+
+343
+00:11:42,400 --> 00:11:44,280
+that would ordinarily
+be in the web.
+
+344
+00:11:44,280 --> 00:11:47,127
+So for example, we don't
+support synchronous XHR.
+
+345
+00:11:47,127 --> 00:11:47,960
+Who does these days?
+
+346
+00:11:47,960 --> 00:11:48,876
+Why would you do that?
+
+347
+00:11:48,876 --> 00:11:50,890
+So we give you
+asynchronous versions.
+
+348
+00:11:50,890 --> 00:11:53,970
+And chrome.storage.local
+is our asynchronous version
+
+349
+00:11:53,970 --> 00:11:55,960
+of window.localStorage.
+
+350
+00:11:55,960 --> 00:11:59,920
+But you can use IndexedDB, you
+can use the HTML5 file system
+
+351
+00:11:59,920 --> 00:12:01,400
+API.
+
+352
+00:12:01,400 --> 00:12:05,190
+There's lots of different
+ways to store data.
+
+353
+00:12:05,190 --> 00:12:07,250
+And the reason why this
+works is because if you
+
+354
+00:12:07,250 --> 00:12:09,667
+look at the way Chrome
+apps are structured,
+
+355
+00:12:09,667 --> 00:12:12,000
+you basically build them the
+way that you would normally
+
+356
+00:12:12,000 --> 00:12:13,800
+build your web app.
+
+357
+00:12:13,800 --> 00:12:16,990
+You have your HTML, you've
+got your JavaScript,
+
+358
+00:12:16,990 --> 00:12:19,570
+you've got the other assets
+that make up your application.
+
+359
+00:12:19,570 --> 00:12:22,810
+And then all we ask you to do
+is put a little infrastructure
+
+360
+00:12:22,810 --> 00:12:24,020
+around that.
+
+361
+00:12:24,020 --> 00:12:25,870
+There's a manifest
+file that you write
+
+362
+00:12:25,870 --> 00:12:29,490
+that defines what the app is
+and does-- what its name is,
+
+363
+00:12:29,490 --> 00:12:32,240
+what its description is,
+what permissions it has,
+
+364
+00:12:32,240 --> 00:12:34,910
+where the entry points
+are, that kind of stuff.
+
+365
+00:12:34,910 --> 00:12:36,862
+Then there's a file
+that you get to define.
+
+366
+00:12:36,862 --> 00:12:37,820
+I've called it main.js.
+
+367
+00:12:37,820 --> 00:12:39,586
+You can call it
+whatever you want.
+
+368
+00:12:39,586 --> 00:12:40,960
+You specify this
+in the manifest.
+
+369
+00:12:40,960 --> 00:12:44,550
+And that's the file that
+takes care of the entry points
+
+370
+00:12:44,550 --> 00:12:45,630
+into your app.
+
+371
+00:12:45,630 --> 00:12:46,530
+So there's an event.
+
+372
+00:12:46,530 --> 00:12:48,450
+For example, hey,
+map got launched,
+
+373
+00:12:48,450 --> 00:12:51,620
+hey, map got restarted,
+a cloud message came in,
+
+374
+00:12:51,620 --> 00:12:53,070
+an alarm went off.
+
+375
+00:12:53,070 --> 00:12:56,670
+So this is where you handle
+those kinds of events.
+
+376
+00:12:56,670 --> 00:13:00,050
+That's what is all wrapped
+up into a zip file.
+
+377
+00:13:00,050 --> 00:13:02,600
+So all of that gets
+packaged up into a zip.
+
+378
+00:13:02,600 --> 00:13:04,540
+That goes up to the
+Chrome Web Store.
+
+379
+00:13:04,540 --> 00:13:06,080
+And then you're in business.
+
+380
+00:13:06,080 --> 00:13:08,950
+We spend an hour
+scanning your zip file,
+
+381
+00:13:08,950 --> 00:13:11,930
+making sure you're not trying
+to, like, I don't know,
+
+382
+00:13:11,930 --> 00:13:14,047
+steal people's email
+addresses or whatever.
+
+383
+00:13:14,047 --> 00:13:15,630
+We do a whole bunch
+of security scans,
+
+384
+00:13:15,630 --> 00:13:16,870
+and then you're published.
+
+385
+00:13:16,870 --> 00:13:18,550
+We don't review
+your app, we don't
+
+386
+00:13:18,550 --> 00:13:20,420
+do any of that in-depth stuff.
+
+387
+00:13:20,420 --> 00:13:23,170
+You're good to go.
+
+388
+00:13:23,170 --> 00:13:27,710
+So to take an example, here's
+the Chrome Storage API.
+
+389
+00:13:27,710 --> 00:13:30,290
+So you could see that
+normally, if I had a form
+
+390
+00:13:30,290 --> 00:13:32,360
+and I wanted to save
+some data in the form,
+
+391
+00:13:32,360 --> 00:13:35,080
+I would just get the value
+out of some text area.
+
+392
+00:13:35,080 --> 00:13:41,420
+And then the chrome.storage
+API version of this function
+
+393
+00:13:41,420 --> 00:13:44,160
+simply takes an object
+with properties in it.
+
+394
+00:13:44,160 --> 00:13:46,290
+And it's asynchronous,
+so there's
+
+395
+00:13:46,290 --> 00:13:48,040
+a callback function
+for when it completes.
+
+396
+00:13:48,040 --> 00:13:49,206
+If you care about it, great.
+
+397
+00:13:49,206 --> 00:13:50,760
+If not, it goes
+on its merry way.
+
+398
+00:13:50,760 --> 00:13:52,010
+And your app is good to go.
+
+399
+00:13:52,010 --> 00:13:52,530
+OK.
+
+400
+00:13:52,530 --> 00:13:55,600
+So very heavy emphasis
+on asynchronous stuff.
+
+401
+00:13:55,600 --> 00:13:57,700
+In addition to being
+offline by default,
+
+402
+00:13:57,700 --> 00:13:59,710
+we are cross-platform
+by default.
+
+403
+00:13:59,710 --> 00:14:01,510
+And I talked about
+this a few seconds ago.
+
+404
+00:14:01,510 --> 00:14:03,595
+If you think back
+to what you used
+
+405
+00:14:03,595 --> 00:14:07,030
+to have to do to build native
+apps, like a long time ago.
+
+406
+00:14:07,030 --> 00:14:09,740
+If you wanted to build a rich
+native experience-- and I'm
+
+407
+00:14:09,740 --> 00:14:11,420
+talking about a long time ago.
+
+408
+00:14:11,420 --> 00:14:13,262
+I know many of you
+were not born when
+
+409
+00:14:13,262 --> 00:14:14,720
+I'm talking about
+this time period.
+
+410
+00:14:14,720 --> 00:14:16,330
+But there was a time
+when all you did
+
+411
+00:14:16,330 --> 00:14:18,550
+was target, basically, Windows.
+
+412
+00:14:18,550 --> 00:14:20,060
+You built a native
+app for Windows.
+
+413
+00:14:20,060 --> 00:14:21,851
+If you really cared
+about the 10% of people
+
+414
+00:14:21,851 --> 00:14:24,290
+that didn't have Windows,
+you built a Mac version.
+
+415
+00:14:24,290 --> 00:14:27,580
+And that was native
+apps like some time ago.
+
+416
+00:14:27,580 --> 00:14:29,370
+Now, contrast that with today.
+
+417
+00:14:29,370 --> 00:14:31,370
+Today you've still
+got Windows, but you
+
+418
+00:14:31,370 --> 00:14:33,580
+have multiple
+versions of Windows.
+
+419
+00:14:33,580 --> 00:14:35,390
+You still get the
+Mac, but there's
+
+420
+00:14:35,390 --> 00:14:37,360
+multiple versions of the Mac.
+
+421
+00:14:37,360 --> 00:14:39,730
+Then there's iOS,
+and there's Android.
+
+422
+00:14:39,730 --> 00:14:42,500
+Now we've got all these
+great mobile platforms
+
+423
+00:14:42,500 --> 00:14:43,960
+that are coming up.
+
+424
+00:14:43,960 --> 00:14:45,184
+Linux is in the mix.
+
+425
+00:14:45,184 --> 00:14:46,100
+What does Ubuntu have?
+
+426
+00:14:46,100 --> 00:14:47,202
+20, 25 million users.
+
+427
+00:14:47,202 --> 00:14:49,160
+There's a lot of people
+out there who use this.
+
+428
+00:14:49,160 --> 00:14:51,310
+And then, of course,
+there's Chromebooks.
+
+429
+00:14:51,310 --> 00:14:53,910
+Four out of the top five
+selling laptops on Amazon
+
+430
+00:14:53,910 --> 00:14:55,240
+right now are Chromebooks.
+
+431
+00:14:55,240 --> 00:14:56,770
+Hard to believe, but it's true.
+
+432
+00:14:56,770 --> 00:14:59,879
+So you've got all
+these rich platforms
+
+433
+00:14:59,879 --> 00:15:02,170
+that you would have to deliver
+a native experience for.
+
+434
+00:15:02,170 --> 00:15:03,654
+And there's costs involved here.
+
+435
+00:15:03,654 --> 00:15:05,320
+Just on this screen
+alone, there's what?
+
+436
+00:15:05,320 --> 00:15:11,440
+There's Objective C, C#, Java,
+C++, all kinds of native APIs.
+
+437
+00:15:11,440 --> 00:15:13,029
+They're different
+for each platform.
+
+438
+00:15:13,029 --> 00:15:14,570
+And then there's
+all the hidden costs
+
+439
+00:15:14,570 --> 00:15:17,460
+that developers never think
+about like building installers,
+
+440
+00:15:17,460 --> 00:15:18,940
+building updaters.
+
+441
+00:15:18,940 --> 00:15:21,750
+A long time ago, I worked at
+Macromedia on Dreamweaver,
+
+442
+00:15:21,750 --> 00:15:23,720
+and I was tagged as
+the installer guy.
+
+443
+00:15:23,720 --> 00:15:26,170
+You don't ever want to be
+tagged as the installer guy.
+
+444
+00:15:26,170 --> 00:15:29,370
+You will never get away from
+being the installer guy.
+
+445
+00:15:29,370 --> 00:15:31,371
+Every question comes to
+you about the installer.
+
+446
+00:15:31,371 --> 00:15:32,745
+But these are the
+kinds of things
+
+447
+00:15:32,745 --> 00:15:34,210
+that Chrome apps
+get you away from.
+
+448
+00:15:34,210 --> 00:15:36,334
+We handle the installation,
+we handle the updating,
+
+449
+00:15:36,334 --> 00:15:38,720
+we handle the
+cross-platform stuff.
+
+450
+00:15:38,720 --> 00:15:41,560
+It's another great
+advantage of Chrome apps.
+
+451
+00:15:41,560 --> 00:15:43,590
+In addition to being
+offline and cross-platform,
+
+452
+00:15:43,590 --> 00:15:47,590
+we have a very heavy emphasis on
+being cloud-enabled by default.
+
+453
+00:15:47,590 --> 00:15:49,790
+And that's because users
+increasingly expect this.
+
+454
+00:15:49,790 --> 00:15:51,430
+They expect that their data's
+going to be in the cloud.
+
+455
+00:15:51,430 --> 00:15:53,042
+They expect it's
+going to be synced.
+
+456
+00:15:53,042 --> 00:15:54,500
+And we give you a
+bunch of features
+
+457
+00:15:54,500 --> 00:15:56,187
+that let you
+leverage this stuff.
+
+458
+00:15:56,187 --> 00:15:57,770
+So I talked a little
+bit earlier about
+
+459
+00:15:57,770 --> 00:15:59,390
+the chrome.storage.local API.
+
+460
+00:15:59,390 --> 00:16:00,570
+There's also a sync version.
+
+461
+00:16:00,570 --> 00:16:02,340
+You guys notice that
+when you're using Chrome,
+
+462
+00:16:02,340 --> 00:16:03,830
+you have all these
+bookmarks, and you've
+
+463
+00:16:03,830 --> 00:16:05,330
+got different versions
+of your-- you know,
+
+464
+00:16:05,330 --> 00:16:06,996
+you've got different
+computers, and they
+
+465
+00:16:06,996 --> 00:16:08,490
+all sync across
+all your Chromes.
+
+466
+00:16:08,490 --> 00:16:09,810
+We just give that to you.
+
+467
+00:16:09,810 --> 00:16:11,060
+We give you an infrastructure.
+
+468
+00:16:11,060 --> 00:16:13,920
+So all you got to do is call
+a few lines of JavaScript,
+
+469
+00:16:13,920 --> 00:16:15,800
+and your data and
+preferences and properties
+
+470
+00:16:15,800 --> 00:16:17,750
+get synced across
+your application.
+
+471
+00:16:17,750 --> 00:16:20,022
+No special work you have to do.
+
+472
+00:16:20,022 --> 00:16:21,230
+That's for smaller data sets.
+
+473
+00:16:21,230 --> 00:16:23,730
+For larger data sets,
+there's a sync version
+
+474
+00:16:23,730 --> 00:16:26,660
+of the HTML5 file system.
+
+475
+00:16:26,660 --> 00:16:29,870
+So you could store megabytes of
+data, and it's backed by Drive.
+
+476
+00:16:29,870 --> 00:16:31,484
+Now, today it's backed by Drive.
+
+477
+00:16:31,484 --> 00:16:32,150
+It's extensible.
+
+478
+00:16:32,150 --> 00:16:34,930
+So if somebody else wants to
+build a syncing architecture,
+
+479
+00:16:34,930 --> 00:16:35,650
+they can do it.
+
+480
+00:16:35,650 --> 00:16:38,160
+But out of the box,
+it's backed by Drive.
+
+481
+00:16:38,160 --> 00:16:40,829
+There's a Cloud Push Messaging
+API built into Chrome apps.
+
+482
+00:16:40,829 --> 00:16:42,870
+This is one of the cool
+things about Chrome apps.
+
+483
+00:16:42,870 --> 00:16:45,054
+Let's suppose your app
+isn't even running.
+
+484
+00:16:45,054 --> 00:16:47,470
+The user's got their laptop
+open, they're doing something,
+
+485
+00:16:47,470 --> 00:16:49,120
+but they haven't
+launched your app yet.
+
+486
+00:16:49,120 --> 00:16:51,420
+The Chrome runtime is running,
+though, and it's listening.
+
+487
+00:16:51,420 --> 00:16:53,170
+So you could actually
+send a cloud message
+
+488
+00:16:53,170 --> 00:16:55,650
+through our servers
+to the Chrome runtime.
+
+489
+00:16:55,650 --> 00:16:57,717
+Chrome will wake
+your app up, tell it
+
+490
+00:16:57,717 --> 00:16:59,550
+that it got a message,
+which is really cool.
+
+491
+00:16:59,550 --> 00:17:01,260
+You can't do that on
+the Open Web today.
+
+492
+00:17:01,260 --> 00:17:03,676
+There's no way for a web app
+to wake the browser up and be
+
+493
+00:17:03,676 --> 00:17:05,510
+like, hey, go to this URL.
+
+494
+00:17:05,510 --> 00:17:06,614
+That would be scary.
+
+495
+00:17:06,614 --> 00:17:07,780
+But Chrome apps can do that.
+
+496
+00:17:07,780 --> 00:17:09,800
+Chrome apps can listen
+to cloud messages.
+
+497
+00:17:09,800 --> 00:17:11,250
+There's an Identity API.
+
+498
+00:17:11,250 --> 00:17:13,829
+Who loves writing OAuth code?
+
+499
+00:17:13,829 --> 00:17:14,589
+Loves it?
+
+500
+00:17:14,589 --> 00:17:16,510
+Yeah, I don't either.
+
+501
+00:17:16,510 --> 00:17:18,280
+We've got an API
+that handles this.
+
+502
+00:17:18,280 --> 00:17:21,050
+So doing things like
+authenticating users
+
+503
+00:17:21,050 --> 00:17:22,260
+is easy in Chrome apps.
+
+504
+00:17:22,260 --> 00:17:25,432
+We have one API function that's
+specific to Google services.
+
+505
+00:17:25,432 --> 00:17:27,890
+And because you're signed in
+when you're using Chrome apps,
+
+506
+00:17:27,890 --> 00:17:30,380
+basically, what happens is you
+call this function, you say,
+
+507
+00:17:30,380 --> 00:17:31,870
+I want to see who the user is.
+
+508
+00:17:31,870 --> 00:17:33,995
+You get the token back,
+and then off you go.
+
+509
+00:17:33,995 --> 00:17:36,620
+There's also a function that you
+call for third-party services.
+
+510
+00:17:36,620 --> 00:17:38,161
+So if you want to
+authenticate using,
+
+511
+00:17:38,161 --> 00:17:40,460
+I don't know,
+Twitter or whatever,
+
+512
+00:17:40,460 --> 00:17:42,150
+there's a way to do that.
+
+513
+00:17:42,150 --> 00:17:45,370
+So just to give you an idea
+of what this looks like,
+
+514
+00:17:45,370 --> 00:17:48,330
+for the syncFilesystem,
+the first example
+
+515
+00:17:48,330 --> 00:17:50,065
+shows how to use the
+synchronized file
+
+516
+00:17:50,065 --> 00:17:51,350
+system to sync data.
+
+517
+00:17:51,350 --> 00:17:53,840
+The first line basically says,
+Set the conflict resolution
+
+518
+00:17:53,840 --> 00:17:54,635
+policy.
+
+519
+00:17:54,635 --> 00:17:57,010
+These are things you have to
+think about, data conflicts.
+
+520
+00:17:57,010 --> 00:17:57,810
+And have a choice.
+
+521
+00:17:57,810 --> 00:18:00,510
+You can say, you know what,
+I want the last write to win.
+
+522
+00:18:00,510 --> 00:18:02,170
+Or you can say, you know
+what, I'll just handle it,
+
+523
+00:18:02,170 --> 00:18:03,044
+don't worry about it.
+
+524
+00:18:03,044 --> 00:18:05,240
+But then once you
+have that, you just
+
+525
+00:18:05,240 --> 00:18:07,950
+simply call Request file
+system like you ordinarily
+
+526
+00:18:07,950 --> 00:18:10,860
+would on any other
+HTML5 file system API.
+
+527
+00:18:10,860 --> 00:18:12,540
+You get an FS object back.
+
+528
+00:18:12,540 --> 00:18:13,690
+And then you're working
+with the file system.
+
+529
+00:18:13,690 --> 00:18:15,148
+So it's like any
+other file system,
+
+530
+00:18:15,148 --> 00:18:17,400
+only this one is
+synced just for you.
+
+531
+00:18:17,400 --> 00:18:19,230
+Just taken care of.
+
+532
+00:18:19,230 --> 00:18:22,160
+For Identity, the
+two APIs I talked
+
+533
+00:18:22,160 --> 00:18:23,910
+about, the first one,
+getAuthToken, that's
+
+534
+00:18:23,910 --> 00:18:25,220
+for the Google services.
+
+535
+00:18:25,220 --> 00:18:27,980
+So if I'm signed in
+with my Gmail account,
+
+536
+00:18:27,980 --> 00:18:29,649
+whatever, I just
+call this function,
+
+537
+00:18:29,649 --> 00:18:32,190
+and I can specify whether I want
+it to be interactive or not.
+
+538
+00:18:32,190 --> 00:18:33,750
+And then there's a
+callback function.
+
+539
+00:18:33,750 --> 00:18:35,510
+There's that
+asynchronicity again.
+
+540
+00:18:35,510 --> 00:18:37,880
+The second version,
+the launchWebAuthFlow,
+
+541
+00:18:37,880 --> 00:18:40,170
+that's the third-party version.
+
+542
+00:18:40,170 --> 00:18:43,080
+And so because what happens
+in OAuth normally is you
+
+543
+00:18:43,080 --> 00:18:46,460
+have this redirect URL where the
+third-party service calls back
+
+544
+00:18:46,460 --> 00:18:47,370
+to.
+
+545
+00:18:47,370 --> 00:18:50,440
+This is an app, so there's
+no web page to do this.
+
+546
+00:18:50,440 --> 00:18:51,890
+We have this
+function right here.
+
+547
+00:18:51,890 --> 00:18:54,330
+There's a callback function
+that takes the redirect URL.
+
+548
+00:18:54,330 --> 00:18:56,580
+So when that gets called,
+all you do is get the token,
+
+549
+00:18:56,580 --> 00:18:57,705
+and you're off and running.
+
+550
+00:18:57,705 --> 00:18:59,150
+You're signed in.
+
+551
+00:18:59,150 --> 00:19:01,830
+Pretty straightforward.
+
+552
+00:19:01,830 --> 00:19:02,330
+All right.
+
+553
+00:19:02,330 --> 00:19:02,920
+How am I doing on time?
+
+554
+00:19:02,920 --> 00:19:03,185
+Good.
+
+555
+00:19:03,185 --> 00:19:03,685
+All right.
+
+556
+00:19:03,685 --> 00:19:06,230
+So I talked a little bit about
+immersive user experience.
+
+557
+00:19:06,230 --> 00:19:08,900
+Chrome apps obviously
+live outside the browser.
+
+558
+00:19:08,900 --> 00:19:11,390
+They can have richer
+interfaces, experiences.
+
+559
+00:19:11,390 --> 00:19:12,890
+This, of course,
+means that your app
+
+560
+00:19:12,890 --> 00:19:14,431
+is going to be
+responsible for things
+
+561
+00:19:14,431 --> 00:19:16,510
+that it was not responsible
+for in the past.
+
+562
+00:19:16,510 --> 00:19:18,700
+And it's important to
+remember that users,
+
+563
+00:19:18,700 --> 00:19:20,400
+they just have
+different expectations
+
+564
+00:19:20,400 --> 00:19:22,140
+of apps versus websites.
+
+565
+00:19:22,140 --> 00:19:24,860
+They expect deeper
+platform integration,
+
+566
+00:19:24,860 --> 00:19:27,407
+they expect better
+performance from a native app.
+
+567
+00:19:27,407 --> 00:19:29,740
+Even though users want great
+performance from web apps--
+
+568
+00:19:29,740 --> 00:19:31,989
+I don't want Cole to come
+running up here and smack me
+
+569
+00:19:31,989 --> 00:19:33,377
+in the head-- but yeah.
+
+570
+00:19:33,377 --> 00:19:35,210
+They expect great
+performance from web apps,
+
+571
+00:19:35,210 --> 00:19:37,709
+but users basically
+understand, I click a button,
+
+572
+00:19:37,709 --> 00:19:40,250
+it's got to go to the server,
+get the content, and come back.
+
+573
+00:19:40,250 --> 00:19:42,520
+Native apps, they don't
+have that expectation.
+
+574
+00:19:42,520 --> 00:19:45,411
+No one expects, like, a text
+editor to go off to the web
+
+575
+00:19:45,411 --> 00:19:46,660
+and get content and come back.
+
+576
+00:19:46,660 --> 00:19:48,080
+They want responsiveness.
+
+577
+00:19:48,080 --> 00:19:50,000
+So they expect that,
+because users just
+
+578
+00:19:50,000 --> 00:19:53,200
+aren't in a browser frame of
+mind when they're using an app.
+
+579
+00:19:53,200 --> 00:19:55,160
+They're just not
+thinking in that mindset.
+
+580
+00:19:55,160 --> 00:19:56,701
+They're using an
+app, and they expect
+
+581
+00:19:56,701 --> 00:19:59,620
+it to work flawlessly
+and quickly.
+
+582
+00:19:59,620 --> 00:20:02,790
+So we give you some APIs to
+help out with this a lot.
+
+583
+00:20:02,790 --> 00:20:05,770
+So first, we give you
+a full windowing API
+
+584
+00:20:05,770 --> 00:20:07,200
+to manage your app's windows.
+
+585
+00:20:07,200 --> 00:20:10,400
+So you can do things like
+see how big the screen is,
+
+586
+00:20:10,400 --> 00:20:12,540
+see how many screens there are.
+
+587
+00:20:12,540 --> 00:20:14,940
+You can do things
+like figure out where
+
+588
+00:20:14,940 --> 00:20:16,807
+to put initial windows.
+
+589
+00:20:16,807 --> 00:20:18,890
+You need to remember--
+this is an important thing.
+
+590
+00:20:18,890 --> 00:20:20,806
+This is an example of
+something that's subtle,
+
+591
+00:20:20,806 --> 00:20:22,220
+but users expect this.
+
+592
+00:20:22,220 --> 00:20:23,990
+In the past, the
+browser basically
+
+593
+00:20:23,990 --> 00:20:26,480
+said, here's your window
+and here's where you are,
+
+594
+00:20:26,480 --> 00:20:27,561
+and here's how big it is.
+
+595
+00:20:27,561 --> 00:20:29,060
+And your web app
+was like, oh, OK, I
+
+596
+00:20:29,060 --> 00:20:30,580
+guess this is
+where my window is.
+
+597
+00:20:30,580 --> 00:20:32,630
+Well, apps don't work like that.
+
+598
+00:20:32,630 --> 00:20:35,617
+Imagine how frustrating it
+would be if every time you
+
+599
+00:20:35,617 --> 00:20:38,200
+open Sublime, you get it right
+where it is, you get the window
+
+600
+00:20:38,200 --> 00:20:40,560
+size, you close it, it
+comes back up again,
+
+601
+00:20:40,560 --> 00:20:41,425
+and it's this big.
+
+602
+00:20:41,425 --> 00:20:43,050
+That would drive you
+nuts, wouldn't it?
+
+603
+00:20:43,050 --> 00:20:45,140
+Well, it's going to drive
+Chrome app users nuts, too.
+
+604
+00:20:45,140 --> 00:20:47,390
+So you have to remember
+things like remembering window
+
+605
+00:20:47,390 --> 00:20:48,930
+location, remembering size.
+
+606
+00:20:48,930 --> 00:20:51,710
+Now, the good news is we'll
+do that automatically for you
+
+607
+00:20:51,710 --> 00:20:53,417
+if you give your windows IDs.
+
+608
+00:20:53,417 --> 00:20:55,750
+So there's not a whole lot
+of work involved on your end.
+
+609
+00:20:55,750 --> 00:20:58,550
+But examples of things
+that people expect.
+
+610
+00:20:58,550 --> 00:21:01,060
+You can control whether
+the OS title bar is shown.
+
+611
+00:21:01,060 --> 00:21:02,910
+You don't like the title
+bar, don't show it.
+
+612
+00:21:02,910 --> 00:21:03,520
+Make your own.
+
+613
+00:21:03,520 --> 00:21:04,404
+It's HTML.
+
+614
+00:21:04,404 --> 00:21:05,820
+And then what we
+do is we give you
+
+615
+00:21:05,820 --> 00:21:08,920
+this little
+-webkit-app-region, whatever.
+
+616
+00:21:08,920 --> 00:21:11,290
+You specify that the drag
+property on whatever you
+
+617
+00:21:11,290 --> 00:21:13,820
+want to be the dragger,
+and then that's it.
+
+618
+00:21:13,820 --> 00:21:16,510
+That's your title bar, or
+whatever, other drag regions.
+
+619
+00:21:16,510 --> 00:21:18,610
+So full control.
+
+620
+00:21:18,610 --> 00:21:20,279
+We give you a contextMenus API.
+
+621
+00:21:20,279 --> 00:21:22,320
+Users have this annoying
+habit--they right-click,
+
+622
+00:21:22,320 --> 00:21:23,874
+they want something to happen.
+
+623
+00:21:23,874 --> 00:21:25,790
+And so we give you this
+native API to do this.
+
+624
+00:21:25,790 --> 00:21:28,289
+What's cool about this, though,
+is that the contextMenus API
+
+625
+00:21:28,289 --> 00:21:29,260
+works outside the app.
+
+626
+00:21:29,260 --> 00:21:31,260
+So you can specify that
+if somebody right-clicks
+
+627
+00:21:31,260 --> 00:21:32,790
+on your app icon
+in the launcher,
+
+628
+00:21:32,790 --> 00:21:34,190
+you can specify the
+content that goes in there,
+
+629
+00:21:34,190 --> 00:21:35,240
+so it's pretty cool.
+
+630
+00:21:35,240 --> 00:21:36,980
+Nice native integration.
+
+631
+00:21:36,980 --> 00:21:37,970
+There's an Alarms API.
+
+632
+00:21:37,970 --> 00:21:39,890
+There's an API for getting
+the media galleries
+
+633
+00:21:39,890 --> 00:21:41,700
+on the user's computer.
+
+634
+00:21:41,700 --> 00:21:44,150
+Now all of this is obviously
+behind permissions.
+
+635
+00:21:44,150 --> 00:21:46,847
+But you can do things like get
+photos, get movies, get music.
+
+636
+00:21:46,847 --> 00:21:48,430
+There's just built-in
+ways to do this.
+
+637
+00:21:48,430 --> 00:21:49,971
+You get a file system
+just like you'd
+
+638
+00:21:49,971 --> 00:21:51,640
+expect any other file system.
+
+639
+00:21:51,640 --> 00:21:54,760
+So the user says, yup, you
+can have access to my photos,
+
+640
+00:21:54,760 --> 00:21:56,430
+there you go.
+
+641
+00:21:56,430 --> 00:21:58,620
+There's a URL Handlers API.
+
+642
+00:21:58,620 --> 00:22:00,500
+So you can specify
+that your app,
+
+643
+00:22:00,500 --> 00:22:04,900
+as long as you own the URL, you
+can specify that your app is
+
+644
+00:22:04,900 --> 00:22:08,122
+the handler for a
+specific URL scheme.
+
+645
+00:22:08,122 --> 00:22:09,330
+Now, you have to own the URL.
+
+646
+00:22:09,330 --> 00:22:12,990
+Your app can't say, oh
+yes, I handle Gmail URLs.
+
+647
+00:22:12,990 --> 00:22:15,200
+No, you've got to
+prove ownership
+
+648
+00:22:15,200 --> 00:22:17,914
+of the URL or the
+pattern at least.
+
+649
+00:22:17,914 --> 00:22:19,830
+And you do that in the
+Google Webmaster Tools,
+
+650
+00:22:19,830 --> 00:22:24,110
+and then your app is able to
+respond intent-like to users
+
+651
+00:22:24,110 --> 00:22:27,650
+clicking on URLs in
+emails, for example.
+
+652
+00:22:27,650 --> 00:22:30,150
+So we give you really great
+ways of making an immersive user
+
+653
+00:22:30,150 --> 00:22:31,910
+experience.
+
+654
+00:22:31,910 --> 00:22:32,410
+All right.
+
+655
+00:22:32,410 --> 00:22:35,060
+Let's talk a little bit about
+integrating with the OS.
+
+656
+00:22:35,060 --> 00:22:36,870
+I showed this a
+little bit earlier.
+
+657
+00:22:36,870 --> 00:22:40,050
+So Chrome apps have access to
+the native hardware platform.
+
+658
+00:22:40,050 --> 00:22:44,070
+You get access to the USB
+port, Bluetooth, the network.
+
+659
+00:22:44,070 --> 00:22:46,800
+You can go out and
+discover devices.
+
+660
+00:22:46,800 --> 00:22:49,680
+Obviously, this has privacy
+and security issues.
+
+661
+00:22:49,680 --> 00:22:52,580
+It sure would be crazy if I was
+able to control this lightbulb
+
+662
+00:22:52,580 --> 00:22:54,780
+from my friend's
+house or whatever.
+
+663
+00:22:54,780 --> 00:22:56,940
+So again, this is paramount.
+
+664
+00:22:56,940 --> 00:22:59,300
+Once you start accessing
+things on the user's hardware
+
+665
+00:22:59,300 --> 00:23:01,780
+and so on, privacy and
+security become really, really
+
+666
+00:23:01,780 --> 00:23:02,652
+important.
+
+667
+00:23:02,652 --> 00:23:05,110
+So it's important to be clear
+to the user about when you're
+
+668
+00:23:05,110 --> 00:23:07,410
+using resources on their system.
+
+669
+00:23:07,410 --> 00:23:10,290
+Now, in some cases, you
+don't have a choice.
+
+670
+00:23:10,290 --> 00:23:13,540
+But if you turn on the camera
+and the little light comes on,
+
+671
+00:23:13,540 --> 00:23:15,100
+you don't have any
+control over that.
+
+672
+00:23:15,100 --> 00:23:17,946
+But in other cases where
+you're using the files
+
+673
+00:23:17,946 --> 00:23:19,320
+or storing large
+amounts of data,
+
+674
+00:23:19,320 --> 00:23:21,403
+just be clear to the user
+about what you're doing.
+
+675
+00:23:21,403 --> 00:23:22,435
+It's really important.
+
+676
+00:23:22,435 --> 00:23:25,060
+And of course, when you're done,
+you got to release this stuff,
+
+677
+00:23:25,060 --> 00:23:26,360
+because it's shared
+by the system.
+
+678
+00:23:26,360 --> 00:23:26,860
+Share.
+
+679
+00:23:26,860 --> 00:23:29,100
+Got to share.
+
+680
+00:23:29,100 --> 00:23:29,600
+All right.
+
+681
+00:23:29,600 --> 00:23:30,260
+How am I doing on time?
+
+682
+00:23:30,260 --> 00:23:30,801
+Five minutes.
+
+683
+00:23:30,801 --> 00:23:31,320
+OK.
+
+684
+00:23:31,320 --> 00:23:34,470
+Let's talk a little bit about
+application security and CSP.
+
+685
+00:23:34,470 --> 00:23:36,032
+Who's heard of CSP?
+
+686
+00:23:36,032 --> 00:23:36,990
+Everyone's heard of it.
+
+687
+00:23:36,990 --> 00:23:37,400
+That's great.
+
+688
+00:23:37,400 --> 00:23:38,410
+I won't go deep into it.
+
+689
+00:23:38,410 --> 00:23:40,880
+I included the link
+in the presentation,
+
+690
+00:23:40,880 --> 00:23:42,330
+so you can read more about it.
+
+691
+00:23:42,330 --> 00:23:44,590
+Basically, there are certain
+content security policy
+
+692
+00:23:44,590 --> 00:23:48,490
+defaults that apps set and
+that you can't override.
+
+693
+00:23:48,490 --> 00:23:50,390
+So for example, you
+can't use things
+
+694
+00:23:50,390 --> 00:23:52,840
+like eval in your Chrome apps.
+
+695
+00:23:52,840 --> 00:23:55,560
+You can't use things
+like new Function.
+
+696
+00:23:55,560 --> 00:24:00,320
+All your JavaScript code has
+to be in separate .js files.
+
+697
+00:24:00,320 --> 00:24:03,100
+And the reason is because
+if somebody puts a script
+
+698
+00:24:03,100 --> 00:24:04,970
+tag in the head of
+your page and we
+
+699
+00:24:04,970 --> 00:24:06,680
+have no idea how it got
+there-- did you put it there,
+
+700
+00:24:06,680 --> 00:24:07,596
+did they put it there?
+
+701
+00:24:07,596 --> 00:24:08,620
+We don't know.
+
+702
+00:24:08,620 --> 00:24:10,730
+So it's got to be
+in a separate file.
+
+703
+00:24:10,730 --> 00:24:12,910
+You can't do things like
+inline event handlers.
+
+704
+00:24:12,910 --> 00:24:15,840
+You've got to do things the new
+school addEventListener way.
+
+705
+00:24:15,840 --> 00:24:18,050
+iframes, you can use iframes.
+
+706
+00:24:18,050 --> 00:24:21,100
+But they're sandboxed into
+their own origin in the page.
+
+707
+00:24:21,100 --> 00:24:23,660
+So you can postMessage
+into and out of an iframe,
+
+708
+00:24:23,660 --> 00:24:25,880
+but the iframe can't
+get into the parent page
+
+709
+00:24:25,880 --> 00:24:27,130
+and start calling Chrome APIs.
+
+710
+00:24:27,130 --> 00:24:28,647
+Again, that would be bad.
+
+711
+00:24:28,647 --> 00:24:30,730
+And you've got to declare
+where your content comes
+
+712
+00:24:30,730 --> 00:24:31,929
+from if it's not local.
+
+713
+00:24:31,929 --> 00:24:33,720
+So if you think back
+to that Economist app,
+
+714
+00:24:33,720 --> 00:24:34,720
+it was showing all those images.
+
+715
+00:24:34,720 --> 00:24:36,680
+One of the things you
+can't do in a Chrome app
+
+716
+00:24:36,680 --> 00:24:38,540
+is just simply say,
+image tag, path
+
+717
+00:24:38,540 --> 00:24:41,400
+to random image on
+web, because you
+
+718
+00:24:41,400 --> 00:24:42,650
+have to declare local content.
+
+719
+00:24:42,650 --> 00:24:44,750
+Now, that's a pretty
+common pattern.
+
+720
+00:24:44,750 --> 00:24:46,517
+So we've actually
+written a library
+
+721
+00:24:46,517 --> 00:24:47,600
+that handles this for you.
+
+722
+00:24:47,600 --> 00:24:50,790
+It'll go out to the web
+XHR stuff down locally.
+
+723
+00:24:50,790 --> 00:24:52,760
+And then you use
+blob URLs or object
+
+724
+00:24:52,760 --> 00:24:55,055
+URLs to refer to
+them in the app.
+
+725
+00:24:55,055 --> 00:24:56,346
+Paul Lewis actually wrote that.
+
+726
+00:24:56,346 --> 00:24:57,800
+It's a really great library.
+
+727
+00:24:57,800 --> 00:25:00,230
+Of course, you might really
+want to do that stuff.
+
+728
+00:25:00,230 --> 00:25:01,500
+But wait a second, I really
+want to do that stuff,
+
+729
+00:25:01,500 --> 00:25:02,583
+I really want to use eval.
+
+730
+00:25:02,583 --> 00:25:05,380
+I've got a templating library.
+
+731
+00:25:05,380 --> 00:25:08,180
+We do provide ways to get
+around some of these limitations
+
+732
+00:25:08,180 --> 00:25:10,400
+or security measures
+that we've put in.
+
+733
+00:25:10,400 --> 00:25:12,360
+So first, we have
+a webview component
+
+734
+00:25:12,360 --> 00:25:15,135
+that you can embed
+inside your apps.
+
+735
+00:25:15,135 --> 00:25:17,172
+It's the rendering
+engine of Chrome.
+
+736
+00:25:17,172 --> 00:25:18,130
+It's not Chrome itself.
+
+737
+00:25:18,130 --> 00:25:19,860
+There's no extensions
+that come in.
+
+738
+00:25:19,860 --> 00:25:22,435
+But it's the actual
+rendering surface of Chrome.
+
+739
+00:25:22,435 --> 00:25:23,810
+So what you're
+basically doing is
+
+740
+00:25:23,810 --> 00:25:25,274
+embedding Chrome
+inside of Chrome.
+
+741
+00:25:25,274 --> 00:25:27,440
+And it gets a little
+"Inception"-like at that point,
+
+742
+00:25:27,440 --> 00:25:28,356
+but it actually works.
+
+743
+00:25:28,356 --> 00:25:31,040
+It's really cool.
+
+744
+00:25:31,040 --> 00:25:33,160
+You can do things like
+embed web content.
+
+745
+00:25:33,160 --> 00:25:35,000
+And again, you can
+do the postMessaging.
+
+746
+00:25:35,000 --> 00:25:36,680
+They can communicate with
+each other, which is great.
+
+747
+00:25:36,680 --> 00:25:38,995
+You can execute script in
+the web view, which is great.
+
+748
+00:25:38,995 --> 00:25:41,270
+For accessing remote
+resources, I talked about this,
+
+749
+00:25:41,270 --> 00:25:43,840
+it's that XHR library
+that Paul wrote.
+
+750
+00:25:43,840 --> 00:25:45,600
+For templating
+libraries, this is
+
+751
+00:25:45,600 --> 00:25:48,320
+where things get a
+little interesting,
+
+752
+00:25:48,320 --> 00:25:50,524
+because if they're using
+eval and new Function,
+
+753
+00:25:50,524 --> 00:25:52,190
+there's a couple
+things you can do here.
+
+754
+00:25:52,190 --> 00:25:54,640
+One, you can pre-compile
+your templates.
+
+755
+00:25:54,640 --> 00:25:56,160
+Handlebars does
+this, for example.
+
+756
+00:25:56,160 --> 00:25:58,720
+Or there's a way for
+getting around this stuff.
+
+757
+00:25:58,720 --> 00:26:01,930
+You can declare a page
+in your application,
+
+758
+00:26:01,930 --> 00:26:05,200
+and it doesn't have to be
+visible, as a sandboxed page.
+
+759
+00:26:05,200 --> 00:26:08,330
+And then what happens is all
+that bad stuff is now OK again.
+
+760
+00:26:08,330 --> 00:26:10,310
+You can do things like
+eval and new Function.
+
+761
+00:26:10,310 --> 00:26:12,020
+But that page is kept separate.
+
+762
+00:26:12,020 --> 00:26:13,770
+It doesn't have access
+to the Chrome APIs.
+
+763
+00:26:13,770 --> 00:26:16,260
+It can't do things
+like call the Chrome
+
+764
+00:26:16,260 --> 00:26:17,490
+stuff in your application.
+
+765
+00:26:17,490 --> 00:26:19,430
+And you could use
+postMessages back and forth.
+
+766
+00:26:19,430 --> 00:26:21,987
+So you could put the template
+library in that page,
+
+767
+00:26:21,987 --> 00:26:23,820
+send a message, have
+it do all of its stuff,
+
+768
+00:26:23,820 --> 00:26:25,280
+it sends the
+results back to you.
+
+769
+00:26:25,280 --> 00:26:28,650
+And so then everything's all
+nice and safe and isolated.
+
+770
+00:26:28,650 --> 00:26:29,150
+All right.
+
+771
+00:26:29,150 --> 00:26:29,610
+Mobile.
+
+772
+00:26:29,610 --> 00:26:30,370
+Let's talk about
+mobile really quick.
+
+773
+00:26:30,370 --> 00:26:31,840
+I've got a couple minutes left.
+
+774
+00:26:31,840 --> 00:26:35,630
+So we are working
+to bring Chrome apps
+
+775
+00:26:35,630 --> 00:26:38,490
+to mobile devices via
+the Cordova project.
+
+776
+00:26:38,490 --> 00:26:40,236
+Who's heard of Cordova?
+
+777
+00:26:40,236 --> 00:26:40,780
+All right.
+
+778
+00:26:40,780 --> 00:26:41,550
+That's about everybody.
+
+779
+00:26:41,550 --> 00:26:42,110
+OK.
+
+780
+00:26:42,110 --> 00:26:45,030
+So Apache Cordorva basically
+is the open source version
+
+781
+00:26:45,030 --> 00:26:45,900
+of PhoneGap.
+
+782
+00:26:45,900 --> 00:26:48,790
+When we Adobe acquired PhoneGap,
+they open sourced the code.
+
+783
+00:26:48,790 --> 00:26:50,910
+Kind of like we have
+Chromium to Chrome,
+
+784
+00:26:50,910 --> 00:26:53,090
+they've got Cordova to
+PhoneGap, basically.
+
+785
+00:26:53,090 --> 00:26:54,730
+That's basically what it is.
+
+786
+00:26:54,730 --> 00:26:59,750
+So we're working to
+bring a set of key APIs
+
+787
+00:26:59,750 --> 00:27:05,400
+over from the Chrome API set
+to mobile where it makes sense.
+
+788
+00:27:05,400 --> 00:27:08,410
+We've got about six or seven
+that we've worked out so far.
+
+789
+00:27:08,410 --> 00:27:10,370
+We think probably
+by early January,
+
+790
+00:27:10,370 --> 00:27:13,579
+we'll have a beta-ish version
+for you guys to work with.
+
+791
+00:27:13,579 --> 00:27:14,370
+And it'll be great.
+
+792
+00:27:14,370 --> 00:27:16,245
+You guys will be able
+to write one code base,
+
+793
+00:27:16,245 --> 00:27:18,886
+you'll get mobile
+apps and local apps.
+
+794
+00:27:18,886 --> 00:27:20,510
+The workflow is pretty
+straightforward.
+
+795
+00:27:20,510 --> 00:27:22,104
+You install the tool set.
+
+796
+00:27:22,104 --> 00:27:23,770
+You can import in
+[INAUDIBLE] Chrome app
+
+797
+00:27:23,770 --> 00:27:24,780
+or start from scratch.
+
+798
+00:27:24,780 --> 00:27:25,875
+It's up to you.
+
+799
+00:27:25,875 --> 00:27:27,912
+You iterate over
+your code, you debug.
+
+800
+00:27:27,912 --> 00:27:29,370
+And then when you're
+ready to ship,
+
+801
+00:27:29,370 --> 00:27:31,165
+it goes into the
+native app store,
+
+802
+00:27:31,165 --> 00:27:32,415
+because these are native apps.
+
+803
+00:27:32,415 --> 00:27:33,998
+They don't go in the
+Chrome Web Store.
+
+804
+00:27:33,998 --> 00:27:36,360
+So for iOS, it goes
+to the App Store;
+
+805
+00:27:36,360 --> 00:27:39,364
+for Android, it goes to Play.
+
+806
+00:27:39,364 --> 00:27:41,530
+The Chrome Web Store's only
+for the desktop version.
+
+807
+00:27:41,530 --> 00:27:43,880
+So that's a key difference.
+
+808
+00:27:43,880 --> 00:27:47,730
+So these are the APIs that we're
+going to support initially.
+
+809
+00:27:47,730 --> 00:27:51,590
+A lot of these are pretty
+well-baked already on Android.
+
+810
+00:27:51,590 --> 00:27:54,300
+We're working to bring
+some of them to iOS.
+
+811
+00:27:54,300 --> 00:27:57,890
+Actually, this may be
+a little bit outdated.
+
+812
+00:27:57,890 --> 00:28:00,430
+I think we might actually
+have notifications now.
+
+813
+00:28:00,430 --> 00:28:04,042
+But this is the initial
+APIs that we're working on.
+
+814
+00:28:04,042 --> 00:28:05,000
+It's a thing of beauty.
+
+815
+00:28:05,000 --> 00:28:06,690
+Let me show you.
+
+816
+00:28:06,690 --> 00:28:08,360
+Remember that Internet
+Relay Chat client
+
+817
+00:28:08,360 --> 00:28:10,410
+I showed you a few minutes ago?
+
+818
+00:28:10,410 --> 00:28:11,350
+Let me just do this.
+
+819
+00:28:11,350 --> 00:28:12,960
+I'm going to bring
+this up right here.
+
+820
+00:28:12,960 --> 00:28:16,250
+I'm going to tab over.
+
+821
+00:28:16,250 --> 00:28:16,750
+OK.
+
+822
+00:28:16,750 --> 00:28:18,204
+So there it is.
+
+823
+00:28:18,204 --> 00:28:19,120
+That's the IRC client.
+
+824
+00:28:19,120 --> 00:28:21,250
+Let me bring up the
+other one so you guys can
+
+825
+00:28:21,250 --> 00:28:22,240
+see it side by side.
+
+826
+00:28:22,240 --> 00:28:24,120
+There's that one.
+
+827
+00:28:24,120 --> 00:28:25,277
+There's the UI.
+
+828
+00:28:25,277 --> 00:28:27,610
+There's the mobile version
+running on my Android device.
+
+829
+00:28:27,610 --> 00:28:29,360
+Same code base.
+
+830
+00:28:29,360 --> 00:28:33,530
+HTML5, JavaScript, [INAUDIBLE]
+running both my Android
+
+831
+00:28:33,530 --> 00:28:34,720
+and my desktop.
+
+832
+00:28:34,720 --> 00:28:36,600
+Oh my god, same code base?
+
+833
+00:28:36,600 --> 00:28:40,260
+Yes, female audience
+member, same code base.
+
+834
+00:28:40,260 --> 00:28:41,085
+Same stuff.
+
+835
+00:28:41,085 --> 00:28:41,950
+All right.
+
+836
+00:28:41,950 --> 00:28:45,510
+So if that's got you
+interested, if this is exciting,
+
+837
+00:28:45,510 --> 00:28:47,665
+if you think that Chrome
+apps might be something
+
+838
+00:28:47,665 --> 00:28:49,220
+you might want to
+work on, these are
+
+839
+00:28:49,220 --> 00:28:51,050
+the URLs you need to look for.
+
+840
+00:28:51,050 --> 00:28:54,100
+We've got our GitHub repo,
+the Chrome app samples.
+
+841
+00:28:54,100 --> 00:28:57,040
+All the APIs that
+are in the platform
+
+842
+00:28:57,040 --> 00:28:59,220
+have a corresponding sample.
+
+843
+00:28:59,220 --> 00:29:02,560
+Developer.chrome.com/apps is
+where you go to learn about all
+
+844
+00:29:02,560 --> 00:29:03,420
+this stuff.
+
+845
+00:29:03,420 --> 00:29:05,570
+We document all the APIs there.
+
+846
+00:29:05,570 --> 00:29:08,050
+And it looks like I'm
+about seven seconds early,
+
+847
+00:29:08,050 --> 00:29:09,440
+so thank you very much.
+
+848
+00:29:09,440 --> 00:29:12,664
+[APPLAUSE]
+
