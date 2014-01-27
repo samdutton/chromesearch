@@ -26,7 +26,7 @@ widgets. So here if you have a Google+ button
 6
 00:00:49,350 --> 00:00:56,350
 inside your site or a like button or something
-like that  &mdash;
+like that &mdash;
 
 7
 00:01:00,419 --> 00:01:07,419
@@ -50,7 +50,7 @@ their stuff. So they talk a lot about discipline.
 
 11
 00:01:46,429 --> 00:01:53,429
-Like, "Thou shalt not use anything under  &mdash; sell
+Like, "Thou shalt not use anything under &mdash; sell
 anything under my little ID" and stuff like
 
 12
@@ -231,7 +231,7 @@ it looks so funky.
 47
 00:07:31,710 --> 00:07:35,480
 >>Dimitri Glazkov: And if you look at this
-today, and this is a written  &mdash; you know,
+today, and this is a written &mdash; you know,
 
 48
 00:07:35,480 --> 00:07:42,480
@@ -355,7 +355,7 @@ the actual framework out of it.
 
 72
 00:09:50,680 --> 00:09:55,279
-So  &mdash; you think this is bad?
+So &mdash; you think this is bad?
 >>Alex Komoroske: Right. So I actually have
 
 73
@@ -365,13 +365,13 @@ will haunt yours, too, after I show you.
 
 74
 00:10:02,019 --> 00:10:08,009
-So if you open  &mdash; if you go to, say, just
+So if you open &mdash; if you go to, say, just
 Gmail which we all use, know and love, if
 
 75
 00:10:08,009 --> 00:10:14,100
 you switch and look at the Web inspector in
-here, you inspect some random elements  &mdash; what
+here, you inspect some random elements &mdash; what
 
 76
 00:10:14,100 --> 00:10:20,029
@@ -385,7 +385,7 @@ right? There's like a list of things and then
 
 78
 00:10:27,459 --> 00:10:31,639
-there's  &mdash; oh, my God look at this! Stairway
+there's &mdash; oh, my God look at this! Stairway
 to hell. [Laughter]
 
 79
@@ -396,7 +396,7 @@ there?
 80
 00:10:34,300 --> 00:10:39,920
 >>Alex Komoroske: This doesn't make any sense.
-And so  &mdash; this is in this bizarro. You know,
+And so &mdash; this is in this bizarro. You know,
 
 81
 00:10:39,920 --> 00:10:46,920
@@ -425,7 +425,7 @@ crazy.
 
 86
 00:11:14,319 --> 00:11:21,319
-right. But the thing is that  &mdash; it is true,
+right. But the thing is that &mdash; it is true,
 we are
 
 87
@@ -436,12 +436,12 @@ in the browser. And we're writing a lot of
 88
 00:11:29,350 --> 00:11:36,350
 code. We're writing frameworks to help us
-do this  &mdash; these bits of code. Then with more
+do this &mdash; these bits of code. Then with more
 
 89
 00:11:38,369 --> 00:11:45,300
 code that we write, we have more opportunities
-for  &mdash; for losing test coverage, for example,
+for &mdash; for losing test coverage, for example,
 
 90
 00:11:45,300 --> 00:11:52,300
@@ -510,7 +510,7 @@ that, right?
 
 103
 00:13:17,189 --> 00:13:24,189
-that you have to  &mdash; to make any kind of complicated
+that you have to &mdash; to make any kind of complicated
 app, you have to run script. You can't be
 
 104
@@ -706,7 +706,7 @@ you about how Web components solves this problem.
 142
 00:16:47,769 --> 00:16:54,769
 this new set of technologies that we looked
-at  &mdash; we created by looking at those potholes
+at &mdash; we created by looking at those potholes
 
 143
 00:16:55,540 --> 00:17:02,540
@@ -781,7 +781,7 @@ DOM snippets very easily. So today you are
 157
 00:18:17,120 --> 00:18:24,120
 doing this in long bits of strings and script,
-or you are doing script tags with some  &mdash; with
+or you are doing script tags with some &mdash; with
 
 158
 00:18:26,730 --> 00:18:33,460
@@ -796,7 +796,7 @@ you can swap it in when you need it.
 160
 00:18:40,919 --> 00:18:45,279
 >>Dimitri Glazkov: It's kind of neat to decide
-that developers are  &mdash; really like this master
+that developers are &mdash; really like this master
 
 161
 00:18:45,279 --> 00:18:49,070
@@ -826,7 +826,7 @@ what does this actually mean in practice?
 166
 00:19:04,210 --> 00:19:09,269
 you are really are looking for is something
-that allows you to tell  &mdash; allows you to tell
+that allows you to tell &mdash; allows you to tell
 
 167
 00:19:09,269 --> 00:19:13,510
@@ -840,7 +840,7 @@ to the browser. I have a poll, I have choices,
 
 169
 00:19:20,000 --> 00:19:27,000
-and there's things that  &mdash; that are essentially
+and there's things that &mdash; that are essentially
 data for my poll, right? Why should there
 
 170
@@ -861,7 +861,7 @@ all of the weird DIVs that are really irrelevant
 173
 00:19:44,149 --> 00:19:49,809
 to the semantic of the markup, and hide them
-into the Shadow DOM  &mdash; which we will talk
+into the Shadow DOM &mdash; which we will talk
 
 174
 00:19:49,809 --> 00:19:55,350
@@ -961,7 +961,7 @@ they can live together harmoniously without
 193
 00:21:18,940 --> 00:21:24,240
 having to figure out which widgets they have
- &mdash; it's just DOM.
+&mdash; it's just DOM.
 
 194
 00:21:24,240 --> 00:21:28,490
@@ -985,7 +985,7 @@ build those new frameworks.
 
 198
 00:21:36,950 --> 00:21:40,549
-this stuff. Okay. So this  &mdash; actually, Web
+this stuff. Okay. So this &mdash; actually, Web
 components
 
 199
@@ -1001,7 +1001,7 @@ This is the demo that we showed; it's built
 201
 00:21:54,659 --> 00:21:59,090
 using the best practices of today. And this
-is what the  &mdash; what the one with
+is what the &mdash; what the one with
 
 202
 00:21:59,090 --> 00:22:03,299
@@ -1041,7 +1041,7 @@ the same thing that is represented as DOM.
 209
 00:22:32,669 --> 00:22:36,480
 You don't have to create this thing that the
-frameworks  &mdash; the rendering decorate where
+frameworks &mdash; the rendering decorate where
 
 210
 00:22:36,480 --> 00:22:43,480
@@ -1076,12 +1076,12 @@ let's look.
 216
 00:23:08,610 --> 00:23:13,880
 you look at this is in the Web platform, we
-never had this opportunity to  &mdash; to build
+never had this opportunity to &mdash; to build
 
 217
 00:23:13,880 --> 00:23:18,639
 in layering. Layering is like a cool thing.
-It's not  &mdash; it's also related to the lasagne
+It's not &mdash; it's also related to the lasagne
 
 218
 00:23:18,639 --> 00:23:21,759
@@ -1115,7 +1115,7 @@ flexibility and power to, you know, provide
 
 224
 00:23:45,690 --> 00:23:45,940
-those new services to the  &mdash; to the higher
+those new services to the &mdash; to the higher
 level.
 
 225
@@ -1290,7 +1290,7 @@ really cheated in a pretty big way, right?
 
 259
 00:26:39,220 --> 00:26:43,679
-We just  &mdash; instead of building all this stuff
+We just &mdash; instead of building all this stuff
 in C++, you know, and all this stuff, it's
 
 260
@@ -1435,7 +1435,7 @@ time composition. You don't have to move those
 
 288
 00:29:07,820 --> 00:29:11,749
-nodes around. They're still there  &mdash; if you
+nodes around. They're still there &mdash; if you
 walk your, you know, first child, next child
 
 289
@@ -1451,7 +1451,7 @@ top and rendered as if it's there.
 291
 00:29:18,799 --> 00:29:23,990
 >> Alex Komoroske: I had real stuff in that
- &mdash; in that real in the green DOM tree. I want
+&mdash; in that real in the green DOM tree. I want
 
 292
 00:29:23,990 --> 00:29:27,700
@@ -1586,7 +1586,7 @@ similar to something. What does it look like?
 318
 00:31:50,059 --> 00:31:52,330
 People from the audience?
-Is that  &mdash;
+Is that &mdash;
 
 319
 00:31:52,330 --> 00:31:55,450
@@ -1641,7 +1641,7 @@ H3s, the first ones, what we'll use as the
 329
 00:32:42,850 --> 00:32:48,309
 actual name for the thing and later ones we'll
-just establish another  &mdash;
+just establish another &mdash;
 
 330
 00:32:48,309 --> 00:32:52,730
@@ -1675,8 +1675,8 @@ new element, and for that purpose we have
 
 336
 00:33:21,730 --> 00:33:25,580
-the new HTML element  &mdash; that's a good name
-for it  &mdash; which allows you to specify and
+the new HTML element &mdash; that's a good name
+for it &mdash; which allows you to specify and
 
 337
 00:33:25,580 --> 00:33:27,619
@@ -1701,7 +1701,7 @@ of cool things. For example, you can declare
 341
 00:33:37,740 --> 00:33:41,090
 an imperative API, and say, well, the <x-choice>
-method needs extra methods  &mdash; or <x-choice>
+method needs extra methods &mdash; or <x-choice>
 
 342
 00:33:41,090 --> 00:33:45,350
@@ -1830,7 +1830,7 @@ At some point you really start losing sight
 
 367
 00:36:35,950 --> 00:36:42,950
-of where  &mdash; which selector, and you know,
+of where &mdash; which selector, and you know,
 how many of you guys have committed the Cardinal
 
 368
@@ -1920,7 +1920,7 @@ in your component and then change X accordion
 
 385
 00:38:26,690 --> 00:38:31,830
-to be X tabs, and it's, you know, it's  &mdash; we'll
+to be X tabs, and it's, you know, it's &mdash; we'll
 just see what happens, right?
 
 386
@@ -2065,7 +2065,7 @@ Awesome.
 
 414
 00:40:47,100 --> 00:40:50,680
->>Dimitri Glazkov: Wow, this is  &mdash; well...
+>>Dimitri Glazkov: Wow, this is &mdash; well...
 >>Alex Komoroske: What?
 
 415
@@ -2101,7 +2101,7 @@ person.
 421
 00:41:13,500 --> 00:41:18,000
 >>Alex Komoroske: I don't want you to have
-control over everything, but I guess  &mdash; I
+control over everything, but I guess &mdash; I
 
 422
 00:41:18,000 --> 00:41:23,660
@@ -2171,7 +2171,7 @@ be more wonderful than comic SANS? It's from
 435
 00:42:18,090 --> 00:42:23,050
 the perfection, right? So what we're going
-to do  &mdash; I want to say
+to do &mdash; I want to say
 
 436
 00:42:23,050 --> 00:42:28,599
@@ -2201,7 +2201,7 @@ one new technology, the spec is nearing completion.
 441
 00:42:48,070 --> 00:42:51,600
 We actually have it implemented in Chrome
-behind the flag. CSS variables  &mdash;
+behind the flag. CSS variables &mdash;
 
 442
 00:42:51,600 --> 00:42:54,920
@@ -2260,7 +2260,7 @@ else.
 
 453
 00:43:33,810 --> 00:43:37,770
->>Alex Komoroske: I'm only giving you  &mdash; allowing
+>>Alex Komoroske: I'm only giving you &mdash; allowing
 you to change a few things. So in this case
 
 454
@@ -2276,7 +2276,7 @@ color.
 456
 00:43:52,010 --> 00:43:54,760
 >>Alex Komoroske: What you'll do on your sheet
-is you'll just style  &mdash; direct some styles,
+is you'll just style &mdash; direct some styles,
 
 457
 00:43:54,760 --> 00:43:56,600
@@ -2290,8 +2290,8 @@ magically just work.
 
 459
 00:44:00,740 --> 00:44:03,240
-and I'm going to uncomment  &mdash; I've already
-written  &mdash;
+and I'm going to uncomment &mdash; I've already
+written &mdash;
 
 460
 00:44:03,240 --> 00:44:07,600
@@ -2301,11 +2301,11 @@ written  &mdash;
 461
 00:44:07,600 --> 00:44:10,020
 would like that. I'm going to switch back
-to my  &mdash; to your site. Refresh. There you
+to my &mdash; to your site. Refresh. There you
 
 462
 00:44:10,020 --> 00:44:13,040
-go  &mdash;
+go &mdash;
 >>Dimitri Glazkov: This is now awesome. I
 
 463
@@ -2350,7 +2350,7 @@ And actually is a bigger deal than just that.
 
 471
 00:44:31,190 --> 00:44:37,110
-The way that I think of that actually  &mdash; I'm
+The way that I think of that actually &mdash; I'm
 actually a little bit dramatic, I guess sometimes,
 
 472
@@ -2376,12 +2376,12 @@ of stuff that allows that to happen.
 476
 00:45:11,020 --> 00:45:17,700
 >>> And like one of the most important things
-that I think is  &mdash; the ability to actually
+that I think is &mdash; the ability to actually
 
 477
 00:45:17,700 --> 00:45:22,780
 talk via an API. Or tell the browser, specify
-to  &mdash; to let the user know: These are the
+to &mdash; to let the user know: These are the
 
 478
 00:45:22,780 --> 00:45:26,970
@@ -2390,7 +2390,7 @@ matter how much you hack about on this or
 
 479
 00:45:26,970 --> 00:45:27,680
-do whatever this  &mdash; whatever, you can't mess
+do whatever this &mdash; whatever, you can't mess
 up my stuff. My stuff is safe. I gave you
 
 480
@@ -2405,7 +2405,7 @@ to allow you to have the markup API. And then
 
 482
 00:45:36,430 --> 00:45:40,590
-you, of course, can define  &mdash; define the imperative
+you, of course, can define &mdash; define the imperative
 API on custom elements. So the Web components
 
 483
@@ -2485,7 +2485,7 @@ If you look at this, you can clearly see another
 
 498
 00:46:18,410 --> 00:46:19,390
-advantage. For a  &mdash; for a company or a team
+advantage. For a &mdash; for a company or a team
 of people working on the same Web applications,
 
 499
@@ -2570,7 +2570,7 @@ that are useful to Web developers, it's very
 
 515
 00:46:26,200 --> 00:46:31,390
-obvious if we are  &mdash; for example, we will
+obvious if we are &mdash; for example, we will
 see these x-polls, it's very obvious that
 
 516
@@ -2655,7 +2655,7 @@ public and at some point make it into the
 
 532
 00:47:23,630 --> 00:47:23,880
- &mdash; into the HTML spec, for example.
+&mdash; into the HTML spec, for example.
 >>Alex Komoroske: It's really cool stuff.
 
 533
@@ -2731,7 +2731,7 @@ that you are all jazzed up about this stuff?
 547
 00:47:25,230 --> 00:47:25,890
 Well, you can help the future arrive faster.
-The one way  &mdash; there's lots of links and information
+The one way &mdash; there's lots of links and information
 
 548
 00:47:25,890 --> 00:47:26,220
@@ -2855,7 +2855,7 @@ everything that we have shown you today is
 
 572
 00:47:29,780 --> 00:47:30,090
-how we actually did  &mdash;
+how we actually did &mdash;
 >>Dimitri Glazkov: You know those self driving
 
 573
@@ -2930,8 +2930,8 @@ for coming out. [ Applause ]
 
 587
 00:47:36,510 --> 00:47:37,140
->>Dimitri Glazkov: And  &mdash; and in the future
- &mdash; the future bus leaves in 10 minutes, but
+>>Dimitri Glazkov: And &mdash; and in the future
+&mdash; the future bus leaves in 10 minutes, but
 
 588
 00:47:37,140 --> 00:47:37,600
@@ -3080,7 +3080,7 @@ operate on it will just work. It just feels,
 
 617
 00:47:38,370 --> 00:47:38,620
-it has the same  &mdash; it will feel like it's
+it has the same &mdash; it will feel like it's
 just part of the documents. So you will get
 
 618
@@ -3151,7 +3151,7 @@ that to a customer and say, hey, do this and
 631
 00:47:38,560 --> 00:47:38,810
 case, doing exactly that. In fact, one of
-the components of x-tag  &mdash;
+the components of x-tag &mdash;
 
 632
 00:47:38,580 --> 00:47:38,830
@@ -3190,7 +3190,7 @@ can imagine there's going to be interesting
 
 639
 00:47:38,660 --> 00:47:38,910
-changes in the way that people  &mdash;
+changes in the way that people &mdash;
 >>Dimitri Glazkov: It doesn't have to be on
 
 640

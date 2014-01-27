@@ -95,7 +95,7 @@ look at some cool demos.
 
 20
 00:01:30,150 --> 00:01:37,150
-So if you  &mdash; now that you guys have Pixels,
+So if you &mdash; now that you guys have Pixels,
 if you set it to be on the dev channel, you
 
 21
@@ -160,7 +160,7 @@ Economist is a great example of an app that
 
 33
 00:02:27,020 --> 00:02:32,640
-is a content consumption app for  &mdash; for both
+is a content consumption app for &mdash; for both
 online and offline.
 
 34
@@ -176,12 +176,12 @@ UI, it says "Available to read off line."
 36
 00:02:43,900 --> 00:02:48,270
 So what has happened is, this app, because
-it's a packaged app  &mdash; and you can tell that.
+it's a packaged app &mdash; and you can tell that.
 
 37
 00:02:48,270 --> 00:02:52,310
-There's no URL bar  &mdash; right?  &mdash; there's no
-back/forward buttons  &mdash; right?  &mdash; why would
+There's no URL bar &mdash; right? &mdash; there's no
+back/forward buttons &mdash; right? &mdash; why would
 
 38
 00:02:52,310 --> 00:02:56,959
@@ -195,7 +195,7 @@ line, if I make the UI a little bit bigger.
 
 40
 00:03:01,190 --> 00:03:08,190
-You can also see that it's  &mdash; it's responsive
+You can also see that it's &mdash; it's responsive
 and the nice thing about this is because we
 
 41
@@ -206,7 +206,7 @@ app and reopen it, it will remember its windows
 42
 00:03:15,580 --> 00:03:17,410
 position, right?
-So these are some of the things  &mdash; I'll talk
+So these are some of the things &mdash; I'll talk
 
 43
 00:03:17,410 --> 00:03:21,599
@@ -236,7 +236,7 @@ of 500 Pixels?
 48
 00:03:40,590 --> 00:03:47,590
 Right. Oh, good. A good many of you.
-So 500 Pixels is a  &mdash; is a professional photography
+So 500 Pixels is a &mdash; is a professional photography
 
 49
 00:03:47,920 --> 00:03:52,580
@@ -246,7 +246,7 @@ So professional photographers use this app
 50
 00:03:52,580 --> 00:03:56,750
 to get their photos out there, and you can
-see  &mdash; now I'm on my Pixel, right? So I'm
+see &mdash; now I'm on my Pixel, right? So I'm
 
 51
 00:03:56,750 --> 00:04:01,030
@@ -270,7 +270,7 @@ Okay. Let me show one other example.
 
 55
 00:04:17,340 --> 00:04:20,139
-And to  &mdash; oops. To do that, let me just jump
+And to &mdash; oops. To do that, let me just jump
 out really quick.
 
 56
@@ -290,7 +290,7 @@ In this case, this game actually was built
 
 59
 00:04:36,300 --> 00:04:43,219
- &mdash; you can see right here it was built with
+&mdash; you can see right here it was built with
 Unity. So this is an example of a loud application
 
 60
@@ -326,7 +326,7 @@ when I mouse over the window, that it has
 66
 00:05:12,539 --> 00:05:17,889
 this title bar that comes and goes, right?
-So again, another clue that it's  &mdash; it's an
+So again, another clue that it's &mdash; it's an
 
 67
 00:05:17,889 --> 00:05:22,930
@@ -396,12 +396,12 @@ There comes a point in time when Webapps are
 80
 00:06:24,689 --> 00:06:28,689
 decidedly not very great, right? We've all
-seen  &mdash; we've all seen this, right?
+seen &mdash; we've all seen this, right?
 
 81
 00:06:28,689 --> 00:06:33,770
-So there's a  &mdash; there's off line cases. There's
- &mdash; there's times when Webapps just simply
+So there's a &mdash; there's off line cases. There's
+&mdash; there's times when Webapps just simply
 
 82
 00:06:33,770 --> 00:06:38,499
@@ -591,7 +591,7 @@ build any other kind of app. All we do is
 119
 00:09:41,490 --> 00:09:47,910
 put some infrastructure around that.
-Okay? So we add a  &mdash; a manifest file that
+Okay? So we add a &mdash; a manifest file that
 
 120
 00:09:47,910 --> 00:09:53,629
@@ -625,12 +625,12 @@ top of your existing app.
 
 126
 00:10:19,339 --> 00:10:25,089
-So let me just take a quick  &mdash; this is a  &mdash; this
+So let me just take a quick &mdash; this is a &mdash; this
 is, after all, a developer conference. Let's
 
 127
 00:10:25,089 --> 00:10:32,089
-take a look at some code and  &mdash;
+take a look at some code and &mdash;
 All right. So let me switch over to my editor.
 
 128
@@ -660,8 +660,8 @@ file right here.
 
 133
 00:10:59,759 --> 00:11:04,350
-Now, this  &mdash; the code that I'm showing you
-is for  &mdash; on our  &mdash; on our Github, we have
+Now, this &mdash; the code that I'm showing you
+is for &mdash; on our &mdash; on our Github, we have
 
 134
 00:11:04,350 --> 00:11:08,839
@@ -691,7 +691,7 @@ If it doesn't and there's a need for something,
 139
 00:11:29,389 --> 00:11:34,689
 then we'll fill that in with a Chrome API.
-But again, the  &mdash; the driving vision is, we'd
+But again, the &mdash; the driving vision is, we'd
 
 140
 00:11:34,689 --> 00:11:38,339
@@ -700,7 +700,7 @@ possibly can.
 
 141
 00:11:38,339 --> 00:11:45,339
-So  &mdash; all right. Let's go back to the...
+So &mdash; all right. Let's go back to the...
 Okay. So let's take a look at some of those
 
 142
@@ -711,11 +711,11 @@ by default.
 143
 00:11:50,860 --> 00:11:55,479
 So again, just to reiterate, everything in
-your app, all of the resources, the UI  &mdash; right?
+your app, all of the resources, the UI &mdash; right?
 
 144
 00:11:55,479 --> 00:11:59,699
- &mdash; your graphic assets, everything, that's
+&mdash; your graphic assets, everything, that's
 all local. Right? That all gets installed
 
 145
@@ -725,7 +725,7 @@ the app, just like a user would install any
 
 146
 00:12:03,889 --> 00:12:06,519
-other app, that's  &mdash; your experience is I'm
+other app, that's &mdash; your experience is I'm
 just getting an app.
 
 147
@@ -736,7 +736,7 @@ first, you have to think about what the disconnected
 148
 00:12:12,980 --> 00:12:18,790
 experience is going to be, including first
-run. I might download your app  &mdash; right?  &mdash; run
+run. I might download your app &mdash; right? &mdash; run
 
 149
 00:12:18,790 --> 00:12:24,240
@@ -775,13 +775,13 @@ I couldn't do things like look at my contact
 
 156
 00:12:54,589 --> 00:12:57,829
-lists  &mdash; right?  &mdash; and see a call history
+lists &mdash; right? &mdash; and see a call history
 and so on, right?
 
 157
 00:12:57,829 --> 00:13:02,509
 So even in the case of the most connected
-apps, there's  &mdash; there's usually scenarios
+apps, there's &mdash; there's usually scenarios
 
 158
 00:13:02,509 --> 00:13:06,740
@@ -791,7 +791,7 @@ off line.
 159
 00:13:06,740 --> 00:13:13,740
 You need to consider the case of handling
-stale data  &mdash; right?  &mdash; and synchronization.
+stale data &mdash; right? &mdash; and synchronization.
 
 160
 00:13:14,009 --> 00:13:18,529
@@ -800,7 +800,7 @@ off line, then they go on line. Now what happens,
 
 161
 00:13:18,529 --> 00:13:23,060
-right? That's a  &mdash; that's an issue.
+right? That's a &mdash; that's an issue.
 And again, restore data locally. Now, there
 
 162
@@ -861,11 +861,11 @@ events to figure out when you are available,
 173
 00:14:18,389 --> 00:14:24,649
 when you're connected to the web. Store data
-with things like Chrome storage local  &mdash; in
+with things like Chrome storage local &mdash; in
 
 174
 00:14:24,649 --> 00:14:31,050
-this case, it's an asynchronous API  &mdash; you
+this case, it's an asynchronous API &mdash; you
 can use the HTML5 filesystem to do that. And
 
 175
@@ -920,7 +920,7 @@ that they are, and when you build packaged
 
 185
 00:15:22,839 --> 00:15:26,160
-apps  &mdash; right?  &mdash; users are going  &mdash; they're
+apps &mdash; right? &mdash; users are going &mdash; they're
 going to have the expectation of your app.
 
 186
@@ -1011,7 +1011,7 @@ messaging architecture, right? The push messaging?
 203
 00:16:46,959 --> 00:16:53,809
 So your server can send push messages down
-to your app, and because the  &mdash; the Chrome
+to your app, and because the &mdash; the Chrome
 
 204
 00:16:53,809 --> 00:16:58,189
@@ -1055,12 +1055,12 @@ services, so when a user is signed into Google
 
 212
 00:17:32,960 --> 00:17:37,850
- &mdash; and on Chromebooks, they always are  &mdash; they
+&mdash; and on Chromebooks, they always are &mdash; they
 never see a login dialogue, right? All they
 
 213
 00:17:37,850 --> 00:17:43,940
- &mdash; if you call the  &mdash; the Google version of
+&mdash; if you call the &mdash; the Google version of
 that API, you'll just get the user's identity
 
 214
@@ -1070,7 +1070,7 @@ one for third-party services. And in the case
 
 215
 00:17:49,039 --> 00:17:53,039
-of third parties  &mdash; right?  &mdash; there's a whole
+of third parties &mdash; right? &mdash; there's a whole
 dance that goes on, right? They get redirected
 
 216
@@ -1091,7 +1091,7 @@ the token, and you're good to go.
 219
 00:18:09,330 --> 00:18:14,779
 So for example, the synchronized filesystem
- &mdash; right?  &mdash; you can control what the conflict
+&mdash; right? &mdash; you can control what the conflict
 
 220
 00:18:14,779 --> 00:18:20,179
@@ -1106,7 +1106,7 @@ yourself. And all you do is request the filesystem,
 222
 00:18:27,309 --> 00:18:31,350
 which is the same kind of API that you would
-use in the open web, right? You'd get a  &mdash; you'd
+use in the open web, right? You'd get a &mdash; you'd
 
 223
 00:18:31,350 --> 00:18:38,159
@@ -1130,7 +1130,7 @@ web auth flow, is the one for third parties.
 
 227
 00:18:52,370 --> 00:18:59,149
-Again, so we just  &mdash; now, today, those APIs
+Again, so we just &mdash; now, today, those APIs
 as of right now are in experimental, so they're
 
 228
@@ -1156,11 +1156,11 @@ experience.
 232
 00:19:20,890 --> 00:19:27,890
 So because these apps live outside the browser
-and they can have richer experiences  &mdash; right?
+and they can have richer experiences &mdash; right?
 
 233
 00:19:28,960 --> 00:19:33,250
- &mdash; richer user interfaces, there are some
+&mdash; richer user interfaces, there are some
 things that go along with that.
 
 234
@@ -1260,8 +1260,8 @@ I showed earlier in the demos, they didn't
 
 253
 00:21:04,029 --> 00:21:10,179
-have the native  &mdash; the native title bars,
-right? They decided to show  &mdash; to hide them.
+have the native &mdash; the native title bars,
+right? They decided to show &mdash; to hide them.
 
 254
 00:21:10,179 --> 00:21:15,200
@@ -1355,7 +1355,7 @@ So it's important to remember that these issues
 
 272
 00:22:52,030 --> 00:22:56,010
- &mdash; you know, they become paramount when you
+&mdash; you know, they become paramount when you
 have these kinds of capabilities.
 
 273
@@ -1480,7 +1480,7 @@ calls. All your JavaScript code has to be
 
 297
 00:25:06,730 --> 00:25:12,539
-in separate JS files, okay? You can't  &mdash; you
+in separate JS files, okay? You can't &mdash; you
 can't do things like inline event handlers
 
 298
@@ -1510,7 +1510,7 @@ in their apps? A bunch of you. Yeah. So that
 
 303
 00:25:40,490 --> 00:25:44,919
- &mdash; by default, the content security policy
+&mdash; by default, the content security policy
 will say, oh, you are trying to make a request
 
 304
@@ -1540,7 +1540,7 @@ domain, and it can write files, and it can
 
 309
 00:26:11,070 --> 00:26:16,929
-do these other things. So that's  &mdash; it is
+do these other things. So that's &mdash; it is
 a hint to the user of what's going on.
 
 310
@@ -1606,7 +1606,7 @@ we solve that problem.
 322
 00:27:12,200 --> 00:27:17,580
 For accessing remote resources, the only thing
- &mdash; the only types of data that you are allowed
+&mdash; the only types of data that you are allowed
 
 323
 00:27:17,580 --> 00:27:23,019
@@ -1656,7 +1656,7 @@ that we built a remote access loader library
 332
 00:28:05,960 --> 00:28:10,710
 that will handle this for you. You simply
- &mdash; you include the JavaScript code. You use
+&mdash; you include the JavaScript code. You use
 
 333
 00:28:10,710 --> 00:28:15,409
@@ -1746,7 +1746,7 @@ it is you want to make available. Keep all
 350
 00:29:40,080 --> 00:29:44,600
 your stuff local, right? Identify what it
-is you want to make  &mdash; you want the user to
+is you want to make &mdash; you want the user to
 
 351
 00:29:44,600 --> 00:29:49,809
@@ -1795,7 +1795,7 @@ Okay. So let's go back to the code and let
 
 360
 00:30:42,019 --> 00:30:49,019
-me go back  &mdash; actually, let me show you on
+me go back &mdash; actually, let me show you on
 our site, developer.chrome.com/apps, this
 
 361
@@ -1840,7 +1840,7 @@ The other thing I want to show you guys really
 
 369
 00:31:30,549 --> 00:31:37,549
-quick  &mdash; oh, yeah, I'm running Canary, by
+quick &mdash; oh, yeah, I'm running Canary, by
 the way. So that's bound to happen more than
 
 370
@@ -1881,7 +1881,7 @@ How many people use the Chrome DevTools? All
 377
 00:32:17,629 --> 00:32:23,110
 right. Did you guys go to the DevTools unleashed
-session that was just  &mdash; yeah. All of that
+session that was just &mdash; yeah. All of that
 
 378
 00:32:23,110 --> 00:32:27,360
@@ -2020,7 +2020,7 @@ before I take questions. That is something
 
 405
 00:34:33,400 --> 00:34:40,400
-that we've been working on. It's  &mdash; how many
+that we've been working on. It's &mdash; how many
 people have opened up their Pixels and said,
 
 406
@@ -2095,7 +2095,7 @@ in a second.
 
 420
 00:35:51,110 --> 00:35:56,580
-The idea here basically is that  &mdash; you can
+The idea here basically is that &mdash; you can
 see it has kind of got the Googlish UI. So
 
 421
@@ -2111,7 +2111,7 @@ And so when I do that, it fills out the skeleton
 423
 00:36:10,790 --> 00:36:13,690
 for me of the packaged app, right? So you
-can see here  &mdash; I mean, I know the font is
+can see here &mdash; I mean, I know the font is
 
 424
 00:36:13,690 --> 00:36:17,410
@@ -2131,11 +2131,11 @@ practice I said before, you know, figure out
 427
 00:36:29,800 --> 00:36:34,830
 the screen height and so on.
-I've got things like  &mdash; what do you call it
+I've got things like &mdash; what do you call it
 
 428
 00:36:34,830 --> 00:36:41,170
- &mdash; code hinting. If I say Chrome dot and then
+&mdash; code hinting. If I say Chrome dot and then
 control space, right? And so pretty cool.
 
 429
@@ -2216,7 +2216,7 @@ samples in the Chrome app samples repo here
 444
 00:38:03,100 --> 00:38:10,100
 on github.
-And that one  &mdash; the aptly named code editor
+And that one &mdash; the aptly named code editor
 
 445
 00:38:10,320 --> 00:38:17,320
@@ -2285,13 +2285,13 @@ called a Web site.
 
 458
 00:39:11,300 --> 00:39:14,800
-So we couldn't call  &mdash; see, the problem is
+So we couldn't call &mdash; see, the problem is
 things like the word "hosted app" doesn't
 
 459
 00:39:14,800 --> 00:39:19,180
 mean anything to anybody. So we had to figure
-out what do we call these  &mdash; these new things
+out what do we call these &mdash; these new things
 
 460
 00:39:19,180 --> 00:39:26,100
@@ -2305,7 +2305,7 @@ understand I did not make that decision.
 
 462
 00:39:28,400 --> 00:39:34,270
->>Joe Marini: But, yeah, so  &mdash; the future
+>>Joe Marini: But, yeah, so &mdash; the future
 is that, yes, what was called hosted apps
 
 463
@@ -2426,7 +2426,7 @@ do stuff like that, yeah.
 486
 00:41:10,680 --> 00:41:17,000
 >>> You mentioned API supported Socket. What's
-the name of the  &mdash; I could not find it.
+the name of the &mdash; I could not find it.
 
 487
 00:41:17,000 --> 00:41:21,380
@@ -2446,7 +2446,7 @@ Hang on. Sorry. Right there. Yeah.
 490
 00:41:30,300 --> 00:41:36,370
 >>> Okay. It is not on the regular API.
->>Joe Marini: If you go to  &mdash; it is down in
+>>Joe Marini: If you go to &mdash; it is down in
 
 491
 00:41:36,370 --> 00:41:39,580
@@ -2470,13 +2470,13 @@ as a zip file from github?
 
 495
 00:41:48,480 --> 00:41:53,590
-a zip file onto the Pixel  &mdash; first of all,
+a zip file onto the Pixel &mdash; first of all,
 don't do this. The reason is because right
 
 496
 00:41:53,590 --> 00:41:59,660
 now it requires the Canary to run.
-We expect that that will change  &mdash; as the
+We expect that that will change &mdash; as the
 
 497
 00:41:59,660 --> 00:42:03,500
@@ -2486,7 +2486,7 @@ that will happen. So once that happens, the
 498
 00:42:03,500 --> 00:42:08,390
 download it as a zip file onto your Pixel.
-The way  &mdash; the incredibly intuitive way that
+The way &mdash; the incredibly intuitive way that
 
 499
 00:42:08,390 --> 00:42:13,550
@@ -2530,17 +2530,17 @@ I want to distribute it not only on Chrome
 
 507
 00:42:39,480 --> 00:42:41,580
-OS but also  &mdash;
->>Joe Marini: So it runs  &mdash;
+OS but also &mdash;
+>>Joe Marini: So it runs &mdash;
 
 508
 00:42:41,580 --> 00:42:47,330
 >>> It runs on the Chrome browser.
->>Joe Marini: No, it runs  &mdash; no, you are not
+>>Joe Marini: No, it runs &mdash; no, you are not
 
 509
 00:42:47,330 --> 00:42:50,730
-in the browser anymore. No, this is  &mdash; what
+in the browser anymore. No, this is &mdash; what
 we have done is taken the Chrome runtime,
 
 510
@@ -2575,7 +2575,7 @@ the user system. And then when they launch
 
 516
 00:43:13,160 --> 00:43:15,340
-it using  &mdash;
+it using &mdash;
 >>> You can only run CRX if you are using
 
 517

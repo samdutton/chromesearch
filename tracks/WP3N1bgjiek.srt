@@ -5,7 +5,7 @@ here at Google and I work on Google Chrome
 
 2
 00:00:08,240 --> 00:00:13,790
-Frame  &mdash; a plug-in that’s bringing HTML5
+Frame &mdash; a plug-in that’s bringing HTML5
 and rich, modern web apps to IE 6, 7, and
 
 3

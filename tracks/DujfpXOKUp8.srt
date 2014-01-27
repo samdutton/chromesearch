@@ -50,7 +50,7 @@ than it was a year ago.
 
 11
 00:00:46,879 --> 00:00:52,129
-Mobile touch  &mdash; mobile use in general is projected
+Mobile touch &mdash; mobile use in general is projected
 to overtake the desktop sometime early next
 
 12
@@ -61,12 +61,12 @@ modules only corroborate that. You can see
 13
 00:00:58,010 --> 00:01:04,079
 it's a very up-and-to-the-right kind of graph.
-Also we've got this new  &mdash; relatively new
+Also we've got this new &mdash; relatively new
 
 14
 00:01:04,079 --> 00:01:10,340
 form factor of touch laptops, of which the
-Pixel is one, and also Windows  &mdash; Windows
+Pixel is one, and also Windows &mdash; Windows
 
 15
 00:01:10,340 --> 00:01:15,049
@@ -111,7 +111,7 @@ So touchend is the natural thing that happens
 23
 00:01:51,299 --> 00:01:56,579
 when your finger is raised and touchcancel
-happens if your finger was  &mdash; if your touch
+happens if your finger was &mdash; if your touch
 
 24
 00:01:56,579 --> 00:02:00,649
@@ -265,12 +265,12 @@ that looks like on these devices.
 
 54
 00:04:55,400 --> 00:05:02,310
-On the Chromebook Pixel, it's something  &mdash; because
+On the Chromebook Pixel, it's something &mdash; because
 of further distance of interaction, you end
 
 55
 00:05:02,310 --> 00:05:09,310
-up with screwy  &mdash; with a slightly bigger  &mdash; with
+up with screwy &mdash; with a slightly bigger &mdash; with
 fewer pixels required to represent the same
 
 56
@@ -316,7 +316,7 @@ hover state is only in hardware and available
 64
 00:05:57,569 --> 00:06:04,569
 in Android. It's not exposed to the web yet.
-So what do we do in the case of  &mdash; in the
+So what do we do in the case of &mdash; in the
 
 65
 00:06:05,150 --> 00:06:12,030
@@ -330,7 +330,7 @@ has a link, the other does not. And I can
 
 67
 00:06:16,599 --> 00:06:21,759
-just activate hover by  &mdash; by tapping.
+just activate hover by &mdash; by tapping.
 So a single tap activates hover on mobile
 
 68
@@ -400,8 +400,8 @@ This is way too small for me to tap.
 
 81
 00:07:38,000 --> 00:07:43,479
-So you can see if  &mdash; as soon as I tap this
- &mdash; this page, I get this responsive input
+So you can see if &mdash; as soon as I tap this
+&mdash; this page, I get this responsive input
 
 82
 00:07:43,479 --> 00:07:50,289
@@ -425,7 +425,7 @@ pointer-locked so whenever I pan around with
 
 86
 00:08:06,340 --> 00:08:13,340
-my trackpad or pinch zoom  &mdash; or sorry, two-finger
+my trackpad or pinch zoom &mdash; or sorry, two-finger
 scroll, I can navigate the map. And I can
 
 87
@@ -435,7 +435,7 @@ touchscreen. So it's sort of an interesting
 
 88
 00:08:19,250 --> 00:08:24,189
-interaction using both  &mdash; both touch surfaces
+interaction using both &mdash; both touch surfaces
 simultaneously.
 
 89
@@ -505,7 +505,7 @@ you can't use the trackpad. And really this
 
 102
 00:09:23,330 --> 00:09:27,840
-isn't about the Pixel. This code was  &mdash; you
+isn't about the Pixel. This code was &mdash; you
 know, the assumption here is if I've got touch
 
 103
@@ -591,7 +591,7 @@ to the click event because it detects a touchscreen.
 119
 00:10:35,100 --> 00:10:38,190
 So don't do that.
-So how do you  &mdash; what do you do instead?
+So how do you &mdash; what do you do instead?
 
 120
 00:10:38,190 --> 00:10:41,710
@@ -695,7 +695,7 @@ So if I touch and drag, I get touchstart,
 
 140
 00:11:59,080 --> 00:12:03,620
-touchmove, and then  &mdash; oops  &mdash; if I touch
+touchmove, and then &mdash; oops &mdash; if I touch
 and drag, you can see I get touchmove and
 
 141
@@ -706,11 +706,11 @@ But if I tap on this, you see I get touchstart,
 142
 00:12:09,690 --> 00:12:13,380
 touchend, as you'd expect, but then I also
-get this compatibility mouse move  &mdash; mousedown,
+get this compatibility mouse move &mdash; mousedown,
 
 143
 00:12:13,380 --> 00:12:16,180
-mouseout click  &mdash; sequence that's emulated
+mouseout click &mdash; sequence that's emulated
 in the click.
 
 144
@@ -726,7 +726,7 @@ do anything else with it." And now when I
 146
 00:12:24,890 --> 00:12:31,890
 tap I just get the touch events.
-So if you leave here knowing  &mdash; remembering
+So if you leave here knowing &mdash; remembering
 
 147
 00:12:32,110 --> 00:12:36,760
@@ -756,7 +756,7 @@ a Pixel yet, just go to Chrome flags and turn
 152
 00:12:51,140 --> 00:12:54,290
 on enable touch events.
-We'd actually like to  &mdash; we'd actually like
+We'd actually like to &mdash; we'd actually like
 
 153
 00:12:54,290 --> 00:12:58,010
@@ -810,7 +810,7 @@ a mouseout event targeted at the rectangle,
 
 163
 00:13:41,320 --> 00:13:44,950
-and then  &mdash; and then I'll continue receiving
+and then &mdash; and then I'll continue receiving
 events on whatever the background element
 
 164
@@ -861,7 +861,7 @@ something, they're manipulating that thing
 173
 00:14:19,380 --> 00:14:23,510
 for the duration of their touch. But this
-gets tricky if you think about what if  &mdash; what
+gets tricky if you think about what if &mdash; what
 
 174
 00:14:23,510 --> 00:14:28,130
@@ -916,7 +916,7 @@ so this is a really simple app that just transforms
 184
 00:15:08,680 --> 00:15:13,860
 this rectangle to match with my touch events.
-And this is  &mdash; this works fine because it's
+And this is &mdash; this works fine because it's
 
 185
 00:15:13,860 --> 00:15:18,320
@@ -975,7 +975,7 @@ want those on the container. In this case,
 
 196
 00:16:00,110 --> 00:16:05,060
-I want to take them  &mdash; instead of putting
+I want to take them &mdash; instead of putting
 them on the container, I can go up here to
 
 197
@@ -986,7 +986,7 @@ handlers instead on whatever the target of
 198
 00:16:10,950 --> 00:16:15,380
 the touchstart was.
-So in this case, it's going to be  &mdash; if I
+So in this case, it's going to be &mdash; if I
 
 199
 00:16:15,380 --> 00:16:17,560
@@ -1065,7 +1065,7 @@ browser's got to do something to make it easier
 
 214
 00:17:19,459 --> 00:17:23,980
-for people to touch large  &mdash; touch small targets.
+for people to touch large &mdash; touch small targets.
 So what Chrome does, it's got a feature called
 
 215
@@ -1086,7 +1086,7 @@ on other hardware, we can use a suitable default.
 218
 00:17:37,500 --> 00:17:41,600
 And then we look at all of the elements inside
-that bounding box and we look at  &mdash; we'd find
+that bounding box and we look at &mdash; we'd find
 
 219
 00:17:41,600 --> 00:17:46,720
@@ -1146,11 +1146,11 @@ feature. You can zoom in and out the whole
 230
 00:18:31,779 --> 00:18:37,210
 Chrome OS UI. So I'm going to do that for
-this demo and show you  &mdash; well, let me just
+this demo and show you &mdash; well, let me just
 
 231
 00:18:37,210 --> 00:18:41,059
-show  &mdash; if I just tap here, I've got the rectangle
+show &mdash; if I just tap here, I've got the rectangle
 showing where my tap was, and the blue shows
 
 232
@@ -1215,7 +1215,7 @@ index indicates that you can focus it by tapping
 
 244
 00:19:32,409 --> 00:19:36,529
- &mdash; by clicking on it or activating it. Or
+&mdash; by clicking on it or activating it. Or
 even just a mousedown event handler because
 
 245
@@ -1230,7 +1230,7 @@ but it is possible to confuse it.
 
 247
 00:19:46,279 --> 00:19:50,669
-In particular, we need some signal that  &mdash; that
+In particular, we need some signal that &mdash; that
 what you've got is designed to be activated
 
 248
@@ -1251,7 +1251,7 @@ JavaScript going to rewrite the event to the
 251
 00:20:05,450 --> 00:20:10,970
 right element, that gives the browsers no
-real signal of  &mdash; of where  &mdash; what is touchable
+real signal of &mdash; of where &mdash; what is touchable
 
 252
 00:20:10,970 --> 00:20:15,559
@@ -1365,7 +1365,7 @@ not going to happen any time soon.
 
 274
 00:21:52,740 --> 00:21:56,100
-So  &mdash; but the good news is, you actually don't
+So &mdash; but the good news is, you actually don't
 need the browser to do this for you. This
 
 275
@@ -1581,7 +1581,7 @@ quickly. Often it fires much faster than your
 317
 00:25:16,110 --> 00:25:23,110
 render loop, which is 60 hertz if you're getting
-a smooth performance  &mdash; smooth visual display.
+a smooth performance &mdash; smooth visual display.
 
 318
 00:25:25,559 --> 00:25:32,139
@@ -1740,7 +1740,7 @@ What happens is every time you scroll, we
 
 349
 00:28:20,889 --> 00:28:26,239
-need to call back  &mdash; well, Chrome calls back
+need to call back &mdash; well, Chrome calls back
 into the main thread to see if it is allowed
 
 350
@@ -1781,7 +1781,7 @@ event handler. If it is unnecessary, there's
 357
 00:29:16,039 --> 00:29:19,739
 no need for you to put it there and you will
-save  &mdash; you will save yourself from seeing
+save &mdash; you will save yourself from seeing
 
 358
 00:29:19,739 --> 00:29:25,110
@@ -1790,7 +1790,7 @@ And, of course, remember that in some cases,
 
 359
 00:29:25,110 --> 00:29:30,830
-it's not so bad to have  &mdash; to rely on synthesized
+it's not so bad to have &mdash; to rely on synthesized
 DOM events like click, scroll, and context
 
 360
@@ -1830,7 +1830,7 @@ So, essentially, if you think of your page
 
 367
 00:30:08,820 --> 00:30:13,159
- &mdash; if you think of subdividing your page into
+&mdash; if you think of subdividing your page into
 regions, you can decide whether or not you
 
 368
@@ -1970,7 +1970,7 @@ which is changing in between browsers is very
 
 395
 00:32:12,049 --> 00:32:15,609
-hard. And then this whole  &mdash; all the work
+hard. And then this whole &mdash; all the work
 we do to try to do to scroll on a GPU thread
 
 396
@@ -2055,7 +2055,7 @@ code that's designed for the mouse model,
 
 412
 00:33:22,789 --> 00:33:26,159
-you can  &mdash; rather than having to worry about
+you can &mdash; rather than having to worry about
 things like the difference in targeting model
 
 413
@@ -2165,7 +2165,7 @@ excited about. First of all, I said that you
 
 434
 00:34:59,540 --> 00:35:04,350
-can  &mdash; they let you specify declaratively
+can &mdash; they let you specify declaratively
 what to do with touch. And this is done through
 
 435
@@ -2221,7 +2221,7 @@ that work well across a range of devices.
 445
 00:35:44,930 --> 00:35:51,930
 And so let me show you an example here. This
-is a really simple demo of  &mdash; this is a really
+is a really simple demo of &mdash; this is a really
 
 446
 00:35:52,230 --> 00:35:56,550
@@ -2231,11 +2231,11 @@ modeled after the Google+ circle editor.
 447
 00:35:56,550 --> 00:36:01,910
 The idea is I can touch on a card and drag
-it  &mdash; let me get all three of the circles
+it &mdash; let me get all three of the circles
 
 448
 00:36:01,910 --> 00:36:06,950
- &mdash; touch on a card and drag it to one of these
+&mdash; touch on a card and drag it to one of these
 circles. This is designed to work with multiple
 
 449
@@ -2506,7 +2506,7 @@ user is actively manipulating this thing,
 502
 00:39:24,720 --> 00:39:24,970
 then active should be applied. So we apply
-that  &mdash; on touchdown, we apply that and we
+that &mdash; on touchdown, we apply that and we
 
 503
 00:39:24,890 --> 00:39:25,140
@@ -2521,7 +2521,7 @@ before it kicks in. But that's effectively
 505
 00:39:25,220 --> 00:39:25,470
 exactly what active is for.
->>> Does that work in multiple  &mdash; does that
+>>> Does that work in multiple &mdash; does that
 
 506
 00:39:25,350 --> 00:39:25,600

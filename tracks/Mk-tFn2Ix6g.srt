@@ -71,7 +71,7 @@ don't have to type that out anymore. That's
 15
 00:01:19,340 --> 00:01:22,680
 really nice.
-But this is like  &mdash; so what I actually did
+But this is like &mdash; so what I actually did
 
 16
 00:01:22,680 --> 00:01:28,289
@@ -125,7 +125,7 @@ and you notice what the really productive
 
 26
 00:02:31,290 --> 00:02:36,760
-developers do. And they know their  &mdash; they
+developers do. And they know their &mdash; they
 have tools that they use, they know them really
 
 27
@@ -141,7 +141,7 @@ And so I want to talk a little bit about tools.
 29
 00:02:45,849 --> 00:02:50,180
 And this is not about, you know, Google development
-tools. This is about  &mdash; you know, you don't
+tools. This is about &mdash; you know, you don't
 
 30
 00:02:50,180 --> 00:02:56,069
@@ -271,7 +271,7 @@ little bit of this, but focusing on your developer
 55
 00:05:02,030 --> 00:05:06,030
 workflow.
-So I'll just  &mdash; we're going to walk through
+So I'll just &mdash; we're going to walk through
 
 56
 00:05:06,030 --> 00:05:11,000
@@ -281,7 +281,7 @@ And really the way we'll start this off is
 57
 00:05:11,000 --> 00:05:15,449
 in your shell.
-In your shell  &mdash; I'll bring mine up right
+In your shell &mdash; I'll bring mine up right
 
 58
 00:05:15,449 --> 00:05:19,210
@@ -336,7 +336,7 @@ in "Z please," and we jump over into that
 68
 00:06:11,599 --> 00:06:18,599
 folder, nice and easy. Cool.
-Now, moving on past my shell  &mdash; actually,
+Now, moving on past my shell &mdash; actually,
 
 69
 00:06:18,660 --> 00:06:25,660
@@ -436,7 +436,7 @@ It's cool. I didn't actually write these three
 88
 00:08:23,979 --> 00:08:30,979
 lines, but maybe I'll refactor them a little
-bit. Select them. I will align  &mdash; that's nice.
+bit. Select them. I will align &mdash; that's nice.
 
 89
 00:08:31,430 --> 00:08:38,430
@@ -615,7 +615,7 @@ Okay. So I just hit saved, I come over here
 
 124
 00:12:09,460 --> 00:12:16,460
-with my mouse and  &mdash; nice. This is definitely
+with my mouse and &mdash; nice. This is definitely
 an improvement and I will be committing this
 
 125
@@ -676,7 +676,7 @@ Coffescript first.
 136
 00:13:18,260 --> 00:13:24,310
 Nice. Cool.
-I'll bring up the Chrome dev tools. And  &mdash; that's
+I'll bring up the Chrome dev tools. And &mdash; that's
 
 137
 00:13:24,310 --> 00:13:30,350
@@ -776,7 +776,7 @@ up as real files. That's pretty nice.
 156
 00:15:20,510 --> 00:15:27,310
 Ember actually uses sourceURL to great effect
-to  &mdash; Ember the JavaScript library, to emulate
+to &mdash; Ember the JavaScript library, to emulate
 
 157
 00:15:27,310 --> 00:15:32,420
@@ -830,7 +830,7 @@ And this points over to a map file. And this
 
 167
 00:16:31,380 --> 00:16:36,790
-map file does  &mdash; basically takes the identifiers
+map file does &mdash; basically takes the identifiers
 in this compiled source and maps it back to
 
 168
@@ -856,7 +856,7 @@ works over here. Here's my nice edits that
 172
 00:16:57,500 --> 00:17:04,500
 I made. I can apply break points and click
-on any  &mdash; and now we're actually broken in
+on any &mdash; and now we're actually broken in
 
 173
 00:17:04,620 --> 00:17:09,939
@@ -920,7 +920,7 @@ that are defined in this file, and now I'll
 
 185
 00:18:12,150 --> 00:18:17,200
-just bind  &mdash; yes, the sort function is what
+just bind &mdash; yes, the sort function is what
 I'm looking for. I can jump immediately to
 
 186
@@ -990,7 +990,7 @@ that you've written in a variety of different
 
 199
 00:19:31,720 --> 00:19:36,880
-sessions, so like  &mdash; settings. The first one
+sessions, so like &mdash; settings. The first one
 is, of course, in the browser, so this is
 
 200
@@ -1025,7 +1025,7 @@ tests just without leaving my command line
 
 206
 00:20:17,380 --> 00:20:24,350
-here. I can also run this  &mdash; run tests after
+here. I can also run this &mdash; run tests after
 I push it up to version control, and let something
 
 207
@@ -1045,7 +1045,7 @@ thing, it takes our Q unit test, throws it
 
 210
 00:20:40,540 --> 00:20:45,830
-into phantom.js, and then  &mdash; and then we're
+into phantom.js, and then &mdash; and then we're
 looking good. It tells us if we're indeed
 
 211
@@ -1081,7 +1081,7 @@ mobile emulators. I'm not going to wait for
 217
 00:21:24,170 --> 00:21:30,620
 this finish, but it just called up some IOS
-emulators, and it's gonna  &mdash; and it can check
+emulators, and it's gonna &mdash; and it can check
 
 218
 00:21:30,620 --> 00:21:33,930
@@ -1110,7 +1110,7 @@ Web app, and tackling all of these on your
 
 223
 00:21:56,430 --> 00:22:01,140
-own every time  &mdash; every time you make changes
+own every time &mdash; every time you make changes
 is not going to work out so well, so you're
 
 224
@@ -1135,13 +1135,13 @@ put up with some friends, and telling me that
 
 228
 00:22:24,050 --> 00:22:31,050
-I actually have  &mdash; people are hitting some
+I actually have &mdash; people are hitting some
 JavaScript errors in I9 and Chrome, and, you
 
 229
 00:22:31,640 --> 00:22:36,450
 know, I didn't hit any of these errors, and
-none of the other developers did, but  &mdash; but
+none of the other developers did, but &mdash; but
 
 230
 00:22:36,450 --> 00:22:40,690
@@ -1151,7 +1151,7 @@ so I can get these reports and make sure that
 231
 00:22:40,690 --> 00:22:47,690
 I can fix all these for everyone. Okay. So
-that was a lot of stuff, and sorry, but  &mdash; so
+that was a lot of stuff, and sorry, but &mdash; so
 
 232
 00:22:51,420 --> 00:22:56,640
@@ -1161,7 +1161,7 @@ kind of like this is here, this is here, and
 233
 00:22:56,640 --> 00:23:00,020
 the feeling that I got was that this was kind
-of like  &mdash; I mean, there's a lot of tools,
+of like &mdash; I mean, there's a lot of tools,
 
 234
 00:23:00,020 --> 00:23:06,620
@@ -1216,7 +1216,7 @@ not repeat yourself when you're coding; same
 244
 00:23:50,280 --> 00:23:55,190
 thing applies to your tools. You shouldn't
-have to type  &mdash; you shouldn't have to run
+have to type &mdash; you shouldn't have to run
 
 245
 00:23:55,190 --> 00:24:02,190
@@ -1245,7 +1245,7 @@ good to use. So there's a few things inside
 
 250
 00:24:27,760 --> 00:24:33,610
-of it. Things  &mdash; these names you should be
+of it. Things &mdash; these names you should be
 familiar with: Compass, sass, CoffeeScript,
 
 251
@@ -1286,7 +1286,7 @@ your own developer environment going takes
 258
 00:25:12,390 --> 00:25:16,809
 awhile. So we wanted to make sure that you
-could get rid of that  &mdash; an old set in a few
+could get rid of that &mdash; an old set in a few
 
 259
 00:25:16,809 --> 00:25:23,809
@@ -1361,7 +1361,7 @@ to take a tree and pipe it through to Les,
 273
 00:26:43,950 --> 00:26:50,950
 so let's see, we've got a good deal of bootstrap
-here, and then bootstrap  &mdash; a little bit of
+here, and then bootstrap &mdash; a little bit of
 
 274
 00:26:53,320 --> 00:27:00,320
@@ -1370,7 +1370,7 @@ bootstrap, Jasmine going on down here. Cool.
 
 275
 00:27:01,180 --> 00:27:08,180
-Now  &mdash; now, the next thing I'm just going
+Now &mdash; now, the next thing I'm just going
 to open this up inside my text editor, and
 
 276
@@ -1390,7 +1390,7 @@ have a server built into Yeoman. And the cool
 
 279
 00:27:38,170 --> 00:27:44,550
-thing here is that we're actually taking  &mdash; because
+thing here is that we're actually taking &mdash; because
 when you run a server, you actually want to
 
 280
@@ -1440,7 +1440,7 @@ go run all this immediately through Coffee
 
 289
 00:28:52,370 --> 00:28:59,120
-Script  &mdash; sorry, through compass, compile
+Script &mdash; sorry, through compass, compile
 it down to my resulting CSS and then get the
 
 290
@@ -1451,7 +1451,7 @@ cool thing is that we're actually not even
 291
 00:29:02,650 --> 00:29:09,370
 using any sort of Chrome extension to get
-the lab reload functionality inside  &mdash; inside
+the lab reload functionality inside &mdash; inside
 
 292
 00:29:09,370 --> 00:29:16,360
@@ -1505,7 +1505,7 @@ to you. This is your standard to-do app. Common
 
 302
 00:30:25,420 --> 00:30:30,679
- &mdash; a large portion of this came from the to
+&mdash; a large portion of this came from the to
 do MBC project where you can see a basic to
 
 303
@@ -1576,7 +1576,7 @@ and you have to specify your order and your
 316
 00:31:49,500 --> 00:31:54,860
 dependencies over there as well. Modules we
-can only  &mdash; we can just define that structure
+can only &mdash; we can just define that structure
 
 317
 00:31:54,860 --> 00:32:01,860
@@ -1680,12 +1680,12 @@ could give us an ability to try out this style.
 
 337
 00:34:00,540 --> 00:34:07,540
-So back to  &mdash; back to the code. I said that
+So back to &mdash; back to the code. I said that
 this was using required.js, so I'm going to
 
 338
 00:34:08,359 --> 00:34:15,359
-open up the  &mdash; our source of this app, and
+open up the &mdash; our source of this app, and
 I'll open up main.js. So this is the module
 
 339
@@ -1696,7 +1696,7 @@ an app right after we pull in the task app
 340
 00:34:25,030 --> 00:34:32,030
 module, and we have a little coffee script
-pre-filter on this, so looks like  &mdash; all right,
+pre-filter on this, so looks like &mdash; all right,
 
 341
 00:34:33,669 --> 00:34:40,669
@@ -1730,7 +1730,7 @@ pulling a few things into it. So we're pulling
 
 347
 00:35:21,460 --> 00:35:28,460
-in speech, from  &mdash; from this guy over here,
+in speech, from &mdash; from this guy over here,
 and this is actually the E speak speech synthesizer
 
 348
@@ -1835,7 +1835,7 @@ So I think this is really cool. And we also
 
 368
 00:37:51,060 --> 00:37:55,109
-want to make sure that all this  &mdash; all this
+want to make sure that all this &mdash; all this
 data is accessible to anyone that wants to
 
 369
@@ -1870,7 +1870,7 @@ it's a new version file and fix that, and
 
 375
 00:38:29,650 --> 00:38:36,650
-that's  &mdash; that's not great, so why do we need
+that's &mdash; that's not great, so why do we need
 package management for clientside JavaScript?
 
 376
@@ -1986,7 +1986,7 @@ talk to the registry, say, Hey, I need backbone,
 398
 00:40:55,990 --> 00:41:02,380
 cool. I just got the backbone package, it's
-dependent  &mdash; my dependencies are underscore
+dependent &mdash; my dependencies are underscore
 
 399
 00:41:02,380 --> 00:41:05,720
@@ -2020,8 +2020,8 @@ which is really nice.
 
 405
 00:41:30,830 --> 00:41:36,980
-So this is  &mdash; this is where things are going
-with that. So  &mdash; so in summary for Yeoman,
+So this is &mdash; this is where things are going
+with that. So &mdash; so in summary for Yeoman,
 
 406
 00:41:36,980 --> 00:41:43,240
@@ -2096,7 +2096,7 @@ out when you use them in a work flow that
 420
 00:42:56,690 --> 00:43:02,080
 works really well for you. We're working on
-Yeoman. Tell  &mdash; make it easier to consume
+Yeoman. Tell &mdash; make it easier to consume
 
 421
 00:43:02,080 --> 00:43:05,970
@@ -2130,22 +2130,22 @@ and that would be rad.
 
 427
 00:43:48,810 --> 00:43:54,970
-testing like plug-ins or  &mdash;
->>Paul Irish: So since we are built on  &mdash; on
+testing like plug-ins or &mdash;
+>>Paul Irish: So since we are built on &mdash; on
 
 428
 00:43:54,970 --> 00:44:01,970
 Grunt, if you are familiar with that, swapping
-it out for  &mdash; for a different testing suite
+it out for &mdash; for a different testing suite
 
 429
 00:44:03,300 --> 00:44:09,960
 is as easy as editing the Grunt file. So it's
-not too bad. But we  &mdash; we made choices that
+not too bad. But we &mdash; we made choices that
 
 430
 00:44:09,960 --> 00:44:16,440
- &mdash; we wanted to have some smart defaults in
+&mdash; we wanted to have some smart defaults in
 there, so we went with Jasmine because we
 
 431
@@ -2170,7 +2170,7 @@ You talk to me, talk to me.
 
 435
 00:44:34,810 --> 00:44:40,930
->>> Um, when you  &mdash; after you installed Yeoman
+>>> Um, when you &mdash; after you installed Yeoman
 and you were making changes, changes were
 
 436
@@ -2221,7 +2221,7 @@ for deployment. Would that also include being
 445
 00:45:24,250 --> 00:45:31,250
 able to use the closure compiler to have source
-mapping? Um ... yeah. Right now, um  &mdash; right
+mapping? Um ... yeah. Right now, um &mdash; right
 
 446
 00:45:33,300 --> 00:45:40,300
@@ -2231,7 +2231,7 @@ we're looking at a nice way to run it through
 447
 00:45:40,890 --> 00:45:47,760
 a closure compiler, because I like source
-maps just as much as you do. So there's  &mdash; there's
+maps just as much as you do. So there's &mdash; there's
 
 448
 00:45:47,760 --> 00:45:54,070
@@ -2261,7 +2261,7 @@ each other. I'll catch you at the code lab.
 453
 00:46:12,800 --> 00:46:19,800
 >>> All right. What kind of requirements do
-I need  &mdash; for my server when I want to deploy
+I need &mdash; for my server when I want to deploy
 
 454
 00:46:21,140 --> 00:46:27,030
@@ -2270,7 +2270,7 @@ this Yeoman created app?
 
 455
 00:46:27,030 --> 00:46:34,030
-It's completely up to you. So  &mdash; so it's  &mdash; it's
+It's completely up to you. So &mdash; so it's &mdash; it's
 basically we don't make any requirements as
 
 456

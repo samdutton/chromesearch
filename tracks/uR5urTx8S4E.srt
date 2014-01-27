@@ -45,7 +45,7 @@ performance to bottom line things like revenue
 
 10
 00:00:48,290 --> 00:00:54,310
-and engagement  &mdash; user engagement and other
+and engagement &mdash; user engagement and other
 things. This is not just something that we
 
 11
@@ -91,7 +91,7 @@ say you should optimize your images or 60%
 19
 00:01:34,439 --> 00:01:39,119
 of all the bytes are images. That's the first
-constant. The web is getting  &mdash; we are building
+constant. The web is getting &mdash; we are building
 
 20
 00:01:39,119 --> 00:01:43,289
@@ -176,7 +176,7 @@ This was a joint research project between
 36
 00:03:02,280 --> 00:03:07,000
 Google and Bing. What we had done is we actually
-slowed down  &mdash; intentionally slowed down our
+slowed down &mdash; intentionally slowed down our
 
 37
 00:03:07,000 --> 00:03:11,870
@@ -481,7 +481,7 @@ It turns out this Red Robin page is actually
 97
 00:08:30,310 --> 00:08:36,460
 about 10 megabytes in size every time you
-load it. So  &mdash; and we will come back to why
+load it. So &mdash; and we will come back to why
 
 98
 00:08:36,460 --> 00:08:42,200
@@ -571,7 +571,7 @@ this, click on learn more, it will take you
 115
 00:10:07,450 --> 00:10:12,450
 to the documentation slide to explain that.
-Enabling compression, so it turns out  &mdash; we
+Enabling compression, so it turns out &mdash; we
 
 116
 00:10:12,450 --> 00:10:17,460
@@ -670,7 +670,7 @@ build a performance report. We have things
 
 135
 00:11:46,779 --> 00:11:51,020
-like  &mdash; you can specify strategy. So you can
+like &mdash; you can specify strategy. So you can
 say, I want to evaluate the rules against
 
 136
@@ -890,7 +890,7 @@ of those into this command at the bottom.
 
 179
 00:15:43,140 --> 00:15:47,940
-And basically this is like a  &mdash; this tells
+And basically this is like a &mdash; this tells
 us the exact thing that we need to do to reconstruct
 
 180
@@ -1045,7 +1045,7 @@ that you've given us and we say is it 800
 
 210
 00:18:08,029 --> 00:18:12,470
-pixels wide or are you shipping the  &mdash; you
+pixels wide or are you shipping the &mdash; you
 know, the large image and resizing it on the
 
 211
@@ -1125,7 +1125,7 @@ like social widgets and other things.
 
 226
 00:19:21,809 --> 00:19:26,289
-Simple things  &mdash; or actually they're not simple.
+Simple things &mdash; or actually they're not simple.
 Things like lazy loading of images, right?
 
 227
@@ -1301,7 +1301,7 @@ and enable this and I think you'll notice
 261
 00:21:53,950 --> 00:21:59,269
 that your pages load much, much faster.
-Which is yet more motivation to  &mdash; for why
+Which is yet more motivation to &mdash; for why
 
 262
 00:21:59,269 --> 00:22:04,460
@@ -1355,18 +1355,18 @@ media heavy. Surprise, right? Like that's
 
 272
 00:22:49,899 --> 00:22:53,739
- &mdash; that shouldn't be a surprise.
+&mdash; that shouldn't be a surprise.
 And you can see results like the one on the
 
 273
 00:22:53,739 --> 00:22:57,879
- &mdash; on the left here where the original site
+&mdash; on the left here where the original site
 was over 7 megabytes in size. Once we ran
 
 274
 00:22:57,879 --> 00:23:03,700
 the image optimization and other kind of best
-practices, we're down to  &mdash; let's see  &mdash; 1
+practices, we're down to &mdash; let's see &mdash; 1
 
 275
 00:23:03,700 --> 00:23:07,639
@@ -1381,7 +1381,7 @@ So how do you get started?
 277
 00:23:12,190 --> 00:23:16,940
 The best place is actually to just go to mod_pagespeed.com
-or Nginx_PageSpeed. I think those are  &mdash; those
+or Nginx_PageSpeed. I think those are &mdash; those
 
 278
 00:23:16,940 --> 00:23:20,499
@@ -1466,7 +1466,7 @@ through Google servers.
 294
 00:24:38,580 --> 00:24:45,299
 So, you know, if you want to get technical,
-you create  &mdash; you cname your www domain to
+you create &mdash; you cname your www domain to
 
 295
 00:24:45,299 --> 00:24:50,019
@@ -1511,7 +1511,7 @@ So here I am. Here's my site. I have this
 303
 00:25:25,399 --> 00:25:30,979
 beautiful little gallery of, you know, my
-favorite travel photos. I  &mdash; I love them in
+favorite travel photos. I &mdash; I love them in
 
 304
 00:25:30,979 --> 00:25:35,200
@@ -1560,7 +1560,7 @@ this is where all of the magic happens, right?
 
 313
 00:26:16,479 --> 00:26:21,559
-We  &mdash; we basically have a set of check boxes
+We &mdash; we basically have a set of check boxes
 and let me make that a little bit bigger.
 
 314
@@ -1581,7 +1581,7 @@ and I want to do a few things.
 317
 00:26:38,210 --> 00:26:42,179
 So I want to resize images on the server,
-such that if I'm serving a file size of  &mdash; or
+such that if I'm serving a file size of &mdash; or
 
 318
 00:26:42,179 --> 00:26:46,619
@@ -1625,7 +1625,7 @@ a JPEG. So what PageSpeed service has done
 
 326
 00:27:19,149 --> 00:27:22,769
- &mdash; notice that I haven't  &mdash; like I haven't
+&mdash; notice that I haven't &mdash; like I haven't
 done anything on my site, right? The Google
 
 327
@@ -1646,12 +1646,12 @@ kilobytes versus one megabyte, right? But
 330
 00:27:40,759 --> 00:27:45,070
 I think we can do better, right? So right
-now, our image  &mdash; our total size of this page
+now, our image &mdash; our total size of this page
 
 331
 00:27:45,070 --> 00:27:52,070
 is 467 kilobytes so let's go back to the console
-and also enable convert JPEG to WebP and  &mdash; sure,
+and also enable convert JPEG to WebP and &mdash; sure,
 
 332
 00:27:52,220 --> 00:27:56,649
@@ -1670,8 +1670,8 @@ through once they're optimized, and there
 
 335
 00:28:06,080 --> 00:28:12,970
-they are. So we have the WebP  &mdash; let's just
-re-share  &mdash; resort here.
+they are. So we have the WebP &mdash; let's just
+re-share &mdash; resort here.
 
 336
 00:28:12,970 --> 00:28:17,249
@@ -1716,11 +1716,11 @@ using AppEngine, you can also take advantage
 344
 00:28:50,389 --> 00:28:55,059
 of Google PageSpeed service.
-What you need to do  &mdash; and unfortunately it's
+What you need to do &mdash; and unfortunately it's
 
 345
 00:28:55,059 --> 00:28:59,970
-a little bit small here  &mdash; you can modify
+a little bit small here &mdash; you can modify
 your app.yaml file, and you have good documentation
 
 346
@@ -1775,7 +1775,7 @@ measured by Page Load Time, right? And there's
 
 356
 00:29:51,499 --> 00:29:55,979
-another  &mdash; a number of other metrics which
+another &mdash; a number of other metrics which
 we've improved as well.
 
 357
@@ -1855,7 +1855,7 @@ right? How do you implement that in your application?
 
 372
 00:31:02,799 --> 00:31:06,460
-You would have to do  &mdash; use JavaScript with,
+You would have to do &mdash; use JavaScript with,
 you know, detection of the client. It's a
 
 373
@@ -1926,7 +1926,7 @@ and figure out like, "Hey, you're an HTTP
 386
 00:32:04,090 --> 00:32:11,090
 optimizations for you," right? So this is
-a great reason to invest into this  &mdash; into
+a great reason to invest into this &mdash; into
 
 387
 00:32:11,179 --> 00:32:14,169
@@ -1995,7 +1995,7 @@ it is being served through the Google cloud
 
 400
 00:33:11,330 --> 00:33:14,659
-and, you know, there's  &mdash; there may be some
+and, you know, there's &mdash; there may be some
 additional fee in the future,
 
 401
@@ -2021,7 +2021,7 @@ right, because you are probably doing a lot
 405
 00:33:31,830 --> 00:33:37,599
 of the loading through JavaScript over your
-assets and all the rest. But you can  &mdash; if
+assets and all the rest. But you can &mdash; if
 
 406
 00:33:37,599 --> 00:33:44,169
@@ -2040,7 +2040,7 @@ URL. You can actually configure it the other
 
 409
 00:33:53,599 --> 00:33:58,629
-way around such that the image is  &mdash; the URL
+way around such that the image is &mdash; the URL
 is the same and then still leverage some of
 
 410
@@ -2060,7 +2060,7 @@ apps? Is this suitable for just sort of static
 
 413
 00:34:14,500 --> 00:34:18,289
-pages? Or what's the  &mdash; or what do we need
+pages? Or what's the &mdash; or what do we need
 to know about using PageSpeed for dynamic
 
 414
@@ -2120,7 +2120,7 @@ company?
 
 425
 00:35:02,760 --> 00:35:09,400
->>> Okay. And just to sort of  &mdash; to tag onto
+>>> Okay. And just to sort of &mdash; to tag onto
 the previous gentleman's question, how would
 
 426
@@ -2150,7 +2150,7 @@ are doing it manually.
 
 431
 00:35:34,549 --> 00:35:40,079
-We don't have  &mdash; and it would be very hard
+We don't have &mdash; and it would be very hard
 to build scripts that introspect into RequireJS.
 
 432
@@ -2166,7 +2166,7 @@ But that's really an area that we are looking
 434
 00:35:46,760 --> 00:35:50,140
 for feedback from you guys as well because,
-you know, I think these are  &mdash; these are the
+you know, I think these are &mdash; these are the
 
 435
 00:35:50,140 --> 00:35:55,010
@@ -2256,7 +2256,7 @@ can also tweak the size of our cache. For
 452
 00:37:15,020 --> 00:37:20,529
 multi-server deployments, we actually provide
-mem cache  &mdash; caching. Instead of storing the
+mem cache &mdash; caching. Instead of storing the
 
 453
 00:37:20,529 --> 00:37:25,029
@@ -2321,7 +2321,7 @@ like Ember, Angular, Backbone. How does this
 465
 00:38:11,059 --> 00:38:15,720
 play with serving up static templates and
-any of the  &mdash;
+any of the &mdash;
 
 466
 00:38:15,720 --> 00:38:19,599
@@ -2330,7 +2330,7 @@ don't think we have a good answer for that
 
 467
 00:38:19,599 --> 00:38:25,799
-today. We are basically  &mdash; we rely on being
+today. We are basically &mdash; we rely on being
 able to analyze your HTML, your markup, plus
 
 468
@@ -2365,7 +2365,7 @@ to point out that actually just to this point
 
 474
 00:38:56,900 --> 00:39:02,829
-and the one made earlier, if you have  &mdash; if
+and the one made earlier, if you have &mdash; if
 you are loading assets via JavaScript, we
 
 475
@@ -2375,13 +2375,13 @@ What we don't know is the sizing context because
 
 476
 00:39:07,660 --> 00:39:12,630
-we just get to  &mdash; we get a request for a JPEG
+we just get to &mdash; we get a request for a JPEG
 file and we optimize that based on whatever
 
 477
 00:39:12,630 --> 00:39:17,130
 the user agent is. We don't know how big it
-was supposed to  &mdash; what slot it was supposed
+was supposed to &mdash; what slot it was supposed
 
 478
 00:39:17,130 --> 00:39:20,480
@@ -2446,7 +2446,7 @@ will land directly on the link that you need.
 490
 00:40:17,880 --> 00:40:21,450
 That's the simplest way to get there. And
-then the other one was  &mdash; question was Java
+then the other one was &mdash; question was Java
 
 491
 00:40:21,450 --> 00:40:24,859
@@ -2491,7 +2491,7 @@ And I have one question, is that you mentioned
 499
 00:40:57,329 --> 00:41:02,279
 you deployed several servers and words to
-get  &mdash; to make the optimization.
+get &mdash; to make the optimization.
 
 500
 00:41:02,279 --> 00:41:06,470
@@ -2500,7 +2500,7 @@ get  &mdash; to make the optimization.
 
 501
 00:41:06,470 --> 00:41:12,640
-you need to make several subsequent  &mdash; subrequests
+you need to make several subsequent &mdash; subrequests
 of the first requests. So I was wondering,
 
 502
@@ -2591,7 +2591,7 @@ your assets.
 519
 00:42:30,519 --> 00:42:33,890
 And we will deploy those optimizations conditionally.
-And Josh is going to  &mdash;
+And Josh is going to &mdash;
 
 520
 00:42:33,890 --> 00:42:39,609
@@ -2620,7 +2620,7 @@ it gets updated?
 
 525
 00:42:54,799 --> 00:43:00,920
->>Ilya Grigorik: So we  &mdash; Right. So we test
+>>Ilya Grigorik: So we &mdash; Right. So we test
 the stuff very extensively. All the code is
 
 526
@@ -2630,13 +2630,13 @@ Josh, do you want to share any details? I
 
 527
 00:43:05,230 --> 00:43:10,740
-think  &mdash; so one thing I didn't mention, I
+think &mdash; so one thing I didn't mention, I
 had in those slides, we have two sets of filters,
 
 528
 00:43:10,740 --> 00:43:17,740
 COR and optional filters. COR filters are
-the safe filters. They should be  &mdash; can be
+the safe filters. They should be &mdash; can be
 
 529
 00:43:17,940 --> 00:43:23,950
@@ -2660,7 +2660,7 @@ kind of cut releases and ship product. So
 
 533
 00:43:38,119 --> 00:43:45,000
-we have  &mdash; we take kind of a white-listing
+we have &mdash; we take kind of a white-listing
 view of what we can do for different browsers.
 
 534
@@ -2740,7 +2740,7 @@ aside from the image optimization.
 
 549
 00:44:45,799 --> 00:44:50,109
-think we actually  &mdash; we do have a statistics
+think we actually &mdash; we do have a statistics
 screen where we can go and kind of gather
 
 550
@@ -2761,7 +2761,7 @@ are the explanations we have performed.
 553
 00:45:04,720 --> 00:45:10,470
 quick. Is there any danger zones, things you
-should not use  &mdash; not do  &mdash; not  &mdash; if you
+should not use &mdash; not do &mdash; not &mdash; if you
 
 554
 00:45:10,470 --> 00:45:13,609
@@ -2771,12 +2771,12 @@ PageSpeed on your server if, we are using
 555
 00:45:13,609 --> 00:45:17,940
 open source Apache and Nginx models?
->>Ilya Grigorik: Sorry, can you  &mdash;
+>>Ilya Grigorik: Sorry, can you &mdash;
 
 556
 00:45:17,940 --> 00:45:24,940
 >>> Talking too fast. If I'm doing X, then
-is there something that I  &mdash; should I not
+is there something that I &mdash; should I not
 
 557
 00:45:25,809 --> 00:45:31,819
@@ -2826,7 +2826,7 @@ you a side-by-side comparison.
 566
 00:46:15,400 --> 00:46:22,119
 If you enabled this thing, what would you
-get? So in the  &mdash; in our documentation, we
+get? So in the &mdash; in our documentation, we
 
 567
 00:46:22,119 --> 00:46:27,920

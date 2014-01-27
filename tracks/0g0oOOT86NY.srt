@@ -141,12 +141,12 @@ I've paused, because that seems to be the
 29
 00:02:06,569 --> 00:02:08,609
 best way to get Windows to stay up for this
-period of time  &mdash;
+period of time &mdash;
 
 30
 00:02:08,609 --> 00:02:11,940
 [ Laughter ]
->>Matthew McNulty:  &mdash; for purposes of this
+>>Matthew McNulty: &mdash; for purposes of this
 
 31
 00:02:11,940 --> 00:02:17,740
@@ -266,7 +266,7 @@ browsers for a couple of reasons. Older browsers,
 54
 00:03:53,650 --> 00:03:57,880
 you just can't polyfill some of this stuff.
-And really it's  &mdash; you know, it's time for
+And really it's &mdash; you know, it's time for
 
 55
 00:03:57,880 --> 00:04:00,870
@@ -375,7 +375,7 @@ very briefly.
 
 76
 00:05:22,430 --> 00:05:26,650
-These are each  &mdash; almost all of these are
+These are each &mdash; almost all of these are
 emerging standards so we only have a chance
 
 77
@@ -436,7 +436,7 @@ that to you a little bit. It's also incredibly
 88
 00:06:14,110 --> 00:06:18,650
 complicated, especially to grasp right away,
-but the big  &mdash; the big point is it gives you
+but the big &mdash; the big point is it gives you
 
 89
 00:06:18,650 --> 00:06:22,240
@@ -560,7 +560,7 @@ there. So the cool thing about polyfills is
 
 113
 00:07:59,669 --> 00:08:03,790
-that over time as the  &mdash; as browser vendors
+that over time as the &mdash; as browser vendors
 implement these features, the need for them
 
 114
@@ -580,7 +580,7 @@ to be a la carte. So you can use each individual
 
 117
 00:08:17,199 --> 00:08:22,550
- &mdash; each individual polyfill or you can combine
+&mdash; each individual polyfill or you can combine
 a couple together or you can take the entire
 
 118
@@ -641,7 +641,7 @@ along to the new version, which is really
 129
 00:09:09,389 --> 00:09:13,180
 important.
-Okay. So web components provides  &mdash; this foundation
+Okay. So web components provides &mdash; this foundation
 
 130
 00:09:13,180 --> 00:09:17,259
@@ -706,7 +706,7 @@ some core principles to build a new kind of
 142
 00:10:04,709 --> 00:10:09,139
 toolkit, right? One with the future in mind.
-So this is  &mdash; you know, we're leaving behind
+So this is &mdash; you know, we're leaving behind
 
 143
 00:10:09,139 --> 00:10:12,480
@@ -735,12 +735,12 @@ before. You know, for the most part, the web
 
 148
 00:10:30,179 --> 00:10:35,319
-has been not particularly great  &mdash; a great
+has been not particularly great &mdash; a great
 spot to build Webapps. The platform, like
 
 149
 00:10:35,319 --> 00:10:38,860
-Alex said  &mdash; right?  &mdash; it's rocky, it's uneven
+Alex said &mdash; right? &mdash; it's rocky, it's uneven
 on the bottom of the.
 
 150
@@ -761,7 +761,7 @@ like using iFrames to force rendering behavior
 153
 00:10:52,529 --> 00:10:58,439
 in the browser, you know, just to get around
-problems  &mdash; problems on the platform.
+problems &mdash; problems on the platform.
 
 154
 00:10:58,439 --> 00:11:04,679
@@ -836,7 +836,7 @@ right? And you use an element. And you build
 168
 00:11:49,929 --> 00:11:54,769
 applications out of bigger and bigger elements
-made  &mdash; made of more and more elements, up
+made &mdash; made of more and more elements, up
 
 169
 00:11:54,769 --> 00:11:59,100
@@ -855,7 +855,7 @@ of a developer at any given time, an application
 
 172
 00:12:09,610 --> 00:12:16,610
-can be arbitrarily  &mdash; sorry, arbitrarily simple
+can be arbitrarily &mdash; sorry, arbitrarily simple
 and complex at the same time.
 
 173
@@ -865,7 +865,7 @@ the platform to enable component-based apps.
 
 174
 00:12:25,739 --> 00:12:29,970
-So everything is an element and every  &mdash; and
+So everything is an element and every &mdash; and
 all elements have Shadow DOM encapsulating
 
 175
@@ -875,7 +875,7 @@ Polymer makes building elements easier, and
 
 176
 00:12:33,809 --> 00:12:37,309
-from the outside  &mdash; you know, from the inside,
+from the outside &mdash; you know, from the inside,
 you're building your own in polymer. From
 
 177
@@ -945,7 +945,7 @@ select handler element with that method name
 
 190
 00:13:37,869 --> 00:13:43,600
- &mdash; this is not code that's executed  &mdash; will
+&mdash; this is not code that's executed &mdash; will
 be rerun on the actual element.
 
 191
@@ -970,7 +970,7 @@ a way of doing it in declarative. Kind of
 
 195
 00:14:00,839 --> 00:14:04,459
-the whole thing we're doing here  &mdash; you know,
+the whole thing we're doing here &mdash; you know,
 every single thing we do, we can also do imperatively
 
 196
@@ -995,7 +995,7 @@ binding and this is powered by MDV. This radically
 
 200
 00:14:22,739 --> 00:14:26,749
-reduces code complexity. We'll  &mdash; we're going
+reduces code complexity. We'll &mdash; we're going
 to demo this in a little bit so we'll get
 
 201
@@ -1036,7 +1036,7 @@ of really great widgets, and so we've just
 208
 00:14:53,350 --> 00:14:59,329
 begun that a few weeks ago.
-So I want to  &mdash; this is a  &mdash; this is the  &mdash; sort
+So I want to &mdash; this is a &mdash; this is the &mdash; sort
 
 209
 00:14:59,329 --> 00:15:01,799
@@ -1075,7 +1075,7 @@ platform, use the emerging standards.
 
 216
 00:15:27,769 --> 00:15:31,920
-And we  &mdash; actually, one thing that's cool
+And we &mdash; actually, one thing that's cool
 about web components is that your interoperability
 
 217
@@ -1090,8 +1090,8 @@ possible for UI elements to be interoperable.
 
 219
 00:15:40,459 --> 00:15:43,639
-So you'll see in this diagram  &mdash; it's actually
-very, very hard to see here  &mdash; there's other
+So you'll see in this diagram &mdash; it's actually
+very, very hard to see here &mdash; there's other
 
 220
 00:15:43,639 --> 00:15:49,089
@@ -1106,7 +1106,7 @@ with them. And we'll show you a little bit
 222
 00:15:52,679 --> 00:15:56,679
 more about that later.
-They're  &mdash; also in polymer, we've taken a
+They're &mdash; also in polymer, we've taken a
 
 223
 00:15:56,679 --> 00:15:59,279
@@ -1131,7 +1131,7 @@ much of this stuff you want to use.
 227
 00:16:10,299 --> 00:16:13,959
 So we've been talking a whole lot about this.
-Let's  &mdash; but rather than continue to just
+Let's &mdash; but rather than continue to just
 
 228
 00:16:13,959 --> 00:16:17,249
@@ -1180,7 +1180,7 @@ The template tag is the DOM that you want
 
 237
 00:16:52,439 --> 00:16:55,179
-to stamp out when this  &mdash; when this tag is
+to stamp out when this &mdash; when this tag is
 used.
 
 238
@@ -1206,7 +1206,7 @@ case we'll just start out really simple and
 242
 00:17:11,959 --> 00:17:18,159
 I'll add a div, "hello world."
->>Alex Komoroske: So if you can't see it  &mdash; I
+>>Alex Komoroske: So if you can't see it &mdash; I
 
 243
 00:17:18,159 --> 00:17:22,939
@@ -1261,7 +1261,7 @@ you this is an intermediate level talk and
 253
 00:18:00,110 --> 00:18:04,309
 if this confuses you, you should check out
- &mdash; learn more about Shadow DOM.
+&mdash; learn more about Shadow DOM.
 
 254
 00:18:04,309 --> 00:18:08,549
@@ -1440,7 +1440,7 @@ the values are changing over here in the property
 
 289
 00:20:16,429 --> 00:20:20,960
-inspector. This tool should be  &mdash; this kind
+inspector. This tool should be &mdash; this kind
 of tool is pretty familiar for a lot of people.
 
 290
@@ -1546,7 +1546,7 @@ within the element, in this case "selected,"
 310
 00:21:55,990 --> 00:21:59,769
 I can use this double mustache syntax which
-is MDV and say  &mdash;
+is MDV and say &mdash;
 
 311
 00:21:59,769 --> 00:22:05,980
@@ -1661,7 +1661,7 @@ so you don't have any conflicts or system-level
 333
 00:23:45,149 --> 00:23:49,620
 dependencies that you're creating.
-In which case, we'll show you one  &mdash; really
+In which case, we'll show you one &mdash; really
 
 334
 00:23:49,620 --> 00:23:56,379
@@ -1746,11 +1746,11 @@ UI, right. Like, a script tag doesn't have
 350
 00:24:55,809 --> 00:25:01,559
 anything visual about it. But just for this
-demo, we came over  &mdash; actually we'll do flip
+demo, we came over &mdash; actually we'll do flip
 
 351
 00:25:01,559 --> 00:25:06,429
- &mdash; and made it so these things have a UI so
+&mdash; and made it so these things have a UI so
 we can click on them in the canvas and do
 
 352
@@ -1795,7 +1795,7 @@ an element.
 
 360
 00:25:39,679 --> 00:25:43,340
->>Matthew McNulty: Yeah, so  &mdash; and one of
+>>Matthew McNulty: Yeah, so &mdash; and one of
 the other really cool things that Web animations
 
 361
@@ -1875,7 +1875,7 @@ So this is not just theoretical, but we really
 
 376
 00:26:59,179 --> 00:27:03,200
-just got it started  &mdash; just getting started
+just got it started &mdash; just getting started
 with this kind of element.
 
 377
@@ -1891,7 +1891,7 @@ this on the camera or anything. But you can
 379
 00:27:12,730 --> 00:27:19,399
 actually on my iPad, if I can hold it straight
- &mdash; drag stuff out on the palette from my iPad
+&mdash; drag stuff out on the palette from my iPad
 
 380
 00:27:19,399 --> 00:27:21,980
@@ -2001,7 +2001,7 @@ And we've got all the cats.
 401
 00:29:07,620 --> 00:29:14,620
 >>Alex Komoroske: Again, if you check out
-this code, there is  &mdash; great, now we have
+this code, there is &mdash; great, now we have
 
 402
 00:29:16,320 --> 00:29:17,640
@@ -2021,7 +2021,7 @@ things together. The magic isn't from the
 405
 00:29:24,070 --> 00:29:28,909
 Sandbox app. The magic is from the platform
-and that layer  &mdash; that sugar layer that we
+and that layer &mdash; that sugar layer that we
 
 406
 00:29:28,909 --> 00:29:32,879
@@ -2061,7 +2061,7 @@ the DOM. And everyone knows how to use the
 413
 00:29:59,850 --> 00:30:05,299
 DOM, how to pass an attribute to receive events
-out. Again, the polyfill  &mdash; the polymer library
+out. Again, the polyfill &mdash; the polymer library
 
 414
 00:30:05,299 --> 00:30:08,029
@@ -2205,7 +2205,7 @@ get this kind of encapsulation for free. It
 
 442
 00:32:05,679 --> 00:32:10,299
-actually  &mdash; so we've started building this
+actually &mdash; so we've started building this
 app just a few weeks ago actually as the foundation
 
 443
@@ -2231,11 +2231,11 @@ as it exists right now. If you are adventurous
 447
 00:32:28,879 --> 00:32:32,809
 and unafraid of living on the bleeding edge
- &mdash; and I would like to emphasize "bleeding
+&mdash; and I would like to emphasize "bleeding
 
 448
 00:32:32,809 --> 00:32:37,570
-edge"  &mdash; this is a particular version of Canary
+edge" &mdash; this is a particular version of Canary
 that is working right now.
 
 449
@@ -2270,7 +2270,7 @@ So we pulled together a video that we think
 
 455
 00:33:02,409 --> 00:33:09,409
- &mdash; that we hope will get you as excited about
+&mdash; that we hope will get you as excited about
 this future we are going towards as we are.
 
 456
@@ -2360,7 +2360,7 @@ those layers, if they want. I mean...
 
 473
 00:35:01,920 --> 00:35:06,730
-replacing the need for a lot of the  &mdash; the
+replacing the need for a lot of the &mdash; the
 Embers and the Angulars and things that are
 
 474
@@ -2416,7 +2416,7 @@ too, but I think it got answered.
 484
 00:35:40,260 --> 00:35:44,300
 So my other question would be, then, is this
-something that you can  &mdash; I mean, obviously
+something that you can &mdash; I mean, obviously
 
 485
 00:35:44,300 --> 00:35:48,820
@@ -2465,7 +2465,7 @@ there will be a level that we will need to
 
 494
 00:36:22,610 --> 00:36:25,620
-test for and then  &mdash;
+test for and then &mdash;
 >>Alex Komoroske: That's correct. One of the
 
 495
@@ -2485,7 +2485,7 @@ the future in a high fidelity way.
 
 498
 00:36:41,860 --> 00:36:44,900
-the Mozilla team, you said  &mdash;
+the Mozilla team, you said &mdash;
 >>Alex Komoroske: X tags.
 
 499
@@ -2585,13 +2585,13 @@ just have it as an include. You can include
 
 518
 00:38:01,760 --> 00:38:05,480
-a component  &mdash; in the future, you can include
+a component &mdash; in the future, you can include
 a component from polymer's UI library. You
 
 519
 00:38:05,480 --> 00:38:10,180
 can include a component from X tags. You could
-intermingle the two or a third-party  &mdash; or
+intermingle the two or a third-party &mdash; or
 
 520
 00:38:10,180 --> 00:38:13,920
@@ -2655,7 +2655,7 @@ it will work.
 
 532
 00:39:00,460 --> 00:39:04,200
->>Alex Komoroske: HTML imports is be  &mdash; just
+>>Alex Komoroske: HTML imports is be &mdash; just
 started being implemented in Chrome.
 
 533
@@ -2665,7 +2665,7 @@ started being implemented in Chrome.
 
 534
 00:39:06,240 --> 00:39:10,630
->>Alex Komoroske: So you can still use  &mdash; as
+>>Alex Komoroske: So you can still use &mdash; as
 (saying name) was pointing out, you can use
 
 535
@@ -2720,7 +2720,7 @@ plus XSLT.
 
 545
 00:40:02,910 --> 00:40:09,910
-The essential of that is  &mdash; the picture of
+The essential of that is &mdash; the picture of
 that is essentially you will create a heavy
 
 546
@@ -2755,7 +2755,7 @@ kinds of problems. Web components is now like
 
 552
 00:40:46,440 --> 00:40:50,820
-an emerging set of specs that is  &mdash;
+an emerging set of specs that is &mdash;
 >>Matthew McNulty: So the difference here
 
 553
@@ -2775,7 +2775,7 @@ new here, whereas XSLT, I did a whole framework
 
 556
 00:41:00,590 --> 00:41:06,750
-in XSLT years ago. And that was  &mdash; to debug
+in XSLT years ago. And that was &mdash; to debug
 that was one of the more insane things I have
 
 557

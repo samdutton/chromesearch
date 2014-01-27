@@ -709,7 +709,7 @@ So let's go to that link.
 154
 00:08:02,400 --> 00:08:03,660
 CHROMEBOOK: Google Chrome,
-Wikipedia  &mdash;
+Wikipedia &mdash;
 
 155
 00:08:03,660 --> 00:08:05,730
@@ -762,7 +762,7 @@ you this was a heading.
 
 166
 00:08:25,100 --> 00:08:26,110
-CHROMEBOOK: From Wikipedia  &mdash;
+CHROMEBOOK: From Wikipedia &mdash;
 
 167
 00:08:26,110 --> 00:08:28,050

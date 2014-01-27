@@ -56,16 +56,16 @@ Chrome extensions.
 12
 00:00:38,160 --> 00:00:45,100
 In fact, extensions are implemented with nothing
-but standard web technologies  &mdash; HTML, CSS,
+but standard web technologies &mdash; HTML, CSS,
 
 13
 00:00:45,100 --> 00:00:48,530
 JavaScript, and so on.
-An extension is a compressed directory  &mdash; a
+An extension is a compressed directory &mdash; a
 
 14
 00:00:48,530 --> 00:00:51,830
-signed zip, to be exact  &mdash; with a bunch of
+signed zip, to be exact &mdash; with a bunch of
 web files in it.
 
 15
@@ -81,7 +81,7 @@ particular name, which is "manifest.json".
 17
 00:01:00,110 --> 00:01:04,350
 As the name implies, the manifest file is
-JSON-formatted data  &mdash; specifically, metadata
+JSON-formatted data &mdash; specifically, metadata
 
 18
 00:01:04,350 --> 00:01:09,140
@@ -160,7 +160,7 @@ to Google Chrome Extensions, you can bundle
 
 33
 00:02:03,280 --> 00:02:09,549
-any other web files with your extension  &mdash; images,
+any other web files with your extension &mdash; images,
 JavaScript libraries, Flash movies, whatever
 
 34
@@ -220,7 +220,7 @@ file.
 
 45
 00:02:59,189 --> 00:03:03,450
-That's not a typo  &mdash; windows and tabs are
+That's not a typo &mdash; windows and tabs are
 so closely related they share a common permission.
 
 46
@@ -285,8 +285,8 @@ For now, the popup is a trivial HTML file.
 
 58
 00:03:52,299 --> 00:03:59,299
-After installing our extension, we get  &mdash; as
-advertised  &mdash; an icon, a tooltip, and a popup.
+After installing our extension, we get &mdash; as
+advertised &mdash; an icon, a tooltip, and a popup.
 
 59
 00:03:59,299 --> 00:04:02,299
@@ -321,7 +321,7 @@ And in our popup file, we beef up the HTML
 65
 00:04:22,949 --> 00:04:28,330
 by inserting a title and a template to present
-the attributes of each tweet  &mdash; a link to
+the attributes of each tweet &mdash; a link to
 
 66
 00:04:28,330 --> 00:04:33,650
@@ -450,8 +450,8 @@ popup.
 
 91
 00:06:07,539 --> 00:06:13,599
-We specify a frequency for fetching  &mdash; 10
-seconds for demo purposes  &mdash; and manage the
+We specify a frequency for fetching &mdash; 10
+seconds for demo purposes &mdash; and manage the
 
 92
 00:06:13,599 --> 00:06:18,139
@@ -505,8 +505,8 @@ On the top of that list would be incorporating
 
 102
 00:06:52,270 --> 00:06:55,990
-the user's friend timeline  &mdash; rather than
-the public timeline  &mdash; which would require
+the user's friend timeline &mdash; rather than
+the public timeline &mdash; which would require
 
 103
 00:06:55,990 --> 00:06:59,949

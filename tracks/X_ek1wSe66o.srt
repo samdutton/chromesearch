@@ -136,7 +136,7 @@ that the Web can do. The first is that we
 28
 00:02:05,550 --> 00:02:10,369
 have CSS for Web apps. And you're probably
-like whoa  &mdash; yeah, Mythbuster style. You're
+like whoa &mdash; yeah, Mythbuster style. You're
 
 29
 00:02:10,369 --> 00:02:14,870
@@ -285,7 +285,7 @@ or JavaScript. So along my main access here
 
 58
 00:04:30,250 --> 00:04:35,100
- &mdash; this is a little bit of Flexbox terminology.
+&mdash; this is a little bit of Flexbox terminology.
 In my cross origin access, I can justify content
 
 59
@@ -400,7 +400,7 @@ you have the same height columns. So in order
 
 81
 00:06:20,380 --> 00:06:24,780
-to do same height columns  &mdash; this is a great
+to do same height columns &mdash; this is a great
 example of floating three divs across the
 
 82
@@ -425,7 +425,7 @@ through JSON, I'm porting in an RSS feed or
 
 86
 00:06:43,620 --> 00:06:49,530
-something, and  &mdash; my content is dynamic. As
+something, and &mdash; my content is dynamic. As
 soon as that happens, I put a little bit more
 
 87
@@ -621,7 +621,7 @@ you can expect to use this relatively soon.
 125
 00:09:50,590 --> 00:09:57,590
 All right. Number two amazing thing is dynamic
-CSS. By dynamic CSS I actually mean  &mdash; that
+CSS. By dynamic CSS I actually mean &mdash; that
 
 126
 00:09:58,050 --> 00:10:01,970
@@ -871,7 +871,7 @@ So you get the exact same thing as the Angular
 175
 00:13:48,520 --> 00:13:53,339
 JS case. I don't need a framework to do the
- &mdash; this type of one-way data binding.
+&mdash; this type of one-way data binding.
 
 176
 00:13:53,339 --> 00:13:58,529
@@ -920,7 +920,7 @@ of ID and so we're finding this data list
 
 185
 00:14:34,779 --> 00:14:39,730
- &mdash; these values to this input element. So
+&mdash; these values to this input element. So
 it's a great way to do things like auto complete.
 
 186
@@ -935,7 +935,7 @@ that data to this input.
 
 188
 00:14:48,760 --> 00:14:55,760
-If I do things like  &mdash; if I start typing,
+If I do things like &mdash; if I start typing,
 just as you expect I have auto complete behavior.
 
 189
@@ -1141,11 +1141,11 @@ So that's the final product. You can see there's
 229
 00:18:06,730 --> 00:18:11,679
 a lot of callbacks that are involved here.
-I have at least one, two, three, four  &mdash; four
+I have at least one, two, three, four &mdash; four
 
 230
 00:18:11,679 --> 00:18:17,110
-to five levels of sort of callback  &mdash; callback
+to five levels of sort of callback &mdash; callback
 spaghetti that's happening here. Callbacks
 
 231
@@ -1215,7 +1215,7 @@ files, right, so there's this sort of notion
 
 244
 00:19:27,760 --> 00:19:33,490
-of using this  &mdash; this resource locally with
+of using this &mdash; this resource locally with
 referencing it via URL. Can use that within
 
 245
@@ -1291,11 +1291,11 @@ same Web app, right? Same Web app running
 259
 00:20:48,730 --> 00:20:55,730
 in Chrome is running in FireFox. And I can
-add files and folders to this guy, maybe  &mdash; it's
+add files and folders to this guy, maybe &mdash; it's
 
 260
 00:20:56,200 --> 00:21:03,200
-a nightly build, so I don't know  &mdash; there
+a nightly build, so I don't know &mdash; there
 we go. And if I refresh this up, those files
 
 261
@@ -1335,7 +1335,7 @@ downloads. So we got data in the file system,
 
 268
 00:21:44,640 --> 00:21:50,830
-we're storing data in our Web app  &mdash; where
+we're storing data in our Web app &mdash; where
 is my clicker?
 
 269
@@ -1365,7 +1365,7 @@ hit this response, the browser would sort
 
 274
 00:22:11,790 --> 00:22:15,900
-of  &mdash; it would trick it into downloading a
+of &mdash; it would trick it into downloading a
 file and it would invoke the browser's download
 
 275
@@ -1396,11 +1396,11 @@ That makes a lot of sense. And what download
 280
 00:22:36,590 --> 00:22:42,830
 does is you can use with an anchor tag for
-instance, and so what happens is  &mdash; normally
+instance, and so what happens is &mdash; normally
 
 281
 00:22:42,830 --> 00:22:48,320
-what happens is if you  &mdash; if a user clicks
+what happens is if you &mdash; if a user clicks
 on this H ref to this logo.png, what happens
 
 282
@@ -1526,11 +1526,11 @@ and then it could, I don't know, do something
 306
 00:24:54,309 --> 00:24:58,410
 interesting with that. But what happened is,
-hey, people are gonna  &mdash; the browsers are
+hey, people are gonna &mdash; the browsers are
 
 307
 00:24:58,410 --> 00:25:03,380
-like  &mdash; developers got smart, they were like
+like &mdash; developers got smart, they were like
 let's just send JSON stringify data. So they'd
 
 308
@@ -1565,7 +1565,7 @@ the ability to send more complex data, right?
 
 314
 00:25:33,720 --> 00:25:39,110
-You just saw me send a file  &mdash; create a file
+You just saw me send a file &mdash; create a file
 in JavaScript. Why can't I send a file into
 
 315
@@ -1575,7 +1575,7 @@ with it, or a Web GL texter as an array buffer?
 
 316
 00:25:43,179 --> 00:25:48,340
-All right, we have binary data in  &mdash; on the
+All right, we have binary data in &mdash; on the
 Web now; we should be able to do interesting
 
 317
@@ -1610,7 +1610,7 @@ interesting. So the real problem with this,
 
 323
 00:26:13,600 --> 00:26:17,750
-though, is that these are all  &mdash; all the methods
+though, is that these are all &mdash; all the methods
 I just covered are copies, so that becomes
 
 324
@@ -1711,7 +1711,7 @@ on that file, and then I sent it right back
 343
 00:27:50,260 --> 00:27:55,360
 just to see how fast that was. I measured
-that. And you can see the rate  &mdash; the round
+that. And you can see the rate &mdash; the round
 
 344
 00:27:55,360 --> 00:28:01,929
@@ -1741,7 +1741,7 @@ to use that new WebKit post message to send
 349
 00:28:25,000 --> 00:28:30,929
 data into Web worker. I think we're sending
- &mdash; we're sending a 32 megabyte array buffer,
+&mdash; we're sending a 32 megabyte array buffer,
 
 350
 00:28:30,929 --> 00:28:35,080
@@ -1770,8 +1770,8 @@ Pop up a full screen here. Just to show you
 
 355
 00:28:59,220 --> 00:29:04,409
-the difference  &mdash; I'm not picking on any browser
-in particular  &mdash; but a browser that doesn't
+the difference &mdash; I'm not picking on any browser
+in particular &mdash; but a browser that doesn't
 
 356
 00:29:04,409 --> 00:29:09,740
@@ -1875,7 +1875,7 @@ dedicated sessions to these two topics, because
 
 376
 00:30:48,090 --> 00:30:53,140
-they're very  &mdash; they're noteworthy and very
+they're very &mdash; they're noteworthy and very
 complex and they should have a dedicated session.
 
 377
@@ -1895,7 +1895,7 @@ this is one example of being able to sort
 
 380
 00:31:07,190 --> 00:31:12,480
-of  &mdash; the first step along this path to do
+of &mdash; the first step along this path to do
 that, with one attribute, this x WebKit speech
 
 381
@@ -1936,7 +1936,7 @@ We have camera and microphone access via Get
 388
 00:31:50,309 --> 00:31:55,390
 User Media. Get User Media is coming out of
-the Web RTC project, navigator dot  &mdash; either
+the Web RTC project, navigator dot &mdash; either
 
 389
 00:31:55,390 --> 00:32:01,900
@@ -2001,7 +2001,7 @@ and the ability to access the camera.
 401
 00:32:57,480 --> 00:33:03,080
 This is my demo. I do trust this app. I made
-it. I wrote it. So I'm gonna  &mdash; I can't see
+it. I wrote it. So I'm gonna &mdash; I can't see
 
 402
 00:33:03,080 --> 00:33:07,590
@@ -2010,8 +2010,8 @@ create a video element in JavaScript, and
 
 403
 00:33:07,590 --> 00:33:11,700
-there we go. My first stage  &mdash; you can see
-behind  &mdash; so this is great, no plug-ins, right?
+there we go. My first stage &mdash; you can see
+behind &mdash; so this is great, no plug-ins, right?
 
 404
 00:33:11,700 --> 00:33:16,220
@@ -2030,7 +2030,7 @@ real time?
 
 407
 00:33:25,940 --> 00:33:29,520
-That's pretty  &mdash; that is pretty trippy. Version
+That's pretty &mdash; that is pretty trippy. Version
 effects, right?
 
 408
@@ -2066,7 +2066,7 @@ power of Web GL, right? So with Web GL we
 414
 00:34:03,750 --> 00:34:08,049
 can access the GPU, that native access, and
-we can do things  &mdash; really awesome things
+we can do things &mdash; really awesome things
 
 415
 00:34:08,049 --> 00:34:12,720
@@ -2100,7 +2100,7 @@ with augmented reality, right, holding up
 
 421
 00:34:43,389 --> 00:34:48,510
-a paper  &mdash; piece of paper with a QR code on
+a paper &mdash; piece of paper with a QR code on
 it, the camera tracks you. So play around
 
 422
@@ -2131,12 +2131,12 @@ now.
 427
 00:35:09,349 --> 00:35:16,349
 HTML5 audio has had a little bit of a slack
- &mdash; been problematic, to say the least. But
+&mdash; been problematic, to say the least. But
 
 428
 00:35:18,550 --> 00:35:25,550
 what we can do now with the Web audio, guys,
-make it  &mdash; make it sexy again. So HTML5 audio
+make it &mdash; make it sexy again. So HTML5 audio
 
 429
 00:35:25,690 --> 00:35:30,640
@@ -2185,13 +2185,13 @@ an XHR request or something, we can just send
 
 438
 00:36:10,380 --> 00:36:11,320
-data directly to it  &mdash; sorry  &mdash; via  &mdash; via
+data directly to it &mdash; sorry &mdash; via &mdash; via
 this audio tag, so it's really, really important.
 
 439
 00:36:11,320 --> 00:36:11,570
 This doesn't have to just be a video. It could
-be a  &mdash; excuse me, an audio tag, it could
+be a &mdash; excuse me, an audio tag, it could
 
 440
 00:36:11,430 --> 00:36:18,430
@@ -2225,7 +2225,7 @@ it. Create an audio context. Notifications
 
 446
 00:36:50,350 --> 00:36:57,350
- &mdash; I will create HTML5 audio element, I will
+&mdash; I will create HTML5 audio element, I will
 populate it with MP3 as its source, set up
 
 447
@@ -2416,7 +2416,7 @@ it's going to connect to that WebSocket, send
 484
 00:40:19,089 --> 00:40:25,280
 each of those chunks across the wire, on my
- &mdash; on my left side here, the viewer side,
+&mdash; on my left side here, the viewer side,
 
 485
 00:40:25,280 --> 00:40:30,300
@@ -2515,7 +2515,7 @@ access, accessing the native hardware, using
 
 504
 00:42:07,990 --> 00:42:11,470
- &mdash; officially transferring data once you have
+&mdash; officially transferring data once you have
 it in your Web app, and then doing really
 
 505

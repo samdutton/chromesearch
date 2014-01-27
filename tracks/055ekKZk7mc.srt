@@ -10,7 +10,7 @@ the left. Mostly on the right right now. I
 
 3
 00:00:14,190 --> 00:00:19,140
-spend  &mdash; I'm on the Chrome developer relations
+spend &mdash; I'm on the Chrome developer relations
 team. I spend my days at talking about and
 
 4
@@ -760,7 +760,7 @@ which could be an image or style sheet, we
 
 153
 00:14:23,040 --> 00:14:28,510
-need to make a connection to the server  &mdash; well,
+need to make a connection to the server &mdash; well,
 in some cases because in other cases we may
 
 154
@@ -980,7 +980,7 @@ this does require you to be in control of
 
 197
 00:18:37,840 --> 00:18:44,159
-your web page  &mdash; of your web server, I'm sorry.
+your web page &mdash; of your web server, I'm sorry.
 If you are not, there's another tool available
 
 198
@@ -1006,7 +1006,7 @@ it faster to load and dissipate to the user.
 202
 00:19:07,360 --> 00:19:14,259
 Now, of course these two tools will only do
- &mdash; will only optimize your page to the best
+&mdash; will only optimize your page to the best
 
 203
 00:19:14,259 --> 00:19:19,419
@@ -1116,12 +1116,12 @@ to get everything done. And that includes
 224
 00:21:03,929 --> 00:21:08,440
 Chrome's housekeeping, it includes your code
- &mdash; and that's a bunch of things like layout,
+&mdash; and that's a bunch of things like layout,
 
 225
 00:21:08,440 --> 00:21:14,249
 recalc style, paint, composite, JavaScript
- &mdash; all that stuff. 16 milliseconds. I don't
+&mdash; all that stuff. 16 milliseconds. I don't
 
 226
 00:21:14,249 --> 00:21:18,669
@@ -1170,12 +1170,12 @@ of the tree that's affected can be huge. Now,
 
 235
 00:22:01,289 --> 00:22:05,889
-you see on the left-hand side  &mdash; hopefully
-you can see  &mdash; I was changing a class on the
+you see on the left-hand side &mdash; hopefully
+you can see &mdash; I was changing a class on the
 
 236
 00:22:05,889 --> 00:22:12,450
-body and I was affecting nearly twenty-  &mdash; just
+body and I was affecting nearly twenty- &mdash; just
 over 23,000 elements by doing that. The recalculation
 
 237
@@ -1235,13 +1235,13 @@ So this little bit of JavaScript at the top
 
 248
 00:22:57,169 --> 00:23:02,049
-allows us to get the target  &mdash; a thing called
-"target"  &mdash; from the DOM, and what we're going
+allows us to get the target &mdash; a thing called
+"target" &mdash; from the DOM, and what we're going
 
 249
 00:23:02,049 --> 00:23:05,669
 to do is we're going to go through a bunch
-of other elements and we're going to ask  &mdash; we're
+of other elements and we're going to ask &mdash; we're
 
 250
 00:23:05,669 --> 00:23:09,249
@@ -1365,7 +1365,7 @@ page. It allows you to change the left property
 
 274
 00:25:01,559 --> 00:25:05,309
-from  &mdash; from zero to a thousand and move an
+from &mdash; from zero to a thousand and move an
 element horizontally over your page without
 
 275
@@ -1376,12 +1376,12 @@ that's awesome.
 276
 00:25:09,299 --> 00:25:16,299
 But this is really costly because every time
-the frame does something  &mdash; and often a library
+the frame does something &mdash; and often a library
 
 277
 00:25:16,320 --> 00:25:21,869
 internally sets the timer to try and match
-the frame budget of the browser  &mdash; it needs
+the frame budget of the browser &mdash; it needs
 
 278
 00:25:21,869 --> 00:25:25,899
@@ -1400,7 +1400,7 @@ way, and by using a declarative way, you're
 
 281
 00:25:34,230 --> 00:25:38,970
-actually saying  &mdash; telling the browser what
+actually saying &mdash; telling the browser what
 you want it to do instead of telling the browser
 
 282
@@ -1465,7 +1465,7 @@ be available in the viewport of the page itself,
 
 294
 00:26:40,950 --> 00:26:47,480
-just use position ficky  &mdash; sticky  &mdash; no, position
+just use position ficky &mdash; sticky &mdash; no, position
 fixed and don't use JavaScript to keep it
 
 295
@@ -1510,7 +1510,7 @@ page, then it will make sure that the element
 
 303
 00:27:20,389 --> 00:27:26,999
-is  &mdash; that the sticky positioned element is
+is &mdash; that the sticky positioned element is
 visible. But if the parent element kind of
 
 304
@@ -1595,7 +1595,7 @@ This is called de-bouncing in some places
 
 320
 00:28:41,909 --> 00:28:46,399
-or  &mdash; yeah, "de-bouncing" is the most common
+or &mdash; yeah, "de-bouncing" is the most common
 name for it. And just basically rather than
 
 321
@@ -1655,7 +1655,7 @@ have to process these images.
 
 332
 00:29:46,159 --> 00:29:51,649
-So actually, just getting the  &mdash; the smallest
+So actually, just getting the &mdash; the smallest
 possible image and in the correct dimensions
 
 333
@@ -1766,7 +1766,7 @@ of the paint areas is to then reduce the complexity
 354
 00:31:27,379 --> 00:31:32,999
 of the paint areas, so we've got this other
-tool that's fantastic. It's called  &mdash; called
+tool that's fantastic. It's called &mdash; called
 
 355
 00:31:32,999 --> 00:31:37,389
@@ -1820,7 +1820,7 @@ And you can use that to your advantage to
 
 365
 00:32:17,690 --> 00:32:22,559
- &mdash; to move away from that constraint so that
+&mdash; to move away from that constraint so that
 you're not render-bound, okay? So reduce the
 
 366
@@ -1850,7 +1850,7 @@ comes for your content. They come to your
 
 371
 00:32:47,840 --> 00:32:52,340
-Web site with a specific person  &mdash; purpose.
+Web site with a specific person &mdash; purpose.
 That could be to get information. That could
 
 372
@@ -1881,7 +1881,7 @@ if I use a phone to look at your Web site,
 377
 00:33:20,919 --> 00:33:25,389
 I really don't care about how well it works
-on a web  &mdash; on a desktop machine because I
+on a web &mdash; on a desktop machine because I
 
 378
 00:33:25,389 --> 00:33:30,960
@@ -1891,7 +1891,7 @@ the same goes.
 379
 00:33:30,960 --> 00:33:36,100
 And while you probably want to offer the same
- &mdash; a different user experience, because after
+&mdash; a different user experience, because after
 
 380
 00:33:36,100 --> 00:33:41,460
@@ -1931,7 +1931,7 @@ available to you. You can put content next
 387
 00:34:12,480 --> 00:34:17,320
 to each other, you can put it on top of each
-other, in any form that you want, for  &mdash; especially
+other, in any form that you want, for &mdash; especially
 
 388
 00:34:17,320 --> 00:34:20,450
@@ -2040,7 +2040,7 @@ as you've just seen, because we think it will
 
 409
 00:35:58,870 --> 00:36:02,820
-be good to give you a couple of  &mdash; couple
+be good to give you a couple of &mdash; couple
 of suggestions for your work workflow.
 
 410
@@ -2091,12 +2091,12 @@ number should we have?" And the honest answer
 419
 00:36:41,530 --> 00:36:47,600
 Paul Lewis: It depends on your application.
-But have that person  &mdash; a lot of times when
+But have that person &mdash; a lot of times when
 
 420
 00:36:47,600 --> 00:36:53,540
 we speak to developers, performance and this
- &mdash; this kind of stuff is often a bit like
+&mdash; this kind of stuff is often a bit like
 
 421
 00:36:53,540 --> 00:36:59,550
@@ -2126,7 +2126,7 @@ slides. It's a bunch of articles. It's a bunch
 426
 00:37:19,140 --> 00:37:23,400
 of videos. All of which are designed to help
-you with these  &mdash; the things that we've talked
+you with these &mdash; the things that we've talked
 
 427
 00:37:23,400 --> 00:37:27,900
@@ -2236,7 +2236,7 @@ then if you want to find us after, we're going
 448
 00:38:54,770 --> 00:39:00,120
 to be upstairs in the Chrome area, probably
-in the  &mdash; I'll at the for performance booth,
+in the &mdash; I'll at the for performance booth,
 
 449
 00:39:00,120 --> 00:39:02,830
@@ -2305,7 +2305,7 @@ I haven't got a good use case for multiple
 
 462
 00:39:59,360 --> 00:40:04,690
-scroll handler  &mdash; or multiple calls to the
+scroll handler &mdash; or multiple calls to the
 scroll handler, for example, inside a single
 
 463
@@ -2335,7 +2335,7 @@ And even though this is often not the case
 
 468
 00:40:23,450 --> 00:40:28,760
-for event handlers yet, for  &mdash; for getting
+for event handlers yet, for &mdash; for getting
 many kinds of data, it will allow it to do
 
 469

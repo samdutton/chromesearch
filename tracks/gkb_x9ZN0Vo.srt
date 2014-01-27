@@ -678,7 +678,7 @@ still will be.
 146
 00:05:40,250 --> 00:05:44,060
 So the interesting thing is that
-you can build this IDE  &mdash;
+you can build this IDE &mdash;
 
 147
 00:05:44,060 --> 00:05:45,620

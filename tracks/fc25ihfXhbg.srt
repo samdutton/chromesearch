@@ -954,7 +954,7 @@ happened, and so on.
 206
 00:08:22,040 --> 00:08:25,730
 And as you can see here, here's
-a  &mdash; timeline, with
+a &mdash; timeline, with
 
 207
 00:08:25,730 --> 00:08:27,430

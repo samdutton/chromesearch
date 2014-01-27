@@ -50,7 +50,7 @@ So the first one is like the carnival cutout.
 
 11
 00:00:52,829 --> 00:00:59,829
-You put your face into this  &mdash; this wooden
+You put your face into this &mdash; this wooden
 painting and it's using a webcam. Let me just
 
 12
@@ -66,7 +66,7 @@ you know, kind of fits with the Wizard of
 14
 00:01:13,880 --> 00:01:16,069
 Oz theme.
-And then when you  &mdash; after you're finished,
+And then when you &mdash; after you're finished,
 
 15
 00:01:16,069 --> 00:01:20,720
@@ -90,7 +90,7 @@ including myself, it kind of predated animation
 
 19
 00:01:42,709 --> 00:01:47,060
-in film and, you know, you kind of  &mdash; this
+in film and, you know, you kind of &mdash; this
 thing spun around in a circle and showed you
 
 20
@@ -111,7 +111,7 @@ It's a hot air balloon ride where you have
 23
 00:02:02,229 --> 00:02:09,229
 to navigate this big tornado and, you know,
-kind of escape  &mdash; Find Your Way
+kind of escape &mdash; Find Your Way
 to Oz.
 
 24
@@ -142,7 +142,7 @@ So this is Find Your Way to Oz. It's really
 29
 00:02:37,880 --> 00:02:42,030
 exciting. I recommend that you check it out.
-Like I said, it's been using  &mdash; it's using
+Like I said, it's been using &mdash; it's using
 
 30
 00:02:42,030 --> 00:02:47,740
@@ -166,7 +166,7 @@ a trivial problem. We were seeing something
 
 34
 00:03:04,170 --> 00:03:07,290
-that  &mdash; you know, we're looking at memory
+that &mdash; you know, we're looking at memory
 usage and seeing the graph along the bottom
 
 35
@@ -187,7 +187,7 @@ This was late. This was not good. The product
 38
 00:03:19,190 --> 00:03:24,160
 needed to ship. Delays were a possibility
-and we really had to make sure that this  &mdash; this
+and we really had to make sure that this &mdash; this
 
 39
 00:03:24,160 --> 00:03:29,350
@@ -241,7 +241,7 @@ After handling input, scripts start executing.
 
 49
 00:04:17,410 --> 00:04:23,030
-All the  &mdash; the state of the page gets updated,
+All the &mdash; the state of the page gets updated,
 and actually this often triggers a layout
 
 50
@@ -276,7 +276,7 @@ So "jank" is the slang term for like kind
 
 56
 00:04:54,660 --> 00:05:00,070
-of a  &mdash; an unpleasant, unsmooth site experience.
+of a &mdash; an unpleasant, unsmooth site experience.
 When you're scrolling on a page and it kind
 
 57
@@ -286,17 +286,17 @@ that's jank. When you're playing an online
 
 58
 00:05:04,610 --> 00:05:08,650
-game and it drops a frame or some  &mdash; you know,
+game and it drops a frame or some &mdash; you know,
 something kind of weird happens, it pauses
 
 59
 00:05:08,650 --> 00:05:13,389
 for a second, that's jank.
-And so if you miss  &mdash; I mean, if you cannot
+And so if you miss &mdash; I mean, if you cannot
 
 60
 00:05:13,389 --> 00:05:18,080
-get all  &mdash; through all the steps in 16 milliseconds,
+get all &mdash; through all the steps in 16 milliseconds,
 you're going to have a janky page and users
 
 61
@@ -306,7 +306,7 @@ So where does all this performance go? Where
 
 62
 00:05:22,850 --> 00:05:26,690
-does that 16 milliseconds  &mdash; where does it
+does that 16 milliseconds &mdash; where does it
 go?
 
 63
@@ -367,7 +367,7 @@ know, in recent times with battery life. If
 74
 00:06:27,919 --> 00:06:31,960
 you go to a page that performs poorly, the
- &mdash; you know, the battery in your mobile device
+&mdash; you know, the battery in your mobile device
 
 75
 00:06:31,960 --> 00:06:35,949
@@ -391,7 +391,7 @@ they want more features. All of these things
 
 79
 00:06:50,300 --> 00:06:54,229
- &mdash; it's actually kind of difficult to satisfy
+&mdash; it's actually kind of difficult to satisfy
 these requests, because they're all sort of
 
 80
@@ -401,7 +401,7 @@ But you as the developer, you have to satisfy
 
 81
 00:06:57,830 --> 00:07:02,389
-all of these requests. It's  &mdash; you want to
+all of these requests. It's &mdash; you want to
 maximize battery life, you want the smoothest
 
 82
@@ -427,7 +427,7 @@ a lot like solving a crime. The first thing
 86
 00:07:19,630 --> 00:07:22,690
 you have to do is you have to dig in and get
- &mdash; collect some evidence and really figure
+&mdash; collect some evidence and really figure
 
 87
 00:07:22,690 --> 00:07:26,960
@@ -457,7 +457,7 @@ will hopefully let you solve the crime and
 92
 00:07:43,150 --> 00:07:47,660
 fix the performance problem.
-So let's get started on the  &mdash; the mystery
+So let's get started on the &mdash; the mystery
 
 93
 00:07:47,660 --> 00:07:54,660
@@ -476,7 +476,7 @@ quickly zoom through this, but if you're helping
 
 96
 00:08:05,509 --> 00:08:10,300
-someone else, then you really  &mdash; it might
+someone else, then you really &mdash; it might
 seem silly to start at such a basic question,
 
 97
@@ -486,7 +486,7 @@ doing.
 
 98
 00:08:12,690 --> 00:08:18,320
-So the  &mdash; Oz is a real-time interactive 3D
+So the &mdash; Oz is a real-time interactive 3D
 game. It's taking advantage of WebGL. It has
 
 99
@@ -562,7 +562,7 @@ correlated with GC activity.
 113
 00:09:30,769 --> 00:09:34,490
 So right when the frame rate dropped, they
-actually saw that the  &mdash; there was a lot of
+actually saw that the &mdash; there was a lot of
 
 114
 00:09:34,490 --> 00:09:39,269
@@ -587,7 +587,7 @@ being collected. And so you want to ask yourself,
 118
 00:09:56,279 --> 00:10:01,249
 Because in some applications, this might be
- &mdash; that might be a reasonable amount of garbage.
+&mdash; that might be a reasonable amount of garbage.
 
 119
 00:10:01,249 --> 00:10:06,679
@@ -641,7 +641,7 @@ fast to allocate memory in V8.
 
 129
 00:10:57,749 --> 00:11:02,800
-The performance problem  &mdash; the cost of allocating
+The performance problem &mdash; the cost of allocating
 memory actually comes after a while you've
 
 130
@@ -731,7 +731,7 @@ of collections that can occur in the old generation,
 
 147
 00:12:29,899 --> 00:12:34,119
-but typically when you've  &mdash; when you see
+but typically when you've &mdash; when you see
 a frame drop in your game or, you know, you
 
 148
@@ -747,7 +747,7 @@ So why is collecting the young generation
 150
 00:12:45,089 --> 00:12:49,649
 so much faster? Well, to help you understand
-that, you have to  &mdash; you have to kind of intuitively
+that, you have to &mdash; you have to kind of intuitively
 
 151
 00:12:49,649 --> 00:12:54,920
@@ -876,7 +876,7 @@ is actually spent. It's in this copy. And
 
 176
 00:14:57,569 --> 00:15:01,949
-this is what  &mdash; when I said earlier that the
+this is what &mdash; when I said earlier that the
 cost of the GC is proportional to the number
 
 177
@@ -906,7 +906,7 @@ is that each allocation moves you closer to
 
 182
 00:15:29,459 --> 00:15:35,639
-this pause. So if you're dealing with a  &mdash; you
+this pause. So if you're dealing with a &mdash; you
 know, something where timing really matters,
 
 183
@@ -961,13 +961,13 @@ And we've got these sneaky guys right here
 
 193
 00:16:27,350 --> 00:16:34,350
- &mdash; blue, red, and green  &mdash; who are incognito.
-So the first suspect is pretty  &mdash; you know,
+&mdash; blue, red, and green &mdash; who are incognito.
+So the first suspect is pretty &mdash; you know,
 
 194
 00:16:35,609 --> 00:16:40,069
 this should really jump to your mind at this
-point  &mdash; is just calling new. Maybe Oz is
+point &mdash; is just calling new. Maybe Oz is
 
 195
 00:16:40,069 --> 00:16:43,879
@@ -997,7 +997,7 @@ frame. And actually unit9 said that would
 200
 00:17:00,149 --> 00:17:03,529
 have been really embarrassing, and this goes
-back to them being  &mdash; they're following the
+back to them being &mdash; they're following the
 
 201
 00:17:03,529 --> 00:17:06,660
@@ -1236,13 +1236,13 @@ performance strap and that's actually modifying
 
 248
 00:21:06,580 --> 00:21:13,030
-object shape. So if we  &mdash; V8 behind the scenes
+object shape. So if we &mdash; V8 behind the scenes
 creates these hidden classes for objects.
 
 249
 00:21:13,030 --> 00:21:18,860
 So the point constructor assigns the X field
-and then the Y field. And that  &mdash; that order,
+and then the Y field. And that &mdash; that order,
 
 250
 00:21:18,860 --> 00:21:23,710
@@ -1677,7 +1677,7 @@ and that indicates that the function in question
 336
 00:28:41,380 --> 00:28:47,620
 is optimized. But if we look at the top, this
-is the function that is running the most  &mdash; most
+is the function that is running the most &mdash; most
 
 337
 00:28:47,620 --> 00:28:52,890
@@ -1841,7 +1841,7 @@ a GC. We are seeing a nice, natural growth
 
 369
 00:31:35,920 --> 00:31:42,690
-curve which  &mdash; which you want to see.
+curve which &mdash; which you want to see.
 So case closed, right? I mean, we figured
 
 370
@@ -1992,7 +1992,7 @@ upstairs. If you have any questions, please
 399
 00:34:20,519 --> 00:34:26,220
 come to the mic.
->>> Hi. So I'm curious if I used  &mdash; if I had
+>>> Hi. So I'm curious if I used &mdash; if I had
 
 400
 00:34:26,220 --> 00:34:31,809
@@ -2051,7 +2051,7 @@ it does kind of seem that way. You will note
 
 411
 00:35:08,230 --> 00:35:13,410
-that the message was actually  &mdash; the forinstatement
+that the message was actually &mdash; the forinstatement
 is not the fast case. So the fact that it
 
 412
@@ -2107,7 +2107,7 @@ V8, hey, I'm going to allocate thousands of
 422
 00:35:52,660 --> 00:35:58,259
 objects, don't do any GC. What you could do
-is at that initial  &mdash; when the page is first
+is at that initial &mdash; when the page is first
 
 423
 00:35:58,259 --> 00:36:01,670
@@ -2161,8 +2161,8 @@ for-in loop.
 
 433
 00:36:38,459 --> 00:36:45,150
->>> Right. Do you think that V8  &mdash; I don't
-know how to say this  &mdash; is stable enough to,
+>>> Right. Do you think that V8 &mdash; I don't
+know how to say this &mdash; is stable enough to,
 
 434
 00:36:45,150 --> 00:36:48,839
@@ -2172,7 +2172,7 @@ want to do something like this, which is quite
 435
 00:36:48,839 --> 00:36:55,180
 a bit of investment, to have, like, two months
-later, like  &mdash; I don't know a lot about V8.
+later, like &mdash; I don't know a lot about V8.
 
 436
 00:36:55,180 --> 00:36:58,920
@@ -2256,7 +2256,7 @@ of information in Chrome? It seems like it
 
 452
 00:38:04,559 --> 00:38:05,809
-would be useful to Chrome  &mdash;
+would be useful to Chrome &mdash;
 [ Multiple people speaking simultaneously
 
 453
@@ -2276,7 +2276,7 @@ code.
 
 456
 00:38:15,730 --> 00:38:21,930
-But it's going to be kind of like this  &mdash; it
+But it's going to be kind of like this &mdash; it
 is going to be a continuous transition so
 
 457

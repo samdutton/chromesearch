@@ -30,12 +30,12 @@ I'm Lars Bak. I'm the blue guy. And this is
 
 7
 00:00:33,090 --> 00:00:35,260
-Kasper Lund  &mdash;
+Kasper Lund &mdash;
 >>Kasper Lund: I'm the red guy.
 
 8
 00:00:35,260 --> 00:00:36,089
->>Lars Bak:  &mdash; the red guy.
+>>Lars Bak: &mdash; the red guy.
 [ Laughter ]
 
 9
@@ -46,7 +46,7 @@ Danish engineering office, so if we look tired,
 10
 00:00:44,710 --> 00:00:51,030
 it's jet lag.
-All right. So just to know  &mdash; so you know
+All right. So just to know &mdash; so you know
 
 11
 00:00:51,030 --> 00:00:58,030
@@ -106,11 +106,11 @@ applications you can do. And we strongly believe
 22
 00:01:53,700 --> 00:01:58,799
 in the fly-by web, right? Developers do one
-application  &mdash; it runs on mobile phones and
+application &mdash; it runs on mobile phones and
 
 23
 00:01:58,799 --> 00:02:05,320
-desktop systems  &mdash; and this is just fantastic.
+desktop systems &mdash; and this is just fantastic.
 And the source that makes it work is the virtual
 
 24
@@ -175,7 +175,7 @@ were designed for the web of two thousand-
 
 36
 00:03:12,200 --> 00:03:16,530
- &mdash; well, probably 2000, yeah.
+&mdash; well, probably 2000, yeah.
 And so it was an interesting at that point
 
 37
@@ -185,7 +185,7 @@ seeing these applications really come to life
 
 38
 00:03:21,560 --> 00:03:26,580
-on the web. And even if you  &mdash; if you look
+on the web. And even if you &mdash; if you look
 at the Web sites I've depicted up here, you
 
 39
@@ -316,7 +316,7 @@ So SunSpider is a benchmark that sort of represents
 64
 00:05:26,600 --> 00:05:32,150
 some of the things and some of the problems
-from sort of the earlier web, and they  &mdash; it
+from sort of the earlier web, and they &mdash; it
 
 65
 00:05:32,150 --> 00:05:36,090
@@ -385,7 +385,7 @@ for some applications that you cannot write
 
 78
 00:06:33,169 --> 00:06:39,770
- &mdash; or you couldn't write in 2006  &mdash; required
+&mdash; or you couldn't write in 2006 &mdash; required
 us to come up with some benchmarks and some
 
 79
@@ -531,7 +531,7 @@ now to performance of their Webapps and it's
 107
 00:09:02,170 --> 00:09:07,570
 very, very common to see benchmark numbers
-reported in the press, so it's a  &mdash; there's
+reported in the press, so it's a &mdash; there's
 
 108
 00:09:07,570 --> 00:09:12,690
@@ -546,7 +546,7 @@ it's possible to write really large Webapps
 110
 00:09:16,160 --> 00:09:22,680
 these days. We see common pages like Amazon,
-CNN, and ESPN have  &mdash; they're serving fairly
+CNN, and ESPN have &mdash; they're serving fairly
 
 111
 00:09:22,680 --> 00:09:28,160
@@ -670,7 +670,7 @@ So before we answer that question, I think
 
 135
 00:11:18,790 --> 00:11:22,610
-we should dive into the  &mdash; the current web
+we should dive into the &mdash; the current web
 stack and take a look at how we can improve
 
 136
@@ -710,7 +710,7 @@ objects and the WebObjects that point to the
 
 143
 00:12:02,690 --> 00:12:08,710
-DOM. The DOM consists of the  &mdash; the nodes
+DOM. The DOM consists of the &mdash; the nodes
 that you can see on the screen. And when you
 
 144
@@ -825,7 +825,7 @@ we have a multi-tier adaptive compilation
 
 166
 00:14:12,560 --> 00:14:18,600
-system. It's basically a  &mdash; it's a series
+system. It's basically a &mdash; it's a series
 of compilers that learns from the behavior
 
 167
@@ -881,11 +881,11 @@ And then of course there's all this tool sport
 177
 00:15:16,310 --> 00:15:19,529
 with debugging and profiling.
-Because when you do optimizations  &mdash; right?
+Because when you do optimizations &mdash; right?
 
 178
 00:15:19,529 --> 00:15:25,180
- &mdash; you sort of lose the understanding of what
+&mdash; you sort of lose the understanding of what
 the source code is doing, so you cannot single-step
 
 179
@@ -945,7 +945,7 @@ objects to the DOM nodes.
 
 190
 00:16:22,260 --> 00:16:28,940
-And this is  &mdash; this is tricky, so I'm calling
+And this is &mdash; this is tricky, so I'm calling
 it the tangoing between the tracing GC and
 
 191
@@ -1040,7 +1040,7 @@ is great.
 
 209
 00:18:05,360 --> 00:18:12,360
-It gets even harder  &mdash; right?  &mdash; because as
+It gets even harder &mdash; right? &mdash; because as
 you all know, there's no types in JavaScript,
 
 210
@@ -1080,7 +1080,7 @@ would put in an integer. Or not an integer.
 
 217
 00:18:49,050 --> 00:18:55,980
-Let's say a  &mdash; a string in that array.
+Let's say a &mdash; a string in that array.
 Then we have to back out of that optimization
 
 218
@@ -1115,7 +1115,7 @@ but they put it at the callee. So instead
 
 224
 00:19:34,990 --> 00:19:38,750
-of having it  &mdash; the method calling it, it
+of having it &mdash; the method calling it, it
 was actually at the prologue of the method
 
 225
@@ -1396,11 +1396,11 @@ So, in essence, you have a JavaScript wrapper
 280
 00:25:17,430 --> 00:25:22,440
 that points to a DOM node that in turn points
-to a persistent handle  &mdash; that's the black
+to a persistent handle &mdash; that's the black
 
 281
 00:25:22,440 --> 00:25:28,200
-ones  &mdash; that, in turn, will use a repointer
+ones &mdash; that, in turn, will use a repointer
 pointing back. So it is sort of a semicycle,
 
 282
@@ -1421,7 +1421,7 @@ and ask the DOM to group all objects that
 285
 00:25:47,040 --> 00:25:53,930
 belong together because that's needed in order
-to only collect  &mdash; you basically have to collect
+to only collect &mdash; you basically have to collect
 
 286
 00:25:53,930 --> 00:26:00,930
@@ -1585,7 +1585,7 @@ lines of code. Now it's half a million lines
 
 318
 00:29:25,970 --> 00:29:31,790
-of code. And I don't know  &mdash; as a programmer,
+of code. And I don't know &mdash; as a programmer,
 you know that there's trouble when it gets
 
 319
@@ -1880,7 +1880,7 @@ for us, to write a fairly significant amount
 
 377
 00:34:26,369 --> 00:34:31,310
-of code in Dart, translate  &mdash; in a translator
+of code in Dart, translate &mdash; in a translator
 that translates Dart to JavaScript can actually
 
 378
@@ -2050,8 +2050,8 @@ foo. And then we have a subclass B that inherits
 
 411
 00:37:43,780 --> 00:37:50,780
-from  &mdash; or extends A. It has nothing. And
-you create a new B  &mdash; it is called b, lowercase
+from &mdash; or extends A. It has nothing. And
+you create a new B &mdash; it is called b, lowercase
 
 412
 00:37:51,369 --> 00:37:57,630
@@ -2151,7 +2151,7 @@ object. You do not want to put in a general
 431
 00:40:00,740 --> 00:40:07,740
 dependency system for normal objects. So in
-Dart  &mdash; no, sorry, in JavaScript V8, we actually
+Dart &mdash; no, sorry, in JavaScript V8, we actually
 
 432
 00:40:09,760 --> 00:40:16,760
@@ -2250,7 +2250,7 @@ faster, it will have an impact on a real web
 
 451
 00:42:31,290 --> 00:42:38,290
-application. So using benchmark that you  &mdash; that
+application. So using benchmark that you &mdash; that
 have proven valuable in the context of other
 
 452
@@ -2676,7 +2676,7 @@ positions and all that is happening inside
 536
 00:51:15,160 --> 00:51:22,160
 Dart. It's not on the GPU. And this is the
- &mdash; somebody is beeping. This benchmark has
+&mdash; somebody is beeping. This benchmark has
 
 537
 00:51:25,500 --> 00:51:31,670
@@ -2791,7 +2791,7 @@ this inspiring and you want to see more on
 559
 00:54:18,960 --> 00:54:24,480
 more specific details, here's a list of things
-in room  &mdash; mostly in room 6, I guess, where
+in room &mdash; mostly in room 6, I guess, where
 
 560
 00:54:24,480 --> 00:54:28,060
@@ -2935,13 +2935,13 @@ the audience.
 
 588
 00:57:09,450 --> 00:57:15,829
->>> Hi. I have a bit of long  &mdash; seemingly
+>>> Hi. I have a bit of long &mdash; seemingly
 longstanding wisdom I got a few years ago
 
 589
 00:57:15,829 --> 00:57:21,079
 that occurs to me might be out of date which
-is the idea  &mdash; this is about V8, that JavaScript
+is the idea &mdash; this is about V8, that JavaScript
 
 590
 00:57:21,079 --> 00:57:26,410
@@ -2990,7 +2990,7 @@ for constructer. We say, we actually just
 
 599
 00:58:16,549 --> 00:58:23,549
- &mdash; we de-optimize now and we make sure that
+&mdash; we de-optimize now and we make sure that
 objects will only be treated as maps and get
 
 600

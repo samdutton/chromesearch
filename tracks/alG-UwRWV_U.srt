@@ -1939,7 +1939,7 @@ It's kind of a fallback.
 417
 00:19:35,220 --> 00:19:37,380
 The browser does it because
-it has [? two  bits. ?]
+it has [? two bits. ?]
 
 418
 00:19:37,380 --> 00:19:39,950

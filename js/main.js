@@ -78,7 +78,10 @@ function getCueData(videoId){
           if (!timings){ // line is text
             // replace return with a space: cues may be split between two lines
             // get rid of angle brackets at start of line (for speakers)
-            line = line.replace(/\n/, " ").replace(/^>+/, '');
+            line = line.
+              replace(/\n/, " ").
+              replace(/>>> /, 'Audience member: ').
+              replace(/^>+/, '');
             // if  this line introduces a speaker, add currentPara to paras
             // then start a 'new' currentPara with the text of this line
             // speaker lines begin with a name followed by a colon

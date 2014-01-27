@@ -5290,7 +5290,7 @@ kept alive by either having a
 
 1120
 00:45:10,850 --> 00:45:11,990
-long network request  &mdash;
+long network request &mdash;
 
 1121
 00:45:11,990 --> 00:45:14,170

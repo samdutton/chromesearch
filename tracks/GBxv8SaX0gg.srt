@@ -316,7 +316,7 @@ really bad.
 64
 00:05:38,539 --> 00:05:45,539
 >>Jorge Lucangeli Obes: Okay. Awesome.
-Now, the extension  &mdash; the app basically takes
+Now, the extension &mdash; the app basically takes
 
 65
 00:05:48,970 --> 00:05:53,409
@@ -331,7 +331,7 @@ back and not have to input them all the time.
 67
 00:05:59,240 --> 00:06:06,240
 Now, what happens if I input this manifest?
-I hope  &mdash; yeah, font size is okay.
+I hope &mdash; yeah, font size is okay.
 
 68
 00:06:07,210 --> 00:06:12,050
@@ -396,7 +396,7 @@ script into the application that is triggered
 80
 00:07:41,080 --> 00:07:46,370
 when the user mouses over the image.
-Now, since I'm  &mdash; since the use of inner HTML
+Now, since I'm &mdash; since the use of inner HTML
 
 81
 00:07:46,370 --> 00:07:50,629
@@ -426,12 +426,12 @@ me, the application, to load resources or
 86
 00:08:13,710 --> 00:08:20,680
 script from this whitelist or trusted sources.
-Now, it might be  &mdash; might sound kind of weird
+Now, it might be &mdash; might sound kind of weird
 
 87
 00:08:20,680 --> 00:08:26,449
 since I'm telling the browser to restrict
-what I'm  &mdash; what me, the application, is allowed
+what I'm &mdash; what me, the application, is allowed
 
 88
 00:08:26,449 --> 00:08:33,449
@@ -441,7 +441,7 @@ it's very easy to hijack the behavior of an
 89
 00:08:33,880 --> 00:08:40,880
 application, it's a very powerful tool, CSP,
-and it allows me to  &mdash; beforehand to say I
+and it allows me to &mdash; beforehand to say I
 
 90
 00:08:41,350 --> 00:08:48,150
@@ -550,7 +550,7 @@ token called unsafe inline, also with quotes.
 
 111
 00:10:53,840 --> 00:11:00,740
-This can  &mdash; this can be used to turn off the
+This can &mdash; this can be used to turn off the
 requirement for a script not to be inline;
 
 112
@@ -666,7 +666,7 @@ a Starbucks hot spot, then any person sitting
 134
 00:12:59,660 --> 00:13:06,220
 at that Starbucks hot spot can intercept the
-loading of that  &mdash; that script loading over
+loading of that &mdash; that script loading over
 
 135
 00:13:06,220 --> 00:13:11,280
@@ -696,7 +696,7 @@ I change the jQuery loading to load over HTTP,
 140
 00:13:36,450 --> 00:13:43,450
 which is a source that I have enabled in CSP.
-And I'm going to  &mdash; I'm going to extract all
+And I'm going to &mdash; I'm going to extract all
 
 141
 00:13:46,260 --> 00:13:51,470
@@ -791,7 +791,7 @@ Just so you see that I'm not faking it, I'm
 159
 00:15:34,680 --> 00:15:41,680
 going to go back to the demo and I'm going
-to try to load the same  &mdash; it happens.
+to try to load the same &mdash; it happens.
 
 160
 00:15:44,300 --> 00:15:51,300
@@ -950,7 +950,7 @@ do.
 
 191
 00:18:49,390 --> 00:18:54,100
-So you need to create script  &mdash; sorry, styles
+So you need to create script &mdash; sorry, styles
 on the fly dynamically and load them inline.
 
 192
@@ -971,7 +971,7 @@ view, and security, which is I'm not really
 195
 00:19:09,220 --> 00:19:16,220
 happy with loading inline CSS because it might
-open me to be  &mdash; to injection for malicious
+open me to be &mdash; to injection for malicious
 
 196
 00:19:16,830 --> 00:19:23,830
@@ -1025,7 +1025,7 @@ Now we come probably the crucial part of the
 
 206
 00:20:14,500 --> 00:20:21,500
-talk. Which is  &mdash; CSP is awesome, and it really
+talk. Which is &mdash; CSP is awesome, and it really
 prevents cross-site scripting, but we haven't
 
 207
@@ -1075,7 +1075,7 @@ is the same that I've been talking about.
 
 216
 00:21:18,030 --> 00:21:24,530
-If  &mdash; if your upper extension loads inline
+If &mdash; if your upper extension loads inline
 script, the browser cannot really tell whether
 
 217
@@ -1085,7 +1085,7 @@ trusted source or not. The same thing happens
 
 218
 00:21:29,770 --> 00:21:36,770
-with plug-ins. If we cannot  &mdash; if you are
+with plug-ins. If we cannot &mdash; if you are
 loading a plug-in over HTTP, and you run on
 
 219
@@ -1251,11 +1251,11 @@ developer is writing a malicious app, but
 251
 00:24:49,059 --> 00:24:55,559
 it's for the attacker to have a way in, you
-just have to make one mistake. For  &mdash; for
+just have to make one mistake. For &mdash; for
 
 252
 00:24:55,559 --> 00:25:01,670
-the browser/app to win, you have to  &mdash; you
+the browser/app to win, you have to &mdash; you
 have to tie every single loose end, so it's
 
 253
@@ -1350,7 +1350,7 @@ styles. This is basically what the ember.js
 
 271
 00:27:01,090 --> 00:27:08,090
- &mdash; what the ember.js index  &mdash; index HTML page
+&mdash; what the ember.js index &mdash; index HTML page
 looks like. It's true we are allowing the
 
 272
@@ -1516,7 +1516,7 @@ so we won't be able to access directly the
 304
 00:30:24,340 --> 00:30:31,280
 application of the extensions, DOM structure
-or script or anything. It actually  &mdash; if we
+or script or anything. It actually &mdash; if we
 
 305
 00:30:31,280 --> 00:30:37,880
@@ -1656,13 +1656,13 @@ API. And the most recent inter-origin API
 332
 00:33:17,780 --> 00:33:24,780
 that they can use, of course, is postMessage.
-It's explicitly designed to  &mdash;
+It's explicitly designed to &mdash;
 in a very JavaScript-y way, with asynchronous
 
 333
 00:33:35,340 --> 00:33:40,330
 message handling.
-Now, this is what  &mdash; this is what  &mdash; what
+Now, this is what &mdash; this is what &mdash; what
 
 334
 00:33:40,330 --> 00:33:47,330
@@ -1741,7 +1741,7 @@ By running it in a unique origin, we guaranteed
 
 349
 00:35:20,539 --> 00:35:25,430
-that even if anything that  &mdash; anything that
+that even if anything that &mdash; anything that
 went wrong, even if something that we didn't
 
 350
@@ -1762,7 +1762,7 @@ see to steal every other single document that
 353
 00:35:42,009 --> 00:35:48,890
 you have.
-A very  &mdash; other very important thing, more
+A very &mdash; other very important thing, more
 
 354
 00:35:48,890 --> 00:35:55,890
@@ -1811,7 +1811,7 @@ you are including doesn't have code that can
 
 363
 00:36:48,099 --> 00:36:54,420
-do this. You might not  &mdash; it's  &mdash; you might
+do this. You might not &mdash; it's &mdash; you might
 not be sure that your script will not fail
 
 364
@@ -1851,12 +1851,12 @@ We talked about most the CSP restrictions,
 
 371
 00:37:26,619 --> 00:37:33,619
-the really only really  &mdash; the only actual
+the really only really &mdash; the only actual
 pain point that we found was the use of eval
 
 372
 00:37:36,190 --> 00:37:40,799
-for templating (indiscernible)  &mdash; everything
+for templating (indiscernible) &mdash; everything
 else, even if it takes some work, is just
 
 373
@@ -1866,7 +1866,7 @@ event handling from HTML files. It shouldn't
 
 374
 00:37:46,999 --> 00:37:53,999
-be impossible. We talked about how  &mdash; about
+be impossible. We talked about how &mdash; about
 how once we get stuff into a different origin
 
 375
@@ -1916,7 +1916,7 @@ it really secure. I'm very happy opening a
 
 384
 00:38:40,700 --> 00:38:46,559
-file in  &mdash; sorry  &mdash; in the document viewer
+file in &mdash; sorry &mdash; in the document viewer
 because it means that the actual document
 
 385
@@ -2001,7 +2001,7 @@ line that will have Chrome extension URI as
 
 401
 00:40:34,819 --> 00:40:41,819
- &mdash; the Chrome extension URI as its URI. Now,
+&mdash; the Chrome extension URI as its URI. Now,
 if you are running the new package apps that
 
 402
@@ -2031,7 +2031,7 @@ it's running inside and encouraging, then
 
 407
 00:41:14,479 --> 00:41:19,920
-it will have  &mdash; it will live in origin for
+it will have &mdash; it will live in origin for
 everything, even for resource loading, and
 
 408
@@ -2041,7 +2041,7 @@ the CSP policies that we are using. And again,
 
 409
 00:41:28,670 --> 00:41:34,200
-we're seeing that I'm using  &mdash; or the document
+we're seeing that I'm using &mdash; or the document
 viewer developers were URIs for images and
 
 410
@@ -2092,7 +2092,7 @@ the images outside the iFrame, or even better,
 419
 00:42:30,849 --> 00:42:37,849
 in a different iFrame. And you need a way
-to provide that  &mdash; to get that information
+to provide that &mdash; to get that information
 
 420
 00:42:38,869 --> 00:42:44,650
@@ -2141,7 +2141,7 @@ an array of signed bytes or as an array of
 
 429
 00:43:38,969 --> 00:43:45,969
-signed 32 bit, but the best way about  &mdash; the
+signed 32 bit, but the best way about &mdash; the
 best thing array buffers is that they can
 
 430
@@ -2157,7 +2157,7 @@ us an array buffer over post message, we can
 432
 00:44:01,450 --> 00:44:07,719
 easily turn it into a blob, and then we can
-create a URL  &mdash; a URL from that blob that
+create a URL &mdash; a URL from that blob that
 
 433
 00:44:07,719 --> 00:44:12,219
@@ -2216,7 +2216,7 @@ of talks about (NaCl) Native Client, in I/O,
 
 444
 00:45:22,579 --> 00:45:29,579
-your  &mdash; you will probably find them, the videos
+your &mdash; you will probably find them, the videos
 online after I/O ends. (NaCl) allows you to
 
 445
@@ -2261,7 +2261,7 @@ make some very small changes, move scripts
 
 453
 00:46:23,559 --> 00:46:29,920
-out of HTML, removing line handling  &mdash; inline
+out of HTML, removing line handling &mdash; inline
 handling and stop worrying. As long as you
 
 454
@@ -2271,7 +2271,7 @@ of not allowing malicious script to go through.
 
 455
 00:46:37,089 --> 00:46:43,509
-This removes  &mdash; this blocks most cases of
+This removes &mdash; this blocks most cases of
 cross-site scripting. It does. Because a browser
 
 456
@@ -2281,7 +2281,7 @@ only one place. You have to make sure it doesn't
 
 457
 00:46:48,249 --> 00:46:52,849
-happen in every single way  &mdash; place you use
+happen in every single way &mdash; place you use
 inner HTML or e-mail or server or everything.
 
 458
@@ -2386,8 +2386,8 @@ From the browser's perspective?
 
 478
 00:48:55,099 --> 00:49:02,099
-There's no difference. So the browser  &mdash; the
-browser doesn't know that the  &mdash; the on mouse-over
+There's no difference. So the browser &mdash; the
+browser doesn't know that the &mdash; the on mouse-over
 
 479
 00:49:04,289 --> 00:49:10,099
@@ -2396,17 +2396,17 @@ malicious. I want the browser to be able to
 
 480
 00:49:10,099 --> 00:49:16,259
- &mdash; I would like the browser to be able to
+&mdash; I would like the browser to be able to
 block anything that got injected by inner
 
 481
 00:49:16,259 --> 00:49:23,259
 HTML as opposed to stuff that got injected
- &mdash; that got put there statically in the page.
+&mdash; that got put there statically in the page.
 
 482
 00:49:24,829 --> 00:49:28,749
-But there's  &mdash; in reality, there's no way
+But there's &mdash; in reality, there's no way
 of telling the difference. Once the DOM tree
 
 483
@@ -2422,7 +2422,7 @@ you included statically in the page. So the
 485
 00:49:40,900 --> 00:49:47,869
 browser cannot really tell the difference
-between those two scripts. We can  &mdash; if  &mdash; we
+between those two scripts. We can &mdash; if &mdash; we
 
 486
 00:49:47,869 --> 00:49:52,680
@@ -2446,7 +2446,7 @@ toward standardizing what that header is?
 
 490
 00:50:09,469 --> 00:50:15,410
->>Jorge Lucangeli Obes: Eventually  &mdash; no.
+>>Jorge Lucangeli Obes: Eventually &mdash; no.
 Eventually we want to standardize. I'm not
 
 491
@@ -2496,7 +2496,7 @@ and you've got this policy to say if it's
 
 500
 00:51:09,119 --> 00:51:14,349
-not  &mdash; if any JavaScripts come from anywhere
+not &mdash; if any JavaScripts come from anywhere
 else apart from where we said, malicious,
 
 501
@@ -2521,13 +2521,13 @@ a way of telling what source code does that
 
 505
 00:51:33,700 --> 00:51:35,759
-is 100% accurate so  &mdash;
+is 100% accurate so &mdash;
 >>> Yeah.
 
 506
 00:51:35,759 --> 00:51:41,279
 >>Jorge Lucangeli Obes: The only way to make
-sure that  &mdash; it goes back to the same thing:
+sure that &mdash; it goes back to the same thing:
 
 507
 00:51:41,279 --> 00:51:47,700
@@ -2556,8 +2556,8 @@ major differences except for evil, let's just
 
 512
 00:52:12,759 --> 00:52:17,549
-do what's safe for the user. It's  &mdash; it's
-exactly the same. It's just  &mdash; instead of
+do what's safe for the user. It's &mdash; it's
+exactly the same. It's just &mdash; instead of
 
 513
 00:52:17,549 --> 00:52:23,479
@@ -2566,7 +2566,7 @@ of having it in code, do it in our .js files,
 
 514
 00:52:23,479 --> 00:52:27,589
-and we can guaranty  &mdash; we can guaranty, we
+and we can guaranty &mdash; we can guaranty, we
 can say this is not going to is happen, ever,
 
 515
@@ -2586,7 +2586,7 @@ anyway.
 
 518
 00:52:40,069 --> 00:52:45,049
-I mean, since  &mdash; it should  &mdash; would have to
+I mean, since &mdash; it should &mdash; would have to
 be compromised either in the Web site that
 
 519
@@ -2621,8 +2621,8 @@ right?
 
 525
 00:53:08,660 --> 00:53:14,200
-by  &mdash; there were some stats  &mdash; there was a
-very interesting paper by a group  &mdash; a research
+by &mdash; there were some stats &mdash; there was a
+very interesting paper by a group &mdash; a research
 
 526
 00:53:14,200 --> 00:53:21,200
@@ -2661,7 +2661,7 @@ and girls, of course.
 
 533
 00:54:01,929 --> 00:54:04,019
->>> Can we get  &mdash; sorry.
+>>> Can we get &mdash; sorry.
 >>Jorge Lucangeli Obes: That's okay.
 
 534
@@ -2696,13 +2696,13 @@ eval, you know, blocks templating use cases,
 
 540
 00:54:28,059 --> 00:54:31,660
-I think I did catch  &mdash; so what's the alternative
+I think I did catch &mdash; so what's the alternative
 do you do on something like client side templating?
 
 541
 00:54:31,660 --> 00:54:35,910
 >>Jorge Lucangeli Obes: So the alternative
- &mdash; two alternatives: Number one, try to make
+&mdash; two alternatives: Number one, try to make
 
 542
 00:54:35,910 --> 00:54:42,910
@@ -2721,7 +2721,7 @@ in the manifest using the sandbox attribute
 
 545
 00:54:54,770 --> 00:55:01,770
- &mdash; in the manifest, not in the iFrame, in
+&mdash; in the manifest, not in the iFrame, in
 the manifest, you are able to say this document,
 
 546
@@ -2761,7 +2761,7 @@ to that document you loaded inside the sandbox
 
 553
 00:55:46,710 --> 00:55:53,049
- &mdash; sandbox which can never ever live in the
+&mdash; sandbox which can never ever live in the
 same origin as your application. If you want
 
 554

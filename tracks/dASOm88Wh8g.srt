@@ -15,7 +15,7 @@ level look at how the radio works and what
 
 4
 00:00:14,730 --> 00:00:19,939
-we can learn about it to make our apps  &mdash; mobile
+we can learn about it to make our apps &mdash; mobile
 apps and Web pages with more performance.
 
 5
@@ -31,11 +31,11 @@ and some general best practices.
 7
 00:00:27,740 --> 00:00:32,119
 So, first, I think we should start with the
-obvious which is  &mdash; or maybe it is not so
+obvious which is &mdash; or maybe it is not so
 
 8
 00:00:32,119 --> 00:00:36,469
-obvious to many of us  &mdash; which is wireless
+obvious to many of us &mdash; which is wireless
 is fundamentally different than wired. There
 
 9
@@ -71,7 +71,7 @@ But once you actually dig a little bit deeper,
 15
 00:01:02,329 --> 00:01:05,910
 you will realize that there are different
-design constraints within  &mdash; even within the
+design constraints within &mdash; even within the
 
 16
 00:01:05,910 --> 00:01:11,470
@@ -131,7 +131,7 @@ complaint has been the slow load time for
 27
 00:02:02,890 --> 00:02:08,020
 their applications.
-So  &mdash; and after that, almost half of them
+So &mdash; and after that, almost half of them
 
 28
 00:02:08,020 --> 00:02:12,610
@@ -341,7 +341,7 @@ over a wired connection, we have a switch
 69
 00:05:24,490 --> 00:05:30,080
 or a router which routes all of the packets
-between the destination  &mdash; or the client and
+between the destination &mdash; or the client and
 
 70
 00:05:30,080 --> 00:05:34,449
@@ -476,7 +476,7 @@ that would be your, like, channel 1, channel
 96
 00:07:32,820 --> 00:07:39,710
 6 or channel 11 or something to that extent.
-Now, the problem is  &mdash; this is nice and pretty.
+Now, the problem is &mdash; this is nice and pretty.
 
 97
 00:07:39,710 --> 00:07:43,949
@@ -500,7 +500,7 @@ many WiFi routers out there, that it's just
 
 101
 00:07:59,380 --> 00:08:04,240
- &mdash; it is very hard to get a slot to talk to
+&mdash; it is very hard to get a slot to talk to
 somebody without interfering with anybody,
 
 102
@@ -595,7 +595,7 @@ went out and bought a different router, which
 
 120
 00:09:31,670 --> 00:09:37,300
-is using the new  &mdash; the new 802.11n standard
+is using the new &mdash; the new 802.11n standard
 and it's running on the 5-gigahertz band.
 
 121
@@ -635,7 +635,7 @@ with each other.
 
 128
 00:10:08,459 --> 00:10:12,639
-better performance  &mdash; Web performance. We
+better performance &mdash; Web performance. We
 just cut 50 milliseconds of latency. That
 
 129
@@ -655,7 +655,7 @@ point in time, so it is unpredictable.
 
 132
 00:10:29,899 --> 00:10:36,399
-One way to adapt to this is to  &mdash; well, one
+One way to adapt to this is to &mdash; well, one
 way to deal with this is to adapt to the variable
 
 133
@@ -900,7 +900,7 @@ of implications. So first of these is the
 
 181
 00:14:43,670 --> 00:14:50,670
-difference  &mdash; and the distinction between
+difference &mdash; and the distinction between
 the control and the user-plane latency. So
 
 182
@@ -935,7 +935,7 @@ In 3G networks, this can take up to 2 1/2
 
 188
 00:15:20,809 --> 00:15:26,709
-seconds. 2 1/2 seconds just  &mdash; we haven't
+seconds. 2 1/2 seconds just &mdash; we haven't
 even sent a packet of data, application data,
 
 189
@@ -961,7 +961,7 @@ And then only after we've incurred this cost
 193
 00:15:46,419 --> 00:15:51,600
 and we have gotten a resource assignment,
-can we then trance  &mdash; start transmitting data
+can we then trance &mdash; start transmitting data
 
 194
 00:15:51,600 --> 00:15:56,809
@@ -991,7 +991,7 @@ of your pocket. You start typing in an URL.
 199
 00:16:16,579 --> 00:16:21,379
 You hit "go." What happens?
-We  &mdash; so this is a 4G network. First, we need
+We &mdash; so this is a 4G network. First, we need
 
 200
 00:16:21,379 --> 00:16:26,149
@@ -1065,7 +1065,7 @@ into the second, the long sleep mode, and
 
 214
 00:17:31,420 --> 00:17:35,890
-only after then  &mdash; after about 10 seconds,
+only after then &mdash; after about 10 seconds,
 we will go back into the idle mode.
 
 215
@@ -1110,7 +1110,7 @@ the content and maybe optionally we need to
 
 223
 00:18:14,270 --> 00:18:21,270
-do the TLS handshake for another  &mdash; up to
+do the TLS handshake for another &mdash; up to
 two round trips there.
 
 224
@@ -1141,7 +1141,7 @@ networks, let's use 80 milliseconds, which
 229
 00:18:47,550 --> 00:18:54,550
 is actually fairly aggressive.
-So 200 to 2.5 seconds  &mdash; so 200 milliseconds
+So 200 to 2.5 seconds &mdash; so 200 milliseconds
 
 230
 00:18:56,150 --> 00:19:01,510
@@ -1181,7 +1181,7 @@ rely on 4G as you will see in a second. So
 237
 00:19:32,610 --> 00:19:38,330
 really you should assume that there's literally
-seconds of latency  &mdash; of network latency overhead
+seconds of latency &mdash; of network latency overhead
 
 238
 00:19:38,330 --> 00:19:45,330
@@ -1210,7 +1210,7 @@ are incurring 300 to 500 milliseconds. Which
 
 243
 00:20:06,750 --> 00:20:11,930
-means that you basically  &mdash; you cannot wait
+means that you basically &mdash; you cannot wait
 for the http request or any request to complete.
 
 244
@@ -1436,12 +1436,12 @@ transfers were accounting to .2% of the total
 288
 00:24:16,720 --> 00:24:23,590
 bytes transferred but it was 46% of the battery
-life of that application. So  &mdash; which is a
+life of that application. So &mdash; which is a
 
 289
 00:24:23,590 --> 00:24:30,590
 huge, of course, huge performance problem.
-So all they had to do was to move  &mdash; these
+So all they had to do was to move &mdash; these
 
 290
 00:24:31,300 --> 00:24:35,250
@@ -1490,7 +1490,7 @@ caught this problem early and fixed it and
 
 299
 00:25:16,990 --> 00:25:22,190
-we don't do this. We will actually  &mdash; we have
+we don't do this. We will actually &mdash; we have
 a different way to provide realtime Analytics
 
 300
@@ -1530,7 +1530,7 @@ allows you to capture a trace file. It can
 
 307
 00:26:05,670 --> 00:26:10,900
-actually record  &mdash; you can install an application
+actually record &mdash; you can install an application
 on your Android device. You hit record. You
 
 308
@@ -1555,7 +1555,7 @@ of the cool things it provides is it will
 
 312
 00:26:34,159 --> 00:26:38,810
- &mdash; it can also record your screen. Here I'm
+&mdash; it can also record your screen. Here I'm
 starting collector and I will fast forward
 
 313
@@ -1676,7 +1676,7 @@ kilobytes. That's the other important take-away.
 336
 00:28:48,870 --> 00:28:54,940
 So the consequence of that is you want to
-pre-fetch data. You don't want to fetch  &mdash; I'll
+pre-fetch data. You don't want to fetch &mdash; I'll
 
 337
 00:28:54,940 --> 00:29:01,420
@@ -1780,7 +1780,7 @@ So that's a little bit about how the network
 
 357
 00:30:43,040 --> 00:30:49,520
- &mdash; or how the radio works on the phone itself.
+&mdash; or how the radio works on the phone itself.
 Now let's take a deep dive into how the mobile
 
 358
@@ -1891,7 +1891,7 @@ gateway has no idea about the location of
 379
 00:32:42,380 --> 00:32:47,330
 your device. What it actually does is it sends
- &mdash; it forwards the packets to the serving
+&mdash; it forwards the packets to the serving
 
 380
 00:32:47,330 --> 00:32:54,330
@@ -2131,7 +2131,7 @@ low. But then you have these outliers which
 427
 00:37:11,210 --> 00:37:18,049
 is why this line is stretched. With LTE, even
-though it is seemingly more complicated  &mdash; not
+though it is seemingly more complicated &mdash; not
 
 428
 00:37:18,049 --> 00:37:24,739
@@ -2206,11 +2206,11 @@ that in part because they can and in part
 442
 00:38:50,200 --> 00:38:56,960
 because it's very expensive. So the dominant
-network type of this decade  &mdash; not just this
+network type of this decade &mdash; not just this
 
 443
 00:38:56,960 --> 00:39:02,269
-year or in the coming year  &mdash; of this decade
+year or in the coming year &mdash; of this decade
 will be 3G networks. Granted, they are being
 
 444
@@ -2435,7 +2435,7 @@ or services that can be provided by Google
 
 488
 00:43:33,229 --> 00:43:38,589
- &mdash; the Android framework itself to help verticals
+&mdash; the Android framework itself to help verticals
 to make application more efficient. For example,
 
 489
@@ -2446,11 +2446,11 @@ network accessing your main thread. Is there
 490
 00:43:46,150 --> 00:43:53,019
 anything planned to do in that manner?
->>Ilya Grigorik: So I can't  &mdash;  &mdash; I'm more
+>>Ilya Grigorik: So I can't &mdash; &mdash; I'm more
 
 491
 00:43:53,019 --> 00:43:56,960
- &mdash; I have more experience with the web part
+&mdash; I have more experience with the web part
 of the stack so I can't necessarily comment
 
 492
@@ -2541,7 +2541,7 @@ and steal from each other. So with the latest
 509
 00:45:29,849 --> 00:45:33,440
 Wi-Fi standards, you will find that the way
-they are  &mdash; the way they are achieving gigabyte
+they are &mdash; the way they are achieving gigabyte
 
 510
 00:45:33,440 --> 00:45:37,229
@@ -2550,12 +2550,12 @@ a large degree.
 
 511
 00:45:37,229 --> 00:45:41,400
->>> Do you know if that's in ADT2C or  &mdash;
+>>> Do you know if that's in ADT2C or &mdash;
 >>Ilya Grigorik: Yeah, that's in part how
 
 512
 00:45:41,400 --> 00:45:46,809
- &mdash; yeah, exactly. >>> Thank you.
+&mdash; yeah, exactly. >>> Thank you.
 >>> I'm fairly new to Android development.
 
 513
@@ -2785,7 +2785,7 @@ to look at your Wi-Fi networks in those slides?
 
 558
 00:49:31,420 --> 00:49:35,769
-in  &mdash; I don't remember off the top of my head.
+in &mdash; I don't remember off the top of my head.
 If you talk to me afterwards, I can find it
 
 559
@@ -2805,7 +2805,7 @@ page rate consumption?
 
 562
 00:49:53,079 --> 00:49:55,969
-generally want to do  &mdash; so this is actually
+generally want to do &mdash; so this is actually
 related to the previous question about the
 
 563
@@ -2841,7 +2841,7 @@ then we say that you are active on the page
 569
 00:50:32,210 --> 00:50:37,849
 for the next 30 seconds. Right? You have to
-be  &mdash; if you navigate to another page, then
+be &mdash; if you navigate to another page, then
 
 570
 00:50:37,849 --> 00:50:43,950

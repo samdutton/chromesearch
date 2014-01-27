@@ -40,7 +40,7 @@ use, so not just Web. The Web is currently
 
 9
 00:00:55,000 --> 00:01:02,000
-about 10% of all  &mdash; mobile Web is about 10%
+about 10% of all &mdash; mobile Web is about 10%
 of all Web usage and it's been doubling every
 
 10
@@ -81,7 +81,7 @@ as the target for the Web. But, in fact, the
 17
 00:01:42,259 --> 00:01:48,009
 Web looks a lot more like this. We have a
-mass of devices that all access  &mdash; that all
+mass of devices that all access &mdash; that all
 
 18
 00:01:48,009 --> 00:01:53,969
@@ -131,11 +131,11 @@ with developing when your host machine is
 27
 00:02:40,390 --> 00:02:45,730
 not your target machine. So I'll talk more
-about that, in addition. So this is  &mdash; these
+about that, in addition. So this is &mdash; these
 
 28
 00:02:45,730 --> 00:02:51,790
-are all issues, but they're also  &mdash; this is
+are all issues, but they're also &mdash; this is
 also a outline for the rest of the talk. So
 
 29
@@ -151,11 +151,11 @@ First extreme is we simply create one version.
 31
 00:03:05,909 --> 00:03:11,150
 And some people do this. Some of the examples
-of sites that do  &mdash; that take this approach
+of sites that do &mdash; that take this approach
 
 32
 00:03:11,150 --> 00:03:17,640
-are shown here. We have  &mdash; you can see text
+are shown here. We have &mdash; you can see text
 that's not very clearly readable. It's very
 
 33
@@ -221,7 +221,7 @@ So the question then is where can we save
 45
 00:04:23,220 --> 00:04:27,680
 some effort?
-And how can we make this a  &mdash; how can we make
+And how can we make this a &mdash; how can we make
 
 46
 00:04:27,680 --> 00:04:34,680
@@ -240,7 +240,7 @@ interface guidelines and UI frameworks, so
 
 49
 00:04:51,000 --> 00:04:56,509
-this is on the  &mdash; on the right, example of
+this is on the &mdash; on the right, example of
 a human interface guideline for Android, it
 
 50
@@ -251,7 +251,7 @@ corresponding UI framework makes it really
 51
 00:05:01,819 --> 00:05:08,280
 easy to build that kind of UI for a developer.
-So the point of this is to make it  &mdash; to have
+So the point of this is to make it &mdash; to have
 
 52
 00:05:08,280 --> 00:05:13,539
@@ -296,7 +296,7 @@ of this platform. So that kind of level of
 60
 00:05:57,430 --> 00:06:03,580
 detail. So generally speaking platform differences
-vary  &mdash; platform differences are both small,
+vary &mdash; platform differences are both small,
 
 61
 00:06:03,580 --> 00:06:09,419
@@ -316,7 +316,7 @@ places it on the bottom. Fairly major change,
 64
 00:06:21,060 --> 00:06:25,940
 but it's important to note that these are
-differences that  &mdash; or, sorry, these are rules
+differences that &mdash; or, sorry, these are rules
 
 65
 00:06:25,940 --> 00:06:31,330
@@ -361,12 +361,12 @@ to phone, tablet and desktop, just as a starting
 73
 00:07:18,879 --> 00:07:24,110
 point. So how do we actually build this?
-We build this  &mdash; there's two possible angles
+We build this &mdash; there's two possible angles
 
 74
 00:07:24,110 --> 00:07:28,349
 to come at it from. We can start from single
-version and make tweaks  &mdash; diversion tweaks
+version and make tweaks &mdash; diversion tweaks
 
 75
 00:07:28,349 --> 00:07:34,120
@@ -401,12 +401,12 @@ German design magazine, and you can see, as
 81
 00:08:13,050 --> 00:08:20,050
 I resize the page, the styling changes subtly.
-You will see  &mdash; you'll notice also that Chrome
+You will see &mdash; you'll notice also that Chrome
 
 82
 00:08:23,319 --> 00:08:28,969
 has a minimum size. Let me show you a cool
-trick that you can  &mdash; you may not know. I
+trick that you can &mdash; you may not know. I
 
 83
 00:08:28,969 --> 00:08:35,169
@@ -425,7 +425,7 @@ by 480, and you can see I've sized it down
 
 86
 00:08:49,440 --> 00:08:56,160
- &mdash; I couldn't use Chrome natively  &mdash; or sorry,
+&mdash; I couldn't use Chrome natively &mdash; or sorry,
 I couldn't resize Chrome to be this small.
 
 87
@@ -460,13 +460,13 @@ of hidden content, a lot of conditional CSS
 
 93
 00:09:36,010 --> 00:09:41,120
-for the various  &mdash; for the two form factors.
+for the various &mdash; for the two form factors.
 Also, since we have shared JavaScript in this
 
 94
 00:09:41,120 --> 00:09:48,120
 case, how do we load additional functionality?
-So one middle ground here, between these  &mdash; between
+So one middle ground here, between these &mdash; between
 
 95
 00:09:50,840 --> 00:09:56,510
@@ -506,7 +506,7 @@ things using orientation change.
 102
 00:10:36,500 --> 00:10:42,590
 But if we want to completely separate the
-two  &mdash; separate the versions that we want
+two &mdash; separate the versions that we want
 
 103
 00:10:42,590 --> 00:10:49,590
@@ -515,7 +515,7 @@ This is really simple code that basically
 
 104
 00:10:49,600 --> 00:10:55,150
-says default to a desk  &mdash; to the desktop version,
+says default to a desk &mdash; to the desktop version,
 then check for touch support, if there's touch
 
 105
@@ -571,7 +571,7 @@ So we can evaluate the media query, but where
 115
 00:11:54,110 --> 00:12:01,110
 do we set this boundary?
-So here is a  &mdash; on the right  &mdash; diagram of
+So here is a &mdash; on the right &mdash; diagram of
 
 116
 00:12:04,190 --> 00:12:10,890
@@ -585,7 +585,7 @@ are not the same as device pixels. CSS pixels
 
 118
 00:12:16,480 --> 00:12:23,480
-are scaled to the  &mdash; they're scaled by the
+are scaled to the &mdash; they're scaled by the
 device pixel ratio to be virtually sized,
 
 119
@@ -620,7 +620,7 @@ numbers so it's a little bit interesting and
 
 125
 00:13:04,070 --> 00:13:10,790
-you should definitely be aware of this  &mdash; this
+you should definitely be aware of this &mdash; this
 concept. So if we take a look at the diagram,
 
 126
@@ -655,7 +655,7 @@ the time with some exceptions. For example,
 
 132
 00:13:44,640 --> 00:13:51,640
-some  &mdash; some tablets in portrait mode, in
+some &mdash; some tablets in portrait mode, in
 this case will get the phone version. So if
 
 133
@@ -715,7 +715,7 @@ let me quickly show you how this works. So
 
 144
 00:15:00,040 --> 00:15:07,040
-I'll  &mdash; I'll load up a really simple application.
+I'll &mdash; I'll load up a really simple application.
 This is a fake to do list. Now, if I send
 
 145
@@ -726,7 +726,7 @@ it, switch the camera here, let me just load
 146
 00:15:27,500 --> 00:15:34,500
 it up... one second... all right. Okay. So
-I've  &mdash; I've loaded the same exact URL on
+I've &mdash; I've loaded the same exact URL on
 
 147
 00:15:41,120 --> 00:15:47,440
@@ -776,7 +776,7 @@ version if you prefer it, so device.js does
 156
 00:17:29,299 --> 00:17:35,169
 that as well, and here if I switch to layout
- &mdash; landscape mode, I may actually prefer the
+&mdash; landscape mode, I may actually prefer the
 
 157
 00:17:35,169 --> 00:17:42,169
@@ -875,8 +875,8 @@ that you just send the developer tools, but
 
 176
 00:19:36,679 --> 00:19:43,679
-when I over  &mdash; when I reload the page here,
-now I've  &mdash; I've used a new  &mdash; I've reset
+when I over &mdash; when I reload the page here,
+now I've &mdash; I've used a new &mdash; I've reset
 
 177
 00:19:43,740 --> 00:19:49,230
@@ -965,7 +965,7 @@ This is terrible. I'm not going to do this.
 
 194
 00:21:35,639 --> 00:21:40,100
-And I am probably  &mdash; I'm thinking you're probably
+And I am probably &mdash; I'm thinking you're probably
 using a model view controller or if not, you
 
 195
@@ -1086,7 +1086,7 @@ We can take this one step further and prevent
 218
 00:24:15,240 --> 00:24:22,240
 zooming entirely to sort of be closer to the
-user experience of a mobile  &mdash; native mobile
+user experience of a mobile &mdash; native mobile
 
 219
 00:24:23,389 --> 00:24:28,929
@@ -1111,12 +1111,12 @@ scalable equals no or supplement it with these
 223
 00:24:46,869 --> 00:24:53,519
 media queries, or, sorry, these content directives,
-because it's not supported in Chrome  &mdash; user
+because it's not supported in Chrome &mdash; user
 
 224
 00:24:53,519 --> 00:25:00,240
 scalable, no, is not supported in Android
- &mdash; other Android browsers and some other that
+&mdash; other Android browsers and some other that
 
 225
 00:25:00,240 --> 00:25:07,240
@@ -1126,7 +1126,7 @@ mobile Web, or on any Web, anywhere, really,
 226
 00:25:09,389 --> 00:25:16,389
 we want our animations to be smooth, and what
-this means is we want  &mdash; we want them to be
+this means is we want &mdash; we want them to be
 
 227
 00:25:16,429 --> 00:25:23,429
@@ -1171,7 +1171,7 @@ fixed, what you're essentially saying is you're
 235
 00:26:04,690 --> 00:26:11,690
 telling your GPU that this is a separate layer
-and composite in a  &mdash; composite it separate
+and composite in a &mdash; composite it separate
 
 236
 00:26:13,789 --> 00:26:20,789
@@ -1180,7 +1180,7 @@ less janky experience, and much more smooth.
 
 237
 00:26:22,610 --> 00:26:29,610
-Similar  &mdash; similar tactic applies for scrolling.
+Similar &mdash; similar tactic applies for scrolling.
 Often we want sub element scrolling, so an
 
 238
@@ -1210,7 +1210,7 @@ me quickly show you a demo here. So I'll send
 
 243
 00:27:06,419 --> 00:27:09,539
-this  &mdash; these are beautiful Chrome ponies.
+this &mdash; these are beautiful Chrome ponies.
 Chronies?
 
 244
@@ -1270,7 +1270,7 @@ absolute to do this, but this isn't slow and
 
 255
 00:29:04,580 --> 00:29:10,049
-takes the software path  &mdash; or this isn't fast,
+takes the software path &mdash; or this isn't fast,
 and takes the software path, so the hardware
 
 256
@@ -1280,7 +1280,7 @@ on mobile, is to use the WebKit transform
 
 257
 00:29:14,879 --> 00:29:21,700
-and the WebKit translate  &mdash; I'm sorry, WebKit
+and the WebKit translate &mdash; I'm sorry, WebKit
 transform and translate transformations, this
 
 258
@@ -1306,7 +1306,7 @@ back to the projector here for both screens.
 262
 00:29:45,850 --> 00:29:52,850
 We have our beautiful ponies, as you would
-expect. As I scroll hidden  &mdash; attempt to scroll
+expect. As I scroll hidden &mdash; attempt to scroll
 
 263
 00:29:53,649 --> 00:29:59,409
@@ -1330,12 +1330,12 @@ get with the WebKit overflowing scrolling
 
 267
 00:30:11,739 --> 00:30:18,739
-touch. So on  &mdash; on Chrome for Android, this
-is the  &mdash; basically the smoothness that you
+touch. So on &mdash; on Chrome for Android, this
+is the &mdash; basically the smoothness that you
 
 268
 00:30:19,200 --> 00:30:26,200
-get, on iOS. You end up with  &mdash; with bounceback
+get, on iOS. You end up with &mdash; with bounceback
 effects. And inertial scrolling as well.
 
 269
@@ -1366,7 +1366,7 @@ various animation states by using the transition
 274
 00:31:02,470 --> 00:31:09,320
 property and here we are transitioning between
- &mdash; or say  &mdash; sorry, we're transitioning the
+&mdash; or say &mdash; sorry, we're transitioning the
 
 275
 00:31:09,320 --> 00:31:14,419
@@ -1375,7 +1375,7 @@ of time, one second, and an easing function
 
 276
 00:31:14,419 --> 00:31:21,419
-as well. So these  &mdash; both the transition and
+as well. So these &mdash; both the transition and
 the transform property need vendor prefixes.
 
 277
@@ -1541,7 +1541,7 @@ So this is not great, 300 milliseconds is
 309
 00:34:53,640 --> 00:34:59,370
 definitely visible. You can see the delay
-and the  &mdash; the workaround for this is to use
+and the &mdash; the workaround for this is to use
 
 310
 00:34:59,370 --> 00:35:05,640
@@ -1605,12 +1605,12 @@ request to the browser for animation frame
 
 322
 00:36:15,950 --> 00:36:22,950
-so it aims to  &mdash; to fire roughly 60 to  &mdash; 60
+so it aims to &mdash; to fire roughly 60 to &mdash; 60
 times a second. But if something is overloading
 
 323
 00:36:24,810 --> 00:36:30,190
-the  &mdash; the machine or the device, then it
+the &mdash; the machine or the device, then it
 scales back in an elegant way and you can
 
 324
@@ -1665,7 +1665,7 @@ So let's talk about some of the problems with
 
 334
 00:37:37,080 --> 00:37:44,070
- &mdash; with touch input.
+&mdash; with touch input.
 The first is how do we handle both gracefully?
 
 335
@@ -1686,12 +1686,12 @@ positions of the relevant input. And then
 338
 00:38:04,050 --> 00:38:10,610
 just relay them to a common handler. This
- &mdash; eh ... it's unnecessary boilerplate. It's
+&mdash; eh ... it's unnecessary boilerplate. It's
 
 339
 00:38:10,610 --> 00:38:16,820
 not something that you want to do every single
-time. So instead  &mdash; well, we'll talk about
+time. So instead &mdash; well, we'll talk about
 
 340
 00:38:16,820 --> 00:38:21,330
@@ -1720,7 +1720,7 @@ you want to pinch-zoom just is not reasonable.
 
 345
 00:38:48,140 --> 00:38:55,140
-So Microsoft has a  &mdash; has an input model that
+So Microsoft has a &mdash; has an input model that
 they're planning on using for metro. It's
 
 346
@@ -1735,7 +1735,7 @@ And, of course, you can still distinguish
 
 348
 00:39:11,640 --> 00:39:18,170
-between mouse and touch with  &mdash; with an event
+between mouse and touch with &mdash; with an event
 property and it's a really nice idea. I like
 
 349
@@ -1771,17 +1771,17 @@ around them to make it really easy for developers.
 355
 00:39:52,410 --> 00:39:59,410
 So let me show you this in action.
-And here I have a  &mdash; a space shooter. And
+And here I have a &mdash; a space shooter. And
 
 356
 00:40:00,990 --> 00:40:07,160
 actually let me show you this on the device
-instead. So this is a  &mdash; this is a demo that
+instead. So this is a &mdash; this is a demo that
 
 357
 00:40:07,160 --> 00:40:13,570
 was created by a friend of mine called Seb
-and you can see it's essentially just a  &mdash; a
+and you can see it's essentially just a &mdash; a
 
 358
 00:40:13,570 --> 00:40:18,130
@@ -1790,7 +1790,7 @@ because you can place your control anywhere
 
 359
 00:40:18,130 --> 00:40:23,240
-you want and then just shoot on the  &mdash; anywhere
+you want and then just shoot on the &mdash; anywhere
 on the right side of the screen.
 
 360
@@ -1806,7 +1806,7 @@ work at all. With pointerevents, though, I
 362
 00:40:37,910 --> 00:40:44,910
 can have essentially the same experience in
- &mdash; on both mouse and touch input. So this
+&mdash; on both mouse and touch input. So this
 
 363
 00:40:45,410 --> 00:40:52,410
@@ -1841,7 +1841,7 @@ the desktop. You don't have to deal with extra
 369
 00:41:36,960 --> 00:41:42,570
 devices. You don't have any of that headache
-of trying to  &mdash; having to touch around all
+of trying to &mdash; having to touch around all
 
 370
 00:41:42,570 --> 00:41:49,280
@@ -1902,7 +1902,7 @@ whole bunch of cool effects to just give you
 381
 00:43:00,350 --> 00:43:06,730
 a sense of how performant you can have these
-nice transitions. On both Chrome and  &mdash; it
+nice transitions. On both Chrome and &mdash; it
 
 382
 00:43:06,730 --> 00:43:13,730
@@ -1912,7 +1912,7 @@ well. You should check it out in the Chrome
 383
 00:43:13,750 --> 00:43:19,380
 experiments booth.
-So that's  &mdash; that's some Chrome devtools features.
+So that's &mdash; that's some Chrome devtools features.
 
 384
 00:43:19,380 --> 00:43:26,380
@@ -1926,7 +1926,7 @@ But once you've got it set up, then you can
 
 386
 00:43:36,430 --> 00:43:43,160
- &mdash; you can essentially create multi-touch
+&mdash; you can essentially create multi-touch
 prototyping, you can do multi-touch prototyping
 
 387
@@ -2001,7 +2001,7 @@ well afterward.
 
 401
 00:45:01,940 --> 00:45:06,950
->>> You  &mdash; I guess the mic is off. There we
+>>> You &mdash; I guess the mic is off. There we
 go.
 
 402
@@ -2017,7 +2017,7 @@ those turn on by defaults? Why do you have
 404
 00:45:15,430 --> 00:45:22,430
 to play tricks to get it to work reasonably?
->>Boris Smus: Right, this is  &mdash; I agree  &mdash; a
+>>Boris Smus: Right, this is &mdash; I agree &mdash; a
 
 405
 00:45:23,160 --> 00:45:30,160
@@ -2026,7 +2026,7 @@ the Chrome GPU team is working very hard to
 
 406
 00:45:30,190 --> 00:45:36,630
-try to make these  &mdash; to try to make more of
+try to make these &mdash; to try to make more of
 the rendering part of the GPU pipeline, essentially.
 
 407
@@ -2061,13 +2061,13 @@ mobile native experience, the address bar
 
 413
 00:46:08,230 --> 00:46:13,180
-gets in the way or  &mdash; and is there anything
+gets in the way or &mdash; and is there anything
 more elegant than just scroll one pixel when
 
 414
 00:46:13,180 --> 00:46:17,590
 your app starts up?
->>Boris Smus: Um, yeah. So  &mdash; right, as you
+>>Boris Smus: Um, yeah. So &mdash; right, as you
 
 415
 00:46:17,590 --> 00:46:23,570
@@ -2131,7 +2131,7 @@ yeah, I agree, it's totally a hack.
 
 427
 00:47:26,540 --> 00:47:30,640
-Fullscreen.js  &mdash;
+Fullscreen.js &mdash;
 >>Boris Smus: Thanks. Yes?
 
 428
@@ -2151,7 +2151,7 @@ on Ice Cream Sandwich is actually quite good.
 
 431
 00:47:44,630 --> 00:47:51,630
-And there's a lot of  &mdash; there are many features
+And there's a lot of &mdash; there are many features
 that are supported on it that I discussed
 
 432
@@ -2162,7 +2162,7 @@ maybe. Anyway the inertial scrolling certainly
 433
 00:47:59,900 --> 00:48:03,160
 is.
-So  &mdash; yeah. Thanks.
+So &mdash; yeah. Thanks.
 
 434
 00:48:03,160 --> 00:48:10,160
@@ -2211,7 +2211,7 @@ you don't have control over the fixed viewport.
 
 443
 00:48:47,030 --> 00:48:51,990
-Because it  &mdash; it actually varies quite a bit
+Because it &mdash; it actually varies quite a bit
 in its behavior depending on the browser.
 
 444

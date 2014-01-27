@@ -101,7 +101,7 @@ chrome.browserAction.onClicked is an event
 21
 00:01:30,350 --> 00:01:35,250
 which can register listeners who act on something
-interesting that happens  &mdash; in this case,
+interesting that happens &mdash; in this case,
 
 22
 00:01:35,250 --> 00:01:39,910
@@ -120,7 +120,7 @@ This is an example of a synchronous function
 
 25
 00:01:49,810 --> 00:01:55,000
-call  &mdash; meaning that it does it's thing immediately
+call &mdash; meaning that it does it's thing immediately
 and returns a value to the calling code.
 
 26
@@ -146,7 +146,7 @@ one of the user’s bookmarks by modifying
 30
 00:02:12,109 --> 00:02:15,310
 its title.
-This call is asynchronous  &mdash; meaning that
+This call is asynchronous &mdash; meaning that
 
 31
 00:02:15,310 --> 00:02:19,019
@@ -155,7 +155,7 @@ executing and the function you provide as
 
 32
 00:02:19,019 --> 00:02:23,519
-a callback will be run sometime later  &mdash; and
+a callback will be run sometime later &mdash; and
 which point your code will know that the bookmark
 
 33

@@ -2317,7 +2317,7 @@ show the user no video at all
 495
 00:24:29,620 --> 00:24:32,700
 instead of a pixeled
-100 to 200 [?  ?]
+100 to 200 [? ?]
 
 496
 00:24:32,700 --> 00:24:35,390

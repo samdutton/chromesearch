@@ -115,7 +115,7 @@ application can just push a changelog up to
 
 24
 00:02:01,450 --> 00:02:05,640
-the server for processing  &mdash; without impacting
+the server for processing &mdash; without impacting
 performance.
 
 25
