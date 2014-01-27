@@ -13,7 +13,7 @@ to Mobile Web Thursdays.
 4
 00:00:17,920 --> 00:00:19,680
 With me in the studio
-today is--
+today is &mdash;
 
 5
 00:00:19,680 --> 00:00:20,660
@@ -141,7 +141,7 @@ bit creepy.
 32
 00:01:09,960 --> 00:01:11,550
 JAKE ARCHIBALD: People say
-that to me in real life--
+that to me in real life &mdash;
 
 33
 00:01:11,550 --> 00:01:12,610
@@ -699,7 +699,7 @@ HTML parsing.
 152
 00:05:27,320 --> 00:05:30,790
 This is little chunks of
-text being sent to--
+text being sent to &mdash;
 
 153
 00:05:30,790 --> 00:05:31,870
@@ -867,7 +867,7 @@ here, as well.
 
 188
 00:06:48,280 --> 00:06:51,300
-So if I get rid of those--
+So if I get rid of those &mdash;
 
 189
 00:06:51,300 --> 00:06:53,490
@@ -1150,7 +1150,7 @@ It's not a big deal.
 249
 00:09:15,950 --> 00:09:18,130
 When we've got the frames per
-second monitor here-- what I'm
+second monitor here &mdash; what I'm
 
 250
 00:09:18,130 --> 00:09:23,170
@@ -1310,7 +1310,7 @@ it up a bit.
 
 284
 00:10:46,710 --> 00:10:48,990
-So we're still--
+So we're still &mdash;
 
 285
 00:10:48,990 --> 00:10:51,110
@@ -1338,14 +1338,14 @@ in the document yet.
 290
 00:10:58,940 --> 00:11:00,190
 So I'm going to do
-document.appendChild--
+document.appendChild &mdash;
 
 291
 00:11:00,190 --> 00:11:04,122
 
 292
 00:11:04,122 --> 00:11:05,380
-am I spelling that right?--
+am I spelling that right? &mdash;
 
 293
 00:11:05,380 --> 00:11:07,760
@@ -1653,7 +1653,7 @@ around a little bit.
 
 360
 00:13:34,940 --> 00:13:37,360
-We're going to do a--
+We're going to do a &mdash;
 
 361
 00:13:37,360 --> 00:13:38,235
@@ -1759,7 +1759,7 @@ I'm Addy Osmani.
 
 383
 00:14:12,340 --> 00:14:13,540
-And with me in the studio is--
+And with me in the studio is &mdash;
 
 384
 00:14:13,540 --> 00:14:14,470
@@ -1844,7 +1844,7 @@ to the iPad right now.
 401
 00:14:49,520 --> 00:14:51,880
 And I currently have
-the site called--
+the site called &mdash;
 
 402
 00:14:51,880 --> 00:14:55,060
@@ -2099,7 +2099,7 @@ once again, very quickly.
 
 456
 00:16:45,380 --> 00:16:48,270
-And now what you can see-- you
+And now what you can see &mdash; you
 probably saw it as a flash.
 
 457
@@ -2367,7 +2367,7 @@ is using a WebView.
 513
 00:18:50,760 --> 00:18:52,590
 JAKE ARCHIBALD: Does that
-mean it's going to be--
+mean it's going to be &mdash;
 
 514
 00:18:52,590 --> 00:18:56,450
@@ -2663,11 +2663,11 @@ splitter more to the left.
 576
 00:21:09,550 --> 00:21:12,430
 And what you can see as I do
-that is that the layout-- this
+that is that the layout &mdash; this
 
 577
 00:21:12,430 --> 00:21:14,110
-is "The Boston Globe"--
+is "The Boston Globe" &mdash;
 
 578
 00:21:14,110 --> 00:21:16,880
@@ -2729,7 +2729,7 @@ not a problem here
 
 591
 00:21:33,322 --> 00:21:33,410
-where you can go--
+where you can go &mdash;
 
 592
 00:21:33,410 --> 00:21:34,380
@@ -2743,12 +2743,12 @@ as I want.
 
 594
 00:21:36,230 --> 00:21:39,030
-I highly doubt-- at least now
+I highly doubt &mdash; at least now
 until people get watches that
 
 595
 00:21:39,030 --> 00:21:40,890
-are running WebKit on them--
+are running WebKit on them &mdash;
 
 596
 00:21:40,890 --> 00:21:41,900
@@ -2874,7 +2874,7 @@ those devices.
 
 622
 00:22:40,830 --> 00:22:42,220
-So what you'll see--
+So what you'll see &mdash;
 
 623
 00:22:42,220 --> 00:22:44,920
@@ -3793,7 +3793,7 @@ Listener Breakpoints in the
 
 819
 00:30:04,750 --> 00:30:07,140
-sidebar-- let me expand
+sidebar &mdash; let me expand
 that a little bit.
 
 820
@@ -4308,7 +4308,7 @@ from home when
 
 929
 00:34:23,862 --> 00:34:24,719
-it's snowing outside--
+it's snowing outside &mdash;
 
 930
 00:34:24,719 --> 00:34:26,060
@@ -4533,7 +4533,7 @@ colossal failure, if anything.
 
 977
 00:36:05,780 --> 00:36:07,030
-We can call it--
+We can call it &mdash;
 
 978
 00:36:07,030 --> 00:36:09,630

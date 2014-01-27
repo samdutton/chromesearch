@@ -27,7 +27,7 @@ is this special?
 
 7
 00:00:23,200 --> 00:00:23,530
-I mean--
+I mean &mdash;
 
 8
 00:00:23,530 --> 00:00:24,290
@@ -45,7 +45,7 @@ PAUL KINLAN: It is, right.
 
 11
 00:00:27,040 --> 00:00:28,570
-So I'm from London--
+So I'm from London &mdash;
 
 12
 00:00:28,570 --> 00:00:29,450
@@ -111,7 +111,7 @@ as mainly a server-based
 25
 00:00:53,600 --> 00:00:58,576
 infrastructure, like a web
-server, SMTP servers, FTP--
+server, SMTP servers, FTP &mdash;
 
 26
 00:00:58,576 --> 00:00:59,275
@@ -183,7 +183,7 @@ tick happens, maybe there's
 
 41
 00:01:33,165 --> 00:01:34,080
-some data ready for you--
+some data ready for you &mdash;
 
 42
 00:01:34,080 --> 00:01:36,550
@@ -289,7 +289,7 @@ work, and this is a kind of
 63
 00:02:23,820 --> 00:02:25,960
 key thing for Chrome OS, at
-least-- if you're doing
+least &mdash; if you're doing
 
 64
 00:02:25,960 --> 00:02:30,350
@@ -384,7 +384,7 @@ bits to this, right?
 
 84
 00:03:05,440 --> 00:03:07,450
-There's-- we're getting
+There's &mdash; we're getting
 developers to build web
 
 85
@@ -423,7 +423,7 @@ package manager has got a huge
 92
 00:03:24,580 --> 00:03:25,900
 ecosystem of libraries
-out there--
+out there &mdash;
 
 93
 00:03:25,900 --> 00:03:28,480
@@ -441,7 +441,7 @@ all these types of things.
 
 96
 00:03:34,510 --> 00:03:38,460
-That connect and express--
+That connect and express &mdash;
 
 97
 00:03:38,460 --> 00:03:41,680
@@ -525,7 +525,7 @@ PAUL KINLAN: Yeah, exactly.
 114
 00:04:14,080 --> 00:04:16,930
 So what we're trying
-to do is say that--
+to do is say that &mdash;
 
 115
 00:04:16,930 --> 00:04:19,420
@@ -597,7 +597,7 @@ OK, Chrome OS is one use case.
 129
 00:04:51,550 --> 00:04:54,350
 You bring that to Mac,
-Windows, and Linux--
+Windows, and Linux &mdash;
 
 130
 00:04:54,350 --> 00:04:56,590
@@ -626,7 +626,7 @@ another compelling use case
 135
 00:05:06,860 --> 00:05:10,330
 for using the NodeJS libraries
-on the browser--
+on the browser &mdash;
 
 136
 00:05:10,330 --> 00:05:11,360
@@ -678,12 +678,12 @@ still will be.
 146
 00:05:40,250 --> 00:05:44,060
 So the interesting thing is that
-you can build this IDE --
+you can build this IDE  &mdash;
 
 147
 00:05:44,060 --> 00:05:45,620
 I'm not saying you're mother's
-going to use an IDE-- is your
+going to use an IDE &mdash; is your
 
 148
 00:05:45,620 --> 00:05:46,735
@@ -841,7 +841,7 @@ called Markdown.
 
 182
 00:06:41,110 --> 00:06:42,480
-So for any of you guys--
+So for any of you guys &mdash;
 
 183
 00:06:42,480 --> 00:06:43,480
@@ -871,7 +871,7 @@ Markdown editor, I basically
 
 189
 00:07:02,650 --> 00:07:03,900
-built a Markdown application--
+built a Markdown application &mdash;
 
 190
 00:07:03,900 --> 00:07:06,270
@@ -982,7 +982,7 @@ So testing, hello world.
 
 213
 00:07:59,800 --> 00:08:00,950
-It's just a simple--
+It's just a simple &mdash;
 
 214
 00:08:00,950 --> 00:08:01,810
@@ -991,7 +991,7 @@ and I can't spell.
 215
 00:08:01,810 --> 00:08:04,100
 I can't type either, which
-is kind of cool--
+is kind of cool &mdash;
 
 216
 00:08:04,100 --> 00:08:05,310
@@ -1014,7 +1014,7 @@ save this to my desktop.
 
 220
 00:08:11,980 --> 00:08:12,500
-So testing GDL--
+So testing GDL &mdash;
 
 221
 00:08:12,500 --> 00:08:14,880
@@ -1069,7 +1069,7 @@ little bit of a fib.
 232
 00:08:34,409 --> 00:08:36,490
 The thing is that we're trying
-to say, it's two lines--
+to say, it's two lines &mdash;
 
 233
 00:08:36,490 --> 00:08:37,900
@@ -1269,7 +1269,7 @@ we're going to put all of our
 275
 00:10:17,400 --> 00:10:20,590
 logic for our Markdown editor,
-which is this-- literally,
+which is this &mdash; literally,
 
 276
 00:10:20,590 --> 00:10:22,510
@@ -1297,7 +1297,7 @@ window onload event.
 281
 00:10:30,640 --> 00:10:31,780
 I don't want to do add
-event listener--
+event listener &mdash;
 
 282
 00:10:31,780 --> 00:10:35,540
@@ -1310,7 +1310,7 @@ But let's have a look.
 
 284
 00:10:36,580 --> 00:10:40,420
-So md element = document--
+So md element = document &mdash;
 
 285
 00:10:40,420 --> 00:10:42,336
@@ -1338,7 +1338,7 @@ HTML = document.
 
 291
 00:11:04,130 --> 00:11:06,170
-I really can't type today--
+I really can't type today &mdash;
 
 292
 00:11:06,170 --> 00:11:07,390
@@ -1398,7 +1398,7 @@ will actually pull in Markdown
 304
 00:11:29,120 --> 00:11:30,610
 that we've actually
-pulled into our--
+pulled into our &mdash;
 
 305
 00:11:30,610 --> 00:11:31,600
@@ -1512,7 +1512,7 @@ area, passing it through the
 
 329
 00:12:29,720 --> 00:12:30,770
-markdown system, and--
+markdown system, and &mdash;
 
 330
 00:12:30,770 --> 00:12:34,410
@@ -1539,7 +1539,7 @@ probably shouldn't do as
 
 335
 00:12:43,850 --> 00:12:50,120
-well-- innerHTML = output,
+well &mdash; innerHTML = output,
 and that's it.
 
 336
@@ -1645,7 +1645,7 @@ that type of stuff.
 358
 00:13:32,970 --> 00:13:36,540
 And if we can disable those
-things, and eval, and--
+things, and eval, and &mdash;
 
 359
 00:13:36,540 --> 00:13:39,870
@@ -1782,11 +1782,11 @@ we have this directory
 
 387
 00:14:56,860 --> 00:14:59,310
-called node modules--
+called node modules &mdash;
 
 388
 00:14:59,310 --> 00:15:00,560
-Oopsie daisy, sorry--
+Oopsie daisy, sorry &mdash;
 
 389
 00:15:00,560 --> 00:15:04,120
@@ -1845,7 +1845,7 @@ packaged apps.
 
 401
 00:15:27,480 --> 00:15:28,740
-This is just a very--
+This is just a very &mdash;
 
 402
 00:15:28,740 --> 00:15:30,690
@@ -2066,7 +2066,7 @@ any questions from--?
 448
 00:17:41,700 --> 00:17:43,670
 RENATO MANGINI: We
-have some, but--
+have some, but &mdash;
 
 449
 00:17:43,670 --> 00:17:45,290
@@ -2315,7 +2315,7 @@ the "node runtime," quoted.
 
 501
 00:20:00,250 --> 00:20:05,070
-So does the bundle js--
+So does the bundle js &mdash;
 
 502
 00:20:05,070 --> 00:20:09,950
@@ -2333,7 +2333,7 @@ of the limitations
 
 505
 00:20:12,530 --> 00:20:14,430
-it has at the moment--
+it has at the moment &mdash;
 
 506
 00:20:14,430 --> 00:20:17,910
@@ -2404,7 +2404,7 @@ can do TCP and UDP.
 520
 00:20:52,595 --> 00:20:54,840
 What else can we do,
-USB, Bluetooth--
+USB, Bluetooth &mdash;
 
 521
 00:20:54,840 --> 00:20:58,320
@@ -2414,7 +2414,7 @@ on some platforms.
 522
 00:20:58,320 --> 00:21:03,360
 We have Windows access, we have
-a different file system--
+a different file system &mdash;
 
 523
 00:21:03,360 --> 00:21:05,240
@@ -2514,7 +2514,7 @@ just doing a demo.
 
 543
 00:21:52,180 --> 00:21:53,430
-So news.ycombinator.org--
+So news.ycombinator.org &mdash;
 
 544
 00:21:53,430 --> 00:21:55,866
@@ -2559,12 +2559,12 @@ using the module.
 
 553
 00:22:21,660 --> 00:22:22,130
-In this case--
+In this case &mdash;
 
 554
 00:22:22,130 --> 00:22:24,270
 RENATO MANGINI: So it
-does a raw TCP--
+does a raw TCP &mdash;
 
 555
 00:22:24,270 --> 00:22:27,420
@@ -2712,7 +2712,7 @@ here, if we just zoom in
 
 586
 00:23:37,930 --> 00:23:42,000
-a bit more-- oh, I won't
+a bit more &mdash; oh, I won't
 zoom in that much.
 
 587
@@ -2796,7 +2796,7 @@ So [? let's edit ?]
 604
 00:24:21,200 --> 00:24:25,030
 vsplit, I can't spell vsplit
-at all today--
+at all today &mdash;
 
 605
 00:24:25,030 --> 00:24:27,120
@@ -3042,7 +3042,7 @@ YouTube commenters telling
 659
 00:26:51,580 --> 00:26:54,000
 that you will misspelled
-require--
+require &mdash;
 
 660
 00:26:54,000 --> 00:26:55,650
@@ -3178,7 +3178,7 @@ we've created a connection to
 688
 00:28:14,530 --> 00:28:19,060
 the URL that we specified
-in the text box--
+in the text box &mdash;
 
 689
 00:28:19,060 --> 00:28:21,400
@@ -3225,7 +3225,7 @@ is very common for node
 698
 00:28:38,370 --> 00:28:40,640
 developers they would look
-at the code and--
+at the code and &mdash;
 
 699
 00:28:40,640 --> 00:28:42,220
@@ -3317,7 +3317,7 @@ Data, oh wow.
 
 719
 00:29:22,810 --> 00:29:24,990
-Data--
+Data &mdash;
 
 720
 00:29:24,990 --> 00:29:27,850
@@ -3353,7 +3353,7 @@ doing with the response from
 727
 00:29:44,970 --> 00:29:47,390
 the server is just
-setting it on--
+setting it on &mdash;
 
 728
 00:29:47,390 --> 00:29:50,030
@@ -3432,12 +3432,12 @@ But let's have a look.
 
 745
 00:30:37,720 --> 00:30:40,720
-Let's see if we can load--
+Let's see if we can load &mdash;
 what am I doing?
 
 746
 00:30:40,720 --> 00:30:41,950
-I apologize--
+I apologize &mdash;
 
 747
 00:30:41,950 --> 00:30:44,530
@@ -3569,7 +3569,7 @@ and output bundle.js.
 
 777
 00:32:18,820 --> 00:32:19,920
-So if we look at bundle--
+So if we look at bundle &mdash;
 
 778
 00:32:19,920 --> 00:32:25,110
@@ -3593,7 +3593,7 @@ that you specified, and
 782
 00:32:35,580 --> 00:32:38,160
 generated the bundle
-without this--
+without this &mdash;
 
 783
 00:32:38,160 --> 00:32:41,910
@@ -3621,7 +3621,7 @@ core functionality that's
 
 788
 00:32:52,170 --> 00:32:53,510
-needed via--
+needed via &mdash;
 
 789
 00:32:53,510 --> 00:32:56,120
@@ -3639,7 +3639,7 @@ another module,
 
 792
 00:33:00,440 --> 00:33:01,610
-it does look for--
+it does look for &mdash;
 
 793
 00:33:01,610 --> 00:33:04,060
@@ -3713,7 +3713,7 @@ for it to go off and
 807
 00:33:42,800 --> 00:33:46,140
 go, well I know all the
-node modules I need--
+node modules I need &mdash;
 
 808
 00:33:46,140 --> 00:33:51,325
@@ -3728,7 +3728,7 @@ do in MPM install net, the
 810
 00:33:56,122 --> 00:33:57,560
 TCP module would
-also install--
+also install &mdash;
 
 811
 00:33:57,560 --> 00:34:01,070
@@ -3768,7 +3768,7 @@ see if I fixed this.
 
 819
 00:34:20,889 --> 00:34:22,139
-News.ycominator.org--
+News.ycominator.org &mdash;
 
 820
 00:34:22,139 --> 00:34:24,809
@@ -4004,7 +4004,7 @@ Express or any of the node
 870
 00:36:08,940 --> 00:36:11,660
 middleware modules for building
-web servers--
+web servers &mdash;
 
 871
 00:36:11,660 --> 00:36:13,320
@@ -4097,7 +4097,7 @@ for developers that have a
 889
 00:36:57,200 --> 00:37:01,970
 user base much bigger
-than the--
+than the &mdash;
 
 890
 00:37:01,970 --> 00:37:03,570
@@ -4160,7 +4160,7 @@ really cool.
 902
 00:37:25,720 --> 00:37:28,240
 We are running out of time,
-maybe we can jump--
+maybe we can jump &mdash;
 
 903
 00:37:28,240 --> 00:37:30,940
@@ -4308,7 +4308,7 @@ PAUL KINLAN: It fits in.
 933
 00:38:47,590 --> 00:38:49,660
 RENATO MANGINI: The
-next question--
+next question &mdash;
 
 934
 00:38:49,660 --> 00:38:54,270
@@ -4478,7 +4478,7 @@ automatically from another web
 
 969
 00:40:21,770 --> 00:40:24,000
-page, like inject--
+page, like inject &mdash;
 
 970
 00:40:24,000 --> 00:40:27,120
@@ -4502,7 +4502,7 @@ build is this available in?
 974
 00:40:36,570 --> 00:40:38,840
 PAUL KINLAN: Yeah, so this
-should work in--
+should work in &mdash;
 
 975
 00:40:38,840 --> 00:40:40,530
@@ -4512,7 +4512,7 @@ beta aren't we?
 976
 00:40:40,530 --> 00:40:43,420
 We're in beta for the beta
-channel at least--
+channel at least &mdash;
 
 977
 00:40:43,420 --> 00:40:44,350
@@ -4577,7 +4577,7 @@ Dev Channel for now.
 
 990
 00:41:12,790 --> 00:41:14,160
-Work with Browserify as well--
+Work with Browserify as well &mdash;
 
 991
 00:41:14,160 --> 00:41:16,000
@@ -4676,7 +4676,7 @@ want to explain this?
 1011
 00:41:49,270 --> 00:41:53,040
 PAUL KINLAN: Yeah, webkit
-app region--
+app region &mdash;
 
 1012
 00:41:53,040 --> 00:41:57,870
@@ -5028,7 +5028,7 @@ include robots, should
 
 1085
 00:45:04,770 --> 00:45:05,620
-be the sexiest--
+be the sexiest &mdash;
 
 1086
 00:45:05,620 --> 00:45:07,150
@@ -5058,7 +5058,7 @@ to access a Mindstorm
 1091
 00:45:19,970 --> 00:45:21,840
 before in Chrome, and
-we've also written--
+we've also written &mdash;
 
 1092
 00:45:21,840 --> 00:45:23,110
@@ -5094,7 +5094,7 @@ applications that are
 
 1099
 00:45:30,930 --> 00:45:32,270
-written for node should work--
+written for node should work &mdash;
 
 1100
 00:45:32,270 --> 00:45:35,770

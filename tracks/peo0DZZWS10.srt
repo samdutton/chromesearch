@@ -289,7 +289,7 @@ MATTIAS EKENDAHL: Kalimba.
 
 64
 00:02:43,850 --> 00:02:45,690
-PAUL KINLAN: Yes, kalim--
+PAUL KINLAN: Yes, kalim &mdash;
 there's like all these
 
 65
@@ -391,7 +391,7 @@ going to tell you.
 
 87
 00:03:25,710 --> 00:03:26,970
-No, it was--
+No, it was &mdash;
 
 88
 00:03:26,970 --> 00:03:27,470
@@ -633,7 +633,7 @@ PAUL KINLAN: Yeah.
 
 140
 00:05:11,830 --> 00:05:14,210
-I mean, that was actually-- when
+I mean, that was actually &mdash; when
 I took the kids to the
 
 141
@@ -671,7 +671,7 @@ So let's join the queue.
 
 149
 00:05:28,270 --> 00:05:31,210
-And then it should-- it says
+And then it should &mdash; it says
 less than a minute, so we'll
 
 150
@@ -705,7 +705,7 @@ is like all the
 
 157
 00:05:40,950 --> 00:05:44,040
-experiments-- seamless
+experiments &mdash; seamless
 navigation between the views.
 
 158
@@ -871,7 +871,7 @@ up to eight different
 
 193
 00:06:59,860 --> 00:07:01,740
-participants, and they're all--
+participants, and they're all &mdash;
 they all need to be
 
 194
@@ -900,7 +900,7 @@ was YouTube live.
 199
 00:07:15,130 --> 00:07:17,200
 Is this a YouTube live
-video, or is this--
+video, or is this &mdash;
 
 200
 00:07:17,200 --> 00:07:17,500
@@ -998,7 +998,7 @@ in and all that type of stuff.
 221
 00:07:55,726 --> 00:07:57,560
 It feels kind of nice, the
-way that this is--
+way that this is &mdash;
 
 222
 00:07:57,560 --> 00:08:00,200
@@ -1033,7 +1033,7 @@ to sound silly, right?
 
 229
 00:08:11,140 --> 00:08:13,230
-What is the--
+What is the &mdash;
 
 230
 00:08:13,230 --> 00:08:14,130
@@ -1195,7 +1195,7 @@ is going to happen.
 
 265
 00:09:44,990 --> 00:09:46,020
-We just--
+We just &mdash;
 
 266
 00:09:46,020 --> 00:09:46,692
@@ -1244,7 +1244,7 @@ or something?
 276
 00:10:00,940 --> 00:10:01,860
 MATTIAS EKENDAHL: Yes,
-so we have--
+so we have &mdash;
 
 277
 00:10:01,860 --> 00:10:02,500
@@ -1562,7 +1562,7 @@ in the museum.
 344
 00:12:49,130 --> 00:12:50,400
 PAUL KINLAN: Cool, So
-how would you play--
+how would you play &mdash;
 
 345
 00:12:50,400 --> 00:12:52,246
@@ -1576,11 +1576,11 @@ a few people playing now.
 
 347
 00:12:54,200 --> 00:12:55,400
-So let's play the--
+So let's play the &mdash;
 
 348
 00:12:55,400 --> 00:12:56,390
-the--
+the &mdash;
 
 349
 00:12:56,390 --> 00:12:57,030
@@ -1612,7 +1612,7 @@ It's nice.
 
 356
 00:13:06,610 --> 00:13:09,390
-So yeah, I mean--
+So yeah, I mean &mdash;
 
 357
 00:13:09,390 --> 00:13:11,330
@@ -1721,7 +1721,7 @@ think we need an amazing
 
 380
 00:14:05,550 --> 00:14:06,400
-amount of --
+amount of  &mdash;
 
 381
 00:14:06,400 --> 00:14:09,130
@@ -1832,7 +1832,7 @@ an audio file.
 404
 00:14:57,430 --> 00:14:58,600
 PAUL KINLAN: Oh, so it's
-not generating--
+not generating &mdash;
 
 405
 00:14:58,600 --> 00:14:59,540
@@ -2270,7 +2270,7 @@ it, it kind of releases
 501
 00:18:02,270 --> 00:18:05,120
 directly, and it's been
-traveling all the way to--
+traveling all the way to &mdash;
 
 502
 00:18:05,120 --> 00:18:08,544
@@ -2300,7 +2300,7 @@ pretty exciting.
 
 508
 00:18:12,380 --> 00:18:14,050
-PAUL KINLAN: I kind of--
+PAUL KINLAN: I kind of &mdash;
 
 509
 00:18:14,050 --> 00:18:17,120
@@ -2309,7 +2309,7 @@ at the level of
 
 510
 00:18:17,120 --> 00:18:18,940
-awesomeness that this--
+awesomeness that this &mdash;
 
 511
 00:18:18,940 --> 00:18:19,880
@@ -2361,7 +2361,7 @@ around a little bit, and
 521
 00:18:41,300 --> 00:18:43,090
 the whole thing was
-just a nice--
+just a nice &mdash;
 
 522
 00:18:43,090 --> 00:18:45,356
@@ -2481,7 +2481,7 @@ article on HTML5 Rocks.
 
 548
 00:19:30,080 --> 00:19:32,210
-If not--
+If not &mdash;
 
 549
 00:19:32,210 --> 00:19:32,892
@@ -2489,7 +2489,7 @@ If not--
 
 550
 00:19:32,892 --> 00:19:34,660
-PAUL KINLAN: See, this is--
+PAUL KINLAN: See, this is &mdash;
 
 551
 00:19:34,660 --> 00:19:36,710
@@ -2502,7 +2502,7 @@ technical deep dive.
 
 553
 00:19:37,530 --> 00:19:38,800
-This is obviously--
+This is obviously &mdash;
 
 554
 00:19:38,800 --> 00:19:41,230

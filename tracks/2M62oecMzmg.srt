@@ -672,7 +672,7 @@ do as a developer is load up
 
 144
 00:06:17,550 --> 00:06:18,930
-Chrome-- so start Chrome--
+Chrome &mdash; so start Chrome &mdash;
 
 145
 00:06:18,930 --> 00:06:23,620
@@ -681,7 +681,7 @@ tab in your Chrome settings.
 
 146
 00:06:23,620 --> 00:06:24,180
-So down here--
+So down here &mdash;
 
 147
 00:06:24,180 --> 00:06:28,510
@@ -1006,7 +1006,7 @@ character file extensions.
 214
 00:09:09,460 --> 00:09:12,640
 So that when the user wants
-to open a file--
+to open a file &mdash;
 
 215
 00:09:12,640 --> 00:09:14,220
@@ -1015,7 +1015,7 @@ on it, or
 
 216
 00:09:14,220 --> 00:09:15,500
-right-clicking, whatever--
+right-clicking, whatever &mdash;
 
 217
 00:09:15,500 --> 00:09:18,170

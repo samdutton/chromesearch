@@ -463,7 +463,7 @@ GCC and your G compiler.
 
 102
 00:03:31,370 --> 00:03:34,930
-So to use these-- if anyone
+So to use these &mdash; if anyone
 here is a Linux developer,
 
 103
@@ -550,11 +550,11 @@ things like that.
 120
 00:04:14,580 --> 00:04:16,670
 In addition, this compliance
-standard-- and this is the
+standard &mdash; and this is the
 
 121
 00:04:16,670 --> 00:04:17,630
-important one--
+important one &mdash;
 
 122
 00:04:17,630 --> 00:04:20,720
@@ -597,11 +597,11 @@ POSIX-style calls.
 130
 00:04:36,300 --> 00:04:39,620
 The GCC and G compilers also
-do the amazing thing-- and
+do the amazing thing &mdash; and
 
 131
 00:04:39,620 --> 00:04:41,350
-this is sort of the linchpin--
+this is sort of the linchpin &mdash;
 
 132
 00:04:41,350 --> 00:04:43,700
@@ -661,7 +661,7 @@ execute, in multiple places.
 
 144
 00:05:08,690 --> 00:05:11,450
-And so once you get this code--
+And so once you get this code &mdash;
 and you're saying, OK,
 
 145
@@ -671,7 +671,7 @@ this is cool.
 146
 00:05:12,080 --> 00:05:13,790
 I have the ability to
-execute this code--
+execute this code &mdash;
 
 147
 00:05:13,790 --> 00:05:16,000
@@ -1228,7 +1228,7 @@ How do you beat this?
 
 264
 00:09:41,750 --> 00:09:42,870
-How do you say--
+How do you say &mdash;
 
 265
 00:09:42,870 --> 00:09:43,840
@@ -1327,7 +1327,7 @@ effectively going to run the
 
 285
 00:10:26,190 --> 00:10:28,500
-main loop, while true--
+main loop, while true &mdash;
 
 286
 00:10:28,500 --> 00:10:32,300
@@ -1882,7 +1882,7 @@ common paradigm for
 
 401
 00:14:45,390 --> 00:14:46,430
-next generation consoles--
+next generation consoles &mdash;
 
 402
 00:14:46,430 --> 00:14:48,240
@@ -2362,7 +2362,7 @@ because they think it's done.
 504
 00:18:19,290 --> 00:18:20,340
 And now, all of a sudden,
-you have--
+you have &mdash;
 
 505
 00:18:20,340 --> 00:18:21,910
@@ -2489,7 +2489,7 @@ intended position.
 
 531
 00:19:17,880 --> 00:19:21,050
-And this means-- what occurs
+And this means &mdash; what occurs
 here is that if the chance
 
 532
@@ -4304,7 +4304,7 @@ little bar at the bottom of
 916
 00:33:43,840 --> 00:33:45,810
 your window that has a number
-of options here--
+of options here &mdash;
 
 917
 00:33:45,810 --> 00:33:48,090

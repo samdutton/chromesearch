@@ -268,7 +268,7 @@ It's really bad.
 
 61
 00:02:38,410 --> 00:02:42,740
-It is-- so Paul mentioned
+It is &mdash; so Paul mentioned
 parallax sites before.
 
 62
@@ -578,12 +578,12 @@ But we can make this better.
 
 130
 00:05:14,350 --> 00:05:17,210
-So I'm going to--
+So I'm going to &mdash;
 
 131
 00:05:17,210 --> 00:05:19,780
 so the best way to do this
-is-- you can see it's a
+is &mdash; you can see it's a
 
 132
 00:05:19,780 --> 00:05:21,110
@@ -655,7 +655,7 @@ right here so I'm
 
 147
 00:05:49,420 --> 00:05:52,194
-just going to back space--
+just going to back space &mdash;
 oh, come on.
 
 148
@@ -825,7 +825,7 @@ beneath it.
 
 184
 00:07:30,300 --> 00:07:32,980
-But that is--
+But that is &mdash;
 
 185
 00:07:32,980 --> 00:07:35,100
@@ -928,7 +928,7 @@ border around the top.
 
 208
 00:08:22,800 --> 00:08:24,980
-And let's see if I can--
+And let's see if I can &mdash;
 
 209
 00:08:24,980 --> 00:08:27,675
@@ -951,7 +951,7 @@ put it back on.
 
 213
 00:08:33,559 --> 00:08:35,880
-And if I scroll up here--
+And if I scroll up here &mdash;
 oh, cool, yeah.
 
 214
@@ -973,11 +973,11 @@ And actually, let's fix this.
 
 218
 00:08:46,410 --> 00:08:48,510
-So the movement is here--
+So the movement is here &mdash;
 
 219
 00:08:48,510 --> 00:08:52,400
-top-- we just move the top.
+top &mdash; we just move the top.
 
 220
 00:08:52,400 --> 00:08:55,640
@@ -1016,7 +1016,7 @@ All right.
 
 228
 00:09:04,980 --> 00:09:07,750
-So WebKit and--
+So WebKit and &mdash;
 
 229
 00:09:07,750 --> 00:09:11,290
@@ -1063,7 +1063,7 @@ Hmmm.
 
 239
 00:09:33,660 --> 00:09:36,810
-Let's see if-- ah, yes.
+Let's see if &mdash; ah, yes.
 
 240
 00:09:36,810 --> 00:09:39,960
@@ -1071,7 +1071,7 @@ Is that right?
 
 241
 00:09:39,960 --> 00:09:42,822
-You know--
+You know &mdash;
 
 242
 00:09:42,822 --> 00:09:45,130
@@ -1079,7 +1079,7 @@ ahh, oooh, ahh.
 
 243
 00:09:45,130 --> 00:09:45,790
-And it feels--
+And it feels &mdash;
 
 244
 00:09:45,790 --> 00:09:47,390
@@ -1326,7 +1326,7 @@ way to look at layout.
 298
 00:11:25,900 --> 00:11:32,880
 So I'll open up this little
-demo right here and--
+demo right here and &mdash;
 
 299
 00:11:32,880 --> 00:11:34,580
@@ -1500,7 +1500,7 @@ might like it on the right.
 336
 00:13:12,780 --> 00:13:17,780
 You can just take the bar here
-and drag it up to the--
+and drag it up to the &mdash;
 
 337
 00:13:17,780 --> 00:13:20,860
@@ -1529,7 +1529,7 @@ OK.
 343
 00:13:31,000 --> 00:13:38,440
 You might have noticed inside of
-Chrome Canary that I have--
+Chrome Canary that I have &mdash;
 
 344
 00:13:38,440 --> 00:13:39,730
@@ -1633,11 +1633,11 @@ toggle the box shadows.
 366
 00:14:33,210 --> 00:14:36,045
 So I turn on box shadows and you
-can see pretty quickly--
+can see pretty quickly &mdash;
 
 367
 00:14:36,045 --> 00:14:38,160
-sorry about that--
+sorry about that &mdash;
 
 368
 00:14:38,160 --> 00:14:40,960
@@ -1841,7 +1841,7 @@ being spent inside JavaScript.
 410
 00:16:29,820 --> 00:16:34,370
 I should point out that that
-Canadian expo site--
+Canadian expo site &mdash;
 
 411
 00:16:34,370 --> 00:16:35,810
@@ -1884,7 +1884,7 @@ really quickly.
 
 419
 00:16:51,240 --> 00:16:53,790
-Who has seen the flame--
+Who has seen the flame &mdash;
 who has seen or
 
 420
@@ -1920,7 +1920,7 @@ render these things.
 427
 00:17:07,369 --> 00:17:10,099
 So I'm going to turn off these,
-come down here-- and so
+come down here &mdash; and so
 
 428
 00:17:10,099 --> 00:17:13,650
@@ -2173,7 +2173,7 @@ position elements,
 
 482
 00:19:33,630 --> 00:19:35,080
-but you kind of--
+but you kind of &mdash;
 
 483
 00:19:35,080 --> 00:19:36,920
@@ -2226,8 +2226,8 @@ of CSS, the selector up
 
 493
 00:20:05,470 --> 00:20:07,900
-there-- that does have to get
-matched up to a DOM element--
+there &mdash; that does have to get
+matched up to a DOM element &mdash;
 
 494
 00:20:07,900 --> 00:20:11,320
@@ -2289,7 +2289,7 @@ box inside Continuous Paint
 
 506
 00:20:40,680 --> 00:20:43,270
-mode, not much, really--
+mode, not much, really &mdash;
 
 507
 00:20:43,270 --> 00:20:45,510
@@ -2322,12 +2322,12 @@ So this happens here.
 
 513
 00:21:00,320 --> 00:21:01,800
-They do not need to--
+They do not need to &mdash;
 
 514
 00:21:01,800 --> 00:21:03,680
 if you're touching transform
-and opacity--
+and opacity &mdash;
 
 515
 00:21:03,680 --> 00:21:06,330
@@ -2369,7 +2369,7 @@ the same place.
 
 523
 00:21:29,680 --> 00:21:31,170
-But a lot of things--
+But a lot of things &mdash;
 
 524
 00:21:31,170 --> 00:21:33,390
@@ -2396,7 +2396,7 @@ These things affect layout.
 
 529
 00:21:43,810 --> 00:21:46,010
-And actually--
+And actually &mdash;
 
 530
 00:21:46,010 --> 00:21:50,530
@@ -2406,11 +2406,11 @@ the CSS properties.
 531
 00:21:50,530 --> 00:21:52,060
 Chrome actually just
-recently--
+recently &mdash;
 
 532
 00:21:52,060 --> 00:21:53,100
-yesterday, I think--
+yesterday, I think &mdash;
 
 533
 00:21:53,100 --> 00:21:55,650
@@ -2517,7 +2517,7 @@ does not have any effect on
 
 555
 00:23:05,220 --> 00:23:08,645
-layout and--
+layout and &mdash;
 
 556
 00:23:08,645 --> 00:23:10,688
@@ -2637,7 +2637,7 @@ we want to know that
 
 582
 00:24:16,230 --> 00:24:17,090
-these measurements--
+these measurements &mdash;
 
 583
 00:24:17,090 --> 00:24:19,230
@@ -2651,7 +2651,7 @@ are good for people.
 585
 00:24:21,330 --> 00:24:25,210
 If we take a look at Twitter,
-the load event-- window.load--
+the load event &mdash; window.load &mdash;
 
 586
 00:24:25,210 --> 00:24:29,220
@@ -2977,8 +2977,8 @@ site over time.
 
 653
 00:27:57,270 --> 00:28:00,620
-And so here is HML5 Rocks--
-which I work on--
+And so here is HML5 Rocks &mdash;
+which I work on &mdash;
 
 654
 00:28:00,620 --> 00:28:03,600
@@ -3030,7 +3030,7 @@ earlier today.
 
 664
 00:28:32,270 --> 00:28:33,730
-So we did--
+So we did &mdash;
 
 665
 00:28:33,730 --> 00:28:37,110
@@ -3043,7 +3043,7 @@ inside Chrome.
 
 667
 00:28:38,750 --> 00:28:39,650
-And so here--
+And so here &mdash;
 
 668
 00:28:39,650 --> 00:28:41,180
@@ -3052,7 +3052,7 @@ before, it's been
 
 669
 00:28:41,180 --> 00:28:43,400
-around for a while--
+around for a while &mdash;
 
 670
 00:28:43,400 --> 00:28:45,640
@@ -3276,20 +3276,20 @@ over time.
 717
 00:30:54,140 --> 00:30:57,630
 If you do want to use
-this, the site--
+this, the site &mdash;
 
 718
 00:30:57,630 --> 00:30:59,460
-if you use WebPageTest.org--
+if you use WebPageTest.org &mdash;
 
 719
 00:30:59,460 --> 00:31:01,016
-the site it has to be--
+the site it has to be &mdash;
 
 720
 00:31:01,016 --> 00:31:02,760
 the site you're testing
-has to be online--
+has to be online &mdash;
 
 721
 00:31:02,760 --> 00:31:04,270
@@ -3403,7 +3403,7 @@ You don't need it just yet.
 
 745
 00:31:59,340 --> 00:32:01,092
-If I fit it in that first 15--
+If I fit it in that first 15 &mdash;
 
 746
 00:32:01,092 --> 00:32:05,080
@@ -3452,7 +3452,7 @@ good, what can you do?
 755
 00:32:31,750 --> 00:32:35,360
 I think it's hard to kind of
-work on-- it seems, talking to
+work on &mdash; it seems, talking to
 
 756
 00:32:35,360 --> 00:32:38,360
@@ -3487,7 +3487,7 @@ important.
 762
 00:32:50,570 --> 00:32:52,670
 And the best way to do that
-is-- you can show them the
+is &mdash; you can show them the
 
 763
 00:32:52,670 --> 00:32:55,250
@@ -3497,7 +3497,7 @@ and Microsoft, and anyone who
 764
 00:32:55,250 --> 00:32:58,580
 has said that it effects the
-bottom line significantly--
+bottom line significantly &mdash;
 
 765
 00:32:58,580 --> 00:33:00,590

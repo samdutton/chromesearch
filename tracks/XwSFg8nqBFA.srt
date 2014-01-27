@@ -62,7 +62,7 @@ the other pieces that
 15
 00:02:06,450 --> 00:02:08,229
 you might select as
-the backend--
+the backend &mdash;
 
 16
 00:02:08,229 --> 00:02:10,830
@@ -76,12 +76,12 @@ from MongoDB, Ward Bell from
 
 18
 00:02:16,570 --> 00:02:17,640
-IdeaBlade--
+IdeaBlade &mdash;
 
 19
 00:02:17,640 --> 00:02:19,370
 who's going to be talking
-BreezeJS--
+BreezeJS &mdash;
 
 20
 00:02:19,370 --> 00:02:22,020
@@ -184,7 +184,7 @@ just so you all don't think
 42
 00:03:17,780 --> 00:03:19,710
 I'm some random guy
-on the internet--
+on the internet &mdash;
 
 43
 00:03:19,710 --> 00:03:21,190
@@ -198,11 +198,11 @@ SCVNGR, now known as LevelUp.
 45
 00:03:25,050 --> 00:03:27,460
 I've been using AngularJS
-for a very long time--
+for a very long time &mdash;
 
 46
 00:03:27,460 --> 00:03:29,370
-since 2010--
+since 2010 &mdash;
 
 47
 00:03:29,370 --> 00:03:32,010
@@ -368,7 +368,7 @@ particularly awesome.
 
 80
 00:05:13,800 --> 00:05:14,710
-AngularJS--
+AngularJS &mdash;
 
 81
 00:05:14,710 --> 00:05:16,500
@@ -406,7 +406,7 @@ concurrent server very easily.
 88
 00:05:34,310 --> 00:05:37,120
 So the origins about
-the MEAN stack--
+the MEAN stack &mdash;
 
 89
 00:05:37,120 --> 00:05:40,960
@@ -484,7 +484,7 @@ testing on the server.
 104
 00:06:20,720 --> 00:06:24,270
 We had some unit testing for
-Android and iOS clients--
+Android and iOS clients &mdash;
 
 105
 00:06:24,270 --> 00:06:26,850
@@ -574,11 +574,11 @@ bit of a pain.
 123
 00:07:16,470 --> 00:07:19,970
 We were using ActiveRecord,
-which is an ORM--
+which is an ORM &mdash;
 
 124
 00:07:19,970 --> 00:07:21,740
-Object Relational Model--
+Object Relational Model &mdash;
 
 125
 00:07:21,740 --> 00:07:24,770
@@ -618,12 +618,12 @@ us having about 2 and 1/2
 132
 00:07:48,240 --> 00:07:50,910
 developers and five different
-languages--
+languages &mdash;
 
 133
 00:07:50,910 --> 00:07:54,800
 SQL, Ruby, Objective-C, Android,
-and JavaScript--
+and JavaScript &mdash;
 
 134
 00:07:54,800 --> 00:07:58,250
@@ -790,7 +790,7 @@ previously when we were
 
 168
 00:09:44,050 --> 00:09:47,220
-working on version 0.9.19--
+working on version 0.9.19 &mdash;
 
 169
 00:09:47,220 --> 00:09:50,140
@@ -829,11 +829,11 @@ only 80 lines of code.
 176
 00:10:06,180 --> 00:10:08,380
 And we had 100% test
-coverage--
+coverage &mdash;
 
 177
 00:10:08,380 --> 00:10:12,830
-or unit test coverage-- on it,
+or unit test coverage &mdash; on it,
 which was absolutely perfect.
 
 178
@@ -849,7 +849,7 @@ to help you do.
 180
 00:10:19,660 --> 00:10:23,730
 Ideally, any web stack should
-help you prototype--
+help you prototype &mdash;
 
 181
 00:10:23,730 --> 00:10:26,780
@@ -869,7 +869,7 @@ automatically so that you
 184
 00:10:32,000 --> 00:10:36,100
 never push legitimately broken
-code through-- product will
+code through &mdash; product will
 
 185
 00:10:36,100 --> 00:10:39,400
@@ -878,7 +878,7 @@ as advertised.
 
 186
 00:10:39,400 --> 00:10:40,500
-And adapt--
+And adapt &mdash;
 
 187
 00:10:40,500 --> 00:10:43,580
@@ -930,7 +930,7 @@ all in themselves.
 197
 00:11:07,850 --> 00:11:10,760
 But we're going to talk about
-how you can build--
+how you can build &mdash;
 
 198
 00:11:10,760 --> 00:11:14,280
@@ -954,7 +954,7 @@ never see your code break.
 202
 00:11:21,660 --> 00:11:25,150
 I will sum this up as, build
-fast and don't break things--
+fast and don't break things &mdash;
 
 203
 00:11:25,150 --> 00:11:28,420
@@ -983,7 +983,7 @@ quite often.
 208
 00:11:37,380 --> 00:11:40,590
 As a small startup, I don't
-believe that you can afford--
+believe that you can afford &mdash;
 
 209
 00:11:40,590 --> 00:11:45,080
@@ -1183,7 +1183,7 @@ and it's due on October
 
 250
 00:13:48,680 --> 00:13:50,200
-And so Angular--
+And so Angular &mdash;
 
 251
 00:13:50,200 --> 00:13:52,100
@@ -1192,7 +1192,7 @@ familiar with
 
 252
 00:13:52,100 --> 00:13:54,820
-how AngularJS works--
+how AngularJS works &mdash;
 
 253
 00:13:54,820 --> 00:13:58,565
@@ -1268,7 +1268,7 @@ state of affairs.
 
 268
 00:14:49,330 --> 00:14:54,540
-So I have a new to-do-- finish
+So I have a new to-do &mdash; finish
 MEAN stack talk, October 3.
 
 269
@@ -1326,7 +1326,7 @@ the client did.
 
 280
 00:15:28,820 --> 00:15:30,510
-Basically this JSON--
+Basically this JSON &mdash;
 
 281
 00:15:30,510 --> 00:15:34,260
@@ -1350,7 +1350,7 @@ MongoDB, we can pull up the
 285
 00:15:43,790 --> 00:15:46,950
 MongoDB shell, which is actually
-legitimately--
+legitimately &mdash;
 
 286
 00:15:46,950 --> 00:15:49,190
@@ -1407,7 +1407,7 @@ collection that you want.
 
 297
 00:16:22,960 --> 00:16:23,870
-MongoDB calls it--
+MongoDB calls it &mdash;
 
 298
 00:16:23,870 --> 00:16:27,380
@@ -1618,7 +1618,7 @@ after prototyping.
 
 341
 00:18:42,660 --> 00:18:44,600
-And don't break things--
+And don't break things &mdash;
 
 342
 00:18:44,600 --> 00:18:46,720
@@ -1648,7 +1648,7 @@ angular-scenario.
 
 348
 00:18:56,950 --> 00:18:58,310
-So Karma--
+So Karma &mdash;
 
 349
 00:18:58,310 --> 00:19:01,670
@@ -1791,8 +1791,8 @@ standard of automated
 
 378
 00:20:36,190 --> 00:20:38,210
-testing-- continuous
-integration--
+testing &mdash; continuous
+integration &mdash;
 
 379
 00:20:38,210 --> 00:20:41,740
@@ -1878,7 +1878,7 @@ from the backend.
 
 397
 00:21:33,560 --> 00:21:34,690
-WARD BELL: Well that's--
+WARD BELL: Well that's &mdash;
 
 398
 00:21:34,690 --> 00:21:35,400
@@ -1896,7 +1896,7 @@ to my screen here.
 401
 00:21:40,020 --> 00:21:45,110
 And I trust that you
-are now seeing--
+are now seeing &mdash;
 
 402
 00:21:45,110 --> 00:21:46,330
@@ -1940,7 +1940,7 @@ people build business
 
 411
 00:22:09,340 --> 00:22:10,000
-applications--
+applications &mdash;
 
 412
 00:22:10,000 --> 00:22:12,350
@@ -1970,7 +1970,7 @@ applications for our clients.
 
 418
 00:22:26,910 --> 00:22:28,585
-And these days--
+And these days &mdash;
 
 419
 00:22:28,585 --> 00:22:29,650
@@ -1978,7 +1978,7 @@ did I have that?
 
 420
 00:22:29,650 --> 00:22:31,420
-Yeah, I'd say that about--
+Yeah, I'd say that about &mdash;
 
 421
 00:22:31,420 --> 00:22:33,530
@@ -2057,8 +2057,8 @@ we're recommending a product
 
 437
 00:23:19,290 --> 00:23:22,030
-that we've written-- it's open
-source-- called Breeze--
+that we've written &mdash; it's open
+source &mdash; called Breeze &mdash;
 
 438
 00:23:22,030 --> 00:23:24,560
@@ -2087,7 +2087,7 @@ Breeze works in action.
 443
 00:23:35,180 --> 00:23:38,739
 And then I'd like to show you
-Breeze as it relates to the--
+Breeze as it relates to the &mdash;
 
 444
 00:23:38,739 --> 00:24:01,120
@@ -2218,11 +2218,11 @@ it's about.
 474
 00:25:04,800 --> 00:25:08,040
 And we often talk about the
-patterns that are in use--
+patterns that are in use &mdash;
 
 475
 00:25:08,040 --> 00:25:10,810
-MVC, MVVM, MV-whatever--
+MVC, MVVM, MV-whatever &mdash;
 
 476
 00:25:10,810 --> 00:25:13,800
@@ -2235,7 +2235,7 @@ But where's the M?
 
 478
 00:25:16,410 --> 00:25:19,220
-Where's the M-- the model?
+Where's the M &mdash; the model?
 
 479
 00:25:19,220 --> 00:25:22,370
@@ -2326,7 +2326,7 @@ application.
 
 497
 00:26:16,900 --> 00:26:18,090
-I want to ask you--
+I want to ask you &mdash;
 
 498
 00:26:18,090 --> 00:26:19,820
@@ -2382,7 +2382,7 @@ multiple entities.
 
 509
 00:26:41,290 --> 00:26:43,730
-And these entities--
+And these entities &mdash;
 
 510
 00:26:43,730 --> 00:26:45,160
@@ -2671,7 +2671,7 @@ trip to the server?
 
 571
 00:29:10,200 --> 00:29:12,760
-Another question-- do you
+Another question &mdash; do you
 validate changes on the client
 
 572
@@ -2836,11 +2836,11 @@ you're using Breeze.
 606
 00:30:35,950 --> 00:30:38,430
 And of course you could write
-it all yourself--
+it all yourself &mdash;
 
 607
 00:30:38,430 --> 00:30:39,780
-thousands of lines--
+thousands of lines &mdash;
 
 608
 00:30:39,780 --> 00:30:42,180
@@ -2869,7 +2869,7 @@ I'm talking about.
 
 613
 00:30:55,340 --> 00:31:00,230
-It's an application that is--
+It's an application that is &mdash;
 
 614
 00:31:00,230 --> 00:31:02,200
@@ -2890,7 +2890,7 @@ And here is in action.
 
 618
 00:31:08,470 --> 00:31:10,450
-When I load it up--
+When I load it up &mdash;
 
 619
 00:31:10,450 --> 00:31:11,260
@@ -2904,7 +2904,7 @@ here telling you
 621
 00:31:14,450 --> 00:31:17,890
 diagnostically what's going on
-as it loads at all from--
+as it loads at all from &mdash;
 
 622
 00:31:17,890 --> 00:31:19,330
@@ -3098,11 +3098,11 @@ which is a code camp or
 664
 00:32:53,400 --> 00:32:56,200
 sample, and will be available
-on Pluralsight--
+on Pluralsight &mdash;
 
 665
 00:32:56,200 --> 00:32:57,760
-great course--
+great course &mdash;
 
 666
 00:32:57,760 --> 00:33:02,770
@@ -3121,11 +3121,11 @@ Express, I want to show you
 
 669
 00:33:09,930 --> 00:33:10,780
-another application--
+another application &mdash;
 
 670
 00:33:10,780 --> 00:33:12,500
-also an Angular application--
+also an Angular application &mdash;
 
 671
 00:33:12,500 --> 00:33:18,310
@@ -3228,7 +3228,7 @@ kind of thing
 
 694
 00:34:14,290 --> 00:34:16,800
-Looks just like--
+Looks just like &mdash;
 
 695
 00:34:16,800 --> 00:34:19,590
@@ -3267,7 +3267,7 @@ implications of that are.
 702
 00:34:34,905 --> 00:34:37,203
 Hold a second while
-I control--
+I control &mdash;
 
 703
 00:34:37,203 --> 00:34:42,989
@@ -3279,12 +3279,12 @@ that's where that is.
 705
 00:34:44,020 --> 00:34:48,210
 So if the data that you had just
-seen there about-- that
+seen there about &mdash; that
 
 706
 00:34:48,210 --> 00:34:50,409
 were driving the
-pizza parlor--
+pizza parlor &mdash;
 
 707
 00:34:50,409 --> 00:34:55,909
@@ -3293,7 +3293,7 @@ would see individual tables
 
 708
 00:34:55,909 --> 00:34:56,679
-for each of the items--
+for each of the items &mdash;
 
 709
 00:34:56,679 --> 00:35:00,550
@@ -3308,7 +3308,7 @@ we're talking to, in fact,
 711
 00:35:05,030 --> 00:35:07,120
 what I've got for an
-order is not--
+order is not &mdash;
 
 712
 00:35:07,120 --> 00:35:10,150
@@ -3386,7 +3386,7 @@ Here's a view over the order.
 
 728
 00:35:45,710 --> 00:35:47,916
-And you'll notice that--
+And you'll notice that &mdash;
 
 729
 00:35:47,916 --> 00:35:50,400
@@ -3395,7 +3395,7 @@ one of them in particular.
 
 730
 00:35:50,400 --> 00:35:53,190
-And I can-- oh, by the way, you
+And I can &mdash; oh, by the way, you
 don't have to deal with
 
 731
@@ -3405,12 +3405,12 @@ address with a [INAUDIBLE]
 
 732
 00:35:55,880 --> 00:35:57,340
-type--
+type &mdash;
 
 733
 00:35:57,340 --> 00:36:00,380
 with what we call a complex
-type-- an embedded type.
+type &mdash; an embedded type.
 
 734
 00:36:00,380 --> 00:36:02,770
@@ -3465,11 +3465,11 @@ minor adjustments, is switch
 745
 00:36:27,970 --> 00:36:32,540
 back to being able to
-tweak the backend--
+tweak the backend &mdash;
 
 746
 00:36:32,540 --> 00:36:34,330
-give you a backend--
+give you a backend &mdash;
 
 747
 00:36:34,330 --> 00:36:39,540
@@ -3507,12 +3507,12 @@ in this MEAN stack.
 754
 00:36:58,550 --> 00:37:05,270
 So I have a simple HTML, but
-this is the-- all you have to
+this is the &mdash; all you have to
 
 755
 00:37:05,270 --> 00:37:08,220
-do on the Express server--
-this kind of web server--
+do on the Express server &mdash;
+this kind of web server &mdash;
 
 756
 00:37:08,220 --> 00:37:11,250
@@ -3526,7 +3526,7 @@ are, and you route
 
 758
 00:37:13,710 --> 00:37:15,020
-those things to--
+those things to &mdash;
 
 759
 00:37:15,020 --> 00:37:16,650
@@ -3573,7 +3573,7 @@ Angular and Breeze.
 768
 00:37:43,000 --> 00:37:47,090
 That you can have a SQL backend,
-or a Mongo backend--
+or a Mongo backend &mdash;
 
 769
 00:37:47,090 --> 00:37:50,370
@@ -3583,7 +3583,7 @@ respect to that.
 770
 00:37:50,370 --> 00:37:51,970
 And so you can have it the
-way you want it-- maybe
+way you want it &mdash; maybe
 
 771
 00:37:51,970 --> 00:37:53,020
@@ -3788,7 +3788,7 @@ friend and colleague
 
 815
 00:39:36,990 --> 00:39:38,500
-of mine named Raymond--
+of mine named Raymond &mdash;
 
 816
 00:39:38,500 --> 00:39:42,511
@@ -3807,11 +3807,11 @@ by subscription.
 
 819
 00:39:48,550 --> 00:39:50,250
-It contains three components--
+It contains three components &mdash;
 
 820
 00:39:50,250 --> 00:39:53,440
-so LoopBack-- the open source
+so LoopBack &mdash; the open source
 mBaaS that we talked about.
 
 821
@@ -3859,7 +3859,7 @@ operational, so actually do
 
 830
 00:40:16,600 --> 00:40:20,590
-something with for apps--
+something with for apps &mdash;
 scale it, triage it,
 
 831
@@ -4098,7 +4098,7 @@ limit, for example?
 
 879
 00:42:34,310 --> 00:42:36,580
-Getting his profile-- is
+Getting his profile &mdash; is
 even authorized to do
 
 880
@@ -4192,7 +4192,7 @@ upon LoopBack.
 899
 00:43:32,840 --> 00:43:35,470
 We basically connect devices
-to browsers--
+to browsers &mdash;
 
 900
 00:43:35,470 --> 00:43:38,040
@@ -4318,7 +4318,7 @@ the data source juggler.
 926
 00:44:41,020 --> 00:44:43,600
 From the data source juggler,
-you get back a model--
+you get back a model &mdash;
 
 927
 00:44:43,600 --> 00:44:46,320
@@ -4566,7 +4566,7 @@ And it starts up.
 
 979
 00:47:12,440 --> 00:47:15,110
-And in another browser--
+And in another browser &mdash;
 
 980
 00:47:15,110 --> 00:47:16,700
@@ -4587,7 +4587,7 @@ a RESTful API for Blackpool.
 984
 00:47:29,700 --> 00:47:33,380
 And we have these model entities
-that are out there--
+that are out there &mdash;
 
 985
 00:47:33,380 --> 00:47:34,520
@@ -4854,7 +4854,7 @@ the application.
 
 1042
 00:50:19,560 --> 00:50:21,760
-So, lesson one-- so to
+So, lesson one &mdash; so to
 illustrate the power of
 
 1043
@@ -4899,7 +4899,7 @@ gone in to find properties
 1051
 00:50:53,150 --> 00:50:56,207
 that I'm going to go ahead and
-put in-- so name, caliber, and
+put in &mdash; so name, caliber, and
 
 1052
 00:50:56,207 --> 00:50:58,220
@@ -4956,7 +4956,7 @@ There you go.
 
 1064
 00:51:26,640 --> 00:51:28,220
-Same thing--
+Same thing &mdash;
 
 1065
 00:51:28,220 --> 00:51:32,850
@@ -5069,7 +5069,7 @@ live instance of Oracle.
 1090
 00:52:26,250 --> 00:52:29,520
 And just to give you a flavor
-of what's going on here--
+of what's going on here &mdash;
 
 1091
 00:52:29,520 --> 00:52:42,340
@@ -5080,12 +5080,12 @@ all right.
 
 1093
 00:52:44,740 --> 00:52:50,410
-Table name, user tables--
+Table name, user tables &mdash;
 
 1094
 00:52:50,410 --> 00:52:53,910
 and go ahead and describe
-inventory--
+inventory &mdash;
 
 1095
 00:52:53,910 --> 00:52:55,160
@@ -5243,7 +5243,7 @@ That's in testing right now.
 
 1128
 00:54:27,480 --> 00:54:28,700
-As an mBaaS--
+As an mBaaS &mdash;
 
 1129
 00:54:28,700 --> 00:54:30,690
@@ -5253,7 +5253,7 @@ wouldn't want to adopt an
 1130
 00:54:30,690 --> 00:54:32,360
 mBaaS is because
-we've already--
+we've already &mdash;
 
 1131
 00:54:32,360 --> 00:54:35,470
@@ -5312,7 +5312,7 @@ to, or use the CLI.
 
 1143
 00:55:00,270 --> 00:55:01,930
-And mobile app management--
+And mobile app management &mdash;
 
 1144
 00:55:01,930 --> 00:55:05,440
@@ -5326,7 +5326,7 @@ backends with your APIs.
 1146
 00:55:07,630 --> 00:55:09,210
 And of course, more
-connectors--
+connectors &mdash;
 
 1147
 00:55:09,210 --> 00:55:10,170
@@ -5412,11 +5412,11 @@ here [INAUDIBLE].
 1165
 00:55:42,150 --> 00:55:44,200
 I want to thank all
-of our speakers--
+of our speakers &mdash;
 
 1166
 00:55:44,200 --> 00:55:46,670
-Val, Ward, and Al-- for joining
+Val, Ward, and Al &mdash; for joining
 us this morning.
 
 1167

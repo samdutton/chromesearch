@@ -36,7 +36,7 @@ answer show.
 9
 00:00:15,520 --> 00:00:16,770
 So if any of you out there would
-like to ask questions--
+like to ask questions &mdash;
 
 10
 00:00:16,770 --> 00:00:21,730
@@ -191,7 +191,7 @@ do on a daily basis.
 42
 00:01:42,340 --> 00:01:45,070
 As for how I got into web
-audio, it was really--
+audio, it was really &mdash;
 
 43
 00:01:45,070 --> 00:01:49,100
@@ -286,11 +286,11 @@ All right.
 
 63
 00:02:36,560 --> 00:02:38,550
-So a quick agenda--
+So a quick agenda &mdash;
 
 64
 00:02:38,550 --> 00:02:39,770
-so we're going to talk--
+so we're going to talk &mdash;
 
 65
 00:02:39,770 --> 00:02:45,100
@@ -314,12 +314,12 @@ applications.
 69
 00:02:55,120 --> 00:02:58,900
 And in the second one, which
-will be in a few weeks-- we'll
+will be in a few weeks &mdash; we'll
 
 70
 00:02:58,900 --> 00:03:02,930
 announce it on our
-Google+ page--
+Google+ page &mdash;
 
 71
 00:03:02,930 --> 00:03:06,870
@@ -701,8 +701,8 @@ and look at what they say.
 
 151
 00:06:39,660 --> 00:06:42,080
-Later in the deck-- which I'm
-not going to go into--
+Later in the deck &mdash; which I'm
+not going to go into &mdash;
 
 152
 00:06:42,080 --> 00:06:44,390
@@ -754,7 +754,7 @@ view of the audio.
 162
 00:07:15,160 --> 00:07:20,375
 Now, on top of that,
-there were really--
+there were really &mdash;
 
 163
 00:07:20,375 --> 00:07:22,210
@@ -776,7 +776,7 @@ a pretty high level.
 167
 00:07:28,950 --> 00:07:31,920
 So it's really easy to do
-basic things like--
+basic things like &mdash;
 
 168
 00:07:31,920 --> 00:07:32,940
@@ -808,7 +808,7 @@ and start playing it.
 174
 00:07:42,570 --> 00:07:45,030
 And even doing effects
-and filters--
+and filters &mdash;
 
 175
 00:07:45,030 --> 00:07:49,130
@@ -893,15 +893,15 @@ individually if you want to.
 
 192
 00:08:33,480 --> 00:08:35,705
-Now--
+Now &mdash;
 
 193
 00:08:35,705 --> 00:08:37,130
-come on--
+come on &mdash;
 
 194
 00:08:37,130 --> 00:08:38,520
-one of our big goals--
+one of our big goals &mdash;
 
 195
 00:08:38,520 --> 00:08:45,510
@@ -1018,7 +1018,7 @@ Half a dozen is OK.
 
 219
 00:09:50,870 --> 00:09:55,430
-But 25 or so-- it starts
+But 25 or so &mdash; it starts
 getting kind of wonky.
 
 220
@@ -1046,7 +1046,7 @@ sounds in a sound field.
 
 225
 00:10:09,250 --> 00:10:10,010
-Doppler shift--
+Doppler shift &mdash;
 
 226
 00:10:10,010 --> 00:10:13,990
@@ -1228,7 +1228,7 @@ as compression and expansion.
 
 264
 00:11:57,040 --> 00:11:59,650
-If you look at-- this is
+If you look at &mdash; this is
 actually a picture of one of
 
 265
@@ -1290,7 +1290,7 @@ kind of features.
 277
 00:12:32,900 --> 00:12:36,410
 So the first demo that I wanted
-to show is actually--
+to show is actually &mdash;
 
 278
 00:12:36,410 --> 00:12:40,410
@@ -1327,7 +1327,7 @@ and hit Play.
 
 285
 00:12:56,550 --> 00:12:57,260
-CHRIS WILSON: And--
+CHRIS WILSON: And &mdash;
 
 286
 00:12:57,260 --> 00:12:58,510
@@ -1338,7 +1338,7 @@ whoops.
 
 288
 00:13:00,480 --> 00:13:02,590
-And I can--
+And I can &mdash;
 
 289
 00:13:02,590 --> 00:13:02,880
@@ -1359,7 +1359,7 @@ I can create something.
 
 293
 00:13:14,670 --> 00:13:18,510
-I can do a-- oh, let's show
+I can do a &mdash; oh, let's show
 one of our neat frequency
 
 294
@@ -1416,7 +1416,7 @@ usually play with this.
 306
 00:13:52,910 --> 00:13:57,500
 But now that I've got this all
-connected, I can hit Play--
+connected, I can hit Play &mdash;
 
 307
 00:13:57,500 --> 00:13:59,110
@@ -1596,7 +1596,7 @@ like that.
 345
 00:15:44,230 --> 00:15:46,990
 But when you map these
-together-- when you take the
+together &mdash; when you take the
 
 346
 00:15:46,990 --> 00:15:50,850
@@ -1624,7 +1624,7 @@ our fathers brought forth
 351
 00:15:58,695 --> 00:16:01,140
 on this continent,
-a new nation--
+a new nation &mdash;
 
 352
 00:16:01,140 --> 00:16:03,530
@@ -1698,7 +1698,7 @@ also add more noise
 
 367
 00:16:44,180 --> 00:16:45,130
-to the signal, or--
+to the signal, or &mdash;
 
 368
 00:16:45,130 --> 00:16:48,140
@@ -1774,7 +1774,7 @@ I started building this.
 383
 00:17:24,030 --> 00:17:28,720
 And I think Chris Rogers, the
-engineer on the project--
+engineer on the project &mdash;
 
 384
 00:17:28,720 --> 00:17:30,290
@@ -1836,11 +1836,11 @@ on GitHub.
 396
 00:17:59,650 --> 00:18:04,190
 In fact, if you just go
-to github.com/cwilso--
+to github.com/cwilso &mdash;
 
 397
 00:18:04,190 --> 00:18:06,010
-C-W-I-L-S-O--
+C-W-I-L-S-O &mdash;
 
 398
 00:18:06,010 --> 00:18:08,820
@@ -1910,7 +1910,7 @@ would encourage people to do,
 412
 00:18:44,940 --> 00:18:48,650
 if you're going to do more
-than just very basic--
+than just very basic &mdash;
 
 413
 00:18:48,650 --> 00:18:51,750
@@ -2072,7 +2072,7 @@ visualizations of it.
 446
 00:20:27,480 --> 00:20:30,280
 Did you use Canvas
-for that or--
+for that or &mdash;
 
 447
 00:20:30,280 --> 00:20:34,670
@@ -2166,7 +2166,7 @@ it drew vertical
 
 466
 00:21:32,730 --> 00:21:34,240
-bars, so I could see--
+bars, so I could see &mdash;
 
 467
 00:21:34,240 --> 00:21:35,900
@@ -2292,7 +2292,7 @@ lot of time in was tweaking.
 
 493
 00:22:41,510 --> 00:22:42,770
-And there's actually--
+And there's actually &mdash;
 
 494
 00:22:42,770 --> 00:22:47,440
@@ -2410,7 +2410,7 @@ Chrome for quite a while now.
 518
 00:23:49,730 --> 00:23:54,990
 It's been shipping and
-[? stable ?] for--
+[? stable ?] for &mdash;
 
 519
 00:23:54,990 --> 00:23:56,030
@@ -2777,7 +2777,7 @@ is taken care of.
 
 597
 00:27:33,510 --> 00:27:34,530
-On the popups--
+On the popups &mdash;
 
 598
 00:27:34,530 --> 00:27:37,490
@@ -2786,7 +2786,7 @@ more about that?
 
 599
 00:27:37,490 --> 00:27:38,685
-That's obviously--
+That's obviously &mdash;
 
 600
 00:27:38,685 --> 00:27:39,060
@@ -2817,7 +2817,7 @@ excited by the Web Audio API,
 
 606
 00:27:55,110 --> 00:27:56,560
-I'm the guy who--
+I'm the guy who &mdash;
 
 607
 00:27:56,560 --> 00:27:59,850
@@ -2940,11 +2940,11 @@ a good question.
 
 632
 00:29:12,340 --> 00:29:16,400
-So another question was from--
+So another question was from &mdash;
 
 633
 00:29:16,400 --> 00:29:17,210
-let's see--
+let's see &mdash;
 
 634
 00:29:17,210 --> 00:29:18,460
@@ -3028,7 +3028,7 @@ from Tony-b from France.
 
 652
 00:30:09,460 --> 00:30:11,700
-Multichannel support--
+Multichannel support &mdash;
 
 653
 00:30:11,700 --> 00:30:15,640
@@ -3055,7 +3055,7 @@ CHRIS WILSON: Right.
 658
 00:30:24,900 --> 00:30:27,390
 So multichannel support
-is definitely--
+is definitely &mdash;
 
 659
 00:30:27,390 --> 00:30:29,790
@@ -3217,7 +3217,7 @@ want to loop this from the
 692
 00:32:15,450 --> 00:32:18,710
 first sample to the last sample,
-and it can only be--
+and it can only be &mdash;
 
 693
 00:32:18,710 --> 00:32:21,730
@@ -3240,7 +3240,7 @@ And I've actually done that.
 697
 00:32:30,160 --> 00:32:34,770
 I used an extremely short sound
-buffer to replicate--
+buffer to replicate &mdash;
 
 698
 00:32:34,770 --> 00:32:38,090
@@ -3276,7 +3276,7 @@ and it was asked on the
 
 705
 00:32:52,970 --> 00:32:53,860
-moderator--
+moderator &mdash;
 
 706
 00:32:53,860 --> 00:32:56,220
@@ -3291,7 +3291,7 @@ conversations?
 708
 00:32:58,400 --> 00:33:00,580
 In fact, I was thinking
-it would be great--
+it would be great &mdash;
 
 709
 00:33:00,580 --> 00:33:03,470
@@ -3310,11 +3310,11 @@ liked, is it even possible in
 
 712
 00:33:10,110 --> 00:33:10,800
-your demo--
+your demo &mdash;
 
 713
 00:33:10,800 --> 00:33:12,340
-the first demo you showed--
+the first demo you showed &mdash;
 
 714
 00:33:12,340 --> 00:33:16,250
@@ -3348,11 +3348,11 @@ any way natively to record it
 720
 00:33:36,300 --> 00:33:38,780
 and encode it into one
-of those formats--
+of those formats &mdash;
 
 721
 00:33:38,780 --> 00:33:42,860
-into OGG or WAV or MP3--
+into OGG or WAV or MP3 &mdash;
 
 722
 00:33:42,860 --> 00:33:45,830
@@ -3396,7 +3396,7 @@ be fairly complex.
 
 730
 00:34:07,920 --> 00:34:10,469
-So JavaScript encoder--
+So JavaScript encoder &mdash;
 
 731
 00:34:10,469 --> 00:34:14,110
@@ -3411,7 +3411,7 @@ worked on, again, using the
 733
 00:34:17,610 --> 00:34:21,400
 Get User Media API,
-as I mentioned--
+as I mentioned &mdash;
 
 734
 00:34:21,400 --> 00:34:26,239
@@ -3533,7 +3533,7 @@ is on everybody's side.
 
 760
 00:35:30,340 --> 00:35:31,860
-But there is still--
+But there is still &mdash;
 
 761
 00:35:31,860 --> 00:35:36,440
@@ -3643,7 +3643,7 @@ the Web Audio API.
 
 784
 00:36:33,370 --> 00:36:36,880
-And they continue to work-- we
+And they continue to work &mdash; we
 all continue to work on that
 
 785
@@ -3657,7 +3657,7 @@ PETER LUBBERS: Excellent.
 
 787
 00:36:41,064 --> 00:36:43,510
-A couple of other questions--
+A couple of other questions &mdash;
 so how does Web
 
 788
@@ -3691,7 +3691,7 @@ separate APIs.
 
 794
 00:36:59,440 --> 00:37:00,690
-WebRTC--
+WebRTC &mdash;
 
 795
 00:37:00,690 --> 00:37:02,400
@@ -3764,7 +3764,7 @@ differently, or whatever
 
 810
 00:37:45,250 --> 00:37:46,320
-you want to do--
+you want to do &mdash;
 
 811
 00:37:46,320 --> 00:37:48,980
@@ -3841,7 +3841,7 @@ PETER LUBBERS: Great.
 826
 00:38:29,890 --> 00:38:31,720
 Another question from
-stephband--
+stephband &mdash;
 
 827
 00:38:31,720 --> 00:38:34,340
@@ -3874,12 +3874,12 @@ CHRIS WILSON: Well, no.
 
 834
 00:38:49,910 --> 00:38:51,900
-I've been pestering--
+I've been pestering &mdash;
 
 835
 00:38:51,900 --> 00:38:54,490
 I'll put it politely
-as pestering--
+as pestering &mdash;
 
 836
 00:38:54,490 --> 00:38:58,640
@@ -4019,7 +4019,7 @@ that gets called when the
 865
 00:40:12,610 --> 00:40:15,100
 audio file reaches the
-three-second mark--
+three-second mark &mdash;
 
 866
 00:40:15,100 --> 00:40:15,855
@@ -4253,7 +4253,7 @@ signal processing engineer.
 
 916
 00:42:56,470 --> 00:42:57,900
-But it's still--
+But it's still &mdash;
 
 917
 00:42:57,900 --> 00:43:04,850
@@ -4267,7 +4267,7 @@ of glaze over.
 
 919
 00:43:08,500 --> 00:43:09,840
-It's certainly--
+It's certainly &mdash;
 
 920
 00:43:09,840 --> 00:43:14,110
@@ -4333,7 +4333,7 @@ there after.
 933
 00:43:49,480 --> 00:43:51,910
 And we'll have a link to all
-of the material-- so the
+of the material &mdash; so the
 
 934
 00:43:51,910 --> 00:43:57,650
@@ -4379,7 +4379,7 @@ And we'll answer them.
 943
 00:44:17,480 --> 00:44:19,600
 Did you have any other questions
-there on the--
+there on the &mdash;
 
 944
 00:44:19,600 --> 00:44:21,776
@@ -4406,7 +4406,7 @@ and Jan for the great
 
 949
 00:44:29,790 --> 00:44:30,440
-information--
+information &mdash;
 
 950
 00:44:30,440 --> 00:44:33,280

@@ -213,7 +213,7 @@ attention emotion memory.
 
 48
 00:01:23,620 --> 00:01:25,150
-Diving into vision--
+Diving into vision &mdash;
 
 49
 00:01:25,150 --> 00:01:26,460
@@ -495,7 +495,7 @@ just perceive all the shapes.
 108
 00:03:31,980 --> 00:03:33,430
 But as soon as you have a little
-bit of white space--
+bit of white space &mdash;
 
 109
 00:03:33,430 --> 00:03:35,620
@@ -528,7 +528,7 @@ bit of white space.
 115
 00:03:44,030 --> 00:03:45,550
 So an obvious example
-of this--
+of this &mdash;
 
 116
 00:03:45,550 --> 00:03:47,470
@@ -556,7 +556,7 @@ didn't exist, even though you
 
 121
 00:03:55,535 --> 00:03:58,070
-have all the formatting cues--
+have all the formatting cues &mdash;
 
 122
 00:03:58,070 --> 00:04:00,540
@@ -668,7 +668,7 @@ literally drawn on the screen.
 
 146
 00:04:47,520 --> 00:04:48,700
-Law of Similarity--
+Law of Similarity &mdash;
 
 147
 00:04:48,700 --> 00:04:50,760
@@ -700,7 +700,7 @@ where seeing stars
 
 153
 00:04:59,930 --> 00:05:02,030
-versus circles, where--
+versus circles, where &mdash;
 
 154
 00:05:02,030 --> 00:05:03,780
@@ -709,7 +709,7 @@ out at you.
 
 155
 00:05:03,780 --> 00:05:06,940
-And we this in Gmail, where--
+And we this in Gmail, where &mdash;
 in this case, columns.
 
 156
@@ -788,7 +788,7 @@ horizontal switch.
 
 172
 00:05:43,460 --> 00:05:46,540
-I should note-- the back
+I should note &mdash; the back
 button is wrong.
 
 173
@@ -841,7 +841,7 @@ button being sort of
 183
 00:06:06,960 --> 00:06:09,250
 peripheral to activating a
-keyboard in this sense--
+keyboard in this sense &mdash;
 
 184
 00:06:09,250 --> 00:06:10,470
@@ -855,7 +855,7 @@ be reversed.
 186
 00:06:13,130 --> 00:06:16,340
 So a whole new topic related to
-vision-- peripheral vision.
+vision &mdash; peripheral vision.
 
 187
 00:06:16,340 --> 00:06:19,920
@@ -897,7 +897,7 @@ So you go in.
 
 195
 00:06:33,920 --> 00:06:36,800
-And bam-- tiger.
+And bam &mdash; tiger.
 
 196
 00:06:36,800 --> 00:06:37,950
@@ -969,7 +969,7 @@ There's nothing.
 
 211
 00:07:04,790 --> 00:07:07,330
-Once again, bam-- tiger.
+Once again, bam &mdash; tiger.
 
 212
 00:07:07,330 --> 00:07:10,305
@@ -1065,7 +1065,7 @@ at avatar
 
 232
 00:07:50,640 --> 00:07:52,530
-picture up in the corner--
+picture up in the corner &mdash;
 
 233
 00:07:52,530 --> 00:07:55,290
@@ -1104,7 +1104,7 @@ the user's attention
 
 240
 00:08:09,330 --> 00:08:10,090
-of notification--
+of notification &mdash;
 
 241
 00:08:10,090 --> 00:08:12,640
@@ -1114,7 +1114,7 @@ in their periphery.
 242
 00:08:12,640 --> 00:08:14,900
 So another new topic
-related to vision--
+related to vision &mdash;
 
 243
 00:08:14,900 --> 00:08:16,860
@@ -1177,7 +1177,7 @@ maybe being 24 of them.
 
 256
 00:08:42,070 --> 00:08:43,309
-And even just 24--
+And even just 24 &mdash;
 
 257
 00:08:43,309 --> 00:08:45,210
@@ -1244,7 +1244,7 @@ using that for recognition.
 270
 00:09:10,360 --> 00:09:12,040
 So what's interesting
-about this--
+about this &mdash;
 
 271
 00:09:12,040 --> 00:09:12,970
@@ -1301,7 +1301,7 @@ faster for the user.
 
 282
 00:09:40,580 --> 00:09:43,120
-And this is also--
+And this is also &mdash;
 
 283
 00:09:43,120 --> 00:09:45,310
@@ -1348,7 +1348,7 @@ part due to this recognition.
 292
 00:10:03,310 --> 00:10:05,280
 So you can very quickly
-spot things in here--
+spot things in here &mdash;
 
 293
 00:10:05,280 --> 00:10:08,110
@@ -1423,7 +1423,7 @@ full stock-art people.
 308
 00:10:37,200 --> 00:10:38,970
 And they're all walking
-towards me--
+towards me &mdash;
 
 309
 00:10:38,970 --> 00:10:40,140
@@ -1466,7 +1466,7 @@ about perceived this at the
 317
 00:10:56,270 --> 00:10:58,050
 conference, where various people
-conference-- you're
+conference &mdash; you're
 
 318
 00:10:58,050 --> 00:10:59,810
@@ -1528,7 +1528,7 @@ visual field.
 330
 00:11:21,050 --> 00:11:24,490
 So in terms of implications
-for interface design--
+for interface design &mdash;
 
 331
 00:11:24,490 --> 00:11:27,270
@@ -1566,7 +1566,7 @@ recognition.
 338
 00:11:39,130 --> 00:11:41,290
 So for instance, the
-Glass Timeline--
+Glass Timeline &mdash;
 
 339
 00:11:41,290 --> 00:11:43,410
@@ -1600,7 +1600,7 @@ scan as you would for text.
 345
 00:11:54,060 --> 00:11:55,600
 So any new topic related
-to vision--
+to vision &mdash;
 
 346
 00:11:55,600 --> 00:11:57,480
@@ -1769,7 +1769,7 @@ had been circling around
 
 382
 00:13:02,140 --> 00:13:04,370
-inside of Google--
+inside of Google &mdash;
 
 383
 00:13:04,370 --> 00:13:06,960
@@ -1855,7 +1855,7 @@ conveys to you how you
 
 400
 00:13:39,360 --> 00:13:40,790
-interact with it--
+interact with it &mdash;
 
 401
 00:13:40,790 --> 00:13:44,360
@@ -1868,13 +1868,13 @@ contain a check inside of it.
 
 403
 00:13:47,030 --> 00:13:50,700
-So another topic about vision--
+So another topic about vision &mdash;
 color deficiency.
 
 404
 00:13:50,700 --> 00:13:52,630
 So most of us in the room
-have three cones--
+have three cones &mdash;
 
 405
 00:13:52,630 --> 00:13:54,630
@@ -1887,7 +1887,7 @@ have two cones, where you
 
 407
 00:13:56,600 --> 00:14:00,080
-could-- most commonly, you'll
+could &mdash; most commonly, you'll
 lose either the perception of
 
 408
@@ -1901,11 +1901,11 @@ lose perception of
 
 410
 00:14:04,310 --> 00:14:06,780
-blue, although that's--
+blue, although that's &mdash;
 
 411
 00:14:06,780 --> 00:14:07,430
-its more rare--
+its more rare &mdash;
 
 412
 00:14:07,430 --> 00:14:08,600
@@ -2013,7 +2013,7 @@ are working out OK.
 
 434
 00:14:57,380 --> 00:15:00,610
-And there's a lot of-- if go
+And there's a lot of &mdash; if go
 online and just search for it.
 
 435
@@ -2036,7 +2036,7 @@ download to do it locally.
 
 439
 00:15:07,410 --> 00:15:08,400
-Or if you have Photoshop--
+Or if you have Photoshop &mdash;
 
 440
 00:15:08,400 --> 00:15:09,430
@@ -2058,7 +2058,7 @@ I had never seen this before.
 444
 00:15:14,850 --> 00:15:17,220
 You can just go to View, Proof
-Set Up, and actually--
+Set Up, and actually &mdash;
 
 445
 00:15:17,220 --> 00:15:18,220
@@ -2094,7 +2094,7 @@ a mutation it
 
 452
 00:15:31,280 --> 00:15:33,150
-gives you four cones--
+gives you four cones &mdash;
 
 453
 00:15:33,150 --> 00:15:37,070
@@ -2168,7 +2168,7 @@ It's just cool.
 
 468
 00:16:05,120 --> 00:16:06,470
-So moving on--
+So moving on &mdash;
 
 469
 00:16:06,470 --> 00:16:09,570
@@ -2282,7 +2282,7 @@ well to pirates as well.
 492
 00:16:59,000 --> 00:17:00,940
 So let's go on Selective
-Visual Variables--
+Visual Variables &mdash;
 
 493
 00:17:00,940 --> 00:17:02,550
@@ -2309,7 +2309,7 @@ So hopefully you'll win.
 
 498
 00:17:13,450 --> 00:17:14,430
-The task is--
+The task is &mdash;
 
 499
 00:17:14,430 --> 00:17:17,730
@@ -2336,7 +2336,7 @@ And I'll time you.
 
 504
 00:17:26,290 --> 00:17:28,870
-So--
+So &mdash;
 
 505
 00:17:28,870 --> 00:17:30,462
@@ -2420,7 +2420,7 @@ All right.
 
 524
 00:18:10,995 --> 00:18:11,695
-Who is--
+Who is &mdash;
 
 525
 00:18:11,695 --> 00:18:13,300
@@ -2493,7 +2493,7 @@ to do a very clear
 
 540
 00:18:47,550 --> 00:18:48,990
-linear scan-- look this shape.
+linear scan &mdash; look this shape.
 
 541
 00:18:48,990 --> 00:18:49,315
@@ -2533,7 +2533,7 @@ do that linear scan.
 549
 00:19:00,320 --> 00:19:02,790
 So the implication for
-Google search--
+Google search &mdash;
 
 550
 00:19:02,790 --> 00:19:08,880
@@ -2547,7 +2547,7 @@ very quickly in your mind to
 
 552
 00:19:12,980 --> 00:19:15,320
-do a selective--
+do a selective &mdash;
 
 553
 00:19:15,320 --> 00:19:16,860
@@ -2626,7 +2626,7 @@ about how mind works.
 569
 00:19:47,380 --> 00:19:51,850
 So very, very, rough, high level
-overview of the mind--
+overview of the mind &mdash;
 
 570
 00:19:51,850 --> 00:19:54,320
@@ -2641,7 +2641,7 @@ simplification.
 572
 00:19:57,780 --> 00:20:00,930
 And now to make a bad analogy on
-top of the simplification--
+top of the simplification &mdash;
 
 573
 00:20:00,930 --> 00:20:04,440
@@ -2709,7 +2709,7 @@ working memory as they
 
 586
 00:20:34,440 --> 00:20:35,830
-go throughout their day--
+go throughout their day &mdash;
 
 587
 00:20:35,830 --> 00:20:37,510
@@ -2718,7 +2718,7 @@ working on, software they're
 
 588
 00:20:37,510 --> 00:20:39,110
-writing, variables--
+writing, variables &mdash;
 
 589
 00:20:39,110 --> 00:20:40,340
@@ -2830,7 +2830,7 @@ off quickly.
 612
 00:21:25,745 --> 00:21:28,150
 So I was trying to find an
-example in Google products--
+example in Google products &mdash;
 
 613
 00:21:28,150 --> 00:21:29,880
@@ -3036,7 +3036,7 @@ You're just creating music.
 656
 00:22:55,540 --> 00:22:58,250
 Or perhaps a more common
-example-- if you're playing a
+example &mdash; if you're playing a
 
 657
 00:22:58,250 --> 00:23:01,080
@@ -3198,7 +3198,7 @@ reading these very long ones.
 
 691
 00:24:12,920 --> 00:24:14,745
-So moving over into emotion--
+So moving over into emotion &mdash;
 
 692
 00:24:14,745 --> 00:24:17,050
@@ -3328,7 +3328,7 @@ with Money Pro
 
 719
 00:25:18,770 --> 00:25:21,150
-using Comic Sans and--
+using Comic Sans and &mdash;
 
 720
 00:25:21,150 --> 00:25:23,580
@@ -3446,7 +3446,7 @@ impression, to be very solid.
 
 744
 00:26:14,140 --> 00:26:16,130
-So text and culture--
+So text and culture &mdash;
 
 745
 00:26:16,130 --> 00:26:19,040
@@ -3521,7 +3521,7 @@ that dialog.
 760
 00:26:51,890 --> 00:26:54,820
 Jumping over into memory,
-off of attention--
+off of attention &mdash;
 
 761
 00:26:54,820 --> 00:26:55,850
@@ -3682,7 +3682,7 @@ finally find it.
 794
 00:27:55,760 --> 00:27:58,450
 So an alternative design
-could be--
+could be &mdash;
 
 795
 00:27:58,450 --> 00:28:00,950
@@ -3715,7 +3715,7 @@ showing it.
 
 801
 00:28:11,270 --> 00:28:12,450
-By doing this--
+By doing this &mdash;
 
 802
 00:28:12,450 --> 00:28:16,740
@@ -3819,7 +3819,7 @@ them over time.
 
 823
 00:29:06,320 --> 00:29:06,850
-And--
+And &mdash;
 
 824
 00:29:06,850 --> 00:29:08,580
@@ -3950,7 +3950,7 @@ Voice Actions are.
 
 851
 00:30:03,640 --> 00:30:04,500
-And--
+And &mdash;
 
 852
 00:30:04,500 --> 00:30:06,896
@@ -4012,7 +4012,7 @@ which was the easiest.
 864
 00:30:32,480 --> 00:30:35,000
 Also swiping through the
-timeline on Glass-- you're not
+timeline on Glass &mdash; you're not
 
 865
 00:30:35,000 --> 00:30:36,900
@@ -4132,7 +4132,7 @@ this changes.
 
 890
 00:31:26,280 --> 00:31:28,320
-So a couple examples of this--
+So a couple examples of this &mdash;
 
 891
 00:31:28,320 --> 00:31:31,300
@@ -4347,11 +4347,11 @@ have to be consistent.
 
 937
 00:32:58,720 --> 00:33:01,920
-Looking at another example--
+Looking at another example &mdash;
 
 938
 00:33:01,920 --> 00:33:03,120
-2012, 2013--
+2012, 2013 &mdash;
 
 939
 00:33:03,120 --> 00:33:04,830
@@ -4361,7 +4361,7 @@ assistance.
 940
 00:33:04,830 --> 00:33:06,890
 When we were working on Google
-Now, we were worried about--
+Now, we were worried about &mdash;
 
 941
 00:33:06,890 --> 00:33:08,800
@@ -4461,7 +4461,7 @@ FEMALE SPEAKER 2: Oh.
 962
 00:33:59,670 --> 00:34:02,530
 ALEX FAABORG: So three
-very short examples--
+very short examples &mdash;
 
 963
 00:34:02,530 --> 00:34:03,560
@@ -4613,7 +4613,7 @@ And it's right there.
 995
 00:34:58,820 --> 00:35:02,665
 So what's important here is
-that consistency is--
+that consistency is &mdash;
 
 996
 00:35:02,665 --> 00:35:03,215
@@ -4702,7 +4702,7 @@ perception of time.
 1014
 00:35:37,950 --> 00:35:40,590
 So interesting example
-here-- just looking
+here &mdash; just looking
 
 1015
 00:35:40,590 --> 00:35:43,201
@@ -4727,7 +4727,7 @@ This one it slows down.
 1020
 00:35:51,080 --> 00:35:54,940
 You're like, come on, come
-on-- and then finishes.
+on &mdash; and then finishes.
 
 1021
 00:35:54,940 --> 00:35:59,280
@@ -4969,7 +4969,7 @@ reading, if you want to check
 
 1070
 00:37:49,610 --> 00:37:50,190
-out some books--
+out some books &mdash;
 
 1071
 00:37:50,190 --> 00:37:53,050
@@ -5046,7 +5046,7 @@ because we have
 
 1087
 00:38:26,280 --> 00:38:28,140
-about a minute and a half--
+about a minute and a half &mdash;
 
 1088
 00:38:28,140 --> 00:38:29,122

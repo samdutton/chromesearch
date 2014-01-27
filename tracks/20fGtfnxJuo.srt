@@ -462,11 +462,11 @@ I don't have to update software.
 100
 00:04:07,180 --> 00:04:09,740
 I can just run any piece
-of software-- untrusted,
+of software &mdash; untrusted,
 
 101
 00:04:09,740 --> 00:04:11,660
-third party code-- by
+third party code &mdash; by
 clicking on a link.
 
 102
@@ -554,8 +554,8 @@ and things like that.
 
 119
 00:04:51,340 --> 00:04:54,094
-The next thing--
-composability-- was not
+The next thing &mdash;
+composability &mdash; was not
 
 120
 00:04:54,094 --> 00:04:55,260
@@ -796,7 +796,7 @@ in all of your user interfaces.
 
 169
 00:07:08,020 --> 00:07:11,160
-Other things it did--
+Other things it did &mdash;
 it gave you the ability
 
 170
@@ -864,7 +864,7 @@ network environments.
 183
 00:07:46,125 --> 00:07:47,500
 Other things it
-did-- it gave you
+did &mdash; it gave you
 
 184
 00:07:47,500 --> 00:07:50,770
@@ -922,7 +922,7 @@ or one environment.
 
 195
 00:08:21,480 --> 00:08:23,810
-Even Apple-- I don't know
+Even Apple &mdash; I don't know
 if you guys remember this,
 
 196
@@ -1243,7 +1243,7 @@ pauses and things like that,
 262
 00:11:01,430 --> 00:11:03,444
 because even if you
-have multi-core--
+have multi-core &mdash;
 
 263
 00:11:03,444 --> 00:11:04,860
@@ -1253,7 +1253,7 @@ to take advantage
 264
 00:11:04,860 --> 00:11:06,693
 of all the different
-multi-core processors--
+multi-core processors &mdash;
 
 265
 00:11:06,693 --> 00:11:08,830
@@ -1676,7 +1676,7 @@ as well.
 
 352
 00:15:05,050 --> 00:15:08,250
-So another area-- and we
+So another area &mdash; and we
 talked about working well
 
 353
@@ -1743,7 +1743,7 @@ here, as well.
 366
 00:15:45,980 --> 00:15:48,430
 In addition to
-building proxies--
+building proxies &mdash;
 
 367
 00:15:48,430 --> 00:15:50,800
@@ -1848,7 +1848,7 @@ important on mobile devices.
 
 388
 00:16:50,670 --> 00:16:55,270
-So some of you may know-- how
+So some of you may know &mdash; how
 many of you have met app cache?
 
 389
@@ -1984,7 +1984,7 @@ revolutionize communications.
 
 417
 00:18:15,640 --> 00:18:17,960
-Because now, you can really--
+Because now, you can really &mdash;
 when you think about it,
 
 418
@@ -2440,7 +2440,7 @@ direction and things like that,
 513
 00:22:26,376 --> 00:22:27,750
 which is really
-important-- being
+important &mdash; being
 
 514
 00:22:27,750 --> 00:22:30,660
@@ -2512,7 +2512,7 @@ See if I remember all of them.
 
 529
 00:23:06,460 --> 00:23:10,540
-We have-- let's see,
+We have &mdash; let's see,
 there's projecting.
 
 530
@@ -2522,7 +2522,7 @@ debugging to mobile.
 
 531
 00:23:12,485 --> 00:23:17,440
-And I think there's also--
+And I think there's also &mdash;
 what was the other one?
 
 532
@@ -2551,7 +2551,7 @@ debugging GPU performance.
 537
 00:23:27,020 --> 00:23:28,744
 Because it's very
-hard, sometimes--
+hard, sometimes &mdash;
 
 538
 00:23:28,744 --> 00:23:30,160
@@ -2560,7 +2560,7 @@ something, you
 
 539
 00:23:30,160 --> 00:23:32,610
-see a little screen stutter--
+see a little screen stutter &mdash;
 to figure out what happened.
 
 540
@@ -2735,7 +2735,7 @@ about the advantages
 
 575
 00:25:05,015 --> 00:25:07,550
-of the web-- of
+of the web &mdash; of
 this linkability,
 
 576

@@ -292,7 +292,7 @@ And those are not the norm.
 
 62
 00:02:18,501 --> 00:02:19,968
-Liu: What was the choice--
+Liu: What was the choice &mdash;
 
 63
 00:02:19,968 --> 00:02:22,067
@@ -391,7 +391,7 @@ ourselves for a while" goin' on.
 
 83
 00:03:10,834 --> 00:03:12,834
-We're actually--
+We're actually &mdash;
 we're not really under control.
 
 84

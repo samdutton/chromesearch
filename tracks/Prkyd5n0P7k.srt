@@ -110,7 +110,7 @@ A couple of months ago I gave a great talk
 
 23
 00:01:37,200 --> 00:01:40,860
--- I thought it was a great talk. I didn't
+ &mdash; I thought it was a great talk. I didn't
 get promoted afterwards, but it still went
 
 24
@@ -190,7 +190,7 @@ As you guys have been hearing today already
 
 39
 00:02:46,900 --> 00:02:51,279
--- because you're here at Google I/O you are
+ &mdash; because you're here at Google I/O you are
 probably already very aware that Google provides
 
 40
@@ -255,7 +255,7 @@ And they were like, Okay.
 
 52
 00:03:41,400 --> 00:03:46,549
-And finally -- and this was one my manager
+And finally  &mdash; and this was one my manager
 actually made me put on the slide was our
 
 53
@@ -765,7 +765,7 @@ See, the clicker, it's awesome.
 
 154
 00:11:07,560 --> 00:11:14,560
-Now to compete -- uh, blublublublublu. Will
+Now to compete  &mdash; uh, blublublublublu. Will
 she write blublublublublu if I say that again?
 
 155
@@ -1010,7 +1010,7 @@ I was like I need to write a talk, there's
 203
 00:14:52,670 --> 00:14:58,500
 probably going to be robot fans and node.js
-fans. Check. We -- our back end actually runs
+fans. Check. We  &mdash; our back end actually runs
 
 204
 00:14:58,500 --> 00:15:04,160
@@ -1219,7 +1219,7 @@ so what you're looking at right there is their
 
 245
 00:18:02,980 --> 00:18:07,620
-red player actually -- or the player there
+red player actually  &mdash; or the player there
 is actually on the red team, firing projectiles
 
 246
@@ -1334,7 +1334,7 @@ normally see from the client and the server
 
 268
 00:19:49,280 --> 00:19:53,760
--- the authoritative server communication
+ &mdash; the authoritative server communication
 process. Now, if the client and the server
 
 269
@@ -1354,12 +1354,12 @@ in case we get too far ahead. Now one of the
 
 272
 00:20:05,770 --> 00:20:09,870
-other things . This was -- we actually found
+other things . This was  &mdash; we actually found
 this like last week, so I'm glad we fixed
 
 273
 00:20:09,870 --> 00:20:15,950
-the bug before my talk -- yay -- is our third
+the bug before my talk  &mdash; yay  &mdash; is our third
 server actually has to drive the client in
 
 274
@@ -1479,7 +1479,7 @@ C++ this is usually in a header file, and
 
 297
 00:22:04,710 --> 00:22:09,930
-you would cut a server build versus a -- let's
+you would cut a server build versus a  &mdash; let's
 say you have a Junior programmer that comes
 
 298
@@ -1544,7 +1544,7 @@ suite of functions, an API set that allows
 
 310
 00:23:07,490 --> 00:23:12,180
-the client and the server -- well, the server
+the client and the server  &mdash; well, the server
 specifically to actually use that as an API,
 
 311
@@ -1615,7 +1615,7 @@ hate you and you're 12. Yay. What we actually
 324
 00:24:10,770 --> 00:24:16,120
 found was in our original implementation,
-that in a about a second -- in about a second
+that in a about a second  &mdash; in about a second
 
 325
 00:24:16,120 --> 00:24:21,330
@@ -1675,7 +1675,7 @@ we receive the updates as fast as possible
 336
 00:25:11,250 --> 00:25:16,990
 so the client can stay in sync. Now, one of
-the ways we do this -- clicking -- is actually
+the ways we do this  &mdash; clicking  &mdash; is actually
 
 337
 00:25:16,990 --> 00:25:20,980
@@ -1825,7 +1825,7 @@ update that data, won't send it to the client
 366
 00:27:24,120 --> 00:27:30,510
 at all. Now, with the packet grouping, as
-well as the duplicate packet deduping -- Dr.
+well as the duplicate packet deduping  &mdash; Dr.
 
 367
 00:27:30,510 --> 00:27:36,310
@@ -1979,7 +1979,7 @@ is that any given client connection to a server
 
 397
 00:30:07,130 --> 00:30:11,950
-can have -- only have so many open connections,
+can have  &mdash; only have so many open connections,
 so if you have got 4,000 connections sitting
 
 398
@@ -2190,7 +2190,7 @@ thing to do on the internet. [Laughter]. Cool
 439
 00:33:08,860 --> 00:33:11,510
 thing to do on the internet. Cool thing to
-do -- oh, man [Laughter].
+do  &mdash; oh, man [Laughter].
 
 440
 00:33:11,510 --> 00:33:15,490
@@ -2200,7 +2200,7 @@ you've just got to play with it.
 441
 00:33:15,490 --> 00:33:20,050
 Anyhow, what I actually do is I actually create
--- in order to combat the fact that this one
+ &mdash; in order to combat the fact that this one
 
 442
 00:33:20,050 --> 00:33:24,020
@@ -2219,7 +2219,7 @@ the screen, and lets the GPU figure out the
 
 445
 00:33:32,430 --> 00:33:37,140
--- for hardware accelerated -- let's the GPU
+ &mdash; for hardware accelerated  &mdash; let's the GPU
 figure out the details there. So what I actually
 
 446
@@ -2264,7 +2264,7 @@ else out. Now, let's talk about the tools.
 
 454
 00:34:18,579 --> 00:34:24,690
-So when you are writing games -- actually
+So when you are writing games  &mdash; actually
 taking a step back, let's take a step back.
 
 455
@@ -2430,7 +2430,7 @@ The next tool we actually use is a great tool
 487
 00:37:00,299 --> 00:37:06,519
 called Texture Packer. Texture Packer is probably
-one of -- one of the most advanced tools that
+one of  &mdash; one of the most advanced tools that
 
 488
 00:37:06,519 --> 00:37:10,160
@@ -2540,7 +2540,7 @@ And really it's all given to us by these two
 509
 00:38:38,619 --> 00:38:44,779
 simple tools.
-So -- so the lessons, let's talk about what
+So  &mdash; so the lessons, let's talk about what
 
 510
 00:38:44,779 --> 00:38:50,420
@@ -2630,7 +2630,7 @@ the games more than any other technology pushed
 527
 00:40:01,160 --> 00:40:06,170
 the boundaries, pushed the envelope, and trying
-to be a -- a modern browser, Chrome is very
+to be a  &mdash; a modern browser, Chrome is very
 
 528
 00:40:06,170 --> 00:40:11,799
@@ -2730,7 +2730,7 @@ middle of polygon, versus edge of polygon,
 547
 00:41:34,029 --> 00:41:38,140
 and what's the GPU doing and out of process
--- no. Hardware accelerated canvas shielded
+ &mdash; no. Hardware accelerated canvas shielded
 
 548
 00:41:38,140 --> 00:41:41,490
@@ -3040,7 +3040,7 @@ code. If it's not the server, exclude it.
 609
 00:46:29,049 --> 00:46:35,499
 Now, for some side classes we actually have
--- for instance, if you want to load graphics
+ &mdash; for instance, if you want to load graphics
 
 610
 00:46:35,499 --> 00:46:39,339
@@ -3150,7 +3150,7 @@ I'm a fan of grits, that's all there is to
 631
 00:48:03,869 --> 00:48:06,089
 it.
-There's only -- let me put it this way, as
+There's only  &mdash; let me put it this way, as
 
 632
 00:48:06,089 --> 00:48:10,999

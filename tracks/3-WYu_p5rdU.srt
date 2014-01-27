@@ -1457,11 +1457,11 @@ everything.
 318
 00:12:19,180 --> 00:12:21,660
 V8 has, in the last
-year or so--
+year or so &mdash;
 
 319
 00:12:21,660 --> 00:12:25,090
-year, 18 months-- come up with
+year, 18 months &mdash; come up with
 incremental GC, which spreads
 
 320
@@ -1643,7 +1643,7 @@ has got better.
 
 359
 00:13:57,090 --> 00:13:58,040
-I don't know how much--
+I don't know how much &mdash;
 
 360
 00:13:58,040 --> 00:14:00,550
@@ -1653,7 +1653,7 @@ mic [INAUDIBLE].
 361
 00:14:00,550 --> 00:14:03,155
 ROWAN BEENJE: I don't know how
-much everyone knows about--
+much everyone knows about &mdash;
 
 362
 00:14:03,155 --> 00:14:05,830
@@ -2031,7 +2031,7 @@ directly to the
 
 444
 00:17:23,609 --> 00:17:24,609
-next question, it's--
+next question, it's &mdash;
 
 445
 00:17:24,609 --> 00:17:26,780
@@ -2366,7 +2366,7 @@ be possible.
 
 516
 00:20:21,080 --> 00:20:21,865
-But--
+But &mdash;
 
 517
 00:20:21,865 --> 00:20:23,140
@@ -2391,7 +2391,7 @@ they go to swap now?
 521
 00:20:33,430 --> 00:20:35,670
 What else should they be doing
-here in order to--
+here in order to &mdash;
 
 522
 00:20:35,670 --> 00:20:38,250
@@ -2987,7 +2987,7 @@ It's been kind of deprecated
 
 649
 00:26:00,520 --> 00:26:02,930
-PAUL: Yeah, they may be like--
+PAUL: Yeah, they may be like &mdash;
 
 650
 00:26:02,930 --> 00:26:05,710
@@ -3269,7 +3269,7 @@ we have it in Chrome.
 
 708
 00:28:53,510 --> 00:28:58,230
-And the way you look at it-- so
+And the way you look at it &mdash; so
 there is no GPU profiling.
 
 709
@@ -3399,7 +3399,7 @@ something like, you've
 735
 00:30:16,140 --> 00:30:18,270
 triggered something
-which might do--
+which might do &mdash;
 
 736
 00:30:18,270 --> 00:30:20,640
@@ -3757,7 +3757,7 @@ of the renderer.
 
 814
 00:32:56,310 --> 00:32:57,430
-CHRIS LORD: I'm not sure if--
+CHRIS LORD: I'm not sure if &mdash;
 
 815
 00:32:57,430 --> 00:33:00,970
@@ -3780,12 +3780,12 @@ to GPU memory, though.
 
 819
 00:33:07,260 --> 00:33:08,210
-That also works--
+That also works &mdash;
 
 820
 00:33:08,210 --> 00:33:10,110
 I think it works, it should
-work-- on mobile.
+work &mdash; on mobile.
 
 821
 00:33:10,110 --> 00:33:13,140
@@ -4059,7 +4059,7 @@ one tool gives you, or any one
 
 880
 00:35:48,450 --> 00:35:49,240
-performance metric--
+performance metric &mdash;
 
 881
 00:35:49,240 --> 00:35:52,220
@@ -4115,7 +4115,7 @@ And engagement collapsed.
 
 892
 00:36:19,080 --> 00:36:20,970
-You would still get--
+You would still get &mdash;
 
 893
 00:36:20,970 --> 00:36:22,380
@@ -4146,7 +4146,7 @@ what matters.
 
 899
 00:36:30,390 --> 00:36:33,360
-So if what you care about--
+So if what you care about &mdash;
 
 900
 00:36:33,360 --> 00:36:34,980
@@ -4334,7 +4334,7 @@ practical things that are worth
 
 940
 00:38:16,840 --> 00:38:20,520
-knowing before you even--
+knowing before you even &mdash;
 
 941
 00:38:20,520 --> 00:38:21,760
@@ -4450,7 +4450,7 @@ blending and so on.
 
 964
 00:39:28,460 --> 00:39:30,805
-Just sort of small tips that--
+Just sort of small tips that &mdash;
 
 965
 00:39:30,805 --> 00:39:34,090
@@ -4555,7 +4555,7 @@ and so on.
 986
 00:40:33,190 --> 00:40:36,820
 So yeah, SVGs are
-going to be--
+going to be &mdash;
 
 987
 00:40:36,820 --> 00:40:38,040
@@ -4568,7 +4568,7 @@ using them for a reason
 
 989
 00:40:40,970 --> 00:40:41,910
-and you're not just--
+and you're not just &mdash;
 
 990
 00:40:41,910 --> 00:40:45,980
@@ -5154,12 +5154,12 @@ GC when to collect?
 
 1116
 00:46:31,080 --> 00:46:33,890
-And do we want--
+And do we want &mdash;
 
 1117
 00:46:33,890 --> 00:46:38,900
 it's like every bit of control
-that you add is kind of--
+that you add is kind of &mdash;
 
 1118
 00:46:38,900 --> 00:46:41,060
@@ -5554,7 +5554,7 @@ for the most part.
 1203
 00:50:08,540 --> 00:50:12,070
 So that's not something
-you could put on--
+you could put on &mdash;
 
 1204
 00:50:12,070 --> 00:50:13,900
@@ -6284,7 +6284,7 @@ profiler and you do some
 1359
 00:57:15,900 --> 00:57:19,180
 stuff, and you stop it, it
-will basically show you--
+will basically show you &mdash;
 
 1360
 00:57:19,180 --> 00:57:21,570

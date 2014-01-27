@@ -252,7 +252,7 @@ that's one of the things that
 
 56
 00:02:19,940 --> 00:02:22,310
-people on the internet--
+people on the internet &mdash;
 well people on the
 
 57
@@ -529,7 +529,7 @@ generated with WebGL, we
 
 116
 00:04:33,570 --> 00:04:34,800
-generated--
+generated &mdash;
 
 117
 00:04:34,800 --> 00:04:38,330
@@ -579,7 +579,7 @@ of assemble them up or
 
 127
 00:04:56,090 --> 00:05:00,210
-was it like-- would you build
+was it like &mdash; would you build
 Australia in one go?
 
 128
@@ -620,7 +620,7 @@ PAUL KINLAN: It's pretty cool.
 
 136
 00:05:14,485 --> 00:05:16,160
-I remember seeing-- it's
+I remember seeing &mdash; it's
 huge in the museum
 
 137
@@ -635,7 +635,7 @@ it is very big.
 139
 00:05:18,270 --> 00:05:20,330
 PAUL KINLAN: We can see on the
-screen now it's like four--
+screen now it's like four &mdash;
 
 140
 00:05:20,330 --> 00:05:23,080
@@ -672,7 +672,7 @@ MATTIAS EKENDAHL: Yeah.
 147
 00:05:31,210 --> 00:05:32,830
 PAUL KINLAN: I didn't want
-people searching for--
+people searching for &mdash;
 
 148
 00:05:32,830 --> 00:05:33,787
@@ -764,7 +764,7 @@ what we are really
 
 167
 00:06:19,450 --> 00:06:21,730
-tracing is not from--
+tracing is not from &mdash;
 
 168
 00:06:21,730 --> 00:06:24,210
@@ -1120,7 +1120,7 @@ separated by this huge expanse
 245
 00:09:07,980 --> 00:09:11,556
 of the world, essentially,
-you can actually--
+you can actually &mdash;
 
 246
 00:09:11,556 --> 00:09:13,460
@@ -1182,7 +1182,7 @@ quite interesting.
 259
 00:09:33,180 --> 00:09:34,880
 Some of the stuff that I
-find most interesting--
+find most interesting &mdash;
 
 260
 00:09:34,880 --> 00:09:36,410
@@ -1191,7 +1191,7 @@ this is kind
 
 261
 00:09:36,410 --> 00:09:37,580
-of Tellart or not--
+of Tellart or not &mdash;
 
 262
 00:09:37,580 --> 00:09:41,000
@@ -1227,7 +1227,7 @@ network health essentially.
 
 269
 00:09:55,310 --> 00:09:56,930
-Ping will normally--
+Ping will normally &mdash;
 
 270
 00:09:56,930 --> 00:09:59,160
@@ -1279,12 +1279,12 @@ of Google, or
 
 280
 00:10:18,120 --> 00:10:18,720
-some other the service--
+some other the service &mdash;
 
 281
 00:10:18,720 --> 00:10:21,300
 I probably can't say
-Google too much--
+Google too much &mdash;
 
 282
 00:10:21,300 --> 00:10:23,496
@@ -1334,7 +1334,7 @@ packet of data that you send.
 292
 00:10:43,850 --> 00:10:47,410
 And this is basically to ensure
-that the data doesn't--
+that the data doesn't &mdash;
 
 293
 00:10:47,410 --> 00:10:48,680
@@ -1491,7 +1491,7 @@ the browser, right?
 325
 00:12:03,570 --> 00:12:06,490
 So do you know how this
-was actually--
+was actually &mdash;
 
 326
 00:12:06,490 --> 00:12:08,776
@@ -1523,7 +1523,7 @@ was built?
 
 332
 00:12:18,650 --> 00:12:20,080
-I hope you do, otherwise--
+I hope you do, otherwise &mdash;
 
 333
 00:12:20,080 --> 00:12:21,220
@@ -1559,7 +1559,7 @@ basically a Python server to
 
 340
 00:12:36,940 --> 00:12:37,690
-simulate traceroute--
+simulate traceroute &mdash;
 
 341
 00:12:37,690 --> 00:12:38,530
@@ -1668,7 +1668,7 @@ we have an IP address, and
 
 364
 00:13:24,825 --> 00:13:26,630
-that IP address--
+that IP address &mdash;
 
 365
 00:13:26,630 --> 00:13:30,110

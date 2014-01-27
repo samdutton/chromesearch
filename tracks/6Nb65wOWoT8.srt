@@ -20,7 +20,7 @@ has asked this question.
 
 6
 00:00:04,870 --> 00:00:05,120
-I think--
+I think &mdash;
 
 7
 00:00:05,120 --> 00:00:06,413
@@ -39,7 +39,7 @@ answer show.
 10
 00:00:08,490 --> 00:00:10,565
 So if any of you out there would
-like to ask questions--
+like to ask questions &mdash;
 
 11
 00:00:10,565 --> 00:00:14,235
@@ -161,7 +161,7 @@ PETE LEPAGE: Cool.
 
 38
 00:01:06,840 --> 00:01:10,090
-And so you're in Brazil and--
+And so you're in Brazil and &mdash;
 
 39
 00:01:10,090 --> 00:01:11,010
@@ -411,7 +411,7 @@ really important there.
 
 92
 00:03:49,250 --> 00:03:50,620
-These apps should work--
+These apps should work &mdash;
 
 93
 00:03:50,620 --> 00:03:53,190
@@ -500,7 +500,7 @@ them off into two different
 
 111
 00:04:42,900 --> 00:04:44,010
-categories--
+categories &mdash;
 
 112
 00:04:44,010 --> 00:04:49,160
@@ -667,7 +667,7 @@ changes or anything like that.
 146
 00:06:33,910 --> 00:06:36,040
 And what we did is
-in two days--
+in two days &mdash;
 
 147
 00:06:36,040 --> 00:06:38,740
@@ -769,7 +769,7 @@ Saturday the week before I/O
 
 168
 00:07:32,600 --> 00:07:35,050
-because we wanted to show--
+because we wanted to show &mdash;
 
 169
 00:07:35,050 --> 00:07:39,760
@@ -782,7 +782,7 @@ Google I/O floor.
 
 171
 00:07:41,100 --> 00:07:41,680
-So yeah--
+So yeah &mdash;
 
 172
 00:07:41,680 --> 00:07:43,850
@@ -817,7 +817,7 @@ with bacon included, but I
 
 179
 00:08:08,400 --> 00:08:09,810
-couldn't figure out--
+couldn't figure out &mdash;
 
 180
 00:08:09,810 --> 00:08:12,760
@@ -831,7 +831,7 @@ a USB frying pan to cook
 
 182
 00:08:16,850 --> 00:08:18,700
-the bacon and then--
+the bacon and then &mdash;
 
 183
 00:08:18,700 --> 00:08:22,010
@@ -845,7 +845,7 @@ present on Google I/O.
 
 185
 00:08:26,264 --> 00:08:27,072
-PETE LEPAGE: Yeah, it might--
+PETE LEPAGE: Yeah, it might &mdash;
 
 186
 00:08:27,072 --> 00:08:28,470
@@ -1076,7 +1076,7 @@ as the developer.
 236
 00:11:03,450 --> 00:11:07,260
 The programming model
-of a Chrome app is--
+of a Chrome app is &mdash;
 
 237
 00:11:07,260 --> 00:11:09,690
@@ -1095,7 +1095,7 @@ and it's invisible.
 
 240
 00:11:17,775 --> 00:11:18,840
-So there's--
+So there's &mdash;
 
 241
 00:11:18,840 --> 00:11:20,750
@@ -1201,7 +1201,7 @@ to user events, but the
 
 263
 00:12:21,110 --> 00:12:22,620
-background page--
+background page &mdash;
 
 264
 00:12:22,620 --> 00:12:26,620
@@ -1249,7 +1249,7 @@ quit your application.
 
 274
 00:12:57,810 --> 00:13:00,290
-But the system can also--
+But the system can also &mdash;
 
 275
 00:13:00,290 --> 00:13:04,210
@@ -1315,7 +1315,7 @@ page on this
 
 289
 00:13:45,910 --> 00:13:48,350
-diagram is actually called--
+diagram is actually called &mdash;
 
 290
 00:13:48,350 --> 00:13:51,300
@@ -1409,7 +1409,7 @@ World app right after.
 309
 00:15:00,720 --> 00:15:05,050
 But just to give you
-a rough idea--
+a rough idea &mdash;
 
 310
 00:15:05,050 --> 00:15:09,410
@@ -1641,7 +1641,7 @@ you're going to want to
 358
 00:18:04,210 --> 00:18:06,830
 play with and change
-and learn as--
+and learn as &mdash;
 
 359
 00:18:06,830 --> 00:18:07,980
@@ -1707,7 +1707,7 @@ kind of things.
 
 373
 00:18:36,030 --> 00:18:38,440
-And so one of the things that--
+And so one of the things that &mdash;
 as we mentioned at the
 
 374
@@ -1806,7 +1806,7 @@ to see in a native app.
 394
 00:19:38,460 --> 00:19:41,435
 So we wanted to give you those
-as well for your--
+as well for your &mdash;
 
 395
 00:19:41,435 --> 00:19:41,830
@@ -1904,7 +1904,7 @@ have you seen?
 415
 00:20:36,970 --> 00:20:44,470
 RENATO MANGINI: Well, that's
-a whole new apps--
+a whole new apps &mdash;
 
 416
 00:20:44,470 --> 00:20:51,160
@@ -1921,7 +1921,7 @@ requires a network.
 419
 00:20:56,050 --> 00:20:59,600
 I cannot even imagine what
-develops will come with--
+develops will come with &mdash;
 
 420
 00:20:59,600 --> 00:21:01,960
@@ -1936,7 +1936,7 @@ going to do with this.
 422
 00:21:05,120 --> 00:21:06,230
 Cool, you want to keep
-talking about--
+talking about &mdash;
 
 423
 00:21:06,230 --> 00:21:09,490
@@ -2041,7 +2041,7 @@ these apps, and then
 444
 00:22:03,990 --> 00:22:06,420
 as they become available
-and stable--
+and stable &mdash;
 
 445
 00:22:06,420 --> 00:22:08,330
@@ -2209,7 +2209,7 @@ and chrome.storage.sync and
 479
 00:23:58,340 --> 00:24:03,350
 the sync version
-of local and--
+of local and &mdash;
 
 480
 00:24:03,350 --> 00:24:05,590
@@ -2361,7 +2361,7 @@ stable channel yet.
 511
 00:25:32,360 --> 00:25:36,560
 So you can always try it in
-Chrome Canary or Chrome Beta--
+Chrome Canary or Chrome Beta &mdash;
 
 512
 00:25:36,560 --> 00:25:39,870
@@ -2419,7 +2419,7 @@ the latest stuff.
 523
 00:26:10,790 --> 00:26:13,730
 The other option would be to
-install Chromium as a--
+install Chromium as a &mdash;
 
 524
 00:26:13,730 --> 00:26:18,980
@@ -2432,7 +2432,7 @@ github.com/googl
 526
 00:26:19,260 --> 00:26:24,750
 echrome/chrome-app-samples
-and--
+and &mdash;
 
 527
 00:26:24,750 --> 00:26:27,320
@@ -2469,7 +2469,7 @@ extension APIs.
 
 534
 00:26:46,330 --> 00:26:49,420
-Because when we ask-- as we
+Because when we ask &mdash; as we
 mentioned in the manifest, you
 
 535
@@ -2526,7 +2526,7 @@ simpler, which I
 
 546
 00:27:13,560 --> 00:27:17,170
-really love, is we have--
+really love, is we have &mdash;
 
 547
 00:27:17,170 --> 00:27:18,320
@@ -2576,7 +2576,7 @@ now, which I'll make
 
 558
 00:27:41,800 --> 00:27:43,770
-a little bit bigger--
+a little bit bigger &mdash;
 
 559
 00:27:43,770 --> 00:27:46,775
@@ -2610,7 +2610,7 @@ new tab here, I've now got
 565
 00:28:05,080 --> 00:28:09,450
 this Chrome Apps Dojo,
-which when I launch--
+which when I launch &mdash;
 
 566
 00:28:09,450 --> 00:28:11,430
@@ -2629,7 +2629,7 @@ other buttons.
 
 569
 00:28:16,610 --> 00:28:18,250
-It's just a window--
+It's just a window &mdash;
 
 570
 00:28:18,250 --> 00:28:20,910
@@ -2719,7 +2719,7 @@ point here is that you can
 
 589
 00:29:00,440 --> 00:29:02,220
-actually go and sync--
+actually go and sync &mdash;
 
 590
 00:29:02,220 --> 00:29:05,500
@@ -2751,7 +2751,7 @@ PAUL LEWIS: Yeah.
 
 596
 00:29:17,450 --> 00:29:17,950
-So--
+So &mdash;
 
 597
 00:29:17,950 --> 00:29:19,220
@@ -2809,7 +2809,7 @@ you the underlying code,
 
 609
 00:29:43,830 --> 00:29:45,930
-which is-- again, it's
+which is &mdash; again, it's
 really simple.
 
 610
@@ -2855,7 +2855,7 @@ that that's what
 
 619
 00:30:09,750 --> 00:30:11,430
-you're talking about--
+you're talking about &mdash;
 
 620
 00:30:11,430 --> 00:30:13,580
@@ -3033,7 +3033,7 @@ London, it's 5:30 right
 
 658
 00:31:52,940 --> 00:31:55,280
-about-- well, I guess it's a
+about &mdash; well, I guess it's a
 little after 5:30 now, but
 
 659
@@ -3467,7 +3467,7 @@ PAUL LEWIS: Yeah.
 
 751
 00:36:23,930 --> 00:36:25,260
-Let me--
+Let me &mdash;
 
 752
 00:36:25,260 --> 00:36:25,560
@@ -3765,11 +3765,11 @@ later, also.
 
 814
 00:39:53,180 --> 00:39:54,120
-But some of the--
+But some of the &mdash;
 
 815
 00:39:54,120 --> 00:39:55,490
-PETE LEPAGE: Let's just talk--
+PETE LEPAGE: Let's just talk &mdash;
 
 816
 00:39:55,490 --> 00:39:58,350
@@ -3783,7 +3783,7 @@ basically says it protects
 
 818
 00:40:01,750 --> 00:40:04,530
-your apps from--
+your apps from &mdash;
 
 819
 00:40:04,530 --> 00:40:08,150
@@ -3835,7 +3835,7 @@ rest of your application.
 829
 00:40:34,760 --> 00:40:38,680
 So Renato, I'll pass it back
-to you and you can--
+to you and you can &mdash;
 
 830
 00:40:38,680 --> 00:40:42,700
@@ -3849,7 +3849,7 @@ CSP tries to avoid,
 
 832
 00:40:49,480 --> 00:40:52,070
-which is new function--
+which is new function &mdash;
 
 833
 00:40:52,070 --> 00:40:53,200
@@ -3915,7 +3915,7 @@ things so that we can get them
 846
 00:41:32,240 --> 00:41:36,590
 fixed and ready for you to go
-start using in real-- in
+start using in real &mdash; in
 
 847
 00:41:36,590 --> 00:41:39,240
@@ -4198,7 +4198,7 @@ of your application.
 
 905
 00:45:01,250 --> 00:45:02,550
-None of those are--
+None of those are &mdash;
 
 906
 00:45:02,550 --> 00:45:05,120
@@ -4231,7 +4231,7 @@ tag and iframe tag.
 912
 00:45:26,620 --> 00:45:29,470
 So to simply answer the
-tech, the iframe--
+tech, the iframe &mdash;
 
 913
 00:45:29,470 --> 00:45:33,590
@@ -4374,7 +4374,7 @@ to some degree is ubiquity.
 942
 00:47:01,020 --> 00:47:05,220
 And certainly HTML5 and
-its support across--
+its support across &mdash;
 
 943
 00:47:05,220 --> 00:47:08,440

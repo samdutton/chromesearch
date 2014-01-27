@@ -23,7 +23,7 @@ I joined Lanyard.
 
 6
 00:00:16,770 --> 00:00:18,020
-And when I joined Lanyard--
+And when I joined Lanyard &mdash;
 
 7
 00:00:18,020 --> 00:00:25,286
@@ -218,8 +218,8 @@ of URLs, like everything that
 
 48
 00:01:55,534 --> 00:01:58,560
-begins with avatars-- images,
-avatars-- and then say, well,
+begins with avatars &mdash; images,
+avatars &mdash; and then say, well,
 
 49
 00:01:58,560 --> 00:02:00,900
@@ -396,7 +396,7 @@ this, and I'm showing this
 
 86
 00:03:32,130 --> 00:03:33,350
-diagram, going, look--
+diagram, going, look &mdash;
 
 87
 00:03:33,350 --> 00:03:34,670
@@ -410,7 +410,7 @@ Look how complicated it is.
 89
 00:03:37,440 --> 00:03:39,700
 But if you think about some code
-you've written recently--
+you've written recently &mdash;
 
 90
 00:03:39,700 --> 00:03:41,950
@@ -419,7 +419,7 @@ like, I don't know, form
 
 91
 00:03:41,950 --> 00:03:43,720
-validation--
+validation &mdash;
 
 92
 00:03:43,720 --> 00:03:45,940
@@ -718,12 +718,12 @@ Our API is the manifest.
 156
 00:06:06,040 --> 00:06:08,980
 So if I do this, I add
-an empty manifest--
+an empty manifest &mdash;
 
 157
 00:06:08,980 --> 00:06:10,870
 well, just with the words
-cache manifest--
+cache manifest &mdash;
 
 158
 00:06:10,870 --> 00:06:13,360
@@ -819,7 +819,7 @@ page a link, an image to a
 177
 00:07:09,200 --> 00:07:15,630
 picture of your cat from
-Flickr-- do you have a cat?
+Flickr &mdash; do you have a cat?
 
 178
 00:07:15,630 --> 00:07:17,480
@@ -827,7 +827,7 @@ Who has a cat?
 
 179
 00:07:17,480 --> 00:07:19,910
-Your cat-- good, Bruce's cat.
+Your cat &mdash; good, Bruce's cat.
 
 180
 00:07:19,910 --> 00:07:22,330
@@ -992,7 +992,7 @@ the shouty Hitler thing.
 216
 00:08:27,660 --> 00:08:29,670
 I'm not suggesting AppCache
-is like Hitler--
+is like Hitler &mdash;
 
 217
 00:08:29,670 --> 00:08:31,820
@@ -1315,7 +1315,7 @@ the default.
 
 284
 00:11:09,220 --> 00:11:09,850
-Respond--
+Respond &mdash;
 
 285
 00:11:09,850 --> 00:11:12,570
@@ -1405,7 +1405,7 @@ things around it.
 
 303
 00:11:51,840 --> 00:11:53,854
-I don't how this transition--
+I don't how this transition &mdash;
 you have to clap.
 
 304
@@ -2114,7 +2114,7 @@ dialogue.
 452
 00:19:15,090 --> 00:19:18,710
 But as long as we make that
-flow nice and don't ask--
+flow nice and don't ask &mdash;
 
 453
 00:19:18,710 --> 00:19:24,340
@@ -2171,7 +2171,7 @@ offline app?
 464
 00:19:48,840 --> 00:19:51,670
 So we have a few
-people who've--
+people who've &mdash;
 
 465
 00:19:51,670 --> 00:19:53,630
@@ -2200,12 +2200,12 @@ what the application is?
 470
 00:20:05,070 --> 00:20:07,530
 I don't think that people,
-generally speaking-- certainly
+generally speaking &mdash; certainly
 
 471
 00:20:07,530 --> 00:20:13,220
 not the app platform models
-that we have today--
+that we have today &mdash;
 
 472
 00:20:13,220 --> 00:20:15,690
@@ -2266,7 +2266,7 @@ to look, it's also an
 
 484
 00:20:41,600 --> 00:20:42,160
-application--
+application &mdash;
 
 485
 00:20:42,160 --> 00:20:45,840
@@ -2291,7 +2291,7 @@ point about what it means to
 489
 00:20:53,200 --> 00:20:55,780
 transition as a builder thinking
-about an app--
+about an app &mdash;
 
 490
 00:20:55,780 --> 00:20:57,080
@@ -2527,7 +2527,7 @@ these things where, as a
 
 539
 00:22:51,869 --> 00:22:54,720
-browser, we treat them as--
+browser, we treat them as &mdash;
 we have no idea if this is
 
 540
@@ -2876,7 +2876,7 @@ one-legged dog scenario?
 612
 00:26:32,266 --> 00:26:37,910
 ALEX RUSSELL: So I think
-the answer to this is--
+the answer to this is &mdash;
 
 613
 00:26:37,910 --> 00:26:40,850
@@ -3073,7 +3073,7 @@ realize at the end of this
 
 653
 00:28:16,350 --> 00:28:18,870
-long, painful journey-- which
+long, painful journey &mdash; which
 Jake took, and which the Gmail
 
 654
@@ -3084,7 +3084,7 @@ people who have been building
 655
 00:28:21,160 --> 00:28:23,130
 offline apps have taken
-independently--
+independently &mdash;
 
 656
 00:28:23,130 --> 00:28:24,900
@@ -3355,7 +3355,7 @@ the model working if you
 
 712
 00:30:35,850 --> 00:30:36,600
-imagine an app--
+imagine an app &mdash;
 
 713
 00:30:36,600 --> 00:30:37,490
@@ -3363,7 +3363,7 @@ I think I'm all right.
 
 714
 00:30:37,490 --> 00:30:40,710
-If you imagine an app--
+If you imagine an app &mdash;
 no, I'm not.
 
 715
@@ -3373,11 +3373,11 @@ a series of messages from
 
 716
 00:30:44,410 --> 00:30:45,750
-people you're subscribed to--
+people you're subscribed to &mdash;
 
 717
 00:30:45,750 --> 00:30:47,440
-basically Twitter--
+basically Twitter &mdash;
 
 718
 00:30:47,440 --> 00:30:49,230
@@ -3479,7 +3479,7 @@ experience.
 
 738
 00:31:35,900 --> 00:31:37,730
-ANDREW BETTIS: Can I pick up--
+ANDREW BETTIS: Can I pick up &mdash;
 
 739
 00:31:37,730 --> 00:31:40,960
@@ -4139,7 +4139,7 @@ particularly complex models in
 877
 00:37:39,840 --> 00:37:42,170
 the browser to actually
-be able to support--
+be able to support &mdash;
 
 878
 00:37:42,170 --> 00:37:47,160
@@ -4576,11 +4576,11 @@ developer at Twitter who's
 969
 00:41:31,090 --> 00:41:33,180
 single-handedly written
-two from scratch--
+two from scratch &mdash;
 
 970
 00:41:33,180 --> 00:41:34,590
-Hogan and Eckersley--
+Hogan and Eckersley &mdash;
 
 971
 00:41:34,590 --> 00:41:37,310
@@ -4614,7 +4614,7 @@ of your app?
 977
 00:41:45,970 --> 00:41:48,220
 MARK CHRISTIAN: Well,
-application versus website--
+application versus website &mdash;
 
 978
 00:41:48,220 --> 00:41:51,210
@@ -4672,7 +4672,7 @@ the HTTP cache is for.
 989
 00:42:12,860 --> 00:42:16,740
 The application cache is for
-caching applications--
+caching applications &mdash;
 
 990
 00:42:16,740 --> 00:42:19,630
@@ -4744,7 +4744,7 @@ use case for AppCache, is
 
 1004
 00:42:57,610 --> 00:42:59,015
-actually making things--
+actually making things &mdash;
 
 1005
 00:42:59,015 --> 00:42:59,880
@@ -4839,7 +4839,7 @@ application experience be more
 
 1024
 00:44:03,770 --> 00:44:06,740
-competitive with native--
+competitive with native &mdash;
 where on native you're
 
 1025
@@ -4947,7 +4947,7 @@ there's going to have to be a
 1047
 00:44:59,080 --> 00:45:02,630
 bouncer there that kicks
-people out-- unless the
+people out &mdash; unless the
 
 1048
 00:45:02,630 --> 00:45:04,190
@@ -5189,7 +5189,7 @@ slightly less dear, and these
 1098
 00:47:07,720 --> 00:47:11,800
 are totally ephemeral, I don't
-really need them--
+really need them &mdash;
 
 1099
 00:47:11,800 --> 00:47:19,160
@@ -5789,7 +5789,7 @@ should be doing tomorrow.
 1224
 00:52:16,990 --> 00:52:22,030
 So one of the most popular
-questions we have is--
+questions we have is &mdash;
 
 1225
 00:52:22,030 --> 00:52:24,730
@@ -5944,7 +5944,7 @@ This is a bad thing.
 1258
 00:53:36,010 --> 00:53:39,450
 It's the reason that IndexDB
-is coming along--
+is coming along &mdash;
 
 1259
 00:53:39,450 --> 00:53:41,790
@@ -6163,7 +6163,7 @@ develop these solutions.
 1305
 00:55:25,970 --> 00:55:30,850
 So the local storage issue of
-being asynchronous API--
+being asynchronous API &mdash;
 
 1306
 00:55:30,850 --> 00:55:32,840
@@ -6210,7 +6210,7 @@ first time you see it.
 
 1315
 00:55:57,650 --> 00:55:59,370
-And even just like calling--
+And even just like calling &mdash;
 
 1316
 00:55:59,370 --> 00:56:01,270
@@ -6736,11 +6736,11 @@ might have something like
 1427
 01:00:58,150 --> 01:01:01,130
 IndexDB, where it's what you can
-do with it-- there's loads
+do with it &mdash; there's loads
 
 1428
 01:01:01,130 --> 01:01:02,090
-you can do with it--
+you can do with it &mdash;
 
 1429
 01:01:02,090 --> 01:01:04,000

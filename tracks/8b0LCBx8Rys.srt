@@ -47,7 +47,7 @@ Chrome Apps and Web Intents.
 
 12
 00:00:17,200 --> 00:00:18,890
-Our normal producer, Peter--
+Our normal producer, Peter &mdash;
 
 13
 00:00:18,890 --> 00:00:20,170
@@ -185,7 +185,7 @@ trying to make these web
 
 43
 00:01:01,710 --> 00:01:02,380
-applications--
+applications &mdash;
 
 44
 00:01:02,380 --> 00:01:05,030
@@ -194,7 +194,7 @@ normally [? with ?]
 
 45
 00:01:05,030 --> 00:01:07,050
-HTML, JavaScript, and CSS--
+HTML, JavaScript, and CSS &mdash;
 
 46
 00:01:07,050 --> 00:01:09,350
@@ -420,7 +420,7 @@ pretty cool.
 94
 00:02:28,120 --> 00:02:31,260
 And as you can see we hactually
-have-- actually?
+have &mdash; actually?
 
 95
 00:02:31,260 --> 00:02:32,400
@@ -903,7 +903,7 @@ thing that most
 
 198
 00:05:57,280 --> 00:05:58,580
-people want to do is--
+people want to do is &mdash;
 
 199
 00:05:58,580 --> 00:06:00,060
@@ -1213,7 +1213,7 @@ It's just a screen.
 265
 00:08:15,940 --> 00:08:18,850
 It's a window screen
-that looks--
+that looks &mdash;
 
 266
 00:08:18,850 --> 00:08:19,870
@@ -1820,7 +1820,7 @@ prefixing it.
 
 396
 00:13:29,490 --> 00:13:32,520
-It's kind of like in Android--
+It's kind of like in Android &mdash;
 
 397
 00:13:32,520 --> 00:13:36,500
@@ -1928,7 +1928,7 @@ be the value
 
 419
 00:14:23,150 --> 00:14:25,012
-that we put into the--
+that we put into the &mdash;
 
 420
 00:14:25,012 --> 00:14:27,980
@@ -2210,7 +2210,7 @@ to share it out.
 480
 00:16:36,960 --> 00:16:39,920
 So now we've shared out to
-the world wide web--
+the world wide web &mdash;
 
 481
 00:16:39,920 --> 00:16:40,740
@@ -2505,7 +2505,7 @@ to receive intents?
 544
 00:18:43,830 --> 00:18:46,750
 PAUL KINLAN: I before
-E, except after--
+E, except after &mdash;
 
 545
 00:18:46,750 --> 00:18:49,210
@@ -4004,7 +4004,7 @@ that you're planning on doing
 
 873
 00:31:50,580 --> 00:31:52,240
-anyway, so that you can just--
+anyway, so that you can just &mdash;
 
 874
 00:31:52,240 --> 00:31:53,960
@@ -4152,7 +4152,7 @@ specific intents, right?
 906
 00:32:51,690 --> 00:32:54,860
 So like there's share,
-pick, edit, view--
+pick, edit, view &mdash;
 
 907
 00:32:54,860 --> 00:32:55,320
@@ -4365,7 +4365,7 @@ Cool.
 953
 00:34:31,800 --> 00:34:35,340
 So the question is basically
-saying, well--
+saying, well &mdash;
 
 954
 00:34:35,340 --> 00:34:36,719
@@ -4557,7 +4557,7 @@ webintents.org/webintents.
 992
 00:36:13,590 --> 00:36:16,470
 It's almost as if you kind of
-set that one up for me to--
+set that one up for me to &mdash;
 
 993
 00:36:16,470 --> 00:36:17,880
@@ -5099,7 +5099,7 @@ question, how much would you
 
 1109
 00:40:53,560 --> 00:40:54,860
-say the intent--
+say the intent &mdash;
 
 1110
 00:40:54,860 --> 00:40:55,940

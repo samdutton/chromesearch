@@ -44,7 +44,7 @@ like to ask questions.
 11
 00:00:20,460 --> 00:00:23,130
 IDO GREEN: Hello and
-welcome to GDLI--
+welcome to GDLI &mdash;
 
 12
 00:00:23,130 --> 00:00:25,360
@@ -367,13 +367,13 @@ that we are speaking
 
 79
 00:03:49,310 --> 00:03:53,330
-here-- and yeah, that's a very,
+here &mdash; and yeah, that's a very,
 very cool new effect
 
 80
 00:03:53,330 --> 00:03:56,370
 that we've been using for the
-past two years, actually--
+past two years, actually &mdash;
 
 81
 00:03:56,370 --> 00:03:59,320
@@ -549,11 +549,11 @@ is we have already nice
 116
 00:05:48,790 --> 00:05:52,430
 research from third party
-companies-- so take it with a
+companies &mdash; so take it with a
 
 117
 00:05:52,430 --> 00:05:53,820
-grain of salt--
+grain of salt &mdash;
 
 118
 00:05:53,820 --> 00:05:58,070
@@ -2391,7 +2391,7 @@ with Map Source, of course.
 503
 00:26:27,060 --> 00:26:29,330
 Some best practices
-for the layout--
+for the layout &mdash;
 
 504
 00:26:29,330 --> 00:26:33,050
@@ -2927,7 +2927,7 @@ achieve that as well.
 
 616
 00:32:11,980 --> 00:32:12,800
-Speed--
+Speed &mdash;
 
 617
 00:32:12,800 --> 00:32:15,230
@@ -3126,11 +3126,11 @@ start a new project.
 658
 00:34:14,610 --> 00:34:17,900
 If you are developing on
-iOS, there's a new--
+iOS, there's a new &mdash;
 
 659
 00:34:17,900 --> 00:34:21,570
-it's not new, actually-- but a
+it's not new, actually &mdash; but a
 nice way to be able to see
 
 660
@@ -3410,7 +3410,7 @@ recommend to start with
 719
 00:37:25,530 --> 00:37:29,440
 for mobile web development?"
-So let's go--
+So let's go &mdash;
 
 720
 00:37:29,440 --> 00:37:30,300

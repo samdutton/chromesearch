@@ -101,7 +101,7 @@ So first we would do is get Yeoman. Yeoman
 21
 00:02:11,859 --> 00:02:18,069
 is just a scaffolding tool that lets you define
--- there's a couple generators out there.
+ &mdash; there's a couple generators out there.
 
 22
 00:02:18,069 --> 00:02:22,709
@@ -126,7 +126,7 @@ having to do a lot of work.
 26
 00:02:38,809 --> 00:02:45,809
 I will show you what that looks like. Just
-make a quick -- 
+make a quick  &mdash;
 so assuming I have gotten those two things,
 
 27
@@ -161,8 +161,8 @@ So I'm going to just change to the baked cake
 
 33
 00:03:20,989 --> 00:03:27,629
-in the oven. And we can see actually -- I
-will just do this -- that it already gave
+in the oven. And we can see actually  &mdash; I
+will just do this  &mdash; that it already gave
 
 34
 00:03:27,629 --> 00:03:32,510
@@ -172,7 +172,7 @@ us an app directory with requirejs config
 35
 00:03:32,510 --> 00:03:39,510
 file that calls the main file here. And we
-can -- it just says jQuery in there, but we
+can  &mdash; it just says jQuery in there, but we
 
 36
 00:03:40,969 --> 00:03:44,819
@@ -227,7 +227,7 @@ And I'm going to trust it for the sake of
 46
 00:04:37,270 --> 00:04:44,270
 this presentation.
-So, I can just install bower -- or use bower
+So, I can just install bower  &mdash; or use bower
 
 47
 00:04:44,479 --> 00:04:49,550
@@ -487,7 +487,7 @@ everything that you need.
 98
 00:10:32,740 --> 00:10:38,220
 And, of course, if you edit the manifest file,
-we want to change this -- say, there was a
+we want to change this  &mdash; say, there was a
 
 99
 00:10:38,220 --> 00:10:45,220
@@ -702,7 +702,7 @@ And the typical way that you run the built-in
 141
 00:15:09,089 --> 00:15:16,089
 tools, command-shift-P. When you install this
-tool, it adds a bower -- can't really change
+tool, it adds a bower  &mdash; can't really change
 
 142
 00:15:17,490 --> 00:15:22,810
@@ -817,7 +817,7 @@ And this is going to make an itemized list.
 164
 00:17:46,040 --> 00:17:51,780
 So we see the UL up at the top. It is going
-to make just a repeatable list element -- or
+to make just a repeatable list element  &mdash; or
 
 165
 00:17:51,780 --> 00:17:58,780
@@ -857,7 +857,7 @@ requires for the markdown parsing. And then
 172
 00:18:43,140 --> 00:18:48,570
 we have Angular, of course, which is the directive
-piece -- or what it depends on to actually
+piece  &mdash; or what it depends on to actually
 
 173
 00:18:48,570 --> 00:18:51,900
@@ -897,7 +897,7 @@ case, on the last item we're just making that
 180
 00:19:32,070 --> 00:19:39,070
 some pretty basic markdown. And what that
-looks like -- 
+looks like  &mdash;
 
 181
 00:19:50,540 --> 00:19:56,340
@@ -997,7 +997,7 @@ big deal. I didn't have to, like, rename jquery.old.js
 200
 00:22:06,050 --> 00:22:12,740
 and put in the new one. If you have ever done
-that -- I know you have -- you don't have
+that  &mdash; I know you have  &mdash; you don't have
 
 201
 00:22:12,740 --> 00:22:19,740
@@ -1016,7 +1016,7 @@ full path. Components weather then weather.js.
 
 204
 00:22:36,660 --> 00:22:43,620
-You can use -- there's a Grunt contribution
+You can use  &mdash; there's a Grunt contribution
 plug-in for that that actually adds those
 
 205
@@ -1126,7 +1126,7 @@ has, once you've actually done this once and
 
 226
 00:25:12,500 --> 00:25:17,410
-you've gotten -- most of these repos are using
+you've gotten  &mdash; most of these repos are using
 across different projects, it's now down to
 
 227
@@ -1177,7 +1177,7 @@ and more integration. That's really the biggest
 236
 00:26:13,340 --> 00:26:19,590
 piece of this, is we want to make Bower something
-that works with -- that is extendible to work
+that works with  &mdash; that is extendible to work
 
 237
 00:26:19,590 --> 00:26:24,700
@@ -1211,7 +1211,7 @@ problems. We have a Bower Google group and,
 
 243
 00:26:56,340 --> 00:27:02,510
-that's it. So I think we have -- the timer
+that's it. So I think we have  &mdash; the timer
 was going pretty crazy, so I'm not sure exactly
 
 244
@@ -1252,12 +1252,12 @@ this kind of is all the client side components
 251
 00:27:53,100 --> 00:27:58,660
 and so on and usually all our projects are
--- have, you know, server side and client
+ &mdash; have, you know, server side and client
 
 252
 00:27:58,660 --> 00:28:05,660
-side together. Is there -- I don't know how
-to -- is there any sort of integration between
+side together. Is there  &mdash; I don't know how
+to  &mdash; is there any sort of integration between
 
 253
 00:28:05,870 --> 00:28:10,230
@@ -1272,11 +1272,11 @@ we want to make sure that as a developer you
 255
 00:28:15,450 --> 00:28:22,450
 are the one calling the shots. And so a good
-demo of this is actually my -- this presentation.
+demo of this is actually my  &mdash; this presentation.
 
 256
 00:28:25,140 --> 00:28:28,570
-So I hooked up -- which ended up not working
+So I hooked up  &mdash; which ended up not working
 that great because there's a lot of network
 
 257
@@ -1386,7 +1386,7 @@ I guess.
 
 278
 00:30:29,140 --> 00:30:35,560
->>Dan Heberden: Yeah. There's a -- so Bower
+>>Dan Heberden: Yeah. There's a  &mdash; so Bower
 won't be the tool that builds that because
 
 279
@@ -1452,7 +1452,7 @@ in the directory, for example, in the Bower
 291
 00:31:33,590 --> 00:31:36,630
 file?
->>Dan Heberden: Yeah, if you want to -- so
+>>Dan Heberden: Yeah, if you want to  &mdash; so
 
 292
 00:31:36,630 --> 00:31:40,770
@@ -1467,7 +1467,7 @@ can reference any git repository and just
 294
 00:31:47,330 --> 00:31:54,330
 specify the git URL and a tag. So actually
-when I was working on -- oops -- on this.
+when I was working on  &mdash; oops  &mdash; on this.
 
 295
 00:32:04,220 --> 00:32:09,120
@@ -1566,7 +1566,7 @@ again, the developer needs to be the decision
 
 314
 00:33:45,280 --> 00:33:50,330
-maker and Bower doesn't want to be -- doesn't
+maker and Bower doesn't want to be  &mdash; doesn't
 need to be a tool that forces you into a box
 
 315

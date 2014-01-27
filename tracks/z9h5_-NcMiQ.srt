@@ -224,7 +224,7 @@ to that as well.
 
 50
 00:01:58,300 --> 00:02:01,210
-So why did you think--
+So why did you think &mdash;
 
 51
 00:02:01,210 --> 00:02:04,260
@@ -521,12 +521,12 @@ works across the board and
 
 114
 00:04:45,000 --> 00:04:46,870
-how well it works-- again,
+how well it works &mdash; again,
 I guess we can talk
 
 115
 00:04:46,870 --> 00:04:48,010
-about that later on--
+about that later on &mdash;
 
 116
 00:04:48,010 --> 00:04:52,010
@@ -854,7 +854,7 @@ solution and
 
 186
 00:07:51,770 --> 00:07:54,260
-quickly get to the--
+quickly get to the &mdash;
 
 187
 00:07:54,260 --> 00:07:55,550
@@ -972,7 +972,7 @@ is imaginary data.
 211
 00:08:58,650 --> 00:09:00,305
 It's not real market
-data, obviously--
+data, obviously &mdash;
 
 212
 00:09:00,305 --> 00:09:02,250
@@ -1018,7 +1018,7 @@ demo yourself.
 
 221
 00:09:26,240 --> 00:09:28,010
-You can execute--
+You can execute &mdash;
 
 222
 00:09:28,010 --> 00:09:30,630
@@ -1732,7 +1732,7 @@ rendered in there.
 
 373
 00:16:29,850 --> 00:16:33,310
-And when I tap and--
+And when I tap and &mdash;
 
 374
 00:16:33,310 --> 00:16:35,700
@@ -1763,7 +1763,7 @@ Here we go.
 
 381
 00:16:56,830 --> 00:16:59,355
-And when we actually--
+And when we actually &mdash;
 
 382
 00:16:59,355 --> 00:16:59,730
@@ -1836,7 +1836,7 @@ It goes through the server.
 
 397
 00:17:33,890 --> 00:17:37,170
-But you can achieve the--
+But you can achieve the &mdash;
 
 398
 00:17:37,170 --> 00:17:37,340
@@ -1976,7 +1976,7 @@ That's really cool.
 
 428
 00:18:49,090 --> 00:18:51,350
-So what do you see--
+So what do you see &mdash;
 
 429
 00:18:51,350 --> 00:18:53,600
@@ -2084,7 +2084,7 @@ Waze is really cool.
 451
 00:19:43,170 --> 00:19:45,580
 One of their recent
-features is that--
+features is that &mdash;
 
 452
 00:19:45,580 --> 00:19:46,270
@@ -2165,7 +2165,7 @@ That's great.
 
 469
 00:20:21,130 --> 00:20:23,510
-Where do you see--
+Where do you see &mdash;
 
 470
 00:20:23,510 --> 00:20:26,840
@@ -2284,7 +2284,7 @@ PETER LUBBERS: That's great.
 
 494
 00:21:48,020 --> 00:21:49,540
-Any other--
+Any other &mdash;
 
 495
 00:21:49,540 --> 00:21:52,330
@@ -2439,7 +2439,7 @@ binary message types of
 
 527
 00:23:23,490 --> 00:23:24,620
-WebSocket or just--
+WebSocket or just &mdash;
 
 528
 00:23:24,620 --> 00:23:25,110
@@ -2706,7 +2706,7 @@ PETER MOSKOVITS: OK.
 585
 00:26:01,610 --> 00:26:05,510
 And so once we have the
-connection established--
+connection established &mdash;
 
 586
 00:26:05,510 --> 00:26:05,680
@@ -2792,7 +2792,7 @@ actual frames in here.
 604
 00:26:43,910 --> 00:26:48,340
 So another thing that we
-could do here is--
+could do here is &mdash;
 
 605
 00:26:48,340 --> 00:26:50,410
@@ -2847,7 +2847,7 @@ something else.
 
 616
 00:27:22,100 --> 00:27:26,050
-But basically--
+But basically &mdash;
 
 617
 00:27:26,050 --> 00:27:29,140
@@ -3186,7 +3186,7 @@ Well, that's great.
 692
 00:30:38,220 --> 00:30:41,040
 So basically for
-anything that--
+anything that &mdash;
 
 693
 00:30:41,040 --> 00:30:43,960
@@ -4609,7 +4609,7 @@ required to be UTF-8 encoded.
 1000
 00:44:47,830 --> 00:44:51,420
 So if there's some
-other encoding--
+other encoding &mdash;
 
 1001
 00:44:51,420 --> 00:44:55,540
@@ -4648,12 +4648,12 @@ general, or is that
 
 1008
 00:45:13,580 --> 00:45:14,100
-something--
+something &mdash;
 
 1009
 00:45:14,100 --> 00:45:16,860
 because your client is going
-to speak-- your browser is
+to speak &mdash; your browser is
 
 1010
 00:45:16,860 --> 00:45:18,160
@@ -4768,7 +4768,7 @@ right, for something
 
 1035
 00:46:05,330 --> 00:46:10,390
-to be added on top of the--
+to be added on top of the &mdash;
 
 1036
 00:46:10,390 --> 00:46:10,800
@@ -4838,7 +4838,7 @@ like polyfills for WebSocket.
 
 1051
 00:46:46,150 --> 00:46:49,680
-So, Vanessa, do you have a--
+So, Vanessa, do you have a &mdash;
 
 1052
 00:46:49,680 --> 00:46:52,330
@@ -5043,7 +5043,7 @@ possible, because the server
 1095
 00:48:49,990 --> 00:48:53,270
 and the client might both
-be under the same--
+be under the same &mdash;
 
 1096
 00:48:53,270 --> 00:48:54,400
@@ -5916,7 +5916,7 @@ FRANK SALIM: Yeah.
 1283
 00:56:50,025 --> 00:56:53,576
 We have examples in the
-book of using--
+book of using &mdash;
 
 1284
 00:56:53,576 --> 00:56:59,720
@@ -5952,7 +5952,7 @@ a text-based protocol.
 
 1291
 00:57:14,840 --> 00:57:16,190
-So I think--
+So I think &mdash;
 
 1292
 00:57:16,190 --> 00:57:16,600
@@ -6208,7 +6208,7 @@ FRANK SALIM: Yeah.
 
 1348
 00:59:26,853 --> 00:59:28,190
-I think that--
+I think that &mdash;
 
 1349
 00:59:28,190 --> 00:59:29,440
@@ -6439,7 +6439,7 @@ we had a couple of customers
 
 1399
 01:01:46,050 --> 01:01:49,920
-and prospects who came to us--
+and prospects who came to us &mdash;
 we have a commercial product
 
 1400
@@ -6611,7 +6611,7 @@ PETER LUBBERS: OK.
 
 1436
 01:03:12,700 --> 01:03:13,930
-And if people--
+And if people &mdash;
 
 1437
 01:03:13,930 --> 01:03:14,620

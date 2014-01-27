@@ -93,7 +93,7 @@ PAUL KINLAN: [INAUDIBLE]
 22
 00:01:03,320 --> 00:01:07,540
 I'm an instrument technician not
-a-- oh it doesn't matter.
+a &mdash; oh it doesn't matter.
 
 23
 00:01:07,540 --> 00:01:10,716
@@ -183,7 +183,7 @@ shark tank.
 
 41
 00:01:53,700 --> 00:01:57,390
-One in a miniature world in--
+One in a miniature world in &mdash;
 
 42
 00:01:57,390 --> 00:01:57,615
@@ -229,7 +229,7 @@ It's pretty cool.
 52
 00:02:07,120 --> 00:02:09,840
 The really cool thing I like
-about this experiment--
+about this experiment &mdash;
 
 53
 00:02:09,840 --> 00:02:11,775
@@ -238,7 +238,7 @@ even though everything about
 
 54
 00:02:11,775 --> 00:02:13,350
-it is digital--
+it is digital &mdash;
 
 55
 00:02:13,350 --> 00:02:16,405
@@ -251,7 +251,7 @@ type of experience.
 
 57
 00:02:18,160 --> 00:02:19,760
-So just some of this--
+So just some of this &mdash;
 
 58
 00:02:19,760 --> 00:02:22,460
@@ -330,12 +330,12 @@ I have a little theme.
 74
 00:02:50,010 --> 00:02:51,970
 For every single Hangout
-that we've done--
+that we've done &mdash;
 
 75
 00:02:51,970 --> 00:02:53,190
 I told you about the loading
-screens-- and this
+screens &mdash; and this
 
 76
 00:02:53,190 --> 00:02:54,220
@@ -626,7 +626,7 @@ PAUL KINLAN: Cool.
 139
 00:05:03,580 --> 00:05:07,386
 So this is just literally the
-video tag mapped on to--
+video tag mapped on to &mdash;
 
 140
 00:05:07,386 --> 00:05:09,310
@@ -654,15 +654,15 @@ HTML video.
 145
 00:05:18,550 --> 00:05:22,200
 And then we get this
-data and we--
+data and we &mdash;
 
 146
 00:05:22,200 --> 00:05:23,520
-with a WebGL shader--
+with a WebGL shader &mdash;
 
 147
 00:05:23,520 --> 00:05:25,930
-we transform it, and so--
+we transform it, and so &mdash;
 
 148
 00:05:25,930 --> 00:05:28,045
@@ -682,7 +682,7 @@ sphere, it's just a fragment
 151
 00:05:33,780 --> 00:05:36,810
 shader that repositions each
-of the pixels as--
+of the pixels as &mdash;
 
 152
 00:05:36,810 --> 00:05:37,975
@@ -692,7 +692,7 @@ manipulating where the pixels
 153
 00:05:37,975 --> 00:05:40,160
 are to make it look like
-it's kind of--
+it's kind of &mdash;
 
 154
 00:05:40,160 --> 00:05:40,310
@@ -747,7 +747,7 @@ other week about this.
 
 165
 00:05:58,270 --> 00:05:59,460
-I was calling them vertex--
+I was calling them vertex &mdash;
 
 166
 00:05:59,460 --> 00:06:00,820
@@ -879,7 +879,7 @@ background, I mean, is that
 
 194
 00:06:51,960 --> 00:06:52,980
-WebGL as well or--
+WebGL as well or &mdash;
 
 195
 00:06:52,980 --> 00:06:55,930
@@ -926,13 +926,13 @@ pretty cool.
 
 204
 00:07:17,280 --> 00:07:19,375
-And how did you get this-- is
-this bend effect here-- is
+And how did you get this &mdash; is
+this bend effect here &mdash; is
 
 205
 00:07:19,375 --> 00:07:21,360
 this part of the actual
-fragment shader or--
+fragment shader or &mdash;
 
 206
 00:07:21,360 --> 00:07:22,810
@@ -981,7 +981,7 @@ everyone, if it is.
 216
 00:07:41,470 --> 00:07:44,610
 This halo effect,
-is that just--
+is that just &mdash;
 
 217
 00:07:44,610 --> 00:07:47,525
@@ -1086,7 +1086,7 @@ any announcement or anything
 239
 00:08:24,896 --> 00:08:30,298
 that we actually are streaming
-web and video over the--
+web and video over the &mdash;
 
 240
 00:08:30,298 --> 00:08:31,593
@@ -1136,11 +1136,11 @@ YouTube Live Stream.
 250
 00:08:47,930 --> 00:08:49,920
 But I presume we couldn't
-pipe the data--
+pipe the data &mdash;
 
 251
 00:08:49,920 --> 00:08:51,920
-the 360-degree camera data--
+the 360-degree camera data &mdash;
 
 252
 00:08:51,920 --> 00:08:53,050
@@ -1162,12 +1162,12 @@ MATTIAS EKENDAHL: Yeah.
 256
 00:08:56,680 --> 00:08:59,230
 PAUL KINLAN: And I suppose the
-interesting thing is--
+interesting thing is &mdash;
 
 257
 00:08:59,230 --> 00:09:02,158
 actually, that is a really good
-point-- is because that's
+point &mdash; is because that's
 
 258
 00:09:02,158 --> 00:09:04,170
@@ -1181,7 +1181,7 @@ texture and map it, put it
 
 260
 00:09:07,730 --> 00:09:08,580
-through WebGL, which we--
+through WebGL, which we &mdash;
 
 261
 00:09:08,580 --> 00:09:08,750
@@ -1315,7 +1315,7 @@ these ones.
 
 289
 00:10:02,880 --> 00:10:05,012
-So just to jump onto this--
+So just to jump onto this &mdash;
 
 290
 00:10:05,012 --> 00:10:09,700
@@ -1400,7 +1400,7 @@ cool thing.
 308
 00:10:39,860 --> 00:10:42,570
 So I mean, you mentioned
-something about canvas--
+something about canvas &mdash;
 
 309
 00:10:42,570 --> 00:10:43,800
@@ -1433,7 +1433,7 @@ that shows the clock.
 315
 00:11:05,060 --> 00:11:07,640
 PAUL KINLAN: Oh, so this clock
-over on the outside here--
+over on the outside here &mdash;
 
 316
 00:11:07,640 --> 00:11:08,090
@@ -1474,8 +1474,8 @@ cool, isn't it?
 
 324
 00:11:21,786 --> 00:11:25,470
-You know, I still-- and I
-said this earlier on--
+You know, I still &mdash; and I
+said this earlier on &mdash;
 
 325
 00:11:25,470 --> 00:11:29,270
@@ -1490,7 +1490,7 @@ or has that been there?
 327
 00:11:32,110 --> 00:11:32,490
 MATTIAS EKENDAHL: It's
-been there-- been
+been there &mdash; been
 
 328
 00:11:32,490 --> 00:11:33,100
@@ -1563,8 +1563,8 @@ museum, right?
 
 344
 00:11:55,490 --> 00:11:57,410
-So these are the-- like you
-can see on the right-- the
+So these are the &mdash; like you
+can see on the right &mdash; the
 
 345
 00:11:57,410 --> 00:11:59,530
@@ -1633,7 +1633,7 @@ If not, check it out online.
 
 359
 00:12:24,610 --> 00:12:26,460
-It's just as good of a--
+It's just as good of a &mdash;
 
 360
 00:12:26,460 --> 00:12:27,730

@@ -524,7 +524,7 @@ tests and frameworks.
 
 112
 00:05:08,300 --> 00:05:16,080
-So if we go into app, which--
+So if we go into app, which &mdash;
 
 113
 00:05:16,080 --> 00:05:16,440
@@ -746,7 +746,7 @@ port as well as snippet.
 160
 00:07:33,775 --> 00:07:38,836
 And all this is doing is
-when you run a server--
+when you run a server &mdash;
 
 161
 00:07:38,836 --> 00:07:40,090
@@ -1280,7 +1280,7 @@ Yeah, there.
 
 275
 00:13:01,670 --> 00:13:03,786
-I'm going to--
+I'm going to &mdash;
 
 276
 00:13:03,786 --> 00:13:05,540
@@ -1951,7 +1951,7 @@ fixed yet myself.
 420
 00:19:53,950 --> 00:19:56,990
 So the idea here is again, like
-I said-- there we go.
+I said &mdash; there we go.
 
 421
 00:19:56,990 --> 00:19:58,970
@@ -2056,7 +2056,7 @@ network link conditioner.
 
 442
 00:21:00,180 --> 00:21:01,545
-So if I--
+So if I &mdash;
 
 443
 00:21:01,545 --> 00:21:05,750

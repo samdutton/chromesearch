@@ -210,7 +210,7 @@ your users, important
 
 46
 00:01:51,880 --> 00:01:53,750
-information, in the emails--
+information, in the emails &mdash;
 
 47
 00:01:53,750 --> 00:01:56,050
@@ -455,12 +455,12 @@ ways that we want to make
 98
 00:04:12,170 --> 00:04:14,370
 it easier is say, you
-ask a question--
+ask a question &mdash;
 
 99
 00:04:14,370 --> 00:04:16,730
 in fact, you speak your
-mind to the phone--
+mind to the phone &mdash;
 
 100
 00:04:16,730 --> 00:04:18,000
@@ -620,12 +620,12 @@ problem to solve?
 134
 00:05:44,710 --> 00:05:49,030
 If you think about it, during
-the course of a typical day--
+the course of a typical day &mdash;
 
 135
 00:05:49,030 --> 00:05:51,080
 not a day that you're at Google
-I/O, a typical day--
+I/O, a typical day &mdash;
 
 136
 00:05:51,080 --> 00:05:53,360
@@ -719,7 +719,7 @@ answers as well.
 
 155
 00:06:39,640 --> 00:06:40,810
-In some cases--
+In some cases &mdash;
 
 156
 00:06:40,810 --> 00:06:43,420
@@ -1443,12 +1443,12 @@ The idea is very simple.
 
 311
 00:13:32,820 --> 00:13:35,510
-So for each of these use cases--
+So for each of these use cases &mdash;
 let's say the flight
 
 312
 00:13:35,510 --> 00:13:37,230
-or the hotel or the events--
+or the hotel or the events &mdash;
 
 313
 00:13:37,230 --> 00:13:38,250
@@ -1552,7 +1552,7 @@ and what time it's landing at.
 
 334
 00:14:40,410 --> 00:14:42,790
-So on the right hand side here--
+So on the right hand side here &mdash;
 so left hand side is
 
 335
@@ -1816,12 +1816,12 @@ in the inbox?
 390
 00:17:06,890 --> 00:17:09,930
 And how can we pick those
-examples-- define the schema,
+examples &mdash; define the schema,
 
 391
 00:17:09,930 --> 00:17:12,829
 define the vocabulary
-for those examples--
+for those examples &mdash;
 
 392
 00:17:12,829 --> 00:17:14,205
@@ -1858,13 +1858,13 @@ one single step.
 
 399
 00:17:34,180 --> 00:17:36,070
-Once they mark up these emails--
+Once they mark up these emails &mdash;
 and we even have
 
 400
 00:17:36,070 --> 00:17:38,010
 tools that can help
-with the markup--
+with the markup &mdash;
 
 401
 00:17:38,010 --> 00:17:40,870
@@ -3016,12 +3016,12 @@ Google search tools.
 
 653
 00:29:42,870 --> 00:29:44,290
-Are there other interfaces--
+Are there other interfaces &mdash;
 
 654
 00:29:44,290 --> 00:29:46,430
 are there programmatic
-interfaces-- to allow
+interfaces &mdash; to allow
 
 655
 00:29:46,430 --> 00:29:50,740
@@ -3203,7 +3203,7 @@ tool, you saw we had a
 
 694
 00:31:26,320 --> 00:31:27,490
-few use cases--
+few use cases &mdash;
 
 695
 00:31:27,490 --> 00:31:30,710
@@ -3263,7 +3263,7 @@ them to the tool?
 707
 00:31:51,730 --> 00:31:53,150
 APARNA CHENNAPRAGADA: In the
-beginning-- and Justin, feel
+beginning &mdash; and Justin, feel
 
 708
 00:31:53,150 --> 00:31:54,920
@@ -3607,7 +3607,7 @@ and we love that use case
 781
 00:34:58,580 --> 00:35:01,310
 because it actually
-shows off--
+shows off &mdash;
 
 782
 00:35:01,310 --> 00:35:04,630
@@ -3651,11 +3651,11 @@ each of these pieces of
 790
 00:35:23,600 --> 00:35:26,310
 information, you can expand and
-say-- and I can certainly
+say &mdash; and I can certainly
 
 791
 00:35:26,310 --> 00:35:27,270
-show you the link later--
+show you the link later &mdash;
 
 792
 00:35:27,270 --> 00:35:29,720
@@ -3678,7 +3678,7 @@ out is based on the query that
 
 796
 00:35:37,410 --> 00:35:40,110
-you have-- if you said "My
+you have &mdash; if you said "My
 flight tomorrow," it'll give
 
 797
@@ -4114,7 +4114,7 @@ want to look for, but the mail
 890
 00:39:43,010 --> 00:39:45,130
 would just have an attachment,
-and there's no way--
+and there's no way &mdash;
 
 891
 00:39:45,130 --> 00:39:48,110

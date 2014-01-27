@@ -18,7 +18,7 @@ introducing Susan Wojcicki.
 5
 00:00:05,490 --> 00:00:09,330
 Susan has been at Google since
-the start-- she's actually our
+the start &mdash; she's actually our
 
 6
 00:00:09,330 --> 00:00:12,400
@@ -59,12 +59,12 @@ visionary, a strategic leader.
 
 14
 00:00:30,100 --> 00:00:32,110
-One of my favorites-- just a
-personal story-- my favorite
+One of my favorites &mdash; just a
+personal story &mdash; my favorite
 
 15
 00:00:32,110 --> 00:00:33,780
-experiences are--
+experiences are &mdash;
 
 16
 00:00:33,780 --> 00:00:36,400
@@ -205,7 +205,7 @@ else's story.
 
 45
 00:01:52,920 --> 00:01:53,700
-Google actually--
+Google actually &mdash;
 
 46
 00:01:53,700 --> 00:01:55,650
@@ -838,12 +838,12 @@ to build your products.
 179
 00:08:15,990 --> 00:08:19,450
 So I was working on
-Google Video--
+Google Video &mdash;
 
 180
 00:08:19,450 --> 00:08:22,160
 and as you can see, we have
-the YouTube logo here--
+the YouTube logo here &mdash;
 
 181
 00:08:22,160 --> 00:08:26,920
@@ -876,7 +876,7 @@ very popular.
 
 187
 00:08:42,440 --> 00:08:44,480
-In fact, it became--
+In fact, it became &mdash;
 
 188
 00:08:44,480 --> 00:08:47,080
@@ -1030,7 +1030,7 @@ when Google had not very many
 
 220
 00:10:09,730 --> 00:10:11,200
-people at the company--
+people at the company &mdash;
 
 221
 00:10:11,200 --> 00:10:14,160
@@ -1285,7 +1285,7 @@ see a few people.
 
 274
 00:12:27,540 --> 00:12:29,970
-They are the brave souls who--
+They are the brave souls who &mdash;
 
 275
 00:12:29,970 --> 00:12:31,470

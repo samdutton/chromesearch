@@ -51,7 +51,7 @@ things.
 11
 00:00:41,980 --> 00:00:48,980
 So let's go back in the past for a second.
-Last year, Android Market -- do you remember
+Last year, Android Market  &mdash; do you remember
 
 12
 00:00:51,820 --> 00:00:56,649
@@ -760,7 +760,7 @@ notes, record Web pages, everything, and keeps
 
 153
 00:11:49,020 --> 00:11:54,870
-you -- syncs across all your devices.
+you  &mdash; syncs across all your devices.
 Evernote has been creating a tablet app ever
 
 154
@@ -791,7 +791,7 @@ Evernote has thought long and hard about what
 159
 00:12:22,860 --> 00:12:26,710
 makes a good tablet experience. If I'm on
-the phone, their users want to take -- call
+the phone, their users want to take  &mdash; call
 
 160
 00:12:26,710 --> 00:12:30,420
@@ -1385,7 +1385,7 @@ linked together in the Google Play Developer
 
 278
 00:21:37,279 --> 00:21:41,399
-Console -- sorry, in Google Analytics, you
+Console  &mdash; sorry, in Google Analytics, you
 will have access to additional new metrics.
 
 279
@@ -1520,7 +1520,7 @@ reaching Play global audience.
 
 305
 00:23:50,539 --> 00:23:56,909
-When you decide to go -- oops, too bad. When
+When you decide to go  &mdash; oops, too bad. When
 you decide to go global, the first and most
 
 306
@@ -1540,7 +1540,7 @@ of you may have guessed from my funny accent
 
 309
 00:24:08,220 --> 00:24:13,840
--- I'm Italian -- I think one of the most
+ &mdash; I'm Italian  &mdash; I think one of the most
 important things is to make sure that your
 
 310
@@ -1590,7 +1590,7 @@ Some of you may have multiple projects going
 
 319
 00:24:58,639 --> 00:25:05,169
-on at any same time. Pick the version -- sorry,
+on at any same time. Pick the version  &mdash; sorry,
 the language you're translating from. You
 
 320
@@ -1676,11 +1676,11 @@ questions that might arise, troubleshooting,
 336
 00:26:20,739 --> 00:26:26,100
 these kind of things. And then once all the
-strings are done, you will be able to -- again,
+strings are done, you will be able to  &mdash; again,
 
 337
 00:26:26,100 --> 00:26:32,330
-from the developer console -- download them,
+from the developer console  &mdash; download them,
 put them into your APK, pack everything, and
 
 338
@@ -1696,7 +1696,7 @@ itself last year, which means that if you
 340
 00:26:38,970 --> 00:26:44,119
 go to the APK page right now, you will see
-a sign-up form where you can see -- where
+a sign-up form where you can see  &mdash; where
 
 341
 00:26:44,119 --> 00:26:50,749
@@ -2121,7 +2121,7 @@ is everyone going to see it?
 425
 00:33:09,570 --> 00:33:14,369
 just still one listing. So you may want to
-be -- you want to pay attention to that for
+be  &mdash; you want to pay attention to that for
 
 426
 00:33:14,369 --> 00:33:17,509
@@ -2135,7 +2135,7 @@ out only to 5% of the users, you know, it
 
 428
 00:33:21,950 --> 00:33:25,909
-may be -- you have to communicate it publicly.
+may be  &mdash; you have to communicate it publicly.
 Maybe you say to say that we are rolling a
 
 429
@@ -2195,7 +2195,7 @@ in build tools?
 
 440
 00:34:07,669 --> 00:34:09,050
->>Ellie Powers: Would you like --
+>>Ellie Powers: Would you like  &mdash;
 [ Applause ]
 
 441
@@ -2271,7 +2271,7 @@ So right now we're only sort of focusing on
 455
 00:35:07,029 --> 00:35:12,569
 tablets. But we're aware, you know, within
-our own team -- well, our team and externally,
+our own team  &mdash; well, our team and externally,
 
 456
 00:35:12,569 --> 00:35:16,160
@@ -2315,7 +2315,7 @@ Play Store? That I don't know. And it might
 
 464
 00:35:49,640 --> 00:35:55,380
-be the case that the top app -- device on
+be the case that the top app  &mdash; device on
 my app might be fifth in the global stack
 
 465
@@ -2425,7 +2425,7 @@ know, gray button, and you can select "delete."
 
 486
 00:37:32,630 --> 00:37:35,200
->>> Well, these are, like, apps that --
+>>> Well, these are, like, apps that  &mdash;
 >>Ellie Powers: I know. If you've published
 
 487
@@ -2460,7 +2460,7 @@ definitely looking into that possibility.
 
 493
 00:37:56,220 --> 00:38:00,160
-And now --
+And now  &mdash;
 >>Ellie Powers: Okay. With different package
 
 494
@@ -2556,11 +2556,11 @@ when you release new versions of the app,
 512
 00:39:00,770 --> 00:39:03,299
 is it always going to be that same 10% that
-you're going to be --
+you're going to be  &mdash;
 
 513
 00:39:03,299 --> 00:39:09,430
->>Riccardo Govoni: So --
+>>Riccardo Govoni: So  &mdash;
 >>Miles Barr: So it's random per staged rollout.
 
 514
@@ -2581,7 +2581,7 @@ to place it in another APK. Those original
 517
 00:39:25,240 --> 00:39:28,650
 10% will get the update.
->>> So you can have, then, 2 -- like, you
+>>> So you can have, then, 2  &mdash; like, you
 
 518
 00:39:28,650 --> 00:39:34,410
@@ -2646,7 +2646,7 @@ office hours. And don't forget that there's
 530
 00:40:07,740 --> 00:40:12,190
 a monetization section here in an hour, or
-in --
+in  &mdash;
 
 531
 00:40:12,190 --> 00:40:12,770

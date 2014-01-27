@@ -1051,7 +1051,7 @@ NaCl manifest format.
 233
 00:10:04,630 --> 00:10:08,140
 And it specifies what
-the binary is for--
+the binary is for &mdash;
 
 234
 00:10:08,140 --> 00:10:09,190

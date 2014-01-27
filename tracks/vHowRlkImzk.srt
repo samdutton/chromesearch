@@ -173,7 +173,7 @@ how to model.
 38
 00:01:34,880 --> 00:01:36,990
 But literally, it's
-an infinite--
+an infinite &mdash;
 
 39
 00:01:36,990 --> 00:01:38,960
@@ -299,7 +299,7 @@ first was really thinking
 
 65
 00:02:40,520 --> 00:02:41,740
-about, you know--
+about, you know &mdash;
 
 66
 00:02:41,740 --> 00:02:45,480
@@ -326,7 +326,7 @@ the background.
 
 71
 00:02:51,430 --> 00:02:52,930
-And that's basically--
+And that's basically &mdash;
 
 72
 00:02:52,930 --> 00:02:54,055
@@ -339,7 +339,7 @@ all kinds of stuff.
 
 74
 00:02:57,070 --> 00:02:58,150
-And that, luckily, I sort of--
+And that, luckily, I sort of &mdash;
 
 75
 00:02:58,150 --> 00:03:00,195
@@ -363,7 +363,7 @@ into JavaScript.
 
 79
 00:03:07,680 --> 00:03:09,380
-And was really--
+And was really &mdash;
 
 80
 00:03:09,380 --> 00:03:11,710
@@ -434,7 +434,7 @@ your attachments, and your
 94
 00:03:35,940 --> 00:03:37,840
 stamps, and your
-robot pieces--
+robot pieces &mdash;
 
 95
 00:03:37,840 --> 00:03:40,664
@@ -647,11 +647,11 @@ those wheels.
 139
 00:05:27,450 --> 00:05:28,640
 And again, that's
-kind of what--
+kind of what &mdash;
 
 140
 00:05:28,640 --> 00:05:30,410
-when we were looking at it--
+when we were looking at it &mdash;
 
 141
 00:05:30,410 --> 00:05:32,960
@@ -705,7 +705,7 @@ I can then color them all.
 
 152
 00:05:51,560 --> 00:05:54,690
-For these actual components--
+For these actual components &mdash;
 
 153
 00:05:54,690 --> 00:05:57,470
@@ -853,7 +853,7 @@ bigger challenges, of sort
 
 183
 00:07:06,585 --> 00:07:08,700
-of how do you-- what you'd see
+of how do you &mdash; what you'd see
 on the screen, if you print
 
 184
@@ -906,7 +906,7 @@ single model, every single
 
 194
 00:07:31,310 --> 00:07:32,010
-component--
+component &mdash;
 
 195
 00:07:32,010 --> 00:07:34,170
@@ -956,7 +956,7 @@ So one question I just had, the
 
 205
 00:07:51,430 --> 00:07:52,740
-export the models as--
+export the models as &mdash;
 
 206
 00:07:52,740 --> 00:07:56,390
@@ -999,7 +999,7 @@ kind of stuff.
 
 214
 00:08:12,740 --> 00:08:14,160
-So that's just a straight--
+So that's just a straight &mdash;
 
 215
 00:08:14,160 --> 00:08:15,450
@@ -1008,12 +1008,12 @@ we're done.
 
 216
 00:08:15,450 --> 00:08:16,750
-The other thing that is--
+The other thing that is &mdash;
 
 217
 00:08:16,750 --> 00:08:19,615
 since we do accurate collision
-tests against the models--
+tests against the models &mdash;
 
 218
 00:08:19,615 --> 00:08:21,270
@@ -1075,11 +1075,11 @@ PAUL IRISH: That's fantastic.
 
 230
 00:08:43,860 --> 00:08:45,980
-So I'm curious--
+So I'm curious &mdash;
 
 231
 00:08:45,980 --> 00:08:46,880
-a lot--
+a lot &mdash;
 
 232
 00:08:46,880 --> 00:08:50,250
@@ -1094,7 +1094,7 @@ data, like the models that
 234
 00:08:54,120 --> 00:08:56,560
 they're sending down or
-everything else--
+everything else &mdash;
 
 235
 00:08:56,560 --> 00:08:58,980
@@ -1139,7 +1139,7 @@ MARK DANKS: Yeah.
 244
 00:09:13,360 --> 00:09:16,000
 So we started doing
-it in two ways--
+it in two ways &mdash;
 
 245
 00:09:16,000 --> 00:09:17,620
@@ -1273,7 +1273,7 @@ PAUL IRISH: Mark's back.
 
 274
 00:10:24,550 --> 00:10:26,706
-MARK DANKS: Oh--
+MARK DANKS: Oh &mdash;
 
 275
 00:10:26,706 --> 00:10:28,020
@@ -1307,15 +1307,15 @@ PAUL IRISH: OK.
 
 282
 00:10:36,400 --> 00:10:37,820
-MARK DANKS: OK, so--
+MARK DANKS: OK, so &mdash;
 
 283
 00:10:37,820 --> 00:10:38,560
-PAUL IRISH: Here, let me--
+PAUL IRISH: Here, let me &mdash;
 
 284
 00:10:38,560 --> 00:10:39,110
-I'll prompt you--
+I'll prompt you &mdash;
 
 285
 00:10:39,110 --> 00:10:39,955
@@ -1406,7 +1406,7 @@ So that was one nice thing.
 304
 00:11:17,490 --> 00:11:20,060
 Then I did a lot of
-optimizations on-- the data we
+optimizations on &mdash; the data we
 
 305
 00:11:20,060 --> 00:11:22,200
@@ -1546,7 +1546,7 @@ the model and now, OK, we
 
 334
 00:12:25,653 --> 00:12:27,020
-have to see the top hat--
+have to see the top hat &mdash;
 that's when we
 
 335
@@ -1660,8 +1660,8 @@ a fallback now.
 
 358
 00:13:22,450 --> 00:13:25,080
-And so I can actually run-- not
-"My Robot Nation"-- but
+And so I can actually run &mdash; not
+"My Robot Nation" &mdash; but
 
 359
 00:13:25,080 --> 00:13:27,173
@@ -1694,11 +1694,11 @@ heavy.
 
 365
 00:13:37,640 --> 00:13:39,070
-And so it was--
+And so it was &mdash;
 
 366
 00:13:39,070 --> 00:13:40,680
-over the development--
+over the development &mdash;
 
 367
 00:13:40,680 --> 00:13:43,300
@@ -1717,7 +1717,7 @@ better on the JavaScript side.
 370
 00:13:46,800 --> 00:13:49,160
 And literally, we started
-telling-- by the end, we could
+telling &mdash; by the end, we could
 
 371
 00:13:49,160 --> 00:13:52,060
@@ -1735,7 +1735,7 @@ was possible there.
 
 374
 00:13:55,960 --> 00:13:57,600
-A lot of the stuff that--
+A lot of the stuff that &mdash;
 
 375
 00:13:57,600 --> 00:14:00,660
@@ -1749,7 +1749,7 @@ to trick the
 
 377
 00:14:02,230 --> 00:14:04,230
-browser into going fast--
+browser into going fast &mdash;
 
 378
 00:14:04,230 --> 00:14:06,160
@@ -1763,7 +1763,7 @@ that anymore.
 380
 00:14:06,900 --> 00:14:09,120
 And so that was really
-a nice thing that--
+a nice thing that &mdash;
 
 381
 00:14:09,120 --> 00:14:12,790
@@ -1818,12 +1818,12 @@ where, if I had
 
 392
 00:14:31,910 --> 00:14:33,410
-an easy way to encode--
+an easy way to encode &mdash;
 
 393
 00:14:33,410 --> 00:14:36,180
 basically my JSON
-file is binary--
+file is binary &mdash;
 
 394
 00:14:36,180 --> 00:14:37,880
@@ -1831,7 +1831,7 @@ that would be pretty cool.
 
 395
 00:14:37,880 --> 00:14:39,910
-A lot of the stuff-- that
+A lot of the stuff &mdash; that
 there's a lot of people doing
 
 396
@@ -1845,7 +1845,7 @@ decompressing it in a shader.
 
 398
 00:14:44,360 --> 00:14:45,650
-So stuff like that is--
+So stuff like that is &mdash;
 
 399
 00:14:45,650 --> 00:14:48,630
@@ -1909,7 +1909,7 @@ PAUL IRISH: Yeah.
 
 412
 00:15:12,340 --> 00:15:16,600
-I'm curious about kind of--
+I'm curious about kind of &mdash;
 staying in tune with some of
 
 413
@@ -1975,12 +1975,12 @@ got introduced to everyone.
 
 426
 00:15:43,750 --> 00:15:45,370
-So now we do it-- it's
+So now we do it &mdash; it's
 everything from the mailing
 
 427
 00:15:45,370 --> 00:15:47,410
-list-- which is really helpful
+list &mdash; which is really helpful
 and really, really good.
 
 428
@@ -1999,11 +1999,11 @@ goes through.
 
 431
 00:15:53,410 --> 00:15:54,040
-And then--
+And then &mdash;
 
 432
 00:15:54,040 --> 00:15:55,740
-I'm based in San Francisco--
+I'm based in San Francisco &mdash;
 
 433
 00:15:55,740 --> 00:15:58,440
@@ -2041,7 +2041,7 @@ find out what's going on.
 
 440
 00:16:12,430 --> 00:16:14,060
-And also it's really--
+And also it's really &mdash;
 
 441
 00:16:14,060 --> 00:16:17,950
@@ -2079,7 +2079,7 @@ app, and creates a great
 
 448
 00:16:32,650 --> 00:16:34,220
-experience--
+experience &mdash;
 
 449
 00:16:34,220 --> 00:16:37,940
@@ -2120,7 +2120,7 @@ thing, if I can
 
 457
 00:16:50,762 --> 00:16:51,960
-make a plug, here--
+make a plug, here &mdash;
 
 458
 00:16:51,960 --> 00:16:53,320
@@ -2157,11 +2157,11 @@ own 3D printed models.
 
 465
 00:17:06,430 --> 00:17:08,349
-So that's something which--
+So that's something which &mdash;
 
 466
 00:17:08,349 --> 00:17:10,760
-keep an eye open for it--
+keep an eye open for it &mdash;
 probably end of October,
 
 467

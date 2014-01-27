@@ -739,7 +739,7 @@ will give a few demonstrations for you
 
 162
 00:09:54,500 --> 00:09:55,533
-He'll--
+He'll &mdash;
 
 163
 00:09:55,533 --> 00:09:58,033
@@ -762,7 +762,7 @@ for simultaneous translation
 
 167
 00:10:07,800 --> 00:10:10,200
-if you'd rather--
+if you'd rather &mdash;
 
 168
 00:10:10,200 --> 00:10:13,967

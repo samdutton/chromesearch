@@ -104,7 +104,7 @@ the Codenvy team.
 24
 00:02:21,860 --> 00:02:24,280
 I'm joined in studio
-with two guests--
+with two guests &mdash;
 
 25
 00:02:24,280 --> 00:02:26,570
@@ -238,7 +238,7 @@ then you've got me.
 53
 00:03:19,410 --> 00:03:21,590
 So you got three out of
-four-- really solid.
+four &mdash; really solid.
 
 54
 00:03:21,590 --> 00:03:22,080
@@ -507,7 +507,7 @@ happened in January.
 
 110
 00:05:46,200 --> 00:05:48,434
-And we raised some capital--
+And we raised some capital &mdash;
 $9 million.
 
 111
@@ -566,7 +566,7 @@ as it was.
 122
 00:06:13,040 --> 00:06:15,230
 As we know, just in the last
-several years-- you mentioned
+several years &mdash; you mentioned
 
 123
 00:06:15,230 --> 00:06:15,750
@@ -599,7 +599,7 @@ application.
 129
 00:06:28,840 --> 00:06:31,050
 Can you help us understand
-that-- how the web has grown
+that &mdash; how the web has grown
 
 130
 00:06:31,050 --> 00:06:34,160
@@ -2693,7 +2693,7 @@ more about his experience as
 572
 00:25:14,750 --> 00:25:18,340
 well as possibly JavaScript,
-HTML, CSS-- a lot of what the
+HTML, CSS &mdash; a lot of what the
 
 573
 00:25:18,340 --> 00:25:19,540
@@ -2854,7 +2854,7 @@ I could log in.
 606
 00:26:42,610 --> 00:26:45,520
 I could then create a Google
-App Engine account--
+App Engine account &mdash;
 
 607
 00:26:45,520 --> 00:26:47,920
@@ -3189,12 +3189,12 @@ lot more aggressive in our
 
 679
 00:29:41,070 --> 00:29:41,830
-expansion--
+expansion &mdash;
 
 680
 00:29:41,830 --> 00:29:44,460
 we've been slowly trickling
-things out--
+things out &mdash;
 
 681
 00:29:44,460 --> 00:29:45,760
@@ -3999,7 +3999,7 @@ window, and I go to Projects,
 852
 00:36:24,250 --> 00:36:28,860
 New, and then Import
-from GitHub--
+from GitHub &mdash;
 
 853
 00:36:28,860 --> 00:36:31,170
@@ -4533,7 +4533,7 @@ going through that.
 968
 00:41:33,260 --> 00:41:35,850
 Hopefully, you got a lot of
-feedback in terms of Codenvy--
+feedback in terms of Codenvy &mdash;
 
 969
 00:41:35,850 --> 00:41:38,540
@@ -4756,7 +4756,7 @@ have a compile phase that runs
 
 1017
 00:43:09,755 --> 00:43:12,150
-inside of a VM-- there's just
+inside of a VM &mdash; there's just
 a lot of enterprise benefits
 
 1018
@@ -5196,7 +5196,7 @@ TYLER JEWELL: Yes.
 1112
 00:46:56,050 --> 00:46:57,860
 LOUIS GRAY: So how do you
-compile to itself--
+compile to itself &mdash;
 
 1113
 00:46:57,860 --> 00:46:58,230
@@ -5318,7 +5318,7 @@ that's there.
 
 1138
 00:48:00,010 --> 00:48:01,590
-And then the output--
+And then the output &mdash;
 
 1139
 00:48:01,590 --> 00:48:03,940
@@ -5353,7 +5353,7 @@ adoption unless we could go
 1145
 00:48:19,390 --> 00:48:22,280
 out and tell the world that
-we were using it--
+we were using it &mdash;
 
 1146
 00:48:22,280 --> 00:48:24,410
@@ -5471,7 +5471,7 @@ accessibility, because the
 
 1170
 00:49:14,540 --> 00:49:17,560
-product there's two things-- we
+product there's two things &mdash; we
 do a lot of right clicking
 
 1171
@@ -5566,7 +5566,7 @@ build mobile apps, we've got
 1190
 00:50:01,590 --> 00:50:03,200
 two things that we're
-working on--
+working on &mdash;
 
 1191
 00:50:03,200 --> 00:50:06,360
@@ -5960,12 +5960,12 @@ opposed to the other stuff.
 1273
 00:53:38,550 --> 00:53:40,930
 LOUIS GRAY: There was a question
-here from London--
+here from London &mdash;
 
 1274
 00:53:40,930 --> 00:53:42,710
 one of your counterparts,
-Addy--
+Addy &mdash;
 
 1275
 00:53:42,710 --> 00:53:45,580
@@ -5979,7 +5979,7 @@ Are they able to do that?
 1277
 00:53:48,090 --> 00:53:50,340
 TYLER JEWELL: Deploying
-to a local, virtual--
+to a local, virtual &mdash;
 
 1278
 00:53:50,340 --> 00:53:51,160

@@ -379,7 +379,7 @@ management UI.
 84
 00:03:55,750 --> 00:03:57,770
 And it supports a
-whole bunch of--
+whole bunch of &mdash;
 
 85
 00:03:57,770 --> 00:04:00,970
@@ -407,7 +407,7 @@ about storing inactive tabs,
 
 90
 00:04:13,650 --> 00:04:17,210
-essentially saving them to--
+essentially saving them to &mdash;
 
 91
 00:04:17,210 --> 00:04:21,470
@@ -594,7 +594,7 @@ the Chrome developer tools.
 132
 00:06:20,310 --> 00:06:25,400
 I wish I could show you both
-screens at once, but--
+screens at once, but &mdash;
 
 133
 00:06:25,400 --> 00:06:28,540
@@ -785,7 +785,7 @@ middle section is scrolling.
 
 175
 00:08:30,740 --> 00:08:32,280
-So here this is implemented--
+So here this is implemented &mdash;
 
 176
 00:08:32,280 --> 00:08:35,690
@@ -975,7 +975,7 @@ We've come a long way here.
 217
 00:10:38,490 --> 00:10:42,160
 Android Gingerbread
-had a lot of--
+had a lot of &mdash;
 
 218
 00:10:42,160 --> 00:10:43,590
@@ -1048,7 +1048,7 @@ It's by a guy named
 
 233
 00:11:20,880 --> 00:11:21,495
-from--
+from &mdash;
 
 234
 00:11:21,495 --> 00:11:22,650
@@ -1709,7 +1709,7 @@ change.
 376
 00:18:36,570 --> 00:18:39,160
 BORIS SMUS: And the
-standard-- sorry.
+standard &mdash; sorry.
 
 377
 00:18:39,160 --> 00:18:43,120
@@ -1860,7 +1860,7 @@ requested feature.
 
 408
 00:20:12,770 --> 00:20:14,950
-The back story here is--
+The back story here is &mdash;
 
 409
 00:20:14,950 --> 00:20:19,080
@@ -1897,7 +1897,7 @@ type of input.
 
 416
 00:20:40,100 --> 00:20:42,826
-So in the password field--
+So in the password field &mdash;
 
 417
 00:20:42,826 --> 00:20:43,505
@@ -2071,7 +2071,7 @@ Hopefully you can see this.
 
 455
 00:22:24,490 --> 00:22:27,060
-Basically we support--
+Basically we support &mdash;
 
 456
 00:22:27,060 --> 00:22:30,910
@@ -2128,11 +2128,11 @@ BORIS SMUS: Correct.
 467
 00:23:02,360 --> 00:23:04,800
 So using things like
-Modernizr--
+Modernizr &mdash;
 
 468
 00:23:04,800 --> 00:23:07,700
-we'll just open that up--
+we'll just open that up &mdash;
 
 469
 00:23:07,700 --> 00:23:11,240
@@ -2210,7 +2210,7 @@ browser style camera.
 485
 00:23:57,030 --> 00:23:59,960
 So basically there's
-a way to--
+a way to &mdash;
 
 486
 00:23:59,960 --> 00:24:02,490
@@ -2224,11 +2224,11 @@ here is there's an input box.
 
 488
 00:24:06,280 --> 00:24:07,190
-And it's got a--
+And it's got a &mdash;
 
 489
 00:24:07,190 --> 00:24:09,700
-I think it's like--
+I think it's like &mdash;
 
 490
 00:24:09,700 --> 00:24:10,950
@@ -2240,7 +2240,7 @@ I think it's like--
 492
 00:24:13,420 --> 00:24:14,670
 PETER BEVERLOO: It's
-actually--
+actually &mdash;
 
 493
 00:24:14,670 --> 00:24:18,010
@@ -2288,7 +2288,7 @@ here, this should
 
 503
 00:24:47,820 --> 00:24:50,411
-essentially pick the--
+essentially pick the &mdash;
 
 504
 00:24:50,411 --> 00:24:53,120
@@ -2397,7 +2397,7 @@ BORIS SMUS: Sure, sounds good.
 
 528
 00:25:56,250 --> 00:25:57,680
-So let's talk about--
+So let's talk about &mdash;
 
 529
 00:25:57,680 --> 00:26:00,110
@@ -2405,7 +2405,7 @@ I'll find some [UNINTELLIGIBLE].
 
 530
 00:26:00,110 --> 00:26:01,720
-Maybe you just want to like--
+Maybe you just want to like &mdash;
 
 531
 00:26:01,720 --> 00:26:02,890
@@ -2445,7 +2445,7 @@ clear out the storage as well.
 539
 00:26:32,170 --> 00:26:35,620
 BORIS SMUS: So like,
-how do you--
+how do you &mdash;
 
 540
 00:26:35,620 --> 00:26:35,895
@@ -2454,7 +2454,7 @@ how do you--
 541
 00:26:35,895 --> 00:26:37,120
 JOHN: You go into
-Settings and--
+Settings and &mdash;
 
 542
 00:26:37,120 --> 00:26:39,822
@@ -2519,7 +2519,7 @@ JOHN: So there you are.
 556
 00:27:04,850 --> 00:27:08,140
 That icon on the right,
-there, is--
+there, is &mdash;
 
 557
 00:27:08,140 --> 00:27:11,170
@@ -2599,7 +2599,7 @@ applications.
 574
 00:27:50,780 --> 00:27:53,550
 BORIS SMUS: Oh, and by the
-way, we do have cache--
+way, we do have cache &mdash;
 
 575
 00:27:53,550 --> 00:27:55,490
@@ -2655,7 +2655,7 @@ Or you want to store data.
 
 587
 00:28:15,280 --> 00:28:17,000
-So there's a whole bunch of--
+So there's a whole bunch of &mdash;
 
 588
 00:28:17,000 --> 00:28:18,840
@@ -3051,7 +3051,7 @@ BORIS SMUS: Cool.
 675
 00:31:59,840 --> 00:32:01,530
 So we had a question
-I think about--
+I think about &mdash;
 
 676
 00:32:01,530 --> 00:32:08,680
@@ -3070,7 +3070,7 @@ I think there's a
 
 679
 00:32:15,120 --> 00:32:18,570
-list probably on our--
+list probably on our &mdash;
 
 680
 00:32:18,570 --> 00:32:21,400
@@ -3101,7 +3101,7 @@ BORIS SMUS: Yeah, sounds good.
 686
 00:32:32,795 --> 00:32:34,550
 PETE: And what about
-devices or--
+devices or &mdash;
 
 687
 00:32:34,550 --> 00:32:39,180
@@ -4018,7 +4018,7 @@ Oh no.
 
 892
 00:41:36,390 --> 00:41:38,810
-Basically there's this-- one of
+Basically there's this &mdash; one of
 my favorite features here
 
 893
@@ -4057,7 +4057,7 @@ Oh.
 
 901
 00:42:02,010 --> 00:42:03,760
-So now we have, like--
+So now we have, like &mdash;
 
 902
 00:42:03,760 --> 00:42:06,663
@@ -4323,7 +4323,7 @@ It's [UNINTELLIGIBLE].
 959
 00:44:46,470 --> 00:44:50,510
 So we'll be getting all the
-feature support-- all the
+feature support &mdash; all the
 
 960
 00:44:50,510 --> 00:44:54,570
@@ -4346,7 +4346,7 @@ as at home.
 964
 00:44:59,786 --> 00:45:03,290
 And the other browser shows
-a slightly different--
+a slightly different &mdash;
 
 965
 00:45:03,290 --> 00:45:05,640
@@ -4483,7 +4483,7 @@ Sorry.
 
 995
 00:46:26,320 --> 00:46:27,570
-Anyway--
+Anyway &mdash;
 
 996
 00:46:27,570 --> 00:46:30,960
@@ -4496,7 +4496,7 @@ right Pete?
 998
 00:46:33,685 --> 00:46:39,200
 PETE: Yeah, so there was a
-question wanting to know--
+question wanting to know &mdash;
 
 999
 00:46:39,200 --> 00:46:41,400
@@ -4531,7 +4531,7 @@ expand to other countries.
 1006
 00:46:56,390 --> 00:46:59,150
 But I don't think there's
-any concrete plans--
+any concrete plans &mdash;
 
 1007
 00:46:59,150 --> 00:47:01,490
@@ -4540,7 +4540,7 @@ is the real answer.
 
 1008
 00:47:01,490 --> 00:47:02,060
-But--
+But &mdash;
 
 1009
 00:47:02,060 --> 00:47:03,000
@@ -4867,7 +4867,7 @@ to the end actually.
 1079
 00:50:20,701 --> 00:50:25,910
 Oh yeah, so I heard there's an
-Easter egg somewhere in the--
+Easter egg somewhere in the &mdash;
 
 1080
 00:50:25,910 --> 00:50:26,774
@@ -4972,7 +4972,7 @@ as a link in here.
 
 1103
 00:51:24,250 --> 00:51:25,270
-Other things--
+Other things &mdash;
 
 1104
 00:51:25,270 --> 00:51:26,330
@@ -5058,7 +5058,7 @@ for participating.
 
 1122
 00:52:16,840 --> 00:52:18,160
-I'll let you--
+I'll let you &mdash;
 
 1123
 00:52:18,160 --> 00:52:19,700

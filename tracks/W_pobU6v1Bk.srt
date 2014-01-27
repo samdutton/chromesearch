@@ -74,7 +74,7 @@ users for digital goods.
 17
 00:01:55,990 --> 00:01:58,930
 So let's get started and take
-a look at our code--
+a look at our code &mdash;
 
 18
 00:01:58,930 --> 00:02:00,380
@@ -415,7 +415,7 @@ Parameters is one.
 
 91
 00:05:33,540 --> 00:05:34,760
-Today--
+Today &mdash;
 
 92
 00:05:34,760 --> 00:05:41,690
@@ -704,7 +704,7 @@ to it.
 153
 00:08:48,950 --> 00:08:52,680
 So let's just pop out of here,
-and let me bring up--
+and let me bring up &mdash;
 
 154
 00:08:52,680 --> 00:08:53,930

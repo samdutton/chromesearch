@@ -243,7 +243,7 @@ to the buffer recently.
 
 54
 00:03:39,430 --> 00:03:40,610
-If we look up--
+If we look up &mdash;
 
 55
 00:03:40,610 --> 00:03:42,380
@@ -344,7 +344,7 @@ and the texture content.
 77
 00:04:53,170 --> 00:04:59,090
 Because this is a texture that
-was passed as a null texture--
+was passed as a null texture &mdash;
 
 78
 00:04:59,090 --> 00:05:04,460
@@ -353,7 +353,7 @@ that the WebGL program
 
 79
 00:05:04,460 --> 00:05:06,610
-is editing in the GPU--
+is editing in the GPU &mdash;
 
 80
 00:05:06,610 --> 00:05:11,430
@@ -441,7 +441,7 @@ using, and so on.
 
 99
 00:06:19,244 --> 00:06:21,350
-Now If we go the Trace panel--
+Now If we go the Trace panel &mdash;
 
 100
 00:06:21,350 --> 00:06:24,010
@@ -498,7 +498,7 @@ code in the WebGL.
 
 111
 00:07:11,530 --> 00:07:12,910
-And--
+And &mdash;
 
 112
 00:07:12,910 --> 00:07:15,505

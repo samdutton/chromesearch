@@ -70,7 +70,7 @@ Paul Rashidi debuted a
 
 16
 00:00:35,260 --> 00:00:38,910
-on GDL-- walking us through the
+on GDL &mdash; walking us through the
 process of creating a project,
 
 17
@@ -81,7 +81,7 @@ virtual machine,
 18
 00:00:41,020 --> 00:00:44,360
 and installing a web
-server-- very helpful.
+server &mdash; very helpful.
 
 19
 00:00:44,360 --> 00:00:46,200
@@ -160,7 +160,7 @@ location, soon to be revealed.
 
 35
 00:01:23,670 --> 00:01:28,030
-This week's focus-- map padding
+This week's focus &mdash; map padding
 in the Google Maps SDK for iOS.
 
 36
@@ -265,7 +265,7 @@ guru, Ilya Grigorik,
 
 57
 00:02:20,890 --> 00:02:24,260
-wrote about HTTP 2.0--
+wrote about HTTP 2.0 &mdash;
 a developing protocol
 
 58

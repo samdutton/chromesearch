@@ -822,7 +822,7 @@ so about 100 pixels.
 174
 00:06:58,320 --> 00:07:00,290
 And it sees this,
-and this is a-- it
+and this is a &mdash; it
 
 175
 00:07:00,290 --> 00:07:03,250
@@ -1380,7 +1380,7 @@ When is this is HTML?
 292
 00:11:24,370 --> 00:11:26,705
 When an element is
-turned into-- when
+turned into &mdash; when
 
 293
 00:11:26,705 --> 00:11:28,996
@@ -1562,7 +1562,7 @@ download it here, none at all.
 330
 00:12:46,711 --> 00:12:48,339
 And that's kind
-of-- I suppose you
+of &mdash; I suppose you
 
 331
 00:12:48,339 --> 00:12:49,630
@@ -1596,7 +1596,7 @@ is it's all on one element.
 
 338
 00:12:59,600 --> 00:13:02,290
-It's not-- the image isn't
+It's not &mdash; the image isn't
 inside another element that's
 
 339
@@ -1969,7 +1969,7 @@ they're not in the document?
 417
 00:15:49,700 --> 00:15:51,590
 Because once again,
-this is not--
+this is not &mdash;
 
 418
 00:15:51,590 --> 00:15:53,669
@@ -2113,7 +2113,7 @@ so what's going on there?
 447
 00:16:56,900 --> 00:17:00,320
 When we create this, most
-browsers-- Chrome, Safari, IE--
+browsers &mdash; Chrome, Safari, IE &mdash;
 
 448
 00:17:00,320 --> 00:17:03,850
@@ -2173,7 +2173,7 @@ completely bypassing the parser.
 
 460
 00:17:26,470 --> 00:17:30,320
-So it should-- Firefox
+So it should &mdash; Firefox
 gives us an HTML element.
 
 461
@@ -2604,7 +2604,7 @@ make a download here.
 552
 00:20:48,940 --> 00:20:53,810
 And the reason for that is
-because in Internet Explorer--
+because in Internet Explorer &mdash;
 
 553
 00:20:53,810 --> 00:20:54,540
@@ -2764,7 +2764,7 @@ what you would get
 
 587
 00:22:03,570 --> 00:22:05,650
-if you copied-- if you
+if you copied &mdash; if you
 highlighted the element
 
 588
@@ -2793,7 +2793,7 @@ and it is in this case.
 593
 00:22:15,100 --> 00:22:17,440
 So what actually happens
-here is the browser--
+here is the browser &mdash;
 
 594
 00:22:17,440 --> 00:22:19,500
@@ -2893,7 +2893,7 @@ of these properties,
 
 615
 00:22:56,290 --> 00:22:58,130
-like out of text--
+like out of text &mdash;
 not out of text,
 
 616
@@ -2971,11 +2971,11 @@ unexpected results, not just
 
 631
 00:23:40,590 --> 00:23:42,440
-graphical performance, but--
+graphical performance, but &mdash;
 
 632
 00:23:42,440 --> 00:23:46,530
-So imagine-- let's have a
+So imagine &mdash; let's have a
 look at a practical example.
 
 633
@@ -3041,7 +3041,7 @@ up these style changes.
 
 647
 00:24:09,640 --> 00:24:11,725
-So we've got-- we're
+So we've got &mdash; we're
 setting "left" twice,
 
 648
@@ -3469,7 +3469,7 @@ Where are you?
 
 739
 00:27:26,290 --> 00:27:30,112
-Oh, one here, and there--
+Oh, one here, and there &mdash;
 Oh, congratulations, guys.
 
 740

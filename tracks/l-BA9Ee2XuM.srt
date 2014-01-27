@@ -385,20 +385,20 @@ do with those APIs on the web.
 82
 00:04:06,030 --> 00:04:08,360
 Perhaps the best place to
-start-- I just [INAUDIBLE]
+start &mdash; I just [INAUDIBLE]
 
 83
 00:04:08,360 --> 00:04:11,590
-any more feedback-- is WebRTC.
+any more feedback &mdash; is WebRTC.
 
 84
 00:04:11,590 --> 00:04:15,107
 This is perhaps the
-most ambitious-- kind
+most ambitious &mdash; kind
 
 85
 00:04:15,107 --> 00:04:18,339
-of odious word-- but
+of odious word &mdash; but
 disruptive, really, disruptive
 
 86
@@ -445,7 +445,7 @@ is let's have a chat.
 
 95
 00:04:48,570 --> 00:04:54,920
-We have-- well, I'm going to use
+We have &mdash; well, I'm going to use
 Opera, actually, on the desktop
 
 96
@@ -1013,7 +1013,7 @@ RTCDataChannel for that.
 
 215
 00:10:39,480 --> 00:10:44,740
-And this has exactly-- I
+And this has exactly &mdash; I
 don't know who is ringing.
 
 216
@@ -1330,7 +1330,7 @@ And then, bang.
 281
 00:13:53,040 --> 00:13:55,485
 We're getting video
-from the-- I've
+from the &mdash; I've
 
 282
 00:13:55,485 --> 00:14:00,030
@@ -1348,7 +1348,7 @@ this, though, is
 
 285
 00:14:05,220 --> 00:14:06,754
-when you see these--
+when you see these &mdash;
 I don't know,
 
 286
@@ -1414,7 +1414,7 @@ the resolution of our camera.
 
 299
 00:14:42,700 --> 00:14:46,200
-So-- wow, that's slow.
+So &mdash; wow, that's slow.
 
 300
 00:14:46,200 --> 00:14:52,410
@@ -1462,7 +1462,7 @@ here, we're getting 640 by 360
 309
 00:15:12,030 --> 00:15:15,365
 right up to HD here,
-which is-- oh, sorry, I've
+which is &mdash; oh, sorry, I've
 
 310
 00:15:15,365 --> 00:15:17,110
@@ -1490,7 +1490,7 @@ There we go.
 315
 00:15:28,670 --> 00:15:34,140
 You can see I'm getting
-the full HD from-- hello.
+the full HD from &mdash; hello.
 
 316
 00:15:34,140 --> 00:15:35,850
@@ -1538,7 +1538,7 @@ mobile device, I think.
 325
 00:16:06,230 --> 00:16:09,810
 I can actually, if we look
-at-- you can come over here,
+at &mdash; you can come over here,
 
 326
 00:16:09,810 --> 00:16:10,810
@@ -1600,7 +1600,7 @@ So there we go there, yeah.
 339
 00:16:40,585 --> 00:16:41,960
 They're just about,
-just about---
+just about- &mdash;
 
 340
 00:16:41,960 --> 00:16:43,770
@@ -1689,7 +1689,7 @@ getUserMedia and Canvas.
 358
 00:17:36,780 --> 00:17:39,770
 But this gives us
-access-- well, is proposed
+access &mdash; well, is proposed
 
 359
 00:17:39,770 --> 00:17:42,910
@@ -1856,7 +1856,7 @@ at any time you want.
 393
 00:19:15,320 --> 00:19:20,710
 And some of the
-things-- there you go.
+things &mdash; there you go.
 
 394
 00:19:20,710 --> 00:19:23,430
@@ -1900,7 +1900,7 @@ visualizers and things.
 403
 00:19:42,340 --> 00:19:45,165
 And even if you still
-want that old-- that
+want that old &mdash; that
 
 404
 00:19:45,165 --> 00:19:47,290
@@ -2010,7 +2010,7 @@ platforms, on Android, and iOS.
 
 426
 00:20:57,350 --> 00:21:00,840
-So-- and Opera, sorry, sorry.
+So &mdash; and Opera, sorry, sorry.
 
 427
 00:21:00,840 --> 00:21:04,940
@@ -2144,11 +2144,11 @@ for I/O last year.
 
 454
 00:22:16,370 --> 00:22:18,100
-And since then, he-- oh, sorry.
+And since then, he &mdash; oh, sorry.
 
 455
 00:22:18,100 --> 00:22:20,652
-I should-- since then, he has--
+I should &mdash; since then, he has &mdash;
 
 456
 00:22:20,652 --> 00:22:26,620
@@ -2323,7 +2323,7 @@ media devices, like a synth.
 
 495
 00:24:10,890 --> 00:24:13,477
-Or let's look at--
+Or let's look at &mdash;
 
 496
 00:24:13,477 --> 00:24:15,060
@@ -2342,7 +2342,7 @@ API.
 499
 00:24:20,230 --> 00:24:24,122
 But we also have a couple
-other apps that we've-- oh.
+other apps that we've &mdash; oh.
 
 500
 00:24:24,122 --> 00:24:25,900
@@ -2387,7 +2387,7 @@ said they were going to dance.
 
 510
 00:24:47,490 --> 00:24:48,740
-I just kind of looked--
+I just kind of looked &mdash;
 
 511
 00:24:48,740 --> 00:24:50,312
@@ -2400,7 +2400,7 @@ That was the deal.
 
 513
 00:24:51,635 --> 00:24:52,593
-CHRIS WILSON: The key--
+CHRIS WILSON: The key &mdash;
 
 514
 00:24:52,593 --> 00:24:54,134
@@ -2418,7 +2418,7 @@ though, is that you really
 
 517
 00:24:57,780 --> 00:24:59,460
-need-- for a lot of
+need &mdash; for a lot of
 audio applications,
 
 518
@@ -2591,7 +2591,7 @@ handle content protection.
 554
 00:26:35,910 --> 00:26:39,750
 And then I leave for
-you for things like--
+you for things like &mdash;
 
 555
 00:26:39,750 --> 00:26:40,660
@@ -2599,7 +2599,7 @@ SAM DUTTON: Yeah.
 
 556
 00:26:40,660 --> 00:26:41,310
-So I've got--
+So I've got &mdash;
 
 557
 00:26:41,310 --> 00:26:42,268
@@ -2812,7 +2812,7 @@ you'll get the real dance.
 601
 00:28:37,190 --> 00:28:41,780
 SAM DUTTON: Yeah, this
-slightly weird video shows--
+slightly weird video shows &mdash;
 
 602
 00:28:41,780 --> 00:28:43,650
@@ -2831,7 +2831,7 @@ just video elements.
 
 605
 00:28:49,680 --> 00:28:52,210
-So-- that is weird.
+So &mdash; that is weird.
 
 606
 00:28:52,210 --> 00:28:54,690
@@ -2910,7 +2910,7 @@ touch on a few things here,
 
 622
 00:29:30,150 --> 00:29:31,620
-but there's much more, so--
+but there's much more, so &mdash;
 
 623
 00:29:31,620 --> 00:29:33,120

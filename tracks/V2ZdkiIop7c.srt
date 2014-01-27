@@ -362,7 +362,7 @@ healthy and keeps growing.
 80
 00:04:56,220 --> 00:05:00,550
 It's used by a few
-large companies--
+large companies &mdash;
 
 81
 00:05:00,550 --> 00:05:04,950
@@ -403,7 +403,7 @@ architecture of Angular is
 
 89
 00:05:30,850 --> 00:05:34,325
-that you have the front--
+that you have the front &mdash;
 
 90
 00:05:34,325 --> 00:05:40,100
@@ -502,7 +502,7 @@ very, very light.
 
 110
 00:06:49,130 --> 00:06:54,450
-So a word about templates--
+So a word about templates &mdash;
 
 111
 00:06:54,450 --> 00:07:00,300
@@ -834,11 +834,11 @@ explanation that you give.
 181
 00:10:44,960 --> 00:10:48,340
 And one of the nice ways that
-you can see it-- and we'll
+you can see it &mdash; and we'll
 
 182
 00:10:48,340 --> 00:10:50,290
-have an example later on--
+have an example later on &mdash;
 
 183
 00:10:50,290 --> 00:10:53,910
@@ -1254,7 +1254,7 @@ is native JavaScript.
 269
 00:16:06,850 --> 00:16:09,020
 You don't have a special
-model object--
+model object &mdash;
 
 270
 00:16:09,020 --> 00:16:13,380
@@ -1338,11 +1338,11 @@ service side model
 
 287
 00:17:22,640 --> 00:17:24,849
-or complicated--
+or complicated &mdash;
 
 288
 00:17:24,849 --> 00:17:25,510
-sorry--
+sorry &mdash;
 
 289
 00:17:25,510 --> 00:17:30,220
@@ -1395,7 +1395,7 @@ solution now.
 299
 00:18:02,510 --> 00:18:08,770
 But still, I find it hard to
-work if you don't have .net--
+work if you don't have .net &mdash;
 
 300
 00:18:08,770 --> 00:18:10,490
@@ -1627,7 +1627,7 @@ and especially Angular.
 350
 00:20:56,420 --> 00:21:00,932
 So testing, really easier than
-any other framework--
+any other framework &mdash;
 
 351
 00:21:00,932 --> 00:21:02,910
@@ -1730,7 +1730,7 @@ me the services, as I mentioned
 
 373
 00:22:25,710 --> 00:22:26,960
-before, and the clear--
+before, and the clear &mdash;
 
 374
 00:22:26,960 --> 00:22:29,700
@@ -1742,7 +1742,7 @@ about which stuff goes where.
 
 376
 00:22:35,160 --> 00:22:37,080
-Testing is also--
+Testing is also &mdash;
 
 377
 00:22:37,080 --> 00:22:39,570
@@ -1990,7 +1990,7 @@ get the screenshot out.
 
 429
 00:25:46,670 --> 00:25:50,510
-Do we want to share--
+Do we want to share &mdash;
 
 430
 00:25:50,510 --> 00:25:51,490
@@ -2138,7 +2138,7 @@ in the scope.
 
 462
 00:27:43,620 --> 00:27:45,550
-And then it creates--
+And then it creates &mdash;
 
 463
 00:27:45,550 --> 00:27:50,650
@@ -2546,7 +2546,7 @@ that watches your specific
 
 552
 00:32:46,580 --> 00:32:48,215
-instance of the--
+instance of the &mdash;
 
 553
 00:32:48,215 --> 00:32:50,760
@@ -2616,7 +2616,7 @@ really simple.
 
 567
 00:33:20,990 --> 00:33:23,870
-And you just can search for--
+And you just can search for &mdash;
 
 568
 00:33:23,870 --> 00:33:24,310

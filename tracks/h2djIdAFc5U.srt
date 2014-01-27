@@ -118,7 +118,7 @@ either treating mobiles as
 
 28
 00:01:09,590 --> 00:01:11,405
-this special thing--
+this special thing &mdash;
 
 29
 00:01:11,405 --> 00:01:15,050
@@ -238,11 +238,11 @@ us to what we're trying
 55
 00:01:58,460 --> 00:02:01,266
 to talk about today is that
-we were at Educomm--
+we were at Educomm &mdash;
 
 56
 00:02:01,266 --> 00:02:04,370
-It was Educomm, wasn't it?-- and
+It was Educomm, wasn't it? &mdash; and
 I think Facebook said that
 
 57
@@ -271,17 +271,17 @@ engagement that they got,
 
 62
 00:02:18,920 --> 00:02:21,510
-which got us thinking about--
+which got us thinking about &mdash;
 
 63
 00:02:21,510 --> 00:02:23,330
 well, we've been doing it for a
-little while now-- but we're
+little while now &mdash; but we're
 
 64
 00:02:23,330 --> 00:02:25,670
 starting to push more about
-this jank-free--
+this jank-free &mdash;
 
 65
 00:02:25,670 --> 00:02:27,980
@@ -290,7 +290,7 @@ because I can never
 
 66
 00:02:27,980 --> 00:02:31,100
-say that quite right--
+say that quite right &mdash;
 
 67
 00:02:31,100 --> 00:02:33,300
@@ -389,7 +389,7 @@ Maybe I do.
 
 88
 00:03:14,060 --> 00:03:15,570
-But I've been told that--
+But I've been told that &mdash;
 
 89
 00:03:15,570 --> 00:03:17,000
@@ -404,7 +404,7 @@ not allowed to.
 91
 00:03:19,150 --> 00:03:22,045
 And when you're told you're
-not allowed--
+not allowed &mdash;
 
 92
 00:03:22,045 --> 00:03:23,580
@@ -431,7 +431,7 @@ are one syllable away
 
 97
 00:03:30,870 --> 00:03:32,350
-from losing your job--
+from losing your job &mdash;
 
 98
 00:03:32,350 --> 00:03:33,810
@@ -469,7 +469,7 @@ JAKE ARCHIBALD: OK.
 105
 00:03:39,740 --> 00:03:42,170
 I get a twitch in my eye
-when I'm about--
+when I'm about &mdash;
 
 106
 00:03:42,170 --> 00:03:44,190
@@ -487,7 +487,7 @@ So watch out for that.
 
 109
 00:03:49,280 --> 00:03:50,110
-PAUL KINLAN: On that note--
+PAUL KINLAN: On that note &mdash;
 
 110
 00:03:50,110 --> 00:03:53,400
@@ -582,7 +582,7 @@ what's on my desktop machine
 129
 00:04:25,070 --> 00:04:27,600
 and look at the first
-demo we have here--
+demo we have here &mdash;
 
 130
 00:04:27,600 --> 00:04:29,750
@@ -716,7 +716,7 @@ how it works on mobile.
 158
 00:05:23,850 --> 00:05:26,790
 So if we can switch to
-the mobile view--
+the mobile view &mdash;
 
 159
 00:05:26,790 --> 00:05:29,910
@@ -791,7 +791,7 @@ that happens.
 174
 00:06:04,305 --> 00:06:08,020
 If we have a look at
-Google Moderator--
+Google Moderator &mdash;
 
 175
 00:06:08,020 --> 00:06:11,120
@@ -801,7 +801,7 @@ isn't really optimized
 176
 00:06:11,120 --> 00:06:16,380
 well for mobile, so no points
-to us there for that--
+to us there for that &mdash;
 
 177
 00:06:16,380 --> 00:06:20,430
@@ -966,7 +966,7 @@ want to spoil ahead of me
 
 212
 00:07:30,990 --> 00:07:31,710
-getting around to it--
+getting around to it &mdash;
 
 213
 00:07:31,710 --> 00:07:32,320
@@ -979,7 +979,7 @@ JAKE ARCHIBALD: --that's fine.
 
 215
 00:07:33,050 --> 00:07:33,540
-Tell you what--
+Tell you what &mdash;
 
 216
 00:07:33,540 --> 00:07:34,710
@@ -1046,7 +1046,7 @@ It's number three.
 
 230
 00:07:59,360 --> 00:08:00,740
-So this code looks exactly--
+So this code looks exactly &mdash;
 
 231
 00:08:00,740 --> 00:08:01,310
@@ -1306,7 +1306,7 @@ say would be to the
 
 288
 00:09:59,480 --> 00:10:01,300
-right thing to do--
+right thing to do &mdash;
 
 289
 00:10:01,300 --> 00:10:05,435
@@ -1359,12 +1359,12 @@ worked through w3.
 
 300
 00:10:25,590 --> 00:10:26,980
-And that explicitly says--
+And that explicitly says &mdash;
 
 301
 00:10:26,980 --> 00:10:29,670
 and we'll include
-a link to this--
+a link to this &mdash;
 
 302
 00:10:29,670 --> 00:10:35,300
@@ -1709,7 +1709,7 @@ Firefox does it as well.
 377
 00:12:58,530 --> 00:13:01,680
 Unfortunately the other
-browsers, including--
+browsers, including &mdash;
 
 378
 00:13:01,680 --> 00:13:03,820
@@ -1770,12 +1770,12 @@ So it's worth keeping.
 
 390
 00:13:31,670 --> 00:13:33,730
-So we're looking at ways--
+So we're looking at ways &mdash;
 there's a ticket.
 
 391
 00:13:33,730 --> 00:13:37,290
-We'll post a link to that--
+We'll post a link to that &mdash;
 where we're discussing in what
 
 392
@@ -1981,7 +1981,7 @@ in JavaScript from the FT.
 435
 00:15:11,160 --> 00:15:13,450
 And if I switch into
-the Edit view--
+the Edit view &mdash;
 
 436
 00:15:13,450 --> 00:15:16,240
@@ -2086,11 +2086,11 @@ browsers up to date or have a
 458
 00:16:05,980 --> 00:16:07,740
 way that we can work
-around this--
+around this &mdash;
 
 459
 00:16:07,740 --> 00:16:08,820
-this click delay thing--
+this click delay thing &mdash;
 
 460
 00:16:08,820 --> 00:16:09,340
@@ -2183,7 +2183,7 @@ Yeah.
 480
 00:16:37,410 --> 00:16:39,060
 So do you want to go on
-to your next bit--
+to your next bit &mdash;
 
 481
 00:16:39,060 --> 00:16:39,640
@@ -2415,7 +2415,7 @@ This is the timeline.
 532
 00:18:10,150 --> 00:18:12,570
 And what happens here if
-I start recording--
+I start recording &mdash;
 
 533
 00:18:12,570 --> 00:18:13,950
@@ -2473,7 +2473,7 @@ big on this at the moment.
 545
 00:18:27,900 --> 00:18:29,735
 He's basically saying
-all the time that--
+all the time that &mdash;
 
 546
 00:18:29,735 --> 00:18:30,915
@@ -2812,7 +2812,7 @@ It's that.
 619
 00:20:41,920 --> 00:20:43,360
 And I don't know about you,
-but that was the first--
+but that was the first &mdash;
 
 620
 00:20:43,360 --> 00:20:44,050
@@ -3238,7 +3238,7 @@ We're not perfect.
 713
 00:23:46,430 --> 00:23:48,380
 PAUL KINLAN: You're not at the
-full 30 frames a second but--
+full 30 frames a second but &mdash;
 
 714
 00:23:48,380 --> 00:23:48,740
@@ -3371,12 +3371,12 @@ getting a really slow frame
 
 743
 00:24:32,620 --> 00:24:34,270
-rate-- and we've seen
+rate &mdash; and we've seen
 applications that get like a
 
 744
 00:24:34,270 --> 00:24:35,570
-quarter of a frame a second--
+quarter of a frame a second &mdash;
 
 745
 00:24:35,570 --> 00:24:37,240
@@ -3671,7 +3671,7 @@ trouble we had getting this
 
 808
 00:26:21,750 --> 00:26:22,575
-place ready first--
+place ready first &mdash;
 
 809
 00:26:22,575 --> 00:26:23,830
@@ -3706,7 +3706,7 @@ No, this is a button.
 816
 00:26:33,400 --> 00:26:36,430
 And this is going to spend a
-second-- there it goes--
+second &mdash; there it goes &mdash;
 
 817
 00:26:36,430 --> 00:26:38,690
@@ -3730,7 +3730,7 @@ animation performance as well.
 821
 00:26:46,150 --> 00:26:48,340
 We saw with the code
-we had before--
+we had before &mdash;
 
 822
 00:26:48,340 --> 00:26:54,768
@@ -4055,7 +4055,7 @@ thinking of that translate Z
 
 893
 00:29:06,700 --> 00:29:09,500
-thing as a--
+thing as a &mdash;
 
 894
 00:29:09,500 --> 00:29:10,105
@@ -4084,7 +4084,7 @@ I don't know.
 900
 00:29:14,820 --> 00:29:16,600
 We got into trouble
-doing something--
+doing something &mdash;
 
 901
 00:29:16,600 --> 00:29:16,840
@@ -4111,7 +4111,7 @@ PAUL KINLAN: Yep.
 906
 00:29:20,400 --> 00:29:21,280
 JAKE ARCHIBALD: In fact,
-I think [INAUDIBLE]--
+I think [INAUDIBLE] &mdash;
 
 907
 00:29:21,280 --> 00:29:22,870
@@ -4149,7 +4149,7 @@ running out of time, but I'm
 
 915
 00:29:30,030 --> 00:29:30,600
-trying to--
+trying to &mdash;
 
 916
 00:29:30,600 --> 00:29:31,420
@@ -4205,12 +4205,12 @@ the border radius.
 
 927
 00:29:50,450 --> 00:29:52,150
-And as we turn those off--
+And as we turn those off &mdash;
 
 928
 00:29:52,150 --> 00:29:53,720
 we're just software
-rendering now--
+rendering now &mdash;
 
 929
 00:29:53,720 --> 00:29:55,420
@@ -4325,11 +4325,11 @@ it was before.
 954
 00:30:42,620 --> 00:30:46,250
 But you can see as it changes
-color there's a--
+color there's a &mdash;
 
 955
 00:30:46,250 --> 00:30:48,240
-we call it jank, right?--
+we call it jank, right? &mdash;
 
 956
 00:30:48,240 --> 00:30:48,580
@@ -4467,7 +4467,7 @@ there are some things I am
 985
 00:31:47,385 --> 00:31:50,360
 better at after a bottle
-of beer, things like--
+of beer, things like &mdash;
 
 986
 00:31:50,360 --> 00:31:51,350
@@ -4571,7 +4571,7 @@ though, is we've got a lot of
 
 1008
 00:32:31,320 --> 00:32:32,240
-questions in the Moderator--
+questions in the Moderator &mdash;
 
 1009
 00:32:32,240 --> 00:32:32,760
@@ -4846,7 +4846,7 @@ because it's not in flow
 
 1070
 00:34:11,510 --> 00:34:13,690
-anymore, and Z index--
+anymore, and Z index &mdash;
 
 1071
 00:34:13,690 --> 00:34:14,980
@@ -4896,7 +4896,7 @@ performance problem at all.
 1081
 00:34:32,960 --> 00:34:34,600
 One thing to watch
-out for is if--
+out for is if &mdash;
 
 1082
 00:34:34,600 --> 00:34:34,810
@@ -4966,7 +4966,7 @@ Excellent.
 1097
 00:34:59,070 --> 00:35:03,360
 So yeah, using fixed
-elements--
+elements &mdash;
 
 1098
 00:35:03,360 --> 00:35:05,290
@@ -5256,7 +5256,7 @@ Android emulators.
 1160
 00:36:57,135 --> 00:37:00,530
 So this is actually one
-of those things that--
+of those things that &mdash;
 
 1161
 00:37:00,530 --> 00:37:03,070
@@ -5285,7 +5285,7 @@ understand the fact that if
 
 1166
 00:37:11,170 --> 00:37:12,530
-you're on a desktop machine--
+you're on a desktop machine &mdash;
 
 1167
 00:37:12,530 --> 00:37:15,140
@@ -5350,7 +5350,7 @@ It's fine.
 1181
 00:37:27,940 --> 00:37:29,180
 JAKE ARCHIBALD: But I
-want to say this--
+want to say this &mdash;
 
 1182
 00:37:29,180 --> 00:37:30,200
@@ -5424,12 +5424,12 @@ would have been able to
 
 1198
 00:37:50,240 --> 00:37:50,790
-understand my--
+understand my &mdash;
 
 1199
 00:37:50,790 --> 00:37:51,650
 JAKE ARCHIBALD: I thought
-you were just--
+you were just &mdash;
 
 1200
 00:37:51,650 --> 00:37:52,140
@@ -5507,11 +5507,11 @@ performance guys, they
 
 1216
 00:38:12,340 --> 00:38:13,620
-actually want you to test--
+actually want you to test &mdash;
 
 1217
 00:38:13,620 --> 00:38:16,100
-that was quick--
+that was quick &mdash;
 
 1218
 00:38:16,100 --> 00:38:18,030
@@ -5849,7 +5849,7 @@ PAUL KINLAN: It looks nice.
 
 1290
 00:40:27,990 --> 00:40:29,550
-It looks like the old gifs--
+It looks like the old gifs &mdash;
 
 1291
 00:40:29,550 --> 00:40:30,190
@@ -6353,7 +6353,7 @@ and resize happens
 
 1402
 00:43:47,700 --> 00:43:49,050
-when you have to--
+when you have to &mdash;
 
 1403
 00:43:49,050 --> 00:43:50,750
@@ -6430,7 +6430,7 @@ generate them on the server, I
 1418
 00:44:26,040 --> 00:44:27,960
 guess, if it was a problem
-on a particular--
+on a particular &mdash;
 
 1419
 00:44:27,960 --> 00:44:28,370
@@ -6452,7 +6452,7 @@ for the container and a whole
 
 1423
 00:44:35,110 --> 00:44:35,780
-load of other stuff--
+load of other stuff &mdash;
 
 1424
 00:44:35,780 --> 00:44:36,280
@@ -6582,7 +6582,7 @@ the site works without
 
 1451
 00:45:29,070 --> 00:45:30,680
-JavaScript--
+JavaScript &mdash;
 
 1452
 00:45:30,680 --> 00:45:32,538
@@ -6604,7 +6604,7 @@ JavaScript.
 
 1456
 00:45:36,580 --> 00:45:39,300
-We saw on old BlackBerrys--
+We saw on old BlackBerrys &mdash;
 
 1457
 00:45:39,300 --> 00:45:40,750
@@ -6613,7 +6613,7 @@ any scripts, we were
 
 1458
 00:45:40,750 --> 00:45:41,700
-just pausing it--
+just pausing it &mdash;
 
 1459
 00:45:41,700 --> 00:45:44,620
@@ -6679,7 +6679,7 @@ quite good on desktops.
 1472
 00:46:08,825 --> 00:46:11,590
 But on mobile, if you're
-on cellular data--
+on cellular data &mdash;
 
 1473
 00:46:11,590 --> 00:46:12,680
@@ -6688,7 +6688,7 @@ apply for a
 
 1474
 00:46:12,680 --> 00:46:16,650
-desktop on cellular data--
+desktop on cellular data &mdash;
 
 1475
 00:46:16,650 --> 00:46:18,130
@@ -6756,7 +6756,7 @@ it's necessary.
 1489
 00:46:43,540 --> 00:46:46,570
 On cell data, on mobile
-3G, whatever--
+3G, whatever &mdash;
 
 1490
 00:46:46,570 --> 00:46:48,890
@@ -6776,7 +6776,7 @@ of the page is fine.
 1493
 00:46:51,200 --> 00:46:53,530
 As long as it's roughly
-the same time--
+the same time &mdash;
 
 1494
 00:46:53,530 --> 00:46:54,910
@@ -6819,7 +6819,7 @@ work and whether
 
 1502
 00:47:09,050 --> 00:47:10,550
-they keep the battery--
+they keep the battery &mdash;
 
 1503
 00:47:10,550 --> 00:47:11,376
@@ -7026,7 +7026,7 @@ It's my first time.
 1547
 00:48:28,130 --> 00:48:28,530
 PAUL KINLAN: You
-are producing--
+are producing &mdash;
 
 1548
 00:48:28,530 --> 00:48:29,000

@@ -279,6 +279,10 @@ function addTranscriptDetails(videoDiv, video){
     // if longer than 1000 characters break up into paragraphs
     // indent first line of all but first paragraph.
     transcriptHTML += "<p>" + paraText + "</p>\n\n";
+    var MAXLENGTH = 1500;
+    if (paraText.length > MAXLENGTH) {
+      console.log(paraText.replace(/([^\.][a-z]\.) ([A-Z])/g, '\$1±@£\$2').split('±@£'));
+    }
   }
   transcriptDiv.innerHTML = transcriptHTML.replace(/--/g, ' &mdash; ');
 
@@ -293,8 +297,12 @@ function addTranscriptDetails(videoDiv, video){
   var downloadLink = document.createElement('a');
   downloadLink.classList.add('download');
   downloadLink.download = video.title.replace(/ /g, '_') + '.html';
-  var style = '<style>* {font-family: "Open Sans", sans-serif}\nbody {padding: 2em}\np {color: #444;}\n</style>\n\n';
-  var downloadHTML = style + '<h1>' + video.title + '</h1>\n\n' + '<h2>' + video.speakers.join(', ') + '</h2>\n\n' + transcriptHTML;
+  var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff; display: block}\nbody {padding: 2em}\np {color: #444}\n</style>\n\n';
+  var downloadHTML = style +
+    '<h1>' + video.title + '</h1>\n\n' +
+    '<h2>' + video.speakers.join(', ') + '</h2>\n\n' +
+    '<a href="http://youtu.be/' + video.id + '">youtu.be/' + video.id + '</a>' +
+    transcriptHTML;
   downloadLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
   downloadLink.textContent = 'download';
   videoDiv.appendChild(downloadLink);
@@ -413,11 +421,3 @@ function tweakName(name){
   return name.replace('Pete Lepage', 'Pete LePage'). replace('Colt Mcanlis', 'Colt McAnlis').replace('Matthew Mcnulty', 'Matthew McNulty').replace('John Mcgowan', 'John McGowan').replace('John Mccutchan', 'John McCutchan').replace('Pete Beverloo', 'Peter Beverloo').replace(/^Irish$/, 'Paul Irish').replace(/^Feldman$/, 'Pavel Feldman').replace(/^Fisher$/, 'Darin Fisher').replace('Tv Raman', 'TV Raman').replace('Matt Mcnulty', 'Matthew McNulty').replace('Wiltzius', 'Tom Wiltzius').replace(/^Kay$/, 'Erik Kay').replace(/^Cromwell$/, 'Ray Cromwell').replace(/^Wilson$/, 'Chris Wilson').replace('Kc Austin', 'KC Austin');
 }
 
-// from http://stackoverflow.com/questions/3665115/create-a-file-in-memory-for-user-to-download-not-through-server
-// download('test.html', '<em>Hello</em> world!');
-// function download(filename, text) {
-    // var pom = document.createElement('a');
-    // pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    // pom.setAttribute('download', filename);
-//     pom.click();
-// }

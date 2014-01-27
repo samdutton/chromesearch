@@ -39,7 +39,7 @@ All right, let's get started.
 
 10
 00:00:17,790 --> 00:00:20,070
-Oh-- where's the clicker?
+Oh &mdash; where's the clicker?
 
 11
 00:00:20,070 --> 00:00:20,835
@@ -108,11 +108,11 @@ conversation.
 
 26
 00:00:43,910 --> 00:00:45,400
-Keep sending the feedback--
+Keep sending the feedback &mdash;
 
 27
 00:00:45,400 --> 00:00:47,330
-the good, the bad, the ugly--
+the good, the bad, the ugly &mdash;
 
 28
 00:00:47,330 --> 00:00:49,340
@@ -202,11 +202,11 @@ with some data.
 46
 00:01:30,360 --> 00:01:32,250
 Last year, Chris Yeager
-got on stage--
+got on stage &mdash;
 
 47
 00:01:32,250 --> 00:01:33,730
-I think exactly this room--
+I think exactly this room &mdash;
 
 48
 00:01:33,730 --> 00:01:36,120
@@ -216,7 +216,7 @@ trajectory of in-app.
 49
 00:01:36,120 --> 00:01:37,790
 It looked something
-like ridiculous--
+like ridiculous &mdash;
 
 50
 00:01:37,790 --> 00:01:40,530
@@ -287,12 +287,12 @@ Play and Android user?
 
 64
 00:02:15,000 --> 00:02:16,740
-And one thing we've learned--
+And one thing we've learned &mdash;
 
 65
 00:02:16,740 --> 00:02:19,040
 and we've heard this a lot from
-our Japanese partners--
+our Japanese partners &mdash;
 
 66
 00:02:19,040 --> 00:02:20,740
@@ -473,7 +473,7 @@ platform clearly.
 103
 00:03:48,660 --> 00:03:51,250
 And Google Play store
-is exactly--
+is exactly &mdash;
 
 104
 00:03:51,250 --> 00:03:52,600
@@ -511,7 +511,7 @@ been this easy and efficient.
 111
 00:04:10,690 --> 00:04:13,030
 And for you as a developer,
-wherever you are in a world--
+wherever you are in a world &mdash;
 
 112
 00:04:13,030 --> 00:04:15,930
@@ -520,7 +520,7 @@ or a multinational
 
 113
 00:04:15,930 --> 00:04:16,850
-corporation--
+corporation &mdash;
 
 114
 00:04:16,850 --> 00:04:19,200
@@ -543,7 +543,7 @@ overlaid on the map are those
 
 118
 00:04:26,810 --> 00:04:29,300
-that are-- some of them are
+that are &mdash; some of them are
 probably already in your mind.
 
 119
@@ -579,7 +579,7 @@ advantage of that, and
 125
 00:04:43,480 --> 00:04:46,910
 map them up to that set of
-countries-- the 134--
+countries &mdash; the 134 &mdash;
 
 126
 00:04:46,910 --> 00:04:51,730
@@ -642,7 +642,7 @@ the rate of a phone.
 138
 00:05:17,920 --> 00:05:21,440
 So that additional cost of
-optimizing your tablet--
+optimizing your tablet &mdash;
 
 139
 00:05:21,440 --> 00:05:24,990
@@ -657,7 +657,7 @@ developers doing just that.
 141
 00:05:27,820 --> 00:05:30,000
 We've launched a lot of features
-on our end, as well--
+on our end, as well &mdash;
 
 142
 00:05:30,000 --> 00:05:33,300
@@ -741,7 +741,7 @@ of just how much better.
 
 159
 00:06:19,472 --> 00:06:20,940
-If you go from one to two--
+If you go from one to two &mdash;
 
 160
 00:06:20,940 --> 00:06:22,220
@@ -778,7 +778,7 @@ good customer experience, and
 
 167
 00:06:38,930 --> 00:06:39,890
-good support--
+good support &mdash;
 
 168
 00:06:39,890 --> 00:06:44,270
@@ -810,7 +810,7 @@ incredible growth that Android
 
 174
 00:06:57,220 --> 00:06:58,680
-itself has been having--
+itself has been having &mdash;
 
 175
 00:06:58,680 --> 00:07:00,440
@@ -828,7 +828,7 @@ that every platform is
 
 178
 00:07:06,180 --> 00:07:07,200
-measured by--
+measured by &mdash;
 
 179
 00:07:07,200 --> 00:07:09,130
@@ -878,7 +878,7 @@ understanding of our mission.
 
 189
 00:07:29,580 --> 00:07:31,760
-Everybody-- we've got a bunch of
+Everybody &mdash; we've got a bunch of
 people who work on payments
 
 190
@@ -907,11 +907,11 @@ we maximize your income.
 195
 00:07:41,980 --> 00:07:43,930
 So when you work hard and
-build an application--
+build an application &mdash;
 
 196
 00:07:43,930 --> 00:07:45,230
-an awesome application--
+an awesome application &mdash;
 
 197
 00:07:45,230 --> 00:07:47,550
@@ -969,7 +969,7 @@ forward is going to be around
 
 208
 00:08:12,030 --> 00:08:13,110
-in this context--
+in this context &mdash;
 
 209
 00:08:13,110 --> 00:08:15,890
@@ -998,7 +998,7 @@ bunch of things.
 214
 00:08:25,340 --> 00:08:27,710
 One is the number of devices out
-there-- how many tablets
+there &mdash; how many tablets
 
 215
 00:08:27,710 --> 00:08:28,800
@@ -1064,7 +1064,7 @@ accounts do we have?
 228
 00:08:52,960 --> 00:08:54,800
 And then the purchase
-experience--
+experience &mdash;
 
 229
 00:08:54,800 --> 00:08:55,880
@@ -1212,7 +1212,7 @@ in July of last year.
 
 260
 00:09:57,060 --> 00:09:58,820
-And since then, it's--
+And since then, it's &mdash;
 
 261
 00:09:58,820 --> 00:09:59,750
@@ -1267,16 +1267,16 @@ launch campaigns.
 272
 00:10:20,720 --> 00:10:23,420
 And what campaigns are
-essentially-- in this case, if
+essentially &mdash; in this case, if
 
 273
 00:10:23,420 --> 00:10:26,790
 you bought a Galaxy S III, you
-get a free Galaxy S III--
+get a free Galaxy S III &mdash;
 
 274
 00:10:26,790 --> 00:10:27,560
-which is awesome--
+which is awesome &mdash;
 
 275
 00:10:27,560 --> 00:10:30,830
@@ -1299,11 +1299,11 @@ users to go from a free
 
 279
 00:10:38,240 --> 00:10:39,190
-app buyer--
+app buyer &mdash;
 
 280
 00:10:39,190 --> 00:10:40,180
-consumer--
+consumer &mdash;
 
 281
 00:10:40,180 --> 00:10:41,810
@@ -1527,12 +1527,12 @@ Google Wallet Merchant Center
 
 328
 00:12:29,670 --> 00:12:31,820
-now-- which is, if you don't
+now &mdash; which is, if you don't
 have it, you should get it in
 
 329
 00:12:31,820 --> 00:12:32,950
-a few weeks--
+a few weeks &mdash;
 
 330
 00:12:32,950 --> 00:12:35,940
@@ -1547,7 +1547,7 @@ injects them into your
 332
 00:12:38,620 --> 00:12:40,910
 backend, and do whatever
-you want with them--
+you want with them &mdash;
 
 333
 00:12:40,910 --> 00:12:43,430
@@ -1618,12 +1618,12 @@ It cuts it short.
 
 347
 00:13:18,710 --> 00:13:19,790
-And so your math--
+And so your math &mdash;
 
 348
 00:13:19,790 --> 00:13:22,530
 as you're looking at, is
-this going to make it--
+this going to make it &mdash;
 
 349
 00:13:22,530 --> 00:13:25,650
@@ -1642,7 +1642,7 @@ critical to your revenue and
 
 352
 00:13:32,370 --> 00:13:34,830
-sales-- to your costs
+sales &mdash; to your costs
 and sales.
 
 353
@@ -1694,11 +1694,11 @@ You just need to do it.
 363
 00:14:04,450 --> 00:14:06,660
 So in-app order status
-API-- this is another
+API &mdash; this is another
 
 364
 00:14:06,660 --> 00:14:08,070
-big ask from you--
+big ask from you &mdash;
 
 365
 00:14:08,070 --> 00:14:10,670
@@ -1767,13 +1767,13 @@ testing by allowing your
 
 379
 00:14:44,670 --> 00:14:47,050
-licensed test accounts-- the one
+licensed test accounts &mdash; the one
 you already configured in
 
 380
 00:14:47,050 --> 00:14:48,840
 the Google Play Developer
-Console--
+Console &mdash;
 
 381
 00:14:48,840 --> 00:14:51,990
@@ -1965,7 +1965,7 @@ to go even further.
 422
 00:16:19,220 --> 00:16:22,000
 The one thing we've done so
-far-- the one thing we've done
+far &mdash; the one thing we've done
 
 423
 00:16:22,000 --> 00:16:25,200
@@ -1992,13 +1992,13 @@ more fine-tuning.
 
 428
 00:16:33,980 --> 00:16:36,840
-So when you send us a buyer--
+So when you send us a buyer &mdash;
 when you get a user to commit
 
 429
 00:16:36,840 --> 00:16:39,050
 to making a purchase
-on your app--
+on your app &mdash;
 
 430
 00:16:39,050 --> 00:16:41,920
@@ -2031,7 +2031,7 @@ in more countries.
 
 436
 00:16:53,720 --> 00:16:55,310
-We're all--
+We're all &mdash;
 
 437
 00:16:55,310 --> 00:16:57,680
@@ -2040,11 +2040,11 @@ and missions of all
 
 438
 00:16:57,680 --> 00:16:59,380
-of us is that anyone--
+of us is that anyone &mdash;
 
 439
 00:16:59,380 --> 00:17:00,690
-anyone around the world--
+anyone around the world &mdash;
 
 440
 00:17:00,690 --> 00:17:02,450
@@ -2467,7 +2467,7 @@ that happen on Google Play.
 
 529
 00:20:33,960 --> 00:20:35,400
-Second, retention--
+Second, retention &mdash;
 
 530
 00:20:35,400 --> 00:20:36,320
@@ -2785,7 +2785,7 @@ other rewards happening.
 
 597
 00:23:09,520 --> 00:23:10,840
-Further on retention--
+Further on retention &mdash;
 
 598
 00:23:10,840 --> 00:23:14,320
@@ -2795,20 +2795,20 @@ unlocking big, new content.
 599
 00:23:14,320 --> 00:23:16,470
 In this case, a full
-new island--
+new island &mdash;
 
 600
 00:23:16,470 --> 00:23:17,640
-Atlantis, in this case--
+Atlantis, in this case &mdash;
 
 601
 00:23:17,640 --> 00:23:20,530
 allows your users to stay
-engaged with the game-- or,
+engaged with the game &mdash; or,
 
 602
 00:23:20,530 --> 00:23:21,650
-the application--
+the application &mdash;
 
 603
 00:23:21,650 --> 00:23:24,780
@@ -2881,7 +2881,7 @@ see the little text there.
 
 618
 00:23:56,650 --> 00:23:59,290
-But 24 gold for $2.99--
+But 24 gold for $2.99 &mdash;
 
 619
 00:23:59,290 --> 00:24:00,070
@@ -2983,12 +2983,12 @@ have a great number of
 640
 00:24:49,880 --> 00:24:52,680
 retained users can cross-promote
-those users--
+those users &mdash;
 
 641
 00:24:52,680 --> 00:24:54,940
 especially the developers that
-have multiple titles--
+have multiple titles &mdash;
 
 642
 00:24:54,940 --> 00:24:57,980
@@ -3073,7 +3073,7 @@ In this case, I was playing
 659
 00:25:38,600 --> 00:25:40,640
 While I was playing, I received
-this promotion--
+this promotion &mdash;
 
 660
 00:25:40,640 --> 00:25:43,820
@@ -3083,7 +3083,7 @@ MobaCoin." It's a way for them
 661
 00:25:43,820 --> 00:25:47,030
 to target a very attractive
-user base--
+user base &mdash;
 
 662
 00:25:47,030 --> 00:25:49,660
@@ -3150,7 +3150,7 @@ battling,
 
 676
 00:26:16,350 --> 00:26:17,770
-leveling up your characters--
+leveling up your characters &mdash;
 
 677
 00:26:17,770 --> 00:26:20,450
@@ -3202,11 +3202,11 @@ the standard gameplay that
 687
 00:26:42,760 --> 00:26:44,470
 happen for a very limited
-amount of time--
+amount of time &mdash;
 
 688
 00:26:44,470 --> 00:26:45,810
-a fixed duration--
+a fixed duration &mdash;
 
 689
 00:26:45,810 --> 00:26:47,180
@@ -3524,7 +3524,7 @@ your thumb in a very easy way.
 
 757
 00:29:30,220 --> 00:29:31,530
-Now monetization--
+Now monetization &mdash;
 
 758
 00:29:31,530 --> 00:29:35,210
@@ -3586,7 +3586,7 @@ apps that has reached the
 770
 00:30:03,190 --> 00:30:06,820
 top of the lists, and
-so from there--
+so from there &mdash;
 
 771
 00:30:06,820 --> 00:30:07,830
@@ -3712,7 +3712,7 @@ And omotenashi is the theme.
 
 797
 00:31:11,390 --> 00:31:12,850
-It's funny, that mix of--
+It's funny, that mix of &mdash;
 
 798
 00:31:12,850 --> 00:31:13,430
@@ -3832,7 +3832,7 @@ user experience.
 
 824
 00:32:16,230 --> 00:32:17,330
-Design for mobile--
+Design for mobile &mdash;
 
 825
 00:32:17,330 --> 00:32:21,130
@@ -3898,7 +3898,7 @@ in the office hour areas.
 838
 00:32:54,310 --> 00:32:56,210
 But I'd also like to point
-out a few other--
+out a few other &mdash;
 
 839
 00:32:56,210 --> 00:32:57,720
@@ -4154,7 +4154,7 @@ application is up there.
 
 893
 00:34:55,360 --> 00:34:56,699
-Clearly, if you're--
+Clearly, if you're &mdash;
 
 894
 00:34:56,699 --> 00:34:59,470
@@ -4168,7 +4168,7 @@ you up there faster.
 
 896
 00:35:01,810 --> 00:35:03,110
-And it just--
+And it just &mdash;
 
 897
 00:35:03,110 --> 00:35:06,030
@@ -4449,7 +4449,7 @@ lot of overhead.
 956
 00:37:10,120 --> 00:37:13,000
 So some of the general guidance
-is simplifying--
+is simplifying &mdash;
 
 957
 00:37:13,000 --> 00:37:15,200
@@ -4565,7 +4565,7 @@ them redeemed by whatever it
 
 981
 00:38:06,660 --> 00:38:09,360
-is-- the press, or reviewers,
+is &mdash; the press, or reviewers,
 on whoever it is.
 
 982
@@ -4679,7 +4679,7 @@ highlighted.
 1005
 00:39:00,330 --> 00:39:02,250
 And that was actually
-all about that--
+all about that &mdash;
 
 1006
 00:39:02,250 --> 00:39:04,800
@@ -4756,7 +4756,7 @@ more so than recommending.
 1022
 00:39:38,640 --> 00:39:40,560
 But there's plenty of other
-smart people-- either other
+smart people &mdash; either other
 
 1023
 00:39:40,560 --> 00:39:43,610
@@ -4765,7 +4765,7 @@ that are doing it, or the
 
 1024
 00:39:43,610 --> 00:39:45,035
-vendors themselves-- who
+vendors themselves &mdash; who
 I'm sure would be
 
 1025

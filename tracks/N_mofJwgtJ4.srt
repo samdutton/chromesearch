@@ -921,12 +921,12 @@ what you can do with the user.
 197
 00:08:10,960 --> 00:08:14,770
 So what we want is for that
-user to be generic--
+user to be generic &mdash;
 
 198
 00:08:14,770 --> 00:08:17,980
 well, specific to your app, but
-generic to the provider--
+generic to the provider &mdash;
 
 199
 00:08:17,980 --> 00:08:20,000
@@ -992,7 +992,7 @@ examples in here.
 
 212
 00:08:48,820 --> 00:08:52,680
-And don't worry if you wonder--
+And don't worry if you wonder &mdash;
 you know, you want to
 
 213
@@ -1210,7 +1210,7 @@ don't want to have to know
 
 259
 00:10:28,250 --> 00:10:31,850
-which each provider is--
+which each provider is &mdash;
 
 260
 00:10:31,850 --> 00:10:33,800
@@ -1384,7 +1384,7 @@ OAuth flow.
 296
 00:11:54,350 --> 00:11:57,530
 They have their own URLs
-for exchanging--
+for exchanging &mdash;
 
 297
 00:11:57,530 --> 00:11:59,590
@@ -2228,11 +2228,11 @@ identity provider to return an
 
 476
 00:19:13,150 --> 00:19:14,500
-email address--
+email address &mdash;
 
 477
 00:19:14,500 --> 00:19:16,990
-the same email address-- for
+the same email address &mdash; for
 two different accounts.
 
 478
@@ -2767,7 +2767,7 @@ defined earlier, and then, if
 
 590
 00:23:51,920 --> 00:23:56,700
-the user ID is null-- and that
+the user ID is null &mdash; and that
 ID, that mId, is the account
 
 591
@@ -3460,7 +3460,7 @@ chosen shows.
 
 739
 00:29:28,280 --> 00:29:29,950
-But they don't-- it's
+But they don't &mdash; it's
 not secret, right?
 
 740
@@ -3598,7 +3598,7 @@ the fast account
 
 770
 00:30:17,760 --> 00:30:19,160
-switching in Gmail--
+switching in Gmail &mdash;
 
 771
 00:30:19,160 --> 00:30:21,120
@@ -3879,7 +3879,7 @@ in, we return it.
 830
 00:32:37,670 --> 00:32:40,790
 If this is happening once
-they've already--
+they've already &mdash;
 
 831
 00:32:40,790 --> 00:32:42,110
@@ -4056,7 +4056,7 @@ So that's about it for me.
 
 868
 00:34:07,680 --> 00:34:10,810
-We'll do-- got a few minutes
+We'll do &mdash; got a few minutes
 for questions.
 
 869
@@ -4255,7 +4255,7 @@ just over there.
 
 911
 00:35:49,270 --> 00:35:53,440
-So I don't know-- how did you
+So I don't know &mdash; how did you
 do it in your example?
 
 912

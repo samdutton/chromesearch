@@ -32,7 +32,7 @@ Maps GL Team,
 
 8
 00:00:24,360 --> 00:00:27,998
-Brandon Jones from the--
+Brandon Jones from the &mdash;
 
 9
 00:00:27,998 --> 00:00:32,130
@@ -754,7 +754,7 @@ started as well, if you
 
 171
 00:08:42,970 --> 00:08:45,070
-just want to--
+just want to &mdash;
 
 172
 00:08:45,070 --> 00:08:47,140
@@ -777,7 +777,7 @@ want to look for them?
 176
 00:08:51,430 --> 00:08:54,120
 ILMARI HEIKKINEN: OK, so
-the 3JS home page--
+the 3JS home page &mdash;
 
 177
 00:08:54,120 --> 00:08:58,540
@@ -805,7 +805,7 @@ slides would be at
 182
 00:09:14,240 --> 00:09:22,580
 fhtr.org/basicsof3js with
-strange capital--
+strange capital &mdash;
 
 183
 00:09:22,580 --> 00:09:25,960
@@ -1270,7 +1270,7 @@ like?
 282
 00:13:57,905 --> 00:13:59,790
 Since I see a bunch of
-tutorials that are--
+tutorials that are &mdash;
 
 283
 00:13:59,790 --> 00:14:06,570
@@ -1331,7 +1331,7 @@ yeah, I don't know.
 
 295
 00:14:49,440 --> 00:14:50,000
-Doing your own library--
+Doing your own library &mdash;
 
 296
 00:14:50,000 --> 00:14:51,260
@@ -1561,7 +1561,7 @@ like a wiki page with all the
 
 344
 00:17:05,109 --> 00:17:08,010
-list of WebGL--
+list of WebGL &mdash;
 
 345
 00:17:08,010 --> 00:17:09,680
@@ -1627,7 +1627,7 @@ or things like that.
 
 359
 00:17:48,300 --> 00:17:50,550
-But I'm a big fan of--
+But I'm a big fan of &mdash;
 
 360
 00:17:50,550 --> 00:17:52,690
@@ -1731,7 +1731,7 @@ in awhile, though.
 
 381
 00:18:52,670 --> 00:18:54,100
-I don't know if he--
+I don't know if he &mdash;
 
 382
 00:18:54,100 --> 00:18:55,680
@@ -1755,7 +1755,7 @@ programmer, longtime graphics
 386
 00:19:04,630 --> 00:19:07,790
 programmer, so it's
-definitely--
+definitely &mdash;
 
 387
 00:19:07,790 --> 00:19:10,540
@@ -1847,7 +1847,7 @@ here, for the most part.
 405
 00:20:10,860 --> 00:20:13,030
 But I'm learning more
-and more that--
+and more that &mdash;
 
 406
 00:20:13,030 --> 00:20:15,120
@@ -1877,7 +1877,7 @@ falls a little flat.
 411
 00:20:30,210 --> 00:20:34,840
 But some of the just really
-general tips-- and I've seen
+general tips &mdash; and I've seen
 
 412
 00:20:34,840 --> 00:20:40,200
@@ -1886,7 +1886,7 @@ allow these optimizations in
 
 413
 00:20:40,200 --> 00:20:42,510
-some way, shape or form--
+some way, shape or form &mdash;
 
 414
 00:20:42,510 --> 00:20:46,970
@@ -1918,7 +1918,7 @@ single draw call.
 
 420
 00:21:00,530 --> 00:21:04,590
-I know, for example, like 3JS--
+I know, for example, like 3JS &mdash;
 and I don't know the
 
 421
@@ -1928,7 +1928,7 @@ for this, maybe
 
 422
 00:21:06,100 --> 00:21:07,700
-Ricardo can help me out--
+Ricardo can help me out &mdash;
 
 423
 00:21:07,700 --> 00:21:10,160
@@ -2235,7 +2235,7 @@ BRENDAN KENNY: Oh, yeah.
 491
 00:24:35,900 --> 00:24:44,170
 So we've been kind of on
-a kick lately to get--
+a kick lately to get &mdash;
 
 492
 00:24:44,170 --> 00:24:47,100
@@ -2466,12 +2466,12 @@ that I want to just pop up.
 540
 00:27:08,630 --> 00:27:11,430
 And the question was,
-do you think that--
+do you think that &mdash;
 
 541
 00:27:11,430 --> 00:27:14,070
 and it's OK not to know the
-answer to this-- but do you
+answer to this &mdash; but do you
 
 542
 00:27:14,070 --> 00:27:17,380
@@ -3172,7 +3172,7 @@ Try it again.
 
 694
 00:34:50,480 --> 00:34:53,230
-It's an example from--
+It's an example from &mdash;
 
 695
 00:34:53,230 --> 00:34:55,370
@@ -3246,7 +3246,7 @@ RICARDO CABELLO: No, no.
 
 710
 00:35:38,890 --> 00:35:40,533
-I guess this is just--
+I guess this is just &mdash;
 
 711
 00:35:40,533 --> 00:35:43,830
@@ -3256,7 +3256,7 @@ a little bit slow to find
 712
 00:35:43,830 --> 00:35:48,320
 targets and everything, but
-let's see if I can make it--
+let's see if I can make it &mdash;
 
 713
 00:35:48,320 --> 00:35:49,200
@@ -3749,7 +3749,7 @@ Well done, Brandon.
 818
 00:41:04,420 --> 00:41:08,150
 PETE: And it is recorded
-live and will be--
+live and will be &mdash;
 
 819
 00:41:08,150 --> 00:41:11,480
@@ -4622,7 +4622,7 @@ I love it so much.
 1011
 00:51:03,510 --> 00:51:05,480
 RICARDO CABELLO: It's a
-really interesting--
+really interesting &mdash;
 
 1012
 00:51:05,480 --> 00:51:11,260
@@ -4858,11 +4858,11 @@ find another one.
 1064
 00:53:31,150 --> 00:53:35,250
 The good thing with this website
-is that anyone--
+is that anyone &mdash;
 
 1065
 00:53:35,250 --> 00:53:37,070
-oh, this one doesn't work--
+oh, this one doesn't work &mdash;
 
 1066
 00:53:37,070 --> 00:53:42,560
@@ -5122,7 +5122,7 @@ on the screen.
 
 1123
 00:56:26,940 --> 00:56:28,240
-And we have the position of--
+And we have the position of &mdash;
 
 1124
 00:56:28,240 --> 00:56:31,345
@@ -5130,7 +5130,7 @@ And we have the position of--
 1125
 00:56:31,345 --> 00:56:35,060
 I don't know whether you can see
-any of that-- but from the
+any of that &mdash; but from the
 
 1126
 00:56:35,060 --> 00:56:38,380

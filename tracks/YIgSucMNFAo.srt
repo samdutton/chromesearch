@@ -693,7 +693,7 @@ sure that we do the right
 
 148
 00:07:42,740 --> 00:07:46,550
-things on different browsers--
+things on different browsers &mdash;
 a bit older browsers.
 
 149
@@ -1089,7 +1089,7 @@ basically just a button.
 
 231
 00:12:00,820 --> 00:12:03,485
-And then the link to it--
+And then the link to it &mdash;
 
 232
 00:12:03,485 --> 00:12:09,760

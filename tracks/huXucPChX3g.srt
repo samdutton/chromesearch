@@ -327,7 +327,7 @@ scripting and displays.
 70
 00:02:40,885 --> 00:02:43,650
 This means code execution as
-well as visual display--
+well as visual display &mdash;
 
 71
 00:02:43,650 --> 00:02:46,410
@@ -336,7 +336,7 @@ well as visual display--
 72
 00:02:46,410 --> 00:02:48,010
 In addition to that,
-this is served--
+this is served &mdash;
 
 73
 00:02:48,010 --> 00:02:50,080
@@ -345,7 +345,7 @@ scripting data and all the
 
 74
 00:02:50,080 --> 00:02:51,630
-information is to display--
+information is to display &mdash;
 
 75
 00:02:51,630 --> 00:02:54,060
@@ -380,7 +380,7 @@ require you to log in.
 82
 00:03:04,140 --> 00:03:07,510
 They store your saved game state
-in the cloud somewhere--
+in the cloud somewhere &mdash;
 
 83
 00:03:07,510 --> 00:03:11,180
@@ -912,7 +912,7 @@ to finish this off with
 
 193
 00:07:16,110 --> 00:07:17,340
-monetization which--
+monetization which &mdash;
 
 194
 00:07:17,340 --> 00:07:19,290
@@ -975,7 +975,7 @@ of standard items do you
 
 207
 00:07:39,460 --> 00:07:40,800
-typically see on your server--
+typically see on your server &mdash;
 
 208
 00:07:40,800 --> 00:07:44,420
@@ -989,11 +989,11 @@ sound files, and whatnot.
 210
 00:07:46,270 --> 00:07:48,010
 What happens is that
-the client--
+the client &mdash;
 
 211
 00:07:48,010 --> 00:07:49,940
-the user machine effectively--
+the user machine effectively &mdash;
 
 212
 00:07:49,940 --> 00:07:52,840
@@ -1012,7 +1012,7 @@ out what the
 
 215
 00:07:57,920 --> 00:07:59,620
-proper syntax is there--
+proper syntax is there &mdash;
 
 216
 00:07:59,620 --> 00:08:02,150
@@ -1026,12 +1026,12 @@ the server in general.
 218
 00:08:03,720 --> 00:08:05,320
 The cool thing is
-that Chrome--
+that Chrome &mdash;
 
 219
 00:08:05,320 --> 00:08:07,490
 again, we're going to
-focus on that--
+focus on that &mdash;
 
 220
 00:08:07,490 --> 00:08:09,950
@@ -1433,7 +1433,7 @@ use loose files.
 
 304
 00:11:22,800 --> 00:11:23,750
-They define--
+They define &mdash;
 
 305
 00:11:23,750 --> 00:11:27,310
@@ -1546,12 +1546,12 @@ time you read from a resource
 
 328
 00:12:15,840 --> 00:12:16,980
-or a medium--
+or a medium &mdash;
 
 329
 00:12:16,980 --> 00:12:20,160
 be it hard drive or CD or
-even the internet--
+even the internet &mdash;
 
 330
 00:12:20,160 --> 00:12:23,340
@@ -2556,7 +2556,7 @@ get effectively a
 
 540
 00:20:19,150 --> 00:20:21,540
-POST and GET reset--
+POST and GET reset &mdash;
 
 541
 00:20:21,540 --> 00:20:26,410
@@ -2812,12 +2812,12 @@ playing the game in Argentina.
 
 594
 00:22:22,130 --> 00:22:23,970
-If it doesn't exist--
+If it doesn't exist &mdash;
 if the data hasn't
 
 595
 00:22:23,970 --> 00:22:25,180
-been stored in Memcache--
+been stored in Memcache &mdash;
 
 596
 00:22:25,180 --> 00:22:27,540
@@ -3313,7 +3313,7 @@ here for a second.
 701
 00:25:58,540 --> 00:26:00,710
 OpenID effectively
-allows you--
+allows you &mdash;
 
 702
 00:26:00,710 --> 00:26:02,810
@@ -3341,7 +3341,7 @@ is the user will click
 707
 00:26:11,900 --> 00:26:14,340
 their given account provider
-that they want--
+that they want &mdash;
 
 708
 00:26:14,340 --> 00:26:16,840
@@ -4398,7 +4398,7 @@ the definitive thing.
 
 934
 00:34:30,659 --> 00:34:33,360
-Now the cool thing is-- and I
+Now the cool thing is &mdash; and I
 feel this isn't really a best
 
 935
@@ -4408,7 +4408,7 @@ to point this out as
 
 936
 00:34:35,300 --> 00:34:36,570
-a tool chain process--
+a tool chain process &mdash;
 
 937
 00:34:36,570 --> 00:34:38,500
@@ -4621,12 +4621,12 @@ for anyone to go and use.
 981
 00:36:12,420 --> 00:36:15,190
 Translator Toolkit allows
-you to upload a file--
+you to upload a file &mdash;
 
 982
 00:36:15,190 --> 00:36:19,010
 XML, HTML, CSV, things like
-that-- and it'll actually
+that &mdash; and it'll actually
 
 983
 00:36:19,010 --> 00:36:21,400
@@ -5000,8 +5000,8 @@ Does need to.
 
 1061
 00:39:01,850 --> 00:39:04,030
-In addition here-- you can
-actually see something else--
+In addition here &mdash; you can
+actually see something else &mdash;
 
 1062
 00:39:04,030 --> 00:39:07,330
@@ -5502,12 +5502,12 @@ you as a developer can
 1167
 00:42:53,200 --> 00:42:56,030
 actually just use the same
-canvas commands--
+canvas commands &mdash;
 
 1168
 00:42:56,030 --> 00:42:58,860
 draw, tesselate, do all
-these other things--
+these other things &mdash;
 
 1169
 00:42:58,860 --> 00:43:01,100
@@ -5997,7 +5997,7 @@ visibility in that.
 
 1271
 00:46:38,170 --> 00:46:40,380
-Once you get the information--
+Once you get the information &mdash;
 so you detected it, you've
 
 1272
@@ -6094,7 +6094,7 @@ point.
 
 1292
 00:47:19,730 --> 00:47:21,310
-And a lot of people don't--
+And a lot of people don't &mdash;
 
 1293
 00:47:21,310 --> 00:47:22,700
@@ -6103,7 +6103,7 @@ this, but it's a
 
 1294
 00:47:22,700 --> 00:47:23,850
-nuance that they miss--
+nuance that they miss &mdash;
 
 1295
 00:47:23,850 --> 00:47:25,250
@@ -7038,7 +7038,7 @@ All right.
 1494
 00:54:17,680 --> 00:54:20,230
 The thing you've all been
-waiting for-- monetization.
+waiting for &mdash; monetization.
 
 1495
 00:54:20,230 --> 00:54:23,370
@@ -7141,7 +7141,7 @@ That's amazing.
 
 1516
 00:55:12,300 --> 00:55:14,390
-Just showing the user how to--
+Just showing the user how to &mdash;
 
 1517
 00:55:14,390 --> 00:55:15,830
@@ -7350,8 +7350,8 @@ made from the people who
 
 1561
 00:56:45,910 --> 00:56:48,490
-bought the full game--
-so upfront price--
+bought the full game &mdash;
+so upfront price &mdash;
 
 1562
 00:56:48,490 --> 00:56:50,120
@@ -7446,12 +7446,12 @@ the application.
 
 1581
 00:57:33,680 --> 00:57:36,140
-But the point of this graph--
+But the point of this graph &mdash;
 and we're seeing other results
 
 1582
 00:57:36,140 --> 00:57:36,990
-show this--
+show this &mdash;
 
 1583
 00:57:36,990 --> 00:57:40,120
@@ -7605,11 +7605,11 @@ a consumable good.
 1615
 00:58:53,610 --> 00:58:55,830
 And as you can see, that whole
-section of consumables--
+section of consumables &mdash;
 
 1616
 00:58:55,830 --> 00:58:57,540
-so limited lifetime objects--
+so limited lifetime objects &mdash;
 
 1617
 00:58:57,540 --> 00:59:01,400

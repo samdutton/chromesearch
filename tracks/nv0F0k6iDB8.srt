@@ -67,7 +67,7 @@ yourselves a little bit of an
 
 16
 00:00:50,890 --> 00:00:52,300
-introduction, and--
+introduction, and &mdash;
 
 17
 00:00:52,300 --> 00:00:54,840
@@ -210,7 +210,7 @@ the British Science Museum.
 47
 00:02:05,140 --> 00:02:07,750
 And I don't know how long
-it's been-- it's been in
+it's been &mdash; it's been in
 
 48
 00:02:07,750 --> 00:02:09,715
@@ -234,7 +234,7 @@ real world.
 52
 00:02:16,260 --> 00:02:19,220
 And today we're going to
-talk mainly about the--
+talk mainly about the &mdash;
 
 53
 00:02:19,220 --> 00:02:22,880
@@ -243,7 +243,7 @@ the online web experience.
 
 54
 00:02:22,880 --> 00:02:23,780
-So you could be--
+So you could be &mdash;
 
 55
 00:02:23,780 --> 00:02:26,780
@@ -325,7 +325,7 @@ called the Lab Tag Explorer.
 71
 00:02:57,290 --> 00:03:00,390
 And the lab tag itself is kind
-of-- it's the core component
+of &mdash; it's the core component
 
 72
 00:03:00,390 --> 00:03:02,550
@@ -338,7 +338,7 @@ bit of background on
 
 74
 00:03:04,520 --> 00:03:07,825
-what Web Lab-- or not Web Lab,
+what Web Lab &mdash; or not Web Lab,
 but the lab tag means to you.
 
 75
@@ -675,7 +675,7 @@ ROGER: Yeah.
 148
 00:05:54,450 --> 00:05:55,610
 PAUL KINLAN: I think
-this is basically--
+this is basically &mdash;
 
 149
 00:05:55,610 --> 00:05:57,970
@@ -811,7 +811,7 @@ into the Lab Tag Explorer.
 
 177
 00:06:57,040 --> 00:06:59,870
-So we were saying before-- oh,
+So we were saying before &mdash; oh,
 this is beautiful, very nice
 
 178
@@ -825,7 +825,7 @@ background at the moment?
 
 180
 00:07:02,340 --> 00:07:03,050
-Is this--
+Is this &mdash;
 
 181
 00:07:03,050 --> 00:07:06,490
@@ -865,7 +865,7 @@ When it's unload or
 
 189
 00:07:16,987 --> 00:07:18,526
-ready, essentially we--
+ready, essentially we &mdash;
 
 190
 00:07:18,526 --> 00:07:19,774
@@ -1108,7 +1108,7 @@ cool, isn't it?
 241
 00:08:58,670 --> 00:09:03,600
 MATIAS: And also, these items
-flying by, it's--
+flying by, it's &mdash;
 
 242
 00:09:03,600 --> 00:09:09,200
@@ -1160,7 +1160,7 @@ information?
 252
 00:09:30,620 --> 00:09:32,290
 Or is there some
-other type of--
+other type of &mdash;
 
 253
 00:09:32,290 --> 00:09:33,670
@@ -1216,12 +1216,12 @@ the same.
 
 265
 00:09:53,880 --> 00:09:57,090
-And we've been trying to--
+And we've been trying to &mdash;
 
 266
 00:09:57,090 --> 00:09:59,910
 for the movement of them,
-for the animation--
+for the animation &mdash;
 
 267
 00:09:59,910 --> 00:10:03,230
@@ -1314,7 +1314,7 @@ have been impossible.
 285
 00:10:50,470 --> 00:10:53,086
 PAUL KINLAN: Yeah, does Mr.
-[? Dupe ?] know that we--
+[? Dupe ?] know that we &mdash;
 
 286
 00:10:53,086 --> 00:10:54,660
@@ -1387,7 +1387,7 @@ PAUL KINLAN: Yeah.
 301
 00:11:19,660 --> 00:11:21,690
 ROGER: But if you use
-one texture--
+one texture &mdash;
 
 302
 00:11:21,690 --> 00:11:23,530
@@ -1837,7 +1837,7 @@ that you put into a 3D space?
 
 400
 00:15:00,660 --> 00:15:01,520
-Or is it--
+Or is it &mdash;
 
 401
 00:15:01,520 --> 00:15:05,550
@@ -1874,7 +1874,7 @@ just move the camera?
 
 408
 00:15:19,550 --> 00:15:20,850
-ROGER: No, so the camera--
+ROGER: No, so the camera &mdash;
 
 409
 00:15:20,850 --> 00:15:21,530
@@ -1954,7 +1954,7 @@ PAUL KINLAN: Yeah.
 
 426
 00:15:53,630 --> 00:15:54,660
-ROGER: And it was becoming--
+ROGER: And it was becoming &mdash;
 
 427
 00:15:54,660 --> 00:15:55,940

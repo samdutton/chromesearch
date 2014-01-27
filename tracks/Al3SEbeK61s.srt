@@ -7,7 +7,7 @@
 
 3
 00:04:40,580 --> 00:04:41,740
-Two minutes, everyone--
+Two minutes, everyone &mdash;
 
 4
 00:04:41,740 --> 00:04:43,569
@@ -218,7 +218,7 @@ because the website get close
 
 51
 00:08:37,640 --> 00:08:39,250
-down automatically--
+down automatically &mdash;
 
 52
 00:08:39,250 --> 00:08:42,320
@@ -381,7 +381,7 @@ crowd, I know.
 
 87
 00:10:03,270 --> 00:10:04,750
-So we built an app called--
+So we built an app called &mdash;
 
 88
 00:10:04,750 --> 00:10:08,530
@@ -882,7 +882,7 @@ to handle that part.
 
 195
 00:14:21,800 --> 00:14:23,320
-Attaching media stream--
+Attaching media stream &mdash;
 
 196
 00:14:23,320 --> 00:14:26,130
@@ -1105,7 +1105,7 @@ signaling server.
 
 243
 00:16:09,430 --> 00:16:11,690
-So peer connection-- so this
+So peer connection &mdash; so this
 is kind of the mother.
 
 244
@@ -1133,7 +1133,7 @@ a bad thing.
 
 249
 00:16:22,850 --> 00:16:23,780
-CreateDataChannel--
+CreateDataChannel &mdash;
 
 250
 00:16:23,780 --> 00:16:26,080
@@ -1178,7 +1178,7 @@ settings for Chrome.
 258
 00:16:46,140 --> 00:16:50,800
 So in order to actually
-get this to work--
+get this to work &mdash;
 
 259
 00:16:50,800 --> 00:16:53,530
@@ -1200,7 +1200,7 @@ wrapper for that.
 
 263
 00:16:59,510 --> 00:17:00,310
-Other challenges--
+Other challenges &mdash;
 
 264
 00:17:00,310 --> 00:17:03,700
@@ -1218,7 +1218,7 @@ stream per connection.
 
 267
 00:17:08,240 --> 00:17:10,460
-And all of this is just--
+And all of this is just &mdash;
 
 268
 00:17:10,460 --> 00:17:12,520
@@ -1375,12 +1375,12 @@ accessible to a lot of people.
 300
 00:18:23,770 --> 00:18:25,790
 Abstraction library, such
-as simpleWebRTC--
+as simpleWebRTC &mdash;
 
 301
 00:18:25,790 --> 00:18:27,900
 I don't care if it's that or
-something else-- but hopefully
+something else &mdash; but hopefully
 
 302
 00:18:27,900 --> 00:18:31,410
@@ -1566,7 +1566,7 @@ Henrik's introductory talk.
 
 342
 00:19:56,140 --> 00:19:58,958
-So if we start with Martyn--
+So if we start with Martyn &mdash;
 
 343
 00:19:58,958 --> 00:20:00,360
@@ -1681,7 +1681,7 @@ SCOTT JENSON: Excellent.
 
 367
 00:20:52,140 --> 00:20:52,627
-John--
+John &mdash;
 
 368
 00:20:52,627 --> 00:20:56,330
@@ -1733,12 +1733,12 @@ web evolves, going forward.
 
 378
 00:21:19,690 --> 00:21:20,600
-WESLEY HALES And Wesley--
+WESLEY HALES And Wesley &mdash;
 
 379
 00:21:20,600 --> 00:21:24,385
 WESLEY HALES Yes, I see the
-centralized part is little--
+centralized part is little &mdash;
 
 380
 00:21:24,385 --> 00:21:25,590
@@ -1784,7 +1784,7 @@ to our first question.
 389
 00:21:44,570 --> 00:21:46,860
 I think that's Andrew Betts,
-if you'd like to--
+if you'd like to &mdash;
 
 390
 00:21:46,860 --> 00:21:52,172
@@ -2139,7 +2139,7 @@ talk about later, how we
 
 465
 00:24:54,670 --> 00:24:56,310
-can discover--
+can discover &mdash;
 
 466
 00:24:56,310 --> 00:24:59,990
@@ -2241,7 +2241,7 @@ SCOTT JENSON: OK.
 
 488
 00:25:44,425 --> 00:25:47,130
-Any other comments-- can we move
+Any other comments &mdash; can we move
 on to the next question?
 
 489
@@ -2365,7 +2365,7 @@ Is it Gus Gussins?
 514
 00:26:46,460 --> 00:26:48,510
 If we can get him
-a mic, please--
+a mic, please &mdash;
 
 515
 00:26:48,510 --> 00:26:57,972
@@ -2430,7 +2430,7 @@ it's largely the same API.
 529
 00:27:33,910 --> 00:27:36,610
 Beyond that, they're different
-technologies--
+technologies &mdash;
 
 530
 00:27:36,610 --> 00:27:38,640
@@ -2464,7 +2464,7 @@ just video and audio.
 536
 00:27:49,600 --> 00:27:52,020
 So for example, multiplayer
-games--
+games &mdash;
 
 537
 00:27:52,020 --> 00:27:55,140
@@ -2722,7 +2722,7 @@ SCOTT JENSON: Cool, excellent.
 589
 00:30:12,150 --> 00:30:14,630
 We have another question then,
-from the Matthias--
+from the Matthias &mdash;
 
 590
 00:30:14,630 --> 00:30:15,880
@@ -3025,7 +3025,7 @@ data to the client.
 654
 00:33:02,270 --> 00:33:06,920
 And so with HTTP 2.0, is
-there going to be--
+there going to be &mdash;
 
 655
 00:33:06,920 --> 00:33:09,600
@@ -3159,7 +3159,7 @@ number four coming up.
 
 683
 00:34:16,000 --> 00:34:17,250
-Christopher--
+Christopher &mdash;
 
 684
 00:34:17,250 --> 00:34:22,227
@@ -3201,7 +3201,7 @@ Right?
 
 693
 00:34:43,150 --> 00:34:44,290
-There are some attempts--
+There are some attempts &mdash;
 
 694
 00:34:44,290 --> 00:34:45,800
@@ -3471,7 +3471,7 @@ awesome, but I don't
 
 752
 00:37:15,510 --> 00:37:16,940
-know quite how that--
+know quite how that &mdash;
 
 753
 00:37:16,940 --> 00:37:18,875
@@ -3694,7 +3694,7 @@ if it was retroactively
 
 800
 00:39:08,910 --> 00:39:11,520
-imposed on--
+imposed on &mdash;
 
 801
 00:39:11,520 --> 00:39:12,860
@@ -4209,7 +4209,7 @@ actually, from the audience.
 
 910
 00:42:59,260 --> 00:43:00,510
-David Stickler--
+David Stickler &mdash;
 
 911
 00:43:00,510 --> 00:43:03,370
@@ -4422,7 +4422,7 @@ about [INAUDIBLE].
 956
 00:45:00,640 --> 00:45:03,096
 Natasha, if we can give
-you that one--
+you that one &mdash;
 
 957
 00:45:03,096 --> 00:45:04,050
@@ -4483,7 +4483,7 @@ as well as say, Chrome?
 969
 00:45:30,412 --> 00:45:32,270
 HENRIK JORETEG: This
-is actually--
+is actually &mdash;
 
 970
 00:45:32,270 --> 00:45:34,170
@@ -4819,7 +4819,7 @@ separate point to that is, I
 
 1040
 00:48:00,230 --> 00:48:03,490
-think we might need to-- it's
+think we might need to &mdash; it's
 only the very early days, in
 
 1041
@@ -4867,7 +4867,7 @@ four different clients.
 1050
 00:48:25,620 --> 00:48:27,690
 And you said earlier about
-strong peers--
+strong peers &mdash;
 
 1051
 00:48:27,690 --> 00:48:29,540
@@ -5356,7 +5356,7 @@ as appropriate?
 1155
 00:52:22,210 --> 00:52:27,030
 ROB HAWKES: Not all
-peer-to-peer is--
+peer-to-peer is &mdash;
 
 1156
 00:52:27,030 --> 00:52:30,880
@@ -5374,7 +5374,7 @@ AUDIENCE: Yeah.
 1159
 00:52:33,050 --> 00:52:37,192
 I think the question was
-sort of saying--
+sort of saying &mdash;
 
 1160
 00:52:37,192 --> 00:52:40,510
@@ -5416,7 +5416,7 @@ data channel?
 1168
 00:52:59,280 --> 00:53:00,350
 HENRIK JORETEG: I was just
-going to-- a quick little
+going to &mdash; a quick little
 
 1169
 00:53:00,350 --> 00:53:03,850
@@ -5486,7 +5486,7 @@ So hopefully.
 
 1183
 00:53:27,150 --> 00:53:28,005
-It's actually--
+It's actually &mdash;
 
 1184
 00:53:28,005 --> 00:53:28,370
@@ -5700,7 +5700,7 @@ playing with the stuff.
 
 1229
 00:54:58,840 --> 00:55:00,010
-It's very, very--
+It's very, very &mdash;
 
 1230
 00:55:00,010 --> 00:55:01,050
@@ -5748,7 +5748,7 @@ and hacking on this stuff.
 
 1240
 00:55:20,440 --> 00:55:21,690
-SCOTT JENSON: Stephen--
+SCOTT JENSON: Stephen &mdash;
 
 1241
 00:55:21,690 --> 00:55:25,976
@@ -5798,7 +5798,7 @@ Can we just go through?
 1251
 00:55:43,956 --> 00:55:45,350
 WESLEY HALES: Video
-conferencing--
+conferencing &mdash;
 
 1252
 00:55:45,350 --> 00:55:46,600
@@ -6237,7 +6237,7 @@ reiterate that point.
 
 1345
 00:59:31,360 --> 00:59:32,620
-It's enabling--
+It's enabling &mdash;
 
 1346
 00:59:32,620 --> 00:59:35,410
@@ -6343,7 +6343,7 @@ into things like
 
 1368
 01:00:16,310 --> 01:00:17,925
-node.js, then this is--
+node.js, then this is &mdash;
 
 1369
 01:00:17,925 --> 01:00:18,920
@@ -6370,7 +6370,7 @@ OK?
 
 1374
 01:00:26,470 --> 01:00:29,421
-Christopher-- no, that
+Christopher &mdash; no, that
 Christopher.
 
 1375
@@ -6929,7 +6929,7 @@ miserably, again?
 
 1496
 01:05:26,660 --> 01:05:27,910
-So good at this--
+So good at this &mdash;
 
 1497
 01:05:27,910 --> 01:05:33,731
@@ -7139,7 +7139,7 @@ a little bit, so you could
 
 1542
 01:07:25,900 --> 01:07:27,560
-just download the next--
+just download the next &mdash;
 
 1543
 01:07:27,560 --> 01:07:27,870
@@ -7237,7 +7237,7 @@ stuff around us.
 
 1564
 01:08:19,520 --> 01:08:21,350
-And it's in those environments--
+And it's in those environments &mdash;
 the airport,
 
 1565
@@ -7268,7 +7268,7 @@ I don't remember.
 
 1571
 01:08:29,250 --> 01:08:31,810
-I look at my phone and---
+I look at my phone and- &mdash;
 
 1572
 01:08:31,810 --> 01:08:36,750
@@ -7868,7 +7868,7 @@ over on the server which is
 
 1697
 01:13:46,130 --> 01:13:47,310
-written in--
+written in &mdash;
 
 1698
 01:13:47,310 --> 01:13:52,680
@@ -7957,12 +7957,12 @@ make it possible for me, while
 
 1716
 01:14:40,200 --> 01:14:41,990
-sitting on a tube--
+sitting on a tube &mdash;
 
 1717
 01:14:41,990 --> 01:14:44,950
 20 seconds at the time of
-connectivity, if I'm lucky--
+connectivity, if I'm lucky &mdash;
 
 1718
 01:14:44,950 --> 01:14:48,410
@@ -8202,11 +8202,11 @@ we have with offline.
 1768
 01:16:41,935 --> 01:16:46,160
 So a service worker is an
-attempt to get us through--
+attempt to get us through &mdash;
 
 1769
 01:16:46,160 --> 01:16:49,150
-oh, went too far--
+oh, went too far &mdash;
 
 1770
 01:16:49,150 --> 01:16:52,460
@@ -8324,7 +8324,7 @@ listener for fetches actually
 1794
 01:17:50,720 --> 01:17:52,980
 gives you the ability to
-go and construct--
+go and construct &mdash;
 
 1795
 01:17:52,980 --> 01:17:55,880
@@ -8692,7 +8692,7 @@ on the service navigator,
 1873
 01:20:51,280 --> 01:20:53,410
 controller, whatever the
-eventual name is-- how many
+eventual name is &mdash; how many
 
 1874
 01:20:53,410 --> 01:20:56,360
@@ -8744,12 +8744,12 @@ perspective.
 1884
 01:21:15,970 --> 01:21:18,330
 Before there was Chrome, it was
-Gears-- and then inside of
+Gears &mdash; and then inside of
 
 1885
 01:21:18,330 --> 01:21:20,140
 Chrome, with application
-cache--
+cache &mdash;
 
 1886
 01:21:20,140 --> 01:21:22,700
@@ -8778,7 +8778,7 @@ find is that, Gears has a
 
 1891
 01:21:34,700 --> 01:21:37,885
-thing called--
+thing called &mdash;
 
 1892
 01:21:37,885 --> 01:21:39,120
@@ -9075,7 +9075,7 @@ point, for us.
 1954
 01:23:47,590 --> 01:23:50,850
 MATT ANDREWS: We have real
-experience, in particular--
+experience, in particular &mdash;
 
 1955
 01:23:50,850 --> 01:23:52,380
@@ -9328,7 +9328,7 @@ evolve it into that direction.
 
 2008
 01:25:48,540 --> 01:25:52,890
-And yeah, so it has to be-- the
+And yeah, so it has to be &mdash; the
 thing is, do you ask the
 
 2009
@@ -9549,7 +9549,7 @@ app around.
 2055
 01:27:40,750 --> 01:27:42,940
 I know Firefox as well,
-I think, you can--
+I think, you can &mdash;
 
 2056
 01:27:42,940 --> 01:27:46,832
@@ -9687,7 +9687,7 @@ the home screen,
 
 2084
 01:28:49,080 --> 01:28:51,100
-but it doesn't mean--
+but it doesn't mean &mdash;
 
 2085
 01:28:51,100 --> 01:28:53,370
@@ -10033,7 +10033,7 @@ panelists, kind of you know.
 2159
 01:31:36,300 --> 01:31:38,810
 But we should have a serious
-discussion about the-- we've
+discussion about the &mdash; we've
 
 2160
 01:31:38,810 --> 01:31:42,160
@@ -10101,7 +10101,7 @@ out to your service.
 2173
 01:32:09,960 --> 01:32:12,190
 And if you get a response back
-under deadline-- like, let's
+under deadline &mdash; like, let's
 
 2174
 01:32:12,190 --> 01:32:13,300
@@ -10835,7 +10835,7 @@ not in that situation.
 
 2329
 01:38:31,040 --> 01:38:35,070
-So do we need an option to--
+So do we need an option to &mdash;
 is this going to be a
 
 2330
@@ -11250,7 +11250,7 @@ and breadth of that grant.
 
 2418
 01:42:01,090 --> 01:42:02,560
-So you can imagine that--
+So you can imagine that &mdash;
 
 2419
 01:42:02,560 --> 01:42:05,240
@@ -11290,7 +11290,7 @@ or revoke it entirely.
 2426
 01:42:21,050 --> 01:42:23,520
 And as long as the API allows
-revocation to happen--
+revocation to happen &mdash;
 
 2427
 01:42:23,520 --> 01:42:24,570
@@ -11561,7 +11561,7 @@ wanted to bounce and see if
 
 2485
 01:44:29,550 --> 01:44:31,910
-you think would be possible--
+you think would be possible &mdash;
 
 2486
 01:44:31,910 --> 01:44:35,160
@@ -11636,7 +11636,7 @@ differently, which
 2501
 01:45:02,750 --> 01:45:06,010
 is a things and things
-you do--
+you do &mdash;
 
 2502
 01:45:06,010 --> 01:45:09,610
@@ -12584,7 +12584,7 @@ a great question.
 
 2703
 01:52:32,640 --> 01:52:35,355
-John--
+John &mdash;
 
 2704
 01:52:35,355 --> 01:52:36,770
@@ -12628,8 +12628,8 @@ thing to want to have.
 
 2713
 01:52:47,960 --> 01:52:50,540
-My personal view-- and I'm not
-speaking for Google here-- is
+My personal view &mdash; and I'm not
+speaking for Google here &mdash; is
 
 2714
 01:52:50,540 --> 01:52:53,500
@@ -12815,7 +12815,7 @@ are you?
 
 2753
 01:54:24,070 --> 01:54:25,842
-Get a microphone over here--
+Get a microphone over here &mdash;
 
 2754
 01:54:25,842 --> 01:54:28,210
@@ -12907,7 +12907,7 @@ on, which is that.
 
 2772
 01:55:15,460 --> 01:55:18,415
-And it allows you to--
+And it allows you to &mdash;
 
 2773
 01:55:18,415 --> 01:55:23,810
@@ -12917,12 +12917,12 @@ oh so briefly was the
 2774
 01:55:23,810 --> 01:55:26,750
 Import Scripts API,
-which allows--
+which allows &mdash;
 
 2775
 01:55:26,750 --> 01:55:28,020
 these things are
-just workers--
+just workers &mdash;
 
 2776
 01:55:28,020 --> 01:55:31,040
@@ -13035,7 +13035,7 @@ to the next question.
 2798
 01:56:28,900 --> 01:56:32,470
 And the next question is asked
-by Jake Archibald--
+by Jake Archibald &mdash;
 
 2799
 01:56:32,470 --> 01:56:34,110
@@ -13082,7 +13082,7 @@ to Chrome for Android.
 2809
 01:56:45,770 --> 01:56:49,930
 It's a public commit, so I can
-talk about it, excellent--
+talk about it, excellent &mdash;
 
 2810
 01:56:49,930 --> 01:56:51,160
@@ -13112,7 +13112,7 @@ excellent.
 2816
 01:57:01,148 --> 01:57:03,705
 JOHN: Oh, and I think
-Vivian was asking--
+Vivian was asking &mdash;
 
 2817
 01:57:03,705 --> 01:57:06,245
@@ -13506,7 +13506,7 @@ are you?
 
 2901
 02:00:36,300 --> 02:00:37,550
-Down here--
+Down here &mdash;
 
 2902
 02:00:37,550 --> 02:00:40,680
@@ -13794,11 +13794,11 @@ of this stuff and want to
 2962
 02:03:18,540 --> 02:03:23,160
 look at the spec as it is
-currently, it's github.com/--
+currently, it's github.com/ &mdash;
 
 2963
 02:03:23,160 --> 02:03:26,460
-ALEX RUSSELL: slightlyoff/--
+ALEX RUSSELL: slightlyoff/ &mdash;
 
 2964
 02:03:26,460 --> 02:03:27,260
@@ -13950,7 +13950,7 @@ they could see me here.
 
 2999
 02:20:54,570 --> 02:20:57,990
-OK, so our next--
+OK, so our next &mdash;
 
 3000
 02:20:57,990 --> 02:21:00,260
@@ -14222,7 +14222,7 @@ documenting, guidelines
 
 3058
 02:23:46,560 --> 02:23:47,490
-everywhere--
+everywhere &mdash;
 
 3059
 02:23:47,490 --> 02:23:49,690
@@ -14231,7 +14231,7 @@ really fantastic job.
 3060
 02:23:49,690 --> 02:23:53,000
 And our opening speaker,
-Tom Maslen--
+Tom Maslen &mdash;
 
 3061
 02:23:53,000 --> 02:23:58,890
@@ -14266,7 +14266,7 @@ Glow JavaScript library.
 3067
 02:24:15,530 --> 02:24:16,680
 TOM MASLEN: Small
-part of that--
+part of that &mdash;
 
 3068
 02:24:16,680 --> 02:24:18,560
@@ -14437,7 +14437,7 @@ nothing compared to what was
 
 3104
 02:25:56,750 --> 02:25:58,980
-about to wash over us--
+about to wash over us &mdash;
 
 3105
 02:25:58,980 --> 02:26:02,650
@@ -14473,7 +14473,7 @@ the biggest problem
 
 3112
 02:26:18,070 --> 02:26:19,390
-that we have today--
+that we have today &mdash;
 
 3113
 02:26:19,390 --> 02:26:23,920
@@ -14779,7 +14779,7 @@ browser support, they think,
 3178
 02:29:25,910 --> 02:29:27,370
 well, how far back
-should we go--
+should we go &mdash;
 
 3179
 02:29:27,370 --> 02:29:29,165
@@ -15040,7 +15040,7 @@ How do you do that?
 
 3235
 02:32:01,850 --> 02:32:03,630
-Well, with two ways--
+Well, with two ways &mdash;
 
 3236
 02:32:03,630 --> 02:32:05,870
@@ -15330,7 +15330,7 @@ AUDIENCE: Hello.
 
 3299
 02:35:06,250 --> 02:35:07,790
-Anonymous question--
+Anonymous question &mdash;
 
 3300
 02:35:07,790 --> 02:35:10,220
@@ -15547,7 +15547,7 @@ need to be considered as well.
 
 3346
 02:37:21,260 --> 02:37:24,120
-PAUL IRISH: So I wonder--
+PAUL IRISH: So I wonder &mdash;
 
 3347
 02:37:24,120 --> 02:37:28,410
@@ -15655,7 +15655,7 @@ for old browsers.
 
 3369
 02:38:33,970 --> 02:38:35,950
-You can't drop support for--
+You can't drop support for &mdash;
 
 3370
 02:38:35,950 --> 02:38:37,780
@@ -15736,7 +15736,7 @@ PAUL IRISH: I see.
 3387
 02:39:10,320 --> 02:39:13,730
 TOMOMI IMURA: The one problem
-I've see is that--
+I've see is that &mdash;
 
 3388
 02:39:13,730 --> 02:39:18,930
@@ -15784,7 +15784,7 @@ phone regularly.
 
 3397
 02:39:40,140 --> 02:39:43,720
-And my browser choice-- well,
+And my browser choice &mdash; well,
 it's not my choice actually.
 
 3398
@@ -16421,7 +16421,7 @@ be any width as well.
 3533
 02:45:40,522 --> 02:45:43,290
 PAUL IRISH: I also
-wonder is there--
+wonder is there &mdash;
 
 3534
 02:45:43,290 --> 02:45:47,060
@@ -16499,7 +16499,7 @@ wonderfully on the latest
 
 3550
 02:46:37,760 --> 02:46:40,100
-greatest browsers--
+greatest browsers &mdash;
 
 3551
 02:46:40,100 --> 02:46:43,780
@@ -16725,7 +16725,7 @@ specifically,
 
 3598
 02:48:41,900 --> 02:48:43,220
-is there a way to--
+is there a way to &mdash;
 
 3599
 02:48:43,220 --> 02:48:46,070
@@ -16808,7 +16808,7 @@ hearing from both of you is
 
 3616
 02:49:21,565 --> 02:49:22,990
-that, there is kind of--
+that, there is kind of &mdash;
 
 3617
 02:49:22,990 --> 02:49:27,650
@@ -16885,7 +16885,7 @@ better than just showing them
 3632
 02:50:14,120 --> 02:50:17,310
 that, your browser is
-not supported by--
+not supported by &mdash;
 
 3633
 02:50:17,310 --> 02:50:19,455
@@ -16933,12 +16933,12 @@ or a new browser.
 3642
 02:50:41,030 --> 02:50:42,110
 I think that would be
-an interesting--
+an interesting &mdash;
 
 3643
 02:50:42,110 --> 02:50:43,920
 PAUL IRISH: In your case,
-would it be--
+would it be &mdash;
 
 3644
 02:50:43,920 --> 02:50:46,045
@@ -17188,7 +17188,7 @@ says, try and upgrade.
 
 3697
 02:52:59,190 --> 02:53:00,750
-which hilariously--
+which hilariously &mdash;
 
 3698
 02:53:00,750 --> 02:53:02,720
@@ -17422,7 +17422,7 @@ fix it there But yeah, it's
 
 3748
 02:55:40,040 --> 02:55:42,155
-still-- there are
+still &mdash; there are
 people trying.
 
 3749
@@ -17486,12 +17486,12 @@ It has to be supported.
 3762
 02:56:11,220 --> 02:56:13,400
 So one of the two
-things is to--
+things is to &mdash;
 
 3763
 02:56:13,400 --> 02:56:15,770
 as a web developer, if you're
-vying for that contract-- to
+vying for that contract &mdash; to
 
 3764
 02:56:15,770 --> 02:56:18,530
@@ -17614,7 +17614,7 @@ sent out anymore.
 3788
 02:57:29,995 --> 02:57:33,490
 PAUL IRISH: Coming from the
-audience, Mary from O'Reilly--
+audience, Mary from O'Reilly &mdash;
 
 3789
 02:57:33,490 --> 02:57:34,480
@@ -17622,7 +17622,7 @@ AUDIENCE: Hey.
 
 3790
 02:57:34,480 --> 02:57:35,870
-So just going back to--
+So just going back to &mdash;
 
 3791
 02:57:35,870 --> 02:57:38,740
@@ -17652,7 +17652,7 @@ the people who are very tech
 3796
 02:57:52,760 --> 02:57:56,310
 savvy, who have the latest and
-greatest things, who--
+greatest things, who &mdash;
 
 3797
 02:57:56,310 --> 02:57:59,230
@@ -17662,7 +17662,7 @@ is better.
 3798
 02:57:59,230 --> 02:58:03,420
 But what about the rest
-of the world that--
+of the world that &mdash;
 
 3799
 02:58:03,420 --> 02:58:05,550
@@ -17857,7 +17857,7 @@ thank you.
 3840
 02:59:48,690 --> 02:59:55,290
 So first, to defend
-Microsoft here--
+Microsoft here &mdash;
 
 3841
 02:59:55,290 --> 02:59:56,410
@@ -17903,11 +17903,11 @@ to iOS, Apple just stopped
 
 3850
 03:00:17,540 --> 03:00:18,470
-supporting--
+supporting &mdash;
 
 3851
 03:00:18,470 --> 03:00:20,810
-was it 3GS--
+was it 3GS &mdash;
 
 3852
 03:00:20,810 --> 03:00:24,200
@@ -18127,7 +18127,7 @@ ALEX RUSSELL: Thanks.
 
 3898
 03:02:32,685 --> 03:02:35,005
-Alex Russell-- one of my first
+Alex Russell &mdash; one of my first
 projects at Google was a
 
 3899
@@ -18279,12 +18279,12 @@ that could help influence the
 
 3930
 03:04:16,330 --> 03:04:19,030
-choice to--
+choice to &mdash;
 
 3931
 03:04:19,030 --> 03:04:21,110
 see support might not
-be the right words--
+be the right words &mdash;
 
 3932
 03:04:21,110 --> 03:04:24,140
@@ -18372,7 +18372,7 @@ It's closed, then it's open.
 3950
 03:05:06,310 --> 03:05:09,580
 But then, with a more modern
-browser, you can slide--
+browser, you can slide &mdash;
 
 3951
 03:05:09,580 --> 03:05:11,520
@@ -18405,7 +18405,7 @@ It worked lovely in iOS.
 3957
 03:05:23,920 --> 03:05:29,110
 But when I checked it on
-an Amazon Kindle Fire--
+an Amazon Kindle Fire &mdash;
 
 3958
 03:05:29,110 --> 03:05:30,310
@@ -18746,7 +18746,7 @@ You don't always need this.
 
 4030
 03:08:53,070 --> 03:08:55,160
-You can always drop certain--
+You can always drop certain &mdash;
 
 4031
 03:08:55,160 --> 03:08:57,560
@@ -18875,7 +18875,7 @@ the next question.
 
 4058
 03:10:12,580 --> 03:10:15,692
-John Resig, if you could--
+John Resig, if you could &mdash;
 
 4059
 03:10:15,692 --> 03:10:18,010
@@ -19027,7 +19027,7 @@ applications?
 
 4091
 03:11:40,060 --> 03:11:40,935
-PAUL IRISH: Tom--
+PAUL IRISH: Tom &mdash;
 
 4092
 03:11:40,935 --> 03:11:43,490
@@ -19203,7 +19203,7 @@ blog post on this recently.
 4129
 03:13:12,348 --> 03:13:15,862
 PAUL IRISH: Jake, would you
-like to comment on how--
+like to comment on how &mdash;
 
 4130
 03:13:15,862 --> 03:13:18,808
@@ -19348,7 +19348,7 @@ lighter version of the page.
 4159
 03:14:36,840 --> 03:14:40,120
 And the other thing is, search
-engines-- once again, if you
+engines &mdash; once again, if you
 
 4160
 03:14:40,120 --> 03:14:44,580
@@ -19457,13 +19457,13 @@ about the things that were
 
 4182
 03:15:46,670 --> 03:15:49,740
-that were nice-- so
+that were nice &mdash; so
 accessibility, SEO, working
 
 4183
 03:15:49,740 --> 03:15:51,800
 without JavaScript,
-usability--
+usability &mdash;
 
 4184
 03:15:51,800 --> 03:15:55,200
@@ -19580,7 +19580,7 @@ and I go crazy.
 4207
 03:16:57,520 --> 03:17:00,040
 I just wanted to say, to add on
-to this-- and I think BBC
+to this &mdash; and I think BBC
 
 4208
 03:17:00,040 --> 03:17:02,770
@@ -19808,7 +19808,7 @@ I'm sorry.
 4257
 03:20:54,440 --> 03:20:57,000
 But it's one of these
-things that is--
+things that is &mdash;
 
 4258
 03:20:57,000 --> 03:21:00,090
@@ -20380,7 +20380,7 @@ Let's ground this discussion.
 4379
 03:26:38,880 --> 03:26:43,210
 Payment for physical goods
-today is actually--
+today is actually &mdash;
 
 4380
 03:26:43,210 --> 03:26:46,560
@@ -20998,7 +20998,7 @@ the slides are posted up
 
 4510
 03:32:32,660 --> 03:32:34,290
-there-- payswarm.com/slides.
+there &mdash; payswarm.com/slides.
 
 4511
 03:32:34,290 --> 03:32:37,520
@@ -21093,7 +21093,7 @@ sighted for any merchant
 
 4531
 03:33:27,450 --> 03:33:30,930
-to think of it as-- anybody
+to think of it as &mdash; anybody
 that's not large, so Google
 
 4532
@@ -21153,7 +21153,7 @@ themes cost $1.24.
 
 4544
 03:33:55,830 --> 03:33:57,260
-And you have to kind of be--
+And you have to kind of be &mdash;
 
 4545
 03:33:57,260 --> 03:33:59,790
@@ -21269,11 +21269,11 @@ to do that on the web.
 4569
 03:34:48,310 --> 03:34:50,650
 NATASHA ROONEY: Does anybody
-feel any differently about--
+feel any differently about &mdash;
 
 4570
 03:34:50,650 --> 03:34:51,190
-Ricardo--
+Ricardo &mdash;
 
 4571
 03:34:51,190 --> 03:34:52,280
@@ -21638,7 +21638,7 @@ AUDIENCE: Hello.
 4647
 03:37:39,190 --> 03:37:43,316
 Full disclosure, Stripe
-employee--
+employee &mdash;
 
 4648
 03:37:43,316 --> 03:37:45,190
@@ -22224,7 +22224,7 @@ from the floor.
 4770
 03:43:22,860 --> 03:43:26,174
 So Ally, if you want to
-raise your hand--
+raise your hand &mdash;
 
 4771
 03:43:26,174 --> 03:43:29,653
@@ -22507,7 +22507,7 @@ payments on the web thing
 
 4832
 03:46:05,840 --> 03:46:07,470
-should really be a bit more--
+should really be a bit more &mdash;
 
 4833
 03:46:07,470 --> 03:46:09,140
@@ -22614,7 +22614,7 @@ into the third question, which
 
 4855
 03:46:52,100 --> 03:46:53,700
-came from--
+came from &mdash;
 
 4856
 03:46:53,700 --> 03:46:55,430
@@ -22908,7 +22908,7 @@ they bought Bitcoin,
 
 4918
 03:49:25,520 --> 03:49:27,270
-actually-- when you mean you
+actually &mdash; when you mean you
 have Bitcoin, you bought it
 
 4919
@@ -22995,7 +22995,7 @@ particular payment methods.
 
 4937
 03:50:07,980 --> 03:50:11,135
-So Marcus, please--
+So Marcus, please &mdash;
 
 4938
 03:50:11,135 --> 03:50:12,100
@@ -23195,7 +23195,7 @@ one anecdote, which is, at
 4979
 03:51:59,390 --> 03:52:01,440
 BlueVia we do payments
-for different--
+for different &mdash;
 
 4980
 03:52:01,440 --> 03:52:02,770
@@ -23306,7 +23306,7 @@ AUDIENCE: OK.
 
 5003
 03:52:48,650 --> 03:52:51,490
-So the larger question is--
+So the larger question is &mdash;
 
 5004
 03:52:51,490 --> 03:52:52,870
@@ -23409,7 +23409,7 @@ getting is that.
 5025
 03:53:34,830 --> 03:53:36,500
 RICARDO VILLERO: But that's
-because that's 70% of--
+because that's 70% of &mdash;
 
 5026
 03:53:36,500 --> 03:53:38,470
@@ -23501,7 +23501,7 @@ NATASHA ROONEY: OK.
 5045
 03:54:09,800 --> 03:54:13,585
 Yeah, complicated like Las Vegas
-hotel-- so we will go on
+hotel &mdash; so we will go on
 
 5046
 03:54:13,585 --> 03:54:15,070
@@ -23697,7 +23697,7 @@ transaction.
 
 5087
 03:55:53,770 --> 03:55:56,180
-So in terms of--
+So in terms of &mdash;
 
 5088
 03:55:56,180 --> 03:55:57,085
@@ -23970,7 +23970,7 @@ partially.
 5145
 03:58:24,810 --> 03:58:26,640
 I think you're right
-in that it is-- and
+in that it is &mdash; and
 
 5146
 03:58:26,640 --> 03:58:27,560
@@ -24095,7 +24095,7 @@ NATASHA ROONEY: OK.
 
 5172
 03:59:22,230 --> 03:59:24,780
-We probably should take--
+We probably should take &mdash;
 
 5173
 03:59:24,780 --> 03:59:28,220
@@ -24264,7 +24264,7 @@ this, which is
 
 5209
 04:00:47,120 --> 04:00:49,470
-operating across borders--
+operating across borders &mdash;
 
 5210
 04:00:49,470 --> 04:00:52,360
@@ -24488,7 +24488,7 @@ from the floor.
 5256
 04:02:41,910 --> 04:02:45,500
 Steve, here, if we can
-get another mic--
+get another mic &mdash;
 
 5257
 04:02:45,500 --> 04:02:49,757
@@ -24514,7 +24514,7 @@ be completely anonymous.
 
 5262
 04:03:01,940 --> 04:03:03,840
-Why would I want to give up--
+Why would I want to give up &mdash;
 
 5263
 04:03:03,840 --> 04:03:06,360
@@ -24538,7 +24538,7 @@ don't want to.
 5267
 04:03:11,860 --> 04:03:16,910
 But I mean, we're
-dealing with--
+dealing with &mdash;
 
 5268
 04:03:16,910 --> 04:03:19,160
@@ -25001,7 +25001,7 @@ We should move on now.
 5366
 04:06:53,410 --> 04:06:56,740
 I'm liking what people are
-managing to get on the-- here
+managing to get on the &mdash; here
 
 5367
 04:06:56,740 --> 04:06:58,130
@@ -25239,7 +25239,7 @@ lots of things, I guess.
 
 5417
 04:08:58,890 --> 04:09:01,811
-Any other points on that--
+Any other points on that &mdash;
 
 5418
 04:09:01,811 --> 04:09:05,390
@@ -25307,7 +25307,7 @@ integrated directly into
 
 5432
 04:09:34,040 --> 04:09:36,390
-the browser is probably--
+the browser is probably &mdash;
 
 5433
 04:09:36,390 --> 04:09:40,040
@@ -25331,7 +25331,7 @@ it forever.
 5437
 04:09:45,910 --> 04:09:47,630
 And I don't think any of the
-browser-- and I don't think it
+browser &mdash; and I don't think it
 
 5438
 04:09:47,630 --> 04:09:49,890
@@ -25377,7 +25377,7 @@ Let's take another question.
 5447
 04:10:11,460 --> 04:10:14,985
 So Adam Sontag, if you're
-in the room, put up--
+in the room, put up &mdash;
 
 5448
 04:10:14,985 --> 04:10:16,925
@@ -25426,7 +25426,7 @@ to buy and sell?
 5458
 04:10:54,574 --> 04:10:57,690
 RICARDO VILLERO: Very
-impressive, by the way-- so my
+impressive, by the way &mdash; so my
 
 5459
 04:10:57,690 --> 04:10:59,540
@@ -25463,7 +25463,7 @@ which is essentially charging
 
 5466
 04:11:10,880 --> 04:11:12,450
-you for an SMS message--
+you for an SMS message &mdash;
 
 5467
 04:11:12,450 --> 04:11:16,090
@@ -25805,7 +25805,7 @@ minutes left.
 5539
 04:13:49,190 --> 04:13:50,800
 So I kind of want
-to close on a--
+to close on a &mdash;
 
 5540
 04:13:50,800 --> 04:13:52,345
@@ -25834,7 +25834,7 @@ on what we could do
 5545
 04:14:04,010 --> 04:14:08,940
 you, as developers, to push to
-the ideal payment solution--
+the ideal payment solution &mdash;
 
 5546
 04:14:08,940 --> 04:14:11,590
@@ -25847,7 +25847,7 @@ KUMAR MCMILLAN: Sure.
 
 5548
 04:14:13,550 --> 04:14:14,880
-As developers--
+As developers &mdash;
 
 5549
 04:14:14,880 --> 04:14:17,030
@@ -25912,7 +25912,7 @@ developers can do.
 
 5562
 04:14:53,125 --> 04:14:54,272
-NATASHA ROONEY: Ricardo--
+NATASHA ROONEY: Ricardo &mdash;
 
 5563
 04:14:54,272 --> 04:14:57,110
@@ -26289,7 +26289,7 @@ something.
 5642
 04:18:05,500 --> 04:18:07,850
 And that's the way to
-get where you want--
+get where you want &mdash;
 
 5643
 04:18:07,850 --> 04:18:09,930
@@ -26442,7 +26442,7 @@ standardization.
 
 5675
 04:19:23,610 --> 04:19:24,530
-And finally, Cindy--
+And finally, Cindy &mdash;
 
 5676
 04:19:24,530 --> 04:19:25,770
@@ -26485,7 +26485,7 @@ technologies.
 5684
 04:19:46,520 --> 04:19:49,250
 But definitely
-requestAutocomplete, mozPay--
+requestAutocomplete, mozPay &mdash;
 
 5685
 04:19:49,250 --> 04:19:52,020
@@ -26551,7 +26551,7 @@ new tree house or something.
 
 5699
 04:20:23,810 --> 04:20:27,260
-So a few thank yous--
+So a few thank yous &mdash;
 
 5700
 04:20:27,260 --> 04:20:30,910
@@ -26799,11 +26799,11 @@ bigging us up but also just
 5754
 04:22:49,130 --> 04:22:53,360
 making really insightful
-comments--
+comments &mdash;
 
 5755
 04:22:53,360 --> 04:22:55,410
-it'll work, honestly--
+it'll work, honestly &mdash;
 
 5756
 04:22:55,410 --> 04:22:58,390
@@ -27047,7 +27047,7 @@ And it'll make everyone happy.
 
 5812
 04:25:11,890 --> 04:25:13,256
-Michelle, Danielle--
+Michelle, Danielle &mdash;
 
 5813
 04:25:13,256 --> 04:25:15,340

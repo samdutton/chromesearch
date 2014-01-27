@@ -378,7 +378,7 @@ Excellent.
 
 83
 00:03:02,910 --> 00:03:03,720
-It was the--
+It was the &mdash;
 
 84
 00:03:03,720 --> 00:03:05,070
@@ -386,7 +386,7 @@ I don't know what the word is.
 
 85
 00:03:05,070 --> 00:03:06,320
-It's not a trifecta--
+It's not a trifecta &mdash;
 quadfecta?
 
 86
@@ -445,7 +445,7 @@ on the web?
 
 98
 00:03:35,950 --> 00:03:39,360
-And we started this--
+And we started this &mdash;
 
 99
 00:03:39,360 --> 00:03:39,990
@@ -516,7 +516,7 @@ thinking about a course.
 
 114
 00:04:02,855 --> 00:04:03,920
-And they're like cool--
+And they're like cool &mdash;
 blah, blah, blah.
 
 115
@@ -579,7 +579,7 @@ ways, a folkloric story.
 128
 00:04:21,930 --> 00:04:23,520
 When Peter came to
-me and said--
+me and said &mdash;
 
 129
 00:04:23,520 --> 00:04:24,800
@@ -608,11 +608,11 @@ you the Cliff Notes.
 134
 00:04:35,480 --> 00:04:38,790
 About two years ago, Peter
-Norvig-- who's a director here
+Norvig &mdash; who's a director here
 
 135
 00:04:38,790 --> 00:04:41,510
-at Google-- and I tend to teach
+at Google &mdash; and I tend to teach
 this class, Artificial
 
 136
@@ -919,7 +919,7 @@ a large scale.
 201
 00:07:00,327 --> 00:07:04,150
 PETER LUBBERS: So it was like,
-how do you scale that up to--
+how do you scale that up to &mdash;
 
 202
 00:07:04,150 --> 00:07:05,240
@@ -954,7 +954,7 @@ a lot of the typical classic
 
 209
 00:07:15,150 --> 00:07:18,610
-online learning is you don't--
+online learning is you don't &mdash;
 
 210
 00:07:18,610 --> 00:07:20,250
@@ -1009,12 +1009,12 @@ done a certain video.
 
 221
 00:07:46,590 --> 00:07:48,660
-But right after the videos--
+But right after the videos &mdash;
 and we'll talk a little bit
 
 222
 00:07:48,660 --> 00:07:49,620
-more about it later--
+more about it later &mdash;
 
 223
 00:07:49,620 --> 00:07:50,920
@@ -1028,7 +1028,7 @@ to do some coding.
 225
 00:07:52,710 --> 00:07:56,250
 And so with that in mind,
-you really have--
+you really have &mdash;
 
 226
 00:07:56,250 --> 00:08:00,180
@@ -1165,7 +1165,7 @@ KATHERINE MILLER: Fair enough.
 
 256
 00:09:02,891 --> 00:09:04,900
-SEAN BENNETT: It's actually--
+SEAN BENNETT: It's actually &mdash;
 
 257
 00:09:04,900 --> 00:09:07,220
@@ -1298,7 +1298,7 @@ But anyhow.
 
 285
 00:10:02,090 --> 00:10:03,300
-And early on--
+And early on &mdash;
 
 286
 00:10:03,300 --> 00:10:05,190
@@ -1407,7 +1407,7 @@ a solution for that and
 308
 00:10:56,590 --> 00:10:58,370
 education for these people,
-it's really--
+it's really &mdash;
 
 309
 00:10:58,370 --> 00:10:59,335
@@ -1472,12 +1472,12 @@ from the platform.
 
 322
 00:11:32,032 --> 00:11:35,280
-And it's a great way-- if it
+And it's a great way &mdash; if it
 works for games, then it will
 
 323
 00:11:35,280 --> 00:11:36,090
-probably work for--
+probably work for &mdash;
 
 324
 00:11:36,090 --> 00:11:37,794
@@ -1595,7 +1595,7 @@ it's actually
 
 348
 00:12:28,850 --> 00:12:30,780
-funny because I view--
+funny because I view &mdash;
 
 349
 00:12:30,780 --> 00:12:32,960
@@ -1762,7 +1762,7 @@ immediately get taken to a
 384
 00:13:46,510 --> 00:13:49,190
 coding section where the
-student has to--
+student has to &mdash;
 
 385
 00:13:49,190 --> 00:13:50,458
@@ -2087,7 +2087,7 @@ the course.
 
 455
 00:15:52,940 --> 00:15:54,025
-Would you say that that's--
+Would you say that that's &mdash;
 
 456
 00:15:54,025 --> 00:15:55,220
@@ -2151,7 +2151,7 @@ much more fun.
 
 469
 00:16:19,200 --> 00:16:20,585
-And we want this kind of--
+And we want this kind of &mdash;
 
 470
 00:16:20,585 --> 00:16:22,130
@@ -2584,7 +2584,7 @@ way to point
 
 564
 00:19:30,510 --> 00:19:32,550
-this out is that almost--
+this out is that almost &mdash;
 
 565
 00:19:32,550 --> 00:19:35,480
@@ -2840,7 +2840,7 @@ And that's been amazing.
 
 621
 00:21:20,510 --> 00:21:23,810
-What we're seeing-- and the
+What we're seeing &mdash; and the
 reason for that is because
 
 622
@@ -2916,7 +2916,7 @@ finding the problems, fixing
 637
 00:21:57,370 --> 00:21:59,360
 issues, answering
-each other's--
+each other's &mdash;
 
 638
 00:21:59,360 --> 00:22:00,130
@@ -3027,12 +3027,12 @@ interesting from what
 
 661
 00:22:53,120 --> 00:22:54,290
-you've said, though--
+you've said, though &mdash;
 especially the
 
 662
 00:22:54,290 --> 00:22:56,430
-interactivity piece--
+interactivity piece &mdash;
 
 663
 00:22:56,430 --> 00:22:59,220
@@ -3076,7 +3076,7 @@ drive people to success.
 671
 00:23:22,230 --> 00:23:24,150
 But it sounds like,
-in many ways--
+in many ways &mdash;
 
 672
 00:23:24,150 --> 00:23:27,050
@@ -3182,7 +3182,7 @@ polynomial in my entire life.
 694
 00:24:09,550 --> 00:24:11,930
 And I know nobody in the planet
-who would know-- anyone
+who would know &mdash; anyone
 
 695
 00:24:11,930 --> 00:24:13,735
@@ -3379,12 +3379,12 @@ unit or two per week.
 737
 00:25:38,470 --> 00:25:41,510
 And what we figured is there's a
-lot of people-- for example,
+lot of people &mdash; for example,
 
 738
 00:25:41,510 --> 00:25:44,350
 I run the San Francisco
-HTML5 user group--
+HTML5 user group &mdash;
 
 739
 00:25:44,350 --> 00:25:48,300
@@ -3394,12 +3394,12 @@ Meetups in the Bay Area.
 740
 00:25:48,300 --> 00:25:54,100
 And we said, why don't we get
-together a nice room-- like
+together a nice room &mdash; like
 
 741
 00:25:54,100 --> 00:25:56,150
 100 people can fit
-in this room--
+in this room &mdash;
 
 742
 00:25:56,150 --> 00:25:59,450
@@ -3418,16 +3418,16 @@ live streaming that.
 745
 00:26:03,760 --> 00:26:07,690
 So starting next week, on
-Wednesday-- and we'll put the
+Wednesday &mdash; and we'll put the
 
 746
 00:26:07,690 --> 00:26:08,940
-link to that--
+link to that &mdash;
 
 747
 00:26:08,940 --> 00:26:12,530
 we're going to have, basically,
-a series of-- well,
+a series of &mdash; well,
 
 748
 00:26:12,530 --> 00:26:13,310
@@ -3440,7 +3440,7 @@ every Monday night.
 
 750
 00:26:15,130 --> 00:26:16,374
-And we're going to be--
+And we're going to be &mdash;
 
 751
 00:26:16,374 --> 00:26:16,771
@@ -3474,7 +3474,7 @@ Monday nights.
 
 758
 00:26:25,250 --> 00:26:27,745
-And so we'll be there--
+And so we'll be there &mdash;
 
 759
 00:26:27,745 --> 00:26:30,350
@@ -3699,8 +3699,8 @@ in the United States?
 
 806
 00:27:57,690 --> 00:28:00,180
-As a German-- or
-as a European--
+As a German &mdash; or
+as a European &mdash;
 
 807
 00:28:00,180 --> 00:28:00,780
@@ -3797,7 +3797,7 @@ next project.
 827
 00:28:37,920 --> 00:28:40,620
 We want to really also
-learn from--
+learn from &mdash;
 
 828
 00:28:40,620 --> 00:28:42,560
@@ -4307,7 +4307,7 @@ then, of course,
 
 939
 00:32:26,440 --> 00:32:27,820
-the other grand prize--
+the other grand prize &mdash;
 
 940
 00:32:27,820 --> 00:32:32,870
@@ -4352,7 +4352,7 @@ I happen to be with a
 
 949
 00:32:44,990 --> 00:32:45,920
-self-driving car--
+self-driving car &mdash;
 
 950
 00:32:45,920 --> 00:32:46,815
@@ -4461,12 +4461,12 @@ like the one we are building
 
 973
 00:33:37,190 --> 00:33:38,280
-during the course--
+during the course &mdash;
 
 974
 00:33:38,280 --> 00:33:41,140
 one that uses canvas
-and Box2D--
+and Box2D &mdash;
 
 975
 00:33:41,140 --> 00:33:44,520
@@ -4757,7 +4757,7 @@ way you see it?
 
 1037
 00:35:47,220 --> 00:35:48,200
-There are endless--
+There are endless &mdash;
 
 1038
 00:35:48,200 --> 00:35:49,180
@@ -4818,7 +4818,7 @@ That's a great question.
 
 1051
 00:36:05,860 --> 00:36:06,680
-Yeah, so--
+Yeah, so &mdash;
 
 1052
 00:36:06,680 --> 00:36:10,580
@@ -4951,7 +4951,7 @@ question for you.
 1081
 00:37:10,240 --> 00:37:13,850
 What do you think about using
-TDD or unit testing--
+TDD or unit testing &mdash;
 
 1082
 00:37:13,850 --> 00:37:16,780
@@ -4983,7 +4983,7 @@ SEAN BENNETT: OK.
 
 1088
 00:37:27,980 --> 00:37:29,320
-We are using--
+We are using &mdash;
 
 1089
 00:37:29,320 --> 00:37:30,660
@@ -5962,11 +5962,11 @@ and so on.
 
 1303
 00:44:36,930 --> 00:44:38,360
-We have about 300 or so--
+We have about 300 or so &mdash;
 
 1304
 00:44:38,360 --> 00:44:41,810
-350, I think-- companies right
+350, I think &mdash; companies right
 now look at those CVs.
 
 1305
@@ -6040,7 +6040,7 @@ repository?
 
 1320
 00:45:10,190 --> 00:45:13,330
-Like how are you-- if you're
+Like how are you &mdash; if you're
 not known in the community,
 
 1321
@@ -6228,7 +6228,7 @@ start your own company
 
 1361
 00:46:29,270 --> 00:46:29,980
-and make the next--
+and make the next &mdash;
 
 1362
 00:46:29,980 --> 00:46:30,970
@@ -6359,7 +6359,7 @@ SEBASTIAN THRUN: Yeah.
 
 1390
 00:47:27,340 --> 00:47:28,770
-That site-- it wasn't
+That site &mdash; it wasn't
 collaborative.
 
 1391
@@ -6369,7 +6369,7 @@ built a search engine for
 
 1392
 00:47:31,520 --> 00:47:33,300
-video games-- sorry, videos.
+video games &mdash; sorry, videos.
 
 1393
 00:47:33,300 --> 00:47:35,610
@@ -6673,7 +6673,7 @@ that because the web is
 
 1457
 00:49:56,470 --> 00:49:57,200
-fantastic--
+fantastic &mdash;
 
 1458
 00:49:57,200 --> 00:49:58,720
@@ -6682,7 +6682,7 @@ is great at
 
 1459
 00:49:58,720 --> 00:50:00,010
-actually being very secure--
+actually being very secure &mdash;
 
 1460
 00:50:00,010 --> 00:50:02,690
@@ -6872,7 +6872,7 @@ where you want to be.
 
 1499
 00:51:31,550 --> 00:51:33,190
-So I think--
+So I think &mdash;
 
 1500
 00:51:33,190 --> 00:51:36,490
@@ -6919,7 +6919,7 @@ Death Star.
 
 1510
 00:51:46,130 --> 00:51:46,600
-So--
+So &mdash;
 
 1511
 00:51:46,600 --> 00:51:47,710
@@ -6992,7 +6992,7 @@ KATHERINE MILLER: Excellent.
 1526
 00:52:10,250 --> 00:52:12,500
 PETER LUBBERS: Just want to
-mention, we will go through--
+mention, we will go through &mdash;
 
 1527
 00:52:12,500 --> 00:52:13,980
@@ -7083,7 +7083,7 @@ more do we do?
 1546
 00:52:44,200 --> 00:52:46,760
 Really, from my end,
-I would love to--
+I would love to &mdash;
 
 1547
 00:52:46,760 --> 00:52:48,310
@@ -7113,7 +7113,7 @@ I don't know.
 
 1553
 00:52:58,070 --> 00:53:00,455
-What would you guys--
+What would you guys &mdash;
 
 1554
 00:53:00,455 --> 00:53:04,460
@@ -7132,7 +7132,7 @@ performance.
 
 1557
 00:53:10,370 --> 00:53:11,410
-The server side--
+The server side &mdash;
 
 1558
 00:53:11,410 --> 00:53:13,670
@@ -7235,7 +7235,7 @@ the second course at this
 1579
 00:53:47,650 --> 00:53:49,510
 point in time after
-all the pain--
+all the pain &mdash;
 
 1580
 00:53:49,510 --> 00:53:50,490
@@ -7348,7 +7348,7 @@ constantly iterate.
 
 1603
 00:54:33,540 --> 00:54:34,860
-If there are problems--
+If there are problems &mdash;
 
 1604
 00:54:34,860 --> 00:54:36,736
@@ -7553,11 +7553,11 @@ difficult process.
 1646
 00:56:17,590 --> 00:56:20,550
 That being said,
-there's tons--
+there's tons &mdash;
 
 1647
 00:56:20,550 --> 00:56:23,140
-probably more now than ever--
+probably more now than ever &mdash;
 of research in this area,
 
 1648

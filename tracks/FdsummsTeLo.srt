@@ -85,7 +85,7 @@ over in London is
 
 19
 00:00:52,340 --> 00:00:53,900
-going to show you--
+going to show you &mdash;
 
 20
 00:00:53,900 --> 00:00:54,400
@@ -154,7 +154,7 @@ to be showing it off.
 34
 00:01:18,500 --> 00:01:19,310
 But we're going to
-be talking--
+be talking &mdash;
 
 35
 00:01:19,310 --> 00:01:21,370
@@ -360,7 +360,7 @@ perhaps on an iPhone.
 77
 00:03:07,150 --> 00:03:10,750
 Now, if you pop open DevTools
-and go to Overrides--
+and go to Overrides &mdash;
 
 78
 00:03:10,750 --> 00:03:12,495
@@ -369,7 +369,7 @@ cog, so click down in
 
 79
 00:03:12,495 --> 00:03:13,640
-the Settings cog--
+the Settings cog &mdash;
 
 80
 00:03:13,640 --> 00:03:17,330
@@ -626,11 +626,11 @@ Touch Events.
 133
 00:05:21,800 --> 00:05:25,490
 Now if I check this and I go
-and I reload this app--
+and I reload this app &mdash;
 
 134
 00:05:25,490 --> 00:05:26,900
-so it should be reloaded--
+so it should be reloaded &mdash;
 
 135
 00:05:26,900 --> 00:05:30,980
@@ -784,7 +784,7 @@ like two days ago, one of
 
 168
 00:06:39,580 --> 00:06:40,190
-the last ones--
+the last ones &mdash;
 
 169
 00:06:40,190 --> 00:06:43,880
@@ -1656,7 +1656,7 @@ inside of there.
 
 355
 00:14:39,980 --> 00:14:40,595
-Cool, so--
+Cool, so &mdash;
 
 356
 00:14:40,595 --> 00:14:42,550
@@ -2345,11 +2345,11 @@ heap profile.
 
 503
 00:21:53,370 --> 00:21:55,280
-Looks like the inspector--
+Looks like the inspector &mdash;
 
 504
 00:21:55,280 --> 00:21:56,130
-the DevTools--
+the DevTools &mdash;
 
 505
 00:21:56,130 --> 00:21:58,990
@@ -2677,7 +2677,7 @@ that actual data is.
 
 574
 00:25:29,430 --> 00:25:31,476
-So I can say--
+So I can say &mdash;
 
 575
 00:25:31,476 --> 00:25:33,260
@@ -2787,7 +2787,7 @@ to refresh the page.
 
 599
 00:26:39,410 --> 00:26:42,190
-All right, so Amazon--
+All right, so Amazon &mdash;
 
 600
 00:26:42,190 --> 00:26:43,700
@@ -2832,11 +2832,11 @@ this request at all.
 609
 00:27:08,490 --> 00:27:12,740
 So let's say this
-one right here--
+one right here &mdash;
 
 610
 00:27:12,740 --> 00:27:13,990
-the CSS--
+the CSS &mdash;
 
 611
 00:27:13,990 --> 00:27:15,850
@@ -2913,12 +2913,12 @@ requested by a script from
 627
 00:27:52,780 --> 00:27:56,100
 inside of jQuery, so we can
-see the full call stack--
+see the full call stack &mdash;
 
 628
 00:27:56,100 --> 00:28:00,180
 this call stack was added
-last week, in fact--
+last week, in fact &mdash;
 
 629
 00:28:00,180 --> 00:28:04,050
@@ -3298,7 +3298,7 @@ Addy, are we done on this?
 
 710
 00:32:21,010 --> 00:32:21,970
-Did we cover--
+Did we cover &mdash;
 
 711
 00:32:21,970 --> 00:32:24,420

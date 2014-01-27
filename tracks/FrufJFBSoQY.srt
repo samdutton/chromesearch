@@ -521,7 +521,7 @@ for that property.
 109
 00:04:40,934 --> 00:04:42,968
 So you can generate
-just a few assembly line--
+just a few assembly line &mdash;
 
 110
 00:04:42,968 --> 00:04:47,133
@@ -531,11 +531,11 @@ that will load your property.
 111
 00:04:47,133 --> 00:04:51,734
 In JavaScript, if you just
-do it, uh, like naively--
+do it, uh, like naively &mdash;
 
 112
 00:04:51,734 --> 00:04:54,334
-implement JavaScript--
+implement JavaScript &mdash;
 then you'll have a full search
 
 113
@@ -636,7 +636,7 @@ some scope information.
 
 133
 00:05:50,667 --> 00:05:52,167
-So if you look for--
+So if you look for &mdash;
 
 134
 00:05:52,167 --> 00:05:54,834
@@ -935,7 +935,7 @@ about that.
 
 196
 00:08:25,534 --> 00:08:28,667
-So once we have that, we--
+So once we have that, we &mdash;
 we, uh, we can use a technique
 
 197
@@ -1109,11 +1109,11 @@ the actual pointer.
 232
 00:09:58,067 --> 00:10:01,534
 Um, so what we use that for
-is allowing 32--
+is allowing 32 &mdash;
 
 233
 00:10:01,534 --> 00:10:04,133
-sor--sorry--
+sor--sorry &mdash;
 31-bit signed integers
 
 234
@@ -1133,7 +1133,7 @@ to a JavaScript object
 237
 00:10:11,868 --> 00:10:15,934
 from a heap and the address
-is even--
+is even &mdash;
 
 238
 00:10:15,934 --> 00:10:17,133
@@ -1422,7 +1422,7 @@ but they're only internal
 
 299
 00:12:53,200 --> 00:12:54,667
-to the--
+to the &mdash;
 to the JavaScript engine.
 
 300
@@ -1570,8 +1570,8 @@ which I've put up there.
 
 330
 00:14:15,734 --> 00:14:18,000
-And this is the class--
-the hidden class--
+And this is the class &mdash;
+the hidden class &mdash;
 
 331
 00:14:18,000 --> 00:14:21,868
@@ -1627,7 +1627,7 @@ we're going to allocate
 
 342
 00:14:46,534 --> 00:14:48,734
-a small piece of--
+a small piece of &mdash;
 of backing storage
 
 343
@@ -1637,7 +1637,7 @@ and for elements.
 
 344
 00:14:51,067 --> 00:14:53,033
-Um, so that's--
+Um, so that's &mdash;
 that's the initial thing
 
 345
@@ -2168,7 +2168,7 @@ and that's what we're going
 
 454
 00:19:33,501 --> 00:19:36,234
-to do to, uh, to--
+to do to, uh, to &mdash;
 to optimize.
 
 455
@@ -2202,7 +2202,7 @@ Um, so the only problem here
 461
 00:19:52,100 --> 00:19:55,501
 is that when we generate
-the JavaScript code--
+the JavaScript code &mdash;
 
 462
 00:19:55,501 --> 00:19:59,534
@@ -2303,7 +2303,7 @@ our objects
 
 482
 00:20:42,534 --> 00:20:43,634
-to see if they can find--
+to see if they can find &mdash;
 
 483
 00:20:43,634 --> 00:20:46,767
@@ -2416,12 +2416,12 @@ the--the property value.
 506
 00:21:39,267 --> 00:21:41,767
 Okay, and if the assumptions
-are broken--
+are broken &mdash;
 
 507
 00:21:41,767 --> 00:21:44,767
 so if we get here
-with another type of object--
+with another type of object &mdash;
 
 508
 00:21:44,767 --> 00:21:46,400
@@ -2489,7 +2489,7 @@ given you
 521
 00:22:14,934 --> 00:22:17,400
 all of the information
-that you need to--
+that you need to &mdash;
 
 522
 00:22:17,400 --> 00:22:18,901
@@ -2498,12 +2498,12 @@ what's going on here.
 
 523
 00:22:18,901 --> 00:22:20,901
-So let me try to step--
+So let me try to step &mdash;
 step through it.
 
 524
 00:22:20,901 --> 00:22:23,767
-So this is the--
+So this is the &mdash;
 the small snippet of code
 
 525
@@ -2586,7 +2586,7 @@ and go do the generic case
 
 541
 00:23:12,033 --> 00:23:13,868
-if that's the--
+if that's the &mdash;
 if--if that's happening.
 
 542
@@ -2960,7 +2960,7 @@ an application
 619
 00:26:19,367 --> 00:26:22,334
 where you have, like,
-a couple of stages--
+a couple of stages &mdash;
 
 620
 00:26:22,334 --> 00:26:24,934
@@ -2975,7 +2975,7 @@ with one piece of code.
 622
 00:26:28,434 --> 00:26:30,634
 And then basically
-you transition to some other--
+you transition to some other &mdash;
 
 623
 00:26:30,634 --> 00:26:32,601
@@ -3392,7 +3392,7 @@ is basically to be able
 
 710
 00:30:05,133 --> 00:30:09,234
-to, uh, um, manage the--
+to, uh, um, manage the &mdash;
 the bookkeeping
 
 711
@@ -3529,7 +3529,7 @@ of the live data.
 739
 00:31:16,868 --> 00:31:18,667
 And as I told you,
-a lot of data dies--
+a lot of data dies &mdash;
 
 740
 00:31:18,667 --> 00:31:21,267
@@ -3734,7 +3734,7 @@ of the fragmentation.
 782
 00:33:04,300 --> 00:33:07,000
 So basically, inside of V8,
-we have a notion of--
+we have a notion of &mdash;
 
 783
 00:33:07,000 --> 00:33:08,367
@@ -3752,7 +3752,7 @@ a certain threshold,
 
 786
 00:33:13,300 --> 00:33:15,634
-we're going to do a non--
+we're going to do a non &mdash;
 sorry, a compacting collection
 
 787
@@ -3787,7 +3787,7 @@ Yeah.
 793
 00:33:35,901 --> 00:33:38,400
 Oh, so the question is
-"how big is the, uh, is the--
+"how big is the, uh, is the &mdash;
 
 794
 00:33:38,400 --> 00:33:40,000
@@ -3808,7 +3808,7 @@ I don't even remember.
 
 798
 00:33:46,901 --> 00:33:49,234
-I think it's--it's--
+I think it's--it's &mdash;
 it's a megabyte or two.
 
 799
@@ -3828,7 +3828,7 @@ that if I have an application
 802
 00:34:08,601 --> 00:34:11,834
 that allocates
-a lot of small objects--
+a lot of small objects &mdash;
 
 803
 00:34:11,834 --> 00:34:14,267
@@ -3865,12 +3865,12 @@ to be allocated
 
 810
 00:34:24,667 --> 00:34:27,033
-in the--
+in the &mdash;
 in the young generation.
 
 811
 00:34:27,033 --> 00:34:29,534
-Um, so if--if when you--
+Um, so if--if when you &mdash;
 
 812
 00:34:29,534 --> 00:34:31,133
@@ -3974,7 +3974,7 @@ running inside of Chrome
 
 833
 00:35:17,400 --> 00:35:21,534
-on, like, a modern machine--
+on, like, a modern machine &mdash;
 desktop machine.
 
 834
@@ -4082,7 +4082,7 @@ like, a compatibility layer
 856
 00:36:24,267 --> 00:36:27,334
 that basically translates
-PCRE regular expressions--
+PCRE regular expressions &mdash;
 
 857
 00:36:27,334 --> 00:36:28,767
@@ -4312,7 +4312,7 @@ to reorder operations
 904
 00:38:32,934 --> 00:38:34,334
 so that we perform
-the least--
+the least &mdash;
 
 905
 00:38:34,334 --> 00:38:37,167
@@ -4332,7 +4332,7 @@ you do find a match
 908
 00:38:42,334 --> 00:38:44,868
 because you actually know
-that it's going to be there--
+that it's going to be there &mdash;
 
 909
 00:38:44,868 --> 00:38:48,934
@@ -4891,7 +4891,7 @@ excited about this.
 
 1026
 00:43:04,133 --> 00:43:06,400
-And we think that it'll--
+And we think that it'll &mdash;
 that it'll form the basis
 
 1027
@@ -5170,11 +5170,11 @@ per iteration.
 1085
 00:45:33,934 --> 00:45:36,634
 And then I'm just going
-to map out the performance--
+to map out the performance &mdash;
 
 1086
 00:45:36,634 --> 00:45:39,734
-so the benchmark score--
+so the benchmark score &mdash;
 over these iterations
 
 1087
@@ -5416,8 +5416,8 @@ that it's really important,
 
 1136
 00:47:44,734 --> 00:47:48,133
-um, because it's--
-it's really important for--
+um, because it's &mdash;
+it's really important for &mdash;
 
 1137
 00:47:48,133 --> 00:47:50,234
@@ -5567,7 +5567,7 @@ bottlenecks
 
 1168
 00:49:04,801 --> 00:49:07,734
-that I see for--
+that I see for &mdash;
 for V8 currently.
 
 1169
@@ -5630,7 +5630,7 @@ of the same code.
 
 1181
 00:49:47,601 --> 00:49:49,367
-So generating--
+So generating &mdash;
 uh, in the beginning,
 
 1182
@@ -6031,8 +6031,8 @@ and for Google Chrome.
 
 1266
 00:53:14,634 --> 00:53:17,934
-We really want to--
-to try to see if we can--
+We really want to &mdash;
+to try to see if we can &mdash;
 
 1267
 00:53:17,934 --> 00:53:22,667
@@ -6167,7 +6167,7 @@ it's really common
 
 1295
 00:54:43,234 --> 00:54:44,767
-for objects to be allocat--
+for objects to be allocat &mdash;
 
 1296
 00:54:44,767 --> 00:54:47,467
@@ -6238,7 +6238,7 @@ are also created
 
 1310
 00:55:18,767 --> 00:55:21,400
-based on a function--
+based on a function &mdash;
 namely the object function.
 
 1311
@@ -6352,7 +6352,7 @@ to go change stuff.
 
 1334
 00:56:29,801 --> 00:56:32,734
-Um, so it also does lead to--
+Um, so it also does lead to &mdash;
 
 1335
 00:56:32,734 --> 00:56:34,868
@@ -6407,8 +6407,8 @@ in the beginning,
 
 1346
 00:56:57,767 --> 00:56:59,868
-the first time that we--
-that we, uh--
+the first time that we &mdash;
+that we, uh &mdash;
 
 1347
 00:56:59,868 --> 00:57:01,200
@@ -6525,7 +6525,7 @@ that we used here,
 1371
 00:58:04,267 --> 00:58:08,167
 we're kind of, uh, somehow
-relying on user build to--
+relying on user build to &mdash;
 
 1372
 00:58:08,167 --> 00:58:10,400
@@ -6549,7 +6549,7 @@ that's, like, really using
 
 1376
 00:58:20,367 --> 00:58:21,701
-a million different--
+a million different &mdash;
 
 1377
 00:58:21,701 --> 00:58:23,634
@@ -6563,7 +6563,7 @@ really be an issue
 
 1379
 00:58:27,367 --> 00:58:29,067
-because in--
+because in &mdash;
 
 1380
 00:58:29,067 --> 00:58:30,434
@@ -6601,7 +6601,7 @@ Oh.
 1387
 00:58:59,167 --> 00:59:01,801
 Okay, so, uh,
-the question is if I can--
+the question is if I can &mdash;
 
 1388
 00:59:01,801 --> 00:59:03,067
@@ -6610,7 +6610,7 @@ can give some information
 1389
 00:59:03,067 --> 00:59:06,367
 about other browsers
-that are starting to use--
+that are starting to use &mdash;
 
 1390
 00:59:06,367 --> 00:59:07,868
@@ -6651,7 +6651,7 @@ which is really cool.
 
 1398
 00:59:26,767 --> 00:59:28,300
-So I think that's--
+So I think that's &mdash;
 that's great.
 
 1399
@@ -6705,7 +6705,7 @@ in the sense
 1409
 00:59:48,701 --> 00:59:51,467
 that the binding layer,
-so the--
+so the &mdash;
 
 1410
 00:59:51,467 --> 00:59:55,000

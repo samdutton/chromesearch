@@ -45,7 +45,7 @@ This session is titled
 11
 00:00:31,110 --> 00:00:34,700
 Dart." And if you
-might notice--
+might notice &mdash;
 
 12
 00:00:34,700 --> 00:00:36,010
@@ -58,11 +58,11 @@ My name is Ray Cromwell.
 14
 00:00:37,710 --> 00:00:39,670
 So the first thing you might be
-asking-- and I get this a
+asking &mdash; and I get this a
 
 15
 00:00:39,670 --> 00:00:42,240
-lot-- before the session even
+lot &mdash; before the session even
 starts, is why Dart?
 
 16
@@ -334,7 +334,7 @@ So what does that mean?
 
 72
 00:03:10,820 --> 00:03:12,900
-If you think of JavaScript--
+If you think of JavaScript &mdash;
 
 73
 00:03:12,900 --> 00:03:16,470
@@ -489,7 +489,7 @@ completion, refactoring,
 
 105
 00:04:34,140 --> 00:04:35,070
-go to declaration--
+go to declaration &mdash;
 
 106
 00:04:35,070 --> 00:04:35,810
@@ -574,7 +574,7 @@ types are optional.
 
 123
 00:05:23,550 --> 00:05:27,490
-So it's not-- we don't always
+So it's not &mdash; we don't always
 recommend removing types.
 
 124
@@ -608,7 +608,7 @@ up with that.
 
 130
 00:05:41,830 --> 00:05:43,700
-The other thing is that--
+The other thing is that &mdash;
 
 131
 00:05:43,700 --> 00:05:44,880
@@ -654,7 +654,7 @@ equals b, and so on, right?
 
 140
 00:06:00,940 --> 00:06:02,470
-The same thing--
+The same thing &mdash;
 
 141
 00:06:02,470 --> 00:06:05,640
@@ -913,12 +913,12 @@ that everyone sees.
 197
 00:08:39,640 --> 00:08:43,210
 And you can initialize them to
-be immutable or singleton--
+be immutable or singleton &mdash;
 
 198
 00:08:43,210 --> 00:08:45,100
 think of string interning
-in Java--
+in Java &mdash;
 
 199
 00:08:45,100 --> 00:08:50,660
@@ -985,7 +985,7 @@ function overloading in Dart.
 212
 00:09:27,340 --> 00:09:30,220
 And so here's a typical
-example of Java--
+example of Java &mdash;
 
 213
 00:09:30,220 --> 00:09:34,320
@@ -1504,7 +1504,7 @@ in your code.
 
 323
 00:14:18,120 --> 00:14:20,406
-If you want to compute--
+If you want to compute &mdash;
 
 324
 00:14:20,406 --> 00:14:23,430
@@ -1545,7 +1545,7 @@ Dart does have a String.
 
 332
 00:14:39,500 --> 00:14:41,200
-Class It has a bool type--
+Class It has a bool type &mdash;
 
 333
 00:14:41,200 --> 00:14:42,830
@@ -1605,7 +1605,7 @@ between Java and Dart.
 345
 00:15:12,250 --> 00:15:17,580
 String support interpolation
-in Dart-- so you can put a
+in Dart &mdash; so you can put a
 
 346
 00:15:17,580 --> 00:15:21,470
@@ -1742,7 +1742,7 @@ a good thing.
 
 374
 00:16:34,590 --> 00:16:37,240
-Because Java generics--
+Because Java generics &mdash;
 
 375
 00:16:37,240 --> 00:16:39,900
@@ -1827,7 +1827,7 @@ runtime types.
 
 392
 00:17:19,190 --> 00:17:23,510
-So a Foo or a list of int--
+So a Foo or a list of int &mdash;
 you can actually check
 
 393
@@ -1891,7 +1891,7 @@ about what's being left out.
 
 406
 00:17:56,810 --> 00:17:58,920
-The other-- and I want to say
+The other &mdash; and I want to say
 the third favorite feature of
 
 407
@@ -1994,7 +1994,7 @@ declarations, if they're
 428
 00:18:56,220 --> 00:18:58,440
 really complicated and take a
-lot of parameters-- maybe have
+lot of parameters &mdash; maybe have
 
 429
 00:18:58,440 --> 00:19:00,550
@@ -2003,7 +2003,7 @@ to functions, and
 
 430
 00:19:00,550 --> 00:19:02,250
-things like that--
+things like that &mdash;
 
 431
 00:19:02,250 --> 00:19:04,060
@@ -2032,7 +2032,7 @@ the name Transformer.
 436
 00:19:16,660 --> 00:19:19,860
 And then my apply function
-now, rather than saying--
+now, rather than saying &mdash;
 
 437
 00:19:19,860 --> 00:19:24,850
@@ -2162,7 +2162,7 @@ And things like that.
 
 464
 00:20:30,260 --> 00:20:31,110
-And then iteration--
+And then iteration &mdash;
 
 465
 00:20:31,110 --> 00:20:32,410
@@ -2309,11 +2309,11 @@ is the main function.
 
 495
 00:21:50,410 --> 00:21:51,580
-So--
+So &mdash;
 
 496
 00:21:51,580 --> 00:21:53,280
-whoops--
+whoops &mdash;
 
 497
 00:21:53,280 --> 00:21:53,910
@@ -2628,12 +2628,12 @@ magic field in it called on.
 564
 00:24:36,310 --> 00:24:39,410
 And on is going to have a bunch
-of setter properties--
+of setter properties &mdash;
 
 565
 00:24:39,410 --> 00:24:41,310
 like I showed you setters
-earlier--
+earlier &mdash;
 
 566
 00:24:41,310 --> 00:24:42,310
@@ -2642,7 +2642,7 @@ for each type of event.
 567
 00:24:42,310 --> 00:24:45,100
 So here we've got one
-called click--
+called click &mdash;
 
 568
 00:24:45,100 --> 00:24:45,580
@@ -2660,7 +2660,7 @@ to have an add method on it.
 
 571
 00:24:51,040 --> 00:24:54,030
-And so now, I'm just saying--
+And so now, I'm just saying &mdash;
 
 572
 00:24:54,030 --> 00:24:58,790
@@ -2683,7 +2683,7 @@ would write the same code.
 
 576
 00:25:07,090 --> 00:25:08,375
-You look at it again--
+You look at it again &mdash;
 
 577
 00:25:08,375 --> 00:25:11,530
@@ -3073,11 +3073,11 @@ that we'd do is we would
 
 660
 00:29:01,100 --> 00:29:02,430
-write a function--
+write a function &mdash;
 
 661
 00:29:02,430 --> 00:29:04,620
-that you can see right here--
+that you can see right here &mdash;
 
 662
 00:29:04,620 --> 00:29:11,440
@@ -3310,7 +3310,7 @@ composite type that's really
 709
 00:31:31,030 --> 00:31:35,170
 complex, like a menu
-or a tree--
+or a tree &mdash;
 
 710
 00:31:35,170 --> 00:31:37,430
@@ -3962,7 +3962,7 @@ is a way to do it.
 
 846
 00:37:34,870 --> 00:37:37,150
-There's an unofficial way--
+There's an unofficial way &mdash;
 
 847
 00:37:37,150 --> 00:37:39,390
@@ -4015,11 +4015,11 @@ just run eval on it.
 857
 00:38:04,090 --> 00:38:07,310
 And then likewise, in
-the Dart world--
+the Dart world &mdash;
 
 858
 00:38:07,310 --> 00:38:09,290
-this is Dart code here--
+this is Dart code here &mdash;
 
 859
 00:38:09,290 --> 00:38:11,970
@@ -4346,11 +4346,11 @@ it and evaluate it.
 927
 00:41:20,240 --> 00:41:22,540
 Then you're going to invent
-another event name-- let's
+another event name &mdash; let's
 
 928
 00:41:22,540 --> 00:41:24,260
-call it 'returnjsni'--
+call it 'returnjsni' &mdash;
 
 929
 00:41:24,260 --> 00:41:26,520
@@ -4496,12 +4496,12 @@ overloading.
 959
 00:42:42,000 --> 00:42:45,610
 So you can implement
-the operator[]--
+the operator[] &mdash;
 
 960
 00:42:45,610 --> 00:42:47,960
 and here I have a class
-called JsProxy--
+called JsProxy &mdash;
 
 961
 00:42:47,960 --> 00:42:49,840
@@ -4891,7 +4891,7 @@ Have some fun.
 
 1043
 00:46:23,310 --> 00:46:24,570
-Or integrate--
+Or integrate &mdash;
 
 1044
 00:46:24,570 --> 00:46:27,370
@@ -5169,7 +5169,7 @@ today that's concrete.
 
 1103
 00:49:12,920 --> 00:49:18,730
-But I do believe that-- because
+But I do believe that &mdash; because
 Seth Ladd is heavily
 
 1104
@@ -5287,12 +5287,12 @@ official answer.
 1129
 00:50:09,160 --> 00:50:11,400
 But if you go talk to Lars,
-just track him down--
+just track him down &mdash;
 
 1130
 00:50:11,400 --> 00:50:14,290
 he's kind of a very tall
-guy with glasses--
+guy with glasses &mdash;
 
 1131
 00:50:14,290 --> 00:50:16,000
@@ -5353,7 +5353,7 @@ Sorry.
 
 1144
 00:50:31,360 --> 00:50:33,890
-Just to add in-- we do have
+Just to add in &mdash; we do have
 teams in Google who are
 
 1145
@@ -5549,7 +5549,7 @@ AUDIENCE: Thank you.
 1186
 00:52:09,820 --> 00:52:11,450
 AUDIENCE: Do you think
-there's going to--
+there's going to &mdash;
 
 1187
 00:52:11,450 --> 00:52:13,020
@@ -5813,7 +5813,7 @@ and I ran out of time.
 1242
 00:54:01,540 --> 00:54:05,110
 But if you're using
-RequestFactory, actually--
+RequestFactory, actually &mdash;
 
 1243
 00:54:05,110 --> 00:54:05,870
@@ -6061,7 +6061,7 @@ example, a lot of Google's top
 1296
 00:56:15,700 --> 00:56:17,280
 properties, actually,
-like AdWords--
+like AdWords &mdash;
 
 1297
 00:56:17,280 --> 00:56:21,240
@@ -6224,7 +6224,7 @@ OK.
 
 1332
 00:57:31,740 --> 00:57:33,230
-Thanks for coming, and--
+Thanks for coming, and &mdash;
 
 1333
 00:57:33,230 --> 00:57:37,110

@@ -459,7 +459,7 @@ I love this quote by Ilya.
 103
 00:02:52,980 --> 00:02:54,770
 He said this in a blog
-post a while ago--
+post a while ago &mdash;
 
 104
 00:02:54,770 --> 00:02:56,960
@@ -1798,7 +1798,7 @@ there's about 90 requests
 386
 00:12:21,540 --> 00:12:25,687
 to get this site on the screen,
-as well as 1.4 meg-- oh, it's
+as well as 1.4 meg &mdash; oh, it's
 
 387
 00:12:25,687 --> 00:12:26,270
@@ -1828,7 +1828,7 @@ in here from Europe
 
 393
 00:12:34,220 --> 00:12:37,280
-and other-- how many of you are
+and other &mdash; how many of you are
 on roaming charges right now?
 
 394
@@ -1918,7 +1918,7 @@ into waterfall view,
 413
 00:13:03,450 --> 00:13:05,110
 and you can see that
-this green line--
+this green line &mdash;
 
 414
 00:13:05,110 --> 00:13:06,650
@@ -1964,7 +1964,7 @@ We keep scrolling down.
 423
 00:13:22,290 --> 00:13:24,550
 It looks like we've
-got maybe-- I'm
+got maybe &mdash; I'm
 
 424
 00:13:24,550 --> 00:13:27,370
@@ -2120,7 +2120,7 @@ chaos, we get networking done.
 
 457
 00:14:31,610 --> 00:14:35,450
-Here's the thing-- I am just
+Here's the thing &mdash; I am just
 the Ghost of Christmas Present.
 
 458
@@ -2420,7 +2420,7 @@ Don't.
 521
 00:16:31,410 --> 00:16:32,145
 You're about to
-find out-- don't.
+find out &mdash; don't.
 
 522
 00:16:32,145 --> 00:16:33,269
@@ -2486,7 +2486,7 @@ look at a demo here.
 
 536
 00:16:55,360 --> 00:16:57,580
-Single demo-- this
+Single demo &mdash; this
 is super easy.
 
 537
@@ -2529,7 +2529,7 @@ moving too well.
 
 545
 00:17:14,220 --> 00:17:16,760
-And so when -- hold on.
+And so when  &mdash; hold on.
 
 546
 00:17:16,760 --> 00:17:19,236
@@ -2606,7 +2606,7 @@ and you can see here.
 561
 00:17:51,430 --> 00:17:52,846
 Basically what
-they're doing-- let
+they're doing &mdash; let
 
 562
 00:17:52,846 --> 00:17:55,380
@@ -3131,8 +3131,8 @@ down performance issues
 
 671
 00:21:36,450 --> 00:21:38,290
-from compute-- here's
-Super Resident Raver--
+from compute &mdash; here's
+Super Resident Raver &mdash;
 
 672
 00:21:38,290 --> 00:21:40,050
@@ -3165,7 +3165,7 @@ OK.
 
 678
 00:21:47,440 --> 00:21:47,950
-Things are going-- yes.
+Things are going &mdash; yes.
 
 679
 00:21:47,950 --> 00:21:48,487
@@ -3204,7 +3204,7 @@ favorite things added
 
 687
 00:21:56,740 --> 00:21:58,906
-to Chrome DevTools-- is
+to Chrome DevTools &mdash; is
 this is a flame chart, which
 
 688
@@ -3396,7 +3396,7 @@ performance, and move forward.
 727
 00:23:20,120 --> 00:23:22,790
 I love this quote by
-Paul Lewis-- "Tools.
+Paul Lewis &mdash; "Tools.
 
 728
 00:23:22,790 --> 00:23:23,777
@@ -3409,7 +3409,7 @@ on the stage at this
 
 730
 00:23:25,360 --> 00:23:27,660
-point-- Well OK, let's
+point &mdash; Well OK, let's
 roll back for a minute.
 
 731

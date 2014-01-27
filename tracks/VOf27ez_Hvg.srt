@@ -75,7 +75,7 @@ in the Web that was fast, it was fluid, it
 
 16
 00:01:26,439 --> 00:01:30,079
-was -- in fact, this was before touch. It
+was  &mdash; in fact, this was before touch. It
 was touchable. The way you interacted with
 
 17
@@ -985,12 +985,12 @@ So let's go down to here and click on this
 
 198
 00:16:51,589 --> 00:16:57,450
-little -- in the Chrome inspector this little
+little  &mdash; in the Chrome inspector this little
 gearbox and say enable source maps. So now
 
 199
 00:16:57,450 --> 00:17:00,820
-I'm going to click this -- I'm going to go
+I'm going to click this  &mdash; I'm going to go
 back to the code server and I'm going to drag
 
 200
@@ -1101,7 +1101,7 @@ for you.
 221
 00:19:10,770 --> 00:19:16,900
 First of all, if you sell widgets, you can
-now actually -- you don't have to write Java
+now actually  &mdash; you don't have to write Java
 
 222
 00:19:16,900 --> 00:19:21,770
@@ -1220,8 +1220,8 @@ set of GWT classes that directly call into
 
 245
 00:21:34,340 --> 00:21:39,450
-those APIs, look, it's all done -- I've got
-a typo in there -- with JavaScript overlay
+those APIs, look, it's all done  &mdash; I've got
+a typo in there  &mdash; with JavaScript overlay
 
 246
 00:21:39,450 --> 00:21:44,570
@@ -1276,7 +1276,7 @@ that's how they get their extra performance.
 256
 00:22:31,539 --> 00:22:37,890
 So it could also work for desktop. But you
-might have the -- already using the existing
+might have the  &mdash; already using the existing
 
 257
 00:22:37,890 --> 00:22:40,610
@@ -1306,7 +1306,7 @@ there like this ... I'm going to type a script
 262
 00:23:04,580 --> 00:23:11,580
 tag. I'm going to say type the SQL to text/
--- no, not JavaScript, Java. And in here,
+ &mdash; no, not JavaScript, Java. And in here,
 
 263
 00:23:14,179 --> 00:23:18,460
@@ -1336,17 +1336,17 @@ then replace it back with a regular script
 268
 00:23:40,200 --> 00:23:46,820
 type, text JavaScript, and then the page loads.
-And so -- so my computer is kind of slow on
+And so  &mdash; so my computer is kind of slow on
 
 269
 00:23:46,820 --> 00:23:51,130
-a real computer -- if I would upgrade my computer
+a real computer  &mdash; if I would upgrade my computer
 it would run a lot faster, but I will show
 
 270
 00:23:51,130 --> 00:23:58,130
-you that right now. Let's see -- if I just
-write some code there, and it's -- oops. Wait.
+you that right now. Let's see  &mdash; if I just
+write some code there, and it's  &mdash; oops. Wait.
 
 271
 00:24:05,020 --> 00:24:11,990
@@ -1365,7 +1365,7 @@ let that load. There you go.
 
 274
 00:24:20,340 --> 00:24:26,690
->>Ray Cromwell: So now you can develop -- if
+>>Ray Cromwell: So now you can develop  &mdash; if
 I were to release this servlet filter, you
 
 275
@@ -1396,12 +1396,12 @@ a lot of APIs in HTML5. But because this is
 280
 00:24:49,669 --> 00:24:56,039
 Java, this is my Java IDE, you know, I can
-do things like this, you know, window -- this
+do things like this, you know, window  &mdash; this
 
 281
 00:24:56,039 --> 00:25:02,200
-is the Elemental library -- .getnavigator
-or .get -- you see all of these APIs in geolocation,
+is the Elemental library  &mdash; .getnavigator
+or .get  &mdash; you see all of these APIs in geolocation,
 
 282
 00:25:02,200 --> 00:25:08,450
@@ -1491,7 +1491,7 @@ apps, you know, our internal customers come
 299
 00:26:33,679 --> 00:26:39,390
 first, compared to the community because that's
-where our money is coming from. And so -- so
+where our money is coming from. And so  &mdash; so
 
 300
 00:26:39,390 --> 00:26:42,480
@@ -1510,7 +1510,7 @@ And so I suggested and we adopted that we're
 
 303
 00:26:52,210 --> 00:26:59,210
-going to basically change the governor -- governing
+going to basically change the governor  &mdash; governing
 body of GWT to no longer just be Google as
 
 304
@@ -1811,7 +1811,7 @@ large applications. That's why people use
 363
 00:31:52,760 --> 00:31:59,760
 a very structured framework, like XGS or GWT.
-And our goal is to take -- to really provide
+And our goal is to take  &mdash; to really provide
 
 364
 00:32:00,549 --> 00:32:07,549
@@ -1860,7 +1860,7 @@ as possible provide a single HTML platform
 
 373
 00:32:56,890 --> 00:33:02,070
-across all of these -- in the multi-device
+across all of these  &mdash; in the multi-device
 world, right? So from phones to tablets to
 
 374
@@ -1920,7 +1920,7 @@ this room. GXT started about five years ago
 
 385
 00:34:06,330 --> 00:34:13,330
-as the -- as Darrell's project and then Darrell
+as the  &mdash; as Darrell's project and then Darrell
 joined Sencha and merged with the Sencha team.
 
 386
@@ -1950,7 +1950,7 @@ we bring to the table that you don't have
 
 391
 00:34:43,739 --> 00:34:49,589
-to create yourself. There's -- there's literally
+to create yourself. There's  &mdash; there's literally
 several hundred widgets of all types for all
 
 392
@@ -1986,7 +1986,7 @@ also moved to interface-based design, so for
 398
 00:35:32,219 --> 00:35:38,900
 large applications it's much easier to create
-mocks and to do testing. We've done --
+mocks and to do testing. We've done  &mdash;
 
 399
 00:35:38,900 --> 00:35:43,089
@@ -2010,7 +2010,7 @@ head. We also have much improved model support.
 
 403
 00:35:58,789 --> 00:36:05,789
-So in -- in GXT 2, you basically have to use
+So in  &mdash; in GXT 2, you basically have to use
 our custom data stores and that was the only
 
 404
@@ -2020,7 +2020,7 @@ without standing on your head. Now you can
 
 405
 00:36:11,259 --> 00:36:17,700
-basically pull in -- pull in model data from
+basically pull in  &mdash; pull in model data from
 plain Java objects or for any beans that you
 
 406
@@ -2331,7 +2331,7 @@ in here you're writing four layers, and this
 467
 00:42:28,549 --> 00:42:35,440
 is the core of the (indiscernible) you can
-kind of skip half -- half of your program
+kind of skip half  &mdash; half of your program
 
 468
 00:42:35,440 --> 00:42:40,229
@@ -2456,7 +2456,7 @@ of building Web scripts, Web application on
 492
 00:45:02,880 --> 00:45:07,979
 the client side with Java. So if you're building
-a huge application, there is -- that's the
+a huge application, there is  &mdash; that's the
 
 493
 00:45:07,979 --> 00:45:13,839
@@ -2691,7 +2691,7 @@ kit. So if you look at the event logs right
 539
 00:50:09,999 --> 00:50:14,579
 now, you'll see a new guy who is committing
--- or actually one by one he's fixing the
+ &mdash; or actually one by one he's fixing the
 
 540
 00:50:14,579 --> 00:50:19,380
@@ -2720,7 +2720,7 @@ I'll go over to this one.
 
 545
 00:50:39,579 --> 00:50:46,579
-maps to do -- in my projects. Most of -- I
+maps to do  &mdash; in my projects. Most of  &mdash; I
 hate JavaScript. Most of the time I'm looking
 
 546
@@ -2781,7 +2781,7 @@ maps are actually very important.
 557
 00:51:47,649 --> 00:51:54,649
 >>> Hello. (saying name). I'm a new developer
-and our team is mostly -- we are mostly using
+and our team is mostly  &mdash; we are mostly using
 
 558
 00:51:54,979 --> 00:52:00,989
@@ -2865,13 +2865,13 @@ have large libraries on the steering committee.
 
 574
 00:53:24,019 --> 00:53:30,650
-How do you guaranty that -- these companies
+How do you guaranty that  &mdash; these companies
 have their own agenda. How do you guaranty
 
 575
 00:53:30,650 --> 00:53:37,650
 that GWT doesn't become bloated with their
-features that --
+features that  &mdash;
 
 576
 00:53:37,739 --> 00:53:43,930
@@ -2950,7 +2950,7 @@ megabyte JavaScript library, there is going
 
 591
 00:54:50,839 --> 00:54:57,109
-to be some objections. Is that --
+to be some objections. Is that  &mdash;
 >>> I have a question about the example you
 
 592
@@ -2961,7 +2961,7 @@ HTML page, so you type window from lower case
 593
 00:55:03,979 --> 00:55:10,170
 W, it's not class window.
->>Ray Cromwell: That's right. So -- yeah,
+>>Ray Cromwell: That's right. So  &mdash; yeah,
 
 594
 00:55:10,170 --> 00:55:17,170
@@ -3031,7 +3031,7 @@ GWT 2.6 or GWT 3.0, will now be basically
 607
 00:56:24,269 --> 00:56:29,229
 a steering committee release, and so the road
-map, we haven't -- we've just started our
+map, we haven't  &mdash; we've just started our
 
 608
 00:56:29,229 --> 00:56:34,779
@@ -3056,7 +3056,7 @@ what's going to go into the next version and
 612
 00:56:50,519 --> 00:56:55,719
 when is it going to be released. So if you
-watch GWT steering -- GWT.steering at Google.com,
+watch GWT steering  &mdash; GWT.steering at Google.com,
 
 613
 00:56:55,719 --> 00:57:02,719

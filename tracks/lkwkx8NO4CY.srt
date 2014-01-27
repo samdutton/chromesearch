@@ -589,7 +589,7 @@ rules-based machine
 
 126
 00:05:10,020 --> 00:05:10,980
-translation--
+translation &mdash;
 
 127
 00:05:10,980 --> 00:05:12,880
@@ -641,7 +641,7 @@ find good search results.
 137
 00:05:37,080 --> 00:05:39,040
 We wanted to try the same
-thing for translation--
+thing for translation &mdash;
 
 138
 00:05:39,040 --> 00:05:41,510
@@ -1605,11 +1605,11 @@ And you're like, sure.
 
 342
 00:13:58,090 --> 00:13:59,240
-And then a second later--
+And then a second later &mdash;
 
 343
 00:13:59,240 --> 00:14:00,350
-less than a second later--
+less than a second later &mdash;
 
 344
 00:14:00,350 --> 00:14:02,540
@@ -1866,7 +1866,7 @@ last week, I think.
 398
 00:16:04,290 --> 00:16:05,940
 Let's see if can
-switch to my--
+switch to my &mdash;
 
 399
 00:16:05,940 --> 00:16:07,645
@@ -1906,7 +1906,7 @@ same phrases.
 407
 00:16:20,940 --> 00:16:23,240
 And I can sync, and hopefully
-we'll see-- yup, there's that
+we'll see &mdash; yup, there's that
 
 408
 00:16:23,240 --> 00:16:26,480
@@ -2253,11 +2253,11 @@ So that's conversation mode.
 485
 00:19:04,660 --> 00:19:07,010
 And then the last thing, I'm
-really excited about-- we
+really excited about &mdash; we
 
 486
 00:19:07,010 --> 00:19:09,850
-launched pretty recently--
+launched pretty recently &mdash;
 
 487
 00:19:09,850 --> 00:19:13,120
@@ -3562,7 +3562,7 @@ borders, but places
 763
 00:29:07,370 --> 00:29:09,570
 where you can find shared
-passions and communities--
+passions and communities &mdash;
 
 764
 00:29:09,570 --> 00:29:13,680

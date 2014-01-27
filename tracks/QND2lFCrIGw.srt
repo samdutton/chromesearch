@@ -197,7 +197,7 @@ him all I want.
 43
 00:01:48,734 --> 00:01:51,834
 So the directory structure
-is also fairly--
+is also fairly &mdash;
 
 44
 00:01:51,834 --> 00:01:54,234
@@ -251,7 +251,7 @@ And so what we do
 55
 00:02:18,501 --> 00:02:22,667
 is we--we now have
-a formal--
+a formal &mdash;
 
 56
 00:02:22,667 --> 00:02:24,334
@@ -298,7 +298,7 @@ really, really cool
 
 65
 00:02:44,801 --> 00:02:47,501
-except have you guys seen--
+except have you guys seen &mdash;
 
 66
 00:02:47,501 --> 00:02:51,701
@@ -409,7 +409,7 @@ still working on it.
 88
 00:03:47,667 --> 00:03:49,834
 And so a lot of people
-get--
+get &mdash;
 
 89
 00:03:49,834 --> 00:03:52,267
@@ -522,8 +522,8 @@ please help upstreaming.
 
 112
 00:04:48,300 --> 00:04:51,033
-So any, um--
-any, um--
+So any, um &mdash;
+any, um &mdash;
 
 113
 00:04:51,033 --> 00:04:53,133
@@ -548,8 +548,8 @@ What it involves is essentially
 
 118
 00:05:02,267 --> 00:05:05,734
-grabbing a piece of v8 code--
-v8 bindings code--
+grabbing a piece of v8 code &mdash;
+v8 bindings code &mdash;
 
 119
 00:05:05,734 --> 00:05:09,100
@@ -646,7 +646,7 @@ You can do it very easily.
 
 139
 00:05:53,067 --> 00:05:56,100
-Um, so, um--
+Um, so, um &mdash;
 
 140
 00:05:56,100 --> 00:05:59,868
@@ -669,7 +669,7 @@ um, of WebKit.
 
 144
 00:06:09,033 --> 00:06:11,234
-And this is a very--
+And this is a very &mdash;
 
 145
 00:06:11,234 --> 00:06:14,634
@@ -728,7 +728,7 @@ that's what it is.
 
 157
 00:06:43,467 --> 00:06:48,067
-So we have now removed--
+So we have now removed &mdash;
 not physically,
 
 158
@@ -937,7 +937,7 @@ um,
 
 202
 00:08:44,167 --> 00:08:47,501
-none of us, and I repeat--
+none of us, and I repeat &mdash;
 even you, Peter,
 
 203
@@ -974,7 +974,7 @@ that comes with it.
 
 210
 00:09:04,934 --> 00:09:07,934
-So it's really--
+So it's really &mdash;
 it's really painful.
 
 211
@@ -1070,7 +1070,7 @@ is just--is just wrong.
 
 231
 00:09:56,200 --> 00:09:58,868
-So I highly recommend using--
+So I highly recommend using &mdash;
 
 232
 00:09:58,868 --> 00:10:02,167
@@ -1097,11 +1097,11 @@ Ooh.
 
 237
 00:10:13,801 --> 00:10:17,267
-So for example I'm--
+So for example I'm &mdash;
 
 238
 00:10:17,267 --> 00:10:19,601
-WebKit comes with some really--
+WebKit comes with some really &mdash;
 
 239
 00:10:19,601 --> 00:10:21,200
@@ -1530,7 +1530,7 @@ and browse it online.
 333
 00:14:23,667 --> 00:14:26,501
 It's much better than view,
-uh, vc--
+uh, vc &mdash;
 
 334
 00:14:26,501 --> 00:14:28,667
@@ -1581,7 +1581,7 @@ Git acts as a really good tool
 
 345
 00:14:51,868 --> 00:14:53,434
-if you're using--
+if you're using &mdash;
 if you're on a Mac.
 
 346
@@ -1705,7 +1705,7 @@ or more extensive methodology
 
 371
 00:16:04,300 --> 00:16:05,734
-would probably--
+would probably &mdash;
 
 372
 00:16:05,734 --> 00:16:08,167
@@ -1756,7 +1756,7 @@ a couple of test suites.
 
 382
 00:16:31,267 --> 00:16:33,033
-W3c suite, 
+W3c suite,
 
 383
 00:16:33,033 --> 00:16:34,701
@@ -1764,7 +1764,7 @@ Hicksy's svg suite.
 
 384
 00:16:34,701 --> 00:16:37,000
-Batik svg--
+Batik svg &mdash;
 a bunch of them.
 
 385
@@ -1809,7 +1809,7 @@ have downstream,
 
 394
 00:17:00,100 --> 00:17:02,868
-so if you're ever in builder--
+so if you're ever in builder &mdash;
 
 395
 00:17:02,868 --> 00:17:07,734
@@ -1867,7 +1867,7 @@ indicator
 
 407
 00:17:29,868 --> 00:17:32,300
-of something--
+of something &mdash;
 ooh, look at that.
 
 408
@@ -1912,11 +1912,11 @@ at the stack traces.
 416
 00:17:53,634 --> 00:17:56,467
 This is something the Mac
-people--
+people &mdash;
 
 417
 00:17:56,467 --> 00:17:58,267
-or not Mac people--
+or not Mac people &mdash;
 
 418
 00:17:58,267 --> 00:18:00,100
@@ -2016,7 +2016,7 @@ all of our numbers.
 440
 00:18:50,868 --> 00:18:54,467
 And then we have fixed
-a major--
+a major &mdash;
 
 441
 00:18:54,467 --> 00:18:57,901
@@ -2069,7 +2069,7 @@ um, um, what's going on.
 
 452
 00:19:20,033 --> 00:19:22,868
-Page cycler--
+Page cycler &mdash;
 
 453
 00:19:22,868 --> 00:19:24,634
@@ -2176,7 +2176,7 @@ Non strings.
 
 476
 00:20:13,334 --> 00:20:16,033
-So something--you have to look--
+So something--you have to look &mdash;
 oh, and me too.
 
 477
@@ -2463,7 +2463,7 @@ as a merger
 539
 00:22:44,133 --> 00:22:46,968
 to go and fix the regression
-rather than--
+rather than &mdash;
 
 540
 00:22:46,968 --> 00:22:48,901
@@ -2534,7 +2534,7 @@ on WebKit.
 
 555
 00:23:25,567 --> 00:23:27,834
-And then submit for review--
+And then submit for review &mdash;
 
 556
 00:23:27,834 --> 00:23:31,100
@@ -2742,7 +2742,7 @@ to discuss these things.
 
 600
 00:25:22,968 --> 00:25:26,667
-Um, now, when you--
+Um, now, when you &mdash;
 
 601
 00:25:26,667 --> 00:25:28,400
@@ -2787,7 +2787,7 @@ like html five forms,
 
 610
 00:25:46,934 --> 00:25:49,334
-think of it as this--
+think of it as this &mdash;
 
 611
 00:25:49,334 --> 00:25:52,400

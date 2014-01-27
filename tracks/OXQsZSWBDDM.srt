@@ -1511,7 +1511,7 @@ creating the div.
 323
 00:14:48,380 --> 00:14:50,170
 PETE LEPAGE: And adding
-that class--
+that class &mdash;
 
 324
 00:14:50,170 --> 00:14:51,070
@@ -2229,7 +2229,7 @@ and set that variable.
 
 475
 00:21:05,980 --> 00:21:08,040
-For example, right now--
+For example, right now &mdash;
 
 476
 00:21:08,040 --> 00:21:10,770
@@ -2256,7 +2256,7 @@ control, if you set it to
 481
 00:21:20,820 --> 00:21:25,570
 right, you'll see them
-all kind of--
+all kind of &mdash;
 
 482
 00:21:25,570 --> 00:21:27,300
@@ -2543,7 +2543,7 @@ get bound together.
 542
 00:24:29,400 --> 00:24:32,435
 Because the fireflies
-themselves have a--
+themselves have a &mdash;
 
 543
 00:24:32,435 --> 00:24:35,680
@@ -2674,7 +2674,7 @@ not taking up memory.
 
 569
 00:25:43,570 --> 00:25:44,120
-Something like this--
+Something like this &mdash;
 
 570
 00:25:44,120 --> 00:25:45,330
@@ -2688,7 +2688,7 @@ of bark on some of these
 
 572
 00:25:47,400 --> 00:25:48,630
-things is its own element--
+things is its own element &mdash;
 
 573
 00:25:48,630 --> 00:25:49,800
@@ -2740,7 +2740,7 @@ event that's fired when the
 
 583
 00:26:13,260 --> 00:26:13,470
-animation--
+animation &mdash;
 
 584
 00:26:13,470 --> 00:26:14,250
@@ -3811,7 +3811,7 @@ graphics card, and get
 
 810
 00:36:38,600 --> 00:36:39,040
-it out of--
+it out of &mdash;
 
 811
 00:36:39,040 --> 00:36:40,580
@@ -4898,7 +4898,7 @@ down in this.
 
 1038
 00:46:53,950 --> 00:46:54,750
-We've seen this--
+We've seen this &mdash;
 
 1039
 00:46:54,750 --> 00:46:55,800
@@ -5496,7 +5496,7 @@ everything on its head for me.
 1166
 00:53:08,390 --> 00:53:09,870
 PETE LEPAGE: So he had to apply
-that 3D transform--
+that 3D transform &mdash;
 
 1167
 00:53:09,870 --> 00:53:11,609
@@ -5577,7 +5577,7 @@ call Neutrino.
 1183
 00:53:50,340 --> 00:53:55,280
 And what that does is just gives
-you a simple lifestyle--
+you a simple lifestyle &mdash;
 
 1184
 00:53:55,280 --> 00:53:56,550
@@ -5959,7 +5959,7 @@ sequence with a 0% and 100%.
 
 1264
 00:57:34,470 --> 00:57:36,270
-And just apply it and--
+And just apply it and &mdash;
 
 1265
 00:57:36,270 --> 00:57:37,900

@@ -50,7 +50,7 @@ television.
 
 13
 00:00:22,830 --> 00:00:23,780
-And as--
+And as &mdash;
 
 14
 00:00:23,780 --> 00:00:25,970
@@ -119,7 +119,7 @@ about is phones.
 
 28
 00:01:00,930 --> 00:01:02,410
-And I don't know if people--
+And I don't know if people &mdash;
 
 29
 00:01:02,410 --> 00:01:05,190
@@ -133,7 +133,7 @@ smartphones?
 
 31
 00:01:07,650 --> 00:01:10,320
-Back in the days-- yeah,
+Back in the days &mdash; yeah,
 you remember.
 
 32
@@ -285,7 +285,7 @@ a TV on the desk.
 
 63
 00:02:37,360 --> 00:02:38,710
-I mean, I have--
+I mean, I have &mdash;
 
 64
 00:02:38,710 --> 00:02:41,070
@@ -325,7 +325,7 @@ of TV watched.
 
 72
 00:02:58,290 --> 00:03:00,940
-And the other-- on the flip
+And the other &mdash; on the flip
 side, they don't watch
 
 73
@@ -433,7 +433,7 @@ this guy here.
 
 95
 00:04:13,260 --> 00:04:13,870
-Google TV--
+Google TV &mdash;
 
 96
 00:04:13,870 --> 00:04:17,110
@@ -452,7 +452,7 @@ that audience in mind.
 
 99
 00:04:24,880 --> 00:04:27,365
-We have a deal with the--
+We have a deal with the &mdash;
 
 100
 00:04:27,365 --> 00:04:30,370
@@ -723,7 +723,7 @@ It's really just an emulator.
 
 158
 00:07:08,860 --> 00:07:10,810
-But I would recommend--
+But I would recommend &mdash;
 
 159
 00:07:10,810 --> 00:07:13,870
@@ -888,7 +888,7 @@ remember some of the early
 
 193
 00:08:45,050 --> 00:08:46,580
-Android devices--
+Android devices &mdash;
 
 194
 00:08:46,580 --> 00:08:50,880
@@ -1003,7 +1003,7 @@ touchscreens.
 
 217
 00:10:01,120 --> 00:10:03,320
-So you have to-- as a developer,
+So you have to &mdash; as a developer,
 you know about
 
 218
@@ -1069,8 +1069,8 @@ the XML, it's very simple.
 
 231
 00:10:35,740 --> 00:10:39,130
-In the editor-- in the manifest
-editor-- you can just
+In the editor &mdash; in the manifest
+editor &mdash; you can just
 
 232
 00:10:39,130 --> 00:10:44,280
@@ -1259,12 +1259,12 @@ TV devices.
 272
 00:12:38,160 --> 00:12:40,640
 And so this is what
-their main--
+their main &mdash;
 
 273
 00:12:40,640 --> 00:12:43,090
 I want to call it the "hero"
-screen-- looks like.
+screen &mdash; looks like.
 
 274
 00:12:43,090 --> 00:12:45,740
@@ -1335,12 +1335,12 @@ that, depending on how
 
 288
 00:13:29,730 --> 00:13:31,180
-you defined the layouts--
+you defined the layouts &mdash;
 
 289
 00:13:31,180 --> 00:13:35,860
 how you boxed the XML layouts
-inside of each other-- is it
+inside of each other &mdash; is it
 
 290
 00:13:35,860 --> 00:13:39,680
@@ -1384,7 +1384,7 @@ is the expected behavior.
 
 298
 00:14:05,940 --> 00:14:09,930
-So you can-- this is, again,
+So you can &mdash; this is, again,
 standard APIs.
 
 299
@@ -1520,7 +1520,7 @@ problem that I would like to
 
 326
 00:15:40,900 --> 00:15:42,290
-highlight to you--
+highlight to you &mdash;
 
 327
 00:15:42,290 --> 00:15:45,060
@@ -1707,7 +1707,7 @@ features for Google TV.
 366
 00:17:40,980 --> 00:17:44,080
 The easiest way for you as
-a developer to see this--
+a developer to see this &mdash;
 
 367
 00:17:44,080 --> 00:17:47,790
@@ -2258,7 +2258,7 @@ bitrate streams, which on a TV
 
 483
 00:23:49,820 --> 00:23:51,330
-is really--
+is really &mdash;
 
 484
 00:23:51,330 --> 00:23:54,000
@@ -2417,7 +2417,7 @@ analytics in your app to get
 
 516
 00:25:40,180 --> 00:25:40,960
-information--
+information &mdash;
 
 517
 00:25:40,960 --> 00:25:44,740
@@ -2564,11 +2564,11 @@ those backends.
 
 548
 00:27:15,310 --> 00:27:17,600
-We also support now--
+We also support now &mdash;
 
 549
 00:27:17,600 --> 00:27:19,360
-with the new Chrome browser--
+with the new Chrome browser &mdash;
 
 550
 00:27:19,360 --> 00:27:22,650
@@ -2587,8 +2587,8 @@ your Chrome browser,
 
 553
 00:27:31,870 --> 00:27:35,760
-you can now also-- with the
-Encrypted Media Extensions--
+you can now also &mdash; with the
+Encrypted Media Extensions &mdash;
 
 554
 00:27:35,760 --> 00:27:39,350
@@ -2798,11 +2798,11 @@ status bar
 
 598
 00:29:55,610 --> 00:29:57,360
-or any of the "Chrome"--
+or any of the "Chrome" &mdash;
 
 599
 00:29:57,360 --> 00:29:58,320
-in quotes--
+in quotes &mdash;
 
 600
 00:29:58,320 --> 00:29:59,990
@@ -2886,7 +2886,7 @@ Android level.
 
 617
 00:30:50,630 --> 00:30:52,100
-So one example--
+So one example &mdash;
 
 618
 00:30:52,100 --> 00:30:53,460
@@ -2979,7 +2979,7 @@ your apps on TV.
 637
 00:31:56,840 --> 00:32:00,830
 So with that, can I ask my
-colleague Andrew-- he is
+colleague Andrew &mdash; he is
 
 638
 00:32:00,830 --> 00:32:04,080
@@ -3066,11 +3066,11 @@ How you publish it?
 656
 00:32:48,470 --> 00:32:50,202
 ANDREW JEON: Well, if you're
-talking about Android APIs--
+talking about Android APIs &mdash;
 
 657
 00:32:50,202 --> 00:32:52,585
-APIs--
+APIs &mdash;
 
 658
 00:32:52,585 --> 00:32:55,110
@@ -3200,7 +3200,7 @@ to the Nexus Q?
 685
 00:34:03,540 --> 00:34:04,800
 ANDREW JEON: We don't
-have a Nexus--
+have a Nexus &mdash;
 
 686
 00:34:04,800 --> 00:34:10,070
@@ -3398,7 +3398,7 @@ dropped on top of Jelly
 
 728
 00:35:49,700 --> 00:35:52,890
-Bean, if you are going--
+Bean, if you are going &mdash;
 
 729
 00:35:52,890 --> 00:35:56,380
@@ -3565,7 +3565,7 @@ just keep on progressing and
 
 764
 00:37:19,870 --> 00:37:21,710
-not worry about any--
+not worry about any &mdash;
 
 765
 00:37:21,710 --> 00:37:24,560
@@ -3664,7 +3664,7 @@ make her who want to bring
 
 785
 00:38:12,600 --> 00:38:13,820
-that to tablet--
+that to tablet &mdash;
 
 786
 00:38:13,820 --> 00:38:14,480
@@ -3755,7 +3755,7 @@ to play 4K or not.
 
 805
 00:39:06,870 --> 00:39:07,990
-For example--
+For example &mdash;
 
 806
 00:39:07,990 --> 00:39:09,890
@@ -3946,7 +3946,7 @@ That is possible.
 
 846
 00:40:52,150 --> 00:40:54,200
-The second one was--
+The second one was &mdash;
 
 847
 00:40:54,200 --> 00:40:55,440

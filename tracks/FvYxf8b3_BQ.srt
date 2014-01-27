@@ -233,7 +233,7 @@ It's visceral.
 51
 00:03:32,210 --> 00:03:35,880
 There's emotion behind it, and
-that's where we, kind of-- we
+that's where we, kind of &mdash; we
 
 52
 00:03:35,880 --> 00:03:37,130
@@ -618,7 +618,7 @@ smaller one for details.
 134
 00:07:38,270 --> 00:07:42,880
 I think that technology is
-also just a way-- it's an
+also just a way &mdash; it's an
 
 135
 00:07:42,880 --> 00:07:44,920
@@ -889,7 +889,7 @@ Cirque's point of view, that
 
 194
 00:10:31,580 --> 00:10:34,910
-was a strong indicator was--
+was a strong indicator was &mdash;
 
 195
 00:10:34,910 --> 00:10:37,200
@@ -909,7 +909,7 @@ interact with your audience.
 198
 00:10:46,325 --> 00:10:48,400
 Like now, even, this is live,
-we're talking-- how do you
+we're talking &mdash; how do you
 
 199
 00:10:48,400 --> 00:10:52,730
@@ -1137,7 +1137,7 @@ all these huge files.
 245
 00:13:45,610 --> 00:13:48,850
 And then really figuring
-out, OK, now we have--
+out, OK, now we have &mdash;
 
 246
 00:13:48,850 --> 00:13:50,858
@@ -1534,7 +1534,7 @@ that there was a thread
 
 330
 00:18:14,710 --> 00:18:17,655
-throughout-- like a breadcrumb
+throughout &mdash; like a breadcrumb
 trail continuous, throughout
 
 331
@@ -1559,7 +1559,7 @@ to help the artist see what
 335
 00:18:34,370 --> 00:18:37,220
 space they were working
-in, and to--
+in, and to &mdash;
 
 336
 00:18:37,220 --> 00:18:41,050
@@ -1580,7 +1580,7 @@ everywhere?
 340
 00:18:49,810 --> 00:18:52,020
 PETE LEPAGE: The remakes,
-or the--
+or the &mdash;
 
 341
 00:18:52,020 --> 00:18:52,586
@@ -1668,7 +1668,7 @@ a different way.
 
 360
 00:19:36,130 --> 00:19:38,360
-But this was the actual--
+But this was the actual &mdash;
 
 361
 00:19:38,360 --> 00:19:41,175
@@ -1728,7 +1728,7 @@ the window.
 
 373
 00:20:12,860 --> 00:20:13,860
-Their enthusiasm--
+Their enthusiasm &mdash;
 
 374
 00:20:13,860 --> 00:20:19,750
@@ -1832,7 +1832,7 @@ practical because it's known.
 396
 00:21:13,336 --> 00:21:16,951
 Because we haven't defined the
-process of interactive--
+process of interactive &mdash;
 
 397
 00:21:16,951 --> 00:21:20,460
@@ -1969,7 +1969,7 @@ storytelling process.
 426
 00:22:42,240 --> 00:22:46,690
 And the other thing
-is practical--
+is practical &mdash;
 
 427
 00:22:46,690 --> 00:22:49,580
@@ -2061,7 +2061,7 @@ the one-on-one experience?
 
 446
 00:23:46,740 --> 00:23:48,890
-And then also perspective--
+And then also perspective &mdash;
 
 447
 00:23:48,890 --> 00:23:53,990
@@ -2141,7 +2141,7 @@ changes in the future?
 463
 00:24:43,668 --> 00:24:46,530
 NICOLE MCDONALD: That's
-a very good--
+a very good &mdash;
 
 464
 00:24:46,530 --> 00:24:51,370
@@ -2171,7 +2171,7 @@ of the process that is the
 469
 00:25:08,650 --> 00:25:11,280
 most challenging, because
-it's almost like--
+it's almost like &mdash;
 
 470
 00:25:11,280 --> 00:25:13,980
@@ -2180,12 +2180,12 @@ developers kind of hate me
 
 471
 00:25:13,980 --> 00:25:17,480
-sometimes-- not hate me,
+sometimes &mdash; not hate me,
 but obviously, raise
 
 472
 00:25:17,480 --> 00:25:19,560
-their fist to me--
+their fist to me &mdash;
 
 473
 00:25:19,560 --> 00:25:22,870
@@ -2214,7 +2214,7 @@ things that really excites
 478
 00:25:33,970 --> 00:25:37,510
 me with the web is, it's
-not always about--
+not always about &mdash;
 
 479
 00:25:37,510 --> 00:25:39,690
@@ -2313,7 +2313,7 @@ way out there is the
 499
 00:26:40,730 --> 00:26:44,040
 web provides a different kind
-of live, which is--
+of live, which is &mdash;
 
 500
 00:26:44,040 --> 00:26:46,580
@@ -2398,12 +2398,12 @@ these scenes to look like, how
 
 517
 00:27:42,690 --> 00:27:44,040
-did you say--
+did you say &mdash;
 
 518
 00:27:44,040 --> 00:27:46,830
 for example, the tree
-of life scene--
+of life scene &mdash;
 
 519
 00:27:46,830 --> 00:27:50,040
@@ -2450,7 +2450,7 @@ painted it, because we've got
 528
 00:28:15,490 --> 00:28:17,670
 a lot of different types of
-folks who are watching this--
+folks who are watching this &mdash;
 
 529
 00:28:17,670 --> 00:28:20,070
@@ -2568,7 +2568,7 @@ started taking each thing, and
 
 554
 00:29:38,620 --> 00:29:40,480
-turned each painting--
+turned each painting &mdash;
 
 555
 00:29:40,480 --> 00:29:43,710
@@ -2670,7 +2670,7 @@ was the one that
 
 578
 00:30:46,690 --> 00:30:48,760
-surprised me the most--
+surprised me the most &mdash;
 
 579
 00:30:48,760 --> 00:30:53,110
@@ -2750,7 +2750,7 @@ absolutely beautiful about it
 
 596
 00:31:38,770 --> 00:31:43,000
-that really said--
+that really said &mdash;
 
 597
 00:31:43,000 --> 00:31:45,420
@@ -2782,7 +2782,7 @@ a little bit sad.
 
 603
 00:31:58,140 --> 00:32:01,040
-But it's also just so--
+But it's also just so &mdash;
 
 604
 00:32:01,040 --> 00:32:06,560
@@ -3016,7 +3016,7 @@ envisioned.
 
 654
 00:34:30,090 --> 00:34:31,210
-The clown is just--
+The clown is just &mdash;
 
 655
 00:34:31,210 --> 00:34:32,765
@@ -3385,7 +3385,7 @@ little bit of an extra
 
 734
 00:38:35,460 --> 00:38:36,810
-sentence on there--
+sentence on there &mdash;
 
 735
 00:38:36,810 --> 00:38:38,590
@@ -3499,7 +3499,7 @@ what's going to have happened.
 759
 00:40:02,640 --> 00:40:06,970
 I think the two most exciting
-things-- the first is, kind of
+things &mdash; the first is, kind of
 
 760
 00:40:06,970 --> 00:40:09,610
@@ -3558,7 +3558,7 @@ possibilities in
 
 771
 00:40:45,220 --> 00:40:46,870
-that that it really--
+that that it really &mdash;
 
 772
 00:40:46,870 --> 00:40:49,130
@@ -4037,7 +4037,7 @@ Or what would you say?
 
 874
 00:46:21,880 --> 00:46:25,500
-NICOLE MCDONALD: To--
+NICOLE MCDONALD: To &mdash;
 playing with Movi?
 
 875
@@ -4099,13 +4099,13 @@ are to encourage other
 
 887
 00:47:03,580 --> 00:47:05,810
-physically creative people--
+physically creative people &mdash;
 so that would mean anyone
 
 888
 00:47:05,810 --> 00:47:08,590
 whose art form is
-their own body--
+their own body &mdash;
 
 889
 00:47:08,590 --> 00:47:13,080
@@ -4200,7 +4200,7 @@ actually happening?
 
 908
 00:48:14,230 --> 00:48:15,890
-Because--
+Because &mdash;
 
 909
 00:48:15,890 --> 00:48:17,140
@@ -4367,7 +4367,7 @@ the information.
 944
 00:49:59,190 --> 00:50:00,790
 And the other thing that
-comes to mind is just--
+comes to mind is just &mdash;
 
 945
 00:50:00,790 --> 00:50:03,570

@@ -350,7 +350,7 @@ of what you're talking about.
 
 77
 00:04:39,320 --> 00:04:40,820
-But that's--
+But that's &mdash;
 
 78
 00:04:40,820 --> 00:04:42,320
@@ -424,7 +424,7 @@ for a good tech demo.
 93
 00:05:30,070 --> 00:05:32,940
 And on the other
-hand, we're making--
+hand, we're making &mdash;
 
 94
 00:05:32,940 --> 00:05:36,030
@@ -520,7 +520,7 @@ screen of nothingness.
 
 113
 00:06:28,610 --> 00:06:33,330
-So I'm curious-- kind of,
+So I'm curious &mdash; kind of,
 what was your, sort of,
 
 114
@@ -630,7 +630,7 @@ like that you need to look at.
 136
 00:07:47,180 --> 00:07:51,840
 But, otherwise, the console
-log is-- the console output
+log is &mdash; the console output
 
 137
 00:07:51,840 --> 00:07:56,170
@@ -653,7 +653,7 @@ that, it's a Chrome extension
 
 141
 00:08:05,530 --> 00:08:09,100
-by one of the Chrome engineers--
+by one of the Chrome engineers &mdash;
 sorry not Chrome engineers,
 
 142
@@ -960,7 +960,7 @@ on mobile devices,
 206
 00:11:21,610 --> 00:11:23,864
 in particular, where
-you'd be a bit concerned--
+you'd be a bit concerned &mdash;
 
 207
 00:11:23,864 --> 00:11:26,030
@@ -1012,7 +1012,7 @@ possibly could to that?
 217
 00:11:48,540 --> 00:11:51,610
 EINAR OBERG: We thought
-that-- we didn't really
+that &mdash; we didn't really
 
 218
 00:11:51,610 --> 00:11:57,920
@@ -1111,7 +1111,7 @@ tricks that needed.
 
 238
 00:12:57,160 --> 00:12:58,542
-PAUL LEWIS: So did you--
+PAUL LEWIS: So did you &mdash;
 
 239
 00:12:58,542 --> 00:12:59,500
@@ -1317,7 +1317,7 @@ Like an app that isn't glitchy.
 282
 00:15:08,240 --> 00:15:13,530
 That really went that
-extra mile to try to--
+extra mile to try to &mdash;
 
 283
 00:15:13,530 --> 00:15:19,440
@@ -1351,7 +1351,7 @@ experience as possible.
 
 289
 00:15:41,530 --> 00:15:42,832
-So I'm very--
+So I'm very &mdash;
 
 290
 00:15:42,832 --> 00:15:44,790
@@ -1365,7 +1365,7 @@ load and load and load.
 
 292
 00:15:46,770 --> 00:15:50,230
-So we had-- it's, of course,
+So we had &mdash; it's, of course,
 many loaders in this site
 
 293
@@ -1396,12 +1396,12 @@ waiting for a long time.
 298
 00:16:09,710 --> 00:16:12,290
 PAUL LEWIS: It
-does, to me-- I know
+does, to me &mdash; I know
 
 299
 00:16:12,290 --> 00:16:16,750
 North Kingdom has a very rich
-history in Flash-- it actually
+history in Flash &mdash; it actually
 
 300
 00:16:16,750 --> 00:16:19,100
@@ -1778,7 +1778,7 @@ OK.
 
 379
 00:20:18,410 --> 00:20:21,790
-So something like this is--
+So something like this is &mdash;
 an experience like A Journey
 
 380

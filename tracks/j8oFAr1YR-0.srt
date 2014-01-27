@@ -125,7 +125,7 @@ However, you know, that's never enough. And
 
 26
 00:02:27,469 --> 00:02:32,049
-we want -- we've been worrying about the platform
+we want  &mdash; we've been worrying about the platform
 itself and how to keep pushing that forward.
 
 27
@@ -366,7 +366,7 @@ out of the way you can see that I have my
 74
 00:06:23,319 --> 00:06:30,180
 top level window. It has, you know, minimal
--- no tab strip, no Omnibox, and there's a
+ &mdash; no tab strip, no Omnibox, and there's a
 
 75
 00:06:30,180 --> 00:06:36,270
@@ -400,7 +400,7 @@ So you already saw that it has a native level
 
 81
 00:07:01,919 --> 00:07:08,330
--- top level window frame. There's no browser
+ &mdash; top level window frame. There's no browser
 Chrome, there's no tabs, no address bar, no
 
 82
@@ -410,7 +410,7 @@ over the look and feel of that frame.
 
 83
 00:07:16,860 --> 00:07:19,849
-Next you have -- you can actually manage multi-window
+Next you have  &mdash; you can actually manage multi-window
 applications.
 
 84
@@ -561,7 +561,7 @@ computer. So all the code and logic is always
 113
 00:09:48,380 --> 00:09:54,050
 there ready to go.
-We take some extra steps and -- to make sure
+We take some extra steps and  &mdash; to make sure
 
 114
 00:09:54,050 --> 00:09:59,839
@@ -571,7 +571,7 @@ data and user interface.
 115
 00:09:59,839 --> 00:10:05,180
 By being packaged, by making sure that all
-the code and logic are always being -- are
+the code and logic are always being  &mdash; are
 
 116
 00:10:05,180 --> 00:10:09,579
@@ -586,7 +586,7 @@ to you to download your data, store it locally,
 118
 00:10:15,199 --> 00:10:21,779
 render your UI appropriately.
-We further enforce this with -- support this
+We further enforce this with  &mdash; support this
 
 119
 00:10:21,779 --> 00:10:28,779
@@ -735,13 +735,13 @@ So let me pick a couple of files. And as you
 
 148
 00:12:58,110 --> 00:13:00,190
-can see -- I lost focus.
+can see  &mdash; I lost focus.
 As you can see, the application still works.
 
 149
 00:13:00,190 --> 00:13:03,959
 If I manage to find the ethernet cable and
-plug it back in --
+plug it back in  &mdash;
 
 150
 00:13:03,959 --> 00:13:10,959
@@ -755,7 +755,7 @@ build of Chrome OS. So we're taunting the
 
 152
 00:13:21,699 --> 00:13:24,959
-demo gods --
+demo gods  &mdash;
 >>Mihai Parparita: Fine in this case. We are
 
 153
@@ -770,7 +770,7 @@ ones that live on a server. So I think I have
 
 155
 00:13:41,250 --> 00:13:48,250
-some cuts. And as you can see --
+some cuts. And as you can see  &mdash;
 >>Erik Kay: This is really a tortured case
 
 156
@@ -810,7 +810,7 @@ where all these apps can be launched offline.
 
 163
 00:14:30,230 --> 00:14:34,490
-Now, this is one of the more -- the area that
+Now, this is one of the more  &mdash; the area that
 I think most of you are going to dive into
 
 164
@@ -845,7 +845,7 @@ Next we've got shared data APIs, and shared
 
 170
 00:15:06,500 --> 00:15:12,250
-data APIs are -- provide ways of interoperating
+data APIs are  &mdash; provide ways of interoperating
 with other applications on your system. Things
 
 171
@@ -860,7 +860,7 @@ And finally then a group of service APIs.
 
 173
 00:15:22,579 --> 00:15:29,189
-The service APIs are your -- the Web services
+The service APIs are your  &mdash; the Web services
 that you all know and love, but built into
 
 174
@@ -895,7 +895,7 @@ Mike made. It has an arduino board on the
 
 180
 00:16:00,990 --> 00:16:06,350
-back. It has -- it talks to the Chromebook
+back. It has  &mdash; it talks to the Chromebook
 via a serial port, a serial-over-bluetooth
 
 181
@@ -940,7 +940,7 @@ this code is just JavaScript and HTML, right?
 
 189
 00:16:48,100 --> 00:16:55,100
-It is -- no special, no device drivers, no,
+It is  &mdash; no special, no device drivers, no,
 like, native code that needed to be there.
 
 190
@@ -985,7 +985,7 @@ page launches and it triggers an event, and
 
 198
 00:17:39,660 --> 00:17:42,750
-that's what -- then it's up to you to decide
+that's what  &mdash; then it's up to you to decide
 what to do.
 
 199
@@ -1061,12 +1061,12 @@ talk about in a little bit, but it also is
 213
 00:18:55,110 --> 00:19:02,110
 one of the keys for showing off the new app
-behavior. It also has a -- the basics that
+behavior. It also has a  &mdash; the basics that
 
 214
 00:19:03,220 --> 00:19:10,220
 you're used to, a name, a version, and another
-field that is -- you've seen before, the app
+field that is  &mdash; you've seen before, the app
 
 215
 00:19:13,080 --> 00:19:17,530
@@ -1195,12 +1195,12 @@ up getting users trapped and stuck, we don't
 
 240
 00:21:34,000 --> 00:21:41,000
--- we want to get rid of that flash of white
+ &mdash; we want to get rid of that flash of white
 repaint. And we've also actually removed a
 
 241
 00:21:41,170 --> 00:21:46,600
-few Web features, things that are -- that
+few Web features, things that are  &mdash; that
 we think lead overall to bad Web performance
 
 242
@@ -1320,8 +1320,8 @@ page. Now, in a Web page, this is bad enough,
 
 265
 00:23:53,040 --> 00:23:56,540
-because it means like -- in something like
-Gmail, it could -- you know, an attacker could
+because it means like  &mdash; in something like
+Gmail, it could  &mdash; you know, an attacker could
 
 266
 00:23:56,540 --> 00:24:00,740
@@ -1360,7 +1360,7 @@ it actually do something besides play Hello
 
 273
 00:24:31,450 --> 00:24:38,450
-World. I'm going to have it -- have a little
+World. I'm going to have it  &mdash; have a little
 form that asks users for their name and then
 
 274
@@ -1371,7 +1371,7 @@ markup side, and then on the scripting side,
 275
 00:24:47,080 --> 00:24:54,080
 I have sort of the obvious implementation
-I just described where I -- where I get the
+I just described where I  &mdash; where I get the
 
 276
 00:24:58,950 --> 00:25:02,050
@@ -1390,7 +1390,7 @@ feature of the web to use. Basically is taking
 
 279
 00:25:12,230 --> 00:25:17,760
--- he's taking unescaped content and just
+ &mdash; he's taking unescaped content and just
 injecting it as code straight into his page.
 
 280
@@ -1411,7 +1411,7 @@ markup gets interpreted, H1s aren't so bad,
 283
 00:25:37,610 --> 00:25:43,380
 well, what if I had an unclick handler here
-that --
+that  &mdash;
 
 284
 00:25:43,380 --> 00:25:47,120
@@ -1476,7 +1476,7 @@ you have a bug that might enable somebody
 296
 00:26:52,330 --> 00:26:57,480
 to inject inline script into your page, it
-can't -- it can't exploit anything in your
+can't  &mdash; it can't exploit anything in your
 
 297
 00:26:57,480 --> 00:27:03,240
@@ -1521,7 +1521,7 @@ affect cookies in your app and vice versa.
 305
 00:27:43,020 --> 00:27:47,690
 And this is true not only for the origin,
-but if your app is doing -- interacting with
+but if your app is doing  &mdash; interacting with
 
 306
 00:27:47,690 --> 00:27:53,490
@@ -1561,7 +1561,7 @@ into arbitrary locations, so they can't leave
 313
 00:28:22,220 --> 00:28:27,540
 an executable on your hard drive and they
-can't, you know -- they can't just read your
+can't, you know  &mdash; they can't just read your
 
 314
 00:28:27,540 --> 00:28:32,430
@@ -1660,7 +1660,7 @@ got a little more time, so why don't we dive
 
 333
 00:30:22,570 --> 00:30:26,550
-back into the -- that serial port demo and
+back into the  &mdash; that serial port demo and
 show what it's like to actually use some of
 
 334
@@ -1705,7 +1705,7 @@ the logo on the screen, so let's pull up the
 
 342
 00:31:13,990 --> 00:31:20,990
-code for this. So it's in --
+code for this. So it's in  &mdash;
 >>Erik Kay: Right, so the existing code was
 
 343
@@ -1755,13 +1755,13 @@ We have the connection ID that we get from
 
 352
 00:32:14,790 --> 00:32:21,500
-the API callback. This is -- all these functions
+the API callback. This is  &mdash; all these functions
 are async and we can start setting the position.
 
 353
 00:32:21,500 --> 00:32:26,670
 To actually set the position, we just send
-a single byte as -- actually as an ASCII character
+a single byte as  &mdash; actually as an ASCII character
 
 354
 00:32:26,670 --> 00:32:32,130
@@ -1781,7 +1781,7 @@ from the board. So given that there's a write
 357
 00:32:43,570 --> 00:32:49,040
 API call here, because you can imagine there's
-also a read API call we can use --
+also a read API call we can use  &mdash;
 
 358
 00:32:49,040 --> 00:32:54,690
@@ -1825,7 +1825,7 @@ going to save it in the same place.
 
 366
 00:33:31,790 --> 00:33:36,890
->>Erik Kay: And that -- by the way, that programming
+>>Erik Kay: And that  &mdash; by the way, that programming
 model did show some of the flexibility and
 
 367
@@ -1920,7 +1920,7 @@ by default, to have access to new, more powerful
 
 385
 00:35:09,329 --> 00:35:16,329
-APIs, now, we're also -- this is also available
+APIs, now, we're also  &mdash; this is also available
 for you to play with right now, basically
 
 386
@@ -1971,7 +1971,7 @@ and discovered that momentum had been building,
 395
 00:36:06,359 --> 00:36:11,230
 that people were all starting to think along
-these same lines; that building -- using Web
+these same lines; that building  &mdash; using Web
 
 396
 00:36:11,230 --> 00:36:16,660
@@ -2010,12 +2010,12 @@ the Chrome runtime exists, we think that we
 
 403
 00:36:51,619 --> 00:36:58,619
-can build -- bring apps -- bring this technology
+can build  &mdash; bring apps  &mdash; bring this technology
 along with it. Now, we only showed you this
 
 404
 00:36:59,240 --> 00:37:04,660
-very simple serial demo, and -- but there's
+very simple serial demo, and  &mdash; but there's
 a lot more that you can check out. Some of
 
 405
@@ -2041,7 +2041,7 @@ was done by the annular JST at Google, and
 409
 00:37:33,240 --> 00:37:37,039
 there's a demo that we'll call "Johnny" that
-is a --
+is a  &mdash;
 
 410
 00:37:37,039 --> 00:37:41,140
@@ -2070,7 +2070,7 @@ contribute.
 
 415
 00:38:09,460 --> 00:38:16,460
-And -- and finally, the way to learn more,
+And  &mdash; and finally, the way to learn more,
 you can read our docs up at developer.chrome.com/apps.
 
 416
@@ -2125,7 +2125,7 @@ please come to the mic. By the way, when if
 
 426
 00:39:11,500 --> 00:39:15,980
--- if we end this and you still have questions
+ &mdash; if we end this and you still have questions
 that you would rather not ask at the mic,
 
 427
@@ -2146,7 +2146,7 @@ questions.
 430
 00:39:32,200 --> 00:39:36,640
 All right?
->>> Can -- can an app launch another app?
+>>> Can  &mdash; can an app launch another app?
 
 431
 00:39:36,640 --> 00:39:43,160
@@ -2201,7 +2201,7 @@ something like that.
 441
 00:40:28,150 --> 00:40:35,150
 >>> Yeah. You mentioned early on in the presentation
-about offline usage and -- and the APIs into
+about offline usage and  &mdash; and the APIs into
 
 442
 00:40:35,499 --> 00:40:40,220
@@ -2246,7 +2246,7 @@ way that it does its thing is to ping a server
 450
 00:41:17,460 --> 00:41:24,460
 to send its data. So in that case, we're modifying
--- both the API to be loaded, you know, safely,
+ &mdash; both the API to be loaded, you know, safely,
 
 451
 00:41:25,759 --> 00:41:31,799
@@ -2266,7 +2266,7 @@ them up and report them up at a later time.
 454
 00:41:45,130 --> 00:41:52,130
 >>> So you said there's going to be a split
-between the app extensions -- I mean the app
+between the app extensions  &mdash; I mean the app
 
 455
 00:41:52,519 --> 00:41:56,059
@@ -2330,12 +2330,12 @@ only your own apps pages.
 
 467
 00:42:48,740 --> 00:42:53,740
-The docs I think should cover -- will start
+The docs I think should cover  &mdash; will start
 covering this.
 
 468
 00:42:53,740 --> 00:42:59,079
->>> You mentioned the -- the applicant launcher
+>>> You mentioned the  &mdash; the applicant launcher
 can use a browser tag to launch another website.
 
 469
@@ -2346,7 +2346,7 @@ with the app?
 470
 00:43:02,970 --> 00:43:09,480
 >>Erik Kay: Sure. The way it will interact
--- you can interact with the browser tag,
+ &mdash; you can interact with the browser tag,
 
 471
 00:43:09,480 --> 00:43:15,089
@@ -2405,7 +2405,7 @@ it.
 
 482
 00:43:58,570 --> 00:44:03,200
->>> Is there some -- I guess what kind of
+>>> Is there some  &mdash; I guess what kind of
 APIs are available for accessing the file
 
 483
@@ -2425,13 +2425,13 @@ with the file system and that text editor
 
 486
 00:44:14,769 --> 00:44:21,049
-was using -- was, you know, all JavaScript
+was using  &mdash; was, you know, all JavaScript
 and HTML as well and it was using some of
 
 487
 00:44:21,049 --> 00:44:27,079
 the file system APIs that we're working on.
-In general, we're -- we're trying to limit
+In general, we're  &mdash; we're trying to limit
 
 488
 00:44:27,079 --> 00:44:33,019
@@ -2496,7 +2496,7 @@ It's the rest of the hard drive that's off
 500
 00:45:28,839 --> 00:45:31,749
 limits, unless the user does a specific gesture
-to give -- grant it --
+to give  &mdash; grant it  &mdash;
 
 501
 00:45:31,749 --> 00:45:34,309
@@ -2515,7 +2515,7 @@ a user gesture.
 
 504
 00:45:46,109 --> 00:45:50,019
->>> So does that mean -- so on Windows or
+>>> So does that mean  &mdash; so on Windows or
 Mac system, there's a system photo directories,
 
 505
@@ -2536,7 +2536,7 @@ little more. So we will actually try to discover
 508
 00:46:02,059 --> 00:46:08,519
 the types of places that you store your photos
-and so a lot of people don't -- don't keep
+and so a lot of people don't  &mdash; don't keep
 
 509
 00:46:08,519 --> 00:46:11,869
@@ -2601,7 +2601,7 @@ and pick up from exactly where you left off
 521
 00:47:05,650 --> 00:47:10,779
 in those cases.
-You know, the example is remember -- think
+You know, the example is remember  &mdash; think
 
 522
 00:47:10,779 --> 00:47:15,960
@@ -2666,22 +2666,22 @@ up apps?
 534
 00:48:04,519 --> 00:48:10,809
 >>Erik Kay: Well, basically the whole gist
-of these -- of this notification based model
+of these  &mdash; of this notification based model
 
 535
 00:48:10,809 --> 00:48:15,099
-that we've got for -- for the app, it should
+that we've got for  &mdash; for the app, it should
 enable that sort of a thing. We don't have
 
 536
 00:48:15,099 --> 00:48:19,940
 any specific APIs to talk about on that front
-yet. But -- but absolutely, things like -- you
+yet. But  &mdash; but absolutely, things like  &mdash; you
 
 537
 00:48:19,940 --> 00:48:24,799
 can imagine things like server push, synchronization,
-that sort of thing will all be --
+that sort of thing will all be  &mdash;
 
 538
 00:48:24,799 --> 00:48:28,009
@@ -2700,12 +2700,12 @@ appeared even if it's not running.
 
 541
 00:48:41,319 --> 00:48:48,119
->>> With the serial device that you were -- that
-you were working there, can -- when can we
+>>> With the serial device that you were  &mdash; that
+you were working there, can  &mdash; when can we
 
 542
 00:48:48,119 --> 00:48:55,119
-expect to -- like support for USB devices
+expect to  &mdash; like support for USB devices
 in Chrome? And will it cover the whole range?
 
 543
@@ -2735,7 +2735,7 @@ the demos that we have if you look in our
 
 548
 00:49:23,789 --> 00:49:26,980
-repro --
+repro  &mdash;
 >>Mihai Parparita: It's a Griffin PowerMate.
 
 549

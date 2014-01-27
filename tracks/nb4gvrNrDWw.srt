@@ -535,7 +535,7 @@ what's going on.
 113
 00:04:53,250 --> 00:04:55,960
 The first thing we notice is
-this JavaScript error-- cannot
+this JavaScript error &mdash; cannot
 
 114
 00:04:55,960 --> 00:04:58,125

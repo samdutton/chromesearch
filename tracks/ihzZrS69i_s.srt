@@ -41,7 +41,7 @@ to talk about animation?
 10
 00:00:24,790 --> 00:00:26,140
 So one of the questions
-that people--
+that people &mdash;
 
 11
 00:00:26,140 --> 00:00:26,780
@@ -55,7 +55,7 @@ up about animations.
 13
 00:00:29,250 --> 00:00:30,480
 CHET HAASE: I'm going to talk
-about them because I--
+about them because I &mdash;
 
 14
 00:00:30,480 --> 00:00:30,930
@@ -96,7 +96,7 @@ about them.
 22
 00:00:40,160 --> 00:00:41,370
 You are going to listen
-to them--
+to them &mdash;
 
 23
 00:00:41,370 --> 00:00:42,880
@@ -700,13 +700,13 @@ testing animation durations.
 
 149
 00:05:35,550 --> 00:05:37,720
-Another important principle--
+Another important principle &mdash;
 we'll try to bring up a lot of
 
 150
 00:05:37,720 --> 00:05:41,630
 classical science lessons
-for you in this talk--
+for you in this talk &mdash;
 
 151
 00:05:41,630 --> 00:05:45,000
@@ -829,12 +829,12 @@ it because it's bad.
 
 176
 00:06:34,460 --> 00:06:36,080
-ROMAIN GUY: So performance--
+ROMAIN GUY: So performance &mdash;
 
 177
 00:06:36,080 --> 00:06:38,680
 we've talked about performance
-in many other talks before--
+in many other talks before &mdash;
 
 178
 00:06:38,680 --> 00:06:41,920
@@ -985,7 +985,7 @@ ROMAIN GUY: Yeah.
 210
 00:07:48,970 --> 00:07:52,090
 On Linux Desktops, there was
-something called Compiz or--
+something called Compiz or &mdash;
 
 211
 00:07:52,090 --> 00:07:53,930
@@ -1056,7 +1056,7 @@ fun the first
 
 226
 00:08:17,180 --> 00:08:18,260
-time and after that--
+time and after that &mdash;
 
 227
 00:08:18,260 --> 00:08:20,005
@@ -1234,7 +1234,7 @@ understand how to do this.
 264
 00:09:38,550 --> 00:09:39,950
 So the interesting
-part might be--
+part might be &mdash;
 
 265
 00:09:39,950 --> 00:09:42,520
@@ -1815,11 +1815,11 @@ Standard ListView stuff.
 389
 00:13:52,950 --> 00:13:55,690
 What we want to do before
-that layout happens--
+that layout happens &mdash;
 
 390
 00:13:55,690 --> 00:13:56,680
-this is synchronous--
+this is synchronous &mdash;
 
 391
 00:13:56,680 --> 00:13:59,600
@@ -2312,7 +2312,7 @@ with window animations.
 
 497
 00:17:42,940 --> 00:17:44,880
-So the recommendation is--
+So the recommendation is &mdash;
 
 498
 00:17:44,880 --> 00:17:45,700
@@ -2325,12 +2325,12 @@ So this is an animation.
 
 500
 00:17:46,790 --> 00:17:48,070
-And actually, Hugo Barra--
+And actually, Hugo Barra &mdash;
 
 501
 00:17:48,070 --> 00:17:50,210
 who you've seen at the keynote,
-sitting right here--
+sitting right here &mdash;
 
 502
 00:17:50,210 --> 00:17:51,830
@@ -2728,11 +2728,11 @@ So we set the viewTreeObserver.
 
 587
 00:20:53,010 --> 00:20:54,730
-And the viewTreeObserver--
+And the viewTreeObserver &mdash;
 
 588
 00:20:54,730 --> 00:20:55,320
-sorry--
+sorry &mdash;
 
 589
 00:20:55,320 --> 00:20:56,740
@@ -3178,12 +3178,12 @@ to determine two things
 682
 00:24:33,960 --> 00:24:35,760
 about the shadow,
-the opacity--
+the opacity &mdash;
 
 683
 00:24:35,760 --> 00:24:37,650
 so we're going to be
-animating alpha--
+animating alpha &mdash;
 
 684
 00:24:37,650 --> 00:24:38,860
@@ -3238,7 +3238,7 @@ interested in how to create a
 695
 00:24:58,420 --> 00:25:00,810
 blurry shadow without
-using a 9-patch--
+using a 9-patch &mdash;
 
 696
 00:25:00,810 --> 00:25:01,970
@@ -3922,7 +3922,7 @@ action that is about to occur.
 841
 00:30:47,040 --> 00:30:48,720
 So if we switch over
-to the demo--
+to the demo &mdash;
 
 842
 00:30:48,720 --> 00:30:54,540
@@ -4111,7 +4111,7 @@ override draw for the button,
 883
 00:32:20,290 --> 00:32:22,840
 because that's where some of the
-stuff happens that you--
+stuff happens that you &mdash;
 
 884
 00:32:22,840 --> 00:32:24,000
@@ -4169,7 +4169,7 @@ super.draw method.
 896
 00:32:41,150 --> 00:32:44,722
 Then, when we run the
-click animation--
+click animation &mdash;
 
 897
 00:32:44,722 --> 00:32:45,070
@@ -5167,7 +5167,7 @@ And we're out of time.
 1110
 00:40:45,820 --> 00:40:48,490
 So if you have questions for us,
-we'll be at the Sandbox--
+we'll be at the Sandbox &mdash;
 
 1111
 00:40:48,490 --> 00:40:49,750

@@ -465,7 +465,7 @@ expression on this graph.
 101
 00:04:40,540 --> 00:04:43,340
 And then x squared
-plus y squared--
+plus y squared &mdash;
 
 102
 00:04:43,340 --> 00:04:46,070
@@ -964,7 +964,7 @@ Google Drive.
 207
 00:09:44,410 --> 00:09:49,760
 And if developers want
-to integrate with--
+to integrate with &mdash;
 
 208
 00:09:49,760 --> 00:09:52,770
@@ -1015,7 +1015,7 @@ SDK documentation at
 218
 00:10:17,000 --> 00:10:23,300
 developers.Google.com/drive
-somewhere here, I think it's--
+somewhere here, I think it's &mdash;
 
 219
 00:10:23,300 --> 00:10:24,322
@@ -1051,7 +1051,7 @@ this a little bit.
 
 227
 00:10:36,690 --> 00:10:38,160
-So if we open files--
+So if we open files &mdash;
 
 228
 00:10:38,160 --> 00:10:40,710

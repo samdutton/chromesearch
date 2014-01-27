@@ -207,12 +207,12 @@ real world, and we'll show
 
 44
 00:02:40,330 --> 00:02:44,080
-together how we could run it--
+together how we could run it &mdash;
 the same code, basically, the
 
 45
 00:02:44,080 --> 00:02:45,270
-same JavaScript code--
+same JavaScript code &mdash;
 
 46
 00:02:45,270 --> 00:02:49,640
@@ -373,7 +373,7 @@ let's define the problem.
 
 79
 00:04:25,370 --> 00:04:29,980
-So in our world-- let me just
+So in our world &mdash; let me just
 open it so it will be a bit
 
 80
@@ -465,7 +465,7 @@ amount of small deals.
 98
 00:05:24,120 --> 00:05:25,610
 In our case, it's the
-same amount--
+same amount &mdash;
 
 99
 00:05:25,610 --> 00:05:26,750
@@ -714,7 +714,7 @@ code is doing.
 
 152
 00:08:07,580 --> 00:08:08,990
-Here you could see this--
+Here you could see this &mdash;
 
 153
 00:08:08,990 --> 00:08:11,150
@@ -849,11 +849,11 @@ basically, it's very simple.
 180
 00:09:28,390 --> 00:09:32,480
 We're just taking the random
-function-- it will be a number
+function &mdash; it will be a number
 
 181
 00:09:32,480 --> 00:09:34,230
-between 0 and 1--
+between 0 and 1 &mdash;
 
 182
 00:09:34,230 --> 00:09:36,660
@@ -951,8 +951,8 @@ ability of, hey, a bigger
 
 202
 00:10:29,900 --> 00:10:32,700
-deal is twice as hard-- that's
-why it's 2 here-- than a
+deal is twice as hard &mdash; that's
+why it's 2 here &mdash; than a
 
 203
 00:10:32,700 --> 00:10:33,830
@@ -994,12 +994,12 @@ going on here.
 211
 00:10:55,410 --> 00:10:57,840
 So you saw that with the
-current parameters--
+current parameters &mdash;
 
 212
 00:10:57,840 --> 00:11:00,010
 and let's have a look
-at them again--
+at them again &mdash;
 
 213
 00:11:00,010 --> 00:11:05,500
@@ -1096,7 +1096,7 @@ results, and you could see
 232
 00:12:09,050 --> 00:12:12,190
 here that the median
-is higher--
+is higher &mdash;
 
 233
 00:12:12,190 --> 00:12:13,170
@@ -1381,7 +1381,7 @@ the aspects that we talked
 293
 00:15:36,530 --> 00:15:39,960
 about, very similar
-to what we saw--
+to what we saw &mdash;
 
 294
 00:15:39,960 --> 00:15:44,510
@@ -1447,7 +1447,7 @@ straightforward and easy.
 307
 00:16:21,750 --> 00:16:27,163
 Now when we'll come here
-to our Compute Engine--
+to our Compute Engine &mdash;
 
 308
 00:16:27,163 --> 00:16:30,390
@@ -1486,11 +1486,11 @@ recommendation that we could
 315
 00:16:59,270 --> 00:17:04,130
 make in this case with
-these assumptions--
+these assumptions &mdash;
 
 316
 00:17:04,130 --> 00:17:05,530
-these are the ones--
+these are the ones &mdash;
 
 317
 00:17:05,530 --> 00:17:08,260

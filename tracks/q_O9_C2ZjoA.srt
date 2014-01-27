@@ -87,7 +87,7 @@ important part.
 20
 00:00:46,680 --> 00:00:49,960
 And the render tree
-is made from--
+is made from &mdash;
 
 21
 00:00:49,960 --> 00:00:51,530
@@ -151,7 +151,7 @@ DOM tree and the render tree
 
 34
 00:01:17,010 --> 00:01:20,370
-is that the render tree--
+is that the render tree &mdash;
 
 35
 00:01:20,370 --> 00:01:23,190
@@ -261,7 +261,7 @@ me show you this.
 
 58
 00:02:23,810 --> 00:02:25,195
-This right here--
+This right here &mdash;
 
 59
 00:02:25,195 --> 00:02:26,760
@@ -315,7 +315,7 @@ one part in here.
 
 70
 00:02:54,390 --> 00:02:57,320
-It's right about here--
+It's right about here &mdash;
 
 71
 00:02:57,320 --> 00:02:58,410
@@ -423,12 +423,12 @@ Google Code Search and looked
 93
 00:04:02,320 --> 00:04:06,780
 for Update Layout, Ignore
-Pending Style Sheets--
+Pending Style Sheets &mdash;
 
 94
 00:04:06,780 --> 00:04:12,800
 and this is essentially what
-does a reflow in WebKit--
+does a reflow in WebKit &mdash;
 
 95
 00:04:12,800 --> 00:04:17,800
@@ -813,7 +813,7 @@ can clone the existing
 178
 00:08:00,520 --> 00:08:06,490
 element, work off DOM with
-that element, and then--
+that element, and then &mdash;
 
 179
 00:08:06,490 --> 00:08:09,130
@@ -1311,7 +1311,7 @@ it's completely smooth.
 286
 00:13:06,750 --> 00:13:09,070
 And all I've done is
-said the image--
+said the image &mdash;
 
 287
 00:13:09,070 --> 00:13:12,000
@@ -1484,7 +1484,7 @@ So I'm just going to click.
 
 324
 00:14:52,455 --> 00:14:53,760
-And you'll see-- yeah.
+And you'll see &mdash; yeah.
 
 325
 00:14:53,760 --> 00:14:58,275
@@ -1496,12 +1496,12 @@ we actually use that
 
 327
 00:15:02,320 --> 00:15:04,210
-translateZ(0)--
+translateZ(0) &mdash;
 
 328
 00:15:04,210 --> 00:15:07,400
 we call it the silver
-bullet here--
+bullet here &mdash;
 
 329
 00:15:07,400 --> 00:15:13,288
@@ -1642,7 +1642,7 @@ gets repainted.
 358
 00:16:38,840 --> 00:16:40,980
 Why that's interesting is
-because you want to know--
+because you want to know &mdash;
 
 359
 00:16:40,980 --> 00:16:42,790
@@ -1882,7 +1882,7 @@ up right here.
 
 409
 00:19:21,280 --> 00:19:23,610
-This is a--
+This is a &mdash;
 
 410
 00:19:23,610 --> 00:19:24,860
@@ -2066,7 +2066,7 @@ Cool.
 
 451
 00:21:23,380 --> 00:21:26,360
-Web Workers, the idea here--
+Web Workers, the idea here &mdash;
 
 452
 00:21:26,360 --> 00:21:28,090
@@ -2199,7 +2199,7 @@ worker on the fly, basically.
 
 481
 00:22:34,300 --> 00:22:36,550
-So here we have-- oops--
+So here we have &mdash; oops &mdash;
 
 482
 00:22:36,550 --> 00:22:39,210

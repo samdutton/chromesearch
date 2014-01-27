@@ -18,7 +18,7 @@ in the next 40 minutes.
 
 5
 00:00:06,780 --> 00:00:08,565
-Thank you to everyone--
+Thank you to everyone &mdash;
 
 6
 00:00:08,565 --> 00:00:09,325
@@ -199,7 +199,7 @@ alive and well.
 44
 00:01:30,750 --> 00:01:34,450
 We can call it x-blink, and
-all it is-- it's a custom
+all it is &mdash; it's a custom
 
 45
 00:01:34,450 --> 00:01:36,760
@@ -245,7 +245,7 @@ all I have to do is
 54
 00:01:56,860 --> 00:02:00,380
 include the gangnam-style tag
-on my page, and I get--
+on my page, and I get &mdash;
 
 55
 00:02:00,380 --> 00:02:03,790
@@ -289,7 +289,7 @@ on a CSS transition, have
 63
 00:02:21,730 --> 00:02:24,472
 this crazy gradient, and then
-when you click it--
+when you click it &mdash;
 
 64
 00:02:24,472 --> 00:02:26,240
@@ -302,7 +302,7 @@ ERIC BIDELMAN: It moos at you.
 66
 00:02:27,840 --> 00:02:31,260
 So defining your own,
-extending-- you'll see some
+extending &mdash; you'll see some
 
 67
 00:02:31,260 --> 00:02:35,960
@@ -317,7 +317,7 @@ what we have in HTML.
 69
 00:02:39,670 --> 00:02:42,110
 So when I think of
-Web Components--
+Web Components &mdash;
 
 70
 00:02:42,110 --> 00:02:44,770
@@ -326,7 +326,7 @@ this umbrella
 
 71
 00:02:44,770 --> 00:02:46,310
-terminology for new stuff--
+terminology for new stuff &mdash;
 
 72
 00:02:46,310 --> 00:02:48,800
@@ -552,11 +552,11 @@ You're not loading things in.
 120
 00:04:37,480 --> 00:04:39,770
 If the user never sees this
-template-- maybe it's a view
+template &mdash; maybe it's a view
 
 121
 00:04:39,770 --> 00:04:40,760
-or something--
+or something &mdash;
 
 122
 00:04:40,760 --> 00:04:42,380
@@ -673,7 +673,7 @@ work with that.
 146
 00:05:33,330 --> 00:05:35,260
 So the process for using
-a template--
+a template &mdash;
 
 147
 00:05:35,260 --> 00:05:38,460
@@ -800,11 +800,11 @@ So if I refresh this slide deck
 
 173
 00:06:35,310 --> 00:06:37,040
-going to run this alert--
+going to run this alert &mdash;
 
 174
 00:06:37,040 --> 00:06:38,160
-OK, thanks, bye--
+OK, thanks, bye &mdash;
 
 175
 00:06:38,160 --> 00:06:40,630
@@ -945,7 +945,7 @@ the license plate SHDWDOM.
 205
 00:07:39,350 --> 00:07:41,620
 But what Shadow DOM
-really is--
+really is &mdash;
 
 206
 00:07:41,620 --> 00:07:44,240
@@ -1003,7 +1003,7 @@ HTML elements.
 
 217
 00:08:07,716 --> 00:08:10,350
-And so I mean by that--
+And so I mean by that &mdash;
 
 218
 00:08:10,350 --> 00:08:12,820
@@ -1157,7 +1157,7 @@ widget, and there's this
 
 250
 00:09:23,640 --> 00:09:26,300
-boom-- there's this calendar
+boom &mdash; there's this calendar
 picker under the hood.
 
 251
@@ -1173,7 +1173,7 @@ goodness for free.
 253
 00:09:34,190 --> 00:09:36,630
 So if I actually drill
-into this--
+into this &mdash;
 
 254
 00:09:36,630 --> 00:09:37,920
@@ -1223,7 +1223,7 @@ see that here.
 
 264
 00:10:03,700 --> 00:10:04,810
-And so the input--
+And so the input &mdash;
 
 265
 00:10:04,810 --> 00:10:06,570
@@ -1256,11 +1256,11 @@ So they've used what we as web
 
 271
 00:10:18,780 --> 00:10:20,410
-developers have in our toolbelt--
+developers have in our toolbelt &mdash;
 
 272
 00:10:20,410 --> 00:10:23,490
-markup-- they've implemented
+markup &mdash; they've implemented
 that with their native widget,
 
 273
@@ -1336,7 +1336,7 @@ Shadow DOM.
 289
 00:10:52,640 --> 00:10:55,450
 I have my markup on the left
-here-- my host element that
+here &mdash; my host element that
 
 290
 00:10:55,450 --> 00:10:58,130
@@ -1391,7 +1391,7 @@ is the Shadow DOM content.
 300
 00:11:22,860 --> 00:11:24,840
 It's not this stuff up
-here-- and we'll talk
+here &mdash; and we'll talk
 
 301
 00:11:24,840 --> 00:11:26,120
@@ -1602,7 +1602,7 @@ just says, at
 
 346
 00:12:58,040 --> 00:12:59,510
-that Shadow DOM boundary--
+that Shadow DOM boundary &mdash;
 
 347
 00:12:59,510 --> 00:13:02,050
@@ -1611,7 +1611,7 @@ that when your
 
 348
 00:13:02,050 --> 00:13:03,390
-content turns rendering--
+content turns rendering &mdash;
 
 349
 00:13:03,390 --> 00:13:07,360
@@ -1726,7 +1726,7 @@ somebody hovers over you.
 373
 00:14:01,200 --> 00:14:05,260
 So styling the host element or
-the component you're styling--
+the component you're styling &mdash;
 
 374
 00:14:05,260 --> 00:14:06,540
@@ -1782,7 +1782,7 @@ powerful, because they allow
 
 385
 00:14:28,170 --> 00:14:29,850
-you to sort of define--
+you to sort of define &mdash;
 
 386
 00:14:29,850 --> 00:14:32,060
@@ -2255,7 +2255,7 @@ this dash in it.
 485
 00:18:17,060 --> 00:18:20,150
 Similar to regular DOM
-elements-- the audio tag is a
+elements &mdash; the audio tag is a
 
 486
 00:18:20,150 --> 00:18:20,620
@@ -2330,7 +2330,7 @@ anything special.
 
 501
 00:18:52,890 --> 00:18:53,970
-But what you can do--
+But what you can do &mdash;
 
 502
 00:18:53,970 --> 00:18:57,420
@@ -2349,7 +2349,7 @@ unstyled content.
 505
 00:19:01,320 --> 00:19:03,870
 So if I want to, before the
-browser knows about-- so I
+browser knows about &mdash; so I
 
 506
 00:19:03,870 --> 00:19:06,780
@@ -2359,7 +2359,7 @@ and I'm importing those
 507
 00:19:06,780 --> 00:19:10,680
 later, maybe, I can choose to
-style any unresolved element--
+style any unresolved element &mdash;
 
 508
 00:19:10,680 --> 00:19:12,870
@@ -2546,7 +2546,7 @@ API on your element.
 546
 00:20:49,510 --> 00:20:53,250
 So in this case, if somebody
-called x-foo--
+called x-foo &mdash;
 
 547
 00:20:53,250 --> 00:20:56,420
@@ -2660,7 +2660,7 @@ new operator.
 571
 00:21:47,760 --> 00:21:53,090
 So three standard ways you use
-an element in HTML-- no
+an element in HTML &mdash; no
 
 572
 00:21:53,090 --> 00:21:57,090
@@ -2685,7 +2685,7 @@ using document.register.
 576
 00:22:05,850 --> 00:22:09,030
 So in this example, same element
-as I had before-- so
+as I had before &mdash; so
 
 577
 00:22:09,030 --> 00:22:10,030
@@ -2755,7 +2755,7 @@ just alerts itself.
 
 591
 00:22:42,780 --> 00:22:44,650
-And the last thing here-- to
+And the last thing here &mdash; to
 actually get this thing
 
 592
@@ -2903,8 +2903,8 @@ overloaded version of create
 
 623
 00:24:02,030 --> 00:24:04,060
-element--
-document.createElement--
+element &mdash;
+document.createElement &mdash;
 
 624
 00:24:04,060 --> 00:24:06,630
@@ -3358,7 +3358,7 @@ inside of our application.
 720
 00:27:50,170 --> 00:27:53,140
 All we have to do is declare a
-link rel-- so there's a new
+link rel &mdash; so there's a new
 
 721
 00:27:53,140 --> 00:27:54,610
@@ -3521,7 +3521,7 @@ styles in DOM.
 
 755
 00:29:15,290 --> 00:29:16,720
-Custom elements--
+Custom elements &mdash;
 
 756
 00:29:16,720 --> 00:29:19,180

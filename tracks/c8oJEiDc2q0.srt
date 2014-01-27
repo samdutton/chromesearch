@@ -400,7 +400,7 @@ what are you doing there?
 88
 00:05:35,260 --> 00:05:37,550
 Why are you trying to figure
-out which one's the fast--
+out which one's the fast &mdash;
 
 89
 00:05:37,550 --> 00:05:39,670
@@ -761,12 +761,12 @@ what each phone is and where
 165
 00:08:31,860 --> 00:08:33,520
 it needs to sit in
-the lineup--
+the lineup &mdash;
 
 166
 00:08:33,520 --> 00:08:36,490
 and by line up I mean
-when players join--
+when players join &mdash;
 
 167
 00:08:36,490 --> 00:08:38,190
@@ -907,12 +907,12 @@ Paper.js to render the track.
 196
 00:09:34,950 --> 00:09:38,540
 So I'm kind of curious why you
-didn't just use the track--
+didn't just use the track &mdash;
 
 197
 00:09:38,540 --> 00:09:40,840
 and you rendered the
-track with Canvas--
+track with Canvas &mdash;
 
 198
 00:09:40,840 --> 00:09:44,860
@@ -1114,7 +1114,7 @@ really useful for, so
 240
 00:11:12,610 --> 00:11:14,660
 basically we had to make
-the tracks fit across--
+the tracks fit across &mdash;
 
 241
 00:11:14,660 --> 00:11:18,380
@@ -1124,7 +1124,7 @@ if you had an iPad and a Nexus
 242
 00:11:18,380 --> 00:11:21,386
 to the mix, the width and height
-of the screen-- we can
+of the screen &mdash; we can
 
 243
 00:11:21,386 --> 00:11:23,650
@@ -1304,7 +1304,7 @@ to the main UI.
 
 281
 00:12:55,750 --> 00:12:56,920
-So while JavaScript--
+So while JavaScript &mdash;
 
 282
 00:12:56,920 --> 00:13:01,980
@@ -1480,7 +1480,7 @@ calculation-type animation
 318
 00:14:29,340 --> 00:14:34,230
 where your using Canvas
-or even some sort of--
+or even some sort of &mdash;
 
 319
 00:14:34,230 --> 00:14:35,050
@@ -1661,12 +1661,12 @@ is basically when
 
 358
 00:16:00,010 --> 00:16:01,320
-you press the throttle--
+you press the throttle &mdash;
 
 359
 00:16:01,320 --> 00:16:03,270
 and that's another event
-that gets sent--
+that gets sent &mdash;
 
 360
 00:16:03,270 --> 00:16:05,540
@@ -1921,7 +1921,7 @@ PETE LEPAGE: OK.
 414
 00:18:04,260 --> 00:18:06,500
 MICHAEL ANTHONY: And the
-object contains--
+object contains &mdash;
 
 415
 00:18:06,500 --> 00:18:09,220
@@ -2021,7 +2021,7 @@ you're storing in there?
 435
 00:18:59,130 --> 00:19:01,910
 MICHAEL ANTHONY: I
-think there's--
+think there's &mdash;
 
 436
 00:19:01,910 --> 00:19:03,065
@@ -2110,7 +2110,7 @@ on or off.
 
 454
 00:19:38,790 --> 00:19:42,550
-And each device then keeps--
+And each device then keeps &mdash;
 
 455
 00:19:42,550 --> 00:19:45,116
@@ -2331,7 +2331,7 @@ Cool.
 
 503
 00:21:28,760 --> 00:21:30,470
-So as you guys were--
+So as you guys were &mdash;
 
 504
 00:21:30,470 --> 00:21:32,610
@@ -2550,7 +2550,7 @@ night before kind of figure
 
 549
 00:23:30,155 --> 00:23:30,970
-out-- and that's when
+out &mdash; and that's when
 we figured out the
 
 550
@@ -2569,7 +2569,7 @@ OK, now it looks kind of
 553
 00:23:35,370 --> 00:23:38,693
 choppy because the video
-out-- and so we had to
+out &mdash; and so we had to
 
 554
 00:23:38,693 --> 00:23:40,550
@@ -2582,7 +2582,7 @@ always the fun,
 
 556
 00:23:42,375 --> 00:23:43,730
-pre-keynote kinds of things--
+pre-keynote kinds of things &mdash;
 
 557
 00:23:43,730 --> 00:23:44,670
@@ -2655,7 +2655,7 @@ all devices.
 
 572
 00:24:18,730 --> 00:24:23,050
-So there's a set of device--
+So there's a set of device &mdash;
 
 573
 00:24:23,050 --> 00:24:27,200
@@ -2906,7 +2906,7 @@ just a small bit of logic on
 626
 00:26:36,820 --> 00:26:39,410
 the server that basically
-says--
+says &mdash;
 
 627
 00:26:39,410 --> 00:26:42,350
@@ -2968,7 +2968,7 @@ In this case we had five.
 639
 00:27:06,810 --> 00:27:08,150
 But there were times
-where we did--
+where we did &mdash;
 
 640
 00:27:08,150 --> 00:27:10,300
@@ -3038,7 +3038,7 @@ a try at some point.
 654
 00:27:39,350 --> 00:27:44,420
 I'm actually working on
-a little mobile app--
+a little mobile app &mdash;
 
 655
 00:27:44,420 --> 00:27:47,810
@@ -3278,7 +3278,7 @@ discussions of that.
 
 706
 00:29:39,840 --> 00:29:41,530
-I would encourage you--
+I would encourage you &mdash;
 
 707
 00:29:41,530 --> 00:29:45,435
@@ -3393,7 +3393,7 @@ like, any secret hints.
 
 731
 00:30:43,210 --> 00:30:44,710
-Or actually--
+Or actually &mdash;
 
 732
 00:30:44,710 --> 00:30:45,670

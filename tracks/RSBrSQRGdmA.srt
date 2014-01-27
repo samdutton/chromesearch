@@ -141,7 +141,7 @@ getting started.
 32
 00:01:18,080 --> 00:01:22,780
 So four tools we're going
-to demo are--
+to demo are &mdash;
 
 33
 00:01:22,780 --> 00:01:26,470
@@ -329,12 +329,12 @@ carousel, we call it.
 70
 00:03:27,170 --> 00:03:29,880
 Somebody comes in searching
-for events in a city--
+for events in a city &mdash;
 
 71
 00:03:29,880 --> 00:03:32,410
 I believe this was launched
-US only--
+US only &mdash;
 
 72
 00:03:32,410 --> 00:03:35,970
@@ -786,11 +786,11 @@ re-previewing in the
 168
 00:07:49,490 --> 00:07:54,070
 Structured Data Testing
-tool would show that--
+tool would show that &mdash;
 
 169
 00:07:54,070 --> 00:07:58,110
-there you go-- the rich snippet
+there you go &mdash; the rich snippet
 line, which shows
 
 170
@@ -1171,7 +1171,7 @@ data to Google.
 
 250
 00:11:25,230 --> 00:11:27,100
-How do you get Google--
+How do you get Google &mdash;
 
 251
 00:11:27,100 --> 00:11:30,220
@@ -1335,7 +1335,7 @@ know where to go.
 
 285
 00:13:09,750 --> 00:13:11,030
-As an independent--
+As an independent &mdash;
 
 286
 00:13:11,030 --> 00:13:13,980
@@ -1400,12 +1400,12 @@ Google when I do that.
 299
 00:13:43,490 --> 00:13:46,830
 So what I'm going to do is I'm
-going to take my URL--
+going to take my URL &mdash;
 
 300
 00:13:46,830 --> 00:13:50,600
 a URL for one of my favorite
-products, the Hook--
+products, the Hook &mdash;
 
 301
 00:13:50,600 --> 00:13:53,400
@@ -1852,7 +1852,7 @@ snippets will start appearing.
 395
 00:17:44,680 --> 00:17:46,980
 I think talk like a
-Pirate Day is--
+Pirate Day is &mdash;
 
 396
 00:17:46,980 --> 00:17:47,330
@@ -2033,7 +2033,7 @@ the pirate and bring on the
 
 433
 00:19:37,750 --> 00:19:40,980
-web master-- the pretend
+web master &mdash; the pretend
 webmaster of the Computer
 
 434
@@ -2747,7 +2747,7 @@ the shirts, Justin?
 
 588
 00:25:54,850 --> 00:25:57,410
-JUSTIN BOYAN: Yes, without--
+JUSTIN BOYAN: Yes, without &mdash;
 
 589
 00:25:57,410 --> 00:25:58,880
@@ -3044,7 +3044,7 @@ navigation through images, is
 
 652
 00:28:41,810 --> 00:28:43,240
-that something you would--
+that something you would &mdash;
 
 653
 00:28:43,240 --> 00:28:45,340
@@ -3388,7 +3388,7 @@ generate ads based on the
 
 726
 00:32:23,770 --> 00:32:25,550
-structured data on your--
+structured data on your &mdash;
 
 727
 00:32:25,550 --> 00:32:31,740
@@ -3440,7 +3440,7 @@ them and map them?
 737
 00:32:58,250 --> 00:32:59,210
 JUSTIN BOYAN: Yeah,
-there aren't--
+there aren't &mdash;
 
 738
 00:32:59,210 --> 00:33:04,110
@@ -3488,7 +3488,7 @@ making much use of yet.
 747
 00:33:28,970 --> 00:33:32,560
 So we don't want to make people
-do a bunch of work--
+do a bunch of work &mdash;
 
 748
 00:33:32,560 --> 00:33:33,330
@@ -3805,7 +3805,7 @@ will definitely use
 
 815
 00:36:31,120 --> 00:36:33,560
-structured data in some--
+structured data in some &mdash;
 
 816
 00:36:33,560 --> 00:36:35,330
@@ -3829,7 +3829,7 @@ structured data now, or
 820
 00:36:41,980 --> 00:36:45,480
 planning to use it wherever it
-make sense-- we have enough
+make sense &mdash; we have enough
 
 821
 00:36:45,480 --> 00:36:48,480
@@ -4007,7 +4007,7 @@ I don't think so.
 
 859
 00:38:25,860 --> 00:38:27,826
-You mean, if you have--
+You mean, if you have &mdash;
 
 860
 00:38:27,826 --> 00:38:31,170
@@ -4030,7 +4030,7 @@ data already.
 
 864
 00:38:36,950 --> 00:38:39,265
-So if we already have that--
+So if we already have that &mdash;
 in fact, we're creating our
 
 865
@@ -4094,7 +4094,7 @@ out of sync.
 877
 00:39:16,370 --> 00:39:18,760
 AUDIENCE: Well, the question
-was actually--
+was actually &mdash;
 
 878
 00:39:18,760 --> 00:39:21,360

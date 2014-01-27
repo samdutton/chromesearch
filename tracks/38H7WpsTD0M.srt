@@ -696,8 +696,8 @@ information you needed to
 
 149
 00:05:51,770 --> 00:05:53,720
-collect-- say, going
-to dinner--
+collect &mdash; say, going
+to dinner &mdash;
 
 150
 00:05:53,720 --> 00:05:57,130
@@ -977,12 +977,12 @@ into a lot of
 
 208
 00:08:37,190 --> 00:08:38,650
-different Google services--
+different Google services &mdash;
 
 209
 00:08:38,650 --> 00:08:41,610
 Gmail, Calendar, Docs,
-and Drive--
+and Drive &mdash;
 
 210
 00:08:41,610 --> 00:08:44,760
@@ -1996,7 +1996,7 @@ the three basic components
 422
 00:18:07,970 --> 00:18:11,420
 here of the interaction that you
-can do with Google Forms--
+can do with Google Forms &mdash;
 
 423
 00:18:11,420 --> 00:18:14,090
@@ -2020,11 +2020,11 @@ a real, live use case.
 427
 00:18:21,620 --> 00:18:24,590
 So something that's become
-popular in college--
+popular in college &mdash;
 
 428
 00:18:24,590 --> 00:18:27,135
-a little after my time, though--
+a little after my time, though &mdash;
 is these clickers.
 
 429
@@ -2314,8 +2314,8 @@ for his quiz.
 
 489
 00:21:02,700 --> 00:21:04,780
-So now this second form-- not
-the original form-- this
+So now this second form &mdash; not
+the original form &mdash; this
 
 490
 00:21:04,780 --> 00:21:06,800
@@ -2462,7 +2462,7 @@ there is our I/O quiz.
 
 520
 00:22:10,630 --> 00:22:12,005
-And in just a moment--
+And in just a moment &mdash;
 
 521
 00:22:12,005 --> 00:22:14,550
@@ -2503,7 +2503,7 @@ really quickly, in
 
 529
 00:22:37,765 --> 00:22:38,800
-just a matter of moments--
+just a matter of moments &mdash;
 
 530
 00:22:38,800 --> 00:22:40,690
@@ -2512,7 +2512,7 @@ quiz just after
 
 531
 00:22:40,690 --> 00:22:41,860
-finishing your lecture--
+finishing your lecture &mdash;
 
 532
 00:22:41,860 --> 00:22:44,310
@@ -2781,7 +2781,7 @@ ERIC KOLEDA: Yeah.
 
 593
 00:25:05,430 --> 00:25:06,630
-I think the correct answers--
+I think the correct answers &mdash;
 
 594
 00:25:06,630 --> 00:25:07,930
@@ -3035,7 +3035,7 @@ well as the maintenance of
 
 649
 00:27:22,520 --> 00:27:23,510
-them-- moving them
+them &mdash; moving them
 into folders,
 
 650
@@ -3181,7 +3181,7 @@ response events.
 
 680
 00:28:45,680 --> 00:28:47,750
-ERIC KOLEDA: So you could use--
+ERIC KOLEDA: So you could use &mdash;
 and I think we have some
 
 681
@@ -3317,7 +3317,7 @@ I had a couple questions.
 
 709
 00:30:02,000 --> 00:30:03,220
-The email validation--
+The email validation &mdash;
 
 710
 00:30:03,220 --> 00:30:05,900
@@ -3412,7 +3412,7 @@ use Apps Script in the
 729
 00:30:51,070 --> 00:30:53,660
 intermediary processes of
-filling out a form-- so when
+filling out a form &mdash; so when
 
 730
 00:30:53,660 --> 00:30:55,600
@@ -3608,7 +3608,7 @@ So it's a pretty good API.
 771
 00:32:34,490 --> 00:32:37,170
 It doesn't require you to do
-what-- in the past, you'd have
+what &mdash; in the past, you'd have
 
 772
 00:32:37,170 --> 00:32:39,510
@@ -4066,7 +4066,7 @@ programmatically, I'm going to
 868
 00:36:25,930 --> 00:36:28,820
 create on the fly through
-the API, and--
+the API, and &mdash;
 
 869
 00:36:28,820 --> 00:36:31,330
@@ -4545,7 +4545,7 @@ something we've considered.
 
 972
 00:40:13,630 --> 00:40:14,820
-But right now, we don't--
+But right now, we don't &mdash;
 
 973
 00:40:14,820 --> 00:40:15,120
@@ -4658,12 +4658,12 @@ spreadsheet to something else.
 
 996
 00:41:07,350 --> 00:41:09,782
-I think people, the natural--
+I think people, the natural &mdash;
 and I think probably correct
 
 997
 00:41:09,782 --> 00:41:11,510
-tendency-- is to do the simplest
+tendency &mdash; is to do the simplest
 thing that solves
 
 998

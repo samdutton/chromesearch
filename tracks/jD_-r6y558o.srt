@@ -1306,7 +1306,7 @@ OK.
 279
 00:11:22,260 --> 00:11:24,150
 So the next thing that
-I wanted to try--
+I wanted to try &mdash;
 
 280
 00:11:24,150 --> 00:11:25,480
@@ -1401,12 +1401,12 @@ sheets during a pageload.
 299
 00:12:13,620 --> 00:12:15,580
 So it's telling me here,
-this rule at the top--
+this rule at the top &mdash;
 
 300
 00:12:15,580 --> 00:12:18,540
 I've sorted by the total time
-taken for each rule--
+taken for each rule &mdash;
 
 301
 00:12:18,540 --> 00:12:21,800
@@ -1538,7 +1538,7 @@ find a match for that rule.
 328
 00:13:30,710 --> 00:13:34,590
 So what I've got here, this body
-* rule-- this is about
+* rule &mdash; this is about
 
 329
 00:13:34,590 --> 00:13:37,450
@@ -1552,12 +1552,12 @@ selector matching
 
 331
 00:13:39,060 --> 00:13:40,020
-everything in the document--
+everything in the document &mdash;
 
 332
 00:13:40,020 --> 00:13:41,920
 which we already know we
-shouldn't do on mobile-- but
+shouldn't do on mobile &mdash; but
 
 333
 00:13:41,920 --> 00:13:44,910
@@ -2513,7 +2513,7 @@ very quickly.
 
 536
 00:22:28,610 --> 00:22:30,650
-And so this should play--
+And so this should play &mdash;
 
 537
 00:22:30,650 --> 00:22:31,680
@@ -2530,7 +2530,7 @@ performance optimizations.
 
 540
 00:22:36,850 --> 00:22:37,840
-Now let's think back--
+Now let's think back &mdash;
 
 541
 00:22:37,840 --> 00:22:39,730
@@ -2552,11 +2552,11 @@ So why was that?
 
 545
 00:22:48,050 --> 00:22:51,250
-So in this table, you'll see--
+So in this table, you'll see &mdash;
 
 546
 00:22:51,250 --> 00:22:52,420
-or maybe you won't see--
+or maybe you won't see &mdash;
 
 547
 00:22:52,420 --> 00:22:56,400
@@ -3101,7 +3101,7 @@ first byte to the browser.
 
 661
 00:27:52,610 --> 00:27:54,220
-And here's the green line--
+And here's the green line &mdash;
 this is the load event.
 
 662
@@ -3439,7 +3439,7 @@ cached in this entry.
 733
 00:30:47,810 --> 00:30:51,400
 So all the resources that you
-list in the manifest file--
+list in the manifest file &mdash;
 
 734
 00:30:51,400 --> 00:30:52,630
@@ -4153,7 +4153,7 @@ event handler.
 
 884
 00:37:24,450 --> 00:37:25,950
-And what we see here--
+And what we see here &mdash;
 
 885
 00:37:25,950 --> 00:37:30,630
@@ -4432,7 +4432,7 @@ your touch-based mobile web
 
 943
 00:40:02,260 --> 00:40:02,930
-application--
+application &mdash;
 
 944
 00:40:02,930 --> 00:40:05,180
@@ -5233,7 +5233,7 @@ you were just showing.
 1115
 00:47:10,310 --> 00:47:11,860
 RYAN FIORAVANTI: jQuery
-mobile, I know--
+mobile, I know &mdash;
 
 1116
 00:47:11,860 --> 00:47:15,200
@@ -5438,11 +5438,11 @@ the repeated pageloads?
 
 1160
 00:48:51,960 --> 00:48:53,630
-RYAN FIORAVANTI: So at first--
+RYAN FIORAVANTI: So at first &mdash;
 
 1161
 00:48:53,630 --> 00:48:54,300
-I'll be honest--
+I'll be honest &mdash;
 
 1162
 00:48:54,300 --> 00:48:56,950
@@ -5485,12 +5485,12 @@ I ran this.
 1170
 00:49:16,840 --> 00:49:20,340
 So when that counter
-got to 50--
+got to 50 &mdash;
 
 1171
 00:49:20,340 --> 00:49:22,260
 because I was running
-50 samples--
+50 samples &mdash;
 
 1172
 00:49:22,260 --> 00:49:24,410

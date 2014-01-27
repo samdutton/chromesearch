@@ -753,7 +753,7 @@ at the bottom here.
 168
 00:08:28,880 --> 00:08:30,430
 So if I scroll down
-a little bit--
+a little bit &mdash;
 
 169
 00:08:30,430 --> 00:08:35,470
@@ -995,7 +995,7 @@ decent amount of time.
 221
 00:11:31,620 --> 00:11:34,930
 Now, let me see, I want to
-see if we can have-- yes.
+see if we can have &mdash; yes.
 
 222
 00:11:34,930 --> 00:11:38,030
@@ -1936,7 +1936,7 @@ this section, this page, and I
 423
 00:21:43,170 --> 00:21:48,865
 make it dance a little bit,
-you can see that--
+you can see that &mdash;
 
 424
 00:21:48,865 --> 00:21:51,580
@@ -2050,7 +2050,7 @@ not touching anything, it's
 
 448
 00:23:05,276 --> 00:23:06,110
-just like--
+just like &mdash;
 
 449
 00:23:06,110 --> 00:23:06,610
@@ -2149,7 +2149,7 @@ have this paint rate meter,
 469
 00:24:01,640 --> 00:24:05,200
 which is telling me
-the million--
+the million &mdash;
 
 470
 00:24:05,200 --> 00:24:09,035
@@ -3447,11 +3447,11 @@ are kind of
 
 751
 00:37:55,520 --> 00:37:56,780
-changing and things--
+changing and things &mdash;
 
 752
 00:37:56,780 --> 00:37:58,130
-popular these days--
+popular these days &mdash;
 
 753
 00:37:58,130 --> 00:38:01,740

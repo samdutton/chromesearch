@@ -234,11 +234,11 @@ is tough, and I've seen
 52
 00:01:51,760 --> 00:01:55,010
 it catch out people who do
-this sort of stuff-- this
+this sort of stuff &mdash; this
 
 53
 00:01:55,010 --> 00:01:56,930
-minor details of browsers--
+minor details of browsers &mdash;
 for a living.
 
 54
@@ -470,7 +470,7 @@ might throw things off.
 
 104
 00:03:41,500 --> 00:03:42,750
-There's nothing--
+There's nothing &mdash;
 
 105
 00:03:42,750 --> 00:03:44,730
@@ -862,12 +862,12 @@ the image as well.
 
 189
 00:06:41,600 --> 00:06:43,260
-You see, back in the past--
+You see, back in the past &mdash;
 
 190
 00:06:43,260 --> 00:06:45,610
 I don't know if you remember
-the past-- but one browser
+the past &mdash; but one browser
 
 191
 00:06:45,610 --> 00:06:49,370
@@ -1167,11 +1167,11 @@ of them get it wrong.
 255
 00:09:20,250 --> 00:09:21,700
 I'm going to close
-the question--
+the question &mdash;
 
 256
 00:09:21,700 --> 00:09:25,370
-woah, oh dear--
+woah, oh dear &mdash;
 
 257
 00:09:25,370 --> 00:09:28,370
@@ -1258,7 +1258,7 @@ scripts and all that stuff.
 274
 00:10:04,550 --> 00:10:07,260
 This has a surprisingly large
-benefit-- you know, Illya was
+benefit &mdash; you know, Illya was
 
 275
 00:10:07,260 --> 00:10:08,180
@@ -1345,7 +1345,7 @@ downloads the correct thing.
 
 293
 00:10:47,380 --> 00:10:49,920
-The moral here is, don't just--
+The moral here is, don't just &mdash;
 like, if there's some
 
 294
@@ -1369,7 +1369,7 @@ be true, right?
 
 298
 00:10:59,100 --> 00:11:00,650
-So be on the look-- but
+So be on the look &mdash; but
 also be on the lookout
 
 299
@@ -1479,7 +1479,7 @@ Fair enough, I'll just.
 
 322
 00:11:47,160 --> 00:11:47,500
-I'll--
+I'll &mdash;
 
 323
 00:11:47,500 --> 00:11:48,970
@@ -1532,7 +1532,7 @@ So, we'll do it quickly.
 
 334
 00:12:06,260 --> 00:12:08,400
-We're going to go for-- oh, are
+We're going to go for &mdash; oh, are
 we starting to think IE is
 
 335
@@ -1791,7 +1791,7 @@ do something different?
 390
 00:13:58,330 --> 00:14:02,450
 I'm going to close the question
-in three, two--
+in three, two &mdash;
 
 391
 00:14:02,450 --> 00:14:03,820
@@ -1944,7 +1944,7 @@ element individually?
 
 424
 00:15:08,260 --> 00:15:10,790
-But not all-- not everything
+But not all &mdash; not everything
 gets its style calculated.
 
 425
@@ -2165,7 +2165,7 @@ something that is hidden so
 
 471
 00:16:42,600 --> 00:16:44,010
-the virus won't find--
+the virus won't find &mdash;
 
 472
 00:16:44,010 --> 00:16:45,300
@@ -2219,12 +2219,12 @@ What do you think?
 
 483
 00:17:05,460 --> 00:17:07,390
-Creating an image elements--
+Creating an image elements &mdash;
 once again I've
 
 484
 00:17:07,390 --> 00:17:08,650
-spelled image wrong--
+spelled image wrong &mdash;
 
 485
 00:17:08,650 --> 00:17:09,750
@@ -2362,11 +2362,11 @@ So what's going on there?
 514
 00:18:13,956 --> 00:18:17,220
 It's because we spelled image
-wrong, and most browsers--
+wrong, and most browsers &mdash;
 
 515
 00:18:17,220 --> 00:18:20,280
-Chrome, Safari, IE-- will give
+Chrome, Safari, IE &mdash; will give
 us an HTML image element when
 
 516
@@ -2814,7 +2814,7 @@ Yeah, IE makes a request.
 613
 00:21:43,750 --> 00:21:46,830
 And the reason for
-that is because--
+that is because &mdash;
 
 614
 00:21:46,830 --> 00:21:48,080
@@ -2938,8 +2938,8 @@ text has a line break in it.
 
 640
 00:22:47,760 --> 00:22:50,040
-And-- well this is how it in
-IE, Chrome, and Safari--
+And &mdash; well this is how it in
+IE, Chrome, and Safari &mdash;
 
 641
 00:22:50,040 --> 00:22:52,180
@@ -2954,11 +2954,11 @@ the text of the elements.
 643
 00:22:55,795 --> 00:22:58,780
 And because is a block-level
-element-- or it certainly is
+element &mdash; or it certainly is
 
 644
 00:22:58,780 --> 00:22:59,850
-in this example--
+in this example &mdash;
 
 645
 00:22:59,850 --> 00:23:01,890
@@ -2975,7 +2975,7 @@ Text content, easy enough.
 
 648
 00:23:05,220 --> 00:23:06,210
-Inner text--
+Inner text &mdash;
 
 649
 00:23:06,210 --> 00:23:06,890
@@ -3099,7 +3099,7 @@ the understand because
 
 675
 00:23:51,530 --> 00:23:53,060
-it's going to ignore--
+it's going to ignore &mdash;
 
 676
 00:23:53,060 --> 00:23:55,770
@@ -3331,7 +3331,7 @@ Straight down the middle.
 
 725
 00:25:33,700 --> 00:25:34,160
-I have--
+I have &mdash;
 
 726
 00:25:34,160 --> 00:25:36,040
@@ -3372,12 +3372,12 @@ it over 600 pixels.
 734
 00:25:57,820 --> 00:26:01,310
 Now, they don't call
-me cunning Jake--
+me cunning Jake &mdash;
 
 735
 00:26:01,310 --> 00:26:03,780
 they don't actually call
-me cunning Jake--
+me cunning Jake &mdash;
 
 736
 00:26:03,780 --> 00:26:04,770
@@ -3494,7 +3494,7 @@ particular width.
 761
 00:26:48,380 --> 00:26:50,400
 And we'll see, as I'm
-only moving--
+only moving &mdash;
 
 762
 00:26:50,400 --> 00:26:52,230

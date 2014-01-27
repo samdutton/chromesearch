@@ -107,12 +107,12 @@ linked here at the bottom
 
 24
 00:00:51,570 --> 00:00:53,070
-by Jakob Nielsen--
+by Jakob Nielsen &mdash;
 hopefully you can
 
 25
 00:00:53,070 --> 00:00:55,900
-see that-- that talks about
+see that &mdash; that talks about
 some different thresholds
 
 26
@@ -292,7 +292,7 @@ and a script resource.
 62
 00:02:30,790 --> 00:02:32,820
 And so at this point
-we have-- like I said,
+we have &mdash; like I said,
 
 63
 00:02:32,820 --> 00:02:36,500
@@ -434,7 +434,7 @@ you can actually
 92
 00:03:35,610 --> 00:03:37,580
 see any content on the
-screen-- or, I'm sorry,
+screen &mdash; or, I'm sorry,
 
 93
 00:03:37,580 --> 00:03:38,940
@@ -890,7 +890,7 @@ blocked any content at all
 
 188
 00:07:28,660 --> 00:07:31,420
-from rendering the page--
+from rendering the page &mdash;
 rendering on the page.
 
 189
@@ -945,12 +945,12 @@ away to do something else.
 
 199
 00:07:59,724 --> 00:08:01,890
-So for us-- and I'll show
+So for us &mdash; and I'll show
 it in a little more detail
 
 200
 00:08:01,890 --> 00:08:04,150
-in a minute-- what we
+in a minute &mdash; what we
 concluded we needed to do
 
 201
@@ -969,7 +969,7 @@ two things, which we'll
 
 204
 00:08:10,680 --> 00:08:14,004
-dive into-- loading our
+dive into &mdash; loading our
 render-blocking JavaScript
 
 205
@@ -1174,7 +1174,7 @@ comes later.
 
 246
 00:10:01,840 --> 00:10:07,300
-The after case-- here, we've
+The after case &mdash; here, we've
 got a slightly different markup.
 
 247
@@ -1506,12 +1506,12 @@ on mobile?
 315
 00:12:49,072 --> 00:12:51,030
 So the first thing we
-learned-- the first thing
+learned &mdash; the first thing
 
 316
 00:12:51,030 --> 00:12:54,010
 we identified as an
-important best practice--
+important best practice &mdash;
 
 317
 00:12:54,010 --> 00:12:55,500
@@ -1750,8 +1750,8 @@ on mobile.
 
 365
 00:14:58,820 --> 00:15:01,974
-Rendering client-side--
-let's talk about-- so
+Rendering client-side &mdash;
+let's talk about &mdash; so
 
 366
 00:15:01,974 --> 00:15:03,640
@@ -1809,7 +1809,7 @@ resource finishes loading.
 377
 00:15:30,470 --> 00:15:35,449
 By contrast, server-side
-rendering-- everything
+rendering &mdash; everything
 
 378
 00:15:35,449 --> 00:15:37,240
@@ -1863,7 +1863,7 @@ app has finished loading,
 388
 00:15:54,750 --> 00:15:57,040
 and the user is
-interacting with your app--
+interacting with your app &mdash;
 
 389
 00:15:57,040 --> 00:15:59,715
@@ -1873,7 +1873,7 @@ the content is presented,
 390
 00:15:59,715 --> 00:16:01,840
 maybe they're navigating
-through a menu-- certainly
+through a menu &mdash; certainly
 
 391
 00:16:01,840 --> 00:16:03,756
@@ -2071,12 +2071,12 @@ which has really high latency.
 432
 00:17:40,560 --> 00:17:42,789
 Which led to, for them, a
-time to content-- the time
+time to content &mdash; the time
 
 433
 00:17:42,789 --> 00:17:45,080
 until the user could get the
-content that they wanted--
+content that they wanted &mdash;
 
 434
 00:17:45,080 --> 00:17:48,591
@@ -2086,7 +2086,7 @@ seconds, in bad cases.
 435
 00:17:48,591 --> 00:17:50,590
 So then they switched to
-server-side rendering--
+server-side rendering &mdash;
 
 436
 00:17:50,590 --> 00:17:53,090
@@ -2114,11 +2114,11 @@ So similar conclusion, right?
 
 441
 00:18:03,930 --> 00:18:05,440
-Twitter-- 1/5.
+Twitter &mdash; 1/5.
 
 442
 00:18:05,440 --> 00:18:09,270
-Here, Airbnb--
+Here, Airbnb &mdash;
 five times faster.
 
 443
@@ -2128,7 +2128,7 @@ want to deliver a truly
 
 444
 00:18:11,270 --> 00:18:13,145
-instant experience--
+instant experience &mdash;
 and there's a trade off.
 
 445
@@ -2305,7 +2305,7 @@ painted to the screen.
 481
 00:19:44,850 --> 00:19:47,880
 So for them, JavaScript
-is-- I'm sorry,
+is &mdash; I'm sorry,
 
 482
 00:19:47,880 --> 00:19:49,340
@@ -2416,7 +2416,7 @@ as quickly as possible.
 504
 00:20:44,184 --> 00:20:46,350
 So identifying critical
-CSS-- we'll talk about this.
+CSS &mdash; we'll talk about this.
 
 505
 00:20:46,350 --> 00:20:48,867
@@ -2624,7 +2624,7 @@ So one more bit.
 549
 00:22:33,460 --> 00:22:34,450
 I think this is
-actually, probably--
+actually, probably &mdash;
 
 550
 00:22:34,450 --> 00:22:36,783
@@ -2691,12 +2691,12 @@ render path, because images
 
 563
 00:23:09,880 --> 00:23:12,480
-by default-- they obviously
+by default &mdash; they obviously
 need to download the image
 
 564
 00:23:12,480 --> 00:23:15,640
-to render the image itself--
+to render the image itself &mdash;
 but images don't block rendering
 
 565
@@ -2907,7 +2907,7 @@ path is expensive,
 608
 00:24:53,000 --> 00:24:55,910
 I encourage people to
-not take that approach--
+not take that approach &mdash;
 
 609
 00:24:55,910 --> 00:24:58,620
@@ -3165,7 +3165,7 @@ the further along we go here.
 662
 00:26:58,600 --> 00:27:02,050
 So the last bit, once we've
-loaded our critical CSS-- now
+loaded our critical CSS &mdash; now
 
 663
 00:27:02,050 --> 00:27:04,470
@@ -3174,7 +3174,7 @@ needed to style other parts
 
 664
 00:27:04,470 --> 00:27:06,720
-of our app-- how do we
+of our app &mdash; how do we
 load that in a way that
 
 665
@@ -3283,8 +3283,8 @@ are working together on a spec.
 
 687
 00:27:57,680 --> 00:28:00,730
-And what that says basically--
-it's similar to async--
+And what that says basically &mdash;
+it's similar to async &mdash;
 
 688
 00:28:00,730 --> 00:28:02,812
@@ -3426,7 +3426,7 @@ on only delivering that.
 
 719
 00:29:11,040 --> 00:29:12,926
-But all this said--
+But all this said &mdash;
 and if you're
 
 720
@@ -3442,7 +3442,7 @@ some early and some late,
 722
 00:29:16,550 --> 00:29:19,240
 and that sounds like
-a lot of overhead--
+a lot of overhead &mdash;
 
 723
 00:29:19,240 --> 00:29:22,190
@@ -3511,12 +3511,12 @@ lot of CSS, you want
 736
 00:29:50,210 --> 00:29:51,960
 to load that in a
-render-blocking manner--
+render-blocking manner &mdash;
 
 737
 00:29:51,960 --> 00:29:53,860
 we talked about the two
-techniques for that--
+techniques for that &mdash;
 
 738
 00:29:53,860 --> 00:29:56,318

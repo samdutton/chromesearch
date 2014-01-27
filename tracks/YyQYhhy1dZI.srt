@@ -541,7 +541,7 @@ It has to be styled.
 117
 00:04:17,279 --> 00:04:21,130
 That has sort of two big
-steps-- layout and recalc style.
+steps &mdash; layout and recalc style.
 
 118
 00:04:21,130 --> 00:04:23,640
@@ -899,7 +899,7 @@ NAT DUCA: So that's better.
 
 193
 00:07:17,025 --> 00:07:19,810
-I mean 10 is not--
+I mean 10 is not &mdash;
 OK, sure, fine.
 
 194
@@ -1067,12 +1067,12 @@ that you can see that during
 
 229
 00:08:38,140 --> 00:08:41,690
-this interaction-- this is Nat's
+this interaction &mdash; this is Nat's
 fat finger moving up and down
 
 230
 00:08:41,690 --> 00:08:42,190
-on--
+on &mdash;
 
 231
 00:08:42,190 --> 00:08:43,159
@@ -1284,7 +1284,7 @@ TOM WILTZIUS: Yeah.
 275
 00:10:17,710 --> 00:10:19,490
 And actually, you can
-see-- it's probably
+see &mdash; it's probably
 
 276
 00:10:19,490 --> 00:10:20,948
@@ -1396,7 +1396,7 @@ this maps to the set
 
 299
 00:11:01,140 --> 00:11:01,639
-of things--
+of things &mdash;
 
 300
 00:11:01,639 --> 00:11:02,510
@@ -1445,7 +1445,7 @@ for getting speed on mobile.
 
 310
 00:11:21,230 --> 00:11:22,545
-But that having been said--
+But that having been said &mdash;
 
 311
 00:11:22,545 --> 00:11:23,670
@@ -1584,7 +1584,7 @@ all of these places.
 
 340
 00:12:25,120 --> 00:12:26,144
-This sucks--
+This sucks &mdash;
 
 341
 00:12:26,144 --> 00:12:28,060
@@ -1823,7 +1823,7 @@ TOM WILTZIUS: Yeah.
 
 390
 00:14:17,001 --> 00:14:17,500
-And that's--
+And that's &mdash;
 
 391
 00:14:17,500 --> 00:14:17,900
@@ -2208,11 +2208,11 @@ drawer or a slider
 471
 00:17:19,280 --> 00:17:21,200
 where the actual
-thing-- or a drawing
+thing &mdash; or a drawing
 
 472
 00:17:21,200 --> 00:17:23,780
-app-- the actual
+app &mdash; the actual
 thing that happens
 
 473
@@ -2514,7 +2514,7 @@ a touch listener and be smooth,
 536
 00:19:36,380 --> 00:19:38,410
 you have to do these
-two things-- you
+two things &mdash; you
 
 537
 00:19:38,410 --> 00:19:41,280
@@ -3661,7 +3661,7 @@ improving Chrome's tooling.
 
 779
 00:28:13,930 --> 00:28:14,805
-So about tooling--
+So about tooling &mdash;
 
 780
 00:28:14,805 --> 00:28:15,430

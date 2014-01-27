@@ -34,7 +34,7 @@ more pleasant and productive.
 
 9
 00:00:16,720 --> 00:00:21,290
-So this is not--
+So this is not &mdash;
 
 10
 00:00:21,290 --> 00:00:23,080
@@ -162,7 +162,7 @@ framework.
 36
 00:01:24,730 --> 00:01:28,090
 So what we're doing with Dart
-is we're taking a new--
+is we're taking a new &mdash;
 
 37
 00:01:28,090 --> 00:01:31,750
@@ -432,11 +432,11 @@ is just like a callback.
 93
 00:04:14,620 --> 00:04:18,940
 But the difference
-is that you--
+is that you &mdash;
 
 94
 00:04:18,940 --> 00:04:20,450
-so you have your--
+so you have your &mdash;
 
 95
 00:04:20,450 --> 00:04:23,430
@@ -815,7 +815,7 @@ deal with named arguments
 175
 00:07:39,410 --> 00:07:43,720
 is they take the dictionary, and
-you can have collections--
+you can have collections &mdash;
 
 176
 00:07:43,720 --> 00:07:45,960
@@ -1045,7 +1045,7 @@ to those events.
 224
 00:09:52,870 --> 00:10:01,740
 And when this happens, we want
-to call toggleStyle to--
+to call toggleStyle to &mdash;
 
 225
 00:10:01,740 --> 00:10:05,950
@@ -1246,12 +1246,12 @@ All right.
 
 268
 00:12:19,530 --> 00:12:22,820
-Additionally, Dart works--
+Additionally, Dart works &mdash;
 
 269
 00:12:22,820 --> 00:12:29,890
 so JavaScript has, and jQuery
-works on, improving your--
+works on, improving your &mdash;
 
 270
 00:12:29,890 --> 00:12:32,670
@@ -1396,7 +1396,7 @@ classes.
 
 301
 00:14:13,120 --> 00:14:15,510
-jQuery uses--
+jQuery uses &mdash;
 
 302
 00:14:15,510 --> 00:14:18,260
@@ -1566,7 +1566,7 @@ very readable.
 338
 00:15:49,030 --> 00:15:52,730
 In fact, there, I think that's
-actually part of--
+actually part of &mdash;
 
 339
 00:15:52,730 --> 00:15:57,070
@@ -2017,7 +2017,7 @@ mustache syntax.
 434
 00:19:33,280 --> 00:19:35,640
 And this tells us that
-we need-- we
+we need &mdash; we
 
 435
 00:19:35,640 --> 00:19:37,850
@@ -3241,7 +3241,7 @@ elements that you write.
 695
 00:30:05,930 --> 00:30:09,110
 And you can easily
-put them into--
+put them into &mdash;
 
 696
 00:30:09,110 --> 00:30:11,090
@@ -3251,7 +3251,7 @@ of your own.
 697
 00:30:11,090 --> 00:30:16,090
 So in this example here,
-we are using--
+we are using &mdash;
 
 698
 00:30:16,090 --> 00:30:18,930
@@ -3709,12 +3709,12 @@ PAUL: OK.
 
 799
 00:34:23,980 --> 00:34:25,010
-So I don't--
+So I don't &mdash;
 
 800
 00:34:25,010 --> 00:34:25,429
 EMILY FORTUNA: Everything
-else--
+else &mdash;
 
 801
 00:34:25,429 --> 00:34:27,670
@@ -3775,7 +3775,7 @@ SIGMUND CHEREM: Yes.
 
 814
 00:34:47,380 --> 00:34:50,040
-I mean, that's definitely--
+I mean, that's definitely &mdash;
 
 815
 00:34:50,040 --> 00:34:52,550
@@ -3859,7 +3859,7 @@ wire and seamlessly work
 831
 00:35:30,050 --> 00:35:34,130
 and support clients that could
-talk, for examplee--
+talk, for examplee &mdash;
 
 832
 00:35:34,130 --> 00:35:36,510
@@ -4173,7 +4173,7 @@ and deployment, and
 899
 00:38:01,300 --> 00:38:03,030
 compiling and dependence
-management and--
+management and &mdash;
 
 900
 00:38:03,030 --> 00:38:03,480
@@ -4281,7 +4281,7 @@ AUDIENCE: [INAUDIBLE]?
 923
 00:38:46,750 --> 00:38:49,710
 SIGMUND CHEREM: So Pub is
-actually, I don't know if--
+actually, I don't know if &mdash;
 
 924
 00:38:49,710 --> 00:38:52,090
@@ -4442,7 +4442,7 @@ not even in the browser?
 
 957
 00:40:07,080 --> 00:40:08,680
-I mean, does it--
+I mean, does it &mdash;
 
 958
 00:40:08,680 --> 00:40:11,600
@@ -4505,7 +4505,7 @@ do something to
 
 971
 00:40:32,810 --> 00:40:35,290
-fill this gap when--
+fill this gap when &mdash;
 
 972
 00:40:35,290 --> 00:40:37,010

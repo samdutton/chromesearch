@@ -340,7 +340,7 @@ such as lenses and prisms as
 
 74
 00:03:21,250 --> 00:03:22,650
-well as interface devices--
+well as interface devices &mdash;
 
 75
 00:03:22,650 --> 00:03:25,020
@@ -583,11 +583,11 @@ in a predictive word mode.
 125
 00:05:44,670 --> 00:05:47,210
 We also tuned the number
-of lines of text--
+of lines of text &mdash;
 
 126
 00:05:47,210 --> 00:05:49,330
-the font, the size--
+the font, the size &mdash;
 
 127
 00:05:49,330 --> 00:05:52,470
@@ -705,7 +705,7 @@ itself, but we have to build
 
 151
 00:07:04,590 --> 00:07:06,930
-infrastructure that builds Glass--
+infrastructure that builds Glass &mdash;
 
 152
 00:07:06,930 --> 00:07:09,030

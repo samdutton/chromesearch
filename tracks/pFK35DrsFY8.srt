@@ -170,12 +170,12 @@ which is our audio encoder.
 
 39
 00:01:40,940 --> 00:01:41,840
-He'll then--
+He'll then &mdash;
 
 40
 00:01:41,840 --> 00:01:44,680
 if everything goes according
-to plan--
+to plan &mdash;
 
 41
 00:01:44,680 --> 00:01:48,370
@@ -346,7 +346,7 @@ that VP8 can achieve just sort
 76
 00:03:24,730 --> 00:03:28,200
 of as a base to judge
-these things--
+these things &mdash;
 
 77
 00:03:28,200 --> 00:03:32,870
@@ -388,11 +388,11 @@ point where people have a sort
 
 85
 00:03:57,690 --> 00:03:59,460
-of predictable--
+of predictable &mdash;
 
 86
 00:03:59,460 --> 00:04:02,340
-at least, we would hope-- three
+at least, we would hope &mdash; three
 megabits connection.
 
 87
@@ -427,7 +427,7 @@ you create will decode
 93
 00:04:24,470 --> 00:04:29,630
 and playback in any compliant
-VP8 decoder--
+VP8 decoder &mdash;
 
 94
 00:04:29,630 --> 00:04:31,100
@@ -437,7 +437,7 @@ than other codecs.
 95
 00:04:31,100 --> 00:04:34,780
 Well, other codecs, let's say,
-for example, H.264--
+for example, H.264 &mdash;
 
 96
 00:04:34,780 --> 00:04:37,700
@@ -619,7 +619,7 @@ older generation ARM
 
 134
 00:06:26,850 --> 00:06:29,450
-processors, which-- there are
+processors, which &mdash; there are
 still many, many of those in
 
 135
@@ -678,7 +678,7 @@ It's in the chromium source.
 
 147
 00:07:02,805 --> 00:07:06,570
-It's in Firefox-- you know
+It's in Firefox &mdash; you know
 the gecko stuff?
 
 148
@@ -744,7 +744,7 @@ will be able to play WebM.
 
 161
 00:07:53,080 --> 00:07:54,360
-So also as an--
+So also as an &mdash;
 
 162
 00:07:54,360 --> 00:07:57,840
@@ -777,7 +777,7 @@ about 43.4%.
 
 168
 00:08:14,160 --> 00:08:17,480
-So this is obviously--
+So this is obviously &mdash;
 
 169
 00:08:17,480 --> 00:08:19,530
@@ -823,7 +823,7 @@ likes to discuss.
 
 178
 00:08:42,159 --> 00:08:43,419
-VP8--
+VP8 &mdash;
 
 179
 00:08:43,419 --> 00:08:47,800
@@ -874,8 +874,8 @@ market pretty much every major
 
 189
 00:09:08,100 --> 00:09:13,536
-SOC vendor, which is SOC-- the
-ARM chip vendors, who have--
+SOC vendor, which is SOC &mdash; the
+ARM chip vendors, who have &mdash;
 
 190
 00:09:13,536 --> 00:09:15,015
@@ -1015,7 +1015,7 @@ WebM is free.
 218
 00:10:36,200 --> 00:10:39,020
 That means both senses of the
-word as people know it--
+word as people know it &mdash;
 
 219
 00:10:39,020 --> 00:10:42,210
@@ -1215,7 +1215,7 @@ you make or anything else.
 261
 00:12:33,960 --> 00:12:38,390
 If your app has just does
-content in those formats--
+content in those formats &mdash;
 
 262
 00:12:38,390 --> 00:12:41,540
@@ -1321,7 +1321,7 @@ all that stuff.
 
 284
 00:13:36,770 --> 00:13:38,960
-Statistical redundancy--
+Statistical redundancy &mdash;
 
 285
 00:13:38,960 --> 00:13:42,800
@@ -1334,7 +1334,7 @@ Take those out.
 
 287
 00:13:43,720 --> 00:13:45,510
-There's perceptual--
+There's perceptual &mdash;
 
 288
 00:13:45,510 --> 00:13:47,360
@@ -1387,12 +1387,12 @@ what you started from.
 
 298
 00:14:13,760 --> 00:14:15,990
-So raw video--
+So raw video &mdash;
 
 299
 00:14:15,990 --> 00:14:19,410
 video right off of a camera and
-editing deck, whatever--
+editing deck, whatever &mdash;
 
 300
 00:14:19,410 --> 00:14:21,450
@@ -1626,7 +1626,7 @@ these parameters here.
 
 349
 00:16:41,740 --> 00:16:42,880
-First is the binary--
+First is the binary &mdash;
 
 350
 00:16:42,880 --> 00:16:43,590
@@ -1716,12 +1716,12 @@ Yet don't exceed that.
 369
 00:17:35,320 --> 00:17:38,600
 Because my target use case,
-I know that my users--
+I know that my users &mdash;
 
 370
 00:17:38,600 --> 00:17:41,830
 let's say, I know from market
-research, whatever-- that most
+research, whatever &mdash; that most
 
 371
 00:17:41,830 --> 00:17:45,520
@@ -1752,12 +1752,12 @@ my target data rate.
 
 377
 00:17:56,110 --> 00:17:57,520
-Quality setting is just--
+Quality setting is just &mdash;
 
 378
 00:17:57,520 --> 00:17:59,750
 in the VP8 coder, there's
-three settings--
+three settings &mdash;
 
 379
 00:17:59,750 --> 00:18:01,650
@@ -1813,7 +1813,7 @@ that you can use an ffmpeg to
 
 390
 00:18:29,300 --> 00:18:32,150
-do all sorts of things like--
+do all sorts of things like &mdash;
 
 391
 00:18:32,150 --> 00:18:33,640
@@ -1849,7 +1849,7 @@ OK, I want you make it 480
 
 398
 00:18:49,240 --> 00:18:51,820
-pixels high, but the width--
+pixels high, but the width &mdash;
 
 399
 00:18:51,820 --> 00:18:55,260
@@ -1881,7 +1881,7 @@ use the defaults, in some
 
 405
 00:19:06,390 --> 00:19:10,460
-cases it'll scale-- if you say
+cases it'll scale &mdash; if you say
 scale 480, but you don't
 
 406
@@ -1966,7 +1966,7 @@ information about how this
 423
 00:19:56,650 --> 00:19:59,940
 particular instance of ffmpeg
-was compiled-- all the flags
+was compiled &mdash; all the flags
 
 424
 00:19:59,940 --> 00:20:00,330
@@ -2081,7 +2081,7 @@ is exceeding but
 
 448
 00:20:53,780 --> 00:20:57,720
-overall, it's going-- across the
+overall, it's going &mdash; across the
 breadth of it should stay
 
 449
@@ -2118,7 +2118,7 @@ always hard.
 
 456
 00:21:26,170 --> 00:21:28,670
-Projectors don't--
+Projectors don't &mdash;
 the fidelity's
 
 457
@@ -2138,11 +2138,11 @@ second of data, which Frank
 460
 00:21:35,500 --> 00:21:38,780
 and I've been in this business
-for probably--
+for probably &mdash;
 
 461
 00:21:38,780 --> 00:21:39,285
-I don't want--
+I don't want &mdash;
 
 462
 00:21:39,285 --> 00:21:40,030
@@ -2282,11 +2282,11 @@ I have two demos.
 491
 00:22:53,660 --> 00:22:55,500
 And then I'm going
-take a little--
+take a little &mdash;
 
 492
 00:22:55,500 --> 00:23:00,410
-time permitting-- a little
+time permitting &mdash; a little
 closer look at the code.
 
 493
@@ -2417,11 +2417,11 @@ our first demo.
 520
 00:24:44,730 --> 00:24:50,740
 So what I'm going to do is I'm
-going to add audio and-- oops,
+going to add audio and &mdash; oops,
 
 521
 00:24:50,740 --> 00:24:52,310
-should be coming soon-- anyways,
+should be coming soon &mdash; anyways,
 I'm going to add
 
 522
@@ -2835,7 +2835,7 @@ application.
 
 614
 00:29:07,270 --> 00:29:09,640
-For example, you could have--
+For example, you could have &mdash;
 
 615
 00:29:09,640 --> 00:29:12,980
@@ -2987,7 +2987,7 @@ per second.
 
 647
 00:30:40,390 --> 00:30:40,880
-Oop--
+Oop &mdash;
 
 648
 00:30:40,880 --> 00:30:43,770
@@ -3000,11 +3000,11 @@ the encoder and
 
 650
 00:30:46,430 --> 00:30:47,780
-passing config objects--
+passing config objects &mdash;
 
 651
 00:30:47,780 --> 00:30:48,820
-config fig objects--
+config fig objects &mdash;
 
 652
 00:30:48,820 --> 00:30:50,210
@@ -3066,7 +3066,7 @@ to the muxer.
 664
 00:31:24,020 --> 00:31:25,880
 They did the default
-writer interface--
+writer interface &mdash;
 
 665
 00:31:25,880 --> 00:31:29,120
@@ -3244,12 +3244,12 @@ I just say get the raw frame.
 
 703
 00:33:12,800 --> 00:33:15,050
-The audio--
+The audio &mdash;
 
 704
 00:33:15,050 --> 00:33:21,650
 the raw data is just an array
-of PCM samples per-- libvpx,
+of PCM samples per &mdash; libvpx,
 
 705
 00:33:21,650 --> 00:33:25,990
@@ -3412,7 +3412,7 @@ of encoded packets.
 738
 00:35:04,630 --> 00:35:06,520
 The only real difference
-at the end--
+at the end &mdash;
 
 739
 00:35:06,520 --> 00:35:10,770
@@ -3425,7 +3425,7 @@ Then we pass that.
 
 741
 00:35:12,652 --> 00:35:14,500
-Oop-- hit the wrong button.
+Oop &mdash; hit the wrong button.
 
 742
 00:35:14,500 --> 00:35:17,240
@@ -3457,7 +3457,7 @@ will be playable.
 
 748
 00:35:30,520 --> 00:35:33,110
-John, you want to go to--
+John, you want to go to &mdash;
 
 749
 00:35:33,110 --> 00:35:34,520
@@ -3765,12 +3765,12 @@ expensive operation, right?
 815
 00:38:34,510 --> 00:38:39,970
 So when we say it's
-low quality--
+low quality &mdash;
 
 816
 00:38:39,970 --> 00:38:41,830
 I mean, it's high quality,
-Low CPU--
+Low CPU &mdash;
 
 817
 00:38:41,830 --> 00:38:44,820
@@ -3816,7 +3816,7 @@ there's so much in that you
 
 826
 00:39:06,000 --> 00:39:07,310
-just really--
+just really &mdash;
 
 827
 00:39:07,310 --> 00:39:10,450
@@ -3838,7 +3838,7 @@ FRANK GALLIGAN: Here.
 831
 00:39:14,275 --> 00:39:17,820
 I think this is what we took,
-so hopefully, it'll--
+so hopefully, it'll &mdash;
 
 832
 00:39:17,820 --> 00:39:17,860
@@ -3927,7 +3927,7 @@ Either VP8 or VP9.
 851
 00:39:56,400 --> 00:39:59,015
 JOHN LUTHER: I mean, part
-of the webRTC--
+of the webRTC &mdash;
 
 852
 00:39:59,015 --> 00:40:01,020
@@ -3949,7 +3949,7 @@ our WebRTC at Google.
 
 856
 00:40:11,255 --> 00:40:12,630
-It's one of things that--
+It's one of things that &mdash;
 
 857
 00:40:12,630 --> 00:40:14,380
@@ -4004,7 +4004,7 @@ achieve with VP8 or VP9.
 868
 00:40:43,140 --> 00:40:45,930
 FRANK GALLIGAN: Well, VP8, you
-can achieve some frame-- so
+can achieve some frame &mdash; so
 
 869
 00:40:45,930 --> 00:40:47,300
@@ -4062,7 +4062,7 @@ keep it to one-frame latency.
 
 881
 00:41:11,680 --> 00:41:12,420
-VP9--
+VP9 &mdash;
 
 882
 00:41:12,420 --> 00:41:15,860
@@ -4084,7 +4084,7 @@ JOHN LUTHER: Q3.
 
 886
 00:41:19,750 --> 00:41:20,840
-I mean, the bitstream is--
+I mean, the bitstream is &mdash;
 
 887
 00:41:20,840 --> 00:41:21,750
@@ -4097,12 +4097,12 @@ will be frozen in June.
 
 889
 00:41:23,960 --> 00:41:24,725
-And then--
+And then &mdash;
 
 890
 00:41:24,725 --> 00:41:26,320
 FRANK GALLIGAN: Yeah, for
-real times, it's Q--
+real times, it's Q &mdash;
 
 891
 00:41:26,320 --> 00:41:28,540

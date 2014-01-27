@@ -223,7 +223,7 @@ Have you run across one?
 49
 00:01:38,120 --> 00:01:40,690
 JAN: I haven't seen anything for
-a text document-- if, by
+a text document &mdash; if, by
 
 50
 00:01:40,690 --> 00:01:45,220
@@ -521,7 +521,7 @@ be some things.
 111
 00:04:03,110 --> 00:04:05,670
 It uses redirects, which causes
-problems sometimes--
+problems sometimes &mdash;
 
 112
 00:04:05,670 --> 00:04:06,800
@@ -608,11 +608,11 @@ unique are the IDs.
 129
 00:04:39,980 --> 00:04:41,470
 So they already asked this
-question on Stack Overflow--
+question on Stack Overflow &mdash;
 
 130
 00:04:41,470 --> 00:04:43,400
-great place to ask questions--
+great place to ask questions &mdash;
 
 131
 00:04:43,400 --> 00:04:46,980
@@ -849,7 +849,7 @@ would be to try to find the
 181
 00:06:42,390 --> 00:06:44,710
 support page or support link
-from the Cloud Connect--
+from the Cloud Connect &mdash;
 
 182
 00:06:44,710 --> 00:06:46,650
@@ -932,7 +932,7 @@ JAN: Not this one.
 199
 00:07:15,090 --> 00:07:17,790
 For the person who entered this,
-if you can link us-- if
+if you can link us &mdash; if
 
 200
 00:07:17,790 --> 00:07:19,770
@@ -988,7 +988,7 @@ to know about that.
 
 211
 00:07:44,430 --> 00:07:47,172
-And I guess the question is--
+And I guess the question is &mdash;
 
 212
 00:07:47,172 --> 00:07:50,530
@@ -1174,7 +1174,7 @@ like to see in ScriptDB,
 
 250
 00:09:10,150 --> 00:09:12,080
-things that you want--
+things that you want &mdash;
 
 251
 00:09:12,080 --> 00:09:14,750
@@ -1454,7 +1454,7 @@ jump to next?
 
 310
 00:11:28,290 --> 00:11:31,060
-JAN: Let's jump first to-- well,
+JAN: Let's jump first to &mdash; well,
 I want to run through a
 
 311
@@ -1511,7 +1511,7 @@ in your own account.
 322
 00:11:55,280 --> 00:11:57,210
 So [INAUDIBLE], first of all,
-this one is one-- if you've
+this one is one &mdash; if you've
 
 323
 00:11:57,210 --> 00:11:59,510
@@ -1657,7 +1657,7 @@ attention on its own.
 352
 00:13:11,140 --> 00:13:13,976
 It's a really fantastic tool
-for-- basically, on the first
+for &mdash; basically, on the first
 
 353
 00:13:13,976 --> 00:13:16,780
@@ -1949,7 +1949,7 @@ developer listed here, to do
 
 413
 00:15:47,540 --> 00:15:48,890
-that in the UI, it's--
+that in the UI, it's &mdash;
 
 414
 00:15:48,890 --> 00:15:50,820
@@ -1986,7 +1986,7 @@ that you've
 
 421
 00:16:01,480 --> 00:16:02,560
-planned out are actually--
+planned out are actually &mdash;
 
 422
 00:16:02,560 --> 00:16:03,450
@@ -2481,7 +2481,7 @@ issue tracker about this
 
 526
 00:20:09,450 --> 00:20:11,340
-fairly recently--
+fairly recently &mdash;
 
 527
 00:20:11,340 --> 00:20:18,480
@@ -2523,11 +2523,11 @@ recommended solution there.
 535
 00:20:37,130 --> 00:20:39,480
 Is that if we want to have a
-rich-- sorry , that's really
+rich &mdash; sorry , that's really
 
 536
 00:20:39,480 --> 00:20:40,350
-hard to say--
+hard to say &mdash;
 
 537
 00:20:40,350 --> 00:20:45,375
@@ -2602,11 +2602,11 @@ you run into issues with Caja,
 552
 00:21:22,570 --> 00:21:25,870
 I've found that the team that
-works on that-- it's an open
+works on that &mdash; it's an open
 
 553
 00:21:25,870 --> 00:21:28,620
-source project-- but the team
+source project &mdash; but the team
 that works on it is very
 
 554
@@ -2787,7 +2787,7 @@ JAN: OK.
 592
 00:22:59,900 --> 00:23:03,880
 My question to you in
-that case would be--
+that case would be &mdash;
 
 593
 00:23:03,880 --> 00:23:07,330
@@ -2810,7 +2810,7 @@ have in place today don't work
 597
 00:23:16,490 --> 00:23:18,800
 for your needs or for
-your use case--
+your use case &mdash;
 
 598
 00:23:18,800 --> 00:23:22,870
@@ -2959,7 +2959,7 @@ meant for our JavaScript
 628
 00:24:39,900 --> 00:24:42,660
 objects, kind of like records
-in a database--
+in a database &mdash;
 
 629
 00:24:42,660 --> 00:24:45,330
@@ -3058,7 +3058,7 @@ interacting with Gmail are
 
 649
 00:25:35,810 --> 00:25:37,160
-there in the Gmail service--
+there in the Gmail service &mdash;
 
 650
 00:25:37,160 --> 00:25:38,840
@@ -3112,12 +3112,12 @@ something as a web app,
 660
 00:25:59,650 --> 00:26:02,430
 there's a selector that says
-run this, execute this as--
+run this, execute this as &mdash;
 
 661
 00:26:02,430 --> 00:26:05,220
 and you can execute it as
-yourself, the developer--
+yourself, the developer &mdash;
 
 662
 00:26:05,220 --> 00:26:08,200
@@ -3237,7 +3237,7 @@ JAN: Until tomorrow, yes.
 687
 00:26:52,472 --> 00:26:57,410
 ERIC: It's a good thing
-to demo things on a--
+to demo things on a &mdash;
 
 688
 00:26:57,410 --> 00:27:01,560
@@ -3367,7 +3367,7 @@ spreadsheet-specific things.
 714
 00:28:07,050 --> 00:28:11,770
 So browser.messagebox or adding
-a menu to spreadsheet--
+a menu to spreadsheet &mdash;
 
 715
 00:28:11,770 --> 00:28:12,800
@@ -3651,7 +3651,7 @@ JAN: It did.
 773
 00:30:41,460 --> 00:30:42,740
 ERIC: All right, great,
-well I mean, I think--
+well I mean, I think &mdash;
 
 774
 00:30:42,740 --> 00:30:44,570

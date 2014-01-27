@@ -126,7 +126,7 @@ that I sort of expect.
 26
 00:01:52,759 --> 00:01:56,600
 And so the physical metaphor is broken and
-it doesn't -- it doesn't feel good. It doesn't
+it doesn't  &mdash; it doesn't feel good. It doesn't
 
 27
 00:01:56,600 --> 00:02:00,219
@@ -176,7 +176,7 @@ comes back and does some big json parse. You
 36
 00:02:38,709 --> 00:02:43,569
 can have an image decode that fires. You can
--- you know, I can go on for hours on this,
+ &mdash; you know, I can go on for hours on this,
 
 37
 00:02:43,569 --> 00:02:45,450
@@ -230,7 +230,7 @@ going to talk about today? We're going to
 
 47
 00:03:23,480 --> 00:03:28,519
-talk about painting speed, what -- what kind
+talk about painting speed, what  &mdash; what kind
 of goes into it and how you can try to paint
 
 48
@@ -245,12 +245,12 @@ either because you were doing so accidentally
 
 50
 00:03:36,260 --> 00:03:38,900
-and you didn't realize it -- and we're going
+and you didn't realize it  &mdash; and we're going
 to show you how to notice that kind of thing
 
 51
 00:03:38,900 --> 00:03:43,689
--- and then better yet, we're going to talk
+ &mdash; and then better yet, we're going to talk
 about how to deliberately avoid paints from
 
 52
@@ -271,7 +271,7 @@ in a web browser is preparing pixels to be
 55
 00:03:56,430 --> 00:03:59,769
 put up on the screen.
-So if you go to Google -- right? -- we've
+So if you go to Google  &mdash; right?  &mdash; we've
 
 56
 00:03:59,769 --> 00:04:04,579
@@ -325,13 +325,13 @@ cursor versus, say, if I just had the whole
 
 66
 00:04:45,940 --> 00:04:50,780
-Google logo blinking -- now, of course people
+Google logo blinking  &mdash; now, of course people
 would be upset if I did that to our home page,
 
 67
 00:04:50,780 --> 00:04:54,490
 but also, it would take more time to do it,
-okay? Because there's just -- you can sort
+okay? Because there's just  &mdash; you can sort
 
 68
 00:04:54,490 --> 00:04:58,310
@@ -415,7 +415,7 @@ to be avoided pretty much at all costs.
 
 84
 00:06:06,020 --> 00:06:10,569
-like what -- what is expensive and what isn't,
+like what  &mdash; what is expensive and what isn't,
 right? Like Nat is just asserting that like,
 
 85
@@ -446,11 +446,11 @@ in great detail today but there are some really
 90
 00:06:34,539 --> 00:06:39,539
 good resources on the web about how to use
-it. This link -- and our slides will be linked
+it. This link  &mdash; and our slides will be linked
 
 91
 00:06:39,539 --> 00:06:44,979
-on the web later -- will take you to an article
+on the web later  &mdash; will take you to an article
 that explains in detail how to use continuous
 
 92
@@ -496,7 +496,7 @@ that bill for that one.
 100
 00:07:13,129 --> 00:07:17,349
 >>Tom Wiltzius: That's right. Painting also,
-I should say, isn't -- it's not just about
+I should say, isn't  &mdash; it's not just about
 
 101
 00:07:17,349 --> 00:07:21,199
@@ -530,7 +530,7 @@ If I hit this button, I get elements that
 
 107
 00:07:46,330 --> 00:07:51,069
-are added to this screen. It's -- this is
+are added to this screen. It's  &mdash; this is
 really simple. These are just gray divs. Basically
 
 108
@@ -560,7 +560,7 @@ paint rectangles under the rendering heading
 
 113
 00:08:09,300 --> 00:08:15,870
-of settings, then we have -- we have the ability
+of settings, then we have  &mdash; we have the ability
 to really see what gets painted as the page
 
 114
@@ -571,7 +571,7 @@ So again, I'm going to hit this button a few
 115
 00:08:17,870 --> 00:08:24,189
 times and you can see that as I add additional
-elements, there's a red -- red rectangle that
+elements, there's a red  &mdash; red rectangle that
 
 116
 00:08:24,189 --> 00:08:29,180
@@ -625,7 +625,7 @@ If I try to do something like inspect this
 
 126
 00:09:09,700 --> 00:09:15,339
-container block -- and the DevTools inspection
+container block  &mdash; and the DevTools inspection
 is going to drive the paint rectangles nuts
 
 127
@@ -660,7 +660,7 @@ I add some of that padding. You can see in
 
 133
 00:09:42,680 --> 00:09:49,170
--- it's probably small text, but padding has
+ &mdash; it's probably small text, but padding has
 showed up in the element style in inspector
 
 134
@@ -690,7 +690,7 @@ The answer ends up being "no" but in the process,
 
 139
 00:10:13,800 --> 00:10:18,399
-it invalidates the -- the sort of visible
+it invalidates the  &mdash; the sort of visible
 state of all of these elements on the screen
 
 140
@@ -751,7 +751,7 @@ hard to stamp out again.
 151
 00:11:03,399 --> 00:11:08,829
 a little bit, we've talked about painting
-now, but the -- the next best thing from trying
+now, but the  &mdash; the next best thing from trying
 
 152
 00:11:08,829 --> 00:11:14,170
@@ -765,7 +765,7 @@ scrolling.
 
 154
 00:11:16,250 --> 00:11:21,029
->>Nat Duca: So like in ye old days -- right,
+>>Nat Duca: So like in ye old days  &mdash; right,
 like 1990 something, the way that we would
 
 155
@@ -815,7 +815,7 @@ visible. Right?
 
 164
 00:12:01,000 --> 00:12:05,079
-But the stuff on top of it, the -- the top
+But the stuff on top of it, the  &mdash; the top
 nav and the left thing, they'll always be
 
 165
@@ -850,7 +850,7 @@ scrolling because you're only looking down
 
 171
 00:12:32,949 --> 00:12:35,660
-at the layers. You just see it -- you know,
+at the layers. You just see it  &mdash; you know,
 it looks like you're seeing the whole Web
 
 172
@@ -861,7 +861,7 @@ browser is just re-compositing, skipping that
 173
 00:12:40,449 --> 00:12:47,320
 expensive paint step, and going nice and jankfree.
-But this all depends -- this jankfreeness
+But this all depends  &mdash; this jankfreeness
 
 174
 00:12:47,320 --> 00:12:51,420
@@ -890,22 +890,22 @@ are off on this being a good system. So I'll
 
 179
 00:13:07,470 --> 00:13:14,470
-open up another demo, and this one -- maybe
+open up another demo, and this one  &mdash; maybe
 it will load...
 
 180
 00:13:16,260 --> 00:13:17,870
-You want to turn off --
+You want to turn off  &mdash;
 >>Nat Duca: I will turn off WiFi.
 
 181
 00:13:17,870 --> 00:13:24,870
->>Tom Wiltzius: -- WiFi and try again?
-In a case where we scroll -- in this case,
+>>Tom Wiltzius:  &mdash; WiFi and try again?
+In a case where we scroll  &mdash; in this case,
 
 182
 00:13:25,720 --> 00:13:31,329
-a whole long list of images, we can -- we
+a whole long list of images, we can  &mdash; we
 can do that pretty well, right?
 
 183
@@ -916,7 +916,7 @@ is really a simple sort of like static media
 184
 00:13:34,720 --> 00:13:39,380
 site scenario. And indeed, we can scroll this
--- this quite well.
+ &mdash; this quite well.
 
 185
 00:13:39,380 --> 00:13:45,829
@@ -990,12 +990,12 @@ now, based on everything we've just said.
 
 199
 00:14:43,820 --> 00:14:49,209
-The -- the browser is going to start repainting
+The  &mdash; the browser is going to start repainting
 to run the animation right at the time when
 
 200
 00:14:49,209 --> 00:14:55,110
-it -- what it wants to be doing is re-compositing
+it  &mdash; what it wants to be doing is re-compositing
 this static unchanging content over and over
 
 201
@@ -1021,7 +1021,7 @@ but it gets a lot Jankier, and you can see
 205
 00:15:12,920 --> 00:15:18,199
 that these are these big red flashes that
-occur all over -- all over the page and that
+occur all over  &mdash; all over the page and that
 
 206
 00:15:18,199 --> 00:15:22,410
@@ -1030,7 +1030,7 @@ gets in the way of sort of a jankfree scroll.
 
 207
 00:15:22,410 --> 00:15:26,509
-are your warning to -- you know, your one-way
+are your warning to  &mdash; you know, your one-way
 trip to Janktown, right? You've got big red
 
 208
@@ -1040,7 +1040,7 @@ repainting all the time and then on a low-end
 
 209
 00:15:31,089 --> 00:15:35,269
-machine -- this is a Mac Book Pro so of course
+machine  &mdash; this is a Mac Book Pro so of course
 it's going to be in better shape, but on a
 
 210
@@ -1116,7 +1116,7 @@ to you. So it's important to understand that
 224
 00:16:32,199 --> 00:16:37,449
 there are often tradeoffs between how well
-something performs and what it looks -- what
+something performs and what it looks  &mdash; what
 
 225
 00:16:37,449 --> 00:16:41,910
@@ -1125,7 +1125,7 @@ be possible to achieve whatever sort of like
 
 226
 00:16:41,910 --> 00:16:46,880
-crazy effect you want in a -- a totally nice
+crazy effect you want in a  &mdash; a totally nice
 performance way.
 
 227
@@ -1136,7 +1136,7 @@ there are all sorts of things that can cause
 228
 00:16:51,410 --> 00:16:56,630
 this sort of problem.
-The -- the real thing you want to do is use
+The  &mdash; the real thing you want to do is use
 
 229
 00:16:56,630 --> 00:17:01,009
@@ -1165,7 +1165,7 @@ sites. These are all things that we see that
 
 234
 00:17:22,180 --> 00:17:24,670
---
+ &mdash;
 >>Nat Duca: Social widgets that you position
 
 235
@@ -1256,7 +1256,7 @@ than us talking but, you know, here's the
 252
 00:18:25,560 --> 00:18:29,220
 thing. We showed you how you can use layers
-to scroll smoothly, right? And that's -- you
+to scroll smoothly, right? And that's  &mdash; you
 
 253
 00:18:29,220 --> 00:18:32,960
@@ -1265,8 +1265,8 @@ something up and down. But people like, you
 
 254
 00:18:32,960 --> 00:18:37,790
-know, drawers and -- and hover effects and,
-you know, slides that -- that zoom in from
+know, drawers and  &mdash; and hover effects and,
+you know, slides that  &mdash; that zoom in from
 
 255
 00:18:37,790 --> 00:18:40,390
@@ -1311,7 +1311,7 @@ and I have show paint reqs on, that as I run
 263
 00:19:14,960 --> 00:19:19,860
 this animation, which is a simple CSS animation
-on the left property -- right? -- like very
+on the left property  &mdash; right?  &mdash; like very
 
 264
 00:19:19,860 --> 00:19:26,110
@@ -1365,7 +1365,7 @@ risking having to reflow other elements.
 
 274
 00:20:07,870 --> 00:20:13,140
--- you can make the same look in CSS with
+ &mdash; you can make the same look in CSS with
 different types of selectors or different
 
 275
@@ -1436,7 +1436,7 @@ again, turn on show composited layer borders
 288
 00:21:15,750 --> 00:21:22,230
 in DevTools settings. And if you look really
-carefully -- I will zoom in here -- there
+carefully  &mdash; I will zoom in here  &mdash; there
 
 289
 00:21:22,230 --> 00:21:27,940
@@ -1731,7 +1731,7 @@ frame up onto the screen. That's kind of where
 347
 00:25:47,530 --> 00:25:51,800
 the meat is.
-Down here you have got -- in the center here,
+Down here you have got  &mdash; in the center here,
 
 348
 00:25:51,800 --> 00:25:56,110
@@ -1776,7 +1776,7 @@ The blue represents the viewport. So just
 356
 00:26:26,320 --> 00:26:32,210
 like in the Gmail example where we showed
-the Gmail thing -- the mail list moving and
+the Gmail thing  &mdash; the mail list moving and
 
 357
 00:26:32,210 --> 00:26:37,690
@@ -1785,7 +1785,7 @@ this is the same thing but from my live site.
 
 358
 00:26:37,690 --> 00:26:40,590
-This is kind of -- you can sort of start thinking,
+This is kind of  &mdash; you can sort of start thinking,
 this is kind of useful.
 
 359
@@ -1905,7 +1905,7 @@ Toward the end, what you are going to see
 
 382
 00:28:22,040 --> 00:28:27,720
-is it smoosh down. So here -- from here to
+is it smoosh down. So here  &mdash; from here to
 here, you see that we have two layers like
 
 383
@@ -1931,7 +1931,7 @@ One other final thing to show about this tool.
 387
 00:28:46,350 --> 00:28:50,170
 A lot of people wonder when you get a big
--- big site, big production site where there's
+ &mdash; big site, big production site where there's
 
 388
 00:28:50,170 --> 00:28:54,470
@@ -1965,7 +1965,7 @@ And so when we turn this on and do a trace
 
 394
 00:29:20,360 --> 00:29:25,030
-of this with the real -- that final demo that
+of this with the real  &mdash; that final demo that
 we say was Jankfree, you will see that, then,
 
 395
@@ -1975,7 +1975,7 @@ promoted the whole time.
 
 396
 00:29:29,090 --> 00:29:33,210
-So this is sort of the low -- the quick glimpse
+So this is sort of the low  &mdash; the quick glimpse
 into a tool that we are trying to get out
 
 397
@@ -2005,12 +2005,12 @@ But for sort of advanced use cases, this is
 
 402
 00:29:58,500 --> 00:30:00,440
---
+ &mdash;
 >>Nat Duca: You can get very far with DevTools.
 
 403
 00:30:00,440 --> 00:30:04,700
-This is if -- if you are in a pinch, you can
+This is if  &mdash; if you are in a pinch, you can
 check this out. You will be confused, but
 
 404
@@ -2035,7 +2035,7 @@ and try to figure out why.
 
 408
 00:30:21,570 --> 00:30:28,090
-You want to ask yourself why -- why am I repainting
+You want to ask yourself why  &mdash; why am I repainting
 this? And can I either avoid it by being judicious
 
 409
@@ -2250,8 +2250,8 @@ promise of the Web where it just sort of works
 
 451
 00:33:27,880 --> 00:33:30,710
-everywhere. Does that --
->>Tom Wiltzius: I think the intent --
+everywhere. Does that  &mdash;
+>>Tom Wiltzius: I think the intent  &mdash;
 
 452
 00:33:30,710 --> 00:33:31,730
@@ -2305,8 +2305,8 @@ things that it is not really designed ed for.
 
 462
 00:34:15,280 --> 00:34:18,580
-I wonder -- I don't know. I wonder if we will
-end up in a worse place --
+I wonder  &mdash; I don't know. I wonder if we will
+end up in a worse place  &mdash;
 
 463
 00:34:18,580 --> 00:34:23,200
@@ -2380,7 +2380,7 @@ will be working very soon because we want
 
 477
 00:35:10,120 --> 00:35:15,130
--- our whole vision here is you write your
+ &mdash; our whole vision here is you write your
 Web platform thing and we will take care of
 
 478
@@ -2400,7 +2400,7 @@ it is kind of like you have to hold the old-style
 
 481
 00:35:33,370 --> 00:35:39,160
-TV antenna up to get the right -- it is like:
+TV antenna up to get the right  &mdash; it is like:
 Did I do the right thing to kick the compositor
 
 482
@@ -2431,7 +2431,7 @@ to broaden that discussion in the coming months.
 487
 00:36:03,760 --> 00:36:08,500
 But this is about being able to say, hey,
-I'm bringing -- So, think about infinite scroll.
+I'm bringing  &mdash; So, think about infinite scroll.
 
 488
 00:36:08,500 --> 00:36:13,760
@@ -2471,7 +2471,7 @@ to do that kind of thing higher up the stack
 495
 00:36:42,500 --> 00:36:46,350
 before we talk about painting. Like, really
-what you want to do is declare -- is sort
+what you want to do is declare  &mdash; is sort
 
 496
 00:36:46,350 --> 00:36:51,230
@@ -2480,7 +2480,7 @@ not going to do anything that's going to manipulate
 
 497
 00:36:51,230 --> 00:36:55,490
-style or layout inside of -- sort of a container
+style or layout inside of  &mdash; sort of a container
 block.
 
 498
@@ -2500,7 +2500,7 @@ like that, too.
 
 501
 00:37:05,980 --> 00:37:09,680
-We're definitely -- please, come on up and
+We're definitely  &mdash; please, come on up and
 we can chat if you want. There is a lot of
 
 502
@@ -2515,7 +2515,7 @@ know it is not good enough yet.
 
 504
 00:37:20,210 --> 00:37:23,370
->>> Any love for SVG -- Jankfree SVG any time
+>>> Any love for SVG  &mdash; Jankfree SVG any time
 soon?
 
 505
@@ -2570,7 +2570,7 @@ is anything we can do to mitigate that to
 
 515
 00:38:04,280 --> 00:38:09,020
-make -- to think about our codebases as something
+make  &mdash; to think about our codebases as something
 that's going to live for longer than the six
 
 516
@@ -2686,7 +2686,7 @@ as well?
 538
 00:39:48,500 --> 00:39:50,770
 >>Tom Wiltzius: Yeah, sure, Nat built some
-of them. So I will let him --
+of them. So I will let him  &mdash;
 
 539
 00:39:50,770 --> 00:39:57,770
@@ -2700,7 +2700,7 @@ So DevTools has this fantastic JSON-level
 
 541
 00:40:03,680 --> 00:40:09,480
--- or Web socket and then JSON-level protocol
+ &mdash; or Web socket and then JSON-level protocol
 where you can talk to the Web page out of
 
 542

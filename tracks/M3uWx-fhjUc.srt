@@ -108,11 +108,11 @@ Maybe some you have it.
 25
 00:00:56,220 --> 00:00:59,590
 And basically around
-the time when--
+the time when &mdash;
 
 26
 00:00:59,590 --> 00:01:01,720
-about a year and a half ago--
+about a year and a half ago &mdash;
 when Google Open Sourced
 
 27
@@ -160,12 +160,12 @@ to talk about today.
 
 36
 00:01:25,660 --> 00:01:27,760
-So first I should clarify--
+So first I should clarify &mdash;
 
 37
 00:01:27,760 --> 00:01:30,120
 or at least give some sort of
-definition-- for what I mean
+definition &mdash; for what I mean
 
 38
 00:01:30,120 --> 00:01:32,130
@@ -173,12 +173,12 @@ by programming in the large.
 
 39
 00:01:32,130 --> 00:01:32,960
-Just to throw out--
+Just to throw out &mdash;
 
 40
 00:01:32,960 --> 00:01:36,440
 I'm just going to make up some
-numbers-- but more properties,
+numbers &mdash; but more properties,
 
 41
 00:01:36,440 --> 00:01:37,950
@@ -197,7 +197,7 @@ a large team.
 
 44
 00:01:43,090 --> 00:01:44,920
-Once you have more people--
+Once you have more people &mdash;
 
 45
 00:01:44,920 --> 00:01:46,230
@@ -206,7 +206,7 @@ to build a bigger
 
 46
 00:01:46,230 --> 00:01:47,270
-application--
+application &mdash;
 
 47
 00:01:47,270 --> 00:01:49,140
@@ -759,7 +759,7 @@ languages don't have. It
 
 163
 00:06:50,640 --> 00:06:52,255
-actually took that-- it was
+actually took that &mdash; it was
 inspired by this other
 
 164
@@ -869,7 +869,7 @@ already been built up and were
 186
 00:07:48,830 --> 00:07:51,140
 going and rewriting
-it in GWT--
+it in GWT &mdash;
 
 187
 00:07:51,140 --> 00:07:52,140
@@ -969,7 +969,7 @@ object oriented programming
 
 207
 00:08:45,640 --> 00:08:48,110
-you have-- in Java you have
+you have &mdash; in Java you have
 the private public
 
 208
@@ -1147,7 +1147,7 @@ while running your problem.
 244
 00:10:25,640 --> 00:10:30,310
 But similarly if you have an
-error in an else branch--
+error in an else branch &mdash;
 
 245
 00:10:30,310 --> 00:10:32,040
@@ -1156,7 +1156,7 @@ programmers
 
 246
 00:10:32,040 --> 00:10:34,500
-have hit this problem--
+have hit this problem &mdash;
 
 247
 00:10:34,500 --> 00:10:36,980
@@ -1497,7 +1497,7 @@ and important features.
 
 319
 00:13:42,250 --> 00:13:44,500
-And you can use it to--
+And you can use it to &mdash;
 
 320
 00:13:44,500 --> 00:13:47,420
@@ -1582,7 +1582,7 @@ It saves the users' bandwidth.
 
 337
 00:14:32,990 --> 00:14:35,820
-It starts up-- and the users'
+It starts up &mdash; and the users'
 application will start up
 
 338
@@ -1750,7 +1750,7 @@ doing something better.
 
 372
 00:16:09,640 --> 00:16:11,300
-So here's the first. People--
+So here's the first. People &mdash;
 
 373
 00:16:11,300 --> 00:16:14,450
@@ -1893,8 +1893,8 @@ compiler, which will
 
 402
 00:17:27,420 --> 00:17:30,050
-rename variable for you--
-as we'll see in a bit--
+rename variable for you &mdash;
+as we'll see in a bit &mdash;
 
 403
 00:17:30,050 --> 00:17:32,820
@@ -2050,7 +2050,7 @@ there's a new line and then
 
 435
 00:18:57,350 --> 00:18:59,440
-this whole statement--
+this whole statement &mdash;
 this on its own is a
 
 436
@@ -2111,7 +2111,7 @@ is some sort of user and
 448
 00:19:31,130 --> 00:19:34,610
 potentially a malicious user,
-is responsible for--
+is responsible for &mdash;
 
 449
 00:19:34,610 --> 00:19:39,580
@@ -2125,7 +2125,7 @@ filled out a form or something
 
 451
 00:19:42,080 --> 00:19:45,430
-like that-- if you don't escape
+like that &mdash; if you don't escape
 the less than signs and
 
 452
@@ -2297,7 +2297,7 @@ on IE 6 and they're
 
 488
 00:21:13,280 --> 00:21:14,440
-like, ah, son of a--
+like, ah, son of a &mdash;
 
 489
 00:21:14,440 --> 00:21:16,670
@@ -2669,7 +2669,7 @@ time you instantiate one
 
 568
 00:24:36,120 --> 00:24:37,140
-of these objects--
+of these objects &mdash;
 
 569
 00:24:37,140 --> 00:24:39,980
@@ -2758,7 +2758,7 @@ way to document types.
 
 587
 00:25:23,460 --> 00:25:25,040
-Sometimes libraries--
+Sometimes libraries &mdash;
 
 588
 00:25:25,040 --> 00:25:28,260
@@ -2893,12 +2893,12 @@ hopefully avoid bugs.
 616
 00:26:36,750 --> 00:26:41,510
 So the first thing is, this
-is basically how--
+is basically how &mdash;
 
 617
 00:26:41,510 --> 00:26:43,370
 when you use all the Closure
-tools together--
+tools together &mdash;
 
 618
 00:26:43,370 --> 00:26:46,480
@@ -3282,12 +3282,12 @@ carefully, all the white space
 
 697
 00:30:42,590 --> 00:30:44,030
-that we put in the template--
+that we put in the template &mdash;
 
 698
 00:30:44,030 --> 00:30:46,560
 just to make it readable
-for ourselves--
+for ourselves &mdash;
 
 699
 00:30:46,560 --> 00:30:48,460
@@ -3485,11 +3485,11 @@ that from get button HTML.
 
 740
 00:32:30,820 --> 00:32:32,320
-I find this to be--
+I find this to be &mdash;
 
 741
 00:32:32,320 --> 00:32:34,220
-many people find this to be--
+many people find this to be &mdash;
 much more maintainable.
 
 742
@@ -4418,7 +4418,7 @@ And this is what we see here.
 937
 00:41:02,850 --> 00:41:07,280
 We have some JS stock, as we
-call it, and where we have--
+call it, and where we have &mdash;
 
 938
 00:41:07,280 --> 00:41:09,940
@@ -4879,7 +4879,7 @@ of Google, I feel like.
 1036
 00:45:24,440 --> 00:45:27,620
 How do you transition a very,
-very large project--
+very large project &mdash;
 
 1037
 00:45:27,620 --> 00:45:29,460
@@ -4888,7 +4888,7 @@ would actually benefit
 
 1038
 00:45:29,460 --> 00:45:30,800
-from Closure tools--
+from Closure tools &mdash;
 
 1039
 00:45:30,800 --> 00:45:34,880
@@ -5140,12 +5140,12 @@ thing to do, or the
 
 1091
 00:47:37,640 --> 00:47:39,810
-simplest thing to do--
+simplest thing to do &mdash;
 as simple as writing
 
 1092
 00:47:39,810 --> 00:47:41,000
-compiler code is--
+compiler code is &mdash;
 
 1093
 00:47:41,000 --> 00:47:44,090
@@ -5263,7 +5263,7 @@ requirement.
 1118
 00:48:34,130 --> 00:48:37,390
 AUDIENCE: Can I, if I have
-half my code marked up--
+half my code marked up &mdash;
 
 1119
 00:48:37,390 --> 00:48:40,250
@@ -5422,12 +5422,12 @@ we're interested in.
 
 1152
 00:49:49,960 --> 00:49:52,780
-I am curious-- because it looks
+I am curious &mdash; because it looks
 like you have to run a
 
 1153
 00:49:52,780 --> 00:49:56,100
-compiler pass just to use them--
+compiler pass just to use them &mdash;
 is there any, so I
 
 1154
@@ -5953,7 +5953,7 @@ like any other input.
 
 1266
 00:54:20,990 --> 00:54:22,160
-And also if--
+And also if &mdash;
 
 1267
 00:54:22,160 --> 00:54:24,530
@@ -6096,11 +6096,11 @@ the character offset.
 1296
 00:55:43,710 --> 00:55:46,010
 And I believe right now, only
-Chrome-- and I guess probably
+Chrome &mdash; and I guess probably
 
 1297
 00:55:46,010 --> 00:55:47,130
-then Safari--
+then Safari &mdash;
 
 1298
 00:55:47,130 --> 00:55:48,560

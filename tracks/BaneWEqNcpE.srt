@@ -160,7 +160,7 @@ nifty features for debugging.
 35
 00:01:31,870 --> 00:01:35,150
 So, for example, if I right
-click on this element here--
+click on this element here &mdash;
 
 36
 00:01:35,150 --> 00:01:37,350
@@ -456,12 +456,12 @@ performance.
 98
 00:04:02,350 --> 00:04:05,840
 If you are building an app
-that is Ajax heavy--
+that is Ajax heavy &mdash;
 
 99
 00:04:05,840 --> 00:04:08,220
 a lot of modifications
-within the app--
+within the app &mdash;
 
 100
 00:04:08,220 --> 00:04:11,070
@@ -616,7 +616,7 @@ are hidden in here.
 
 131
 00:05:28,340 --> 00:05:31,430
-So, for example, we have-- if
+So, for example, we have &mdash; if
 you look at the Size column in
 
 132
@@ -755,7 +755,7 @@ Time column.
 160
 00:06:44,040 --> 00:06:46,790
 So here we have, once again,
-two elements--
+two elements &mdash;
 
 161
 00:06:46,790 --> 00:06:48,260
@@ -983,12 +983,12 @@ getting scheduled.
 209
 00:09:00,180 --> 00:09:06,090
 So when the server responds with
-data-- so whether that's
+data &mdash; so whether that's
 
 210
 00:09:06,090 --> 00:09:09,670
 an HTML file or JavaScript
-or CSS file--
+or CSS file &mdash;
 
 211
 00:09:09,670 --> 00:09:14,510
@@ -1008,7 +1008,7 @@ these resources.
 214
 00:09:19,620 --> 00:09:22,610
 And here we can actually show
-you that some documents-- or
+you that some documents &mdash; or
 
 215
 00:09:22,610 --> 00:09:26,430
@@ -1379,11 +1379,11 @@ we push bytes to the browser,
 293
 00:12:37,560 --> 00:12:40,860
 it starts to tokenize those
-files-- so for example, the
+files &mdash; so for example, the
 
 294
 00:12:40,860 --> 00:12:41,720
-HTML file--
+HTML file &mdash;
 
 295
 00:12:41,720 --> 00:12:43,950
@@ -1411,7 +1411,7 @@ in the previous slide.
 300
 00:12:50,880 --> 00:12:54,780
 Alternatively, if the parser
-blocks for whatever reason--
+blocks for whatever reason &mdash;
 
 301
 00:12:54,780 --> 00:12:57,920
@@ -1420,7 +1420,7 @@ JavaScript file which needs to
 
 302
 00:12:57,920 --> 00:12:58,830
-be downloaded--
+be downloaded &mdash;
 
 303
 00:12:58,830 --> 00:13:01,260
@@ -1585,11 +1585,11 @@ you can see that this new
 
 337
 00:14:33,450 --> 00:14:35,220
-frame was sent--
+frame was sent &mdash;
 
 338
 00:14:35,220 --> 00:14:35,830
-hello--
+hello &mdash;
 
 339
 00:14:35,830 --> 00:14:39,830
@@ -1989,7 +1989,7 @@ apart you can keep
 
 422
 00:18:13,800 --> 00:18:15,070
-these things--
+these things &mdash;
 
 423
 00:18:15,070 --> 00:18:17,600
@@ -2172,7 +2172,7 @@ some cases, we are actually
 
 461
 00:19:52,900 --> 00:19:54,930
-highlighting not only--
+highlighting not only &mdash;
 
 462
 00:19:54,930 --> 00:19:58,190
@@ -2330,12 +2330,12 @@ to paint each frame.
 494
 00:21:18,180 --> 00:21:20,600
 So if we stay under
-this line--
+this line &mdash;
 
 495
 00:21:20,600 --> 00:21:22,740
 and we'll see a better
-example in a second--
+example in a second &mdash;
 
 496
 00:21:22,740 --> 00:21:26,110
@@ -2649,13 +2649,13 @@ of these frames.
 
 562
 00:24:14,841 --> 00:24:17,190
-Let's actually pick even--
+Let's actually pick even &mdash;
 there we go.
 
 563
 00:24:17,190 --> 00:24:19,640
 So you can see that this one
-frame-- so we have three
+frame &mdash; so we have three
 
 564
 00:24:19,640 --> 00:24:21,370
@@ -2688,7 +2688,7 @@ happening here.
 570
 00:24:31,760 --> 00:24:34,550
 First, we have this paint
-happening, which-- so we're
+happening, which &mdash; so we're
 
 571
 00:24:34,550 --> 00:24:36,370
@@ -2795,11 +2795,11 @@ everything is nice and smooth.
 
 593
 00:25:30,600 --> 00:25:31,630
-But if you can't--
+But if you can't &mdash;
 
 594
 00:25:31,630 --> 00:25:33,090
-and that's OK--
+and that's OK &mdash;
 
 595
 00:25:33,090 --> 00:25:35,390
@@ -2835,7 +2835,7 @@ So users will notice that.
 602
 00:25:51,320 --> 00:25:55,730
 So stay consistent, try to do
-60 milliseconds where--
+60 milliseconds where &mdash;
 
 603
 00:25:55,730 --> 00:25:58,910
@@ -3522,7 +3522,7 @@ images.
 
 749
 00:32:03,050 --> 00:32:05,790
-I'll show you one--
+I'll show you one &mdash;
 optimize images.
 
 750
@@ -3564,7 +3564,7 @@ metadata and other things.
 
 758
 00:32:28,230 --> 00:32:33,010
-So, one tip that I have is--
+So, one tip that I have is &mdash;
 
 759
 00:32:33,010 --> 00:32:34,720
@@ -3611,7 +3611,7 @@ the original file,
 
 768
 00:32:54,220 --> 00:32:55,420
-and there you go--
+and there you go &mdash;
 
 769
 00:32:55,420 --> 00:32:56,670

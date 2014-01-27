@@ -84,7 +84,7 @@ to authenticate against a
 19
 00:00:52,070 --> 00:00:55,840
 Google app, there's a real easy
-way-- or a Google service
+way &mdash; or a Google service
 
 20
 00:00:55,840 --> 00:00:57,780
@@ -112,7 +112,7 @@ authenticate against Twitter,
 25
 00:01:05,160 --> 00:01:08,280
 maybe your own service, maybe
-you want to authenticate--
+you want to authenticate &mdash;
 
 26
 00:01:08,280 --> 00:01:11,630
@@ -180,7 +180,7 @@ it's right there.
 
 39
 00:01:46,900 --> 00:01:47,400
-So--
+So &mdash;
 
 40
 00:01:47,400 --> 00:01:48,930
@@ -190,7 +190,7 @@ looking the wrong way.
 41
 00:01:48,930 --> 00:01:50,180
 PETE LEPAGE: --yeah,
-it's to your--
+it's to your &mdash;
 
 42
 00:01:50,180 --> 00:01:52,470
@@ -340,12 +340,12 @@ themselves.
 73
 00:02:59,550 --> 00:03:02,390
 So we've introduced this
-experimental--
+experimental &mdash;
 
 74
 00:03:02,390 --> 00:03:04,850
 it's still experimental
-at the moment--
+at the moment &mdash;
 
 75
 00:03:04,850 --> 00:03:06,000
@@ -373,8 +373,8 @@ where that's the
 
 80
 00:03:19,860 --> 00:03:22,570
-Twittergrams-- ah, that's
-a new one--
+Twittergrams &mdash; ah, that's
+a new one &mdash;
 
 81
 00:03:22,570 --> 00:03:25,450
@@ -530,7 +530,7 @@ talking about today.
 113
 00:04:33,210 --> 00:04:34,650
 We are doing this
-thing called--
+thing called &mdash;
 
 114
 00:04:34,650 --> 00:04:35,930
@@ -601,7 +601,7 @@ reader to actually implement.
 128
 00:05:07,030 --> 00:05:08,370
 But what we're going
-to show you is--
+to show you is &mdash;
 
 129
 00:05:08,370 --> 00:05:09,720
@@ -632,7 +632,7 @@ PAUL KINLAN: Oh, my.
 
 135
 00:05:15,280 --> 00:05:16,000
-That's terrible--
+That's terrible &mdash;
 
 136
 00:05:16,000 --> 00:05:18,580
@@ -742,7 +742,7 @@ the app, so it's the outside
 
 159
 00:06:02,680 --> 00:06:04,216
-parts of it where--
+parts of it where &mdash;
 
 160
 00:06:04,216 --> 00:06:05,960
@@ -902,7 +902,7 @@ back to a web page.
 
 193
 00:07:20,750 --> 00:07:23,300
-And our web page-- well, it
+And our web page &mdash; well, it
 doesn't actually exist.
 
 194
@@ -942,11 +942,11 @@ and generate one.
 201
 00:07:43,070 --> 00:07:45,240
 You might not be able to see
-this too well-- and I've just
+this too well &mdash; and I've just
 
 202
 00:07:45,240 --> 00:07:47,232
-done the volume by mistake--
+done the volume by mistake &mdash;
 
 203
 00:07:47,232 --> 00:07:55,140
@@ -1100,7 +1100,7 @@ is because you need to
 
 235
 00:09:00,660 --> 00:09:01,590
-basically--
+basically &mdash;
 
 236
 00:09:01,590 --> 00:09:04,050
@@ -1350,11 +1350,11 @@ do that is you go to the
 290
 00:11:23,790 --> 00:11:25,720
 Instagram developer
-documentation-- it's a pretty
+documentation &mdash; it's a pretty
 
 291
 00:11:25,720 --> 00:11:27,650
-nice documentation--
+nice documentation &mdash;
 
 292
 00:11:27,650 --> 00:11:29,070
@@ -1390,7 +1390,7 @@ Hey.
 
 300
 00:11:43,940 --> 00:11:44,640
-PETE LEPAGE: So these are--
+PETE LEPAGE: So these are &mdash;
 
 301
 00:11:44,640 --> 00:11:45,040
@@ -1581,7 +1581,7 @@ protocol, any scheme.
 
 341
 00:13:21,240 --> 00:13:23,330
-We do have a service--
+We do have a service &mdash;
 
 342
 00:13:23,330 --> 00:13:26,260
@@ -1590,7 +1590,7 @@ users or developers to play
 
 343
 00:13:26,260 --> 00:13:30,560
-with-- where we will host
+with &mdash; where we will host
 the redirect URL for the
 
 344
@@ -1599,7 +1599,7 @@ developer, essentially.
 
 345
 00:13:31,470 --> 00:13:32,790
-So it would extension ID dot--
+So it would extension ID dot &mdash;
 
 346
 00:13:32,790 --> 00:13:35,850
@@ -1633,7 +1633,7 @@ into HTTPS:/ whatever it is.
 352
 00:13:53,180 --> 00:13:54,500
 PETE LEPAGE: OK, so
-that way if--
+that way if &mdash;
 
 353
 00:13:54,500 --> 00:13:55,580
@@ -1735,7 +1735,7 @@ a username-password combination
 
 374
 00:14:56,450 --> 00:14:57,810
-or some secret token--
+or some secret token &mdash;
 
 375
 00:14:57,810 --> 00:15:00,630
@@ -1837,7 +1837,7 @@ in the whole flow.
 396
 00:15:45,350 --> 00:15:49,170
 This is the API basically where
-you go launch web--
+you go launch web &mdash;
 
 397
 00:15:49,170 --> 00:15:52,620
@@ -1947,7 +1947,7 @@ the OAuth flow, is that the
 420
 00:16:49,920 --> 00:16:53,370
 URL contains normally the
-authentication token--
+authentication token &mdash;
 
 421
 00:16:53,370 --> 00:16:56,150
@@ -1986,7 +1986,7 @@ PAUL KINLAN: Yay.
 
 429
 00:17:13,220 --> 00:17:14,499
-We don't need Insta--
+We don't need Insta &mdash;
 
 430
 00:17:14,499 --> 00:17:15,880
@@ -2141,7 +2141,7 @@ to redirect to.
 
 463
 00:18:53,120 --> 00:18:55,080
-And so we make sure--
+And so we make sure &mdash;
 
 464
 00:18:55,080 --> 00:18:56,885
@@ -2150,7 +2150,7 @@ the little image
 
 465
 00:18:56,885 --> 00:18:57,590
-there, there we go--
+there, there we go &mdash;
 
 466
 00:18:57,590 --> 00:19:01,280
@@ -2192,7 +2192,7 @@ updating the variables before.
 
 474
 00:19:19,160 --> 00:19:23,810
-So if all works well--
+So if all works well &mdash;
 
 475
 00:19:23,810 --> 00:19:25,580
@@ -2210,7 +2210,7 @@ nervous now because if this
 
 478
 00:19:33,120 --> 00:19:34,370
-doesn't work then--
+doesn't work then &mdash;
 
 479
 00:19:34,370 --> 00:19:39,780
@@ -2261,7 +2261,7 @@ already logged in, we know who
 
 490
 00:20:06,170 --> 00:20:08,280
-this guy is, feel free to--
+this guy is, feel free to &mdash;
 
 491
 00:20:08,280 --> 00:20:09,020
@@ -2379,7 +2379,7 @@ So we've got this URL.
 516
 00:20:57,640 --> 00:21:03,130
 So basically what's happened is
-we look at the JavaScript--
+we look at the JavaScript &mdash;
 
 517
 00:21:03,130 --> 00:21:04,950
@@ -2473,7 +2473,7 @@ the URL, it'll pass back in.
 536
 00:21:48,770 --> 00:21:57,036
 So we'll just do a sub
-string URL.index of--
+string URL.index of &mdash;
 
 537
 00:21:57,036 --> 00:21:57,800
@@ -2608,7 +2608,7 @@ one side and not the other.
 565
 00:23:04,480 --> 00:23:08,730
 So if anyone wants to provide
-that feedback more publicly--
+that feedback more publicly &mdash;
 
 566
 00:23:08,730 --> 00:23:13,050
@@ -2689,7 +2689,7 @@ but here we go.
 582
 00:23:52,350 --> 00:23:54,060
 PETE LEPAGE: So, Paul,
-one just quick--
+one just quick &mdash;
 
 583
 00:23:54,060 --> 00:23:54,830
@@ -2704,7 +2704,7 @@ Never mind.
 
 586
 00:23:57,660 --> 00:23:58,910
-PAUL KINLAN: So xhr= new XML--
+PAUL KINLAN: So xhr= new XML &mdash;
 
 587
 00:23:58,910 --> 00:24:01,990
@@ -2923,7 +2923,7 @@ Output.
 636
 00:26:23,380 --> 00:26:27,175
 So output is the dump element,
-which is the pre-- the thing
+which is the pre &mdash; the thing
 
 637
 00:26:27,175 --> 00:26:29,520
@@ -2931,7 +2931,7 @@ we showed earlier on today.
 
 638
 00:26:29,520 --> 00:26:30,770
-The JSON.stringify--
+The JSON.stringify &mdash;
 
 639
 00:26:30,770 --> 00:26:34,700
@@ -3018,7 +3018,7 @@ PAUL KINLAN: Reload it.
 658
 00:27:12,590 --> 00:27:14,970
 Let's get some source
-control--
+control &mdash;
 
 659
 00:27:14,970 --> 00:27:16,100
@@ -3170,7 +3170,7 @@ bug is, but is it Instagram
 
 693
 00:28:24,730 --> 00:28:27,200
-API as the--
+API as the &mdash;
 
 694
 00:28:27,200 --> 00:28:29,100
@@ -3226,7 +3226,7 @@ Yeah, that looks OK.
 
 706
 00:28:57,430 --> 00:28:59,530
-Data, right, so--
+Data, right, so &mdash;
 
 707
 00:28:59,530 --> 00:29:02,330
@@ -3353,7 +3353,7 @@ application is doing.
 734
 00:30:01,550 --> 00:30:03,530
 Yeah, I was going to say you
-can't normally access--
+can't normally access &mdash;
 
 735
 00:30:03,530 --> 00:30:05,500
@@ -3414,7 +3414,7 @@ moment, has come back.
 
 747
 00:30:32,460 --> 00:30:33,980
-We will press play and--
+We will press play and &mdash;
 
 748
 00:30:33,980 --> 00:30:38,030
@@ -3443,7 +3443,7 @@ come back and it's
 
 754
 00:30:49,240 --> 00:30:51,050
-not recognized its--
+not recognized its &mdash;
 
 755
 00:30:51,050 --> 00:30:52,300
@@ -3528,12 +3528,12 @@ should work.
 773
 00:31:26,680 --> 00:31:28,746
 And the really nice thing about
-this is the actual-- if
+this is the actual &mdash; if
 
 774
 00:31:28,746 --> 00:31:32,640
 we go back to the code for
-just two seconds--
+just two seconds &mdash;
 
 775
 00:31:32,640 --> 00:31:35,580
@@ -3793,7 +3793,7 @@ now so that if you want to go
 
 829
 00:33:46,980 --> 00:33:48,880
-play with it-- did you get it?
+play with it &mdash; did you get it?
 
 830
 00:33:48,880 --> 00:33:50,780
@@ -4372,7 +4372,7 @@ there tonight.
 954
 00:38:36,180 --> 00:38:37,440
 PAUL KINLAN: It's already 6:00
-o'clock and I've got another--
+o'clock and I've got another &mdash;
 
 955
 00:38:37,440 --> 00:38:39,672

@@ -67,12 +67,12 @@ OK, good.
 
 16
 00:00:34,180 --> 00:00:35,670
-So out of those hands--
+So out of those hands &mdash;
 
 17
 00:00:35,670 --> 00:00:37,110
 you can put them down and
-we'll get a new set--
+we'll get a new set &mdash;
 
 18
 00:00:37,110 --> 00:00:39,890
@@ -242,12 +242,12 @@ a lot about this, though.
 
 53
 00:01:56,070 --> 00:01:57,110
-There's a great article--
+There's a great article &mdash;
 
 54
 00:01:57,110 --> 00:01:59,580
 I forget which site posted
-it-- where John Carmack
+it &mdash; where John Carmack
 
 55
 00:01:59,580 --> 00:02:03,000
@@ -978,12 +978,12 @@ compressed format.
 208
 00:08:16,240 --> 00:08:20,200
 Basically, some of their early
-papers by Van Waveren--
+papers by Van Waveren &mdash;
 
 209
 00:08:20,200 --> 00:08:22,570
 you can find them on the
-Intel Developer site--
+Intel Developer site &mdash;
 
 210
 00:08:22,570 --> 00:08:26,060
@@ -1371,7 +1371,7 @@ different things.
 
 291
 00:11:47,320 --> 00:11:48,220
-Some are from games--
+Some are from games &mdash;
 
 292
 00:11:48,220 --> 00:11:51,200
@@ -2025,12 +2025,12 @@ going to analyze.
 
 428
 00:17:18,280 --> 00:17:20,660
-And we're going to deflate--
+And we're going to deflate &mdash;
 
 429
 00:17:20,660 --> 00:17:22,160
 it's another compression
-algorithm-- we're going to
+algorithm &mdash; we're going to
 
 430
 00:17:22,160 --> 00:17:24,750
@@ -2462,7 +2462,7 @@ zip, though,
 
 520
 00:20:59,640 --> 00:21:02,690
-you get back to about--
+you get back to about &mdash;
 
 521
 00:21:02,690 --> 00:21:05,290
@@ -2532,12 +2532,12 @@ So the blog, [? Seibey ?]
 
 535
 00:21:38,230 --> 00:21:39,020
-Live--
+Live &mdash;
 
 536
 00:21:39,020 --> 00:21:41,160
 you can see the link at the
-bottom of the slide there--
+bottom of the slide there &mdash;
 
 537
 00:21:41,160 --> 00:21:44,720
@@ -2904,7 +2904,7 @@ those unique values.
 
 613
 00:24:57,540 --> 00:24:59,370
-Then in the DST block stream--
+Then in the DST block stream &mdash;
 
 614
 00:24:59,370 --> 00:25:00,750
@@ -3028,11 +3028,11 @@ It gave some really good ones.
 639
 00:26:00,560 --> 00:26:04,220
 So first off, we're at 46%
-without zip compression--
+without zip compression &mdash;
 
 640
 00:26:04,220 --> 00:26:05,750
-that's pretty amazing--
+that's pretty amazing &mdash;
 
 641
 00:26:05,750 --> 00:26:08,010
@@ -3101,7 +3101,7 @@ and the block below it and
 655
 00:26:38,840 --> 00:26:41,660
 block in an adjacent direction
-to it, they're--
+to it, they're &mdash;
 
 656
 00:26:41,660 --> 00:26:44,980
@@ -3396,12 +3396,12 @@ This is awesome.
 
 718
 00:28:58,800 --> 00:29:01,730
-With 8x8 blocks explicitly--
+With 8x8 blocks explicitly &mdash;
 so we're using 8x8 blocks
 
 719
 00:29:01,730 --> 00:29:02,340
-everywhere--
+everywhere &mdash;
 
 720
 00:29:02,340 --> 00:29:05,600
@@ -3473,7 +3473,7 @@ what about the triangle?
 734
 00:29:34,910 --> 00:29:38,230
 We've gotten speed, and
-we've gotten quality--
+we've gotten quality &mdash;
 
 735
 00:29:38,230 --> 00:29:40,130
@@ -3690,12 +3690,12 @@ at my previous companies,
 781
 00:31:23,230 --> 00:31:26,110
 decided to put his
-CRUNCH codec--
+CRUNCH codec &mdash;
 
 782
 00:31:26,110 --> 00:31:28,360
 which is his version of texture
-compression-- online.
+compression &mdash; online.
 
 783
 00:31:28,360 --> 00:31:30,990

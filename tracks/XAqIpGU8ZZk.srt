@@ -2053,11 +2053,11 @@ JavaScript Arrays.
 
 432
 00:17:29,750 --> 00:17:31,560
-So JavaScript Array object--
+So JavaScript Array object &mdash;
 
 433
 00:17:31,560 --> 00:17:33,050
-Array with a capital A--
+Array with a capital A &mdash;
 
 434
 00:17:33,050 --> 00:17:35,970
@@ -3561,7 +3561,7 @@ sort of makes sense.
 
 751
 00:30:28,170 --> 00:30:29,230
-They're very readable--
+They're very readable &mdash;
 
 752
 00:30:29,230 --> 00:30:31,260
@@ -3747,7 +3747,7 @@ code is deopting is using
 790
 00:31:59,330 --> 00:32:01,260
 another handy flag in
-V8-- trace-deopt.
+V8 &mdash; trace-deopt.
 
 791
 00:32:01,260 --> 00:32:02,870
@@ -4042,7 +4042,7 @@ going on with the garbage
 852
 00:34:45,650 --> 00:34:48,940
 collector, you could run again
-a handy dandy V8 flag--
+a handy dandy V8 flag &mdash;
 
 853
 00:34:48,940 --> 00:34:49,659
@@ -4715,7 +4715,7 @@ this is not a
 
 995
 00:40:16,330 --> 00:40:18,850
-problem because PC games--
+problem because PC games &mdash;
 
 996
 00:40:18,850 --> 00:40:20,520
@@ -4872,7 +4872,7 @@ benchmarking.
 1029
 00:41:27,230 --> 00:41:28,760
 And so this is where
-you, yourself--
+you, yourself &mdash;
 
 1030
 00:41:28,760 --> 00:41:29,950
@@ -5439,7 +5439,7 @@ on a computer that is
 
 1149
 00:46:12,930 --> 00:46:15,360
-perfectly a-- computer and
+perfectly a &mdash; computer and
 browser perfectly capable of
 
 1150
@@ -6163,7 +6163,7 @@ I'm going to
 
 1301
 00:52:54,960 --> 00:52:57,120
-hear this most freshest--
+hear this most freshest &mdash;
 
 1302
 00:52:57,120 --> 00:53:00,170

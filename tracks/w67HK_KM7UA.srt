@@ -327,7 +327,7 @@ little bit about the project
 
 72
 00:02:42,220 --> 00:02:44,765
-and-- well, first of all, tell
+and &mdash; well, first of all, tell
 us what you do at Google and
 
 73
@@ -434,7 +434,7 @@ today is an alpha version.
 94
 00:03:35,880 --> 00:03:38,160
 It's something that
-we really--
+we really &mdash;
 
 95
 00:03:38,160 --> 00:03:40,510
@@ -586,7 +586,7 @@ we opened up with.
 126
 00:05:12,710 --> 00:05:16,270
 And, of course, you'll find
-different areas at the top--
+different areas at the top &mdash;
 
 127
 00:05:16,270 --> 00:05:19,360
@@ -614,11 +614,11 @@ this project, you'll
 
 132
 00:05:30,250 --> 00:05:34,790
-hear the abbreviation WPD--
+hear the abbreviation WPD &mdash;
 
 133
 00:05:34,790 --> 00:05:36,580
-Web Platform Docs--
+Web Platform Docs &mdash;
 
 134
 00:05:36,580 --> 00:05:38,510
@@ -660,7 +660,7 @@ SCOTT ROWE: Sure.
 142
 00:05:55,460 --> 00:05:58,470
 We break our content into three
-basic areas-- concepts,
+basic areas &mdash; concepts,
 
 143
 00:05:58,470 --> 00:06:00,380
@@ -698,7 +698,7 @@ down into a property like
 
 150
 00:06:25,300 --> 00:06:27,400
-this-- font size.
+this &mdash; font size.
 
 151
 00:06:27,400 --> 00:06:28,630
@@ -989,7 +989,7 @@ go for it.
 211
 00:09:42,460 --> 00:09:45,300
 You can literally just
-go in this page--
+go in this page &mdash;
 
 212
 00:09:45,300 --> 00:09:47,750
@@ -1088,7 +1088,7 @@ created for different article
 
 232
 00:10:42,480 --> 00:10:46,650
-types-- so for CSS property
+types &mdash; so for CSS property
 or tutorial, any number of
 
 233
@@ -1170,7 +1170,7 @@ you don't want to fix it,
 249
 00:11:25,700 --> 00:11:28,640
 you can go in, hit Edit, check
-off these boxes up here-- you
+off these boxes up here &mdash; you
 
 250
 00:11:28,640 --> 00:11:29,760
@@ -1179,7 +1179,7 @@ called high-level
 
 251
 00:11:29,760 --> 00:11:31,430
-issues in content there--
+issues in content there &mdash;
 
 252
 00:11:31,430 --> 00:11:34,310
@@ -1226,7 +1226,7 @@ to help, it needs
 
 261
 00:11:54,280 --> 00:11:56,800
-to be pretty clear--
+to be pretty clear &mdash;
 
 262
 00:11:56,800 --> 00:11:57,230
@@ -1253,7 +1253,7 @@ down into three different
 
 267
 00:12:03,460 --> 00:12:06,718
-areas, so five-minutes tasks--
+areas, so five-minutes tasks &mdash;
 
 268
 00:12:06,718 --> 00:12:08,200
@@ -1348,7 +1348,7 @@ we wanted to
 
 288
 00:13:09,570 --> 00:13:10,780
-organize it this way--
+organize it this way &mdash;
 
 289
 00:13:10,780 --> 00:13:14,030
@@ -1421,7 +1421,7 @@ community effort.
 303
 00:13:49,410 --> 00:13:50,730
 ALEX KOMOROSKE: And we already
-have the chat channel--
+have the chat channel &mdash;
 
 304
 00:13:50,730 --> 00:13:50,790
@@ -1715,7 +1715,7 @@ possible to translate it.
 366
 00:16:18,560 --> 00:16:20,250
 Of course, right
-now at launch--
+now at launch &mdash;
 
 367
 00:16:20,250 --> 00:16:23,100
@@ -1724,7 +1724,7 @@ little bit of Spanish content
 
 368
 00:16:23,100 --> 00:16:24,640
-that I noticed in the Docs--
+that I noticed in the Docs &mdash;
 
 369
 00:16:24,640 --> 00:16:26,430
@@ -1813,7 +1813,7 @@ have it translated in 32
 
 387
 00:17:02,750 --> 00:17:04,109
-languages--
+languages &mdash;
 
 388
 00:17:04,109 --> 00:17:04,349
@@ -1859,7 +1859,7 @@ will be created later on?
 
 397
 00:17:27,579 --> 00:17:28,790
-Do you want to--
+Do you want to &mdash;
 
 398
 00:17:28,790 --> 00:17:31,760
@@ -2093,7 +2093,7 @@ PETER LUBBERS: Fantastic.
 
 447
 00:19:42,780 --> 00:19:44,920
-Another question from Serge--
+Another question from Serge &mdash;
 
 448
 00:19:44,920 --> 00:19:47,725
@@ -2160,7 +2160,7 @@ rest of the community.
 461
 00:20:12,310 --> 00:20:15,800
 But this totally fits in with
-the mission of the site, so--
+the mission of the site, so &mdash;
 
 462
 00:20:15,800 --> 00:20:19,840
@@ -2197,7 +2197,7 @@ question's come up a lot.
 
 469
 00:20:32,040 --> 00:20:33,500
-At the beginning--
+At the beginning &mdash;
 
 470
 00:20:33,500 --> 00:20:35,660
@@ -2306,7 +2306,7 @@ until the alpha ends and
 492
 00:21:27,650 --> 00:21:33,130
 what about beta?"
-We don't have--
+We don't have &mdash;
 
 493
 00:21:33,130 --> 00:21:35,840
@@ -2474,7 +2474,7 @@ everyone can come to and
 528
 00:22:59,960 --> 00:23:02,460
 centralize around, that
-naturally over time--
+naturally over time &mdash;
 
 529
 00:23:02,460 --> 00:23:04,320
@@ -2781,7 +2781,7 @@ information.
 592
 00:25:30,230 --> 00:25:34,680
 SCOTT ROWE: You can also can
-tag content that is--
+tag content that is &mdash;
 
 593
 00:25:34,680 --> 00:25:37,410
@@ -2951,7 +2951,7 @@ of doc sprints.
 
 628
 00:27:15,990 --> 00:27:17,750
-The first one, actually--
+The first one, actually &mdash;
 
 629
 00:27:17,750 --> 00:27:20,390
@@ -3031,7 +3031,7 @@ those out of the way.
 
 645
 00:28:01,690 --> 00:28:03,030
-So anything--
+So anything &mdash;
 
 646
 00:28:03,030 --> 00:28:04,620
@@ -3129,7 +3129,7 @@ things that didn't go well.
 666
 00:28:46,820 --> 00:28:49,430
 But everyone should
-be able to--
+be able to &mdash;
 
 667
 00:28:49,430 --> 00:28:51,505

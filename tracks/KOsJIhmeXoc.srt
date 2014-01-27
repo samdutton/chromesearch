@@ -67,7 +67,7 @@ interesting things.
 17
 00:00:27,050 --> 00:00:29,910
 So when I say "interesting,"
-what I mean is--
+what I mean is &mdash;
 
 18
 00:00:29,910 --> 00:00:31,850
@@ -863,7 +863,7 @@ use a version of GCC that
 187
 00:07:18,060 --> 00:07:20,870
 targets binaries for different
-platforms--
+platforms &mdash;
 
 188
 00:07:20,870 --> 00:07:22,930
@@ -1368,7 +1368,7 @@ process, and then
 294
 00:11:47,510 --> 00:11:50,820
 applies the inner sandbox to
-make sure it never can--
+make sure it never can &mdash;
 
 295
 00:11:50,820 --> 00:11:54,690
@@ -1482,7 +1482,7 @@ is a stream of bytes.
 319
 00:12:45,070 --> 00:12:47,220
 And they start executing
-the stream of bytes--
+the stream of bytes &mdash;
 
 320
 00:12:47,220 --> 00:12:50,660
@@ -1588,7 +1588,7 @@ x86-64 architecture, where
 
 341
 00:13:46,460 --> 00:13:49,810
-the sysexit return-- so in the
+the sysexit return &mdash; so in the
 operating system return from
 
 342
@@ -4107,7 +4107,7 @@ safer, we actually say, well,
 875
 00:36:04,480 --> 00:36:08,580
 side of this confined range,
-we're going to mark as--
+we're going to mark as &mdash;
 
 876
 00:36:08,580 --> 00:36:09,680
@@ -4915,7 +4915,7 @@ only position where
 
 1049
 00:43:20,100 --> 00:43:21,130
-a handwritten exploit--
+a handwritten exploit &mdash;
 
 1050
 00:43:21,130 --> 00:43:25,490
@@ -5000,7 +5000,7 @@ OK, here's all the jump
 1067
 00:43:59,770 --> 00:44:02,000
 targets, here's all the
-instructions, starts--
+instructions, starts &mdash;
 
 1068
 00:44:02,000 --> 00:44:02,830
@@ -5009,7 +5009,7 @@ the indirect
 
 1069
 00:44:02,830 --> 00:44:05,180
-jumps into the 32 byte--
+jumps into the 32 byte &mdash;
 
 1070
 00:44:05,180 --> 00:44:06,850
@@ -5203,7 +5203,7 @@ do the same kind of jump
 
 1111
 00:45:37,930 --> 00:45:40,310
-constraint because you are--
+constraint because you are &mdash;
 
 1112
 00:45:40,310 --> 00:45:44,090
@@ -5373,7 +5373,7 @@ intermediate format, is there
 
 1148
 00:47:09,900 --> 00:47:12,760
-some way to--
+some way to &mdash;
 
 1149
 00:47:12,760 --> 00:47:16,460
@@ -5395,7 +5395,7 @@ So we can't audit it.
 
 1153
 00:47:21,110 --> 00:47:23,120
-We can't verify that it's--
+We can't verify that it's &mdash;
 
 1154
 00:47:23,120 --> 00:47:25,240

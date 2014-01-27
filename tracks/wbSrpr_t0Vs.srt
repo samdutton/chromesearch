@@ -826,7 +826,7 @@ Ann Robson writes.
 
 182
 00:19:53,020 --> 00:19:54,620
-Also works for--
+Also works for &mdash;
 
 183
 00:19:54,620 --> 00:19:55,340
@@ -834,7 +834,7 @@ ANN ROBSON: Yammer.
 
 184
 00:19:55,340 --> 00:19:57,660
-MARCOS CACERES: Yammer--
+MARCOS CACERES: Yammer &mdash;
 sorry, I forgot.
 
 185
@@ -1926,7 +1926,7 @@ loading yet.
 421
 00:33:35,460 --> 00:33:41,350
 As you gradually load more,
-say you're on--
+say you're on &mdash;
 
 422
 00:33:41,350 --> 00:33:42,300
@@ -2284,12 +2284,12 @@ YOAV WEISS: One more thing.
 500
 00:36:49,280 --> 00:36:52,440
 Regarding the compressive
-images hack--
+images hack &mdash;
 
 501
 00:36:52,440 --> 00:36:54,580
 MARCOS CACERES: Explain what
-the compressive images--
+the compressive images &mdash;
 
 502
 00:36:54,580 --> 00:36:56,960
@@ -2319,7 +2319,7 @@ quite fine, because the
 507
 00:37:20,470 --> 00:37:22,940
 actual display dimensions
-are--
+are &mdash;
 
 508
 00:37:22,940 --> 00:37:24,620
@@ -2328,7 +2328,7 @@ MARCOS CACERES: Hang on, sir.
 509
 00:37:24,620 --> 00:37:27,570
 I'm seeing a few people
-looking at you going--
+looking at you going &mdash;
 
 510
 00:37:27,570 --> 00:37:29,160
@@ -2364,7 +2364,7 @@ they put the compression down
 
 517
 00:37:40,430 --> 00:37:41,460
-to, I think 0--
+to, I think 0 &mdash;
 
 518
 00:37:41,460 --> 00:37:42,130
@@ -2575,12 +2575,12 @@ bounce a question to Peter
 563
 00:39:35,270 --> 00:39:38,630
 Miller, because he's working
-on a lot of--
+on a lot of &mdash;
 
 564
 00:39:38,630 --> 00:39:42,330
 You work on some fashion
-websites, and you've done--
+websites, and you've done &mdash;
 
 565
 00:39:42,330 --> 00:39:47,110
@@ -2697,7 +2697,7 @@ download that when they're
 
 589
 00:40:58,550 --> 00:41:00,730
-paying $19 for--
+paying $19 for &mdash;
 
 590
 00:41:00,730 --> 00:41:01,960
@@ -2740,7 +2740,7 @@ But it does.
 598
 00:41:20,640 --> 00:41:22,570
 But we're getting exactly
-to the point--
+to the point &mdash;
 
 599
 00:41:22,570 --> 00:41:24,780
@@ -2836,7 +2836,7 @@ to all users?
 620
 00:42:21,070 --> 00:42:22,350
 MARCOS CACERES: The
-implications--
+implications &mdash;
 
 621
 00:42:22,350 --> 00:42:24,230
@@ -2908,7 +2908,7 @@ probably excited.
 
 636
 00:43:00,340 --> 00:43:01,160
-ANN ROBSON: You were all like--
+ANN ROBSON: You were all like &mdash;
 
 637
 00:43:01,160 --> 00:43:02,915
@@ -3215,7 +3215,7 @@ an expert on WebP,
 
 703
 00:45:56,270 --> 00:46:01,040
-but it tends to give--
+but it tends to give &mdash;
 
 704
 00:46:01,040 --> 00:46:03,725
@@ -3528,7 +3528,7 @@ about the art direction.
 
 771
 00:48:56,910 --> 00:48:59,300
-If you're going to--
+If you're going to &mdash;
 
 772
 00:48:59,300 --> 00:49:01,880
@@ -3553,7 +3553,7 @@ that downloads very quickly,
 776
 00:49:13,160 --> 00:49:17,180
 and you can have a super
-large HD image for--
+large HD image for &mdash;
 
 777
 00:49:17,180 --> 00:49:19,230
@@ -3619,7 +3619,7 @@ MALE SPEAKER: [INAUDIBLE]
 790
 00:49:49,070 --> 00:49:50,650
 MARCOS CACERES: Sorry,
-Kyle seems to--
+Kyle seems to &mdash;
 
 791
 00:49:50,650 --> 00:49:52,750
@@ -4077,7 +4077,7 @@ battle in that case.
 
 890
 00:54:16,680 --> 00:54:17,790
-PETER MILLER: I think the--
+PETER MILLER: I think the &mdash;
 
 891
 00:54:17,790 --> 00:54:18,630
@@ -4138,7 +4138,7 @@ whinging about.
 903
 00:54:42,860 --> 00:54:45,120
 ESTELLE WEYL: My thought was
-that this would be--
+that this would be &mdash;
 
 904
 00:54:45,120 --> 00:54:46,430
@@ -4245,11 +4245,11 @@ ESTELLE WEYL: No.
 
 926
 00:55:39,465 --> 00:55:42,910
-The browser can say--
+The browser can say &mdash;
 
 927
 00:55:42,910 --> 00:55:45,380
-When you have Client Hints--
+When you have Client Hints &mdash;
 
 928
 00:55:45,380 --> 00:55:46,940
@@ -4266,7 +4266,7 @@ MARCO CACERES: No.
 
 931
 00:55:50,450 --> 00:55:53,000
-We are talking about--
+We are talking about &mdash;
 
 932
 00:55:53,000 --> 00:55:55,410
@@ -4404,7 +4404,7 @@ questions from the floor.
 
 961
 00:57:11,800 --> 00:57:13,740
-I've got one from--
+I've got one from &mdash;
 
 962
 00:57:13,740 --> 00:57:14,950
@@ -4495,7 +4495,7 @@ images than before.
 981
 00:58:05,660 --> 00:58:09,630
 But since I don't think
-this will be--
+this will be &mdash;
 
 982
 00:58:09,630 --> 00:58:11,270
@@ -4528,7 +4528,7 @@ Don't speak without the mic.
 
 989
 00:58:22,300 --> 00:58:25,480
-So I was going to jump to--
+So I was going to jump to &mdash;
 
 990
 00:58:25,480 --> 00:58:26,820
@@ -4780,7 +4780,7 @@ of gut reaction when you
 1045
 01:00:31,400 --> 01:00:34,840
 saw both source set and
-picture and went--
+picture and went &mdash;
 
 1046
 01:00:34,840 --> 01:00:37,240
@@ -4808,7 +4808,7 @@ in it as well.
 
 1051
 01:00:47,730 --> 01:00:50,420
-So this goes straight too--
+So this goes straight too &mdash;
 
 1052
 01:00:50,420 --> 01:00:52,420
@@ -4859,7 +4859,7 @@ we have on the web page.
 1062
 01:01:14,960 --> 01:01:17,310
 So yes, we do have
-to keep it--
+to keep it &mdash;
 
 1063
 01:01:17,310 --> 01:01:19,460
@@ -4877,7 +4877,7 @@ query component?
 1066
 01:01:22,370 --> 01:01:24,500
 ESTELLE WEYL: The media
-query should be--
+query should be &mdash;
 
 1067
 01:01:24,500 --> 01:01:26,280
@@ -5102,7 +5102,7 @@ with the page element.
 1114
 01:03:20,705 --> 01:03:22,440
 MARCO CACERES: I think Yoav
-will come in and--
+will come in and &mdash;
 
 1115
 01:03:22,440 --> 01:03:23,292
@@ -5253,7 +5253,7 @@ MARCO CACERES: Hang on.
 
 1147
 01:04:56,740 --> 01:04:58,190
-So a question I have is--
+So a question I have is &mdash;
 
 1148
 01:04:58,190 --> 01:05:02,230
@@ -5386,7 +5386,7 @@ delay to the entire page load.
 1175
 01:06:34,136 --> 01:06:36,962
 MARCO CACERES: So Ann, do you
-have any comments about--
+have any comments about &mdash;
 
 1176
 01:06:36,962 --> 01:06:40,570
@@ -5402,7 +5402,7 @@ jpegs.
 
 1179
 01:06:42,680 --> 01:06:43,330
-And I think that--
+And I think that &mdash;
 
 1180
 01:06:43,330 --> 01:06:48,470
@@ -5411,7 +5411,7 @@ And I think that--
 1181
 01:06:48,470 --> 01:06:51,470
 ANN ROBSON: No, I think that
-there's definitely--
+there's definitely &mdash;
 
 1182
 01:06:51,470 --> 01:06:52,910
@@ -5732,7 +5732,7 @@ Does anyone want to add?
 1251
 01:09:39,482 --> 01:09:41,140
 You're all probably
-ones that had a--
+ones that had a &mdash;
 
 1252
 01:09:41,140 --> 01:09:44,609
@@ -5807,7 +5807,7 @@ from the audience.
 
 1268
 01:10:35,030 --> 01:10:36,260
-And another one from--
+And another one from &mdash;
 
 1269
 01:10:36,260 --> 01:10:37,700
@@ -5816,7 +5816,7 @@ So I've got a couple here.
 1270
 01:10:37,700 --> 01:10:40,880
 I'm going to go there first,
-and then we'll bounce to--
+and then we'll bounce to &mdash;
 
 1271
 01:10:40,880 --> 01:10:42,540
@@ -6116,7 +6116,7 @@ So that's what we have.
 1335
 01:13:22,990 --> 01:13:24,690
 I think we should
-try and focus--
+try and focus &mdash;
 
 1336
 01:13:24,690 --> 01:13:25,980
@@ -6194,7 +6194,7 @@ Responsive Images Community
 1352
 01:14:10,540 --> 01:14:14,400
 Group on an x-picture
-polyfill--
+polyfill &mdash;
 
 1353
 01:14:14,400 --> 01:14:15,620
@@ -6245,7 +6245,7 @@ a Source Set.
 
 1363
 01:14:47,110 --> 01:14:48,580
-Hopefully it will ship--
+Hopefully it will ship &mdash;
 
 1364
 01:14:48,580 --> 01:14:50,920
@@ -6296,7 +6296,7 @@ be doing is, the spec author
 1374
 01:15:13,440 --> 01:15:14,780
 should be doing, is
-we should also--
+we should also &mdash;
 
 1375
 01:15:14,780 --> 01:15:17,810
@@ -6305,8 +6305,8 @@ and I just thought of while I
 
 1376
 01:15:17,810 --> 01:15:21,670
-was on stage-- so I don't know,
-maybe it has been--
+was on stage &mdash; so I don't know,
+maybe it has been &mdash;
 
 1377
 01:15:21,670 --> 01:15:24,670
@@ -6346,7 +6346,7 @@ So just expanding on that one.
 
 1385
 01:15:36,560 --> 01:15:38,030
-It's basically just taking--
+It's basically just taking &mdash;
 
 1386
 01:15:38,030 --> 01:15:40,470
@@ -6457,7 +6457,7 @@ image size or whatever.
 1408
 01:16:33,760 --> 01:16:35,140
 MARCO CACERES: And would
-you use the classic--
+you use the classic &mdash;
 
 1409
 01:16:35,140 --> 01:16:36,060
@@ -6650,7 +6650,7 @@ seconds to download your page.
 1449
 01:18:19,340 --> 01:18:21,175
 And that's one thing we should
-definitely work on is--
+definitely work on is &mdash;
 
 1450
 01:18:21,175 --> 01:18:22,640
@@ -6901,7 +6901,7 @@ number here.
 1504
 01:20:42,360 --> 01:20:46,220
 Most monitors and devices we
-have today are rendered--
+have today are rendered &mdash;
 
 1505
 01:20:46,220 --> 01:20:48,190
@@ -7959,7 +7959,7 @@ this in the introduction talk.
 1732
 01:28:52,730 --> 01:28:55,790
 A YSlow for rendering
-performance is--
+performance is &mdash;
 
 1733
 01:28:55,790 --> 01:28:58,970
@@ -8740,7 +8740,7 @@ you're doing something that's
 
 1900
 01:35:22,550 --> 01:35:23,670
-known to be a hack--
+known to be a hack &mdash;
 
 1901
 01:35:23,670 --> 01:35:25,130
@@ -9188,7 +9188,7 @@ positioning and then animate
 
 1994
 01:39:20,960 --> 01:39:21,710
-top, it will--
+top, it will &mdash;
 
 1995
 01:39:21,710 --> 01:39:22,960
@@ -9289,7 +9289,7 @@ PAUL LEWIS: Or filter.
 2016
 01:40:19,950 --> 01:40:22,885
 And Paul Irish actually
-helped me figure--
+helped me figure &mdash;
 
 2017
 01:40:22,885 --> 01:40:26,620
@@ -9360,7 +9360,7 @@ right now is
 
 2031
 01:40:54,780 --> 01:40:56,110
-that we have two--
+that we have two &mdash;
 
 2032
 01:40:56,110 --> 01:40:57,600
@@ -9815,7 +9815,7 @@ regression.
 
 2129
 01:44:43,660 --> 01:44:45,230
-So I'm wondering--
+So I'm wondering &mdash;
 
 2130
 01:44:45,230 --> 01:44:48,330
@@ -9900,7 +9900,7 @@ right now.
 2147
 01:45:27,170 --> 01:45:31,500
 Definitely WebKit and Blink
-are both working on--
+are both working on &mdash;
 
 2148
 01:45:31,500 --> 01:45:32,410
@@ -10556,7 +10556,7 @@ things you can do?
 2290
 01:51:30,140 --> 01:51:31,860
 JONATHAN KLEIN: I think more
-to that point-- we talked
+to that point &mdash; we talked
 
 2291
 01:51:31,860 --> 01:51:33,680
@@ -10620,7 +10620,7 @@ But that's got to be balanced.
 
 2304
 01:51:58,690 --> 01:52:00,050
-Because you want--
+Because you want &mdash;
 
 2305
 01:52:00,050 --> 01:52:01,370
@@ -11143,7 +11143,7 @@ good for GC.
 2416
 01:56:43,910 --> 01:56:48,950
 But personally speaking,
-I don't believe it's--
+I don't believe it's &mdash;
 
 2417
 01:56:48,950 --> 01:56:52,130
@@ -11171,7 +11171,7 @@ be the problems?
 2422
 01:57:06,130 --> 01:57:10,890
 PAUL LEWIS: The browser is
-uniquely positioned to--
+uniquely positioned to &mdash;
 
 2423
 01:57:10,890 --> 01:57:12,110
@@ -11423,7 +11423,7 @@ has a perspective.
 2477
 01:59:14,030 --> 01:59:15,280
 PAUL LEWIS: When you say
-easier to handle--
+easier to handle &mdash;
 
 2478
 01:59:15,280 --> 01:59:18,880
@@ -11445,7 +11445,7 @@ You could actually see it.
 2482
 01:59:26,150 --> 01:59:30,090
 I know the inability to
-see pictures in the--
+see pictures in the &mdash;
 
 2483
 01:59:30,090 --> 01:59:30,460
@@ -11714,7 +11714,7 @@ right now, if I'm honest.
 2541
 02:01:55,520 --> 02:01:59,020
 From my point of view,
-we don't have--
+we don't have &mdash;
 
 2542
 02:01:59,020 --> 02:02:01,630
@@ -11784,12 +11784,12 @@ could potentially look at.
 2556
 02:02:30,510 --> 02:02:32,180
 Because if it's all
-done on demand--
+done on demand &mdash;
 
 2557
 02:02:32,180 --> 02:02:34,540
 So again, this is from a
-Chrome prospective--
+Chrome prospective &mdash;
 
 2558
 02:02:34,540 --> 02:02:36,470
@@ -11949,7 +11949,7 @@ talked about in the last
 
 2592
 02:04:00,500 --> 02:04:02,140
-panel-- especially if you
+panel &mdash; especially if you
 control your images.
 
 2593
@@ -12194,7 +12194,7 @@ power back to the browser.
 2643
 02:06:06,500 --> 02:06:08,660
 And lets the browser
-render without--
+render without &mdash;
 
 2644
 02:06:08,660 --> 02:06:11,550
@@ -12434,7 +12434,7 @@ uncoordinated.
 
 2696
 02:08:16,570 --> 02:08:20,070
-It's not these little tight--
+It's not these little tight &mdash;
 
 2697
 02:08:20,070 --> 02:08:22,000
@@ -12579,7 +12579,7 @@ applications where the
 
 2727
 02:09:37,360 --> 02:09:39,370
-DOM is not 30,000 nodes--
+DOM is not 30,000 nodes &mdash;
 
 2728
 02:09:39,370 --> 02:09:41,240
@@ -12741,7 +12741,7 @@ the next question.
 
 2762
 02:10:57,540 --> 02:10:59,380
-And no would be--
+And no would be &mdash;
 
 2763
 02:10:59,380 --> 02:11:00,230
@@ -13444,7 +13444,7 @@ That is, to me, a hack.
 2914
 02:16:47,520 --> 02:16:49,530
 First of all, it is
-not hardware--
+not hardware &mdash;
 
 2915
 02:16:49,530 --> 02:16:51,969
@@ -13637,7 +13637,7 @@ bridge that gap.
 2956
 02:18:29,990 --> 02:18:33,700
 At least if it's too difficult
-or it's a horrible API--
+or it's a horrible API &mdash;
 
 2957
 02:18:33,700 --> 02:18:36,969
@@ -13733,7 +13733,7 @@ STEVE THAIR: OK.
 
 2978
 02:19:23,159 --> 02:19:24,304
-ANDREW BETTS: Then bring up--
+ANDREW BETTS: Then bring up &mdash;
 
 2979
 02:19:24,304 --> 02:32:50,698
@@ -13957,7 +13957,7 @@ to the people on a panel.
 
 3030
 02:38:33,200 --> 02:38:37,210
-On my right, I've got the--
+On my right, I've got the &mdash;
 
 3031
 02:38:37,210 --> 02:38:39,510
@@ -14013,7 +14013,7 @@ stuff that they're dealing.
 
 3042
 02:39:06,190 --> 02:39:07,350
-And then we've got--
+And then we've got &mdash;
 
 3043
 02:39:07,350 --> 02:39:08,580
@@ -14877,7 +14877,7 @@ your thoughts.
 3231
 02:48:08,550 --> 02:48:11,280
 But meanwhile, what
-happens now--
+happens now &mdash;
 
 3232
 02:48:11,280 --> 02:48:15,620
@@ -14932,7 +14932,7 @@ in track?
 
 3243
 02:48:43,460 --> 02:48:46,900
-Also, how do we deal with some--
+Also, how do we deal with some &mdash;
 because not all the
 
 3244
@@ -15121,7 +15121,7 @@ broader than that.
 3285
 02:50:32,200 --> 02:50:34,110
 I think there's some bias
-to think about--
+to think about &mdash;
 
 3286
 02:50:34,110 --> 02:50:35,010
@@ -15407,7 +15407,7 @@ some of those.
 
 3347
 02:52:52,610 --> 02:52:53,090
-And what can--
+And what can &mdash;
 
 3348
 02:52:53,090 --> 02:52:54,966
@@ -15422,7 +15422,7 @@ BEN VINEGAR: Yes!
 
 3351
 02:52:58,250 --> 02:52:59,600
-And I don't even mean that--
+And I don't even mean that &mdash;
 
 3352
 02:52:59,600 --> 02:53:00,340
@@ -15492,7 +15492,7 @@ Yoav Weiss.
 
 3366
 02:53:30,753 --> 02:53:31,186
-Yoav--
+Yoav &mdash;
 
 3367
 02:53:31,186 --> 02:53:32,436
@@ -16058,7 +16058,7 @@ STEVE THAIR: Anyone?
 3488
 02:58:20,450 --> 02:58:21,850
 GUY PODJARNY: I can take
-that because I know--
+that because I know &mdash;
 
 3489
 02:58:21,850 --> 02:58:22,430
@@ -16071,12 +16071,12 @@ number of domains, as pointed
 
 3491
 02:58:24,530 --> 02:58:25,600
-out before--
+out before &mdash;
 
 3492
 02:58:25,600 --> 02:58:27,580
 this has not been coordinated,
-just to make sure--
+just to make sure &mdash;
 
 3493
 02:58:27,580 --> 02:58:30,450
@@ -16223,7 +16223,7 @@ many third-party
 
 3524
 02:59:38,240 --> 02:59:40,720
-JavaScripts to my--
+JavaScripts to my &mdash;
 
 3525
 02:59:40,720 --> 02:59:43,810
@@ -16444,7 +16444,7 @@ with this topic.
 
 3572
 03:01:35,140 --> 03:01:36,950
-GUY PODJARNY: Well, I--
+GUY PODJARNY: Well, I &mdash;
 
 3573
 03:01:36,950 --> 03:01:37,360
@@ -16461,7 +16461,7 @@ wants to take it?
 
 3576
 03:01:39,550 --> 03:01:40,370
-Kyle or--
+Kyle or &mdash;
 
 3577
 03:01:40,370 --> 03:01:41,820
@@ -17071,7 +17071,7 @@ a ridiculous pain
 
 3709
 03:07:10,870 --> 03:07:13,030
-point, to go to--
+point, to go to &mdash;
 
 3710
 03:07:13,030 --> 03:07:14,700
@@ -17080,7 +17080,7 @@ that there's one of me and
 
 3711
 03:07:14,700 --> 03:07:15,450
-there's thousands--
+there's thousands &mdash;
 
 3712
 03:07:15,450 --> 03:07:17,190
@@ -17102,7 +17102,7 @@ or whatever would be brutal.
 
 3716
 03:07:22,880 --> 03:07:23,840
-So that's just--
+So that's just &mdash;
 
 3717
 03:07:23,840 --> 03:07:24,220
@@ -17252,8 +17252,8 @@ should tackle that.
 
 3748
 03:08:37,870 --> 03:08:42,560
-Because our assessment-- we've
-done some mass testing on it--
+Because our assessment &mdash; we've
+done some mass testing on it &mdash;
 
 3749
 03:08:42,560 --> 03:08:45,740
@@ -17961,7 +17961,7 @@ never tying up the UI thread.
 3901
 03:15:11,660 --> 03:15:14,280
 I don't think that's something
-that I can--
+that I can &mdash;
 
 3902
 03:15:14,280 --> 03:15:16,640
@@ -17993,7 +17993,7 @@ You can bring me back.
 
 3908
 03:15:28,300 --> 03:15:30,750
-STEVE THAIR: The question--
+STEVE THAIR: The question &mdash;
 
 3909
 03:15:30,750 --> 03:15:34,090
@@ -18328,7 +18328,7 @@ It's just going to break.
 3980
 03:18:48,340 --> 03:18:50,792
 STOYAN STEFANOV: Well, there's
-this organization called--
+this organization called &mdash;
 
 3981
 03:18:50,792 --> 03:18:52,550
@@ -18674,7 +18674,7 @@ aspect, which was around.
 
 4055
 03:22:10,322 --> 03:22:11,615
-Yeah, having some shared--
+Yeah, having some shared &mdash;
 
 4056
 03:22:11,615 --> 03:22:15,440
@@ -19124,7 +19124,7 @@ able to check during the build
 4154
 03:26:02,990 --> 03:26:05,910
 process that somebody somewhere
-included a block--
+included a block &mdash;
 
 4155
 03:26:05,910 --> 03:26:06,600
@@ -19283,7 +19283,7 @@ blocked for some reason.
 4188
 03:27:17,870 --> 03:27:19,255
 STEVE THAIR: Kyle Kinneman,
-you had a--
+you had a &mdash;
 
 4189
 03:27:19,255 --> 03:27:19,910
@@ -19617,7 +19617,7 @@ We've got people from Mozilla.
 
 4261
 03:30:05,610 --> 03:30:07,220
-We've got people--
+We've got people &mdash;
 
 4262
 03:30:07,220 --> 03:30:09,340
@@ -19752,7 +19752,7 @@ are just nonexistent.
 
 4291
 03:31:06,100 --> 03:31:07,170
-There are tons of--
+There are tons of &mdash;
 
 4292
 03:31:07,170 --> 03:31:08,000
@@ -19906,12 +19906,12 @@ person?
 
 4324
 03:32:20,140 --> 03:32:20,690
-You create--
+You create &mdash;
 
 4325
 03:32:20,690 --> 03:32:21,980
 STOYAN STEFANOV:
-Anyone who's--
+Anyone who's &mdash;
 
 4326
 03:32:21,980 --> 03:32:24,150
@@ -20130,7 +20130,7 @@ STEVE THAIR: Yeah.
 4373
 03:33:56,520 --> 03:33:59,570
 Well, thank you very much to
-the people on the party--
+the people on the party &mdash;
 
 4374
 03:33:59,570 --> 03:34:00,550
@@ -20138,7 +20138,7 @@ People on the party?
 
 4375
 03:34:00,550 --> 03:34:01,295
-P-- p--
+P &mdash; p &mdash;
 
 4376
 03:34:01,295 --> 03:34:02,750

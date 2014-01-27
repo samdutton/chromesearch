@@ -143,7 +143,7 @@ about responsive development.
 33
 00:01:34,757 --> 00:01:36,720
 I liked a quote on
-Andy's blog--
+Andy's blog &mdash;
 
 34
 00:01:36,720 --> 00:01:39,710
@@ -686,7 +686,7 @@ a little bit, added some
 
 149
 00:06:53,530 --> 00:06:54,150
-experimental enhance--
+experimental enhance &mdash;
 
 150
 00:06:54,150 --> 00:06:58,180
@@ -852,7 +852,7 @@ columns that the image spans
 184
 00:08:29,110 --> 00:08:31,100
 based on the total number
-of columns--
+of columns &mdash;
 
 185
 00:08:31,100 --> 00:08:34,380
@@ -1203,7 +1203,7 @@ are working on some
 260
 00:12:07,840 --> 00:12:11,530
 really nice proposals for
-new CSS modules--
+new CSS modules &mdash;
 
 261
 00:12:11,530 --> 00:12:15,150
@@ -1259,7 +1259,7 @@ seamless iframes, web
 272
 00:12:45,320 --> 00:12:48,970
 components, the shadow DOM,
-custom elements-- which, when
+custom elements &mdash; which, when
 
 273
 00:12:48,970 --> 00:12:52,900
@@ -1375,7 +1375,7 @@ to retina images
 
 297
 00:14:01,000 --> 00:14:03,490
-when it's really important--
+when it's really important &mdash;
 for things like icons or
 
 298
@@ -1533,7 +1533,7 @@ sure you're using
 330
 00:15:45,830 --> 00:15:48,330
 rounded corners and drop
-shadows as much as--
+shadows as much as &mdash;
 
 331
 00:15:48,330 --> 00:15:50,180
@@ -1885,7 +1885,7 @@ and learn that some use cases
 
 405
 00:19:24,610 --> 00:19:25,700
-just don't fit--
+just don't fit &mdash;
 
 406
 00:19:25,700 --> 00:19:28,210
@@ -1949,7 +1949,7 @@ necessary.
 418
 00:20:08,186 --> 00:20:11,870
 AMBER WEINBERG: Well, kind
-of related to polyfills--
+of related to polyfills &mdash;
 
 419
 00:20:11,870 --> 00:20:15,740
@@ -1967,11 +1967,11 @@ development and stuff.
 
 422
 00:20:19,800 --> 00:20:22,190
-And a user--
+And a user &mdash;
 
 423
 00:20:22,190 --> 00:20:23,690
-you, George--
+you, George &mdash;
 
 424
 00:20:23,690 --> 00:20:27,610
@@ -1999,7 +1999,7 @@ because CSS was known to be a
 
 429
 00:20:40,400 --> 00:20:42,030
-simple language--
+simple language &mdash;
 
 430
 00:20:42,030 --> 00:20:43,640
@@ -2013,7 +2013,7 @@ much more complicated.
 432
 00:20:46,250 --> 00:20:48,820
 GEORGE CRAWFORD: That's my point
-totally-- that it's not
+totally &mdash; that it's not
 
 433
 00:20:48,820 --> 00:20:51,430
@@ -2065,7 +2065,7 @@ gets more and more complex.
 
 443
 00:21:21,830 --> 00:21:26,230
-And maybe the question is-- is
+And maybe the question is &mdash; is
 CSS the right language or the
 
 444
@@ -2176,7 +2176,7 @@ technology.
 466
 00:22:30,900 --> 00:22:36,290
 And it feels counter-intuitive
-to go over and over and over--
+to go over and over and over &mdash;
 
 467
 00:22:36,290 --> 00:22:38,210
@@ -2220,7 +2220,7 @@ all in JavaScript?
 475
 00:22:54,410 --> 00:22:57,820
 And I really think that stuff
-like CSS Regions--
+like CSS Regions &mdash;
 
 476
 00:22:57,820 --> 00:23:00,680
@@ -2253,7 +2253,7 @@ where CSS and JavaScript
 
 482
 00:23:12,770 --> 00:23:15,400
-should really work together--
+should really work together &mdash;
 in handing, for example,
 
 483
@@ -2551,7 +2551,7 @@ But it's desirable.
 545
 00:26:20,150 --> 00:26:21,840
 And maybe there's something
-around--
+around &mdash;
 
 546
 00:26:21,840 --> 00:26:26,000
@@ -2630,7 +2630,7 @@ reading those tags.
 561
 00:27:12,850 --> 00:27:15,700
 So for example, for a certain
-module, you might--
+module, you might &mdash;
 
 562
 00:27:15,700 --> 00:27:19,930
@@ -3003,7 +3003,7 @@ on other elements
 
 639
 00:30:48,150 --> 00:30:50,330
-is the wrong approach--
+is the wrong approach &mdash;
 
 640
 00:30:50,330 --> 00:30:53,510
@@ -3245,7 +3245,7 @@ means for
 
 691
 00:32:59,950 --> 00:33:01,700
-Google Glass, for example--
+Google Glass, for example &mdash;
 
 692
 00:33:01,700 --> 00:33:08,740
@@ -3339,7 +3339,7 @@ Is it the open nature of it?
 
 711
 00:34:02,360 --> 00:34:05,562
-Or is it the--
+Or is it the &mdash;
 
 712
 00:34:05,562 --> 00:34:08,632
@@ -3459,7 +3459,7 @@ displaying the app.
 
 736
 00:35:26,490 --> 00:35:26,980
-But--
+But &mdash;
 
 737
 00:35:26,980 --> 00:35:28,160
@@ -3592,12 +3592,12 @@ still doing user agent
 
 764
 00:36:46,790 --> 00:36:48,755
-detection on the server to--
+detection on the server to &mdash;
 
 765
 00:36:48,755 --> 00:36:50,160
 GEORGE CRAWFORD: Sure,
-as was said in an--
+as was said in an &mdash;
 
 766
 00:36:50,160 --> 00:36:51,370
@@ -3723,7 +3723,7 @@ simulate all of the user
 
 792
 00:37:55,500 --> 00:37:58,540
-agent's font rendering--
+agent's font rendering &mdash;
 
 793
 00:37:58,540 --> 00:38:01,670
@@ -3850,7 +3850,7 @@ how you use it.
 819
 00:39:12,490 --> 00:39:15,640
 For example, we had an
-example earlier--
+example earlier &mdash;
 
 820
 00:39:15,640 --> 00:39:17,850
@@ -3917,7 +3917,7 @@ with viewport dimensions is
 833
 00:39:47,740 --> 00:39:51,040
 because that's the one thing
-we have on the client to--
+we have on the client to &mdash;
 
 834
 00:39:51,040 --> 00:39:53,370
@@ -3965,7 +3965,7 @@ zoom-and-swipe sites?
 843
 00:40:16,050 --> 00:40:18,810
 Considering that's
-originally--
+originally &mdash;
 
 844
 00:40:18,810 --> 00:40:22,510
@@ -4055,7 +4055,7 @@ fantastically easy to get to
 
 863
 00:41:13,300 --> 00:41:15,580
-the-- if you know the layout of
+the &mdash; if you know the layout of
 the page, you don't need to
 
 864
@@ -4141,7 +4141,7 @@ split into pages?
 881
 00:42:01,010 --> 00:42:02,580
 And I think this
-kind of thing--
+kind of thing &mdash;
 
 882
 00:42:02,580 --> 00:42:04,980
@@ -4589,12 +4589,12 @@ it's still quite young.
 974
 00:46:13,120 --> 00:46:16,040
 And these things, as we learn
-by adopting bits of print--
+by adopting bits of print &mdash;
 
 975
 00:46:16,040 --> 00:46:19,560
 and some stuff does work,
-some stuff doesn't--
+some stuff doesn't &mdash;
 
 976
 00:46:19,560 --> 00:46:21,490
@@ -4631,7 +4631,7 @@ AMBER WEINBERG: OK.
 983
 00:46:38,440 --> 00:46:45,570
 So kind of on the same layout
-issue, Oliver asked-- current
+issue, Oliver asked &mdash; current
 
 984
 00:46:45,570 --> 00:46:47,710
@@ -4718,7 +4718,7 @@ is very valuable for all the
 
 1002
 00:47:41,460 --> 00:47:42,440
-reasons we've talked about--
+reasons we've talked about &mdash;
 
 1003
 00:47:42,440 --> 00:47:44,390

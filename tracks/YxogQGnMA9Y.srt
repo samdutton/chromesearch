@@ -9,7 +9,7 @@ for coming.
 3
 00:00:16,980 --> 00:00:20,580
 We're talking about Putting the
-App Back Into Web App--
+App Back Into Web App &mdash;
 
 4
 00:00:20,580 --> 00:00:22,150
@@ -185,7 +185,7 @@ in the past five
 
 43
 00:01:44,760 --> 00:01:46,880
-years-- you've seen it here at
+years &mdash; you've seen it here at
 Google I/O. We have these
 
 44
@@ -706,7 +706,7 @@ It has nice closures.
 155
 00:05:54,450 --> 00:05:55,810
 When I first put up the
-code for this--
+code for this &mdash;
 
 156
 00:05:55,810 --> 00:05:57,400
@@ -715,7 +715,7 @@ JavaScript code for
 
 157
 00:05:57,400 --> 00:05:58,060
-WebSockets--
+WebSockets &mdash;
 
 158
 00:05:58,060 --> 00:06:01,430
@@ -1281,7 +1281,7 @@ simple here.
 
 275
 00:10:42,700 --> 00:10:43,370
-There's just--
+There's just &mdash;
 
 276
 00:10:43,370 --> 00:10:47,240
@@ -1388,7 +1388,7 @@ which just bootstraps.
 298
 00:11:38,400 --> 00:11:41,330
 It detects if you've got
-Dart loaded or not--
+Dart loaded or not &mdash;
 
 299
 00:11:41,330 --> 00:11:42,960
@@ -1571,7 +1571,7 @@ features of Dart.
 337
 00:13:35,920 --> 00:13:39,550
 So for example, this query API
-here is-- it's kind of
+here is &mdash; it's kind of
 
 338
 00:13:39,550 --> 00:13:42,950
@@ -1864,7 +1864,7 @@ Optional Named Parameters.
 399
 00:16:13,800 --> 00:16:19,820
 So I don't have to remember
-the order in which it's--
+the order in which it's &mdash;
 
 400
 00:16:19,820 --> 00:16:20,920
@@ -1897,7 +1897,7 @@ I have different typos.
 
 406
 00:16:33,740 --> 00:16:35,910
-So you can guess which ones--
+So you can guess which ones &mdash;
 
 407
 00:16:35,910 --> 00:16:37,460
@@ -2044,7 +2044,7 @@ bit more interesting.
 
 439
 00:18:00,600 --> 00:18:03,250
-First of all let's just--
+First of all let's just &mdash;
 
 440
 00:18:03,250 --> 00:18:05,140
@@ -2115,7 +2115,7 @@ just load it back up.
 454
 00:18:42,230 --> 00:18:44,740
 And again, I'm just
-reloading--
+reloading &mdash;
 
 455
 00:18:44,740 --> 00:18:46,660
@@ -2406,7 +2406,7 @@ the second Canvas.
 
 517
 00:21:32,840 --> 00:21:34,640
-A lot of times--
+A lot of times &mdash;
 
 518
 00:21:34,640 --> 00:21:37,390
@@ -2652,7 +2652,7 @@ same URL, go to another
 
 570
 00:24:08,570 --> 00:24:10,260
-browser, Firefox--
+browser, Firefox &mdash;
 
 571
 00:24:10,260 --> 00:24:13,980
@@ -3894,7 +3894,7 @@ We can just dive in here.
 834
 00:34:36,630 --> 00:34:38,449
 And we can see that,
-OK, there's--
+OK, there's &mdash;
 
 835
 00:34:38,449 --> 00:34:39,870
@@ -3967,7 +3967,7 @@ that to completion.
 
 850
 00:35:10,940 --> 00:35:12,080
-And we can see--
+And we can see &mdash;
 
 851
 00:35:12,080 --> 00:35:13,890
@@ -4164,7 +4164,7 @@ we can kind of get a sense of
 892
 00:37:10,130 --> 00:37:12,550
 what's what by it, because the
-comments just show up at--
+comments just show up at &mdash;
 
 893
 00:37:12,550 --> 00:37:15,920
@@ -4257,7 +4257,7 @@ changed as well.
 
 912
 00:38:01,820 --> 00:38:05,020
-And if we go to a terminal--
+And if we go to a terminal &mdash;
 
 913
 00:38:05,020 --> 00:38:08,540
@@ -4542,7 +4542,7 @@ it did the right thing.
 
 974
 00:40:44,720 --> 00:40:45,430
-Oh, this is--
+Oh, this is &mdash;
 
 975
 00:40:45,430 --> 00:40:46,040
@@ -4678,11 +4678,11 @@ Line Tools.
 1004
 00:41:58,230 --> 00:42:00,560
 And there's a mailing list there
-that you can join-- it's
+that you can join &mdash; it's
 
 1005
 00:42:00,560 --> 00:42:01,410
-very active--
+very active &mdash;
 
 1006
 00:42:01,410 --> 00:42:04,270
@@ -4937,7 +4937,7 @@ when people deploy Dart
 1059
 00:44:22,760 --> 00:44:25,440
 applications that you'll
-be able to--
+be able to &mdash;
 
 1060
 00:44:25,440 --> 00:44:28,680
@@ -5026,7 +5026,7 @@ DAN GROVE: Yeah.
 
 1079
 00:45:05,270 --> 00:45:07,690
-So I think there's actually--
+So I think there's actually &mdash;
 
 1080
 00:45:07,690 --> 00:45:10,900
@@ -5252,12 +5252,12 @@ performance we wanted, and we
 
 1126
 00:47:16,700 --> 00:47:18,686
-were able to--
+were able to &mdash;
 
 1127
 00:47:18,686 --> 00:47:20,730
 AUDIENCE: Is that a milestone
-that you have for like--
+that you have for like &mdash;
 
 1128
 00:47:20,730 --> 00:47:24,120
@@ -5267,7 +5267,7 @@ coming up in fall 2012.
 1129
 00:47:24,120 --> 00:47:26,240
 Is that something you
-have in a miles--
+have in a miles &mdash;
 
 1130
 00:47:26,240 --> 00:47:27,830
@@ -5413,7 +5413,7 @@ DAN GROVE: Thanks.
 1161
 00:48:32,810 --> 00:48:34,930
 AUDIENCE: So my question
-is, how does Dart--
+is, how does Dart &mdash;
 
 1162
 00:48:34,930 --> 00:48:37,635
@@ -5441,7 +5441,7 @@ interpolation, lexical scoping.
 1167
 00:48:47,940 --> 00:48:49,280
 It's got a lot of
-things that--
+things that &mdash;
 
 1168
 00:48:49,280 --> 00:48:53,680
@@ -5460,7 +5460,7 @@ about adoption?
 1171
 00:48:56,740 --> 00:48:58,770
 Is that your biggest
-thing, or--
+thing, or &mdash;
 
 1172
 00:48:58,770 --> 00:49:00,690
@@ -5500,7 +5500,7 @@ go into a lot of
 
 1180
 00:49:16,350 --> 00:49:19,270
-detail there where they've--
+detail there where they've &mdash;
 
 1181
 00:49:19,270 --> 00:49:20,780
@@ -5528,7 +5528,7 @@ are hard to get around.
 1186
 00:49:28,260 --> 00:49:30,120
 So there is an advantage,
-at some point--
+at some point &mdash;
 
 1187
 00:49:30,120 --> 00:49:31,780
@@ -5695,7 +5695,7 @@ external debuggers.
 
 1222
 00:50:47,510 --> 00:50:49,550
-And I don't think we had to--
+And I don't think we had to &mdash;
 
 1223
 00:50:49,550 --> 00:50:52,380
@@ -5834,7 +5834,7 @@ right now, but
 
 1252
 00:51:58,790 --> 00:52:00,130
-I think Lars actually--
+I think Lars actually &mdash;
 
 1253
 00:52:00,130 --> 00:52:01,830
@@ -5904,7 +5904,7 @@ And we use it pretty heavily.
 
 1268
 00:52:23,690 --> 00:52:26,600
-DAN GROVE: Yeah, and there's--
+DAN GROVE: Yeah, and there's &mdash;
 
 1269
 00:52:26,600 --> 00:52:28,060
@@ -6011,7 +6011,7 @@ support or maybe solely be
 
 1292
 00:53:24,970 --> 00:53:25,830
-supported--
+supported &mdash;
 
 1293
 00:53:25,830 --> 00:53:31,390
@@ -6104,7 +6104,7 @@ everywhere.
 
 1312
 00:54:17,570 --> 00:54:18,460
-We want to make that--
+We want to make that &mdash;
 
 1313
 00:54:18,460 --> 00:54:22,120
@@ -6238,7 +6238,7 @@ information is useful, because
 
 1341
 00:55:29,070 --> 00:55:30,590
-we do-- and I didn't show
+we do &mdash; and I didn't show
 an example of this.
 
 1342
@@ -6281,7 +6281,7 @@ extended, element or whatever.
 
 1350
 00:55:52,400 --> 00:55:52,690
-And--
+And &mdash;
 
 1351
 00:55:52,690 --> 00:55:54,230
@@ -6291,7 +6291,7 @@ knows that the base type is
 1352
 00:55:54,230 --> 00:55:57,551
 element, it's able
-to show you--
+to show you &mdash;
 
 1353
 00:55:57,551 --> 00:56:00,390
@@ -6342,16 +6342,16 @@ an attribute that
 
 1363
 00:56:19,610 --> 00:56:22,150
-doesn't exist, the--
+doesn't exist, the &mdash;
 
 1364
 00:56:22,150 --> 00:56:23,520
 DAN GROVE: Yeah, you'll actually
-get a runtime--
+get a runtime &mdash;
 
 1365
 00:56:23,520 --> 00:56:24,195
-It's a run--
+It's a run &mdash;
 
 1366
 00:56:24,195 --> 00:56:26,485

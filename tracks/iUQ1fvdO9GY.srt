@@ -36,7 +36,7 @@ development.
 9
 00:00:14,940 --> 00:00:17,820
 Yeoman is comprised of
-three main tools--
+three main tools &mdash;
 
 10
 00:00:17,820 --> 00:00:22,450
@@ -226,7 +226,7 @@ now is I'm creating a
 
 51
 00:01:58,360 --> 00:01:59,910
-new array of todos--
+new array of todos &mdash;
 
 52
 00:01:59,910 --> 00:02:02,090
@@ -452,7 +452,7 @@ function to our scope.
 
 100
 00:03:54,930 --> 00:03:58,070
-So there we go-- add
+So there we go &mdash; add
 todo function.
 
 101
@@ -474,7 +474,7 @@ item from the UI.
 
 105
 00:04:09,540 --> 00:04:11,220
-There we go--
+There we go &mdash;
 
 106
 00:04:11,220 --> 00:04:12,440
@@ -488,7 +488,7 @@ test this out.
 108
 00:04:14,750 --> 00:04:20,200
 So let's say buy some
-more milk and add--
+more milk and add &mdash;
 
 109
 00:04:20,200 --> 00:04:20,660
@@ -500,7 +500,7 @@ It's working.
 
 111
 00:04:22,420 --> 00:04:26,870
-Learn AngularJS suite--
+Learn AngularJS suite &mdash;
 
 112
 00:04:26,870 --> 00:04:28,240
@@ -588,7 +588,7 @@ And there we.
 
 130
 00:05:14,920 --> 00:05:16,280
-Index one--
+Index one &mdash;
 
 131
 00:05:16,280 --> 00:05:18,180
@@ -721,7 +721,7 @@ Angular UI build,
 
 160
 00:06:47,790 --> 00:06:50,220
-angularUI.js--
+angularUI.js &mdash;
 
 161
 00:06:50,220 --> 00:06:52,810
@@ -796,7 +796,7 @@ sortable property on there.
 
 176
 00:07:31,600 --> 00:07:34,340
-And refreshing--
+And refreshing &mdash;
 
 177
 00:07:34,340 --> 00:07:36,240
@@ -831,7 +831,7 @@ on that one as well.
 
 184
 00:07:44,810 --> 00:07:47,130
-So buy some unicorns--
+So buy some unicorns &mdash;
 
 185
 00:07:47,130 --> 00:07:47,770
@@ -878,7 +878,7 @@ the angular local
 
 194
 00:08:06,790 --> 00:08:08,260
-storage package--
+storage package &mdash;
 
 195
 00:08:08,260 --> 00:08:09,510
@@ -1379,7 +1379,7 @@ file under the copy task.
 
 303
 00:12:44,660 --> 00:12:46,200
-So there we go--
+So there we go &mdash;
 
 304
 00:12:46,200 --> 00:12:49,720
@@ -1418,7 +1418,7 @@ Apps Create.
 312
 00:13:11,510 --> 00:13:14,370
 And now I just need to push it
-to Heroku-- so get subtree
+to Heroku &mdash; so get subtree
 
 313
 00:13:14,370 --> 00:13:19,970

@@ -605,12 +605,12 @@ user requests.
 132
 00:05:17,210 --> 00:05:18,340
 Each of your checkout
-gophers--
+gophers &mdash;
 
 133
 00:05:18,340 --> 00:05:21,050
 the gophers processing each
-of those requests--
+of those requests &mdash;
 
 134
 00:05:21,050 --> 00:05:22,320
@@ -699,7 +699,7 @@ their gopher bran.
 152
 00:06:06,660 --> 00:06:08,640
 They want to get home and eat
-their gopher bran-- pour
+their gopher bran &mdash; pour
 
 153
 00:06:08,640 --> 00:06:11,250
@@ -954,12 +954,12 @@ happened, and so on.
 206
 00:08:22,040 --> 00:08:25,730
 And as you can see here, here's
-a -- timeline, with
+a  &mdash; timeline, with
 
 207
 00:08:25,730 --> 00:08:27,430
 time running along
-the x-axis--
+the x-axis &mdash;
 
 208
 00:08:27,430 --> 00:08:29,910
@@ -1596,13 +1596,13 @@ that for a certain fresh
 
 343
 00:14:19,280 --> 00:14:21,170
-fruit-- which might not have bar
+fruit &mdash; which might not have bar
 codes, and they normally
 
 344
 00:14:21,170 --> 00:14:22,830
 have to look up a
-booklet for--
+booklet for &mdash;
 
 345
 00:14:22,830 --> 00:14:26,380
@@ -1710,11 +1710,11 @@ where a small Get might take
 
 367
 00:15:19,350 --> 00:15:20,100
-20 milliseconds--
+20 milliseconds &mdash;
 
 368
 00:15:20,100 --> 00:15:21,720
-thereabouts--
+thereabouts &mdash;
 
 369
 00:15:21,720 --> 00:15:23,750
@@ -2990,11 +2990,11 @@ performance.
 639
 00:27:35,620 --> 00:27:37,190
 Then the five techniques
-that I covered--
+that I covered &mdash;
 
 640
 00:27:37,190 --> 00:27:38,210
-deferring work--
+deferring work &mdash;
 
 641
 00:27:38,210 --> 00:27:41,300
@@ -3013,7 +3013,7 @@ delay package.
 
 644
 00:27:46,190 --> 00:27:46,790
-Batching--
+Batching &mdash;
 
 645
 00:27:46,790 --> 00:27:50,540
@@ -3022,7 +3022,7 @@ in one shot.
 
 646
 00:27:50,540 --> 00:27:51,270
-Caching--
+Caching &mdash;
 
 647
 00:27:51,270 --> 00:27:53,720
@@ -3053,7 +3053,7 @@ of your app.
 
 653
 00:28:05,970 --> 00:28:06,880
-Concurrency--
+Concurrency &mdash;
 
 654
 00:28:06,880 --> 00:28:09,970
@@ -3648,7 +3648,7 @@ AUDIENCE: Thank you.
 
 781
 00:33:05,630 --> 00:33:08,050
-And also you seem to imply--
+And also you seem to imply &mdash;
 
 782
 00:33:08,050 --> 00:33:09,610

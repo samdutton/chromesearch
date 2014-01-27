@@ -195,7 +195,7 @@ did with this game.
 
 43
 00:05:00,960 --> 00:05:04,270
-And we brought in Justin--
+And we brought in Justin &mdash;
 
 44
 00:05:04,270 --> 00:05:06,910
@@ -266,7 +266,7 @@ with this.
 
 58
 00:05:46,180 --> 00:05:46,480
-So--
+So &mdash;
 
 59
 00:05:46,480 --> 00:05:48,030
@@ -405,7 +405,7 @@ in CoffeeScript.
 
 87
 00:07:23,900 --> 00:07:27,400
-And we found that to be--
+And we found that to be &mdash;
 
 88
 00:07:27,400 --> 00:07:30,730
@@ -515,7 +515,7 @@ JUSTIN GITLIN: Definitely.
 
 111
 00:08:28,130 --> 00:08:31,940
-So obviously, you have to--
+So obviously, you have to &mdash;
 
 112
 00:08:31,940 --> 00:08:36,990
@@ -889,7 +889,7 @@ machine, a server, and then
 
 191
 00:12:15,670 --> 00:12:17,190
-another machine--
+another machine &mdash;
 
 192
 00:12:17,190 --> 00:12:18,860
@@ -1046,12 +1046,12 @@ into the interface design
 224
 00:13:48,380 --> 00:13:51,466
 stuff, because we didn't want
-to set up situations--
+to set up situations &mdash;
 
 225
 00:13:51,466 --> 00:13:53,880
 or at least wanted to minimize
-the situations--
+the situations &mdash;
 
 226
 00:13:53,880 --> 00:13:56,870
@@ -1974,7 +1974,7 @@ creation of the physics scene
 419
 00:24:00,640 --> 00:24:03,560
 that's invisible to
-the user but is--
+the user but is &mdash;
 
 420
 00:24:03,560 --> 00:24:06,300
@@ -2216,7 +2216,7 @@ because I
 
 470
 00:26:31,620 --> 00:26:33,650
-think Google clearly--
+think Google clearly &mdash;
 
 471
 00:26:33,650 --> 00:26:35,840
@@ -2230,7 +2230,7 @@ information we're sending from
 
 473
 00:26:38,130 --> 00:26:39,430
-machine to machine--
+machine to machine &mdash;
 
 474
 00:26:39,430 --> 00:26:42,540

@@ -386,11 +386,11 @@ It's a very similar process.
 
 85
 00:03:00,480 --> 00:03:01,270
-You have an application--
+You have an application &mdash;
 
 86
 00:03:01,270 --> 00:03:02,430
-this is Psykopaint--
+this is Psykopaint &mdash;
 
 87
 00:03:02,430 --> 00:03:04,350
@@ -476,11 +476,11 @@ API integrations.
 104
 00:03:41,370 --> 00:03:43,980
 The problem with direct API
-integrations is-- we've all
+integrations is &mdash; we've all
 
 105
 00:03:43,980 --> 00:03:45,550
-seen this before, OAuth--
+seen this before, OAuth &mdash;
 
 106
 00:03:45,550 --> 00:03:47,240
@@ -620,7 +620,7 @@ to your grandmother.
 134
 00:04:42,940 --> 00:04:45,130
 Now, we face two problems on the
-web-- or I think we face
+web &mdash; or I think we face
 
 135
 00:04:45,130 --> 00:04:46,580
@@ -1449,12 +1449,12 @@ API should look relatively
 
 310
 00:10:53,850 --> 00:10:55,260
-similar what--
+similar what &mdash;
 
 311
 00:10:55,260 --> 00:10:57,450
 I don't know how many
-developers are--
+developers are &mdash;
 
 312
 00:10:57,450 --> 00:11:00,380
@@ -1749,7 +1749,7 @@ It kind of worked.
 
 375
 00:13:17,800 --> 00:13:18,130
-Admittedly--
+Admittedly &mdash;
 
 376
 00:13:18,130 --> 00:13:20,280
@@ -1825,11 +1825,11 @@ remember about Intents, for
 
 392
 00:13:46,420 --> 00:13:47,750
-me, at least--
+me, at least &mdash;
 
 393
 00:13:47,750 --> 00:13:50,690
-my favorite part of this-- is we
+my favorite part of this &mdash; is we
 don't have to build a full
 
 394
@@ -1966,12 +1966,12 @@ suggestions as well,
 423
 00:15:09,690 --> 00:15:12,520
 potentially, and then deliver
-the data client-side--
+the data client-side &mdash;
 
 424
 00:15:12,520 --> 00:15:16,430
 so we're not going through
-the internet service--
+the internet service &mdash;
 
 425
 00:15:16,430 --> 00:15:18,430
@@ -2189,11 +2189,11 @@ about later.
 470
 00:17:12,339 --> 00:17:14,950
 One of the cool things that we
-can do-- and Paul talked about
+can do &mdash; and Paul talked about
 
 471
 00:17:14,950 --> 00:17:15,869
-this a little bit--
+this a little bit &mdash;
 
 472
 00:17:15,869 --> 00:17:19,660
@@ -2766,7 +2766,7 @@ take up maximum screen real
 594
 00:22:36,210 --> 00:22:38,490
 estate or you feel
-it's good to be--
+it's good to be &mdash;
 
 595
 00:22:38,490 --> 00:22:41,710
@@ -3689,7 +3689,7 @@ get off the screen.
 
 793
 00:30:22,530 --> 00:30:23,310
-Click on it, and then--
+Click on it, and then &mdash;
 
 794
 00:30:23,310 --> 00:30:26,000
@@ -3934,7 +3934,7 @@ an onSuccess callback.
 846
 00:32:10,950 --> 00:32:13,450
 My ability to share my
-data to a service--
+data to a service &mdash;
 
 847
 00:32:13,450 --> 00:32:15,370
@@ -4527,7 +4527,7 @@ functionality here.
 974
 00:36:46,850 --> 00:36:53,830
 Say, an email application has
-composing emails, it has--
+composing emails, it has &mdash;
 
 975
 00:36:53,830 --> 00:36:57,090
@@ -5366,7 +5366,7 @@ like the sites you
 
 1153
 00:43:43,830 --> 00:43:44,870
-visited that--
+visited that &mdash;
 
 1154
 00:43:44,870 --> 00:43:45,250
@@ -5513,7 +5513,7 @@ open in the new tab.
 
 1185
 00:44:54,750 --> 00:44:57,620
-If it's Inline, will show--
+If it's Inline, will show &mdash;
 
 1186
 00:44:57,620 --> 00:44:59,570
@@ -5623,7 +5623,7 @@ that people will be used to.
 
 1209
 00:45:48,730 --> 00:45:52,230
-The name is almost kind of--
+The name is almost kind of &mdash;
 it's not arbitrary, but there
 
 1210
@@ -6109,11 +6109,11 @@ and then it goes that way.
 1313
 00:50:06,170 --> 00:50:08,100
 I don't see it as
-particularly--
+particularly &mdash;
 
 1314
 00:50:08,100 --> 00:50:10,260
-correct me if I'm wrong-- but
+correct me if I'm wrong &mdash; but
 I don't see it as trying to
 
 1315
@@ -6242,7 +6242,7 @@ do metrics collection?
 1342
 00:51:09,810 --> 00:51:15,200
 Just figure out what intents
-are more popular, or--
+are more popular, or &mdash;
 
 1343
 00:51:15,200 --> 00:51:18,420
@@ -6416,7 +6416,7 @@ for me to access
 
 1379
 00:52:38,800 --> 00:52:41,130
-to see which services--
+to see which services &mdash;
 
 1380
 00:52:41,130 --> 00:52:42,990
@@ -6468,7 +6468,7 @@ the way to go for
 
 1390
 00:53:01,680 --> 00:53:03,080
-understanding what--
+understanding what &mdash;
 
 1391
 00:53:03,080 --> 00:53:05,560
@@ -6555,7 +6555,7 @@ way actions are triggered.
 
 1409
 00:53:40,950 --> 00:53:43,780
-It only is by user movement--
+It only is by user movement &mdash;
 
 1410
 00:53:43,780 --> 00:53:44,410
@@ -6990,7 +6990,7 @@ trigger a Print intent?
 1502
 00:57:08,810 --> 00:57:10,750
 The star to favorite site
-could be used--
+could be used &mdash;
 
 1503
 00:57:10,750 --> 00:57:11,110

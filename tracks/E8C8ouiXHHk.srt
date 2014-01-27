@@ -49,11 +49,11 @@ you all about WebRTC, a
 12
 00:00:25,420 --> 00:00:27,530
 project to bring real-time
-communication--
+communication &mdash;
 
 13
 00:00:27,530 --> 00:00:29,100
-RTC--
+RTC &mdash;
 
 14
 00:00:29,100 --> 00:00:30,350
@@ -416,11 +416,11 @@ the ability to get the
 
 94
 00:03:51,830 --> 00:03:53,320
-communications industry--
+communications industry &mdash;
 
 95
 00:03:53,320 --> 00:03:55,840
-a $2 trillion industry--
+a $2 trillion industry &mdash;
 
 96
 00:03:55,840 --> 00:03:58,080
@@ -1492,7 +1492,7 @@ What did we do?
 329
 00:14:30,780 --> 00:14:33,040
 So we have an approach
-that's called JSEP--
+that's called JSEP &mdash;
 
 330
 00:14:33,040 --> 00:14:36,050
@@ -3485,7 +3485,7 @@ communication to go?
 764
 00:35:16,250 --> 00:35:19,110
 Is there actually a server
-there that's--
+there that's &mdash;
 
 765
 00:35:19,110 --> 00:35:22,480
@@ -4112,11 +4112,11 @@ call using these API?
 900
 00:40:55,340 --> 00:40:56,860
 JUSTIN UBERTI: Yeah, so we
-actually have some demos--
+actually have some demos &mdash;
 
 901
 00:40:56,860 --> 00:40:57,860
-I didn't show them today--
+I didn't show them today &mdash;
 
 902
 00:40:57,860 --> 00:41:00,810
@@ -4141,11 +4141,11 @@ that to SIP.
 906
 00:41:09,540 --> 00:41:12,720
 Or there's a product
-called sipML5--
+called sipML5 &mdash;
 
 907
 00:41:12,720 --> 00:41:14,010
-sipml5.org--
+sipml5.org &mdash;
 
 908
 00:41:14,010 --> 00:41:15,910

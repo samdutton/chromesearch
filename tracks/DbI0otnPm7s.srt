@@ -13,7 +13,7 @@ Developers Live, and welcome
 4
 00:00:09,350 --> 00:00:11,730
 to the second edition of Google
-Developers Weekly-- our
+Developers Weekly &mdash; our
 
 5
 00:00:11,730 --> 00:00:13,510
@@ -190,7 +190,7 @@ updated us on the biggest
 41
 00:01:41,940 --> 00:01:45,100
 trends from two of the hottest
-incubators at Silicon Valley--
+incubators at Silicon Valley &mdash;
 
 42
 00:01:45,100 --> 00:01:47,740

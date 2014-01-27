@@ -219,7 +219,7 @@ virtual machines for various
 
 50
 00:01:57,720 --> 00:01:58,230
-languages--
+languages &mdash;
 
 51
 00:01:58,230 --> 00:02:01,685
@@ -612,7 +612,7 @@ where you can enable
 134
 00:05:52,390 --> 00:05:55,420
 client-side rendering of
-things-- things that you had
+things &mdash; things that you had
 
 135
 00:05:55,420 --> 00:05:57,130
@@ -2186,7 +2186,7 @@ language.
 
 472
 00:20:06,800 --> 00:20:11,130
-With simple inheritance-- we
+With simple inheritance &mdash; we
 have classes, and we have
 
 473
@@ -2727,11 +2727,11 @@ returns a list of apples.
 589
 00:25:49,220 --> 00:25:52,190
 And then you call the print
-fruits method--
+fruits method &mdash;
 
 590
 00:25:52,190 --> 00:25:53,060
-hello--
+hello &mdash;
 
 591
 00:25:53,060 --> 00:25:55,080
@@ -2917,7 +2917,7 @@ I deliberately introduce a
 
 630
 00:27:37,050 --> 00:27:38,810
-small issue in the code--
+small issue in the code &mdash;
 
 631
 00:27:38,810 --> 00:27:40,580
@@ -3525,7 +3525,7 @@ if you execute this code as
 
 762
 00:33:30,680 --> 00:33:31,680
-specified--
+specified &mdash;
 
 763
 00:33:31,680 --> 00:33:34,420
@@ -3998,11 +3998,11 @@ as a language ourselves.
 864
 00:38:17,330 --> 00:38:19,680
 And it also means that
-we can compile Dart--
+we can compile Dart &mdash;
 
 865
 00:38:19,680 --> 00:38:21,290
-through Dart to JS compiler--
+through Dart to JS compiler &mdash;
 
 866
 00:38:21,290 --> 00:38:24,380
@@ -4819,12 +4819,12 @@ applications on top of it.
 1041
 00:46:02,280 --> 00:46:04,910
 The release will include
-the language--
+the language &mdash;
 
 1042
 00:46:04,910 --> 00:46:08,020
 fixed, hopefully, for
-the first version--
+the first version &mdash;
 
 1043
 00:46:08,020 --> 00:46:10,790
@@ -5283,7 +5283,7 @@ KASPER LUND: Yes, it's on.
 1140
 00:50:49,970 --> 00:50:51,660
 AUDIENCE: Is it the
-same JavaScript--
+same JavaScript &mdash;
 
 1141
 00:50:51,660 --> 00:50:54,840
@@ -5766,7 +5766,7 @@ on the server side.
 1243
 00:55:06,880 --> 00:55:10,590
 And it has an I/O library
-that supports--
+that supports &mdash;
 
 1244
 00:55:10,590 --> 00:55:11,420
@@ -6279,7 +6279,7 @@ tool chain in between you and
 
 1354
 01:00:23,770 --> 01:00:25,520
-debugging the program--
+debugging the program &mdash;
 
 1355
 01:00:25,520 --> 01:00:29,460
@@ -6477,7 +6477,7 @@ as threads?
 
 1397
 01:02:22,340 --> 01:02:25,230
-Or is it somehow a thin--
+Or is it somehow a thin &mdash;
 
 1398
 01:02:25,230 --> 01:02:27,450
@@ -6542,7 +6542,7 @@ you'll get as many threads
 
 1411
 01:02:51,620 --> 01:02:52,880
-running as you need to--
+running as you need to &mdash;
 
 1412
 01:02:52,880 --> 01:02:55,600

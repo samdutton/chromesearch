@@ -37,7 +37,7 @@ can do for you, and how you
 
 9
 00:00:18,830 --> 00:00:21,740
-can use it now-- how you
+can use it now &mdash; how you
 can get started.
 
 10
@@ -60,15 +60,15 @@ My name is Sam Dutton.
 14
 00:00:28,040 --> 00:00:30,830
 I'm a developer advocate
-for Chrome--
+for Chrome &mdash;
 
 15
 00:00:30,830 --> 00:00:33,310
-for Google, based in London--
+for Google, based in London &mdash;
 
 16
 00:00:33,310 --> 00:00:36,440
-and yeah-- just learning
+and yeah &mdash; just learning
 about WebRTC.
 
 17
@@ -101,7 +101,7 @@ on the WebRTC Chrome team.
 
 23
 00:00:54,480 --> 00:00:55,830
-And--
+And &mdash;
 
 24
 00:00:55,830 --> 00:00:57,625
@@ -129,7 +129,7 @@ relations team.
 
 29
 00:01:09,970 --> 00:01:12,180
-I specialize in HTML5--
+I specialize in HTML5 &mdash;
 
 30
 00:01:12,180 --> 00:01:14,205
@@ -138,17 +138,17 @@ learn all the cool
 
 31
 00:01:14,205 --> 00:01:16,340
-new stuff in HTML5--
+new stuff in HTML5 &mdash;
 
 32
 00:01:16,340 --> 00:01:17,630
 of course, there's
-plenty of that--
+plenty of that &mdash;
 
 33
 00:01:17,630 --> 00:01:22,065
 and also contribute a lot to
-html5rocks.com, which is our--
+html5rocks.com, which is our &mdash;
 
 34
 00:01:22,065 --> 00:01:25,046
@@ -195,16 +195,16 @@ that aren't familiar with,
 
 43
 00:01:46,530 --> 00:01:48,750
-sort of, what WebRTC is, we--
+sort of, what WebRTC is, we &mdash;
 
 44
 00:01:48,750 --> 00:01:50,430
 Pete and I shot an
-entertaining--
+entertaining &mdash;
 
 45
 00:01:50,430 --> 00:01:51,430
-to say the least--
+to say the least &mdash;
 
 46
 00:01:51,430 --> 00:01:54,910
@@ -237,7 +237,7 @@ PUNYABRATA RAY: Right.
 52
 00:02:07,070 --> 00:02:09,100
 And just in case people
-are not aware--
+are not aware &mdash;
 
 53
 00:02:09,100 --> 00:02:23,636
@@ -296,7 +296,7 @@ I'll be right there.
 
 67
 00:02:47,555 --> 00:02:49,260
-SAM DUTTON: Magic--
+SAM DUTTON: Magic &mdash;
 
 68
 00:02:49,260 --> 00:02:50,380
@@ -314,7 +314,7 @@ Pete and Eric.
 71
 00:02:54,970 --> 00:02:57,200
 ERIC BIDELMAN: So in the
-directions out there-- there's
+directions out there &mdash; there's
 
 72
 00:02:57,200 --> 00:03:00,340
@@ -380,7 +380,7 @@ without any plug-ins or
 
 85
 00:03:32,660 --> 00:03:36,720
-anything-- doing real-time live
+anything &mdash; doing real-time live
 video chat and audio.
 
 86
@@ -413,7 +413,7 @@ asking Ray and Ronghua.
 92
 00:03:52,260 --> 00:03:55,580
 That's kind of a big question
-about-- you know, what are we
+about &mdash; you know, what are we
 
 93
 00:03:55,580 --> 00:03:56,910
@@ -446,8 +446,8 @@ natively in the browser and
 
 99
 00:04:14,460 --> 00:04:16,910
-not just Chrome-- any
-browsers out there--
+not just Chrome &mdash; any
+browsers out there &mdash;
 
 100
 00:04:16,910 --> 00:04:19,019
@@ -507,7 +507,7 @@ just saw a moment ago.
 
 112
 00:04:50,540 --> 00:04:51,950
-Have you got any--
+Have you got any &mdash;
 
 113
 00:04:51,950 --> 00:04:55,370
@@ -622,12 +622,12 @@ of drives itself.
 
 137
 00:06:15,030 --> 00:06:17,010
-You know, I don't know-- put a
+You know, I don't know &mdash; put a
 laptop on some kind of car or
 
 138
 00:06:17,010 --> 00:06:18,175
-something and it does--
+something and it does &mdash;
 
 139
 00:06:18,175 --> 00:06:18,500
@@ -641,12 +641,12 @@ it drives around using the
 141
 00:06:20,960 --> 00:06:23,380
 input it gets from the video
-and sort of does--
+and sort of does &mdash;
 
 142
 00:06:23,380 --> 00:06:25,870
 in real-time using a web
-worker or something--
+worker or something &mdash;
 
 143
 00:06:25,870 --> 00:06:27,970
@@ -674,7 +674,7 @@ with this, as well.
 148
 00:06:38,090 --> 00:06:40,860
 You know, being able
-to communicate--
+to communicate &mdash;
 
 149
 00:06:40,860 --> 00:06:44,950
@@ -687,16 +687,16 @@ taking advantage of that.
 
 151
 00:06:46,170 --> 00:06:46,870
-And even--
+And even &mdash;
 
 152
 00:06:46,870 --> 00:06:48,230
-like Rana's suggesting--
+like Rana's suggesting &mdash;
 
 153
 00:06:48,230 --> 00:06:50,110
 you know, just working
-with customers--
+with customers &mdash;
 
 154
 00:06:50,110 --> 00:06:54,220
@@ -717,7 +717,7 @@ The possibilities are there.
 
 158
 00:07:00,220 --> 00:07:04,280
-I just wanted to quickly go--
+I just wanted to quickly go &mdash;
 just to show another little
 
 159
@@ -948,7 +948,7 @@ we've had so far on Moderator.
 
 209
 00:09:35,680 --> 00:09:36,955
-The question is--
+The question is &mdash;
 
 210
 00:09:36,955 --> 00:09:40,510
@@ -1145,7 +1145,7 @@ server.
 
 251
 00:11:38,470 --> 00:11:40,970
-So we do have an open source--
+So we do have an open source &mdash;
 
 252
 00:11:40,970 --> 00:11:47,890
@@ -1174,12 +1174,12 @@ the [UNINTELLIGIBLE]
 
 257
 00:11:58,200 --> 00:11:59,060
-[? net-- ?]
+[? net &mdash; ?]
 
 258
 00:11:59,060 --> 00:12:02,512
 the server behind
-the app RTC--
+the app RTC &mdash;
 
 259
 00:12:02,512 --> 00:12:04,870
@@ -1198,7 +1198,7 @@ great to hear.
 262
 00:12:13,140 --> 00:12:15,660
 One thing I failed to
-mention so far--
+mention so far &mdash;
 
 263
 00:12:15,660 --> 00:12:21,320
@@ -1224,7 +1224,7 @@ I'm just putting that up now.
 268
 00:12:30,470 --> 00:12:32,280
 So there's a lot of great
-information there--
+information there &mdash;
 
 269
 00:12:32,280 --> 00:12:36,840
@@ -1263,7 +1263,7 @@ to get started.
 276
 00:12:57,220 --> 00:13:02,000
 Just looking through the other
-questions on Moderator here--
+questions on Moderator here &mdash;
 
 277
 00:13:02,000 --> 00:13:05,620
@@ -1332,12 +1332,12 @@ good to hear.
 
 291
 00:13:45,132 --> 00:13:46,320
-I couldn't resist-- sorry--
+I couldn't resist &mdash; sorry &mdash;
 
 292
 00:13:46,320 --> 00:13:48,205
 I'm going to show another
-one of these--
+one of these &mdash;
 
 293
 00:13:48,205 --> 00:13:49,360
@@ -1362,11 +1362,11 @@ it's too soon.
 297
 00:13:55,480 --> 00:13:58,870
 But we do have a very simple
-one-- that's what I
+one &mdash; that's what I
 
 298
 00:13:58,870 --> 00:13:59,920
-mentioned--
+mentioned &mdash;
 
 299
 00:13:59,920 --> 00:14:04,430
@@ -1375,7 +1375,7 @@ in the [? code name. ?]
 
 300
 00:14:04,430 --> 00:14:06,775
-So we have it on our website--
+So we have it on our website &mdash;
 
 301
 00:14:06,775 --> 00:14:07,800
@@ -1412,7 +1412,7 @@ people as, at least, newcomers
 308
 00:14:22,880 --> 00:14:25,460
 to this project definitely
-need to understand-- that
+need to understand &mdash; that
 
 309
 00:14:25,460 --> 00:14:28,380
@@ -1436,7 +1436,7 @@ sending it out.
 313
 00:14:36,910 --> 00:14:39,660
 And then there is a server
-component that--
+component that &mdash;
 
 314
 00:14:39,660 --> 00:14:42,450
@@ -1480,7 +1480,7 @@ start, I think.
 
 322
 00:15:06,090 --> 00:15:07,630
-We have sample applications--
+We have sample applications &mdash;
 
 323
 00:15:07,630 --> 00:15:10,940
@@ -1566,7 +1566,7 @@ implementation that the
 
 341
 00:15:48,200 --> 00:15:49,490
-browser's implementing--
+browser's implementing &mdash;
 
 342
 00:15:49,490 --> 00:15:51,780
@@ -1596,21 +1596,21 @@ all this.
 347
 00:16:03,170 --> 00:16:06,145
 And what I usually
-show people is--
+show people is &mdash;
 
 348
 00:16:06,145 --> 00:16:09,300
-as soon as he gets it up--
+as soon as he gets it up &mdash;
 there's a lot under the hood.
 
 349
 00:16:09,300 --> 00:16:11,893
 There's a ton of stuff going
-on-- and this is what you
+on &mdash; and this is what you
 
 350
 00:16:11,893 --> 00:16:12,540
-spoke to earlier--
+spoke to earlier &mdash;
 
 351
 00:16:12,540 --> 00:16:14,720
@@ -1639,7 +1639,7 @@ this up on-screen, I was
 
 356
 00:16:27,520 --> 00:16:27,960
-wondering--
+wondering &mdash;
 
 357
 00:16:27,960 --> 00:16:32,940
@@ -1682,7 +1682,7 @@ PUNYABRATA RAY: Sure.
 
 366
 00:16:53,650 --> 00:16:54,490
-I don't know--
+I don't know &mdash;
 
 367
 00:16:54,490 --> 00:16:56,620
@@ -1745,7 +1745,7 @@ aspect of the WebRTC.
 
 380
 00:17:24,460 --> 00:17:27,690
-And these are the engines--
+And these are the engines &mdash;
 starting from one end, where
 
 381
@@ -1769,7 +1769,7 @@ when we receive
 
 385
 00:17:38,880 --> 00:17:40,470
-packets from the network--
+packets from the network &mdash;
 
 386
 00:17:40,470 --> 00:17:45,300
@@ -1822,11 +1822,11 @@ video quality.
 396
 00:18:11,850 --> 00:18:14,780
 And then, in addition to that,
-there's the codecs-- the audio
+there's the codecs &mdash; the audio
 
 397
 00:18:14,780 --> 00:18:15,690
-and video codecs--
+and video codecs &mdash;
 
 398
 00:18:15,690 --> 00:18:18,910
@@ -1894,7 +1894,7 @@ layers.
 411
 00:18:58,360 --> 00:19:01,220
 And maybe, Ronghua you can speak
-a little about that--
+a little about that &mdash;
 
 412
 00:19:01,220 --> 00:19:02,870
@@ -1997,7 +1997,7 @@ the media engine.
 
 434
 00:20:08,900 --> 00:20:11,870
-So that's how a call--
+So that's how a call &mdash;
 
 435
 00:20:11,870 --> 00:20:13,865
@@ -2038,7 +2038,7 @@ Right.
 
 443
 00:20:32,670 --> 00:20:34,033
-I've just posted--
+I've just posted &mdash;
 
 444
 00:20:34,033 --> 00:20:35,740
@@ -2090,7 +2090,7 @@ was talking about.
 454
 00:21:02,150 --> 00:21:04,400
 I think if I can get that
-up on-screen now--
+up on-screen now &mdash;
 
 455
 00:21:04,400 --> 00:21:07,100
@@ -2165,19 +2165,19 @@ over the line.
 
 472
 00:21:38,630 --> 00:21:41,260
-Ray and Ronghua , could you--
+Ray and Ronghua , could you &mdash;
 
 473
 00:21:41,260 --> 00:21:43,600
 just to repeat everything
-you've just told me--
+you've just told me &mdash;
 
 474
 00:21:43,600 --> 00:21:46,740
 
 475
 00:21:46,740 --> 00:21:48,580
-can you talk us through this--
+can you talk us through this &mdash;
 
 476
 00:21:48,580 --> 00:21:53,880
@@ -2206,7 +2206,7 @@ I'll start, Ronghua.
 481
 00:22:03,680 --> 00:22:08,860
 So the one thing when someone
-looks at this diagram is--
+looks at this diagram is &mdash;
 
 482
 00:22:08,860 --> 00:22:13,000
@@ -2239,7 +2239,7 @@ think about is, essentially,
 
 488
 00:22:32,140 --> 00:22:36,580
-the top level-- where you have
+the top level &mdash; where you have
 yellow arrows in this diagram.
 
 489
@@ -2249,7 +2249,7 @@ they're going to essentially
 
 490
 00:22:39,560 --> 00:22:41,680
-design-- a website
+design &mdash; a website
 or a web app.
 
 491
@@ -2273,7 +2273,7 @@ RONGHUA WU: W3C.
 
 495
 00:22:54,660 --> 00:22:56,060
-PUNYABRATA RAY: W3C, sorry--
+PUNYABRATA RAY: W3C, sorry &mdash;
 
 496
 00:22:56,060 --> 00:22:58,570
@@ -2301,7 +2301,7 @@ the media engines.
 
 501
 00:23:11,890 --> 00:23:14,850
-So then as you move down--
+So then as you move down &mdash;
 
 502
 00:23:14,850 --> 00:23:18,580
@@ -2310,7 +2310,7 @@ the WebRTC C API peer
 
 503
 00:23:18,580 --> 00:23:19,770
-connection--
+connection &mdash;
 
 504
 00:23:19,770 --> 00:23:24,810
@@ -2329,7 +2329,7 @@ between the
 
 507
 00:23:35,300 --> 00:23:36,690
-different--
+different &mdash;
 
 508
 00:23:36,690 --> 00:23:39,140
@@ -2357,7 +2357,7 @@ to worry about that.
 513
 00:23:45,500 --> 00:23:47,940
 Again, we're now getting to the
-layer which-- this will be
+layer which &mdash; this will be
 
 514
 00:23:47,940 --> 00:23:50,460
@@ -2367,7 +2367,7 @@ browsers itself.
 515
 00:23:50,460 --> 00:23:54,460
 And then the layers
-beneath that are--
+beneath that are &mdash;
 
 516
 00:23:54,460 --> 00:23:58,260
@@ -2381,7 +2381,7 @@ processing of the voice and
 
 518
 00:24:00,920 --> 00:24:03,100
-video packets--
+video packets &mdash;
 
 519
 00:24:03,100 --> 00:24:06,410
@@ -2400,7 +2400,7 @@ level purple blocks.
 
 522
 00:24:13,210 --> 00:24:15,820
-And Ronghua , I'm not sure--
+And Ronghua , I'm not sure &mdash;
 the session management
 
 523
@@ -2488,11 +2488,11 @@ as you look at this diagram.
 
 541
 00:25:14,070 --> 00:25:15,940
-Everything below that--
+Everything below that &mdash;
 
 542
 00:25:15,940 --> 00:25:18,360
-in that lighter gray box--
+in that lighter gray box &mdash;
 everything below those arrows
 
 543
@@ -2520,11 +2520,11 @@ you built on top of.
 
 548
 00:25:26,300 --> 00:25:26,910
-But they're--
+But they're &mdash;
 
 549
 00:25:26,910 --> 00:25:28,850
-just keep in mind-- it's
+just keep in mind &mdash; it's
 important to know that there's
 
 550
@@ -2575,11 +2575,11 @@ good to hear.
 
 560
 00:25:52,790 --> 00:25:54,260
-Look, I can't resist--
+Look, I can't resist &mdash;
 
 561
 00:25:54,260 --> 00:25:54,960
-sorry--
+sorry &mdash;
 
 562
 00:25:54,960 --> 00:25:58,280
@@ -2677,7 +2677,7 @@ there is so much
 
 582
 00:26:59,940 --> 00:27:02,280
-potential for this stuff--
+potential for this stuff &mdash;
 
 583
 00:27:02,280 --> 00:27:06,100
@@ -2772,11 +2772,11 @@ we just need to focus on
 602
 00:28:04,170 --> 00:28:08,110
 getting this working perfectly
-on a certain platform--
+on a certain platform &mdash;
 
 603
 00:28:08,110 --> 00:28:09,350
-the desktop platforms--
+the desktop platforms &mdash;
 
 604
 00:28:09,350 --> 00:28:14,906
@@ -2876,7 +2876,7 @@ like, a video conference
 
 626
 00:29:06,810 --> 00:29:08,350
-apparently using--
+apparently using &mdash;
 
 627
 00:29:08,350 --> 00:29:15,800
@@ -2903,12 +2903,12 @@ today, but it should be
 632
 00:29:27,360 --> 00:29:30,150
 possible in the future to
-be able to render--
+be able to render &mdash;
 
 633
 00:29:30,150 --> 00:29:33,270
 if you have multiple video
-streams coming in--
+streams coming in &mdash;
 
 634
 00:29:33,270 --> 00:29:35,630
@@ -2948,11 +2948,11 @@ PUNYABRATA RAY: Browser?
 642
 00:29:54,900 --> 00:29:58,910
 RONGHUA WU: Because this is
-one issue I know of--
+one issue I know of &mdash;
 
 643
 00:29:58,910 --> 00:30:01,560
-not issue-- but, not
+not issue &mdash; but, not
 implemented yet.
 
 644
@@ -3051,7 +3051,7 @@ given that there are so many
 
 665
 00:30:58,710 --> 00:31:00,330
-layers in WebRTC--
+layers in WebRTC &mdash;
 
 666
 00:31:00,330 --> 00:31:03,200
@@ -3128,7 +3128,7 @@ PUNYABRATA RAY: Right.
 681
 00:31:43,200 --> 00:31:45,340
 SAM DUTTON: One thing I was
-going to say that--
+going to say that &mdash;
 
 682
 00:31:45,340 --> 00:31:47,400
@@ -3157,12 +3157,12 @@ to that in a moment.
 687
 00:32:03,456 --> 00:32:06,110
 ERIC BIDELMAN: Just to speak
-to that question-- if he is
+to that question &mdash; if he is
 
 688
 00:32:06,110 --> 00:32:12,290
 talking about the JavaScript
-application APIs--
+application APIs &mdash;
 
 689
 00:32:12,290 --> 00:32:14,210
@@ -3360,7 +3360,7 @@ they're pretty much on board.
 731
 00:34:13,560 --> 00:34:16,989
 But again, that's just
-my personal--
+my personal &mdash;
 
 732
 00:34:16,989 --> 00:34:20,670
@@ -3403,20 +3403,20 @@ segues nicely into a question
 740
 00:34:43,739 --> 00:34:46,909
 I'm seeing later on from Neo
-in New York City-- is about
+in New York City &mdash; is about
 
 741
 00:34:46,909 --> 00:34:48,340
 sort of other browser
-vendors--
+vendors &mdash;
 
 742
 00:34:48,340 --> 00:34:49,020
-Firefox--
+Firefox &mdash;
 
 743
 00:34:49,020 --> 00:34:52,440
-i.e., Safari-- working on WebRTC
+i.e., Safari &mdash; working on WebRTC
 and implementing it in
 
 744
@@ -3449,7 +3449,7 @@ more information.
 750
 00:35:05,132 --> 00:35:07,780
 PUNYABRATA RAY: So I
-know that we are--
+know that we are &mdash;
 
 751
 00:35:07,780 --> 00:35:10,090
@@ -3490,7 +3490,7 @@ working with Opera.
 
 759
 00:35:32,070 --> 00:35:34,410
-IE and Safari right now--
+IE and Safari right now &mdash;
 
 760
 00:35:34,410 --> 00:35:36,380
@@ -3518,11 +3518,11 @@ Same thing with Apple, Safari.
 765
 00:35:46,010 --> 00:35:49,450
 I believe they're
-also actually--
+also actually &mdash;
 
 766
 00:35:49,450 --> 00:35:52,320
-people from Apple-- are
+people from Apple &mdash; are
 part of the standards.
 
 767
@@ -3532,11 +3532,11 @@ go with WebRTC and Safari.
 
 768
 00:35:56,330 --> 00:35:57,030
-But--
+But &mdash;
 
 769
 00:35:57,030 --> 00:35:57,480
-think--
+think &mdash;
 
 770
 00:35:57,480 --> 00:36:00,380
@@ -3624,16 +3624,16 @@ It's still being ratified.
 788
 00:36:44,310 --> 00:36:49,370
 So once that is in a state,
-maybe in the next few months--
+maybe in the next few months &mdash;
 
 789
 00:36:49,370 --> 00:36:51,760
-my guess-- but I might
+my guess &mdash; but I might
 be completely wrong.
 
 790
 00:36:51,760 --> 00:36:54,510
-So the next few-- so I think
+So the next few &mdash; so I think
 we're currently on any team
 
 791
@@ -3827,7 +3827,7 @@ actually been interested in
 832
 00:38:44,950 --> 00:38:47,385
 for a long time, is
-to be able to--
+to be able to &mdash;
 
 833
 00:38:47,385 --> 00:38:50,590
@@ -3861,13 +3861,13 @@ of an audio-type file.
 
 839
 00:39:10,420 --> 00:39:14,030
-So using a web socket-- a binary
-web socket-- with the
+So using a web socket &mdash; a binary
+web socket &mdash; with the
 
 840
 00:39:14,030 --> 00:39:17,790
 web audio API that's
-in Chrome--
+in Chrome &mdash;
 
 841
 00:39:17,790 --> 00:39:21,120
@@ -3890,11 +3890,11 @@ like to call it.
 
 845
 00:39:27,080 --> 00:39:28,590
-And then on the other side--
+And then on the other side &mdash;
 
 846
 00:39:28,590 --> 00:39:31,750
-on the receiver side-- you can
+on the receiver side &mdash; you can
 use the web audio API to
 
 847
@@ -3971,7 +3971,7 @@ allows you to do is sort of
 
 862
 00:40:13,686 --> 00:40:16,330
-something similar-- use a video
+something similar &mdash; use a video
 tag or an audio tag and
 
 863
@@ -3992,7 +3992,7 @@ man's streaming, if you will.
 866
 00:40:28,610 --> 00:40:31,640
 But it does do the job,
-and it allows you to--
+and it allows you to &mdash;
 
 867
 00:40:31,640 --> 00:40:33,940
@@ -4002,7 +4002,7 @@ sort of getting at is to do
 868
 00:40:33,940 --> 00:40:35,380
 some [UNINTELLIGIBLE]
-streaming--
+streaming &mdash;
 
 869
 00:40:35,380 --> 00:40:36,475
@@ -4019,12 +4019,12 @@ and lots of possibilities.
 
 872
 00:40:41,260 --> 00:40:42,290
-It kind of--
+It kind of &mdash;
 
 873
 00:40:42,290 --> 00:40:44,160
 I don't know if that's the
-word-- but it kind of
+word &mdash; but it kind of
 
 874
 00:40:44,160 --> 00:40:46,680
@@ -4136,11 +4136,11 @@ about that, that'd be great.
 897
 00:41:38,550 --> 00:41:39,780
 I'm going to disappear
-because--
+because &mdash;
 
 898
 00:41:39,780 --> 00:41:41,455
-I'm going to be five seconds--
+I'm going to be five seconds &mdash;
 
 899
 00:41:41,455 --> 00:41:45,986
@@ -4157,7 +4157,7 @@ project of real-time
 
 902
 00:41:51,790 --> 00:41:52,630
-communication--
+communication &mdash;
 
 903
 00:41:52,630 --> 00:41:56,920
@@ -4172,7 +4172,7 @@ applications, like streaming.
 905
 00:42:02,150 --> 00:42:04,440
 And I'm not sure exactly
-if anyone--
+if anyone &mdash;
 
 906
 00:42:04,440 --> 00:42:04,660
@@ -4250,7 +4250,7 @@ able to do like a screen
 
 922
 00:42:52,860 --> 00:42:56,140
-sharing presentation--
+sharing presentation &mdash;
 
 923
 00:42:56,140 --> 00:42:59,145
@@ -4298,7 +4298,7 @@ your applications.
 932
 00:43:24,545 --> 00:43:26,620
 SAM DUTTON: That would be
-great-- that stuff.
+great &mdash; that stuff.
 
 933
 00:43:26,620 --> 00:43:30,010
@@ -4324,11 +4324,11 @@ California.
 938
 00:43:40,690 --> 00:43:43,360
 Someone asking if Google
-hangouts--
+hangouts &mdash;
 
 939
 00:43:43,360 --> 00:43:45,735
-what we're doing now-- is
+what we're doing now &mdash; is
 going to use WebRTC.
 
 940
@@ -4391,7 +4391,7 @@ what the plan of hangouts
 952
 00:44:21,820 --> 00:44:24,740
 is and what I don't
-know if you--
+know if you &mdash;
 
 953
 00:44:24,740 --> 00:44:27,380
@@ -4447,12 +4447,12 @@ like to show us
 
 965
 00:44:46,290 --> 00:44:49,630
-another slightly foolish--
+another slightly foolish &mdash;
 
 966
 00:44:49,630 --> 00:44:50,700
 well, I shouldn't
-say foolish--
+say foolish &mdash;
 
 967
 00:44:50,700 --> 00:44:51,877
@@ -4508,7 +4508,7 @@ PUNYABRATA RAY: Yes.
 979
 00:45:18,686 --> 00:45:21,535
 SAM DUTTON: So if I click
-this to begin--
+this to begin &mdash;
 
 980
 00:45:21,535 --> 00:45:41,820
@@ -4565,7 +4565,7 @@ security with Luke
 
 992
 00:46:16,420 --> 00:46:18,520
-I think you pronounce--
+I think you pronounce &mdash;
 
 993
 00:46:18,520 --> 00:46:21,310
@@ -4587,7 +4587,7 @@ on that.
 997
 00:46:27,052 --> 00:46:28,180
 PUNYABRATA RAY: I heard
-the first part--
+the first part &mdash;
 
 998
 00:46:28,180 --> 00:46:28,880
@@ -4613,7 +4613,7 @@ encryption is.
 
 1003
 00:46:36,700 --> 00:46:39,372
-But the one thing that--
+But the one thing that &mdash;
 
 1004
 00:46:39,372 --> 00:46:41,430
@@ -4664,7 +4664,7 @@ So that is encrypted today.
 1014
 00:47:06,542 --> 00:47:08,400
 ERIC BIDELMAN: One thing that's
-not there today-- and
+not there today &mdash; and
 
 1015
 00:47:08,400 --> 00:47:12,560
@@ -4716,7 +4716,7 @@ permission level.
 1025
 00:47:32,960 --> 00:47:35,140
 There's sort of on the drive-by
-web-- that the user
+web &mdash; that the user
 
 1026
 00:47:35,140 --> 00:47:38,630
@@ -4744,12 +4744,12 @@ really mention that.
 1031
 00:47:47,380 --> 00:47:49,450
 Possibly in the future
-that could come--
+that could come &mdash;
 
 1032
 00:47:49,450 --> 00:47:51,715
 where the user has to
-manually sort of--
+manually sort of &mdash;
 
 1033
 00:47:51,715 --> 00:47:54,030
@@ -4786,7 +4786,7 @@ to a laptop or you're
 1040
 00:48:14,640 --> 00:48:17,410
 set up, then it picks
-the first--
+the first &mdash;
 
 1041
 00:48:17,410 --> 00:48:18,840
@@ -4804,11 +4804,11 @@ a team work on that, but I
 
 1044
 00:48:21,630 --> 00:48:23,250
-don't know the detail--
+don't know the detail &mdash;
 
 1045
 00:48:23,250 --> 00:48:24,225
-when, or--
+when, or &mdash;
 
 1046
 00:48:24,225 --> 00:48:25,200
@@ -4825,8 +4825,8 @@ SAM DUTTON: Yeah.
 
 1049
 00:48:27,400 --> 00:48:30,770
-I think-- am I right in saying
-that-- using the input
+I think &mdash; am I right in saying
+that &mdash; using the input
 
 1050
 00:48:30,770 --> 00:48:34,050
@@ -4887,13 +4887,13 @@ to do with it.
 
 1062
 00:49:05,540 --> 00:49:07,690
-Where this is different-- where
+Where this is different &mdash; where
 WebRTC is different,
 
 1063
 00:49:07,690 --> 00:49:09,450
 where get-user media is
-different-- is that you can
+different &mdash; is that you can
 
 1064
 00:49:09,450 --> 00:49:11,780
@@ -4915,7 +4915,7 @@ Android could have this
 
 1068
 00:49:19,090 --> 00:49:21,080
-ability as well-- to do
+ability as well &mdash; to do
 the get-user media.
 
 1069
@@ -5125,7 +5125,7 @@ would be nudging anyone.
 1116
 00:51:34,470 --> 00:51:37,740
 Again, the server
-implementation, it's--
+implementation, it's &mdash;
 
 1117
 00:51:37,740 --> 00:51:41,340
@@ -5193,7 +5193,7 @@ What's the story with that?
 1131
 00:52:11,530 --> 00:52:11,950
 PUNYABRATA RAY: I'm
-not exactly--
+not exactly &mdash;
 
 1132
 00:52:11,950 --> 00:52:13,690
@@ -5202,7 +5202,7 @@ able to remember the video
 
 1133
 00:52:13,690 --> 00:52:15,131
-tab, but I haven't--
+tab, but I haven't &mdash;
 
 1134
 00:52:15,131 --> 00:52:17,840
@@ -5233,7 +5233,7 @@ of get-user media and working
 
 1140
 00:52:32,250 --> 00:52:33,360
-with the page visibility--
+with the page visibility &mdash;
 
 1141
 00:52:33,360 --> 00:52:36,000
@@ -5304,11 +5304,11 @@ guy Pete in Mountain View.
 
 1156
 00:53:06,920 --> 00:53:07,940
-He's wondering--
+He's wondering &mdash;
 
 1157
 00:53:07,940 --> 00:53:09,970
-a really good question--
+a really good question &mdash;
 
 1158
 00:53:09,970 --> 00:53:11,690
@@ -5436,7 +5436,7 @@ to wrap up soon.
 
 1185
 00:54:14,020 --> 00:54:16,070
-A couple of things--
+A couple of things &mdash;
 
 1186
 00:54:16,070 --> 00:54:20,790
@@ -5464,8 +5464,8 @@ idea of that.
 
 1191
 00:54:31,320 --> 00:54:34,690
-And also another thing-- if
-you could do for us--
+And also another thing &mdash; if
+you could do for us &mdash;
 
 1192
 00:54:34,690 --> 00:54:39,820
@@ -5530,11 +5530,11 @@ love to love to hear from you.
 
 1205
 00:55:23,890 --> 00:55:26,360
-And let us know how--
+And let us know how &mdash;
 
 1206
 00:55:26,360 --> 00:55:28,460
-from a developer perspective--
+from a developer perspective &mdash;
 
 1207
 00:55:28,460 --> 00:55:30,402
@@ -5562,7 +5562,7 @@ of this stuff.
 
 1212
 00:55:40,510 --> 00:55:42,120
-Sam, I wonder if it's--
+Sam, I wonder if it's &mdash;
 
 1213
 00:55:42,120 --> 00:55:44,290
@@ -5571,7 +5571,7 @@ at the beginning of the
 
 1214
 00:55:44,290 --> 00:55:45,590
-WebRTC video--
+WebRTC video &mdash;
 
 1215
 00:55:45,590 --> 00:55:49,352
@@ -5735,7 +5735,7 @@ as you hit them.
 1252
 00:57:16,090 --> 00:57:18,620
 And we're really looking
-forward to--
+forward to &mdash;
 
 1253
 00:57:18,620 --> 00:57:21,410
@@ -5744,7 +5744,7 @@ imaginative stuff, as we've
 
 1254
 00:57:21,410 --> 00:57:22,850
-already seen--
+already seen &mdash;
 
 1255
 00:57:22,850 --> 00:57:26,420

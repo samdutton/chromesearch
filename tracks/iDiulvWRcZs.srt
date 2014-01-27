@@ -1062,7 +1062,7 @@ of red underlines, which
 
 228
 00:09:50,810 --> 00:09:53,120
-the Editor is telling us--
+the Editor is telling us &mdash;
 
 229
 00:09:53,120 --> 00:09:54,840
@@ -1395,12 +1395,12 @@ to show from our
 
 300
 00:12:39,930 --> 00:12:41,455
-Editor experience here--
+Editor experience here &mdash;
 
 301
 00:12:41,455 --> 00:12:47,660
 let me just shut off my,
-there we go, email--
+there we go, email &mdash;
 
 302
 00:12:47,660 --> 00:12:49,830
@@ -1683,7 +1683,7 @@ code completion.
 362
 00:15:08,990 --> 00:15:12,584
 And, of course, if I type
-in something incorrect--
+in something incorrect &mdash;
 
 363
 00:15:12,584 --> 00:15:13,480
@@ -1898,7 +1898,7 @@ packages, but publish packages.
 
 409
 00:16:55,080 --> 00:16:57,880
-I'm also forgetting some-- oh,
+I'm also forgetting some &mdash; oh,
 and then of course the virtual
 
 410
@@ -1960,7 +1960,7 @@ they first saw it.
 
 422
 00:17:28,040 --> 00:17:29,360
-But our third generation--
+But our third generation &mdash;
 
 423
 00:17:29,360 --> 00:17:30,520
@@ -2086,11 +2086,11 @@ which is really, really cool.
 
 449
 00:18:29,240 --> 00:18:31,132
-What tree shaking does--
+What tree shaking does &mdash;
 
 450
 00:18:31,132 --> 00:18:32,190
-a-ha, here's our--
+a-ha, here's our &mdash;
 
 451
 00:18:32,190 --> 00:18:33,780
@@ -2146,7 +2146,7 @@ feature called Source Maps.
 
 463
 00:19:01,710 --> 00:19:04,640
-And Source Maps allow us to--
+And Source Maps allow us to &mdash;
 
 464
 00:19:04,640 --> 00:19:06,480
@@ -2274,7 +2274,7 @@ to come back to that.
 491
 00:20:09,980 --> 00:20:12,990
 But Source Maps is
-a fantastic--
+a fantastic &mdash;
 
 492
 00:20:12,990 --> 00:20:13,480
@@ -2282,7 +2282,7 @@ oh, you know what?
 
 493
 00:20:13,480 --> 00:20:14,390
-Let me just--
+Let me just &mdash;
 
 494
 00:20:14,390 --> 00:20:15,400
@@ -2290,7 +2290,7 @@ help me out here.
 
 495
 00:20:15,400 --> 00:20:18,500
-There's a way to get--
+There's a way to get &mdash;
 
 496
 00:20:18,500 --> 00:20:21,910
@@ -2601,7 +2601,7 @@ Just a second.
 563
 00:22:52,975 --> 00:22:54,225
 SETH LADD: You might
-have to click the--
+have to click the &mdash;
 
 564
 00:22:54,225 --> 00:22:57,000
@@ -2858,7 +2858,7 @@ ADDY OSMANI: OK.
 620
 00:25:08,830 --> 00:25:10,010
 SETH LADD: But then there's
-also some--
+also some &mdash;
 
 621
 00:25:10,010 --> 00:25:11,440
@@ -3774,11 +3774,11 @@ and mashed up together.
 815
 00:34:13,960 --> 00:34:16,750
 And it's very hard
-to introduce--
+to introduce &mdash;
 
 816
 00:34:16,750 --> 00:34:17,880
-excuse me--
+excuse me &mdash;
 
 817
 00:34:17,880 --> 00:34:20,670
@@ -3821,11 +3821,11 @@ to our compiler step.
 
 825
 00:34:42,389 --> 00:34:44,889
-So the Web Component stuff--
+So the Web Component stuff &mdash;
 
 826
 00:34:44,889 --> 00:34:47,760
-excuse me, I need some water--
+excuse me, I need some water &mdash;
 
 827
 00:34:47,760 --> 00:34:50,190

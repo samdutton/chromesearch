@@ -646,7 +646,7 @@ games or free
 
 137
 00:05:43,450 --> 00:05:46,030
-games, or RPG games--
+games, or RPG games &mdash;
 
 138
 00:05:46,030 --> 00:05:47,705
@@ -824,7 +824,7 @@ and our discovery
 
 174
 00:07:26,490 --> 00:07:29,930
-engines, we have two options--
+engines, we have two options &mdash;
 either we can spend a lot of
 
 175
@@ -1060,7 +1060,7 @@ on that first screen itself
 223
 00:09:45,280 --> 00:09:48,860
 it's extremely clear what your
-goal is-- what utility you
+goal is &mdash; what utility you
 
 224
 00:09:48,860 --> 00:09:51,605
@@ -1069,7 +1069,7 @@ value or whatever the goal of
 
 225
 00:09:51,605 --> 00:09:53,190
-your app is-- what
+your app is &mdash; what
 it provides.
 
 226
@@ -3263,7 +3263,7 @@ the next talk by [? Ali ?]
 686
 00:29:52,150 --> 00:29:54,670
 [? Ricardo ?] we'll go through
-this in detail-- what you can
+this in detail &mdash; what you can
 
 687
 00:29:54,670 --> 00:29:57,340
@@ -3571,12 +3571,12 @@ Let's think about why.
 751
 00:32:43,670 --> 00:32:45,120
 As your phone runs
-out of memory--
+out of memory &mdash;
 
 752
 00:32:45,120 --> 00:32:46,800
 there's a finite amount
-of memory--
+of memory &mdash;
 
 753
 00:32:46,800 --> 00:32:49,640
@@ -3652,12 +3652,12 @@ looking to do.
 
 768
 00:33:28,680 --> 00:33:29,740
-And the last one--
+And the last one &mdash;
 
 769
 00:33:29,740 --> 00:33:32,400
 and this is something many of
-you asked us for-- is to
+you asked us for &mdash; is to
 
 770
 00:33:32,400 --> 00:33:34,370
@@ -3877,7 +3877,7 @@ their friends are playing,
 
 816
 00:35:24,730 --> 00:35:26,960
-they can find opponents--
+they can find opponents &mdash;
 it makes your app more
 
 817
@@ -3887,7 +3887,7 @@ interactive.
 818
 00:35:27,500 --> 00:35:29,970
 You've got the multiplayer, you
-have the leader boards--
+have the leader boards &mdash;
 
 819
 00:35:29,970 --> 00:35:31,650
@@ -4189,12 +4189,12 @@ in terms of two different
 
 882
 00:38:16,210 --> 00:38:19,920
-lenses-- the big picture is the
+lenses &mdash; the big picture is the
 revenue for install, and
 
 883
 00:38:19,920 --> 00:38:22,650
-that makes sense-- it's a very
+that makes sense &mdash; it's a very
 good macro metric, and its
 
 884
@@ -4218,7 +4218,7 @@ revenue per active user,
 888
 00:38:31,340 --> 00:38:33,450
 that's what you have most
-control over-- the people that
+control over &mdash; the people that
 
 889
 00:38:33,450 --> 00:38:36,750

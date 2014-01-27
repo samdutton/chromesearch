@@ -113,7 +113,7 @@ community member,
 
 25
 00:00:44,334 --> 00:00:46,133
-and now as a--
+and now as a &mdash;
 the last several years
 
 26
@@ -224,7 +224,7 @@ that's a tough question.
 48
 00:01:34,033 --> 00:01:37,033
 I think one of the things
-that I'm really excited by--
+that I'm really excited by &mdash;
 
 49
 00:01:37,033 --> 00:01:40,934
@@ -244,7 +244,7 @@ it's out of the closet.
 52
 00:01:45,567 --> 00:01:48,667
 The access to device
-information--
+information &mdash;
 
 53
 00:01:48,667 --> 00:01:52,334
@@ -339,7 +339,7 @@ for the video tag.
 72
 00:02:40,067 --> 00:02:42,501
 Having free video
-on the web is--
+on the web is &mdash;
 
 73
 00:02:42,501 --> 00:02:44,133
@@ -352,7 +352,7 @@ It's very, very important.
 75
 00:02:46,100 --> 00:02:49,901
 And it's also a standard where
-we don't yet have--
+we don't yet have &mdash;
 
 76
 00:02:49,901 --> 00:02:51,868
@@ -379,7 +379,7 @@ is really good.
 
 81
 00:03:02,467 --> 00:03:04,234
-But also having it--
+But also having it &mdash;
 
 82
 00:03:04,234 --> 00:03:06,601
@@ -487,7 +487,7 @@ But yet, a lot of people,
 104
 00:03:53,934 --> 00:03:56,467
 especially in the Asian
-regions--
+regions &mdash;
 
 105
 00:03:56,467 --> 00:03:58,634
@@ -520,7 +520,7 @@ and tried to figure out
 
 111
 00:04:08,634 --> 00:04:11,067
-what's the best API for this--
+what's the best API for this &mdash;
 how do we do it the best way?
 
 112
@@ -536,7 +536,7 @@ that never really made it
 114
 00:04:18,267 --> 00:04:20,634
 through the web standards
-process--
+process &mdash;
 
 115
 00:04:20,634 --> 00:04:22,968
@@ -583,12 +583,12 @@ would like to respond.
 
 124
 00:04:42,100 --> 00:04:43,334
-If I'm a web developer--
+If I'm a web developer &mdash;
 
 125
 00:04:43,334 --> 00:04:45,067
 so I'm building websites,
-for example--
+for example &mdash;
 
 126
 00:04:45,067 --> 00:04:47,234
@@ -688,7 +688,7 @@ So building it,
 146
 00:05:33,234 --> 00:05:36,100
 and then, instead of hoping
-they will come--
+they will come &mdash;
 
 147
 00:05:36,100 --> 00:05:37,601
@@ -711,8 +711,8 @@ you know,
 
 151
 00:05:44,767 --> 00:05:48,534
-go and talk to the W3C--
-the working group--
+go and talk to the W3C &mdash;
+the working group &mdash;
 
 152
 00:05:48,534 --> 00:05:51,634
@@ -745,7 +745,7 @@ that people are gonna use.
 
 158
 00:06:05,167 --> 00:06:08,133
-If you build something--
+If you build something &mdash;
 If we build some format,
 
 159
@@ -779,11 +779,11 @@ where we talk about this stuff.
 165
 00:06:23,000 --> 00:06:26,100
 3D Canvas is an example
-of something where--
+of something where &mdash;
 
 166
 00:06:26,100 --> 00:06:29,067
-We went to a place--
+We went to a place &mdash;
 we ended up at Cronos,
 
 167
@@ -848,7 +848,7 @@ someone sends in a suggestion
 179
 00:07:06,334 --> 00:07:07,934
 to a standards body
-or to a browser--
+or to a browser &mdash;
 
 180
 00:07:07,934 --> 00:07:10,000
@@ -876,7 +876,7 @@ But more what happens is that
 185
 00:07:19,701 --> 00:07:23,701
 you do the best you can
-without it, or--
+without it, or &mdash;
 
 186
 00:07:23,701 --> 00:07:27,067
@@ -934,7 +934,7 @@ an actual need for it.
 
 197
 00:07:57,467 --> 00:07:59,901
-Ian: I know a lot of people--
+Ian: I know a lot of people &mdash;
 if I could just answer quickly.
 
 198
@@ -998,7 +998,7 @@ sort of have to pick and choose.
 210
 00:08:22,901 --> 00:08:24,534
 You know, we're looking at,
-you know--
+you know &mdash;
 
 211
 00:08:24,534 --> 00:08:26,567
@@ -1152,11 +1152,11 @@ on the web?
 242
 00:09:33,234 --> 00:09:36,801
 Jonas: It's really awesome when
-you put the new technology--
+you put the new technology &mdash;
 
 243
 00:09:36,801 --> 00:09:38,167
-even if you just--
+even if you just &mdash;
 
 244
 00:09:38,167 --> 00:09:40,601
@@ -1396,7 +1396,7 @@ still vertical.
 
 294
 00:11:29,534 --> 00:11:32,167
-It hasn't changed--
+It hasn't changed &mdash;
 their language hasn't changed
 
 295
@@ -1759,7 +1759,7 @@ very quickly.
 369
 00:14:19,634 --> 00:14:22,601
 So I'd really like to see,
-you know, more browsers--
+you know, more browsers &mdash;
 
 370
 00:14:22,601 --> 00:14:24,334
@@ -1860,7 +1860,7 @@ is important.
 390
 00:15:12,334 --> 00:15:15,300
 Making the latest version
-actually better quality--
+actually better quality &mdash;
 
 391
 00:15:15,300 --> 00:15:17,634
@@ -1890,7 +1890,7 @@ people say,
 396
 00:15:26,200 --> 00:15:28,334
 "you guys don't necessarily
-improve--
+improve &mdash;
 
 397
 00:15:28,334 --> 00:15:31,334
@@ -1907,7 +1907,7 @@ is important.
 
 400
 00:15:35,334 --> 00:15:37,133
-Jonas: I think it's--
+Jonas: I think it's &mdash;
 
 401
 00:15:37,133 --> 00:15:39,400
@@ -1954,7 +1954,7 @@ about how to do that.
 
 410
 00:15:59,601 --> 00:16:01,033
-I think it's very important--
+I think it's very important &mdash;
 
 411
 00:16:01,033 --> 00:16:02,934
@@ -1963,7 +1963,7 @@ it's very important
 
 412
 00:16:02,934 --> 00:16:05,767
-that it's--it's--
+that it's--it's &mdash;
 because they come so often,
 
 413
@@ -2070,7 +2070,7 @@ that we decided
 
 434
 00:16:54,634 --> 00:16:58,767
-very early on in Firefox--
+very early on in Firefox &mdash;
 it should be almost transparent.
 
 435
@@ -2209,7 +2209,7 @@ of this stuff around.
 463
 00:18:03,734 --> 00:18:07,634
 So, you know, wanting everybody
-to have the latest everything--
+to have the latest everything &mdash;
 
 464
 00:18:07,634 --> 00:18:08,834
@@ -2321,16 +2321,16 @@ important part is
 
 486
 00:18:57,234 --> 00:18:58,734
-in the standards process--
+in the standards process &mdash;
 
 487
 00:18:58,734 --> 00:19:00,100
 when you're defining
-a new standard--
+a new standard &mdash;
 
 488
 00:19:00,100 --> 00:19:03,667
-it's very important to get--
+it's very important to get &mdash;
 to have all the parties
 
 489
@@ -2361,7 +2361,7 @@ put something in the standard
 494
 00:19:16,367 --> 00:19:18,300
 that someone just can't
-implement--
+implement &mdash;
 
 495
 00:19:18,300 --> 00:19:19,968
@@ -2385,7 +2385,7 @@ that aspect.
 499
 00:19:27,901 --> 00:19:29,934
 The other thing is that
-it's just--
+it's just &mdash;
 
 500
 00:19:29,934 --> 00:19:32,200
@@ -2596,12 +2596,12 @@ figure out
 543
 00:21:20,934 --> 00:21:23,667
 is that something
-that's worth standardizing--
+that's worth standardizing &mdash;
 
 544
 00:21:23,667 --> 00:21:25,901
 that's worth doing
-across the web--
+across the web &mdash;
 
 545
 00:21:25,901 --> 00:21:28,200
@@ -2653,7 +2653,7 @@ to each other.
 555
 00:21:49,467 --> 00:21:51,467
 Ian: I think we should point out
-that everyone up here--
+that everyone up here &mdash;
 
 556
 00:21:51,467 --> 00:21:52,934
@@ -2663,7 +2663,7 @@ we're nice people.
 557
 00:21:52,934 --> 00:21:57,734
 But we do try to be as open
-and as--
+and as &mdash;
 
 558
 00:21:57,734 --> 00:21:59,601
@@ -2887,7 +2887,7 @@ So--that's generally speaking.
 603
 00:23:55,601 --> 00:23:58,701
 But there's very few times
-that I'll switch--
+that I'll switch &mdash;
 
 604
 00:23:58,701 --> 00:24:03,300
@@ -3058,7 +3058,7 @@ to make applications.
 
 639
 00:25:42,267 --> 00:25:44,000
-Schroepfer: So if you're not--
+Schroepfer: So if you're not &mdash;
 I'm sorry.
 
 640
@@ -3118,7 +3118,7 @@ that much.
 651
 00:26:06,334 --> 00:26:08,868
 Ian: I was just gonna say,
-I mean, it's not that we don't--
+I mean, it's not that we don't &mdash;
 
 652
 00:26:08,868 --> 00:26:10,534
@@ -3214,7 +3214,7 @@ it comes up in one second...
 671
 00:26:51,033 --> 00:26:53,667
 You know, maybe then
-that's gonna force the--
+that's gonna force the &mdash;
 
 672
 00:26:53,667 --> 00:26:55,667
@@ -3268,7 +3268,7 @@ better, right?
 682
 00:27:20,000 --> 00:27:22,467
 The more the browser
-helps you do--
+helps you do &mdash;
 
 683
 00:27:22,467 --> 00:27:23,767
@@ -3583,7 +3583,7 @@ and shift it over.
 747
 00:30:06,133 --> 00:30:08,100
 So I'd say that, you know,
-if your--
+if your &mdash;
 
 748
 00:30:08,100 --> 00:30:10,000
@@ -3714,7 +3714,7 @@ you can optimize that.
 774
 00:31:13,901 --> 00:31:17,167
 There's also the case that
-the platform--
+the platform &mdash;
 
 775
 00:31:17,167 --> 00:31:19,501
@@ -3743,7 +3743,7 @@ that you can easily change it.
 780
 00:31:29,234 --> 00:31:31,734
 Charles: You also want
-to think about--
+to think about &mdash;
 
 781
 00:31:31,734 --> 00:31:34,434
@@ -3753,7 +3753,7 @@ is not like a single platform.
 782
 00:31:34,434 --> 00:31:37,801
 The difference between
-a small device--
+a small device &mdash;
 
 783
 00:31:37,801 --> 00:31:39,234
@@ -3767,7 +3767,7 @@ low-spec machine
 785
 00:31:41,501 --> 00:31:45,000
 compared to some
-shiny new laptop--
+shiny new laptop &mdash;
 
 786
 00:31:45,000 --> 00:31:48,033
@@ -3790,7 +3790,7 @@ if you can.
 
 790
 00:31:54,400 --> 00:31:56,167
-And figure out, you know--
+And figure out, you know &mdash;
 
 791
 00:31:56,167 --> 00:31:58,434
@@ -3813,7 +3813,7 @@ of the advice that we've heard
 
 795
 00:32:05,400 --> 00:32:06,534
-over the years--
+over the years &mdash;
 
 796
 00:32:06,534 --> 00:32:08,267
@@ -3882,7 +3882,7 @@ about offline,
 809
 00:32:33,334 --> 00:32:35,367
 you know, if all of your stuff
-is service side--
+is service side &mdash;
 
 810
 00:32:35,367 --> 00:32:37,567
@@ -3939,7 +3939,7 @@ to the "carefully" thing,
 
 821
 00:32:55,934 --> 00:32:57,434
-because it's like--
+because it's like &mdash;
 
 822
 00:32:57,434 --> 00:33:00,067
@@ -4053,11 +4053,11 @@ technologies.
 845
 00:33:47,934 --> 00:33:51,767
 Jonas: I thought it was pretty
-cool the other day when I--
+cool the other day when I &mdash;
 
 846
 00:33:51,767 --> 00:33:54,434
-Because I use--
+Because I use &mdash;
 To read email on my phone
 
 847
@@ -4091,7 +4091,7 @@ SQL API.
 
 853
 00:34:14,501 --> 00:34:17,267
-And so if--
+And so if &mdash;
 
 854
 00:34:17,267 --> 00:34:19,234
@@ -4163,7 +4163,7 @@ using web toolkits,
 868
 00:34:47,100 --> 00:34:50,267
 be that GWT
-or other toolkits out there--
+or other toolkits out there &mdash;
 
 869
 00:34:50,267 --> 00:34:54,734
@@ -4177,7 +4177,7 @@ on the client,
 
 871
 00:34:56,133 --> 00:34:57,567
-or do things in different ways--
+or do things in different ways &mdash;
 
 872
 00:34:57,567 --> 00:35:00,200
@@ -4305,7 +4305,7 @@ this landscape,
 
 897
 00:35:58,601 --> 00:35:59,801
-and how to support--
+and how to support &mdash;
 
 898
 00:35:59,801 --> 00:36:01,033
@@ -4363,7 +4363,7 @@ hard work.
 909
 00:36:20,434 --> 00:36:22,601
 Jonas: I think the big problem
-on mobile--
+on mobile &mdash;
 
 910
 00:36:22,601 --> 00:36:25,300
@@ -4377,7 +4377,7 @@ the big problem is that
 
 912
 00:36:28,067 --> 00:36:31,434
-there's just so many--
+there's just so many &mdash;
 there's so many players there.
 
 913
@@ -4423,7 +4423,7 @@ desktop browsers on cell phones.
 921
 00:36:57,000 --> 00:36:59,567
 Like, doing something
-cut down is--
+cut down is &mdash;
 
 922
 00:36:59,567 --> 00:37:03,367
@@ -4491,7 +4491,7 @@ if you look at these browsers,
 
 935
 00:37:43,834 --> 00:37:45,000
-they all have--
+they all have &mdash;
 
 936
 00:37:45,000 --> 00:37:46,367
@@ -4725,7 +4725,7 @@ on their phone,
 983
 00:39:50,901 --> 00:39:53,267
 and will use whatever works
-on their phone--
+on their phone &mdash;
 
 984
 00:39:53,267 --> 00:39:55,667
@@ -4823,7 +4823,7 @@ and what I hear often
 
 1003
 00:40:36,234 --> 00:40:38,334
-from, you know, the CSOs--
+from, you know, the CSOs &mdash;
 
 1004
 00:40:38,334 --> 00:40:41,968
@@ -4837,7 +4837,7 @@ folks like the FBI;
 1006
 00:40:43,400 --> 00:40:45,400
 people who care about
-the data itself--
+the data itself &mdash;
 
 1007
 00:40:45,400 --> 00:40:50,067
@@ -4866,7 +4866,7 @@ officers
 1012
 00:41:01,767 --> 00:41:05,734
 will not let them use iPhones
-to access their mail sys--
+to access their mail sys &mdash;
 
 1013
 00:41:05,734 --> 00:41:07,934
@@ -4898,7 +4898,7 @@ out of their reach.
 
 1019
 00:41:18,734 --> 00:41:21,334
-Another good example is--
+Another good example is &mdash;
 
 1020
 00:41:21,334 --> 00:41:23,200
@@ -4992,7 +4992,7 @@ can look at those things.
 1039
 00:42:08,834 --> 00:42:10,801
 But you know, if you look
-at the Android phones, and--
+at the Android phones, and &mdash;
 
 1040
 00:42:10,801 --> 00:42:12,200
@@ -5039,7 +5039,7 @@ and whatever,
 1049
 00:42:30,534 --> 00:42:33,834
 is for you to start
-thinking about how to encrypt--
+thinking about how to encrypt &mdash;
 
 1050
 00:42:33,834 --> 00:42:36,300
@@ -5092,7 +5092,7 @@ with encryption
 
 1060
 00:42:53,400 --> 00:42:54,868
-that we've seen so far--
+that we've seen so far &mdash;
 
 1061
 00:42:54,868 --> 00:42:56,968
@@ -5106,7 +5106,7 @@ a few years ago called
 
 1063
 00:43:00,200 --> 00:43:03,267
-which was a great usability--
+which was a great usability &mdash;
 
 1064
 00:43:03,267 --> 00:43:04,934
@@ -5143,7 +5143,7 @@ how to teach users what to do.
 
 1071
 00:43:19,400 --> 00:43:20,834
-You know, people--
+You know, people &mdash;
 
 1072
 00:43:20,834 --> 00:43:23,834
@@ -5198,7 +5198,7 @@ make this usable?
 1082
 00:43:41,734 --> 00:43:47,334
 You know, show me that
-users are actually--
+users are actually &mdash;
 
 1083
 00:43:47,334 --> 00:43:50,067
@@ -5302,7 +5302,7 @@ an encrypted email to me.
 1103
 00:44:42,067 --> 00:44:44,767
 man: So let me retort to you
-that along--
+that along &mdash;
 
 1104
 00:44:44,767 --> 00:44:47,667
@@ -5327,7 +5327,7 @@ I agree with you.
 1108
 00:44:57,634 --> 00:45:00,133
 I'd like to see something
-like Embed--
+like Embed &mdash;
 
 1109
 00:45:00,133 --> 00:45:03,367
@@ -5337,7 +5337,7 @@ something key, whatever;
 1110
 00:45:03,367 --> 00:45:04,801
 leave that up to
-the implementers--
+the implementers &mdash;
 
 1111
 00:45:04,801 --> 00:45:06,667
@@ -5362,7 +5362,7 @@ I said the exciting technology
 1115
 00:45:14,801 --> 00:45:19,467
 was, you know, all this access
-to sensitive information--
+to sensitive information &mdash;
 
 1116
 00:45:19,467 --> 00:45:23,067
@@ -5401,7 +5401,7 @@ really complicated.
 1123
 00:45:36,834 --> 00:45:39,200
 And every time
-you get it wrong--
+you get it wrong &mdash;
 
 1124
 00:45:39,200 --> 00:45:43,767
@@ -5474,7 +5474,7 @@ the stupid thing.
 1138
 00:46:14,000 --> 00:46:17,367
 So we've got to figure out
-as we get this right--
+as we get this right &mdash;
 
 1139
 00:46:17,367 --> 00:46:19,334
@@ -5528,7 +5528,7 @@ And we're doing it.
 
 1150
 00:46:43,133 --> 00:46:44,934
-man: My question's regarding--
+man: My question's regarding &mdash;
 
 1151
 00:46:44,934 --> 00:46:46,734
@@ -5611,17 +5611,17 @@ we discovered
 1167
 00:47:34,367 --> 00:47:35,667
 as we started doing
-mobile stuff--
+mobile stuff &mdash;
 
 1168
 00:47:35,667 --> 00:47:38,567
 this is a long time ago,
-not the current effort--
+not the current effort &mdash;
 
 1169
 00:47:38,567 --> 00:47:44,801
-was that you went to Gmaps--
-to Google Maps--
+was that you went to Gmaps &mdash;
+to Google Maps &mdash;
 
 1170
 00:47:44,801 --> 00:47:46,801
@@ -5639,8 +5639,8 @@ scrolling the page.
 
 1173
 00:47:49,968 --> 00:47:56,434
-And so there is a effort--
-the DOM advanced effort--
+And so there is a effort &mdash;
+the DOM advanced effort &mdash;
 
 1174
 00:47:56,434 --> 00:47:59,033
@@ -5670,7 +5670,7 @@ and they are being debated.
 1179
 00:48:13,400 --> 00:48:17,868
 I haven't heard, like,
-where that standard is--
+where that standard is &mdash;
 
 1180
 00:48:17,868 --> 00:48:19,934
@@ -5811,13 +5811,13 @@ of the best practice
 
 1208
 00:49:37,267 --> 00:49:40,300
-that will enable us to build--
-us all--
+that will enable us to build &mdash;
+us all &mdash;
 
 1209
 00:49:40,300 --> 00:49:42,834
 because developers do
-most of the thinking here--
+most of the thinking here &mdash;
 
 1210
 00:49:42,834 --> 00:49:45,400
@@ -5831,7 +5831,7 @@ all the time.
 
 1212
 00:49:48,133 --> 00:49:51,667
-Controlled interfaces--
+Controlled interfaces &mdash;
 touch and multi-touch
 
 1213
@@ -5899,12 +5899,12 @@ of browser extensions?
 
 1226
 00:50:39,767 --> 00:50:42,734
-Jonas: I think browser exten--
+Jonas: I think browser exten &mdash;
 
 1227
 00:50:42,734 --> 00:50:46,033
 I mean, to me,
-the browser is really is your--
+the browser is really is your &mdash;
 
 1228
 00:50:46,033 --> 00:50:47,367
@@ -5972,12 +5972,12 @@ at the same time.
 1241
 00:51:21,167 --> 00:51:23,801
 And the more sort of power
-we give to extensions--
+we give to extensions &mdash;
 
 1242
 00:51:23,801 --> 00:51:26,501
 the more things they can do,
-the more awesome they get--
+the more awesome they get &mdash;
 
 1243
 00:51:26,501 --> 00:51:29,868
@@ -6010,7 +6010,7 @@ a very good thing.
 
 1249
 00:51:43,501 --> 00:51:46,434
-And we just need to sort of--
+And we just need to sort of &mdash;
 
 1250
 00:51:46,434 --> 00:51:48,234
@@ -6076,7 +6076,7 @@ improve the applications.
 
 1263
 00:52:20,367 --> 00:52:23,167
-But the websites I use are--
+But the websites I use are &mdash;
 
 1264
 00:52:23,167 --> 00:52:28,734
@@ -6157,8 +6157,8 @@ that there's a need for it,
 
 1280
 00:53:00,701 --> 00:53:03,033
-and a lot of people want it--
-that will implement it--
+and a lot of people want it &mdash;
+that will implement it &mdash;
 
 1281
 00:53:03,033 --> 00:53:06,367
@@ -6177,7 +6177,7 @@ the common vocabulary,
 1284
 00:53:12,300 --> 00:53:14,767
 Google went out and put on
-an extension for Firefox--
+an extension for Firefox &mdash;
 
 1285
 00:53:14,767 --> 00:53:16,300
@@ -6271,7 +6271,7 @@ where a browser should go,
 
 1304
 00:53:59,100 --> 00:54:00,634
-or take something--
+or take something &mdash;
 
 1305
 00:54:00,634 --> 00:54:02,534
@@ -6281,11 +6281,11 @@ that we've done at Opera,
 1306
 00:54:02,534 --> 00:54:05,601
 that's like Mouse Gestures
-and things we've had for ages--
+and things we've had for ages &mdash;
 
 1307
 00:54:05,601 --> 00:54:06,901
-speed dials and stuff--
+speed dials and stuff &mdash;
 
 1308
 00:54:06,901 --> 00:54:10,467
@@ -6341,7 +6341,7 @@ to the central core?
 
 1319
 00:54:39,267 --> 00:54:43,968
-But extensibility in general--
+But extensibility in general &mdash;
 that's a programming paradigm.
 
 1320
@@ -6467,7 +6467,7 @@ we actually hit
 1346
 00:55:46,734 --> 00:55:49,534
 a lot of these practical
-considerations that--
+considerations that &mdash;
 
 1347
 00:55:49,534 --> 00:55:51,400
@@ -6499,12 +6499,12 @@ starting to think about that.
 
 1353
 00:56:01,200 --> 00:56:02,868
-And so that's--
+And so that's &mdash;
 
 1354
 00:56:02,868 --> 00:56:04,801
 I don't know if that's
-functional or--
+functional or &mdash;
 
 1355
 00:56:04,801 --> 00:56:07,467
@@ -6656,7 +6656,7 @@ they don't want to implement it.
 1386
 00:57:25,234 --> 00:57:29,300
 No one knows to a patent,
-but just, it's--
+but just, it's &mdash;
 
 1387
 00:57:29,300 --> 00:57:33,133
@@ -6671,7 +6671,7 @@ for these kind of problems?
 1389
 00:57:36,534 --> 00:57:40,067
 Charles: So walking into any
-new area of technology--
+new area of technology &mdash;
 
 1390
 00:57:40,067 --> 00:57:43,100
@@ -6690,7 +6690,7 @@ there are patents.
 1393
 00:57:48,400 --> 00:57:50,300
 And some companies,
-you know--
+you know &mdash;
 
 1394
 00:57:50,300 --> 00:57:52,601
@@ -6705,7 +6705,7 @@ of the web at any time ever.
 1396
 00:57:57,567 --> 00:58:02,834
 And I do know of them,
-before the W3C patent policy--
+before the W3C patent policy &mdash;
 
 1397
 00:58:02,834 --> 00:58:05,567
@@ -6748,7 +6748,7 @@ going into Voice.
 
 1405
 00:58:23,934 --> 00:58:27,834
-In, as Jonas said, 
+In, as Jonas said,
 video is a minefield.
 
 1406
@@ -6768,8 +6768,8 @@ that we sit down
 
 1409
 00:58:42,234 --> 00:58:45,667
-and we look--
-either with the patent holder--
+and we look &mdash;
+either with the patent holder &mdash;
 
 1410
 00:58:45,667 --> 00:58:47,534
@@ -6803,7 +6803,7 @@ if we're going to do this,
 1416
 00:59:01,467 --> 00:59:04,100
 either we agree
-to all pay up money--
+to all pay up money &mdash;
 
 1417
 00:59:04,100 --> 00:59:07,934
@@ -6862,7 +6862,7 @@ behind this patent?
 1428
 00:59:32,434 --> 00:59:36,934
 What other patents are out there
-that might cover something--
+that might cover something &mdash;
 
 1429
 00:59:36,934 --> 00:59:40,934
@@ -7233,11 +7233,11 @@ Or how they're gonna change it
 1506
 01:02:47,934 --> 01:02:50,801
 so that their embarrassing
-first effort--
+first effort &mdash;
 
 1507
 01:02:50,801 --> 01:02:53,767
-which is always my case--
+which is always my case &mdash;
 doesn't stick around.
 
 1508

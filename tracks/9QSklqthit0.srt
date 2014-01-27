@@ -187,7 +187,7 @@ access to the media
 41
 00:01:46,900 --> 00:01:50,170
 that the user has stored on
-their device-- their pictures,
+their device &mdash; their pictures,
 
 42
 00:01:50,170 --> 00:01:52,760
@@ -260,7 +260,7 @@ actually written.
 56
 00:02:28,050 --> 00:02:29,360
 Well, actually before
-I do that let me--
+I do that let me &mdash;
 
 57
 00:02:29,360 --> 00:02:31,000
@@ -588,7 +588,7 @@ in this little div it
 
 126
 00:04:50,750 --> 00:04:52,240
-says gallery count three--
+says gallery count three &mdash;
 
 127
 00:04:52,240 --> 00:04:54,900
@@ -813,12 +813,12 @@ the application has and so on.
 
 174
 00:06:34,750 --> 00:06:36,230
-And right here on line seven--
+And right here on line seven &mdash;
 
 175
 00:06:36,230 --> 00:06:37,650
 this is the one you need
-to pay attention to--
+to pay attention to &mdash;
 
 176
 00:06:37,650 --> 00:06:42,210
@@ -2432,7 +2432,7 @@ not necessarily
 
 519
 00:20:36,690 --> 00:20:38,390
-specifically with--
+specifically with &mdash;
 
 520
 00:20:38,390 --> 00:20:41,070

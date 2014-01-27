@@ -1536,7 +1536,7 @@ that you can run.
 335
 00:14:23,520 --> 00:14:26,037
 One of my favorite stories
-in science or a tale-- I
+in science or a tale &mdash; I
 
 336
 00:14:26,037 --> 00:14:27,120
@@ -2467,7 +2467,7 @@ So what's going on there?
 534
 00:21:26,840 --> 00:21:30,250
 When we create this, most
-browsers-- Chrome, Safari, IE--
+browsers &mdash; Chrome, Safari, IE &mdash;
 
 535
 00:21:30,250 --> 00:21:32,730
@@ -2965,7 +2965,7 @@ make a download here.
 641
 00:25:18,870 --> 00:25:23,740
 And the reason for that is
-because in Internet Explorer--
+because in Internet Explorer &mdash;
 
 642
 00:25:23,740 --> 00:25:24,460
@@ -3060,7 +3060,7 @@ on Internet Explorer.
 
 662
 00:26:03,620 --> 00:26:05,740
-The answer-- yes.
+The answer &mdash; yes.
 
 663
 00:26:05,740 --> 00:26:07,640
@@ -4131,7 +4131,7 @@ our check in two days.
 
 899
 00:34:27,980 --> 00:34:31,910
--Payback-- this
+-Payback &mdash; this
 time it's for real.
 
 900
@@ -4348,7 +4348,7 @@ basically, as needed.
 945
 00:36:21,180 --> 00:36:25,980
 Style sheets approached the
-import limits in IE-- 31 total
+import limits in IE &mdash; 31 total
 
 946
 00:36:25,980 --> 00:36:28,930
@@ -4662,7 +4662,7 @@ We get older versions of jQuery.
 1010
 00:38:57,710 --> 00:39:02,392
 We saw an ad that tried to
-encapsulate Prototype-- which
+encapsulate Prototype &mdash; which
 
 1011
 00:39:02,392 --> 00:39:04,350
@@ -5757,7 +5757,7 @@ that we've had.
 
 1240
 00:47:48,590 --> 00:47:51,080
-So the best thing-- and I have
+So the best thing &mdash; and I have
 an exclamation point here,
 
 1241
@@ -5767,7 +5767,7 @@ represent our excitement
 
 1242
 00:47:52,996 --> 00:47:55,781
-by this-- we have
+by this &mdash; we have
 dynamic pages now.
 
 1243
@@ -5899,7 +5899,7 @@ to do some really interesting
 1269
 00:48:58,700 --> 00:49:02,690
 things in CSS that we had to
-do with images before-- arrows,
+do with images before &mdash; arrows,
 
 1270
 00:49:02,690 --> 00:49:06,120
@@ -6982,7 +6982,7 @@ smoothly animating radar map.
 1502
 00:58:22,050 --> 00:58:27,447
 And the reason we
-did this-- and I
+did this &mdash; and I
 
 1503
 00:58:27,447 --> 00:58:28,780
@@ -7505,7 +7505,7 @@ was hard, he would
 1614
 01:03:43,400 --> 01:03:48,310
 say, the hard rule is the first
-one-- doing stuff that performs
+one &mdash; doing stuff that performs
 
 1615
 01:03:48,310 --> 01:03:50,752
@@ -7538,7 +7538,7 @@ And that's really hard.
 1621
 01:04:02,750 --> 01:04:05,880
 Meanwhile, rule number
-two-- avoiding stuff.
+two &mdash; avoiding stuff.
 
 1622
 01:04:05,880 --> 01:04:06,580
@@ -8310,12 +8310,12 @@ And why is that?
 
 1785
 01:11:16,550 --> 01:11:19,210
-I think this rule--
+I think this rule &mdash;
 avoid stuff that
 
 1786
 01:11:19,210 --> 01:11:22,430
-performs poorly-- I
+performs poorly &mdash; I
 think the key difference
 
 1787
@@ -8425,7 +8425,7 @@ using CSS transitions.
 
 1809
 01:12:18,240 --> 01:12:23,980
-Meanwhile, on native apps-- and
+Meanwhile, on native apps &mdash; and
 this is especially true in iOS.
 
 1810
@@ -8445,7 +8445,7 @@ do things that perform poorly.
 
 1813
 01:12:34,950 --> 01:12:38,892
-Apple has-- you do UI
+Apple has &mdash; you do UI
 kit and core animation.
 
 1814
@@ -8650,7 +8650,7 @@ poor performance.
 1856
 01:14:29,180 --> 01:14:35,170
 Some things to watch out
-for are-- well, the biggest
+for are &mdash; well, the biggest
 
 1857
 01:14:35,170 --> 01:14:37,510
@@ -8948,7 +8948,7 @@ And it stays in there.
 1921
 01:16:56,180 --> 01:16:59,930
 So I think the way to avoid this
-is to really-- developers take
+is to really &mdash; developers take
 
 1922
 01:16:59,930 --> 01:17:04,237
@@ -9452,7 +9452,7 @@ We've got a little bit of time.
 
 2031
 01:21:22,000 --> 01:21:31,460
-We have 40-- so we're
+We have 40 &mdash; so we're
 meeting back here at 8:30.
 
 2032
@@ -9727,13 +9727,13 @@ neglect the other two
 
 2090
 02:07:57,590 --> 02:08:01,540
-pillars of web performance--
+pillars of web performance &mdash;
 rendering and compute.
 
 2091
 02:08:01,540 --> 02:08:04,130
 A great part of the
-Forecast.io-- Forecast.io?
+Forecast.io &mdash; Forecast.io?
 
 2092
 02:08:04,130 --> 02:08:07,230
@@ -9866,8 +9866,8 @@ through some of the sites
 
 2119
 02:08:59,280 --> 02:09:01,170
-that you've submitted--
-ha, ha, ha, ha, ha--
+that you've submitted &mdash;
+ha, ha, ha, ha, ha &mdash;
 
 2120
 02:09:01,170 --> 02:09:04,390
@@ -10528,7 +10528,7 @@ an overflow of information.
 2263
 02:13:28,660 --> 02:13:31,890
 I bet most of you in here
-haven't actually dived into--
+haven't actually dived into &mdash;
 
 2264
 02:13:31,890 --> 02:13:32,390
@@ -10665,7 +10665,7 @@ Yeah.
 2295
 02:14:18,670 --> 02:14:21,086
 So what I'm going to do now
-is with the rest of the time--
+is with the rest of the time &mdash;
 
 2296
 02:14:21,086 --> 02:14:22,760
@@ -10812,7 +10812,7 @@ extension.
 2327
 02:15:18,530 --> 02:15:21,030
 So this is a fantastic
-little-- who's using this?
+little &mdash; who's using this?
 
 2328
 02:15:21,030 --> 02:15:22,770
@@ -10876,7 +10876,7 @@ plugged in right here.
 
 2341
 02:15:45,329 --> 02:15:47,370
-And I can actually click--
+And I can actually click &mdash;
 well, I'll close this,
 
 2342
@@ -11269,7 +11269,7 @@ Click inspect.
 2428
 02:18:26,700 --> 02:18:28,809
 Again, native
-applications-- they're slow.
+applications &mdash; they're slow.
 
 2429
 02:18:28,809 --> 02:18:30,100
@@ -11505,7 +11505,7 @@ cool idea that you
 
 2481
 02:20:08,710 --> 02:20:10,010
-can actually-- you know what?
+can actually &mdash; you know what?
 
 2482
 02:20:10,010 --> 02:20:10,849
@@ -11550,7 +11550,7 @@ one with less detail in it.
 
 2491
 02:20:26,447 --> 02:20:28,780
-What this tells-- I know
+What this tells &mdash; I know
 nothing about these developers.
 
 2492
@@ -11628,7 +11628,7 @@ lying to each other.
 2508
 02:21:03,048 --> 02:21:06,156
 Or you have no idea the way that
-your images-- Round of applause
+your images &mdash; Round of applause
 
 2509
 02:21:06,156 --> 02:21:07,780
@@ -12226,7 +12226,7 @@ moving those images around.
 
 2637
 02:25:06,890 --> 02:25:08,330
-What I don't like-- pardon?
+What I don't like &mdash; pardon?
 
 2638
 02:25:08,330 --> 02:25:09,442
@@ -12465,7 +12465,7 @@ little block of data
 
 2689
 02:26:49,360 --> 02:26:51,510
-you're seeing here-- see
+you're seeing here &mdash; see
 that deoptimization data?
 
 2690
@@ -12702,7 +12702,7 @@ modes on the developer tools.
 2739
 02:28:28,800 --> 02:28:31,680
 So first off, you'll see
-this beautiful little--
+this beautiful little &mdash;
 
 2740
 02:28:31,680 --> 02:28:33,320
@@ -12792,7 +12792,7 @@ of the pixels in that tile,
 
 2758
 02:29:19,630 --> 02:29:21,370
-all of the WebKit--
+all of the WebKit &mdash;
 well, Blink now.
 
 2759
@@ -12802,7 +12802,7 @@ Sorry.
 2760
 02:29:21,470 --> 02:29:23,720
 I've got to get my terminology
-right-- all of the page
+right &mdash; all of the page
 
 2761
 02:29:23,720 --> 02:29:27,480
@@ -13063,7 +13063,7 @@ box that keeps popping up?
 2815
 02:31:19,216 --> 02:31:21,090
 This is actually a mode
-in Chrome Dev Tools--
+in Chrome Dev Tools &mdash;
 
 2816
 02:31:21,090 --> 02:31:21,790
@@ -13177,12 +13177,12 @@ hitching is the right term.
 
 2840
 02:32:01,350 --> 02:32:03,380
-Every other medium--
+Every other medium &mdash;
 video games, AV,
 
 2841
 02:32:03,380 --> 02:32:05,740
-movies-- it's called hitching.
+movies &mdash; it's called hitching.
 
 2842
 02:32:05,740 --> 02:32:07,400
@@ -13461,7 +13461,7 @@ depressing image.
 2903
 02:34:08,133 --> 02:34:12,290
 I didn't mean that
-that was-- Again,
+that was &mdash; Again,
 
 2904
 02:34:12,290 --> 02:34:14,030
@@ -14052,7 +14052,7 @@ wait three seconds.
 
 3034
 02:38:27,155 --> 02:38:31,204
-Maybe you should-- having
+Maybe you should &mdash; having
 an awkward mic moment.
 
 3035
@@ -14312,7 +14312,7 @@ did come down.
 
 3091
 02:40:12,660 --> 02:40:15,500
-However, we see that--
+However, we see that &mdash;
 let's go down here.
 
 3092
@@ -15050,7 +15050,7 @@ problem for your site.
 
 3257
 02:46:18,170 --> 02:46:19,420
-Hopefully, some of you--
+Hopefully, some of you &mdash;
 
 3258
 02:46:19,420 --> 02:46:23,740
@@ -15463,11 +15463,11 @@ I'm going to see a tweet.
 3348
 02:49:20,500 --> 02:49:23,760
 Colt says, use set interval
-with closure and eval--
+with closure and eval &mdash;
 
 3349
 02:49:23,760 --> 02:49:27,095
-perfmatters-- inside of a WOFF.
+perfmatters &mdash; inside of a WOFF.
 
 3350
 02:49:27,095 --> 02:49:28,720
@@ -15491,7 +15491,7 @@ The CSS gets bloated.
 3354
 02:49:35,520 --> 02:49:38,334
 And then the WOFF
-has to be-- Anyhow,
+has to be &mdash; Anyhow,
 
 3355
 02:49:38,334 --> 02:49:40,000
@@ -15530,7 +15530,7 @@ V8, the code DOP data.
 3362
 02:49:50,520 --> 02:49:52,440
 But otherwise, the
-relocation info-- here's
+relocation info &mdash; here's
 
 3363
 02:49:52,440 --> 02:49:56,190
@@ -16305,7 +16305,7 @@ I want to show this.
 
 3538
 02:55:21,300 --> 02:55:27,020
-So notice this-- I moved now--
+So notice this &mdash; I moved now &mdash;
 but this YouTube image here.
 
 3539
@@ -16330,7 +16330,7 @@ is being re-rendered.
 3543
 02:55:38,280 --> 02:55:41,320
 So you can see, again,
-that it's showing-- nope.
+that it's showing &mdash; nope.
 
 3544
 02:55:41,320 --> 02:55:41,820
@@ -16409,7 +16409,7 @@ certain elements on a page
 
 3561
 02:56:06,410 --> 02:56:08,039
-are-- Imagine your
+are &mdash; Imagine your
 page is a plane.
 
 3562
@@ -16653,7 +16653,7 @@ Too much clicking.
 3615
 02:58:02,010 --> 02:58:08,195
 So as I scroll here, notice
-how these objects on the side--
+how these objects on the side &mdash;
 
 3616
 02:58:08,195 --> 02:58:08,695
@@ -16720,7 +16720,7 @@ who are just going
 3629
 02:58:33,330 --> 02:58:36,222
 to start putting translateZ(0)
-on every part of your page--
+on every part of your page &mdash;
 
 3630
 02:58:36,222 --> 02:58:37,680
@@ -16730,7 +16730,7 @@ a lot because it
 3631
 02:58:37,680 --> 02:58:39,240
 was supposed to be
-a silver bullet--
+a silver bullet &mdash;
 
 3632
 02:58:39,240 --> 02:58:41,406
@@ -17226,7 +17226,7 @@ article that I put on HTML5rocks
 3742
 03:02:13,291 --> 03:02:14,790
 about image
-compression-- let me see
+compression &mdash; let me see
 
 3743
 03:02:14,790 --> 03:02:16,373
@@ -17281,7 +17281,7 @@ about JPEG information.
 
 3754
 03:02:41,250 --> 03:02:44,120
-And it actually shows that--
+And it actually shows that &mdash;
 here it is, right here.
 
 3755
@@ -17458,7 +17458,7 @@ doing everything.
 
 3792
 03:04:04,580 --> 03:04:07,540
-This actually tells me-- no one
+This actually tells me &mdash; no one
 is in here from Twitter, right?
 
 3793
@@ -18144,7 +18144,7 @@ pages come in below that.
 
 3946
 03:08:58,340 --> 03:09:03,730
-Mainly, this is coming from--
+Mainly, this is coming from &mdash;
 Bootstrap is being included.
 
 3947
@@ -18333,8 +18333,8 @@ has a timer that
 
 3989
 03:10:48,090 --> 03:10:52,210
-needs jQuery and Bootstrap--
-two jQueries and Bootstrap--
+needs jQuery and Bootstrap &mdash;
+two jQueries and Bootstrap &mdash;
 
 3990
 03:10:52,210 --> 03:10:57,790
@@ -19195,7 +19195,7 @@ Cancel.
 
 4182
 03:17:37,680 --> 03:17:41,400
-So as I'm scrolling here--
+So as I'm scrolling here &mdash;
 and it's not picking that up.
 
 4183
@@ -19447,7 +19447,7 @@ And why not?
 
 4239
 03:19:51,370 --> 03:19:51,930
-And--
+And &mdash;
 
 4240
 03:19:51,930 --> 03:19:52,590
@@ -20150,12 +20150,12 @@ watch a loading bar go
 4390
 03:25:38,640 --> 03:25:43,310
 to see a set of email subjects,
-which is just a list-- it's
+which is just a list &mdash; it's
 
 4391
 03:25:43,310 --> 03:25:47,630
 essentially an HTML list of
-a sentence-- is ridiculous.
+a sentence &mdash; is ridiculous.
 
 4392
 03:25:47,630 --> 03:25:51,305
@@ -20849,7 +20849,7 @@ Oh, yes.
 
 4539
 03:31:31,260 --> 03:31:33,190
-One other thing--
+One other thing &mdash;
 
 4540
 03:31:33,190 --> 03:32:14,588

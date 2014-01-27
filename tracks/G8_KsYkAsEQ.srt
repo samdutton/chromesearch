@@ -13,7 +13,7 @@ and this is "Google Root
 4
 00:00:17,580 --> 00:00:20,710
 Access." Today we're going to
-talk about open source--
+talk about open source &mdash;
 
 5
 00:00:20,710 --> 00:00:24,200
@@ -78,7 +78,7 @@ that we have online.
 18
 00:00:53,070 --> 00:00:54,580
 But also all the things
-that we ship--
+that we ship &mdash;
 
 19
 00:00:54,580 --> 00:00:56,530
@@ -330,7 +330,7 @@ the technology inside Android.
 70
 00:03:31,022 --> 00:03:33,710
 DON DODGE: So the infrastructure
-things--
+things &mdash;
 
 71
 00:03:33,710 --> 00:03:37,040
@@ -548,12 +548,12 @@ publishing.
 116
 00:05:43,170 --> 00:05:44,940
 Because when we shipped
-Chromium--
+Chromium &mdash;
 
 117
 00:05:44,940 --> 00:05:47,540
 this is something a lot of
-people don't understand-- when
+people don't understand &mdash; when
 
 118
 00:05:47,540 --> 00:05:52,150
@@ -994,7 +994,7 @@ confusing, so you shouldn't
 210
 00:09:49,730 --> 00:09:51,450
 feel like you're ignorant
-of this stuff--
+of this stuff &mdash;
 
 211
 00:09:51,450 --> 00:09:53,780
@@ -1204,7 +1204,7 @@ that isn't written by
 254
 00:11:55,430 --> 00:11:58,250
 someone at the company, and
-that means anything--
+that means anything &mdash;
 
 255
 00:11:58,250 --> 00:12:01,880
@@ -1213,7 +1213,7 @@ like GitHub, or Stack
 
 256
 00:12:01,880 --> 00:12:06,230
-Exchange, or Stack Overflow--
+Exchange, or Stack Overflow &mdash;
 
 257
 00:12:06,230 --> 00:12:08,650
@@ -1240,7 +1240,7 @@ all over the place.
 
 262
 00:12:13,740 --> 00:12:14,910
-Segregate the code--
+Segregate the code &mdash;
 
 263
 00:12:14,910 --> 00:12:18,230
@@ -1774,7 +1774,7 @@ It's more of an indicator.
 374
 00:17:01,410 --> 00:17:03,814
 DON DODGE: So if a startup is
-using MongoDB, or Magento--
+using MongoDB, or Magento &mdash;
 
 375
 00:17:03,814 --> 00:17:04,690
@@ -2142,7 +2142,7 @@ source software.
 453
 00:20:05,450 --> 00:20:06,905
 So you can do the math
-there, too--
+there, too &mdash;
 
 454
 00:20:06,905 --> 00:20:08,400
@@ -2155,12 +2155,12 @@ amount of code.
 456
 00:20:12,500 --> 00:20:13,740
 When you're a computer
-science student--
+science student &mdash;
 
 457
 00:20:13,740 --> 00:20:16,310
 I don't know if you went through
-CS school-- but you're
+CS school &mdash; but you're
 
 458
 00:20:16,310 --> 00:20:18,980

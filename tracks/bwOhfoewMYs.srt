@@ -31,12 +31,12 @@ course the Web is about sharing. And what
 7
 00:00:15,290 --> 00:00:20,619
 I mean is I don't mean social media. I mean
-they're a bunch of mad scientists -- actually,
+they're a bunch of mad scientists  &mdash; actually,
 
 8
 00:00:20,619 --> 00:00:25,810
 visionary physicists back in the early '90's
--- and they decided they wanted to share physics
+ &mdash; and they decided they wanted to share physics
 
 9
 00:00:25,810 --> 00:00:30,769
@@ -321,7 +321,7 @@ because we really wanted to bring magazine-like
 65
 00:04:47,680 --> 00:04:53,169
 layout to the Web. And we want to do that
--- we're doing that in primarily two ways
+ &mdash; we're doing that in primarily two ways
 
 66
 00:04:53,169 --> 00:05:00,020
@@ -506,7 +506,7 @@ be optimized for any size screen.
 102
 00:07:53,780 --> 00:07:58,229
 So this is the same story once again, but
-it uses -- it has some gestures where you
+it uses  &mdash; it has some gestures where you
 
 103
 00:07:58,229 --> 00:08:05,229
@@ -515,7 +515,7 @@ determine the optimal width for a column and
 
 104
 00:08:05,629 --> 00:08:11,319
-the optimal -- the maximum number of columns
+the optimal  &mdash; the maximum number of columns
 it can fit. And you can see if you have much
 
 105
@@ -531,7 +531,7 @@ is scales as I change the column width because
 107
 00:08:23,550 --> 00:08:28,720
 it's done with SVG.
-So this thing -- this layout is going to work
+So this thing  &mdash; this layout is going to work
 
 108
 00:08:28,720 --> 00:08:33,810
@@ -610,7 +610,7 @@ those contributions. And in this case the
 
 123
 00:09:47,250 --> 00:09:50,709
-Chrome beta -- actually, I shouldn't say beta
+Chrome beta  &mdash; actually, I shouldn't say beta
 anymore, it's not in beta anymore since like
 
 124
@@ -735,13 +735,13 @@ for any reason, then call this on layout update
 
 148
 00:11:51,600 --> 00:11:56,740
-function so that I can run some -- you know,
+function so that I can run some  &mdash; you know,
 take a look at the page, figure out what happened
 
 149
 00:11:56,740 --> 00:12:01,079
 and update my layout. And then just add that
-region to the -- pin that region to the body
+region to the  &mdash; pin that region to the body
 
 150
 00:12:01,079 --> 00:12:05,149
@@ -910,7 +910,7 @@ X. So this line of code is basically saying
 
 183
 00:14:23,190 --> 00:14:28,110
-"Don't call my -- don't call my event handler
+"Don't call my  &mdash; don't call my event handler
 and make me have to add regions and lay them
 
 184
@@ -1106,7 +1106,7 @@ at the booth and I was demoing CSS Exclusions
 222
 00:17:38,880 --> 00:17:43,160
 and Regions, and people would come up and
-take a look at it -- and we had a prototype
+take a look at it  &mdash; and we had a prototype
 
 223
 00:17:43,160 --> 00:17:46,030
@@ -1271,7 +1271,7 @@ you still have this workflow that I just described,
 255
 00:20:00,760 --> 00:20:07,760
 but you have this entire additional workflow
-that's like -- pulls it down and -- and really
+that's like  &mdash; pulls it down and  &mdash; and really
 
 256
 00:20:08,260 --> 00:20:12,560
@@ -1351,7 +1351,7 @@ So Adobe looked at that problem and thought
 271
 00:21:07,920 --> 00:21:13,100
 that maybe we could do something about it.
-So I'm going to switch over to -- to my browser
+So I'm going to switch over to  &mdash; to my browser
 
 272
 00:21:13,100 --> 00:21:17,530
@@ -1386,11 +1386,11 @@ come over here and switch over to the ELMO.
 278
 00:21:44,020 --> 00:21:48,410
 And I'm going to put my devices over here
-on the left and I'm going to put my -- my
+on the left and I'm going to put my  &mdash; my
 
 279
 00:21:48,410 --> 00:21:53,600
-left anyways -- and I'm going to put my desktop
+left anyways  &mdash; and I'm going to put my desktop
 over here on this screen. And what you are
 
 280
@@ -1406,7 +1406,7 @@ and they all follow along, right? So that
 282
 00:22:03,810 --> 00:22:08,790
 same Web development workflow that I showed
-you earlier, now I can -- I can still do with
+you earlier, now I can  &mdash; I can still do with
 
 283
 00:22:08,790 --> 00:22:12,610
@@ -1495,7 +1495,7 @@ we're accustomed to doing, you know, on our
 
 300
 00:23:34,240 --> 00:23:40,700
--- when we're doing Web development on our
+ &mdash; when we're doing Web development on our
 desktop and now it extends nicely to our devices.
 
 301
@@ -1505,7 +1505,7 @@ can also change things so I can, you know,
 
 302
 00:23:44,710 --> 00:23:51,710
-say something like -- I can change this headline
+say something like  &mdash; I can change this headline
 to be a little more relevant to me, right?
 
 303
@@ -1566,7 +1566,7 @@ devices here. I'll just click on this icon,
 314
 00:24:43,300 --> 00:24:50,300
 takes a little bit of time, open up the directory
-here and you can see that I have -- this is
+here and you can see that I have  &mdash; this is
 
 315
 00:24:50,760 --> 00:24:57,030
@@ -1605,7 +1605,7 @@ that.
 
 322
 00:25:23,180 --> 00:25:28,140
-So -- so there's shadow. It's available right
+So  &mdash; so there's shadow. It's available right
 now. You can go to labs.adobe.com, download
 
 323
@@ -1745,7 +1745,7 @@ And he responds, he says, "Here's the link,"
 
 350
 00:27:32,170 --> 00:27:37,270
-you know, "here's a link to the public -- public
+you know, "here's a link to the public  &mdash; public
 backlog, you can check for yourself, it's
 
 351
@@ -1770,7 +1770,7 @@ I thought, you know, that's true. Like that
 
 355
 00:27:50,220 --> 00:27:54,450
--- like, I'm really critical of editors, right?
+ &mdash; like, I'm really critical of editors, right?
 We all are. Everyone in this room is really
 
 356
@@ -1996,7 +1996,7 @@ just pick the right one.
 400
 00:31:10,600 --> 00:31:15,400
 And I can go down here and I can make a change,
-so maybe I change this to 33 -- now, this
+so maybe I change this to 33  &mdash; now, this
 
 401
 00:31:15,400 --> 00:31:20,610
@@ -2086,12 +2086,12 @@ real-time what's going on here and I can just
 418
 00:32:33,280 --> 00:32:36,630
 save it.
-Now, you -- you might be accustomed to doing
+Now, you  &mdash; you might be accustomed to doing
 
 419
 00:32:36,630 --> 00:32:43,340
-this kind of thing in -- in something like
-the -- like the WebKit devtools, right? Where
+this kind of thing in  &mdash; in something like
+the  &mdash; like the WebKit devtools, right? Where
 
 420
 00:32:43,340 --> 00:32:46,840
@@ -2116,7 +2116,7 @@ Now, this also works with JavaScript, too.
 424
 00:33:00,650 --> 00:33:07,650
 So I can scroll down to, you know, some function,
-function call here, and drop my -- drop my
+function call here, and drop my  &mdash; drop my
 
 425
 00:33:10,380 --> 00:33:13,790
@@ -2245,7 +2245,7 @@ it as well. And when I hover on it, the gray
 
 450
 00:35:21,740 --> 00:35:28,740
-scale filter gets animated and the -- to restore
+scale filter gets animated and the  &mdash; to restore
 the colors and you saw this kind of flag animation
 
 451
@@ -2260,8 +2260,8 @@ are applied here and how you write this. Another
 
 453
 00:35:41,820 --> 00:35:48,820
-thing that's more subtle on this is the -- is
-the -- is happening in the interaction of
+thing that's more subtle on this is the  &mdash; is
+the  &mdash; is happening in the interaction of
 
 454
 00:35:52,650 --> 00:35:58,710
@@ -2285,12 +2285,12 @@ we do this traditionally?
 
 458
 00:36:16,700 --> 00:36:23,700
-So -- oops.
+So  &mdash; oops.
 Okay. All right. So traditionally, this is
 
 459
 00:36:26,640 --> 00:36:32,910
-done with -- with authoring tools, so we do
+done with  &mdash; with authoring tools, so we do
 this with tools like Photoshop, we do with
 
 460
@@ -2305,7 +2305,7 @@ let you define complex vector effects or filter
 
 462
 00:36:46,120 --> 00:36:52,460
-effects or let you play with, you know -- you
+effects or let you play with, you know  &mdash; you
 know, measures of coordinates in a space to
 
 463
@@ -2320,7 +2320,7 @@ coming is through a number of filter effects.
 
 465
 00:37:03,780 --> 00:37:08,030
-We have -- we have -- at the bottom in gray
+We have  &mdash; we have  &mdash; at the bottom in gray
 we have the text shadow and box shadow, and
 
 466
@@ -2341,11 +2341,11 @@ be powerful.
 469
 00:37:22,970 --> 00:37:27,800
 And we have the new filter property, and that
-starts to be implemented in -- in the browser
+starts to be implemented in  &mdash; in the browser
 
 470
 00:37:27,800 --> 00:37:32,270
-and starts to being -- using the browser.
+and starts to being  &mdash; using the browser.
 If you've seen the keynote this morning, the
 
 471
@@ -2355,12 +2355,12 @@ and they are now in Chromium and WebKit as
 
 472
 00:37:37,710 --> 00:37:44,320
-well, they are also in IE for -- for scale
+well, they are also in IE for  &mdash; for scale
 or vector graphics. The way you use filter
 
 473
 00:37:44,320 --> 00:37:50,590
-effects is in one of three ways. The -- this
+effects is in one of three ways. The  &mdash; this
 is one to start with is probably filter graphs,
 
 474
@@ -2406,7 +2406,7 @@ now and this is what does the GPX like the
 482
 00:38:28,570 --> 00:38:34,150
 waving effect that we saw.
-So the first -- the few effects about what's
+So the first  &mdash; the few effects about what's
 
 483
 00:38:34,150 --> 00:38:38,620
@@ -2456,7 +2456,7 @@ pages. Now, let's turn to the new filter effects
 492
 00:39:30,880 --> 00:39:36,110
 and the ones that are starting to be available
-now. The -- the easiest way to use them is
+now. The  &mdash; the easiest way to use them is
 
 493
 00:39:36,110 --> 00:39:40,760
@@ -2506,7 +2506,7 @@ can see that visually they provide, you know,
 502
 00:40:22,670 --> 00:40:29,670
 already a pretty nice variety of things you
-can do. Now, the -- oops. Having problems
+can do. Now, the  &mdash; oops. Having problems
 
 503
 00:40:31,600 --> 00:40:38,600
@@ -2571,7 +2571,7 @@ chiseled effect. And also since this is all
 515
 00:41:39,050 --> 00:41:45,240
 declarative and it's done in markup, I can
-manipulate it -- I can manipulate it dynamically
+manipulate it  &mdash; I can manipulate it dynamically
 
 516
 00:41:45,240 --> 00:41:51,880
@@ -2626,7 +2626,7 @@ is really visual effect and belongs to filters.
 526
 00:42:42,080 --> 00:42:48,130
 That turns out to be fairly simple to write
-in -- as a filter graph, and also the nice
+in  &mdash; as a filter graph, and also the nice
 
 527
 00:42:48,130 --> 00:42:54,650
@@ -2711,7 +2711,7 @@ this, this is what the kind of things it does,
 543
 00:44:17,220 --> 00:44:21,720
 so here you see when I hover, I start applying
-a filter -- custom filter effect and the two
+a filter  &mdash; custom filter effect and the two
 
 544
 00:44:21,720 --> 00:44:28,300
@@ -2730,7 +2730,7 @@ can notice is there's a fairly subtle effect
 
 547
 00:44:38,960 --> 00:44:45,960
--- shading effect on the rendering, so the
+ &mdash; shading effect on the rendering, so the
 original element that we're filtering is all
 
 548
@@ -2750,7 +2750,7 @@ very fast. So the model says the shaders is
 
 551
 00:45:03,360 --> 00:45:09,370
-that -- the conceptual model, when you use
+that  &mdash; the conceptual model, when you use
 it, you want to author it or just use it as
 
 552
@@ -2765,7 +2765,7 @@ offscreen rendering, and what the vertex shader
 
 554
 00:45:24,110 --> 00:45:30,460
-lets you do is manipulate those -- those mesh
+lets you do is manipulate those  &mdash; those mesh
 points, or mesh vertices in a 3D space, and
 
 555
@@ -2870,7 +2870,7 @@ now on the right-hand side you can see that
 
 575
 00:47:30,890 --> 00:47:35,490
-all of those vertices have been moved -- have
+all of those vertices have been moved  &mdash; have
 been moved by my vertex shader, and as a result,
 
 576
@@ -2886,7 +2886,7 @@ more sophisticated and give it a little more
 578
 00:47:47,700 --> 00:47:52,940
 realistic look, like if I wanted the thing
-to be darker at the -- you know, where the
+to be darker at the  &mdash; you know, where the
 
 579
 00:47:52,940 --> 00:47:59,940
@@ -2895,7 +2895,7 @@ coloring on the edges. Well, that's when I
 
 580
 00:48:00,170 --> 00:48:06,310
-would use -- start using a fragment shader,
+would use  &mdash; start using a fragment shader,
 so here I've added this fragment shader, and
 
 581
@@ -2915,12 +2915,12 @@ this very nice shading effect. And I mentioned
 
 584
 00:48:25,400 --> 00:48:31,060
-earlier that passing parameter was -- was
+earlier that passing parameter was  &mdash; was
 a useful feature and a powerful feature in
 
 585
 00:48:31,060 --> 00:48:37,490
-shaders, so here we have the same -- the same
+shaders, so here we have the same  &mdash; the same
 shaders we had in the previous example, the
 
 586
@@ -2931,7 +2931,7 @@ shader, but I'm now passing a parameter that
 587
 00:48:43,200 --> 00:48:48,750
 controls the amount of folding I do, and the
-more I fold, the more -- I mean, the bigger
+more I fold, the more  &mdash; I mean, the bigger
 
 588
 00:48:48,750 --> 00:48:55,680
@@ -2946,12 +2946,12 @@ scripts, I have hooked up a little slider
 590
 00:48:59,490 --> 00:49:03,860
 here, and if I go to the left, I'll have less
-of the effect, and you see what -- how the
+of the effect, and you see what  &mdash; how the
 
 591
 00:49:03,860 --> 00:49:09,619
 code changes, and if I move to the right,
-I'll go to the full extent of the -- of the
+I'll go to the full extent of the  &mdash; of the
 
 592
 00:49:09,619 --> 00:49:15,410
@@ -3020,7 +3020,7 @@ for open GLES, because that is the same exact
 
 605
 00:50:29,270 --> 00:50:34,180
-language. It's -- you know, it's seal like.
+language. It's  &mdash; you know, it's seal like.
 It's a little different. But it's not that
 
 606
@@ -3031,7 +3031,7 @@ from. Fragment shaders or pixel shaders, similarly
 607
 00:50:41,290 --> 00:50:48,290
 it's the same language as for GLSL. There's
-a slight difference -- actually not that slight.
+a slight difference  &mdash; actually not that slight.
 
 608
 00:50:48,910 --> 00:50:55,910
@@ -3101,12 +3101,12 @@ exactly right?
 621
 00:52:08,160 --> 00:52:13,260
 So this is what the CSS shader studio does,
-and I'll show you a few example of that--
+and I'll show you a few example of that &mdash;
 
 622
 00:52:13,260 --> 00:52:20,260
 of that tool. So here we're in this prototype
-tool. It's not a -- it's not an application
+tool. It's not a  &mdash; it's not an application
 
 623
 00:52:21,060 --> 00:52:28,060
@@ -3116,12 +3116,12 @@ anything. It's a demo tool. And on the left
 624
 00:52:28,150 --> 00:52:34,000
 hand side you have a set of shaders. When
-you select one, you -- the user interface
+you select one, you  &mdash; the user interface
 
 625
 00:52:34,000 --> 00:52:38,340
 provides you the parameters that you can configure
-for the shader, so those are -- if you remember
+for the shader, so those are  &mdash; if you remember
 
 626
 00:52:38,340 --> 00:52:42,440
@@ -3141,7 +3141,7 @@ the different values for the shader. So, you
 629
 00:52:51,290 --> 00:52:58,290
 know, before the presentation I prepared one
-on the -- this warp shelter we have, and I
+on the  &mdash; this warp shelter we have, and I
 
 630
 00:52:58,550 --> 00:53:05,290
@@ -3160,7 +3160,7 @@ if I run it, you know, I will have kind of
 
 633
 00:53:17,740 --> 00:53:21,990
-a transition effect that -- I may want to
+a transition effect that  &mdash; I may want to
 put on my Web page when I'm shoring up UP's
 
 634
@@ -3185,18 +3185,18 @@ might want. I can also do things like shuffling
 
 638
 00:53:51,650 --> 00:53:58,650
-tiles for example. Here, where -- when I move,
-I can -- I can kind of explode the content
+tiles for example. Here, where  &mdash; when I move,
+I can  &mdash; I can kind of explode the content
 
 639
 00:54:02,740 --> 00:54:08,369
 and that's because when I move the vertices
-of the -- you know, on the vertex mash, I
+of the  &mdash; you know, on the vertex mash, I
 
 640
 00:54:08,369 --> 00:54:12,740
 have the option of keeping them attached in
-which case it's like moving a -- distorting
+which case it's like moving a  &mdash; distorting
 
 641
 00:54:12,740 --> 00:54:19,740
@@ -3250,7 +3250,7 @@ we're planning to make it available later
 
 651
 00:55:13,890 --> 00:55:20,890
-this year so that people can -- can look at
+this year so that people can  &mdash; can look at
 it, and experiment with shaders easily. All
 
 652
@@ -3296,7 +3296,7 @@ nice blend modes that they have in tools like
 660
 00:56:13,940 --> 00:56:20,760
 Photoshop again. We're working on a new proposal
--- it's actually not that new proposal, it's
+ &mdash; it's actually not that new proposal, it's
 
 661
 00:56:20,760 --> 00:56:25,910
@@ -3330,7 +3330,7 @@ bunch of images and then they put it on the
 
 667
 00:56:52,820 --> 00:56:58,930
--- on the page. Here I have the CSS animation
+ &mdash; on the page. Here I have the CSS animation
 on the color, and you can see that the color
 
 668
@@ -3370,13 +3370,13 @@ that just means draw what I draw on top of
 
 675
 00:57:38,230 --> 00:57:43,400
-the background. And that's -- you know, so
+the background. And that's  &mdash; you know, so
 far that's no surprise. But I have a bunch
 
 676
 00:57:43,400 --> 00:57:49,130
 of options and, you know, I can say I just
-want, you know -- sorry. Destination over,
+want, you know  &mdash; sorry. Destination over,
 
 677
 00:57:49,130 --> 00:57:56,130
@@ -3435,7 +3435,7 @@ and we've done a prototype of this I'll show
 
 688
 00:59:00,210 --> 00:59:07,210
-quickly. It's in -- this is really blending
+quickly. It's in  &mdash; this is really blending
 edge prototype we've done in FireFox, nicely
 
 689
@@ -3445,7 +3445,7 @@ the same concept in canvas. At the bottom
 
 690
 00:59:14,180 --> 00:59:21,180
-of the screen here, we have the -- the code.
+of the screen here, we have the  &mdash; the code.
 I'm drawing two images, and the first one
 
 691
@@ -3455,7 +3455,7 @@ then I change the compositing operation to
 
 692
 00:59:27,790 --> 00:59:34,790
-be an overlay -- sorry, a multiply mode, blend
+be an overlay  &mdash; sorry, a multiply mode, blend
 mode, and I then draw this kind of colorful
 
 693
@@ -3475,7 +3475,7 @@ All right, so, the things we talked about
 
 696
 00:59:52,590 --> 00:59:59,590
-today is that the -- you know, the world of
+today is that the  &mdash; you know, the world of
 the Web developers and of creators has been
 
 697

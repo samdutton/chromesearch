@@ -111,7 +111,7 @@ level of engagement in a game?
 25
 00:01:04,150 --> 00:01:05,820
 You look at a game
-like Ingress--
+like Ingress &mdash;
 
 26
 00:01:05,820 --> 00:01:09,380
@@ -149,8 +149,8 @@ the finances associated with
 
 33
 00:01:28,590 --> 00:01:30,630
-these-- the real business
-of a game--
+these &mdash; the real business
+of a game &mdash;
 
 34
 00:01:30,630 --> 00:01:31,940
@@ -211,7 +211,7 @@ around this.
 46
 00:01:59,450 --> 00:02:01,820
 And one of the big trends
-that I've seen come up--
+that I've seen come up &mdash;
 
 47
 00:02:01,820 --> 00:02:04,750
@@ -220,7 +220,7 @@ I did on Google
 
 48
 00:02:04,750 --> 00:02:08,180
-Trends-- was there's a big trend
+Trends &mdash; was there's a big trend
 coming up around social
 
 49
@@ -262,8 +262,8 @@ out as well for that.
 
 57
 00:02:27,630 --> 00:02:30,450
-Second was-- this surprised me,
-actually-- but a lot of
+Second was &mdash; this surprised me,
+actually &mdash; but a lot of
 
 58
 00:02:30,450 --> 00:02:33,220
@@ -283,7 +283,7 @@ the press a few weeks ago,
 61
 00:02:41,530 --> 00:02:45,050
 where someone had built
-a game simulation--
+a game simulation &mdash;
 
 62
 00:02:45,050 --> 00:02:48,530
@@ -490,11 +490,11 @@ to about 1,000 today.
 105
 00:04:44,170 --> 00:04:45,815
 We started investing
-in social gaming--
+in social gaming &mdash;
 
 106
 00:04:45,815 --> 00:04:47,290
-social and mobile, really--
+social and mobile, really &mdash;
 
 107
 00:04:47,290 --> 00:04:49,220
@@ -513,12 +513,12 @@ over 100 today.
 110
 00:04:55,210 --> 00:04:58,870
 We're currently operating five
-cross-platform games--
+cross-platform games &mdash;
 
 111
 00:04:58,870 --> 00:05:02,620
 so iOS, Android, and
-on Facebook--
+on Facebook &mdash;
 
 112
 00:05:02,620 --> 00:05:06,420
@@ -725,11 +725,11 @@ really just to paint a picture
 154
 00:07:03,030 --> 00:07:05,510
 of what these connected products
-look like-- these
+look like &mdash; these
 
 155
 00:07:05,510 --> 00:07:07,080
-connected games--
+connected games &mdash;
 
 156
 00:07:07,080 --> 00:07:08,510
@@ -823,8 +823,8 @@ you can go and explore.
 
 175
 00:08:00,770 --> 00:08:03,580
-And currently, I think-- we're
-in beta right now-- currently,
+And currently, I think &mdash; we're
+in beta right now &mdash; currently,
 
 176
 00:08:03,580 --> 00:08:08,080
@@ -1025,7 +1025,7 @@ are interactive.
 218
 00:09:46,380 --> 00:09:48,280
 So they can go around and pick
-up-- for example, we can pick
+up &mdash; for example, we can pick
 
 219
 00:09:48,280 --> 00:09:52,360
@@ -1118,7 +1118,7 @@ of some of the
 
 238
 00:10:31,200 --> 00:10:32,270
-artwork in the world--
+artwork in the world &mdash;
 
 239
 00:10:32,270 --> 00:10:33,560
@@ -1203,7 +1203,7 @@ that as well.
 
 256
 00:11:14,860 --> 00:11:15,330
-So the almanac--
+So the almanac &mdash;
 
 257
 00:11:15,330 --> 00:11:17,930
@@ -1339,7 +1339,7 @@ generate a ton of events.
 285
 00:12:29,520 --> 00:12:34,410
 There's a lot of raw data,
-and that raw data--
+and that raw data &mdash;
 
 286
 00:12:34,410 --> 00:12:36,800
@@ -1391,7 +1391,7 @@ the sorts of levels of data
 
 296
 00:12:57,610 --> 00:12:59,800
-that we see-- and to be honest,
+that we see &mdash; and to be honest,
 there are plenty of
 
 297
@@ -1617,7 +1617,7 @@ couple of the tables that we
 345
 00:15:09,490 --> 00:15:12,290
 use fairly consistently across
-all of our games-- and you may
+all of our games &mdash; and you may
 
 346
 00:15:12,290 --> 00:15:14,470
@@ -1626,7 +1626,7 @@ depending on the style of game
 
 347
 00:15:14,470 --> 00:15:14,970
-or application--
+or application &mdash;
 
 348
 00:15:14,970 --> 00:15:19,580
@@ -1768,7 +1768,7 @@ we're going to talk just a
 
 377
 00:16:37,930 --> 00:16:39,170
-little bit about how--
+little bit about how &mdash;
 
 378
 00:16:39,170 --> 00:16:41,900
@@ -1863,7 +1863,7 @@ happened, and
 
 397
 00:17:36,010 --> 00:17:37,270
-our active user base--
+our active user base &mdash;
 
 398
 00:17:37,270 --> 00:17:40,050
@@ -1937,7 +1937,7 @@ and to build reports this way.
 413
 00:18:16,780 --> 00:18:19,670
 So what I've done here is
-I've just given you--
+I've just given you &mdash;
 
 414
 00:18:19,670 --> 00:18:22,050
@@ -2105,7 +2105,7 @@ and you go down here, this
 
 448
 00:19:46,890 --> 00:19:48,510
-script editor thing-- if you've
+script editor thing &mdash; if you've
 ever wondered what that
 
 449
@@ -2260,7 +2260,7 @@ And that's essentially it.
 481
 00:21:16,620 --> 00:21:21,230
 So if we run that now,
-hopefully this will--
+hopefully this will &mdash;
 
 482
 00:21:21,230 --> 00:21:21,640
@@ -2301,7 +2301,7 @@ here is hooked to my function.
 490
 00:21:35,540 --> 00:21:39,930
 Now, the other thing I'll
-mention as well--
+mention as well &mdash;
 
 491
 00:21:39,930 --> 00:21:42,350
@@ -2355,7 +2355,7 @@ that we wanted to refresh, I
 501
 00:22:10,410 --> 00:22:13,150
 would select daily, select the
-time we want it to run-- so
+time we want it to run &mdash; so
 
 502
 00:22:13,150 --> 00:22:14,950
@@ -2603,7 +2603,7 @@ it's built with App Engine.
 
 554
 00:24:34,180 --> 00:24:35,550
-So App Engine--
+So App Engine &mdash;
 
 555
 00:24:35,550 --> 00:24:36,700
@@ -2770,7 +2770,7 @@ for about two years now.
 
 589
 00:25:52,600 --> 00:25:54,430
-So Mailman, just to dig into--
+So Mailman, just to dig into &mdash;
 
 590
 00:25:54,430 --> 00:25:55,700
@@ -2966,7 +2966,7 @@ familiar with App Engine, we
 630
 00:27:40,890 --> 00:27:44,085
 store the results, no matter how
-large they are-- we store
+large they are &mdash; we store
 
 631
 00:27:44,085 --> 00:27:46,800
@@ -2976,11 +2976,11 @@ the Blobstore.
 632
 00:27:46,800 --> 00:27:49,400
 And so jobs, when they
-actually run--
+actually run &mdash;
 
 633
 00:27:49,400 --> 00:27:50,700
-the messaging jobs--
+the messaging jobs &mdash;
 
 634
 00:27:50,700 --> 00:27:54,930
@@ -3009,7 +3009,7 @@ back from our query.
 
 639
 00:28:08,420 --> 00:28:10,100
-And so jobs really represent--
+And so jobs really represent &mdash;
 
 640
 00:28:10,100 --> 00:28:15,230
@@ -3086,7 +3086,7 @@ build on that platform.
 655
 00:28:50,570 --> 00:28:52,310
 And so one of the ways in which
-we-- there's a feature
+we &mdash; there's a feature
 
 656
 00:28:52,310 --> 00:28:54,760
@@ -3157,11 +3157,11 @@ So that's Mailman.
 670
 00:29:27,590 --> 00:29:28,700
 The next one we're going to talk
-to you about-- this is
+to you about &mdash; this is
 
 671
 00:29:28,700 --> 00:29:30,960
-the last one--
+the last one &mdash;
 
 672
 00:29:30,960 --> 00:29:36,750
@@ -3175,7 +3175,7 @@ because as you can imagine,
 
 674
 00:29:40,220 --> 00:29:40,900
-once your game's mature--
+once your game's mature &mdash;
 
 675
 00:29:40,900 --> 00:29:43,000
@@ -3405,7 +3405,7 @@ of has two functions.
 
 722
 00:31:51,020 --> 00:31:52,490
-If you have a model--
+If you have a model &mdash;
 
 723
 00:31:52,490 --> 00:31:54,660
@@ -3415,7 +3415,7 @@ which obviously we do,
 724
 00:31:54,660 --> 00:31:58,070
 and many of you, I would
-imagine, have as well--
+imagine, have as well &mdash;
 
 725
 00:31:58,070 --> 00:32:03,040
@@ -3482,7 +3482,7 @@ statistical model with,
 738
 00:32:38,830 --> 00:32:41,140
 essentially, what would be a
-row of data-- so a row of
+row of data &mdash; so a row of
 
 739
 00:32:41,140 --> 00:32:42,120
@@ -3692,7 +3692,7 @@ department and the
 
 783
 00:34:46,840 --> 00:34:48,120
-user acquisition side--
+user acquisition side &mdash;
 
 784
 00:34:48,120 --> 00:34:49,219
@@ -3711,7 +3711,7 @@ in this area of analytics.
 787
 00:34:55,730 --> 00:34:58,530
 And one thing I'd say about
-the Google platforms--
+the Google platforms &mdash;
 
 788
 00:34:58,530 --> 00:35:01,860
@@ -3721,7 +3721,7 @@ that I'm involved in, but
 789
 00:35:01,860 --> 00:35:04,090
 actually all of Google's
-services--
+services &mdash;
 
 790
 00:35:04,090 --> 00:35:06,960
@@ -3871,7 +3871,7 @@ of time just trying
 
 821
 00:36:30,790 --> 00:36:32,936
-to make sure that--
+to make sure that &mdash;
 
 822
 00:36:32,936 --> 00:36:35,600
@@ -3958,7 +3958,7 @@ that just make life
 
 839
 00:37:20,570 --> 00:37:23,240
-that much easier-- and to be
+that much easier &mdash; and to be
 fair, are way more powerful,
 
 840
@@ -4165,11 +4165,11 @@ dying to find a game
 
 883
 00:39:05,110 --> 00:39:07,030
-that sort of fits--
+that sort of fits &mdash;
 
 884
 00:39:07,030 --> 00:39:08,630
-maybe one of our next ones--
+maybe one of our next ones &mdash;
 that we can actually build
 
 885
@@ -4328,7 +4328,7 @@ API provided by Google.
 
 918
 00:40:30,870 --> 00:40:33,940
-And we can talk a little bit--
+And we can talk a little bit &mdash;
 oh, we have to get offstage.
 
 919

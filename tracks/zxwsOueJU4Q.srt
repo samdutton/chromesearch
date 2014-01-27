@@ -13,7 +13,7 @@ and then I will hand it over.
 4
 00:00:09,550 --> 00:00:10,800
 Sitting right here
-we have Mairead--
+we have Mairead &mdash;
 
 5
 00:00:10,800 --> 00:00:13,360
@@ -599,7 +599,7 @@ zero to infinity, really,
 
 133
 00:06:37,400 --> 00:06:38,480
-because it depends--
+because it depends &mdash;
 
 134
 00:06:38,480 --> 00:06:41,350
@@ -644,7 +644,7 @@ into the pointer event spec.
 
 143
 00:07:17,950 --> 00:07:20,400
-But at the same time--
+But at the same time &mdash;
 
 144
 00:07:20,400 --> 00:07:21,640
@@ -999,7 +999,7 @@ do as web developers.
 219
 00:12:12,030 --> 00:12:15,510
 But there's a whole slew of
-emerging technology that--
+emerging technology that &mdash;
 
 220
 00:12:15,510 --> 00:12:17,890
@@ -1012,7 +1012,7 @@ extent of what's coming.
 
 222
 00:12:20,030 --> 00:12:22,330
-There's a whole number of--
+There's a whole number of &mdash;
 pretty much every large
 
 223
@@ -1360,7 +1360,7 @@ PETE LEPAGE: All right.
 
 295
 00:16:07,910 --> 00:16:08,395
-Anybody--
+Anybody &mdash;
 
 296
 00:16:08,395 --> 00:16:11,090
@@ -1505,7 +1505,7 @@ different levels.
 
 326
 00:17:21,369 --> 00:17:24,329
-And you want both of them--
+And you want both of them &mdash;
 
 327
 00:17:24,329 --> 00:17:28,329
@@ -1566,7 +1566,7 @@ and that kind of thing.
 
 339
 00:18:03,320 --> 00:18:03,890
-Well, let's go--
+Well, let's go &mdash;
 
 340
 00:18:03,890 --> 00:18:04,160
@@ -1623,7 +1623,7 @@ to pointer events.
 
 352
 00:18:22,590 --> 00:18:22,760
-Basically--
+Basically &mdash;
 
 353
 00:18:22,760 --> 00:18:24,716
@@ -1990,7 +1990,7 @@ mouse didn't work, reducing a
 
 432
 00:22:10,240 --> 00:22:12,760
-Leap, which actually tracks--
+Leap, which actually tracks &mdash;
 
 433
 00:22:12,760 --> 00:22:14,900
@@ -1999,7 +1999,7 @@ essentially, tracks sausages
 
 434
 00:22:14,900 --> 00:22:16,090
-in the air--
+in the air &mdash;
 
 435
 00:22:16,090 --> 00:22:20,830
@@ -2103,7 +2103,7 @@ touch laptop, seems like
 456
 00:23:24,200 --> 00:23:26,930
 there's some opportunity
-to have some--
+to have some &mdash;
 
 457
 00:23:26,930 --> 00:23:30,590
@@ -2309,7 +2309,7 @@ from happening within a web
 500
 00:25:52,300 --> 00:25:57,770
 app, within a web browser,
-within this device, without--
+within this device, without &mdash;
 
 501
 00:25:57,770 --> 00:26:01,960
@@ -2369,7 +2369,7 @@ zoom in the first place?
 513
 00:26:33,395 --> 00:26:36,656
 FRANCOIS DAOUST: Well, no,
-but I know that the--
+but I know that the &mdash;
 
 514
 00:26:36,656 --> 00:26:41,070
@@ -2387,7 +2387,7 @@ right and who's wrong.
 
 517
 00:26:47,570 --> 00:26:49,080
-So I'm more--
+So I'm more &mdash;
 
 518
 00:26:49,080 --> 00:26:50,870
@@ -2506,7 +2506,7 @@ like a bad thing.
 
 542
 00:28:03,400 --> 00:28:04,390
-Clearly, there was a--
+Clearly, there was a &mdash;
 
 543
 00:28:04,390 --> 00:28:05,250
@@ -2568,7 +2568,7 @@ in on something.
 556
 00:28:32,950 --> 00:28:37,230
 Can you ever really make
-a web page that's--
+a web page that's &mdash;
 
 557
 00:28:37,230 --> 00:28:40,500
@@ -2577,7 +2577,7 @@ yes, because if you look at
 
 558
 00:28:40,500 --> 00:28:42,430
-native apps, basically--
+native apps, basically &mdash;
 
 559
 00:28:42,430 --> 00:28:45,570
@@ -2806,7 +2806,7 @@ standardize it right now, has
 
 608
 00:30:59,190 --> 00:31:03,120
-pan, none, and auto-- pan-x,
+pan, none, and auto &mdash; pan-x,
 pan-y, none, and auto.
 
 609
@@ -2894,7 +2894,7 @@ That's where we are right now.
 
 627
 00:31:37,790 --> 00:31:39,450
-But I think we'll--
+But I think we'll &mdash;
 
 628
 00:31:39,450 --> 00:31:43,160
@@ -2903,7 +2903,7 @@ can we not delay the click
 
 629
 00:31:43,160 --> 00:31:45,150
-while still permitting some--
+while still permitting some &mdash;
 
 630
 00:31:45,150 --> 00:31:47,990
@@ -3029,11 +3029,11 @@ if I load a page on my phone
 658
 00:32:48,180 --> 00:32:53,500
 that's not optimized for the
-screen size-- it doesn't have
+screen size &mdash; it doesn't have
 
 659
 00:32:53,500 --> 00:32:54,440
-a viewport metatag--
+a viewport metatag &mdash;
 
 660
 00:32:54,440 --> 00:32:56,950
@@ -3146,11 +3146,11 @@ mobile devices, because of
 
 683
 00:34:02,010 --> 00:34:03,470
-obvious patents--
+obvious patents &mdash;
 
 684
 00:34:03,470 --> 00:34:06,920
-or maybe not obvious, actually--
+or maybe not obvious, actually &mdash;
 but anyway, because
 
 685
@@ -3178,7 +3178,7 @@ BORIS SMUS: Right.
 
 690
 00:34:16,439 --> 00:34:17,830
-But I think that's--
+But I think that's &mdash;
 
 691
 00:34:17,830 --> 00:34:18,650
@@ -3562,7 +3562,7 @@ in the settings.
 774
 00:37:59,770 --> 00:38:03,690
 And if your site doesn't work
-with that enabled-- basically,
+with that enabled &mdash; basically,
 
 775
 00:38:03,690 --> 00:38:06,550
@@ -3580,7 +3580,7 @@ there, then it's not
 
 778
 00:38:11,090 --> 00:38:12,180
-guaranteed--
+guaranteed &mdash;
 
 779
 00:38:12,180 --> 00:38:14,180
@@ -3603,7 +3603,7 @@ it's at least something.
 
 783
 00:38:24,340 --> 00:38:26,810
-The other thing is I would--
+The other thing is I would &mdash;
 
 784
 00:38:26,810 --> 00:38:30,960
@@ -3775,7 +3775,7 @@ even if we could do.
 820
 00:39:53,860 --> 00:39:56,120
 So we'd love to be able
-to just say-- in
+to just say &mdash; in
 
 821
 00:39:56,120 --> 00:39:56,890
@@ -3837,7 +3837,7 @@ on that, it's sort
 
 834
 00:40:17,660 --> 00:40:19,330
-of interesting when--
+of interesting when &mdash;
 
 835
 00:40:19,330 --> 00:40:21,630
@@ -3874,7 +3874,7 @@ for the web platform.
 
 842
 00:40:37,880 --> 00:40:38,640
-Just--
+Just &mdash;
 
 843
 00:40:38,640 --> 00:40:42,490
@@ -4029,7 +4029,7 @@ events on links, say.
 875
 00:42:11,340 --> 00:42:17,220
 But for applications that
-specifically target--
+specifically target &mdash;
 
 876
 00:42:17,220 --> 00:42:20,070
@@ -4348,7 +4348,7 @@ coordinate systems that's
 
 943
 00:45:33,450 --> 00:45:34,880
-basically--
+basically &mdash;
 
 944
 00:45:34,880 --> 00:45:38,300
@@ -4451,7 +4451,7 @@ kind of presence detection of
 966
 00:46:25,840 --> 00:46:30,290
 the finger, with several
-systems, infrared or--
+systems, infrared or &mdash;
 
 967
 00:46:30,290 --> 00:46:31,420
@@ -4587,7 +4587,7 @@ don't do it.
 995
 00:47:48,442 --> 00:47:49,610
 PETE LEPAGE: There
-a comment back--
+a comment back &mdash;
 
 996
 00:47:49,610 --> 00:47:52,320
@@ -4667,7 +4667,7 @@ in the touch.
 1012
 00:48:36,960 --> 00:48:40,070
 You think a touch panel
-enhances the input--
+enhances the input &mdash;
 
 1013
 00:48:40,070 --> 00:48:40,860
@@ -4706,7 +4706,7 @@ kind of highlighting the
 
 1021
 00:48:48,350 --> 00:48:51,610
-problem of like a kind of--
+problem of like a kind of &mdash;
 
 1022
 00:48:51,610 --> 00:48:53,820
@@ -4715,7 +4715,7 @@ I don't want to use the word
 
 1023
 00:48:53,820 --> 00:48:54,670
-of anything better--
+of anything better &mdash;
 
 1024
 00:48:54,670 --> 00:48:59,650
@@ -4857,12 +4857,12 @@ fingers on your screen.
 1055
 00:50:12,770 --> 00:50:15,420
 So you end up having
-a flood of--
+a flood of &mdash;
 
 1056
 00:50:15,420 --> 00:50:16,810
-I don't know-- something
-like--
+I don't know &mdash; something
+like &mdash;
 
 1057
 00:50:16,810 --> 00:50:21,940
@@ -5029,7 +5029,7 @@ And it's a huge problem.
 1092
 00:51:34,020 --> 00:51:37,240
 So the key guidance
-I would give is--
+I would give is &mdash;
 
 1093
 00:51:37,240 --> 00:51:40,070
@@ -5155,7 +5155,7 @@ exactly the same thing apply,
 
 1119
 00:52:33,355 --> 00:52:33,703
-or it just--
+or it just &mdash;
 
 1120
 00:52:33,703 --> 00:52:37,330
@@ -5197,11 +5197,11 @@ handler, we have to.
 
 1128
 00:52:51,640 --> 00:52:51,970
-But--
+But &mdash;
 
 1129
 00:52:51,970 --> 00:52:52,480
-AUDIENCE: [INAUDIBLE]--
+AUDIENCE: [INAUDIBLE] &mdash;
 
 1130
 00:52:52,480 --> 00:52:54,120

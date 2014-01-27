@@ -60,11 +60,11 @@ extensible platform that lets
 14
 00:00:33,960 --> 00:00:37,400
 you take anything from your
-real world wallet--
+real world wallet &mdash;
 
 15
 00:00:37,400 --> 00:00:40,950
-loyalty, offers, and more--
+loyalty, offers, and more &mdash;
 
 16
 00:00:40,950 --> 00:00:43,185
@@ -294,7 +294,7 @@ their card at home again.
 
 67
 00:03:18,010 --> 00:03:19,620
-Instant enrollment--
+Instant enrollment &mdash;
 
 68
 00:03:19,620 --> 00:03:24,140
@@ -586,12 +586,12 @@ awarded to this user.
 
 131
 00:06:26,150 --> 00:06:27,250
-OK, the relationship--
+OK, the relationship &mdash;
 
 132
 00:06:27,250 --> 00:06:29,500
 if this wasn't completely
-clear-- between the object and
+clear &mdash; between the object and
 
 133
 00:06:29,500 --> 00:06:32,570
@@ -747,7 +747,7 @@ of interest here.
 
 167
 00:07:58,860 --> 00:08:00,920
-In addition-- and this is a
+In addition &mdash; and this is a
 loyalty specific thing.
 
 168
@@ -767,7 +767,7 @@ to get new instances of
 
 171
 00:08:07,450 --> 00:08:09,770
-loyalty into the Wallet--
+loyalty into the Wallet &mdash;
 
 172
 00:08:09,770 --> 00:08:12,340
@@ -1369,8 +1369,8 @@ to focus on are the sign up
 
 304
 00:14:49,100 --> 00:14:50,900
-result-- in this case,
-it's approved--
+result &mdash; in this case,
+it's approved &mdash;
 
 305
 00:14:50,900 --> 00:14:53,410
@@ -1503,7 +1503,7 @@ here handles two
 
 334
 00:16:28,410 --> 00:16:30,370
-types of post requests--
+types of post requests &mdash;
 
 335
 00:16:30,370 --> 00:16:33,120
@@ -1630,7 +1630,7 @@ environment on the phone?
 
 362
 00:18:01,670 --> 00:18:03,060
-So here--
+So here &mdash;
 
 363
 00:18:03,060 --> 00:18:04,560
@@ -2011,7 +2011,7 @@ of points is now 2,500.
 
 448
 00:22:42,490 --> 00:22:43,260
-JOHNIE LEE: There you go--
+JOHNIE LEE: There you go &mdash;
 
 449
 00:22:43,260 --> 00:22:47,370
@@ -2320,7 +2320,7 @@ your services really seems to
 
 517
 00:25:54,410 --> 00:25:56,240
-be aimed at businesses--
+be aimed at businesses &mdash;
 
 518
 00:25:56,240 --> 00:25:58,960
@@ -2383,11 +2383,11 @@ what you describe.
 530
 00:26:27,660 --> 00:26:32,100
 So you can also use the Wallet
-Objects API to--
+Objects API to &mdash;
 
 531
 00:26:32,100 --> 00:26:33,170
-AUDIENCE: Represent other--
+AUDIENCE: Represent other &mdash;
 
 532
 00:26:33,170 --> 00:26:34,140

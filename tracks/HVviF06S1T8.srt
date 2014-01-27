@@ -204,7 +204,7 @@ do with ChromeVox is make
 44
 00:02:13,680 --> 00:02:17,590
 mathematics accessible in just
-the standard screen reader--
+the standard screen reader &mdash;
 
 45
 00:02:17,590 --> 00:02:19,930
@@ -375,7 +375,7 @@ feedback we provide.
 
 80
 00:04:12,430 --> 00:04:13,350
-CHROMEVOX: Navigation--
+CHROMEVOX: Navigation &mdash;
 
 81
 00:04:13,350 --> 00:04:14,900
@@ -401,7 +401,7 @@ So it says a lot.
 
 86
 00:04:23,610 --> 00:04:27,750
-It says, first of all-- the
+It says, first of all &mdash; the
 first thing that you've heard
 
 87
@@ -485,7 +485,7 @@ CHROMEVOX: Comma.
 
 104
 00:05:22,340 --> 00:05:22,980
-Search--
+Search &mdash;
 
 105
 00:05:22,980 --> 00:05:24,640
@@ -499,7 +499,7 @@ redirects here.
 107
 00:05:26,780 --> 00:05:30,290
 For the music festival,
-see square roots--
+see square roots &mdash;
 
 108
 00:05:30,290 --> 00:05:31,265
@@ -530,7 +530,7 @@ of interesting to point
 
 114
 00:05:43,130 --> 00:05:45,180
-out is-- you heard a sound
+out is &mdash; you heard a sound
 effect, kind of
 
 115
@@ -578,7 +578,7 @@ that sounds like.
 
 124
 00:06:13,190 --> 00:06:13,910
-CHROMEVOX: Contents--
+CHROMEVOX: Contents &mdash;
 
 125
 00:06:13,910 --> 00:06:15,580
@@ -605,7 +605,7 @@ interesting.
 
 130
 00:06:27,690 --> 00:06:28,730
-CHROMEVOX: Properties--
+CHROMEVOX: Properties &mdash;
 
 131
 00:06:28,730 --> 00:06:30,048
@@ -619,12 +619,12 @@ and keep on going.
 133
 00:06:32,160 --> 00:06:34,850
 CHROMEVOX: Left bracket,
-edit source-- link--
+edit source &mdash; link &mdash;
 
 134
 00:06:34,850 --> 00:06:37,480
 pipe, edit, beta,
-right bracket--
+right bracket &mdash;
 
 135
 00:06:37,480 --> 00:06:38,410
@@ -638,7 +638,7 @@ function f left parenthesis x
 137
 00:06:43,100 --> 00:06:48,010
 right parenthesis equals square
-root of x-- math.
+root of x &mdash; math.
 
 138
 00:06:48,010 --> 00:06:52,330
@@ -696,16 +696,16 @@ want to stop it.
 149
 00:07:27,690 --> 00:07:29,630
 CHROMEVOX: Made up of
-half a parabola--
+half a parabola &mdash;
 
 150
 00:07:29,630 --> 00:07:32,130
-link-- with a vertical
-directrix--
+link &mdash; with a vertical
+directrix &mdash;
 
 151
 00:07:32,130 --> 00:07:33,120
-link-- dot.
+link &mdash; dot.
 
 152
 00:07:33,120 --> 00:07:37,540
@@ -715,7 +715,7 @@ function f left parenthesis x
 153
 00:07:37,540 --> 00:07:41,850
 right parenthesis equals square
-root of x-- math--
+root of x &mdash; math &mdash;
 
 154
 00:07:41,850 --> 00:07:44,970
@@ -898,11 +898,11 @@ structured, which is normally
 
 191
 00:09:39,680 --> 00:09:40,460
-not doable--
+not doable &mdash;
 
 192
 00:09:40,460 --> 00:09:42,180
-or not easily doable--
+or not easily doable &mdash;
 
 193
 00:09:42,180 --> 00:09:43,465
@@ -930,7 +930,7 @@ more involved, as in a
 
 198
 00:09:54,980 --> 00:09:56,210
-mathematics expression--
+mathematics expression &mdash;
 
 199
 00:09:56,210 --> 00:10:00,260
@@ -939,7 +939,7 @@ two dimensional
 
 200
 00:10:00,260 --> 00:10:03,170
-and very, very nested--
+and very, very nested &mdash;
 
 201
 00:10:03,170 --> 00:10:06,520
@@ -949,11 +949,11 @@ not deal with it.
 202
 00:10:06,520 --> 00:10:10,700
 Therefore, MathML provides all
-the basic functionality--
+the basic functionality &mdash;
 
 203
 00:10:10,700 --> 00:10:13,600
-or the basic tags--
+or the basic tags &mdash;
 
 204
 00:10:13,600 --> 00:10:19,430
@@ -1182,7 +1182,7 @@ x right parenthesis equals
 
 251
 00:12:54,560 --> 00:12:56,300
-square root of x--
+square root of x &mdash;
 
 252
 00:12:56,300 --> 00:12:57,090
@@ -1224,7 +1224,7 @@ particularly helpful if you
 260
 00:13:18,110 --> 00:13:21,033
 need to see where you are in the
-text-- so for instance, if
+text &mdash; so for instance, if
 
 261
 00:13:21,033 --> 00:13:22,105
@@ -1252,7 +1252,7 @@ x right parenthesis equals
 
 266
 00:13:32,060 --> 00:13:35,190
-square root of x-- math.
+square root of x &mdash; math.
 
 267
 00:13:35,190 --> 00:13:36,420
@@ -1460,7 +1460,7 @@ next math expression, for
 
 311
 00:15:30,350 --> 00:15:33,270
-instance, and--
+instance, and &mdash;
 
 312
 00:15:33,270 --> 00:15:38,590
@@ -1469,8 +1469,8 @@ CHROMEVOX: k equals 1 under and
 
 313
 00:15:38,590 --> 00:15:42,250
-k equals 10-- full
-stop-- math.
+k equals 10 &mdash; full
+stop &mdash; math.
 
 314
 00:15:42,250 --> 00:15:44,290
@@ -1578,68 +1578,68 @@ definition, for instance.
 
 336
 00:16:47,260 --> 00:16:49,580
-CHROMEVOX: Definition one--
-multiple dense divisibility--
+CHROMEVOX: Definition one &mdash;
+multiple dense divisibility &mdash;
 
 337
 00:16:49,580 --> 00:16:53,090
 let y greater than or
-equal to 1-- math.
+equal to 1 &mdash; math.
 
 338
 00:16:53,090 --> 00:16:57,140
 For each natural number k
-greater than or equal to 0--
+greater than or equal to 0 &mdash;
 
 339
 00:16:57,140 --> 00:16:57,680
-math--
+math &mdash;
 
 340
 00:16:57,680 --> 00:16:59,800
-we define a notion of k--
+we define a notion of k &mdash;
 
 341
 00:16:59,800 --> 00:17:00,320
-math--
+math &mdash;
 
 342
 00:17:00,320 --> 00:17:01,780
-tuply y--
+tuply y &mdash;
 
 343
 00:17:01,780 --> 00:17:02,470
-math--
+math &mdash;
 
 344
 00:17:02,470 --> 00:17:05,099
 dense divisibility recursively,
-as follows--
+as follows &mdash;
 
 345
 00:17:05,099 --> 00:17:06,609
-list with two items--
+list with two items &mdash;
 
 346
 00:17:06,609 --> 00:17:09,690
-every natural number-- list
-item-- n-- math--
+every natural number &mdash; list
+item &mdash; n &mdash; math &mdash;
 
 347
 00:17:09,690 --> 00:17:10,750
-is 0--
+is 0 &mdash;
 
 348
 00:17:10,750 --> 00:17:11,290
-math--
+math &mdash;
 
 349
 00:17:11,290 --> 00:17:12,760
-tuply y--
+tuply y &mdash;
 
 350
 00:17:12,760 --> 00:17:13,670
-math--
+math &mdash;
 
 351
 00:17:13,670 --> 00:17:14,500
@@ -1647,12 +1647,12 @@ densely divisible.
 
 352
 00:17:14,500 --> 00:17:15,770
-If-- list item--
+If &mdash; list item &mdash;
 
 353
 00:17:15,770 --> 00:17:19,732
 k greater than or equal
-to 1-- math-- and--
+to 1 &mdash; math &mdash; and &mdash;
 
 354
 00:17:19,732 --> 00:17:21,730
@@ -1841,7 +1841,7 @@ used these four-track audio
 
 393
 00:19:27,320 --> 00:19:32,980
-tapes-- so a tape which has two
+tapes &mdash; so a tape which has two
 sides, using both stereo
 
 394
@@ -1855,12 +1855,12 @@ record audio tracks.
 
 396
 00:19:39,980 --> 00:19:41,315
-And someone--
+And someone &mdash;
 
 397
 00:19:41,315 --> 00:19:43,570
 a really, really nice
-volunteer--
+volunteer &mdash;
 
 398
 00:19:43,570 --> 00:19:45,870
@@ -1925,7 +1925,7 @@ So what have we done, exactly?
 411
 00:20:27,910 --> 00:20:30,940
 Well, think about
-any expression--
+any expression &mdash;
 
 412
 00:20:30,940 --> 00:20:35,230
@@ -1963,7 +1963,7 @@ the pieces lie.
 419
 00:20:55,090 --> 00:20:59,260
 So if you think of it
-like geography--
+like geography &mdash;
 
 420
 00:20:59,260 --> 00:21:00,700
@@ -2041,7 +2041,7 @@ minus b plus/minus square root
 436
 00:21:44,150 --> 00:21:50,080
 of b square minus 4ac
-divided by 2a--
+divided by 2a &mdash;
 
 437
 00:21:50,080 --> 00:21:51,800
@@ -2176,8 +2176,8 @@ So I'll go ahead and hit that.
 
 465
 00:23:13,460 --> 00:23:18,630
-CHROMEVOX: Entered math--
-x equals minus b plus--
+CHROMEVOX: Entered math &mdash;
+x equals minus b plus &mdash;
 
 466
 00:23:18,630 --> 00:23:20,620
@@ -2242,7 +2242,7 @@ that sounds.
 479
 00:23:52,690 --> 00:23:54,740
 CHROMEVOX: Down to
-level one-- x--
+level one &mdash; x &mdash;
 
 480
 00:23:54,740 --> 00:23:57,070
@@ -2301,7 +2301,7 @@ And I will move forward.
 
 492
 00:24:24,260 --> 00:24:25,150
-CHROMEVOX: --equals--
+CHROMEVOX: --equals &mdash;
 
 493
 00:24:25,150 --> 00:24:28,080
@@ -2406,7 +2406,7 @@ how that sounds.
 
 514
 00:25:29,280 --> 00:25:33,330
-CHROMEVOX: Down to level 2--
+CHROMEVOX: Down to level 2 &mdash;
 minus b plus/minus square root
 
 515
@@ -2507,7 +2507,7 @@ into this numerator.
 
 537
 00:26:09,330 --> 00:26:10,470
-CHROMEVOX: Down to level 3--
+CHROMEVOX: Down to level 3 &mdash;
 
 538
 00:26:10,470 --> 00:26:11,380
@@ -2553,7 +2553,7 @@ b square minus 4ac.
 
 548
 00:26:26,180 --> 00:26:27,150
-Square root of--
+Square root of &mdash;
 
 549
 00:26:27,150 --> 00:26:27,440
@@ -2581,7 +2581,7 @@ So let's do that.
 554
 00:26:34,330 --> 00:26:37,786
 CHROMEVOX: Down to level
-4-- b minus 4ac.
+4 &mdash; b minus 4ac.
 
 555
 00:26:37,786 --> 00:26:42,140
@@ -2707,7 +2707,7 @@ they are written.
 
 581
 00:28:04,500 --> 00:28:09,570
-And this is something we can--
+And this is something we can &mdash;
 
 582
 00:28:09,570 --> 00:28:13,940
@@ -2782,11 +2782,11 @@ full, verbose fashion.
 597
 00:28:58,570 --> 00:29:00,650
 CHROMEVOX: Left square
-bracket matrix--
+bracket matrix &mdash;
 
 598
 00:29:00,650 --> 00:29:02,610
-element one, one--
+element one, one &mdash;
 
 599
 00:29:02,610 --> 00:29:03,380
@@ -2794,7 +2794,7 @@ element one, one--
 
 600
 00:29:03,380 --> 00:29:05,670
-Element two, one--
+Element two, one &mdash;
 
 601
 00:29:05,670 --> 00:29:06,260
@@ -2802,7 +2802,7 @@ Element two, one--
 
 602
 00:29:06,260 --> 00:29:08,570
-Element three, one--
+Element three, one &mdash;
 
 603
 00:29:08,570 --> 00:29:10,040
@@ -2810,7 +2810,7 @@ minus 13.
 
 604
 00:29:10,040 --> 00:29:12,040
-Element one, two--
+Element one, two &mdash;
 
 605
 00:29:12,040 --> 00:29:12,880
@@ -2818,7 +2818,7 @@ Element one, two--
 
 606
 00:29:12,880 --> 00:29:15,240
-Element two, two--
+Element two, two &mdash;
 
 607
 00:29:15,240 --> 00:29:15,750
@@ -2826,7 +2826,7 @@ Element two, two--
 
 608
 00:29:15,750 --> 00:29:18,290
-Element three, two--
+Element three, two &mdash;
 
 609
 00:29:18,290 --> 00:29:19,305
@@ -2834,11 +2834,11 @@ minus 6.
 
 610
 00:29:19,305 --> 00:29:20,670
-Right square bracket--
+Right square bracket &mdash;
 
 611
 00:29:20,670 --> 00:29:21,930
-full stop--
+full stop &mdash;
 
 612
 00:29:21,930 --> 00:29:22,830
@@ -2889,11 +2889,11 @@ how this is being spoken then.
 
 622
 00:29:48,340 --> 00:29:48,990
-CHROMEVOX: Matrix--
+CHROMEVOX: Matrix &mdash;
 
 623
 00:29:48,990 --> 00:29:50,520
-row one, column one--
+row one, column one &mdash;
 
 624
 00:29:50,520 --> 00:29:51,490
@@ -2901,7 +2901,7 @@ row one, column one--
 
 625
 00:29:51,490 --> 00:29:52,310
-Column two--
+Column two &mdash;
 
 626
 00:29:52,310 --> 00:29:53,200
@@ -2909,7 +2909,7 @@ Column two--
 
 627
 00:29:53,200 --> 00:29:54,100
-Column three--
+Column three &mdash;
 
 628
 00:29:54,100 --> 00:29:56,190
@@ -2917,7 +2917,7 @@ negative 13.
 
 629
 00:29:56,190 --> 00:29:57,332
-Row two, column one--
+Row two, column one &mdash;
 
 630
 00:29:57,332 --> 00:29:58,216
@@ -2925,7 +2925,7 @@ Row two, column one--
 
 631
 00:29:58,216 --> 00:29:59,320
-Column two--
+Column two &mdash;
 
 632
 00:29:59,320 --> 00:30:00,180
@@ -2933,7 +2933,7 @@ Column two--
 
 633
 00:30:00,180 --> 00:30:01,060
-Column three--
+Column three &mdash;
 
 634
 00:30:01,060 --> 00:30:03,072
@@ -3030,53 +3030,53 @@ here, on the page.
 654
 00:30:55,780 --> 00:30:59,480
 CHROMEVOX: Square root
-of x square equals--
+of x square equals &mdash;
 
 655
 00:30:59,480 --> 00:31:00,450
-vertical line--
+vertical line &mdash;
 
 656
 00:31:00,450 --> 00:31:01,160
-x--
+x &mdash;
 
 657
 00:31:01,160 --> 00:31:02,140
-vertical line--
+vertical line &mdash;
 
 658
 00:31:02,140 --> 00:31:02,880
-equals--
+equals &mdash;
 
 659
 00:31:02,880 --> 00:31:07,280
 left curly bracket, matrix
-element one, one--
+element one, one &mdash;
 
 660
 00:31:07,280 --> 00:31:08,510
-x comma--
+x comma &mdash;
 
 661
 00:31:08,510 --> 00:31:10,760
-element two, one--
+element two, one &mdash;
 
 662
 00:31:10,760 --> 00:31:13,880
 if x greater than
-or equal to 0--
+or equal to 0 &mdash;
 
 663
 00:31:13,880 --> 00:31:16,250
-element one, two--
+element one, two &mdash;
 
 664
 00:31:16,250 --> 00:31:18,110
-minus x comma--
+minus x comma &mdash;
 
 665
 00:31:18,110 --> 00:31:20,360
-element two, two--
+element two, two &mdash;
 
 666
 00:31:20,360 --> 00:31:22,940
@@ -3084,7 +3084,7 @@ if x less than 0.
 
 667
 00:31:22,940 --> 00:31:24,490
-Full stop-- math.
+Full stop &mdash; math.
 
 668
 00:31:24,490 --> 00:31:26,220
@@ -3094,12 +3094,12 @@ hear, now, was that it
 669
 00:31:26,220 --> 00:31:30,090
 not only spoke everything in a
-very verbose way-- all the
+very verbose way &mdash; all the
 
 670
 00:31:30,090 --> 00:31:33,400
 vertical bars, as well as
-the opening brace--
+the opening brace &mdash;
 
 671
 00:31:33,400 --> 00:31:39,220
@@ -3141,21 +3141,21 @@ slightly more sensible.
 
 679
 00:31:58,160 --> 00:31:59,480
-CHROMEVOX: Equation sequence--
+CHROMEVOX: Equation sequence &mdash;
 
 680
 00:31:59,480 --> 00:32:06,060
 square root of x square equal
-absolute value of x equal--
+absolute value of x equal &mdash;
 
 681
 00:32:06,060 --> 00:32:11,760
-case statement, case one-- x, if
+case statement, case one &mdash; x, if
 x greater than or equal to
 
 682
 00:32:11,760 --> 00:32:13,270
-0-- case two--
+0 &mdash; case two &mdash;
 
 683
 00:32:13,270 --> 00:32:18,295
@@ -3163,7 +3163,7 @@ negative x, if x less than 0.
 
 684
 00:32:18,295 --> 00:32:20,350
-Full stop-- math.
+Full stop &mdash; math.
 
 685
 00:32:20,350 --> 00:32:25,780
@@ -3183,7 +3183,7 @@ the expression.
 688
 00:32:33,510 --> 00:32:36,160
 It gives you a quick summary
-at the beginning-- it's a
+at the beginning &mdash; it's a
 
 689
 00:32:36,160 --> 00:32:37,280
@@ -3232,7 +3232,7 @@ to this statement
 698
 00:33:10,470 --> 00:33:14,130
 here, and pronounce it, first,
-in the old way--
+in the old way &mdash;
 
 699
 00:33:14,130 --> 00:33:18,880
@@ -3241,7 +3241,7 @@ x right parenthesis equals
 
 700
 00:33:18,880 --> 00:33:21,270
-square root of x-- math.
+square root of x &mdash; math.
 
 701
 00:33:21,270 --> 00:33:22,475
@@ -3251,7 +3251,7 @@ supply some semantics.
 702
 00:33:22,475 --> 00:33:29,805
 CHROMEVOX: f of x equals square
-root of x-- math.
+root of x &mdash; math.
 
 703
 00:33:29,805 --> 00:33:31,240
@@ -3591,12 +3591,12 @@ to developers of EPUB 3
 773
 00:37:34,780 --> 00:37:40,130
 readers that allows them to
-define their own math rules--
+define their own math rules &mdash;
 
 774
 00:37:40,130 --> 00:37:45,030
 either override or add
-to our rule base--
+to our rule base &mdash;
 
 775
 00:37:45,030 --> 00:37:47,890
@@ -3614,7 +3614,7 @@ now spend introducing
 
 778
 00:37:53,560 --> 00:37:57,190
-this particular way of--
+this particular way of &mdash;
 
 779
 00:37:57,190 --> 00:38:00,790
@@ -3678,7 +3678,7 @@ equals minus b plus/minus
 792
 00:38:46,700 --> 00:38:53,300
 square root of b square minus
-4ac divided by 2a--
+4ac divided by 2a &mdash;
 
 793
 00:38:53,300 --> 00:38:54,080
@@ -3721,17 +3721,17 @@ Right.
 801
 00:39:17,760 --> 00:39:24,790
 So what you can see here, in
-detail, is that we have--
+detail, is that we have &mdash;
 
 802
 00:39:24,790 --> 00:39:31,270
 these function names are the way
-one can call ControlVox--
+one can call ControlVox &mdash;
 
 803
 00:39:31,270 --> 00:39:33,070
 sorry, not ControlVox,
-ChromeVox--
+ChromeVox &mdash;
 
 804
 00:39:33,070 --> 00:39:34,110
@@ -3871,7 +3871,7 @@ name from the style name.
 
 833
 00:40:56,840 --> 00:40:57,760
-And styles--
+And styles &mdash;
 
 834
 00:40:57,760 --> 00:41:03,430
@@ -3993,8 +3993,8 @@ expression, which just says,
 
 859
 00:42:27,350 --> 00:42:30,320
-well, the current node--
-the node we are on--
+well, the current node &mdash;
+the node we are on &mdash;
 
 860
 00:42:30,320 --> 00:42:35,940
@@ -4039,7 +4039,7 @@ And that component is currently
 
 869
 00:42:57,060 --> 00:43:00,270
-composed of two things--
+composed of two things &mdash;
 
 870
 00:43:00,270 --> 00:43:05,000
@@ -4105,7 +4105,7 @@ says now.
 883
 00:43:38,440 --> 00:43:44,180
 CHROMEVOX: Given we have x
-equals some division-- math.
+equals some division &mdash; math.
 
 884
 00:43:44,180 --> 00:43:45,000
@@ -4113,7 +4113,7 @@ VOLKER SORGE: Right.
 
 885
 00:43:45,000 --> 00:43:46,870
-That's all it says--
+That's all it says &mdash;
 some division.
 
 886
@@ -4170,7 +4170,7 @@ XPath expression, as I said,
 897
 00:44:19,340 --> 00:44:21,690
 that selects this particular
-node--
+node &mdash;
 
 898
 00:44:21,690 --> 00:44:24,290
@@ -4317,7 +4317,7 @@ equals some division with
 
 929
 00:46:07,280 --> 00:46:09,030
-square root-- math.
+square root &mdash; math.
 
 930
 00:46:09,030 --> 00:46:10,750
@@ -4552,7 +4552,7 @@ equals some division with
 
 980
 00:48:31,920 --> 00:48:33,740
-square root 2a--
+square root 2a &mdash;
 
 981
 00:48:33,740 --> 00:48:34,632
@@ -4610,7 +4610,7 @@ want to recurse on the
 
 993
 00:49:07,970 --> 00:49:11,530
-first node, as well--
+first node, as well &mdash;
 
 994
 00:49:11,530 --> 00:49:15,630
@@ -4638,7 +4638,7 @@ numerator minus b
 
 999
 00:49:28,190 --> 00:49:30,770
-plus/minus square root--
+plus/minus square root &mdash;
 
 1000
 00:49:30,770 --> 00:49:31,910
@@ -4723,7 +4723,7 @@ equals some division with
 1017
 00:50:24,580 --> 00:50:29,630
 square root 2a and numerator
-minus b plus--
+minus b plus &mdash;
 
 1018
 00:50:29,630 --> 00:50:31,420
@@ -4784,16 +4784,16 @@ equals some division with
 1030
 00:51:09,940 --> 00:51:14,400
 square root 2a and
-numerator minus--
+numerator minus &mdash;
 
 1031
 00:51:14,400 --> 00:51:16,120
 VOLKER SORGE: That
-was not really--
+was not really &mdash;
 
 1032
 00:51:16,120 --> 00:51:16,770
-That was--
+That was &mdash;
 
 1033
 00:51:16,770 --> 00:51:19,270
@@ -4832,7 +4832,7 @@ equals some division with
 1040
 00:51:39,160 --> 00:51:42,450
 square root 2a and
-numerator minus--
+numerator minus &mdash;
 
 1041
 00:51:42,450 --> 00:51:43,810
@@ -4867,12 +4867,12 @@ Let's do that as well.
 1048
 00:52:02,540 --> 00:52:07,260
 Let's add a pause annotation,
-say, to the second--
+say, to the second &mdash;
 
 1049
 00:52:07,260 --> 00:52:09,830
 uh, no, to the first
-of these--
+of these &mdash;
 
 1050
 00:52:09,830 --> 00:52:13,210
@@ -4898,7 +4898,7 @@ so we can actually
 
 1055
 00:52:20,910 --> 00:52:23,270
-hear it more clearly--
+hear it more clearly &mdash;
 
 1056
 00:52:23,270 --> 00:52:26,874
@@ -4912,7 +4912,7 @@ equals some division with
 1058
 00:52:31,020 --> 00:52:37,234
 square root 2a and numerator
-minus b--
+minus b &mdash;
 
 1059
 00:52:37,234 --> 00:52:37,726
@@ -4930,11 +4930,11 @@ demonstrate.
 1062
 00:52:44,900 --> 00:52:49,640
 It is that the pause, as well as
-all the other annotations--
+all the other annotations &mdash;
 
 1063
 00:52:49,640 --> 00:52:51,420
-i.e. the pitch and the rate--
+i.e. the pitch and the rate &mdash;
 
 1064
 00:52:51,420 --> 00:52:56,320
@@ -5029,8 +5029,8 @@ the tree?
 
 1083
 00:53:48,840 --> 00:53:51,320
-The way this works-- and I'll
-show it to you here--
+The way this works &mdash; and I'll
+show it to you here &mdash;
 
 1084
 00:53:51,320 --> 00:53:56,430
@@ -5076,7 +5076,7 @@ equals some division with
 1093
 00:54:16,530 --> 00:54:21,694
 square root 2a and numerator
-minus b--
+minus b &mdash;
 
 1094
 00:54:21,694 --> 00:54:22,161
@@ -5136,11 +5136,11 @@ and also, one final
 
 1107
 00:54:53,590 --> 00:54:55,330
-component--
+component &mdash;
 
 1108
 00:54:55,330 --> 00:54:56,700
-one type of component--
+one type of component &mdash;
 
 1109
 00:54:56,700 --> 00:54:58,930
@@ -5163,7 +5163,7 @@ all these nodes.
 
 1113
 00:55:10,280 --> 00:55:13,340
-And we'll do that--
+And we'll do that &mdash;
 
 1114
 00:55:13,340 --> 00:55:14,590
@@ -5198,11 +5198,11 @@ of nodes, again, with an XPath
 1121
 00:55:32,120 --> 00:55:36,890
 expression, which is
-just all subnodes--
+just all subnodes &mdash;
 
 1122
 00:55:36,890 --> 00:55:40,620
-or all child nodes-- of
+or all child nodes &mdash; of
 our mfrac expression.
 
 1123
@@ -5225,7 +5225,7 @@ square root of b
 
 1127
 00:55:51,190 --> 00:55:55,290
-square minus 4ac 2a--
+square minus 4ac 2a &mdash;
 
 1128
 00:55:55,290 --> 00:55:56,256
@@ -5271,12 +5271,12 @@ might not make a lot of sense.
 1137
 00:56:18,590 --> 00:56:21,990
 But if you do not know exactly
-how many children there are--
+how many children there are &mdash;
 
 1138
 00:56:21,990 --> 00:56:25,330
 say, in the matrix expression
-we've demonstrated earlier--
+we've demonstrated earlier &mdash;
 
 1139
 00:56:25,330 --> 00:56:29,960
@@ -5338,7 +5338,7 @@ square root of b square minus
 
 1151
 00:57:22,710 --> 00:57:26,240
-4ac divided by 2a--
+4ac divided by 2a &mdash;
 
 1152
 00:57:26,240 --> 00:57:27,500
@@ -5389,8 +5389,8 @@ in order to write explicit
 
 1162
 00:57:58,340 --> 00:58:00,680
-speech rules-- say, on
-their web pages--
+speech rules &mdash; say, on
+their web pages &mdash;
 
 1163
 00:58:00,680 --> 00:58:03,610

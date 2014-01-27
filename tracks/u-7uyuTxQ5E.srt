@@ -293,7 +293,7 @@ for your users.
 65
 00:02:56,440 --> 00:02:57,170
 VISHAY NIHALANI: Just
-this year--
+this year &mdash;
 
 66
 00:02:57,170 --> 00:03:04,710
@@ -1151,12 +1151,12 @@ campaign will start serving.
 
 252
 00:12:20,930 --> 00:12:22,330
-Once everything is set up--
+Once everything is set up &mdash;
 
 253
 00:12:22,330 --> 00:12:24,880
 I've set up house app campaign,
-regular campaign--
+regular campaign &mdash;
 
 254
 00:12:24,880 --> 00:12:27,570
@@ -1383,12 +1383,12 @@ OK.
 
 302
 00:14:45,550 --> 00:14:48,280
-We're having some--
+We're having some &mdash;
 
 303
 00:14:48,280 --> 00:14:51,220
 so when you click on the
-campaign, these are--
+campaign, these are &mdash;
 
 304
 00:14:51,220 --> 00:14:52,430
@@ -1402,7 +1402,7 @@ actually switch bidding from
 
 306
 00:14:57,300 --> 00:15:01,520
-bidding on CPC to bidding on--
+bidding on CPC to bidding on &mdash;
 
 307
 00:15:01,520 --> 00:15:03,750
@@ -1830,7 +1830,7 @@ ads by the landing page URL.
 399
 00:19:14,630 --> 00:19:18,580
 So for example, if you're Chrome
-and you want to block--
+and you want to block &mdash;
 
 400
 00:19:18,580 --> 00:19:22,040
@@ -1929,7 +1929,7 @@ Click Save.
 420
 00:20:17,320 --> 00:20:18,700
 And essentially, the
-way mediation--
+way mediation &mdash;
 
 421
 00:20:18,700 --> 00:20:22,970
@@ -2053,7 +2053,7 @@ your users' attention.
 
 447
 00:21:33,810 --> 00:21:34,885
-So the first--
+So the first &mdash;
 
 448
 00:21:34,885 --> 00:21:35,860
@@ -2079,7 +2079,7 @@ the cafes at Google.
 
 453
 00:21:50,630 --> 00:21:52,500
-And so in between levels--
+And so in between levels &mdash;
 let's say I'm
 
 454
@@ -2402,7 +2402,7 @@ full time.
 
 524
 00:24:50,920 --> 00:24:54,040
-If I show it like this--
+If I show it like this &mdash;
 
 525
 00:24:54,040 --> 00:24:54,940
@@ -2542,7 +2542,7 @@ just real quick one.
 555
 00:26:11,630 --> 00:26:14,705
 If you're just totally
-new to ads--
+new to ads &mdash;
 
 556
 00:26:14,705 --> 00:26:17,005
@@ -2614,7 +2614,7 @@ inventory, or is that all
 570
 00:26:55,060 --> 00:26:57,540
 sourced inventory
-from AdWords--
+from AdWords &mdash;
 
 571
 00:26:57,540 --> 00:27:00,270
@@ -2848,7 +2848,7 @@ filtering by keywords.
 
 621
 00:28:53,130 --> 00:28:54,560
-But the URLs are pretty--
+But the URLs are pretty &mdash;
 
 622
 00:28:54,560 --> 00:28:57,350
@@ -2886,7 +2886,7 @@ a valid ad, right?
 629
 00:29:14,945 --> 00:29:18,040
 So you don't have to
-pay for that, or--
+pay for that, or &mdash;
 
 630
 00:29:18,040 --> 00:29:19,680
@@ -2910,7 +2910,7 @@ account, right?
 634
 00:29:26,850 --> 00:29:31,670
 So if I want to do the inhouse
-ad, so we should in--
+ad, so we should in &mdash;
 
 635
 00:29:31,670 --> 00:29:33,520
@@ -3004,7 +3004,7 @@ back to you.
 
 655
 00:30:29,610 --> 00:30:31,420
-I don't think-- it's just
+I don't think &mdash; it's just
 a regular format.
 
 656
@@ -3142,7 +3142,7 @@ a connection.
 
 685
 00:31:48,850 --> 00:31:49,630
-What happens--
+What happens &mdash;
 
 686
 00:31:49,630 --> 00:31:52,450

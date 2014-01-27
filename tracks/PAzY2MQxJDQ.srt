@@ -115,7 +115,7 @@ talk a little bit about
 
 25
 00:00:48,501 --> 00:00:50,968
-some--
+some &mdash;
 what users expect
 
 26
@@ -204,7 +204,7 @@ in accessibility.
 43
 00:01:35,801 --> 00:01:38,000
 Rosenthal: So you're
-probably asking yourself--
+probably asking yourself &mdash;
 
 44
 00:01:38,000 --> 00:01:39,434
@@ -214,7 +214,7 @@ seem to know
 45
 00:01:39,434 --> 00:01:40,901
 a lot about accessibility
-already--
+already &mdash;
 
 46
 00:01:40,901 --> 00:01:42,567
@@ -497,7 +497,7 @@ Like I want a hot key
 104
 00:03:45,467 --> 00:03:47,634
 for almost every one
-of the special--
+of the special &mdash;
 
 105
 00:03:47,634 --> 00:03:50,968
@@ -516,7 +516,7 @@ that were once thought of
 
 108
 00:03:56,634 --> 00:03:59,601
-as exotic interface elements--
+as exotic interface elements &mdash;
 
 109
 00:03:59,601 --> 00:04:00,868
@@ -576,7 +576,7 @@ for my applications
 121
 00:04:24,467 --> 00:04:28,367
 when I can give some input
-to the user that's not--
+to the user that's not &mdash;
 
 122
 00:04:28,367 --> 00:04:30,100
@@ -606,7 +606,7 @@ to folks who can't hear,
 128
 00:04:41,701 --> 00:04:43,868
 it allows me to do
-really interesting things--
+really interesting things &mdash;
 
 129
 00:04:43,868 --> 00:04:45,801
@@ -634,7 +634,7 @@ the video content.
 134
 00:04:54,167 --> 00:04:58,133
 Customizable UIs,
-as one example--
+as one example &mdash;
 
 135
 00:04:58,133 --> 00:05:00,434
@@ -652,12 +652,12 @@ contrast, colors
 138
 00:05:07,267 --> 00:05:10,067
 might be kind of a nice thing,
-personalization--
+personalization &mdash;
 
 139
 00:05:10,067 --> 00:05:12,033
 adding bling
-to my environment--
+to my environment &mdash;
 
 140
 00:05:12,033 --> 00:05:15,734
@@ -759,7 +759,7 @@ multiple redundant ways
 160
 00:06:02,367 --> 00:06:04,067
 of interacting
-with your applications--
+with your applications &mdash;
 
 161
 00:06:04,067 --> 00:06:06,234
@@ -800,7 +800,7 @@ where you can do corded input.
 
 169
 00:06:20,033 --> 00:06:21,634
-And then also for feedback--
+And then also for feedback &mdash;
 
 170
 00:06:21,634 --> 00:06:23,400
@@ -860,7 +860,7 @@ like the Braille display
 182
 00:06:44,934 --> 00:06:46,634
 that we have here
-as another input--
+as another input &mdash;
 
 183
 00:06:46,634 --> 00:06:50,267
@@ -927,7 +927,7 @@ that I'll have implemented
 196
 00:07:15,133 --> 00:07:17,434
 keyboard shortcuts
-that I make sure that the--
+that I make sure that the &mdash;
 
 197
 00:07:17,434 --> 00:07:19,968
@@ -1014,7 +1014,7 @@ assistive technologies
 214
 00:08:03,834 --> 00:08:05,868
 how to interact
-with my application--
+with my application &mdash;
 
 215
 00:08:05,868 --> 00:08:08,634
@@ -1049,12 +1049,12 @@ for me as a developer,
 221
 00:08:21,701 --> 00:08:25,300
 if I'm building
-custom controls--
+custom controls &mdash;
 
 222
 00:08:25,300 --> 00:08:27,968
 things that aren't part
-of the standard widget set--
+of the standard widget set &mdash;
 
 223
 00:08:27,968 --> 00:08:30,400
@@ -1088,16 +1088,16 @@ uh, I just need to test it.
 
 229
 00:08:43,634 --> 00:08:45,133
-Um, it's--it's--
+Um, it's--it's &mdash;
 
 230
 00:08:45,133 --> 00:08:47,868
 Uh, it's certainly disappointing
-if I make--
+if I make &mdash;
 
 231
 00:08:47,868 --> 00:08:49,534
-put a lot of--
+put a lot of &mdash;
 put some work into
 
 232
@@ -1121,7 +1121,7 @@ that I test
 
 236
 00:08:56,567 --> 00:08:59,801
-all the flows with the--
+all the flows with the &mdash;
 uh, assistive technologies
 
 237
@@ -1154,7 +1154,7 @@ that someone can set up
 
 243
 00:09:12,400 --> 00:09:14,634
-on their self--
+on their self &mdash;
 by themselves,
 
 244
@@ -1260,7 +1260,7 @@ was a simple problem.
 
 265
 00:10:04,267 --> 00:10:05,868
-Um, usually app--
+Um, usually app &mdash;
 uh, you know,
 
 266
@@ -1352,7 +1352,7 @@ you name it.
 284
 00:10:46,501 --> 00:10:47,868
 There's so many apps out there
-who are--
+who are &mdash;
 
 285
 00:10:47,868 --> 00:10:49,634
@@ -1420,7 +1420,7 @@ I can add to my HTML page.
 
 298
 00:11:22,067 --> 00:11:23,901
-In, uh--
+In, uh &mdash;
 In the web,
 
 299
@@ -1454,12 +1454,12 @@ so that my images,
 
 305
 00:11:40,033 --> 00:11:42,567
-which are what a, uh--
+which are what a, uh &mdash;
 someone who's using the mouse
 
 306
 00:11:42,567 --> 00:11:44,634
-would interact with--
+would interact with &mdash;
 so that if I'm using
 
 307
@@ -1614,11 +1614,11 @@ uh,
 338
 00:13:04,501 --> 00:13:06,501
 we know a lot of you
-photon-dependent users--
+photon-dependent users &mdash;
 
 339
 00:13:06,501 --> 00:13:08,133
-'cause you use the screen--
+'cause you use the screen &mdash;
 
 340
 00:13:08,133 --> 00:13:11,200
@@ -1686,7 +1686,7 @@ a lot of the same things.
 
 353
 00:13:41,334 --> 00:13:43,667
-Uh, provides foken--
+Uh, provides foken &mdash;
 spoken feedback
 
 354
@@ -1781,7 +1781,7 @@ differently with ChromeVox,
 372
 00:14:28,334 --> 00:14:29,601
 uh, than we're doing
-other places--
+other places &mdash;
 
 373
 00:14:29,601 --> 00:14:30,901
@@ -1807,7 +1807,7 @@ It's very easy.
 
 378
 00:14:38,267 --> 00:14:40,067
-It's very, uh--
+It's very, uh &mdash;
 It's not prone to bugs.
 
 379
@@ -1861,7 +1861,7 @@ Couple simple things.
 389
 00:15:03,434 --> 00:15:06,267
 Uh, number one, I can
-position the screen reader--
+position the screen reader &mdash;
 
 390
 00:15:06,267 --> 00:15:08,934
@@ -1871,7 +1871,7 @@ I can tell it,
 391
 00:15:08,934 --> 00:15:10,133
 So for example,
-if I've got a--
+if I've got a &mdash;
 
 392
 00:15:10,133 --> 00:15:12,200
@@ -1938,7 +1938,7 @@ declarative ARIA
 
 405
 00:15:37,300 --> 00:15:38,934
-and gives us ways to--
+and gives us ways to &mdash;
 
 406
 00:15:38,934 --> 00:15:43,868
@@ -1979,7 +1979,7 @@ is setting that up,
 
 414
 00:15:55,400 --> 00:15:56,734
-I might--
+I might &mdash;
 Does anyone have a question
 
 415
@@ -1998,7 +1998,7 @@ very interesting.
 418
 00:16:04,734 --> 00:16:07,400
 I was wondering if,
-uh, any--
+uh, any &mdash;
 
 419
 00:16:07,400 --> 00:16:10,767
@@ -2022,7 +2022,7 @@ Green: That's a great question.
 423
 00:16:18,767 --> 00:16:22,467
 Now, so the UI that you saw
-we have is, uh--
+we have is, uh &mdash;
 
 424
 00:16:22,467 --> 00:16:24,734
@@ -2104,7 +2104,7 @@ Chen: Thank you, Brad.
 
 441
 00:16:53,767 --> 00:16:55,300
-So, uh, if we can switch--
+So, uh, if we can switch &mdash;
 All right, cool.
 
 442
@@ -2180,7 +2180,7 @@ it is to do a Google search.
 
 457
 00:17:29,100 --> 00:17:32,167
-computer: A-a-a-a-a-a-ast--
+computer: A-a-a-a-a-a-ast &mdash;
 asterisk.
 
 458
@@ -2288,7 +2288,7 @@ computer: Location, text box.
 
 481
 00:18:13,701 --> 00:18:16,534
-We--a--
+We--a &mdash;
 Unselected.
 
 482
@@ -2436,7 +2436,7 @@ weather forecast.
 
 512
 00:19:18,133 --> 00:19:20,300
-Hurricane, radar and--
+Hurricane, radar and &mdash;
 
 513
 00:19:20,300 --> 00:19:22,133
@@ -2446,12 +2446,12 @@ and conditions.
 514
 00:19:22,133 --> 00:19:24,033
 May 10--National
-and local weath--
+and local weath &mdash;
 
 515
 00:19:24,033 --> 00:19:25,501
 Weather current conditions
-and foreca--
+and foreca &mdash;
 
 516
 00:19:25,501 --> 00:19:27,567
@@ -2465,7 +2465,7 @@ vertical bar, degree, Celsius,
 518
 00:19:30,167 --> 00:19:31,934
 Tue, Wed, Thu, Fri,
-sunny, partially clou--
+sunny, partially clou &mdash;
 
 519
 00:19:31,934 --> 00:19:33,267
@@ -2527,7 +2527,7 @@ you know,
 
 531
 00:19:58,267 --> 00:20:01,701
-that's a really intro--
+that's a really intro &mdash;
 good intro to how we can
 
 532
@@ -2677,7 +2677,7 @@ computer: Not selected.
 
 563
 00:21:10,868 --> 00:21:12,501
-Chen: To go through the, uh--
+Chen: To go through the, uh &mdash;
 
 564
 00:21:12,501 --> 00:21:14,734
@@ -2705,12 +2705,12 @@ Windows registry installation.
 569
 00:21:22,200 --> 00:21:24,033
 Unread.
-Through left square--
+Through left square &mdash;
 
 570
 00:21:24,033 --> 00:21:26,200
 Unread.
-Left square, brack--
+Left square, brack &mdash;
 
 571
 00:21:26,200 --> 00:21:28,334
@@ -2767,7 +2767,7 @@ of messages.
 582
 00:21:49,667 --> 00:21:52,400
 I need some hash algorithm
-to generate--
+to generate &mdash;
 
 583
 00:21:52,400 --> 00:21:55,701
@@ -2800,11 +2800,11 @@ developer.android.com/reference/
 
 590
 00:22:08,634 --> 00:22:11,067
-java/security/spec/mgf--
+java/security/spec/mgf &mdash;
 
 591
 00:22:11,067 --> 00:22:13,100
-Chen: Okay, so that--
+Chen: Okay, so that &mdash;
 [Rosenthal laughs]
 
 592
@@ -2881,11 +2881,11 @@ read through this message.
 607
 00:22:48,834 --> 00:22:51,934
 computer:
-developer.android.com--
+developer.android.com &mdash;
 
 608
 00:22:51,934 --> 00:22:55,434
-developer.android.--
+developer.android. &mdash;
 Sentence.
 
 609
@@ -3249,11 +3249,11 @@ to interact with it.
 683
 00:25:43,100 --> 00:25:45,367
 While that might sound like
-something you don't want--
+something you don't want &mdash;
 
 684
 00:25:45,367 --> 00:25:47,067
-you want them to interact--
+you want them to interact &mdash;
 you don't want them
 
 685
@@ -3273,7 +3273,7 @@ their location for them
 688
 00:25:53,734 --> 00:25:55,067
 instead of them having
-to figure out--
+to figure out &mdash;
 
 689
 00:25:55,067 --> 00:25:56,767
@@ -3488,7 +3488,7 @@ um, from the top,
 
 732
 00:27:33,100 --> 00:27:34,734
-it would first say--
+it would first say &mdash;
 it would vibrate a little
 
 733
@@ -3599,7 +3599,7 @@ which plays the equivalent
 
 755
 00:28:27,934 --> 00:28:29,501
-of what we called earcons--
+of what we called earcons &mdash;
 
 756
 00:28:29,501 --> 00:28:32,234
@@ -3691,7 +3691,7 @@ application partners.
 774
 00:29:11,033 --> 00:29:13,267
 Okay, so, uh,
-these devices--
+these devices &mdash;
 
 775
 00:29:13,267 --> 00:29:14,868
@@ -3710,7 +3710,7 @@ accessible on Android,
 
 778
 00:29:20,701 --> 00:29:21,934
-uh, the first thing--
+uh, the first thing &mdash;
 
 779
 00:29:21,934 --> 00:29:24,100
@@ -3752,12 +3752,12 @@ a couple different ways.
 787
 00:29:38,133 --> 00:29:41,567
 One is if my device has
-a roller ball or a D-pad--
+a roller ball or a D-pad &mdash;
 
 788
 00:29:41,567 --> 00:29:43,968
 that sort of directional pad you
-see down there on the screen--
+see down there on the screen &mdash;
 
 789
 00:29:43,968 --> 00:29:48,634
@@ -3826,7 +3826,7 @@ more about that.
 802
 00:30:15,968 --> 00:30:18,200
 Rosenthal: So, um,
-with that, we want to--
+with that, we want to &mdash;
 
 803
 00:30:18,200 --> 00:30:19,334
@@ -3878,7 +3878,7 @@ Green: Anyone?
 813
 00:30:34,701 --> 00:30:36,467
 Jacobs: Well, if nobody
-has any questions--
+has any questions &mdash;
 
 814
 00:30:36,467 --> 00:30:38,167
@@ -3998,7 +3998,7 @@ complex.
 839
 00:31:26,400 --> 00:31:27,868
 What I would do is
-I'd direct you--
+I'd direct you &mdash;
 
 840
 00:31:27,868 --> 00:31:29,868
@@ -4053,7 +4053,7 @@ Thanks to the audience.
 851
 00:31:50,634 --> 00:31:54,033
 The question was just asked
-about an accessible--
+about an accessible &mdash;
 
 852
 00:31:54,033 --> 00:31:56,501
@@ -4244,7 +4244,7 @@ Arithmetic.
 892
 00:33:32,067 --> 00:33:33,834
 The most basic
-of the math playlists--
+of the math playlists &mdash;
 
 893
 00:33:33,834 --> 00:33:34,968
@@ -4283,12 +4283,12 @@ computer: YouTube image button.
 
 901
 00:33:48,534 --> 00:33:50,067
-Jacobs: We will now see--
+Jacobs: We will now see &mdash;
 
 902
 00:33:50,067 --> 00:33:52,734
 man: We got some practice
-adding what we could--
+adding what we could &mdash;
 
 903
 00:33:52,734 --> 00:33:54,200
@@ -4331,12 +4331,12 @@ man: Is it lime or limes?
 
 912
 00:34:10,133 --> 00:34:11,400
-Let's just--Well--
+Let's just--Well &mdash;
 
 913
 00:34:11,400 --> 00:34:14,067
 Two green lemons
-for two more tart pieces--
+for two more tart pieces &mdash;
 
 914
 00:34:14,067 --> 00:34:16,467
@@ -4390,7 +4390,7 @@ computer: Navigating.
 
 925
 00:34:43,033 --> 00:34:45,934
-man: 8, 9, 10, 11--
+man: 8, 9, 10, 11 &mdash;
 
 926
 00:34:45,934 --> 00:34:48,267
@@ -4411,7 +4411,7 @@ uh, Casey Burkhardt.
 
 930
 00:34:55,801 --> 00:34:58,367
-Google had a Google I/O--
+Google had a Google I/O &mdash;
 
 931
 00:34:58,367 --> 00:35:01,167
@@ -4540,7 +4540,7 @@ Um, let's...
 
 958
 00:36:04,067 --> 00:36:05,167
-computer: For a whole day--
+computer: For a whole day &mdash;
 
 959
 00:36:05,167 --> 00:36:06,467
@@ -4548,7 +4548,7 @@ Jacobs: read backwards.
 
 960
 00:36:06,467 --> 00:36:07,767
-computer: For a whole day--
+computer: For a whole day &mdash;
 
 961
 00:36:07,767 --> 00:36:09,868
@@ -4557,7 +4557,7 @@ that he had not
 
 962
 00:36:09,868 --> 00:36:10,968
-already been mixed up in--
+already been mixed up in &mdash;
 
 963
 00:36:10,968 --> 00:36:12,834
@@ -4583,7 +4583,7 @@ Sentence.
 
 968
 00:36:19,467 --> 00:36:20,534
-Jacobs: Or go back to sen--
+Jacobs: Or go back to sen &mdash;
 
 969
 00:36:20,534 --> 00:36:21,901
@@ -4825,7 +4825,7 @@ on the screen.
 1020
 00:38:07,300 --> 00:38:10,667
 KhAndroid is a fantastic example
-of rethinking, uh--
+of rethinking, uh &mdash;
 
 1021
 00:38:10,667 --> 00:38:12,901
@@ -4891,13 +4891,13 @@ of hearing students.
 
 1034
 00:38:42,868 --> 00:38:45,968
-Their entire curriculum is for--
+Their entire curriculum is for &mdash;
 is in ASL.
 
 1035
 00:38:45,968 --> 00:38:50,367
 Um, so, uh, mobile devices
-and deaf communities--
+and deaf communities &mdash;
 
 1036
 00:38:50,367 --> 00:38:52,300
@@ -4916,7 +4916,7 @@ about it,
 1039
 00:38:56,367 --> 00:38:58,200
 um, deaf people do more than
-just, you know--
+just, you know &mdash;
 
 1040
 00:38:58,200 --> 00:39:00,868
@@ -4973,7 +4973,7 @@ application that they've built
 
 1051
 00:39:24,334 --> 00:39:25,934
-to customize, uh--
+to customize, uh &mdash;
 
 1052
 00:39:25,934 --> 00:39:28,267
@@ -5014,7 +5014,7 @@ to present our work here.
 
 1060
 00:39:38,200 --> 00:39:39,300
-Rosenthal: Do you want to--
+Rosenthal: Do you want to &mdash;
 
 1061
 00:39:39,300 --> 00:39:41,334
@@ -5102,7 +5102,7 @@ to Android Word.
 1079
 00:40:17,968 --> 00:40:21,267
 But the reason is that basically
-there are some--
+there are some &mdash;
 
 1080
 00:40:21,267 --> 00:40:24,501
@@ -5130,7 +5130,7 @@ the same access,
 
 1085
 00:40:35,033 --> 00:40:38,667
-um, where they--
+um, where they &mdash;
 wherever they are.
 
 1086
@@ -5174,8 +5174,8 @@ the video code,
 
 1094
 00:41:04,167 --> 00:41:07,167
-as well as the--
-providing low--
+as well as the &mdash;
+providing low &mdash;
 
 1095
 00:41:07,167 --> 00:41:10,667
@@ -5232,7 +5232,7 @@ uh,
 1106
 00:41:35,567 --> 00:41:39,000
 it used that information
-to encode--
+to encode &mdash;
 
 1107
 00:41:39,000 --> 00:41:41,634
@@ -5282,7 +5282,7 @@ Chon: So, actually, uh,
 
 1117
 00:42:00,133 --> 00:42:01,400
-I've asked the people--
+I've asked the people &mdash;
 
 1118
 00:42:01,400 --> 00:42:03,901
@@ -5380,7 +5380,7 @@ they'll be using your products.
 
 1138
 00:42:48,267 --> 00:42:50,801
-Um, focus on mating--
+Um, focus on mating &mdash;
 making products
 
 1139
@@ -5430,7 +5430,7 @@ end-to-end experience
 1148
 00:43:10,934 --> 00:43:13,467
 from the moment they log in
-or even browse your pro--
+or even browse your pro &mdash;
 
 1149
 00:43:13,467 --> 00:43:16,067
@@ -5479,7 +5479,7 @@ Use them.
 1159
 00:43:29,234 --> 00:43:31,033
 There's a couple things
-that, uh--
+that, uh &mdash;
 
 1160
 00:43:31,033 --> 00:43:32,334
@@ -5588,7 +5588,7 @@ accessible.
 
 1182
 00:44:16,200 --> 00:44:18,234
-Tomorrow--
+Tomorrow &mdash;
 Uh, tomorrow at 12:30,
 
 1183
@@ -5718,11 +5718,11 @@ including how to download,
 
 1209
 00:45:17,634 --> 00:45:20,400
-uh, ChromeVox and ChromeVis--
+uh, ChromeVox and ChromeVis &mdash;
 
 1210
 00:45:20,400 --> 00:45:22,734
-uh, I'm sorry--
+uh, I'm sorry &mdash;
 and ChromeShades
 
 1211

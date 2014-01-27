@@ -838,7 +838,7 @@ let's talk about text.
 175
 00:07:13,070 --> 00:07:17,680
 So I said before that text
-data-- CSS, HTML, JavaScript--
+data &mdash; CSS, HTML, JavaScript &mdash;
 
 176
 00:07:17,680 --> 00:07:20,830
@@ -956,7 +956,7 @@ It's partially orange.
 199
 00:08:15,200 --> 00:08:17,920
 And that the CSS
-file-- example.css--
+file &mdash; example.css &mdash;
 
 200
 00:08:17,920 --> 00:08:21,620
@@ -1376,7 +1376,7 @@ be pulled down as well.
 285
 00:11:37,540 --> 00:11:39,670
 So when you look at these
-trends-- and the more
+trends &mdash; and the more
 
 286
 00:11:39,670 --> 00:11:42,160
@@ -1390,7 +1390,7 @@ things like Emscripten
 
 288
 00:11:45,000 --> 00:11:48,170
-and asm.js-- what you
+and asm.js &mdash; what you
 start seeing is a trend.
 
 289
@@ -2381,8 +2381,8 @@ of the text data
 
 493
 00:20:01,580 --> 00:20:05,000
-from that-- HTML, CSS,
-JSON, and JS data--
+from that &mdash; HTML, CSS,
+JSON, and JS data &mdash;
 
 494
 00:20:05,000 --> 00:20:07,315
@@ -2605,12 +2605,12 @@ decode than it is an encode.
 538
 00:21:57,970 --> 00:21:59,500
 The whole point of this
-slide-- the only thing
+slide &mdash; the only thing
 
 539
 00:21:59,500 --> 00:22:00,958
 I want you to take
-away from here--
+away from here &mdash;
 
 540
 00:22:00,958 --> 00:22:03,630
@@ -2948,7 +2948,7 @@ we actually end up
 609
 00:24:48,100 --> 00:24:51,560
 with a pretty incrementing
-run of numbers-- zero to nine
+run of numbers &mdash; zero to nine
 
 610
 00:24:51,560 --> 00:24:53,955
@@ -3148,7 +3148,7 @@ StackOverflow and Bootstrap,
 650
 00:26:35,000 --> 00:26:37,090
 and we actually look at
-their minified forms--
+their minified forms &mdash;
 
 651
 00:26:37,090 --> 00:26:42,390
@@ -3157,7 +3157,7 @@ through Closure or YUI or Clean
 
 652
 00:26:42,390 --> 00:26:47,420
-CSS, one of these things-- we
+CSS, one of these things &mdash; we
 actually get about 90 and 97k,
 
 653
@@ -3779,8 +3779,8 @@ added support for it,
 
 781
 00:32:26,940 --> 00:32:28,780
-and a lot of servers--
-Apache and whatnot--
+and a lot of servers &mdash;
+Apache and whatnot &mdash;
 
 782
 00:32:28,780 --> 00:32:31,030
@@ -4338,8 +4338,8 @@ took probably 20 minutes
 
 897
 00:37:15,660 --> 00:37:19,460
-to run-- on the light
-side-- to find 1% to 5%
+to run &mdash; on the light
+side &mdash; to find 1% to 5%
 
 898
 00:37:19,460 --> 00:37:20,607
@@ -4591,7 +4591,7 @@ be sparse or intermittent,
 949
 00:39:18,620 --> 00:39:22,240
 this is actually a huge problem
-because your client device--
+because your client device &mdash;
 
 950
 00:39:22,240 --> 00:39:25,040
@@ -4601,7 +4601,7 @@ on some 1G or 2G network
 951
 00:39:25,040 --> 00:39:27,900
 that may or may not
-stay consistent--
+stay consistent &mdash;
 
 952
 00:39:27,900 --> 00:39:29,332
@@ -4873,7 +4873,7 @@ bunch of JSON files
 1006
 00:41:41,920 --> 00:41:43,580
 that are returned from
-very common websites--
+very common websites &mdash;
 
 1007
 00:41:43,580 --> 00:41:45,790
@@ -4882,7 +4882,7 @@ from Amazon and Pinterest
 
 1008
 00:41:45,790 --> 00:41:48,206
-and whatnot-- you can see that
+and whatnot &mdash; you can see that
 the first column represents
 
 1009
@@ -4998,12 +4998,12 @@ values here that
 
 1032
 00:42:41,175 --> 00:42:43,550
-are all interleaved-- red,
+are all interleaved &mdash; red,
 green, blue, red, green, blue,
 
 1033
 00:42:43,550 --> 00:42:48,020
-red, green, blue-- again, we
+red, green, blue &mdash; again, we
 have to go farther to search
 
 1034
@@ -5395,11 +5395,11 @@ tried the data being
 1113
 00:46:03,720 --> 00:46:05,220
 run through our
-dense codes-- that's
+dense codes &mdash; that's
 
 1114
 00:46:05,220 --> 00:46:09,380
-the ETDC column-- and then the
+the ETDC column &mdash; and then the
 gzipping of that information.
 
 1115
@@ -5409,7 +5409,7 @@ compare the other compressors
 
 1116
 00:46:11,940 --> 00:46:16,170
-that we've mentioned today--
+that we've mentioned today &mdash;
 Zopfli, 7-Zip, and BZIP2.
 
 1117
@@ -5444,7 +5444,7 @@ the data that I've
 
 1123
 00:46:31,610 --> 00:46:33,402
-shown here-- JSON files, CSSs.
+shown here &mdash; JSON files, CSSs.
 
 1124
 00:46:33,402 --> 00:46:34,860
@@ -5769,8 +5769,8 @@ encoded this file,
 
 1190
 00:49:20,350 --> 00:49:23,400
-the patch-- basically the
-difference between the two--
+the patch &mdash; basically the
+difference between the two &mdash;
 
 1191
 00:49:23,400 --> 00:49:27,790
@@ -6004,8 +6004,8 @@ whole month's worth of changes
 
 1238
 00:51:23,050 --> 00:51:28,120
-was about 9%-- lower than
-9%-- of the size of the assets
+was about 9% &mdash; lower than
+9% &mdash; of the size of the assets
 
 1239
 00:51:28,120 --> 00:51:30,160

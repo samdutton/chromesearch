@@ -18,7 +18,7 @@ of Android anymore.
 
 5
 00:00:08,776 --> 00:00:09,400
-The Chrome is--
+The Chrome is &mdash;
 
 6
 00:00:09,400 --> 00:00:09,920
@@ -52,7 +52,7 @@ but the WebView
 13
 00:00:21,750 --> 00:00:23,990
 that's used by native
-applications-- that's
+applications &mdash; that's
 
 14
 00:00:23,990 --> 00:00:25,090
@@ -125,7 +125,7 @@ Wow.
 
 30
 00:00:52,380 --> 00:00:56,200
-What an entrance into a talk--
+What an entrance into a talk &mdash;
 vomiting out of my mouth.
 
 31
@@ -149,7 +149,7 @@ My name is Matthew Gaunt.
 35
 00:01:05,730 --> 00:01:10,121
 If my clicker would
-work-- there we go.
+work &mdash; there we go.
 
 36
 00:01:10,121 --> 00:01:12,120
@@ -174,7 +174,7 @@ Paul Kinlan or Paul
 40
 00:01:17,305 --> 00:01:19,920
 Lewis doing a
-presentation-- yeah.
+presentation &mdash; yeah.
 
 41
 00:01:19,920 --> 00:01:21,790
@@ -255,7 +255,7 @@ moving more and more forward,
 57
 00:01:59,050 --> 00:02:01,175
 we kind of got to this
-point where some companies--
+point where some companies &mdash;
 
 58
 00:02:01,175 --> 00:02:03,340
@@ -313,12 +313,12 @@ well, you're still in the web.
 69
 00:02:25,445 --> 00:02:27,153
 If you want a presence
-in the app store--
+in the app store &mdash;
 
 70
 00:02:27,153 --> 00:02:29,500
 which many people
-did-- how do you
+did &mdash; how do you
 
 71
 00:02:29,500 --> 00:02:31,820
@@ -337,8 +337,8 @@ was really excited,
 
 74
 00:02:37,770 --> 00:02:40,760
-because if you didn't hear-- and
-Jake's kind of announced it--
+because if you didn't hear &mdash; and
+Jake's kind of announced it &mdash;
 
 75
 00:02:40,760 --> 00:02:43,750
@@ -407,12 +407,12 @@ of come with this.
 88
 00:03:19,420 --> 00:03:23,430
 So it means you get indexedDB,
-request animation frame--
+request animation frame &mdash;
 
 89
 00:03:23,430 --> 00:03:27,560
 insanely important when it comes
-to performance-- SVG filters
+to performance &mdash; SVG filters
 
 90
 00:03:27,560 --> 00:03:28,530
@@ -434,7 +434,7 @@ of it that are awesome.
 
 94
 00:03:36,030 --> 00:03:38,920
-Web sockets-- you may not
+Web sockets &mdash; you may not
 really think about this,
 
 95
@@ -723,7 +723,7 @@ actually get a nice flow going.
 154
 00:06:08,800 --> 00:06:19,475
 So if I show you
-what we've got-- so
+what we've got &mdash; so
 
 155
 00:06:19,475 --> 00:06:20,670
@@ -773,7 +773,7 @@ of product flavors.
 165
 00:06:43,410 --> 00:06:45,610
 Now the way you can think
-of product flavors--
+of product flavors &mdash;
 
 166
 00:06:45,610 --> 00:06:48,170
@@ -821,7 +821,7 @@ running off of my machine.
 175
 00:07:06,370 --> 00:07:12,510
 So if I show you a
-scenario here-- you
+scenario here &mdash; you
 
 176
 00:07:12,510 --> 00:07:14,370
@@ -1045,7 +1045,7 @@ I'm going to need
 223
 00:09:25,685 --> 00:09:31,590
 to plug my phone in
-for-- there we go.
+for &mdash; there we go.
 
 224
 00:09:31,590 --> 00:09:42,690
@@ -1150,12 +1150,12 @@ of thing that we're
 245
 00:10:40,570 --> 00:10:43,200
 used to across varying
-browsers-- well,
+browsers &mdash; well,
 
 246
 00:10:43,200 --> 00:10:46,220
 for Chrome DevTools,
-should I say--
+should I say &mdash;
 
 247
 00:10:46,220 --> 00:10:48,680
@@ -1187,7 +1187,7 @@ much more useful.
 253
 00:11:04,280 --> 00:11:06,396
 This whole build step
-process-- it still
+process &mdash; it still
 
 254
 00:11:06,396 --> 00:11:07,520
@@ -1439,7 +1439,7 @@ it in a minute.
 307
 00:13:30,920 --> 00:13:33,780
 And this name,
-NotificationInterface--
+NotificationInterface &mdash;
 
 308
 00:13:33,780 --> 00:13:37,130
@@ -1457,7 +1457,7 @@ DevTools for my device,
 
 311
 00:13:48,020 --> 00:13:53,223
-I can-- let's start again.
+I can &mdash; let's start again.
 
 312
 00:13:53,223 --> 00:13:55,070
@@ -1552,12 +1552,12 @@ takes a string and a message.
 331
 00:14:49,400 --> 00:14:53,900
 And the main idea
-behind this is--
+behind this is &mdash;
 
 332
 00:14:53,900 --> 00:15:00,690
 if I get rid of my beautiful FPS
-meter-- so the idea with this
+meter &mdash; so the idea with this
 
 333
 00:15:00,690 --> 00:15:06,100
@@ -1673,7 +1673,7 @@ Covered it.
 
 358
 00:16:16,170 --> 00:16:20,830
-In terms of the old WebView--
+In terms of the old WebView &mdash;
 I keep on clicking this.
 
 359
@@ -1718,7 +1718,7 @@ it as a fast path.
 367
 00:16:41,689 --> 00:16:43,480
 And the other one is
-obviously-- the minute
+obviously &mdash; the minute
 
 368
 00:16:43,480 --> 00:16:46,414
@@ -1937,7 +1937,7 @@ apps are generally
 
 414
 00:18:34,528 --> 00:18:38,200
-going to use-- action
+going to use &mdash; action
 bar as well as tabs.
 
 415
@@ -1962,7 +1962,7 @@ similar on both platforms.
 
 419
 00:18:49,360 --> 00:18:51,350
-The view pager--
+The view pager &mdash;
 this is essentially
 
 420
@@ -2142,7 +2142,7 @@ Go on, update.
 
 458
 00:20:48,040 --> 00:20:51,740
-So-- ah.
+So &mdash; ah.
 
 459
 00:20:51,740 --> 00:20:52,700
@@ -2170,7 +2170,7 @@ So it's just two simple things.
 465
 00:21:12,030 --> 00:21:14,690
 But now you can see
-that the state just-- it
+that the state just &mdash; it
 
 466
 00:21:14,690 --> 00:21:18,020
@@ -2180,7 +2180,7 @@ is exactly what we want.
 467
 00:21:18,020 --> 00:21:25,660
 From that, you just need to
-do-- no-state-button, active.
+do &mdash; no-state-button, active.
 
 468
 00:21:25,660 --> 00:21:28,080
@@ -2429,7 +2429,7 @@ designers be inspired by it
 523
 00:23:49,416 --> 00:23:53,450
 and producing similar kind
-of things-- and for me,
+of things &mdash; and for me,
 
 524
 00:23:53,450 --> 00:23:57,130
@@ -2801,7 +2801,7 @@ out how we can do it.
 603
 00:27:18,760 --> 00:27:21,190
 And the other thing is
-the Chrome Apps team--
+the Chrome Apps team &mdash;
 
 604
 00:27:21,190 --> 00:27:24,770
@@ -2839,7 +2839,7 @@ now start getting it on mobile.
 611
 00:27:40,770 --> 00:27:44,020
 So there are three talks
-I'd say go and check out--
+I'd say go and check out &mdash;
 
 612
 00:27:44,020 --> 00:27:46,600

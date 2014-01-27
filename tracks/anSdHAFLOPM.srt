@@ -197,7 +197,7 @@ up introductions.
 
 45
 00:01:57,950 --> 00:02:01,580
-So Paul Lewis, based over in--
+So Paul Lewis, based over in &mdash;
 
 46
 00:02:01,580 --> 00:02:02,890
@@ -843,7 +843,7 @@ we've had so
 
 189
 00:09:32,600 --> 00:09:34,460
-far, I think, is--
+far, I think, is &mdash;
 
 190
 00:09:34,460 --> 00:09:39,480
@@ -1299,7 +1299,7 @@ five new items and being
 
 298
 00:15:59,660 --> 00:16:01,445
-able to track--
+able to track &mdash;
 
 299
 00:16:01,445 --> 00:16:05,420
@@ -1307,7 +1307,7 @@ able to track--
 300
 00:16:05,420 --> 00:16:06,910
 it's actually a paragraph
-element--
+element &mdash;
 
 301
 00:16:06,910 --> 00:16:09,840
@@ -1485,7 +1485,7 @@ find detached DOM nodes row in
 
 342
 00:18:16,450 --> 00:18:18,605
-this very table--
+this very table &mdash;
 
 343
 00:18:18,605 --> 00:18:20,270
@@ -1522,7 +1522,7 @@ summary just for a second.
 351
 00:18:46,100 --> 00:18:50,890
 I'm bringing it up because
-you can start with the--
+you can start with the &mdash;
 
 352
 00:18:50,890 --> 00:18:52,140
@@ -2152,7 +2152,7 @@ Let's have a look and see.
 490
 00:26:20,280 --> 00:26:25,624
 I'll tell you, today
-was talking about--
+was talking about &mdash;
 
 491
 00:26:25,624 --> 00:26:28,780
@@ -2485,7 +2485,7 @@ Dev Tools, if I open up my
 562
 00:30:28,220 --> 00:30:31,070
 settings and enable
-source maps--
+source maps &mdash;
 
 563
 00:30:31,070 --> 00:30:32,320
@@ -2544,7 +2544,7 @@ a lot more than that.
 
 575
 00:31:22,470 --> 00:31:24,740
-For instance, CoffeeScripts--
+For instance, CoffeeScripts &mdash;
 
 576
 00:31:24,740 --> 00:31:28,390
@@ -3337,7 +3337,7 @@ So hold on.
 753
 00:40:59,650 --> 00:41:04,680
 I'm typing these web inspector
-autocomplete--
+autocomplete &mdash;
 
 754
 00:41:04,680 --> 00:41:05,630
@@ -3345,7 +3345,7 @@ autocomplete--
 
 755
 00:41:05,630 --> 00:41:07,120
-autocomplete something--
+autocomplete something &mdash;
 
 756
 00:41:07,120 --> 00:41:12,280

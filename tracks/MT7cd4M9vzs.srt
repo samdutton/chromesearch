@@ -52,7 +52,7 @@ So what do I mean by that?
 
 13
 00:00:23,820 --> 00:00:25,820
-And I'm going to get--
+And I'm going to get &mdash;
 
 14
 00:00:25,820 --> 00:00:29,010
@@ -123,7 +123,7 @@ parse it out, and do really
 
 28
 00:01:12,970 --> 00:01:13,620
-interesting--
+interesting &mdash;
 
 29
 00:01:13,620 --> 00:01:16,160
@@ -339,12 +339,12 @@ a big path, there.
 
 74
 00:03:47,460 --> 00:03:49,970
-And just to the right of it--
+And just to the right of it &mdash;
 it might be a little hard to
 
 75
 00:03:49,970 --> 00:03:51,440
-see on the monitor--
+see on the monitor &mdash;
 
 76
 00:03:51,440 --> 00:03:53,840
@@ -783,7 +783,7 @@ San Francisco office.
 
 168
 00:07:44,800 --> 00:07:46,900
-You can make fun of him--
+You can make fun of him &mdash;
 he's having fun in
 
 169
@@ -1170,7 +1170,7 @@ than it already is.
 
 251
 00:10:45,110 --> 00:10:46,800
-So let's talk about--
+So let's talk about &mdash;
 we've got this data.
 
 252
@@ -1553,13 +1553,13 @@ That's awesome.
 
 333
 00:13:38,470 --> 00:13:41,115
-But if I had another language--
+But if I had another language &mdash;
 say I love R or I
 
 334
 00:13:41,115 --> 00:13:45,510
 love Pearl or Python or
-Ruby, Go, Fortran--
+Ruby, Go, Fortran &mdash;
 
 335
 00:13:45,510 --> 00:13:47,020
@@ -1732,7 +1732,7 @@ of firing up an instance.
 372
 00:14:58,080 --> 00:15:01,490
 And for me, I like to
-create a little--
+create a little &mdash;
 
 373
 00:15:01,490 --> 00:15:03,340
@@ -2236,7 +2236,7 @@ or if it would run it.
 
 481
 00:19:43,380 --> 00:19:45,570
-And it's a demo, so--
+And it's a demo, so &mdash;
 
 482
 00:19:45,570 --> 00:19:46,690
@@ -2311,7 +2311,7 @@ we saw before, that heat
 498
 00:20:20,270 --> 00:20:22,150
 map that is actually
-you have--
+you have &mdash;
 
 499
 00:20:22,150 --> 00:20:24,540
@@ -2795,11 +2795,11 @@ between two different things.
 602
 00:24:42,760 --> 00:24:46,580
 Either the Memcache set
-operation finishes--
+operation finishes &mdash;
 
 603
 00:24:46,580 --> 00:24:48,240
-in that case, we're good--
+in that case, we're good &mdash;
 
 604
 00:24:48,240 --> 00:24:50,400
@@ -2970,7 +2970,7 @@ office that Michael
 
 640
 00:26:31,050 --> 00:26:32,700
-Manoochehri--
+Manoochehri &mdash;
 
 641
 00:26:32,700 --> 00:26:33,740
@@ -2987,11 +2987,11 @@ days' worth of that data.
 
 644
 00:26:40,100 --> 00:26:41,740
-And it's just--
+And it's just &mdash;
 
 645
 00:26:41,740 --> 00:26:43,490
-it provides this really--
+it provides this really &mdash;
 
 646
 00:26:43,490 --> 00:26:44,330
@@ -3007,11 +3007,11 @@ That's a circle.
 
 649
 00:26:47,530 --> 00:26:49,200
-Well it turns out that--
+Well it turns out that &mdash;
 
 650
 00:26:49,200 --> 00:26:52,730
-I had to ask Kurt about this--
+I had to ask Kurt about this &mdash;
 it turns out that ships will
 
 651
@@ -3075,7 +3075,7 @@ Don't worry about that.
 664
 00:27:25,710 --> 00:27:31,500
 What we wanted to do is take a
-look at ships that they had--
+look at ships that they had &mdash;
 
 665
 00:27:31,500 --> 00:27:33,770
@@ -3085,11 +3085,11 @@ for the ships.
 666
 00:27:33,770 --> 00:27:36,870
 That we had over a certain
-number of days--
+number of days &mdash;
 
 667
 00:27:36,870 --> 00:27:39,760
-I think it was 30 days-- we had
+I think it was 30 days &mdash; we had
 some interesting data so
 
 668
@@ -3109,7 +3109,7 @@ large amounts of data.
 
 671
 00:27:56,490 --> 00:27:58,320
-But we're starting--
+But we're starting &mdash;
 
 672
 00:27:58,320 --> 00:28:01,580
@@ -3409,7 +3409,7 @@ in ships.
 
 735
 00:31:33,470 --> 00:31:34,220
-We just--
+We just &mdash;
 
 736
 00:31:34,220 --> 00:31:35,100
@@ -3422,7 +3422,7 @@ well, Kurt is.
 738
 00:31:37,240 --> 00:31:40,210
 MANO MARKS: But the technology
-can be-- this kind of
+can be &mdash; this kind of
 
 739
 00:31:40,210 --> 00:31:43,720
@@ -3517,7 +3517,7 @@ you ever visualized all of
 
 759
 00:32:45,200 --> 00:32:46,240
-them, not just driving, but--
+them, not just driving, but &mdash;
 
 760
 00:32:46,240 --> 00:32:48,560
@@ -3544,7 +3544,7 @@ start talking about that.
 
 765
 00:32:57,740 --> 00:33:01,030
-So we couldn't talk about--
+So we couldn't talk about &mdash;
 
 766
 00:33:01,030 --> 00:33:04,430
@@ -3595,7 +3595,7 @@ that many points into the
 
 776
 00:33:32,890 --> 00:33:34,350
-browser and then this--
+browser and then this &mdash;
 
 777
 00:33:34,350 --> 00:33:37,260
@@ -3664,7 +3664,7 @@ each one of those is actually
 
 791
 00:34:15,530 --> 00:34:19,320
-being rendered as lines--
+being rendered as lines &mdash;
 
 792
 00:34:19,320 --> 00:34:21,570
@@ -3728,7 +3728,7 @@ open source tools, you can
 
 805
 00:34:57,260 --> 00:35:00,140
-take any-- it's called as S-57,
+take any &mdash; it's called as S-57,
 is the current format.
 
 806
@@ -3771,7 +3771,7 @@ use them for navigation.
 814
 00:35:16,090 --> 00:35:18,330
 So when it comes to things
-like ECTISP--
+like ECTISP &mdash;
 
 815
 00:35:18,330 --> 00:35:20,470
@@ -3781,7 +3781,7 @@ goes on your bridge of your
 816
 00:35:20,470 --> 00:35:22,770
 ship, for those who
-don't know--
+don't know &mdash;
 
 817
 00:35:22,770 --> 00:35:25,210
@@ -3862,7 +3862,7 @@ I'm not doing that.
 
 834
 00:35:56,600 --> 00:36:01,470
-I'm trying to fetch-- so I'm not
+I'm trying to fetch &mdash; so I'm not
 waiting for the Git from
 
 835

@@ -1241,7 +1241,7 @@ things to expire in about a
 270
 00:11:56,200 --> 00:11:59,790
 week or two, so we want
-you to download--
+you to download &mdash;
 
 271
 00:11:59,790 --> 00:12:01,790
@@ -1379,7 +1379,7 @@ involved.
 300
 00:13:20,660 --> 00:13:22,830
 The way you can communicate
-with--
+with &mdash;
 
 301
 00:13:22,830 --> 00:13:24,340
@@ -1691,11 +1691,11 @@ different from, say, a
 366
 00:16:20,840 --> 00:16:24,140
 plug-in, where if you look at
-plug-ins-- like, say, the Java
+plug-ins &mdash; like, say, the Java
 
 367
 00:16:24,140 --> 00:16:27,850
-plug-in or others-- they
+plug-in or others &mdash; they
 typically don't interact that
 
 368
@@ -2232,7 +2232,7 @@ running inside of the
 485
 00:21:32,090 --> 00:21:36,955
 Dart VM in Dartium, that will
-just spawn a separate--
+just spawn a separate &mdash;
 
 486
 00:21:36,955 --> 00:21:38,400
@@ -3423,7 +3423,7 @@ very convenient.
 741
 00:33:06,880 --> 00:33:09,440
 For now, we have to provide
-a special--
+a special &mdash;
 
 742
 00:33:09,440 --> 00:33:12,320
@@ -3576,12 +3576,12 @@ in production mode.
 773
 00:34:36,570 --> 00:34:40,230
 If you do run it in check
-notice, as Anton said--
+notice, as Anton said &mdash;
 
 774
 00:34:40,230 --> 00:34:43,350
 today you have to use a set
-environment flag to do that--
+environment flag to do that &mdash;
 
 775
 00:34:43,350 --> 00:34:46,690
@@ -3752,7 +3752,7 @@ of snapshots.
 810
 00:36:27,460 --> 00:36:30,250
 So the first snapshot
-allows you--
+allows you &mdash;
 
 811
 00:36:30,250 --> 00:36:32,860
@@ -4104,12 +4104,12 @@ it at startup time.
 885
 00:40:03,900 --> 00:40:06,480
 SETH LADD: So if I write a
-random Dart script-- like you
+random Dart script &mdash; like you
 
 886
 00:40:06,480 --> 00:40:08,440
 had the "Hello world"
-example there--
+example there &mdash;
 
 887
 00:40:08,440 --> 00:40:12,610
@@ -4525,7 +4525,7 @@ But I think eventually, sure.
 974
 00:44:07,640 --> 00:44:09,910
 I couldn't really comment
-on what the--
+on what the &mdash;
 
 975
 00:44:09,910 --> 00:44:10,520
@@ -4855,16 +4855,16 @@ browser, and Dartium separate.
 1046
 00:47:27,415 --> 00:47:29,660
 VIJAY MENON: If you're running
-regular Chrome--
+regular Chrome &mdash;
 
 1047
 00:47:29,660 --> 00:47:31,240
-not Chromium, but Chrome--
+not Chromium, but Chrome &mdash;
 
 1048
 00:47:31,240 --> 00:47:34,160
 alongside Dartium, and Dartium
-is the only-- you're not
+is the only &mdash; you're not
 
 1049
 00:47:34,160 --> 00:47:37,420
@@ -5218,7 +5218,7 @@ help stuff.
 
 1124
 00:51:09,980 --> 00:51:11,380
-Anton said--
+Anton said &mdash;
 
 1125
 00:51:11,380 --> 00:51:13,090

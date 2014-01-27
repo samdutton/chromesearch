@@ -47,12 +47,12 @@ If you haven't used it before,
 11
 00:00:25,601 --> 00:00:29,100
 if you find yourself having
-to do any UI development--
+to do any UI development &mdash;
 
 12
 00:00:29,100 --> 00:00:31,234
 Maybe if you've even
-already been using--
+already been using &mdash;
 
 13
 00:00:31,234 --> 00:00:34,067
@@ -71,7 +71,7 @@ That was a joke for Glenn.
 16
 00:00:41,167 --> 00:00:45,033
 But anyway, the view system
-is basically--
+is basically &mdash;
 
 17
 00:00:45,033 --> 00:00:48,133
@@ -99,7 +99,7 @@ you have individual controls.
 
 22
 00:01:01,634 --> 00:01:03,767
-And these things are--
+And these things are &mdash;
 we call them views.
 
 23
@@ -109,7 +109,7 @@ for all of them that is view,
 
 24
 00:01:06,934 --> 00:01:08,701
-in the view's namespace--
+in the view's namespace &mdash;
 
 25
 00:01:08,701 --> 00:01:12,534
@@ -151,7 +151,7 @@ to do interesting things.
 
 33
 00:01:34,701 --> 00:01:36,367
-So the view itself--
+So the view itself &mdash;
 all of the rendering
 
 34
@@ -224,7 +224,7 @@ controls within a window.
 48
 00:02:19,067 --> 00:02:22,000
 The actual window itself
-at the top level--
+at the top level &mdash;
 
 49
 00:02:22,000 --> 00:02:24,067
@@ -233,7 +233,7 @@ that we call a widget.
 
 50
 00:02:24,067 --> 00:02:28,234
-Which is--
+Which is &mdash;
 on Windows, this is a hWnd.
 
 51
@@ -316,7 +316,7 @@ on this white board.
 
 68
 00:03:39,300 --> 00:03:43,400
-Oh, maybe Ian can--
+Oh, maybe Ian can &mdash;
 
 69
 00:03:43,400 --> 00:03:47,467
@@ -377,7 +377,7 @@ which is a root view.
 81
 00:04:12,534 --> 00:04:16,067
 And the root view is a sub-class
-of view that does some--
+of view that does some &mdash;
 
 82
 00:04:16,067 --> 00:04:18,701
@@ -569,7 +569,7 @@ or things like that.
 121
 00:05:50,234 --> 00:05:53,133
 So by doing that,
-you basically--
+you basically &mdash;
 
 122
 00:05:53,133 --> 00:05:54,801
@@ -593,7 +593,7 @@ through your window delegate.
 126
 00:06:01,701 --> 00:06:04,400
 And typically,
-the way this works is--
+the way this works is &mdash;
 
 127
 00:06:04,400 --> 00:06:08,367
@@ -616,7 +616,7 @@ that sits in here somewhere.
 
 131
 00:06:15,033 --> 00:06:18,100
-And your view that--
+And your view that &mdash;
 your contents view
 
 132
@@ -637,7 +637,7 @@ to the, you know,
 135
 00:06:25,667 --> 00:06:28,100
 closing of the things,
-and it can go and configure--
+and it can go and configure &mdash;
 
 136
 00:06:28,100 --> 00:06:31,367
@@ -693,12 +693,12 @@ that sort of thing a bit easier.
 
 147
 00:06:53,801 --> 00:06:55,501
-By the way, all this code--
+By the way, all this code &mdash;
 
 148
 00:06:55,501 --> 00:06:56,934
 if I didn't mention this before,
-I probably should have--
+I probably should have &mdash;
 
 149
 00:06:56,934 --> 00:07:01,000
@@ -800,7 +800,7 @@ somewhere.
 169
 00:07:51,968 --> 00:07:55,334
 And thing is, is that because
-an hWnd isn't a Chrome view--
+an hWnd isn't a Chrome view &mdash;
 
 170
 00:07:55,334 --> 00:07:56,968
@@ -832,8 +832,8 @@ to take any hWnd
 
 176
 00:08:10,501 --> 00:08:12,701
-that you might have--
-say you have a--
+that you might have &mdash;
+say you have a &mdash;
 
 177
 00:08:12,701 --> 00:08:14,167
@@ -915,7 +915,7 @@ you're building a dialogue box,
 
 193
 00:08:53,968 --> 00:08:55,200
-you might use one of the--
+you might use one of the &mdash;
 
 194
 00:08:55,200 --> 00:08:56,968
@@ -925,7 +925,7 @@ the existing layout manager,
 195
 00:08:56,968 --> 00:08:59,801
 like GridLayout,
-which allows you to specify--
+which allows you to specify &mdash;
 
 196
 00:08:59,801 --> 00:09:05,033
@@ -944,7 +944,7 @@ around that define,
 
 199
 00:09:09,901 --> 00:09:11,534
-you know, nicely--
+you know, nicely &mdash;
 
 200
 00:09:11,534 --> 00:09:13,634
@@ -1012,7 +1012,7 @@ the hierarchy calling layout.
 213
 00:09:42,901 --> 00:09:48,133
 And then basically
-each child view--
+each child view &mdash;
 
 214
 00:09:48,133 --> 00:09:49,868
@@ -1035,7 +1035,7 @@ just propagates like that.
 
 218
 00:09:56,601 --> 00:09:58,033
-So part of that--
+So part of that &mdash;
 
 219
 00:09:58,033 --> 00:09:59,567
@@ -1195,7 +1195,7 @@ the client view,
 
 251
 00:11:25,501 --> 00:11:28,100
-and it also contains a--
+and it also contains a &mdash;
 what we call a frame view,
 
 252
@@ -1209,7 +1209,7 @@ the window.
 
 254
 00:11:34,601 --> 00:11:36,033
-And so--
+And so &mdash;
 and that can do
 
 255
@@ -1240,7 +1240,7 @@ dialogue boxes,
 260
 00:11:45,334 --> 00:11:47,801
 and I said that you would make
-a contents view for your--
+a contents view for your &mdash;
 
 261
 00:11:47,801 --> 00:11:49,801
@@ -1274,7 +1274,7 @@ that you make.
 267
 00:12:00,267 --> 00:12:03,067
 But the client view is the thing
-that basically--
+that basically &mdash;
 
 268
 00:12:03,067 --> 00:12:04,434
@@ -1312,7 +1312,7 @@ comment about the way that
 275
 00:12:19,667 --> 00:12:24,834
 the front end is being developed
-primarily because--
+primarily because &mdash;
 
 276
 00:12:24,834 --> 00:12:26,267
@@ -1376,7 +1376,7 @@ the standard approach
 288
 00:12:53,934 --> 00:12:58,200
 for this in model view
-controller layout, where--
+controller layout, where &mdash;
 
 289
 00:12:58,200 --> 00:13:00,801
@@ -1390,12 +1390,12 @@ to be the state of the model
 
 291
 00:13:04,434 --> 00:13:06,133
-in this case, and then the--
+in this case, and then the &mdash;
 
 292
 00:13:06,133 --> 00:13:09,467
 all of the Chrome view stuff,
-that's kind of the--
+that's kind of the &mdash;
 
 293
 00:13:09,467 --> 00:13:12,734
@@ -1446,7 +1446,7 @@ right now.
 
 303
 00:13:32,701 --> 00:13:35,334
-So because the--
+So because the &mdash;
 
 304
 00:13:35,334 --> 00:13:37,501
@@ -1499,7 +1499,7 @@ in-process browser tests
 
 314
 00:14:01,400 --> 00:14:02,934
-that basically allow--
+that basically allow &mdash;
 
 315
 00:14:02,934 --> 00:14:05,033
@@ -1580,7 +1580,7 @@ to debug.
 
 331
 00:14:39,300 --> 00:14:40,601
-But if you want to get--
+But if you want to get &mdash;
 
 332
 00:14:40,601 --> 00:14:43,834

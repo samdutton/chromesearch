@@ -449,7 +449,7 @@ about these type of
 
 99
 00:03:51,895 --> 00:03:52,620
-the things is that--
+the things is that &mdash;
 
 100
 00:03:52,620 --> 00:03:54,560
@@ -458,7 +458,7 @@ and should have said it
 
 101
 00:03:54,560 --> 00:03:55,470
-earlier on--
+earlier on &mdash;
 
 102
 00:03:55,470 --> 00:03:57,220
@@ -586,7 +586,7 @@ Chrome app APIs.
 
 129
 00:04:53,530 --> 00:04:55,740
-And what it allows us to do--
+And what it allows us to do &mdash;
 and I'll just reload it,
 
 130
@@ -632,7 +632,7 @@ about this, and I
 
 139
 00:05:15,540 --> 00:05:16,770
-think I kind of like--
+think I kind of like &mdash;
 
 140
 00:05:16,770 --> 00:05:20,680
@@ -642,7 +642,7 @@ it can actually serve.
 141
 00:05:20,680 --> 00:05:23,910
 I've used the normal input type
-equals file attribute--
+equals file attribute &mdash;
 
 142
 00:05:23,910 --> 00:05:25,350
@@ -740,7 +740,7 @@ It's not styled up.
 163
 00:06:00,020 --> 00:06:03,190
 But the interesting thing is if
-we go to Inspect Element--
+we go to Inspect Element &mdash;
 
 164
 00:06:03,190 --> 00:06:05,780
@@ -847,7 +847,7 @@ those requests
 
 186
 00:06:49,240 --> 00:06:51,890
-from my local resource--
+from my local resource &mdash;
 
 187
 00:06:51,890 --> 00:06:54,010
@@ -882,7 +882,7 @@ you actually how
 
 194
 00:07:04,400 --> 00:07:05,620
-to build these things--
+to build these things &mdash;
 
 195
 00:07:05,620 --> 00:07:05,980
@@ -1009,7 +1009,7 @@ that you're going to have.
 
 221
 00:08:06,430 --> 00:08:07,560
-And in this case--
+And in this case &mdash;
 
 222
 00:08:07,560 --> 00:08:08,020
@@ -1174,11 +1174,11 @@ should be good to go.
 
 257
 00:09:32,060 --> 00:09:34,900
-Now that doesn't mean that--
+Now that doesn't mean that &mdash;
 
 258
 00:09:34,900 --> 00:09:35,730
-sorry--
+sorry &mdash;
 
 259
 00:09:35,730 --> 00:09:37,615
@@ -1331,7 +1331,7 @@ all we really need for our
 
 290
 00:10:49,410 --> 00:10:50,360
-basic web service--
+basic web service &mdash;
 
 291
 00:10:50,360 --> 00:10:53,680
@@ -2115,7 +2115,7 @@ the user's local machine.
 
 459
 00:17:08,670 --> 00:17:10,869
-We also have--
+We also have &mdash;
 
 460
 00:17:10,869 --> 00:17:12,559
@@ -2323,7 +2323,7 @@ So we're going to say, listen.
 
 504
 00:18:45,300 --> 00:18:47,180
-And if we do listen--
+And if we do listen &mdash;
 
 505
 00:18:47,180 --> 00:18:50,040
@@ -2415,7 +2415,7 @@ console.log, I don't know,
 
 525
 00:19:35,360 --> 00:19:38,000
-listening, listen-- you
+listening, listen &mdash; you
 know, I can't spell.
 
 526
@@ -2537,7 +2537,7 @@ a server application.
 551
 00:20:35,820 --> 00:20:38,950
 So we're just saying listen on
-port-- well, listen on IP
+port &mdash; well, listen on IP
 
 552
 00:20:38,950 --> 00:20:43,130
@@ -2590,7 +2590,7 @@ public IP address if your
 
 562
 00:21:03,240 --> 00:21:05,460
-browser was--
+browser was &mdash;
 
 563
 00:21:05,460 --> 00:21:08,030
@@ -2624,7 +2624,7 @@ an interesting scenario for
 569
 00:21:17,970 --> 00:21:21,700
 those people who want to write
-a proxy server at home-- and
+a proxy server at home &mdash; and
 
 570
 00:21:21,700 --> 00:21:24,270
@@ -2932,7 +2932,7 @@ PETE LEPAGE: No, probably not.
 635
 00:23:49,190 --> 00:23:51,570
 Well, unless you wanted to buy
-yourself an extra set--
+yourself an extra set &mdash;
 
 636
 00:23:51,570 --> 00:23:52,840
@@ -3108,7 +3108,7 @@ pretty cool.
 
 673
 00:25:07,110 --> 00:25:08,110
-We've got one or two--
+We've got one or two &mdash;
 
 674
 00:25:08,110 --> 00:25:10,510
@@ -3354,7 +3354,7 @@ application, right?
 726
 00:26:53,410 --> 00:26:55,640
 So what we're going to do is
-we're going to call a simple--
+we're going to call a simple &mdash;
 
 727
 00:26:55,640 --> 00:26:56,850
@@ -3474,12 +3474,12 @@ We call a read.
 752
 00:27:46,740 --> 00:27:50,760
 And, in theory, what you'd
-see here now is--
+see here now is &mdash;
 
 753
 00:27:50,760 --> 00:27:53,170
 I'm just going to put
-it in so we know--
+it in so we know &mdash;
 
 754
 00:27:53,170 --> 00:27:56,080
@@ -3546,11 +3546,11 @@ convert it to a string.
 768
 00:28:24,150 --> 00:28:26,960
 And the reason why we
-do this is because--
+do this is because &mdash;
 
 769
 00:28:26,960 --> 00:28:27,690
-wait for it--
+wait for it &mdash;
 
 770
 00:28:27,690 --> 00:28:28,340
@@ -3567,8 +3567,8 @@ to read from it.
 
 773
 00:28:31,550 --> 00:28:36,180
-So what I do is I say-- yeah,
-it's exciting-- indexOf.
+So what I do is I say &mdash; yeah,
+it's exciting &mdash; indexOf.
 
 774
 00:28:36,180 --> 00:28:39,510
@@ -3675,12 +3675,12 @@ end of the URI.
 796
 00:29:29,190 --> 00:29:31,370
 So the thing that comes after
-the get request--
+the get request &mdash;
 
 797
 00:29:31,370 --> 00:29:36,260
 and I'm sorry for doing
-an HTTP 101 here--
+an HTTP 101 here &mdash;
 
 798
 00:29:36,260 --> 00:29:39,430
@@ -4040,7 +4040,7 @@ it's HTTP1, 1.1.
 875
 00:32:23,620 --> 00:32:27,640
 The status code, 200
-in this case--
+in this case &mdash;
 
 876
 00:32:27,640 --> 00:32:29,750
@@ -4059,7 +4059,7 @@ contentLength and contentType.
 879
 00:32:32,940 --> 00:32:36,250
 Now we're using the inverse
-of a stringToArrayBuffer--
+of a stringToArrayBuffer &mdash;
 
 880
 00:32:36,250 --> 00:32:37,815
@@ -4101,21 +4101,21 @@ send that out to the client.
 888
 00:32:54,860 --> 00:32:57,450
 Now the interesting thing, and
-the way I've done this-- and
+the way I've done this &mdash; and
 
 889
 00:32:57,450 --> 00:32:59,530
 it's probably not the best
-way, again-- is I've just
+way, again &mdash; is I've just
 
 890
 00:32:59,530 --> 00:33:01,600
 assumed that I want to
-glob all the data--
+glob all the data &mdash;
 
 891
 00:33:01,600 --> 00:33:04,740
-the header and the response--
+the header and the response &mdash;
 into one write.
 
 892
@@ -4321,7 +4321,7 @@ immediately respond with them
 
 935
 00:34:48,830 --> 00:34:49,420
-and have them--
+and have them &mdash;
 
 936
 00:34:49,420 --> 00:34:51,389
@@ -4448,12 +4448,12 @@ be simple socketId
 
 962
 00:35:40,130 --> 00:35:42,800
-outputBuffer--
+outputBuffer &mdash;
 
 963
 00:35:42,800 --> 00:35:44,970
 be careful how I spell
-that one out--
+that one out &mdash;
 
 964
 00:35:44,970 --> 00:35:48,575
@@ -4650,7 +4650,7 @@ case it's the write.
 
 1005
 00:37:13,350 --> 00:37:15,270
-And, in theory--
+And, in theory &mdash;
 
 1006
 00:37:15,270 --> 00:37:16,300
@@ -4808,7 +4808,7 @@ no whammy, no whammy.
 
 1043
 00:38:21,760 --> 00:38:27,032
-PAUL KINLAN: 81, because--
+PAUL KINLAN: 81, because &mdash;
 
 1044
 00:38:27,032 --> 00:38:28,910
@@ -4963,7 +4963,7 @@ that on anyway.
 1077
 00:39:34,020 --> 00:39:36,000
 But if you've got a Chrome OS
-box, right now, it's like--
+box, right now, it's like &mdash;
 
 1078
 00:39:36,000 --> 00:39:36,290
@@ -5043,7 +5043,7 @@ need to know about.
 
 1094
 00:40:16,530 --> 00:40:17,280
-PAUL KINLAN: The--
+PAUL KINLAN: The &mdash;
 
 1095
 00:40:17,280 --> 00:40:17,930
@@ -5292,7 +5292,7 @@ Appliances, ah, so many.
 
 1149
 00:42:05,750 --> 00:42:07,730
-I really like the idea--
+I really like the idea &mdash;
 so we got a demo
 
 1150
@@ -5427,7 +5427,7 @@ to share the data back out.
 1178
 00:42:54,690 --> 00:42:57,310
 And so you could quite easily do
-it-- well, sort of easily.
+it &mdash; well, sort of easily.
 
 1179
 00:42:57,310 --> 00:42:59,026
@@ -5592,7 +5592,7 @@ applications on it.
 1214
 00:43:55,200 --> 00:43:56,895
 The first one that always comes
-to mind-- and this is I
+to mind &mdash; and this is I
 
 1215
 00:43:56,895 --> 00:43:59,190
@@ -5698,7 +5698,7 @@ broadcasts sent out.
 1237
 00:44:49,690 --> 00:44:52,600
 PAUL KINLAN: Yeah, our Media
-Gallery sample on GitHub--
+Gallery sample on GitHub &mdash;
 
 1238
 00:44:52,600 --> 00:44:52,940
@@ -5767,7 +5767,7 @@ working recently.
 
 1252
 00:45:19,240 --> 00:45:20,730
-But should be able to find--
+But should be able to find &mdash;
 
 1253
 00:45:20,730 --> 00:45:24,590
@@ -6236,7 +6236,7 @@ please be sure to reach out to
 1352
 00:49:10,030 --> 00:49:13,870
 us, either through our own
-Google+ pages-- i'm Pete
+Google+ pages &mdash; i'm Pete
 
 1353
 00:49:13,870 --> 00:49:16,460
@@ -6283,7 +6283,7 @@ PETE LEPAGE: Yes.
 
 1363
 00:49:31,610 --> 00:49:32,110
-That was --
+That was  &mdash;
 
 1364
 00:49:32,110 --> 00:49:32,930

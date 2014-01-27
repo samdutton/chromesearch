@@ -198,7 +198,7 @@ Fair deal, I think.
 43
 00:02:03,310 --> 00:02:06,100
 Google Play Music
-can go through--
+can go through &mdash;
 
 44
 00:02:06,100 --> 00:02:08,850
@@ -393,7 +393,7 @@ who are not as technically
 
 85
 00:04:07,760 --> 00:04:11,590
-advanced who are in here--
+advanced who are in here &mdash;
 maybe your parents, brothers,
 
 86
@@ -714,7 +714,7 @@ sounding word for that,
 
 156
 00:07:45,720 --> 00:07:49,880
-but it really didn't-- that just
+but it really didn't &mdash; that just
 does not roll off the tongue.
 
 157
@@ -831,7 +831,7 @@ what that app, how to start it,
 
 180
 00:09:10,900 --> 00:09:17,390
-how big the window should be--
+how big the window should be &mdash;
 or not the window, but version
 
 181
@@ -952,7 +952,7 @@ and then display that on screen.
 
 205
 00:10:36,060 --> 00:10:38,640
-So in the manifest--
+So in the manifest &mdash;
 how many people
 
 206
@@ -1009,12 +1009,12 @@ at the JavaScript file
 217
 00:11:13,310 --> 00:11:16,080
 that's running
-behind here-- so this
+behind here &mdash; so this
 
 218
 00:11:16,080 --> 00:11:22,120
 is the main.js that's required
-to run-- we set up a listener.
+to run &mdash; we set up a listener.
 
 219
 00:11:22,120 --> 00:11:27,610
@@ -1107,7 +1107,7 @@ need to be aware of.
 238
 00:12:18,660 --> 00:12:24,000
 So beyond the ability to be
-able to work offline-- in fact,
+able to work offline &mdash; in fact,
 
 239
 00:12:24,000 --> 00:12:25,970
@@ -1545,7 +1545,7 @@ authentication token.
 
 330
 00:17:38,490 --> 00:17:42,690
-Then they don't have to--
+Then they don't have to &mdash;
 let me rephrase that, sorry.
 
 331
@@ -1895,7 +1895,7 @@ on an episode of "24."
 408
 00:21:32,160 --> 00:21:35,960
 if you move far enough away
-from the computer-- all right.
+from the computer &mdash; all right.
 
 409
 00:21:35,960 --> 00:21:37,730
@@ -1939,7 +1939,7 @@ getting the heart rate.
 
 418
 00:21:54,940 --> 00:21:59,900
-And then I'm using--
+And then I'm using &mdash;
 and I'll open this up
 
 419
@@ -2161,7 +2161,7 @@ native look, you can do that.
 466
 00:24:46,530 --> 00:24:49,950
 If you want to give it something
-completely different-- oh,
+completely different &mdash; oh,
 
 467
 00:24:49,950 --> 00:24:51,380
@@ -2319,8 +2319,8 @@ go just make this AJAX request.
 
 499
 00:26:45,610 --> 00:26:51,470
-But the Hue-- I won't
-pick it up-- the Hue
+But the Hue &mdash; I won't
+pick it up &mdash; the Hue
 
 500
 00:26:51,470 --> 00:26:53,030
@@ -2358,7 +2358,7 @@ SSDP query, which
 
 507
 00:27:20,050 --> 00:27:23,800
-is-- I don't remember
+is &mdash; I don't remember
 what it stands for.
 
 508
@@ -2512,7 +2512,7 @@ Woo-hoo, yay.
 540
 00:29:18,530 --> 00:29:21,820
 You can push it and
-click it once-- woo-hoo--
+click it once &mdash; woo-hoo &mdash;
 
 541
 00:29:21,820 --> 00:29:25,260
@@ -2647,8 +2647,8 @@ case, I said, hey,
 
 569
 00:30:55,430 --> 00:31:02,537
-I want-- I just gave away the
-next half of my presentation--
+I want &mdash; I just gave away the
+next half of my presentation &mdash;
 
 570
 00:31:02,537 --> 00:31:03,370
@@ -2835,8 +2835,8 @@ after whoever is
 
 610
 00:33:11,760 --> 00:33:16,030
-up next-- I think it's
-Jake-- after the break,
+up next &mdash; I think it's
+Jake &mdash; after the break,
 
 611
 00:33:16,030 --> 00:33:18,100
@@ -3216,7 +3216,7 @@ nicely out of focus.
 
 694
 00:37:34,580 --> 00:37:40,000
-But here, let's-- so I'm going
+But here, let's &mdash; so I'm going
 to change this brightness.
 
 695

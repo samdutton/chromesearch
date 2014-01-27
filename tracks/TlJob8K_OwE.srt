@@ -715,11 +715,11 @@ ones work.
 154
 00:06:33,480 --> 00:06:35,400
 PAUL IRISH: Another question
-that we had--
+that we had &mdash;
 
 155
 00:06:35,400 --> 00:06:37,310
-this is from Greg again--
+this is from Greg again &mdash;
 something
 
 156
@@ -908,7 +908,7 @@ helps figure out
 
 195
 00:08:18,980 --> 00:08:20,320
-which ones you can--
+which ones you can &mdash;
 
 196
 00:08:20,320 --> 00:08:20,980
@@ -1305,7 +1305,7 @@ to hack up the code base.
 279
 00:11:56,580 --> 00:11:59,370
 PAUL IRISH: Say, for instance,
-V8 and Skia-- do those come
+V8 and Skia &mdash; do those come
 
 280
 00:11:59,370 --> 00:12:01,410
@@ -1581,7 +1581,7 @@ opportunity to work with Apple
 
 338
 00:14:24,920 --> 00:14:28,220
-on the multi-process code as--
+on the multi-process code as &mdash;
 actually that sounded quite
 
 339
@@ -1889,7 +1889,7 @@ multiple scripting languages?
 404
 00:17:36,300 --> 00:17:39,220
 DARIN FISHER: Sorry, I think
-our plan going forward--
+our plan going forward &mdash;
 
 405
 00:17:39,220 --> 00:17:41,145
@@ -1958,8 +1958,8 @@ where we feel like we
 
 419
 00:18:18,900 --> 00:18:20,830
-can make a long term-- or should
-make a long term--
+can make a long term &mdash; or should
+make a long term &mdash;
 
 420
 00:18:20,830 --> 00:18:23,040
@@ -2043,7 +2043,7 @@ responsibly.
 
 437
 00:18:55,970 --> 00:18:57,220
-We don't want to have--
+We don't want to have &mdash;
 
 438
 00:18:57,220 --> 00:18:59,810
@@ -2291,7 +2291,7 @@ parts of Google, or even
 
 491
 00:21:20,780 --> 00:21:21,950
-parts of the Blink team--
+parts of the Blink team &mdash;
 
 492
 00:21:21,950 --> 00:21:24,600
@@ -2332,7 +2332,7 @@ of this fork.
 
 500
 00:21:39,065 --> 00:21:40,770
-PAUL IRISH: What's the--
+PAUL IRISH: What's the &mdash;
 
 501
 00:21:40,770 --> 00:21:42,555
@@ -2341,7 +2341,7 @@ of licenses.
 
 502
 00:21:42,555 --> 00:21:42,980
-ALEX KOMOROSKE: A collage--
+ALEX KOMOROSKE: A collage &mdash;
 that's a good
 
 503
@@ -2490,11 +2490,11 @@ kind of thing that ultimately,
 
 534
 00:23:02,070 --> 00:23:03,050
-if we revisit this--
+if we revisit this &mdash;
 
 535
 00:23:03,050 --> 00:23:05,310
-I'm sure at some point we will--
+I'm sure at some point we will &mdash;
 will be doing it on
 
 536
@@ -2565,7 +2565,7 @@ the first version Blink?
 
 550
 00:23:42,030 --> 00:23:43,280
-Again this is available--
+Again this is available &mdash;
 
 551
 00:23:43,280 --> 00:23:43,770
@@ -2618,7 +2618,7 @@ ERIC SEIDEL: Yes.
 561
 00:24:01,240 --> 00:24:02,490
 ALEX KOMOROSKE: So at this
-point we're focusing--
+point we're focusing &mdash;
 
 562
 00:24:02,490 --> 00:24:04,130
@@ -2821,7 +2821,7 @@ is also great.
 
 604
 00:25:42,620 --> 00:25:43,670
-We're going to be--
+We're going to be &mdash;
 
 605
 00:25:43,670 --> 00:25:45,730
@@ -3115,7 +3115,7 @@ of project then Blink or
 668
 00:27:55,980 --> 00:27:57,850
 WebKit, which is
-really about--
+really about &mdash;
 
 669
 00:27:57,850 --> 00:27:59,120
@@ -3204,7 +3204,7 @@ will be really cool to see
 687
 00:28:28,090 --> 00:28:30,820
 which of those really big ideas
-work, and which ones--
+work, and which ones &mdash;
 
 688
 00:28:30,820 --> 00:28:32,500
@@ -3315,7 +3315,7 @@ ones that we've inherited.
 711
 00:29:17,930 --> 00:29:19,310
 DARIN FISHER: It could
-take a long time to--
+take a long time to &mdash;
 
 712
 00:29:19,310 --> 00:29:20,460
@@ -3329,7 +3329,7 @@ it responsibly.
 
 714
 00:29:21,450 --> 00:29:23,610
-Want to figure out-- we don't
+Want to figure out &mdash; we don't
 want to break the web.
 
 715
@@ -3485,11 +3485,11 @@ flag, just for fun.
 747
 00:30:37,700 --> 00:30:38,960
 ALEX KOMOROSKE: Someone
-was joking--
+was joking &mdash;
 
 748
 00:30:38,960 --> 00:30:40,500
-I forget who it was--
+I forget who it was &mdash;
 
 749
 00:30:40,500 --> 00:30:42,730

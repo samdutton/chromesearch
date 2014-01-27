@@ -402,7 +402,7 @@ Chrome teams.
 87
 00:04:00,480 --> 00:04:03,900
 And my focus has primarily been
-on the network side-- so
+on the network side &mdash; so
 
 88
 00:04:03,900 --> 00:04:06,580
@@ -627,7 +627,7 @@ that e-commerce sites have
 135
 00:06:07,320 --> 00:06:09,500
 been degrading in terms
-of performance--
+of performance &mdash;
 
 136
 00:06:09,500 --> 00:06:12,560
@@ -774,7 +774,7 @@ which were very
 165
 00:07:43,560 --> 00:07:49,040
 rooted in, again, a document
-viewer-type model--
+viewer-type model &mdash;
 
 166
 00:07:49,040 --> 00:07:51,820
@@ -1280,7 +1280,7 @@ Real User Measurement.
 
 271
 00:12:24,630 --> 00:12:27,060
-So this is a new API--
+So this is a new API &mdash;
 
 272
 00:12:27,060 --> 00:12:28,130
@@ -1303,7 +1303,7 @@ of the loading of the
 
 276
 00:12:36,180 --> 00:12:39,270
-page-- so anything from TCP
+page &mdash; so anything from TCP
 connection time to there was a
 
 277
@@ -1396,7 +1396,7 @@ to explore.
 295
 00:13:21,270 --> 00:13:24,190
 But it is challenging
-because the notion--
+because the notion &mdash;
 
 296
 00:13:24,190 --> 00:13:28,380
@@ -1524,11 +1524,11 @@ And you need training.
 322
 00:14:35,100 --> 00:14:37,230
 I know that when I sit
-down with somebody--
+down with somebody &mdash;
 
 323
 00:14:37,230 --> 00:14:40,440
-with yourself or Paul-- and I
+with yourself or Paul &mdash; and I
 see you guys go through the
 
 324
@@ -1609,7 +1609,7 @@ it's harder to isolate
 
 340
 00:15:20,140 --> 00:15:21,640
-it on the actual device--
+it on the actual device &mdash;
 
 341
 00:15:21,640 --> 00:15:24,660
@@ -1643,11 +1643,11 @@ think is fairly difficult,
 347
 00:15:38,930 --> 00:15:41,630
 because if you get reports in
-from the same device-- let's
+from the same device &mdash; let's
 
 348
 00:15:41,630 --> 00:15:43,920
-say a Nexus device--
+say a Nexus device &mdash;
 
 349
 00:15:43,920 --> 00:15:48,350
@@ -1680,7 +1680,7 @@ oh, some app
 
 355
 00:15:56,840 --> 00:15:58,500
-is swamping my loadable--
+is swamping my loadable &mdash;
 
 356
 00:15:58,500 --> 00:15:59,150
@@ -1697,7 +1697,7 @@ resource, right?
 
 359
 00:16:02,600 --> 00:16:04,700
-I do think though-- to get back
+I do think though &mdash; to get back
 to your original question
 
 360
@@ -1708,7 +1708,7 @@ tools available, at least
 361
 00:16:08,790 --> 00:16:11,450
 in Chrome, for debugging
-rendering performance--
+rendering performance &mdash;
 
 362
 00:16:11,450 --> 00:16:14,720
@@ -1925,7 +1925,7 @@ engagement drops, we have good
 
 407
 00:18:15,830 --> 00:18:17,020
-measurements--
+measurements &mdash;
 
 408
 00:18:17,020 --> 00:18:19,590
@@ -2076,7 +2076,7 @@ a Chrome
 
 439
 00:19:32,350 --> 00:19:34,770
-session, but I think--
+session, but I think &mdash;
 
 440
 00:19:34,770 --> 00:19:35,580
@@ -2358,12 +2358,12 @@ I think that's going to work.
 500
 00:22:12,850 --> 00:22:18,240
 And hopefully that will push
-the performance ceiling--
+the performance ceiling &mdash;
 
 501
 00:22:18,240 --> 00:22:20,040
 or floor, depending on
-how you look at it--
+how you look at it &mdash;
 
 502
 00:22:20,040 --> 00:22:24,120
@@ -2598,11 +2598,11 @@ particular browser?
 
 551
 00:24:35,790 --> 00:24:36,420
-And--
+And &mdash;
 
 552
 00:24:36,420 --> 00:24:38,160
-by the way, I'm interested--
+by the way, I'm interested &mdash;
 what do you do for users that
 
 553
@@ -2631,7 +2631,7 @@ we're targeting
 
 558
 00:24:51,940 --> 00:24:54,530
-Gingerbread and up--
+Gingerbread and up &mdash;
 
 559
 00:24:54,530 --> 00:24:57,510
@@ -2725,7 +2725,7 @@ I don't think that's fair.
 
 579
 00:25:43,760 --> 00:25:46,620
-I think no user complains--
+I think no user complains &mdash;
 
 580
 00:25:46,620 --> 00:25:49,270
@@ -2815,7 +2815,7 @@ got the buy-in from the
 
 599
 00:26:43,140 --> 00:26:44,560
-browser vendors--
+browser vendors &mdash;
 
 600
 00:26:44,560 --> 00:26:47,700
@@ -2888,8 +2888,8 @@ you to run a test against
 
 614
 00:27:28,560 --> 00:27:31,170
-different browsers-- so IE,
-Chrome, and the rest-- and get
+different browsers &mdash; so IE,
+Chrome, and the rest &mdash; and get
 
 615
 00:27:31,170 --> 00:27:32,130
@@ -2930,7 +2930,7 @@ bottom-up specs for
 
 623
 00:27:48,860 --> 00:27:51,330
-that-- so HTTP Archive Spec,
+that &mdash; so HTTP Archive Spec,
 where we can right-click on
 
 624
@@ -3155,7 +3155,7 @@ a good one.
 
 671
 00:29:47,550 --> 00:29:49,040
-And I wonder--
+And I wonder &mdash;
 
 672
 00:29:49,040 --> 00:29:50,490
@@ -3164,7 +3164,7 @@ buy-in from other browser
 
 673
 00:29:50,490 --> 00:29:51,890
-vendors or what-- how
+vendors or what &mdash; how
 we can make this
 
 674
@@ -3209,7 +3209,7 @@ ask it regarding Chrome
 
 683
 00:30:11,000 --> 00:30:13,818
-performance versus--
+performance versus &mdash;
 
 684
 00:30:13,818 --> 00:30:15,530
@@ -3233,12 +3233,12 @@ ANDRE: Great.
 
 689
 00:30:25,644 --> 00:30:29,040
-Yeah, my question was simply--
+Yeah, my question was simply &mdash;
 
 690
 00:30:29,040 --> 00:30:32,470
 I have a pretty heavy
-app that I work on--
+app that I work on &mdash;
 
 691
 00:30:32,470 --> 00:30:36,620
@@ -3492,7 +3492,7 @@ one other thing
 
 744
 00:32:59,970 --> 00:33:02,350
-though, which is also--
+though, which is also &mdash;
 
 745
 00:33:02,350 --> 00:33:04,050
@@ -3632,12 +3632,12 @@ someone's battery in a day."
 773
 00:34:12,650 --> 00:34:14,955
 ILYA GRIGORIK: So I think
-maybe a year ago--
+maybe a year ago &mdash;
 
 774
 00:34:14,955 --> 00:34:16,710
 we were just talking
-before this panel--
+before this panel &mdash;
 
 775
 00:34:16,710 --> 00:34:19,199
@@ -3691,7 +3691,7 @@ lots of great examples where
 786
 00:34:36,880 --> 00:34:38,630
 we're doing things
-wrong today--
+wrong today &mdash;
 
 787
 00:34:38,630 --> 00:34:41,580
@@ -3806,11 +3806,11 @@ page in Chrome for Android on
 810
 00:35:40,810 --> 00:35:45,350
 an older generation Nexus
-device-- so a Nexus S or
+device &mdash; so a Nexus S or
 
 811
 00:35:45,350 --> 00:35:46,020
-something-- yeah?
+something &mdash; yeah?
 
 812
 00:35:46,020 --> 00:35:47,150
@@ -3980,7 +3980,7 @@ instrumentation.
 
 848
 00:37:11,440 --> 00:37:13,950
-I was looking-- so Qualcomm
+I was looking &mdash; so Qualcomm
 is a great example.
 
 849
@@ -3996,11 +3996,11 @@ where you can actually
 851
 00:37:19,110 --> 00:37:22,880
 record a session on your
-phone, and then--
+phone, and then &mdash;
 
 852
 00:37:22,880 --> 00:37:24,470
-it's not an exact measurement--
+it's not an exact measurement &mdash;
 but it will
 
 853
@@ -4438,7 +4438,7 @@ that one thing be?
 
 946
 00:41:32,690 --> 00:41:33,120
-Go ahead--
+Go ahead &mdash;
 
 947
 00:41:33,120 --> 00:41:34,030
@@ -4462,7 +4462,7 @@ also saving your battery life.
 951
 00:41:43,210 --> 00:41:47,100
 And that is any time the app
-doesn't have anything to do--
+doesn't have anything to do &mdash;
 
 952
 00:41:47,100 --> 00:41:50,740
@@ -4472,7 +4472,7 @@ needs a login flow.
 953
 00:41:50,740 --> 00:41:54,230
 So you started a login,
-username, password, input--
+username, password, input &mdash;
 
 954
 00:41:54,230 --> 00:41:57,730
@@ -4691,7 +4691,7 @@ the web that are going to
 1000
 00:43:43,620 --> 00:43:46,070
 allow us to have the
-pit of awesome--
+pit of awesome &mdash;
 
 1001
 00:43:46,070 --> 00:43:47,710
@@ -4795,7 +4795,7 @@ how the basics of
 
 1023
 00:44:23,800 --> 00:44:24,790
-those things work--
+those things work &mdash;
 
 1024
 00:44:24,790 --> 00:44:26,720
@@ -4804,7 +4804,7 @@ couple of hours just reading
 
 1025
 00:44:26,720 --> 00:44:28,170
-about how it works--
+about how it works &mdash;
 
 1026
 00:44:28,170 --> 00:44:31,140
@@ -4850,7 +4850,7 @@ JAMES PEARCE: Magic wish?
 
 1035
 00:44:47,160 --> 00:44:50,330
-ILYA GRIGORIK: Magic wish--
+ILYA GRIGORIK: Magic wish &mdash;
 
 1036
 00:44:50,330 --> 00:44:55,660
@@ -4872,7 +4872,7 @@ ILYA GRIGORIK: Right.
 
 1040
 00:44:58,130 --> 00:44:59,960
-That network performance--
+That network performance &mdash;
 solved.
 
 1041
@@ -4930,7 +4930,7 @@ and the magic wish?
 1052
 00:45:25,780 --> 00:45:26,870
 ARIYA HIDAYAT: The
-magic wish--
+magic wish &mdash;
 
 1053
 00:45:26,870 --> 00:45:28,250

@@ -51,7 +51,7 @@ gonna show Wikipedia here.
 
 12
 00:00:33,560 --> 00:00:35,120
-So we have just a standard--
+So we have just a standard &mdash;
 
 13
 00:00:35,120 --> 00:00:39,430
@@ -84,12 +84,12 @@ a weight as the page is
 19
 00:00:55,780 --> 00:00:58,420
 So, actually if I just
-load the page--
+load the page &mdash;
 
 20
 00:00:58,420 --> 00:01:00,820
 I'll get rid of the
-DevTools for now--
+DevTools for now &mdash;
 
 21
 00:01:00,820 --> 00:01:04,209
@@ -102,7 +102,7 @@ to scroll it a bunch.
 
 23
 00:01:07,640 --> 00:01:10,050
-You can see it's--
+You can see it's &mdash;
 
 24
 00:01:10,050 --> 00:01:11,580
@@ -167,7 +167,7 @@ the timeline here.
 
 37
 00:01:45,740 --> 00:01:50,420
-And if I scroll down a bit--
+And if I scroll down a bit &mdash;
 
 38
 00:01:50,420 --> 00:01:52,770
@@ -259,7 +259,7 @@ layout thrashing.
 57
 00:02:46,960 --> 00:02:51,340
 For right now, let's focus
-on this layout style--
+on this layout style &mdash;
 
 58
 00:02:51,340 --> 00:02:52,800
@@ -543,7 +543,7 @@ difference at the end.
 118
 00:05:25,910 --> 00:05:27,470
 And it turns out WebKit
-actually--
+actually &mdash;
 
 119
 00:05:27,470 --> 00:05:29,550
@@ -707,7 +707,7 @@ on a hover of the layout where
 
 153
 00:07:14,170 --> 00:07:17,970
-we have the little icon--
+we have the little icon &mdash;
 
 154
 00:07:17,970 --> 00:07:20,610
@@ -722,7 +722,7 @@ bottleneck.
 156
 00:07:24,510 --> 00:07:26,505
 And so what this
-means is that--
+means is that &mdash;
 
 157
 00:07:26,505 --> 00:07:28,510
@@ -1410,7 +1410,7 @@ null transform to everything
 
 300
 00:13:35,860 --> 00:13:37,650
-on the page--
+on the page &mdash;
 
 301
 00:13:37,650 --> 00:13:43,510
@@ -2269,17 +2269,17 @@ controversial idea.
 484
 00:22:12,380 --> 00:22:15,370
 But it has a lot to do with the
-cyclomatic complexity--
+cyclomatic complexity &mdash;
 
 485
 00:22:15,370 --> 00:22:19,670
-whatever that means-- of
+whatever that means &mdash; of
 code, lint errors.
 
 486
 00:22:19,670 --> 00:22:22,760
 And so you can kind of
-get a sense for--
+get a sense for &mdash;
 
 487
 00:22:22,760 --> 00:22:25,300
@@ -2721,12 +2721,12 @@ integration environment.
 
 581
 00:27:09,110 --> 00:27:10,860
-And the last one I have--
+And the last one I have &mdash;
 
 582
 00:27:10,860 --> 00:27:13,150
 not really related but
-I think it's cool--
+I think it's cool &mdash;
 
 583
 00:27:13,150 --> 00:27:16,610
@@ -2785,12 +2785,12 @@ is it actually just
 
 595
 00:27:45,130 --> 00:27:46,870
-looks at the page--
+looks at the page &mdash;
 
 596
 00:27:46,870 --> 00:27:50,550
 and I think it uses PhantomJS,
-I believe--
+I believe &mdash;
 
 597
 00:27:50,550 --> 00:27:54,940

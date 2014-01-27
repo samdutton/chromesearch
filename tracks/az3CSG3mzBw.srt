@@ -113,7 +113,7 @@ brand queries.
 25
 00:00:55,640 --> 00:00:59,080
 These are queries like
-Audi, NBC, Fandango--
+Audi, NBC, Fandango &mdash;
 
 26
 00:00:59,080 --> 00:01:02,900
@@ -205,7 +205,7 @@ The movie posters are there.
 
 45
 00:01:46,630 --> 00:01:49,570
-Before, and after--
+Before, and after &mdash;
 
 46
 00:01:49,570 --> 00:01:52,800
@@ -714,7 +714,7 @@ events themselves.
 155
 00:06:33,440 --> 00:06:37,620
 Or perhaps promotions, coupons,
-daily deals--
+daily deals &mdash;
 
 156
 00:06:37,620 --> 00:06:39,960
@@ -733,7 +733,7 @@ something unexpected happens,
 
 159
 00:06:46,750 --> 00:06:49,840
-and that you want to deal with--
+and that you want to deal with &mdash;
 like, say something
 
 160
@@ -761,7 +761,7 @@ distribution system.
 
 165
 00:07:01,480 --> 00:07:02,470
-You can--
+You can &mdash;
 
 166
 00:07:02,470 --> 00:07:04,920
@@ -770,7 +770,7 @@ the PR person, marketing
 
 167
 00:07:04,920 --> 00:07:06,010
-person, whoever--
+person, whoever &mdash;
 
 168
 00:07:06,010 --> 00:07:10,530
@@ -895,7 +895,7 @@ can send us the activities
 193
 00:08:19,160 --> 00:08:21,180
 that those users are
-engaged in--
+engaged in &mdash;
 
 194
 00:08:21,180 --> 00:08:23,220
@@ -937,7 +937,7 @@ right hand side cards.
 
 202
 00:08:47,120 --> 00:08:51,410
-So Google+ Sign-In is--
+So Google+ Sign-In is &mdash;
 
 203
 00:08:51,410 --> 00:08:54,840
@@ -1104,7 +1104,7 @@ created that claims a website
 237
 00:10:20,100 --> 00:10:23,255
 that corresponds to your
-Google+ brand query--
+Google+ brand query &mdash;
 
 238
 00:10:23,255 --> 00:10:25,460
@@ -1232,7 +1232,7 @@ most obvious ones.
 
 264
 00:11:25,560 --> 00:11:27,470
-One is your name--
+One is your name &mdash;
 
 265
 00:11:27,470 --> 00:11:28,670
@@ -1259,7 +1259,7 @@ you were claiming
 
 270
 00:11:40,010 --> 00:11:42,320
-corresponds to that +Page--
+corresponds to that +Page &mdash;
 
 271
 00:11:42,320 --> 00:11:43,560
@@ -1545,7 +1545,7 @@ search box simply by
 
 331
 00:13:58,890 --> 00:14:02,140
-adding Activated Posts--
+adding Activated Posts &mdash;
 
 332
 00:14:02,140 --> 00:14:05,350
@@ -1554,7 +1554,7 @@ is the last stage in the basic
 
 333
 00:14:05,350 --> 00:14:06,290
-integration--
+integration &mdash;
 
 334
 00:14:06,290 --> 00:14:07,150
@@ -1777,17 +1777,17 @@ Google+ Sign-In to your site.
 380
 00:16:12,390 --> 00:16:14,360
 Second, sending app
-activities--
+activities &mdash;
 
 381
 00:16:14,360 --> 00:16:17,200
 what is the user doing,
-and on what page--
+and on what page &mdash;
 
 382
 00:16:17,200 --> 00:16:20,380
 which is represented as a URL,
-which we'll see in details--
+which we'll see in details &mdash;
 
 383
 00:16:20,380 --> 00:16:22,000
@@ -1881,12 +1881,12 @@ different talks, all of which
 
 402
 00:17:10,000 --> 00:17:10,630
-are tomorrow--
+are tomorrow &mdash;
 
 403
 00:17:10,630 --> 00:17:14,460
 a deep dive into integration on
-web, Android, and iOS-- and
+web, Android, and iOS &mdash; and
 
 404
 00:17:14,460 --> 00:17:16,666
@@ -2106,7 +2106,7 @@ one of two fields.
 
 450
 00:18:59,400 --> 00:19:00,520
-Access token--
+Access token &mdash;
 
 451
 00:19:00,520 --> 00:19:05,820
@@ -2334,8 +2334,8 @@ you to send different types of
 
 498
 00:21:08,140 --> 00:21:10,930
-what we call moments-- in this
-particular case, an activity--
+what we call moments &mdash; in this
+particular case, an activity &mdash;
 
 499
 00:21:10,930 --> 00:21:11,880
@@ -2349,7 +2349,7 @@ data associated with an
 501
 00:21:14,340 --> 00:21:17,460
 activity that are absolutely
-required-- one, the type.
+required &mdash; one, the type.
 
 502
 00:21:17,460 --> 00:21:19,520
@@ -3071,12 +3071,12 @@ at the moment.
 654
 00:28:10,000 --> 00:28:13,150
 So basically, because there are,
-of course, other sites--
+of course, other sites &mdash;
 
 655
 00:28:13,150 --> 00:28:16,740
 like Paris Hilton also is
-in celebrity news--
+in celebrity news &mdash;
 
 656
 00:28:16,740 --> 00:28:20,840
@@ -3196,7 +3196,7 @@ from Maps or something?
 681
 00:29:15,590 --> 00:29:17,500
 Or local businesses,
-I mean, there--
+I mean, there &mdash;
 
 682
 00:29:17,500 --> 00:29:18,770
@@ -3332,7 +3332,7 @@ form of publishership, so that
 710
 00:30:24,130 --> 00:30:27,560
 even though we have the ability
-to tie our logos--
+to tie our logos &mdash;
 
 711
 00:30:27,560 --> 00:30:32,080
@@ -3356,7 +3356,7 @@ that's going to come?
 
 715
 00:30:39,650 --> 00:30:41,290
-And also, just today, you've--
+And also, just today, you've &mdash;
 
 716
 00:30:41,290 --> 00:30:43,220
@@ -3388,7 +3388,7 @@ from Google+.
 
 722
 00:30:54,570 --> 00:30:55,610
-That doesn't come--
+That doesn't come &mdash;
 
 723
 00:30:55,610 --> 00:30:56,430
@@ -3478,7 +3478,7 @@ if a brand essentially
 741
 00:31:37,510 --> 00:31:39,640
 was the publisher, or at
-least wanted that to--
+least wanted that to &mdash;
 
 742
 00:31:39,640 --> 00:31:42,150
@@ -3498,7 +3498,7 @@ wanted to show up, and you
 745
 00:31:47,330 --> 00:31:49,130
 list "The New York Times,"
-the "New York Times"--
+the "New York Times" &mdash;
 
 746
 00:31:49,130 --> 00:31:50,180
@@ -3525,7 +3525,7 @@ feature all that much.
 
 751
 00:31:55,210 --> 00:31:57,410
-But I guess--
+But I guess &mdash;
 
 752
 00:31:57,410 --> 00:31:58,940
@@ -3547,12 +3547,12 @@ nuances with it.
 
 756
 00:32:02,510 --> 00:32:03,750
-Because I think part--
+Because I think part &mdash;
 
 757
 00:32:03,750 --> 00:32:06,130
 and don't quote me too heavily
-on this-- part of it is really
+on this &mdash; part of it is really
 
 758
 00:32:06,130 --> 00:32:11,150
@@ -3676,7 +3676,7 @@ hey, here's how we think
 784
 00:33:07,070 --> 00:33:10,610
 you could use our data in
-Google, like, that's how-- the
+Google, like, that's how &mdash; the
 
 785
 00:33:10,610 --> 00:33:13,290
@@ -3799,11 +3799,11 @@ get it all set up.
 811
 00:34:30,510 --> 00:34:33,110
 Now meanwhile, sooner or
-later, one or both--
+later, one or both &mdash;
 
 812
 00:34:33,110 --> 00:34:34,850
-probably both of those two--
+probably both of those two &mdash;
 are going to wake
 
 813
@@ -3839,7 +3839,7 @@ I'm just going to venture my
 
 820
 00:34:50,239 --> 00:34:53,429
-sort of thought-- like, this is
+sort of thought &mdash; like, this is
 not a product definition.
 
 821
@@ -3858,8 +3858,8 @@ you or to that brand.
 
 824
 00:35:01,580 --> 00:35:04,840
-So if I know-- like, the basic
-example-- if the user follows
+So if I know &mdash; like, the basic
+example &mdash; if the user follows
 
 825
 00:35:04,840 --> 00:35:07,120
@@ -3897,7 +3897,7 @@ common as we would like.
 832
 00:35:20,900 --> 00:35:24,110
 But that's kind of the answer,
-understanding--
+understanding &mdash;
 
 833
 00:35:24,110 --> 00:35:26,550
@@ -3931,7 +3931,7 @@ seen brand names that are
 839
 00:35:40,630 --> 00:35:42,570
 claimed in, like, Italy versus
-the United States-- very
+the United States &mdash; very
 
 840
 00:35:42,570 --> 00:35:42,960
@@ -4021,7 +4021,7 @@ Thank you very much.
 
 859
 00:36:28,250 --> 00:36:31,540
-AUDIENCE: Quick question on--
+AUDIENCE: Quick question on &mdash;
 you guys talked about on the
 
 860
@@ -4042,7 +4042,7 @@ searches, et cetera.
 863
 00:36:41,220 --> 00:36:46,110
 Is that going to be included
-in mobile as well, or--
+in mobile as well, or &mdash;
 
 864
 00:36:46,110 --> 00:36:47,500
@@ -4066,7 +4066,7 @@ So we started with desktop.
 868
 00:36:51,770 --> 00:36:55,150
 Like right now, this
-is available--
+is available &mdash;
 
 869
 00:36:55,150 --> 00:36:56,760
@@ -4162,7 +4162,7 @@ with a Google Now like
 
 889
 00:37:43,190 --> 00:37:44,650
-this being the top--
+this being the top &mdash;
 
 890
 00:37:44,650 --> 00:37:45,060

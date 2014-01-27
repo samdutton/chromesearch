@@ -345,7 +345,7 @@ you play with patterns,
 
 80
 00:04:36,840 --> 00:04:38,140
-and there's also play mode--
+and there's also play mode &mdash;
 
 81
 00:04:38,140 --> 00:04:41,020
@@ -944,7 +944,7 @@ in server time.
 207
 00:10:49,840 --> 00:10:52,760
 And the server doesn't really
-care what an event-- what it's
+care what an event &mdash; what it's
 
 208
 00:10:52,760 --> 00:10:54,440
@@ -1073,7 +1073,7 @@ from one track to another.
 
 234
 00:12:13,210 --> 00:12:14,460
-So for example--
+So for example &mdash;
 
 235
 00:12:14,460 --> 00:12:29,990
@@ -2307,7 +2307,7 @@ black box and the audio
 
 500
 00:27:19,160 --> 00:27:21,500
-communities--
+communities &mdash;
 
 501
 00:27:21,500 --> 00:27:25,500
@@ -2513,7 +2513,7 @@ I know.
 546
 00:29:26,360 --> 00:29:31,160
 So this is the screenshot
-I just--
+I just &mdash;
 
 547
 00:29:31,160 --> 00:29:33,530
@@ -2654,12 +2654,12 @@ for that to be a possibility?
 578
 00:31:18,910 --> 00:31:19,490
 XAVIER BARRADE: This
-is one of--
+is one of &mdash;
 
 579
 00:31:19,490 --> 00:31:24,650
 When we work on this project,
-we had lots of things we--
+we had lots of things we &mdash;
 
 580
 00:31:24,650 --> 00:31:27,300
@@ -2695,7 +2695,7 @@ Thank you.
 
 587
 00:31:40,450 --> 00:31:44,420
-AUDIENCE: Second, short--
+AUDIENCE: Second, short &mdash;
 
 588
 00:31:44,420 --> 00:31:47,540
@@ -2761,7 +2761,7 @@ when singing, it's
 
 601
 00:32:26,720 --> 00:32:28,090
-even more--
+even more &mdash;
 
 602
 00:32:28,090 --> 00:32:35,100

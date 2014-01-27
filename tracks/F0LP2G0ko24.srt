@@ -4,7 +4,7 @@
 2
 00:00:09,280 --> 00:00:11,930
 Hello, and welcome to another
-episode of GDL-IL--
+episode of GDL-IL &mdash;
 
 3
 00:00:11,930 --> 00:00:13,210
@@ -162,7 +162,7 @@ bit bigger here, so for the
 35
 00:02:02,690 --> 00:02:05,330
 ones of you that watch
-it afterwards--
+it afterwards &mdash;
 
 36
 00:02:05,330 --> 00:02:08,780
@@ -201,7 +201,7 @@ great source that if you are
 
 44
 00:02:29,700 --> 00:02:35,900
-not aware of-- it's Peter
+not aware of &mdash; it's Peter
 Beverloo blog, and he's one of
 
 45
@@ -294,7 +294,7 @@ next development or project.
 
 63
 00:03:37,510 --> 00:03:39,780
-So this is one source--
+So this is one source &mdash;
 
 64
 00:03:39,780 --> 00:03:41,030
@@ -344,7 +344,7 @@ Chrome Release blog.
 74
 00:04:11,750 --> 00:04:15,300
 So I got this week few questions
-from developers--
+from developers &mdash;
 
 75
 00:04:15,300 --> 00:04:20,300
@@ -363,11 +363,11 @@ being updated every six weeks.
 78
 00:04:25,280 --> 00:04:30,470
 And in this Google Chrome
-Releases blog--
+Releases blog &mdash;
 
 79
 00:04:30,470 --> 00:04:32,460
-this is the URL, of course--
+this is the URL, of course &mdash;
 
 80
 00:04:32,460 --> 00:04:35,740
@@ -459,7 +459,7 @@ I found from time
 
 98
 00:05:27,860 --> 00:05:29,360
-to time quite helpful--
+to time quite helpful &mdash;
 
 99
 00:05:29,360 --> 00:05:32,280
@@ -469,7 +469,7 @@ nevertheless, it's bringing
 100
 00:05:32,280 --> 00:05:36,070
 some new, exciting things
-into your place--
+into your place &mdash;
 
 101
 00:05:36,070 --> 00:05:39,640
@@ -501,7 +501,7 @@ Google ecosystem.
 107
 00:05:53,550 --> 00:05:58,960
 In terms of what happening in
-the past month-- so I had this
+the past month &mdash; so I had this
 
 108
 00:05:58,960 --> 00:06:02,700
@@ -549,7 +549,7 @@ the water if you will.
 117
 00:06:32,800 --> 00:06:35,690
 On Compute Engine,
-quite quickly--
+quite quickly &mdash;
 
 118
 00:06:35,690 --> 00:06:37,290
@@ -588,7 +588,7 @@ on it.
 125
 00:06:54,980 --> 00:06:56,810
 Some very, very interesting
-things--
+things &mdash;
 
 126
 00:06:56,810 --> 00:07:00,370
@@ -638,11 +638,11 @@ and leverage.
 135
 00:07:30,810 --> 00:07:32,875
 And in our specific
-case-- let's jump
+case &mdash; let's jump
 
 136
 00:07:32,875 --> 00:07:34,500
-in to Compute Engine--
+in to Compute Engine &mdash;
 
 137
 00:07:34,500 --> 00:07:38,330
@@ -734,7 +734,7 @@ solution for them.
 
 155
 00:08:32,510 --> 00:08:33,299
-BigQuery--
+BigQuery &mdash;
 
 156
 00:08:33,299 --> 00:08:36,860
@@ -861,7 +861,7 @@ big data with BigQuery.
 181
 00:10:12,072 --> 00:10:14,860
 Last but not least is, of
-course, what I mentioned--
+course, what I mentioned &mdash;
 
 182
 00:10:14,860 --> 00:10:17,440

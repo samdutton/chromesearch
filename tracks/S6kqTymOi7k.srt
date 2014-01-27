@@ -1360,7 +1360,7 @@ you already have a Web-based application that
 
 273
 00:25:00,489 --> 00:25:05,149
-you could migrate? Or if you've-- you had
+you could migrate? Or if you've &mdash; you had
 to start working on an Android app or website
 
 274

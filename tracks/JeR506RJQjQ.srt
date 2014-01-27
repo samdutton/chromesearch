@@ -85,7 +85,7 @@ COLT MCANLIS: Last week.
 
 20
 00:00:41,670 --> 00:00:42,400
-TODD KERPELMAN: Which--
+TODD KERPELMAN: Which &mdash;
 
 21
 00:00:42,400 --> 00:00:43,500
@@ -101,7 +101,7 @@ JOHN MCCUTCHAN: Yes.
 
 24
 00:00:44,150 --> 00:00:44,460
-TODD KERPELMAN: Unfortunately--
+TODD KERPELMAN: Unfortunately &mdash;
 
 25
 00:00:44,460 --> 00:00:44,770
@@ -136,7 +136,7 @@ It was totally the best part.
 
 32
 00:00:56,480 --> 00:00:57,210
-COLT MCANLIS: And There was--
+COLT MCANLIS: And There was &mdash;
 
 33
 00:00:57,210 --> 00:00:59,400
@@ -146,7 +146,7 @@ YouTube actually said
 34
 00:00:59,400 --> 00:01:02,110
 the problem was there was too
-much awesome in it and--
+much awesome in it and &mdash;
 
 35
 00:01:02,110 --> 00:01:03,970
@@ -156,7 +156,7 @@ compress awesome well enough.
 36
 00:01:03,970 --> 00:01:04,480
 COLT MCANLIS: Yeah,
-we don't have--
+we don't have &mdash;
 
 37
 00:01:04,480 --> 00:01:05,420
@@ -197,7 +197,7 @@ email here in a minute.
 45
 00:01:15,380 --> 00:01:17,150
 TODD KERPELMAN: Actually it's
-too bad because we were-- that
+too bad because we were &mdash; that
 
 46
 00:01:17,150 --> 00:01:18,740
@@ -206,8 +206,8 @@ into the interesting
 
 47
 00:01:18,740 --> 00:01:21,140
-discussions and we can--
-we'll bring that back--
+discussions and we can &mdash;
+we'll bring that back &mdash;
 
 48
 00:01:21,140 --> 00:01:22,025
@@ -255,7 +255,7 @@ really can't.
 
 57
 00:01:45,330 --> 00:01:46,020
-That's--
+That's &mdash;
 
 58
 00:01:46,020 --> 00:01:48,690
@@ -302,11 +302,11 @@ changing them or reading them.
 
 67
 00:02:03,540 --> 00:02:04,080
-They were--
+They were &mdash;
 
 68
 00:02:04,080 --> 00:02:04,640
-they eventually--
+they eventually &mdash;
 
 69
 00:02:04,640 --> 00:02:07,440
@@ -315,7 +315,7 @@ around and find delay.
 
 70
 00:02:07,440 --> 00:02:09,840
-And then accuse people-- it's
+And then accuse people &mdash; it's
 like, oh you have too much
 
 71
@@ -343,7 +343,7 @@ WOLFF DOBSON: Well no.
 76
 00:02:17,360 --> 00:02:22,830
 So people, because the
-old Halo had ran--
+old Halo had ran &mdash;
 
 77
 00:02:22,830 --> 00:02:24,830
@@ -352,7 +352,7 @@ people's boxes.
 
 78
 00:02:24,830 --> 00:02:25,870
-Like they had--
+Like they had &mdash;
 
 79
 00:02:25,870 --> 00:02:26,190
@@ -396,7 +396,7 @@ looking terrified.
 
 88
 00:02:36,640 --> 00:02:37,310
-TODD KERPELMAN: That's--
+TODD KERPELMAN: That's &mdash;
 
 89
 00:02:37,310 --> 00:02:38,910
@@ -445,7 +445,7 @@ Well it sort of is.
 
 99
 00:02:50,210 --> 00:02:50,520
-I mean--
+I mean &mdash;
 
 100
 00:02:50,520 --> 00:02:51,200
@@ -705,7 +705,7 @@ those bears.
 155
 00:04:26,500 --> 00:04:27,490
 TODD KERPELMAN: The
-bears are--
+bears are &mdash;
 
 156
 00:04:27,490 --> 00:04:29,910
@@ -714,7 +714,7 @@ lose on the internet.
 
 157
 00:04:29,910 --> 00:04:31,660
-TODD KERPELMAN: They--
+TODD KERPELMAN: They &mdash;
 
 158
 00:04:31,660 --> 00:04:33,550
@@ -746,7 +746,7 @@ and I have no defense against
 
 164
 00:04:39,180 --> 00:04:39,690
-them beyond--
+them beyond &mdash;
 
 165
 00:04:39,690 --> 00:04:40,230
@@ -803,7 +803,7 @@ TODD KERPELMAN: Yeah.
 176
 00:05:03,400 --> 00:05:06,490
 I think that's really you're
-only-- especially in
+only &mdash; especially in
 
 177
 00:05:06,490 --> 00:05:10,450
@@ -890,7 +890,7 @@ the broadcast, was
 
 194
 00:05:47,680 --> 00:05:51,035
-one, if you look at--
+one, if you look at &mdash;
 
 195
 00:05:51,035 --> 00:05:52,760
@@ -903,7 +903,7 @@ Space Camp.
 197
 00:05:53,770 --> 00:05:56,380
 If you look at Space Camp
-and whenever which--
+and whenever which &mdash;
 
 198
 00:05:56,380 --> 00:05:58,660
@@ -960,7 +960,7 @@ who have done that level.
 209
 00:06:18,810 --> 00:06:24,100
 And what it does is it gives
-you a chance to--
+you a chance to &mdash;
 
 210
 00:06:24,100 --> 00:06:26,030
@@ -1005,15 +1005,15 @@ you this histogram.
 219
 00:06:36,460 --> 00:06:38,530
 And the histogram
-allows you to--
+allows you to &mdash;
 
 220
 00:06:38,530 --> 00:06:40,720
-OK, we probably--
+OK, we probably &mdash;
 
 221
 00:06:40,720 --> 00:06:41,620
-can we--
+can we &mdash;
 
 222
 00:06:41,620 --> 00:06:42,630
@@ -1166,7 +1166,7 @@ you've got one guy, life Colt,
 
 255
 00:07:31,300 --> 00:07:32,680
-that's at the top who--
+that's at the top who &mdash;
 
 256
 00:07:32,680 --> 00:07:33,130
@@ -1239,7 +1239,7 @@ is not the best
 
 272
 00:07:50,350 --> 00:07:51,570
-at some games but--
+at some games but &mdash;
 
 273
 00:07:51,570 --> 00:07:53,670
@@ -1279,12 +1279,12 @@ that were pushing on the
 280
 00:08:13,400 --> 00:08:15,750
 arcades in the '80s
-and '90s that--
+and '90s that &mdash;
 
 281
 00:08:15,750 --> 00:08:17,640
 where people want to
-play and gather--
+play and gather &mdash;
 
 282
 00:08:17,640 --> 00:08:20,080
@@ -1312,7 +1312,7 @@ playing this game?
 
 287
 00:08:27,820 --> 00:08:30,450
-But when it was-- you'd go down
+But when it was &mdash; you'd go down
 there and you'd see seven
 
 288
@@ -1337,7 +1337,7 @@ that you could beat.
 292
 00:08:39,450 --> 00:08:40,530
 But as soon as there
-was this other--
+was this other &mdash;
 
 293
 00:08:40,530 --> 00:08:41,760
@@ -1408,7 +1408,7 @@ let's move on.
 
 308
 00:09:01,770 --> 00:09:02,670
-Let's--
+Let's &mdash;
 
 309
 00:09:02,670 --> 00:09:04,500
@@ -1454,7 +1454,7 @@ guess, not so much a game
 
 318
 00:09:21,930 --> 00:09:23,570
-itself as a--
+itself as a &mdash;
 
 319
 00:09:23,570 --> 00:09:26,470
@@ -1476,7 +1476,7 @@ that goes with it too.
 
 323
 00:09:30,710 --> 00:09:31,760
-Where they--
+Where they &mdash;
 
 324
 00:09:31,760 --> 00:09:35,260
@@ -1563,7 +1563,7 @@ more features.
 341
 00:10:13,710 --> 00:10:17,770
 And you get cool custom tiles
-and stuff if you--
+and stuff if you &mdash;
 
 342
 00:10:17,770 --> 00:10:19,770
@@ -1586,7 +1586,7 @@ RPGs is sort of silly.
 
 346
 00:10:28,800 --> 00:10:31,330
-To be like, I have a plus--
+To be like, I have a plus &mdash;
 
 347
 00:10:31,330 --> 00:10:31,900
@@ -1720,7 +1720,7 @@ developers coming out on
 
 376
 00:11:34,070 --> 00:11:36,380
-Kickstarter and asking for--
+Kickstarter and asking for &mdash;
 
 377
 00:11:36,380 --> 00:11:38,300
@@ -1900,7 +1900,7 @@ Suit Larry using Kickstarter.
 414
 00:12:54,160 --> 00:12:55,670
 COLT MCANLIS: So, but I
-mean, do you think--
+mean, do you think &mdash;
 
 415
 00:12:55,670 --> 00:12:57,550
@@ -1924,7 +1924,7 @@ of pledged to you ahead
 419
 00:13:04,050 --> 00:13:07,250
 of time and then you're
-kind of given this--
+kind of given this &mdash;
 
 420
 00:13:07,250 --> 00:13:09,090
@@ -1962,13 +1962,13 @@ going to do it.
 
 427
 00:13:21,210 --> 00:13:24,510
-You don't get a-- it's not like
+You don't get a &mdash; it's not like
 having a VC-funded system
 
 428
 00:13:24,510 --> 00:13:27,050
 where you get some dude sitting
-in you cubicle--
+in you cubicle &mdash;
 
 429
 00:13:27,050 --> 00:13:27,930
@@ -2039,7 +2039,7 @@ And avoid the risk.
 444
 00:13:53,300 --> 00:13:54,050
 WOLFF DOBSON: Well
-when I was--
+when I was &mdash;
 
 445
 00:13:54,050 --> 00:13:56,080
@@ -2106,7 +2106,7 @@ JOHN MCCUTCHAN: Check us out.
 
 460
 00:14:18,400 --> 00:14:19,950
-TODD KERPELMAN: I guess I--
+TODD KERPELMAN: I guess I &mdash;
 
 461
 00:14:19,950 --> 00:14:22,500
@@ -2365,7 +2365,7 @@ problem, right.
 
 516
 00:16:22,040 --> 00:16:22,510
-Of like--
+Of like &mdash;
 
 517
 00:16:22,510 --> 00:16:23,100
@@ -2555,7 +2555,7 @@ before it becomes relevant to
 
 557
 00:17:40,380 --> 00:17:41,360
-large publishers--
+large publishers &mdash;
 
 558
 00:17:41,360 --> 00:17:42,700
@@ -2564,7 +2564,7 @@ if we're talking about
 
 559
 00:17:42,700 --> 00:17:45,060
-the OUYA specifically, or--
+the OUYA specifically, or &mdash;
 
 560
 00:17:45,060 --> 00:17:46,760
@@ -2577,7 +2577,7 @@ it was oooya.
 
 562
 00:17:47,320 --> 00:17:48,290
-I mean, you know--
+I mean, you know &mdash;
 
 563
 00:17:48,290 --> 00:17:50,480
@@ -2612,12 +2612,12 @@ Yeah.
 
 570
 00:18:00,700 --> 00:18:01,190
-TODD KERPELMAN: And you--
+TODD KERPELMAN: And you &mdash;
 
 571
 00:18:01,190 --> 00:18:05,390
 to take advantage of the new
-interface and the actual--
+interface and the actual &mdash;
 
 572
 00:18:05,390 --> 00:18:05,840
@@ -2658,12 +2658,12 @@ thing I will say about
 580
 00:18:18,850 --> 00:18:20,540
 Kickstarter is that I think
-it's interesting that--
+it's interesting that &mdash;
 
 581
 00:18:20,540 --> 00:18:22,770
 and maybe it's just because this
-is all the news I read--
+is all the news I read &mdash;
 
 582
 00:18:22,770 --> 00:18:26,920
@@ -2750,7 +2750,7 @@ WOLFF DOBSON: Yes.
 600
 00:18:57,640 --> 00:18:59,510
 I can tell a story where
-I there was--
+I there was &mdash;
 
 601
 00:18:59,510 --> 00:19:03,800
@@ -2799,7 +2799,7 @@ for MC Frontalot.
 
 611
 00:19:24,290 --> 00:19:25,780
-I was like, I want--
+I was like, I want &mdash;
 
 612
 00:19:25,780 --> 00:19:28,430
@@ -2827,7 +2827,7 @@ And it was really fun.
 617
 00:19:37,770 --> 00:19:39,760
 I was really tempted
-to do the--
+to do the &mdash;
 
 618
 00:19:39,760 --> 00:19:42,340
@@ -2886,11 +2886,11 @@ MC Frontalot is great.
 630
 00:19:55,550 --> 00:19:58,480
 And actually I don't know if
-you guys remember-- this is
+you guys remember &mdash; this is
 
 631
 00:19:58,480 --> 00:20:00,460
-going to date me a little bit--
+going to date me a little bit &mdash;
 there's a game called
 
 632
@@ -2950,11 +2950,11 @@ because we were high school
 
 644
 00:20:23,626 --> 00:20:25,930
-and college students--
+and college students &mdash;
 
 645
 00:20:25,930 --> 00:20:26,480
-and--
+and &mdash;
 
 646
 00:20:26,480 --> 00:20:27,930
@@ -2969,7 +2969,7 @@ here's the thing.
 648
 00:20:28,820 --> 00:20:30,810
 So I felt really guilty about
-it because I had so much--
+it because I had so much &mdash;
 
 649
 00:20:30,810 --> 00:20:31,390
@@ -3194,7 +3194,7 @@ TODD KERPELMAN: We do.
 698
 00:21:51,950 --> 00:21:55,140
 And I think, depending on how
-long we want to run--
+long we want to run &mdash;
 
 699
 00:21:55,140 --> 00:21:57,970
@@ -3213,7 +3213,7 @@ that guy over there?
 702
 00:21:59,310 --> 00:22:00,365
 TODD KERPELMAN: We
-left it vague--
+left it vague &mdash;
 
 703
 00:22:00,365 --> 00:22:00,840
@@ -3246,12 +3246,12 @@ COLT MCANLIS: OK.
 709
 00:22:06,210 --> 00:22:07,570
 WOLFF DOBSON: I want
-to talk about--
+to talk about &mdash;
 
 710
 00:22:07,570 --> 00:22:11,200
 I just want on vacation with
-my Nexus 7, and I--
+my Nexus 7, and I &mdash;
 
 711
 00:22:11,200 --> 00:22:11,645
@@ -3272,7 +3272,7 @@ that's right.
 
 715
 00:22:13,270 --> 00:22:14,290
-WOLFF DOBSON: That--
+WOLFF DOBSON: That &mdash;
 
 716
 00:22:14,290 --> 00:22:15,660
@@ -3316,7 +3316,7 @@ WiFi in Alaska.
 
 725
 00:22:28,010 --> 00:22:29,240
-But once--
+But once &mdash;
 
 726
 00:22:29,240 --> 00:22:33,200
@@ -3454,12 +3454,12 @@ you want.
 755
 00:23:33,010 --> 00:23:36,580
 But instead I'm going to micro
-payment my way to--
+payment my way to &mdash;
 
 756
 00:23:36,580 --> 00:23:38,220
 JOHN MCCUTCHAN: So is that
-game available on--
+game available on &mdash;
 
 757
 00:23:38,220 --> 00:23:39,710
@@ -3494,7 +3494,7 @@ It's really great.
 
 764
 00:23:44,800 --> 00:23:47,206
-I would-- ooh, I haven't
+I would &mdash; ooh, I haven't
 plus one'd yet.
 
 765
@@ -3699,7 +3699,7 @@ high school.
 
 809
 00:24:49,780 --> 00:24:50,500
-I don't want to--
+I don't want to &mdash;
 
 810
 00:24:50,500 --> 00:24:51,000
@@ -3804,7 +3804,7 @@ I also played 100 Floors.
 
 833
 00:25:15,070 --> 00:25:15,970
-That sort of--
+That sort of &mdash;
 
 834
 00:25:15,970 --> 00:25:18,650
@@ -3858,7 +3858,7 @@ figure it out.
 
 845
 00:25:37,080 --> 00:25:37,700
-Sometimes--
+Sometimes &mdash;
 
 846
 00:25:37,700 --> 00:25:39,460
@@ -3872,7 +3872,7 @@ and you don't really
 
 848
 00:25:41,250 --> 00:25:43,500
-know-- each time you look at,
+know &mdash; each time you look at,
 what am I going to do?
 
 849
@@ -3889,7 +3889,7 @@ Is there a code?
 
 852
 00:25:47,480 --> 00:25:49,020
-And they're--
+And they're &mdash;
 
 853
 00:25:49,020 --> 00:25:50,430
@@ -3946,7 +3946,7 @@ WOLFF DOBSON: No.
 
 865
 00:26:05,130 --> 00:26:06,110
-JOHN MCCUTCHAN: Speaking of--
+JOHN MCCUTCHAN: Speaking of &mdash;
 
 866
 00:26:06,110 --> 00:26:07,180
@@ -3991,7 +3991,7 @@ WOLFF DOBSON: That was fun.
 
 875
 00:26:16,050 --> 00:26:16,980
-JOHN MCCUTCHAN: I wish that--
+JOHN MCCUTCHAN: I wish that &mdash;
 
 876
 00:26:16,980 --> 00:26:19,120
@@ -4005,7 +4005,7 @@ Capcom to make a sequel.
 878
 00:26:23,010 --> 00:26:24,920
 COLT MCANLIS: I'll put up
-the post-Kickstarter--
+the post-Kickstarter &mdash;
 
 879
 00:26:24,920 --> 00:26:25,270
@@ -4157,7 +4157,7 @@ into Team Fortress 2.
 
 911
 00:27:20,490 --> 00:27:21,540
-I thought it was a really--
+I thought it was a really &mdash;
 
 912
 00:27:21,540 --> 00:27:22,540
@@ -4188,7 +4188,7 @@ we've seen at the time.
 
 918
 00:27:30,890 --> 00:27:33,490
-We're starting-- there was
+We're starting &mdash; there was
 kind of that period where
 
 919
@@ -4229,7 +4229,7 @@ getting back into it.
 
 927
 00:27:50,040 --> 00:27:50,810
-I'm just--
+I'm just &mdash;
 
 928
 00:27:50,810 --> 00:27:51,910
@@ -4303,7 +4303,7 @@ COLT MCANLIS: Yeah.
 944
 00:28:14,870 --> 00:28:16,210
 WOLFF DOBSON: And it
-really-- it's--
+really &mdash; it's &mdash;
 
 945
 00:28:16,210 --> 00:28:19,370
@@ -4358,7 +4358,7 @@ their Sunday best all walking
 956
 00:28:37,060 --> 00:28:39,070
 through each other and giving
-each other these-- what are
+each other these &mdash; what are
 
 957
 00:28:39,070 --> 00:28:40,490
@@ -4416,7 +4416,7 @@ that's right.
 
 969
 00:28:57,990 --> 00:28:59,560
-You have the new--
+You have the new &mdash;
 
 970
 00:28:59,560 --> 00:29:00,960
@@ -4433,7 +4433,7 @@ TODD KERPELMAN: Yeah.
 
 973
 00:29:03,000 --> 00:29:03,880
-I don't remember--
+I don't remember &mdash;
 
 974
 00:29:03,880 --> 00:29:05,320
@@ -4492,7 +4492,7 @@ don't mess up.
 
 986
 00:29:20,270 --> 00:29:21,330
-I did--
+I did &mdash;
 
 987
 00:29:21,330 --> 00:29:26,080
@@ -4501,7 +4501,7 @@ finally, I defeated Diablo my
 
 988
 00:29:26,080 --> 00:29:27,380
-first run through on--
+first run through on &mdash;
 
 989
 00:29:27,380 --> 00:29:27,910
@@ -4576,7 +4576,7 @@ now installed Skyrim.
 
 1005
 00:29:51,410 --> 00:29:53,030
-And I think I played--
+And I think I played &mdash;
 
 1006
 00:29:53,030 --> 00:29:55,160
@@ -4628,7 +4628,7 @@ versions of the
 1016
 00:30:15,750 --> 00:30:19,480
 eyebrow variation mod
-and I start to--
+and I start to &mdash;
 
 1017
 00:30:19,480 --> 00:30:20,960
@@ -4684,7 +4684,7 @@ moonwalk in that game?
 1028
 00:30:44,040 --> 00:30:45,410
 WOLFF DOBSON: That character
-would have been able to--
+would have been able to &mdash;
 
 1029
 00:30:45,410 --> 00:30:47,380
@@ -4721,7 +4721,7 @@ Skyrim, and all these.
 
 1036
 00:31:03,820 --> 00:31:04,030
-There's--
+There's &mdash;
 
 1037
 00:31:04,030 --> 00:31:04,740
@@ -4883,7 +4883,7 @@ So we've got a few questions.
 1072
 00:32:00,450 --> 00:32:03,220
 And the first one is,
-[INAUDIBLE]--
+[INAUDIBLE] &mdash;
 
 1073
 00:32:03,220 --> 00:32:03,350
@@ -4913,7 +4913,7 @@ maybe I should reload and make
 
 1079
 00:32:08,830 --> 00:32:10,000
-sure that--
+sure that &mdash;
 
 1080
 00:32:10,000 --> 00:32:10,910
@@ -4927,7 +4927,7 @@ not a question.
 
 1082
 00:32:12,230 --> 00:32:13,670
-Because--
+Because &mdash;
 
 1083
 00:32:13,670 --> 00:32:14,850
@@ -4935,7 +4935,7 @@ Because--
 
 1084
 00:32:14,850 --> 00:32:15,160
-That's--
+That's &mdash;
 
 1085
 00:32:15,160 --> 00:32:16,570
@@ -5042,7 +5042,7 @@ basically created games
 1107
 00:33:06,210 --> 00:33:08,500
 from scratch on mobile devices
-that were actually--
+that were actually &mdash;
 
 1108
 00:33:08,500 --> 00:33:13,570
@@ -5085,7 +5085,7 @@ multiple devices.
 
 1116
 00:33:31,100 --> 00:33:31,510
-Even though--
+Even though &mdash;
 
 1117
 00:33:31,510 --> 00:33:33,960
@@ -5127,7 +5127,7 @@ ports that way
 
 1125
 00:33:50,360 --> 00:33:53,140
-sometimes can be--
+sometimes can be &mdash;
 
 1126
 00:33:53,140 --> 00:33:55,840
@@ -5169,7 +5169,7 @@ would totally help.
 1134
 00:34:09,370 --> 00:34:12,860
 And did I hear that the
-standard has been--
+standard has been &mdash;
 
 1135
 00:34:12,860 --> 00:34:14,570
@@ -5198,7 +5198,7 @@ JOHN MCCUTCHAN: Cool.
 
 1141
 00:34:16,940 --> 00:34:19,050
-TODD KERPELMAN: That-- so what
+TODD KERPELMAN: That &mdash; so what
 that actually means is that
 
 1142
@@ -5231,7 +5231,7 @@ authoritative.
 
 1148
 00:34:30,090 --> 00:34:30,719
-Is that--
+Is that &mdash;
 
 1149
 00:34:30,719 --> 00:34:31,400
@@ -5253,7 +5253,7 @@ not inversion 16 or 21.
 1153
 00:34:38,655 --> 00:34:39,030
 COLT MCANLIS: Oh, you
-got to update your--
+got to update your &mdash;
 
 1154
 00:34:39,030 --> 00:34:39,429
@@ -5332,7 +5332,7 @@ we don't really feel
 
 1170
 00:35:09,110 --> 00:35:11,520
-that there's-- so Chrome Web
+that there's &mdash; so Chrome Web
 Store is a consumer driven
 
 1171
@@ -5355,7 +5355,7 @@ something along those lines.
 
 1175
 00:35:18,810 --> 00:35:20,665
-They're not really looking for--
+They're not really looking for &mdash;
 hey, show me the best
 
 1176
@@ -5436,7 +5436,7 @@ You should go check them out.
 
 1193
 00:35:48,100 --> 00:35:48,390
-And--
+And &mdash;
 
 1194
 00:35:48,390 --> 00:35:49,650
@@ -5473,7 +5473,7 @@ TODD KERPELMAN: Let's see.
 1201
 00:36:00,420 --> 00:36:02,950
 I'm actually going to skip
-down to-- someone had a--
+down to &mdash; someone had a &mdash;
 
 1202
 00:36:02,950 --> 00:36:05,360
@@ -5588,7 +5588,7 @@ timeouts and other stuff.
 
 1227
 00:36:49,180 --> 00:36:52,090
-But still it's--
+But still it's &mdash;
 
 1228
 00:36:52,090 --> 00:36:54,030
@@ -5632,7 +5632,7 @@ TODD KERPELMAN: Yeah.
 
 1237
 00:37:04,380 --> 00:37:05,020
-I--
+I &mdash;
 
 1238
 00:37:05,020 --> 00:37:06,750
@@ -5680,7 +5680,7 @@ like it's a lie.
 
 1247
 00:37:28,080 --> 00:37:28,540
-And--
+And &mdash;
 
 1248
 00:37:28,540 --> 00:37:29,680
@@ -5699,7 +5699,7 @@ just teleported.
 
 1251
 00:37:33,960 --> 00:37:36,750
-This-- if you ever Pirateer
+This &mdash; if you ever Pirateer
 the board game, it was
 
 1252
@@ -5765,7 +5765,7 @@ things like that.
 1265
 00:38:02,440 --> 00:38:06,160
 It's a little bit like
-the way the--
+the way the &mdash;
 
 1266
 00:38:06,160 --> 00:38:08,830
@@ -5818,7 +5818,7 @@ with this person.
 1276
 00:38:32,820 --> 00:38:34,600
 And then if somebody gets
-too many of these--
+too many of these &mdash;
 
 1277
 00:38:34,600 --> 00:38:37,130
@@ -5857,7 +5857,7 @@ COLT MCANLIS: Yeah.
 1284
 00:38:48,890 --> 00:38:50,240
 You're too awesome
-at this game--
+at this game &mdash;
 
 1285
 00:38:50,240 --> 00:38:51,170
@@ -5913,7 +5913,7 @@ you'd be cutting off a lot of
 1296
 00:39:15,510 --> 00:39:18,090
 interesting games in the
-process, just by--
+process, just by &mdash;
 
 1297
 00:39:18,090 --> 00:39:19,670
@@ -6011,7 +6011,7 @@ COLT MCANLIS: Visual Studio.
 
 1318
 00:39:56,970 --> 00:39:58,650
-TODD KERPELMAN: Clarify for--
+TODD KERPELMAN: Clarify for &mdash;
 people wouldn't think it was
 
 1319
@@ -6142,7 +6142,7 @@ two years ago.
 
 1347
 00:40:45,370 --> 00:40:47,130
-Demon's Souls and Dark Souls--
+Demon's Souls and Dark Souls &mdash;
 
 1348
 00:40:47,130 --> 00:40:48,325
@@ -6196,7 +6196,7 @@ trying to figure out how
 
 1359
 00:41:10,500 --> 00:41:11,250
-to build a--
+to build a &mdash;
 
 1360
 00:41:11,250 --> 00:41:14,230
@@ -6219,7 +6219,7 @@ broad appeal games
 
 1364
 00:41:22,580 --> 00:41:23,960
-like Mass Effect where--
+like Mass Effect where &mdash;
 
 1365
 00:41:23,960 --> 00:41:27,150
@@ -6288,7 +6288,7 @@ ending to Mass Effect.
 1378
 00:41:50,700 --> 00:41:53,000
 JOHN MCCUTCHAN: I can
-really share the--
+really share the &mdash;
 
 1379
 00:41:53,000 --> 00:41:55,650
@@ -6377,12 +6377,12 @@ JOHN MCCUTCHAN: Yes.
 1398
 00:42:25,310 --> 00:42:26,150
 WOLFF DOBSON: It doesn't
-pull your entire--
+pull your entire &mdash;
 
 1399
 00:42:26,150 --> 00:42:27,690
 JOHN MCCUTCHAN: And, I mean,
-right now you could--
+right now you could &mdash;
 
 1400
 00:42:27,690 --> 00:42:32,730
@@ -6433,7 +6433,7 @@ cartridges was too difficult.
 
 1410
 00:42:54,670 --> 00:42:56,630
-And so having--
+And so having &mdash;
 
 1411
 00:42:56,630 --> 00:43:00,170
@@ -6467,7 +6467,7 @@ all the puzzles.
 1417
 00:43:09,070 --> 00:43:10,750
 I was sort of like, I
-don't know how I--
+don't know how I &mdash;
 
 1418
 00:43:10,750 --> 00:43:11,270
@@ -6577,7 +6577,7 @@ COLT MCANLIS: Three weeks.
 
 1443
 00:43:32,810 --> 00:43:33,440
-I didn't turn the Wii off--
+I didn't turn the Wii off &mdash;
 
 1444
 00:43:33,440 --> 00:43:34,000
@@ -6613,7 +6613,7 @@ the clock is ticking.
 
 1451
 00:43:43,360 --> 00:43:43,890
-WOLFF DOBSON: It is--
+WOLFF DOBSON: It is &mdash;
 
 1452
 00:43:43,890 --> 00:43:45,120
@@ -6653,7 +6653,7 @@ Hardest game ever.
 
 1460
 00:43:55,130 --> 00:43:55,190
-WOLFF DOBSON: But the--
+WOLFF DOBSON: But the &mdash;
 
 1461
 00:43:55,190 --> 00:43:58,150
@@ -6795,7 +6795,7 @@ a core audience game.
 1491
 00:44:53,400 --> 00:44:55,600
 Who is looking for
-that kind of--
+that kind of &mdash;
 
 1492
 00:44:55,600 --> 00:44:56,890
@@ -6808,7 +6808,7 @@ airplanes, right?
 
 1494
 00:44:57,900 --> 00:44:59,092
-I mean,--
+I mean, &mdash;
 
 1495
 00:44:59,092 --> 00:44:59,490
@@ -6832,7 +6832,7 @@ suits.
 1499
 00:45:06,170 --> 00:45:07,120
 WOLFF DOBSON: Just that
-somebody's looking--
+somebody's looking &mdash;
 
 1500
 00:45:07,120 --> 00:45:08,530
@@ -6937,12 +6937,12 @@ level multiple times.
 
 1521
 00:45:55,490 --> 00:45:56,620
-JOHN MCCUTCHAN: I think--
+JOHN MCCUTCHAN: I think &mdash;
 
 1522
 00:45:56,620 --> 00:46:00,120
 I forget which games on the Wii
-did this, but they had a--
+did this, but they had a &mdash;
 
 1523
 00:46:00,120 --> 00:46:02,420
@@ -7055,7 +7055,7 @@ say I like easy.
 1547
 00:46:34,890 --> 00:46:36,884
 I just like being able to make
-it through without having to--
+it through without having to &mdash;
 
 1548
 00:46:36,884 --> 00:46:37,356
@@ -7192,7 +7192,7 @@ too hard or they're
 
 1577
 00:47:17,640 --> 00:47:18,705
-too easy, you should--
+too easy, you should &mdash;
 
 1578
 00:47:18,705 --> 00:47:19,300

@@ -84,7 +84,7 @@ talking about mobile web UX?
 19
 00:00:41,540 --> 00:00:43,892
 Well, I always used to
-have this impression of--
+have this impression of &mdash;
 
 20
 00:00:43,892 --> 00:00:47,410
@@ -141,7 +141,7 @@ as well for the mobile context
 
 31
 00:01:12,040 --> 00:01:14,400
-because-- I don't need to
+because &mdash; I don't need to
 tell you guys all about this.
 
 32
@@ -304,7 +304,7 @@ the BBC, Yahoo.
 64
 00:02:29,950 --> 00:02:31,915
 Everyone is building
-these kind of-- everyone
+these kind of &mdash; everyone
 
 65
 00:02:31,915 --> 00:02:33,680
@@ -357,7 +357,7 @@ and card-based interfaces.
 
 75
 00:02:54,590 --> 00:02:58,370
-But I look at the-- well, the
+But I look at the &mdash; well, the
 top 1,000 sites, originally.
 
 76
@@ -545,12 +545,12 @@ in the top 1,000 sites.
 114
 00:04:18,242 --> 00:04:20,200
 And we found that a whole
-bunch of developers--
+bunch of developers &mdash;
 
 115
 00:04:20,200 --> 00:04:23,090
 I think it was actually
-65% of users, sorry--
+65% of users, sorry &mdash;
 
 116
 00:04:23,090 --> 00:04:25,732
@@ -580,7 +580,7 @@ areas on the screen.
 121
 00:04:34,480 --> 00:04:38,054
 Now, quite a lot of these sites
-were-- just maybe one or two
+were &mdash; just maybe one or two
 
 122
 00:04:38,054 --> 00:04:39,720
@@ -802,7 +802,7 @@ as a web developer.
 167
 00:06:10,450 --> 00:06:12,690
 And this tool is
-kind of-- the tool
+kind of &mdash; the tool
 
 168
 00:06:12,690 --> 00:06:15,390
@@ -944,7 +944,7 @@ or critical and other
 196
 00:07:16,560 --> 00:07:20,370
 types of things that you, as
-developers, can understand--
+developers, can understand &mdash;
 
 197
 00:07:20,370 --> 00:07:22,540
@@ -1101,11 +1101,11 @@ every single piece
 230
 00:08:35,130 --> 00:08:36,620
 of text on the web
-page-- I'll just
+page &mdash; I'll just
 
 231
 00:08:36,620 --> 00:08:40,650
-zoom in a little bit-- which
+zoom in a little bit &mdash; which
 doesn't render clearly,
 
 232
@@ -1180,7 +1180,7 @@ identify that pretty quickly.
 
 247
 00:09:08,880 --> 00:09:12,282
-The really nice thing-- and I
+The really nice thing &mdash; and I
 think it's there in the API.
 
 248
@@ -1305,8 +1305,8 @@ is too small.
 
 273
 00:10:07,410 --> 00:10:10,190
-It's actually-- I don't
-know whether it was a-- oh.
+It's actually &mdash; I don't
+know whether it was a &mdash; oh.
 
 274
 00:10:10,190 --> 00:10:13,310
@@ -1322,7 +1322,7 @@ Do it again.
 277
 00:10:16,070 --> 00:10:18,490
 It's actually identified the
-fact that it's-- and this is
+fact that it's &mdash; and this is
 
 278
 00:10:18,490 --> 00:10:19,740
@@ -1448,11 +1448,11 @@ is sized incorrectly.
 303
 00:11:11,160 --> 00:11:13,140
 But what this is
-trying to say is--
+trying to say is &mdash;
 
 304
 00:11:13,140 --> 00:11:16,080
-this is the critical area here--
+this is the critical area here &mdash;
 that the actual physical size
 
 305
@@ -1484,8 +1484,8 @@ means is if the content
 
 311
 00:11:30,350 --> 00:11:32,380
-busts outside the viewport--
-it's too big for the viewport--
+busts outside the viewport &mdash;
+it's too big for the viewport &mdash;
 
 312
 00:11:32,380 --> 00:11:34,000
@@ -1596,7 +1596,7 @@ instances where there's
 
 334
 00:12:19,980 --> 00:12:23,800
-bugs for-- tap target
+bugs for &mdash; tap target
 menus across the top
 
 335
@@ -1856,7 +1856,7 @@ on a viewport configured page.
 388
 00:14:18,560 --> 00:14:20,370
 And as you see on
-the right-- it's
+the right &mdash; it's
 
 389
 00:14:20,370 --> 00:14:21,410
@@ -2229,12 +2229,12 @@ to platform.
 
 466
 00:17:02,410 --> 00:17:04,190
-And iOS, at one point--
+And iOS, at one point &mdash;
 I think it probably still
 
 467
 00:17:04,190 --> 00:17:05,650
-does-- used to
+does &mdash; used to
 have a scroll lock.
 
 468
@@ -2513,7 +2513,7 @@ because we went from 17 media
 
 525
 00:19:05,640 --> 00:19:08,156
-queries-- our media queries
+queries &mdash; our media queries
 for the HTML5Rocks site, if you
 
 526
@@ -2534,7 +2534,7 @@ this weird situation
 529
 00:19:14,401 --> 00:19:16,120
 when it doesn't
-actually-- we've got
+actually &mdash; we've got
 
 530
 00:19:16,120 --> 00:19:17,940
@@ -2614,7 +2614,7 @@ beautiful your typography is.
 
 546
 00:19:50,460 --> 00:19:52,490
-And this kind of is--
+And this kind of is &mdash;
 it's ultimately applicable
 
 547
@@ -2753,7 +2753,7 @@ the PageSpeed Insights tool.
 
 574
 00:20:56,950 --> 00:20:59,520
-We also want to kind of--
+We also want to kind of &mdash;
 we don't check for this,
 
 575
@@ -2774,12 +2774,12 @@ exist either in the cache
 578
 00:21:06,355 --> 00:21:09,030
 or on the user's device,
-then essentially-- especially
+then essentially &mdash; especially
 
 579
 00:21:09,030 --> 00:21:11,517
 on WebKit-based browsers
-and Blink-based browsers--
+and Blink-based browsers &mdash;
 
 580
 00:21:11,517 --> 00:21:14,100
@@ -2798,7 +2798,7 @@ on the site at the time.
 583
 00:21:19,152 --> 00:21:20,860
 And our guidance at
-the moment-- and this
+the moment &mdash; and this
 
 584
 00:21:20,860 --> 00:21:23,020
@@ -2807,13 +2807,13 @@ implementations change,
 
 585
 00:21:23,020 --> 00:21:25,170
-essentially-- is just
+essentially &mdash; is just
 to use it for headings.
 
 586
 00:21:25,170 --> 00:21:26,880
 But critical content,
-like the text--
+like the text &mdash;
 
 587
 00:21:26,880 --> 00:21:29,970
@@ -2965,7 +2965,7 @@ is really important,
 617
 00:22:32,710 --> 00:22:36,190
 because essentially the
-user-- this is Chrome.
+user &mdash; this is Chrome.
 
 618
 00:22:36,190 --> 00:22:38,223
@@ -3199,7 +3199,7 @@ millimeters worth of padding.
 666
 00:24:14,450 --> 00:24:17,830
 And that helps the disambiguator
-not have to reselect which--
+not have to reselect which &mdash;
 
 667
 00:24:17,830 --> 00:24:20,136
@@ -3349,7 +3349,7 @@ missing my flight.
 698
 00:25:16,970 --> 00:25:19,850
 And it wasn't me who
-missed the-- anyway, it's
+missed the &mdash; anyway, it's
 
 699
 00:25:19,850 --> 00:25:22,180
@@ -3363,8 +3363,8 @@ click delay is this thing
 
 701
 00:25:24,750 --> 00:25:28,780
-to help us kind of--
-oops, sorry-- get the user
+to help us kind of &mdash;
+oops, sorry &mdash; get the user
 
 702
 00:25:28,780 --> 00:25:32,090
@@ -3546,7 +3546,7 @@ to load your page, the
 
 741
 00:26:49,870 --> 00:26:52,130
-that you get is not--
+that you get is not &mdash;
 you've got bigger fish
 
 742
@@ -3585,7 +3585,7 @@ check box, or in this case
 
 749
 00:27:07,630 --> 00:27:10,259
-it's a link-- you click anything
+it's a link &mdash; you click anything
 that has a click handler,
 
 750
@@ -3612,13 +3612,13 @@ It's not killed for everything.
 
 755
 00:27:18,360 --> 00:27:20,390
-The simple answer--
+The simple answer &mdash;
 and it relates
 
 756
 00:27:20,390 --> 00:27:23,030
 to one of the very first
-slides, user viewport--
+slides, user viewport &mdash;
 
 757
 00:27:23,030 --> 00:27:24,760
@@ -3736,8 +3736,8 @@ on mobile devices.
 
 781
 00:28:09,069 --> 00:28:11,110
-If it's an email address--
-say it's, type email--
+If it's an email address &mdash;
+say it's, type email &mdash;
 
 782
 00:28:11,110 --> 00:28:12,340
@@ -3746,11 +3746,11 @@ you'll get an at sign.
 783
 00:28:12,340 --> 00:28:14,459
 If it's a date or a
-number-- so if it's
+number &mdash; so if it's
 
 784
 00:28:14,459 --> 00:28:16,500
-a telephone number-- say
+a telephone number &mdash; say
 it's a telephone number,
 
 785

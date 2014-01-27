@@ -36,7 +36,7 @@ Chrome for Android.
 9
 00:00:43,510 --> 00:00:45,490
 And I'd like to introduce
-Pete LePage, who is--
+Pete LePage, who is &mdash;
 
 10
 00:00:45,490 --> 00:00:48,490
@@ -378,7 +378,7 @@ making those connections,
 
 82
 00:03:40,870 --> 00:03:42,990
-we're using the new--
+we're using the new &mdash;
 
 83
 00:03:42,990 --> 00:03:45,840
@@ -387,7 +387,7 @@ new, but the speedy
 
 84
 00:03:45,840 --> 00:03:49,660
-connections, as well as the--
+connections, as well as the &mdash;
 
 85
 00:03:49,660 --> 00:03:52,210
@@ -406,7 +406,7 @@ Paul, do you remember?
 
 89
 00:04:00,530 --> 00:04:01,690
-That's what it is--
+That's what it is &mdash;
 
 90
 00:04:01,690 --> 00:04:03,170
@@ -414,12 +414,12 @@ page speed libraries.
 
 91
 00:04:03,170 --> 00:04:05,680
-Every once in a while-- so I'm
+Every once in a while &mdash; so I'm
 here in Mountain View.
 
 92
 00:04:05,680 --> 00:04:08,680
-It's 8 o'clock, and I was--
+It's 8 o'clock, and I was &mdash;
 
 93
 00:04:08,680 --> 00:04:09,890
@@ -524,7 +524,7 @@ kind of stuff.
 114
 00:05:05,190 --> 00:05:07,310
 So taking all of the
-stuff that--
+stuff that &mdash;
 
 115
 00:05:07,310 --> 00:05:10,270
@@ -610,12 +610,12 @@ compression is turned on.
 
 132
 00:05:59,160 --> 00:06:00,470
-So to turn it on--
+So to turn it on &mdash;
 
 133
 00:06:00,470 --> 00:06:02,450
 I guess we should start
-with that first--
+with that first &mdash;
 
 134
 00:06:02,450 --> 00:06:04,330
@@ -725,7 +725,7 @@ a 35% or 40%.
 156
 00:07:10,300 --> 00:07:11,350
 Paul, do you remember
-off hand, was it--
+off hand, was it &mdash;
 
 157
 00:07:11,350 --> 00:07:13,520
@@ -793,7 +793,7 @@ PAUL KINLAN: So it says saving
 
 171
 00:07:50,610 --> 00:07:52,500
-kilowatts of that--
+kilowatts of that &mdash;
 
 172
 00:07:52,500 --> 00:07:56,620
@@ -926,12 +926,12 @@ document on this.
 199
 00:09:19,000 --> 00:09:22,360
 If you just go up and do
-a quick search for--
+a quick search for &mdash;
 
 200
 00:09:22,360 --> 00:09:25,220
 PAUL KINLAN: We've
-got the link--
+got the link &mdash;
 
 201
 00:09:25,220 --> 00:09:25,590
@@ -950,7 +950,7 @@ doing a much deeper Hangout on
 204
 00:09:34,640 --> 00:09:36,810
 this in the next week
-so, I believe--
+so, I believe &mdash;
 
 205
 00:09:36,810 --> 00:09:39,620
@@ -1207,7 +1207,7 @@ moderator as well.
 258
 00:11:47,490 --> 00:11:49,523
 So if you want to ask questions,
-we'll pop--
+we'll pop &mdash;
 
 259
 00:11:49,523 --> 00:11:50,158
@@ -1298,7 +1298,7 @@ It's pretty cool.
 
 278
 00:12:24,610 --> 00:12:26,930
-I noticed on my own blog--
+I noticed on my own blog &mdash;
 
 279
 00:12:26,930 --> 00:12:28,670
@@ -1450,7 +1450,7 @@ up around this.
 
 312
 00:13:43,380 --> 00:13:44,630
-Chrome--
+Chrome &mdash;
 
 313
 00:13:44,630 --> 00:13:46,340
@@ -1498,11 +1498,11 @@ at the moment.
 
 324
 00:14:09,710 --> 00:14:13,290
-But if you search for WebRTC--
+But if you search for WebRTC &mdash;
 
 325
 00:14:13,290 --> 00:14:17,030
-there we are-- you can enable
+there we are &mdash; you can enable
 WebRTC in the Chrome flags,
 
 326
@@ -1910,7 +1910,7 @@ be on the same schedule so
 413
 00:17:17,530 --> 00:17:21,090
 that like, hey, Chrome
-gets updated--
+gets updated &mdash;
 
 414
 00:17:21,090 --> 00:17:23,569
@@ -1933,7 +1933,7 @@ we'll have any
 
 418
 00:17:28,310 --> 00:17:29,480
-questions or not, but--
+questions or not, but &mdash;
 
 419
 00:17:29,480 --> 00:17:29,940
@@ -1950,7 +1950,7 @@ PAUL KINLAN: Oh, cool.
 
 422
 00:17:32,300 --> 00:17:34,350
-Have you got it up or--
+Have you got it up or &mdash;
 
 423
 00:17:34,350 --> 00:17:35,880
@@ -2105,7 +2105,7 @@ it on mobile.
 
 455
 00:18:40,470 --> 00:18:41,490
-Because this is like the--
+Because this is like the &mdash;
 
 456
 00:18:41,490 --> 00:18:45,170
@@ -2337,7 +2337,7 @@ PETE LEPAGE: Cool.
 504
 00:20:39,410 --> 00:20:41,530
 PAUL KINLAN: And
-if we haven't--
+if we haven't &mdash;
 
 505
 00:20:41,530 --> 00:20:42,380
@@ -2431,7 +2431,7 @@ when it all happened.
 
 525
 00:21:14,346 --> 00:21:16,140
-Oh, and--
+Oh, and &mdash;
 
 526
 00:21:16,140 --> 00:21:17,360

@@ -151,7 +151,7 @@ too much.
 
 34
 00:01:16,480 --> 00:01:20,480
-But we just took our-- the
+But we just took our &mdash; the
 type of pizza, and
 
 35
@@ -549,7 +549,7 @@ trying to convey here?
 119
 00:04:37,440 --> 00:04:40,890
 We get a bunch of names,
-but we don't--
+but we don't &mdash;
 
 120
 00:04:40,890 --> 00:04:41,580
@@ -984,7 +984,7 @@ month and a half.
 
 213
 00:08:31,560 --> 00:08:32,240
-And engaged--
+And engaged &mdash;
 
 214
 00:08:32,240 --> 00:08:33,780
@@ -1076,7 +1076,7 @@ only difference here is I'm
 233
 00:09:15,890 --> 00:09:18,840
 providing, instead of
-just one category--
+just one category &mdash;
 
 234
 00:09:18,840 --> 00:09:20,880
@@ -1085,7 +1085,7 @@ says relationship, and
 
 235
 00:09:20,880 --> 00:09:23,740
-condo, and I/O here--
+condo, and I/O here &mdash;
 
 236
 00:09:23,740 --> 00:09:26,340
@@ -1134,12 +1134,12 @@ like with the I/O
 
 246
 00:09:44,600 --> 00:09:45,780
-being today--
+being today &mdash;
 
 247
 00:09:45,780 --> 00:09:49,560
 or two days ago, I guess
-I have that set for--
+I have that set for &mdash;
 
 248
 00:09:49,560 --> 00:09:52,520
@@ -1675,7 +1675,7 @@ another big part.
 
 364
 00:14:59,530 --> 00:15:00,440
-If anybody's ever--
+If anybody's ever &mdash;
 
 365
 00:15:00,440 --> 00:15:02,470
@@ -1737,7 +1737,7 @@ corresponds to
 
 377
 00:15:33,520 --> 00:15:35,640
-how far it is from--
+how far it is from &mdash;
 
 378
 00:15:35,640 --> 00:15:38,500
@@ -1812,7 +1812,7 @@ bubble chart.
 
 393
 00:16:22,950 --> 00:16:24,120
-And so you have--
+And so you have &mdash;
 
 394
 00:16:24,120 --> 00:16:27,040
@@ -1981,7 +1981,7 @@ this on the listing website.
 
 429
 00:17:55,420 --> 00:17:56,900
-So if I click on that--
+So if I click on that &mdash;
 
 430
 00:17:56,900 --> 00:17:58,120
@@ -2183,7 +2183,7 @@ The wedding.
 
 473
 00:19:47,550 --> 00:19:48,650
-The wedding there's a lot--
+The wedding there's a lot &mdash;
 
 474
 00:19:48,650 --> 00:19:49,850
@@ -2358,7 +2358,7 @@ is basically how
 
 510
 00:21:21,030 --> 00:21:21,730
-you're going to--
+you're going to &mdash;
 
 511
 00:21:21,730 --> 00:21:24,030
@@ -3035,7 +3035,7 @@ mailing lists that we receive.
 656
 00:27:38,000 --> 00:27:41,050
 We have had some complaints
-from--
+from &mdash;
 
 657
 00:27:41,050 --> 00:27:43,790
@@ -3357,7 +3357,7 @@ of putting in two
 
 726
 00:30:16,730 --> 00:30:17,840
-divs and having them--
+divs and having them &mdash;
 
 727
 00:30:17,840 --> 00:30:18,180
@@ -3548,7 +3548,7 @@ just update the chart.
 
 769
 00:31:48,850 --> 00:31:51,700
-So if you write a--
+So if you write a &mdash;
 
 770
 00:31:51,700 --> 00:31:53,500
@@ -3585,7 +3585,7 @@ MITCHELL FOLEY: Absolutely.
 777
 00:32:04,480 --> 00:32:07,450
 So right here, where we're
-going chart.draw--
+going chart.draw &mdash;
 
 778
 00:32:07,450 --> 00:32:07,920
@@ -3643,7 +3643,7 @@ price scenario where
 
 790
 00:32:26,980 --> 00:32:28,390
-there's data that streams--
+there's data that streams &mdash;
 
 791
 00:32:28,390 --> 00:32:33,480
@@ -3667,7 +3667,7 @@ could certainly
 
 795
 00:32:42,780 --> 00:32:44,070
-add onto a data table--
+add onto a data table &mdash;
 
 796
 00:32:44,070 --> 00:32:44,300
@@ -3848,7 +3848,7 @@ set attributes.
 835
 00:33:52,070 --> 00:33:56,650
 And one of the things
-you can set is--
+you can set is &mdash;
 
 836
 00:33:56,650 --> 00:33:59,150
@@ -3861,7 +3861,7 @@ the top of my head.
 
 838
 00:34:00,450 --> 00:34:01,230
-But you can--
+But you can &mdash;
 
 839
 00:34:01,230 --> 00:34:02,000
@@ -3953,7 +3953,7 @@ Not yet.
 
 859
 00:34:41,150 --> 00:34:43,699
-We are working on-- there's
+We are working on &mdash; there's
 actually some really exciting
 
 860

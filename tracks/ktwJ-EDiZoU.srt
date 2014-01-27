@@ -268,7 +268,7 @@ back and forth.
 60
 00:01:50,110 --> 00:01:54,110
 And then I build it because I
-want to compress my assets--
+want to compress my assets &mdash;
 
 61
 00:01:54,110 --> 00:01:54,870
@@ -543,7 +543,7 @@ how that works just yet.
 
 118
 00:04:04,910 --> 00:04:05,760
-But it's--
+But it's &mdash;
 
 119
 00:04:05,760 --> 00:04:06,565
@@ -560,7 +560,7 @@ actually.
 
 122
 00:04:07,730 --> 00:04:10,800
-So you can quickly choose--
+So you can quickly choose &mdash;
 
 123
 00:04:10,800 --> 00:04:12,590
@@ -574,7 +574,7 @@ looks like for an iPhone.
 125
 00:04:13,720 --> 00:04:15,080
 I want to see what this looks
-like-- what else do we
+like &mdash; what else do we
 
 126
 00:04:15,080 --> 00:04:16,110
@@ -635,7 +635,7 @@ new stuff in there.
 
 139
 00:04:33,880 --> 00:04:35,290
-Do you use Canary for your--
+Do you use Canary for your &mdash;
 
 140
 00:04:35,290 --> 00:04:35,570
@@ -743,7 +743,7 @@ features, if you take a look
 
 162
 00:05:20,340 --> 00:05:23,090
-at Chrome Flags--
+at Chrome Flags &mdash;
 
 163
 00:05:23,090 --> 00:05:24,510
@@ -940,7 +940,7 @@ But you can try them out.
 
 204
 00:06:38,590 --> 00:06:40,355
-So some of things on this list--
+So some of things on this list &mdash;
 have you been using any
 
 205
@@ -963,7 +963,7 @@ does that do?
 
 209
 00:06:43,900 --> 00:06:46,160
-PAUL LEWIS: So it gives you--
+PAUL LEWIS: So it gives you &mdash;
 alongside all the other
 
 210
@@ -1093,7 +1093,7 @@ That's really handy.
 237
 00:07:39,740 --> 00:07:41,520
 Because again if you
-find yourself--
+find yourself &mdash;
 
 238
 00:07:41,520 --> 00:07:42,790
@@ -1107,7 +1107,7 @@ how does this work
 
 240
 00:07:44,410 --> 00:07:46,710
-in the middle of--
+in the middle of &mdash;
 
 241
 00:07:46,710 --> 00:07:47,700
@@ -1146,7 +1146,7 @@ the type of feature that would
 
 249
 00:07:55,800 --> 00:07:57,110
-let me change your location--
+let me change your location &mdash;
 
 250
 00:07:57,110 --> 00:07:57,450
@@ -1188,7 +1188,7 @@ What does that do?
 
 259
 00:08:07,110 --> 00:08:08,140
-So if we go back--
+So if we go back &mdash;
 
 260
 00:08:08,140 --> 00:08:09,160
@@ -1284,7 +1284,7 @@ see what would happen if
 279
 00:08:54,490 --> 00:08:56,840
 someone turned around the
-devices they're using--
+devices they're using &mdash;
 
 280
 00:08:56,840 --> 00:08:58,470
@@ -1427,7 +1427,7 @@ use them at any point.
 310
 00:09:46,970 --> 00:09:49,960
 So I can go and I can add in
-custom functions doing--
+custom functions doing &mdash;
 
 311
 00:09:49,960 --> 00:09:55,330
@@ -1464,12 +1464,12 @@ you then use
 
 319
 00:10:06,310 --> 00:10:07,910
-that Snippet in your--
+that Snippet in your &mdash;
 
 320
 00:10:07,910 --> 00:10:09,140
 so you've created
-this Snippet--
+this Snippet &mdash;
 
 321
 00:10:09,140 --> 00:10:12,350
@@ -1767,7 +1767,7 @@ remember if you make like 10
 
 385
 00:12:01,350 --> 00:12:02,870
-or 15 changes--
+or 15 changes &mdash;
 
 386
 00:12:02,870 --> 00:12:03,690
@@ -1922,7 +1922,7 @@ desperate measures.
 418
 00:13:03,700 --> 00:13:04,990
 Any port in a storm,
-I believe is the--
+I believe is the &mdash;
 
 419
 00:13:04,990 --> 00:13:05,580
@@ -1961,7 +1961,7 @@ page, and you can confirm I've
 
 427
 00:13:16,540 --> 00:13:17,390
-just refreshed my page--
+just refreshed my page &mdash;
 
 428
 00:13:17,390 --> 00:13:17,590
@@ -2007,7 +2007,7 @@ to Sources and you take a
 
 437
 00:13:33,870 --> 00:13:38,890
-look at where this stuff is--
+look at where this stuff is &mdash;
 so let me go to Sources and
 
 438
@@ -2206,7 +2206,7 @@ bit from that point.
 
 481
 00:14:55,600 --> 00:14:56,340
-But nonetheless--
+But nonetheless &mdash;
 
 482
 00:14:56,340 --> 00:14:57,250
@@ -2259,7 +2259,7 @@ got deadlines.
 
 493
 00:15:14,210 --> 00:15:15,360
-They've got these things to--
+They've got these things to &mdash;
 
 494
 00:15:15,360 --> 00:15:15,980
@@ -2320,7 +2320,7 @@ that a few people, so me, Paul
 506
 00:15:40,870 --> 00:15:44,310
 Irish, Sindre Sorhus,
-and Mickael Daniel--
+and Mickael Daniel &mdash;
 
 507
 00:15:44,310 --> 00:15:44,810
@@ -3149,7 +3149,7 @@ How does that work?
 685
 00:21:45,910 --> 00:21:48,300
 ADDY OSMANI: Then all you have
-to do is we have-- similar to
+to do is we have &mdash; similar to
 
 686
 00:21:48,300 --> 00:21:49,640
@@ -3221,7 +3221,7 @@ those dependencies
 
 700
 00:22:22,520 --> 00:22:24,600
-for us, which is--
+for us, which is &mdash;
 
 701
 00:22:24,600 --> 00:22:27,060
@@ -3317,12 +3317,12 @@ or something like
 
 722
 00:23:00,710 --> 00:23:02,310
-that to go off and--
+that to go off and &mdash;
 
 723
 00:23:02,310 --> 00:23:04,690
 hey, I've been around
-a while--
+a while &mdash;
 
 724
 00:23:04,690 --> 00:23:10,100
@@ -4036,7 +4036,7 @@ about Yeoman because it was
 
 876
 00:28:37,680 --> 00:28:39,440
-really a pain to--
+really a pain to &mdash;
 
 877
 00:28:39,440 --> 00:28:41,710
@@ -4301,7 +4301,7 @@ up a single controller.
 
 934
 00:31:10,080 --> 00:31:11,570
-And it also sets up--
+And it also sets up &mdash;
 
 935
 00:31:11,570 --> 00:31:13,420
@@ -4692,12 +4692,12 @@ ADDY OSMANI: That's awesome.
 
 1021
 00:35:09,360 --> 00:35:10,060
-It's seems like--
+It's seems like &mdash;
 
 1022
 00:35:10,060 --> 00:35:10,590
 BRIAN FORD: And actually
-there's--
+there's &mdash;
 
 1023
 00:35:10,590 --> 00:35:11,830
@@ -4749,7 +4749,7 @@ actually really super simple.
 
 1033
 00:35:35,520 --> 00:35:38,150
-So we just want to expose--
+So we just want to expose &mdash;
 
 1034
 00:35:38,150 --> 00:35:41,080
@@ -4819,7 +4819,7 @@ Because you've
 
 1049
 00:36:43,187 --> 00:36:44,700
-gone straight into--
+gone straight into &mdash;
 
 1050
 00:36:44,700 --> 00:36:47,640
@@ -4833,7 +4833,7 @@ honest, like the wiring this
 
 1052
 00:36:50,980 --> 00:36:54,410
-and the-- less wiring and
+and the &mdash; less wiring and
 more actual fun stuff.
 
 1053
@@ -5388,8 +5388,8 @@ by proxy, which is great.
 
 1172
 00:40:55,365 --> 00:40:57,540
-"It would be awesome"--
-apparently--
+"It would be awesome" &mdash;
+apparently &mdash;
 
 1173
 00:40:57,540 --> 00:41:02,280
@@ -5550,7 +5550,7 @@ one more question and
 
 1207
 00:42:08,920 --> 00:42:09,730
-then we're going to--
+then we're going to &mdash;
 
 1208
 00:42:09,730 --> 00:42:13,040

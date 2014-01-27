@@ -397,7 +397,7 @@ because JavaScript is slow.
 85
 00:04:06,230 --> 00:04:10,370
 And the reason is really
-simple-- graphical rendering
+simple &mdash; graphical rendering
 
 86
 00:04:10,370 --> 00:04:14,080
@@ -526,7 +526,7 @@ performant mobile web
 
 112
 00:05:25,480 --> 00:05:31,810
-UI-- number one is to do
+UI &mdash; number one is to do
 stuff that is performant.
 
 113
@@ -557,7 +557,7 @@ I was on the little league team.
 119
 00:05:49,230 --> 00:05:52,310
 And I had a little league
-coach-- that's not him.
+coach &mdash; that's not him.
 
 120
 00:05:52,310 --> 00:05:56,501
@@ -734,7 +734,7 @@ number two, avoiding
 
 156
 00:07:34,060 --> 00:07:36,850
-stuff that's easy-- that's
+stuff that's easy &mdash; that's
 not doing something,
 
 157
@@ -1103,7 +1103,7 @@ part is all the stuff
 232
 00:11:02,420 --> 00:11:04,800
 that happens behind the
-scenes-- all the people that
+scenes &mdash; all the people that
 
 233
 00:11:04,800 --> 00:11:07,520
@@ -1602,7 +1602,7 @@ and this is especially true
 
 337
 00:15:50,540 --> 00:15:55,460
-in iOS-- as far as native apps
+in iOS &mdash; as far as native apps
 go, I'm only an iOS developer.
 
 338
@@ -1818,7 +1818,7 @@ poor performance.
 382
 00:17:58,150 --> 00:18:04,140
 Some things to watch out
-for are-- well, the biggest
+for are &mdash; well, the biggest
 
 383
 00:18:04,140 --> 00:18:06,480
@@ -1837,7 +1837,7 @@ with a bad idea.
 386
 00:18:11,980 --> 00:18:14,694
 So maybe you have
-an idea-- presumably
+an idea &mdash; presumably
 
 387
 00:18:14,694 --> 00:18:16,110
@@ -2101,7 +2101,7 @@ about it, and it stays in there.
 442
 00:20:25,140 --> 00:20:28,900
 So I think the way to avoid this
-is to really-- developers, take
+is to really &mdash; developers, take
 
 443
 00:20:28,900 --> 00:20:33,197

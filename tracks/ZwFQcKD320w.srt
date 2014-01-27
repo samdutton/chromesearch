@@ -58,7 +58,7 @@ GERWIN: Yay.
 
 15
 00:00:27,962 --> 00:00:30,272
-JONATHAN: General--
+JONATHAN: General &mdash;
 
 16
 00:00:30,272 --> 00:00:31,995
@@ -125,7 +125,7 @@ our new developer site.
 
 29
 00:01:12,250 --> 00:01:13,060
-So we--
+So we &mdash;
 
 30
 00:01:13,060 --> 00:01:15,830
@@ -380,7 +380,7 @@ JONATHAN: Great.
 
 85
 00:03:33,180 --> 00:03:34,920
-WOLFF: So if you go to--
+WOLFF: So if you go to &mdash;
 so Create A New
 
 86
@@ -583,7 +583,7 @@ within your extension.
 
 130
 00:05:35,700 --> 00:05:36,800
-WOLFF: And the shared state--
+WOLFF: And the shared state &mdash;
 
 131
 00:05:36,800 --> 00:05:39,030
@@ -775,7 +775,7 @@ are required.
 
 172
 00:07:12,980 --> 00:07:14,876
-So if you notice that--
+So if you notice that &mdash;
 
 173
 00:07:14,876 --> 00:07:17,150
@@ -873,7 +873,7 @@ JONATHAN: Oh, yes.
 193
 00:08:04,960 --> 00:08:07,624
 WOLFF: So if you go
-down and look at--
+down and look at &mdash;
 
 194
 00:08:07,624 --> 00:08:10,620
@@ -1173,8 +1173,8 @@ the privacy policy, which I
 
 259
 00:10:40,970 --> 00:10:44,580
-care more about-- maybe less for
-the legal-- is be upfront
+care more about &mdash; maybe less for
+the legal &mdash; is be upfront
 
 260
 00:10:44,580 --> 00:10:46,410
@@ -1222,12 +1222,12 @@ a way to post or [INAUDIBLE]
 269
 00:11:09,120 --> 00:11:13,050
 JONATHAN: Even something as
-simple as your + page-- if you
+simple as your + page &mdash; if you
 
 270
 00:11:13,050 --> 00:11:13,507
 feel that's the right way for
-them to contact you-- if we
+them to contact you &mdash; if we
 
 271
 00:11:13,507 --> 00:11:16,881
@@ -1270,11 +1270,11 @@ worked in Developer
 279
 00:11:33,590 --> 00:11:38,332
 which is only people who are
-in your Teams list--
+in your Teams list &mdash;
 
 280
 00:11:38,332 --> 00:11:39,650
-up there on the left--
+up there on the left &mdash;
 
 281
 00:11:39,650 --> 00:11:41,970
@@ -1341,7 +1341,7 @@ when you are running outside
 
 295
 00:12:13,340 --> 00:12:14,590
-of [UNINTELLIGIBLE]--
+of [UNINTELLIGIBLE] &mdash;
 
 296
 00:12:14,590 --> 00:12:18,060
@@ -1377,7 +1377,7 @@ three strokes.
 303
 00:12:35,160 --> 00:12:39,430
 There are two hangout strokes
-that are basically--
+that are basically &mdash;
 
 304
 00:12:39,430 --> 00:12:43,550
@@ -1593,11 +1593,11 @@ you're running it at hangout.
 350
 00:14:31,910 --> 00:14:34,110
 And the reason for
-that is because--
+that is because &mdash;
 
 351
 00:14:34,110 --> 00:14:36,230
-well, it's long-winded--
+well, it's long-winded &mdash;
 
 352
 00:14:36,230 --> 00:14:39,210
@@ -1653,7 +1653,7 @@ rewriting, we can keep it
 
 363
 00:15:05,406 --> 00:15:07,516
-secure without--
+secure without &mdash;
 
 364
 00:15:07,516 --> 00:15:10,145
@@ -1693,7 +1693,7 @@ pictures and stuff if you go
 
 372
 00:15:21,236 --> 00:15:23,326
-back-- oh, you missed
+back &mdash; oh, you missed
 [INAUDIBLE].
 
 373
@@ -1757,7 +1757,7 @@ a client ID.
 
 386
 00:15:51,980 --> 00:15:53,550
-Last thin you have to do--
+Last thin you have to do &mdash;
 
 387
 00:15:53,550 --> 00:15:57,490
@@ -1916,7 +1916,7 @@ you may not have to even worry
 
 420
 00:17:12,440 --> 00:17:13,390
-about the--
+about the &mdash;
 
 421
 00:17:13,390 --> 00:17:15,630
@@ -1935,7 +1935,7 @@ a hackathon, that's fine.
 424
 00:17:20,680 --> 00:17:26,755
 So after that, hit Save, and
-then, you will get a--
+then, you will get a &mdash;
 
 425
 00:17:26,755 --> 00:17:28,430
@@ -2023,7 +2023,7 @@ development server.
 443
 00:18:15,720 --> 00:18:19,996
 You have to construct the URL
-yourself to get to the--
+yourself to get to the &mdash;
 
 444
 00:18:19,996 --> 00:18:20,960
@@ -2036,7 +2036,7 @@ WOLFF: Right.
 446
 00:18:21,730 --> 00:18:25,476
 And then can you show
-an example of the--
+an example of the &mdash;
 
 447
 00:18:25,476 --> 00:18:27,190
@@ -2160,7 +2160,7 @@ You have a more awesome idea.
 
 473
 00:19:32,150 --> 00:19:36,700
-Then the last thing is about--
+Then the last thing is about &mdash;
 
 474
 00:19:36,700 --> 00:19:40,780
@@ -2179,7 +2179,7 @@ you aren't a member of that
 
 477
 00:19:50,936 --> 00:19:53,380
-team on production--
+team on production &mdash;
 
 478
 00:19:53,380 --> 00:19:56,380
@@ -2205,7 +2205,7 @@ WOLFF: Now you know.
 
 483
 00:20:02,870 --> 00:20:04,853
-JONATHAN: So we went over--
+JONATHAN: So we went over &mdash;
 
 484
 00:20:04,853 --> 00:20:06,460
@@ -2222,7 +2222,7 @@ the new Dev console.
 
 487
 00:20:11,132 --> 00:20:15,790
-WOLFF: Also to talk about is--
+WOLFF: Also to talk about is &mdash;
 
 488
 00:20:15,790 --> 00:20:17,790
@@ -2235,7 +2235,7 @@ WOLFF: Yeah.
 
 490
 00:20:18,426 --> 00:20:19,794
-We basically went through--
+We basically went through &mdash;
 
 491
 00:20:19,794 --> 00:20:21,080
@@ -2277,7 +2277,7 @@ cool red hangout button?
 
 499
 00:20:35,390 --> 00:20:37,276
-That--
+That &mdash;
 
 500
 00:20:37,276 --> 00:20:39,946
@@ -2572,12 +2572,12 @@ we have hosted
 
 563
 00:23:11,130 --> 00:23:12,250
-under a gadget XML--
+under a gadget XML &mdash;
 
 564
 00:23:12,250 --> 00:23:14,450
 in the past and moving
-forward--
+forward &mdash;
 
 565
 00:23:14,450 --> 00:23:16,850
@@ -2749,7 +2749,7 @@ to one of the new features.
 
 602
 00:24:39,980 --> 00:24:40,160
-We didn't--
+We didn't &mdash;
 
 603
 00:24:40,160 --> 00:24:41,206
@@ -2802,7 +2802,7 @@ if you're doing overlays, up
 
 614
 00:25:04,580 --> 00:25:06,400
-until this--
+until this &mdash;
 
 615
 00:25:06,400 --> 00:25:08,280
@@ -2883,7 +2883,7 @@ up as an extension, or you're
 632
 00:25:53,760 --> 00:25:55,010
 having somebody recording
-audio--
+audio &mdash;
 
 633
 00:25:55,010 --> 00:25:58,230
@@ -2891,7 +2891,7 @@ audio--
 634
 00:25:58,230 --> 00:25:59,935
 or downloading audio
-and playing it--
+and playing it &mdash;
 
 635
 00:25:59,935 --> 00:26:01,580
@@ -2975,7 +2975,7 @@ people can do with overlays.
 652
 00:26:33,833 --> 00:26:37,700
 The other thing that we added,
-which also concerns overlays--
+which also concerns overlays &mdash;
 
 653
 00:26:37,700 --> 00:26:41,903
@@ -3001,7 +3001,7 @@ overlays on.
 
 658
 00:26:49,790 --> 00:26:51,780
-So under the old scheme--
+So under the old scheme &mdash;
 
 659
 00:26:51,780 --> 00:26:53,450
@@ -3328,7 +3328,7 @@ comment of when they
 
 730
 00:29:50,325 --> 00:29:51,150
-release, but we're--
+release, but we're &mdash;
 
 731
 00:29:51,150 --> 00:29:55,110
@@ -3382,7 +3382,7 @@ yay, which is wonderful.
 
 743
 00:30:20,370 --> 00:30:21,730
-And complaining that--
+And complaining that &mdash;
 
 744
 00:30:21,730 --> 00:30:22,730
@@ -3391,7 +3391,7 @@ you know what it is?
 745
 00:30:22,730 --> 00:30:26,130
 It's your fan being
-picked up by the--
+picked up by the &mdash;
 
 746
 00:30:26,130 --> 00:30:29,000
@@ -3439,7 +3439,7 @@ to set their topic.
 756
 00:30:58,410 --> 00:31:01,610
 Asking for I'd like
-to set the topic--
+to set the topic &mdash;
 
 757
 00:31:01,610 --> 00:31:02,300
@@ -3468,7 +3468,7 @@ We should look into that.
 763
 00:31:12,501 --> 00:31:16,920
 Actually questions have
-been pretty much--
+been pretty much &mdash;
 
 764
 00:31:16,920 --> 00:31:19,445
@@ -3777,7 +3777,7 @@ published publicly, then it's
 
 828
 00:34:27,639 --> 00:34:29,830
-just a URL with--
+just a URL with &mdash;
 
 829
 00:34:29,830 --> 00:34:30,790

@@ -165,7 +165,7 @@ handle some of the stuff that
 
 37
 00:05:34,760 --> 00:05:37,380
-you don't enjoy doing--
+you don't enjoy doing &mdash;
 
 38
 00:05:37,380 --> 00:05:41,270
@@ -217,12 +217,12 @@ online afterwards.
 48
 00:06:05,740 --> 00:06:13,260
 And as well, if you look there,
-say right about there--
+say right about there &mdash;
 
 49
 00:06:13,260 --> 00:06:16,640
 OK, well maybe it's a little
-that way-- but anyways, if you
+that way &mdash; but anyways, if you
 
 50
 00:06:16,640 --> 00:06:20,210
@@ -249,7 +249,7 @@ into the development
 
 55
 00:06:31,150 --> 00:06:32,210
-environment--
+environment &mdash;
 
 56
 00:06:32,210 --> 00:06:35,670
@@ -292,7 +292,7 @@ and JavaScript, but if I'm
 64
 00:06:59,800 --> 00:07:03,300
 writing something for maybe App
-Engine and using Python--
+Engine and using Python &mdash;
 
 65
 00:07:03,300 --> 00:07:07,190
@@ -301,7 +301,7 @@ whatever back-end languages I
 
 66
 00:07:07,190 --> 00:07:08,540
-want to be able to use--
+want to be able to use &mdash;
 
 67
 00:07:08,540 --> 00:07:10,530
@@ -342,7 +342,7 @@ of the intellisense that I'd
 
 75
 00:07:29,880 --> 00:07:31,910
-normally be looking for--
+normally be looking for &mdash;
 
 76
 00:07:31,910 --> 00:07:34,950
@@ -351,7 +351,7 @@ easy to find stuff.
 
 77
 00:07:34,950 --> 00:07:37,120
-If I create a new file--
+If I create a new file &mdash;
 
 78
 00:07:37,120 --> 00:07:38,330
@@ -425,12 +425,12 @@ syntax on stuff.
 93
 00:08:17,340 --> 00:08:21,340
 I could type, for
-example, link--
+example, link &mdash;
 
 94
 00:08:21,340 --> 00:08:24,920
 because I want to add a CSS
-style sheet in here--
+style sheet in here &mdash;
 
 95
 00:08:24,920 --> 00:08:25,390
@@ -442,7 +442,7 @@ All I did was hit Tab.
 
 97
 00:08:26,890 --> 00:08:28,260
-It completed everything--
+It completed everything &mdash;
 
 98
 00:08:28,260 --> 00:08:31,430
@@ -499,7 +499,7 @@ like is an app called CodeKit.
 
 109
 00:09:05,350 --> 00:09:07,380
-And CodeKit--
+And CodeKit &mdash;
 
 110
 00:09:07,380 --> 00:09:09,800
@@ -667,8 +667,8 @@ for the PC.
 
 145
 00:10:42,350 --> 00:10:46,670
-Or you could really-- if you
-wanted to be down and dirty--
+Or you could really &mdash; if you
+wanted to be down and dirty &mdash;
 
 146
 00:10:46,670 --> 00:10:49,530
@@ -717,7 +717,7 @@ It's got to be ugly.
 
 156
 00:11:12,360 --> 00:11:13,430
-It's got to be--
+It's got to be &mdash;
 
 157
 00:11:13,430 --> 00:11:15,190
@@ -955,7 +955,7 @@ an app that's only
 
 207
 00:13:34,610 --> 00:13:36,770
-going to work on this--
+going to work on this &mdash;
 
 208
 00:13:36,770 --> 00:13:39,010
@@ -1010,7 +1010,7 @@ designing web content for
 
 219
 00:14:05,740 --> 00:14:08,090
-mobile Safari--
+mobile Safari &mdash;
 
 220
 00:14:08,090 --> 00:14:11,710
@@ -1163,7 +1163,7 @@ jQuery Mobile.
 
 251
 00:15:29,410 --> 00:15:32,930
-Checking out both of those--
+Checking out both of those &mdash;
 really good.
 
 252
@@ -1191,7 +1191,7 @@ really make our lives easier.
 
 257
 00:15:48,000 --> 00:15:49,990
-Fast Click--
+Fast Click &mdash;
 
 258
 00:15:49,990 --> 00:15:54,450
@@ -1206,7 +1206,7 @@ last couple of years, and have
 260
 00:15:58,780 --> 00:16:02,750
 really built a phenomenal
-mobile web app--
+mobile web app &mdash;
 
 261
 00:16:02,750 --> 00:16:04,190
@@ -1336,12 +1336,12 @@ it sits there and
 
 289
 00:17:15,420 --> 00:17:18,470
-it has a 300 second--
+it has a 300 second &mdash;
 
 290
 00:17:18,470 --> 00:17:22,099
 wow, 300 second delay would
-be pretty crazy-- a 300
+be pretty crazy &mdash; a 300
 
 291
 00:17:22,099 --> 00:17:26,670
@@ -1396,7 +1396,7 @@ guys wrote.
 302
 00:17:54,810 --> 00:17:58,240
 This top box that you
-see up here, box A--
+see up here, box A &mdash;
 
 303
 00:17:58,240 --> 00:18:01,290
@@ -1426,16 +1426,16 @@ And it took awhile.
 
 309
 00:18:12,370 --> 00:18:13,690
-Touch--
+Touch &mdash;
 
 310
 00:18:13,690 --> 00:18:16,380
 and it takes that like
-couple milliseconds--
+couple milliseconds &mdash;
 
 311
 00:18:16,380 --> 00:18:18,140
-well, 300 milliseconds--
+well, 300 milliseconds &mdash;
 
 312
 00:18:18,140 --> 00:18:21,270
@@ -1498,7 +1498,7 @@ touch end, they fire on
 
 325
 00:19:02,630 --> 00:19:03,420
-the touch--
+the touch &mdash;
 
 326
 00:19:03,420 --> 00:19:05,160
@@ -1572,7 +1572,7 @@ of the elements on your
 341
 00:19:46,240 --> 00:19:50,690
 page that would register
-a touch--
+a touch &mdash;
 
 342
 00:19:50,690 --> 00:19:52,720
@@ -1590,7 +1590,7 @@ of my projects that I've
 345
 00:19:58,580 --> 00:20:02,250
 worked on, is that if you add
-a button after the fact--
+a button after the fact &mdash;
 
 346
 00:20:02,250 --> 00:20:05,330
@@ -1604,7 +1604,7 @@ button to the DOM or something
 
 348
 00:20:08,420 --> 00:20:09,400
-to that effect--
+to that effect &mdash;
 
 349
 00:20:09,400 --> 00:20:13,990
@@ -1704,7 +1704,7 @@ Did I get to that point?
 
 370
 00:21:17,140 --> 00:21:18,850
-Are the values--
+Are the values &mdash;
 
 371
 00:21:18,850 --> 00:21:22,070
@@ -1920,7 +1920,7 @@ it's not going let you.
 416
 00:23:37,860 --> 00:23:43,420
 That's a security precaution
-meant to make it easier--
+meant to make it easier &mdash;
 
 417
 00:23:43,420 --> 00:23:48,430
@@ -1994,7 +1994,7 @@ important to be able to use.
 
 432
 00:24:30,000 --> 00:24:32,360
-And understanding--
+And understanding &mdash;
 
 433
 00:24:32,360 --> 00:24:35,780
@@ -2008,7 +2008,7 @@ that, that's easy.
 435
 00:24:37,560 --> 00:24:41,380
 But if you want to be able
-to handle gestures--
+to handle gestures &mdash;
 
 436
 00:24:41,380 --> 00:24:45,950
@@ -2022,7 +2022,7 @@ a page, maybe
 
 438
 00:24:47,810 --> 00:24:51,690
-you want to do anything--
+you want to do anything &mdash;
 
 439
 00:24:51,690 --> 00:24:56,160
@@ -2091,7 +2091,7 @@ completed, so it's dragged.
 
 453
 00:25:35,780 --> 00:25:36,600
-I can tap--
+I can tap &mdash;
 
 454
 00:25:36,600 --> 00:25:37,800
@@ -2099,7 +2099,7 @@ single touch.
 
 455
 00:25:37,800 --> 00:25:39,660
-I can double tap--
+I can double tap &mdash;
 
 456
 00:25:39,660 --> 00:25:41,680
@@ -2169,7 +2169,7 @@ easy to do.
 470
 00:26:28,400 --> 00:26:33,420
 I used the on drag
-start to notice--
+start to notice &mdash;
 
 471
 00:26:33,420 --> 00:26:34,900
@@ -2380,12 +2380,12 @@ mechanisms that are available
 
 516
 00:28:43,550 --> 00:28:46,490
-for the web-- in fact, almost
+for the web &mdash; in fact, almost
 every other storage mechanism
 
 517
 00:28:46,490 --> 00:28:48,810
-available for the web--
+available for the web &mdash;
 is asynchronous.
 
 518
@@ -2569,11 +2569,11 @@ of options.
 555
 00:30:27,580 --> 00:30:32,990
 The first thing I want to
-mention is using the--
+mention is using the &mdash;
 
 556
 00:30:32,990 --> 00:30:35,080
-sorry, excuse me--
+sorry, excuse me &mdash;
 
 557
 00:30:35,080 --> 00:30:39,320
@@ -2592,7 +2592,7 @@ got media-only screen and
 560
 00:30:45,830 --> 00:30:49,520
 minimum device pixel
-ratio of 1.5--
+ratio of 1.5 &mdash;
 
 561
 00:30:49,520 --> 00:30:53,740
@@ -2700,7 +2700,7 @@ tags on your page.
 582
 00:32:10,140 --> 00:32:13,900
 For documents that are stored
-as images in your page-- let
+as images in your page &mdash; let
 
 583
 00:32:13,900 --> 00:32:16,170
@@ -2709,7 +2709,7 @@ we can actually see
 
 584
 00:32:16,170 --> 00:32:18,868
-all the text here--
+all the text here &mdash;
 
 585
 00:32:18,868 --> 00:32:23,930
@@ -2756,7 +2756,7 @@ source set on the image tag.
 
 594
 00:32:45,990 --> 00:32:49,770
-You specify here, I want-- this
+You specify here, I want &mdash; this
 is my high-def image,
 
 595
@@ -2786,7 +2786,7 @@ would call out and say, that
 
 600
 00:33:08,970 --> 00:33:10,130
-image replacement--
+image replacement &mdash;
 
 601
 00:33:10,130 --> 00:33:12,840
@@ -2896,7 +2896,7 @@ a 1x image and you make
 
 623
 00:34:34,989 --> 00:34:37,300
-it twice as big--
+it twice as big &mdash;
 
 624
 00:34:37,300 --> 00:34:41,600
@@ -2995,7 +2995,7 @@ positioning, floats.
 
 644
 00:35:45,410 --> 00:35:46,570
-Headers and footers--
+Headers and footers &mdash;
 
 645
 00:35:46,570 --> 00:35:51,290
@@ -3182,7 +3182,7 @@ Don't accept the status quo.
 684
 00:37:34,940 --> 00:37:37,800
 Don't accept that
-the mobile web--
+the mobile web &mdash;
 
 685
 00:37:37,800 --> 00:37:39,510
@@ -3199,12 +3199,12 @@ make it look better.
 
 688
 00:37:43,870 --> 00:37:46,580
-If you find bugs with Chrome--
+If you find bugs with Chrome &mdash;
 
 689
 00:37:46,580 --> 00:37:48,530
 Chrome for Android or
-Chrome for iOS--
+Chrome for iOS &mdash;
 
 690
 00:37:48,530 --> 00:37:51,920
@@ -3265,7 +3265,7 @@ on the mobile web, on
 
 702
 00:38:20,230 --> 00:38:22,190
-mobile devices-- whether that's
+mobile devices &mdash; whether that's
 a tablet, whether
 
 703

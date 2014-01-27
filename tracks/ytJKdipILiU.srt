@@ -40,7 +40,7 @@ from Google.
 
 10
 00:00:22,560 --> 00:00:25,093
-We've got Petro Soininen--
+We've got Petro Soininen &mdash;
 
 11
 00:00:25,093 --> 00:00:26,650
@@ -76,11 +76,11 @@ who is actually going to start
 18
 00:00:37,660 --> 00:00:39,450
 the whole session by
-telling us-- for 10
+telling us &mdash; for 10
 
 19
 00:00:39,450 --> 00:00:41,890
-minutes and not longer--
+minutes and not longer &mdash;
 
 20
 00:00:41,890 --> 00:00:45,060
@@ -146,7 +146,7 @@ a thick client.
 
 34
 00:01:13,660 --> 00:01:14,190
-So--
+So &mdash;
 
 35
 00:01:14,190 --> 00:01:16,220
@@ -421,13 +421,13 @@ inside these app stores.
 
 94
 00:03:23,150 --> 00:03:26,030
-And this is not a cheap shot--
+And this is not a cheap shot &mdash;
 this is just a statement of
 
 95
 00:03:26,030 --> 00:03:28,140
 fact and it's kind
-of interesting--
+of interesting &mdash;
 
 96
 00:03:28,140 --> 00:03:29,880
@@ -920,7 +920,7 @@ like to give here is a battery
 
 201
 00:07:13,400 --> 00:07:15,350
-notification event-- if your
+notification event &mdash; if your
 battery is about to die, you
 
 202
@@ -1293,7 +1293,7 @@ dropped because websites are
 
 282
 00:10:20,020 --> 00:10:20,810
-intrinsically--
+intrinsically &mdash;
 
 283
 00:10:20,810 --> 00:10:22,770
@@ -2115,7 +2115,7 @@ understand what are they
 458
 00:17:03,210 --> 00:17:04,819
 accepting and then, again,
-the mechanisms--
+the mechanisms &mdash;
 
 459
 00:17:04,819 --> 00:17:06,540
@@ -2368,7 +2368,7 @@ other than talk more.
 511
 00:19:01,130 --> 00:19:03,480
 CHRIS HELLMANN: Diana,
-you wanted to--
+you wanted to &mdash;
 
 512
 00:19:03,480 --> 00:19:03,710
@@ -2439,11 +2439,11 @@ we talked about widgets
 526
 00:19:38,990 --> 00:19:41,150
 already and I remember
-both Vodaphone--
+both Vodaphone &mdash;
 
 527
 00:19:41,150 --> 00:19:43,360
-I worked back then on it-- and
+I worked back then on it &mdash; and
 Opera were the first ones to
 
 528
@@ -2576,7 +2576,7 @@ automate that?
 556
 00:20:55,480 --> 00:20:56,900
 Is there already a script
-out there--
+out there &mdash;
 
 557
 00:20:56,900 --> 00:20:57,306
@@ -2611,12 +2611,12 @@ I think, Bruce, you had one?
 
 564
 00:21:08,060 --> 00:21:08,530
-Or you--
+Or you &mdash;
 
 565
 00:21:08,530 --> 00:21:11,722
 AUDIENCE: Scott Wilson from
-Apache Project had--
+Apache Project had &mdash;
 
 566
 00:21:11,722 --> 00:21:12,178
@@ -2894,7 +2894,7 @@ job at evangelizing
 
 624
 00:23:25,110 --> 00:23:25,610
-these bits--
+these bits &mdash;
 
 625
 00:23:25,610 --> 00:23:28,190
@@ -3026,7 +3026,7 @@ packaging format and so on.
 653
 00:24:25,900 --> 00:24:27,390
 I also wanted, since I
-have the microphone--
+have the microphone &mdash;
 
 654
 00:24:27,390 --> 00:24:31,260
@@ -3090,7 +3090,7 @@ springboard and that type of
 
 667
 00:25:04,870 --> 00:25:05,830
-thing which is--
+thing which is &mdash;
 
 668
 00:25:05,830 --> 00:25:06,700
@@ -4411,7 +4411,7 @@ Intent-like system at
 
 946
 00:36:47,740 --> 00:36:49,145
-the same time as--
+the same time as &mdash;
 
 947
 00:36:49,145 --> 00:36:49,630
@@ -5098,11 +5098,11 @@ for example.
 
 1095
 00:42:39,150 --> 00:42:41,280
-But you might very well--
+But you might very well &mdash;
 
 1096
 00:42:41,280 --> 00:42:42,240
-sorry, Brian--
+sorry, Brian &mdash;
 
 1097
 00:42:42,240 --> 00:42:45,990
@@ -5333,7 +5333,7 @@ That's the question I've got.
 1146
 00:44:31,090 --> 00:44:34,230
 If you've package this thing
-up to be a deliverable--
+up to be a deliverable &mdash;
 
 1147
 00:44:34,230 --> 00:44:35,050
@@ -5483,7 +5483,7 @@ APIs back across rather than
 1178
 00:45:34,600 --> 00:45:36,370
 go and try and learn
-the default--
+the default &mdash;
 
 1179
 00:45:36,370 --> 00:45:37,180
@@ -5825,7 +5825,7 @@ BRIAN LEROUX: Yeah.
 
 1253
 00:48:26,150 --> 00:48:27,640
-Use Lawnchair-- no, I don't know
+Use Lawnchair &mdash; no, I don't know
 what the answer is there.
 
 1254
@@ -6156,7 +6156,7 @@ AUDIENCE: Yeah.
 
 1326
 00:50:54,736 --> 00:50:57,060
-It's coming to--
+It's coming to &mdash;
 
 1327
 00:50:57,060 --> 00:50:58,270
@@ -6420,7 +6420,7 @@ out there already.
 
 1382
 00:53:05,990 --> 00:53:08,020
-It's tricky to actually--
+It's tricky to actually &mdash;
 
 1383
 00:53:08,020 --> 00:53:10,510

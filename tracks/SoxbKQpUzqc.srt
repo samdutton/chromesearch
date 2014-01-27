@@ -1847,7 +1847,7 @@ user or your
 
 400
 00:17:40,800 --> 00:17:42,820
-application to a remote server--
+application to a remote server &mdash;
 
 401
 00:17:42,820 --> 00:17:44,220
@@ -1856,7 +1856,7 @@ all of you commerce
 
 402
 00:17:44,220 --> 00:17:46,100
-developers should be doing--
+developers should be doing &mdash;
 
 403
 00:17:46,100 --> 00:17:47,850
@@ -3203,7 +3203,7 @@ mobile web at all?
 
 695
 00:30:30,842 --> 00:30:31,640
-Is this strictly--
+Is this strictly &mdash;
 
 696
 00:30:31,640 --> 00:30:34,611

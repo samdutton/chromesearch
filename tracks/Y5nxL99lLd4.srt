@@ -678,7 +678,7 @@ peer to peer.
 148
 00:07:48,775 --> 00:07:52,260
 And if I open it up, I should
-be able to see--
+be able to see &mdash;
 
 149
 00:07:52,260 --> 00:07:52,980
@@ -906,7 +906,7 @@ downloaded in real time.
 196
 00:10:29,440 --> 00:10:33,920
 So very, very useful in this
-modern world where we've got--
+modern world where we've got &mdash;
 
 197
 00:10:33,920 --> 00:10:37,750
@@ -1080,7 +1080,7 @@ broadcasting, is still pretty
 
 233
 00:12:50,740 --> 00:12:54,140
-much all-- it's like all
+much all &mdash; it's like all
 still on televisions.
 
 234
@@ -1105,7 +1105,7 @@ in the way people view
 
 238
 00:13:06,720 --> 00:13:08,145
-TV, so we really--
+TV, so we really &mdash;
 
 239
 00:13:08,145 --> 00:13:09,130
@@ -1124,12 +1124,12 @@ interesting blog post that
 242
 00:13:14,505 --> 00:13:16,900
 showed the stats of Netflix
-in the US--
+in the US &mdash;
 
 243
 00:13:16,900 --> 00:13:20,380
 and obviously, it will go to
-other markets as well--
+other markets as well &mdash;
 
 244
 00:13:20,380 --> 00:13:22,640
@@ -1153,7 +1153,7 @@ that's right.
 248
 00:13:27,300 --> 00:13:29,990
 We've got this huge
-move from--
+move from &mdash;
 
 249
 00:13:29,990 --> 00:13:34,040
@@ -1209,7 +1209,7 @@ Absolutely.
 260
 00:13:59,630 --> 00:14:05,630
 And maybe we'll just
-go for the last--
+go for the last &mdash;
 
 261
 00:14:05,630 --> 00:14:08,580
@@ -1322,7 +1322,7 @@ IDO GREEN: Excellent.
 
 284
 00:15:14,800 --> 00:15:15,925
-So--
+So &mdash;
 
 285
 00:15:15,925 --> 00:15:16,850
@@ -1433,11 +1433,11 @@ link there, too.
 308
 00:16:13,690 --> 00:16:15,890
 The other resource I
-would recommend--
+would recommend &mdash;
 
 309
 00:16:15,890 --> 00:16:17,740
-shameless self-promotion--
+shameless self-promotion &mdash;
 
 310
 00:16:17,740 --> 00:16:22,090
@@ -1451,11 +1451,11 @@ chat application,
 
 312
 00:16:26,360 --> 00:16:27,930
-including how to build--
+including how to build &mdash;
 
 313
 00:16:27,930 --> 00:16:28,920
-really, really simple--
+really, really simple &mdash;
 
 314
 00:16:28,920 --> 00:16:31,870

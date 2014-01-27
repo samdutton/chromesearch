@@ -33,11 +33,11 @@ this what we call
 
 8
 00:02:22,150 --> 00:02:22,980
-Google Developer Groups--
+Google Developer Groups &mdash;
 
 9
 00:02:22,980 --> 00:02:23,680
-the GDGs--
+the GDGs &mdash;
 
 10
 00:02:23,680 --> 00:02:28,260
@@ -66,7 +66,7 @@ is also in the studio here
 15
 00:02:39,050 --> 00:02:42,440
 with me in Mountain View for
-Google Developers Live--
+Google Developers Live &mdash;
 
 16
 00:02:42,440 --> 00:02:44,160
@@ -420,11 +420,11 @@ different close mechanism.
 
 91
 00:06:03,740 --> 00:06:05,670
-It doesn't have the typical--
+It doesn't have the typical &mdash;
 
 92
 00:06:05,670 --> 00:06:08,950
-on this Mac that I'm using--
+on this Mac that I'm using &mdash;
 the X, the minus,
 
 93
@@ -924,12 +924,12 @@ we have in the current
 199
 00:11:00,030 --> 00:11:02,910
 packaged app system, where
-all of the resources--
+all of the resources &mdash;
 
 200
 00:11:02,910 --> 00:11:07,130
 the HTML, the JavaScript, the
-CSS, all of the images--
+CSS, all of the images &mdash;
 
 201
 00:11:07,130 --> 00:11:09,190
@@ -953,7 +953,7 @@ Install for any other native
 
 205
 00:11:19,270 --> 00:11:19,870
-application--
+application &mdash;
 
 206
 00:11:19,870 --> 00:11:22,870
@@ -963,7 +963,7 @@ a CD, whether they
 207
 00:11:22,870 --> 00:11:27,400
 install it through an app
-store or whatever--
+store or whatever &mdash;
 
 208
 00:11:27,400 --> 00:11:31,560
@@ -1082,7 +1082,7 @@ gracefully, so that you don't
 232
 00:12:45,770 --> 00:12:48,220
 have to go and handle
-the-- like, ah
+the &mdash; like, ah
 
 233
 00:12:48,220 --> 00:12:49,920
@@ -1268,7 +1268,7 @@ input for web games.
 
 272
 00:14:42,930 --> 00:14:44,300
-Something pretty slick--
+Something pretty slick &mdash;
 
 273
 00:14:44,300 --> 00:14:46,590
@@ -1281,7 +1281,7 @@ We've got networking APIs.
 275
 00:14:48,700 --> 00:14:52,520
 In fact, one of the
-networking APIs--
+networking APIs &mdash;
 
 276
 00:14:52,520 --> 00:14:53,970
@@ -1575,12 +1575,12 @@ sort of as the hub.
 337
 00:17:52,990 --> 00:17:55,510
 If you've written any kind of
-native code-- maybe a native
+native code &mdash; maybe a native
 
 338
 00:17:55,510 --> 00:17:58,420
 mobile app, maybe a Windows
-or a Mac app--
+or a Mac app &mdash;
 
 339
 00:17:58,420 --> 00:18:02,080
@@ -1770,7 +1770,7 @@ other Chrome apps,
 
 378
 00:19:43,430 --> 00:19:44,840
-you don't have to--
+you don't have to &mdash;
 
 379
 00:19:44,840 --> 00:19:46,580
@@ -1906,7 +1906,7 @@ of the great details.
 
 407
 00:21:07,490 --> 00:21:08,610
-Short description of it--
+Short description of it &mdash;
 
 408
 00:21:08,610 --> 00:21:12,820
@@ -2211,7 +2211,7 @@ if in your application you
 
 471
 00:24:26,040 --> 00:24:27,230
-want to be running--
+want to be running &mdash;
 
 472
 00:24:27,230 --> 00:24:31,220
@@ -2444,11 +2444,11 @@ single item, with main.js.
 521
 00:26:58,070 --> 00:27:01,340
 So that's going to say, this
-background script--
+background script &mdash;
 
 522
 00:27:01,340 --> 00:27:02,300
-this main.js--
+this main.js &mdash;
 
 523
 00:27:02,300 --> 00:27:04,690
@@ -2595,7 +2595,7 @@ onLaunched listener.
 553
 00:28:31,420 --> 00:28:38,740
 So launched, add listener,
-and function--
+and function &mdash;
 
 554
 00:28:38,740 --> 00:28:41,490
@@ -2611,7 +2611,7 @@ There we go.
 
 557
 00:28:46,210 --> 00:28:48,140
-Function--
+Function &mdash;
 
 558
 00:28:48,140 --> 00:28:50,820
@@ -2655,7 +2655,7 @@ particular window.
 567
 00:29:11,460 --> 00:29:19,060
 So I want it to open
-at width of 400--
+at width of 400 &mdash;
 
 568
 00:29:19,060 --> 00:29:20,120
@@ -2829,12 +2829,12 @@ on how to get to
 
 605
 00:31:08,840 --> 00:31:10,150
-the Extensions tab--
+the Extensions tab &mdash;
 
 606
 00:31:10,150 --> 00:31:12,380
 I'll just close this so
-that we can see--
+that we can see &mdash;
 
 607
 00:31:12,380 --> 00:31:16,450
@@ -3050,7 +3050,7 @@ well, you can't.
 653
 00:33:09,810 --> 00:33:13,740
 Like Control-Shift-J
-or Command--
+or Command &mdash;
 
 654
 00:33:13,740 --> 00:33:17,070
@@ -3259,7 +3259,7 @@ my main.js.
 698
 00:35:26,330 --> 00:35:28,590
 Now interestingly, with
-this main.js--
+this main.js &mdash;
 
 699
 00:35:28,590 --> 00:35:31,130
@@ -3415,11 +3415,11 @@ first question.
 730
 00:37:13,840 --> 00:37:16,910
 And the first question
-from Rob in Montana--
+from Rob in Montana &mdash;
 
 731
 00:37:16,910 --> 00:37:18,200
-or MT--
+or MT &mdash;
 
 732
 00:37:18,200 --> 00:37:21,870
@@ -3892,7 +3892,7 @@ question in a sec.
 834
 00:41:49,940 --> 00:41:54,060
 I think I see it there on the
-next question so-- what
+next question so &mdash; what
 
 835
 00:41:54,060 --> 00:41:55,760
@@ -4015,7 +4015,7 @@ little bit live here.
 
 860
 00:43:09,690 --> 00:43:11,415
-Well I guess there's--
+Well I guess there's &mdash;
 
 861
 00:43:11,415 --> 00:43:12,900
@@ -4285,7 +4285,7 @@ up there that you can
 
 919
 00:45:42,970 --> 00:45:46,870
-go and-- so if you want to run
+go and &mdash; so if you want to run
 through a similar slide deck,
 
 920
@@ -4315,7 +4315,7 @@ some more stuff.
 
 925
 00:46:01,810 --> 00:46:06,330
-One of the really cool ones--
+One of the really cool ones &mdash;
 and in fact, I'm going to stop
 
 926
@@ -4334,7 +4334,7 @@ think, a cool video.
 929
 00:46:11,180 --> 00:46:14,620
 When we first started working on
-Chrome apps at Google-- or
+Chrome apps at Google &mdash; or
 
 930
 00:46:14,620 --> 00:46:18,310
@@ -4410,7 +4410,7 @@ get, but it is
 
 945
 00:46:56,070 --> 00:46:58,460
-absolutely worth every penny--
+absolutely worth every penny &mdash;
 
 946
 00:46:58,460 --> 00:47:00,140
@@ -4419,7 +4419,7 @@ two of them because you'll
 
 947
 00:47:00,140 --> 00:47:01,050
-wreck one--
+wreck one &mdash;
 
 948
 00:47:01,050 --> 00:47:02,890
@@ -4531,7 +4531,7 @@ how do I go get stuff?
 
 971
 00:48:08,300 --> 00:48:09,890
-Or how do I go--
+Or how do I go &mdash;
 
 972
 00:48:09,890 --> 00:48:12,510
@@ -4567,11 +4567,11 @@ do it is obviously making XML
 
 979
 00:48:24,242 --> 00:48:25,530
-HTTP requests--
+HTTP requests &mdash;
 
 980
 00:48:25,530 --> 00:48:28,100
-AJAX request-- to go pull
+AJAX request &mdash; to go pull
 the stuff down.
 
 981
@@ -4808,7 +4808,7 @@ available on Google TV.
 1030
 00:50:50,780 --> 00:50:55,175
 So because we're going
-to wrap these as--
+to wrap these as &mdash;
 
 1031
 00:50:55,175 --> 00:50:57,530
@@ -4938,12 +4938,12 @@ I love on the internet.
 1058
 00:52:21,760 --> 00:52:23,830
 "How do the limitations
-of access--
+of access &mdash;
 
 1059
 00:52:23,830 --> 00:52:26,090
 for example, filesystem,
-and getusermedia--
+and getusermedia &mdash;
 
 1060
 00:52:26,090 --> 00:52:30,280
@@ -4962,7 +4962,7 @@ permission, you still will
 1063
 00:52:35,910 --> 00:52:39,840
 either need to ask for
-that permission, or--
+that permission, or &mdash;
 
 1064
 00:52:39,840 --> 00:52:41,920
@@ -5029,7 +5029,7 @@ your manifest file.
 1077
 00:53:16,100 --> 00:53:19,570
 So next question
-from maxw3st--
+from maxw3st &mdash;
 
 1078
 00:53:19,570 --> 00:53:21,820
@@ -5130,7 +5130,7 @@ through something else.
 1098
 00:54:27,030 --> 00:54:30,110
 But you could do that
-exactly through--
+exactly through &mdash;
 
 1099
 00:54:30,110 --> 00:54:32,870
@@ -5212,7 +5212,7 @@ apps run beautifully.
 
 1116
 00:55:20,400 --> 00:55:22,610
-And that's why we are--
+And that's why we are &mdash;
 
 1117
 00:55:22,610 --> 00:55:24,510
@@ -5245,7 +5245,7 @@ I mentioned this earlier.
 1123
 00:55:36,910 --> 00:55:40,490
 By having the engineers
-work on Cordova--
+work on Cordova &mdash;
 
 1124
 00:55:40,490 --> 00:55:43,750
@@ -5301,7 +5301,7 @@ out how to do these.
 1135
 00:56:17,320 --> 00:56:20,210
 One of the things that I
-just want to put up--
+just want to put up &mdash;
 
 1136
 00:56:20,210 --> 00:56:23,510
@@ -5500,7 +5500,7 @@ up for today.
 
 1177
 00:58:18,010 --> 00:58:22,160
-And Dex, your question-- you
+And Dex, your question &mdash; you
 get to be the last one.
 
 1178
@@ -5699,7 +5699,7 @@ put it politely.
 
 1220
 01:00:16,460 --> 01:00:17,550
-And then the final question--
+And then the final question &mdash;
 
 1221
 01:00:17,550 --> 01:00:18,790

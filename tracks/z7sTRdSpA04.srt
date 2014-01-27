@@ -56,12 +56,12 @@ and I bring the console using
 13
 00:00:18,990 --> 00:00:21,140
 the Escape key on the
-keyboard-- and you can also
+keyboard &mdash; and you can also
 
 14
 00:00:21,140 --> 00:00:23,230
 use this icon up
-here-- you'll see
+here &mdash; you'll see
 
 15
 00:00:23,230 --> 00:00:25,142

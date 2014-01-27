@@ -307,12 +307,12 @@ really interesting.
 
 68
 00:02:25,390 --> 00:02:27,240
-You look at the web-- and it
+You look at the web &mdash; and it
 was talked about today in
 
 69
 00:02:27,240 --> 00:02:27,850
-today's keynote--
+today's keynote &mdash;
 
 70
 00:02:27,850 --> 00:02:29,470
@@ -686,7 +686,7 @@ you look at the
 
 148
 00:05:12,500 --> 00:05:13,730
-complexity in the code base--
+complexity in the code base &mdash;
 
 149
 00:05:13,730 --> 00:05:15,490
@@ -696,7 +696,7 @@ and we had our initial blog
 150
 00:05:15,490 --> 00:05:17,200
 posts and the reactions
-to it--
+to it &mdash;
 
 151
 00:05:17,200 --> 00:05:19,860
@@ -1029,7 +1029,7 @@ has Blink in it.
 220
 00:07:43,735 --> 00:07:46,540
 So if you want to try
-it out, but--
+it out, but &mdash;
 
 221
 00:07:46,540 --> 00:07:47,440
@@ -1079,12 +1079,12 @@ things that's been really cool
 
 231
 00:08:00,020 --> 00:08:00,760
-for me for the Pixel--
+for me for the Pixel &mdash;
 
 232
 00:08:00,760 --> 00:08:03,660
 I know we have a conversation
-about that tomorrow--
+about that tomorrow &mdash;
 
 233
 00:08:03,660 --> 00:08:07,420

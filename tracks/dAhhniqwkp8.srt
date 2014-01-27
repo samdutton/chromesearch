@@ -36,7 +36,7 @@ But we are up and running now.
 
 9
 00:00:23,510 --> 00:00:26,220
-So just to introduce myself--
+So just to introduce myself &mdash;
 my name is Sam Dutton.
 
 10
@@ -217,7 +217,7 @@ services that
 
 47
 00:02:16,390 --> 00:02:18,210
-do stuff like this--
+do stuff like this &mdash;
 
 48
 00:02:18,210 --> 00:02:20,600
@@ -289,7 +289,7 @@ able to exchange, between
 62
 00:03:07,820 --> 00:03:11,850
 peers, information about media
-and configuration--
+and configuration &mdash;
 
 63
 00:03:11,850 --> 00:03:15,350
@@ -387,8 +387,8 @@ format, and so on.
 
 82
 00:04:25,710 --> 00:04:28,370
-And we also-- this is
-very important--
+And we also &mdash; this is
+very important &mdash;
 
 83
 00:04:28,370 --> 00:04:31,600
@@ -397,7 +397,7 @@ applications are going to be
 
 84
 00:04:31,600 --> 00:04:33,720
-behind net gateways--
+behind net gateways &mdash;
 
 85
 00:04:33,720 --> 00:04:34,970
@@ -472,7 +472,7 @@ out more about
 
 100
 00:05:28,200 --> 00:05:30,560
-getUserMedia, the sort of--
+getUserMedia, the sort of &mdash;
 
 101
 00:05:30,560 --> 00:05:36,030
@@ -481,7 +481,7 @@ terms of stuff for using media
 
 102
 00:05:36,030 --> 00:05:38,860
-stream-- take a look
+stream &mdash; take a look
 at the HTML5 Rocks.
 
 103
@@ -727,7 +727,7 @@ servers that can
 154
 00:08:32,280 --> 00:08:34,059
 do various things like
-a traditional--
+a traditional &mdash;
 
 155
 00:08:34,059 --> 00:08:36,419
@@ -764,7 +764,7 @@ technology per se, but
 
 162
 00:08:56,820 --> 00:08:58,860
-you can create it using--
+you can create it using &mdash;
 
 163
 00:08:58,860 --> 00:09:03,070
@@ -832,7 +832,7 @@ SAM DUTTON: Thanks very much.
 177
 00:09:38,210 --> 00:09:40,182
 One thing I'd like
-to clear up--
+to clear up &mdash;
 
 178
 00:09:40,182 --> 00:09:44,220
@@ -866,7 +866,7 @@ talk us through that.
 184
 00:09:56,610 --> 00:09:59,860
 So the three specific things I'm
-talking about are-- well,
+talking about are &mdash; well,
 
 185
 00:09:59,860 --> 00:10:04,370
@@ -902,7 +902,7 @@ is a confusing area.
 192
 00:10:18,780 --> 00:10:21,060
 In part it's because
-the technology--
+the technology &mdash;
 
 193
 00:10:21,060 --> 00:10:23,490
@@ -946,7 +946,7 @@ authors of STUN have changed
 201
 00:10:52,510 --> 00:10:56,480
 the acronym that STUN means
-over time-- from being one
+over time &mdash; from being one
 
 202
 00:10:56,480 --> 00:10:58,730
@@ -1613,7 +1613,7 @@ application.
 343
 00:17:51,450 --> 00:17:56,680
 And by providing great tools
-built in-- we'll have support
+built in &mdash; we'll have support
 
 344
 00:17:56,680 --> 00:17:59,130
@@ -1622,7 +1622,7 @@ reliable data and
 
 345
 00:17:59,130 --> 00:18:01,630
-things like flow control--
+things like flow control &mdash;
 
 346
 00:18:01,630 --> 00:18:05,510
@@ -1905,7 +1905,7 @@ call those by a different
 
 404
 00:21:13,140 --> 00:21:16,640
-name-- peer connection, 00,
+name &mdash; peer connection, 00,
 something like that.
 
 405
@@ -1923,7 +1923,7 @@ for Tommy.
 
 408
 00:21:23,730 --> 00:21:24,350
-Tommy Widenflycht: So--
+Tommy Widenflycht: So &mdash;
 
 409
 00:21:24,350 --> 00:21:27,570
@@ -1969,7 +1969,7 @@ have 640-wide video.
 
 418
 00:22:00,210 --> 00:22:01,530
-And that can be--
+And that can be &mdash;
 
 419
 00:22:01,530 --> 00:22:04,230
@@ -2196,7 +2196,7 @@ When will appear in Chrome?"
 467
 00:24:35,440 --> 00:24:39,840
 Before we answer that, just one
-thing I'd like to-- just a
+thing I'd like to &mdash; just a
 
 468
 00:24:39,840 --> 00:24:42,940
@@ -2621,7 +2621,7 @@ kick this off.
 558
 00:29:29,310 --> 00:29:32,995
 SERGE LACHAPELLE: So JSEP
-means JavaScript--
+means JavaScript &mdash;
 
 559
 00:29:32,995 --> 00:29:36,010
@@ -2792,7 +2792,7 @@ developers, from Matt in
 
 595
 00:31:33,051 --> 00:31:35,390
-the United States-- "How
+the United States &mdash; "How
 is security handled?
 
 596

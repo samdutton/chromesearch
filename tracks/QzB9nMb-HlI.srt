@@ -311,7 +311,7 @@ number of users you have.
 67
 00:02:58,590 --> 00:03:01,480
 And now you're faced with the
-task of-- can I even by
+task of &mdash; can I even by
 
 68
 00:03:01,480 --> 00:03:02,770
@@ -513,7 +513,7 @@ Search, we had the
 
 110
 00:04:54,850 --> 00:04:59,000
-problems of-- how do you deal
+problems of &mdash; how do you deal
 with going from thousands of
 
 111
@@ -688,12 +688,12 @@ US to Asia Pacific.
 147
 00:06:43,020 --> 00:06:45,450
 In fact, we're the
-only non-telco--
+only non-telco &mdash;
 
 148
 00:06:45,450 --> 00:06:47,220
 non telecommunications
-company--
+company &mdash;
 
 149
 00:06:47,220 --> 00:06:52,560
@@ -716,11 +716,11 @@ centers in Asia Pacific.
 
 153
 00:07:01,100 --> 00:07:02,440
-And this picture here--
+And this picture here &mdash;
 
 154
 00:07:02,440 --> 00:07:04,230
-see in the middle-- actually
+see in the middle &mdash; actually
 you can't quite see it, is
 
 155
@@ -946,7 +946,7 @@ come look at our product.
 
 202
 00:09:20,000 --> 00:09:20,550
-Wired--
+Wired &mdash;
 
 203
 00:09:20,550 --> 00:09:23,560
@@ -1200,7 +1200,7 @@ provide auto scaling, auto
 
 256
 00:11:37,230 --> 00:11:38,340
-load balancing--
+load balancing &mdash;
 
 257
 00:11:38,340 --> 00:11:41,870
@@ -1532,7 +1532,7 @@ fast start up times.
 326
 00:14:48,670 --> 00:14:51,490
 We have virtual machines
-that launch--
+that launch &mdash;
 
 327
 00:14:51,490 --> 00:14:53,890
@@ -1557,7 +1557,7 @@ to lower that further.
 331
 00:15:03,540 --> 00:15:05,970
 And if you think about that,
-that again-- that changes how
+that again &mdash; that changes how
 
 332
 00:15:05,970 --> 00:15:07,240
@@ -1613,11 +1613,11 @@ and instance types.
 343
 00:15:32,570 --> 00:15:37,710
 Everything from a fraction of
-a core if you're running--
+a core if you're running &mdash;
 
 344
 00:15:37,710 --> 00:15:40,650
-I think we have 1/5 of core-- so
+I think we have 1/5 of core &mdash; so
 if you're running very like
 
 345
@@ -2071,8 +2071,8 @@ Python and Go.
 
 440
 00:19:55,090 --> 00:19:57,050
-We've just now rolled out--
-we announced at I/O--
+We've just now rolled out &mdash;
+we announced at I/O &mdash;
 
 441
 00:19:57,050 --> 00:19:58,620
@@ -2270,7 +2270,7 @@ the equivalent of Google
 483
 00:21:35,700 --> 00:21:39,600
 Drive, in that your application
-has its own-- your
+has its own &mdash; your
 
 484
 00:21:39,600 --> 00:21:41,660
@@ -2342,7 +2342,7 @@ one at a time.
 498
 00:22:19,170 --> 00:22:22,780
 NoSQL, key value pairs,
-SQL storage--
+SQL storage &mdash;
 
 499
 00:22:22,780 --> 00:22:24,120
@@ -2350,15 +2350,15 @@ so traditional [? scheme ?]
 
 500
 00:22:24,120 --> 00:22:25,140
-environment--
+environment &mdash;
 
 501
 00:22:25,140 --> 00:22:27,030
-blob store--
+blob store &mdash;
 
 502
 00:22:27,030 --> 00:22:28,450
-in terms of cloud storage--
+in terms of cloud storage &mdash;
 
 503
 00:22:28,450 --> 00:22:30,150
@@ -2489,7 +2489,7 @@ Accessible anywhere.
 
 530
 00:23:47,010 --> 00:23:49,260
-This is the same--
+This is the same &mdash;
 
 531
 00:23:49,260 --> 00:23:51,590
@@ -2514,7 +2514,7 @@ accessed from Compute Engine,
 535
 00:23:59,630 --> 00:24:02,250
 from App Engine, actually
-even from Amazon--
+even from Amazon &mdash;
 
 536
 00:24:02,250 --> 00:24:06,550
@@ -2569,11 +2569,11 @@ your data across
 
 547
 00:24:34,030 --> 00:24:35,230
-multiple data centers--
+multiple data centers &mdash;
 
 548
 00:24:35,230 --> 00:24:36,610
-as many as five--
+as many as five &mdash;
 
 549
 00:24:36,610 --> 00:24:39,780
@@ -2592,12 +2592,12 @@ reliability that's far beyond
 
 552
 00:24:46,530 --> 00:24:47,970
-what you would get from--
+what you would get from &mdash;
 certainly from
 
 553
 00:24:47,970 --> 00:24:49,370
-any on premise system--
+any on premise system &mdash;
 
 554
 00:24:49,370 --> 00:24:52,800
@@ -2607,11 +2607,11 @@ cloud providers.
 555
 00:24:52,800 --> 00:24:54,820
 The statistic I find
-shocking--
+shocking &mdash;
 
 556
 00:24:54,820 --> 00:24:58,020
-or pleasantly surprised in--
+or pleasantly surprised in &mdash;
 
 557
 00:24:58,020 --> 00:25:01,970
@@ -2661,7 +2661,7 @@ just simply add new data.
 567
 00:25:25,470 --> 00:25:27,600
 You don't ever have
-to do a SQL--
+to do a SQL &mdash;
 
 568
 00:25:27,600 --> 00:25:30,050
@@ -2775,11 +2775,11 @@ what you're doing.
 
 592
 00:26:33,480 --> 00:26:35,000
-Datastore is--
+Datastore is &mdash;
 
 593
 00:26:35,000 --> 00:26:39,420
-like I said-- a NoSQL, and
+like I said &mdash; a NoSQL, and
 it's designed around very
 
 594
@@ -2833,7 +2833,7 @@ is the third major category.
 605
 00:27:04,740 --> 00:27:07,330
 BigQuery is a set of
-technologies--
+technologies &mdash;
 
 606
 00:27:07,330 --> 00:27:09,660
@@ -2954,7 +2954,7 @@ a SQL-like interface.
 631
 00:28:18,410 --> 00:28:21,170
 A great use for this case is
-just what we use it for--
+just what we use it for &mdash;
 
 632
 00:28:21,170 --> 00:28:22,710
@@ -3035,11 +3035,11 @@ data logic.
 
 649
 00:29:04,720 --> 00:29:06,230
-Because mobile applications--
+Because mobile applications &mdash;
 
 650
 00:29:06,230 --> 00:29:07,320
-even games--
+even games &mdash;
 
 651
 00:29:07,320 --> 00:29:09,980
@@ -3263,7 +3263,7 @@ compute side.
 697
 00:31:12,480 --> 00:31:17,640
 Song Pop is a game
-that allows--
+that allows &mdash;
 
 698
 00:31:17,640 --> 00:31:21,040
@@ -3305,7 +3305,7 @@ Everybody, right?
 
 706
 00:31:39,220 --> 00:31:41,730
-Eurovision, this year-- they
+Eurovision, this year &mdash; they
 were faced with the problem of
 
 707
@@ -3548,7 +3548,7 @@ crashed and burned.
 758
 00:33:59,700 --> 00:34:01,300
 Last thing I want to talk
-about-- just raw
+about &mdash; just raw
 
 759
 00:34:01,300 --> 00:34:03,970
@@ -3608,7 +3608,7 @@ order of about a million
 
 771
 00:34:38,474 --> 00:34:40,630
-dollars-- the hardware.
+dollars &mdash; the hardware.
 
 772
 00:34:40,630 --> 00:34:43,250
@@ -3618,12 +3618,12 @@ publicly available cloud
 773
 00:34:43,250 --> 00:34:47,409
 platform with Compute
-Engine for--
+Engine for &mdash;
 
 774
 00:34:47,409 --> 00:34:48,750
 I'll have to look
-up the number--
+up the number &mdash;
 
 775
 00:34:48,750 --> 00:34:51,540

@@ -36,7 +36,7 @@ out there would like to ask
 
 9
 00:00:11,350 --> 00:00:12,600
-questions--
+questions &mdash;
 
 10
 00:00:12,600 --> 00:00:22,630
@@ -106,7 +106,7 @@ with you.
 24
 00:01:11,330 --> 00:01:15,070
 And we are hopefully if
-I'm jumping-- yeah.
+I'm jumping &mdash; yeah.
 
 25
 00:01:15,070 --> 00:01:19,260
@@ -159,7 +159,7 @@ there is that today in
 
 35
 00:01:56,810 --> 00:01:57,980
-modern browsers--
+modern browsers &mdash;
 
 36
 00:01:57,980 --> 00:02:00,960
@@ -168,7 +168,7 @@ actually implementing this
 
 37
 00:02:00,960 --> 00:02:03,750
-important HTML5 feature--
+important HTML5 feature &mdash;
 
 38
 00:02:03,750 --> 00:02:05,610
@@ -353,11 +353,11 @@ in the way that we are
 
 76
 00:04:16,570 --> 00:04:18,730
-transmitting big data--
+transmitting big data &mdash;
 
 77
 00:04:18,730 --> 00:04:20,329
-again with a half a smile--
+again with a half a smile &mdash;
 
 78
 00:04:20,329 --> 00:04:24,380
@@ -488,12 +488,12 @@ debug web workers.
 
 105
 00:05:44,740 --> 00:05:47,520
-As you could see here--
+As you could see here &mdash;
 let me just load this
 
 106
 00:05:47,520 --> 00:05:50,240
-page from the start--
+page from the start &mdash;
 
 107
 00:05:50,240 --> 00:05:54,040
@@ -599,7 +599,7 @@ an event listener.
 
 129
 00:07:12,350 --> 00:07:14,930
-And I'm getting two messages--
+And I'm getting two messages &mdash;
 
 130
 00:07:14,930 --> 00:07:17,550
@@ -664,7 +664,7 @@ Here it is.
 143
 00:07:57,690 --> 00:08:00,430
 And as you could see
-here nicely--
+here nicely &mdash;
 
 144
 00:08:00,430 --> 00:08:03,666
@@ -706,11 +706,11 @@ steps back and just let me
 
 152
 00:08:29,960 --> 00:08:31,175
-share with you--
+share with you &mdash;
 
 153
 00:08:31,175 --> 00:08:33,169
-let's close this one--
+let's close this one &mdash;
 
 154
 00:08:33,169 --> 00:08:36,530
@@ -728,7 +728,7 @@ want to see in a web worker?
 
 157
 00:08:43,530 --> 00:08:51,540
-So let me here just go--
+So let me here just go &mdash;
 
 158
 00:08:51,540 --> 00:08:52,790
@@ -807,7 +807,7 @@ IDO GREEN: Yes.
 
 177
 00:09:48,070 --> 00:09:49,330
-So what we have basically--
+So what we have basically &mdash;
 
 178
 00:09:49,330 --> 00:09:58,740
@@ -985,7 +985,7 @@ just sending at the
 
 216
 00:11:58,830 --> 00:12:00,000
-beginning some settings--
+beginning some settings &mdash;
 
 217
 00:12:00,000 --> 00:12:03,170
@@ -1089,7 +1089,7 @@ and it will do the right
 
 238
 00:13:07,060 --> 00:13:07,550
-things with it--
+things with it &mdash;
 
 239
 00:13:07,550 --> 00:13:11,820
@@ -1112,7 +1112,7 @@ to note and are quite
 
 243
 00:13:21,460 --> 00:13:23,570
-important, actually--
+important, actually &mdash;
 
 244
 00:13:23,570 --> 00:13:29,390
@@ -1167,7 +1167,7 @@ everything that you do after
 
 255
 00:14:07,760 --> 00:14:10,220
-that-- if it's true, of course,
+that &mdash; if it's true, of course,
 letting you know that
 
 256
@@ -1259,7 +1259,7 @@ With that.
 
 274
 00:15:12,910 --> 00:15:14,100
-On Source tab--
+On Source tab &mdash;
 
 275
 00:15:14,100 --> 00:15:15,200
@@ -1268,7 +1268,7 @@ as you saw what I did.
 276
 00:15:15,200 --> 00:15:16,990
 I just went to the
-Source tab--
+Source tab &mdash;
 
 277
 00:15:16,990 --> 00:15:18,780
@@ -1417,7 +1417,7 @@ Let me make it a bit bigger.
 309
 00:16:49,950 --> 00:16:53,290
 And the easiest way
-to do it is just--
+to do it is just &mdash;
 
 310
 00:16:53,290 --> 00:16:56,762

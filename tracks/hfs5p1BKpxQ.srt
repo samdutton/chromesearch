@@ -86,7 +86,7 @@ to you about something
 
 19
 00:00:45,210 --> 00:00:47,310
-we think is really great--
+we think is really great &mdash;
 Portable Native Client.
 
 20
@@ -149,7 +149,7 @@ a website that you're
 
 32
 00:01:14,030 --> 00:01:17,090
-navigating to-- these are
+navigating to &mdash; these are
 all starting to emerge.
 
 33
@@ -449,7 +449,7 @@ our web applications.
 99
 00:04:00,430 --> 00:04:02,110
 Back in the day,
-AutoCAD-- it really
+AutoCAD &mdash; it really
 
 100
 00:04:02,110 --> 00:04:04,370
@@ -776,7 +776,7 @@ interaction that way.
 166
 00:07:02,700 --> 00:07:05,689
 And also, the plugins
-tended to be-- well,
+tended to be &mdash; well,
 
 167
 00:07:05,689 --> 00:07:07,480
@@ -857,8 +857,8 @@ we see security issues that
 
 183
 00:07:47,080 --> 00:07:50,400
-have become-- and this is
-2009, 2010 from Symantec--
+have become &mdash; and this is
+2009, 2010 from Symantec &mdash;
 
 184
 00:07:50,400 --> 00:07:55,770
@@ -944,7 +944,7 @@ get the access to the features
 201
 00:08:39,110 --> 00:08:41,159
 that you're after and
-some of the performance--
+some of the performance &mdash;
 
 202
 00:08:41,159 --> 00:08:43,039
@@ -1063,12 +1063,12 @@ Client Project was
 226
 00:09:42,080 --> 00:09:45,340
 about bringing native
-capabilities-- threads,
+capabilities &mdash; threads,
 
 227
 00:09:45,340 --> 00:09:48,260
 [? sending ?] instructions, et
-cetera-- from the beginning.
+cetera &mdash; from the beginning.
 
 228
 00:09:48,260 --> 00:09:49,230
@@ -1300,7 +1300,7 @@ All right, fine.
 
 277
 00:11:40,230 --> 00:11:45,210
-I can also-- this is an example
+I can also &mdash; this is an example
 of Lua, a Lua interpreter.
 
 278
@@ -1320,7 +1320,7 @@ here, on the web.
 
 281
 00:11:53,310 --> 00:11:55,114
-Here I have a--
+Here I have a &mdash;
 well, actually, I
 
 282
@@ -1331,11 +1331,11 @@ is going to render
 283
 00:11:56,655 --> 00:11:59,990
 very well in our
-weirdly-- oh, donuts.
+weirdly &mdash; oh, donuts.
 
 284
 00:11:59,990 --> 00:12:01,780
-That's surprisingly--
+That's surprisingly &mdash;
 
 285
 00:12:01,780 --> 00:12:03,880
@@ -1675,7 +1675,7 @@ other desktop platforms
 
 355
 00:14:55,180 --> 00:14:58,980
-that Chrome runs on-- Windows,
+that Chrome runs on &mdash; Windows,
 Mac, Linux, Chrome OS.
 
 356
@@ -1750,11 +1750,11 @@ PNaCl application,
 371
 00:15:29,520 --> 00:15:32,780
 you'd compile your C++ file
-to a portable executable--
+to a portable executable &mdash;
 
 372
 00:15:32,780 --> 00:15:35,560
-what we call a pexe-- and
+what we call a pexe &mdash; and
 that talks to the Pepper API,
 
 373
@@ -2066,7 +2066,7 @@ using our toolchain.
 
 440
 00:18:27,510 --> 00:18:29,710
-And you add this-- again,
+And you add this &mdash; again,
 we have a manifest file.
 
 441
@@ -2199,7 +2199,7 @@ actually runs on your platform.
 468
 00:19:33,150 --> 00:19:36,540
 And running on
-your platform-- OK,
+your platform &mdash; OK,
 
 469
 00:19:36,540 --> 00:19:40,880
@@ -2228,7 +2228,7 @@ only execute instructions
 
 474
 00:19:56,750 --> 00:20:00,730
-that we've looked at--
+that we've looked at &mdash;
 the browser's looked at.
 
 475
@@ -2381,7 +2381,7 @@ running in an outer sandbox.
 
 506
 00:21:31,000 --> 00:21:35,310
-And so one more thing-- the
+And so one more thing &mdash; the
 Native Client sandbox is also
 
 507
@@ -2397,7 +2397,7 @@ inside of sandboxes.
 509
 00:21:39,530 --> 00:21:43,630
 For the "Inception"
-challenge, that's-- anyway.
+challenge, that's &mdash; anyway.
 
 510
 00:21:43,630 --> 00:21:46,780

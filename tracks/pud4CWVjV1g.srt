@@ -166,7 +166,7 @@ CHARLES: Sure, Eve. So if we switch to my
 34
 00:03:22,740 --> 00:03:29,690
 screen here, I have a very simple example
-running. And what you'll see is that-- I'm
+running. And what you'll see is that &mdash; I'm
 
 35
 00:03:29,690 --> 00:03:34,110
@@ -686,7 +686,7 @@ role="alert" And let's try this again.
 138
 00:14:15,180 --> 00:14:20,440
 CHROMEVOX: Window Button and Alert. Example
-Tab. Button and-- Button and Alert.
+Tab. Button and &mdash; Button and Alert.
 
 139
 00:14:20,440 --> 00:14:24,959
@@ -910,7 +910,7 @@ it properly, it will not work for that audience.
 
 183
 00:17:43,220 --> 00:17:47,369
-However, if you expanded-- if you took a step
+However, if you expanded &mdash; if you took a step
 back and thought about the problem you're
 
 184

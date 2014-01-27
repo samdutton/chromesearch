@@ -138,12 +138,12 @@ by tooling.
 
 31
 00:01:36,790 --> 00:01:37,980
-This is one approach--
+This is one approach &mdash;
 
 32
 00:01:37,980 --> 00:01:39,650
 Addy Osmani and I
-worked on this--
+worked on this &mdash;
 
 33
 00:01:39,650 --> 00:01:42,480
@@ -171,12 +171,12 @@ were thinking about something
 
 38
 00:01:53,040 --> 00:01:54,220
-along these lines, too--
+along these lines, too &mdash;
 
 39
 00:01:54,220 --> 00:01:56,330
 this is very much in
-the tooling vein--
+the tooling vein &mdash;
 
 40
 00:01:56,330 --> 00:01:59,970
@@ -269,7 +269,7 @@ screwing up or not?
 59
 00:02:37,810 --> 00:02:40,310
 One of the projects that's
-listed here--
+listed here &mdash;
 
 60
 00:02:40,310 --> 00:02:44,560
@@ -665,7 +665,7 @@ thing, but on top of
 
 145
 00:06:07,720 --> 00:06:08,740
-this, it will add--
+this, it will add &mdash;
 
 146
 00:06:08,740 --> 00:06:10,430
@@ -767,7 +767,7 @@ device, and I'm able to kind
 
 167
 00:07:06,860 --> 00:07:08,480
-of play around with it--
+of play around with it &mdash;
 
 168
 00:07:08,480 --> 00:07:08,910
@@ -775,7 +775,7 @@ of play around with it--
 
 169
 00:07:08,910 --> 00:07:10,410
-Google News--
+Google News &mdash;
 
 170
 00:07:10,410 --> 00:07:11,440
@@ -783,7 +783,7 @@ and click around.
 
 171
 00:07:11,440 --> 00:07:13,560
-I can also do--
+I can also do &mdash;
 
 172
 00:07:13,560 --> 00:07:18,790
@@ -1399,14 +1399,14 @@ But check this out.
 
 306
 00:12:43,130 --> 00:12:44,380
-I add both of them--
+I add both of them &mdash;
 
 307
 00:12:44,380 --> 00:12:46,880
 
 308
 00:12:46,880 --> 00:12:48,460
-ooh--
+ooh &mdash;
 
 309
 00:12:48,460 --> 00:12:50,770
@@ -1460,7 +1460,7 @@ that has been done recently.
 
 320
 00:13:16,405 --> 00:13:17,670
-So--
+So &mdash;
 
 321
 00:13:17,670 --> 00:13:18,480
@@ -1526,7 +1526,7 @@ multi-threaded painting.
 
 335
 00:13:52,080 --> 00:13:55,820
-And so here--
+And so here &mdash;
 
 336
 00:13:55,820 --> 00:13:57,780
@@ -1549,11 +1549,11 @@ That's cool.
 
 340
 00:14:06,290 --> 00:14:07,210
-Another thing--
+Another thing &mdash;
 
 341
 00:14:07,210 --> 00:14:09,430
-you might be able to see it--
+you might be able to see it &mdash;
 is the text actually gets a
 
 342
@@ -1602,7 +1602,7 @@ before as well.
 
 351
 00:14:35,000 --> 00:14:36,370
-Here, we get kind of--
+Here, we get kind of &mdash;
 
 352
 00:14:36,370 --> 00:14:38,270
@@ -1912,7 +1912,7 @@ all we have as intro.
 417
 00:17:35,440 --> 00:17:38,870
 So there is, like, 30 questions
-on Moderator--
+on Moderator &mdash;
 
 418
 00:17:38,870 --> 00:17:39,330
@@ -1948,7 +1948,7 @@ biggest pain points in the
 
 425
 00:18:17,250 --> 00:18:18,280
-mobile test--
+mobile test &mdash;
 
 426
 00:18:18,280 --> 00:18:19,840
@@ -1988,16 +1988,16 @@ and that's horrible for me.
 434
 00:18:45,610 --> 00:18:47,790
 And that has kind of
-set me up to--
+set me up to &mdash;
 
 435
 00:18:47,790 --> 00:18:51,180
 I've started a project
-in my company--
+in my company &mdash;
 
 436
 00:18:51,180 --> 00:18:54,660
-very, very early days-- where
+very, very early days &mdash; where
 I'm trying to get the point,
 
 437
@@ -2007,12 +2007,12 @@ Tools to debug every single
 
 438
 00:18:58,010 --> 00:19:00,940
-mobile platform--
+mobile platform &mdash;
 
 439
 00:19:00,940 --> 00:19:06,170
 Safari, Firefox, Opera, Chrome,
-Windows, all of them--
+Windows, all of them &mdash;
 
 440
 00:19:06,170 --> 00:19:07,860
@@ -2363,7 +2363,7 @@ looking into.
 515
 00:22:34,850 --> 00:22:37,010
 The other part that I think is
-important-- and I mentioned
+important &mdash; and I mentioned
 
 516
 00:22:37,010 --> 00:22:41,630
@@ -2392,7 +2392,7 @@ have the device there.
 521
 00:22:53,960 --> 00:22:59,700
 But I do think that
-having access to--
+having access to &mdash;
 
 522
 00:22:59,700 --> 00:23:04,200
@@ -2439,7 +2439,7 @@ can start this.
 531
 00:23:25,534 --> 00:23:29,760
 DAVID BLOOMAN: Yeah,
-so I've tried to--
+so I've tried to &mdash;
 
 532
 00:23:29,760 --> 00:23:32,990
@@ -3041,11 +3041,11 @@ using the browser as
 
 658
 00:29:37,970 --> 00:29:41,550
-my development--
+my development &mdash;
 
 659
 00:29:41,550 --> 00:29:43,722
-an IDE by IDE--
+an IDE by IDE &mdash;
 
 660
 00:29:43,722 --> 00:29:44,890
@@ -3076,7 +3076,7 @@ close to that.
 666
 00:29:56,502 --> 00:29:59,393
 And I see some of my guys
-working, using--
+working, using &mdash;
 
 667
 00:29:59,393 --> 00:30:02,795
@@ -3157,7 +3157,7 @@ I'm much more
 683
 00:30:42,200 --> 00:30:46,110
 towards the end of using the
-browser as close as--
+browser as close as &mdash;
 
 684
 00:30:46,110 --> 00:30:49,980
@@ -3207,7 +3207,7 @@ for me.
 
 694
 00:31:16,560 --> 00:31:17,210
-Event proxying--
+Event proxying &mdash;
 
 695
 00:31:17,210 --> 00:31:19,080
@@ -3588,7 +3588,7 @@ comfortable using the command
 
 774
 00:34:49,429 --> 00:34:51,602
-line or coding up--
+line or coding up &mdash;
 
 775
 00:34:51,602 --> 00:34:53,240
@@ -3673,7 +3673,7 @@ give Opera props,
 
 793
 00:35:31,180 --> 00:35:34,050
-isn't the Opera emulator--
+isn't the Opera emulator &mdash;
 
 794
 00:35:34,050 --> 00:35:34,940
@@ -3753,7 +3753,7 @@ just a flat no.
 811
 00:36:02,800 --> 00:36:05,090
 I think the Pareto principle
-is going to kick in here--
+is going to kick in here &mdash;
 
 812
 00:36:05,090 --> 00:36:07,550
@@ -4051,7 +4051,7 @@ out the door
 
 874
 00:38:36,670 --> 00:38:38,340
-versus actually caring--
+versus actually caring &mdash;
 
 875
 00:38:38,340 --> 00:38:40,530
@@ -4060,7 +4060,7 @@ terminology, since we're about
 
 876
 00:38:40,530 --> 00:38:43,240
-to have beers-- giving enough
+to have beers &mdash; giving enough
 shits about getting their
 
 877
@@ -4424,7 +4424,7 @@ At least no in the short term.
 
 956
 00:42:08,190 --> 00:42:10,070
-In the long term--
+In the long term &mdash;
 
 957
 00:42:10,070 --> 00:42:13,310
@@ -4434,12 +4434,12 @@ you'll be able to use
 958
 00:42:13,310 --> 00:42:16,490
 tools like Tracer and
-other transpilers--
+other transpilers &mdash;
 
 959
 00:42:16,490 --> 00:42:18,540
 JavaScript to JavaScript
-compilers--
+compilers &mdash;
 
 960
 00:42:18,540 --> 00:42:22,160
@@ -4579,12 +4579,12 @@ a standards body.
 988
 00:43:30,800 --> 00:43:33,030
 My view is that the role of a
-standards body-- and this is
+standards body &mdash; and this is
 
 989
 00:43:33,030 --> 00:43:36,430
 not the TAG's view, but it's my
-personal view-- is that the
+personal view &mdash; is that the
 
 990
 00:43:36,430 --> 00:43:40,230
@@ -4820,7 +4820,7 @@ attempting to do right now is
 
 1040
 00:45:38,650 --> 00:45:41,600
-go, what we need is--
+go, what we need is &mdash;
 
 1041
 00:45:41,600 --> 00:45:44,480
@@ -5214,7 +5214,7 @@ like a standard?
 1125
 00:49:22,999 --> 00:49:23,880
 PAUL IRISH: The debugger
-protocol--
+protocol &mdash;
 
 1126
 00:49:23,880 --> 00:49:25,810
@@ -5234,7 +5234,7 @@ or the WebKit one?
 1129
 00:49:30,620 --> 00:49:33,505
 REMY SHARP: The one that came
-out of WebKit that--
+out of WebKit that &mdash;
 
 1130
 00:49:33,505 --> 00:49:36,490
@@ -5257,7 +5257,7 @@ kind of adhering to it.
 
 1134
 00:49:44,280 --> 00:49:44,570
-And--
+And &mdash;
 
 1135
 00:49:44,570 --> 00:49:44,880
@@ -5266,7 +5266,7 @@ And--
 1136
 00:49:44,880 --> 00:49:45,760
 PAUL IRISH: Yeah,
-so both are--
+so both are &mdash;
 
 1137
 00:49:45,760 --> 00:49:46,780
@@ -5456,7 +5456,7 @@ traffic when
 
 1178
 00:51:43,030 --> 00:51:44,700
-you're not on Wi-Fi--
+you're not on Wi-Fi &mdash;
 
 1179
 00:51:44,700 --> 00:51:46,910
@@ -5506,7 +5506,7 @@ for proxy events?
 
 1189
 00:52:11,930 --> 00:52:13,880
-So--
+So &mdash;
 
 1190
 00:52:13,880 --> 00:52:14,490
@@ -5576,7 +5576,7 @@ down the server.
 
 1205
 00:52:48,160 --> 00:52:49,500
-That's how we--
+That's how we &mdash;
 
 1206
 00:52:49,500 --> 00:52:50,820
@@ -5733,12 +5733,12 @@ turn that shit on.
 
 1239
 00:54:04,370 --> 00:54:06,152
-And I linked to--
+And I linked to &mdash;
 
 1240
 00:54:06,152 --> 00:54:09,082
 I'm going to butcher
-his name--
+his name &mdash;
 
 1241
 00:54:09,082 --> 00:54:10,332
@@ -5828,7 +5828,7 @@ produce new content.
 
 1260
 00:55:11,466 --> 00:55:13,640
-I can't remember-- there's
+I can't remember &mdash; there's
 something else you can put it
 
 1261
@@ -5903,7 +5903,7 @@ probably are not an expert in.
 1276
 00:55:51,790 --> 00:55:56,050
 Check these sections in the
-standard, or check this--
+standard, or check this &mdash;
 
 1277
 00:55:56,050 --> 00:55:58,870

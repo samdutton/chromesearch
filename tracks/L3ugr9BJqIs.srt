@@ -92,7 +92,7 @@ using Chrome dev tools.
 21
 00:01:00,990 --> 00:01:05,400
 So JavaScript variables can
-be of four primary types--
+be of four primary types &mdash;
 
 22
 00:01:05,400 --> 00:01:08,460
@@ -296,11 +296,11 @@ for this green node.
 64
 00:03:09,890 --> 00:03:13,190
 So the retaining tree is
-this yellow node here--
+this yellow node here &mdash;
 
 65
 00:03:13,190 --> 00:03:15,310
-the root node--
+the root node &mdash;
 
 66
 00:03:15,310 --> 00:03:19,570
@@ -661,7 +661,7 @@ other variables.
 
 143
 00:06:52,180 --> 00:06:53,730
-And objects have two sizes--
+And objects have two sizes &mdash;
 
 144
 00:06:53,730 --> 00:06:56,460
@@ -877,7 +877,7 @@ values, which were the green
 
 189
 00:08:47,850 --> 00:08:48,560
-nodes-- green nodes?
+nodes &mdash; green nodes?
 
 190
 00:08:48,560 --> 00:08:48,720
@@ -1307,8 +1307,8 @@ theory, when we flush the
 
 282
 00:12:27,720 --> 00:12:30,260
-cache-- so by filling
-it with new stuff--
+cache &mdash; so by filling
+it with new stuff &mdash;
 
 283
 00:12:30,260 --> 00:12:33,220
@@ -1755,7 +1755,7 @@ it says, class filter.
 378
 00:16:08,300 --> 00:16:09,860
 So if you wanted to search
-for a certain thing--
+for a certain thing &mdash;
 
 379
 00:16:09,860 --> 00:16:13,600
@@ -1764,7 +1764,7 @@ of objects called stuff.
 
 380
 00:16:13,600 --> 00:16:15,320
-So if I type in, stuff here--
+So if I type in, stuff here &mdash;
 
 381
 00:16:15,320 --> 00:16:16,310
@@ -1791,7 +1791,7 @@ So let's clear this out.
 
 386
 00:16:23,680 --> 00:16:25,940
-And let's do some more work--
+And let's do some more work &mdash;
 
 387
 00:16:25,940 --> 00:16:27,820
@@ -2018,16 +2018,16 @@ one again, we'll see that
 
 436
 00:18:25,650 --> 00:18:26,994
-there are--
+there are &mdash;
 
 437
 00:18:26,994 --> 00:18:29,630
-oops, there we go--
+oops, there we go &mdash;
 
 438
 00:18:29,630 --> 00:18:31,330
 JOHN MCCUTCHAN: Another
-five stuff for--
+five stuff for &mdash;
 
 439
 00:18:31,330 --> 00:18:31,980
@@ -2367,7 +2367,7 @@ walking the dog.
 
 510
 00:21:32,790 --> 00:21:33,720
-LOREENA LEE: By walking the--
+LOREENA LEE: By walking the &mdash;
 
 511
 00:21:33,720 --> 00:21:38,060
@@ -2458,7 +2458,7 @@ by something.
 529
 00:22:16,420 --> 00:22:18,840
 So a lot of times
-in those cases--
+in those cases &mdash;
 
 530
 00:22:18,840 --> 00:22:23,190

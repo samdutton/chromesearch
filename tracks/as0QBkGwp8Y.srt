@@ -121,7 +121,7 @@ thank you, Ridhima.
 
 27
 00:00:58,440 --> 00:00:59,430
-So today's agenda--
+So today's agenda &mdash;
 
 28
 00:00:59,430 --> 00:01:03,790
@@ -287,7 +287,7 @@ daily lives?
 
 62
 00:02:23,140 --> 00:02:24,620
-It's really about two things--
+It's really about two things &mdash;
 
 63
 00:02:24,620 --> 00:02:26,920
@@ -340,7 +340,7 @@ and increase engagement.
 
 73
 00:02:55,170 --> 00:02:56,380
-And a bit of a spoiler--
+And a bit of a spoiler &mdash;
 
 74
 00:02:56,380 --> 00:02:58,190
@@ -415,7 +415,7 @@ use it as a way to log in.
 89
 00:03:35,030 --> 00:03:38,320
 That's because Google
-is a trusted brand--
+is a trusted brand &mdash;
 
 90
 00:03:38,320 --> 00:03:41,320
@@ -528,7 +528,7 @@ developer, to access the
 113
 00:04:39,210 --> 00:04:41,530
 user's public profile
-information--
+information &mdash;
 
 114
 00:04:41,530 --> 00:04:43,820
@@ -712,7 +712,7 @@ written on their behalf.
 
 152
 00:06:23,210 --> 00:06:24,890
-So now for that magic--
+So now for that magic &mdash;
 
 153
 00:06:24,890 --> 00:06:26,390
@@ -1064,7 +1064,7 @@ markup on your page where you
 
 228
 00:09:33,326 --> 00:09:34,900
-want us to render the button--
+want us to render the button &mdash;
 
 229
 00:09:34,900 --> 00:09:35,780
@@ -1624,7 +1624,7 @@ last name that
 
 348
 00:14:27,930 --> 00:14:28,800
-they've pulled in directly--
+they've pulled in directly &mdash;
 
 349
 00:14:28,800 --> 00:14:30,420
@@ -1928,7 +1928,7 @@ the currently logged in Google
 413
 00:17:15,970 --> 00:17:19,829
 user, we provide you
-a shortcut-- me.
+a shortcut &mdash; me.
 
 414
 00:17:19,829 --> 00:17:22,730
@@ -2068,7 +2068,7 @@ you're really looking for.
 442
 00:18:33,270 --> 00:18:35,880
 So we set out to do a new
-type of sharing--
+type of sharing &mdash;
 
 443
 00:18:35,880 --> 00:18:39,470
@@ -2121,7 +2121,7 @@ we do on Google today.
 453
 00:19:01,260 --> 00:19:04,500
 But the most obvious difference
-is a big button--
+is a big button &mdash;
 
 454
 00:19:04,500 --> 00:19:06,580
@@ -2655,7 +2655,7 @@ ways to make it
 
 568
 00:23:37,810 --> 00:23:39,100
-part of your app--
+part of your app &mdash;
 
 569
 00:23:39,100 --> 00:23:41,260
@@ -3025,7 +3025,7 @@ integration would look like.
 647
 00:26:49,330 --> 00:26:50,840
 So let's say a user's searching
-for Fandango--
+for Fandango &mdash;
 
 648
 00:26:50,840 --> 00:26:53,890
@@ -3273,7 +3273,7 @@ bit of review.
 699
 00:29:01,880 --> 00:29:03,770
 We saw the Google+
-Sign-In button--
+Sign-In button &mdash;
 
 700
 00:29:03,770 --> 00:29:07,310
@@ -3364,11 +3364,11 @@ beginning with Android to best
 718
 00:29:54,460 --> 00:29:58,070
 practices across the web
-and boot camps--
+and boot camps &mdash;
 
 719
 00:29:58,070 --> 00:29:59,180
-sorry--
+sorry &mdash;
 
 720
 00:29:59,180 --> 00:30:02,190
@@ -3407,7 +3407,7 @@ in Google+ Sign-In.
 727
 00:30:16,730 --> 00:30:19,160
 Three important links before
-we take questions--
+we take questions &mdash;
 
 728
 00:30:19,160 --> 00:30:21,043
@@ -3518,7 +3518,7 @@ out from the app.
 751
 00:31:13,810 --> 00:31:16,190
 I don't know whether it's
-best practice--
+best practice &mdash;
 
 752
 00:31:16,190 --> 00:31:18,870
@@ -3613,7 +3613,7 @@ form of sign out.
 771
 00:31:55,300 --> 00:31:57,150
 It really depends
-on their logic--
+on their logic &mdash;
 
 772
 00:31:57,150 --> 00:31:59,470
@@ -3651,7 +3651,7 @@ on your integration.
 779
 00:32:11,570 --> 00:32:13,615
 AUDIENCE: Well, I guess, let's
-say a person's traveling--
+say a person's traveling &mdash;
 
 780
 00:32:13,615 --> 00:32:15,920
@@ -3748,7 +3748,7 @@ JONATHAN BERI: Sure thing.
 
 800
 00:32:55,504 --> 00:32:55,886
-Let's go--
+Let's go &mdash;
 
 801
 00:32:55,886 --> 00:32:56,670
@@ -3895,7 +3895,7 @@ Google+ way gets you a lot
 
 831
 00:34:09,550 --> 00:34:10,880
-more user information--
+more user information &mdash;
 
 832
 00:34:10,880 --> 00:34:13,190
@@ -4000,7 +4000,7 @@ having to manage multiple
 
 854
 00:34:49,750 --> 00:34:52,420
-tokens on my app side--
+tokens on my app side &mdash;
 
 855
 00:34:52,420 --> 00:34:55,340
@@ -4092,7 +4092,7 @@ realize I was doing that.
 
 874
 00:35:23,300 --> 00:35:24,845
-So that's something that--
+So that's something that &mdash;
 
 875
 00:35:24,845 --> 00:35:26,580
@@ -4166,7 +4166,7 @@ type of networks you're trying
 
 891
 00:35:56,960 --> 00:35:58,420
-to target--
+to target &mdash;
 
 892
 00:35:58,420 --> 00:36:00,330
@@ -4396,7 +4396,7 @@ it work on iOS?
 
 940
 00:37:53,320 --> 00:37:54,900
-Did you--
+Did you &mdash;
 
 941
 00:37:54,900 --> 00:37:56,210

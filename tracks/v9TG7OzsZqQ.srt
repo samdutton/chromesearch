@@ -230,12 +230,12 @@ we're dealing with more code.
 
 50
 00:02:09,900 --> 00:02:10,639
-And that's--
+And that's &mdash;
 
 51
 00:02:10,639 --> 00:02:12,840
 I'm sure some of you
-are smiling--
+are smiling &mdash;
 
 52
 00:02:12,840 --> 00:02:14,570
@@ -840,8 +840,8 @@ it will work perfectly.
 
 178
 00:07:44,600 --> 00:07:47,960
-Now any modern web app--
-great web app-- needs
+Now any modern web app &mdash;
+great web app &mdash; needs
 
 179
 00:07:47,960 --> 00:07:49,280
@@ -1159,7 +1159,7 @@ tools, as we'll see.
 245
 00:10:46,510 --> 00:10:50,210
 Ido and I were sort of
-thinking about what--
+thinking about what &mdash;
 
 246
 00:10:50,210 --> 00:10:51,040
@@ -1654,11 +1654,11 @@ Endpoint Class.
 352
 00:15:10,310 --> 00:15:13,030
 So we'll click on that,
-and hopefully--
+and hopefully &mdash;
 
 353
 00:15:13,030 --> 00:15:13,650
-yeah, there it goes--
+yeah, there it goes &mdash;
 
 354
 00:15:13,650 --> 00:15:18,420
@@ -2120,7 +2120,7 @@ hand it off.
 452
 00:19:23,490 --> 00:19:27,400
 But I thought what I'd show
-is a little bit more--
+is a little bit more &mdash;
 
 453
 00:19:27,400 --> 00:19:30,970
@@ -2331,7 +2331,7 @@ really nice.
 
 496
 00:21:27,210 --> 00:21:30,760
-It was also nice-- so we could
+It was also nice &mdash; so we could
 shift blame between us.
 
 497
@@ -2623,7 +2623,7 @@ list of beer.
 
 557
 00:24:07,590 --> 00:24:09,290
-Let's see how we could--
+Let's see how we could &mdash;
 
 558
 00:24:09,290 --> 00:24:12,980
@@ -3486,7 +3486,7 @@ my test page, and that's
 743
 00:32:22,060 --> 00:32:24,390
 something really useful when
-you're doing-- because even
+you're doing &mdash; because even
 
 744
 00:32:24,390 --> 00:32:26,450
@@ -3641,8 +3641,8 @@ We spoke about syncing.
 
 776
 00:33:50,780 --> 00:33:54,470
-In that example I gave-- and I
-spoke about 15, 20 beers--
+In that example I gave &mdash; and I
+spoke about 15, 20 beers &mdash;
 
 777
 00:33:54,470 --> 00:33:56,590
@@ -3652,7 +3652,7 @@ drinks quite a bit.
 778
 00:33:56,590 --> 00:33:59,290
 I think if we'll have maybe
-pagination, it will be--
+pagination, it will be &mdash;
 
 779
 00:33:59,290 --> 00:34:00,030
@@ -4410,12 +4410,12 @@ beer, we're just going to add
 940
 00:41:01,780 --> 00:41:05,010
 it to the data store, and as
-long as the IDs match--
+long as the IDs match &mdash;
 
 941
 00:41:05,010 --> 00:41:06,640
 we need to add it
-to our index--
+to our index &mdash;
 
 942
 00:41:06,640 --> 00:41:09,350
@@ -4592,7 +4592,7 @@ whole list of those.
 979
 00:42:54,310 --> 00:42:58,920
 OK, so with that we should
-be able to--
+be able to &mdash;
 
 980
 00:42:58,920 --> 00:43:01,950
@@ -5232,7 +5232,7 @@ next thing we wanted to do
 1116
 00:48:48,420 --> 00:48:49,985
 is actually go do some
-scalability--
+scalability &mdash;
 
 1117
 00:48:49,985 --> 00:48:52,780
@@ -5778,7 +5778,7 @@ this GitHub repository.
 
 1232
 00:53:53,570 --> 00:53:55,440
-We'll put the slides once--
+We'll put the slides once &mdash;
 
 1233
 00:53:55,440 --> 00:53:56,020
@@ -5990,7 +5990,7 @@ right now for you.
 1279
 00:55:34,810 --> 00:55:38,370
 IDO GREEN: What you can
-use today is just--
+use today is just &mdash;
 
 1280
 00:55:38,370 --> 00:55:41,210
@@ -6167,7 +6167,7 @@ connection, the right
 
 1317
 00:56:57,780 --> 00:56:58,320
-bandwidth--
+bandwidth &mdash;
 
 1318
 00:56:58,320 --> 00:57:02,270

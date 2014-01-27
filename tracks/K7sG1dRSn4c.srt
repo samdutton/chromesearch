@@ -37,7 +37,7 @@ answer show.
 9
 00:00:54,250 --> 00:00:56,585
 So if any of you out there would
-like to ask questions--
+like to ask questions &mdash;
 
 10
 00:00:56,585 --> 00:01:03,770
@@ -257,7 +257,7 @@ flying around.
 
 58
 00:02:57,440 --> 00:02:58,780
-Isn't that--
+Isn't that &mdash;
 
 59
 00:02:58,780 --> 00:03:00,010
@@ -280,7 +280,7 @@ PETE LEPAGE: All right.
 
 63
 00:03:04,040 --> 00:03:05,190
-So we'll take--
+So we'll take &mdash;
 
 64
 00:03:05,190 --> 00:03:08,340
@@ -297,11 +297,11 @@ We kind of had a lot of fun.
 
 67
 00:03:12,230 --> 00:03:14,060
-We kind of crashed the drone--
+We kind of crashed the drone &mdash;
 
 68
 00:03:14,060 --> 00:03:14,720
-I don't know--
+I don't know &mdash;
 
 69
 00:03:14,720 --> 00:03:17,780
@@ -453,7 +453,7 @@ knew about was the
 
 101
 00:04:47,090 --> 00:04:47,675
-fact that there are--
+fact that there are &mdash;
 
 102
 00:04:47,675 --> 00:04:49,150
@@ -470,7 +470,7 @@ to a drone.
 
 105
 00:04:52,980 --> 00:04:53,980
-One is on port 554--
+One is on port 554 &mdash;
 
 106
 00:04:53,980 --> 00:04:54,650
@@ -586,7 +586,7 @@ covers-all-angles API.
 
 130
 00:06:01,875 --> 00:06:04,520
-Certainly, it was more of a--
+Certainly, it was more of a &mdash;
 as you said, we did this at
 
 131
@@ -606,7 +606,7 @@ get the thing flying.
 
 134
 00:06:10,890 --> 00:06:15,430
-But it's not-- as I say, it's
+But it's not &mdash; as I say, it's
 not a replacement for anything
 
 135
@@ -635,7 +635,7 @@ away quite a lot
 
 140
 00:06:34,570 --> 00:06:38,930
-of-- well, an awful lot of the
+of &mdash; well, an awful lot of the
 hard work, judging from what I
 
 141
@@ -998,7 +998,7 @@ those KeepAlives.
 
 216
 00:10:06,620 --> 00:10:08,500
-FlatTrim, that says--
+FlatTrim, that says &mdash;
 
 217
 00:10:08,500 --> 00:10:09,810
@@ -1068,7 +1068,7 @@ wasn't that bad.
 
 231
 00:10:42,200 --> 00:10:44,550
-It was more the--
+It was more the &mdash;
 
 232
 00:10:44,550 --> 00:10:44,970
@@ -1106,7 +1106,7 @@ place
 
 239
 00:11:03,990 --> 00:11:06,740
-where, hey, were outside--
+where, hey, were outside &mdash;
 
 240
 00:11:06,740 --> 00:11:09,190
@@ -1444,7 +1444,7 @@ come across them.
 
 312
 00:14:28,330 --> 00:14:29,950
-The ArrayBuffer is sort of--
+The ArrayBuffer is sort of &mdash;
 
 313
 00:14:29,950 --> 00:14:31,380
@@ -1764,7 +1764,7 @@ and it takes a number.
 
 381
 00:17:43,670 --> 00:17:44,610
-There are two numbers--
+There are two numbers &mdash;
 
 382
 00:17:44,610 --> 00:17:46,580
@@ -1802,7 +1802,7 @@ that you're in
 
 390
 00:18:05,490 --> 00:18:06,930
-this situation where--
+this situation where &mdash;
 
 391
 00:18:06,930 --> 00:18:08,540
@@ -1940,7 +1940,7 @@ a number of actions that you
 
 420
 00:19:19,160 --> 00:19:20,700
-can actually do--
+can actually do &mdash;
 
 421
 00:19:20,700 --> 00:19:25,310
@@ -2263,12 +2263,12 @@ that into Chrome.
 
 490
 00:22:34,740 --> 00:22:38,180
-And then on HTML5rocks--
+And then on HTML5rocks &mdash;
 
 491
 00:22:38,180 --> 00:22:43,210
 and we can put this link up in
-a little bit-- we have these
+a little bit &mdash; we have these
 
 492
 00:22:43,210 --> 00:22:45,070
@@ -2367,7 +2367,7 @@ sent through to me through
 
 512
 00:23:38,306 --> 00:23:38,690
-this update button and--
+this update button and &mdash;
 
 513
 00:23:38,690 --> 00:23:42,891
@@ -2465,7 +2465,7 @@ updateButton.
 533
 00:24:37,590 --> 00:24:42,500
 So updateButton, that gets
-called whenever I press--
+called whenever I press &mdash;
 
 534
 00:24:42,500 --> 00:24:46,150
@@ -3226,7 +3226,7 @@ look at the Chrome events.
 
 696
 00:32:00,600 --> 00:32:01,490
-We've done now--
+We've done now &mdash;
 
 697
 00:32:01,490 --> 00:32:05,380
@@ -3390,7 +3390,7 @@ socket-based stuff.
 732
 00:33:30,210 --> 00:33:32,990
 In that set of samples, there's
-ones that will do--
+ones that will do &mdash;
 
 733
 00:33:32,990 --> 00:33:37,140
@@ -3447,7 +3447,7 @@ expensive appliances off,
 
 744
 00:34:01,480 --> 00:34:03,390
-because they, um--
+because they, um &mdash;
 
 745
 00:34:03,390 --> 00:34:04,150

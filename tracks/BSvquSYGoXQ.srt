@@ -91,7 +91,7 @@ We have three on Android.
 
 21
 00:00:48,890 --> 00:00:50,772
-And wait-- no, we
+And wait &mdash; no, we
 have four on Android.
 
 22
@@ -129,7 +129,7 @@ communications app.
 
 29
 00:01:07,310 --> 00:01:12,004
-You do texting, calling-- it
+You do texting, calling &mdash; it
 does groups up to 25 people.
 
 30
@@ -168,7 +168,7 @@ It's called VoMessenger.
 37
 00:01:33,030 --> 00:01:35,642
 BRAD GREEN: So you guys have
-been primarily doing Java and--
+been primarily doing Java and &mdash;
 
 38
 00:01:35,642 --> 00:01:36,350
@@ -200,7 +200,7 @@ started as a company,
 
 44
 00:01:47,330 --> 00:01:52,010
-it's probably-- I don't
+it's probably &mdash; I don't
 know, five months or so where
 
 45
@@ -618,8 +618,8 @@ some of the tools
 
 134
 00:05:40,890 --> 00:05:44,070
-we use are-- we'll just briefly
-go over this-- Yeoman, Grunt,
+we use are &mdash; we'll just briefly
+go over this &mdash; Yeoman, Grunt,
 
 135
 00:05:44,070 --> 00:05:45,260
@@ -750,7 +750,7 @@ So we used Require a lot.
 163
 00:06:48,940 --> 00:06:53,112
 It's a great modularization tool
-that you can use-- or library.
+that you can use &mdash; or library.
 
 164
 00:06:53,112 --> 00:06:54,070
@@ -773,7 +773,7 @@ system in Angular.
 168
 00:07:01,580 --> 00:07:05,032
 They don't necessarily
-directly-- they're
+directly &mdash; they're
 
 169
 00:07:05,032 --> 00:07:05,990
@@ -837,7 +837,7 @@ probably better to avoid it,
 
 182
 00:07:38,580 --> 00:07:39,080
-but--
+but &mdash;
 
 183
 00:07:39,080 --> 00:07:40,788
@@ -856,7 +856,7 @@ of how exactly to do it.
 
 186
 00:07:45,610 --> 00:07:47,152
-So it's not-- there's
+So it's not &mdash; there's
 ways around it.
 
 187
@@ -1045,7 +1045,7 @@ thing within Chrome Apps.
 
 227
 00:09:18,420 --> 00:09:21,110
-And then permissions--
+And then permissions &mdash;
 so for example,
 
 228
@@ -1126,7 +1126,7 @@ add all these things in,
 244
 00:10:00,751 --> 00:10:02,880
 and you think, OK, this
-is going to-- things
+is going to &mdash; things
 
 245
 00:10:02,880 --> 00:10:03,480
@@ -1449,7 +1449,7 @@ to specify that.
 313
 00:12:42,790 --> 00:12:45,700
 And obviously, now that
-you downloaded-- say,
+you downloaded &mdash; say,
 
 314
 00:12:45,700 --> 00:12:47,731
@@ -1485,12 +1485,12 @@ again, and it's still broken.
 
 321
 00:12:58,570 --> 00:12:59,830
-So--
+So &mdash;
 
 322
 00:12:59,830 --> 00:13:03,940
 DARREL SUMI: OK, so here's a
-little demo-- let me switch.
+little demo &mdash; let me switch.
 
 323
 00:13:03,940 --> 00:13:08,910
@@ -1499,7 +1499,7 @@ a socket app that I made.
 
 324
 00:13:08,910 --> 00:13:14,160
-So basically, all this is--
+So basically, all this is &mdash;
 it's just a small little test
 
 325
@@ -1515,7 +1515,7 @@ starts counting
 327
 00:13:20,270 --> 00:13:22,620
 every one, two,
-three-- every second.
+three &mdash; every second.
 
 328
 00:13:22,620 --> 00:13:24,360
@@ -1533,7 +1533,7 @@ essentially.
 
 331
 00:13:29,810 --> 00:13:32,040
-Really simple-- that's
+Really simple &mdash; that's
 all that's happening.
 
 332
@@ -1571,7 +1571,7 @@ JOHN FEIG: Yeah.
 339
 00:13:50,870 --> 00:13:52,440
 You don't want to
-dive into-- OK.
+dive into &mdash; OK.
 
 340
 00:13:52,440 --> 00:13:53,190
@@ -1624,7 +1624,7 @@ things like that, where it's
 
 351
 00:14:20,930 --> 00:14:24,134
-traditionally-- they might
+traditionally &mdash; they might
 have injected information, say.
 
 352
@@ -1882,7 +1882,7 @@ where you start off,
 407
 00:16:15,060 --> 00:16:18,920
 essentially we just connect
-to-- I have a hard-coded thing
+to &mdash; I have a hard-coded thing
 
 408
 00:16:18,920 --> 00:16:21,580
@@ -1919,7 +1919,7 @@ saying, hey, we've connected.
 
 415
 00:16:37,600 --> 00:16:38,811
-And at this point--
+And at this point &mdash;
 
 416
 00:16:38,811 --> 00:16:41,060
@@ -1992,7 +1992,7 @@ or what it is.
 432
 00:17:06,724 --> 00:17:08,890
 It's just going to start
-counting from some random--
+counting from some random &mdash;
 
 433
 00:17:08,890 --> 00:17:11,490
@@ -2045,7 +2045,7 @@ we'll get back some data.
 
 443
 00:17:39,190 --> 00:17:41,510
-And in the data--
+And in the data &mdash;
 like I just know
 
 444
@@ -2065,7 +2065,7 @@ onward, the socket's
 
 447
 00:17:50,700 --> 00:17:54,610
-going to connect-- it's going
+going to connect &mdash; it's going
 to listen for a counter update
 
 448
@@ -2091,7 +2091,7 @@ incremented on the server side.
 452
 00:18:05,290 --> 00:18:07,620
 So all that kind of
-logic-- obviously,
+logic &mdash; obviously,
 
 453
 00:18:07,620 --> 00:18:09,900
@@ -2289,8 +2289,8 @@ DARREL SUMI: Right, right.
 
 494
 00:19:48,220 --> 00:19:51,480
-So in our example-- can
-we go-- what's it called?
+So in our example &mdash; can
+we go &mdash; what's it called?
 
 495
 00:19:51,480 --> 00:19:53,720
@@ -2298,7 +2298,7 @@ Terminate the server.
 
 496
 00:19:53,720 --> 00:19:55,032
-JOHN FEIG: Oh, the-- OK.
+JOHN FEIG: Oh, the &mdash; OK.
 
 497
 00:19:55,032 --> 00:19:56,340
@@ -2328,7 +2328,7 @@ DARREL SUMI: OK.
 
 504
 00:20:07,520 --> 00:20:08,510
-So we just--
+So we just &mdash;
 
 505
 00:20:08,510 --> 00:20:08,910
@@ -2459,7 +2459,7 @@ a regular Angular app.
 
 532
 00:21:06,990 --> 00:21:10,124
-And the same thing works for--
+And the same thing works for &mdash;
 
 533
 00:21:10,124 --> 00:21:11,165
@@ -2471,7 +2471,7 @@ DARREL SUMI: Yeah.
 
 535
 00:21:11,915 --> 00:21:14,310
-Same thing works--
+Same thing works &mdash;
 the transition
 
 536
@@ -2862,13 +2862,13 @@ on the client side
 
 618
 00:24:50,650 --> 00:24:53,750
-in certain cases-- like
+in certain cases &mdash; like
 for KeeChat for example,
 
 619
 00:24:53,750 --> 00:24:58,400
 all of your chats are stored
-locally-- your contacts list.
+locally &mdash; your contacts list.
 
 620
 00:24:58,400 --> 00:25:00,010
@@ -3107,7 +3107,7 @@ being synchronous.
 
 670
 00:27:25,810 --> 00:27:30,420
-And we made assumptions--
+And we made assumptions &mdash;
 we kind of used their API
 
 671
@@ -3169,7 +3169,7 @@ might run into.
 
 683
 00:28:06,500 --> 00:28:07,867
-But--
+But &mdash;
 
 684
 00:28:07,867 --> 00:28:09,700
@@ -3193,7 +3193,7 @@ thing like we talked
 
 688
 00:28:16,590 --> 00:28:18,980
-about earlier-- the
+about earlier &mdash; the
 Content Security Policy.
 
 689
@@ -3251,7 +3251,7 @@ database on a client.
 
 700
 00:28:55,040 --> 00:28:59,740
-The API's a little-- it takes
+The API's a little &mdash; it takes
 a little getting used to.
 
 701
@@ -3304,7 +3304,7 @@ kind of like a table.
 
 712
 00:29:30,455 --> 00:29:35,110
-So it's like-- I mean,
+So it's like &mdash; I mean,
 it's a datastore for NoSQL.
 
 713
@@ -3521,7 +3521,7 @@ So back to the slide.
 
 758
 00:31:30,270 --> 00:31:31,960
-Angular has-- it's
+Angular has &mdash; it's
 just an aside,
 
 759
@@ -3536,7 +3536,7 @@ third-party event emitter
 
 761
 00:31:37,380 --> 00:31:40,300
-library because we had--
+library because we had &mdash;
 like I mentioned at the top,
 
 762
@@ -3607,7 +3607,7 @@ So it's a really simple API.
 
 776
 00:32:19,290 --> 00:32:24,850
-You listen for-- you register
+You listen for &mdash; you register
 for events with scope.on.
 
 777
@@ -3668,7 +3668,7 @@ So rootScope is what you use.
 
 789
 00:32:58,197 --> 00:33:00,280
-DARREL SUMI: The syntax--
+DARREL SUMI: The syntax &mdash;
 the whole notion of this
 
 790
@@ -3866,7 +3866,7 @@ storeName, and then the data so
 
 831
 00:34:53,550 --> 00:34:56,583
-that in my controller-- whatever
+that in my controller &mdash; whatever
 is getting this data, if it's
 
 832
@@ -3876,7 +3876,7 @@ whatever, I can first
 
 833
 00:34:58,930 --> 00:35:03,460
-check to see-- OK, getitem
+check to see &mdash; OK, getitem
 is pretty generic, right?
 
 834
@@ -3994,12 +3994,12 @@ with a web request.
 
 858
 00:36:19,450 --> 00:36:23,480
-So this side-- the
+So this side &mdash; the
 Add Podcast and List
 
 859
 00:36:23,480 --> 00:36:26,150
-a Podcast side-- that's local.
+a Podcast side &mdash; that's local.
 
 860
 00:36:26,150 --> 00:36:28,290
@@ -4008,7 +4008,7 @@ this section up top.
 
 861
 00:36:28,290 --> 00:36:31,710
-This-- you've got a
+This &mdash; you've got a
 playlist here on the left.
 
 862
@@ -4076,7 +4076,7 @@ can be injected into your app.
 875
 00:37:22,484 --> 00:37:25,710
 As I said, the method's
-Get-- here's the URL.
+Get &mdash; here's the URL.
 
 876
 00:37:25,710 --> 00:37:29,080
@@ -4158,7 +4158,7 @@ to just take that data that's
 893
 00:38:14,390 --> 00:38:19,600
 the result of this web
-request, which is-- actually,
+request, which is &mdash; actually,
 
 894
 00:38:19,600 --> 00:38:21,650
@@ -4197,7 +4197,7 @@ is in your permissions.
 901
 00:38:36,050 --> 00:38:39,930
 So this is not something
-that-- it's not my server,
+that &mdash; it's not my server,
 
 902
 00:38:39,930 --> 00:38:42,180
@@ -4282,7 +4282,7 @@ to keep iterating on this.
 919
 00:39:18,020 --> 00:39:23,970
 So one thing that was
-interesting was-- here's
+interesting was &mdash; here's
 
 920
 00:39:23,970 --> 00:39:33,580
@@ -4297,7 +4297,7 @@ here, makeRequest,
 922
 00:39:41,980 --> 00:39:47,380
 that's going to actually get
-the data for each episode--
+the data for each episode &mdash;
 
 923
 00:39:47,380 --> 00:39:52,160
@@ -4471,7 +4471,7 @@ doing things before,
 
 960
 00:41:36,320 --> 00:41:41,990
-where it was-- you see a
+where it was &mdash; you see a
 callback equals JSON_CALLBACK
 
 961
@@ -4617,7 +4617,7 @@ JOHN FEIG: Yeah.
 
 992
 00:43:15,810 --> 00:43:23,195
-So I can show-- so
+So I can show &mdash; so
 here's the app in Chrome.
 
 993
@@ -4657,7 +4657,7 @@ refreshInterval.
 
 1001
 00:43:43,220 --> 00:43:47,350
-So every-- I think it's
+So every &mdash; I think it's
 three seconds, until it's
 
 1002
@@ -4692,7 +4692,7 @@ with local storage.
 1008
 00:44:08,110 --> 00:44:11,240
 And I switched it over to
-IndexedDB and cut down like-- I
+IndexedDB and cut down like &mdash; I
 
 1009
 00:44:11,240 --> 00:44:13,570
@@ -4784,7 +4784,7 @@ is why I built it.
 
 1028
 00:44:58,230 --> 00:45:02,347
-And then we've got--
+And then we've got &mdash;
 just throw up some links.
 
 1029
@@ -4804,7 +4804,7 @@ modeling this talk on.
 
 1032
 00:45:13,380 --> 00:45:15,760
-This was actually--
+This was actually &mdash;
 I think, basically,
 
 1033
@@ -4835,7 +4835,7 @@ straightforward conversion.
 1038
 00:45:32,990 --> 00:45:36,209
 It took me very little time to
-get up and running-- really,
+get up and running &mdash; really,
 
 1039
 00:45:36,209 --> 00:45:37,000

@@ -110,11 +110,11 @@ playing around on the site?
 25
 00:03:33,170 --> 00:03:34,870
 And then, we'll talk about
-how we built--
+how we built &mdash;
 
 26
 00:03:34,870 --> 00:03:35,830
-how you guys--
+how you guys &mdash;
 
 27
 00:03:35,830 --> 00:03:37,610
@@ -383,7 +383,7 @@ we're talking through some of
 
 84
 00:06:05,940 --> 00:06:07,220
-these things, we can sort of--
+these things, we can sort of &mdash;
 
 85
 00:06:07,220 --> 00:06:08,030
@@ -456,7 +456,7 @@ PETE LEPAGE: OK.
 
 100
 00:06:36,900 --> 00:06:37,480
-Well, what's--
+Well, what's &mdash;
 
 101
 00:06:37,480 --> 00:06:37,640
@@ -470,7 +470,7 @@ of one of the scenes.
 103
 00:06:42,870 --> 00:06:45,640
 You see, actually, that the
-photo booth and some of the--
+photo booth and some of the &mdash;
 
 104
 00:06:45,640 --> 00:06:46,560
@@ -479,7 +479,7 @@ PETE LEPAGE: Cool.
 105
 00:06:46,560 --> 00:06:48,830
 So if we go into the
-photo booth--
+photo booth &mdash;
 
 106
 00:06:48,830 --> 00:06:51,440
@@ -510,7 +510,7 @@ PETE LEPAGE: All right.
 112
 00:07:08,390 --> 00:07:08,960
 YATES BUCKLEY: Sorry,
-I'm looking--
+I'm looking &mdash;
 
 113
 00:07:08,960 --> 00:07:11,190
@@ -543,7 +543,7 @@ on your own.
 
 119
 00:07:22,172 --> 00:07:24,250
-Does the music box work for--
+Does the music box work for &mdash;
 
 120
 00:07:24,250 --> 00:07:25,700
@@ -576,7 +576,7 @@ a really nice mix of very
 126
 00:07:36,960 --> 00:07:39,732
 classic asset switches,
-hand-painted textures--
+hand-painted textures &mdash;
 
 127
 00:07:39,732 --> 00:07:40,724
@@ -699,7 +699,7 @@ use in Chrome.
 152
 00:08:44,750 --> 00:08:46,550
 And one really interesting
-thing to use--
+thing to use &mdash;
 
 153
 00:08:46,550 --> 00:08:47,120
@@ -943,7 +943,7 @@ these kind of problems.
 
 205
 00:11:06,970 --> 00:11:07,930
-Yeah, so--
+Yeah, so &mdash;
 
 206
 00:11:07,930 --> 00:11:10,710
@@ -1005,7 +1005,7 @@ ratio device pixel ratio.
 218
 00:11:39,960 --> 00:11:42,600
 And then these would
-show the high--
+show the high &mdash;
 
 219
 00:11:42,600 --> 00:11:43,350
@@ -1014,7 +1014,7 @@ PETE LEPAGE: Right.
 220
 00:11:43,350 --> 00:11:43,850
 SILVIO PAGANINI: --which
-screen--
+screen &mdash;
 
 221
 00:11:43,850 --> 00:11:45,050
@@ -1166,7 +1166,7 @@ I really wanted to show
 
 253
 00:12:49,180 --> 00:12:51,720
-also-- it kind of falls in with
+also &mdash; it kind of falls in with
 this idea of the DPI and
 
 254
@@ -1240,7 +1240,7 @@ finished running.
 
 269
 00:13:27,400 --> 00:13:28,650
-So that's--
+So that's &mdash;
 
 270
 00:13:28,650 --> 00:13:30,260
@@ -1364,7 +1364,7 @@ could try changing.
 
 296
 00:14:41,530 --> 00:14:42,730
-So I encourage people--
+So I encourage people &mdash;
 
 297
 00:14:42,730 --> 00:14:45,160
@@ -1403,7 +1403,7 @@ exposed.
 304
 00:14:58,800 --> 00:15:01,760
 It's sort of fun to discover
-what's been--
+what's been &mdash;
 
 305
 00:15:01,760 --> 00:15:03,190
@@ -1522,7 +1522,7 @@ value's going in.
 329
 00:15:58,620 --> 00:16:00,810
 And then when we talk about it
-as a team, we can really--
+as a team, we can really &mdash;
 
 330
 00:16:00,810 --> 00:16:01,850
@@ -1541,7 +1541,7 @@ frustrating if you say, oh,
 333
 00:16:05,620 --> 00:16:07,340
 let's make it a 2, and then
-it's actually 2 point--
+it's actually 2 point &mdash;
 
 334
 00:16:07,340 --> 00:16:07,750
@@ -1620,7 +1620,7 @@ was quite big.
 
 351
 00:16:32,710 --> 00:16:33,170
-I mean--
+I mean &mdash;
 
 352
 00:16:33,170 --> 00:16:34,450
@@ -1677,7 +1677,7 @@ nobody else understands.
 
 363
 00:16:55,680 --> 00:16:55,860
-So it's like--
+So it's like &mdash;
 
 364
 00:16:55,860 --> 00:16:57,710
@@ -1694,7 +1694,7 @@ YATES BUCKLEY: Yeah.
 
 367
 00:16:58,690 --> 00:17:01,430
-PETE LEPAGE: So where was--
+PETE LEPAGE: So where was &mdash;
 
 368
 00:17:01,430 --> 00:17:02,975
@@ -1708,7 +1708,7 @@ SILVIO PAGANINI: Yeah.
 370
 00:17:03,116 --> 00:17:04,810
 We have the back-end
-team in Poland--
+team in Poland &mdash;
 
 371
 00:17:04,810 --> 00:17:05,650
@@ -1717,7 +1717,7 @@ YATES BUCKLEY: 3D in Florence.
 372
 00:17:05,650 --> 00:17:07,010
 SILVIO PAGANINI: --which
-was very--
+was very &mdash;
 
 373
 00:17:07,010 --> 00:17:08,990
@@ -1772,7 +1772,7 @@ YATES BUCKLEY: Yeah.
 
 385
 00:17:22,440 --> 00:17:23,650
-I think that's the main--
+I think that's the main &mdash;
 
 386
 00:17:23,650 --> 00:17:24,859
@@ -1908,7 +1908,7 @@ about how that process worked.
 414
 00:18:32,910 --> 00:18:35,540
 And I think we talked earlier
-about maybe doing a--
+about maybe doing a &mdash;
 
 415
 00:18:35,540 --> 00:18:36,790
@@ -1991,7 +1991,7 @@ aspect to the whole project,
 
 432
 00:19:23,690 --> 00:19:26,930
-because the particular--
+because the particular &mdash;
 
 433
 00:19:26,930 --> 00:19:29,000
@@ -2056,7 +2056,7 @@ animated, you can animate the
 
 446
 00:20:00,760 --> 00:20:02,390
-angle basically-- the change
+angle basically &mdash; the change
 in angle of one item.
 
 447
@@ -2108,7 +2108,7 @@ we had to create.
 457
 00:20:26,550 --> 00:20:31,070
 And then on HTML5 Rocks site,
-we've sort of focused on--
+we've sort of focused on &mdash;
 
 458
 00:20:31,070 --> 00:20:33,790
@@ -2137,7 +2137,7 @@ field is generating
 
 463
 00:20:48,140 --> 00:20:49,825
-this kind of mutation--
+this kind of mutation &mdash;
 
 464
 00:20:49,825 --> 00:20:52,492
@@ -2195,7 +2195,7 @@ I thought it was on screen.
 476
 00:21:17,370 --> 00:21:21,065
 Yeah, I think that is the demo
-from the HTML5 Rocks--
+from the HTML5 Rocks &mdash;
 
 477
 00:21:21,065 --> 00:21:22,325
@@ -2330,7 +2330,7 @@ the converting models.
 505
 00:22:24,870 --> 00:22:28,030
 Basically, animations and models
-from Maya, then were--
+from Maya, then were &mdash;
 
 506
 00:22:28,030 --> 00:22:31,660
@@ -2359,7 +2359,7 @@ in parallel working on
 511
 00:22:40,360 --> 00:22:45,195
 optimizing a scene, and the
-shaders that we had to--
+shaders that we had to &mdash;
 
 512
 00:22:45,195 --> 00:22:47,300
@@ -2409,7 +2409,7 @@ the shaders for the storm
 522
 00:23:06,380 --> 00:23:09,280
 sequence, which is this sort of
-twirling tornado, which--
+twirling tornado, which &mdash;
 
 523
 00:23:09,280 --> 00:23:09,430
@@ -2418,7 +2418,7 @@ PETE LEPAGE: Yeah.
 524
 00:23:09,430 --> 00:23:11,090
 If we could pull up
-that for one sec--
+that for one sec &mdash;
 
 525
 00:23:11,090 --> 00:23:12,736
@@ -2449,7 +2449,7 @@ of different models
 
 531
 00:23:19,690 --> 00:23:20,640
-to try-- oh, gosh.
+to try &mdash; oh, gosh.
 
 532
 00:23:20,640 --> 00:23:21,840
@@ -2528,7 +2528,7 @@ actually, in parallel.
 548
 00:23:55,110 --> 00:23:58,420
 And we've been working on some
-games for getting-- basically,
+games for getting &mdash; basically,
 
 549
 00:23:58,420 --> 00:24:00,780
@@ -2541,7 +2541,7 @@ between brain cells.
 
 551
 00:24:02,360 --> 00:24:05,220
-And as part of that research--
+And as part of that research &mdash;
 which is not live yet, but I'd
 
 552
@@ -2552,7 +2552,7 @@ interested to go to
 553
 00:24:07,010 --> 00:24:11,630
 brainflight.org and register
-to keep updated on it--
+to keep updated on it &mdash;
 
 554
 00:24:11,630 --> 00:24:14,270
@@ -2703,7 +2703,7 @@ tornado, which we showed
 585
 00:25:17,470 --> 00:25:21,850
 earlier in terms of that kind
-of-- we then had to get it
+of &mdash; we then had to get it
 
 586
 00:25:21,850 --> 00:25:22,640
@@ -3014,7 +3014,7 @@ And it's really heavy.
 
 652
 00:27:52,920 --> 00:27:55,950
-You don't see any of the--
+You don't see any of the &mdash;
 the fan is running crazy.
 
 653
@@ -3118,7 +3118,7 @@ answer to this.
 674
 00:28:44,040 --> 00:28:46,660
 But I'll let you
-guys sort of--
+guys sort of &mdash;
 
 675
 00:28:46,660 --> 00:28:48,930
@@ -3283,7 +3283,7 @@ storm around.
 709
 00:29:58,110 --> 00:30:00,660
 And there was a vision of
-something that didn't--
+something that didn't &mdash;
 
 710
 00:30:00,660 --> 00:30:03,690
@@ -3316,7 +3316,7 @@ question here
 
 716
 00:30:13,220 --> 00:30:15,990
-from someone who wants--
+from someone who wants &mdash;
 
 717
 00:30:15,990 --> 00:30:18,380
@@ -3396,7 +3396,7 @@ browsers as well, so we try to
 
 733
 00:31:04,100 --> 00:31:05,590
-make it as--
+make it as &mdash;
 
 734
 00:31:05,590 --> 00:31:06,360
@@ -3648,7 +3648,7 @@ want to call out is you guys
 788
 00:33:03,590 --> 00:33:07,600
 wrote a phenomenal HTML5
-Rocks tutorial--
+Rocks tutorial &mdash;
 
 789
 00:33:07,600 --> 00:33:09,610
@@ -3743,7 +3743,7 @@ everything there as well.
 
 809
 00:33:45,010 --> 00:33:46,630
-So just go and--
+So just go and &mdash;
 
 810
 00:33:46,630 --> 00:33:48,790
@@ -3825,7 +3825,7 @@ some of the
 
 827
 00:34:11,850 --> 00:34:13,190
-back-end stuff is--
+back-end stuff is &mdash;
 
 828
 00:34:13,190 --> 00:34:15,030
@@ -3876,7 +3876,7 @@ at findyourwaytooz.com It
 
 838
 00:34:34,880 --> 00:34:37,630
-also works-- we didn't dive into
+also works &mdash; we didn't dive into
 this at all today, but
 
 839

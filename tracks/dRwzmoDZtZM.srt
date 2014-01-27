@@ -148,7 +148,7 @@ on my phone.
 32
 00:01:10,580 --> 00:01:13,665
 So Times Skimmer is just going
-to navigate over to--
+to navigate over to &mdash;
 
 33
 00:01:13,665 --> 00:01:17,070
@@ -192,7 +192,7 @@ So it looks like quite a bit.
 
 42
 00:01:39,746 --> 00:01:41,750
-One of the things we see--
+One of the things we see &mdash;
 
 43
 00:01:41,750 --> 00:01:46,420
@@ -299,7 +299,7 @@ milliseconds for 60 FPS, so at
 65
 00:02:37,900 --> 00:02:40,635
 almost a millisecond
-each, this is--
+each, this is &mdash;
 
 66
 00:02:40,635 --> 00:02:41,640
@@ -337,11 +337,11 @@ to the Settings.
 
 73
 00:02:53,490 --> 00:02:56,760
-I'm using the question mark--
+I'm using the question mark &mdash;
 
 74
 00:02:56,760 --> 00:02:58,260
-it's a little shortcut--
+it's a little shortcut &mdash;
 to get into Shortcuts.
 
 75
@@ -407,7 +407,7 @@ the side of the navigation.
 88
 00:03:38,850 --> 00:03:41,410
 And then there was
-a blink of red--
+a blink of red &mdash;
 
 89
 00:03:41,410 --> 00:03:43,850
@@ -627,7 +627,7 @@ JOHN MCCUTCHAN: OK, great.
 136
 00:05:36,230 --> 00:05:40,620
 PAUL IRISH: So I can click in
-here and identify that--
+here and identify that &mdash;
 
 137
 00:05:40,620 --> 00:05:44,120
@@ -726,7 +726,7 @@ avoid hitting offset top at
 
 157
 00:06:33,690 --> 00:06:36,580
-this point-- maybe we can ask
+this point &mdash; maybe we can ask
 for offset top earlier in the
 
 158
@@ -1034,7 +1034,7 @@ up chrome.json.
 
 224
 00:09:18,800 --> 00:09:22,730
-Wow, 16 megs-- a lot
+Wow, 16 megs &mdash; a lot
 of data in there.
 
 225
@@ -1289,7 +1289,7 @@ around a little bit.
 278
 00:11:34,860 --> 00:11:37,480
 So in this case, I'm
-going to go in--
+going to go in &mdash;
 
 279
 00:11:37,480 --> 00:11:37,810
@@ -1700,12 +1700,12 @@ scrolling experience really
 365
 00:15:36,800 --> 00:15:40,610
 hurts the engagement that
-people-- like Facebook, who
+people &mdash; like Facebook, who
 
 366
 00:15:40,610 --> 00:15:42,410
 ran an experiment and
-got data on this--
+got data on this &mdash;
 
 367
 00:15:42,410 --> 00:15:43,100
@@ -1860,7 +1860,7 @@ PAUL IRISH: Nice.
 399
 00:16:59,120 --> 00:17:01,420
 JOHN MCCUTCHAN: So by the
-time you watch this--
+time you watch this &mdash;
 
 400
 00:17:01,420 --> 00:17:05,290
@@ -1874,7 +1874,7 @@ that we just talked
 
 402
 00:17:06,740 --> 00:17:08,300
-about in this episode--
+about in this episode &mdash;
 
 403
 00:17:08,300 --> 00:17:11,890

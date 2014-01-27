@@ -124,7 +124,7 @@ views of the future?
 27
 00:01:08,580 --> 00:01:10,930
 At the end, let me just
-mention it now--
+mention it now &mdash;
 
 28
 00:01:10,930 --> 00:01:13,200
@@ -160,8 +160,8 @@ of computing at Georgia Tech.
 
 35
 00:01:30,180 --> 00:01:32,910
-He is the TLM-- the technical
-lead manager--
+He is the TLM &mdash; the technical
+lead manager &mdash;
 
 36
 00:01:32,910 --> 00:01:34,920
@@ -232,11 +232,11 @@ AI course in the room?
 50
 00:02:11,490 --> 00:02:13,290
 So you all know Peter
-very well--
+very well &mdash;
 
 51
 00:02:13,290 --> 00:02:15,220
-or not all of you, but--
+or not all of you, but &mdash;
 
 52
 00:02:15,220 --> 00:02:17,060
@@ -254,7 +254,7 @@ Dean, who's a Google fellow.
 55
 00:02:23,045 --> 00:02:24,980
 He's been at Google for
-quite a while--
+quite a while &mdash;
 
 56
 00:02:24,980 --> 00:02:27,250
@@ -314,7 +314,7 @@ That's my view.
 68
 00:02:54,730 --> 00:02:57,710
 And we can hear about what Jeff
-is currently working on--
+is currently working on &mdash;
 
 69
 00:02:57,710 --> 00:02:59,480
@@ -423,11 +423,11 @@ should have some number of
 91
 00:04:01,280 --> 00:04:04,190
 people isolated in a
-room somewhere-- a
+room somewhere &mdash; a
 
 92
 00:04:04,190 --> 00:04:05,630
-very nice room, maybe--
+very nice room, maybe &mdash;
 
 93
 00:04:05,630 --> 00:04:07,680
@@ -447,11 +447,11 @@ a number of reasons.
 96
 00:04:14,390 --> 00:04:16,829
 One reason is that building
-systems--
+systems &mdash;
 
 97
 00:04:16,829 --> 00:04:18,390
-building large scale systems--
+building large scale systems &mdash;
 
 98
 00:04:18,390 --> 00:04:22,810
@@ -519,7 +519,7 @@ was very significantly
 
 111
 00:05:01,970 --> 00:05:05,540
-mathematical-- the work of
+mathematical &mdash; the work of
 Turing, mathematician, really.
 
 112
@@ -549,12 +549,12 @@ big part of the field.
 117
 00:05:17,670 --> 00:05:20,910
 And then in the last
-10 to 20 years--
+10 to 20 years &mdash;
 
 118
 00:05:20,910 --> 00:05:22,920
 really since the advent
-of machine learning--
+of machine learning &mdash;
 
 119
 00:05:22,920 --> 00:05:26,250
@@ -777,12 +777,12 @@ making things work.
 164
 00:07:28,340 --> 00:07:30,530
 Last thing I would say about
-Google research-- and to those
+Google research &mdash; and to those
 
 165
 00:07:30,530 --> 00:07:34,560
 of you that are researchers, I
-hope this isn't problematic--
+hope this isn't problematic &mdash;
 
 166
 00:07:34,560 --> 00:07:38,430
@@ -934,7 +934,7 @@ on a regular basis.
 
 197
 00:08:56,770 --> 00:08:58,285
-It's not coincidental that--
+It's not coincidental that &mdash;
 
 198
 00:08:58,285 --> 00:09:02,790
@@ -1042,11 +1042,11 @@ numbers, usually of fairly
 
 220
 00:09:56,890 --> 00:09:58,710
-young students in the summer--
+young students in the summer &mdash;
 
 221
 00:09:58,710 --> 00:10:00,880
-1,000 to 1,500--
+1,000 to 1,500 &mdash;
 
 222
 00:10:00,880 --> 00:10:02,730
@@ -1115,7 +1115,7 @@ natural language processing
 
 235
 00:10:37,430 --> 00:10:38,760
-and understanding--
+and understanding &mdash;
 
 236
 00:10:38,760 --> 00:10:41,620
@@ -2084,7 +2084,7 @@ machine and it tells you
 
 441
 00:19:34,580 --> 00:19:35,310
-things you want to know--
+things you want to know &mdash;
 
 442
 00:19:35,310 --> 00:19:37,850
@@ -2327,7 +2327,7 @@ research group that you
 493
 00:21:50,720 --> 00:21:53,870
 can subscribe to, and that's
-also something that--
+also something that &mdash;
 
 494
 00:21:53,870 --> 00:21:56,000
@@ -2529,7 +2529,7 @@ of the kind of
 
 536
 00:23:40,650 --> 00:23:42,880
-person that we like to hire--
+person that we like to hire &mdash;
 
 537
 00:23:42,880 --> 00:23:46,120
@@ -2774,7 +2774,7 @@ our Steve Jobs?
 
 588
 00:25:46,840 --> 00:25:50,730
-And who picks who--
+And who picks who &mdash;
 
 589
 00:25:50,730 --> 00:25:54,520
@@ -3084,7 +3084,7 @@ the Glass world.
 655
 00:28:45,010 --> 00:28:46,270
 There's some things you
-try, and don't--
+try, and don't &mdash;
 
 656
 00:28:46,270 --> 00:28:47,650
@@ -3250,7 +3250,7 @@ ALFRED SPECTOR: So, I'm sorry.
 691
 00:30:16,790 --> 00:30:18,660
 So why can't we use
-the energy--
+the energy &mdash;
 
 692
 00:30:18,660 --> 00:30:20,380
@@ -3269,7 +3269,7 @@ energy.
 695
 00:30:23,230 --> 00:30:26,100
 And Because those
-ideas are now--
+ideas are now &mdash;
 
 696
 00:30:26,100 --> 00:30:26,940
@@ -3365,7 +3365,7 @@ I have two questions.
 716
 00:31:09,030 --> 00:31:12,990
 The gentleman on the end, with
-the Glass-- are you thinking
+the Glass &mdash; are you thinking
 
 717
 00:31:12,990 --> 00:31:16,840
@@ -3388,7 +3388,7 @@ for a lot of reasons.
 
 721
 00:31:28,410 --> 00:31:32,020
-And the next question-- do you
+And the next question &mdash; do you
 have a tool that's comparable
 
 722
@@ -3553,7 +3553,7 @@ in the first place.
 
 755
 00:33:07,630 --> 00:33:09,240
-I'm trying to-- and this
+I'm trying to &mdash; and this
 is something I
 
 756
@@ -3728,7 +3728,7 @@ consumption.
 792
 00:34:34,360 --> 00:34:35,370
 ALFRED SPECTOR: I don't
-actually know--
+actually know &mdash;
 
 793
 00:34:35,370 --> 00:34:37,380
@@ -3959,7 +3959,7 @@ to get down from Asimov's
 
 843
 00:36:40,830 --> 00:36:43,385
-three laws to one law--
+three laws to one law &mdash;
 don't be evil.
 
 844
@@ -4274,7 +4274,7 @@ testing of different kinds of
 910
 00:39:51,730 --> 00:39:56,270
 algorithmic changes, and look
-at those sorts of--
+at those sorts of &mdash;
 
 911
 00:39:56,270 --> 00:39:58,200
@@ -4337,7 +4337,7 @@ difficult to release.
 923
 00:40:24,550 --> 00:40:26,060
 So it would have been
-very difficult--
+very difficult &mdash;
 
 924
 00:40:26,060 --> 00:40:29,050
@@ -4747,7 +4747,7 @@ guess we're going to get the
 1010
 00:43:44,470 --> 00:43:46,070
 last question, because
-you're--
+you're &mdash;
 
 1011
 00:43:46,070 --> 00:43:50,360

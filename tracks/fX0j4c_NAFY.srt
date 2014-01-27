@@ -312,7 +312,7 @@ talk about on the panel to
 
 73
 00:02:37,870 --> 00:02:39,460
-answer-- there's a lot
+answer &mdash; there's a lot
 of questions in the
 
 74
@@ -322,7 +322,7 @@ Moderator as well.
 75
 00:02:41,040 --> 00:02:43,550
 So I'm just going to kick
-off with a couple of--
+off with a couple of &mdash;
 
 76
 00:02:43,550 --> 00:02:45,700
@@ -878,7 +878,7 @@ images, one
 
 194
 00:07:36,780 --> 00:07:37,740
-thing that I've realized--
+thing that I've realized &mdash;
 
 195
 00:07:37,740 --> 00:07:43,130
@@ -888,7 +888,7 @@ looking at WordPress sites and
 196
 00:07:43,130 --> 00:07:47,230
 a whole number of
-other content--
+other content &mdash;
 
 197
 00:07:47,230 --> 00:07:51,420
@@ -1097,7 +1097,7 @@ At least that's for me.
 
 241
 00:09:38,540 --> 00:09:40,090
-Another crowd favorite--
+Another crowd favorite &mdash;
 
 242
 00:09:40,090 --> 00:09:41,050
@@ -1110,7 +1110,7 @@ this one for a second.
 
 244
 00:09:45,330 --> 00:09:48,710
-So bandwidth estimation--
+So bandwidth estimation &mdash;
 
 245
 00:09:48,710 --> 00:09:50,530
@@ -1119,7 +1119,7 @@ estimation in a browser?
 
 246
 00:09:50,530 --> 00:09:52,760
-And the answer is no--
+And the answer is no &mdash;
 
 247
 00:09:52,760 --> 00:09:55,980
@@ -1227,7 +1227,7 @@ stable bandwidth on the order
 
 270
 00:10:49,180 --> 00:10:50,210
-of milliseconds--
+of milliseconds &mdash;
 
 271
 00:10:50,210 --> 00:10:52,880
@@ -1371,7 +1371,7 @@ The second one is the radio.
 300
 00:12:10,760 --> 00:12:12,610
 And they're actually
-about the same--
+about the same &mdash;
 
 301
 00:12:12,610 --> 00:12:14,420
@@ -1671,11 +1671,11 @@ OK.
 365
 00:14:45,580 --> 00:14:47,570
 So the first question we
-actually have-- the highest
+actually have &mdash; the highest
 
 366
 00:14:47,570 --> 00:14:49,920
-ranked question on the list--
+ranked question on the list &mdash;
 is, should we have continuous
 
 367
@@ -1815,7 +1815,7 @@ bounds on latency again.
 
 397
 00:15:46,970 --> 00:15:49,610
-Knowing on 3G-- so basically
+Knowing on 3G &mdash; so basically
 it gives you goal posts.
 
 398
@@ -1831,7 +1831,7 @@ that we need to operate.
 400
 00:15:54,410 --> 00:15:56,740
 So the net info spec
-actually had this--
+actually had this &mdash;
 
 401
 00:15:56,740 --> 00:15:58,090
@@ -1992,7 +1992,7 @@ they're changing.
 434
 00:17:15,460 --> 00:17:17,780
 But hold on, but I think there's
-two different things--
+two different things &mdash;
 
 435
 00:17:17,780 --> 00:17:21,090
@@ -2131,7 +2131,7 @@ concerns about it.
 463
 00:18:38,550 --> 00:18:41,370
 ILYA GRIGORIK: So, once
-again, privacy stuff--
+again, privacy stuff &mdash;
 
 464
 00:18:41,370 --> 00:18:42,160
@@ -2140,7 +2140,7 @@ completely bogus.
 465
 00:18:42,160 --> 00:18:43,455
 Because you just
-look at your--
+look at your &mdash;
 
 466
 00:18:43,455 --> 00:18:44,662
@@ -2262,13 +2262,13 @@ device that you're sending to.
 
 491
 00:19:50,007 --> 00:19:52,830
-That's the thing that-- when
+That's the thing that &mdash; when
 you're trying to get the
 
 492
 00:19:52,830 --> 00:19:54,930
-biggest ones you can--
-network request--
+biggest ones you can &mdash;
+network request &mdash;
 
 493
 00:19:54,930 --> 00:19:57,434
@@ -2394,7 +2394,7 @@ AUDIENCE: I have one.
 
 519
 00:20:49,160 --> 00:20:49,623
-About--
+About &mdash;
 
 520
 00:20:49,623 --> 00:20:51,224
@@ -2455,7 +2455,7 @@ don't get any throughput.
 
 532
 00:21:20,750 --> 00:21:24,473
-Or you might be actually on--
+Or you might be actually on &mdash;
 
 533
 00:21:24,473 --> 00:21:26,058
@@ -2612,7 +2612,7 @@ understand, as it relates to
 
 566
 00:22:41,310 --> 00:22:42,660
-the last session, is--
+the last session, is &mdash;
 
 567
 00:22:42,660 --> 00:22:44,460
@@ -2730,7 +2730,7 @@ taking as many steps as you
 591
 00:23:35,038 --> 00:23:36,618
 can to harden your application
-against it--
+against it &mdash;
 
 592
 00:23:36,618 --> 00:23:42,440
@@ -2791,7 +2791,7 @@ interesting.
 
 604
 00:24:10,140 --> 00:24:10,690
-STEVE THAIR: Can I actually--
+STEVE THAIR: Can I actually &mdash;
 
 605
 00:24:10,690 --> 00:24:12,670
@@ -2977,7 +2977,7 @@ resolutions?
 
 644
 00:25:50,380 --> 00:25:50,720
-Or do you--
+Or do you &mdash;
 
 645
 00:25:50,720 --> 00:25:51,100
@@ -3027,7 +3027,7 @@ all of that effectively server
 
 655
 00:26:09,393 --> 00:26:10,640
-side for the--
+side for the &mdash;
 
 656
 00:26:10,640 --> 00:26:11,490
@@ -3157,7 +3157,7 @@ milliseconds to two seconds.
 
 683
 00:27:03,640 --> 00:27:04,620
-Just because your rating--
+Just because your rating &mdash;
 
 684
 00:27:04,620 --> 00:27:06,011
@@ -3189,7 +3189,7 @@ pretty good.
 690
 00:27:10,390 --> 00:27:13,290
 It's 100 milliseconds
-or less--
+or less &mdash;
 
 691
 00:27:13,290 --> 00:27:13,620
@@ -3337,12 +3337,12 @@ while, the first network
 721
 00:28:23,480 --> 00:28:26,320
 interaction that you're going
-to have will have a delay--
+to have will have a delay &mdash;
 
 722
 00:28:26,320 --> 00:28:29,270
 anywhere from 100 milliseconds
-to two seconds--
+to two seconds &mdash;
 
 723
 00:28:29,270 --> 00:28:31,500
@@ -3564,7 +3564,7 @@ JACKSON GABBARD: [INAUDIBLE]
 
 769
 00:30:45,650 --> 00:30:47,112
-I guess for me--
+I guess for me &mdash;
 
 770
 00:30:47,112 --> 00:30:48,690
@@ -3711,7 +3711,7 @@ doing during my build
 
 801
 00:31:59,050 --> 00:32:02,590
-cycle in order to--
+cycle in order to &mdash;
 
 802
 00:32:02,590 --> 00:32:04,890
@@ -3730,12 +3730,12 @@ a poll question here.
 
 805
 00:32:08,770 --> 00:32:09,630
-How many people here--
+How many people here &mdash;
 
 806
 00:32:09,630 --> 00:32:11,592
 STEVE THAIR: How many
-people here--
+people here &mdash;
 
 807
 00:32:11,592 --> 00:32:12,406
@@ -3954,7 +3954,7 @@ the important
 
 854
 00:33:46,180 --> 00:33:47,410
-interactions that matter--
+interactions that matter &mdash;
 
 855
 00:33:47,410 --> 00:33:52,390
@@ -4059,7 +4059,7 @@ JavaScript as well and
 876
 00:34:38,230 --> 00:34:39,510
 probably are on slow
-connections--
+connections &mdash;
 
 877
 00:34:39,510 --> 00:34:41,230
@@ -4087,8 +4087,8 @@ lot of people who are afraid
 
 882
 00:34:49,620 --> 00:34:51,489
-of-- particularly in the
-design community-- of
+of &mdash; particularly in the
+design community &mdash; of
 
 883
 00:34:51,489 --> 00:34:52,989
@@ -4197,7 +4197,7 @@ I'll come back to images.
 
 906
 00:35:40,190 --> 00:35:41,850
-60% of the bytes--
+60% of the bytes &mdash;
 
 907
 00:35:41,850 --> 00:35:43,090
@@ -4318,7 +4318,7 @@ four-ish categories.
 932
 00:36:43,885 --> 00:36:46,292
 I think we have roughly
-four sizes--
+four sizes &mdash;
 
 933
 00:36:46,292 --> 00:36:51,052
@@ -4604,7 +4604,7 @@ a question from Colt.
 994
 00:39:30,020 --> 00:39:31,030
 AUDIENCE: Yeah, quick
-question--
+question &mdash;
 
 995
 00:39:31,030 --> 00:39:32,170
@@ -4729,7 +4729,7 @@ something else.
 
 1021
 00:40:35,720 --> 00:40:37,580
-We recently did some studies--
+We recently did some studies &mdash;
 
 1022
 00:40:37,580 --> 00:40:39,320
@@ -4877,7 +4877,7 @@ question if you want to, Andy.
 1052
 00:41:51,280 --> 00:41:53,280
 JACKSON GABBARD: I think it
-echoes what you said earlier--
+echoes what you said earlier &mdash;
 
 1053
 00:41:53,280 --> 00:41:54,790
@@ -5108,7 +5108,7 @@ use cases where there may
 
 1103
 00:43:39,210 --> 00:43:41,970
-still-- like, if it's only
+still &mdash; like, if it's only
 used on one page, it's
 
 1104
@@ -5266,7 +5266,7 @@ has come across.
 
 1138
 00:45:08,080 --> 00:45:09,740
-ILYA GRIGORIK: So this is--
+ILYA GRIGORIK: So this is &mdash;
 
 1139
 00:45:09,740 --> 00:45:11,500
@@ -5310,11 +5310,11 @@ and specifications.
 1147
 00:45:27,350 --> 00:45:29,970
 Depending on which server you
-use-- so I happen to have
+use &mdash; so I happen to have
 
 1148
 00:45:29,970 --> 00:45:30,980
-worked on one--
+worked on one &mdash;
 
 1149
 00:45:30,980 --> 00:45:32,890
@@ -5599,7 +5599,7 @@ of people confuse
 
 1210
 00:47:51,810 --> 00:47:53,580
-about is you can have--
+about is you can have &mdash;
 
 1211
 00:47:53,580 --> 00:47:56,280
@@ -5761,7 +5761,7 @@ who was saying that
 
 1246
 00:49:13,079 --> 00:49:15,400
-we-- basically, a time out
+we &mdash; basically, a time out
 from one of our logged in
 
 1247
@@ -5799,7 +5799,7 @@ network configured.
 1254
 00:49:33,590 --> 00:49:36,700
 There's a great case study
-paper published by AT&T--
+paper published by AT&T &mdash;
 
 1255
 00:49:36,700 --> 00:49:37,210
@@ -5812,7 +5812,7 @@ ILYA GRIGORIK: Three minutes.
 
 1257
 00:49:39,030 --> 00:49:39,540
-AT&T--
+AT&T &mdash;
 
 1258
 00:49:39,540 --> 00:49:40,885
@@ -5835,7 +5835,7 @@ case study.
 
 1262
 00:49:46,310 --> 00:49:47,360
-Pandora app--
+Pandora app &mdash;
 
 1263
 00:49:47,360 --> 00:49:48,480
@@ -5894,7 +5894,7 @@ performance.
 
 1275
 00:50:11,340 --> 00:50:12,380
-AUDIENCE: Just a few points--
+AUDIENCE: Just a few points &mdash;
 
 1276
 00:50:12,380 --> 00:50:13,680
@@ -6066,11 +6066,11 @@ we're going to start working
 1312
 00:51:41,980 --> 00:51:45,270
 on in, I think, around
-May of this year--
+May of this year &mdash;
 
 1313
 00:51:45,270 --> 00:51:46,370
-it's our timeline--
+it's our timeline &mdash;
 
 1314
 00:51:46,370 --> 00:51:47,560

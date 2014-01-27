@@ -96,7 +96,7 @@ So, that's me.
 22
 00:00:59,270 --> 00:01:03,480
 MALE SPEAKER 3: Sweet
-and next we--
+and next we &mdash;
 
 23
 00:01:03,480 --> 00:01:04,819
@@ -186,7 +186,7 @@ but the other one.
 41
 00:01:43,530 --> 00:01:47,740
 On 11th, September 11th,
-I will join you--
+I will join you &mdash;
 
 42
 00:01:47,740 --> 00:01:48,170
@@ -311,7 +311,7 @@ basically the most important
 
 68
 00:03:11,370 --> 00:03:13,575
-problem it is synchronous--
+problem it is synchronous &mdash;
 
 69
 00:03:13,575 --> 00:03:13,840
@@ -449,7 +449,7 @@ dot storage
 
 98
 00:04:51,900 --> 00:04:54,730
-dot sync or dot local--
+dot sync or dot local &mdash;
 
 99
 00:04:54,730 --> 00:04:55,070
@@ -517,7 +517,7 @@ MALE SPEAKER 3: OK.
 
 113
 00:05:34,990 --> 00:05:36,880
-RENATO MANGINI: To your--
+RENATO MANGINI: To your &mdash;
 
 114
 00:05:36,880 --> 00:05:41,000
@@ -677,7 +677,7 @@ MALE SPEAKER 3: Right.
 
 147
 00:07:24,310 --> 00:07:24,900
-So--
+So &mdash;
 
 148
 00:07:24,900 --> 00:07:26,700
@@ -706,7 +706,7 @@ I was playing with,
 
 153
 00:07:40,560 --> 00:07:43,200
-if it's a media application--
+if it's a media application &mdash;
 
 154
 00:07:43,200 --> 00:07:45,650
@@ -744,7 +744,7 @@ be stored online.
 161
 00:07:59,840 --> 00:08:02,250
 So you should check the docs
-to make sure the--
+to make sure the &mdash;
 
 162
 00:08:02,250 --> 00:08:02,490
@@ -1458,7 +1458,7 @@ to do is I'm going to
 315
 00:14:57,050 --> 00:15:00,470
 get a hold of those two
-elements-- the input elements
+elements &mdash; the input elements
 
 316
 00:15:00,470 --> 00:15:02,020
@@ -1467,7 +1467,7 @@ and the text area.
 317
 00:15:02,020 --> 00:15:03,270
 So let's go ahead
-and do that--
+and do that &mdash;
 
 318
 00:15:03,270 --> 00:15:07,134
@@ -1652,7 +1652,7 @@ what's the value update?
 357
 00:17:19,210 --> 00:17:21,660
 And then this is the
-fun bit now--
+fun bit now &mdash;
 
 358
 00:17:21,660 --> 00:17:23,060
@@ -1693,7 +1693,7 @@ my value, which is sort of
 
 366
 00:17:48,510 --> 00:17:49,240
-And then--
+And then &mdash;
 
 367
 00:17:49,240 --> 00:17:50,080
@@ -1782,7 +1782,7 @@ Again, this is an async API.
 386
 00:18:37,960 --> 00:18:42,700
 Now, the callback for this
-takes two perimeters--
+takes two perimeters &mdash;
 
 387
 00:18:42,700 --> 00:18:45,210
@@ -1839,7 +1839,7 @@ space be storage or local?
 
 398
 00:19:10,920 --> 00:19:11,530
-Or will it be--
+Or will it be &mdash;
 
 399
 00:19:11,530 --> 00:19:14,100
@@ -2010,12 +2010,12 @@ ask for myValue.
 
 434
 00:20:45,320 --> 00:20:47,320
-So we can pause there-- and
+So we can pause there &mdash; and
 I'll show you this in a
 
 435
 00:20:47,320 --> 00:20:51,520
-second-- but we can ask for a
+second &mdash; but we can ask for a
 string, which is a specific
 
 436
@@ -2076,7 +2076,7 @@ hopefully spit it out now,
 448
 00:21:24,690 --> 00:21:29,150
 unless I've made a colossal
-mistake, hopefully--
+mistake, hopefully &mdash;
 
 449
 00:21:29,150 --> 00:21:31,085
@@ -2266,7 +2266,7 @@ PAUL LEWIS: Yes, it did.
 489
 00:23:14,845 --> 00:23:16,744
 RENATO MANGINI: And hopefully
-you get--
+you get &mdash;
 
 490
 00:23:16,744 --> 00:23:18,970
@@ -2340,7 +2340,7 @@ the URL for that again so
 505
 00:23:56,090 --> 00:23:59,530
 people can find that
-if they go to--
+if they go to &mdash;
 
 506
 00:23:59,530 --> 00:24:03,770
@@ -2460,7 +2460,7 @@ through the Google
 530
 00:25:14,790 --> 00:25:22,700
 Developers Live site or by
-going to goo.gl/klubW--
+going to goo.gl/klubW &mdash;
 
 531
 00:25:22,700 --> 00:25:26,490
@@ -2919,7 +2919,7 @@ And the cool thing is,
 
 628
 00:30:15,200 --> 00:30:16,450
-web intents--
+web intents &mdash;
 
 629
 00:30:16,450 --> 00:30:19,100
@@ -2932,7 +2932,7 @@ intents anymore, because he's
 631
 00:30:21,700 --> 00:30:23,640
 just so focused on
-web intents--
+web intents &mdash;
 
 632
 00:30:23,640 --> 00:30:27,090
@@ -3083,7 +3083,7 @@ differently.
 663
 00:31:59,140 --> 00:32:02,860
 But as you'd expect from
-your normal web--
+your normal web &mdash;
 
 664
 00:32:02,860 --> 00:32:06,860
@@ -3186,7 +3186,7 @@ bring up your screen.
 685
 00:32:58,130 --> 00:33:02,386
 And I think we have your screen
-up, otherwise we have--
+up, otherwise we have &mdash;
 
 686
 00:33:02,386 --> 00:33:06,280
@@ -3818,7 +3818,7 @@ forming them into your head.
 
 822
 00:39:53,700 --> 00:39:54,115
-So with--
+So with &mdash;
 
 823
 00:39:54,115 --> 00:39:54,845

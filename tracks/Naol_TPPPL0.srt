@@ -124,12 +124,12 @@ that you've all seen
 
 27
 00:01:00,934 --> 00:01:02,267
-in a little photo of--
+in a little photo of &mdash;
 
 28
 00:01:02,267 --> 00:01:03,934
 taken off of
-one of the design docs of--
+one of the design docs of &mdash;
 
 29
 00:01:03,934 --> 00:01:07,067
@@ -327,7 +327,7 @@ So couldn't we exploit that?
 
 70
 00:02:40,200 --> 00:02:42,300
-And the goals of--
+And the goals of &mdash;
 
 71
 00:02:42,300 --> 00:02:44,934
@@ -640,11 +640,11 @@ of rendering engine,
 135
 00:05:00,000 --> 00:05:03,467
 and we went with WebKit
-because it was, well--
+because it was, well &mdash;
 
 136
 00:05:03,467 --> 00:05:04,734
-We really wanted to--
+We really wanted to &mdash;
 
 137
 00:05:04,734 --> 00:05:06,467
@@ -653,7 +653,7 @@ was going to be open source,
 
 138
 00:05:06,467 --> 00:05:08,267
-and we chose upon--
+and we chose upon &mdash;
 
 139
 00:05:08,267 --> 00:05:10,834
@@ -753,7 +753,7 @@ of other techniques
 159
 00:05:48,534 --> 00:05:50,467
 to make
-dynamic programs like--
+dynamic programs like &mdash;
 
 160
 00:05:50,467 --> 00:05:52,534
@@ -813,7 +813,7 @@ of Chrome.
 
 172
 00:06:21,534 --> 00:06:25,067
-So this is sort of--
+So this is sort of &mdash;
 
 173
 00:06:25,067 --> 00:06:28,334
@@ -942,7 +942,7 @@ things like the UI,
 199
 00:07:23,067 --> 00:07:24,434
 the tab strip,
-and the Omnibox--
+and the Omnibox &mdash;
 
 200
 00:07:24,434 --> 00:07:26,834
@@ -986,7 +986,7 @@ and then again for Linux.
 208
 00:07:44,067 --> 00:07:47,334
 And so for Windows,
-we went about--
+we went about &mdash;
 
 209
 00:07:47,334 --> 00:07:49,200
@@ -1071,7 +1071,7 @@ architecture.
 
 226
 00:08:24,634 --> 00:08:27,634
-That's sort of the thing that--
+That's sort of the thing that &mdash;
 the goop that binds
 
 227
@@ -1151,7 +1151,7 @@ talk to.
 
 243
 00:09:03,434 --> 00:09:06,334
-And we have a sequence--
+And we have a sequence &mdash;
 a set of different renderers.
 
 244
@@ -1203,7 +1203,7 @@ a hub and spoke design.
 254
 00:09:23,334 --> 00:09:25,100
 I've shown some other
-processes here--
+processes here &mdash;
 
 255
 00:09:25,100 --> 00:09:27,801
@@ -1213,7 +1213,7 @@ plug-in processes.
 256
 00:09:27,801 --> 00:09:31,634
 So worker processes are
-the new web workers coming of--
+the new web workers coming of &mdash;
 
 257
 00:09:31,634 --> 00:09:34,534
@@ -1291,7 +1291,7 @@ or ActiveX.
 
 272
 00:10:07,701 --> 00:10:10,734
-And so for these--
+And so for these &mdash;
 for each of these plug-ins,
 
 273
@@ -1399,7 +1399,7 @@ about that.
 294
 00:11:06,200 --> 00:11:08,934
 We decided early on
-that we really--
+that we really &mdash;
 
 295
 00:11:08,934 --> 00:11:10,634
@@ -1419,7 +1419,7 @@ or wherever.
 298
 00:11:16,601 --> 00:11:19,567
 And a lot of times,
-performance can--
+performance can &mdash;
 
 299
 00:11:19,567 --> 00:11:21,400
@@ -1481,7 +1481,7 @@ existing systems on Windows,
 
 311
 00:11:46,667 --> 00:11:48,501
-like Windows messages that--
+like Windows messages that &mdash;
 
 312
 00:11:48,501 --> 00:11:50,601
@@ -1499,7 +1499,7 @@ were fairly complicated,
 
 315
 00:11:54,934 --> 00:11:56,901
-and in order to achieve--
+and in order to achieve &mdash;
 
 316
 00:11:56,901 --> 00:11:58,834
@@ -1538,7 +1538,7 @@ for limited blocking calls,
 323
 00:12:10,234 --> 00:12:12,734
 because that's required
-for some of the--
+for some of the &mdash;
 
 324
 00:12:12,734 --> 00:12:14,467
@@ -1768,7 +1768,7 @@ to the web
 371
 00:14:02,200 --> 00:14:07,200
 that force us to group
-some applications or some--
+some applications or some &mdash;
 
 372
 00:14:07,200 --> 00:14:08,767
@@ -1849,7 +1849,7 @@ the system
 388
 00:14:39,601 --> 00:14:44,033
 so that there was
-a complex way of--
+a complex way of &mdash;
 
 389
 00:14:44,033 --> 00:14:46,200
@@ -1874,7 +1874,7 @@ of performance problems.
 393
 00:14:52,100 --> 00:14:54,667
 So instead we thought,
-well, a web application--
+well, a web application &mdash;
 
 394
 00:14:54,667 --> 00:14:56,534
@@ -1931,7 +1931,7 @@ interestingly enough,
 
 405
 00:15:22,467 --> 00:15:24,067
-Target blank--
+Target blank &mdash;
 I put this up here
 
 406
@@ -1980,7 +1980,7 @@ a dot opener property,
 415
 00:15:42,200 --> 00:15:44,701
 and the dot opener property
-allows it to see the guy--
+allows it to see the guy &mdash;
 
 416
 00:15:44,701 --> 00:15:48,601
@@ -2013,13 +2013,13 @@ and origin B are the same,
 
 422
 00:16:00,100 --> 00:16:02,734
-then they--
-they then, you know--
+then they &mdash;
+they then, you know &mdash;
 
 423
 00:16:02,734 --> 00:16:06,267
 Okay, we would only group them
-in the same process if--
+in the same process if &mdash;
 
 424
 00:16:06,267 --> 00:16:10,067
@@ -2034,7 +2034,7 @@ not good enough,
 426
 00:16:11,834 --> 00:16:14,567
 because it might be that
-you are clicking a link from--
+you are clicking a link from &mdash;
 
 427
 00:16:14,567 --> 00:16:17,868
@@ -2052,7 +2052,7 @@ that's also on origin A.
 
 430
 00:16:21,901 --> 00:16:23,634
-And origin--
+And origin &mdash;
 the page over here
 
 431
@@ -2175,7 +2175,7 @@ as a clue, as a heuristic
 
 455
 00:17:24,400 --> 00:17:26,534
-to determine that--
+to determine that &mdash;
 Oh, I see.
 
 456
@@ -2292,7 +2292,7 @@ in the location bar,
 
 479
 00:18:28,734 --> 00:18:31,501
-you go to a--
+you go to a &mdash;
 enter a new URL up there,
 
 480
@@ -2347,11 +2347,11 @@ very attractive.
 490
 00:18:58,534 --> 00:19:00,968
 And our conclusions
-were very similar to theirs--
+were very similar to theirs &mdash;
 
 491
 00:19:00,968 --> 00:19:02,634
-that you suffer some--
+that you suffer some &mdash;
 
 492
 00:19:02,634 --> 00:19:05,133
@@ -2475,7 +2475,7 @@ as I was just saying,
 517
 00:20:06,300 --> 00:20:10,033
 you might wish to protect
-one origin from another origin--
+one origin from another origin &mdash;
 
 518
 00:20:10,033 --> 00:20:11,667
@@ -2570,7 +2570,7 @@ That's sort of a first cut.
 537
 00:20:53,601 --> 00:20:55,234
 You know, obviously
-if we don't know--
+if we don't know &mdash;
 
 538
 00:20:55,234 --> 00:20:57,067
@@ -2593,7 +2593,7 @@ of extra protection.
 
 542
 00:21:02,634 --> 00:21:05,067
-It was very interesting--
+It was very interesting &mdash;
 a very interesting story.
 
 543
@@ -2710,7 +2710,7 @@ and so on.
 566
 00:21:55,567 --> 00:21:57,167
 The mechanisms
-to achieve this--
+to achieve this &mdash;
 
 567
 00:21:57,167 --> 00:22:01,267
@@ -2779,7 +2779,7 @@ to some of the input devices.
 580
 00:22:31,267 --> 00:22:34,200
 Okay, but sandbox
-doesn't actually--
+doesn't actually &mdash;
 
 581
 00:22:34,200 --> 00:22:36,534
@@ -2985,7 +2985,7 @@ we're not separating origins.
 623
 00:24:11,901 --> 00:24:14,234
 So what that means
-is that cookies--
+is that cookies &mdash;
 
 624
 00:24:14,234 --> 00:24:15,634
@@ -3197,7 +3197,7 @@ and so some computation on it,
 
 668
 00:25:42,234 --> 00:25:44,267
-it's--there's a potential--
+it's--there's a potential &mdash;
 
 669
 00:25:44,267 --> 00:25:46,767
@@ -3221,7 +3221,7 @@ HTML 5 database,
 673
 00:25:52,968 --> 00:25:54,567
 local store, session store,
-they're much like cookies--
+they're much like cookies &mdash;
 
 674
 00:25:54,567 --> 00:25:55,667
@@ -3503,7 +3503,7 @@ that we really wanted
 733
 00:28:05,167 --> 00:28:06,734
 to try to achieve
-with this--
+with this &mdash;
 
 734
 00:28:06,734 --> 00:28:08,801
@@ -3547,7 +3547,7 @@ might never release it.
 
 742
 00:28:23,634 --> 00:28:26,200
-And that--
+And that &mdash;
 As an end result, you know,
 
 743
@@ -3704,7 +3704,7 @@ to sort of prefetch
 775
 00:29:34,767 --> 00:29:37,934
 or do one additional render
-ahead of the next--
+ahead of the next &mdash;
 
 776
 00:29:37,934 --> 00:29:40,133
@@ -3821,7 +3821,7 @@ of the old rendering,
 
 799
 00:30:31,400 --> 00:30:33,901
-we don't necessarily have--
+we don't necessarily have &mdash;
 that backingstore
 
 800
@@ -4034,7 +4034,7 @@ and potentially put up UI
 
 843
 00:32:20,667 --> 00:32:22,868
-to ask users if they're--
+to ask users if they're &mdash;
 
 844
 00:32:22,868 --> 00:32:24,934
@@ -4043,7 +4043,7 @@ that's like,
 
 845
 00:32:24,934 --> 00:32:26,434
-"This, you know--
+"This, you know &mdash;
 
 846
 00:32:26,434 --> 00:32:28,634
@@ -4134,7 +4134,7 @@ happen there,
 
 864
 00:33:05,167 --> 00:33:06,567
-and it can either go--
+and it can either go &mdash;
 
 865
 00:33:06,567 --> 00:33:08,267
@@ -4170,7 +4170,7 @@ without locking.
 
 872
 00:33:28,267 --> 00:33:31,901
-We wanted to make sure that--
+We wanted to make sure that &mdash;
 
 873
 00:33:31,901 --> 00:33:35,834
@@ -4366,7 +4366,7 @@ Plug-ins.
 
 913
 00:35:03,033 --> 00:35:04,968
-This is probably--Plug-ins--
+This is probably--Plug-ins &mdash;
 
 914
 00:35:04,968 --> 00:35:07,467
@@ -4480,7 +4480,7 @@ in a separate process.
 
 937
 00:35:57,701 --> 00:35:59,634
-And this works--
+And this works &mdash;
 
 938
 00:35:59,634 --> 00:36:03,000
@@ -4509,7 +4509,7 @@ and one is windowed.
 943
 00:36:12,467 --> 00:36:14,200
 Windowed means that
-you actually get--
+you actually get &mdash;
 
 944
 00:36:14,200 --> 00:36:16,200
@@ -4615,7 +4615,7 @@ of windowless plug-ins.
 965
 00:37:02,634 --> 00:37:04,534
 What we do when there's
-a windowless plug-in--
+a windowless plug-in &mdash;
 
 966
 00:37:04,534 --> 00:37:05,868
@@ -4656,7 +4656,7 @@ inside the plug-in.
 
 974
 00:37:19,367 --> 00:37:20,701
-What this means is--
+What this means is &mdash;
 
 975
 00:37:20,701 --> 00:37:23,067
@@ -5011,7 +5011,7 @@ in good time.
 1050
 00:40:06,801 --> 00:40:09,067
 So if you were to look
-into the WebCore reposit--
+into the WebCore reposit &mdash;
 
 1051
 00:40:09,067 --> 00:40:11,100
@@ -5153,7 +5153,7 @@ with Safari 4's WebKit.
 1080
 00:41:20,901 --> 00:41:22,934
 I think we've taken
-a slightly older--
+a slightly older &mdash;
 
 1081
 00:41:22,934 --> 00:41:25,868
@@ -5215,7 +5215,7 @@ to the WebKit project.
 1093
 00:41:58,133 --> 00:42:02,200
 So we believe strongly
-in WebKit being--
+in WebKit being &mdash;
 
 1094
 00:42:02,200 --> 00:42:04,834
@@ -5482,7 +5482,7 @@ getting to the point now
 
 1149
 00:44:16,400 --> 00:44:17,834
-where it's--
+where it's &mdash;
 
 1150
 00:44:17,834 --> 00:44:20,200
@@ -5500,7 +5500,7 @@ that embed WebKit.
 
 1153
 00:44:24,100 --> 00:44:27,567
-And so once--
+And so once &mdash;
 my experience with Firefox
 
 1154
@@ -5549,7 +5549,7 @@ a snowball effect
 1163
 00:44:49,834 --> 00:44:51,701
 and people will care
-and people will--
+and people will &mdash;
 
 1164
 00:44:51,701 --> 00:44:56,133
@@ -5568,7 +5568,7 @@ improve performance.
 
 1167
 00:45:00,534 --> 00:45:02,000
-Performance is--
+Performance is &mdash;
 
 1168
 00:45:02,000 --> 00:45:03,501
@@ -5891,7 +5891,7 @@ that's still being worked out,
 1235
 00:47:29,701 --> 00:47:32,200
 details are being worked out,
-but sure would be--
+but sure would be &mdash;
 
 1236
 00:47:32,200 --> 00:47:35,467
@@ -5900,7 +5900,7 @@ if you could have a worker
 
 1237
 00:47:35,467 --> 00:47:38,734
-that lives on beyond--
+that lives on beyond &mdash;
 
 1238
 00:47:38,734 --> 00:47:40,501
@@ -6078,7 +6078,7 @@ started the project,
 1275
 00:48:59,033 --> 00:49:00,901
 we thought, well,
-let's not do this--
+let's not do this &mdash;
 
 1276
 00:49:00,901 --> 00:49:03,701
@@ -6261,7 +6261,7 @@ we shipped with in Chrome 1.
 1313
 00:50:21,734 --> 00:50:24,300
 But, you know,
-we recognized that there's--
+we recognized that there's &mdash;
 
 1314
 00:50:24,300 --> 00:50:26,534
@@ -6325,7 +6325,7 @@ impact on performance.
 1326
 00:51:00,701 --> 00:51:03,901
 And we've been spending
-a lot of energy--
+a lot of energy &mdash;
 
 1327
 00:51:03,901 --> 00:51:05,701
@@ -6373,7 +6373,7 @@ there's lots of things
 1336
 00:51:24,400 --> 00:51:25,767
 still to be done
-for the new network stack--
+for the new network stack &mdash;
 
 1337
 00:51:25,767 --> 00:51:27,100
@@ -6420,7 +6420,7 @@ for future releases.
 1346
 00:51:42,567 --> 00:51:44,834
 Other cool new features
-that might help--
+that might help &mdash;
 
 1347
 00:51:44,834 --> 00:51:46,400
@@ -6546,7 +6546,7 @@ of TCP connections,
 
 1372
 00:52:36,234 --> 00:52:37,868
-'cause these are--
+'cause these are &mdash;
 
 1373
 00:52:37,868 --> 00:52:40,601
@@ -6709,7 +6709,7 @@ being single-threaded.
 
 1406
 00:54:01,968 --> 00:54:03,200
-But if you--
+But if you &mdash;
 
 1407
 00:54:03,200 --> 00:54:06,634
@@ -6733,12 +6733,12 @@ that function call
 1411
 00:54:13,968 --> 00:54:16,567
 with, like, running
-another JavaScript--
+another JavaScript &mdash;
 
 1412
 00:54:16,567 --> 00:54:18,701
 some other thread
-of JavaScript somewhere--
+of JavaScript somewhere &mdash;
 
 1413
 00:54:18,701 --> 00:54:20,267
@@ -6772,7 +6772,7 @@ that you come to expect.
 1419
 00:54:30,734 --> 00:54:35,501
 And so really I worry that
-the Firefox implementation--
+the Firefox implementation &mdash;
 
 1420
 00:54:35,501 --> 00:54:38,300
@@ -6898,7 +6898,7 @@ in a browser environment.
 
 1446
 00:55:37,267 --> 00:55:39,100
-So--So that's--
+So--So that's &mdash;
 
 1447
 00:55:39,100 --> 00:55:41,300
@@ -6987,7 +6987,7 @@ to do something
 1465
 00:56:17,634 --> 00:56:22,000
 to look at secure text,
-encrypted text, encrypted--
+encrypted text, encrypted &mdash;
 
 1466
 00:56:22,000 --> 00:56:24,033
@@ -7000,7 +7000,7 @@ and display it.
 
 1468
 00:56:26,033 --> 00:56:28,100
-And it's just--
+And it's just &mdash;
 it's really difficult
 
 1469
@@ -7034,7 +7034,7 @@ in the different browsers
 
 1475
 00:56:38,868 --> 00:56:40,100
-and does something--
+and does something &mdash;
 
 1476
 00:56:40,100 --> 00:56:41,367
@@ -7057,12 +7057,12 @@ something better as well.
 1480
 00:56:47,701 --> 00:56:49,601
 man: Well, I mean,
-even the Safari--
+even the Safari &mdash;
 
 1481
 00:56:49,601 --> 00:56:53,000
 The Safari, you know,
-WebKit plug-in thing is way--
+WebKit plug-in thing is way &mdash;
 
 1482
 00:56:53,000 --> 00:56:55,334
@@ -7131,7 +7131,7 @@ into that tag.
 1496
 00:57:18,334 --> 00:57:21,968
 What do you do to, like,
-ensure that your--
+ensure that your &mdash;
 
 1497
 00:57:21,968 --> 00:57:23,934
@@ -7160,17 +7160,17 @@ that's sort of half-baked?
 1502
 00:57:33,300 --> 00:57:35,234
 man:
-Or what do you do, like--
+Or what do you do, like &mdash;
 
 1503
 00:57:35,234 --> 00:57:37,567
 I guess what's your strategy
-before--
+before &mdash;
 
 1504
 00:57:37,567 --> 00:57:40,400
 When you're deciding on,
-you know, where to--
+you know, where to &mdash;
 
 1505
 00:57:40,400 --> 00:57:42,300
@@ -7264,7 +7264,7 @@ about other operating systems,
 
 1524
 00:58:22,067 --> 00:58:24,367
-if you're like--
+if you're like &mdash;
 if it would be more of, like,
 
 1525
@@ -7289,7 +7289,7 @@ be implementing that?
 1529
 00:58:32,834 --> 00:58:34,167
 Fisher:
-There's a lot of--
+There's a lot of &mdash;
 
 1530
 00:58:34,167 --> 00:58:36,801
@@ -7309,7 +7309,7 @@ of traditional tools
 1533
 00:58:40,200 --> 00:58:42,634
 like chroot,
-different user--
+different user &mdash;
 
 1534
 00:58:42,634 --> 00:58:43,901
@@ -7367,7 +7367,7 @@ in any sort of, like,
 1545
 00:59:02,801 --> 00:59:05,367
 it's not really portable,
-but it's, like, an object type--
+but it's, like, an object type &mdash;
 
 1546
 00:59:05,367 --> 00:59:06,934
@@ -7433,7 +7433,7 @@ and actually get a plug-in
 1559
 00:59:31,901 --> 00:59:35,100
 without having
-to reboot the browser and--
+to reboot the browser and &mdash;
 
 1560
 00:59:35,100 --> 00:59:37,100

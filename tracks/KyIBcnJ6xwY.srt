@@ -723,7 +723,7 @@ car, you connect your
 
 154
 00:07:22,880 --> 00:07:24,780
-phone to the car--
+phone to the car &mdash;
 
 155
 00:07:24,780 --> 00:07:26,295
@@ -2376,12 +2376,12 @@ returns us a mixed list of
 
 501
 00:24:20,160 --> 00:24:21,140
-query suggestions--
+query suggestions &mdash;
 
 502
 00:24:21,140 --> 00:24:23,730
 so coffee bean, coffee,
-coffee shops--
+coffee shops &mdash;
 
 503
 00:24:23,730 --> 00:24:26,600

@@ -149,7 +149,7 @@ which means developers have to
 32
 00:01:10,520 --> 00:01:13,110
 worry about the three pillars
-of performance now--
+of performance now &mdash;
 
 33
 00:01:13,110 --> 00:01:14,810
@@ -780,7 +780,7 @@ and Google and
 
 164
 00:05:42,530 --> 00:05:43,720
-all the rest to make--
+all the rest to make &mdash;
 
 165
 00:05:43,720 --> 00:05:46,110

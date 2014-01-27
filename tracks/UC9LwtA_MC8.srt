@@ -141,11 +141,11 @@ so all the technologies that Web developers
 29
 00:02:19,340 --> 00:02:24,060
 use to build cool apps.
-My favorite stuff -- and if you saw my talk
+My favorite stuff  &mdash; and if you saw my talk
 
 30
 00:02:24,060 --> 00:02:29,310
-on Wednesday this won't surprise you -- is
+on Wednesday this won't surprise you  &mdash; is
 Web components. So Web components is a new
 
 31
@@ -205,7 +205,7 @@ Client effort and a few other things.
 
 42
 00:03:32,709 --> 00:03:36,580
-The things I'm most excited about -- I'm actually
+The things I'm most excited about  &mdash; I'm actually
 really excited about Web components too, Alex,
 
 43
@@ -265,7 +265,7 @@ But just is to make Pavel's life worse and
 
 54
 00:04:36,620 --> 00:04:41,630
-not repeat, probably the other thing -- the
+not repeat, probably the other thing  &mdash; the
 other major area I'm really excited about
 
 55
@@ -275,7 +275,7 @@ is around all the tools work.
 
 56
 00:04:45,570 --> 00:04:52,570
-We've got -- I think Pavel showed some amazing
+We've got  &mdash; I think Pavel showed some amazing
 stuff with our own dev tools in Chrome, but
 
 57
@@ -285,8 +285,8 @@ on some of the work that they're doing around
 
 58
 00:04:57,380 --> 00:05:02,949
-Brackets and Shadow. So -- and they're doing
--- have done some great work with Edge and
+Brackets and Shadow. So  &mdash; and they're doing
+ &mdash; have done some great work with Edge and
 
 59
 00:05:02,949 --> 00:05:06,729
@@ -350,7 +350,7 @@ as emulating mobile handsets on your desktop.
 
 71
 00:06:09,290 --> 00:06:16,290
-We do support the -- we've created the remote
+We do support the  &mdash; we've created the remote
 debugging protocol that we are happy to see
 
 72
@@ -456,7 +456,7 @@ open for questions. Feel free to walk up to
 92
 00:08:13,130 --> 00:08:18,720
 any of the microphones and ask or otherwise
-we will trade off with the --
+we will trade off with the  &mdash;
 
 93
 00:08:18,720 --> 00:08:25,720
@@ -486,7 +486,7 @@ to open tabs on other devices, and sometimes
 98
 00:08:42,330 --> 00:08:48,070
 if you're like left at home or you have the
-devices -- the tabs open there and you open
+devices  &mdash; the tabs open there and you open
 
 99
 00:08:48,070 --> 00:08:55,070
@@ -530,7 +530,7 @@ it immediately.
 
 107
 00:09:20,410 --> 00:09:27,050
->>Jeff Chang: Maybe we could -- maybe we could
+>>Jeff Chang: Maybe we could  &mdash; maybe we could
 figure something out there.
 
 108
@@ -766,7 +766,7 @@ aren't necessarily a joy to use right now,
 154
 00:13:11,570 --> 00:13:15,660
 but they do exist as alternatives to build
-upon. The file API is a great -- another great
+upon. The file API is a great  &mdash; another great
 
 155
 00:13:15,660 --> 00:13:17,910
@@ -781,7 +781,7 @@ usage is the way you develop your applications.
 157
 00:13:23,820 --> 00:13:28,079
 So if you develop your application with an
-always on server -- always connected through
+always on server  &mdash; always connected through
 
 158
 00:13:28,079 --> 00:13:33,329
@@ -815,7 +815,7 @@ way.
 
 164
 00:13:53,240 --> 00:13:58,339
-And that's a great thing about the new -- the
+And that's a great thing about the new  &mdash; the
 next evolution of Chrome apps is actually
 
 165
@@ -836,7 +836,7 @@ way that really works for offline.
 168
 00:14:12,850 --> 00:14:19,500
 >>Erik Kay: Right. So thanks for the shout-out
-to the Chrome apps, but the -- we really want
+to the Chrome apps, but the  &mdash; we really want
 
 169
 00:14:19,500 --> 00:14:22,250
@@ -855,7 +855,7 @@ built in to them to make it possible to make
 
 172
 00:14:31,130 --> 00:14:36,540
-it easy for you to not get -- you know, get
+it easy for you to not get  &mdash; you know, get
 your app into a bad state.
 
 173
@@ -886,11 +886,11 @@ people all using the same Wi-Fi, you know,
 178
 00:15:05,050 --> 00:15:12,050
 connection or other times I'm at a hotel with
-a captive proxy or, you know -- there's -- offline
+a captive proxy or, you know  &mdash; there's  &mdash; offline
 
 179
 00:15:14,110 --> 00:15:20,389
-is -- has a wide spectrum actually, and making
+is  &mdash; has a wide spectrum actually, and making
 your apps that is resistant, resilient to
 
 180
@@ -1015,7 +1015,7 @@ in the Web platform we're thinking about the
 
 204
 00:17:28,259 --> 00:17:33,399
-mobile scenarios. Almost -- I would say first
+mobile scenarios. Almost  &mdash; I would say first
 and foremost generally. We worry a little
 
 205
@@ -1031,12 +1031,12 @@ head that we're not thinking about being in
 207
 00:17:42,729 --> 00:17:49,470
 mobile sooner or later.
-So hopefully we'll -- that lag between desktop
+So hopefully we'll  &mdash; that lag between desktop
 
 208
 00:17:49,470 --> 00:17:56,470
 and mobile will get shorter and shorter.
->>Alex Komoroske: So there's also -- there's
+>>Alex Komoroske: So there's also  &mdash; there's
 
 209
 00:17:57,720 --> 00:18:01,429
@@ -1066,7 +1066,7 @@ So there's a long-term problem of some of
 214
 00:18:19,739 --> 00:18:23,869
 these features that you have to make sure
-you design it in the mobile -- to work well
+you design it in the mobile  &mdash; to work well
 
 215
 00:18:23,869 --> 00:18:27,330
@@ -1270,7 +1270,7 @@ systems, Android and Chrome OS, eventually
 
 255
 00:22:08,809 --> 00:22:14,229
-converge? Yeah, we get asked -- we've been
+converge? Yeah, we get asked  &mdash; we've been
 asked about this in the past, you know, one
 
 256
@@ -1280,7 +1280,7 @@ the goal of designing an end-to-end computing
 
 257
 00:22:19,970 --> 00:22:25,519
-experience that -- that embodies kind of the
+experience that  &mdash; that embodies kind of the
 same core principles as Chrome does, the security,
 
 258
@@ -1301,7 +1301,7 @@ Android is now stable.
 261
 00:22:39,399 --> 00:22:42,849
 And maybe Felix you have some other comments
-on this or --
+on this or  &mdash;
 
 262
 00:22:42,849 --> 00:22:47,479
@@ -1311,7 +1311,7 @@ I mean, one thing is that you'll see, I think
 263
 00:22:47,479 --> 00:22:53,470
 you are going to see more and more convergence
-over time. You know, we -- first off just
+over time. You know, we  &mdash; first off just
 
 264
 00:22:53,470 --> 00:23:00,099
@@ -1320,7 +1320,7 @@ sort of the first big step. But there are
 
 265
 00:23:00,099 --> 00:23:05,769
-many places where we -- where we can integrate
+many places where we  &mdash; where we can integrate
 more. First off, getting the same set of apps
 
 266
@@ -1330,12 +1330,12 @@ But I think the opportunities doing some of
 
 267
 00:23:12,369 --> 00:23:18,169
-the -- I think the Chrome-to-phone stuff that
-we had before, we're looking to -- to have
+the  &mdash; I think the Chrome-to-phone stuff that
+we had before, we're looking to  &mdash; to have
 
 268
 00:23:18,169 --> 00:23:21,639
--- to leverage a lot of the same infrastructure
+ &mdash; to leverage a lot of the same infrastructure
 and to have more and more integration over
 
 269
@@ -1356,7 +1356,7 @@ iOS notifications, which I believe are coming
 272
 00:23:40,200 --> 00:23:46,700
 to the desktop?
->>Erik Kay: So we actually do have some -- effectively
+>>Erik Kay: So we actually do have some  &mdash; effectively
 
 273
 00:23:46,700 --> 00:23:52,349
@@ -1460,7 +1460,7 @@ And just one last little plug, we are hiring.
 
 293
 00:25:26,299 --> 00:25:28,119
-happen, you know --
+happen, you know  &mdash;
 >>> Cool.
 
 294
@@ -1511,7 +1511,7 @@ desktop.
 303
 00:26:12,779 --> 00:26:19,779
 >>Erik Kay: Right. So I know that the engineers
-working on that pretty -- on the SSH thing
+working on that pretty  &mdash; on the SSH thing
 
 304
 00:26:20,849 --> 00:26:26,249
@@ -1540,7 +1540,7 @@ have a desktop background. And the change
 
 309
 00:26:51,659 --> 00:26:57,690
-on -- to Aura in the newer version of Chrome
+on  &mdash; to Aura in the newer version of Chrome
 OS did make it a lot more like a desktop operating
 
 310
@@ -1551,7 +1551,7 @@ happen?
 311
 00:27:00,759 --> 00:27:07,129
 >>Ian Ellison-Taylor: It was 99% user feedback.
-I mean -- I think when we launched Chrome
+I mean  &mdash; I think when we launched Chrome
 
 312
 00:27:07,129 --> 00:27:13,710
@@ -1575,12 +1575,12 @@ feedback that they wanted it to be a little
 
 316
 00:27:28,279 --> 00:27:35,279
-bit more like a -- you know, a "traditional"
+bit more like a  &mdash; you know, a "traditional"
 OS and particularly I think that model, I
 
 317
 00:27:36,219 --> 00:27:39,989
-mean this is just for me personally -- I will
+mean this is just for me personally  &mdash; I will
 let Felix talk a little bit. For me personally
 
 318
@@ -1591,7 +1591,7 @@ the smaller screen. But once you get to sort
 319
 00:27:47,399 --> 00:27:53,789
 of Chromebox style and you're on a large monitor,
-that's -- that single large window gets a
+that's  &mdash; that single large window gets a
 
 320
 00:27:53,789 --> 00:27:59,059
@@ -1605,7 +1605,7 @@ to like open multiple windows, switch between
 
 322
 00:28:04,019 --> 00:28:07,830
--- then multi-tasking, now I've got three
+ &mdash; then multi-tasking, now I've got three
 or four things going on at once, I want a
 
 323
@@ -1651,7 +1651,7 @@ have to flip between tabs and you only have
 331
 00:28:45,809 --> 00:28:52,460
 one pane, it's a pretty miserable experience.
-Also, as -- as Ian was mentioning, you know
+Also, as  &mdash; as Ian was mentioning, you know
 
 332
 00:28:52,460 --> 00:28:58,190
@@ -1726,7 +1726,7 @@ so that's in Chrome OS. So that wasn't just
 346
 00:30:03,589 --> 00:30:08,729
 something we rigged up for the keynote.
-You can -- it shows the power of the window
+You can  &mdash; it shows the power of the window
 
 347
 00:30:08,729 --> 00:30:14,059
@@ -1760,7 +1760,7 @@ that.
 
 353
 00:30:23,859 --> 00:30:30,639
-You give it away. But there's another -- another
+You give it away. But there's another  &mdash; another
 Easter egg that was in the keynote as well.
 
 354
@@ -1815,7 +1815,7 @@ point down the road?
 
 364
 00:31:23,349 --> 00:31:29,700
->>Felix Lin: I think -- we can't talk about
+>>Felix Lin: I think  &mdash; we can't talk about
 any future products obviously. But there's
 
 365
@@ -1840,7 +1840,7 @@ packaging a product and bringing it to commercial
 
 369
 00:31:56,959 --> 00:32:03,959
-release. So I don't -- you know, basically
+release. So I don't  &mdash; you know, basically
 there's nothing holding anybody back. Other
 
 370
@@ -1855,7 +1855,7 @@ Chrome OS. It's more just sort of what our
 
 372
 00:32:16,219 --> 00:32:20,279
-chip sets have been building -- what the ARM
+chip sets have been building  &mdash; what the ARM
 chip sets and manufacturers have been building,
 
 373
@@ -1866,7 +1866,7 @@ and what's interesting is that phones and
 374
 00:32:27,099 --> 00:32:34,019
 tablets have smaller screens. And it turns
-out that -- that the thing that you need that's
+out that  &mdash; that the thing that you need that's
 
 375
 00:32:34,019 --> 00:32:38,559
@@ -1905,7 +1905,7 @@ bigger monitors, you know, hi-res. But now
 
 382
 00:33:08,440 --> 00:33:13,080
-as tablets have had -- now get an increased
+as tablets have had  &mdash; now get an increased
 density, increased size, increased number
 
 383
@@ -1951,7 +1951,7 @@ preferences and that sort of a thing. It's
 391
 00:34:02,639 --> 00:34:08,970
 an easy way to sort of move app and extension
-settings from -- from machine to machine.
+settings from  &mdash; from machine to machine.
 
 392
 00:34:08,970 --> 00:34:15,329
@@ -1975,7 +1975,7 @@ onto lots of devices. So you get sort of both
 
 396
 00:34:31,659 --> 00:34:36,579
--- both parts of the equation, your settings
+ &mdash; both parts of the equation, your settings
 and your data that can travel with you. So
 
 397
@@ -2010,7 +2010,7 @@ about version numbers, but Chrome 20 stable
 
 403
 00:35:12,499 --> 00:35:16,710
--- just went to the stable channel this past
+ &mdash; just went to the stable channel this past
 week.
 
 404
@@ -2041,11 +2041,11 @@ dialogue has a search box that you can search
 409
 00:35:36,019 --> 00:35:41,000
 across all of the printers that are available
-to you. So I hope that's -- that the UI team
+to you. So I hope that's  &mdash; that the UI team
 
 410
 00:35:41,000 --> 00:35:46,960
-has considered the issue of -- of when you
+has considered the issue of  &mdash; of when you
 have lots of printers there, although I think
 
 411
@@ -2056,7 +2056,7 @@ enterprise.
 412
 00:35:49,329 --> 00:35:52,579
 >>Ian Ellison-Taylor: Yeah. Actually, I wonder
-if any here -- if they have any from Cloud
+if any here  &mdash; if they have any from Cloud
 
 413
 00:35:52,579 --> 00:35:57,069
@@ -2081,7 +2081,7 @@ last session in this room today, I think.
 417
 00:36:09,700 --> 00:36:13,789
 mean one of the big strengths that we've seen
-with -- with Chromebooks and Chrome OS has
+with  &mdash; with Chromebooks and Chrome OS has
 
 418
 00:36:13,789 --> 00:36:20,789
@@ -2230,7 +2230,7 @@ on Intel Corp. You know the great thing about
 
 447
 00:38:45,960 --> 00:38:51,760
-Google -- two things, right? We have access
+Google  &mdash; two things, right? We have access
 to whatever computer we want. If you want
 
 448
@@ -2271,7 +2271,7 @@ are just completely hassle free, battery life,
 455
 00:39:39,119 --> 00:39:46,119
 power management, superb, you know, even the
--- the first generation Chromebook, just because
+ &mdash; the first generation Chromebook, just because
 
 456
 00:39:46,359 --> 00:39:51,279
@@ -2360,13 +2360,13 @@ want more people to switch over, as soon as
 
 473
 00:41:25,490 --> 00:41:32,490
-they can, and Google -- Googlers are a really
+they can, and Google  &mdash; Googlers are a really
 demanding audience. It turns out that, as
 
 474
 00:41:33,099 --> 00:41:38,140
 Felix said, they can use whatever hardware
-they want, and -- and a lot of them are doing
+they want, and  &mdash; and a lot of them are doing
 
 475
 00:41:38,140 --> 00:41:42,390
@@ -2391,7 +2391,7 @@ enough. And now the feedback that we've gotten
 479
 00:41:58,450 --> 00:42:04,240
 from people, is like, wow, this is actually
--- this has crossed the line and it's great,
+ &mdash; this has crossed the line and it's great,
 
 480
 00:42:04,240 --> 00:42:10,220
@@ -2400,13 +2400,13 @@ they want more of course and so we're working
 
 481
 00:42:10,220 --> 00:42:16,190
-to make -- build even more powerful machines
+to make  &mdash; build even more powerful machines
 and a wider variety of form factors, and trust
 
 482
 00:42:16,190 --> 00:42:20,769
 us when we say that Googlers are some of the
-most demanding audience out there, and -- but
+most demanding audience out there, and  &mdash; but
 
 483
 00:42:20,769 --> 00:42:25,210
@@ -2430,7 +2430,7 @@ like moving everything to the cloud, just
 
 487
 00:42:38,210 --> 00:42:43,019
-being able to -- but I know that there's lots
+being able to  &mdash; but I know that there's lots
 of little, you know, dusty corners of our
 
 488
@@ -2450,8 +2450,8 @@ I'm the same way. Since I don't do development,
 
 491
 00:42:56,640 --> 00:43:02,609
-I'm 99% -- 99.9% of my time is spent on a
-Chromebook, and mostly that -- honestly it's
+I'm 99%  &mdash; 99.9% of my time is spent on a
+Chromebook, and mostly that  &mdash; honestly it's
 
 492
 00:43:02,609 --> 00:43:09,309
@@ -2581,7 +2581,7 @@ working on getting it out there.
 517
 00:45:06,479 --> 00:45:10,410
 >>> Okay, thanks.
->>Jeff Chang: All right. Back to this -- actually,
+>>Jeff Chang: All right. Back to this  &mdash; actually,
 
 518
 00:45:10,410 --> 00:45:17,029
@@ -2611,7 +2611,7 @@ was number one, and drive on iOS was number
 523
 00:45:38,259 --> 00:45:42,589
 two. We'll see how long that lasts.
->>Jeff Chang: So we're happy that --
+>>Jeff Chang: So we're happy that  &mdash;
 
 524
 00:45:42,589 --> 00:45:45,670
@@ -2655,7 +2655,7 @@ different axis, right? So one is how long
 
 532
 00:46:22,380 --> 00:46:25,890
-does it take -- how fast is it to just get
+does it take  &mdash; how fast is it to just get
 around and get your work done and do stuff
 
 533
@@ -2666,7 +2666,7 @@ raw compute performance or rendering performance
 534
 00:46:30,420 --> 00:46:36,309
 within the page. I guess you could count those
-as three areas. So on the compute -- on the
+as three areas. So on the compute  &mdash; on the
 
 535
 00:46:36,309 --> 00:46:41,220
@@ -2681,7 +2681,7 @@ they don't allow you to run your own jitted,
 537
 00:46:46,829 --> 00:46:53,829
 you know, JavaScript engine. They don't allow
-you to provide your own rendering -- you know,
+you to provide your own rendering  &mdash; you know,
 
 538
 00:46:54,500 --> 00:46:58,609
@@ -2740,7 +2740,7 @@ patterns, the Omni box, how we're able to
 
 549
 00:47:54,869 --> 00:48:01,519
-pre-fetch -- guess what you're able to do
+pre-fetch  &mdash; guess what you're able to do
 using our pre-rendering and some of our DNS
 
 550
@@ -2835,7 +2835,7 @@ and so we only just got, you know, Android
 
 568
 00:49:31,499 --> 00:49:37,970
-to -- Chrome to Android a few months ago,
+to  &mdash; Chrome to Android a few months ago,
 and we only just got Chrome to iOS today,
 
 569
@@ -2861,7 +2861,7 @@ to extend the browser is going to be different.
 573
 00:50:00,160 --> 00:50:05,680
 Also the performance needs of mobile are different.
-So -- so some of the changes we've been making
+So  &mdash; so some of the changes we've been making
 
 574
 00:50:05,680 --> 00:50:10,009
@@ -2986,7 +2986,7 @@ the country?
 598
 00:52:07,130 --> 00:52:14,039
 >>Jeff Chang: So I know for sure that we've
-had a lot of -- a lot of schools around the
+had a lot of  &mdash; a lot of schools around the
 
 599
 00:52:14,039 --> 00:52:16,589
@@ -3000,7 +3000,7 @@ I know that the feedback has been very positive.
 
 601
 00:52:22,740 --> 00:52:29,740
--- most aggressively verticals adopting Chromebooks.
+ &mdash; most aggressively verticals adopting Chromebooks.
 And the beauty of the Web and education is
 
 602
@@ -3035,7 +3035,7 @@ just a great formula for education. We're
 
 608
 00:53:07,170 --> 00:53:13,130
--- in addition to, you know, the hundreds
+ &mdash; in addition to, you know, the hundreds
 and hundreds of schools I think in 48 states,
 
 609
@@ -3100,7 +3100,7 @@ enterprise profit, but this is just a huge
 
 621
 00:54:33,930 --> 00:54:40,930
-opportunity for us and for -- for future students.
+opportunity for us and for  &mdash; for future students.
 >>Jeff Chang: All right, back to this side.
 
 622
@@ -3111,7 +3111,7 @@ shipping Chrome for iOS. It's a good thing.
 623
 00:54:47,749 --> 00:54:54,749
 I was in a session yesterday afternoon, optimizing
-your HTML for -- for a mobile device, and
+your HTML for  &mdash; for a mobile device, and
 
 624
 00:54:55,829 --> 00:55:01,130
@@ -3176,7 +3176,7 @@ Chrome if they choose to.
 636
 00:55:59,319 --> 00:56:06,319
 team around here that can answer that?
-Tell you what, why don't you -- if you want
+Tell you what, why don't you  &mdash; if you want
 
 637
 00:56:07,369 --> 00:56:09,799
@@ -3250,7 +3250,7 @@ to ride the ragged edge, you know, you can
 
 651
 00:57:23,930 --> 00:57:29,779
-come check out -- we've got some sample code.
+come check out  &mdash; we've got some sample code.
 I think that particular little micro editor
 
 652
@@ -3261,11 +3261,11 @@ repo, but a warning is that it's early, it's
 653
 00:57:37,640 --> 00:57:44,640
 very simple. It actually isn't as cool as
-it looked. We -- we -- we actually hit over
+it looked. We  &mdash; we  &mdash; we actually hit over
 
 654
 00:57:45,499 --> 00:57:50,940
-all the rough spots. But there are -- I'll
+all the rough spots. But there are  &mdash; I'll
 tell you that just one of the cool, fun things
 
 655
@@ -3350,7 +3350,7 @@ consumption, but if you just want to do local
 
 671
 00:59:17,160 --> 00:59:22,170
-development, it should be possible to do -- to
+development, it should be possible to do  &mdash; to
 read the files locally and render them, you
 
 672
@@ -3381,11 +3381,11 @@ there's another Easter Egg in the video, the
 677
 00:59:38,519 --> 00:59:44,200
 History of Chrome, so you might want to study
-that video and -- and there's something pretty
+that video and  &mdash; and there's something pretty
 
 678
 00:59:44,200 --> 00:59:48,829
-cool in there so --
+cool in there so  &mdash;
 >>Jeff Chang: All right. Perfect timing. Yeah.
 
 679

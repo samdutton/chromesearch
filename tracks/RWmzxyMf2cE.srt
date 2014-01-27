@@ -294,7 +294,7 @@ I really don't care about you.
 
 66
 00:02:36,740 --> 00:02:38,100
-But we need a refund on the--
+But we need a refund on the &mdash;
 
 67
 00:02:38,100 --> 00:02:41,250
@@ -331,7 +331,7 @@ group on Google+.
 74
 00:02:55,540 --> 00:02:58,050
 It be a great place for
-a bunch of mootin--
+a bunch of mootin &mdash;
 
 75
 00:02:58,050 --> 00:02:59,150
@@ -1005,7 +1005,7 @@ drinks on Friday nights.
 
 222
 00:08:35,570 --> 00:08:36,760
-I've been there once--
+I've been there once &mdash;
 
 223
 00:08:36,760 --> 00:08:37,960
@@ -1104,7 +1104,7 @@ to the application that be
 
 243
 00:09:26,430 --> 00:09:29,720
-running-- oh, for your nautical
+running &mdash; oh, for your nautical
 folk, how big the sea
 
 244
@@ -1563,11 +1563,11 @@ covered with
 343
 00:13:24,870 --> 00:13:28,610
 boils and rank and fester
-and alimony-taking--
+and alimony-taking &mdash;
 
 344
 00:13:28,610 --> 00:13:29,860
-um, uh--
+um, uh &mdash;
 
 345
 00:13:29,860 --> 00:13:32,710
@@ -2783,7 +2783,7 @@ AUDIENCE: Aye.
 609
 00:23:13,790 --> 00:23:15,920
 COLT MCANLIS: Another great tool
-that's just come out--
+that's just come out &mdash;
 
 610
 00:23:15,920 --> 00:23:18,200
@@ -2802,7 +2802,7 @@ high-resolution photo of the
 
 613
 00:23:23,940 --> 00:23:26,270
-damn tool--
+damn tool &mdash;
 
 614
 00:23:26,270 --> 00:23:28,543

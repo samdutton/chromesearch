@@ -907,7 +907,7 @@ our logic in it.
 
 191
 00:09:23,220 --> 00:09:26,160
-And then the other is just-- and
+And then the other is just &mdash; and
 that's actually the main
 
 192
@@ -977,12 +977,12 @@ as full-blown applications.
 205
 00:10:03,940 --> 00:10:07,660
 So it's quite different from
-the old days-- and speaking
+the old days &mdash; and speaking
 
 206
 00:10:07,660 --> 00:10:11,100
 just about 13 months back
-or something like that--
+or something like that &mdash;
 
 207
 00:10:11,100 --> 00:10:12,730
@@ -2544,12 +2544,12 @@ right clicking and inspect
 535
 00:26:37,820 --> 00:26:41,690
 element on the take photo item,
-you could see here--
+you could see here &mdash;
 
 536
 00:26:41,690 --> 00:26:44,025
 and let me make it
-much larger--
+much larger &mdash;
 
 537
 00:26:44,025 --> 00:26:48,330
@@ -2562,7 +2562,7 @@ the magic is here.
 539
 00:26:51,290 --> 00:26:54,840
 Basically, this one line, not
-the label, sorry, the input--
+the label, sorry, the input &mdash;
 
 540
 00:26:54,840 --> 00:26:57,790

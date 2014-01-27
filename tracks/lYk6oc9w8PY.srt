@@ -158,11 +158,11 @@ PAUL LEWIS: Well, yeah.
 
 38
 00:01:03,446 --> 00:01:04,844
-So--
+So &mdash;
 
 39
 00:01:04,844 --> 00:01:06,710
-PAUL KINLAN: On that note--
+PAUL KINLAN: On that note &mdash;
 
 40
 00:01:06,710 --> 00:01:07,710
@@ -309,7 +309,7 @@ it kind of comes from.
 70
 00:02:09,560 --> 00:02:10,356
 PAUL KINLAN: It's things
-like-- you
+like &mdash; you
 
 71
 00:02:10,356 --> 00:02:11,049
@@ -385,7 +385,7 @@ completely wrong.
 87
 00:02:30,090 --> 00:02:31,740
 But right down below,
-we have--
+we have &mdash;
 
 88
 00:02:31,740 --> 00:02:32,810
@@ -562,7 +562,7 @@ PAUL KINLAN: Sublime Text.
 126
 00:03:33,860 --> 00:03:36,180
 PAUL LEWIS: Everytime we get
-asked that-- there we go.
+asked that &mdash; there we go.
 
 127
 00:03:36,180 --> 00:03:37,010
@@ -592,7 +592,7 @@ VIM until the drink.
 
 133
 00:03:42,340 --> 00:03:43,575
-That's how it kind of--
+That's how it kind of &mdash;
 
 134
 00:03:43,575 --> 00:03:44,280
@@ -823,7 +823,7 @@ do it with iFrames.
 
 184
 00:05:13,980 --> 00:05:14,310
-But it's--
+But it's &mdash;
 
 185
 00:05:14,310 --> 00:05:15,710
@@ -836,7 +836,7 @@ PAUL KINLAN: Yeah.
 187
 00:05:16,110 --> 00:05:18,040
 It's not a generally
-well-accepted way of--
+well-accepted way of &mdash;
 
 188
 00:05:18,040 --> 00:05:18,870
@@ -993,8 +993,8 @@ that over here.
 
 220
 00:06:41,565 --> 00:06:44,760
-So the injected property name--
-property, sorry--
+So the injected property name &mdash;
+property, sorry &mdash;
 
 221
 00:06:44,760 --> 00:06:45,850
@@ -1021,7 +1021,7 @@ called title.
 
 226
 00:06:57,310 --> 00:06:59,700
-What I want to do in here-- as
+What I want to do in here &mdash; as
 you can see, I've also picked
 
 227
@@ -1035,12 +1035,12 @@ do is say title.textContent
 
 229
 00:07:07,060 --> 00:07:09,150
-equals this-- because this
+equals this &mdash; because this
 is going to refer
 
 230
 00:07:09,150 --> 00:07:10,640
-to the window object--
+to the window object &mdash;
 
 231
 00:07:10,640 --> 00:07:12,120
@@ -1185,7 +1185,7 @@ here is sending messages.
 262
 00:08:08,990 --> 00:08:10,870
 And what I'm going to do is I'm
-actually going to send--
+actually going to send &mdash;
 
 263
 00:08:10,870 --> 00:08:13,280
@@ -1250,7 +1250,7 @@ support in the Chrome Apps.
 
 276
 00:08:39,669 --> 00:08:42,990
-I need to say the event--
+I need to say the event &mdash;
 because you can see I've got a
 
 277
@@ -1322,7 +1322,7 @@ thing, isn't it?
 292
 00:09:09,140 --> 00:09:12,830
 So the thing I want to
-do is I want to say--
+do is I want to say &mdash;
 
 293
 00:09:12,830 --> 00:09:13,720
@@ -1393,7 +1393,7 @@ do that instead.
 
 307
 00:09:49,060 --> 00:09:50,730
-We're going to actually do--
+We're going to actually do &mdash;
 
 308
 00:09:50,730 --> 00:09:51,590
@@ -1806,7 +1806,7 @@ And go in here and say world.
 396
 00:13:01,620 --> 00:13:05,140
 And the Window Right is going
-to chime in with no--
+to chime in with no &mdash;
 
 397
 00:13:05,140 --> 00:13:07,040
@@ -2015,7 +2015,7 @@ actual event as well.
 
 442
 00:14:35,080 --> 00:14:38,020
-We mainly have--
+We mainly have &mdash;
 
 443
 00:14:38,020 --> 00:14:40,620
@@ -2201,7 +2201,7 @@ are up.
 
 483
 00:15:56,020 --> 00:15:57,450
-So Hemanna--
+So Hemanna &mdash;
 
 484
 00:15:57,450 --> 00:15:58,620
@@ -2306,7 +2306,7 @@ even speak.
 
 506
 00:16:41,160 --> 00:16:42,200
-So anyway--
+So anyway &mdash;
 
 507
 00:16:42,200 --> 00:16:42,940
@@ -2314,7 +2314,7 @@ PAUL LEWIS: Right.
 
 508
 00:16:42,940 --> 00:16:43,820
-A good question is--
+A good question is &mdash;
 
 509
 00:16:43,820 --> 00:16:45,110
@@ -2468,7 +2468,7 @@ for documentation about
 
 542
 00:17:51,960 --> 00:17:53,340
-what a magic iFrame is--
+what a magic iFrame is &mdash;
 
 543
 00:17:53,340 --> 00:17:54,350
@@ -2604,7 +2604,7 @@ resource for app logic.
 571
 00:18:44,115 --> 00:18:46,090
 And I think that actually
-brings onto--
+brings onto &mdash;
 
 572
 00:18:46,090 --> 00:18:50,080
@@ -2730,7 +2730,7 @@ JavaScript from one window
 598
 00:19:35,970 --> 00:19:38,450
 into another window with
-logic or with CS--
+logic or with CS &mdash;
 
 599
 00:19:38,450 --> 00:19:41,640
@@ -2833,8 +2833,8 @@ Intents was Web Intents inside
 
 621
 00:20:16,290 --> 00:20:17,770
-Chrome applications--
-they opened up--
+Chrome applications &mdash;
+they opened up &mdash;
 
 622
 00:20:17,770 --> 00:20:19,650
@@ -3119,7 +3119,7 @@ in one HTML file.
 
 682
 00:22:07,750 --> 00:22:09,010
-And then certain directives--
+And then certain directives &mdash;
 
 683
 00:22:09,010 --> 00:22:10,640
@@ -3208,7 +3208,7 @@ We're keen to get feedback.
 
 701
 00:22:48,750 --> 00:22:49,750
-The question is--
+The question is &mdash;
 
 702
 00:22:49,750 --> 00:22:52,130
@@ -3286,7 +3286,7 @@ Dev channel at the moment.
 718
 00:23:22,220 --> 00:23:26,870
 The Chrome Apps system
-which are--
+which are &mdash;
 
 719
 00:23:26,870 --> 00:23:29,050
@@ -3324,7 +3324,7 @@ Beta, they go into Stable.
 726
 00:23:42,360 --> 00:23:46,226
 The interesting thing just
-generally is that--
+generally is that &mdash;
 
 727
 00:23:46,226 --> 00:23:48,250
@@ -3413,7 +3413,7 @@ a lot of things to do with
 
 746
 00:24:17,680 --> 00:24:19,070
-Web Intents-- can we
+Web Intents &mdash; can we
 just try actually?
 
 747
@@ -3535,11 +3535,11 @@ None of them are installed.
 
 775
 00:24:51,080 --> 00:24:52,670
-Share to--
+Share to &mdash;
 
 776
 00:24:52,670 --> 00:24:53,510
-is this--
+is this &mdash;
 
 777
 00:24:53,510 --> 00:24:54,750
@@ -3547,7 +3547,7 @@ what type of email is this?
 
 778
 00:24:54,750 --> 00:24:56,220
-Is this a--
+Is this a &mdash;
 
 779
 00:24:56,220 --> 00:24:56,620
@@ -3712,12 +3712,12 @@ PAUL KINLAN: OK.
 
 815
 00:26:04,300 --> 00:26:06,720
-So next question--
+So next question &mdash;
 
 816
 00:26:06,720 --> 00:26:08,840
 "How do I manage supporting
-users-- we might as well
+users &mdash; we might as well
 
 817
 00:26:08,840 --> 00:26:09,360
@@ -3866,7 +3866,7 @@ Chrome or Chrome
 
 848
 00:27:23,250 --> 00:27:24,460
-App I think is the--
+App I think is the &mdash;
 
 849
 00:27:24,460 --> 00:27:25,100
@@ -4112,7 +4112,7 @@ transparency?"
 901
 00:29:19,770 --> 00:29:22,450
 PAUL LEWIS: So the floating
-window thing--
+window thing &mdash;
 
 902
 00:29:22,450 --> 00:29:23,000
@@ -4121,7 +4121,7 @@ PAUL KINLAN: Yes.
 903
 00:29:23,000 --> 00:29:25,360
 PAUL LEWIS: --yes, we
-can do because--
+can do because &mdash;
 
 904
 00:29:25,360 --> 00:29:25,830
@@ -4397,11 +4397,11 @@ for your
 
 963
 00:31:18,170 --> 00:31:20,070
-application, you will be--
+application, you will be &mdash;
 
 964
 00:31:20,070 --> 00:31:21,270
-I think you have to use--
+I think you have to use &mdash;
 
 965
 00:31:21,270 --> 00:31:21,880
@@ -4443,7 +4443,7 @@ aware of is Angular right now,
 
 973
 00:31:41,610 --> 00:31:43,890
-that It doesn't need--
+that It doesn't need &mdash;
 
 974
 00:31:43,890 --> 00:31:44,710
@@ -4476,7 +4476,7 @@ the use of the sandbox
 
 980
 00:31:56,230 --> 00:31:57,770
-system, so they use--
+system, so they use &mdash;
 
 981
 00:31:57,770 --> 00:32:01,030
@@ -4524,7 +4524,7 @@ developers.chrome.com/apps.
 990
 00:32:23,140 --> 00:32:25,600
 And that covers things like
-minimize, maximize, and--
+minimize, maximize, and &mdash;
 
 991
 00:32:25,600 --> 00:32:27,755
@@ -4601,7 +4601,7 @@ application.
 1007
 00:32:57,400 --> 00:32:59,190
 PAUL LEWIS: And the web
-serving the web--
+serving the web &mdash;
 
 1008
 00:32:59,190 --> 00:32:59,480
@@ -4645,7 +4645,7 @@ documentation is there.
 1017
 00:33:09,770 --> 00:33:12,155
 Then there's a good chance that
-at least the AP-- well,
+at least the AP &mdash; well,
 
 1018
 00:33:12,155 --> 00:33:13,120
@@ -4682,7 +4682,7 @@ networking.
 
 1025
 00:33:26,600 --> 00:33:28,660
-Eric Bidelman-- so we ran
+Eric Bidelman &mdash; so we ran
 a hackathon internally.
 
 1026
@@ -4870,7 +4870,7 @@ to try and get more very
 1066
 00:34:29,429 --> 00:34:31,070
 specific application
-information--
+information &mdash;
 
 1067
 00:34:31,070 --> 00:34:33,350
@@ -4994,7 +4994,7 @@ questions and answers, just
 
 1093
 00:35:11,370 --> 00:35:12,630
-pure because I--
+pure because I &mdash;
 
 1094
 00:35:12,630 --> 00:35:15,590
@@ -5026,11 +5026,11 @@ PAUL KINLAN: Yes.
 
 1100
 00:35:25,070 --> 00:35:25,790
-PAUL LEWIS: Dear internet--
+PAUL LEWIS: Dear internet &mdash;
 
 1101
 00:35:25,790 --> 00:35:26,000
-PAUL KINLAN: Dear internet--
+PAUL KINLAN: Dear internet &mdash;
 
 1102
 00:35:26,000 --> 00:35:26,730
@@ -5055,7 +5055,7 @@ PAUL KINLAN: Yes.
 
 1107
 00:35:29,165 --> 00:35:31,840
-And also--
+And also &mdash;
 
 1108
 00:35:31,840 --> 00:35:32,270
@@ -5160,7 +5160,7 @@ iFrames work as well.
 
 1131
 00:36:08,536 --> 00:36:10,140
-The reason why-- well,
+The reason why &mdash; well,
 I say the reason why.
 
 1132
@@ -5267,7 +5267,7 @@ Why is that?
 1154
 00:36:50,600 --> 00:36:52,160
 PAUL LEWIS: It's just because
-they're apparently--
+they're apparently &mdash;
 
 1155
 00:36:52,160 --> 00:36:54,410
@@ -5360,17 +5360,17 @@ thrilling end-on topic.
 
 1175
 00:37:24,540 --> 00:37:26,520
-So with that said--
+So with that said &mdash;
 
 1176
 00:37:26,520 --> 00:37:28,290
 PAUL KINLAN: So with
-that said--
+that said &mdash;
 
 1177
 00:37:28,290 --> 00:37:29,280
 PAUL LEWIS: It's goodnight
-from me--
+from me &mdash;
 
 1178
 00:37:29,280 --> 00:37:30,530

@@ -136,11 +136,11 @@ is I'm going to go and
 30
 00:01:07,150 --> 00:01:08,680
 I'm going to add this
-application--
+application &mdash;
 
 31
 00:01:08,680 --> 00:01:10,550
-HTML5 Please--
+HTML5 Please &mdash;
 
 32
 00:01:10,550 --> 00:01:11,775
@@ -309,7 +309,7 @@ is I want to change this
 
 67
 00:02:32,330 --> 00:02:34,270
-application so that--
+application so that &mdash;
 
 68
 00:02:34,270 --> 00:02:37,460
@@ -493,7 +493,7 @@ with workspace that's actually
 106
 00:04:07,730 --> 00:04:10,220
 pretty cool is the ability
-for DevTools--
+for DevTools &mdash;
 
 107
 00:04:10,220 --> 00:04:11,230
@@ -565,7 +565,7 @@ settings for them.
 
 121
 00:04:39,870 --> 00:04:42,330
-I can actually go and--
+I can actually go and &mdash;
 
 122
 00:04:42,330 --> 00:04:44,870
@@ -606,7 +606,7 @@ breakpoint.
 
 130
 00:05:01,740 --> 00:05:04,820
-I can actually-- so let's
+I can actually &mdash; so let's
 continue working through
 
 131
@@ -676,7 +676,7 @@ Local Modifications.
 
 145
 00:05:38,890 --> 00:05:41,500
-What this will do is-- and let's
+What this will do is &mdash; and let's
 make some modifications.
 
 146
@@ -822,7 +822,7 @@ my JavaScript for me.
 
 175
 00:06:56,190 --> 00:06:58,410
-So I can go-- and this is a
+So I can go &mdash; and this is a
 little bit more easy to read.
 
 176
@@ -837,7 +837,7 @@ to go Through And I can
 
 178
 00:07:05,740 --> 00:07:06,880
-go and I can use--
+go and I can use &mdash;
 
 179
 00:07:06,880 --> 00:07:09,170
@@ -933,12 +933,12 @@ specific method inside a file,
 198
 00:07:55,500 --> 00:07:57,980
 I want to filter down to a
-specific method-- or in the
+specific method &mdash; or in the
 
 199
 00:07:57,980 --> 00:08:00,260
 case of a style sheet,
-a specific property--
+a specific property &mdash;
 
 200
 00:08:00,260 --> 00:08:04,660
@@ -1482,8 +1482,8 @@ any local object if I
 
 313
 00:12:39,620 --> 00:12:42,350
-want-- the Window, the
-Navigator, and so on--
+want &mdash; the Window, the
+Navigator, and so on &mdash;
 
 314
 00:12:42,350 --> 00:12:44,700
@@ -1633,7 +1633,7 @@ created CSS Prettifier.
 
 345
 00:13:57,880 --> 00:14:00,790
-And I'm currently on a page--
+And I'm currently on a page &mdash;
 so normally when you're view
 
 346
@@ -1978,12 +1978,12 @@ going to go to text-shadow,
 
 417
 00:16:54,170 --> 00:16:55,310
-type in omg--
+type in omg &mdash;
 
 418
 00:16:55,310 --> 00:16:58,670
 let's clean up some
-of this stuff--
+of this stuff &mdash;
 
 419
 00:16:58,670 --> 00:17:00,010

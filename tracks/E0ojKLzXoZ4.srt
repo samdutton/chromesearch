@@ -238,7 +238,7 @@ low motor abilities.
 
 53
 00:02:06,500 --> 00:02:10,560
-So this is someone-- it can
+So this is someone &mdash; it can
 range from having a tremor
 
 54
@@ -258,7 +258,7 @@ braille display user.
 
 57
 00:02:18,560 --> 00:02:21,050
-So this could-- I'll get
+So this could &mdash; I'll get
 more into that later.
 
 58
@@ -288,11 +288,11 @@ we're addressing here?
 63
 00:02:35,480 --> 00:02:39,490
 So 9.2% of the adult
-population of the US--
+population of the US &mdash;
 
 64
 00:02:39,490 --> 00:02:42,770
-more in developing countries--
+more in developing countries &mdash;
 have some vision trouble.
 
 65
@@ -532,7 +532,7 @@ with a screen reader
 115
 00:04:40,595 --> 00:04:44,730
 is going to be interacting with
-a device-- the screen reader
+a device &mdash; the screen reader
 
 116
 00:04:44,730 --> 00:04:48,100
@@ -625,7 +625,7 @@ All right.
 
 135
 00:05:32,050 --> 00:05:36,270
-So I have-- this is a
+So I have &mdash; this is a
 demo of ChromeVox, which
 
 136
@@ -851,7 +851,7 @@ installed in Chrome.
 185
 00:07:35,170 --> 00:07:37,270
 So the way you
-actually use it-- this
+actually use it &mdash; this
 
 186
 00:07:37,270 --> 00:07:39,420
@@ -941,7 +941,7 @@ is use their finger
 204
 00:08:18,690 --> 00:08:20,440
 to touch the screen
-and explore--
+and explore &mdash;
 
 205
 00:08:20,440 --> 00:08:21,740
@@ -1042,7 +1042,7 @@ double tapping will
 
 227
 00:09:04,920 --> 00:09:07,310
-send-- I think it's
+send &mdash; I think it's
 actually a click event,
 
 228
@@ -1693,7 +1693,7 @@ that's an ARIA attribute.
 
 367
 00:14:32,100 --> 00:14:35,770
-So what that does-- the reason
+So what that does &mdash; the reason
 I keep going on about semantics
 
 368
@@ -1779,7 +1779,7 @@ looking like a button.
 386
 00:15:24,390 --> 00:15:27,810
 And it comes out
-indirect with a-- sorry,
+indirect with a &mdash; sorry,
 
 387
 00:15:27,810 --> 00:15:30,430
@@ -2010,7 +2010,7 @@ this page obviously.
 435
 00:17:40,120 --> 00:17:43,100
 And it's come up with
-a couple of-- well,
+a couple of &mdash; well,
 
 436
 00:17:43,100 --> 00:17:47,460
@@ -2023,7 +2023,7 @@ So we have this here.
 
 438
 00:17:48,370 --> 00:17:50,890
-It says-- it's unfortunately
+It says &mdash; it's unfortunately
 cropped by the page.
 
 439
@@ -2091,7 +2091,7 @@ not part of the tab order.
 
 452
 00:18:25,010 --> 00:18:30,020
-And then here we have-- it
+And then here we have &mdash; it
 says text elements should
 
 453
@@ -2148,7 +2148,7 @@ darker and much darker.
 
 464
 00:18:58,600 --> 00:19:03,536
-And finally, so here--
+And finally, so here &mdash;
 one thing that's
 
 465
@@ -2215,7 +2215,7 @@ a number instead of a string.
 478
 00:19:33,140 --> 00:19:38,010
 So when I try and view that
-with ChromeVox-- actually, no.
+with ChromeVox &mdash; actually, no.
 
 479
 00:19:38,010 --> 00:19:39,091
@@ -2384,7 +2384,7 @@ I demonstrated ChromeVox.
 515
 00:21:03,670 --> 00:21:08,230
 There's also a screen
-reader built into-- I
+reader built into &mdash; I
 
 516
 00:21:08,230 --> 00:21:10,290

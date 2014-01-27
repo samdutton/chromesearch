@@ -275,8 +275,8 @@ first initial phase
 
 59
 00:02:43,600 --> 00:02:47,990
-between the client-- often
-case your browser-- and the web
+between the client &mdash; often
+case your browser &mdash; and the web
 
 60
 00:02:47,990 --> 00:02:48,490
@@ -473,7 +473,7 @@ Google Guest right now?
 101
 00:04:40,390 --> 00:04:42,920
 I imagine there's a couple
-people-- OK, lots of people.
+people &mdash; OK, lots of people.
 
 102
 00:04:42,920 --> 00:04:45,390
@@ -586,7 +586,7 @@ visit some site.
 125
 00:05:46,160 --> 00:05:48,840
 So these things end up
-automatically-- you're
+automatically &mdash; you're
 
 126
 00:05:48,840 --> 00:05:50,610
@@ -1543,7 +1543,7 @@ And that sucks.
 329
 00:15:21,970 --> 00:15:26,690
 Also, browsers block other
-types of content like images--
+types of content like images &mdash;
 
 330
 00:15:26,690 --> 00:15:28,810
@@ -1699,7 +1699,7 @@ cookies from leaking over HTTP.
 362
 00:16:59,324 --> 00:17:00,740
 So if your cookies
-are sensitive--
+are sensitive &mdash;
 
 363
 00:17:00,740 --> 00:17:03,620
@@ -1712,7 +1712,7 @@ with authentication or safe
 
 365
 00:17:06,030 --> 00:17:08,980
-preferences-- it's
+preferences &mdash; it's
 imperative that you ensure
 
 366
@@ -2006,7 +2006,7 @@ the public aware of them.
 
 426
 00:20:11,570 --> 00:20:14,860
-So if people-- you potentially
+So if people &mdash; you potentially
 heard about on the news
 
 427
@@ -2115,7 +2115,7 @@ So go over a couple disclaimers.
 
 450
 00:21:20,210 --> 00:21:22,840
-So first SSL-- it
+So first SSL &mdash; it
 doesn't actually
 
 451
@@ -2140,7 +2140,7 @@ URL, query parameters,
 455
 00:21:35,212 --> 00:21:37,170
 contents of the page,
-headers and cookies-- all
+headers and cookies &mdash; all
 
 456
 00:21:37,170 --> 00:21:38,378
@@ -2506,7 +2506,7 @@ this evening, you
 533
 00:25:28,690 --> 00:25:32,830
 can get SSL set up on a personal
-site for free-- startSSL.com--
+site for free &mdash; startSSL.com &mdash;
 
 534
 00:25:32,830 --> 00:25:35,000

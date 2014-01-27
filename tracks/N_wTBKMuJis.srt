@@ -396,12 +396,12 @@ are based solely on the parent
 
 86
 00:03:04,720 --> 00:03:05,350
-container--
+container &mdash;
 
 87
 00:03:05,350 --> 00:03:08,080
 these are relative
-to the parent--
+to the parent &mdash;
 
 88
 00:03:08,080 --> 00:03:10,210
@@ -592,11 +592,11 @@ out to be is 4
 
 128
 00:04:38,760 --> 00:04:39,600
-times 1,000--
+times 1,000 &mdash;
 
 129
 00:04:39,600 --> 00:04:41,540
-so viewport width--
+so viewport width &mdash;
 
 130
 00:04:41,540 --> 00:04:42,590
@@ -620,7 +620,7 @@ be a width of 15 vmin, which
 134
 00:04:51,820 --> 00:04:54,840
 means 15 times the minimum
-dimension-- so in this case,
+dimension &mdash; so in this case,
 
 135
 00:04:54,840 --> 00:04:57,950
@@ -801,12 +801,12 @@ sizing so
 
 174
 00:06:26,880 --> 00:06:28,840
-there's these new values--
+there's these new values &mdash;
 
 175
 00:06:28,840 --> 00:06:30,760
 and these are vendor
-prefixed--
+prefixed &mdash;
 
 176
 00:06:30,760 --> 00:06:32,510
@@ -1484,7 +1484,7 @@ The browser supports FlexBox.
 
 323
 00:11:46,740 --> 00:11:48,790
-I can set and use--
+I can set and use &mdash;
 
 324
 00:11:48,790 --> 00:11:51,790
@@ -1520,12 +1520,12 @@ or anding or or-ing.
 
 331
 00:12:03,540 --> 00:12:05,150
-So a more complex example--
+So a more complex example &mdash;
 
 332
 00:12:05,150 --> 00:12:06,970
 but not entirely more
-complex-- is
+complex &mdash; is
 
 333
 00:12:06,970 --> 00:12:07,580
@@ -1543,7 +1543,7 @@ support FlexBox with this not,
 
 336
 00:12:13,840 --> 00:12:15,720
-then I can apply--
+then I can apply &mdash;
 
 337
 00:12:15,720 --> 00:12:16,820
@@ -1785,11 +1785,11 @@ all over the web.
 389
 00:14:14,600 --> 00:14:18,790
 If you can't tell what's
-going on here--
+going on here &mdash;
 
 390
 00:14:18,790 --> 00:14:20,040
-try to play this again--
+try to play this again &mdash;
 
 391
 00:14:20,040 --> 00:14:24,320
@@ -2368,7 +2368,7 @@ just a basic shape.
 
 515
 00:18:55,420 --> 00:18:58,826
-It can be-- you can reference
+It can be &mdash; you can reference
 an ID of an SVG Clip path.
 
 516
@@ -2444,7 +2444,7 @@ tape cutter effect.
 531
 00:19:32,630 --> 00:19:34,105
 And so again, any
-type of DOM--
+type of DOM &mdash;
 
 532
 00:19:34,105 --> 00:19:38,220
@@ -2572,7 +2572,7 @@ Very cool stuff.
 
 559
 00:20:42,870 --> 00:20:43,940
-So this one--
+So this one &mdash;
 
 560
 00:20:43,940 --> 00:20:45,450
@@ -2666,16 +2666,16 @@ media, instead of getting
 579
 00:21:26,880 --> 00:21:30,830
 camera or microphone data, I'm
-going to say my mandatory--
+going to say my mandatory &mdash;
 
 580
 00:21:30,830 --> 00:21:32,340
 the thing that I want
-to access to--
+to access to &mdash;
 
 581
 00:21:32,340 --> 00:21:33,240
-sort of giving a Boolean--
+sort of giving a Boolean &mdash;
 
 582
 00:21:33,240 --> 00:21:36,010
@@ -2737,7 +2737,7 @@ it's my whole desktop.
 
 595
 00:22:04,370 --> 00:22:06,110
-And so you can imagine--
+And so you can imagine &mdash;
 
 596
 00:22:06,110 --> 00:22:08,080
@@ -2927,7 +2927,7 @@ it really is great.
 636
 00:23:39,860 --> 00:23:43,460
 Because it illustrates how a lot
-of-- at least two of these
+of &mdash; at least two of these
 
 637
 00:23:43,460 --> 00:23:45,670
@@ -3000,7 +3000,7 @@ couple of years back.
 
 652
 00:24:14,420 --> 00:24:15,670
-But now--
+But now &mdash;
 
 653
 00:24:15,670 --> 00:24:21,510
@@ -3051,7 +3051,7 @@ Not just visualize your voice.
 664
 00:24:53,930 --> 00:24:55,555
 But you can do things
-like record--
+like record &mdash;
 
 665
 00:24:55,555 --> 00:24:58,120
@@ -3068,11 +3068,11 @@ talk in this second mic, here.
 668
 00:25:02,360 --> 00:25:04,400
 But using nothing but
-client-side technologies--
+client-side technologies &mdash;
 
 669
 00:25:04,400 --> 00:25:06,430
-I think it's Recorder JS--
+I think it's Recorder JS &mdash;
 
 670
 00:25:06,430 --> 00:25:08,890
@@ -3112,7 +3112,7 @@ the Web Audio API.
 678
 00:25:25,780 --> 00:25:27,210
 So what's even cooler
-is actually--
+is actually &mdash;
 
 679
 00:25:27,210 --> 00:25:30,720
@@ -3166,7 +3166,7 @@ distortion.
 
 691
 00:26:27,830 --> 00:26:29,680
-So Web Audio API--
+So Web Audio API &mdash;
 
 692
 00:26:29,680 --> 00:26:30,900

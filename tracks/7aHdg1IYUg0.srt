@@ -76,7 +76,7 @@ or methodology to get
 
 18
 00:00:42,860 --> 00:00:43,840
-your things to--
+your things to &mdash;
 
 19
 00:00:43,840 --> 00:00:46,360
@@ -322,7 +322,7 @@ and performance to your
 70
 00:02:43,110 --> 00:02:44,970
 business or bottom
-line metrics--
+line metrics &mdash;
 
 71
 00:02:44,970 --> 00:02:47,570
@@ -560,11 +560,11 @@ over 80 requests.
 121
 00:04:37,860 --> 00:04:40,290
 So one page, where there
-is 80 resources--
+is 80 resources &mdash;
 
 122
 00:04:40,290 --> 00:04:42,240
-images, JavaScript, CSS--
+images, JavaScript, CSS &mdash;
 
 123
 00:04:42,240 --> 00:04:44,830
@@ -764,7 +764,7 @@ pay attention to latency.
 
 165
 00:06:19,530 --> 00:06:21,270
-This is-- you mentioned CDNs.
+This is &mdash; you mentioned CDNs.
 
 166
 00:06:21,270 --> 00:06:24,100
@@ -806,7 +806,7 @@ all of your users by a
 
 174
 00:06:41,430 --> 00:06:44,855
-significant margin-- like
+significant margin &mdash; like
 150, 200 milliseconds.
 
 175
@@ -948,7 +948,7 @@ browser, and you access a
 204
 00:07:51,930 --> 00:07:52,800
 Google service, it's
-actually--
+actually &mdash;
 
 205
 00:07:52,800 --> 00:07:53,080
@@ -965,7 +965,7 @@ Chrome speaks SPDY.
 208
 00:07:57,060 --> 00:07:59,410
 So if you're accessing our
-service-- if you're reading
+service &mdash; if you're reading
 
 209
 00:07:59,410 --> 00:08:02,370
@@ -996,7 +996,7 @@ but we kind of
 
 215
 00:08:10,570 --> 00:08:12,060
-changed one layer below--
+changed one layer below &mdash;
 
 216
 00:08:12,060 --> 00:08:14,330
@@ -1025,11 +1025,11 @@ basically that, or at least,
 221
 00:08:27,590 --> 00:08:30,090
 we have a charter now for that
-working group-- the IETF
+working group &mdash; the IETF
 
 222
 00:08:30,090 --> 00:08:33,470
-working group-- which is going
+working group &mdash; which is going
 to take SPDY version two of
 
 223
@@ -1160,7 +1160,7 @@ and all the rest.
 
 250
 00:09:29,750 --> 00:09:30,990
-We also are building--
+We also are building &mdash;
 
 251
 00:09:30,990 --> 00:09:33,720

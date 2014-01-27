@@ -221,7 +221,7 @@ do it your own way.
 48
 00:01:53,810 --> 00:01:56,420
 But what we don't see on this
-diagram-- and it is a very
+diagram &mdash; and it is a very
 
 49
 00:01:56,420 --> 00:01:57,100
@@ -233,7 +233,7 @@ It came from our marketing
 
 51
 00:01:58,160 --> 00:01:59,640
-department, and they actually--
+department, and they actually &mdash;
 
 52
 00:01:59,640 --> 00:02:01,220
@@ -327,7 +327,7 @@ different people.
 
 71
 00:02:45,690 --> 00:02:47,480
-I split into two areas--
+I split into two areas &mdash;
 
 72
 00:02:47,480 --> 00:02:50,060
@@ -435,7 +435,7 @@ authorization.
 
 94
 00:03:35,620 --> 00:03:37,160
-And authorization--
+And authorization &mdash;
 
 95
 00:03:37,160 --> 00:03:38,730
@@ -536,8 +536,8 @@ you figure out how to do
 
 116
 00:04:22,610 --> 00:04:24,760
-this once-- once you master this
-in one spot-- you can hit
+this once &mdash; once you master this
+in one spot &mdash; you can hit
 
 117
 00:04:24,760 --> 00:04:28,450
@@ -557,11 +557,11 @@ what Big Query is, it's a
 120
 00:04:34,220 --> 00:04:38,440
 way of uploading a huge amount
-of data-- gigabytes, hundreds
+of data &mdash; gigabytes, hundreds
 
 121
 00:04:38,440 --> 00:04:42,200
-of gigabytes of data-- into
+of gigabytes of data &mdash; into
 Google, and running big
 
 122
@@ -634,7 +634,7 @@ specify a number of things.
 136
 00:05:19,320 --> 00:05:22,240
 We specify the API that
-we want to hit-- in
+we want to hit &mdash; in
 
 137
 00:05:22,240 --> 00:05:23,810
@@ -707,7 +707,7 @@ associated with this project.
 
 152
 00:05:57,410 --> 00:06:01,350
-We go against a common host--
+We go against a common host &mdash;
 the googleapis.com server.
 
 153
@@ -1078,7 +1078,7 @@ data is being accessed.
 230
 00:09:18,990 --> 00:09:22,760
 Again, the first case where
-we have user data--
+we have user data &mdash;
 
 231
 00:09:22,760 --> 00:09:24,130
@@ -1391,7 +1391,7 @@ using API on your behalf.
 
 298
 00:11:56,530 --> 00:11:59,810
-We also track here-- this
+We also track here &mdash; this
 is also where you enter
 
 299
@@ -1527,7 +1527,7 @@ using the old UI.
 326
 00:13:07,480 --> 00:13:09,450
 If you do use the new UI to
-create a project-- and I do
+create a project &mdash; and I do
 
 327
 00:13:09,450 --> 00:13:11,920
@@ -1541,7 +1541,7 @@ that we can talk
 
 329
 00:13:13,500 --> 00:13:15,270
-about in detail later--
+about in detail later &mdash;
 
 330
 00:13:15,270 --> 00:13:17,460
@@ -1689,7 +1689,7 @@ who your application is.
 361
 00:14:35,140 --> 00:14:37,350
 The user ID associated
-with the process--
+with the process &mdash;
 
 362
 00:14:37,350 --> 00:14:40,210
@@ -1932,7 +1932,7 @@ that for the next step.
 413
 00:16:40,460 --> 00:16:43,410
 When we create that
-service account--
+service account &mdash;
 
 414
 00:16:43,410 --> 00:16:46,390
@@ -2055,13 +2055,13 @@ email address that represents
 
 439
 00:17:53,590 --> 00:17:56,250
-our surface account-- our
+our surface account &mdash; our
 application's identity.
 
 440
 00:17:56,250 --> 00:17:58,990
 We also have an API we're
-trying to access--
+trying to access &mdash;
 
 441
 00:17:58,990 --> 00:18:00,420
@@ -2075,7 +2075,7 @@ there's typically a
 443
 00:18:03,440 --> 00:18:06,540
 scope, or two different scopes,
-for the API-- a full
+for the API &mdash; a full
 
 444
 00:18:06,540 --> 00:18:09,220
@@ -2304,7 +2304,7 @@ those same three pieces
 
 494
 00:20:44,050 --> 00:20:45,000
-of information--
+of information &mdash;
 
 495
 00:20:45,000 --> 00:20:51,010
@@ -2539,7 +2539,7 @@ that private key,
 
 544
 00:23:15,550 --> 00:23:16,940
-send that to Google--
+send that to Google &mdash;
 
 545
 00:23:16,940 --> 00:23:18,010
@@ -2875,7 +2875,7 @@ principles, we have using part
 
 616
 00:26:28,810 --> 00:26:30,500
-of our client library--
+of our client library &mdash;
 the oauth part
 
 617
@@ -2884,7 +2884,7 @@ of our client library.
 
 618
 00:26:31,560 --> 00:26:35,280
-And that oath part-- it gives
+And that oath part &mdash; it gives
 us those HTTP objects back.
 
 619
@@ -3011,7 +3011,7 @@ Compute Engine.
 645
 00:27:32,420 --> 00:27:33,810
 But when you're running
-elsewhere--
+elsewhere &mdash;
 
 646
 00:27:33,810 --> 00:27:36,560
@@ -3026,7 +3026,7 @@ who your application is,
 648
 00:27:39,170 --> 00:27:40,800
 because it's running on
-your workstation--
+your workstation &mdash;
 
 649
 00:27:40,800 --> 00:27:43,100
@@ -3103,7 +3103,7 @@ what steps to do to fix it.
 664
 00:28:17,020 --> 00:28:19,290
 So if you remember before,
-our access token--
+our access token &mdash;
 
 665
 00:28:19,290 --> 00:28:20,190
@@ -3232,7 +3232,7 @@ do is make sure that the
 691
 00:29:21,410 --> 00:29:23,660
 object that you're trying to
-access-- that the project it
+access &mdash; that the project it
 
 692
 00:29:23,660 --> 00:29:27,200
@@ -3429,8 +3429,8 @@ a credit card or a form of
 
 733
 00:30:59,210 --> 00:31:01,520
-payment-- some do and some
-don't-- you need to make sure
+payment &mdash; some do and some
+don't &mdash; you need to make sure
 
 734
 00:31:01,520 --> 00:31:06,120
@@ -3528,12 +3528,12 @@ accessing the API.
 
 754
 00:31:54,150 --> 00:31:54,840
-And finally--
+And finally &mdash;
 
 755
 00:31:54,840 --> 00:31:57,300
 and this is fairly specific
-to Cloud--
+to Cloud &mdash;
 
 756
 00:31:57,300 --> 00:32:02,550
@@ -3798,7 +3798,7 @@ client libraries, it's
 810
 00:34:24,659 --> 00:34:27,030
 actually a pretty simple flow
-to make those requests--
+to make those requests &mdash;
 
 811
 00:34:27,030 --> 00:34:30,409
@@ -3856,7 +3856,7 @@ Sandbox afterwards.
 
 822
 00:34:56,560 --> 00:34:57,220
-We also have--
+We also have &mdash;
 
 823
 00:34:57,220 --> 00:35:00,070
@@ -4023,11 +4023,11 @@ your OAuth token, but I
 858
 00:36:19,050 --> 00:36:23,200
 also want to implement a two
-level, like sending the code--
+level, like sending the code &mdash;
 
 859
 00:36:23,200 --> 00:36:25,220
-like how Gmail does it--
+like how Gmail does it &mdash;
 
 860
 00:36:25,220 --> 00:36:26,840
@@ -4110,7 +4110,7 @@ your account secure.
 876
 00:36:59,540 --> 00:37:02,330
 And if you don't know what two
-factor is, what it is--
+factor is, what it is &mdash;
 
 877
 00:37:02,330 --> 00:37:05,220
@@ -4157,12 +4157,12 @@ side, if someone gets
 
 886
 00:37:24,760 --> 00:37:26,335
-your password-- because
+your password &mdash; because
 maybe you've reused
 
 887
 00:37:26,335 --> 00:37:27,480
-it somewhere else--
+it somewhere else &mdash;
 
 888
 00:37:27,480 --> 00:37:29,450
@@ -4194,7 +4194,7 @@ It's your application.
 
 894
 00:37:39,700 --> 00:37:40,820
-For a more traditional--
+For a more traditional &mdash;
 
 895
 00:37:40,820 --> 00:37:44,680
@@ -4425,7 +4425,7 @@ to your private key.
 943
 00:39:36,550 --> 00:39:39,830
 AUDIENCE: So is there,
-I guess, maybe--
+I guess, maybe &mdash;
 
 944
 00:39:39,830 --> 00:39:44,330
@@ -4492,7 +4492,7 @@ a private key.
 
 957
 00:40:16,700 --> 00:40:18,100
-We'd probably use--
+We'd probably use &mdash;
 
 958
 00:40:18,100 --> 00:40:20,380
@@ -4512,7 +4512,7 @@ for Chrome extensions?
 961
 00:40:25,290 --> 00:40:26,740
 BEN WILEY SITTLER: I think
-Chrome extensions--
+Chrome extensions &mdash;
 
 962
 00:40:26,740 --> 00:40:27,990
@@ -4576,7 +4576,7 @@ that we distribute.
 974
 00:40:55,500 --> 00:40:57,595
 And when you download and run
-that binary-- and by the way,
+that binary &mdash; and by the way,
 
 975
 00:40:57,595 --> 00:40:59,210
@@ -4644,7 +4644,7 @@ quotas come into effect.
 988
 00:41:31,390 --> 00:41:33,290
 So that's where you can then
-throttle users-- make sure
+throttle users &mdash; make sure
 
 989
 00:41:33,290 --> 00:41:35,990
@@ -4659,7 +4659,7 @@ of API calls.
 991
 00:41:37,680 --> 00:41:41,140
 AUDIENCE: But if someone does do
-that-- like, what if there
+that &mdash; like, what if there
 
 992
 00:41:41,140 --> 00:41:45,000

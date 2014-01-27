@@ -26,7 +26,7 @@ Engineer at Google, and I'm
 
 7
 00:00:09,540 --> 00:00:10,500
-joined by--
+joined by &mdash;
 
 8
 00:00:10,500 --> 00:00:11,120
@@ -317,7 +317,7 @@ services that Google provides
 69
 00:02:52,570 --> 00:02:56,420
 serving billions of queries a
-day all around the world--
+day all around the world &mdash;
 
 70
 00:02:56,420 --> 00:03:00,160
@@ -388,12 +388,12 @@ and complex.
 
 84
 00:03:38,120 --> 00:03:41,020
-And I'm really, really happy--
+And I'm really, really happy &mdash;
 
 85
 00:03:41,020 --> 00:03:43,000
 I may be one of the happiest
-people here--
+people here &mdash;
 
 86
 00:03:43,000 --> 00:03:45,600
@@ -538,7 +538,7 @@ happening all the time.
 116
 00:05:06,660 --> 00:05:08,810
 So to be a little bit
-more specific--
+more specific &mdash;
 
 117
 00:05:08,810 --> 00:05:10,590
@@ -651,7 +651,7 @@ maintenance events and
 140
 00:06:04,790 --> 00:06:08,030
 unexpected, unplanned
-maintenance outages-- or not
+maintenance outages &mdash; or not
 
 141
 00:06:08,030 --> 00:06:10,060
@@ -822,7 +822,7 @@ going to help you navigate
 
 176
 00:07:34,700 --> 00:07:38,610
-that fine balance between--
+that fine balance between &mdash;
 
 177
 00:07:38,610 --> 00:07:40,150
@@ -939,7 +939,7 @@ procedure in your operations
 
 201
 00:08:41,159 --> 00:08:41,770
-processes--
+processes &mdash;
 
 202
 00:08:41,770 --> 00:08:44,400
@@ -948,7 +948,7 @@ button or write a script or
 
 203
 00:08:44,400 --> 00:08:45,690
-run a script--
+run a script &mdash;
 
 204
 00:08:45,690 --> 00:08:47,220
@@ -1350,11 +1350,11 @@ This is great for backups.
 288
 00:12:25,320 --> 00:12:27,570
 There was a talk earlier at
-I/O-- and you can watch the
+I/O &mdash; and you can watch the
 
 289
 00:12:27,570 --> 00:12:30,410
-video-- that goes deep into this
+video &mdash; that goes deep into this
 system and some of the
 
 290
@@ -1607,12 +1607,12 @@ command to a local metadata
 342
 00:14:54,050 --> 00:14:56,450
 server that's available only to
-that virtual machine-- so
+that virtual machine &mdash; so
 
 343
 00:14:56,450 --> 00:14:58,950
 it's a private metadata server
-for that virtual machine--
+for that virtual machine &mdash;
 
 344
 00:14:58,950 --> 00:15:00,960
@@ -1805,7 +1805,7 @@ that you're booting off of.
 
 383
 00:16:57,390 --> 00:17:00,320
-So it's an easy way to mark--
+So it's an easy way to mark &mdash;
 
 384
 00:17:00,320 --> 00:17:03,880
@@ -1814,7 +1814,7 @@ fractal demo that I gave on a
 
 385
 00:17:03,880 --> 00:17:05,300
-previous talk--
+previous talk &mdash;
 
 386
 00:17:05,300 --> 00:17:08,319
@@ -1827,7 +1827,7 @@ steps so far.
 
 388
 00:17:09,119 --> 00:17:11,140
-And if you have, skip that--
+And if you have, skip that &mdash;
 
 389
 00:17:11,140 --> 00:17:13,450
@@ -1836,7 +1836,7 @@ consuming, one-time set up
 
 390
 00:17:13,450 --> 00:17:14,390
-type of things--
+type of things &mdash;
 
 391
 00:17:14,390 --> 00:17:16,810
@@ -2204,7 +2204,7 @@ connect to the Load
 
 469
 00:20:38,920 --> 00:20:41,900
-Balancer-- or we'll connect
+Balancer &mdash; or we'll connect
 to the Load Balancer.
 
 470
@@ -2400,7 +2400,7 @@ the application layer.
 510
 00:22:32,910 --> 00:22:36,030
 So we can just have that
-blindly return OK--
+blindly return OK &mdash;
 
 511
 00:22:36,030 --> 00:22:37,950
@@ -2812,7 +2812,7 @@ really nice capabilities
 
 599
 00:26:36,920 --> 00:26:38,430
-built right into--
+built right into &mdash;
 
 600
 00:26:38,430 --> 00:26:44,400
@@ -2953,7 +2953,7 @@ connection through that.
 
 629
 00:27:55,160 --> 00:27:58,490
-So the 161 is a--
+So the 161 is a &mdash;
 
 630
 00:27:58,490 --> 00:28:01,770
@@ -3033,7 +3033,7 @@ network, which is cool.
 
 646
 00:28:46,760 --> 00:28:51,910
-Now let's try-- you guys are
+Now let's try &mdash; you guys are
 going to try to DoS me here.
 
 647
@@ -3143,7 +3143,7 @@ select a bunch of stuff.
 670
 00:29:53,430 --> 00:29:59,340
 And then down at the
-bottom somewhere--
+bottom somewhere &mdash;
 
 671
 00:29:59,340 --> 00:30:02,200
@@ -3265,7 +3265,7 @@ getting stuff from it.
 696
 00:31:15,450 --> 00:31:19,010
 And as you can see, we're
-still able to send--
+still able to send &mdash;
 
 697
 00:31:19,010 --> 00:31:22,200
@@ -3302,7 +3302,7 @@ is doing its thing.
 704
 00:31:36,270 --> 00:31:39,660
 Now, one last thing I want to
-show is I'm going to kill--
+show is I'm going to kill &mdash;
 
 705
 00:31:39,660 --> 00:31:44,035
@@ -3470,12 +3470,12 @@ is to choose one of many
 741
 00:33:15,600 --> 00:33:19,440
 popular open source or
-commercial database servers--
+commercial database servers &mdash;
 
 742
 00:33:19,440 --> 00:33:21,360
 there are a lot of great
-choices out there--
+choices out there &mdash;
 
 743
 00:33:21,360 --> 00:33:24,270
@@ -3545,7 +3545,7 @@ is that you tap
 
 757
 00:33:58,590 --> 00:34:00,850
-into-- it's like what I was
+into &mdash; it's like what I was
 talking about earlier about
 
 758
@@ -3613,7 +3613,7 @@ I didn't do anything.
 
 772
 00:34:39,520 --> 00:34:40,976
-Let's see if this guy's--
+Let's see if this guy's &mdash;
 
 773
 00:34:40,976 --> 00:34:41,710
@@ -3725,7 +3725,7 @@ are really a combination of
 
 796
 00:35:37,570 --> 00:35:38,400
-infrastructure--
+infrastructure &mdash;
 
 797
 00:35:38,400 --> 00:35:39,630
@@ -3734,11 +3734,11 @@ to give you and
 
 798
 00:35:39,630 --> 00:35:40,960
-do a great job of--
+do a great job of &mdash;
 
 799
 00:35:40,960 --> 00:35:41,520
-design--
+design &mdash;
 
 800
 00:35:41,520 --> 00:35:45,520
@@ -3748,7 +3748,7 @@ logic and business processes
 801
 00:35:45,520 --> 00:35:47,550
 that you guys work with every
-day-- and then people.
+day &mdash; and then people.
 
 802
 00:35:47,550 --> 00:35:49,270
@@ -4038,7 +4038,7 @@ And thank you, Joe.
 
 863
 00:38:18,840 --> 00:38:20,297
-So we'll take--
+So we'll take &mdash;
 
 864
 00:38:20,297 --> 00:38:25,167
@@ -4182,7 +4182,7 @@ MARC COHEN: Other questions?
 896
 00:39:36,920 --> 00:39:39,750
 We've either put you guys to
-sleep, or we've answered--
+sleep, or we've answered &mdash;
 
 897
 00:39:39,750 --> 00:39:41,110
@@ -4405,7 +4405,7 @@ about the 60 second limit
 
 946
 00:41:41,350 --> 00:41:41,960
-on Google--
+on Google &mdash;
 
 947
 00:41:41,960 --> 00:41:44,100

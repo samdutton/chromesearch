@@ -434,7 +434,7 @@ an application.
 92
 00:03:41,500 --> 00:03:43,760
 And so depending on what
-you're trying to do--
+you're trying to do &mdash;
 
 93
 00:03:43,760 --> 00:03:46,840
@@ -912,7 +912,7 @@ as you're developing your app.
 
 191
 00:07:29,840 --> 00:07:31,770
-Even at the OS level--
+Even at the OS level &mdash;
 in the last year,
 
 192
@@ -1889,7 +1889,7 @@ mean, it's simply
 394
 00:15:20,500 --> 00:15:22,160
 because they want
-to read back-- often
+to read back &mdash; often
 
 395
 00:15:22,160 --> 00:15:24,660
@@ -1943,7 +1943,7 @@ pixels in every frame.
 405
 00:15:45,210 --> 00:15:47,987
 And it was running
-at 60 frame-- well,
+at 60 frame &mdash; well,
 
 406
 00:15:47,987 --> 00:15:49,750
@@ -2014,7 +2014,7 @@ conform to that API.
 420
 00:16:16,072 --> 00:16:19,132
 At any rate, there's a
-lot of other subtle--
+lot of other subtle &mdash;
 
 421
 00:16:19,132 --> 00:16:21,090
@@ -2110,7 +2110,7 @@ going to happen
 440
 00:17:06,359 --> 00:17:11,550
 is that we're going to
-reach the-- we will launch
+reach the &mdash; we will launch
 
 441
 00:17:11,550 --> 00:17:13,060
@@ -2322,7 +2322,7 @@ feedback from the WebKit folk,
 485
 00:18:51,440 --> 00:18:54,936
 and that's going
-into the-- people
+into the &mdash; people
 
 486
 00:18:54,936 --> 00:18:56,560
@@ -2438,7 +2438,7 @@ get closer to the metal.
 509
 00:19:44,640 --> 00:19:46,223
 And that's the whole
-sort of-- WebJail
+sort of &mdash; WebJail
 
 510
 00:19:46,223 --> 00:19:47,470
@@ -2602,11 +2602,11 @@ to man or woman.
 543
 00:20:57,222 --> 00:20:58,680
 So there's going
-to be lots of-- we
+to be lots of &mdash; we
 
 544
 00:20:58,680 --> 00:21:00,370
-hope-- lots of
+hope &mdash; lots of
 third-party support,
 
 545
@@ -3130,7 +3130,7 @@ getting smooth web performance
 652
 00:24:50,630 --> 00:24:52,951
 from the web, and
-developers not really--
+developers not really &mdash;
 
 653
 00:24:52,951 --> 00:24:54,450
@@ -3187,7 +3187,7 @@ and just hope it works?
 664
 00:25:22,840 --> 00:25:24,410
 DARIN FISHER: Well,
-I-- look, I feel
+I &mdash; look, I feel
 
 665
 00:25:24,410 --> 00:25:26,859
@@ -3241,7 +3241,7 @@ there with desktop rendering.
 675
 00:25:50,240 --> 00:25:52,020
 I mean, the old way
-of rendering Chrome--
+of rendering Chrome &mdash;
 
 676
 00:25:52,020 --> 00:25:57,400
@@ -3361,7 +3361,7 @@ of these mobile ideas,
 
 700
 00:26:53,080 --> 00:26:57,780
-these sort of-- have them
+these sort of &mdash; have them
 actually apply to desktop.
 
 701
@@ -3621,7 +3621,7 @@ very interested in trying
 
 754
 00:29:07,570 --> 00:29:13,050
-to find-- to be careful of
+to find &mdash; to be careful of
 these sort of high-level APIs
 
 755
@@ -3641,7 +3641,7 @@ to be able to sometimes step
 
 758
 00:29:21,400 --> 00:29:24,570
-aside and find-- and
+aside and find &mdash; and
 do things differently
 
 759
@@ -3766,7 +3766,7 @@ mean, it is just a promise
 
 784
 00:30:28,250 --> 00:30:31,960
-that it be rendered-- that it
+that it be rendered &mdash; that it
 appear a certain way, right?
 
 785
@@ -3806,7 +3806,7 @@ problem is sometimes
 792
 00:30:46,510 --> 00:30:49,570
 that when you give developers
-this thing that says--
+this thing that says &mdash;
 
 793
 00:30:49,570 --> 00:30:51,850
@@ -3873,7 +3873,7 @@ from old space to new space
 
 806
 00:31:21,150 --> 00:31:24,090
-and-- or new space to old
+and &mdash; or new space to old
 space, rather, and all that.
 
 807
@@ -3926,7 +3926,7 @@ So it's fascinating.
 
 817
 00:31:43,920 --> 00:31:45,630
-One thing I think--
+One thing I think &mdash;
 I'm surprised no one
 
 818
@@ -4160,7 +4160,7 @@ where the web is kind
 
 867
 00:33:26,482 --> 00:33:28,690
-of like-- design on the web
+of like &mdash; design on the web
 is kind of like evolution
 
 868
@@ -4275,7 +4275,7 @@ Really?
 
 891
 00:34:23,120 --> 00:34:25,812
-They've changed the--
+They've changed the &mdash;
 they're different
 
 892
@@ -4409,7 +4409,7 @@ ways to think about offline.
 
 919
 00:35:27,900 --> 00:35:31,300
-So whenever people typically--
+So whenever people typically &mdash;
 when they say offline,
 
 920
@@ -4502,7 +4502,7 @@ one of the reasons
 938
 00:36:13,890 --> 00:36:15,984
 why we did packaged
-apps, is because we--
+apps, is because we &mdash;
 
 939
 00:36:15,984 --> 00:36:17,900
@@ -4522,7 +4522,7 @@ some of those barriers.
 942
 00:36:23,970 --> 00:36:26,267
 Because if you think about
-it, it's not just the--
+it, it's not just the &mdash;
 
 943
 00:36:26,267 --> 00:36:28,350
@@ -4621,7 +4621,7 @@ this is a problem we can solve
 
 963
 00:37:06,890 --> 00:37:09,280
-and-- or improve, I should say.
+and &mdash; or improve, I should say.
 
 964
 00:37:09,280 --> 00:37:11,250
@@ -4654,7 +4654,7 @@ themselves completely offline
 
 970
 00:37:23,790 --> 00:37:24,670
-and not going to be--
+and not going to be &mdash;
 
 971
 00:37:24,670 --> 00:37:27,600
@@ -4663,7 +4663,7 @@ is even with native apps now,
 
 972
 00:37:27,600 --> 00:37:29,730
-most everything-- all
+most everything &mdash; all
 the popular things people
 
 973
@@ -4677,7 +4677,7 @@ go look at old tweets
 
 975
 00:37:33,250 --> 00:37:36,280
-when I'm offline, but--
+when I'm offline, but &mdash;
 
 976
 00:37:36,280 --> 00:37:39,059
@@ -4699,7 +4699,7 @@ that, I've got a problem.
 
 980
 00:37:48,410 --> 00:37:51,300
-JAKE: So did we find-- did
+JAKE: So did we find &mdash; did
 offline work in the Chrome app
 
 981
@@ -4895,7 +4895,7 @@ I type in the URL,
 
 1021
 00:39:14,296 --> 00:39:16,000
-and it says-- it
+and it says &mdash; it
 does that, it dials,
 
 1022
@@ -4961,7 +4961,7 @@ difference between what
 
 1035
 00:39:48,380 --> 00:39:51,290
-are-- what we did in V1,
+are &mdash; what we did in V1,
 which was hosted apps, which
 
 1036
@@ -5260,7 +5260,7 @@ the feeling this
 
 1098
 00:42:13,920 --> 00:42:16,930
-is for-- I can write
+is for &mdash; I can write
 in whatever language
 
 1099
@@ -5353,7 +5353,7 @@ but they're moving that way.
 1117
 00:43:00,360 --> 00:43:02,740
 Really, Pinnacle
-is-- it certainly
+is &mdash; it certainly
 
 1118
 00:43:02,740 --> 00:43:04,890
@@ -5368,11 +5368,11 @@ comparable performance.
 1120
 00:43:08,440 --> 00:43:12,100
 Honestly, though, if they can
-get-- do it with JavaScript,
+get &mdash; do it with JavaScript,
 
 1121
 00:43:12,100 --> 00:43:13,360
-it's--
+it's &mdash;
 
 1122
 00:43:13,360 --> 00:43:17,040
@@ -5500,7 +5500,7 @@ equivalent sort of postMessage
 
 1148
 00:44:10,050 --> 00:44:10,890
-for it to sort of get out into--
+for it to sort of get out into &mdash;
 
 1149
 00:44:10,890 --> 00:44:13,130
@@ -5577,7 +5577,7 @@ all recorded, right?
 
 1164
 00:44:39,901 --> 00:44:41,710
-So I can actually just--
+So I can actually just &mdash;
 I'm off next week,
 
 1165
@@ -5717,7 +5717,7 @@ Is that, yeah?
 1194
 00:45:48,900 --> 00:45:52,290
 JAKE: OK, so I
-actually remember--
+actually remember &mdash;
 
 1195
 00:45:52,290 --> 00:45:54,480
@@ -5785,7 +5785,7 @@ do with a break.
 
 1209
 00:46:15,380 --> 00:46:17,920
-JAKE: But someone-- I
+JAKE: But someone &mdash; I
 was talking to someone,
 
 1210
@@ -5834,7 +5834,7 @@ case on mobile, right?
 1219
 00:46:37,685 --> 00:46:40,954
 LINUS UPSON: Yeah, I
-think the memory issues--
+think the memory issues &mdash;
 
 1220
 00:46:40,954 --> 00:46:42,120
@@ -5887,17 +5887,17 @@ to measure the memory
 1230
 00:47:05,020 --> 00:47:09,600
 usage of a complex system, the
-gold standard way of doing it--
+gold standard way of doing it &mdash;
 
 1231
 00:47:09,600 --> 00:47:11,100
 and there's a page
-on Chromium.org--
+on Chromium.org &mdash;
 
 1232
 00:47:11,100 --> 00:47:13,475
 I can't remember exactly where
-it is-- that describes how
+it is &mdash; that describes how
 
 1233
 00:47:13,475 --> 00:47:15,660
@@ -5995,7 +5995,7 @@ It's like, no, it's not.
 1252
 00:47:55,555 --> 00:47:58,400
 And well, some people have
-a lot of tabs open but--
+a lot of tabs open but &mdash;
 
 1253
 00:47:58,400 --> 00:47:59,829
@@ -6053,7 +6053,7 @@ great on 512 megabyte devices.
 
 1264
 00:48:29,910 --> 00:48:33,400
-And so Chrome-- we had a
+And so Chrome &mdash; we had a
 very large folder on this,
 
 1265
@@ -6087,18 +6087,18 @@ garbage collected,
 
 1271
 00:48:51,850 --> 00:48:54,120
-and they can-- the
+and they can &mdash; the
 garbage collector
 
 1272
 00:48:54,120 --> 00:48:56,850
-can get-- it can take it a
+can get &mdash; it can take it a
 while to learn that there's
 
 1273
 00:48:56,850 --> 00:48:59,420
 a whole bunch of garbage
-that's outside of the garbage--
+that's outside of the garbage &mdash;
 
 1274
 00:48:59,420 --> 00:49:04,622
@@ -6122,7 +6122,7 @@ about opportunities
 
 1278
 00:49:09,710 --> 00:49:13,950
-there to improve-- keep the
+there to improve &mdash; keep the
 steady state memory usage down
 
 1279
@@ -6180,7 +6180,7 @@ of things to Chrome Dev tools
 
 1290
 00:49:41,670 --> 00:49:44,120
-to help users-- developers
+to help users &mdash; developers
 find memory leaks
 
 1291
@@ -6325,7 +6325,7 @@ just go to the tab I need.
 
 1320
 00:50:51,740 --> 00:50:52,250
-JAKE: So--
+JAKE: So &mdash;
 
 1321
 00:50:52,250 --> 00:50:54,688
@@ -6436,7 +6436,7 @@ that's installed
 1343
 00:51:45,866 --> 00:51:50,210
 this way, one of our goals is
-to try to-- one of the really
+to try to &mdash; one of the really
 
 1344
 00:51:50,210 --> 00:51:52,610
@@ -6587,7 +6587,7 @@ is web app installable.
 
 1374
 00:53:12,290 --> 00:53:15,884
-Is that-- because I'm aware of
+Is that &mdash; because I'm aware of
 the tags to say it's capable.
 
 1375
@@ -6627,7 +6627,7 @@ like a different experience?
 1382
 00:53:32,230 --> 00:53:34,396
 ARNAUD WEBER: So it's
-really-- we advertise the fact
+really &mdash; we advertise the fact
 
 1383
 00:53:34,396 --> 00:53:37,150
@@ -6641,7 +6641,7 @@ web app from the home screen.
 
 1385
 00:53:40,410 --> 00:53:43,080
-JAKE: In terms of the--
+JAKE: In terms of the &mdash;
 because one of the things
 
 1386
@@ -6676,7 +6676,7 @@ banner across the top.
 
 1392
 00:53:58,684 --> 00:54:00,100
-Is that something--
+Is that something &mdash;
 are we looking
 
 1393
@@ -6771,7 +6771,7 @@ our last question.
 
 1412
 00:54:38,520 --> 00:54:42,950
-So why have-- so we're not
+So why have &mdash; so we're not
 adding any new CSS prefixes,
 
 1413

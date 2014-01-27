@@ -136,12 +136,12 @@ ship with is Drive.
 30
 00:01:27,070 --> 00:01:28,995
 So if you're using
-Google Drive--
+Google Drive &mdash;
 
 31
 00:01:28,995 --> 00:01:31,870
 I'm assuming most of you are
-familiar with Google Drive--
+familiar with Google Drive &mdash;
 
 32
 00:01:31,870 --> 00:01:33,920
@@ -323,7 +323,7 @@ with files.
 68
 00:03:12,905 --> 00:03:15,550
 So that's how you request
-the Sync File System--
+the Sync File System &mdash;
 
 69
 00:03:15,550 --> 00:03:18,400
@@ -787,7 +787,7 @@ I'm going to click Save.
 
 168
 00:06:58,750 --> 00:07:01,330
-So you can see now that it's--
+So you can see now that it's &mdash;
 there's that little icon
 
 169
@@ -796,7 +796,7 @@ showing that it's syncing.
 
 170
 00:07:02,570 --> 00:07:04,440
-And you could see-- oh, in this
+And you could see &mdash; oh, in this
 case, it looks like have
 
 171
@@ -861,7 +861,7 @@ why we're here.
 
 184
 00:07:33,920 --> 00:07:35,120
-We're not here to--
+We're not here to &mdash;
 
 185
 00:07:35,120 --> 00:07:38,580
@@ -1116,7 +1116,7 @@ the filer class.
 
 238
 00:09:52,050 --> 00:09:52,650
-And let's--
+And let's &mdash;
 
 239
 00:09:52,650 --> 00:09:58,920
@@ -1187,7 +1187,7 @@ event handlers.
 253
 00:10:41,210 --> 00:10:43,850
 And that's what's going to get
-triggered when-- so, for
+triggered when &mdash; so, for
 
 254
 00:10:43,850 --> 00:10:46,420
@@ -1221,7 +1221,7 @@ HTML5 File System calls.
 260
 00:11:00,330 --> 00:11:03,740
 So, for example, if
-we scroll down--
+we scroll down &mdash;
 
 261
 00:11:03,740 --> 00:11:08,320
@@ -1233,7 +1233,7 @@ the getRoot, fs.root.
 
 263
 00:11:11,480 --> 00:11:13,520
-And that is in--
+And that is in &mdash;
 
 264
 00:11:13,520 --> 00:11:14,906
@@ -1256,7 +1256,7 @@ Where's the Save?
 
 269
 00:11:22,715 --> 00:11:24,940
-Oh, it's in the-- sorry,
+Oh, it's in the &mdash; sorry,
 it's in the utilities.
 
 270
@@ -1266,7 +1266,7 @@ thing in here.
 
 271
 00:11:28,740 --> 00:11:29,760
-And it's--
+And it's &mdash;
 
 272
 00:11:29,760 --> 00:11:32,810
@@ -1414,7 +1414,7 @@ one from Brian Tredaway in
 
 303
 00:12:44,470 --> 00:12:45,290
-Washington--
+Washington &mdash;
 
 304
 00:12:45,290 --> 00:12:49,100
@@ -1451,7 +1451,7 @@ the foreseeable future, the
 
 311
 00:13:00,780 --> 00:13:01,930
-way that it works is--
+way that it works is &mdash;
 
 312
 00:13:01,930 --> 00:13:05,660
@@ -1559,7 +1559,7 @@ and then delete it?
 334
 00:13:58,160 --> 00:13:59,970
 JOE MARINI: Yeah, so what's
-going to happen is--
+going to happen is &mdash;
 
 335
 00:13:59,970 --> 00:14:03,980
@@ -1838,11 +1838,11 @@ PETE LEPAGE: OK.
 393
 00:16:37,400 --> 00:16:40,980
 JOE MARINI: So the cloud service
-back end-- in this
+back end &mdash; in this
 
 394
 00:16:40,980 --> 00:16:42,130
-case, Google Drive--
+case, Google Drive &mdash;
 
 395
 00:16:42,130 --> 00:16:45,080
@@ -1941,7 +1941,7 @@ Awesome.
 415
 00:17:25,510 --> 00:17:28,569
 Well, I think that's all
-the time we have--
+the time we have &mdash;
 
 416
 00:17:28,569 --> 00:17:30,270
@@ -1975,7 +1975,7 @@ back next week.
 422
 00:17:43,060 --> 00:17:46,280
 We're going to be
-talking about--
+talking about &mdash;
 
 423
 00:17:46,280 --> 00:17:48,750
@@ -2050,7 +2050,7 @@ so that's next week.
 438
 00:18:11,010 --> 00:18:12,200
 JOE MARINI: Thanks again,
-for anybody who--
+for anybody who &mdash;
 
 439
 00:18:12,200 --> 00:18:12,840

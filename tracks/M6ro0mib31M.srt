@@ -83,7 +83,7 @@ sign into your app.
 19
 00:00:42,240 --> 00:00:44,480
 We will show you two
-ways of sharing--
+ways of sharing &mdash;
 
 20
 00:00:44,480 --> 00:00:47,720
@@ -270,7 +270,7 @@ back to your app.
 58
 00:02:41,180 --> 00:02:43,800
 So let's start from
-the very basic--
+the very basic &mdash;
 
 59
 00:02:43,800 --> 00:02:45,490
@@ -279,7 +279,7 @@ Google+ Sign-In.
 60
 00:02:45,490 --> 00:02:48,440
 I will use one of our partners
-as an example--
+as an example &mdash;
 
 61
 00:02:48,440 --> 00:02:49,240
@@ -345,7 +345,7 @@ dialogue very carefully with
 
 74
 00:03:25,990 --> 00:03:28,350
-one thing in mind-- the user.
+one thing in mind &mdash; the user.
 
 75
 00:03:28,350 --> 00:03:31,890
@@ -752,7 +752,7 @@ following items from Google+
 
 161
 00:07:38,850 --> 00:07:40,655
-iOS SDK to your project--
+iOS SDK to your project &mdash;
 
 162
 00:07:40,655 --> 00:07:44,760
@@ -893,7 +893,7 @@ libraries and the following
 
 192
 00:09:29,460 --> 00:09:30,440
-frameworks--
+frameworks &mdash;
 
 193
 00:09:30,440 --> 00:09:34,370
@@ -1270,7 +1270,7 @@ display name.
 274
 00:14:16,700 --> 00:14:20,080
 To do that, we use
-three objects--
+three objects &mdash;
 
 275
 00:14:20,080 --> 00:14:25,680
@@ -1521,7 +1521,7 @@ what I'm sharing.
 
 328
 00:17:17,970 --> 00:17:19,530
-But also, there's a button--
+But also, there's a button &mdash;
 
 329
 00:17:19,530 --> 00:17:20,220
@@ -1877,12 +1877,12 @@ active sharing that you've
 
 404
 00:21:29,160 --> 00:21:30,810
-seen with interactive posts--
+seen with interactive posts &mdash;
 
 405
 00:21:30,810 --> 00:21:34,300
 users want to share something
-with their friends--
+with their friends &mdash;
 
 406
 00:21:34,300 --> 00:21:37,390
@@ -2038,7 +2038,7 @@ a Review activity.
 438
 00:23:08,240 --> 00:23:10,210
 I mentioned two different
-types--
+types &mdash;
 
 439
 00:23:10,210 --> 00:23:11,200
@@ -2285,7 +2285,7 @@ target of this Moment object
 491
 00:26:02,750 --> 00:26:05,230
 to be the target of
-the app activity--
+the app activity &mdash;
 
 492
 00:26:05,230 --> 00:26:07,730
@@ -3079,7 +3079,7 @@ Maybe I'm wrong.
 
 665
 00:34:37,750 --> 00:34:38,010
-AUDIENCE: Hi--
+AUDIENCE: Hi &mdash;
 
 666
 00:34:38,010 --> 00:34:39,320
@@ -3163,7 +3163,7 @@ can keep it.
 683
 00:35:11,165 --> 00:35:14,870
 AUDIENCE: Oh, if I added it
-as one of the scope--
+as one of the scope &mdash;
 
 684
 00:35:14,870 --> 00:35:15,830

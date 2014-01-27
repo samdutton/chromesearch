@@ -1,6 +1,6 @@
 1
 00:00:00,500 --> 00:00:03,917
-♪ [upbeat music plays] 
+♪ [upbeat music plays]
 
 2
 00:00:03,917 --> 00:00:06,542
@@ -52,11 +52,11 @@ with Chrome was a single sign-on solution,
 12
 00:00:28,875 --> 00:00:32,667
 so that any Google user
-who was utilizing Chrome--
+who was utilizing Chrome &mdash;
 
 13
 00:00:32,667 --> 00:00:34,375
-either the Chrome OS or the browser--
+either the Chrome OS or the browser &mdash;
 
 14
 00:00:34,375 --> 00:00:37,292
@@ -70,7 +70,7 @@ you traditionally work with
 
 16
 00:00:41,167 --> 00:00:42,292
-through the Chrome OS 
+through the Chrome OS
 
 17
 00:00:42,292 --> 00:00:45,000
@@ -111,7 +111,7 @@ from Chrome onto the cloud.
 
 25
 00:01:04,375 --> 00:01:06,250
-And with the Box APIs, 
+And with the Box APIs,
 
 26
 00:01:06,250 --> 00:01:08,417
@@ -125,7 +125,7 @@ our APIs to Chrome's APIs
 
 28
 00:01:12,542 --> 00:01:14,083
-so that just in a matter of days, 
+so that just in a matter of days,
 
 29
 00:01:14,083 --> 00:01:17,792

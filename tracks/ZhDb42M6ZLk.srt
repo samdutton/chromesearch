@@ -34,8 +34,8 @@ at the slides.
 
 8
 00:00:22,834 --> 00:00:27,901
-So when a user types in a URL--
-a universal resource locator--
+So when a user types in a URL &mdash;
+a universal resource locator &mdash;
 
 9
 00:00:27,901 --> 00:00:32,100
@@ -127,7 +127,7 @@ just fine.
 
 27
 00:01:24,667 --> 00:01:26,100
-So that's what--
+So that's what &mdash;
 
 28
 00:01:26,100 --> 00:01:30,834
@@ -208,7 +208,7 @@ cross-platform network stack.
 
 44
 00:02:23,701 --> 00:02:26,167
-And this also--
+And this also &mdash;
 
 45
 00:02:26,167 --> 00:02:29,033
@@ -278,7 +278,7 @@ directory is the most important
 
 59
 00:03:14,334 --> 00:03:16,033
-because that's really--
+because that's really &mdash;
 
 60
 00:03:16,033 --> 00:03:19,167
@@ -316,7 +316,7 @@ proxy settings and so on.
 67
 00:03:42,567 --> 00:03:47,567
 And then there is a directory
-underneath called Base--
+underneath called Base &mdash;
 
 68
 00:03:47,567 --> 00:03:49,868
@@ -325,7 +325,7 @@ Underneath Net called Base,
 69
 00:03:49,868 --> 00:03:54,634
 which contains the basic
-socket implementation--SSL--
+socket implementation--SSL &mdash;
 
 70
 00:03:54,634 --> 00:03:56,567
@@ -419,8 +419,8 @@ the OS bindings
 
 89
 00:04:56,534 --> 00:04:59,601
-for RTCP sockets--
-SSL sockets--
+for RTCP sockets &mdash;
+SSL sockets &mdash;
 
 90
 00:04:59,601 --> 00:05:02,200
@@ -538,7 +538,7 @@ in the network stack,
 
 114
 00:06:17,601 --> 00:06:21,667
-except for the top level--
+except for the top level &mdash;
 URL request class.
 
 115
@@ -752,7 +752,7 @@ during the network fetch.
 
 159
 00:09:06,300 --> 00:09:08,767
-So you'll get--
+So you'll get &mdash;
 you specify, essentially,
 
 160
@@ -882,7 +882,7 @@ and in-memory cache.
 186
 00:10:25,400 --> 00:10:28,701
 So I guess we'll just
-step through a sample request--
+step through a sample request &mdash;
 
 187
 00:10:28,701 --> 00:10:30,968
@@ -896,7 +896,7 @@ or HTTP request.
 
 189
 00:10:47,934 --> 00:10:51,834
-So if you have the--
+So if you have the &mdash;
 Can you hear me?
 
 190
@@ -951,7 +951,7 @@ of our global state.
 200
 00:12:47,501 --> 00:12:50,968
 So we're first going to
-pass into the--
+pass into the &mdash;
 
 201
 00:12:50,968 --> 00:12:53,801
@@ -1060,7 +1060,7 @@ part of URL requests contacts.
 
 223
 00:14:00,734 --> 00:14:02,834
-So if the HTTP--
+So if the HTTP &mdash;
 
 224
 00:14:02,834 --> 00:14:04,634
@@ -1109,7 +1109,7 @@ the headers,
 
 233
 00:14:24,400 --> 00:14:25,868
-understanding response codes--
+understanding response codes &mdash;
 
 234
 00:14:25,868 --> 00:14:29,167
@@ -1302,7 +1302,7 @@ So, yeah.
 274
 00:17:13,701 --> 00:17:16,801
 And there's a bunch
-of resources for--
+of resources for &mdash;
 
 275
 00:17:16,801 --> 00:17:18,834
@@ -1392,8 +1392,8 @@ over two gigabytes,
 
 293
 00:18:09,167 --> 00:18:13,133
-and with some other--
-I think Wan-Teh will--
+and with some other &mdash;
+I think Wan-Teh will &mdash;
 
 294
 00:18:13,133 --> 00:18:15,968
@@ -1407,7 +1407,7 @@ two major problems.
 296
 00:18:17,300 --> 00:18:21,267
 The first one is that
-we cannot get the certificate--
+we cannot get the certificate &mdash;
 
 297
 00:18:21,267 --> 00:18:23,067
@@ -1506,7 +1506,7 @@ about that.
 317
 00:19:25,634 --> 00:19:31,634
 And it also had some problem
-that caused system crashes--
+that caused system crashes &mdash;
 
 318
 00:19:31,634 --> 00:19:33,934
@@ -1553,7 +1553,7 @@ better or worse?
 
 327
 00:20:06,267 --> 00:20:08,100
-The same for us as--
+The same for us as &mdash;
 
 328
 00:20:08,100 --> 00:20:09,968
@@ -1613,7 +1613,7 @@ and you need to pick one.
 
 340
 00:20:38,567 --> 00:20:42,400
-So I thought on Linux--
+So I thought on Linux &mdash;
 we were considering LibCurl.
 
 341
@@ -1659,11 +1659,11 @@ wrote it within a week.
 
 350
 00:21:07,200 --> 00:21:11,200
-And it was able to do TCP--
+And it was able to do TCP &mdash;
 
 351
 00:21:11,200 --> 00:21:14,734
-regular TTP requests--
+regular TTP requests &mdash;
 HTTP requests.
 
 352
@@ -1688,7 +1688,7 @@ for that?
 356
 00:21:25,834 --> 00:21:28,901
 Um, okay...
-so the question is--
+so the question is &mdash;
 
 357
 00:21:28,901 --> 00:21:31,567
@@ -1712,7 +1712,7 @@ and a certificate store.
 
 361
 00:21:41,167 --> 00:21:45,067
-I think the answer is--
+I think the answer is &mdash;
 I have two different answers.
 
 362
@@ -1774,7 +1774,7 @@ with IE at work.
 374
 00:22:21,267 --> 00:22:24,968
 But for some reason
-they want to use--
+they want to use &mdash;
 
 375
 00:22:24,968 --> 00:22:26,133
@@ -1844,7 +1844,7 @@ man: For website compatibility.
 389
 00:23:05,868 --> 00:23:08,801
 Wan-Teh: our experience is
-that--
+that &mdash;
 
 390
 00:23:08,801 --> 00:23:13,734
@@ -1891,7 +1891,7 @@ to correct it.
 
 399
 00:23:39,667 --> 00:23:41,100
-Or sometimes contact--
+Or sometimes contact &mdash;
 
 400
 00:23:41,100 --> 00:23:44,300

@@ -390,7 +390,7 @@ we want developers to
 
 85
 00:02:57,530 --> 00:02:58,930
-experiment with--
+experiment with &mdash;
 
 86
 00:02:58,930 --> 00:03:02,730
@@ -538,7 +538,7 @@ specifically, there's
 117
 00:04:00,190 --> 00:04:02,950
 really those three things
-that have set it apart--
+that have set it apart &mdash;
 
 118
 00:04:02,950 --> 00:04:06,450
@@ -989,11 +989,11 @@ that you touch all the time.
 213
 00:07:31,750 --> 00:07:33,810
 I was in the car the other day
-making a quick web change--
+making a quick web change &mdash;
 
 214
 00:07:33,810 --> 00:07:35,690
-I was on LTE-- and I
+I was on LTE &mdash; and I
 saw my fingerprints
 
 215
@@ -1070,7 +1070,7 @@ You've got the hands on there.
 230
 00:08:02,930 --> 00:08:05,300
 CHRIS LYON: One of the nice
-things though-- the screen is
+things though &mdash; the screen is
 
 231
 00:08:05,300 --> 00:08:08,620
@@ -1198,12 +1198,12 @@ Chrome OS gets better.
 
 257
 00:08:54,030 --> 00:08:56,580
-And about two years ago-- maybe
+And about two years ago &mdash; maybe
 it was even three at
 
 258
 00:08:56,580 --> 00:08:59,440
-this point-- with the Cr-48
+this point &mdash; with the Cr-48
 model coming out, really kind
 
 259

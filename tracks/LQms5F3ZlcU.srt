@@ -309,7 +309,7 @@ the corner as well.
 68
 00:02:48,270 --> 00:02:50,720
 PAUL KINLAN: So how
-come you use--
+come you use &mdash;
 
 69
 00:02:50,720 --> 00:02:51,820
@@ -424,7 +424,7 @@ It's probably about sevenish.
 
 94
 00:03:45,890 --> 00:03:47,120
-ROGER: But the robots are--
+ROGER: But the robots are &mdash;
 
 95
 00:03:47,120 --> 00:03:49,040
@@ -492,7 +492,7 @@ one over here.
 
 109
 00:04:20,410 --> 00:04:22,920
-So at the top of the screen--
+So at the top of the screen &mdash;
 whoops, sorry.
 
 110
@@ -543,7 +543,7 @@ project this wasn't existent.
 120
 00:04:49,138 --> 00:04:50,772
 PAUL KINLAN: Yeah, I remember
-was-- did I say this in this
+was &mdash; did I say this in this
 
 121
 00:04:50,772 --> 00:04:52,230
@@ -608,7 +608,7 @@ a simple Flash.
 
 134
 00:05:17,620 --> 00:05:18,880
-So how would you this time--
+So how would you this time &mdash;
 
 135
 00:05:18,880 --> 00:05:21,645
@@ -643,7 +643,7 @@ into the page?
 
 142
 00:05:34,600 --> 00:05:35,640
-Would you--
+Would you &mdash;
 
 143
 00:05:35,640 --> 00:05:38,470
@@ -674,7 +674,7 @@ MATTIAS: Yeah.
 149
 00:05:47,630 --> 00:05:49,540
 PAUL KINLAN: So that makes
-this-- well there is lot of
+this &mdash; well there is lot of
 
 150
 00:05:49,540 --> 00:05:52,232
@@ -683,7 +683,7 @@ wouldn't need to do animations
 
 151
 00:05:52,232 --> 00:05:54,170
-for this but--
+for this but &mdash;
 
 152
 00:05:54,170 --> 00:05:57,940
@@ -772,7 +772,7 @@ analyzing and it gets back
 170
 00:06:47,840 --> 00:06:49,500
 where your eyes and
-mouth and--
+mouth and &mdash;
 
 171
 00:06:49,500 --> 00:06:51,500
@@ -930,7 +930,7 @@ was that done by the server
 
 204
 00:08:10,870 --> 00:08:13,000
-itself and then you--
+itself and then you &mdash;
 
 205
 00:08:13,000 --> 00:08:13,290
@@ -1010,7 +1010,7 @@ So that is pretty cool.
 
 222
 00:08:45,780 --> 00:08:49,180
-So the point of--
+So the point of &mdash;
 
 223
 00:08:49,180 --> 00:08:49,770
@@ -1101,7 +1101,7 @@ everything because it got all
 
 241
 00:09:45,290 --> 00:09:48,360
-that-- so the vector line would
+that &mdash; so the vector line would
 do something like this
 
 242
@@ -1252,8 +1252,8 @@ bezier curve to go?
 
 273
 00:11:12,020 --> 00:11:13,960
-How did you work out-- if this
-one really interests-- you got
+How did you work out &mdash; if this
+one really interests &mdash; you got
 
 274
 00:11:13,960 --> 00:11:16,170
@@ -1766,7 +1766,7 @@ with image?
 385
 00:15:35,610 --> 00:15:38,560
 MATTIAS: Yeah so all the image
-processing is done in--
+processing is done in &mdash;
 
 386
 00:15:38,560 --> 00:15:40,510
@@ -1817,7 +1817,7 @@ different values to get
 
 396
 00:16:10,140 --> 00:16:11,900
-it into the animation to--
+it into the animation to &mdash;
 
 397
 00:16:11,900 --> 00:16:14,400
@@ -1836,7 +1836,7 @@ orchestrate that with the
 
 400
 00:16:18,120 --> 00:16:19,050
-animation and then--
+animation and then &mdash;
 
 401
 00:16:19,050 --> 00:16:19,740
@@ -1906,7 +1906,7 @@ MATTIAS: I think so, yeah.
 416
 00:16:46,830 --> 00:16:48,680
 I can't remember
-now with the--
+now with the &mdash;
 
 417
 00:16:48,680 --> 00:16:50,120
@@ -2099,7 +2099,7 @@ data in two ways.
 
 458
 00:18:23,710 --> 00:18:26,700
-You can post-- one way,
+You can post &mdash; one way,
 post message.
 
 459

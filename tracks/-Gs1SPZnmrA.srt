@@ -36,7 +36,7 @@ question-and-answer show.
 9
 00:00:35,660 --> 00:00:38,050
 So if any of you out there would
-like to ask questions--
+like to ask questions &mdash;
 
 10
 00:00:38,050 --> 00:00:48,163
@@ -186,7 +186,7 @@ it over to you.
 42
 00:02:07,240 --> 00:02:09,690
 You just had an article
-about high DPI--
+about high DPI &mdash;
 
 43
 00:02:09,690 --> 00:02:10,870
@@ -385,7 +385,7 @@ PETE LEPAGE: Yeah.
 85
 00:03:49,550 --> 00:03:52,220
 I think in your article that
-was just published--
+was just published &mdash;
 
 86
 00:03:52,220 --> 00:03:54,060
@@ -450,7 +450,7 @@ PETE LEPAGE: Oh, OK.
 
 99
 00:04:20,640 --> 00:04:21,399
-I might be thinking of a--
+I might be thinking of a &mdash;
 
 100
 00:04:21,399 --> 00:04:21,970
@@ -524,7 +524,7 @@ what does that mean?
 
 115
 00:04:57,970 --> 00:04:58,460
-Can you--
+Can you &mdash;
 
 116
 00:04:58,460 --> 00:04:59,260
@@ -532,7 +532,7 @@ BORIS SMUS: Sure.
 
 117
 00:04:59,260 --> 00:05:02,730
-So basically a 1x image--
+So basically a 1x image &mdash;
 
 118
 00:05:02,730 --> 00:05:04,330
@@ -555,7 +555,7 @@ PETE LEPAGE: OK.
 
 122
 00:05:11,110 --> 00:05:11,680
-So if I've got--
+So if I've got &mdash;
 
 123
 00:05:11,680 --> 00:05:15,700
@@ -688,7 +688,7 @@ that like it might be 1.5, or
 
 151
 00:06:28,500 --> 00:06:30,155
-1.3, or 1.--
+1.3, or 1. &mdash;
 
 152
 00:06:30,155 --> 00:06:30,840
@@ -710,7 +710,7 @@ start seeing greater than 2x
 
 156
 00:06:37,720 --> 00:06:41,850
-as well going forward from--
+as well going forward from &mdash;
 well, maybe not from Apple.
 
 157
@@ -769,7 +769,7 @@ medium, biggish, and extra,
 
 169
 00:07:12,030 --> 00:07:12,480
-extra large--
+extra large &mdash;
 
 170
 00:07:12,480 --> 00:07:15,030
@@ -839,7 +839,7 @@ pixel is a certain angle.
 184
 00:07:49,420 --> 00:07:51,935
 So depending on how
-close or how far--
+close or how far &mdash;
 
 185
 00:07:51,935 --> 00:07:52,750
@@ -1000,7 +1000,7 @@ pixels are scaled.
 219
 00:09:17,550 --> 00:09:20,080
 But you still have
-the problem of--
+the problem of &mdash;
 
 220
 00:09:20,080 --> 00:09:22,190
@@ -1018,7 +1018,7 @@ large, then suddenly you have
 
 223
 00:09:27,570 --> 00:09:28,980
-really crappy-looking--
+really crappy-looking &mdash;
 
 224
 00:09:28,980 --> 00:09:30,010
@@ -1078,7 +1078,7 @@ it's not everybody.
 236
 00:09:59,740 --> 00:10:02,130
 BORIS SMUS: Especially on
-Mobile, things are really--
+Mobile, things are really &mdash;
 
 237
 00:10:02,130 --> 00:10:03,920
@@ -1126,7 +1126,7 @@ I can get everything, it's
 246
 00:10:23,030 --> 00:10:25,466
 still going to take a little
-bit of time for the--
+bit of time for the &mdash;
 
 247
 00:10:25,466 --> 00:10:28,150
@@ -1154,7 +1154,7 @@ that someone put
 252
 00:10:39,750 --> 00:10:42,245
 together of all the
-JavaScript--
+JavaScript &mdash;
 
 253
 00:10:42,245 --> 00:10:43,266
@@ -1193,7 +1193,7 @@ do is you set a media
 
 261
 00:11:04,920 --> 00:11:07,576
-query based on the--
+query based on the &mdash;
 
 262
 00:11:07,576 --> 00:11:08,390
@@ -1207,7 +1207,7 @@ BORIS SMUS: Device DPI.
 264
 00:11:09,380 --> 00:11:11,110
 PETE LEPAGE: Device
-DPI or pixel--
+DPI or pixel &mdash;
 
 265
 00:11:11,110 --> 00:11:12,050
@@ -1321,7 +1321,7 @@ a content image.
 
 289
 00:12:08,800 --> 00:12:10,410
-And like you can even say--
+And like you can even say &mdash;
 
 290
 00:12:10,410 --> 00:12:13,120
@@ -1447,7 +1447,7 @@ screwed.
 316
 00:13:16,755 --> 00:13:18,340
 BORIS SMUS: Well, you're not
-screwed in the sense of--
+screwed in the sense of &mdash;
 
 317
 00:13:18,340 --> 00:13:20,650
@@ -1474,11 +1474,11 @@ a device database, like
 
 322
 00:13:29,140 --> 00:13:31,100
-[INAUDIBLE] or--
+[INAUDIBLE] or &mdash;
 
 323
 00:13:31,100 --> 00:13:32,030
-what's the other one--
+what's the other one &mdash;
 
 324
 00:13:32,030 --> 00:13:34,140
@@ -1492,7 +1492,7 @@ update your database.
 326
 00:13:37,490 --> 00:13:39,810
 And hopefully, they
-would be able to--
+would be able to &mdash;
 
 327
 00:13:39,810 --> 00:13:41,390
@@ -1560,7 +1560,7 @@ PETE LEPAGE: OK.
 341
 00:14:06,380 --> 00:14:08,630
 These are specs that
-are still sort of--
+are still sort of &mdash;
 
 342
 00:14:08,630 --> 00:14:09,570
@@ -1573,7 +1573,7 @@ them release candidate?
 
 344
 00:14:12,430 --> 00:14:14,840
-Or are we still sort of--
+Or are we still sort of &mdash;
 
 345
 00:14:14,840 --> 00:14:17,090
@@ -1688,7 +1688,7 @@ bad user experience.
 368
 00:15:26,140 --> 00:15:28,565
 So if the browser can make
-that call for you--
+that call for you &mdash;
 
 369
 00:15:28,565 --> 00:15:30,630
@@ -1783,7 +1783,7 @@ PETE LEPAGE: OK.
 
 389
 00:16:20,640 --> 00:16:21,590
-But something that--
+But something that &mdash;
 
 390
 00:16:21,590 --> 00:16:22,170
@@ -1797,7 +1797,7 @@ coming in the near future.
 392
 00:16:24,190 --> 00:16:26,770
 BORIS SMUS: And I believe
-it may be--
+it may be &mdash;
 
 393
 00:16:26,770 --> 00:16:29,420
@@ -1854,7 +1854,7 @@ will just pick that up.
 
 404
 00:16:52,250 --> 00:16:53,315
-But then I'd say source set--
+But then I'd say source set &mdash;
 
 405
 00:16:53,315 --> 00:16:54,130
@@ -2003,7 +2003,7 @@ Let me know what you think.
 438
 00:18:07,180 --> 00:18:08,770
 PETE LEPAGE: So what
-would you say--
+would you say &mdash;
 
 439
 00:18:08,770 --> 00:18:11,180
@@ -2061,12 +2061,12 @@ something less ambitious.
 450
 00:18:45,200 --> 00:18:46,600
 However, if you're on
-the bleeding edge--
+the bleeding edge &mdash;
 
 451
 00:18:46,600 --> 00:18:48,695
 PETE LEPAGE: If you want to be
-sort of on the cutting edge--
+sort of on the cutting edge &mdash;
 
 452
 00:18:48,695 --> 00:18:50,550
@@ -2169,7 +2169,7 @@ that provides that.
 473
 00:19:44,450 --> 00:19:47,115
 But it doesn't stop downloading
-once it hits the--
+once it hits the &mdash;
 
 474
 00:19:47,115 --> 00:19:48,170
@@ -2442,7 +2442,7 @@ All right.
 
 533
 00:22:32,180 --> 00:22:33,875
-So do you want to talk about--
+So do you want to talk about &mdash;
 
 534
 00:22:33,875 --> 00:22:34,710
@@ -2530,7 +2530,7 @@ on my new tab page.
 
 552
 00:23:32,570 --> 00:23:33,490
-But if you click--
+But if you click &mdash;
 
 553
 00:23:33,490 --> 00:23:36,060
@@ -2817,7 +2817,7 @@ just going to bring this
 614
 00:26:08,460 --> 00:26:10,660
 up again so that we
-can see this--
+can see this &mdash;
 
 615
 00:26:10,660 --> 00:26:11,480
@@ -2866,7 +2866,7 @@ I want to get rid of this.
 625
 00:26:35,690 --> 00:26:38,715
 If I go close this right
-now, I actually--
+now, I actually &mdash;
 
 626
 00:26:38,715 --> 00:26:40,495
@@ -2946,7 +2946,7 @@ thing to do, because now you
 
 643
 00:27:09,290 --> 00:27:10,280
-can actually go and--
+can actually go and &mdash;
 
 644
 00:27:10,280 --> 00:27:12,210
@@ -2975,11 +2975,11 @@ Canary this morning in that It
 
 650
 00:27:23,170 --> 00:27:25,270
-wouldn't bring up the--
+wouldn't bring up the &mdash;
 
 651
 00:27:25,270 --> 00:27:26,510
-yeah, it won't bring up my--
+yeah, it won't bring up my &mdash;
 
 652
 00:27:26,510 --> 00:27:27,770
@@ -3107,14 +3107,14 @@ browser user agent?
 
 680
 00:28:21,380 --> 00:28:22,630
-Or is this the--
+Or is this the &mdash;
 
 681
 00:28:22,630 --> 00:28:24,990
 
 682
 00:28:24,990 --> 00:28:25,550
-let's see--
+let's see &mdash;
 
 683
 00:28:25,550 --> 00:28:25,940
@@ -3222,7 +3222,7 @@ touch events, and I'll pop
 705
 00:29:20,690 --> 00:29:23,530
 over here and go back
-to google.com--
+to google.com &mdash;
 
 706
 00:29:23,530 --> 00:29:25,100
@@ -3277,7 +3277,7 @@ to clicks directly,
 
 717
 00:29:52,940 --> 00:29:53,910
-because they assume that--
+because they assume that &mdash;
 
 718
 00:29:53,910 --> 00:29:54,480
@@ -3388,12 +3388,12 @@ and things like that.
 741
 00:30:52,740 --> 00:30:55,540
 Once you've got ADB installed,
-which is not all that hard--
+which is not all that hard &mdash;
 
 742
 00:30:55,540 --> 00:30:58,520
 it's a pretty easy process
-to step through--
+to step through &mdash;
 
 743
 00:30:58,520 --> 00:31:01,960
@@ -3489,7 +3489,7 @@ don't like to remember ADB
 
 762
 00:31:56,680 --> 00:31:59,850
-forward TCP colon 922--
+forward TCP colon 922 &mdash;
 
 763
 00:31:59,850 --> 00:32:01,760
@@ -3755,7 +3755,7 @@ So we were testing this.
 819
 00:34:26,500 --> 00:34:29,429
 We were always on Wi-Fi,
-because that's--
+because that's &mdash;
 
 820
 00:34:29,429 --> 00:34:32,719
@@ -3958,7 +3958,7 @@ the first one.
 
 864
 00:36:17,060 --> 00:36:19,310
-So the first question-- let me
+So the first question &mdash; let me
 just reload this, make sure
 
 865
@@ -4152,7 +4152,7 @@ Right.
 
 906
 00:38:16,290 --> 00:38:21,270
-So basically, you can--
+So basically, you can &mdash;
 
 907
 00:38:21,270 --> 00:38:25,520
@@ -4292,7 +4292,7 @@ Chrome for PC.
 937
 00:39:47,240 --> 00:39:51,240
 So I think this is something
-about key chaining, probably--
+about key chaining, probably &mdash;
 
 938
 00:39:51,240 --> 00:39:53,290
@@ -4314,7 +4314,7 @@ PETE LEPAGE: Huh.
 
 942
 00:40:00,060 --> 00:40:01,390
-So I would say maybe if--
+So I would say maybe if &mdash;
 
 943
 00:40:01,390 --> 00:40:04,950
@@ -4361,7 +4361,7 @@ then wrap it up.
 952
 00:40:21,385 --> 00:40:23,300
 BORIS SMUS: So workarounds
-to--
+to &mdash;
 
 953
 00:40:23,300 --> 00:40:25,610
@@ -4399,7 +4399,7 @@ is the sandboxed iframe stuff.
 
 960
 00:40:44,160 --> 00:40:47,120
-Because with sandbox iframes--
+Because with sandbox iframes &mdash;
 
 961
 00:40:47,120 --> 00:40:48,940

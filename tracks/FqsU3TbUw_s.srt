@@ -53,7 +53,7 @@ about making a new language.
 12
 00:00:29,010 --> 00:00:31,010
 And from what we know
-now of the web-- we
+now of the web &mdash; we
 
 13
 00:00:31,010 --> 00:00:34,430
@@ -71,7 +71,7 @@ Dart team, and here
 
 16
 00:00:36,726 --> 00:00:38,610
-to talk about it--
+to talk about it &mdash;
 big warm welcome
 
 17
@@ -154,7 +154,7 @@ scalable, familiar language,
 
 34
 00:01:14,879 --> 00:01:17,420
-but it's also-- I like to think
+but it's also &mdash; I like to think
 of it as a batteries included
 
 35
@@ -164,7 +164,7 @@ platform.
 36
 00:01:17,940 --> 00:01:20,860
 There's a great core set
-of libraries-- things
+of libraries &mdash; things
 
 37
 00:01:20,860 --> 00:01:23,210
@@ -183,7 +183,7 @@ booleans, dates, times.
 40
 00:01:27,540 --> 00:01:29,710
 We also ship a collection
-of productive tools--
+of productive tools &mdash;
 
 41
 00:01:29,710 --> 00:01:33,730
@@ -259,7 +259,7 @@ for you guys.
 
 56
 00:02:07,730 --> 00:02:09,120
-The big point of this, really--
+The big point of this, really &mdash;
 
 57
 00:02:09,120 --> 00:02:09,620
@@ -615,7 +615,7 @@ up semantics that give you
 132
 00:04:45,650 --> 00:04:48,850
 a more logical programming
-experience in Dart-- only true
+experience in Dart &mdash; only true
 
 133
 00:04:48,850 --> 00:04:49,489
@@ -728,7 +728,7 @@ You want an error.
 
 157
 00:05:41,140 --> 00:05:42,564
-You want to be--
+You want to be &mdash;
 hey, man, string
 
 158
@@ -772,7 +772,7 @@ a top level foo.
 166
 00:05:58,494 --> 00:06:00,660
 So the question I have for
-you is-- when I run this,
+you is &mdash; when I run this,
 
 167
 00:06:00,660 --> 00:06:03,661
@@ -802,11 +802,11 @@ Dart, no variable hoisting.
 173
 00:06:11,440 --> 00:06:14,571
 It's a totally logical
-lexical scope-- lexical
+lexical scope &mdash; lexical
 
 174
 00:06:14,571 --> 00:06:15,820
-analysis-- of what's going on.
+analysis &mdash; of what's going on.
 
 175
 00:06:15,820 --> 00:06:17,980
@@ -1132,7 +1132,7 @@ We need global value numbering.
 243
 00:08:38,419 --> 00:08:40,770
 We need a lot of these
-things-- type propagation,
+things &mdash; type propagation,
 
 244
 00:08:40,770 --> 00:08:43,120
@@ -1379,12 +1379,12 @@ method in return
 294
 00:10:21,940 --> 00:10:24,150
 calls code pulled in
-from another library--
+from another library &mdash;
 
 295
 00:10:24,150 --> 00:10:26,820
 the bar method
-down on the right--
+down on the right &mdash;
 
 296
 00:10:26,820 --> 00:10:29,750
@@ -1393,7 +1393,7 @@ unused parts too like the boo
 
 297
 00:10:29,750 --> 00:10:32,990
-function here-- we want
+function here &mdash; we want
 the dart2js compiler
 
 298
@@ -1866,7 +1866,7 @@ reasonably readable to you.
 394
 00:14:13,910 --> 00:14:16,262
 It's Dart code and to me
-this looks like what I--
+this looks like what I &mdash;
 
 395
 00:14:16,262 --> 00:14:18,220
@@ -2036,7 +2036,7 @@ And it runs reasonably well.
 
 431
 00:15:30,040 --> 00:15:33,110
-But it's-- I hope you agree--
+But it's &mdash; I hope you agree &mdash;
 it's simply not good enough.
 
 432
@@ -2108,7 +2108,7 @@ want to rely on that behavior.
 446
 00:16:06,180 --> 00:16:08,834
 So in this case
-we're reading-- see
+we're reading &mdash; see
 
 447
 00:16:08,834 --> 00:16:10,780
@@ -2117,7 +2117,7 @@ progress, there we
 
 448
 00:16:10,780 --> 00:16:13,527
-go-- so we're reading the length
+go &mdash; so we're reading the length
 of something that probably
 
 449
@@ -2171,7 +2171,7 @@ and get some result out.
 
 459
 00:16:37,290 --> 00:16:40,410
-So this adds code-- more checks.
+So this adds code &mdash; more checks.
 
 460
 00:16:40,410 --> 00:16:42,070
@@ -2201,7 +2201,7 @@ about doing that?
 465
 00:16:51,650 --> 00:16:54,800
 The trick is right behind
-me-- global optimizations.
+me &mdash; global optimizations.
 
 466
 00:16:54,800 --> 00:16:58,230
@@ -2224,7 +2224,7 @@ So let's look at that.
 
 470
 00:17:05,890 --> 00:17:08,220
-First up-- Dart is structured.
+First up &mdash; Dart is structured.
 
 471
 00:17:08,220 --> 00:17:09,530
@@ -2342,7 +2342,7 @@ different points in the code.
 495
 00:17:54,650 --> 00:17:56,420
 And the way that
-works is-- Here's
+works is &mdash; Here's
 
 496
 00:17:56,420 --> 00:17:58,280
@@ -2638,7 +2638,7 @@ again without type
 
 558
 00:20:01,860 --> 00:20:04,720
-inferencing-- 526 characters.
+inferencing &mdash; 526 characters.
 
 559
 00:20:04,720 --> 00:20:07,971
@@ -2831,13 +2831,13 @@ whether or not c is nulled
 
 600
 00:21:30,228 --> 00:21:33,020
-before doing a comparison-- this
+before doing a comparison &mdash; this
 is necessary because of null
 
 601
 00:21:33,020 --> 00:21:35,200
 and undefined in
-JavaScript by the way--
+JavaScript by the way &mdash;
 
 602
 00:21:35,200 --> 00:21:37,710
@@ -2895,7 +2895,7 @@ that last thing.
 
 614
 00:21:57,850 --> 00:22:00,970
-And there you have it--
+And there you have it &mdash;
 an optimized version
 
 615
@@ -3120,7 +3120,7 @@ So that's dart2js.
 661
 00:23:35,366 --> 00:23:36,740
 A little bit about
-the workflow--
+the workflow &mdash;
 
 662
 00:23:36,740 --> 00:23:38,340
@@ -3228,7 +3228,7 @@ way to get started
 
 684
 00:24:17,500 --> 00:24:19,000
-is-- let's just
+is &mdash; let's just
 create a sample app.
 
 685
@@ -3497,7 +3497,7 @@ We're going to re-run the app.
 742
 00:26:16,600 --> 00:26:19,420
 And if I click the button, and
-it all works-- yes, OK, great.
+it all works &mdash; yes, OK, great.
 
 743
 00:26:19,420 --> 00:26:21,920
@@ -3574,11 +3574,11 @@ management system comes in.
 759
 00:26:51,700 --> 00:26:54,230
 Our package management
-system, Pub-- and let's
+system, Pub &mdash; and let's
 
 760
 00:26:54,230 --> 00:27:00,417
-see if we can go here--
+see if we can go here &mdash;
 has over 500 packages in it
 
 761
@@ -3598,7 +3598,7 @@ to game, crypto, you name it.
 764
 00:27:06,672 --> 00:27:09,120
 Ah, here, look at
-this-- fancy button.
+this &mdash; fancy button.
 
 765
 00:27:09,120 --> 00:27:11,100
@@ -3749,12 +3749,12 @@ very quickly in Dartium,
 796
 00:28:17,130 --> 00:28:19,740
 but it's another thing
-to be able to-- find
+to be able to &mdash; find
 
 797
 00:28:19,740 --> 00:28:25,260
 my original slides, boop,
-OK-- do your final testing
+OK &mdash; do your final testing
 
 798
 00:28:25,260 --> 00:28:28,850
@@ -3802,7 +3802,7 @@ do with your code.
 
 807
 00:28:44,100 --> 00:28:45,960
-Tree shaking-- it
+Tree shaking &mdash; it
 can minify your app.
 
 808
@@ -4014,7 +4014,7 @@ across the modern web.
 
 852
 00:30:18,430 --> 00:30:23,607
-So I think with that-- I
+So I think with that &mdash; I
 think we're all ready to go.
 
 853

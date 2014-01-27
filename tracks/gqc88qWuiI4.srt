@@ -95,12 +95,12 @@ experience.
 
 22
 00:00:52,180 --> 00:00:52,800
-Then--
+Then &mdash;
 
 23
 00:00:52,800 --> 00:00:55,610
 this is near and dear to my
-heart on the Gmail team--
+heart on the Gmail team &mdash;
 
 24
 00:00:55,610 --> 00:00:58,330
@@ -197,12 +197,12 @@ talking about much
 
 43
 00:01:50,230 --> 00:01:52,040
-smaller periods of time--
+smaller periods of time &mdash;
 
 44
 00:01:52,040 --> 00:01:55,540
 often milliseconds when we're
-talking about rendering--
+talking about rendering &mdash;
 
 45
 00:01:55,540 --> 00:01:58,410
@@ -552,11 +552,11 @@ And if I zoom back a little bit
 
 119
 00:05:08,840 --> 00:05:11,270
-further, we'll see a layout--
+further, we'll see a layout &mdash;
 
 120
 00:05:11,270 --> 00:05:12,680
-apologies--
+apologies &mdash;
 
 121
 00:05:12,680 --> 00:05:14,540
@@ -689,7 +689,7 @@ cycle to be entered, and here
 148
 00:06:30,210 --> 00:06:32,650
 are the steps that we're going
-to be working with--
+to be working with &mdash;
 
 149
 00:06:32,650 --> 00:06:36,680
@@ -1138,7 +1138,7 @@ the rendering tree.
 245
 00:10:53,210 --> 00:10:55,830
 Style tags, script tags,
-the head tag--
+the head tag &mdash;
 
 246
 00:10:55,830 --> 00:10:59,090
@@ -1190,7 +1190,7 @@ present in the DOM.
 256
 00:11:24,420 --> 00:11:27,220
 And then there's a good deal
-of overlap in the middle--
+of overlap in the middle &mdash;
 
 257
 00:11:27,220 --> 00:11:29,560
@@ -1293,11 +1293,11 @@ ancestor.
 278
 00:12:21,870 --> 00:12:24,900
 So this is going to be some
-other parent in the tree--
+other parent in the tree &mdash;
 
 279
 00:12:24,900 --> 00:12:26,490
-or an ancestor, rather--
+or an ancestor, rather &mdash;
 
 280
 00:12:26,490 --> 00:12:29,470
@@ -1978,7 +1978,7 @@ element around the screen.
 
 426
 00:19:10,010 --> 00:19:12,610
-Transform is very--
+Transform is very &mdash;
 
 427
 00:19:12,610 --> 00:19:14,090
@@ -3049,11 +3049,11 @@ somewhere on the page.
 653
 00:30:03,020 --> 00:30:05,820
 But my giant paints that
-I had before--
+I had before &mdash;
 
 654
 00:30:05,820 --> 00:30:07,950
-apologies--
+apologies &mdash;
 
 655
 00:30:07,950 --> 00:30:09,610

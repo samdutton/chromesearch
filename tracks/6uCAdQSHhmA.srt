@@ -37,7 +37,7 @@ the Web Fast" team.
 
 9
 00:00:22,230 --> 00:00:23,610
-And with me today--
+And with me today &mdash;
 
 10
 00:00:23,610 --> 00:00:24,265
@@ -121,12 +121,12 @@ worked with the team.
 27
 00:01:02,090 --> 00:01:04,950
 And the first thing that
-stands out to me--
+stands out to me &mdash;
 
 28
 00:01:04,950 --> 00:01:07,120
 I guess we have some slides
-that I've prepared--
+that I've prepared &mdash;
 
 29
 00:01:07,120 --> 00:01:10,830
@@ -332,11 +332,11 @@ typically wind up downloading
 71
 00:02:57,910 --> 00:03:01,490
 their JavaScript and their CSS,
-which hasn't changed--
+which hasn't changed &mdash;
 
 72
 00:03:01,490 --> 00:03:04,010
-usually has not changed--
+usually has not changed &mdash;
 
 73
 00:03:04,010 --> 00:03:06,250
@@ -676,7 +676,7 @@ Libraries for Apache.
 144
 00:06:02,125 --> 00:06:05,140
 But if I want to adopt it
-to some other server--
+to some other server &mdash;
 
 145
 00:06:05,140 --> 00:06:07,670
@@ -685,7 +685,7 @@ or I'm using some other
 
 146
 00:06:07,670 --> 00:06:08,340
-popular server--
+popular server &mdash;
 
 147
 00:06:08,340 --> 00:06:10,930
@@ -1299,7 +1299,7 @@ DreamHost or Go Daddy, you can
 278
 00:11:04,750 --> 00:11:07,480
 actually go into your control
-panel, click--
+panel, click &mdash;
 
 279
 00:11:07,480 --> 00:11:09,990
@@ -1405,7 +1405,7 @@ and with mod_pagespeed on.
 
 301
 00:12:01,930 --> 00:12:02,890
-And this is--
+And this is &mdash;
 
 302
 00:12:02,890 --> 00:12:04,500
@@ -1431,7 +1431,7 @@ WebPagetest, which offers all
 
 307
 00:12:11,430 --> 00:12:12,360
-kinds of opportunities--
+kinds of opportunities &mdash;
 
 308
 00:12:12,360 --> 00:12:13,880
@@ -1935,7 +1935,7 @@ want that next level.
 414
 00:16:46,570 --> 00:16:49,960
 But kind of without any effort
-at all you can get--
+at all you can get &mdash;
 
 415
 00:16:49,960 --> 00:16:50,140
@@ -2615,7 +2615,7 @@ mod_deflate is a really good
 561
 00:22:26,900 --> 00:22:30,110
 example, because what that one
-does is-- the most important
+does is &mdash; the most important
 
 562
 00:22:30,110 --> 00:22:32,170
@@ -2945,12 +2945,12 @@ that's not really a problem.
 632
 00:25:27,650 --> 00:25:29,915
 But when we have to go and
-optimize an image-- well, we
+optimize an image &mdash; well, we
 
 633
 00:25:29,915 --> 00:25:32,140
 have to fetch images, we have to
-optimize images-- we'll do
+optimize images &mdash; we'll do
 
 634
 00:25:32,140 --> 00:25:36,275
@@ -3070,7 +3070,7 @@ that it can act as a proxy.
 660
 00:26:25,530 --> 00:26:28,430
 So if you have some other server
-running somewhere--
+running somewhere &mdash;
 
 661
 00:26:28,430 --> 00:26:30,650
@@ -3079,7 +3079,7 @@ maybe it's a Ruby app
 
 662
 00:26:30,650 --> 00:26:32,660
-server, Java, what have you--
+server, Java, what have you &mdash;
 
 663
 00:26:32,660 --> 00:26:35,330
@@ -3351,7 +3351,7 @@ delaying the HTML.
 719
 00:29:09,560 --> 00:29:13,880
 So we spin up a machine that
-runs in the background--
+runs in the background &mdash;
 
 720
 00:29:13,880 --> 00:29:16,050
@@ -3360,7 +3360,7 @@ finite-state machine that runs
 
 721
 00:29:16,050 --> 00:29:18,470
-in the software--
+in the software &mdash;
 
 722
 00:29:18,470 --> 00:29:24,900
@@ -3417,7 +3417,7 @@ JOSHUA MARANTZ: Sure.
 
 734
 00:29:39,885 --> 00:29:40,810
-That's actually--
+That's actually &mdash;
 
 735
 00:29:40,810 --> 00:29:44,140
@@ -3450,7 +3450,7 @@ for a little bit.
 
 741
 00:29:54,050 --> 00:29:55,500
-So if I have an image--
+So if I have an image &mdash;
 
 742
 00:29:55,500 --> 00:29:57,980
@@ -3464,7 +3464,7 @@ the height is 100
 
 744
 00:30:00,330 --> 00:30:02,150
-pixels, so it's square--
+pixels, so it's square &mdash;
 
 745
 00:30:02,150 --> 00:30:04,560
@@ -3548,7 +3548,7 @@ saves me a lot of time,
 762
 00:30:39,690 --> 00:30:41,780
 because if I'm thinking
-about--
+about &mdash;
 
 763
 00:30:41,780 --> 00:30:43,950
@@ -3609,7 +3609,7 @@ coded into it.
 775
 00:31:11,690 --> 00:31:15,580
 So this image in this
-example-- this is on
+example &mdash; this is on
 
 776
 00:31:15,580 --> 00:31:18,180
@@ -3717,7 +3717,7 @@ really interesting, because
 
 799
 00:32:06,170 --> 00:32:08,620
-this would get served-- you
+this would get served &mdash; you
 mentioned because this was in
 
 800
@@ -3823,7 +3823,7 @@ optimizations.
 822
 00:32:54,390 --> 00:32:59,100
 And the way that it gets hooked
-up to-- and again, this
+up to &mdash; and again, this
 
 823
 00:32:59,100 --> 00:33:01,470
@@ -3915,7 +3915,7 @@ maybe could I even use
 
 841
 00:33:52,680 --> 00:33:55,410
-something-- like if I'm building
+something &mdash; like if I'm building
 something with this
 
 842
@@ -4256,8 +4256,8 @@ that's another way.
 
 915
 00:36:34,870 --> 00:36:37,590
-And then the last one is-- we
-actually mentioned this-- the
+And then the last one is &mdash; we
+actually mentioned this &mdash; the
 
 916
 00:36:37,590 --> 00:36:40,750
@@ -4299,7 +4299,7 @@ out to your users without kind
 
 924
 00:36:59,255 --> 00:36:59,790
-of looking at it first--
+of looking at it first &mdash;
 
 925
 00:36:59,790 --> 00:37:00,054
@@ -5112,13 +5112,13 @@ Analytics some conversion
 
 1098
 00:44:15,480 --> 00:44:18,400
-metrics-- that could be a
+metrics &mdash; that could be a
 purchase, that could be a
 
 1099
 00:44:18,400 --> 00:44:21,770
 registration, even time on
-site or bounce rate--
+site or bounce rate &mdash;
 
 1100
 00:44:21,770 --> 00:44:23,250
@@ -5238,7 +5238,7 @@ browser to open multiple
 
 1125
 00:45:19,300 --> 00:45:20,380
-connections--
+connections &mdash;
 
 1126
 00:45:20,380 --> 00:45:22,580
@@ -5274,7 +5274,7 @@ JOSHUA MARANTZ: Sure.
 1133
 00:45:33,590 --> 00:45:42,331
 So the challenge is
-that you want to--
+that you want to &mdash;
 
 1134
 00:45:42,331 --> 00:45:44,090
@@ -5840,7 +5840,7 @@ in there to be explicit.
 1252
 00:51:10,310 --> 00:51:13,570
 He said, I'm going to rewrite
-images, convert JPGs to WebP--
+images, convert JPGs to WebP &mdash;
 
 1253
 00:51:13,570 --> 00:51:18,350
@@ -5849,7 +5849,7 @@ this on Chrome on
 
 1254
 00:51:18,350 --> 00:51:20,700
-iOS when he's using that--
+iOS when he's using that &mdash;
 
 1255
 00:51:20,700 --> 00:51:22,170
@@ -6601,7 +6601,7 @@ I think, answers the next
 1416
 00:58:01,600 --> 00:58:03,820
 question which is, if you're
-using a CDN-- or maybe if
+using a CDN &mdash; or maybe if
 
 1417
 00:58:03,820 --> 00:58:06,590
@@ -6674,7 +6674,7 @@ to worry about that?
 
 1432
 00:58:32,160 --> 00:58:33,880
-So if I have my assets--
+So if I have my assets &mdash;
 
 1433
 00:58:33,880 --> 00:58:35,710
@@ -7088,11 +7088,11 @@ back down.
 1523
 01:01:49,370 --> 01:01:53,010
 So there will be typically
-be a few minutes--
+be a few minutes &mdash;
 
 1524
 01:01:53,010 --> 01:01:54,550
-it would vary on the site--
+it would vary on the site &mdash;
 
 1525
 01:01:54,550 --> 01:01:58,130

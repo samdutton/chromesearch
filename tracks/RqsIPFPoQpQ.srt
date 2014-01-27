@@ -1183,7 +1183,7 @@ to have the app-granted
 256
 00:11:49,160 --> 00:11:51,480
 permission do a couple things
-in our Google profile--
+in our Google profile &mdash;
 
 257
 00:11:51,480 --> 00:11:54,160
@@ -1594,7 +1594,7 @@ Install it and order ahead.
 
 345
 00:15:37,520 --> 00:15:40,570
-I'd also encourage you to--
+I'd also encourage you to &mdash;
 
 346
 00:15:40,570 --> 00:15:44,250
@@ -1603,7 +1603,7 @@ after-session festivities
 
 347
 00:15:44,250 --> 00:15:45,540
-they've organized--
+they've organized &mdash;
 
 348
 00:15:45,540 --> 00:15:48,700
@@ -2257,12 +2257,12 @@ full billing address.
 485
 00:21:44,620 --> 00:21:46,520
 If you only ask for a minimal
-billing address-- so
+billing address &mdash; so
 
 486
 00:21:46,520 --> 00:21:49,970
 basically, just a zip code of
-their billing address--
+their billing address &mdash;
 
 487
 00:21:49,970 --> 00:21:51,580

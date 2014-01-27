@@ -22,7 +22,7 @@ for WebRTC at Google.
 
 6
 00:00:10,900 --> 00:00:14,370
-And with me today is-- hey,
+And with me today is &mdash; hey,
 has anyone seen Sam?
 
 7
@@ -114,11 +114,11 @@ So what is WebRTC?
 27
 00:00:54,790 --> 00:00:57,600
 In a nutshell, it's what we call
-realtime communication--
+realtime communication &mdash;
 
 28
 00:00:57,600 --> 00:00:59,140
-RTC--
+RTC &mdash;
 
 29
 00:00:59,140 --> 00:01:02,310
@@ -364,7 +364,7 @@ API that exist in WebRTC.
 80
 00:03:48,220 --> 00:03:52,410
 First, getting access
-to input devices--
+to input devices &mdash;
 
 81
 00:03:52,410 --> 00:03:55,670
@@ -646,7 +646,7 @@ God, this is painful.
 
 139
 00:06:50,760 --> 00:06:52,490
-Anyway--
+Anyway &mdash;
 
 140
 00:06:52,490 --> 00:06:54,220
@@ -813,7 +813,7 @@ or wherever.
 175
 00:08:30,680 --> 00:08:33,496
 A little example
-of that here--
+of that here &mdash;
 
 176
 00:08:33,496 --> 00:08:36,105
@@ -836,7 +836,7 @@ record this, blah
 
 180
 00:08:41,360 --> 00:08:42,770
-blah blah blah blah--
+blah blah blah blah &mdash;
 
 181
 00:08:42,770 --> 00:08:43,075
@@ -845,7 +845,7 @@ blah blah blah blah--
 182
 00:08:43,075 --> 00:08:45,055
 -To record this, blah blah
-blah blah blah--
+blah blah blah &mdash;
 
 183
 00:08:45,055 --> 00:08:45,750
@@ -865,7 +865,7 @@ save that locally to disk.
 
 187
 00:08:53,090 --> 00:08:55,740
-GetUserMedia also now-- this is
+GetUserMedia also now &mdash; this is
 kind of experimental, but
 
 188
@@ -1014,7 +1014,7 @@ peer connection is
 
 218
 00:10:26,570 --> 00:10:28,510
-doing a ton of stuff--
+doing a ton of stuff &mdash;
 
 219
 00:10:28,510 --> 00:10:31,840
@@ -1168,7 +1168,7 @@ using RTCPeerConnection to
 250
 00:12:05,320 --> 00:12:08,660
 communicate that video
-to the other--
+to the other &mdash;
 
 251
 00:12:08,660 --> 00:12:10,880
@@ -1514,7 +1514,7 @@ this in action.
 323
 00:15:12,800 --> 00:15:16,760
 This is, again, a good place to
-start-- one page demo, with
+start &mdash; one page demo, with
 
 324
 00:15:16,760 --> 00:15:19,245
@@ -1787,7 +1787,7 @@ side, and vice versa.
 381
 00:17:41,800 --> 00:17:44,140
 You can use any mechanism
-you want--
+you want &mdash;
 
 382
 00:17:44,140 --> 00:17:47,610
@@ -1854,7 +1854,7 @@ because this includes a whole
 
 395
 00:18:23,590 --> 00:18:24,830
-bunch of parameters--
+bunch of parameters &mdash;
 
 396
 00:18:24,830 --> 00:18:26,810
@@ -1863,7 +1863,7 @@ information,
 
 397
 00:18:26,810 --> 00:18:27,700
-all sorts of stuff--
+all sorts of stuff &mdash;
 
 398
 00:18:27,700 --> 00:18:30,190
@@ -2235,11 +2235,11 @@ recommend is the long name,
 
 476
 00:21:57,050 --> 00:21:58,290
-but really good product--
+but really good product &mdash;
 
 477
 00:21:58,290 --> 00:22:01,320
-rfc5766-turn-server--
+rfc5766-turn-server &mdash;
 
 478
 00:22:01,320 --> 00:22:04,170
@@ -2455,7 +2455,7 @@ CPU and bandwidth cost.
 523
 00:23:56,960 --> 00:23:59,140
 So depending on the media
-you're trying to send--
+you're trying to send &mdash;
 
 524
 00:23:59,140 --> 00:24:00,350
@@ -2465,7 +2465,7 @@ kind of higher.
 525
 00:24:00,350 --> 00:24:02,520
 For video, it's going to be
-less-- the number of peers you
+less &mdash; the number of peers you
 
 526
 00:24:02,520 --> 00:24:05,680
@@ -2739,7 +2739,7 @@ SAM DUTTON: Cheers.
 
 586
 00:26:18,920 --> 00:26:20,590
-JUSTIN UBERTI: It's great--
+JUSTIN UBERTI: It's great &mdash;
 no plugins, realtime
 
 587
@@ -2780,11 +2780,11 @@ communications in a box.
 595
 00:26:44,020 --> 00:26:48,410
 It uses the open BTS cell
-framework-- you can see, it's
+framework &mdash; you can see, it's
 
 596
 00:26:48,410 --> 00:26:51,630
-that little box there-- to
+that little box there &mdash; to
 enable calls between feature
 
 597
@@ -3023,7 +3023,7 @@ calling the joinRoom method
 
 647
 00:29:07,590 --> 00:29:08,670
-with a room name--
+with a room name &mdash;
 
 648
 00:29:08,670 --> 00:29:10,450
@@ -3032,7 +3032,7 @@ really, really simple.
 649
 00:29:10,450 --> 00:29:13,840
 PeerJS does something similar
-for RTCDataChannel--
+for RTCDataChannel &mdash;
 
 650
 00:29:13,840 --> 00:29:16,660
@@ -3055,7 +3055,7 @@ they don't cover the production
 
 654
 00:29:26,440 --> 00:29:27,710
-aspects of the service--
+aspects of the service &mdash;
 
 655
 00:29:27,710 --> 00:29:30,420
@@ -3284,7 +3284,7 @@ SAM DUTTON: Yeah.
 
 705
 00:31:17,240 --> 00:31:20,810
-So, we've had-- well, a fraction
+So, we've had &mdash; well, a fraction
 over 30 minutes to
 
 706
@@ -3313,11 +3313,11 @@ to contact us.
 
 711
 00:31:34,860 --> 00:31:36,570
-There's a great Google group--
+There's a great Google group &mdash;
 
 712
 00:31:36,570 --> 00:31:38,280
-discuss-webrtc--
+discuss-webrtc &mdash;
 
 713
 00:31:38,280 --> 00:31:40,320
@@ -3911,7 +3911,7 @@ are going to be driving
 842
 00:36:54,010 --> 00:36:55,990
 battery consumption
-in this case--
+in this case &mdash;
 
 843
 00:36:55,990 --> 00:36:57,180
@@ -4050,7 +4050,7 @@ cat videos?
 873
 00:38:06,965 --> 00:38:11,340
 AUDIENCE: No, just within the
-WebRTC, are you just--
+WebRTC, are you just &mdash;
 
 874
 00:38:11,340 --> 00:38:14,350
@@ -4064,7 +4064,7 @@ is something called DSCP where
 
 876
 00:38:18,590 --> 00:38:21,290
-we can mark QoS bits-- and this
+we can mark QoS bits &mdash; and this
 isn't yet implemented in
 
 877
@@ -4262,7 +4262,7 @@ That's one option.
 917
 00:40:12,720 --> 00:40:14,180
 AUDIENCE: So the TURN
-server is open--
+server is open &mdash;
 
 918
 00:40:14,180 --> 00:40:17,760
@@ -4663,7 +4663,7 @@ side, you know, the camera
 
 1003
 00:43:57,590 --> 00:43:58,970
-which is on--
+which is on &mdash;
 
 1004
 00:43:58,970 --> 00:44:00,310

@@ -152,7 +152,7 @@ which is pretty cool.
 
 34
 00:01:11,980 --> 00:01:14,770
-So I'm going to go ahead and--
+So I'm going to go ahead and &mdash;
 
 35
 00:01:14,770 --> 00:01:15,840
@@ -245,7 +245,7 @@ now I'll click.
 
 54
 00:02:02,810 --> 00:02:05,130
-So here we have--
+So here we have &mdash;
 
 55
 00:02:05,130 --> 00:02:07,570
@@ -334,7 +334,7 @@ and it's already selected.
 73
 00:02:54,050 --> 00:02:57,210
 Now similarly, I might have
-an element that--
+an element that &mdash;
 
 74
 00:02:57,210 --> 00:02:59,000
@@ -460,7 +460,7 @@ OK, cool.
 
 101
 00:03:59,490 --> 00:04:01,010
-So all the MouseEvents--
+So all the MouseEvents &mdash;
 
 102
 00:04:01,010 --> 00:04:03,360
@@ -468,7 +468,7 @@ you see mousemove, click,
 
 103
 00:04:03,360 --> 00:04:05,430
-KeyboardEvents, scroll events--
+KeyboardEvents, scroll events &mdash;
 
 104
 00:04:05,430 --> 00:04:07,410
@@ -525,7 +525,7 @@ and the methods.
 115
 00:04:44,130 --> 00:04:47,680
 So I'm just going to
-pass the document--
+pass the document &mdash;
 
 116
 00:04:47,680 --> 00:04:48,420
@@ -562,7 +562,7 @@ a second, and there's some
 
 123
 00:05:02,510 --> 00:05:05,780
-pretty cool stuff in here-- a
+pretty cool stuff in here &mdash; a
 web visibility state, some
 
 124

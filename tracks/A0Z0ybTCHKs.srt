@@ -49,7 +49,7 @@ make it all work well.
 12
 00:00:22,734 --> 00:00:24,501
 And then I wanna
-try to leave some time--
+try to leave some time &mdash;
 
 13
 00:00:24,501 --> 00:00:26,267
@@ -95,7 +95,7 @@ of Multi-Process Architecture?
 22
 00:00:45,334 --> 00:00:47,567
 Well,
-we wanted to make sure that--
+we wanted to make sure that &mdash;
 
 23
 00:00:47,567 --> 00:00:49,200
@@ -227,7 +227,7 @@ which I'll get into later.
 52
 00:01:48,133 --> 00:01:49,167
 We wanted to make sure
-that all--
+that all &mdash;
 
 53
 00:01:49,167 --> 00:01:50,400
@@ -550,7 +550,7 @@ called RenderView,
 
 125
 00:04:18,667 --> 00:04:19,901
-but we're not--
+but we're not &mdash;
 We don't mean that.
 
 126
@@ -666,7 +666,7 @@ and these guys,
 
 152
 00:05:11,801 --> 00:05:13,601
-if they're all corr--
+if they're all corr &mdash;
 
 153
 00:05:13,601 --> 00:05:15,033
@@ -709,7 +709,7 @@ renderer process.
 
 162
 00:05:37,133 --> 00:05:38,667
-So this is actually--
+So this is actually &mdash;
 
 163
 00:05:38,667 --> 00:05:41,701
@@ -1400,7 +1400,7 @@ on the renderer side,
 
 320
 00:11:08,701 --> 00:11:10,667
-we also have--
+we also have &mdash;
 
 321
 00:11:10,667 --> 00:11:13,734
@@ -1422,7 +1422,7 @@ called the render thread...
 
 325
 00:11:21,334 --> 00:11:23,567
-...and this is the--
+...and this is the &mdash;
 
 326
 00:11:23,567 --> 00:11:30,601
@@ -1540,7 +1540,7 @@ application wants a result.
 
 351
 00:12:25,267 --> 00:12:27,033
-It's tempting to--
+It's tempting to &mdash;
 
 352
 00:12:27,033 --> 00:12:29,133
@@ -1624,7 +1624,7 @@ So in Windows,
 
 369
 00:13:07,467 --> 00:13:08,734
-when you have hWnds--
+when you have hWnds &mdash;
 
 370
 00:13:08,734 --> 00:13:11,334
@@ -1795,7 +1795,7 @@ background threads,
 
 406
 00:14:38,434 --> 00:14:39,634
-but it should never be--
+but it should never be &mdash;
 
 407
 00:14:39,634 --> 00:14:41,501
@@ -1857,7 +1857,7 @@ All of these things,
 
 421
 00:15:30,834 --> 00:15:33,167
-what they have in common is--
+what they have in common is &mdash;
 
 422
 00:15:33,167 --> 00:15:36,434
@@ -1866,7 +1866,7 @@ which I wanna talk about.
 
 423
 00:15:36,434 --> 00:15:37,434
-So when we--
+So when we &mdash;
 
 424
 00:15:37,434 --> 00:15:39,501
@@ -1937,7 +1937,7 @@ a Rect.
 
 439
 00:16:21,567 --> 00:16:23,133
-So we will observe--
+So we will observe &mdash;
 
 440
 00:16:23,133 --> 00:16:24,167
@@ -2058,7 +2058,7 @@ Like, if you take Google Maps
 
 466
 00:17:15,000 --> 00:17:16,634
-and you grab the tile--
+and you grab the tile &mdash;
 
 467
 00:17:16,634 --> 00:17:18,033
@@ -2229,7 +2229,7 @@ everything works much better.
 
 506
 00:18:41,434 --> 00:18:42,868
-Because of most of our--
+Because of most of our &mdash;
 
 507
 00:18:42,868 --> 00:18:44,534
@@ -2270,11 +2270,11 @@ to get very good performance
 
 515
 00:19:00,501 --> 00:19:01,734
-is you wanna basically--
+is you wanna basically &mdash;
 
 516
 00:19:01,734 --> 00:19:02,767
-Suppose you have--
+Suppose you have &mdash;
 
 517
 00:19:02,767 --> 00:19:04,167
@@ -2283,7 +2283,7 @@ on the screen.
 
 518
 00:19:04,167 --> 00:19:05,167
-What you really wanna do is--
+What you really wanna do is &mdash;
 
 519
 00:19:05,167 --> 00:19:06,801
@@ -2313,7 +2313,7 @@ Fill the exposed region.
 
 525
 00:19:18,534 --> 00:19:19,534
-So scrolling--
+So scrolling &mdash;
 
 526
 00:19:19,534 --> 00:19:22,234
@@ -2556,7 +2556,7 @@ Gmail scrolling's slow,
 
 580
 00:21:15,567 --> 00:21:18,434
-because that chat window might--
+because that chat window might &mdash;
 
 581
 00:21:18,434 --> 00:21:20,000
@@ -2581,7 +2581,7 @@ Resizing is kind of interesting,
 586
 00:21:27,901 --> 00:21:30,601
 because
-what's happening there is--
+what's happening there is &mdash;
 
 587
 00:21:30,601 --> 00:21:33,834
@@ -2628,11 +2628,11 @@ Our backing store is small,
 
 597
 00:21:52,767 --> 00:21:54,367
-and Windows just--
+and Windows just &mdash;
 
 598
 00:21:54,367 --> 00:21:56,133
-and we we're--
+and we we're &mdash;
 Now I need new pixels,
 
 599
@@ -2834,7 +2834,7 @@ but you need it now,
 
 642
 00:23:32,234 --> 00:23:33,634
-so we used the same trick--
+so we used the same trick &mdash;
 
 643
 00:23:33,634 --> 00:23:36,000
@@ -2944,7 +2944,7 @@ in the beginning about events.
 
 666
 00:24:26,934 --> 00:24:29,534
-Turns out that we--
+Turns out that we &mdash;
 
 667
 00:24:29,534 --> 00:24:31,567
@@ -3228,7 +3228,7 @@ plug-in detector, right?
 729
 00:26:35,801 --> 00:26:37,968
 >> Darin:
-Yes, so if anybody's seen--
+Yes, so if anybody's seen &mdash;
 
 730
 00:26:37,968 --> 00:26:40,601
@@ -3298,7 +3298,7 @@ one more interesting thing.
 744
 00:27:12,501 --> 00:27:14,567
 Turns out because
-we're multi-process--
+we're multi-process &mdash;
 
 745
 00:27:14,567 --> 00:27:16,200

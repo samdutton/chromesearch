@@ -33,7 +33,7 @@ game programming" mean?
 8
 00:00:15,133 --> 00:00:17,167
 So we think it means
-two things--
+two things &mdash;
 
 9
 00:00:17,167 --> 00:00:18,968
@@ -207,7 +207,7 @@ intensive game.
 45
 00:01:35,501 --> 00:01:38,000
 When you smash down the level,
-the, um--
+the, um &mdash;
 
 46
 00:01:38,000 --> 00:01:40,000
@@ -256,7 +256,7 @@ about
 
 55
 00:01:59,167 --> 00:02:01,167
-the actual implementation--
+the actual implementation &mdash;
 Bird: Aah! Ow!
 
 56
@@ -276,7 +276,7 @@ it was built with GWT,
 
 59
 00:02:08,567 --> 00:02:12,067
-two, it was built with--
+two, it was built with &mdash;
 purely with HTML5 technology,
 
 60
@@ -300,7 +300,7 @@ Phil can manage
 
 64
 00:02:21,567 --> 00:02:23,567
-to stop playing--
+to stop playing &mdash;
 
 65
 00:02:23,567 --> 00:02:25,567
@@ -353,7 +353,7 @@ for developing enterprise apps.
 
 75
 00:02:49,000 --> 00:02:51,501
-But, you know, games, you know--
+But, you know, games, you know &mdash;
 
 76
 00:02:51,501 --> 00:02:53,501
@@ -363,7 +363,7 @@ anything to do with games?
 77
 00:02:53,501 --> 00:02:56,501
 Well, if you're
-a beginner JavaScript pro--
+a beginner JavaScript pro &mdash;
 
 78
 00:02:56,501 --> 00:02:58,000
@@ -371,7 +371,7 @@ um, GWT programmer,
 
 79
 00:02:58,000 --> 00:02:59,834
-or JavaScript--
+or JavaScript &mdash;
 JavaScript programmer,
 
 80
@@ -529,7 +529,7 @@ without having to do much work.
 112
 00:04:10,634 --> 00:04:12,467
 So you sort of get
-to leverage stuff--
+to leverage stuff &mdash;
 
 113
 00:04:12,467 --> 00:04:14,300
@@ -655,7 +655,7 @@ including, say, Android.
 139
 00:05:02,667 --> 00:05:04,501
 So you might've
-written some code where--
+written some code where &mdash;
 
 140
 00:05:04,501 --> 00:05:06,501
@@ -797,7 +797,7 @@ written in Java
 
 169
 00:06:08,234 --> 00:06:10,000
-for an--
+for an &mdash;
 a whole nother platform,
 
 170
@@ -840,7 +840,7 @@ like removing unused code.
 
 178
 00:06:29,567 --> 00:06:31,567
-It evaluates things that--
+It evaluates things that &mdash;
 in compile time
 
 179
@@ -971,13 +971,13 @@ booster app script
 
 205
 00:07:27,801 --> 00:07:30,300
-that checks, um--
+that checks, um &mdash;
 that--that is downloaded
 
 206
 00:07:30,300 --> 00:07:32,300
 and basically points you
-at the new--
+at the new &mdash;
 
 207
 00:07:32,300 --> 00:07:33,801
@@ -1048,7 +1048,7 @@ about HTML5,
 
 221
 00:08:01,801 --> 00:08:05,033
-because HTML5--
+because HTML5 &mdash;
 when people use the term,
 
 222
@@ -1150,7 +1150,7 @@ So WebGL is big.
 242
 00:08:51,100 --> 00:08:52,934
 Any browser
-that has WebGL will able--
+that has WebGL will able &mdash;
 
 243
 00:08:52,934 --> 00:08:54,767
@@ -1211,7 +1211,7 @@ So next slide.
 255
 00:09:17,334 --> 00:09:19,501
 So let's talk a little bit
-about the game--
+about the game &mdash;
 
 256
 00:09:19,501 --> 00:09:22,501
@@ -1312,7 +1312,7 @@ the most important thing.
 276
 00:10:01,167 --> 00:10:03,167
 So dealing, like,
-for example, you know--
+for example, you know &mdash;
 
 277
 00:10:03,167 --> 00:10:05,000
@@ -1399,7 +1399,7 @@ pressed their mouse button
 
 295
 00:10:42,000 --> 00:10:44,501
-or he--you know--
+or he--you know &mdash;
 he touched the tablet.
 
 296
@@ -1526,7 +1526,7 @@ Canvas work.
 
 322
 00:11:41,567 --> 00:11:43,400
-Now Canvas--
+Now Canvas &mdash;
 the Canvas API on some browsers
 
 323
@@ -1641,12 +1641,12 @@ one of the big challenges.
 
 346
 00:12:33,968 --> 00:12:36,634
-Likewise, asset management--
+Likewise, asset management &mdash;
 
 347
 00:12:36,634 --> 00:12:38,634
 so each and every platform
-has a different--
+has a different &mdash;
 
 348
 00:12:38,634 --> 00:12:40,634
@@ -1697,7 +1697,7 @@ is typically a challenge.
 358
 00:12:59,067 --> 00:13:01,467
 And then last but not least,
-the game loop--
+the game loop &mdash;
 
 359
 00:13:01,467 --> 00:13:03,467
@@ -1756,7 +1756,7 @@ in a different tab,
 
 371
 00:13:22,634 --> 00:13:24,467
-uh, or you--
+uh, or you &mdash;
 or the window's minimized,
 
 372
@@ -1829,7 +1829,7 @@ basically another challenge,
 
 386
 00:13:50,133 --> 00:13:52,133
-is basically syncing--
+is basically syncing &mdash;
 syncing video
 
 387
@@ -1976,7 +1976,7 @@ in Java,
 
 417
 00:14:54,734 --> 00:14:56,234
-and that is what--
+and that is what &mdash;
 what this is.
 
 418
@@ -2013,12 +2013,12 @@ we'll swap in that platform,
 
 425
 00:15:08,501 --> 00:15:11,901
-Android, and maybe even Flash--
+Android, and maybe even Flash &mdash;
 we'll show you later.
 
 426
 00:15:11,901 --> 00:15:15,000
-So let me start with a demo--
+So let me start with a demo &mdash;
 always fun.
 
 427
@@ -2061,7 +2061,7 @@ physics engine here.
 
 435
 00:15:30,501 --> 00:15:32,601
-And you can see it's a--
+And you can see it's a &mdash;
 it's a fairly simple game.
 
 436
@@ -2148,7 +2148,7 @@ So...
 
 453
 00:16:15,501 --> 00:16:17,334
-So the components of ForPlay--
+So the components of ForPlay &mdash;
 
 454
 00:16:17,334 --> 00:16:19,334
@@ -2225,7 +2225,7 @@ to init, update, and paint.
 469
 00:16:51,000 --> 00:16:52,667
 And so this is
-actually for--
+actually for &mdash;
 
 470
 00:16:52,667 --> 00:16:54,334
@@ -2243,7 +2243,7 @@ to draw at 60 FPS.
 
 473
 00:16:58,200 --> 00:16:59,667
-We actually even provide--
+We actually even provide &mdash;
 
 474
 00:16:59,667 --> 00:17:01,567
@@ -2263,7 +2263,7 @@ than you're updating,
 477
 00:17:05,901 --> 00:17:07,901
 and you want to interpolate
-to make it really, like--
+to make it really, like &mdash;
 
 478
 00:17:07,901 --> 00:17:09,400
@@ -2272,7 +2272,7 @@ really smooth.
 479
 00:17:09,400 --> 00:17:11,400
 Uh, for your I/O system,
-we have tons of stuff here--
+we have tons of stuff here &mdash;
 
 480
 00:17:11,400 --> 00:17:13,901
@@ -2339,7 +2339,7 @@ or something like that.
 
 493
 00:17:37,400 --> 00:17:39,234
-ForPlay provides the--
+ForPlay provides the &mdash;
 the magic that happens
 
 494
@@ -2350,7 +2350,7 @@ that you're running on.
 495
 00:17:41,400 --> 00:17:43,901
 So you really write
-to one API, and you get--
+to one API, and you get &mdash;
 
 496
 00:17:43,901 --> 00:17:47,234
@@ -2478,7 +2478,7 @@ Oh, yes, that's right. Sorry.
 522
 00:18:40,834 --> 00:18:42,667
 Actually, we'll show you
-in more detail--
+in more detail &mdash;
 
 523
 00:18:42,667 --> 00:18:44,501
@@ -2491,7 +2491,7 @@ of the pea physics game.
 
 525
 00:18:46,234 --> 00:18:49,234
-So, um, input devices--
+So, um, input devices &mdash;
 
 526
 00:18:49,234 --> 00:18:51,000
@@ -2560,7 +2560,7 @@ spliced correctly.
 
 540
 00:19:16,400 --> 00:19:19,400
-Now really, the--
+Now really, the &mdash;
 the real meat to ForPlay
 
 541
@@ -2651,7 +2651,7 @@ like text, like strokes.
 559
 00:20:02,334 --> 00:20:05,334
 And really, it comes at a cost,
-because these things--
+because these things &mdash;
 
 560
 00:20:05,334 --> 00:20:08,334
@@ -2671,7 +2671,7 @@ and then draw the surface fast.
 563
 00:20:13,834 --> 00:20:15,834
 And this whole system is done
-inside a layer--
+inside a layer &mdash;
 
 564
 00:20:15,834 --> 00:20:18,367
@@ -2728,7 +2728,7 @@ This is all dynamic.
 
 575
 00:20:41,667 --> 00:20:43,167
-And the next layer--
+And the next layer &mdash;
 
 576
 00:20:43,167 --> 00:20:45,167
@@ -2784,7 +2784,7 @@ like Ray was saying.
 
 587
 00:21:07,501 --> 00:21:09,000
-And what you're doing is--
+And what you're doing is &mdash;
 
 588
 00:21:09,000 --> 00:21:11,000
@@ -2839,7 +2839,7 @@ once they've all loaded.
 
 599
 00:21:30,334 --> 00:21:32,000
-So this is really great for--
+So this is really great for &mdash;
 
 600
 00:21:32,000 --> 00:21:34,367
@@ -2848,11 +2848,11 @@ kind of situation.
 
 601
 00:21:36,200 --> 00:21:38,200
-Now the cross-platform magic--
+Now the cross-platform magic &mdash;
 
 602
 00:21:38,200 --> 00:21:40,200
-So, you know, all the--
+So, you know, all the &mdash;
 what I've said so far,
 
 603
@@ -2886,7 +2886,7 @@ HTML and Java.
 
 609
 00:21:51,868 --> 00:21:53,701
-One of these comp--
+One of these comp &mdash;
 compiles down
 
 610
@@ -2943,7 +2943,7 @@ It's written in Java,
 621
 00:22:22,667 --> 00:22:24,334
 so you get
-your familiar desktop--
+your familiar desktop &mdash;
 
 622
 00:22:24,334 --> 00:22:26,167
@@ -2966,7 +2966,7 @@ to HTML5,
 
 626
 00:22:31,334 --> 00:22:33,667
-so you get a really fast--
+so you get a really fast &mdash;
 fast game, as well.
 
 627
@@ -3013,7 +3013,7 @@ to debug in ForPlay.
 
 636
 00:22:54,834 --> 00:22:56,834
-So up here, I have--
+So up here, I have &mdash;
 
 637
 00:22:56,834 --> 00:22:58,667
@@ -3026,7 +3026,7 @@ just a few slides ago.
 
 639
 00:23:00,734 --> 00:23:02,400
-What this is, is the--
+What this is, is the &mdash;
 
 640
 00:23:02,400 --> 00:23:04,400
@@ -3102,7 +3102,7 @@ Cromwell: [laughs]
 655
 00:23:39,567 --> 00:23:42,534
 Rogers: There.
-Um, sorry about that, guys. So--
+Um, sorry about that, guys. So &mdash;
 
 656
 00:23:42,534 --> 00:23:44,534
@@ -3223,7 +3223,7 @@ and let's say, um,
 681
 00:24:35,934 --> 00:24:37,734
 let's say my boss
-comes in and wants--
+comes in and wants &mdash;
 
 682
 00:24:37,734 --> 00:24:39,734
@@ -3313,7 +3313,7 @@ You edit the JavaScript, you hit
 
 700
 00:25:20,067 --> 00:25:22,033
-With GWT DevMode, you hit--
+With GWT DevMode, you hit &mdash;
 you edit the Java code,
 
 701
@@ -3333,7 +3333,7 @@ it's already been updated.
 
 704
 00:25:29,000 --> 00:25:31,000
-I think that's--
+I think that's &mdash;
 I think that's kick-ass.
 
 705
@@ -3349,12 +3349,12 @@ because we're running
 707
 00:25:34,801 --> 00:25:36,801
 in our familiar
-environment of Eclipse--
+environment of Eclipse &mdash;
 
 708
 00:25:36,801 --> 00:25:39,801
 a lot of you guys know this is
-the standard GWT world--
+the standard GWT world &mdash;
 
 709
 00:25:39,801 --> 00:25:41,801
@@ -3533,7 +3533,7 @@ and target Android.
 746
 00:27:03,334 --> 00:27:05,000
 Well, you can do that,
-because--
+because &mdash;
 
 747
 00:27:05,000 --> 00:27:06,667
@@ -3542,7 +3542,7 @@ because it's written in Java,
 748
 00:27:06,667 --> 00:27:08,667
 you can take the exact same game
-and compi--
+and compi &mdash;
 
 749
 00:27:08,667 --> 00:27:10,501
@@ -3580,7 +3580,7 @@ on the big screen,
 756
 00:27:23,000 --> 00:27:24,834
 but I'll just really quickly
-just show--
+just show &mdash;
 
 757
 00:27:24,834 --> 00:27:26,834
@@ -3621,7 +3621,7 @@ so it--that's pretty cool.
 
 765
 00:27:43,000 --> 00:27:45,667
-So--but what about--
+So--but what about &mdash;
 
 766
 00:27:45,667 --> 00:27:47,501
@@ -3757,7 +3757,7 @@ and builds a Flash application.
 795
 00:28:55,501 --> 00:28:58,501
 Cromwell: And so here's
-an example of--
+an example of &mdash;
 
 796
 00:28:58,501 --> 00:29:00,434
@@ -3766,7 +3766,7 @@ just show you a demo
 
 797
 00:29:00,434 --> 00:29:02,734
-before I get to the example--
+before I get to the example &mdash;
 the peas Flash game.
 
 798
@@ -3813,7 +3813,7 @@ that it's Flash, so...
 
 807
 00:29:21,067 --> 00:29:23,567
-Cromwell: So how does it--
+Cromwell: So how does it &mdash;
 what do you have to do
 
 808
@@ -3826,8 +3826,8 @@ You have to do one thing.
 
 810
 00:29:27,234 --> 00:29:29,234
-You say FlashPlatform.re--
-two things, actually--
+You say FlashPlatform.re &mdash;
+two things, actually &mdash;
 
 811
 00:29:29,234 --> 00:29:31,234
@@ -4016,7 +4016,7 @@ the core components
 
 851
 00:30:58,567 --> 00:31:00,567
-of architecting a game--
+of architecting a game &mdash;
 the I/O system,
 
 852
@@ -4122,11 +4122,11 @@ native ActionScript
 873
 00:31:55,367 --> 00:31:57,367
 to interface between
-the Java world and the usable--
+the Java world and the usable &mdash;
 
 874
 00:31:57,367 --> 00:31:59,400
-Rogers: Would that--
+Rogers: Would that &mdash;
 would that be "ASNI?"
 
 875
@@ -4198,11 +4198,11 @@ on the same web site?
 889
 00:32:31,601 --> 00:32:33,601
 Cromwell: Yes.
-Uh, they're--
+Uh, they're &mdash;
 
 890
 00:32:33,601 --> 00:32:35,934
-they actually parallel--it's--
+they actually parallel--it's &mdash;
 it's really easy to find.
 
 891
@@ -4276,7 +4276,7 @@ a ForPlay.net class
 905
 00:33:08,501 --> 00:33:11,334
 that abstracts the network,
-as well as--
+as well as &mdash;
 
 906
 00:33:11,334 --> 00:33:13,000
@@ -4289,7 +4289,7 @@ push/pull response requests.
 
 908
 00:33:16,834 --> 00:33:19,501
-And it even extracts--
+And it even extracts &mdash;
 um, abstracts JSON
 
 909
@@ -4298,7 +4298,7 @@ across multiple platforms.
 
 910
 00:33:21,000 --> 00:33:23,000
-So you can fetch--
+So you can fetch &mdash;
 for example, the level beta
 
 911
@@ -4364,12 +4364,12 @@ or does it require 2.4 beta?
 
 924
 00:33:51,934 --> 00:33:55,167
-Cromwell: It uses 2.3--
+Cromwell: It uses 2.3 &mdash;
 well, I built it with 2.3.3.
 
 925
 00:33:55,167 --> 00:33:57,501
-Um, so it should--
+Um, so it should &mdash;
 should work on there.
 
 926
@@ -4561,7 +4561,7 @@ compared to the native version,
 
 966
 00:35:31,968 --> 00:35:33,968
-but what it gives--
+but what it gives &mdash;
 says is that if they make
 
 967
@@ -4624,7 +4624,7 @@ that we could do.
 
 979
 00:35:59,467 --> 00:36:03,033
-So one is, we don't--
+So one is, we don't &mdash;
 we don't generate, um, types.
 
 980
@@ -4675,7 +4675,7 @@ in the Flash VM.
 
 990
 00:36:22,701 --> 00:36:24,701
-But, um, I'm--
+But, um, I'm &mdash;
 that's the next step.
 
 991
@@ -4690,7 +4690,7 @@ ActionScript 3 code.
 
 993
 00:36:29,033 --> 00:36:31,033
-man: How about size--
+man: How about size &mdash;
 how about size-wise?
 
 994
@@ -4705,8 +4705,8 @@ or rCells or anything like that?
 
 996
 00:36:36,701 --> 00:36:38,534
-Cromwell: So it--
-it actually makes--
+Cromwell: So it &mdash;
+it actually makes &mdash;
 
 997
 00:36:38,534 --> 00:36:40,367
@@ -4725,7 +4725,7 @@ resources in there,
 
 1000
 00:36:45,868 --> 00:36:47,868
-but it could--
+but it could &mdash;
 it could be better.
 
 1001
@@ -4746,7 +4746,7 @@ across multiple SWFs
 1004
 00:36:55,701 --> 00:36:57,534
 and loading them in
-on the man--
+on the man &mdash;
 
 1005
 00:36:57,534 --> 00:36:59,400
@@ -4769,7 +4769,7 @@ cover audio at all?
 
 1009
 00:37:06,767 --> 00:37:08,767
-Cromwell: Yes, it has--
+Cromwell: Yes, it has &mdash;
 Rogers: That's a good point.
 
 1010
@@ -4841,7 +4841,7 @@ much manipulation.
 
 1024
 00:37:43,601 --> 00:37:45,601
-But that--
+But that &mdash;
 that will change.
 
 1025
@@ -4896,7 +4896,7 @@ added any support yet,
 
 1035
 00:38:06,033 --> 00:38:07,501
-because we kind of wanted--
+because we kind of wanted &mdash;
 
 1036
 00:38:07,501 --> 00:38:09,501
@@ -5000,7 +5000,7 @@ I'm just curious.
 1057
 00:38:52,501 --> 00:38:54,501
 Cromwell: Okay,
-so for the browser--
+so for the browser &mdash;
 
 1058
 00:38:54,501 --> 00:38:56,834
@@ -5014,11 +5014,11 @@ we use that.
 1060
 00:38:58,334 --> 00:39:00,167
 And what happens
-is the browser will--
+is the browser will &mdash;
 
 1061
 00:39:00,167 --> 00:39:01,734
-when it's drawing--
+when it's drawing &mdash;
 
 1062
 00:39:01,734 --> 00:39:03,901
@@ -5048,7 +5048,7 @@ to setTimeout or setInterval.
 1067
 00:39:13,601 --> 00:39:15,567
 Um, obviously, not as efficient,
-so it--
+so it &mdash;
 
 1068
 00:39:15,567 --> 00:39:17,901
@@ -5078,7 +5078,7 @@ to it with events.
 1073
 00:39:27,234 --> 00:39:29,234
 Rogers: And what this means
-is for something like peas--
+is for something like peas &mdash;
 
 1074
 00:39:29,234 --> 00:39:31,234
@@ -5091,7 +5091,7 @@ using set time-outs.
 
 1076
 00:39:32,734 --> 00:39:34,734
-but your phy--your drawing--
+but your phy--your drawing &mdash;
 your paint update loop
 
 1077
@@ -5137,7 +5137,7 @@ Flash back end
 1085
 00:39:50,501 --> 00:39:52,501
 gonna become a part of GWT,
-or is it gonna--
+or is it gonna &mdash;
 
 1086
 00:39:52,501 --> 00:39:54,501
@@ -5146,7 +5146,7 @@ part of ForPlay?
 
 1087
 00:39:54,501 --> 00:39:56,501
-Is it gonna be, like, a--
+Is it gonna be, like, a &mdash;
 will it be supported
 
 1088
@@ -5271,7 +5271,7 @@ back into mainline GWT?
 1113
 00:40:48,067 --> 00:40:49,901
 Cromwell: No, this is actually
-one of the first times--
+one of the first times &mdash;
 
 1114
 00:40:49,901 --> 00:40:51,734
@@ -5396,12 +5396,12 @@ in the standard GWT way.
 
 1139
 00:41:40,801 --> 00:41:43,300
-But the core of ForPlay--
+But the core of ForPlay &mdash;
 like, writing a game
 
 1140
 00:41:43,300 --> 00:41:45,467
-to that--
+to that &mdash;
 to the ForPlay game layer
 
 1141
@@ -5440,8 +5440,8 @@ and correct me if I'm wrong,
 
 1148
 00:41:59,634 --> 00:42:01,701
-but "Angry Birds" actually--
-like, the--
+but "Angry Birds" actually &mdash;
+like, the &mdash;
 
 1149
 00:42:01,701 --> 00:42:03,367
@@ -5455,7 +5455,7 @@ Cromwell: Surrounding it,
 1151
 00:42:04,868 --> 00:42:06,701
 like switching
-between HD and SD versions--
+between HD and SD versions &mdash;
 
 1152
 00:42:06,701 --> 00:42:08,534
@@ -5490,11 +5490,11 @@ part of the game,
 1158
 00:42:19,701 --> 00:42:21,534
 the ForPlay part of the game
-is what--
+is what &mdash;
 
 1159
 00:42:21,534 --> 00:42:23,033
-Cromwell: Yes, I'm--
+Cromwell: Yes, I'm &mdash;
 
 1160
 00:42:23,033 --> 00:42:24,868
@@ -5559,7 +5559,7 @@ in games.
 1172
 00:42:45,868 --> 00:42:47,701
 One of the things
-we actually need is--is, um--
+we actually need is--is, um &mdash;
 
 1173
 00:42:47,701 --> 00:42:50,367
@@ -5664,7 +5664,7 @@ for the audio for now.
 
 1194
 00:43:37,267 --> 00:43:39,100
-But--so that's not a--
+But--so that's not a &mdash;
 sort of a knock
 
 1195
@@ -5722,7 +5722,7 @@ calling out into the browser.
 1206
 00:44:00,767 --> 00:44:02,667
 You do the same thing
-for the--
+for the &mdash;
 
 1207
 00:44:02,667 --> 00:44:05,667
@@ -5736,7 +5736,7 @@ of architecting it,
 
 1209
 00:44:07,501 --> 00:44:10,501
-you basically--your--
+you basically--your &mdash;
 you have several entry points
 
 1210
@@ -5834,7 +5834,7 @@ you guys go home early today.
 1229
 00:44:46,834 --> 00:44:48,667
 You can get out
-and play with your--
+and play with your &mdash;
 
 1230
 00:44:48,667 --> 00:44:50,501

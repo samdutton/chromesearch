@@ -765,7 +765,7 @@ the language can evolve,
 160
 00:06:09,467 --> 00:06:11,767
 because you don't want
-necessarily separate--
+necessarily separate &mdash;
 
 161
 00:06:11,767 --> 00:06:14,501
@@ -1383,7 +1383,7 @@ it sort of creates a new scope.
 289
 00:10:55,801 --> 00:10:58,601
 If statements, while statements,
-for-in statements--
+for-in statements &mdash;
 
 290
 00:10:58,601 --> 00:10:59,834
@@ -1744,7 +1744,7 @@ Can it have side effects?
 363
 00:13:45,767 --> 00:13:48,567
 Can it not have side effects?
-You know--
+You know &mdash;
 
 364
 00:13:48,567 --> 00:13:51,067
@@ -1952,7 +1952,7 @@ just take an object.
 
 406
 00:15:20,133 --> 00:15:22,501
-This is where--
+This is where &mdash;
 sort of where JSON comes from,
 
 407
@@ -2064,7 +2064,7 @@ this other greeting property
 
 429
 00:16:11,200 --> 00:16:15,300
-to an object dynamically, and--
+to an object dynamically, and &mdash;
 or to an array dynamically.
 
 430
@@ -2599,7 +2599,7 @@ the local objects method.
 
 540
 00:20:16,100 --> 00:20:18,300
-Sweet--
+Sweet &mdash;
 or other way around.
 
 541
@@ -2967,7 +2967,7 @@ and we won't go over them.
 
 617
 00:23:11,834 --> 00:23:13,267
-But object.create--
+But object.create &mdash;
 the easiest way to think of it
 
 618
@@ -3381,7 +3381,7 @@ does the dynamic lookup
 
 702
 00:26:13,234 --> 00:26:14,434
-on the local object--
+on the local object &mdash;
 
 703
 00:26:14,434 --> 00:26:16,267
@@ -3767,12 +3767,12 @@ inside of tract,
 783
 00:29:16,400 --> 00:29:20,000
 we're going to assign
-a new property to this--
+a new property to this &mdash;
 
 784
 00:29:20,000 --> 00:29:22,434
 which is to say the object
-that was passed in--
+that was passed in &mdash;
 
 785
 00:29:22,434 --> 00:29:25,868
@@ -3936,7 +3936,7 @@ prototype--in this case,
 
 818
 00:30:53,167 --> 00:30:56,300
-SubItemType.prototype--
+SubItemType.prototype &mdash;
 pulls it out of there
 
 819
@@ -4439,7 +4439,7 @@ define a local variable,
 
 923
 00:34:44,100 --> 00:34:45,934
-create a function--
+create a function &mdash;
 which is not local,
 
 924
@@ -4843,7 +4843,7 @@ were for functions,
 1006
 00:37:59,234 --> 00:38:01,567
 and the classes which were
-defined as functions--
+defined as functions &mdash;
 
 1007
 00:38:01,567 --> 00:38:04,033
@@ -4939,7 +4939,7 @@ different semantics,
 1026
 00:38:39,467 --> 00:38:42,667
 because the way that you wire up
-those relationships internally--
+those relationships internally &mdash;
 
 1027
 00:38:42,667 --> 00:38:47,534
@@ -5323,7 +5323,7 @@ arguments property
 1105
 00:41:39,534 --> 00:41:41,634
 that's available
-inside the scope of any--
+inside the scope of any &mdash;
 
 1106
 00:41:41,634 --> 00:41:44,167
@@ -5543,7 +5543,7 @@ in the old syntax.
 
 1151
 00:43:37,667 --> 00:43:40,934
-So in this case--
+So in this case &mdash;
 
 1152
 00:43:48,400 --> 00:43:51,100
@@ -5557,7 +5557,7 @@ recompiling here, as I type.
 
 1154
 00:44:08,167 --> 00:44:12,834
-And now it has--
+And now it has &mdash;
 
 1155
 00:44:12,834 --> 00:44:14,601
@@ -5775,7 +5775,7 @@ classes, and traits,
 
 1199
 00:46:12,868 --> 00:46:14,200
-asynchronous programming--
+asynchronous programming &mdash;
 
 1200
 00:46:14,200 --> 00:46:16,000
@@ -5908,12 +5908,12 @@ the fast-moving constituencies.
 1226
 00:47:15,033 --> 00:47:18,667
 So if you can start to use this
-stuff in the Chrome Web Store--
+stuff in the Chrome Web Store &mdash;
 
 1227
 00:47:18,667 --> 00:47:21,534
 because almost everyone in
-the Chrome Web Store gets--
+the Chrome Web Store gets &mdash;
 
 1228
 00:47:21,534 --> 00:47:23,868
@@ -5923,7 +5923,7 @@ through the Chrome Web Store
 1229
 00:47:23,868 --> 00:47:25,734
 gets the latest version
-of Chrome within a week--
+of Chrome within a week &mdash;
 
 1230
 00:47:25,734 --> 00:47:26,968
@@ -5952,7 +5952,7 @@ that we couldn't before.
 1235
 00:47:36,267 --> 00:47:39,467
 The lead time on a new version
-of the language has been years--
+of the language has been years &mdash;
 
 1236
 00:47:39,467 --> 00:47:42,267
@@ -5966,7 +5966,7 @@ the ECMAScript wiki.
 
 1238
 00:47:47,267 --> 00:47:48,567
-I realize this is--
+I realize this is &mdash;
 the link
 
 1239
@@ -6072,8 +6072,8 @@ require and exports
 
 1260
 00:48:37,434 --> 00:48:39,767
-that really doesn't--
-that--it's kind of--
+that really doesn't &mdash;
+that--it's kind of &mdash;
 
 1261
 00:48:39,767 --> 00:48:41,367
@@ -6170,7 +6170,7 @@ mixing like load,
 
 1280
 00:49:27,601 --> 00:49:28,601
-the loading and--
+the loading and &mdash;
 
 1281
 00:49:28,601 --> 00:49:29,601
@@ -6190,7 +6190,7 @@ that JavaScript evaluates
 1284
 00:49:32,767 --> 00:49:34,367
 top to bottom,
-we either have to--
+we either have to &mdash;
 
 1285
 00:49:34,367 --> 00:49:35,834
@@ -6210,7 +6210,7 @@ which is what happens
 1288
 00:49:41,367 --> 00:49:43,234
 with the document.write,
-that sort of thing--
+that sort of thing &mdash;
 
 1289
 00:49:43,234 --> 00:49:44,234
@@ -6258,7 +6258,7 @@ I kind of--you use common JS
 
 1298
 00:49:57,767 --> 00:50:02,400
-on the client, but I don't--
+on the client, but I don't &mdash;
 I allow for, like,
 
 1299
@@ -6691,7 +6691,7 @@ in string formatting,
 1387
 00:53:55,100 --> 00:53:57,334
 for instance, to make it
-possible to plug in--
+possible to plug in &mdash;
 
 1388
 00:53:57,334 --> 00:54:01,000
@@ -6866,7 +6866,7 @@ into the language.
 1423
 00:55:25,667 --> 00:55:27,167
 But things like
-the module that are--
+the module that are &mdash;
 
 1424
 00:55:27,167 --> 00:55:29,467
@@ -7010,7 +7010,7 @@ domain that could benefit
 1453
 00:56:38,968 --> 00:56:41,634
 from scripting
-that's not really--
+that's not really &mdash;
 
 1454
 00:56:41,634 --> 00:56:45,067
@@ -7019,7 +7019,7 @@ is a native Android app.
 
 1455
 00:56:45,067 --> 00:56:46,334
-So I wonder if there are any--
+So I wonder if there are any &mdash;
 
 1456
 00:56:46,334 --> 00:56:47,968
@@ -7063,7 +7063,7 @@ I like to use sometimes
 1464
 00:57:04,400 --> 00:57:07,167
 multiple inheritance,
-and I have complex--
+and I have complex &mdash;
 
 1465
 00:57:07,167 --> 00:57:08,968
@@ -7088,7 +7088,7 @@ the super classes methods,
 1469
 00:57:17,434 --> 00:57:19,601
 you know, exactly once
-in the right order, and--
+in the right order, and &mdash;
 
 1470
 00:57:19,601 --> 00:57:22,100
@@ -7146,7 +7146,7 @@ a syntax for defining
 1481
 00:57:46,767 --> 00:57:49,100
 a set of things
-that you would sort of--
+that you would sort of &mdash;
 
 1482
 00:57:49,100 --> 00:57:51,100
@@ -7175,7 +7175,7 @@ I am at runtime.
 
 1487
 00:58:00,567 --> 00:58:02,300
-It's not really a--
+It's not really a &mdash;
 an "is a" relationship.
 
 1488
@@ -7310,7 +7310,7 @@ JavaScript for a very long time,
 
 1515
 00:59:13,200 --> 00:59:15,834
-mostly because I didn't--
+mostly because I didn't &mdash;
 I knew the what,
 
 1516
@@ -7329,7 +7329,7 @@ exploring.
 
 1519
 00:59:24,634 --> 00:59:27,934
-Can you recommend any reading--
+Can you recommend any reading &mdash;
 specific reading material?
 
 1520
@@ -7539,7 +7539,7 @@ anything that's talked about
 
 1562
 01:01:09,934 --> 01:01:13,200
-being added, where--
+being added, where &mdash;
 when you talk about modules,
 
 1563
@@ -7738,7 +7738,7 @@ will a closure compiler
 1602
 01:03:03,200 --> 01:03:05,601
 help with the debugability.
-If the closure compiler has--
+If the closure compiler has &mdash;
 
 1603
 01:03:05,601 --> 01:03:08,901

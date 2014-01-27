@@ -75,7 +75,7 @@ is not just about pure
 
 17
 00:00:45,700 --> 00:00:46,460
-functionality--
+functionality &mdash;
 
 18
 00:00:46,460 --> 00:00:48,590
@@ -131,7 +131,7 @@ and we'll just really
 
 29
 00:01:09,130 --> 00:01:10,410
-briefly-- we're pretty
+briefly &mdash; we're pretty
 short on time.
 
 30
@@ -259,7 +259,7 @@ face is that we publish 300
 
 56
 00:02:13,300 --> 00:02:14,550
-articles every day--
+articles every day &mdash;
 
 57
 00:02:14,550 --> 00:02:17,750
@@ -311,7 +311,7 @@ big, beautiful images
 67
 00:02:43,580 --> 00:02:46,830
 that we pay people a lot of
-money to put up to take-- and
+money to put up to take &mdash; and
 
 68
 00:02:46,830 --> 00:02:49,330
@@ -401,7 +401,7 @@ thing where you're
 
 86
 00:03:31,590 --> 00:03:33,735
-resizing all your images--
+resizing all your images &mdash;
 
 87
 00:03:33,735 --> 00:03:35,560
@@ -418,12 +418,12 @@ stupid pixels came out.
 
 90
 00:03:40,200 --> 00:03:43,750
-And now the main image we use--
+And now the main image we use &mdash;
 that's the main one to
 
 91
 00:03:43,750 --> 00:03:44,845
-work with-- is called jumbo.
+work with &mdash; is called jumbo.
 
 92
 00:03:44,845 --> 00:03:49,810
@@ -518,7 +518,7 @@ well, why don't we just draw
 111
 00:04:40,750 --> 00:04:44,050
 every image at every
-pixel size--
+pixel size &mdash;
 
 112
 00:04:44,050 --> 00:04:48,400
@@ -536,7 +536,7 @@ storage is cheap.
 
 115
 00:04:53,350 --> 00:04:57,190
-So we might try that--
+So we might try that &mdash;
 
 116
 00:04:57,190 --> 00:04:59,176
@@ -558,7 +558,7 @@ sort of leads to responsive
 
 120
 00:05:05,900 --> 00:05:07,610
-images-- one sec.
+images &mdash; one sec.
 
 121
 00:05:07,610 --> 00:05:09,450
@@ -680,7 +680,7 @@ width images were.
 
 147
 00:05:55,130 --> 00:05:56,770
-You want the image to be--
+You want the image to be &mdash;
 
 148
 00:05:56,770 --> 00:05:57,890
@@ -870,7 +870,7 @@ are the actual practical
 187
 00:07:46,810 --> 00:07:50,440
 techniques you're seeing, for
-instance, Jason, in terms of--
+instance, Jason, in terms of &mdash;
 
 188
 00:07:50,440 --> 00:07:52,180
@@ -903,7 +903,7 @@ compromise they want to use.
 194
 00:08:12,970 --> 00:08:15,360
 So what we've been
-advising people--
+advising people &mdash;
 
 195
 00:08:15,360 --> 00:08:20,180
@@ -1229,7 +1229,7 @@ this problem directly.
 263
 00:11:00,890 --> 00:11:05,150
 Because you still get this
-fundamental conflict--
+fundamental conflict &mdash;
 
 264
 00:11:05,150 --> 00:11:06,396
@@ -1262,7 +1262,7 @@ pixel ratios.
 270
 00:11:19,720 --> 00:11:21,760
 And it's really hard
-to actually--
+to actually &mdash;
 
 271
 00:11:21,760 --> 00:11:26,160
@@ -1318,7 +1318,7 @@ show up, and you do nothing.
 
 282
 00:11:51,640 --> 00:11:52,420
-And now I'm coming to you--
+And now I'm coming to you &mdash;
 
 283
 00:11:52,420 --> 00:11:55,020
@@ -1370,7 +1370,7 @@ with it.
 293
 00:12:13,210 --> 00:12:15,620
 JASON GRIGSBY: I think one
-of the things that--
+of the things that &mdash;
 
 294
 00:12:15,620 --> 00:12:19,560
@@ -1450,7 +1450,7 @@ is responsive.
 
 310
 00:13:10,290 --> 00:13:12,520
-SVG isn't supported across--
+SVG isn't supported across &mdash;
 
 311
 00:13:12,520 --> 00:13:13,560
@@ -1579,7 +1579,7 @@ JASON GRIGSBY: Well, the format
 
 338
 00:14:26,530 --> 00:14:28,320
-works in a lot of ways--
+works in a lot of ways &mdash;
 
 339
 00:14:28,320 --> 00:14:30,440
@@ -1631,7 +1631,7 @@ width with every HTP request.
 
 349
 00:14:58,370 --> 00:15:00,100
-And this would allow servers--
+And this would allow servers &mdash;
 
 350
 00:15:00,100 --> 00:15:02,360
@@ -1728,7 +1728,7 @@ got a prototype of this.
 
 369
 00:15:56,230 --> 00:15:57,320
-We're looking into it--
+We're looking into it &mdash;
 
 370
 00:15:57,320 --> 00:15:59,360
@@ -1772,11 +1772,11 @@ we can take this beyond the
 
 379
 00:16:23,420 --> 00:16:24,700
-kind of obvious application--
+kind of obvious application &mdash;
 
 380
 00:16:24,700 --> 00:16:31,350
-video chat apps and so on-- so
+video chat apps and so on &mdash; so
 obviously directed at Justin.
 
 381
@@ -1992,7 +1992,7 @@ is a lot more costly.
 
 425
 00:18:23,150 --> 00:18:24,190
-But if we think about--
+But if we think about &mdash;
 
 426
 00:18:24,190 --> 00:18:28,230
@@ -2173,7 +2173,7 @@ own question then.
 464
 00:19:56,770 --> 00:20:01,852
 MATT LOCKIER: OK, oh yeah,
-it was just sort of--
+it was just sort of &mdash;
 
 465
 00:20:01,852 --> 00:20:05,760
@@ -2476,7 +2476,7 @@ perspective,
 
 528
 00:22:53,810 --> 00:22:54,850
-you'd like to have--
+you'd like to have &mdash;
 
 529
 00:22:54,850 --> 00:22:57,570
@@ -2704,7 +2704,7 @@ going up in size.
 576
 00:25:04,220 --> 00:25:07,070
 As each block comes in, the
-actual entire video--
+actual entire video &mdash;
 
 577
 00:25:07,070 --> 00:25:08,770
@@ -2724,7 +2724,7 @@ a different resolution.
 580
 00:25:13,270 --> 00:25:15,030
 MIKE MAHEMOFF: That makes
-sense, actually--
+sense, actually &mdash;
 
 581
 00:25:15,030 --> 00:25:16,980
@@ -2772,7 +2772,7 @@ we've been discussing.
 591
 00:25:40,200 --> 00:25:41,440
 JASON GRIGSBY: I believe
-that Blink is--
+that Blink is &mdash;
 
 592
 00:25:41,440 --> 00:25:45,510
@@ -2852,7 +2852,7 @@ answer to that.
 608
 00:26:24,320 --> 00:26:25,970
 MIKE MAHEMOFF: Very much
-an open question, so--
+an open question, so &mdash;
 
 609
 00:26:25,970 --> 00:26:28,234
@@ -2864,12 +2864,12 @@ BRUCE: Can I ask a question?
 
 611
 00:26:28,970 --> 00:26:30,680
-MIKE MAHEMOFF: Yeah, go on--
+MIKE MAHEMOFF: Yeah, go on &mdash;
 one quick question, yeah.
 
 612
 00:26:30,680 --> 00:26:33,850
-BRUCE: About WebP--
+BRUCE: About WebP &mdash;
 
 613
 00:26:33,850 --> 00:26:36,035
@@ -3025,7 +3025,7 @@ make that easier.
 
 647
 00:27:54,890 --> 00:27:55,880
-So you guys actually--
+So you guys actually &mdash;
 
 648
 00:27:55,880 --> 00:27:58,500
@@ -3057,7 +3057,7 @@ with an image CDN.
 
 654
 00:28:09,890 --> 00:28:11,490
-So CDN Connect--
+So CDN Connect &mdash;
 
 655
 00:28:11,490 --> 00:28:14,050
@@ -3084,7 +3084,7 @@ So that's one example.
 
 660
 00:28:21,870 --> 00:28:24,290
-Another example is something--
+Another example is something &mdash;
 so I'm sure you guys have
 
 661
@@ -3245,7 +3245,7 @@ interesting.
 
 694
 00:29:39,930 --> 00:29:41,140
-I actually wanted to ask--
+I actually wanted to ask &mdash;
 
 695
 00:29:41,140 --> 00:29:42,780
@@ -3274,7 +3274,7 @@ which compression level, like
 
 700
 00:29:57,250 --> 00:29:59,960
-2x versus 1x--
+2x versus 1x &mdash;
 
 701
 00:29:59,960 --> 00:30:01,170
@@ -3354,7 +3354,7 @@ No.
 
 718
 00:30:41,830 --> 00:30:42,660
-Part of the reason--
+Part of the reason &mdash;
 
 719
 00:30:42,660 --> 00:30:48,310
@@ -3451,7 +3451,7 @@ a [INAUDIBLE]
 
 739
 00:31:40,950 --> 00:31:42,200
-link for--
+link for &mdash;
 
 740
 00:31:42,200 --> 00:31:45,670
@@ -3460,7 +3460,7 @@ compressed.
 
 741
 00:31:45,670 --> 00:31:47,540
-JASON GRIGSBY: Correct, yes--
+JASON GRIGSBY: Correct, yes &mdash;
 
 742
 00:31:47,540 --> 00:31:50,014
@@ -3554,7 +3554,7 @@ say, notice there's a problem.
 
 761
 00:32:41,320 --> 00:32:42,110
-Open DevTools--
+Open DevTools &mdash;
 
 762
 00:32:42,110 --> 00:32:43,980

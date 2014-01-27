@@ -124,7 +124,7 @@ Don't worry about it.
 
 28
 00:03:03,810 --> 00:03:05,740
-They're just-- it's bed time,
+They're just &mdash; it's bed time,
 and they don't like it.
 
 29
@@ -139,7 +139,7 @@ show you our workflow.
 31
 00:03:09,350 --> 00:03:11,510
 We're going to show you how
-we think you should--
+we think you should &mdash;
 
 32
 00:03:11,510 --> 00:03:14,500
@@ -331,7 +331,7 @@ examples that I've done.
 
 72
 00:04:46,860 --> 00:04:49,230
-Sorry, just--
+Sorry, just &mdash;
 
 73
 00:04:49,230 --> 00:04:51,600
@@ -410,7 +410,7 @@ that you can do.
 
 89
 00:05:26,660 --> 00:05:29,300
-You can set the content--
+You can set the content &mdash;
 
 90
 00:05:29,300 --> 00:05:32,120
@@ -782,7 +782,7 @@ demo for as well,
 
 167
 00:08:37,460 --> 00:08:39,500
-so we can kind of--
+so we can kind of &mdash;
 
 168
 00:08:39,500 --> 00:08:40,270
@@ -870,7 +870,7 @@ array buffer and save it.
 
 186
 00:09:20,890 --> 00:09:21,950
-And the guy can--
+And the guy can &mdash;
 
 187
 00:09:21,950 --> 00:09:22,470
@@ -1016,7 +1016,7 @@ this file system demo,
 
 217
 00:10:41,950 --> 00:10:43,380
-this is the code I recreate--
+this is the code I recreate &mdash;
 
 218
 00:10:43,380 --> 00:10:44,871
@@ -1147,7 +1147,7 @@ the bug in the past, and it's
 
 245
 00:11:48,540 --> 00:11:48,770
-been fixed--
+been fixed &mdash;
 
 246
 00:11:48,770 --> 00:11:50,410
@@ -1479,7 +1479,7 @@ try and download some data and
 315
 00:14:28,035 --> 00:14:30,830
 give it a name, and it just
-doesn't work on the desk-- it
+doesn't work on the desk &mdash; it
 
 316
 00:14:30,830 --> 00:14:32,690
@@ -1806,7 +1806,7 @@ MATT GAUNT: I believe so.
 
 387
 00:17:13,750 --> 00:17:14,180
-This is the--
+This is the &mdash;
 
 388
 00:17:14,180 --> 00:17:14,859
@@ -1961,7 +1961,7 @@ Android device.
 420
 00:18:36,560 --> 00:18:41,280
 It'd be nice to say we
-got video load by--
+got video load by &mdash;
 
 421
 00:18:41,280 --> 00:18:42,830
@@ -1975,7 +1975,7 @@ on there, and then I'm also
 
 423
 00:18:46,410 --> 00:18:51,780
-going to need to go, can I--
+going to need to go, can I &mdash;
 
 424
 00:18:51,780 --> 00:18:53,260
@@ -2005,7 +2005,7 @@ you what my phone is doing.
 
 430
 00:19:08,570 --> 00:19:09,770
-There we--
+There we &mdash;
 
 431
 00:19:09,770 --> 00:19:10,890
@@ -2104,7 +2104,7 @@ mobile device, we should
 452
 00:20:16,240 --> 00:20:19,796
 get to a point where when
-I tap the button--
+I tap the button &mdash;
 
 453
 00:20:19,796 --> 00:20:21,120
@@ -2126,7 +2126,7 @@ And I believe this is what Paul
 
 457
 00:20:27,570 --> 00:20:30,570
-used to actually diagnose--
+used to actually diagnose &mdash;
 
 458
 00:20:30,570 --> 00:20:31,200
@@ -2481,7 +2481,7 @@ audio length.
 
 533
 00:23:25,430 --> 00:23:26,350
-Unfortunately--
+Unfortunately &mdash;
 
 534
 00:23:26,350 --> 00:23:29,030
@@ -2601,7 +2601,7 @@ across to, I
 
 558
 00:24:35,730 --> 00:24:38,196
-think, another question--
+think, another question &mdash;
 
 559
 00:24:38,196 --> 00:24:40,320
@@ -2672,7 +2672,7 @@ person has actually put in.
 
 574
 00:25:15,030 --> 00:25:16,010
-So if I press Play here--
+So if I press Play here &mdash;
 
 575
 00:25:16,010 --> 00:25:17,470
@@ -3301,7 +3301,7 @@ is something else.
 
 709
 00:30:58,850 --> 00:30:59,880
-PAUL KINLAN: At the moment--
+PAUL KINLAN: At the moment &mdash;
 
 710
 00:30:59,880 --> 00:31:03,300
@@ -3321,7 +3321,7 @@ developers.
 713
 00:31:08,700 --> 00:31:12,100
 And we have to make a decision
-like, Chrome for mobile, or--
+like, Chrome for mobile, or &mdash;
 
 714
 00:31:12,100 --> 00:31:13,670
@@ -3455,7 +3455,7 @@ It probably has got some bugs.
 741
 00:32:16,350 --> 00:32:19,720
 And we want to help you work
-around them or work--
+around them or work &mdash;
 
 742
 00:32:19,720 --> 00:32:22,130

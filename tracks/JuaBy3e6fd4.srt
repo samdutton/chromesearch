@@ -551,7 +551,7 @@ I missed some slides.
 
 120
 00:05:00,880 --> 00:05:02,465
-So--
+So &mdash;
 
 121
 00:05:02,465 --> 00:05:04,060
@@ -581,7 +581,7 @@ happening there.
 
 127
 00:05:18,295 --> 00:05:19,545
-Now I've lost--
+Now I've lost &mdash;
 
 128
 00:05:19,545 --> 00:05:25,880
@@ -600,7 +600,7 @@ look up here.
 
 132
 00:05:29,960 --> 00:05:32,490
-Or maybe I can--
+Or maybe I can &mdash;
 
 133
 00:05:32,490 --> 00:05:34,940
@@ -1851,7 +1851,7 @@ KIM CAMERON: Yes.
 
 402
 00:17:24,520 --> 00:17:27,550
-So, we are going to do--
+So, we are going to do &mdash;
 
 403
 00:17:27,550 --> 00:17:27,900
@@ -2034,7 +2034,7 @@ started with this?
 445
 00:19:18,506 --> 00:19:20,970
 AMY UNRUH: So one thing
-that we're doing--
+that we're doing &mdash;
 
 446
 00:19:20,970 --> 00:19:24,510
@@ -3215,7 +3215,7 @@ any problem at all.
 
 699
 00:31:16,770 --> 00:31:18,145
-AUDIENCE: With the same--
+AUDIENCE: With the same &mdash;
 
 700
 00:31:18,145 --> 00:31:19,395
@@ -3850,7 +3850,7 @@ really bad this year.
 
 835
 00:37:06,330 --> 00:37:07,170
-Are you measuring something--
+Are you measuring something &mdash;
 
 836
 00:37:07,170 --> 00:37:09,100
@@ -3950,7 +3950,7 @@ AUDIENCE: HP Sense.
 857
 00:37:49,320 --> 00:37:52,060
 I mean, the Hewlett Packard,
-they have the--
+they have the &mdash;
 
 858
 00:37:52,060 --> 00:37:54,760
@@ -4022,7 +4022,7 @@ It is already public.
 
 873
 00:38:35,690 --> 00:38:37,365
-And if you go to the--
+And if you go to the &mdash;
 
 874
 00:38:37,365 --> 00:38:40,030
@@ -4124,7 +4124,7 @@ they had to do this manually.
 895
 00:39:23,380 --> 00:39:25,850
 So when they'd place a mote,
-they would actually--
+they would actually &mdash;
 
 896
 00:39:25,850 --> 00:39:27,970

@@ -123,7 +123,7 @@ there's a lot of users at our
 
 28
 00:01:09,880 --> 00:01:12,770
-clients-- a lot of our clients
+clients &mdash; a lot of our clients
 have in their teams data
 
 29
@@ -756,8 +756,8 @@ channel report for January.
 
 162
 00:07:14,180 --> 00:07:16,550
-And then in green-- this is
-truncated so it fits--
+And then in green &mdash; this is
+truncated so it fits &mdash;
 
 163
 00:07:16,550 --> 00:07:18,910
@@ -1455,7 +1455,7 @@ Duncan McKie up.
 
 312
 00:14:36,340 --> 00:14:37,490
-Duncan is a senior--
+Duncan is a senior &mdash;
 
 313
 00:14:37,490 --> 00:14:38,740
@@ -1480,7 +1480,7 @@ eBay Classifieds Group.
 
 318
 00:14:48,700 --> 00:14:50,700
-EBay Classified--
+EBay Classified &mdash;
 
 319
 00:14:50,700 --> 00:14:51,680
@@ -3153,7 +3153,7 @@ scientist like Duncan.
 
 678
 00:30:08,340 --> 00:30:09,690
-And this was actually--
+And this was actually &mdash;
 
 679
 00:30:09,690 --> 00:30:11,740
@@ -3353,7 +3353,7 @@ Yeah.
 721
 00:31:51,110 --> 00:31:53,280
 Do you mind taking the
-mike so people--
+mike so people &mdash;
 
 722
 00:31:53,280 --> 00:31:57,850

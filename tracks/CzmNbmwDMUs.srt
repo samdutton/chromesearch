@@ -595,7 +595,7 @@ this URL, open a browser
 
 130
 00:04:56,690 --> 00:05:00,860
-window, hit Enter--
+window, hit Enter &mdash;
 
 131
 00:05:00,860 --> 00:05:02,600
@@ -667,11 +667,11 @@ little app here.
 145
 00:05:35,810 --> 00:05:38,750
 So when I scan my badge
-over the reader--
+over the reader &mdash;
 
 146
 00:05:38,750 --> 00:05:40,000
-with any luck--
+with any luck &mdash;
 
 147
 00:05:40,000 --> 00:05:42,390
@@ -693,12 +693,12 @@ about sending data from any
 151
 00:05:48,430 --> 00:05:52,570
 device, what's really
-cool about this--
+cool about this &mdash;
 
 152
 00:05:52,570 --> 00:05:54,155
 let me just go back to my
-presentation here--
+presentation here &mdash;
 
 153
 00:05:54,155 --> 00:05:59,660
@@ -823,8 +823,8 @@ at the problem, the first
 
 179
 00:06:56,050 --> 00:06:57,920
-question that came to mind-- you
-know, the first thought--
+question that came to mind &mdash; you
+know, the first thought &mdash;
 
 180
 00:06:57,920 --> 00:06:59,480
@@ -1483,7 +1483,7 @@ on his smartphone.
 
 321
 00:12:42,170 --> 00:12:44,890
-And when he signs in-- because
+And when he signs in &mdash; because
 this is actually a signed-in
 
 322
@@ -2065,7 +2065,7 @@ transactions, et cetera.
 447
 00:17:39,430 --> 00:17:41,050
 Now, one of my favorite
-features-- oops.
+features &mdash; oops.
 
 448
 00:17:41,050 --> 00:17:41,630
@@ -2074,7 +2074,7 @@ Let me back up.
 449
 00:17:41,630 --> 00:17:44,470
 One of my favorite features
-about this report--
+about this report &mdash;
 
 450
 00:17:44,470 --> 00:17:45,980
@@ -2330,7 +2330,7 @@ acquisition value of tablet?
 
 504
 00:19:52,860 --> 00:19:55,330
-Or, sorry-- of mobile.
+Or, sorry &mdash; of mobile.
 
 505
 00:19:55,330 --> 00:19:57,140

@@ -116,11 +116,11 @@ see here, you just need to
 
 26
 00:01:28,050 --> 00:01:29,480
-copy this one--
+copy this one &mdash;
 
 27
 00:01:29,480 --> 00:01:31,010
-it's curl--
+it's curl &mdash;
 
 28
 00:01:31,010 --> 00:01:33,860
@@ -167,7 +167,7 @@ is the console.
 
 37
 00:02:05,200 --> 00:02:06,960
-So on the console--
+So on the console &mdash;
 
 38
 00:02:06,960 --> 00:02:11,170
@@ -401,11 +401,11 @@ play with it, so let's say
 
 85
 00:05:02,880 --> 00:05:04,670
-that I want to work with--
+that I want to work with &mdash;
 
 86
 00:05:04,670 --> 00:05:06,480
-I don't know-- the
+I don't know &mdash; the
 calendar API.
 
 87
@@ -549,7 +549,7 @@ I prepared.
 
 116
 00:06:41,310 --> 00:06:42,740
-And here you can see that--
+And here you can see that &mdash;
 
 117
 00:06:42,740 --> 00:06:45,260
@@ -563,11 +563,11 @@ snippet per video.
 119
 00:06:47,750 --> 00:06:50,220
 Then I want the max
-results to be--
+results to be &mdash;
 
 120
 00:06:50,220 --> 00:06:50,870
-I don't know--
+I don't know &mdash;
 
 121
 00:06:50,870 --> 00:06:52,100
@@ -772,7 +772,7 @@ on this nice loop and making
 
 164
 00:09:07,110 --> 00:09:11,960
-sure that the result set-- which
+sure that the result set &mdash; which
 is basically separated
 
 165
@@ -831,7 +831,7 @@ We'll look at it later.
 
 177
 00:09:45,100 --> 00:09:46,620
-So if I'm searching for--
+So if I'm searching for &mdash;
 
 178
 00:09:46,620 --> 00:09:48,330
@@ -1094,7 +1094,7 @@ with set timeout.
 233
 00:12:46,480 --> 00:12:49,500
 After we're doing it, we're
-just going to GAPI--
+just going to GAPI &mdash;
 
 234
 00:12:49,500 --> 00:12:50,610
@@ -1394,7 +1394,7 @@ Google client and giving it a
 
 297
 00:16:10,240 --> 00:16:14,200
-bunch of IDs-- and by the way,
+bunch of IDs &mdash; and by the way,
 the client ID, the developer
 
 298
@@ -1520,7 +1520,7 @@ information.
 324
 00:17:34,640 --> 00:17:38,850
 And as you saw in my case, it
-was-- in the PHP case, it was
+was &mdash; in the PHP case, it was
 
 325
 00:17:38,850 --> 00:17:42,340
@@ -1674,7 +1674,7 @@ any questions, just feel
 357
 00:19:27,950 --> 00:19:34,290
 free to reach me on
-plus.google.com/plusgreenido--
+plus.google.com/plusgreenido &mdash;
 
 358
 00:19:34,290 --> 00:19:35,340

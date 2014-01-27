@@ -280,7 +280,7 @@ questions is also available
 
 61
 00:02:42,290 --> 00:02:43,920
-from the Google Developers--
+from the Google Developers &mdash;
 
 62
 00:02:43,920 --> 00:02:46,500
@@ -470,12 +470,12 @@ tracker for that.
 
 101
 00:04:29,782 --> 00:04:33,950
-OK, the third one here--
+OK, the third one here &mdash;
 "display of data in a UI." And
 
 102
 00:04:33,950 --> 00:04:34,750
-I'm assuming--
+I'm assuming &mdash;
 
 103
 00:04:34,750 --> 00:04:37,560
@@ -523,7 +523,7 @@ you're talking about.
 
 112
 00:05:00,810 --> 00:05:02,060
-It's the kind of--
+It's the kind of &mdash;
 
 113
 00:05:02,060 --> 00:05:04,720
@@ -559,7 +559,7 @@ in the center that
 
 120
 00:05:18,310 --> 00:05:19,830
-would pull in the--
+would pull in the &mdash;
 
 121
 00:05:19,830 --> 00:05:22,320
@@ -771,7 +771,7 @@ there, you can type into the
 
 165
 00:07:32,710 --> 00:07:35,850
-chat window if you--
+chat window if you &mdash;
 
 166
 00:07:35,850 --> 00:07:36,340
@@ -892,12 +892,12 @@ OK.
 
 193
 00:08:48,410 --> 00:08:50,010
-Well, our usual--
+Well, our usual &mdash;
 oh, here we go.
 
 194
 00:08:50,010 --> 00:08:52,040
-We have--
+We have &mdash;
 
 195
 00:08:52,040 --> 00:08:56,870
@@ -1037,7 +1037,7 @@ a web service, basically?
 225
 00:10:27,510 --> 00:10:29,876
 And for those of you who
-aren't familiar with--
+aren't familiar with &mdash;
 
 226
 00:10:29,876 --> 00:10:32,980
@@ -1046,7 +1046,7 @@ content service, it allows you
 
 227
 00:10:32,980 --> 00:10:37,350
-to serve up text formatted--
+to serve up text formatted &mdash;
 
 228
 00:10:37,350 --> 00:10:40,690
@@ -1074,7 +1074,7 @@ to have it accessing data of
 
 233
 00:10:59,320 --> 00:11:04,030
-some-- maybe Twitter's API or
+some &mdash; maybe Twitter's API or
 something like that, we don't
 
 234
@@ -1199,7 +1199,7 @@ Office Hours today.
 
 262
 00:12:11,700 --> 00:12:12,510
-I won't--
+I won't &mdash;
 
 263
 00:12:12,510 --> 00:12:14,320
@@ -1322,7 +1322,7 @@ issue that you had.
 289
 00:13:16,300 --> 00:13:17,820
 Because yes, it's obviously
-a better--
+a better &mdash;
 
 290
 00:13:17,820 --> 00:13:18,580
@@ -1404,7 +1404,7 @@ MALE SPEAKER: OK.
 
 307
 00:13:56,670 --> 00:13:58,280
-Or do you want me to--
+Or do you want me to &mdash;
 
 308
 00:13:58,280 --> 00:14:01,690
@@ -1473,7 +1473,7 @@ happening with that.
 322
 00:14:37,320 --> 00:14:39,370
 I saw in the issue tracker,
-I just wondered is there--
+I just wondered is there &mdash;
 
 323
 00:14:39,370 --> 00:14:44,880
@@ -1484,7 +1484,7 @@ is it [AUDIO LOST]
 
 325
 00:14:46,710 --> 00:14:49,640
-or is it just sort of thing--
+or is it just sort of thing &mdash;
 
 326
 00:14:49,640 --> 00:14:52,620
@@ -1544,7 +1544,7 @@ sort of connection issue.
 
 338
 00:15:27,640 --> 00:15:29,181
-Do you have any--
+Do you have any &mdash;
 
 339
 00:15:29,181 --> 00:15:30,600
@@ -1558,7 +1558,7 @@ So yes.
 341
 00:15:31,240 --> 00:15:32,966
 MALE SPEAKER: Yeah,
-any updates or--
+any updates or &mdash;
 
 342
 00:15:32,966 --> 00:15:33,840
@@ -1634,7 +1634,7 @@ one out right now.
 
 358
 00:16:13,560 --> 00:16:15,100
-It seems to be--
+It seems to be &mdash;
 
 359
 00:16:15,100 --> 00:16:18,760
@@ -1657,7 +1657,7 @@ in certain cases.
 363
 00:16:24,960 --> 00:16:26,570
 And we're working
-really hard to--
+really hard to &mdash;
 
 364
 00:16:26,570 --> 00:16:27,980

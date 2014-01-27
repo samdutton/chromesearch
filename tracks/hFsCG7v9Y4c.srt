@@ -221,7 +221,7 @@ vocal sample.
 
 48
 00:02:02,030 --> 00:02:04,290
-Something like this--
+Something like this &mdash;
 
 49
 00:02:04,290 --> 00:02:07,650
@@ -267,7 +267,7 @@ a synthesized sound.
 
 58
 00:02:25,670 --> 00:02:26,868
-Something like this--
+Something like this &mdash;
 
 59
 00:02:26,868 --> 00:02:28,540
@@ -304,7 +304,7 @@ frequency characteristics onto
 66
 00:02:40,580 --> 00:02:43,406
 that sound, it ends up sounding
-kind of like this--
+kind of like this &mdash;
 
 67
 00:02:43,406 --> 00:02:43,638
@@ -383,7 +383,7 @@ used to produce it.
 
 83
 00:03:18,310 --> 00:03:20,110
-So if I grab and--
+So if I grab and &mdash;
 
 84
 00:03:20,110 --> 00:03:25,351
@@ -503,12 +503,12 @@ audio element.
 109
 00:04:29,790 --> 00:04:32,220
 Because it wraps everything
-about audio--
+about audio &mdash;
 
 110
 00:04:32,220 --> 00:04:35,490
 loading, decoding, and playing
-audio-- all up into one easy,
+audio &mdash; all up into one easy,
 
 111
 00:04:35,490 --> 00:04:36,770
@@ -538,7 +538,7 @@ you're good to go.
 
 117
 00:04:44,380 --> 00:04:45,455
-Like I can--
+Like I can &mdash;
 
 118
 00:04:45,455 --> 00:04:47,520
@@ -581,12 +581,12 @@ scrubbing of the sound.
 
 127
 00:04:58,660 --> 00:05:00,132
-So I can--
+So I can &mdash;
 
 128
 00:05:00,132 --> 00:05:02,460
 if I stop hitting my
-right button--
+right button &mdash;
 
 129
 00:05:02,460 --> 00:05:03,300
@@ -738,7 +738,7 @@ fly, as well.
 160
 00:06:19,150 --> 00:06:22,790
 So it's really pretty easy
-to build something like--
+to build something like &mdash;
 
 161
 00:06:22,790 --> 00:06:24,470
@@ -785,7 +785,7 @@ high-level API.
 170
 00:06:43,060 --> 00:06:47,820
 It's really pretty easy to do
-basic tasks in the API, like--
+basic tasks in the API, like &mdash;
 
 171
 00:06:47,820 --> 00:06:49,150
@@ -983,7 +983,7 @@ major scenarios that we're
 
 212
 00:08:45,610 --> 00:08:47,020
-super interested in--
+super interested in &mdash;
 
 213
 00:08:47,020 --> 00:08:50,220
@@ -1050,7 +1050,7 @@ radio or over a telephone.
 226
 00:09:25,920 --> 00:09:28,400
 So I can take that same
-sample I did earlier--
+sample I did earlier &mdash;
 
 227
 00:09:28,400 --> 00:09:29,770
@@ -1251,7 +1251,7 @@ really simple.
 
 270
 00:11:18,800 --> 00:11:20,260
-It just had two nodes--
+It just had two nodes &mdash;
 
 271
 00:11:20,260 --> 00:11:22,500
@@ -1334,7 +1334,7 @@ running two copies at the same
 288
 00:12:03,020 --> 00:12:05,810
 time, I was wondering why I
-got a weird effect, but--
+got a weird effect, but &mdash;
 
 289
 00:12:05,810 --> 00:12:08,310
@@ -1852,7 +1852,7 @@ thing to do, but
 
 399
 00:16:49,340 --> 00:16:50,326
-actually this is how--
+actually this is how &mdash;
 
 400
 00:16:50,326 --> 00:16:52,310
@@ -1943,7 +1943,7 @@ It's an audio file.
 
 419
 00:17:40,860 --> 00:17:41,950
-It's probably not--
+It's probably not &mdash;
 
 420
 00:17:41,950 --> 00:17:44,410
@@ -2010,7 +2010,7 @@ AudioBufferSourceNode.
 433
 00:18:23,010 --> 00:18:26,480
 An AudioBufferSourceNode is a
-node that we wrap around--
+node that we wrap around &mdash;
 
 434
 00:18:26,480 --> 00:18:30,390
@@ -2179,7 +2179,7 @@ what we just loaded, connects
 
 469
 00:19:55,300 --> 00:19:56,300
-it to the speaker--
+it to the speaker &mdash;
 
 470
 00:19:56,300 --> 00:19:58,230
@@ -2189,7 +2189,7 @@ connect everything to the
 471
 00:19:58,230 --> 00:20:00,540
 speakers or we don't
-hear anything--
+hear anything &mdash;
 
 472
 00:20:00,540 --> 00:20:02,810
@@ -2198,7 +2198,7 @@ to start it.
 
 473
 00:20:02,810 --> 00:20:04,140
-And I can--
+And I can &mdash;
 
 474
 00:20:04,140 --> 00:20:05,120
@@ -2229,7 +2229,7 @@ hand, it would be loop.
 
 480
 00:20:14,650 --> 00:20:15,490
-Because she barks--
+Because she barks &mdash;
 
 481
 00:20:15,490 --> 00:20:17,990
@@ -2924,7 +2924,7 @@ automatically mix together.
 
 629
 00:26:43,010 --> 00:26:45,330
-So if I have my dog barking--
+So if I have my dog barking &mdash;
 
 630
 00:26:45,330 --> 00:26:46,226
@@ -2950,7 +2950,7 @@ and call noteOn
 
 635
 00:26:52,530 --> 00:26:53,570
-on at the same time--
+on at the same time &mdash;
 
 636
 00:26:53,570 --> 00:26:54,950
@@ -3019,7 +3019,7 @@ special node to do that.
 
 650
 00:27:28,970 --> 00:27:35,370
-Now, I also want to point out--
+Now, I also want to point out &mdash;
 remember I said that all
 
 651
@@ -3112,11 +3112,11 @@ resolution.
 
 670
 00:28:25,890 --> 00:28:27,870
-Now my next node type--
+Now my next node type &mdash;
 
 671
 00:28:27,870 --> 00:28:29,520
-it's also relatively basic--
+it's also relatively basic &mdash;
 
 672
 00:28:29,520 --> 00:28:30,770
@@ -3145,7 +3145,7 @@ node and hook it up.
 
 678
 00:28:49,440 --> 00:28:50,700
-And I'll hit play--
+And I'll hit play &mdash;
 
 679
 00:28:50,700 --> 00:28:52,330
@@ -3368,7 +3368,7 @@ makes it happen.
 
 726
 00:30:56,310 --> 00:30:57,293
-So--
+So &mdash;
 
 727
 00:30:57,293 --> 00:30:57,615
@@ -3488,7 +3488,7 @@ this talk, to introduce a
 754
 00:32:01,170 --> 00:32:03,470
 really, really good
-friend of mine--
+friend of mine &mdash;
 
 755
 00:32:03,470 --> 00:32:05,290
@@ -3560,7 +3560,7 @@ Like this.
 
 770
 00:32:40,760 --> 00:32:42,290
-So all that this does--
+So all that this does &mdash;
 
 771
 00:32:42,290 --> 00:32:47,260
@@ -3942,7 +3942,7 @@ would have figured out how to
 851
 00:36:23,060 --> 00:36:27,340
 pre-load these in
-my app, but--
+my app, but &mdash;
 
 852
 00:36:27,340 --> 00:36:27,830
@@ -3979,7 +3979,7 @@ and after analyser here.
 859
 00:36:40,910 --> 00:36:43,040
 And if I play with
-the frequency--
+the frequency &mdash;
 
 860
 00:36:43,040 --> 00:36:46,040
@@ -4032,7 +4032,7 @@ of these kinds of things.
 871
 00:37:10,870 --> 00:37:13,600
 Now it's turning into
-a UI problem--
+a UI problem &mdash;
 
 872
 00:37:13,600 --> 00:37:16,570
@@ -4186,7 +4186,7 @@ something like that.
 904
 00:38:45,490 --> 00:38:47,660
 You can take the original
-sound, here--
+sound, here &mdash;
 
 905
 00:38:47,660 --> 00:38:49,390
@@ -4214,7 +4214,7 @@ frequencies.
 910
 00:38:57,850 --> 00:39:01,130
 It turns out a telephone sound
-is really just-- the old
+is really just &mdash; the old
 
 911
 00:39:01,130 --> 00:39:04,140
@@ -4275,7 +4275,7 @@ improve on that a whole lot,
 923
 00:39:30,940 --> 00:39:32,760
 so I was just going to show
-the demo for it--
+the demo for it &mdash;
 
 924
 00:39:32,760 --> 00:39:34,250
@@ -4289,7 +4289,7 @@ it a little bit.
 926
 00:39:35,600 --> 00:39:39,420
 And you'll see as we
-move around here--
+move around here &mdash;
 
 927
 00:39:39,420 --> 00:39:46,320
@@ -4384,7 +4384,7 @@ left or right.
 946
 00:40:31,980 --> 00:40:33,435
 And you end up with something
-like this--
+like this &mdash;
 
 947
 00:40:33,435 --> 00:40:34,685
@@ -4429,7 +4429,7 @@ velocity of an object.
 956
 00:41:01,480 --> 00:41:03,175
 So that you get these
-sounds where--
+sounds where &mdash;
 
 957
 00:41:03,175 --> 00:41:05,730
@@ -4594,7 +4594,7 @@ visual representation of that.
 992
 00:42:33,220 --> 00:42:38,040
 So with that, I want to jump
-to another fun node--
+to another fun node &mdash;
 
 993
 00:42:38,040 --> 00:42:39,290
@@ -4828,7 +4828,7 @@ ConvolverNode, but also
 
 1042
 00:44:54,210 --> 00:44:55,700
-connected it to the speakers--
+connected it to the speakers &mdash;
 
 1043
 00:44:55,700 --> 00:44:56,920
@@ -4850,7 +4850,7 @@ is.
 
 1047
 00:45:03,780 --> 00:45:05,120
-So I can change it to a hall--
+So I can change it to a hall &mdash;
 
 1048
 00:45:05,120 --> 00:45:08,410
@@ -5024,7 +5024,7 @@ which is why use it.
 
 1086
 00:46:31,980 --> 00:46:32,460
-But--
+But &mdash;
 
 1087
 00:46:32,460 --> 00:46:32,940
@@ -5042,7 +5042,7 @@ around with.
 
 1090
 00:46:39,390 --> 00:46:40,180
-It's actually--
+It's actually &mdash;
 
 1091
 00:46:40,180 --> 00:46:42,690
@@ -5065,7 +5065,7 @@ has no UI at all.
 
 1095
 00:46:52,060 --> 00:46:55,250
-And it's really easy-- like the
+And it's really easy &mdash; like the
 actual sound production.
 
 1096
@@ -5105,12 +5105,12 @@ AudioParams, as well.
 1103
 00:47:17,820 --> 00:47:20,840
 For those of you who are synth
-geeks, like me-- because I've
+geeks, like me &mdash; because I've
 
 1104
 00:47:20,840 --> 00:47:24,960
 loved synthesizers since
-I was about 12--
+I was about 12 &mdash;
 
 1105
 00:47:24,960 --> 00:47:27,060
@@ -5323,7 +5323,7 @@ early '90s for a while.
 1150
 00:49:10,910 --> 00:49:16,530
 It's actually a way to produce
-sound that uses--
+sound that uses &mdash;
 
 1151
 00:49:16,530 --> 00:49:18,311
@@ -5397,7 +5397,7 @@ sound or anything.
 
 1167
 00:49:53,756 --> 00:49:55,930
-But I can draw in more--
+But I can draw in more &mdash;
 
 1168
 00:49:55,930 --> 00:49:59,080
@@ -5607,7 +5607,7 @@ reaction time.
 1213
 00:51:51,740 --> 00:51:55,718
 You can actually see
-how this works--
+how this works &mdash;
 
 1214
 00:51:55,718 --> 00:51:57,150
@@ -5723,7 +5723,7 @@ the attack time, and you'll
 
 1238
 00:52:53,210 --> 00:52:54,715
-start hearing some of the--
+start hearing some of the &mdash;
 
 1239
 00:52:54,715 --> 00:52:56,110
@@ -5851,7 +5851,7 @@ little bit more to push up
 1265
 00:54:06,625 --> 00:54:09,300
 into the areas that
-get clipped off--
+get clipped off &mdash;
 
 1266
 00:54:09,300 --> 00:54:11,505
@@ -5869,7 +5869,7 @@ over-driving an amplifier.
 
 1269
 00:54:17,160 --> 00:54:18,440
-And this is just a--
+And this is just a &mdash;
 
 1270
 00:54:18,440 --> 00:54:19,060
@@ -6004,7 +6004,7 @@ right channels.
 1298
 00:55:29,070 --> 00:55:31,853
 So it sounds kind
-of like this--
+of like this &mdash;
 
 1299
 00:55:31,853 --> 00:55:34,110

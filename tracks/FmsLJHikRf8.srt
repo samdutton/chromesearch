@@ -93,7 +93,7 @@ Chrome Developer relations
 21
 00:00:47,760 --> 00:00:53,022
 team, and really excited about
-a lot of the tools that--
+a lot of the tools that &mdash;
 
 22
 00:00:53,022 --> 00:00:56,460
@@ -504,7 +504,7 @@ Or what were the headers?
 
 109
 00:04:08,940 --> 00:04:09,590
-And I'm like, well--
+And I'm like, well &mdash;
 
 110
 00:04:09,590 --> 00:04:10,140
@@ -644,7 +644,7 @@ how does this thing look.
 
 139
 00:05:15,560 --> 00:05:16,620
-So what I was doing--
+So what I was doing &mdash;
 
 140
 00:05:16,620 --> 00:05:17,840
@@ -662,11 +662,11 @@ to create and
 
 143
 00:05:20,470 --> 00:05:21,510
-consume, which is actually--
+consume, which is actually &mdash;
 
 144
 00:05:21,510 --> 00:05:24,215
-we'll see later-- is very,
+we'll see later &mdash; is very,
 very important.
 
 145
@@ -927,7 +927,7 @@ about 100,000 sites right now
 
 199
 00:07:39,710 --> 00:07:43,300
-based on the-- it elects the
+based on the &mdash; it elects the
 top, I guess, 100,000.
 
 200
@@ -1018,7 +1018,7 @@ aggregated between all
 
 219
 00:08:33,820 --> 00:08:34,760
-the different runs--
+the different runs &mdash;
 
 220
 00:08:34,760 --> 00:08:35,530
@@ -1053,7 +1053,7 @@ them together to
 
 227
 00:08:44,560 --> 00:08:46,760
-create these formats--
+create these formats &mdash;
 
 228
 00:08:46,760 --> 00:08:49,990
@@ -1102,7 +1102,7 @@ network waterfall here.
 237
 00:09:14,480 --> 00:09:16,270
 PETER LUBBERS: So once
-you get that--
+you get that &mdash;
 
 238
 00:09:16,270 --> 00:09:19,130
@@ -1252,7 +1252,7 @@ pieces that you want.
 
 270
 00:10:29,590 --> 00:10:32,520
-You want to see a specific--
+You want to see a specific &mdash;
 
 271
 00:10:32,520 --> 00:10:36,470
@@ -1350,7 +1350,7 @@ JSON file which is very
 
 291
 00:11:19,030 --> 00:11:19,700
-useful, but--
+useful, but &mdash;
 
 292
 00:11:19,700 --> 00:11:20,680
@@ -1404,7 +1404,7 @@ It's an open source project.
 303
 00:11:43,930 --> 00:11:46,290
 You can just open
-it up on the--
+it up on the &mdash;
 
 304
 00:11:46,290 --> 00:11:47,900
@@ -1441,7 +1441,7 @@ preopened here.
 
 311
 00:11:57,360 --> 00:11:59,600
-So this is--
+So this is &mdash;
 
 312
 00:11:59,600 --> 00:12:01,800
@@ -1458,7 +1458,7 @@ HAR information stuff?
 
 315
 00:12:04,740 --> 00:12:05,560
-You could obviously--
+You could obviously &mdash;
 
 316
 00:12:05,560 --> 00:12:07,710
@@ -1522,7 +1522,7 @@ And look at this.
 
 329
 00:12:26,370 --> 00:12:28,190
-Now, I have--
+Now, I have &mdash;
 
 330
 00:12:28,190 --> 00:12:30,340
@@ -1598,7 +1598,7 @@ the time spent.
 345
 00:13:06,630 --> 00:13:09,460
 You can see that within this
-session, we fetched--
+session, we fetched &mdash;
 
 346
 00:13:09,460 --> 00:13:11,690
@@ -1637,7 +1637,7 @@ Chrome Developer Tools, one
 353
 00:13:30,520 --> 00:13:35,980
 really cool thing that
-I particularly like--
+I particularly like &mdash;
 
 354
 00:13:35,980 --> 00:13:38,340
@@ -1673,7 +1673,7 @@ out all of the previous
 361
 00:13:53,370 --> 00:13:56,200
 information, and it's got the
-new-- and that's typically
+new &mdash; and that's typically
 
 362
 00:13:56,200 --> 00:13:57,580
@@ -1682,7 +1682,7 @@ what you want.
 363
 00:13:57,580 --> 00:14:00,570
 But now if you want to
-actually track--
+actually track &mdash;
 
 364
 00:14:00,570 --> 00:14:05,020
@@ -1833,7 +1833,7 @@ So this is probably like
 
 396
 00:15:09,580 --> 00:15:10,610
-And go to the--
+And go to the &mdash;
 
 397
 00:15:10,610 --> 00:15:11,720
@@ -2015,7 +2015,7 @@ other tools.
 
 436
 00:16:40,970 --> 00:16:43,840
-And one of the nice things--
+And one of the nice things &mdash;
 it's not an actual official
 
 437
@@ -2246,7 +2246,7 @@ awesome, because this is
 
 485
 00:18:46,960 --> 00:18:47,740
-actually just a--
+actually just a &mdash;
 
 486
 00:18:47,740 --> 00:18:50,930
@@ -2408,7 +2408,7 @@ I can't click on
 
 521
 00:19:55,330 --> 00:19:56,630
-it right now, but--
+it right now, but &mdash;
 
 522
 00:19:56,630 --> 00:19:58,430
@@ -2454,7 +2454,7 @@ bit problematic.
 
 531
 00:20:18,800 --> 00:20:20,120
-You're going to see--
+You're going to see &mdash;
 
 532
 00:20:20,120 --> 00:20:22,010
@@ -2473,7 +2473,7 @@ getting an army of monkeys,
 
 535
 00:20:32,200 --> 00:20:34,310
-the other way to do it is--
+the other way to do it is &mdash;
 
 536
 00:20:34,310 --> 00:20:36,300
@@ -2514,7 +2514,7 @@ browser.
 
 544
 00:20:51,740 --> 00:20:54,180
-And the cool thing about it--
+And the cool thing about it &mdash;
 well, there's so many cool
 
 545
@@ -2591,7 +2591,7 @@ I just have it sitting here.
 561
 00:21:21,220 --> 00:21:27,790
 Now I can do "bin phantom,"
-and if you look at this--
+and if you look at this &mdash;
 
 562
 00:21:27,790 --> 00:21:30,480
@@ -2723,7 +2723,7 @@ captured all the network data.
 
 590
 00:22:38,500 --> 00:22:39,780
-Now imagine if you take--
+Now imagine if you take &mdash;
 
 591
 00:22:39,780 --> 00:22:40,830
@@ -2741,7 +2741,7 @@ and you have your CI build
 
 594
 00:22:45,930 --> 00:22:46,880
-running on your--
+running on your &mdash;
 
 595
 00:22:46,880 --> 00:22:47,930
@@ -2814,7 +2814,7 @@ that you'll love.
 610
 00:23:23,520 --> 00:23:27,190
 So if you guys use Node,
-there's actually--
+there's actually &mdash;
 
 611
 00:23:27,190 --> 00:23:29,590
@@ -2841,7 +2841,7 @@ going to get.
 
 616
 00:23:37,630 --> 00:23:39,240
-Let me just--
+Let me just &mdash;
 
 617
 00:23:39,240 --> 00:23:43,830
@@ -2896,7 +2896,7 @@ do is we're just
 
 628
 00:24:02,510 --> 00:24:04,000
-going to print out--
+going to print out &mdash;
 
 629
 00:24:04,000 --> 00:24:06,760
@@ -3040,7 +3040,7 @@ actually have
 
 659
 00:25:15,900 --> 00:25:16,260
-to print this out--
+to print this out &mdash;
 
 660
 00:25:16,260 --> 00:25:16,750
@@ -3078,7 +3078,7 @@ I can run this and raise an
 
 667
 00:25:36,750 --> 00:25:38,755
-alarm if all of a sudden--
+alarm if all of a sudden &mdash;
 
 668
 00:25:38,755 --> 00:25:39,010
@@ -3133,7 +3133,7 @@ bit more work.
 679
 00:26:03,750 --> 00:26:05,940
 But if you go to the PageSpeed
-site-- so I'm just looking at
+site &mdash; so I'm just looking at
 
 680
 00:26:05,940 --> 00:26:07,090
@@ -3155,7 +3155,7 @@ you'll actually get this
 
 684
 00:26:13,000 --> 00:26:14,440
-binary called--
+binary called &mdash;
 
 685
 00:26:14,440 --> 00:26:15,010
@@ -3333,7 +3333,7 @@ visualize the same data.
 722
 00:27:44,520 --> 00:27:47,720
 And we saw a whole number of
-different rules-- or tools,
+different rules &mdash; or tools,
 
 723
 00:27:47,720 --> 00:27:50,080
@@ -3398,7 +3398,7 @@ HAR files, and you have
 
 736
 00:28:21,920 --> 00:28:24,380
-them on disk, there is this--
+them on disk, there is this &mdash;
 
 737
 00:28:24,380 --> 00:28:28,100
@@ -3596,7 +3596,7 @@ different tools out there.
 
 779
 00:30:12,670 --> 00:30:15,560
-And speaking of tools-- so now
+And speaking of tools &mdash; so now
 let's take this use case.
 
 780
@@ -3657,7 +3657,7 @@ time or total size.
 
 792
 00:30:51,150 --> 00:30:53,190
-So we actually have--
+So we actually have &mdash;
 as you can see here,
 
 793
@@ -3672,7 +3672,7 @@ on the weekend.
 795
 00:30:56,570 --> 00:30:59,830
 And between these three
-different runs-- so the yellow
+different runs &mdash; so the yellow
 
 796
 00:30:59,830 --> 00:31:01,470
@@ -3728,7 +3728,7 @@ time get worse?
 
 807
 00:31:29,290 --> 00:31:30,590
-And then you can also---
+And then you can also- &mdash;
 
 808
 00:31:30,590 --> 00:31:35,020
@@ -3771,7 +3771,7 @@ embeds PageSpeed scoring.
 816
 00:31:56,870 --> 00:31:58,860
 So it says, well,
-for this page--
+for this page &mdash;
 
 817
 00:31:58,860 --> 00:32:00,820
@@ -3828,7 +3828,7 @@ And all of a sudden, you have a
 
 829
 00:32:25,740 --> 00:32:26,970
-performance monitoring solution--
+performance monitoring solution &mdash;
 
 830
 00:32:26,970 --> 00:32:27,980
@@ -3852,7 +3852,7 @@ HAR storage Wiki.
 834
 00:32:36,980 --> 00:32:40,400
 I uploaded the file manually,
-but you can just--
+but you can just &mdash;
 
 835
 00:32:40,400 --> 00:32:42,710
@@ -3914,7 +3914,7 @@ these tools to set that up?
 848
 00:33:10,940 --> 00:33:11,630
 ILYA GRIGORIK: So I
-actually made--
+actually made &mdash;
 
 849
 00:33:11,630 --> 00:33:12,940
@@ -3950,7 +3950,7 @@ same network panel plus all of
 
 856
 00:33:27,320 --> 00:33:27,850
-the other--
+the other &mdash;
 
 857
 00:33:27,850 --> 00:33:29,740
@@ -3973,7 +3973,7 @@ those of you attending, we did
 
 861
 00:33:39,970 --> 00:33:43,990
-do a show on-- the Chrome Mobile
+do a show on &mdash; the Chrome Mobile
 show just last week on
 
 862
@@ -4081,7 +4081,7 @@ laptop, and we actually start
 884
 00:34:30,690 --> 00:34:35,500
 a Wi-Fi hotspot on it,
-so it becomes--
+so it becomes &mdash;
 
 885
 00:34:35,500 --> 00:34:37,350
@@ -4169,7 +4169,7 @@ what you get out of it is a
 903
 00:35:17,110 --> 00:35:20,720
 PCAP file, which is just
-a very low-level--
+a very low-level &mdash;
 
 904
 00:35:20,720 --> 00:35:24,030
@@ -4234,7 +4234,7 @@ IP packets and basically
 
 917
 00:35:57,800 --> 00:35:58,780
-reconstruct--
+reconstruct &mdash;
 
 918
 00:35:58,780 --> 00:36:02,230
@@ -4350,7 +4350,7 @@ support remote debugging.
 942
 00:36:58,050 --> 00:36:59,490
 PETER LUBBERS: Can you
-grab the HAR--
+grab the HAR &mdash;
 
 943
 00:36:59,490 --> 00:37:02,110
@@ -4377,7 +4377,7 @@ PETER LUBBERS: Full circle.
 
 948
 00:37:10,980 --> 00:37:12,870
-ILYA GRIGORIK: So this tool--
+ILYA GRIGORIK: So this tool &mdash;
 
 949
 00:37:12,870 --> 00:37:14,600
@@ -4419,7 +4419,7 @@ is key.
 
 957
 00:37:29,240 --> 00:37:32,690
-So having tools like-- combining
+So having tools like &mdash; combining
 tools like HAR
 
 958
@@ -4571,7 +4571,7 @@ a note of it on here.
 989
 00:38:52,090 --> 00:38:54,510
 Let's take a look if there's
-any questions on the--
+any questions on the &mdash;
 
 990
 00:38:54,510 --> 00:38:56,860
@@ -4628,7 +4628,7 @@ cool if, for example, HTTP
 1001
 00:39:24,380 --> 00:39:26,900
 Archive actually stored
-the bodies--
+the bodies &mdash;
 
 1002
 00:39:26,900 --> 00:39:30,070
@@ -4715,7 +4715,7 @@ file, the raw JSON.
 1020
 00:40:05,680 --> 00:40:08,410
 It's up to you if you want to
-store it, to archive it-- or,
+store it, to archive it &mdash; or,
 
 1021
 00:40:08,410 --> 00:40:10,600
@@ -4739,7 +4739,7 @@ cache?" Interesting.
 1025
 00:40:19,060 --> 00:40:22,270
 ILYA GRIGORIK: Actually, if
-you capture the-- if you
+you capture the &mdash; if you
 
 1026
 00:40:22,270 --> 00:40:23,780
@@ -4774,7 +4774,7 @@ the exported HAR data.
 
 1033
 00:40:38,240 --> 00:40:41,390
-And the reason they-- usually
+And the reason they &mdash; usually
 the quick way to spot it is
 
 1034
@@ -4977,7 +4977,7 @@ tools, there's so much support
 1077
 00:42:34,450 --> 00:42:37,570
 for it that this is really the
-way to go for all of this--
+way to go for all of this &mdash;
 
 1078
 00:42:37,570 --> 00:42:38,760

@@ -111,7 +111,7 @@ themselves.
 25
 00:00:53,390 --> 00:00:54,700
 PAVEL FELDMAN: I'm Peter
-Beverl-- oh no.
+Beverl &mdash; oh no.
 
 26
 00:00:54,700 --> 00:00:55,810
@@ -839,7 +839,7 @@ the hardware
 
 182
 00:07:56,040 --> 00:07:58,130
-dependency or adding--
+dependency or adding &mdash;
 
 183
 00:07:58,130 --> 00:08:01,370
@@ -848,7 +848,7 @@ ideas because I haven't
 
 184
 00:08:01,370 --> 00:08:02,810
-actually thought about that--
+actually thought about that &mdash;
 
 185
 00:08:02,810 --> 00:08:08,510
@@ -1044,7 +1044,7 @@ simulator, what was it called,
 
 226
 00:09:50,010 --> 00:09:51,440
-R2-- it was a terrible name.
+R2 &mdash; it was a terrible name.
 
 227
 00:09:51,440 --> 00:09:56,250
@@ -1521,7 +1521,7 @@ We need them in IEs.
 328
 00:14:05,640 --> 00:14:07,525
 YEHUDA KATZ: So a couple
-of examples--
+of examples &mdash;
 
 329
 00:14:07,525 --> 00:14:12,410
@@ -1618,7 +1618,7 @@ like this that, I mean, I
 348
 00:14:55,750 --> 00:14:58,150
 wonder how the Chrome
-team is--
+team is &mdash;
 
 349
 00:14:58,150 --> 00:15:00,650
@@ -1918,7 +1918,7 @@ a simple example.
 
 411
 00:17:55,060 --> 00:17:56,190
-If you are writing--
+If you are writing &mdash;
 
 412
 00:17:56,190 --> 00:17:58,020
@@ -2557,7 +2557,7 @@ final reply on this then we'll
 
 545
 00:23:41,530 --> 00:23:42,350
-move on to--
+move on to &mdash;
 
 546
 00:23:42,350 --> 00:23:44,350
@@ -2831,7 +2831,7 @@ On mobile like, oh, we're using
 
 604
 00:26:18,910 --> 00:26:22,230
-this Firefox 900 Android--
+this Firefox 900 Android &mdash;
 
 605
 00:26:22,230 --> 00:26:23,766
@@ -3117,7 +3117,7 @@ And we'll make that.
 665
 00:28:43,300 --> 00:28:45,180
 So imagine you're running
-your app--
+your app &mdash;
 
 666
 00:28:45,180 --> 00:28:46,690
@@ -3392,7 +3392,7 @@ web is getting faster.
 
 723
 00:31:32,670 --> 00:31:33,350
-It's like something--
+It's like something &mdash;
 
 724
 00:31:33,350 --> 00:31:33,770

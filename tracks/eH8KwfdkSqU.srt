@@ -361,7 +361,7 @@ beautiful overlay that gives
 80
 00:04:01,920 --> 00:04:04,390
 me the key information
-I need--
+I need &mdash;
 
 81
 00:04:04,390 --> 00:04:07,890
@@ -919,8 +919,8 @@ telling them if their flight
 
 204
 00:09:35,990 --> 00:09:41,670
-is on-time, delayed, or--
-hopefully not-- canceled.
+is on-time, delayed, or &mdash;
+hopefully not &mdash; canceled.
 
 205
 00:09:41,670 --> 00:09:43,470
@@ -1376,7 +1376,7 @@ we have an event.
 304
 00:14:33,980 --> 00:14:36,850
 And then what properties
-the event has--
+the event has &mdash;
 
 305
 00:14:36,850 --> 00:14:40,700
@@ -1636,12 +1636,12 @@ real example.
 
 360
 00:17:18,660 --> 00:17:21,069
-The first type of action--
+The first type of action &mdash;
 
 361
 00:17:21,069 --> 00:17:23,220
 I'm going to show you
-the markup for--
+the markup for &mdash;
 
 362
 00:17:23,220 --> 00:17:24,430
@@ -1700,7 +1700,7 @@ will see some
 
 374
 00:17:56,780 --> 00:17:58,070
-information about the movie--
+information about the movie &mdash;
 
 375
 00:17:58,070 --> 00:18:01,650
@@ -1791,12 +1791,12 @@ in the background, you will
 
 393
 00:18:45,740 --> 00:18:47,250
-have to handle the request--
+have to handle the request &mdash;
 
 394
 00:18:47,250 --> 00:18:50,760
 in this case, add the
-movie to the queue--
+movie to the queue &mdash;
 
 395
 00:18:50,760 --> 00:18:54,440
@@ -1815,12 +1815,12 @@ as successfully executed.
 
 398
 00:19:02,720 --> 00:19:04,310
-If there is an error--
+If there is an error &mdash;
 for instance,
 
 399
 00:19:04,310 --> 00:19:07,410
-the request is invalid--
+the request is invalid &mdash;
 
 400
 00:19:07,410 --> 00:19:08,550
@@ -1837,7 +1837,7 @@ You know about that.
 403
 00:19:12,030 --> 00:19:13,630
 So this is the common
-structure--
+structure &mdash;
 
 404
 00:19:13,630 --> 00:19:17,360
@@ -1952,7 +1952,7 @@ this is going to be super easy
 
 427
 00:20:27,590 --> 00:20:28,950
-to understand-- rate
+to understand &mdash; rate
 and review.
 
 428
@@ -2023,7 +2023,7 @@ So that's basically it.
 442
 00:21:05,020 --> 00:21:06,970
 You configure it, and
-then-- same thing.
+then &mdash; same thing.
 
 443
 00:21:06,970 --> 00:21:08,580
@@ -2094,11 +2094,11 @@ where you can do that.
 
 458
 00:21:43,080 --> 00:21:43,880
-Another example--
+Another example &mdash;
 
 459
 00:21:43,880 --> 00:21:45,090
-and we have it here--
+and we have it here &mdash;
 
 460
 00:21:45,090 --> 00:21:49,600
@@ -2786,7 +2786,7 @@ more types of actions.
 
 607
 00:28:58,655 --> 00:29:02,260
-But right now, there's not--
+But right now, there's not &mdash;
 
 608
 00:29:02,260 --> 00:29:05,550
@@ -2982,7 +2982,7 @@ Google product offerings?
 
 649
 00:30:39,220 --> 00:30:41,120
-For instance, Voice--
+For instance, Voice &mdash;
 
 650
 00:30:41,120 --> 00:30:42,970
@@ -3155,7 +3155,7 @@ properties.
 686
 00:32:23,990 --> 00:32:29,890
 One, let's say, implementation
-detail, is that we have--
+detail, is that we have &mdash;
 
 687
 00:32:29,890 --> 00:32:32,970
@@ -3428,7 +3428,7 @@ schema.org.
 746
 00:34:53,260 --> 00:34:56,969
 On a third-party side to support
-this only takes--
+this only takes &mdash;
 
 747
 00:34:56,969 --> 00:35:00,230
@@ -3442,7 +3442,7 @@ specific types.
 
 749
 00:35:01,960 --> 00:35:03,436
-Then, the rendering--
+Then, the rendering &mdash;
 
 750
 00:35:03,436 --> 00:35:05,830
@@ -3514,7 +3514,7 @@ consistent user interface.
 764
 00:35:39,680 --> 00:35:41,560
 AUDIENCE: If we have
-like any--
+like any &mdash;
 
 765
 00:35:41,560 --> 00:35:45,220
@@ -3582,7 +3582,7 @@ So we are there.
 779
 00:36:16,700 --> 00:36:21,030
 And another thing that I always
-advise is-- that is my
+advise is &mdash; that is my
 
 780
 00:36:21,030 --> 00:36:23,400
@@ -3595,7 +3595,7 @@ Reach out to me directly.
 782
 00:36:24,790 --> 00:36:26,780
 I'll be really happy
-to talk to you--
+to talk to you &mdash;
 
 783
 00:36:26,780 --> 00:36:27,870
@@ -3674,7 +3674,7 @@ forwarded or anything.
 800
 00:37:04,690 --> 00:37:09,160
 How do you identify that the
-email you sent is-- the action
+email you sent is &mdash; the action
 
 801
 00:37:09,160 --> 00:37:11,030
@@ -4000,7 +4000,7 @@ understand that that email is
 
 871
 00:40:11,590 --> 00:40:12,485
-about an event invitation--
+about an event invitation &mdash;
 
 872
 00:40:12,485 --> 00:40:12,780
@@ -4137,7 +4137,7 @@ there's no plans to do that.
 901
 00:41:07,590 --> 00:41:09,700
 But tell us about what you'd
-like to do and we can always--
+like to do and we can always &mdash;
 
 902
 00:41:09,700 --> 00:41:10,255

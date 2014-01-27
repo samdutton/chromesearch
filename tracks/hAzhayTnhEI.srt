@@ -156,7 +156,7 @@ for instance, I think had an eight-millisecond
 32
 00:02:41,909 --> 00:02:44,310
 set timeout thing. And we're here today to
-say --
+say  &mdash;
 
 33
 00:02:44,310 --> 00:02:48,939
@@ -225,7 +225,7 @@ the arrow draws a line to where the monitor
 
 46
 00:03:48,040 --> 00:03:52,040
--- which refresh of that monitor is going
+ &mdash; which refresh of that monitor is going
 to pick up your picture. So if each one of
 
 47
@@ -241,7 +241,7 @@ Now, here's the problem. 16 into 60-hertz
 49
 00:04:03,319 --> 00:04:10,319
 does not equally go, right? 16 milliseconds
-and 16.6 are the two numbers that really -- 16.6
+and 16.6 are the two numbers that really  &mdash; 16.6
 
 50
 00:04:11,109 --> 00:04:16,320
@@ -250,8 +250,8 @@ that's only for a 60-hertz display. The problem
 
 51
 00:04:16,320 --> 00:04:21,519
-here -- there are really two. The first problem
-is that as you go on in time -- I'm just scrolling
+here  &mdash; there are really two. The first problem
+is that as you go on in time  &mdash; I'm just scrolling
 
 52
 00:04:21,519 --> 00:04:26,430
@@ -275,7 +275,7 @@ just for one fraction of a second you'll see
 
 56
 00:04:44,080 --> 00:04:51,080
--- you'll feel like, oh, something's wrong.
+ &mdash; you'll feel like, oh, something's wrong.
 The other problem is that these lines are
 
 57
@@ -521,7 +521,7 @@ columns are nice, smooth 16-millisecond frames.
 105
 00:08:57,000 --> 00:09:04,000
 16, 17, it will be a little bit noisy.
-But this one -- that one is right out.
+But this one  &mdash; that one is right out.
 
 106
 00:09:04,040 --> 00:09:07,300
@@ -621,12 +621,12 @@ So because it just fit right in, it didn't
 125
 00:10:37,440 --> 00:10:43,330
 push out the frame. But if I go over here
-and look at this one -- so there's one of
+and look at this one  &mdash; so there's one of
 
 126
 00:10:43,330 --> 00:10:47,360
 those timers that actually fired. And you
-can -- even without zooming in too far on
+can  &mdash; even without zooming in too far on
 
 127
 00:10:47,360 --> 00:10:53,390
@@ -770,7 +770,7 @@ So what this is doing is it's trying to pull
 
 155
 00:13:10,510 --> 00:13:16,510
-up -- the test is just trying to pull up the
+up  &mdash; the test is just trying to pull up the
 scrolltop in order to then use it in a formula.
 
 156
@@ -875,7 +875,7 @@ look at this doc and I look in the elements
 
 176
 00:14:59,740 --> 00:15:04,540
-inspector -- the only thing up here really
+inspector  &mdash; the only thing up here really
 is a bunch of images, so it's a pretty easy
 
 177
@@ -910,7 +910,7 @@ at the actual costs, remember our paint time
 
 183
 00:15:35,940 --> 00:15:41,830
-was -- what was it, like 40 something?
+was  &mdash; what was it, like 40 something?
 So it's gone from 40 something to about four
 
 184
@@ -1250,7 +1250,7 @@ temporarily by throwing up a nice animation.
 
 251
 00:21:06,800 --> 00:21:10,440
-want to -- before we go further, I should
+want to  &mdash; before we go further, I should
 note that we talk a lot about 16 milliseconds
 
 252
@@ -1291,7 +1291,7 @@ you're actually comfortably within budget
 259
 00:21:41,550 --> 00:21:46,880
 and can even withstand some variation like
-machine speed. So -- so now we're going to
+machine speed. So  &mdash; so now we're going to
 
 260
 00:21:46,880 --> 00:21:53,309
@@ -1521,7 +1521,7 @@ on CSS styles. We wish it was the case that
 305
 00:25:40,130 --> 00:25:43,640
 all CSS styles sort of took equal cost to
-paint because it would make --
+paint because it would make  &mdash;
 
 306
 00:25:43,640 --> 00:25:46,880
@@ -1600,7 +1600,7 @@ thing and it's all gorgeous and textured.
 
 321
 00:26:54,510 --> 00:26:57,490
->>Nat Duca: And -- we're not going to see
+>>Nat Duca: And  &mdash; we're not going to see
 it, but maybe we're paying a lot for that,
 
 322
@@ -1630,7 +1630,7 @@ as a win.
 
 327
 00:27:19,400 --> 00:27:23,179
->>Tom Wiltzius: Yeah, right. This is --
+>>Tom Wiltzius: Yeah, right. This is  &mdash;
 >>Nat Duca: Brush metal aside.
 
 328
@@ -1641,12 +1641,12 @@ tradeoff between the visual effect that you've
 329
 00:27:29,030 --> 00:27:33,870
 achieved with the styles that you've used
-and what they are costing you. So -- and so
+and what they are costing you. So  &mdash; and so
 
 330
 00:27:33,870 --> 00:27:38,770
 this process, this is only the beginning.
-What -- as we disable things -- and I'm going
+What  &mdash; as we disable things  &mdash; and I'm going
 
 331
 00:27:38,770 --> 00:27:45,010
@@ -1750,7 +1750,7 @@ way back up. Now that you've identified what's
 
 351
 00:29:23,840 --> 00:29:27,190
-causing your problems -- because again I didn't
+causing your problems  &mdash; because again I didn't
 change that much here, right? I got rid of
 
 352
@@ -1781,7 +1781,7 @@ just showed you. I just started hunting around
 357
 00:29:52,150 --> 00:29:56,990
 for stuff. I went straight for the ones that
-I found eventually first in this -- in the
+I found eventually first in this  &mdash; in the
 
 358
 00:29:56,990 --> 00:30:01,580
@@ -1835,7 +1835,7 @@ all that I did was change two styles.
 
 368
 00:30:45,910 --> 00:30:50,559
-So the point is sometimes -- this was like
+So the point is sometimes  &mdash; this was like
 a live website, right, like this is a live
 
 369
@@ -1845,7 +1845,7 @@ website that Google made.
 
 370
 00:30:52,480 --> 00:30:58,000
->>Tom Wiltzius: So -- so the point is there
+>>Tom Wiltzius: So  &mdash; so the point is there
 are plenty of times when just changing a few
 
 371
@@ -1886,7 +1886,7 @@ devtools and the new features in timeline
 378
 00:31:33,860 --> 00:31:39,190
 are particularly compelling for this. But
--- but if this is not enough for you, you
+ &mdash; but if this is not enough for you, you
 
 379
 00:31:39,190 --> 00:31:43,710
@@ -1930,7 +1930,7 @@ doesn't show up inside of devtools right now,
 
 387
 00:32:18,440 --> 00:32:24,760
-and that's image decode costs -- so as I mentioned
+and that's image decode costs  &mdash; so as I mentioned
 earlier, that green paint block, that we see
 
 388
@@ -1961,7 +1961,7 @@ wasn't obvious to me from devtools, but I
 393
 00:32:46,980 --> 00:32:51,460
 saw these long JPEG like decodes and resizes
---
+ &mdash;
 
 394
 00:32:51,460 --> 00:32:54,280
@@ -1996,7 +1996,7 @@ it was showing up as long paints, but you
 400
 00:33:17,160 --> 00:33:21,140
 couldn't tell why. So that's where you jump
-into -- if you care, you jump into tracing
+into  &mdash; if you care, you jump into tracing
 
 401
 00:33:21,140 --> 00:33:24,059
@@ -2085,18 +2085,18 @@ because this has no visual impact, right?
 
 418
 00:34:44,829 --> 00:34:48,720
-This is just a perf point --
+This is just a perf point  &mdash;
 >>Nat Duca: But it will cause jank. Most websites,
 
 419
 00:34:48,720 --> 00:34:53,509
-this is a really common one, so go -- go to
+this is a really common one, so go  &mdash; go to
 your websites now.
 
 420
 00:34:53,509 --> 00:34:54,609
 >>Tom Wiltzius: So this is the kind of thing
---
+ &mdash;
 
 421
 00:34:54,609 --> 00:35:00,239
@@ -2121,12 +2121,12 @@ that you can follow in order to figure out
 425
 00:35:14,749 --> 00:35:19,759
 what's slowing down your site. Browsers evolve
-really fast. And like -- to the people who
+really fast. And like  &mdash; to the people who
 
 426
 00:35:19,759 --> 00:35:21,700
 are like trying to evolve the browser really
-fast --
+fast  &mdash;
 
 427
 00:35:21,700 --> 00:35:25,619
@@ -2255,7 +2255,7 @@ other resources are off of Jankfree.com, and
 
 452
 00:37:08,970 --> 00:37:12,710
-we are actually going to be -- we're going
+we are actually going to be  &mdash; we're going
 to take questions in a couple of minutes,
 
 453
@@ -2316,7 +2316,7 @@ even if it's not working today, it will start
 464
 00:38:17,940 --> 00:38:20,539
 working everywhere within the next, you know
---
+ &mdash;
 
 465
 00:38:20,539 --> 00:38:22,470
@@ -2341,7 +2341,7 @@ in the renderer, right, and this is kind of
 469
 00:38:35,729 --> 00:38:41,079
 the beginning of that, but there will be more
-things like this as well, so, yeah -- please,
+things like this as well, so, yeah  &mdash; please,
 
 470
 00:38:41,079 --> 00:38:43,539
@@ -2366,7 +2366,7 @@ in, you cant actually see that extra detail.
 474
 00:38:59,109 --> 00:39:04,200
 >>Tom Wiltzius: Uh-huh, yeah, so I would say
--- you might also say like for high resolution
+ &mdash; you might also say like for high resolution
 
 475
 00:39:04,200 --> 00:39:10,130
@@ -2386,7 +2386,7 @@ things are almost always going to be in tension.
 478
 00:39:19,460 --> 00:39:23,940
 I think in that case, you probably are going
-to have to decide where on that --
+to have to decide where on that  &mdash;
 
 479
 00:39:23,940 --> 00:39:30,220
@@ -2400,13 +2400,13 @@ of like stuff behind the scenes.
 
 481
 00:39:33,539 --> 00:39:37,470
-part --
+part  &mdash;
 >>Nat Duca: So that will bite you in the case
 
 482
 00:39:37,470 --> 00:39:44,470
 of a pinch zoom, but mobile browsers have
--- especially Chrome Android has some very
+ &mdash; especially Chrome Android has some very
 
 483
 00:39:44,950 --> 00:39:51,680
@@ -2435,7 +2435,7 @@ give you.
 
 488
 00:40:05,479 --> 00:40:10,450
-at office hours. The full -- the full sort
+at office hours. The full  &mdash; the full sort
 of magic explanation is really complicated.
 
 489
@@ -2480,18 +2480,18 @@ go right to it.
 
 497
 00:40:40,809 --> 00:40:45,749
->>Nat Duca: We're on the team and we're pushing--
+>>Nat Duca: We're on the team and we're pushing &mdash;
 >>Tom Wiltzius: We bug Pavel who is standing
 
 498
 00:40:45,749 --> 00:40:49,249
 in the back, and just talk about devtools
-all the time for like -- yeah, we totally
+all the time for like  &mdash; yeah, we totally
 
 499
 00:40:49,249 --> 00:40:52,309
 want things like this.
->>> Maybe line numbers and like function -- or
+>>> Maybe line numbers and like function  &mdash; or
 
 500
 00:40:52,309 --> 00:40:55,719
@@ -2501,7 +2501,7 @@ is where you're spending the most time instead
 501
 00:40:55,719 --> 00:41:00,519
 of JavaScript functions would be awesome.
->>Nat Duca: So my hope, and my boss -- my
+>>Nat Duca: So my hope, and my boss  &mdash; my
 
 502
 00:41:00,519 --> 00:41:04,640
@@ -2511,12 +2511,12 @@ be able to stand here next year and instead
 503
 00:41:04,640 --> 00:41:08,039
 of having to say, oh, look at this big green
-thing, and then spend -- how long did we spend,
+thing, and then spend  &mdash; how long did we spend,
 
 504
 00:41:08,039 --> 00:41:13,289
 like 20 minutes trying to explain what was
-slow about the -- I'll push a button and it
+slow about the  &mdash; I'll push a button and it
 
 505
 00:41:13,289 --> 00:41:17,109
@@ -2526,12 +2526,12 @@ Whether we can get there, yeah, TBD, but that
 506
 00:41:17,109 --> 00:41:20,769
 would be a nice thing.
->>Tom Wiltzius: Definitely -- definitely granularity
+>>Tom Wiltzius: Definitely  &mdash; definitely granularity
 
 507
 00:41:20,769 --> 00:41:26,630
 in like paint cost is something we're looking
-at. I think like some of the -- some of the
+at. I think like some of the  &mdash; some of the
 
 508
 00:41:26,630 --> 00:41:30,719
@@ -2571,7 +2571,7 @@ so you even saw like Nat at some point during
 515
 00:42:05,479 --> 00:42:08,989
 his demo, was like, yeah, this still looks
--- even though I've disabled my heavy onscroll
+ &mdash; even though I've disabled my heavy onscroll
 
 516
 00:42:08,989 --> 00:42:15,989
@@ -2586,21 +2586,21 @@ overhead especially with devtools. That's
 518
 00:42:21,650 --> 00:42:28,650
 going to be fixed. Pavel is going to fix that.
->>Nat Duca: So the high level is -- we won't
+>>Nat Duca: So the high level is  &mdash; we won't
 
 519
 00:42:28,690 --> 00:42:32,029
--- we're trying not build things that have
+ &mdash; we're trying not build things that have
 those corners. Right?
 
 520
 00:42:32,029 --> 00:42:34,900
-When you're using -- this is bleeding edge,
+When you're using  &mdash; this is bleeding edge,
 this stuff that we showed today, it's the
 
 521
 00:42:34,900 --> 00:42:36,329
---
+ &mdash;
 >>Tom Wiltzius: Like this is yesterday's Canary.
 
 522
@@ -2615,13 +2615,13 @@ very unlikely. Does that answer your question?
 
 524
 00:42:46,499 --> 00:42:51,109
->>Tom Wiltzius: And there should be -- there
-should be like -- there is sufficient granularity
+>>Tom Wiltzius: And there should be  &mdash; there
+should be like  &mdash; there is sufficient granularity
 
 525
 00:42:51,109 --> 00:42:55,489
-in the timeline already that like -- we saw
-some problems where like there's -- there's
+in the timeline already that like  &mdash; we saw
+some problems where like there's  &mdash; there's
 
 526
 00:42:55,489 --> 00:42:59,130
@@ -2650,7 +2650,7 @@ in that case, like frame time stats, but you
 
 531
 00:43:15,390 --> 00:43:18,869
-can use it for like -- if you cut your paint
+can use it for like  &mdash; if you cut your paint
 time in half, you have cut your paint time
 
 532
@@ -2666,7 +2666,7 @@ in half.
 534
 00:43:23,940 --> 00:43:29,559
 >>Tom Wiltzius: You can see that within a
-frame you didn't take -- like your page only
+frame you didn't take  &mdash; like your page only
 
 535
 00:43:29,559 --> 00:43:36,559
@@ -2676,16 +2676,16 @@ of stuff, right, and then if you close devtools
 536
 00:43:38,049 --> 00:43:40,569
 and it's fast and you're good, right.
->>> But if it's recording then --
+>>> But if it's recording then  &mdash;
 
 537
 00:43:40,569 --> 00:43:44,829
->>Nat Duca: It's not that -- it's not that
+>>Nat Duca: It's not that  &mdash; it's not that
 heavy and it's not on that process, especially
 
 538
 00:43:44,829 --> 00:43:48,309
-like -- yes, on an Android you might get a
+like  &mdash; yes, on an Android you might get a
 slight, slight penalty, but to be totally
 
 539
@@ -2715,7 +2715,7 @@ we have high DPI devices, not necessarily
 
 544
 00:44:18,349 --> 00:44:20,349
-Chrome, I mean --
+Chrome, I mean  &mdash;
 >>Tom Wiltzius: Yeah, sure.
 
 545
@@ -2726,11 +2726,11 @@ size, you need to use background size to take
 546
 00:44:23,009 --> 00:44:28,049
 these huge images so that they're high DPI
-in your example -- so is there any way to
+in your example  &mdash; so is there any way to
 
 547
 00:44:28,049 --> 00:44:33,380
-measure it on -- like I know your tools only
+measure it on  &mdash; like I know your tools only
 work for Chrome, but how can we force it into
 
 548
@@ -2741,7 +2741,7 @@ Pro that's higher DPI?
 549
 00:44:37,979 --> 00:44:42,180
 >>Nat Duca: So probably a question for Pavel,
-who you could turn around and walk to --
+who you could turn around and walk to  &mdash;
 
 550
 00:44:42,180 --> 00:44:46,640
@@ -2776,7 +2776,7 @@ which is a start. There are ways to avoid
 556
 00:45:06,359 --> 00:45:11,519
 like using JavaScript and stuff, you can only
-load like -- I think this was the first part
+load like  &mdash; I think this was the first part
 
 557
 00:45:11,519 --> 00:45:14,999
@@ -2810,7 +2810,7 @@ paint times double, not exactly, but that's
 
 563
 00:45:41,239 --> 00:45:48,239
-your risk, right? You're painting twice -- well,
+your risk, right? You're painting twice  &mdash; well,
 four times as much, look at me doing math.
 
 564
@@ -2825,8 +2825,8 @@ I shouldn't work for Google, should I?
 
 566
 00:45:55,779 --> 00:45:59,229
->>Tom Wiltzius: High DPI -- the point is high
-DPI stuff is going to have significant --
+>>Tom Wiltzius: High DPI  &mdash; the point is high
+DPI stuff is going to have significant  &mdash;
 
 567
 00:45:59,229 --> 00:46:04,559
@@ -2840,8 +2840,8 @@ chugging and it's hitting like fifteen millisecond
 
 569
 00:46:08,999 --> 00:46:13,289
-paints, then you're really, really -- this
-is not going to work on a good -- on one of
+paints, then you're really, really  &mdash; this
+is not going to work on a good  &mdash; on one of
 
 570
 00:46:13,289 --> 00:46:15,450
@@ -2850,12 +2850,12 @@ to go up. It might be a slightly faster Intel
 
 571
 00:46:15,450 --> 00:46:15,849
-CPU --
+CPU  &mdash;
 >>Tom Wiltzius: About four times faster.
 
 572
 00:46:15,849 --> 00:46:22,029
->>Nat Duca: -- but you got to just -- you
+>>Nat Duca:  &mdash; but you got to just  &mdash; you
 gotta keep it small, right, and give yourself
 
 573
@@ -2866,7 +2866,7 @@ the lower end.
 574
 00:46:24,529 --> 00:46:27,599
 >>Tom Wiltzius: Yeah, and I mentioned this
--- I mentioned this a little like really briefly
+ &mdash; I mentioned this a little like really briefly
 
 575
 00:46:27,599 --> 00:46:31,309
@@ -2896,7 +2896,7 @@ the average Chrome user has like a really
 580
 00:46:52,539 --> 00:46:57,009
 crappy three-year-old laptop, right? And like
-this is -- this is what the internet population
+this is  &mdash; this is what the internet population
 
 581
 00:46:57,009 --> 00:47:02,789
@@ -2906,7 +2906,7 @@ but for like really sensitive performance
 582
 00:47:02,789 --> 00:47:09,309
 stuff, like I'm trying to make a 16 millisecond
-paint -- frame budget, it's huge, right?
+paint  &mdash; frame budget, it's huge, right?
 
 583
 00:47:09,309 --> 00:47:13,309
@@ -2925,8 +2925,8 @@ this for Pavel.
 
 586
 00:47:22,599 --> 00:47:25,829
->>> Can you guys just add a --
->>Nat Duca: Slow me down --
+>>> Can you guys just add a  &mdash;
+>>Nat Duca: Slow me down  &mdash;
 
 587
 00:47:25,829 --> 00:47:29,799
@@ -3000,7 +3000,7 @@ I can be like okay, I want to run at 20%,
 
 601
 00:48:23,789 --> 00:48:27,799
-see how this feels, oh, I can have the -- all
+see how this feels, oh, I can have the  &mdash; all
 the same timelines, all these kinds of things,
 
 602
@@ -3035,12 +3035,12 @@ not ideal from like a Web development.
 
 608
 00:48:49,130 --> 00:48:53,119
->>Tom Wiltzius: Like the -- like the -- like
+>>Tom Wiltzius: Like the  &mdash; like the  &mdash; like
 the spec people are going to kill me, right,
 
 609
 00:48:53,119 --> 00:48:55,500
-like I'm just like -- I'm just saying don't
+like I'm just like  &mdash; I'm just saying don't
 use any of this, it's not fast enough.
 
 610
@@ -3066,7 +3066,7 @@ like that that we're doing, and this is why
 614
 00:49:07,839 --> 00:49:13,200
 we ended like with don't listen to the specifics
-because they're going to change, the way -- like
+because they're going to change, the way  &mdash; like
 
 615
 00:49:13,200 --> 00:49:17,729
@@ -3100,7 +3100,7 @@ to try to take care of this for you. I don't
 
 621
 00:49:41,700 --> 00:49:46,940
--- I don't want you to sweat like drop shadow
+ &mdash; I don't want you to sweat like drop shadow
 too much, like this was very much a demo that
 
 622
@@ -3165,7 +3165,7 @@ And it's very useful for things like this,
 
 634
 00:50:45,130 --> 00:50:49,519
-when you're thinking on like -- like --
+when you're thinking on like  &mdash; like  &mdash;
 >>> A millisecond, six percent error.
 
 635
@@ -3180,7 +3180,7 @@ to the browser which is good. We're actually
 
 637
 00:51:01,549 --> 00:51:05,130
-going to even change like out of -- for any
+going to even change like out of  &mdash; for any
 of you who already knew about request animation
 
 638
@@ -3280,7 +3280,7 @@ thing is for the platform then drives the
 
 657
 00:52:30,789 --> 00:52:37,009
-browser vendors to optimize -- or to make
+browser vendors to optimize  &mdash; or to make
 things work correctly. All of this stuff is
 
 658
@@ -3321,7 +3321,7 @@ things faster. I'm just wondering how you
 665
 00:53:07,670 --> 00:53:09,859
 see that evolve? Is it going to stay within
-the spec or --
+the spec or  &mdash;
 
 666
 00:53:09,859 --> 00:53:12,819
@@ -3330,7 +3330,7 @@ meta level, like you're absolutely right,
 
 667
 00:53:12,819 --> 00:53:19,259
-that this is -- this is a problem for the
+that this is  &mdash; this is a problem for the
 ecosystem, right, like the potential for performance
 
 668
@@ -3350,8 +3350,8 @@ stuff to work on IE too, and like it's implemented
 
 671
 00:53:34,599 --> 00:53:35,509
-very differently. I don't -- we don't have
---
+very differently. I don't  &mdash; we don't have
+ &mdash;
 
 672
 00:53:35,509 --> 00:53:40,529
@@ -3370,17 +3370,17 @@ to drive things forward as quickly, but like
 
 675
 00:53:47,900 --> 00:53:51,940
-they're -- they -- they were very support
-of cross animation frame from the -- this
+they're  &mdash; they  &mdash; they were very support
+of cross animation frame from the  &mdash; this
 
 676
 00:53:51,940 --> 00:53:54,930
-is --
+is  &mdash;
 >>Nat Duca: Let me be clear, at least to my
 
 677
 00:53:54,930 --> 00:53:58,200
-understanding, there are two -- there's a
+understanding, there are two  &mdash; there's a
 branch here, so there's the techniques like
 
 678
@@ -3430,7 +3430,7 @@ sort of look at what we're targeting, right?
 
 687
 00:54:43,569 --> 00:54:50,569
->>Tom Wiltzius: Yeah, totally, I -- I mean,
+>>Tom Wiltzius: Yeah, totally, I  &mdash; I mean,
 it is my sincere hope that IE adopts Web GL,
 
 688
@@ -3441,7 +3441,7 @@ and I say this as the like the Chrome graphics
 689
 00:54:55,759 --> 00:54:56,319
 PM. Obviously that's what I want.
->>> Well, same here but --
+>>> Well, same here but  &mdash;
 
 690
 00:54:56,319 --> 00:55:00,539
@@ -3471,7 +3471,7 @@ Otherwise we'll wrap up.
 695
 00:55:14,940 --> 00:55:18,519
 >>Nat Duca: Thank you, and we'll be out in
-the -- in the area where Chrome is if you
+the  &mdash; in the area where Chrome is if you
 
 696
 00:55:18,519 --> 00:55:20,780

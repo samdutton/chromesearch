@@ -167,7 +167,7 @@ calling this time is process.
 37
 00:01:51,470 --> 00:01:59,790
 So Ben Fry, who is one of the
-co-creators of Processing--
+co-creators of Processing &mdash;
 
 38
 00:01:59,790 --> 00:02:03,640
@@ -296,7 +296,7 @@ as quickly as possible.
 64
 00:03:09,930 --> 00:03:14,890
 So these are actually
-the hardest steps--
+the hardest steps &mdash;
 
 65
 00:03:14,890 --> 00:03:15,960
@@ -850,12 +850,12 @@ put on top of the ground.
 183
 00:08:46,240 --> 00:08:49,320
 And so the key thing
-with overlays--
+with overlays &mdash;
 
 184
 00:08:49,320 --> 00:08:52,600
 the kind of overlays in the Maps
-API parlance-- is that
+API parlance &mdash; is that
 
 185
 00:08:52,600 --> 00:08:53,650
@@ -980,7 +980,7 @@ So here's our canvas.
 
 212
 00:10:02,200 --> 00:10:04,230
-And the main thing is--
+And the main thing is &mdash;
 
 213
 00:10:04,230 --> 00:10:06,210
@@ -989,12 +989,12 @@ ooh, that's no good.
 214
 00:10:06,210 --> 00:10:09,140
 The main thing to see
-here, though, is--
+here, though, is &mdash;
 
 215
 00:10:09,140 --> 00:10:11,760
 it's a little hard
-to understand--
+to understand &mdash;
 
 216
 00:10:11,760 --> 00:10:13,670
@@ -1973,7 +1973,7 @@ at raw WebGL.
 424
 00:19:30,960 --> 00:19:33,950
 So we get a WebGL context by
-asking-- so CanvasLayer has a
+asking &mdash; so CanvasLayer has a
 
 425
 00:19:33,950 --> 00:19:34,630
@@ -2112,7 +2112,7 @@ buffer, here's some data.
 
 454
 00:20:46,410 --> 00:20:48,200
-It's feels a little bit--
+It's feels a little bit &mdash;
 
 455
 00:20:48,200 --> 00:20:51,670
@@ -2749,12 +2749,12 @@ it is 0.5, 0.5.
 589
 00:26:54,700 --> 00:27:02,450
 So I can say that the distance
-for a particular pixel-- so
+for a particular pixel &mdash; so
 
 590
 00:27:02,450 --> 00:27:04,920
 remember, this is running
-per pixel--
+per pixel &mdash;
 
 591
 00:27:04,920 --> 00:27:10,970
@@ -2788,7 +2788,7 @@ Let's see.
 
 598
 00:27:27,680 --> 00:27:29,490
-Alpha is equal to--
+Alpha is equal to &mdash;
 
 599
 00:27:29,490 --> 00:27:36,870
@@ -3055,13 +3055,13 @@ I mean it.
 
 657
 00:30:16,580 --> 00:30:22,180
-So picking points-- picking is
+So picking points &mdash; picking is
 the kind of classic graphics
 
 658
 00:30:22,180 --> 00:30:26,800
 term for literally saying, like,
-I pick that-- like where
+I pick that &mdash; like where
 
 659
 00:30:26,800 --> 00:30:28,250
@@ -3109,7 +3109,7 @@ you can't really add 80,000
 668
 00:30:55,042 --> 00:31:01,740
 points to an SVG element and
-expect it to perform well--
+expect it to perform well &mdash;
 
 669
 00:31:01,740 --> 00:31:02,660
@@ -3182,7 +3182,7 @@ from the GPU, just as it's
 
 684
 00:31:43,250 --> 00:31:44,580
-expensive to push things--
+expensive to push things &mdash;
 
 685
 00:31:44,580 --> 00:31:46,830
@@ -3416,7 +3416,7 @@ degrees, so mostly north.
 735
 00:33:55,830 --> 00:33:59,720
 And meanwhile, let's find
-a different one with a--
+a different one with a &mdash;
 
 736
 00:33:59,720 --> 00:34:04,760
@@ -3512,7 +3512,7 @@ this is standardized in a
 
 756
 00:34:57,100 --> 00:35:00,050
-way that allows you to--
+way that allows you to &mdash;
 
 757
 00:35:00,050 --> 00:35:02,520
@@ -3966,7 +3966,7 @@ But they're floating.
 
 854
 00:39:32,095 --> 00:39:34,200
-And this is also--
+And this is also &mdash;
 
 855
 00:39:34,200 --> 00:39:38,680
@@ -4003,12 +4003,12 @@ model view controller,
 862
 00:39:57,990 --> 00:40:03,030
 we've actually kind of split
-both the model and the view--
+both the model and the view &mdash;
 
 863
 00:40:03,030 --> 00:40:06,210
 well, depending on how you
-define them, but whatever--
+define them, but whatever &mdash;
 
 864
 00:40:06,210 --> 00:40:09,520
@@ -4096,7 +4096,7 @@ You see that?
 
 882
 00:40:46,730 --> 00:40:47,980
-I wonder if I can--
+I wonder if I can &mdash;
 
 883
 00:40:47,980 --> 00:40:52,079
@@ -4370,7 +4370,7 @@ is using the Crossfilter
 
 942
 00:43:16,480 --> 00:43:17,720
-library, that comes from--
+library, that comes from &mdash;
 
 943
 00:43:17,720 --> 00:43:18,780
@@ -4495,7 +4495,7 @@ center, yeah.
 968
 00:44:37,320 --> 00:44:39,080
 And so now, if we
-take this dist--
+take this dist &mdash;
 
 969
 00:44:39,080 --> 00:44:42,310
@@ -4700,7 +4700,7 @@ And then we can do things.
 1012
 00:47:00,170 --> 00:47:05,422
 It's difficult to see, but it's
-easier-- you can come put
+easier &mdash; you can come put
 
 1013
 00:47:05,422 --> 00:47:08,190
@@ -4732,7 +4732,7 @@ It's also an error function.
 1019
 00:47:17,360 --> 00:47:19,900
 And it's an attempt I'm kind
-of playing around with--
+of playing around with &mdash;
 
 1020
 00:47:19,900 --> 00:47:22,960
@@ -4836,7 +4836,7 @@ the point data
 
 1041
 00:48:13,090 --> 00:48:14,355
-like, here around Iceland--
+like, here around Iceland &mdash;
 
 1042
 00:48:14,355 --> 00:48:20,122
@@ -4897,7 +4897,7 @@ There's a lot more to show.
 
 1055
 00:48:44,720 --> 00:48:46,990
-So I'll just kind of--
+So I'll just kind of &mdash;
 
 1056
 00:48:46,990 --> 00:48:48,880
@@ -5418,7 +5418,7 @@ and stuff like that.
 1166
 00:53:16,140 --> 00:53:17,710
 Because if they've
-done any tricks--
+done any tricks &mdash;
 
 1167
 00:53:17,710 --> 00:53:19,280
@@ -5533,12 +5533,12 @@ message you have from them.
 1191
 00:54:23,980 --> 00:54:26,610
 And so we had 79,000 ships
-that fall within--
+that fall within &mdash;
 
 1192
 00:54:26,610 --> 00:54:29,055
 we had a couple of things,
-like it can't be--
+like it can't be &mdash;
 
 1193
 00:54:29,055 --> 00:54:32,610
@@ -6010,7 +6010,7 @@ available now to tell you
 
 1294
 00:58:29,550 --> 00:58:33,610
-exactly where you screwed up--
+exactly where you screwed up &mdash;
 
 1295
 00:58:33,610 --> 00:58:35,940

@@ -183,12 +183,12 @@ amazing software.
 
 40
 00:02:14,780 --> 00:02:17,320
-Other things that we have--
+Other things that we have &mdash;
 we'll try to touch them in the
 
 41
 00:02:17,320 --> 00:02:21,430
-next few weeks-- will be cloud
+next few weeks &mdash; will be cloud
 storage and Cloud SQL.
 
 42
@@ -392,7 +392,7 @@ to work with SSH, we have
 84
 00:04:31,470 --> 00:04:35,780
 this nice GC SQL tool, that
-after you install it--
+after you install it &mdash;
 
 85
 00:04:35,780 --> 00:04:37,120
@@ -401,7 +401,7 @@ and it's quite easy.
 86
 00:04:37,120 --> 00:04:40,120
 Four steps, four clicks and
-you're installing it--
+you're installing it &mdash;
 
 87
 00:04:40,120 --> 00:04:42,660
@@ -643,7 +643,7 @@ Thank you for watching.
 138
 00:07:50,360 --> 00:07:52,760
 After I saved it, and
-I'm refreshing--
+I'm refreshing &mdash;
 
 139
 00:07:52,760 --> 00:07:55,770
@@ -790,7 +790,7 @@ to basically create a new
 
 169
 00:09:44,000 --> 00:09:47,010
-instance and to give it-- if
+instance and to give it &mdash; if
 you'll try to put [INAUDIBLE],
 
 170

@@ -1077,8 +1077,8 @@ for this destination, three of
 
 233
 00:10:07,500 --> 00:10:10,600
-them match-- black, red, and
-blue-- because their
+them match &mdash; black, red, and
+blue &mdash; because their
 
 234
 00:10:10,600 --> 00:10:14,580
@@ -1207,7 +1207,7 @@ of that packet leaving
 
 261
 00:11:16,820 --> 00:11:20,630
-the VM-- source IP, the source
+the VM &mdash; source IP, the source
 port if there is one, the
 
 262
@@ -1736,7 +1736,7 @@ to make it interesting, we'll
 
 375
 00:15:50,960 --> 00:15:52,655
-keep OfficeDB--
+keep OfficeDB &mdash;
 
 376
 00:15:52,655 --> 00:15:54,580
@@ -2020,12 +2020,12 @@ is that those VMs
 
 437
 00:18:17,200 --> 00:18:18,380
-have to have special--
+have to have special &mdash;
 
 438
 00:18:18,380 --> 00:18:20,500
 their operating system, their
-guest OS-- needs to be
+guest OS &mdash; needs to be
 
 439
 00:18:20,500 --> 00:18:22,430
@@ -2394,7 +2394,7 @@ because two networks in GCE
 
 516
 00:21:44,800 --> 00:21:45,510
-are totally--
+are totally &mdash;
 
 517
 00:21:45,510 --> 00:21:47,470
@@ -2483,12 +2483,12 @@ over here in office-net.
 
 536
 00:22:37,660 --> 00:22:39,890
-Two things you can't see here--
+Two things you can't see here &mdash;
 unfortunately gcutil
 
 537
 00:22:39,890 --> 00:22:42,550
-doesn't print them--
+doesn't print them &mdash;
 are the tags.
 
 538
@@ -2512,7 +2512,7 @@ them to use the VPN.
 542
 00:22:52,340 --> 00:22:54,910
 And the second thing I've done
-is I've given-- remember the
+is I've given &mdash; remember the
 
 543
 00:22:54,910 --> 00:22:56,120
@@ -2938,11 +2938,11 @@ to show you, I think is
 634
 00:26:47,160 --> 00:26:50,230
 the coolest, is a
-TCP dump from--
+TCP dump from &mdash;
 
 635
 00:26:50,230 --> 00:26:52,110
-let me just clear this--
+let me just clear this &mdash;
 
 636
 00:26:52,110 --> 00:26:53,560
@@ -3205,7 +3205,7 @@ OS, this Linux operating
 
 691
 00:29:07,400 --> 00:29:09,920
-system, to be also-- to
+system, to be also &mdash; to
 think it's a router.
 
 692
@@ -3809,7 +3809,7 @@ going out to the world?
 
 821
 00:34:11,989 --> 00:34:13,010
-Do I have that--
+Do I have that &mdash;
 
 822
 00:34:13,010 --> 00:34:15,230
@@ -3875,7 +3875,7 @@ that to go out to the
 835
 00:34:42,270 --> 00:34:44,969
 internet, do I need a separate
-VM which is my gateway, and--
+VM which is my gateway, and &mdash;
 
 836
 00:34:44,969 --> 00:34:45,360
@@ -3898,7 +3898,7 @@ to get to the internet.
 840
 00:34:49,650 --> 00:34:52,610
 By default, you get
-a route which is--
+a route which is &mdash;
 
 841
 00:34:52,610 --> 00:34:54,080
@@ -3959,7 +3959,7 @@ the route point.
 853
 00:35:14,190 --> 00:35:17,680
 So this default route is what
-takes you-- you can't see it
+takes you &mdash; you can't see it
 
 854
 00:35:17,680 --> 00:35:20,290
@@ -4178,7 +4178,7 @@ another to get to networks?
 
 901
 00:36:51,460 --> 00:36:52,760
-So I think the answer--
+So I think the answer &mdash;
 
 902
 00:36:52,760 --> 00:36:54,330

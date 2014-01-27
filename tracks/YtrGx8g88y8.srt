@@ -236,7 +236,7 @@ on another device.
 52
 00:01:55,870 --> 00:01:58,900
 So heading back to
-the device--
+the device &mdash;
 
 53
 00:01:58,900 --> 00:02:01,010
@@ -328,7 +328,7 @@ is now saved locally.
 71
 00:02:48,410 --> 00:02:49,950
 DANNY HERMES: But if we switch
-over to the laptop--
+over to the laptop &mdash;
 
 72
 00:02:49,950 --> 00:02:51,480
@@ -346,7 +346,7 @@ have the photo yet.
 
 75
 00:02:57,780 --> 00:02:59,370
-But if we go back--
+But if we go back &mdash;
 
 76
 00:02:59,370 --> 00:03:02,230

@@ -609,11 +609,11 @@ Mac, Windows, and laptop.
 130
 00:05:15,080 --> 00:05:16,390
 And to be totally
-transparent--
+transparent &mdash;
 
 131
 00:05:16,390 --> 00:05:18,060
-I want to be very clear-- this
+I want to be very clear &mdash; this
 is an enterprise track.
 
 132
@@ -1454,7 +1454,7 @@ programmatically.
 
 308
 00:12:38,560 --> 00:12:39,910
-And the neat thing here--
+And the neat thing here &mdash;
 
 309
 00:12:39,910 --> 00:12:42,320
@@ -1469,7 +1469,7 @@ the online version of Google
 311
 00:12:46,710 --> 00:12:48,690
 Earth or Google Earth
-Enterprise--
+Enterprise &mdash;
 
 312
 00:12:48,690 --> 00:12:51,750
@@ -2326,7 +2326,7 @@ well as the Portable server.
 
 491
 00:20:25,110 --> 00:20:28,590
-They are typically kept in--
+They are typically kept in &mdash;
 
 492
 00:20:28,590 --> 00:20:32,630
@@ -2769,7 +2769,7 @@ the use the class called
 
 587
 00:26:12,500 --> 00:26:15,090
-GFusionMap, which is--
+GFusionMap, which is &mdash;
 
 588
 00:26:15,090 --> 00:26:17,220
@@ -3371,7 +3371,7 @@ or Google Maps.
 
 719
 00:33:06,720 --> 00:33:08,610
-So one example of that-- and
+So one example of that &mdash; and
 just two code snippets.
 
 720
@@ -3762,12 +3762,12 @@ extension.
 801
 00:36:33,020 --> 00:36:37,970
 So there's no thoughts about
-sort of editing on--
+sort of editing on &mdash;
 
 802
 00:36:37,970 --> 00:36:41,120
 well, I guess wouldn't be on the
-fly-- but stopping merge
+fly &mdash; but stopping merge
 
 803
 00:36:41,120 --> 00:36:42,640

@@ -434,7 +434,7 @@ I was like, this is the
 
 94
 00:04:23,940 --> 00:04:24,960
-source map, and you can--
+source map, and you can &mdash;
 
 95
 00:04:24,960 --> 00:04:26,450
@@ -471,12 +471,12 @@ to take something like a
 
 102
 00:04:33,990 --> 00:04:35,050
-Coffeescript--
+Coffeescript &mdash;
 
 103
 00:04:35,050 --> 00:04:38,090
 you can also take type script,
-which creates a source map--
+which creates a source map &mdash;
 
 104
 00:04:38,090 --> 00:04:41,250
@@ -844,7 +844,7 @@ solutions were going to get
 
 183
 00:08:35,870 --> 00:08:36,929
-this support--
+this support &mdash;
 
 184
 00:08:36,929 --> 00:08:37,400
@@ -1316,7 +1316,7 @@ Well done.
 
 287
 00:13:25,520 --> 00:13:28,130
-That was like--
+That was like &mdash;
 
 288
 00:13:28,130 --> 00:13:30,040
@@ -1382,7 +1382,7 @@ your files in a project.
 301
 00:14:03,510 --> 00:14:08,810
 So what it does, this one, it
-just all the text files--
+just all the text files &mdash;
 
 302
 00:14:08,810 --> 00:14:11,810
@@ -1486,7 +1486,7 @@ SINDRE SORHUS: We also have
 
 324
 00:14:50,360 --> 00:14:52,465
-don't know what Travis is--
+don't know what Travis is &mdash;
 
 325
 00:14:52,465 --> 00:14:53,745
@@ -1607,7 +1607,7 @@ projects with lots of
 
 350
 00:15:55,530 --> 00:15:56,890
-like that, because--
+like that, because &mdash;
 
 351
 00:15:56,890 --> 00:15:57,900
@@ -1811,7 +1811,7 @@ adhere to some rules.
 394
 00:17:34,160 --> 00:17:38,400
 Like for example, I put
-up some of the--
+up some of the &mdash;
 
 395
 00:17:38,400 --> 00:17:41,140
@@ -1858,7 +1858,7 @@ trailing, which
 
 405
 00:18:03,970 --> 00:18:05,220
-actually informs you if--
+actually informs you if &mdash;
 
 406
 00:18:05,220 --> 00:18:07,950
@@ -1939,7 +1939,7 @@ inform if you don't wrap
 
 423
 00:18:48,180 --> 00:18:49,120
-your lines at--
+your lines at &mdash;
 
 424
 00:18:49,120 --> 00:18:50,720
@@ -1951,7 +1951,7 @@ Yeah, 80.
 
 426
 00:18:52,630 --> 00:18:54,270
-And if most--
+And if most &mdash;
 
 427
 00:18:54,270 --> 00:18:59,410
@@ -1969,7 +1969,7 @@ it really hard not
 
 430
 00:19:04,075 --> 00:19:06,970
-to get into a callback--
+to get into a callback &mdash;
 
 431
 00:19:06,970 --> 00:19:08,530
@@ -2044,7 +2044,7 @@ false, true, five, and it
 445
 00:19:49,380 --> 00:19:51,610
 becomes very hard for
-somebody to--
+somebody to &mdash;
 
 446
 00:19:51,610 --> 00:19:52,690
@@ -2086,7 +2086,7 @@ because then you don't have to
 
 454
 00:20:07,450 --> 00:20:09,680
-care about--
+care about &mdash;
 
 455
 00:20:09,680 --> 00:20:11,000
@@ -2155,7 +2155,7 @@ the straight and narrow a
 468
 00:20:42,730 --> 00:20:44,780
 little bit, and just
-forces you to--
+forces you to &mdash;
 
 469
 00:20:44,780 --> 00:20:48,220
@@ -2244,7 +2244,7 @@ extension that you wrote for
 488
 00:21:22,560 --> 00:21:30,002
 Sublime, and this actually came
-because my friend uses--
+because my friend uses &mdash;
 
 489
 00:21:30,002 --> 00:21:32,000
@@ -2302,7 +2302,7 @@ PAUL IRISH: So you did that?
 500
 00:21:53,110 --> 00:21:54,890
 SINDRE SORHUS: Yeah, I thought
-it looked useful, so--
+it looked useful, so &mdash;
 
 501
 00:21:54,890 --> 00:21:56,050
@@ -2417,11 +2417,11 @@ selecting just a single line.
 525
 00:22:48,420 --> 00:22:49,280
 SINDRE SORHUS: I
-could add to--
+could add to &mdash;
 
 526
 00:22:49,280 --> 00:22:50,530
-I could just--
+I could just &mdash;
 
 527
 00:22:50,530 --> 00:22:55,020
@@ -2466,7 +2466,7 @@ people get that?
 
 536
 00:23:14,330 --> 00:23:15,440
-Can they get that through--
+Can they get that through &mdash;
 
 537
 00:23:15,440 --> 00:23:16,200
@@ -2534,7 +2534,7 @@ show you some more stuff.
 
 551
 00:23:41,510 --> 00:23:43,022
-So over--
+So over &mdash;
 
 552
 00:23:43,022 --> 00:23:44,730
@@ -2926,7 +2926,7 @@ thing just give
 
 634
 00:26:59,560 --> 00:27:00,670
-you only the ones--
+you only the ones &mdash;
 
 635
 00:27:00,670 --> 00:27:02,670
@@ -3018,7 +3018,7 @@ expressions.
 653
 00:27:42,140 --> 00:27:45,080
 So in my case, I want to
-find a file called--
+find a file called &mdash;
 
 654
 00:27:45,080 --> 00:27:49,330
@@ -3084,7 +3084,7 @@ in my song.js snippet.
 667
 00:28:25,120 --> 00:28:30,920
 Now if I run Command
-Shift and E--
+Shift and E &mdash;
 
 668
 00:28:30,920 --> 00:28:31,660
@@ -3185,7 +3185,7 @@ ADDY OSMANI: Yeah.
 689
 00:29:15,400 --> 00:29:18,260
 PAUL IRISH: Are we going to
-get a listing of all the--
+get a listing of all the &mdash;
 
 690
 00:29:18,260 --> 00:29:19,930
@@ -3342,7 +3342,7 @@ questions we've got.
 724
 00:30:13,230 --> 00:30:15,870
 PAUL IRISH: Sergey from,
-um-- oh, wow.
+um &mdash; oh, wow.
 
 725
 00:30:15,870 --> 00:30:16,730
@@ -3373,7 +3373,7 @@ We missed our Yeoman
 731
 00:30:23,980 --> 00:30:25,515
 MALE SPEAKER: Dude, we
-should swing that--
+should swing that &mdash;
 
 732
 00:30:25,515 --> 00:30:27,085
@@ -3423,7 +3423,7 @@ Build hook.
 
 742
 00:30:50,990 --> 00:30:52,795
-Well, you know-- basically,
+Well, you know &mdash; basically,
 yeah.
 
 743
@@ -3460,7 +3460,7 @@ for committing optimized
 750
 00:31:11,830 --> 00:31:14,830
 images if you don't
-feel like--
+feel like &mdash;
 
 751
 00:31:14,830 --> 00:31:16,680
@@ -3561,7 +3561,7 @@ ever be there.
 771
 00:31:57,830 --> 00:32:00,485
 I don't think that, even
-on a project page--
+on a project page &mdash;
 
 772
 00:32:00,485 --> 00:32:02,370
@@ -3598,7 +3598,7 @@ don't have that option.
 779
 00:32:15,230 --> 00:32:16,750
 MALE SPEAKER: But in general,
-though, like if--
+though, like if &mdash;
 
 780
 00:32:16,750 --> 00:32:19,970
@@ -3688,7 +3688,7 @@ bunch of other questions, but
 
 798
 00:32:52,000 --> 00:32:53,140
-before we do this--
+before we do this &mdash;
 
 799
 00:32:53,140 --> 00:32:55,180
@@ -3810,7 +3810,7 @@ current version of
 
 825
 00:33:54,080 --> 00:33:56,410
-[INAUDIBLE], which--
+[INAUDIBLE], which &mdash;
 
 826
 00:33:56,410 --> 00:34:01,240
@@ -3875,7 +3875,7 @@ place where people can
 
 839
 00:34:28,750 --> 00:34:29,120
-go and check out--
+go and check out &mdash;
 
 840
 00:34:29,120 --> 00:34:29,510
@@ -4042,7 +4042,7 @@ control, exactly.
 875
 00:35:49,570 --> 00:35:52,430
 And that's what the users have
-been asking for, so--
+been asking for, so &mdash;
 
 876
 00:35:52,430 --> 00:35:53,760
@@ -4408,7 +4408,7 @@ to answer any more
 
 954
 00:39:24,950 --> 00:39:26,140
-questions, or are you--
+questions, or are you &mdash;
 
 955
 00:39:26,140 --> 00:39:26,880
@@ -4448,7 +4448,7 @@ OK.
 
 964
 00:39:48,190 --> 00:39:49,885
-So Sergey asks--
+So Sergey asks &mdash;
 
 965
 00:39:49,885 --> 00:39:51,230
@@ -4544,7 +4544,7 @@ in the meantime, I think Rails
 
 985
 00:40:51,780 --> 00:40:52,810
-as a pipeline would be--
+as a pipeline would be &mdash;
 
 986
 00:40:52,810 --> 00:40:54,060

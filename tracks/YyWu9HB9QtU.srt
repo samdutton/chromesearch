@@ -1269,7 +1269,7 @@ expression.
 272
 00:13:58,540 --> 00:14:02,730
 What you then would like to
-do and what we provide--
+do and what we provide &mdash;
 
 273
 00:14:02,730 --> 00:14:05,550
@@ -1375,7 +1375,7 @@ CHROMEVOX VOICE: Entered math.
 
 296
 00:15:03,520 --> 00:15:05,910
-x equals minus b plus/minus--
+x equals minus b plus/minus &mdash;
 
 297
 00:15:05,910 --> 00:15:07,600
@@ -1407,7 +1407,7 @@ with your cursor keys.
 
 303
 00:15:16,180 --> 00:15:17,030
-CHROMEVOX VOICE: x equals-- x.
+CHROMEVOX VOICE: x equals &mdash; x.
 
 304
 00:15:17,030 --> 00:15:17,380
@@ -1416,11 +1416,11 @@ VOLKER SORGE: All right?
 305
 00:15:17,380 --> 00:15:19,340
 So we can start the first
-thing and then--
+thing and then &mdash;
 
 306
 00:15:19,340 --> 00:15:19,880
-CHROMEVOX VOICE: Sticky--
+CHROMEVOX VOICE: Sticky &mdash;
 
 307
 00:15:19,880 --> 00:15:20,820
@@ -1478,7 +1478,7 @@ CHROMEVOX VOICE: Entered math.
 
 320
 00:15:38,430 --> 00:15:40,130
-x equals minus--
+x equals minus &mdash;
 
 321
 00:15:40,130 --> 00:15:53,660
@@ -1490,7 +1490,7 @@ square root
 
 323
 00:15:57,290 --> 00:15:58,080
-of b squared minus--
+of b squared minus &mdash;
 
 324
 00:15:58,080 --> 00:15:58,185
@@ -1529,7 +1529,7 @@ divided by 2a.
 332
 00:16:14,760 --> 00:16:20,134
 Wrap to top. x equals
-minus b plus/minus--
+minus b plus/minus &mdash;
 
 333
 00:16:20,134 --> 00:16:20,610
@@ -1547,7 +1547,7 @@ the math expression.
 336
 00:16:23,190 --> 00:16:24,660
 CHROMEVOX VOICE: --minus b
-plus/minus square root of--
+plus/minus square root of &mdash;
 
 337
 00:16:24,660 --> 00:16:24,970
@@ -1660,19 +1660,19 @@ minus b plus/minus.
 
 361
 00:17:22,119 --> 00:17:25,160
-x equals minus b plus--
+x equals minus b plus &mdash;
 
 362
 00:17:25,160 --> 00:17:28,710
-x equals minus b-- x equals--
+x equals minus b &mdash; x equals &mdash;
 
 363
 00:17:28,710 --> 00:17:29,610
-x equals--
+x equals &mdash;
 
 364
 00:17:29,610 --> 00:17:30,680
-x--
+x &mdash;
 
 365
 00:17:30,680 --> 00:17:31,015
@@ -1715,27 +1715,27 @@ the left-hand side.
 
 374
 00:17:42,240 --> 00:17:42,750
-If I go back--
+If I go back &mdash;
 
 375
 00:17:42,750 --> 00:17:43,020
-CHROMEVOX VOICE: x--
+CHROMEVOX VOICE: x &mdash;
 
 376
 00:17:43,020 --> 00:17:43,920
-VOLKER SORGE: --x--
+VOLKER SORGE: --x &mdash;
 
 377
 00:17:43,920 --> 00:17:44,310
-CHROMEVOX VOICE: --equals--
+CHROMEVOX VOICE: --equals &mdash;
 
 378
 00:17:44,310 --> 00:17:46,070
-VOLKER SORGE: --equals--
+VOLKER SORGE: --equals &mdash;
 
 379
 00:17:46,070 --> 00:17:46,850
-CHROMEVOX VOICE: --minus b--
+CHROMEVOX VOICE: --minus b &mdash;
 
 380
 00:17:46,850 --> 00:17:48,180
@@ -1851,7 +1851,7 @@ CHROMEVOX VOICE: Cut.
 404
 00:18:35,810 --> 00:18:37,540
 VOLKER SORGE: And then once
-we're outside the expression--
+we're outside the expression &mdash;
 
 405
 00:18:37,540 --> 00:18:38,700
@@ -1964,12 +1964,12 @@ you're familiar with natural
 
 428
 00:19:51,120 --> 00:19:52,220
-deduction calculations--
+deduction calculations &mdash;
 
 429
 00:19:52,220 --> 00:19:55,120
 some with you might be from
-your logic class--
+your logic class &mdash;
 
 430
 00:19:55,120 --> 00:19:56,940
@@ -2391,7 +2391,7 @@ Code highlighting enabled.
 
 519
 00:24:28,300 --> 00:24:29,630
-And when I turn it off--
+And when I turn it off &mdash;
 
 520
 00:24:29,630 --> 00:24:31,500
@@ -2568,7 +2568,7 @@ those notes to me.
 
 558
 00:25:50,790 --> 00:25:52,045
-And now if I dismiss them--
+And now if I dismiss them &mdash;
 
 559
 00:25:52,045 --> 00:25:52,655
@@ -2591,7 +2591,7 @@ on a slide where I don't
 
 563
 00:25:59,630 --> 00:26:00,660
-have speaker notes--
+have speaker notes &mdash;
 
 564
 00:26:00,660 --> 00:26:02,460
@@ -2662,7 +2662,7 @@ me to control the voice.
 
 578
 00:26:30,230 --> 00:26:31,810
-So if you listen carefully--
+So if you listen carefully &mdash;
 
 579
 00:26:31,810 --> 00:26:34,460
@@ -2776,7 +2776,7 @@ management.
 
 602
 00:27:31,160 --> 00:27:31,980
-And again--
+And again &mdash;
 
 603
 00:27:31,980 --> 00:27:33,740
@@ -2813,7 +2813,7 @@ Handling user navigation.
 
 610
 00:27:44,850 --> 00:27:46,080
-Functions--
+Functions &mdash;
 
 611
 00:27:46,080 --> 00:27:49,990
@@ -2945,7 +2945,7 @@ user navigation.
 
 638
 00:28:49,490 --> 00:28:50,010
-Heading--
+Heading &mdash;
 
 639
 00:28:50,010 --> 00:28:50,330
@@ -3173,7 +3173,7 @@ set up a phonetic
 
 687
 00:30:58,000 --> 00:31:00,980
-dictionary that you could--
+dictionary that you could &mdash;
 
 688
 00:31:00,980 --> 00:31:06,040

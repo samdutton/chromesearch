@@ -263,11 +263,11 @@ where we took all the
 57
 00:02:46,310 --> 00:02:48,000
 content from our different
-back ends--
+back ends &mdash;
 
 58
 00:02:48,000 --> 00:02:49,580
-maps, videos, images--
+maps, videos, images &mdash;
 
 59
 00:02:49,580 --> 00:02:52,340
@@ -396,7 +396,7 @@ It was very chaotic.
 86
 00:03:53,180 --> 00:03:55,580
 And it's kind of
-hard to know--
+hard to know &mdash;
 
 87
 00:03:55,580 --> 00:03:58,790

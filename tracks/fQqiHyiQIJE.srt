@@ -84,7 +84,7 @@ application,
 
 19
 00:00:40,320 --> 00:00:41,440
-perhaps on one platform--
+perhaps on one platform &mdash;
 
 20
 00:00:41,440 --> 00:00:43,150
@@ -93,7 +93,7 @@ successful Android
 
 21
 00:00:43,150 --> 00:00:44,330
-application--
+application &mdash;
 
 22
 00:00:44,330 --> 00:00:47,810
@@ -753,12 +753,12 @@ you have limited
 
 159
 00:06:46,100 --> 00:06:48,040
-resources, limited power--
+resources, limited power &mdash;
 
 160
 00:06:48,040 --> 00:06:50,410
 maybe you need to get to
-market really quickly--
+market really quickly &mdash;
 
 161
 00:06:50,410 --> 00:06:51,600
@@ -1167,7 +1167,7 @@ there's a balancing act
 246
 00:10:20,600 --> 00:10:23,060
 between cross-platform
-consistency--
+consistency &mdash;
 
 247
 00:10:23,060 --> 00:10:24,930
@@ -1176,12 +1176,12 @@ apps on the different
 
 248
 00:10:24,930 --> 00:10:25,770
-platforms--
+platforms &mdash;
 
 249
 00:10:25,770 --> 00:10:27,270
 and intra-platform
-consistency--
+consistency &mdash;
 
 250
 00:10:27,270 --> 00:10:29,330
@@ -1194,7 +1194,7 @@ apps on the same platform.
 
 252
 00:10:31,500 --> 00:10:32,630
-So as an example of this--
+So as an example of this &mdash;
 
 253
 00:10:32,630 --> 00:10:34,120
@@ -1694,15 +1694,15 @@ talks to your
 
 358
 00:14:43,040 --> 00:14:44,890
-server using JSON--
+server using JSON &mdash;
 
 359
 00:14:44,890 --> 00:14:47,380
-JavaScript Object Notation--
+JavaScript Object Notation &mdash;
 
 360
 00:14:47,380 --> 00:14:49,680
-then if you add another client--
+then if you add another client &mdash;
 let's say you added
 
 361
@@ -1863,7 +1863,7 @@ There's Directions.
 394
 00:16:16,600 --> 00:16:19,315
 There's Distance Matrix, Places
-Search-- a whole slew
+Search &mdash; a whole slew
 
 395
 00:16:19,315 --> 00:16:20,340
@@ -2114,16 +2114,16 @@ to think about should he put
 448
 00:18:03,840 --> 00:18:05,790
 more effort into the frontend
-or the backend--
+or the backend &mdash;
 
 449
 00:18:05,790 --> 00:18:08,120
-I say the frontend--
+I say the frontend &mdash;
 
 450
 00:18:08,120 --> 00:18:10,260
 or he's going to put more
-effort in a trade-off--
+effort in a trade-off &mdash;
 
 451
 00:18:10,260 --> 00:18:11,983
@@ -2527,7 +2527,7 @@ image, a 256-pixel by
 537
 00:24:33,190 --> 00:24:38,670
 256-pixel image uniquely
-identified by three numbers--
+identified by three numbers &mdash;
 
 538
 00:24:38,670 --> 00:24:44,220
@@ -2548,11 +2548,11 @@ service would process and
 
 542
 00:24:56,150 --> 00:24:58,730
-normalize some external data--
+normalize some external data &mdash;
 
 543
 00:24:58,730 --> 00:25:00,880
-sometimes in XML format--
+sometimes in XML format &mdash;
 
 544
 00:25:00,880 --> 00:25:05,420
@@ -2711,7 +2711,7 @@ caching strategy.
 576
 00:27:09,490 --> 00:27:13,900
 At Trulia, we cache the tile
-images at three levels--
+images at three levels &mdash;
 
 577
 00:27:13,900 --> 00:27:17,410

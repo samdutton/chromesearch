@@ -905,7 +905,7 @@ resource scheduling
 189
 00:07:41,429 --> 00:07:43,970
 on the client, which is kind of
-this like this fake latency--
+this like this fake latency &mdash;
 
 190
 00:07:43,970 --> 00:07:46,540
@@ -1697,7 +1697,7 @@ we're iterating on.
 
 353
 00:14:41,810 --> 00:14:44,265
-And then once HTTP 2.0-- I
+And then once HTTP 2.0 &mdash; I
 know this is a common question.
 
 354
@@ -1804,7 +1804,7 @@ compared to HTTPS.
 375
 00:15:42,720 --> 00:15:45,510
 And in some cases,
-we're actually-- so even
+we're actually &mdash; so even
 
 376
 00:15:45,510 --> 00:15:49,690
@@ -2307,12 +2307,12 @@ example, access YouTube,
 
 480
 00:20:10,290 --> 00:20:14,250
-and you'll get served--
+and you'll get served &mdash;
 youtube.com or other Google
 
 481
 00:20:14,250 --> 00:20:16,950
-service-- over UDP, over QUIC.
+service &mdash; over UDP, over QUIC.
 
 482
 00:20:16,950 --> 00:20:19,880
@@ -3119,7 +3119,7 @@ the tech gets painted.
 650
 00:27:34,060 --> 00:27:37,865
 So the question is,
-how is-- in this case,
+how is &mdash; in this case,
 
 651
 00:27:37,865 --> 00:27:38,740

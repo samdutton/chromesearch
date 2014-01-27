@@ -365,7 +365,7 @@ the application in general.
 
 77
 00:03:21,734 --> 00:03:24,334
-So that can cause--
+So that can cause &mdash;
 application vendors
 
 78
@@ -727,11 +727,11 @@ tons of features
 152
 00:06:18,534 --> 00:06:20,167
 that a lot of users
-would want--
+would want &mdash;
 
 153
 00:06:20,167 --> 00:06:21,767
-a majority of users would want--
+a majority of users would want &mdash;
 
 154
 00:06:21,767 --> 00:06:23,334
@@ -1048,7 +1048,7 @@ more frequently,
 
 219
 00:08:51,567 --> 00:08:54,167
-it may be a little bit slower--
+it may be a little bit slower &mdash;
 things like that.
 
 220
@@ -1218,7 +1218,7 @@ the exact same technologies
 254
 00:10:24,267 --> 00:10:26,234
 that you use to write
-web pages--
+web pages &mdash;
 
 255
 00:10:26,234 --> 00:10:27,901
@@ -2240,7 +2240,7 @@ Oops.
 
 469
 00:19:44,334 --> 00:19:45,968
-So another important--
+So another important &mdash;
 
 470
 00:19:45,968 --> 00:19:47,601
@@ -2443,12 +2443,12 @@ That doesn't make sense.
 512
 00:21:21,601 --> 00:21:23,701
 But for extensions,
-since you install extensions--
+since you install extensions &mdash;
 
 513
 00:21:23,701 --> 00:21:25,901
 it's a conscious decision
-to install an extension--
+to install an extension &mdash;
 
 514
 00:21:25,901 --> 00:21:27,534
@@ -2481,7 +2481,7 @@ The way this works is that...
 520
 00:21:43,367 --> 00:21:45,000
 in an extension,
-you have to--
+you have to &mdash;
 
 521
 00:21:45,000 --> 00:21:47,167
@@ -3194,7 +3194,7 @@ with these APIs
 
 672
 00:28:07,734 --> 00:28:09,934
-is around two main points--
+is around two main points &mdash;
 
 673
 00:28:09,934 --> 00:28:11,400
@@ -3656,7 +3656,7 @@ from the bookmark system.
 769
 00:32:14,634 --> 00:32:16,434
 We're gonna put
-all of the feed--
+all of the feed &mdash;
 
 770
 00:32:16,434 --> 00:32:19,033
@@ -3724,7 +3724,7 @@ And there it is.
 783
 00:33:03,100 --> 00:33:07,067
 So now I have this feeds folder,
-and inside each one I have--
+and inside each one I have &mdash;
 
 784
 00:33:07,067 --> 00:33:09,734
@@ -3818,7 +3818,7 @@ that we'll build out.
 
 803
 00:34:03,300 --> 00:34:05,934
-And...so if you don't--
+And...so if you don't &mdash;
 
 804
 00:34:05,934 --> 00:34:08,234
@@ -4116,7 +4116,7 @@ or using a lot of memory,
 866
 00:36:20,901 --> 00:36:23,100
 it's okay because
-most modern browser--
+most modern browser &mdash;
 
 867
 00:36:23,100 --> 00:36:26,067
@@ -4558,7 +4558,7 @@ directly.
 
 958
 00:40:31,534 --> 00:40:34,901
-Every--
+Every &mdash;
 
 959
 00:40:34,901 --> 00:40:36,567
@@ -4586,7 +4586,7 @@ mode right now,
 
 964
 00:40:46,501 --> 00:40:47,801
-these IDs are just--
+these IDs are just &mdash;
 
 965
 00:40:47,801 --> 00:40:49,400
@@ -4766,7 +4766,7 @@ It...yeah.
 
 1002
 00:42:23,767 --> 00:42:26,200
-Except for the--
+Except for the &mdash;
 the question is
 
 1003
@@ -4913,7 +4913,7 @@ with this extension
 
 1033
 00:43:34,801 --> 00:43:36,300
-is right now we have--
+is right now we have &mdash;
 
 1034
 00:43:36,300 --> 00:43:40,534
@@ -5203,7 +5203,7 @@ management page that we have.
 
 1095
 00:46:21,901 --> 00:46:24,300
-This will eventually--
+This will eventually &mdash;
 this is obviously early UI.
 
 1096
@@ -5232,7 +5232,7 @@ all the views in your extension.
 
 1101
 00:46:36,534 --> 00:46:38,000
-And you can see there's two--
+And you can see there's two &mdash;
 
 1102
 00:46:38,000 --> 00:46:40,100
@@ -5336,12 +5336,12 @@ refresh button...
 1123
 00:47:31,767 --> 00:47:33,667
 in my extension
-so that I could--
+so that I could &mdash;
 
 1124
 00:47:33,667 --> 00:47:35,501
 if I wanted to know
-how many--
+how many &mdash;
 
 1125
 00:47:35,501 --> 00:47:38,200
@@ -6239,7 +6239,7 @@ Goodman: Okay.
 1313
 00:56:15,367 --> 00:56:16,801
 That's not something
-we've thought about--
+we've thought about &mdash;
 
 1314
 00:56:16,801 --> 00:56:18,400
@@ -6267,7 +6267,7 @@ that you can use to create them.
 
 1319
 00:56:27,534 --> 00:56:29,801
-And the format is trivial--
+And the format is trivial &mdash;
 it's like a zip file
 
 1320
@@ -6523,7 +6523,7 @@ to install them.
 
 1372
 00:58:26,667 --> 00:58:28,267
-We don't have any--
+We don't have any &mdash;
 
 1373
 00:58:28,267 --> 00:58:30,634
@@ -6583,12 +6583,12 @@ that walks you through it.
 
 1385
 00:58:53,834 --> 00:58:55,234
-You can talk to--
+You can talk to &mdash;
 
 1386
 00:58:55,234 --> 00:58:57,133
 there's a bunch of extension
-developers here today--
+developers here today &mdash;
 
 1387
 00:58:57,133 --> 00:58:58,400
@@ -6681,7 +6681,7 @@ properties?
 1406
 00:59:47,601 --> 00:59:49,467
 Goodman: Yes.
-The question is will Chrome--
+The question is will Chrome &mdash;
 
 1407
 00:59:49,467 --> 00:59:51,000
@@ -6739,7 +6739,7 @@ to talk to servers
 1418
 01:00:16,567 --> 01:00:19,634
 that have not opted in
-to receiving cross-origin--
+to receiving cross-origin &mdash;
 
 1419
 01:00:19,634 --> 01:00:21,801
@@ -6753,7 +6753,7 @@ to bypass the...
 1421
 01:00:24,334 --> 01:00:26,200
 Goodman: It's a way
-for extensions to--
+for extensions to &mdash;
 
 1422
 01:00:26,200 --> 01:00:30,901
@@ -6829,7 +6829,7 @@ maybe for users
 1437
 01:01:03,200 --> 01:01:06,234
 to even figure out
-which extensions caused--
+which extensions caused &mdash;
 
 1438
 01:01:06,234 --> 01:01:07,901
@@ -7013,7 +7013,7 @@ can't talk about specific dates,
 1476
 01:02:26,000 --> 01:02:28,400
 but--and I'll leave
-after this--
+after this &mdash;
 
 1477
 01:02:28,400 --> 01:02:32,801
@@ -7065,7 +7065,7 @@ to be using this now?
 1487
 01:02:50,601 --> 01:02:54,400
 Goodman: Unfortunately,
-I, of course, haven't--
+I, of course, haven't &mdash;
 
 1488
 01:02:54,400 --> 01:02:56,200
@@ -7098,7 +7098,7 @@ when it's not being recorded.
 
 1494
 01:03:06,234 --> 01:03:07,234
-Goodman: Sorry--
+Goodman: Sorry &mdash;
 
 1495
 01:03:07,234 --> 01:03:08,734

@@ -110,7 +110,7 @@ on the actual browser engine?
 
 25
 00:00:53,120 --> 00:00:56,370
-What do you have-- what's coming
+What do you have &mdash; what's coming
 new in the next six months
 
 26
@@ -158,7 +158,7 @@ happened since we forked WebKit?
 36
 00:01:20,567 --> 00:01:22,400
 And what we're going
-to be doing-- you know,
+to be doing &mdash; you know,
 
 37
 00:01:22,400 --> 00:01:24,660
@@ -199,7 +199,7 @@ schedule is.
 45
 00:01:37,520 --> 00:01:39,620
 So we're going to
-start by having Eric--
+start by having Eric &mdash;
 
 46
 00:01:39,620 --> 00:01:42,420
@@ -612,7 +612,7 @@ behind a compile time flag.
 132
 00:05:12,600 --> 00:05:15,225
 So to talk about other code
-changes that we've made--
+changes that we've made &mdash;
 
 133
 00:05:15,225 --> 00:05:16,600
@@ -809,7 +809,7 @@ GREG SIMON: Yeah.
 
 174
 00:07:08,440 --> 00:07:11,280
-This is the-- so one
+This is the &mdash; so one
 of the most requested
 
 175
@@ -823,7 +823,7 @@ And we finally have it working.
 
 177
 00:07:21,070 --> 00:07:24,590
-What it is-- it's
+What it is &mdash; it's
 a JavaScript API
 
 178
@@ -865,7 +865,7 @@ GREG SIMON: Yeah.
 
 186
 00:07:42,440 --> 00:07:44,820
-ERIC SEIDEL: Which is the--
+ERIC SEIDEL: Which is the &mdash;
 
 187
 00:07:44,820 --> 00:07:47,002
@@ -893,7 +893,7 @@ And we're live.
 
 193
 00:07:51,385 --> 00:07:55,300
-So here, I've got-- I'm
+So here, I've got &mdash; I'm
 just playing a loop.
 
 194
@@ -1217,7 +1217,7 @@ same team produced for us
 
 261
 00:10:43,050 --> 00:10:47,670
-in the last couple months is--
+in the last couple months is &mdash;
 they ran a million websites
 
 262
@@ -1242,7 +1242,7 @@ of hours in mobile.
 266
 00:10:59,277 --> 00:11:01,110
 And what you can see
-on this is-- this graph
+on this is &mdash; this graph
 
 267
 00:11:01,110 --> 00:11:04,570
@@ -1405,7 +1405,7 @@ through or seen, et cetera.
 301
 00:12:23,450 --> 00:12:28,910
 We've actually been shipping
-this for-- the video player
+this for &mdash; the video player
 
 302
 00:12:28,910 --> 00:12:30,780
@@ -1512,7 +1512,7 @@ now table stakes.
 
 324
 00:13:42,670 --> 00:13:49,350
-And so you can't--
+And so you can't &mdash;
 so we realize this.
 
 325
@@ -1594,7 +1594,7 @@ running out of tablet here.
 
 341
 00:14:39,440 --> 00:14:43,100
-So I've got-- this is actually
+So I've got &mdash; this is actually
 much smoother than that.
 
 342
@@ -1641,7 +1641,7 @@ and writing the new back
 
 351
 00:15:14,960 --> 00:15:18,340
-end-- they started
+end &mdash; they started
 by doing a polyfill.
 
 352
@@ -1656,7 +1656,7 @@ of web animations
 
 354
 00:15:23,400 --> 00:15:31,890
-here-- so here I've got
+here &mdash; so here I've got
 two separate animations.
 
 355
@@ -1744,7 +1744,7 @@ one div is placed.
 
 373
 00:16:19,640 --> 00:16:24,100
-And what happens is--
+And what happens is &mdash;
 the clicker doesn't work.
 
 374
@@ -1881,7 +1881,7 @@ can see by this.
 
 401
 00:17:46,910 --> 00:17:52,360
-We've got-- this is Hacker
+We've got &mdash; this is Hacker
 News talking about the MotoG,
 
 402
@@ -1944,7 +1944,7 @@ features was tables.
 414
 00:18:23,810 --> 00:18:26,742
 And it took a lot of code
-to write tables because--
+to write tables because &mdash;
 
 415
 00:18:26,742 --> 00:18:28,200
@@ -2044,7 +2044,7 @@ the API looks like.
 435
 00:19:25,650 --> 00:19:30,050
 There's been many patches landed
-inside Blink for-- of course,
+inside Blink for &mdash; of course,
 
 436
 00:19:30,050 --> 00:19:31,120
@@ -2111,7 +2111,7 @@ the web platform, right?
 449
 00:20:04,420 --> 00:20:07,720
 I mean, we really need
-to have-- the success
+to have &mdash; the success
 
 450
 00:20:07,720 --> 00:20:11,450
@@ -2135,7 +2135,7 @@ browser to do it as well.
 
 454
 00:20:20,380 --> 00:20:22,740
-This is also-- sub-pixel fonts.
+This is also &mdash; sub-pixel fonts.
 
 455
 00:20:22,740 --> 00:20:25,870
@@ -2149,12 +2149,12 @@ They can certainly be improved.
 457
 00:20:27,430 --> 00:20:30,700
 A year ago, we shipped the
-change at WebKit-- actually,
+change at WebKit &mdash; actually,
 
 458
 00:20:30,700 --> 00:20:32,780
 a year and a half
-ago-- which was we
+ago &mdash; which was we
 
 459
 00:20:32,780 --> 00:20:38,230
@@ -2277,7 +2277,7 @@ It's very subtle.
 
 484
 00:21:48,120 --> 00:21:49,480
-Look-- whoa, what did I just do?
+Look &mdash; whoa, what did I just do?
 
 485
 00:21:49,480 --> 00:21:52,400
@@ -2313,7 +2313,7 @@ All right.
 
 493
 00:22:02,800 --> 00:22:05,120
-That's-- oh, well.
+That's &mdash; oh, well.
 
 494
 00:22:05,120 --> 00:22:08,280
@@ -2339,7 +2339,7 @@ This was actually a big change.
 499
 00:22:19,980 --> 00:22:25,190
 Skia, which is the graphic
-system inside Blink--
+system inside Blink &mdash;
 
 500
 00:22:25,190 --> 00:22:28,590
@@ -2391,7 +2391,7 @@ piece of your life as well.
 
 510
 00:23:05,250 --> 00:23:08,975
-The speed team-- they
+The speed team &mdash; they
 are maniacs about speed,
 
 511
@@ -2588,8 +2588,8 @@ path to anything getting
 
 552
 00:25:01,370 --> 00:25:04,250
-changed in Blink-- at least,
-anything web facing-- is a bug.
+changed in Blink &mdash; at least,
+anything web facing &mdash; is a bug.
 
 553
 00:25:04,250 --> 00:25:06,680

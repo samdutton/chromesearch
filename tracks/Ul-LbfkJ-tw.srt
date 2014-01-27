@@ -42,12 +42,12 @@ with Google, as well some of
 10
 00:00:25,680 --> 00:00:28,370
 the top heavy hitters in
-the GWT community--
+the GWT community &mdash;
 
 11
 00:00:28,370 --> 00:00:32,009
 people like Sencha, people like
-Vaddin, like Red Hat--
+Vaddin, like Red Hat &mdash;
 
 12
 00:00:32,009 --> 00:00:36,360
@@ -1092,7 +1092,7 @@ external repository and
 229
 00:09:51,360 --> 00:09:53,270
 closing issues that
-are really stale--
+are really stale &mdash;
 
 230
 00:09:53,270 --> 00:09:56,890
@@ -1179,12 +1179,12 @@ class out there somewhere.
 247
 00:10:41,790 --> 00:10:44,860
 So a big part of this
-is for GWT 3.0--
+is for GWT 3.0 &mdash;
 
 248
 00:10:44,860 --> 00:10:47,250
 not next release but the
-release after that--
+release after that &mdash;
 
 249
 00:10:47,250 --> 00:10:51,150
@@ -2619,7 +2619,7 @@ the same RPC, the same almost
 
 553
 00:23:54,550 --> 00:23:56,750
-everything--
+everything &mdash;
 
 554
 00:23:56,750 --> 00:23:59,350
@@ -2629,7 +2629,7 @@ because you want to have
 555
 00:23:59,350 --> 00:24:02,740
 different views on a phone
-up to the desktop--
+up to the desktop &mdash;
 
 556
 00:24:02,740 --> 00:24:04,200
@@ -2719,7 +2719,7 @@ application.
 575
 00:24:50,900 --> 00:24:55,340
 If I actually go ahead and turn
-the phone, you can see--
+the phone, you can see &mdash;
 
 576
 00:24:55,340 --> 00:24:56,590
@@ -3058,7 +3058,7 @@ a native view.
 
 648
 00:28:19,050 --> 00:28:21,510
-And we can just hit Use-- that's
+And we can just hit Use &mdash; that's
 a German phone, so
 
 649
@@ -3067,7 +3067,7 @@ a German phone, so
 
 650
 00:28:21,600 --> 00:28:22,910
-is "Use" in German--
+is "Use" in German &mdash;
 
 651
 00:28:22,910 --> 00:28:25,020
@@ -3487,12 +3487,12 @@ for hosting all this stuff.
 740
 00:32:14,650 --> 00:32:18,370
 Thanks to Vaadin and
-Julienne Dramaix--
+Julienne Dramaix &mdash;
 
 741
 00:32:18,370 --> 00:32:19,920
 I hope that's how you
-pronounce it-- of
+pronounce it &mdash; of
 
 742
 00:32:19,920 --> 00:32:21,200
@@ -3654,7 +3654,7 @@ can be used uniquely from
 
 776
 00:33:58,790 --> 00:34:00,460
-JavaScript without having--
+JavaScript without having &mdash;
 
 777
 00:34:00,460 --> 00:34:01,190
@@ -3789,7 +3789,7 @@ of the public box.
 
 805
 00:35:09,260 --> 00:35:12,700
-Is there any kind of--
+Is there any kind of &mdash;
 
 806
 00:35:12,700 --> 00:35:13,790

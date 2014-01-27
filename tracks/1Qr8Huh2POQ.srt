@@ -133,7 +133,7 @@ devote at least 50% of our
 
 29
 00:01:42,986 --> 00:01:45,560
-time to listen to developers--
+time to listen to developers &mdash;
 it could be
 
 30
@@ -143,7 +143,7 @@ developers in startups.
 31
 00:01:46,700 --> 00:01:49,260
 It could be developers in
-big organizations--
+big organizations &mdash;
 
 32
 00:01:49,260 --> 00:01:53,210
@@ -228,7 +228,7 @@ course on my blog.
 49
 00:02:38,300 --> 00:02:41,800
 So first and foremost, when we
-are starting a company-- and
+are starting a company &mdash; and
 
 50
 00:02:41,800 --> 00:02:45,260
@@ -237,7 +237,7 @@ I'm talking with young
 
 51
 00:02:45,260 --> 00:02:46,880
-entrepreneurs--
+entrepreneurs &mdash;
 
 52
 00:02:46,880 --> 00:02:50,740
@@ -369,7 +369,7 @@ dumb, too inefficient.
 78
 00:04:21,610 --> 00:04:23,910
 Keep in mind that if the
-company's active--
+company's active &mdash;
 
 79
 00:04:23,910 --> 00:04:27,430
@@ -987,7 +987,7 @@ startup, we actually called
 
 207
 00:11:17,350 --> 00:11:19,550
-ourself more of a--
+ourself more of a &mdash;
 
 208
 00:11:19,550 --> 00:11:22,760
@@ -1462,11 +1462,11 @@ coming to pitch to angel
 307
 00:16:42,825 --> 00:16:49,730
 investors, each and every
-sentence here is well--
+sentence here is well &mdash;
 
 308
 00:16:49,730 --> 00:16:51,120
-how should I put it--
+how should I put it &mdash;
 
 309
 00:16:51,120 --> 00:16:53,040

@@ -567,7 +567,7 @@ interesting to be
 
 122
 00:04:39,930 --> 00:04:42,720
-able-- NFC is obviously
+able &mdash; NFC is obviously
 not built in every machine,
 
 123
@@ -669,7 +669,7 @@ it soon, and [FRENCH].
 144
 00:05:33,920 --> 00:05:36,060
 FRANCOIS BEAUFORT: And
-if I can add something--
+if I can add something &mdash;
 
 145
 00:05:36,060 --> 00:05:36,500

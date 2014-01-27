@@ -83,7 +83,7 @@ create and share documents
 
 19
 00:00:47,230 --> 00:00:48,510
-across devices--
+across devices &mdash;
 
 20
 00:00:48,510 --> 00:00:53,150
@@ -221,7 +221,7 @@ But he had a slight problem.
 49
 00:02:05,900 --> 00:02:09,600
 He said, well, he is referring
-to a ton of sources--
+to a ton of sources &mdash;
 
 50
 00:02:09,600 --> 00:02:12,000
@@ -290,7 +290,7 @@ app in Google Docs.
 63
 00:02:46,220 --> 00:02:49,550
 And Bob said, yeah, I want to be
-able to add sources to it--
+able to add sources to it &mdash;
 
 64
 00:02:49,550 --> 00:02:52,590
@@ -476,7 +476,7 @@ from the napkin that
 104
 00:04:31,400 --> 00:04:33,990
 I was talking about, was he
-needs to add sources--
+needs to add sources &mdash;
 
 105
 00:04:33,990 --> 00:04:36,180
@@ -532,7 +532,7 @@ bottom of the document and
 116
 00:05:02,560 --> 00:05:05,310
 sees that, hey, here's
-this bibliography--
+this bibliography &mdash;
 
 117
 00:05:05,310 --> 00:05:09,210
@@ -773,7 +773,7 @@ you will see
 
 168
 00:07:31,160 --> 00:07:33,680
-two new menu options--
+two new menu options &mdash;
 
 169
 00:07:33,680 --> 00:07:37,310
@@ -854,7 +854,7 @@ want you to take away from
 
 186
 00:08:17,510 --> 00:08:22,090
-this session, it's this-- that
+this session, it's this &mdash; that
 DocumentApp is your starting
 
 187
@@ -1202,7 +1202,7 @@ straightforward.
 
 261
 00:12:14,320 --> 00:12:15,580
-So we covered three steps--
+So we covered three steps &mdash;
 
 262
 00:12:15,580 --> 00:12:18,510
@@ -1537,11 +1537,11 @@ body, you can see that it
 
 332
 00:14:58,750 --> 00:14:59,950
-contains elements--
+contains elements &mdash;
 
 333
 00:14:59,950 --> 00:15:02,390
-again, like in a web page-- it
+again, like in a web page &mdash; it
 contains elements for things
 
 334
@@ -1785,11 +1785,11 @@ APA format, for example.
 384
 00:17:01,660 --> 00:17:02,970
 So what we want Bibstro
-to do--
+to do &mdash;
 
 385
 00:17:02,970 --> 00:17:04,410
-and what it, in fact, does--
+and what it, in fact, does &mdash;
 
 386
 00:17:04,410 --> 00:17:07,400
@@ -1894,12 +1894,12 @@ bibliography begins.
 
 407
 00:18:01,060 --> 00:18:02,350
-So step one--
+So step one &mdash;
 
 408
 00:18:02,350 --> 00:18:04,120
 there's going to be three
-steps total--
+steps total &mdash;
 
 409
 00:18:04,120 --> 00:18:08,480
@@ -1919,7 +1919,7 @@ documentApp.getActiveDocument,
 412
 00:18:14,060 --> 00:18:16,930
 and we say getBody to get that
-body section-- the main
+body section &mdash; the main
 
 413
 00:18:16,930 --> 00:18:18,310
@@ -2087,11 +2087,11 @@ sibling elements.
 447
 00:19:35,080 --> 00:19:37,450
 Again, if you worked with the
-document tree in HTML--
+document tree in HTML &mdash;
 
 448
 00:19:37,450 --> 00:19:39,110
-with JQuery, for example--
+with JQuery, for example &mdash;
 
 449
 00:19:39,110 --> 00:19:40,100
@@ -2218,12 +2218,12 @@ it's going to say, take this
 475
 00:20:36,920 --> 00:20:39,920
 second paragraph, this
-bibliography entry paragraph--
+bibliography entry paragraph &mdash;
 
 476
 00:20:39,920 --> 00:20:41,790
 now it's empty because
-we just cleared it--
+we just cleared it &mdash;
 
 477
 00:20:41,790 --> 00:20:43,680
@@ -2348,7 +2348,7 @@ the document tree.
 502
 00:21:45,550 --> 00:21:47,190
 So we take the title
-paragraph--
+paragraph &mdash;
 
 503
 00:21:47,190 --> 00:21:49,680
@@ -3223,7 +3223,7 @@ lets us build apps that
 
 687
 00:28:48,140 --> 00:28:49,750
-automate Google Docs--
+automate Google Docs &mdash;
 
 688
 00:28:49,750 --> 00:28:53,500
@@ -3610,12 +3610,12 @@ SpreadsheetApp and DriveApp.
 
 771
 00:32:12,190 --> 00:32:13,490
-So what you could do--
+So what you could do &mdash;
 
 772
 00:32:13,490 --> 00:32:15,280
 I can't think of any
-reason not to--
+reason not to &mdash;
 
 773
 00:32:15,280 --> 00:32:18,720
@@ -3798,7 +3798,7 @@ their documents and stuff.
 811
 00:33:54,900 --> 00:33:56,180
 JONATHAN RASCHER: Yeah,
-do you want to--
+do you want to &mdash;
 
 812
 00:33:56,180 --> 00:33:58,260
@@ -3979,7 +3979,7 @@ document with someone, but I
 851
 00:35:23,200 --> 00:35:26,010
 don't want them to print
-them or download them--
+them or download them &mdash;
 
 852
 00:35:26,010 --> 00:35:28,890

@@ -110,7 +110,7 @@ the American sun?
 25
 00:01:48,930 --> 00:01:49,480
 PAUL KINLAN: It's
-a little bit--
+a little bit &mdash;
 
 26
 00:01:49,480 --> 00:01:51,660
@@ -1058,8 +1058,8 @@ that's what you put there.
 
 228
 00:09:58,990 --> 00:10:03,230
-And the name of the app-- let me
-put that in keys-- which is
+And the name of the app &mdash; let me
+put that in keys &mdash; which is
 
 229
 00:10:03,230 --> 00:10:05,750
@@ -1085,11 +1085,11 @@ that we want to
 
 234
 00:10:18,970 --> 00:10:23,904
-run is going to be--
+run is going to be &mdash;
 
 235
 00:10:23,904 --> 00:10:26,370
-get this right--
+get this right &mdash;
 
 236
 00:10:26,370 --> 00:10:27,590
@@ -1214,7 +1214,7 @@ list as well.
 262
 00:11:24,750 --> 00:11:26,130
 So you can break up your
-applications--
+applications &mdash;
 
 263
 00:11:26,130 --> 00:11:26,980
@@ -1261,7 +1261,7 @@ running in the background.
 272
 00:11:48,900 --> 00:11:51,900
 So the first thing we want to do
-is we want to-- and this on
+is we want to &mdash; and this on
 
 273
 00:11:51,900 --> 00:11:56,730
@@ -1311,7 +1311,7 @@ which is one of our new APIs.
 283
 00:12:22,310 --> 00:12:24,130
 Create, and we want
-to create--
+to create &mdash;
 
 284
 00:12:24,130 --> 00:12:27,460
@@ -1433,7 +1433,7 @@ create a packaged app.
 310
 00:13:21,610 --> 00:13:23,620
 So hopefully now, if
-I go over here--
+I go over here &mdash;
 
 311
 00:13:23,620 --> 00:13:26,170
@@ -1483,7 +1483,7 @@ So that's all working.
 
 321
 00:13:48,490 --> 00:13:49,290
-That's exactly--
+That's exactly &mdash;
 
 322
 00:13:49,290 --> 00:13:51,690
@@ -1579,7 +1579,7 @@ call this app.js.
 341
 00:14:37,360 --> 00:14:39,160
 Again, you don't have
-to call it--
+to call it &mdash;
 
 342
 00:14:39,160 --> 00:14:42,260
@@ -1642,7 +1642,7 @@ I need out to this app.js
 354
 00:15:13,520 --> 00:15:15,960
 file, which I'll go ahead
-and make now--
+and make now &mdash;
 
 355
 00:15:15,960 --> 00:15:16,720
@@ -1955,7 +1955,7 @@ messing with it.
 
 423
 00:18:09,620 --> 00:18:10,550
-And now--
+And now &mdash;
 
 424
 00:18:10,550 --> 00:18:11,637
@@ -2013,7 +2013,7 @@ it's access to USB or
 
 435
 00:18:40,630 --> 00:18:42,560
-Bluetooth--
+Bluetooth &mdash;
 
 436
 00:18:42,560 --> 00:18:44,680
@@ -2055,7 +2055,7 @@ PETE LAPAGE: Oh, yeah.
 444
 00:18:58,590 --> 00:19:00,550
 PAUL KINLAN: And
-then kind of--
+then kind of &mdash;
 
 445
 00:19:00,550 --> 00:19:02,870
@@ -2107,7 +2107,7 @@ button on-click, for instance,
 
 455
 00:19:26,520 --> 00:19:27,780
-which Paul didn't do--
+which Paul didn't do &mdash;
 
 456
 00:19:27,780 --> 00:19:29,630
@@ -2728,12 +2728,12 @@ Oops.
 586
 00:24:20,150 --> 00:24:22,120
 PAUL KINLAN: If you look on
-the developers.chrome--
+the developers.chrome &mdash;
 
 587
 00:24:22,120 --> 00:24:25,830
 is it developer.chrome or
-developers.chrome.com/apps--
+developers.chrome.com/apps &mdash;
 
 588
 00:24:25,830 --> 00:24:28,870
@@ -2940,7 +2940,7 @@ script source or image source.
 631
 00:26:15,180 --> 00:26:18,470
 In Chrome App package
-apps, they are not--
+apps, they are not &mdash;
 
 632
 00:26:18,470 --> 00:26:19,780
@@ -3145,7 +3145,7 @@ submit that asynchronously.
 
 675
 00:28:23,200 --> 00:28:26,060
-You cannot use the APIs--
+You cannot use the APIs &mdash;
 
 676
 00:28:26,060 --> 00:28:28,276
@@ -3294,7 +3294,7 @@ RENATO DIAS: Yeah, Exactly.
 
 708
 00:29:49,870 --> 00:29:52,640
-And the cookie--
+And the cookie &mdash;
 
 709
 00:29:52,640 --> 00:29:53,570
@@ -3447,7 +3447,7 @@ local storage a little bit
 
 742
 00:31:35,462 --> 00:31:36,860
-more and tell us why--
+more and tell us why &mdash;
 
 743
 00:31:36,860 --> 00:31:38,900
@@ -3520,7 +3520,7 @@ to be asynchronous.
 758
 00:32:09,150 --> 00:32:10,180
 One of the guiding
-principals--
+principals &mdash;
 
 759
 00:32:10,180 --> 00:32:11,570
@@ -3544,7 +3544,7 @@ to the application.
 
 763
 00:32:18,290 --> 00:32:20,090
-And the synchronized one--
+And the synchronized one &mdash;
 
 764
 00:32:20,090 --> 00:32:22,590
@@ -3573,7 +3573,7 @@ known strings.
 
 769
 00:32:37,475 --> 00:32:38,890
-PETE LAPAGE: So I can store--
+PETE LAPAGE: So I can store &mdash;
 
 770
 00:32:38,890 --> 00:32:40,390
@@ -3587,7 +3587,7 @@ objects in it.
 772
 00:32:41,510 --> 00:32:45,100
 So then with
-chrome.storage.sync--
+chrome.storage.sync &mdash;
 
 773
 00:32:45,100 --> 00:32:48,710
@@ -4135,7 +4135,7 @@ your Chrome app?"
 888
 00:36:54,410 --> 00:36:55,440
 PAUL KINLAN: I think
-the answer--
+the answer &mdash;
 
 889
 00:36:55,440 --> 00:36:57,440
@@ -4155,7 +4155,7 @@ are device policies.
 892
 00:37:02,580 --> 00:37:03,420
 There are policies
-for Chrome--
+for Chrome &mdash;
 
 893
 00:37:03,420 --> 00:37:05,910
@@ -4192,7 +4192,7 @@ if the question
 
 900
 00:37:23,310 --> 00:37:26,016
-is I want the Chrome--
+is I want the Chrome &mdash;
 
 901
 00:37:26,016 --> 00:37:26,850
@@ -4468,15 +4468,15 @@ there just yet.
 
 959
 00:39:44,600 --> 00:39:46,250
-I mean, the intention--
+I mean, the intention &mdash;
 
 960
 00:39:46,250 --> 00:39:48,340
-to excuse the pun--
+to excuse the pun &mdash;
 
 961
 00:39:48,340 --> 00:39:50,840
-was to have your application--
+was to have your application &mdash;
 
 962
 00:39:50,840 --> 00:39:52,120
@@ -4484,7 +4484,7 @@ thank you.
 
 963
 00:39:52,120 --> 00:39:53,686
-We need sound effects for--
+We need sound effects for &mdash;
 
 964
 00:39:53,686 --> 00:39:57,270
@@ -4562,7 +4562,7 @@ to the system I want to be
 
 980
 00:40:28,800 --> 00:40:29,920
-able to view these types--
+able to view these types &mdash;
 
 981
 00:40:29,920 --> 00:40:31,490
@@ -4893,7 +4893,7 @@ this after the fact.
 1051
 00:43:04,990 --> 00:43:06,220
 We'll try and get
-some of the--
+some of the &mdash;
 
 1052
 00:43:06,220 --> 00:43:07,350

@@ -13,11 +13,11 @@ of Chrome Apps Office Hours.
 4
 00:02:15,020 --> 00:02:17,640
 We've got a special Chrome Apps
-Office Hours-- that's a
+Office Hours &mdash; that's a
 
 5
 00:02:17,640 --> 00:02:19,780
-mouthful to say, always--
+mouthful to say, always &mdash;
 
 6
 00:02:19,780 --> 00:02:23,920
@@ -84,7 +84,7 @@ basically what's nice about
 19
 00:02:53,520 --> 00:02:58,840
 the columns is that it serves
-as a feed of all the data--
+as a feed of all the data &mdash;
 
 20
 00:02:58,840 --> 00:03:01,390
@@ -133,7 +133,7 @@ been working on this?
 29
 00:03:27,290 --> 00:03:28,200
 DIMITRY VINOGRADOV:
-Since October--
+Since October &mdash;
 
 30
 00:03:28,200 --> 00:03:33,010
@@ -200,7 +200,7 @@ looking into
 
 43
 00:03:59,710 --> 00:04:01,466
-developing in Qt--
+developing in Qt &mdash;
 
 44
 00:04:01,466 --> 00:04:04,020
@@ -331,7 +331,7 @@ plus it was kind of new.
 71
 00:05:13,390 --> 00:05:17,435
 It was nice to be like one of
-the early, I guess-- maybe a
+the early, I guess &mdash; maybe a
 
 72
 00:05:17,435 --> 00:05:18,810
@@ -428,7 +428,7 @@ PETE LEPAGE: Cool.
 92
 00:05:59,330 --> 00:06:01,300
 So as we're going
-through today--
+through today &mdash;
 
 93
 00:06:01,300 --> 00:06:04,060
@@ -522,7 +522,7 @@ Very nice.
 
 113
 00:06:43,650 --> 00:06:46,060
-So interesting--
+So interesting &mdash;
 
 114
 00:06:46,060 --> 00:06:50,200
@@ -870,12 +870,12 @@ Very nice.
 
 189
 00:10:00,740 --> 00:10:02,070
-You guys have been--
+You guys have been &mdash;
 
 190
 00:10:02,070 --> 00:10:05,780
 I guess for about maybe three
-weeks or so now-- working on
+weeks or so now &mdash; working on
 
 191
 00:10:05,780 --> 00:10:09,000
@@ -978,7 +978,7 @@ you, for example, set an SRC
 212
 00:11:01,520 --> 00:11:04,800
 tag on an image that went
-to an external--
+to an external &mdash;
 
 213
 00:11:04,800 --> 00:11:09,500
@@ -1017,7 +1017,7 @@ DOM for every image tag
 220
 00:11:31,630 --> 00:11:36,470
 that has that attribute, and
-then we download it--
+then we download it &mdash;
 
 221
 00:11:36,470 --> 00:11:37,000
@@ -1078,7 +1078,7 @@ I'm not 100% certain on that.
 233
 00:12:03,010 --> 00:12:05,730
 DAVID ZORYCHTA: At the moment,
-I can tell you here--
+I can tell you here &mdash;
 
 234
 00:12:05,730 --> 00:12:08,780
@@ -1092,7 +1092,7 @@ about 10, 11 lines of code.
 
 236
 00:12:11,570 --> 00:12:12,630
-So it's actually not--
+So it's actually not &mdash;
 
 237
 00:12:12,630 --> 00:12:12,700
@@ -1277,11 +1277,11 @@ It just doesn't let you.
 276
 00:13:57,420 --> 00:14:00,260
 And that's kind of unfortunate,
-because Reddit--
+because Reddit &mdash;
 
 277
 00:14:00,260 --> 00:14:01,140
-the API--
+the API &mdash;
 
 278
 00:14:01,140 --> 00:14:02,920
@@ -1290,7 +1290,7 @@ it's dependent on cookies.
 279
 00:14:02,920 --> 00:14:06,690
 So we had to build a little
-bit of a work-around--
+bit of a work-around &mdash;
 
 280
 00:14:06,690 --> 00:14:09,090
@@ -1310,7 +1310,7 @@ cookies.
 283
 00:14:14,540 --> 00:14:16,430
 But that didn't take that long
-to fix that issue, either--
+to fix that issue, either &mdash;
 
 284
 00:14:16,430 --> 00:14:19,210
@@ -1323,7 +1323,7 @@ went to OAuth, thinking that
 
 286
 00:14:22,360 --> 00:14:25,090
-we couldn't fix it, but then--
+we couldn't fix it, but then &mdash;
 
 287
 00:14:25,090 --> 00:14:26,710
@@ -1354,7 +1354,7 @@ PETE LEPAGE: Cool.
 
 293
 00:14:33,630 --> 00:14:35,220
-So what was that--
+So what was that &mdash;
 
 294
 00:14:35,220 --> 00:14:37,280
@@ -1626,7 +1626,7 @@ within that.
 351
 00:17:13,300 --> 00:17:16,619
 So it knows that we as
-the developers--
+the developers &mdash;
 
 352
 00:17:16,619 --> 00:17:19,650
@@ -1782,7 +1782,7 @@ DAVID ZORYCHTA: Yes.
 384
 00:18:36,700 --> 00:18:39,560
 We actually use justhost for
-that-- it's just a shared web
+that &mdash; it's just a shared web
 
 385
 00:18:39,560 --> 00:18:44,150
@@ -1806,7 +1806,7 @@ just between machines and
 389
 00:18:54,900 --> 00:18:57,450
 sessions so that if I'm signed
-in on one computer--
+in on one computer &mdash;
 
 390
 00:18:57,450 --> 00:18:58,370
@@ -1857,7 +1857,7 @@ synced so that
 
 401
 00:19:23,990 --> 00:19:25,470
-we're not like clogging--
+we're not like clogging &mdash;
 
 402
 00:19:25,470 --> 00:19:28,160
@@ -1912,7 +1912,7 @@ a fair amount of stuff.
 
 413
 00:19:58,530 --> 00:19:59,290
-DAVID ZORYCHTA: Yeah--
+DAVID ZORYCHTA: Yeah &mdash;
 
 414
 00:19:59,290 --> 00:20:02,420
@@ -1996,7 +1996,7 @@ We downloaded that.
 431
 00:20:40,350 --> 00:20:43,550
 And to actually drag
-around the app--
+around the app &mdash;
 
 432
 00:20:43,550 --> 00:20:45,560
@@ -2077,7 +2077,7 @@ your Chrome app?
 448
 00:21:16,080 --> 00:21:18,230
 DAVID ZORYCHTA: Stack
-Overflow, for sure--
+Overflow, for sure &mdash;
 
 449
 00:21:18,230 --> 00:21:21,890
@@ -2100,7 +2100,7 @@ different projects that you
 
 453
 00:21:29,320 --> 00:21:30,530
-guys offer--
+guys offer &mdash;
 
 454
 00:21:30,530 --> 00:21:31,180
@@ -2215,7 +2215,7 @@ would be one.
 
 478
 00:22:31,180 --> 00:22:32,790
-But there's another one that--
+But there's another one that &mdash;
 
 479
 00:22:32,790 --> 00:22:34,720
@@ -2276,7 +2276,7 @@ be signed in on.
 
 491
 00:23:08,470 --> 00:23:10,790
-Then the other one is the--
+Then the other one is the &mdash;
 
 492
 00:23:10,790 --> 00:23:13,750
@@ -2289,7 +2289,7 @@ blanking on it.
 494
 00:23:15,090 --> 00:23:18,780
 There was Sync FileSystem
-and the--
+and the &mdash;
 
 495
 00:23:18,780 --> 00:23:20,580
@@ -2333,7 +2333,7 @@ pulling images.
 
 504
 00:23:42,090 --> 00:23:45,420
-Like, for example, albums--
+Like, for example, albums &mdash;
 
 505
 00:23:45,420 --> 00:23:47,900
@@ -2437,7 +2437,7 @@ It wasn't that difficult.
 527
 00:24:34,730 --> 00:24:37,340
 It was just changing
-some manifests--
+some manifests &mdash;
 
 528
 00:24:37,340 --> 00:24:42,920
@@ -2446,7 +2446,7 @@ really that's about it.
 
 529
 00:24:42,920 --> 00:24:44,060
-And some cross--
+And some cross &mdash;
 
 530
 00:24:44,060 --> 00:24:46,640
@@ -2538,7 +2538,7 @@ features, has a really nice
 
 549
 00:25:36,410 --> 00:25:37,180
-experience--
+experience &mdash;
 
 550
 00:25:37,180 --> 00:25:40,700
@@ -2601,7 +2601,7 @@ doing that right now.
 
 563
 00:26:06,950 --> 00:26:09,983
-So hopefully either through--
+So hopefully either through &mdash;
 
 564
 00:26:09,983 --> 00:26:12,200
@@ -2720,7 +2720,7 @@ actually, we just want to sort
 
 588
 00:27:13,470 --> 00:27:13,975
-of like learn--
+of like learn &mdash;
 
 589
 00:27:13,975 --> 00:27:15,770
@@ -2757,7 +2757,7 @@ everything purely native?
 596
 00:27:32,100 --> 00:27:35,260
 DIMITRY VINOGRADOV: Well
-for article previews--
+for article previews &mdash;
 
 597
 00:27:35,260 --> 00:27:40,580
@@ -2774,7 +2774,7 @@ PETE LEPAGE: OK.
 
 600
 00:27:43,350 --> 00:27:44,480
-But everything else is a--
+But everything else is a &mdash;
 
 601
 00:27:44,480 --> 00:27:46,540
@@ -2981,7 +2981,7 @@ shortly in the Chrome Web
 
 644
 00:29:51,020 --> 00:29:51,990
-Store-- the new version.
+Store &mdash; the new version.
 
 645
 00:29:51,990 --> 00:29:55,620

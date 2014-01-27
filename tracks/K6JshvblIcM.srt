@@ -237,7 +237,7 @@ a quick introduction on why
 52
 00:02:40,420 --> 00:02:44,380
 we care about open video,
-both why does Google--
+both why does Google &mdash;
 
 53
 00:02:44,380 --> 00:02:47,690
@@ -246,7 +246,7 @@ involved with developing
 
 54
 00:02:47,690 --> 00:02:49,240
-applications around video--
+applications around video &mdash;
 
 55
 00:02:49,240 --> 00:02:53,360
@@ -492,7 +492,7 @@ for YouTube.
 
 104
 00:05:31,070 --> 00:05:34,620
-So these are the two factors--
+So these are the two factors &mdash;
 
 105
 00:05:34,620 --> 00:05:38,200
@@ -507,7 +507,7 @@ codec into Chrome and
 107
 00:05:42,470 --> 00:05:45,010
 other browsers for
-the video tag--
+the video tag &mdash;
 
 108
 00:05:45,010 --> 00:05:50,320
@@ -734,12 +734,12 @@ obviously more complex.
 154
 00:08:22,650 --> 00:08:25,990
 There's more data for a given
-HD video than there is for--
+HD video than there is for &mdash;
 
 155
 00:08:25,990 --> 00:08:28,150
 unless, of course, you're
-encoding it in VP9--
+encoding it in VP9 &mdash;
 
 156
 00:08:28,150 --> 00:08:33,700
@@ -875,7 +875,7 @@ speed of the internet.
 183
 00:10:05,230 --> 00:10:08,060
 So obviously, if you're
-taking VP9--
+taking VP9 &mdash;
 
 184
 00:10:08,060 --> 00:10:11,900
@@ -889,7 +889,7 @@ to deliver a
 
 186
 00:10:14,560 --> 00:10:16,200
-given quality video--
+given quality video &mdash;
 
 187
 00:10:16,200 --> 00:10:19,510
@@ -1194,7 +1194,7 @@ And that was the case at
 251
 00:13:34,270 --> 00:13:37,430
 As you go to 25 dB, you can
-see-- we can go really low in
+see &mdash; we can go really low in
 
 252
 00:13:37,430 --> 00:13:40,390
@@ -1323,8 +1323,8 @@ encoded those at various bit
 
 279
 00:15:05,170 --> 00:15:07,680
-rates-- so at various
-quality settings--
+rates &mdash; so at various
+quality settings &mdash;
 
 280
 00:15:07,680 --> 00:15:11,710
@@ -1486,12 +1486,12 @@ these is that you can pick any
 
 313
 00:16:51,500 --> 00:16:53,840
-point from the red line--
+point from the red line &mdash;
 
 314
 00:16:53,840 --> 00:16:55,920
 or from the blue line,
-for that matter--
+for that matter &mdash;
 
 315
 00:16:55,920 --> 00:16:57,090
@@ -3109,11 +3109,11 @@ very complicated stuff that
 
 651
 00:34:50,920 --> 00:34:51,860
-not every--
+not every &mdash;
 
 652
 00:34:51,860 --> 00:34:54,130
-even incredibly seasoned--
+even incredibly seasoned &mdash;
 
 653
 00:34:54,130 --> 00:34:56,340
@@ -3274,12 +3274,12 @@ Demystifying Video Encoding,
 
 685
 00:36:30,850 --> 00:36:32,630
-Encoding for WebM VP8--
+Encoding for WebM VP8 &mdash;
 
 686
 00:36:32,630 --> 00:36:36,350
 and this is certainly
-relevant to VP9--
+relevant to VP9 &mdash;
 
 687
 00:36:36,350 --> 00:36:39,740
@@ -3352,7 +3352,7 @@ any plans releasing for
 703
 00:37:25,290 --> 00:37:29,870
 iOS and integrating with
-my iOS applications--
+my iOS applications &mdash;
 
 704
 00:37:29,870 --> 00:37:33,770
@@ -3390,7 +3390,7 @@ support VP9 as well.
 
 711
 00:37:52,110 --> 00:37:53,360
-For iOS--
+For iOS &mdash;
 
 712
 00:37:53,360 --> 00:37:55,840
@@ -3614,7 +3614,7 @@ H.264 is slightly less
 759
 00:40:03,840 --> 00:40:06,710
 relevant because there
-was nothing--
+was nothing &mdash;
 
 760
 00:40:06,710 --> 00:40:08,630
@@ -3648,12 +3648,12 @@ recording stuff.
 766
 00:40:22,010 --> 00:40:26,140
 So even if 264 remains
-in Chrome--
+in Chrome &mdash;
 
 767
 00:40:26,140 --> 00:40:28,230
 which I think is probably
-likely--
+likely &mdash;
 
 768
 00:40:28,230 --> 00:40:30,790
@@ -4464,7 +4464,7 @@ between H.264 and VP9.
 938
 00:47:58,210 --> 00:48:01,060
 For H.264, what were
-you using--
+you using &mdash;
 
 939
 00:48:01,060 --> 00:48:05,590
@@ -4535,7 +4535,7 @@ paths to try to figure it out.
 953
 00:48:46,240 --> 00:48:48,980
 RONALD BULTJE: So you mean
-visual quality, or--
+visual quality, or &mdash;
 
 954
 00:48:48,980 --> 00:48:50,550
@@ -4750,7 +4750,7 @@ other things like that.
 999
 00:50:41,035 --> 00:50:46,950
 You didn't mention about the
-hardware, OpenGL or--
+hardware, OpenGL or &mdash;
 
 1000
 00:50:46,950 --> 00:50:48,280
@@ -4928,7 +4928,7 @@ or next year?
 1037
 00:52:11,115 --> 00:52:13,550
 RONALD BULTJE: Like Matt said,
-that will happen--
+that will happen &mdash;
 
 1038
 00:52:13,550 --> 00:52:15,010
@@ -5102,7 +5102,7 @@ the algorithms and how you
 
 1075
 00:53:47,200 --> 00:53:48,520
-would actually--
+would actually &mdash;
 
 1076
 00:53:48,520 --> 00:53:50,050

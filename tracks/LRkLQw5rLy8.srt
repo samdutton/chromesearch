@@ -192,7 +192,7 @@ National Lab.
 41
 00:01:43,750 --> 00:01:45,093
 DR. SERGEY PANITKIN: Today
-I will talk-- oh.
+I will talk &mdash; oh.
 
 42
 00:01:45,093 --> 00:01:46,020
@@ -965,12 +965,12 @@ more and more data,
 
 206
 00:09:50,940 --> 00:09:53,800
-the peak at 125 GV--
+the peak at 125 GV &mdash;
 
 207
 00:09:53,800 --> 00:09:56,600
 and GV is a unit of mass used in
-high energy physics-- just
+high energy physics &mdash; just
 
 208
 00:09:56,600 --> 00:10:00,530
@@ -1375,11 +1375,11 @@ of running jobs,
 
 294
 00:14:06,530 --> 00:14:07,890
-both Monte Carlo simulation--
+both Monte Carlo simulation &mdash;
 
 295
 00:14:07,890 --> 00:14:09,560
-we call them production jobs--
+we call them production jobs &mdash;
 
 296
 00:14:09,560 --> 00:14:12,100

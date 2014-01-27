@@ -321,11 +321,11 @@ Android Frameworks team.
 
 70
 00:03:17,470 --> 00:03:19,120
-You may know me--
+You may know me &mdash;
 
 71
 00:03:19,120 --> 00:03:21,320
-Glenn, next slide--
+Glenn, next slide &mdash;
 
 72
 00:03:21,320 --> 00:03:24,370
@@ -338,11 +338,11 @@ the programming font.
 
 74
 00:03:25,930 --> 00:03:27,690
-Now, my day job--
+Now, my day job &mdash;
 
 75
 00:03:27,690 --> 00:03:30,670
-next slide-- my day job
+next slide &mdash; my day job
 is font and text
 
 76
@@ -477,7 +477,7 @@ knew for certain.
 103
 00:04:39,550 --> 00:04:43,120
 The latency was just
-too darn high--
+too darn high &mdash;
 
 104
 00:04:43,120 --> 00:04:44,950
@@ -563,7 +563,7 @@ maybe even 20 milliseconds.
 121
 00:05:22,920 --> 00:05:25,970
 But I was hearing noticeable
-delays-- over 100 milliseconds
+delays &mdash; over 100 milliseconds
 
 122
 00:05:25,970 --> 00:05:28,020
@@ -922,7 +922,7 @@ They don't let me here.
 198
 00:08:25,500 --> 00:08:27,680
 But let's just say that it
-was a really big number--
+was a really big number &mdash;
 
 199
 00:08:27,680 --> 00:08:29,320
@@ -940,7 +940,7 @@ world is complex, but in
 202
 00:08:34,120 --> 00:08:36,280
 software, it generally boils
-down to one thing--
+down to one thing &mdash;
 
 203
 00:08:36,280 --> 00:08:37,530
@@ -1963,7 +1963,7 @@ those red ones there,
 
 422
 00:17:15,980 --> 00:17:17,410
-especially at the beginning--
+especially at the beginning &mdash;
 
 423
 00:17:17,410 --> 00:17:18,220
@@ -2246,7 +2246,7 @@ as a sequence diagram.
 482
 00:19:45,840 --> 00:19:47,780
 RAPH LEVIEN: You can see the
-pattern here-- first, playback
+pattern here &mdash; first, playback
 
 483
 00:19:47,780 --> 00:19:49,690
@@ -2279,7 +2279,7 @@ that the audio has a higher
 
 489
 00:20:00,070 --> 00:20:01,600
-priority-- nice minus 19.
+priority &mdash; nice minus 19.
 
 490
 00:20:01,600 --> 00:20:02,770
@@ -2501,11 +2501,11 @@ I knew about fixed priority
 
 537
 00:21:51,820 --> 00:21:52,410
-scheduling--
+scheduling &mdash;
 
 538
 00:21:52,410 --> 00:21:53,810
-it's a very old concept--
+it's a very old concept &mdash;
 
 539
 00:21:53,810 --> 00:21:56,150
@@ -3353,7 +3353,7 @@ size was 240 frames, not 256.
 718
 00:29:11,030 --> 00:29:14,730
 And the greatest common divisor
-of those two is--
+of those two is &mdash;
 
 719
 00:29:14,730 --> 00:29:17,380
@@ -3362,7 +3362,7 @@ RAPH LEVIEN: 16.
 720
 00:29:17,380 --> 00:29:20,090
 So that's the next item on your
-to do list-- adapt your
+to do list &mdash; adapt your
 
 721
 00:29:20,090 --> 00:29:22,390
@@ -3384,8 +3384,8 @@ sample rate to use?
 
 725
 00:29:28,520 --> 00:29:30,280
-This is something--
-next slide--
+This is something &mdash;
+next slide &mdash;
 
 726
 00:29:30,280 --> 00:29:32,900
@@ -3427,7 +3427,7 @@ API to return this kind of
 
 734
 00:29:49,120 --> 00:29:49,760
-information--
+information &mdash;
 
 735
 00:29:49,760 --> 00:29:52,880
@@ -3437,7 +3437,7 @@ sample rate.
 736
 00:29:52,880 --> 00:29:55,380
 And that shift in
-API level 17--
+API level 17 &mdash;
 
 737
 00:29:55,380 --> 00:29:57,740
@@ -3839,7 +3839,7 @@ Then it releases the mutex.
 
 823
 00:32:59,480 --> 00:33:02,260
-And boom-- the audio thread
+And boom &mdash; the audio thread
 is runnable again.
 
 824
@@ -3932,7 +3932,7 @@ dropping down to zero.
 843
 00:33:41,760 --> 00:33:43,620
 That's definitely going
-to cause a glitch--
+to cause a glitch &mdash;
 
 844
 00:33:43,620 --> 00:33:44,700
@@ -3991,7 +3991,7 @@ other stuff runs.
 856
 00:34:09,420 --> 00:34:12,489
 And it looks like
-UEventObserver--
+UEventObserver &mdash;
 
 857
 00:34:12,489 --> 00:34:14,370
@@ -4160,7 +4160,7 @@ carefully.
 892
 00:35:27,790 --> 00:35:30,510
 I didn't take any mutexes, or
-allocate any memory-- anything
+allocate any memory &mdash; anything
 
 893
 00:35:30,510 --> 00:35:31,410
@@ -4572,7 +4572,7 @@ valid on every device.
 980
 00:38:39,310 --> 00:38:42,340
 But each device has its own set
-of bugs-- power management
+of bugs &mdash; power management
 
 981
 00:38:42,340 --> 00:38:45,210
@@ -4665,7 +4665,7 @@ to it, and there's also
 1000
 00:39:28,360 --> 00:39:31,340
 the long link there
-if you prefer--
+if you prefer &mdash;
 
 1001
 00:39:31,340 --> 00:39:32,590

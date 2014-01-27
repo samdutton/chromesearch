@@ -753,11 +753,11 @@ provide us with,
 
 162
 00:05:55,650 --> 00:05:56,420
-whatever that may be--
+whatever that may be &mdash;
 
 163
 00:05:56,420 --> 00:05:57,730
-JPEG or PNG--
+JPEG or PNG &mdash;
 
 164
 00:05:57,730 --> 00:05:59,970
@@ -1206,7 +1206,7 @@ STEPHEN KONIG: Correct.
 259
 00:09:22,250 --> 00:09:24,110
 ILYA GRIGORIK: And really,
-up until--
+up until &mdash;
 
 260
 00:09:24,110 --> 00:09:27,480
@@ -1310,7 +1310,7 @@ STEPHEN KONIG: Correct.
 281
 00:10:13,040 --> 00:10:14,350
 ILYA GRIGORIK: I just
-save it as--
+save it as &mdash;
 
 282
 00:10:14,350 --> 00:10:16,500
@@ -1397,7 +1397,7 @@ studies that were done back in
 
 300
 00:10:56,970 --> 00:10:58,470
-2008, or have these--
+2008, or have these &mdash;
 
 301
 00:10:58,470 --> 00:11:00,130
@@ -1632,7 +1632,7 @@ is that as you get higher
 
 350
 00:12:57,790 --> 00:12:59,260
-quality images--
+quality images &mdash;
 
 351
 00:12:59,260 --> 00:13:00,870
@@ -1641,7 +1641,7 @@ we were discussing
 
 352
 00:13:00,870 --> 00:13:02,120
-before about hiDPI--
+before about hiDPI &mdash;
 
 353
 00:13:02,120 --> 00:13:04,300
@@ -1739,13 +1739,13 @@ right before the show we were
 
 374
 00:13:44,460 --> 00:13:47,380
-talking about-- so one of the
+talking about &mdash; so one of the
 cases where this could happen,
 
 375
 00:13:47,380 --> 00:13:50,710
 because if you're curious, why
-would WebP ever be bigger--
+would WebP ever be bigger &mdash;
 
 376
 00:13:50,710 --> 00:13:53,710
@@ -1892,7 +1892,7 @@ does in JPEG.
 407
 00:14:53,580 --> 00:14:54,950
 ILYA GRIGORIK: So that's
-with the current--
+with the current &mdash;
 
 408
 00:14:54,950 --> 00:14:55,420
@@ -2571,7 +2571,7 @@ encourage you guys.
 551
 00:20:23,050 --> 00:20:26,950
 I'll share the slides after or
-just go to eBay tech blog--
+just go to eBay tech blog &mdash;
 
 552
 00:20:26,950 --> 00:20:30,640
@@ -3141,7 +3141,7 @@ up over the past couple
 
 672
 00:25:07,890 --> 00:25:10,340
-months-- and you'll see us
+months &mdash; and you'll see us
 making a lot of progress on
 
 673
@@ -3151,7 +3151,7 @@ rest of this year
 
 674
 00:25:11,680 --> 00:25:13,020
-and into early next--
+and into early next &mdash;
 
 675
 00:25:13,020 --> 00:25:15,850
@@ -3715,7 +3715,7 @@ something to experiment with.
 
 792
 00:29:56,550 --> 00:29:58,010
-And I guess the one link--
+And I guess the one link &mdash;
 
 793
 00:29:58,010 --> 00:30:00,940
@@ -4229,11 +4229,11 @@ which we want to serve, and
 902
 00:34:32,040 --> 00:34:35,260
 basically, the difference here
-is that some user agents-- for
+is that some user agents &mdash; for
 
 903
 00:34:35,260 --> 00:34:36,600
-example, Internet Explorer--
+example, Internet Explorer &mdash;
 
 904
 00:34:36,600 --> 00:34:38,880
@@ -4599,7 +4599,7 @@ very first slide that I have,
 
 980
 00:38:09,800 --> 00:38:10,960
-HTML is like--
+HTML is like &mdash;
 
 981
 00:38:10,960 --> 00:38:13,950
@@ -5001,12 +5001,12 @@ consumer electronic device
 
 1067
 00:41:17,930 --> 00:41:18,980
-manufacturers--
+manufacturers &mdash;
 
 1068
 00:41:18,980 --> 00:41:20,660
 camera makers, phones,
-et cetera--
+et cetera &mdash;
 
 1069
 00:41:20,660 --> 00:41:22,490
@@ -5049,7 +5049,7 @@ photos, you grab the photo off
 
 1077
 00:41:41,625 --> 00:41:45,900
-your camera-- probably a JPEG,
+your camera &mdash; probably a JPEG,
 probably a couple megabytes.
 
 1078
@@ -5428,7 +5428,7 @@ I guess it depends.
 1161
 00:44:30,460 --> 00:44:32,400
 If you're using, so say Safari
-with a plug-in--
+with a plug-in &mdash;
 
 1162
 00:44:32,400 --> 00:44:33,625
@@ -5752,7 +5752,7 @@ are working to on a secret new
 
 1230
 00:47:03,030 --> 00:47:03,880
-feature for--
+feature for &mdash;
 
 1231
 00:47:03,880 --> 00:47:05,360
@@ -5785,7 +5785,7 @@ SSL, that's the answer there.
 
 1238
 00:47:14,240 --> 00:47:16,970
-Compared to JPEG Mini--
+Compared to JPEG Mini &mdash;
 
 1239
 00:47:16,970 --> 00:47:19,350
@@ -6065,7 +6065,7 @@ that we need.
 1298
 00:49:42,720 --> 00:49:48,240
 It's a question of, can we
-actually pick some--
+actually pick some &mdash;
 
 1299
 00:49:48,240 --> 00:49:50,740
@@ -6239,7 +6239,7 @@ WebP Discuss, but
 
 1336
 00:51:33,910 --> 00:51:34,240
-otherwise--
+otherwise &mdash;
 
 1337
 00:51:34,240 --> 00:51:36,450
@@ -6310,7 +6310,7 @@ will see that over time.
 1351
 00:52:11,860 --> 00:52:13,490
 ILYA GRIGORIK: So if
-you're a service--
+you're a service &mdash;
 
 1352
 00:52:13,490 --> 00:52:16,920
@@ -6319,7 +6319,7 @@ you're uploading and you
 
 1353
 00:52:16,920 --> 00:52:20,420
-support WebP, and let's say-- so
+support WebP, and let's say &mdash; so
 this actually could work, I
 
 1354
@@ -6334,7 +6334,7 @@ your camera, you grab the
 
 1356
 00:52:25,460 --> 00:52:28,120
-bytes, and then you can--
+bytes, and then you can &mdash;
 
 1357
 00:52:28,120 --> 00:52:29,210

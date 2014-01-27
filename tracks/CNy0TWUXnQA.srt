@@ -1690,12 +1690,12 @@ So that's a great way.
 359
 00:18:58,800 --> 00:19:00,275
 And in fact, a lot
-of the students--
+of the students &mdash;
 
 360
 00:19:00,275 --> 00:19:02,270
 I'm not sure of the
-exact breakdown--
+exact breakdown &mdash;
 
 361
 00:19:02,270 --> 00:19:06,620
@@ -1745,7 +1745,7 @@ and hours of lecture.
 
 371
 00:19:28,710 --> 00:19:28,970
-It's--
+It's &mdash;
 
 372
 00:19:28,970 --> 00:19:30,682
@@ -1777,12 +1777,12 @@ to work on.
 
 378
 00:19:40,660 --> 00:19:41,760
-But they have to--
+But they have to &mdash;
 
 379
 00:19:41,760 --> 00:19:44,400
 and this is by tomorrow, by
-the end of the week--
+the end of the week &mdash;
 
 380
 00:19:44,400 --> 00:19:47,790
@@ -1853,7 +1853,7 @@ it away if they
 
 394
 00:20:17,020 --> 00:20:18,080
-haven't finished their--
+haven't finished their &mdash;
 
 395
 00:20:18,080 --> 00:20:18,180
@@ -1944,7 +1944,7 @@ collaborate with their teacher
 
 413
 00:21:05,445 --> 00:21:08,530
-or other kids out of--
+or other kids out of &mdash;
 
 414
 00:21:08,530 --> 00:21:10,900
@@ -2037,12 +2037,12 @@ our development programs.
 433
 00:21:45,190 --> 00:21:46,940
 PETER LUBBERS: And the resources
-that are available--
+that are available &mdash;
 
 434
 00:21:46,940 --> 00:21:49,930
 this was also mentioned by one
-of the kids in the video--
+of the kids in the video &mdash;
 
 435
 00:21:49,930 --> 00:21:51,230
@@ -2061,7 +2061,7 @@ it to their page.
 438
 00:21:55,510 --> 00:21:59,140
 We literally just walked
-upstairs, grabbed someone--
+upstairs, grabbed someone &mdash;
 
 439
 00:21:59,140 --> 00:22:00,370

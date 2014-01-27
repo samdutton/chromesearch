@@ -415,7 +415,7 @@ there, you'll probably notice
 
 91
 00:05:13,090 --> 00:05:14,270
-something--
+something &mdash;
 
 92
 00:05:14,270 --> 00:05:18,660
@@ -665,12 +665,12 @@ This is a pretty huge deal.
 145
 00:07:50,650 --> 00:07:53,880
 And what that translates to in
-the eyes of the candidates--
+the eyes of the candidates &mdash;
 
 146
 00:07:53,880 --> 00:07:55,470
 so the presidential
-candidates--
+candidates &mdash;
 
 147
 00:07:55,470 --> 00:07:56,800
@@ -769,7 +769,7 @@ opens the browser.
 167
 00:08:53,510 --> 00:08:56,110
 You have all these different
-social media channels--
+social media channels &mdash;
 
 168
 00:08:56,110 --> 00:08:59,380
@@ -1154,11 +1154,11 @@ HTML5 capabilities.
 249
 00:13:10,610 --> 00:13:13,510
 So what I've done is I've gone
-ahead-- and I really liked
+ahead &mdash; and I really liked
 
 250
 00:13:13,510 --> 00:13:16,260
-that idea-- and I took it and
+that idea &mdash; and I took it and
 sort of just simplified it a
 
 251
@@ -1617,7 +1617,7 @@ or we have to stop
 
 354
 00:19:06,780 --> 00:19:08,690
-thinking of the web--
+thinking of the web &mdash;
 
 355
 00:19:08,690 --> 00:19:13,810
@@ -1836,7 +1836,7 @@ really beneficial is to just
 
 401
 00:21:32,210 --> 00:21:35,900
-be-- to talk about it in very
+be &mdash; to talk about it in very
 common sense language.
 
 402
@@ -2026,11 +2026,11 @@ achieves content parity.
 
 442
 00:23:35,550 --> 00:23:36,670
-A lot of times--
+A lot of times &mdash;
 
 443
 00:23:36,670 --> 00:23:38,570
-and a lot of sites do this--
+and a lot of sites do this &mdash;
 
 444
 00:23:38,570 --> 00:23:42,740
@@ -2597,7 +2597,7 @@ that's a big deal.
 566
 00:29:29,640 --> 00:29:32,070
 But if the nav is always
-in your face--
+in your face &mdash;
 
 567
 00:29:32,070 --> 00:29:36,210
@@ -3190,7 +3190,7 @@ design because so
 692
 00:36:04,900 --> 00:36:09,570
 much of responsive design
-is how to--
+is how to &mdash;
 
 693
 00:36:09,570 --> 00:36:14,060
@@ -3263,7 +3263,7 @@ You have his record in brief.
 
 708
 00:36:53,210 --> 00:36:56,290
-And then, as you scroll down--
+And then, as you scroll down &mdash;
 
 709
 00:36:56,290 --> 00:36:57,540
@@ -3552,7 +3552,7 @@ or [INAUDIBLE]
 770
 00:39:42,290 --> 00:39:45,760
 bits, which actually,
-again, might--
+again, might &mdash;
 
 771
 00:39:45,760 --> 00:39:47,160
@@ -3781,7 +3781,7 @@ it there as a line
 
 818
 00:42:14,880 --> 00:42:16,070
-item on your thing--
+item on your thing &mdash;
 
 819
 00:42:16,070 --> 00:42:17,320
@@ -3793,7 +3793,7 @@ performance.
 821
 00:42:19,200 --> 00:42:21,550
 It's often this thing
-that's just--
+that's just &mdash;
 
 822
 00:42:21,550 --> 00:42:24,780
@@ -3817,7 +3817,7 @@ need to worry about.
 
 826
 00:42:34,880 --> 00:42:38,700
-Because very often-- and this
+Because very often &mdash; and this
 will probably sound familiar
 
 827
@@ -3928,7 +3928,7 @@ whole Facebook thing.
 
 850
 00:43:38,460 --> 00:43:41,090
-I had a lot of people-- and
+I had a lot of people &mdash; and
 whenever I mention that I work
 
 851
@@ -4228,7 +4228,7 @@ Mobitest by Akamai.
 
 915
 00:47:10,330 --> 00:47:12,450
-And basically, it fires up--
+And basically, it fires up &mdash;
 
 916
 00:47:12,450 --> 00:47:15,470
@@ -4461,7 +4461,7 @@ standpoint, it's about sort of
 965
 00:49:47,990 --> 00:49:51,090
 addressing the constraints
-of the mobile medium--
+of the mobile medium &mdash;
 
 966
 00:49:51,090 --> 00:49:56,870
@@ -4500,7 +4500,7 @@ those features.
 973
 00:50:19,140 --> 00:50:22,170
 Instead of sort of assuming
-things by default-- oh, of
+things by default &mdash; oh, of
 
 974
 00:50:22,170 --> 00:50:24,980
@@ -4552,7 +4552,7 @@ he said, starting with
 984
 00:50:52,910 --> 00:50:56,070
 the lowest common
-denominator--
+denominator &mdash;
 
 985
 00:50:56,070 --> 00:50:59,390
@@ -4800,7 +4800,7 @@ that difference,
 1037
 00:53:28,730 --> 00:53:33,420
 just because I think a
-lot of people use--
+lot of people use &mdash;
 
 1038
 00:53:33,420 --> 00:53:36,350
@@ -4900,7 +4900,7 @@ these things as numeric
 
 1058
 00:54:39,420 --> 00:54:44,250
-inputs that allow--
+inputs that allow &mdash;
 
 1059
 00:54:44,250 --> 00:54:47,940
@@ -4928,7 +4928,7 @@ the email field will
 
 1064
 00:55:01,400 --> 00:55:02,830
-actually pull up--
+actually pull up &mdash;
 
 1065
 00:55:02,830 --> 00:55:04,180
@@ -5003,7 +5003,7 @@ numbers 1 through 10 across
 1080
 00:55:47,560 --> 00:55:51,420
 the top like the previous
-screen--
+screen &mdash;
 
 1081
 00:55:51,420 --> 00:55:52,030
@@ -5219,7 +5219,7 @@ the process.
 1127
 00:58:03,050 --> 00:58:05,620
 And it's important
-to understand--
+to understand &mdash;
 
 1128
 00:58:05,620 --> 00:58:09,700
@@ -5714,7 +5714,7 @@ website and command + +,
 1232
 01:03:37,530 --> 01:03:41,110
 magnify the site, which I
-like to do actually--
+like to do actually &mdash;
 
 1233
 01:03:41,110 --> 01:03:47,320
@@ -5866,7 +5866,7 @@ up assets appropriately.
 
 1264
 01:05:19,960 --> 01:05:22,520
-Things like adaptive images--
+Things like adaptive images &mdash;
 
 1265
 01:05:22,520 --> 01:05:25,750
@@ -5933,7 +5933,7 @@ a factor in determining a
 
 1278
 01:06:08,620 --> 01:06:09,980
-device's bandwidth--
+device's bandwidth &mdash;
 
 1279
 01:06:09,980 --> 01:06:16,020
@@ -5976,11 +5976,11 @@ just standard displays.
 1287
 01:06:37,810 --> 01:06:43,300
 And in some cases, the file
-size of the enhanced--
+size of the enhanced &mdash;
 
 1288
 01:06:43,300 --> 01:06:43,870
-the bigger--
+the bigger &mdash;
 
 1289
 01:06:43,870 --> 01:06:45,600
@@ -6026,7 +6026,7 @@ on the way.
 1298
 01:07:09,870 --> 01:07:12,940
 Hopefully I can share
-it later on--
+it later on &mdash;
 
 1299
 01:07:12,940 --> 01:07:15,140

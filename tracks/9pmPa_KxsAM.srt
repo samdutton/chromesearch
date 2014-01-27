@@ -867,7 +867,7 @@ than in all of last year.
 
 188
 00:10:32,460 --> 00:10:33,920
-And revenue per user--
+And revenue per user &mdash;
 
 189
 00:10:33,920 --> 00:10:34,713
@@ -1403,11 +1403,11 @@ tablet and take a look.
 303
 00:15:57,160 --> 00:15:59,870
 Now, Jai should have gotten
-the notification--
+the notification &mdash;
 
 304
 00:15:59,870 --> 00:16:00,680
-there it is--
+there it is &mdash;
 
 305
 00:16:00,680 --> 00:16:02,880
@@ -1424,7 +1424,7 @@ This actually just happened.
 
 308
 00:16:06,630 --> 00:16:07,400
-And we--
+And we &mdash;
 
 309
 00:16:07,400 --> 00:16:08,600
@@ -1685,7 +1685,7 @@ synchronizes notifications for
 365
 00:18:40,650 --> 00:18:44,110
 you so that when you dismiss a
-notification on one device--
+notification on one device &mdash;
 
 366
 00:18:44,110 --> 00:18:45,050
@@ -2087,7 +2087,7 @@ build awesome apps.
 
 450
 00:22:51,420 --> 00:22:53,110
-Now--
+Now &mdash;
 
 451
 00:22:53,110 --> 00:22:53,690
@@ -2137,7 +2137,7 @@ it's based on the community
 461
 00:23:16,860 --> 00:23:19,786
 edition of IntelliJ
-from JetBrains--
+from JetBrains &mdash;
 
 462
 00:23:19,786 --> 00:23:21,360
@@ -3104,7 +3104,7 @@ the developer console.
 
 673
 00:31:49,700 --> 00:31:51,220
-You'll have all your metrics--
+You'll have all your metrics &mdash;
 
 674
 00:31:51,220 --> 00:31:52,208
@@ -3296,7 +3296,7 @@ and production.
 
 715
 00:33:25,670 --> 00:33:26,850
-We want to start with a small--
+We want to start with a small &mdash;
 
 716
 00:33:26,850 --> 00:33:27,470
@@ -3786,7 +3786,7 @@ for tablets.
 
 821
 00:37:53,490 --> 00:37:54,780
-Now, this view here--
+Now, this view here &mdash;
 
 822
 00:37:54,780 --> 00:37:55,914
@@ -4409,7 +4409,7 @@ and light that up.
 
 957
 00:43:41,260 --> 00:43:45,120
-And so when-- all right, one
+And so when &mdash; all right, one
 James Blake fan over there.
 
 958
@@ -5599,7 +5599,7 @@ the web last year.
 1211
 00:56:35,250 --> 00:56:37,330
 And you will hear the
-search team--
+search team &mdash;
 
 1212
 00:56:37,330 --> 00:56:39,900
@@ -5884,7 +5884,7 @@ more than 50% on mobile.
 1272
 00:59:28,250 --> 00:59:29,880
 These are the kinds
-of things--
+of things &mdash;
 
 1273
 00:59:29,880 --> 00:59:35,750
@@ -6179,7 +6179,7 @@ and how much smaller VP9 is.
 
 1336
 01:02:32,230 --> 01:02:33,700
-For this particular video--
+For this particular video &mdash;
 
 1337
 01:02:33,700 --> 01:02:39,849
@@ -6283,8 +6283,8 @@ this in the Android beta
 
 1358
 01:03:34,630 --> 01:03:37,180
-channel-- and many of you can
-try it out right now--
+channel &mdash; and many of you can
+try it out right now &mdash;
 
 1359
 01:03:37,180 --> 01:03:40,460
@@ -6432,7 +6432,7 @@ more about this, later today.
 
 1390
 01:05:09,330 --> 01:05:10,580
-It's called--
+It's called &mdash;
 
 1391
 01:05:10,580 --> 01:05:13,610
@@ -7308,7 +7308,7 @@ fully run on Google Apps.
 1583
 01:15:22,380 --> 01:15:26,230
 Seven of the eight Ivy
-League universities--
+League universities &mdash;
 
 1584
 01:15:26,230 --> 01:15:28,730
@@ -9391,7 +9391,7 @@ I think you'll like that.
 
 2031
 01:35:52,300 --> 01:35:54,180
-But my favorite feature--
+But my favorite feature &mdash;
 
 2032
 01:35:54,180 --> 01:35:55,190
@@ -9687,7 +9687,7 @@ eight megapixel shot.
 
 2095
 01:38:52,310 --> 01:38:54,420
-An eight megapixel shot--
+An eight megapixel shot &mdash;
 
 2096
 01:38:54,420 --> 01:38:55,916
@@ -10859,7 +10859,7 @@ on this afternoon.
 
 2351
 01:49:11,250 --> 01:49:11,940
-These are five--
+These are five &mdash;
 
 2352
 01:49:11,940 --> 01:49:16,540
@@ -11344,7 +11344,7 @@ eight other languages.
 2457
 01:54:51,310 --> 01:54:54,825
 And today we are
-adding Polish--
+adding Polish &mdash;
 
 2458
 01:54:54,825 --> 01:54:56,700
@@ -11542,7 +11542,7 @@ click the mic to search.
 2498
 01:57:35,960 --> 01:57:40,970
 You can sit back, relax,
-say OK, Google--
+say OK, Google &mdash;
 
 2499
 01:57:40,970 --> 01:57:44,330
@@ -14156,7 +14156,7 @@ smartphones.
 
 3063
 02:23:02,010 --> 02:23:03,440
-And--
+And &mdash;
 
 3064
 02:23:03,440 --> 02:23:04,388
@@ -14288,7 +14288,7 @@ in a search query.
 
 3092
 02:24:05,420 --> 02:24:07,760
-All you do is-- and this
+All you do is &mdash; and this
 is a new experience.
 
 3093
@@ -14329,7 +14329,7 @@ can go to museums, to public
 
 3101
 02:24:25,580 --> 02:24:26,880
-parks, and--
+parks, and &mdash;
 
 3102
 02:24:26,880 --> 02:24:30,170
@@ -16077,7 +16077,7 @@ which I see many of you out
 
 3482
 02:43:08,050 --> 02:43:09,920
-there with glasses--
+there with glasses &mdash;
 
 3483
 02:43:09,920 --> 02:43:12,980
@@ -17068,7 +17068,7 @@ AUDIENCE: Yeah.
 
 3695
 02:53:54,780 --> 02:53:55,880
-Are we going to see it--
+Are we going to see it &mdash;
 
 3696
 02:53:55,880 --> 02:53:57,540
@@ -17113,7 +17113,7 @@ from it as a company.
 
 3705
 02:54:11,650 --> 02:54:13,990
-And I think that--
+And I think that &mdash;
 
 3706
 02:54:13,990 --> 02:54:16,150
@@ -17374,7 +17374,7 @@ a great question.
 
 3760
 02:57:08,550 --> 02:57:09,720
-I mean, I think--
+I mean, I think &mdash;
 
 3761
 02:57:09,720 --> 02:57:10,668
@@ -17745,7 +17745,7 @@ this year did not,
 
 3838
 03:01:09,110 --> 03:01:11,490
-I mean, he's focused--
+I mean, he's focused &mdash;
 
 3839
 03:01:11,490 --> 03:01:16,130
@@ -17923,7 +17923,7 @@ excited about that too.
 3876
 03:03:08,530 --> 03:03:12,360
 So every time we've done
-something crazy--
+something crazy &mdash;
 
 3877
 03:03:12,360 --> 03:03:15,500
@@ -18092,7 +18092,7 @@ production numbers will be.
 3912
 03:04:49,850 --> 03:04:52,210
 So I think we're more focused
-on with Glass--
+on with Glass &mdash;
 
 3913
 03:04:52,210 --> 03:04:54,140

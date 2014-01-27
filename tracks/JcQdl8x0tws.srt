@@ -188,7 +188,7 @@ performance of the same
 
 41
 00:02:26,850 --> 00:02:29,180
-library, that would--
+library, that would &mdash;
 
 42
 00:02:29,180 --> 00:02:32,960
@@ -1964,7 +1964,7 @@ repository are three example
 424
 00:20:07,070 --> 00:20:08,550
 Native Client Acceleration
-Modules--
+Modules &mdash;
 
 425
 00:20:08,550 --> 00:20:11,530
@@ -2409,7 +2409,7 @@ to grab their GCC compiler.
 520
 00:24:17,330 --> 00:24:21,180
 Where can they find
-the great--
+the great &mdash;
 
 521
 00:24:21,180 --> 00:24:22,450
@@ -2673,7 +2673,7 @@ Kinlan joining me.
 
 577
 00:26:47,900 --> 00:26:50,970
-We're going to do just a fun--
+We're going to do just a fun &mdash;
 
 578
 00:26:50,970 --> 00:26:53,080

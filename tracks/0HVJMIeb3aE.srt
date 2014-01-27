@@ -100,7 +100,7 @@ application available to the
 22
 00:00:43,530 --> 00:00:46,600
 user in the interface that
-they're already used to--
+they're already used to &mdash;
 
 23
 00:00:46,600 --> 00:00:47,916
@@ -144,11 +144,11 @@ Google Apps Script.
 31
 00:01:07,740 --> 00:01:10,850
 So being able to access those
-files-- write files, changing
+files &mdash; write files, changing
 
 32
 00:01:10,850 --> 00:01:11,840
-permissions--
+permissions &mdash;
 
 33
 00:01:11,840 --> 00:01:14,890
@@ -206,7 +206,7 @@ value in already.
 44
 00:01:38,300 --> 00:01:40,910
 In the demo today, we're going
-to-- we made up an application
+to &mdash; we made up an application
 
 45
 00:01:40,910 --> 00:01:42,550
@@ -452,7 +452,7 @@ application.
 
 96
 00:03:49,700 --> 00:03:51,380
-I go ahead and install it--
+I go ahead and install it &mdash;
 
 97
 00:03:51,380 --> 00:03:54,310
@@ -708,7 +708,7 @@ I think is 9.
 
 152
 00:06:07,490 --> 00:06:08,740
-This one--
+This one &mdash;
 
 153
 00:06:08,740 --> 00:06:12,050
@@ -775,7 +775,7 @@ the question anyway.
 
 166
 00:06:43,310 --> 00:06:43,980
-Google Drive--
+Google Drive &mdash;
 
 167
 00:06:43,980 --> 00:06:46,310
@@ -838,7 +838,7 @@ into the quiz.
 179
 00:07:15,340 --> 00:07:18,460
 So that's what the whole
-workflow is all about--
+workflow is all about &mdash;
 
 180
 00:07:18,460 --> 00:07:22,840
@@ -1007,7 +1007,7 @@ could monitor progress.
 
 215
 00:08:40,320 --> 00:08:42,020
-You could ask--
+You could ask &mdash;
 
 216
 00:08:42,020 --> 00:08:44,530
@@ -1214,7 +1214,7 @@ a Gmail inbox.
 
 259
 00:10:28,460 --> 00:10:29,960
-There's no limits--
+There's no limits &mdash;
 
 260
 00:10:29,960 --> 00:10:32,320
@@ -1291,7 +1291,7 @@ business logic.
 275
 00:11:04,490 --> 00:11:06,900
 And the business logic is what
-John's going to talk about--
+John's going to talk about &mdash;
 
 276
 00:11:06,900 --> 00:11:09,860
@@ -1329,7 +1329,7 @@ really taken care of for you.
 
 283
 00:11:26,120 --> 00:11:28,500
-And you're able to-- if you have
+And you're able to &mdash; if you have
 Google Apps for Education
 
 284
@@ -1779,7 +1779,7 @@ user identifier.
 378
 00:15:24,690 --> 00:15:28,330
 So in that case, it's saying the
-app-- the user requested
+app &mdash; the user requested
 
 379
 00:15:28,330 --> 00:15:31,400
@@ -1969,11 +1969,11 @@ mobile-friendly.
 418
 00:17:08,549 --> 00:17:12,020
 So if you check that option,
-it'll in fact allow the user--
+it'll in fact allow the user &mdash;
 
 419
 00:17:12,020 --> 00:17:14,520
-the teacher, in this case-- to
+the teacher, in this case &mdash; to
 kick off the Create Assignment
 
 420
@@ -2197,7 +2197,7 @@ what you guys are going to be
 
 466
 00:19:31,310 --> 00:19:32,340
-doing with this--
+doing with this &mdash;
 
 467
 00:19:32,340 --> 00:19:33,900
@@ -2503,7 +2503,7 @@ and the files within it.
 531
 00:22:40,520 --> 00:22:42,690
 And in order to prevent
-cheating--
+cheating &mdash;
 
 532
 00:22:42,690 --> 00:22:45,220
@@ -2533,7 +2533,7 @@ we've also added.
 
 538
 00:22:55,710 --> 00:22:57,640
-So--
+So &mdash;
 
 539
 00:22:57,640 --> 00:22:58,050
@@ -2650,7 +2650,7 @@ high-level searches.
 
 564
 00:24:00,340 --> 00:24:02,540
-But now we've add-- since we're
+But now we've add &mdash; since we're
 built on top of the
 
 565
@@ -2738,7 +2738,7 @@ presentation today.
 
 582
 00:24:53,860 --> 00:24:55,350
-But we also--
+But we also &mdash;
 
 583
 00:24:55,350 --> 00:24:57,840
@@ -2916,11 +2916,11 @@ documents to be shared outside
 
 620
 00:26:35,080 --> 00:26:36,240
-of your domain--
+of your domain &mdash;
 
 621
 00:26:36,240 --> 00:26:37,780
-to, like, Gmail accounts--
+to, like, Gmail accounts &mdash;
 
 622
 00:26:37,780 --> 00:26:40,120
@@ -2989,7 +2989,7 @@ ultimately can decide.
 636
 00:27:13,220 --> 00:27:15,460
 AUDIENCE: But you
-cannot prevent--
+cannot prevent &mdash;
 
 637
 00:27:15,460 --> 00:27:16,460
@@ -3078,7 +3078,7 @@ do it the other
 
 656
 00:27:51,710 --> 00:27:53,700
-way, where the form--
+way, where the form &mdash;
 
 657
 00:27:53,700 --> 00:27:56,290
@@ -3167,7 +3167,7 @@ ARUN NAGARAJAN: OK.
 
 676
 00:28:28,970 --> 00:28:31,350
-I wasn't familiar-- is that only
+I wasn't familiar &mdash; is that only
 for documents, or also
 
 677
@@ -3182,7 +3182,7 @@ sites, everything.
 679
 00:28:33,450 --> 00:28:35,470
 Whenever I do copy site
-or copy documents--
+or copy documents &mdash;
 
 680
 00:28:35,470 --> 00:28:37,690
@@ -3191,7 +3191,7 @@ the UI is copying the
 
 681
 00:28:37,690 --> 00:28:38,680
-scripts, but not the--
+scripts, but not the &mdash;
 
 682
 00:28:38,680 --> 00:28:40,450
@@ -3250,7 +3250,7 @@ degrading.
 
 694
 00:28:59,720 --> 00:29:01,830
-And there is--
+And there is &mdash;
 
 695
 00:29:01,830 --> 00:29:03,810
@@ -3484,7 +3484,7 @@ offline, but you can't edit
 
 744
 00:30:51,830 --> 00:30:53,530
-them offline--
+them offline &mdash;
 
 745
 00:30:53,530 --> 00:30:56,710
@@ -3604,7 +3604,7 @@ JOHN MCGOWAN: Correct
 
 770
 00:31:48,010 --> 00:31:49,730
-ARUN NAGARAJAN: You can ask--
+ARUN NAGARAJAN: You can ask &mdash;
 
 771
 00:31:49,730 --> 00:31:51,750
@@ -3640,7 +3640,7 @@ Apps for Business, if
 
 778
 00:32:03,080 --> 00:32:05,010
-the document is--
+the document is &mdash;
 
 779
 00:32:05,010 --> 00:32:08,050
@@ -3658,7 +3658,7 @@ about searching for your
 
 782
 00:32:12,470 --> 00:32:13,930
-script files--
+script files &mdash;
 
 783
 00:32:13,930 --> 00:32:17,960
@@ -3689,7 +3689,7 @@ ARUN NAGARAJAN: Yeah.
 
 789
 00:32:31,920 --> 00:32:32,780
-That's a good idea--
+That's a good idea &mdash;
 
 790
 00:32:32,780 --> 00:32:35,720
@@ -3713,7 +3713,7 @@ functionality.
 
 794
 00:32:46,833 --> 00:32:47,970
-I'm not sure if--
+I'm not sure if &mdash;
 
 795
 00:32:47,970 --> 00:32:48,100
@@ -3742,7 +3742,7 @@ ARUN NAGARAJAN: Point taken.
 
 801
 00:32:53,790 --> 00:32:54,400
-But you could--
+But you could &mdash;
 
 802
 00:32:54,400 --> 00:32:56,885
@@ -3909,7 +3909,7 @@ API right now.
 837
 00:34:10,950 --> 00:34:14,750
 But we know that we're bad
-for doing that, and--
+for doing that, and &mdash;
 
 838
 00:34:14,750 --> 00:34:16,690
@@ -3968,7 +3968,7 @@ to that earlier
 
 850
 00:34:35,040 --> 00:34:36,420
-question, if you type--
+question, if you type &mdash;
 
 851
 00:34:36,420 --> 00:34:40,150
@@ -3987,7 +3987,7 @@ ARUN NAGARAJAN: Oh, yeah.
 854
 00:34:44,300 --> 00:34:47,163
 AUDIENCE: Also, with the Doc
-List, are we going to-- you're
+List, are we going to &mdash; you're
 
 855
 00:34:47,163 --> 00:34:48,960
@@ -4176,12 +4176,12 @@ your application,
 896
 00:36:18,110 --> 00:36:20,670
 knowing that there's
-two options--
+two options &mdash;
 
 897
 00:36:20,670 --> 00:36:22,530
 run as the developer, and
-run as the user--
+run as the user &mdash;
 
 898
 00:36:22,530 --> 00:36:25,810
@@ -4218,7 +4218,7 @@ an administrator.
 
 905
 00:36:41,130 --> 00:36:42,130
-You are--
+You are &mdash;
 
 906
 00:36:42,130 --> 00:36:46,060
@@ -4277,7 +4277,7 @@ anytime soon?
 918
 00:37:06,230 --> 00:37:08,760
 I mean, I realize that
-Word export is--
+Word export is &mdash;
 
 919
 00:37:08,760 --> 00:37:12,240
@@ -4286,7 +4286,7 @@ Doc are pretty high fidelity.
 
 920
 00:37:12,240 --> 00:37:13,520
-But there's a lot of--
+But there's a lot of &mdash;
 
 921
 00:37:13,520 --> 00:37:15,570
@@ -4337,7 +4337,7 @@ Google account.
 
 931
 00:37:38,380 --> 00:37:39,746
-AUDIENCE: As long as you're--
+AUDIENCE: As long as you're &mdash;
 
 932
 00:37:39,746 --> 00:37:41,240
@@ -4355,7 +4355,7 @@ to do that to
 
 935
 00:37:44,600 --> 00:37:45,660
-get out of the domain--
+get out of the domain &mdash;
 
 936
 00:37:45,660 --> 00:37:46,740
@@ -4369,7 +4369,7 @@ AUDIENCE: --it will
 
 938
 00:37:48,050 --> 00:37:49,690
-So we have people leaving--
+So we have people leaving &mdash;
 
 939
 00:37:49,690 --> 00:37:51,500
@@ -4393,12 +4393,12 @@ to upload everything, because
 
 943
 00:37:59,400 --> 00:38:02,300
-they can't-- it just comes to
+they can't &mdash; it just comes to
 a standstill when you try to
 
 944
 00:38:02,300 --> 00:38:05,990
-script out an export--
+script out an export &mdash;
 
 945
 00:38:05,990 --> 00:38:08,010
@@ -4460,11 +4460,11 @@ It's just like any other file.
 
 958
 00:38:29,030 --> 00:38:30,800
-So what you can do is--
+So what you can do is &mdash;
 
 959
 00:38:30,800 --> 00:38:32,720
-it's easy enough to--
+it's easy enough to &mdash;
 
 960
 00:38:32,720 --> 00:38:33,930
@@ -4655,7 +4655,7 @@ JOHN MCGOWAN: Got it.
 
 1000
 00:39:56,510 --> 00:39:57,130
-So this is--
+So this is &mdash;
 
 1001
 00:39:57,130 --> 00:39:58,150
@@ -4678,11 +4678,11 @@ with that whole domain.
 1005
 00:40:02,540 --> 00:40:06,650
 Well, we've got some things that
-now are across campuses--
+now are across campuses &mdash;
 
 1006
 00:40:06,650 --> 00:40:08,180
-between multiple campuses-- and
+between multiple campuses &mdash; and
 then you try to share it
 
 1007
@@ -4692,7 +4692,7 @@ like, I shared it with
 
 1008
 00:40:09,990 --> 00:40:11,110
-the whole domain--
+the whole domain &mdash;
 
 1009
 00:40:11,110 --> 00:40:12,800

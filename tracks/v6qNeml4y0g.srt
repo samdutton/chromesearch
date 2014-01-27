@@ -155,12 +155,12 @@ becomes an unexpected
 
 34
 00:01:12,530 --> 00:01:15,110
-success-- there's just massive
+success &mdash; there's just massive
 growth, 20 fold
 
 35
 00:01:15,110 --> 00:01:15,970
-over what you expected--
+over what you expected &mdash;
 
 36
 00:01:15,970 --> 00:01:18,960
@@ -473,7 +473,7 @@ I had no idea "Infinity Blade
 100
 00:03:40,250 --> 00:03:42,180
 features were all powered
-by App Engine--
+by App Engine &mdash;
 
 101
 00:03:42,180 --> 00:03:44,650
@@ -944,7 +944,7 @@ out these applications.
 199
 00:07:19,730 --> 00:07:21,660
 Firstly, iOS, Android
-devices--
+devices &mdash;
 
 200
 00:07:21,660 --> 00:07:23,740
@@ -1159,7 +1159,7 @@ Anything on your device yet?
 
 244
 00:08:59,550 --> 00:09:01,850
-Well, what you will see--
+Well, what you will see &mdash;
 
 245
 00:09:01,850 --> 00:09:02,840
@@ -1590,12 +1590,12 @@ looking at, and then what will
 339
 00:12:05,660 --> 00:12:07,360
 be generated is this
-client library--
+client library &mdash;
 
 340
 00:12:07,360 --> 00:12:09,040
 for example, shown here
-for Android--
+for Android &mdash;
 
 341
 00:12:09,040 --> 00:12:10,390
@@ -1833,7 +1833,7 @@ notifications.
 390
 00:13:51,960 --> 00:13:55,310
 And so one of the secret
-sauces of App Engine--
+sauces of App Engine &mdash;
 
 391
 00:13:55,310 --> 00:13:57,130
@@ -2095,12 +2095,12 @@ App Engine for a lot of the
 
 446
 00:15:51,890 --> 00:15:53,520
-scalability aspects--
+scalability aspects &mdash;
 that'll get you up
 
 447
 00:15:53,520 --> 00:15:54,590
-to speed the quickest--
+to speed the quickest &mdash;
 
 448
 00:15:54,590 --> 00:15:56,750
@@ -2957,7 +2957,7 @@ it integrates with all the
 627
 00:23:26,220 --> 00:23:28,430
 different pieces of the
-Cloud Platform--
+Cloud Platform &mdash;
 
 628
 00:23:28,430 --> 00:23:33,060
@@ -3017,12 +3017,12 @@ strangers, that's currently
 639
 00:24:03,750 --> 00:24:06,320
 active, that's close to
-you geographically--
+you geographically &mdash;
 
 640
 00:24:06,320 --> 00:24:09,340
 so we look at the state and
-even the city level--
+even the city level &mdash;
 
 641
 00:24:09,340 --> 00:24:14,330
@@ -4503,12 +4503,12 @@ a quick game, and all of the
 953
 00:38:25,690 --> 00:38:28,370
 assets will be pulled down
-from the server--
+from the server &mdash;
 
 954
 00:38:28,370 --> 00:38:30,960
 so the media, the music,
-all of the graphics--
+all of the graphics &mdash;
 
 955
 00:38:30,960 --> 00:38:33,550
@@ -4517,13 +4517,13 @@ client here.
 
 956
 00:38:33,550 --> 00:38:35,790
-And while that's happening-- it
+And while that's happening &mdash; it
 usually takes a little bit
 
 957
 00:38:35,790 --> 00:38:38,620
 longer up here on stage
-on the Wi-Fi--
+on the Wi-Fi &mdash;
 
 958
 00:38:38,620 --> 00:38:40,410

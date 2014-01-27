@@ -36,7 +36,7 @@ in the Paul.
 
 9
 00:00:31,390 --> 00:00:34,350
-Me, making up the middle--
+Me, making up the middle &mdash;
 
 10
 00:00:34,350 --> 00:00:36,170
@@ -131,11 +131,11 @@ It's only part of the problem.
 31
 00:01:29,170 --> 00:01:32,040
 Because as we discussed with
-the-- or Colt discussed with
+the &mdash; or Colt discussed with
 
 32
 00:01:32,040 --> 00:01:33,300
-the memory thing--
+the memory thing &mdash;
 
 33
 00:01:33,300 --> 00:01:34,680
@@ -305,7 +305,7 @@ request, like so.
 68
 00:03:03,500 --> 00:03:08,390
 Our server is going to respond
-for us with some HTML--
+for us with some HTML &mdash;
 
 69
 00:03:08,390 --> 00:03:10,780
@@ -314,7 +314,7 @@ all pretty awesome.
 70
 00:03:10,780 --> 00:03:13,510
 And the first thing that the
-browser is going to do-- and
+browser is going to do &mdash; and
 
 71
 00:03:13,510 --> 00:03:16,310
@@ -324,7 +324,7 @@ doing the streamed and
 72
 00:03:16,310 --> 00:03:17,790
 lookaheads and all this
-kind of stuff--
+kind of stuff &mdash;
 
 73
 00:03:17,790 --> 00:03:21,140
@@ -359,12 +359,12 @@ just call it the DOM.
 79
 00:03:38,020 --> 00:03:42,150
 And then what we do is
-we take the CSS--
+we take the CSS &mdash;
 
 80
 00:03:42,150 --> 00:03:44,870
 we're just going to add
-that plus in there--
+that plus in there &mdash;
 
 81
 00:03:44,870 --> 00:03:47,850
@@ -383,7 +383,7 @@ line, there's the stuff that's
 
 84
 00:03:52,450 --> 00:03:53,730
-in your style sheets--
+in your style sheets &mdash;
 
 85
 00:03:53,730 --> 00:03:58,100
@@ -406,7 +406,7 @@ CSS selectors.
 
 89
 00:04:06,370 --> 00:04:07,110
-How quickly--
+How quickly &mdash;
 
 90
 00:04:07,110 --> 00:04:10,550
@@ -433,12 +433,12 @@ DevTools as Recalculate Style.
 
 95
 00:04:20,110 --> 00:04:21,719
-So what happens-- and I'm about
+So what happens &mdash; and I'm about
 to do a sound effect, I
 
 96
 00:04:21,719 --> 00:04:23,060
-can feel it coming along--
+can feel it coming along &mdash;
 
 97
 00:04:23,060 --> 00:04:25,380
@@ -549,12 +549,12 @@ So that's that.
 
 120
 00:05:14,760 --> 00:05:18,320
-Now the next job-- and it's
+Now the next job &mdash; and it's
 going to look like a really
 
 121
 00:05:18,320 --> 00:05:20,600
-simple job-- we've
+simple job &mdash; we've
 got all this CSS
 
 122
@@ -749,11 +749,11 @@ basically.
 
 162
 00:07:07,810 --> 00:07:09,100
-So now what we can do--
+So now what we can do &mdash;
 
 163
 00:07:09,100 --> 00:07:11,480
-I actually ran that HTML--
+I actually ran that HTML &mdash;
 
 164
 00:07:11,480 --> 00:07:15,030
@@ -865,7 +865,7 @@ called drawBitmap and not
 187
 00:08:04,400 --> 00:08:08,142
 drawJpeg, or drawPng,
-or drawGif--
+or drawGif &mdash;
 
 188
 00:08:08,142 --> 00:08:09,830
@@ -873,11 +873,11 @@ or drawGif--
 
 189
 00:08:09,830 --> 00:08:12,120
-Hands up for gif--
+Hands up for gif &mdash;
 
 190
 00:08:12,120 --> 00:08:13,630
-ooh it's going to be close--
+ooh it's going to be close &mdash;
 
 191
 00:08:13,630 --> 00:08:17,500
@@ -904,7 +904,7 @@ basically go through and we're
 196
 00:08:31,510 --> 00:08:36,330
 going to decode out an
-image into a bitmap--
+image into a bitmap &mdash;
 
 197
 00:08:36,330 --> 00:08:39,080
@@ -932,7 +932,7 @@ expensive.
 
 202
 00:08:47,530 --> 00:08:48,490
-They show up in DevTools--
+They show up in DevTools &mdash;
 
 203
 00:08:48,490 --> 00:08:50,790
@@ -941,7 +941,7 @@ and you'll see image
 
 204
 00:08:50,790 --> 00:08:53,120
-decodes and image re-sizes--
+decodes and image re-sizes &mdash;
 
 205
 00:08:53,120 --> 00:08:58,820
@@ -1052,12 +1052,12 @@ have several.
 227
 00:09:57,550 --> 00:10:01,160
 So this is my website and
-this is actually--
+this is actually &mdash;
 
 228
 00:10:01,160 --> 00:10:03,150
 the masthead thing
-is a canvas--
+is a canvas &mdash;
 
 229
 00:10:03,150 --> 00:10:05,020
@@ -1202,7 +1202,7 @@ have a look at them.
 
 259
 00:11:08,270 --> 00:11:10,230
-3D or perspective transform--
+3D or perspective transform &mdash;
 
 260
 00:11:10,230 --> 00:11:11,870
@@ -1238,7 +1238,7 @@ an animation on opacity,
 
 267
 00:11:24,590 --> 00:11:25,400
-interesting--
+interesting &mdash;
 
 268
 00:11:25,400 --> 00:11:29,940
@@ -1266,12 +1266,12 @@ add some more, we might.
 
 273
 00:11:40,880 --> 00:11:42,220
-So the last little part--
+So the last little part &mdash;
 and this is the
 
 274
 00:11:42,220 --> 00:11:43,410
-website from tonight--
+website from tonight &mdash;
 
 275
 00:11:43,410 --> 00:11:47,940
@@ -1293,7 +1293,7 @@ done actually on the CPU.
 
 279
 00:11:53,960 --> 00:11:55,040
-And when we do rasterization--
+And when we do rasterization &mdash;
 
 280
 00:11:55,040 --> 00:11:57,040
@@ -1302,7 +1302,7 @@ wanted to include it for
 
 281
 00:11:57,040 --> 00:11:58,170
-completeness' sake--
+completeness' sake &mdash;
 
 282
 00:11:58,170 --> 00:12:01,310
@@ -1354,7 +1354,7 @@ end up doing at this
 292
 00:12:23,540 --> 00:12:27,260
 point is sending those tiles
-across to the GPU--
+across to the GPU &mdash;
 
 293
 00:12:27,260 --> 00:12:28,270
@@ -1382,7 +1382,7 @@ saturate that link.
 298
 00:12:37,730 --> 00:12:40,330
 And if you're having
-to send across--
+to send across &mdash;
 
 299
 00:12:40,330 --> 00:12:41,800
@@ -1537,7 +1537,7 @@ milliseconds.
 331
 00:14:06,980 --> 00:14:09,420
 Now all I'm going to do at this
-point-- as I say normally
+point &mdash; as I say normally
 
 332
 00:14:09,420 --> 00:14:11,250
@@ -1646,7 +1646,7 @@ that layout
 354
 00:15:12,320 --> 00:15:15,000
 is somehow painting, but
-actually layout--
+actually layout &mdash;
 
 355
 00:15:15,000 --> 00:15:17,330
@@ -1673,7 +1673,7 @@ a little bit like
 
 360
 00:15:24,320 --> 00:15:25,650
-this and the code--
+this and the code &mdash;
 
 361
 00:15:25,650 --> 00:15:27,470
@@ -1711,12 +1711,12 @@ thing called greenBlock.
 368
 00:15:43,220 --> 00:15:46,910
 And we ask for its offset width,
-which causes Chrome--
+which causes Chrome &mdash;
 
 369
 00:15:46,910 --> 00:15:49,280
 and in fact any WebKit or
-Blink-based browser--
+Blink-based browser &mdash;
 
 370
 00:15:49,280 --> 00:15:53,780
@@ -1750,7 +1750,7 @@ write-read-write
 
 376
 00:16:03,372 --> 00:16:04,622
--read-write-read-write--
+-read-write-read-write &mdash;
 
 377
 00:16:04,622 --> 00:16:07,290
@@ -1776,11 +1776,11 @@ your applications.
 
 382
 00:16:19,130 --> 00:16:20,710
-What you wanted to do--
+What you wanted to do &mdash;
 
 383
 00:16:20,710 --> 00:16:21,700
-there we go--
+there we go &mdash;
 
 384
 00:16:21,700 --> 00:16:25,220
@@ -1800,7 +1800,7 @@ Happy days.
 
 388
 00:16:29,300 --> 00:16:30,590
-Paint--
+Paint &mdash;
 
 389
 00:16:30,590 --> 00:16:32,170
@@ -1855,12 +1855,12 @@ You are so reliable.
 400
 00:16:55,980 --> 00:16:58,445
 Anyway, so what I've got is I've
-got these buttons-- oh,
+got these buttons &mdash; oh,
 
 401
 00:16:58,445 --> 00:17:01,025
 yeah, scroll bar, that's getting
-repainted-- now I've
+repainted &mdash; now I've
 
 402
 00:17:01,025 --> 00:17:03,940
@@ -1980,12 +1980,12 @@ it just for this reason.
 
 427
 00:18:00,750 --> 00:18:03,520
-The danger that we then have--
+The danger that we then have &mdash;
 
 428
 00:18:03,520 --> 00:18:05,750
 I'm just hovering
-over in this--
+over in this &mdash;
 
 429
 00:18:05,750 --> 00:18:07,690
@@ -2179,7 +2179,7 @@ to that, really.
 
 469
 00:19:53,570 --> 00:19:56,940
-Paint storms-- we were debating
+Paint storms &mdash; we were debating
 this term earlier,
 
 470
@@ -2526,12 +2526,12 @@ actually that you might want
 
 544
 00:23:15,620 --> 00:23:19,330
-to look at, which is--
+to look at, which is &mdash;
 
 545
 00:23:19,330 --> 00:23:20,720
 it doesn't take too much
-imagination-- if you're
+imagination &mdash; if you're
 
 546
 00:23:20,720 --> 00:23:24,050
@@ -2657,7 +2657,7 @@ requestAnimationFrame to
 
 572
 00:24:30,390 --> 00:24:31,960
-handle the scroll--
+handle the scroll &mdash;
 
 573
 00:24:31,960 --> 00:24:32,620
@@ -2710,7 +2710,7 @@ bit of myth busting.
 
 584
 00:25:04,760 --> 00:25:05,670
-JavaScript--
+JavaScript &mdash;
 
 585
 00:25:05,670 --> 00:25:07,820
@@ -2806,7 +2806,7 @@ actually running.
 604
 00:25:51,470 --> 00:25:53,090
 Unless you're making
-a game, or--
+a game, or &mdash;
 
 605
 00:25:53,090 --> 00:25:55,890
@@ -2845,7 +2845,7 @@ your bottleneck.
 612
 00:26:14,690 --> 00:26:19,420
 So if you start seeing it's
-really fast with JavaScript--
+really fast with JavaScript &mdash;
 
 613
 00:26:19,420 --> 00:26:22,120
@@ -2924,7 +2924,7 @@ it is not a unit test.
 629
 00:27:00,380 --> 00:27:02,220
 It's not something you get to
-the end of the project--
+the end of the project &mdash;
 
 630
 00:27:02,220 --> 00:27:03,230
@@ -2932,7 +2932,7 @@ am I fast?
 
 631
 00:27:03,230 --> 00:27:04,480
-No--
+No &mdash;
 
 632
 00:27:04,480 --> 00:27:06,170

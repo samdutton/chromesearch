@@ -271,7 +271,7 @@ from. Some examples just given here are your
 55
 00:03:57,239 --> 00:04:01,989
 tablet, your Chromebook, your Android phone,
-your iPhone, your -- or even your traditional
+your iPhone, your  &mdash; or even your traditional
 
 56
 00:04:01,989 --> 00:04:06,180
@@ -335,7 +335,7 @@ So the great thing with Google Cloud Print,
 
 68
 00:04:55,620 --> 00:04:59,020
-and one of the reasons that -- I guess the
+and one of the reasons that  &mdash; I guess the
 beauty of the platform and why we find it
 
 69
@@ -386,7 +386,7 @@ products around this, which we'll be explaining
 78
 00:05:40,999 --> 00:05:46,219
 more later in the presentation as well.
-Finally -- and this feature is something we
+Finally  &mdash; and this feature is something we
 
 79
 00:05:46,219 --> 00:05:51,020
@@ -660,7 +660,7 @@ out.
 
 133
 00:10:18,339 --> 00:10:23,899
-Next -- and the main method of this gadget
+Next  &mdash; and the main method of this gadget
 is set print document, which allows you to
 
 134
@@ -725,7 +725,7 @@ and closing print dialogue, you might want
 
 146
 00:11:30,250 --> 00:11:36,149
-to use two other -- two methods below. It's
+to use two other  &mdash; two methods below. It's
 open print dialogue and close print dialogue
 
 147
@@ -736,7 +736,7 @@ And you might want to use it if you want to
 148
 00:11:43,240 --> 00:11:48,839
 open print dialogue on some custom action
-like print -- document was uploaded or -- and
+like print  &mdash; document was uploaded or  &mdash; and
 
 149
 00:11:48,839 --> 00:11:55,660
@@ -806,7 +806,7 @@ this code you'll work exactly the same way
 162
 00:13:02,129 --> 00:13:08,170
 on any browser, including mobile browsers.
-So you only implement it once and -- well,
+So you only implement it once and  &mdash; well,
 
 163
 00:13:08,170 --> 00:13:14,069
@@ -815,7 +815,7 @@ type of dialogues on different browsers, depending
 
 164
 00:13:14,069 --> 00:13:21,069
-on -- well, optimize them for those.
+on  &mdash; well, optimize them for those.
 Yeah. And we want to show you how Box integrated
 
 165
@@ -871,7 +871,7 @@ In order to do that you will need to include
 175
 00:14:35,399 --> 00:14:42,399
 Cloud Print intent code into your application,
-and you can get this code on this URL --
+and you can get this code on this URL  &mdash;
 
 176
 00:14:44,629 --> 00:14:49,860
@@ -881,7 +881,7 @@ and you can get this code on this URL --
 177
 00:14:49,860 --> 00:14:55,009
 matters even more interesting, this printer
-is connected using a mobile network, so -- yeah,
+is connected using a mobile network, so  &mdash; yeah,
 
 178
 00:14:55,009 --> 00:14:57,410
@@ -941,7 +941,7 @@ to. Go button, which you need to click in
 189
 00:15:52,379 --> 00:15:59,379
 order to go to this URL. And Web view, which
-is -- well, which contains content of the
+is  &mdash; well, which contains content of the
 
 190
 00:16:00,199 --> 00:16:05,079
@@ -961,7 +961,7 @@ the Web page, and in order to do that we need
 193
 00:16:16,410 --> 00:16:21,209
 to have JavaScript-to-Java bridge because
--- well, this is the only way you can access
+ &mdash; well, this is the only way you can access
 
 194
 00:16:21,209 --> 00:16:27,480
@@ -1060,13 +1060,13 @@ Okay. It's going to be printed in a few seconds,
 
 213
 00:18:42,310 --> 00:18:47,830
-so I'm going to continue with -- yeah, with
+so I'm going to continue with  &mdash; yeah, with
 my presentation.
 
 214
 00:18:47,830 --> 00:18:54,830
 In some cases those two integrations might
-not -- oh, by the way, yeah, you can get the
+not  &mdash; oh, by the way, yeah, you can get the
 
 215
 00:18:55,300 --> 00:19:01,430
@@ -1101,7 +1101,7 @@ you to search for all the printers available
 221
 00:19:24,420 --> 00:19:30,030
 for the user. You can do some filter and some
-searches, like some filter -- like filter
+searches, like some filter  &mdash; like filter
 
 222
 00:19:30,030 --> 00:19:36,060
@@ -1140,7 +1140,7 @@ of the job, capabilities, content type, if
 
 229
 00:20:14,450 --> 00:20:18,820
--- if content of the job is Base 64 encoder,
+ &mdash; if content of the job is Base 64 encoder,
 so you will need to set up a content task
 
 230
@@ -1156,7 +1156,7 @@ to hand it back to Akshay.
 232
 00:20:29,930 --> 00:20:32,740
 So we have showed how you can integrate with
-that --
+that  &mdash;
 
 233
 00:20:32,740 --> 00:20:35,790
@@ -1191,7 +1191,7 @@ with Google Cloud Print as of today and that
 239
 00:21:03,270 --> 00:21:10,270
 number is continuing to grow, so our main
-type of printers are -- at least for the best
+type of printers are  &mdash; at least for the best
 
 240
 00:21:10,750 --> 00:21:15,740
@@ -1210,7 +1210,7 @@ a wide variety of retailers and manufacturers,
 
 243
 00:21:27,120 --> 00:21:31,630
-and we've -- in particular printers the list
+and we've  &mdash; in particular printers the list
 that we have here on our slide deck of HP,
 
 244
@@ -1271,7 +1271,7 @@ there, set it up as a local printer. And then
 255
 00:22:24,650 --> 00:22:29,530
 from within Chrome settings, you can register
--- in fact here's a screen shot from the settings
+ &mdash; in fact here's a screen shot from the settings
 
 256
 00:22:29,530 --> 00:22:33,890
@@ -1316,7 +1316,7 @@ Also we don't just support printer to printers,
 264
 00:23:02,360 --> 00:23:07,470
 as I mentioned earlier. But we really support
-printing to anywhere. You can print to -- currently
+printing to anywhere. You can print to  &mdash; currently
 
 265
 00:23:07,470 --> 00:23:11,960
@@ -1361,7 +1361,7 @@ sync, what we do is we actually register your
 273
 00:23:43,390 --> 00:23:48,340
 phone as a Google Cloud Print device in your
-dialogue. So what you will be able to do -- whenever
+dialogue. So what you will be able to do  &mdash; whenever
 
 274
 00:23:48,340 --> 00:23:51,990
@@ -1390,7 +1390,7 @@ Finally, in terms of printing to anywhere,
 
 279
 00:24:11,320 --> 00:24:16,210
-we also -- like most of our product -- have
+we also  &mdash; like most of our product  &mdash; have
 a fully open API that you can use as developers
 
 280
@@ -1495,7 +1495,7 @@ to download the file. So the cool thing about
 
 300
 00:26:01,170 --> 00:26:06,590
-this URL is that -- you can -- you can dynamically
+this URL is that  &mdash; you can  &mdash; you can dynamically
 change the format of the file by specifying
 
 301
@@ -1515,7 +1515,7 @@ it to your printer.
 
 304
 00:26:19,900 --> 00:26:25,950
-If you want to fetch it -- the other main
+If you want to fetch it  &mdash; the other main
 format is PWG Raster, which is a simple Raster
 
 305
@@ -1556,7 +1556,7 @@ it. So by default, whenever you print a job,
 312
 00:27:01,410 --> 00:27:05,920
 we set the status of that job to be queued.
-And over time as you are printing that -- so
+And over time as you are printing that  &mdash; so
 
 313
 00:27:05,920 --> 00:27:09,360
@@ -1615,7 +1615,7 @@ we have security restrictions in place.
 
 324
 00:27:56,910 --> 00:28:02,950
-Finally, we also support so -- so this is
+Finally, we also support so  &mdash; so this is
 actually I'll start with the problem here
 
 325
@@ -1631,7 +1631,7 @@ the printer to somehow authenticate as you
 327
 00:28:14,330 --> 00:28:20,130
 before it can register itself with the system.
-That's a hard problem, because -- the biggest
+That's a hard problem, because  &mdash; the biggest
 
 328
 00:28:20,130 --> 00:28:24,600
@@ -1651,7 +1651,7 @@ your Google account from the printer. And
 331
 00:28:33,230 --> 00:28:37,090
 then also I think on another folder also the
-UI problem of not all printers -- not all
+UI problem of not all printers  &mdash; not all
 
 332
 00:28:37,090 --> 00:28:40,950
@@ -1725,7 +1725,7 @@ that we've dealt with is spam invitations.
 
 346
 00:29:46,970 --> 00:29:52,320
-So, for example, if I shared -- I could technically
+So, for example, if I shared  &mdash; I could technically
 share 100 printers with Yuri and completely
 
 347
@@ -1850,7 +1850,7 @@ if you don't care about conversion, then our
 
 371
 00:31:48,030 --> 00:31:52,380
-platform -- if the input and output formats
+platform  &mdash; if the input and output formats
 are identical, we will actually do no conversion
 
 372
@@ -1880,7 +1880,7 @@ It's also particularly useful for sending
 
 377
 00:32:09,860 --> 00:32:13,810
--- if you want to encrypt content and before
+ &mdash; if you want to encrypt content and before
 you send it to us, decrypt it after you receive
 
 378
@@ -1951,16 +1951,16 @@ where we're heading going forward with Google
 391
 00:33:21,740 --> 00:33:26,300
 Cloud Print.
-So -- so one huge challenge for us has been
+So  &mdash; so one huge challenge for us has been
 
 392
 00:33:26,300 --> 00:33:31,040
-handling printer capabilities. There's -- they
+handling printer capabilities. There's  &mdash; they
 can be kind of a nightmare to deal with. There's
 
 393
 00:33:31,040 --> 00:33:38,040
-a lot -- basically with printer capabilities,
+a lot  &mdash; basically with printer capabilities,
 the two main formats are XPS and PPD. And
 
 394
@@ -1985,7 +1985,7 @@ differently on different platforms. So we
 
 398
 00:33:58,000 --> 00:34:01,880
-really -- what we want to do is rather than
+really  &mdash; what we want to do is rather than
 just reading strings, we want to be a able
 
 399
@@ -2060,7 +2060,7 @@ to these printers simply by tapping an NFC
 
 413
 00:35:14,130 --> 00:35:20,030
-tag or scanning a QR code, it gives you -- instantly
+tag or scanning a QR code, it gives you  &mdash; instantly
 adds the printer to your Google account and
 
 414
@@ -2101,7 +2101,7 @@ in Chrome and just make that seamless. So
 421
 00:35:51,870 --> 00:35:58,380
 real quick, I'm going to grab the laptop and
-open up the -- this is the Canary channel
+open up the  &mdash; this is the Canary channel
 
 422
 00:35:58,380 --> 00:36:05,250
@@ -2125,7 +2125,7 @@ except there's a slight difference. And that
 
 426
 00:36:19,940 --> 00:36:23,380
-is -- I don't know if you guys can notice,
+is  &mdash; I don't know if you guys can notice,
 the destination pane is slightly different
 
 427
@@ -2190,7 +2190,7 @@ second. So this is our integration in Chrome
 
 439
 00:37:15,440 --> 00:37:20,070
-and it's -- you know, we've tried to make
+and it's  &mdash; you know, we've tried to make
 it as seamless as possible, basically as easy
 
 440
@@ -2215,7 +2215,7 @@ We're going to leave the remaining 20 minutes
 
 444
 00:37:40,380 --> 00:37:47,380
-for Q and A. So -- so -- so fire away.
+for Q and A. So  &mdash; so  &mdash; so fire away.
 [ Applause ]
 
 445
@@ -2226,7 +2226,7 @@ the right side of the room.
 446
 00:37:57,170 --> 00:38:04,170
 >>> Hi. I had one question. On the Android
-apps and on the Web. Is there a way to -- to
+apps and on the Web. Is there a way to  &mdash; to
 
 447
 00:38:05,230 --> 00:38:09,530
@@ -2255,13 +2255,13 @@ dialogues to not show options such as copies.
 
 452
 00:38:28,210 --> 00:38:33,310
-Actually --
+Actually  &mdash;
 >>Yuri Dolgov: No, there is not such a way.
 
 453
 00:38:33,310 --> 00:38:37,710
 But, yeah, this is nice suggestion. We'll
--- we'll discuss it.
+ &mdash; we'll discuss it.
 
 454
 00:38:37,710 --> 00:38:43,770
@@ -2270,7 +2270,7 @@ using the HTTPS protocols? I mean, I don't
 
 455
 00:38:43,770 --> 00:38:45,970
---
+ &mdash;
 >>Yuri Dolgov: If you create your own, your
 
 456
@@ -2330,7 +2330,7 @@ which can be associated with a single connection.
 
 467
 00:39:34,860 --> 00:39:40,340
-So -- so what it is, for cloud ready printers,
+So  &mdash; so what it is, for cloud ready printers,
 we have one XMPP connection for each of those
 
 468
@@ -2341,7 +2341,7 @@ to the server or a different Chrome connector,
 469
 00:39:44,320 --> 00:39:50,100
 it's an XMPP connection per machine.
-So -- so, for example, if I'm sharing five
+So  &mdash; so, for example, if I'm sharing five
 
 470
 00:39:50,100 --> 00:39:55,730
@@ -2351,7 +2351,7 @@ open or, I'm sorry, one XMPP connection controlling
 471
 00:39:55,730 --> 00:40:00,890
 all five of those printers.
->>> But just short questions -- the short
+>>> But just short questions  &mdash; the short
 
 472
 00:40:00,890 --> 00:40:05,600
@@ -2416,7 +2416,7 @@ Linux, how it works is you can start the Chrome
 484
 00:41:00,220 --> 00:41:05,900
 connector, but actually you can run Chrome
-in -- this is actually -- it's in the chromium
+in  &mdash; this is actually  &mdash; it's in the chromium
 
 485
 00:41:05,900 --> 00:41:11,930
@@ -2465,7 +2465,7 @@ for a printer to report its status, or how
 
 494
 00:41:52,720 --> 00:41:56,240
-does that -- how does Google know that that
+does that  &mdash; how does Google know that that
 printer is not available?
 
 495
@@ -2491,7 +2491,7 @@ whether it's online or offline.
 499
 00:42:14,730 --> 00:42:17,450
 >>> So that doesn't remove from the list,
-though? Is there some --
+though? Is there some  &mdash;
 
 500
 00:42:17,450 --> 00:42:21,040
@@ -2521,7 +2521,7 @@ same account that you used to set up the printer,
 505
 00:42:38,250 --> 00:42:45,250
 or you can share the printer with your other
-account. But, yeah, we don't -- the printer,
+account. But, yeah, we don't  &mdash; the printer,
 
 506
 00:42:45,530 --> 00:42:50,480
@@ -2565,7 +2565,7 @@ would retain the job on our side.
 
 514
 00:43:24,470 --> 00:43:29,260
->>> I guess what I would like to see is -- is
+>>> I guess what I would like to see is  &mdash; is
 that ability when you're using the connector,
 
 515
@@ -2616,16 +2616,16 @@ but my question is say you're in Google Drive,
 524
 00:44:11,470 --> 00:44:17,280
 and you have a picture file, I think if you
-print it now, it like -- it just comes out
+print it now, it like  &mdash; it just comes out
 
 525
 00:44:17,280 --> 00:44:22,840
 in a standard way. Are you guys like thinking
-of any options -- like if you wanted a full
+of any options  &mdash; like if you wanted a full
 
 526
 00:44:22,840 --> 00:44:26,220
-page photo or like half page or like -- is
+page photo or like half page or like  &mdash; is
 there a way to format it?
 
 527
@@ -2641,7 +2641,7 @@ we'll be expanding what those capabilities
 529
 00:44:35,800 --> 00:44:40,960
 are. Some things like scaling would be options
-that are -- that are part of the dialogue,
+that are  &mdash; that are part of the dialogue,
 
 530
 00:44:40,960 --> 00:44:45,880
@@ -2660,7 +2660,7 @@ work for us, but not currently there.
 
 533
 00:44:58,839 --> 00:45:03,220
->>> At -- on my home system if I'm not logged
+>>> At  &mdash; on my home system if I'm not logged
 in, and I see my son is logged in on the computer,
 
 534
@@ -2671,16 +2671,16 @@ an appliance that could just sit on the network,
 535
 00:45:10,540 --> 00:45:16,690
 you know, a tiny little box that would prevent
--- or provide the cloud services so that I
+ &mdash; or provide the cloud services so that I
 
 536
 00:45:16,690 --> 00:45:21,270
 don't have to worry about being logged in?
->>Akshay Kannan: There's -- that's definitely
+>>Akshay Kannan: There's  &mdash; that's definitely
 
 537
 00:45:21,270 --> 00:45:26,140
-a -- something that's -- a developer could
+a  &mdash; something that's  &mdash; a developer could
 technically build. We currently don't have
 
 538
@@ -2690,7 +2690,7 @@ anything like that.
 
 539
 00:45:29,170 --> 00:45:34,980
-for WRT support, in just -- it's in early
+for WRT support, in just  &mdash; it's in early
 stage, but (indiscernible) we implemented
 
 540
@@ -2800,7 +2800,7 @@ were just browsing to, say?
 
 561
 00:47:22,030 --> 00:47:26,900
->>Akshay Kannan: Yes, if it's -- if it's,
+>>Akshay Kannan: Yes, if it's  &mdash; if it's,
 for example, a PDF that's 8.5 x 11 that you
 
 562
@@ -2836,7 +2836,7 @@ printers public, so none of this UI is currently
 568
 00:47:57,070 --> 00:48:02,330
 available. That being said, depending on the
--- we're basically trying this out as a pilot
+ &mdash; we're basically trying this out as a pilot
 
 569
 00:48:02,330 --> 00:48:06,609
@@ -2860,8 +2860,8 @@ cloud-ready, you can set up the Chrome connector,
 
 573
 00:48:23,740 --> 00:48:28,240
-so this is -- or there's a slide earlier.
-Basically from within the -- if your printer
+so this is  &mdash; or there's a slide earlier.
+Basically from within the  &mdash; if your printer
 
 574
 00:48:28,240 --> 00:48:34,140
@@ -2885,7 +2885,7 @@ machine as a print server.
 
 578
 00:48:49,240 --> 00:48:53,330
-as long as -- the only restriction is that
+as long as  &mdash; the only restriction is that
 the laptop or the computer that you're using
 
 579
@@ -2905,7 +2905,7 @@ for print media, will the print Cloud Print
 
 582
 00:49:13,289 --> 00:49:19,460
---
+ &mdash;
 >>Yuri Dolgov: Specific print and layout so,
 
 583
@@ -2915,8 +2915,8 @@ yes.
 
 584
 00:49:28,060 --> 00:49:35,060
-the orientation program -- like orientation
-equals landscape or --
+the orientation program  &mdash; like orientation
+equals landscape or  &mdash;
 
 585
 00:49:35,890 --> 00:49:39,540
@@ -2931,11 +2931,11 @@ support orientation, we don't do anything.
 587
 00:49:44,370 --> 00:49:50,890
 >>> No, no, I mean, I guess certain printers
--- for some reason it has to do with drivers
+ &mdash; for some reason it has to do with drivers
 
 588
 00:49:50,890 --> 00:49:57,890
-that's not -- exposed the API for software
+that's not  &mdash; exposed the API for software
 to control whether it always asks the user
 
 589
@@ -2945,13 +2945,13 @@ Have you done it to programmatically set the
 
 590
 00:50:13,780 --> 00:50:18,330
---
+ &mdash;
 >>> With most printers you are able to programmatically
 
 591
 00:50:18,330 --> 00:50:23,720
 set the orientation using the capabilities,
-basically when you get your -- when you fetch
+basically when you get your  &mdash; when you fetch
 
 592
 00:50:23,720 --> 00:50:29,080
@@ -2971,7 +2971,7 @@ print ticket with the orientation specified.
 595
 00:50:37,680 --> 00:50:44,660
 >>> So you mentioned some esoteric encryption
-solutions where I would implement my -- a
+solutions where I would implement my  &mdash; a
 
 596
 00:50:44,660 --> 00:50:51,660
@@ -2986,7 +2986,7 @@ that, or is there another option?
 598
 00:50:56,980 --> 00:51:01,260
 >>Akshay Kannan: Yeah. So, as I mentioned
-earlier, you can -- yeah, with end-to-end
+earlier, you can  &mdash; yeah, with end-to-end
 
 599
 00:51:01,260 --> 00:51:06,140
@@ -3015,7 +3015,7 @@ that case.
 
 604
 00:51:30,530 --> 00:51:36,359
-is there any plan to support XPSS or --
+is there any plan to support XPSS or  &mdash;
 >>Akshay Kannan: The question was is there
 
 605
@@ -3025,7 +3025,7 @@ The answer is currently no. We're always looking
 
 606
 00:51:45,640 --> 00:51:52,070
-into new formats to explore, but for the -- for
+into new formats to explore, but for the  &mdash; for
 the foreseeable future, PDF and PW Raster
 
 607
@@ -3076,16 +3076,16 @@ that would allow, you know, printing from
 616
 00:52:40,119 --> 00:52:45,840
 OSB first class, first class printing, like
-from Mac OS or --
+from Mac OS or  &mdash;
 
 617
 00:52:45,840 --> 00:52:49,950
->>Akshay Kannan: We -- yeah, we currently
+>>Akshay Kannan: We  &mdash; yeah, we currently
 don't have any plans to announce in that direction,
 
 618
 00:52:49,950 --> 00:52:56,050
-but that's definitely something that -- that
+but that's definitely something that  &mdash; that
 we're looking into going forward, and currently
 
 619
@@ -3096,16 +3096,16 @@ that that isn't currently there is to save
 620
 00:53:00,590 --> 00:53:05,980
 it as a PDF and then print it through Cloud
-Print in Chrome, but, yeah, there's -- we
+Print in Chrome, but, yeah, there's  &mdash; we
 
 621
 00:53:05,980 --> 00:53:07,380
 currently don't have stuff to announce but
---
+ &mdash;
 
 622
 00:53:07,380 --> 00:53:12,140
->>> It makes the -- the wife acceptance factor
+>>> It makes the  &mdash; the wife acceptance factor
 pretty low when you have to go through and
 
 623
@@ -3166,7 +3166,7 @@ groups and we'll be happy to point you to
 634
 00:54:04,090 --> 00:54:06,930
 the code, and also put you in touch with the
-guy who wrote it so --
+guy who wrote it so  &mdash;
 
 635
 00:54:06,930 --> 00:54:10,400
@@ -3195,7 +3195,7 @@ anymore. Is it over XMPP?
 
 640
 00:54:33,970 --> 00:54:38,210
--- I didn't mention this API, but we do have
+ &mdash; I didn't mention this API, but we do have
 an update API which allows you to do exactly
 
 641
@@ -3215,17 +3215,17 @@ automatically update all of that server side.
 
 644
 00:54:52,190 --> 00:54:58,040
->>> And the second question is -- I forgot.
+>>> And the second question is  &mdash; I forgot.
 All right, I'll come back.
 
 645
 00:54:58,040 --> 00:55:05,000
 >>> Okay, so my questions are that when you
-have multiple printers it's -- it gets quite
+have multiple printers it's  &mdash; it gets quite
 
 646
 00:55:05,000 --> 00:55:11,160
-hard to determine if they are -- you have
+hard to determine if they are  &mdash; you have
 the three different connectivity options,
 
 647
@@ -3236,12 +3236,12 @@ are connected in which ways, or at least used
 648
 00:55:18,050 --> 00:55:25,050
 to be. So what's your opinion on that, and
-in windows environments, in -- at least in
+in windows environments, in  &mdash; at least in
 
 649
 00:55:27,150 --> 00:55:33,140
 Windows 7, you can get an image of the printer
-so you can see, oh, that's -- that's one.
+so you can see, oh, that's  &mdash; that's one.
 
 650
 00:55:33,140 --> 00:55:38,690
@@ -3286,7 +3286,7 @@ different printers.
 658
 00:56:15,650 --> 00:56:22,650
 to group printers like on departments on functionality-wise,
-or it could also be -- say if you have a mobile
+or it could also be  &mdash; say if you have a mobile
 
 659
 00:56:25,460 --> 00:56:32,180
@@ -3326,7 +3326,7 @@ name into the search dialogue and I'll see
 666
 00:56:58,420 --> 00:57:02,690
 all the printers that are near me. Another
-thing is we also do -- I think you mentioned
+thing is we also do  &mdash; I think you mentioned
 
 667
 00:57:02,690 --> 00:57:06,840
@@ -3351,7 +3351,7 @@ have like a thousand printers in your dialogues.
 671
 00:57:21,099 --> 00:57:24,570
 >>Akshay Kannan: Uh-huh.
->>> Okay. Then you search for nearby --
+>>> Okay. Then you search for nearby  &mdash;
 
 672
 00:57:24,570 --> 00:57:26,130
@@ -3450,7 +3450,7 @@ over to the printer without any conversion
 
 691
 00:59:06,109 --> 00:59:13,109
-on our side. In terms of -- so in terms of
+on our side. In terms of  &mdash; so in terms of
 conversion, we do use a conversion service
 
 692
@@ -3470,17 +3470,17 @@ http logs, and also I guess the fact that
 
 695
 00:59:30,240 --> 00:59:33,340
-within your account you'll see these -- you'll
+within your account you'll see these  &mdash; you'll
 see your print job history.
 
 696
 00:59:33,340 --> 00:59:39,930
 >>> So Google has no content extraction kind
-of -- if I print my bank account statements
+of  &mdash; if I print my bank account statements
 
 697
 00:59:39,930 --> 00:59:42,510
-it's not --
+it's not  &mdash;
 >>Akshay Kannan: Not at all. We don't use
 
 698
@@ -3536,7 +3536,7 @@ things, but also the machines themselves are
 708
 01:00:43,730 --> 01:00:46,730
 generally public, so I ended up putting it
-on one of the administrator's -- one of the
+on one of the administrator's  &mdash; one of the
 
 709
 01:00:46,730 --> 01:00:51,680
@@ -3561,7 +3561,7 @@ you referring to like log-in accounts?
 713
 01:01:06,279 --> 01:01:12,930
 >>> They have to have a Gmail account in order
-to be able to have a printer -- in order to
+to be able to have a printer  &mdash; in order to
 
 714
 01:01:12,930 --> 01:01:18,000
@@ -3625,8 +3625,8 @@ server so that way no one has to use their
 
 726
 01:02:07,440 --> 01:02:11,210
-personal account to --
->>> Is there a way to -- so if you have a
+personal account to  &mdash;
+>>> Is there a way to  &mdash; so if you have a
 
 727
 01:02:11,210 --> 01:02:16,270
@@ -3691,7 +3691,7 @@ printer that you account to over LPR?
 739
 01:03:12,670 --> 01:03:17,250
 >>> Yes, but it's connected to my applications.
-There is no drivers, there is no --
+There is no drivers, there is no  &mdash;
 
 740
 01:03:17,250 --> 01:03:22,400
@@ -3701,7 +3701,7 @@ print drivers, we won't be able to integrate
 741
 01:03:22,400 --> 01:03:25,680
 that with Cloud Print.
-So currently -- I'm assuming you want to set
+So currently  &mdash; I'm assuming you want to set
 
 742
 01:03:25,680 --> 01:03:30,220
@@ -3716,12 +3716,12 @@ which are actually in your OS print dialogue
 744
 01:03:35,140 --> 01:03:40,450
 to share. So we won't be sharing it unless
-it's -- unless it uses the standard OS print
+it's  &mdash; unless it uses the standard OS print
 
 745
 01:03:40,450 --> 01:03:47,130
 mechanism to receive print jobs.
->>> Okay. But is it -- can I make a connector
+>>> Okay. But is it  &mdash; can I make a connector
 
 746
 01:03:47,130 --> 01:03:50,190
@@ -3756,7 +3756,7 @@ It runs as a background service using Android
 752
 01:04:20,570 --> 01:04:27,570
 push. So you can print anything to your phone
-and it just shows up as a PDF on 
+and it just shows up as a PDF on
 the device.
 
 753
@@ -3821,7 +3821,7 @@ et cetera?
 
 765
 01:05:19,080 --> 01:05:21,660
-we do support -- is this for enterprise in
+we do support  &mdash; is this for enterprise in
 particular?
 
 766
@@ -3831,7 +3831,7 @@ particular?
 
 767
 01:05:25,220 --> 01:05:30,980
-we have -- currently our consumer solution
+we have  &mdash; currently our consumer solution
 for most part is our enterprise solution.
 
 768
@@ -3842,7 +3842,7 @@ enterprise solution going forward.
 769
 01:05:36,150 --> 01:05:43,150
 But yeah, for now integration we offer at
-a basic level is -- as we mentioned you can
+a basic level is  &mdash; as we mentioned you can
 
 770
 01:05:43,880 --> 01:05:49,940
@@ -3856,7 +3856,7 @@ of people.
 
 772
 01:05:54,140 --> 01:06:01,140
->>> So if that's -- if you add a new user
+>>> So if that's  &mdash; if you add a new user
 to a group, if we have a group called printers
 
 773

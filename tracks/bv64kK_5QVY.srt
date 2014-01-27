@@ -347,7 +347,7 @@ see how we look like.
 
 75
 00:04:01,990 --> 00:04:04,350
-And if we'll open the source--
+And if we'll open the source &mdash;
 
 76
 00:04:04,350 --> 00:04:06,720
@@ -356,7 +356,7 @@ source code of this
 
 77
 00:04:06,720 --> 00:04:10,250
-page in our main page--
+page in our main page &mdash;
 
 78
 00:04:10,250 --> 00:04:12,890
@@ -406,7 +406,7 @@ basically Google Maps API.
 
 88
 00:04:57,450 --> 00:04:58,700
-Now you can see here--
+Now you can see here &mdash;
 
 89
 00:04:58,700 --> 00:05:01,530
@@ -471,11 +471,11 @@ it for the first time.
 
 102
 00:05:41,150 --> 00:05:43,170
-And once we are doing that--
+And once we are doing that &mdash;
 
 103
 00:05:43,170 --> 00:05:46,260
-let's get back to our code--
+let's get back to our code &mdash;
 
 104
 00:05:46,260 --> 00:05:49,480
@@ -483,7 +483,7 @@ let's get back to our code--
 105
 00:05:49,480 --> 00:05:53,460
 just over here in the
-script, we are--
+script, we are &mdash;
 
 106
 00:05:53,460 --> 00:05:54,020
@@ -733,11 +733,11 @@ retrieve the answer.
 158
 00:08:23,030 --> 00:08:25,880
 One nice thing here that I
-prepared is just-- you could
+prepared is just &mdash; you could
 
 159
 00:08:25,880 --> 00:08:28,020
-see that I wrote it in Hebrew--
+see that I wrote it in Hebrew &mdash;
 but you could, for
 
 160
@@ -748,16 +748,16 @@ the example, say something like,
 161
 00:08:32,309 --> 00:08:36,870
 it, and after we do that, if
-we go with the key of--
+we go with the key of &mdash;
 
 162
 00:08:36,870 --> 00:08:39,330
 here it's meaning in
-Hebrew, shalom--
+Hebrew, shalom &mdash;
 
 163
 00:08:39,330 --> 00:08:40,900
-it will retrieve--
+it will retrieve &mdash;
 
 164
 00:08:40,900 --> 00:08:41,799
@@ -893,7 +893,7 @@ know, if we search here quite
 192
 00:10:12,040 --> 00:10:16,960
 quickly, WebRTC, you could see
-that we're supporting--
+that we're supporting &mdash;
 
 193
 00:10:16,960 --> 00:10:19,870
@@ -1013,7 +1013,7 @@ basically taking the video
 
 218
 00:11:37,600 --> 00:11:39,890
-source-- and that's one of the
+source &mdash; and that's one of the
 beauty in this API, that
 
 219
@@ -1079,7 +1079,7 @@ in your current tab or window.
 
 232
 00:12:24,250 --> 00:12:26,010
-So when the user is flipping--
+So when the user is flipping &mdash;
 
 233
 00:12:26,010 --> 00:12:28,900
@@ -1088,7 +1088,7 @@ flipped several times from
 
 234
 00:12:28,900 --> 00:12:31,530
-caniuse and back to our page--
+caniuse and back to our page &mdash;
 
 235
 00:12:31,530 --> 00:12:35,490

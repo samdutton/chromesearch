@@ -72,7 +72,7 @@ app or mobile web app.
 17
 00:00:37,130 --> 00:00:41,945
 So without further ado, let's
-start and try to go--
+start and try to go &mdash;
 
 18
 00:00:41,945 --> 00:00:48,530
@@ -107,7 +107,7 @@ go and dive into it.
 25
 00:00:59,150 --> 00:01:02,880
 So the first thing that we have
-today in Chrome-- and
+today in Chrome &mdash; and
 
 26
 00:01:02,880 --> 00:01:06,330
@@ -162,12 +162,12 @@ like in the next
 36
 00:01:34,130 --> 00:01:36,510
 So the first thing that
-we have today--
+we have today &mdash;
 
 37
 00:01:36,510 --> 00:01:40,110
 let's open Chrome
-Dev Tools here--
+Dev Tools here &mdash;
 
 38
 00:01:40,110 --> 00:01:43,720
@@ -207,7 +207,7 @@ inside the browser.
 45
 00:02:00,330 --> 00:02:03,680
 So how you do that
-is you saw--
+is you saw &mdash;
 
 46
 00:02:03,680 --> 00:02:05,930
@@ -295,7 +295,7 @@ want to check.
 
 64
 00:02:59,920 --> 00:03:03,490
-But even more cool than that--
+But even more cool than that &mdash;
 and you saw here, of course,
 
 65
@@ -468,25 +468,25 @@ that if you search just for
 
 100
 00:04:41,820 --> 00:04:44,620
-Dev Tools--
+Dev Tools &mdash;
 
 101
 00:04:44,620 --> 00:04:47,050
-tools, yeah--
+tools, yeah &mdash;
 
 102
 00:04:47,050 --> 00:04:50,030
 so enable Developer Tools
-Experiments--
+Experiments &mdash;
 
 103
 00:04:50,030 --> 00:04:52,550
 and in my case, it's
-already enabled--
+already enabled &mdash;
 
 104
 00:04:52,550 --> 00:04:56,420
-you could see things--
+you could see things &mdash;
 
 105
 00:04:56,420 --> 00:04:57,670
@@ -511,7 +511,7 @@ OK.
 110
 00:05:05,550 --> 00:05:09,740
 And now if I go here
-and reload it--
+and reload it &mdash;
 
 111
 00:05:09,740 --> 00:05:14,980
@@ -596,7 +596,7 @@ And yes.
 129
 00:06:18,760 --> 00:06:21,330
 So now, basically what
-you can see here--
+you can see here &mdash;
 
 130
 00:06:21,330 --> 00:06:24,970
@@ -1009,7 +1009,7 @@ were there.
 
 215
 00:10:58,620 --> 00:11:00,930
-We had two amazing events--
+We had two amazing events &mdash;
 
 216
 00:11:00,930 --> 00:11:04,360

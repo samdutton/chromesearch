@@ -282,7 +282,7 @@ e.com/Live/Android.
 
 61
 00:02:29,170 --> 00:02:30,340
-And news flash--
+And news flash &mdash;
 
 62
 00:02:30,340 --> 00:02:32,340

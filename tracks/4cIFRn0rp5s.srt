@@ -37,7 +37,7 @@ answer show.
 9
 00:01:10,450 --> 00:01:12,800
 So if any of you out there would
-like to ask questions--
+like to ask questions &mdash;
 
 10
 00:01:12,800 --> 00:01:21,481
@@ -184,7 +184,7 @@ It's crazy.
 
 41
 00:02:18,240 --> 00:02:19,550
-And on our Hangout--
+And on our Hangout &mdash;
 
 42
 00:02:19,550 --> 00:02:21,780
@@ -333,7 +333,7 @@ on the same window object
 
 74
 00:03:37,760 --> 00:03:40,110
-you are using to--
+you are using to &mdash;
 
 75
 00:03:40,110 --> 00:03:44,020
@@ -366,12 +366,12 @@ on the window.
 
 81
 00:04:08,030 --> 00:04:09,080
-PAUL LEWIS: So you're not--
+PAUL LEWIS: So you're not &mdash;
 
 82
 00:04:09,080 --> 00:04:12,190
 RENATO MANGINI: So
-now you have to--
+now you have to &mdash;
 
 83
 00:04:12,190 --> 00:04:12,560
@@ -403,7 +403,7 @@ like that, now you have
 
 89
 00:04:22,870 --> 00:04:26,130
-to go via this DOM--
+to go via this DOM &mdash;
 
 90
 00:04:26,130 --> 00:04:28,580
@@ -421,7 +421,7 @@ Element at the same object.
 
 93
 00:04:35,330 --> 00:04:36,580
-And now you have--
+And now you have &mdash;
 
 94
 00:04:36,580 --> 00:04:39,070
@@ -446,7 +446,7 @@ PAUL KINLAN: Cool.
 
 99
 00:04:50,230 --> 00:04:50,500
-So what--
+So what &mdash;
 
 100
 00:04:50,500 --> 00:04:54,860
@@ -507,7 +507,7 @@ this app window object.
 112
 00:05:21,100 --> 00:05:23,560
 And you also get this
-reference--
+reference &mdash;
 
 113
 00:05:23,560 --> 00:05:27,620
@@ -716,7 +716,7 @@ PAUL LEWIS: Yes, fantastic.
 158
 00:07:16,900 --> 00:07:19,190
 It was an opportunity to
-hang out with you so--
+hang out with you so &mdash;
 
 159
 00:07:19,190 --> 00:07:20,000
@@ -742,7 +742,7 @@ PAUL KINLAN: Cool.
 
 164
 00:07:23,640 --> 00:07:24,360
-So we're just going--
+So we're just going &mdash;
 
 165
 00:07:24,360 --> 00:07:25,610
@@ -781,7 +781,7 @@ week, guys, in case you
 173
 00:07:35,790 --> 00:07:37,440
 didn't catch it, we talked
-about the storage APIs--
+about the storage APIs &mdash;
 
 174
 00:07:37,440 --> 00:07:40,740
@@ -835,7 +835,7 @@ ERIC BIDELMAN: Oh really?
 
 185
 00:08:00,820 --> 00:08:04,360
-So I actually really enjoy-- the
+So I actually really enjoy &mdash; the
 HTML5 file system API is
 
 186
@@ -903,7 +903,7 @@ the screen is now shared?
 200
 00:08:34,960 --> 00:08:36,950
 ERIC BIDELMAN: I just want
-to make sure people are--
+to make sure people are &mdash;
 
 201
 00:08:36,950 --> 00:08:37,490
@@ -1047,7 +1047,7 @@ these crazy console errors.
 232
 00:09:46,670 --> 00:09:50,190
 And this is our worst and best
-friend at the same time--
+friend at the same time &mdash;
 
 233
 00:09:50,190 --> 00:09:53,190
@@ -1335,7 +1335,7 @@ It's fantastic.
 294
 00:11:53,960 --> 00:11:56,500
 I used to be a Textmate
-fan, but Sublime--
+fan, but Sublime &mdash;
 
 295
 00:11:56,500 --> 00:11:57,380
@@ -1512,7 +1512,7 @@ ERIC BIDELMAN: That's right.
 
 332
 00:13:25,270 --> 00:13:26,750
-So in this case--
+So in this case &mdash;
 
 333
 00:13:26,750 --> 00:13:29,510
@@ -1610,7 +1610,7 @@ ERIC BIDELMAN: Right.
 354
 00:14:05,660 --> 00:14:08,390
 PAUL LEWIS: So if somebody's off
-the network or whatever--
+the network or whatever &mdash;
 
 355
 00:14:08,390 --> 00:14:09,020
@@ -1618,7 +1618,7 @@ PAUL KINLAN: Exactly.
 
 356
 00:14:09,020 --> 00:14:09,670
-PAUL LEWIS: They're still--
+PAUL LEWIS: They're still &mdash;
 
 357
 00:14:09,670 --> 00:14:09,990
@@ -1650,7 +1650,7 @@ see in my console, there's
 363
 00:14:20,120 --> 00:14:22,270
 another 100 of these
-things being--
+things being &mdash;
 
 364
 00:14:22,270 --> 00:14:24,850
@@ -1841,7 +1841,7 @@ those guys, and then write
 404
 00:16:01,100 --> 00:16:04,030
 each of them locally to
-the file system URL--
+the file system URL &mdash;
 
 405
 00:16:04,030 --> 00:16:06,410
@@ -2034,7 +2034,7 @@ storage do you have?
 446
 00:17:35,260 --> 00:17:37,980
 So is temporary storage
-flexible or is it--
+flexible or is it &mdash;
 
 447
 00:17:37,980 --> 00:17:43,010
@@ -2094,7 +2094,7 @@ one last thing.
 459
 00:18:02,790 --> 00:18:06,170
 I'm using Canary for this,
-and so I want to plug--
+and so I want to plug &mdash;
 
 460
 00:18:06,170 --> 00:18:10,340
@@ -2176,7 +2176,7 @@ that, yes, that folder I
 
 477
 00:18:35,810 --> 00:18:37,500
-created, that test folder--
+created, that test folder &mdash;
 
 478
 00:18:37,500 --> 00:18:40,820
@@ -2335,7 +2335,7 @@ would have to use a ray buffer
 511
 00:19:43,910 --> 00:19:47,510
 and then convert the ray buffer
-to the other blob and--
+to the other blob and &mdash;
 
 512
 00:19:47,510 --> 00:19:48,590
@@ -2428,7 +2428,7 @@ Good call.
 532
 00:20:25,890 --> 00:20:28,250
 Before I do that, I just want to
-plug-- if you're interested
+plug &mdash; if you're interested
 
 533
 00:20:28,250 --> 00:20:30,930
@@ -2452,12 +2452,12 @@ W3C HTML5 API.
 537
 00:20:41,916 --> 00:20:44,460
 But what Chrome does
-in particular--
+in particular &mdash;
 
 538
 00:20:44,460 --> 00:20:47,880
 and this is the documentation
-page for it-- is extend the
+page for it &mdash; is extend the
 
 539
 00:20:47,880 --> 00:20:50,740
@@ -2518,12 +2518,12 @@ the HTML5 one has.
 551
 00:21:20,920 --> 00:21:22,430
 PAUL KINLAN: So the interesting
-thing--
+thing &mdash;
 
 552
 00:21:22,430 --> 00:21:24,185
 I think it's really interesting,
-anyway--
+anyway &mdash;
 
 553
 00:21:24,185 --> 00:21:25,340
@@ -2568,7 +2568,7 @@ say the word Web Intents.
 562
 00:21:36,480 --> 00:21:39,706
 So you're shocked when you
-bring up Web Intents in--
+bring up Web Intents in &mdash;
 
 563
 00:21:39,706 --> 00:21:40,580
@@ -2671,7 +2671,7 @@ and once you have a
 
 584
 00:22:26,890 --> 00:22:28,610
-reference to the file-- because
+reference to the file &mdash; because
 if it comes in as a
 
 585
@@ -2774,7 +2774,7 @@ the same thing.
 605
 00:23:11,680 --> 00:23:13,050
 ERIC BIDELMAN: Do you guys want
-to-- should we just show
+to &mdash; should we just show
 
 606
 00:23:13,050 --> 00:23:16,795
@@ -2793,7 +2793,7 @@ Web Intents, but I think what
 
 609
 00:23:21,070 --> 00:23:22,580
-Paul's saying--
+Paul's saying &mdash;
 
 610
 00:23:22,580 --> 00:23:23,930
@@ -2819,7 +2819,7 @@ the Open With, that'd be cool.
 
 615
 00:23:28,550 --> 00:23:32,210
-In the Q&A in previous weeks--
+In the Q&A in previous weeks &mdash;
 it's actually really good that
 
 616
@@ -2854,7 +2854,7 @@ system access.
 
 622
 00:23:46,720 --> 00:23:48,676
-And this is using the Chrome--
+And this is using the Chrome &mdash;
 
 623
 00:23:48,676 --> 00:23:49,970
@@ -3012,7 +3012,7 @@ That's right.
 
 657
 00:25:02,220 --> 00:25:03,170
-So you can tell it's--
+So you can tell it's &mdash;
 
 658
 00:25:03,170 --> 00:25:04,233
@@ -3048,7 +3048,7 @@ name we want.
 665
 00:25:12,370 --> 00:25:16,750
 And that's sort of just one of
-many extensions that this--
+many extensions that this &mdash;
 
 666
 00:25:16,750 --> 00:25:18,360
@@ -3251,7 +3251,7 @@ on under the hood.
 710
 00:26:51,140 --> 00:26:54,000
 PAUL KINLAN: And then to answer
-the-- well, not to
+the &mdash; well, not to
 
 711
 00:26:54,000 --> 00:26:54,730
@@ -3335,7 +3335,7 @@ when you uninstall the app.
 728
 00:27:22,550 --> 00:27:23,820
 PAUL KINLAN: Yeah, and also,
-just to kind of--
+just to kind of &mdash;
 
 729
 00:27:23,820 --> 00:27:24,610
@@ -3482,7 +3482,7 @@ APIs in general.
 759
 00:28:30,485 --> 00:28:34,025
 It wraps everything
-in LS and--
+in LS and &mdash;
 
 760
 00:28:34,025 --> 00:28:34,500
@@ -3647,12 +3647,12 @@ this API, right?
 
 794
 00:29:36,495 --> 00:29:38,726
-We're talking about a ton of--
+We're talking about a ton of &mdash;
 you saw me write a hundred
 
 795
 00:29:38,726 --> 00:29:40,610
-images out to-- we're doing
+images out to &mdash; we're doing
 disk I/O, right?
 
 796
@@ -3686,7 +3686,7 @@ thousand items.
 802
 00:29:49,140 --> 00:29:52,770
 You don't want to have to fire
-up all the requests and--
+up all the requests and &mdash;
 
 803
 00:29:52,770 --> 00:29:54,960
@@ -3713,7 +3713,7 @@ going to be quick storage.
 
 808
 00:30:01,750 --> 00:30:02,880
-So--
+So &mdash;
 
 809
 00:30:02,880 --> 00:30:03,240
@@ -3874,7 +3874,7 @@ was an experimental library,
 
 843
 00:31:10,610 --> 00:31:12,530
-but the idea is--
+but the idea is &mdash;
 
 844
 00:31:12,530 --> 00:31:14,020
@@ -3997,7 +3997,7 @@ something that's being specced
 
 869
 00:32:11,310 --> 00:32:14,120
-out in the TC39--
+out in the TC39 &mdash;
 
 870
 00:32:14,120 --> 00:32:14,590
@@ -4132,7 +4132,7 @@ pretty cool.
 898
 00:33:17,420 --> 00:33:18,880
 PAUL LEWIS: So give
-that a shot, see--
+that a shot, see &mdash;
 
 899
 00:33:18,880 --> 00:33:21,410
@@ -4167,7 +4167,7 @@ Let's not go there.
 
 906
 00:33:31,890 --> 00:33:32,300
-But--
+But &mdash;
 
 907
 00:33:32,300 --> 00:33:34,400
@@ -4235,7 +4235,7 @@ using the Chrome USB API to
 
 921
 00:34:15,820 --> 00:34:16,639
-make everything--
+make everything &mdash;
 
 922
 00:34:16,639 --> 00:34:17,320
@@ -4270,7 +4270,7 @@ RENATO MANGINI: Yeah.
 929
 00:34:27,350 --> 00:34:29,750
 I'm waiting for an
-organization--
+organization &mdash;
 
 930
 00:34:29,750 --> 00:34:30,460
@@ -4317,7 +4317,7 @@ off his thing at the
 
 939
 00:34:45,320 --> 00:34:46,270
-end of the two days--
+end of the two days &mdash;
 
 940
 00:34:46,270 --> 00:34:47,270
@@ -4349,7 +4349,7 @@ and not Object on
 
 946
 00:34:55,712 --> 00:34:57,630
-Observe, which are--
+Observe, which are &mdash;
 
 947
 00:34:57,630 --> 00:34:59,170
@@ -4382,7 +4382,7 @@ session on that sometime.
 953
 00:35:04,105 --> 00:35:05,330
 PAUL KINLAN: Yeah, mutations
-are like-- yeah.
+are like &mdash; yeah.
 
 954
 00:35:05,330 --> 00:35:06,450
@@ -4467,7 +4467,7 @@ system APIs and when?
 972
 00:35:42,050 --> 00:35:43,400
 ERIC BIDELMAN: Well,
-everybody--
+everybody &mdash;
 
 973
 00:35:43,400 --> 00:35:43,980
@@ -4573,7 +4573,7 @@ solution
 
 995
 00:36:29,100 --> 00:36:30,200
-replacement for App Cat--
+replacement for App Cat &mdash;
 
 996
 00:36:30,200 --> 00:36:32,590
@@ -4649,7 +4649,7 @@ be really killer.
 
 1011
 00:37:04,240 --> 00:37:06,260
-PAUL KINLAN: I think the--
+PAUL KINLAN: I think the &mdash;
 
 1012
 00:37:06,260 --> 00:37:07,510
@@ -4974,7 +4974,7 @@ as well as far as
 
 1083
 00:39:32,780 --> 00:39:34,360
-the Chrome Apps packaged--
+the Chrome Apps packaged &mdash;
 
 1084
 00:39:34,360 --> 00:39:36,900
@@ -5036,11 +5036,11 @@ PAUL LEWIS: Per item.
 
 1097
 00:40:00,290 --> 00:40:02,290
-So you could store--
+So you could store &mdash;
 
 1098
 00:40:02,290 --> 00:40:04,190
-each key would--
+each key would &mdash;
 
 1099
 00:40:04,190 --> 00:40:05,740
@@ -5109,7 +5109,7 @@ is to understand that
 
 1113
 00:40:26,810 --> 00:40:27,930
-chrome.storage.sync--
+chrome.storage.sync &mdash;
 
 1114
 00:40:27,930 --> 00:40:28,410
@@ -5137,7 +5137,7 @@ data all in one go.
 1119
 00:40:42,050 --> 00:40:45,210
 We need to break these things
-down into smaller--
+down into smaller &mdash;
 
 1120
 00:40:45,210 --> 00:40:49,380
@@ -5165,17 +5165,17 @@ to sync better, basically.
 1125
 00:40:57,270 --> 00:40:58,730
 PAUL KINLAN:Yeah, I mean, the
-more feedback that we get--
+more feedback that we get &mdash;
 
 1126
 00:40:58,730 --> 00:40:59,770
-PAUL LEWIS: But if--
-yeah, if it's a--
+PAUL LEWIS: But if &mdash;
+yeah, if it's a &mdash;
 
 1127
 00:40:59,770 --> 00:41:01,620
 PAUL KINLAN: If every single
-developer says that--
+developer says that &mdash;
 
 1128
 00:41:01,620 --> 00:41:01,880
@@ -5233,7 +5233,7 @@ between, in theory, you could
 
 1140
 00:41:26,940 --> 00:41:27,490
-change it--
+change it &mdash;
 
 1141
 00:41:27,490 --> 00:41:27,850
@@ -5255,7 +5255,7 @@ that flag, unfortunately.
 
 1145
 00:41:32,800 --> 00:41:33,800
-I think it's more--
+I think it's more &mdash;
 
 1146
 00:41:33,800 --> 00:41:34,790
@@ -5562,7 +5562,7 @@ So yes.
 
 1212
 00:43:42,910 --> 00:43:44,450
-So--
+So &mdash;
 
 1213
 00:43:44,450 --> 00:43:45,440
@@ -5615,7 +5615,7 @@ ERIC BIDELMAN: We don't.
 1224
 00:44:02,070 --> 00:44:03,870
 I think dev tools support is
-one of these things-- it's
+one of these things &mdash; it's
 
 1225
 00:44:03,870 --> 00:44:05,810
@@ -5680,7 +5680,7 @@ yeah, anything like this,
 
 1238
 00:44:34,080 --> 00:44:34,510
-where you're--
+where you're &mdash;
 
 1239
 00:44:34,510 --> 00:44:35,590
@@ -5728,7 +5728,7 @@ PAUL LEWIS: Star it.
 1248
 00:44:53,430 --> 00:44:55,550
 That's the best way
-to let the--
+to let the &mdash;
 
 1249
 00:44:55,550 --> 00:44:56,840
@@ -5945,7 +5945,7 @@ have going for it is the
 1295
 00:46:40,870 --> 00:46:42,920
 ability to save it wherever
-you want and--
+you want and &mdash;
 
 1296
 00:46:42,920 --> 00:46:43,843
@@ -6116,7 +6116,7 @@ and a nightmare.
 
 1332
 00:47:56,600 --> 00:47:58,400
-Whether the actual--
+Whether the actual &mdash;
 
 1333
 00:47:58,400 --> 00:47:59,650
@@ -6143,7 +6143,7 @@ for deployment.
 1338
 00:48:10,290 --> 00:48:16,760
 PAUL LEWIS: The whole min.js
-file thing is really--
+file thing is really &mdash;
 
 1339
 00:48:16,760 --> 00:48:18,680
@@ -6220,7 +6220,7 @@ best-possible app.
 1354
 00:48:52,440 --> 00:48:53,550
 PAUL KINLAN: I just
-generally think--
+generally think &mdash;
 
 1355
 00:48:53,550 --> 00:48:55,640
@@ -6268,7 +6268,7 @@ bearing in mind that not
 
 1364
 00:49:16,390 --> 00:49:18,510
-all the functionality--
+all the functionality &mdash;
 
 1365
 00:49:18,510 --> 00:49:21,290
@@ -6564,7 +6564,7 @@ the topic which is TBA.
 1428
 00:51:21,070 --> 00:51:25,240
 PAUL LEWIS: Yes, we will
-be putting out the--
+be putting out the &mdash;
 
 1429
 00:51:25,240 --> 00:51:25,700

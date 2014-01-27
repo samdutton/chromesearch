@@ -221,7 +221,7 @@ the Speak button.
 
 49
 00:02:08,320 --> 00:02:09,870
-Sure enough--
+Sure enough &mdash;
 
 50
 00:02:09,870 --> 00:02:10,850
@@ -941,7 +941,7 @@ and clicks on Say Something.
 201
 00:09:43,760 --> 00:09:51,891
 So let me pop over here,
-and when I say, yes--
+and when I say, yes &mdash;
 
 202
 00:09:51,891 --> 00:09:52,340
@@ -1362,7 +1362,7 @@ that word is.
 290
 00:14:41,090 --> 00:14:43,670
 So that I can see OK,
-well, this is--
+well, this is &mdash;
 
 291
 00:14:43,670 --> 00:14:46,060
@@ -1423,7 +1423,7 @@ by character.
 303
 00:15:22,160 --> 00:15:25,050
 So if I pull this
-guy up-- whoop.
+guy up &mdash; whoop.
 
 304
 00:15:25,050 --> 00:15:26,070
@@ -1445,7 +1445,7 @@ what's going on here.
 
 308
 00:15:38,810 --> 00:15:40,060
-And--
+And &mdash;
 
 309
 00:15:40,060 --> 00:15:42,650
@@ -1457,7 +1457,7 @@ And--
 311
 00:15:43,140 --> 00:15:45,190
 -The rain in Spain
-stays mainly--
+stays mainly &mdash;
 
 312
 00:15:45,190 --> 00:15:45,520
@@ -1732,7 +1732,7 @@ Of course.
 
 372
 00:19:18,730 --> 00:19:19,330
-So sure enough--
+So sure enough &mdash;
 
 373
 00:19:19,330 --> 00:19:21,450
@@ -1895,7 +1895,7 @@ you guys have.
 409
 00:21:30,520 --> 00:21:32,740
 Actually, before I do
-that, what I'll do--
+that, what I'll do &mdash;
 
 410
 00:21:32,740 --> 00:21:35,770
@@ -2445,7 +2445,7 @@ we can see it here.
 529
 00:27:59,380 --> 00:28:03,380
 So I've got, "Bon jour." My
-French is awful, but--
+French is awful, but &mdash;
 
 530
 00:28:03,380 --> 00:28:03,810

@@ -26,7 +26,7 @@ HTML5 Rocks Live, a video
 
 7
 00:00:13,100 --> 00:00:14,915
-series talking about--
+series talking about &mdash;
 
 8
 00:00:14,915 --> 00:00:16,590
@@ -297,7 +297,7 @@ Chrome deals with hardware
 66
 00:02:31,275 --> 00:02:33,240
 accelerated graphics
-and was like--
+and was like &mdash;
 
 67
 00:02:33,240 --> 00:02:35,395
@@ -315,7 +315,7 @@ PAUL IRISH: Yeah.
 70
 00:02:36,890 --> 00:02:38,390
 ERIC BIDELMAN: It's a
-great demo, but--
+great demo, but &mdash;
 
 71
 00:02:38,390 --> 00:02:40,560
@@ -664,7 +664,7 @@ ERIC BIDELMAN: Oh that's nice.
 146
 00:05:58,870 --> 00:06:02,450
 PAUL IRISH: So I'm going to do
-that once more, because I'm--
+that once more, because I'm &mdash;
 
 147
 00:06:02,450 --> 00:06:03,700
@@ -776,7 +776,7 @@ and we can see that these
 171
 00:07:04,150 --> 00:07:09,290
 frames are actually taking
-40, 60, 100, 80--
+40, 60, 100, 80 &mdash;
 
 172
 00:07:09,290 --> 00:07:12,220
@@ -809,7 +809,7 @@ scroll event.
 178
 00:07:23,130 --> 00:07:29,230
 So there's a lot of things
-happening, but it looks like--
+happening, but it looks like &mdash;
 
 179
 00:07:29,230 --> 00:07:31,415
@@ -877,7 +877,7 @@ designed for redrawing the UI
 192
 00:08:19,230 --> 00:08:22,880
 of the page when the browser's
-ready, which is called--
+ready, which is called &mdash;
 
 193
 00:08:22,880 --> 00:08:24,250
@@ -1009,7 +1009,7 @@ not familiar with
 221
 00:09:29,180 --> 00:09:31,500
 RequestAnimationFrame,
-I'm not seeing a--
+I'm not seeing a &mdash;
 
 222
 00:09:31,500 --> 00:09:32,740
@@ -1351,7 +1351,7 @@ difference down in the timeline.
 
 295
 00:12:33,130 --> 00:12:34,790
-So--
+So &mdash;
 
 296
 00:12:34,790 --> 00:12:35,090
@@ -1471,7 +1471,7 @@ So that looks pretty good.
 
 321
 00:13:33,350 --> 00:13:34,615
-And I'm going to switch--
+And I'm going to switch &mdash;
 
 322
 00:13:34,615 --> 00:13:46,280
@@ -1553,7 +1553,7 @@ these two things.
 
 339
 00:14:31,600 --> 00:14:33,120
-And it has to do this--
+And it has to do this &mdash;
 
 340
 00:14:33,120 --> 00:14:36,660
@@ -1731,7 +1731,7 @@ that something
 
 377
 00:16:16,630 --> 00:16:18,210
-like two loops, you wouldn't--
+like two loops, you wouldn't &mdash;
 
 378
 00:16:18,210 --> 00:16:21,490
@@ -1939,7 +1939,7 @@ the screen cast, but we're a
 422
 00:18:14,140 --> 00:18:17,340
 little bit smoother,
-and inside--
+and inside &mdash;
 
 423
 00:18:17,340 --> 00:18:19,250
@@ -2077,7 +2077,7 @@ timeline again?
 451
 00:19:31,570 --> 00:19:34,740
 I just want to show people
-that-- we talked a little
+that &mdash; we talked a little
 
 452
 00:19:34,740 --> 00:19:36,910
@@ -2261,7 +2261,7 @@ Experiments, right?
 
 491
 00:21:07,950 --> 00:21:09,830
-So in by default yet, but--
+So in by default yet, but &mdash;
 
 492
 00:21:09,830 --> 00:21:11,300
@@ -2325,7 +2325,7 @@ PAUL IRISH: Yeah?
 
 506
 00:21:35,880 --> 00:21:36,660
-BORIS SMUS: It's called--
+BORIS SMUS: It's called &mdash;
 
 507
 00:21:36,660 --> 00:21:39,440
@@ -2398,7 +2398,7 @@ of pages that do this.
 
 522
 00:22:20,840 --> 00:22:22,470
-If you go to Mediaquery.--
+If you go to Mediaquery. &mdash;
 
 523
 00:22:22,470 --> 00:22:26,180
@@ -2419,7 +2419,7 @@ share back on.
 527
 00:22:35,170 --> 00:22:40,580
 Yes, so mediaquery.es is a nice
-gallery of responsive--
+gallery of responsive &mdash;
 
 528
 00:22:40,580 --> 00:22:43,655
@@ -2534,7 +2534,7 @@ have different features,
 
 552
 00:23:51,340 --> 00:23:52,920
-depending on--
+depending on &mdash;
 
 553
 00:23:52,920 --> 00:23:55,600
@@ -2846,7 +2846,7 @@ has multiple versions.
 
 619
 00:27:02,870 --> 00:27:05,590
-PAUL IRISH: That's really--
+PAUL IRISH: That's really &mdash;
 
 620
 00:27:05,590 --> 00:27:09,400
@@ -2883,7 +2883,7 @@ PAUL IRISH: So yeah.
 627
 00:27:17,800 --> 00:27:21,150
 If you look in the spec,
-for like HTML4 spec--
+for like HTML4 spec &mdash;
 
 628
 00:27:21,150 --> 00:27:22,265
@@ -3040,7 +3040,7 @@ attributes, do sort of the
 661
 00:28:44,040 --> 00:28:47,840
 right thing, the right thing
-being it redirects to--
+being it redirects to &mdash;
 
 662
 00:28:47,840 --> 00:28:51,730
@@ -3701,7 +3701,7 @@ One second.
 
 805
 00:34:43,105 --> 00:34:44,355
-We'll try--
+We'll try &mdash;
 
 806
 00:34:44,355 --> 00:34:46,760
@@ -4059,7 +4059,7 @@ really quick responsive
 884
 00:37:36,700 --> 00:37:39,650
 testing is to now use
-the Dev Tools to--
+the Dev Tools to &mdash;
 
 885
 00:37:39,650 --> 00:37:40,060
@@ -4072,7 +4072,7 @@ So this is pretty cool.
 887
 00:37:41,600 --> 00:37:49,500
 Because in the Dev Tools I can
-now set up, just change the--
+now set up, just change the &mdash;
 
 888
 00:37:49,500 --> 00:37:52,330
@@ -4091,7 +4091,7 @@ What's a [INAUDIBLE]?
 892
 00:38:01,900 --> 00:38:03,205
 BORIS SMUS: I guess you
-can't [? zip the-- ?]
+can't [? zip the &mdash; ?]
 
 893
 00:38:03,205 --> 00:38:05,930
@@ -4170,7 +4170,7 @@ to show, before we got a
 
 910
 00:38:42,611 --> 00:38:44,256
-little sidetracked, guys--
+little sidetracked, guys &mdash;
 
 911
 00:38:44,256 --> 00:38:47,330
@@ -4264,7 +4264,7 @@ painting in white, right?
 930
 00:39:24,050 --> 00:39:26,370
 You're painting white
-lines instead of--
+lines instead of &mdash;
 
 931
 00:39:26,370 --> 00:39:27,780
@@ -4277,7 +4277,7 @@ ERIC BIDELMAN: Demo fail.
 933
 00:39:30,000 --> 00:39:31,900
 BORIS SMUS: Hold on, maybe it's
-some sort of-- maybe the
+some sort of &mdash; maybe the
 
 934
 00:39:31,900 --> 00:39:32,820
@@ -4395,7 +4395,7 @@ it is a mess.
 
 959
 00:40:27,230 --> 00:40:28,520
-But there's a new APIs--
+But there's a new APIs &mdash;
 
 960
 00:40:28,520 --> 00:40:30,170
@@ -4433,11 +4433,11 @@ called the File System API.
 967
 00:40:42,430 --> 00:40:44,480
 It's my baby, I wrote
-a book about it--
+a book about it &mdash;
 
 968
 00:40:44,480 --> 00:40:46,630
-I'll push that--
+I'll push that &mdash;
 
 969
 00:40:46,630 --> 00:40:49,280
@@ -4675,7 +4675,7 @@ right?
 
 1019
 00:42:33,680 --> 00:42:34,760
-If you're saving a--
+If you're saving a &mdash;
 
 1020
 00:42:34,760 --> 00:42:36,180
@@ -4723,7 +4723,7 @@ in Chrome right now.
 1029
 00:42:54,530 --> 00:42:56,930
 But today actually,
-I will be seeing--
+I will be seeing &mdash;
 
 1030
 00:42:56,930 --> 00:42:59,920
@@ -4793,7 +4793,7 @@ it, Chrome certainly has it,
 
 1044
 00:43:37,150 --> 00:43:37,900
-who knows if--
+who knows if &mdash;
 
 1045
 00:43:37,900 --> 00:43:39,610
@@ -5186,7 +5186,7 @@ be your fault.
 1129
 00:47:00,130 --> 00:47:01,030
 ERIC BIDELMAN: I
-want to show--
+want to show &mdash;
 
 1130
 00:47:01,030 --> 00:47:08,280
@@ -5429,12 +5429,12 @@ asking about supporting binary
 
 1183
 00:48:59,720 --> 00:49:01,530
-data inside of--
+data inside of &mdash;
 
 1184
 00:49:01,530 --> 00:49:04,740
 BORIS SMUS: So they had some
-specific extension for large--
+specific extension for large &mdash;
 
 1185
 00:49:04,740 --> 00:49:05,990
@@ -5465,7 +5465,7 @@ project started off for
 1191
 00:49:19,910 --> 00:49:24,370
 me as a sort of investigation
-if you could store files--
+if you could store files &mdash;
 
 1192
 00:49:24,370 --> 00:49:27,510
@@ -5773,7 +5773,7 @@ PAUL IRISH: All right.
 1257
 00:52:16,830 --> 00:52:20,700
 Well, I appreciate you
-guys watching, and--
+guys watching, and &mdash;
 
 1258
 00:52:20,700 --> 00:52:21,480

@@ -392,11 +392,11 @@ That is an amazing show.
 
 89
 00:02:36,340 --> 00:02:36,730
-When did--
+When did &mdash;
 
 90
 00:02:36,730 --> 00:02:37,945
-OK--
+OK &mdash;
 
 91
 00:02:37,945 --> 00:02:39,580
@@ -879,7 +879,7 @@ we looked at yesterday.
 
 195
 00:06:24,170 --> 00:06:24,435
-What--
+What &mdash;
 
 196
 00:06:24,435 --> 00:06:26,480
@@ -897,7 +897,7 @@ fix the bugs?
 
 199
 00:06:28,080 --> 00:06:28,750
-We were supposed to have--
+We were supposed to have &mdash;
 
 200
 00:06:28,750 --> 00:06:29,610
@@ -1222,7 +1222,7 @@ by the way.
 
 269
 00:08:42,240 --> 00:08:42,710
-I'm not sure--
+I'm not sure &mdash;
 
 270
 00:08:42,710 --> 00:08:43,950
@@ -1311,7 +1311,7 @@ and messed
 
 289
 00:09:26,100 --> 00:09:27,510
-around a bit to ensure--
+around a bit to ensure &mdash;
 
 290
 00:09:27,510 --> 00:09:29,870
@@ -1719,7 +1719,7 @@ Client and Pepper.
 377
 00:12:19,920 --> 00:12:21,430
 And we'll actually
-provide this--
+provide this &mdash;
 
 378
 00:12:21,430 --> 00:12:21,700
@@ -1841,7 +1841,7 @@ configuration.
 404
 00:13:03,760 --> 00:13:07,105
 So what the add-in is doing is
-we can go over here and--
+we can go over here and &mdash;
 
 405
 00:13:07,105 --> 00:13:13,880
@@ -2270,7 +2270,7 @@ NOEL ALLEN: OK.
 499
 00:16:24,700 --> 00:16:27,830
 So if I come up here
-and just say--
+and just say &mdash;
 
 500
 00:16:27,830 --> 00:16:30,500
@@ -2457,7 +2457,7 @@ to get a sort of persistent
 
 540
 00:17:53,880 --> 00:17:54,560
-heartbeat--
+heartbeat &mdash;
 
 541
 00:17:54,560 --> 00:17:55,780
@@ -2924,13 +2924,13 @@ communication between client
 
 639
 00:21:38,275 --> 00:21:40,180
-and server with a web browser--
+and server with a web browser &mdash;
 we'll talk about
 
 640
 00:21:40,180 --> 00:21:43,010
 Chrome just to limit our scope
-of discussion here--
+of discussion here &mdash;
 
 641
 00:21:43,010 --> 00:21:45,420
@@ -3020,12 +3020,12 @@ this other sort of stuff.
 
 659
 00:22:24,870 --> 00:22:26,340
-Now, to grab that data--
+Now, to grab that data &mdash;
 
 660
 00:22:26,340 --> 00:22:28,290
 that's specifically what we're
-going to focus on today--
+going to focus on today &mdash;
 
 661
 00:22:28,290 --> 00:22:31,460
@@ -3236,7 +3236,7 @@ What we're going to do is we're
 
 705
 00:24:07,230 --> 00:24:08,390
-effectively going to spin--
+effectively going to spin &mdash;
 
 706
 00:24:08,390 --> 00:24:10,095
@@ -3619,7 +3619,7 @@ at the web server, you
 787
 00:27:18,360 --> 00:27:23,045
 can see that originally
-we were getting--
+we were getting &mdash;
 
 788
 00:27:23,045 --> 00:27:24,290
@@ -3736,7 +3736,7 @@ authority.
 814
 00:28:04,180 --> 00:28:05,615
 NOEL ALLEN: Is my hat
-not correctly--
+not correctly &mdash;
 
 815
 00:28:05,615 --> 00:28:07,230
@@ -3817,7 +3817,7 @@ mobile devices right now.
 831
 00:28:41,090 --> 00:28:42,530
 And if you just Google
-for-- don't Google
+for &mdash; don't Google
 
 832
 00:28:42,530 --> 00:28:43,500
@@ -4770,7 +4770,7 @@ them out or make
 
 1034
 00:36:17,904 --> 00:36:18,020
-change, or--
+change, or &mdash;
 
 1035
 00:36:18,020 --> 00:36:18,660
@@ -4940,7 +4940,7 @@ Excellent.
 1072
 00:37:36,770 --> 00:37:39,120
 So now with the Visual
-Studio plug-in--
+Studio plug-in &mdash;
 
 1073
 00:37:39,120 --> 00:37:41,080
@@ -4949,7 +4949,7 @@ developers to do great
 
 1074
 00:37:41,080 --> 00:37:43,630
-things-- you can actually swap
+things &mdash; you can actually swap
 back and run the original
 
 1075
@@ -5013,7 +5013,7 @@ What do you want?
 1089
 00:38:12,330 --> 00:38:14,270
 COLT MCANLIS: There's
-a great--
+a great &mdash;
 
 1090
 00:38:14,270 --> 00:38:16,100
@@ -5139,7 +5139,7 @@ add-in actually propelled us
 
 1118
 00:38:58,810 --> 00:39:00,670
-to do a lot of these things--
+to do a lot of these things &mdash;
 
 1119
 00:39:00,670 --> 00:39:01,770
@@ -5714,7 +5714,7 @@ single step.
 1242
 00:43:34,020 --> 00:43:36,130
 Now, when you actually deploy
-it-- so if I took this
+it &mdash; so if I took this
 
 1243
 00:43:36,130 --> 00:43:39,734
@@ -5751,7 +5751,7 @@ So that was my question.
 1250
 00:43:52,180 --> 00:43:54,720
 So how does this actually
-work in the sense that--
+work in the sense that &mdash;
 
 1251
 00:43:54,720 --> 00:43:57,675
@@ -5888,7 +5888,7 @@ I'm sorry.
 
 1281
 00:45:03,540 --> 00:45:04,730
-AUDIENCE: Then maybe--
+AUDIENCE: Then maybe &mdash;
 
 1282
 00:45:04,730 --> 00:45:07,450
@@ -5981,7 +5981,7 @@ Pepper plug-in
 
 1301
 00:45:58,340 --> 00:46:00,130
-already made--
+already made &mdash;
 
 1302
 00:46:00,130 --> 00:46:03,230
@@ -6209,7 +6209,7 @@ NOEL ALLEN: Yes.
 1350
 00:48:05,090 --> 00:48:06,860
 Currently, this is
-a desktop only--
+a desktop only &mdash;
 
 1351
 00:48:06,860 --> 00:48:07,060

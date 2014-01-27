@@ -619,7 +619,7 @@ So, make a post.
 133
 00:05:12,910 --> 00:05:15,310
 Make it the most interesting
-thing you can--
+thing you can &mdash;
 
 134
 00:05:15,310 --> 00:05:18,290

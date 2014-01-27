@@ -56,12 +56,12 @@ website fast?
 13
 00:00:33,190 --> 00:00:36,360
 The benefits are many, among
-them are user satisfaction--
+them are user satisfaction &mdash;
 
 14
 00:00:36,360 --> 00:00:38,620
 people like to go to
-fast website--
+fast website &mdash;
 
 15
 00:00:38,620 --> 00:00:41,180
@@ -93,12 +93,12 @@ There's trade-offs to make.
 21
 00:00:50,740 --> 00:00:54,360
 There's the trade-off
-of maintainability--
+of maintainability &mdash;
 
 22
 00:00:54,360 --> 00:00:57,680
 of being able to easily change
-your website and maintain it--
+your website and maintain it &mdash;
 
 23
 00:00:57,680 --> 00:01:00,170
@@ -459,7 +459,7 @@ will retain
 
 97
 00:04:22,760 --> 00:04:25,400
-knowledge about this file--
+knowledge about this file &mdash;
 
 98
 00:04:25,400 --> 00:04:28,660
@@ -691,7 +691,7 @@ announced with Go Daddy, the
 
 146
 00:07:07,190 --> 00:07:09,420
-dominant hosting provider--
+dominant hosting provider &mdash;
 
 147
 00:07:09,420 --> 00:07:12,300
@@ -700,7 +700,7 @@ flow, it's actually a config
 
 148
 00:07:12,300 --> 00:07:16,800
-file change-- but any Go Daddy
+file change &mdash; but any Go Daddy
 user can enable mod_pagespeed
 
 149
@@ -991,12 +991,12 @@ look at the HTTP response
 209
 00:10:19,420 --> 00:10:22,040
 headers from that site,
-one of them--
+one of them &mdash;
 
 210
 00:10:22,040 --> 00:10:24,720
 the one where the gray
-arrow is pointing--
+arrow is pointing &mdash;
 
 211
 00:10:24,720 --> 00:10:26,610
@@ -1323,11 +1323,11 @@ is that's called a 304.
 281
 00:13:38,720 --> 00:13:42,070
 That's where the browser has
-a copy of the resource--
+a copy of the resource &mdash;
 
 282
 00:13:42,070 --> 00:13:43,780
-an image or a CSS file--
+an image or a CSS file &mdash;
 
 283
 00:13:43,780 --> 00:13:46,130
@@ -1632,7 +1632,7 @@ and not just 60,000 sites.
 348
 00:16:45,140 --> 00:16:48,190
 So we're seeking leveraged ways
-to do that-- high volume
+to do that &mdash; high volume
 
 349
 00:16:48,190 --> 00:16:51,760
@@ -1795,7 +1795,7 @@ to be to draw
 
 383
 00:18:17,200 --> 00:18:19,500
-repeatable conclusions from--
+repeatable conclusions from &mdash;
 
 384
 00:18:19,500 --> 00:18:23,890
@@ -1857,7 +1857,7 @@ where we have three images.
 
 397
 00:18:59,520 --> 00:19:01,450
-And this is the source code--
+And this is the source code &mdash;
 
 398
 00:19:01,450 --> 00:19:03,500
@@ -2048,7 +2048,7 @@ modpagespeed.com, which shows
 
 439
 00:21:11,300 --> 00:21:12,600
-all of the places--
+all of the places &mdash;
 
 440
 00:21:12,600 --> 00:21:14,950
@@ -2164,7 +2164,7 @@ But it was just amazing.
 465
 00:22:30,270 --> 00:22:33,710
 When we launched this,
-the uptake was--
+the uptake was &mdash;
 
 466
 00:22:33,710 --> 00:22:38,520
@@ -2210,7 +2210,7 @@ you can see what's happening.
 
 475
 00:23:01,370 --> 00:23:03,350
-But last week--
+But last week &mdash;
 
 476
 00:23:03,350 --> 00:23:06,700
@@ -2342,11 +2342,11 @@ images next to each other.
 
 504
 00:24:40,590 --> 00:24:41,990
-PNG has been used--
+PNG has been used &mdash;
 
 505
 00:24:41,990 --> 00:24:44,750
-portable network graphics-- has
+portable network graphics &mdash; has
 been used for very high
 
 506
@@ -2371,12 +2371,12 @@ able to read the words
 
 510
 00:24:59,440 --> 00:25:02,850
-But if you look at webpages--
+But if you look at webpages &mdash;
 
 511
 00:25:02,850 --> 00:25:06,020
 we all know that an image
-is worth a 1,000 words--
+is worth a 1,000 words &mdash;
 
 512
 00:25:06,020 --> 00:25:13,170
@@ -2389,7 +2389,7 @@ image bytes.
 
 514
 00:25:14,110 --> 00:25:17,330
-And you can look at--
+And you can look at &mdash;
 
 515
 00:25:17,330 --> 00:25:21,780
@@ -2520,7 +2520,7 @@ that are not be needed.
 542
 00:26:55,820 --> 00:26:59,470
 And basically we did something
-we called re-JPEG--
+we called re-JPEG &mdash;
 
 543
 00:26:59,470 --> 00:27:00,380
@@ -2586,7 +2586,7 @@ Now why is WebP so cool?
 556
 00:27:48,760 --> 00:27:51,160
 If you look at low bitrate
-performance--
+performance &mdash;
 
 557
 00:27:51,160 --> 00:27:55,880
@@ -2655,11 +2655,11 @@ we put in WebP.
 571
 00:28:39,720 --> 00:28:43,310
 And you can see that some of
-the data-- for example, the
+the data &mdash; for example, the
 
 572
 00:28:43,310 --> 00:28:45,470
-fully loaded data--
+fully loaded data &mdash;
 
 573
 00:28:45,470 --> 00:28:50,370
@@ -2931,7 +2931,7 @@ OK, thank you.
 631
 00:32:01,470 --> 00:32:05,640
 So if you look at the
-third column--
+third column &mdash;
 
 632
 00:32:05,640 --> 00:32:08,590
@@ -2981,8 +2981,8 @@ weird CSS to write.
 
 642
 00:32:41,520 --> 00:32:45,740
-For 3D-- again, if you look
-at the third column--
+For 3D &mdash; again, if you look
+at the third column &mdash;
 
 643
 00:32:45,740 --> 00:32:48,950
@@ -3029,7 +3029,7 @@ people, present 3D for others.
 
 652
 00:33:20,290 --> 00:33:23,080
-And also use--
+And also use &mdash;
 
 653
 00:33:23,080 --> 00:33:26,180
@@ -3189,7 +3189,7 @@ grown since then.
 687
 00:35:14,650 --> 00:35:16,680
 And I agree with you, that
-the background--
+the background &mdash;
 
 688
 00:35:16,680 --> 00:35:19,960
@@ -3311,7 +3311,7 @@ clients, with the users.
 713
 00:36:19,710 --> 00:36:24,590
 And probably the product
-that many of you know--
+that many of you know &mdash;
 
 714
 00:36:24,590 --> 00:36:28,140
@@ -3359,11 +3359,11 @@ the power to run a PC.
 723
 00:36:54,040 --> 00:36:57,660
 And what we do there is that
-in the fixed network--
+in the fixed network &mdash;
 
 724
 00:36:57,660 --> 00:37:01,420
-in the proxy service-- we fetch
+in the proxy service &mdash; we fetch
 the pages and basically
 
 725
@@ -3402,7 +3402,7 @@ India, places where
 
 732
 00:37:30,720 --> 00:37:32,360
-the bandwidth costs--
+the bandwidth costs &mdash;
 
 733
 00:37:32,360 --> 00:37:34,170
@@ -3622,11 +3622,11 @@ for example.
 779
 00:39:53,020 --> 00:39:56,040
 Whereas in WebP, which
-is even lower--
+is even lower &mdash;
 
 780
 00:39:56,040 --> 00:39:57,980
-it's down to only 5kb--
+it's down to only 5kb &mdash;
 
 781
 00:39:57,980 --> 00:40:00,030
@@ -3960,7 +3960,7 @@ combined requests off of a
 
 854
 00:43:33,960 --> 00:43:39,300
-CDN, would that affect-- when
+CDN, would that affect &mdash; when
 you have multiple CDNs serving
 
 855
@@ -3970,7 +3970,7 @@ them for your CSS
 
 856
 00:43:42,650 --> 00:43:43,880
-requests, for instance--
+requests, for instance &mdash;
 
 857
 00:43:43,880 --> 00:43:45,840
@@ -4162,12 +4162,12 @@ attempt to displace JPEG, now
 897
 00:45:54,570 --> 00:45:56,440
 that JPEG is actually
-patent-free-- the patents
+patent-free &mdash; the patents
 
 898
 00:45:56,440 --> 00:46:00,260
 expired four or five
-years ago--
+years ago &mdash;
 
 899
 00:46:00,260 --> 00:46:04,230
@@ -4208,7 +4208,7 @@ but at some point
 
 907
 00:46:23,620 --> 00:46:27,135
-we don't have enough--
+we don't have enough &mdash;
 
 908
 00:46:27,135 --> 00:46:32,250
@@ -4813,7 +4813,7 @@ the buildout of the technology
 1036
 00:53:30,705 --> 00:53:33,340
 at the CDN, but we
-would like to--
+would like to &mdash;
 
 1037
 00:53:33,340 --> 00:53:39,200

@@ -90,7 +90,7 @@ and latitude.
 20
 00:01:11,760 --> 00:01:14,740
 Here, for instance,
-as you could see--
+as you could see &mdash;
 
 21
 00:01:14,740 --> 00:01:15,960
@@ -809,12 +809,12 @@ this point immediately.
 
 173
 00:08:59,750 --> 00:09:01,150
-The app itself--
+The app itself &mdash;
 
 174
 00:09:01,150 --> 00:09:03,180
 just to show you how
-does it look like--
+does it look like &mdash;
 
 175
 00:09:03,180 --> 00:09:05,750

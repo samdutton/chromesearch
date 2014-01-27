@@ -177,7 +177,7 @@ REMY SHARP: Yeah, that's right.
 
 40
 00:02:51,140 --> 00:02:52,550
-If I--
+If I &mdash;
 
 41
 00:02:52,550 --> 00:02:53,800
@@ -190,7 +190,7 @@ JAKE ARCHIBALD: Yeah.
 
 43
 00:02:54,250 --> 00:02:55,890
-It's called-- what
+It's called &mdash; what
 is it called?
 
 44
@@ -208,7 +208,7 @@ give you some back story.
 
 47
 00:03:01,680 --> 00:03:02,490
-So--
+So &mdash;
 
 48
 00:03:02,490 --> 00:03:03,700
@@ -336,12 +336,12 @@ is excellent.
 
 75
 00:03:44,600 --> 00:03:47,610
-I really like-- because I'm on
+I really like &mdash; because I'm on
 the PIN screen now, and it's
 
 76
 00:03:47,610 --> 00:03:49,365
-nice that when I go into the--
+nice that when I go into the &mdash;
 
 77
 00:03:49,365 --> 00:03:50,720
@@ -360,7 +360,7 @@ the digits on there, which
 
 80
 00:03:57,610 --> 00:03:58,840
-it's just putting them--
+it's just putting them &mdash;
 
 81
 00:03:58,840 --> 00:03:59,900
@@ -377,7 +377,7 @@ not have mobile
 
 84
 00:04:04,550 --> 00:04:05,740
-connectivity, which is--
+connectivity, which is &mdash;
 
 85
 00:04:05,740 --> 00:04:06,880
@@ -686,7 +686,7 @@ first place.
 
 151
 00:06:27,830 --> 00:06:29,265
-So there's a web--
+So there's a web &mdash;
 
 152
 00:06:29,265 --> 00:06:30,540
@@ -1110,7 +1110,7 @@ the first record.
 243
 00:10:08,010 --> 00:10:09,095
 I don't think that one
-was actually--
+was actually &mdash;
 
 244
 00:10:09,095 --> 00:10:09,410
@@ -1124,7 +1124,7 @@ second record.
 246
 00:10:10,200 --> 00:10:13,590
 Yeah, we're having a difficult
-time trying to do--
+time trying to do &mdash;
 
 247
 00:10:13,590 --> 00:10:15,740
@@ -1266,7 +1266,7 @@ JAKE ARCHIBALD: It's for fun.
 
 277
 00:11:17,940 --> 00:11:18,650
-It's not a competitive--
+It's not a competitive &mdash;
 
 278
 00:11:18,650 --> 00:11:19,860
@@ -1280,7 +1280,7 @@ anything like that.
 280
 00:11:21,790 --> 00:11:25,790
 So if I show you some of the
-code, a lot of it's kind of--
+code, a lot of it's kind of &mdash;
 
 281
 00:11:25,790 --> 00:11:28,870
@@ -1290,7 +1290,7 @@ forth inside of the game.
 282
 00:11:28,870 --> 00:11:32,630
 So when the game actually
-starts--
+starts &mdash;
 
 283
 00:11:32,630 --> 00:11:34,150
@@ -1348,7 +1348,7 @@ a room to be able to
 
 294
 00:12:04,950 --> 00:12:06,140
-communicate--
+communicate &mdash;
 
 295
 00:12:06,140 --> 00:12:08,520
@@ -1367,7 +1367,7 @@ fires a bunch of events.
 298
 00:12:14,620 --> 00:12:16,760
 JAKE ARCHIBALD: So this dollar
-on you've got there is just--
+on you've got there is just &mdash;
 
 299
 00:12:16,760 --> 00:12:17,800
@@ -1386,7 +1386,7 @@ little library that's min.js,
 302
 00:12:23,950 --> 00:12:29,160
 this tiny library just to
-give me a few bits of--
+give me a few bits of &mdash;
 
 303
 00:12:29,160 --> 00:12:30,040
@@ -1433,7 +1433,7 @@ addEventListener and
 
 312
 00:12:53,980 --> 00:12:58,560
-querySelectorAll when it--
+querySelectorAll when it &mdash;
 yeah, on and dollar.
 
 313
@@ -1900,7 +1900,7 @@ would have that.
 412
 00:17:04,550 --> 00:17:06,139
 JAKE ARCHIBALD: So
-if the device--
+if the device &mdash;
 
 413
 00:17:06,139 --> 00:17:08,660
@@ -2267,7 +2267,7 @@ REMY SHARP: I have an analogy.
 
 490
 00:20:17,160 --> 00:20:18,370
-JAKE ARCHIBALD: So we have--
+JAKE ARCHIBALD: So we have &mdash;
 
 491
 00:20:18,370 --> 00:20:19,230
@@ -2328,7 +2328,7 @@ hear the ocean.
 
 503
 00:20:39,520 --> 00:20:41,110
-REMY SHARP: And I'm going to--
+REMY SHARP: And I'm going to &mdash;
 
 504
 00:20:41,110 --> 00:20:41,260
@@ -2384,7 +2384,7 @@ We have dangly bits.
 516
 00:20:58,880 --> 00:21:01,640
 And this is why there's
-like a flash of--
+like a flash of &mdash;
 
 517
 00:21:01,640 --> 00:21:04,250
@@ -2412,7 +2412,7 @@ a single-page app.
 
 522
 00:21:13,850 --> 00:21:15,560
-And by rewriting the code--
+And by rewriting the code &mdash;
 
 523
 00:21:15,560 --> 00:21:16,770
@@ -2462,7 +2462,7 @@ to each other.
 533
 00:21:37,370 --> 00:21:38,760
 JAKE ARCHIBALD: That's
-not-- oh yes,
+not &mdash; oh yes,
 
 534
 00:21:38,760 --> 00:21:40,680
@@ -2475,7 +2475,7 @@ be ear to ear.
 
 536
 00:21:42,620 --> 00:21:43,460
-JAKE ARCHIBALD: I guess it's--
+JAKE ARCHIBALD: I guess it's &mdash;
 
 537
 00:21:43,460 --> 00:21:44,550
@@ -2485,7 +2485,7 @@ consciousness.
 538
 00:21:44,550 --> 00:21:46,580
 JAKE ARCHIBALD: I think
-if WebRTC is--
+if WebRTC is &mdash;
 
 539
 00:21:46,580 --> 00:21:48,760
@@ -2502,7 +2502,7 @@ But WebRTC can do both, right?
 
 542
 00:21:50,550 --> 00:21:52,090
-So you would have--
+So you would have &mdash;
 
 543
 00:21:52,090 --> 00:21:53,490
@@ -2520,7 +2520,7 @@ So my ear to your mouth.
 
 546
 00:21:59,630 --> 00:22:00,786
-REMY SHARP: This is why--
+REMY SHARP: This is why &mdash;
 
 547
 00:22:00,786 --> 00:22:01,640
@@ -2533,7 +2533,7 @@ So that's WebRTC, right?
 549
 00:22:03,160 --> 00:22:04,260
 REMY SHARP: This is
-the data-- yeah.
+the data &mdash; yeah.
 
 550
 00:22:04,260 --> 00:22:05,510
@@ -2726,7 +2726,7 @@ with just DOM nodes.
 590
 00:23:45,470 --> 00:23:47,290
 And the idea was
-I'd just make--
+I'd just make &mdash;
 
 591
 00:23:47,290 --> 00:23:51,990
@@ -2885,7 +2885,7 @@ doesn't look quite right.
 
 624
 00:25:11,080 --> 00:25:12,880
-So that's-- three.js
+So that's &mdash; three.js
 would solve that.
 
 625
@@ -2999,7 +2999,7 @@ the device, at least.
 
 648
 00:26:09,990 --> 00:26:12,930
-And I found that by putting--
+And I found that by putting &mdash;
 
 649
 00:26:12,930 --> 00:26:16,390
@@ -3028,7 +3028,7 @@ the whole thing.
 654
 00:26:26,860 --> 00:26:29,190
 So I changed the
-code to being--
+code to being &mdash;
 
 655
 00:26:29,190 --> 00:26:31,350
@@ -3082,7 +3082,7 @@ face in there.
 665
 00:26:58,690 --> 00:27:01,950
 And that got the frames per
-second back up to--
+second back up to &mdash;
 
 666
 00:27:01,950 --> 00:27:05,060
@@ -3173,7 +3173,7 @@ of the character.
 
 684
 00:27:40,660 --> 00:27:43,506
-And I would fake the--
+And I would fake the &mdash;
 
 685
 00:27:43,506 --> 00:27:47,270
@@ -3240,7 +3240,7 @@ I do do that.
 698
 00:28:14,030 --> 00:28:19,150
 There is some code in there
-that, again, with Seb's help--
+that, again, with Seb's help &mdash;
 
 699
 00:28:19,150 --> 00:28:21,380
@@ -3255,7 +3255,7 @@ out the point where
 701
 00:28:24,540 --> 00:28:26,880
 the ball in the 3D scene would
-have moved-- so if this is the
+have moved &mdash; so if this is the
 
 702
 00:28:26,880 --> 00:28:28,750
@@ -3268,7 +3268,7 @@ ball would move forward.
 
 704
 00:28:30,020 --> 00:28:32,490
-And with the--
+And with the &mdash;
 
 705
 00:28:32,490 --> 00:28:34,070
@@ -3330,7 +3330,7 @@ coming forward, but it's
 
 718
 00:29:04,150 --> 00:29:04,990
-behind, or--
+behind, or &mdash;
 
 719
 00:29:04,990 --> 00:29:05,765
@@ -3439,7 +3439,7 @@ of bouncy physics.
 741
 00:29:48,820 --> 00:29:50,400
 Was that just code you wrote, or
-was that something that's--
+was that something that's &mdash;
 
 742
 00:29:50,400 --> 00:29:51,873
@@ -3461,11 +3461,11 @@ some of the code here.
 
 746
 00:29:55,135 --> 00:29:56,995
-In--
+In &mdash;
 
 747
 00:29:56,995 --> 00:30:00,400
-oh, where is it-- the game.js.
+oh, where is it &mdash; the game.js.
 
 748
 00:30:00,400 --> 00:30:03,690
@@ -3581,7 +3581,7 @@ at least.
 
 772
 00:31:04,570 --> 00:31:06,240
-There's just-- that's
+There's just &mdash; that's
 not the code.
 
 773
@@ -3652,7 +3652,7 @@ on the desktop browser.
 
 787
 00:31:46,430 --> 00:31:50,120
-And where I can, I'll be--
+And where I can, I'll be &mdash;
 
 788
 00:31:50,120 --> 00:31:52,880
@@ -3684,7 +3684,7 @@ Let's make this nice and big.
 794
 00:32:04,105 --> 00:32:08,830
 I'm a big fan of right-click,
-Save As, and then linking--
+Save As, and then linking &mdash;
 
 795
 00:32:08,830 --> 00:32:10,426
@@ -3747,7 +3747,7 @@ JAKE ARCHIBALD: Ah, I see.
 
 809
 00:32:32,920 --> 00:32:34,990
-So the first intro page--
+So the first intro page &mdash;
 
 810
 00:32:34,990 --> 00:32:36,100
@@ -3904,7 +3904,7 @@ REMY SHARP: Yeah.
 
 843
 00:33:56,180 --> 00:33:58,630
-I'm a huge fan of--
+I'm a huge fan of &mdash;
 
 844
 00:33:58,630 --> 00:34:01,616
@@ -3966,7 +3966,7 @@ replay the network request.
 
 856
 00:34:34,400 --> 00:34:37,100
-And then I get to get that--
+And then I get to get that &mdash;
 
 857
 00:34:37,100 --> 00:34:37,469
@@ -3974,7 +3974,7 @@ where is it?
 
 858
 00:34:37,469 --> 00:34:41,396
-Replay, replay--
+Replay, replay &mdash;
 
 859
 00:34:41,396 --> 00:34:42,460
@@ -4066,7 +4066,7 @@ be cool to see that.
 878
 00:35:21,080 --> 00:35:24,990
 REMY SHARP: We might have to
-pause during setup and--
+pause during setup and &mdash;
 
 879
 00:35:24,990 --> 00:35:28,750
@@ -4177,15 +4177,15 @@ of the machine.
 
 902
 00:36:12,920 --> 00:36:14,200
-So 192--
+So 192 &mdash;
 
 903
 00:36:14,200 --> 00:36:15,710
-I hope this works--
+I hope this works &mdash;
 
 904
 00:36:15,710 --> 00:36:17,800
-168.--
+168. &mdash;
 
 905
 00:36:17,800 --> 00:36:19,150
@@ -4221,7 +4221,7 @@ Right.
 
 912
 00:36:33,220 --> 00:36:34,970
-So I've got--
+So I've got &mdash;
 
 913
 00:36:34,970 --> 00:36:37,060
@@ -4295,7 +4295,7 @@ have worked.
 
 929
 00:37:15,550 --> 00:37:17,580
-So it should have caused--
+So it should have caused &mdash;
 
 930
 00:37:17,580 --> 00:37:18,110
@@ -4403,7 +4403,7 @@ REMY SHARP: Yeah.
 
 952
 00:38:06,805 --> 00:38:10,122
-And I'm kind of hoping that--
+And I'm kind of hoping that &mdash;
 
 953
 00:38:10,122 --> 00:38:11,490
@@ -4421,7 +4421,7 @@ looking at on the phone
 
 956
 00:38:18,410 --> 00:38:21,661
-directly from Canary here--
+directly from Canary here &mdash;
 
 957
 00:38:21,661 --> 00:38:23,630
@@ -4430,7 +4430,7 @@ of things running here.
 
 958
 00:38:23,630 --> 00:38:24,420
-So--
+So &mdash;
 
 959
 00:38:24,420 --> 00:38:25,020
@@ -4497,7 +4497,7 @@ points and so on.
 973
 00:38:57,650 --> 00:39:00,950
 The one bit that I'm missing,
-and since I'm here at Google--
+and since I'm here at Google &mdash;
 
 974
 00:39:00,950 --> 00:39:02,200
@@ -4506,7 +4506,7 @@ to Google Developers Live.
 
 975
 00:39:02,200 --> 00:39:03,380
-This is mobile web Thur--
+This is mobile web Thur &mdash;
 
 976
 00:39:03,380 --> 00:39:04,900
@@ -4627,7 +4627,7 @@ time to recover from
 
 1002
 00:39:58,690 --> 00:39:59,940
-their kind of gut-wrenching--
+their kind of gut-wrenching &mdash;
 
 1003
 00:39:59,940 --> 00:41:07,583

@@ -22,11 +22,11 @@ banking and then was a
 6
 00:00:12,240 --> 00:00:16,890
 co-founder of Y Combinator,
-and has written a book--
+and has written a book &mdash;
 
 7
 00:00:16,890 --> 00:00:20,030
-several books, I think-- but the
+several books, I think &mdash; but the
 one that I read, "Founders
 
 8
@@ -70,7 +70,7 @@ before that.
 16
 00:00:45,780 --> 00:00:49,120
 He co-founded several companies
-before that--
+before that &mdash;
 
 17
 00:00:49,120 --> 00:00:51,690
@@ -601,7 +601,7 @@ of data points.
 128
 00:06:19,890 --> 00:06:24,720
 And so part of looking at
-funding-- and by the way, I
+funding &mdash; and by the way, I
 
 129
 00:06:24,720 --> 00:06:26,510
@@ -846,7 +846,7 @@ in fact, if you dropped
 
 180
 00:08:38,850 --> 00:08:41,110
-out before you finish-- because
+out before you finish &mdash; because
 that's the current
 
 181
@@ -1140,7 +1140,7 @@ a good thing?
 242
 00:11:25,100 --> 00:11:26,610
 NAVAL RAVIKANT: So the
-accelerators are there--
+accelerators are there &mdash;
 
 243
 00:11:26,610 --> 00:11:28,818
@@ -1483,7 +1483,7 @@ of accelerators and of angel
 314
 00:13:56,080 --> 00:14:00,280
 financing because I think
-that they do fill--
+that they do fill &mdash;
 
 315
 00:14:00,280 --> 00:14:02,460
@@ -1571,7 +1571,7 @@ bankers and ultimately the
 
 332
 00:14:45,880 --> 00:14:48,550
-public markets-- which there
+public markets &mdash; which there
 are periods of time where
 
 333
@@ -1591,7 +1591,7 @@ food chain there.
 
 336
 00:14:58,100 --> 00:14:59,980
-I think you have to know--
+I think you have to know &mdash;
 
 337
 00:14:59,980 --> 00:15:02,640
@@ -1601,7 +1601,7 @@ thing for everybody, not just
 338
 00:15:02,640 --> 00:15:05,910
 for accelerator or angels
-or whatever--
+or whatever &mdash;
 
 339
 00:15:05,910 --> 00:15:08,800
@@ -1813,7 +1813,7 @@ doing some of that, but
 383
 00:16:45,450 --> 00:16:50,010
 how do we inspire the idea
-of venture capitalism--
+of venture capitalism &mdash;
 
 384
 00:16:50,010 --> 00:16:52,260
@@ -1948,7 +1948,7 @@ to fly to North Dakota.
 411
 00:17:53,210 --> 00:17:54,900
 I always though capital
-was liquid--
+was liquid &mdash;
 
 412
 00:17:54,900 --> 00:17:57,680
@@ -2099,7 +2099,7 @@ for the startups.
 
 444
 00:18:58,750 --> 00:19:00,100
-DON DODGE: Pokemon--
+DON DODGE: Pokemon &mdash;
 
 445
 00:19:00,100 --> 00:19:00,985
@@ -2233,7 +2233,7 @@ make progress on this?
 473
 00:20:14,670 --> 00:20:16,950
 JESSICA LIVINGSTON: People,
-I promise you-- not me
+I promise you &mdash; not me
 
 474
 00:20:16,950 --> 00:20:19,510
@@ -2243,7 +2243,7 @@ worry about it a lot because a
 475
 00:20:19,510 --> 00:20:23,070
 lot of the people we fund are
-from other countries--
+from other countries &mdash;
 
 476
 00:20:23,070 --> 00:20:26,770
@@ -2296,7 +2296,7 @@ in the US here.
 
 486
 00:20:52,150 --> 00:20:53,300
-JESSICA LIVINGSTON: OK, I'm--
+JESSICA LIVINGSTON: OK, I'm &mdash;
 
 487
 00:20:53,300 --> 00:20:55,460
@@ -2528,7 +2528,7 @@ strongly encourage people to
 536
 00:22:39,620 --> 00:22:42,750
 get their degrees because
-for better or worse--
+for better or worse &mdash;
 
 537
 00:22:42,750 --> 00:22:46,030
@@ -2585,7 +2585,7 @@ everybody, and the lore is
 
 548
 00:23:14,990 --> 00:23:15,720
-you look around--
+you look around &mdash;
 
 549
 00:23:15,720 --> 00:23:17,790
@@ -2730,7 +2730,7 @@ a lot of material.
 
 578
 00:24:20,800 --> 00:24:23,060
-Again, Brad Feld has written--
+Again, Brad Feld has written &mdash;
 
 579
 00:24:23,060 --> 00:24:26,440
@@ -3298,12 +3298,12 @@ startup that's overseas.
 699
 00:29:29,810 --> 00:29:33,800
 At Angel List, we do a bit
-of overseas matching--
+of overseas matching &mdash;
 
 700
 00:29:33,800 --> 00:29:36,270
 in fact, that's where I think
-we add the most value-- but
+we add the most value &mdash; but
 
 701
 00:29:36,270 --> 00:29:38,470
@@ -3515,7 +3515,7 @@ you've get the
 
 746
 00:31:17,710 --> 00:31:19,840
-team, you've got--
+team, you've got &mdash;
 
 747
 00:31:19,840 --> 00:31:22,130
@@ -3961,7 +3961,7 @@ our categories existed.
 841
 00:35:06,610 --> 00:35:09,850
 And before our categories
-existed-- because even venture
+existed &mdash; because even venture
 
 842
 00:35:09,850 --> 00:35:12,280
@@ -4017,7 +4017,7 @@ what's happened, and
 853
 00:35:35,610 --> 00:35:36,800
 particularly here in
-Silicon Valley--
+Silicon Valley &mdash;
 
 854
 00:35:36,800 --> 00:35:38,780
@@ -4462,7 +4462,7 @@ version of the product for a
 
 950
 00:39:21,830 --> 00:39:24,440
-customer that is going to-- let
+customer that is going to &mdash; let
 them exploit it all they
 
 951

@@ -40,7 +40,7 @@ media mobile.
 
 10
 00:01:03,830 --> 00:01:04,420
-Media's an area--
+Media's an area &mdash;
 
 11
 00:01:04,420 --> 00:01:05,024
@@ -59,7 +59,7 @@ media on mobile as well.
 14
 00:01:11,220 --> 00:01:15,395
 So a lot of people think of
-video and everything--
+video and everything &mdash;
 
 15
 00:01:15,395 --> 00:01:19,310
@@ -91,11 +91,11 @@ But we've got a nice
 21
 00:01:26,570 --> 00:01:28,730
 new things coming inside
-Chrome for Cran--
+Chrome for Cran &mdash;
 
 22
 00:01:28,730 --> 00:01:30,295
-Chrome for Crandroid?--
+Chrome for Crandroid? &mdash;
 
 23
 00:01:30,295 --> 00:01:31,990
@@ -134,7 +134,7 @@ little demo there.
 30
 00:01:41,910 --> 00:01:43,260
 PAUL KINLAN: Track Elements,
-WebRTC--
+WebRTC &mdash;
 
 31
 00:01:43,260 --> 00:01:44,490
@@ -253,7 +253,7 @@ for Chrome for Android.
 56
 00:02:29,620 --> 00:02:33,210
 And I think actually for
-Firefox, for mobile as well--
+Firefox, for mobile as well &mdash;
 
 57
 00:02:33,210 --> 00:02:33,450
@@ -279,7 +279,7 @@ and for Android Chrome.
 62
 00:02:44,030 --> 00:02:47,730
 And that means getUserMedia, RTC
-peer connection-- that's
+peer connection &mdash; that's
 
 63
 00:02:47,730 --> 00:02:50,400
@@ -355,7 +355,7 @@ another camera.
 78
 00:03:37,030 --> 00:03:38,750
 That's the actual camera
-pointing up at the--
+pointing up at the &mdash;
 
 79
 00:03:38,750 --> 00:03:39,940
@@ -410,7 +410,7 @@ about that later.
 
 90
 00:03:59,770 --> 00:04:00,890
-And then when--
+And then when &mdash;
 
 91
 00:04:00,890 --> 00:04:03,810
@@ -435,7 +435,7 @@ is right there.
 95
 00:04:12,560 --> 00:04:15,740
 And I've actually put
-this example--
+this example &mdash;
 
 96
 00:04:15,740 --> 00:04:19,810
@@ -467,12 +467,12 @@ That's it.
 102
 00:04:29,840 --> 00:04:32,570
 And that's setting the
-source of the video--
+source of the video &mdash;
 
 103
 00:04:32,570 --> 00:04:36,060
 works on mobile devices and it
-works on Firefox, Opera--
+works on Firefox, Opera &mdash;
 
 104
 00:04:36,060 --> 00:04:36,950
@@ -531,7 +531,7 @@ got a little question.
 116
 00:04:53,400 --> 00:04:55,290
 I don't know whether
-this is a--
+this is a &mdash;
 
 117
 00:04:55,290 --> 00:04:57,260
@@ -568,11 +568,11 @@ stop the stream.
 124
 00:05:09,180 --> 00:05:10,970
 PAUL KINLAN: Oh, so this
-local stream--
+local stream &mdash;
 
 125
 00:05:10,970 --> 00:05:11,250
-local media stream--
+local media stream &mdash;
 
 126
 00:05:11,250 --> 00:05:11,950
@@ -581,7 +581,7 @@ SAM DUTTON: That's right.
 127
 00:05:11,950 --> 00:05:12,640
 PAUL KINLAN: --you
-got there is a--
+got there is a &mdash;
 
 128
 00:05:12,640 --> 00:05:12,940
@@ -597,7 +597,7 @@ It might work.
 
 131
 00:05:15,410 --> 00:05:16,550
-So I've got stream--
+So I've got stream &mdash;
 
 132
 00:05:16,550 --> 00:05:18,800
@@ -606,7 +606,7 @@ don't know if we can see that.
 
 133
 00:05:18,800 --> 00:05:23,560
-But I've put the-- like I said,
+But I've put the &mdash; like I said,
 the stream variable in
 
 134
@@ -728,7 +728,7 @@ you can do that without having
 
 160
 00:06:09,700 --> 00:06:10,510
-explicitly--
+explicitly &mdash;
 
 161
 00:06:10,510 --> 00:06:11,880
@@ -795,7 +795,7 @@ like the previous demo.
 174
 00:06:38,880 --> 00:06:43,140
 But if we get into the code
-for this in the DevTools--
+for this in the DevTools &mdash;
 
 175
 00:06:43,140 --> 00:06:44,430
@@ -944,7 +944,7 @@ That means 360 pixels.
 206
 00:07:51,060 --> 00:07:55,830
 Now the thing is that if we look
-at the elements here--
+at the elements here &mdash;
 
 207
 00:07:55,830 --> 00:07:57,170
@@ -962,7 +962,7 @@ we've actually got
 
 210
 00:08:02,870 --> 00:08:06,420
-the size there at--
+the size there at &mdash;
 
 211
 00:08:06,420 --> 00:08:09,000
@@ -994,7 +994,7 @@ and we have no cropping.
 
 217
 00:08:23,590 --> 00:08:24,395
-So essentially--
+So essentially &mdash;
 
 218
 00:08:24,395 --> 00:08:25,190
@@ -1018,7 +1018,7 @@ take it to 360.
 222
 00:08:35,785 --> 00:08:40,785
 It will drop it to a fixed
-set of sizes--
+set of sizes &mdash;
 
 223
 00:08:40,785 --> 00:08:42,289
@@ -1087,7 +1087,7 @@ for the frame rates.
 237
 00:09:09,320 --> 00:09:13,270
 So you could specify that you
-want a particular frame rate--
+want a particular frame rate &mdash;
 
 238
 00:09:13,270 --> 00:09:14,910
@@ -1230,7 +1230,7 @@ audio as well?
 
 267
 00:10:20,710 --> 00:10:21,590
-I know that--
+I know that &mdash;
 
 268
 00:10:21,590 --> 00:10:22,940
@@ -1296,7 +1296,7 @@ video false or whatever it is.
 281
 00:10:46,580 --> 00:10:48,800
 SAM DUTTON: So audio lives
-in here, like, you can--
+in here, like, you can &mdash;
 
 282
 00:10:48,800 --> 00:10:49,840
@@ -1313,8 +1313,8 @@ from the microphone as well.
 
 285
 00:10:56,880 --> 00:10:58,250
-PAUL KINLAN: Can you-- are there
-optional constraints--
+PAUL KINLAN: Can you &mdash; are there
+optional constraints &mdash;
 
 286
 00:10:58,250 --> 00:11:00,020
@@ -1404,7 +1404,7 @@ quite perplexing.
 
 305
 00:11:46,790 --> 00:11:48,090
-PAUL KINLAN: So the--
+PAUL KINLAN: So the &mdash;
 
 306
 00:11:48,090 --> 00:11:49,800
@@ -1509,7 +1509,7 @@ Firefox Android as well.
 
 328
 00:12:14,150 --> 00:12:15,050
-SAM DUTTON: Yeah, let's--
+SAM DUTTON: Yeah, let's &mdash;
 
 329
 00:12:15,050 --> 00:12:17,480
@@ -1550,11 +1550,11 @@ set for WebRTC.
 
 337
 00:12:33,790 --> 00:12:35,680
-And if you go to Chrome/flag--
+And if you go to Chrome/flag &mdash;
 
 338
 00:12:35,680 --> 00:12:38,250
-like about hyphen flags--
+like about hyphen flags &mdash;
 
 339
 00:12:38,250 --> 00:12:42,580
@@ -1572,7 +1572,7 @@ hidden behind
 
 342
 00:12:45,390 --> 00:12:45,800
-that flag we well--
+that flag we well &mdash;
 
 343
 00:12:45,800 --> 00:12:46,330
@@ -1586,7 +1586,7 @@ separate flag.
 345
 00:12:46,580 --> 00:12:47,900
 SAM DUTTON: Yeah, and
-then you enable--
+then you enable &mdash;
 
 346
 00:12:47,900 --> 00:12:48,680
@@ -1613,7 +1613,7 @@ forget any of these.
 
 351
 00:13:00,970 --> 00:13:03,610
-It's a really useful spot to--
+It's a really useful spot to &mdash;
 
 352
 00:13:03,610 --> 00:13:05,120
@@ -1628,7 +1628,7 @@ chrome://chrome-urls gives you
 354
 00:13:10,350 --> 00:13:13,070
 a full list of all the
-Chrome URLs like--
+Chrome URLs like &mdash;
 
 355
 00:13:13,070 --> 00:13:13,966
@@ -1638,7 +1638,7 @@ one called WebRTC.
 356
 00:13:13,966 --> 00:13:15,440
 SAM DUTTON: --sys
-internals and--
+internals and &mdash;
 
 357
 00:13:15,440 --> 00:13:18,440
@@ -1713,7 +1713,7 @@ SAM DUTTON: Yeah.
 
 372
 00:13:46,300 --> 00:13:48,790
-If we look at the track-- maybe
+If we look at the track &mdash; maybe
 if I just demo this, I
 
 373
@@ -1738,12 +1738,12 @@ metadata into video.
 377
 00:13:59,740 --> 00:14:05,190
 So if we play this video, as you
-can see I'm getting-- it's
+can see I'm getting &mdash; it's
 
 378
 00:14:05,190 --> 00:14:07,760
 a little bit hard to see on the
-camera-- but you can see
+camera &mdash; but you can see
 
 379
 00:14:07,760 --> 00:14:13,830
@@ -1758,7 +1758,7 @@ the bottom there.
 381
 00:14:17,250 --> 00:14:22,910
 If we actually go to the desktop
-device-- hang on, I'll
+device &mdash; hang on, I'll
 
 382
 00:14:22,910 --> 00:14:24,980
@@ -1937,7 +1937,7 @@ SAM DUTTON: Yeah, exactly.
 
 420
 00:15:36,650 --> 00:15:38,900
-In fact, if we inspect the--
+In fact, if we inspect the &mdash;
 this is kind of interesting
 
 421
@@ -1947,20 +1947,20 @@ on the desktop machine in the
 
 422
 00:15:43,760 --> 00:15:46,450
-DevTools, and--
+DevTools, and &mdash;
 
 423
 00:15:46,450 --> 00:15:48,845
-I think we can see the--
+I think we can see the &mdash;
 
 424
 00:15:48,845 --> 00:15:51,010
-let's see if I can--
+let's see if I can &mdash;
 
 425
 00:15:51,010 --> 00:15:52,875
 PAUL KINLAN: Do we need to
-put the elements or the--
+put the elements or the &mdash;
 
 426
 00:15:52,875 --> 00:15:54,530
@@ -2029,7 +2029,7 @@ down here and play a bit.
 440
 00:16:28,670 --> 00:16:30,140
 PAUL KINLAN: So what you do now
-is you actually embed--
+is you actually embed &mdash;
 
 441
 00:16:30,140 --> 00:16:33,230
@@ -2120,7 +2120,7 @@ about that.
 
 460
 00:17:08,329 --> 00:17:12,569
-Yeah, it's also possible to--
+Yeah, it's also possible to &mdash;
 you can get the time of the
 
 461
@@ -2152,14 +2152,14 @@ itself to style it.
 467
 00:17:27,630 --> 00:17:33,280
 If I go to the CSS for this
-file, let's add a little--
+file, let's add a little &mdash;
 
 468
 00:17:33,280 --> 00:17:38,570
 
 469
 00:17:38,570 --> 00:17:43,770
-let's add a little style--
+let's add a little style &mdash;
 
 470
 00:17:43,770 --> 00:17:45,780
@@ -2186,16 +2186,16 @@ OK, cool.
 475
 00:17:50,020 --> 00:17:51,850
 SAM DUTTON: Yeah, you
-should be able to--
+should be able to &mdash;
 
 476
 00:17:51,850 --> 00:17:54,920
 hang on, it's not going to show
-it on the-- because the--
+it on the &mdash; because the &mdash;
 
 477
 00:17:54,920 --> 00:17:55,930
-if we did it on this one--
+if we did it on this one &mdash;
 
 478
 00:17:55,930 --> 00:17:57,040
@@ -2261,8 +2261,8 @@ SAM DUTTON: Yeah, yeah.
 
 492
 00:18:22,980 --> 00:18:25,020
-I just wanted to-- while
-we're talking about--
+I just wanted to &mdash; while
+we're talking about &mdash;
 
 493
 00:18:25,020 --> 00:18:25,350
@@ -2327,7 +2327,7 @@ what this guy did was
 
 507
 00:18:54,602 --> 00:18:55,950
-he took video cycle--
+he took video cycle &mdash;
 
 508
 00:18:55,950 --> 00:18:57,815
@@ -2369,7 +2369,7 @@ cues, so what you can see if
 
 516
 00:19:19,280 --> 00:19:20,300
-you look down--
+you look down &mdash;
 
 517
 00:19:20,300 --> 00:19:23,650
@@ -2407,12 +2407,12 @@ Yes, that's working.
 
 525
 00:19:38,730 --> 00:19:39,690
-Sorry about the extraneous--
+Sorry about the extraneous &mdash;
 
 526
 00:19:39,690 --> 00:19:41,090
 PAUL KINLAN: Our producer
-in the background is--
+in the background is &mdash;
 
 527
 00:19:41,090 --> 00:19:41,700
@@ -2459,7 +2459,7 @@ the man moves.
 536
 00:20:02,810 --> 00:20:04,650
 I really like this
-because it was--
+because it was &mdash;
 
 537
 00:20:04,650 --> 00:20:08,100
@@ -2469,11 +2469,11 @@ designed for this stuff.
 538
 00:20:08,100 --> 00:20:09,730
 I did a similar thing
-here-- if we
+here &mdash; if we
 
 539
 00:20:09,730 --> 00:20:11,990
-just get back to normal--
+just get back to normal &mdash;
 
 540
 00:20:11,990 --> 00:20:14,830
@@ -2610,7 +2610,7 @@ lot of other things.
 569
 00:21:16,160 --> 00:21:18,730
 And there's a lot to talk about
-around how to actually--
+around how to actually &mdash;
 
 570
 00:21:18,730 --> 00:21:21,270
@@ -2661,7 +2661,7 @@ SAM DUTTON: Yeah.
 
 581
 00:21:32,440 --> 00:21:34,830
-PAUL KINLAN: So--
+PAUL KINLAN: So &mdash;
 
 582
 00:21:34,830 --> 00:21:36,030
@@ -2674,7 +2674,7 @@ SAM DUTTON: Yes.
 
 584
 00:21:37,080 --> 00:21:41,650
-PAUL KINLAN: I'll tell you--
+PAUL KINLAN: I'll tell you &mdash;
 it's a better WebRTC demo.
 
 585
@@ -2798,7 +2798,7 @@ really interesting,
 610
 00:22:40,020 --> 00:22:42,190
 because two of the projects
-I've worked on-- the Super
+I've worked on &mdash; the Super
 
 611
 00:22:42,190 --> 00:22:43,980
@@ -2959,7 +2959,7 @@ something like 3 billion
 
 644
 00:24:00,960 --> 00:24:06,320
-WebRTC devices in the next--
+WebRTC devices in the next &mdash;
 about 2016, so huge, huge
 
 645
@@ -3033,7 +3033,7 @@ API like a telecoms API, but
 
 660
 00:24:33,240 --> 00:24:34,640
-[INAUDIBLE]--
+[INAUDIBLE] &mdash;
 
 661
 00:24:34,640 --> 00:24:36,700
@@ -3070,8 +3070,8 @@ everything in there.
 
 668
 00:24:51,040 --> 00:24:54,450
-So you don't have to-- yeah,
-the API can be--
+So you don't have to &mdash; yeah,
+the API can be &mdash;
 
 669
 00:24:54,450 --> 00:24:56,900
@@ -3093,7 +3093,7 @@ PAUL KINLAN: Cool.
 
 673
 00:25:02,250 --> 00:25:05,762
-So should we do the-- can we
+So should we do the &mdash; can we
 show the demo that we were
 
 674
@@ -3163,7 +3163,7 @@ this video chat client.
 
 688
 00:25:34,840 --> 00:25:36,110
-You're allowed to--
+You're allowed to &mdash;
 
 689
 00:25:36,110 --> 00:25:37,995
@@ -3375,7 +3375,7 @@ from the WebRTC, Web World to
 
 737
 00:26:52,160 --> 00:26:54,872
-the what's called the--
+the what's called the &mdash;
 here he is!
 
 738
@@ -3397,7 +3397,7 @@ I can't see him here.
 
 742
 00:27:01,700 --> 00:27:02,310
-You can see him--
+You can see him &mdash;
 
 743
 00:27:02,310 --> 00:27:03,790
@@ -3421,7 +3421,7 @@ SAM DUTTON: Come on.
 747
 00:27:06,320 --> 00:27:07,710
 PAUL KINLAN: Just to prove
-that it's actually--
+that it's actually &mdash;
 
 748
 00:27:07,710 --> 00:27:08,200
@@ -3449,7 +3449,7 @@ The man behind the desk.
 753
 00:27:14,760 --> 00:27:17,640
 PAUL KINLAN: He's actually
-gone off from him Nexus--
+gone off from him Nexus &mdash;
 
 754
 00:27:17,640 --> 00:27:21,122
@@ -3459,7 +3459,7 @@ Galaxy Nexus phone?
 755
 00:27:21,122 --> 00:27:22,836
 I can't remember which
-one it is, but--
+one it is, but &mdash;
 
 756
 00:27:22,836 --> 00:27:23,750
@@ -3686,7 +3686,7 @@ straight into a web page, via
 
 805
 00:28:49,610 --> 00:28:50,025
-a SIP gateway--
+a SIP gateway &mdash;
 
 806
 00:28:50,025 --> 00:28:50,290
@@ -3773,7 +3773,7 @@ media based applications.
 824
 00:29:25,370 --> 00:29:28,410
 So suppose without much
-further of ado--
+further of ado &mdash;
 
 825
 00:29:28,410 --> 00:29:28,950

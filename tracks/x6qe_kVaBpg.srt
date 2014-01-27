@@ -25,7 +25,7 @@ made to authoring, just building out and working
 
 6
 00:00:24,029 --> 00:00:28,259
-with the tools to iterate on your -- your
+with the tools to iterate on your  &mdash; your
 application, your site; dive into what that
 
 7
@@ -65,7 +65,7 @@ your mouse cursor straight in and we can just
 
 14
 00:00:59,800 --> 00:01:05,290
-go to blue and if I hit "command S" --
+go to blue and if I hit "command S"  &mdash;
 >>Paul Irish: So what he's showing here is
 
 15
@@ -95,7 +95,7 @@ and if you've seen the Brent Victor talk,
 
 20
 00:01:27,530 --> 00:01:32,890
-having a -- an environment where you can iterate
+having a  &mdash; an environment where you can iterate
 live against your production application that
 
 21
@@ -121,7 +121,7 @@ Let's see. We're going to go down here and
 25
 00:01:53,710 --> 00:01:58,869
 then actually the styling is not totally keen
--- I'm not -- we could make this better, I
+ &mdash; I'm not  &mdash; we could make this better, I
 
 26
 00:01:58,869 --> 00:02:02,130
@@ -161,7 +161,7 @@ my default CSS.
 33
 00:02:41,870 --> 00:02:48,870
 Section, line height. Wait. Um... okay, I
--- let's see if I can get this on screen at
+ &mdash; let's see if I can get this on screen at
 
 34
 00:02:52,000 --> 00:02:56,030
@@ -181,11 +181,11 @@ of box shadow. 10px, black, seems good.
 37
 00:03:18,159 --> 00:03:24,650
 Come down here, and what you're seeing, actually
--- so all my changes that I'm making in styling
+ &mdash; so all my changes that I'm making in styling
 
 38
 00:03:24,650 --> 00:03:26,200
---
+ &mdash;
 [ Applause ]
 
 39
@@ -210,8 +210,8 @@ I can also come back, say, for instance, to
 
 43
 00:03:50,129 --> 00:03:57,129
--- to sublime. Maybe I'm going to make my
-change down here, so instead -- I'm going
+ &mdash; to sublime. Maybe I'm going to make my
+change down here, so instead  &mdash; I'm going
 
 44
 00:03:58,790 --> 00:04:03,590
@@ -220,7 +220,7 @@ change the color over to indigo. That one's
 
 45
 00:04:03,590 --> 00:04:08,159
-been -- I like that style.
+been  &mdash; I like that style.
 Come back, and immediately my change comes
 
 46
@@ -235,8 +235,8 @@ and I think it's really powerful, but it's
 
 48
 00:04:19,880 --> 00:04:24,200
-backed up by a bit of -- a bit of work. So
---
+backed up by a bit of  &mdash; a bit of work. So
+ &mdash;
 
 49
 00:04:24,200 --> 00:04:30,480
@@ -246,7 +246,7 @@ I didn't even get to. So let's take a look
 50
 00:04:30,480 --> 00:04:37,150
 at that.
-So these are HTML styles -- HTML slides, but
+So these are HTML styles  &mdash; HTML slides, but
 
 51
 00:04:37,150 --> 00:04:44,150
@@ -261,7 +261,7 @@ So what I'm going to do is just hit command
 53
 00:04:47,460 --> 00:04:54,460
 "O" inside here, bring up my slides for markdown,
-and inside here -- so this is just my markdown
+and inside here  &mdash; so this is just my markdown
 
 54
 00:04:55,820 --> 00:05:02,820
@@ -281,7 +281,7 @@ Workspaces allows you to map what's coming
 57
 00:05:12,150 --> 00:05:18,900
 into the browser to the local filesystem,
-so in this case, I have -- this is the workspace
+so in this case, I have  &mdash; this is the workspace
 
 58
 00:05:18,900 --> 00:05:25,010
@@ -296,7 +296,7 @@ So I can edit my JavaScript, my CSS, my HTML,
 60
 00:05:31,820 --> 00:05:36,550
 my markdown files. Even the DevTools engineering
-team who is building this edits their -- their
+team who is building this edits their  &mdash; their
 
 61
 00:05:36,550 --> 00:05:42,120
@@ -386,7 +386,7 @@ darker as it goes down.
 78
 00:07:06,580 --> 00:07:12,390
 Now, I can click over to see my CSS, but as
-I said, this is compiled, so -- from my Sass,
+I said, this is compiled, so  &mdash; from my Sass,
 
 79
 00:07:12,390 --> 00:07:16,060
@@ -395,12 +395,12 @@ So let's turn on Sass debugging.
 
 80
 00:07:16,060 --> 00:07:20,410
-So when I go into DevTool settings -- I like
+So when I go into DevTool settings  &mdash; I like
 using the question mark for this, a quick
 
 81
 00:07:20,410 --> 00:07:24,520
-little shortcut -- go into experiments, turn
+little shortcut  &mdash; go into experiments, turn
 on Sass debugging, and now I'm just going
 
 82
@@ -416,12 +416,12 @@ to see is that right here we're listing the
 84
 00:07:31,660 --> 00:07:36,400
 original place inside the Sass file where
-this was -- where this was found.
+this was  &mdash; where this was found.
 
 85
 00:07:36,400 --> 00:07:43,120
 So I can click over to that and we're looking
-inside my Sass file where this -- where this
+inside my Sass file where this  &mdash; where this
 
 86
 00:07:43,120 --> 00:07:46,830
@@ -486,12 +486,12 @@ All right. I'm going to hit command "S."
 98
 00:08:43,430 --> 00:08:50,430
 Now, one of the cool things that we have set
-up is that if you have -- if you have a Sass
+up is that if you have  &mdash; if you have a Sass
 
 99
 00:08:51,270 --> 00:08:57,990
 watch set up, so you're watching, you have
-the -- the daemon sitting there waiting for
+the  &mdash; the daemon sitting there waiting for
 
 100
 00:08:57,990 --> 00:09:04,150
@@ -511,7 +511,7 @@ that that setting is on. Okay. Autoreload
 103
 00:09:13,310 --> 00:09:20,310
 CSS upon Sass save.
-Come over and it looks like -- there we go.
+Come over and it looks like  &mdash; there we go.
 
 104
 00:09:24,640 --> 00:09:26,140
@@ -525,7 +525,7 @@ changes to my Sass right here inside the DevTools,
 
 106
 00:09:35,570 --> 00:09:38,320
-change the color. Maybe I'm -- I should go
+change the color. Maybe I'm  &mdash; I should go
 back to that green. It's probably better than
 
 107
@@ -560,7 +560,7 @@ And the fact that this is powered by sourcemaps
 
 113
 00:10:12,439 --> 00:10:16,430
--- you've heard about sourcemaps for JavaScript.
+ &mdash; you've heard about sourcemaps for JavaScript.
 This is the exact same technology, only used
 
 114
@@ -596,11 +596,11 @@ These changes can be persisted to disk because
 120
 00:10:47,250 --> 00:10:51,760
 I'm mapping them right into my local folders.
-My -- inside JavaScript I can re-evaluate
+My  &mdash; inside JavaScript I can re-evaluate
 
 121
 00:10:51,760 --> 00:10:57,500
-that -- re-evaluate it on the fly with live
+that  &mdash; re-evaluate it on the fly with live
 edit and where I author is where I debug.
 
 122
@@ -626,7 +626,7 @@ debugging Chrome on Android. Powerful stuff.
 126
 00:11:16,600 --> 00:11:21,010
 But it does require a bit of command line
-hackery. So who is a -- raise your hand if
+hackery. So who is a  &mdash; raise your hand if
 
 127
 00:11:21,010 --> 00:11:23,900
@@ -641,7 +641,7 @@ raise your hand if you really enjoyed dealing
 129
 00:11:27,750 --> 00:11:33,660
 with ADB on the command line and memorizing
-this -- that little guy at the bottom. One
+this  &mdash; that little guy at the bottom. One
 
 130
 00:11:33,660 --> 00:11:37,730
@@ -765,7 +765,7 @@ And there we go.
 
 154
 00:13:43,910 --> 00:13:49,580
-excited about having this -- the full functionality
+excited about having this  &mdash; the full functionality
 of the DevTools available so conveniently.
 
 155
@@ -781,7 +781,7 @@ you didn't have available. Now, say, for instance,
 157
 00:13:58,089 --> 00:14:03,510
 you want to run Google PageSpeed against your
-situation on the phone. Right here -- my phone
+situation on the phone. Right here  &mdash; my phone
 
 158
 00:14:03,510 --> 00:14:08,860
@@ -795,7 +795,7 @@ But there is still a problem, so let's say
 
 160
 00:14:14,500 --> 00:14:19,210
--- switch back here and I come over to this
+ &mdash; switch back here and I come over to this
 file.
 
 161
@@ -866,7 +866,7 @@ Command "R" again, you know, for good luck.
 174
 00:15:44,230 --> 00:15:51,230
 >>Paul Irish: All right. So I've just connected
-with -- with really -- with a lot of ease
+with  &mdash; with really  &mdash; with a lot of ease
 
 175
 00:15:52,120 --> 00:15:57,050
@@ -925,7 +925,7 @@ this with a good example.
 
 186
 00:16:51,250 --> 00:16:57,250
-So here I have -- this is like an infographic
+So here I have  &mdash; this is like an infographic
 parallax site and what we do as we scroll
 
 187
@@ -935,7 +935,7 @@ growth, we've got these white little guys
 
 188
 00:17:02,089 --> 00:17:07,740
-that are going to -- physics kind of going
+that are going to  &mdash; physics kind of going
 out, we got this kind of section. It's parallax.
 
 189
@@ -1005,7 +1005,7 @@ Then things are kind of pretty chill as we
 
 202
 00:18:14,800 --> 00:18:21,530
-go through this middle area. We got -- we're
+go through this middle area. We got  &mdash; we're
 mostly hitting our target of 60fps, so we're
 
 203
@@ -1060,7 +1060,7 @@ That just worked out really well.
 
 213
 00:19:09,710 --> 00:19:15,120
-The G -- if you're look at GCs and memory,
+The G  &mdash; if you're look at GCs and memory,
 there was a great talk earlier about Gmail's
 
 214
@@ -1086,7 +1086,7 @@ let me show how it works.
 218
 00:19:33,150 --> 00:19:40,150
 All right. So we're looking at this little
-section here where we have the -- the -- all
+section here where we have the  &mdash; the  &mdash; all
 
 219
 00:19:41,120 --> 00:19:46,630
@@ -1166,7 +1166,7 @@ What you are looking for is wide bars that
 234
 00:21:05,990 --> 00:21:12,990
 are taking up time. In this case, it looks
-like -- let's see, this little flame over
+like  &mdash; let's see, this little flame over
 
 235
 00:21:13,059 --> 00:21:18,590
@@ -1246,7 +1246,7 @@ and WebGL.
 250
 00:22:31,630 --> 00:22:36,140
 Now, what really happens next is up to you.
-There is -- we could add a lot of features
+There is  &mdash; we could add a lot of features
 
 251
 00:22:36,140 --> 00:22:39,990
@@ -1340,7 +1340,7 @@ paints. Maybe it is the entire screen is repainted
 
 269
 00:23:54,840 --> 00:23:59,970
--- repainting every time you scroll. We want
+ &mdash; repainting every time you scroll. We want
 to understand that and find out why.
 
 270
@@ -1376,7 +1376,7 @@ the memory performance of your app.
 276
 00:24:32,360 --> 00:24:37,840
 Layout thrashing is a big problem with DOM
--- with the Web application's DOM performance.
+ &mdash; with the Web application's DOM performance.
 
 277
 00:24:37,840 --> 00:24:43,309
@@ -1425,7 +1425,7 @@ is, and where the document root is. Sometimes
 
 286
 00:25:23,040 --> 00:25:28,049
--- sometimes the entire document is being
+ &mdash; sometimes the entire document is being
 laid out again. Other times it is just a partial
 
 287
@@ -1436,11 +1436,11 @@ All right. So a lot of stuff here. And you
 288
 00:25:34,440 --> 00:25:40,590
 can try it out today. We have just been working
--- put in a lot of work on the DevTools documentation.
+ &mdash; put in a lot of work on the DevTools documentation.
 
 289
 00:25:40,590 --> 00:25:45,010
-So not even -- there is a lot more I didn't
+So not even  &mdash; there is a lot more I didn't
 even show, and we have great docs to back
 
 290
@@ -1555,8 +1555,8 @@ no debugging memory management in Node?
 
 312
 00:27:35,919 --> 00:27:42,919
->>Paul Irish: So node -- I know Node Agent
--- Node Inspector, of course, is not as maintained
+>>Paul Irish: So node  &mdash; I know Node Agent
+ &mdash; Node Inspector, of course, is not as maintained
 
 313
 00:27:42,919 --> 00:27:44,880
@@ -1590,7 +1590,7 @@ Web app, and hook up to the V8 protocol and
 
 319
 00:28:10,010 --> 00:28:13,559
-bring in those features. So --
+bring in those features. So  &mdash;
 >>> At the same time, it's hard, right, because
 
 320
@@ -1661,7 +1661,7 @@ still figuring out the editor story. We are
 333
 00:29:28,710 --> 00:29:33,539
 unhappy with anything we see because we need
-to -- we are kind of a unique situation where
+to  &mdash; we are kind of a unique situation where
 
 334
 00:29:33,539 --> 00:29:38,740
@@ -1736,7 +1736,7 @@ why you don't see it on our Web page.
 348
 00:30:49,809 --> 00:30:56,809
 >>> Okay. Thanks.
->>> The 
+>>> The
 editor features you have shown will make it
 
 349
@@ -1772,7 +1772,7 @@ will work, including Chrome OS where you can
 355
 00:31:26,530 --> 00:31:33,530
 map it to your downloads folder or your drive.
-We are generally unhappy with the -- our development
+We are generally unhappy with the  &mdash; our development
 
 356
 00:31:34,270 --> 00:31:39,470
@@ -1791,7 +1791,7 @@ just not there yet.
 
 359
 00:31:49,340 --> 00:31:54,299
->>> Hello. So two -- first one quick question.
+>>> Hello. So two  &mdash; first one quick question.
 So you were trying when you edited a file
 
 360
@@ -1806,8 +1806,8 @@ right?
 
 362
 00:32:03,780 --> 00:32:08,340
-The question is -- second question is more
-about how far are you -- do you think you
+The question is  &mdash; second question is more
+about how far are you  &mdash; do you think you
 
 363
 00:32:08,340 --> 00:32:14,230
@@ -1851,8 +1851,8 @@ in our plans.
 
 371
 00:32:48,710 --> 00:32:53,730
->>Paul Irish: One of the other things -- Chrome
-DevTools actually uses -- you have heard of
+>>Paul Irish: One of the other things  &mdash; Chrome
+DevTools actually uses  &mdash; you have heard of
 
 372
 00:32:53,730 --> 00:32:59,929
@@ -1892,7 +1892,7 @@ other frameworks such as layers or stylus?
 379
 00:33:39,809 --> 00:33:46,740
 that what I showed was abstracted style support.
-It's all based -- as I mentioned, it is all
+It's all based  &mdash; as I mentioned, it is all
 
 380
 00:33:46,740 --> 00:33:52,909

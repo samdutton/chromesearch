@@ -13,7 +13,7 @@ disruptive media.
 
 4
 00:00:11,900 --> 00:00:12,630
-That's what your--
+That's what your &mdash;
 
 5
 00:00:12,630 --> 00:00:12,930
@@ -53,7 +53,7 @@ was not there today.
 
 13
 00:00:31,490 --> 00:00:32,200
-So tell me what--
+So tell me what &mdash;
 
 14
 00:00:32,200 --> 00:00:33,440
@@ -161,7 +161,7 @@ are browsers.
 
 36
 00:01:26,240 --> 00:01:26,570
-There's no--
+There's no &mdash;
 
 37
 00:01:26,570 --> 00:01:27,630
@@ -185,11 +185,11 @@ what we've had with the
 41
 00:01:36,690 --> 00:01:39,470
 internet is that with the web,
-we've had this kind of--
+we've had this kind of &mdash;
 
 42
 00:01:39,470 --> 00:01:39,790
-I don't know--
+I don't know &mdash;
 
 43
 00:01:39,790 --> 00:01:42,320
@@ -278,7 +278,7 @@ Yeah, sure.
 61
 00:02:22,740 --> 00:02:26,430
 ALEKSEY: But the web can make
-that accessible to--
+that accessible to &mdash;
 
 62
 00:02:26,430 --> 00:02:27,360
@@ -295,7 +295,7 @@ is kind of corporate closed
 
 65
 00:02:31,000 --> 00:02:32,780
-systems that have--
+systems that have &mdash;
 
 66
 00:02:32,780 --> 00:02:34,920
@@ -463,7 +463,7 @@ data, anything.
 
 101
 00:04:08,780 --> 00:04:10,910
-So a stack of really--
+So a stack of really &mdash;
 
 102
 00:04:10,910 --> 00:04:11,730
@@ -503,7 +503,7 @@ good thing in the first place?
 110
 00:04:22,079 --> 00:04:24,960
 I mean, they like Flash today,
-and maybe that-- so just for
+and maybe that &mdash; so just for
 
 111
 00:04:24,960 --> 00:04:26,510
@@ -527,11 +527,11 @@ really pleased to hear about
 115
 00:04:36,000 --> 00:04:38,710
 the project, in particular
-because it's--
+because it's &mdash;
 
 116
 00:04:38,710 --> 00:04:40,260
-you know, WebRTC provides--
+you know, WebRTC provides &mdash;
 
 117
 00:04:40,260 --> 00:04:43,700

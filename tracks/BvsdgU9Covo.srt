@@ -300,7 +300,7 @@ blog post that I wrote,
 65
 00:03:20,810 --> 00:03:23,870
 actually now it's almost
-two years--
+two years &mdash;
 
 66
 00:03:23,870 --> 00:03:24,970
@@ -366,8 +366,8 @@ Chromebook.
 
 79
 00:04:01,110 --> 00:04:04,360
-And if it's-- in our case,
-we'll show you Ubuntu--
+And if it's &mdash; in our case,
+we'll show you Ubuntu &mdash;
 
 80
 00:04:04,360 --> 00:04:09,500

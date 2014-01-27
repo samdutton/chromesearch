@@ -45,8 +45,8 @@ year on the Web. I was looking back at the
 
 10
 00:00:40,059 --> 00:00:46,710
-session that Pavel did with -- Paul Irish
-is in the house somewhere -- last year, and
+session that Pavel did with  &mdash; Paul Irish
+is in the house somewhere  &mdash; last year, and
 
 11
 00:00:46,710 --> 00:00:52,379
@@ -331,7 +331,7 @@ with a whip.
 67
 00:06:01,660 --> 00:06:06,000
 >>Sam Dutton: So you know, like one of the
-things -- another thing we've noticed over
+things  &mdash; another thing we've noticed over
 
 68
 00:06:06,000 --> 00:06:12,000
@@ -546,7 +546,7 @@ your source code into the devtools yourself.
 110
 00:10:12,390 --> 00:10:19,230
 Now, I'm going to debug this page, but before
-I -- I'm not going to open the devtools using
+I  &mdash; I'm not going to open the devtools using
 
 111
 00:10:19,230 --> 00:10:26,230
@@ -585,7 +585,7 @@ Okay, good.
 
 118
 00:11:10,339 --> 00:11:17,339
-Now, it's -- is it okay? Now it's time to
+Now, it's  &mdash; is it okay? Now it's time to
 debug. And as you can see, I open the devtools
 
 119
@@ -831,7 +831,7 @@ So let us search for canvas.
 167
 00:15:45,339 --> 00:15:52,339
 There are a lot of occurrences. Does not work.
-Or let us go through -- oh, the methods. I'm
+Or let us go through  &mdash; oh, the methods. I'm
 
 168
 00:15:52,920 --> 00:15:58,709
@@ -870,7 +870,7 @@ So let's see if you're right.
 
 175
 00:16:31,700 --> 00:16:38,700
-I'm pressing control -- I'm using the context
+I'm pressing control  &mdash; I'm using the context
 menu, control click in my case, and I'm looking
 
 176
@@ -996,7 +996,7 @@ for that. And my extension is installed and
 200
 00:18:54,170 --> 00:19:01,170
 configured. So that it mapped the particular
--- the URL into the particular location of
+ &mdash; the URL into the particular location of
 
 201
 00:19:03,650 --> 00:19:08,330
@@ -1005,7 +1005,7 @@ else just happens automatically.
 
 202
 00:19:08,330 --> 00:19:15,330
-Let's go and -- go ahead and see if the changes
+Let's go and  &mdash; go ahead and see if the changes
 are in place.
 
 203
@@ -1025,7 +1025,7 @@ that.
 
 206
 00:19:35,590 --> 00:19:40,309
-now that's the -- that's the productivity
+now that's the  &mdash; that's the productivity
 story. We can jump into the source file, we
 
 207
@@ -1061,7 +1061,7 @@ debugging in WebKit, and we are really pleased
 213
 00:20:14,230 --> 00:20:21,230
 to see this code being used across the industry
-now. Because there is no better way to -- to
+now. Because there is no better way to  &mdash; to
 
 214
 00:20:21,750 --> 00:20:28,640
@@ -1111,7 +1111,7 @@ you need to go to settings.
 223
 00:21:01,710 --> 00:21:08,030
 >>Sam Dutton: And from there you can go to
---
+ &mdash;
 
 224
 00:21:08,030 --> 00:21:12,520
@@ -1130,7 +1130,7 @@ That's all you need to do on Chrome on the
 
 227
 00:21:23,840 --> 00:21:30,840
-device. And -- and now we have installed the
+device. And  &mdash; and now we have installed the
 Android SDK on the desktop and then run port
 
 228
@@ -1295,7 +1295,7 @@ developer tools running against the mobile.
 
 260
 00:24:35,060 --> 00:24:39,750
--- I guess looking at the other side of it,
+ &mdash; I guess looking at the other side of it,
 one thing that we've learned after kinda 12
 
 261
@@ -1330,7 +1330,7 @@ over to YouTube. Let's open it over here.
 
 267
 00:25:17,559 --> 00:25:24,559
-There we go. So we've got -- yeah, we've got
+There we go. So we've got  &mdash; yeah, we've got
 the desktop version there, and the remote
 
 268
@@ -1340,17 +1340,17 @@ to the settings in the developer tools. And
 
 269
 00:25:37,289 --> 00:25:44,289
-if I go into there, and -- and let's -- let's
+if I go into there, and  &mdash; and let's  &mdash; let's
 go to the user agent panel there. You can
 
 270
 00:25:44,730 --> 00:25:50,510
 see the tabs now in the settings. And if I
-click on user agent, now what's -- it's a
+click on user agent, now what's  &mdash; it's a
 
 271
 00:25:50,510 --> 00:25:52,230
-Galaxy Nexus --
+Galaxy Nexus  &mdash;
 >>Pavel Feldman: It's a Galaxy Nexus, yes.
 
 272
@@ -1360,13 +1360,13 @@ Does anyone have one?
 
 273
 00:25:58,330 --> 00:26:05,330
-And -- and that's -- let's refresh that. You
+And  &mdash; and that's  &mdash; let's refresh that. You
 can see we've got a really accurate representation
 
 274
 00:26:07,220 --> 00:26:14,220
 of what it actually looks like on the mobile
-device. And let's just -- in fact, this little
+device. And let's just  &mdash; in fact, this little
 
 275
 00:26:15,030 --> 00:26:19,600
@@ -1405,13 +1405,13 @@ devices is touch. And if we go to this example,
 
 282
 00:26:54,760 --> 00:27:00,000
-it's -- it gives us, you know, the ability
+it's  &mdash; it gives us, you know, the ability
 to see how touch works. The only problem being
 
 283
 00:27:00,000 --> 00:27:01,410
---
->>Pavel Feldman: Override. You --
+ &mdash;
+>>Pavel Feldman: Override. You  &mdash;
 
 284
 00:27:01,410 --> 00:27:04,600
@@ -1476,7 +1476,7 @@ that really push the limits of the CPU and
 296
 00:28:03,669 --> 00:28:10,669
 GPU and memory and so on and, you know, in
-that context, in particular, how do we -- how
+that context, in particular, how do we  &mdash; how
 
 297
 00:28:10,679 --> 00:28:17,070
@@ -1505,7 +1505,7 @@ on the page and, you know, the thing was coming
 
 302
 00:28:41,450 --> 00:28:45,830
-at that problem -- you know, there are a million
+at that problem  &mdash; you know, there are a million
 things it could have been. And what I wanted
 
 303
@@ -1595,7 +1595,7 @@ picture of what's happening each time there's
 
 320
 00:30:08,400 --> 00:30:11,700
-a slowness --
+a slowness  &mdash;
 >>Pavel Feldman: I give up. So we've gotten
 
 321
@@ -1680,7 +1680,7 @@ something very beautiful.
 
 337
 00:31:40,950 --> 00:31:46,830
--- yeah, some there's some heavy duty CSS
+ &mdash; yeah, some there's some heavy duty CSS
 in there, a lot of gradients.
 
 338
@@ -1845,7 +1845,7 @@ use the devtools to deal with that. And I
 
 370
 00:34:25,429 --> 00:34:29,800
-was thinking of -- you know, the prettyprint
+was thinking of  &mdash; you know, the prettyprint
 function itself. What I have noticed with
 
 371
@@ -2075,7 +2075,7 @@ fix, and the most common source of that was
 
 416
 00:38:53,690 --> 00:38:57,330
-problematic -- in fact, it was problematic
+problematic  &mdash; in fact, it was problematic
 usage of event listeners.
 
 417
@@ -2090,7 +2090,7 @@ some tools for that.
 
 419
 00:39:06,040 --> 00:39:11,070
-a simple example of the memory leak, and --
+a simple example of the memory leak, and  &mdash;
 >>Sam Dutton: That's a lovely website.
 
 420
@@ -2181,7 +2181,7 @@ the actual location of that object. And for
 437
 00:41:15,500 --> 00:41:22,500
 that we turn to the profiler, and in the profiler,
-I'm going to -- let me go back to the page.
+I'm going to  &mdash; let me go back to the page.
 
 438
 00:41:23,010 --> 00:41:30,010
@@ -2211,7 +2211,7 @@ are date objects. Those are Chrome events.
 443
 00:41:58,390 --> 00:42:04,280
 So everything is grouped in here. For each
-of the objects I can see -- for each of the
+of the objects I can see  &mdash; for each of the
 
 444
 00:42:04,280 --> 00:42:10,099
@@ -2265,7 +2265,7 @@ in here. So from this panel you can jump into
 
 454
 00:43:16,720 --> 00:43:22,160
-the source -- into the console, into the running
+the source  &mdash; into the console, into the running
 object and explore it there. Let's see what
 
 455
@@ -2446,7 +2446,7 @@ am ambitious and I kind of think, okay, let
 490
 00:46:37,700 --> 00:46:44,700
 me change things here, and it will be a Google
-search, supersearch -- it didn't apply. Why?
+search, supersearch  &mdash; it didn't apply. Why?
 
 491
 00:46:46,220 --> 00:46:53,220
@@ -2465,7 +2465,7 @@ Okay. Good. Then I have more ambitious, I
 
 494
 00:47:02,990 --> 00:47:09,640
-think. Okay. So that color is not -- I want
+think. Okay. So that color is not  &mdash; I want
 a red one. And then I think, okay, this Nexus
 
 495
@@ -2495,7 +2495,7 @@ all.
 
 500
 00:47:30,920 --> 00:47:37,920
-okay, I've done a lot -- why can't I delete
+okay, I've done a lot  &mdash; why can't I delete
 it? Come on, Google, where is it?
 
 501
@@ -2535,7 +2535,7 @@ you're there, someone asked for this, do command
 
 508
 00:48:26,570 --> 00:48:30,300
--- what is it, command plus.
+ &mdash; what is it, command plus.
 >>Pavel Feldman: No, I won't show you. I'll
 
 509
@@ -2586,7 +2586,7 @@ us, thank you very much. Indeed.
 518
 00:49:27,739 --> 00:49:34,739
 [ APPLAUSE ]
->>Sam Dutton: We've got about -- yeah, about
+>>Sam Dutton: We've got about  &mdash; yeah, about
 
 519
 00:49:35,510 --> 00:49:40,740
@@ -2641,16 +2641,16 @@ Web socket?
 529
 00:50:23,760 --> 00:50:30,760
 the packets on the Web socket.
-And let me show it to you, so that's -- okay.
+And let me show it to you, so that's  &mdash; okay.
 
 530
 00:50:33,060 --> 00:50:37,870
-I'm going to use a -- we are using those,
+I'm going to use a  &mdash; we are using those,
 right, for the devtool itself, where are you
 
 531
 00:50:37,870 --> 00:50:44,609
--- where are you?
+ &mdash; where are you?
 Okay. So I'll need to do devtool on devtool
 
 532
@@ -2725,7 +2725,7 @@ for that.
 
 546
 00:52:07,059 --> 00:52:10,349
->>> So do these techniques -- I mean the kind
+>>> So do these techniques  &mdash; I mean the kind
 of examples that you showed were a little
 
 547
@@ -2766,7 +2766,7 @@ client so we're working with them a lot. These
 554
 00:52:44,560 --> 00:52:49,660
 three snapshot techniques with the heap profiling
-was in fact -- those were discovered while
+was in fact  &mdash; those were discovered while
 
 555
 00:52:49,660 --> 00:52:55,280
@@ -2791,7 +2791,7 @@ bugger.
 559
 00:53:06,480 --> 00:53:13,420
 CSS key frames, the CSS animation key frames?
-Because you can -- you can see the define
+Because you can  &mdash; you can see the define
 
 560
 00:53:13,420 --> 00:53:18,109
@@ -2946,7 +2946,7 @@ was indeed a jank in the repaint.
 590
 00:55:54,460 --> 00:56:00,140
 >>> Thank you.
->>> Is there any plans on integrating a -- like
+>>> Is there any plans on integrating a  &mdash; like
 
 591
 00:56:00,140 --> 00:56:07,140
@@ -2970,13 +2970,13 @@ might extend those APIs if they are not sufficient
 
 595
 00:56:24,670 --> 00:56:31,619
-for achieving your goals. So we -- yeah, we
-are -- we are relying upon the third parties
+for achieving your goals. So we  &mdash; yeah, we
+are  &mdash; we are relying upon the third parties
 
 596
 00:56:31,619 --> 00:56:34,809
 to provide the functional like that.
->>> All right, so there's no -- right now
+>>> All right, so there's no  &mdash; right now
 
 597
 00:56:34,809 --> 00:56:38,869
@@ -3025,7 +3025,7 @@ just loading it in and parsing it still is
 
 606
 00:57:16,329 --> 00:57:21,089
-pretty pokey, it's many -- I'm just curious
+pretty pokey, it's many  &mdash; I'm just curious
 how optimized that stuff is and how much you
 
 607
@@ -3095,7 +3095,7 @@ a solution that works against node, because
 
 620
 00:58:28,390 --> 00:58:33,690
-node supports -- exposes the V8 debugging
+node supports  &mdash; exposes the V8 debugging
 protocol. There's a project called Chrome
 
 621

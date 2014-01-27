@@ -126,7 +126,7 @@ the project.
 28
 00:01:36,960 --> 00:01:39,150
 And we didn't actually get to
-tell you anything about--
+tell you anything about &mdash;
 
 29
 00:01:39,150 --> 00:01:40,800
@@ -342,7 +342,7 @@ of different APIs
 
 73
 00:03:17,110 --> 00:03:18,110
-like drag and drop--
+like drag and drop &mdash;
 
 74
 00:03:18,110 --> 00:03:18,530
@@ -360,7 +360,7 @@ you also use a protocol
 
 77
 00:03:24,042 --> 00:03:25,400
-handler or--
+handler or &mdash;
 
 78
 00:03:25,400 --> 00:03:27,527
@@ -486,7 +486,7 @@ to bring images into this
 104
 00:04:19,820 --> 00:04:23,830
 application and then do some
-magic with it once--
+magic with it once &mdash;
 
 105
 00:04:23,830 --> 00:04:25,200
@@ -1038,7 +1038,7 @@ channels, but like the option,
 
 222
 00:08:41,250 --> 00:08:42,876
-in theory, is that--
+in theory, is that &mdash;
 
 223
 00:08:42,876 --> 00:08:43,690
@@ -1092,7 +1092,7 @@ like an overview of what this
 234
 00:09:04,270 --> 00:09:06,730
 actually means and what's
-happened is--
+happened is &mdash;
 
 235
 00:09:06,730 --> 00:09:09,970
@@ -1116,7 +1116,7 @@ visits an RSS feed, whether
 
 239
 00:09:19,970 --> 00:09:20,890
-it's the BBC news--
+it's the BBC news &mdash;
 
 240
 00:09:20,890 --> 00:09:21,770
@@ -1822,7 +1822,7 @@ do it, but I think right now
 388
 00:14:58,120 --> 00:15:01,400
 it's RSS feeds, Atom feeds,
-things that people--
+things that people &mdash;
 
 389
 00:15:01,400 --> 00:15:04,560
@@ -2411,7 +2411,7 @@ backwards and forwards.
 512
 00:19:48,780 --> 00:19:51,460
 PAUL KINLAN: So when you were
-passing microformat data--
+passing microformat data &mdash;
 
 513
 00:19:51,460 --> 00:19:51,820
@@ -2419,7 +2419,7 @@ GLENN JONES: Yeah.
 
 514
 00:19:51,820 --> 00:19:52,150
-So--
+So &mdash;
 
 515
 00:19:52,150 --> 00:19:52,670
@@ -2681,7 +2681,7 @@ with a two JSON
 
 570
 00:22:07,850 --> 00:22:09,310
-method or is that--
+method or is that &mdash;
 
 571
 00:22:09,310 --> 00:22:11,210
@@ -2753,7 +2753,7 @@ that into microdata and just
 585
 00:22:42,160 --> 00:22:43,450
 return the JSON,
-that would be--
+that would be &mdash;
 
 586
 00:22:43,450 --> 00:22:44,050
@@ -2781,7 +2781,7 @@ of interesting, though
 
 591
 00:22:54,900 --> 00:22:55,810
-because I can see how--
+because I can see how &mdash;
 
 592
 00:22:55,810 --> 00:22:57,100
@@ -2947,7 +2947,7 @@ and it will
 
 626
 00:24:19,120 --> 00:24:20,630
-tell you whether this--
+tell you whether this &mdash;
 
 627
 00:24:20,630 --> 00:24:22,460
@@ -3014,7 +3014,7 @@ I kind of got some ideas.
 641
 00:24:46,570 --> 00:24:48,940
 Yeah, I actually wouldn't mind
-trying to do something like--
+trying to do something like &mdash;
 
 642
 00:24:48,940 --> 00:24:50,730
@@ -3296,7 +3296,7 @@ delivery mechanism.
 701
 00:27:08,680 --> 00:27:11,045
 So it's kind of interesting
-that we should--
+that we should &mdash;
 
 702
 00:27:11,045 --> 00:27:16,950
@@ -3389,7 +3389,7 @@ this talk about Origin.
 721
 00:28:02,900 --> 00:28:05,010
 And what they're trying
-to say is that--
+to say is that &mdash;
 
 722
 00:28:05,010 --> 00:28:08,040
@@ -3529,7 +3529,7 @@ people running white and black
 
 750
 00:29:17,580 --> 00:29:20,020
-lists for--
+lists for &mdash;
 
 751
 00:29:20,020 --> 00:29:21,710
@@ -3572,7 +3572,7 @@ could give them that.
 
 759
 00:29:39,210 --> 00:29:39,580
-Because if--
+Because if &mdash;
 
 760
 00:29:39,580 --> 00:29:40,990
@@ -3685,7 +3685,7 @@ mediator that sits in the
 
 783
 00:30:31,030 --> 00:30:33,710
-middle, and isn't sort of a--
+middle, and isn't sort of a &mdash;
 
 784
 00:30:33,710 --> 00:30:36,150
@@ -4269,7 +4269,7 @@ really powerful.
 906
 00:35:28,520 --> 00:35:30,110
 And that's the one that
-will be kind of--
+will be kind of &mdash;
 
 907
 00:35:30,110 --> 00:35:33,550
@@ -4568,7 +4568,7 @@ the context menu as well.
 
 970
 00:37:53,612 --> 00:37:54,110
-You can use--
+You can use &mdash;
 
 971
 00:37:54,110 --> 00:37:56,260
@@ -4743,7 +4743,7 @@ your address book.
 
 1007
 00:39:13,860 --> 00:39:16,450
-Or share this to-- there's
+Or share this to &mdash; there's
 different types of actions.
 
 1008
@@ -5238,7 +5238,7 @@ to support that?
 1112
 00:43:01,830 --> 00:43:04,630
 So I kind of answered that
-before where we didn't have--
+before where we didn't have &mdash;
 
 1113
 00:43:04,630 --> 00:43:07,385
@@ -5532,7 +5532,7 @@ all that type of stuff.
 1174
 00:45:27,813 --> 00:45:30,560
 So I can't imagine some other
-intent using this type of--
+intent using this type of &mdash;
 
 1175
 00:45:30,560 --> 00:45:30,760
@@ -5884,7 +5884,7 @@ closed ecosystem as
 
 1250
 00:48:19,780 --> 00:48:21,160
-opposed inside the Chrome--
+opposed inside the Chrome &mdash;
 
 1251
 00:48:21,160 --> 00:48:22,990

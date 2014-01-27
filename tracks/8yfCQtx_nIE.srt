@@ -258,7 +258,7 @@ code and I made a little
 
 58
 00:02:54,910 --> 00:02:56,045
-birthday card for someone--
+birthday card for someone &mdash;
 
 59
 00:02:56,045 --> 00:02:56,680
@@ -316,7 +316,7 @@ web store a while ago.
 
 71
 00:03:25,020 --> 00:03:26,390
-And so this is--
+And so this is &mdash;
 
 72
 00:03:26,390 --> 00:03:30,380
@@ -408,7 +408,7 @@ a big application.
 91
 00:04:18,279 --> 00:04:23,730
 You have a menu with
-these fly-out--
+these fly-out &mdash;
 
 92
 00:04:23,730 --> 00:04:24,880
@@ -603,7 +603,7 @@ MICHEAL DEAL: Sure.
 134
 00:06:09,140 --> 00:06:12,300
 So the MIDI.js project
-allows you to--
+allows you to &mdash;
 
 135
 00:06:12,300 --> 00:06:14,720
@@ -616,7 +616,7 @@ sound fonts into base64.
 
 137
 00:06:17,390 --> 00:06:19,260
-So you'll take a sound font--
+So you'll take a sound font &mdash;
 
 138
 00:06:19,260 --> 00:06:20,440
@@ -662,7 +662,7 @@ resources out there where you
 147
 00:06:44,530 --> 00:06:51,050
 can buy sound fonts and
-so you can really--
+so you can really &mdash;
 
 148
 00:06:51,050 --> 00:06:52,890
@@ -689,7 +689,7 @@ question again?
 153
 00:07:02,950 --> 00:07:05,050
 PAUL IRISH: I was just trying
-to understand--
+to understand &mdash;
 
 154
 00:07:05,050 --> 00:07:08,200
@@ -949,7 +949,7 @@ is a Chrome experiment.
 
 211
 00:09:39,280 --> 00:09:39,800
-And so--
+And so &mdash;
 
 212
 00:09:39,800 --> 00:09:40,170
@@ -1069,12 +1069,12 @@ description of what
 
 237
 00:10:51,590 --> 00:10:52,480
-Events.js--
+Events.js &mdash;
 
 238
 00:10:52,480 --> 00:10:55,930
 as it is pretty generically
-named--
+named &mdash;
 
 239
 00:10:55,930 --> 00:10:57,925
@@ -1148,7 +1148,7 @@ there you go.
 
 254
 00:11:40,580 --> 00:11:41,590
-PAUL IRISH: Yeah, so--
+PAUL IRISH: Yeah, so &mdash;
 
 255
 00:11:41,590 --> 00:11:42,720
@@ -1176,7 +1176,7 @@ tried that yet.
 260
 00:11:47,780 --> 00:11:49,460
 But I definitely will
-give that a shot--
+give that a shot &mdash;
 
 261
 00:11:49,460 --> 00:11:50,780
@@ -1911,7 +1911,7 @@ a more recent project that
 423
 00:19:24,280 --> 00:19:27,410
 you've been working on
-recently called--
+recently called &mdash;
 
 424
 00:19:27,410 --> 00:19:30,820
@@ -2269,7 +2269,7 @@ individually.
 
 501
 00:23:12,170 --> 00:23:13,430
-It uses the--
+It uses the &mdash;
 
 502
 00:23:13,430 --> 00:23:15,965
@@ -2383,7 +2383,7 @@ that stuff out there for us.
 
 527
 00:24:14,500 --> 00:24:16,150
-PAUL IRISH: So--
+PAUL IRISH: So &mdash;
 
 528
 00:24:16,150 --> 00:24:20,720
@@ -3052,7 +3052,7 @@ So excellent stuff.
 
 675
 00:30:55,000 --> 00:30:55,973
-So I encourage everyone to--
+So I encourage everyone to &mdash;
 
 676
 00:30:55,973 --> 00:30:56,680

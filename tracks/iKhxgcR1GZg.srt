@@ -203,7 +203,7 @@ across today's browsers.
 44
 00:01:36,200 --> 00:01:37,640
 ALEXIS MOUSSINE-POUCHKINE:
-Which would be probably--
+Which would be probably &mdash;
 
 45
 00:01:37,640 --> 00:01:39,848
@@ -236,7 +236,7 @@ about generating JavaScript.
 
 51
 00:01:50,180 --> 00:01:50,680
-But--
+But &mdash;
 
 52
 00:01:50,680 --> 00:01:51,730
@@ -538,7 +538,7 @@ is web applications.
 115
 00:03:59,980 --> 00:04:01,720
 But not only you can
-go-- we'll probably
+go &mdash; we'll probably
 
 116
 00:04:01,720 --> 00:04:03,430
@@ -562,7 +562,7 @@ developers today,
 120
 00:04:08,630 --> 00:04:11,389
 web developers, maybe service
-side, trying to get into--
+side, trying to get into &mdash;
 
 121
 00:04:11,389 --> 00:04:13,680
@@ -1017,7 +1017,7 @@ stage talking about.
 215
 00:07:55,620 --> 00:07:57,280
 How to build an
-application with--
+application with &mdash;
 
 216
 00:07:57,280 --> 00:08:00,480
@@ -1200,7 +1200,7 @@ as everybody else that's
 
 253
 00:09:30,723 --> 00:09:33,080
-writing in Dart-- more
+writing in Dart &mdash; more
 structure to your code.
 
 254
@@ -1287,7 +1287,7 @@ line, service side?
 
 271
 00:10:17,444 --> 00:10:19,860
-Does it even make sense-- it's
+Does it even make sense &mdash; it's
 a general purpose language,
 
 272
@@ -1794,7 +1794,7 @@ MOUSSINE-POUCHKINE: Great.
 
 377
 00:14:22,120 --> 00:14:23,890
-So when can we--
+So when can we &mdash;
 are you starting
 
 378
@@ -1851,7 +1851,7 @@ off the [INAUDIBLE] version.
 
 389
 00:14:46,990 --> 00:14:49,634
-Talking to the Chrome guys--
+Talking to the Chrome guys &mdash;
 we are the Chrome guys.
 
 390

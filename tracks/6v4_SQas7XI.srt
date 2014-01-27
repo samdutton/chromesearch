@@ -62,7 +62,7 @@ hi and introduce yourself.
 14
 00:00:44,860 --> 00:00:47,320
 Paul, do you want
-to say hi and--
+to say hi and &mdash;
 
 15
 00:00:47,320 --> 00:00:47,480
@@ -214,11 +214,11 @@ December 21 at 11:11 UTC, we
 48
 00:01:56,810 --> 00:02:01,180
 are now two days, 18 hours, six
-minutes, and 56 seconds--
+minutes, and 56 seconds &mdash;
 
 49
 00:02:01,180 --> 00:02:03,450
-oh, 55 seconds-- oh, 50-- oh--
+oh, 55 seconds &mdash; oh, 50 &mdash; oh &mdash;
 
 50
 00:02:03,450 --> 00:02:04,790
@@ -250,7 +250,7 @@ left between us, Paul.
 56
 00:02:14,760 --> 00:02:18,160
 So if I don't see you
-next week, Paul--
+next week, Paul &mdash;
 
 57
 00:02:18,160 --> 00:02:23,690
@@ -526,7 +526,7 @@ experimental APIs just yet,
 
 116
 00:04:24,150 --> 00:04:25,440
-because-- well, you've
+because &mdash; well, you've
 never been able to.
 
 117
@@ -560,16 +560,16 @@ that if I go search for one
 123
 00:04:39,810 --> 00:04:41,480
 of the apps that you've
-uploaded, Paul--
+uploaded, Paul &mdash;
 
 124
 00:04:41,480 --> 00:04:42,170
-actually, where--
+actually, where &mdash;
 
 125
 00:04:42,170 --> 00:04:44,570
 Paul, are you on this
-side of me or are--
+side of me or are &mdash;
 
 126
 00:04:44,570 --> 00:04:45,640
@@ -577,11 +577,11 @@ you're on one side of me.
 
 127
 00:04:45,640 --> 00:04:46,420
-So here--
+So here &mdash;
 
 128
 00:04:46,420 --> 00:04:49,230
-Paul-- that way.
+Paul &mdash; that way.
 
 129
 00:04:49,230 --> 00:04:51,960
@@ -600,11 +600,11 @@ Store dot something,
 
 132
 00:04:58,440 --> 00:04:59,510
-dot something, dot--
+dot something, dot &mdash;
 
 133
 00:04:59,510 --> 00:05:00,470
-really big--
+really big &mdash;
 
 134
 00:05:00,470 --> 00:05:00,870
@@ -613,7 +613,7 @@ hang on.
 135
 00:05:00,870 --> 00:05:02,040
 Let me make sure
-I'm on screen--
+I'm on screen &mdash;
 
 136
 00:05:02,040 --> 00:05:05,980
@@ -627,7 +627,7 @@ if you want to share
 
 138
 00:05:08,040 --> 00:05:09,510
-these with your friends--
+these with your friends &mdash;
 
 139
 00:05:09,510 --> 00:05:13,030
@@ -694,7 +694,7 @@ thing I want to point out for
 
 152
 00:05:37,070 --> 00:05:39,130
-folks who are watching today--
+folks who are watching today &mdash;
 
 153
 00:05:39,130 --> 00:05:44,020
@@ -808,12 +808,12 @@ build as a normal developer.
 
 177
 00:06:24,500 --> 00:06:25,970
-But it's really cool because--
+But it's really cool because &mdash;
 
 178
 00:06:25,970 --> 00:06:27,460
 let's have a look at something
-that's not-- shouldn't
+that's not &mdash; shouldn't
 
 179
 00:06:27,460 --> 00:06:28,865
@@ -831,7 +831,7 @@ the WebView.
 182
 00:06:31,860 --> 00:06:34,700
 And when the WebView
-works, which--
+works, which &mdash;
 
 183
 00:06:34,700 --> 00:06:35,550
@@ -937,7 +937,7 @@ remote images.
 
 206
 00:07:05,460 --> 00:07:07,140
-And I'll show you-- well,
+And I'll show you &mdash; well,
 I say I'll show you.
 
 207
@@ -1131,7 +1131,7 @@ Exactly right.
 
 249
 00:08:33,659 --> 00:08:34,909
-So let me--
+So let me &mdash;
 
 250
 00:08:34,909 --> 00:08:37,100
@@ -1147,7 +1147,7 @@ get it in a minute.
 
 253
 00:08:39,070 --> 00:08:40,150
-PETE LEPAGE: We can--
+PETE LEPAGE: We can &mdash;
 
 254
 00:08:40,150 --> 00:08:43,070
@@ -1262,8 +1262,8 @@ all over the place.
 
 278
 00:09:39,190 --> 00:09:42,820
-And we replaced it-- if we
-get to the right place--
+And we replaced it &mdash; if we
+get to the right place &mdash;
 
 279
 00:09:42,820 --> 00:09:44,050
@@ -1331,7 +1331,7 @@ access it as well.
 
 293
 00:10:11,360 --> 00:10:12,020
-So--
+So &mdash;
 
 294
 00:10:12,020 --> 00:10:12,360
@@ -1339,16 +1339,16 @@ PETE LEPAGE: Oh, interesting.
 
 295
 00:10:12,360 --> 00:10:12,430
-So--
+So &mdash;
 
 296
 00:10:12,430 --> 00:10:13,340
 PAUL KINLAN: Every
-time you ac--
+time you ac &mdash;
 
 297
 00:10:13,340 --> 00:10:13,660
-PETE LEPAGE: Does it--
+PETE LEPAGE: Does it &mdash;
 
 298
 00:10:13,660 --> 00:10:15,340
@@ -1368,7 +1368,7 @@ nice things about caching.
 301
 00:10:19,230 --> 00:10:22,200
 So there's cache headers that
-say cache is only--
+say cache is only &mdash;
 
 302
 00:10:22,200 --> 00:10:22,510
@@ -1414,11 +1414,11 @@ you're online and offline.
 311
 00:10:38,170 --> 00:10:41,450
 And if you have requests for
-images, like in the queue--
+images, like in the queue &mdash;
 
 312
 00:10:41,450 --> 00:10:42,680
-say, 100 requests--
+say, 100 requests &mdash;
 
 313
 00:10:42,680 --> 00:10:44,250
@@ -1459,11 +1459,11 @@ PAUL KINLAN: --that you need.
 
 321
 00:10:56,790 --> 00:10:57,720
-So it's kind of like--
+So it's kind of like &mdash;
 
 322
 00:10:57,720 --> 00:10:58,160
-PETE LEPAGE: This is the one--
+PETE LEPAGE: This is the one &mdash;
 
 323
 00:10:58,160 --> 00:10:58,550
@@ -1509,7 +1509,7 @@ consume a large amount of data
 332
 00:11:15,930 --> 00:11:19,410
 that sits locally on the user's
-computers or sits--
+computers or sits &mdash;
 
 333
 00:11:19,410 --> 00:11:21,910
@@ -1702,7 +1702,7 @@ we encode the source.
 374
 00:12:52,000 --> 00:12:55,570
 And then what happens
-is the framework--
+is the framework &mdash;
 
 375
 00:12:55,570 --> 00:12:56,500
@@ -1766,7 +1766,7 @@ placeholder images.
 
 388
 00:13:20,190 --> 00:13:22,900
-So you might have--
+So you might have &mdash;
 
 389
 00:13:22,900 --> 00:13:27,090
@@ -1996,7 +1996,7 @@ PETE LEPAGE: Yeah, definitely.
 438
 00:14:59,660 --> 00:15:02,410
 PAUL KINLAN: Do you want to
-go onto my next app, or--
+go onto my next app, or &mdash;
 
 439
 00:15:02,410 --> 00:15:03,810
@@ -2168,7 +2168,7 @@ my app up on screen.
 
 474
 00:16:37,560 --> 00:16:38,830
-You'll see that--
+You'll see that &mdash;
 
 475
 00:16:38,830 --> 00:16:41,690
@@ -2224,7 +2224,7 @@ them with semicolons.
 486
 00:17:08,220 --> 00:17:11,050
 I can put in all of the links
-to our moderator--
+to our moderator &mdash;
 
 487
 00:17:11,050 --> 00:17:12,270
@@ -2238,7 +2238,7 @@ styles I want.
 489
 00:17:15,010 --> 00:17:19,000
 And then what I did was,
-it just uses--
+it just uses &mdash;
 
 490
 00:17:19,000 --> 00:17:23,710
@@ -2275,7 +2275,7 @@ on my desktop.
 
 497
 00:17:44,970 --> 00:17:48,960
-And here in a sec--
+And here in a sec &mdash;
 
 498
 00:17:48,960 --> 00:17:50,520
@@ -2379,7 +2379,7 @@ He was like, that's awesome.
 520
 00:18:39,340 --> 00:18:42,610
 But I need one that's just
-a nice simple one--
+a nice simple one &mdash;
 
 521
 00:18:42,610 --> 00:18:45,430
@@ -2421,7 +2421,7 @@ PAUL KINLAN: Yeah, cool.
 
 529
 00:19:01,970 --> 00:19:03,710
-So this one is from--
+So this one is from &mdash;
 
 530
 00:19:03,710 --> 00:19:05,520
@@ -2494,7 +2494,7 @@ PAUL KINLAN: It's pretty nice.
 545
 00:19:33,940 --> 00:19:37,020
 You do this thing, and you
-put this in, and--
+put this in, and &mdash;
 
 546
 00:19:37,020 --> 00:19:39,040
@@ -2521,7 +2521,7 @@ a problem we've got
 
 551
 00:19:44,090 --> 00:19:47,540
-inside-- generally inside Chrome
+inside &mdash; generally inside Chrome
 Apps, is that it's
 
 552
@@ -2550,11 +2550,11 @@ bug filed on that.
 557
 00:19:58,840 --> 00:20:03,090
 If there's not a bug filed,
-please go file one--
+please go file one &mdash;
 
 558
 00:20:03,090 --> 00:20:04,720
-new.crbug.com--
+new.crbug.com &mdash;
 
 559
 00:20:04,720 --> 00:20:06,790
@@ -2563,7 +2563,7 @@ we can get it.
 
 560
 00:20:06,790 --> 00:20:09,372
-And if it's not filed-- or if
+And if it's not filed &mdash; or if
 it is filed, just make sure
 
 561
@@ -2785,7 +2785,7 @@ normal HTML.
 
 608
 00:21:52,960 --> 00:21:53,720
-The source, as well--
+The source, as well &mdash;
 you probably
 
 609
@@ -2912,7 +2912,7 @@ links and everything.
 637
 00:22:48,560 --> 00:22:53,170
 It's that I wanted to integrate
-with the actual--
+with the actual &mdash;
 
 638
 00:22:53,170 --> 00:22:54,100
@@ -2980,7 +2980,7 @@ exposed that.
 
 652
 00:23:22,000 --> 00:23:24,080
-It's really--
+It's really &mdash;
 
 653
 00:23:24,080 --> 00:23:26,510
@@ -3207,11 +3207,11 @@ PETE LEPAGE: Yeah.
 700
 00:25:07,120 --> 00:25:10,450
 PAUL KINLAN: You use the
-normal Google APIs--
+normal Google APIs &mdash;
 
 701
 00:25:10,450 --> 00:25:13,530
-code.google.com/apis/console--
+code.google.com/apis/console &mdash;
 
 702
 00:25:13,530 --> 00:25:15,290
@@ -3229,7 +3229,7 @@ an OAuth 2 client ID.
 
 705
 00:25:21,880 --> 00:25:25,652
-Give it a name-- so
+Give it a name &mdash; so
 test x, maybe.
 
 706
@@ -3239,7 +3239,7 @@ That's a good name.
 707
 00:25:27,170 --> 00:25:29,820
 And you normally have a list of
-options-- web application,
+options &mdash; web application,
 
 708
 00:25:29,820 --> 00:25:32,490
@@ -3277,7 +3277,7 @@ ID in.
 715
 00:25:43,830 --> 00:25:46,110
 So if you had your
-extension ID--
+extension ID &mdash;
 
 716
 00:25:46,110 --> 00:25:47,360
@@ -3656,12 +3656,12 @@ PETE LEPAGE: All right.
 
 798
 00:28:34,720 --> 00:28:38,060
-So James from Ontario--
+So James from Ontario &mdash;
 
 799
 00:28:38,060 --> 00:28:40,880
 my hometown, or, I guess,
-my home province--
+my home province &mdash;
 
 800
 00:28:40,880 --> 00:28:43,910
@@ -3748,7 +3748,7 @@ a little bit different.
 
 818
 00:29:28,790 --> 00:29:31,040
-Paul, are you--
+Paul, are you &mdash;
 
 819
 00:29:31,040 --> 00:29:31,400
@@ -3785,7 +3785,7 @@ running Chrome.
 826
 00:29:39,940 --> 00:29:40,820
 PAUL KINLAN: You
-should never--
+should never &mdash;
 
 827
 00:29:40,820 --> 00:29:42,980
@@ -3905,7 +3905,7 @@ playing games or video on
 851
 00:30:38,460 --> 00:30:41,420
 Facebook, is sometimes
-it works--
+it works &mdash;
 
 852
 00:30:41,420 --> 00:30:44,890
@@ -3964,7 +3964,7 @@ PETE LEPAGE: Right.
 
 864
 00:31:06,090 --> 00:31:07,610
-We might go back a couple--
+We might go back a couple &mdash;
 
 865
 00:31:07,610 --> 00:31:08,870
@@ -4147,16 +4147,16 @@ coincidence.
 
 903
 00:32:48,070 --> 00:32:50,140
-If you look at the Facebook--
+If you look at the Facebook &mdash;
 sorry, if
 
 904
 00:32:50,140 --> 00:32:51,560
-you look at the friend--
+you look at the friend &mdash;
 
 905
 00:32:51,560 --> 00:32:52,620
-Foursquare application--
+Foursquare application &mdash;
 
 906
 00:32:52,620 --> 00:32:54,325
@@ -4310,7 +4310,7 @@ in the new year.
 
 939
 00:34:03,210 --> 00:34:05,330
-We'll probably start back--
+We'll probably start back &mdash;
 
 940
 00:34:05,330 --> 00:34:08,969
@@ -4324,7 +4324,7 @@ our Chrome Apps Office Hours.
 942
 00:34:11,330 --> 00:34:15,780
 We've got some really exciting
-stuff planned for 2013--
+stuff planned for 2013 &mdash;
 
 943
 00:34:15,780 --> 00:34:18,500

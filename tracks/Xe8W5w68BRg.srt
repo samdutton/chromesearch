@@ -1053,7 +1053,7 @@ this new value.
 
 229
 00:09:49,860 --> 00:09:51,200
-So--
+So &mdash;
 
 230
 00:09:51,200 --> 00:09:53,290
@@ -2091,7 +2091,7 @@ we're going to
 
 452
 00:20:25,000 --> 00:20:26,850
-take it back to--
+take it back to &mdash;
 
 453
 00:20:26,850 --> 00:20:28,350
@@ -2218,7 +2218,7 @@ target, and the width of 3.0.
 480
 00:22:02,000 --> 00:22:05,940
 The key part here, though, is
-I need-- so every rule needs
+I need &mdash; so every rule needs
 
 481
 00:22:05,940 --> 00:22:07,260
@@ -2779,7 +2779,7 @@ should be applied for a
 601
 00:27:55,070 --> 00:27:59,960
 certain number of days, is
-that controlling when--
+that controlling when &mdash;
 
 602
 00:27:59,960 --> 00:28:02,630
@@ -2921,7 +2921,7 @@ NEIL RHODES: You can.
 
 632
 00:29:09,330 --> 00:29:11,625
-So what we have right now is--
+So what we have right now is &mdash;
 
 633
 00:29:11,625 --> 00:29:17,600
@@ -3009,7 +3009,7 @@ There are two issues for this.
 
 652
 00:29:51,010 --> 00:29:56,200
-So let me see what the best--
+So let me see what the best &mdash;
 
 653
 00:29:56,200 --> 00:29:58,070
@@ -3232,7 +3232,7 @@ so that I could do A/B
 
 700
 00:31:53,810 --> 00:31:55,720
-testing, or 5% of--
+testing, or 5% of &mdash;
 
 701
 00:31:55,720 --> 00:31:57,470

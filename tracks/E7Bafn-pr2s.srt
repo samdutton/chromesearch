@@ -181,11 +181,11 @@ rendering and compute.
 39
 00:01:31,540 --> 00:01:35,429
 A great part of the
-forecast-- Forecastio?
+forecast &mdash; Forecastio?
 
 40
 00:01:35,429 --> 00:01:37,812
-Forecast-- I wanted to see.
+Forecast &mdash; I wanted to see.
 
 41
 00:01:37,812 --> 00:01:38,520
@@ -265,7 +265,7 @@ network, render,
 
 57
 00:02:07,190 --> 00:02:09,606
-and compute-- you can have
+and compute &mdash; you can have
 problems in all three of these.
 
 58
@@ -311,11 +311,11 @@ is I'm going to try to walk you
 66
 00:02:27,840 --> 00:02:29,950
 through some of the sites
-that you've submitted--
+that you've submitted &mdash;
 
 67
 00:02:29,950 --> 00:02:34,390
-ha-ha-ha-ha-ha-- and hopefully
+ha-ha-ha-ha-ha &mdash; and hopefully
 bruise your ego a little bit.
 
 68
@@ -365,7 +365,7 @@ taken down a peg.
 78
 00:02:49,682 --> 00:02:51,640
 Because we all know in
-here-- everyone in here,
+here &mdash; everyone in here,
 
 79
 00:02:51,640 --> 00:02:53,759
@@ -985,7 +985,7 @@ here haven't actually
 
 213
 00:07:01,120 --> 00:07:02,880
-dived into-- here,
+dived into &mdash; here,
 we'll do this.
 
 214
@@ -1116,7 +1116,7 @@ Yeah.
 243
 00:07:48,670 --> 00:07:51,086
 So what I'm going to do now
-is with the rest of the time--
+is with the rest of the time &mdash;
 
 244
 00:07:51,086 --> 00:07:52,760
@@ -1190,7 +1190,7 @@ Period, period, period.
 259
 00:08:16,440 --> 00:08:19,920
 Mobile is all that matters
-right now-- #perfmatters.
+right now &mdash; #perfmatters.
 
 260
 00:08:19,920 --> 00:08:20,810
@@ -1271,7 +1271,7 @@ extension.
 277
 00:08:48,530 --> 00:08:51,030
 So this is a fantastic
-little-- who's using this?
+little &mdash; who's using this?
 
 278
 00:08:51,030 --> 00:08:52,770
@@ -1336,7 +1336,7 @@ plugged in right here.
 291
 00:09:15,329 --> 00:09:16,870
 And I can actually
-click-- well, I'll
+click &mdash; well, I'll
 
 292
 00:09:16,870 --> 00:09:19,330
@@ -1385,7 +1385,7 @@ actually see the network.
 301
 00:09:37,980 --> 00:09:40,755
 So if I hit Reload on my
-phone-- and you can actually
+phone &mdash; and you can actually
 
 302
 00:09:40,755 --> 00:09:42,380
@@ -1411,7 +1411,7 @@ that my users are using.
 
 307
 00:09:48,900 --> 00:09:53,430
-Wow, great comment--
+Wow, great comment &mdash;
 #perfmatters.
 
 308
@@ -1767,7 +1767,7 @@ and 7.9 seconds total.
 
 384
 00:12:25,500 --> 00:12:29,000
-8K actually came-- oh,
+8K actually came &mdash; oh,
 no, we're still not done.
 
 385
@@ -1828,7 +1828,7 @@ being sent around.
 
 397
 00:12:52,000 --> 00:12:54,870
-So we can see--
+So we can see &mdash;
 let me not do that.
 
 398
@@ -1852,7 +1852,7 @@ of the large assets here, 6.4K,
 402
 00:13:02,610 --> 00:13:05,241
 We can see that the
-large images here-- this
+large images here &mdash; this
 
 403
 00:13:05,241 --> 00:13:06,490
@@ -1909,7 +1909,7 @@ Same resolution, half the size.
 
 416
 00:13:27,190 --> 00:13:30,180
-Now if anyone in here-- a
+Now if anyone in here &mdash; a
 quick other round of applause.
 
 417
@@ -1936,7 +1936,7 @@ talk about DCT coefficients.
 422
 00:13:37,360 --> 00:13:39,610
 I've had this really cool
-idea that you can actually--
+idea that you can actually &mdash;
 
 423
 00:13:39,610 --> 00:13:40,730
@@ -1981,7 +1981,7 @@ one with less detail in it.
 
 432
 00:13:56,322 --> 00:13:58,780
-What this tells me-- I know
+What this tells me &mdash; I know
 nothing about these developers.
 
 433
@@ -2004,7 +2004,7 @@ settings.
 
 437
 00:14:04,660 --> 00:14:07,110
-So another-- I like doing
+So another &mdash; I like doing
 these polls because it's late,
 
 438
@@ -2032,7 +2032,7 @@ depending on what you're doing.
 
 443
 00:14:20,440 --> 00:14:24,160
-So no-- everyone else
+So no &mdash; everyone else
 hand-optimizes exactly
 
 444
@@ -2200,7 +2200,7 @@ command line compressor,
 478
 00:15:32,630 --> 00:15:35,320
 like libjpeg or
-jpeg-turbo-- by the way,
+jpeg-turbo &mdash; by the way,
 
 479
 00:15:35,320 --> 00:15:37,780
@@ -2209,7 +2209,7 @@ codec that we use inside
 
 480
 00:15:37,780 --> 00:15:40,680
-of Chrome for JPEGs--
+of Chrome for JPEGs &mdash;
 and actually compress it
 
 481
@@ -2505,7 +2505,7 @@ I like your outfit.
 543
 00:17:45,930 --> 00:17:47,557
 Is that like a
-cummer-- What is that?
+cummer &mdash; What is that?
 
 544
 00:17:47,557 --> 00:17:48,890
@@ -2571,7 +2571,7 @@ figure out what's
 
 558
 00:18:10,080 --> 00:18:13,356
-going on with this--
+going on with this &mdash;
 if I stop my recording,
 
 559
@@ -2637,7 +2637,7 @@ moving those images around.
 
 572
 00:18:36,880 --> 00:18:38,340
-What I don't like-- pardon?
+What I don't like &mdash; pardon?
 
 573
 00:18:38,340 --> 00:18:39,442
@@ -2878,7 +2878,7 @@ little block of data
 
 624
 00:20:19,360 --> 00:20:21,510
-you're seeing here-- see
+you're seeing here &mdash; see
 that optimization data?
 
 625
@@ -3052,7 +3052,7 @@ of these things.
 660
 00:21:30,100 --> 00:21:31,766
 If you actually have
-a closure running--
+a closure running &mdash;
 
 661
 00:21:31,766 --> 00:21:33,310
@@ -3111,7 +3111,7 @@ modes on the developer tools.
 672
 00:21:58,800 --> 00:22:01,680
 So first off, you'll see
-this beautiful little--
+this beautiful little &mdash;
 
 673
 00:22:01,680 --> 00:22:03,310
@@ -3139,7 +3139,7 @@ memory is being used.
 
 678
 00:22:10,620 --> 00:22:13,800
-So that's actually--
+So that's actually &mdash;
 quick show of hands,
 
 679
@@ -3206,13 +3206,13 @@ of the pixels in that tile,
 
 692
 00:22:49,640 --> 00:22:51,370
-all of the WebKit--
+all of the WebKit &mdash;
 well, Blink now.
 
 693
 00:22:51,370 --> 00:22:52,670
 Sorry, I've got to get
-my terminology right--
+my terminology right &mdash;
 
 694
 00:22:52,670 --> 00:22:54,960
@@ -3254,7 +3254,7 @@ moving your page.
 
 702
 00:23:11,086 --> 00:23:12,835
-Now for those of you--
+Now for those of you &mdash;
 some of you in here
 
 703
@@ -3396,7 +3396,7 @@ is your CSS effects actually
 
 732
 00:24:10,840 --> 00:24:13,147
-cause-- it has to be
+cause &mdash; it has to be
 software rasterized, which
 
 733
@@ -3749,7 +3749,7 @@ encourages everyone
 808
 00:26:33,520 --> 00:26:36,860
 to do something interesting in
-small, little-- small butterfly
+small, little &mdash; small butterfly
 
 809
 00:26:36,860 --> 00:26:40,000
@@ -3887,7 +3887,7 @@ depressing image.
 838
 00:27:38,174 --> 00:27:42,280
 I didn't mean that
-that was-- again,
+that was &mdash; again,
 
 839
 00:27:42,280 --> 00:27:44,030
@@ -3920,11 +3920,11 @@ this is actually nice.
 
 845
 00:27:52,395 --> 00:27:54,133
-Where did-- what happened here?
+Where did &mdash; what happened here?
 
 846
 00:27:54,133 --> 00:27:59,500
-Did I-- this technology,
+Did I &mdash; this technology,
 isn't it great?
 
 847
@@ -4292,7 +4292,7 @@ Please, please stop.
 
 927
 00:30:46,290 --> 00:30:48,255
-This is a-- I don't
+This is a &mdash; I don't
 know if you saw this.
 
 928
@@ -4553,13 +4553,13 @@ in hardware, just
 
 984
 00:32:29,540 --> 00:32:32,069
-across the board-- probably
+across the board &mdash; probably
 for at least another two years,
 
 985
 00:32:32,069 --> 00:32:34,485
 depending on which hardware
-manufacturer you're trending--
+manufacturer you're trending &mdash;
 
 986
 00:32:34,485 --> 00:32:35,984
@@ -4639,7 +4639,7 @@ you should feel bad.
 
 1002
 00:33:08,100 --> 00:33:10,977
-Now let me see if I can--
+Now let me see if I can &mdash;
 can I Shift-Reload this?
 
 1003
@@ -4730,8 +4730,8 @@ did come down.
 
 1023
 00:33:42,660 --> 00:33:46,210
-However, we see that-- let's
-go down here-- again, 124K.
+However, we see that &mdash; let's
+go down here &mdash; again, 124K.
 
 1024
 00:33:46,210 --> 00:33:47,990
@@ -4746,7 +4746,7 @@ cached fresh reload on this.
 1026
 00:33:51,980 --> 00:33:53,900
 But basically, this
-site is using--
+site is using &mdash;
 
 1027
 00:33:53,900 --> 00:33:56,350
@@ -4856,7 +4856,7 @@ wasn't that bad.
 1051
 00:34:42,615 --> 00:34:47,980
 Here, let me see if I can
-hard-- load, load, load.
+hard &mdash; load, load, load.
 
 1052
 00:34:47,980 --> 00:34:48,480
@@ -5092,7 +5092,7 @@ little bit excessive there too.
 
 1104
 00:36:51,160 --> 00:36:53,200
-Here's, again-- those
+Here's, again &mdash; those
 are the same images.
 
 1105
@@ -5111,7 +5111,7 @@ my mobile device.
 1108
 00:36:57,892 --> 00:36:59,350
 Now the reason this
-loaded-- again,
+loaded &mdash; again,
 
 1109
 00:36:59,350 --> 00:37:00,250
@@ -5188,7 +5188,7 @@ of should be, yeah.
 
 1126
 00:37:34,020 --> 00:37:37,429
-Oh, so-- no one's hiding
+Oh, so &mdash; no one's hiding
 their face right now,
 
 1127
@@ -5453,7 +5453,7 @@ problem for your site.
 
 1182
 00:39:48,051 --> 00:39:49,050
-Hopefully, some of you--
+Hopefully, some of you &mdash;
 
 1183
 00:39:49,050 --> 00:39:51,425
@@ -5815,7 +5815,7 @@ already passing a closure
 
 1262
 00:42:24,540 --> 00:42:26,860
-to a set timeout-- or
+to a set timeout &mdash; or
 a set interval, sorry.
 
 1263
@@ -5846,7 +5846,7 @@ because otherwise we'd probably
 1268
 00:42:37,890 --> 00:42:40,556
 see this 6K worth of
-information-- someone laughed.
+information &mdash; someone laughed.
 
 1269
 00:42:40,556 --> 00:42:41,430
@@ -5902,7 +5902,7 @@ from all principles.
 1280
 00:43:04,180 --> 00:43:08,001
 So the CSS gets bloated, and
-then the WOFF has to be--
+then the WOFF has to be &mdash;
 
 1281
 00:43:08,001 --> 00:43:10,000
@@ -6213,7 +6213,7 @@ So let's do this again.
 1350
 00:45:01,415 --> 00:45:04,020
 Or actually, let
-me show-- scrolling
+me show &mdash; scrolling
 
 1351
 00:45:04,020 --> 00:45:06,796
@@ -6398,7 +6398,7 @@ problems are.
 1393
 00:46:12,260 --> 00:46:16,801
 We can actually see
-that they're loading--
+that they're loading &mdash;
 
 1394
 00:46:16,801 --> 00:46:19,420
@@ -6465,7 +6465,7 @@ load times later.
 
 1407
 00:46:47,867 --> 00:46:49,950
-I don't know how that--
+I don't know how that &mdash;
 maybe that's a discussion.
 
 1408
@@ -6498,7 +6498,7 @@ can sort this again
 1414
 00:46:58,388 --> 00:47:01,970
 and see if we can't get
-better-- here's another PNG.
+better &mdash; here's another PNG.
 
 1415
 00:47:01,970 --> 00:47:03,490
@@ -6731,7 +6731,7 @@ I want to show this.
 
 1466
 00:48:51,300 --> 00:48:54,770
-So notice this--
+So notice this &mdash;
 oh, I moved now.
 
 1467
@@ -6751,7 +6751,7 @@ kind of show up here.
 1470
 00:49:01,935 --> 00:49:05,720
 So we can actually see that the
-video-- that part of the page
+video &mdash; that part of the page
 
 1471
 00:49:05,720 --> 00:49:08,229
@@ -6760,7 +6760,7 @@ is being re-rendered.
 1472
 00:49:08,229 --> 00:49:10,270
 So you can see again that
-it's showing that the--
+it's showing that the &mdash;
 
 1473
 00:49:10,270 --> 00:49:10,510
@@ -6843,7 +6843,7 @@ certain elements on a page
 
 1491
 00:49:36,390 --> 00:49:38,460
-are kind of-- imagine
+are kind of &mdash; imagine
 your page is a plane,
 
 1492
@@ -6894,7 +6894,7 @@ Let me load up HTML5 Rocks.
 
 1502
 00:50:01,660 --> 00:50:06,070
-And let's-- nope, I
+And let's &mdash; nope, I
 typed in the wrong thing.
 
 1503
@@ -6948,7 +6948,7 @@ Bald is beautiful, I hear.
 1515
 00:50:34,890 --> 00:50:36,700
 So let's go ahead
-and turn on-- this
+and turn on &mdash; this
 
 1516
 00:50:36,700 --> 00:50:37,880
@@ -7077,12 +7077,12 @@ do this because for some reason,
 1542
 00:51:28,500 --> 00:51:31,930
 we get paused in the
-debug-- too much clicking.
+debug &mdash; too much clicking.
 
 1543
 00:51:31,930 --> 00:51:38,190
 So as I scroll here, notice
-how these objects on the side--
+how these objects on the side &mdash;
 
 1544
 00:51:38,190 --> 00:51:38,820
@@ -7149,7 +7149,7 @@ who are just going
 1557
 00:52:03,340 --> 00:52:06,222
 to start putting translateZ
-on every part of your pagee--
+on every part of your pagee &mdash;
 
 1558
 00:52:06,222 --> 00:52:07,680
@@ -7159,7 +7159,7 @@ a lot because it
 1559
 00:52:07,680 --> 00:52:09,240
 was supposed to be
-a silver bullet--
+a silver bullet &mdash;
 
 1560
 00:52:09,240 --> 00:52:11,406
@@ -7279,7 +7279,7 @@ So something's going on.
 
 1585
 00:53:01,339 --> 00:53:03,380
-It turns out-- I'll spare
+It turns out &mdash; I'll spare
 you the punchline here.
 
 1586
@@ -7392,7 +7392,7 @@ I got it right.
 
 1609
 00:53:46,515 --> 00:53:48,460
-He didn't-- no,
+He didn't &mdash; no,
 he still hates me.
 
 1610
@@ -7487,8 +7487,8 @@ That's actually pretty fast.
 
 1631
 00:54:29,930 --> 00:54:32,880
-Notice-- let me turn
-the show-- let's
+Notice &mdash; let me turn
+the show &mdash; let's
 
 1632
 00:54:32,880 --> 00:54:35,470
@@ -7569,7 +7569,7 @@ This is really cool to see.
 
 1650
 00:55:06,250 --> 00:55:08,770
-We've actually got-- a
+We've actually got &mdash; a
 44K JavaScript is actually
 
 1651
@@ -7583,7 +7583,7 @@ not jQuery at 191K.
 
 1653
 00:55:13,437 --> 00:55:15,770
-How many of you are using j--
+How many of you are using j &mdash;
 you know what, never mind.
 
 1654
@@ -7631,7 +7631,7 @@ actually, on the article
 1663
 00:55:41,910 --> 00:55:44,321
 that I put on HTML5 Rocks
-about image compression--
+about image compression &mdash;
 
 1664
 00:55:44,321 --> 00:55:46,320
@@ -7687,7 +7687,7 @@ about JPEG information.
 
 1675
 00:56:11,260 --> 00:56:13,860
-And it actually shows that--
+And it actually shows that &mdash;
 here it is, right here.
 
 1676
@@ -7701,7 +7701,7 @@ No, too far.
 
 1678
 00:56:18,370 --> 00:56:21,290
-OK, so this is actually-- I feel
+OK, so this is actually &mdash; I feel
 it's important to kind of break
 
 1679
@@ -7711,7 +7711,7 @@ scheduled bashing
 
 1680
 00:56:23,070 --> 00:56:24,330
-of these websites--
+of these websites &mdash;
 because that's
 
 1681
@@ -7839,7 +7839,7 @@ thumbnails are about 74.
 1707
 00:57:25,387 --> 00:57:27,220
 Here's the really
-interesting-- Twitter user
+interesting &mdash; Twitter user
 
 1708
 00:57:27,220 --> 00:57:29,365
@@ -7862,8 +7862,8 @@ doing everything.
 
 1712
 00:57:34,580 --> 00:57:36,310
-This actually tells me-- I
-don't know if anyone-- no one's
+This actually tells me &mdash; I
+don't know if anyone &mdash; no one's
 
 1713
 00:57:36,310 --> 00:57:37,550
@@ -7927,8 +7927,8 @@ not optimizing it.
 
 1726
 00:58:02,640 --> 00:58:04,350
-Chances are-- nope,
-that's not an image--
+Chances are &mdash; nope,
+that's not an image &mdash;
 
 1727
 00:58:04,350 --> 00:58:05,770
@@ -8314,7 +8314,7 @@ happens is someone
 
 1812
 01:00:50,210 --> 01:00:52,350
-will record-- from
+will record &mdash; from
 what I can tell,
 
 1813
@@ -8699,7 +8699,7 @@ Do you have a timer?
 1899
 01:03:59,130 --> 01:04:00,690
 It looks like you
-have a timer on your--
+have a timer on your &mdash;
 
 1900
 01:04:00,690 --> 01:04:02,820
@@ -8743,8 +8743,8 @@ button has a timer that
 
 1908
 01:04:18,090 --> 01:04:22,210
-needs jQuery and Boostrap--
-two jQueries and Bootstrap--
+needs jQuery and Boostrap &mdash;
+two jQueries and Bootstrap &mdash;
 
 1909
 01:04:22,210 --> 01:04:27,790
@@ -8814,7 +8814,7 @@ That would be kind of cool.
 
 1924
 01:04:49,290 --> 01:04:51,105
-I'm like-- sorry.
+I'm like &mdash; sorry.
 
 1925
 01:04:51,105 --> 01:04:51,730
@@ -8985,7 +8985,7 @@ highlight this guy here.
 
 1962
 01:05:56,370 --> 01:05:58,810
-So array, what's--
+So array, what's &mdash;
 transition array.
 
 1963
@@ -9016,7 +9016,7 @@ just some sort of cases
 
 1969
 01:06:10,010 --> 01:06:12,760
-where jQuery is executing--
+where jQuery is executing &mdash;
 and again, I see this a lot
 
 1970
@@ -9134,7 +9134,7 @@ COLT MCANLIS: OK.
 
 1995
 01:06:54,680 --> 01:06:57,830
-Let's try-- here we go.
+Let's try &mdash; here we go.
 
 1996
 01:06:57,830 --> 01:06:58,860
@@ -9162,7 +9162,7 @@ what I'm about to do.
 
 2002
 01:07:18,770 --> 01:07:20,580
-This is-- no, I don't
+This is &mdash; no, I don't
 want to translate.
 
 2003
@@ -9324,7 +9324,7 @@ requests, 92 requests, 93, 95.
 
 2039
 01:08:35,050 --> 01:08:38,470
-1.9-- 2 megs.
+1.9 &mdash; 2 megs.
 
 2040
 01:08:38,470 --> 01:08:39,676
@@ -9650,7 +9650,7 @@ Nope, cancel.
 
 2110
 01:11:07,680 --> 01:11:10,636
-So as I'm scrolling here--
+So as I'm scrolling here &mdash;
 it's not picking that up.
 
 2111

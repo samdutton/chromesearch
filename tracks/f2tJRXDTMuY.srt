@@ -816,7 +816,7 @@ OK, what happens?
 175
 00:07:47,570 --> 00:07:52,470
 So what you'll see here is
-that it'll say that--
+that it'll say that &mdash;
 
 176
 00:07:52,470 --> 00:07:55,000
@@ -1132,7 +1132,7 @@ a bit there, too.
 241
 00:10:52,900 --> 00:10:57,350
 Just last week we announced
-Google Cloud, we announced a--
+Google Cloud, we announced a &mdash;
 
 242
 00:10:57,350 --> 00:11:01,310
@@ -1170,7 +1170,7 @@ means that, again, your app
 
 249
 00:11:19,380 --> 00:11:22,460
-doesn't need to--
+doesn't need to &mdash;
 
 250
 00:11:22,460 --> 00:11:25,160
@@ -2853,7 +2853,7 @@ important use case.
 605
 00:27:46,730 --> 00:27:48,720
 We've spent a fair amount
-of time looking at--
+of time looking at &mdash;
 
 606
 00:27:48,720 --> 00:27:51,990
@@ -3598,12 +3598,12 @@ process for the software?
 763
 00:34:49,449 --> 00:34:51,520
 ERIK KAY: Right, so
-the installation--
+the installation &mdash;
 
 764
 00:34:51,520 --> 00:34:53,980
 so at that point, the only
-thing you need to do is--
+thing you need to do is &mdash;
 
 765
 00:34:53,980 --> 00:34:55,159
@@ -3732,7 +3732,7 @@ but some of them are
 
 792
 00:35:53,370 --> 00:35:54,880
-so in depth to the--
+so in depth to the &mdash;
 
 793
 00:35:54,880 --> 00:35:56,560
@@ -3770,7 +3770,7 @@ and we'll provide bindings and
 
 800
 00:36:12,770 --> 00:36:13,460
-try to map them--
+try to map them &mdash;
 
 801
 00:36:13,460 --> 00:36:15,460
@@ -4369,7 +4369,7 @@ programming platform, which
 
 928
 00:41:36,176 --> 00:41:36,230
-takes also--
+takes also &mdash;
 
 929
 00:41:36,230 --> 00:41:36,800

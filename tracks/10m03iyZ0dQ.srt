@@ -118,12 +118,12 @@ unstructured, massive corpus
 26
 00:01:04,640 --> 00:01:06,560
 with a huge breadth
-of content--
+of content &mdash;
 
 27
 00:01:06,560 --> 00:01:08,560
 everything from cat videos
-to revolutions--
+to revolutions &mdash;
 
 28
 00:01:08,560 --> 00:01:11,010
@@ -183,7 +183,7 @@ virtually anything.
 40
 00:01:38,490 --> 00:01:40,930
 And on top of that, our
-audience is everyone--
+audience is everyone &mdash;
 
 41
 00:01:40,930 --> 00:01:44,830
@@ -749,7 +749,7 @@ their life.
 157
 00:07:21,400 --> 00:07:24,840
 There's a variety of exercises
-in the books--
+in the books &mdash;
 
 158
 00:07:24,840 --> 00:07:27,440
@@ -902,7 +902,7 @@ the insights that we're
 
 189
 00:09:01,460 --> 00:09:04,040
-drawing out of these--
+drawing out of these &mdash;
 
 190
 00:09:04,040 --> 00:09:04,820
@@ -1036,12 +1036,12 @@ reactionary.
 217
 00:10:25,300 --> 00:10:27,520
 And the other thing we really
-notice about the phone--
+notice about the phone &mdash;
 
 218
 00:10:27,520 --> 00:10:29,540
 and people talk about it
-in interviews-- is
+in interviews &mdash; is
 
 219
 00:10:29,540 --> 00:10:30,410
@@ -1218,7 +1218,7 @@ people don't seem be using
 
 256
 00:12:06,580 --> 00:12:08,270
-them-- at least for video--
+them &mdash; at least for video &mdash;
 people don't seem to be using
 
 257
@@ -1281,7 +1281,7 @@ the tablet.
 269
 00:12:35,570 --> 00:12:37,780
 And the other interesting
-point we noticed--
+point we noticed &mdash;
 
 270
 00:12:37,780 --> 00:12:40,640
@@ -1458,7 +1458,7 @@ bigger and further away.
 306
 00:14:16,710 --> 00:14:18,900
 And whereas phone is a habitual
-device-- the way
+device &mdash; the way
 
 307
 00:14:18,900 --> 00:14:22,810
@@ -1728,7 +1728,7 @@ of modalities of
 
 363
 00:17:06,569 --> 00:17:08,390
-behavior that we see--
+behavior that we see &mdash;
 
 364
 00:17:08,390 --> 00:17:13,410
@@ -1908,7 +1908,7 @@ want to watch next.
 
 401
 00:18:45,930 --> 00:18:48,020
-You might also like--
+You might also like &mdash;
 
 402
 00:18:48,020 --> 00:18:50,460
@@ -2661,7 +2661,7 @@ actually mean?
 558
 00:26:11,900 --> 00:26:14,980
 A lot of the stuff that Tom
-spoke about earlier--
+spoke about earlier &mdash;
 
 559
 00:26:14,980 --> 00:26:18,690
@@ -2670,7 +2670,7 @@ perhaps more personal snacking
 
 560
 00:26:18,690 --> 00:26:19,470
-on a phone--
+on a phone &mdash;
 
 561
 00:26:19,470 --> 00:26:22,600
@@ -2719,7 +2719,7 @@ present what they want to
 
 570
 00:26:49,410 --> 00:26:52,470
-watch next from a channel--
+watch next from a channel &mdash;
 whether it's episodic content
 
 571
@@ -2799,7 +2799,7 @@ we've just been discussing.
 586
 00:27:36,000 --> 00:27:39,660
 And some of it is just
-really obvious--
+really obvious &mdash;
 
 587
 00:27:39,660 --> 00:27:42,520
@@ -3315,7 +3315,7 @@ of your question there.
 694
 00:33:02,810 --> 00:33:05,080
 As we've designed a dual-screen
-experience--
+experience &mdash;
 
 695
 00:33:05,080 --> 00:33:05,340

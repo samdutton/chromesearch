@@ -772,8 +772,8 @@ the option that's selected.
 
 166
 00:05:36,500 --> 00:05:39,872
-And Clippy-- excuse me,
-Selecty-- also fires events.
+And Clippy &mdash; excuse me,
+Selecty &mdash; also fires events.
 
 167
 00:05:39,872 --> 00:05:41,330
@@ -796,7 +796,7 @@ and see where we are.
 
 171
 00:05:49,550 --> 00:05:52,035
-Quick gut check--
+Quick gut check &mdash;
 a tab component
 
 172
@@ -1032,7 +1032,7 @@ was meaningful again?
 222
 00:07:29,090 --> 00:07:32,930
 If you take the Gmail chat
-example, for instance--
+example, for instance &mdash;
 
 223
 00:07:32,930 --> 00:07:35,100
@@ -1153,7 +1153,7 @@ say much back to me.
 248
 00:08:21,140 --> 00:08:24,110
 And so that's really awesome,
-because I know exactly--
+because I know exactly &mdash;
 
 249
 00:08:24,110 --> 00:08:26,860
@@ -1221,7 +1221,7 @@ of all this stuff.
 263
 00:08:53,080 --> 00:08:54,870
 So everything I'm going
-to talk about today--
+to talk about today &mdash;
 
 264
 00:08:54,870 --> 00:08:56,940
@@ -1249,7 +1249,7 @@ That's the template tag.
 
 269
 00:09:09,800 --> 00:09:14,220
-HTML imports-- so bundling
+HTML imports &mdash; so bundling
 up CSS JavaScript and HTML
 
 270
@@ -1679,7 +1679,7 @@ developer.
 361
 00:12:08,090 --> 00:12:10,267
 And so we want to
-remove-- even in 2013,
+remove &mdash; even in 2013,
 
 362
 00:12:10,267 --> 00:12:11,600
@@ -1967,7 +1967,7 @@ but it's pretty painful.
 
 423
 00:14:18,030 --> 00:14:21,140
-It's a great-- this one guy.
+It's a great &mdash; this one guy.
 
 424
 00:14:21,140 --> 00:14:22,880
@@ -2122,7 +2122,7 @@ showing me stuff.
 455
 00:15:22,990 --> 00:15:25,364
 And we've been playing around
-with a lot of these non-- I
+with a lot of these non &mdash; I
 
 456
 00:15:25,364 --> 00:15:28,030
@@ -2268,7 +2268,7 @@ think about when
 
 486
 00:16:21,090 --> 00:16:23,940
-they think of components-- the
+they think of components &mdash; the
 UI that you plop on your page.
 
 487
@@ -2402,7 +2402,7 @@ composability and reusability.
 
 514
 00:17:25,640 --> 00:17:28,520
-So we're actually using--
+So we're actually using &mdash;
 for a lot of the UI elements
 
 515
@@ -2462,7 +2462,7 @@ exciting for developers.
 527
 00:17:50,410 --> 00:17:52,760
 The universe is, as I
-see it-- this is actually
+see it &mdash; this is actually
 
 528
 00:17:52,760 --> 00:17:54,260
@@ -2535,7 +2535,7 @@ WebGL is updating that texture.
 
 543
 00:18:24,625 --> 00:18:27,400
-We'll make it the--
+We'll make it the &mdash;
 yep, Web Components
 
 544
@@ -2621,12 +2621,12 @@ number of features.
 561
 00:19:00,880 --> 00:19:02,600
 The moral of the
-story, here-- I'll
+story, here &mdash; I'll
 
 562
 00:19:02,600 --> 00:19:04,590
 just play through
-the first couple-- is
+the first couple &mdash; is
 
 563
 00:19:04,590 --> 00:19:05,950
@@ -2703,8 +2703,8 @@ We have declarative events.
 
 578
 00:19:33,280 --> 00:19:38,250
-So when this on-event name--
-in this case, a click--
+So when this on-event name &mdash;
+in this case, a click &mdash;
 
 579
 00:19:38,250 --> 00:19:42,480
@@ -3266,7 +3266,7 @@ which is defaulted to text,
 696
 00:23:45,260 --> 00:23:47,843
 and I have an orange property,
-which is defaulted-- excuse me,
+which is defaulted &mdash; excuse me,
 
 697
 00:23:47,843 --> 00:23:49,949
@@ -3725,7 +3725,7 @@ couple words here,
 793
 00:27:20,960 --> 00:27:23,150
 I actually read
-this as-- "A web app
+this as &mdash; "A web app
 
 794
 00:27:23,150 --> 00:27:25,990
@@ -3744,13 +3744,13 @@ of web components composed
 
 797
 00:27:34,660 --> 00:27:36,785
-of many subelements-- so
+of many subelements &mdash; so
 you're building components
 
 798
 00:27:36,785 --> 00:27:38,990
 out of components out of
-components out of components--
+components out of components &mdash;
 
 799
 00:27:38,990 --> 00:27:40,610

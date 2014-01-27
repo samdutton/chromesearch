@@ -49,7 +49,7 @@ doing an audit of both the
 
 12
 00:00:15,890 --> 00:00:16,880
-page load time--
+page load time &mdash;
 
 13
 00:00:16,880 --> 00:00:18,130
@@ -58,7 +58,7 @@ the run time.
 
 14
 00:00:18,130 --> 00:00:18,495
-PAUL IRISH: And--
+PAUL IRISH: And &mdash;
 
 15
 00:00:18,495 --> 00:00:19,610
@@ -76,7 +76,7 @@ that you submitted.
 
 18
 00:00:23,870 --> 00:00:27,340
-And let's just-- we're going
+And let's just &mdash; we're going
 to just take a few of them.
 
 19
@@ -170,7 +170,7 @@ keyboard now.
 39
 00:00:59,530 --> 00:01:01,380
 How do we get back
-to-- there we go.
+to &mdash; there we go.
 
 40
 00:01:01,380 --> 00:01:01,920
@@ -186,7 +186,7 @@ That's good.
 
 43
 00:01:02,720 --> 00:01:03,620
-Now um--
+Now um &mdash;
 
 44
 00:01:03,620 --> 00:01:04,430
@@ -274,7 +274,7 @@ see on the left hand side.
 
 62
 00:01:37,050 --> 00:01:38,850
-So if we spin this--
+So if we spin this &mdash;
 
 63
 00:01:38,850 --> 00:01:39,155
@@ -317,7 +317,7 @@ on the left hand side.
 
 72
 00:01:49,340 --> 00:01:52,000
-And that's basically-- when you
+And that's basically &mdash; when you
 roll over the exclamation
 
 73
@@ -352,7 +352,7 @@ to lay out a whole of the
 
 79
 00:02:08,330 --> 00:02:10,570
-page-- probably, in this case--
+page &mdash; probably, in this case &mdash;
 plus the partial scope.
 
 80
@@ -405,11 +405,11 @@ change some styles.
 
 90
 00:02:31,100 --> 00:02:32,130
-PAUL IRISH: You'll see it--
+PAUL IRISH: You'll see it &mdash;
 
 91
 00:02:32,130 --> 00:02:35,730
-it'll commonly-- in the
+it'll commonly &mdash; in the
 DevTools, it'll visualize as a
 
 92
@@ -423,7 +423,7 @@ of cascade of purple.
 
 94
 00:02:41,200 --> 00:02:43,170
-Often-- and on the left hand
+Often &mdash; and on the left hand
 side, you'll see a kind of
 
 95
@@ -477,7 +477,7 @@ it was in here, it was
 
 106
 00:03:01,670 --> 00:03:02,665
-triggered--
+triggered &mdash;
 
 107
 00:03:02,665 --> 00:03:03,986
@@ -547,7 +547,7 @@ Now come back.
 
 122
 00:03:34,120 --> 00:03:37,405
-And so what we'll see--
+And so what we'll see &mdash;
 
 123
 00:03:37,405 --> 00:03:41,030
@@ -579,7 +579,7 @@ a long frame, go inside.
 129
 00:03:54,780 --> 00:03:55,953
 PAUL LEWIS: Still doesn't
-like a bit-- does
+like a bit &mdash; does
 
 130
 00:03:55,953 --> 00:03:57,420
@@ -608,12 +608,12 @@ PAUL LEWIS: All right.
 136
 00:04:04,500 --> 00:04:06,500
 PAUL IRISH: So what I'd
-like to see is--
+like to see is &mdash;
 
 137
 00:04:06,500 --> 00:04:09,240
 what you'll normally catch in
-this case is-- you'll catch an
+this case is &mdash; you'll catch an
 
 138
 00:04:09,240 --> 00:04:15,010
@@ -647,7 +647,7 @@ that we're going to be able
 144
 00:04:29,060 --> 00:04:32,920
 to not only see kind of where
-this came-- so let's try it
+this came &mdash; so let's try it
 
 145
 00:04:32,920 --> 00:04:38,290
@@ -684,7 +684,7 @@ number of 3835.
 152
 00:04:47,110 --> 00:04:50,410
 So if we click through
-on this--
+on this &mdash;
 
 153
 00:04:50,410 --> 00:04:52,560
@@ -701,7 +701,7 @@ Offset width, offset height.
 156
 00:04:54,860 --> 00:04:57,300
 These are kind of classic
-candidates for something--
+candidates for something &mdash;
 
 157
 00:04:57,300 --> 00:05:00,250
@@ -714,7 +714,7 @@ perfectly reasonable to use.
 
 159
 00:05:01,490 --> 00:05:02,470
-But it's something that--
+But it's something that &mdash;
 
 160
 00:05:02,470 --> 00:05:04,940
@@ -786,7 +786,7 @@ Get Size Info.
 174
 00:05:30,050 --> 00:05:35,530
 Here on Get Size Info, we're
-able to basically--
+able to basically &mdash;
 
 175
 00:05:35,530 --> 00:05:36,520
@@ -807,7 +807,7 @@ everyone to see.
 
 179
 00:05:42,350 --> 00:05:44,440
-How about--
+How about &mdash;
 
 180
 00:05:44,440 --> 00:05:45,340
@@ -899,7 +899,7 @@ PAUL IRISH: Every two seconds.
 
 200
 00:06:23,520 --> 00:06:24,770
-So that's--
+So that's &mdash;
 
 201
 00:06:24,770 --> 00:06:25,380
@@ -908,7 +908,7 @@ So that's--
 202
 00:06:25,380 --> 00:06:27,590
 PAUL LEWIS: Because we figured
-this-- is this part of the
+this &mdash; is this part of the
 
 203
 00:06:27,590 --> 00:06:29,710
@@ -926,7 +926,7 @@ up a little bit.
 
 206
 00:06:32,730 --> 00:06:34,520
-I think--
+I think &mdash;
 
 207
 00:06:34,520 --> 00:06:36,530
@@ -1005,7 +1005,7 @@ to be changing.
 
 223
 00:07:05,330 --> 00:07:08,200
-You can-- so if you're seeing
+You can &mdash; so if you're seeing
 this, and you want to avoid
 
 224
@@ -1091,7 +1091,7 @@ PAUL IRISH: I did it in rAF.
 241
 00:07:38,500 --> 00:07:39,220
 PAUL LEWIS: OK, he's
-just doing it--
+just doing it &mdash;
 
 242
 00:07:39,220 --> 00:07:40,380
@@ -1105,7 +1105,7 @@ a rAF inside your resize
 244
 00:07:42,900 --> 00:07:45,360
 handler, at which point
-you'll pick up the--
+you'll pick up the &mdash;
 
 245
 00:07:45,360 --> 00:07:46,000
@@ -1198,7 +1198,7 @@ to do your work.
 264
 00:08:30,780 --> 00:08:32,880
 And what this allows the
-browser to do is--
+browser to do is &mdash;
 
 265
 00:08:32,880 --> 00:08:34,130
@@ -1221,7 +1221,7 @@ everything that you have bound
 
 269
 00:08:45,620 --> 00:08:47,040
-to a scroll handler means--
+to a scroll handler means &mdash;
 
 270
 00:08:47,040 --> 00:08:53,030
@@ -1249,7 +1249,7 @@ Right?
 
 275
 00:08:59,780 --> 00:09:02,140
-So if you're doing work in the--
+So if you're doing work in the &mdash;
 you only probably care
 
 276
@@ -1271,12 +1271,12 @@ you want to do is if
 
 280
 00:09:04,790 --> 00:09:05,910
-you do this debouncing--
+you do this debouncing &mdash;
 
 281
 00:09:05,910 --> 00:09:08,290
 which is what it's often
-referred to as--
+referred to as &mdash;
 
 282
 00:09:08,290 --> 00:09:10,230
@@ -1291,7 +1291,7 @@ call backs.
 284
 00:09:11,890 --> 00:09:13,530
 So you want to make
-sure that--
+sure that &mdash;
 
 285
 00:09:13,530 --> 00:09:16,010
@@ -1439,7 +1439,7 @@ br.staticcontent.
 
 317
 00:10:08,960 --> 00:10:10,570
-So I think actually--
+So I think actually &mdash;
 we're in London.
 
 318
@@ -1473,7 +1473,7 @@ interaction speed of these
 
 324
 00:10:29,040 --> 00:10:30,870
-form controls--
+form controls &mdash;
 
 325
 00:10:30,870 --> 00:10:33,120
@@ -1512,7 +1512,7 @@ the location, right?
 
 333
 00:10:45,440 --> 00:10:46,190
-For up to--
+For up to &mdash;
 
 334
 00:10:46,190 --> 00:10:46,850
@@ -1539,7 +1539,7 @@ real world, over the network
 
 339
 00:10:57,520 --> 00:10:58,130
-experience--
+experience &mdash;
 
 340
 00:10:58,130 --> 00:10:59,990
@@ -1603,7 +1603,7 @@ This is pretty rad.
 
 354
 00:11:22,210 --> 00:11:24,410
-So you'll have--
+So you'll have &mdash;
 
 355
 00:11:24,410 --> 00:11:25,880
@@ -1682,12 +1682,12 @@ templating plug-in.
 371
 00:12:05,650 --> 00:12:07,600
 And since these are
-up at the top--
+up at the top &mdash;
 
 372
 00:12:07,600 --> 00:12:09,170
 PAUL LEWIS: Yeah, because
-you'd expect--
+you'd expect &mdash;
 
 373
 00:12:09,170 --> 00:12:11,360
@@ -1740,7 +1740,7 @@ PAUL IRISH: Here we go.
 384
 00:12:30,170 --> 00:12:31,790
 Actually, the most
-important thing--
+important thing &mdash;
 
 385
 00:12:31,790 --> 00:12:33,470
@@ -1958,7 +1958,7 @@ PAUL IRISH: Sorry.
 
 432
 00:14:28,820 --> 00:14:29,640
-Losslessly--
+Losslessly &mdash;
 
 433
 00:14:29,640 --> 00:14:31,160
@@ -2019,7 +2019,7 @@ them over to, say,
 
 446
 00:14:44,780 --> 00:14:48,320
-WebP or-- assuming you've
+WebP or &mdash; assuming you've
 started with PNT or JPEG.
 
 447
@@ -2100,7 +2100,7 @@ really good to point that just
 463
 00:15:26,410 --> 00:15:28,850
 by having pagespeed step
-one, but step two--
+one, but step two &mdash;
 
 464
 00:15:28,850 --> 00:15:29,070
@@ -2118,7 +2118,7 @@ look at those filters.
 467
 00:15:31,070 --> 00:15:32,660
 So they're not just a kind
-of-- and you're done.
+of &mdash; and you're done.
 
 468
 00:15:32,660 --> 00:15:33,686
@@ -2229,7 +2229,7 @@ And I was like, but why?
 
 492
 00:16:16,470 --> 00:16:17,570
-And then--
+And then &mdash;
 
 493
 00:16:17,570 --> 00:16:19,915
@@ -2249,7 +2249,7 @@ PAUL LEWIS: It's a big thing.
 
 497
 00:16:22,190 --> 00:16:23,720
-And you can see here, it's--
+And you can see here, it's &mdash;
 
 498
 00:16:23,720 --> 00:16:26,540
@@ -2264,7 +2264,7 @@ record, you actually see a
 500
 00:16:29,170 --> 00:16:31,810
 blue area highlighted in Chrome,
-which is kind of--
+which is kind of &mdash;
 
 501
 00:16:31,810 --> 00:16:33,400
@@ -2274,11 +2274,11 @@ to be repainted.
 502
 00:16:33,400 --> 00:16:34,650
 And looking at the size
-of this thing--
+of this thing &mdash;
 
 503
 00:16:34,650 --> 00:16:36,950
-1526 by 882--
+1526 by 882 &mdash;
 
 504
 00:16:36,950 --> 00:16:38,700
@@ -2334,12 +2334,12 @@ element at the background.
 
 515
 00:17:05,319 --> 00:17:06,970
-Now--
+Now &mdash;
 
 516
 00:17:06,970 --> 00:17:09,380
 PAUL IRISH: Now one thing that I
-was wondering-- so normally,
+was wondering &mdash; so normally,
 
 517
 00:17:09,380 --> 00:17:14,150
@@ -2363,7 +2363,7 @@ content as that comes in?
 521
 00:17:19,910 --> 00:17:21,369
 PAUL LEWIS: It is going
-to paint whatever--
+to paint whatever &mdash;
 
 522
 00:17:21,369 --> 00:17:21,690
@@ -2375,12 +2375,12 @@ So if you're scrolling, yes.
 
 524
 00:17:22,920 --> 00:17:25,660
-It's exactly-- if you're up or
+It's exactly &mdash; if you're up or
 down, it depends on which end
 
 525
 00:17:25,660 --> 00:17:27,760
-of the-- the page needs
+of the &mdash; the page needs
 to be kind of handled.
 
 526
@@ -2390,7 +2390,7 @@ we're seeing here is
 
 527
 00:17:29,950 --> 00:17:31,300
-that this paint is--
+that this paint is &mdash;
 
 528
 00:17:31,300 --> 00:17:33,740
@@ -2443,7 +2443,7 @@ sits over the top.
 538
 00:17:55,760 --> 00:17:58,320
 So it's almost like it's
-pointless because-- it's just
+pointless because &mdash; it's just
 
 539
 00:17:58,320 --> 00:18:01,720
@@ -2466,7 +2466,7 @@ to promote the footer, which
 
 543
 00:18:11,130 --> 00:18:12,145
-is this fixed--
+is this fixed &mdash;
 
 544
 00:18:12,145 --> 00:18:14,280
@@ -2499,11 +2499,11 @@ top in its own layer.
 550
 00:18:22,460 --> 00:18:24,620
 And the simplest way to
-do that that I know--
+do that that I know &mdash;
 
 551
 00:18:24,620 --> 00:18:26,050
-whoops, put that back--
+whoops, put that back &mdash;
 
 552
 00:18:26,050 --> 00:18:27,100
@@ -2657,7 +2657,7 @@ PAUL LEWIS: Yeah.
 586
 00:19:10,340 --> 00:19:11,890
 So we don't need to do anything
-other than-- we can
+other than &mdash; we can
 
 587
 00:19:11,890 --> 00:19:13,050
@@ -2665,7 +2665,7 @@ toggle the style on and off.
 
 588
 00:19:13,050 --> 00:19:15,690
-So what that'll do is-- we'll
+So what that'll do is &mdash; we'll
 pop down onto the cog here.
 
 589
@@ -2780,12 +2780,12 @@ translateZ, and we push that
 
 613
 00:19:59,220 --> 00:20:01,160
-out to its own layer-- that
+out to its own layer &mdash; that
 background out to its own
 
 614
 00:20:01,160 --> 00:20:02,610
-layer-- what's going to actually
+layer &mdash; what's going to actually
 happen, is the
 
 615
@@ -2809,7 +2809,7 @@ hand a little bit.
 
 619
 00:20:10,670 --> 00:20:13,035
-And now when we scroll--
+And now when we scroll &mdash;
 
 620
 00:20:13,035 --> 00:20:13,570
@@ -2831,7 +2831,7 @@ when things are painting.
 
 624
 00:20:22,480 --> 00:20:23,626
-And that's actually-- yeah.
+And that's actually &mdash; yeah.
 
 625
 00:20:23,626 --> 00:20:24,680
@@ -2839,7 +2839,7 @@ PAUL IRISH: [MAKES GUN SOUNDS]
 
 626
 00:20:24,680 --> 00:20:25,550
-PAUL LEWIS: So you can see--
+PAUL LEWIS: So you can see &mdash;
 
 627
 00:20:25,550 --> 00:20:28,150
@@ -2848,12 +2848,12 @@ yeah, including sound effects.
 628
 00:20:28,150 --> 00:20:31,120
 When you get to the top,
-obviously this is--
+obviously this is &mdash;
 
 629
 00:20:31,120 --> 00:20:32,840
 again, it makes sense for
-this to probably--
+this to probably &mdash;
 
 630
 00:20:32,840 --> 00:20:33,620
@@ -2862,7 +2862,7 @@ PAUL IRISH: Oh, oh, oh.
 631
 00:20:33,620 --> 00:20:34,310
 PAUL LEWIS: But they
-could probably--
+could probably &mdash;
 
 632
 00:20:34,310 --> 00:20:35,200
@@ -2929,7 +2929,7 @@ wrote about, I think.
 
 646
 00:20:54,050 --> 00:20:55,220
-I'm just going to guess--
+I'm just going to guess &mdash;
 
 647
 00:20:55,220 --> 00:20:55,560
@@ -2937,11 +2937,11 @@ PAUL LEWIS: There it is.
 
 648
 00:20:55,560 --> 00:20:55,900
-It just--
+It just &mdash;
 
 649
 00:20:55,900 --> 00:20:56,390
-I--
+I &mdash;
 
 650
 00:20:56,390 --> 00:20:58,050
@@ -3039,7 +3039,7 @@ cross-browserness.
 671
 00:21:37,740 --> 00:21:39,250
 Of all the things that we're
-talking about today--
+talking about today &mdash;
 
 672
 00:21:39,250 --> 00:21:41,770
@@ -3053,7 +3053,7 @@ PAUL IRISH: Is it?
 674
 00:21:42,600 --> 00:21:43,270
 PAUL LEWIS: Because it's
-not going to--
+not going to &mdash;
 
 675
 00:21:43,270 --> 00:21:43,690
@@ -3085,7 +3085,7 @@ in the future.
 
 681
 00:21:55,190 --> 00:21:58,616
-And it's not-- you know, it's
+And it's not &mdash; you know, it's
 a webkit prefixed thing, so
 
 682
@@ -3104,7 +3104,7 @@ absolute cross-browser.
 
 685
 00:22:05,940 --> 00:22:07,110
-Layout thrashing--
+Layout thrashing &mdash;
 
 686
 00:22:07,110 --> 00:22:10,320
@@ -3158,7 +3158,7 @@ Expensive paints.
 
 697
 00:22:31,440 --> 00:22:33,674
-Expensive paints can be--
+Expensive paints can be &mdash;
 
 698
 00:22:33,674 --> 00:22:35,400
@@ -3166,7 +3166,7 @@ it's hard to say.
 
 699
 00:22:35,400 --> 00:22:36,730
-And right now, there's--
+And right now, there's &mdash;
 
 700
 00:22:36,730 --> 00:22:38,880
@@ -3258,7 +3258,7 @@ All right.
 
 720
 00:23:07,510 --> 00:23:07,800
-So--
+So &mdash;
 
 721
 00:23:07,800 --> 00:23:08,630
@@ -3297,7 +3297,7 @@ Let's go for it.
 
 729
 00:23:21,280 --> 00:23:22,615
-We'll use--
+We'll use &mdash;
 
 730
 00:23:22,615 --> 00:23:24,860
@@ -3316,7 +3316,7 @@ sound coming here.
 733
 00:23:28,420 --> 00:23:30,560
 I'm going to turn it off just
-because-- whoa, whoa, whoa,
+because &mdash; whoa, whoa, whoa,
 
 734
 00:23:30,560 --> 00:23:31,120
@@ -3358,11 +3358,11 @@ PAUL IRISH: Click.
 743
 00:23:41,860 --> 00:23:43,955
 PAUL LEWIS: And then
-you hit the--
+you hit the &mdash;
 
 744
 00:23:43,955 --> 00:23:45,700
-I think it's--
+I think it's &mdash;
 
 745
 00:23:45,700 --> 00:23:46,020
@@ -3371,12 +3371,12 @@ PAUL IRISH: OK.
 746
 00:23:46,020 --> 00:23:47,540
 PAUL LEWIS: Yeah, try
-using-- there we go.
+using &mdash; there we go.
 
 747
 00:23:47,540 --> 00:23:51,340
 OK, now you roll your
-mouse around and--
+mouse around and &mdash;
 
 748
 00:23:51,340 --> 00:23:52,760
@@ -3402,7 +3402,7 @@ talk about it.
 
 753
 00:24:02,040 --> 00:24:02,435
-I mean--
+I mean &mdash;
 
 754
 00:24:02,435 --> 00:24:02,720
@@ -3493,11 +3493,11 @@ crash the browser?
 
 774
 00:24:41,270 --> 00:24:43,070
-PAUL IRISH: We can--
+PAUL IRISH: We can &mdash;
 
 775
 00:24:43,070 --> 00:24:44,590
-and you can--
+and you can &mdash;
 
 776
 00:24:44,590 --> 00:24:46,690
@@ -3515,7 +3515,7 @@ you made it mad.
 779
 00:24:50,220 --> 00:24:52,400
 PAUL IRISH: This is
-what I get for--
+what I get for &mdash;
 
 780
 00:24:52,400 --> 00:24:53,650
@@ -3539,7 +3539,7 @@ Let's kill that one.
 785
 00:24:59,500 --> 00:25:02,940
 Oh, that was the one that
-I didn't-- oh, no.
+I didn't &mdash; oh, no.
 
 786
 00:25:02,940 --> 00:25:04,160
@@ -3607,7 +3607,7 @@ PAUL IRISH: Play with me.
 
 801
 00:25:29,045 --> 00:25:30,050
-This is--
+This is &mdash;
 
 802
 00:25:30,050 --> 00:25:31,470
@@ -3639,7 +3639,7 @@ PAUL LEWIS: All right.
 
 809
 00:25:42,340 --> 00:25:43,500
-PAUL IRISH: I just--
+PAUL IRISH: I just &mdash;
 
 810
 00:25:43,500 --> 00:25:45,820
@@ -3654,7 +3654,7 @@ movietickets.com.
 812
 00:25:46,830 --> 00:25:49,420
 And there was this really funny
-ad, where the woman--
+ad, where the woman &mdash;
 
 813
 00:25:49,420 --> 00:25:50,560
@@ -3683,7 +3683,7 @@ him, leave him.
 818
 00:25:59,460 --> 00:26:03,676
 And my mom really loves that
-commercial, which--
+commercial, which &mdash;
 
 819
 00:26:03,676 --> 00:26:04,520
@@ -3764,7 +3764,7 @@ Let's take a look.
 
 836
 00:26:33,490 --> 00:26:37,800
-So you can-- it says we can
+So you can &mdash; it says we can
 use kind of the keys here.
 
 837
@@ -3778,7 +3778,7 @@ pretty good, right?
 
 839
 00:26:41,010 --> 00:26:42,840
-This is looking pretty--
+This is looking pretty &mdash;
 
 840
 00:26:42,840 --> 00:26:43,460
@@ -3799,7 +3799,7 @@ All right.
 844
 00:26:48,930 --> 00:26:51,360
 There's this kind of
-playful, kind of--
+playful, kind of &mdash;
 
 845
 00:26:51,360 --> 00:26:55,690
@@ -3812,7 +3812,7 @@ of play a little bit.
 
 847
 00:26:56,620 --> 00:26:57,270
-PAUL LEWIS: And I'm seeing--
+PAUL LEWIS: And I'm seeing &mdash;
 
 848
 00:26:57,270 --> 00:27:00,770
@@ -3855,7 +3855,7 @@ it's doing.
 856
 00:27:08,150 --> 00:27:09,470
 PAUL IRISH: Honestly,
-I think it's--
+I think it's &mdash;
 
 857
 00:27:09,470 --> 00:27:09,750
@@ -3863,7 +3863,7 @@ OK.
 
 858
 00:27:09,750 --> 00:27:11,020
-So let's--
+So let's &mdash;
 
 859
 00:27:11,020 --> 00:27:12,120
@@ -3918,7 +3918,7 @@ So we look in.
 
 871
 00:27:25,880 --> 00:27:28,220
-And we're all just--
+And we're all just &mdash;
 we're in pain land.
 
 872
@@ -3978,7 +3978,7 @@ any images for this?
 
 885
 00:27:50,030 --> 00:27:51,340
-And it doesn't keep--
+And it doesn't keep &mdash;
 
 886
 00:27:51,340 --> 00:27:53,480
@@ -4112,12 +4112,12 @@ cost, which makes sense.
 
 916
 00:28:48,080 --> 00:28:49,030
-But--
+But &mdash;
 
 917
 00:28:49,030 --> 00:28:50,130
 PAUL LEWIS: And this doesn't
-actually make--
+actually make &mdash;
 
 918
 00:28:50,130 --> 00:28:51,410
@@ -4154,7 +4154,7 @@ a resize going on.
 925
 00:29:04,370 --> 00:29:04,950
 PAUL IRISH: So it's
-definitely--
+definitely &mdash;
 
 926
 00:29:04,950 --> 00:29:06,010
@@ -4186,7 +4186,7 @@ PAUL IRISH: Yeah, OK.
 
 932
 00:29:17,040 --> 00:29:19,560
-Let's--
+Let's &mdash;
 
 933
 00:29:19,560 --> 00:29:20,990
@@ -4206,7 +4206,7 @@ that's happening.
 936
 00:29:24,450 --> 00:29:25,820
 PAUL IRISH: Yeah,
-but I think--
+but I think &mdash;
 
 937
 00:29:25,820 --> 00:29:27,750
@@ -4220,7 +4220,7 @@ watching the work.
 
 939
 00:29:31,330 --> 00:29:33,584
-Command uh--
+Command uh &mdash;
 
 940
 00:29:33,584 --> 00:29:36,080
@@ -4255,7 +4255,7 @@ PAUL IRISH: OK.
 947
 00:29:43,300 --> 00:29:43,840
 PAUL LEWIS: I'm just
-trying to--
+trying to &mdash;
 
 948
 00:29:43,840 --> 00:29:44,920
@@ -4284,7 +4284,7 @@ PAUL IRISH: Well, OK.
 
 954
 00:29:49,550 --> 00:29:50,960
-So I just found--
+So I just found &mdash;
 
 955
 00:29:50,960 --> 00:29:52,600
@@ -4292,11 +4292,11 @@ we grabbed the image.
 
 956
 00:29:52,600 --> 00:29:53,360
-PAUL LEWIS: Can I--
+PAUL LEWIS: Can I &mdash;
 
 957
 00:29:53,360 --> 00:29:54,190
-he's got--
+he's got &mdash;
 
 958
 00:29:54,190 --> 00:29:55,230
@@ -4366,7 +4366,7 @@ PAUL LEWIS: No.
 
 972
 00:30:19,790 --> 00:30:20,760
-I mean, that's only--
+I mean, that's only &mdash;
 
 973
 00:30:20,760 --> 00:30:23,120
@@ -4390,7 +4390,7 @@ width, height.
 977
 00:30:32,640 --> 00:30:35,310
 And then we just set the
-left top to get the--
+left top to get the &mdash;
 
 978
 00:30:35,310 --> 00:30:37,130
@@ -4405,7 +4405,7 @@ perform well.
 980
 00:30:38,360 --> 00:30:39,580
 PAUL LEWIS: It's interesting
-that there's a--
+that there's a &mdash;
 
 981
 00:30:39,580 --> 00:30:42,020
@@ -4419,7 +4419,7 @@ PAUL IRISH: Yeah.
 983
 00:30:42,860 --> 00:30:45,720
 PAUL LEWIS: Yeah, I would love
-to know why that was--
+to know why that was &mdash;
 
 984
 00:30:45,720 --> 00:30:47,250
@@ -4436,7 +4436,7 @@ Live edit.
 987
 00:30:49,880 --> 00:30:51,348
 PAUL LEWIS: I would
-love to know why--
+love to know why &mdash;
 
 988
 00:30:51,348 --> 00:30:53,220
@@ -4460,7 +4460,7 @@ OK, Timeline looked like this.
 
 993
 00:30:58,070 --> 00:31:00,230
-Command D. What the--
+Command D. What the &mdash;
 wait, wait.
 
 994
@@ -4473,7 +4473,7 @@ Blah, blah, blah, blah, blah.
 
 996
 00:31:02,500 --> 00:31:03,670
-PAUL LEWIS: That's--
+PAUL LEWIS: That's &mdash;
 
 997
 00:31:03,670 --> 00:31:03,790
@@ -4542,7 +4542,7 @@ what's going on.
 1012
 00:31:21,970 --> 00:31:23,470
 PAUL LEWIS: That doesn't
-feel like--
+feel like &mdash;
 
 1013
 00:31:23,470 --> 00:31:24,980
@@ -4574,7 +4574,7 @@ PAUL LEWIS: OK.
 
 1020
 00:31:30,930 --> 00:31:32,240
-PAUL IRISH: Here, I'm going to--
+PAUL IRISH: Here, I'm going to &mdash;
 this is probably a better
 
 1021
@@ -4618,7 +4618,7 @@ Come back.
 
 1030
 00:31:45,270 --> 00:31:48,396
-And, and, go, and--
+And, and, go, and &mdash;
 
 1031
 00:31:48,396 --> 00:31:49,320
@@ -4631,12 +4631,12 @@ based on what you just did.
 
 1033
 00:31:52,360 --> 00:31:52,790
-PAUL IRISH: It does--
+PAUL IRISH: It does &mdash;
 
 1034
 00:31:52,790 --> 00:31:56,360
 I mean, at first glance,
-it looked like--
+it looked like &mdash;
 
 1035
 00:31:56,360 --> 00:31:57,440
@@ -4667,7 +4667,7 @@ Well, sorry.
 
 1041
 00:32:01,740 --> 00:32:02,010
-It does--
+It does &mdash;
 
 1042
 00:32:02,010 --> 00:32:02,270
@@ -4681,7 +4681,7 @@ like working with Paul Irish.
 1044
 00:32:04,160 --> 00:32:04,970
 PAUL IRISH: I think
-I was making--
+I was making &mdash;
 
 1045
 00:32:04,970 --> 00:32:06,160
@@ -4698,7 +4698,7 @@ And then there's Paul Irish.
 
 1048
 00:32:08,440 --> 00:32:09,950
-PAUL IRISH: I-- yeah.
+PAUL IRISH: I &mdash; yeah.
 
 1049
 00:32:09,950 --> 00:32:12,780
@@ -4717,7 +4717,7 @@ I were the author.
 
 1052
 00:32:16,430 --> 00:32:18,190
-PAUL IRISH: I think Behzad--
+PAUL IRISH: I think Behzad &mdash;
 he tried it.
 
 1053
@@ -4732,7 +4732,7 @@ like, I'm just going to set
 1055
 00:32:21,160 --> 00:32:23,750
 left top, which is cray-cray
-because--
+because &mdash;
 
 1056
 00:32:23,750 --> 00:32:26,190
@@ -4749,7 +4749,7 @@ PAUL IRISH: Anyways.
 1059
 00:32:27,690 --> 00:32:28,830
 PAUL LEWIS: But I
-still think--
+still think &mdash;
 
 1060
 00:32:28,830 --> 00:32:31,500
@@ -4777,7 +4777,7 @@ PAUL IRISH: Yeah.
 1065
 00:32:40,570 --> 00:32:43,095
 The other thing I think that's
-probably important is--
+probably important is &mdash;
 
 1066
 00:32:43,095 --> 00:32:46,660
@@ -4838,7 +4838,7 @@ PAUL IRISH: All right.
 
 1079
 00:33:14,465 --> 00:33:16,940
-The other thing--
+The other thing &mdash;
 
 1080
 00:33:16,940 --> 00:33:17,180
@@ -4846,7 +4846,7 @@ yeah.
 
 1081
 00:33:17,180 --> 00:33:17,890
-We should--
+We should &mdash;
 
 1082
 00:33:17,890 --> 00:33:20,630
@@ -4930,7 +4930,7 @@ PAUL IRISH: Not dramatically.
 1099
 00:33:51,990 --> 00:33:53,245
 PAUL LEWIS: So this
-is-- so this taps
+is &mdash; so this taps
 
 1100
 00:33:53,245 --> 00:33:53,940
@@ -5025,7 +5025,7 @@ Here.
 
 1120
 00:34:32,020 --> 00:34:34,710
-We're going to turn on--
+We're going to turn on &mdash;
 
 1121
 00:34:34,710 --> 00:34:38,770
@@ -5063,7 +5063,7 @@ We have Show Paint Recs.
 1129
 00:34:46,969 --> 00:34:47,610
 PAUL LEWIS: But you
-haven't got--
+haven't got &mdash;
 
 1130
 00:34:47,610 --> 00:34:48,310
@@ -5072,7 +5072,7 @@ PAUL IRISH: Layer borders.
 1131
 00:34:48,310 --> 00:34:49,260
 PAUL LEWIS: You need to switch
-on the first layer--
+on the first layer &mdash;
 
 1132
 00:34:49,260 --> 00:34:49,989
@@ -5133,7 +5133,7 @@ Yup, yup, yup.
 
 1146
 00:35:06,666 --> 00:35:09,240
-Webkit transform--
+Webkit transform &mdash;
 
 1147
 00:35:09,240 --> 00:35:11,320
@@ -5196,7 +5196,7 @@ single move.
 1159
 00:35:40,300 --> 00:35:42,640
 So I'm guessing that if we drop
-them out into layers--
+them out into layers &mdash;
 
 1160
 00:35:42,640 --> 00:35:42,880
@@ -5204,7 +5204,7 @@ PAUL LEWIS: Yup.
 
 1161
 00:35:42,880 --> 00:35:45,290
-Then it's just-- all it's got to
+Then it's just &mdash; all it's got to
 do is it's got to just let
 
 1162
@@ -5239,7 +5239,7 @@ PAUL LEWIS: Perfect.
 
 1169
 00:35:58,790 --> 00:36:02,870
-I couldn't have asked for--
+I couldn't have asked for &mdash;
 you're just the best.
 
 1170
@@ -5313,7 +5313,7 @@ So I'm going to start.
 
 1186
 00:36:29,830 --> 00:36:31,080
-And then you--
+And then you &mdash;
 
 1187
 00:36:31,080 --> 00:36:31,900
@@ -5322,7 +5322,7 @@ OK.
 1188
 00:36:31,900 --> 00:36:35,040
 If you're in timeline a lot,
-you're going to see--
+you're going to see &mdash;
 
 1189
 00:36:35,040 --> 00:36:37,530
@@ -5448,7 +5448,7 @@ frame that we're
 
 1215
 00:37:29,250 --> 00:37:30,370
-seeing here, which is--
+seeing here, which is &mdash;
 
 1216
 00:37:30,370 --> 00:37:31,200
@@ -5471,7 +5471,7 @@ to look at here.
 
 1220
 00:37:38,530 --> 00:37:40,900
-One is--
+One is &mdash;
 
 1221
 00:37:40,900 --> 00:37:43,550
@@ -5515,13 +5515,13 @@ of, is the CPU active?
 
 1230
 00:38:00,900 --> 00:38:03,890
-If the CPU is active-- maybe
+If the CPU is active &mdash; maybe
 something outside of Chrome is
 
 1231
 00:38:03,890 --> 00:38:06,750
 doing a lot of work, which is
-why Chrome had to slow down--
+why Chrome had to slow down &mdash;
 
 1232
 00:38:06,750 --> 00:38:09,300
@@ -5531,7 +5531,7 @@ of work is being done.
 1233
 00:38:09,300 --> 00:38:10,660
 PAUL LEWIS: So the thing to do
-here is to make sure-- if
+here is to make sure &mdash; if
 
 1234
 00:38:10,660 --> 00:38:12,240
@@ -5634,7 +5634,7 @@ Right here and right here.
 
 1256
 00:38:46,370 --> 00:38:47,260
-So what's--
+So what's &mdash;
 
 1257
 00:38:47,260 --> 00:38:49,440
@@ -5673,11 +5673,11 @@ currently showing as empty.
 1264
 00:39:07,690 --> 00:39:09,210
 So sometimes it's just
-simply-- and again,
+simply &mdash; and again,
 
 1265
 00:39:09,210 --> 00:39:10,730
-it might not be--
+it might not be &mdash;
 
 1266
 00:39:10,730 --> 00:39:12,590
@@ -5729,7 +5729,7 @@ generally can take a good
 
 1276
 00:39:33,650 --> 00:39:34,980
-amount of time--
+amount of time &mdash;
 
 1277
 00:39:34,980 --> 00:39:35,620
@@ -5771,7 +5771,7 @@ here and why.
 
 1285
 00:39:49,870 --> 00:39:50,710
-For now, that's a--
+For now, that's a &mdash;
 
 1286
 00:39:50,710 --> 00:39:52,490
@@ -5816,11 +5816,11 @@ PAUL LEWIS: Yeah.
 
 1295
 00:40:09,540 --> 00:40:10,505
-PAUL IRISH: I think that's--
+PAUL IRISH: I think that's &mdash;
 
 1296
 00:40:10,505 --> 00:40:11,820
-I think we--
+I think we &mdash;
 
 1297
 00:40:11,820 --> 00:40:12,460
@@ -5867,12 +5867,12 @@ lot of the new features on
 
 1306
 00:40:28,370 --> 00:40:32,070
-HTML5rocks.com, including-- we
+HTML5rocks.com, including &mdash; we
 didn't show the flame chart.
 
 1307
 00:40:32,070 --> 00:40:33,105
-PAUL LEWIS: You want to just--
+PAUL LEWIS: You want to just &mdash;
 
 1308
 00:40:33,105 --> 00:40:33,940
@@ -5894,7 +5894,7 @@ the flame chart.
 
 1312
 00:40:36,880 --> 00:40:40,396
-I-- to be fair, Paul requested
+I &mdash; to be fair, Paul requested
 the flame chart.
 
 1313
@@ -6094,7 +6094,7 @@ that I recorded.
 1356
 00:41:50,790 --> 00:41:54,270
 And we can see that in the
-mini map-- so this is the
+mini map &mdash; so this is the
 
 1357
 00:41:54,270 --> 00:41:55,780
@@ -6121,7 +6121,7 @@ interrupting this.
 
 1362
 00:42:03,680 --> 00:42:06,900
-That's something that-- but once
+That's something that &mdash; but once
 I had it in place, you
 
 1363
@@ -6186,7 +6186,7 @@ PAUL IRISH: Yeah, exactly.
 
 1376
 00:42:35,100 --> 00:42:36,330
-Tighter on the--
+Tighter on the &mdash;
 
 1377
 00:42:36,330 --> 00:42:37,170

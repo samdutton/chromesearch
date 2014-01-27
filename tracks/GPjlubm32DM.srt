@@ -132,7 +132,7 @@ platform part of Chrome.
 
 30
 00:01:18,500 --> 00:01:19,640
-I think we've already--
+I think we've already &mdash;
 
 31
 00:01:19,640 --> 00:01:21,560
@@ -697,7 +697,7 @@ memory profiling to sort
 151
 00:06:45,770 --> 00:06:48,260
 of timeline rendering
-performance--
+performance &mdash;
 
 152
 00:06:48,260 --> 00:06:51,420
@@ -712,7 +712,7 @@ by the way, just
 154
 00:06:53,600 --> 00:06:58,150
 from the team's perspective
-is they don't--
+is they don't &mdash;
 
 155
 00:06:58,150 --> 00:06:59,980
@@ -843,7 +843,7 @@ thing, you know, coming from
 182
 00:08:14,040 --> 00:08:16,410
 the Chrome team, this is
-something that's very--
+something that's very &mdash;
 
 183
 00:08:16,410 --> 00:08:17,920
@@ -937,7 +937,7 @@ of all, thank
 
 202
 00:09:01,430 --> 00:09:03,620
-you to Firefox for--
+you to Firefox for &mdash;
 
 203
 00:09:03,620 --> 00:09:07,960
@@ -983,7 +983,7 @@ in user adoption, so.
 212
 00:09:29,030 --> 00:09:30,830
 ERIK KAY: So one other
-thing about that--
+thing about that &mdash;
 
 213
 00:09:30,830 --> 00:09:34,341
@@ -1029,7 +1029,7 @@ with crash data is
 
 222
 00:09:52,180 --> 00:09:54,520
-that crashes are almost--
+that crashes are almost &mdash;
 
 223
 00:09:54,520 --> 00:09:58,180
@@ -1320,7 +1320,7 @@ bug reports.
 
 285
 00:12:53,750 --> 00:12:55,326
-AUDIENCE: Yes, I had one--
+AUDIENCE: Yes, I had one &mdash;
 
 286
 00:12:55,326 --> 00:12:58,250
@@ -1365,7 +1365,7 @@ Bluetooth LE support?
 295
 00:13:15,050 --> 00:13:16,760
 ERIK KAY: I don't know
-if anybody here is--
+if anybody here is &mdash;
 
 296
 00:13:16,760 --> 00:13:19,450
@@ -1490,8 +1490,8 @@ still somewhat of a tail of
 
 322
 00:14:22,480 --> 00:14:24,680
-people-- how long
-it is varies--
+people &mdash; how long
+it is varies &mdash;
 
 323
 00:14:24,680 --> 00:14:28,600
@@ -1609,7 +1609,7 @@ a look at the work that the
 
 347
 00:15:31,890 --> 00:15:34,080
-Polymer team has done--
+Polymer team has done &mdash;
 
 348
 00:15:34,080 --> 00:15:37,300
@@ -1820,7 +1820,7 @@ context of pointer events.
 
 391
 00:17:28,569 --> 00:17:32,780
-It's useful as a way to-- well,
+It's useful as a way to &mdash; well,
 by the way, if you add a
 
 392
@@ -1910,12 +1910,12 @@ is about scrolling.
 409
 00:18:18,390 --> 00:18:20,560
 And using Chrome on different
-platforms--
+platforms &mdash;
 
 410
 00:18:20,560 --> 00:18:22,790
 like Mac, Linux, Windows,
-and Android--
+and Android &mdash;
 
 411
 00:18:22,790 --> 00:18:25,500
@@ -2477,11 +2477,11 @@ I've noticed, especially with
 
 531
 00:23:27,770 --> 00:23:30,040
-lots of tabs--
+lots of tabs &mdash;
 
 532
 00:23:30,040 --> 00:23:32,610
-I keep dozens of them open--
+I keep dozens of them open &mdash;
 
 533
 00:23:32,610 --> 00:23:36,140
@@ -2495,7 +2495,7 @@ steps that you'll
 
 535
 00:23:39,670 --> 00:23:42,890
-take in general to--
+take in general to &mdash;
 
 536
 00:23:42,890 --> 00:23:46,410
@@ -2631,7 +2631,7 @@ to this, right?
 
 564
 00:25:08,780 --> 00:25:15,010
-I mean, there's just-- there is
+I mean, there's just &mdash; there is
 content you load that just
 
 565
@@ -2695,7 +2695,7 @@ say, and some of you may have
 577
 00:25:50,110 --> 00:25:51,870
 heard us tell this
-story before--
+story before &mdash;
 
 578
 00:25:51,870 --> 00:25:55,470
@@ -2714,7 +2714,7 @@ Darin and Ben first got the
 581
 00:26:02,250 --> 00:26:04,460
 first version of Chrome up and
-running-- and when I say first
+running &mdash; and when I say first
 
 582
 00:26:04,460 --> 00:26:08,060
@@ -3135,7 +3135,7 @@ that bloat that's crept in.
 
 669
 00:30:00,410 --> 00:30:04,930
-But there is also that-- using
+But there is also that &mdash; using
 WebP and other similar
 
 670
@@ -3313,7 +3313,7 @@ and security.
 
 707
 00:31:32,540 --> 00:31:34,390
-But we should probably--
+But we should probably &mdash;
 
 708
 00:31:34,390 --> 00:31:35,150
@@ -3468,7 +3468,7 @@ bugs that we
 
 740
 00:32:41,730 --> 00:32:44,980
-encounter in Blink--
+encounter in Blink &mdash;
 
 741
 00:32:44,980 --> 00:32:46,450
@@ -3584,7 +3584,7 @@ IAN ELLISON-TAYLOR: Jeff.
 765
 00:33:41,260 --> 00:33:42,390
 DARIN FISHER: We can
-all look at Jeff--
+all look at Jeff &mdash;
 
 766
 00:33:42,390 --> 00:33:43,100
@@ -3617,7 +3617,7 @@ So I'll keep it in mind.
 772
 00:33:51,710 --> 00:33:53,700
 DARIN FISHER: It's been
-one of these long--
+one of these long &mdash;
 
 773
 00:33:53,700 --> 00:33:55,040
@@ -3921,11 +3921,11 @@ our auto-update system.
 
 837
 00:36:34,110 --> 00:36:36,362
-And then we can say, oh--
+And then we can say, oh &mdash;
 
 838
 00:36:36,362 --> 00:36:38,100
-a trivial example, you know--
+a trivial example, you know &mdash;
 
 839
 00:36:38,100 --> 00:36:40,060
@@ -3983,7 +3983,7 @@ is we only put in
 
 850
 00:37:03,820 --> 00:37:05,110
-stats for things--
+stats for things &mdash;
 
 851
 00:37:05,110 --> 00:37:07,050
@@ -4007,7 +4007,7 @@ everywhere.
 855
 00:37:11,550 --> 00:37:14,040
 GREG SIMON: We can also
-use it to do-- sorry.
+use it to do &mdash; sorry.
 
 856
 00:37:14,040 --> 00:37:16,590
@@ -4204,7 +4204,7 @@ performance numbers down.
 
 897
 00:38:57,180 --> 00:38:59,090
-We also--
+We also &mdash;
 
 898
 00:38:59,090 --> 00:39:02,250

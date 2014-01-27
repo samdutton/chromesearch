@@ -30,8 +30,8 @@ some time in front of you
 
 8
 00:00:12,370 --> 00:00:15,220
-folks-- thanks for coming, by
-the way-- talking about what
+folks &mdash; thanks for coming, by
+the way &mdash; talking about what
 
 9
 00:00:15,220 --> 00:00:17,590
@@ -60,7 +60,7 @@ features, they see what we
 
 14
 00:00:26,410 --> 00:00:28,480
-call the three D's--
+call the three D's &mdash;
 
 15
 00:00:28,480 --> 00:00:32,350
@@ -154,11 +154,11 @@ BRAD GREEN: Right.
 34
 00:01:08,170 --> 00:01:11,140
 So we thought that if we can
-distill our apps-- if we could
+distill our apps &mdash; if we could
 
 35
 00:01:11,140 --> 00:01:12,540
-boil them down, maybe--
+boil them down, maybe &mdash;
 
 36
 00:01:12,540 --> 00:01:15,240
@@ -167,7 +167,7 @@ what adds value to the app,
 
 37
 00:01:15,240 --> 00:01:16,190
-then it'd be very much--
+then it'd be very much &mdash;
 
 38
 00:01:16,190 --> 00:01:18,460
@@ -210,7 +210,7 @@ structuring the application
 46
 00:01:31,310 --> 00:01:33,080
 means the developer
-can easily bring--
+can easily bring &mdash;
 
 47
 00:01:33,080 --> 00:01:36,370
@@ -287,7 +287,7 @@ which itself is tested.
 63
 00:01:58,850 --> 00:02:00,970
 It's all about making sure
-that the people--
+that the people &mdash;
 
 64
 00:02:00,970 --> 00:02:03,820
@@ -386,7 +386,7 @@ It's a good policy.
 85
 00:02:34,650 --> 00:02:36,910
 MISKO HEVERY: So the idea behind
-Angular-- the original
+Angular &mdash; the original
 
 86
 00:02:36,910 --> 00:02:39,210
@@ -477,7 +477,7 @@ MISKO HEVERY: All right.
 104
 00:03:17,291 --> 00:03:20,510
 BRAD GREEN: All right, so fast
-forward just a little bit to--
+forward just a little bit to &mdash;
 
 105
 00:03:20,510 --> 00:03:22,120
@@ -485,7 +485,7 @@ we were on a project together.
 
 106
 00:03:22,120 --> 00:03:23,850
-And I remember Misko--
+And I remember Misko &mdash;
 this was a project
 
 107
@@ -555,7 +555,7 @@ the whole thing in two weeks.
 121
 00:03:54,780 --> 00:03:56,660
 BRAD GREEN: And I said, go for
-it, because two weeks--
+it, because two weeks &mdash;
 
 122
 00:03:56,660 --> 00:03:57,890
@@ -638,7 +638,7 @@ application is really all
 
 139
 00:04:31,710 --> 00:04:34,420
-about modifying the DOM-- you
+about modifying the DOM &mdash; you
 know, the divs, the spans, the
 
 140
@@ -764,12 +764,12 @@ moving back and forth.
 166
 00:05:25,730 --> 00:05:27,330
 And this is one of
-those three D's--
+those three D's &mdash;
 
 167
 00:05:27,330 --> 00:05:29,230
 and we'll actually describe
-them-- not our goals.
+them &mdash; not our goals.
 
 168
 00:05:29,230 --> 00:05:31,190
@@ -782,7 +782,7 @@ way this works.
 
 170
 00:05:33,450 --> 00:05:34,700
-We've got a--
+We've got a &mdash;
 
 171
 00:05:34,700 --> 00:05:36,970
@@ -848,8 +848,8 @@ part of the HTML spec.
 
 184
 00:06:05,280 --> 00:06:07,340
-And there-- all these things
-in green are--
+And there &mdash; all these things
+in green are &mdash;
 
 185
 00:06:07,340 --> 00:06:08,760
@@ -876,8 +876,8 @@ what we've said is that the
 
 190
 00:06:16,600 --> 00:06:18,830
-model for our data-- the place
-in memory where this lives--
+model for our data &mdash; the place
+in memory where this lives &mdash;
 
 191
 00:06:18,830 --> 00:06:21,510
@@ -915,11 +915,11 @@ place that text.
 198
 00:06:35,770 --> 00:06:37,280
 So what we do in double
-curlies-- we call this
+curlies &mdash; we call this
 
 199
 00:06:37,280 --> 00:06:38,370
-interpolation--
+interpolation &mdash;
 
 200
 00:06:38,370 --> 00:06:40,800
@@ -1019,7 +1019,7 @@ people to pick up and learn,
 
 220
 00:07:31,400 --> 00:07:34,430
-such as for web developers-- or,
+such as for web developers &mdash; or,
 for web designers who are
 
 221
@@ -1058,7 +1058,7 @@ simple web application without
 228
 00:07:50,020 --> 00:07:52,530
 having actually any kind
-of logic inside--
+of logic inside &mdash;
 
 229
 00:07:52,530 --> 00:07:55,810
@@ -1120,7 +1120,7 @@ more complex example where
 
 241
 00:08:19,000 --> 00:08:21,770
-we've got two files-- one
+we've got two files &mdash; one
 index.html on the left, end
 
 242
@@ -1153,7 +1153,7 @@ We've got the word
 
 248
 00:08:32,880 --> 00:08:34,675
-And when he clicks the word--
+And when he clicks the word &mdash;
 
 249
 00:08:34,675 --> 00:08:38,909
@@ -1176,7 +1176,7 @@ at how we do this.
 
 253
 00:08:46,420 --> 00:08:47,480
-So now, we've got--
+So now, we've got &mdash;
 
 254
 00:08:47,480 --> 00:08:47,960
@@ -1269,8 +1269,8 @@ UControl.user.first.
 
 273
 00:09:37,670 --> 00:09:41,230
-And for clicking the button--
-when users click it-- it will
+And for clicking the button &mdash;
+when users click it &mdash; it will
 
 274
 00:09:41,230 --> 00:09:43,910
@@ -1335,7 +1335,7 @@ notice that
 
 287
 00:10:12,410 --> 00:10:15,490
-there's no new-- we never call
+there's no new &mdash; we never call
 new on UserController.
 
 288
@@ -1360,7 +1360,7 @@ application.
 292
 00:10:23,880 --> 00:10:26,210
 It creates a controller, and
-attaches it-- or, it hands it
+attaches it &mdash; or, it hands it
 
 293
 00:10:26,210 --> 00:10:27,760
@@ -1524,7 +1524,7 @@ the web audio to actually
 
 326
 00:11:48,360 --> 00:11:50,690
-speak to-- to generate
+speak to &mdash; to generate
 the text, and speak
 
 327
@@ -1548,11 +1548,11 @@ system that tries to
 331
 00:11:58,720 --> 00:12:00,280
 instantiate the controller,
-but it notices--
+but it notices &mdash;
 
 332
 00:12:00,280 --> 00:12:00,810
-a-ha--
+a-ha &mdash;
 
 333
 00:12:00,810 --> 00:12:03,060
@@ -1580,7 +1580,7 @@ a web audio, so it goes
 338
 00:12:11,370 --> 00:12:13,860
 one level further yet,
-and it tries-- it
+and it tries &mdash; it
 
 339
 00:12:13,860 --> 00:12:14,720
@@ -1644,7 +1644,7 @@ over here, those don't matter.
 352
 00:12:37,110 --> 00:12:39,490
 I mean, they're only there for
-the user-- for the developer
+the user &mdash; for the developer
 
 353
 00:12:39,490 --> 00:12:40,950
@@ -1741,11 +1741,11 @@ MISKO HEVERY: Yes.
 373
 00:13:15,860 --> 00:13:19,830
 And so we would really like to
-do is replace the VoiceSynth--
+do is replace the VoiceSynth &mdash;
 
 374
 00:13:19,830 --> 00:13:21,270
-the actual voice synthesizer--
+the actual voice synthesizer &mdash;
 
 375
 00:13:21,270 --> 00:13:22,740
@@ -1896,7 +1896,7 @@ it over, and say, you get
 
 406
 00:14:31,550 --> 00:14:34,150
-to use this imperative thing--
+to use this imperative thing &mdash;
 this is you, you can play with
 
 407
@@ -2204,7 +2204,7 @@ it's just an
 
 471
 00:17:04,069 --> 00:17:05,839
-application with two views--
+application with two views &mdash;
 
 472
 00:17:05,839 --> 00:17:06,650
@@ -2265,11 +2265,11 @@ have to do here.
 484
 00:17:31,640 --> 00:17:34,140
 We have to say, well, there's a
-link-- so that it looks like
+link &mdash; so that it looks like
 
 485
 00:17:34,140 --> 00:17:36,800
-a link-- but actually, it
+a link &mdash; but actually, it
 actually goes nowhere.
 
 486
@@ -2285,11 +2285,11 @@ and we have to
 488
 00:17:42,910 --> 00:17:44,880
 prevent the default behavior of
-the browser-- which is to
+the browser &mdash; which is to
 
 489
 00:17:44,880 --> 00:17:46,470
-navigate to a link--
+navigate to a link &mdash;
 
 490
 00:17:46,470 --> 00:17:48,790
@@ -2326,7 +2326,7 @@ table row, the same kind of a
 497
 00:18:03,180 --> 00:18:06,130
 click has to happen, but there's
-no-- it isn't clear
+no &mdash; it isn't clear
 
 498
 00:18:06,130 --> 00:18:07,950
@@ -2434,7 +2434,7 @@ on the right-hand side.
 
 520
 00:18:54,110 --> 00:18:55,250
-So we had this show method--
+So we had this show method &mdash;
 
 521
 00:18:55,250 --> 00:18:56,950
@@ -2471,7 +2471,7 @@ listener, which I talked
 
 528
 00:19:10,650 --> 00:19:13,820
-to you-- mentioned briefly
+to you &mdash; mentioned briefly
 before, which does the
 
 529
@@ -2502,7 +2502,7 @@ a click listener which
 534
 00:19:29,140 --> 00:19:32,372
 transitions us from the
-detail to the--
+detail to the &mdash;
 
 535
 00:19:32,372 --> 00:19:35,140
@@ -2589,7 +2589,7 @@ the top of the template right
 
 553
 00:20:13,690 --> 00:20:15,770
-now-- if this was a more complex
+now &mdash; if this was a more complex
 application, this is
 
 554
@@ -2670,7 +2670,7 @@ done that in the jQuery
 
 570
 00:20:53,300 --> 00:20:53,890
-reversion--
+reversion &mdash;
 
 571
 00:20:53,890 --> 00:20:54,500
@@ -2732,7 +2732,7 @@ which basically says for each
 583
 00:21:20,130 --> 00:21:22,550
 project in the list
-of projects--
+of projects &mdash;
 
 584
 00:21:22,550 --> 00:21:23,680
@@ -2741,7 +2741,7 @@ the list of
 
 585
 00:21:23,680 --> 00:21:25,170
-projects comes in a second--
+projects comes in a second &mdash;
 
 586
 00:21:25,170 --> 00:21:27,720
@@ -2874,11 +2874,11 @@ in the browser.
 613
 00:22:28,040 --> 00:22:30,670
 So we have to say that
-when the URL--
+when the URL &mdash;
 
 614
 00:22:30,670 --> 00:22:32,030
-which is shown right here--
+which is shown right here &mdash;
 
 615
 00:22:32,030 --> 00:22:35,230
@@ -3188,7 +3188,7 @@ BRAD GREEN: OK, well, thanks.
 679
 00:24:58,730 --> 00:25:00,770
 So this is a list
-of projects--
+of projects &mdash;
 
 680
 00:25:00,770 --> 00:25:02,030
@@ -3244,12 +3244,12 @@ with this particular case.
 
 691
 00:25:24,320 --> 00:25:26,200
-Now one of things we have-- and
+Now one of things we have &mdash; and
 I'm sure you're familiar
 
 692
 00:25:26,200 --> 00:25:29,140
-with in UNIX-- is the concept of
+with in UNIX &mdash; is the concept of
 filters, which we have, as
 
 693
@@ -3269,7 +3269,7 @@ functions.
 696
 00:25:34,640 --> 00:25:36,310
 In this case, there's a function
-called filter--
+called filter &mdash;
 
 697
 00:25:36,310 --> 00:25:37,660
@@ -3332,7 +3332,7 @@ BRAD GREEN: OK, very cool.
 709
 00:26:06,490 --> 00:26:10,485
 However, modern applications use
-animation to show me-- to
+animation to show me &mdash; to
 
 710
 00:26:10,485 --> 00:26:11,810
@@ -3346,7 +3346,7 @@ the items in the
 
 712
 00:26:13,980 --> 00:26:15,040
-list in and out as--
+list in and out as &mdash;
 
 713
 00:26:15,040 --> 00:26:16,430
@@ -3375,11 +3375,11 @@ MISKO HEVERY: I see.
 
 719
 00:26:23,470 --> 00:26:24,190
-So animations--
+So animations &mdash;
 
 720
 00:26:24,190 --> 00:26:26,570
-as you guys all know, I'm sure--
+as you guys all know, I'm sure &mdash;
 are complex things,
 
 721
@@ -3572,11 +3572,11 @@ people tell us is
 
 761
 00:28:08,500 --> 00:28:10,340
-fantastic about Angular--
+fantastic about Angular &mdash;
 
 762
 00:28:10,340 --> 00:28:11,630
-besides the framework--
+besides the framework &mdash;
 
 763
 00:28:11,630 --> 00:28:12,830
@@ -3584,7 +3584,7 @@ is the community.
 
 764
 00:28:12,830 --> 00:28:16,340
-And there thousands--
+And there thousands &mdash;
 
 765
 00:28:16,340 --> 00:28:19,850
@@ -3608,7 +3608,7 @@ happen regularly.
 
 769
 00:28:27,080 --> 00:28:30,840
-There are-- on our Google group,
+There are &mdash; on our Google group,
 on Twitter, on Stack
 
 770
@@ -3696,7 +3696,7 @@ where your template is set up,
 787
 00:29:20,180 --> 00:29:22,480
 optimize the performance,
-and debug it--
+and debug it &mdash;
 
 788
 00:29:22,480 --> 00:29:25,070
@@ -3823,11 +3823,11 @@ want to be doing that.
 814
 00:30:21,560 --> 00:30:25,980
 And so, there are a ton
-of directives--
+of directives &mdash;
 
 815
 00:30:25,980 --> 00:30:26,690
-web components--
+web components &mdash;
 
 816
 00:30:26,690 --> 00:30:28,150
@@ -3927,7 +3927,7 @@ And then there's books.
 
 836
 00:31:21,740 --> 00:31:22,410
-I actually--
+I actually &mdash;
 
 837
 00:31:22,410 --> 00:31:23,750
@@ -3941,7 +3941,7 @@ handsome of the books.
 
 839
 00:31:27,060 --> 00:31:27,460
-But there--
+But there &mdash;
 
 840
 00:31:27,460 --> 00:31:29,570
@@ -3968,7 +3968,7 @@ Thanks so much.
 
 845
 00:31:37,280 --> 00:31:38,190
-We--
+We &mdash;
 
 846
 00:31:38,190 --> 00:31:42,210
@@ -4140,7 +4140,7 @@ BRAD GREEN: OK, good.
 883
 00:33:04,970 --> 00:33:05,780
 MISKO HEVERY: You can change
-it using the--
+it using the &mdash;
 
 884
 00:33:05,780 --> 00:33:06,110
@@ -4197,7 +4197,7 @@ is building just users
 896
 00:33:29,880 --> 00:33:32,530
 In fact, in China,
-it is very--
+it is very &mdash;
 
 897
 00:33:32,530 --> 00:33:34,570
@@ -4210,7 +4210,7 @@ AngularJS community, and you
 
 899
 00:33:43,930 --> 00:33:48,270
-can address--
+can address &mdash;
 
 900
 00:33:48,270 --> 00:33:49,560
@@ -4218,7 +4218,7 @@ you can know it.
 
 901
 00:33:49,560 --> 00:33:52,550
-I just want to--
+I just want to &mdash;
 
 902
 00:33:52,550 --> 00:33:56,830
@@ -4272,7 +4272,7 @@ it in your map.
 
 913
 00:34:09,679 --> 00:34:11,190
-So I have a question, why--
+So I have a question, why &mdash;
 
 914
 00:34:11,190 --> 00:34:11,550
@@ -4349,7 +4349,7 @@ I mean a lot, actually.
 930
 00:34:39,790 --> 00:34:44,969
 And then YouTube has
-built their--
+built their &mdash;
 
 931
 00:34:44,969 --> 00:34:48,360
@@ -4411,7 +4411,7 @@ And over here.
 944
 00:35:04,830 --> 00:35:06,810
 AUDIENCE: First question
-is, the query--
+is, the query &mdash;
 
 945
 00:35:06,810 --> 00:35:09,230
@@ -4444,7 +4444,7 @@ reasons you might want
 951
 00:35:15,170 --> 00:35:16,830
 AUDIENCE: And secondly, we think
-Google-- is there any
+Google &mdash; is there any
 
 952
 00:35:16,830 --> 00:35:20,110
@@ -4516,7 +4516,7 @@ MISKO HEVERY: Thank you.
 
 968
 00:35:39,100 --> 00:35:39,980
-AUDIENCE: So--
+AUDIENCE: So &mdash;
 
 969
 00:35:39,980 --> 00:35:40,740
@@ -4550,7 +4550,7 @@ needs to be paged in
 
 976
 00:35:50,930 --> 00:35:52,920
-and out, and how--
+and out, and how &mdash;
 
 977
 00:35:52,920 --> 00:35:56,000
@@ -4572,7 +4572,7 @@ BRAD GREEN: Yeah.
 
 981
 00:35:59,380 --> 00:36:02,740
-I mean, I can point you-- there
+I mean, I can point you &mdash; there
 are several services
 
 982
@@ -4601,7 +4601,7 @@ The ng-search stuff.
 987
 00:36:14,170 --> 00:36:16,210
 Not just the scrolling,
-but the actual--
+but the actual &mdash;
 
 988
 00:36:16,210 --> 00:36:16,720
@@ -4628,7 +4628,7 @@ backend search stuff.
 993
 00:36:22,630 --> 00:36:24,300
 BRAD GREEN: As Misko said,
-there are some details--
+there are some details &mdash;
 
 994
 00:36:24,300 --> 00:36:27,290
@@ -4645,7 +4645,7 @@ MISKO HEVERY: Yes.
 
 997
 00:36:27,419 --> 00:36:28,080
-That's a better way of-- yes.
+That's a better way of &mdash; yes.
 
 998
 00:36:28,080 --> 00:36:28,340
@@ -4696,7 +4696,7 @@ is concerned about
 1008
 00:37:00,070 --> 00:37:03,600
 users who don't have JavaScript
-enabled, or what--
+enabled, or what &mdash;
 
 1009
 00:37:03,600 --> 00:37:04,630
@@ -4709,7 +4709,7 @@ BRAD GREEN: I think it's 2002.
 
 1011
 00:37:08,010 --> 00:37:12,110
-But no-- so I can't help your
+But no &mdash; so I can't help your
 manager, because he is living
 
 1012
@@ -4718,7 +4718,7 @@ somewhere else.
 
 1013
 00:37:14,420 --> 00:37:16,650
-But as far as--
+But as far as &mdash;
 
 1014
 00:37:16,650 --> 00:37:17,630
@@ -4767,7 +4767,7 @@ Moo" angular SEO.
 1024
 00:37:35,440 --> 00:37:37,330
 MISKO HEVERY: And it has to
-do with the headless--
+do with the headless &mdash;
 
 1025
 00:37:37,330 --> 00:37:39,840
@@ -4785,7 +4785,7 @@ by you guys, as Google?
 
 1028
 00:37:44,310 --> 00:37:44,730
-Because--
+Because &mdash;
 
 1029
 00:37:44,730 --> 00:37:45,060
@@ -4793,7 +4793,7 @@ BRAD GREEN: No.
 
 1030
 00:37:45,060 --> 00:37:46,200
-AUDIENCE: Since users are--
+AUDIENCE: Since users are &mdash;
 
 1031
 00:37:46,200 --> 00:37:48,180
@@ -4824,7 +4824,7 @@ map with Backbone and other
 
 1037
 00:37:55,290 --> 00:37:59,600
-stuff, and we don't have a--
+stuff, and we don't have a &mdash;
 it's like a financial app.
 
 1038
@@ -4834,7 +4834,7 @@ introduce Angular and, with
 
 1039
 00:38:03,580 --> 00:38:07,650
-it's help-- because it's a huge
+it's help &mdash; because it's a huge
 app, a trading app, but
 
 1040
@@ -4858,12 +4858,12 @@ to only rewrite something?
 
 1044
 00:38:15,800 --> 00:38:19,510
-Or will it-- can I use
+Or will it &mdash; can I use
 this as a part of it?
 
 1045
 00:38:19,510 --> 00:38:20,440
-Or how will this help--
+Or how will this help &mdash;
 
 1046
 00:38:20,440 --> 00:38:20,660
@@ -4903,7 +4903,7 @@ something like that.
 
 1054
 00:38:32,450 --> 00:38:33,720
-So there's even--
+So there's even &mdash;
 
 1055
 00:38:33,720 --> 00:38:35,870
@@ -4991,7 +4991,7 @@ ng-switches.
 
 1073
 00:39:06,320 --> 00:39:07,380
-One inside--
+One inside &mdash;
 
 1074
 00:39:07,380 --> 00:39:10,140
@@ -5071,7 +5071,7 @@ And then have it go to web
 
 1090
 00:39:40,980 --> 00:39:42,190
-then when false--
+then when false &mdash;
 
 1091
 00:39:42,190 --> 00:39:45,000

@@ -314,7 +314,7 @@ microcosm of the tech industry.
 69
 00:03:40,910 --> 00:03:44,420
 We were just inventing
-all kinds of things--
+all kinds of things &mdash;
 
 70
 00:03:44,420 --> 00:03:46,940

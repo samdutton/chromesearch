@@ -183,7 +183,7 @@ that at the beginning.
 
 40
 00:02:03,600 --> 00:02:05,490
-The first one--
+The first one &mdash;
 
 41
 00:02:05,490 --> 00:02:07,530
@@ -216,7 +216,7 @@ Chrome packaged app.
 
 47
 00:02:26,230 --> 00:02:28,930
-However, you don't want to--
+However, you don't want to &mdash;
 
 48
 00:02:28,930 --> 00:02:31,750
@@ -360,7 +360,7 @@ Do I have any questions, Pete?
 
 78
 00:04:10,210 --> 00:04:10,880
-Anything that--
+Anything that &mdash;
 
 79
 00:04:10,880 --> 00:04:13,960
@@ -432,7 +432,7 @@ So, all right, Renato.
 
 93
 00:04:52,280 --> 00:04:53,090
-Why don't we--
+Why don't we &mdash;
 
 94
 00:04:53,090 --> 00:04:53,880
@@ -478,7 +478,7 @@ that you've been talking about
 103
 00:05:21,100 --> 00:05:24,880
 internally that you've
-shown us--
+shown us &mdash;
 
 104
 00:05:24,880 --> 00:05:25,170
@@ -491,7 +491,7 @@ Yes, yes, yes.
 106
 00:05:25,540 --> 00:05:30,710
 It's API integration
-with some IDEs--
+with some IDEs &mdash;
 
 107
 00:05:30,710 --> 00:05:31,660
@@ -651,7 +651,7 @@ PETE LEPAGE: Hey, guys.
 
 141
 00:07:12,580 --> 00:07:14,220
-RENATO MANGINI: Let me show--
+RENATO MANGINI: Let me show &mdash;
 
 142
 00:07:14,220 --> 00:07:14,780
@@ -681,7 +681,7 @@ in a little bit.
 
 148
 00:07:25,040 --> 00:07:25,580
-If you can--
+If you can &mdash;
 
 149
 00:07:25,580 --> 00:07:27,760
@@ -700,7 +700,7 @@ Can I go ahead?
 
 153
 00:07:32,360 --> 00:07:34,660
-Or do you want to--
+Or do you want to &mdash;
 
 154
 00:07:34,660 --> 00:07:37,790
@@ -989,7 +989,7 @@ Your application is safe.
 
 217
 00:11:11,130 --> 00:11:12,780
-You have some--
+You have some &mdash;
 
 218
 00:11:12,780 --> 00:11:16,550
@@ -1015,7 +1015,7 @@ other computer here.
 223
 00:11:29,340 --> 00:11:33,320
 So this method allows
-you to control--
+you to control &mdash;
 
 224
 00:11:33,320 --> 00:11:36,980
@@ -1118,7 +1118,7 @@ little silly, but certainly
 
 245
 00:12:29,680 --> 00:12:31,220
-something that--
+something that &mdash;
 
 246
 00:12:31,220 --> 00:12:32,600
@@ -1165,7 +1165,7 @@ Maybe not the most practical.
 255
 00:12:52,150 --> 00:12:54,400
 RENATO MANGINI: Drones
-and bacon fryers--
+and bacon fryers &mdash;
 
 256
 00:12:54,400 --> 00:12:56,110
@@ -1262,7 +1262,7 @@ It's not a bug.
 276
 00:13:49,840 --> 00:13:51,410
 PETE LEPAGE: Always
-love those--
+love those &mdash;
 
 277
 00:13:51,410 --> 00:13:52,640
@@ -1333,7 +1333,7 @@ anymore, OK?
 
 292
 00:14:33,970 --> 00:14:38,370
-Let's do some--
+Let's do some &mdash;
 
 293
 00:14:38,370 --> 00:14:41,490
@@ -1358,7 +1358,7 @@ RENATO MANGINI: Exactly.
 
 298
 00:14:53,730 --> 00:14:57,413
-And let's change it to--
+And let's change it to &mdash;
 
 299
 00:14:57,413 --> 00:15:00,870
@@ -1451,7 +1451,7 @@ have to remember,
 
 319
 00:16:27,400 --> 00:16:28,760
-that was planted here--
+that was planted here &mdash;
 
 320
 00:16:28,760 --> 00:16:32,870
@@ -1610,7 +1610,7 @@ app, I have here
 
 354
 00:17:58,740 --> 00:18:00,840
-the Google page because--
+the Google page because &mdash;
 
 355
 00:18:00,840 --> 00:18:01,700
@@ -1875,7 +1875,7 @@ Thank you very much, sir.
 
 412
 00:21:21,850 --> 00:21:26,380
-So this is how--
+So this is how &mdash;
 
 413
 00:21:26,380 --> 00:21:27,640
@@ -2179,7 +2179,7 @@ So OK.
 
 479
 00:24:59,850 --> 00:25:02,270
-What this is--
+What this is &mdash;
 
 480
 00:25:02,270 --> 00:25:04,090
@@ -2212,7 +2212,7 @@ loaded already.
 
 487
 00:25:25,020 --> 00:25:25,940
-So--
+So &mdash;
 
 488
 00:25:25,940 --> 00:25:29,480
@@ -2229,7 +2229,7 @@ RENATO MANGINI: Yes.
 
 491
 00:25:31,640 --> 00:25:35,090
-So let's try some--
+So let's try some &mdash;
 
 492
 00:25:35,090 --> 00:25:40,930
@@ -2238,7 +2238,7 @@ streaming allows you to see.
 
 493
 00:25:40,930 --> 00:25:41,816
-But you know--
+But you know &mdash;
 
 494
 00:25:41,816 --> 00:25:44,300
@@ -2283,7 +2283,7 @@ slow loading.
 
 503
 00:26:07,070 --> 00:26:09,320
-But anyway--
+But anyway &mdash;
 
 504
 00:26:09,320 --> 00:26:13,910
@@ -2396,11 +2396,11 @@ because it's not, OK?
 527
 00:27:28,230 --> 00:27:37,930
 So now let's change this code
-to have a small-- but how--
+to have a small &mdash; but how &mdash;
 
 528
 00:27:37,930 --> 00:27:41,470
-we are reaching our time so--
+we are reaching our time so &mdash;
 
 529
 00:27:41,470 --> 00:27:43,890
@@ -2451,7 +2451,7 @@ What it means?
 539
 00:28:12,141 --> 00:28:15,460
 Since this is a different
-process--
+process &mdash;
 
 540
 00:28:15,460 --> 00:28:20,820
@@ -2460,7 +2460,7 @@ operation system-wise.
 
 541
 00:28:20,820 --> 00:28:21,590
-It cannot--
+It cannot &mdash;
 
 542
 00:28:21,590 --> 00:28:26,500
@@ -2479,7 +2479,7 @@ What is saved in a partition?
 545
 00:28:30,590 --> 00:28:36,800
 Like cookies, like all
-information that is--
+information that is &mdash;
 
 546
 00:28:36,800 --> 00:28:40,340
@@ -2492,7 +2492,7 @@ PETE LEPAGE: Right.
 
 548
 00:28:40,860 --> 00:28:42,170
-So you're not going to have--
+So you're not going to have &mdash;
 
 549
 00:28:42,170 --> 00:28:46,670
@@ -2502,7 +2502,7 @@ in local storage,
 550
 00:28:46,670 --> 00:28:49,420
 you're not going to be able
-to get that even though--
+to get that even though &mdash;
 
 551
 00:28:49,420 --> 00:28:51,800
@@ -2517,7 +2517,7 @@ within a Chrome app.
 553
 00:28:53,540 --> 00:28:56,370
 But say, for example,
-IndexedDB--
+IndexedDB &mdash;
 
 554
 00:28:56,370 --> 00:28:58,500
@@ -2697,7 +2697,7 @@ So there is this feature.
 
 593
 00:30:46,840 --> 00:30:48,320
-It's just--
+It's just &mdash;
 
 594
 00:30:48,320 --> 00:30:50,790
@@ -2807,7 +2807,7 @@ I will report today.
 617
 00:32:16,460 --> 00:32:22,100
 Those named partitions should
-be-- by spec, they should be,
+be &mdash; by spec, they should be,
 
 618
 00:32:22,100 --> 00:32:27,700
@@ -2860,7 +2860,7 @@ implemented later.
 
 628
 00:32:57,910 --> 00:33:01,140
-But the idea is it should--
+But the idea is it should &mdash;
 
 629
 00:33:01,140 --> 00:33:10,150
@@ -2879,7 +2879,7 @@ that I could talk about, but
 632
 00:33:19,350 --> 00:33:22,850
 they are all implemented
-on the browser tag--
+on the browser tag &mdash;
 
 633
 00:33:22,850 --> 00:33:25,180
@@ -2947,7 +2947,7 @@ It's the Autosize.
 
 647
 00:34:02,410 --> 00:34:03,720
-The Autosize--
+The Autosize &mdash;
 
 648
 00:34:03,720 --> 00:34:07,480
@@ -2957,7 +2957,7 @@ but it's not implemented
 649
 00:34:07,480 --> 00:34:10,210
 anywhere else, but I'm
-working on a sample--
+working on a sample &mdash;
 
 650
 00:34:10,210 --> 00:34:14,920
@@ -2976,7 +2976,7 @@ of the WebView element.
 653
 00:34:20,310 --> 00:34:25,199
 When you set it,
-it allows the--
+it allows the &mdash;
 
 654
 00:34:25,199 --> 00:34:32,230
@@ -3004,7 +3004,7 @@ receives an event of resize.
 
 659
 00:34:50,409 --> 00:34:53,060
-So you can handle--
+So you can handle &mdash;
 
 660
 00:34:53,060 --> 00:34:54,830
@@ -3013,7 +3013,7 @@ you can auto resize.
 661
 00:34:54,830 --> 00:34:57,710
 It's not automatically,
-but it's almost--
+but it's almost &mdash;
 
 662
 00:34:57,710 --> 00:35:01,130
@@ -3050,7 +3050,7 @@ button is very small.
 669
 00:35:15,530 --> 00:35:19,230
 But when you click on the
-button, or you hover over it--
+button, or you hover over it &mdash;
 
 670
 00:35:19,230 --> 00:35:20,170
@@ -3265,7 +3265,7 @@ Jarek, it's good
 
 715
 00:37:52,110 --> 00:37:54,410
-that you coded your--
+that you coded your &mdash;
 
 716
 00:37:54,410 --> 00:37:58,730
@@ -3357,7 +3357,7 @@ this web page app.
 735
 00:39:06,520 --> 00:39:09,780
 That web page would
-connect to the--
+connect to the &mdash;
 
 736
 00:39:09,780 --> 00:39:12,270
@@ -3374,7 +3374,7 @@ WebView and the embedder.
 
 739
 00:39:18,080 --> 00:39:19,260
-So you have--
+So you have &mdash;
 
 740
 00:39:19,260 --> 00:39:20,540
@@ -3386,7 +3386,7 @@ It's not synchronous anymore.
 
 742
 00:39:21,990 --> 00:39:25,880
-But if you want to-- if there's
+But if you want to &mdash; if there's
 anything that you need
 
 743
@@ -3419,7 +3419,7 @@ PETE LEPAGE: Awesome.
 
 749
 00:39:44,680 --> 00:39:46,360
-And so I've just got a--
+And so I've just got a &mdash;
 
 750
 00:39:46,360 --> 00:39:50,000
@@ -3490,7 +3490,7 @@ because I think it's
 
 764
 00:40:24,790 --> 00:40:26,530
-actually-- it's always
+actually &mdash; it's always
 a good question.
 
 765
@@ -3529,7 +3529,7 @@ me via Chromebox.
 
 772
 00:40:47,450 --> 00:40:50,080
-But for me and--
+But for me and &mdash;
 
 773
 00:40:50,080 --> 00:40:51,560
@@ -3596,7 +3596,7 @@ Chromebooks whenever we can.
 786
 00:41:25,570 --> 00:41:28,860
 RENATO MANGINI: And if you
-the user who asked it--
+the user who asked it &mdash;
 
 787
 00:41:28,860 --> 00:41:30,200
@@ -3637,7 +3637,7 @@ that are $250, $249.
 795
 00:41:46,840 --> 00:41:50,100
 It's a really great machine
-to have to be able to--
+to have to be able to &mdash;
 
 796
 00:41:50,100 --> 00:41:55,200
@@ -3686,7 +3686,7 @@ RENATO MANGINI: Yes.
 
 806
 00:42:13,880 --> 00:42:17,860
-It does not support--
+It does not support &mdash;
 it does not respect.
 
 807
@@ -3931,7 +3931,7 @@ We had some questions.
 
 859
 00:44:57,060 --> 00:44:59,360
-And in fact, we don't--
+And in fact, we don't &mdash;
 
 860
 00:44:59,360 --> 00:45:00,410
@@ -3979,7 +3979,7 @@ All right.
 
 870
 00:45:17,980 --> 00:45:18,900
-Well, let's--
+Well, let's &mdash;
 
 871
 00:45:18,900 --> 00:45:21,760
@@ -4083,7 +4083,7 @@ will discuss about that.
 
 892
 00:46:19,930 --> 00:46:22,200
-That is definitely--
+That is definitely &mdash;
 
 893
 00:46:22,200 --> 00:46:25,150
@@ -4100,7 +4100,7 @@ PETE LEPAGE: Yeah.
 
 896
 00:46:28,640 --> 00:46:32,080
-And in some ways, I--
+And in some ways, I &mdash;
 
 897
 00:46:32,080 --> 00:46:33,320
@@ -4189,7 +4189,7 @@ use case.
 
 915
 00:47:21,170 --> 00:47:22,930
-You can emulate--
+You can emulate &mdash;
 
 916
 00:47:22,930 --> 00:47:25,870
@@ -4271,7 +4271,7 @@ joined by Paul Kinlan, who's
 933
 00:48:07,880 --> 00:48:10,130
 going to be joining
-me to talk about--
+me to talk about &mdash;
 
 934
 00:48:10,130 --> 00:48:11,880

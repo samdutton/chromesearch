@@ -794,7 +794,7 @@ register a non-approved device
 168
 00:07:19,000 --> 00:07:22,880
 on your domain or somebody
-would lose their device--
+would lose their device &mdash;
 
 169
 00:07:22,880 --> 00:07:25,180
@@ -1471,7 +1471,7 @@ experience across the board.
 
 311
 00:13:50,570 --> 00:13:58,760
-So here, in the documentation--
+So here, in the documentation &mdash;
 
 312
 00:13:58,760 --> 00:13:59,080
@@ -1747,11 +1747,11 @@ that processing on your end.
 368
 00:16:36,260 --> 00:16:38,900
 Also, we're giving an extensible
-user schema--
+user schema &mdash;
 
 369
 00:16:38,900 --> 00:16:41,850
-and this is a big one-- so that
+and this is a big one &mdash; so that
 you can set more and more
 
 370
@@ -1781,7 +1781,7 @@ has been a pretty
 
 375
 00:16:57,020 --> 00:16:59,600
-popular feature request--
+popular feature request &mdash;
 
 376
 00:16:59,600 --> 00:17:02,870
@@ -1991,7 +1991,7 @@ Sign In for external websites
 
 421
 00:18:43,940 --> 00:18:48,020
-and how this Admin SDK--
+and how this Admin SDK &mdash;
 
 422
 00:18:48,020 --> 00:18:52,640
@@ -2029,7 +2029,7 @@ another website?
 429
 00:19:13,480 --> 00:19:16,990
 AUDIENCE: On an external
-website not part of--
+website not part of &mdash;
 
 430
 00:19:16,990 --> 00:19:17,710
@@ -2578,7 +2578,7 @@ changing
 
 549
 00:23:46,960 --> 00:23:48,370
-their names, and it's--
+their names, and it's &mdash;
 
 550
 00:23:48,370 --> 00:23:50,340
@@ -2814,7 +2814,7 @@ AUDIENCE: PKI.
 
 601
 00:25:44,030 --> 00:25:44,170
-VIC FRYZEL: Can you--
+VIC FRYZEL: Can you &mdash;
 
 602
 00:25:44,170 --> 00:25:48,750
@@ -2882,7 +2882,7 @@ one Charlie's request for the
 616
 00:26:15,570 --> 00:26:17,440
 push notifications and the
-change feed for the--
+change feed for the &mdash;
 
 617
 00:26:17,440 --> 00:26:17,950
@@ -2976,7 +2976,7 @@ quota, the server limits.
 
 636
 00:26:59,670 --> 00:27:01,520
-So is that--
+So is that &mdash;
 
 637
 00:27:01,520 --> 00:27:03,540
@@ -3021,7 +3021,7 @@ we can talk about how to get
 
 646
 00:27:22,520 --> 00:27:23,730
-your-- like I understand
+your &mdash; like I understand
 that case.
 
 647
@@ -3404,7 +3404,7 @@ quotas and the like.
 729
 00:30:40,550 --> 00:30:43,070
 And one of the reasons that's
-been an issue for--
+been an issue for &mdash;
 
 730
 00:30:43,070 --> 00:30:45,070

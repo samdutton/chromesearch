@@ -605,12 +605,12 @@ element, is they have a
 
 131
 00:05:07,040 --> 00:05:08,790
-new piece of hardware-- well,
+new piece of hardware &mdash; well,
 an old piece of hardware
 
 132
 00:05:08,790 --> 00:05:12,120
-really-- called a graphics
+really &mdash; called a graphics
 processing unit, or a GPU.
 
 133
@@ -1070,7 +1070,7 @@ Actually it hurts a lot.
 
 228
 00:09:46,050 --> 00:09:47,700
-Anyhow, as we have the duck--
+Anyhow, as we have the duck &mdash;
 
 229
 00:09:47,700 --> 00:09:48,530
@@ -1420,7 +1420,7 @@ while they're inside of it
 
 308
 00:12:21,740 --> 00:12:25,250
-actually has a large--
+actually has a large &mdash;
 
 309
 00:12:25,250 --> 00:12:25,760
@@ -1880,7 +1880,7 @@ animation, the duck then has
 407
 00:16:08,270 --> 00:16:14,115
 to be promoted back to the
-base layer where it--
+base layer where it &mdash;
 
 408
 00:16:14,115 --> 00:16:14,560
@@ -2178,7 +2178,7 @@ use a lot of memory.
 
 471
 00:18:51,460 --> 00:18:53,770
-So now the job is--
+So now the job is &mdash;
 
 472
 00:18:53,770 --> 00:18:57,490
@@ -2646,7 +2646,7 @@ change because on the browser
 570
 00:23:33,600 --> 00:23:35,920
 side of things, that's
-controlled--
+controlled &mdash;
 
 571
 00:23:35,920 --> 00:23:38,590
@@ -2781,7 +2781,7 @@ which is effectively
 
 598
 00:24:39,450 --> 00:24:40,700
-responsible--
+responsible &mdash;
 
 599
 00:24:40,700 --> 00:24:43,050
@@ -3144,7 +3144,7 @@ position fixed as well as a
 
 678
 00:27:56,475 --> 00:27:59,580
-z-index 0 to this thing-- or
+z-index 0 to this thing &mdash; or
 z-index anything really, just
 
 679
@@ -3451,7 +3451,7 @@ called chrome://tracing.
 743
 00:30:16,410 --> 00:30:19,310
 Now chrome://tracing
-personally--
+personally &mdash;
 
 744
 00:30:19,310 --> 00:30:22,860
@@ -4073,7 +4073,7 @@ of the tiles is memory.
 
 876
 00:36:10,240 --> 00:36:11,080
-So we try to do--
+So we try to do &mdash;
 
 877
 00:36:11,080 --> 00:36:12,240
@@ -4132,7 +4132,7 @@ we're basically using the
 
 889
 00:36:43,950 --> 00:36:45,810
-memory limit, which is--
+memory limit, which is &mdash;
 
 890
 00:36:45,810 --> 00:36:49,410
@@ -4174,7 +4174,7 @@ so around 256 meg.
 898
 00:37:12,600 --> 00:37:14,880
 AUDIENCE: OK, so it's actually
-part of the RAM is--
+part of the RAM is &mdash;
 
 899
 00:37:14,880 --> 00:37:15,920
@@ -4203,7 +4203,7 @@ screen resolution.
 904
 00:37:26,077 --> 00:37:27,860
 AUDIENCE: OK, should I go to the
-back of the line or ask--
+back of the line or ask &mdash;
 
 905
 00:37:27,860 --> 00:37:28,150
@@ -4326,12 +4326,12 @@ panes, to stay in sync.
 
 930
 00:38:33,040 --> 00:38:33,630
-COLT MCANLIS: I think the--
+COLT MCANLIS: I think the &mdash;
 
 931
 00:38:33,630 --> 00:38:34,785
 AUDIENCE: When I scroll
-vertically I need--
+vertically I need &mdash;
 
 932
 00:38:34,785 --> 00:38:36,035

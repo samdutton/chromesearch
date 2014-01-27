@@ -277,7 +277,7 @@ for a parameter.
 62
 00:02:44,050 --> 00:02:46,330
 So the small bumps that
-come into little--
+come into little &mdash;
 
 63
 00:02:46,330 --> 00:02:51,770
@@ -295,7 +295,7 @@ inferencing, as we call it.
 
 66
 00:02:59,780 --> 00:03:01,080
-SETH LADD: So it looks--
+SETH LADD: So it looks &mdash;
 
 67
 00:03:01,080 --> 00:03:03,240
@@ -309,12 +309,12 @@ purple line here, that is
 
 69
 00:03:06,920 --> 00:03:08,770
-output by dart2js--
+output by dart2js &mdash;
 
 70
 00:03:08,770 --> 00:03:10,640
 which is outputting
-JavaScript--
+JavaScript &mdash;
 
 71
 00:03:10,640 --> 00:03:13,860
@@ -324,7 +324,7 @@ faster than V8.
 72
 00:03:13,860 --> 00:03:18,300
 Now of course when we run the
-output JavaScript on V8--
+output JavaScript on V8 &mdash;
 
 73
 00:03:18,300 --> 00:03:19,830
@@ -363,7 +363,7 @@ we're reaching a nice path in
 80
 00:03:48,360 --> 00:03:51,460
 the V8 compiler that
-allocates--
+allocates &mdash;
 
 81
 00:03:51,460 --> 00:03:56,490
@@ -607,7 +607,7 @@ global now.
 
 132
 00:06:36,970 --> 00:06:38,500
-What about the Dart--
+What about the Dart &mdash;
 and by the way, all
 
 133
@@ -632,7 +632,7 @@ to the slides.
 137
 00:06:45,810 --> 00:06:48,740
 But what is it about
-Dart that--
+Dart that &mdash;
 
 138
 00:06:48,740 --> 00:06:51,410
@@ -653,7 +653,7 @@ to do global analysis?
 
 142
 00:06:55,710 --> 00:06:57,130
-Why can't we do this--
+Why can't we do this &mdash;
 
 143
 00:06:57,130 --> 00:06:58,880
@@ -823,7 +823,7 @@ with the main function.
 
 179
 00:08:41,909 --> 00:08:43,470
-And from there, the program--
+And from there, the program &mdash;
 
 180
 00:08:43,470 --> 00:08:46,160
@@ -931,7 +931,7 @@ You don't have to use it.
 
 202
 00:09:49,600 --> 00:09:51,160
-And we actually have--
+And we actually have &mdash;
 
 203
 00:09:51,160 --> 00:09:55,030
@@ -1006,7 +1006,7 @@ string a, well,
 
 219
 00:10:38,680 --> 00:10:41,200
-nothing will make sure--
+nothing will make sure &mdash;
 
 220
 00:10:41,200 --> 00:10:44,560
@@ -1068,7 +1068,7 @@ still feel like the tools and
 232
 00:11:18,590 --> 00:11:21,230
 runtimes can take
-advantage of--
+advantage of &mdash;
 
 233
 00:11:21,230 --> 00:11:24,200
@@ -1224,11 +1224,11 @@ benchmark that I think
 
 270
 00:12:46,970 --> 00:12:49,200
-started with maybe Smalltalk--
+started with maybe Smalltalk &mdash;
 
 271
 00:12:49,200 --> 00:12:51,140
-I'm actually not sure--
+I'm actually not sure &mdash;
 
 272
 00:12:51,140 --> 00:12:55,200
@@ -1242,7 +1242,7 @@ JavaScript by the V8 team.
 274
 00:12:57,410 --> 00:13:01,165
 And now it's been ported to Dart
-by the same-- well, the
+by the same &mdash; well, the
 
 275
 00:13:01,165 --> 00:13:04,210
@@ -1251,7 +1251,7 @@ now the Dart team.
 
 276
 00:13:04,210 --> 00:13:05,370
-It's a fairly--
+It's a fairly &mdash;
 
 277
 00:13:05,370 --> 00:13:09,520
@@ -1575,7 +1575,7 @@ operator overriding.
 
 348
 00:16:57,700 --> 00:16:58,880
-You could have any object--
+You could have any object &mdash;
 
 349
 00:16:58,880 --> 00:17:01,810
@@ -1617,7 +1617,7 @@ like transcript
 
 357
 00:17:20,220 --> 00:17:24,920
-array indexing, and call--
+array indexing, and call &mdash;
 
 358
 00:17:24,920 --> 00:17:28,940
@@ -1784,7 +1784,7 @@ method on v. And that's
 
 395
 00:19:23,630 --> 00:19:25,050
-because we have no--
+because we have no &mdash;
 
 396
 00:19:25,050 --> 00:19:28,720
@@ -1972,7 +1972,7 @@ actually an array.
 
 437
 00:21:28,890 --> 00:21:30,870
-And you're doing--
+And you're doing &mdash;
 
 438
 00:21:30,870 --> 00:21:33,400
@@ -2066,7 +2066,7 @@ out of bounds.
 
 458
 00:22:26,020 --> 00:22:27,780
-In Dart you'll get a--
+In Dart you'll get a &mdash;
 
 459
 00:22:27,780 --> 00:22:29,740
@@ -2215,7 +2215,7 @@ the last, but almost.
 
 491
 00:23:49,230 --> 00:23:50,130
-That's another--
+That's another &mdash;
 
 492
 00:23:50,130 --> 00:23:55,200
@@ -2229,7 +2229,7 @@ bump in the graph.
 494
 00:23:58,260 --> 00:24:04,100
 It's knowing that when you're
-doing an equals check--
+doing an equals check &mdash;
 
 495
 00:24:04,100 --> 00:24:09,080
@@ -2272,7 +2272,7 @@ have to check for null.
 503
 00:24:39,170 --> 00:24:49,586
 So if you pass a null, if
-the receiver is null--
+the receiver is null &mdash;
 
 504
 00:24:49,586 --> 00:24:49,960
@@ -2416,7 +2416,7 @@ that operator equal of yours.
 
 535
 00:26:26,030 --> 00:26:28,570
-In that case here-- before,
+In that case here &mdash; before,
 it actually didn't know
 
 536
@@ -2511,7 +2511,7 @@ JavaScript, where lots of
 
 556
 00:27:32,120 --> 00:27:33,670
-things evaluate to true--
+things evaluate to true &mdash;
 
 557
 00:27:33,670 --> 00:27:38,830
@@ -2758,7 +2758,7 @@ where you're doing
 612
 00:30:17,510 --> 00:30:22,400
 something on cc and call,
-the call variable--
+the call variable &mdash;
 
 613
 00:30:22,400 --> 00:30:25,450
@@ -2946,16 +2946,16 @@ a list, a Dart list.
 653
 00:32:52,460 --> 00:32:55,160
 And when you call methods
-that are on the list--
+that are on the list &mdash;
 
 654
 00:32:55,160 --> 00:32:58,480
-like filter--
+like filter &mdash;
 
 655
 00:32:58,480 --> 00:33:00,100
 well now it's called
-RemoveWhere--
+RemoveWhere &mdash;
 
 656
 00:33:00,100 --> 00:33:04,080
@@ -3143,7 +3143,7 @@ far dart2js or the VM is
 
 696
 00:34:55,920 --> 00:34:58,990
-able to go, based on--
+able to go, based on &mdash;
 
 697
 00:34:58,990 --> 00:35:01,560
@@ -3322,7 +3322,7 @@ And it can never be null.
 
 735
 00:36:38,960 --> 00:36:40,670
-So the Dart VM--
+So the Dart VM &mdash;
 
 736
 00:36:40,670 --> 00:36:43,060
@@ -3401,7 +3401,7 @@ field is declared.
 752
 00:37:32,220 --> 00:37:35,320
 It makes the type
-inferencing--
+inferencing &mdash;
 
 753
 00:37:35,320 --> 00:37:39,240
@@ -3569,7 +3569,7 @@ public yet, those benchmarks,
 788
 00:39:15,960 --> 00:39:19,766
 is because publishing
-a new benchmark is--
+a new benchmark is &mdash;
 
 789
 00:39:19,766 --> 00:39:22,130

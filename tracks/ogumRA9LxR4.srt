@@ -292,7 +292,7 @@ your experiments.
 
 63
 00:02:36,850 --> 00:02:39,660
-So I'm actually going to-- let's
+So I'm actually going to &mdash; let's
 bring up one of your
 
 64
@@ -366,7 +366,7 @@ That's my plan for it.
 
 79
 00:03:13,340 --> 00:03:16,610
-So Avgrund is a concept for--
+So Avgrund is a concept for &mdash;
 
 80
 00:03:16,610 --> 00:03:19,260
@@ -464,7 +464,7 @@ in 3D space.
 100
 00:04:16,970 --> 00:04:18,790
 HAKIM EL HATTAB: Yeah,
-that started out as--
+that started out as &mdash;
 
 101
 00:04:18,790 --> 00:04:20,709
@@ -483,7 +483,7 @@ built it out and
 
 104
 00:04:26,590 --> 00:04:27,920
-seeing that it actually--
+seeing that it actually &mdash;
 
 105
 00:04:27,920 --> 00:04:29,535
@@ -574,7 +574,7 @@ Yeah, this is great.
 
 123
 00:05:07,450 --> 00:05:08,460
-I've actually--
+I've actually &mdash;
 
 124
 00:05:08,460 --> 00:05:12,460
@@ -903,7 +903,7 @@ more infrequently.
 
 193
 00:08:51,060 --> 00:08:53,150
-But there was, I think--
+But there was, I think &mdash;
 
 194
 00:08:53,150 --> 00:08:54,790
@@ -940,7 +940,7 @@ of how to improve this work.
 
 201
 00:09:15,570 --> 00:09:16,900
-Is there anything that--
+Is there anything that &mdash;
 
 202
 00:09:16,900 --> 00:09:21,700
@@ -1037,7 +1037,7 @@ Awesome.
 
 222
 00:10:05,940 --> 00:10:07,110
-So we'll switch over--
+So we'll switch over &mdash;
 
 223
 00:10:07,110 --> 00:10:08,685
@@ -1084,7 +1084,7 @@ PAUL IRISH: Yeah
 232
 00:10:29,550 --> 00:10:31,580
 HAKIM EL HATTAB: Because
-I couldn't use--
+I couldn't use &mdash;
 
 233
 00:10:31,580 --> 00:10:36,250
@@ -1241,7 +1241,7 @@ Or what's your workflow there?
 267
 00:11:47,910 --> 00:11:50,200
 HAKIM EL HATTAB: I just started
-using the-- because
+using the &mdash; because
 
 268
 00:11:50,200 --> 00:11:53,600
@@ -1513,7 +1513,7 @@ a slower FPS number.
 
 326
 00:14:30,700 --> 00:14:31,250
-And so--
+And so &mdash;
 
 327
 00:14:31,250 --> 00:14:33,910
@@ -1865,7 +1865,7 @@ are talking for awhile.
 
 403
 00:19:26,160 --> 00:19:27,140
-And it would just like--
+And it would just like &mdash;
 
 404
 00:19:27,140 --> 00:19:33,185
@@ -1934,7 +1934,7 @@ you can write it in WYSIWYG
 
 419
 00:20:40,110 --> 00:20:41,680
-editor, you see the--
+editor, you see the &mdash;
 
 420
 00:20:41,680 --> 00:20:44,240
@@ -2055,7 +2055,7 @@ trying to use my own stuff.
 
 445
 00:21:54,070 --> 00:21:56,890
-Wherever I can, just to--
+Wherever I can, just to &mdash;
 
 446
 00:21:56,890 --> 00:21:59,430
@@ -2124,7 +2124,7 @@ really nice.
 460
 00:22:29,120 --> 00:22:35,100
 So I don't have an
-ability to--
+ability to &mdash;
 
 461
 00:22:35,100 --> 00:22:38,240
@@ -2366,8 +2366,8 @@ and the Chrome team.
 
 513
 00:24:37,260 --> 00:24:40,000
-The techniques about--
-there's a lot of--
+The techniques about &mdash;
+there's a lot of &mdash;
 
 514
 00:24:40,000 --> 00:24:42,370
@@ -2537,7 +2537,7 @@ get that just right.
 
 550
 00:26:17,950 --> 00:26:19,465
-And we also--
+And we also &mdash;
 
 551
 00:26:19,465 --> 00:26:21,520
@@ -2603,7 +2603,7 @@ Cool.
 
 565
 00:26:55,030 --> 00:26:57,040
-Yeah, where do you use--
+Yeah, where do you use &mdash;
 
 566
 00:26:57,040 --> 00:27:00,291
@@ -2767,7 +2767,7 @@ it's very cool.
 
 600
 00:28:35,536 --> 00:28:37,520
-I especially like--
+I especially like &mdash;
 
 601
 00:28:37,520 --> 00:28:41,160
@@ -2834,7 +2834,7 @@ that exact thing.
 614
 00:29:14,820 --> 00:29:16,540
 Because then you limit yourself
-from actually--
+from actually &mdash;
 
 615
 00:29:16,540 --> 00:29:18,990

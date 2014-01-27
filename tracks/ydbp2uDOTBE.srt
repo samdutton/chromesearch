@@ -770,7 +770,7 @@ I'll end here, is we just
 
 162
 00:07:20,290 --> 00:07:21,150
-actually had--
+actually had &mdash;
 
 163
 00:07:21,150 --> 00:07:24,090
@@ -945,11 +945,11 @@ we thought about
 
 200
 00:08:41,580 --> 00:08:43,419
-back then, in 2007--
+back then, in 2007 &mdash;
 
 201
 00:08:43,419 --> 00:08:45,180
-which seems like so long ago--
+which seems like so long ago &mdash;
 
 202
 00:08:45,180 --> 00:08:47,850
@@ -1109,7 +1109,7 @@ today is when you think about
 
 234
 00:10:20,890 --> 00:10:22,280
-how you spend your time--
+how you spend your time &mdash;
 
 235
 00:10:22,280 --> 00:10:26,340
@@ -1119,7 +1119,7 @@ like Google I/O, or at a
 236
 00:10:26,340 --> 00:10:30,070
 festival, or running
-an obstacle race--
+an obstacle race &mdash;
 
 237
 00:10:30,070 --> 00:10:33,320
@@ -1324,7 +1324,7 @@ I've built, including my
 280
 00:12:37,640 --> 00:12:40,210
 current one, my last one, the
-first one, all of them--
+first one, all of them &mdash;
 
 281
 00:12:40,210 --> 00:12:42,280
@@ -1334,7 +1334,7 @@ heard about and the ones that
 282
 00:12:42,280 --> 00:12:48,320
 failed miserably or were lost
-in the sands of time--
+in the sands of time &mdash;
 
 283
 00:12:48,320 --> 00:12:53,590
@@ -1458,7 +1458,7 @@ One Laptop Per Child with him.
 
 309
 00:14:02,170 --> 00:14:04,130
-And I became a--
+And I became a &mdash;
 
 310
 00:14:04,130 --> 00:14:06,340
@@ -1481,7 +1481,7 @@ the level that I did.
 314
 00:14:13,900 --> 00:14:18,210
 And I decided to start my next
-company-- again, I just always
+company &mdash; again, I just always
 
 315
 00:14:18,210 --> 00:14:20,310
@@ -1644,7 +1644,7 @@ Well, thanks for joining us.
 
 349
 00:15:53,400 --> 00:15:56,250
-So I'm going to turn quickly--
+So I'm going to turn quickly &mdash;
 we often speak about the
 
 350
@@ -1682,8 +1682,8 @@ foremost, I can't stress
 
 357
 00:16:13,160 --> 00:16:16,380
-enough-- especially since I
-married to him-- on how
+enough &mdash; especially since I
+married to him &mdash; on how
 
 358
 00:16:16,380 --> 00:16:18,660
@@ -1835,7 +1835,7 @@ and livelihoods for your idea.
 
 389
 00:17:45,710 --> 00:17:47,110
-That they're putting their--
+That they're putting their &mdash;
 
 390
 00:17:47,110 --> 00:17:48,650
@@ -1929,7 +1929,7 @@ that your vision is crystal
 
 409
 00:18:36,780 --> 00:18:38,250
-clear and it's compelling--
+clear and it's compelling &mdash;
 
 410
 00:18:38,250 --> 00:18:40,090
@@ -2014,7 +2014,7 @@ way you have been able to
 427
 00:19:19,170 --> 00:19:21,560
 dramatically disrupt the
-display industry--
+display industry &mdash;
 
 428
 00:19:21,560 --> 00:19:25,050
@@ -2105,7 +2105,7 @@ people in the various fabs to
 
 446
 00:20:16,590 --> 00:20:21,190
-say yes-- they say no 99% of
+say yes &mdash; they say no 99% of
 the time, but you work and
 
 447
@@ -2124,7 +2124,7 @@ manufacturing facilities, till
 
 450
 00:20:29,890 --> 00:20:33,115
-now that the problem--
+now that the problem &mdash;
 
 451
 00:20:33,115 --> 00:20:35,820
@@ -2141,11 +2141,11 @@ multinational startup.
 
 454
 00:20:43,250 --> 00:20:44,410
-And it's hard--
+And it's hard &mdash;
 
 455
 00:20:44,410 --> 00:20:47,260
-15 time zones and languages--
+15 time zones and languages &mdash;
 
 456
 00:20:47,260 --> 00:20:49,640
@@ -2169,7 +2169,7 @@ various, if you will, axes of
 
 460
 00:20:58,730 --> 00:20:59,630
-creativity--
+creativity &mdash;
 
 461
 00:20:59,630 --> 00:21:02,900
@@ -2225,7 +2225,7 @@ like violate what I say.
 
 472
 00:21:35,500 --> 00:21:37,610
-And sort of creating--
+And sort of creating &mdash;
 
 473
 00:21:37,610 --> 00:21:41,960
@@ -2281,15 +2281,15 @@ and how you navigated that?
 
 484
 00:22:05,930 --> 00:22:07,870
-CATERINA FAKE: Well, exits--
+CATERINA FAKE: Well, exits &mdash;
 
 485
 00:22:07,870 --> 00:22:09,034
-exits are--
+exits are &mdash;
 
 486
 00:22:09,034 --> 00:22:11,010
-exits--
+exits &mdash;
 
 487
 00:22:11,010 --> 00:22:14,460
@@ -2389,7 +2389,7 @@ and casual games.
 507
 00:23:17,700 --> 00:23:23,200
 And so it would be kind of
-like an exaggeration--
+like an exaggeration &mdash;
 
 508
 00:23:23,200 --> 00:23:25,260
@@ -2450,7 +2450,7 @@ So it was a bit nuts.
 
 520
 00:23:58,480 --> 00:24:01,340
-And to get up every morning--
+And to get up every morning &mdash;
 the only guy that was getting
 
 521
@@ -2602,7 +2602,7 @@ a photo-sharing site.
 
 553
 00:25:16,200 --> 00:25:18,160
-And I'm like, you're--
+And I'm like, you're &mdash;
 
 554
 00:25:18,160 --> 00:25:18,870
@@ -2665,7 +2665,7 @@ was widely noticed, actually.
 567
 00:25:51,000 --> 00:25:56,050
 Because if you recall back at
-the time-- it was like 2003--
+the time &mdash; it was like 2003 &mdash;
 
 568
 00:25:56,050 --> 00:25:58,890
@@ -2703,7 +2703,7 @@ six unknown people in
 575
 00:26:09,880 --> 00:26:11,410
 Vancouver, and nobody
-would return-- so it
+would return &mdash; so it
 
 576
 00:26:11,410 --> 00:26:12,380
@@ -2977,7 +2977,7 @@ That's entrepreneur.
 
 635
 00:28:07,070 --> 00:28:09,840
-And in my opinion--
+And in my opinion &mdash;
 
 636
 00:28:09,840 --> 00:28:12,530
@@ -3172,7 +3172,7 @@ taught to be able to take
 
 677
 00:29:44,450 --> 00:29:46,260
-risk, be creative, fail--
+risk, be creative, fail &mdash;
 
 678
 00:29:46,260 --> 00:29:47,170
@@ -3208,7 +3208,7 @@ empowering more
 
 685
 00:29:59,400 --> 00:30:01,940
-entrepreneurs-- if you get off
+entrepreneurs &mdash; if you get off
 on the sixth floor of our
 
 686
@@ -3452,7 +3452,7 @@ what you're trying to do.
 737
 00:32:10,740 --> 00:32:13,400
 And if you're saying, yes,
-I like that, but--
+I like that, but &mdash;
 
 738
 00:32:13,400 --> 00:32:17,840
@@ -3467,7 +3467,7 @@ different things, but it
 740
 00:32:20,170 --> 00:32:22,250
 tends to be a big thing
-hanging-- you know, a
+hanging &mdash; you know, a
 
 741
 00:32:22,250 --> 00:32:23,940
@@ -3476,7 +3476,7 @@ functional tethered prototype.
 742
 00:32:23,940 --> 00:32:26,500
 And it's really hard
-for a VC to get--
+for a VC to get &mdash;
 
 743
 00:32:26,500 --> 00:32:29,300
@@ -3486,7 +3486,7 @@ the core competence anymore in
 744
 00:32:29,300 --> 00:32:31,650
 Silicon Valley, pretty
-much, to--
+much, to &mdash;
 
 745
 00:32:31,650 --> 00:32:33,210
@@ -3538,7 +3538,7 @@ But yeah, it's not easy.
 755
 00:33:00,670 --> 00:33:05,090
 But then again, there's not
-this sort of path--
+this sort of path &mdash;
 
 756
 00:33:05,090 --> 00:33:06,870
@@ -3612,7 +3612,7 @@ understand the question.
 
 772
 00:33:43,550 --> 00:33:45,870
-MARY GROVE: So vision--
+MARY GROVE: So vision &mdash;
 
 773
 00:33:45,870 --> 00:33:48,380
@@ -3630,7 +3630,7 @@ JULIA HARTZ: Yeah, yeah, yeah.
 
 776
 00:33:55,150 --> 00:33:56,170
-I would rate--
+I would rate &mdash;
 
 777
 00:33:56,170 --> 00:33:59,410
@@ -3705,7 +3705,7 @@ would rank them.
 792
 00:34:30,360 --> 00:34:32,106
 But I think that as
-an entrepreneur--
+an entrepreneur &mdash;
 
 793
 00:34:32,106 --> 00:34:34,650
@@ -3929,7 +3929,7 @@ him at a wedding.
 840
 00:36:40,440 --> 00:36:43,740
 SLAVA RUBIN: So my co-founders
-were--
+were &mdash;
 
 841
 00:36:43,740 --> 00:36:44,540
@@ -4072,7 +4072,7 @@ co-founder.
 
 872
 00:37:48,100 --> 00:37:49,630
-I think a lot of time--
+I think a lot of time &mdash;
 
 873
 00:37:49,630 --> 00:37:50,010
@@ -4175,7 +4175,7 @@ was just a Photoshop file.
 
 895
 00:38:37,990 --> 00:38:40,270
-It was actually just-- it was
+It was actually just &mdash; it was
 an image in Photoshop.
 
 896
@@ -4185,7 +4185,7 @@ I was like, I see this.
 897
 00:38:43,840 --> 00:38:44,972
 SLAVA RUBIN: Yeah,
-I think that--
+I think that &mdash;
 
 898
 00:38:44,972 --> 00:38:48,850
@@ -4255,7 +4255,7 @@ enough, because a VC told you.
 
 912
 00:39:18,810 --> 00:39:21,940
-There's things like--
+There's things like &mdash;
 
 913
 00:39:21,940 --> 00:39:24,230
@@ -4300,7 +4300,7 @@ yourself your own truths.
 
 922
 00:39:41,530 --> 00:39:43,490
-Because I dare you-- you
+Because I dare you &mdash; you
 will that most of
 
 923
@@ -4340,7 +4340,7 @@ assuming that you start big
 931
 00:40:02,770 --> 00:40:05,440
 and swing for the fences, and
-just don't do-- don't do
+just don't do &mdash; don't do
 
 932
 00:40:05,440 --> 00:40:08,030
@@ -4358,7 +4358,7 @@ companies in the world, even
 
 935
 00:40:16,240 --> 00:40:17,830
-though you didn't mean to--
+though you didn't mean to &mdash;
 
 936
 00:40:17,830 --> 00:40:20,970
@@ -4385,7 +4385,7 @@ on, what you're going
 
 941
 00:40:31,550 --> 00:40:33,570
-to do if you happen--
+to do if you happen &mdash;
 
 942
 00:40:33,570 --> 00:40:36,710
@@ -4455,7 +4455,7 @@ why do startups?
 956
 00:41:10,870 --> 00:41:13,060
 If you just join a big
-company, I mean--
+company, I mean &mdash;
 
 957
 00:41:13,060 --> 00:41:14,820
@@ -4529,12 +4529,12 @@ that I've learned along
 
 972
 00:41:44,400 --> 00:41:46,580
-this journey-- and it was a
+this journey &mdash; and it was a
 pretty big one for me, coming
 
 973
 00:41:46,580 --> 00:41:50,030
-from traditional media-- is
+from traditional media &mdash; is
 don't believe the hype.
 
 974
@@ -4613,7 +4613,7 @@ making your brand better.
 
 990
 00:42:26,980 --> 00:42:29,136
-And it's not about--
+And it's not about &mdash;
 
 991
 00:42:29,136 --> 00:42:32,840

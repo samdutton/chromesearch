@@ -8,7 +8,7 @@ talk about {opt-in.}
 
 3
 00:00:01,360 --> 00:00:03,030
-MATT GAUNT: [? Flash--
+MATT GAUNT: [? Flash &mdash;
 ?] I punish myself.
 
 4
@@ -38,8 +38,8 @@ about cross-device development.
 
 10
 00:00:17,040 --> 00:00:20,990
-Like Jake said-- if my
-clicker would work-- my name
+Like Jake said &mdash; if my
+clicker would work &mdash; my name
 
 11
 00:00:20,990 --> 00:00:22,550
@@ -356,11 +356,11 @@ bit insane, the fact
 78
 00:02:54,100 --> 00:02:56,500
 that I'm going to tell you
-how to launch a browser--
+how to launch a browser &mdash;
 
 79
 00:02:56,500 --> 00:03:00,140
-tap that little icon--
+tap that little icon &mdash;
 but I'm going to.
 
 80
@@ -377,7 +377,7 @@ you, there's already one tool.
 
 83
 00:03:08,010 --> 00:03:12,110
-So, iterations-- for me,
+So, iterations &mdash; for me,
 one of the main reasons
 
 84
@@ -471,12 +471,12 @@ is Live Reload.
 103
 00:03:52,840 --> 00:03:55,840
 So if you're not
-familiar with Grunt--
+familiar with Grunt &mdash;
 
 104
 00:03:55,840 --> 00:04:00,180
 I think there was half
-that maybe used it--
+that maybe used it &mdash;
 
 105
 00:04:00,180 --> 00:04:05,200
@@ -943,7 +943,7 @@ quick turnaround as to what
 202
 00:08:30,100 --> 00:08:33,169
 your site looks like across
-various devices-- well,
+various devices &mdash; well,
 
 203
 00:08:33,169 --> 00:08:35,380
@@ -1167,7 +1167,7 @@ a demo page, which
 
 249
 00:10:40,110 --> 00:10:45,355
-is just a plain HTML spot--
+is just a plain HTML spot &mdash;
 do I have this on my tablet?
 
 250
@@ -1491,7 +1491,7 @@ into the abyss.
 
 320
 00:14:02,940 --> 00:14:09,650
-Hit Refresh on my desktop--
+Hit Refresh on my desktop &mdash;
 oh, that's definitely not good.
 
 321
@@ -1517,7 +1517,7 @@ couple of browsers.
 326
 00:14:19,060 --> 00:14:23,580
 So if I hit Launch on
-this-- damn you, Nexus 10.
+this &mdash; damn you, Nexus 10.
 
 327
 00:14:23,580 --> 00:14:26,024
@@ -1558,7 +1558,7 @@ and I want to launch it in,
 
 335
 00:14:47,640 --> 00:14:54,200
-let's say, Firefox--
+let's say, Firefox &mdash;
 damn you, Twitter.
 
 336
@@ -1906,11 +1906,11 @@ just when you start using it.
 409
 00:17:56,141 --> 00:17:57,640
 And the other thing
-is there is no--
+is there is no &mdash;
 
 410
 00:17:57,640 --> 00:17:59,597
-I should have said this--
+I should have said this &mdash;
 no app stores, which
 
 411
@@ -2053,7 +2053,7 @@ company which is basically
 440
 00:19:16,410 --> 00:19:21,280
 building versions
-of-- I did have it.
+of &mdash; I did have it.
 
 441
 00:19:21,280 --> 00:19:23,440
@@ -2269,7 +2269,7 @@ you're essentially
 487
 00:21:18,600 --> 00:21:20,900
 getting the actual ROMs that
-come with these devices--
+come with these devices &mdash;
 
 488
 00:21:20,900 --> 00:21:22,875
@@ -2443,12 +2443,12 @@ That's literally all it does.
 524
 00:22:57,450 --> 00:23:10,380
 But if I go into Chrome Inspect
-and fumble about a bit-- there
+and fumble about a bit &mdash; there
 
 525
 00:23:10,380 --> 00:23:18,500
-we go-- you should see
-that-- oh, come on-- you
+we go &mdash; you should see
+that &mdash; oh, come on &mdash; you
 
 526
 00:23:18,500 --> 00:23:22,780
@@ -2736,7 +2736,7 @@ was going to say.
 
 585
 00:26:11,780 --> 00:26:17,860
-I've included-- there we go--
+I've included &mdash; there we go &mdash;
 some links, the GitHub link
 
 586
@@ -2844,5 +2844,5 @@ when the Chrome and Android
 
 608
 00:27:14,100 --> 00:27:16,220
-leads are going to be--
+leads are going to be &mdash;
 

@@ -159,7 +159,7 @@ a great question.
 
 35
 00:01:28,850 --> 00:01:30,860
-So a snippet is--
+So a snippet is &mdash;
 
 36
 00:01:30,860 --> 00:01:35,330
@@ -251,7 +251,7 @@ Let's share that.
 55
 00:02:33,240 --> 00:02:37,930
 So if I jump on over to Google+
-and reload the page--
+and reload the page &mdash;
 
 56
 00:02:37,930 --> 00:02:40,190
@@ -1023,11 +1023,11 @@ list of schemas.
 224
 00:10:26,940 --> 00:10:29,290
 Whenever you use a specific
-schema-- like we were just
+schema &mdash; like we were just
 
 225
 00:10:29,290 --> 00:10:30,540
-using local business--
+using local business &mdash;
 
 226
 00:10:30,540 --> 00:10:38,450
@@ -1044,7 +1044,7 @@ sub schemas of that.
 229
 00:10:41,350 --> 00:10:43,490
 And you can use that wherever
-that would be--
+that would be &mdash;
 
 230
 00:10:43,490 --> 00:10:47,020
@@ -1601,7 +1601,7 @@ lot of the same stuff.
 
 351
 00:16:25,380 --> 00:16:26,350
-It's called--
+It's called &mdash;
 
 352
 00:16:26,350 --> 00:16:27,070
@@ -1609,7 +1609,7 @@ what is it called?
 
 353
 00:16:27,070 --> 00:16:27,890
-Beta markup, or--
+Beta markup, or &mdash;
 
 354
 00:16:27,890 --> 00:16:29,650

@@ -915,16 +915,16 @@ view is labeled with the
 
 195
 00:08:42,140 --> 00:08:43,049
-content description--
+content description &mdash;
 
 196
 00:08:43,049 --> 00:08:43,870
-folder--
+folder &mdash;
 
 197
 00:08:43,870 --> 00:08:45,690
 and the bubble text view
-has the text--
+has the text &mdash;
 
 198
 00:08:45,690 --> 00:08:46,240
@@ -1057,7 +1057,7 @@ and low-vision users.
 226
 00:09:54,680 --> 00:09:58,160
 For example, it describes
-what you touch--
+what you touch &mdash;
 
 227
 00:09:58,160 --> 00:10:00,050
@@ -1071,12 +1071,12 @@ Silence Speech.
 229
 00:10:01,170 --> 00:10:02,960
 I can continue to navigate
-around the interface--
+around the interface &mdash;
 
 230
 00:10:02,960 --> 00:10:04,855
 ANDROID: When TalkBack
-is on, on switch--
+is on, on switch &mdash;
 
 231
 00:10:04,855 --> 00:10:08,810
@@ -1096,7 +1096,7 @@ ANDROID: OK.
 
 235
 00:10:11,200 --> 00:10:12,020
-Cancel but--
+Cancel but &mdash;
 
 236
 00:10:12,020 --> 00:10:13,400
@@ -1105,16 +1105,16 @@ Settings.
 237
 00:10:13,400 --> 00:10:15,060
 CASEY BURKHARDT: To activate
-something in the interface--
+something in the interface &mdash;
 
 238
 00:10:15,060 --> 00:10:15,730
-ANDROID: When TalkBack is on--
+ANDROID: When TalkBack is on &mdash;
 
 239
 00:10:15,730 --> 00:10:16,325
 CASEY BURKHARDT: I
-give it focus--
+give it focus &mdash;
 
 240
 00:10:16,325 --> 00:10:16,610
@@ -1271,7 +1271,7 @@ Use pitch changes.
 
 275
 00:11:24,820 --> 00:11:26,810
-Speak keyboard feedback and--
+Speak keyboard feedback and &mdash;
 
 276
 00:11:26,810 --> 00:11:27,170
@@ -1292,7 +1292,7 @@ ANDROID: Speech volume.
 
 280
 00:11:29,210 --> 00:11:31,730
-Match media--
+Match media &mdash;
 
 281
 00:11:31,730 --> 00:11:33,620
@@ -1364,7 +1364,7 @@ Let's enable that.
 295
 00:12:05,030 --> 00:12:10,700
 ANDROID: Back, Settings, Back,
-Accessibility, Show--
+Accessibility, Show &mdash;
 
 296
 00:12:10,700 --> 00:12:13,020
@@ -1478,7 +1478,7 @@ that the display updates.
 320
 00:13:02,900 --> 00:13:05,632
 ANDROID: When BrailleBack
-is on--
+is on &mdash;
 
 321
 00:13:05,632 --> 00:13:06,520
@@ -1725,12 +1725,12 @@ updates throughout the
 374
 00:15:04,020 --> 00:15:05,920
 lifecycle of your
-application--
+application &mdash;
 
 375
 00:15:05,920 --> 00:15:09,090
 for example, a play/pause button
-that changes state--
+that changes state &mdash;
 
 376
 00:15:09,090 --> 00:15:11,520
@@ -1969,7 +1969,7 @@ just entirely empty.
 
 425
 00:17:31,920 --> 00:17:33,890
-Luckily, we have an answer--
+Luckily, we have an answer &mdash;
 
 426
 00:17:33,890 --> 00:17:36,930
@@ -2179,7 +2179,7 @@ conveying to the user.
 471
 00:19:00,250 --> 00:19:02,320
 You have some sort of
-interaction model-- clicking,
+interaction model &mdash; clicking,
 
 472
 00:19:02,320 --> 00:19:04,360
@@ -2241,7 +2241,7 @@ those to the framework.
 
 484
 00:19:34,970 --> 00:19:36,150
-So here we've got--
+So here we've got &mdash;
 
 485
 00:19:36,150 --> 00:19:38,070
@@ -2524,7 +2524,7 @@ on the screen.
 
 544
 00:22:03,270 --> 00:22:04,520
-ANDROID: Bar graph I/--
+ANDROID: Bar graph I/ &mdash;
 
 545
 00:22:04,520 --> 00:22:07,800
@@ -3086,16 +3086,16 @@ you're trying to convey.
 663
 00:26:58,650 --> 00:27:00,900
 So here each bar has
-two properties--
+two properties &mdash;
 
 664
 00:27:00,900 --> 00:27:02,490
-its indexes within the array--
+its indexes within the array &mdash;
 
 665
 00:27:02,490 --> 00:27:04,040
 where it's displayed
-on screen--
+on screen &mdash;
 
 666
 00:27:04,040 --> 00:27:05,710
@@ -3390,7 +3390,7 @@ over to our bar graph
 727
 00:29:33,270 --> 00:29:39,000
 interactive and, when I
-do Read All From Top--
+do Read All From Top &mdash;
 
 728
 00:29:39,000 --> 00:29:39,780
@@ -3489,7 +3489,7 @@ this to the user.
 
 750
 00:30:22,140 --> 00:30:24,260
-We're going to do this--
+We're going to do this &mdash;
 
 751
 00:30:24,260 --> 00:30:28,460
@@ -3655,7 +3655,7 @@ missing one thing.
 785
 00:31:56,000 --> 00:31:57,520
 Let's make sure that
-touching--
+touching &mdash;
 
 786
 00:31:57,520 --> 00:31:59,210
@@ -3881,7 +3881,7 @@ everything makes sense.
 
 834
 00:33:51,540 --> 00:33:52,790
-ANDROID: Bar graph I/--
+ANDROID: Bar graph I/ &mdash;
 
 835
 00:33:52,790 --> 00:33:54,860
@@ -4018,7 +4018,7 @@ you may want to use the
 864
 00:35:01,930 --> 00:35:04,460
 ExploreByTouchHelper class
-to simplify things--
+to simplify things &mdash;
 
 865
 00:35:04,460 --> 00:35:07,065
@@ -4235,11 +4235,11 @@ market and you look at the top
 910
 00:37:16,730 --> 00:37:21,170
 five highest potential markets,
-they spell cyber--
+they spell cyber &mdash;
 
 911
 00:37:21,170 --> 00:37:22,280
-C-I-B-I-R--
+C-I-B-I-R &mdash;
 
 912
 00:37:22,280 --> 00:37:25,690
@@ -4287,7 +4287,7 @@ text-to-speech can help them.
 921
 00:37:51,490 --> 00:37:54,290
 In addition to people with
-print disabilities--
+print disabilities &mdash;
 
 922
 00:37:54,290 --> 00:37:57,380
@@ -4296,7 +4296,7 @@ about blindness and other
 
 923
 00:37:57,380 --> 00:37:59,110
-vision impairments--
+vision impairments &mdash;
 
 924
 00:37:59,110 --> 00:38:02,110
@@ -4532,7 +4532,7 @@ turned on.
 974
 00:40:26,080 --> 00:40:31,060
 As we showed during the talk,
-you can pause TalkBack--
+you can pause TalkBack &mdash;
 
 975
 00:40:31,060 --> 00:40:33,930
@@ -4542,7 +4542,7 @@ to the device real quick.
 976
 00:40:33,930 --> 00:40:39,860
 So you can pause TalkBack by
-doing the down right and--
+doing the down right and &mdash;
 
 977
 00:40:39,860 --> 00:40:41,015
@@ -4850,7 +4850,7 @@ point.
 1041
 00:43:14,630 --> 00:43:16,940
 Casey probably demoed
-this during his--
+this during his &mdash;
 
 1042
 00:43:16,940 --> 00:43:18,390

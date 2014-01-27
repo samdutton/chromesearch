@@ -146,7 +146,7 @@ network, so please, if
 
 33
 00:01:24,050 --> 00:01:24,550
-you are with us--
+you are with us &mdash;
 
 34
 00:01:24,550 --> 00:01:24,830
@@ -167,7 +167,7 @@ So I'm accepting.
 
 38
 00:01:29,350 --> 00:01:32,010
-I have this--
+I have this &mdash;
 
 39
 00:01:32,010 --> 00:01:33,450
@@ -336,8 +336,8 @@ us to do too much.
 
 75
 00:02:55,620 --> 00:02:57,780
-So basically, I'll try--
-maybe we'll--
+So basically, I'll try &mdash;
+maybe we'll &mdash;
 
 76
 00:02:57,780 --> 00:02:59,595
@@ -471,7 +471,7 @@ into the cloud.
 
 104
 00:04:06,610 --> 00:04:08,810
-So basically, we are able here--
+So basically, we are able here &mdash;
 and here it was quite
 
 105
@@ -741,7 +741,7 @@ connection, we'll still be
 
 162
 00:06:30,620 --> 00:06:31,870
-able to do the most--
+able to do the most &mdash;
 
 163
 00:06:31,870 --> 00:06:34,470
@@ -814,12 +814,12 @@ So cloud and server.
 
 178
 00:07:09,710 --> 00:07:12,680
-So if I'm playing the role-- and
+So if I'm playing the role &mdash; and
 please take my things with
 
 179
 00:07:12,680 --> 00:07:14,060
-a grain of salt here--
+a grain of salt here &mdash;
 
 180
 00:07:14,060 --> 00:07:18,520
@@ -1284,7 +1284,7 @@ to write code in your language
 
 278
 00:11:07,070 --> 00:11:07,900
-of choice--
+of choice &mdash;
 
 279
 00:11:07,900 --> 00:11:10,760
@@ -1954,7 +1954,7 @@ on the machine itself.
 
 423
 00:16:48,620 --> 00:16:49,870
-DANNY HERMES: Let me--
+DANNY HERMES: Let me &mdash;
 
 424
 00:16:49,870 --> 00:16:55,970
@@ -2769,7 +2769,7 @@ our account.
 
 596
 00:24:43,450 --> 00:24:45,080
-So we're actually going to--
+So we're actually going to &mdash;
 
 597
 00:24:45,080 --> 00:24:47,330
@@ -2854,7 +2854,7 @@ Yeah.
 
 615
 00:25:31,410 --> 00:25:33,730
-So on the client--
+So on the client &mdash;
 
 616
 00:25:33,730 --> 00:25:35,250
@@ -3633,7 +3633,7 @@ the general concept.
 780
 00:32:52,960 --> 00:32:55,415
 So with access controls,
-we're essentially--
+we're essentially &mdash;
 
 781
 00:32:55,415 --> 00:32:58,070
@@ -4056,7 +4056,7 @@ Cloud and
 870
 00:37:09,500 --> 00:37:10,870
 Endpoints with that
-so that Ferris--
+so that Ferris &mdash;
 
 871
 00:37:10,870 --> 00:37:12,090
@@ -4069,7 +4069,7 @@ AUDIENCE: Ferris.
 
 873
 00:37:13,220 --> 00:37:14,120
-Ferris by--
+Ferris by &mdash;
 
 874
 00:37:14,120 --> 00:37:15,610
@@ -4135,7 +4135,7 @@ OK, cool.
 887
 00:37:41,000 --> 00:37:44,720
 Yeah, so I was just wondering
-how much we could expect--
+how much we could expect &mdash;
 
 888
 00:37:44,720 --> 00:37:46,620

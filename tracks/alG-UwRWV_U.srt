@@ -115,7 +115,7 @@ broadcast in standard def.
 26
 00:00:58,420 --> 00:01:02,070
 And you kind of go, wow,
-this looks like--
+this looks like &mdash;
 
 27
 00:01:02,070 --> 00:01:03,320
@@ -297,7 +297,7 @@ And it's the smallest unit,
 65
 00:02:53,970 --> 00:02:55,620
 So then there's a
-second kind--
+second kind &mdash;
 
 66
 00:02:55,620 --> 00:02:58,260
@@ -339,7 +339,7 @@ is CSS pixels.
 74
 00:03:15,570 --> 00:03:17,540
 These are the ones we're all
-familiar with from CSS--
+familiar with from CSS &mdash;
 
 75
 00:03:17,540 --> 00:03:20,710
@@ -352,8 +352,8 @@ best practices, and you've got
 
 77
 00:03:23,522 --> 00:03:27,050
-a width=devi viewport-- we'll go
-into what it means later--
+a width=devi viewport &mdash; we'll go
+into what it means later &mdash;
 
 78
 00:03:27,050 --> 00:03:31,530
@@ -1144,7 +1144,7 @@ zoom, which happens on a
 
 246
 00:11:19,490 --> 00:11:21,570
-couple of sites-- say you're
+couple of sites &mdash; say you're
 doing a multi-finger touch
 
 247
@@ -1154,7 +1154,7 @@ Google Maps, or
 
 248
 00:11:23,880 --> 00:11:25,560
-something like that--
+something like that &mdash;
 
 249
 00:11:25,560 --> 00:11:27,590
@@ -1263,7 +1263,7 @@ might want to tweak.
 
 271
 00:12:31,560 --> 00:12:32,810
-So Pete--
+So Pete &mdash;
 
 272
 00:12:32,810 --> 00:12:35,135
@@ -2112,7 +2112,7 @@ DPI displays.
 454
 00:21:25,310 --> 00:21:27,380
 The same thing happens for
-text-- the browser just does
+text &mdash; the browser just does
 
 455
 00:21:27,380 --> 00:21:29,050
@@ -2229,7 +2229,7 @@ different color.
 479
 00:22:32,690 --> 00:22:34,740
 So that's where SVG works
-really well--
+really well &mdash;
 
 480
 00:22:34,740 --> 00:22:36,150
@@ -2319,7 +2319,7 @@ to do one for everybody.
 
 498
 00:23:25,280 --> 00:23:26,960
-And then one other thing--
+And then one other thing &mdash;
 always having
 
 499
@@ -2406,7 +2406,7 @@ the JPEG quality to 30.
 516
 00:24:19,550 --> 00:24:22,090
 So I went from 90 all
-the way down to 30--
+the way down to 30 &mdash;
 
 517
 00:24:22,090 --> 00:24:23,480
@@ -2457,7 +2457,7 @@ ship, look at the little bulb,
 
 527
 00:24:53,280 --> 00:24:54,380
-look at the cranes--
+look at the cranes &mdash;
 
 528
 00:24:54,380 --> 00:24:56,800
@@ -2806,7 +2806,7 @@ their device pixel ratio.
 602
 00:28:09,840 --> 00:28:11,390
 There's an additional
-feature--
+feature &mdash;
 
 603
 00:28:11,390 --> 00:28:13,855
@@ -3247,7 +3247,7 @@ to serve the
 
 695
 00:32:11,250 --> 00:32:13,250
-perfect image reliably--
+perfect image reliably &mdash;
 
 696
 00:32:13,250 --> 00:32:15,450
@@ -3412,7 +3412,7 @@ backing store.
 730
 00:33:44,410 --> 00:33:46,510
 Think resource-constrained
-devices--
+devices &mdash;
 
 731
 00:33:46,510 --> 00:33:48,060
@@ -3580,12 +3580,12 @@ Apple just checked in a
 
 766
 00:35:26,520 --> 00:35:28,300
-change a couple of weeks ago--
+change a couple of weeks ago &mdash;
 
 767
 00:35:28,300 --> 00:35:30,750
 in fact, just at the
-end of April--
+end of April &mdash;
 
 768
 00:35:30,750 --> 00:35:32,490
@@ -3627,7 +3627,7 @@ playing on your Pixels, and
 776
 00:35:55,350 --> 00:35:58,465
 you've noticed some of those
-icon files look like--
+icon files look like &mdash;
 
 777
 00:35:58,465 --> 00:36:00,970

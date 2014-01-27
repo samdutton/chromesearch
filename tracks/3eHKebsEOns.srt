@@ -313,7 +313,7 @@ scrolling, we're getting very
 
 68
 00:04:06,250 --> 00:04:09,220
-few of those blank spots--
+few of those blank spots &mdash;
 and of course, as we
 
 69
@@ -373,7 +373,7 @@ paints and everything used to
 
 81
 00:04:42,255 --> 00:04:44,370
-block the--
+block the &mdash;
 
 82
 00:04:44,370 --> 00:04:46,730
@@ -829,7 +829,7 @@ show there, but I think we
 
 178
 00:08:28,910 --> 00:08:30,275
-have something cool for the--
+have something cool for the &mdash;
 
 179
 00:08:30,275 --> 00:08:32,419
@@ -978,7 +978,7 @@ the background.
 209
 00:09:45,400 --> 00:09:50,790
 And Paul had mentioned that
-you need a background--
+you need a background &mdash;
 
 210
 00:09:50,790 --> 00:09:54,170
@@ -1064,7 +1064,7 @@ want to add to this one?
 227
 00:10:40,060 --> 00:10:41,650
 PAUL KINLAN: No, this actually,
-so this is--
+so this is &mdash;
 
 228
 00:10:41,650 --> 00:10:43,840
@@ -1130,7 +1130,7 @@ about web audio at the moment.
 
 241
 00:11:06,256 --> 00:11:08,670
-But you might be caught-- there
+But you might be caught &mdash; there
 might be situations
 
 242
@@ -1199,11 +1199,11 @@ action interrupts this,
 
 256
 00:11:36,700 --> 00:11:38,930
-whether a user gets a phone--
+whether a user gets a phone &mdash;
 
 257
 00:11:38,930 --> 00:11:41,150
-say a user, you know, a person--
+say a user, you know, a person &mdash;
 they get the phone
 
 258
@@ -1417,7 +1417,7 @@ did it in this.
 
 304
 00:13:21,750 --> 00:13:23,810
-And now I need to do--
+And now I need to do &mdash;
 
 305
 00:13:23,810 --> 00:13:26,910
@@ -1667,11 +1667,11 @@ these nice components.
 
 358
 00:15:20,810 --> 00:15:23,620
-But the user face in HTML--
+But the user face in HTML &mdash;
 
 359
 00:15:23,620 --> 00:15:26,860
-is that a way of saying it?--
+is that a way of saying it? &mdash;
 is a lot simpler.
 
 360
@@ -1915,7 +1915,7 @@ so in this particular
 411
 00:17:24,349 --> 00:17:27,109
 instance, our navigation
-started at--
+started at &mdash;
 
 412
 00:17:27,109 --> 00:17:30,470
@@ -2251,7 +2251,7 @@ where you actually see the
 
 483
 00:20:23,600 --> 00:20:24,820
-text, and it says--
+text, and it says &mdash;
 
 484
 00:20:24,820 --> 00:20:27,720
@@ -2593,7 +2593,7 @@ hasn't heard of content
 
 557
 00:23:22,433 --> 00:23:24,360
-security policy, it basically--
+security policy, it basically &mdash;
 it's a set of
 
 558
@@ -2619,7 +2619,7 @@ mitigate cross site scripting.
 562
 00:23:36,570 --> 00:23:38,960
 So you can basically say,
-I don't allow scripts--
+I don't allow scripts &mdash;
 
 563
 00:23:38,960 --> 00:23:40,700
@@ -2673,7 +2673,7 @@ feature off.
 
 573
 00:23:58,710 --> 00:24:00,760
-So you can say, people can't--
+So you can say, people can't &mdash;
 
 574
 00:24:00,760 --> 00:24:03,970
@@ -3107,7 +3107,7 @@ and reload this page
 
 667
 00:27:44,150 --> 00:27:46,761
-so that we can see--
+so that we can see &mdash;
 
 668
 00:27:46,761 --> 00:27:47,790
@@ -3293,7 +3293,7 @@ and you can change that.
 
 707
 00:29:31,730 --> 00:29:32,900
-You can also--
+You can also &mdash;
 
 708
 00:29:32,900 --> 00:29:34,000
@@ -4220,7 +4220,7 @@ PETE LEPAGE: All right.
 905
 00:37:41,680 --> 00:37:44,000
 PAUL KINLAN: So yeah,
-I think we're--
+I think we're &mdash;
 
 906
 00:37:44,000 --> 00:37:44,970

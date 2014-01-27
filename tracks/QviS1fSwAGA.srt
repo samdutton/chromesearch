@@ -121,7 +121,7 @@ Vocodes it.
 27
 00:02:41,670 --> 00:02:44,270
 So you should be hearing,
-hopefully, some--
+hopefully, some &mdash;
 
 28
 00:02:44,270 --> 00:02:45,431
@@ -200,7 +200,7 @@ actually hear that I'm talking
 
 44
 00:03:26,650 --> 00:03:28,090
-into this and--
+into this and &mdash;
 
 45
 00:03:28,090 --> 00:03:29,000
@@ -388,7 +388,7 @@ have a wave file.
 
 85
 00:05:11,300 --> 00:05:12,730
-I can play back the wave file--
+I can play back the wave file &mdash;
 
 86
 00:05:12,730 --> 00:05:13,110
@@ -397,7 +397,7 @@ Recording.
 87
 00:05:13,110 --> 00:05:15,490
 So I click record
-and I get a--
+and I get a &mdash;
 
 88
 00:05:15,490 --> 00:05:18,700
@@ -435,7 +435,7 @@ something that people have a
 
 95
 00:05:33,266 --> 00:05:33,890
-lot of questions about--
+lot of questions about &mdash;
 
 96
 00:05:33,890 --> 00:05:34,590
@@ -586,7 +586,7 @@ JAN LINDEN: Yeah.
 
 127
 00:06:49,220 --> 00:06:50,340
-We can actually--
+We can actually &mdash;
 
 128
 00:06:50,340 --> 00:06:52,923
@@ -605,7 +605,7 @@ is coming that
 
 131
 00:06:56,855 --> 00:06:57,980
-will help in order--
+will help in order &mdash;
 
 132
 00:06:57,980 --> 00:06:58,340
@@ -664,12 +664,12 @@ live input.
 144
 00:07:22,170 --> 00:07:24,990
 The only other one that I
-added live input to--
+added live input to &mdash;
 
 145
 00:07:24,990 --> 00:07:26,380
 and this was actually
-the first one-- is
+the first one &mdash; is
 
 146
 00:07:26,380 --> 00:07:27,630
@@ -836,7 +836,7 @@ the things that I really
 
 181
 00:09:01,090 --> 00:09:04,960
-wanted to-- the reason that I
+wanted to &mdash; the reason that I
 really got into Web Audio was
 
 182
@@ -1493,7 +1493,7 @@ to me is we're really
 
 321
 00:15:10,270 --> 00:15:10,950
-getting to the point--
+getting to the point &mdash;
 
 322
 00:15:10,950 --> 00:15:13,390
@@ -1530,7 +1530,7 @@ It's kind of cool.
 329
 00:15:31,620 --> 00:15:33,930
 JAN LINDEN: So you can just
-hook up your guitar and--
+hook up your guitar and &mdash;
 
 330
 00:15:33,930 --> 00:15:35,740
@@ -1561,7 +1561,7 @@ But just plug in my guitar.
 
 336
 00:15:47,186 --> 00:15:48,740
-I actually have a guitar--
+I actually have a guitar &mdash;
 
 337
 00:15:48,740 --> 00:15:53,090
@@ -1699,7 +1699,7 @@ without any USB device or
 
 365
 00:17:09,890 --> 00:17:11,480
-anything, you can--
+anything, you can &mdash;
 
 366
 00:17:11,480 --> 00:17:13,670
@@ -2389,7 +2389,7 @@ be really exciting.
 511
 00:23:54,930 --> 00:23:57,930
 I can't wait to sort
-of start applying--
+of start applying &mdash;
 
 512
 00:23:57,930 --> 00:23:59,950
@@ -2411,7 +2411,7 @@ JAN LINDEN: Great.
 516
 00:24:04,260 --> 00:24:05,400
 CHRIS WILSON: So
-yeah, I think--
+yeah, I think &mdash;
 
 517
 00:24:05,400 --> 00:24:11,250
@@ -2544,7 +2544,7 @@ for improvement there.
 545
 00:25:23,720 --> 00:25:24,670
 As you mentioned,
-the convolver--
+the convolver &mdash;
 
 546
 00:25:24,670 --> 00:25:24,810
@@ -2690,12 +2690,12 @@ wrapped together.
 576
 00:26:52,910 --> 00:26:55,060
 Like you can play separately
-but it's not--
+but it's not &mdash;
 
 577
 00:26:55,060 --> 00:26:55,880
 JAN LINDEN: You can't
-really do anything--
+really do anything &mdash;
 
 578
 00:26:55,880 --> 00:26:57,600
@@ -2773,7 +2773,7 @@ really crank out a lot of
 
 593
 00:27:37,920 --> 00:27:39,120
-nodes together--
+nodes together &mdash;
 
 594
 00:27:39,120 --> 00:27:42,650
@@ -2977,7 +2977,7 @@ to the display and
 
 636
 00:29:30,080 --> 00:29:30,720
-everything so--
+everything so &mdash;
 
 637
 00:29:30,720 --> 00:29:33,110
@@ -3133,12 +3133,12 @@ it's playing in
 
 670
 00:30:59,330 --> 00:31:02,550
-an HTML5 audio tag--
+an HTML5 audio tag &mdash;
 
 671
 00:31:02,550 --> 00:31:04,360
 CHRIS WILSON: Or even a video
-tag you can then--
+tag you can then &mdash;
 
 672
 00:31:04,360 --> 00:31:07,540
@@ -3184,11 +3184,11 @@ Actually, yeah.
 
 681
 00:31:29,160 --> 00:31:30,520
-There's--
+There's &mdash;
 
 682
 00:31:30,520 --> 00:31:31,590
-JAN LINDEN: It's one of the--
+JAN LINDEN: It's one of the &mdash;
 
 683
 00:31:31,590 --> 00:31:34,990
@@ -3198,7 +3198,7 @@ effects on the live input
 684
 00:31:34,990 --> 00:31:42,750
 effects demo is an
-LFO filter that--
+LFO filter that &mdash;
 
 685
 00:31:42,750 --> 00:31:44,700

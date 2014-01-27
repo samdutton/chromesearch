@@ -240,7 +240,7 @@ It was great.
 
 53
 00:01:48,490 --> 00:01:50,940
-But in these days--
+But in these days &mdash;
 the only thing
 
 54
@@ -301,7 +301,7 @@ they'll do anything.
 
 66
 00:02:17,280 --> 00:02:20,667
-I don't-- I didn't buy
+I don't &mdash; I didn't buy
 new games for the PS3.
 
 67
@@ -468,8 +468,8 @@ an important update.
 
 101
 00:03:35,920 --> 00:03:38,150
-In the Google offices--
-or certainly in the UK--
+In the Google offices &mdash;
+or certainly in the UK &mdash;
 
 102
 00:03:38,150 --> 00:03:40,440
@@ -663,7 +663,7 @@ the manifest, just index HTML5
 
 142
 00:05:25,450 --> 00:05:28,780
-here-- that will automatically
+here &mdash; that will automatically
 become part of the cache.
 
 143
@@ -706,7 +706,7 @@ the CSS is going to work.
 
 151
 00:05:45,040 --> 00:05:47,220
-That should be-- it
+That should be &mdash; it
 shouldn't be SCS, should it?
 
 152
@@ -1283,7 +1283,7 @@ give it.
 275
 00:10:03,960 --> 00:10:06,924
 So here I'm just redirecting
-all of the requests or--
+all of the requests or &mdash;
 
 276
 00:10:06,924 --> 00:10:09,340
@@ -1704,7 +1704,7 @@ be that specific.
 363
 00:13:16,590 --> 00:13:19,647
 Of course, if that doesn't
-match anything in our caches--
+match anything in our caches &mdash;
 
 364
 00:13:19,647 --> 00:13:21,980
@@ -1923,7 +1923,7 @@ up for full page navigations.
 409
 00:14:54,320 --> 00:14:56,430
 So this, this bit of
-code-- what does this look
+code &mdash; what does this look
 
 410
 00:14:56,430 --> 00:14:58,765
@@ -2037,7 +2037,7 @@ state on every step.
 433
 00:15:51,570 --> 00:15:56,190
 If this does something I
-don't expect-- and it will--
+don't expect &mdash; and it will &mdash;
 
 434
 00:15:56,190 --> 00:15:57,760
@@ -2588,7 +2588,7 @@ We should not be doing this.
 
 549
 00:20:28,380 --> 00:20:30,160
-But let's-- we'll
+But let's &mdash; we'll
 gloss over that.
 
 550
@@ -2601,7 +2601,7 @@ Oh, yeah thanks.
 
 552
 00:20:33,239 --> 00:20:35,780
-But let's-- we're going to load
+But let's &mdash; we're going to load
 the main site now at the same
 
 553
@@ -2687,7 +2687,7 @@ the DNS work up front.
 570
 00:21:10,820 --> 00:21:13,480
 And we did a lot
-of the-- yeah, we
+of the &mdash; yeah, we
 
 571
 00:21:13,480 --> 00:21:16,245
@@ -2803,12 +2803,12 @@ we can actually fail silently.
 594
 00:22:01,389 --> 00:22:03,680
 Because this is just a load
-of a page-- the user hasn't
+of a page &mdash; the user hasn't
 
 595
 00:22:03,680 --> 00:22:05,700
 hit the Refresh
-button specifically--
+button specifically &mdash;
 
 596
 00:22:05,700 --> 00:22:07,470
@@ -2930,7 +2930,7 @@ It's pretty simple.
 621
 00:22:59,530 --> 00:23:02,824
 If options object dot
-useCache is true--
+useCache is true &mdash;
 
 622
 00:23:02,824 --> 00:23:04,240
@@ -3175,8 +3175,8 @@ ServiceWorker looking
 
 673
 00:25:07,190 --> 00:25:09,470
-like this-- you're caching
-some stuff-- at some point,
+like this &mdash; you're caching
+some stuff &mdash; at some point,
 
 674
 00:25:09,470 --> 00:25:10,620
@@ -3400,7 +3400,7 @@ this transition, reloadAll.
 721
 00:26:47,855 --> 00:26:49,230
 What this is going
-to tell-- it's
+to tell &mdash; it's
 
 722
 00:26:49,230 --> 00:26:52,980

@@ -917,7 +917,7 @@ but we used a bunch.
 195
 00:09:30,710 --> 00:09:36,830
 When we used the Chrome
-experimental apps API--
+experimental apps API &mdash;
 
 196
 00:09:36,830 --> 00:09:39,250
@@ -2120,7 +2120,7 @@ practice for doing that, but
 
 453
 00:22:26,270 --> 00:22:29,730
-inline scripts-- the problem
+inline scripts &mdash; the problem
 with inline scripts is, so
 
 454
@@ -2287,7 +2287,7 @@ block, and we've got
 488
 00:24:20,040 --> 00:24:22,790
 inline script in our
-button as well--
+button as well &mdash;
 
 489
 00:24:22,790 --> 00:24:24,740
@@ -2577,12 +2577,12 @@ you can do that and
 
 551
 00:27:49,330 --> 00:27:50,520
-that's really useful--
+that's really useful &mdash;
 
 552
 00:27:50,520 --> 00:27:55,380
 we'll dive into the
-chrome.storage API in a sec--
+chrome.storage API in a sec &mdash;
 
 553
 00:27:55,380 --> 00:27:59,540
@@ -2656,7 +2656,7 @@ index db, you going to put it
 568
 00:28:39,480 --> 00:28:41,380
 in local storage, are you
-going to put it--
+going to put it &mdash;
 
 569
 00:28:41,380 --> 00:28:43,800
@@ -2983,7 +2983,7 @@ can do, we can get and we
 
 637
 00:32:09,770 --> 00:32:11,940
-could save--
+could save &mdash;
 
 638
 00:32:11,940 --> 00:32:14,200
@@ -3576,7 +3576,7 @@ that fast, fast.
 
 764
 00:39:43,480 --> 00:39:45,390
-They want--
+They want &mdash;
 
 765
 00:39:45,390 --> 00:39:48,340
@@ -3618,12 +3618,12 @@ time out or set interval.
 
 773
 00:40:07,920 --> 00:40:10,640
-It's got three--
+It's got three &mdash;
 
 774
 00:40:10,640 --> 00:40:13,480
 I guess it's got three, I
-thought it had four--
+thought it had four &mdash;
 
 775
 00:40:13,480 --> 00:40:15,080
@@ -3761,7 +3761,7 @@ our event listener.
 803
 00:41:36,040 --> 00:41:38,230
 So I'm going to go and I'm just
-going to-- in fact, we'll
+going to &mdash; in fact, we'll
 
 804
 00:41:38,230 --> 00:41:40,270
@@ -3773,11 +3773,11 @@ pop this into our application.
 806
 00:41:42,910 --> 00:41:45,550
 And I'm going to
-put this into--
+put this into &mdash;
 
 807
 00:41:45,550 --> 00:41:47,920
-not that background--
+not that background &mdash;
 
 808
 00:41:47,920 --> 00:41:49,600
@@ -4020,7 +4020,7 @@ app that uses OAuth.
 860
 00:44:44,320 --> 00:44:47,090
 We take all that complexity, all
-that pain in the butt-- if
+that pain in the butt &mdash; if
 
 861
 00:44:47,090 --> 00:44:50,240
@@ -4180,7 +4180,7 @@ can go and do that.
 
 894
 00:46:28,670 --> 00:46:29,590
-All of these--
+All of these &mdash;
 
 895
 00:46:29,590 --> 00:46:31,640
@@ -4198,7 +4198,7 @@ later, or have a look at some
 
 898
 00:46:36,780 --> 00:46:38,590
-of the docs--
+of the docs &mdash;
 
 899
 00:46:38,590 --> 00:46:40,440
@@ -4231,7 +4231,7 @@ of the time.
 905
 00:46:53,920 --> 00:46:58,320
 But we just say create a
-window, provide a URL--
+window, provide a URL &mdash;
 
 906
 00:46:58,320 --> 00:47:00,720
@@ -4341,7 +4341,7 @@ little text speech, you could
 929
 00:47:59,170 --> 00:48:01,070
 start writing your
-own kind of fun--
+own kind of fun &mdash;
 
 930
 00:48:01,070 --> 00:48:03,630
@@ -4726,7 +4726,7 @@ start doing that.
 
 1012
 00:51:58,670 --> 00:52:00,170
-And finally--
+And finally &mdash;
 
 1013
 00:52:00,170 --> 00:52:07,060
@@ -5338,7 +5338,7 @@ is coming?
 
 1143
 00:58:31,040 --> 00:58:32,020
-Is--
+Is &mdash;
 
 1144
 00:58:32,020 --> 00:58:33,620

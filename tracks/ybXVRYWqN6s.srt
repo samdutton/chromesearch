@@ -66,7 +66,7 @@ going through this process of
 16
 00:00:29,470 --> 00:00:32,220
 doing this redesign from
-the ground up--
+the ground up &mdash;
 
 17
 00:00:32,220 --> 00:00:35,090
@@ -75,7 +75,7 @@ we were on the stage on
 
 18
 00:00:35,090 --> 00:00:35,950
-Wednesday--
+Wednesday &mdash;
 
 19
 00:00:35,950 --> 00:00:37,810
@@ -161,7 +161,7 @@ story first.
 
 36
 00:01:13,130 --> 00:01:15,150
-Which is that--
+Which is that &mdash;
 
 37
 00:01:15,150 --> 00:01:16,350
@@ -304,8 +304,8 @@ of how to get to this park in
 
 66
 00:02:29,160 --> 00:02:31,330
-the middle here-- the
-Pullens Gardens--
+the middle here &mdash; the
+Pullens Gardens &mdash;
 
 67
 00:02:31,330 --> 00:02:33,890
@@ -337,7 +337,7 @@ streets that you see right
 
 73
 00:02:45,250 --> 00:02:46,960
-next to the Pullens Gardens--
+next to the Pullens Gardens &mdash;
 
 74
 00:02:46,960 --> 00:02:48,030
@@ -459,7 +459,7 @@ things we've left in here.
 99
 00:03:46,660 --> 00:03:51,800
 So, the first is the
-major highways--
+major highways &mdash;
 
 100
 00:03:51,800 --> 00:03:54,500
@@ -488,7 +488,7 @@ we drew Penton Place, Amelia
 105
 00:04:06,180 --> 00:04:08,220
 Street, Crampton Street,
-Illife Yard--
+Illife Yard &mdash;
 
 106
 00:04:08,220 --> 00:04:11,160
@@ -498,7 +498,7 @@ that you need to take
 107
 00:04:11,160 --> 00:04:14,000
 to get to the Pullens Gardens
-from the major streets--
+from the major streets &mdash;
 
 108
 00:04:14,000 --> 00:04:15,480
@@ -511,7 +511,7 @@ and labeled as well.
 
 110
 00:04:18,300 --> 00:04:20,380
-And of course, we also drew--
+And of course, we also drew &mdash;
 
 111
 00:04:20,380 --> 00:04:22,220
@@ -667,7 +667,7 @@ you, Jonah.
 143
 00:05:34,130 --> 00:05:36,940
 So, how do we go
-from this map--
+from this map &mdash;
 
 144
 00:05:36,940 --> 00:05:41,730
@@ -700,12 +700,12 @@ access to a significant amount
 150
 00:05:56,890 --> 00:06:01,010
 of anonymized information
-about how our users--
+about how our users &mdash;
 
 151
 00:06:01,010 --> 00:06:02,880
 our millions upon millions
-of users--
+of users &mdash;
 
 152
 00:06:02,880 --> 00:06:06,540
@@ -825,7 +825,7 @@ figure out which little bit of
 
 176
 00:07:26,130 --> 00:07:27,510
-road segment--
+road segment &mdash;
 
 177
 00:07:27,510 --> 00:07:31,060
@@ -1379,7 +1379,7 @@ that are nearby that we've
 293
 00:12:40,900 --> 00:12:42,780
 identified as important
-streets-- they're really
+streets &mdash; they're really
 
 294
 00:12:42,780 --> 00:12:46,160
@@ -1430,12 +1430,12 @@ task that they perform.
 304
 00:13:15,990 --> 00:13:17,420
 The next thing we're going
-to talk about--
+to talk about &mdash;
 
 305
 00:13:17,420 --> 00:13:20,820
 I'm going to hand it back to
-Jonah-- is to talk a little
+Jonah &mdash; is to talk a little
 
 306
 00:13:20,820 --> 00:13:23,930
@@ -1516,12 +1516,12 @@ Switzerland either.
 322
 00:14:05,560 --> 00:14:07,510
 So this is a picture
-of Street View--
+of Street View &mdash;
 
 323
 00:14:07,510 --> 00:14:10,080
 and this is my house
-in Zurich--
+in Zurich &mdash;
 
 324
 00:14:10,080 --> 00:14:13,990
@@ -1712,7 +1712,7 @@ YATIN CHAWATHE: Thanks, Jonah.
 363
 00:15:55,480 --> 00:15:59,905
 So, before I delve into the
-technical details--
+technical details &mdash;
 
 364
 00:15:59,905 --> 00:16:04,590
@@ -1949,12 +1949,12 @@ thrown into three-dimensional
 
 413
 00:18:52,300 --> 00:18:53,570
-space-- and then I've
+space &mdash; and then I've
 just captured a
 
 414
 00:18:53,570 --> 00:18:55,280
-screen shot of that--
+screen shot of that &mdash;
 
 415
 00:18:55,280 --> 00:19:01,110
@@ -1998,7 +1998,7 @@ this 3D point cloud?
 423
 00:19:25,880 --> 00:19:28,200
 The next step is, again,
-as I said earlier--
+as I said earlier &mdash;
 
 424
 00:19:28,200 --> 00:19:31,520
@@ -2252,7 +2252,7 @@ Here's a couple.
 
 478
 00:22:12,440 --> 00:22:13,810
-Now, this photo on the left--
+Now, this photo on the left &mdash;
 
 479
 00:22:13,810 --> 00:22:18,210
@@ -2281,7 +2281,7 @@ kind of blurry and
 
 484
 00:22:28,810 --> 00:22:30,180
-not really in focus--
+not really in focus &mdash;
 
 485
 00:22:30,180 --> 00:22:32,720
@@ -3006,11 +3006,11 @@ the amount of data
 
 637
 00:30:21,280 --> 00:30:22,780
-we send should be--
+we send should be &mdash;
 
 638
 00:30:22,780 --> 00:30:25,390
-for the basic map case-- should
+for the basic map case &mdash; should
 be similar or even less
 
 639
@@ -3308,7 +3308,7 @@ we've got as far as we have
 701
 00:33:25,350 --> 00:33:28,000
 with the 3D tool is amazing,
-but that's still--
+but that's still &mdash;
 
 702
 00:33:28,000 --> 00:33:30,280
@@ -3368,7 +3368,7 @@ essentially, on the planet?
 
 714
 00:33:54,180 --> 00:33:55,640
-YATIN CHAWATHE: We--
+YATIN CHAWATHE: We &mdash;
 
 715
 00:33:55,640 --> 00:33:56,510
@@ -3421,7 +3421,7 @@ just create a 3D tour of
 725
 00:34:22,610 --> 00:34:24,699
 something that you
-generate, but--
+generate, but &mdash;
 
 726
 00:34:24,699 --> 00:34:27,409
@@ -3454,7 +3454,7 @@ publish these 3D tours.
 
 732
 00:34:40,590 --> 00:34:42,429
-But the basic concept--
+But the basic concept &mdash;
 
 733
 00:34:42,429 --> 00:34:46,750
@@ -3694,7 +3694,7 @@ Any more questions?
 784
 00:36:45,380 --> 00:36:48,058
 I don't think there's anything
-else here, but--
+else here, but &mdash;
 
 785
 00:36:48,058 --> 00:36:54,046

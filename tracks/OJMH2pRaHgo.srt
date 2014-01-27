@@ -332,7 +332,7 @@ Hello?
 
 72
 00:02:54,010 --> 00:02:55,220
-Sorry, guys-- there.
+Sorry, guys &mdash; there.
 
 73
 00:02:55,220 --> 00:02:56,520
@@ -640,7 +640,7 @@ things before we start.
 
 138
 00:05:35,360 --> 00:05:37,780
-Sometimes you're lucky-- you
+Sometimes you're lucky &mdash; you
 know, there's symptoms of a
 
 139
@@ -665,7 +665,7 @@ children when they were young
 
 143
 00:05:48,990 --> 00:05:50,420
-and she just-- as an
+and she just &mdash; as an
 actress, she could
 
 144
@@ -712,12 +712,12 @@ USC Annenberg, and the
 
 153
 00:06:08,620 --> 00:06:10,620
-studies were showing-- and
+studies were showing &mdash; and
 they had grad students
 
 154
 00:06:10,620 --> 00:06:12,080
-counting by hand--
+counting by hand &mdash;
 
 155
 00:06:12,080 --> 00:06:14,810
@@ -781,7 +781,7 @@ skewing it.
 168
 00:06:41,960 --> 00:06:44,920
 So one of things we've been
-lucky to do-- and also, one
+lucky to do &mdash; and also, one
 
 169
 00:06:44,920 --> 00:06:46,340
@@ -851,7 +851,7 @@ can measure and see things.
 183
 00:07:16,030 --> 00:07:19,140
 The last thing I'll point out
-before we start about things--
+before we start about things &mdash;
 
 184
 00:07:19,140 --> 00:07:22,000
@@ -1060,7 +1060,7 @@ point to this
 
 227
 00:08:56,200 --> 00:08:57,710
-picture down on the bottom--
+picture down on the bottom &mdash;
 
 228
 00:08:57,710 --> 00:09:00,690
@@ -1456,7 +1456,7 @@ selected to figure out
 312
 00:12:28,500 --> 00:12:30,720
 how to program the
-ENIAC machine--
+ENIAC machine &mdash;
 
 313
 00:12:30,720 --> 00:12:35,230
@@ -1660,7 +1660,7 @@ Grace, of course, accepted.
 
 355
 00:14:38,910 --> 00:14:39,900
-So now--
+So now &mdash;
 
 356
 00:14:39,900 --> 00:14:41,180
@@ -1721,7 +1721,7 @@ introduced me to two remarkable
 
 368
 00:15:21,760 --> 00:15:23,410
-technical women of vision--
+technical women of vision &mdash;
 
 369
 00:15:23,410 --> 00:15:27,520
@@ -1933,7 +1933,7 @@ going 10x instead of 1x.
 
 413
 00:17:27,770 --> 00:17:28,500
-And so we--
+And so we &mdash;
 
 414
 00:17:28,500 --> 00:17:31,420
@@ -2074,8 +2074,8 @@ an idea that we have as part
 
 443
 00:18:40,820 --> 00:18:44,010
-of it-- my clicker's
-not working--
+of it &mdash; my clicker's
+not working &mdash;
 
 444
 00:18:44,010 --> 00:18:46,370
@@ -2207,7 +2207,7 @@ makers.com site.
 
 472
 00:19:39,160 --> 00:19:40,670
-And in fact, today I heard--
+And in fact, today I heard &mdash;
 
 473
 00:19:40,670 --> 00:19:43,290

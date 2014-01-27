@@ -1806,7 +1806,7 @@ that we've had.
 
 381
 00:14:53,730 --> 00:14:56,210
-So the best thing-- and I have
+So the best thing &mdash; and I have
 an exclamation point here.
 
 382
@@ -2015,11 +2015,11 @@ which makes it not only
 424
 00:16:37,740 --> 00:16:39,610
 really easy to make these
-combined images-- you don't
+combined images &mdash; you don't
 
 425
 00:16:39,610 --> 00:16:42,276
-have to maintain them manually--
+have to maintain them manually &mdash;
 it's really easy for developers
 
 426
@@ -2282,7 +2282,7 @@ touch events and analytics
 480
 00:18:40,120 --> 00:18:44,329
 or some common element
-references so that we can--
+references so that we can &mdash;
 
 481
 00:18:44,329 --> 00:18:46,120

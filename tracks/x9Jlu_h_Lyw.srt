@@ -2367,7 +2367,7 @@ Developer Tools.
 508
 00:20:36,385 --> 00:20:39,070
 And If you haven't used
-the tools before--
+the tools before &mdash;
 
 509
 00:20:39,070 --> 00:20:41,100
@@ -2376,7 +2376,7 @@ at least fiddled with them
 
 510
 00:20:41,100 --> 00:20:43,120
-a little bit-- they're really,
+a little bit &mdash; they're really,
 really powerful.
 
 511
@@ -3416,7 +3416,7 @@ this full timeline.
 734
 00:29:35,250 --> 00:29:37,820
 So if I look at one of
-these first ones--
+these first ones &mdash;
 
 735
 00:29:37,820 --> 00:29:39,742
@@ -3688,7 +3688,7 @@ more, actually.
 
 793
 00:31:48,330 --> 00:31:50,260
-And for our median users--
+And for our median users &mdash;
 
 794
 00:31:50,260 --> 00:31:51,360
@@ -3697,7 +3697,7 @@ this graph, just
 
 795
 00:31:51,360 --> 00:31:52,860
-because of the scale--
+because of the scale &mdash;
 
 796
 00:31:52,860 --> 00:31:55,060
@@ -4362,7 +4362,7 @@ maybe have some event channels
 939
 00:37:21,150 --> 00:37:23,250
 that tell you when you're
-getting close--
+getting close &mdash;
 
 940
 00:37:23,250 --> 00:37:23,550
@@ -4671,11 +4671,11 @@ mention it here
 
 1006
 00:39:42,900 --> 00:39:44,660
-is the Closure team--
+is the Closure team &mdash;
 
 1007
 00:39:44,660 --> 00:39:47,150
-we use the Closure Compiler--
+we use the Closure Compiler &mdash;
 
 1008
 00:39:47,150 --> 00:39:49,940

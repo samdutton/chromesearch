@@ -924,12 +924,12 @@ the value of
 
 196
 00:13:56,030 --> 00:13:57,600
-the text field was--
+the text field was &mdash;
 
 197
 00:13:57,600 --> 00:13:59,880
 I can make this as complex
-as I like--
+as I like &mdash;
 
 198
 00:13:59,880 --> 00:14:01,980
@@ -1206,7 +1206,7 @@ much the same.
 
 257
 00:16:27,350 --> 00:16:29,570
-The difference here is that--
+The difference here is that &mdash;
 well, actually, there's not
 
 258

@@ -1658,7 +1658,7 @@ lots of gestures throughout
 350
 00:27:26,030 --> 00:27:28,290
 the system that let
-you go and--
+you go and &mdash;
 
 351
 00:27:28,290 --> 00:27:30,510
@@ -4370,7 +4370,7 @@ this stuff together.
 
 939
 00:51:40,760 --> 00:51:43,015
-So let's go to the--
+So let's go to the &mdash;
 
 940
 00:51:43,015 --> 00:51:47,732
@@ -4615,7 +4615,7 @@ feeling lucky.
 993
 00:53:54,102 --> 00:53:57,811
 All right, so let me double
-click and zoom in, and--
+click and zoom in, and &mdash;
 
 994
 00:53:57,811 --> 00:53:58,870
@@ -4734,7 +4734,7 @@ lot of fuel in that.
 1020
 00:54:43,900 --> 00:54:47,720
 OK, so if I just splash
-in some Mentos--
+in some Mentos &mdash;
 
 1021
 00:54:47,720 --> 00:54:48,000
@@ -5269,7 +5269,7 @@ only been to two.
 
 1139
 00:59:25,610 --> 00:59:26,710
-IHOP and--
+IHOP and &mdash;
 
 1140
 00:59:26,710 --> 00:59:28,900
@@ -6009,7 +6009,7 @@ going to very, very
 
 1298
 01:06:16,450 --> 01:06:17,700
-briefly show you--
+briefly show you &mdash;
 
 1299
 01:06:17,700 --> 01:06:32,884
@@ -6396,7 +6396,7 @@ white right here.
 
 1386
 01:11:27,400 --> 01:11:28,650
-And then--
+And then &mdash;
 
 1387
 01:11:28,650 --> 01:11:33,190
@@ -6678,12 +6678,12 @@ providers that map to those
 
 1450
 01:14:53,720 --> 01:14:56,090
-interest categories, news--
+interest categories, news &mdash;
 
 1451
 01:14:56,090 --> 01:15:00,546
 Wall Street Journal, CBS
-News, New York Times--
+News, New York Times &mdash;
 
 1452
 01:15:00,546 --> 01:15:04,922
@@ -6846,7 +6846,7 @@ Hey, everyone.
 1486
 01:16:43,360 --> 01:16:46,330
 I'm from LinkTV. LinkTV
-is a national--
+is a national &mdash;
 
 1487
 01:16:46,330 --> 01:16:50,750
@@ -8910,7 +8910,7 @@ disposal, which is very cool.
 1928
 01:34:42,180 --> 01:34:44,495
 So quickly, a couple
-of other--
+of other &mdash;
 
 1929
 01:34:44,495 --> 01:34:46,810
@@ -10153,7 +10153,7 @@ this tool is.
 
 2191
 01:43:43,880 --> 01:43:45,080
-So right now I'm running--
+So right now I'm running &mdash;
 
 2192
 01:43:45,080 --> 01:43:46,350
@@ -10210,7 +10210,7 @@ The most revised.
 
 2203
 01:44:09,190 --> 01:44:11,140
-Try to think about it before--
+Try to think about it before &mdash;
 it's already done.
 
 2204
@@ -10750,7 +10750,7 @@ little late for this.
 2317
 01:48:20,460 --> 01:48:23,430
 What's the pricing
-model for the--
+model for the &mdash;
 
 2318
 01:48:23,430 --> 01:48:24,940
@@ -11585,7 +11585,7 @@ this could be a paragraph of
 
 2500
 01:56:47,410 --> 01:56:49,450
-text, this could be--
+text, this could be &mdash;
 
 2501
 01:56:49,450 --> 01:56:52,820
@@ -12556,12 +12556,12 @@ function,
 
 2708
 02:07:01,220 --> 02:07:02,940
-and right over here--
+and right over here &mdash;
 
 2709
 02:07:02,940 --> 02:07:07,380
 see if I can get that,
-it's somewhere--
+it's somewhere &mdash;
 
 2710
 02:07:07,380 --> 02:07:11,726
@@ -12665,7 +12665,7 @@ has to fade in, but if you
 
 2733
 02:08:07,420 --> 02:08:09,260
-shake it-- yes?
+shake it &mdash; yes?
 
 2734
 02:08:09,260 --> 02:08:10,510
@@ -12807,7 +12807,7 @@ This brings us to WebRTC.
 
 2766
 02:09:29,100 --> 02:09:32,430
-WebRTC is--
+WebRTC is &mdash;
 
 2767
 02:09:32,430 --> 02:09:34,040
@@ -13355,7 +13355,7 @@ by server with WebRTC?
 2884
 02:15:12,420 --> 02:15:13,810
 PAUL IRISH: Can you
-stream video--
+stream video &mdash;
 
 2885
 02:15:13,810 --> 02:15:14,530
@@ -13663,7 +13663,7 @@ PAUL IRISH: Channels?
 2952
 02:18:02,554 --> 02:18:05,152
 Like you have an alpha
-channel on--
+channel on &mdash;
 
 2953
 02:18:05,152 --> 02:18:06,402
@@ -13703,7 +13703,7 @@ available, and if I have like
 2961
 02:18:21,780 --> 02:18:26,940
 an SVG shape or some
-non-rectangle, if I have--
+non-rectangle, if I have &mdash;
 
 2962
 02:18:26,940 --> 02:18:27,544
@@ -13715,7 +13715,7 @@ Text has its own shadow.
 
 2964
 02:18:30,020 --> 02:18:31,469
-Yeah, so there's been a big--
+Yeah, so there's been a big &mdash;
 
 2965
 02:18:31,469 --> 02:18:34,190
@@ -13815,7 +13815,7 @@ no doubt that it works.
 2986
 02:19:36,650 --> 02:19:42,750
 We also, there is hardware
-acceleration for--
+acceleration for &mdash;
 
 2987
 02:19:42,750 --> 02:19:45,400
@@ -13833,7 +13833,7 @@ faster, which is a good thing.
 
 2990
 02:19:53,530 --> 02:19:54,890
-Quick question on--
+Quick question on &mdash;
 
 2991
 02:19:54,890 --> 02:19:56,420
@@ -13850,7 +13850,7 @@ Is there anything left?
 
 2994
 02:19:59,500 --> 02:20:01,070
-I feel like you guys--
+I feel like you guys &mdash;
 
 2995
 02:20:01,070 --> 02:20:01,954
@@ -14698,7 +14698,7 @@ them the label style.
 
 3179
 02:27:37,110 --> 02:27:37,960
-And the idea-- oh, go ahead.
+And the idea &mdash; oh, go ahead.
 
 3180
 02:27:37,960 --> 02:27:39,490
@@ -15185,7 +15185,7 @@ the United States.
 
 3283
 02:31:13,620 --> 02:31:15,980
-We're looking at about-- go
+We're looking at about &mdash; go
 ahead and type "fatals" into
 
 3284
@@ -15204,7 +15204,7 @@ accidents or so.
 
 3287
 02:31:26,000 --> 02:31:26,670
-Maybe just--
+Maybe just &mdash;
 
 3288
 02:31:26,670 --> 02:31:27,840
@@ -15417,7 +15417,7 @@ of accidents that happened.
 
 3333
 02:32:54,660 --> 02:32:56,640
-It's crazy--
+It's crazy &mdash;
 
 3334
 02:32:56,640 --> 02:32:58,650
@@ -15455,11 +15455,11 @@ Sacramento, San Francisco, and
 3341
 02:33:09,340 --> 02:33:11,510
 you drag that away, you'll see
-almost all of the accidents--
+almost all of the accidents &mdash;
 
 3342
 02:33:11,510 --> 02:33:13,270
-maybe try, or Austin--
+maybe try, or Austin &mdash;
 
 3343
 02:33:13,270 --> 02:33:14,520
@@ -15609,7 +15609,7 @@ feel with.
 3375
 02:34:27,850 --> 02:34:29,435
 CHRIS BROADFOOT: Yeah, on
-the topic of big data--
+the topic of big data &mdash;
 
 3376
 02:34:29,435 --> 02:34:31,900
@@ -15810,7 +15810,7 @@ the flow of the traffic.
 3419
 02:36:19,760 --> 02:36:25,090
 So just by moving the slice
-of time slowly--
+of time slowly &mdash;
 
 3420
 02:36:25,090 --> 02:36:29,290
@@ -15819,7 +15819,7 @@ minutes of time every second,
 
 3421
 02:36:29,290 --> 02:36:30,960
-something like that--
+something like that &mdash;
 
 3422
 02:36:30,960 --> 02:36:32,550
@@ -16133,7 +16133,7 @@ some preset tiles in advance,
 3488
 02:39:39,330 --> 02:39:40,920
 and here's the story,
-here's the map--
+here's the map &mdash;
 
 3489
 02:39:40,920 --> 02:39:42,900
@@ -16288,7 +16288,7 @@ story here is the problems
 
 3521
 02:41:05,200 --> 02:41:07,260
-that used to be really hard--
+that used to be really hard &mdash;
 displaying a heat map, you had
 
 3522
@@ -16332,7 +16332,7 @@ you want to look at.
 3530
 02:41:24,240 --> 02:41:25,760
 JOSH LIVNI: So I
-think that's--
+think that's &mdash;
 
 3531
 02:41:25,760 --> 02:41:26,510
@@ -16661,7 +16661,7 @@ problem probably on Canvas.
 3601
 02:43:58,540 --> 02:44:02,450
 But maybe an older browser,
-you'd have some--
+you'd have some &mdash;
 
 3602
 02:44:02,450 --> 02:44:04,780
@@ -17035,7 +17035,7 @@ do grab some food.
 
 3682
 02:47:02,030 --> 02:47:03,510
-We also have--
+We also have &mdash;
 
 3683
 02:47:03,510 --> 02:47:04,060

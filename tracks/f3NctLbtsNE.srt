@@ -148,7 +148,7 @@ and complete stop.
 34
 00:00:54,290 --> 00:00:55,960
 And then we'll go
-into-- we'll do PNaCl,
+into &mdash; we'll do PNaCl,
 
 35
 00:00:55,960 --> 00:00:57,665
@@ -446,7 +446,7 @@ one of the best demos
 
 100
 00:03:05,930 --> 00:03:07,870
-of all-- how many
+of all &mdash; how many
 people use Sublime?
 
 101
@@ -519,7 +519,7 @@ Whoops.
 117
 00:03:27,180 --> 00:03:28,260
 And I'm going to
-launch this-- whoops.
+launch this &mdash; whoops.
 
 118
 00:03:28,260 --> 00:03:29,968
@@ -628,11 +628,11 @@ All right.
 142
 00:04:04,760 --> 00:04:08,410
 Let's go back to
-the-- all right.
+the &mdash; all right.
 
 143
 00:04:08,410 --> 00:04:10,900
-Of course, the question--
+Of course, the question &mdash;
 that all looks great,
 
 144
@@ -873,7 +873,7 @@ Linux, iOS, and Android.
 
 195
 00:06:11,190 --> 00:06:14,230
-Just out of the box--
+Just out of the box &mdash;
 HTML5 and JavaScript.
 
 196
@@ -1429,7 +1429,7 @@ Think about an app like Skype.
 
 312
 00:10:37,470 --> 00:10:39,950
-Skype-- 95% of
+Skype &mdash; 95% of
 the value of Skype
 
 313
@@ -1665,7 +1665,7 @@ file that you write
 362
 00:12:25,870 --> 00:12:29,490
 that defines what the app is
-and does-- what its name is,
+and does &mdash; what its name is,
 
 363
 00:12:29,490 --> 00:12:32,240
@@ -1874,7 +1874,7 @@ apps, like a long time ago.
 406
 00:14:07,030 --> 00:14:09,740
 If you wanted to build a rich
-native experience-- and I'm
+native experience &mdash; and I'm
 
 407
 00:14:09,740 --> 00:14:11,420
@@ -2145,7 +2145,7 @@ bookmarks, and you've
 463
 00:16:03,830 --> 00:16:05,330
 got different versions
-of your-- you know,
+of your &mdash; you know,
 
 464
 00:16:05,330 --> 00:16:06,996
@@ -2630,7 +2630,7 @@ performance from a native app.
 567
 00:19:27,407 --> 00:19:29,740
 Even though users want great
-performance from web apps--
+performance from web apps &mdash;
 
 568
 00:19:29,740 --> 00:19:31,989
@@ -2639,7 +2639,7 @@ running up here and smack me
 
 569
 00:19:31,989 --> 00:19:33,377
-in the head-- but yeah.
+in the head &mdash; but yeah.
 
 570
 00:19:33,377 --> 00:19:35,210
@@ -2733,7 +2733,7 @@ to put initial windows.
 
 589
 00:20:16,807 --> 00:20:18,890
-You need to remember--
+You need to remember &mdash;
 this is an important thing.
 
 590
@@ -3246,7 +3246,7 @@ your page and we
 699
 00:24:04,970 --> 00:24:06,680
 have no idea how it got
-there-- did you put it there,
+there &mdash; did you put it there,
 
 700
 00:24:06,680 --> 00:24:07,596

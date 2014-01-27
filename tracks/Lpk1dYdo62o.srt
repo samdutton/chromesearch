@@ -2032,7 +2032,7 @@ your own, there's probably
 
 433
 00:24:18,500 --> 00:24:20,420
-four essential--
+four essential &mdash;
 
 434
 00:24:20,420 --> 00:24:25,470

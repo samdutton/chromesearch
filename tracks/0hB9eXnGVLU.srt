@@ -143,7 +143,7 @@ searching through the Docs
 33
 00:03:15,770 --> 00:03:19,200
 site that we've got where
-I was looking for--
+I was looking for &mdash;
 
 34
 00:03:19,200 --> 00:03:20,850
@@ -323,7 +323,7 @@ information.
 
 71
 00:05:01,110 --> 00:05:03,140
-Memory information--
+Memory information &mdash;
 
 72
 00:05:03,140 --> 00:05:05,980
@@ -474,7 +474,7 @@ reasonably well and follow
 103
 00:06:40,690 --> 00:06:43,640
 best practices, and
-this may be--
+this may be &mdash;
 
 104
 00:06:43,640 --> 00:06:45,190
@@ -918,7 +918,7 @@ the GET for the CPU Info API.
 198
 00:10:37,420 --> 00:10:39,270
 So we get three parameters
-back--
+back &mdash;
 
 199
 00:10:39,270 --> 00:10:42,395
@@ -1020,7 +1020,7 @@ for the second line,
 220
 00:11:44,730 --> 00:11:49,620
 memory.availablecapacity gives
-me the available capacity--
+me the available capacity &mdash;
 
 221
 00:11:49,620 --> 00:11:51,290
@@ -1303,7 +1303,7 @@ that earlier today with a CF
 279
 00:14:44,125 --> 00:14:47,310
 card and inserted and
-removed a CF card--
+removed a CF card &mdash;
 
 280
 00:14:47,310 --> 00:14:50,560
@@ -1333,7 +1333,7 @@ new there.
 285
 00:15:07,310 --> 00:15:12,040
 Now, that's kind of OK
-because right now--
+because right now &mdash;
 
 286
 00:15:12,040 --> 00:15:14,810
@@ -1441,7 +1441,7 @@ it would be a
 
 308
 00:15:56,600 --> 00:16:00,400
-terribly hard thing because--
+terribly hard thing because &mdash;
 
 309
 00:16:00,400 --> 00:16:02,700
@@ -1450,7 +1450,7 @@ now, if I pop
 
 310
 00:16:02,700 --> 00:16:03,950
-back over to the code--
+back over to the code &mdash;
 
 311
 00:16:03,950 --> 00:16:06,890
@@ -1754,7 +1754,7 @@ this on Chrome OS, what I got
 
 377
 00:19:50,770 --> 00:19:54,400
-back from the-- let me just
+back from the &mdash; let me just
 bring up the code here so I
 
 378
@@ -1775,7 +1775,7 @@ method where
 
 382
 00:20:05,887 --> 00:20:07,340
-it's the callback--
+it's the callback &mdash;
 
 383
 00:20:07,340 --> 00:20:09,660
@@ -1784,7 +1784,7 @@ handling the
 
 384
 00:20:09,660 --> 00:20:12,590
-different storage devices--
+different storage devices &mdash;
 
 385
 00:20:12,590 --> 00:20:19,580
@@ -2292,7 +2292,7 @@ many displays are on the
 
 492
 00:24:48,080 --> 00:24:50,850
-screen, which window--
+screen, which window &mdash;
 
 493
 00:24:50,850 --> 00:24:52,030
@@ -2388,7 +2388,7 @@ questions, and the
 
 512
 00:25:33,070 --> 00:25:35,300
-link is there on--
+link is there on &mdash;
 
 513
 00:25:35,300 --> 00:25:36,950
@@ -2608,7 +2608,7 @@ because we can't
 
 559
 00:27:49,240 --> 00:27:50,100
-inject brand new--
+inject brand new &mdash;
 
 560
 00:27:50,100 --> 00:27:51,350
@@ -2824,7 +2824,7 @@ notifications, push
 
 606
 00:29:36,340 --> 00:29:37,020
-messaging--
+messaging &mdash;
 
 607
 00:29:37,020 --> 00:29:38,450
@@ -2986,7 +2986,7 @@ to the HTML5 filesystem and
 
 640
 00:30:54,390 --> 00:30:55,830
-via the Google Drive--
+via the Google Drive &mdash;
 
 641
 00:30:55,830 --> 00:30:56,950

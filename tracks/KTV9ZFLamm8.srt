@@ -4,7 +4,7 @@
 2
 00:00:09,780 --> 00:00:13,250
 Hello, and welcome to another
-episode of GDL-IL--
+episode of GDL-IL &mdash;
 
 3
 00:00:13,250 --> 00:00:14,460
@@ -162,8 +162,8 @@ that you have this browser
 
 36
 00:02:00,490 --> 00:02:02,550
-tool-- that I'll show in a
-minute-- and a command line
+tool &mdash; that I'll show in a
+minute &mdash; and a command line
 
 37
 00:02:02,550 --> 00:02:06,010
@@ -187,11 +187,11 @@ organization.
 41
 00:02:15,500 --> 00:02:18,285
 Luckily for us, you could
-go today-- and I'll
+go today &mdash; and I'll
 
 42
 00:02:18,285 --> 00:02:19,600
-make it a bit bigger--
+make it a bit bigger &mdash;
 
 43
 00:02:19,600 --> 00:02:21,800
@@ -284,17 +284,17 @@ the size of this data, and
 62
 00:03:16,720 --> 00:03:19,670
 when it was created, how many
-rows we are talking here--
+rows we are talking here &mdash;
 
 63
 00:03:19,670 --> 00:03:23,980
 in our case, north of
-300 million rows--
+300 million rows &mdash;
 
 64
 00:03:23,980 --> 00:03:26,180
 and how this table
-is composed--
+is composed &mdash;
 
 65
 00:03:26,180 --> 00:03:28,670
@@ -313,7 +313,7 @@ here, a query history.
 68
 00:03:35,610 --> 00:03:39,820
 A simple query, that if
-I'll click on it--
+I'll click on it &mdash;
 
 69
 00:03:39,820 --> 00:03:44,050
@@ -323,11 +323,11 @@ and make it larger.
 70
 00:03:44,050 --> 00:03:48,000
 So this query is getting
-the top 10 sites--
+the top 10 sites &mdash;
 
 71
 00:03:48,000 --> 00:03:50,090
-sorry, 10 articles--
+sorry, 10 articles &mdash;
 
 72
 00:03:50,090 --> 00:03:53,900
@@ -454,7 +454,7 @@ it's more than 400
 
 98
 00:05:22,770 --> 00:05:24,150
-gigabytes of data--
+gigabytes of data &mdash;
 
 99
 00:05:24,150 --> 00:05:27,900
@@ -488,7 +488,7 @@ it on our own.
 105
 00:05:42,210 --> 00:05:47,340
 So if we go into the browser
-tool, we have here-- and
+tool, we have here &mdash; and
 
 106
 00:05:47,340 --> 00:05:48,200
@@ -502,7 +502,7 @@ gives you all the little
 108
 00:05:51,200 --> 00:05:55,340
 details of how you could edit
-to your project, later on--
+to your project, later on &mdash;
 
 109
 00:05:55,340 --> 00:05:58,530
@@ -517,7 +517,7 @@ to query later.
 111
 00:06:01,960 --> 00:06:08,250
 And again, in our case, I
-prepared a short query that--
+prepared a short query that &mdash;
 
 112
 00:06:08,250 --> 00:06:10,680
@@ -550,11 +550,11 @@ query is which are the most
 
 118
 00:06:29,740 --> 00:06:31,480
-popular sites--
+popular sites &mdash;
 
 119
 00:06:31,480 --> 00:06:32,420
-basically, APIs--
+basically, APIs &mdash;
 
 120
 00:06:32,420 --> 00:06:34,720
@@ -564,7 +564,7 @@ by other sites.
 121
 00:06:34,720 --> 00:06:38,820
 So in this case, you can
-see quite quickly--
+see quite quickly &mdash;
 
 122
 00:06:38,820 --> 00:06:42,500
@@ -572,7 +572,7 @@ let's make it a bit bigger.
 
 123
 00:06:42,500 --> 00:06:43,750
-And now let's--
+And now let's &mdash;
 
 124
 00:06:43,750 --> 00:06:47,340
@@ -620,12 +620,12 @@ approach the data.
 133
 00:07:11,470 --> 00:07:15,200
 Now the big, nice thing about it
-is that, with App Script--
+is that, with App Script &mdash;
 
 134
 00:07:15,200 --> 00:07:18,100
 and this is the example
-that I prepared--
+that I prepared &mdash;
 
 135
 00:07:18,100 --> 00:07:21,240
@@ -640,7 +640,7 @@ quite quickly and easily.
 137
 00:07:24,530 --> 00:07:25,980
 And how we are going
-to do it--
+to do it &mdash;
 
 138
 00:07:25,980 --> 00:07:30,090
@@ -677,7 +677,7 @@ get the data here.
 
 145
 00:07:46,100 --> 00:07:49,260
-And after I'm getting the data--
+And after I'm getting the data &mdash;
 for instance, in our
 
 146
@@ -754,7 +754,7 @@ something about the end of
 
 161
 00:08:37,549 --> 00:08:42,390
-last year-- so around November,
+last year &mdash; so around November,
 December, 2012.
 
 162
@@ -787,12 +787,12 @@ And now, it's a bit flat.
 
 168
 00:08:58,440 --> 00:08:59,730
-And Facebook--
+And Facebook &mdash;
 
 169
 00:08:59,730 --> 00:09:04,310
 and here, it's mostly
-Facebook CDN--
+Facebook CDN &mdash;
 
 170
 00:09:04,310 --> 00:09:08,160
@@ -867,7 +867,7 @@ as you can see here.
 185
 00:09:52,180 --> 00:09:56,910
 Now I hope that you can
-still-- yeah, OK.
+still &mdash; yeah, OK.
 
 186
 00:09:56,910 --> 00:09:59,270
@@ -908,7 +908,7 @@ under my hand.
 194
 00:10:20,880 --> 00:10:23,260
 So it's a very useful
-way to just--
+way to just &mdash;
 
 195
 00:10:23,260 --> 00:10:25,800
@@ -946,11 +946,11 @@ query, or the function, that
 202
 00:10:42,490 --> 00:10:45,670
 will give us the results of
-which are the top 10 sites--
+which are the top 10 sites &mdash;
 
 203
 00:10:45,670 --> 00:10:47,130
-or APIs, actually--
+or APIs, actually &mdash;
 
 204
 00:10:47,130 --> 00:10:49,670
@@ -965,7 +965,7 @@ getting a default of where I
 206
 00:10:52,560 --> 00:10:56,680
 want this data to be output on
-the sheet, itself-- so what is
+the sheet, itself &mdash; so what is
 
 207
 00:10:56,680 --> 00:10:58,720
@@ -1018,7 +1018,7 @@ sheet that we have.
 217
 00:11:24,700 --> 00:11:27,930
 In our case, it's this
-guy-- third parties.
+guy &mdash; third parties.
 
 218
 00:11:27,930 --> 00:11:32,250
@@ -1149,7 +1149,7 @@ boilerplate metadata on the
 
 245
 00:13:05,780 --> 00:13:08,990
-query, itself-- how many
+query, itself &mdash; how many
 rows we go back, etc.
 
 246
@@ -1208,12 +1208,12 @@ but we'll run it.
 257
 00:13:46,530 --> 00:13:50,620
 I'm just choosing the function
-that I want to run here--
+that I want to run here &mdash;
 
 258
 00:13:50,620 --> 00:13:52,690
 in our case, it's
-this function--
+this function &mdash;
 
 259
 00:13:52,690 --> 00:13:54,200
@@ -1318,7 +1318,7 @@ dashboard, get a trigger.
 280
 00:15:00,640 --> 00:15:04,380
 And here is a nice
-ability to just--
+ability to just &mdash;
 
 281
 00:15:04,380 --> 00:15:08,620

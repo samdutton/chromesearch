@@ -399,7 +399,7 @@ basic drive API access, which
 86
 00:03:35,890 --> 00:03:40,890
 enables you to make calls
-to the API and receive--
+to the API and receive &mdash;
 
 87
 00:03:40,890 --> 00:03:42,740
@@ -561,7 +561,7 @@ install an application first.
 121
 00:05:10,830 --> 00:05:12,240
 ERIC GILMORE: Ah, there
-aren't any Google--
+aren't any Google &mdash;
 
 122
 00:05:12,240 --> 00:05:12,330
@@ -691,7 +691,7 @@ going straight to Loupe.
 150
 00:06:08,320 --> 00:06:11,980
 Or where we started with
-this discussion--
+this discussion &mdash;
 
 151
 00:06:11,980 --> 00:06:14,300
@@ -699,7 +699,7 @@ CLAUDIO CHERUBINO: Yeah.
 
 152
 00:06:14,300 --> 00:06:16,690
-And as soon as we go back here--
+And as soon as we go back here &mdash;
 so we refresh the page.
 
 153
@@ -861,7 +861,7 @@ very happy to show you, is
 187
 00:07:30,320 --> 00:07:33,370
 when we open this file in the
-Google Drive Viewer--
+Google Drive Viewer &mdash;
 
 188
 00:07:33,370 --> 00:07:34,870
@@ -1206,7 +1206,7 @@ now is public thanks to Eric.
 261
 00:10:38,725 --> 00:10:40,980
 So I'm going to revoke
-it any time soon--
+it any time soon &mdash;
 
 262
 00:10:40,980 --> 00:10:41,470
@@ -1563,7 +1563,7 @@ Drive app example for any one
 
 338
 00:13:58,350 --> 00:13:59,210
-of these languages--
+of these languages &mdash;
 
 339
 00:13:59,210 --> 00:14:03,020
@@ -1894,7 +1894,7 @@ says, Revoke Access.
 
 408
 00:17:27,589 --> 00:17:29,206
-And--
+And &mdash;
 
 409
 00:17:29,206 --> 00:17:30,470
@@ -1912,7 +1912,7 @@ something else.
 
 412
 00:17:33,140 --> 00:17:34,390
-Anyway--
+Anyway &mdash;
 
 413
 00:17:34,390 --> 00:17:36,200
@@ -1977,7 +1977,7 @@ for permission again.
 426
 00:18:06,170 --> 00:18:08,240
 ERIC GILMORE: And handling
-that case is important--
+that case is important &mdash;
 
 427
 00:18:08,240 --> 00:18:09,500
@@ -2063,7 +2063,7 @@ news for your country.
 
 445
 00:18:45,410 --> 00:18:45,990
-So--
+So &mdash;
 
 446
 00:18:45,990 --> 00:18:47,110
@@ -2300,7 +2300,7 @@ file on our API.
 
 495
 00:21:16,170 --> 00:21:17,570
-What I also required today--
+What I also required today &mdash;
 
 496
 00:21:17,570 --> 00:21:19,650

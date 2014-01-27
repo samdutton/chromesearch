@@ -113,7 +113,7 @@ appropriate, where you let
 
 26
 00:00:41,120 --> 00:00:41,550
-your hair down--
+your hair down &mdash;
 
 27
 00:00:41,550 --> 00:00:42,050
@@ -379,7 +379,7 @@ since last year at I/O. Last
 83
 00:02:31,170 --> 00:02:34,180
 year at I/O, I gave a talk
-about Web Audio--
+about Web Audio &mdash;
 
 84
 00:02:34,180 --> 00:02:35,740
@@ -396,7 +396,7 @@ still completely relevant and
 
 87
 00:02:40,610 --> 00:02:41,630
-really a great--
+really a great &mdash;
 
 88
 00:02:41,630 --> 00:02:43,200
@@ -570,7 +570,7 @@ think, midsummer,
 
 124
 00:03:49,250 --> 00:03:50,560
-before we got it in--
+before we got it in &mdash;
 
 125
 00:03:50,560 --> 00:03:52,030
@@ -579,7 +579,7 @@ was audio input.
 126
 00:03:52,030 --> 00:03:55,130
 So not only can you generate
-these sounds on the computer--
+these sounds on the computer &mdash;
 
 127
 00:03:55,130 --> 00:03:58,900
@@ -588,7 +588,7 @@ snippets or build things with
 
 128
 00:03:58,900 --> 00:04:00,150
-synthesis--
+synthesis &mdash;
 
 129
 00:04:00,150 --> 00:04:02,570
@@ -644,7 +644,7 @@ of them, actually.
 140
 00:04:13,850 --> 00:04:16,890
 So we're going to start, I want
-to show-- the vocoder was
+to show &mdash; the vocoder was
 
 141
 00:04:16,890 --> 00:04:20,450
@@ -710,7 +710,7 @@ computer right now.
 
 154
 00:04:46,650 --> 00:04:48,040
-So this is all being--
+So this is all being &mdash;
 
 155
 00:04:48,040 --> 00:04:52,440
@@ -752,7 +752,7 @@ I'm not going to sing for you.
 163
 00:05:03,900 --> 00:05:06,510
 I actually told one of my
-coworkers, singing--
+coworkers, singing &mdash;
 
 164
 00:05:06,510 --> 00:05:08,540
@@ -839,7 +839,7 @@ processing effect.
 182
 00:05:37,480 --> 00:05:40,360
 And by the way, all of the code
-that I'm doing here--
+that I'm doing here &mdash;
 
 183
 00:05:40,360 --> 00:05:43,290
@@ -1000,7 +1000,7 @@ This is my electric baby.
 216
 00:07:00,340 --> 00:07:05,120
 But so what I've got
-running off here--
+running off here &mdash;
 
 217
 00:07:05,120 --> 00:07:07,120
@@ -1244,7 +1244,7 @@ goes in and pulls the numbers
 268
 00:09:10,450 --> 00:09:12,410
 out and draws them
-on the screen--
+on the screen &mdash;
 
 269
 00:09:12,410 --> 00:09:14,610
@@ -1690,7 +1690,7 @@ bringing all that stuff over.
 364
 00:12:08,800 --> 00:12:10,010
 Thanks for joining us
-with your guitar--
+with your guitar &mdash;
 
 365
 00:12:10,010 --> 00:12:10,350
@@ -1723,7 +1723,7 @@ CHRIS WILSON: Webaudiodemos.
 371
 00:12:18,480 --> 00:12:19,190
 LOUIS GRAY: Webaudiodemos,
-thank you--
+thank you &mdash;
 
 372
 00:12:19,190 --> 00:12:22,140

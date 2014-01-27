@@ -430,7 +430,7 @@ Maybe it's more showing.
 93
 00:03:04,270 --> 00:03:06,060
 We have an architecture
-diagram of--
+diagram of &mdash;
 
 94
 00:03:06,060 --> 00:03:07,280
@@ -2348,7 +2348,7 @@ a line a code, really.
 
 502
 00:16:42,750 --> 00:16:43,775
-I mean just--
+I mean just &mdash;
 
 503
 00:16:43,775 --> 00:16:44,350
@@ -2468,7 +2468,7 @@ two things together.
 
 528
 00:17:32,390 --> 00:17:33,070
-So if I go--
+So if I go &mdash;
 
 529
 00:17:33,070 --> 00:17:35,300
@@ -3052,7 +3052,7 @@ be productive today.
 655
 00:21:20,610 --> 00:21:24,260
 And Polymer, again, we support
-the modern browsers--
+the modern browsers &mdash;
 
 656
 00:21:24,260 --> 00:21:25,140

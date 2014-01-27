@@ -460,7 +460,7 @@ dime is mobile gaming.
 98
 00:04:09,670 --> 00:04:12,220
 Now what mobile gaming
-has done now--
+has done now &mdash;
 
 99
 00:04:12,220 --> 00:04:13,260
@@ -1133,12 +1133,12 @@ doing, is because of the fact
 240
 00:09:52,240 --> 00:09:54,030
 that games are digitally
-distributable--
+distributable &mdash;
 
 241
 00:09:54,030 --> 00:09:56,510
 we have the ability to just go
-and download the content--
+and download the content &mdash;
 
 242
 00:09:56,510 --> 00:09:59,490
@@ -2165,7 +2165,7 @@ able to ship games quickly,
 456
 00:18:52,820 --> 00:18:56,730
 receive feedback about them
-as a unit, as a product--
+as a unit, as a product &mdash;
 
 457
 00:18:56,730 --> 00:18:59,640
@@ -2698,11 +2698,11 @@ Effect was so large, a very
 
 568
 00:23:27,800 --> 00:23:32,200
-popular web game comic blog--
+popular web game comic blog &mdash;
 
 569
 00:23:32,200 --> 00:23:33,030
-blogish--
+blogish &mdash;
 
 570
 00:23:33,030 --> 00:23:34,550
@@ -2889,12 +2889,12 @@ played Half-Life and the
 
 609
 00:24:57,110 --> 00:24:58,190
-series sort of following--
+series sort of following &mdash;
 
 610
 00:24:58,190 --> 00:25:00,280
 Half-Life 2, and Left 4 Dead,
-and all those other ones--
+and all those other ones &mdash;
 
 611
 00:25:00,280 --> 00:25:02,700
@@ -3133,7 +3133,7 @@ talked about, because it's not
 660
 00:26:57,740 --> 00:27:00,450
 been really conquered yet,
-is how you can increase--
+is how you can increase &mdash;
 
 661
 00:27:00,450 --> 00:27:02,540
@@ -3235,7 +3235,7 @@ limited by how fast light can
 
 681
 00:27:47,870 --> 00:27:49,270
-travel over time--
+travel over time &mdash;
 
 682
 00:27:49,270 --> 00:27:50,330
@@ -3688,7 +3688,7 @@ paying for it.
 776
 00:31:26,760 --> 00:31:29,050
 If you have a user who's not
-paying for your content--
+paying for your content &mdash;
 
 777
 00:31:29,050 --> 00:31:31,970
@@ -3865,7 +3865,7 @@ tried to bundle it up like
 
 813
 00:32:55,030 --> 00:32:58,020
-this-- let's say 24 megs went
+this &mdash; let's say 24 megs went
 to two million users a day,
 
 814

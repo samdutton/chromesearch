@@ -121,7 +121,7 @@ or computers.
 
 27
 00:01:10,000 --> 00:01:11,801
-Computers--they're about--
+Computers--they're about &mdash;
 
 28
 00:01:11,801 --> 00:01:14,067
@@ -793,7 +793,7 @@ nailed on TV yet.
 169
 00:07:07,167 --> 00:07:10,501
 Console games actually
-very, very healthy--
+very, very healthy &mdash;
 
 170
 00:07:10,501 --> 00:07:12,834
@@ -815,7 +815,7 @@ when you sit down,
 
 174
 00:07:19,100 --> 00:07:23,501
-and you want to kill a few--
+and you want to kill a few &mdash;
 few minutes playing something.
 
 175
@@ -947,7 +947,7 @@ and a gyroscope,
 
 202
 00:08:29,734 --> 00:08:32,834
-audio--
+audio &mdash;
 and a touch screen display.
 
 203
@@ -1054,7 +1054,7 @@ man: Round 1, start.
 225
 00:09:32,000 --> 00:09:34,000
 Wilson: So this application,
-um--
+um &mdash;
 
 226
 00:09:34,000 --> 00:09:36,734
@@ -1118,7 +1118,7 @@ but I--I beat him to it.
 239
 00:10:03,801 --> 00:10:06,434
 So you can see all of us
-are participating in this--
+are participating in this &mdash;
 
 240
 00:10:06,434 --> 00:10:09,434
@@ -1162,7 +1162,7 @@ Lee: [laughs]
 248
 00:10:26,501 --> 00:10:28,834
 Wilson: There are a lot of other
-applications that really--
+applications that really &mdash;
 
 249
 00:10:28,834 --> 00:10:30,834
@@ -1180,7 +1180,7 @@ but, um... [laughs]
 
 252
 00:10:34,934 --> 00:10:36,501
-but give you a lot of--
+but give you a lot of &mdash;
 
 253
 00:10:36,501 --> 00:10:38,501
@@ -1271,7 +1271,7 @@ It's the truth.
 
 272
 00:11:30,334 --> 00:11:31,834
-And I--
+And I &mdash;
 [normal voice] Oh.
 
 273
@@ -1300,13 +1300,13 @@ very engaging applications,
 
 278
 00:11:46,501 --> 00:11:49,501
-and having it on a big screen--
+and having it on a big screen &mdash;
 and obviously this might be
 
 279
 00:11:49,501 --> 00:11:51,501
 a little bit bigger
-than your TV--
+than your TV &mdash;
 
 280
 00:11:51,501 --> 00:11:53,067
@@ -1323,7 +1323,7 @@ Now as I mentioned before,
 
 283
 00:12:00,000 --> 00:12:03,000
-Google TV and Android--
+Google TV and Android &mdash;
 Google TV is based on Android.
 
 284
@@ -1566,7 +1566,7 @@ a little confused.
 335
 00:14:04,000 --> 00:14:06,501
 Wilson: But the idea is,
-well, you really need to--
+well, you really need to &mdash;
 
 336
 00:14:06,501 --> 00:14:08,501
@@ -1595,11 +1595,11 @@ from 10 feet away.
 
 341
 00:14:18,501 --> 00:14:20,834
-Wilson: So I want to give--
+Wilson: So I want to give &mdash;
 
 342
 00:14:20,834 --> 00:14:23,000
-wow, that's a weird--
+wow, that's a weird &mdash;
 
 343
 00:14:23,000 --> 00:14:25,334
@@ -1674,7 +1674,7 @@ to actually find
 
 358
 00:15:00,267 --> 00:15:02,067
-what it is that I'm--
+what it is that I'm &mdash;
 I want to watch.
 
 359
@@ -1729,7 +1729,7 @@ is a little different
 
 370
 00:15:29,467 --> 00:15:32,000
-because Couch Mode--
+because Couch Mode &mdash;
 when you go to Couch Mode,
 
 371
@@ -1777,7 +1777,7 @@ a passive experience.
 
 380
 00:15:53,133 --> 00:15:55,501
-Similar to that--
+Similar to that &mdash;
 
 381
 00:15:55,501 --> 00:15:59,167
@@ -1806,7 +1806,7 @@ many pages of content,
 386
 00:16:08,801 --> 00:16:10,934
 and down at the bottom,
-you have a huge, like--
+you have a huge, like &mdash;
 
 387
 00:16:10,934 --> 00:16:13,501
@@ -1857,7 +1857,7 @@ on my keyboard.
 
 397
 00:16:36,000 --> 00:16:37,801
-I don't need to use a--
+I don't need to use a &mdash;
 
 398
 00:16:37,801 --> 00:16:39,801
@@ -1886,7 +1886,7 @@ experience there.
 403
 00:16:52,834 --> 00:16:55,000
 Now the point
-we're trying to get--
+we're trying to get &mdash;
 
 404
 00:16:55,000 --> 00:16:57,334
@@ -1899,11 +1899,11 @@ both of these quick demos
 
 406
 00:16:59,033 --> 00:17:03,000
-are--go ahead and flip--
+are--go ahead and flip &mdash;
 
 407
 00:17:03,000 --> 00:17:05,167
-are--
+are &mdash;
 
 408
 00:17:05,167 --> 00:17:08,434
@@ -1947,11 +1947,11 @@ practical constraints,
 416
 00:17:23,501 --> 00:17:26,834
 which is when you sit 10 feet
-away, things look smaller--
+away, things look smaller &mdash;
 
 417
 00:17:26,834 --> 00:17:29,000
-big surprise--
+big surprise &mdash;
 and what kind of input
 
 418
@@ -1981,7 +1981,7 @@ what makes a "TV experience."
 423
 00:17:41,801 --> 00:17:43,501
 And that doesn't mean
-you can't--
+you can't &mdash;
 
 424
 00:17:43,501 --> 00:17:45,000
@@ -2005,7 +2005,7 @@ I should say, from regular TV.
 428
 00:17:52,501 --> 00:17:55,000
 So on the first one of these,
-on resolution--
+on resolution &mdash;
 
 429
 00:17:55,000 --> 00:17:56,734
@@ -2042,11 +2042,11 @@ and window sizes.
 436
 00:18:11,000 --> 00:18:14,267
 TV has two resolutions
-is the short version of this--
+is the short version of this &mdash;
 
 437
 00:18:14,267 --> 00:18:15,934
-720p and 1080p--
+720p and 1080p &mdash;
 
 438
 00:18:15,934 --> 00:18:18,000
@@ -2155,7 +2155,7 @@ you're supposed to display
 460
 00:19:10,834 --> 00:19:12,834
 anything that
-the user doesn't really--
+the user doesn't really &mdash;
 
 461
 00:19:12,834 --> 00:19:14,501
@@ -2737,7 +2737,7 @@ On practical constraints,
 584
 00:24:08,000 --> 00:24:11,501
 text is one of the areas
-where, um--
+where, um &mdash;
 
 585
 00:24:11,501 --> 00:24:14,501
@@ -2788,7 +2788,7 @@ to read at once on TV.
 
 595
 00:24:33,934 --> 00:24:36,000
-And make it as big as--
+And make it as big as &mdash;
 
 596
 00:24:36,000 --> 00:24:38,467
@@ -2854,7 +2854,7 @@ for Web designs.
 
 609
 00:25:07,067 --> 00:25:10,000
-Scrolling--
+Scrolling &mdash;
 
 610
 00:25:10,000 --> 00:25:12,434
@@ -2863,7 +2863,7 @@ is scrolling
 
 611
 00:25:12,434 --> 00:25:14,067
-because scrolling--
+because scrolling &mdash;
 
 612
 00:25:14,067 --> 00:25:16,000
@@ -2901,7 +2901,7 @@ to flip it over,
 
 619
 00:25:29,000 --> 00:25:31,501
-that's a big deal for--
+that's a big deal for &mdash;
 for the user,
 
 620
@@ -2916,7 +2916,7 @@ a below the fold
 
 622
 00:25:36,501 --> 00:25:38,501
-because if it--
+because if it &mdash;
 if it's offscreen,
 
 623
@@ -3299,7 +3299,7 @@ change events.
 
 704
 00:28:44,734 --> 00:28:46,267
-Although I will caution--
+Although I will caution &mdash;
 
 705
 00:28:46,267 --> 00:28:48,400
@@ -3406,7 +3406,7 @@ as well.
 
 727
 00:29:38,501 --> 00:29:41,000
-Now on design guidance--
+Now on design guidance &mdash;
 
 728
 00:29:41,000 --> 00:29:42,501
@@ -3484,7 +3484,7 @@ but even that goes away
 
 744
 00:30:16,167 --> 00:30:18,334
-when you're actually just--
+when you're actually just &mdash;
 just watching a video.
 
 745
@@ -3529,7 +3529,7 @@ that's about the same size,
 
 754
 00:30:39,834 --> 00:30:42,000
-and they actually--
+and they actually &mdash;
 like, my design's gonna look
 
 755
@@ -3615,7 +3615,7 @@ of--of design guidance,
 772
 00:31:25,501 --> 00:31:28,667
 kind of TV app guidance,
-on TV in particular--
+on TV in particular &mdash;
 
 773
 00:31:28,667 --> 00:31:31,834
@@ -3638,7 +3638,7 @@ they're couch potatoes.
 
 777
 00:31:38,167 --> 00:31:39,667
-They're not really paying--
+They're not really paying &mdash;
 
 778
 00:31:39,667 --> 00:31:41,667
@@ -3658,7 +3658,7 @@ about what's going on
 781
 00:31:45,334 --> 00:31:47,000
 so they don't think
-their computer--
+their computer &mdash;
 
 782
 00:31:47,000 --> 00:31:49,167
@@ -3890,7 +3890,7 @@ so like the "Play," "Pause,"
 830
 00:33:46,167 --> 00:33:49,501
 Um, and we have these
-site templates up on the--
+site templates up on the &mdash;
 
 831
 00:33:49,501 --> 00:33:51,667
@@ -3991,7 +3991,7 @@ your implementation
 
 852
 00:34:40,667 --> 00:34:42,834
-with developing a 10-foot user--
+with developing a 10-foot user &mdash;
 
 853
 00:34:42,834 --> 00:34:45,000
@@ -4008,7 +4008,7 @@ that we developed.
 856
 00:34:49,667 --> 00:34:52,000
 And, um, just to give you
-a little brief history--
+a little brief history &mdash;
 
 857
 00:34:52,000 --> 00:34:54,334
@@ -4035,8 +4035,8 @@ libraries that we introduced.
 
 862
 00:35:02,934 --> 00:35:04,567
-And the main reason--
-and the main--
+And the main reason &mdash;
+and the main &mdash;
 
 863
 00:35:04,567 --> 00:35:06,067
@@ -4072,7 +4072,7 @@ what enables a D-pad, right,
 
 870
 00:35:19,834 --> 00:35:21,501
-in your app--
+in your app &mdash;
 in your application.
 
 871
@@ -4081,7 +4081,7 @@ As--as Chris mentioned,
 
 872
 00:35:23,000 --> 00:35:26,000
-with developing your--
+with developing your &mdash;
 your Web app for Google TV,
 
 873
@@ -4151,7 +4151,7 @@ is the Closure library.
 886
 00:35:57,067 --> 00:36:00,434
 I want to talk about some of
-the high-level summaries that--
+the high-level summaries that &mdash;
 
 887
 00:36:00,434 --> 00:36:02,067
@@ -4165,7 +4165,7 @@ the two libraries
 889
 00:36:04,400 --> 00:36:06,400
 to help you decide
-which one to--
+which one to &mdash;
 
 890
 00:36:06,400 --> 00:36:08,501
@@ -4175,7 +4175,7 @@ as a developer.
 891
 00:36:08,501 --> 00:36:10,334
 If you're already
-a customer of--
+a customer of &mdash;
 
 892
 00:36:10,334 --> 00:36:12,734
@@ -4204,7 +4204,7 @@ existing applications.
 
 897
 00:36:22,000 --> 00:36:25,334
-Um, Closure library, if--
+Um, Closure library, if &mdash;
 if you're--same reasons there.
 
 898
@@ -4302,7 +4302,7 @@ will then parse through
 
 918
 00:37:12,000 --> 00:37:14,000
-and essentially, you know, do--
+and essentially, you know, do &mdash;
 
 919
 00:37:14,000 --> 00:37:15,567
@@ -4339,7 +4339,7 @@ that it--it provides
 926
 00:37:29,834 --> 00:37:33,200
 is we offer--which is currently
-in beta, by the way--
+in beta, by the way &mdash;
 
 927
 00:37:33,200 --> 00:37:36,501
@@ -4461,7 +4461,7 @@ as well.
 
 952
 00:38:34,167 --> 00:38:35,734
-So these are--these--
+So these are--these &mdash;
 
 953
 00:38:35,734 --> 00:38:37,934
@@ -4489,7 +4489,7 @@ starting from the ground up,
 958
 00:38:45,400 --> 00:38:48,334
 where the jQuery, I think,
-provides you with a little bit--
+provides you with a little bit &mdash;
 
 959
 00:38:48,334 --> 00:38:52,000
@@ -4498,7 +4498,7 @@ a little bit more for you.
 
 960
 00:38:52,000 --> 00:38:54,000
-There's three main--
+There's three main &mdash;
 three main steps,
 
 961
@@ -4556,7 +4556,7 @@ with the cursor, you know,
 
 972
 00:39:23,501 --> 00:39:25,501
-and then how do you--
+and then how do you &mdash;
 do you want them
 
 973
@@ -4616,11 +4616,11 @@ really be using CSS a lot
 985
 00:39:51,334 --> 00:39:54,000
 to present and help you
-sort of visualize--
+sort of visualize &mdash;
 
 986
 00:39:54,000 --> 00:39:57,667
-apply visualization to these--
+apply visualization to these &mdash;
 these, you know,
 
 987
@@ -4639,7 +4639,7 @@ you're using JavaScript
 
 990
 00:40:03,501 --> 00:40:05,501
-to really initialize--
+to really initialize &mdash;
 
 991
 00:40:05,501 --> 00:40:07,501
@@ -4685,7 +4685,7 @@ So here's--here's, uh,
 1000
 00:40:28,434 --> 00:40:30,434
 the next, you know, few set
-of slides, I want to--
+of slides, I want to &mdash;
 
 1001
 00:40:30,434 --> 00:40:32,434
@@ -4708,8 +4708,8 @@ you know, a visual diagram
 
 1005
 00:40:40,501 --> 00:40:42,501
-of--of what may be--
-what the zone--
+of--of what may be &mdash;
+what the zone &mdash;
 
 1006
 00:40:42,501 --> 00:40:45,501
@@ -4723,7 +4723,7 @@ the slider, right?
 
 1008
 00:40:47,501 --> 00:40:51,000
-So there's a concept of--
+So there's a concept of &mdash;
 of keyboard behavior zones,
 
 1009
@@ -4780,7 +4780,7 @@ You can do whatever you want.
 1020
 00:41:14,567 --> 00:41:16,434
 And you're essentially
-gonna identify--
+gonna identify &mdash;
 
 1021
 00:41:16,434 --> 00:41:19,434
@@ -4794,11 +4794,11 @@ within each zone.
 1023
 00:41:21,434 --> 00:41:23,434
 And each zone
-is essentially--
+is essentially &mdash;
 
 1024
 00:41:23,434 --> 00:41:26,367
-um, you know, can be scrolled--
+um, you know, can be scrolled &mdash;
 
 1025
 00:41:26,367 --> 00:41:30,000
@@ -4827,7 +4827,7 @@ in your HTML structure
 1030
 00:41:39,000 --> 00:41:41,000
 going to be setting up,
-you know, different--
+you know, different &mdash;
 
 1031
 00:41:41,000 --> 00:41:44,000
@@ -4885,7 +4885,7 @@ an existing Web site
 1042
 00:42:09,000 --> 00:42:11,334
 or a Web app
-that you want to see what it--
+that you want to see what it &mdash;
 
 1043
 00:42:11,334 --> 00:42:13,334
@@ -4918,12 +4918,12 @@ and set it to true,
 1049
 00:42:24,067 --> 00:42:26,501
 and when it does that,
-it'll sort of--
+it'll sort of &mdash;
 
 1050
 00:42:26,501 --> 00:42:29,067
 you know, based on, you know,
-an Euclidean--
+an Euclidean &mdash;
 
 1051
 00:42:29,067 --> 00:42:31,267
@@ -4976,7 +4976,7 @@ to full production
 1061
 00:42:52,734 --> 00:42:55,000
 because there's,
-you know, visual--
+you know, visual &mdash;
 
 1062
 00:42:55,000 --> 00:42:58,334
@@ -5009,7 +5009,7 @@ Here's an example of, uh,
 
 1068
 00:43:12,501 --> 00:43:14,501
-of the HTML structure that you--
+of the HTML structure that you &mdash;
 
 1069
 00:43:14,501 --> 00:43:17,000
@@ -5032,7 +5032,7 @@ This is just HTML markup here,
 1073
 00:43:23,934 --> 00:43:26,167
 so you're essentially
-creating two zones--
+creating two zones &mdash;
 
 1074
 00:43:26,167 --> 00:43:28,167
@@ -5059,7 +5059,7 @@ as--as poss--as I want.
 
 1079
 00:43:38,334 --> 00:43:41,501
-And I'm setting a class--
+And I'm setting a class &mdash;
 a special class name
 
 1080
@@ -5112,8 +5112,8 @@ with this sort of a structure,
 
 1090
 00:44:10,000 --> 00:44:12,501
-you can really--
-depending on, you know, how--
+you can really &mdash;
+depending on, you know, how &mdash;
 
 1091
 00:44:12,501 --> 00:44:15,000
@@ -5137,7 +5137,7 @@ of different rows
 
 1095
 00:44:23,501 --> 00:44:27,000
-and then different components--
+and then different components &mdash;
 selectable components within.
 
 1096
@@ -5152,7 +5152,7 @@ is incredibly important
 
 1098
 00:44:31,501 --> 00:44:35,334
-in terms of laying out your--
+in terms of laying out your &mdash;
 your HTML
 
 1099
@@ -5172,12 +5172,12 @@ So, for example,
 1102
 00:44:42,667 --> 00:44:45,000
 if you can read some
-of the CSS rules here--
+of the CSS rules here &mdash;
 
 1103
 00:44:45,000 --> 00:44:47,200
 you don't have to look through
-all of them--
+all of them &mdash;
 
 1104
 00:44:47,200 --> 00:44:49,501
@@ -5197,7 +5197,7 @@ and so forth.
 1107
 00:44:55,501 --> 00:44:57,501
 Last--the last step
-which I mentioned--
+which I mentioned &mdash;
 
 1108
 00:44:57,501 --> 00:44:59,501
@@ -5277,7 +5277,7 @@ right?
 1124
 00:45:37,334 --> 00:45:40,501
 So I'm telling the library
-for every--every--
+for every--every &mdash;
 
 1125
 00:45:40,501 --> 00:45:44,000
@@ -5291,7 +5291,7 @@ I want that to be selectable.
 1127
 00:45:46,000 --> 00:45:49,000
 Um, I'm going to tell it,
-you know, every--every--
+you know, every--every &mdash;
 
 1128
 00:45:49,000 --> 00:45:52,667
@@ -5323,7 +5323,7 @@ on a specific element,
 
 1134
 00:46:04,501 --> 00:46:06,501
-it's going to apply--
+it's going to apply &mdash;
 
 1135
 00:46:06,501 --> 00:46:09,501
@@ -5370,7 +5370,7 @@ on the Web, right?
 1144
 00:46:29,934 --> 00:46:33,000
 And--and 13 is the key code
-that register--
+that register &mdash;
 
 1145
 00:46:33,000 --> 00:46:35,801
@@ -5399,12 +5399,12 @@ when it gets fired.
 
 1150
 00:46:45,000 --> 00:46:46,801
-And at the bottom there--
+And at the bottom there &mdash;
 
 1151
 00:46:46,801 --> 00:46:49,000
 the bottom box essentially
-just shows how you--
+just shows how you &mdash;
 
 1152
 00:46:49,000 --> 00:46:51,067
@@ -5413,7 +5413,7 @@ everything together.
 
 1153
 00:46:51,067 --> 00:46:54,801
-So we have a-a top level--
+So we have a-a top level &mdash;
 a key controller object,
 
 1154
@@ -5423,7 +5423,7 @@ a new instance of,
 
 1155
 00:46:56,400 --> 00:46:58,000
-and then you're creating--
+and then you're creating &mdash;
 
 1156
 00:46:58,000 --> 00:47:00,767
@@ -5581,16 +5581,16 @@ will indicate to the library
 1189
 00:48:15,400 --> 00:48:18,901
 that I want this container
-to be scrollable--
+to be scrollable &mdash;
 
 1190
 00:48:18,901 --> 00:48:22,334
-to be navigable left--
+to be navigable left &mdash;
 using left and right keys.
 
 1191
 00:48:22,334 --> 00:48:24,334
-It also contains--
+It also contains &mdash;
 
 1192
 00:48:24,334 --> 00:48:26,667
@@ -5684,7 +5684,7 @@ two snippets
 1211
 00:49:10,501 --> 00:49:14,501
 of, uh, a UL element
-with class name--
+with class name &mdash;
 
 1212
 00:49:14,501 --> 00:49:18,167
@@ -5783,7 +5783,7 @@ to helping to visualize,
 
 1232
 00:49:57,000 --> 00:50:01,167
-uh, or represents these--
+uh, or represents these &mdash;
 these HT--this markup
 
 1233
@@ -5802,7 +5802,7 @@ within my horizontal container,
 
 1236
 00:50:09,334 --> 00:50:11,334
-I want to apply a display--
+I want to apply a display &mdash;
 
 1237
 00:50:11,334 --> 00:50:13,501
@@ -5811,7 +5811,7 @@ an inline block display rule,
 1238
 00:50:13,501 --> 00:50:16,000
 which is gonna stack them,
-you know--
+you know &mdash;
 
 1239
 00:50:16,000 --> 00:50:19,334
@@ -5859,7 +5859,7 @@ a complex UI with this.
 1248
 00:50:43,501 --> 00:50:45,834
 'Cause you can imagine you have
-a variety of different--
+a variety of different &mdash;
 
 1249
 00:50:45,834 --> 00:50:49,667
@@ -5902,7 +5902,7 @@ scrolling containers.
 
 1257
 00:51:06,868 --> 00:51:09,801
-So if I have, uh, a list of--
+So if I have, uh, a list of &mdash;
 
 1258
 00:51:09,801 --> 00:51:11,501
@@ -5962,12 +5962,12 @@ heads down on the arrow keys,
 
 1270
 00:51:39,934 --> 00:51:41,501
-it's going to always maintain--
+it's going to always maintain &mdash;
 
 1271
 00:51:41,501 --> 00:51:44,501
-it's gonna--it's--
-it's gonna scroll--
+it's gonna--it's &mdash;
+it's gonna scroll &mdash;
 
 1272
 00:51:44,501 --> 00:51:47,501
@@ -5985,7 +5985,7 @@ the next, you know,
 
 1275
 00:51:53,000 --> 00:51:55,501
-the next component that--
+the next component that &mdash;
 that's below it.
 
 1276
@@ -5995,7 +5995,7 @@ works magically,
 
 1277
 00:51:57,501 --> 00:52:00,133
-and it really--
+and it really &mdash;
 it really is up to you
 
 1278
@@ -6012,7 +6012,7 @@ to appear this way.
 
 1281
 00:52:08,334 --> 00:52:10,334
-And lastly, JavaScript is--
+And lastly, JavaScript is &mdash;
 
 1282
 00:52:10,334 --> 00:52:12,334
@@ -6045,7 +6045,7 @@ your keyboard navigation scheme.
 1288
 00:52:25,667 --> 00:52:27,667
 So essentially,
-what I'm showing here--
+what I'm showing here &mdash;
 
 1289
 00:52:27,667 --> 00:52:29,834
@@ -6069,7 +6069,7 @@ scan through
 1293
 00:52:37,000 --> 00:52:39,000
 all of his child elements
-and look for these--
+and look for these &mdash;
 
 1294
 00:52:39,000 --> 00:52:42,801
@@ -6130,7 +6130,7 @@ very different,
 
 1306
 00:53:09,501 --> 00:53:11,167
-but they're both--
+but they're both &mdash;
 
 1307
 00:53:11,167 --> 00:53:13,567
@@ -6139,7 +6139,7 @@ that you can really accomplish
 
 1308
 00:53:13,567 --> 00:53:16,834
-the same--
+the same &mdash;
 very similar interfaces
 
 1309
@@ -6222,7 +6222,7 @@ Lee: Okay, um,
 1326
 00:54:45,000 --> 00:54:47,534
 so unfortunately,
-we're having some Wi-Fi--
+we're having some Wi-Fi &mdash;
 
 1327
 00:54:47,534 --> 00:54:49,501
@@ -6236,7 +6236,7 @@ internet connection issues.
 
 1329
 00:54:52,000 --> 00:54:54,968
-Um, if you go to that--
+Um, if you go to that &mdash;
 that go link, um,
 
 1330
@@ -6275,7 +6275,7 @@ the various examples within,
 
 1337
 00:55:11,734 --> 00:55:13,334
-and then look at the--
+and then look at the &mdash;
 view the source,
 
 1338
@@ -6286,7 +6286,7 @@ the HTML markup actually looks,
 1339
 00:55:16,501 --> 00:55:18,667
 um, and then you'll see
-the JavaScript library--
+the JavaScript library &mdash;
 
 1340
 00:55:18,667 --> 00:55:21,300

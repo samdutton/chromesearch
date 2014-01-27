@@ -330,11 +330,11 @@ of interesting.
 72
 00:02:55,310 --> 00:02:58,235
 I know that I've certainly
-spent--
+spent &mdash;
 
 73
 00:02:58,235 --> 00:03:00,640
-I feel fine admitting it-- that
+I feel fine admitting it &mdash; that
 I spent way too much time
 
 74
@@ -399,7 +399,7 @@ completely re-style your
 86
 00:03:39,340 --> 00:03:41,710
 Chrome DevTools, which
-is quite cool--
+is quite cool &mdash;
 
 87
 00:03:41,710 --> 00:03:44,812
@@ -691,11 +691,11 @@ request number two, I'm
 148
 00:06:16,940 --> 00:06:20,680
 saying, hey, please navigate
-yourself-- so I'm talking to
+yourself &mdash; so I'm talking to
 
 149
 00:06:20,680 --> 00:06:21,620
-this specific tab--
+this specific tab &mdash;
 
 150
 00:06:21,620 --> 00:06:26,185
@@ -795,7 +795,7 @@ the timing data for this
 
 171
 00:07:07,250 --> 00:07:09,550
-request-- how long I spent
+request &mdash; how long I spent
 connecting, doing a DNS
 
 172
@@ -944,7 +944,7 @@ that's as intended, because,
 
 203
 00:08:26,620 --> 00:08:29,216
-for example, as I hover--
+for example, as I hover &mdash;
 
 204
 00:08:29,216 --> 00:08:29,630
@@ -961,7 +961,7 @@ here, you can
 
 207
 00:08:32,820 --> 00:08:33,900
-actually see it being--
+actually see it being &mdash;
 
 208
 00:08:33,900 --> 00:08:37,020
@@ -1193,7 +1193,7 @@ entirely, which is awesome.
 256
 00:10:48,204 --> 00:10:50,580
 Now, shifting gears
-a little bit--
+a little bit &mdash;
 
 257
 00:10:50,580 --> 00:10:51,550
@@ -1359,7 +1359,7 @@ have to quit this.
 
 291
 00:12:34,116 --> 00:12:35,605
-So Benchmark--
+So Benchmark &mdash;
 
 292
 00:12:35,605 --> 00:12:37,600
@@ -1426,7 +1426,7 @@ We don't have all day.
 306
 00:13:08,720 --> 00:13:10,700
 Clear connections,
-clear cache--
+clear cache &mdash;
 
 307
 00:13:10,700 --> 00:13:12,620
@@ -1613,7 +1613,7 @@ application.
 346
 00:14:51,915 --> 00:14:55,700
 So we have the Omnibox,
-which-- and this is
+which &mdash; and this is
 
 347
 00:14:55,700 --> 00:14:56,130
@@ -1685,7 +1685,7 @@ tools hidden in here.
 361
 00:15:32,670 --> 00:15:34,980
 So if I go into Chrome
-net-internals--
+net-internals &mdash;
 
 362
 00:15:34,980 --> 00:15:38,090
@@ -1897,11 +1897,11 @@ lot of histograms in here.
 406
 00:17:37,820 --> 00:17:41,110
 But if I look for
-DNS Success--
+DNS Success &mdash;
 
 407
 00:17:41,110 --> 00:17:43,562
-let me just look for Success--
+let me just look for Success &mdash;
 
 408
 00:17:43,562 --> 00:17:45,240
@@ -2202,7 +2202,7 @@ this actually does.
 470
 00:20:31,460 --> 00:20:36,960
 So we can go into
-chrome://tracing--
+chrome://tracing &mdash;
 
 471
 00:20:36,960 --> 00:20:38,210
@@ -2278,11 +2278,11 @@ on this region and see.
 
 487
 00:21:14,230 --> 00:21:15,465
-So this is--
+So this is &mdash;
 
 488
 00:21:15,465 --> 00:21:17,600
-or these are other-- the
+or these are other &mdash; the
 specific frames that are being
 
 489
@@ -2430,7 +2430,7 @@ would actually see these
 
 519
 00:22:30,710 --> 00:22:32,230
-blocks here-- so update
+blocks here &mdash; so update
 and render.
 
 520

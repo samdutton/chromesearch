@@ -16,7 +16,7 @@ like to introduce Alex
 
 5
 00:00:15,252 --> 00:00:17,056
-who is a product-- you're a
+who is a product &mdash; you're a
 product manager, right?
 
 6
@@ -479,7 +479,7 @@ So, I tell you what.
 102
 00:03:53,400 --> 00:03:54,730
 Should we talk about some
-of the news, things--
+of the news, things &mdash;
 
 103
 00:03:54,730 --> 00:03:55,964
@@ -875,12 +875,12 @@ got this download's directory
 
 186
 00:06:42,460 --> 00:06:43,890
-that's just full of--
+that's just full of &mdash;
 
 187
 00:06:43,890 --> 00:06:47,190
 whoa, I was going to say
-a rude word-- rubbish.
+a rude word &mdash; rubbish.
 
 188
 00:06:47,190 --> 00:06:48,840
@@ -935,7 +935,7 @@ and pull it back.
 
 199
 00:07:07,690 --> 00:07:10,950
-So next week I'll show you--
+So next week I'll show you &mdash;
 well, not next week, the next
 
 200
@@ -990,7 +990,7 @@ has all [INAUDIBLE].
 210
 00:07:37,990 --> 00:07:40,370
 PAUL: And it also shows a really
-cool presentation of--
+cool presentation of &mdash;
 
 211
 00:07:40,370 --> 00:07:44,060
@@ -1021,7 +1021,7 @@ no one believes me.
 
 217
 00:07:55,120 --> 00:07:57,420
-Cool, so--
+Cool, so &mdash;
 
 218
 00:07:57,420 --> 00:07:58,320
@@ -1334,7 +1334,7 @@ PAUL: Is it right?
 283
 00:10:23,550 --> 00:10:25,780
 We've only been I
-think publicly--
+think publicly &mdash;
 
 284
 00:10:25,780 --> 00:10:27,320
@@ -1376,7 +1376,7 @@ answered the question.
 292
 00:10:40,830 --> 00:10:42,100
 We also have another
-question--
+question &mdash;
 
 293
 00:10:42,100 --> 00:10:44,605
@@ -1537,7 +1537,7 @@ evolve the spec.
 
 326
 00:11:58,310 --> 00:11:58,620
-So--
+So &mdash;
 
 327
 00:11:58,620 --> 00:11:59,960
@@ -1648,7 +1648,7 @@ use the same API.
 349
 00:12:49,410 --> 00:12:52,437
 OK, so the next question- how do
-you-- oh, actually there's
+you &mdash; oh, actually there's
 
 350
 00:12:52,437 --> 00:12:54,090
@@ -1945,7 +1945,7 @@ have support for suggestions
 
 411
 00:15:17,450 --> 00:15:19,660
-just yet, but it should be--
+just yet, but it should be &mdash;
 
 412
 00:15:19,660 --> 00:15:22,300
@@ -2345,7 +2345,7 @@ that is the share.
 495
 00:18:33,530 --> 00:18:38,510
 demos.webintents.org is a
-good place to start--
+good place to start &mdash;
 
 496
 00:18:38,510 --> 00:18:42,640
@@ -2441,7 +2441,7 @@ for that as well.
 515
 00:19:27,010 --> 00:19:31,780
 So, hopefully, that again, was
-Glenn Johns, and he said--
+Glenn Johns, and he said &mdash;
 
 516
 00:19:31,780 --> 00:19:32,710
@@ -2715,7 +2715,7 @@ directory services,
 
 573
 00:21:51,990 --> 00:21:54,100
-so you can go in--
+so you can go in &mdash;
 
 574
 00:21:54,100 --> 00:21:56,020
@@ -2862,7 +2862,7 @@ I think we've defined
 
 604
 00:23:02,906 --> 00:23:06,540
-five, six, different actions--
+five, six, different actions &mdash;
 the ability to share data,
 
 605
@@ -3134,7 +3134,7 @@ to open it in Garage Band if
 662
 00:25:17,900 --> 00:25:21,390
 it's a song, versus I want to
-open it in Audacity if it's--
+open it in Audacity if it's &mdash;
 
 663
 00:25:21,390 --> 00:25:22,660
@@ -3174,14 +3174,14 @@ at the moment.
 
 671
 00:25:35,100 --> 00:25:36,670
-So, right now--
+So, right now &mdash;
 
 672
 00:25:36,670 --> 00:25:39,320
 
 673
 00:25:39,320 --> 00:25:41,050
-ALEX: I don't know how--
+ALEX: I don't know how &mdash;
 
 674
 00:25:41,050 --> 00:25:43,600
@@ -3299,7 +3299,7 @@ got to install that handle
 
 698
 00:26:42,600 --> 00:26:44,870
-those types of data types--
+those types of data types &mdash;
 
 699
 00:26:44,870 --> 00:26:46,450
@@ -3401,7 +3401,7 @@ doing right now.
 719
 00:27:36,620 --> 00:27:39,260
 So they might not actually
-even need--
+even need &mdash;
 
 720
 00:27:39,260 --> 00:27:41,083
@@ -3808,7 +3808,7 @@ support for Web Intents as
 
 806
 00:31:07,020 --> 00:31:07,830
-well, so it's--
+well, so it's &mdash;
 
 807
 00:31:07,830 --> 00:31:09,580
@@ -3919,7 +3919,7 @@ based system is pretty hard.
 829
 00:31:55,700 --> 00:31:59,010
 So, we believe, Web Intents
-in this case would be--
+in this case would be &mdash;
 
 830
 00:31:59,010 --> 00:32:01,050
@@ -4092,7 +4092,7 @@ we don't have that way of
 
 866
 00:33:27,550 --> 00:33:29,840
-converting users directly from--
+converting users directly from &mdash;
 you know, if you've
 
 867
@@ -4126,7 +4126,7 @@ anything else to add.
 
 873
 00:33:46,715 --> 00:33:47,990
-I believe, so--
+I believe, so &mdash;
 
 874
 00:33:47,990 --> 00:33:48,890
@@ -4254,7 +4254,7 @@ Web app to native app.
 
 902
 00:34:42,159 --> 00:34:43,020
-Within Android--
+Within Android &mdash;
 
 903
 00:34:43,020 --> 00:34:44,280
@@ -4392,7 +4392,7 @@ from one application to
 
 931
 00:35:51,240 --> 00:35:52,990
-another to--
+another to &mdash;
 
 932
 00:35:52,990 --> 00:35:54,030
@@ -4468,7 +4468,7 @@ actually, well, most people
 947
 00:36:29,490 --> 00:36:33,030
 want to share not just this
-very basic kind of email--
+very basic kind of email &mdash;
 
 948
 00:36:33,030 --> 00:36:33,750
@@ -5391,7 +5391,7 @@ and then we'll try to provide
 1141
 00:44:01,523 --> 00:44:03,580
 you with the best guidance
-possible--
+possible &mdash;
 
 1142
 00:44:03,580 --> 00:44:05,980
@@ -5429,7 +5429,7 @@ the end that just looks like
 
 1149
 00:44:21,210 --> 00:44:22,150
-some random text--
+some random text &mdash;
 
 1150
 00:44:22,150 --> 00:44:23,710

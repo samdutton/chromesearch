@@ -2172,11 +2172,11 @@ All right.
 464
 00:20:47,500 --> 00:20:53,030
 So this is basically
-the result--
+the result &mdash;
 
 465
 00:20:53,030 --> 00:20:55,630
-maybe I have a typo in my--
+maybe I have a typo in my &mdash;
 
 466
 00:20:55,630 --> 00:20:56,880
@@ -2637,7 +2637,7 @@ and I can run this, point
 
 564
 00:25:15,290 --> 00:25:18,400
-it to the output of my--
+it to the output of my &mdash;
 
 565
 00:25:18,400 --> 00:25:20,080
@@ -3706,7 +3706,7 @@ AUDIENCE: [INAUDIBLE].
 
 793
 00:35:44,060 --> 00:35:45,445
-DAN HOLEVOET: So there is--
+DAN HOLEVOET: So there is &mdash;
 
 794
 00:35:45,445 --> 00:35:45,780
@@ -3822,7 +3822,7 @@ I compare this to AWS.
 
 818
 00:36:43,830 --> 00:36:45,920
-So the first question--
+So the first question &mdash;
 
 819
 00:36:45,920 --> 00:36:49,220
@@ -4231,7 +4231,7 @@ I mean, it's
 
 908
 00:40:52,400 --> 00:40:57,970
-very similar to the--
+very similar to the &mdash;
 
 909
 00:40:57,970 --> 00:40:59,840

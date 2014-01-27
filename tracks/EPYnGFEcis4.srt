@@ -34,7 +34,7 @@ Future of Your Sites.
 
 9
 00:00:15,224 --> 00:00:17,530
-PETER BEVERLOO: My name is--
+PETER BEVERLOO: My name is &mdash;
 
 10
 00:00:17,530 --> 00:00:18,802
@@ -64,7 +64,7 @@ for Android.
 
 16
 00:00:28,275 --> 00:00:32,470
-And I mostly specialize in--
+And I mostly specialize in &mdash;
 
 17
 00:00:32,470 --> 00:00:33,720
@@ -165,7 +165,7 @@ smartphone.
 
 39
 00:01:21,232 --> 00:01:23,110
-Pretty sure that's--
+Pretty sure that's &mdash;
 
 40
 00:01:23,110 --> 00:01:24,420
@@ -589,7 +589,7 @@ of constraints
 
 130
 00:04:46,830 --> 00:04:48,060
-which have put us--
+which have put us &mdash;
 
 131
 00:04:48,060 --> 00:04:50,010
@@ -1022,7 +1022,7 @@ defines pixel ratio.
 222
 00:08:35,870 --> 00:08:38,169
 And based on that, you can have
-different-- well, a good
+different &mdash; well, a good
 
 223
 00:08:38,169 --> 00:08:40,659
@@ -1423,7 +1423,7 @@ Who knows the Geolocation API?
 
 307
 00:12:15,850 --> 00:12:16,980
-OK, not actually--
+OK, not actually &mdash;
 
 308
 00:12:16,980 --> 00:12:18,430
@@ -1581,7 +1581,7 @@ within 100 meters.
 341
 00:13:27,180 --> 00:13:28,770
 And then after a couple
-of seconds--
+of seconds &mdash;
 
 342
 00:13:28,770 --> 00:13:29,940
@@ -1590,7 +1590,7 @@ see from this demo
 
 343
 00:13:29,940 --> 00:13:32,280
-if it actually works--
+if it actually works &mdash;
 
 344
 00:13:32,280 --> 00:13:33,650
@@ -2118,7 +2118,7 @@ to update the manifest,
 454
 00:17:20,420 --> 00:17:21,850
 because everyone will always
-have the manifest--
+have the manifest &mdash;
 
 455
 00:17:21,850 --> 00:17:23,630
@@ -2164,7 +2164,7 @@ We have local storage.
 464
 00:17:38,060 --> 00:17:41,120
 Local storage, key value pair
-system-- you can blobs of data
+system &mdash; you can blobs of data
 
 465
 00:17:41,120 --> 00:17:44,020
@@ -2243,7 +2243,7 @@ supported.
 
 482
 00:18:13,420 --> 00:18:15,110
-It's not yet--
+It's not yet &mdash;
 
 483
 00:18:15,110 --> 00:18:16,720
@@ -4314,11 +4314,11 @@ the mobile platform.
 922
 00:35:16,360 --> 00:35:17,940
 Right now, it's only
-available on--
+available on &mdash;
 
 923
 00:35:17,940 --> 00:35:20,410
-I need to get this right-- on
+I need to get this right &mdash; on
 devices supporting the neon
 
 924
@@ -4483,7 +4483,7 @@ users on the
 
 959
 00:36:34,160 --> 00:36:37,570
-move-- the Geolocation API,
+move &mdash; the Geolocation API,
 the offline access APIs.
 
 960

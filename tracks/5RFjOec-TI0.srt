@@ -875,7 +875,7 @@ abort the execution.
 
 186
 00:08:44,970 --> 00:08:46,020
-So with this in place--
+So with this in place &mdash;
 
 187
 00:08:46,020 --> 00:08:48,040
@@ -1254,7 +1254,7 @@ with the developer.
 
 268
 00:12:20,990 --> 00:12:25,590
-So you as a developer start--
+So you as a developer start &mdash;
 
 269
 00:12:25,590 --> 00:12:28,290
@@ -1397,7 +1397,7 @@ to an executable.
 
 298
 00:13:42,390 --> 00:13:44,990
-Now this case-- so PNaCl Clang
+Now this case &mdash; so PNaCl Clang
 is based, as you might guess
 
 299
@@ -1911,7 +1911,7 @@ You can see it for yourself.
 409
 00:18:26,290 --> 00:18:27,550
 What we're really
-after, though--
+after, though &mdash;
 
 410
 00:18:27,550 --> 00:18:28,830
@@ -1985,7 +1985,7 @@ more as we go along.
 425
 00:18:58,970 --> 00:19:01,590
 But the things we do
-already have--
+already have &mdash;
 
 426
 00:19:01,590 --> 00:19:04,070
@@ -2374,7 +2374,7 @@ principles that you'll need to
 
 510
 00:22:36,660 --> 00:22:40,000
-be aware of in doing this--
+be aware of in doing this &mdash;
 
 511
 00:22:40,000 --> 00:22:42,000
@@ -3172,7 +3172,7 @@ about before.
 
 682
 00:30:34,440 --> 00:30:36,370
-That versus-- this was O0.
+That versus &mdash; this was O0.
 
 683
 00:30:36,370 --> 00:30:38,240
@@ -3402,7 +3402,7 @@ those up and going
 731
 00:32:31,560 --> 00:32:34,640
 because some of our
-games have used--
+games have used &mdash;
 
 732
 00:32:34,640 --> 00:32:36,450
@@ -3665,8 +3665,8 @@ question.
 
 789
 00:34:57,160 --> 00:34:59,850
-So the question is why--
-so millions of people--
+So the question is why &mdash;
+so millions of people &mdash;
 
 790
 00:34:59,850 --> 00:35:02,350
@@ -4024,7 +4024,7 @@ Dart or JavaScript today.
 865
 00:38:05,130 --> 00:38:07,440
 The SIMD instruction
-thing is sort of--
+thing is sort of &mdash;
 
 866
 00:38:07,440 --> 00:38:09,730
@@ -4075,7 +4075,7 @@ kind of hint so that we can,
 876
 00:38:32,190 --> 00:38:38,120
 for example, kind of hint for
-the-- to provide some cues for
+the &mdash; to provide some cues for
 
 877
 00:38:38,120 --> 00:38:39,390
@@ -4271,12 +4271,12 @@ intermediate representation.
 917
 00:40:17,210 --> 00:40:21,020
 So there was a nice discussion
-on the LLVM mailing list--
+on the LLVM mailing list &mdash;
 
 918
 00:40:21,020 --> 00:40:23,480
 I don't know, a year and a half
-ago or so-- where it was
+ago or so &mdash; where it was
 
 919
 00:40:23,480 --> 00:40:26,300
@@ -4389,7 +4389,7 @@ is that you're freezing
 941
 00:41:33,180 --> 00:41:35,430
 the intermediate
-language, or--
+language, or &mdash;
 
 942
 00:41:35,430 --> 00:41:37,420

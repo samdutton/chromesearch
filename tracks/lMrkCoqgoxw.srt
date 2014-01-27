@@ -587,7 +587,7 @@ and magnifiers
 124
 00:04:20,501 --> 00:04:21,934
 allow the user to explore
-both static--
+both static &mdash;
 
 125
 00:04:21,934 --> 00:04:23,901
@@ -652,7 +652,7 @@ Click here for help, link.
 138
 00:04:46,167 --> 00:04:48,000
 Shearer: So that was great.
-ChromeVox jumped through--
+ChromeVox jumped through &mdash;
 
 139
 00:04:48,000 --> 00:04:49,501
@@ -928,7 +928,7 @@ me to interact with.
 
 195
 00:06:45,067 --> 00:06:47,868
-So this is good. It wants me--
+So this is good. It wants me &mdash;
 I see some stars.
 
 196
@@ -1510,7 +1510,7 @@ on the page.
 
 319
 00:11:06,167 --> 00:11:07,701
-There were two instances--
+There were two instances &mdash;
 
 320
 00:11:07,701 --> 00:11:09,467
@@ -1520,7 +1520,7 @@ the dialog opened,
 321
 00:11:09,467 --> 00:11:11,434
 and the second when
-the word "saving" appeared--
+the word "saving" appeared &mdash;
 
 322
 00:11:11,434 --> 00:11:13,834
@@ -1591,7 +1591,7 @@ with the screen reader.
 
 336
 00:11:40,033 --> 00:11:41,434
-So let's turn--
+So let's turn &mdash;
 
 337
 00:11:41,434 --> 00:11:43,567
@@ -1620,13 +1620,13 @@ Contact us.
 
 342
 00:11:49,601 --> 00:11:51,167
-Pizza--
+Pizza &mdash;
 Caffeinated soda, button.
 
 343
 00:11:51,167 --> 00:11:53,033
 Mazzoni: Okay, so now
-I've got something--
+I've got something &mdash;
 
 344
 00:11:53,033 --> 00:11:55,734
@@ -1718,7 +1718,7 @@ eww gross.
 
 362
 00:12:35,200 --> 00:12:36,367
-Two stars--
+Two stars &mdash;
 
 363
 00:12:36,367 --> 00:12:38,200
@@ -1999,7 +1999,7 @@ of web developers
 
 421
 00:14:43,834 --> 00:14:45,534
-were in a habit--
+were in a habit &mdash;
 a few years ago,
 
 422
@@ -2334,7 +2334,7 @@ that you're simulating
 490
 00:17:07,934 --> 00:17:09,501
 and try a bunch of keys
-on your keyboard--
+on your keyboard &mdash;
 
 491
 00:17:09,501 --> 00:17:11,534
@@ -2343,7 +2343,7 @@ page up, page down,
 
 492
 00:17:11,534 --> 00:17:14,033
-escape, enter, space--
+escape, enter, space &mdash;
 and see what they do.
 
 493
@@ -3441,7 +3441,7 @@ female voice: Pressed.
 
 722
 00:25:06,167 --> 00:25:07,467
-Shearer: So it says--
+Shearer: So it says &mdash;
 Instead of "clicked,"
 
 723
@@ -3675,7 +3675,7 @@ how ChromeVox does.
 771
 00:26:40,400 --> 00:26:41,501
 female voice:
-Click to begin--
+Click to begin &mdash;
 
 772
 00:26:41,501 --> 00:26:42,601
@@ -4020,7 +4020,7 @@ that simply by adding
 
 844
 00:29:23,367 --> 00:29:25,067
-the keyboard handler support--
+the keyboard handler support &mdash;
 
 845
 00:29:25,067 --> 00:29:27,467
@@ -4065,7 +4065,7 @@ that we had a dialog.
 853
 00:29:46,234 --> 00:29:48,033
 And the accessibility problem
-with the dialog--
+with the dialog &mdash;
 
 854
 00:29:48,033 --> 00:29:50,133
@@ -5405,7 +5405,7 @@ assistive technology.
 1132
 00:40:08,367 --> 00:40:12,167
 The problem I found
-is that as a--
+is that as a &mdash;
 
 1133
 00:40:12,167 --> 00:40:14,634
@@ -5795,7 +5795,7 @@ was not listed.
 
 1213
 00:43:14,334 --> 00:43:15,767
-Shearer: The reason--
+Shearer: The reason &mdash;
 Oh, sorry.
 
 1214
@@ -6243,7 +6243,7 @@ say there is,
 
 1307
 00:46:56,868 --> 00:46:59,834
-that Section 508 compliance--
+that Section 508 compliance &mdash;
 for people who don't know,
 
 1308
@@ -6511,7 +6511,7 @@ a different experience.
 1362
 00:49:13,067 --> 00:49:14,934
 Shearer: It's definitely
-something that's defin--
+something that's defin &mdash;
 
 1363
 00:49:14,934 --> 00:49:16,234

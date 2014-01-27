@@ -36,7 +36,7 @@ out there would like to ask
 
 9
 00:00:20,000 --> 00:00:21,810
-questions--
+questions &mdash;
 
 10
 00:00:21,810 --> 00:00:25,030
@@ -198,7 +198,7 @@ here in the Chrome Web Store
 
 44
 00:02:01,080 --> 00:02:03,550
-and see only apps that--
+and see only apps that &mdash;
 
 45
 00:02:03,550 --> 00:02:05,500
@@ -264,7 +264,7 @@ There it is.
 58
 00:02:32,902 --> 00:02:35,550
 OK, now, Claudio, should
-we go ahead and--
+we go ahead and &mdash;
 
 59
 00:02:35,550 --> 00:02:38,520
@@ -408,7 +408,7 @@ dissonance there, isn't it?
 89
 00:03:46,210 --> 00:03:48,640
 We're actually adding
-this to Drive, but--
+this to Drive, but &mdash;
 
 90
 00:03:48,640 --> 00:03:51,000
@@ -492,7 +492,7 @@ let's click Add.
 
 107
 00:04:29,990 --> 00:04:30,760
-As you said--
+As you said &mdash;
 
 108
 00:04:30,760 --> 00:04:31,440
@@ -773,7 +773,7 @@ They need full access.
 167
 00:07:02,380 --> 00:07:04,720
 But wider access
-also includes--
+also includes &mdash;
 
 168
 00:07:04,720 --> 00:07:07,560
@@ -915,7 +915,7 @@ Google Developers Live.
 
 198
 00:08:17,560 --> 00:08:18,800
-If you want to read the page--
+If you want to read the page &mdash;
 
 199
 00:08:18,800 --> 00:08:20,830
@@ -1187,7 +1187,7 @@ to be alone in a
 
 259
 00:10:23,040 --> 00:10:24,520
-cloister or a dark room--
+cloister or a dark room &mdash;
 
 260
 00:10:24,520 --> 00:10:25,030
@@ -1264,7 +1264,7 @@ create any file.
 
 276
 00:11:00,890 --> 00:11:03,690
-So we should make clear that--
+So we should make clear that &mdash;
 
 277
 00:11:03,690 --> 00:11:06,220
@@ -1369,7 +1369,7 @@ ERIC GILMORE: It's not.
 
 299
 00:11:50,250 --> 00:11:55,050
-Should I completely reopen--
+Should I completely reopen &mdash;
 
 300
 00:11:55,050 --> 00:11:58,010
@@ -1390,7 +1390,7 @@ internet access issues.
 304
 00:12:06,860 --> 00:12:09,490
 ERIC GILMORE: Is it possible
-that it isn't integrated for--
+that it isn't integrated for &mdash;
 
 305
 00:12:09,490 --> 00:12:10,310
@@ -1521,7 +1521,7 @@ file isn't supported.
 
 332
 00:13:20,740 --> 00:13:22,560
-So you have two options--
+So you have two options &mdash;
 
 333
 00:13:22,560 --> 00:13:27,370
@@ -1543,7 +1543,7 @@ user experience, though.
 
 337
 00:13:35,840 --> 00:13:36,620
-You, as a developer--
+You, as a developer &mdash;
 
 338
 00:13:36,620 --> 00:13:39,830
@@ -2069,7 +2069,7 @@ of those just to see?
 450
 00:19:00,650 --> 00:19:01,900
 ERIC GILMORE: Want to revert
-back before I--
+back before I &mdash;
 
 451
 00:19:01,900 --> 00:19:02,620
@@ -2095,7 +2095,7 @@ ERIC GILMORE: Let's go back.
 456
 00:19:09,520 --> 00:19:10,890
 CLAUDIO CHERUBINO: So you
-go to revision history--
+go to revision history &mdash;
 
 457
 00:19:10,890 --> 00:19:14,100
@@ -2262,7 +2262,7 @@ our revisions collection.
 493
 00:20:41,530 --> 00:20:43,240
 And we would just urge
-the developers--
+the developers &mdash;
 
 494
 00:20:43,240 --> 00:20:44,780
@@ -2295,7 +2295,7 @@ but it links you into the
 
 500
 00:20:59,990 --> 00:21:01,480
-details that you need--
+details that you need &mdash;
 
 501
 00:21:01,480 --> 00:21:03,100
@@ -2321,7 +2321,7 @@ What a great day.
 
 506
 00:21:11,180 --> 00:21:11,910
-ERIC GILMORE: It's the--
+ERIC GILMORE: It's the &mdash;
 
 507
 00:21:11,910 --> 00:21:12,860
@@ -2377,7 +2377,7 @@ features in Neutron Drive.
 518
 00:21:37,890 --> 00:21:43,340
 We're not going through all of
-them today, but remember--
+them today, but remember &mdash;
 
 519
 00:21:43,340 --> 00:21:45,640

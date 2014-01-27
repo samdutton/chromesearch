@@ -509,7 +509,7 @@ desktop sharing.
 112
 00:05:33,030 --> 00:05:37,220
 We'll ask the promoting
-team about working--
+team about working &mdash;
 
 113
 00:05:37,220 --> 00:05:39,500
@@ -626,7 +626,7 @@ for running
 
 137
 00:06:56,080 --> 00:06:58,060
-Chrome flags, I think--
+Chrome flags, I think &mdash;
 
 138
 00:06:58,060 --> 00:07:00,910
@@ -862,7 +862,7 @@ create, in a page, your own
 
 188
 00:09:13,490 --> 00:09:14,420
-complete API--
+complete API &mdash;
 
 189
 00:09:14,420 --> 00:09:19,570
@@ -1036,11 +1036,11 @@ extending Chrome
 
 225
 00:11:00,930 --> 00:11:03,320
-Developer Tools Boris Smus--
+Developer Tools Boris Smus &mdash;
 
 226
 00:11:03,320 --> 00:11:04,570
-that's S-M-U-S--
+that's S-M-U-S &mdash;
 
 227
 00:11:04,570 --> 00:11:06,370
@@ -1109,7 +1109,7 @@ extensions, APIs.
 241
 00:11:34,535 --> 00:11:35,938
 PAUL KINLAN: Because we'll have
-to do a Web Intents--
+to do a Web Intents &mdash;
 
 242
 00:11:35,938 --> 00:11:37,402
@@ -1376,7 +1376,7 @@ has got these couple
 
 300
 00:14:07,860 --> 00:14:08,040
-different plug-ins--
+different plug-ins &mdash;
 
 301
 00:14:08,040 --> 00:14:09,620
@@ -1574,7 +1574,7 @@ know an answer?
 
 344
 00:16:12,070 --> 00:16:13,230
-Because I was just think--
+Because I was just think &mdash;
 
 345
 00:16:13,230 --> 00:16:14,538
@@ -1849,7 +1849,7 @@ for Chrome for Android?
 
 403
 00:18:59,960 --> 00:19:03,110
-Web Audio API is used in--
+Web Audio API is used in &mdash;
 
 404
 00:19:03,110 --> 00:19:04,520
@@ -1987,7 +1987,7 @@ go to the Science
 
 432
 00:20:25,510 --> 00:20:27,380
-Museum and check out--
+Museum and check out &mdash;
 
 433
 00:20:27,380 --> 00:20:29,380
@@ -1996,7 +1996,7 @@ have said that, man.
 
 434
 00:20:29,380 --> 00:20:30,230
-SAM DUTTON: Paul's your man--
+SAM DUTTON: Paul's your man &mdash;
 
 435
 00:20:30,230 --> 00:20:32,085
@@ -2513,7 +2513,7 @@ just a moment.
 
 547
 00:25:33,690 --> 00:25:35,300
-So right now, this ticket--
+So right now, this ticket &mdash;
 
 548
 00:25:35,300 --> 00:25:46,940
@@ -3059,7 +3059,7 @@ Colorado writes, what parts of
 666
 00:30:55,370 --> 00:30:58,107
 the Chrome ecosystem is the
-team most excited about--
+team most excited about &mdash;
 
 667
 00:30:58,107 --> 00:30:59,061
@@ -3163,7 +3163,7 @@ it easy for me.
 688
 00:31:40,072 --> 00:31:43,250
 PAUL LEWIS: Me, I'm
-kind of excited--
+kind of excited &mdash;
 
 689
 00:31:43,250 --> 00:31:46,190
@@ -3404,12 +3404,12 @@ SAM DUTTON: Yeah, me too.
 740
 00:33:25,696 --> 00:33:30,010
 PAUL IRISH: One of the things
-about WebRTC though is that--
+about WebRTC though is that &mdash;
 
 741
 00:33:30,010 --> 00:33:34,500
 a small thing, just
-a small one--
+a small one &mdash;
 
 742
 00:33:34,500 --> 00:33:35,390
@@ -3460,7 +3460,7 @@ SAM DUTTON: Yeah.
 
 753
 00:33:47,655 --> 00:33:48,590
-In Canary--
+In Canary &mdash;
 
 754
 00:33:48,590 --> 00:33:50,306
@@ -3487,7 +3487,7 @@ Sorry.
 
 759
 00:33:54,325 --> 00:33:56,620
-Just--
+Just &mdash;
 
 760
 00:33:56,620 --> 00:33:57,340
@@ -3552,7 +3552,7 @@ is behind a flag.
 773
 00:34:31,139 --> 00:34:32,609
 PAUL IRISH: And just
-to clarify--
+to clarify &mdash;
 
 774
 00:34:32,609 --> 00:34:35,300
@@ -3601,7 +3601,7 @@ media as a way to get access
 
 784
 00:34:56,699 --> 00:34:57,549
-to the camera, microphone--
+to the camera, microphone &mdash;
 
 785
 00:34:57,549 --> 00:34:59,105
@@ -3656,12 +3656,12 @@ is peer-to-peer.
 796
 00:35:31,370 --> 00:35:36,580
 With things like noise
-cancellation, duplex sound--
+cancellation, duplex sound &mdash;
 
 797
 00:35:36,580 --> 00:35:37,960
 SAM DUTTON: Echo cancellation
-and so on--
+and so on &mdash;
 
 798
 00:35:37,960 --> 00:35:38,805
@@ -3741,7 +3741,7 @@ that, and it would be cool.
 814
 00:36:09,580 --> 00:36:10,650
 SAM DUTTON: One of
-the things--
+the things &mdash;
 
 815
 00:36:10,650 --> 00:36:12,426
@@ -3839,7 +3839,7 @@ data.
 
 835
 00:37:00,680 --> 00:37:01,500
-PAUL KINLAN: Right--
+PAUL KINLAN: Right &mdash;
 
 836
 00:37:01,500 --> 00:37:02,585
@@ -3949,7 +3949,7 @@ SAM DUTTON: Yeah.
 
 859
 00:38:03,890 --> 00:38:04,390
-Shameless plug--
+Shameless plug &mdash;
 
 860
 00:38:04,390 --> 00:38:05,020
@@ -4018,7 +4018,7 @@ that, the geolocation, there's
 
 874
 00:38:41,370 --> 00:38:42,120
-the timed elements--
+the timed elements &mdash;
 
 875
 00:38:42,120 --> 00:38:43,000
@@ -4027,11 +4027,11 @@ fairly simple.
 
 876
 00:38:43,000 --> 00:38:44,370
-It just had a geo file--
+It just had a geo file &mdash;
 
 877
 00:38:44,370 --> 00:38:46,010
-I used an XML file--
+I used an XML file &mdash;
 
 878
 00:38:46,010 --> 00:38:50,380
@@ -4135,7 +4135,7 @@ implementations across
 
 900
 00:39:39,290 --> 00:39:39,740
-platforms--
+platforms &mdash;
 
 901
 00:39:39,740 --> 00:39:41,500
@@ -4263,7 +4263,7 @@ need it in a media query?
 
 928
 00:40:49,745 --> 00:40:51,470
-Is that in the actual filter--
+Is that in the actual filter &mdash;
 
 929
 00:40:51,470 --> 00:40:54,000
@@ -4588,7 +4588,7 @@ question, someone's given me a
 
 998
 00:43:52,930 --> 00:43:54,400
-compliment that says--
+compliment that says &mdash;
 
 999
 00:43:54,400 --> 00:43:57,255
@@ -4598,7 +4598,7 @@ not a question.
 1000
 00:43:57,255 --> 00:43:58,510
 PAUL KINLAN: It says, where
-can I get the awesome--
+can I get the awesome &mdash;
 
 1001
 00:43:58,510 --> 00:43:59,880
@@ -4876,7 +4876,7 @@ and line endings?
 1060
 00:46:08,093 --> 00:46:09,895
 As far as line endings
-are concerned--
+are concerned &mdash;
 
 1061
 00:46:09,895 --> 00:46:13,226
@@ -4966,7 +4966,7 @@ PAUL KINLAN: Yeah.
 
 1080
 00:46:56,340 --> 00:46:58,290
-Who all--
+Who all &mdash;
 
 1081
 00:46:58,290 --> 00:46:59,030

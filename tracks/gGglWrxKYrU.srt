@@ -104,7 +104,7 @@ and that sort of thing.
 
 23
 00:00:54,330 --> 00:00:55,910
-So the Google Cloud Platform--
+So the Google Cloud Platform &mdash;
 
 24
 00:00:55,910 --> 00:00:59,070
@@ -171,7 +171,7 @@ as you can see here.
 
 37
 00:01:33,080 --> 00:01:34,820
-These are pictures taken--
+These are pictures taken &mdash;
 
 38
 00:01:34,820 --> 00:01:38,410
@@ -201,7 +201,7 @@ Well that was very nice of it.
 
 44
 00:01:50,380 --> 00:01:52,746
-Let's see if we can--
+Let's see if we can &mdash;
 
 45
 00:01:52,746 --> 00:01:55,330
@@ -246,7 +246,7 @@ requires to run these data
 54
 00:02:22,120 --> 00:02:25,100
 centers, we've also built up
-expertise in the software--
+expertise in the software &mdash;
 
 55
 00:02:25,100 --> 00:02:28,850
@@ -475,7 +475,7 @@ First is cloud storage.
 
 102
 00:04:24,850 --> 00:04:27,430
-Objects-- if you have image
+Objects &mdash; if you have image
 assets, video assets, things
 
 103
@@ -863,7 +863,7 @@ you have to spend a
 
 184
 00:07:56,480 --> 00:07:57,860
-lot of extra time--
+lot of extra time &mdash;
 
 185
 00:07:57,860 --> 00:07:59,930
@@ -872,7 +872,7 @@ those services.
 
 186
 00:07:59,930 --> 00:08:01,600
-So things like Memcache--
+So things like Memcache &mdash;
 
 187
 00:08:01,600 --> 00:08:05,320
@@ -920,7 +920,7 @@ of lines of code.
 196
 00:08:25,420 --> 00:08:27,820
 We also provide other things
-like email support--
+like email support &mdash;
 
 197
 00:08:27,820 --> 00:08:29,530
@@ -928,7 +928,7 @@ makes it easy to send email.
 
 198
 00:08:29,530 --> 00:08:30,060
-Images--
+Images &mdash;
 
 199
 00:08:30,060 --> 00:08:32,730
@@ -946,7 +946,7 @@ uses for that.
 
 202
 00:08:36,419 --> 00:08:39,740
-The datastore we talked about--
+The datastore we talked about &mdash;
 there's XMPP support.
 
 203
@@ -1289,7 +1289,7 @@ your code at the VM level.
 274
 00:11:59,720 --> 00:12:02,150
 So App Engine's development
-stack--
+stack &mdash;
 
 275
 00:12:02,150 --> 00:12:04,400
@@ -1682,7 +1682,7 @@ things about App Engine.
 
 358
 00:15:32,050 --> 00:15:33,340
-So Getaround--
+So Getaround &mdash;
 
 359
 00:15:33,340 --> 00:15:36,540
@@ -1872,7 +1872,7 @@ application.
 398
 00:17:14,400 --> 00:17:16,859
 And that's what AppStats is all
-about-- being able to dive
+about &mdash; being able to dive
 
 399
 00:17:16,859 --> 00:17:20,880
@@ -1890,7 +1890,7 @@ out how to improve those.
 
 402
 00:17:25,089 --> 00:17:26,030
-So AppStats--
+So AppStats &mdash;
 
 403
 00:17:26,030 --> 00:17:27,890
@@ -2249,7 +2249,7 @@ or even Google Apps accounts.
 
 479
 00:20:36,880 --> 00:20:38,250
-And as soon as I add--
+And as soon as I add &mdash;
 
 480
 00:20:38,250 --> 00:20:41,920
@@ -2592,12 +2592,12 @@ Storage, allows you to store
 
 552
 00:23:32,380 --> 00:23:34,820
-arbitrary numbers of objects--
+arbitrary numbers of objects &mdash;
 
 553
 00:23:34,820 --> 00:23:36,970
 very large objects, very
-small objects--
+small objects &mdash;
 
 554
 00:23:36,970 --> 00:23:39,430
@@ -2687,7 +2687,7 @@ Google Cloud Platform.
 572
 00:24:23,190 --> 00:24:26,470
 And that's what BigQuery
-is all about--
+is all about &mdash;
 
 573
 00:24:26,470 --> 00:24:29,490
@@ -2696,7 +2696,7 @@ and more data.
 
 574
 00:24:29,490 --> 00:24:32,900
-And big data at Google-- what
+And big data at Google &mdash; what
 does it mean to us?
 
 575
@@ -2729,7 +2729,7 @@ Think about that for a moment.
 
 581
 00:24:45,380 --> 00:24:49,330
-That's a lot of video-- a lot of
+That's a lot of video &mdash; a lot of
 cat videos, in particular.
 
 582
@@ -2772,7 +2772,7 @@ the products are being used
 
 590
 00:25:11,870 --> 00:25:14,750
-and iterate on them-- much the
+and iterate on them &mdash; much the
 same as you want to do when
 
 591
@@ -2872,7 +2872,7 @@ able to run on all of those.
 611
 00:26:04,950 --> 00:26:07,350
 And that's what BigQuery is
-about-- being able to scale
+about &mdash; being able to scale
 
 612
 00:26:07,350 --> 00:26:10,380
@@ -2973,7 +2973,7 @@ you're seeing here is looking
 
 633
 00:27:05,480 --> 00:27:08,270
-at about a year of those logs--
+at about a year of those logs &mdash;
 actually, 13 months of
 
 634
@@ -3037,7 +3037,7 @@ SQL query
 
 647
 00:27:41,285 --> 00:27:42,700
-that I'm running here--
+that I'm running here &mdash;
 
 648
 00:27:42,700 --> 00:27:44,590
@@ -3079,11 +3079,11 @@ terabyte of data off of disk.
 
 656
 00:28:07,140 --> 00:28:08,060
-We're only reading--
+We're only reading &mdash;
 
 657
 00:28:08,060 --> 00:28:12,140
-and "only" is important here--
+and "only" is important here &mdash;
 only reading 665 gigabytes of
 
 658
@@ -3201,7 +3201,7 @@ technology for a lot of
 
 684
 00:29:20,130 --> 00:29:22,280
-different things-- game and
+different things &mdash; game and
 social media analytics,
 
 685
@@ -3319,7 +3319,7 @@ format with nested and
 
 709
 00:30:18,570 --> 00:30:20,320
-repeated data--
+repeated data &mdash;
 
 710
 00:30:20,320 --> 00:30:21,720
@@ -3404,7 +3404,7 @@ they've integrated with the
 
 727
 00:31:05,080 --> 00:31:06,960
-Google Cloud Platform-- in
+Google Cloud Platform &mdash; in
 particular, how they've
 
 728
@@ -3498,7 +3498,7 @@ video ads at Google.
 747
 00:32:24,660 --> 00:32:27,980
 And our third co-founder, Joel,
-on the left side there--
+on the left side there &mdash;
 
 748
 00:32:27,980 --> 00:32:29,600
@@ -3530,7 +3530,7 @@ concept of A/B testing.
 754
 00:32:41,070 --> 00:32:44,310
 And the idea is that you split
-your users in two groups--
+your users in two groups &mdash;
 
 755
 00:32:44,310 --> 00:32:46,850
@@ -4138,7 +4138,7 @@ Datastore API that Ryan talked
 
 884
 00:38:17,560 --> 00:38:20,330
-about earlier-- the datastore's
+about earlier &mdash; the datastore's
 built on Google's
 
 885
@@ -4454,7 +4454,7 @@ Then you can go and filter it.
 
 952
 00:41:30,620 --> 00:41:33,250
-And you can also just view it--
+And you can also just view it &mdash;
 view just the errors to
 
 953
@@ -4557,7 +4557,7 @@ down on latency.
 974
 00:42:31,130 --> 00:42:35,410
 And some other tips for
-optimizing your app-- one, if
+optimizing your app &mdash; one, if
 
 975
 00:42:35,410 --> 00:42:38,190
@@ -4705,7 +4705,7 @@ first session here, I want to
 
 1006
 00:44:11,330 --> 00:44:12,670
-talk about--
+talk about &mdash;
 
 1007
 00:44:12,670 --> 00:44:15,580
@@ -4714,7 +4714,7 @@ that we're working on the
 
 1008
 00:44:15,580 --> 00:44:17,200
-cloud platform with--
+cloud platform with &mdash;
 
 1009
 00:44:17,200 --> 00:44:20,330
@@ -4897,11 +4897,11 @@ question and answer.
 
 1046
 00:45:59,230 --> 00:46:00,510
-So we're happy--
+So we're happy &mdash;
 
 1047
 00:46:00,510 --> 00:46:02,090
-Andrew, Momchil, and myself--
+Andrew, Momchil, and myself &mdash;
 
 1048
 00:46:02,090 --> 00:46:04,040
@@ -4956,7 +4956,7 @@ But we can try.
 1059
 00:46:32,020 --> 00:46:34,940
 AUDIENCE: Well, just
-where are you at--
+where are you at &mdash;
 
 1060
 00:46:34,940 --> 00:46:37,142
@@ -4997,7 +4997,7 @@ right now on that.
 
 1068
 00:46:51,800 --> 00:46:53,410
-But I'm happy-- if you chat with
+But I'm happy &mdash; if you chat with
 me later, I can give you
 
 1069

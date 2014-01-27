@@ -64,7 +64,7 @@ Google, where we work on WebP.
 15
 00:00:26,680 --> 00:00:29,730
 So first of all, I guess to kick
-it off-- why are we here?
+it off &mdash; why are we here?
 
 16
 00:00:29,730 --> 00:00:32,299
@@ -410,12 +410,12 @@ beautiful web.
 
 89
 00:03:13,800 --> 00:03:14,610
-But also--
+But also &mdash;
 
 90
 00:03:14,610 --> 00:03:17,160
 and we'll talk about this in
-detail-- we want to make it
+detail &mdash; we want to make it
 
 91
 00:03:17,160 --> 00:03:19,700
@@ -443,7 +443,7 @@ You need to use a GIF file.
 96
 00:03:26,800 --> 00:03:28,180
 You want to have a
-transparency--
+transparency &mdash;
 
 97
 00:03:28,180 --> 00:03:29,430
@@ -757,7 +757,7 @@ to continue to focus on that.
 163
 00:05:54,270 --> 00:05:57,070
 And similarly, better support
-for mobile on ARM devices--
+for mobile on ARM devices &mdash;
 
 164
 00:05:57,070 --> 00:05:58,700
@@ -830,7 +830,7 @@ consideration as well.
 178
 00:06:25,840 --> 00:06:27,620
 ILYA GRIGORIK: So you heard
-it here first--
+it here first &mdash;
 
 179
 00:06:27,620 --> 00:06:30,910
@@ -999,12 +999,12 @@ reducing your image quality.
 214
 00:07:45,060 --> 00:07:48,220
 And an illustration of that is
-this chart, which shows you--
+this chart, which shows you &mdash;
 
 215
 00:07:48,220 --> 00:07:51,630
 for a number of images which
-we did a sample on--
+we did a sample on &mdash;
 
 216
 00:07:51,630 --> 00:07:55,680
@@ -1162,7 +1162,7 @@ image that you're able to
 248
 00:09:15,030 --> 00:09:17,350
 tolerate a little bit of
-compression and artifacts--
+compression and artifacts &mdash;
 
 249
 00:09:17,350 --> 00:09:19,800
@@ -1388,7 +1388,7 @@ and decode.
 298
 00:10:57,000 --> 00:10:59,020
 But there are some reasons
-I think why--
+I think why &mdash;
 
 299
 00:10:59,020 --> 00:11:02,200
@@ -1416,7 +1416,7 @@ encoding is typically done
 
 304
 00:11:10,770 --> 00:11:11,550
-only once--
+only once &mdash;
 
 305
 00:11:11,550 --> 00:11:13,910
@@ -1674,7 +1674,7 @@ here with performance.
 358
 00:13:15,560 --> 00:13:19,310
 Of course, there is also a
-growing support for hardware--
+growing support for hardware &mdash;
 
 359
 00:13:19,310 --> 00:13:23,630
@@ -1701,7 +1701,7 @@ native support for it.
 364
 00:13:35,510 --> 00:13:38,060
 So a good example of
-this is actually--
+this is actually &mdash;
 
 365
 00:13:38,060 --> 00:13:41,340
@@ -1739,7 +1739,7 @@ just recently
 
 372
 00:13:55,640 --> 00:13:56,990
-had this great study--
+had this great study &mdash;
 
 373
 00:13:56,990 --> 00:13:58,965
@@ -1748,7 +1748,7 @@ check out their blog.
 
 374
 00:13:58,965 --> 00:14:00,820
-It's an eBay tech blog--
+It's an eBay tech blog &mdash;
 
 375
 00:14:00,820 --> 00:14:02,820
@@ -1911,11 +1911,11 @@ And you can convert any image.
 409
 00:15:17,400 --> 00:15:19,880
 We give you a lot of different
-knobs-- if anything, there's
+knobs &mdash; if anything, there's
 
 410
 00:15:19,880 --> 00:15:20,990
-too many knobs--
+too many knobs &mdash;
 
 411
 00:15:20,990 --> 00:15:23,410
@@ -2087,7 +2087,7 @@ to get WebP supported.
 447
 00:16:42,170 --> 00:16:45,770
 And fingers crossed, I hope
-we will see it this year--
+we will see it this year &mdash;
 
 448
 00:16:45,770 --> 00:16:48,730
@@ -2100,7 +2100,7 @@ WebP on the web.
 
 450
 00:16:51,060 --> 00:16:53,040
-Great-- we've motivated
+Great &mdash; we've motivated
 the use case.
 
 451
@@ -2157,7 +2157,7 @@ is an easy case.
 462
 00:17:18,190 --> 00:17:19,920
 Basically, you just
-want to test--
+want to test &mdash;
 
 463
 00:17:19,920 --> 00:17:21,630
@@ -2405,7 +2405,7 @@ in an actual demo.
 515
 00:19:23,210 --> 00:19:24,720
 A slightly different
-approach--
+approach &mdash;
 
 516
 00:19:24,720 --> 00:19:27,000
@@ -2414,7 +2414,7 @@ popular with a lot of web
 
 517
 00:19:27,000 --> 00:19:28,500
-optimization products today--
+optimization products today &mdash;
 
 518
 00:19:28,500 --> 00:19:30,820
@@ -2476,7 +2476,7 @@ other quirks that you need to
 
 530
 00:20:04,130 --> 00:20:06,050
-worry about-- for example,
+worry about &mdash; for example,
 caching.
 
 531
@@ -2529,12 +2529,12 @@ of this work for you.
 
 541
 00:20:35,470 --> 00:20:39,000
-So we have a PageSpeed product--
+So we have a PageSpeed product &mdash;
 or family of
 
 542
 00:20:39,000 --> 00:20:40,870
-products, I should say-- which
+products, I should say &mdash; which
 are both open source.
 
 543
@@ -2562,7 +2562,7 @@ this actually in action.
 
 548
 00:20:50,460 --> 00:20:52,020
-So I have--
+So I have &mdash;
 
 549
 00:20:52,020 --> 00:20:54,590
@@ -2576,7 +2576,7 @@ a little gallery
 
 551
 00:20:56,350 --> 00:20:58,460
-of my favorite photos--
+of my favorite photos &mdash;
 
 552
 00:20:58,460 --> 00:21:03,000
@@ -2962,7 +2962,7 @@ with that today.
 633
 00:24:14,720 --> 00:24:16,120
 In fact, some of you
-may have seen--
+may have seen &mdash;
 
 634
 00:24:16,120 --> 00:24:18,190
@@ -3295,7 +3295,7 @@ applications for Chrome.
 703
 00:26:36,230 --> 00:26:37,740
 But it's a very image-heavy
-site--
+site &mdash;
 
 704
 00:26:37,740 --> 00:26:41,180
@@ -3360,7 +3360,7 @@ a tremendous amount of work.
 
 717
 00:27:04,170 --> 00:27:07,410
-Really, we just request-- we
+Really, we just request &mdash; we
 have a server that serves
 
 718
@@ -3393,7 +3393,7 @@ the calendar tile
 
 724
 00:27:19,275 --> 00:27:20,180
-that you see here--
+that you see here &mdash;
 
 725
 00:27:20,180 --> 00:27:22,210
@@ -3647,7 +3647,7 @@ special under the hood.
 778
 00:29:25,900 --> 00:29:29,710
 But the one trick to
-this page is--
+this page is &mdash;
 
 779
 00:29:29,710 --> 00:29:31,910
@@ -3667,7 +3667,7 @@ Let's see.
 
 783
 00:29:39,020 --> 00:29:40,250
-100%--
+100% &mdash;
 
 784
 00:29:40,250 --> 00:29:42,080
@@ -3680,7 +3680,7 @@ deliver this great experience.
 
 786
 00:29:46,330 --> 00:29:48,220
-So the way the site is built--
+So the way the site is built &mdash;
 
 787
 00:29:48,220 --> 00:29:49,470
@@ -3689,7 +3689,7 @@ experience.
 
 788
 00:29:49,470 --> 00:29:50,600
-I love it--
+I love it &mdash;
 
 789
 00:29:50,600 --> 00:29:54,820
@@ -3983,7 +3983,7 @@ bit about that.
 
 852
 00:32:16,000 --> 00:32:17,220
-One case study--
+One case study &mdash;
 
 853
 00:32:17,220 --> 00:32:20,040
@@ -4076,7 +4076,7 @@ per day.
 871
 00:33:02,970 --> 00:33:05,640
 And literally also because of
-the cost factor-- we're saving
+the cost factor &mdash; we're saving
 
 872
 00:33:05,640 --> 00:33:06,730
@@ -4155,7 +4155,7 @@ through all the code.
 888
 00:33:34,960 --> 00:33:37,180
 But that's pretty much
-the process-- pretty
+the process &mdash; pretty
 
 889
 00:33:37,180 --> 00:33:37,435
@@ -4178,7 +4178,7 @@ STEPHEN KONIG: Exactly.
 893
 00:33:42,470 --> 00:33:44,190
 And same sort of
-story on iOS--
+story on iOS &mdash;
 
 894
 00:33:44,190 --> 00:33:46,140
@@ -4191,7 +4191,7 @@ native apps for iOS.
 
 896
 00:33:47,150 --> 00:33:48,690
-Pretty much the same thing--
+Pretty much the same thing &mdash;
 grab the image from the
 
 897
@@ -4210,7 +4210,7 @@ to deploy and use.
 
 900
 00:33:57,330 --> 00:33:58,550
-ILYA GRIGORIK: So as a recap--
+ILYA GRIGORIK: So as a recap &mdash;
 
 901
 00:33:58,550 --> 00:34:00,380
@@ -4359,7 +4359,7 @@ AUDIENCE: Hi.
 932
 00:35:10,340 --> 00:35:13,061
 You guys talked about
-encoding--
+encoding &mdash;
 
 933
 00:35:13,061 --> 00:35:17,080
@@ -4484,7 +4484,7 @@ part of the cache key.
 958
 00:36:19,110 --> 00:36:22,010
 And also how that affects
-downstream caching proxies--
+downstream caching proxies &mdash;
 
 959
 00:36:22,010 --> 00:36:23,430
@@ -4550,7 +4550,7 @@ other servers.
 
 972
 00:36:53,530 --> 00:36:55,580
-And working with CDN's--
+And working with CDN's &mdash;
 
 973
 00:36:55,580 --> 00:36:57,330
@@ -4633,7 +4633,7 @@ in medical radiology?
 
 990
 00:37:32,140 --> 00:37:32,690
-STEPHEN KONIG: In--
+STEPHEN KONIG: In &mdash;
 
 991
 00:37:32,690 --> 00:37:33,330
@@ -4771,7 +4771,7 @@ camera in a JPEG format.
 
 1020
 00:38:39,570 --> 00:38:42,290
-Re-encoding it-- would you
+Re-encoding it &mdash; would you
 want to use the lossless
 
 1021
@@ -4838,12 +4838,12 @@ artifacts.
 
 1034
 00:39:10,630 --> 00:39:12,500
-But it is something that--
+But it is something that &mdash;
 as you're thinking about
 
 1035
 00:39:12,500 --> 00:39:13,890
-deploying this-- and one of
+deploying this &mdash; and one of
 the things that we do
 
 1036
@@ -5034,7 +5034,7 @@ decoder that WebP is based on?
 
 1075
 00:40:45,680 --> 00:40:47,020
-And the last question--
+And the last question &mdash;
 
 1076
 00:40:47,020 --> 00:40:49,490
@@ -5307,7 +5307,7 @@ combination of PNG image and
 
 1134
 00:43:09,060 --> 00:43:10,210
-JPEG image--
+JPEG image &mdash;
 
 1135
 00:43:10,210 --> 00:43:12,260
@@ -5462,7 +5462,7 @@ images as part of
 
 1167
 00:44:30,280 --> 00:44:31,500
-your serving pipeline--
+your serving pipeline &mdash;
 
 1168
 00:44:31,500 --> 00:44:33,930

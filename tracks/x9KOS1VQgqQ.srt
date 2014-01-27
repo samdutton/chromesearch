@@ -330,7 +330,7 @@ extension ecosystem is the
 70
 00:02:53,140 --> 00:02:56,070
 fact that while extensions
-themselves are quite secure--
+themselves are quite secure &mdash;
 
 71
 00:02:56,070 --> 00:02:59,930
@@ -340,7 +340,7 @@ good handle on dealing with
 72
 00:02:59,930 --> 00:03:02,120
 explicitly malware
-extensions--
+extensions &mdash;
 
 73
 00:03:02,120 --> 00:03:04,750
@@ -606,7 +606,7 @@ of the vulnerabilities that
 
 128
 00:05:25,470 --> 00:05:28,480
-they found-- which included
+they found &mdash; which included
 either loading resources over
 
 129
@@ -616,7 +616,7 @@ the sort of inline scripts
 
 130
 00:05:33,190 --> 00:05:34,540
-injection issue--
+injection issue &mdash;
 
 131
 00:05:34,540 --> 00:05:37,890
@@ -966,7 +966,7 @@ policy for extensions that
 203
 00:08:41,860 --> 00:08:46,230
 enables you to determine that
-origin one-- so my website--
+origin one &mdash; so my website &mdash;
 
 204
 00:08:46,230 --> 00:08:47,750
@@ -1159,7 +1159,7 @@ from third-party servers.
 
 244
 00:10:18,240 --> 00:10:19,530
-No inline JavaScript--
+No inline JavaScript &mdash;
 
 245
 00:10:19,530 --> 00:10:20,890
@@ -1447,7 +1447,7 @@ those resources.
 
 305
 00:13:02,450 --> 00:13:03,860
-This gives you a much--
+This gives you a much &mdash;
 
 306
 00:13:03,860 --> 00:13:08,330
@@ -1883,7 +1883,7 @@ relatively straightforward.
 397
 00:16:58,900 --> 00:17:00,990
 As I said, you would inject
-an iframe-- in this case,
+an iframe &mdash; in this case,
 
 398
 00:17:00,990 --> 00:17:04,329
@@ -1931,7 +1931,7 @@ information and
 407
 00:17:25,240 --> 00:17:29,110
 then create sandbox.js,
-which has--
+which has &mdash;
 
 408
 00:17:29,110 --> 00:17:33,270
@@ -2209,7 +2209,7 @@ seeing impacts from this.
 
 466
 00:19:46,610 --> 00:19:50,040
-Some time in the middle of Q--
+Some time in the middle of Q &mdash;
 of 2013, Manifest Version 1
 
 467
@@ -2258,7 +2258,7 @@ inside of Chrome, period.
 476
 00:20:14,190 --> 00:20:17,290
 This means even extensions
-that are loaded within--
+that are loaded within &mdash;
 
 477
 00:20:17,290 --> 00:20:19,970
@@ -2401,7 +2401,7 @@ something much more like
 
 507
 00:21:23,090 --> 00:21:24,760
-X-Acto knives or scalpels--
+X-Acto knives or scalpels &mdash;
 
 508
 00:21:24,760 --> 00:21:27,760
@@ -2443,7 +2443,7 @@ on an ongoing basis.
 
 516
 00:21:44,710 --> 00:21:46,210
-You see here that I have--
+You see here that I have &mdash;
 
 517
 00:21:46,210 --> 00:21:47,570
@@ -2476,12 +2476,12 @@ Manager, we'll see that all of
 
 523
 00:21:59,440 --> 00:22:00,360
-these extensions--
+these extensions &mdash;
 
 524
 00:22:00,360 --> 00:22:03,100
 even though they're doing
-absolutely nothing right now--
+absolutely nothing right now &mdash;
 
 525
 00:22:03,100 --> 00:22:07,320
@@ -2861,7 +2861,7 @@ the background page isn't
 
 604
 00:25:15,860 --> 00:25:18,240
-doing anything-- it doesn't have
+doing anything &mdash; it doesn't have
 any pop-ups open, you're
 
 605
@@ -2872,7 +2872,7 @@ it doesn't have any
 606
 00:25:20,150 --> 00:25:22,770
 active network requests, and
-things along these lines--
+things along these lines &mdash;
 
 607
 00:25:22,770 --> 00:25:24,930
@@ -2913,7 +2913,7 @@ to die as soon as this thing
 
 615
 00:25:38,560 --> 00:25:39,450
-is called--
+is called &mdash;
 
 616
 00:25:39,450 --> 00:25:41,190
@@ -3022,7 +3022,7 @@ and be ready for your user's
 
 638
 00:26:29,140 --> 00:26:31,620
-response whenever-- or ready
+response whenever &mdash; or ready
 to respond to your user
 
 639
@@ -3141,7 +3141,7 @@ suggested keyboard shortcuts.
 
 663
 00:27:29,230 --> 00:27:29,900
-This is--
+This is &mdash;
 
 664
 00:27:29,900 --> 00:27:31,870
@@ -3422,7 +3422,7 @@ something like this,
 723
 00:29:33,150 --> 00:29:35,330
 chrome.webreques
-t.onbeforerequest--
+t.onbeforerequest &mdash;
 
 724
 00:29:35,330 --> 00:29:37,110
@@ -3520,7 +3520,7 @@ down to the extension.
 
 744
 00:30:20,110 --> 00:30:21,790
-The extension--
+The extension &mdash;
 
 745
 00:30:21,790 --> 00:30:24,980
@@ -3588,7 +3588,7 @@ torture test here.
 
 758
 00:30:54,570 --> 00:30:56,540
-But, you see-- actually, you
+But, you see &mdash; actually, you
 probably can't see because
 
 759
@@ -3696,12 +3696,12 @@ and actions.
 781
 00:31:48,340 --> 00:31:50,640
 If the request matches
-the condition--
+the condition &mdash;
 
 782
 00:31:50,640 --> 00:31:53,110
 so if they're going to
-evil.example.com--
+evil.example.com &mdash;
 
 783
 00:31:53,110 --> 00:31:55,280
@@ -3817,7 +3817,7 @@ We're working on that.
 807
 00:32:48,470 --> 00:32:50,970
 What we have added, however, is
-a variety of conditions--
+a variety of conditions &mdash;
 
 808
 00:32:50,970 --> 00:32:53,630
@@ -4419,7 +4419,7 @@ users that have set the
 
 934
 00:38:05,790 --> 00:38:08,190
-experimental flag-- that means
+experimental flag &mdash; that means
 they've gone into flags,
 
 935
@@ -4429,7 +4429,7 @@ on, which is a very small
 
 936
 00:38:10,650 --> 00:38:12,760
-number of people indeed--
+number of people indeed &mdash;
 
 937
 00:38:12,760 --> 00:38:14,350
@@ -4612,12 +4612,12 @@ AUDIENCE: Cool.
 
 976
 00:39:40,200 --> 00:39:44,820
-So what's the-- but with these
+So what's the &mdash; but with these
 background pages that die when
 
 977
 00:39:44,820 --> 00:39:45,180
-they're not--
+they're not &mdash;
 
 978
 00:39:45,180 --> 00:39:47,000
@@ -4841,7 +4841,7 @@ a page, you can have an
 
 1025
 00:41:32,340 --> 00:41:34,840
-interaction point--
+interaction point &mdash;
 
 1026
 00:41:34,840 --> 00:41:36,820
@@ -4903,7 +4903,7 @@ question is, is
 
 1038
 00:42:02,115 --> 00:42:05,070
-there any plans to--
+there any plans to &mdash;
 
 1039
 00:42:05,070 --> 00:42:09,310
@@ -5083,7 +5083,7 @@ has been done.
 1077
 00:43:27,000 --> 00:43:30,220
 But for the normal user,
-everyone's saying-- you know
+everyone's saying &mdash; you know
 
 1078
 00:43:30,220 --> 00:43:31,930
@@ -5170,12 +5170,12 @@ all URLs as part of your host
 1095
 00:44:13,320 --> 00:44:16,370
 permissions, if you only
-request active tab--
+request active tab &mdash;
 
 1096
 00:44:16,370 --> 00:44:19,080
 because that always goes through
-a user gesture--
+a user gesture &mdash;
 
 1097
 00:44:19,080 --> 00:44:20,650
@@ -5271,7 +5271,7 @@ MIKE WEST: No.
 1116
 00:44:59,880 --> 00:45:01,420
 AUDIENCE: So we can't
-do event preval--
+do event preval &mdash;
 
 1117
 00:45:01,420 --> 00:45:05,130
@@ -5290,12 +5290,12 @@ kept alive by either having a
 
 1120
 00:45:10,850 --> 00:45:11,990
-long network request --
+long network request  &mdash;
 
 1121
 00:45:11,990 --> 00:45:14,170
 AUDIENCE: So there's no way to
-wake it up instantly, like--
+wake it up instantly, like &mdash;
 
 1122
 00:45:14,170 --> 00:45:15,450
@@ -5413,7 +5413,7 @@ potentially selling
 
 1148
 00:45:56,890 --> 00:45:59,890
-extensions, do you-- is there a
+extensions, do you &mdash; is there a
 plan in the store to extend
 
 1149
@@ -5436,7 +5436,7 @@ I don't know of any plans.
 1153
 00:46:08,650 --> 00:46:12,010
 AUDIENCE: OK then, a subset to
-that, what would Chrome's--
+that, what would Chrome's &mdash;
 
 1154
 00:46:12,010 --> 00:46:15,880
@@ -5498,7 +5498,7 @@ something like that.
 
 1166
 00:46:42,080 --> 00:46:43,330
-So--
+So &mdash;
 
 1167
 00:46:43,330 --> 00:46:45,380
@@ -5529,7 +5529,7 @@ I'm not even talking about IE.
 
 1173
 00:46:59,190 --> 00:47:01,850
-Like browsers-- even like Safari
+Like browsers &mdash; even like Safari
 that chooses that kit,
 
 1174
@@ -5654,11 +5654,11 @@ successful model because it
 1199
 00:48:12,530 --> 00:48:14,980
 enables them to do the things
-that they do really well--
+that they do really well &mdash;
 
 1200
 00:48:14,980 --> 00:48:16,270
-building this library--
+building this library &mdash;
 
 1201
 00:48:16,270 --> 00:48:18,990
@@ -5719,7 +5719,7 @@ to prevent that?
 
 1213
 00:48:44,690 --> 00:48:46,130
-Like, say, one of the--
+Like, say, one of the &mdash;
 
 1214
 00:48:46,130 --> 00:48:47,750
@@ -5765,7 +5765,7 @@ user specifically enables it.
 1223
 00:49:04,880 --> 00:49:07,900
 So, they'll get an info bar at
-the top of-- or, actually,
+the top of &mdash; or, actually,
 
 1224
 00:49:07,900 --> 00:49:08,700
@@ -5825,7 +5825,7 @@ But, by having optional
 
 1236
 00:49:31,250 --> 00:49:33,140
-permissions, we don't actually--
+permissions, we don't actually &mdash;
 
 1237
 00:49:33,140 --> 00:49:36,310
@@ -5854,11 +5854,11 @@ when the time is right.
 
 1242
 00:49:46,320 --> 00:49:47,050
-So geolocation--
+So geolocation &mdash;
 
 1243
 00:49:47,050 --> 00:49:50,140
-for instance-- if I need to
+for instance &mdash; if I need to
 interact in some way with a
 
 1244
@@ -5929,11 +5929,11 @@ and Genentech.
 
 1259
 00:50:20,140 --> 00:50:20,970
-I was wondering--
+I was wondering &mdash;
 
 1260
 00:50:20,970 --> 00:50:21,950
-and we also have--
+and we also have &mdash;
 
 1261
 00:50:21,950 --> 00:50:25,630

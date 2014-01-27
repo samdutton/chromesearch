@@ -539,8 +539,8 @@ avoid conflicts later.
 
 116
 00:04:36,400 --> 00:04:39,430
-And finally-- and this one is
-really important for us--
+And finally &mdash; and this one is
+really important for us &mdash;
 
 117
 00:04:39,430 --> 00:04:41,430
@@ -2305,7 +2305,7 @@ accelerates the feedback
 
 492
 00:20:02,630 --> 00:20:04,505
-process and improves--
+process and improves &mdash;
 
 493
 00:20:04,505 --> 00:20:07,190
@@ -2763,13 +2763,13 @@ bigger wins have come less
 
 590
 00:24:21,570 --> 00:24:25,260
-from us hiring more people--
+from us hiring more people &mdash;
 because, as far as I know, I
 
 591
 00:24:25,260 --> 00:24:27,760
 haven't seen a lot of new
-people being hired--
+people being hired &mdash;
 
 592
 00:24:27,760 --> 00:24:31,220
@@ -3365,7 +3365,7 @@ Blink?"
 718
 00:29:58,850 --> 00:30:01,570
 PAUL IRISH: One of the ones
-that I'm psyched about--
+that I'm psyched about &mdash;
 
 719
 00:30:01,570 --> 00:30:04,250
@@ -3379,7 +3379,7 @@ development.
 
 721
 00:30:05,510 --> 00:30:07,430
-You can tell me--
+You can tell me &mdash;
 
 722
 00:30:07,430 --> 00:30:10,980
@@ -3547,7 +3547,7 @@ on the slide, Alex.
 757
 00:31:39,690 --> 00:31:41,710
 That, to me, is one
-of my most--
+of my most &mdash;
 
 758
 00:31:41,710 --> 00:31:45,340
@@ -3761,7 +3761,7 @@ say, it's not particular to
 
 803
 00:33:40,210 --> 00:33:41,900
-Blink, I guess-- oh, yeah--
+Blink, I guess &mdash; oh, yeah &mdash;
 
 804
 00:33:41,900 --> 00:33:43,140
@@ -4287,7 +4287,7 @@ to the Oilpan
 917
 00:38:15,770 --> 00:38:17,590
 project that we were talking
-about with--
+about with &mdash;
 
 918
 00:38:17,590 --> 00:38:17,920
