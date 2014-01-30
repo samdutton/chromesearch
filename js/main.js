@@ -96,7 +96,7 @@ function getCueData(videoId){
                 line = line.replace(/^([A-Z\-\s]+)/, speakerName);
               }
               speakerName = tweakName(speakerName);
-              if (speakers.indexOf(speakerName) === -1 && ['Audience', 'Audience member', 'Male Speaker', 'Female Speaker', 'All', 'Playback', 'Man', 'Announcer', 'Moderator', 'Producer', 'Fundamentals'].indexOf(speakerName) === -1){
+              if (speakers.indexOf(speakerName) === -1 && ['Audience', 'Audience member', 'Male Speaker', 'Female Speaker', 'All', 'Playback', 'Man', 'Announcer', 'Moderator', 'Producer', 'Fundamentals', 'Female Voice'].indexOf(speakerName) === -1){
                 speakers.push(speakerName);
               }
 
@@ -308,13 +308,13 @@ function addTranscriptDetails(videoDiv, video){
 
   var downloadLink = document.createElement('a');
   downloadLink.classList.add('download');
-  downloadLink.download = video.title.replace(/ /g, '_') + '.html';
-  var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff; display: block}\nspan.speaker {color: black; font-weight: 900;}\nbody {padding: 2em}\np {color: #444; text-indent: 1.5em;}\np.speaker {margin: 1em 0 0 0; text-indent: 0;}\np:first-child {text-indent: 0;}\n</style>\n\n';
+  downloadLink.download = video.title.replace(/ /g, '_').replace(/&mdash;/, '-') + '.html';
+  var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff}\na.video {border-bottom: 1px solid #ddd; display: block; margin: 0 0 2em 0; padding: 0 0 2em 0}\nh2 {color: #444; font-size: 18px;}\nspan.speakerName {color: black; font-weight: 900;}\nbody {padding: 2em}\np {color: #444; margin: 0; text-indent: 1.5em;}\np.speaker {margin: 1em 0 0 0; text-indent: 0;}\ndiv#transcript > p:first-child {text-indent: 0;}\n</style>\n\n';
   var downloadHTML = style +
     '<h1>' + video.title + '</h1>\n\n' +
     '<h2>' + video.speakers.join(', ') + '</h2>\n\n' +
-    '<a href="http://youtu.be/' + video.id + '">youtu.be/' + video.id + '</a>' +
-    transcriptHTML;
+    '<a class="video" href="http://youtu.be/' + video.id + '">youtu.be/' + video.id + '</a>' + '<div id="transcript">' +
+    transcriptHTML + '</div>';
   downloadLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
   downloadLink.textContent = 'download';
   videoDiv.appendChild(downloadLink);
@@ -447,6 +447,6 @@ function capitalize(string){
 }
 
 function tweakName(name){
-  return name.replace('Pete Lepage', 'Pete LePage'). replace('Colt Mcanlis', 'Colt McAnlis').replace('Matthew Mcnulty', 'Matthew McNulty').replace('John Mcgowan', 'John McGowan').replace('John Mccutchan', 'John McCutchan').replace('Pete Beverloo', 'Peter Beverloo').replace(/^Irish$/, 'Paul Irish').replace(/^Feldman$/, 'Pavel Feldman').replace(/^Fisher$/, 'Darin Fisher').replace('Tv Raman', 'TV Raman').replace('Matt Mcnulty', 'Matthew McNulty').replace('Wiltzius', 'Tom Wiltzius').replace(/^Kay$/, 'Erik Kay').replace(/^Cromwell$/, 'Ray Cromwell').replace(/^Wilson$/, 'Chris Wilson').replace('Kc Austin', 'KC Austin');
+  return name.replace('Pete Lepage', 'Pete LePage'). replace('Colt Mcanlis', 'Colt McAnlis').replace('Matthew Mcnulty', 'Matthew McNulty').replace('John Mcgowan', 'John McGowan').replace('John Mccutchan', 'John McCutchan').replace('Pete Beverloo', 'Peter Beverloo').replace(/^Irish$/, 'Paul Irish').replace(/^Feldman$/, 'Pavel Feldman').replace(/^Fisher$/, 'Darin Fisher').replace('Tv Raman', 'TV Raman').replace('Matt Mcnulty', 'Matthew McNulty').replace('Wiltzius', 'Tom Wiltzius').replace(/^Kay$/, 'Erik Kay').replace(/^Cromwell$/, 'Ray Cromwell').replace(/^Wilson$/, 'Chris Wilson').replace('Kc Austin', 'KC Austin').replace('Chris Dibona', 'Chris DiBona');
 }
 
