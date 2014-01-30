@@ -95,13 +95,12 @@ function getCueData(videoId){
                 line = line.replace(/^([A-Z\-\s]+)/, speakerName);
               }
               speakerName = tweakName(speakerName);
-              if (speakers.indexOf(speakerName) === -1 && ['Audience', 'Male Speaker', 'Female Speaker', 'All', 'Playback', 'Man', 'Announcer', 'Moderator', 'Producer', 'Fundamentals'].indexOf(speakerName) === -1){
-//                console.log(videoId, speakerName);
+              if (speakers.indexOf(speakerName) === -1 && ['Audience', 'Audience member', 'Male Speaker', 'Female Speaker', 'All', 'Playback', 'Man', 'Announcer', 'Moderator', 'Producer', 'Fundamentals'].indexOf(speakerName) === -1){
                 speakers.push(speakerName);
               }
 
               line = line.replace(/^([A-Za-z\-\s]+):/,
-                '<strong class="speakerName">' + speakerName + '</strong>:');
+                '<span class="speakerName">' + speakerName + '</span>:');
               // a line introducing a speaker means a new currentPara
               // ...so push the 'old' currentPara
               if (currentPara !== '') {
@@ -274,19 +273,28 @@ function addVideoDetails(videoDiv, video){
 
 // create a new details element and add the transcript
 function addTranscriptDetails(videoDiv, video){
-  var transcriptDiv = document.createElement('div');
-  var transcriptHTML = '';
-  // for each of the video.paras, add a paragraph to the transcript
+  var okParas = [];
   for (var i = 0; i !== video.paras.length; ++i) {
-    var paraText = video.paras[i];
-    // if longer than 1000 characters break up into paragraphs
-    // indent first line of all but first paragraph.
-    transcriptHTML += "<p>" + paraText + "</p>\n\n";
-    var MAXLENGTH = 1500;
-    if (paraText.length > MAXLENGTH) {
-      console.log(paraText.replace(/([^\.][a-z]\.) ([A-Z])/g, '\$1±@£\$2').split('±@£'));
+    var para = video.paras[i];
+    var MAXLENGTH = 500 + Math.floor(Math.random() * 1500);
+    if (para.length < MAXLENGTH) {
+      okParas.push(para);
+    } else {
+      okParas = okParas.concat(split(para));
     }
   }
+  okParas = okParas.map(function(item){
+    if (item.indexOf('speakerName') > 0) {
+      return '<p class="speaker">' + item.trim() + '</p>';
+    } else {
+      return '<p>' + item.trim() + '</p>';
+    }
+
+  });
+
+
+  var transcriptDiv = document.createElement('div');
+  var transcriptHTML = okParas.join('\n\n');
   transcriptDiv.innerHTML = transcriptHTML.replace(/--/g, ' &mdash; ');
 
   var details = document.createElement('details');
@@ -300,7 +308,7 @@ function addTranscriptDetails(videoDiv, video){
   var downloadLink = document.createElement('a');
   downloadLink.classList.add('download');
   downloadLink.download = video.title.replace(/ /g, '_') + '.html';
-  var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff; display: block}\nbody {padding: 2em}\np {color: #444}\n</style>\n\n';
+  var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff; display: block}\nspan.speaker {color: black; font-weight: 900;}\nbody {padding: 2em}\np {color: #444; text-indent: 1.5em;}\np.speaker {margin: 1em 0 0 0; text-indent: 0;}\np:first-child {text-indent: 0;}\n</style>\n\n';
   var downloadHTML = style +
     '<h1>' + video.title + '</h1>\n\n' +
     '<h2>' + video.speakers.join(', ') + '</h2>\n\n' +
@@ -313,6 +321,23 @@ function addTranscriptDetails(videoDiv, video){
   videoDiv.appendChild(details);
 }
 
+function split(para) {
+  var sentences = para.
+    replace(/([^\.][a-z]\.) ([A-Z])/g, '\$1±@£\$2').
+    split('±@£');
+  var paras = [];
+  var para = '';
+  while (sentences.length > 0) {
+    para += sentences.shift() + ' ';
+    MAXLENGTH = 500 + Math.floor(Math.random() * 1500);
+    if (para.length > MAXLENGTH){
+      paras.push(para);
+      para = '';
+    }
+  }
+  paras.push(para); // the last one, not over-length
+  return paras;
+}
 
 function addMatch(matchesDetails, cue){
   var cuesDiv = document.createElement('div');
