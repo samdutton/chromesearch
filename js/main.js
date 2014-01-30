@@ -6,7 +6,8 @@ var query;
 var $query = $("#query");
 var $numResults = $("#numResults");
 var youTubePlayer = document.querySelector(".youtube-player");
-var speakerRegEx = /^([A-Z\s]+):/;
+// TODO!
+//var speakerRegEx = /^([A-Z\s]+):/;
 var videosWithoutCues = ['e1FCrmGQwv4', 'h-ge4RRl9Vk', 'LjDKQaRmkDc', 'SKGoBEhhWSU', 'Sn_3rJaexKc', 'TdPqPUkXJ8E', 'vFacaBinGZ0', 'WWYz71WOrPg'];
 
 
@@ -86,7 +87,7 @@ function getCueData(videoId){
             // then start a 'new' currentPara with the text of this line
             // speaker lines begin with a name followed by a colon
             // space and word after colon is to lines using colon for punctuation
-            if (/^[A-Z][A-Za-z]+ ?[A-Za-z]*\-?[A-Za-z]*: \w/.test(line)) {
+            if (/^[A-Z][A-Za-z]+ ?[A-Za-z]*\-?[A-Za-z]*: \w/.test(line) || (/^AUDIENCE/).test(line)) {
               var speakerName = line.match(/^([A-Za-z\-\s]+):/)[1];
               // capitalize speaker names: Fred Nerk not FRED NERK
               if (line.match(/^[A-Z\-\s]+:/)) {

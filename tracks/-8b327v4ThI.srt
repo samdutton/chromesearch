@@ -4200,7 +4200,7 @@ AUDIENCE: [INAUDIBLE].
 
 901
 00:40:27,330 --> 00:40:30,650
-So the question was on the
+DAN HOLEVOET: So the question was on the
 tic-tac-toe game, what happens
 
 902
