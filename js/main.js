@@ -473,7 +473,8 @@ document.body.onkeydown = function(e){
 }
 
 function openDetails(doOpen) {
-  var details = document.querySelectorAll('details.transcript');
+  var details =
+    document.querySelectorAll('details.transcript, details.matches');
   for (var i = 0; i !== details.length; ++i) {
     // TODO: remove open, only do close
     if (doOpen) {
