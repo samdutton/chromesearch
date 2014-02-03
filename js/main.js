@@ -69,8 +69,9 @@ function getCueData(videoId){
           if (currentCue.text) {
             // get rid of redundant whitespace after combining lines
             currentCue.text.trim();
+            // console.log(currentCue.text);
             cues.push(currentCue);
-            currentCue = {"text": "", "videoId": videoId}; // remove text!
+            currentCue = {"text": "", "videoId": videoId}; // 'reset' currentCue
           }
         } else if (line.match(/^\s*$/)){ // line is empty
           continue;
@@ -86,7 +87,7 @@ function getCueData(videoId){
             // if  this line introduces a speaker, add currentPara to paras
             // then start a 'new' currentPara with the text of this line
             // speaker lines begin with a name followed by a colon
-            // space and word after colon is to lines using colon for punctuation
+            // space and word character after colon is to avoid lines using colon for punctuation
             if (/^[A-Z][A-Za-z]+ ?[A-Za-z]*\-?[A-Za-z]*: \w/.test(line) || (/^AUDIENCE/).test(line)) {
               var speakerName = line.match(/^([A-Za-z\-\s]+):/)[1];
               // capitalize speaker names: Fred Nerk not FRED NERK
@@ -102,6 +103,8 @@ function getCueData(videoId){
 
               line = line.replace(/^([A-Za-z\-\s]+):/,
                 '<span class="speakerName">' + speakerName + '</span>:');
+              // add startTime data attribute, used to make transcripts clickable
+              line = '<span data-startTime="' + currentCue.startTime + '">' + line + '</span>';
               // a line introducing a speaker means a new currentPara
               // ...so push the 'old' currentPara
               if (currentPara !== '') {
@@ -110,8 +113,9 @@ function getCueData(videoId){
               // ...and set the value for the 'new' one
               currentPara = line;
             } else {
-              // if the current line does not introduce a speaker
-              // add it to currentPara
+              // if the current line does not introduce a speaker, add it to currentPara
+              // add startTime data attribute, used to make transcripts clickable
+              line = '<span data-startTime="' + currentCue.startTime + '">' + line + '</span>';
               currentPara += line;
             }
             currentCue.text += line;
@@ -299,6 +303,7 @@ function addTranscriptDetails(videoDiv, video){
   transcriptDiv.innerHTML = transcriptHTML.replace(/--/g, ' &mdash; ');
 
   var details = document.createElement('details');
+  details.classList.add('transcript');
   var summary = document.createElement('summary');
   summary.classList.add('transcript');
   summary.title = 'Click to view transcript';
@@ -323,9 +328,11 @@ function addTranscriptDetails(videoDiv, video){
 }
 
 function split(para) {
+  // split after the end of each sentence:
+  // each sentence ends with a full stop
+  // followed by a span closing tag
   var sentences = para.
-    replace(/([^\.][a-z]\.) ([A-Z])/g, '\$1±@£\$2').
-    split('±@£');
+    replace(/\. <\/span>/g, '. </span>%^&*').split('%^&*');
   var paras = [];
   var para = '';
   while (sentences.length > 0) {
@@ -459,14 +466,16 @@ document.body.onkeydown = function(e){
   }
 }
 
-function openDetails(open) {
+function openDetails(doOpen) {
   var details = document.querySelectorAll('details.transcript');
   for (var i = 0; i !== details.length; ++i) {
-    if (open) {
-  console.log('open');
-      details[i].open = 'open';
+    // TODO: remove open, only do close
+    if (doOpen) {
+      if (details[i].offsetTop > window.scrollY) {
+        details[i].open = 'open';
+        return;
+      }
     } else {
-  console.log('close');
       details[i].removeAttribute('open');
     }
   }
