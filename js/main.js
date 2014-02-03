@@ -450,3 +450,24 @@ function tweakName(name){
   return name.replace('Pete Lepage', 'Pete LePage'). replace('Colt Mcanlis', 'Colt McAnlis').replace('Matthew Mcnulty', 'Matthew McNulty').replace('John Mcgowan', 'John McGowan').replace('John Mccutchan', 'John McCutchan').replace('Pete Beverloo', 'Peter Beverloo').replace(/^Irish$/, 'Paul Irish').replace(/^Feldman$/, 'Pavel Feldman').replace(/^Fisher$/, 'Darin Fisher').replace('Tv Raman', 'TV Raman').replace('Matt Mcnulty', 'Matthew McNulty').replace('Wiltzius', 'Tom Wiltzius').replace(/^Kay$/, 'Erik Kay').replace(/^Cromwell$/, 'Ray Cromwell').replace(/^Wilson$/, 'Chris Wilson').replace('Kc Austin', 'KC Austin').replace('Chris Dibona', 'Chris DiBona');
 }
 
+// Close all details elements when left arrow clicked
+document.body.onkeydown = function(e){
+  if (e.keyCode === 39) {
+    openDetails(true);
+  } else if (e.keyCode === 37) {
+    openDetails(false);
+  }
+}
+
+function openDetails(open) {
+  var details = document.querySelectorAll('details.transcript');
+  for (var i = 0; i !== details.length; ++i) {
+    if (open) {
+  console.log('open');
+      details[i].open = 'open';
+    } else {
+  console.log('close');
+      details[i].removeAttribute('open');
+    }
+  }
+}
