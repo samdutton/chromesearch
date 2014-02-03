@@ -104,7 +104,7 @@ function getCueData(videoId){
               line = line.replace(/^([A-Za-z\-\s]+):/,
                 '<span class="speakerName">' + speakerName + '</span>:');
               // add startTime data attribute, used to make transcripts clickable
-              line = '<span data-startTime="' + currentCue.startTime + '">' + line + '</span>';
+              line = '<span class="line" data-starttime="' + currentCue.startTime + '">' + line + '</span>';
               // a line introducing a speaker means a new currentPara
               // ...so push the 'old' currentPara
               if (currentPara !== '') {
@@ -115,7 +115,7 @@ function getCueData(videoId){
             } else {
               // if the current line does not introduce a speaker, add it to currentPara
               // add startTime data attribute, used to make transcripts clickable
-              line = '<span data-startTime="' + currentCue.startTime + '">' + line + '</span>';
+              line = '<span class="line" data-startTime="' + currentCue.startTime + '">' + line + '</span>';
               currentPara += line;
             }
             currentCue.text += line;
@@ -301,6 +301,11 @@ function addTranscriptDetails(videoDiv, video){
   var transcriptDiv = document.createElement('div');
   var transcriptHTML = okParas.join('\n\n');
   transcriptDiv.innerHTML = transcriptHTML.replace(/--/g, ' &mdash; ');
+  var lineSpans = transcriptDiv.querySelectorAll('span.line');
+  for (var i = 0; i !== lineSpans.length; ++i) {
+    addClickHandler(lineSpans[i], video.id,
+      lineSpans[i].dataset.starttime);
+  }
 
   var details = document.createElement('details');
   details.classList.add('transcript');
@@ -362,19 +367,20 @@ function addMatch(matchesDetails, cue){
   var cueDiv = document.createElement('div');
   cueDiv.classList.add('cue');
   cueDiv.innerHTML = cueStartTimeHTML + cueTextHTML;
-  addClickHandler(cueDiv, cue);
+  addClickHandler(cueDiv, cue.videoId, cue.startTime);
   cuesDiv.appendChild(cueDiv);
 }
 
-function addClickHandler(cueDiv, cue) {
-  cueDiv.onclick = function() {
+function addClickHandler(element, videoId, startTime) {
+  element.onclick = function() {
+    console.log(videoId, startTime);
     // don't reload video if the clicked cue is for current video
-    if (youTubePlayer.src.indexOf(cue.videoId) != -1){
-      callPlayer("youTubePlayer", "seekTo", [cue.startTime]);
+    if (youTubePlayer.src.indexOf(videoId) != -1){
+      callPlayer("youTubePlayer", "seekTo", [startTime]);
     } else {
       youTubePlayer.src =
-        "http://www.youtube.com/embed/" + cue.videoId +
-        "?start=" + cue.startTime +
+        "http://www.youtube.com/embed/" + videoId +
+        "?start=" + startTime +
         "&autoplay=1&enablejsapi=1"
     }
   };
