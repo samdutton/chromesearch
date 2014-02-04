@@ -88,7 +88,7 @@ function getCueData(videoId){
             // then start a 'new' currentPara with the text of this line
             // speaker lines begin with a name followed by a colon
             // space and word character after colon is to avoid lines using colon for punctuation
-            if (/^[A-Z][A-Za-z]+ ?[A-Za-z]*\-?[A-Za-z]*: \w/.test(line) || (/^AUDIENCE/).test(line)) {
+            if (/^[A-Z][A-Za-z]+ ?[A-Za-z]*\-?[A-Za-z]*: [\w-]/.test(line) || (/^AUDIENCE/).test(line)) {
               var speakerName = line.match(/^([A-Za-z\-\s]+):/)[1];
               // capitalize speaker names: Fred Nerk not FRED NERK
               if (line.match(/^[A-Z\-\s]+:/)) {
@@ -202,7 +202,7 @@ function displayResults(results) { // results is an array of cues
     $numResults.html(numResults + " results (too many to display)");
     return;
   } else {
-    $numResults.html(numResults + " result(s)");
+    $numResults.html(numResults + " matches(s)");
   }
 
   var matchesDetails, videoId, videoDiv;
@@ -253,8 +253,7 @@ function addVideoDetails(videoDiv, video){
   summary.classList.add('video');
   summary.textContent = 'Video';
   details.appendChild(summary);
-  // details.append("<img class='videoThumbnail' src='http://img.youtube.com/vi/" +
-  //   video.id + "/hqdefault.jpg' title='Default thumbnail image' />");
+  details.innerHTML += "<img class='videoThumbnail' src='http://img.youtube.com/vi/" + video.id + "/hqdefault.jpg' title='Default thumbnail image' />";
 
   if (!!video.summary){
     var summaryDiv = document.createElement('div');
@@ -281,7 +280,7 @@ function addTranscriptDetails(videoDiv, video){
   var okParas = [];
   for (var i = 0; i !== video.paras.length; ++i) {
     var para = video.paras[i];
-    var MAXLENGTH = 500 + Math.floor(Math.random() * 1500);
+    var MAXLENGTH = 1000 + Math.floor(Math.random() * 2000);
     if (para.length < MAXLENGTH) {
       okParas.push(para);
     } else {
@@ -342,7 +341,7 @@ function split(para) {
   var para = '';
   while (sentences.length > 0) {
     para += sentences.shift() + ' ';
-    MAXLENGTH = 500 + Math.floor(Math.random() * 1500);
+    MAXLENGTH = 1000 + Math.floor(Math.random() * 2000);
     if (para.length > MAXLENGTH){
       paras.push(para);
       para = '';

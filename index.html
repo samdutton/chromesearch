@@ -19,7 +19,9 @@
 
 <h1>Chrome video search</h1>
 
-<iframe id="youTubePlayer" class="youtube-player" type="text/html" width="640" height="385" frameborder="0"></iframe>
+<div id="youtubeContainer">
+  <iframe id="youTubePlayer" class="youtube-player" type="text/html" width="640" height="385" frameborder="0"></iframe>
+</div>
 
 <div id="info">
 	<input id="query" type="text" disabled autofocus />
@@ -34,8 +36,8 @@
 
 <details>
   <summary>Huh?</summary>
-  <p>Enter text to search the manual transcripts of Chrome developer videos.</p>
-  <p style="border-bottom: 1px solid #444; padding: 0 0 1em 0;">Click on a result to view video.</p>
+  <p>Enter text to search the 'handwritten' transcriptions of 400+ Chrome developer videos.</p>
+  <p>Click on any part of a transcript to play back video from that point.</p>
   <p>A timed transcript file in SRT format for each video is stored in the <em>tracks</em> folder. SRT files look like this (each item is called a cue): </p>
   <pre>
 1

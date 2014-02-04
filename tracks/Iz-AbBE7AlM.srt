@@ -21,7 +21,7 @@ SAM DUTTON: Yeah, absolutely.
 
 6
 00:00:12,930 --> 00:00:14,190
-ALEKSEY: --session was called.
+ALEKSEY: &mdash; session was called.
 
 7
 00:00:14,190 --> 00:00:19,660

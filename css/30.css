@@ -251,10 +251,6 @@ margin: 1em 0 0 0;
 text-indent: 0;
 }
 
-details.transcript > div {
-padding: 0 0 0 14px;
-}
-
 details div p:first-child {
 margin: 1em 0 0 0;
 text-indent: 0;

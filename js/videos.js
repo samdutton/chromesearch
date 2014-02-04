@@ -1434,7 +1434,7 @@ var videos = {
         "speakers": [
             "Sam Dutton"
         ],
-        "summary": "Google's Developer Advocate Sam Dutton after his presentation at Devoxx 2012 in Antwerp. Discusses WebRTC's goals and how this peer-to-peer technology is likely to enable developers to build awesome﻿ new web applications.",
+        "summary": "Google's Developer Advocate Sam Dutton after his presentation at Devoxx 2012 in Antwerp. Discusses WebRTC's goals and how this peer-to-peer technology is likely to enable developers to build awesome new web applications.",
         "viewCount": "1328",
         "rating": 4.8,
         "title": "Devoxx 2012: WebRTC",
