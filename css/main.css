@@ -54,7 +54,7 @@ color: white;
 }
 
 details {
-margin: 0 0 0.8em 0;
+margin: 0 0 1em 0;
 }
 
 details.matches {
@@ -165,7 +165,7 @@ div.video div.speakers {
 color: #999;
 font-size: 13px;
 line-height: 1.5em;
-margin: 0 0 1em 0;
+margin: 0 0 1.5em 0;
 }
 
 div.video div.videoSummary {
@@ -258,6 +258,34 @@ text-indent: 0;
 
 pre {
 color: #ddd;
+}
+
+progress {
+position: relative;
+top: 3px;
+width: calc(100% - 74px);
+}
+
+progress[value] {
+-webkit-appearance: none;
+appearance: none;
+height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+background-color: #eee;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+background-color: #a00;
+}
+
+
+
+span#loading {
+width: 70px;
+display: inline-block;
 }
 
 span.cueStartTime {

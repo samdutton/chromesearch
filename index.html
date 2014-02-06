@@ -25,7 +25,10 @@
 
 <div id="info">
 	<input id="query" type="text" disabled autofocus />
-  <div id="queryExplanation">Loading data: may take up to 30 seconds...</div>
+  <div id="queryExplanation">
+    <span id ="loading">Loading:</span>
+    <progress max="400" value="0"></progress>
+  </div>
 </div> <!-- info -->
 
 <div id="numResults"></div>

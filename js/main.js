@@ -1,6 +1,11 @@
 var isReady;
 var trackPath = "tracks/";
 var trackSuffix = ".srt";
+var transcriptPath = "transcripts/";
+var transcriptSuffix = ".html";
+var progressElement = document.querySelector('progress');
+progressElement.max = Object.keys(videos).length;
+var queryExplanation = document.querySelector('div#queryExplanation');
 var resultsDiv = $("#results");
 var query;
 var $query = $("#query");
@@ -122,7 +127,11 @@ function getCueData(videoId){
       }
       // push final paragraph
       paras.push(currentPara.trim());
-      // downloadFile(videos[videoId], paras);
+
+      progressElement.value += 1;
+
+      // Used when creating transcript files
+      // downloadTranscript(videos[videoId], paras);
 
       var isIncomplete = false;
       // check if finished
@@ -148,47 +157,38 @@ function hasCues(id){
   return videosWithoutCues.indexOf(id) === -1;
 }
 
-function downloadFile(video, paras){
-  var okParas = [];
-  for (var i = 0; i !== paras.length; ++i) {
-    var para = video.paras[i];
-    var MAXLENGTH = 1000 + Math.floor(Math.random() * 2000);
-    if (para.length < MAXLENGTH) {
-      okParas.push(para);
-    } else {
-      okParas = okParas.concat(split(para));
-    }
-  }
-  okParas = okParas.map(function(item){
-    if (item.indexOf('speakerName') > 0) {
-      return '<p class="speaker">' + item.trim() + '</p>';
-    } else {
-      return '<p>' + item.trim() + '</p>';
-    }
-  });
+// Used when creating transcript files
+// function downloadTranscript(video, paras){
+//   var okParas = [];
+//   for (var i = 0; i !== paras.length; ++i) {
+//     var para = video.paras[i];
+//     var MAXLENGTH = 1000 + Math.floor(Math.random() * 2000);
+//     if (para.length < MAXLENGTH) {
+//       okParas.push(para);
+//     } else {
+//       okParas = okParas.concat(split(para));
+//     }
+//   }
+//   okParas = okParas.map(function(item){
+//     if (item.indexOf('speakerName') > 0) {
+//       return '<p class="speaker">' + item.trim() + '</p>';
+//     } else {
+//       return '<p>' + item.trim() + '</p>';
+//     }
+//   });
 
-  var transcriptHTML = okParas.join('\n\n').replace(/--/g, ' &mdash; ');
-
-  var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff}\na.video {border-bottom: 1px solid #ddd; display: block; margin: 0 0 2em 0; padding: 0 0 2em 0}\nh2 {color: #444; font-size: 18px;}\nspan.speakerName {color: black; font-weight: 900;}\nbody {padding: 2em}\np {color: #444; margin: 0; text-indent: 1.5em;}\np.speaker {margin: 1em 0 0 0; text-indent: 0;}\ndiv#transcript > p:first-child {text-indent: 0;}\n</style>\n\n';
-  var downloadHTML = style +
-    '<h1>' + video.title + '</h1>\n\n' +
-    '<h2>' + video.speakers.join(', ') + '</h2>\n\n' +
-    '<a class="video" href="http://youtu.be/' + video.id + '">youtu.be/' + video.id + '</a>' + '<div id="transcript">' +
-    transcriptHTML + '</div>'
-
-
-  var downloadLink = document.createElement('a');
-  downloadLink.classList.add('download');
-  downloadLink.download = video.id + '.html';
-  downloadLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
-  downloadLink.click();
-}
+//   var downloadHTML = okParas.join('\n\n').replace(/--/g, ' &mdash; ');
+//   var downloadLink = document.createElement('a');
+//   downloadLink.classList.add('download');
+//   downloadLink.download = video.id + '.html';
+//   downloadLink.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML);
+//   downloadLink.click();
+// }
 
 function handleVideosComplete(){
   isReady = true;
-  var div = document.querySelector('div#queryExplanation');
-  div.style.color = '#ccc';
-  div.textContent =
+  queryExplanation.style.color = '#ccc';
+  queryExplanation.innerHTML =
     'Enter text to search transcripts, then click on a match to view video.';
   var input = document.querySelector('input#query');
   input.disabled = false;
@@ -259,9 +259,9 @@ function displayResults(results) { // results is an array of cues
       // matchesDetails.appendChild(cuesDiv);
 
       // TODO: temporary hack: transcripts are too much for mobile
-      if (!isMobile()) {
+      // if (!isMobile()) {
         addTranscriptDetails(videoDiv, video);
-      }
+      // }
       resultsDiv.append(videoDiv);
     } // end adding elements for new video
     addMatch(matchesDetails, cue);
@@ -318,34 +318,6 @@ function addVideoDetails(videoDiv, video){
 
 // create a new details element and add the transcript
 function addTranscriptDetails(videoDiv, video){
-  var okParas = [];
-  for (var i = 0; i !== video.paras.length; ++i) {
-    var para = video.paras[i];
-    var MAXLENGTH = 1000 + Math.floor(Math.random() * 2000);
-    if (para.length < MAXLENGTH) {
-      okParas.push(para);
-    } else {
-      okParas = okParas.concat(split(para));
-    }
-  }
-  okParas = okParas.map(function(item){
-    if (item.indexOf('speakerName') > 0) {
-      return '<p class="speaker">' + item.trim() + '</p>';
-    } else {
-      return '<p>' + item.trim() + '</p>';
-    }
-
-  });
-
-  var transcriptDiv = document.createElement('div');
-  var transcriptHTML = okParas.join('\n\n');
-  transcriptDiv.innerHTML = transcriptHTML.replace(/--/g, ' &mdash; ');
-  var lineSpans = transcriptDiv.querySelectorAll('span.line');
-  for (var i = 0; i !== lineSpans.length; ++i) {
-    addClickHandler(lineSpans[i], video.id,
-      lineSpans[i].dataset.starttime);
-  }
-
   var details = document.createElement('details');
   details.classList.add('transcript');
   var summary = document.createElement('summary');
@@ -353,22 +325,36 @@ function addTranscriptDetails(videoDiv, video){
   summary.title = 'Click to view transcript';
   summary.textContent = 'Transcript';
   details.appendChild(summary);
+  var transcriptDiv = document.createElement('div');
   details.appendChild(transcriptDiv);
 
   var downloadLink = document.createElement('a');
   downloadLink.classList.add('download');
   downloadLink.download = video.title.replace(/ /g, '_').replace(/&mdash;/, '-') + '.html';
-  var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff}\na.video {border-bottom: 1px solid #ddd; display: block; margin: 0 0 2em 0; padding: 0 0 2em 0}\nh2 {color: #444; font-size: 18px;}\nspan.speakerName {color: black; font-weight: 900;}\nbody {padding: 2em}\np {color: #444; margin: 0; text-indent: 1.5em;}\np.speaker {margin: 1em 0 0 0; text-indent: 0;}\ndiv#transcript > p:first-child {text-indent: 0;}\n</style>\n\n';
-  var downloadHTML = style +
-    '<h1>' + video.title + '</h1>\n\n' +
-    '<h2>' + video.speakers.join(', ') + '</h2>\n\n' +
-    '<a class="video" href="http://youtu.be/' + video.id + '">youtu.be/' + video.id + '</a>' + '<div id="transcript">' +
-    transcriptHTML + '</div>';
-  downloadLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
   downloadLink.textContent = 'download';
   videoDiv.appendChild(downloadLink);
 
   videoDiv.appendChild(details);
+
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", transcriptPath + video.id + transcriptSuffix);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+
+      var transcript = xhr.responseText;
+      transcriptDiv.innerHTML = transcript;
+
+      var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff}\na.video {border-bottom: 1px solid #ddd; display: block; margin: 0 0 2em 0; padding: 0 0 2em 0}\nh2 {color: #444; font-size: 18px;}\nspan.speakerName {color: black; font-weight: 900;}\nbody {padding: 2em}\np {color: #444; margin: 0; text-indent: 1.5em;}\np.speaker {margin: 1em 0 0 0; text-indent: 0;}\ndiv#transcript > p:first-child {text-indent: 0;}\n</style>\n\n';
+      var downloadHTML = style +
+        '<h1>' + video.title + '</h1>\n\n' +
+        '<h2>' + video.speakers.join(', ') + '</h2>\n\n' +
+        '<a class="video" href="http://youtu.be/' + video.id + '">youtu.be/' + video.id + '</a>' + '<div id="transcript">' +
+        transcript + '</div>'
+      downloadLink.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML);
+
+    } // xhr.readyState === 4 && xhr.status === 200
+  } // xhr.onreadystatechange
+  xhr.send();
 }
 
 function split(para) {
