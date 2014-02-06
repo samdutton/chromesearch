@@ -38,10 +38,6 @@ function getVideoData() {
   }
 }
 
-// function handleVideosComplete(){
-//  console.log("finished! ", videos);
-// }
-
 // for each video, get cue texts from the track file (.vtt or .srt)]
 // add cue texts to the cues array for the video
 // and build the paras array for the video
@@ -126,6 +122,7 @@ function getCueData(videoId){
       }
       // push final paragraph
       paras.push(currentPara.trim());
+      // downloadFile(videos[videoId], paras);
 
       var isIncomplete = false;
       // check if finished
@@ -151,12 +148,48 @@ function hasCues(id){
   return videosWithoutCues.indexOf(id) === -1;
 }
 
+function downloadFile(video, paras){
+  var okParas = [];
+  for (var i = 0; i !== paras.length; ++i) {
+    var para = video.paras[i];
+    var MAXLENGTH = 1000 + Math.floor(Math.random() * 2000);
+    if (para.length < MAXLENGTH) {
+      okParas.push(para);
+    } else {
+      okParas = okParas.concat(split(para));
+    }
+  }
+  okParas = okParas.map(function(item){
+    if (item.indexOf('speakerName') > 0) {
+      return '<p class="speaker">' + item.trim() + '</p>';
+    } else {
+      return '<p>' + item.trim() + '</p>';
+    }
+  });
+
+  var transcriptHTML = okParas.join('\n\n').replace(/--/g, ' &mdash; ');
+
+  var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff}\na.video {border-bottom: 1px solid #ddd; display: block; margin: 0 0 2em 0; padding: 0 0 2em 0}\nh2 {color: #444; font-size: 18px;}\nspan.speakerName {color: black; font-weight: 900;}\nbody {padding: 2em}\np {color: #444; margin: 0; text-indent: 1.5em;}\np.speaker {margin: 1em 0 0 0; text-indent: 0;}\ndiv#transcript > p:first-child {text-indent: 0;}\n</style>\n\n';
+  var downloadHTML = style +
+    '<h1>' + video.title + '</h1>\n\n' +
+    '<h2>' + video.speakers.join(', ') + '</h2>\n\n' +
+    '<a class="video" href="http://youtu.be/' + video.id + '">youtu.be/' + video.id + '</a>' + '<div id="transcript">' +
+    transcriptHTML + '</div>'
+
+
+  var downloadLink = document.createElement('a');
+  downloadLink.classList.add('download');
+  downloadLink.download = video.id + '.html';
+  downloadLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(downloadHTML));
+  downloadLink.click();
+}
+
 function handleVideosComplete(){
   isReady = true;
   var div = document.querySelector('div#queryExplanation');
   div.style.color = '#ccc';
   div.textContent =
-    'Enter text to search transcripts, then click on a result to view video.';
+    'Enter text to search transcripts, then click on a match to view video.';
   var input = document.querySelector('input#query');
   input.disabled = false;
   input.focus();
@@ -192,10 +225,6 @@ function displayResults(results) { // results is an array of cues
   resultsDiv.empty();
   $("#numResults").empty();
 
-  // search is enabled for two or more characters
-  if ($query.val().length < 2) {
-    return false;
-  }
   var numResults = results.length;
   // ...but results aren't displayed when there are too many matches
   if (numResults > 5000){
@@ -205,7 +234,7 @@ function displayResults(results) { // results is an array of cues
     $numResults.html(numResults + " matches(s)");
   }
 
-  var matchesDetails, videoId, videoDiv;
+  var cuesDiv, matchesDetails, videoId, videoDiv;
   // each result is a cue, each cue has the id of its video
   for (var i = 0; i !== numResults; ++i) {
     var cue = results[i];
@@ -223,12 +252,18 @@ function displayResults(results) { // results is an array of cues
       var summary = document.createElement('summary');
       summary.textContent = 'Matches';
       matchesDetails.appendChild(summary);
+      // cuesDiv = document.createElement('div');
+      // cuesDiv.classList.add('cues');
+      // cuesDiv.title = 'Click to play video at this point';
       videoDiv.appendChild(matchesDetails);
+      // matchesDetails.appendChild(cuesDiv);
 
-      addTranscriptDetails(videoDiv, video);
-
+      // TODO: temporary hack: transcripts are too much for mobile
+      if (!isMobile()) {
+        addTranscriptDetails(videoDiv, video);
+      }
       resultsDiv.append(videoDiv);
-    }
+    } // end adding elements for new video
     addMatch(matchesDetails, cue);
   }
 }
@@ -253,7 +288,13 @@ function addVideoDetails(videoDiv, video){
   summary.classList.add('video');
   summary.textContent = 'Video';
   details.appendChild(summary);
-  details.innerHTML += "<img class='videoThumbnail' src='http://img.youtube.com/vi/" + video.id + "/hqdefault.jpg' title='Default thumbnail image' />";
+
+  var videoThumbnail = new Image();
+  videoThumbnail.classList.add('videoThumbnail');
+  videoThumbnail.title='Click to view video';
+  videoThumbnail.src = 'http://img.youtube.com/vi/' + video.id + '/hqdefault.jpg';
+  addClickHandler(videoThumbnail, video.id, 0);
+  details.appendChild(videoThumbnail);
 
   if (!!video.summary){
     var summaryDiv = document.createElement('div');
@@ -295,7 +336,6 @@ function addTranscriptDetails(videoDiv, video){
     }
 
   });
-
 
   var transcriptDiv = document.createElement('div');
   var transcriptHTML = okParas.join('\n\n');
@@ -352,10 +392,6 @@ function split(para) {
 }
 
 function addMatch(matchesDetails, cue){
-  var cuesDiv = document.createElement('div');
-  cuesDiv.classList.add('cues');
-  cuesDiv.title = 'Click to play video at this point';
-  matchesDetails.appendChild(cuesDiv);
 
   var cueStartTimeHTML = "<span class='cueStartTime'>" +
     toHoursMinutesSeconds(cue.startTime) + ": </span>";
@@ -367,7 +403,7 @@ function addMatch(matchesDetails, cue){
   cueDiv.classList.add('cue');
   cueDiv.innerHTML = cueStartTimeHTML + cueTextHTML;
   addClickHandler(cueDiv, cue.videoId, cue.startTime);
-  cuesDiv.appendChild(cueDiv);
+  matchesDetails.appendChild(cueDiv);
 }
 
 function addClickHandler(element, videoId, startTime) {
@@ -409,17 +445,17 @@ function getResults(query){
 $query.bind('input', function() {
   resultsDiv.empty();
   query = $(this).val();
-  if (query.length < 2) {
+  if (query.length < 3) {
     $numResults.empty();
     return false;
   }
-  // add 300ms delay between getting keypresses
-  if(typeof(window.inputTimeout) != "undefined"){
+  // add 500ms delay between getting keypresses
+  if (typeof(window.inputTimeout) != "undefined"){
     window.clearTimeout(inputTimeout);
   }
   window.inputTimeout = window.setTimeout(function() {
     getResults(query);
-  }, 300);
+  }, 500);
 });
 
 function elapsedTimer(message) {
@@ -485,4 +521,8 @@ function openDetails(doOpen) {
       details[i].removeAttribute('open');
     }
   }
+}
+
+function isMobile() {
+  return navigator.appVersion.indexOf("Mobile") !== -1;
 }

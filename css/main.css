@@ -54,11 +54,11 @@ color: white;
 }
 
 details {
-margin: 0 0 0.7em 0;
+margin: 0 0 0.8em 0;
 }
 
 details.matches {
-margin: 0 0 0.6em 0;
+margin: 0 0 0.9em 0;
 }
 
 div#container {
@@ -69,12 +69,12 @@ padding: 15px 30px 20px 30px;
 }
 
 div#info {
-margin: 0 0 20px 0;
+margin: 0 0 0 0;
 }
 
 div#queryExplanation {
 color: red;
-margin: 0 10px 0 0;
+margin: 0 0 0.3em 0;
 }
 
 div#numResults {
@@ -120,8 +120,8 @@ cursor: pointer;
 font-size: 12px;
 margin: 0 0 1em 0;
 line-height: 1.3em;
-padding: 0 0 0 40px;
-text-indent: -40px;
+padding: 0 0 0 47.3px;
+text-indent: -47.3px;
 }
 
 div.cues {
@@ -166,7 +166,6 @@ color: #999;
 font-size: 13px;
 line-height: 1.5em;
 margin: 0 0 1em 0;
-/* padding: 0 0 0 0; */
 }
 
 div.video div.videoSummary {
@@ -203,6 +202,7 @@ border: none;
 
 img.videoThumbnail {
 /* border: 1px solid #444; */
+cursor: pointer;
 float: left;
 height: 180px;
 margin: 0 15px 0 0;
@@ -249,10 +249,6 @@ text-indent: 1.5em;
 details div p.speaker {
 margin: 1em 0 0 0;
 text-indent: 0;
-}
-
-details.transcript > div {
-padding: 0 0 0 14px;
 }
 
 details div p:first-child {
@@ -307,6 +303,27 @@ outline: none;
 margin: 0 0 0 0;
 }
 
+details.matches > summary {
+margin: 0 0 1em 0;
+}
+
 video {
 background: #222;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background: black;
+    margin: 0;
+    padding: 0;
+  }
+  div#container {
+    padding: 15px 20px 20px 20px;
+  }
+  h1 {
+    border: none;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0px
+  }
 }

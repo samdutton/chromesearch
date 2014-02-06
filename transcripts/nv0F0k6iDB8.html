@@ -1,0 +1,316 @@
+<style>* {font-family: "Open Sans", sans-serif}
+a {color: #77aaff}
+a.video {border-bottom: 1px solid #ddd; display: block; margin: 0 0 2em 0; padding: 0 0 2em 0}
+h2 {color: #444; font-size: 18px;}
+span.speakerName {color: black; font-weight: 900;}
+body {padding: 2em}
+p {color: #444; margin: 0; text-indent: 1.5em;}
+p.speaker {margin: 1em 0 0 0; text-indent: 0;}
+div#transcript > p:first-child {text-indent: 0;}
+</style>
+
+<h1>GDL Presents Push the Limits: Chrome Web Lab, Lab Tag Explorer</h1>
+
+<h2>Paul Kinlan, Matias, Roger</h2>
+
+<a class="video" href="http://youtu.be/nv0F0k6iDB8">youtu.be/nv0F0k6iDB8</a><div id="transcript"><p><span class="line" data-startTime="6">[MUSIC PLAYING] </span></p>
+
+<p class="speaker"><span class="line" data-starttime="30"><span class="speakerName">Paul Kinlan</span>: Hi, guys. </span><span class="line" data-startTime="30">I'm Paul Kinlan. </span><span class="line" data-startTime="31">And I'm a developer advocate </span><span class="line" data-startTime="31">at Google. </span><span class="line" data-startTime="33">And today we're doing the GDL </span><span class="line" data-startTime="33">Presents, Google Developers </span><span class="line" data-startTime="36">Live Presents, about the Chrome </span><span class="line" data-startTime="36">Web Lab experiment. </span><span class="line" data-startTime="39">I think it's the first of our </span><span class="line" data-startTime="39">current set of Hangouts that </span><span class="line" data-startTime="42">we're going to run. </span><span class="line" data-startTime="43">And with me I've got </span><span class="line" data-startTime="43">Roger and Matias? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="45"><span class="speakerName">Matias</span>: Yep, that's correct. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="46"><span class="speakerName">Paul Kinlan</span>: Matias, </span><span class="line" data-startTime="46">brilliant. </span><span class="line" data-startTime="47">I got them with me. </span><span class="line" data-startTime="48">And they worked on </span><span class="line" data-startTime="48">the project. </span><span class="line" data-startTime="49">So if you want to give </span><span class="line" data-startTime="49">yourselves a little bit of an </span><span class="line" data-startTime="50">introduction, and &mdash; </span></p>
+
+<p class="speaker"><span class="line" data-starttime="52"><span class="speakerName">Roger</span>: Yeah, I'm Roger. </span><span class="line" data-startTime="54">I'm a creative technologist </span><span class="line" data-startTime="54">at [INAUDIBLE]. </span><span class="line" data-startTime="57">And I've been the technical </span><span class="line" data-startTime="57">leader of the project. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="59"><span class="speakerName">Paul Kinlan</span>: Cool. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="60"><span class="speakerName">Matias</span>: Yeah, I'm Matias. </span><span class="line" data-startTime="62">And I'm a creative technologist </span><span class="line" data-startTime="62">as well, and also </span><span class="line" data-startTime="64">at [INAUDIBLE]. </span><span class="line" data-startTime="65">And I mainly focused on the </span><span class="line" data-startTime="65">Orchestra in the Web Lab. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="68"><span class="speakerName">Paul Kinlan</span>: Oh cool, so what's </span><span class="line" data-startTime="68">your day-to-day like at </span><span class="line" data-startTime="70">the moment, your kind </span><span class="line" data-startTime="70">of average day? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="75"><span class="speakerName">Roger</span>: I was managing other </span><span class="line" data-startTime="75">developers and doing some </span><span class="line" data-startTime="81">programming as well, as well </span><span class="line" data-startTime="81">as setting a little bit the </span><span class="line" data-startTime="86">rules in terms of programming. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="88"><span class="speakerName">Paul Kinlan</span>: The technical </span><span class="line" data-startTime="88">direction and everything. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="89"><span class="speakerName">Roger</span>: Yeah, a little bit. </span><span class="line" data-startTime="90">And handling a lot the client </span><span class="line" data-startTime="90">requests as well, making sure </span><span class="line" data-startTime="96">that you guys were happy </span><span class="line" data-startTime="96">with everything. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="98"><span class="speakerName">Paul Kinlan</span>: Sweet, </span><span class="line" data-startTime="98">I'm always happy. </span><span class="line" data-startTime="100">So thanks. </span><span class="line" data-startTime="101">[LAUGHTER] </span></p>
+
+<p class="speaker"><span class="line" data-starttime="104"><span class="speakerName">Roger</span>: And that's it actually. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="106"><span class="speakerName">Matias</span>: And I was more into </span><span class="line" data-startTime="106">the code, writing both the </span><span class="line" data-startTime="109">front end and the back end. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="111"><span class="speakerName">Paul Kinlan</span>: Oh, sweet. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="111"><span class="speakerName">Matias</span>: For the Orchestra </span><span class="line" data-startTime="111">and interfacing with the </span><span class="line" data-startTime="113">instruments. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="115"><span class="speakerName">Paul Kinlan</span>: Sweet, so we'll </span><span class="line" data-startTime="115">just do a little bit of a </span><span class="line" data-startTime="116">brief introduction about </span><span class="line" data-startTime="116">Web Lab itself. </span> <span class="line" data-startTime="118">So Web Lab is a series of five </span><span class="line" data-startTime="118">real world Chrome experiments </span><span class="line" data-startTime="121">that live on the web and also in </span><span class="line" data-startTime="121">the British Science Museum. </span> <span class="line" data-startTime="125">And I don't know how long </span><span class="line" data-startTime="125">it's been &mdash; it's been in </span><span class="line" data-startTime="127">development for quite a long </span><span class="line" data-startTime="127">time now, hasn't it? </span><span class="line" data-startTime="129">But essentially you can go to </span><span class="line" data-startTime="129">the British Science Museum </span><span class="line" data-startTime="131">today and start experimenting </span><span class="line" data-startTime="131">with the experiments in the </span><span class="line" data-startTime="135">real world. </span> <span class="line" data-startTime="136">And today we're going to </span><span class="line" data-startTime="136">talk mainly about the &mdash; </span><span class="line" data-startTime="139">I'd say the virtual world, but </span><span class="line" data-startTime="139">the online web experience. </span> <span class="line" data-startTime="142">So you could be &mdash; </span><span class="line" data-startTime="143">the way I always liked to pitch </span><span class="line" data-startTime="143">this was you could be </span><span class="line" data-startTime="146">actually in the museum </span><span class="line" data-startTime="146">interacting with the </span><span class="line" data-startTime="148">experiment through the browser </span><span class="line" data-startTime="148">right there, walk 10 feet </span><span class="line" data-startTime="151">away, still be interacting with </span><span class="line" data-startTime="151">it, walk into the next </span><span class="line" data-startTime="154">room, and still interact with </span><span class="line" data-startTime="154">it in the same way that you </span><span class="line" data-startTime="156">would if you were </span><span class="line" data-startTime="156">at the museum. </span></p>
+
+<p><span class="line" data-startTime="158">And then you go all the way over </span><span class="line" data-startTime="158">to Google I/O last year. </span> <span class="line" data-startTime="161">And then you're 7,000 miles </span><span class="line" data-startTime="161">away in San Francisco. </span> <span class="line" data-startTime="164">And you're still interacting </span><span class="line" data-startTime="164">with the experiments in the </span><span class="line" data-startTime="166">same type of way. </span> <span class="line" data-startTime="167">I think that's a fair </span><span class="line" data-startTime="167">assumption. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="168"><span class="speakerName">Matias</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="169"><span class="speakerName">Paul Kinlan</span>: Yeah, it's </span><span class="line" data-startTime="169">a fair summary. </span><span class="line" data-startTime="171">So we're going to go through the </span><span class="line" data-startTime="171">actual experiments today. </span><span class="line" data-startTime="173">We're going to go through </span><span class="line" data-startTime="173">one which is </span><span class="line" data-startTime="175">called the Lab Tag Explorer. </span><span class="line" data-startTime="177">And the lab tag itself is kind </span><span class="line" data-startTime="177">of &mdash; it's the core component </span><span class="line" data-startTime="180">of Web Lab, isn't it really? </span><span class="line" data-startTime="182">So if you want to give a little </span><span class="line" data-startTime="182">bit of background on </span><span class="line" data-startTime="184">what Web Lab &mdash; or not Web Lab, </span><span class="line" data-startTime="184">but the lab tag means to you. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="187"><span class="speakerName">Roger</span>: Yeah, so in Web Lab we </span><span class="line" data-startTime="187">wanted to represent people, </span><span class="line" data-startTime="192">people that is interacting </span><span class="line" data-startTime="192">with it at all time. </span><span class="line" data-startTime="196">And a lab tag is your </span><span class="line" data-startTime="196">identification in Web Lab. </span><span class="line" data-startTime="201">So it's something kind of like </span><span class="line" data-startTime="201">an avatar where you can store </span><span class="line" data-startTime="206">all the content that you're </span><span class="line" data-startTime="206">generating in Web Lab. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="210"><span class="speakerName">Paul Kinlan</span>: Cool, and if you </span><span class="line" data-startTime="210">look at the screen right now, </span><span class="line" data-startTime="213">we have these two streams. </span><span class="line" data-startTime="214">Are these real-time streams </span><span class="line" data-startTime="214">or are these random? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="217"><span class="speakerName">Roger</span>: Yeah, they are </span><span class="line" data-startTime="217">generated by code. </span><span class="line" data-startTime="220">And one stream represents </span><span class="line" data-startTime="220">the online people. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="226"><span class="speakerName">Paul Kinlan</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="227"><span class="speakerName">Roger</span>: And the other one the </span><span class="line" data-startTime="227">people that is interacting in </span><span class="line" data-startTime="229">the museum. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="229"><span class="speakerName">Paul Kinlan</span>: Yeah, and these </span><span class="line" data-startTime="229">are all lab tags that are </span><span class="line" data-startTime="231">streaming across? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="236"><span class="speakerName">Roger</span>: It's not real data </span><span class="line" data-startTime="236">in this stream. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="237"><span class="speakerName">Paul Kinlan</span>: Yeah, OK. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="238"><span class="speakerName">Roger</span>: Once we go into the Lab </span><span class="line" data-startTime="238">Tag Explorer is where we get </span><span class="line" data-startTime="241">the real data. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="242"><span class="speakerName">Paul Kinlan</span>: Yeah, should </span><span class="line" data-startTime="242">we have a quick look in? </span><span class="line" data-startTime="245">We'll zoom in. </span><span class="line" data-startTime="246">That's pretty nice. </span><span class="line" data-startTime="247">And how was that built? </span><span class="line" data-startTime="248">Is this WebGL? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="249"><span class="speakerName">Roger</span>: Yeah, it is WebGL. </span><span class="line" data-startTime="250">It is in three.js. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="252"><span class="speakerName">Paul Kinlan</span>: And now this is </span><span class="line" data-startTime="252">my lab tag that's getting </span><span class="line" data-startTime="254">built right now. </span><span class="line" data-startTime="254">Can you explain a little bit </span><span class="line" data-startTime="254">what these three symbols mean? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="258"><span class="speakerName">Roger</span>: Yeah, so each of the lab </span><span class="line" data-startTime="258">tags is generated by one </span><span class="line" data-startTime="261">main shape and two </span><span class="line" data-startTime="261">more shapes. </span><span class="line" data-startTime="266">And there's a variation on </span><span class="line" data-startTime="266">rotation between the shape's </span><span class="line" data-startTime="269">color and size. </span><span class="line" data-startTime="272">And under these barrier </span><span class="line" data-startTime="272">[? rows, ?] </span><span class="line" data-startTime="276">we can acquire millions of </span><span class="line" data-startTime="276">different combinations. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="279"><span class="speakerName">Paul Kinlan</span>: Millions? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="279"><span class="speakerName">Roger</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="280"><span class="speakerName">Paul Kinlan</span>: Wow, that's cool. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="281"><span class="speakerName">Roger</span>: So it does a lot. </span><span class="line" data-startTime="282">But it's unique for it too. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="285"><span class="speakerName">Paul Kinlan</span>: Yeah, and you also </span><span class="line" data-startTime="285">get the lab tags online. </span><span class="line" data-startTime="286">But you can get it in the </span><span class="line" data-startTime="286">real world as well. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="288"><span class="speakerName">Roger</span>: Yeah, the similar thing </span><span class="line" data-startTime="288">in the museum is that you get </span><span class="line" data-startTime="293">a badge, which you have </span><span class="line" data-startTime="293">your lab tag [? in. ?] </span><span class="line" data-startTime="297">And you can put it into each of </span><span class="line" data-startTime="297">the experiments and collect </span><span class="line" data-startTime="300">all your data. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="301"><span class="speakerName">Paul Kinlan</span>: Right. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="301"><span class="speakerName">Roger</span>: And once you go back </span><span class="line" data-startTime="301">home, then you can use your </span><span class="line" data-startTime="304">webcam to scan this badge and </span><span class="line" data-startTime="304">receive all the contents that </span><span class="line" data-startTime="308">you have generated. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="310"><span class="speakerName">Paul Kinlan</span>: I just want to </span><span class="line" data-startTime="310">cover how do you interact with </span><span class="line" data-startTime="312">the webcam? </span><span class="line" data-startTime="313">Is that Flash or is </span><span class="line" data-startTime="313">it getUserMedia? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="316"><span class="speakerName">Roger</span>: Yeah, that specific </span><span class="line" data-startTime="316">bit of code was Flash. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="319"><span class="speakerName">Paul Kinlan</span>: Was Flash. </span><span class="line" data-startTime="320">Is it Flash still? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="322"><span class="speakerName">Roger</span>: It was this morning. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="323"><span class="speakerName">Paul Kinlan</span>: OK, cool. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="324"><span class="speakerName">Roger</span>: There are other things </span><span class="line" data-startTime="324">in Web Lab that have been </span><span class="line" data-startTime="326">using [INAUDIBLE]. </span><span class="line" data-startTime="327">That's the specific one. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="328"><span class="speakerName">Paul Kinlan</span>: Yeah, I think </span><span class="line" data-startTime="328">this has been a really </span><span class="line" data-startTime="330">interesting experiment, really </span><span class="line" data-startTime="330">where we've been trying to </span><span class="line" data-startTime="332">push the boundaries </span><span class="line" data-startTime="332">of what's been </span><span class="line" data-startTime="334">possible inside the browser. </span><span class="line" data-startTime="335">And there are some limits </span><span class="line" data-startTime="335">that we've come up to. </span><span class="line" data-startTime="338">And I think in a later Hangout </span><span class="line" data-startTime="338">that we're going to run where </span><span class="line" data-startTime="341">we talk about the Sketchbots, </span><span class="line" data-startTime="341">we use getUserMedia. </span><span class="line" data-startTime="346">I think, to actually take a </span><span class="line" data-startTime="346">picture of the person from the </span><span class="line" data-startTime="350">webcam using JavaScript. </span><span class="line" data-startTime="351">Where in this case, we probably </span><span class="line" data-startTime="351">used Flash, right? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="353"><span class="speakerName">Roger</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="354"><span class="speakerName">Paul Kinlan</span>: I think </span><span class="line" data-startTime="354">this is basically &mdash; </span><span class="line" data-startTime="355">there are some things right on </span><span class="line" data-startTime="355">the web that we can't just do </span><span class="line" data-startTime="357">purely nakedly inside the </span><span class="line" data-startTime="357">browser right now. </span><span class="line" data-startTime="360">And we have to do a fallback. </span><span class="line" data-startTime="362">But the theme, it's a </span><span class="line" data-startTime="362">relatively seamless </span><span class="line" data-startTime="365">experience, right? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="366"><span class="speakerName">Matias</span>: Yeah, and as you </span><span class="line" data-startTime="366">mentioned before, it's been in </span><span class="line" data-startTime="369">production for a long time. </span><span class="line" data-startTime="370">So when we started with it, we </span><span class="line" data-startTime="370">couldn't use getUserMedia. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="375"><span class="speakerName">Paul Kinlan</span>: Yeah, I actually </span><span class="line" data-startTime="375">remember talking to you guys </span><span class="line" data-startTime="377">and saying, you know, </span><span class="line" data-startTime="377">getUserMedia is going to be in </span><span class="line" data-startTime="379">the browser in two </span><span class="line" data-startTime="379">months' time. </span><span class="line" data-startTime="381">And then in two months' time, </span><span class="line" data-startTime="381">yeah, it's going to be in the </span><span class="line" data-startTime="383">browser again in two </span><span class="line" data-startTime="383">months' time. </span><span class="line" data-startTime="385">So the really cool thing at </span><span class="line" data-startTime="385">least about Chrome and I </span><span class="line" data-startTime="387">believe Firefox as well </span><span class="line" data-startTime="387">now and Opera, we have </span><span class="line" data-startTime="389">getUserMedia, which allows </span><span class="line" data-startTime="389">us to get the user media. </span><span class="line" data-startTime="393">[LAUGHTER] </span></p>
+
+<p class="speaker"><span class="line" data-starttime="394"><span class="speakerName">Paul Kinlan</span>: That's really </span><span class="line" data-startTime="394">bad, isn't it? </span><span class="line" data-startTime="395">And they allow us to basically </span><span class="line" data-startTime="395">get access to the webcam data </span><span class="line" data-startTime="398">just by JavaScript. </span> <span class="line" data-startTime="400">We're not going to </span><span class="line" data-startTime="400">see that today. </span> <span class="line" data-startTime="401">We're going to go straight into </span><span class="line" data-startTime="401">the Lab Tag Explorer. </span> <span class="line" data-startTime="404">You know, I actually really like </span><span class="line" data-startTime="404">this whole fun screen. </span> <span class="line" data-startTime="406">It's [? beautiful. ?] </span><span class="line" data-startTime="409">Sorry, I'm just going completely </span><span class="line" data-startTime="409">off track. </span> <span class="line" data-startTime="410">That's fine. </span> <span class="line" data-startTime="412">Cool, so the Lab Tag Explorer, </span><span class="line" data-startTime="412">let's jump </span><span class="line" data-startTime="414">into the Lab Tag Explorer. </span> <span class="line" data-startTime="417">So we were saying before &mdash; oh, </span><span class="line" data-startTime="417">this is beautiful, very nice </span><span class="line" data-startTime="419">loading screens. </span></p>
+
+<p><span class="line" data-startTime="420">So what's happening in the </span><span class="line" data-startTime="420">background at the moment? </span><span class="line" data-startTime="422">Is this &mdash; </span></p>
+
+<p class="speaker"><span class="line" data-starttime="423"><span class="speakerName">Roger</span>: So this just loading </span><span class="line" data-startTime="423">all the specific bits for </span><span class="line" data-startTime="426">these experiments. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="428"><span class="speakerName">Paul Kinlan</span>: So do you kind of </span><span class="line" data-startTime="428">cache everything locally in </span><span class="line" data-startTime="430">the user's machine? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="431"><span class="speakerName">Roger</span>: Ah, no. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="432"><span class="speakerName">Paul Kinlan</span>: Or is it just </span><span class="line" data-startTime="432">basically saying, we're </span><span class="line" data-startTime="433">loading everything. </span><span class="line" data-startTime="434">When it's unload or </span><span class="line" data-startTime="434">[? DOM ?] content </span><span class="line" data-startTime="436">ready, essentially we &mdash; </span></p>
+
+<p class="speaker"><span class="line" data-starttime="438"><span class="speakerName">Roger</span>: Yeah, this has </span><span class="line" data-startTime="438">everything, yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="439"><span class="speakerName">Paul Kinlan</span>: That actually </span><span class="line" data-startTime="439">looks really nice. </span><span class="line" data-startTime="441">You'd normally see </span><span class="line" data-startTime="441">a big white page. </span><span class="line" data-startTime="444">So that's kind of interesting. </span><span class="line" data-startTime="445">That's one of the things I've </span><span class="line" data-startTime="445">been trying to work with </span><span class="line" data-startTime="447">developers on is provide these </span><span class="line" data-startTime="447">relatively seamless </span><span class="line" data-startTime="449">experiences. </span><span class="line" data-startTime="450">Don't let the user see that </span><span class="line" data-startTime="450">things are loading </span><span class="line" data-startTime="452">incrementally in </span><span class="line" data-startTime="452">the background. </span><span class="line" data-startTime="454">Sometimes with documents </span><span class="line" data-startTime="454">it's fine. </span><span class="line" data-startTime="455">But I think for applications </span><span class="line" data-startTime="455">and those types of </span><span class="line" data-startTime="457">experiences, it breaks </span><span class="line" data-startTime="457">away from it. </span><span class="line" data-startTime="460">So should we just describe </span><span class="line" data-startTime="460">what's happening on the </span><span class="line" data-startTime="462">screen right now? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="462"><span class="speakerName">Roger</span>: Yeah, so these </span><span class="line" data-startTime="462">experiments is all about </span><span class="line" data-startTime="466">exploring the content that all </span><span class="line" data-startTime="466">the users have been using. </span><span class="line" data-startTime="470">So as I mentioned, each of these </span><span class="line" data-startTime="470">little things is a lab </span><span class="line" data-startTime="473">tag, which represents a user. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="475"><span class="speakerName">Paul Kinlan</span>: Ah, I see, cool. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="477"><span class="speakerName">Roger</span>: In this view, we can </span><span class="line" data-startTime="477">see the people who are </span><span class="line" data-startTime="479">actually interacting with </span><span class="line" data-startTime="479">Web Lab in this </span><span class="line" data-startTime="482">precise moment of time. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="483"><span class="speakerName">Paul Kinlan</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="484"><span class="speakerName">Roger</span>: You can see that there's </span><span class="line" data-startTime="484">two streams, one for </span><span class="line" data-startTime="485">the museum people and another </span><span class="line" data-startTime="485">one for the people who are </span><span class="line" data-startTime="489">interacting online. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="491"><span class="speakerName">Paul Kinlan</span>: So the really cool </span><span class="line" data-startTime="491">thing, and I'd encourage </span><span class="line" data-startTime="492">anyone who can get to the </span><span class="line" data-startTime="492">British Science Museum in </span><span class="line" data-startTime="495">London, is that when you go into </span><span class="line" data-startTime="495">the museum, you see these </span><span class="line" data-startTime="498">lab tags falling from the </span><span class="line" data-startTime="498">ceiling right down to the </span><span class="line" data-startTime="501">floor, don't you? </span><span class="line" data-startTime="502">It's really nice. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="503"><span class="speakerName">Roger</span>: You have the same </span><span class="line" data-startTime="503">experience that we've been </span><span class="line" data-startTime="505">seeing in the online. </span><span class="line" data-startTime="507">There it's represented </span><span class="line" data-startTime="507">in a very big screen. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="511"><span class="speakerName">Paul Kinlan</span>: So I saw some kind </span><span class="line" data-startTime="511">of lines come up before </span><span class="line" data-startTime="513">when I clicked on someone </span><span class="line" data-startTime="513">from the US. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="515"><span class="speakerName">Roger</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="515"><span class="speakerName">Paul Kinlan</span>: There we go. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="515"><span class="speakerName">Roger</span>: They're showing some </span><span class="line" data-startTime="515">connections between them. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="518"><span class="speakerName">Paul Kinlan</span>: Nice. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="518"><span class="speakerName">Roger</span>: Some people probably </span><span class="line" data-startTime="518">they are having lunch. </span><span class="line" data-startTime="522">Or people who are interacting </span><span class="line" data-startTime="522">with Orchestra, some different </span><span class="line" data-startTime="527">data, data visualization </span><span class="line" data-startTime="527">of the users. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="530"><span class="speakerName">Paul Kinlan</span>: That's </span><span class="line" data-startTime="530">really cool. </span><span class="line" data-startTime="531">And these are actually </span><span class="line" data-startTime="531">live users now? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="533"><span class="speakerName">Roger</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="533"><span class="speakerName">Paul Kinlan</span>: People who are </span><span class="line" data-startTime="533">going or recently interacted </span><span class="line" data-startTime="534">with a Sketchbot. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="535"><span class="speakerName">Roger</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="536"><span class="speakerName">Paul Kinlan</span>: That's pretty </span><span class="line" data-startTime="536">cool, isn't it? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="538"><span class="speakerName">Matias</span>: And also, these items </span><span class="line" data-startTime="538">flying by, it's &mdash; </span><span class="line" data-startTime="543">we choose half an hour </span><span class="line" data-startTime="543">ago all that has </span><span class="line" data-startTime="549">interacted since that part. </span><span class="line" data-startTime="551">So it's constantly updating. </span><span class="line" data-startTime="552">And you can sit for hours </span><span class="line" data-startTime="552">and just look </span><span class="line" data-startTime="554">what people are doing. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="555"><span class="speakerName">Paul Kinlan</span>: This is really </span><span class="line" data-startTime="555">cool, isn't it? </span><span class="line" data-startTime="557">So just to talk about some of </span><span class="line" data-startTime="557">the technology about this, </span><span class="line" data-startTime="561">this is based on the user's </span><span class="line" data-startTime="561">rough location. </span><span class="line" data-startTime="563">Is this using App Engine's </span><span class="line" data-startTime="563">request notification or the </span><span class="line" data-startTime="567">requests country location </span><span class="line" data-startTime="567">information? </span><span class="line" data-startTime="570">Or is there some </span><span class="line" data-startTime="570">other type of &mdash; </span></p>
+
+<p class="speaker"><span class="line" data-starttime="572"><span class="speakerName">Roger</span>: No, well, [INAUDIBLE]. </span><span class="line" data-startTime="576">But I think they finally used </span><span class="line" data-startTime="576">some kind of custom built </span><span class="line" data-startTime="581">system to get the information. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="583"><span class="speakerName">Paul Kinlan</span>: Yeah, so it just </span><span class="line" data-startTime="583">basically finds the country </span><span class="line" data-startTime="584">and then maps it on. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="585"><span class="speakerName">Roger</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="585"><span class="speakerName">Paul Kinlan</span>: That's </span><span class="line" data-startTime="585">pretty nice. </span><span class="line" data-startTime="586">So the client side technology </span><span class="line" data-startTime="586">in this, this is </span><span class="line" data-startTime="589">all WebGL as well? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="590"><span class="speakerName">Roger</span>: This is WebGL. </span><span class="line" data-startTime="591">This is using three.js, </span><span class="line" data-startTime="591">the same. </span><span class="line" data-startTime="593">And we've been trying to &mdash; </span><span class="line" data-startTime="597">for the movement of them, </span><span class="line" data-startTime="597">for the animation &mdash; </span><span class="line" data-startTime="599">we've been using steering </span><span class="line" data-startTime="599">behaviors. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="603"><span class="speakerName">Paul Kinlan</span>: OK. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="604"><span class="speakerName">Roger</span>: And as you can see, </span><span class="line" data-startTime="604">there's some behaviors for </span><span class="line" data-startTime="610">them to feel a little </span><span class="line" data-startTime="610">bit alive. </span><span class="line" data-startTime="612">But at the same time, they </span><span class="line" data-startTime="612">all follow this path. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="615"><span class="speakerName">Paul Kinlan</span>: I kind of like how </span><span class="line" data-startTime="615">they've just tried to get </span><span class="line" data-startTime="616">themselves around where </span><span class="line" data-startTime="616">my mouse was. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="618"><span class="speakerName">Roger</span>: Yeah, we're </span><span class="line" data-startTime="618">in level one. </span><span class="line" data-startTime="619">So this is a nice interesting </span><span class="line" data-startTime="619">bit which in 3D, it's quite </span><span class="line" data-startTime="625">tricky to go from the 2D </span><span class="line" data-startTime="625">world to the 3D world. </span><span class="line" data-startTime="630">For example, the mouse </span><span class="line" data-startTime="630">is in the 2D world. </span><span class="line" data-startTime="633">And then you next interact with </span><span class="line" data-startTime="633">some objects that live in </span><span class="line" data-startTime="635">this 3D world. </span><span class="line" data-startTime="637">But three.js makes </span><span class="line" data-startTime="637">it very easy to. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="640"><span class="speakerName">Paul Kinlan</span>: OK, so is that </span><span class="line" data-startTime="640">one of the reasons why you </span><span class="line" data-startTime="643">chose three.js in </span><span class="line" data-startTime="643">this project? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="644"><span class="speakerName">Roger</span>: Yeah, basically without </span><span class="line" data-startTime="644">three.js and with the time </span><span class="line" data-startTime="649">that we've had, it would </span><span class="line" data-startTime="649">have been impossible. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="650"><span class="speakerName">Paul Kinlan</span>: Yeah, does Mr. </span><span class="line" data-startTime="650">[? Dupe ?] know that we &mdash; </span></p>
+
+<p class="speaker"><span class="line" data-starttime="653"><span class="speakerName">Roger</span>: Yeah, we've </span><span class="line" data-startTime="653">been talking. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="654"><span class="speakerName">Paul Kinlan</span>: Yeah, he's </span><span class="line" data-startTime="654">cool, isn't he? </span><span class="line" data-startTime="656">That's cool. </span><span class="line" data-startTime="657">That's really interesting. </span><span class="line" data-startTime="657">So these are kind of like </span><span class="line" data-startTime="657">voids essentially? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="660"><span class="speakerName">Roger</span>: Yeah, they are. </span><span class="line" data-startTime="661">Each of them is like a void. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="664"><span class="speakerName">Paul Kinlan</span>: And did you notice </span><span class="line" data-startTime="664">any performance issues? </span><span class="line" data-startTime="666">I mean, you're streaming quite </span><span class="line" data-startTime="666">a lot of data across the </span><span class="line" data-startTime="669">screen at the moment. </span><span class="line" data-startTime="671">Were there any performance </span><span class="line" data-startTime="671">issues when you </span><span class="line" data-startTime="672">were building this? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="672"><span class="speakerName">Roger</span>: Yeah, there </span><span class="line" data-startTime="672">was actually. </span><span class="line" data-startTime="673">So these are all sprites, </span><span class="line" data-startTime="673">each of the lab tags. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="678"><span class="speakerName">Paul Kinlan</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="679"><span class="speakerName">Roger</span>: But if you use </span><span class="line" data-startTime="679">one texture &mdash; </span><span class="line" data-startTime="681">you see that animation? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="683"><span class="speakerName">Paul Kinlan</span>: Mhmm. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="683"><span class="speakerName">Roger</span>: So how this animation </span><span class="line" data-startTime="683">is done is using a </span><span class="line" data-startTime="687">spreadsheet. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="688"><span class="speakerName">Paul Kinlan</span>: Yep. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="689"><span class="speakerName">Roger</span>: And if we were using just </span><span class="line" data-startTime="689">one spreadsheet per each </span><span class="line" data-startTime="693">particle, it was impossible </span><span class="line" data-startTime="693">to create this </span><span class="line" data-startTime="697">with so many particles. </span><span class="line" data-startTime="699">So what we ended up using, </span><span class="line" data-startTime="699">it's a system where we </span><span class="line" data-startTime="703">generate textures as </span><span class="line" data-startTime="703">big as they can. </span><span class="line" data-startTime="707">Taking in browsers, I think it's </span><span class="line" data-startTime="707">a canvas of 2,048 pixels. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="714"><span class="speakerName">Paul Kinlan</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="715"><span class="speakerName">Roger</span>: And then we fit in as </span><span class="line" data-startTime="715">many lab tags as we can, as </span><span class="line" data-startTime="719">many lab tag sprites per </span><span class="line" data-startTime="719">each of the lab tags. </span><span class="line" data-startTime="722">And then we have some kind of </span><span class="line" data-startTime="722">easy system with some indexes </span><span class="line" data-startTime="727">to access them. </span><span class="line" data-startTime="728">So we're using one or two </span><span class="line" data-startTime="728">very big textures. </span><span class="line" data-startTime="732">And we use UV mapping and </span><span class="line" data-startTime="732">UV offset to access </span><span class="line" data-startTime="737">each of the lab tags. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="739"><span class="speakerName">Paul Kinlan</span>: That's </span><span class="line" data-startTime="739">pretty cool. </span><span class="line" data-startTime="740">So I've actually just clicked </span><span class="line" data-startTime="740">on one of the lab tags. </span><span class="line" data-startTime="743">And we've got this little screen </span><span class="line" data-startTime="743">up here, which is the </span><span class="line" data-startTime="745">lab report. </span><span class="line" data-startTime="746">Can you explain a little bit </span><span class="line" data-startTime="746">about the lab report? </span><span class="line" data-startTime="748">I think you might have </span><span class="line" data-startTime="748">done it at the start. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="750"><span class="speakerName">Roger</span>: Yeah, so the lab report </span><span class="line" data-startTime="750">is what records all your </span><span class="line" data-startTime="757">interactions. </span><span class="line" data-startTime="758">So you can find all your content </span><span class="line" data-startTime="758">that you've been </span><span class="line" data-startTime="760">generating in Web Lab </span><span class="line" data-startTime="760">in the lab report. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="763"><span class="speakerName">Paul Kinlan</span>: That's pretty </span><span class="line" data-startTime="763">cool, isn't it? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="763"><span class="speakerName">Matias</span>: And some things need </span><span class="line" data-startTime="763">video to render recordings </span><span class="line" data-startTime="767">from the museum, if you draw </span><span class="line" data-startTime="767">yourself in the sand with a </span><span class="line" data-startTime="770">sand robot for our Sketchbots. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="772"><span class="speakerName">Paul Kinlan</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="774"><span class="speakerName">Matias</span>: And the Orchestra </span><span class="line" data-startTime="774">records you and gives you back </span><span class="line" data-startTime="776">a video as well. </span><span class="line" data-startTime="778">So they may take </span><span class="line" data-startTime="778">time to render. </span><span class="line" data-startTime="781">So you will see a progress here </span><span class="line" data-startTime="781">and can come back at any </span><span class="line" data-startTime="784">point and view your </span><span class="line" data-startTime="784">recordings. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="786"><span class="speakerName">Paul Kinlan</span>: That's pretty </span><span class="line" data-startTime="786">cool, isn't it? </span><span class="line" data-startTime="787">That's very nice. </span><span class="line" data-startTime="788">That's one of the things I </span><span class="line" data-startTime="788">really liked about the whole </span><span class="line" data-startTime="790">Web Lab experience. </span><span class="line" data-startTime="791">I took my kids there. </span><span class="line" data-startTime="793">Well, one is only two. </span><span class="line" data-startTime="795">And he couldn't do anything. </span><span class="line" data-startTime="797">But Jack is six going </span><span class="line" data-startTime="797">on seven now. </span><span class="line" data-startTime="799">And he absolutely </span><span class="line" data-startTime="799">loved the place. </span><span class="line" data-startTime="800">He had his little lab tag. </span><span class="line" data-startTime="801">He checked into every </span><span class="line" data-startTime="801">single thing. </span><span class="line" data-startTime="803">We got back home, put the lab </span><span class="line" data-startTime="803">tag in front of the screen. </span><span class="line" data-startTime="807">And we could share it today. </span><span class="line" data-startTime="808">But I haven't got a lab tag from </span><span class="line" data-startTime="808">my experience when I was </span><span class="line" data-startTime="813">at the museum itself. </span><span class="line" data-startTime="814">But yeah, we got it all back up </span><span class="line" data-startTime="814">on the screen pretty much </span><span class="line" data-startTime="816">straight away. </span><span class="line" data-startTime="818">It was a beautiful experience </span><span class="line" data-startTime="818">really. </span><span class="line" data-startTime="820">Yeah, it's pretty cool. </span><span class="line" data-startTime="823">So we have this other section. </span><span class="line" data-startTime="824">Sorry, I just want to jump </span><span class="line" data-startTime="824">in the other location. </span><span class="line" data-startTime="826">Here we go. </span><span class="line" data-startTime="828">That's beautiful that. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="832"><span class="speakerName">Matias</span>: And here we're loading </span><span class="line" data-startTime="832">a lot of data, for many days </span><span class="line" data-startTime="836">back in time. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="837"><span class="speakerName">Paul Kinlan</span>: Right, OK. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="838"><span class="speakerName">Matias</span>: And generating </span><span class="line" data-startTime="838">spreadsheets for this as well. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="842"><span class="speakerName">Roger</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="842"><span class="speakerName">Paul Kinlan</span>: So this is probably </span><span class="line" data-startTime="842">a silly question. </span><span class="line" data-startTime="845">How is the data stored </span><span class="line" data-startTime="845">in the back end? </span><span class="line" data-startTime="847">Is it all in App Engine? </span><span class="line" data-startTime="849">Or is it in MySQL databases? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="852"><span class="speakerName">Roger</span>: It's in App Engine. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="853"><span class="speakerName">Paul Kinlan</span>: Oh, OK, cool. </span><span class="line" data-startTime="854">So you record everything that </span><span class="line" data-startTime="854">happens into App Engine and </span><span class="line" data-startTime="857">then haul it back. </span><span class="line" data-startTime="858">When you bring it back, </span><span class="line" data-startTime="858">is it JSON? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="860"><span class="speakerName">Roger</span>: Yeah, it really </span><span class="line" data-startTime="860">is JSON. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="861"><span class="speakerName">Paul Kinlan</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="862"><span class="speakerName">Roger</span>: And it's amazing </span><span class="line" data-startTime="862">how all the [? VI ?] </span><span class="line" data-startTime="864">JavaScript in [? time ?] </span><span class="line" data-startTime="866">is working. </span><span class="line" data-startTime="867">And it's so fast, so, so fast. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="869"><span class="speakerName">Paul Kinlan</span>: Yeah, so how many </span><span class="line" data-startTime="869">data points would you normally </span><span class="line" data-startTime="871">bring back do you </span><span class="line" data-startTime="871">think in that? </span><span class="line" data-startTime="874">Because it took about five </span><span class="line" data-startTime="874">seconds to bring everything </span><span class="line" data-startTime="876">back, is it? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="876"><span class="speakerName">Roger</span>: Yeah, it depends a little </span><span class="line" data-startTime="876">in the graphic and </span><span class="line" data-startTime="880">everything. </span><span class="line" data-startTime="880">But I don't have any numbers </span><span class="line" data-startTime="880">where it's thousands of them. </span><span class="line" data-startTime="884">And in each of them, there's </span><span class="line" data-startTime="884">lots of information. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="887"><span class="speakerName">Paul Kinlan</span>: So you're </span><span class="line" data-startTime="887">saying it goes back </span><span class="line" data-startTime="888">over a couple of days. </span><span class="line" data-startTime="889">So we can, in theory jump </span><span class="line" data-startTime="889">back over time. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="892"><span class="speakerName">Roger</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="892"><span class="speakerName">Paul Kinlan</span>: So can you explain </span><span class="line" data-startTime="892">a little bit how you </span><span class="line" data-startTime="894">actually built this little </span><span class="line" data-startTime="894">time sequence thing? </span><span class="line" data-startTime="896">Is it just a series of planes </span><span class="line" data-startTime="896">that you put into a 3D space? </span><span class="line" data-startTime="900">Or is it &mdash; </span></p>
+
+<p class="speaker"><span class="line" data-starttime="901"><span class="speakerName">Roger</span>: Yeah, it's basically, </span><span class="line" data-startTime="901">everything is contained in a </span><span class="line" data-startTime="905">3D container. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="906"><span class="speakerName">Paul Kinlan</span>: Yep. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="908"><span class="speakerName">Roger</span>: So we don't </span><span class="line" data-startTime="908">move the camera. </span><span class="line" data-startTime="909">We just move this container </span><span class="line" data-startTime="909">up and down. </span><span class="line" data-startTime="912">And it creates this effect </span><span class="line" data-startTime="912">of going back in time. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="917"><span class="speakerName">Paul Kinlan</span>: Oh, so you </span><span class="line" data-startTime="917">just move the camera? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="919"><span class="speakerName">Roger</span>: No, so the camera &mdash; </span></p>
+
+<p class="speaker"><span class="line" data-starttime="920"><span class="speakerName">Paul Kinlan</span>: It's fixed. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="921"><span class="speakerName">Roger</span>: It's not moving. </span><span class="line" data-startTime="922">And then we have a 3D container </span><span class="line" data-startTime="922">that just moves. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="925"><span class="speakerName">Paul Kinlan</span>: I got you. </span><span class="line" data-startTime="926">That's pretty cool. </span><span class="line" data-startTime="926">So if I look at it in this </span><span class="line" data-startTime="926">projection, is it everything </span><span class="line" data-startTime="931">prior to this time? </span><span class="line" data-startTime="932">Or is it just at this </span><span class="line" data-startTime="932">point in time? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="934"><span class="speakerName">Roger</span>: So this is at </span><span class="line" data-startTime="934">this point of time. </span><span class="line" data-startTime="936">And then if you scroll to the </span><span class="line" data-startTime="936">left, it goes back in time. </span><span class="line" data-startTime="940">And you can see that it goes. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="943"><span class="speakerName">Paul Kinlan</span>: And this is all </span><span class="line" data-startTime="943">data that we've pulled, that's </span><span class="line" data-startTime="945">been pulled back? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="946"><span class="speakerName">Roger</span>: Yeah, and when you're </span><span class="line" data-startTime="946">scrolling, we're actually </span><span class="line" data-startTime="949">simplifying it a little </span><span class="line" data-startTime="949">bit because there </span><span class="line" data-startTime="951">were too many points. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="953"><span class="speakerName">Paul Kinlan</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="953"><span class="speakerName">Roger</span>: And it was becoming &mdash; </span></p>
+
+<p class="speaker"><span class="line" data-starttime="954"><span class="speakerName">Paul Kinlan</span>: So it looked </span><span class="line" data-startTime="954">like coalescent </span><span class="line" data-startTime="955">points in the beginning. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="956"><span class="speakerName">Roger</span>: Yeah, so there's less </span><span class="line" data-startTime="956">points when you scroll and </span><span class="line" data-startTime="958">then when you release </span><span class="line" data-startTime="958">all of them. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="961"><span class="speakerName">Paul Kinlan</span>: Excellent. </span><span class="line" data-startTime="961">Yeah, that's so cool. </span><span class="line" data-startTime="964">[INAUDIBLE]. </span><span class="line" data-startTime="966">Cool. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="966"><span class="speakerName">Roger</span>: It's very interesting </span><span class="line" data-startTime="966">to see the different flows. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="968"><span class="speakerName">Paul Kinlan</span>: This is, yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="969"><span class="speakerName">Roger</span>: Different days </span><span class="line" data-startTime="969">and locations. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="972"><span class="speakerName">Paul Kinlan</span>: All right. </span><span class="line" data-startTime="973">I'm just going to play with this </span><span class="line" data-startTime="973">for a little bit longer. </span><span class="line" data-startTime="976">Man, that's insane. </span><span class="line" data-startTime="978">That's a lot of interaction, </span><span class="line" data-startTime="978">isn't it? </span><span class="line" data-startTime="981">Cool, so I think we're </span><span class="line" data-startTime="981">close to the end. </span><span class="line" data-startTime="984">I mean, is there anything else </span><span class="line" data-startTime="984">you want to say about this </span><span class="line" data-startTime="985">experiment, like technical </span><span class="line" data-startTime="985">challenges that </span><span class="line" data-startTime="989">you might have faced? </span></p>
+
+<p class="speaker"><span class="line" data-starttime="991"><span class="speakerName">Matias</span>: Yeah, the performance. </span><span class="line" data-startTime="993">We tried to run their </span><span class="line" data-startTime="993">location [? U ?] </span><span class="line" data-startTime="995">and had debugged data </span><span class="line" data-startTime="995">from the start. </span><span class="line" data-startTime="999">And it was a set number </span><span class="line" data-startTime="999">of points. </span><span class="line" data-startTime="1002">And it went fine all the time. </span><span class="line" data-startTime="1003">And then we started trying it. </span><span class="line" data-startTime="1005">And it crashed directly because </span><span class="line" data-startTime="1005">we were filling it up </span><span class="line" data-startTime="1008">too fast, too fast </span><span class="line" data-startTime="1008">with points. </span><span class="line" data-startTime="1010">But yeah, smart solutions </span><span class="line" data-startTime="1010">and limiting the data. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="1015"><span class="speakerName">Paul Kinlan</span>: Yeah, so all the </span><span class="line" data-startTime="1015">coalescence and everything. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="1017"><span class="speakerName">Matias</span>: Yeah. </span></p>
+
+<p class="speaker"><span class="line" data-starttime="1018"><span class="speakerName">Paul Kinlan</span>: That's </span><span class="line" data-startTime="1018">pretty cool. </span><span class="line" data-startTime="1018">Well, it's beautiful guys. </span><span class="line" data-startTime="1020">Congratulations. </span><span class="line" data-startTime="1021">[LAUGHTER] </span></p></div>
