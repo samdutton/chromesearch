@@ -41,12 +41,18 @@ padding: 20px;
 }
 
 button {
-margin: 0 10px 0 0;
-/*
-padding: 5px;
-min-width: 70px;
-font-size: 1.2em;
- */
+border: none;
+font-family: 'Open Sans', sans-serif;
+font-size: 15px;
+height: 30.5px;
+margin: 0 0 0 0;
+position: relative;
+top: -1px;
+width: 62px;
+}
+
+button:active {
+background-color: #444;
 }
 
 button[disabled] {
@@ -214,8 +220,8 @@ width: 240px;
 input#query {
 font-size: 14px;
 padding: 5px;
-width: calc(100% - 13.4px);
-margin:  0 0 10px 0;
+width: calc(100% - 90px);
+margin: 0 10px 10px 0;
 }
 
 p {

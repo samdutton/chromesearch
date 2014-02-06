@@ -3,10 +3,12 @@ var trackPath = "tracks/";
 var trackSuffix = ".srt";
 var transcriptPath = "transcripts/";
 var transcriptSuffix = ".html";
+var input = document.querySelector('input#query');
+var searchButton = document.querySelector('button');
 var progressElement = document.querySelector('progress');
 progressElement.max = Object.keys(videos).length;
 var queryExplanation = document.querySelector('div#queryExplanation');
-var resultsDiv = $("#results");
+var resultsDiv = document.querySelector("#results");
 var query;
 var $query = $("#query");
 var $numResults = $("#numResults");
@@ -190,7 +192,6 @@ function handleVideosComplete(){
   queryExplanation.style.color = '#ccc';
   queryExplanation.innerHTML =
     'Enter text to search transcripts, then click on a match to view video.';
-  var input = document.querySelector('input#query');
   input.disabled = false;
   input.focus();
 }
@@ -222,7 +223,6 @@ function getYouTubeData(videoId){
 function displayResults(results) { // results is an array of cues
   // get rid of wait cursor
   document.querySelector("*").style.cursor = "";
-  resultsDiv.empty();
   $("#numResults").empty();
 
   var numResults = results.length;
@@ -262,7 +262,7 @@ function displayResults(results) { // results is an array of cues
       // if (!isMobile()) {
         addTranscriptDetails(videoDiv, video);
       // }
-      resultsDiv.append(videoDiv);
+      resultsDiv.appendChild(videoDiv);
     } // end adding elements for new video
     addMatch(matchesDetails, cue);
   }
@@ -343,6 +343,14 @@ function addTranscriptDetails(videoDiv, video){
 
       var transcript = xhr.responseText;
       transcriptDiv.innerHTML = transcript;
+      var lineSpans = transcriptDiv.querySelectorAll('span.line');
+      for (var i = 0; i !== lineSpans.length; ++i) {
+        var lineSpan = lineSpans[i];
+        if (!lineSpan.onclick) {
+          addClickHandler(lineSpan, video.id,
+            lineSpan.dataset.starttime);
+        }
+      }
 
       var style = '<style>* {font-family: "Open Sans", sans-serif}\na {color: #77aaff}\na.video {border-bottom: 1px solid #ddd; display: block; margin: 0 0 2em 0; padding: 0 0 2em 0}\nh2 {color: #444; font-size: 18px;}\nspan.speakerName {color: black; font-weight: 900;}\nbody {padding: 2em}\np {color: #444; margin: 0; text-indent: 1.5em;}\np.speaker {margin: 1em 0 0 0; text-indent: 0;}\ndiv#transcript > p:first-child {text-indent: 0;}\n</style>\n\n';
       var downloadHTML = style +
@@ -428,21 +436,28 @@ function getResults(query){
   displayResults(cues);
 }
 
-$query.bind('input', function() {
-  resultsDiv.empty();
-  query = $(this).val();
+function search() {
+  resultsDiv.innerHTML = '';
+  // var firstChild = resultsDiv.firstChild;
+  // while(firstChild) {
+  //   resultsDiv.removeChild(firstChild);
+  //   firstChild = resultsDiv.firstChild;
+  // }
+
+  query = input.value;
   if (query.length < 3) {
     $numResults.empty();
     return false;
   }
-  // add 500ms delay between getting keypresses
-  if (typeof(window.inputTimeout) != "undefined"){
-    window.clearTimeout(inputTimeout);
-  }
-  window.inputTimeout = window.setTimeout(function() {
     getResults(query);
-  }, 500);
-});
+};
+
+searchButton.onclick = search;
+input.onkeydown = function(e){
+  if (e.keyCode === 13) {
+    search();
+  }
+}
 
 function elapsedTimer(message) {
     if (elapsedTimer.isStarted) {
