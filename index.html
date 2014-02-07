@@ -2,10 +2,12 @@
 <html>
 <head>
 
-<meta name="keywords" content="Edge Conference, HTML5, JavaScript" />
-<meta name="description" content="Edge conference video transcript search." />
+<meta charset='utf-8'>
+<meta name="keywords" content="Chrome, HTML5, JavaScript, VTT" />
+<meta name="description" content="Chrome video transcript search." />
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
 <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<base target="_blank">
 
 <title>Chrome video search</title>
 
@@ -25,7 +27,7 @@
 
 <div id="info">
 	<input id="query" type="text" disabled autofocus />
-  <button>Search</button>
+  <button disabled>Search</button>
   <div id="queryExplanation">
     <span id ="loading">Loading:</span>
     <progress max="400" value="0"></progress>
@@ -40,7 +42,7 @@
 
 <details>
   <summary>Huh?</summary>
-  <p>Enter text to search the manual transcriptions of 400+ Chrome developer videos.</p>
+  <p>This app searches the manual transcriptions of 400+ Chrome developer videos.</p>
   <p>Click on any part of a transcript to play back video from that point.</p>
   <p>A timed transcript file in SRT format for each video is stored in the <em>tracks</em> folder. SRT files look like this (each item is called a cue): </p>
   <pre>
@@ -72,7 +74,8 @@ part of the day.
 </div>
 
 
-<script src="js/lib/jquery-2.0.0.min.js"></script>
+<script src="js/lib/jquery-2.1.0.min.js"></script>
+<script src="js/lib/jquery.details-1.7.min.js"></script>
 <script src="js/lib/callPlayer.js"></script>
 <script src="js/videos.js"></script>
 <script src="js/main.js"></script>

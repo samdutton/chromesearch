@@ -42,6 +42,7 @@ padding: 20px;
 
 button {
 border: none;
+border-radius: 2px;
 font-family: 'Open Sans', sans-serif;
 font-size: 15px;
 height: 30.5px;
@@ -53,6 +54,10 @@ width: 62px;
 
 button:active {
 background-color: #444;
+}
+
+button:hover {
+background-color: #aaa;
 }
 
 button[disabled] {
@@ -219,8 +224,9 @@ width: 240px;
 
 input#query {
 font-size: 14px;
+font-family: 'Open Sans', sans-serif;
 padding: 5px;
-width: calc(100% - 90px);
+width: calc(100% - 93px);
 margin: 0 10px 10px 0;
 }
 
@@ -269,7 +275,7 @@ color: #ddd;
 progress {
 position: relative;
 top: 3px;
-width: calc(100% - 74px);
+width: calc(100% - 76px);
 }
 
 progress[value] {
@@ -278,12 +284,14 @@ appearance: none;
 height: 20px;
 }
 
-progress[value]::-webkit-progress-bar {
+progress[value]::-webkit-progress-bar,
+progress[value]::progress-bar {
 background-color: #eee;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-progress[value]::-webkit-progress-value {
+progress[value]::-webkit-progress-value,
+progress[value]::progress-value {
 background-color: #a00;
 }
 
@@ -359,5 +367,9 @@ background: #222;
     font-size: 24px;
     margin: 0 0 20px 0;
     padding: 0px
+  }
+  img.videoThumbnail {
+    float: none;
+    padding: 0 0 0 0;
   }
 }

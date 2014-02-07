@@ -1,0 +1,4 @@
+/* Not supporting browsers */
+.no-details details { display: block }
+.no-details details > summary::before { content:"►" }
+.no-details details.open > summary::before {   content:"▼" }

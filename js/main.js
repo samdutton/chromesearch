@@ -189,9 +189,10 @@ function hasCues(id){
 
 function handleVideosComplete(){
   isReady = true;
+  searchButton.disabled = false;
   queryExplanation.style.color = '#ccc';
   queryExplanation.innerHTML =
-    'Enter text to search transcripts, then click on a match to view video.';
+    'Enter text then press Return or click the Search button.';
   input.disabled = false;
   input.focus();
 }
@@ -231,7 +232,8 @@ function displayResults(results) { // results is an array of cues
     $numResults.html(numResults + " results (too many to display)");
     return;
   } else {
-    $numResults.html(numResults + " matches(s)");
+    queryExplanation.textContent = 'Click on a match to view video.';
+    $numResults.html(numResults + " match(es)");
   }
 
   var cuesDiv, matchesDetails, videoId, videoDiv;
@@ -422,14 +424,13 @@ function getResults(query){
   for (id in videos){
     var video = videos[id];
     // a few videos currently don't have transcripts - see hasCues()
-    if (!video.cues){
-      continue;
-    }
-    for (var i = 0; i != video.cues.length; ++i) {
-      var cue = video.cues[i];
-      var re = new RegExp(query, "i");
-      if (re.test(cue.text)) {
-        cues.push(cue);
+    if (video.cues){
+      for (var i = 0; i != video.cues.length; ++i) {
+        var cue = video.cues[i];
+        var re = new RegExp(query, "i");
+        if (re.test(cue.text)) {
+          cues.push(cue);
+        }
       }
     }
   }
