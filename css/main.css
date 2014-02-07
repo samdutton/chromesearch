@@ -284,14 +284,12 @@ appearance: none;
 height: 20px;
 }
 
-progress[value]::-webkit-progress-bar,
-progress[value]::progress-bar {
+progress[value]::-webkit-progress-bar {
 background-color: #eee;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-progress[value]::-webkit-progress-value,
-progress[value]::progress-value {
+progress[value]::-webkit-progress-value {
 background-color: #a00;
 }
 
@@ -353,7 +351,7 @@ video {
 background: #222;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   body {
     background: black;
     margin: 0;
