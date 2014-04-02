@@ -1,0 +1,6274 @@
+1
+00:00:00,000 --> 00:00:03,832
+
+2
+00:00:03,832 --> 00:00:06,460
+MALE SPEAKER: Thank
+you very much, Andrew.
+
+3
+00:00:06,460 --> 00:00:09,930
+So, folks, we have the
+privilege, the challenge,
+
+4
+00:00:09,930 --> 00:00:12,540
+and the &mdash; well, yes,
+it is a challenge &mdash;
+
+5
+00:00:12,540 --> 00:00:15,440
+of having a very
+broadly scoped topic,
+
+6
+00:00:15,440 --> 00:00:18,020
+but we're going to be
+exciting, lively, and vibrant,
+
+7
+00:00:18,020 --> 00:00:19,100
+and we need you.
+
+8
+00:00:19,100 --> 00:00:21,720
+We need you to
+participate in that.
+
+9
+00:00:21,720 --> 00:00:25,210
+So lots of interaction,
+please, from everybody.
+
+10
+00:00:25,210 --> 00:00:30,510
+Let me introduce my
+panel, first of all.
+
+11
+00:00:30,510 --> 00:00:31,770
+I'm going from the right here.
+
+12
+00:00:31,770 --> 00:00:35,360
+We have Andrew Spooner, who's
+UX Evangelist at Microsoft.
+
+13
+00:00:35,360 --> 00:00:40,110
+We have Jeni Tennison, who is
+CTO at the Open Data Institute.
+
+14
+00:00:40,110 --> 00:00:41,700
+To my left, we
+have Scott Jenson,
+
+15
+00:00:41,700 --> 00:00:43,810
+who does user
+experience at Google.
+
+16
+00:00:43,810 --> 00:00:45,030
+And who's next?
+
+17
+00:00:45,030 --> 00:00:47,050
+Oh, it's Tom over there.
+
+18
+00:00:47,050 --> 00:00:50,340
+Tom Ashworth is a front-end
+developer over at Twitter.
+
+19
+00:00:50,340 --> 00:00:54,060
+And Alice on the end there
+does user experience stuff
+
+20
+00:00:54,060 --> 00:00:57,600
+for the government
+digital service.
+
+21
+00:00:57,600 --> 00:01:00,089
+I think we are &mdash;
+
+22
+00:01:00,089 --> 00:01:03,330
+ALICE: Well, I'm front-end
+developer at [INAUDIBLE]
+
+23
+00:01:03,330 --> 00:01:05,590
+MALE SPEAKER: I'm so sorry.
+
+24
+00:01:05,590 --> 00:01:09,350
+Carried away in
+my own excitement.
+
+25
+00:01:09,350 --> 00:01:11,670
+We'll probably cover some
+things that have already
+
+26
+00:01:11,670 --> 00:01:13,086
+been covered today,
+but I'm hoping
+
+27
+00:01:13,086 --> 00:01:16,590
+we'll cover them from a
+slightly different perspective.
+
+28
+00:01:16,590 --> 00:01:19,100
+So we've already
+talked, for example,
+
+29
+00:01:19,100 --> 00:01:23,090
+about varying device
+sizes and so on.
+
+30
+00:01:23,090 --> 00:01:25,930
+But we are looking for
+broadening that topic out,
+
+31
+00:01:25,930 --> 00:01:27,430
+I guess, and looking
+to future case.
+
+32
+00:01:27,430 --> 00:01:30,170
+Remember, we're talking
+about the future,
+
+33
+00:01:30,170 --> 00:01:32,714
+so every opinion is valid.
+
+34
+00:01:32,714 --> 00:01:33,380
+[LIGHT LAUGHTER]
+
+35
+00:01:33,380 --> 00:01:35,600
+Well, nearly every opinion.
+
+36
+00:01:35,600 --> 00:01:39,220
+
+37
+00:01:39,220 --> 00:01:43,110
+I'm trying hard to let go of
+that reference to being older
+
+38
+00:01:43,110 --> 00:01:44,230
+than Meg.
+
+39
+00:01:44,230 --> 00:01:46,720
+What do you think?
+
+40
+00:01:46,720 --> 00:01:48,623
+SCOTT JENSON: Actually,
+is Gareth here?
+
+41
+00:01:48,623 --> 00:01:50,839
+Is he still here, the
+guy who said that?
+
+42
+00:01:50,839 --> 00:01:51,880
+AUDIENCE: No, he ran off.
+
+43
+00:01:51,880 --> 00:01:52,921
+SCOTT JENSON: He ran off.
+
+44
+00:01:52,921 --> 00:01:55,350
+Well, collectively,
+everyone here that's over 37
+
+45
+00:01:55,350 --> 00:01:57,258
+would wish to say,
+just fuck you.
+
+46
+00:01:57,258 --> 00:02:03,110
+[LAUGHTER AND APPLAUSE]
+
+47
+00:02:03,110 --> 00:02:05,524
+MALE SPEAKER: Just to
+verify my own antiquity,
+
+48
+00:02:05,524 --> 00:02:07,190
+I want to make sure
+that you understand.
+
+49
+00:02:07,190 --> 00:02:11,400
+My first build system
+was, in fact, a shoe box,
+
+50
+00:02:11,400 --> 00:02:14,636
+which helped me to keep
+the punched cards in order.
+
+51
+00:02:14,636 --> 00:02:20,047
+[LAUGHTER]
+
+52
+00:02:20,047 --> 00:02:22,630
+The other thing I want to say
+in this rather lengthy preamble,
+
+53
+00:02:22,630 --> 00:02:25,420
+before I introduce
+you to Jeni, is
+
+54
+00:02:25,420 --> 00:02:27,730
+that you've heard
+people say, when they've
+
+55
+00:02:27,730 --> 00:02:29,230
+been asked to ask
+their questions,
+
+56
+00:02:29,230 --> 00:02:32,120
+oh, this isn't what I wrote.
+
+57
+00:02:32,120 --> 00:02:34,670
+I'm expecting that quite a few
+people who I call on will say,
+
+58
+00:02:34,670 --> 00:02:37,590
+I have no idea what
+this even means.
+
+59
+00:02:37,590 --> 00:02:41,120
+It bears no relation whatsoever
+to what I wrote down.
+
+60
+00:02:41,120 --> 00:02:43,980
+Now this is not &mdash;
+we did actually
+
+61
+00:02:43,980 --> 00:02:45,595
+try to keep it
+thematically coherent,
+
+62
+00:02:45,595 --> 00:02:47,670
+so the people who are
+asking the questions
+
+63
+00:02:47,670 --> 00:02:51,029
+may have some words in
+there &mdash; Dan's nodding there.
+
+64
+00:02:51,029 --> 00:02:52,820
+There are some words
+in your question, Dan,
+
+65
+00:02:52,820 --> 00:02:54,852
+that you did originally write.
+
+66
+00:02:54,852 --> 00:02:56,800
+[LAUGHTER]
+
+67
+00:02:56,800 --> 00:03:00,270
+Not next to each other,
+and not in the same order.
+
+68
+00:03:00,270 --> 00:03:03,960
+Right, so Jeni, Jeni, can you
+please tell us, when next?
+
+69
+00:03:03,960 --> 00:03:05,930
+JENI TENNISON: OK.
+
+70
+00:03:05,930 --> 00:03:07,730
+So can I have my
+slides up, please?
+
+71
+00:03:07,730 --> 00:03:14,525
+
+72
+00:03:14,525 --> 00:03:17,140
+This, no, maybe
+it's not plugged in.
+
+73
+00:03:17,140 --> 00:03:25,240
+
+74
+00:03:25,240 --> 00:03:26,240
+It's on the screen here.
+
+75
+00:03:26,240 --> 00:03:27,656
+It's just not on
+the screen there.
+
+76
+00:03:27,656 --> 00:03:29,854
+
+77
+00:03:29,854 --> 00:03:31,270
+MALE SPEAKER: Oh,
+do you need to &mdash;
+
+78
+00:03:31,270 --> 00:03:32,700
+JENI TENNISON: Maybe
+this is not plugged in?
+
+79
+00:03:32,700 --> 00:03:34,533
+MALE SPEAKER: Ah, yeah,
+it's not plugged in.
+
+80
+00:03:34,533 --> 00:03:49,580
+
+81
+00:03:49,580 --> 00:03:50,080
+[INAUDIBLE]
+
+82
+00:03:50,080 --> 00:04:14,160
+
+83
+00:04:14,160 --> 00:04:16,899
+JENI TENNISON:
+Thank you, Derrick.
+
+84
+00:04:16,899 --> 00:04:19,230
+Great, sorry for
+that slight delay.
+
+85
+00:04:19,230 --> 00:04:21,680
+Right, so the
+topic of future web
+
+86
+00:04:21,680 --> 00:04:26,090
+is a rather broad one &mdash;
+the future being very much
+
+87
+00:04:26,090 --> 00:04:28,310
+longer than the past.
+
+88
+00:04:28,310 --> 00:04:29,832
+Hopefully.
+
+89
+00:04:29,832 --> 00:04:33,770
+[LAUGHTER] Oh god,
+what have I done there?
+
+90
+00:04:33,770 --> 00:04:36,840
+Touch wood, right.
+
+91
+00:04:36,840 --> 00:04:39,110
+So thinking about the
+future web &mdash; obviously,
+
+92
+00:04:39,110 --> 00:04:42,210
+the first person to ask
+about where the web might go
+
+93
+00:04:42,210 --> 00:04:48,584
+would be &mdash; Chrome, come on.
+
+94
+00:04:48,584 --> 00:04:51,160
+[INAUDIBLE] This is not good.
+
+95
+00:04:51,160 --> 00:04:51,840
+OK.
+
+96
+00:04:51,840 --> 00:04:53,190
+[INAUDIBLE]
+
+97
+00:04:53,190 --> 00:04:55,750
+JENI TENNISON: I think
+I might need to use it.
+
+98
+00:04:55,750 --> 00:05:00,150
+This is using
+reveal.js, by the way.
+
+99
+00:05:00,150 --> 00:05:01,684
+Thank you.
+
+100
+00:05:01,684 --> 00:05:04,199
+AUDIENCE: [INAUDIBLE] We
+need the future faster.
+
+101
+00:05:04,199 --> 00:05:06,490
+JENI TENNISON (LAUGHING): We
+do need the future faster.
+
+102
+00:05:06,490 --> 00:05:07,880
+Sorry about this.
+
+103
+00:05:07,880 --> 00:05:10,735
+Derrick, [? use ?] alternative.
+
+104
+00:05:10,735 --> 00:05:13,175
+Ay yai yai.
+
+105
+00:05:13,175 --> 00:05:15,338
+DERRICK: What did you
+do to my computer?
+
+106
+00:05:15,338 --> 00:05:21,682
+JENI TENNISON:
+[GROANS HELPLESSLY] [LAUGHS]
+
+107
+00:05:21,682 --> 00:05:25,098
+[SCATTERED APPLAUSE]
+
+108
+00:05:25,098 --> 00:05:26,074
+Thank you.
+
+109
+00:05:26,074 --> 00:05:32,450
+
+110
+00:05:32,450 --> 00:05:35,000
+We are living in the future.
+
+111
+00:05:35,000 --> 00:05:36,832
+AUDIENCE: [INAUDIBLE]
+
+112
+00:05:36,832 --> 00:05:39,020
+[LAUGHTER]
+
+113
+00:05:39,020 --> 00:05:42,916
+JENI TENNISON: Excellent,
+that looks much better.
+
+114
+00:05:42,916 --> 00:05:44,440
+DERRICK: Do you wanna try?
+
+115
+00:05:44,440 --> 00:05:48,784
+Oh, it's not up on
+the screen, now.
+
+116
+00:05:48,784 --> 00:05:49,337
+Here we go.
+
+117
+00:05:49,337 --> 00:05:50,420
+JENI TENNISON: Okey-dokey.
+
+118
+00:05:50,420 --> 00:05:51,126
+Right.
+
+119
+00:05:51,126 --> 00:05:52,810
+Yeah, it looks better.
+
+120
+00:05:52,810 --> 00:05:54,760
+Right, thank you.
+
+121
+00:05:54,760 --> 00:05:56,050
+So let's ask TimBL, now.
+
+122
+00:05:56,050 --> 00:05:58,320
+Of course, thinking
+about asking TimBL
+
+123
+00:05:58,320 --> 00:06:00,220
+what the future of the
+web holds &mdash; of course,
+
+124
+00:06:00,220 --> 00:06:03,950
+he did his Ask Me
+Anything on Reddit,
+
+125
+00:06:03,950 --> 00:06:06,410
+where he asked what
+was one of the things
+
+126
+00:06:06,410 --> 00:06:08,510
+that you never anticipated
+about the internet,
+
+127
+00:06:08,510 --> 00:06:11,310
+and famously replied, kittens!
+
+128
+00:06:11,310 --> 00:06:13,134
+So, in terms of
+predicting what's
+
+129
+00:06:13,134 --> 00:06:14,550
+going to happen
+in the future web,
+
+130
+00:06:14,550 --> 00:06:16,340
+I can predict that
+there will still
+
+131
+00:06:16,340 --> 00:06:20,560
+be kittens on the
+web &mdash; and pussies, too.
+
+132
+00:06:20,560 --> 00:06:22,060
+[GRADUALLY MOUNTING LAUGHTER]
+
+133
+00:06:22,060 --> 00:06:29,230
+But &mdash; I want to focus on
+three themes, three trends,
+
+134
+00:06:29,230 --> 00:06:34,190
+that I think are going to be
+important as we go forward
+
+135
+00:06:34,190 --> 00:06:38,410
+as web developers, and look
+at those in terms of what that
+
+136
+00:06:38,410 --> 00:06:42,810
+means for us when we're
+developing web applications.
+
+137
+00:06:42,810 --> 00:06:44,860
+Those three themes
+are going to be
+
+138
+00:06:44,860 --> 00:06:50,460
+more sensitivity around our
+personal information, more data
+
+139
+00:06:50,460 --> 00:06:54,220
+being available, and as we've
+touched on many times today,
+
+140
+00:06:54,220 --> 00:06:56,480
+more devices.
+
+141
+00:06:56,480 --> 00:07:00,500
+So, more sensitivity,
+first of all.
+
+142
+00:07:00,500 --> 00:07:01,080
+Ed Snowden.
+
+143
+00:07:01,080 --> 00:07:05,020
+
+144
+00:07:05,020 --> 00:07:06,960
+One of the things that
+has happened recently
+
+145
+00:07:06,960 --> 00:07:09,610
+that has changed the way in
+which we think about the web is
+
+146
+00:07:09,610 --> 00:07:13,110
+the revelations
+around the Ed Snowden
+
+147
+00:07:13,110 --> 00:07:15,350
+came about what the
+NSA is looking at,
+
+148
+00:07:15,350 --> 00:07:17,450
+what GCHQ is looking at.
+
+149
+00:07:17,450 --> 00:07:20,935
+And I found this on
+Wikipedia, fantastic
+
+150
+00:07:20,935 --> 00:07:24,500
+little diagram &mdash; SSL
+added and removed here.
+
+151
+00:07:24,500 --> 00:07:26,250
+This is the stuff
+that we can get into,
+
+152
+00:07:26,250 --> 00:07:30,350
+guys, at the back end of Google,
+where there's no encryption
+
+153
+00:07:30,350 --> 00:07:34,190
+and we have free reign.
+
+154
+00:07:34,190 --> 00:07:36,890
+What does this mean
+in terms of how
+
+155
+00:07:36,890 --> 00:07:40,220
+we design our systems,
+our web applications?
+
+156
+00:07:40,220 --> 00:07:44,140
+What does it mean in terms
+of these revelations,
+
+157
+00:07:44,140 --> 00:07:47,580
+this thinking about where our
+private information is going?
+
+158
+00:07:47,580 --> 00:07:49,610
+What does that mean for us?
+
+159
+00:07:49,610 --> 00:07:53,910
+Well, there's loads of policy
+implications, loads of things
+
+160
+00:07:53,910 --> 00:07:56,870
+that we can think of at a
+legislative level, or a policy
+
+161
+00:07:56,870 --> 00:07:57,590
+level.
+
+162
+00:07:57,590 --> 00:07:59,880
+But there are also
+some technical ones.
+
+163
+00:07:59,880 --> 00:08:02,760
+
+164
+00:08:02,760 --> 00:08:06,260
+I'm on the technical
+architecture group at the W3C,
+
+165
+00:08:06,260 --> 00:08:09,000
+and one of the things that
+has come up several times
+
+166
+00:08:09,000 --> 00:08:12,590
+without any kind of resolution
+or in-depth thinking
+
+167
+00:08:12,590 --> 00:08:17,090
+is what we do around
+permissions on the web.
+
+168
+00:08:17,090 --> 00:08:20,370
+How do we balance the need for
+you to know that you are being
+
+169
+00:08:20,370 --> 00:08:24,690
+looked at through your
+video camera on your laptop,
+
+170
+00:08:24,690 --> 00:08:29,290
+with it not being so much
+in your face that you cannot
+
+171
+00:08:29,290 --> 00:08:32,070
+interact with whatever
+the application is?
+
+172
+00:08:32,070 --> 00:08:35,130
+How do we balance up
+the need to request,
+
+173
+00:08:35,130 --> 00:08:38,789
+on a case-by-case
+basis, information
+
+174
+00:08:38,789 --> 00:08:41,679
+about your location,
+with the irritation
+
+175
+00:08:41,679 --> 00:08:44,190
+of being requested on
+a case-by-case basis
+
+176
+00:08:44,190 --> 00:08:46,690
+about your location?
+
+177
+00:08:46,690 --> 00:08:48,730
+How do we get around
+these terrible kinds
+
+178
+00:08:48,730 --> 00:08:51,290
+of permission interfaces
+that everybody
+
+179
+00:08:51,290 --> 00:08:53,140
+just clicks through and ignores?
+
+180
+00:08:53,140 --> 00:08:55,290
+Everybody being
+everybody who doesn't
+
+181
+00:08:55,290 --> 00:08:59,600
+wear a tin foil hat, that is.
+
+182
+00:08:59,600 --> 00:09:01,950
+So that's one set of questions.
+
+183
+00:09:01,950 --> 00:09:03,380
+How do we handle
+those permissions
+
+184
+00:09:03,380 --> 00:09:05,530
+when we have lots of
+ways of tracking us?
+
+185
+00:09:05,530 --> 00:09:08,200
+Another area that
+I wanted to raise
+
+186
+00:09:08,200 --> 00:09:11,550
+was, how do we move away from
+these centralized services that
+
+187
+00:09:11,550 --> 00:09:17,370
+are so vulnerable to a single
+point of failure, if you like,
+
+188
+00:09:17,370 --> 00:09:21,320
+in our private data?
+
+189
+00:09:21,320 --> 00:09:24,290
+So I'm particularly interested
+in a couple of activities
+
+190
+00:09:24,290 --> 00:09:27,980
+that are going on around this &mdash;
+around unhosted web apps.
+
+191
+00:09:27,980 --> 00:09:30,850
+The idea of having a web
+application over here
+
+192
+00:09:30,850 --> 00:09:34,370
+that operates on data
+over here, and you
+
+193
+00:09:34,370 --> 00:09:37,170
+can control how your data
+gets accessed by that web app.
+
+194
+00:09:37,170 --> 00:09:40,540
+It doesn't actually hold
+all your data itself.
+
+195
+00:09:40,540 --> 00:09:42,920
+And also the work
+of Redecentralize,
+
+196
+00:09:42,920 --> 00:09:44,860
+which explores a
+lot of these issues,
+
+197
+00:09:44,860 --> 00:09:47,070
+and I've encouraged
+you to have a look at.
+
+198
+00:09:47,070 --> 00:09:50,000
+How do we get to a web that
+isn't as centralized as it
+
+199
+00:09:50,000 --> 00:09:52,920
+currently is, because
+of these sensitivities
+
+200
+00:09:52,920 --> 00:09:55,500
+that we have about
+our personal data
+
+201
+00:09:55,500 --> 00:09:57,310
+being collected in
+huge databases which
+
+202
+00:09:57,310 --> 00:09:59,620
+are vulnerable to attack?
+
+203
+00:09:59,620 --> 00:10:01,410
+So that was my first area.
+
+204
+00:10:01,410 --> 00:10:03,970
+Second area is about data.
+
+205
+00:10:03,970 --> 00:10:06,860
+Now, so far during
+the day, the focus
+
+206
+00:10:06,860 --> 00:10:12,350
+has really been on what happens
+within a browser context.
+
+207
+00:10:12,350 --> 00:10:15,580
+Where I work, at the Open Data
+Institute, all I hear about
+
+208
+00:10:15,580 --> 00:10:17,340
+is data.
+
+209
+00:10:17,340 --> 00:10:20,330
+All I hear about is
+smart cities and the data
+
+210
+00:10:20,330 --> 00:10:23,460
+that you can get from
+devices and sensors
+
+211
+00:10:23,460 --> 00:10:26,065
+within a road network
+in smart cities.
+
+212
+00:10:26,065 --> 00:10:29,870
+This is Smart City
+logo land, right?
+
+213
+00:10:29,870 --> 00:10:33,610
+We talk about home automation
+and the extra information
+
+214
+00:10:33,610 --> 00:10:37,420
+we can get about our homes'
+interactions with home systems,
+
+215
+00:10:37,420 --> 00:10:41,140
+sensors &mdash; more data coming
+in from our home systems.
+
+216
+00:10:41,140 --> 00:10:45,980
+We talk about quantified
+self &mdash; wearable computing that
+
+217
+00:10:45,980 --> 00:10:49,200
+monitors us constantly,
+that provides
+
+218
+00:10:49,200 --> 00:10:51,320
+streams and streams of data.
+
+219
+00:10:51,320 --> 00:10:53,585
+We talk about open
+data, naturally,
+
+220
+00:10:53,585 --> 00:10:56,200
+at the Open Data
+Institute, more government
+
+221
+00:10:56,200 --> 00:10:57,720
+data being made available.
+
+222
+00:10:57,720 --> 00:11:00,270
+Also, from companies,
+data being made available
+
+223
+00:11:00,270 --> 00:11:01,560
+that we can all use.
+
+224
+00:11:01,560 --> 00:11:04,530
+We talk about big
+data, massive amounts
+
+225
+00:11:04,530 --> 00:11:08,770
+of fast-moving, variable data.
+
+226
+00:11:08,770 --> 00:11:11,280
+I love the way that, in
+my search for big data &mdash;
+
+227
+00:11:11,280 --> 00:11:13,290
+see that McDonald's sign?
+
+228
+00:11:13,290 --> 00:11:13,790
+Why?
+
+229
+00:11:13,790 --> 00:11:14,940
+I don't know.
+
+230
+00:11:14,940 --> 00:11:16,510
+Anyway, data.
+
+231
+00:11:16,510 --> 00:11:19,610
+So, we talk about medical
+data, defense data, decadata,
+
+232
+00:11:19,610 --> 00:11:20,590
+whatever that is.
+
+233
+00:11:20,590 --> 00:11:23,830
+Morning data, noon data,
+afternoon data, and night data.
+
+234
+00:11:23,830 --> 00:11:25,190
+Everything is data.
+
+235
+00:11:25,190 --> 00:11:29,260
+So, what does this
+mean for the web, when
+
+236
+00:11:29,260 --> 00:11:33,820
+we have so much more
+data being passed around?
+
+237
+00:11:33,820 --> 00:11:36,990
+So much more streaming
+data, so much more big data.
+
+238
+00:11:36,990 --> 00:11:40,080
+HTTP, as a protocol, is not
+good for this kind of streaming.
+
+239
+00:11:40,080 --> 00:11:41,920
+It's not good for these
+kinds of big files.
+
+240
+00:11:41,920 --> 00:11:44,100
+So what other
+protocols are we using?
+
+241
+00:11:44,100 --> 00:11:47,330
+What other protocols do we need?
+
+242
+00:11:47,330 --> 00:11:52,221
+And how do we make them
+play nicely with the web?
+
+243
+00:11:52,221 --> 00:11:57,900
+How do we make them play well
+with HTML pages and HTTP?
+
+244
+00:11:57,900 --> 00:12:00,740
+The web was made
+for docu &mdash; ments.
+
+245
+00:12:00,740 --> 00:12:02,380
+[CHUCKLES]
+
+246
+00:12:02,380 --> 00:12:08,650
+So is JSON the pinnacle
+of data on the web?
+
+247
+00:12:08,650 --> 00:12:13,270
+Is Jason really all that we need
+for expressing data on the web?
+
+248
+00:12:13,270 --> 00:12:15,591
+I don't think so.
+
+249
+00:12:15,591 --> 00:12:17,090
+The other question
+I'd like to raise
+
+250
+00:12:17,090 --> 00:12:22,060
+is what does a native
+data browser look like?
+
+251
+00:12:22,060 --> 00:12:26,710
+What happens currently when you
+have data that's made available
+
+252
+00:12:26,710 --> 00:12:31,580
+on the web is that you have
+to create your own component,
+
+253
+00:12:31,580 --> 00:12:33,180
+your own kind of visualization.
+
+254
+00:12:33,180 --> 00:12:36,920
+We have things like this, which
+are data tables, JavaScript
+
+255
+00:12:36,920 --> 00:12:42,450
+plugin, that makes everything &mdash;
+that streams data in,
+
+256
+00:12:42,450 --> 00:12:45,250
+that makes it sortable,
+filterable, pageable,
+
+257
+00:12:45,250 --> 00:12:47,080
+and so on.
+
+258
+00:12:47,080 --> 00:12:52,910
+But what about moving to more
+integrated data and documents,
+
+259
+00:12:52,910 --> 00:12:55,640
+using the kinds of
+technologies within D3?
+
+260
+00:12:55,640 --> 00:12:58,140
+What does this mean
+for us on the web?
+
+261
+00:12:58,140 --> 00:12:59,549
+What kinds of components?
+
+262
+00:12:59,549 --> 00:13:01,090
+What kinds of web
+components could we
+
+263
+00:13:01,090 --> 00:13:04,545
+build that natively
+work with data?
+
+264
+00:13:04,545 --> 00:13:06,170
+Those are the kinds
+of questions that I
+
+265
+00:13:06,170 --> 00:13:09,160
+think are interesting
+for the future.
+
+266
+00:13:09,160 --> 00:13:11,820
+Third area &mdash; more devices.
+
+267
+00:13:11,820 --> 00:13:15,800
+This is the area that we've
+touched on loads today.
+
+268
+00:13:15,800 --> 00:13:23,260
+So we have a browser that's
+stopped working again.
+
+269
+00:13:23,260 --> 00:13:25,210
+Come on.
+
+270
+00:13:25,210 --> 00:13:27,740
+More devices.
+
+271
+00:13:27,740 --> 00:13:28,600
+Give me it.
+
+272
+00:13:28,600 --> 00:13:30,561
+Come on.
+
+273
+00:13:30,561 --> 00:13:33,046
+[INAUDIBLE]
+
+274
+00:13:33,046 --> 00:13:35,528
+[LAUGHTER]
+
+275
+00:13:35,528 --> 00:13:36,028
+[INAUDIBLE]
+
+276
+00:13:36,028 --> 00:13:39,520
+
+277
+00:13:39,520 --> 00:13:43,640
+JENI TENNISON: OK, so we have
+more devices that don't work.
+
+278
+00:13:43,640 --> 00:13:45,525
+Oh, that is completely
+interaction.
+
+279
+00:13:45,525 --> 00:13:48,340
+
+280
+00:13:48,340 --> 00:13:51,340
+[INAUDIBLE]
+
+281
+00:13:51,340 --> 00:13:54,340
+[LAUGHTER]
+
+282
+00:13:54,340 --> 00:14:13,819
+
+283
+00:14:13,819 --> 00:14:15,610
+DERRICK: Do you know
+what number it was at?
+
+284
+00:14:15,610 --> 00:14:16,295
+JENI TENNISON: Yeah, it's fine.
+
+285
+00:14:16,295 --> 00:14:16,795
+It's fine.
+
+286
+00:14:16,795 --> 00:14:18,860
+I know how to get to it quickly.
+
+287
+00:14:18,860 --> 00:14:20,170
+OK.
+
+288
+00:14:20,170 --> 00:14:21,772
+More devices.
+
+289
+00:14:21,772 --> 00:14:22,272
+Hey!
+
+290
+00:14:22,272 --> 00:14:24,250
+[APPLAUSE]
+
+291
+00:14:24,250 --> 00:14:24,750
+All right!
+
+292
+00:14:24,750 --> 00:14:27,720
+
+293
+00:14:27,720 --> 00:14:36,250
+Phones, tablets &mdash; yes, that's a
+Windows tablet &mdash; TVs, watches,
+
+294
+00:14:36,250 --> 00:14:39,095
+fridges, cars.
+
+295
+00:14:39,095 --> 00:14:41,770
+
+296
+00:14:41,770 --> 00:14:45,020
+And all of these devices have
+differences in their size,
+
+297
+00:14:45,020 --> 00:14:47,930
+in their resolution,
+in their connectivity,
+
+298
+00:14:47,930 --> 00:14:52,240
+in their processing power, in
+their modes of interaction &mdash;
+
+299
+00:14:52,240 --> 00:14:56,310
+as we've already talked about &mdash;
+and in their context of use.
+
+300
+00:14:56,310 --> 00:15:02,550
+Huge variety, massive variety,
+of ways in which we as humans
+
+301
+00:15:02,550 --> 00:15:04,090
+will interact with the web.
+
+302
+00:15:04,090 --> 00:15:07,652
+
+303
+00:15:07,652 --> 00:15:09,860
+And of course that means
+that we need this responsive
+
+304
+00:15:09,860 --> 00:15:11,500
+design plus plus, right?
+
+305
+00:15:11,500 --> 00:15:13,920
+Not only responsive
+layout, but responsive
+
+306
+00:15:13,920 --> 00:15:18,660
+images, responsive
+interactions, changing
+
+307
+00:15:18,660 --> 00:15:20,270
+based on the
+devices that we use.
+
+308
+00:15:20,270 --> 00:15:22,310
+Responsive storage &mdash;
+different ways
+
+309
+00:15:22,310 --> 00:15:24,510
+of storing the
+information, and knowing
+
+310
+00:15:24,510 --> 00:15:28,360
+whether you're going to go on
+and offline intermittently,
+
+311
+00:15:28,360 --> 00:15:31,650
+or whether you're going to have
+a constant internet connection,
+
+312
+00:15:31,650 --> 00:15:33,520
+for example, will
+change the way in which
+
+313
+00:15:33,520 --> 00:15:35,485
+we design our web applications.
+
+314
+00:15:35,485 --> 00:15:39,280
+
+315
+00:15:39,280 --> 00:15:42,790
+Right, and a final thought.
+
+316
+00:15:42,790 --> 00:15:47,950
+We're currently dominated by
+four particular web browsers,
+
+317
+00:15:47,950 --> 00:15:50,545
+and fewer rendering engines.
+
+318
+00:15:50,545 --> 00:15:53,125
+
+319
+00:15:53,125 --> 00:15:53,880
+[INAUDIBLE]
+
+320
+00:15:53,880 --> 00:15:54,880
+JENI TENNISON: Well, OK.
+
+321
+00:15:54,880 --> 00:15:57,592
+[LAUGHTER]
+
+322
+00:15:57,592 --> 00:15:59,910
+And perhaps we should be
+dominated by one more,
+
+323
+00:15:59,910 --> 00:16:00,840
+yeah all right.
+
+324
+00:16:00,840 --> 00:16:02,025
+AUDIENCE: [INAUDIBLE] Blink.
+
+325
+00:16:02,025 --> 00:16:02,950
+JENI TENNISON:
+[LAUGHS] It is Blink.
+
+326
+00:16:02,950 --> 00:16:05,050
+It's the same &mdash; same
+rendering engine.
+
+327
+00:16:05,050 --> 00:16:09,910
+So, my closing question
+would be are we agile enough?
+
+328
+00:16:09,910 --> 00:16:10,620
+Right?
+
+329
+00:16:10,620 --> 00:16:12,990
+Have we got enough
+small pieces loosely
+
+330
+00:16:12,990 --> 00:16:18,060
+joined to enable us to adjust
+to the changing future?
+
+331
+00:16:18,060 --> 00:16:20,480
+Can the web that we
+know be disrupted
+
+332
+00:16:20,480 --> 00:16:22,580
+by the next best
+thing, or have we
+
+333
+00:16:22,580 --> 00:16:29,620
+built something that is
+too big to be taken down?
+
+334
+00:16:29,620 --> 00:16:30,988
+Thank you.
+
+335
+00:16:30,988 --> 00:16:33,832
+[APPLAUSE]
+
+336
+00:16:33,832 --> 00:16:36,794
+
+337
+00:16:36,794 --> 00:16:38,460
+MALE SPEAKER: Thank
+you very much, Jeni.
+
+338
+00:16:38,460 --> 00:16:42,280
+I anticipate a future in which
+Jeni will give her presentation
+
+339
+00:16:42,280 --> 00:16:45,784
+using web technology with fewer
+than three different browsers.
+
+340
+00:16:45,784 --> 00:16:47,095
+[LAUGHTER]
+
+341
+00:16:47,095 --> 00:16:51,160
+But I don't expect
+it will come soon.
+
+342
+00:16:51,160 --> 00:16:53,240
+Right.
+
+343
+00:16:53,240 --> 00:16:55,150
+Jeni, thank you, that was great.
+
+344
+00:16:55,150 --> 00:16:56,910
+And hopefully we can
+follow up on some
+
+345
+00:16:56,910 --> 00:16:58,980
+of your themes through
+some of the questions
+
+346
+00:16:58,980 --> 00:17:01,700
+that we have put
+through the wringer.
+
+347
+00:17:01,700 --> 00:17:04,310
+For the final time today,
+at least in this role,
+
+348
+00:17:04,310 --> 00:17:07,569
+I'm going to call
+on Andrew Betts &mdash;
+
+349
+00:17:07,569 --> 00:17:10,847
+this time to read a question
+that he had nothing to do with.
+
+350
+00:17:10,847 --> 00:17:12,680
+ANDREW BETTS: That it's
+very true, actually.
+
+351
+00:17:12,680 --> 00:17:15,260
+And I have no more
+questions, I promise you.
+
+352
+00:17:15,260 --> 00:17:18,380
+What is the role of the web
+in the world of wearables
+
+353
+00:17:18,380 --> 00:17:20,686
+with no screen?
+
+354
+00:17:20,686 --> 00:17:22,060
+MALE SPEAKER: OK,
+so the question
+
+355
+00:17:22,060 --> 00:17:24,790
+is what is the role of the
+web in a world with wearables
+
+356
+00:17:24,790 --> 00:17:25,430
+but no screen?
+
+357
+00:17:25,430 --> 00:17:28,450
+This is a reference to the
+fact that the web is primarily
+
+358
+00:17:28,450 --> 00:17:31,580
+a visual thing &mdash; in
+its output, at least.
+
+359
+00:17:31,580 --> 00:17:33,800
+We've talked about
+different input modalities.
+
+360
+00:17:33,800 --> 00:17:35,425
+What about different
+output modalities?
+
+361
+00:17:35,425 --> 00:17:37,301
+Jeni, do you want to
+kick us off on this one?
+
+362
+00:17:37,301 --> 00:17:39,341
+JENI TENNISON: [BREATHES DEEPLY]
+Just recovering.
+
+363
+00:17:39,341 --> 00:17:40,666
+MALE SPEAKER: Oh, I'm sorry.
+
+364
+00:17:40,666 --> 00:17:41,624
+JENI TENNISON: It's OK.
+
+365
+00:17:41,624 --> 00:17:43,910
+MALE SPEAKER: Jeni, calm down.
+
+366
+00:17:43,910 --> 00:17:48,770
+JENI TENNISON: So,
+it's one of my bugbears
+
+367
+00:17:48,770 --> 00:17:52,970
+that we focus on browsers.
+
+368
+00:17:52,970 --> 00:17:56,260
+We focus on screens,
+and we don't
+
+369
+00:17:56,260 --> 00:18:02,110
+think about the other ways
+in which all sorts of agents
+
+370
+00:18:02,110 --> 00:18:04,420
+might interact on the web.
+
+371
+00:18:04,420 --> 00:18:07,930
+And I think wearables is just
+one kind of example of this,
+
+372
+00:18:07,930 --> 00:18:09,790
+but there are lots of
+other kinds of agents
+
+373
+00:18:09,790 --> 00:18:11,940
+that we need to
+be thinking about,
+
+374
+00:18:11,940 --> 00:18:14,620
+and understand that they
+live on the web, too.
+
+375
+00:18:14,620 --> 00:18:17,115
+And they consume
+web content, too.
+
+376
+00:18:17,115 --> 00:18:22,740
+
+377
+00:18:22,740 --> 00:18:27,010
+And so, wearables &mdash; you've got
+a difference in input modality,
+
+378
+00:18:27,010 --> 00:18:30,030
+but you've also got a difference
+in output modality, which
+
+379
+00:18:30,030 --> 00:18:36,050
+I think changes the way in which
+we need to think about how we
+
+380
+00:18:36,050 --> 00:18:38,650
+design our pages in the
+same way as we talked
+
+381
+00:18:38,650 --> 00:18:41,930
+about accessibility issues
+in the last session.
+
+382
+00:18:41,930 --> 00:18:43,290
+Sorry that wasn't very &mdash;
+
+383
+00:18:43,290 --> 00:18:43,970
+MALE SPEAKER: No,
+that was great.
+
+384
+00:18:43,970 --> 00:18:44,580
+Thank you.
+
+385
+00:18:44,580 --> 00:18:46,517
+Alice, I know that
+you've done a lot of work
+
+386
+00:18:46,517 --> 00:18:47,850
+on the internet of things, yeah?
+
+387
+00:18:47,850 --> 00:18:48,350
+ALICE: Yeah.
+
+388
+00:18:48,350 --> 00:18:50,700
+MALE SPEAKER: How does this
+strike you in that context?
+
+389
+00:18:50,700 --> 00:18:54,610
+ALICE: Well, I think
+the web is going
+
+390
+00:18:54,610 --> 00:18:57,670
+to continue in the
+way it currently
+
+391
+00:18:57,670 --> 00:19:01,570
+does in a world without
+screens, because, as Jeni said,
+
+392
+00:19:01,570 --> 00:19:04,120
+there are already plenty of
+things that don't have screens.
+
+393
+00:19:04,120 --> 00:19:06,490
+And there'll be new things
+that don't have screens,
+
+394
+00:19:06,490 --> 00:19:10,270
+and some of those will be
+objects that we currently
+
+395
+00:19:10,270 --> 00:19:14,310
+understand &mdash; like watches &mdash; that
+have a sort additional &mdash; have
+
+396
+00:19:14,310 --> 00:19:17,190
+been elevated by having
+the web put into them.
+
+397
+00:19:17,190 --> 00:19:19,900
+But then, there might be
+some completely new invented
+
+398
+00:19:19,900 --> 00:19:23,230
+things &mdash; a middle ground
+that you would never
+
+399
+00:19:23,230 --> 00:19:24,680
+have thought about
+before you were
+
+400
+00:19:24,680 --> 00:19:28,090
+able to put the web into stuff.
+
+401
+00:19:28,090 --> 00:19:31,950
+And there are &mdash; I
+used work for Berg,
+
+402
+00:19:31,950 --> 00:19:35,262
+and so we made Little
+Printer, and we made a mistake
+
+403
+00:19:35,262 --> 00:19:37,220
+by calling it Little
+Printer, because it's not.
+
+404
+00:19:37,220 --> 00:19:38,770
+Well, it is a printer,
+but that's not
+
+405
+00:19:38,770 --> 00:19:42,760
+it's primary function, and
+you would never really want
+
+406
+00:19:42,760 --> 00:19:44,827
+Little Printer
+without the internet.
+
+407
+00:19:44,827 --> 00:19:46,660
+And in that way, it's
+sort of a new product,
+
+408
+00:19:46,660 --> 00:19:50,210
+rather than an internet
+fridge or something like that.
+
+409
+00:19:50,210 --> 00:19:51,960
+But Little Printer
+doesn't have a screen,
+
+410
+00:19:51,960 --> 00:19:54,150
+unless you count
+the receipts paper
+
+411
+00:19:54,150 --> 00:20:01,100
+that it prints on as a
+screen, which we mischievously
+
+412
+00:20:01,100 --> 00:20:03,154
+say it is sometimes.
+
+413
+00:20:03,154 --> 00:20:04,570
+MALE SPEAKER: Thanks for that.
+
+414
+00:20:04,570 --> 00:20:05,420
+Go ahead, Scott.
+
+415
+00:20:05,420 --> 00:20:06,113
+SCOTT JENSON: If I
+could just poke fun
+
+416
+00:20:06,113 --> 00:20:07,530
+at the community a
+little bit, though.
+
+417
+00:20:07,530 --> 00:20:10,130
+Because right now, I don't think
+that the web community even
+
+418
+00:20:10,130 --> 00:20:12,379
+could get its head wrapped
+around the web on a watch &mdash;
+
+419
+00:20:12,379 --> 00:20:15,750
+let alone a web not
+on a screen at all.
+
+420
+00:20:15,750 --> 00:20:17,920
+I think the web has never
+recovered from the fact
+
+421
+00:20:17,920 --> 00:20:21,620
+that screens started
+getting smaller.
+
+422
+00:20:21,620 --> 00:20:24,110
+They continually got bigger,
+and basically just &mdash; maybe
+
+423
+00:20:24,110 --> 00:20:25,810
+they just didn't
+worry about things.
+
+424
+00:20:25,810 --> 00:20:27,310
+And then when it
+reversed direction,
+
+425
+00:20:27,310 --> 00:20:29,070
+we collectively lost our minds.
+
+426
+00:20:29,070 --> 00:20:31,300
+And we still haven't
+recovered from that.
+
+427
+00:20:31,300 --> 00:20:33,600
+And so this idea that
+we have to have one size
+
+428
+00:20:33,600 --> 00:20:35,450
+fits all works great,
+as long as you're
+
+429
+00:20:35,450 --> 00:20:37,970
+willing to scroll
+everything 20 pages.
+
+430
+00:20:37,970 --> 00:20:40,390
+But if you want to have &mdash;
+I hate to get into the web
+
+431
+00:20:40,390 --> 00:20:42,425
+app versus web page thing,
+because it's a waste of &mdash; you
+
+432
+00:20:42,425 --> 00:20:42,530
+know.
+
+433
+00:20:42,530 --> 00:20:44,120
+But the fact is
+that we are trying
+
+434
+00:20:44,120 --> 00:20:45,890
+to make things that
+are more interactive,
+
+435
+00:20:45,890 --> 00:20:48,999
+and the web has not got its head
+wrapped around that quite yet.
+
+436
+00:20:48,999 --> 00:20:51,040
+And so I do think we have
+a lot of soul-searching
+
+437
+00:20:51,040 --> 00:20:52,540
+to do to figure out
+what interaction
+
+438
+00:20:52,540 --> 00:20:54,470
+means on multiple devices.
+
+439
+00:20:54,470 --> 00:20:57,650
+MALE SPEAKER: OK, and so to
+summarize some of the points
+
+440
+00:20:57,650 --> 00:20:59,445
+here, what we're saying
+is, we haven't even
+
+441
+00:20:59,445 --> 00:21:00,820
+got to grips with
+what we've got.
+
+442
+00:21:00,820 --> 00:21:02,780
+But I would come
+back and say, hey,
+
+443
+00:21:02,780 --> 00:21:05,360
+but you haven't
+seen anything yet.
+
+444
+00:21:05,360 --> 00:21:07,440
+So we'd better hurry up
+and make up our minds
+
+445
+00:21:07,440 --> 00:21:08,600
+about what we're gonna do.
+
+446
+00:21:08,600 --> 00:21:10,550
+I can see Remy on the queue.
+
+447
+00:21:10,550 --> 00:21:12,229
+Let me take Remy and
+come back to you.
+
+448
+00:21:12,229 --> 00:21:18,935
+
+449
+00:21:18,935 --> 00:21:20,851
+REMY: Yes, this
+is kind of linked
+
+450
+00:21:20,851 --> 00:21:23,100
+to the question I
+had before, but you
+
+451
+00:21:23,100 --> 00:21:25,710
+mentioned how to [INAUDIBLE].
+
+452
+00:21:25,710 --> 00:21:31,700
+I don't get how my
+phone is of the web.
+
+453
+00:21:31,700 --> 00:21:35,680
+It could &mdash; it can, I
+think, talk over TCP IP,
+
+454
+00:21:35,680 --> 00:21:40,620
+and it can talk to a web server,
+but in a proprietary format.
+
+455
+00:21:40,620 --> 00:21:44,180
+There's no webiness
+that I can see there.
+
+456
+00:21:44,180 --> 00:21:46,200
+There's no way of
+me getting into it.
+
+457
+00:21:46,200 --> 00:21:47,120
+MALE SPEAKER: Right, I'm
+going to cut you off there,
+
+458
+00:21:47,120 --> 00:21:49,536
+because we're going to come
+back to this as a topic later.
+
+459
+00:21:49,536 --> 00:21:50,905
+So I'll let you back in there.
+
+460
+00:21:50,905 --> 00:21:51,610
+[INAUDIBLE]
+
+461
+00:21:51,610 --> 00:21:53,610
+MALE SPEAKER: Fascinating
+though your point was,
+
+462
+00:21:53,610 --> 00:21:54,980
+we will be coming back to it.
+
+463
+00:21:54,980 --> 00:21:57,050
+Does it qualify as
+a web device is not
+
+464
+00:21:57,050 --> 00:21:59,260
+a purely syntactic
+argument, I don't think.
+
+465
+00:21:59,260 --> 00:22:00,130
+Tom?
+
+466
+00:22:00,130 --> 00:22:02,160
+TOM ASHWORTH: I think
+we, as a web community,
+
+467
+00:22:02,160 --> 00:22:04,710
+have good things to
+say to the people who
+
+468
+00:22:04,710 --> 00:22:06,560
+are building these
+wearable devices.
+
+469
+00:22:06,560 --> 00:22:10,810
+We may not be able to put
+our technology stuck on them.
+
+470
+00:22:10,810 --> 00:22:13,030
+So, you know, you're not
+going to find a headless web
+
+471
+00:22:13,030 --> 00:22:14,700
+browser running on
+a Fitbit, but we
+
+472
+00:22:14,700 --> 00:22:18,190
+can say if you make
+URLable resources
+
+473
+00:22:18,190 --> 00:22:20,694
+available and connected
+to each other,
+
+474
+00:22:20,694 --> 00:22:21,860
+we know that's a good thing.
+
+475
+00:22:21,860 --> 00:22:23,720
+We can point out
+to the people who
+
+476
+00:22:23,720 --> 00:22:25,760
+are building these
+things that that
+
+477
+00:22:25,760 --> 00:22:28,630
+has some really
+positive benefits.
+
+478
+00:22:28,630 --> 00:22:31,850
+And if we give things URLs
+and we make them addressable
+
+479
+00:22:31,850 --> 00:22:37,890
+and we make them accessible,
+even if it's JSON and not HTML,
+
+480
+00:22:37,890 --> 00:22:39,432
+but we use the
+principles of the web,
+
+481
+00:22:39,432 --> 00:22:40,848
+and to some extent,
+the internet &mdash;
+
+482
+00:22:40,848 --> 00:22:43,180
+then I think we can have
+a really positive impact,
+
+483
+00:22:43,180 --> 00:22:45,855
+as the web community,
+on whatever comes
+
+484
+00:22:45,855 --> 00:22:48,480
+over the next few years in terms
+of wearable devices and things
+
+485
+00:22:48,480 --> 00:22:51,074
+that don't have screens.
+
+486
+00:22:51,074 --> 00:22:52,490
+MALE SPEAKER: OK, Andrew.
+
+487
+00:22:52,490 --> 00:22:56,850
+ANDREW SPOONER: Yeah, I
+think inherent to the web
+
+488
+00:22:56,850 --> 00:22:58,017
+is the presentation format.
+
+489
+00:22:58,017 --> 00:22:59,850
+That presentation that
+says think of the web
+
+490
+00:22:59,850 --> 00:23:02,410
+without a screen I think
+is a little bit weird.
+
+491
+00:23:02,410 --> 00:23:04,604
+JENI TENNISON: Completely
+disagree, but carry on.
+
+492
+00:23:04,604 --> 00:23:05,770
+ANDREW SPOONER: That's good.
+
+493
+00:23:05,770 --> 00:23:06,845
+[LAUGHTER]
+
+494
+00:23:06,845 --> 00:23:08,470
+MALE SPEAKER: You
+yourself were talking
+
+495
+00:23:08,470 --> 00:23:10,650
+about music and
+notation and so on.
+
+496
+00:23:10,650 --> 00:23:14,010
+What's wrong with
+a web of music.
+
+497
+00:23:14,010 --> 00:23:16,037
+Nothing's wrong
+with a web of music,
+
+498
+00:23:16,037 --> 00:23:17,870
+but I think where we've
+got all of this data
+
+499
+00:23:17,870 --> 00:23:19,860
+in a particular format
+that we can access,
+
+500
+00:23:19,860 --> 00:23:23,590
+and we can use web languages
+in order to talk to data
+
+501
+00:23:23,590 --> 00:23:25,750
+and in order to talk to
+devices, but I don't see it
+
+502
+00:23:25,750 --> 00:23:27,466
+as the web on those devices.
+
+503
+00:23:27,466 --> 00:23:28,890
+MALE SPEAKER: Jeni, go on.
+
+504
+00:23:28,890 --> 00:23:31,030
+JENI TENNISON: So,
+the reason I disagree
+
+505
+00:23:31,030 --> 00:23:36,800
+is that for me, the main
+definition of the web
+
+506
+00:23:36,800 --> 00:23:38,990
+is use of HTTP.
+
+507
+00:23:38,990 --> 00:23:41,270
+It isn't the use of HTML.
+
+508
+00:23:41,270 --> 00:23:43,920
+And if you count
+the use of HTTP,
+
+509
+00:23:43,920 --> 00:23:49,120
+you can be sending
+data over HTTP,
+
+510
+00:23:49,120 --> 00:23:52,870
+which needn't be shown
+on a screen, which
+
+511
+00:23:52,870 --> 00:23:55,510
+could be interacted with
+through a wearable device
+
+512
+00:23:55,510 --> 00:23:58,360
+or in any other kind of way.
+
+513
+00:23:58,360 --> 00:24:02,460
+If we tie the web
+as only being HTML,
+
+514
+00:24:02,460 --> 00:24:04,065
+I think we make a mistake.
+
+515
+00:24:04,065 --> 00:24:04,940
+ANDREW SPOONER: Yeah.
+
+516
+00:24:04,940 --> 00:24:07,570
+And I'm not getting
+into the protocols,
+
+517
+00:24:07,570 --> 00:24:11,230
+but what the web is to
+me &mdash; it has a presentation,
+
+518
+00:24:11,230 --> 00:24:13,319
+and it's something very visual.
+
+519
+00:24:13,319 --> 00:24:14,860
+But we can certainly
+use the content,
+
+520
+00:24:14,860 --> 00:24:16,484
+and we can use the
+languages that we've
+
+521
+00:24:16,484 --> 00:24:19,977
+got in order to
+interact with devices.
+
+522
+00:24:19,977 --> 00:24:21,310
+But maybe we're getting crossed.
+
+523
+00:24:21,310 --> 00:24:24,020
+MALE SPEAKER: Right, OK, I
+think we could continue on this,
+
+524
+00:24:24,020 --> 00:24:27,040
+and I'm very sorry to put
+these on the queue here.
+
+525
+00:24:27,040 --> 00:24:29,110
+But we are going to move
+on to the next topic
+
+526
+00:24:29,110 --> 00:24:32,640
+now, because we've
+got too much to cover.
+
+527
+00:24:32,640 --> 00:24:35,700
+We just have.
+
+528
+00:24:35,700 --> 00:24:38,270
+I'm going to call, again &mdash;
+possibly for the final time
+
+529
+00:24:38,270 --> 00:24:41,000
+today &mdash; Christopher, you've
+been an active participant.
+
+530
+00:24:41,000 --> 00:24:43,640
+I hope I didn't mangle your
+question beyond your ability
+
+531
+00:24:43,640 --> 00:24:44,190
+to read it.
+
+532
+00:24:44,190 --> 00:24:48,770
+
+533
+00:24:48,770 --> 00:24:51,275
+CHRISTOPHER: Yes, if you'll
+allow me to just preface
+
+534
+00:24:51,275 --> 00:24:52,580
+this &mdash; the reason I'm
+asking this question
+
+535
+00:24:52,580 --> 00:24:54,490
+is I've actually recently
+had experience with this.
+
+536
+00:24:54,490 --> 00:24:56,250
+But also, when we
+talk about the future,
+
+537
+00:24:56,250 --> 00:24:58,020
+we focus a little bit too
+much on the text side,
+
+538
+00:24:58,020 --> 00:24:59,353
+and not about the audience side.
+
+539
+00:24:59,353 --> 00:25:01,472
+So basically my question
+is, the future of the web
+
+540
+00:25:01,472 --> 00:25:03,180
+will see a rising
+important in automizing
+
+541
+00:25:03,180 --> 00:25:04,929
+[INAUDIBLE] with Eastern
+China and working
+
+542
+00:25:04,929 --> 00:25:06,322
+with their national firewall.
+
+543
+00:25:06,322 --> 00:25:08,405
+Many popular embeddable
+services, such as YouTube,
+
+544
+00:25:08,405 --> 00:25:09,486
+are blocked over there.
+
+545
+00:25:09,486 --> 00:25:12,000
+How do we accommodate different
+nationalities' to privacy,
+
+546
+00:25:12,000 --> 00:25:13,925
+sensitive content, and
+inappropriate content,
+
+547
+00:25:13,925 --> 00:25:14,570
+and so on.
+
+548
+00:25:14,570 --> 00:25:16,765
+And there's also the
+technological barriers
+
+549
+00:25:16,765 --> 00:25:20,020
+to think about as well.
+
+550
+00:25:20,020 --> 00:25:22,980
+MALE SPEAKER: Jeni, I'm going to
+ask you to leap in here again,
+
+551
+00:25:22,980 --> 00:25:26,250
+because this is, I think,
+directly keying off
+
+552
+00:25:26,250 --> 00:25:27,837
+one of your principle points.
+
+553
+00:25:27,837 --> 00:25:29,420
+JENI TENNISON: And
+I think it was also
+
+554
+00:25:29,420 --> 00:25:33,050
+because nobody else wanted to
+touch it with a barge pole.
+
+555
+00:25:33,050 --> 00:25:35,010
+[LAUGHTER]
+
+556
+00:25:35,010 --> 00:25:41,230
+So, on the internet,
+then the typical way
+
+557
+00:25:41,230 --> 00:25:43,250
+in which we move
+around those barriers
+
+558
+00:25:43,250 --> 00:25:45,470
+is that we subvert them.
+
+559
+00:25:45,470 --> 00:25:47,650
+That tends to be what happens.
+
+560
+00:25:47,650 --> 00:25:52,760
+We tend to work around
+those kinds of issues.
+
+561
+00:25:52,760 --> 00:25:55,010
+And I don't have
+direct experience
+
+562
+00:25:55,010 --> 00:25:56,985
+of the issues in China.
+
+563
+00:25:56,985 --> 00:25:58,620
+I can't really speak to them.
+
+564
+00:25:58,620 --> 00:26:04,940
+I think that the issues about
+how we internationally come up
+
+565
+00:26:04,940 --> 00:26:11,940
+with some kind of understanding
+about how &mdash; when we have lots
+
+566
+00:26:11,940 --> 00:26:13,790
+of different laws
+around privacy,
+
+567
+00:26:13,790 --> 00:26:17,340
+around data
+protection, and so on,
+
+568
+00:26:17,340 --> 00:26:19,720
+how we internationally
+handle that
+
+569
+00:26:19,720 --> 00:26:21,300
+is a very interesting question.
+
+570
+00:26:21,300 --> 00:26:25,700
+I've seen people
+from Africa talk
+
+571
+00:26:25,700 --> 00:26:29,800
+about wanting to have
+legislation in their countries
+
+572
+00:26:29,800 --> 00:26:33,730
+that explicitly
+precludes anybody looking
+
+573
+00:26:33,730 --> 00:26:36,790
+at data within servers
+that are in their countries
+
+574
+00:26:36,790 --> 00:26:40,930
+to make them a more attractive
+option for people who
+
+575
+00:26:40,930 --> 00:26:44,820
+are building web applications
+to use servers in their country,
+
+576
+00:26:44,820 --> 00:26:45,990
+for example.
+
+577
+00:26:45,990 --> 00:26:48,190
+So we might start
+to see an arms race
+
+578
+00:26:48,190 --> 00:26:50,770
+between different
+nationalities as they
+
+579
+00:26:50,770 --> 00:26:53,280
+try to provide a
+more interesting web
+
+580
+00:26:53,280 --> 00:26:56,762
+environment for
+people to use &mdash; maybe.
+
+581
+00:26:56,762 --> 00:26:58,345
+The other kinds of
+things that I think
+
+582
+00:26:58,345 --> 00:27:00,520
+are interesting to
+think about &mdash; what
+
+583
+00:27:00,520 --> 00:27:05,810
+TimBL said at the 25th
+anniversary of the web just
+
+584
+00:27:05,810 --> 00:27:07,230
+the other week.
+
+585
+00:27:07,230 --> 00:27:10,956
+Talking about a Bill of
+Rights for internet users &mdash;
+
+586
+00:27:10,956 --> 00:27:13,080
+whether we should have a
+right to use the internet,
+
+587
+00:27:13,080 --> 00:27:15,850
+whether we should
+have a right to use it
+
+588
+00:27:15,850 --> 00:27:19,270
+with particular levels of
+understanding about what
+
+589
+00:27:19,270 --> 00:27:22,550
+our privacy should
+be, what access
+
+590
+00:27:22,550 --> 00:27:25,470
+we should have to
+content on the web.
+
+591
+00:27:25,470 --> 00:27:29,500
+Or the other kind of idea that
+I've heard floating around
+
+592
+00:27:29,500 --> 00:27:32,110
+is whether we should
+have a Geneva Convention
+
+593
+00:27:32,110 --> 00:27:34,540
+type of thing, where we
+know that there are going
+
+594
+00:27:34,540 --> 00:27:36,970
+to be states that
+block us from accessing
+
+595
+00:27:36,970 --> 00:27:39,050
+certain kinds of content.
+
+596
+00:27:39,050 --> 00:27:41,810
+But should we have an
+international understanding
+
+597
+00:27:41,810 --> 00:27:44,440
+about the limits
+of that blocking
+
+598
+00:27:44,440 --> 00:27:47,100
+that we internationally
+agree on?
+
+599
+00:27:47,100 --> 00:27:49,360
+I think these are all really
+interesting questions.
+
+600
+00:27:49,360 --> 00:27:51,967
+And I think that we're only
+at the beginning of starting
+
+601
+00:27:51,967 --> 00:27:53,675
+to have those
+conversations, particularly
+
+602
+00:27:53,675 --> 00:27:55,810
+with policy makers,
+who really don't
+
+603
+00:27:55,810 --> 00:27:57,780
+understand any of this at all.
+
+604
+00:27:57,780 --> 00:28:00,460
+MALE SPEAKER: And that's
+quite scary, really, isn't it?
+
+605
+00:28:00,460 --> 00:28:02,918
+TOM ASHWORTH: I think we also
+have to look at this question
+
+606
+00:28:02,918 --> 00:28:04,920
+from another point of
+view, which is &mdash; actually,
+
+607
+00:28:04,920 --> 00:28:07,310
+this is a moot point
+if the web is not
+
+608
+00:28:07,310 --> 00:28:10,352
+viable in any
+particular country.
+
+609
+00:28:10,352 --> 00:28:12,810
+So, for example, in &mdash; I won't
+call them developing nations,
+
+610
+00:28:12,810 --> 00:28:16,250
+because their economies
+are bigger than the UK's.
+
+611
+00:28:16,250 --> 00:28:20,280
+But in countries like Brazil &mdash;
+or, say, China or India &mdash;
+
+612
+00:28:20,280 --> 00:28:21,890
+we have to ask, is
+the web actually
+
+613
+00:28:21,890 --> 00:28:23,480
+a viable platform
+there at the moment?
+
+614
+00:28:23,480 --> 00:28:26,137
+If I, for example, worked
+for a social network,
+
+615
+00:28:26,137 --> 00:28:30,720
+and let's say I work for
+Facebook and I want to &mdash;
+
+616
+00:28:30,720 --> 00:28:32,560
+[LAUGHTER]
+
+617
+00:28:32,560 --> 00:28:38,230
+And I want to get more
+users in a country like one
+
+618
+00:28:38,230 --> 00:28:39,840
+of the ones I just
+mentioned, I've
+
+619
+00:28:39,840 --> 00:28:42,620
+got a range of technologies
+that are available to me.
+
+620
+00:28:42,620 --> 00:28:45,750
+And honestly, as web people,
+we have to say, you know what?
+
+621
+00:28:45,750 --> 00:28:47,540
+The web does not
+win in that battle.
+
+622
+00:28:47,540 --> 00:28:48,960
+Native wins in that battle.
+
+623
+00:28:48,960 --> 00:28:51,710
+Low-powered Android
+wins that battle.
+
+624
+00:28:51,710 --> 00:28:52,930
+[GROANS]
+
+625
+00:28:52,930 --> 00:28:53,990
+MALE SPEAKER: Oh, dear.
+
+626
+00:28:53,990 --> 00:28:54,620
+No, hmm.
+
+627
+00:28:54,620 --> 00:28:59,316
+TOM ASHWORTH: And I'll give
+you Firefox as well, but &mdash;
+
+628
+00:28:59,316 --> 00:29:00,310
+[CHUCKLES]
+
+629
+00:29:00,310 --> 00:29:04,360
+But you have to admit that,
+I think, for a big company,
+
+630
+00:29:04,360 --> 00:29:08,252
+if you're going to invest
+in a technology right now,
+
+631
+00:29:08,252 --> 00:29:09,960
+low-powered Android
+phones &mdash; particularly
+
+632
+00:29:09,960 --> 00:29:11,560
+if you're heading
+into those markets &mdash;
+
+633
+00:29:11,560 --> 00:29:12,770
+are a very good option.
+
+634
+00:29:12,770 --> 00:29:15,150
+We are missing certain key
+elements of the technology
+
+635
+00:29:15,150 --> 00:29:20,317
+stack that will enable us to
+make gains in those places.
+
+636
+00:29:20,317 --> 00:29:22,400
+There were quite a few
+questions in the moderator,
+
+637
+00:29:22,400 --> 00:29:23,115
+actually, about &mdash;
+
+638
+00:29:23,115 --> 00:29:24,990
+MALE SPEAKER: I'm going
+to cut you off there,
+
+639
+00:29:24,990 --> 00:29:28,070
+because I think that you've
+done your advertising spiel.
+
+640
+00:29:28,070 --> 00:29:29,330
+Thank you very much for that.
+
+641
+00:29:29,330 --> 00:29:31,690
+Can we go to Robert
+Daly, who's on the queue?
+
+642
+00:29:31,690 --> 00:29:34,880
+
+643
+00:29:34,880 --> 00:29:35,560
+ROBERT DALY: Hi.
+
+644
+00:29:35,560 --> 00:29:38,510
+We currently think of
+one device, one user.
+
+645
+00:29:38,510 --> 00:29:41,740
+But with car OSes and
+basically giant touch
+
+646
+00:29:41,740 --> 00:29:44,760
+screens that will have multiple
+users using the same app
+
+647
+00:29:44,760 --> 00:29:48,440
+at the same time, how
+do we deal with, say,
+
+648
+00:29:48,440 --> 00:29:52,750
+a driver and a passenger
+using the same app in a car
+
+649
+00:29:52,750 --> 00:29:55,600
+at the same time without
+switching user accounts?
+
+650
+00:29:55,600 --> 00:29:59,230
+Or &mdash; as in, how do we deal with
+multiple people interacting
+
+651
+00:29:59,230 --> 00:30:00,442
+with the web?
+
+652
+00:30:00,442 --> 00:30:01,525
+MALE SPEAKER: Or, indeed &mdash;
+
+653
+00:30:01,525 --> 00:30:03,501
+ROBERT DALY: On one device.
+
+654
+00:30:03,501 --> 00:30:05,500
+MALE SPEAKER: Single
+people on multiple devices.
+
+655
+00:30:05,500 --> 00:30:06,800
+That's the other side
+to that proposition.
+
+656
+00:30:06,800 --> 00:30:08,040
+Do you want to take
+that one, Scott?
+
+657
+00:30:08,040 --> 00:30:08,680
+SCOTT JENSON: I
+actually would add
+
+658
+00:30:08,680 --> 00:30:11,680
+that I feel like that's exactly
+the issue the web has right
+
+659
+00:30:11,680 --> 00:30:13,940
+now &mdash; it's that we've
+been so enamored with one
+
+660
+00:30:13,940 --> 00:30:17,560
+device and one screen that
+that's just our entire myopia.
+
+661
+00:30:17,560 --> 00:30:19,560
+I would go even further
+that that one screen has
+
+662
+00:30:19,560 --> 00:30:21,101
+to, by the way, look
+and feel as much
+
+663
+00:30:21,101 --> 00:30:22,330
+like an iPhone as possible.
+
+664
+00:30:22,330 --> 00:30:24,780
+I'm being a little
+editorial at that point.
+
+665
+00:30:24,780 --> 00:30:26,540
+But I do think
+that the web needs
+
+666
+00:30:26,540 --> 00:30:28,315
+to be exploring these
+kinds of things.
+
+667
+00:30:28,315 --> 00:30:30,440
+So what would it mean to
+have something on my watch
+
+668
+00:30:30,440 --> 00:30:32,640
+which then entices me
+to pull out my phone
+
+669
+00:30:32,640 --> 00:30:34,640
+and allows me, then, to
+continue the experience.
+
+670
+00:30:34,640 --> 00:30:36,440
+I don't think we're
+considering that.
+
+671
+00:30:36,440 --> 00:30:37,856
+And it's something
+that frankly, I
+
+672
+00:30:37,856 --> 00:30:40,880
+think the web is most
+powerful at playing with.
+
+673
+00:30:40,880 --> 00:30:43,710
+MALE SPEAKER: OK, sorry, I'm
+gonna have to skip to Guy,
+
+674
+00:30:43,710 --> 00:30:45,797
+and then we'll move
+on to the next topic.
+
+675
+00:30:45,797 --> 00:30:48,005
+GUY: I just want to get back
+to the country question,
+
+676
+00:30:48,005 --> 00:30:51,190
+and say that I don't think
+it's a foregone conclusion
+
+677
+00:30:51,190 --> 00:30:53,602
+that the web needs to
+adapt to those countries.
+
+678
+00:30:53,602 --> 00:30:55,310
+I think, to a large
+extent, the countries
+
+679
+00:30:55,310 --> 00:30:56,500
+need to adapt to the web.
+
+680
+00:30:56,500 --> 00:30:57,940
+And it's sort of a force
+to be reckoned with,
+
+681
+00:30:57,940 --> 00:30:59,773
+and Twitter and other
+platforms have already
+
+682
+00:30:59,773 --> 00:31:03,620
+demonstrated that multiple
+times over the past few years.
+
+683
+00:31:03,620 --> 00:31:06,177
+I think that when you talk
+about the future of the web,
+
+684
+00:31:06,177 --> 00:31:08,260
+it's very much possible
+that the future of the web
+
+685
+00:31:08,260 --> 00:31:10,210
+is the openness of it, and
+it's kind of the government's
+
+686
+00:31:10,210 --> 00:31:11,918
+problem to sort of
+figure out how do they
+
+687
+00:31:11,918 --> 00:31:13,620
+navigate within that world?
+
+688
+00:31:13,620 --> 00:31:16,170
+So the intent is about
+getting data from one place
+
+689
+00:31:16,170 --> 00:31:20,144
+to the other, privacy concerns
+around that, et cetera.
+
+690
+00:31:20,144 --> 00:31:21,810
+ANDREW SPOONER: Yeah,
+I agree with that.
+
+691
+00:31:21,810 --> 00:31:23,560
+MALE SPEAKER: I'm really
+sorry, but we were actually
+
+692
+00:31:23,560 --> 00:31:25,610
+going to go light on the
+allotted time for that,
+
+693
+00:31:25,610 --> 00:31:28,480
+but we've run out of time on
+it, despite thinking we were not
+
+694
+00:31:28,480 --> 00:31:30,236
+going to spend as much
+on it as we might.
+
+695
+00:31:30,236 --> 00:31:31,750
+Oh, well.
+
+696
+00:31:31,750 --> 00:31:32,990
+Right, next topic.
+
+697
+00:31:32,990 --> 00:31:36,140
+Daniel Applequist, because
+I'm much nicer than Christian
+
+698
+00:31:36,140 --> 00:31:40,930
+Heilmann, I'm going to
+give you your question.
+
+699
+00:31:40,930 --> 00:31:41,882
+[INAUDIBLE]
+
+700
+00:31:41,882 --> 00:31:45,214
+[LAUGHTER]
+
+701
+00:31:45,214 --> 00:31:47,700
+DANIEL APPLEQUIST: OK.
+
+702
+00:31:47,700 --> 00:31:48,451
+Here we go.
+
+703
+00:31:48,451 --> 00:31:49,617
+Oh, this isn't what I wrote.
+
+704
+00:31:49,617 --> 00:31:50,117
+No.
+
+705
+00:31:50,117 --> 00:31:51,360
+[LAUGHTER]
+
+706
+00:31:51,360 --> 00:31:55,420
+So, in its march towards
+increasing sophistication &mdash;
+
+707
+00:31:55,420 --> 00:31:57,690
+and I think this
+question, parenthetically,
+
+708
+00:31:57,690 --> 00:32:01,030
+this question kind of goes
+back to the more display
+
+709
+00:32:01,030 --> 00:32:03,170
+browser-oriented web that
+we've been talking about
+
+710
+00:32:03,170 --> 00:32:05,840
+for &mdash; it's not to
+discount the importance
+
+711
+00:32:05,840 --> 00:32:09,970
+of the data-oriented web, which
+I think is also important.
+
+712
+00:32:09,970 --> 00:32:13,430
+But in its march towards
+increasing sophistication,
+
+713
+00:32:13,430 --> 00:32:17,580
+is the web losing touch
+with big easy to learn,
+
+714
+00:32:17,580 --> 00:32:20,111
+and therefore accessible
+to a very broad authorship
+
+715
+00:32:20,111 --> 00:32:20,610
+community?
+
+716
+00:32:20,610 --> 00:32:23,330
+And I'm going to add one
+more parenthetical statement.
+
+717
+00:32:23,330 --> 00:32:27,570
+I think this relates to
+the whole meme that's
+
+718
+00:32:27,570 --> 00:32:30,680
+going on right now about
+teaching kids to code
+
+719
+00:32:30,680 --> 00:32:35,070
+and getting kids, and
+especially young people, engaged
+
+720
+00:32:35,070 --> 00:32:35,750
+in development.
+
+721
+00:32:35,750 --> 00:32:41,441
+How do we get them
+engaged in the web easily?
+
+722
+00:32:41,441 --> 00:32:42,940
+MALE SPEAKER: OK,
+thank you, Daniel.
+
+723
+00:32:42,940 --> 00:32:44,640
+I'm going re-paraphrase
+your question
+
+724
+00:32:44,640 --> 00:32:46,655
+back to &mdash; another
+fork of the question,
+
+725
+00:32:46,655 --> 00:32:49,240
+if you like &mdash; which is,
+it used to be terribly
+
+726
+00:32:49,240 --> 00:32:50,930
+easy to write a basic web page.
+
+727
+00:32:50,930 --> 00:32:53,800
+It was pretty shit, but
+it was very easy to do.
+
+728
+00:32:53,800 --> 00:32:54,680
+That was an Onramp.
+
+729
+00:32:54,680 --> 00:32:57,110
+That point has been
+made earlier today.
+
+730
+00:32:57,110 --> 00:33:01,630
+But in order to be competitive,
+or to provide a better user
+
+731
+00:33:01,630 --> 00:33:04,030
+experience, things have
+got a lot more complicated.
+
+732
+00:33:04,030 --> 00:33:08,220
+Have they got disproportionately
+complicated in order
+
+733
+00:33:08,220 --> 00:33:10,794
+to achieve the
+objectives of being
+
+734
+00:33:10,794 --> 00:33:12,460
+more sophisticated
+than they used to be?
+
+735
+00:33:12,460 --> 00:33:12,670
+JENI TENNISON: No.
+
+736
+00:33:12,670 --> 00:33:13,260
+SCOTT JENSON: No.
+
+737
+00:33:13,260 --> 00:33:13,721
+TOM ASHWORTH: Yeah.
+
+738
+00:33:13,721 --> 00:33:14,429
+MALE SPEAKER: No.
+
+739
+00:33:14,429 --> 00:33:16,951
+[LAUGHTER]
+
+740
+00:33:16,951 --> 00:33:17,450
+Right.
+
+741
+00:33:17,450 --> 00:33:18,750
+ALICE: Like basically,
+here's the thing.
+
+742
+00:33:18,750 --> 00:33:19,480
+MALE SPEAKER: We
+can deal with this.
+
+743
+00:33:19,480 --> 00:33:20,460
+No, no, no, no no.
+
+744
+00:33:20,460 --> 00:33:20,960
+Right.
+
+745
+00:33:20,960 --> 00:33:23,970
+ALICE: You can &mdash;
+back in the day,
+
+746
+00:33:23,970 --> 00:33:27,720
+it was still quite hard to
+get a web page onto a server,
+
+747
+00:33:27,720 --> 00:33:30,440
+and not a lot of people
+are interested in doing it
+
+748
+00:33:30,440 --> 00:33:32,880
+proportionately, because it
+was quite a lot of effort.
+
+749
+00:33:32,880 --> 00:33:35,860
+Because there wasn't this
+sort of corpus of help
+
+750
+00:33:35,860 --> 00:33:37,260
+and tutorials and stuff.
+
+751
+00:33:37,260 --> 00:33:42,550
+And now, you can get very, very,
+far, and do very cool stuff,
+
+752
+00:33:42,550 --> 00:33:44,840
+without knowing
+basically anything.
+
+753
+00:33:44,840 --> 00:33:48,060
+And that may be a good
+thing or a bad thing.
+
+754
+00:33:48,060 --> 00:33:51,990
+But to say that we've made
+it too complicated for people
+
+755
+00:33:51,990 --> 00:33:54,560
+is really doing people
+a massive disservice.
+
+756
+00:33:54,560 --> 00:33:56,010
+These people that
+are like, oh, I
+
+757
+00:33:56,010 --> 00:33:58,032
+can't be bothered &mdash;
+they've always existed.
+
+758
+00:33:58,032 --> 00:34:00,490
+And they're still around, and
+they still can't be bothered.
+
+759
+00:34:00,490 --> 00:34:02,406
+And then there are people
+who can be bothered,
+
+760
+00:34:02,406 --> 00:34:06,420
+and they also are still
+being served by what we have.
+
+761
+00:34:06,420 --> 00:34:09,659
+And you can just go further,
+and the people who will say, oh,
+
+762
+00:34:09,659 --> 00:34:12,550
+but it's possible for people
+to make terrible mistakes
+
+763
+00:34:12,550 --> 00:34:14,636
+and do really dangerous
+things &mdash; that's fine!
+
+764
+00:34:14,636 --> 00:34:16,219
+Those people are
+going to learn really
+
+765
+00:34:16,219 --> 00:34:19,320
+quickly how to be better,
+and that's brilliant, too.
+
+766
+00:34:19,320 --> 00:34:22,767
+So this kind of &mdash; yeah,
+I hate this question.
+
+767
+00:34:22,767 --> 00:34:25,100
+MALE SPEAKER: They'll learn
+really quickly, but possibly
+
+768
+00:34:25,100 --> 00:34:26,630
+with disastrous consequences.
+
+769
+00:34:26,630 --> 00:34:27,359
+ALICE: Well &mdash;
+
+770
+00:34:27,359 --> 00:34:29,400
+MALE SPEAKER: You know,
+I use this analogy, which
+
+771
+00:34:29,400 --> 00:34:31,608
+is putting a chainsaw in
+the hands of a six-year-old.
+
+772
+00:34:31,608 --> 00:34:34,560
+Either they learn, or
+well, you know, they don't.
+
+773
+00:34:34,560 --> 00:34:38,750
+TOM ASHWORTH: I teach people
+every week, mostly beginners.
+
+774
+00:34:38,750 --> 00:34:42,510
+In fact, people who live in
+London &mdash; Codebar.io, minority
+
+775
+00:34:42,510 --> 00:34:45,020
+people in tech, we're trying
+to promote, particularly women.
+
+776
+00:34:45,020 --> 00:34:46,728
+So if you've got free
+time on Wednesdays,
+
+777
+00:34:46,728 --> 00:34:47,719
+please come to that.
+
+778
+00:34:47,719 --> 00:34:49,620
+But I teach people
+every Wednesday,
+
+779
+00:34:49,620 --> 00:34:50,872
+and I see this a lot.
+
+780
+00:34:50,872 --> 00:34:53,205
+I see people who are coming
+new to HTML, and new to CSS.
+
+781
+00:34:53,205 --> 00:34:56,350
+And absolutely it is possible
+for them to go from zero,
+
+782
+00:34:56,350 --> 00:34:59,290
+and in an hour and a half, have
+a huge smile on their face,
+
+783
+00:34:59,290 --> 00:35:00,700
+because they've just
+created their first website.
+
+784
+00:35:00,700 --> 00:35:02,050
+There's absolutely
+no reason to believe
+
+785
+00:35:02,050 --> 00:35:03,049
+that that's fading away.
+
+786
+00:35:03,049 --> 00:35:05,780
+AUDIENCE: Yeah, and also,
+when you started programming
+
+787
+00:35:05,780 --> 00:35:10,326
+and doing things &mdash;
+initially, [INAUDIBLE]
+
+788
+00:35:10,326 --> 00:35:16,290
+And then when you want to do
+anything dynamic, [INAUDIBLE]
+
+789
+00:35:16,290 --> 00:35:17,839
+Are you sure that
+we can do anything
+
+790
+00:35:17,839 --> 00:35:18,880
+more dangerous than that?
+
+791
+00:35:18,880 --> 00:35:19,925
+MALE SPEAKER: I think
+we're talking, OK &mdash;
+
+792
+00:35:19,925 --> 00:35:20,530
+ALICE: Yeah.
+
+793
+00:35:20,530 --> 00:35:21,660
+MALE SPEAKER: OK, valid.
+
+794
+00:35:21,660 --> 00:35:22,540
+Andrew.
+
+795
+00:35:22,540 --> 00:35:26,520
+ANDREW SPOONER: I think,
+as any technology matures,
+
+796
+00:35:26,520 --> 00:35:29,180
+we realize some of
+the things that we
+
+797
+00:35:29,180 --> 00:35:31,360
+used to do that were
+quite difficult to do,
+
+798
+00:35:31,360 --> 00:35:32,910
+we try and simplify those.
+
+799
+00:35:32,910 --> 00:35:35,340
+If I think back when I
+started the web, just trying
+
+800
+00:35:35,340 --> 00:35:39,374
+to get someone to &mdash; just
+trying to get data into a form
+
+801
+00:35:39,374 --> 00:35:41,290
+and save that onto a
+server somewhere &mdash; that's
+
+802
+00:35:41,290 --> 00:35:42,810
+actually quite a
+complicated task.
+
+803
+00:35:42,810 --> 00:35:44,510
+It took us a long
+time to do that.
+
+804
+00:35:44,510 --> 00:35:46,190
+It was a very
+expensive thing to do.
+
+805
+00:35:46,190 --> 00:35:47,820
+There's a lot of
+simple tools out there
+
+806
+00:35:47,820 --> 00:35:51,190
+that allow people to
+do that quite easy now.
+
+807
+00:35:51,190 --> 00:35:53,172
+And that's an easy
+thing to do, and I
+
+808
+00:35:53,172 --> 00:35:55,380
+think it means that some
+people don't understand what
+
+809
+00:35:55,380 --> 00:35:57,250
+it is that they're actually &mdash;
+what's actually going on
+
+810
+00:35:57,250 --> 00:35:58,000
+in the background.
+
+811
+00:35:58,000 --> 00:35:59,683
+But then, do you
+need to know what's
+
+812
+00:35:59,683 --> 00:36:01,110
+going on in the background?
+
+813
+00:36:01,110 --> 00:36:01,943
+[INTERPOSING VOICES]
+
+814
+00:36:01,943 --> 00:36:05,310
+
+815
+00:36:05,310 --> 00:36:06,630
+AUDIENCE: Hi.
+
+816
+00:36:06,630 --> 00:36:08,375
+I just want to add
+to that a little bit,
+
+817
+00:36:08,375 --> 00:36:11,455
+and say I just recently
+started doing Code Club.
+
+818
+00:36:11,455 --> 00:36:12,799
+So I teach kids as young as &mdash;
+
+819
+00:36:12,799 --> 00:36:14,340
+MALE SPEAKER: How
+are you getting on?
+
+820
+00:36:14,340 --> 00:36:15,222
+No, sorry.
+
+821
+00:36:15,222 --> 00:36:16,986
+[LAUGHTER]
+
+822
+00:36:16,986 --> 00:36:19,740
+AUDIENCE: One day, I hope
+to make a career out of it.
+
+823
+00:36:19,740 --> 00:36:23,135
+But I teach kids as young as
+five or six how to programming.
+
+824
+00:36:23,135 --> 00:36:25,160
+And the speed, the
+facility, with which
+
+825
+00:36:25,160 --> 00:36:28,830
+they pick up quite sophisticated
+concepts is incredible.
+
+826
+00:36:28,830 --> 00:36:31,820
+And I think with the low barrier
+to entry that the web provides,
+
+827
+00:36:31,820 --> 00:36:33,385
+I don't think
+we're in any danger
+
+828
+00:36:33,385 --> 00:36:35,252
+of making that too
+complex at all.
+
+829
+00:36:35,252 --> 00:36:35,960
+MALE SPEAKER: OK.
+
+830
+00:36:35,960 --> 00:36:38,880
+ALICE: I think Linda has
+just arrived from Code Club
+
+831
+00:36:38,880 --> 00:36:40,380
+as we were speaking
+about it, so &mdash;
+
+832
+00:36:40,380 --> 00:36:41,684
+LINDA: Hi, everyone.
+
+833
+00:36:41,684 --> 00:36:44,995
+ALICE: So without wishing
+to put words in her mouth
+
+834
+00:36:44,995 --> 00:36:46,620
+about what the mission
+of Code Club is,
+
+835
+00:36:46,620 --> 00:36:50,580
+I mean it really fills a gap
+in education that does exist.
+
+836
+00:36:50,580 --> 00:36:52,010
+And there is a
+problem with that.
+
+837
+00:36:52,010 --> 00:36:54,710
+And so when you're
+talking about &mdash; maybe
+
+838
+00:36:54,710 --> 00:36:56,970
+you're talking about
+coming to the web
+
+839
+00:36:56,970 --> 00:37:00,367
+as a teenager who is looking
+to make their first web page.
+
+840
+00:37:00,367 --> 00:37:02,700
+And then there's Code Club,
+who is sort of enabling kids
+
+841
+00:37:02,700 --> 00:37:05,240
+at a much younger age to get
+involved with technology,
+
+842
+00:37:05,240 --> 00:37:07,420
+and think about
+programming in a way
+
+843
+00:37:07,420 --> 00:37:09,700
+that the education
+system in this country &mdash;
+
+844
+00:37:09,700 --> 00:37:10,270
+TOM ASHWORTH: And
+since we're talking
+
+845
+00:37:10,270 --> 00:37:12,040
+about the future
+of the web, really,
+
+846
+00:37:12,040 --> 00:37:15,010
+groups like Code Club
+and Young Rewired State
+
+847
+00:37:15,010 --> 00:37:17,100
+are making the future
+of the web, which
+
+848
+00:37:17,100 --> 00:37:18,880
+is the people who make the web.
+
+849
+00:37:18,880 --> 00:37:20,089
+So we should invest in those.
+
+850
+00:37:20,089 --> 00:37:21,255
+MALE SPEAKER: OK, thank you.
+
+851
+00:37:21,255 --> 00:37:23,060
+We do need to push
+on here, because I
+
+852
+00:37:23,060 --> 00:37:26,150
+think we probably only have
+got time for two more things,
+
+853
+00:37:26,150 --> 00:37:29,060
+if we're going to
+stick to our timing.
+
+854
+00:37:29,060 --> 00:37:30,870
+So Daniel, no danger there.
+
+855
+00:37:30,870 --> 00:37:33,030
+OK?
+
+856
+00:37:33,030 --> 00:37:33,870
+Moving on.
+
+857
+00:37:33,870 --> 00:37:36,570
+
+858
+00:37:36,570 --> 00:37:39,172
+From Ed S &mdash;
+
+859
+00:37:39,172 --> 00:37:40,645
+JENI TENNISON: Ed Snyder.
+
+860
+00:37:40,645 --> 00:37:41,630
+Ed Sowden.
+
+861
+00:37:41,630 --> 00:37:44,690
+MALE SPEAKER: Ed [INAUDIBLE].
+
+862
+00:37:44,690 --> 00:37:49,019
+[INAUDIBLE]
+
+863
+00:37:49,019 --> 00:37:51,360
+MALE SPEAKER: Yes, this
+was a combination of yours
+
+864
+00:37:51,360 --> 00:37:52,730
+and someone else's.
+
+865
+00:37:52,730 --> 00:37:56,996
+So just to check, it
+starts, "Is the web--?"
+
+866
+00:37:56,996 --> 00:38:00,197
+[LAUGHTER]
+
+867
+00:38:00,197 --> 00:38:01,030
+AUDIENCE: So, I've &mdash;
+
+868
+00:38:01,030 --> 00:38:01,840
+MALE SPEAKER: No.
+
+869
+00:38:01,840 --> 00:38:03,250
+[LAUGHTER]
+
+870
+00:38:03,250 --> 00:38:05,890
+AUDIENCE: I've been given this
+to ask on behalf of Ed "So-den"
+
+871
+00:38:05,890 --> 00:38:09,470
+or "Sow-den," could be, but I
+think it's the question that
+
+872
+00:38:09,470 --> 00:38:10,980
+Remy, perhaps, wanted to ask &mdash;
+
+873
+00:38:10,980 --> 00:38:11,530
+MALE SPEAKER: That is exactly.
+
+874
+00:38:11,530 --> 00:38:12,960
+AUDIENCE: It's kind
+of been bubbling
+
+875
+00:38:12,960 --> 00:38:14,668
+under a few of the
+conversations as well.
+
+876
+00:38:14,668 --> 00:38:15,900
+It goes like this.
+
+877
+00:38:15,900 --> 00:38:19,235
+Is the web going
+to grow into into
+
+878
+00:38:19,235 --> 00:38:23,180
+an all-encompassing platform
+for all future computing?
+
+879
+00:38:23,180 --> 00:38:25,980
+Is there any area
+which will be spared?
+
+880
+00:38:25,980 --> 00:38:30,010
+Or, by contrast, is the future
+of the web just providing
+
+881
+00:38:30,010 --> 00:38:33,770
+APIs for native
+applications to be built?
+
+882
+00:38:33,770 --> 00:38:34,770
+MALE SPEAKER: Thank you.
+
+883
+00:38:34,770 --> 00:38:38,760
+So, this is a question about,
+what are the limits of the web?
+
+884
+00:38:38,760 --> 00:38:40,510
+What is the definition
+of the word, "web?"
+
+885
+00:38:40,510 --> 00:38:42,680
+I don't think we probably
+want to go that way,
+
+886
+00:38:42,680 --> 00:38:45,700
+but you guys started having
+a little bit of a hammer
+
+887
+00:38:45,700 --> 00:38:47,020
+and tongs about that earlier.
+
+888
+00:38:47,020 --> 00:38:49,470
+Would you like to continue
+that in the context
+
+889
+00:38:49,470 --> 00:38:50,570
+of this question?
+
+890
+00:38:50,570 --> 00:38:54,780
+So, will the web grow into an
+all-encompassing computation
+
+891
+00:38:54,780 --> 00:38:55,280
+platform?
+
+892
+00:38:55,280 --> 00:38:58,780
+Jeni, you say no, because some
+things are inherently web-like,
+
+893
+00:38:58,780 --> 00:39:01,150
+like HTTP, are not suitable.
+
+894
+00:39:01,150 --> 00:39:04,460
+JENI TENNISON: Yeah, so I
+think that the basic &mdash; how
+
+895
+00:39:04,460 --> 00:39:08,990
+I would define the web, which
+would be about the use of HTTP
+
+896
+00:39:08,990 --> 00:39:14,190
+and the use of resources
+identified by URLs,
+
+897
+00:39:14,190 --> 00:39:17,110
+takes us a long
+way, but there are
+
+898
+00:39:17,110 --> 00:39:22,260
+some aspects of &mdash;
+particularly data
+
+899
+00:39:22,260 --> 00:39:26,540
+flows on the internet &mdash; that
+don't use web protocols,
+
+900
+00:39:26,540 --> 00:39:27,960
+and should not
+use web protocols.
+
+901
+00:39:27,960 --> 00:39:32,000
+And we need to be thinking
+outside of the HTTP
+
+902
+00:39:32,000 --> 00:39:36,830
+as the only protocol that
+we ever use on the internet.
+
+903
+00:39:36,830 --> 00:39:38,529
+MALE SPEAKER: Andrew.
+
+904
+00:39:38,529 --> 00:39:40,570
+ANDREW SPOONER: So, is
+this also about languages,
+
+905
+00:39:40,570 --> 00:39:42,507
+and how we can extend
+languages to other &mdash;
+
+906
+00:39:42,507 --> 00:39:43,965
+MALE SPEAKER: You
+can make it that.
+
+907
+00:39:43,965 --> 00:39:45,048
+ANDREW SPOONER: Platforms.
+
+908
+00:39:45,048 --> 00:39:47,270
+Thank you.
+
+909
+00:39:47,270 --> 00:39:48,200
+I see the web.
+
+910
+00:39:48,200 --> 00:39:49,220
+We've invested so
+much time in it.
+
+911
+00:39:49,220 --> 00:39:51,178
+We've invested so much
+time putting the content
+
+912
+00:39:51,178 --> 00:39:53,020
+into a format that
+we can access.
+
+913
+00:39:53,020 --> 00:39:56,030
+And we can do so much more
+with languages like JavaScript
+
+914
+00:39:56,030 --> 00:39:57,010
+nowadays.
+
+915
+00:39:57,010 --> 00:39:59,385
+They're actually starting to
+stand up to other languages.
+
+916
+00:39:59,385 --> 00:40:01,357
+So the web can exist
+in almost anything.
+
+917
+00:40:01,357 --> 00:40:03,440
+If I think about some of
+the development work I do
+
+918
+00:40:03,440 --> 00:40:07,370
+the moment using JavaScript to
+access the same APIs that I can
+
+919
+00:40:07,370 --> 00:40:10,830
+do through C++ &mdash; or I
+could do through C#,
+
+920
+00:40:10,830 --> 00:40:14,710
+when creating applications
+for Windows 8, for instance &mdash;
+
+921
+00:40:14,710 --> 00:40:16,210
+I'm using the same
+web technologies,
+
+922
+00:40:16,210 --> 00:40:17,130
+the same web languages &mdash;
+
+923
+00:40:17,130 --> 00:40:19,296
+MALE SPEAKER: So are you
+saying that the distinction
+
+924
+00:40:19,296 --> 00:40:21,380
+is a bogus distinction
+in some ways?
+
+925
+00:40:21,380 --> 00:40:24,530
+You're saying everything
+flows into everything else.
+
+926
+00:40:24,530 --> 00:40:28,422
+ANDREW SPOONER: I
+think it can exist &mdash;
+
+927
+00:40:28,422 --> 00:40:29,130
+MALE SPEAKER: OK.
+
+928
+00:40:29,130 --> 00:40:31,330
+ANDREW SPOONER: In places where
+we don't have it currently,
+
+929
+00:40:31,330 --> 00:40:31,990
+yes.
+
+930
+00:40:31,990 --> 00:40:33,660
+MALE SPEAKER: Remy,
+I'm hoping this
+
+931
+00:40:33,660 --> 00:40:35,550
+was adjacent to the
+point you were making.
+
+932
+00:40:35,550 --> 00:40:36,280
+REMY: No.
+
+933
+00:40:36,280 --> 00:40:38,285
+MALE SPEAKER: Absolutely
+nothing to do with it.
+
+934
+00:40:38,285 --> 00:40:39,580
+REMY: It's not so much
+nothing to do with it.
+
+935
+00:40:39,580 --> 00:40:41,765
+I just don't think the
+web will be everything,
+
+936
+00:40:41,765 --> 00:40:44,740
+and I don't think it will
+just be the ayes [INAUDIBLE].
+
+937
+00:40:44,740 --> 00:40:48,060
+ALICE: So, I agree with
+what you're saying.
+
+938
+00:40:48,060 --> 00:40:51,587
+I think there's a lot of hype
+around the Internet of Things.
+
+939
+00:40:51,587 --> 00:40:53,670
+There's a lot of hype
+around smart watches and all
+
+940
+00:40:53,670 --> 00:40:53,990
+that stuff.
+
+941
+00:40:53,990 --> 00:40:55,040
+And I think there are
+a lot of companies
+
+942
+00:40:55,040 --> 00:40:57,000
+that are doing a
+lot of figuring out
+
+943
+00:40:57,000 --> 00:40:58,670
+through doing, at the moment.
+
+944
+00:40:58,670 --> 00:41:02,300
+And what we'll find in 10
+years &mdash; well no, not 10 years,
+
+945
+00:41:02,300 --> 00:41:06,200
+five years &mdash; is the web
+will be in some stuff,
+
+946
+00:41:06,200 --> 00:41:07,559
+and it'll make a lot of sense.
+
+947
+00:41:07,559 --> 00:41:09,100
+And everybody will
+be like, check out
+
+948
+00:41:09,100 --> 00:41:11,260
+my cool web-enabled thing.
+
+949
+00:41:11,260 --> 00:41:12,760
+And then it won't
+be in other stuff.
+
+950
+00:41:12,760 --> 00:41:13,780
+And people will
+be like, remember
+
+951
+00:41:13,780 --> 00:41:16,071
+when we tried to put the
+internet into fucking fridges?
+
+952
+00:41:16,071 --> 00:41:16,846
+That was madness.
+
+953
+00:41:16,846 --> 00:41:19,720
+[LAUGHTER]
+
+954
+00:41:19,720 --> 00:41:22,100
+But there is a lot of hype
+and a lot of marketing stuff
+
+955
+00:41:22,100 --> 00:41:24,900
+that makes all of this seem like
+people are seriously thinking
+
+956
+00:41:24,900 --> 00:41:26,760
+about this, when actually
+they're just figuring stuff
+
+957
+00:41:26,760 --> 00:41:27,259
+out.
+
+958
+00:41:27,259 --> 00:41:30,590
+And some of it is bad,
+and some of it is &mdash;
+
+959
+00:41:30,590 --> 00:41:32,085
+MALE SPEAKER: I
+seriously challenge
+
+960
+00:41:32,085 --> 00:41:33,460
+that, in the sense
+that &mdash; go back
+
+961
+00:41:33,460 --> 00:41:35,730
+to the audience in a
+second &mdash; in the sense
+
+962
+00:41:35,730 --> 00:41:39,055
+that I'm old enough to
+have said 15 years ago,
+
+963
+00:41:39,055 --> 00:41:40,430
+do you know what
+people are going
+
+964
+00:41:40,430 --> 00:41:42,305
+to be using these
+devices here to do?
+
+965
+00:41:42,305 --> 00:41:44,160
+All kinds of cool
+stuff on the move.
+
+966
+00:41:44,160 --> 00:41:45,970
+And people said,
+yeah, yeah, yeah.
+
+967
+00:41:45,970 --> 00:41:47,190
+We'll wait to see that.
+
+968
+00:41:47,190 --> 00:41:50,256
+So I think that expressing
+skepticism about the direction
+
+969
+00:41:50,256 --> 00:41:51,630
+that these
+technologies are going
+
+970
+00:41:51,630 --> 00:41:54,130
+is a potentially
+dangerous route to take.
+
+971
+00:41:54,130 --> 00:41:56,650
+ALICE: Oh, well let's not
+have any skepticism then.
+
+972
+00:41:56,650 --> 00:41:59,780
+[LAUGHTER]
+
+973
+00:41:59,780 --> 00:42:02,294
+MALE SPEAKER: That
+wasn't my point.
+
+974
+00:42:02,294 --> 00:42:04,460
+TOM ASHWORTH: I write
+JavaScript all day, every day.
+
+975
+00:42:04,460 --> 00:42:07,540
+And quite frankly, I do not
+want JavaScript on a pacemaker.
+
+976
+00:42:07,540 --> 00:42:08,640
+I do not want &mdash;
+
+977
+00:42:08,640 --> 00:42:11,640
+[LAUGHTER]
+
+978
+00:42:11,640 --> 00:42:13,292
+I just &mdash; if you
+said to me, look,
+
+979
+00:42:13,292 --> 00:42:15,500
+here's a web-enabled thing
+that's going in your body,
+
+980
+00:42:15,500 --> 00:42:17,905
+I would tell you
+to fuck right off.
+
+981
+00:42:17,905 --> 00:42:19,829
+[LAUGHTER]
+
+982
+00:42:19,829 --> 00:42:22,865
+MALE SPEAKER: Go ahead.
+
+983
+00:42:22,865 --> 00:42:24,740
+AUDIENCE: We actually
+have &mdash; there's actually
+
+984
+00:42:24,740 --> 00:42:27,780
+examples of what we
+tried to do once,
+
+985
+00:42:27,780 --> 00:42:29,650
+when there was no
+[INAUDIBLE] 40 thing.
+
+986
+00:42:29,650 --> 00:42:32,160
+We tried to do an interpreter
+for doing things running
+
+987
+00:42:32,160 --> 00:42:34,130
+on a device that,
+basically, you couldn't even
+
+988
+00:42:34,130 --> 00:42:35,800
+fit a JavaScript interpreter on.
+
+989
+00:42:35,800 --> 00:42:37,690
+Because I don't know if you
+remember about JavaScript &mdash;
+
+990
+00:42:37,690 --> 00:42:39,850
+apart from having obvious
+limitations regarding how
+
+991
+00:42:39,850 --> 00:42:43,360
+we handle numbers, et cetera &mdash;
+requires quite a bit of stack,
+
+992
+00:42:43,360 --> 00:42:43,890
+et cetera.
+
+993
+00:42:43,890 --> 00:42:46,000
+And we ended up doing
+the first [INAUDIBLE]
+
+994
+00:42:46,000 --> 00:42:49,237
+thing that we built in
+this company in a scheme.
+
+995
+00:42:49,237 --> 00:42:51,570
+In a scheme, because it was
+the smaller interpreter than
+
+996
+00:42:51,570 --> 00:42:53,750
+could fit in like
+a proximity 4k.
+
+997
+00:42:53,750 --> 00:42:54,250
+Right?
+
+998
+00:42:54,250 --> 00:42:56,290
+So there would be things,
+as we were saying,
+
+999
+00:42:56,290 --> 00:43:00,070
+that basically you cannot
+use the HTML CSS for actually
+
+1000
+00:43:00,070 --> 00:43:01,610
+making your interface simpler.
+
+1001
+00:43:01,610 --> 00:43:03,744
+And you've got to use
+JavaScript to kind of reduce
+
+1002
+00:43:03,744 --> 00:43:05,910
+what you have been doing,
+because literally, there's
+
+1003
+00:43:05,910 --> 00:43:06,609
+no space.
+
+1004
+00:43:06,609 --> 00:43:08,775
+So not only because of the
+whole asynchronous thing,
+
+1005
+00:43:08,775 --> 00:43:10,842
+but because technically,
+some of these things
+
+1006
+00:43:10,842 --> 00:43:12,300
+and [INAUDIBLE]
+things are not even
+
+1007
+00:43:12,300 --> 00:43:14,472
+going to have stack
+to run JavaScript on.
+
+1008
+00:43:14,472 --> 00:43:15,180
+MALE SPEAKER: OK.
+
+1009
+00:43:15,180 --> 00:43:16,854
+Nor to use HTTP,
+for that matter.
+
+1010
+00:43:16,854 --> 00:43:19,520
+MALE SPEAKER: Chris, and you had
+a word you wanted to interject,
+
+1011
+00:43:19,520 --> 00:43:21,561
+and then we're probably
+going to have to move on.
+
+1012
+00:43:21,561 --> 00:43:22,385
+CHRIS: Yeah.
+
+1013
+00:43:22,385 --> 00:43:23,275
+A few.
+
+1014
+00:43:23,275 --> 00:43:25,020
+Actually, one thing
+is &mdash; what amazes
+
+1015
+00:43:25,020 --> 00:43:26,820
+me is we talk about
+HTTP, but then we're
+
+1016
+00:43:26,820 --> 00:43:28,960
+actually using a system
+here that uses web sockets.
+
+1017
+00:43:28,960 --> 00:43:31,500
+And we're using a system
+that uses WebRTC and has
+
+1018
+00:43:31,500 --> 00:43:33,940
+PO2P connections and
+could even be encrypted
+
+1019
+00:43:33,940 --> 00:43:37,173
+between two computers, so
+that companies starting with N
+
+1020
+00:43:37,173 --> 00:43:40,870
+and ending with SA couldn't
+actually listen to us.
+
+1021
+00:43:40,870 --> 00:43:42,810
+I find it also
+interesting that we &mdash;
+
+1022
+00:43:42,810 --> 00:43:45,050
+when I started on the web,
+what I loved most about it
+
+1023
+00:43:45,050 --> 00:43:47,649
+is that I can use whatever
+I want to actually start
+
+1024
+00:43:47,649 --> 00:43:48,440
+connecting with it.
+
+1025
+00:43:48,440 --> 00:43:51,440
+And now we're talking about
+smart watches, glasses
+
+1026
+00:43:51,440 --> 00:43:55,860
+that cost $1,500, basically
+toys for the Western world
+
+1027
+00:43:55,860 --> 00:43:57,790
+to be the future of the web.
+
+1028
+00:43:57,790 --> 00:44:00,130
+And to me, the future
+of the web lies in,
+
+1029
+00:44:00,130 --> 00:44:03,540
+as you said, emerging markets
+with more people than we have.
+
+1030
+00:44:03,540 --> 00:44:06,800
+And fixing that to gadgets that
+are closed in one environment
+
+1031
+00:44:06,800 --> 00:44:09,870
+is, to me, the wrong way of
+making the future of the web.
+
+1032
+00:44:09,870 --> 00:44:12,540
+MALE SPEAKER: OK, a closing
+comment from the panel, here?
+
+1033
+00:44:12,540 --> 00:44:14,540
+Scott, have you got
+something to say about this?
+
+1034
+00:44:14,540 --> 00:44:16,580
+SCOTT JENSON:
+Well, I'm intrigued
+
+1035
+00:44:16,580 --> 00:44:18,387
+with how we want
+this future to go.
+
+1036
+00:44:18,387 --> 00:44:19,970
+Because there's
+clearly the discussion
+
+1037
+00:44:19,970 --> 00:44:21,510
+of how the standards
+bodies work.
+
+1038
+00:44:21,510 --> 00:44:24,051
+But I would argue that the vast
+majority of the conversations
+
+1039
+00:44:24,051 --> 00:44:26,280
+that I tend to have with
+people is all about &mdash; well,
+
+1040
+00:44:26,280 --> 00:44:29,450
+how can you make this web
+page scroll on a small screen.
+
+1041
+00:44:29,450 --> 00:44:31,570
+And so, I think, to
+a certain extent,
+
+1042
+00:44:31,570 --> 00:44:33,470
+we've trapped ourselves
+in our own paradigm,
+
+1043
+00:44:33,470 --> 00:44:35,760
+which is that these are
+just scrolling web pages.
+
+1044
+00:44:35,760 --> 00:44:38,510
+And I think that there's so
+much more the web can do.
+
+1045
+00:44:38,510 --> 00:44:41,310
+For example, the previous
+question about multi-displays.
+
+1046
+00:44:41,310 --> 00:44:45,187
+I don't want to aspire what
+the iPhone was five years ago.
+
+1047
+00:44:45,187 --> 00:44:47,270
+And I think the web can
+do so much more than that.
+
+1048
+00:44:47,270 --> 00:44:48,770
+CHRIS: Isn't the
+issue that we still
+
+1049
+00:44:48,770 --> 00:44:50,491
+say it should look
+the same everywhere?
+
+1050
+00:44:50,491 --> 00:44:52,490
+That's what I always have
+to fight [INAUDIBLE] &mdash;
+
+1051
+00:44:52,490 --> 00:44:53,570
+MALE SPEAKER: This is a
+little off-topic, guys.
+
+1052
+00:44:53,570 --> 00:44:55,310
+SCOTT JENSON: I don't
+agree with that, but yeah.
+
+1053
+00:44:55,310 --> 00:44:55,620
+Sorry.
+
+1054
+00:44:55,620 --> 00:44:56,710
+MALE SPEAKER: So, I'm sorry.
+
+1055
+00:44:56,710 --> 00:44:57,959
+But we're going to close that.
+
+1056
+00:44:57,959 --> 00:44:58,870
+It's my job.
+
+1057
+00:44:58,870 --> 00:45:00,004
+I quite enjoy it, actually.
+
+1058
+00:45:00,004 --> 00:45:03,140
+[LAUGHTER]
+
+1059
+00:45:03,140 --> 00:45:03,870
+Right.
+
+1060
+00:45:03,870 --> 00:45:05,520
+We have a final
+question, which is
+
+1061
+00:45:05,520 --> 00:45:08,350
+going to set us &mdash; I
+think down the path,
+
+1062
+00:45:08,350 --> 00:45:10,710
+actually, that you were
+on just now, Scott.
+
+1063
+00:45:10,710 --> 00:45:12,990
+So we'll let you
+continue on that one.
+
+1064
+00:45:12,990 --> 00:45:14,303
+From Andre Barrons.
+
+1065
+00:45:14,303 --> 00:45:21,850
+
+1066
+00:45:21,850 --> 00:45:23,880
+AUDIENCE: Hi, this
+is Andre's question.
+
+1067
+00:45:23,880 --> 00:45:25,870
+Web developers, and
+even corporations,
+
+1068
+00:45:25,870 --> 00:45:28,640
+that are outside the
+browser-vendor community
+
+1069
+00:45:28,640 --> 00:45:30,950
+have a feeling of being
+a prisoner to decisions
+
+1070
+00:45:30,950 --> 00:45:33,040
+others make, with
+often limited means
+
+1071
+00:45:33,040 --> 00:45:34,930
+to address certain problems.
+
+1072
+00:45:34,930 --> 00:45:38,314
+Who should be determining the
+future of the web, and how?
+
+1073
+00:45:38,314 --> 00:45:40,200
+MALE SPEAKER: So, who
+should be determining
+
+1074
+00:45:40,200 --> 00:45:41,135
+the future of the web?
+
+1075
+00:45:41,135 --> 00:45:41,635
+And how?
+
+1076
+00:45:41,635 --> 00:45:43,230
+SCOTT JENSON: Well, I assume
+this is the whole Extensible
+
+1077
+00:45:43,230 --> 00:45:44,570
+Web Manifesto discussion.
+
+1078
+00:45:44,570 --> 00:45:45,570
+MALE SPEAKER: It can be.
+
+1079
+00:45:45,570 --> 00:45:48,120
+SCOTT JENSON: It can be.
+
+1080
+00:45:48,120 --> 00:45:50,950
+I still feel that
+our biggest issue
+
+1081
+00:45:50,950 --> 00:45:53,279
+is our own myopia of what
+we think is important.
+
+1082
+00:45:53,279 --> 00:45:55,070
+Because the vast majority
+of this community
+
+1083
+00:45:55,070 --> 00:45:58,790
+is just trying to figure and
+argue about apps versus native.
+
+1084
+00:45:58,790 --> 00:46:00,780
+And so, to me, I would
+like the web community
+
+1085
+00:46:00,780 --> 00:46:02,360
+to start to figure out
+a way to experiment
+
+1086
+00:46:02,360 --> 00:46:03,276
+with these new things.
+
+1087
+00:46:03,276 --> 00:46:05,210
+Like, how would
+I write a web app
+
+1088
+00:46:05,210 --> 00:46:07,640
+to work across
+multiple displays?
+
+1089
+00:46:07,640 --> 00:46:09,506
+I'd have to roll
+everything from scratch.
+
+1090
+00:46:09,506 --> 00:46:10,880
+And I just don't
+think that we're
+
+1091
+00:46:10,880 --> 00:46:13,830
+talking about ways to encourage
+that kind of experimentation.
+
+1092
+00:46:13,830 --> 00:46:15,550
+It seems to be so
+standards-driven now
+
+1093
+00:46:15,550 --> 00:46:17,740
+that we've lost the
+ability to do stupid shit.
+
+1094
+00:46:17,740 --> 00:46:18,990
+And I'd like to do more of it.
+
+1095
+00:46:18,990 --> 00:46:20,600
+MALE SPEAKER: OK.
+
+1096
+00:46:20,600 --> 00:46:22,170
+You carry on doing
+more stupid shit.
+
+1097
+00:46:22,170 --> 00:46:25,700
+I'll talk to someone else.
+
+1098
+00:46:25,700 --> 00:46:29,650
+Jeni, the view expressed
+here is that people
+
+1099
+00:46:29,650 --> 00:46:31,980
+don't have a sufficient
+voice in the process.
+
+1100
+00:46:31,980 --> 00:46:35,010
+
+1101
+00:46:35,010 --> 00:46:37,730
+JENI TENNISON: So I think
+the web is what we build.
+
+1102
+00:46:37,730 --> 00:46:40,475
+It's what we make.
+
+1103
+00:46:40,475 --> 00:46:41,683
+It's through experimentation.
+
+1104
+00:46:41,683 --> 00:46:44,400
+
+1105
+00:46:44,400 --> 00:46:48,840
+And we have a responsibility &mdash;
+if we want our voice
+
+1106
+00:46:48,840 --> 00:46:52,090
+to be heard, step up and shout.
+
+1107
+00:46:52,090 --> 00:46:54,890
+
+1108
+00:46:54,890 --> 00:46:59,030
+So that in terms
+of standardization,
+
+1109
+00:46:59,030 --> 00:47:02,590
+I think the W3C has done a lot
+to try and open up discussion &mdash;
+
+1110
+00:47:02,590 --> 00:47:05,330
+through adding community
+groups, for example,
+
+1111
+00:47:05,330 --> 00:47:08,530
+over the past three years.
+
+1112
+00:47:08,530 --> 00:47:12,480
+But I do think that
+there is a massive gap
+
+1113
+00:47:12,480 --> 00:47:16,070
+between the [INAUDIBLE]
+that are in this room here,
+
+1114
+00:47:16,070 --> 00:47:18,660
+and the majority of web
+developers out there,
+
+1115
+00:47:18,660 --> 00:47:20,230
+who probably do
+feel that they have
+
+1116
+00:47:20,230 --> 00:47:23,020
+no role in the conversation.
+
+1117
+00:47:23,020 --> 00:47:27,280
+MALE SPEAKER: So can I just
+ask for little straw poll here?
+
+1118
+00:47:27,280 --> 00:47:29,955
+Out of everybody in this
+room here, who has actually &mdash;
+
+1119
+00:47:29,955 --> 00:47:33,490
+or who does &mdash;
+participate particularly
+
+1120
+00:47:33,490 --> 00:47:36,962
+in the W3C process?
+
+1121
+00:47:36,962 --> 00:47:38,240
+OK.
+
+1122
+00:47:38,240 --> 00:47:38,740
+So &mdash;
+
+1123
+00:47:38,740 --> 00:47:41,234
+SCOTT JENSON: [INAUDIBLE],
+or specifically W3C?
+
+1124
+00:47:41,234 --> 00:47:42,900
+MALE SPEAKER:
+Specifically W3C, I think,
+
+1125
+00:47:42,900 --> 00:47:44,540
+since we're talking
+about the web.
+
+1126
+00:47:44,540 --> 00:47:49,585
+And I guess I'm making &mdash; the
+web and W3C are kind of &mdash; well,
+
+1127
+00:47:49,585 --> 00:47:50,295
+it needn't be.
+
+1128
+00:47:50,295 --> 00:47:53,450
+So is the W3C the future
+guardian of the web?
+
+1129
+00:47:53,450 --> 00:47:55,350
+Well, that's another
+question, I guess.
+
+1130
+00:47:55,350 --> 00:47:58,650
+Someone could ask it.
+
+1131
+00:47:58,650 --> 00:48:01,000
+What I think is the view
+this is expressed here
+
+1132
+00:48:01,000 --> 00:48:06,274
+is that that's not
+working particularly well.
+
+1133
+00:48:06,274 --> 00:48:08,440
+ANDREW SPOONER: But I think
+everybody in this room &mdash;
+
+1134
+00:48:08,440 --> 00:48:10,430
+everybody who contacts
+a browser vendor
+
+1135
+00:48:10,430 --> 00:48:12,467
+and asks them to
+fix a bug, asks them
+
+1136
+00:48:12,467 --> 00:48:14,550
+to add a feature &mdash; you've
+all got a voice in this.
+
+1137
+00:48:14,550 --> 00:48:15,487
+They're all listening.
+
+1138
+00:48:15,487 --> 00:48:18,070
+I know that there was &mdash; I can't
+remember the exact numbers &mdash; x
+
+1139
+00:48:18,070 --> 00:48:22,701
+thousand of bugs reported to
+the Internet Explorer team.
+
+1140
+00:48:22,701 --> 00:48:24,950
+And there's a team of hundreds
+of people sitting there
+
+1141
+00:48:24,950 --> 00:48:26,910
+listening to those,
+implementing those changes.
+
+1142
+00:48:26,910 --> 00:48:28,880
+So if you're sending
+your requests in,
+
+1143
+00:48:28,880 --> 00:48:30,560
+there's people listening to it.
+
+1144
+00:48:30,560 --> 00:48:33,740
+And ultimately, I think
+everyone in this room
+
+1145
+00:48:33,740 --> 00:48:37,660
+has a chance to input
+into where it goes.
+
+1146
+00:48:37,660 --> 00:48:41,170
+SCOTT JENSON: I would ask if
+you've had experience of that.
+
+1147
+00:48:41,170 --> 00:48:47,190
+Because just get to
+give some examples,
+
+1148
+00:48:47,190 --> 00:48:50,220
+there's a bug in Firefox
+from about 2002, 2003,
+
+1149
+00:48:50,220 --> 00:48:54,580
+to do with fragment
+identifiers in iframes.
+
+1150
+00:48:54,580 --> 00:48:56,100
+It was opened in 2003.
+
+1151
+00:48:56,100 --> 00:48:58,134
+I bumped it a year and half ago.
+
+1152
+00:48:58,134 --> 00:49:00,550
+Somebody else had bumped it
+about three years before that.
+
+1153
+00:49:00,550 --> 00:49:03,230
+No nothing from Mozilla.
+
+1154
+00:49:03,230 --> 00:49:05,410
+And in terms of
+Internet Explorer,
+
+1155
+00:49:05,410 --> 00:49:07,610
+I don't know who to talk to.
+
+1156
+00:49:07,610 --> 00:49:10,000
+I don't know how I can
+get at those people.
+
+1157
+00:49:10,000 --> 00:49:13,040
+Apple &mdash; we all know
+the story there.
+
+1158
+00:49:13,040 --> 00:49:16,060
+And, for example, when the
+developer tooling guys were up,
+
+1159
+00:49:16,060 --> 00:49:18,130
+both of the people
+who represented people
+
+1160
+00:49:18,130 --> 00:49:19,300
+who are working on
+these things &mdash; when
+
+1161
+00:49:19,300 --> 00:49:20,674
+asked, how do we
+contribute, kind
+
+1162
+00:49:20,674 --> 00:49:23,010
+of shrunk up and
+wrung their hands.
+
+1163
+00:49:23,010 --> 00:49:24,915
+I just don't think
+it's true that these
+
+1164
+00:49:24,915 --> 00:49:26,840
+are friendly environments
+that we can get to.
+
+1165
+00:49:26,840 --> 00:49:28,423
+ANDREW SPOONER:
+Connect.Microsoft.com,
+
+1166
+00:49:28,423 --> 00:49:30,127
+where you can
+submit your request,
+
+1167
+00:49:30,127 --> 00:49:32,585
+and there's people &mdash; there's
+paid Microsoft employees &mdash; who
+
+1168
+00:49:32,585 --> 00:49:33,900
+will then respond to
+you and say, right, yes,
+
+1169
+00:49:33,900 --> 00:49:34,691
+we know about this.
+
+1170
+00:49:34,691 --> 00:49:36,270
+Or say, this isn't
+a feature we're
+
+1171
+00:49:36,270 --> 00:49:37,580
+interested in implementing.
+
+1172
+00:49:37,580 --> 00:49:39,660
+And you'll get a response from
+a human being through that,
+
+1173
+00:49:39,660 --> 00:49:41,760
+and there's loads of people in
+there who will respond to you.
+
+1174
+00:49:41,760 --> 00:49:43,230
+MALE SPEAKER: OK, let's
+go to the audience.
+
+1175
+00:49:43,230 --> 00:49:44,490
+We've got someone at the back.
+
+1176
+00:49:44,490 --> 00:49:46,560
+We've got Guy, and
+then &mdash; hang on a second.
+
+1177
+00:49:46,560 --> 00:49:47,810
+Let's go to the back first.
+
+1178
+00:49:47,810 --> 00:49:52,640
+
+1179
+00:49:52,640 --> 00:49:53,560
+AUDIENCE: Hi.
+
+1180
+00:49:53,560 --> 00:49:58,600
+I'm kind of biased
+on this, but I
+
+1181
+00:49:58,600 --> 00:50:02,030
+think that out of the four
+rendering engines that we
+
+1182
+00:50:02,030 --> 00:50:05,310
+saw at the beginning, three
+of them are open source.
+
+1183
+00:50:05,310 --> 00:50:11,150
+So basically, people can either
+work on the engines themselves
+
+1184
+00:50:11,150 --> 00:50:14,280
+or find someone who
+will do this for him.
+
+1185
+00:50:14,280 --> 00:50:19,350
+And the reason I'm biased,
+because I'm currently working &mdash;
+
+1186
+00:50:19,350 --> 00:50:22,280
+I started a crowd
+funding effort yesterday
+
+1187
+00:50:22,280 --> 00:50:28,220
+to add feature &mdash; the
+picture element to Blink.
+
+1188
+00:50:28,220 --> 00:50:33,170
+And I think that the future
+should have more of that.
+
+1189
+00:50:33,170 --> 00:50:36,306
+More people adding features
+to the open source rendering
+
+1190
+00:50:36,306 --> 00:50:36,805
+thing.
+
+1191
+00:50:36,805 --> 00:50:38,910
+MALE SPEAKER: OK.
+
+1192
+00:50:38,910 --> 00:50:42,150
+Coming forward in the room, Guy.
+
+1193
+00:50:42,150 --> 00:50:45,690
+ALICE: I think that's a pretty
+high barrier to entry, though,
+
+1194
+00:50:45,690 --> 00:50:48,310
+isn't it, for most
+web developers?
+
+1195
+00:50:48,310 --> 00:50:49,734
+MALE SPEAKER: Yes, that is a &mdash;
+
+1196
+00:50:49,734 --> 00:50:51,400
+ALICE: That, as a
+suggestion, it seems &mdash;
+
+1197
+00:50:51,400 --> 00:50:55,259
+TOM ASHWORTH: Well the
+Extensible Web Manifesto
+
+1198
+00:50:55,259 --> 00:50:56,050
+has been mentioned.
+
+1199
+00:50:56,050 --> 00:50:57,790
+If we work towards
+that ideal, where
+
+1200
+00:50:57,790 --> 00:51:01,116
+we expose more of the kind
+of primitives that are there
+
+1201
+00:51:01,116 --> 00:51:03,532
+in the browsers but we currently
+have no access to &mdash; if we
+
+1202
+00:51:03,532 --> 00:51:05,470
+expose them to
+developers, then I
+
+1203
+00:51:05,470 --> 00:51:08,700
+think we stand a chance of
+being able to at least iterate
+
+1204
+00:51:08,700 --> 00:51:12,960
+more quickly towards an API
+that we can then standardize.
+
+1205
+00:51:12,960 --> 00:51:16,490
+ALICE: I think, given the
+choice between downloading
+
+1206
+00:51:16,490 --> 00:51:21,770
+and patching Chrome myself or
+just working around a problem,
+
+1207
+00:51:21,770 --> 00:51:25,160
+I would work around it &mdash;
+like, pragmatically.
+
+1208
+00:51:25,160 --> 00:51:25,810
+[INAUDIBLE]
+
+1209
+00:51:25,810 --> 00:51:28,482
+[LIGHT LAUGHTER]
+
+1210
+00:51:28,482 --> 00:51:30,440
+AUDIENCE: It's a little
+different &mdash; in general,
+
+1211
+00:51:30,440 --> 00:51:32,810
+the notion of [INAUDIBLE]
+as the web evolved,
+
+1212
+00:51:32,810 --> 00:51:34,950
+and I think we're losing
+sight of the server side.
+
+1213
+00:51:34,950 --> 00:51:37,350
+Like we keep talking about the
+clients and those components,
+
+1214
+00:51:37,350 --> 00:51:38,725
+but I think the
+future of the web
+
+1215
+00:51:38,725 --> 00:51:41,720
+lies a lot with the
+services consumed on it.
+
+1216
+00:51:41,720 --> 00:51:44,410
+And I think, clearly, all these
+things and all these devices
+
+1217
+00:51:44,410 --> 00:51:45,780
+are a part of the technology.
+
+1218
+00:51:45,780 --> 00:51:48,040
+But what you can do on
+the web &mdash; especially
+
+1219
+00:51:48,040 --> 00:51:51,150
+in the developing world,
+or in access to banking,
+
+1220
+00:51:51,150 --> 00:51:54,220
+or facilities, or
+payments by the phone,
+
+1221
+00:51:54,220 --> 00:51:59,155
+or ordering your groceries,
+or calling a cab &mdash; all
+
+1222
+00:51:59,155 --> 00:52:01,180
+of those components, I
+think, are a big part
+
+1223
+00:52:01,180 --> 00:52:02,280
+of the future of the web.
+
+1224
+00:52:02,280 --> 00:52:04,170
+So the fact that it
+might still be HTML &mdash;
+
+1225
+00:52:04,170 --> 00:52:07,380
+or maybe we're not evolving
+it &mdash; is sometimes less critical
+
+1226
+00:52:07,380 --> 00:52:11,640
+versus the creativity
+or the disruptions that
+
+1227
+00:52:11,640 --> 00:52:15,430
+happen on the business side of
+it, on the server side of it.
+
+1228
+00:52:15,430 --> 00:52:19,050
+MALE SPEAKER: OK, can we drop
+on row forwards, I think?
+
+1229
+00:52:19,050 --> 00:52:20,570
+OK, two rows.
+
+1230
+00:52:20,570 --> 00:52:22,450
+AUDIENCE: Thank you.
+
+1231
+00:52:22,450 --> 00:52:24,639
+In terms of having
+an input, which
+
+1232
+00:52:24,639 --> 00:52:26,430
+is what Andrew was
+talking to about getting
+
+1233
+00:52:26,430 --> 00:52:29,870
+in touch with people, I
+found an inconsistency SVG.
+
+1234
+00:52:29,870 --> 00:52:31,264
+I wrote a blog post about it.
+
+1235
+00:52:31,264 --> 00:52:32,680
+I managed to get
+in touch with one
+
+1236
+00:52:32,680 --> 00:52:34,100
+of the editors of the SVG spec.
+
+1237
+00:52:34,100 --> 00:52:35,058
+I showed him the thing.
+
+1238
+00:52:35,058 --> 00:52:37,490
+He's updating SVG spec
+to fix that thing.
+
+1239
+00:52:37,490 --> 00:52:39,891
+It does happen, it does
+work, it is out there,
+
+1240
+00:52:39,891 --> 00:52:42,000
+and you can get involved in it.
+
+1241
+00:52:42,000 --> 00:52:46,320
+MALE SPEAKER: OK Go
+right to the back,
+
+1242
+00:52:46,320 --> 00:52:50,421
+and then we'll
+start to close down.
+
+1243
+00:52:50,421 --> 00:52:52,170
+AUDIENCE: So we can
+have examples of times
+
+1244
+00:52:52,170 --> 00:52:54,120
+when community input has worked.
+
+1245
+00:52:54,120 --> 00:52:56,730
+What we need is an example
+of when it hasn't, right?
+
+1246
+00:52:56,730 --> 00:52:58,850
+When the will of the
+community has not
+
+1247
+00:52:58,850 --> 00:53:01,410
+been exerted over
+browser vendors.
+
+1248
+00:53:01,410 --> 00:53:05,850
+So maybe an example
+of that might be DRM.
+
+1249
+00:53:05,850 --> 00:53:08,790
+An example might be DRM,
+where it's going in browsers.
+
+1250
+00:53:08,790 --> 00:53:11,365
+And generally speaking,
+that's not what people want.
+
+1251
+00:53:11,365 --> 00:53:12,890
+MALE SPEAKER: OK, fine.
+
+1252
+00:53:12,890 --> 00:53:15,690
+I want to ask Natasha, who's
+sitting right in the front
+
+1253
+00:53:15,690 --> 00:53:19,157
+here, and put her on the spot.
+
+1254
+00:53:19,157 --> 00:53:21,490
+Because I know that she has
+something interesting to say
+
+1255
+00:53:21,490 --> 00:53:25,895
+about when people are invited
+to take part, they don't.
+
+1256
+00:53:25,895 --> 00:53:28,270
+NATASHA: What, so
+W3C in specific?
+
+1257
+00:53:28,270 --> 00:53:32,430
+Well, I've been very fortunate
+with contributing to W3C.
+
+1258
+00:53:32,430 --> 00:53:36,702
+I co-chair a group,
+and I'm actually
+
+1259
+00:53:36,702 --> 00:53:38,910
+filling Joe's shoes right
+now, which is pretty tough,
+
+1260
+00:53:38,910 --> 00:53:40,480
+but I'm giving it all I've got.
+
+1261
+00:53:40,480 --> 00:53:41,240
+MALE SPEAKER: And not
+very pleasant, either.
+
+1262
+00:53:41,240 --> 00:53:43,355
+NATASHA: But we need
+people to help out.
+
+1263
+00:53:43,355 --> 00:53:45,480
+And we're so grateful that
+people want to help out.
+
+1264
+00:53:45,480 --> 00:53:48,310
+And we know there's a
+membership issue there,
+
+1265
+00:53:48,310 --> 00:53:51,100
+but if you want to help out
+on what we're doing in the web
+
+1266
+00:53:51,100 --> 00:53:52,640
+group, then please
+come speak to us.
+
+1267
+00:53:52,640 --> 00:53:58,110
+There's lots of W3C guys are
+moving to using open tools,
+
+1268
+00:53:58,110 --> 00:54:01,617
+like GitHub and Twitter.
+
+1269
+00:54:01,617 --> 00:54:02,700
+We have a Twitter account.
+
+1270
+00:54:02,700 --> 00:54:05,640
+And of course, the
+W3C is open anyway.
+
+1271
+00:54:05,640 --> 00:54:07,920
+So if you want to
+contribute, you can.
+
+1272
+00:54:07,920 --> 00:54:10,600
+And please come and speak to me
+about that later at the party.
+
+1273
+00:54:10,600 --> 00:54:12,632
+I'd be very happy to
+speak to you about that.
+
+1274
+00:54:12,632 --> 00:54:13,456
+MALE SPEAKER: Thanks, Natasha.
+
+1275
+00:54:13,456 --> 00:54:14,950
+OK, so the answer to
+the question &mdash; Tom,
+
+1276
+00:54:14,950 --> 00:54:16,616
+do you have something
+to say about that?
+
+1277
+00:54:16,616 --> 00:54:19,310
+TOM ASHWORTH: Yeah, the
+mention of DRM is interesting.
+
+1278
+00:54:19,310 --> 00:54:20,960
+It's not an area I
+know anything about,
+
+1279
+00:54:20,960 --> 00:54:22,876
+so I'm not going to speak
+specifically to DRM.
+
+1280
+00:54:22,876 --> 00:54:28,700
+But the idea of people who have
+a vested interest in that kind
+
+1281
+00:54:28,700 --> 00:54:31,949
+of technology encroaching on,
+say, issues of net neutrality,
+
+1282
+00:54:31,949 --> 00:54:34,115
+is something that I think
+is really important for us
+
+1283
+00:54:34,115 --> 00:54:34,620
+to talk about.
+
+1284
+00:54:34,620 --> 00:54:36,828
+I mean, if we're talking
+about the future of the web,
+
+1285
+00:54:36,828 --> 00:54:39,120
+we're talking about
+a situation where
+
+1286
+00:54:39,120 --> 00:54:43,965
+I have to pay my ISP
+for a group of websites
+
+1287
+00:54:43,965 --> 00:54:45,120
+that I'm allowed to visit.
+
+1288
+00:54:45,120 --> 00:54:49,670
+And I have to extend that
+package for just $5.99 a month
+
+1289
+00:54:49,670 --> 00:54:51,570
+to get access to this
+other search engine,
+
+1290
+00:54:51,570 --> 00:54:54,300
+or this website that wasn't
+on their original list.
+
+1291
+00:54:54,300 --> 00:54:59,240
+And they couldn't &mdash; there was
+some kind of hostility between
+
+1292
+00:54:59,240 --> 00:55:01,785
+the two parties or whatever.
+
+1293
+00:55:01,785 --> 00:55:03,410
+MALE SPEAKER: There's
+a bigger question
+
+1294
+00:55:03,410 --> 00:55:05,697
+that we had to skip exactly
+on this topic, I'm afraid.
+
+1295
+00:55:05,697 --> 00:55:07,530
+TOM ASHWORTH: But there's
+a bigger community
+
+1296
+00:55:07,530 --> 00:55:08,570
+that needs to be
+involved in that.
+
+1297
+00:55:08,570 --> 00:55:10,060
+The web community
+is a small part
+
+1298
+00:55:10,060 --> 00:55:11,820
+of the group of people
+who are involved
+
+1299
+00:55:11,820 --> 00:55:16,510
+in ensuring we keep or maintain
+the kind of net neutrality
+
+1300
+00:55:16,510 --> 00:55:17,984
+that we wish to have.
+
+1301
+00:55:17,984 --> 00:55:19,400
+And it's not my
+area of expertise,
+
+1302
+00:55:19,400 --> 00:55:22,810
+but I sometimes feel like
+we sort of close ourselves
+
+1303
+00:55:22,810 --> 00:55:25,230
+in and say, well let's keep
+the web bit of this good &mdash;
+
+1304
+00:55:25,230 --> 00:55:27,210
+the HTML CSS
+JavaScript, that stack.
+
+1305
+00:55:27,210 --> 00:55:28,259
+Let's keep this good.
+
+1306
+00:55:28,259 --> 00:55:30,550
+As long as we look after
+this, everything else be fine.
+
+1307
+00:55:30,550 --> 00:55:32,210
+Sometimes, I wish we
+could take a step back,
+
+1308
+00:55:32,210 --> 00:55:33,260
+and say, you know what?
+
+1309
+00:55:33,260 --> 00:55:35,440
+Maybe we could stop worrying
+about that for a bit.
+
+1310
+00:55:35,440 --> 00:55:38,590
+And say, let's get the people
+who work on the networking
+
+1311
+00:55:38,590 --> 00:55:41,640
+hardware, and who do
+all these other aspects,
+
+1312
+00:55:41,640 --> 00:55:43,030
+and bring us all
+together to make
+
+1313
+00:55:43,030 --> 00:55:47,130
+sure we can, going forward,
+keep the web and the internet
+
+1314
+00:55:47,130 --> 00:55:48,490
+in the way we'd like it to be.
+
+1315
+00:55:48,490 --> 00:55:49,880
+MALE SPEAKER: OK, thank you.
+
+1316
+00:55:49,880 --> 00:55:51,500
+Now, this is unscripted.
+
+1317
+00:55:51,500 --> 00:55:54,670
+Alice and down the
+line, in three words,
+
+1318
+00:55:54,670 --> 00:55:59,048
+then, to close us out today &mdash;
+what is the future of the web?
+
+1319
+00:55:59,048 --> 00:56:00,044
+ALICE: I don't know.
+
+1320
+00:56:00,044 --> 00:56:03,530
+[LAUGHTER AND CHEERING]
+
+1321
+00:56:03,530 --> 00:56:07,514
+
+1322
+00:56:07,514 --> 00:56:10,004
+MALE SPEAKER: Tom.
+
+1323
+00:56:10,004 --> 00:56:11,740
+[INAUDIBLE] that response.
+
+1324
+00:56:11,740 --> 00:56:14,510
+That was brilliant.
+
+1325
+00:56:14,510 --> 00:56:22,780
+TOM ASHWORTH: Kids,
+freedom, help?
+
+1326
+00:56:22,780 --> 00:56:23,650
+I dunno.
+
+1327
+00:56:23,650 --> 00:56:24,960
+MALE SPEAKER: Scott.
+
+1328
+00:56:24,960 --> 00:56:26,390
+SCOTT JENSON: Lots of arguing.
+
+1329
+00:56:26,390 --> 00:56:27,332
+[LAUGHTER]
+
+1330
+00:56:27,332 --> 00:56:28,790
+MALE SPEAKER:
+Andrew, I get to give
+
+1331
+00:56:28,790 --> 00:56:29,957
+the privilege of being last.
+
+1332
+00:56:29,957 --> 00:56:31,748
+ANDREW SPOONER: Oh,
+I'd just say connected.
+
+1333
+00:56:31,748 --> 00:56:33,340
+MALE SPEAKER:
+Connected, connected.
+
+1334
+00:56:33,340 --> 00:56:36,290
+OK, Jeni?
+
+1335
+00:56:36,290 --> 00:56:38,170
+JENI TENNISON:
+Redecentralization,
+
+1336
+00:56:38,170 --> 00:56:40,620
+just because I like that word.
+
+1337
+00:56:40,620 --> 00:56:42,330
+And data.
+
+1338
+00:56:42,330 --> 00:56:43,540
+That's only two.
+
+1339
+00:56:43,540 --> 00:56:44,330
+MALE SPEAKER: OK.
+
+1340
+00:56:44,330 --> 00:56:46,420
+Thank you very
+much to our panel.
+
+1341
+00:56:46,420 --> 00:56:53,471
+[APPLAUSE]
+

@@ -1084,9 +1084,9 @@ var videos = {
         "id": "ktwJ-EDiZoU"
     },
     "kVSo4buDAEE": {
-        "summary": "The DevTools have evolved over the past year to offer a number of features that can enrich your development workflow, helping you achieve more common tasks without the need to leave your browser. This session introduces you to some of these features, including Workspaces &mdash; a convenient way to create and edit new applications. We will also look at a better Sass editing workflow, where changes can be made directly to your source files without flipping back and forth with a compiler to generate your CSS.",
-        "viewCount": "15051",
-        "rating": 4.962963,
+        "summary": "The DevTools have evolved over the past year to offer a number of features that can enrich your development workflow, helping you achieve more common tasks without the need to leave your browser. . This session introduces you to some of these features, including Workspaces &mdash; a convenient way to create and edit new applications. . We will also look at a better Sass editing workflow, where changes can be made directly to your source files without flipping back and forth with a compiler to generate your CSS.",
+        "viewCount": "29906",
+        "rating": 4.9649124,
         "title": "Improving Your 2013 Productivity With The Chrome DevTools",
         "id": "kVSo4buDAEE"
     },
@@ -1126,7 +1126,7 @@ var videos = {
         "id": "ld7kZRpMGb8"
     },
     "lkwkx8NO4CY": {
-        "summary": "Hundreds of millions of users rely on Google Translate â what new markets your apps, sites, or analytics unlock with our Translate API on the Google Cloud Platform? We'll explore the AI that Google uses to analyze billions of documents across 60+ languages. Understanding how statistical machine translation works can help identify appropriate commercial applications, such as user-generated content, news and reviews, and localization. For all I/O 2013 sessions, go to https://developers.google.com/live",
+        "summary": "Hundreds of millions of users rely on Google Translate. What new markets your apps, sites, or analytics unlock with our Translate API on the Google Cloud Platform? We'll explore the AI that Google uses to analyze billions of documents across 60+ languages. Understanding how statistical machine translation works can help identify appropriate commercial applications, such as user-generated content, news and reviews, and localization. For all I/O 2013 sessions, go to https://developers.google.com/live",
         "viewCount": "258",
         "rating": 5,
         "title": "Google I/O 2013 &mdash; Found in Translation: Going Global with the Translate API",
@@ -1378,7 +1378,7 @@ var videos = {
         "id": "OXQsZSWBDDM"
     },
     "p2HzZkd2A40": {
-        "summary": "WebRTC implements open standards for realtime, plugin-free video, audio and data communication. The core WebRTC APIs getUserMedia, RTCPeerConnection and DataChannel â have now been implemented across Chrome and Firefox. In this session, we show you how to get started with building a WebRTC app:. &mdash; what's a MediaStream (aka getUserMedia) and how can I use it?. &mdash; resolution constraints. &mdash; signalling: what is it and how can I set it up?. &mdash; servers: what do I need?. &mdash; RTCPeerConnection: WebRTCs most powerful API. &mdash; RTCDataChannel: realtime communication of arbitrary data. &mdash; integrating WebRTC with Web Audio. &mdash; interoperability. &mdash; security. During the session, we talk through code examples, live demos and production apps. For all I/O 2013 sessions, go to https://developers.google.com/live",
+        "summary": "WebRTC implements open standards for realtime, plugin-free video, audio and data communication. The core WebRTC APIs getUserMedia, RTCPeerConnection and DataChannel have now been implemented across Chrome and Firefox. In this session, we show you how to get started with building a WebRTC app: what's a MediaStream (aka getUserMedia) and how can I use it?, resolution constraints, signalling: what is it and how can I set it up?, servers: what do I need?, RTCPeerConnection: WebRTC's most powerful API, RTCDataChannel: realtime communication of arbitrary data, integrating WebRTC with Web Audio, interoperability, security. During the session, we talk through code examples, live demos and production apps. For all I/O 2013 sessions, go to https://developers.google.com/live",
         "viewCount": "1799",
         "rating": 4.923077,
         "title": "Google I/O 2013 &mdash; Real-time communication with WebRTC",
@@ -1532,7 +1532,7 @@ var videos = {
         "id": "RqsIPFPoQpQ"
     },
     "RSBrSQRGdmA": {
-        "summary": "At Google, we're making more and more use of structured data to help users find your content. In addition to a variety of rich snippets that enhance search results, we're now showing event calendars for cities and venues, reviews for movies in the Knowledge Graph, ingredient filters for recipes, and more. How do you ensure your site is participating in features like these? We'll answer that question by demoing a suite of new and updated tools â including Data Highlighter and the Structured Data Dashboard â that make providing and validating your site's structured data easier than ever. For all I/O 2013 sessions, go to https://developers.google.com/live",
+        "summary": "At Google, we're making more and more use of structured data to help users find your content. In addition to a variety of rich snippets that enhance search results, we're now showing event calendars for cities and venues, reviews for movies in the Knowledge Graph, ingredient filters for recipes, and more. How do you ensure your site is participating in features like these? We'll answer that question by demoing a suite of new and updated tools &mdash; including Data Highlighter and the Structured Data Dashboard &mdash; that make providing and validating your site's structured data easier than ever. For all I/O 2013 sessions, go to https://developers.google.com/live",
         "viewCount": "235",
         "rating": 5,
         "title": "Google I/O 2013 &mdash; Hands-On: New Google Tools for Structured Data",
@@ -2795,13 +2795,6 @@ var videos = {
         "title": "Google I/O 2013 &mdash; Actions in the inbox, powered by schemas",
         "id": "eH8KwfdkSqU"
     },
-    "kVSo4buDAEE": {
-        "summary": "The DevTools have evolved over the past year to offer a number of features that can enrich your development workflow, helping you achieve more common tasks without the need to leave your browser. . This session introduces you to some of these features, including Workspaces &mdash; a convenient way to create and edit new applications. . We will also look at a better Sass editing workflow, where changes can be made directly to your source files without flipping back and forth with a compiler to generate your CSS.",
-        "viewCount": "29906",
-        "rating": 4.9649124,
-        "title": "Improving Your 2013 Productivity With The Chrome DevTools",
-        "id": "kVSo4buDAEE"
-    },
     "a9TPlPc-QBE": {
         "summary": "Tune in to hear what's happening at I/O with Google Drive! There's a lot going on so get some tips from the team on how to make the most of the event (even if you don't have a ticket)!. Links from today's talk:. I/O Apps schedule &mdash; https://developers.google.com/events/io/sessions#t-chrome-apps. I/O Extended &mdash; https://developers.google.com/events/io/io-extended. GDL &mdash; https://developers.google.com/live/",
         "viewCount": "1117",
@@ -2836,5 +2829,54 @@ var videos = {
         "rating": 5,
         "title": "Root Access: Open Source and Google",
         "id": "G8_KsYkAsEQ"
+    },
+    "e29D1daRYrQ": {
+        "title": "EdgeConf 3: Components",
+        "summary": "We've see the future, and it's looking modular. Corporations with large numbers of sites increasingly build complex reusable components, and we've seen frameworks emerge to organise these components on a page (e.g. Facebook's React or FT's Fruit Machine). At the same time, web standards are evolving to give us a native solution in the form of web components. How do we get there from here? And for smaller organisations and single developers, will there be a market in components? What standard will drive that?",
+        "id": "e29D1daRYrQ",
+        "viewCount": "599",
+        "rating": 5
+    },
+    "C4Zz0tCCcIk": {
+        "title": "EdgeConf 3: Build Process",
+        "summary": "Everyone has a compile step these days, whether it's CSS preprocessing, bundling, minification, linting, testing, or optimisation, we all want to make our lives easier by automating build and deploy. But to some, the more complex the build gets, the more we get away from the fundamental motivations for many of the web technologies we love to use. Should we fix this in tooling, or by just making build processes even more sophisticated, or with browser developments like HTTP 2.0 which negate the need for some or all of the build step?",
+        "id": "C4Zz0tCCcIk",
+        "viewCount": "404",
+        "rating": 5
+    },
+    "tQG6PljqmLc": {
+        "title": "EdgeConf 3: Developer Tooling",
+        "summary": "First there was Firebug, now Chrome DevTools, but recently IE's developer tools have taken a quantum leap forward in version 11, and Mozilla has some unique new features to their built in tools. Tools outside of the browser now integrate far more intelligently, and it's even possible to use one browser's devtools to inspect a different browser. Are we still looking for the best tool workflow, or is there room for all these different tools?",
+        "id": "tQG6PljqmLc",
+        "viewCount": "507",
+        "rating": 5
+    },
+    "6u03xYkwMVI": {
+        "title": "EdgeConf 3: Future Web",
+        "summary": "'Responsive' currently seems to mostly mean that your website adapts to a changing viewport width. But there are so many other factors to which web interfaces can respond &mdash; time of day, geolocation, battery level, connection speed, viewport height, distance from user to screen, existence and type of pointing device, existence and type of text entry device, pixel density and colour depth of the screen. The list is virtually endless. There's a compromise to be made, between ease of measurement, cost and impact of being responsive. What are the right factors to invest in for the next few years?",
+        "id": "6u03xYkwMVI",
+        "viewCount": "395",
+        "rating": 5
+    },
+    "npHcvAV2lew": {
+        "title": "EdgeConf 3: Accessibility",
+        "summary": "The web is changing fast. Are accessibility standards keeping pace? What should developers of single page apps do to help users of assistive technologies? How do we anticipate assistive technologies developing in future? To what extent do new web technologies such as canvas and the web audio API either help or hinder those with accessibility needs? How much can we afford to invest in accessibility?",
+        "id": "npHcvAV2lew",
+        "viewCount": "299",
+        "rating": 5
+    },
+    "bZjxGSwn17o": {
+        "title": "EdgeConf 3: Page Load Performance",
+        "summary": "This is a perennial topic but one that is changing rapidly as browsers constantly tweak their behaviour and major advances like HTTP 2 threaten to completely disrupt the received wisdom. Today's best practices may be tomorrow's anti patterns. Tools such as WebPageTest and the NavigationTiming API give us more data than we've ever had before; how can developers best harness this new wealth of information?",
+        "id": "bZjxGSwn17o",
+        "viewCount": "425",
+        "rating": 5
+    },
+    "lRY8jHmiIIw": {
+        "title": "EdgeConf 3: Pointers and Interactions",
+        "summary": "Web UIs are getting better at detecting and optimising for touch, but it continues to be a struggle, with much lower level primitives to work with than in the native world. Should we be aiming to abstract all spacial interaction into a 'pointer'? How can more complex spacial interactions like gestures and 3D motion be handled without extraordinary amounts of effort?",
+        "id": "lRY8jHmiIIw",
+        "viewCount": "287",
+        "rating": 5
     }
 }

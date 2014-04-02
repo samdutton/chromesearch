@@ -1,0 +1,6516 @@
+1
+00:00:00,000 --> 00:00:05,568
+
+2
+00:00:05,568 --> 00:00:07,670
+STEVE: So welcome,
+everybody, back.
+
+3
+00:00:07,670 --> 00:00:09,560
+This is the dreaded
+after-lunch event
+
+4
+00:00:09,560 --> 00:00:11,620
+when you're all in
+a carbohydrate coma.
+
+5
+00:00:11,620 --> 00:00:14,650
+So hopefully you'll all wake
+up with the fierce debate
+
+6
+00:00:14,650 --> 00:00:18,040
+that is about to
+be ignited here.
+
+7
+00:00:18,040 --> 00:00:20,650
+The inventor of
+the Onslyde system,
+
+8
+00:00:20,650 --> 00:00:24,180
+Wesley, assures me it's
+going to be working.
+
+9
+00:00:24,180 --> 00:00:28,469
+So please put your hand
+up and give an opinion.
+
+10
+00:00:28,469 --> 00:00:30,260
+You don't have to just
+be putting, standing
+
+11
+00:00:30,260 --> 00:00:32,343
+to ask a question, stand
+up, let's ask an opinion.
+
+12
+00:00:32,343 --> 00:00:34,320
+We want to hear what
+you think as well.
+
+13
+00:00:34,320 --> 00:00:36,289
+Quickly introduce
+you to the panel.
+
+14
+00:00:36,289 --> 00:00:37,830
+Actually, we'll
+start from this side.
+
+15
+00:00:37,830 --> 00:00:41,514
+Pat Meenan from Google, the
+inventor of Web Page Test,
+
+16
+00:00:41,514 --> 00:00:43,180
+basically the best
+page load performance
+
+17
+00:00:43,180 --> 00:00:44,920
+testing tool out there.
+
+18
+00:00:44,920 --> 00:00:48,390
+Wesley Hales from
+Shape Security,
+
+19
+00:00:48,390 --> 00:00:53,950
+front-end developer, inventor
+of Onslyde and loadreport.js.
+
+20
+00:00:53,950 --> 00:00:57,460
+We have Luke Blaney from
+the FT, did a lot of work
+
+21
+00:00:57,460 --> 00:01:00,430
+on speeding up the FT way back
+and is a big fan of Varnish,
+
+22
+00:01:00,430 --> 00:01:02,100
+apparently.
+
+23
+00:01:02,100 --> 00:01:09,150
+We have Peter Hedenskog,
+from Cybercom Group,
+
+24
+00:01:09,150 --> 00:01:11,850
+creator of sitespeed.io
+and Browser Time.
+
+25
+00:01:11,850 --> 00:01:15,570
+And last, but not least, we have
+Andy Davies, from NCC Group,
+
+26
+00:01:15,570 --> 00:01:19,290
+Web Performance Velocity
+speaker, and the person who's
+
+27
+00:01:19,290 --> 00:01:21,940
+going to kick off
+with the introduction.
+
+28
+00:01:21,940 --> 00:01:22,440
+Andy.
+
+29
+00:01:22,440 --> 00:01:28,654
+
+30
+00:01:28,654 --> 00:01:34,420
+ANDY DAVIES: Yes.
+
+31
+00:01:34,420 --> 00:01:38,650
+OK, so Steve's already
+introduced me, but I'm Andy,
+
+32
+00:01:38,650 --> 00:01:41,320
+and I'm frustrated.
+
+33
+00:01:41,320 --> 00:01:46,110
+And the reason I'm frustrated
+is, the web is too slow.
+
+34
+00:01:46,110 --> 00:01:52,420
+Or rather, too many
+sites are too slow.
+
+35
+00:01:52,420 --> 00:01:55,760
+Because we've been
+talking about why
+
+36
+00:01:55,760 --> 00:01:58,740
+we need to make web pages
+faster for a long time.
+
+37
+00:01:58,740 --> 00:02:04,550
+Steve Souders first invented
+the concept back in 2006, 2007,
+
+38
+00:02:04,550 --> 00:02:08,220
+he wrote his book,
+and we understand
+
+39
+00:02:08,220 --> 00:02:10,630
+how to make sites faster.
+
+40
+00:02:10,630 --> 00:02:13,620
+And this is one of the reasons
+why I really get frustrated.
+
+41
+00:02:13,620 --> 00:02:16,770
+We know that to
+make sites faster,
+
+42
+00:02:16,770 --> 00:02:18,810
+we need to minimize latency.
+
+43
+00:02:18,810 --> 00:02:24,410
+Whether that's using CDN
+to move our content closer
+
+44
+00:02:24,410 --> 00:02:27,760
+to our users, whether it's
+speeding up our back-ends so
+
+45
+00:02:27,760 --> 00:02:30,460
+the time to first
+byte is quicker.
+
+46
+00:02:30,460 --> 00:02:33,270
+We know latency doesn't change.
+
+47
+00:02:33,270 --> 00:02:34,870
+It's governed by
+the speed of light.
+
+48
+00:02:34,870 --> 00:02:38,570
+So we have to move to reduce it.
+
+49
+00:02:38,570 --> 00:02:41,490
+The other thing we
+need to do is cut down
+
+50
+00:02:41,490 --> 00:02:43,060
+the number of round
+trips we make,
+
+51
+00:02:43,060 --> 00:02:45,910
+because every round trip is
+bounded by how quickly we can
+
+52
+00:02:45,910 --> 00:02:48,140
+make it, or the
+latency involved.
+
+53
+00:02:48,140 --> 00:02:52,440
+And we do this by turning
+on gzip to compress stuff.
+
+54
+00:02:52,440 --> 00:02:54,860
+We use minification.
+
+55
+00:02:54,860 --> 00:02:58,370
+We merge resources
+together in a build system.
+
+56
+00:02:58,370 --> 00:03:01,210
+And one of the
+reasons we do all this
+
+57
+00:03:01,210 --> 00:03:04,950
+is there's a tension
+between how we build sites,
+
+58
+00:03:04,950 --> 00:03:08,030
+so how we break it down
+into modular components.
+
+59
+00:03:08,030 --> 00:03:09,950
+And the best thought
+way to get them
+
+60
+00:03:09,950 --> 00:03:12,102
+to the browser, for
+the browser to be
+
+61
+00:03:12,102 --> 00:03:14,400
+able to load the page
+quickly, render it quickly.
+
+62
+00:03:14,400 --> 00:03:17,490
+
+63
+00:03:17,490 --> 00:03:21,200
+So we can minimize latency, we
+can reduce the number of round
+
+64
+00:03:21,200 --> 00:03:22,890
+trips, and we can
+minimize blocking,
+
+65
+00:03:22,890 --> 00:03:25,000
+because some of our
+resources block.
+
+66
+00:03:25,000 --> 00:03:27,375
+If we've got CSS, we
+have to wait for the CSS
+
+67
+00:03:27,375 --> 00:03:29,352
+before we can render the page.
+
+68
+00:03:29,352 --> 00:03:31,810
+If we've got JavaScript, we
+have to wait for the JavaScript
+
+69
+00:03:31,810 --> 00:03:35,990
+to execute before
+we can move on.
+
+70
+00:03:35,990 --> 00:03:39,830
+We have web fonts, and depending
+on how we load web fonts,
+
+71
+00:03:39,830 --> 00:03:42,900
+sometimes we have to wait
+for them, sometimes we don't.
+
+72
+00:03:42,900 --> 00:03:45,040
+The other way of
+making sites load fast
+
+73
+00:03:45,040 --> 00:03:47,880
+is to maximize the value we
+get out the first round trip.
+
+74
+00:03:47,880 --> 00:03:50,520
+So when you hear
+Paul Irish on stage
+
+75
+00:03:50,520 --> 00:03:55,300
+at Fluent conference talking
+about, put in the first 15K,
+
+76
+00:03:55,300 --> 00:03:57,160
+this is effectively
+what he's talking about.
+
+77
+00:03:57,160 --> 00:04:01,270
+He's talking about, turn the
+initial, TCP initial congestion
+
+78
+00:04:01,270 --> 00:04:03,480
+window up to 10.
+
+79
+00:04:03,480 --> 00:04:06,830
+Make, so you get a
+roughly about 14.8k,
+
+80
+00:04:06,830 --> 00:04:09,550
+depending on how big your
+TCP segments are in it,
+
+81
+00:04:09,550 --> 00:04:10,970
+and push that out
+to the browser.
+
+82
+00:04:10,970 --> 00:04:13,530
+Everything you need to render
+the page on that first hit.
+
+83
+00:04:13,530 --> 00:04:15,280
+So that's what the
+[INAUDIBLE] [? might ?]
+
+84
+00:04:15,280 --> 00:04:16,845
+do on the mobile site.
+
+85
+00:04:16,845 --> 00:04:18,970
+They have the content, the
+idea that they serve out
+
+86
+00:04:18,970 --> 00:04:23,560
+the content, which is the HTML
+and CSS to render the page.
+
+87
+00:04:23,560 --> 00:04:25,380
+They have the
+enhancements, so where
+
+88
+00:04:25,380 --> 00:04:29,020
+they insert JavaScript,
+so swiping, and then
+
+89
+00:04:29,020 --> 00:04:34,330
+they have the idea of leftovers,
+so advertising, analytics.
+
+90
+00:04:34,330 --> 00:04:37,650
+So we can make our pages faster.
+
+91
+00:04:37,650 --> 00:04:40,810
+But we seem to want to leave
+it to the browsers to do it.
+
+92
+00:04:40,810 --> 00:04:42,784
+And browsers are
+doing a great job,
+
+93
+00:04:42,784 --> 00:04:44,450
+and have done a great
+job over the years
+
+94
+00:04:44,450 --> 00:04:47,730
+of helping us make
+our pages faster.
+
+95
+00:04:47,730 --> 00:04:51,620
+The HTTP standard
+recommends we only
+
+96
+00:04:51,620 --> 00:04:54,740
+have two connections, two TCP
+connections to our server,
+
+97
+00:04:54,740 --> 00:04:56,070
+but we've moved on from that.
+
+98
+00:04:56,070 --> 00:05:00,970
+Typically browsers have four,
+or six, or sometimes even eight.
+
+99
+00:05:00,970 --> 00:05:03,140
+They open TCP
+connections in advance,
+
+100
+00:05:03,140 --> 00:05:06,080
+they speculate that we're
+going to request something
+
+101
+00:05:06,080 --> 00:05:07,450
+from the same server.
+
+102
+00:05:07,450 --> 00:05:10,720
+So we open the connection,
+it's there ready for us to use.
+
+103
+00:05:10,720 --> 00:05:13,270
+We have the preloader,
+which, while we're
+
+104
+00:05:13,270 --> 00:05:16,980
+busy waiting for CSS, or blocked
+on JavaScript to execute,
+
+105
+00:05:16,980 --> 00:05:20,490
+the preloader will go looking
+through the rest of the page.
+
+106
+00:05:20,490 --> 00:05:23,610
+Picking up the
+resources the page
+
+107
+00:05:23,610 --> 00:05:25,630
+will need to
+complete, prioritizing
+
+108
+00:05:25,630 --> 00:05:28,890
+them and downloading them
+in the most optimal order.
+
+109
+00:05:28,890 --> 00:05:30,790
+We've got faster
+JS engines, we've
+
+110
+00:05:30,790 --> 00:05:34,460
+got new image formats,
+faster layout engines,
+
+111
+00:05:34,460 --> 00:05:36,890
+browsers are doing a great job.
+
+112
+00:05:36,890 --> 00:05:38,570
+We also have new protocols.
+
+113
+00:05:38,570 --> 00:05:41,140
+
+114
+00:05:41,140 --> 00:05:43,890
+HTTP doesn't fit very
+well on top of TCP.
+
+115
+00:05:43,890 --> 00:05:48,180
+So we have SPDY now,
+we have HTTP/2 coming.
+
+116
+00:05:48,180 --> 00:05:52,670
+And they will help improve
+the performance of our sites.
+
+117
+00:05:52,670 --> 00:05:56,190
+On some tests I did, I got
+a 30% uplift in performance
+
+118
+00:05:56,190 --> 00:05:58,650
+just by switching
+to SPDY, and that
+
+119
+00:05:58,650 --> 00:06:03,450
+includes the CLS
+negotiation overhead.
+
+120
+00:06:03,450 --> 00:06:05,550
+HTTP/2 may get rid of
+some of our build stats.
+
+121
+00:06:05,550 --> 00:06:08,064
+It may reduce the
+need to merge stuff.
+
+122
+00:06:08,064 --> 00:06:09,730
+We're still going to
+have the challenge,
+
+123
+00:06:09,730 --> 00:06:12,770
+though, that we have people
+on HTTP/1 as well as HTTP/2.
+
+124
+00:06:12,770 --> 00:06:16,350
+And we're going to have to
+work out how to optimize both.
+
+125
+00:06:16,350 --> 00:06:18,600
+But despite all these
+improvements, [INAUDIBLE]
+
+126
+00:06:18,600 --> 00:06:23,520
+across, we keep adding more
+and more stuff to our pages.
+
+127
+00:06:23,520 --> 00:06:26,090
+Our pages are getting fatter.
+
+128
+00:06:26,090 --> 00:06:29,540
+We're relying on
+browsers and networks
+
+129
+00:06:29,540 --> 00:06:31,950
+to overcome the
+performance hurdle.
+
+130
+00:06:31,950 --> 00:06:34,680
+And perhaps more
+worrying, is we're
+
+131
+00:06:34,680 --> 00:06:36,840
+including more
+blocking resources.
+
+132
+00:06:36,840 --> 00:06:40,380
+Now, the number of times I see
+a tweet going, somebody going, I
+
+133
+00:06:40,380 --> 00:06:43,150
+hate web fonts because this
+is the experience I get
+
+134
+00:06:43,150 --> 00:06:45,010
+and a page with no text on it.
+
+135
+00:06:45,010 --> 00:06:48,100
+But yet, they've put web
+fonts on their own site.
+
+136
+00:06:48,100 --> 00:06:51,290
+So we're making our pages
+more and more complex
+
+137
+00:06:51,290 --> 00:06:53,530
+and delivering more and
+more of a challenge.
+
+138
+00:06:53,530 --> 00:06:55,360
+We can automate some
+of this optimization.
+
+139
+00:06:55,360 --> 00:06:58,770
+So we talk about merging
+stuff and image optimization.
+
+140
+00:06:58,770 --> 00:07:01,370
+We can use things
+like mod_pagespeed,
+
+141
+00:07:01,370 --> 00:07:04,900
+or Akamai's FEO service to take
+some of these optimizations
+
+142
+00:07:04,900 --> 00:07:07,260
+away, to simplify
+our build services.
+
+143
+00:07:07,260 --> 00:07:10,000
+But OK, so why aren't
+we getting faster?
+
+144
+00:07:10,000 --> 00:07:13,570
+And my view is, we
+don't measure enough.
+
+145
+00:07:13,570 --> 00:07:14,590
+We've got great tools.
+
+146
+00:07:14,590 --> 00:07:16,970
+This is sitespeed.io
+that Peter wrote.
+
+147
+00:07:16,970 --> 00:07:18,940
+We've got things
+like Web Page Test.
+
+148
+00:07:18,940 --> 00:07:21,376
+We can measure in the
+visitor's browser.
+
+149
+00:07:21,376 --> 00:07:22,750
+So we can measure
+the page level.
+
+150
+00:07:22,750 --> 00:07:25,070
+We can measure
+individual resources.
+
+151
+00:07:25,070 --> 00:07:27,740
+We can tag the page
+so we can measure
+
+152
+00:07:27,740 --> 00:07:30,510
+when something we're
+interested in appears.
+
+153
+00:07:30,510 --> 00:07:33,480
+But there's a lot
+of data, and we
+
+154
+00:07:33,480 --> 00:07:39,010
+need to move beyond which pages
+are slow to why are they slow.
+
+155
+00:07:39,010 --> 00:07:41,024
+This is a waterfall
+in Web Page Test.
+
+156
+00:07:41,024 --> 00:07:42,690
+There's actually some
+interesting things
+
+157
+00:07:42,690 --> 00:07:43,440
+in this waterfall.
+
+158
+00:07:43,440 --> 00:07:46,784
+In the time to first byte, so
+always about 200 milliseconds.
+
+159
+00:07:46,784 --> 00:07:48,200
+And this is because
+I get did test
+
+160
+00:07:48,200 --> 00:07:51,750
+from Dulles in Virginia
+instead of the UK by mistake.
+
+161
+00:07:51,750 --> 00:07:54,960
+But I ended up looking
+at this for a while,
+
+162
+00:07:54,960 --> 00:07:58,230
+working out what was wrong
+with it and took me a while.
+
+163
+00:07:58,230 --> 00:08:00,670
+And destined to
+be a human pattern
+
+164
+00:08:00,670 --> 00:08:03,350
+matcher for network waterfalls
+for the rest of my life,
+
+165
+00:08:03,350 --> 00:08:05,510
+to help make the web faster.
+
+166
+00:08:05,510 --> 00:08:08,520
+We need to move on
+to how do we fix it.
+
+167
+00:08:08,520 --> 00:08:11,110
+And we know the older
+browsers need resources
+
+168
+00:08:11,110 --> 00:08:14,310
+to be able to render a page
+and get a page to a users,
+
+169
+00:08:14,310 --> 00:08:19,130
+but we don't really have the
+tools to help us get there.
+
+170
+00:08:19,130 --> 00:08:22,910
+And finally, we
+think of performance
+
+171
+00:08:22,910 --> 00:08:25,260
+as a technical
+issue and it's not.
+
+172
+00:08:25,260 --> 00:08:28,200
+Or I would argue, there are
+technical aspects to it,
+
+173
+00:08:28,200 --> 00:08:30,620
+but we need to go back and
+think about performance
+
+174
+00:08:30,620 --> 00:08:33,559
+as an aspect of user experience.
+
+175
+00:08:33,559 --> 00:08:36,600
+We go to Fluent, or
+Velocity, or Edge Conference,
+
+176
+00:08:36,600 --> 00:08:39,080
+and talk about page
+load performance,
+
+177
+00:08:39,080 --> 00:08:42,710
+but we need to fit it in to
+the rest of the user experience
+
+178
+00:08:42,710 --> 00:08:43,630
+picture.
+
+179
+00:08:43,630 --> 00:08:46,760
+We'll A/B test whether a
+button should be green or blue,
+
+180
+00:08:46,760 --> 00:08:49,430
+but will we A/B test how
+our performance improves
+
+181
+00:08:49,430 --> 00:08:52,650
+if we remove our A/B
+framework, or our fonts?
+
+182
+00:08:52,650 --> 00:08:54,230
+We don't generally do it.
+
+183
+00:08:54,230 --> 00:08:57,360
+We need to design
+for performance.
+
+184
+00:08:57,360 --> 00:08:59,850
+If it's a user
+experience asset, we
+
+185
+00:08:59,850 --> 00:09:02,680
+need to design it info
+the way we build sites.
+
+186
+00:09:02,680 --> 00:09:10,040
+It's just another constraint,
+like time or budget.
+
+187
+00:09:10,040 --> 00:09:12,190
+And design.
+
+188
+00:09:12,190 --> 00:09:14,180
+Clear left, Tim
+Kadlec put forward
+
+189
+00:09:14,180 --> 00:09:16,540
+the idea of a
+performance budget,
+
+190
+00:09:16,540 --> 00:09:19,710
+so you decide how long should
+your page take in slow network
+
+191
+00:09:19,710 --> 00:09:20,530
+conditions?
+
+192
+00:09:20,530 --> 00:09:22,500
+How big should it be?
+
+193
+00:09:22,500 --> 00:09:25,120
+And we need to, as well
+as technical solutions,
+
+194
+00:09:25,120 --> 00:09:27,860
+we need to go and look
+for the human solutions.
+
+195
+00:09:27,860 --> 00:09:30,560
+And we've come a long way.
+
+196
+00:09:30,560 --> 00:09:32,880
+We've got much faster browsers.
+
+197
+00:09:32,880 --> 00:09:35,480
+We've got better networks.
+
+198
+00:09:35,480 --> 00:09:37,680
+But we need better tools.
+
+199
+00:09:37,680 --> 00:09:43,030
+We need to fit performance and
+look at it in holistic ways,
+
+200
+00:09:43,030 --> 00:09:44,830
+in the way we build websites.
+
+201
+00:09:44,830 --> 00:09:47,630
+And we also need to be careful
+about new technologies.
+
+202
+00:09:47,630 --> 00:09:50,390
+We've got HTTP/2 coming.
+
+203
+00:09:50,390 --> 00:09:52,730
+We don't really know, we
+know some of the performance
+
+204
+00:09:52,730 --> 00:09:54,642
+improvements it
+makes, but we don't
+
+205
+00:09:54,642 --> 00:09:56,350
+know what other impacts
+may come with it.
+
+206
+00:09:56,350 --> 00:09:59,240
+We've got Web Components that
+we talked about this morning,
+
+207
+00:09:59,240 --> 00:10:02,710
+and things like the potential
+blocking effect of ral
+
+208
+00:10:02,710 --> 00:10:04,270
+equals import.
+
+209
+00:10:04,270 --> 00:10:07,560
+And we need to work out if
+we deploy Web Components
+
+210
+00:10:07,560 --> 00:10:10,220
+on a large scale, in a
+blocking format, what
+
+211
+00:10:10,220 --> 00:10:12,300
+are the issues it brings?
+
+212
+00:10:12,300 --> 00:10:17,170
+And now I believe our moderator
+will put to us your questions.
+
+213
+00:10:17,170 --> 00:10:27,689
+STEVE: So Andy's
+frustrated because he's
+
+214
+00:10:27,689 --> 00:10:29,230
+going to spend the
+rest of his career
+
+215
+00:10:29,230 --> 00:10:30,512
+as a human pattern matcher.
+
+216
+00:10:30,512 --> 00:10:31,970
+I don't think that
+fits in a tweet,
+
+217
+00:10:31,970 --> 00:10:34,250
+but it would be
+really good if it did.
+
+218
+00:10:34,250 --> 00:10:38,460
+OK so, kickoff, first
+question is basically
+
+219
+00:10:38,460 --> 00:10:40,710
+one on responsive web design
+from Peter O'Shaughnessy.
+
+220
+00:10:40,710 --> 00:10:46,030
+
+221
+00:10:46,030 --> 00:10:47,300
+PETER O'SHAUGNESSY: Hi.
+
+222
+00:10:47,300 --> 00:10:49,950
+Using branched
+loading, the Guardian
+
+223
+00:10:49,950 --> 00:10:54,420
+have made their new website
+responsive, but 42% smaller
+
+224
+00:10:54,420 --> 00:10:56,600
+on mobile than on desktop.
+
+225
+00:10:56,600 --> 00:10:59,180
+Does this end the
+performance arguments
+
+226
+00:10:59,180 --> 00:11:01,670
+against responsive web design?
+
+227
+00:11:01,670 --> 00:11:06,025
+Are there still cases when a
+separate mobile site is best?
+
+228
+00:11:06,025 --> 00:11:10,542
+STEVE: You're the front-end
+developer representative, Wes.
+
+229
+00:11:10,542 --> 00:11:12,333
+You want to [? touch that ?]
+with this one?
+
+230
+00:11:12,333 --> 00:11:15,530
+WESLEY HALES: It really
+depends on the goals
+
+231
+00:11:15,530 --> 00:11:19,250
+of the organization, I guess.
+
+232
+00:11:19,250 --> 00:11:22,190
+I mean, you can have a
+separate team sometimes.
+
+233
+00:11:22,190 --> 00:11:25,120
+Like when I was at CNN, we had
+an entire separate team working
+
+234
+00:11:25,120 --> 00:11:29,106
+on a separate mobile website
+for CNN, and then we had a,
+
+235
+00:11:29,106 --> 00:11:30,480
+and they were
+completely divided,
+
+236
+00:11:30,480 --> 00:11:32,313
+and it was a really
+uncomfortable situation,
+
+237
+00:11:32,313 --> 00:11:35,309
+not being able to cross teams.
+
+238
+00:11:35,309 --> 00:11:37,100
+It was just the way
+they had siloed it off.
+
+239
+00:11:37,100 --> 00:11:41,660
+So like I said, it depends
+on the company, what
+
+240
+00:11:41,660 --> 00:11:46,600
+your goals are, but it does
+make sense for like CRUD,
+
+241
+00:11:46,600 --> 00:11:50,090
+if you have a heavy client-side
+application, single page,
+
+242
+00:11:50,090 --> 00:11:53,220
+whatever, then
+you would not want
+
+243
+00:11:53,220 --> 00:11:55,720
+to try to scale that
+down to put on mobile.
+
+244
+00:11:55,720 --> 00:11:57,259
+I mean, chances
+are, unless you're
+
+245
+00:11:57,259 --> 00:11:59,050
+trying to achieve the
+same thing on mobile,
+
+246
+00:11:59,050 --> 00:12:03,150
+but sometimes developers
+just build for desktop first
+
+247
+00:12:03,150 --> 00:12:04,280
+in a lot of cases.
+
+248
+00:12:04,280 --> 00:12:07,400
+STEVE: Pat, you're looking
+at web sites all the time,
+
+249
+00:12:07,400 --> 00:12:07,990
+Web Page Test.
+
+250
+00:12:07,990 --> 00:12:11,100
+PAT MEENAN: And I think it's
+going to get interesting.
+
+251
+00:12:11,100 --> 00:12:13,960
+We're probaby going to
+see this a lot today.
+
+252
+00:12:13,960 --> 00:12:16,444
+Depending on how extreme
+you're trying to get,
+
+253
+00:12:16,444 --> 00:12:18,110
+like when we start
+talking about deliver
+
+254
+00:12:18,110 --> 00:12:21,130
+the above-the-fold content
+in the first 15K, right.
+
+255
+00:12:21,130 --> 00:12:23,010
+If you're going to try
+and do that on mobile,
+
+256
+00:12:23,010 --> 00:12:26,450
+the first 15K is fairly
+easy to get your one
+
+257
+00:12:26,450 --> 00:12:28,477
+image and your
+story or whatever.
+
+258
+00:12:28,477 --> 00:12:30,310
+What you're trying to
+deliver for your first
+
+259
+00:12:30,310 --> 00:12:32,633
+15K of your desktop or
+your responsive site
+
+260
+00:12:32,633 --> 00:12:34,044
+is going to be very different.
+
+261
+00:12:34,044 --> 00:12:35,460
+So I think it's
+going to be really
+
+262
+00:12:35,460 --> 00:12:41,250
+hard to do a responsive,
+like uber-optimized site,
+
+263
+00:12:41,250 --> 00:12:45,050
+that scales for both
+mobile and desktop.
+
+264
+00:12:45,050 --> 00:12:47,624
+You may be able to do
+well enough in both cases.
+
+265
+00:12:47,624 --> 00:12:49,332
+ANDY DAVIES: I think
+part of the question
+
+266
+00:12:49,332 --> 00:12:52,650
+is, we know it's
+42% smaller now,
+
+267
+00:12:52,650 --> 00:12:55,920
+but how small could it
+be if it was catered just
+
+268
+00:12:55,920 --> 00:12:56,960
+for that device.
+
+269
+00:12:56,960 --> 00:12:59,840
+And it's a compromise.
+
+270
+00:12:59,840 --> 00:13:01,480
+Responsive design
+is about building
+
+271
+00:13:01,480 --> 00:13:05,610
+a site that works on as wide a
+variety of devices as possible
+
+272
+00:13:05,610 --> 00:13:09,784
+at an achievable cost effort.
+
+273
+00:13:09,784 --> 00:13:11,200
+If you look at the
+studies, people
+
+274
+00:13:11,200 --> 00:13:12,630
+build really small mobile sites.
+
+275
+00:13:12,630 --> 00:13:15,180
+You can build a
+mobile site that's
+
+276
+00:13:15,180 --> 00:13:20,672
+tens of K, whereas how big is
+the Guardian site, Patrick?
+
+277
+00:13:20,672 --> 00:13:22,380
+PATRICK HAMMOND: 700K
+on the mobile site.
+
+278
+00:13:22,380 --> 00:13:27,470
+ANDY DAVIES: Yeah, so the
+42% is still a huge chunk.
+
+279
+00:13:27,470 --> 00:13:31,680
+So it's a work-in-progress
+as to whether the responsive
+
+280
+00:13:31,680 --> 00:13:33,130
+argument has gone away.
+
+281
+00:13:33,130 --> 00:13:37,714
+STEVE: Luke, FT, you're in
+the same business, publishing.
+
+282
+00:13:37,714 --> 00:13:41,545
+LUKE BLANEY: Yeah, we still
+have the separate mobile site,
+
+283
+00:13:41,545 --> 00:13:43,080
+and we have a web app as well.
+
+284
+00:13:43,080 --> 00:13:47,040
+But I think that's more like an
+internal legacy sort of thing.
+
+285
+00:13:47,040 --> 00:13:48,080
+A lot of these things &mdash;
+
+286
+00:13:48,080 --> 00:13:50,050
+STEVE: It's an organizational
+constraint, not
+
+287
+00:13:50,050 --> 00:13:50,610
+a technology one.
+
+288
+00:13:50,610 --> 00:13:51,790
+LUKE BLANEY: Yeah, it's
+not a technical thing.
+
+289
+00:13:51,790 --> 00:13:53,210
+And on a lot of these things,
+yeah, if you're starting fresh,
+
+290
+00:13:53,210 --> 00:13:54,501
+you do it completely different.
+
+291
+00:13:54,501 --> 00:13:57,410
+But if you've got this big
+massive website that's already
+
+292
+00:13:57,410 --> 00:14:00,879
+there, just going
+from that to say,
+
+293
+00:14:00,879 --> 00:14:03,170
+we're going to snap our
+fingers and make it immediately
+
+294
+00:14:03,170 --> 00:14:04,202
+responsive, that's &mdash;
+
+295
+00:14:04,202 --> 00:14:04,702
+STEVE:
+
+296
+00:14:04,702 --> 00:14:05,410
+A lot of inertia.
+
+297
+00:14:05,410 --> 00:14:09,510
+LUKE BLANEY: Yeah,
+there's a lot of that.
+
+298
+00:14:09,510 --> 00:14:13,440
+I think eventually, yeah, it
+would be great to get there.
+
+299
+00:14:13,440 --> 00:14:17,660
+And I think from a performance
+point of view as well.
+
+300
+00:14:17,660 --> 00:14:20,050
+And like, say if
+you're supporting
+
+301
+00:14:20,050 --> 00:14:22,700
+every individual browser,
+you can make something really
+
+302
+00:14:22,700 --> 00:14:24,510
+performant in one
+browser, and make
+
+303
+00:14:24,510 --> 00:14:26,770
+it work in that one
+use case really well.
+
+304
+00:14:26,770 --> 00:14:29,700
+The more and more
+things you support,
+
+305
+00:14:29,700 --> 00:14:31,820
+the more compromises
+you have to make.
+
+306
+00:14:31,820 --> 00:14:33,530
+That goes for just
+desktop projects,
+
+307
+00:14:33,530 --> 00:14:35,770
+for example, you can
+optimize to Chrome,
+
+308
+00:14:35,770 --> 00:14:38,430
+and say I'm going to make this
+work really well in Chrome,
+
+309
+00:14:38,430 --> 00:14:39,860
+and not care about IE.
+
+310
+00:14:39,860 --> 00:14:43,260
+But every time you
+support one extra thing,
+
+311
+00:14:43,260 --> 00:14:47,490
+you're going to have to make,
+it might be small compromises,
+
+312
+00:14:47,490 --> 00:14:50,260
+it might be big, but
+then, and the same
+
+313
+00:14:50,260 --> 00:14:52,274
+goes for saying if you
+want mobile and desktop.
+
+314
+00:14:52,274 --> 00:14:53,690
+ANDY DAVIES: I
+think it depends on
+
+315
+00:14:53,690 --> 00:14:55,810
+if it's good enough
+for your audience.
+
+316
+00:14:55,810 --> 00:14:58,680
+And it's the YouTube example
+of, when they shrunk YouTube,
+
+317
+00:14:58,680 --> 00:15:00,050
+they got new audiences.
+
+318
+00:15:00,050 --> 00:15:05,230
+It's whether the Guardian
+feel that 700K on mobile
+
+319
+00:15:05,230 --> 00:15:06,290
+fits their audience.
+
+320
+00:15:06,290 --> 00:15:08,310
+PAT MEENAN: Well, and
+I wouldn't necessarily
+
+321
+00:15:08,310 --> 00:15:11,570
+even look at the 700K
+number, right that's all in.
+
+322
+00:15:11,570 --> 00:15:13,270
+It's what does it
+take to deliver
+
+323
+00:15:13,270 --> 00:15:16,440
+your initial experience, the
+visual experience, right,
+
+324
+00:15:16,440 --> 00:15:17,510
+and focus on that.
+
+325
+00:15:17,510 --> 00:15:20,460
+If you can get that small
+enough on both the mobile
+
+326
+00:15:20,460 --> 00:15:23,284
+and the desktop sites
+with one delivery,
+
+327
+00:15:23,284 --> 00:15:25,450
+then you're in a lot better
+shape working with that.
+
+328
+00:15:25,450 --> 00:15:29,280
+STEVE: So we'll take a
+question from Guy in a minute.
+
+329
+00:15:29,280 --> 00:15:31,402
+But just, it comes
+back to, does it
+
+330
+00:15:31,402 --> 00:15:33,940
+end the performance arguments
+against responsive web design?
+
+331
+00:15:33,940 --> 00:15:36,356
+I think we're coming to the
+conclusion that that answer is
+
+332
+00:15:36,356 --> 00:15:38,816
+no, there's still some
+arguments for and against.
+
+333
+00:15:38,816 --> 00:15:39,940
+So Guy, you had a question?
+
+334
+00:15:39,940 --> 00:15:41,565
+GUY: Well, I wanted
+to comment on that.
+
+335
+00:15:41,565 --> 00:15:43,470
+I think it's just
+fundamentally harder
+
+336
+00:15:43,470 --> 00:15:44,970
+to make a responsive
+website faster.
+
+337
+00:15:44,970 --> 00:15:45,995
+That's just the reality.
+
+338
+00:15:45,995 --> 00:15:48,620
+So I just ran a test to look at
+the top five thousand websites.
+
+339
+00:15:48,620 --> 00:15:54,430
+If you look at the top, the
+responsive or not responsive
+
+340
+00:15:54,430 --> 00:15:57,460
+websites on the m.dot sites
+on the top 5,000 sites,
+
+341
+00:15:57,460 --> 00:16:00,070
+it's almost the
+responsive websites
+
+342
+00:16:00,070 --> 00:16:02,380
+are about three times
+bigger on mobile
+
+343
+00:16:02,380 --> 00:16:04,170
+than those of m.dot sites.
+
+344
+00:16:04,170 --> 00:16:05,790
+It's just that m.dot
+naturally lends
+
+345
+00:16:05,790 --> 00:16:08,895
+itself to be more lightweight
+and fast, while in responsive,
+
+346
+00:16:08,895 --> 00:16:10,944
+you need to do a lot of work.
+
+347
+00:16:10,944 --> 00:16:13,360
+Possibly, eventually, you can
+get to the same performance,
+
+348
+00:16:13,360 --> 00:16:15,859
+but I think we're sort of very
+far from the point where it's
+
+349
+00:16:15,859 --> 00:16:17,685
+just as easy, or
+just as implied.
+
+350
+00:16:17,685 --> 00:16:20,170
+PAT MEENAN: You can
+also, I mean it's
+
+351
+00:16:20,170 --> 00:16:23,420
+not unusual for the m.dots,
+especially the legacy ones,
+
+352
+00:16:23,420 --> 00:16:26,440
+not to be doing advertising
+tracking and all sorts
+
+353
+00:16:26,440 --> 00:16:28,680
+of other things that the
+business gets when they're
+
+354
+00:16:28,680 --> 00:16:29,910
+doing a responsive one, too.
+
+355
+00:16:29,910 --> 00:16:31,340
+So you sort of- &mdash;
+
+356
+00:16:31,340 --> 00:16:35,245
+GUY: It's true, and correlation
+is not causation, and all that.
+
+357
+00:16:35,245 --> 00:16:36,995
+But the reality is
+that if you are looking
+
+358
+00:16:36,995 --> 00:16:39,330
+at that anecdotally, it
+pretty much, all of the newly
+
+359
+00:16:39,330 --> 00:16:42,240
+launched websites, it's hard.
+
+360
+00:16:42,240 --> 00:16:44,240
+Most of them would
+have done very little.
+
+361
+00:16:44,240 --> 00:16:45,460
+At least today, we've
+done a good job.
+
+362
+00:16:45,460 --> 00:16:47,580
+Images, responsive images,
+are being tackled much more
+
+363
+00:16:47,580 --> 00:16:49,454
+frequently, but still,
+at the end of the day,
+
+364
+00:16:49,454 --> 00:16:51,620
+there's just a lot more
+excess, as compared
+
+365
+00:16:51,620 --> 00:16:53,400
+to if you were to do
+something dedicated.
+
+366
+00:16:53,400 --> 00:16:55,483
+ANDY DAVIES: I think one
+of the interesting things
+
+367
+00:16:55,483 --> 00:16:58,672
+is, what do we need in the way
+of tools or in browser features
+
+368
+00:16:58,672 --> 00:17:01,130
+to be able to build sites in
+the same way the Guardian have
+
+369
+00:17:01,130 --> 00:17:04,490
+built their sites.
+
+370
+00:17:04,490 --> 00:17:07,240
+To make that easy for everybody,
+rather than just needing
+
+371
+00:17:07,240 --> 00:17:09,130
+somebody with Guardian
+skill set developers.
+
+372
+00:17:09,130 --> 00:17:10,790
+PAT MEENAN: And I
+think that's probably
+
+373
+00:17:10,790 --> 00:17:13,190
+the topic I'm going to touch
+on most through the day.
+
+374
+00:17:13,190 --> 00:17:15,700
+It is damn hard to
+build a fast site,
+
+375
+00:17:15,700 --> 00:17:17,750
+and we need it to be easy.
+
+376
+00:17:17,750 --> 00:17:19,390
+We need it to be
+the default case.
+
+377
+00:17:19,390 --> 00:17:21,784
+We need it to be, especially
+like with components,
+
+378
+00:17:21,784 --> 00:17:23,700
+you just drop them on
+and they're fast, right?
+
+379
+00:17:23,700 --> 00:17:26,510
+Not, you have to figure out
+how to cache in local storage,
+
+380
+00:17:26,510 --> 00:17:28,980
+or figure out how to
+plug in service workers
+
+381
+00:17:28,980 --> 00:17:32,020
+to cache it if you're
+offline, and not
+
+382
+00:17:32,020 --> 00:17:33,636
+to fetch it if they're not.
+
+383
+00:17:33,636 --> 00:17:36,440
+STEVE: We have two seconds left.
+
+384
+00:17:36,440 --> 00:17:37,060
+Andrew?
+
+385
+00:17:37,060 --> 00:17:38,186
+Quick comment?
+
+386
+00:17:38,186 --> 00:17:40,560
+ANDREW BATES: I think it's a
+really frustrating trade-off
+
+387
+00:17:40,560 --> 00:17:43,500
+because you have, on the
+one hand, as Luke says,
+
+388
+00:17:43,500 --> 00:17:47,220
+you can optimize one particular
+user agent very well.
+
+389
+00:17:47,220 --> 00:17:49,070
+As you try to introduce
+more and more,
+
+390
+00:17:49,070 --> 00:17:51,147
+I think it becomes more
+and more of a challenge,
+
+391
+00:17:51,147 --> 00:17:53,480
+and I think ultimately, that's
+not a scalable challenge.
+
+392
+00:17:53,480 --> 00:17:56,780
+Because, we'll talk
+later in Future Web
+
+393
+00:17:56,780 --> 00:17:59,530
+about things like wearables
+and non-conventional devices
+
+394
+00:17:59,530 --> 00:18:01,089
+and TVs and that kind of thing.
+
+395
+00:18:01,089 --> 00:18:03,630
+Is responsive web design going
+to deliver one single solution
+
+396
+00:18:03,630 --> 00:18:06,440
+to all of those things, and it
+could be performant as well?
+
+397
+00:18:06,440 --> 00:18:08,886
+I think that's
+probably very unlikely.
+
+398
+00:18:08,886 --> 00:18:10,790
+STEVE: We need to move
+on to the new topic.
+
+399
+00:18:10,790 --> 00:18:12,790
+The next question is
+actually from Andrew Bates.
+
+400
+00:18:12,790 --> 00:18:15,170
+
+401
+00:18:15,170 --> 00:18:19,015
+That's called a
+seamless segue, people.
+
+402
+00:18:19,015 --> 00:18:19,515
+[LAUGHTER]
+
+403
+00:18:19,515 --> 00:18:21,110
+ANDREW BATES: OK, here we go.
+
+404
+00:18:21,110 --> 00:18:25,800
+So do concatenation and
+spriting become anti-patterns
+
+405
+00:18:25,800 --> 00:18:27,900
+with the advent of HTTP/2?
+
+406
+00:18:27,900 --> 00:18:29,126
+If so, when?
+
+407
+00:18:29,126 --> 00:18:33,440
+STEVE: Andy's got an entire
+Velocity presentation on this,
+
+408
+00:18:33,440 --> 00:18:35,630
+so I'll defer to you.
+
+409
+00:18:35,630 --> 00:18:38,650
+ANDY DAVIES: I think what
+we're aware of is what we're
+
+410
+00:18:38,650 --> 00:18:41,300
+doing when we concatenate
+and sprite stuff.
+
+411
+00:18:41,300 --> 00:18:44,156
+And we're merging
+resources together.
+
+412
+00:18:44,156 --> 00:18:45,906
+So we're merging, say,
+JavaScript together
+
+413
+00:18:45,906 --> 00:18:49,580
+that has potentially got
+different rates of change.
+
+414
+00:18:49,580 --> 00:18:52,800
+And we're making them
+more cacheable together.
+
+415
+00:18:52,800 --> 00:18:54,360
+So if we can split
+them out, then we
+
+416
+00:18:54,360 --> 00:18:55,526
+can cache them individually.
+
+417
+00:18:55,526 --> 00:18:58,624
+So hopefully they live
+longer in the cache.
+
+418
+00:18:58,624 --> 00:19:00,040
+When do they become
+anti-patterns?
+
+419
+00:19:00,040 --> 00:19:03,860
+
+420
+00:19:03,860 --> 00:19:04,820
+It's an interesting...
+
+421
+00:19:04,820 --> 00:19:08,092
+I'm going to pass
+on that for now.
+
+422
+00:19:08,092 --> 00:19:09,050
+I'll come back to that.
+
+423
+00:19:09,050 --> 00:19:10,591
+Somebody else pick
+it up, and I'll--.
+
+424
+00:19:10,591 --> 00:19:13,102
+LUKE BLANEY: I think you
+could argue at the moment,
+
+425
+00:19:13,102 --> 00:19:14,560
+spriting already
+is an anti-pattern
+
+426
+00:19:14,560 --> 00:19:16,040
+in some circumstances.
+
+427
+00:19:16,040 --> 00:19:18,889
+If you're doing it wrong,
+and you could have,
+
+428
+00:19:18,889 --> 00:19:21,180
+forcing users to download a
+whole sprite when they just
+
+429
+00:19:21,180 --> 00:19:23,319
+need one icon, it's
+just, that's just
+
+430
+00:19:23,319 --> 00:19:24,860
+a waste of performance
+for everybody.
+
+431
+00:19:24,860 --> 00:19:29,480
+So doing in the wrong way can
+already been an anti-pattern.
+
+432
+00:19:29,480 --> 00:19:32,640
+And I think HTTP/2 just
+makes that more obvious
+
+433
+00:19:32,640 --> 00:19:35,740
+rather than completely
+changing the ball game.
+
+434
+00:19:35,740 --> 00:19:36,336
+STEVE: Peter?
+
+435
+00:19:36,336 --> 00:19:40,440
+PETER HEDENSKOG: It
+will be hard for us
+
+436
+00:19:40,440 --> 00:19:45,310
+as developers when we need to
+serve to both HTTP.1 and 2.0.
+
+437
+00:19:45,310 --> 00:19:47,352
+So I mean, we need to find
+the best way to do it.
+
+438
+00:19:47,352 --> 00:19:49,268
+WESLEY HALES: Well we're
+kind of doing it now,
+
+439
+00:19:49,268 --> 00:19:50,310
+I mean, I know I am.
+
+440
+00:19:50,310 --> 00:19:51,635
+At least with this site.
+
+441
+00:19:51,635 --> 00:19:56,460
+It runs Speedy [INAUDIBLE]
+web but I don't really
+
+442
+00:19:56,460 --> 00:19:57,960
+care about older
+browsers right now.
+
+443
+00:19:57,960 --> 00:19:59,130
+It's a side project.
+
+444
+00:19:59,130 --> 00:20:01,070
+So I mean, I could afford to--.
+
+445
+00:20:01,070 --> 00:20:05,210
+But I mean, the way developers
+are developing sites today,
+
+446
+00:20:05,210 --> 00:20:07,177
+you've got a lot of
+controllers or modules,
+
+447
+00:20:07,177 --> 00:20:09,010
+you have a lot of
+different JavaScript files
+
+448
+00:20:09,010 --> 00:20:12,040
+that you kindof divide out
+to organize your application
+
+449
+00:20:12,040 --> 00:20:13,850
+on the development side.
+
+450
+00:20:13,850 --> 00:20:19,380
+But it's a tough
+question to answer.
+
+451
+00:20:19,380 --> 00:20:26,510
+Like how do you support both
+SPDY today and the older
+
+452
+00:20:26,510 --> 00:20:27,980
+browsers that don't support it.
+
+453
+00:20:27,980 --> 00:20:33,510
+I mean, it's almost like,
+I don't know, why would you
+
+454
+00:20:33,510 --> 00:20:35,260
+not concatenate everything?
+
+455
+00:20:35,260 --> 00:20:36,687
+That's going to
+save your older &mdash;
+
+456
+00:20:36,687 --> 00:20:38,520
+But it doesn't matter
+on the newer browsers.
+
+457
+00:20:38,520 --> 00:20:40,436
+ANDY DAVIES: I think the
+challenge is actually
+
+458
+00:20:40,436 --> 00:20:43,160
+when you need it on the page.
+
+459
+00:20:43,160 --> 00:20:47,800
+In that, if you've got a web
+font that's referenced in CSS,
+
+460
+00:20:47,800 --> 00:20:51,630
+for example, the browser
+has to download the page,
+
+461
+00:20:51,630 --> 00:20:53,780
+so we don't know anything
+about the other resources
+
+462
+00:20:53,780 --> 00:20:55,380
+until we download the page.
+
+463
+00:20:55,380 --> 00:20:57,885
+Then we start parsing the
+CSS and parsing the DOM
+
+464
+00:20:57,885 --> 00:21:01,800
+and building a render tree,
+to decide we need a web font.
+
+465
+00:21:01,800 --> 00:21:03,710
+And then we have to
+download the web font
+
+466
+00:21:03,710 --> 00:21:04,925
+and wait for it to arrive.
+
+467
+00:21:04,925 --> 00:21:07,200
+And the question
+becomes, instead
+
+468
+00:21:07,200 --> 00:21:10,370
+of concatenating or
+in-lining stuff in CSS,
+
+469
+00:21:10,370 --> 00:21:14,040
+is, can we push those
+resources using HTTP/2.
+
+470
+00:21:14,040 --> 00:21:16,570
+To say, can we push
+the font object early
+
+471
+00:21:16,570 --> 00:21:18,500
+so the font gets
+there earlier, so we
+
+472
+00:21:18,500 --> 00:21:19,875
+can render the
+page more quickly.
+
+473
+00:21:19,875 --> 00:21:22,333
+PAT MEENAN: Well, and I don't
+think it's even just pushing.
+
+474
+00:21:22,333 --> 00:21:24,000
+I mean, the big
+problem we're going
+
+475
+00:21:24,000 --> 00:21:28,630
+to have is knowing when you
+have to support both, right?
+
+476
+00:21:28,630 --> 00:21:30,580
+But assuming you don't
+have to support both,
+
+477
+00:21:30,580 --> 00:21:35,020
+it's the granularity
+you get by not having
+
+478
+00:21:35,020 --> 00:21:37,310
+to concatenate all
+of that stuff, right?
+
+479
+00:21:37,310 --> 00:21:39,000
+You'll add all
+sorts of JavaScript
+
+480
+00:21:39,000 --> 00:21:40,890
+into your main JavaScript
+file because it's
+
+481
+00:21:40,890 --> 00:21:43,270
+needed on three pages or
+whatever, and all of a sudden,
+
+482
+00:21:43,270 --> 00:21:44,805
+you're bloating it, and
+when you break it out
+
+483
+00:21:44,805 --> 00:21:46,221
+and you don't start
+concatenating,
+
+484
+00:21:46,221 --> 00:21:48,330
+you can granularly
+just pull down
+
+485
+00:21:48,330 --> 00:21:50,870
+what these individual
+pages need.
+
+486
+00:21:50,870 --> 00:21:52,860
+On the browser
+side, the browsers
+
+487
+00:21:52,860 --> 00:21:55,860
+won't parse and evaluate the
+JavaScript until it's complete,
+
+488
+00:21:55,860 --> 00:21:58,600
+so breaking it down into little
+chunks is nice for the browser
+
+489
+00:21:58,600 --> 00:21:59,407
+as well.
+
+490
+00:21:59,407 --> 00:22:00,990
+Same thing goes for
+the sprite, you'll
+
+491
+00:22:00,990 --> 00:22:02,850
+have like three
+images on there that
+
+492
+00:22:02,850 --> 00:22:05,299
+are needed for some random
+page somewhere else,
+
+493
+00:22:05,299 --> 00:22:07,340
+and you need to rebuild
+the whole sprite any time
+
+494
+00:22:07,340 --> 00:22:08,340
+you change one of those.
+
+495
+00:22:08,340 --> 00:22:09,820
+LUKE BLANEY: I
+think one thing that
+
+496
+00:22:09,820 --> 00:22:11,930
+can help with this is
+rather than using a sprite
+
+497
+00:22:11,930 --> 00:22:13,630
+or whatever, is, if
+you have something
+
+498
+00:22:13,630 --> 00:22:15,770
+that your client-side
+application can understand
+
+499
+00:22:15,770 --> 00:22:18,390
+the individual parts,
+like on the FT web app.
+
+500
+00:22:18,390 --> 00:22:20,070
+What we do for
+downloading images
+
+501
+00:22:20,070 --> 00:22:23,520
+is we actually use JSON, and
+have all these JSON images.
+
+502
+00:22:23,520 --> 00:22:27,410
+Then, we can, the
+client-side code
+
+503
+00:22:27,410 --> 00:22:30,430
+can cache each of these
+images separately.
+
+504
+00:22:30,430 --> 00:22:32,400
+And it can handle
+them separately
+
+505
+00:22:32,400 --> 00:22:34,640
+if we need to clear the
+cache or anything like that.
+
+506
+00:22:34,640 --> 00:22:36,723
+We don't have to download
+the entire sprite again,
+
+507
+00:22:36,723 --> 00:22:39,310
+because it understands each
+of these individual resources.
+
+508
+00:22:39,310 --> 00:22:41,070
+It's only for the network bit
+that we actually concatenating
+
+509
+00:22:41,070 --> 00:22:42,970
+them and then we
+split them up again.
+
+510
+00:22:42,970 --> 00:22:43,720
+PAT MEENAN: Right.
+
+511
+00:22:43,720 --> 00:22:47,070
+But this is all JSON
+data URIs, local storage,
+
+512
+00:22:47,070 --> 00:22:49,960
+back to not making it easy for
+people to do the right thing.
+
+513
+00:22:49,960 --> 00:22:54,840
+STEVE: We had a question
+from the audience.
+
+514
+00:22:54,840 --> 00:23:01,820
+
+515
+00:23:01,820 --> 00:23:04,001
+Jonathan Fielding?
+
+516
+00:23:04,001 --> 00:23:12,000
+JONATHAN FIELDING: With what
+you were just talking about,
+
+517
+00:23:12,000 --> 00:23:13,750
+would you say that
+with HTTP 1 and HTTP/2,
+
+518
+00:23:13,750 --> 00:23:16,105
+you will have to have different
+[? application ?] assets
+
+519
+00:23:16,105 --> 00:23:17,980
+and it will detect
+on the server side?
+
+520
+00:23:17,980 --> 00:23:20,050
+So that people who are
+already getting HTTP 1,
+
+521
+00:23:20,050 --> 00:23:22,450
+they get sprites still, and
+using the old anti-pattern's
+
+522
+00:23:22,450 --> 00:23:25,340
+[? ways, ?] and
+then with HTTP/2,
+
+523
+00:23:25,340 --> 00:23:30,062
+where gzip [INAUDIBLE]
+caching form the best it can?
+
+524
+00:23:30,062 --> 00:23:31,270
+By caching individual images?
+
+525
+00:23:31,270 --> 00:23:32,900
+STEVE: So effectively,
+you're saying,
+
+526
+00:23:32,900 --> 00:23:34,230
+it's a bit, the same argument.
+
+527
+00:23:34,230 --> 00:23:37,480
+You're going to end up with
+the m.dot version, which
+
+528
+00:23:37,480 --> 00:23:39,090
+is going to be the
+HTTP/2 version.
+
+529
+00:23:39,090 --> 00:23:41,298
+I'm going to have a load
+balancer that sends somebody
+
+530
+00:23:41,298 --> 00:23:46,075
+the HTTP/2 pool and somebody
+still in the HTTP 1.1 pool.
+
+531
+00:23:46,075 --> 00:23:49,230
+WESLEY HALES: I think
+you're not going
+
+532
+00:23:49,230 --> 00:23:51,332
+to be penalized at
+all if you continue
+
+533
+00:23:51,332 --> 00:23:52,540
+your old ways of development.
+
+534
+00:23:52,540 --> 00:23:54,730
+They are anti-patterns,
+and they do cause us,
+
+535
+00:23:54,730 --> 00:23:57,800
+as developers, more
+frustration, right?
+
+536
+00:23:57,800 --> 00:23:59,720
+Or more work, essentially.
+
+537
+00:23:59,720 --> 00:24:02,880
+But I don't think
+you're going to be,
+
+538
+00:24:02,880 --> 00:24:05,150
+actually I know you're
+not going to be penalized
+
+539
+00:24:05,150 --> 00:24:09,830
+for concatenating versus not
+concatenating on the HTTP/2
+
+540
+00:24:09,830 --> 00:24:10,330
+side.
+
+541
+00:24:10,330 --> 00:24:12,145
+ANDY DAVIES: Well, you get
+penalized in cache terms,
+
+542
+00:24:12,145 --> 00:24:12,520
+potentially.
+
+543
+00:24:12,520 --> 00:24:15,010
+LUKE BLANEY: But no more so than
+you get when there's a block.
+
+544
+00:24:15,010 --> 00:24:17,176
+WESLEY HALES: But SPDY
+pushes straight to the cache,
+
+545
+00:24:17,176 --> 00:24:17,810
+though, right?
+
+546
+00:24:17,810 --> 00:24:19,270
+I mean, it pushes straight--.
+
+547
+00:24:19,270 --> 00:24:22,950
+Yes, there will be, possibly
+a larger download, but I mean,
+
+548
+00:24:22,950 --> 00:24:25,832
+once SPDY, or HTTP/2, once
+it opens the connection,
+
+549
+00:24:25,832 --> 00:24:27,290
+it will push directly
+to the cache,
+
+550
+00:24:27,290 --> 00:24:30,260
+even if you have caching
+disabled in your browser.
+
+551
+00:24:30,260 --> 00:24:33,280
+STEVE: So during this, I
+think the issue, if I'm clear,
+
+552
+00:24:33,280 --> 00:24:35,259
+is, during this
+intervening period,
+
+553
+00:24:35,259 --> 00:24:36,925
+when you have to
+support both protocols,
+
+554
+00:24:36,925 --> 00:24:37,150
+are things going to be painful?
+
+555
+00:24:37,150 --> 00:24:39,780
+WESLEY HALES: Yeah, it's really,
+it's more for the developers,
+
+556
+00:24:39,780 --> 00:24:40,430
+I think.
+
+557
+00:24:40,430 --> 00:24:42,430
+It's more for us to
+have better workflows
+
+558
+00:24:42,430 --> 00:24:46,100
+and not have to jump
+through so many hoops,
+
+559
+00:24:46,100 --> 00:24:48,300
+and that's kind of
+what HTTP/2 will bring.
+
+560
+00:24:48,300 --> 00:24:51,047
+ANDY DAVIES: Automate it.
+
+561
+00:24:51,047 --> 00:24:53,380
+PAT MEENAN: I mean, you'll
+have to decide at some point.
+
+562
+00:24:53,380 --> 00:24:56,500
+Do you have server-side
+logic that detects and spits
+
+563
+00:24:56,500 --> 00:24:58,120
+out the HTML, because
+fundamentally it
+
+564
+00:24:58,120 --> 00:25:00,770
+needs to be in the HTML.
+
+565
+00:25:00,770 --> 00:25:04,190
+Differently for SPDY or
+HTTP/2 versus HTTP 1.
+
+566
+00:25:04,190 --> 00:25:06,840
+Or do you look at your
+traffic mix, and you go, OK,
+
+567
+00:25:06,840 --> 00:25:10,360
+now we've got 70% of our
+traffic coming in that's SPDY
+
+568
+00:25:10,360 --> 00:25:11,300
+or HTTP/2-capable.
+
+569
+00:25:11,300 --> 00:25:14,140
+
+570
+00:25:14,140 --> 00:25:18,185
+It'll be slower for the older
+browsers, or the smaller group,
+
+571
+00:25:18,185 --> 00:25:19,060
+but it doesn't break.
+
+572
+00:25:19,060 --> 00:25:19,893
+WESLEY HALES: Right.
+
+573
+00:25:19,893 --> 00:25:21,365
+It's worth it on
+the business side.
+
+574
+00:25:21,365 --> 00:25:22,730
+PAT MEENAN: It's, you decide
+at what point do I cut over?
+
+575
+00:25:22,730 --> 00:25:23,340
+ANDY DAVIES: Or,
+you use something
+
+576
+00:25:23,340 --> 00:25:25,500
+like ModPageSpeed,
+that's protocol-aware.
+
+577
+00:25:25,500 --> 00:25:27,290
+So it will do the
+optimizations for HTTP 1
+
+578
+00:25:27,290 --> 00:25:29,460
+and it will do different
+optimizations for HTTP/2.
+
+579
+00:25:29,460 --> 00:25:32,790
+WESLEY HALES: I know Google
+had a report out last November
+
+580
+00:25:32,790 --> 00:25:37,540
+about using SPDY
+on Maps and Drive,
+
+581
+00:25:37,540 --> 00:25:39,190
+and a few different properties.
+
+582
+00:25:39,190 --> 00:25:42,600
+And they observed like, around
+a 30% increase on all those,
+
+583
+00:25:42,600 --> 00:25:49,180
+so, I mean, at least we
+have some larger entities
+
+584
+00:25:49,180 --> 00:25:50,300
+leading the way there.
+
+585
+00:25:50,300 --> 00:25:52,340
+STEVE: We need to move
+to the next topic,
+
+586
+00:25:52,340 --> 00:25:55,980
+but just on the HTTP/2.
+
+587
+00:25:55,980 --> 00:25:59,870
+I mean, the timeline,
+the specification
+
+588
+00:25:59,870 --> 00:26:02,850
+is not even due to be
+ratified until November.
+
+589
+00:26:02,850 --> 00:26:05,020
+You've got to get all
+of the web server &mdash;
+
+590
+00:26:05,020 --> 00:26:06,380
+PAT MEENAN: Effectively,
+SPDY's out there, right?
+
+591
+00:26:06,380 --> 00:26:07,546
+STEVE: SPDY's out there now.
+
+592
+00:26:07,546 --> 00:26:11,690
+PAT MEENAN: IE 11, Chrome,
+Firefox, it's effectively,
+
+593
+00:26:11,690 --> 00:26:13,710
+all the capabilities
+are already out there.
+
+594
+00:26:13,710 --> 00:26:15,847
+So it's, what's
+your traffic mix,
+
+595
+00:26:15,847 --> 00:26:17,930
+what's your server-side
+support, and what's your &mdash;
+
+596
+00:26:17,930 --> 00:26:19,459
+STEVE: So if you're
+expecting HTTP/2
+
+597
+00:26:19,459 --> 00:26:21,750
+to answer all your questions,
+it's probably a way away,
+
+598
+00:26:21,750 --> 00:26:23,752
+but you can start playing
+with some of the ideas
+
+599
+00:26:23,752 --> 00:26:24,960
+and the technology with SPDY.
+
+600
+00:26:24,960 --> 00:26:27,500
+
+601
+00:26:27,500 --> 00:26:28,160
+Next question.
+
+602
+00:26:28,160 --> 00:26:28,830
+Patrick Hammond.
+
+603
+00:26:28,830 --> 00:26:37,760
+PATRICK HAMMOND: Hi.
+
+604
+00:26:37,760 --> 00:26:41,240
+So [INAUDIBLE], as I said
+in a [INAUDIBLE] last year,
+
+605
+00:26:41,240 --> 00:26:47,090
+that we need to move past the
+on-page events and metri &mdash;
+
+606
+00:26:47,090 --> 00:26:50,340
+sorry, the on-load
+event and metric.
+
+607
+00:26:50,340 --> 00:26:52,225
+And we have a lot of
+us moving enhancements
+
+608
+00:26:52,225 --> 00:26:55,080
+to parse that load
+event as well.
+
+609
+00:26:55,080 --> 00:26:57,563
+What is the new golden
+metric, or is there one?
+
+610
+00:26:57,563 --> 00:26:59,271
+STEVE: Peter, I'll
+throw that one to you.
+
+611
+00:26:59,271 --> 00:27:01,062
+You make a tool which
+measures performance.
+
+612
+00:27:01,062 --> 00:27:04,101
+PETER HEDENSKOG: I
+mean, it is Speed Index
+
+613
+00:27:04,101 --> 00:27:05,600
+that I have in Web
+Page Test, but we
+
+614
+00:27:05,600 --> 00:27:07,020
+want to move it
+to the other tools
+
+615
+00:27:07,020 --> 00:27:09,580
+and be able to use
+it in RUM also.
+
+616
+00:27:09,580 --> 00:27:14,600
+I mean, we need to know
+when the content is,
+
+617
+00:27:14,600 --> 00:27:18,950
+above-the-fold conten,
+is in the browser.
+
+618
+00:27:18,950 --> 00:27:20,770
+I mean, that's the
+important thing.
+
+619
+00:27:20,770 --> 00:27:22,355
+Or how do you guys say it?
+
+620
+00:27:22,355 --> 00:27:25,880
+PAT MEENAN: Yeah I mean,
+it's fundamentally,
+
+621
+00:27:25,880 --> 00:27:28,220
+if you own the site
+you're trying to measure,
+
+622
+00:27:28,220 --> 00:27:29,040
+instrument it.
+
+623
+00:27:29,040 --> 00:27:31,700
+You are the one who knows
+what you care about.
+
+624
+00:27:31,700 --> 00:27:34,730
+So put on load handlers for
+your above-the-fold images,
+
+625
+00:27:34,730 --> 00:27:37,110
+for example.
+
+626
+00:27:37,110 --> 00:27:39,720
+Tag your ads so you
+know when they load.
+
+627
+00:27:39,720 --> 00:27:41,630
+And then beacon all
+of that stuff back.
+
+628
+00:27:41,630 --> 00:27:45,360
+I mean, nothing is ever going
+to be custom instrumentation.
+
+629
+00:27:45,360 --> 00:27:47,660
+Doing it generically,
+that's when
+
+630
+00:27:47,660 --> 00:27:51,010
+you start to get into
+difficult cases, right?
+
+631
+00:27:51,010 --> 00:27:55,179
+If you're a RUM service
+offering something everyone
+
+632
+00:27:55,179 --> 00:27:56,720
+and trying to
+automatically tell them
+
+633
+00:27:56,720 --> 00:28:00,260
+when their above-the-fold
+content is complete,
+
+634
+00:28:00,260 --> 00:28:04,640
+that's a much harder,
+currently unsolved problem.
+
+635
+00:28:04,640 --> 00:28:07,870
+Yeah, I mean, synthetic, I
+like Speed Index, obviously.
+
+636
+00:28:07,870 --> 00:28:09,850
+But you really need
+to do need to move
+
+637
+00:28:09,850 --> 00:28:13,210
+beyond the technical point
+when everything finished,
+
+638
+00:28:13,210 --> 00:28:16,500
+because there is so much stuff
+on pages these days that's
+
+639
+00:28:16,500 --> 00:28:18,510
+not user-visible.
+
+640
+00:28:18,510 --> 00:28:20,910
+All of the ads
+tracking, the analytics,
+
+641
+00:28:20,910 --> 00:28:25,160
+there's even your A/V platform
+testing, all sorts of stuff.
+
+642
+00:28:25,160 --> 00:28:29,470
+The single-page apps
+that scroll down forever.
+
+643
+00:28:29,470 --> 00:28:32,780
+Trying to figure out a
+generic complete load time
+
+644
+00:28:32,780 --> 00:28:34,970
+metric for pages is tough.
+
+645
+00:28:34,970 --> 00:28:36,690
+ANDY DAVIES: I try
+to encourage people
+
+646
+00:28:36,690 --> 00:28:38,460
+to target start render time.
+
+647
+00:28:38,460 --> 00:28:41,140
+So when the visitor
+actually starts
+
+648
+00:28:41,140 --> 00:28:43,050
+to see something in the browser.
+
+649
+00:28:43,050 --> 00:28:45,640
+My preferred option after
+that is Speed Index,
+
+650
+00:28:45,640 --> 00:28:49,230
+which measures when the viewport
+is complete, visually complete.
+
+651
+00:28:49,230 --> 00:28:50,730
+PAT MEENAN: And for
+what it's worth,
+
+652
+00:28:50,730 --> 00:28:54,210
+there is start rendering
+the RUM from IE and Chrome,
+
+653
+00:28:54,210 --> 00:28:56,250
+it's kind of buried in
+different places like
+
+654
+00:28:56,250 --> 00:28:58,400
+window.performance.ms
+first pane is IE's.
+
+655
+00:28:58,400 --> 00:29:00,130
+STEVE: But is it
+real, [INAUDIBLE]
+
+656
+00:29:00,130 --> 00:29:01,280
+if it has a wide screen?
+
+657
+00:29:01,280 --> 00:29:02,029
+PAT MEENAN: Right.
+
+658
+00:29:02,029 --> 00:29:05,190
+So you'll want to make sure &mdash;
+it's real for some sites
+
+659
+00:29:05,190 --> 00:29:06,530
+and it's not real for others.
+
+660
+00:29:06,530 --> 00:29:08,660
+So you want to actually
+test the pages you're
+
+661
+00:29:08,660 --> 00:29:10,326
+looking at first to
+see if it's actually
+
+662
+00:29:10,326 --> 00:29:12,780
+a useful metric for
+you, before you start
+
+663
+00:29:12,780 --> 00:29:14,770
+basing any decisions
+based on that.
+
+664
+00:29:14,770 --> 00:29:16,330
+STEVE: So, quick audience poll.
+
+665
+00:29:16,330 --> 00:29:18,640
+Who realistically,
+in their websites,
+
+666
+00:29:18,640 --> 00:29:21,300
+are sort of using
+the Page.onload event
+
+667
+00:29:21,300 --> 00:29:23,840
+as their most common
+page load metric?
+
+668
+00:29:23,840 --> 00:29:25,738
+No, yes, no, not many?
+
+669
+00:29:25,738 --> 00:29:27,404
+ANDY DAVIES: The first
+question to start
+
+670
+00:29:27,404 --> 00:29:31,014
+with is who actually measures
+their page load times?
+
+671
+00:29:31,014 --> 00:29:34,560
+STEVE: OK, so only about
+half the audience is actually
+
+672
+00:29:34,560 --> 00:29:36,350
+measuring their page load times?
+
+673
+00:29:36,350 --> 00:29:38,400
+Who's actually doing
+custom instrumentation,
+
+674
+00:29:38,400 --> 00:29:41,530
+so they know exactly when
+they're above the fold?
+
+675
+00:29:41,530 --> 00:29:44,540
+OK, and who doesn't work
+for the Guardian and the FT?
+
+676
+00:29:44,540 --> 00:29:48,812
+
+677
+00:29:48,812 --> 00:29:50,520
+So OK, Christian,
+Christopher Emery, JWT?
+
+678
+00:29:50,520 --> 00:29:54,310
+CHRISTOPHER EMERY: Yep.
+
+679
+00:29:54,310 --> 00:29:55,820
+My question was
+actually touching
+
+680
+00:29:55,820 --> 00:29:58,000
+on the meat &mdash; We're
+going on about using
+
+681
+00:29:58,000 --> 00:30:00,885
+the page.onload event as
+the kindof de facto, that's
+
+682
+00:30:00,885 --> 00:30:02,730
+when the page is ready.
+
+683
+00:30:02,730 --> 00:30:04,484
+I mean, I work for an
+advertising company
+
+684
+00:30:04,484 --> 00:30:06,150
+and I've kindof come
+to peace with that,
+
+685
+00:30:06,150 --> 00:30:10,049
+but actually, it brings with it
+a lot of, actually, knowledge.
+
+686
+00:30:10,049 --> 00:30:11,590
+And actually, in
+advertising, they've
+
+687
+00:30:11,590 --> 00:30:13,756
+actually dealt with this
+problem about 10 years ago.
+
+688
+00:30:13,756 --> 00:30:17,450
+And actually, when you're
+building adverts, specifically
+
+689
+00:30:17,450 --> 00:30:19,160
+digital ones, you
+have polite load.
+
+690
+00:30:19,160 --> 00:30:20,920
+So the idea is the
+minimum viable content
+
+691
+00:30:20,920 --> 00:30:23,170
+that you need on the page
+to get it functional,
+
+692
+00:30:23,170 --> 00:30:25,330
+without distracting the user.
+
+693
+00:30:25,330 --> 00:30:27,140
+[INAUDIBLE] passive
+experiences, when
+
+694
+00:30:27,140 --> 00:30:28,660
+they dealt with
+[INAUDIBLE] page.
+
+695
+00:30:28,660 --> 00:30:31,030
+So the restrictions
+inherent in that platform
+
+696
+00:30:31,030 --> 00:30:33,825
+mean that we have to be
+as efficient as possible.
+
+697
+00:30:33,825 --> 00:30:36,290
+And actually, now, when we're
+doing a lot of sites, now,
+
+698
+00:30:36,290 --> 00:30:39,820
+we've done actually, some very
+effective responsive sites,
+
+699
+00:30:39,820 --> 00:30:40,830
+we take the same thing.
+
+700
+00:30:40,830 --> 00:30:41,950
+There's a polite load.
+
+701
+00:30:41,950 --> 00:30:43,450
+We actually defer
+everything that we
+
+702
+00:30:43,450 --> 00:30:46,300
+need for about 3 seconds, when
+the, after the page load event.
+
+703
+00:30:46,300 --> 00:30:48,310
+The idea  &mdash; that's enough time
+for someone to click on a menu
+
+704
+00:30:48,310 --> 00:30:50,480
+button, and click deeper into
+the site, should they want to.
+
+705
+00:30:50,480 --> 00:30:52,160
+So we're not actually
+forcing them to wait.
+
+706
+00:30:52,160 --> 00:30:53,790
+And this is a strategy
+that we're using right now,
+
+707
+00:30:53,790 --> 00:30:55,456
+and it actually works
+quite effectively.
+
+708
+00:30:55,456 --> 00:30:58,600
+And it means that &mdash; it kind of
+blurs the line &mdash; like the page
+
+709
+00:30:58,600 --> 00:31:01,150
+isn't ready, that page.onload,
+but it's actually usable,
+
+710
+00:31:01,150 --> 00:31:03,779
+and actually, above the fold,
+everything looks the same.
+
+711
+00:31:03,779 --> 00:31:05,820
+As soon as the JavaScript
+fires, after 3 seconds,
+
+712
+00:31:05,820 --> 00:31:07,903
+we then hook into that,
+and then all the carousels
+
+713
+00:31:07,903 --> 00:31:11,050
+start working, all the
+interactive videos and things
+
+714
+00:31:11,050 --> 00:31:12,566
+like that fire up.
+
+715
+00:31:12,566 --> 00:31:14,957
+STEVE: Patrick, you
+got a comment on that?
+
+716
+00:31:14,957 --> 00:31:17,332
+PATRICK HAMMOND: Just, that's
+great, that's good to hear,
+
+717
+00:31:17,332 --> 00:31:19,045
+from an advertising company
+that's actually doing that.
+
+718
+00:31:19,045 --> 00:31:19,900
+UNKNOWN SPEAKER: Yeah,
+I was about to say.
+
+719
+00:31:19,900 --> 00:31:21,400
+STEVE: It means
+it's not going to be
+
+720
+00:31:21,400 --> 00:31:22,776
+easy to get out
+of the room alive
+
+721
+00:31:22,776 --> 00:31:24,483
+PATRICK HAMMOND: On
+that note, something,
+
+722
+00:31:24,483 --> 00:31:26,100
+going back to
+measurement and metrics.
+
+723
+00:31:26,100 --> 00:31:27,975
+Something that we've
+been doing with adverts,
+
+724
+00:31:27,975 --> 00:31:32,600
+and now that Resource Priorities
+API and Timing APIs is here,
+
+725
+00:31:32,600 --> 00:31:34,179
+we're starting to
+have discussions
+
+726
+00:31:34,179 --> 00:31:35,470
+with our advertising suppliers.
+
+727
+00:31:35,470 --> 00:31:38,530
+That's so that they
+can set the timing,
+
+728
+00:31:38,530 --> 00:31:40,970
+and allow original
+flags, so that then we
+
+729
+00:31:40,970 --> 00:31:42,980
+will be able to
+beacon and measure.
+
+730
+00:31:42,980 --> 00:31:46,140
+And on our RUM [? drives ?]
+have the statistical data,
+
+731
+00:31:46,140 --> 00:31:47,970
+for the load time
+of our investment.
+
+732
+00:31:47,970 --> 00:31:51,940
+We'll know when things are
+going bad or good on that side.
+
+733
+00:31:51,940 --> 00:31:55,721
+Anyway, it's very pleasing to
+hear advertising companies talk
+
+734
+00:31:55,721 --> 00:31:56,470
+about [INAUDIBLE].
+
+735
+00:31:56,470 --> 00:31:59,100
+STEVE: And contrary to
+sort of, popular opinion,
+
+736
+00:31:59,100 --> 00:32:02,349
+you generally do want to
+get your ads loaded early,
+
+737
+00:32:02,349 --> 00:32:04,140
+so your users will see
+them, click on them,
+
+738
+00:32:04,140 --> 00:32:05,780
+and you will make money.
+
+739
+00:32:05,780 --> 00:32:07,530
+So it's really important
+that you actually
+
+740
+00:32:07,530 --> 00:32:10,061
+know when your ads
+are loading, though.
+
+741
+00:32:10,061 --> 00:32:12,310
+And I've talked to several
+companies that just stopped
+
+742
+00:32:12,310 --> 00:32:15,260
+loading ads so that they'll
+get faster page load
+
+743
+00:32:15,260 --> 00:32:17,160
+times, and that's the
+wrong answer, right?
+
+744
+00:32:17,160 --> 00:32:19,230
+It's how do you get
+your ads, not competing
+
+745
+00:32:19,230 --> 00:32:21,970
+with your content, but both
+loading visually quickly
+
+746
+00:32:21,970 --> 00:32:24,950
+for the users, because
+at the end of the day,
+
+747
+00:32:24,950 --> 00:32:27,605
+you still want to make money.
+
+748
+00:32:27,605 --> 00:32:28,262
+UNKNOWN AUDIENCE #1: [INAUDIBLE]
+interested [INAUDIBLE]
+
+749
+00:32:28,262 --> 00:32:30,150
+get warning signs from
+companies like you,
+
+750
+00:32:30,150 --> 00:32:33,370
+but you are obviously not
+allowed to talk about it.
+
+751
+00:32:33,370 --> 00:32:33,990
+STEVE: We can talk a
+little bit, but, yeah.
+
+752
+00:32:33,990 --> 00:32:35,350
+UNKNOWN AUDIENCE #1: This
+is like the same problem
+
+753
+00:32:35,350 --> 00:32:36,020
+with Flash.
+
+754
+00:32:36,020 --> 00:32:38,530
+Flash solved other
+problems that HTML 5 has,
+
+755
+00:32:38,530 --> 00:32:40,470
+but the information
+never got out.
+
+756
+00:32:40,470 --> 00:32:45,000
+And we probably have a lot of
+performance stuff in the ad
+
+757
+00:32:45,000 --> 00:32:46,960
+space that was never
+talked about because
+
+758
+00:32:46,960 --> 00:32:49,750
+of competitive advantage
+over other app providers.
+
+759
+00:32:49,750 --> 00:32:52,580
+CHRISTOPHER EMERY: If I can
+just do a follow-on point?
+
+760
+00:32:52,580 --> 00:32:53,596
+What I mean, actually,
+the previous point
+
+761
+00:32:53,596 --> 00:32:55,638
+we were talking about, having
+a responsive, or actually,
+
+762
+00:32:55,638 --> 00:32:56,929
+a mobile versus a desktop site?
+
+763
+00:32:56,929 --> 00:32:59,090
+We're actually
+fine, because we're
+
+764
+00:32:59,090 --> 00:33:00,910
+building, kind of,
+campaign sites.
+
+765
+00:33:00,910 --> 00:33:03,118
+So we're doing it for brand,
+it's like 3 to 6 months,
+
+766
+00:33:03,118 --> 00:33:04,590
+it lives, and then
+it kind of dies.
+
+767
+00:33:04,590 --> 00:33:05,530
+A lot of those,
+because they have
+
+768
+00:33:05,530 --> 00:33:07,363
+a lot of money thrown
+at them, both in media
+
+769
+00:33:07,363 --> 00:33:11,580
+spend targeting to it as well
+as, kind of, organic search.
+
+770
+00:33:11,580 --> 00:33:13,560
+We find it's kind
+of a tricky road.
+
+771
+00:33:13,560 --> 00:33:15,150
+We're actually
+finding a lot of times
+
+772
+00:33:15,150 --> 00:33:16,720
+that having a dedicated
+mobile site works.
+
+773
+00:33:16,720 --> 00:33:18,303
+Because at the end
+of the day, there's
+
+774
+00:33:18,303 --> 00:33:21,250
+like a path to purchase that
+we kind of want the user to do.
+
+775
+00:33:21,250 --> 00:33:23,820
+And the desktop might have
+that rich, immersive, kind of,
+
+776
+00:33:23,820 --> 00:33:25,610
+interactive visual
+video experience,
+
+777
+00:33:25,610 --> 00:33:26,604
+whatever that might be.
+
+778
+00:33:26,604 --> 00:33:28,520
+But actually, on the,
+when it comes to mobile,
+
+779
+00:33:28,520 --> 00:33:29,603
+the use case is different.
+
+780
+00:33:29,603 --> 00:33:31,450
+So, actually, we're
+finding a lot of times,
+
+781
+00:33:31,450 --> 00:33:33,520
+even though we push for
+responsive over time,
+
+782
+00:33:33,520 --> 00:33:36,920
+realistically mobile gives you
+that direct path to purchase.
+
+783
+00:33:36,920 --> 00:33:38,520
+There's ad dollars
+behind it, you've
+
+784
+00:33:38,520 --> 00:33:41,492
+got to get the customer's
+product sold at the end of it.
+
+785
+00:33:41,492 --> 00:33:46,130
+STEVE: So to summary, the answer
+is there a new golden metric?
+
+786
+00:33:46,130 --> 00:33:50,720
+No, it's the one you roll
+yourself using user timing
+
+787
+00:33:50,720 --> 00:33:53,130
+in the navigation,
+in the timing API.
+
+788
+00:33:53,130 --> 00:33:55,110
+UNKNOWN SPEAKER: And
+beacon it back somewhere
+
+789
+00:33:55,110 --> 00:33:57,005
+where you actually look at it.
+
+790
+00:33:57,005 --> 00:33:58,686
+Don't just instrument the page.
+
+791
+00:33:58,686 --> 00:34:00,186
+STEVE: A bit like
+bitcoining; you've
+
+792
+00:34:00,186 --> 00:34:01,320
+got to mine your own gold.
+
+793
+00:34:01,320 --> 00:34:04,190
+
+794
+00:34:04,190 --> 00:34:04,690
+Right.
+
+795
+00:34:04,690 --> 00:34:06,824
+The next question is
+from Patrick Hammond.
+
+796
+00:34:06,824 --> 00:34:10,779
+
+797
+00:34:10,779 --> 00:34:12,070
+PATRICK HAMMOND: It's me again.
+
+798
+00:34:12,070 --> 00:34:13,239
+It's actually, this is
+a very similar question,
+
+799
+00:34:13,239 --> 00:34:14,639
+but it's in a different light.
+
+800
+00:34:14,639 --> 00:34:18,320
+So how, we're now very
+well-equipped to measure
+
+801
+00:34:18,320 --> 00:34:19,789
+our initial page
+load performance
+
+802
+00:34:19,789 --> 00:34:24,620
+with great tools like Web
+Page Test and things like RUM.
+
+803
+00:34:24,620 --> 00:34:27,800
+But yet, we're seeing a rise
+in large-scale, long-living,
+
+804
+00:34:27,800 --> 00:34:30,290
+single-page applications.
+
+805
+00:34:30,290 --> 00:34:33,550
+But, so, do we need new
+tools to measure these,
+
+806
+00:34:33,550 --> 00:34:36,110
+and new metrics and
+new visualizations
+
+807
+00:34:36,110 --> 00:34:38,280
+to measure long-living
+applications that we're
+
+808
+00:34:38,280 --> 00:34:40,396
+seeing on the web today?
+
+809
+00:34:40,396 --> 00:34:41,770
+STEVE: So performance
+measurement
+
+810
+00:34:41,770 --> 00:34:43,396
+in single-page apps.
+
+811
+00:34:43,396 --> 00:34:44,710
+STEVE: User timing.
+
+812
+00:34:44,710 --> 00:34:45,750
+PAT MEENAN: Well.
+
+813
+00:34:45,750 --> 00:34:48,719
+I mean, it it's back to
+instrument, instrument
+
+814
+00:34:48,719 --> 00:34:49,820
+it and figure it out.
+
+815
+00:34:49,820 --> 00:34:52,290
+I mean, you've got &mdash; hopefully
+the browsers are giving you
+
+816
+00:34:52,290 --> 00:34:57,422
+all of the primitives you need
+to understand what's going on,
+
+817
+00:34:57,422 --> 00:34:58,880
+especially in the
+single-page apps.
+
+818
+00:34:58,880 --> 00:35:02,254
+As you swap in content, as
+you scroll down and do stuff.
+
+819
+00:35:02,254 --> 00:35:04,170
+If you're not getting
+the primitives you need,
+
+820
+00:35:04,170 --> 00:35:07,300
+I know we were talking, like
+at Velocity Summit a few weeks
+
+821
+00:35:07,300 --> 00:35:09,510
+ago, or months
+ago at this point,
+
+822
+00:35:09,510 --> 00:35:14,640
+about possibly adding load event
+timing handlers or first paint
+
+823
+00:35:14,640 --> 00:35:17,650
+timing handlers, to images
+and stuff like that.
+
+824
+00:35:17,650 --> 00:35:20,920
+To all elements, so that
+you can get the primitives.
+
+825
+00:35:20,920 --> 00:35:23,390
+But it really does
+come down to, you
+
+826
+00:35:23,390 --> 00:35:26,330
+know what you want
+to do with your app.
+
+827
+00:35:26,330 --> 00:35:30,770
+Time it, beacon it back, and if
+you can't get at what you need,
+
+828
+00:35:30,770 --> 00:35:31,410
+let us know.
+
+829
+00:35:31,410 --> 00:35:33,725
+WESLEY HALES: I think it becomes
+more of a rendering thing, too,
+
+830
+00:35:33,725 --> 00:35:33,870
+right?
+
+831
+00:35:33,870 --> 00:35:35,470
+I mean, your page
+is already set up,
+
+832
+00:35:35,470 --> 00:35:39,690
+so it's about image decoding,
+and making AJAX requests,
+
+833
+00:35:39,690 --> 00:35:42,350
+and getting the images
+and decoding those.
+
+834
+00:35:42,350 --> 00:35:44,790
+And any other transforms
+you're doing to the page,
+
+835
+00:35:44,790 --> 00:35:48,560
+and that's really where
+it comes into Jank
+
+836
+00:35:48,560 --> 00:35:50,550
+and other kinds of
+measurements as well.
+
+837
+00:35:50,550 --> 00:35:52,180
+STEVE: It looks like
+there's probably
+
+838
+00:35:52,180 --> 00:35:54,820
+some APM vendors
+in the house that
+
+839
+00:35:54,820 --> 00:35:57,130
+would have a conversation
+about &mdash; if you've
+
+840
+00:35:57,130 --> 00:36:00,000
+got a single-page app that
+doing lots of AJAX requests
+
+841
+00:36:00,000 --> 00:36:04,200
+to the back end, you're sort of,
+that measurement is also going
+
+842
+00:36:04,200 --> 00:36:06,570
+to become more inherently
+related to the measurements
+
+843
+00:36:06,570 --> 00:36:09,690
+of that round-trip time for
+that back-end AJAX request.
+
+844
+00:36:09,690 --> 00:36:12,510
+And you've got to start tying
+those two things tighter
+
+845
+00:36:12,510 --> 00:36:14,010
+together for those
+single-page apps.
+
+846
+00:36:14,010 --> 00:36:15,770
+LUKE BLANEY: I think
+it also depends &mdash;
+
+847
+00:36:15,770 --> 00:36:19,965
+if you're waiting on all those
+AJAX requests, like in our web
+
+848
+00:36:19,965 --> 00:36:20,850
+app.
+
+849
+00:36:20,850 --> 00:36:22,394
+This was because
+we've gone for, we
+
+850
+00:36:22,394 --> 00:36:23,810
+want something
+that works offline.
+
+851
+00:36:23,810 --> 00:36:25,380
+We try and make it
+when you click stuff,
+
+852
+00:36:25,380 --> 00:36:27,588
+that you're never waiting
+for an AJAX request, right?
+
+853
+00:36:27,588 --> 00:36:30,310
+We want all the content to be
+there upfront and in advance.
+
+854
+00:36:30,310 --> 00:36:32,300
+So it really depends
+on your site,
+
+855
+00:36:32,300 --> 00:36:35,430
+whether you're doing these
+click-and-wait for the content
+
+856
+00:36:35,430 --> 00:36:37,340
+to come, or whether
+you're doing something
+
+857
+00:36:37,340 --> 00:36:38,700
+else in the background.
+
+858
+00:36:38,700 --> 00:36:40,950
+I think that affects what
+you need to measure as well.
+
+859
+00:36:40,950 --> 00:36:42,991
+WESLEY HALES: So, you guys
+are putting everything
+
+860
+00:36:42,991 --> 00:36:45,106
+in local storage, right?
+
+861
+00:36:45,106 --> 00:36:48,872
+LUKE BLANEY: Local
+storage and WebSQL or SP
+
+862
+00:36:48,872 --> 00:36:50,330
+depending on the
+right [INAUDIBLE].
+
+863
+00:36:50,330 --> 00:36:51,650
+WESLEY HALES: So what
+is like, your limit?
+
+864
+00:36:51,650 --> 00:36:53,546
+Is there a limit on the
+content you download, like,
+
+865
+00:36:53,546 --> 00:36:54,087
+how do you--?
+
+866
+00:36:54,087 --> 00:36:56,740
+LUKE BLANEY: We actually have,
+like, it's a bit complicated.
+
+867
+00:36:56,740 --> 00:36:58,800
+There's different modes,
+and like, when you first
+
+868
+00:36:58,800 --> 00:37:00,890
+load, we try and
+just get the basics.
+
+869
+00:37:00,890 --> 00:37:02,662
+So just the article
+content, we don't
+
+870
+00:37:02,662 --> 00:37:05,470
+bother with all of
+the images and stuff.
+
+871
+00:37:05,470 --> 00:37:08,340
+Because, well,
+particularly old ones.
+
+872
+00:37:08,340 --> 00:37:11,090
+You need to press a prompt to
+allow you like 50MB of storage
+
+873
+00:37:11,090 --> 00:37:13,214
+or whatever, and then
+we'll go and start
+
+874
+00:37:13,214 --> 00:37:14,505
+doing all the images and stuff.
+
+875
+00:37:14,505 --> 00:37:18,250
+But we try to keep all that in
+the background where possible.
+
+876
+00:37:18,250 --> 00:37:21,520
+And it should, we try not to
+get in the way of the user.
+
+877
+00:37:21,520 --> 00:37:23,990
+They should just be able to
+navigate the app and not care.
+
+878
+00:37:23,990 --> 00:37:26,180
+WESLEY HALES: So it comes down
+to rendering at that point.
+
+879
+00:37:26,180 --> 00:37:27,590
+ANDY DAVIES: But are you just
+generating another problem?
+
+880
+00:37:27,590 --> 00:37:29,510
+When they run out of
+local storage and they
+
+881
+00:37:29,510 --> 00:37:31,950
+have to go to actually
+start managing local storage
+
+882
+00:37:31,950 --> 00:37:32,893
+themselves.
+
+883
+00:37:32,893 --> 00:37:38,260
+STEVE: So if we come back
+to the question about do
+
+884
+00:37:38,260 --> 00:37:41,580
+we need new tools, new metrics,
+and new visualizations.
+
+885
+00:37:41,580 --> 00:37:44,320
+You're saying if a
+single-page app measuring
+
+886
+00:37:44,320 --> 00:37:47,900
+the rendering of that thing
+that I've done becomes critical,
+
+887
+00:37:47,900 --> 00:37:49,060
+do we have the tools?
+
+888
+00:37:49,060 --> 00:37:50,572
+I mean, Peter, you make tools.
+
+889
+00:37:50,572 --> 00:37:52,530
+Do we have the tools to
+measure that right now?
+
+890
+00:37:52,530 --> 00:37:54,115
+And I think the answer
+is probably not.
+
+891
+00:37:54,115 --> 00:37:56,073
+PAT MEENAN: Actually we
+do, but they're manual.
+
+892
+00:37:56,073 --> 00:37:58,420
+I mean, you have
+the timeline and dev
+
+893
+00:37:58,420 --> 00:38:01,460
+tools of rendering
+and painting events,
+
+894
+00:38:01,460 --> 00:38:07,590
+but RequestAnimationFrame is
+probably your best friend.
+
+895
+00:38:07,590 --> 00:38:10,000
+But back to, it's not easy.
+
+896
+00:38:10,000 --> 00:38:13,430
+I mean, figuring out if
+your single-page is behaving
+
+897
+00:38:13,430 --> 00:38:16,370
+smoothly on the
+client side in RUM
+
+898
+00:38:16,370 --> 00:38:19,310
+by hooking together a
+bunch of [? RAF ?] calls,
+
+899
+00:38:19,310 --> 00:38:21,630
+and looking for jank
+and that kind of stuff.
+
+900
+00:38:21,630 --> 00:38:24,767
+It's doable, but
+it's complicated.
+
+901
+00:38:24,767 --> 00:38:31,070
+STEVE: The answer to
+that is yes, we probably
+
+902
+00:38:31,070 --> 00:38:32,816
+do need new tools and images.
+
+903
+00:38:32,816 --> 00:38:35,225
+LUKE BLANEY: I think,
+you get to a point where,
+
+904
+00:38:35,225 --> 00:38:37,100
+to be honest, sometimes
+it's best just having
+
+905
+00:38:37,100 --> 00:38:39,758
+a manual tester using it and
+going, that's a bit sluggish.
+
+906
+00:38:39,758 --> 00:38:41,341
+There's some things
+that &mdash; [INAUDIBLE]
+
+907
+00:38:41,341 --> 00:38:41,526
+it's not the answer that
+you necessarily want,
+
+908
+00:38:41,526 --> 00:38:43,278
+but having somebody--.
+
+909
+00:38:43,278 --> 00:38:45,540
+WESLEY HALES: But
+then you are limited
+
+910
+00:38:45,540 --> 00:38:47,804
+by CPU and whatever
+your system is running.
+
+911
+00:38:47,804 --> 00:38:49,220
+LUKE BLANEY: Yeah,
+but that's what
+
+912
+00:38:49,220 --> 00:38:50,270
+the user is going to do
+at the end of the day.
+
+913
+00:38:50,270 --> 00:38:51,020
+That's [INAUDIBLE]
+
+914
+00:38:51,020 --> 00:38:53,748
+STEVE: We've got a
+hand up over here.
+
+915
+00:38:53,748 --> 00:38:55,660
+UNKNOWN AUDIENCE #2:
+[INAUDIBLE] images?
+
+916
+00:38:55,660 --> 00:39:01,000
+
+917
+00:39:01,000 --> 00:39:03,250
+Is it worth having
+maybe, an attribute
+
+918
+00:39:03,250 --> 00:39:05,380
+for a tag which would
+be like, above the fold,
+
+919
+00:39:05,380 --> 00:39:08,780
+or which would basically give
+the browser a hint that this
+
+920
+00:39:08,780 --> 00:39:11,440
+is your main content that
+you want to prioritize.
+
+921
+00:39:11,440 --> 00:39:14,154
+Or maybe, below the fold,
+you'd have a lazy, old time.
+
+922
+00:39:14,154 --> 00:39:15,820
+UNKNOWN SPEAKER:
+There's a combination &mdash;
+
+923
+00:39:15,820 --> 00:39:16,150
+LUKE BLANEY: It
+depends on the browser
+
+924
+00:39:16,150 --> 00:39:17,300
+what's going to
+be above the fold.
+
+925
+00:39:17,300 --> 00:39:19,940
+You don't know, whenever you're
+sending [INAUDIBLE] stuff down,
+
+926
+00:39:19,940 --> 00:39:22,820
+like, where is that
+fold going to be?
+
+927
+00:39:22,820 --> 00:39:25,571
+WESLEY HALES: There is
+no fold in the browser.
+
+928
+00:39:25,571 --> 00:39:27,154
+UNKNOWN AUDIENCE #2:
+Say, like on BBC,
+
+929
+00:39:27,154 --> 00:39:30,560
+you'd have all your main
+images for your stories,
+
+930
+00:39:30,560 --> 00:39:33,105
+and then you've got
+your sub-stories.
+
+931
+00:39:33,105 --> 00:39:35,370
+So, you basically want to
+prioritize [INAUDIBLE].
+
+932
+00:39:35,370 --> 00:39:37,690
+PAT MEENAN: Yeah, so
+that's not IE-specific.
+
+933
+00:39:37,690 --> 00:39:39,490
+IE was the first
+one to implement it.
+
+934
+00:39:39,490 --> 00:39:42,400
+It was a W3C spec for
+lazy load and, I think,
+
+935
+00:39:42,400 --> 00:39:43,656
+postpone is the other one.
+
+936
+00:39:43,656 --> 00:39:45,280
+Or, I'll probably
+get the naming wrong,
+
+937
+00:39:45,280 --> 00:39:46,980
+but there are sort
+of two of them.
+
+938
+00:39:46,980 --> 00:39:50,150
+One is, don't load
+this until later,
+
+939
+00:39:50,150 --> 00:39:52,570
+and one is, I care
+less about this.
+
+940
+00:39:52,570 --> 00:39:56,260
+And it's sort of the opposite
+of saying, this is important.
+
+941
+00:39:56,260 --> 00:39:58,820
+But you'd have to tag
+all of your content.
+
+942
+00:39:58,820 --> 00:40:03,770
+And it's kind of an attempt
+to eliminate the js lazy load
+
+943
+00:40:03,770 --> 00:40:06,380
+implementations for images
+while still letting the browser
+
+944
+00:40:06,380 --> 00:40:08,630
+know about all the content
+and give it priority hints.
+
+945
+00:40:08,630 --> 00:40:12,070
+And so this, is
+above-the-fold and important
+
+946
+00:40:12,070 --> 00:40:13,540
+is basically the
+stuff on your page
+
+947
+00:40:13,540 --> 00:40:16,520
+that doesn't have
+lazy load on it.
+
+948
+00:40:16,520 --> 00:40:19,640
+But you should start seeing it
+come out to the other browsers
+
+949
+00:40:19,640 --> 00:40:22,059
+as part of the same group that
+did the performance specs.
+
+950
+00:40:22,059 --> 00:40:23,350
+STEVE: Got about a minute left.
+
+951
+00:40:23,350 --> 00:40:25,510
+I'm going to take
+one last question
+
+952
+00:40:25,510 --> 00:40:27,220
+from [INAUDIBLE]
+in the back there.
+
+953
+00:40:27,220 --> 00:40:32,056
+If you can run the mike, or,
+yell very loudly, all right?
+
+954
+00:40:32,056 --> 00:40:35,765
+UNKNOWN SPEAKER: Yeah
+well for the video.
+
+955
+00:40:35,765 --> 00:40:38,140
+UNKNOWN AUDIENCE #3: So, about
+the single-page app topic,
+
+956
+00:40:38,140 --> 00:40:42,110
+do we need new tools
+and new visualizations?
+
+957
+00:40:42,110 --> 00:40:44,370
+Tooling-wise, so there's
+a couple of RUM tools
+
+958
+00:40:44,370 --> 00:40:45,270
+we worked into this.
+
+959
+00:40:45,270 --> 00:40:46,853
+There are commercial
+ones, [INAUDIBLE]
+
+960
+00:40:46,853 --> 00:40:48,520
+but [INAUDIBLE] the
+frameworks, and I
+
+961
+00:40:48,520 --> 00:40:50,400
+think the story
+is a two-fold one.
+
+962
+00:40:50,400 --> 00:40:54,016
+First of all, we need definitely
+support from framework vendors,
+
+963
+00:40:54,016 --> 00:40:55,640
+because that's how
+we made it possible.
+
+964
+00:40:55,640 --> 00:40:57,070
+We have to interact with them.
+
+965
+00:40:57,070 --> 00:41:00,050
+Because a lot of their basic
+forms logic we have to follow.
+
+966
+00:41:00,050 --> 00:41:02,950
+Just like, typing in a keyword
+that goes back with an XHR
+
+967
+00:41:02,950 --> 00:41:05,330
+to the server, updates a
+table and then renders it
+
+968
+00:41:05,330 --> 00:41:06,940
+on the page.
+
+969
+00:41:06,940 --> 00:41:08,880
+It comes down to
+framework instrumentation
+
+970
+00:41:08,880 --> 00:41:11,620
+that you would have
+to do, or frameworks
+
+971
+00:41:11,620 --> 00:41:14,240
+would build this instrumentation
+right into those frameworks.
+
+972
+00:41:14,240 --> 00:41:15,720
+That's the part
+that definitely is,
+
+973
+00:41:15,720 --> 00:41:17,390
+I thinl, with the
+framework providers.
+
+974
+00:41:17,390 --> 00:41:19,931
+And they have to do it because
+they are the one who know best
+
+975
+00:41:19,931 --> 00:41:22,280
+how the frameworks
+actually work.
+
+976
+00:41:22,280 --> 00:41:24,550
+The other piece
+to it is, what we
+
+977
+00:41:24,550 --> 00:41:27,110
+are really missing is that
+piece, like with this framework
+
+978
+00:41:27,110 --> 00:41:28,860
+instrumentation,
+[INAUDIBLE] to the point,
+
+979
+00:41:28,860 --> 00:41:30,960
+like, updated the
+DOM this way, knowing
+
+980
+00:41:30,960 --> 00:41:33,690
+when certain elements have
+been painted on the screen.
+
+981
+00:41:33,690 --> 00:41:36,247
+That would then be something
+I see in the browser.
+
+982
+00:41:36,247 --> 00:41:38,330
+The question, where do we
+fit this instrumentation
+
+983
+00:41:38,330 --> 00:41:40,380
+of frameworks, on the
+one hand frameworks
+
+984
+00:41:40,380 --> 00:41:43,100
+should build it in, for those
+who have not built it in,
+
+985
+00:41:43,100 --> 00:41:45,689
+you would also have to have
+some means in the browser
+
+986
+00:41:45,689 --> 00:41:47,230
+to instrument the
+browser at runtime,
+
+987
+00:41:47,230 --> 00:41:49,100
+because that's what
+you have to do today.
+
+988
+00:41:49,100 --> 00:41:52,660
+Because RUM tools are often
+not able to instrument it
+
+989
+00:41:52,660 --> 00:41:54,910
+while it disseminates through
+the browser, [INAUDIBLE]
+
+990
+00:41:54,910 --> 00:41:57,117
+and re-processing it.
+
+991
+00:41:57,117 --> 00:41:58,950
+But it's a tool for all
+stories, a framework
+
+992
+00:41:58,950 --> 00:42:00,660
+story to a great extent.
+
+993
+00:42:00,660 --> 00:42:02,660
+And there's two
+solutions to this,
+
+994
+00:42:02,660 --> 00:42:04,118
+and it's also a
+story, really, when
+
+995
+00:42:04,118 --> 00:42:06,196
+it comes to rendering,
+that really ties down
+
+996
+00:42:06,196 --> 00:42:06,820
+to the browser.
+
+997
+00:42:06,820 --> 00:42:09,222
+STEVE: Got to move
+on to the next topic,
+
+998
+00:42:09,222 --> 00:42:10,680
+but just to summarize
+that, I think
+
+999
+00:42:10,680 --> 00:42:12,240
+there was a good
+point made there.
+
+1000
+00:42:12,240 --> 00:42:16,640
+The sort of, emphasis, may
+be shifting to the framework
+
+1001
+00:42:16,640 --> 00:42:19,020
+vendors to really
+help people understand
+
+1002
+00:42:19,020 --> 00:42:21,624
+the performance and the
+timing instrumentation
+
+1003
+00:42:21,624 --> 00:42:22,540
+within that framework.
+
+1004
+00:42:22,540 --> 00:42:23,998
+Plus, there's also
+the point you're
+
+1005
+00:42:23,998 --> 00:42:25,820
+making about the
+browser vendors.
+
+1006
+00:42:25,820 --> 00:42:28,360
+But we've got to move on.
+
+1007
+00:42:28,360 --> 00:42:30,934
+Rich Howard?
+
+1008
+00:42:30,934 --> 00:42:37,370
+RICH HOWARD: So my
+question to both the panel
+
+1009
+00:42:37,370 --> 00:42:40,110
+and to the audience
+is, what role
+
+1010
+00:42:40,110 --> 00:42:42,550
+will automated front-end
+optimization tools
+
+1011
+00:42:42,550 --> 00:42:45,340
+play in our increasingly
+complex world?
+
+1012
+00:42:45,340 --> 00:42:47,350
+Do they add yet another
+complicated layer
+
+1013
+00:42:47,350 --> 00:42:50,710
+of abstraction or will
+they become a necessity?
+
+1014
+00:42:50,710 --> 00:42:53,590
+STEVE: So FEO tools
+like, mod_pagespeed
+
+1015
+00:42:53,590 --> 00:42:57,470
+or Riverbed Stingray Aptimizer.
+
+1016
+00:42:57,470 --> 00:43:00,352
+You're a fan of Varnish,
+that's a reverse proxy
+
+1017
+00:43:00,352 --> 00:43:01,060
+type [INAUDIBLE].
+
+1018
+00:43:01,060 --> 00:43:02,977
+LUKE BLANEY: I think, I
+would classify Varnish
+
+1019
+00:43:02,977 --> 00:43:04,643
+as different than
+those sorts of things,
+
+1020
+00:43:04,643 --> 00:43:06,960
+because Varnish behaves
+like an HTTP proxy.
+
+1021
+00:43:06,960 --> 00:43:09,950
+It'll follow, by default
+it'll follow HTTP headers
+
+1022
+00:43:09,950 --> 00:43:11,770
+and it won't do anything weird.
+
+1023
+00:43:11,770 --> 00:43:14,762
+A lot of these other
+ones, I get very
+
+1024
+00:43:14,762 --> 00:43:16,470
+hesitant about using
+things that are just
+
+1025
+00:43:16,470 --> 00:43:18,429
+going to do magic in
+front of any coder, right?
+
+1026
+00:43:18,429 --> 00:43:20,469
+WESLEY HALES: I think it's
+such a large education
+
+1027
+00:43:20,469 --> 00:43:22,240
+process for front-end
+developers as well.
+
+1028
+00:43:22,240 --> 00:43:26,250
+I mean, especially
+those that might just
+
+1029
+00:43:26,250 --> 00:43:28,760
+be entry-level to mid-level.
+
+1030
+00:43:28,760 --> 00:43:31,950
+It's, a lot of
+companies are trying
+
+1031
+00:43:31,950 --> 00:43:36,320
+to take care of things like
+performance and security
+
+1032
+00:43:36,320 --> 00:43:37,350
+with appliances.
+
+1033
+00:43:37,350 --> 00:43:41,400
+And plug-ins and things that
+go along with the web server.
+
+1034
+00:43:41,400 --> 00:43:45,620
+So I don't know if
+it's needed or not.
+
+1035
+00:43:45,620 --> 00:43:48,210
+I mean I don't know if
+web developers should just
+
+1036
+00:43:48,210 --> 00:43:51,680
+know the rules automatically,
+or if they need the help to &mdash;
+
+1037
+00:43:51,680 --> 00:43:54,152
+STEVE: Peter, first?
+
+1038
+00:43:54,152 --> 00:43:57,800
+PETER HEDENSKOG: Yeah,
+I mean, as a developer,
+
+1039
+00:43:57,800 --> 00:43:59,330
+I want to know
+what's happened, so I
+
+1040
+00:43:59,330 --> 00:44:01,538
+don't like these kind of
+tools, because I don't know,
+
+1041
+00:44:01,538 --> 00:44:05,830
+like I say, the magic,
+the magic things about it.
+
+1042
+00:44:05,830 --> 00:44:08,040
+It's made me unsecure, actually.
+
+1043
+00:44:08,040 --> 00:44:11,060
+STEVE: But as an
+operations manager,
+
+1044
+00:44:11,060 --> 00:44:13,190
+who's been waiting for
+developers to speed up
+
+1045
+00:44:13,190 --> 00:44:14,250
+the website for ages.
+
+1046
+00:44:14,250 --> 00:44:17,840
+If I can sling
+$50,000 at Riverbed,
+
+1047
+00:44:17,840 --> 00:44:20,450
+and it makes my
+site faster, that's
+
+1048
+00:44:20,450 --> 00:44:23,877
+the cost of one developer,
+well, why wouldn't I do that?
+
+1049
+00:44:23,877 --> 00:44:25,960
+Give Andy [INAUDIBLE] a
+[? comment. ?] [INAUDIBLE]
+
+1050
+00:44:25,960 --> 00:44:28,270
+ANDY DAVIES: We're
+trying to optimize
+
+1051
+00:44:28,270 --> 00:44:30,640
+for different browsers that
+behave in different ways.
+
+1052
+00:44:30,640 --> 00:44:33,780
+Different devices over
+different network conditions.
+
+1053
+00:44:33,780 --> 00:44:37,830
+I think for a certain
+number of cust &mdash; people,
+
+1054
+00:44:37,830 --> 00:44:39,440
+I think it's the only way to go.
+
+1055
+00:44:39,440 --> 00:44:41,190
+I think, because
+we're trading off
+
+1056
+00:44:41,190 --> 00:44:43,772
+the cost of employing
+developers who may not
+
+1057
+00:44:43,772 --> 00:44:45,630
+be doing a great job
+anyway, because there
+
+1058
+00:44:45,630 --> 00:44:46,900
+are some great
+developers in the world
+
+1059
+00:44:46,900 --> 00:44:48,691
+and there are some very
+average developers.
+
+1060
+00:44:48,691 --> 00:44:51,350
+And we see it in the
+way that pages behave.
+
+1061
+00:44:51,350 --> 00:44:55,467
+And it's, if I can deploy
+an automated device that
+
+1062
+00:44:55,467 --> 00:44:57,800
+will speed up that site and
+give those visitors a better
+
+1063
+00:44:57,800 --> 00:44:59,285
+experience, then why not?
+
+1064
+00:44:59,285 --> 00:45:01,840
+STEVE: I I'll take
+a point from Perry,
+
+1065
+00:45:01,840 --> 00:45:03,640
+and can somebody
+refresh Onslyde,
+
+1066
+00:45:03,640 --> 00:45:05,250
+because I think it's crashed.
+
+1067
+00:45:05,250 --> 00:45:05,950
+[AUDIENCE]: No.
+
+1068
+00:45:05,950 --> 00:45:06,256
+We were so close.
+
+1069
+00:45:06,256 --> 00:45:06,795
+[LAUGHTER]
+
+1070
+00:45:06,795 --> 00:45:07,290
+So, Perry, stand up
+and wait for the mike.
+
+1071
+00:45:07,290 --> 00:45:07,790
+Let's go.
+
+1072
+00:45:07,790 --> 00:45:16,390
+PERRY: So all I
+was going to say is
+
+1073
+00:45:16,390 --> 00:45:18,650
+I think I agree with
+Steve and with Andy,
+
+1074
+00:45:18,650 --> 00:45:22,240
+because I think we're getting
+asked as developers, ops,
+
+1075
+00:45:22,240 --> 00:45:24,770
+webops, whatever we do.
+
+1076
+00:45:24,770 --> 00:45:28,680
+We're getting asked to do more
+and more and more with less
+
+1077
+00:45:28,680 --> 00:45:30,510
+and less and less time to do it.
+
+1078
+00:45:30,510 --> 00:45:33,010
+And it's actually the business
+that's going to dictate this,
+
+1079
+00:45:33,010 --> 00:45:34,100
+I think.
+
+1080
+00:45:34,100 --> 00:45:39,430
+And I think these kind of
+automated tools and devices
+
+1081
+00:45:39,430 --> 00:45:41,510
+are going to be the
+only way that we're
+
+1082
+00:45:41,510 --> 00:45:43,120
+going to be able to keep up.
+
+1083
+00:45:43,120 --> 00:45:46,760
+So that's going to be
+HTTP/2, versus HTTP 1.1.
+
+1084
+00:45:46,760 --> 00:45:49,170
+We're already
+struggling, with just
+
+1085
+00:45:49,170 --> 00:45:51,032
+dealing with what we
+have to deal with now.
+
+1086
+00:45:51,032 --> 00:45:52,240
+It's only going to get worse.
+
+1087
+00:45:52,240 --> 00:45:53,781
+We're talking about
+later on, there's
+
+1088
+00:45:53,781 --> 00:45:58,110
+going to be new devices,
+wearable technologies, TVs
+
+1089
+00:45:58,110 --> 00:45:59,194
+to concern ourselves with.
+
+1090
+00:45:59,194 --> 00:46:00,943
+I just think we're
+going to have to do it.
+
+1091
+00:46:00,943 --> 00:46:02,340
+WESLEY HALES: And
+for those of us
+
+1092
+00:46:02,340 --> 00:46:08,220
+that are not in the performance
+consulting ring, I guess,
+
+1093
+00:46:08,220 --> 00:46:11,080
+it's hard to get
+time in companies
+
+1094
+00:46:11,080 --> 00:46:13,690
+to work on performance to
+make your pages faster.
+
+1095
+00:46:13,690 --> 00:46:15,480
+It's hard to sell
+a lot of bosses
+
+1096
+00:46:15,480 --> 00:46:20,960
+on doing that as developers
+who work on an application,
+
+1097
+00:46:20,960 --> 00:46:24,525
+or a site that's driven
+by whatever advertising
+
+1098
+00:46:24,525 --> 00:46:26,470
+dollars, whatever
+you want to call it.
+
+1099
+00:46:26,470 --> 00:46:28,370
+Someone else's budget
+basically and they
+
+1100
+00:46:28,370 --> 00:46:31,620
+don't want to allot for
+that performance boost.
+
+1101
+00:46:31,620 --> 00:46:33,750
+I can speak to personally.
+
+1102
+00:46:33,750 --> 00:46:36,820
+PAT MEENAN: And I think there's
+some class of optimizations
+
+1103
+00:46:36,820 --> 00:46:38,910
+that you're going
+to start getting
+
+1104
+00:46:38,910 --> 00:46:40,910
+more comfortable
+with handing off.
+
+1105
+00:46:40,910 --> 00:46:42,660
+The one that comes to
+mind, in particular,
+
+1106
+00:46:42,660 --> 00:46:44,892
+is image transcoding
+and supporting WebP.
+
+1107
+00:46:44,892 --> 00:46:46,850
+There's a whole bunch of
+things that you're not
+
+1108
+00:46:46,850 --> 00:46:50,020
+going to want to have to
+rebuild, an image server,
+
+1109
+00:46:50,020 --> 00:46:52,780
+and you'll start pushing off
+to appliances or a service
+
+1110
+00:46:52,780 --> 00:46:53,770
+to do for you.
+
+1111
+00:46:53,770 --> 00:46:56,020
+Because you're not going to
+want to maintain libraries
+
+1112
+00:46:56,020 --> 00:46:57,730
+of 10 different
+image formats as we
+
+1113
+00:46:57,730 --> 00:47:01,330
+get, like, WebP,
+jpeg, XR, and whatever
+
+1114
+00:47:01,330 --> 00:47:02,490
+else comes down the pike.
+
+1115
+00:47:02,490 --> 00:47:04,870
+LUKE BLANEY: I think there's
+a difference between making
+
+1116
+00:47:04,870 --> 00:47:06,520
+a conscious decision
+as a developer saying,
+
+1117
+00:47:06,520 --> 00:47:08,644
+I want to farm this off to
+somebody else who is got
+
+1118
+00:47:08,644 --> 00:47:11,190
+to look after my iimages,
+to have just some appliance
+
+1119
+00:47:11,190 --> 00:47:14,421
+stuck in front of all your code
+that does whatever it wants
+
+1120
+00:47:14,421 --> 00:47:15,670
+because it thinks it's better.
+
+1121
+00:47:15,670 --> 00:47:17,914
+We had problems with
+mobile operators doing
+
+1122
+00:47:17,914 --> 00:47:19,580
+this sort of thing,
+where they're going,
+
+1123
+00:47:19,580 --> 00:47:22,010
+like, oh, that
+bit of JavaScript,
+
+1124
+00:47:22,010 --> 00:47:23,490
+we can optimize that for you.
+
+1125
+00:47:23,490 --> 00:47:26,380
+STEVE: The person who asked this
+question works for Vodafone.
+
+1126
+00:47:26,380 --> 00:47:28,412
+LUKE BLANEY: Well,
+in the early days
+
+1127
+00:47:28,412 --> 00:47:30,620
+of the web, that was one of
+the things that caught us
+
+1128
+00:47:30,620 --> 00:47:32,600
+off guard.
+
+1129
+00:47:32,600 --> 00:47:35,920
+Because operators think that
+they know things better than
+
+1130
+00:47:35,920 --> 00:47:36,420
+you.
+
+1131
+00:47:36,420 --> 00:47:38,786
+But if you're a developer
+who knows what they're doing,
+
+1132
+00:47:38,786 --> 00:47:40,660
+sometimes you know better
+than the appliance,
+
+1133
+00:47:40,660 --> 00:47:42,705
+and the appliance
+just gets in your way.
+
+1134
+00:47:42,705 --> 00:47:47,095
+STEVE: I think, will they become
+a necessity in our increasingly
+
+1135
+00:47:47,095 --> 00:47:48,720
+complex world, I
+guess the question is,
+
+1136
+00:47:48,720 --> 00:47:50,970
+do you see the world &mdash; we've
+talked about components,
+
+1137
+00:47:50,970 --> 00:47:53,650
+we've talked about HTTP/2.0
+
+1138
+00:47:53,650 --> 00:47:56,910
+I don't see the world
+getting less complex,
+
+1139
+00:47:56,910 --> 00:47:58,520
+so there's only
+so much complexity
+
+1140
+00:47:58,520 --> 00:48:00,260
+that you can deal
+with as a developer,
+
+1141
+00:48:00,260 --> 00:48:02,940
+surely, before somebody's
+going to say, let's hand
+
+1142
+00:48:02,940 --> 00:48:06,000
+this off to an automated
+process that does it better.
+
+1143
+00:48:06,000 --> 00:48:09,520
+I'm sure Guy would
+say that Akamai,
+
+1144
+00:48:09,520 --> 00:48:10,655
+the next-generation CDNs &mdash;
+
+1145
+00:48:10,655 --> 00:48:14,620
+GUY: Yes, so I'm
+totally biased, here, I
+
+1146
+00:48:14,620 --> 00:48:22,170
+work for Akamai [INAUDIBLE],
+but I do think that, two things.
+
+1147
+00:48:22,170 --> 00:48:23,904
+One, as opposed to
+the carrier proxies,
+
+1148
+00:48:23,904 --> 00:48:25,320
+the intent here
+is to be something
+
+1149
+00:48:25,320 --> 00:48:26,560
+that's an extension
+of your platform.
+
+1150
+00:48:26,560 --> 00:48:27,670
+So it's to save you time.
+
+1151
+00:48:27,670 --> 00:48:29,350
+It operates based on
+your instructions.
+
+1152
+00:48:29,350 --> 00:48:32,630
+Granted, instead of writing
+code, you're checking a box.
+
+1153
+00:48:32,630 --> 00:48:35,430
+But you're tuning it and you're
+configuring it to your needs.
+
+1154
+00:48:35,430 --> 00:48:38,660
+So, not quite as simple as
+a Varnish HTTP construction,
+
+1155
+00:48:38,660 --> 00:48:40,645
+but not that much different
+than Varnish in SI,
+
+1156
+00:48:40,645 --> 00:48:45,421
+or the Varnish kind of,
+elaborate caching policies.
+
+1157
+00:48:45,421 --> 00:48:47,170
+So, that's just sort
+of a general thought.
+
+1158
+00:48:47,170 --> 00:48:49,760
+And yeah, and I think
+the point I come back
+
+1159
+00:48:49,760 --> 00:48:52,560
+to every time we talk
+to users of this,
+
+1160
+00:48:52,560 --> 00:48:54,430
+or people considering
+using it, is
+
+1161
+00:48:54,430 --> 00:48:56,500
+if you can automate
+it, why do it manually?
+
+1162
+00:48:56,500 --> 00:48:59,100
+So the exact range of were
+the tools good enough,
+
+1163
+00:48:59,100 --> 00:49:02,460
+or were they not good enough,
+what is your level of comfort?
+
+1164
+00:49:02,460 --> 00:49:04,990
+That's something
+that as an industry
+
+1165
+00:49:04,990 --> 00:49:06,860
+we still need to
+evolve and improve.
+
+1166
+00:49:06,860 --> 00:49:07,730
+But I think at
+the end of the day
+
+1167
+00:49:07,730 --> 00:49:09,396
+if you have a way to
+do it automatically
+
+1168
+00:49:09,396 --> 00:49:12,060
+and it encompasses knowledge
+and takes away complexity,
+
+1169
+00:49:12,060 --> 00:49:15,280
+the only reason not to
+do so is that you're not
+
+1170
+00:49:15,280 --> 00:49:18,170
+used to it, right, and
+you can overcome that.
+
+1171
+00:49:18,170 --> 00:49:20,430
+STEVE: 30 seconds if you want it
+
+1172
+00:49:20,430 --> 00:49:23,747
+CHRISTOPHER EMERY: I
+just want to add on
+
+1173
+00:49:23,747 --> 00:49:25,080
+since I know what you're saying.
+
+1174
+00:49:25,080 --> 00:49:26,640
+It's great to
+[INAUDIBLE] yourself
+
+1175
+00:49:26,640 --> 00:49:29,700
+to try and act as an
+extension of the platform.
+
+1176
+00:49:29,700 --> 00:49:31,992
+But actually, in my experience
+with the kind of clients
+
+1177
+00:49:31,992 --> 00:49:33,700
+I'm dealing with, our
+MSAs don't actually
+
+1178
+00:49:33,700 --> 00:49:35,270
+give us free rein
+on our platform.
+
+1179
+00:49:35,270 --> 00:49:36,880
+We have to play by their rules.
+
+1180
+00:49:36,880 --> 00:49:38,630
+So a lot of times,
+what is in our control
+
+1181
+00:49:38,630 --> 00:49:41,399
+are things like the build
+tools, optimizing things down
+
+1182
+00:49:41,399 --> 00:49:43,690
+on our end with the [INAUDIBLE]
+before we get onto that
+
+1183
+00:49:43,690 --> 00:49:44,342
+platform.
+
+1184
+00:49:44,342 --> 00:49:46,550
+So a lot of times, like I
+say, sticking to the basics
+
+1185
+00:49:46,550 --> 00:49:49,030
+effectively is often
+the best platform.
+
+1186
+00:49:49,030 --> 00:49:51,250
+STEVE: Go over here.
+
+1187
+00:49:51,250 --> 00:49:52,500
+One last, very quick question.
+
+1188
+00:49:52,500 --> 00:49:55,740
+
+1189
+00:49:55,740 --> 00:49:56,925
+Or very quick comment.
+
+1190
+00:49:56,925 --> 00:50:03,134
+UNKNOWN AUDIENCE #4: I'm
+interested in the hardware
+
+1191
+00:50:03,134 --> 00:50:05,300
+side of this, because I
+work for a hardware company.
+
+1192
+00:50:05,300 --> 00:50:08,950
+
+1193
+00:50:08,950 --> 00:50:11,380
+For me, load time
+is important, yes,
+
+1194
+00:50:11,380 --> 00:50:13,810
+you need to get stuff down
+as quickly as possible,
+
+1195
+00:50:13,810 --> 00:50:15,790
+but what's more
+important is how quickly
+
+1196
+00:50:15,790 --> 00:50:17,770
+the user can see this stuff.
+
+1197
+00:50:17,770 --> 00:50:19,730
+And that goes
+through the hardware.
+
+1198
+00:50:19,730 --> 00:50:22,240
+You were discussing stuff
+like, batching is bad,
+
+1199
+00:50:22,240 --> 00:50:25,970
+but do you consider the
+hardware underlying as well.
+
+1200
+00:50:25,970 --> 00:50:27,600
+Batching is really
+good for the GPU.
+
+1201
+00:50:27,600 --> 00:50:32,190
+PAT MEENAN: So
+batching, a GPU doesn't
+
+1202
+00:50:32,190 --> 00:50:34,540
+know how to deal with a
+sprite, though, right?
+
+1203
+00:50:34,540 --> 00:50:37,080
+So, as far as the
+browser's concerned,
+
+1204
+00:50:37,080 --> 00:50:39,040
+the GPU doesn't deal
+with the sprite.
+
+1205
+00:50:39,040 --> 00:50:41,180
+The GPU deals with the
+sprite in a whole bunch
+
+1206
+00:50:41,180 --> 00:50:42,950
+of different places
+and clips it,
+
+1207
+00:50:42,950 --> 00:50:45,740
+and doesn't deal with
+it better than images.
+
+1208
+00:50:45,740 --> 00:50:47,800
+STEVE: So I'm going
+to have, I'm going
+
+1209
+00:50:47,800 --> 00:50:48,760
+to have to cut that
+one off, and you
+
+1210
+00:50:48,760 --> 00:50:49,940
+can take it offline,
+because we've
+
+1211
+00:50:49,940 --> 00:50:52,565
+got about five minutes left and
+we still have a question to go.
+
+1212
+00:50:52,565 --> 00:50:55,990
+From [? Paul ?] Lewis, which
+actually ties in very neatly
+
+1213
+00:50:55,990 --> 00:51:01,426
+with something that was
+just mentioned, actually.
+
+1214
+00:51:01,426 --> 00:51:05,252
+PAUL LEWIS: My
+question got tweeked.
+
+1215
+00:51:05,252 --> 00:51:06,710
+Which is the topic
+of the day, so I
+
+1216
+00:51:06,710 --> 00:51:08,835
+thought I'd fight fire with
+fire and tweek it back.
+
+1217
+00:51:08,835 --> 00:51:11,800
+
+1218
+00:51:11,800 --> 00:51:15,990
+How should teams balance
+branding and personality
+
+1219
+00:51:15,990 --> 00:51:17,160
+against performance.
+
+1220
+00:51:17,160 --> 00:51:20,050
+I guess I have web fonts
+and images and such in mind,
+
+1221
+00:51:20,050 --> 00:51:22,050
+and how can they
+meaningfully measure
+
+1222
+00:51:22,050 --> 00:51:25,280
+the benefits of branding
+versus the benefit of speed?
+
+1223
+00:51:25,280 --> 00:51:28,142
+And I hashtagged
+#perfmatters on that.
+
+1224
+00:51:28,142 --> 00:51:30,810
+STEVE: Hashtag
+#perfmatters, always good.
+
+1225
+00:51:30,810 --> 00:51:34,160
+I mean, you started to talk
+about this in the answer
+
+1226
+00:51:34,160 --> 00:51:35,460
+to the previous question.
+
+1227
+00:51:35,460 --> 00:51:37,810
+You come up again, do you
+think, the designers want
+
+1228
+00:51:37,810 --> 00:51:40,770
+their cool web fonts, they don't
+necessarily want performance.
+
+1229
+00:51:40,770 --> 00:51:43,240
+WESLEY HALES: Right,
+it's the same argument
+
+1230
+00:51:43,240 --> 00:51:45,340
+as the mobile versus
+desktop side, I guess.
+
+1231
+00:51:45,340 --> 00:51:49,490
+I mean, you have to measure, the
+business knows what it wants.
+
+1232
+00:51:49,490 --> 00:51:53,345
+Whether it's a brochure site
+or whether it doesn't want
+
+1233
+00:51:53,345 --> 00:51:56,480
+it's users to drop off because
+the page load time is too high.
+
+1234
+00:51:56,480 --> 00:51:59,020
+Or whether there's a lot of
+jank going on in the page,
+
+1235
+00:51:59,020 --> 00:52:02,450
+because they can't scroll down
+the page and their user base
+
+1236
+00:52:02,450 --> 00:52:04,740
+drops because of that.
+
+1237
+00:52:04,740 --> 00:52:10,120
+So it's about, do you
+want better performance
+
+1238
+00:52:10,120 --> 00:52:13,800
+or do you want a
+better-looking site?
+
+1239
+00:52:13,800 --> 00:52:16,050
+I guess there's a balance
+somewhere in between there,
+
+1240
+00:52:16,050 --> 00:52:19,047
+but right now, you really have
+to focus on one or the other,
+
+1241
+00:52:19,047 --> 00:52:19,546
+I think.
+
+1242
+00:52:19,546 --> 00:52:26,460
+
+1243
+00:52:26,460 --> 00:52:29,290
+STEVE: So who's had
+this conversation
+
+1244
+00:52:29,290 --> 00:52:31,780
+with their business?
+
+1245
+00:52:31,780 --> 00:52:34,250
+So who wants to stand up
+and reach for the microphone
+
+1246
+00:52:34,250 --> 00:52:36,500
+to say, we've had this
+conversation with our business.
+
+1247
+00:52:36,500 --> 00:52:37,860
+And this is how we tackled it.
+
+1248
+00:52:37,860 --> 00:52:40,890
+Oh, Patrick, go on, you know
+you want to, Or next, go on.
+
+1249
+00:52:40,890 --> 00:52:41,390
+Tag team it.
+
+1250
+00:52:41,390 --> 00:52:46,734
+
+1251
+00:52:46,734 --> 00:52:49,314
+UNKNOWN AUDIENCE #5: Yeah,
+we've had this conversation
+
+1252
+00:52:49,314 --> 00:52:50,230
+quite a lot, actually.
+
+1253
+00:52:50,230 --> 00:52:52,190
+STEVE: So what organization?
+
+1254
+00:52:52,190 --> 00:52:54,480
+UNKNOWN AUDIENCE #5:
+The Guardian, again.
+
+1255
+00:52:54,480 --> 00:52:56,870
+So designers like their
+beautiful web fonts,
+
+1256
+00:52:56,870 --> 00:53:00,130
+but mobile users don't like to
+wait for the text to show up.
+
+1257
+00:53:00,130 --> 00:53:04,561
+So what we've found
+is that maybe we
+
+1258
+00:53:04,561 --> 00:53:05,560
+could find a compromise.
+
+1259
+00:53:05,560 --> 00:53:09,350
+Maybe you can have the realy,
+really iconic fonts in there
+
+1260
+00:53:09,350 --> 00:53:13,073
+on mobile, but the
+other fonts, maybe you
+
+1261
+00:53:13,073 --> 00:53:15,670
+can load them only on desktops.
+
+1262
+00:53:15,670 --> 00:53:21,076
+So that's the kind of
+compromise we came up with.
+
+1263
+00:53:21,076 --> 00:53:24,800
+ANDY DAVIES: Can I add
+a support question?
+
+1264
+00:53:24,800 --> 00:53:26,860
+Yeah, because the other,
+the thing lots of people
+
+1265
+00:53:26,860 --> 00:53:29,290
+do is, we talk about
+fonts, and how many people
+
+1266
+00:53:29,290 --> 00:53:31,274
+just chuck Open Sans
+or a font on the page,
+
+1267
+00:53:31,274 --> 00:53:33,190
+without considering all
+the font glyphs in it.
+
+1268
+00:53:33,190 --> 00:53:35,110
+So there are, even
+using web fonts,
+
+1269
+00:53:35,110 --> 00:53:36,490
+there are optimization options.
+
+1270
+00:53:36,490 --> 00:53:38,810
+In the &mdash; take out the
+glyphs we're not using.
+
+1271
+00:53:38,810 --> 00:53:41,420
+Which takes &mdash; Open
+Sans off Google,
+
+1272
+00:53:41,420 --> 00:53:44,000
+if you start stripping
+it down to just font,
+
+1273
+00:53:44,000 --> 00:53:45,920
+the font glyphs you
+need for English,
+
+1274
+00:53:45,920 --> 00:53:49,100
+It ends up being 60%
+of the original size.
+
+1275
+00:53:49,100 --> 00:53:51,880
+Sorry, 60% reduction in size.
+
+1276
+00:53:51,880 --> 00:53:53,505
+So you end up with
+a much smaller glyph
+
+1277
+00:53:53,505 --> 00:53:54,630
+that's quicker to download.
+
+1278
+00:53:54,630 --> 00:53:56,380
+That you can embed
+as a data URI,
+
+1279
+00:53:56,380 --> 00:53:58,810
+so you avoid the round trip.
+
+1280
+00:53:58,810 --> 00:53:59,850
+It's a choice.
+
+1281
+00:53:59,850 --> 00:54:04,040
+Some brands, it's
+as a brand, measure
+
+1282
+00:54:04,040 --> 00:54:06,410
+what the impact of
+performance is having.
+
+1283
+00:54:06,410 --> 00:54:09,860
+And test whether you can
+take stuff out of the page
+
+1284
+00:54:09,860 --> 00:54:12,870
+and still keep your brand
+quality, and whether that
+
+1285
+00:54:12,870 --> 00:54:15,695
+has an impact on visits
+or behavior. this
+
+1286
+00:54:15,695 --> 00:54:20,430
+STEVE: I think maybe
+the panel is still
+
+1287
+00:54:20,430 --> 00:54:25,240
+missing the question, which is,
+how do you get your business
+
+1288
+00:54:25,240 --> 00:54:27,140
+to engage in this conversation?
+
+1289
+00:54:27,140 --> 00:54:29,100
+And I think the
+answer has to be,
+
+1290
+00:54:29,100 --> 00:54:31,150
+you've got to be able to
+measure the performance
+
+1291
+00:54:31,150 --> 00:54:34,560
+and tie the performance back to
+the measurement of your site.
+
+1292
+00:54:34,560 --> 00:54:37,580
+Perry gave a presentation
+at Velocity this year,
+
+1293
+00:54:37,580 --> 00:54:39,280
+where he gave some
+great examples.
+
+1294
+00:54:39,280 --> 00:54:41,480
+Where they were tying
+it into the analytics,
+
+1295
+00:54:41,480 --> 00:54:43,480
+they tied it into
+their Adobe Omniture,
+
+1296
+00:54:43,480 --> 00:54:44,960
+so the marketing
+people could see
+
+1297
+00:54:44,960 --> 00:54:47,960
+very clearly that conversion
+rate changed at this point
+
+1298
+00:54:47,960 --> 00:54:48,680
+in time.
+
+1299
+00:54:48,680 --> 00:54:50,860
+So step one is, measure
+your performance.
+
+1300
+00:54:50,860 --> 00:54:53,660
+Step two, measure the
+performance with money.
+
+1301
+00:54:53,660 --> 00:54:56,910
+Step three, start doing
+A/B testing of slow
+
+1302
+00:54:56,910 --> 00:55:00,400
+versus fast, or pretty
+versus not-so-pretty.
+
+1303
+00:55:00,400 --> 00:55:02,380
+PAT MEENAN: And
+the key thing there
+
+1304
+00:55:02,380 --> 00:55:04,150
+is make sure your
+performance data is
+
+1305
+00:55:04,150 --> 00:55:05,370
+in with the business metrics.
+
+1306
+00:55:05,370 --> 00:55:06,786
+Having them
+completely separately,
+
+1307
+00:55:06,786 --> 00:55:08,424
+where they can't,
+sort of, correlate
+
+1308
+00:55:08,424 --> 00:55:09,340
+the two to each other.
+
+1309
+00:55:09,340 --> 00:55:10,673
+It becomes a really big problem.
+
+1310
+00:55:10,673 --> 00:55:14,000
+It becomes difficult to
+say, the extra two seconds
+
+1311
+00:55:14,000 --> 00:55:18,375
+is costing you 10,000
+users a day kind of thing.
+
+1312
+00:55:18,375 --> 00:55:20,000
+But if you want to
+have a conversation,
+
+1313
+00:55:20,000 --> 00:55:21,200
+just strip out
+all the web fonts.
+
+1314
+00:55:21,200 --> 00:55:22,140
+They'll come find you.
+
+1315
+00:55:22,140 --> 00:55:24,667
+UNKNOWN SPEAKER:
+If you're trying
+
+1316
+00:55:24,667 --> 00:55:26,500
+to figure out how to
+start the conversation.
+
+1317
+00:55:26,500 --> 00:55:28,750
+CHRISTOPHER EMERY: I just want
+to say, with regards to this.
+
+1318
+00:55:28,750 --> 00:55:31,208
+I've actually had this exact
+conversation with our clients.
+
+1319
+00:55:31,208 --> 00:55:33,080
+And because the type
+of company I'm in,
+
+1320
+00:55:33,080 --> 00:55:34,685
+we actually have a
+lot of media money
+
+1321
+00:55:34,685 --> 00:55:37,895
+in terms of TV ads
+pointing at web properties.
+
+1322
+00:55:37,895 --> 00:55:40,551
+And we actually find that
+a lot of the conversation
+
+1323
+00:55:40,551 --> 00:55:42,550
+about performance is
+actually being talked about
+
+1324
+00:55:42,550 --> 00:55:44,770
+by the clients,
+actually out of fear.
+
+1325
+00:55:44,770 --> 00:55:45,370
+And it's actually two
+sides of the coin.
+
+1326
+00:55:45,370 --> 00:55:46,940
+We're talking page
+load performance.
+
+1327
+00:55:46,940 --> 00:55:49,024
+And if the server can't
+handle the load coming in,
+
+1328
+00:55:49,024 --> 00:55:50,981
+it's pointless about
+fonts and stuff like that.
+
+1329
+00:55:50,981 --> 00:55:54,349
+So, a lot of our conversations
+actually start off with,
+
+1330
+00:55:54,349 --> 00:55:55,640
+OK, well, what's the media buy?
+
+1331
+00:55:55,640 --> 00:55:57,130
+OK, we are
+expecting &mdash; it's going
+
+1332
+00:55:57,130 --> 00:55:58,400
+to be on how many TV channels?
+
+1333
+00:55:58,400 --> 00:55:59,560
+Stuff like that, who
+are they driving to,
+
+1334
+00:55:59,560 --> 00:56:00,500
+we have to keep the server up.
+
+1335
+00:56:00,500 --> 00:56:01,810
+So there's that part of it.
+
+1336
+00:56:01,810 --> 00:56:03,730
+And then on top of
+that, it then becomes,
+
+1337
+00:56:03,730 --> 00:56:06,040
+a path to purchase with
+regards to buying a product,
+
+1338
+00:56:06,040 --> 00:56:08,300
+then it becomes, OK, well,
+how fast can they do that?
+
+1339
+00:56:08,300 --> 00:56:10,009
+Not so much, if there
+are different parts
+
+1340
+00:56:10,009 --> 00:56:12,216
+of the site that load a
+little bit slower, that's OK.
+
+1341
+00:56:12,216 --> 00:56:14,050
+It depends on that
+critical path in terms
+
+1342
+00:56:14,050 --> 00:56:17,720
+of how fast they can get to
+kind of click the volume button.
+
+1343
+00:56:17,720 --> 00:56:21,920
+So in terms of the really big
+brands are talking performance,
+
+1344
+00:56:21,920 --> 00:56:23,560
+but it kind of comes
+from a fear factor
+
+1345
+00:56:23,560 --> 00:56:24,835
+that they don't want
+the site to go down,
+
+1346
+00:56:24,835 --> 00:56:26,418
+they don't want to
+be a laughingstock.
+
+1347
+00:56:26,418 --> 00:56:29,560
+And they don't want to
+lose their kindof, value.
+
+1348
+00:56:29,560 --> 00:56:32,370
+It was the performance
+of metrics,
+
+1349
+00:56:32,370 --> 00:56:34,962
+how many visitors to how
+many people purchase.
+
+1350
+00:56:34,962 --> 00:56:36,920
+STEVE: We're going to
+have to wrap it up there,
+
+1351
+00:56:36,920 --> 00:56:38,962
+I'm sorry not to be able
+to get to your question.
+
+1352
+00:56:38,962 --> 00:56:41,045
+But we've actually reached
+the end of the session.
+
+1353
+00:56:41,045 --> 00:56:43,470
+I think the message there is,
+play the fear, uncertainty,
+
+1354
+00:56:43,470 --> 00:56:44,150
+and doubt card.
+
+1355
+00:56:44,150 --> 00:56:49,290
+And your site will crash if
+you put all this stuff on it.
+
+1356
+00:56:49,290 --> 00:56:52,250
+Which is not an argument
+I like from an operations
+
+1357
+00:56:52,250 --> 00:56:55,130
+point of view, because it's my
+fault if the site goes down.
+
+1358
+00:56:55,130 --> 00:56:55,940
+But anyway, thanks
+very much, guys.
+
+1359
+00:56:55,940 --> 00:56:57,210
+Thanks to everybody on the
+panel for contributing.
+
+1360
+00:56:57,210 --> 00:56:59,001
+Thanks, great contributions
+from the floor.
+
+1361
+00:56:59,001 --> 00:56:59,984
+And, yeah, well done.
+
+1362
+00:56:59,984 --> 00:57:08,704
+

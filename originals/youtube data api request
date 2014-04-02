@@ -1,0 +1,29 @@
+gdata.youtube.com/feeds/api/videos?
+alt=json
+&author=GoogleDevelopers
+&caption=true
+&q=android+-chrome
+&orderby=published
+&start-index=11
+&max-results=10
+&v=2
+
+
+EdgeConf 3
+It's a bit complex...
+
+1. Use the YouTube data API to get a list of videos with captions:
+
+gdata.youtube.com/feeds/api/videos?alt=json&author=GoogleDevelopers&caption=true&v=2&fields=openSearch:totalResults,entry(id,title,yt:statistics,yt:location,yt:firstReleased,media:group(media:description))&prettyprint=true
+
+(For various reasons, I originally used a different method to get the video data, but this is better.)
+
+2. For each video, get its caption file:
+
+video.google.com/timedtext?lang=en&format=vtt&vOic22dQMRXQ
+
+3. For each caption file, create an HTML transcript file. This requires some pretty messy regexing – to get speaker names, remove formatting glitches, add timed links for each caption cue, and to break long texts into paragraphs. (Just occurred to me, it would make life much easier if YouTube could provide a nicely formatted transcript file for captioned videos.)
+
+4. When the page is opened, create an array of objects corresponding to every cue from every transcript file. (I originally got the cue data by creating Video objects and adding TextTracks, but doing this via regexes is actually simpler.) This sounds like a horrendous amount of memory and processing, but for a few hundred videos, it's just about OK: at present there are around 400 videos with a total of around 25MB of caption data. There are currently 3175 GoogleDevelopers videos, and 457 Android videos
+
+5. Search is done simply be finding matches in the array of cue objects. Each object has a text and a startTime property, which are then used to create the Matches links.

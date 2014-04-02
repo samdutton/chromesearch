@@ -254,18 +254,13 @@ function displayResults(results) { // results is an array of cues
       var summary = document.createElement('summary');
       summary.textContent = 'Matches';
       matchesDetails.appendChild(summary);
-      // cuesDiv = document.createElement('div');
-      // cuesDiv.classList.add('cues');
-      // cuesDiv.title = 'Click to play video at this point';
       videoDiv.appendChild(matchesDetails);
-      // matchesDetails.appendChild(cuesDiv);
 
-      // TODO: temporary hack: transcripts are too much for mobile
-      // if (!isMobile()) {
-        addTranscriptDetails(videoDiv, video);
-      // }
+      addTranscriptDetails(videoDiv, video);
       resultsDiv.appendChild(videoDiv);
     } // end adding elements for new video
+
+    // add individual match
     addMatch(matchesDetails, cue);
   }
 }
@@ -301,7 +296,7 @@ function addVideoDetails(videoDiv, video){
   if (!!video.summary){
     var summaryDiv = document.createElement('div');
     summaryDiv.classList.add('summary');
-    summaryDiv.textContent = video.summary;
+    summaryDiv.innerHTML = video.summary;
     details.appendChild(summaryDiv);
   }
 

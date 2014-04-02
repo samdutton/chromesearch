@@ -1,0 +1,6603 @@
+1
+00:00:00,000 --> 00:00:05,600
+ 
+
+2
+00:00:05,600 --> 00:00:07,100
+CHRISTIAN HEILMANN:
+Here's the panel
+
+3
+00:00:07,100 --> 00:00:09,490
+that you've been waiting
+for after we had it hinted
+
+4
+00:00:09,490 --> 00:00:13,230
+in every other panel so far, and
+the lots of questions and lots
+
+5
+00:00:13,230 --> 00:00:15,940
+of quick solutions
+being thrown around.
+
+6
+00:00:15,940 --> 00:00:17,900
+Like the last session,
+for example-- when
+
+7
+00:00:17,900 --> 00:00:20,280
+will voice recognition
+be the norm?
+
+8
+00:00:20,280 --> 00:00:22,840
+Just easy-- take people's
+eyes out, take their arms off,
+
+9
+00:00:22,840 --> 00:00:26,480
+and they have to use
+voice recognition.
+
+10
+00:00:26,480 --> 00:00:29,320
+A lot of things that we
+actually think is coming
+
+11
+00:00:29,320 --> 00:00:32,220
+had to be used in accessibility
+for years and years already.
+
+12
+00:00:32,220 --> 00:00:36,220
+I always see accessibility as
+a hard core usability testing.
+
+13
+00:00:36,220 --> 00:00:38,692
+It's something that people
+need and not something
+
+14
+00:00:38,692 --> 00:00:39,775
+that we just want to have.
+
+15
+00:00:39,775 --> 00:00:41,860
+But Derek is going to
+do a better job in that.
+
+16
+00:00:41,860 --> 00:00:45,140
+My job is right now not to
+talk but to introduce people.
+
+17
+00:00:45,140 --> 00:00:47,250
+So to first make
+fun of the Germans,
+
+18
+00:00:47,250 --> 00:00:49,360
+let's have a family
+name like Lewthwaite.
+
+19
+00:00:49,360 --> 00:00:51,077
+Sarah is here.
+
+20
+00:00:51,077 --> 00:00:52,160
+She's from King's College.
+
+21
+00:00:52,160 --> 00:00:54,350
+And she's an academic
+researcher and writer bridging
+
+22
+00:00:54,350 --> 00:00:56,430
+the gap between critical
+disability theory
+
+23
+00:00:56,430 --> 00:00:58,160
+and accessibility
+practice, something
+
+24
+00:00:58,160 --> 00:01:00,230
+that was on our mind
+for a long, long time,
+
+25
+00:01:00,230 --> 00:01:03,950
+and we've been discussing a
+lot between us, hopefully.
+
+26
+00:01:03,950 --> 00:01:07,170
+Andrew Ronskley over
+here is from the RNIB.
+
+27
+00:01:07,170 --> 00:01:10,240
+And he's an accessibility
+and usability specialist
+
+28
+00:01:10,240 --> 00:01:12,720
+focused on the web
+and mobile platforms.
+
+29
+00:01:12,720 --> 00:01:15,440
+He's also contributed to the
+Surf Right standards, which
+
+30
+00:01:15,440 --> 00:01:17,340
+was an interesting
+thing to look at.
+
+31
+00:01:17,340 --> 00:01:19,530
+Alice Boxhall is
+from Google, but she
+
+32
+00:01:19,530 --> 00:01:21,325
+knows about accessibility.
+
+33
+00:01:21,325 --> 00:01:24,810
+[LAUGHTER]
+
+34
+00:01:24,810 --> 00:01:25,810
+OK, that was unfair.
+
+35
+00:01:25,810 --> 00:01:27,810
+But it was so good,
+because everybody else
+
+36
+00:01:27,810 --> 00:01:30,310
+I talked to, she's
+like, and here's Alice.
+
+37
+00:01:30,310 --> 00:01:32,660
+She's going to talk to you
+later about accessibility.
+
+38
+00:01:32,660 --> 00:01:35,320
+So no pressure-- you have
+to answer all the questions
+
+39
+00:01:35,320 --> 00:01:36,250
+right now.
+
+40
+00:01:36,250 --> 00:01:38,950
+She works on the
+Accessibility Developer Tools
+
+41
+00:01:38,950 --> 00:01:40,030
+extension and library.
+
+42
+00:01:40,030 --> 00:01:42,370
+And that's something
+like we used in the past.
+
+43
+00:01:42,370 --> 00:01:44,664
+We had performance tools
+for developer tools.
+
+44
+00:01:44,664 --> 00:01:46,580
+But now we have accessibility
+testers in there
+
+45
+00:01:46,580 --> 00:01:48,860
+as well, which are great,
+and absolutely necessary
+
+46
+00:01:48,860 --> 00:01:50,310
+for things like a
+Chromebook where
+
+47
+00:01:50,310 --> 00:01:53,280
+you only have Chrome
+on it and nothing else.
+
+48
+00:01:53,280 --> 00:01:57,480
+And Matthew Tylee Atkinson from
+the Paciello Group over there
+
+49
+00:01:57,480 --> 00:02:01,680
+is from the Paciello Group,
+a tester, screen magnifier,
+
+50
+00:02:01,680 --> 00:02:04,000
+and occasional text
+to speech user.
+
+51
+00:02:04,000 --> 00:02:05,600
+And he works on
+web accessibility,
+
+52
+00:02:05,600 --> 00:02:08,330
+accessible gaming, which is an
+interesting topic, especially
+
+53
+00:02:08,330 --> 00:02:12,930
+when you think about these
+kinds of Kinect things, level
+
+54
+00:02:12,930 --> 00:02:15,540
+editing, and
+supporting older users.
+
+55
+00:02:15,540 --> 00:02:17,620
+Old users-- is that a
+political correct term?
+
+56
+00:02:17,620 --> 00:02:19,380
+I'm not sure.
+
+57
+00:02:19,380 --> 00:02:22,540
+So speaking of people that have
+been around for a longer time,
+
+58
+00:02:22,540 --> 00:02:26,980
+I'm going to introduce you
+now to Derek Featherstone, who
+
+59
+00:02:26,980 --> 00:02:28,950
+has been with me in
+the accessibility world
+
+60
+00:02:28,950 --> 00:02:31,260
+for a long, long time and
+worked on the first book
+
+61
+00:02:31,260 --> 00:02:34,100
+that we both had chapters in,
+the web accessibility book
+
+62
+00:02:34,100 --> 00:02:38,260
+that two or four people read
+and followed up later on.
+
+63
+00:02:38,260 --> 00:02:40,110
+So without further
+ado, over to Derek.
+
+64
+00:02:40,110 --> 00:02:51,540
+[APPLAUSE]
+
+65
+00:02:51,540 --> 00:02:53,660
+DEREK FEATHERSTONE:
+So I'm here today
+
+66
+00:02:53,660 --> 00:02:56,090
+to talk about accessibility.
+
+67
+00:02:56,090 --> 00:02:58,250
+And most people think
+of accessibility
+
+68
+00:02:58,250 --> 00:03:00,420
+in very technical terms.
+
+69
+00:03:00,420 --> 00:03:04,066
+And the number one point
+that I want everybody
+
+70
+00:03:04,066 --> 00:03:05,440
+to walk away from
+this today with
+
+71
+00:03:05,440 --> 00:03:07,580
+is that accessibility
+is all about people.
+
+72
+00:03:07,580 --> 00:03:08,780
+It has to be about people.
+
+73
+00:03:08,780 --> 00:03:11,150
+Because if it's
+not about people,
+
+74
+00:03:11,150 --> 00:03:13,910
+we end up doing the wrong
+thing even though we're
+
+75
+00:03:13,910 --> 00:03:15,760
+meaning to do the right thing.
+
+76
+00:03:15,760 --> 00:03:18,890
+So all of us that are up
+here have a background
+
+77
+00:03:18,890 --> 00:03:20,790
+in doing this stuff for people.
+
+78
+00:03:20,790 --> 00:03:25,320
+So Christian actually
+started his first foray
+
+79
+00:03:25,320 --> 00:03:27,270
+into understanding
+accessibility when
+
+80
+00:03:27,270 --> 00:03:29,240
+he was working with
+people with disabilities
+
+81
+00:03:29,240 --> 00:03:30,750
+when he worked
+for the Red Cross.
+
+82
+00:03:30,750 --> 00:03:32,340
+Sarah is a researcher.
+
+83
+00:03:32,340 --> 00:03:38,460
+She actually works with real
+people on accessibility issues.
+
+84
+00:03:38,460 --> 00:03:41,980
+Alice is putting ARIA
+support into Chrome.
+
+85
+00:03:41,980 --> 00:03:44,460
+And that's for
+people to use, right?
+
+86
+00:03:44,460 --> 00:03:46,500
+We cannot forget this.
+
+87
+00:03:46,500 --> 00:03:48,940
+Andrew actually
+works with people,
+
+88
+00:03:48,940 --> 00:03:51,890
+taking smartphones to them
+to show them and demonstrate
+
+89
+00:03:51,890 --> 00:03:54,710
+all the different accessibility
+features of smartphones
+
+90
+00:03:54,710 --> 00:03:56,310
+and how those
+things can actually
+
+91
+00:03:56,310 --> 00:03:59,060
+have an impact on
+their day to day life.
+
+92
+00:03:59,060 --> 00:04:02,780
+And Matthew started changing
+the authoring environment
+
+93
+00:04:02,780 --> 00:04:06,730
+for gaming so that that
+could be accessible to people
+
+94
+00:04:06,730 --> 00:04:08,350
+that were blind.
+
+95
+00:04:08,350 --> 00:04:09,810
+And I do, too.
+
+96
+00:04:09,810 --> 00:04:11,560
+I work with people
+with accessibility
+
+97
+00:04:11,560 --> 00:04:13,190
+with disabilities every day.
+
+98
+00:04:13,190 --> 00:04:15,350
+We do research and
+testing and try
+
+99
+00:04:15,350 --> 00:04:19,590
+to figure out what UX is for
+people with disabilities,
+
+100
+00:04:19,590 --> 00:04:20,089
+right?
+
+101
+00:04:20,089 --> 00:04:21,519
+What does UX mean to them?
+
+102
+00:04:21,519 --> 00:04:23,500
+And so hearing all the
+things that everybody's
+
+103
+00:04:23,500 --> 00:04:26,190
+talking about this
+morning and this afternoon
+
+104
+00:04:26,190 --> 00:04:28,260
+has been absolutely fascinating.
+
+105
+00:04:28,260 --> 00:04:30,780
+Because we're talking about
+it at very technical levels.
+
+106
+00:04:30,780 --> 00:04:33,850
+But at the end of the day,
+people have to use those tools.
+
+107
+00:04:33,850 --> 00:04:38,710
+And that to me is what
+accessibility is all about.
+
+108
+00:04:38,710 --> 00:04:40,780
+We tend to simplify things.
+
+109
+00:04:40,780 --> 00:04:42,850
+And you probably
+have heard of all
+
+110
+00:04:42,850 --> 00:04:46,430
+of these different conditions
+or things that people have,
+
+111
+00:04:46,430 --> 00:04:49,580
+that people are blind or they
+have low vision, they have
+
+112
+00:04:49,580 --> 00:04:51,930
+hearing difficulties,
+or that they
+
+113
+00:04:51,930 --> 00:04:54,645
+have a mobility or a
+dexterity impairment.
+
+114
+00:04:54,645 --> 00:04:56,770
+And when you start to think
+of all of these things,
+
+115
+00:04:56,770 --> 00:04:59,310
+even those things seem
+to be very physical.
+
+116
+00:04:59,310 --> 00:05:01,320
+But what about the
+cognitive side of things?
+
+117
+00:05:01,320 --> 00:05:03,360
+And those are
+traditionally the things
+
+118
+00:05:03,360 --> 00:05:07,070
+that we're thinking about when
+we think about accessibility.
+
+119
+00:05:07,070 --> 00:05:08,730
+But there's a whole
+other realm that we
+
+120
+00:05:08,730 --> 00:05:12,191
+need to start to get
+into and explore.
+
+121
+00:05:12,191 --> 00:05:13,690
+How many of you
+have heard of things
+
+122
+00:05:13,690 --> 00:05:16,080
+like vestibular disorders?
+
+123
+00:05:16,080 --> 00:05:18,290
+So there's a whole
+group of people
+
+124
+00:05:18,290 --> 00:05:22,170
+that have some kind of
+vestibular disorder--
+
+125
+00:05:22,170 --> 00:05:25,330
+and I don't even like the
+word "disorder," but issues
+
+126
+00:05:25,330 --> 00:05:26,630
+with their balance.
+
+127
+00:05:26,630 --> 00:05:30,700
+And so when they're looking at
+a screen with all your fancy CSS
+
+128
+00:05:30,700 --> 00:05:32,860
+animations and your
+parallax effects,
+
+129
+00:05:32,860 --> 00:05:35,230
+that actually makes
+them nauseous, right?
+
+130
+00:05:35,230 --> 00:05:37,240
+It actually causes migraines.
+
+131
+00:05:37,240 --> 00:05:39,790
+So when you're
+scrolling down the page,
+
+132
+00:05:39,790 --> 00:05:42,450
+and you have a car
+that you've animated
+
+133
+00:05:42,450 --> 00:05:45,630
+with CSS that's going like this
+across the page, that actually
+
+134
+00:05:45,630 --> 00:05:47,700
+makes somebody nauseous, right?
+
+135
+00:05:47,700 --> 00:05:50,730
+These are new things that
+aren't sort of in the mainstream
+
+136
+00:05:50,730 --> 00:05:52,060
+accessibility.
+
+137
+00:05:52,060 --> 00:05:55,540
+And we need to start to take
+those things into account.
+
+138
+00:05:55,540 --> 00:05:58,530
+Things like speech--
+the very last panel
+
+139
+00:05:58,530 --> 00:06:01,550
+was talking about,
+well, what about speech?
+
+140
+00:06:01,550 --> 00:06:04,440
+And as Christian pointed out,
+voice recognition software
+
+141
+00:06:04,440 --> 00:06:07,610
+was originally invented for
+people with disabilities.
+
+142
+00:06:07,610 --> 00:06:10,650
+So on the speech side
+of things-- and this
+
+143
+00:06:10,650 --> 00:06:13,860
+is I think an absolutely
+critical thing for us
+
+144
+00:06:13,860 --> 00:06:15,690
+to keep in mind as
+we move forward.
+
+145
+00:06:15,690 --> 00:06:18,560
+Speech is just one
+modality, right?
+
+146
+00:06:18,560 --> 00:06:21,240
+What happens if we
+create interfaces
+
+147
+00:06:21,240 --> 00:06:23,374
+that use that as
+the only modality?
+
+148
+00:06:23,374 --> 00:06:24,790
+And what does that
+do for somebody
+
+149
+00:06:24,790 --> 00:06:27,440
+that speaks a different
+language, that
+
+150
+00:06:27,440 --> 00:06:31,690
+has a stutter, that
+maybe has cerebral palsy
+
+151
+00:06:31,690 --> 00:06:33,550
+and has difficulty
+speaking, right?
+
+152
+00:06:33,550 --> 00:06:37,030
+We need to create interfaces
+that are entirely flexible.
+
+153
+00:06:37,030 --> 00:06:40,040
+And one of the other
+panels earlier,
+
+154
+00:06:40,040 --> 00:06:42,130
+the pointers-- what
+about custom gestures?
+
+155
+00:06:42,130 --> 00:06:46,250
+Well, what about the fact that--
+and so here's a custom gesture,
+
+156
+00:06:46,250 --> 00:06:47,840
+move up and to the left.
+
+157
+00:06:47,840 --> 00:06:49,840
+Well, that custom
+gesture is already
+
+158
+00:06:49,840 --> 00:06:53,090
+being used on Android for
+screen reader users that
+
+159
+00:06:53,090 --> 00:06:55,960
+are using the talk back
+screen reader on Android.
+
+160
+00:06:55,960 --> 00:06:58,480
+So what happens when
+that custom gesture
+
+161
+00:06:58,480 --> 00:07:01,300
+that you've created and built
+into your page conflicts
+
+162
+00:07:01,300 --> 00:07:04,240
+with the custom gesture that is
+required for the screen reader?
+
+163
+00:07:04,240 --> 00:07:06,820
+So we need to think about
+flexible alternatives.
+
+164
+00:07:06,820 --> 00:07:10,360
+So when I move up and left
+in TalkBack in Android,
+
+165
+00:07:10,360 --> 00:07:11,600
+that means something to me.
+
+166
+00:07:11,600 --> 00:07:13,120
+And that gives functionality.
+
+167
+00:07:13,120 --> 00:07:15,750
+So even though you
+create a custom gesture
+
+168
+00:07:15,750 --> 00:07:18,540
+like that in your
+app or in your page,
+
+169
+00:07:18,540 --> 00:07:21,240
+you need to consider that maybe
+that's not the only way that we
+
+170
+00:07:21,240 --> 00:07:23,700
+should be able to
+instantiate that action.
+
+171
+00:07:23,700 --> 00:07:26,510
+Maybe we need some other
+method or a backup mechanism
+
+172
+00:07:26,510 --> 00:07:28,000
+to do that.
+
+173
+00:07:28,000 --> 00:07:30,790
+We need to think about all
+of these different things.
+
+174
+00:07:30,790 --> 00:07:35,576
+We tend to put people in
+boxes and say, you're blind
+
+175
+00:07:35,576 --> 00:07:36,700
+or you're not blind, right?
+
+176
+00:07:36,700 --> 00:07:38,500
+You have a disability
+or your don't.
+
+177
+00:07:38,500 --> 00:07:40,570
+But that is not reality.
+
+178
+00:07:40,570 --> 00:07:44,950
+We have a scenario-- and this
+is a very standard Gaussian
+
+179
+00:07:44,950 --> 00:07:47,060
+binomial bell
+curve distribution,
+
+180
+00:07:47,060 --> 00:07:48,330
+whatever you want to call it.
+
+181
+00:07:48,330 --> 00:07:50,791
+And we have people
+that live at one
+
+182
+00:07:50,791 --> 00:07:52,040
+end of the extreme or another.
+
+183
+00:07:52,040 --> 00:07:54,990
+And this one's talking
+about people's size.
+
+184
+00:07:54,990 --> 00:07:57,060
+But think of it in
+terms of any ability.
+
+185
+00:07:57,060 --> 00:07:59,690
+So you have people on one end
+that have maybe completely
+
+186
+00:07:59,690 --> 00:08:02,330
+normal vision, on the other
+end people that have no vision.
+
+187
+00:08:02,330 --> 00:08:04,700
+And then, you have people
+everywhere in between.
+
+188
+00:08:04,700 --> 00:08:08,270
+This is not a binary
+all or nothing scenario.
+
+189
+00:08:08,270 --> 00:08:10,370
+And we need to think
+about that all the time.
+
+190
+00:08:10,370 --> 00:08:13,000
+ 
+
+191
+00:08:13,000 --> 00:08:15,730
+Today's assistive technology
+is really advanced.
+
+192
+00:08:15,730 --> 00:08:19,970
+We've moved from a point where
+solutions that we used to think
+
+193
+00:08:19,970 --> 00:08:22,710
+were completely
+untenable, like ARIA.
+
+194
+00:08:22,710 --> 00:08:25,880
+So ARIA stands for Accessible
+Rich Internet Applications.
+
+195
+00:08:25,880 --> 00:08:28,530
+And it's a tool that we
+can use to add to our code
+
+196
+00:08:28,530 --> 00:08:30,830
+to provide programmatic
+accessibility where it just
+
+197
+00:08:30,830 --> 00:08:32,500
+didn't exist before.
+
+198
+00:08:32,500 --> 00:08:36,220
+Screen readers for over
+the last five years
+
+199
+00:08:36,220 --> 00:08:38,460
+have really advanced
+and really done
+
+200
+00:08:38,460 --> 00:08:43,679
+a great job of getting ARIA
+support into that technology.
+
+201
+00:08:43,679 --> 00:08:47,420
+But we have to ask this
+kind of a question.
+
+202
+00:08:47,420 --> 00:08:51,500
+What if a brand new
+version of a certain type
+
+203
+00:08:51,500 --> 00:08:54,202
+of assistive technology
+just isn't modern?
+
+204
+00:08:54,202 --> 00:08:55,410
+And I'll give you an example.
+
+205
+00:08:55,410 --> 00:08:59,270
+This is a suite of
+assistive technology tools.
+
+206
+00:08:59,270 --> 00:09:02,540
+We've got voice
+recognition up there.
+
+207
+00:09:02,540 --> 00:09:04,660
+We've got tools
+built into browsers.
+
+208
+00:09:04,660 --> 00:09:09,520
+NV Access is a screen reader
+for the Windows platform that's
+
+209
+00:09:09,520 --> 00:09:11,330
+free, VoiceOver on the Mac.
+
+210
+00:09:11,330 --> 00:09:13,740
+ZoomText on Windows is
+a magnifier and reader
+
+211
+00:09:13,740 --> 00:09:15,000
+combination.
+
+212
+00:09:15,000 --> 00:09:18,090
+Now, all of the screen
+readers on there,
+
+213
+00:09:18,090 --> 00:09:20,500
+they have done a pretty
+good job of keeping up
+
+214
+00:09:20,500 --> 00:09:22,110
+with modern technology.
+
+215
+00:09:22,110 --> 00:09:26,450
+But some other tools
+don't necessarily keep up.
+
+216
+00:09:26,450 --> 00:09:30,860
+And so I'm not going to name
+any names or single anybody out.
+
+217
+00:09:30,860 --> 00:09:36,070
+But Dragon NaturallySpeaking
+is a great tool.
+
+218
+00:09:36,070 --> 00:09:38,440
+But it doesn't keep
+up with the standards.
+
+219
+00:09:38,440 --> 00:09:41,770
+They haven't implemented
+any support for ARIA.
+
+220
+00:09:41,770 --> 00:09:46,974
+And that's something that all
+the screen readers have done.
+
+221
+00:09:46,974 --> 00:09:49,390
+I'll give you an example of
+why that's actually important.
+
+222
+00:09:49,390 --> 00:09:52,930
+This is a very, very new
+version of a Google map.
+
+223
+00:09:52,930 --> 00:09:57,010
+And these things on the
+interface, the search button
+
+224
+00:09:57,010 --> 00:09:59,820
+and the zoom in
+and the zoom out,
+
+225
+00:09:59,820 --> 00:10:04,390
+those things all used to be
+divs with on-click handlers--
+
+226
+00:10:04,390 --> 00:10:07,670
+pretty straightforward
+practice, very typical.
+
+227
+00:10:07,670 --> 00:10:13,020
+This is something where we
+could actually improve that by
+
+228
+00:10:13,020 --> 00:10:15,590
+instead of just having
+a div with an on-click,
+
+229
+00:10:15,590 --> 00:10:17,660
+we could actually give
+that a role of button
+
+230
+00:10:17,660 --> 00:10:20,600
+so that a screen reader or other
+piece of assistive technology
+
+231
+00:10:20,600 --> 00:10:23,330
+in theory could recognize that
+that's a button so that there's
+
+232
+00:10:23,330 --> 00:10:26,510
+a more natural affordance
+there that, hey, I can actually
+
+233
+00:10:26,510 --> 00:10:30,620
+click on this instead of it
+just being a div in the page.
+
+234
+00:10:30,620 --> 00:10:32,340
+The beautiful
+thing about this is
+
+235
+00:10:32,340 --> 00:10:34,780
+that-- and I just
+literally saw this
+
+236
+00:10:34,780 --> 00:10:36,770
+with this new revision
+of Google Maps--
+
+237
+00:10:36,770 --> 00:10:40,450
+there are actually now
+buttons, like actual buttons.
+
+238
+00:10:40,450 --> 00:10:44,090
+Holy crap, there are
+actually buttons.
+
+239
+00:10:44,090 --> 00:10:46,410
+And that totally
+gets a gold star.
+
+240
+00:10:46,410 --> 00:10:49,120
+Because all the
+semantics of a button
+
+241
+00:10:49,120 --> 00:10:53,160
+are already in that
+native element, right?
+
+242
+00:10:53,160 --> 00:10:57,070
+This button could be used
+by Dragon NaturallySpeaking.
+
+243
+00:10:57,070 --> 00:11:00,270
+The div with the role of
+button can't be, right?
+
+244
+00:11:00,270 --> 00:11:05,150
+So there's a question about
+whose responsibility is this.
+
+245
+00:11:05,150 --> 00:11:09,115
+There's a lot of people that are
+pointing the finger at Dragon
+
+246
+00:11:09,115 --> 00:11:11,280
+and saying, you guys are wrong.
+
+247
+00:11:11,280 --> 00:11:13,050
+And I want you to
+think about this.
+
+248
+00:11:13,050 --> 00:11:15,350
+From an ARIA perspective,
+this is-- the last time
+
+249
+00:11:15,350 --> 00:11:17,910
+I stayed in London, I had
+this in my hotel room.
+
+250
+00:11:17,910 --> 00:11:19,984
+This was a king size bed.
+
+251
+00:11:19,984 --> 00:11:24,361
+And so I had a sleep apparatus
+with the role of king size bed.
+
+252
+00:11:24,361 --> 00:11:26,360
+But it was two twins with
+a break in the middle.
+
+253
+00:11:26,360 --> 00:11:29,480
+ 
+
+254
+00:11:29,480 --> 00:11:32,470
+Now, I complained.
+
+255
+00:11:32,470 --> 00:11:33,070
+I'm Canadian.
+
+256
+00:11:33,070 --> 00:11:33,778
+I don't complain.
+
+257
+00:11:33,778 --> 00:11:36,720
+So this was a big deal to me.
+
+258
+00:11:36,720 --> 00:11:38,247
+So I complain, and
+I got a new room.
+
+259
+00:11:38,247 --> 00:11:39,080
+And I got a new bed.
+
+260
+00:11:39,080 --> 00:11:41,190
+And so in that bed, I
+had a sleep apparatus.
+
+261
+00:11:41,190 --> 00:11:42,960
+And it was a king
+with a class of posh.
+
+262
+00:11:42,960 --> 00:11:49,140
+I thought everything was great
+until I dug a little further.
+
+263
+00:11:49,140 --> 00:11:52,600
+And I had a sleep apparatus with
+the role of king size bed, two
+
+264
+00:11:52,600 --> 00:11:53,990
+twins with a break,
+but the break
+
+265
+00:11:53,990 --> 00:11:55,490
+was styled to be display none.
+
+266
+00:11:55,490 --> 00:11:59,920
+ 
+
+267
+00:11:59,920 --> 00:12:02,540
+If you remember nothing
+else about ARIA,
+
+268
+00:12:02,540 --> 00:12:05,590
+remember that what's under the
+sheets actually matters, right?
+
+269
+00:12:05,590 --> 00:12:07,620
+The tools and the code
+that you use actually
+
+270
+00:12:07,620 --> 00:12:11,470
+have a huge impact on how
+assistive technology can
+
+271
+00:12:11,470 --> 00:12:13,710
+interpret it and
+work with it, right?
+
+272
+00:12:13,710 --> 00:12:16,940
+So thinking about
+those kinds of things,
+
+273
+00:12:16,940 --> 00:12:20,460
+and thinking about
+Dragon and how it works,
+
+274
+00:12:20,460 --> 00:12:23,240
+is it our job to be
+responsible, even though we
+
+275
+00:12:23,240 --> 00:12:28,850
+have a tool like ARIA that
+could really change your app?
+
+276
+00:12:28,850 --> 00:12:31,330
+Do we have a responsibility
+to make some better choices
+
+277
+00:12:31,330 --> 00:12:34,090
+and actually use things
+like real buttons,
+
+278
+00:12:34,090 --> 00:12:36,500
+or just better code in general?
+
+279
+00:12:36,500 --> 00:12:38,300
+My vote is yes.
+
+280
+00:12:38,300 --> 00:12:41,900
+But you'll find that out
+in the next little while.
+
+281
+00:12:41,900 --> 00:12:46,510
+The other thing that people
+are asking quite a lot
+
+282
+00:12:46,510 --> 00:12:50,470
+about these days is stuff about
+detecting assistive technology.
+
+283
+00:12:50,470 --> 00:12:52,737
+And I want to know--
+and as a developer,
+
+284
+00:12:52,737 --> 00:12:53,820
+you probably want to know.
+
+285
+00:12:53,820 --> 00:12:54,990
+I've heard it all morning.
+
+286
+00:12:54,990 --> 00:12:57,340
+I'd really like to
+know, is this HTTP 1?
+
+287
+00:12:57,340 --> 00:12:58,420
+Is it HTTP 2?
+
+288
+00:12:58,420 --> 00:13:00,200
+Is it whatever?
+
+289
+00:13:00,200 --> 00:13:02,410
+Do we have the
+capability to know?
+
+290
+00:13:02,410 --> 00:13:07,080
+And my question to you is,
+if you could detect a screen
+
+291
+00:13:07,080 --> 00:13:09,860
+reader, what would you even
+do with that information?
+
+292
+00:13:09,860 --> 00:13:12,760
+And there's some
+real slippery slopes
+
+293
+00:13:12,760 --> 00:13:15,670
+that we go down when we do
+that kind of stuff and say--
+
+294
+00:13:15,670 --> 00:13:20,110
+and I'll give you one example,
+and then I'll shut up.
+
+295
+00:13:20,110 --> 00:13:23,840
+If we use a screen reader,
+if we detect a screen reader,
+
+296
+00:13:23,840 --> 00:13:26,440
+we might inject a whole bunch
+of extra hidden headings
+
+297
+00:13:26,440 --> 00:13:28,470
+that give some extra
+context to a screen reader
+
+298
+00:13:28,470 --> 00:13:30,710
+user, which is kind
+of a neat idea.
+
+299
+00:13:30,710 --> 00:13:32,660
+I think there's
+some merit to that.
+
+300
+00:13:32,660 --> 00:13:35,160
+But we have to remember
+that the only people that
+
+301
+00:13:35,160 --> 00:13:38,351
+use screen readers
+aren't just blind.
+
+302
+00:13:38,351 --> 00:13:39,850
+There's all kinds
+of people that use
+
+303
+00:13:39,850 --> 00:13:42,290
+screen readers for
+literacy reasons.
+
+304
+00:13:42,290 --> 00:13:45,290
+And what's the impact on them if
+they have a learning difficulty
+
+305
+00:13:45,290 --> 00:13:47,690
+if you're having a screen
+reader read hidden headings
+
+306
+00:13:47,690 --> 00:13:50,130
+that they can't see
+on the page, right?
+
+307
+00:13:50,130 --> 00:13:51,790
+So we need to think bigger.
+
+308
+00:13:51,790 --> 00:13:54,400
+We'll address a lot of
+those kinds of questions
+
+309
+00:13:54,400 --> 00:13:58,282
+and more during the
+panel-- thank you.
+
+310
+00:13:58,282 --> 00:14:05,667
+[APPLAUSE]
+
+311
+00:14:05,667 --> 00:14:07,250
+CHRISTIAN HEILMANN:
+Splendid, so we're
+
+312
+00:14:07,250 --> 00:14:10,820
+back to bed components instead
+of web components-- not bad.
+
+313
+00:14:10,820 --> 00:14:12,860
+So we have a lot
+of experts here.
+
+314
+00:14:12,860 --> 00:14:16,330
+We have seven questions
+that we cut down on.
+
+315
+00:14:16,330 --> 00:14:18,770
+I'm supposed to get these
+questions on some list here.
+
+316
+00:14:18,770 --> 00:14:21,574
+But that's not going
+up at the moment.
+
+317
+00:14:21,574 --> 00:14:22,490
+What's going on there?
+
+318
+00:14:22,490 --> 00:14:29,010
+ 
+
+319
+00:14:29,010 --> 00:14:33,930
+So-- oh, it's a tablet.
+
+320
+00:14:33,930 --> 00:14:35,950
+Look at that-- wonderful.
+
+321
+00:14:35,950 --> 00:14:38,330
+Touch interface-- and really
+small and not resizable.
+
+322
+00:14:38,330 --> 00:14:42,270
+ 
+
+323
+00:14:42,270 --> 00:14:45,250
+OK, so the first
+question that we have
+
+324
+00:14:45,250 --> 00:14:46,610
+was a post by Andrew Betts.
+
+325
+00:14:46,610 --> 00:14:49,696
+But he doesn't want to
+do it, so Melanie Lang.
+
+326
+00:14:49,696 --> 00:14:53,095
+MELANIE LANG: So it is,
+what are the main offenders
+
+327
+00:14:53,095 --> 00:14:55,330
+of modern websites in
+terms of accessibility?
+
+328
+00:14:55,330 --> 00:15:01,390
+ 
+
+329
+00:15:01,390 --> 00:15:04,000
+What are the main offenders
+of modern websites in terms
+
+330
+00:15:04,000 --> 00:15:07,852
+of accessibility and what
+can be done to fix that?
+
+331
+00:15:07,852 --> 00:15:09,310
+CHRISTIAN HEILMANN:
+So the question
+
+332
+00:15:09,310 --> 00:15:11,810
+is, like in many
+cases, web developers,
+
+333
+00:15:11,810 --> 00:15:13,460
+we do things that
+look beautiful.
+
+334
+00:15:13,460 --> 00:15:15,350
+And it's a barrier
+for accessibility
+
+335
+00:15:15,350 --> 00:15:17,220
+without us even knowing it.
+
+336
+00:15:17,220 --> 00:15:20,830
+So I think we're going to
+send that off to Matthew.
+
+337
+00:15:20,830 --> 00:15:22,660
+So Matthew, what have
+you seen in your day
+
+338
+00:15:22,660 --> 00:15:24,960
+to day browsing
+that drives you nuts
+
+339
+00:15:24,960 --> 00:15:27,462
+although people
+think it's amazing?
+
+340
+00:15:27,462 --> 00:15:29,545
+MATTHEW TYLEE ATKINSON:
+There's a few things.
+
+341
+00:15:29,545 --> 00:15:30,920
+I'm sure that
+there's going to be
+
+342
+00:15:30,920 --> 00:15:32,628
+many examples from
+the rest of the panel.
+
+343
+00:15:32,628 --> 00:15:35,120
+But I suppose a
+personal [INAUDIBLE]
+
+344
+00:15:35,120 --> 00:15:39,220
+for me is disabling pinch
+to zoom on mobile sites.
+
+345
+00:15:39,220 --> 00:15:41,660
+Because it just renders them
+completely useless to me,
+
+346
+00:15:41,660 --> 00:15:42,840
+personally.
+
+347
+00:15:42,840 --> 00:15:44,220
+I'm vision impaired.
+
+348
+00:15:44,220 --> 00:15:46,450
+I can see well enough
+to use the device,
+
+349
+00:15:46,450 --> 00:15:50,750
+but only if I've got control
+of the size of things on it.
+
+350
+00:15:50,750 --> 00:15:53,900
+So that's a personal one.
+
+351
+00:15:53,900 --> 00:15:56,130
+I think something
+to bear in mind
+
+352
+00:15:56,130 --> 00:16:00,510
+is that somebody that's using an
+assistive technology to browse
+
+353
+00:16:00,510 --> 00:16:03,280
+a website, say, for
+example, a screen reader,
+
+354
+00:16:03,280 --> 00:16:05,850
+but it doesn't limit it
+to just a screen reader,
+
+355
+00:16:05,850 --> 00:16:09,160
+they can only perceive
+one element at a time.
+
+356
+00:16:09,160 --> 00:16:11,580
+So they go through the
+whole thing one element
+
+357
+00:16:11,580 --> 00:16:14,530
+by the next element until
+they get to the end.
+
+358
+00:16:14,530 --> 00:16:17,200
+And a lot of stuff
+in accessibility
+
+359
+00:16:17,200 --> 00:16:21,260
+is providing information such
+that the assistive technology
+
+360
+00:16:21,260 --> 00:16:24,870
+can help the user get to the
+bit of the page they want
+
+361
+00:16:24,870 --> 00:16:27,170
+to get to as
+quickly as possible.
+
+362
+00:16:27,170 --> 00:16:32,310
+So a lot of stuff is
+about saving the user time
+
+363
+00:16:32,310 --> 00:16:34,620
+and making sure that the
+structure of the page
+
+364
+00:16:34,620 --> 00:16:36,860
+is conveyed, the
+semantics are conveyed,
+
+365
+00:16:36,860 --> 00:16:40,740
+so that the user saves time and
+can get to the bit they need.
+
+366
+00:16:40,740 --> 00:16:44,550
+So things like lack of skip
+links, lack of headings--
+
+367
+00:16:44,550 --> 00:16:47,350
+visually, you can see
+the layout beautifully.
+
+368
+00:16:47,350 --> 00:16:49,650
+But there's just no
+semantic information
+
+369
+00:16:49,650 --> 00:16:52,120
+or no structural
+information there.
+
+370
+00:16:52,120 --> 00:16:53,390
+That's very frustrating.
+
+371
+00:16:53,390 --> 00:16:57,230
+Because it might actually
+be-- a trend on modern sites
+
+372
+00:16:57,230 --> 00:17:00,710
+is towards things
+like simpler language,
+
+373
+00:17:00,710 --> 00:17:03,830
+fewer words on the
+page, more focused.
+
+374
+00:17:03,830 --> 00:17:05,690
+It could be really good.
+
+375
+00:17:05,690 --> 00:17:07,710
+But sometimes people
+forget the basics,
+
+376
+00:17:07,710 --> 00:17:11,520
+which is, just make sure that
+you use HTML headings and lists
+
+377
+00:17:11,520 --> 00:17:15,470
+and stuff like that,
+ARIA if necessary,
+
+378
+00:17:15,470 --> 00:17:18,530
+excuse me, and native
+controls where possible,
+
+379
+00:17:18,530 --> 00:17:21,380
+so things that save people time.
+
+380
+00:17:21,380 --> 00:17:23,490
+And there is also an
+article I read recently
+
+381
+00:17:23,490 --> 00:17:27,680
+about things that
+just have to go away,
+
+382
+00:17:27,680 --> 00:17:30,669
+things like when you're asked
+to enter a credit card number,
+
+383
+00:17:30,669 --> 00:17:32,710
+and you're asked, what
+type of credit card is it,
+
+384
+00:17:32,710 --> 00:17:34,810
+and please remember
+to put the dashes in,
+
+385
+00:17:34,810 --> 00:17:38,760
+or don't put dashes
+in, or put spaces in,
+
+386
+00:17:38,760 --> 00:17:40,870
+telling the user
+to do this stuff.
+
+387
+00:17:40,870 --> 00:17:43,300
+OK, for all of us,
+that's really annoying.
+
+388
+00:17:43,300 --> 00:17:44,960
+It shouldn't be necessary.
+
+389
+00:17:44,960 --> 00:17:46,980
+It's just a number.
+
+390
+00:17:46,980 --> 00:17:50,910
+But for accessibility, people
+facing extra accessibility
+
+391
+00:17:50,910 --> 00:17:52,820
+barriers, that sort
+of stuff, having
+
+392
+00:17:52,820 --> 00:17:55,150
+to go back and correct it
+because the instructions
+
+393
+00:17:55,150 --> 00:17:58,100
+weren't necessarily
+there or correct,
+
+394
+00:17:58,100 --> 00:18:00,040
+that can really
+take a lot of time.
+
+395
+00:18:00,040 --> 00:18:01,940
+And it's very frustrating.
+
+396
+00:18:01,940 --> 00:18:04,920
+So it's going back to
+using sensible HTML,
+
+397
+00:18:04,920 --> 00:18:06,720
+building things the
+way they used to work.
+
+398
+00:18:06,720 --> 00:18:08,150
+I remember when
+browsers were bad,
+
+399
+00:18:08,150 --> 00:18:10,232
+you had to use the right
+HTML or otherwise they
+
+400
+00:18:10,232 --> 00:18:10,940
+wouldn't show up.
+
+401
+00:18:10,940 --> 00:18:13,642
+Because there was
+no CSS to a degree.
+
+402
+00:18:13,642 --> 00:18:15,600
+We don't use tables for
+different weird things,
+
+403
+00:18:15,600 --> 00:18:17,200
+but that's a different story.
+
+404
+00:18:17,200 --> 00:18:20,910
+CHRISTIAN HEILMANN: So Alice,
+the shockingly innovative way
+
+405
+00:18:20,910 --> 00:18:24,490
+of using buttons instead of
+divs with on-click handlers,
+
+406
+00:18:24,490 --> 00:18:26,460
+do you have to fight for
+these kinds of things?
+
+407
+00:18:26,460 --> 00:18:29,240
+Is there a way that
+developers are actually
+
+408
+00:18:29,240 --> 00:18:31,130
+assuming that things
+work in the browser,
+
+409
+00:18:31,130 --> 00:18:32,750
+because the browser
+fixes it for them,
+
+410
+00:18:32,750 --> 00:18:35,430
+and do we have to remind people
+how to make things accessible?
+
+411
+00:18:35,430 --> 00:18:39,170
+ALICE BOXHALL: Well, yeah, if
+you're using standard widgets,
+
+412
+00:18:39,170 --> 00:18:40,754
+by and large, it
+should be accessible.
+
+413
+00:18:40,754 --> 00:18:43,128
+One of the big problems we
+see is that people just simply
+
+414
+00:18:43,128 --> 00:18:44,640
+aren't using the
+standard widgets.
+
+415
+00:18:44,640 --> 00:18:47,370
+And yeah, I'd very much
+like to understand why.
+
+416
+00:18:47,370 --> 00:18:51,629
+My hypothesis is that you can't
+style them the way you want.
+
+417
+00:18:51,629 --> 00:18:54,170
+So two problems-- one, you can't
+style them the way you want,
+
+418
+00:18:54,170 --> 00:18:55,770
+or they don't behave
+the way you want.
+
+419
+00:18:55,770 --> 00:18:59,360
+So one thing I
+would like to see is
+
+420
+00:18:59,360 --> 00:19:02,054
+making it easier to style
+custom elements the way
+
+421
+00:19:02,054 --> 00:19:02,720
+that we want to.
+
+422
+00:19:02,720 --> 00:19:04,178
+Because it's quite
+difficult today.
+
+423
+00:19:04,178 --> 00:19:06,620
+It's a very simple
+problem to solve, I think.
+
+424
+00:19:06,620 --> 00:19:10,680
+Secondly, make it easier for
+developers to actually apply
+
+425
+00:19:10,680 --> 00:19:13,740
+that ARIA metadata
+semantic information.
+
+426
+00:19:13,740 --> 00:19:16,000
+How can we get that
+on the golden path
+
+427
+00:19:16,000 --> 00:19:18,780
+that we've been talking about
+today, or the pit of success?
+
+428
+00:19:18,780 --> 00:19:21,120
+How can we make that
+easier for developers?
+
+429
+00:19:21,120 --> 00:19:22,700
+I think that web
+components possibly
+
+430
+00:19:22,700 --> 00:19:24,580
+has a big role to play here.
+
+431
+00:19:24,580 --> 00:19:26,510
+And I knew the team
+is working on that.
+
+432
+00:19:26,510 --> 00:19:29,025
+Another idea would be to put
+it into the developer tools
+
+433
+00:19:29,025 --> 00:19:29,900
+that we're all using.
+
+434
+00:19:29,900 --> 00:19:32,950
+So how can we expose the
+accessibility information such
+
+435
+00:19:32,950 --> 00:19:35,102
+that it's impossible to ignore?
+
+436
+00:19:35,102 --> 00:19:36,810
+DEREK FEATHERSTONE:
+Wouldn't it be better
+
+437
+00:19:36,810 --> 00:19:39,249
+to make it harder to
+put ARIA on stuff?
+
+438
+00:19:39,249 --> 00:19:40,540
+ALICE BOXHALL: How do you mean?
+
+439
+00:19:40,540 --> 00:19:42,531
+DEREK FEATHERSTONE:
+Well, ARIA is
+
+440
+00:19:42,531 --> 00:19:44,030
+a great solution
+for screen readers.
+
+441
+00:19:44,030 --> 00:19:45,590
+But it's not right
+now for Dragon.
+
+442
+00:19:45,590 --> 00:19:50,874
+And I know in good conscience
+that we don't use ARIA
+
+443
+00:19:50,874 --> 00:19:53,290
+unless we know that it's going
+to get really good support,
+
+444
+00:19:53,290 --> 00:19:55,123
+and that we look for
+other ways to do things
+
+445
+00:19:55,123 --> 00:19:56,940
+while we're building things.
+
+446
+00:19:56,940 --> 00:19:58,560
+I almost would like
+to make it better
+
+447
+00:19:58,560 --> 00:20:02,010
+to just use a button
+than to add role
+
+448
+00:20:02,010 --> 00:20:03,490
+equals button on something.
+
+449
+00:20:03,490 --> 00:20:04,300
+ALICE BOXHALL: Yeah,
+I completely agree.
+
+450
+00:20:04,300 --> 00:20:04,810
+CHRISTIAN HEILMANN:
+We're coming back
+
+451
+00:20:04,810 --> 00:20:06,750
+to ARIA in an extra
+question later on.
+
+452
+00:20:06,750 --> 00:20:08,050
+And I agree.
+
+453
+00:20:08,050 --> 00:20:12,219
+It's a tricky thing to actually
+turn something into something
+
+454
+00:20:12,219 --> 00:20:13,760
+that it isn't when
+there is something
+
+455
+00:20:13,760 --> 00:20:14,843
+that is already something.
+
+456
+00:20:14,843 --> 00:20:18,660
+But that's a different story.
+
+457
+00:20:18,660 --> 00:20:23,750
+So Andrew, what do
+you see as crimes
+
+458
+00:20:23,750 --> 00:20:25,590
+that are happening that
+actually make things
+
+459
+00:20:25,590 --> 00:20:28,370
+inaccessible on mobile
+devices when people use HTML?
+
+460
+00:20:28,370 --> 00:20:29,870
+I found it interesting,
+for example,
+
+461
+00:20:29,870 --> 00:20:33,010
+the unsightly Select box that
+people hated on the desktop
+
+462
+00:20:33,010 --> 00:20:36,710
+and always wanted to style
+is awesome on mobile devices.
+
+463
+00:20:36,710 --> 00:20:40,269
+ANDREW RONKSLEY: Yeah,
+I think on mobile,
+
+464
+00:20:40,269 --> 00:20:41,810
+I think Matthew's
+already covered it.
+
+465
+00:20:41,810 --> 00:20:44,770
+The biggest one is
+disabling pinch to zoom.
+
+466
+00:20:44,770 --> 00:20:47,260
+I've had so many users come
+to me with that problem.
+
+467
+00:20:47,260 --> 00:20:48,645
+I'm asking you,
+why does my pinch
+
+468
+00:20:48,645 --> 00:20:50,422
+to zoom not work
+on this website?
+
+469
+00:20:50,422 --> 00:20:52,005
+And it comes down
+to the way we use it
+
+470
+00:20:52,005 --> 00:20:53,620
+in the meta viewport tag.
+
+471
+00:20:53,620 --> 00:20:56,460
+And we're all
+using it to get rid
+
+472
+00:20:56,460 --> 00:21:01,310
+of the 300 millisecond delay,
+which-- I guess in the past,
+
+473
+00:21:01,310 --> 00:21:03,140
+my advice would
+be to developers,
+
+474
+00:21:03,140 --> 00:21:04,540
+think about how you use that.
+
+475
+00:21:04,540 --> 00:21:07,332
+But I guess now, going
+forward, I'm thinking,
+
+476
+00:21:07,332 --> 00:21:09,415
+should people like myself
+be getting more involved
+
+477
+00:21:09,415 --> 00:21:11,980
+with browser vendors
+to say, OK, developers
+
+478
+00:21:11,980 --> 00:21:14,920
+are doing this-- Is there a
+way that we can kind of cater
+
+479
+00:21:14,920 --> 00:21:15,940
+to both scenarios?
+
+480
+00:21:15,940 --> 00:21:18,170
+Rather than say to
+developers, don't do that,
+
+481
+00:21:18,170 --> 00:21:20,244
+is there a way that
+we can kind of get
+
+482
+00:21:20,244 --> 00:21:22,410
+this fixed through bugs for
+the browsers, basically?
+
+483
+00:21:22,410 --> 00:21:26,240
+So that's probably
+the biggest one.
+
+484
+00:21:26,240 --> 00:21:29,280
+I think on desktop,
+the best bit of advice
+
+485
+00:21:29,280 --> 00:21:31,580
+I could give to
+you guys would be,
+
+486
+00:21:31,580 --> 00:21:35,380
+try using the things you
+build with a keyboard only.
+
+487
+00:21:35,380 --> 00:21:37,330
+So just recently, I was
+working with someone
+
+488
+00:21:37,330 --> 00:21:40,080
+who's having a huge problem
+with their online banking
+
+489
+00:21:40,080 --> 00:21:44,117
+where they couldn't complete
+a payment to somebody.
+
+490
+00:21:44,117 --> 00:21:45,450
+Because it was using an overlay.
+
+491
+00:21:45,450 --> 00:21:47,340
+And whoever had built
+that had clearly
+
+492
+00:21:47,340 --> 00:21:49,134
+thought about the
+interaction with a mouse.
+
+493
+00:21:49,134 --> 00:21:50,800
+Things behind the
+overlay were disabled.
+
+494
+00:21:50,800 --> 00:21:52,290
+You couldn't click on them.
+
+495
+00:21:52,290 --> 00:21:54,710
+Well, because this user
+was using the keyboards,
+
+496
+00:21:54,710 --> 00:21:57,940
+their interaction was
+going wildly wrong.
+
+497
+00:21:57,940 --> 00:22:01,470
+And if the developer had
+thought, OK, maybe what
+
+498
+00:22:01,470 --> 00:22:03,430
+if someone's not using
+a mouse, they probably
+
+499
+00:22:03,430 --> 00:22:05,580
+would have found that
+problem quite quickly
+
+500
+00:22:05,580 --> 00:22:08,080
+and could have done
+something about it.
+
+501
+00:22:08,080 --> 00:22:09,380
+CHRISTIAN HEILMANN: I'm very
+excited that Jake Archebald has
+
+502
+00:22:09,380 --> 00:22:11,565
+a question, but we have to
+move onto our next topic.
+
+503
+00:22:11,565 --> 00:22:13,990
+[LAUGHTER]
+
+504
+00:22:13,990 --> 00:22:18,120
+CHRISTIAN HEILMANN: So Ross
+Green has a question for us.
+
+505
+00:22:18,120 --> 00:22:19,575
+AUDIENCE: I've got it.
+
+506
+00:22:19,575 --> 00:22:20,770
+CHRISTIAN HEILMANN:
+You're not Ross Green.
+
+507
+00:22:20,770 --> 00:22:21,978
+AUDIENCE: I'm not Ross Green.
+
+508
+00:22:21,978 --> 00:22:25,230
+But Ross Green is not attending.
+
+509
+00:22:25,230 --> 00:22:28,000
+So he asked me to
+ask the question.
+
+510
+00:22:28,000 --> 00:22:30,700
+And I'm also going to answer it,
+because I've got a microphone.
+
+511
+00:22:30,700 --> 00:22:33,230
+Accessibility expectations
+and requirements
+
+512
+00:22:33,230 --> 00:22:36,800
+are vastly different depending
+on the user's world region.
+
+513
+00:22:36,800 --> 00:22:39,120
+What more could be
+done to align them?
+
+514
+00:22:39,120 --> 00:22:44,480
+Example-- most EU rules
+say don't autoplay media.
+
+515
+00:22:44,480 --> 00:22:48,120
+However, most US
+media will autoplay.
+
+516
+00:22:48,120 --> 00:22:50,305
+The answer is don't
+autoplay the media.
+
+517
+00:22:50,305 --> 00:22:52,330
+[LAUGHTER]
+
+518
+00:22:52,330 --> 00:22:56,030
+AUDIENCE: And a slight
+snark is, well, EU rules
+
+519
+00:22:56,030 --> 00:22:59,910
+could be more widely
+promulgated if the EU government
+
+520
+00:22:59,910 --> 00:23:03,670
+websites actually
+obeyed their own rules.
+
+521
+00:23:03,670 --> 00:23:06,100
+But anyway, what
+could be done to align
+
+522
+00:23:06,100 --> 00:23:08,490
+the different
+territories' regulations
+
+523
+00:23:08,490 --> 00:23:09,950
+about accessibility?
+
+524
+00:23:09,950 --> 00:23:11,450
+CHRISTIAN HEILMANN:
+So the good news
+
+525
+00:23:11,450 --> 00:23:12,980
+is that this was
+hard to understand.
+
+526
+00:23:12,980 --> 00:23:15,790
+The question is-- basically
+there's two folds to that.
+
+527
+00:23:15,790 --> 00:23:18,140
+There's differences between
+accessibility guidelines
+
+528
+00:23:18,140 --> 00:23:19,470
+in Europe and in America.
+
+529
+00:23:19,470 --> 00:23:20,936
+And you have to--
+for example, when
+
+530
+00:23:20,936 --> 00:23:24,650
+you do government websites,
+when you do any website that
+
+531
+00:23:24,650 --> 00:23:28,060
+faces a lot of audience,
+you have to apply with them.
+
+532
+00:23:28,060 --> 00:23:30,010
+You have to basically
+apply the rules.
+
+533
+00:23:30,010 --> 00:23:32,140
+And they're different
+from Europe to America.
+
+534
+00:23:32,140 --> 00:23:34,690
+As this world wide web
+of ours is worldwide,
+
+535
+00:23:34,690 --> 00:23:37,260
+it's kind of confusing
+to which ones to follow.
+
+536
+00:23:37,260 --> 00:23:42,300
+So are there ways to actually
+get the legal requirements
+
+537
+00:23:42,300 --> 00:23:43,930
+more aligned with each other?
+
+538
+00:23:43,930 --> 00:23:47,387
+So maybe Sara, you could
+tell us something about that.
+
+539
+00:23:47,387 --> 00:23:49,720
+SARAH LEWTHWAITE:The thing I
+find interesting about this
+
+540
+00:23:49,720 --> 00:23:51,990
+question is it
+refers to geography,
+
+541
+00:23:51,990 --> 00:23:53,810
+which I think is
+really important.
+
+542
+00:23:53,810 --> 00:23:55,425
+Obviously, we know devices vary.
+
+543
+00:23:55,425 --> 00:23:57,240
+Our tools vary, and so forth.
+
+544
+00:23:57,240 --> 00:23:59,960
+But also, it's worth
+understanding and thinking
+
+545
+00:23:59,960 --> 00:24:04,410
+about how disability varies
+globally and internationally.
+
+546
+00:24:04,410 --> 00:24:07,672
+So we've already heard
+a little bit about, say,
+
+547
+00:24:07,672 --> 00:24:09,130
+the nature of
+disability and how we
+
+548
+00:24:09,130 --> 00:24:11,010
+might want to conceptualize it.
+
+549
+00:24:11,010 --> 00:24:14,710
+But it's worth also, I think,
+recognizing that disability
+
+550
+00:24:14,710 --> 00:24:17,390
+means different things in
+different parts of the world.
+
+551
+00:24:17,390 --> 00:24:20,350
+Levels and types of
+disabilities vary
+
+552
+00:24:20,350 --> 00:24:25,060
+depending on where you
+are by locale, region,
+
+553
+00:24:25,060 --> 00:24:27,690
+as well as by nation.
+
+554
+00:24:27,690 --> 00:24:31,040
+So personally, I think
+there's a bit of attention
+
+555
+00:24:31,040 --> 00:24:37,130
+in terms of picking a standard
+to apply in all situations.
+
+556
+00:24:37,130 --> 00:24:41,730
+I think the great thing about
+WCAG is that it's a guideline.
+
+557
+00:24:41,730 --> 00:24:43,370
+And when it's applied
+as a guideline,
+
+558
+00:24:43,370 --> 00:24:48,580
+it allows perhaps for more of
+that indigenous reflection--
+
+559
+00:24:48,580 --> 00:24:51,000
+the expertise of
+local developers
+
+560
+00:24:51,000 --> 00:24:52,500
+to come into play as well.
+
+561
+00:24:52,500 --> 00:24:56,410
+So they can account, maybe,
+for indigenous populations
+
+562
+00:24:56,410 --> 00:24:58,160
+with low literacy levels.
+
+563
+00:24:58,160 --> 00:25:02,840
+Or perhaps you have less
+assistive technologies.
+
+564
+00:25:02,840 --> 00:25:04,690
+At the moment, there's
+not a great deal
+
+565
+00:25:04,690 --> 00:25:08,530
+of data globally in terms
+of the kinds of technologies
+
+566
+00:25:08,530 --> 00:25:10,860
+that disabled people are using.
+
+567
+00:25:10,860 --> 00:25:12,720
+But obviously,
+WCAG in particular
+
+568
+00:25:12,720 --> 00:25:15,210
+is being picked up
+because the UN convention
+
+569
+00:25:15,210 --> 00:25:17,660
+on the rights of persons
+with disabilities
+
+570
+00:25:17,660 --> 00:25:20,300
+is being taken up by
+more and more countries.
+
+571
+00:25:20,300 --> 00:25:22,270
+And people have this
+kind of policy vacuum
+
+572
+00:25:22,270 --> 00:25:25,755
+in terms of information and
+communication technologies
+
+573
+00:25:25,755 --> 00:25:27,505
+that are referred to
+in the UN convention.
+
+574
+00:25:27,505 --> 00:25:31,400
+And people want to make sure
+that the policy is picking that
+
+575
+00:25:31,400 --> 00:25:31,900
+up.
+
+576
+00:25:31,900 --> 00:25:34,550
+So WCAG is being
+applied more and more
+
+577
+00:25:34,550 --> 00:25:37,890
+as the kind of
+verbatim standard.
+
+578
+00:25:37,890 --> 00:25:40,440
+But I think there is
+a bit of attention
+
+579
+00:25:40,440 --> 00:25:44,550
+in terms of knowing what that
+means, say, in Nepal or Uganda,
+
+580
+00:25:44,550 --> 00:25:46,747
+or more regionally.
+
+581
+00:25:46,747 --> 00:25:48,580
+CHRISTIAN HEILMANN: It
+is kind of confusing.
+
+582
+00:25:48,580 --> 00:25:51,997
+Because being an ex-German
+developer and now living here,
+
+583
+00:25:51,997 --> 00:25:54,330
+there's different guidelines
+even in Europe from country
+
+584
+00:25:54,330 --> 00:25:54,960
+to country.
+
+585
+00:25:54,960 --> 00:25:58,742
+So maybe in point
+of the RNIB, I guess
+
+586
+00:25:58,742 --> 00:26:00,700
+you work with a lot of
+people that come to say,
+
+587
+00:26:00,700 --> 00:26:01,780
+I don't want to be sued.
+
+588
+00:26:01,780 --> 00:26:03,620
+What can I do for people
+with disabilities--
+
+589
+00:26:03,620 --> 00:26:06,900
+which is the awful, awful
+question we keep getting.
+
+590
+00:26:06,900 --> 00:26:09,200
+What is your answer to that?
+
+591
+00:26:09,200 --> 00:26:12,066
+How do you get people to
+understand that just applying
+
+592
+00:26:12,066 --> 00:26:13,440
+with the law does
+not necessarily
+
+593
+00:26:13,440 --> 00:26:17,020
+make an accessible interface?
+
+594
+00:26:17,020 --> 00:26:19,980
+ANDREW RONKSLEY:
+So I think for me,
+
+595
+00:26:19,980 --> 00:26:22,010
+there is a business case
+behind accessibility,
+
+596
+00:26:22,010 --> 00:26:24,390
+which we'll often talk
+to companies about,
+
+597
+00:26:24,390 --> 00:26:27,320
+around some potential
+SEO benefits,
+
+598
+00:26:27,320 --> 00:26:29,440
+potentially opening
+up to new markets.
+
+599
+00:26:29,440 --> 00:26:31,990
+And I think when I first
+got into that sector,
+
+600
+00:26:31,990 --> 00:26:34,040
+or this sector,
+sorry, I really did
+
+601
+00:26:34,040 --> 00:26:35,840
+believe in that business case.
+
+602
+00:26:35,840 --> 00:26:36,950
+And I still do.
+
+603
+00:26:36,950 --> 00:26:40,170
+But at the same time, it's
+a little bit theoretical.
+
+604
+00:26:40,170 --> 00:26:42,580
+Because you don't have
+many cases to back it up.
+
+605
+00:26:42,580 --> 00:26:46,950
+So Derek's point about, what
+if we could detect a screen
+
+606
+00:26:46,950 --> 00:26:50,419
+reader-- I think
+I'm with you, Derek.
+
+607
+00:26:50,419 --> 00:26:52,460
+I don't think it's a good
+idea to detect a screen
+
+608
+00:26:52,460 --> 00:26:53,720
+reader if you're
+going to do something
+
+609
+00:26:53,720 --> 00:26:55,720
+with that information
+in terms of the website.
+
+610
+00:26:55,720 --> 00:26:59,650
+But I'd really like that
+feature as part of analytics
+
+611
+00:26:59,650 --> 00:27:03,670
+so that we can say, OK, we made
+some changes to the website.
+
+612
+00:27:03,670 --> 00:27:06,820
+And we can now see, perhaps,
+screen reader users are not
+
+613
+00:27:06,820 --> 00:27:10,555
+dropping out midway through
+the process of checking out,
+
+614
+00:27:10,555 --> 00:27:12,286
+or something like that.
+
+615
+00:27:12,286 --> 00:27:14,840
+So I'd really like
+that kind of stuff.
+
+616
+00:27:14,840 --> 00:27:17,010
+Because we don't have
+many good case studies.
+
+617
+00:27:17,010 --> 00:27:20,749
+So while we can say, yeah,
+maybe you can get more visitors,
+
+618
+00:27:20,749 --> 00:27:22,790
+we don't have any figures
+really to back that up.
+
+619
+00:27:22,790 --> 00:27:24,470
+CHRISTIAN HEILMANN:
+Yeah, Derek, you
+
+620
+00:27:24,470 --> 00:27:26,410
+used to work on that
+for a long time as well,
+
+621
+00:27:26,410 --> 00:27:28,910
+like back in [INAUDIBLE] days
+and things with like-- I mean,
+
+622
+00:27:28,910 --> 00:27:30,451
+we had guidelines
+that said, you have
+
+623
+00:27:30,451 --> 00:27:33,440
+to have a certain kind of access
+key on the page, for example.
+
+624
+00:27:33,440 --> 00:27:35,550
+And that was unenforceable
+or usable, really.
+
+625
+00:27:35,550 --> 00:27:37,591
+DEREK FEATHERSTONE: Yeah,
+there's a lot of things
+
+626
+00:27:37,591 --> 00:27:40,510
+in-- you have to remember
+that especially when you
+
+627
+00:27:40,510 --> 00:27:43,190
+talk about guidelines,
+accessibility guidelines,
+
+628
+00:27:43,190 --> 00:27:46,150
+and then talk about giving
+them the force of legislation,
+
+629
+00:27:46,150 --> 00:27:49,660
+you're taking something that
+is designed to be necessarily
+
+630
+00:27:49,660 --> 00:27:51,920
+fuzzy and putting it
+into something that
+
+631
+00:27:51,920 --> 00:27:54,040
+becomes absolute
+black and white.
+
+632
+00:27:54,040 --> 00:27:56,560
+And I would even
+respond to Bruce.
+
+633
+00:27:56,560 --> 00:27:58,564
+We all said-- everybody laughed.
+
+634
+00:27:58,564 --> 00:28:00,730
+He said, well, the simple
+answer is do not autoplay.
+
+635
+00:28:00,730 --> 00:28:03,470
+And I would counter that
+by saying that autoplay
+
+636
+00:28:03,470 --> 00:28:06,080
+can actually be useful for
+certain types of people,
+
+637
+00:28:06,080 --> 00:28:08,680
+including people that have
+mobility difficulties.
+
+638
+00:28:08,680 --> 00:28:11,170
+It may be actually
+much easier for them
+
+639
+00:28:11,170 --> 00:28:14,649
+if you do autoplay so that when
+you go to a new video page,
+
+640
+00:28:14,649 --> 00:28:15,940
+it actually does play for them.
+
+641
+00:28:15,940 --> 00:28:18,280
+They don't have to try and
+work hard to actually get
+
+642
+00:28:18,280 --> 00:28:19,190
+it to play.
+
+643
+00:28:19,190 --> 00:28:21,600
+So when we're
+embedding a YouTube
+
+644
+00:28:21,600 --> 00:28:25,180
+video or a whatever
+video on a site of ours,
+
+645
+00:28:25,180 --> 00:28:27,190
+we always recommend,
+have it embedded
+
+646
+00:28:27,190 --> 00:28:28,510
+and don't autoplay that one.
+
+647
+00:28:28,510 --> 00:28:31,740
+But also, link to the
+YouTube page outside.
+
+648
+00:28:31,740 --> 00:28:33,550
+Because then, the
+user has a preference
+
+649
+00:28:33,550 --> 00:28:36,910
+to set it up so that my videos
+on YouTube always autoplay.
+
+650
+00:28:36,910 --> 00:28:39,260
+So we're kind of catering
+for both things there.
+
+651
+00:28:39,260 --> 00:28:42,950
+So the edicts like,
+do not autoplay,
+
+652
+00:28:42,950 --> 00:28:44,360
+they sound really good.
+
+653
+00:28:44,360 --> 00:28:46,530
+But they don't necessarily
+always make sense.
+
+654
+00:28:46,530 --> 00:28:50,420
+Autoplay is bad for everyone
+except for the people
+
+655
+00:28:50,420 --> 00:28:50,962
+that need it.
+
+656
+00:28:50,962 --> 00:28:52,711
+CHRISTIAN HEILMANN:
+OK, we have a question
+
+657
+00:28:52,711 --> 00:28:53,932
+from Christopher Emery.
+
+658
+00:28:53,932 --> 00:28:55,973
+CHRISTOPHER EMERY: I just
+wanted to kind of chime
+
+659
+00:28:55,973 --> 00:28:58,517
+in just with regards to
+going about our differences
+
+660
+00:28:58,517 --> 00:29:03,990
+between EU law and
+US law-- so yeah,
+
+661
+00:29:03,990 --> 00:29:06,412
+the difference between
+the EU and US law.
+
+662
+00:29:06,412 --> 00:29:07,870
+Just with regards
+to my experience,
+
+663
+00:29:07,870 --> 00:29:10,480
+I found that it's actually
+even more complicated.
+
+664
+00:29:10,480 --> 00:29:12,640
+Because the requirements
+suggest we don't just
+
+665
+00:29:12,640 --> 00:29:14,802
+live in the government
+legislature.
+
+666
+00:29:14,802 --> 00:29:16,510
+For example, when you
+get to a client who
+
+667
+00:29:16,510 --> 00:29:17,880
+reaches a level where
+they're now rolling out
+
+668
+00:29:17,880 --> 00:29:19,462
+in different markets,
+they will then
+
+669
+00:29:19,462 --> 00:29:21,420
+have their own accessibility
+requirements layer
+
+670
+00:29:21,420 --> 00:29:24,187
+within that which typically
+will be based on one market,
+
+671
+00:29:24,187 --> 00:29:25,770
+even though they're
+rolling out local.
+
+672
+00:29:25,770 --> 00:29:27,116
+I mean, that's my
+experience, even
+
+673
+00:29:27,116 --> 00:29:28,616
+though they're
+rolling out globally.
+
+674
+00:29:28,616 --> 00:29:30,920
+So we've actually
+encounter situations
+
+675
+00:29:30,920 --> 00:29:34,400
+whereby we're using,
+in one example, the EU
+
+676
+00:29:34,400 --> 00:29:37,155
+accessibility guidelines,
+even though we're rolling out
+
+677
+00:29:37,155 --> 00:29:41,420
+in the UAE or in China
+and things like that.
+
+678
+00:29:41,420 --> 00:29:44,520
+And that becomes a very
+weird, strange situation.
+
+679
+00:29:44,520 --> 00:29:46,550
+Because the document
+a lot of times
+
+680
+00:29:46,550 --> 00:29:49,260
+that the accessibility was kind
+of created at the companies in
+
+681
+00:29:49,260 --> 00:29:51,105
+was, check off a
+box to say, yes,
+
+682
+00:29:51,105 --> 00:29:52,710
+we have accessibility
+guidelines.
+
+683
+00:29:52,710 --> 00:29:55,845
+But they didn't roll it
+out to the market level.
+
+684
+00:29:55,845 --> 00:29:59,800
+So I just wanted to say, on top
+of the government legislature,
+
+685
+00:29:59,800 --> 00:30:01,700
+there's the actual
+corporate layer as well.
+
+686
+00:30:01,700 --> 00:30:04,350
+CHRISTIAN HEILMANN: It's a
+super tricky all-in-all problem.
+
+687
+00:30:04,350 --> 00:30:07,167
+And the issue is a lot of
+people try to sell accessibility
+
+688
+00:30:07,167 --> 00:30:09,500
+as something you could be
+sued if you don't do it right.
+
+689
+00:30:09,500 --> 00:30:11,440
+But then, we don't have the
+answer how to do it right.
+
+690
+00:30:11,440 --> 00:30:13,230
+It's like getting
+someone's attention
+
+691
+00:30:13,230 --> 00:30:14,540
+by kicking them in the shins.
+
+692
+00:30:14,540 --> 00:30:17,220
+Yeah, you have their attention
+but not their support.
+
+693
+00:30:17,220 --> 00:30:21,250
+So Shane Hudson has
+a question for us
+
+694
+00:30:21,250 --> 00:30:25,540
+on this, not the
+kicking but general.
+
+695
+00:30:25,540 --> 00:30:27,310
+He's there, the man
+in the striped shirt.
+
+696
+00:30:27,310 --> 00:30:33,511
+ 
+
+697
+00:30:33,511 --> 00:30:36,630
+SHANE HUDSON: So
+are the WCAG-- I
+
+698
+00:30:36,630 --> 00:30:38,940
+have trouble saying
+that-- guidelines
+
+699
+00:30:38,940 --> 00:30:41,015
+redundant in a world of
+smartphones and tablets?
+
+700
+00:30:41,015 --> 00:30:43,960
+Are accessibility laws trying
+to fix an outdated world?
+
+701
+00:30:43,960 --> 00:30:45,660
+It's kind of been touched upon.
+
+702
+00:30:45,660 --> 00:30:47,280
+CHRISTIAN HEILMANN: Yeah, kind
+of-- so basically, the question
+
+703
+00:30:47,280 --> 00:30:49,210
+is, the WCAG guidelines
+define a lot of stuff,
+
+704
+00:30:49,210 --> 00:30:51,180
+for example, keyboard
+accessibility, which
+
+705
+00:30:51,180 --> 00:30:55,130
+is on a touch device a bit
+of a weird thing to enforce.
+
+706
+00:30:55,130 --> 00:30:58,210
+So do they need to be upgraded?
+
+707
+00:30:58,210 --> 00:31:01,330
+Do we need to think about
+different form factors?
+
+708
+00:31:01,330 --> 00:31:06,166
+I think the best would be
+just-- Sarah, what do you think?
+
+709
+00:31:06,166 --> 00:31:07,540
+SARAH LEWTHWAITE:
+I think this is
+
+710
+00:31:07,540 --> 00:31:09,730
+a problem with the
+nature of standards.
+
+711
+00:31:09,730 --> 00:31:11,810
+And there's quite a
+lot of interesting
+
+712
+00:31:11,810 --> 00:31:14,890
+writing about what
+standards do outside
+
+713
+00:31:14,890 --> 00:31:18,810
+of development communities.
+
+714
+00:31:18,810 --> 00:31:22,592
+So for example, they
+offer a fixed perspective,
+
+715
+00:31:22,592 --> 00:31:24,550
+which is what I think
+some of us are struggling
+
+716
+00:31:24,550 --> 00:31:26,650
+with in the sense
+that disability
+
+717
+00:31:26,650 --> 00:31:30,450
+is so heterogenic that
+it needs to sort of be
+
+718
+00:31:30,450 --> 00:31:31,740
+as inclusive as possible.
+
+719
+00:31:31,740 --> 00:31:36,570
+And a standard rather than
+a guideline is difficult.
+
+720
+00:31:36,570 --> 00:31:39,780
+So I think, yeah, there are
+these problems about how
+
+721
+00:31:39,780 --> 00:31:41,740
+it keeps abreast
+of new developments
+
+722
+00:31:41,740 --> 00:31:43,951
+which we can't
+necessarily foresee.
+
+723
+00:31:43,951 --> 00:31:46,200
+But I think one of the things
+which I find interesting
+
+724
+00:31:46,200 --> 00:31:49,620
+is that standards also
+convey certain values.
+
+725
+00:31:49,620 --> 00:31:54,890
+And as I say, when they're
+being picked up internationally,
+
+726
+00:31:54,890 --> 00:31:57,660
+it's useful to
+recognize that they also
+
+727
+00:31:57,660 --> 00:32:00,750
+promote the rights of
+people with disabilities.
+
+728
+00:32:00,750 --> 00:32:03,570
+And they promote their
+access to technology
+
+729
+00:32:03,570 --> 00:32:07,890
+and raise a kind
+of whole argument
+
+730
+00:32:07,890 --> 00:32:11,750
+about human rights, disability
+rights, which isn't necessarily
+
+731
+00:32:11,750 --> 00:32:14,650
+reflected in all the communities
+that these standards touch
+
+732
+00:32:14,650 --> 00:32:15,309
+upon.
+
+733
+00:32:15,309 --> 00:32:16,850
+So that's one of
+the things, I think,
+
+734
+00:32:16,850 --> 00:32:20,340
+which we need to also
+keep front and center.
+
+735
+00:32:20,340 --> 00:32:22,340
+CHRISTIAN HEILMANN:
+Matthew, in terms of gaming,
+
+736
+00:32:22,340 --> 00:32:25,410
+the Paciello Group does a great
+job in explaining on their blog
+
+737
+00:32:25,410 --> 00:32:29,710
+how to apply WCAG guidelines,
+how to apply best technologies.
+
+738
+00:32:29,710 --> 00:32:31,930
+And most people start
+with a blank canvas
+
+739
+00:32:31,930 --> 00:32:35,240
+with no keyboard accessibility
+whatsoever for their game.
+
+740
+00:32:35,240 --> 00:32:38,420
+So do you think that
+the WCAG is outdated?
+
+741
+00:32:38,420 --> 00:32:42,114
+Are we fixing the web from 1997
+rather than the web from 2005?
+
+742
+00:32:42,114 --> 00:32:44,530
+MATTHEW TYLEE ATKINSON: A
+couple of things-- first of all,
+
+743
+00:32:44,530 --> 00:32:47,800
+the gaming stuff is
+separate to my TPG stuff.
+
+744
+00:32:47,800 --> 00:32:50,336
+But I'm very happy to
+talk about it, of course.
+
+745
+00:32:50,336 --> 00:32:51,530
+CHRISTIAN HEILMANN: Yeah,
+don't get fired over it.
+
+746
+00:32:51,530 --> 00:32:53,970
+MATTHEW TYLEE ATKINSON: Sarah
+made a really good point
+
+747
+00:32:53,970 --> 00:32:57,250
+last night, which I just
+wanted to make sure came up,
+
+748
+00:32:57,250 --> 00:32:59,300
+which is that a
+screen reader could
+
+749
+00:32:59,300 --> 00:33:01,360
+be a person next to
+you reading what's
+
+750
+00:33:01,360 --> 00:33:03,410
+on the screen in a
+particular place.
+
+751
+00:33:03,410 --> 00:33:05,660
+You were saying about
+different countries have
+
+752
+00:33:05,660 --> 00:33:08,520
+different social views of
+accessibility and different
+
+753
+00:33:08,520 --> 00:33:09,670
+access to ATs.
+
+754
+00:33:09,670 --> 00:33:13,580
+And therefore, screen
+reader detection
+
+755
+00:33:13,580 --> 00:33:15,490
+would have to encompass
+reading glasses
+
+756
+00:33:15,490 --> 00:33:17,680
+and people sat next
+to you as well,
+
+757
+00:33:17,680 --> 00:33:19,810
+and both of these at
+the same time, perhaps.
+
+758
+00:33:19,810 --> 00:33:22,125
+Anyway, moving on to answering
+the actual question--
+
+759
+00:33:22,125 --> 00:33:23,372
+CHRISTIAN HEILMANN: Thanks.
+
+760
+00:33:23,372 --> 00:33:25,690
+[LAUGHTER]
+
+761
+00:33:25,690 --> 00:33:27,690
+MATTHEW TYLEE ATKINSON:
+A couple of points-- one
+
+762
+00:33:27,690 --> 00:33:31,920
+of them is that if
+you look at WCAG--
+
+763
+00:33:31,920 --> 00:33:33,090
+and there's a lot to read.
+
+764
+00:33:33,090 --> 00:33:35,650
+But the central point
+that it's trying
+
+765
+00:33:35,650 --> 00:33:38,846
+to get across, and the
+values that Sarah mentioned,
+
+766
+00:33:38,846 --> 00:33:40,470
+they're actually
+written down in there.
+
+767
+00:33:40,470 --> 00:33:44,100
+They are the POUR principles
+that your content needs
+
+768
+00:33:44,100 --> 00:33:49,790
+to be Perceivable, Operable,
+Understandable, and Robust.
+
+769
+00:33:49,790 --> 00:33:51,825
+And you can look
+up what those are,
+
+770
+00:33:51,825 --> 00:33:53,550
+but you get the general idea.
+
+771
+00:33:53,550 --> 00:33:58,170
+You can apply those kinds
+of principles to any medium.
+
+772
+00:33:58,170 --> 00:34:00,140
+Now, some of the
+WCAG stuff might
+
+773
+00:34:00,140 --> 00:34:02,110
+be less appropriate
+on mobile, some
+
+774
+00:34:02,110 --> 00:34:04,250
+of the very specific
+technical stuff.
+
+775
+00:34:04,250 --> 00:34:06,960
+But a lot of the guidelines--
+in fact, all of them--
+
+776
+00:34:06,960 --> 00:34:11,090
+are written with those
+four principles in mind.
+
+777
+00:34:11,090 --> 00:34:14,250
+And you can apply
+those to any medium.
+
+778
+00:34:14,250 --> 00:34:18,530
+So in terms of
+game accessibility,
+
+779
+00:34:18,530 --> 00:34:22,090
+that is about making sure
+that you know what information
+
+780
+00:34:22,090 --> 00:34:25,670
+is important to someone to
+be able to play this game.
+
+781
+00:34:25,670 --> 00:34:28,949
+What is the best way to present
+it to the particular audience
+
+782
+00:34:28,949 --> 00:34:30,639
+that you're thinking about?
+
+783
+00:34:30,639 --> 00:34:32,139
+In our case, it
+was blind people.
+
+784
+00:34:32,139 --> 00:34:37,770
+So it was making a lot of
+visual cues auditory instead.
+
+785
+00:34:37,770 --> 00:34:41,610
+Understandable--
+well, it's got to be
+
+786
+00:34:41,610 --> 00:34:44,110
+understandable to be able
+to be enjoyable in the case
+
+787
+00:34:44,110 --> 00:34:44,980
+of a game.
+
+788
+00:34:44,980 --> 00:34:46,679
+And in the case of
+a banking website,
+
+789
+00:34:46,679 --> 00:34:49,630
+it's got to be understandable
+in order to be able to use it.
+
+790
+00:34:49,630 --> 00:34:52,810
+And robust-- that covers
+the kind of security
+
+791
+00:34:52,810 --> 00:34:55,562
+and reliability stuff on
+the website side of things.
+
+792
+00:34:55,562 --> 00:34:57,020
+And on the game
+side of things, you
+
+793
+00:34:57,020 --> 00:34:58,470
+don't want it to crash
+just before you're
+
+794
+00:34:58,470 --> 00:34:59,636
+going to complete the level.
+
+795
+00:34:59,636 --> 00:35:04,352
+So very briefly, that is
+a very glib high level
+
+796
+00:35:04,352 --> 00:35:05,810
+trying to demonstrate
+you can apply
+
+797
+00:35:05,810 --> 00:35:07,470
+these things to multiple areas.
+
+798
+00:35:07,470 --> 00:35:08,886
+CHRISTIAN HEILMANN:
+So Alice, when
+
+799
+00:35:08,886 --> 00:35:12,300
+you put that into the Developer
+Tools Accessibility panel--
+
+800
+00:35:12,300 --> 00:35:14,620
+those of us who have been
+in accessibility long enough
+
+801
+00:35:14,620 --> 00:35:17,764
+remember Bobby Approved and
+people putting triple A badges
+
+802
+00:35:17,764 --> 00:35:19,180
+on their website,
+which ironically
+
+803
+00:35:19,180 --> 00:35:20,530
+didn't have an alternative text.
+
+804
+00:35:20,530 --> 00:35:23,554
+[LAUGHTER]
+
+805
+00:35:23,554 --> 00:35:25,470
+CHRISTIAN HEILMANN: What
+are the testing tools
+
+806
+00:35:25,470 --> 00:35:26,630
+that you have in there?
+
+807
+00:35:26,630 --> 00:35:29,090
+Do you get, this doesn't
+apply with that guideline?
+
+808
+00:35:29,090 --> 00:35:31,990
+Or is it more of a
+transcription of the perceivable
+
+809
+00:35:31,990 --> 00:35:34,430
+and-- the ideas of it?
+
+810
+00:35:34,430 --> 00:35:36,272
+Because it's easy for
+a developer to say,
+
+811
+00:35:36,272 --> 00:35:38,480
+oh, I'm now accessible,
+because I tick all the boxes.
+
+812
+00:35:38,480 --> 00:35:39,740
+But what does it really mean?
+
+813
+00:35:39,740 --> 00:35:41,574
+What kind of a test
+would help people there?
+
+814
+00:35:41,574 --> 00:35:43,281
+ALICE BOXHALL: So one
+point that I always
+
+815
+00:35:43,281 --> 00:35:45,410
+try to make with the
+accessibility developer tool
+
+816
+00:35:45,410 --> 00:35:48,392
+is that passing a mechanical
+accessibility audit
+
+817
+00:35:48,392 --> 00:35:50,100
+does not in any way
+guarantee that you're
+
+818
+00:35:50,100 --> 00:35:51,175
+completely accessible.
+
+819
+00:35:51,175 --> 00:35:52,800
+It's only looking at
+the things that we
+
+820
+00:35:52,800 --> 00:35:56,560
+can test programmatically,
+which is a subset.
+
+821
+00:35:56,560 --> 00:36:00,230
+That said, what it does look at
+are things like color contrast.
+
+822
+00:36:00,230 --> 00:36:02,770
+It tries to look
+for click targets
+
+823
+00:36:02,770 --> 00:36:07,846
+and suggests that you should use
+an ARIA role and a [INAUDIBLE].
+
+824
+00:36:07,846 --> 00:36:09,435
+It also looks for
+valid ARIA use.
+
+825
+00:36:09,435 --> 00:36:12,452
+ 
+
+826
+00:36:12,452 --> 00:36:14,286
+Yeah, so those are
+sort of the main things
+
+827
+00:36:14,286 --> 00:36:15,160
+that it's looking at.
+
+828
+00:36:15,160 --> 00:36:18,040
+ 
+
+829
+00:36:18,040 --> 00:36:22,191
+Yeah, but one point I did
+want to make just to follow on
+
+830
+00:36:22,191 --> 00:36:25,780
+is that the robust in
+perceivable, optimal,
+
+831
+00:36:25,780 --> 00:36:28,320
+understandable, robust
+actually encapsulates
+
+832
+00:36:28,320 --> 00:36:33,530
+working in different modalities,
+which actually implies that it
+
+833
+00:36:33,530 --> 00:36:35,450
+should work on
+different devices.
+
+834
+00:36:35,450 --> 00:36:38,600
+So when we're talking about
+mobile, tablet, even something
+
+835
+00:36:38,600 --> 00:36:41,110
+like Google Glass
+or TV or a Leap,
+
+836
+00:36:41,110 --> 00:36:43,880
+robust encapsulates all of that.
+
+837
+00:36:43,880 --> 00:36:46,130
+CHRISTIAN HEILMANN: Good,
+Matthew, you had a question,
+
+838
+00:36:46,130 --> 00:36:47,200
+or you're pulling it?
+
+839
+00:36:47,200 --> 00:36:48,730
+She covered everything you do?
+
+840
+00:36:48,730 --> 00:36:50,200
+I just want to show that
+somebody from Google
+
+841
+00:36:50,200 --> 00:36:51,908
+has something to say
+about accessibility.
+
+842
+00:36:51,908 --> 00:36:56,220
+MATTHEW: No, I was going to
+ask, since you're all there--
+
+843
+00:36:56,220 --> 00:36:57,295
+[LAUGHTER]
+
+844
+00:36:57,295 --> 00:36:58,920
+CHRISTIAN HEILMANN:
+As I have you here.
+
+845
+00:36:58,920 --> 00:37:01,380
+MATTHEW: So I once
+made a comment
+
+846
+00:37:01,380 --> 00:37:04,420
+about changing an outline in
+CSS and basically changing
+
+847
+00:37:04,420 --> 00:37:06,740
+the background
+color for the focus.
+
+848
+00:37:06,740 --> 00:37:09,180
+I got slated immediately
+on [INAUDIBLE] for this.
+
+849
+00:37:09,180 --> 00:37:10,910
+It's not accessible.
+
+850
+00:37:10,910 --> 00:37:11,990
+And I'm fine with that.
+
+851
+00:37:11,990 --> 00:37:14,599
+And I'm kind of like, well,
+what is the right way to do it?
+
+852
+00:37:14,599 --> 00:37:16,390
+And there's a part of
+me that's like, well,
+
+853
+00:37:16,390 --> 00:37:18,880
+can't I apply filters to
+my site that say, this
+
+854
+00:37:18,880 --> 00:37:21,435
+is what a screen
+reader will see?
+
+855
+00:37:21,435 --> 00:37:24,570
+Or what should I be doing in my
+workflow that basically helps
+
+856
+00:37:24,570 --> 00:37:27,904
+me as a developer make my
+site more accessible, I guess?
+
+857
+00:37:27,904 --> 00:37:28,570
+Are there tools?
+
+858
+00:37:28,570 --> 00:37:30,028
+Is there something
+you'd recommend?
+
+859
+00:37:30,028 --> 00:37:32,210
+Or is it just a case of,
+use native components,
+
+860
+00:37:32,210 --> 00:37:36,180
+use the accessibility
+thing, and use that?
+
+861
+00:37:36,180 --> 00:37:41,800
+DEREK FEATHERSTONE: So
+using-- 75% of all statistics
+
+862
+00:37:41,800 --> 00:37:42,410
+are made up.
+
+863
+00:37:42,410 --> 00:37:45,340
+So you can get probably--
+
+864
+00:37:45,340 --> 00:37:47,340
+CHRISTIAN HEILMANN: 2 out
+of 7 people know that.
+
+865
+00:37:47,340 --> 00:37:52,140
+DEREK FEATHERSTONE: Yeah,
+you can get 80 to 90%
+
+866
+00:37:52,140 --> 00:37:55,750
+of the way accessible by testing
+everything with a keyboard.
+
+867
+00:37:55,750 --> 00:37:57,330
+And you have to
+manually test that.
+
+868
+00:37:57,330 --> 00:37:58,454
+Because that's interaction.
+
+869
+00:37:58,454 --> 00:38:01,950
+There's no way to test
+it other than that.
+
+870
+00:38:01,950 --> 00:38:07,760
+But dealing with straight up
+good, solid semantic markup--
+
+871
+00:38:07,760 --> 00:38:13,230
+just writing good HTML and not
+screwing up keyboard access
+
+872
+00:38:13,230 --> 00:38:15,670
+gets you 80 to 90%
+of the way there,
+
+873
+00:38:15,670 --> 00:38:17,940
+straight up, honest truth.
+
+874
+00:38:17,940 --> 00:38:21,440
+Now, using it with a keyboard
+is going to show you stuff
+
+875
+00:38:21,440 --> 00:38:23,410
+about your outline
+changes, right?
+
+876
+00:38:23,410 --> 00:38:24,124
+You're going to go
+through and you're
+
+877
+00:38:24,124 --> 00:38:25,832
+going to say, shit,
+I can see the cursor.
+
+878
+00:38:25,832 --> 00:38:27,314
+I have no idea where I am.
+
+879
+00:38:27,314 --> 00:38:29,730
+CHRISTIAN HEILMANN: I have to
+stop this cursing right now,
+
+880
+00:38:29,730 --> 00:38:30,230
+actually.
+
+881
+00:38:30,230 --> 00:38:33,440
+And this is a longer
+topic that we could go on.
+
+882
+00:38:33,440 --> 00:38:36,540
+So I'm moving on to
+actually Ed Soden, which
+
+883
+00:38:36,540 --> 00:38:37,910
+is actually covering this a bit.
+
+884
+00:38:37,910 --> 00:38:39,140
+So Ed Soden has a question.
+
+885
+00:38:39,140 --> 00:38:40,431
+ED SODEN: I'm reading this one.
+
+886
+00:38:40,431 --> 00:38:44,040
+CHRISTIAN HEILMANN: Yeah,
+Mr. Snowden, ah, Soden--
+
+887
+00:38:44,040 --> 00:38:47,010
+was I not allowed to say it?
+
+888
+00:38:47,010 --> 00:38:49,470
+ED SODEN: So as developers, we
+often try and make our sites
+
+889
+00:38:49,470 --> 00:38:50,850
+work well for screen readers.
+
+890
+00:38:50,850 --> 00:38:53,597
+But is there anything else we
+can do besides screen readers
+
+891
+00:38:53,597 --> 00:38:55,680
+when we're designing our
+sites to make them better
+
+892
+00:38:55,680 --> 00:38:57,077
+for accessibility?
+
+893
+00:38:57,077 --> 00:38:59,660
+CHRISTIAN HEILMANN: That is an
+incredibly interesting question
+
+894
+00:38:59,660 --> 00:39:03,630
+that we haven't quite covered
+yet, or just did, or tried.
+
+895
+00:39:03,630 --> 00:39:06,390
+So Andrew, what do you think?
+
+896
+00:39:06,390 --> 00:39:08,265
+The big screen reader
+debate, every developer
+
+897
+00:39:08,265 --> 00:39:10,265
+I talk to like, it works
+from the screen reader,
+
+898
+00:39:10,265 --> 00:39:12,870
+because that's something I can
+test with-- what else should we
+
+899
+00:39:12,870 --> 00:39:14,269
+be thinking about?
+
+900
+00:39:14,269 --> 00:39:16,060
+ANDREW RONKSLEY: No,
+it's a great question.
+
+901
+00:39:16,060 --> 00:39:20,050
+And I could make up some stats
+now, but I'm not going to.
+
+902
+00:39:20,050 --> 00:39:21,480
+CHRISTIAN HEILMANN: Go ahead.
+
+903
+00:39:21,480 --> 00:39:22,938
+ANDREW RONKSLEY:
+In the UK, there's
+
+904
+00:39:22,938 --> 00:39:24,950
+around 2 million
+people that have
+
+905
+00:39:24,950 --> 00:39:27,580
+some kind of
+sight-related issue.
+
+906
+00:39:27,580 --> 00:39:29,970
+And the vast majority
+of those have
+
+907
+00:39:29,970 --> 00:39:31,834
+some residual useful vision.
+
+908
+00:39:31,834 --> 00:39:33,500
+So the thing you can
+take away from that
+
+909
+00:39:33,500 --> 00:39:36,710
+is quite a small percentage
+of those 2 million people
+
+910
+00:39:36,710 --> 00:39:38,100
+are using the screen reader.
+
+911
+00:39:38,100 --> 00:39:40,980
+The rest of them are making
+some kind of visual adaptations
+
+912
+00:39:40,980 --> 00:39:42,800
+to the page.
+
+913
+00:39:42,800 --> 00:39:45,440
+And I think you can extrapolate
+that to around the world
+
+914
+00:39:45,440 --> 00:39:46,050
+issues.
+
+915
+00:39:46,050 --> 00:39:47,800
+So I think around the
+world it's something
+
+916
+00:39:47,800 --> 00:39:51,210
+like 280 million people have
+some sight-related issue.
+
+917
+00:39:51,210 --> 00:39:55,100
+So things that you
+can do that are not
+
+918
+00:39:55,100 --> 00:39:58,255
+related to a screen
+reader-- and this kind of
+
+919
+00:39:58,255 --> 00:39:59,130
+applies to all of us.
+
+920
+00:39:59,130 --> 00:40:01,860
+You think about using a
+website out and about,
+
+921
+00:40:01,860 --> 00:40:05,850
+color contrast, the
+size of your font,
+
+922
+00:40:05,850 --> 00:40:07,910
+how much white space
+is between controls.
+
+923
+00:40:07,910 --> 00:40:10,920
+So when he's using
+a screen magnifier--
+
+924
+00:40:10,920 --> 00:40:13,260
+I'll see sites sometimes
+where there's a form.
+
+925
+00:40:13,260 --> 00:40:16,820
+And maybe, there's two buttons
+at the end, Next and Previous.
+
+926
+00:40:16,820 --> 00:40:19,250
+They're really far
+apart from each other.
+
+927
+00:40:19,250 --> 00:40:21,250
+If someone's using
+a screen magnifier--
+
+928
+00:40:21,250 --> 00:40:23,384
+I think Matt kind of
+touched on this before.
+
+929
+00:40:23,384 --> 00:40:25,550
+It's a little bit different
+with a screen magnifier.
+
+930
+00:40:25,550 --> 00:40:29,227
+But you see a portion of
+the screen at any one time.
+
+931
+00:40:29,227 --> 00:40:31,310
+Those of you-- everyone
+pretty much has Macs here.
+
+932
+00:40:31,310 --> 00:40:33,980
+You'll all have a screen
+magnifier built-in, Windows
+
+933
+00:40:33,980 --> 00:40:34,480
+as well.
+
+934
+00:40:34,480 --> 00:40:36,530
+So you can try this
+out if you want.
+
+935
+00:40:36,530 --> 00:40:39,210
+Another way to think about it is
+if you imagine sliding a credit
+
+936
+00:40:39,210 --> 00:40:42,480
+card around your screen, just
+imagine that was your viewport.
+
+937
+00:40:42,480 --> 00:40:46,080
+So if the buttons are far apart,
+there's potential to miss them.
+
+938
+00:40:46,080 --> 00:40:48,910
+So just that kind of stuff
+is worth thinking about.
+
+939
+00:40:48,910 --> 00:40:51,219
+And that's nothing to do
+with screen readers at all.
+
+940
+00:40:51,219 --> 00:40:53,510
+CHRISTIAN HEILMANN: Yeah,
+and that's a very good point.
+
+941
+00:40:53,510 --> 00:40:54,380
+I love the credit card thing.
+
+942
+00:40:54,380 --> 00:40:55,747
+I didn't think about that yet.
+
+943
+00:40:55,747 --> 00:40:57,830
+My favorite is always when
+people-- now everything
+
+944
+00:40:57,830 --> 00:40:59,288
+comes with screen
+readers, which is
+
+945
+00:40:59,288 --> 00:41:01,050
+great for accessibility
+for people.
+
+946
+00:41:01,050 --> 00:41:02,289
+But it also is kind of bad.
+
+947
+00:41:02,289 --> 00:41:04,830
+Because developers think they
+know how these things work now.
+
+948
+00:41:04,830 --> 00:41:07,496
+The amount of people I see using
+a screen reader with their eyes
+
+949
+00:41:07,496 --> 00:41:09,100
+open is amazing.
+
+950
+00:41:09,100 --> 00:41:10,760
+And that defeats the purpose.
+
+951
+00:41:10,760 --> 00:41:13,096
+Because of course you can
+understand your system.
+
+952
+00:41:13,096 --> 00:41:14,595
+So James [INAUDIBLE]
+has a question,
+
+953
+00:41:14,595 --> 00:41:16,654
+or was that already
+about the last topic?
+
+954
+00:41:16,654 --> 00:41:18,570
+AUDIENCE: Yeah, that was
+about the last topic.
+
+955
+00:41:18,570 --> 00:41:20,980
+CHRISTIAN HEILMANN: OK, good,
+so do you have another one?
+
+956
+00:41:20,980 --> 00:41:22,940
+MELANIE LANG: I was
+wondering if maybe we
+
+957
+00:41:22,940 --> 00:41:26,772
+need to be more creative
+and maybe go back to roots
+
+958
+00:41:26,772 --> 00:41:28,896
+and test-- I don't know--
+[INAUDIBLE], for example,
+
+959
+00:41:28,896 --> 00:41:31,090
+the test set aside
+for old people.
+
+960
+00:41:31,090 --> 00:41:33,610
+I think they put
+Vaseline on glasses
+
+961
+00:41:33,610 --> 00:41:38,100
+and put gloves on to
+simulate arthrosis.
+
+962
+00:41:38,100 --> 00:41:41,850
+Yeah, so maybe, do we need
+to go back and just do that,
+
+963
+00:41:41,850 --> 00:41:44,570
+maybe, and go this extra mile?
+
+964
+00:41:44,570 --> 00:41:46,750
+CHRISTIAN HEILMANN: Testing
+this kind of way works.
+
+965
+00:41:46,750 --> 00:41:48,519
+I gave people broken
+mice to actually use
+
+966
+00:41:48,519 --> 00:41:49,810
+the website, for example, with.
+
+967
+00:41:49,810 --> 00:41:52,010
+DEREK FEATHERSTONE: Yeah,
+there's tons of things
+
+968
+00:41:52,010 --> 00:41:55,110
+that you can do like
+that to simulate
+
+969
+00:41:55,110 --> 00:41:56,830
+different types of disability.
+
+970
+00:41:56,830 --> 00:41:59,310
+And I believe that
+all those things
+
+971
+00:41:59,310 --> 00:42:04,050
+are great emulating what a
+user with a particular type
+
+972
+00:42:04,050 --> 00:42:05,290
+of disability would be.
+
+973
+00:42:05,290 --> 00:42:07,590
+You want to see what
+it's like for somebody
+
+974
+00:42:07,590 --> 00:42:11,510
+that has a tremor in
+their hand to use a mouse,
+
+975
+00:42:11,510 --> 00:42:16,640
+turn your mouse sideways and try
+to manipulate it on the screen,
+
+976
+00:42:16,640 --> 00:42:17,740
+or use the wrong hand.
+
+977
+00:42:17,740 --> 00:42:20,720
+There's all kinds of
+things that you can do.
+
+978
+00:42:20,720 --> 00:42:23,410
+One thing that I would point
+out-- and I think those
+
+979
+00:42:23,410 --> 00:42:25,420
+are great things to do.
+
+980
+00:42:25,420 --> 00:42:29,610
+The WCAG guidelines are designed
+specifically because we know--
+
+981
+00:42:29,610 --> 00:42:32,490
+and I say "we" like I was
+involved or something.
+
+982
+00:42:32,490 --> 00:42:36,980
+But we can't all go and
+test with real people.
+
+983
+00:42:36,980 --> 00:42:38,690
+And so those guidelines
+are all in place
+
+984
+00:42:38,690 --> 00:42:41,440
+because they're based on
+years and years of people
+
+985
+00:42:41,440 --> 00:42:45,490
+actually working with
+people with disabilities.
+
+986
+00:42:45,490 --> 00:42:48,940
+So those are absolutely
+valuable and useful.
+
+987
+00:42:48,940 --> 00:42:50,620
+And everybody should do it.
+
+988
+00:42:50,620 --> 00:42:52,830
+But if you can't
+do that, then you
+
+989
+00:42:52,830 --> 00:42:56,730
+have guidelines as your sort
+of first point of advice.
+
+990
+00:42:56,730 --> 00:42:58,710
+And absolutely go back to it.
+
+991
+00:42:58,710 --> 00:43:03,040
+But if you can't, just feel
+at least partially confident
+
+992
+00:43:03,040 --> 00:43:06,540
+that those guidelines
+are there to replace
+
+993
+00:43:06,540 --> 00:43:08,330
+the fact that everybody
+can't do that.
+
+994
+00:43:08,330 --> 00:43:10,570
+ALICE BOXHALL: Actually-- oh.
+
+995
+00:43:10,570 --> 00:43:12,375
+SARAH LEWTHWAITE: I
+completely understand
+
+996
+00:43:12,375 --> 00:43:13,416
+where you're coming from.
+
+997
+00:43:13,416 --> 00:43:16,220
+But I also feel that's a bit
+of a cop-out in terms of-- I
+
+998
+00:43:16,220 --> 00:43:18,324
+think sometimes
+standards step in,
+
+999
+00:43:18,324 --> 00:43:20,490
+and people want to learn
+the standard because that's
+
+1000
+00:43:20,490 --> 00:43:21,690
+the easy thing to do.
+
+1001
+00:43:21,690 --> 00:43:24,620
+And they want to turn the mouse
+and do that when sometimes,
+
+1002
+00:43:24,620 --> 00:43:27,400
+they have disabled populations
+sitting right under their nose.
+
+1003
+00:43:27,400 --> 00:43:29,650
+So for example, in
+the university sector,
+
+1004
+00:43:29,650 --> 00:43:31,280
+there are hundreds
+of disabled students
+
+1005
+00:43:31,280 --> 00:43:32,410
+at King's College, London.
+
+1006
+00:43:32,410 --> 00:43:34,597
+How many are involved
+in testing our systems?
+
+1007
+00:43:34,597 --> 00:43:35,430
+They're right there.
+
+1008
+00:43:35,430 --> 00:43:37,280
+We could easily
+engage with them.
+
+1009
+00:43:37,280 --> 00:43:40,930
+So I think it's important
+to be creative and think
+
+1010
+00:43:40,930 --> 00:43:44,314
+about drawing people
+into this conversation.
+
+1011
+00:43:44,314 --> 00:43:46,230
+So if you're doing
+usability testing at large,
+
+1012
+00:43:46,230 --> 00:43:49,280
+don't be afraid of contacting,
+say, disabled people's
+
+1013
+00:43:49,280 --> 00:43:51,165
+organizations or
+putting a call out
+
+1014
+00:43:51,165 --> 00:43:53,290
+for people to get involved
+in testing your systems.
+
+1015
+00:43:53,290 --> 00:43:55,340
+Because they will
+give you much richer
+
+1016
+00:43:55,340 --> 00:43:58,520
+feedback about how
+your interfaces work.
+
+1017
+00:43:58,520 --> 00:44:00,020
+And they're going
+to bring up things
+
+1018
+00:44:00,020 --> 00:44:02,397
+that you just would not
+have imagined possible.
+
+1019
+00:44:02,397 --> 00:44:04,480
+CHRISTIAN HEILMANN: It
+would be interesting to see
+
+1020
+00:44:04,480 --> 00:44:06,350
+what kind of-- I mean, you
+can take the glasses away
+
+1021
+00:44:06,350 --> 00:44:07,780
+from your colleagues,
+for example.
+
+1022
+00:44:07,780 --> 00:44:09,910
+Or you can read out
+your text on the screen
+
+1023
+00:44:09,910 --> 00:44:11,010
+to somebody on the phone.
+
+1024
+00:44:11,010 --> 00:44:14,050
+If it then makes sense, you
+know it's an accessible text.
+
+1025
+00:44:14,050 --> 00:44:17,845
+If you need to think to see to
+understand it, then you don't.
+
+1026
+00:44:17,845 --> 00:44:19,220
+It would be
+interesting to set up
+
+1027
+00:44:19,220 --> 00:44:22,090
+a wiki or something about these
+little accessibility hacks
+
+1028
+00:44:22,090 --> 00:44:23,400
+to simulate different things.
+
+1029
+00:44:23,400 --> 00:44:26,810
+But outreach to real
+people with disabilities--
+
+1030
+00:44:26,810 --> 00:44:30,090
+hard core users that know how
+to use something is amazing.
+
+1031
+00:44:30,090 --> 00:44:32,579
+I learned most working next
+to a PHP developer, who
+
+1032
+00:44:32,579 --> 00:44:33,870
+was blind, for like four years.
+
+1033
+00:44:33,870 --> 00:44:35,078
+And that was just incredible.
+
+1034
+00:44:35,078 --> 00:44:38,250
+Because he coded faster
+than me, which is annoying.
+
+1035
+00:44:38,250 --> 00:44:41,180
+Now, with a sense of dread,
+Patrick Lauke has a question.
+
+1036
+00:44:41,180 --> 00:44:43,827
+[LAUGHTER]
+
+1037
+00:44:43,827 --> 00:44:45,660
+PATRICK LAUKE: No, I
+haven't got a question.
+
+1038
+00:44:45,660 --> 00:44:46,868
+I've got a lengthy statement.
+
+1039
+00:44:46,868 --> 00:44:49,610
+No, just a quick note--
+I wanted to pick up just
+
+1040
+00:44:49,610 --> 00:44:52,750
+on something that was mentioned
+at the start there about,
+
+1041
+00:44:52,750 --> 00:44:55,770
+I did something to my
+outline, and I was immediately
+
+1042
+00:44:55,770 --> 00:45:01,920
+jumped upon by an
+accessibility lynch mob.
+
+1043
+00:45:01,920 --> 00:45:06,100
+The dirty kind of truth, even
+within the Paciello Group--
+
+1044
+00:45:06,100 --> 00:45:08,310
+I can say that
+hopefully openly--
+
+1045
+00:45:08,310 --> 00:45:10,300
+is that you get three
+accessibility experts,
+
+1046
+00:45:10,300 --> 00:45:11,940
+you get five different opinions.
+
+1047
+00:45:11,940 --> 00:45:15,280
+We disagree even on sometimes
+very fundamental things,
+
+1048
+00:45:15,280 --> 00:45:18,780
+like very first
+guideline of WCAG,
+
+1049
+00:45:18,780 --> 00:45:20,465
+having appropriate alt text.
+
+1050
+00:45:20,465 --> 00:45:22,950
+We could have discussions
+for days about,
+
+1051
+00:45:22,950 --> 00:45:24,990
+what is the most appropriate
+alt text for this?
+
+1052
+00:45:24,990 --> 00:45:27,880
+And you'll get fierce debates
+in the accessibility community
+
+1053
+00:45:27,880 --> 00:45:30,580
+about, every image should
+have this kind of alt,
+
+1054
+00:45:30,580 --> 00:45:32,810
+or no image should have alt.
+
+1055
+00:45:32,810 --> 00:45:35,805
+And so I just wanted to
+kind of temper the whole--
+
+1056
+00:45:35,805 --> 00:45:37,805
+when you get some
+people jumping on you
+
+1057
+00:45:37,805 --> 00:45:41,440
+and immediately shouting,
+oh, that's not accessible,
+
+1058
+00:45:41,440 --> 00:45:42,830
+they may be right.
+
+1059
+00:45:42,830 --> 00:45:44,380
+Or they may not be right.
+
+1060
+00:45:44,380 --> 00:45:46,670
+And as Derek mentioned
+towards the start,
+
+1061
+00:45:46,670 --> 00:45:48,480
+it is not a binary thing.
+
+1062
+00:45:48,480 --> 00:45:50,814
+It's not always, it's either
+accessible or inaccessible.
+
+1063
+00:45:50,814 --> 00:45:52,271
+There are certainly
+things that you
+
+1064
+00:45:52,271 --> 00:45:54,480
+can do that completely
+screw everybody over that
+
+1065
+00:45:54,480 --> 00:45:56,830
+can't see the screen
+perfectly and use their mouse.
+
+1066
+00:45:56,830 --> 00:46:00,886
+But beyond that, there's lots
+of shades of grey on that one.
+
+1067
+00:46:00,886 --> 00:46:03,560
+CHRISTIAN HEILMANN: Yeah,
+also, stop arguing on Twitter.
+
+1068
+00:46:03,560 --> 00:46:05,660
+140 characters are not
+good to actually bring
+
+1069
+00:46:05,660 --> 00:46:08,920
+emotions or facts in.
+
+1070
+00:46:08,920 --> 00:46:11,040
+We've got [INAUDIBLE]
+here, because Christopher
+
+1071
+00:46:11,040 --> 00:46:12,710
+has said too many
+things already.
+
+1072
+00:46:12,710 --> 00:46:17,754
+ 
+
+1073
+00:46:17,754 --> 00:46:19,920
+AUDIENCE: So basically, I
+did a bit of a stat check.
+
+1074
+00:46:19,920 --> 00:46:22,770
+And I checked that there
+are about 2.7 million people
+
+1075
+00:46:22,770 --> 00:46:25,930
+in Britain who have
+color blindness.
+
+1076
+00:46:25,930 --> 00:46:27,980
+And I haven't seen that
+mention in this talk yet.
+
+1077
+00:46:27,980 --> 00:46:31,830
+Do we consider people who are
+color blind to be disabled,
+
+1078
+00:46:31,830 --> 00:46:34,540
+or are there any things
+that people in general
+
+1079
+00:46:34,540 --> 00:46:37,351
+can do to improve their pages
+to improve the looks for color
+
+1080
+00:46:37,351 --> 00:46:37,850
+blind?
+
+1081
+00:46:37,850 --> 00:46:38,840
+DEREK FEATHERSTONE:
+Did you say stable?
+
+1082
+00:46:38,840 --> 00:46:41,298
+CHRISTIAN HEILMANN: I met a
+few unstable color blind people
+
+1083
+00:46:41,298 --> 00:46:43,340
+in my past.
+
+1084
+00:46:43,340 --> 00:46:48,130
+I think your tools,
+Alice-- you talked
+
+1085
+00:46:48,130 --> 00:46:51,140
+about the color distance.
+
+1086
+00:46:51,140 --> 00:46:53,355
+But also, color blindness
+is one of the simulators
+
+1087
+00:46:53,355 --> 00:46:54,665
+in there, isn't it?
+
+1088
+00:46:54,665 --> 00:46:56,710
+ALICE BOXHALL: No, not
+in my tool, actually.
+
+1089
+00:46:56,710 --> 00:46:59,193
+CHRISTIAN HEILMANN:
+Well, that can be fixed.
+
+1090
+00:46:59,193 --> 00:47:01,600
+ALICE BOXHALL: Sure, you want
+to send me a [INAUDIBLE]?
+
+1091
+00:47:01,600 --> 00:47:04,121
+There are extensions
+certainly for Chrome, probably
+
+1092
+00:47:04,121 --> 00:47:05,495
+for other browsers
+as well, which
+
+1093
+00:47:05,495 --> 00:47:08,190
+will simulate color blindness.
+
+1094
+00:47:08,190 --> 00:47:13,160
+And contrast ratio has a color
+blindness implication in that,
+
+1095
+00:47:13,160 --> 00:47:16,990
+say, if you have red on white,
+if you view that as grey,
+
+1096
+00:47:16,990 --> 00:47:20,524
+it may not be a high
+enough contrast ratio.
+
+1097
+00:47:20,524 --> 00:47:22,440
+CHRISTIAN HEILMANN:
+Derek, you were twitching?
+
+1098
+00:47:22,440 --> 00:47:24,400
+DEREK FEATHERSTONE:
+A little-- there's
+
+1099
+00:47:24,400 --> 00:47:27,200
+a great tool,
+Color Oracle, which
+
+1100
+00:47:27,200 --> 00:47:29,046
+you can install at
+the desktop level.
+
+1101
+00:47:29,046 --> 00:47:30,420
+And it will
+transform everything.
+
+1102
+00:47:30,420 --> 00:47:32,120
+And you can simulate things.
+
+1103
+00:47:32,120 --> 00:47:35,055
+ 
+
+1104
+00:47:35,055 --> 00:47:36,930
+Two challenges with
+color blindness-- and I'm
+
+1105
+00:47:36,930 --> 00:47:38,600
+saying this as a very
+blanket statement.
+
+1106
+00:47:38,600 --> 00:47:40,510
+So there's probably
+more challenges.
+
+1107
+00:47:40,510 --> 00:47:42,020
+But one is a color
+contrast issue.
+
+1108
+00:47:42,020 --> 00:47:44,160
+The other is the way
+that you're using color
+
+1109
+00:47:44,160 --> 00:47:45,470
+to convey information, right?
+
+1110
+00:47:45,470 --> 00:47:49,400
+If you're relying on color, then
+you need to-- we're not saying,
+
+1111
+00:47:49,400 --> 00:47:50,540
+don't rely on color.
+
+1112
+00:47:50,540 --> 00:47:51,790
+Use color as much as you want.
+
+1113
+00:47:51,790 --> 00:47:55,170
+But use other mechanisms
+to indicate things as well.
+
+1114
+00:47:55,170 --> 00:47:59,270
+So it could be that you're
+using pattern with color.
+
+1115
+00:47:59,270 --> 00:48:01,800
+Or instead of just
+using color, think
+
+1116
+00:48:01,800 --> 00:48:05,050
+of a line graph that has
+a legend at the bottom.
+
+1117
+00:48:05,050 --> 00:48:07,330
+Instead of putting a
+legend at the bottom,
+
+1118
+00:48:07,330 --> 00:48:11,790
+change your graph so that each
+one of the individual legend
+
+1119
+00:48:11,790 --> 00:48:13,680
+pieces is actually
+up beside the line
+
+1120
+00:48:13,680 --> 00:48:15,809
+so that you can then
+follow the line.
+
+1121
+00:48:15,809 --> 00:48:18,350
+CHRISTIAN HEILMANN: This also
+ties into internationalization.
+
+1122
+00:48:18,350 --> 00:48:20,570
+My favorite is when people
+just use red as a warning,
+
+1123
+00:48:20,570 --> 00:48:22,251
+whereas in China,
+it means good luck.
+
+1124
+00:48:22,251 --> 00:48:24,000
+Good luck, we lost
+your emails, wonderful.
+
+1125
+00:48:24,000 --> 00:48:26,444
+[LAUGHTER]
+
+1126
+00:48:26,444 --> 00:48:28,360
+CHRISTIAN HEILMANN: Oh
+god, lots of questions.
+
+1127
+00:48:28,360 --> 00:48:32,765
+So let's have one here,
+the man in the loud shirt.
+
+1128
+00:48:32,765 --> 00:48:36,760
+ 
+
+1129
+00:48:36,760 --> 00:48:38,530
+AUDIENCE: Sorry about my shirt.
+
+1130
+00:48:38,530 --> 00:48:39,980
+I was just thinking,
+we've talked
+
+1131
+00:48:39,980 --> 00:48:43,110
+a lot today about
+web performance
+
+1132
+00:48:43,110 --> 00:48:46,590
+and things like that, and about,
+how does the whole performance
+
+1133
+00:48:46,590 --> 00:48:48,800
+piece fit into accessibility?
+
+1134
+00:48:48,800 --> 00:48:51,700
+We'll see one kind of coming
+to mind as things being too
+
+1135
+00:48:51,700 --> 00:48:56,530
+fast where we're constantly
+working to speed things up.
+
+1136
+00:48:56,530 --> 00:48:58,920
+Is there cases in
+accessibility where we actually
+
+1137
+00:48:58,920 --> 00:49:02,130
+need to slow it down?
+
+1138
+00:49:02,130 --> 00:49:05,790
+DEREK FEATHERSTONE: So
+I have a few thoughts
+
+1139
+00:49:05,790 --> 00:49:08,040
+when listening to all the
+other performance things.
+
+1140
+00:49:08,040 --> 00:49:09,620
+And one of the
+things that I heard
+
+1141
+00:49:09,620 --> 00:49:12,955
+was, what's in the
+first 15 kilobytes?
+
+1142
+00:49:12,955 --> 00:49:16,649
+And I started to think, what
+should be in the first 15
+
+1143
+00:49:16,649 --> 00:49:18,690
+kilobytes for somebody
+that has a particular type
+
+1144
+00:49:18,690 --> 00:49:19,520
+of disability?
+
+1145
+00:49:19,520 --> 00:49:21,394
+And I don't know the
+answer to that question.
+
+1146
+00:49:21,394 --> 00:49:23,710
+I think that's a great one.
+
+1147
+00:49:23,710 --> 00:49:28,300
+I'm not sure about
+slowing things down.
+
+1148
+00:49:28,300 --> 00:49:32,440
+Most technology, most
+screen reading technology
+
+1149
+00:49:32,440 --> 00:49:35,550
+and other technologies, they
+work on top of browsers.
+
+1150
+00:49:35,550 --> 00:49:37,740
+They're not their own
+thing, generally speaking.
+
+1151
+00:49:37,740 --> 00:49:40,085
+ 
+
+1152
+00:49:40,085 --> 00:49:41,710
+AUDIENCE: Where I'm
+kind of coming from
+
+1153
+00:49:41,710 --> 00:49:43,980
+is about the thought
+of perception,
+
+1154
+00:49:43,980 --> 00:49:47,820
+if something changes on
+the screen too quickly,
+
+1155
+00:49:47,820 --> 00:49:51,520
+and it becomes harder for
+visually impaired people
+
+1156
+00:49:51,520 --> 00:49:54,567
+to actually detect that change.
+
+1157
+00:49:54,567 --> 00:49:56,900
+DEREK FEATHERSTONE: So are
+you talking about in response
+
+1158
+00:49:56,900 --> 00:49:58,740
+to some event that's
+happened on the page,
+
+1159
+00:49:58,740 --> 00:50:01,364
+or like an initial load?
+
+1160
+00:50:01,364 --> 00:50:03,780
+CHRISTIAN HEILMANN: Is it more
+like UX problems, isn't it?
+
+1161
+00:50:03,780 --> 00:50:04,770
+I think like drop-down--
+
+1162
+00:50:04,770 --> 00:50:05,782
+AUDIENCE: Something
+like a carousel.
+
+1163
+00:50:05,782 --> 00:50:07,060
+CHRISTIAN HEILMANN: Yeah.
+
+1164
+00:50:07,060 --> 00:50:11,260
+AUDIENCE: Yeah, just a
+case of stuff changing,
+
+1165
+00:50:11,260 --> 00:50:15,420
+either naturally in a carousel,
+which is kind of automated,
+
+1166
+00:50:15,420 --> 00:50:17,880
+or in response to an action.
+
+1167
+00:50:17,880 --> 00:50:19,490
+DEREK FEATHERSTONE:
+So on a carousel,
+
+1168
+00:50:19,490 --> 00:50:23,840
+for example, if
+it autoplays, you
+
+1169
+00:50:23,840 --> 00:50:25,220
+have to be able to turn it off.
+
+1170
+00:50:25,220 --> 00:50:27,610
+And you have to be able
+to start it up again.
+
+1171
+00:50:27,610 --> 00:50:30,059
+So I'm not sure that that's
+really slowing it down
+
+1172
+00:50:30,059 --> 00:50:31,350
+from a performance perspective.
+
+1173
+00:50:31,350 --> 00:50:33,183
+But you should definitely
+allow for somebody
+
+1174
+00:50:33,183 --> 00:50:35,740
+to manually go
+through the carousel
+
+1175
+00:50:35,740 --> 00:50:38,540
+if you have to have
+one on your page.
+
+1176
+00:50:38,540 --> 00:50:43,370
+We also do things like if
+the carousel container-- when
+
+1177
+00:50:43,370 --> 00:50:45,500
+you detect keyboard usage
+within that container,
+
+1178
+00:50:45,500 --> 00:50:48,460
+we automatically
+stop it from rotating
+
+1179
+00:50:48,460 --> 00:50:52,046
+so that it immediately becomes
+a manual thing if you're
+
+1180
+00:50:52,046 --> 00:50:53,420
+moving through it
+with a keyboard
+
+1181
+00:50:53,420 --> 00:50:56,440
+so that you basically take
+a screen reader that's
+
+1182
+00:50:56,440 --> 00:50:58,550
+on that content.
+
+1183
+00:50:58,550 --> 00:51:01,650
+If it's suddenly whisked away,
+quite often what happens,
+
+1184
+00:51:01,650 --> 00:51:04,920
+if the node is just slidden--
+"slidden," nice word.
+
+1185
+00:51:04,920 --> 00:51:09,000
+If the node slides
+out to the side,
+
+1186
+00:51:09,000 --> 00:51:11,680
+that's different than if
+the node is destroyed.
+
+1187
+00:51:11,680 --> 00:51:14,570
+And in some of these cases,
+screen reader focus is lost.
+
+1188
+00:51:14,570 --> 00:51:16,970
+And they have to start over
+at the top of the page.
+
+1189
+00:51:16,970 --> 00:51:19,874
+So that's something where
+we want to kind of give them
+
+1190
+00:51:19,874 --> 00:51:21,165
+a little bit more control and--
+
+1191
+00:51:21,165 --> 00:51:22,865
+CHRISTIAN HEILMANN: I think
+we're running the danger here
+
+1192
+00:51:22,865 --> 00:51:25,240
+of getting into implementations
+and explaining to you how
+
+1193
+00:51:25,240 --> 00:51:26,440
+to do a certain widget.
+
+1194
+00:51:26,440 --> 00:51:28,770
+And we are open to
+discussion for that.
+
+1195
+00:51:28,770 --> 00:51:31,370
+It would be wonderful to ask,
+get a few questions sorted.
+
+1196
+00:51:31,370 --> 00:51:32,850
+And then we could
+answer offline.
+
+1197
+00:51:32,850 --> 00:51:35,480
+Because [INAUDIBLE] would
+be like, do it like this,
+
+1198
+00:51:35,480 --> 00:51:36,590
+or do it like that.
+
+1199
+00:51:36,590 --> 00:51:39,048
+ALICE BOXHALL: To answer the
+broader question about timing,
+
+1200
+00:51:39,048 --> 00:51:42,610
+there's language in WCAG about
+how long things should take,
+
+1201
+00:51:42,610 --> 00:51:44,500
+how much time you
+should allow for things.
+
+1202
+00:51:44,500 --> 00:51:47,050
+So that maybe gets a bit
+more at your question.
+
+1203
+00:51:47,050 --> 00:51:49,680
+And also, to me, it raises a
+bit of a broader question, which
+
+1204
+00:51:49,680 --> 00:51:52,130
+is, I'm curious how many
+web developers have even
+
+1205
+00:51:52,130 --> 00:51:53,715
+looked look at WCAG here?
+
+1206
+00:51:53,715 --> 00:51:56,330
+ 
+
+1207
+00:51:56,330 --> 00:51:59,500
+Quite a few-- cool.
+
+1208
+00:51:59,500 --> 00:52:03,610
+To me, it seems like it's
+a great set of guidelines
+
+1209
+00:52:03,610 --> 00:52:06,250
+for creating good
+user interfaces.
+
+1210
+00:52:06,250 --> 00:52:10,040
+So for example, things like
+allowing error correction
+
+1211
+00:52:10,040 --> 00:52:12,126
+in forms-- do we
+not all want that?
+
+1212
+00:52:12,126 --> 00:52:14,250
+Do we not all want the form
+to lose all of our data
+
+1213
+00:52:14,250 --> 00:52:16,881
+if we make a single mistake?
+
+1214
+00:52:16,881 --> 00:52:19,130
+So yeah, I think the web
+would be better for everybody
+
+1215
+00:52:19,130 --> 00:52:20,210
+if we all followed WCAG.
+
+1216
+00:52:20,210 --> 00:52:21,668
+And this is an
+example of something
+
+1217
+00:52:21,668 --> 00:52:25,146
+which is in there which we could
+learn about just from reading
+
+1218
+00:52:25,146 --> 00:52:25,770
+the guidelines.
+
+1219
+00:52:25,770 --> 00:52:26,780
+And of course, there's more.
+
+1220
+00:52:26,780 --> 00:52:28,196
+There's stuff
+that's not in there.
+
+1221
+00:52:28,196 --> 00:52:30,540
+Or there's stuff that
+needs more information.
+
+1222
+00:52:30,540 --> 00:52:32,740
+But it's a really
+great place to start.
+
+1223
+00:52:32,740 --> 00:52:35,300
+CHRISTIAN HEILMANN: OK, we're
+running out of time here a bit.
+
+1224
+00:52:35,300 --> 00:52:37,930
+So we're skipping one of the
+questions that I've ceded,
+
+1225
+00:52:37,930 --> 00:52:38,790
+sadly enough.
+
+1226
+00:52:38,790 --> 00:52:41,460
+We have one from
+Aralia Moser here.
+
+1227
+00:52:41,460 --> 00:52:44,666
+ 
+
+1228
+00:52:44,666 --> 00:52:47,326
+ARALIA MOSER: OK,
+you skipped a person.
+
+1229
+00:52:47,326 --> 00:52:49,200
+CHRISTIAN HEILMANN: I
+skipped Dan Appelquist.
+
+1230
+00:52:49,200 --> 00:52:50,322
+He can deal with it.
+
+1231
+00:52:50,322 --> 00:52:52,150
+ARALIA MOSER: OK,
+so I'm wondering,
+
+1232
+00:52:52,150 --> 00:52:54,570
+how do you prioritize
+accessibility in your workflow?
+
+1233
+00:52:54,570 --> 00:52:56,550
+And right now, it
+seems that reactive
+
+1234
+00:52:56,550 --> 00:52:58,320
+is something you need to do.
+
+1235
+00:52:58,320 --> 00:53:00,935
+So how can we make it
+just the thing to do?
+
+1236
+00:53:00,935 --> 00:53:02,810
+CHRISTIAN HEILMANN: It's
+the old question of,
+
+1237
+00:53:02,810 --> 00:53:04,184
+where's the
+accessibility plug-in
+
+1238
+00:53:04,184 --> 00:53:06,430
+that I can put at the
+end of my workflow?
+
+1239
+00:53:06,430 --> 00:53:09,340
+How do you get accessibility
+into the workflow
+
+1240
+00:53:09,340 --> 00:53:12,420
+from the very beginning in
+a cutthroat environment that
+
+1241
+00:53:12,420 --> 00:53:13,460
+has not much time?
+
+1242
+00:53:13,460 --> 00:53:14,531
+Derek.
+
+1243
+00:53:14,531 --> 00:53:16,530
+DEREK FEATHERSTONE: It's
+got to be moved earlier
+
+1244
+00:53:16,530 --> 00:53:18,010
+in the process.
+
+1245
+00:53:18,010 --> 00:53:19,420
+If it gets to the
+end, and you're
+
+1246
+00:53:19,420 --> 00:53:21,980
+finding accessibility issues
+for the first time in QA
+
+1247
+00:53:21,980 --> 00:53:24,610
+or as you're preparing
+it for QA, it's too late.
+
+1248
+00:53:24,610 --> 00:53:26,280
+It has to be done
+at the design level.
+
+1249
+00:53:26,280 --> 00:53:30,840
+And I think if you focus very
+loosely on design, development,
+
+1250
+00:53:30,840 --> 00:53:33,187
+and QA as kind of
+three important pieces,
+
+1251
+00:53:33,187 --> 00:53:35,520
+not thinking about the business
+side-- that's important.
+
+1252
+00:53:35,520 --> 00:53:38,410
+But the focusing
+on the transition
+
+1253
+00:53:38,410 --> 00:53:40,430
+points I think is critical.
+
+1254
+00:53:40,430 --> 00:53:44,430
+So having designers talk with
+developers and spec-ing things
+
+1255
+00:53:44,430 --> 00:53:47,300
+out-- not like as in
+the spec, but here's
+
+1256
+00:53:47,300 --> 00:53:48,950
+what my intent is
+with this design.
+
+1257
+00:53:48,950 --> 00:53:52,830
+And so a design can
+specify things like,
+
+1258
+00:53:52,830 --> 00:53:54,340
+here's how the
+keyboard flow should
+
+1259
+00:53:54,340 --> 00:54:00,002
+work for this particular
+widget, or for this page.
+
+1260
+00:54:00,002 --> 00:54:01,460
+Even working on it
+together, here's
+
+1261
+00:54:01,460 --> 00:54:03,930
+the most logical source order.
+
+1262
+00:54:03,930 --> 00:54:06,534
+Looking at this wire frame
+and the hierarchy of content,
+
+1263
+00:54:06,534 --> 00:54:08,450
+here's the most logical
+source order for that.
+
+1264
+00:54:08,450 --> 00:54:11,530
+And having that stuff passed
+all the way down the chain
+
+1265
+00:54:11,530 --> 00:54:15,930
+is, to me, one of the
+most critical things that
+
+1266
+00:54:15,930 --> 00:54:18,690
+would help address that
+so that it happens earlier
+
+1267
+00:54:18,690 --> 00:54:22,540
+and we don't get to the
+end and say, I forgot.
+
+1268
+00:54:22,540 --> 00:54:24,700
+CHRISTIAN HEILMANN:
+Andrew, what do you think?
+
+1269
+00:54:24,700 --> 00:54:25,660
+ANDREW RONKSLEY: This is
+someone else's point of view.
+
+1270
+00:54:25,660 --> 00:54:27,380
+I can't remember
+who exactly it was.
+
+1271
+00:54:27,380 --> 00:54:30,680
+But it was talking about how
+the first time you do something,
+
+1272
+00:54:30,680 --> 00:54:32,920
+it is difficult, and it
+takes you longer to do it.
+
+1273
+00:54:32,920 --> 00:54:36,085
+So if you guys can remember the
+first time you built a website,
+
+1274
+00:54:36,085 --> 00:54:37,140
+it was probably hard.
+
+1275
+00:54:37,140 --> 00:54:38,980
+And it took you a long time.
+
+1276
+00:54:38,980 --> 00:54:41,730
+The first time you
+built a responsive site,
+
+1277
+00:54:41,730 --> 00:54:43,300
+your mind might have
+been a bit blown
+
+1278
+00:54:43,300 --> 00:54:44,799
+like, this is taking
+me a long time.
+
+1279
+00:54:44,799 --> 00:54:46,970
+But then, the next time
+you do it, it's easier.
+
+1280
+00:54:46,970 --> 00:54:48,320
+The next time you do
+it, again, it's easier.
+
+1281
+00:54:48,320 --> 00:54:49,694
+And then, it just
+becomes normal.
+
+1282
+00:54:49,694 --> 00:54:52,230
+And it's kind of like
+that with accessibility.
+
+1283
+00:54:52,230 --> 00:54:54,480
+It only seems hard
+because it's not
+
+1284
+00:54:54,480 --> 00:54:56,060
+something you'll do day to day.
+
+1285
+00:54:56,060 --> 00:54:59,250
+But if you do invest a
+bit of time and effort
+
+1286
+00:54:59,250 --> 00:55:02,930
+into doing it a couple of times,
+your workflow will change.
+
+1287
+00:55:02,930 --> 00:55:05,224
+And it just will become
+something you do naturally.
+
+1288
+00:55:05,224 --> 00:55:06,890
+I can't remember whose
+opinion that was.
+
+1289
+00:55:06,890 --> 00:55:08,862
+But I really liked
+it when I read it.
+
+1290
+00:55:08,862 --> 00:55:11,070
+MATTHEW TYLEE ATKINSON: I
+completely agree with that.
+
+1291
+00:55:11,070 --> 00:55:13,110
+And I completely agree
+with various things
+
+1292
+00:55:13,110 --> 00:55:15,300
+that have been said
+before, like for example,
+
+1293
+00:55:15,300 --> 00:55:17,660
+just try it out with a
+keyboard as you're doing it.
+
+1294
+00:55:17,660 --> 00:55:20,440
+The most important thing
+is, as Derek pointed out,
+
+1295
+00:55:20,440 --> 00:55:23,634
+to do it from the very start,
+from the design process.
+
+1296
+00:55:23,634 --> 00:55:25,050
+But you're all
+going to be dealing
+
+1297
+00:55:25,050 --> 00:55:27,230
+with stuff that already exists.
+
+1298
+00:55:27,230 --> 00:55:31,240
+And there are some
+things-- I think
+
+1299
+00:55:31,240 --> 00:55:33,620
+Alice mentioned
+accessibility testing.
+
+1300
+00:55:33,620 --> 00:55:35,320
+You can't do it
+all mechanically.
+
+1301
+00:55:35,320 --> 00:55:37,060
+But some of it you can.
+
+1302
+00:55:37,060 --> 00:55:40,610
+And perhaps this is going
+to sound odd coming from me.
+
+1303
+00:55:40,610 --> 00:55:46,390
+Because I'm very much reliant
+on me going to look at a site
+
+1304
+00:55:46,390 --> 00:55:48,520
+and finding accessibility
+problems with it.
+
+1305
+00:55:48,520 --> 00:55:50,240
+But there are a
+whole range of things
+
+1306
+00:55:50,240 --> 00:55:52,790
+that you can test mechanically.
+
+1307
+00:55:52,790 --> 00:55:55,410
+For example, does every
+image have an Alt attribute?
+
+1308
+00:55:55,410 --> 00:55:56,840
+It's a very simple thing.
+
+1309
+00:55:56,840 --> 00:56:00,690
+Now, one of my
+colleagues is working on
+
+1310
+00:56:00,690 --> 00:56:04,800
+or has developed a
+tool, an API in fact.
+
+1311
+00:56:04,800 --> 00:56:06,710
+It's going to be in beta soon.
+
+1312
+00:56:06,710 --> 00:56:11,260
+It's called [INAUDIBLE]-- which
+can perform these tests that
+
+1313
+00:56:11,260 --> 00:56:12,780
+can be automated.
+
+1314
+00:56:12,780 --> 00:56:14,580
+And it will go away
+and perform them.
+
+1315
+00:56:14,580 --> 00:56:16,420
+And because it's a
+command line thing,
+
+1316
+00:56:16,420 --> 00:56:18,640
+you can make it part
+of your build process.
+
+1317
+00:56:18,640 --> 00:56:20,750
+So if there were two
+biggest things I would say
+
+1318
+00:56:20,750 --> 00:56:22,990
+is perhaps look at that,
+see what it can do for you.
+
+1319
+00:56:22,990 --> 00:56:25,860
+Because it can be part
+of your build process.
+
+1320
+00:56:25,860 --> 00:56:28,270
+A human being does not
+need to waste their time
+
+1321
+00:56:28,270 --> 00:56:29,776
+on some of this stuff.
+
+1322
+00:56:29,776 --> 00:56:31,150
+And the other
+thing is, make sure
+
+1323
+00:56:31,150 --> 00:56:35,170
+that you can challenge yourself
+to, like Christian said,
+
+1324
+00:56:35,170 --> 00:56:36,910
+take away the mouse
+for a while and see
+
+1325
+00:56:36,910 --> 00:56:39,940
+if you can still use your site.
+
+1326
+00:56:39,940 --> 00:56:42,420
+Some stuff like
+that you can really
+
+1327
+00:56:42,420 --> 00:56:44,030
+reduce the amount
+of time and effort
+
+1328
+00:56:44,030 --> 00:56:47,200
+it takes by making it
+part of your process.
+
+1329
+00:56:47,200 --> 00:56:49,520
+And as much as
+possible, please do
+
+1330
+00:56:49,520 --> 00:56:51,550
+try and consider it
+from the design stage,
+
+1331
+00:56:51,550 --> 00:56:54,730
+from the absolute get-go.
+
+1332
+00:56:54,730 --> 00:56:56,700
+And then, there's the
+other sorts of advice
+
+1333
+00:56:56,700 --> 00:56:59,810
+that you've heard just generally
+sprinkled through about testing
+
+1334
+00:56:59,810 --> 00:57:03,017
+things with a keyboard
+and stuff like that.
+
+1335
+00:57:03,017 --> 00:57:04,850
+SARAH LEWTHWAITE: I'd
+like to just interject
+
+1336
+00:57:04,850 --> 00:57:05,890
+a little bit of sociology.
+
+1337
+00:57:05,890 --> 00:57:07,431
+Because I know that
+part of the issue
+
+1338
+00:57:07,431 --> 00:57:09,920
+is that it has to be a team
+effort across your entire team.
+
+1339
+00:57:09,920 --> 00:57:13,630
+Some people are going to value
+accessibility more than others.
+
+1340
+00:57:13,630 --> 00:57:16,405
+And I think it's trying
+to position accessibility
+
+1341
+00:57:16,405 --> 00:57:19,240
+as part of a norm,
+which is understanding
+
+1342
+00:57:19,240 --> 00:57:21,200
+that disabled people
+aren't an out group.
+
+1343
+00:57:21,200 --> 00:57:22,920
+They're part of your in group.
+
+1344
+00:57:22,920 --> 00:57:27,760
+So at the moment, there's
+a term, aversive disablism.
+
+1345
+00:57:27,760 --> 00:57:30,080
+So most people believe
+they're quite liberal.
+
+1346
+00:57:30,080 --> 00:57:32,630
+They don't discriminate
+against disabled people.
+
+1347
+00:57:32,630 --> 00:57:35,672
+But if you're designing
+for your group,
+
+1348
+00:57:35,672 --> 00:57:37,630
+and that group doesn't
+include disabled people,
+
+1349
+00:57:37,630 --> 00:57:40,419
+then you might as well be
+making disablist judgments.
+
+1350
+00:57:40,419 --> 00:57:41,710
+Because you're still excluding.
+
+1351
+00:57:41,710 --> 00:57:43,001
+The outputs are still the same.
+
+1352
+00:57:43,001 --> 00:57:46,450
+So in that sense, it's
+important to sort of expand
+
+1353
+00:57:46,450 --> 00:57:48,850
+the concept of who
+a normal user is
+
+1354
+00:57:48,850 --> 00:57:53,669
+to include disabled
+people of who we know.
+
+1355
+00:57:53,669 --> 00:57:55,460
+CHRISTIAN HEILMANN:
+OK, we have to wrap up.
+
+1356
+00:57:55,460 --> 00:57:57,040
+So I have to thank the panel.
+
+1357
+00:57:57,040 --> 00:57:59,950
+And I am incredibly excited
+about all of your interest.
+
+1358
+00:57:59,950 --> 00:58:01,605
+Because having worked
+in accessibility
+
+1359
+00:58:01,605 --> 00:58:03,230
+and having to shout
+at people for years
+
+1360
+00:58:03,230 --> 00:58:05,342
+to consider
+accessibility, it's great
+
+1361
+00:58:05,342 --> 00:58:06,550
+that there's a new way there.
+
+1362
+00:58:06,550 --> 00:58:07,720
+It's kind of
+disheartening that we
+
+1363
+00:58:07,720 --> 00:58:09,366
+have to remind people
+about something.
+
+1364
+00:58:09,366 --> 00:58:10,740
+There seems to be
+a communication
+
+1365
+00:58:10,740 --> 00:58:14,820
+gap between the accessibility
+evangelists and the developers
+
+1366
+00:58:14,820 --> 00:58:15,440
+out there.
+
+1367
+00:58:15,440 --> 00:58:17,009
+And a lot of things
+can be repeated
+
+1368
+00:58:17,009 --> 00:58:18,300
+and have been said a few times.
+
+1369
+00:58:18,300 --> 00:58:19,910
+So I'm really happy about this.
+
+1370
+00:58:19,910 --> 00:58:23,140
+So take this idea, take this
+enthusiasm about it out there,
+
+1371
+00:58:23,140 --> 00:58:24,780
+and pester as many
+people as possible
+
+1372
+00:58:24,780 --> 00:58:26,730
+who know about accessibility.
+
+1373
+00:58:26,730 --> 00:58:30,700
+And if you get grumpy
+answers, as Patrick said,
+
+1374
+00:58:30,700 --> 00:58:31,780
+we're just people, too.
+
+1375
+00:58:31,780 --> 00:58:34,010
+So that just happens.
+
+1376
+00:58:34,010 --> 00:58:36,090
+So thanks very much again,
+and thanks everyone.
+
+1377
+00:58:36,090 --> 00:58:41,699
+[APPLAUSE]
+

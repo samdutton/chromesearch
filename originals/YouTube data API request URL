@@ -1,0 +1,3 @@
+http://gdata.youtube.com/feeds/api/videos?alt=json&q=%22EdgeConf+3%22&caption=true&v=2&fields=openSearch:totalResults,entry(id,title,yt:statistics,yt:location,gd:rating,yt:firstReleased,media:group(media:description))&prettyprint=true
+
+https://gdata.youtube.com/feeds/api/videos/G8_KsYkAsEQ?v=2&alt=json&prettyprint=true

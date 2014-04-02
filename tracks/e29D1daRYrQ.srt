@@ -1,0 +1,7538 @@
+1
+00:00:00,000 --> 00:00:08,174
+
+2
+00:00:08,174 --> 00:00:09,590
+DAN APPELQUIST: Thank you, Andrew.
+
+3
+00:00:09,590 --> 00:00:10,690
+Is this thing on?
+
+4
+00:00:10,690 --> 00:00:11,190
+Yeah?
+
+5
+00:00:11,190 --> 00:00:12,350
+OK, good.
+
+6
+00:00:12,350 --> 00:00:13,830
+Hi there.
+
+7
+00:00:13,830 --> 00:00:17,001
+We are the warm up act
+for Jake Archibald.
+
+8
+00:00:17,001 --> 00:00:19,110
+[LAUGHTER]
+
+9
+00:00:19,110 --> 00:00:21,730
+And we're going to be
+talking about components &mdash;
+
+10
+00:00:21,730 --> 00:00:22,991
+which is OK, by the way.
+
+11
+00:00:22,991 --> 00:00:23,490
+That's fine.
+
+12
+00:00:23,490 --> 00:00:24,790
+I'm good with that.
+
+13
+00:00:24,790 --> 00:00:26,389
+So my name's Dan.
+
+14
+00:00:26,389 --> 00:00:28,180
+I'm just going to
+briefly introduce people,
+
+15
+00:00:28,180 --> 00:00:31,259
+and then we're going
+to have a brief talk,
+
+16
+00:00:31,259 --> 00:00:32,759
+and then we're going
+to get into it.
+
+17
+00:00:32,759 --> 00:00:36,020
+So my name's Dan Appelquist.
+
+18
+00:00:36,020 --> 00:00:39,570
+I work for Telefonica, and I
+do Firefox stuff, Firefox OS.
+
+19
+00:00:39,570 --> 00:00:42,410
+And I co-chair
+something called the TAG
+
+20
+00:00:42,410 --> 00:00:45,270
+in W3C, which is kind of the
+technical architecture steering
+
+21
+00:00:45,270 --> 00:00:48,200
+board for W3C.
+
+22
+00:00:48,200 --> 00:00:52,040
+On our panel today, we have
+a panoply of stars here.
+
+23
+00:00:52,040 --> 00:00:55,830
+We have Nicole Sullivan
+from Pivotal Labs, who
+
+24
+00:00:55,830 --> 00:00:59,030
+is a proponent of
+component based systems.
+
+25
+00:00:59,030 --> 00:01:01,580
+And she's the creator of Object
+Oriented CSS, Type-o-matic,
+
+26
+00:01:01,580 --> 00:01:02,820
+and CSS Lint.
+
+27
+00:01:02,820 --> 00:01:06,670
+We have Alex
+Komoroske from Google,
+
+28
+00:01:06,670 --> 00:01:10,900
+who's product manager
+on Blink and Polymer.
+
+29
+00:01:10,900 --> 00:01:15,380
+We have Pete Hunt from
+Instagram slash Facebook,
+
+30
+00:01:15,380 --> 00:01:18,000
+member of the React core team.
+
+31
+00:01:18,000 --> 00:01:21,750
+We have Soledad
+Penades from Mozilla,
+
+32
+00:01:21,750 --> 00:01:26,460
+who's working on things like
+Mortar, Brick, and X-Tag.
+
+33
+00:01:26,460 --> 00:01:32,670
+We have Peter Gasston, who
+is a creative technologist
+
+34
+00:01:32,670 --> 00:01:36,400
+and an author and speaks
+about Web Components.
+
+35
+00:01:36,400 --> 00:01:38,234
+And we're going to hear
+him speak right now.
+
+36
+00:01:38,234 --> 00:01:39,608
+So without further
+ado, I'm going
+
+37
+00:01:39,608 --> 00:01:41,590
+to ask him to come give
+a kind of intro talk.
+
+38
+00:01:41,590 --> 00:01:42,800
+Tell us about components.
+
+39
+00:01:42,800 --> 00:01:44,258
+PETER GASSTON:
+Thank you very much.
+
+40
+00:01:44,258 --> 00:01:48,779
+
+41
+00:01:48,779 --> 00:01:50,070
+Better log in first, excuse me.
+
+42
+00:01:50,070 --> 00:01:55,880
+
+43
+00:01:55,880 --> 00:01:56,970
+And my screen is locked.
+
+44
+00:01:56,970 --> 00:01:57,532
+Embarrassing.
+
+45
+00:01:57,532 --> 00:01:58,990
+But I can get over
+it, don't worry.
+
+46
+00:01:58,990 --> 00:01:59,800
+I'm a professional.
+
+47
+00:01:59,800 --> 00:02:01,080
+I've done this
+thousands of times
+
+48
+00:02:01,080 --> 00:02:02,913
+before, stood up here
+and embarrassed myself
+
+49
+00:02:02,913 --> 00:02:06,010
+thousands of times before.
+
+50
+00:02:06,010 --> 00:02:06,510
+Thanks.
+
+51
+00:02:06,510 --> 00:02:07,220
+So good morning.
+
+52
+00:02:07,220 --> 00:02:11,506
+I'm here to do a quick
+talk about introducing
+
+53
+00:02:11,506 --> 00:02:12,130
+Web Components.
+
+54
+00:02:12,130 --> 00:02:13,190
+I know some of you
+know them already.
+
+55
+00:02:13,190 --> 00:02:15,830
+But I want to kind of give a
+little overview for everybody
+
+56
+00:02:15,830 --> 00:02:18,890
+about basically the why,
+the how, and the when
+
+57
+00:02:18,890 --> 00:02:20,530
+of Web Components.
+
+58
+00:02:20,530 --> 00:02:21,760
+Don't use that hashtag.
+
+59
+00:02:21,760 --> 00:02:23,390
+Oh no, that is
+the right hashtag.
+
+60
+00:02:23,390 --> 00:02:24,380
+I corrected it.
+
+61
+00:02:24,380 --> 00:02:25,580
+Do use that hashtag.
+
+62
+00:02:25,580 --> 00:02:26,205
+I corrected it.
+
+63
+00:02:26,205 --> 00:02:26,980
+It's OK.
+
+64
+00:02:26,980 --> 00:02:28,060
+My name is Peter Gasston.
+
+65
+00:02:28,060 --> 00:02:29,280
+I tweet @stopsatgreen.
+
+66
+00:02:29,280 --> 00:02:31,120
+I write for broken-links.com.
+
+67
+00:02:31,120 --> 00:02:33,090
+And I'm a technologist
+and front end
+
+68
+00:02:33,090 --> 00:02:36,390
+lead, which is a very cumbersome
+job title, for an agency
+
+69
+00:02:36,390 --> 00:02:37,050
+here in London.
+
+70
+00:02:37,050 --> 00:02:40,560
+So it's kind of my job to
+look at new and future web
+
+71
+00:02:40,560 --> 00:02:43,654
+technologies and evaluate them,
+and see when we can use them.
+
+72
+00:02:43,654 --> 00:02:46,070
+And one of the things I'm most
+excited about at the moment
+
+73
+00:02:46,070 --> 00:02:47,250
+is Web Components.
+
+74
+00:02:47,250 --> 00:02:50,280
+So I'll be very much playing
+the role of the excited everyman
+
+75
+00:02:50,280 --> 00:02:54,560
+developer in this panel
+of stars we've got here.
+
+76
+00:02:54,560 --> 00:02:57,120
+Ever since we've been
+developing for the web,
+
+77
+00:02:57,120 --> 00:03:00,269
+we've been copying
+other people's stuff.
+
+78
+00:03:00,269 --> 00:03:01,310
+There's no shame in that.
+
+79
+00:03:01,310 --> 00:03:02,440
+That's how the web kind of grew.
+
+80
+00:03:02,440 --> 00:03:03,730
+That's how everybody
+got their knowledge.
+
+81
+00:03:03,730 --> 00:03:05,479
+I learned by copying
+other people's stuff.
+
+82
+00:03:05,479 --> 00:03:07,180
+I'm sure most of you
+did here, as well.
+
+83
+00:03:07,180 --> 00:03:10,150
+The View Page Source is one
+of the finest inventions
+
+84
+00:03:10,150 --> 00:03:10,650
+of the web.
+
+85
+00:03:10,650 --> 00:03:12,950
+Well done to the original
+early browser makers
+
+86
+00:03:12,950 --> 00:03:15,930
+for making that possible for us.
+
+87
+00:03:15,930 --> 00:03:17,520
+But as we've done
+that, it's kind of
+
+88
+00:03:17,520 --> 00:03:19,750
+become quite cumbersome to
+copy other people's stuff.
+
+89
+00:03:19,750 --> 00:03:22,939
+It used to be we'd nick a
+little line of code here
+
+90
+00:03:22,939 --> 00:03:23,980
+and a line of code there.
+
+91
+00:03:23,980 --> 00:03:25,800
+But then it just gets bigger
+and bigger and more and more
+
+92
+00:03:25,800 --> 00:03:27,220
+involved to actually do that.
+
+93
+00:03:27,220 --> 00:03:29,219
+But we still want to reuse
+other people's stuff.
+
+94
+00:03:29,219 --> 00:03:31,810
+And we want to reuse our own
+stuff across our own websites,
+
+95
+00:03:31,810 --> 00:03:33,800
+as well.
+
+96
+00:03:33,800 --> 00:03:36,200
+Some of the early efforts
+at making this copying
+
+97
+00:03:36,200 --> 00:03:39,260
+and sharing easy
+were Java applets.
+
+98
+00:03:39,260 --> 00:03:41,410
+If anybody developed for
+the web over 10 years ago,
+
+99
+00:03:41,410 --> 00:03:42,910
+there's a very,
+very good chance you
+
+100
+00:03:42,910 --> 00:03:44,870
+had a photograph of
+a house on a lake
+
+101
+00:03:44,870 --> 00:03:47,160
+with a rippling
+lake underneath it.
+
+102
+00:03:47,160 --> 00:03:49,130
+That would have been
+made with a Java applet.
+
+103
+00:03:49,130 --> 00:03:50,630
+And then we had
+Dynamic Drive, which
+
+104
+00:03:50,630 --> 00:03:52,460
+was the best place to
+go to if you wanted
+
+105
+00:03:52,460 --> 00:03:55,777
+animated stars to follow
+your mouse around the window.
+
+106
+00:03:55,777 --> 00:03:58,360
+But we started becoming kind of
+more professional with the way
+
+107
+00:03:58,360 --> 00:03:59,776
+that we wrote our
+code afterwards,
+
+108
+00:03:59,776 --> 00:04:01,980
+to make it more shareable,
+to make it more reusable.
+
+109
+00:04:01,980 --> 00:04:05,500
+We had fantastic efforts like
+Nicole's Object Oriented CSS,
+
+110
+00:04:05,500 --> 00:04:08,342
+which has become
+very, very popular.
+
+111
+00:04:08,342 --> 00:04:09,300
+Loads of people use it.
+
+112
+00:04:09,300 --> 00:04:10,716
+And it's been even
+more formalized
+
+113
+00:04:10,716 --> 00:04:16,140
+into things like BEM, languages
+or protocols like BEM.
+
+114
+00:04:16,140 --> 00:04:17,640
+And in terms of
+other sharing, we've
+
+115
+00:04:17,640 --> 00:04:21,610
+even had kind of whole
+UI elements, libraries,
+
+116
+00:04:21,610 --> 00:04:25,110
+grow up, to enable
+us to stop having
+
+117
+00:04:25,110 --> 00:04:27,390
+to code our own
+carousel 5,000 times
+
+118
+00:04:27,390 --> 00:04:30,660
+and instead copy the
+carousels of other people.
+
+119
+00:04:30,660 --> 00:04:34,145
+Efforts like jQuery UI and,
+more recently, Bootstrap
+
+120
+00:04:34,145 --> 00:04:35,270
+have enabled us to do that.
+
+121
+00:04:35,270 --> 00:04:38,820
+We write our code in a certain
+way, and things just happen.
+
+122
+00:04:38,820 --> 00:04:43,840
+And even bigger, much
+more powerful ways
+
+123
+00:04:43,840 --> 00:04:47,870
+of doing this power some of the
+biggest sites on the web today.
+
+124
+00:04:47,870 --> 00:04:49,930
+We're looking at
+things like React,
+
+125
+00:04:49,930 --> 00:04:51,930
+which is written by
+Facebook and Instagram,
+
+126
+00:04:51,930 --> 00:04:54,740
+who Pete here is going to
+talk about later today,
+
+127
+00:04:54,740 --> 00:04:56,441
+and fantastic hosts.
+
+128
+00:04:56,441 --> 00:04:58,940
+The Financial Times have their
+own version in Fruit Machine.
+
+129
+00:04:58,940 --> 00:05:01,560
+And these are kind of
+template constructors
+
+130
+00:05:01,560 --> 00:05:04,261
+you put in JavaScript, and it
+outputs all the code for you.
+
+131
+00:05:04,261 --> 00:05:05,760
+And you can power
+that through Node.
+
+132
+00:05:05,760 --> 00:05:07,680
+And you can build whole
+very, very powerful,
+
+133
+00:05:07,680 --> 00:05:10,430
+scalable systems, but just
+based on this idea of copying
+
+134
+00:05:10,430 --> 00:05:13,660
+and reusing other bits
+of code, other elements.
+
+135
+00:05:13,660 --> 00:05:17,640
+So Web Components is
+kind of a formalization
+
+136
+00:05:17,640 --> 00:05:18,472
+of all these ideas.
+
+137
+00:05:18,472 --> 00:05:20,680
+It's looked to all the things
+we've done in the past.
+
+138
+00:05:20,680 --> 00:05:22,960
+And it's kind of said, well,
+people want to do this.
+
+139
+00:05:22,960 --> 00:05:24,410
+Let's make a standard
+way of doing it.
+
+140
+00:05:24,410 --> 00:05:25,910
+Let's make an easier
+way of doing it
+
+141
+00:05:25,910 --> 00:05:28,580
+that hooks into the low level
+of the APIs, of the browsers,
+
+142
+00:05:28,580 --> 00:05:30,650
+and makes this much,
+much easier to do.
+
+143
+00:05:30,650 --> 00:05:33,310
+So where the goal
+is reusability,
+
+144
+00:05:33,310 --> 00:05:37,200
+the answer is Web Components.
+
+145
+00:05:37,200 --> 00:05:42,432
+There are three core
+parts to Web Components.
+
+146
+00:05:42,432 --> 00:05:43,390
+Sorry, beg your pardon.
+
+147
+00:05:43,390 --> 00:05:46,275
+
+148
+00:05:46,275 --> 00:05:47,620
+Let me gather my thoughts.
+
+149
+00:05:47,620 --> 00:05:49,286
+There are three parts
+to Web Components.
+
+150
+00:05:49,286 --> 00:05:51,756
+The first is what are
+known as custom elements.
+
+151
+00:05:51,756 --> 00:05:53,380
+When I first read
+about Web Components,
+
+152
+00:05:53,380 --> 00:05:55,300
+I thought they were more
+of a background thing.
+
+153
+00:05:55,300 --> 00:05:57,716
+And Shadow DOM was the big
+thing that everybody was really
+
+154
+00:05:57,716 --> 00:05:58,450
+talking about.
+
+155
+00:05:58,450 --> 00:06:00,200
+But in fact, as I see
+it, as I look at it,
+
+156
+00:06:00,200 --> 00:06:01,760
+custom elements
+are Web Components.
+
+157
+00:06:01,760 --> 00:06:02,760
+They are the core thing.
+
+158
+00:06:02,760 --> 00:06:05,440
+Without anything else, custom
+elements are the bit we really,
+
+159
+00:06:05,440 --> 00:06:06,910
+really want to use.
+
+160
+00:06:06,910 --> 00:06:08,490
+The idea behind
+custom elements is
+
+161
+00:06:08,490 --> 00:06:10,987
+that basically
+everything is an element.
+
+162
+00:06:10,987 --> 00:06:13,070
+Everything we do and
+everything we have on the web
+
+163
+00:06:13,070 --> 00:06:13,653
+is an element.
+
+164
+00:06:13,653 --> 00:06:16,090
+That's a core thing that drives
+the Polymer project, which
+
+165
+00:06:16,090 --> 00:06:17,756
+I'm going to talk
+about in a little bit,
+
+166
+00:06:17,756 --> 00:06:20,520
+but custom elements themselves.
+
+167
+00:06:20,520 --> 00:06:23,277
+For a long time, we've
+had elements like image.
+
+168
+00:06:23,277 --> 00:06:25,360
+And if you provide a source
+to that image element,
+
+169
+00:06:25,360 --> 00:06:27,740
+it puts an image in
+the page at that point.
+
+170
+00:06:27,740 --> 00:06:29,760
+And we've had
+things like inputs.
+
+171
+00:06:29,760 --> 00:06:34,290
+If you say, input type=range,
+it outputs for you a UI element
+
+172
+00:06:34,290 --> 00:06:37,130
+in a consistent way across
+all the different browsers.
+
+173
+00:06:37,130 --> 00:06:39,770
+So we want to do that.
+
+174
+00:06:39,770 --> 00:06:41,750
+We like having those
+consistent UI elements.
+
+175
+00:06:41,750 --> 00:06:42,990
+But why stop there?
+
+176
+00:06:42,990 --> 00:06:44,680
+Why not have everything
+be an element?
+
+177
+00:06:44,680 --> 00:06:46,800
+Everything we do all the
+time could be an element.
+
+178
+00:06:46,800 --> 00:06:49,400
+So why not have, for example,
+a Google Maps element?
+
+179
+00:06:49,400 --> 00:06:51,310
+You give it a latitude
+and a longitude,
+
+180
+00:06:51,310 --> 00:06:54,030
+and it outputs a Google map
+into your page at that point.
+
+181
+00:06:54,030 --> 00:06:56,220
+Why not extend
+existing elements?
+
+182
+00:06:56,220 --> 00:06:58,430
+So we can say the video
+element, which we generally
+
+183
+00:06:58,430 --> 00:07:01,470
+have in the page anyway, also
+accepts video camera input.
+
+184
+00:07:01,470 --> 00:07:04,800
+We extend it with WebRTC.
+
+185
+00:07:04,800 --> 00:07:07,192
+Why not have Ajax
+calls be elements?
+
+186
+00:07:07,192 --> 00:07:08,400
+Why not put them in the page?
+
+187
+00:07:08,400 --> 00:07:09,430
+We do that all the time.
+
+188
+00:07:09,430 --> 00:07:10,390
+We want those results.
+
+189
+00:07:10,390 --> 00:07:11,790
+We want to put those
+results in the page
+
+190
+00:07:11,790 --> 00:07:12,831
+at this consistent place.
+
+191
+00:07:12,831 --> 00:07:16,860
+So why not make this
+into an element, as well?
+
+192
+00:07:16,860 --> 00:07:20,730
+Creating a custom element
+is very, very simple.
+
+193
+00:07:20,730 --> 00:07:24,100
+You create a new
+prototype object.
+
+194
+00:07:24,100 --> 00:07:26,820
+You can add methods to it.
+
+195
+00:07:26,820 --> 00:07:29,246
+You then register those
+elements into the DOM
+
+196
+00:07:29,246 --> 00:07:30,620
+by giving it a
+unique name, which
+
+197
+00:07:30,620 --> 00:07:32,240
+has to be hyphenated
+like this to make
+
+198
+00:07:32,240 --> 00:07:36,770
+it compatible with current
+and future standardized HTML
+
+199
+00:07:36,770 --> 00:07:38,760
+elements.
+
+200
+00:07:38,760 --> 00:07:41,090
+And then you just tell it
+which prototype to use.
+
+201
+00:07:41,090 --> 00:07:42,410
+And that's basically it.
+
+202
+00:07:42,410 --> 00:07:43,800
+You've registered the
+element with the DOM.
+
+203
+00:07:43,800 --> 00:07:44,520
+You've given it some methods.
+
+204
+00:07:44,520 --> 00:07:45,853
+You've given it some properties.
+
+205
+00:07:45,853 --> 00:07:47,806
+And then you can just
+include it in your page.
+
+206
+00:07:47,806 --> 00:07:49,180
+So you can do
+anything with that.
+
+207
+00:07:49,180 --> 00:07:50,920
+That's exceptionally,
+exceptionally powerful.
+
+208
+00:07:50,920 --> 00:07:52,461
+All of those things
+I just showed you
+
+209
+00:07:52,461 --> 00:07:54,970
+before &mdash; Google Maps, the
+Ajax calls, the videos &mdash;
+
+210
+00:07:54,970 --> 00:07:58,780
+they all start by
+basically doing this.
+
+211
+00:07:58,780 --> 00:08:01,300
+But once you've
+written this, that's
+
+212
+00:08:01,300 --> 00:08:04,670
+kind of nice that you've
+attached all these properties
+
+213
+00:08:04,670 --> 00:08:05,910
+to this element.
+
+214
+00:08:05,910 --> 00:08:07,000
+But then you want to
+share that element.
+
+215
+00:08:07,000 --> 00:08:08,708
+You want to make it
+shareable everywhere.
+
+216
+00:08:08,708 --> 00:08:12,130
+So that's where the second part
+of Web Components comes in.
+
+217
+00:08:12,130 --> 00:08:13,505
+These are called HTML imports.
+
+218
+00:08:13,505 --> 00:08:14,981
+And they are simplicity itself.
+
+219
+00:08:14,981 --> 00:08:16,855
+They're just like
+including a JavaScript file
+
+220
+00:08:16,855 --> 00:08:19,580
+or referring to an
+external CSS file.
+
+221
+00:08:19,580 --> 00:08:21,620
+But it's using snippets
+of HTML markup,
+
+222
+00:08:21,620 --> 00:08:25,890
+hopefully with all your
+attached behaviors.
+
+223
+00:08:25,890 --> 00:08:28,740
+So you put a new link
+element in the head,
+
+224
+00:08:28,740 --> 00:08:32,409
+you say it's an import link,
+and you give it an href.
+
+225
+00:08:32,409 --> 00:08:34,600
+And then that allows you
+to take your custom element
+
+226
+00:08:34,600 --> 00:08:37,383
+and apply it to all of
+the pages on your site.
+
+227
+00:08:37,383 --> 00:08:38,799
+But more than that,
+it also allows
+
+228
+00:08:38,799 --> 00:08:40,507
+people to take that
+same code that you've
+
+229
+00:08:40,507 --> 00:08:43,470
+written, that same import,
+that same snippet file,
+
+230
+00:08:43,470 --> 00:08:45,930
+and apply it across
+all their sites, too.
+
+231
+00:08:45,930 --> 00:08:48,390
+So it's immensely reusable,
+which is really, really cool.
+
+232
+00:08:48,390 --> 00:08:53,670
+The final core part of web
+components is the Shadow DOM.
+
+233
+00:08:53,670 --> 00:08:57,320
+Shadow DOM is not vital
+to Web Components,
+
+234
+00:08:57,320 --> 00:09:00,400
+but it makes them really,
+really nice and useful.
+
+235
+00:09:00,400 --> 00:09:02,482
+And it actually
+exists right now.
+
+236
+00:09:02,482 --> 00:09:04,190
+Many of you might have
+seen this already.
+
+237
+00:09:04,190 --> 00:09:06,500
+If you open up
+Chrome, and I think
+
+238
+00:09:06,500 --> 00:09:09,960
+it's even in Safari still, and
+you choose the Show Shadow DOM
+
+239
+00:09:09,960 --> 00:09:13,210
+option, you can see the markup
+inside these UI elements
+
+240
+00:09:13,210 --> 00:09:14,160
+that we use.
+
+241
+00:09:14,160 --> 00:09:16,252
+For example, if you have
+an input type=range,
+
+242
+00:09:16,252 --> 00:09:17,710
+if you view the
+Shadow DOM of that,
+
+243
+00:09:17,710 --> 00:09:20,230
+you can see it's actually
+built of other elements.
+
+244
+00:09:20,230 --> 00:09:21,810
+They're just not
+exposed to the user.
+
+245
+00:09:21,810 --> 00:09:23,607
+They're hidden inside that.
+
+246
+00:09:23,607 --> 00:09:24,940
+And that's what a Shadow DOM is.
+
+247
+00:09:24,940 --> 00:09:26,356
+It's the DOM inside
+the DOM that's
+
+248
+00:09:26,356 --> 00:09:29,290
+hidden from the user
+in most [? instances ?]
+
+249
+00:09:29,290 --> 00:09:34,830
+that kind of powers the
+simplicity of the element.
+
+250
+00:09:34,830 --> 00:09:36,470
+There are also a
+few things which
+
+251
+00:09:36,470 --> 00:09:39,350
+aren't part of the
+Web Components spec
+
+252
+00:09:39,350 --> 00:09:42,060
+but are related to it and make
+it way, way more extensible
+
+253
+00:09:42,060 --> 00:09:44,390
+and useful, one of them
+being the template element,
+
+254
+00:09:44,390 --> 00:09:48,450
+which allows you to drop
+markup into your document
+
+255
+00:09:48,450 --> 00:09:52,310
+and not have it rendered
+until you explicitly
+
+256
+00:09:52,310 --> 00:09:53,910
+tell the browser to render it.
+
+257
+00:09:53,910 --> 00:09:56,470
+We have mutation
+observers, which
+
+258
+00:09:56,470 --> 00:10:00,070
+look for changes in the DOM and
+fire an event when they happen.
+
+259
+00:10:00,070 --> 00:10:03,240
+And we have scoped styles, which
+allow you to apply CSS only
+
+260
+00:10:03,240 --> 00:10:05,830
+to specific elements, as opposed
+to being globally scoped,
+
+261
+00:10:05,830 --> 00:10:07,500
+as they are at the moment.
+
+262
+00:10:07,500 --> 00:10:08,860
+So who's on board at the moment?
+
+263
+00:10:08,860 --> 00:10:11,770
+Most of the work is
+being done in Chrome.
+
+264
+00:10:11,770 --> 00:10:14,430
+If you look in Chrome
+nightly or the Dev channel,
+
+265
+00:10:14,430 --> 00:10:16,180
+there's a lot of this
+stuff that maybe you
+
+266
+00:10:16,180 --> 00:10:18,620
+have to enable it through
+flags, but it's all in there.
+
+267
+00:10:18,620 --> 00:10:21,710
+Because of that, a lot of it
+comes into Opera, naturally,
+
+268
+00:10:21,710 --> 00:10:25,840
+as well, as they're based
+on the same Blink engine.
+
+269
+00:10:25,840 --> 00:10:28,192
+Firefox is doing an awful
+lot of work in this, as well.
+
+270
+00:10:28,192 --> 00:10:29,400
+Custom elements are in there.
+
+271
+00:10:29,400 --> 00:10:31,233
+I know they're working
+heavily on the Shadow
+
+272
+00:10:31,233 --> 00:10:32,570
+DOM and the rest of the suite.
+
+273
+00:10:32,570 --> 00:10:34,670
+Microsoft we're not sure
+about at the moment.
+
+274
+00:10:34,670 --> 00:10:36,750
+But I think the signs are good.
+
+275
+00:10:36,750 --> 00:10:39,080
+Because they're involved
+in some of the extra stuff,
+
+276
+00:10:39,080 --> 00:10:40,660
+like mutation observers.
+
+277
+00:10:40,660 --> 00:10:42,630
+And also, they've
+got history in this.
+
+278
+00:10:42,630 --> 00:10:44,810
+Internet Explorer 5
+actually had this thing
+
+279
+00:10:44,810 --> 00:10:47,990
+called HTML Components, which
+is really similar to what
+
+280
+00:10:47,990 --> 00:10:49,650
+Web Components do nowadays.
+
+281
+00:10:49,650 --> 00:10:51,160
+So in this case,
+Microsoft is sort
+
+282
+00:10:51,160 --> 00:10:54,377
+of the proto-hipsters of
+the web component scene.
+
+283
+00:10:54,377 --> 00:10:55,840
+[CHUCKLING]
+
+284
+00:10:55,840 --> 00:10:58,730
+Finally, there's Safari.
+
+285
+00:10:58,730 --> 00:11:00,705
+And really, who knows?
+
+286
+00:11:00,705 --> 00:11:02,040
+[LAUGHTER]
+
+287
+00:11:02,040 --> 00:11:05,580
+If you want to use them today,
+you've got two main choices.
+
+288
+00:11:05,580 --> 00:11:08,709
+There's these two libraries
+called Polymer and X-Tags.
+
+289
+00:11:08,709 --> 00:11:11,000
+They're both public, but
+one's kind of driven by Google
+
+290
+00:11:11,000 --> 00:11:13,570
+and one kind of
+driven by Mozilla.
+
+291
+00:11:13,570 --> 00:11:15,090
+Polymer has its
+Polymer Core, which
+
+292
+00:11:15,090 --> 00:11:16,490
+is where you do
+the registration.
+
+293
+00:11:16,490 --> 00:11:18,570
+X-Tags has its X-Tag Core.
+
+294
+00:11:18,570 --> 00:11:21,790
+Polymer has a set of
+UI elements on top.
+
+295
+00:11:21,790 --> 00:11:24,940
+And X-Tags have Brick,
+which do the same job.
+
+296
+00:11:24,940 --> 00:11:27,560
+And they both share this
+platform underneath.
+
+297
+00:11:27,560 --> 00:11:29,660
+They both use the same
+platform to polyfill
+
+298
+00:11:29,660 --> 00:11:32,594
+where these things are
+not present natively,
+
+299
+00:11:32,594 --> 00:11:34,760
+which is really, really
+good and makes it &mdash; the fact
+
+300
+00:11:34,760 --> 00:11:36,250
+that, whether you
+choose one or the other,
+
+301
+00:11:36,250 --> 00:11:38,340
+you're still working
+into the same code base
+
+302
+00:11:38,340 --> 00:11:42,470
+underneath, which is really
+helpful for moving forward.
+
+303
+00:11:42,470 --> 00:11:45,300
+The outcome that we get from
+this is meaningful markup.
+
+304
+00:11:45,300 --> 00:11:46,889
+We get reusable elements.
+
+305
+00:11:46,889 --> 00:11:49,430
+And hopefully in the future,
+who knows, even a consistent UI.
+
+306
+00:11:49,430 --> 00:11:51,370
+Maybe the web could
+have a consistent UI
+
+307
+00:11:51,370 --> 00:11:52,882
+like native apps have.
+
+308
+00:11:52,882 --> 00:11:55,090
+That might be something that
+we want to move towards,
+
+309
+00:11:55,090 --> 00:11:56,310
+to make it easier for people.
+
+310
+00:11:56,310 --> 00:11:59,460
+So we can stop reinventing the
+wheel on every site we build.
+
+311
+00:11:59,460 --> 00:12:02,080
+The challenges are,
+to put it politely,
+
+312
+00:12:02,080 --> 00:12:04,390
+a proliferation of crap.
+
+313
+00:12:04,390 --> 00:12:06,070
+If we let people
+create their own stuff,
+
+314
+00:12:06,070 --> 00:12:07,819
+they're going to create
+some crappy stuff.
+
+315
+00:12:07,819 --> 00:12:09,700
+But that's not a
+reason to move on.
+
+316
+00:12:09,700 --> 00:12:11,970
+That's not a reason to
+stop [? viewing ?] them.
+
+317
+00:12:11,970 --> 00:12:14,170
+And performance, people
+have flagged performance,
+
+318
+00:12:14,170 --> 00:12:16,214
+accessibility, and
+internationalization.
+
+319
+00:12:16,214 --> 00:12:17,630
+And those are all
+the things we're
+
+320
+00:12:17,630 --> 00:12:18,713
+going to talk about today.
+
+321
+00:12:18,713 --> 00:12:21,270
+So Web Components are the
+future, for better or worse.
+
+322
+00:12:21,270 --> 00:12:22,578
+Thank you.
+
+323
+00:12:22,578 --> 00:12:30,250
+[APPLAUSE]
+
+324
+00:12:30,250 --> 00:12:37,400
+DAN APPELQUIST: OK, so, given
+our &mdash; thank you, first of all,
+
+325
+00:12:37,400 --> 00:12:39,779
+for that intro.
+
+326
+00:12:39,779 --> 00:12:41,570
+I think that gives us
+a lot to think about.
+
+327
+00:12:41,570 --> 00:12:46,340
+And I think it nicely intros
+us to our first questioner.
+
+328
+00:12:46,340 --> 00:12:52,450
+I'm going to ask Yoav
+Weiss to stand up,
+
+329
+00:12:52,450 --> 00:12:55,000
+hopefully &mdash; yes,
+thank you &mdash; and to ask
+
+330
+00:12:55,000 --> 00:12:57,510
+the first question of the day.
+
+331
+00:12:57,510 --> 00:12:58,700
+YOAV WEISS: Hi.
+
+332
+00:12:58,700 --> 00:13:01,620
+We're all aiming towards
+better page load times.
+
+333
+00:13:01,620 --> 00:13:04,180
+HTML imports can
+include other imports.
+
+334
+00:13:04,180 --> 00:13:08,220
+ES6 modules can
+include other modules.
+
+335
+00:13:08,220 --> 00:13:11,210
+To what extent does
+using components
+
+336
+00:13:11,210 --> 00:13:15,789
+break web performance
+by breaking parallelism?
+
+337
+00:13:15,789 --> 00:13:17,580
+DAN APPELQUIST: So
+performance immediately.
+
+338
+00:13:17,580 --> 00:13:27,730
+So let's, first of all, I'd like
+to ask Pete to maybe, as you're
+
+339
+00:13:27,730 --> 00:13:31,970
+a company that has a strong
+emphasis on page performance
+
+340
+00:13:31,970 --> 00:13:33,846
+and on performance,
+what's your view on that?
+
+341
+00:13:33,846 --> 00:13:36,136
+PETE HUNT: You want to just
+get the trolling out early?
+
+342
+00:13:36,136 --> 00:13:37,977
+DAN APPELQUIST:
+Yeah, basically, yes.
+
+343
+00:13:37,977 --> 00:13:39,560
+PETE HUNT: Well, at
+Facebook, we found
+
+344
+00:13:39,560 --> 00:13:41,976
+that flexibility is the most
+important thing, that there's
+
+345
+00:13:41,976 --> 00:13:45,350
+not a silver bullet to
+initial page load performance.
+
+346
+00:13:45,350 --> 00:13:47,900
+You can actually improve
+page load performance
+
+347
+00:13:47,900 --> 00:13:49,340
+by deferring certain things.
+
+348
+00:13:49,340 --> 00:13:51,925
+So for example, we found that
+actually adding JavaScript
+
+349
+00:13:51,925 --> 00:13:54,320
+to the page can improve
+page load performance
+
+350
+00:13:54,320 --> 00:13:58,000
+if the JavaScript isn't driving
+an important part of the UI.
+
+351
+00:13:58,000 --> 00:14:00,911
+At the same time, we found that
+the raw kind of &mdash; if you want
+
+352
+00:14:00,911 --> 00:14:02,410
+to just say, what
+is the fastest way
+
+353
+00:14:02,410 --> 00:14:04,380
+to get a UI into
+the browser, it's
+
+354
+00:14:04,380 --> 00:14:06,250
+server-rendered HTML every time.
+
+355
+00:14:06,250 --> 00:14:09,770
+So for us, we're not going
+to adopt a system that
+
+356
+00:14:09,770 --> 00:14:12,950
+requires you to either server
+render or to client render.
+
+357
+00:14:12,950 --> 00:14:14,510
+I think that the
+trendy term for this
+
+358
+00:14:14,510 --> 00:14:16,330
+is called isomorphic JavaScript.
+
+359
+00:14:16,330 --> 00:14:19,290
+But every system
+that we have, we
+
+360
+00:14:19,290 --> 00:14:21,829
+need to make sure that
+we can choose where
+
+361
+00:14:21,829 --> 00:14:24,370
+on that spectrum do we want to
+server render or client render
+
+362
+00:14:24,370 --> 00:14:27,420
+and at which point do we want
+to push that data down the wire.
+
+363
+00:14:27,420 --> 00:14:29,820
+Which is one of my big
+concerns about Web Components,
+
+364
+00:14:29,820 --> 00:14:31,890
+because it's blocked on
+the JavaScript execution.
+
+365
+00:14:31,890 --> 00:14:33,924
+And it's tied tightly
+to the DOM APIs.
+
+366
+00:14:33,924 --> 00:14:35,840
+ALEX KOMOROSKE: So I
+want to go to that point.
+
+367
+00:14:35,840 --> 00:14:39,180
+So HTML imports, the top level
+import from the main document
+
+368
+00:14:39,180 --> 00:14:41,454
+does block rendering, just
+like a style sheet does.
+
+369
+00:14:41,454 --> 00:14:43,620
+There is an async attribute
+that you can use to say,
+
+370
+00:14:43,620 --> 00:14:45,110
+do not block anything.
+
+371
+00:14:45,110 --> 00:14:46,690
+And then within
+imports themselves,
+
+372
+00:14:46,690 --> 00:14:49,330
+which are not blocking the
+main page from executing
+
+373
+00:14:49,330 --> 00:14:51,770
+script or parsing,
+that kind of thing,
+
+374
+00:14:51,770 --> 00:14:54,060
+you might have a
+complex interdependency
+
+375
+00:14:54,060 --> 00:14:55,410
+of different things.
+
+376
+00:14:55,410 --> 00:14:59,110
+We found it's much better it's
+much easier to reason about
+
+377
+00:14:59,110 --> 00:15:03,750
+if you do block those
+contacts as you're
+
+378
+00:15:03,750 --> 00:15:05,010
+loading the other resources.
+
+379
+00:15:05,010 --> 00:15:06,540
+However, one thing
+to remember too
+
+380
+00:15:06,540 --> 00:15:09,270
+is that Web Components
+provides a set of new tools
+
+381
+00:15:09,270 --> 00:15:10,590
+that don't take away any tools.
+
+382
+00:15:10,590 --> 00:15:11,990
+So there's certain
+best practices
+
+383
+00:15:11,990 --> 00:15:13,904
+that we've discovered
+that will remain.
+
+384
+00:15:13,904 --> 00:15:15,820
+So for example, when
+you're doing development,
+
+385
+00:15:15,820 --> 00:15:18,194
+sure, you might want a bunch
+of different HTML components
+
+386
+00:15:18,194 --> 00:15:18,950
+in separate files.
+
+387
+00:15:18,950 --> 00:15:20,720
+But when you deploy
+a production,
+
+388
+00:15:20,720 --> 00:15:23,070
+you might want to compress
+those and minify those
+
+389
+00:15:23,070 --> 00:15:24,751
+into one resource.
+
+390
+00:15:24,751 --> 00:15:27,250
+We've also found that you can
+do a lot of interesting things
+
+391
+00:15:27,250 --> 00:15:32,610
+like using these tools and
+using async and some judicious
+
+392
+00:15:32,610 --> 00:15:33,669
+use of some of the stuff.
+
+393
+00:15:33,669 --> 00:15:36,210
+You could, for example, define
+a very simple component that's
+
+394
+00:15:36,210 --> 00:15:38,543
+just markup that's actually
+in the head of your document
+
+395
+00:15:38,543 --> 00:15:42,020
+so that it loads very
+quickly for the user,
+
+396
+00:15:42,020 --> 00:15:44,480
+and then load the
+more complex component
+
+397
+00:15:44,480 --> 00:15:46,770
+and use that after it loads.
+
+398
+00:15:46,770 --> 00:15:50,404
+PETE HUNT: Yeah, I'm actually &mdash;
+I think I like HTML imports.
+
+399
+00:15:50,404 --> 00:15:51,320
+They seem pretty good.
+
+400
+00:15:51,320 --> 00:15:52,694
+They seem like
+one of these tools
+
+401
+00:15:52,694 --> 00:15:55,341
+that you can use to shoot
+yourself in the foot or not.
+
+402
+00:15:55,341 --> 00:15:57,590
+ALEX KOMOROSKE: As with many
+tools in the [INAUDIBLE].
+
+403
+00:15:57,590 --> 00:15:58,450
+PETE HUNT: Yeah.
+
+404
+00:15:58,450 --> 00:16:01,580
+Like, that's a sign
+that it's a good tool.
+
+405
+00:16:01,580 --> 00:16:02,170
+ALEX KOMOROSKE: It can
+be a little bit dangerous
+
+406
+00:16:02,170 --> 00:16:02,460
+to make sure it's
+powerful enough.
+
+407
+00:16:02,460 --> 00:16:03,475
+NICOLE SULLIVAN: Do
+you mean that you
+
+408
+00:16:03,475 --> 00:16:05,570
+would have multiple versions
+of the same component
+
+409
+00:16:05,570 --> 00:16:07,037
+and load the simpler
+version first?
+
+410
+00:16:07,037 --> 00:16:09,370
+And then layer on a more
+complicated version after that?
+
+411
+00:16:09,370 --> 00:16:10,100
+ALEX KOMOROSKE: Again,
+it's extra tools.
+
+412
+00:16:10,100 --> 00:16:11,766
+And one thing that's
+interesting in this
+
+413
+00:16:11,766 --> 00:16:13,711
+is with these extra
+tools, we found today
+
+414
+00:16:13,711 --> 00:16:15,210
+on the web platform,
+we've got a set
+
+415
+00:16:15,210 --> 00:16:16,419
+of tools in the web platform.
+
+416
+00:16:16,419 --> 00:16:18,168
+Some of them are kind
+of janky and busted.
+
+417
+00:16:18,168 --> 00:16:19,380
+But they're what we've got.
+
+418
+00:16:19,380 --> 00:16:21,370
+We've added a few
+more tools on the end.
+
+419
+00:16:21,370 --> 00:16:24,240
+What I found is that we
+found a lot of best practices
+
+420
+00:16:24,240 --> 00:16:25,940
+today that we've all
+sort of discovered
+
+421
+00:16:25,940 --> 00:16:28,010
+using this set of
+tools that we've got.
+
+422
+00:16:28,010 --> 00:16:31,500
+And actually, adding a few
+new ones brings questions,
+
+423
+00:16:31,500 --> 00:16:33,590
+opens a possibility for
+different best practices
+
+424
+00:16:33,590 --> 00:16:35,220
+that are actually even better.
+
+425
+00:16:35,220 --> 00:16:36,200
+And one of the cool
+things about this
+
+426
+00:16:36,200 --> 00:16:37,885
+is I feel like, on the
+Polymer team and people
+
+427
+00:16:37,885 --> 00:16:39,315
+who are using
+Polymer and X-Tags,
+
+428
+00:16:39,315 --> 00:16:40,440
+we're kind of the pioneers.
+
+429
+00:16:40,440 --> 00:16:41,760
+We're discovering
+this stuff and saying,
+
+430
+00:16:41,760 --> 00:16:43,550
+oh my gosh, that's an
+interesting pattern that
+
+431
+00:16:43,550 --> 00:16:45,170
+looks really crazy
+before but actually
+
+432
+00:16:45,170 --> 00:16:46,557
+now makes a lot of sense.
+
+433
+00:16:46,557 --> 00:16:48,390
+So a number of folks
+have been experimenting
+
+434
+00:16:48,390 --> 00:16:49,729
+with that kind of stuff.
+
+435
+00:16:49,729 --> 00:16:52,270
+And we don't know what the best
+practices are for every case,
+
+436
+00:16:52,270 --> 00:16:52,970
+obviously.
+
+437
+00:16:52,970 --> 00:16:55,410
+DAN APPELQUIST: To come over
+to this side of the room,
+
+438
+00:16:55,410 --> 00:16:57,850
+first of all, I
+wanted to ask Soledad,
+
+439
+00:16:57,850 --> 00:17:01,235
+did you have a performance
+related comment?
+
+440
+00:17:01,235 --> 00:17:02,990
+SOLEDAD PENADES: I
+have to say, I mean,
+
+441
+00:17:02,990 --> 00:17:05,870
+when you need to acquire
+kind of a complicated UI,
+
+442
+00:17:05,870 --> 00:17:07,369
+maybe it's not the
+matter of a page.
+
+443
+00:17:07,369 --> 00:17:09,480
+You're going to be
+talking about an app.
+
+444
+00:17:09,480 --> 00:17:11,140
+You're in a different space.
+
+445
+00:17:11,140 --> 00:17:15,271
+I don't think you can really
+consider the same case.
+
+446
+00:17:15,271 --> 00:17:16,520
+I don't think it's equivalent.
+
+447
+00:17:16,520 --> 00:17:19,040
+It's like, I mean, it's
+talking about a different case,
+
+448
+00:17:19,040 --> 00:17:19,540
+I guess.
+
+449
+00:17:19,540 --> 00:17:22,980
+It's like a hybrid between
+an app and sharing content.
+
+450
+00:17:22,980 --> 00:17:26,278
+But the case we're having
+with components is many times,
+
+451
+00:17:26,278 --> 00:17:28,569
+you're building a complex
+app, like with UIs and stuff.
+
+452
+00:17:28,569 --> 00:17:30,360
+You really need to wait
+for the whole thing
+
+453
+00:17:30,360 --> 00:17:33,110
+to load before you can start.
+
+454
+00:17:33,110 --> 00:17:34,569
+It has to load.
+
+455
+00:17:34,569 --> 00:17:36,152
+You can optimize on
+everything, but it
+
+456
+00:17:36,152 --> 00:17:37,235
+has to load at some point.
+
+457
+00:17:37,235 --> 00:17:38,082
+You need to wait.
+
+458
+00:17:38,082 --> 00:17:40,040
+PETE HUNT: It's all about
+option value, though.
+
+459
+00:17:40,040 --> 00:17:41,915
+Like, we don't want to
+commit to a technology
+
+460
+00:17:41,915 --> 00:17:44,800
+where you have to say, these are
+my performance characteristics.
+
+461
+00:17:44,800 --> 00:17:48,432
+And the way that we're starting
+to think about initial page
+
+462
+00:17:48,432 --> 00:17:50,890
+load performance now is that
+when you open your Mac laptop,
+
+463
+00:17:50,890 --> 00:17:53,420
+or you open an app
+on an iOS device,
+
+464
+00:17:53,420 --> 00:17:56,290
+you see a static screen shot of
+the previous version of the UI
+
+465
+00:17:56,290 --> 00:17:58,175
+before the real UI
+actually initializes.
+
+466
+00:17:58,175 --> 00:18:00,800
+Now, wouldn't it be great if we
+could build all of our web apps
+
+467
+00:18:00,800 --> 00:18:01,300
+like that?
+
+468
+00:18:01,300 --> 00:18:02,750
+We could render
+it on the server,
+
+469
+00:18:02,750 --> 00:18:05,120
+send down a static HTML
+page that can be cached,
+
+470
+00:18:05,120 --> 00:18:06,720
+and reanimate it
+with JavaScript.
+
+471
+00:18:06,720 --> 00:18:07,310
+So I'm just &mdash;
+
+472
+00:18:07,310 --> 00:18:09,150
+DAN APPELQUIST: I hate that.
+
+473
+00:18:09,150 --> 00:18:10,060
+[LAUGHTER]
+
+474
+00:18:10,060 --> 00:18:12,280
+I would kill the web
+if that happened.
+
+475
+00:18:12,280 --> 00:18:14,166
+PETE HUNT: But you have
+the choice, though.
+
+476
+00:18:14,166 --> 00:18:15,290
+Would you want that choice?
+
+477
+00:18:15,290 --> 00:18:15,870
+ALEX KOMOROSKE: I
+think that's the point
+
+478
+00:18:15,870 --> 00:18:16,960
+is it's still up
+to the developers
+
+479
+00:18:16,960 --> 00:18:18,668
+to figure out how best
+to use these tools
+
+480
+00:18:18,668 --> 00:18:20,220
+for their particular uses.
+
+481
+00:18:20,220 --> 00:18:22,389
+PETER GASSTON: So
+can I say, as someone
+
+482
+00:18:22,389 --> 00:18:24,430
+who's not involved in the
+high level of creation,
+
+483
+00:18:24,430 --> 00:18:27,440
+I'm kind of an end user of them,
+for us, the choice often comes
+
+484
+00:18:27,440 --> 00:18:30,600
+down to, is it better
+than what we've got now?
+
+485
+00:18:30,600 --> 00:18:34,450
+So if we want to use something
+like jQuery UI or something,
+
+486
+00:18:34,450 --> 00:18:37,890
+or an existing UI
+library, do Web Components
+
+487
+00:18:37,890 --> 00:18:39,874
+make that faster or better?
+
+488
+00:18:39,874 --> 00:18:42,040
+I can't really tell that
+until we have them natively
+
+489
+00:18:42,040 --> 00:18:43,700
+and they're implemented.
+
+490
+00:18:43,700 --> 00:18:45,860
+Personally, I think
+they will be better.
+
+491
+00:18:45,860 --> 00:18:47,830
+But I can't really test
+that until we're all
+
+492
+00:18:47,830 --> 00:18:49,100
+finished and implemented.
+
+493
+00:18:49,100 --> 00:18:49,730
+ALEX KOMOROSKE: I
+want to come back
+
+494
+00:18:49,730 --> 00:18:51,563
+to the server side
+rendering point you made.
+
+495
+00:18:51,563 --> 00:18:53,360
+I know React has a
+mode where it sort
+
+496
+00:18:53,360 --> 00:18:56,830
+of ships down the
+rendered components
+
+497
+00:18:56,830 --> 00:18:58,410
+directly in the main body.
+
+498
+00:18:58,410 --> 00:19:01,290
+We actually have found &mdash;
+this is an example where
+
+499
+00:19:01,290 --> 00:19:04,630
+some people have explored
+going all Web Components.
+
+500
+00:19:04,630 --> 00:19:06,720
+Teams at Google who
+are prototyping on this
+
+501
+00:19:06,720 --> 00:19:08,210
+actually found &mdash;
+they were people
+
+502
+00:19:08,210 --> 00:19:10,293
+who were big proponents
+of server side rendering &mdash;
+
+503
+00:19:10,293 --> 00:19:12,120
+they actually
+found in some cases
+
+504
+00:19:12,120 --> 00:19:14,705
+that it was actually faster
+to just heavily cache
+
+505
+00:19:14,705 --> 00:19:18,990
+the components client side
+and then just ship down
+
+506
+00:19:18,990 --> 00:19:21,590
+the component based markup
+and have it inflate locally.
+
+507
+00:19:21,590 --> 00:19:23,110
+PETE HUNT: That's pretty similar
+to what we found, as well.
+
+508
+00:19:23,110 --> 00:19:24,440
+But we found that
+the best thing is
+
+509
+00:19:24,440 --> 00:19:25,981
+that you want some
+of your components
+
+510
+00:19:25,981 --> 00:19:28,620
+rendered server side, some
+of them rendered client side.
+
+511
+00:19:28,620 --> 00:19:29,740
+And choosing that mix.
+
+512
+00:19:29,740 --> 00:19:31,780
+NICOLE SULLIVAN: And does that
+depend on mobile, as well?
+
+513
+00:19:31,780 --> 00:19:32,970
+Because I think the
+rendering is going
+
+514
+00:19:32,970 --> 00:19:34,760
+to take a lot longer
+client side on mobile.
+
+515
+00:19:34,760 --> 00:19:34,820
+ALEX KOMOROSKE: Yeah.
+
+516
+00:19:34,820 --> 00:19:35,990
+The performance
+characteristics of how much
+
+517
+00:19:35,990 --> 00:19:38,360
+CPU you have on the machine,
+network speeds, latency,
+
+518
+00:19:38,360 --> 00:19:40,405
+that kind of stuff will
+definitely, I think,
+
+519
+00:19:40,405 --> 00:19:41,280
+impact your decision.
+
+520
+00:19:41,280 --> 00:19:44,880
+DAN APPELQUIST: Also, I
+wanted to open things up
+
+521
+00:19:44,880 --> 00:19:47,550
+to the audience here.
+
+522
+00:19:47,550 --> 00:19:48,955
+And I'm looking over to Andrew.
+
+523
+00:19:48,955 --> 00:19:52,374
+
+524
+00:19:52,374 --> 00:19:53,358
+ANDREW: We're good.
+
+525
+00:19:53,358 --> 00:19:54,342
+DAN APPELQUIST: OK.
+
+526
+00:19:54,342 --> 00:19:56,762
+[LAUGHTER]
+
+527
+00:19:56,762 --> 00:19:57,720
+Just want to make sure.
+
+528
+00:19:57,720 --> 00:20:00,022
+
+529
+00:20:00,022 --> 00:20:01,480
+ALEX KOMOROSKE:
+Another thing, too,
+
+530
+00:20:01,480 --> 00:20:03,813
+is that we found &mdash; again, the
+Polymer team in particular
+
+531
+00:20:03,813 --> 00:20:06,680
+is actually part of
+the larger Blink team.
+
+532
+00:20:06,680 --> 00:20:09,015
+So Polymer, the way I think
+of it is almost a means
+
+533
+00:20:09,015 --> 00:20:09,525
+to an ends.
+
+534
+00:20:09,525 --> 00:20:10,900
+And making sure
+that there's good
+
+535
+00:20:10,900 --> 00:20:12,965
+feedback going into the
+specification process.
+
+536
+00:20:12,965 --> 00:20:16,010
+Because it's very hard
+to design complex specs
+
+537
+00:20:16,010 --> 00:20:18,410
+in a room in the
+midst of a discussion.
+
+538
+00:20:18,410 --> 00:20:20,169
+But it's also, we're
+identifying use cases
+
+539
+00:20:20,169 --> 00:20:22,460
+that make a lot more sense
+in the Web Components world.
+
+540
+00:20:22,460 --> 00:20:24,672
+And we'll literally yell
+over and be like, hey, Adam,
+
+541
+00:20:24,672 --> 00:20:26,380
+this is something that
+we run into a lot.
+
+542
+00:20:26,380 --> 00:20:27,874
+This is a very common pattern.
+
+543
+00:20:27,874 --> 00:20:29,540
+And he'll say, oh
+yeah, we can actually,
+
+544
+00:20:29,540 --> 00:20:31,081
+if that pattern's
+going to be common,
+
+545
+00:20:31,081 --> 00:20:32,799
+we can do optimizations
+in the engine.
+
+546
+00:20:32,799 --> 00:20:34,340
+So I imagine in this
+new world you'll
+
+547
+00:20:34,340 --> 00:20:36,540
+see that different patterns
+become more common,
+
+548
+00:20:36,540 --> 00:20:39,170
+or things will be
+optimized by engines.
+
+549
+00:20:39,170 --> 00:20:40,920
+NICOLE SULLIVAN: It's
+sort of interesting,
+
+550
+00:20:40,920 --> 00:20:43,419
+though, because if you look at
+the UI libraries that are out
+
+551
+00:20:43,419 --> 00:20:48,280
+there, Bootstrap or jQuery UI
+or Object Oriented CSS, any
+
+552
+00:20:48,280 --> 00:20:51,370
+of them, they're solving the
+same 50 problems over and over
+
+553
+00:20:51,370 --> 00:20:51,960
+again.
+
+554
+00:20:51,960 --> 00:20:53,510
+So while I really
+like Web Components
+
+555
+00:20:53,510 --> 00:20:55,134
+and that you can do
+anything with them,
+
+556
+00:20:55,134 --> 00:20:56,780
+I think maybe the
+browser should have
+
+557
+00:20:56,780 --> 00:21:00,030
+solved those 50 things,
+like tabs and carousel
+
+558
+00:21:00,030 --> 00:21:02,900
+and some basic stuff that's
+on every site in the universe
+
+559
+00:21:02,900 --> 00:21:05,330
+so that we'd need zero
+JavaScript for those things.
+
+560
+00:21:05,330 --> 00:21:06,180
+PETE HUNT: That's actually
+a really good point.
+
+561
+00:21:06,180 --> 00:21:08,054
+DAN APPELQUIST: So we
+actually should move on
+
+562
+00:21:08,054 --> 00:21:09,039
+to the next topic.
+
+563
+00:21:09,039 --> 00:21:11,330
+ALEX KOMOROSKE: Oh, I really
+wanted to talk about that.
+
+564
+00:21:11,330 --> 00:21:14,360
+DAN APPELQUIST: Maybe you
+can bookmark that, save it,
+
+565
+00:21:14,360 --> 00:21:17,170
+and let's bring it to the
+rest of the discussion.
+
+566
+00:21:17,170 --> 00:21:23,849
+So next, I'm going to ask
+Jonathan Fielding to ask
+
+567
+00:21:23,849 --> 00:21:24,390
+his question.
+
+568
+00:21:24,390 --> 00:21:27,501
+
+569
+00:21:27,501 --> 00:21:29,750
+JONATHAN FIELDING: So how
+do components help or hinder
+
+570
+00:21:29,750 --> 00:21:31,140
+responsive design?
+
+571
+00:21:31,140 --> 00:21:34,460
+Given that many queries are
+often [INAUDIBLE] components,
+
+572
+00:21:34,460 --> 00:21:38,542
+how do components play well with
+responsive design approaches?
+
+573
+00:21:38,542 --> 00:21:41,950
+DAN APPELQUIST: OK, so I'm
+going to hand that one over
+
+574
+00:21:41,950 --> 00:21:43,050
+to Soledad first.
+
+575
+00:21:43,050 --> 00:21:44,012
+SOLEDAD PENADES: OK.
+
+576
+00:21:44,012 --> 00:21:45,470
+I've got mixed
+feelings about that.
+
+577
+00:21:45,470 --> 00:21:48,920
+I think that you shouldn't
+be building components
+
+578
+00:21:48,920 --> 00:21:52,516
+that know too much about the
+look and feel of the app.
+
+579
+00:21:52,516 --> 00:21:55,330
+That, I think, should be
+something from the outside.
+
+580
+00:21:55,330 --> 00:22:01,360
+Like, if you're [? inputing ?]
+your component with statics,
+
+581
+00:22:01,360 --> 00:22:03,280
+maybe you're doing it wrong.
+
+582
+00:22:03,280 --> 00:22:04,900
+It should be about
+functionality,
+
+583
+00:22:04,900 --> 00:22:05,810
+at least in my view.
+
+584
+00:22:05,810 --> 00:22:07,707
+And I think it's the
+view of everyone else.
+
+585
+00:22:07,707 --> 00:22:09,290
+I mean, if you have
+Shadow DOM and you
+
+586
+00:22:09,290 --> 00:22:12,340
+have a scoped CSS and
+things, you can't really
+
+587
+00:22:12,340 --> 00:22:15,280
+put too much look and
+feel inside the thing.
+
+588
+00:22:15,280 --> 00:22:17,697
+Because you want to be able
+to theme from outside and have
+
+589
+00:22:17,697 --> 00:22:18,863
+break points and everything.
+
+590
+00:22:18,863 --> 00:22:20,613
+So if you put everything
+into a component,
+
+591
+00:22:20,613 --> 00:22:22,113
+it's not going to
+be reusable, which
+
+592
+00:22:22,113 --> 00:22:23,230
+is what you are actually &mdash;
+
+593
+00:22:23,230 --> 00:22:23,900
+ALEX KOMOROSKE: And
+I think, actually,
+
+594
+00:22:23,900 --> 00:22:25,330
+there's cases where
+you don't want styling
+
+595
+00:22:25,330 --> 00:22:26,430
+or you don't want to be
+too [? opinionated. ?]
+
+596
+00:22:26,430 --> 00:22:28,360
+There are other cases, I think,
+where developers would love &mdash;
+
+597
+00:22:28,360 --> 00:22:30,520
+I think Bootstrap is a
+great example, where it's
+
+598
+00:22:30,520 --> 00:22:32,103
+a well designed set
+of things that you
+
+599
+00:22:32,103 --> 00:22:33,630
+can use that play
+together nicely.
+
+600
+00:22:33,630 --> 00:22:35,004
+And I think there's
+a lot of room
+
+601
+00:22:35,004 --> 00:22:37,500
+here for opinionated
+UI components.
+
+602
+00:22:37,500 --> 00:22:39,560
+But again, people can
+choose to use them,
+
+603
+00:22:39,560 --> 00:22:41,685
+or they can choose to do
+those different libraries.
+
+604
+00:22:41,685 --> 00:22:42,370
+But it's a tool.
+
+605
+00:22:42,370 --> 00:22:43,740
+And there's going to be a
+spectrum of uses, I think.
+
+606
+00:22:43,740 --> 00:22:45,531
+SOLEDAD PENADES: Yeah,
+but you can't really
+
+607
+00:22:45,531 --> 00:22:48,034
+put the whole set of break
+points inside the component.
+
+608
+00:22:48,034 --> 00:22:49,450
+It's just going
+to be, a component
+
+609
+00:22:49,450 --> 00:22:50,200
+works only for this page.
+
+610
+00:22:50,200 --> 00:22:52,449
+And it's not going to work
+for another set of designs.
+
+611
+00:22:52,449 --> 00:22:55,249
+That's why I suggest &mdash; I mean,
+it could be nice, good enough.
+
+612
+00:22:55,249 --> 00:22:56,790
+I mean, that's why
+we're doing Brick.
+
+613
+00:22:56,790 --> 00:22:59,826
+Make it look good enough
+so that it's not that ugly.
+
+614
+00:22:59,826 --> 00:23:03,460
+But don't try to assume things
+that people are going to want.
+
+615
+00:23:03,460 --> 00:23:04,580
+Make it decent.
+
+616
+00:23:04,580 --> 00:23:07,150
+PETER GASSTON: I think web
+components put a much stronger
+
+617
+00:23:07,150 --> 00:23:09,980
+onus onto the developer
+now than what's
+
+618
+00:23:09,980 --> 00:23:12,487
+been from the browser
+makers in the past.
+
+619
+00:23:12,487 --> 00:23:14,320
+People are going to
+start seeing how hard it
+
+620
+00:23:14,320 --> 00:23:16,492
+is to create, for
+example, a Select element,
+
+621
+00:23:16,492 --> 00:23:18,450
+and make it accessible,
+and make it responsive,
+
+622
+00:23:18,450 --> 00:23:20,385
+and make it work
+across platforms.
+
+623
+00:23:20,385 --> 00:23:22,990
+And we don't have these
+dedicated teams to do that.
+
+624
+00:23:22,990 --> 00:23:25,120
+We have to work this
+stuff out for ourselves.
+
+625
+00:23:25,120 --> 00:23:26,526
+We're going to see this
+a few more times in some
+
+626
+00:23:26,526 --> 00:23:27,960
+of the other topics we
+talk about, I think.
+
+627
+00:23:27,960 --> 00:23:29,630
+It's how much more
+of a burden that
+
+628
+00:23:29,630 --> 00:23:30,940
+becomes on us as developers.
+
+629
+00:23:30,940 --> 00:23:33,090
+But it's also a good
+responsibility, the fact
+
+630
+00:23:33,090 --> 00:23:35,217
+that we are shaping
+these things in the way
+
+631
+00:23:35,217 --> 00:23:37,800
+that we want to use them and we
+want them to be in the future.
+
+632
+00:23:37,800 --> 00:23:38,940
+ALEX KOMOROSKE:
+So you say burden,
+
+633
+00:23:38,940 --> 00:23:40,370
+I say it's empowering
+developers.
+
+634
+00:23:40,370 --> 00:23:42,900
+So to your point earlier,
+Nicole, you were talking about,
+
+635
+00:23:42,900 --> 00:23:46,500
+why don't we just ship carousel,
+spec carousel and ship it?
+
+636
+00:23:46,500 --> 00:23:48,990
+Before, web developers
+weren't on the same playing
+
+637
+00:23:48,990 --> 00:23:50,460
+field as browser vendors.
+
+638
+00:23:50,460 --> 00:23:53,210
+So we could implement some of
+these built-in controls using
+
+639
+00:23:53,210 --> 00:23:55,740
+things like Shadow DOM
+that you guys couldn't use.
+
+640
+00:23:55,740 --> 00:23:58,080
+And so one thing that we're
+excited about on the Polymer
+
+641
+00:23:58,080 --> 00:24:01,550
+team in particular is this idea
+that people can play around.
+
+642
+00:24:01,550 --> 00:24:04,680
+There's an [? X-desk ?] GIF that
+someone was sharing yesterday.
+
+643
+00:24:04,680 --> 00:24:05,910
+It's really cool.
+
+644
+00:24:05,910 --> 00:24:07,400
+I don't know if that should
+be standardized and shipped
+
+645
+00:24:07,400 --> 00:24:07,950
+in browsers.
+
+646
+00:24:07,950 --> 00:24:09,910
+But the cool thing is
+that people can use it,
+
+647
+00:24:09,910 --> 00:24:11,850
+and it feels just like
+a built-in element.
+
+648
+00:24:11,850 --> 00:24:13,650
+And if everyone agrees that
+those are the semantics
+
+649
+00:24:13,650 --> 00:24:15,358
+that we should use
+and everyone loves it,
+
+650
+00:24:15,358 --> 00:24:17,570
+maybe that is a target
+for standardization.
+
+651
+00:24:17,570 --> 00:24:21,290
+Because now developers are
+empowered to experiment
+
+652
+00:24:21,290 --> 00:24:23,809
+and to play around and
+explore using the same tools
+
+653
+00:24:23,809 --> 00:24:24,600
+that browsers have.
+
+654
+00:24:24,600 --> 00:24:25,770
+NICOLE SULLIVAN: But how
+frequently has someone
+
+655
+00:24:25,770 --> 00:24:28,460
+made a built-in element
+for picking some thing,
+
+656
+00:24:28,460 --> 00:24:30,700
+and in fact, on my mobile
+phone, it doesn't work?
+
+657
+00:24:30,700 --> 00:24:33,750
+Or in some other context
+that they haven't tested for.
+
+658
+00:24:33,750 --> 00:24:36,210
+Or they're really used
+to an Android browser,
+
+659
+00:24:36,210 --> 00:24:38,050
+and so they made it
+exactly mimic that.
+
+660
+00:24:38,050 --> 00:24:40,500
+And so then in
+whatever I'm using,
+
+661
+00:24:40,500 --> 00:24:42,520
+it feels weird and has
+this uncanny valley,
+
+662
+00:24:42,520 --> 00:24:44,660
+like it's sort of that
+thing, but it's not really
+
+663
+00:24:44,660 --> 00:24:45,570
+quite that thing.
+
+664
+00:24:45,570 --> 00:24:46,720
+PETE HUNT: Yeah,
+I think that this
+
+665
+00:24:46,720 --> 00:24:48,511
+is kind of what we were
+touching on earlier
+
+666
+00:24:48,511 --> 00:24:50,720
+and what I really wanted
+to jump in for, is
+
+667
+00:24:50,720 --> 00:24:52,790
+there's kind of two things
+where native apps are
+
+668
+00:24:52,790 --> 00:24:54,170
+kicking the web's ass.
+
+669
+00:24:54,170 --> 00:24:56,350
+The first is performance.
+
+670
+00:24:56,350 --> 00:24:57,840
+And we can go into that forever.
+
+671
+00:24:57,840 --> 00:25:01,190
+But the other thing is that
+the widgets that you implement
+
+672
+00:25:01,190 --> 00:25:04,609
+on the web don't behave exactly
+like they do on native devices.
+
+673
+00:25:04,609 --> 00:25:05,900
+Or you don't have them, rather.
+
+674
+00:25:05,900 --> 00:25:07,410
+So you have to
+basically polyfill them,
+
+675
+00:25:07,410 --> 00:25:09,034
+and they don't behave
+exactly the same.
+
+676
+00:25:09,034 --> 00:25:13,665
+So while I kind of believe in
+the extensible web manifesto,
+
+677
+00:25:13,665 --> 00:25:16,040
+where we want these primitives
+to build whatever we want,
+
+678
+00:25:16,040 --> 00:25:18,792
+it's also important to get the
+integration with the system
+
+679
+00:25:18,792 --> 00:25:19,500
+level components.
+
+680
+00:25:19,500 --> 00:25:21,810
+So your UI table
+view actually feels
+
+681
+00:25:21,810 --> 00:25:23,580
+like a UI table view
+on an iOS device.
+
+682
+00:25:23,580 --> 00:25:25,950
+And the equivalent feels
+like the equivalent widget
+
+683
+00:25:25,950 --> 00:25:26,662
+on Android.
+
+684
+00:25:26,662 --> 00:25:27,900
+So I'm with you on that.
+
+685
+00:25:27,900 --> 00:25:30,441
+DAN APPELQUIST: I'm going to go
+to the audience a little bit.
+
+686
+00:25:30,441 --> 00:25:32,070
+We have Remy Sharp somewhere?
+
+687
+00:25:32,070 --> 00:25:35,460
+REMY SHARP: My question was
+for the previous discussion,
+
+688
+00:25:35,460 --> 00:25:36,997
+so that [INAUDIBLE].
+
+689
+00:25:36,997 --> 00:25:38,080
+DAN APPELQUIST: All right.
+
+690
+00:25:38,080 --> 00:25:40,020
+So let's go to Jake.
+
+691
+00:25:40,020 --> 00:25:44,967
+JAKE: So this is in regards to
+the responsive design thing.
+
+692
+00:25:44,967 --> 00:25:47,050
+Having everything as
+components makes total sense.
+
+693
+00:25:47,050 --> 00:25:48,674
+But don't we have a
+fundamental problem
+
+694
+00:25:48,674 --> 00:25:52,091
+that we don't have a component
+model for responsive design?
+
+695
+00:25:52,091 --> 00:25:54,215
+When we use media queries,
+they are to the viewport
+
+696
+00:25:54,215 --> 00:25:55,860
+and not to the component.
+
+697
+00:25:55,860 --> 00:25:57,610
+DAN APPELQUIST: So the
+question is about &mdash;
+
+698
+00:25:57,610 --> 00:26:01,180
+
+699
+00:26:01,180 --> 00:26:03,170
+[LAUGHTER]
+
+700
+00:26:03,170 --> 00:26:07,035
+I'm trying to restate
+it without restating it.
+
+701
+00:26:07,035 --> 00:26:09,410
+PETER GASSTON: Tab Atkins
+wrote a very thoughtful article
+
+702
+00:26:09,410 --> 00:26:10,430
+on this thing.
+
+703
+00:26:10,430 --> 00:26:12,320
+Because having
+responsive components
+
+704
+00:26:12,320 --> 00:26:14,400
+that are just responsive
+kind of in themselves
+
+705
+00:26:14,400 --> 00:26:16,406
+and not to the viewport
+is a great idea.
+
+706
+00:26:16,406 --> 00:26:17,780
+And it's been
+floated many times.
+
+707
+00:26:17,780 --> 00:26:20,360
+But there are very, very
+hard technical problems
+
+708
+00:26:20,360 --> 00:26:22,320
+to overcome before that.
+
+709
+00:26:22,320 --> 00:26:24,370
+I can't actually remember
+exactly what he said.
+
+710
+00:26:24,370 --> 00:26:25,360
+NICOLE SULLIVAN: So
+basically, any time
+
+711
+00:26:25,360 --> 00:26:27,967
+you're going to have rendering,
+where the child can influence
+
+712
+00:26:27,967 --> 00:26:30,050
+the parent and the parent
+can influence the child,
+
+713
+00:26:30,050 --> 00:26:31,591
+you can have loops
+in your rendering.
+
+714
+00:26:31,591 --> 00:26:33,314
+And that can't work.
+
+715
+00:26:33,314 --> 00:26:35,230
+That can't be a thing
+that can be implemented.
+
+716
+00:26:35,230 --> 00:26:37,290
+And so yeah, it
+comes up perennially
+
+717
+00:26:37,290 --> 00:26:40,600
+that people want to be
+able to have a media
+
+718
+00:26:40,600 --> 00:26:42,420
+query on a particular
+element's width.
+
+719
+00:26:42,420 --> 00:26:43,920
+But we need to let that go.
+
+720
+00:26:43,920 --> 00:26:44,779
+It cannot work.
+
+721
+00:26:44,779 --> 00:26:47,070
+ALEX KOMOROSKE: Tab has a
+very thoughtful post on this.
+
+722
+00:26:47,070 --> 00:26:48,010
+And I can't remember
+his conclusions.
+
+723
+00:26:48,010 --> 00:26:49,490
+It's been a number
+of months now.
+
+724
+00:26:49,490 --> 00:26:53,320
+But one thing that we found
+is, in Polymer, we really
+
+725
+00:26:53,320 --> 00:26:53,820
+embrace it.
+
+726
+00:26:53,820 --> 00:26:56,790
+Everything is an element,
+almost to an extreme.
+
+727
+00:26:56,790 --> 00:26:58,336
+You build your app.
+
+728
+00:26:58,336 --> 00:27:00,710
+You're like, oh, I'm always
+going to top the whole thing.
+
+729
+00:27:00,710 --> 00:27:02,890
+And then next week,
+you write another app
+
+730
+00:27:02,890 --> 00:27:06,519
+that has tabs with different
+applications inside of it.
+
+731
+00:27:06,519 --> 00:27:08,310
+And so it's important
+as a component author
+
+732
+00:27:08,310 --> 00:27:10,620
+to think not just
+how am I using this,
+
+733
+00:27:10,620 --> 00:27:12,370
+but what other context
+could I be used in?
+
+734
+00:27:12,370 --> 00:27:14,570
+And some of the tools,
+like media queries
+
+735
+00:27:14,570 --> 00:27:17,767
+might make more sense
+for elements, as well.
+
+736
+00:27:17,767 --> 00:27:20,100
+But again, there are some
+challenges to deal with there.
+
+737
+00:27:20,100 --> 00:27:20,390
+DAN APPELQUIST: Good.
+
+738
+00:27:20,390 --> 00:27:22,330
+Before we move on
+to the next topic,
+
+739
+00:27:22,330 --> 00:27:27,560
+we have &mdash; sorry if
+I'm mispronouncing
+
+740
+00:27:27,560 --> 00:27:31,906
+your name &mdash; but
+Narciso Jaramillo.
+
+741
+00:27:31,906 --> 00:27:34,376
+NARCISO JARAMILLO: I just
+wanted to echo and amplify
+
+742
+00:27:34,376 --> 00:27:38,328
+what Soledad and
+Nicole were saying.
+
+743
+00:27:38,328 --> 00:27:40,666
+I used to work on Flash with
+this component architect.
+
+744
+00:27:40,666 --> 00:27:42,934
+It's Flash, which is &mdash;
+it's Flash, whatever.
+
+745
+00:27:42,934 --> 00:27:45,394
+But we tried to solve
+the same problem.
+
+746
+00:27:45,394 --> 00:27:47,854
+What we found, especially in
+highly designed applications,
+
+747
+00:27:47,854 --> 00:27:49,822
+is that it's really
+important to preserve
+
+748
+00:27:49,822 --> 00:27:53,677
+the separation between
+functionality and appearance.
+
+749
+00:27:53,677 --> 00:27:56,218
+The components should be about
+the behavior of the component.
+
+750
+00:27:56,218 --> 00:27:58,842
+And people should be able to
+customize their appearance so
+
+751
+00:27:58,842 --> 00:28:00,383
+that it fits with
+whatever they want.
+
+752
+00:28:00,383 --> 00:28:04,582
+And I think that the more
+people put things like specific
+
+753
+00:28:04,582 --> 00:28:07,661
+[INAUDIBLE] Shadow DOM, the
+less the component is really
+
+754
+00:28:07,661 --> 00:28:11,436
+going to be usable for
+people [INAUDIBLE] devices.
+
+755
+00:28:11,436 --> 00:28:13,871
+So is there anything
+architecturally
+
+756
+00:28:13,871 --> 00:28:18,254
+in Web Components that makes it
+easier for a component author
+
+757
+00:28:18,254 --> 00:28:21,230
+to just worry about
+the behavior and not
+
+758
+00:28:21,230 --> 00:28:24,370
+make too many assumptions about
+[INAUDIBLE] is going to be?
+
+759
+00:28:24,370 --> 00:28:26,040
+DAN APPELQUIST:
+Alex, quick thoughts?
+
+760
+00:28:26,040 --> 00:28:27,025
+ALEX KOMOROSKE: It's up
+to the component author
+
+761
+00:28:27,025 --> 00:28:27,930
+to do what they want.
+
+762
+00:28:27,930 --> 00:28:30,388
+There's going to be a spectrum
+of opinionated UI components
+
+763
+00:28:30,388 --> 00:28:33,660
+that are themable and ones
+that have no opinion on UI.
+
+764
+00:28:33,660 --> 00:28:37,000
+PETE HUNT: There's scoped
+style, which helps with this.
+
+765
+00:28:37,000 --> 00:28:41,710
+But also, I think that that only
+gets you to a certain point.
+
+766
+00:28:41,710 --> 00:28:45,210
+At some point, the
+appearance of your element
+
+767
+00:28:45,210 --> 00:28:47,730
+has to be coupled with
+changes in behavior, as well.
+
+768
+00:28:47,730 --> 00:28:50,420
+So I think really focusing on
+the composition of elements
+
+769
+00:28:50,420 --> 00:28:52,640
+and how, if I've got
+a component &mdash; like,
+
+770
+00:28:52,640 --> 00:28:54,690
+do I want that full
+drop down functionality?
+
+771
+00:28:54,690 --> 00:28:57,231
+What if I want to add separators
+inside the drop down element
+
+772
+00:28:57,231 --> 00:28:58,789
+and the developer
+didn't think of it?
+
+773
+00:28:58,789 --> 00:29:01,080
+So you need to think it really
+in terms of composition,
+
+774
+00:29:01,080 --> 00:29:03,080
+not only of styling,
+but also of behavior,
+
+775
+00:29:03,080 --> 00:29:05,413
+and the way that data flows
+between components, as well.
+
+776
+00:29:05,413 --> 00:29:07,910
+DAN APPELQUIST: So before we
+move on to the next thing,
+
+777
+00:29:07,910 --> 00:29:09,920
+I just want to &mdash;
+Jonathan, you're
+
+778
+00:29:09,920 --> 00:29:12,225
+on the queue, quick comment?
+
+779
+00:29:12,225 --> 00:29:15,240
+JONATHAN FIELDING: So if
+you've got some [INAUDIBLE]
+
+780
+00:29:15,240 --> 00:29:19,110
+onto the mobile,
+[INAUDIBLE] mobile,
+
+781
+00:29:19,110 --> 00:29:21,450
+[INAUDIBLE] responsive
+sites, would you
+
+782
+00:29:21,450 --> 00:29:23,167
+show and hide
+different components?
+
+783
+00:29:23,167 --> 00:29:25,375
+ALEX KOMOROSKE: It's going
+to be up to the developers
+
+784
+00:29:25,375 --> 00:29:27,040
+in different cases.
+
+785
+00:29:27,040 --> 00:29:29,060
+We play around with,
+on the Polymer side,
+
+786
+00:29:29,060 --> 00:29:31,530
+most of the UI elements we
+have now are just expirations.
+
+787
+00:29:31,530 --> 00:29:36,310
+NICOLE SULLIVAN: Well, and just
+like building the UI libraries
+
+788
+00:29:36,310 --> 00:29:38,249
+that have come up
+until now, I think
+
+789
+00:29:38,249 --> 00:29:40,290
+there are UI libraries
+that are very opinionated,
+
+790
+00:29:40,290 --> 00:29:42,373
+like this thing is going
+to be exactly this width.
+
+791
+00:29:42,373 --> 00:29:45,590
+And it means you can only use
+it when, magically, that's
+
+792
+00:29:45,590 --> 00:29:46,494
+the width you need.
+
+793
+00:29:46,494 --> 00:29:48,910
+And the better UI libraries
+and the ones that have emerged
+
+794
+00:29:48,910 --> 00:29:51,939
+are the ones that build tabs
+that fill in whatever space
+
+795
+00:29:51,939 --> 00:29:52,480
+is available.
+
+796
+00:29:52,480 --> 00:29:54,830
+And that's still going to
+be true in the web component
+
+797
+00:29:54,830 --> 00:29:55,330
+world.
+
+798
+00:29:55,330 --> 00:29:57,440
+PETER GASSTON: There was also,
+as part of the earlier web
+
+799
+00:29:57,440 --> 00:29:59,815
+component suite, there was an
+idea of these things called
+
+800
+00:29:59,815 --> 00:30:03,040
+decorators, which are HTML
+markup applied with CSS.
+
+801
+00:30:03,040 --> 00:30:05,610
+So you could apply
+different markup
+
+802
+00:30:05,610 --> 00:30:07,420
+and use your media
+queries in that way.
+
+803
+00:30:07,420 --> 00:30:09,640
+But again, there were
+insurmountable technical
+
+804
+00:30:09,640 --> 00:30:10,602
+problems in doing that.
+
+805
+00:30:10,602 --> 00:30:11,810
+And that's had to be dropped.
+
+806
+00:30:11,810 --> 00:30:13,226
+So I don't think
+this is something
+
+807
+00:30:13,226 --> 00:30:14,970
+that's going to be
+easily achieved.
+
+808
+00:30:14,970 --> 00:30:16,480
+DAN APPELQUIST: So I'm going
+to have to cut it off there,
+
+809
+00:30:16,480 --> 00:30:18,730
+because we need to move on
+to the next thing, which
+
+810
+00:30:18,730 --> 00:30:20,785
+is Joshua Peek.
+
+811
+00:30:20,785 --> 00:30:23,380
+Can you please speak your mind?
+
+812
+00:30:23,380 --> 00:30:25,920
+
+813
+00:30:25,920 --> 00:30:27,910
+Can we get him a mic?
+
+814
+00:30:27,910 --> 00:30:31,116
+
+815
+00:30:31,116 --> 00:30:32,032
+JOSHUA PEEK: Hi.
+
+816
+00:30:32,032 --> 00:30:34,640
+I've done a lot of work
+on GitHub's implementation
+
+817
+00:30:34,640 --> 00:30:36,860
+of content security policy.
+
+818
+00:30:36,860 --> 00:30:40,820
+I'm wondering how web
+components fit into CSP.
+
+819
+00:30:40,820 --> 00:30:44,400
+Polymer and other polyfills make
+use of eval and HTML imports
+
+820
+00:30:44,400 --> 00:30:47,740
+[INAUDIBLE] declare
+the scripts in line.
+
+821
+00:30:47,740 --> 00:30:50,170
+In general, how
+will Web Components
+
+822
+00:30:50,170 --> 00:30:51,790
+become another attack vector?
+
+823
+00:30:51,790 --> 00:30:54,981
+And what's the general story
+for security in Web Components?
+
+824
+00:30:54,981 --> 00:30:57,230
+ALEX KOMOROSKE: So again,
+we're adding some new tools.
+
+825
+00:30:57,230 --> 00:30:58,620
+We're not taking others away.
+
+826
+00:30:58,620 --> 00:31:01,300
+It is possible to
+use Web Components
+
+827
+00:31:01,300 --> 00:31:04,050
+within a very restrictive
+CSP environment.
+
+828
+00:31:04,050 --> 00:31:06,581
+For example, Chrome apps
+has a very restrictive CSP
+
+829
+00:31:06,581 --> 00:31:07,080
+environment.
+
+830
+00:31:07,080 --> 00:31:09,520
+And although by
+default, with Polymer,
+
+831
+00:31:09,520 --> 00:31:11,852
+we recommend people define
+their scripts right in line
+
+832
+00:31:11,852 --> 00:31:15,037
+with the templates, there's a
+version of our Vulcanize tool
+
+833
+00:31:15,037 --> 00:31:17,620
+that will allow you to actually
+have those as external scripts
+
+834
+00:31:17,620 --> 00:31:19,800
+that will obey a
+CSP policy and not
+
+835
+00:31:19,800 --> 00:31:23,600
+be eval in the main
+context of the page.
+
+836
+00:31:23,600 --> 00:31:27,850
+DAN APPELQUIST: Other thoughts
+on security in general,
+
+837
+00:31:27,850 --> 00:31:28,450
+as well?
+
+838
+00:31:28,450 --> 00:31:30,490
+Like, it really
+occurred to me when
+
+839
+00:31:30,490 --> 00:31:36,060
+I was reading this
+question about, I think
+
+840
+00:31:36,060 --> 00:31:39,390
+I added the thing about,
+can Web Components
+
+841
+00:31:39,390 --> 00:31:44,420
+be a vector for
+attack in some way?
+
+842
+00:31:44,420 --> 00:31:46,324
+Thoughts on that from
+any of the panel?
+
+843
+00:31:46,324 --> 00:31:47,490
+Have you thought about that?
+
+844
+00:31:47,490 --> 00:31:49,281
+SOLEDAD PENADES: I
+think we should be fine.
+
+845
+00:31:49,281 --> 00:31:52,110
+I mean, you can still have the
+same content or [INAUDIBLE]
+
+846
+00:31:52,110 --> 00:31:52,750
+restrictions.
+
+847
+00:31:52,750 --> 00:31:53,958
+It's just through JavaScript.
+
+848
+00:31:53,958 --> 00:31:55,290
+It's not different JavaScript.
+
+849
+00:31:55,290 --> 00:31:56,730
+This is still a thing that
+is running the same way
+
+850
+00:31:56,730 --> 00:31:58,515
+that all the other
+JavaScript is running.
+
+851
+00:31:58,515 --> 00:32:01,280
+So you should still
+get your browser angry
+
+852
+00:32:01,280 --> 00:32:03,002
+if you do something
+inappropriate.
+
+853
+00:32:03,002 --> 00:32:05,000
+So we should be fine.
+
+854
+00:32:05,000 --> 00:32:06,430
+Haven't tried to break it yet.
+
+855
+00:32:06,430 --> 00:32:08,185
+ALEX KOMOROSKE: And there are
+a number of attack vectors
+
+856
+00:32:08,185 --> 00:32:09,476
+if you use third party content.
+
+857
+00:32:09,476 --> 00:32:15,680
+For example, if you don't use
+CSP [INAUDIBLE] effectively,
+
+858
+00:32:15,680 --> 00:32:17,580
+there's attack vectors
+on the web today.
+
+859
+00:32:17,580 --> 00:32:18,950
+This isn't changing that.
+
+860
+00:32:18,950 --> 00:32:21,880
+If you're using someone else's
+hosting of the components,
+
+861
+00:32:21,880 --> 00:32:22,800
+sure.
+
+862
+00:32:22,800 --> 00:32:24,275
+To be clear, by
+the way, Shadow DOM
+
+863
+00:32:24,275 --> 00:32:26,080
+does not provide a
+security boundary.
+
+864
+00:32:26,080 --> 00:32:29,260
+That's a misconception that
+sometimes we see from people.
+
+865
+00:32:29,260 --> 00:32:31,010
+We have iframes for
+the security boundary.
+
+866
+00:32:31,010 --> 00:32:34,610
+But Shadow DOM just provides
+a much stronger style
+
+867
+00:32:34,610 --> 00:32:35,390
+encapsulation.
+
+868
+00:32:35,390 --> 00:32:36,848
+But ultimately it's
+a boundary that
+
+869
+00:32:36,848 --> 00:32:41,310
+can be crossed in the page.
+
+870
+00:32:41,310 --> 00:32:44,530
+DAN APPELQUIST: Any other
+thoughts on security or CSP?
+
+871
+00:32:44,530 --> 00:32:47,739
+PETER GASSTON: That's
+really not my area at all.
+
+872
+00:32:47,739 --> 00:32:48,530
+DAN APPELQUIST: No?
+
+873
+00:32:48,530 --> 00:32:49,030
+OK.
+
+874
+00:32:49,030 --> 00:32:53,170
+Maybe we move on then, actually.
+
+875
+00:32:53,170 --> 00:32:59,129
+So now I'm going
+to ask Stewart Cox.
+
+876
+00:32:59,129 --> 00:33:00,170
+Can we get Stewart a mic?
+
+877
+00:33:00,170 --> 00:33:08,410
+
+878
+00:33:08,410 --> 00:33:11,850
+STEWART COX: So do you
+think Web Components
+
+879
+00:33:11,850 --> 00:33:14,445
+open the door for developers
+to abandon semantics?
+
+880
+00:33:14,445 --> 00:33:16,820
+Are we going to end up with
+a million different homegrown
+
+881
+00:33:16,820 --> 00:33:21,310
+select widgets, and what is
+the meaning of an attack name
+
+882
+00:33:21,310 --> 00:33:22,350
+if that happens?
+
+883
+00:33:22,350 --> 00:33:26,147
+DAN APPELQUIST: So I'm going to
+ask Nicole to field that one.
+
+884
+00:33:26,147 --> 00:33:27,730
+NICOLE SULLIVAN: So
+I'm probably going
+
+885
+00:33:27,730 --> 00:33:31,940
+to give a little bit of an
+unpopular point of view here.
+
+886
+00:33:31,940 --> 00:33:33,950
+I like semantics on a gut level.
+
+887
+00:33:33,950 --> 00:33:37,945
+But when I'm making a decision
+about what to do for a project,
+
+888
+00:33:37,945 --> 00:33:39,570
+I try to keep in mind
+what I'm actually
+
+889
+00:33:39,570 --> 00:33:42,317
+trying to get out of it and
+what semantics actually give me.
+
+890
+00:33:42,317 --> 00:33:43,900
+Because in a lot of
+cases, we give way
+
+891
+00:33:43,900 --> 00:33:45,160
+too much weight to semantics.
+
+892
+00:33:45,160 --> 00:33:49,400
+And we aren't getting enough out
+of it for basically the value
+
+893
+00:33:49,400 --> 00:33:50,670
+that we're trying for.
+
+894
+00:33:50,670 --> 00:33:52,430
+So basically, I
+think that there's
+
+895
+00:33:52,430 --> 00:33:55,100
+semantic value in accessibility.
+
+896
+00:33:55,100 --> 00:33:57,330
+And we get that from ARIA roles.
+
+897
+00:33:57,330 --> 00:34:00,247
+And what I think is great about
+ARIA roles is that they're
+
+898
+00:34:00,247 --> 00:34:02,580
+divorced from whatever markup
+you happened to have used.
+
+899
+00:34:02,580 --> 00:34:06,210
+And so we're no longer relying
+on some implicit connection.
+
+900
+00:34:06,210 --> 00:34:09,050
+But instead, we're basically
+getting the semantic value
+
+901
+00:34:09,050 --> 00:34:11,804
+from something we can
+tag onto anything.
+
+902
+00:34:11,804 --> 00:34:13,179
+So I think that
+that's important.
+
+903
+00:34:13,179 --> 00:34:14,679
+And then the other
+value that we get
+
+904
+00:34:14,679 --> 00:34:17,969
+is sort of developer
+maintenance and how developers
+
+905
+00:34:17,969 --> 00:34:19,781
+will understand our code later.
+
+906
+00:34:19,781 --> 00:34:21,739
+Because those are basically
+the only two things
+
+907
+00:34:21,739 --> 00:34:23,540
+that use semantics.
+
+908
+00:34:23,540 --> 00:34:26,150
+And I think that actually
+being able to write custom tags
+
+909
+00:34:26,150 --> 00:34:27,860
+has a chance to
+make it &mdash; and being
+
+910
+00:34:27,860 --> 00:34:31,050
+able to hide a bunch of junkie
+markup gives us a fairly good &mdash;
+
+911
+00:34:31,050 --> 00:34:33,770
+not junkie, but presentational
+markup, basically,
+
+912
+00:34:33,770 --> 00:34:38,881
+gives us a chance to be able to
+have cleaner HTML that contains
+
+913
+00:34:38,881 --> 00:34:40,964
+just the things that are
+relevant to understanding
+
+914
+00:34:40,964 --> 00:34:41,631
+what's going on.
+
+915
+00:34:41,631 --> 00:34:43,588
+ALEX KOMOROSKE: When you
+say abandon semantics,
+
+916
+00:34:43,588 --> 00:34:45,030
+I mean, we've
+abandoned semantics.
+
+917
+00:34:45,030 --> 00:34:48,340
+If you open up the Dev
+Tools Inspector on any page,
+
+918
+00:34:48,340 --> 00:34:50,424
+you see a whole bunch of
+stuff that's meaningless.
+
+919
+00:34:50,424 --> 00:34:51,839
+The cool thing
+about Shadow DOM is
+
+920
+00:34:51,839 --> 00:34:53,719
+you can take that
+presentational gunk that's
+
+921
+00:34:53,719 --> 00:34:55,770
+required and sort of
+store it off to the side.
+
+922
+00:34:55,770 --> 00:34:58,010
+And so if you look at pages
+that are written in a web
+
+923
+00:34:58,010 --> 00:35:00,800
+components-y style, you look at
+it and you can understand it.
+
+924
+00:35:00,800 --> 00:35:02,800
+Like, it actually
+makes sense reading it.
+
+925
+00:35:02,800 --> 00:35:04,990
+I also think that we
+abandoned semantics
+
+926
+00:35:04,990 --> 00:35:07,230
+because the
+components that we're
+
+927
+00:35:07,230 --> 00:35:09,640
+shipping in the browser,
+things like input and select,
+
+928
+00:35:09,640 --> 00:35:10,310
+they're great.
+
+929
+00:35:10,310 --> 00:35:12,643
+But there weren't that many
+of them, as you were saying.
+
+930
+00:35:12,643 --> 00:35:14,500
+There's no carousel
+built into the browser.
+
+931
+00:35:14,500 --> 00:35:16,130
+And so this allows us
+to create that carousel.
+
+932
+00:35:16,130 --> 00:35:17,310
+NICOLE SULLIVAN: Maybe for the
+carousel there shouldn't be.
+
+933
+00:35:17,310 --> 00:35:18,980
+Just because it's
+an awful UI pattern.
+
+934
+00:35:18,980 --> 00:35:20,880
+ALEX KOMOROSKE: But
+I'm saying, this
+
+935
+00:35:20,880 --> 00:35:22,755
+allows us to create
+those things and actually
+
+936
+00:35:22,755 --> 00:35:27,164
+represent them more semantically
+in ways in the [INAUDIBLE].
+
+937
+00:35:27,164 --> 00:35:28,830
+DAN APPELQUIST: I got
+Remy in the queue.
+
+938
+00:35:28,830 --> 00:35:31,920
+I just wanted to pull him in.
+
+939
+00:35:31,920 --> 00:35:35,124
+Can we get Remy a mic up here?
+
+940
+00:35:35,124 --> 00:35:39,052
+
+941
+00:35:39,052 --> 00:35:45,250
+REMY SHARP: So we're rushing
+to make all these libraries,
+
+942
+00:35:45,250 --> 00:35:50,530
+Brick, Polymer, and so on, we're
+rushing great Web Components.
+
+943
+00:35:50,530 --> 00:35:53,712
+And this kind of hangs a little
+bit off the blocking thing,
+
+944
+00:35:53,712 --> 00:35:56,750
+but we're making old mistakes.
+
+945
+00:35:56,750 --> 00:35:58,784
+We're repeating old mistakes.
+
+946
+00:35:58,784 --> 00:36:01,075
+Like, local storage is a good
+example of new technology
+
+947
+00:36:01,075 --> 00:36:02,790
+that came out a few years ago.
+
+948
+00:36:02,790 --> 00:36:08,170
+There was a big throw of arms,
+and it's not asynchronous.
+
+949
+00:36:08,170 --> 00:36:10,590
+And we're warned
+against using it.
+
+950
+00:36:10,590 --> 00:36:12,570
+But we're repeating
+the same mistakes
+
+951
+00:36:12,570 --> 00:36:14,980
+when we've got the opportunity
+with new technology
+
+952
+00:36:14,980 --> 00:36:17,830
+to not make these mistakes
+and make sure that everything
+
+953
+00:36:17,830 --> 00:36:22,050
+is good for going forward,
+since it's effectively
+
+954
+00:36:22,050 --> 00:36:23,290
+a clean slate, right?
+
+955
+00:36:23,290 --> 00:36:25,590
+NICOLE SULLIVAN: But there's
+no such thing, is there?
+
+956
+00:36:25,590 --> 00:36:27,727
+Like, we are always
+going to make mistakes.
+
+957
+00:36:27,727 --> 00:36:29,310
+Like, we're going
+to totally screw up.
+
+958
+00:36:29,310 --> 00:36:30,268
+REMY SHARP: Sure, sure.
+
+959
+00:36:30,268 --> 00:36:30,846
+No, I agree.
+
+960
+00:36:30,846 --> 00:36:32,220
+Unknown mistakes
+that we're going
+
+961
+00:36:32,220 --> 00:36:35,170
+to create in the first
+place, but knowingly
+
+962
+00:36:35,170 --> 00:36:36,900
+develop against mistakes.
+
+963
+00:36:36,900 --> 00:36:40,250
+PETE HUNT: I think that a lot of
+those mistakes come from this.
+
+964
+00:36:40,250 --> 00:36:43,821
+We're not sure if the browser
+is an SDK or a run time.
+
+965
+00:36:43,821 --> 00:36:44,320
+Right?
+
+966
+00:36:44,320 --> 00:36:46,110
+So it wouldn't make
+any sense for you
+
+967
+00:36:46,110 --> 00:36:48,940
+to have your OpenGL
+calls be semantic, right?
+
+968
+00:36:48,940 --> 00:36:51,400
+But OpenGL's a very
+performant API.
+
+969
+00:36:51,400 --> 00:36:53,670
+So why do the data
+structures that we've
+
+970
+00:36:53,670 --> 00:36:55,630
+rendered to the rendering engine
+we have available to us, which
+
+971
+00:36:55,630 --> 00:36:57,160
+is the DOM, why do those
+have to be semantic?
+
+972
+00:36:57,160 --> 00:36:58,560
+Why do we even think about that?
+
+973
+00:36:58,560 --> 00:37:01,415
+Why do we think about
+like, we talk about,
+
+974
+00:37:01,415 --> 00:37:03,790
+we need to make this
+performant and expressive.
+
+975
+00:37:03,790 --> 00:37:05,790
+And sometimes those are
+at odds with each other.
+
+976
+00:37:05,790 --> 00:37:08,002
+So I think that
+the reason why you
+
+977
+00:37:08,002 --> 00:37:09,710
+get things like
+synchronous local storage
+
+978
+00:37:09,710 --> 00:37:11,990
+is because the fast
+API, the fast primitive,
+
+979
+00:37:11,990 --> 00:37:13,550
+is an asynchronous call.
+
+980
+00:37:13,550 --> 00:37:15,880
+But the easy API
+is a blocking call.
+
+981
+00:37:15,880 --> 00:37:18,160
+And so we need to basically
+make a decision, like,
+
+982
+00:37:18,160 --> 00:37:20,010
+are we going to make
+the browser in SDK?
+
+983
+00:37:20,010 --> 00:37:21,760
+Are we going to make
+it like Visual Basic?
+
+984
+00:37:21,760 --> 00:37:24,422
+Or are we going to
+make it like libc?
+
+985
+00:37:24,422 --> 00:37:26,630
+And it's still this kind of
+Frankenstein environment.
+
+986
+00:37:26,630 --> 00:37:31,040
+REMY SHARP: The thing is,
+we, the web community,
+
+987
+00:37:31,040 --> 00:37:32,860
+prefer the easier solution.
+
+988
+00:37:32,860 --> 00:37:34,385
+We'll always take
+the shortest route
+
+989
+00:37:34,385 --> 00:37:35,843
+to actually getting
+the thing live.
+
+990
+00:37:35,843 --> 00:37:38,300
+So if it means we kill the
+performance in the browser,
+
+991
+00:37:38,300 --> 00:37:40,027
+we'll take that, as a community.
+
+992
+00:37:40,027 --> 00:37:41,610
+Because we're great
+at Copy and Paste.
+
+993
+00:37:41,610 --> 00:37:44,130
+Or we're great at just ripping
+off other people's code.
+
+994
+00:37:44,130 --> 00:37:47,720
+So if you have the
+opportunity to &mdash; the baseline
+
+995
+00:37:47,720 --> 00:37:51,030
+doesn't have those kind
+of blocks built into it,
+
+996
+00:37:51,030 --> 00:37:53,980
+or mistakes built
+into it, then that
+
+997
+00:37:53,980 --> 00:37:55,265
+seems like the right thing.
+
+998
+00:37:55,265 --> 00:37:57,390
+ALEX KOMOROSKE: Remy, this
+is a very complex topic.
+
+999
+00:37:57,390 --> 00:37:59,790
+And I'm not going to pretend
+to know all the details.
+
+1000
+00:37:59,790 --> 00:38:03,050
+I've watched this be argued
+many, many times by people
+
+1001
+00:38:03,050 --> 00:38:05,410
+much smarter than
+me on this issue.
+
+1002
+00:38:05,410 --> 00:38:08,750
+And inevitably, after
+hours of discussion,
+
+1003
+00:38:08,750 --> 00:38:10,800
+everyone goes, oh, I get it now.
+
+1004
+00:38:10,800 --> 00:38:13,577
+But it's one of those things
+that's very hard to explain.
+
+1005
+00:38:13,577 --> 00:38:14,910
+Like, I can't do it effectively.
+
+1006
+00:38:14,910 --> 00:38:15,575
+DAN APPELQUIST:
+Maybe we have some
+
+1007
+00:38:15,575 --> 00:38:17,620
+of those smart
+people in the room.
+
+1008
+00:38:17,620 --> 00:38:19,905
+[LAUGHTER]
+
+1009
+00:38:19,905 --> 00:38:24,525
+So first of all, [? Floran ?]
+[? Edgar? ?] Can we get him
+
+1010
+00:38:24,525 --> 00:38:25,060
+a mic?
+
+1011
+00:38:25,060 --> 00:38:28,550
+
+1012
+00:38:28,550 --> 00:38:35,220
+AUDIENCE: I wonder if we are
+not hiding a lot of stuff
+
+1013
+00:38:35,220 --> 00:38:40,460
+in abstractions when we're
+using Web Components.
+
+1014
+00:38:40,460 --> 00:38:42,240
+Doesn't it affect
+maintainability
+
+1015
+00:38:42,240 --> 00:38:45,710
+and actually hurt reuse?
+
+1016
+00:38:45,710 --> 00:38:50,510
+Because we are building, again,
+100 different Select boxes.
+
+1017
+00:38:50,510 --> 00:38:54,704
+Because we all have just a
+little bit different use cases.
+
+1018
+00:38:54,704 --> 00:38:56,620
+ALEX KOMOROSKE: I think,
+using Web Components,
+
+1019
+00:38:56,620 --> 00:39:00,559
+it's very clear, it makes your
+code much more maintainable
+
+1020
+00:39:00,559 --> 00:39:02,600
+because you can think more
+in your local context.
+
+1021
+00:39:02,600 --> 00:39:04,640
+You don't have to worry about
+what someone else elsewhere
+
+1022
+00:39:04,640 --> 00:39:06,090
+in the page has done,
+what kind of styles
+
+1023
+00:39:06,090 --> 00:39:07,880
+they've put in the
+global style sheet.
+
+1024
+00:39:07,880 --> 00:39:09,780
+Because you have scoped
+styles, because you
+
+1025
+00:39:09,780 --> 00:39:11,977
+have this nice
+encapsulation mechanism,
+
+1026
+00:39:11,977 --> 00:39:13,310
+you can think much more locally.
+
+1027
+00:39:13,310 --> 00:39:14,894
+And it's really
+freeing as a developer
+
+1028
+00:39:14,894 --> 00:39:16,143
+to be able to think like that.
+
+1029
+00:39:16,143 --> 00:39:18,690
+Because today, if you have
+more than three people working
+
+1030
+00:39:18,690 --> 00:39:20,560
+on a site together,
+they have to coordinate.
+
+1031
+00:39:20,560 --> 00:39:22,560
+And they have to say,
+well, don't do this thing.
+
+1032
+00:39:22,560 --> 00:39:24,809
+And please make sure your
+selectors don't accidentally
+
+1033
+00:39:24,809 --> 00:39:26,230
+select over into my area.
+
+1034
+00:39:26,230 --> 00:39:28,470
+And actually, my
+personal experience
+
+1035
+00:39:28,470 --> 00:39:31,105
+and a lot of people who have
+used Web Components so far has
+
+1036
+00:39:31,105 --> 00:39:33,310
+been it's actually far,
+far, far more maintainable.
+
+1037
+00:39:33,310 --> 00:39:34,340
+I don't know if anyone else &mdash;
+
+1038
+00:39:34,340 --> 00:39:36,700
+PETER GASSTON: It's like, as
+I mentioned before, it's like,
+
+1039
+00:39:36,700 --> 00:39:38,158
+is it better than
+what we have now?
+
+1040
+00:39:38,158 --> 00:39:40,430
+What we do now is we
+just get a load of divs
+
+1041
+00:39:40,430 --> 00:39:42,930
+with classes attached to them
+and attach the things to that.
+
+1042
+00:39:42,930 --> 00:39:45,850
+And it's all put directly
+into the markup of the page.
+
+1043
+00:39:45,850 --> 00:39:46,900
+It's all in the DOM tree.
+
+1044
+00:39:46,900 --> 00:39:50,240
+Now, I think that what
+Web Components bring
+
+1045
+00:39:50,240 --> 00:39:52,180
+through encapsulation,
+through scoped styles,
+
+1046
+00:39:52,180 --> 00:39:56,170
+I think that makes that
+better and more maintainable.
+
+1047
+00:39:56,170 --> 00:39:58,100
+It's not going to stop
+people from writing,
+
+1048
+00:39:58,100 --> 00:39:59,559
+as I said, a
+proliferation of crap.
+
+1049
+00:39:59,559 --> 00:40:00,641
+That's never going to end.
+
+1050
+00:40:00,641 --> 00:40:02,980
+That's what we do until we
+find that maybe we settled &mdash;
+
+1051
+00:40:02,980 --> 00:40:05,590
+DAN APPELQUIST: That's the
+web, proliferation of crap.
+
+1052
+00:40:05,590 --> 00:40:07,090
+PETER GASSTON: Until
+maybe we settle
+
+1053
+00:40:07,090 --> 00:40:10,149
+on something like Brick or
+Polymer or the two of them
+
+1054
+00:40:10,149 --> 00:40:11,940
+together, come up with
+something that we're
+
+1055
+00:40:11,940 --> 00:40:12,990
+all so enamored with.
+
+1056
+00:40:12,990 --> 00:40:15,080
+And we decide to, let's
+be mature about this,
+
+1057
+00:40:15,080 --> 00:40:17,040
+and stop reinventing
+everything all the time.
+
+1058
+00:40:17,040 --> 00:40:18,612
+NICOLE SULLIVAN: When have
+we ever settled on anything?
+
+1059
+00:40:18,612 --> 00:40:20,055
+PETER GASSTON: Right.
+
+1060
+00:40:20,055 --> 00:40:20,920
+ALEX KOMOROSKE: But
+one thing that I think
+
+1061
+00:40:20,920 --> 00:40:22,960
+is very important about
+this is that Web Components,
+
+1062
+00:40:22,960 --> 00:40:24,470
+to the extent they
+pretend that they're just
+
+1063
+00:40:24,470 --> 00:40:25,905
+other elements, to the
+extent that they take
+
+1064
+00:40:25,905 --> 00:40:27,960
+in configuration through
+attributes or methods
+
+1065
+00:40:27,960 --> 00:40:30,500
+and properties on the prototype,
+and that they admit events
+
+1066
+00:40:30,500 --> 00:40:31,790
+when interesting
+things happen, it
+
+1067
+00:40:31,790 --> 00:40:33,680
+doesn't matter how they're
+implemented on the inside.
+
+1068
+00:40:33,680 --> 00:40:35,230
+So you can use an
+X-Tag component
+
+1069
+00:40:35,230 --> 00:40:36,605
+right next to a
+Polymer component
+
+1070
+00:40:36,605 --> 00:40:38,680
+or within one another,
+and it just works.
+
+1071
+00:40:38,680 --> 00:40:40,630
+PETE HUNT: So I
+agree with the spirit
+
+1072
+00:40:40,630 --> 00:40:42,150
+of abstraction
+and encapsulation.
+
+1073
+00:40:42,150 --> 00:40:46,650
+But Web Components deals
+primarily with scoped style.
+
+1074
+00:40:46,650 --> 00:40:49,420
+And honestly, Nicole solved
+that a couple years ago
+
+1075
+00:40:49,420 --> 00:40:51,127
+with Object Oriented CSS.
+
+1076
+00:40:51,127 --> 00:40:52,460
+So I think that that's solving &mdash;
+
+1077
+00:40:52,460 --> 00:40:53,310
+NICOLE SULLIVAN:
+Well, except that,
+
+1078
+00:40:53,310 --> 00:40:55,490
+in order to make Object
+Oriented CSS work,
+
+1079
+00:40:55,490 --> 00:40:57,240
+you have to have a lot
+of developer rigor.
+
+1080
+00:40:57,240 --> 00:41:00,510
+And everybody has to be on the
+same page about making sure.
+
+1081
+00:41:00,510 --> 00:41:02,310
+And it isn't even
+on the same page.
+
+1082
+00:41:02,310 --> 00:41:03,805
+When someone's
+just learning CSS,
+
+1083
+00:41:03,805 --> 00:41:05,930
+they're going to make 1,000
+mistakes before they're
+
+1084
+00:41:05,930 --> 00:41:08,110
+ready to write something
+that's really encapsulated.
+
+1085
+00:41:08,110 --> 00:41:09,484
+And then there
+are other problems
+
+1086
+00:41:09,484 --> 00:41:11,400
+where you can't
+encapsulate it, right?
+
+1087
+00:41:11,400 --> 00:41:13,640
+Styles are going to flow
+through to children.
+
+1088
+00:41:13,640 --> 00:41:14,480
+You can't help it.
+
+1089
+00:41:14,480 --> 00:41:16,490
+PETE HUNT: I'm speaking from
+a very Facebook-specific
+
+1090
+00:41:16,490 --> 00:41:18,531
+perspective, where we can
+control our engineering
+
+1091
+00:41:18,531 --> 00:41:19,550
+organization.
+
+1092
+00:41:19,550 --> 00:41:23,382
+But the problem is that
+that's the easy part.
+
+1093
+00:41:23,382 --> 00:41:25,508
+ALEX KOMOROSKE: But also,
+that's hard for just even
+
+1094
+00:41:25,508 --> 00:41:27,090
+a large organization,
+where everyone's
+
+1095
+00:41:27,090 --> 00:41:28,550
+being paid by the same person.
+
+1096
+00:41:28,550 --> 00:41:29,990
+We run into this at
+Google all the time.
+
+1097
+00:41:29,990 --> 00:41:32,406
+PETE HUNT: Well, we have a
+rule of like, single class name
+
+1098
+00:41:32,406 --> 00:41:33,405
+for &mdash;
+
+1099
+00:41:33,405 --> 00:41:34,160
+DAN APPELQUIST: Before
+we move on to the next &mdash;
+
+1100
+00:41:34,160 --> 00:41:35,490
+SOLEDAD PENADES: Can I
+say something quickly?
+
+1101
+00:41:35,490 --> 00:41:37,120
+I have experience
+of building things
+
+1102
+00:41:37,120 --> 00:41:39,600
+with components, reusable
+things, and they work great.
+
+1103
+00:41:39,600 --> 00:41:40,890
+If you want, I can show you.
+
+1104
+00:41:40,890 --> 00:41:44,150
+If you can trust, all
+these guys are like &mdash;
+
+1105
+00:41:44,150 --> 00:41:45,670
+DAN APPELQUIST:
+Wait for the break.
+
+1106
+00:41:45,670 --> 00:41:48,950
+One more comment maybe from
+the audience before we &mdash; yeah,
+
+1107
+00:41:48,950 --> 00:41:50,605
+Guy from Akamai?
+
+1108
+00:41:50,605 --> 00:41:53,475
+Can we get, just a brief?
+
+1109
+00:41:53,475 --> 00:41:56,100
+GUY PODJARNY: I mostly wanted to
+highlight some of the comments
+
+1110
+00:41:56,100 --> 00:41:57,460
+that Remy was getting to.
+
+1111
+00:41:57,460 --> 00:41:59,660
+So when you look at
+the existing successes
+
+1112
+00:41:59,660 --> 00:42:03,380
+we have, like Node, one
+of its claims to fame
+
+1113
+00:42:03,380 --> 00:42:06,320
+is that it forces you
+to be asynchronous.
+
+1114
+00:42:06,320 --> 00:42:07,792
+A lot of the
+problems that we have
+
+1115
+00:42:07,792 --> 00:42:09,333
+on the flip side of
+that, if you look
+
+1116
+00:42:09,333 --> 00:42:13,230
+at the async widgets,
+anything that didn't ship
+
+1117
+00:42:13,230 --> 00:42:15,300
+as async widget before,
+Google [INAUDIBLE],
+
+1118
+00:42:15,300 --> 00:42:18,750
+Facebook, or Twitter, we're
+stuck with those things now.
+
+1119
+00:42:18,750 --> 00:42:23,130
+So I do think that there's
+strong merit in taking away
+
+1120
+00:42:23,130 --> 00:42:26,820
+some flexibility in
+favor of performance
+
+1121
+00:42:26,820 --> 00:42:30,510
+or in favor of making it a
+little bit harder to shoot
+
+1122
+00:42:30,510 --> 00:42:31,445
+yourself in the foot.
+
+1123
+00:42:31,445 --> 00:42:34,320
+ALEX KOMOROSKE: To be
+clear, HTML imports
+
+1124
+00:42:34,320 --> 00:42:38,020
+don't block the script and
+parsing of the main document.
+
+1125
+00:42:38,020 --> 00:42:41,570
+They do block rendering, just
+like style sheets do today.
+
+1126
+00:42:41,570 --> 00:42:43,690
+But again, if you want
+to render something fast,
+
+1127
+00:42:43,690 --> 00:42:45,290
+you can put things
+directly in your document.
+
+1128
+00:42:45,290 --> 00:42:47,373
+You don't have to use HTML
+imports for everything.
+
+1129
+00:42:47,373 --> 00:42:48,630
+PETER GASSTON: [INAUDIBLE]
+
+1130
+00:42:48,630 --> 00:42:51,046
+PETE HUNT: The recurring theme
+within Facebook engineering
+
+1131
+00:42:51,046 --> 00:42:52,240
+is one word.
+
+1132
+00:42:52,240 --> 00:42:53,240
+And it's predictability.
+
+1133
+00:42:53,240 --> 00:42:54,656
+It's like, you
+want to know what's
+
+1134
+00:42:54,656 --> 00:42:56,326
+going to happen when
+you do something.
+
+1135
+00:42:56,326 --> 00:42:57,700
+With Node, you
+know everything is
+
+1136
+00:42:57,700 --> 00:42:59,075
+going to be async
+out of the box,
+
+1137
+00:42:59,075 --> 00:43:02,380
+unless you're using a
+weird, like, C extension.
+
+1138
+00:43:02,380 --> 00:43:05,256
+With the DOM, yes,
+there is a fast path.
+
+1139
+00:43:05,256 --> 00:43:07,480
+But it's so easy to
+fall off the fast path.
+
+1140
+00:43:07,480 --> 00:43:09,313
+Like, you don't know
+what's going to happen.
+
+1141
+00:43:09,313 --> 00:43:10,688
+You have no way
+to predict what's
+
+1142
+00:43:10,688 --> 00:43:12,438
+going to happen because
+you have to reason
+
+1143
+00:43:12,438 --> 00:43:14,634
+about the entire system
+as a whole, which I think
+
+1144
+00:43:14,634 --> 00:43:16,300
+is an argument for
+building abstractions
+
+1145
+00:43:16,300 --> 00:43:18,750
+on top of fast,
+underlying primitives,
+
+1146
+00:43:18,750 --> 00:43:19,790
+like you talked about.
+
+1147
+00:43:19,790 --> 00:43:21,570
+And I think that's
+the way forward.
+
+1148
+00:43:21,570 --> 00:43:23,360
+I don't think baking
+more functionality
+
+1149
+00:43:23,360 --> 00:43:25,535
+into this unpredictable
+DOM is the way forward.
+
+1150
+00:43:25,535 --> 00:43:27,160
+DAN APPELQUIST: We're
+going to move on.
+
+1151
+00:43:27,160 --> 00:43:29,701
+I'm sorry, Christian, but you'll
+have a chance to talk later.
+
+1152
+00:43:29,701 --> 00:43:32,380
+
+1153
+00:43:32,380 --> 00:43:37,125
+The next topic is going to
+be introduced by [? Cormel ?]
+
+1154
+00:43:37,125 --> 00:43:37,750
+[? Lasinski. ?]
+
+1155
+00:43:37,750 --> 00:43:42,929
+
+1156
+00:43:42,929 --> 00:43:43,470
+AUDIENCE: Hi.
+
+1157
+00:43:43,470 --> 00:43:46,410
+What's the story of
+internationalization
+
+1158
+00:43:46,410 --> 00:43:47,880
+of components?
+
+1159
+00:43:47,880 --> 00:43:51,240
+Does the user of the
+component inject strengths
+
+1160
+00:43:51,240 --> 00:43:53,180
+in the component, or
+does the component
+
+1161
+00:43:53,180 --> 00:43:56,027
+have to have hooks for
+internationalization?
+
+1162
+00:43:56,027 --> 00:43:57,610
+ALEX KOMOROSKE:
+Again, this is an area
+
+1163
+00:43:57,610 --> 00:44:00,290
+where the best practices &mdash;
+people are still
+
+1164
+00:44:00,290 --> 00:44:03,320
+being pioneers in this space
+and see what these new tools do.
+
+1165
+00:44:03,320 --> 00:44:05,920
+In different cases, it
+will depend, I think.
+
+1166
+00:44:05,920 --> 00:44:07,740
+But we are experimenting
+with a number
+
+1167
+00:44:07,740 --> 00:44:09,330
+of approaches on Polymer.
+
+1168
+00:44:09,330 --> 00:44:11,970
+I think that it will depend
+for different code bases,
+
+1169
+00:44:11,970 --> 00:44:12,540
+potentially.
+
+1170
+00:44:12,540 --> 00:44:13,760
+PETE HUNT: I can't
+speak to the spec,
+
+1171
+00:44:13,760 --> 00:44:15,210
+but we've been building
+component architectures
+
+1172
+00:44:15,210 --> 00:44:16,600
+at Facebook for a long time.
+
+1173
+00:44:16,600 --> 00:44:18,016
+And it's made
+internationalization
+
+1174
+00:44:18,016 --> 00:44:18,825
+a lot easier.
+
+1175
+00:44:18,825 --> 00:44:20,450
+Because your components &mdash;
+you basically
+
+1176
+00:44:20,450 --> 00:44:22,580
+say, hey, this is my
+internationalized text label
+
+1177
+00:44:22,580 --> 00:44:23,390
+component.
+
+1178
+00:44:23,390 --> 00:44:24,820
+And you drop that
+in wherever you
+
+1179
+00:44:24,820 --> 00:44:27,430
+need internationalized text.
+
+1180
+00:44:27,430 --> 00:44:31,260
+And within that, you can
+have tokens, like, oh, this
+
+1181
+00:44:31,260 --> 00:44:33,050
+is my user's gender component.
+
+1182
+00:44:33,050 --> 00:44:35,140
+And it'll know, it'll
+look at the user object,
+
+1183
+00:44:35,140 --> 00:44:36,960
+and it'll say, oh, is
+this male or female?
+
+1184
+00:44:36,960 --> 00:44:39,234
+And put the right
+string in there.
+
+1185
+00:44:39,234 --> 00:44:41,400
+And so when you build with
+a component architecture,
+
+1186
+00:44:41,400 --> 00:44:42,890
+the composition
+possibilities make
+
+1187
+00:44:42,890 --> 00:44:44,450
+internationalization
+a lot easier.
+
+1188
+00:44:44,450 --> 00:44:47,310
+And we built tooling around
+that for our own systems,
+
+1189
+00:44:47,310 --> 00:44:51,901
+including React and XHP,
+that people don't even
+
+1190
+00:44:51,901 --> 00:44:53,150
+really think about it so much.
+
+1191
+00:44:53,150 --> 00:44:55,060
+They just wrap their
+strings in the right text.
+
+1192
+00:44:55,060 --> 00:44:56,140
+PETER GASSTON: This will
+be one where I think,
+
+1193
+00:44:56,140 --> 00:44:57,681
+sorry to bang on
+the same drum again,
+
+1194
+00:44:57,681 --> 00:45:01,970
+but it puts more of the emphasis
+on you doing the right thing.
+
+1195
+00:45:01,970 --> 00:45:05,199
+If you make UI elements &mdash;
+and I think mostly,
+
+1196
+00:45:05,199 --> 00:45:06,990
+if I'm not mistaken,
+all of the UI elements
+
+1197
+00:45:06,990 --> 00:45:09,390
+we have at the moment don't
+include any text by default.
+
+1198
+00:45:09,390 --> 00:45:11,510
+So you just drop your
+own values into that.
+
+1199
+00:45:11,510 --> 00:45:14,220
+But if you create a UI element
+that does have text in there
+
+1200
+00:45:14,220 --> 00:45:17,030
+by default, the onus is on
+you to put something in there
+
+1201
+00:45:17,030 --> 00:45:18,750
+to make that internationalized.
+
+1202
+00:45:18,750 --> 00:45:21,220
+Or make your work open
+source and let other people
+
+1203
+00:45:21,220 --> 00:45:22,412
+do that for you.
+
+1204
+00:45:22,412 --> 00:45:24,370
+ALEX KOMOROSKE: So one
+metapoint I want to make
+
+1205
+00:45:24,370 --> 00:45:29,690
+is that because Web Components
+get this interoperability
+
+1206
+00:45:29,690 --> 00:45:32,740
+very cheaply &mdash; I think
+X-Tags and Brick interopting
+
+1207
+00:45:32,740 --> 00:45:35,100
+with Polymer is a great proof
+point for that &mdash; it means
+
+1208
+00:45:35,100 --> 00:45:37,430
+that it's different
+than what happens today.
+
+1209
+00:45:37,430 --> 00:45:39,606
+So today, as a developer,
+you pick a framework.
+
+1210
+00:45:39,606 --> 00:45:41,730
+At the beginning, you say,
+OK, well, this framework
+
+1211
+00:45:41,730 --> 00:45:44,730
+has 20 widgets that look
+pretty good, I guess.
+
+1212
+00:45:44,730 --> 00:45:47,830
+But then you get to them, and
+maybe their calendar widget
+
+1213
+00:45:47,830 --> 00:45:50,070
+isn't accessible or isn't
+internationalizable.
+
+1214
+00:45:50,070 --> 00:45:52,320
+And because the competition
+is on the framework level,
+
+1215
+00:45:52,320 --> 00:45:53,944
+you don't necessarily
+get the framework
+
+1216
+00:45:53,944 --> 00:45:55,060
+at the component level.
+
+1217
+00:45:55,060 --> 00:45:57,294
+Whereas with web
+components, it's easier.
+
+1218
+00:45:57,294 --> 00:45:58,460
+NICOLE SULLIVAN: Well, sure.
+
+1219
+00:45:58,460 --> 00:46:00,161
+But thinking of the
+frameworks that we
+
+1220
+00:46:00,161 --> 00:46:02,660
+have today, the amount of stuff
+you have to pull in in order
+
+1221
+00:46:02,660 --> 00:46:06,500
+to make anyone &mdash; I mean, you
+could pick and choose and take
+
+1222
+00:46:06,500 --> 00:46:08,750
+one piece from one framework
+and one bit from another,
+
+1223
+00:46:08,750 --> 00:46:10,541
+but the amount you have
+to pull in in order
+
+1224
+00:46:10,541 --> 00:46:13,460
+to do that, my worry is
+that each component is going
+
+1225
+00:46:13,460 --> 00:46:15,820
+to depend on a whole
+bunch of dependencies.
+
+1226
+00:46:15,820 --> 00:46:17,320
+And they're going
+to end up actually
+
+1227
+00:46:17,320 --> 00:46:18,240
+pulling in way too much.
+
+1228
+00:46:18,240 --> 00:46:19,610
+ALEX KOMOROSKE: And part of the
+reason that's the case today
+
+1229
+00:46:19,610 --> 00:46:22,704
+is because we have to create
+our own parallel universes
+
+1230
+00:46:22,704 --> 00:46:24,870
+and use the DOM just as
+sort of the rendering layer,
+
+1231
+00:46:24,870 --> 00:46:25,454
+and that's it.
+
+1232
+00:46:25,454 --> 00:46:27,370
+Actually, one of the
+cool things about Polymer
+
+1233
+00:46:27,370 --> 00:46:29,370
+is most of the code
+size is that layer
+
+1234
+00:46:29,370 --> 00:46:32,025
+of polyfills, which is
+completely unnecessary
+
+1235
+00:46:32,025 --> 00:46:33,400
+if the browser
+you're using ships
+
+1236
+00:46:33,400 --> 00:46:35,830
+Shadow DOM, custom elements,
+HTML imports, et cetera.
+
+1237
+00:46:35,830 --> 00:46:38,860
+So it goes way, way,
+way down in size
+
+1238
+00:46:38,860 --> 00:46:42,060
+as browsers ship those natively.
+
+1239
+00:46:42,060 --> 00:46:44,590
+SOLEDAD PENADES:
+Back to the topic.
+
+1240
+00:46:44,590 --> 00:46:47,060
+I think custom elements
+are just DOM elements.
+
+1241
+00:46:47,060 --> 00:46:48,810
+So you can just use
+your current libraries
+
+1242
+00:46:48,810 --> 00:46:51,403
+for internationalization.
+
+1243
+00:46:51,403 --> 00:46:52,736
+DAN APPELQUIST: Say [INAUDIBLE].
+
+1244
+00:46:52,736 --> 00:46:53,652
+SOLEDAD PENADES: Yeah.
+
+1245
+00:46:53,652 --> 00:46:56,350
+Or [INAUDIBLE].
+
+1246
+00:46:56,350 --> 00:46:58,630
+Yeah, so I've been
+running some tests.
+
+1247
+00:46:58,630 --> 00:47:01,470
+And it works great with
+mobile and everything.
+
+1248
+00:47:01,470 --> 00:47:04,930
+You just add your
+custom data [INAUDIBLE]
+
+1249
+00:47:04,930 --> 00:47:06,309
+to translate things.
+
+1250
+00:47:06,309 --> 00:47:07,350
+And it translates things.
+
+1251
+00:47:07,350 --> 00:47:09,580
+I mean, it's just
+another element, so.
+
+1252
+00:47:09,580 --> 00:47:11,970
+It's just that
+once you create it,
+
+1253
+00:47:11,970 --> 00:47:16,112
+but it works like any
+other thing works.
+
+1254
+00:47:16,112 --> 00:47:17,570
+DAN APPELQUIST:
+Any other comments?
+
+1255
+00:47:17,570 --> 00:47:18,778
+Nicole, did you want to &mdash; no?
+
+1256
+00:47:18,778 --> 00:47:19,530
+OK.
+
+1257
+00:47:19,530 --> 00:47:22,550
+So I think, given
+that, we'll move on
+
+1258
+00:47:22,550 --> 00:47:26,440
+to our next possibly
+related topic, which
+
+1259
+00:47:26,440 --> 00:47:29,535
+is going to be asked
+by George Thomas.
+
+1260
+00:47:29,535 --> 00:47:35,586
+
+1261
+00:47:35,586 --> 00:47:36,720
+GEORGE THOMAS: Hi.
+
+1262
+00:47:36,720 --> 00:47:39,870
+How could Web Components be
+used to enhance accessibility?
+
+1263
+00:47:39,870 --> 00:47:41,590
+Can shared standards
+for interaction
+
+1264
+00:47:41,590 --> 00:47:44,024
+be developed and agreed
+upon for common components?
+
+1265
+00:47:44,024 --> 00:47:45,440
+ALEX KOMOROSKE:
+So accessibility's
+
+1266
+00:47:45,440 --> 00:47:46,300
+incredibly important.
+
+1267
+00:47:46,300 --> 00:47:47,810
+Actually, Alice
+Boxhall, who's going
+
+1268
+00:47:47,810 --> 00:47:49,810
+to be speaking on one of
+the later panels, who's
+
+1269
+00:47:49,810 --> 00:47:51,330
+on the Chrome
+accessibility team,
+
+1270
+00:47:51,330 --> 00:47:53,829
+has been working very closely
+with some folks on the Polymer
+
+1271
+00:47:53,829 --> 00:47:56,610
+team and the web
+components standards folks.
+
+1272
+00:47:56,610 --> 00:47:59,040
+DAN APPELQUIST: And we
+shouldn't rathole too much
+
+1273
+00:47:59,040 --> 00:48:00,690
+into general
+accessibility issues
+
+1274
+00:48:00,690 --> 00:48:03,630
+because we're going to have
+a whole panel on that later.
+
+1275
+00:48:03,630 --> 00:48:06,245
+So I was almost
+reluctant to field
+
+1276
+00:48:06,245 --> 00:48:07,370
+this question in the panel.
+
+1277
+00:48:07,370 --> 00:48:11,041
+But what are the web
+component specific issues
+
+1278
+00:48:11,041 --> 00:48:12,790
+that have cropped up
+around accessibility?
+
+1279
+00:48:12,790 --> 00:48:14,220
+ALEX KOMOROSKE: So our
+understanding, our belief,
+
+1280
+00:48:14,220 --> 00:48:16,011
+and Alice can correct
+me if I'm wrong here,
+
+1281
+00:48:16,011 --> 00:48:17,572
+is that actually,
+we think that it
+
+1282
+00:48:17,572 --> 00:48:19,280
+should be possible to
+make things just as
+
+1283
+00:48:19,280 --> 00:48:21,100
+accessible as before.
+
+1284
+00:48:21,100 --> 00:48:23,641
+But in addition,
+because there can
+
+1285
+00:48:23,641 --> 00:48:25,390
+be competition on the
+level of components,
+
+1286
+00:48:25,390 --> 00:48:27,930
+there'll be much more
+pressure on component authors
+
+1287
+00:48:27,930 --> 00:48:31,300
+to create accessible,
+internationalizable components.
+
+1288
+00:48:31,300 --> 00:48:32,826
+And so actually,
+accessibility is
+
+1289
+00:48:32,826 --> 00:48:34,450
+one of those hard
+things for developers
+
+1290
+00:48:34,450 --> 00:48:35,720
+to wrap their heads
+around sometimes.
+
+1291
+00:48:35,720 --> 00:48:37,370
+It's one of those things
+they put off until the end.
+
+1292
+00:48:37,370 --> 00:48:40,157
+But if you use a component
+that's already made accessible,
+
+1293
+00:48:40,157 --> 00:48:41,490
+that's actually great for users.
+
+1294
+00:48:41,490 --> 00:48:42,880
+Because it's more
+likely that you
+
+1295
+00:48:42,880 --> 00:48:44,420
+don't have to do all
+that thinking yourself
+
+1296
+00:48:44,420 --> 00:48:45,730
+every single time you use it.
+
+1297
+00:48:45,730 --> 00:48:48,470
+So I'm actually more hopeful
+that the accessibility story
+
+1298
+00:48:48,470 --> 00:48:50,250
+will get better in
+the components world.
+
+1299
+00:48:50,250 --> 00:48:52,375
+NICOLE SULLIVAN: It's hard
+to see it getting better
+
+1300
+00:48:52,375 --> 00:48:53,779
+than native UI controls, though.
+
+1301
+00:48:53,779 --> 00:48:55,320
+ALEX KOMOROSKE: So
+the best practices
+
+1302
+00:48:55,320 --> 00:48:57,420
+of using native UI
+controls where necessary
+
+1303
+00:48:57,420 --> 00:49:00,380
+or where relevant
+makes sense in the ARIA
+
+1304
+00:49:00,380 --> 00:49:02,610
+as a fallback if for
+some reason [INAUDIBLE].
+
+1305
+00:49:02,610 --> 00:49:05,116
+PETE HUNT: So I'm the world's
+biggest DOM hater here,
+
+1306
+00:49:05,116 --> 00:49:06,490
+and I'm excited
+about Shadow DOM.
+
+1307
+00:49:06,490 --> 00:49:09,610
+Because being able to
+style a select component
+
+1308
+00:49:09,610 --> 00:49:13,490
+is like the prime example of how
+awesome Shadow DOM is, I think.
+
+1309
+00:49:13,490 --> 00:49:16,697
+Because we have our custom
+select element component
+
+1310
+00:49:16,697 --> 00:49:18,780
+at Facebook that matches
+our interface guidelines,
+
+1311
+00:49:18,780 --> 00:49:21,634
+and it's like a zillion lines
+of code, and then a zillion
+
+1312
+00:49:21,634 --> 00:49:23,050
+extra lines of
+code on top of that
+
+1313
+00:49:23,050 --> 00:49:25,710
+to get the tab behavior
+right for accessibility.
+
+1314
+00:49:25,710 --> 00:49:27,850
+Now, the browser and
+the operating system
+
+1315
+00:49:27,850 --> 00:49:30,070
+have already done all that
+work for each platform.
+
+1316
+00:49:30,070 --> 00:49:31,736
+So we can leverage
+that with Shadow DOM.
+
+1317
+00:49:31,736 --> 00:49:33,810
+So I'm really
+excited about that.
+
+1318
+00:49:33,810 --> 00:49:36,602
+Additionally, the way that we
+use a component architecture
+
+1319
+00:49:36,602 --> 00:49:38,810
+at Facebook, we don't use
+the web component standard,
+
+1320
+00:49:38,810 --> 00:49:41,890
+but we use the same kind
+of ideas of encapsulated UI
+
+1321
+00:49:41,890 --> 00:49:45,630
+elements rather than
+templates or traditional MVC
+
+1322
+00:49:45,630 --> 00:49:48,510
+is we have a library that has
+been developed that is already
+
+1323
+00:49:48,510 --> 00:49:49,770
+accessible and ready to go.
+
+1324
+00:49:49,770 --> 00:49:53,350
+And people who don't know
+much about accessibility just
+
+1325
+00:49:53,350 --> 00:49:55,915
+go in, pull a component
+off the shelf, drop it in.
+
+1326
+00:49:55,915 --> 00:49:57,790
+PETER GASSTON: Yeah,
+we've been talking a lot
+
+1327
+00:49:57,790 --> 00:50:01,022
+about creating your own totally
+bespoke custom elements.
+
+1328
+00:50:01,022 --> 00:50:03,230
+But we shouldn't forget that
+that's a big part of it,
+
+1329
+00:50:03,230 --> 00:50:06,310
+as well, is extending existing
+elements becomes very, very
+
+1330
+00:50:06,310 --> 00:50:08,100
+easy through web
+components, as well.
+
+1331
+00:50:08,100 --> 00:50:09,860
+You can take your
+Select box, which
+
+1332
+00:50:09,860 --> 00:50:12,080
+we seem to be using as the
+default go-to for whenever
+
+1333
+00:50:12,080 --> 00:50:15,330
+we talk about it, and just
+add your own things to it.
+
+1334
+00:50:15,330 --> 00:50:18,120
+But the markup inside that,
+inside the Shadow DOM,
+
+1335
+00:50:18,120 --> 00:50:20,837
+still remains as accessible
+as it was before.
+
+1336
+00:50:20,837 --> 00:50:22,420
+When we are creating
+our own elements,
+
+1337
+00:50:22,420 --> 00:50:25,820
+again, we have to bake
+the accessibility into it.
+
+1338
+00:50:25,820 --> 00:50:28,157
+But you can put ARIA
+roles onto these things.
+
+1339
+00:50:28,157 --> 00:50:28,990
+You can do all that.
+
+1340
+00:50:28,990 --> 00:50:31,541
+If you view the Shadow DOM of
+any element that exists out
+
+1341
+00:50:31,541 --> 00:50:33,790
+there, you'll see that they've
+got ARIA roles in there
+
+1342
+00:50:33,790 --> 00:50:34,470
+already.
+
+1343
+00:50:34,470 --> 00:50:37,020
+We should be using that as
+a model of best practice.
+
+1344
+00:50:37,020 --> 00:50:38,044
+But it is a concern.
+
+1345
+00:50:38,044 --> 00:50:38,710
+Because people &mdash;
+
+1346
+00:50:38,710 --> 00:50:39,330
+AUDIENCE: [INAUDIBLE] question.
+
+1347
+00:50:39,330 --> 00:50:40,985
+Because there's a
+lot of accessibility
+
+1348
+00:50:40,985 --> 00:50:42,470
+thrown around here
+by non-experts.
+
+1349
+00:50:42,470 --> 00:50:45,307
+I'm very scared of what's
+going on here right now.
+
+1350
+00:50:45,307 --> 00:50:46,890
+We have a whole
+session on that later.
+
+1351
+00:50:46,890 --> 00:50:48,200
+DAN APPELQUIST: And we're
+going to talk about ARIA
+
+1352
+00:50:48,200 --> 00:50:49,860
+later, actually, I think.
+
+1353
+00:50:49,860 --> 00:50:50,650
+Yeah.
+
+1354
+00:50:50,650 --> 00:50:55,030
+I do notice that we have zero
+people connected to the system.
+
+1355
+00:50:55,030 --> 00:50:56,350
+AUDIENCE: It's down again.
+
+1356
+00:50:56,350 --> 00:50:58,100
+DAN APPELQUIST: OK,
+that's what I thought.
+
+1357
+00:50:58,100 --> 00:51:00,250
+So if there's somebody who
+wants to ask a question
+
+1358
+00:51:00,250 --> 00:51:06,200
+related to this &mdash;
+OK, yes, Jeremy.
+
+1359
+00:51:06,200 --> 00:51:09,071
+JEREMY: So yes, this is related
+to accessibility and semantics
+
+1360
+00:51:09,071 --> 00:51:10,570
+as well, as you
+pointed out, Nicole.
+
+1361
+00:51:10,570 --> 00:51:14,790
+It's one of the reasons
+for semantics to exist,
+
+1362
+00:51:14,790 --> 00:51:18,880
+is exposing hooks, for example,
+to assistive technology.
+
+1363
+00:51:18,880 --> 00:51:21,230
+But to say then,
+we're all sorted
+
+1364
+00:51:21,230 --> 00:51:23,720
+because we've got
+ARIA, so no problem.
+
+1365
+00:51:23,720 --> 00:51:27,740
+First of all, ARIA is intended
+as a stopgap solution working
+
+1366
+00:51:27,740 --> 00:51:29,090
+towards native semantics.
+
+1367
+00:51:29,090 --> 00:51:30,240
+That's the end goal.
+
+1368
+00:51:30,240 --> 00:51:31,730
+ARIA is to get us there.
+
+1369
+00:51:31,730 --> 00:51:33,480
+Also, if the whole
+point of Web Components
+
+1370
+00:51:33,480 --> 00:51:37,890
+is that we can invent these new
+browser elements, effectively,
+
+1371
+00:51:37,890 --> 00:51:40,060
+but then in order to
+make them accessible,
+
+1372
+00:51:40,060 --> 00:51:42,422
+we are restricted
+to what ARIA can do,
+
+1373
+00:51:42,422 --> 00:51:44,130
+then we're just passing
+the buck to ARIA.
+
+1374
+00:51:44,130 --> 00:51:47,650
+And unless there is a
+concept of ARIA components,
+
+1375
+00:51:47,650 --> 00:51:49,600
+then Web Components
+will always be
+
+1376
+00:51:49,600 --> 00:51:53,047
+using a small pool of
+accessibility hooks, which
+
+1377
+00:51:53,047 --> 00:51:54,630
+limits their scope,
+which kind of goes
+
+1378
+00:51:54,630 --> 00:51:57,570
+against the whole point
+of Web Components.
+
+1379
+00:51:57,570 --> 00:51:59,490
+ALEX KOMOROSKE: I
+agree with the person
+
+1380
+00:51:59,490 --> 00:52:01,566
+that I'm not an expert
+in accessibility,
+
+1381
+00:52:01,566 --> 00:52:03,190
+and I guess maybe
+this is best deferred
+
+1382
+00:52:03,190 --> 00:52:04,607
+to the accessibility panel.
+
+1383
+00:52:04,607 --> 00:52:07,190
+PETE HUNT: Well, you just need
+to make the primitives you have
+
+1384
+00:52:07,190 --> 00:52:09,620
+for composition as expressive
+as possible, right?
+
+1385
+00:52:09,620 --> 00:52:11,780
+Like, the only way
+to solve this problem
+
+1386
+00:52:11,780 --> 00:52:14,720
+is to be able to compose
+more complex things out
+
+1387
+00:52:14,720 --> 00:52:16,430
+of simpler things
+that are accessible
+
+1388
+00:52:16,430 --> 00:52:19,610
+and somehow make the system
+as a whole accessible.
+
+1389
+00:52:19,610 --> 00:52:23,140
+So Web Components need to be, or
+whatever component architecture
+
+1390
+00:52:23,140 --> 00:52:25,057
+you use, need to be as
+expressive as possible.
+
+1391
+00:52:25,057 --> 00:52:26,473
+And it's not just
+ARIA attributes.
+
+1392
+00:52:26,473 --> 00:52:27,600
+And it's not just styling.
+
+1393
+00:52:27,600 --> 00:52:28,230
+It's behavior.
+
+1394
+00:52:28,230 --> 00:52:30,000
+And I think you have
+to be able to compose
+
+1395
+00:52:30,000 --> 00:52:33,310
+with the full power of a
+real programming language
+
+1396
+00:52:33,310 --> 00:52:34,170
+to do that.
+
+1397
+00:52:34,170 --> 00:52:35,729
+And you need to be
+able to override
+
+1398
+00:52:35,729 --> 00:52:37,020
+specific bits of functionality.
+
+1399
+00:52:37,020 --> 00:52:38,728
+So part of it is kind
+of the architecture
+
+1400
+00:52:38,728 --> 00:52:40,940
+of the system you're
+using, and part of it
+
+1401
+00:52:40,940 --> 00:52:42,840
+is the power of the
+primitives that you have,
+
+1402
+00:52:42,840 --> 00:52:45,090
+which is why I think composing
+with DOM elements isn't
+
+1403
+00:52:45,090 --> 00:52:45,980
+powerful enough.
+
+1404
+00:52:45,980 --> 00:52:48,721
+I think you have to
+compose with like, Turing
+
+1405
+00:52:48,721 --> 00:52:50,470
+complete programming
+languages to do this.
+
+1406
+00:52:50,470 --> 00:52:51,800
+NICOLE SULLIVAN: I think
+you're also bringing up
+
+1407
+00:52:51,800 --> 00:52:54,810
+something important, which is
+that the whole web community is
+
+1408
+00:52:54,810 --> 00:52:57,580
+suffering with the fact that
+the accessibility side of web
+
+1409
+00:52:57,580 --> 00:53:02,870
+standards and the web and
+other side of web standards
+
+1410
+00:53:02,870 --> 00:53:04,550
+don't talk to each
+other nearly enough,
+
+1411
+00:53:04,550 --> 00:53:06,620
+and haven't figured
+out how it's supposed
+
+1412
+00:53:06,620 --> 00:53:08,670
+to work together very neatly.
+
+1413
+00:53:08,670 --> 00:53:10,850
+And so I think a lot of
+this we don't actually
+
+1414
+00:53:10,850 --> 00:53:12,500
+have answers for.
+
+1415
+00:53:12,500 --> 00:53:14,970
+I mean, yes, we're not
+accessibility experts.
+
+1416
+00:53:14,970 --> 00:53:18,850
+But also, we don't know how
+it's supposed to work together.
+
+1417
+00:53:18,850 --> 00:53:21,360
+And the standards
+teams themselves
+
+1418
+00:53:21,360 --> 00:53:23,219
+aren't really working together.
+
+1419
+00:53:23,219 --> 00:53:25,260
+DAN APPELQUIST: Other
+gentleman in the front row,
+
+1420
+00:53:25,260 --> 00:53:26,760
+can you introduce
+yourself, as well?
+
+1421
+00:53:26,760 --> 00:53:30,330
+AUDIENCE: Hey, Matt [? Bonn. ?]
+The question was kind of
+
+1422
+00:53:30,330 --> 00:53:32,590
+phrased like, you have
+accessibility on the web today.
+
+1423
+00:53:32,590 --> 00:53:35,200
+How does that apply
+to Polymer components?
+
+1424
+00:53:35,200 --> 00:53:37,430
+Is there anything Polymer
+and just Web Components
+
+1425
+00:53:37,430 --> 00:53:40,020
+in general can do
+that would basically
+
+1426
+00:53:40,020 --> 00:53:42,620
+make accessibility better?
+
+1427
+00:53:42,620 --> 00:53:45,400
+In other words,
+ignore what today is.
+
+1428
+00:53:45,400 --> 00:53:48,310
+If you could change it and
+make Web Components successful,
+
+1429
+00:53:48,310 --> 00:53:50,950
+ignoring everything
+now, what would you do?
+
+1430
+00:53:50,950 --> 00:53:53,180
+Like for me, you could add
+life cycle events saying,
+
+1431
+00:53:53,180 --> 00:53:54,280
+you're going to get focus.
+
+1432
+00:53:54,280 --> 00:53:55,062
+Deal with it.
+
+1433
+00:53:55,062 --> 00:53:57,020
+Like, that should be part
+of the web component,
+
+1434
+00:53:57,020 --> 00:54:00,527
+that they have to deal
+with that at that point.
+
+1435
+00:54:00,527 --> 00:54:02,360
+ALEX KOMOROSKE: Not an
+accessibility expert,
+
+1436
+00:54:02,360 --> 00:54:03,467
+so I guess that's &mdash;
+
+1437
+00:54:03,467 --> 00:54:05,550
+PETE HUNT: I mean, this
+is kind of what the Shadow
+
+1438
+00:54:05,550 --> 00:54:06,830
+DOM's trying to solve, right?
+
+1439
+00:54:06,830 --> 00:54:10,420
+Like, Select boxes seem
+to be pretty accessible.
+
+1440
+00:54:10,420 --> 00:54:12,230
+At least, they do
+the same semantics
+
+1441
+00:54:12,230 --> 00:54:14,060
+that the operating system does.
+
+1442
+00:54:14,060 --> 00:54:16,830
+One of the things, and Nicole
+had mentioned this before,
+
+1443
+00:54:16,830 --> 00:54:20,004
+is the more native UI you
+expose in the browser,
+
+1444
+00:54:20,004 --> 00:54:22,420
+the more you can reuse from
+the experts that have actually
+
+1445
+00:54:22,420 --> 00:54:23,190
+implemented it right.
+
+1446
+00:54:23,190 --> 00:54:24,898
+DAN APPELQUIST: Remy,
+I see your hand up,
+
+1447
+00:54:24,898 --> 00:54:26,940
+but we are going to move on.
+
+1448
+00:54:26,940 --> 00:54:28,940
+And we are going to pick
+up this topic hopefully
+
+1449
+00:54:28,940 --> 00:54:31,390
+in Christian's accessibility
+panel, as well.
+
+1450
+00:54:31,390 --> 00:54:34,830
+So I hope that we
+revisit this, as well.
+
+1451
+00:54:34,830 --> 00:54:39,950
+Our last question of
+this topic, some guy
+
+1452
+00:54:39,950 --> 00:54:47,870
+named Andrew Betts
+possibly needs to ask this.
+
+1453
+00:54:47,870 --> 00:54:49,977
+It's a long-y.
+
+1454
+00:54:49,977 --> 00:54:52,060
+ANDREW BETTS: Until web
+components are more widely
+
+1455
+00:54:52,060 --> 00:54:54,290
+supported, in what
+use cases would
+
+1456
+00:54:54,290 --> 00:55:05,070
+you consider polyfills
+like Polymer or X-Tags
+
+1457
+00:55:05,070 --> 00:55:07,420
+over alternative
+component frameworks?
+
+1458
+00:55:07,420 --> 00:55:09,670
+To what extent do the
+existence of polyfills
+
+1459
+00:55:09,670 --> 00:55:11,370
+hinder or slow down
+the implementation
+
+1460
+00:55:11,370 --> 00:55:12,490
+of Web Components?
+
+1461
+00:55:12,490 --> 00:55:14,807
+
+1462
+00:55:14,807 --> 00:55:16,390
+NICOLE SULLIVAN: I
+couldn't hear that.
+
+1463
+00:55:16,390 --> 00:55:17,473
+DAN APPELQUIST: Polyfills.
+
+1464
+00:55:17,473 --> 00:55:20,500
+So the question is really
+related to polyfills.
+
+1465
+00:55:20,500 --> 00:55:27,170
+And I think the crux of it is,
+are the existence of polyfills
+
+1466
+00:55:27,170 --> 00:55:31,390
+going to hinder or help the
+adoption or the implementation
+
+1467
+00:55:31,390 --> 00:55:36,370
+of Web Components within
+browsers in general
+
+1468
+00:55:36,370 --> 00:55:37,520
+in the developer community?
+
+1469
+00:55:37,520 --> 00:55:38,479
+Any thoughts on that?
+
+1470
+00:55:38,479 --> 00:55:40,020
+ALEX KOMOROSKE: I
+think it will help.
+
+1471
+00:55:40,020 --> 00:55:42,061
+It'll help the adoption
+in other browser vendors.
+
+1472
+00:55:42,061 --> 00:55:45,070
+Because it allows developers
+to use the technologies today
+
+1473
+00:55:45,070 --> 00:55:46,740
+in a way that actually
+works quite well.
+
+1474
+00:55:46,740 --> 00:55:48,823
+It's just when the native
+implementation is there,
+
+1475
+00:55:48,823 --> 00:55:50,080
+it's much faster.
+
+1476
+00:55:50,080 --> 00:55:51,590
+And so like Shadow
+DOM, for example,
+
+1477
+00:55:51,590 --> 00:55:53,350
+is a very complicated
+thing to polyfill.
+
+1478
+00:55:53,350 --> 00:55:55,470
+And it's not possible
+to do it 100% perfectly.
+
+1479
+00:55:55,470 --> 00:55:58,696
+CSS in particular is very hard
+to polyfill correctly there.
+
+1480
+00:55:58,696 --> 00:56:00,329
+And then when it's
+supported natively,
+
+1481
+00:56:00,329 --> 00:56:02,620
+it's just much, much faster
+[INAUDIBLE] done in script.
+
+1482
+00:56:02,620 --> 00:56:04,911
+DAN APPELQUIST: I see somebody
+who might know something
+
+1483
+00:56:04,911 --> 00:56:08,295
+about polyfills
+asking a question.
+
+1484
+00:56:08,295 --> 00:56:10,120
+AUDIENCE: It's not
+specifically polyfills.
+
+1485
+00:56:10,120 --> 00:56:14,160
+But when we get to the day
+when we're including Polymer,
+
+1486
+00:56:14,160 --> 00:56:17,099
+and we're including this
+other web component that
+
+1487
+00:56:17,099 --> 00:56:18,890
+comes from another
+website, and another web
+
+1488
+00:56:18,890 --> 00:56:20,660
+component from another
+website, and all
+
+1489
+00:56:20,660 --> 00:56:30,720
+the magic is kind of tucked
+away between my X-gif tag,
+
+1490
+00:56:30,720 --> 00:56:32,730
+those Web Components
+are going to be carrying
+
+1491
+00:56:32,730 --> 00:56:34,660
+all their own
+JavaScript, for instance.
+
+1492
+00:56:34,660 --> 00:56:38,030
+What if they all pull in their
+own jQuery library or polyfills
+
+1493
+00:56:38,030 --> 00:56:39,027
+library for all &mdash;
+
+1494
+00:56:39,027 --> 00:56:41,110
+NICOLE SULLIVAN: And
+different versions of jQuery.
+
+1495
+00:56:41,110 --> 00:56:42,250
+AUDIENCE: Yeah, different
+versions of jQuery.
+
+1496
+00:56:42,250 --> 00:56:43,530
+The version's not a
+problem, because they're
+
+1497
+00:56:43,530 --> 00:56:44,905
+going to be
+sandboxed off, right?
+
+1498
+00:56:44,905 --> 00:56:45,420
+I assume.
+
+1499
+00:56:45,420 --> 00:56:46,696
+NICOLE SULLIVAN: Sure, but
+that's a lot of components.
+
+1500
+00:56:46,696 --> 00:56:49,020
+AUDIENCE: The overhead for
+having four or five web
+
+1501
+00:56:49,020 --> 00:56:52,900
+components where they're
+all pulling in JavaScript &mdash;
+
+1502
+00:56:52,900 --> 00:56:54,920
+there is jQuery, but from
+different locations &mdash;
+
+1503
+00:56:54,920 --> 00:56:57,076
+how do we deal with that?
+
+1504
+00:56:57,076 --> 00:56:59,450
+How do we not end up returning
+to the days of [INAUDIBLE]
+
+1505
+00:56:59,450 --> 00:57:00,690
+drive, where we're just
+slapping in big blocks of code
+
+1506
+00:57:00,690 --> 00:57:02,830
+and going, fuck it, it works.
+
+1507
+00:57:02,830 --> 00:57:03,980
+ALEX KOMOROSKE: So one of
+the cool things about HTML
+
+1508
+00:57:03,980 --> 00:57:06,430
+imports, too, is they can do
+deduping of those resources.
+
+1509
+00:57:06,430 --> 00:57:09,160
+So different components
+can rely on the same thing,
+
+1510
+00:57:09,160 --> 00:57:11,640
+and it won't be
+re-downloaded twice.
+
+1511
+00:57:11,640 --> 00:57:14,550
+And of course, if you use
+some kind of minification step
+
+1512
+00:57:14,550 --> 00:57:16,020
+before you push
+to production, you
+
+1513
+00:57:16,020 --> 00:57:18,417
+can make sure that
+you take care of that.
+
+1514
+00:57:18,417 --> 00:57:20,750
+But of course, if you have
+different versions of jQuery,
+
+1515
+00:57:20,750 --> 00:57:23,200
+you're going to want to
+avoid that as a developer,
+
+1516
+00:57:23,200 --> 00:57:24,292
+just like you do today.
+
+1517
+00:57:24,292 --> 00:57:25,250
+You don't want to use &mdash;
+
+1518
+00:57:25,250 --> 00:57:27,070
+AUDIENCE: What I'm
+talking about is,
+
+1519
+00:57:27,070 --> 00:57:28,980
+like I'm using Brick
+and Polymer together,
+
+1520
+00:57:28,980 --> 00:57:30,813
+because you've got
+different Web Components,
+
+1521
+00:57:30,813 --> 00:57:32,650
+and I want to use both of them.
+
+1522
+00:57:32,650 --> 00:57:38,520
+How does that even
+get surfaced to me?
+
+1523
+00:57:38,520 --> 00:57:40,970
+DAN APPELQUIST: Let's get
+X-Tag's perspective on this.
+
+1524
+00:57:40,970 --> 00:57:42,070
+SOLEDAD PENADES: I think
+it's pretty much the same.
+
+1525
+00:57:42,070 --> 00:57:43,210
+I mean, you have
+to be responsible.
+
+1526
+00:57:43,210 --> 00:57:44,960
+You have to be
+minifying just choosing
+
+1527
+00:57:44,960 --> 00:57:45,960
+the components you want.
+
+1528
+00:57:45,960 --> 00:57:48,570
+It's just like if you just
+load the whole jQuery UI,
+
+1529
+00:57:48,570 --> 00:57:49,612
+they're huge.
+
+1530
+00:57:49,612 --> 00:57:50,820
+And it's the same with Brick.
+
+1531
+00:57:50,820 --> 00:57:52,986
+If you download the whole
+thing, it's not that huge.
+
+1532
+00:57:52,986 --> 00:57:55,600
+But it's still a lot of
+things you might not want.
+
+1533
+00:57:55,600 --> 00:57:59,030
+But you can choose, build
+your own distribution.
+
+1534
+00:57:59,030 --> 00:58:01,750
+I mean, you've got script
+for backend things,
+
+1535
+00:58:01,750 --> 00:58:03,100
+like as they do.
+
+1536
+00:58:03,100 --> 00:58:05,425
+I think we call
+it smush in a way.
+
+1537
+00:58:05,425 --> 00:58:07,300
+PETE HUNT: Is this like
+a fundamental problem
+
+1538
+00:58:07,300 --> 00:58:08,321
+with software, though?
+
+1539
+00:58:08,321 --> 00:58:09,820
+SOLEDAD PENADES:
+It's a big process.
+
+1540
+00:58:09,820 --> 00:58:11,320
+PETE HUNT: If you
+coded in the '90s,
+
+1541
+00:58:11,320 --> 00:58:13,786
+you know DLL hell and
+that kind of thing.
+
+1542
+00:58:13,786 --> 00:58:16,160
+So I think that the pipe dream
+of like pulling components
+
+1543
+00:58:16,160 --> 00:58:17,576
+off the shelf and
+dropping them in
+
+1544
+00:58:17,576 --> 00:58:22,605
+is way more nuanced than
+people normally say it is.
+
+1545
+00:58:22,605 --> 00:58:24,480
+For us, we just run it
+through a build system
+
+1546
+00:58:24,480 --> 00:58:27,027
+and we dedupe and alert when
+there's different versions.
+
+1547
+00:58:27,027 --> 00:58:28,985
+AUDIENCE: You're using
+your own Web Components.
+
+1548
+00:58:28,985 --> 00:58:30,490
+So you're not using
+anyone else's?
+
+1549
+00:58:30,490 --> 00:58:32,781
+PETE HUNT: Well, we have a
+component based architecture
+
+1550
+00:58:32,781 --> 00:58:34,412
+that we own the whole stack, so.
+
+1551
+00:58:34,412 --> 00:58:35,870
+NICOLE SULLIVAN:
+And they also have
+
+1552
+00:58:35,870 --> 00:58:37,970
+a backend that is
+component based
+
+1553
+00:58:37,970 --> 00:58:40,750
+and matches up exactly with
+the front end part of it.
+
+1554
+00:58:40,750 --> 00:58:41,684
+So that changes it.
+
+1555
+00:58:41,684 --> 00:58:43,350
+ALEX KOMOROSKE: Also,
+practically today,
+
+1556
+00:58:43,350 --> 00:58:46,632
+Polymer and X-Tags use the
+same layer of polyfills below.
+
+1557
+00:58:46,632 --> 00:58:48,590
+And remember, that's
+where the bulk of the code
+
+1558
+00:58:48,590 --> 00:58:50,000
+is, in Polymer in particular.
+
+1559
+00:58:50,000 --> 00:58:52,830
+And remember, that goes to
+zero over time, is the idea.
+
+1560
+00:58:52,830 --> 00:58:54,310
+NICOLE SULLIVAN: I don't
+see how that's true, though.
+
+1561
+00:58:54,310 --> 00:58:56,476
+Like yeah, that's true in
+a really simple component.
+
+1562
+00:58:56,476 --> 00:58:59,220
+But as the components want to
+do all these widgety things,
+
+1563
+00:58:59,220 --> 00:59:00,969
+it's going to have the
+same amount of code
+
+1564
+00:59:00,969 --> 00:59:04,480
+that any library that would have
+done the same thing has now.
+
+1565
+00:59:04,480 --> 00:59:04,760
+ALEX KOMOROSKE: Not necessarily.
+
+1566
+00:59:04,760 --> 00:59:07,093
+Because to the extent that
+today, a number of frameworks
+
+1567
+00:59:07,093 --> 00:59:09,002
+have no other choice
+but to retreat to script
+
+1568
+00:59:09,002 --> 00:59:10,960
+and to create their own
+world that uses, again,
+
+1569
+00:59:10,960 --> 00:59:14,620
+DOM as just a sort of
+dumb rendering service.
+
+1570
+00:59:14,620 --> 00:59:16,870
+In a world where you're
+working more closely with DOM,
+
+1571
+00:59:16,870 --> 00:59:18,286
+you don't have
+that overhead where
+
+1572
+00:59:18,286 --> 00:59:19,710
+you have to create
+your own world,
+
+1573
+00:59:19,710 --> 00:59:20,751
+create your own concepts.
+
+1574
+00:59:20,751 --> 00:59:22,750
+There's parallel
+hierarchy in the script.
+
+1575
+00:59:22,750 --> 00:59:23,906
+DAN APPELQUIST: In a world.
+
+1576
+00:59:23,906 --> 00:59:25,810
+[LAUGHTER]
+
+1577
+00:59:25,810 --> 00:59:27,930
+All right, so I'm being
+told from the front row
+
+1578
+00:59:27,930 --> 00:59:29,600
+that we need to wrap up.
+
+1579
+00:59:29,600 --> 00:59:35,929
+I think my personal
+closing statement might be,
+
+1580
+00:59:35,929 --> 00:59:37,595
+a web component, some
+assembly required.
+
+1581
+00:59:37,595 --> 00:59:42,390
+
+1582
+00:59:42,390 --> 00:59:44,330
+What is it, vague
+but interesting?
+
+1583
+00:59:44,330 --> 00:59:45,410
+Maybe.
+
+1584
+00:59:45,410 --> 00:59:49,190
+So we'll leave it at that.
+
+1585
+00:59:49,190 --> 00:59:49,920
+Thanks very much.
+
+1586
+00:59:49,920 --> 00:59:52,070
+And thanks to our panel.
+
+1587
+00:59:52,070 --> 00:59:56,236
+

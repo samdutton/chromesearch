@@ -1,0 +1,7043 @@
+1
+00:00:00,000 --> 00:00:06,262
+ 
+
+2
+00:00:06,262 --> 00:00:07,803
+MARTIN BEEBY: But
+not in a pervy way.
+
+3
+00:00:07,803 --> 00:00:09,590
+Chris will be disappointed.
+
+4
+00:00:09,590 --> 00:00:12,290
+Anyway, we're
+going to be talking
+
+5
+00:00:12,290 --> 00:00:15,740
+about pointers and
+interactions, a topic which
+
+6
+00:00:15,740 --> 00:00:17,140
+is very close to my heart.
+
+7
+00:00:17,140 --> 00:00:20,300
+It sounds like a dating
+website, doesn't it?
+
+8
+00:00:20,300 --> 00:00:27,640
+Anyway, I'm going to start
+this by introducing the panel.
+
+9
+00:00:27,640 --> 00:00:32,050
+We've got, over here,
+the lovely Patrick Lauke.
+
+10
+00:00:32,050 --> 00:00:34,370
+I always get that name wrong.
+
+11
+00:00:34,370 --> 00:00:35,515
+Have I got that name wrong?
+
+12
+00:00:35,515 --> 00:00:36,790
+Patrick Lauke?
+
+13
+00:00:36,790 --> 00:00:38,550
+[INAUDIBLE]
+
+14
+00:00:38,550 --> 00:00:41,065
+Jorik Tangelder
+at the end there.
+
+15
+00:00:41,065 --> 00:00:42,440
+Jorik is the author
+of Hammer.js,
+
+16
+00:00:42,440 --> 00:00:44,510
+which is a library I
+used very recently.
+
+17
+00:00:44,510 --> 00:00:45,990
+It's wonderful.
+
+18
+00:00:45,990 --> 00:00:48,292
+It's dealing with touch
+events and now pointer events
+
+19
+00:00:48,292 --> 00:00:49,250
+as well, more recently.
+
+20
+00:00:49,250 --> 00:00:51,450
+He builds mobile
+apps for a living
+
+21
+00:00:51,450 --> 00:00:53,860
+and loves to experiment
+with new techniques.
+
+22
+00:00:53,860 --> 00:00:56,300
+Patrick-- I didn't
+tell what you actually
+
+23
+00:00:56,300 --> 00:00:59,060
+did-- you used to work
+for opera, didn't you?
+
+24
+00:00:59,060 --> 00:01:00,394
+Being a Dev Row guy?
+
+25
+00:01:00,394 --> 00:01:02,560
+But he's now an accessibility
+consultant at Paciello
+
+26
+00:01:02,560 --> 00:01:05,960
+and member of the Pointer Events
+Working Group and W3C Touch
+
+27
+00:01:05,960 --> 00:01:09,830
+Events Community Group.
+
+28
+00:01:09,830 --> 00:01:12,160
+We have Pete Smart over here.
+
+29
+00:01:12,160 --> 00:01:15,040
+Pete is very much
+UX focused, and he's
+
+30
+00:01:15,040 --> 00:01:16,990
+done a lot of incredible
+work with ViziCities
+
+31
+00:01:16,990 --> 00:01:19,362
+recently with his partner.
+
+32
+00:01:19,362 --> 00:01:20,570
+PETE SMART: Partner-in-crime.
+
+33
+00:01:20,570 --> 00:01:22,528
+MARTIN BEEBY: Yeah, I
+was going to say partner.
+
+34
+00:01:22,528 --> 00:01:24,280
+I didn't know what to say.
+
+35
+00:01:24,280 --> 00:01:25,940
+Not partner.
+
+36
+00:01:25,940 --> 00:01:28,470
+Rob Hawkes, incredible 3D
+visualization [INAUDIBLE].
+
+37
+00:01:28,470 --> 00:01:29,750
+You should check it out.
+
+38
+00:01:29,750 --> 00:01:33,420
+And he's also the author of
+"50 Problems in 50 Days,"
+
+39
+00:01:33,420 --> 00:01:36,580
+which describes my
+last 50 days organizing
+
+40
+00:01:36,580 --> 00:01:38,970
+this portion of the event.
+
+41
+00:01:38,970 --> 00:01:43,174
+And then finally we have
+the wonderful Steve Workman.
+
+42
+00:01:43,174 --> 00:01:44,840
+I've known Steve for
+an awful long time.
+
+43
+00:01:44,840 --> 00:01:49,680
+An incredible web developer,
+and very insightful young man,
+
+44
+00:01:49,680 --> 00:01:51,240
+I find.
+
+45
+00:01:51,240 --> 00:01:54,443
+So next I'm going to
+pass over to Rick Byers.
+
+46
+00:01:54,443 --> 00:01:57,504
+RICK BYERS: Do you want
+to introduce me first?
+
+47
+00:01:57,504 --> 00:01:59,170
+MARTIN BEEBY: Rick
+Byers is from Google.
+
+48
+00:01:59,170 --> 00:02:01,090
+He's a wonderful man.
+
+49
+00:02:01,090 --> 00:02:03,547
+And he'll be talking about
+pointers and interactions.
+
+50
+00:02:03,547 --> 00:02:04,630
+Thank you very much, Rick.
+
+51
+00:02:04,630 --> 00:02:06,100
+RICK BYERS: Thanks.
+
+52
+00:02:06,100 --> 00:02:13,515
+[APPLAUSE] Let me get my
+slides displaying here.
+
+53
+00:02:13,515 --> 00:02:30,280
+ 
+
+54
+00:02:30,280 --> 00:02:33,305
+Sorry about this.
+
+55
+00:02:33,305 --> 00:02:33,805
+OK.
+
+56
+00:02:33,805 --> 00:02:37,630
+ 
+
+57
+00:02:37,630 --> 00:02:39,630
+MARTIN BEEBY: Yeah, we
+did it on purpose, sorry.
+
+58
+00:02:39,630 --> 00:02:46,310
+ 
+
+59
+00:02:46,310 --> 00:02:47,580
+RICK BYERS: All right.
+
+60
+00:02:47,580 --> 00:02:49,620
+I'm here to talk pointers
+and interactions.
+
+61
+00:02:49,620 --> 00:02:52,430
+To me, this is about how do
+we involve input on the web?
+
+62
+00:02:52,430 --> 00:02:55,610
+First of all, even just
+looking backwards and saying,
+
+63
+00:02:55,610 --> 00:02:57,410
+how do we catch up
+to native mobile?
+
+64
+00:02:57,410 --> 00:02:59,130
+I think there's a lot
+of ways that input
+
+65
+00:02:59,130 --> 00:03:01,660
+is better on native
+today that we really
+
+66
+00:03:01,660 --> 00:03:03,000
+need to catch up on the web.
+
+67
+00:03:03,000 --> 00:03:04,280
+But also looking
+forward and saying,
+
+68
+00:03:04,280 --> 00:03:05,260
+what are the things
+that are coming?
+
+69
+00:03:05,260 --> 00:03:06,843
+And how can we prepare
+the web to make
+
+70
+00:03:06,843 --> 00:03:09,220
+sure we're ready for all sorts
+of new ways of interacting
+
+71
+00:03:09,220 --> 00:03:11,820
+with content and applications?
+
+72
+00:03:11,820 --> 00:03:14,050
+So I'm going to talk about
+this from my biased view
+
+73
+00:03:14,050 --> 00:03:16,020
+on the Chrome team.
+
+74
+00:03:16,020 --> 00:03:19,520
+I'm going to talk about the
+ways in which we classify
+
+75
+00:03:19,520 --> 00:03:22,487
+the problems and the priority
+that we're thinking about,
+
+76
+00:03:22,487 --> 00:03:24,070
+so that you all can
+tell me I'm stupid
+
+77
+00:03:24,070 --> 00:03:25,900
+and that I should re-prioritize.
+
+78
+00:03:25,900 --> 00:03:26,980
+But first and
+foremost-- this probably
+
+79
+00:03:26,980 --> 00:03:29,105
+comes as no surprise-- our
+top priority in our team
+
+80
+00:03:29,105 --> 00:03:30,450
+is performance.
+
+81
+00:03:30,450 --> 00:03:33,500
+If your site doesn't
+perform well to your input,
+
+82
+00:03:33,500 --> 00:03:37,290
+it doesn't stick your
+finger, if things
+
+83
+00:03:37,290 --> 00:03:39,470
+don't respond immediately
+when you touch them.
+
+84
+00:03:39,470 --> 00:03:41,510
+Or even on a laptop,
+if things are
+
+85
+00:03:41,510 --> 00:03:42,900
+janky when you're scrolling.
+
+86
+00:03:42,900 --> 00:03:44,649
+That's a real problem
+for user engagement.
+
+87
+00:03:44,649 --> 00:03:46,350
+So this has got to
+be the top priority.
+
+88
+00:03:46,350 --> 00:03:48,530
+But we've also got a big
+problem with richness.
+
+89
+00:03:48,530 --> 00:03:52,360
+Today, it's possible to build
+really rich interactive user
+
+90
+00:03:52,360 --> 00:03:54,600
+interfaces, and
+frankly, it's easier
+
+91
+00:03:54,600 --> 00:03:55,940
+to do that on other platforms.
+
+92
+00:03:55,940 --> 00:03:58,439
+We've got some problems on the
+web where certain types of UI
+
+93
+00:03:58,439 --> 00:04:01,620
+are really hard to do well
+without reimplementing
+
+94
+00:04:01,620 --> 00:04:04,724
+all sorts of browser
+features yourself.
+
+95
+00:04:04,724 --> 00:04:06,140
+And last but not
+least, we've also
+
+96
+00:04:06,140 --> 00:04:07,290
+got a problem with rationality.
+
+97
+00:04:07,290 --> 00:04:09,623
+And this is just the idea
+that [? the pit of ?] success,
+
+98
+00:04:09,623 --> 00:04:11,900
+the idea that the obvious
+thing should really ideally
+
+99
+00:04:11,900 --> 00:04:14,274
+be the correct thing
+most of the time.
+
+100
+00:04:14,274 --> 00:04:16,649
+And you don't want to have a
+million different foot-guns,
+
+101
+00:04:16,649 --> 00:04:19,149
+where every time you try to do
+something that seems obvious,
+
+102
+00:04:19,149 --> 00:04:21,275
+you shoot yourself in the
+foot, something breaks.
+
+103
+00:04:21,275 --> 00:04:22,900
+And like I said, I
+think we're not here
+
+104
+00:04:22,900 --> 00:04:24,260
+on the web for any
+of these things yet.
+
+105
+00:04:24,260 --> 00:04:25,840
+I think we've got
+to fix all of this.
+
+106
+00:04:25,840 --> 00:04:28,110
+But what's really
+worse is that there's
+
+107
+00:04:28,110 --> 00:04:30,850
+these trade-offs between them,
+and we keep dancing around.
+
+108
+00:04:30,850 --> 00:04:31,805
+For example, over
+the last couple
+
+109
+00:04:31,805 --> 00:04:33,030
+of years with all of
+the focus on mobile,
+
+110
+00:04:33,030 --> 00:04:35,446
+I think we've really put a lot
+of emphasis on performance,
+
+111
+00:04:35,446 --> 00:04:38,310
+and I think we've lost some
+richness and rationality
+
+112
+00:04:38,310 --> 00:04:41,160
+as a result, by not focusing
+on that at the same time.
+
+113
+00:04:41,160 --> 00:04:44,820
+So I'm going to talk about
+three-- a big problem for each
+
+114
+00:04:44,820 --> 00:04:46,320
+of these areas.
+
+115
+00:04:46,320 --> 00:04:49,070
+And just talk about how it's
+affected performance, richness,
+
+116
+00:04:49,070 --> 00:04:51,650
+and rationality.
+
+117
+00:04:51,650 --> 00:04:53,520
+So the first one's
+been talked to death.
+
+118
+00:04:53,520 --> 00:04:55,103
+I'm not going to
+spend too long on it.
+
+119
+00:04:55,103 --> 00:04:57,560
+But obviously touch latency
+is definitely too high.
+
+120
+00:04:57,560 --> 00:05:01,220
+On a touch device, we're trying
+to present a physical illusion
+
+121
+00:05:01,220 --> 00:05:03,710
+that you're manipulating
+a physical object.
+
+122
+00:05:03,710 --> 00:05:05,660
+And as soon as the
+latency goes up
+
+123
+00:05:05,660 --> 00:05:07,160
+so it's not sticking
+to your finger,
+
+124
+00:05:07,160 --> 00:05:11,060
+or if it's variable latency-- if
+you've got latency jank-- then
+
+125
+00:05:11,060 --> 00:05:12,677
+it destroys that illusion.
+
+126
+00:05:12,677 --> 00:05:13,760
+And that's a real problem.
+
+127
+00:05:13,760 --> 00:05:16,150
+It really causes
+engagement to collapse.
+
+128
+00:05:16,150 --> 00:05:17,845
+And there's been a
+ton of improvements
+
+129
+00:05:17,845 --> 00:05:20,562
+here over the last
+several years.
+
+130
+00:05:20,562 --> 00:05:22,270
+Probably the biggest
+architectural change
+
+131
+00:05:22,270 --> 00:05:24,970
+to the platform, even those
+not exposed to the apps,
+
+132
+00:05:24,970 --> 00:05:28,180
+is that most browsers now will
+scroll on a completely separate
+
+133
+00:05:28,180 --> 00:05:31,030
+thread to try to insulate the
+scrolling from what else is
+
+134
+00:05:31,030 --> 00:05:32,810
+happening in the browser.
+
+135
+00:05:32,810 --> 00:05:35,690
+There's been a ton of talk
+about the 300 millisecond click
+
+136
+00:05:35,690 --> 00:05:36,440
+delay.
+
+137
+00:05:36,440 --> 00:05:38,025
+And we've talked that to death.
+
+138
+00:05:38,025 --> 00:05:39,900
+But the one thing I'm
+most excited about here
+
+139
+00:05:39,900 --> 00:05:43,160
+is we've just got-- we now have
+a standard way of turning off
+
+140
+00:05:43,160 --> 00:05:45,140
+the click delay on
+individual parts of the page
+
+141
+00:05:45,140 --> 00:05:47,284
+without turning
+off anything else.
+
+142
+00:05:47,284 --> 00:05:48,700
+You just turn off
+double-tap zoom.
+
+143
+00:05:48,700 --> 00:05:50,991
+We've got a new CSS property
+called Touch Action that's
+
+144
+00:05:50,991 --> 00:05:52,195
+shipping in Chrome 35.
+
+145
+00:05:52,195 --> 00:05:53,570
+Firefox is going
+to have it soon.
+
+146
+00:05:53,570 --> 00:05:55,030
+Touch Action does
+much more than this,
+
+147
+00:05:55,030 --> 00:05:56,404
+but this is one
+of the things I'm
+
+148
+00:05:56,404 --> 00:05:59,170
+excited about that Touch
+Action lets you do.
+
+149
+00:05:59,170 --> 00:06:03,140
+And we continuously have
+been making tooling better.
+
+150
+00:06:03,140 --> 00:06:05,229
+I think we still have
+a long way to go.
+
+151
+00:06:05,229 --> 00:06:07,020
+On my team we've been
+working, for example,
+
+152
+00:06:07,020 --> 00:06:09,439
+on trying to accurately
+correlate input to painting.
+
+153
+00:06:09,439 --> 00:06:11,730
+It's not good enough to just
+look at your timeline view
+
+154
+00:06:11,730 --> 00:06:13,896
+and say, oh I'm getting
+stuff at 60 frames a second,
+
+155
+00:06:13,896 --> 00:06:16,940
+if that painting is happening
+a second behind when
+
+156
+00:06:16,940 --> 00:06:18,400
+the input came in.
+
+157
+00:06:18,400 --> 00:06:21,074
+And so we've done a lot of work
+to plumb latency tracking data
+
+158
+00:06:21,074 --> 00:06:23,740
+down through Chrome, all the way
+from the input events coming in
+
+159
+00:06:23,740 --> 00:06:26,300
+from a kernel, down to
+when we tell the GPU, hey,
+
+160
+00:06:26,300 --> 00:06:27,610
+we want to display this.
+
+161
+00:06:27,610 --> 00:06:29,110
+And I'm hoping that
+eventually we'll
+
+162
+00:06:29,110 --> 00:06:32,634
+get that exposed in a more
+friendly way through DevTools.
+
+163
+00:06:32,634 --> 00:06:34,300
+But for now it's there
+on Chrome Tracing
+
+164
+00:06:34,300 --> 00:06:37,890
+if anyone wants to play with it.
+
+165
+00:06:37,890 --> 00:06:40,070
+So then, in terms of
+richness, the biggest-- this
+
+166
+00:06:40,070 --> 00:06:41,380
+is where I'm starting
+to focus a lot more.
+
+167
+00:06:41,380 --> 00:06:43,590
+I think we've neglected
+this space for a long time.
+
+168
+00:06:43,590 --> 00:06:46,360
+And as we've done
+all these fast paths,
+
+169
+00:06:46,360 --> 00:06:48,036
+we've taken control
+away from developers
+
+170
+00:06:48,036 --> 00:06:49,780
+in the name of performance.
+
+171
+00:06:49,780 --> 00:06:52,259
+And frankly, I think when we
+look at it really closely,
+
+172
+00:06:52,259 --> 00:06:53,050
+it's not necessary.
+
+173
+00:06:53,050 --> 00:06:55,980
+There's ways that we can
+give developers control
+
+174
+00:06:55,980 --> 00:06:58,210
+but still maintain high
+performance, or at least
+
+175
+00:06:58,210 --> 00:06:59,960
+high performance by default.
+
+176
+00:06:59,960 --> 00:07:02,976
+And this comes back to the
+Extensible Web Manifesto
+
+177
+00:07:02,976 --> 00:07:04,600
+that I think has been
+mentioned before,
+
+178
+00:07:04,600 --> 00:07:06,308
+the idea that as a
+community, we're never
+
+179
+00:07:06,308 --> 00:07:09,040
+going to evolve the web to
+be the platform that we want
+
+180
+00:07:09,040 --> 00:07:09,620
+it to be.
+
+181
+00:07:09,620 --> 00:07:12,080
+To compete with all of
+our other platforms,
+
+182
+00:07:12,080 --> 00:07:14,885
+if we keep spending
+years focusing
+
+183
+00:07:14,885 --> 00:07:16,510
+on these high-level
+features and trying
+
+184
+00:07:16,510 --> 00:07:18,430
+to agree between browsers
+and the high-level features.
+
+185
+00:07:18,430 --> 00:07:19,990
+Instead, I think we
+really need to focus on,
+
+186
+00:07:19,990 --> 00:07:21,198
+what are the core primitives?
+
+187
+00:07:21,198 --> 00:07:23,427
+What's the kernel
+that all browsers are
+
+188
+00:07:23,427 --> 00:07:25,260
+going to expose so that
+we can enable jQuery
+
+189
+00:07:25,260 --> 00:07:26,240
+in different frameworks?
+
+190
+00:07:26,240 --> 00:07:28,390
+And all of you to innovate
+like crazy and try new things,
+
+191
+00:07:28,390 --> 00:07:30,850
+but they're having to wait for
+the long, drawn-out Sanders
+
+192
+00:07:30,850 --> 00:07:33,090
+process and agreements between
+all the browser vendors.
+
+193
+00:07:33,090 --> 00:07:35,673
+So one of the things that really
+bothers me here is, scrolling
+
+194
+00:07:35,673 --> 00:07:37,460
+is so critical in
+this experience.
+
+195
+00:07:37,460 --> 00:07:39,440
+But if you want to
+customize it-- for example,
+
+196
+00:07:39,440 --> 00:07:41,023
+there's a great
+library called iScroll
+
+197
+00:07:41,023 --> 00:07:43,400
+that customizes scrolling
+in various ways-- you've
+
+198
+00:07:43,400 --> 00:07:45,858
+got to reimplement everything
+yourself that the browser was
+
+199
+00:07:45,858 --> 00:07:48,130
+already doing, and
+you're prevented
+
+200
+00:07:48,130 --> 00:07:49,630
+from doing what the
+browser's doing.
+
+201
+00:07:49,630 --> 00:07:51,440
+You don't have access
+to this separate thread
+
+202
+00:07:51,440 --> 00:07:52,770
+I was telling you
+about, so everything's
+
+203
+00:07:52,770 --> 00:07:54,436
+going to be blocked
+on your main thread.
+
+204
+00:07:54,436 --> 00:07:55,739
+It's going to make it jankier.
+
+205
+00:07:55,739 --> 00:07:57,280
+Depending on the
+browser, you may not
+
+206
+00:07:57,280 --> 00:08:00,245
+have access to the precise
+physical pixel locations
+
+207
+00:08:00,245 --> 00:08:01,980
+of where the user's
+finger is, because
+
+208
+00:08:01,980 --> 00:08:05,780
+on most-- on mobile devices,
+anyway-- one CSS pixels more
+
+209
+00:08:05,780 --> 00:08:07,780
+than one hardware pixel,
+only the browser knows,
+
+210
+00:08:07,780 --> 00:08:10,450
+in many cases, where exactly
+the input or the scroll offsets
+
+211
+00:08:10,450 --> 00:08:12,540
+are.
+
+212
+00:08:12,540 --> 00:08:15,440
+And you might also not have
+as accurate information
+
+213
+00:08:15,440 --> 00:08:17,060
+about velocities
+that the browser has.
+
+214
+00:08:17,060 --> 00:08:20,061
+I think we need to fix all
+these low-level primitives so
+
+215
+00:08:20,061 --> 00:08:22,560
+that somebody like iScroll can
+go and build scrolling that's
+
+216
+00:08:22,560 --> 00:08:24,143
+just as good as what
+the browser does,
+
+217
+00:08:24,143 --> 00:08:25,864
+with some additional features.
+
+218
+00:08:25,864 --> 00:08:27,530
+Even more immediately
+than that, there's
+
+219
+00:08:27,530 --> 00:08:31,540
+a whole bunch of UIs that
+are becoming really popular.
+
+220
+00:08:31,540 --> 00:08:33,720
+Effects like Pull To
+Refresh, where when
+
+221
+00:08:33,720 --> 00:08:36,350
+we've made these trade-offs in
+the browsers and we've said,
+
+222
+00:08:36,350 --> 00:08:37,850
+scrolling performance
+over all else.
+
+223
+00:08:37,850 --> 00:08:43,700
+Whoops, I guess that means I'm
+talking too long on this slide.
+
+224
+00:08:43,700 --> 00:08:46,440
+Scrolling performance
+over all else
+
+225
+00:08:46,440 --> 00:08:52,280
+means that we've taken
+control away from you.
+
+226
+00:08:52,280 --> 00:08:53,910
+You can't say, well,
+I want to scroll,
+
+227
+00:08:53,910 --> 00:08:57,279
+but now I want to switch to
+drawing my own little custom
+
+228
+00:08:57,279 --> 00:08:59,070
+effect that has different
+physics than what
+
+229
+00:08:59,070 --> 00:09:00,129
+the scroll normally has.
+
+230
+00:09:00,129 --> 00:09:02,420
+And I want to keep that
+lockstep with the scroll that's
+
+231
+00:09:02,420 --> 00:09:03,150
+happening.
+
+232
+00:09:03,150 --> 00:09:05,608
+And I want you to tell me when
+user lifts their finger so I
+
+233
+00:09:05,608 --> 00:09:07,450
+can change that effect.
+
+234
+00:09:07,450 --> 00:09:09,500
+Similarly, IE has
+a great propos--
+
+235
+00:09:09,500 --> 00:09:12,029
+Microsoft has the Snap
+Points feature in IE that
+
+236
+00:09:12,029 --> 00:09:12,820
+is a great feature.
+
+237
+00:09:12,820 --> 00:09:14,500
+But we should be
+talking about, how
+
+238
+00:09:14,500 --> 00:09:17,130
+do we enable the web so that
+people can innovate on features
+
+239
+00:09:17,130 --> 00:09:19,755
+like that without always having
+to come to the browser-- always
+
+240
+00:09:19,755 --> 00:09:21,800
+having to add every
+new UI feature
+
+241
+00:09:21,800 --> 00:09:23,482
+at the top of the browser.
+
+242
+00:09:23,482 --> 00:09:25,440
+And one of the ones that
+really bothers me here
+
+243
+00:09:25,440 --> 00:09:26,990
+is scroll synchronization.
+
+244
+00:09:26,990 --> 00:09:29,509
+When the scrolling is
+happening on another thread,
+
+245
+00:09:29,509 --> 00:09:31,550
+it's a problem for
+rationality because you're not
+
+246
+00:09:31,550 --> 00:09:33,799
+used to having to reason
+about multi-threaded behavior
+
+247
+00:09:33,799 --> 00:09:34,980
+in your UI.
+
+248
+00:09:34,980 --> 00:09:37,230
+But it's also problem
+for richness and the UIs
+
+249
+00:09:37,230 --> 00:09:38,350
+you want to present.
+
+250
+00:09:38,350 --> 00:09:40,630
+Everything from--
+on a mobile app,
+
+251
+00:09:40,630 --> 00:09:42,330
+you never see checkerboarding.
+
+252
+00:09:42,330 --> 00:09:44,987
+Why does a web page always
+have to checkerboard?
+
+253
+00:09:44,987 --> 00:09:47,320
+Maybe for your app, you might
+want to trade off and say,
+
+254
+00:09:47,320 --> 00:09:50,180
+I would rather have scroll
+jank than checkerboarding.
+
+255
+00:09:50,180 --> 00:09:51,910
+Or I would rather
+have the ability
+
+256
+00:09:51,910 --> 00:09:55,350
+to have perfect parallax,
+where where things are updating
+
+257
+00:09:55,350 --> 00:09:56,970
+exactly with the
+scroll position,
+
+258
+00:09:56,970 --> 00:09:59,100
+rather than doing the
+scroll asynchronously
+
+259
+00:09:59,100 --> 00:10:00,477
+to those sort of things.
+
+260
+00:10:00,477 --> 00:10:03,060
+And I think it's been naive of
+us as browser renderers to say,
+
+261
+00:10:03,060 --> 00:10:04,852
+we know the best default
+for all scenarios.
+
+262
+00:10:04,852 --> 00:10:06,893
+We're going to trade off
+performance and richness
+
+263
+00:10:06,893 --> 00:10:08,880
+for you and not give you
+any say in the matter.
+
+264
+00:10:08,880 --> 00:10:11,240
+I think we really
+got to start giving
+
+265
+00:10:11,240 --> 00:10:13,270
+control of that to developers.
+
+266
+00:10:13,270 --> 00:10:15,780
+And also, how exactly should
+touch behave while scrolling?
+
+267
+00:10:15,780 --> 00:10:18,240
+We're making a big change
+here to this in Chrome 35.
+
+268
+00:10:18,240 --> 00:10:20,940
+I won't go into the details now,
+but you can read all about it.
+
+269
+00:10:20,940 --> 00:10:24,495
+But in Chrome, as soon
+as you start scrolling,
+
+270
+00:10:24,495 --> 00:10:26,270
+we stop sending you
+events entirely.
+
+271
+00:10:26,270 --> 00:10:27,645
+And that's terrible
+for richness.
+
+272
+00:10:27,645 --> 00:10:31,530
+It means you can't build
+UIs like Pull To Refresh.
+
+273
+00:10:31,530 --> 00:10:34,654
+OK, now in terms of
+rationality, one of the topics
+
+274
+00:10:34,654 --> 00:10:36,570
+near and dear to my heart
+that people bring up
+
+275
+00:10:36,570 --> 00:10:38,510
+a lot is, why should
+we have to build--
+
+276
+00:10:38,510 --> 00:10:39,760
+why should we have to
+write different UIs
+
+277
+00:10:39,760 --> 00:10:40,760
+for different types of input?
+
+278
+00:10:40,760 --> 00:10:42,610
+We should be able to
+make it easy to have
+
+279
+00:10:42,610 --> 00:10:47,010
+a single set of APIs
+that work for all sorts
+
+280
+00:10:47,010 --> 00:10:48,990
+of different types of input.
+
+281
+00:10:48,990 --> 00:10:50,496
+IE has an API called
+Pointer Events
+
+282
+00:10:50,496 --> 00:10:51,870
+that you've probably
+heard about.
+
+283
+00:10:51,870 --> 00:10:53,453
+We've been working
+on standardizing it
+
+284
+00:10:53,453 --> 00:10:55,000
+for a long time.
+
+285
+00:10:55,000 --> 00:10:57,340
+And we should be
+talking, is this
+
+286
+00:10:57,340 --> 00:11:01,020
+the API that we want the
+entire web to move to?
+
+287
+00:11:01,020 --> 00:11:04,290
+And in doing things
+like that, how
+
+288
+00:11:04,290 --> 00:11:06,750
+are we going to make it so
+that when we're exposing
+
+289
+00:11:06,750 --> 00:11:09,182
+these low-level input
+APIs to web developers,
+
+290
+00:11:09,182 --> 00:11:10,890
+how do we make sure
+that they're thinking
+
+291
+00:11:10,890 --> 00:11:12,210
+at a high enough
+level of abstraction
+
+292
+00:11:12,210 --> 00:11:13,793
+that their sites are
+still accessible?
+
+293
+00:11:13,793 --> 00:11:15,682
+That they're not
+just targeting, I've
+
+294
+00:11:15,682 --> 00:11:17,390
+got to worry about
+mouse and touchscreen,
+
+295
+00:11:17,390 --> 00:11:19,030
+but we want people
+to be thinking
+
+296
+00:11:19,030 --> 00:11:21,363
+about screen readers and all
+sorts of systems technology
+
+297
+00:11:21,363 --> 00:11:22,410
+as well.
+
+298
+00:11:22,410 --> 00:11:24,020
+And then, looking
+further out, there's
+
+299
+00:11:24,020 --> 00:11:27,480
+all these exciting types
+of input on the horizon.
+
+300
+00:11:27,480 --> 00:11:31,350
+Even old school stuff like
+directional pads on TVs,
+
+301
+00:11:31,350 --> 00:11:33,520
+the web doesn't
+handle very well.
+
+302
+00:11:33,520 --> 00:11:36,077
+Microsoft has perceptive pixel,
+these gigantic touchscreens
+
+303
+00:11:36,077 --> 00:11:38,410
+where you can have multiple
+people touching them at once
+
+304
+00:11:38,410 --> 00:11:40,240
+and track 100
+different touchpoints.
+
+305
+00:11:40,240 --> 00:11:41,859
+How should the web
+interact with that?
+
+306
+00:11:41,859 --> 00:11:44,400
+Or what if you've got multiple
+users, each with their own Wii
+
+307
+00:11:44,400 --> 00:11:46,810
+remote, interacting
+with a web page?
+
+308
+00:11:46,810 --> 00:11:51,780
+Voice input, depth cameras,
+Google Glass heads up displays,
+
+309
+00:11:51,780 --> 00:11:55,760
+touch screens like
+the Galaxy S4 that
+
+310
+00:11:55,760 --> 00:11:59,580
+can tell when your
+finger's above the screen.
+
+311
+00:11:59,580 --> 00:12:01,110
+Haptics-- what if
+your touchscreens
+
+312
+00:12:01,110 --> 00:12:03,200
+can start to give you
+physical feedback?
+
+313
+00:12:03,200 --> 00:12:05,400
+And what worries
+me is if we block
+
+314
+00:12:05,400 --> 00:12:07,460
+all of these new
+technologies on, let's
+
+315
+00:12:07,460 --> 00:12:10,070
+wait until we have consensus,
+let's wait until we can all
+
+316
+00:12:10,070 --> 00:12:11,680
+agree in standards
+bodies, how this
+
+317
+00:12:11,680 --> 00:12:12,660
+should be exposed
+to the web, we've
+
+318
+00:12:12,660 --> 00:12:13,960
+got a chicken and egg
+problem and we're never
+
+319
+00:12:13,960 --> 00:12:14,900
+going to innovate.
+
+320
+00:12:14,900 --> 00:12:18,230
+And so we need to be talking
+about what else is next
+
+321
+00:12:18,230 --> 00:12:21,140
+and how do we prepare the
+web so that we can innovate
+
+322
+00:12:21,140 --> 00:12:24,210
+without having to have
+consensus first really.
+
+323
+00:12:24,210 --> 00:12:25,770
+And part of this
+is just discussion.
+
+324
+00:12:25,770 --> 00:12:26,830
+That's what Edge is all about.
+
+325
+00:12:26,830 --> 00:12:28,454
+I'm looking forward
+to this discussion.
+
+326
+00:12:28,454 --> 00:12:30,170
+But there's also
+plenty of places online
+
+327
+00:12:30,170 --> 00:12:31,030
+that we should be
+discussing this.
+
+328
+00:12:31,030 --> 00:12:32,905
+We've just spun up the
+Touch Events community
+
+329
+00:12:32,905 --> 00:12:35,840
+group, which is a group
+within the W3C for people that
+
+330
+00:12:35,840 --> 00:12:37,815
+are have questions or
+issues with Touch Events
+
+331
+00:12:37,815 --> 00:12:40,150
+and want to see Touch
+Events get improved.
+
+332
+00:12:40,150 --> 00:12:42,720
+And of course we're always
+interested in specific bugs
+
+333
+00:12:42,720 --> 00:12:44,050
+on Chrome.
+
+334
+00:12:44,050 --> 00:12:45,180
+That's it.
+
+335
+00:12:45,180 --> 00:12:45,525
+MARTIN BEEBY: Wonderful.
+
+336
+00:12:45,525 --> 00:12:46,358
+Thank you very much.
+
+337
+00:12:46,358 --> 00:12:53,155
+ 
+
+338
+00:12:53,155 --> 00:12:54,780
+I'm really sorry for
+that introduction.
+
+339
+00:12:54,780 --> 00:12:56,100
+I should've explained some more.
+
+340
+00:12:56,100 --> 00:12:57,660
+The reason I didn't really
+give a good introduction
+
+341
+00:12:57,660 --> 00:13:00,076
+is because I wrote it by hand
+and then when I got up here,
+
+342
+00:13:00,076 --> 00:13:02,430
+I couldn't read it.
+
+343
+00:13:02,430 --> 00:13:05,110
+Rick is an engineer working on
+touchscreen support and crime.
+
+344
+00:13:05,110 --> 00:13:07,484
+Remember, the point is Events
+Working Group and the Touch
+
+345
+00:13:07,484 --> 00:13:08,890
+Events community group.
+
+346
+00:13:08,890 --> 00:13:10,600
+Just to clear that one up.
+
+347
+00:13:10,600 --> 00:13:14,020
+So first up, we have
+someone like Andrew Betts
+
+348
+00:13:14,020 --> 00:13:15,100
+with a question.
+
+349
+00:13:15,100 --> 00:13:16,380
+Is Andrew there?
+
+350
+00:13:16,380 --> 00:13:21,290
+ 
+
+351
+00:13:21,290 --> 00:13:21,880
+You
+
+352
+00:13:21,880 --> 00:13:24,460
+ANDREW BETTS: So, web apps
+that use touch gestures can
+
+353
+00:13:24,460 --> 00:13:27,770
+have problems with iframes
+swallowing Touch Events.
+
+354
+00:13:27,770 --> 00:13:30,050
+Is the web developer
+hamstrung by their inability
+
+355
+00:13:30,050 --> 00:13:33,160
+to exert complete control
+over user interaction in ways
+
+356
+00:13:33,160 --> 00:13:36,070
+that native app developers can?
+
+357
+00:13:36,070 --> 00:13:38,065
+MARTIN BEEBY: I
+guess we do give over
+
+358
+00:13:38,065 --> 00:13:41,830
+a lot of power to third
+party control, third party
+
+359
+00:13:41,830 --> 00:13:46,500
+website and iframes
+to the browser-- what
+
+360
+00:13:46,500 --> 00:13:49,451
+do people think about that
+kind of giving up control?
+
+361
+00:13:49,451 --> 00:13:50,950
+Should developers
+have more control?
+
+362
+00:13:50,950 --> 00:13:52,200
+Start with maybe Patrick.
+
+363
+00:13:52,200 --> 00:13:53,700
+PATRICK LAUKE: It's
+a difficult one.
+
+364
+00:13:53,700 --> 00:13:56,250
+Developers will always
+want more control,
+
+365
+00:13:56,250 --> 00:13:59,160
+be it with CSS stuff--
+I want to control
+
+366
+00:13:59,160 --> 00:14:01,900
+exactly how my users will
+experience the console I'm
+
+367
+00:14:01,900 --> 00:14:04,950
+creating-- and the same way
+with the inputs, as well,
+
+368
+00:14:04,950 --> 00:14:06,700
+so output and input.
+
+369
+00:14:06,700 --> 00:14:09,220
+There is an argument to be
+made that at certain points,
+
+370
+00:14:09,220 --> 00:14:12,660
+we should limit what the
+developer can do so they don't
+
+371
+00:14:12,660 --> 00:14:16,200
+completely mess up the
+conventions of the platform,
+
+372
+00:14:16,200 --> 00:14:17,360
+for instance.
+
+373
+00:14:17,360 --> 00:14:19,070
+You don't want
+every single website
+
+374
+00:14:19,070 --> 00:14:21,115
+to just behave in a
+slightly different way
+
+375
+00:14:21,115 --> 00:14:23,490
+and the user has to relearn
+it just because the developer
+
+376
+00:14:23,490 --> 00:14:25,340
+thought, hey, this
+is really cool.
+
+377
+00:14:25,340 --> 00:14:29,040
+I can do scroll jacking
+but now extending
+
+378
+00:14:29,040 --> 00:14:31,940
+it to touch gestures and
+everything else as well.
+
+379
+00:14:31,940 --> 00:14:34,140
+There should be some
+kind of convention.
+
+380
+00:14:34,140 --> 00:14:36,720
+But on the other
+hand, the topic we've
+
+381
+00:14:36,720 --> 00:14:38,390
+touched on at the
+start-- touched on,
+
+382
+00:14:38,390 --> 00:14:42,370
+haha-- is that-- there'll be
+a lot of these cheap laughs,
+
+383
+00:14:42,370 --> 00:14:46,040
+I promise-- is that, yeah,
+we do want to innovate.
+
+384
+00:14:46,040 --> 00:14:48,220
+So we can't at
+the same time also
+
+385
+00:14:48,220 --> 00:14:50,930
+say, well, we have-- I'll
+say "we" even though I'm not
+
+386
+00:14:50,930 --> 00:14:54,140
+in that fold anymore-- we as
+browser developers know what's
+
+387
+00:14:54,140 --> 00:14:56,750
+best, what's the best
+interaction model.
+
+388
+00:14:56,750 --> 00:14:59,285
+Developers will want to
+experiment with new things.
+
+389
+00:14:59,285 --> 00:15:01,390
+So it's trying to
+strike the balance,
+
+390
+00:15:01,390 --> 00:15:03,580
+but there will be
+situations where,
+
+391
+00:15:03,580 --> 00:15:05,700
+probably for
+security reasons, you
+
+392
+00:15:05,700 --> 00:15:08,050
+don't want to have websites
+that completely take
+
+393
+00:15:08,050 --> 00:15:09,980
+over the interface
+and start showing
+
+394
+00:15:09,980 --> 00:15:12,577
+things that, the user thinks
+they're doing one thing
+
+395
+00:15:12,577 --> 00:15:14,160
+but it's actually
+doing something else
+
+396
+00:15:14,160 --> 00:15:15,640
+in the background.
+
+397
+00:15:15,640 --> 00:15:17,500
+It's a tough
+balancing act to make.
+
+398
+00:15:17,500 --> 00:15:20,060
+MARTIN BEEBY: Jorik,
+you're developing Hammer.
+
+399
+00:15:20,060 --> 00:15:23,130
+Do you want to give more
+control to developers?
+
+400
+00:15:23,130 --> 00:15:24,210
+How does that work?
+
+401
+00:15:24,210 --> 00:15:29,330
+JORIK TANGELDER: I would like
+to see a lower level API.
+
+402
+00:15:29,330 --> 00:15:35,250
+When a new device comes up,
+like the Mio or the WiiMotes,
+
+403
+00:15:35,250 --> 00:15:40,280
+I just want to get that
+information in my browser
+
+404
+00:15:40,280 --> 00:15:42,580
+so I can build my own
+gestures and then don't
+
+405
+00:15:42,580 --> 00:15:46,409
+have to wait for four
+years or something.
+
+406
+00:15:46,409 --> 00:15:47,200
+That's really long.
+
+407
+00:15:47,200 --> 00:15:52,615
+But when it arrives in
+the browser for everyone.
+
+408
+00:15:52,615 --> 00:15:54,240
+RICK BYERS: So I'm
+obviously a huge fan
+
+409
+00:15:54,240 --> 00:15:55,656
+of giving developers
+more control.
+
+410
+00:15:55,656 --> 00:15:59,270
+But to play devil's advocate,
+the scenario they mention
+
+411
+00:15:59,270 --> 00:16:00,800
+in this question
+was about iframes.
+
+412
+00:16:00,800 --> 00:16:02,150
+And we actually-- I
+think it's fixed in
+
+413
+00:16:02,150 --> 00:16:03,930
+all our stable releases
+now so I can mention,
+
+414
+00:16:03,930 --> 00:16:05,540
+we had security bug
+in Chrome for a while.
+
+415
+00:16:05,540 --> 00:16:06,748
+Actually, quite a long while.
+
+416
+00:16:06,748 --> 00:16:09,075
+Where the touch of any
+API will tell you what
+
+417
+00:16:09,075 --> 00:16:10,450
+other fingers are
+currently down.
+
+418
+00:16:10,450 --> 00:16:13,240
+And so it was actually possible
+for an ad or something running
+
+419
+00:16:13,240 --> 00:16:16,060
+in an iframe, if you touched
+on it, to receive information
+
+420
+00:16:16,060 --> 00:16:18,020
+about where your
+other fingers were.
+
+421
+00:16:18,020 --> 00:16:21,730
+And that was a potential leak of
+privacy and a security concern.
+
+422
+00:16:21,730 --> 00:16:23,889
+And security is a
+thing that-- I'm
+
+423
+00:16:23,889 --> 00:16:25,930
+saying we shouldn't focus
+as much on performance,
+
+424
+00:16:25,930 --> 00:16:28,240
+and we should be trying to
+maintain our performance,
+
+425
+00:16:28,240 --> 00:16:30,636
+but give the developer
+more control-- security
+
+426
+00:16:30,636 --> 00:16:32,350
+is the thing that
+trumps all of that.
+
+427
+00:16:32,350 --> 00:16:34,971
+The web fails if the users
+don't have confidence in it.
+
+428
+00:16:34,971 --> 00:16:36,470
+It's the unique
+strength of the web.
+
+429
+00:16:36,470 --> 00:16:38,011
+MARTIN BEEBY: Were
+you of the opinion
+
+430
+00:16:38,011 --> 00:16:41,759
+that, with gestures, you
+should be giving developers
+
+431
+00:16:41,759 --> 00:16:42,300
+more control?
+
+432
+00:16:42,300 --> 00:16:43,170
+You said that in
+the talk as well.
+
+433
+00:16:43,170 --> 00:16:44,730
+You want to give low-light APIs.
+
+434
+00:16:44,730 --> 00:16:46,313
+What are your thoughts,
+Pete, in terms
+
+435
+00:16:46,313 --> 00:16:50,420
+of a UX around web design
+and web development?
+
+436
+00:16:50,420 --> 00:16:52,680
+Do you think we should--
+is there a benefit
+
+437
+00:16:52,680 --> 00:16:54,870
+to be had for gestures
+which universally,
+
+438
+00:16:54,870 --> 00:16:58,484
+across an operating system
+or across a device-- is there
+
+439
+00:16:58,484 --> 00:17:00,900
+a reason why developers maybe
+shouldn't be allowed to play
+
+440
+00:17:00,900 --> 00:17:03,390
+around and fiddle around
+with interactions?
+
+441
+00:17:03,390 --> 00:17:05,270
+PETER SMART: Interesting.
+
+442
+00:17:05,270 --> 00:17:09,010
+The conversations that I
+have with developers often
+
+443
+00:17:09,010 --> 00:17:09,703
+go like this.
+
+444
+00:17:09,703 --> 00:17:11,494
+Guys, it would be great
+if we could come up
+
+445
+00:17:11,494 --> 00:17:13,160
+with this really
+innovative new feature.
+
+446
+00:17:13,160 --> 00:17:16,231
+Why don't we try--
+scrolljacking for example.
+
+447
+00:17:16,231 --> 00:17:17,856
+Why don't we go into
+that kind of realm
+
+448
+00:17:17,856 --> 00:17:21,050
+and see what's possible with it
+and how we can surprise these,
+
+449
+00:17:21,050 --> 00:17:24,740
+and get them to reconsider
+the experience that they're
+
+450
+00:17:24,740 --> 00:17:25,520
+looking at?
+
+451
+00:17:25,520 --> 00:17:27,220
+I think there the
+common response
+
+452
+00:17:27,220 --> 00:17:29,470
+that I get is that we
+don't want to override
+
+453
+00:17:29,470 --> 00:17:31,470
+the natural default
+of the browser.
+
+454
+00:17:31,470 --> 00:17:33,610
+We don't want to confuse people.
+
+455
+00:17:33,610 --> 00:17:35,682
+I actually, after
+many arguments,
+
+456
+00:17:35,682 --> 00:17:37,140
+I probably side
+with the developers
+
+457
+00:17:37,140 --> 00:17:38,181
+on this particular front.
+
+458
+00:17:38,181 --> 00:17:41,730
+I think that although I,
+as the user experiences,
+
+459
+00:17:41,730 --> 00:17:44,730
+I want to innovate, I
+want to create experiences
+
+460
+00:17:44,730 --> 00:17:47,560
+which people find themselves
+immersed in, surprised
+
+461
+00:17:47,560 --> 00:17:50,000
+by, and excited by,
+I think that there
+
+462
+00:17:50,000 --> 00:17:53,400
+must be conventions which exist
+across different platforms,
+
+463
+00:17:53,400 --> 00:17:56,900
+across different browsers,
+which are therefore expected
+
+464
+00:17:56,900 --> 00:17:59,730
+because not everyone
+wants to be surprised.
+
+465
+00:17:59,730 --> 00:18:02,290
+And not everyone wants to have
+this immersive experience.
+
+466
+00:18:02,290 --> 00:18:04,415
+Most importantly, people
+don't want to be confused,
+
+467
+00:18:04,415 --> 00:18:06,921
+and I think that is
+the bedrock, really.
+
+468
+00:18:06,921 --> 00:18:08,504
+RICK BYERS: I think
+one of the reasons
+
+469
+00:18:08,504 --> 00:18:10,910
+that developers respond that
+way is, all too often they can't
+
+470
+00:18:10,910 --> 00:18:13,050
+do the one little thing you want
+to do without reimplementing
+
+471
+00:18:13,050 --> 00:18:14,591
+like, the fling
+physics or something.
+
+472
+00:18:14,591 --> 00:18:17,514
+And to me, this represents
+a fundamental lack
+
+473
+00:18:17,514 --> 00:18:18,680
+of layering in our platform.
+
+474
+00:18:18,680 --> 00:18:21,930
+And many other platforms-- for
+example, I know on Android,
+
+475
+00:18:21,930 --> 00:18:24,222
+you can replace little classes
+or hook into the process
+
+476
+00:18:24,222 --> 00:18:26,221
+and not have to reimplement
+everything yourself.
+
+477
+00:18:26,221 --> 00:18:28,530
+So you can get the native
+look and feel, but also
+
+478
+00:18:28,530 --> 00:18:30,410
+customize it slightly.
+
+479
+00:18:30,410 --> 00:18:32,150
+And I think we failed
+at that in the web.
+
+480
+00:18:32,150 --> 00:18:32,540
+PETER SMART: Interesting.
+
+481
+00:18:32,540 --> 00:18:34,420
+I think one good example
+where, potentially, there
+
+482
+00:18:34,420 --> 00:18:35,980
+has been some
+improvements, just with
+
+483
+00:18:35,980 --> 00:18:37,690
+some little personal
+experiments maybe.
+
+484
+00:18:37,690 --> 00:18:39,460
+And-- I don't know if you
+guys experience this--
+
+485
+00:18:39,460 --> 00:18:41,085
+but you're scrolling
+through a web page
+
+486
+00:18:41,085 --> 00:18:43,160
+and you suddenly get to
+a fullscreen Google Map.
+
+487
+00:18:43,160 --> 00:18:44,430
+And you're on your phone.
+
+488
+00:18:44,430 --> 00:18:47,070
+And suddenly, you're no
+longer scrolling the page
+
+489
+00:18:47,070 --> 00:18:48,780
+and you'll suddenly
+inside the map.
+
+490
+00:18:48,780 --> 00:18:50,960
+And that's an area which
+we've tried to innovate in.
+
+491
+00:18:50,960 --> 00:18:53,880
+And we've tried to come up
+with a hack around that which
+
+492
+00:18:53,880 --> 00:18:56,959
+allows you to declare when
+you would like to interact
+
+493
+00:18:56,959 --> 00:18:59,250
+with the map and actually
+when you are still scrolling.
+
+494
+00:18:59,250 --> 00:19:00,625
+And I think there
+should be space
+
+495
+00:19:00,625 --> 00:19:04,800
+to allow developers, designers
+to innovate in those areas
+
+496
+00:19:04,800 --> 00:19:08,185
+and try to break away from
+the iframe suction of doom
+
+497
+00:19:08,185 --> 00:19:09,960
+that you go into.
+
+498
+00:19:09,960 --> 00:19:11,460
+But yeah, there's
+got to be a limit.
+
+499
+00:19:11,460 --> 00:19:13,251
+I think convention's
+also really important.
+
+500
+00:19:13,251 --> 00:19:15,050
+MARTIN BEEBY: You're
+quite a good mixed bag
+
+501
+00:19:15,050 --> 00:19:16,322
+of dev and design.
+
+502
+00:19:16,322 --> 00:19:17,280
+What are your thoughts?
+
+503
+00:19:17,280 --> 00:19:20,570
+STEVE WORKMAN: So,
+with things coming
+
+504
+00:19:20,570 --> 00:19:23,950
+into-- with all the Touch
+Events going into iframes,
+
+505
+00:19:23,950 --> 00:19:27,110
+one of my concerns is, if I
+were to make a web component we
+
+506
+00:19:27,110 --> 00:19:30,190
+talked about today, if I was
+that web component developer,
+
+507
+00:19:30,190 --> 00:19:31,890
+I would obviously
+want all the touches
+
+508
+00:19:31,890 --> 00:19:34,710
+to be sucked into
+what I was doing.
+
+509
+00:19:34,710 --> 00:19:38,340
+Because I've said,
+OK, I really know
+
+510
+00:19:38,340 --> 00:19:39,980
+what this component needs to do.
+
+511
+00:19:39,980 --> 00:19:42,520
+So I should have
+control at this point.
+
+512
+00:19:42,520 --> 00:19:45,630
+Why are you trying to do
+the rest of the thing?
+
+513
+00:19:45,630 --> 00:19:47,870
+The more this goes on
+with web components
+
+514
+00:19:47,870 --> 00:19:52,640
+and with other areas--
+advertising, of course,
+
+515
+00:19:52,640 --> 00:19:55,340
+iframes-- Maps is
+a great example--
+
+516
+00:19:55,340 --> 00:19:58,360
+the more this happens,
+the more important
+
+517
+00:19:58,360 --> 00:20:01,560
+that actually having that kind
+of override is going to be.
+
+518
+00:20:01,560 --> 00:20:03,580
+So that when you
+do, as developer,
+
+519
+00:20:03,580 --> 00:20:07,970
+know better-- and quite often,
+you do know better-- then you
+
+520
+00:20:07,970 --> 00:20:09,930
+can override that
+and you can actually
+
+521
+00:20:09,930 --> 00:20:11,770
+make a difference to
+the web application
+
+522
+00:20:11,770 --> 00:20:14,539
+and improve the user experience.
+
+523
+00:20:14,539 --> 00:20:16,330
+MARTIN BEEBY: Andrew,
+do you want the mike?
+
+524
+00:20:16,330 --> 00:20:18,700
+What's your thoughts on this?
+
+525
+00:20:18,700 --> 00:20:20,266
+Has anyone got any
+thoughts on this?
+
+526
+00:20:20,266 --> 00:20:23,790
+[INAUDIBLE] Because you look
+like you're doing something
+
+527
+00:20:23,790 --> 00:20:25,760
+else there, Andrew.
+
+528
+00:20:25,760 --> 00:20:28,264
+Pay attention. [LAUGHTER]
+
+529
+00:20:28,264 --> 00:20:29,680
+AUDIENCE: So just
+kind of touching
+
+530
+00:20:29,680 --> 00:20:31,969
+on your point,
+[INAUDIBLE] the idea is,
+
+531
+00:20:31,969 --> 00:20:33,760
+actually a lot of times
+with the interface,
+
+532
+00:20:33,760 --> 00:20:35,610
+the developers
+building it know best.
+
+533
+00:20:35,610 --> 00:20:38,436
+For example, your tangible
+example about the Google Maps.
+
+534
+00:20:38,436 --> 00:20:40,310
+We actually implemented
+the exact same thing.
+
+535
+00:20:40,310 --> 00:20:42,480
+It was a responsive website,
+there's a big old map.
+
+536
+00:20:42,480 --> 00:20:45,330
+But what we did is once you
+went into the mobile layer
+
+537
+00:20:45,330 --> 00:20:46,760
+and snapped
+outwards, we actually
+
+538
+00:20:46,760 --> 00:20:49,010
+changed the Google Maps so
+it was no longer draggable,
+
+539
+00:20:49,010 --> 00:20:52,640
+the interface gets changed,
+it's now double-tap to zoom.
+
+540
+00:20:52,640 --> 00:20:54,960
+But I think that you
+can only really do
+
+541
+00:20:54,960 --> 00:20:56,630
+that at the developer level.
+
+542
+00:20:56,630 --> 00:20:57,620
+You can't really do
+that automatically.
+
+543
+00:20:57,620 --> 00:21:00,140
+I think the browser has too
+many assumptions, because there
+
+544
+00:21:00,140 --> 00:21:02,162
+could be other pointers
+where I don't want
+
+545
+00:21:02,162 --> 00:21:03,620
+that to happen for
+whatever reason.
+
+546
+00:21:03,620 --> 00:21:05,320
+Maybe we would want an
+immersive experience.
+
+547
+00:21:05,320 --> 00:21:07,270
+I think there's a notice
+about the developer making it,
+
+548
+00:21:07,270 --> 00:21:08,600
+to make decisions on that.
+
+549
+00:21:08,600 --> 00:21:09,683
+STEVE WORKMAN: Absolutely.
+
+550
+00:21:09,683 --> 00:21:12,250
+You have to design
+around what you're doing.
+
+551
+00:21:12,250 --> 00:21:16,350
+A while back I did the Met
+Office weather observation
+
+552
+00:21:16,350 --> 00:21:19,570
+website and the
+mobile view for that.
+
+553
+00:21:19,570 --> 00:21:22,000
+And most of that is
+a bit Google Map.
+
+554
+00:21:22,000 --> 00:21:24,950
+And the really important thing
+was on the different browser
+
+555
+00:21:24,950 --> 00:21:27,830
+sizes actually giving you
+space for your fingers
+
+556
+00:21:27,830 --> 00:21:30,330
+down the sides of the map
+so that you could still
+
+557
+00:21:30,330 --> 00:21:33,100
+interact with the map but
+you could also still get out.
+
+558
+00:21:33,100 --> 00:21:37,840
+Because otherwise you're just--
+literally, you are stuck.
+
+559
+00:21:37,840 --> 00:21:41,566
+MARTIN BEEBY: Next question,
+Andre [? Brovens? ?]
+
+560
+00:21:41,566 --> 00:21:42,772
+In the front here.
+
+561
+00:21:42,772 --> 00:21:43,980
+A nice, simple mike up there.
+
+562
+00:21:43,980 --> 00:21:46,780
+ 
+
+563
+00:21:46,780 --> 00:21:48,810
+AUDIENCE: Just a
+question about gestures.
+
+564
+00:21:48,810 --> 00:21:50,770
+Is there a case
+for custom gestures
+
+565
+00:21:50,770 --> 00:21:53,420
+that users would be
+unfamiliar with, rather
+
+566
+00:21:53,420 --> 00:21:55,460
+than standardizing,
+a set of gestures
+
+567
+00:21:55,460 --> 00:21:57,615
+that are semantically
+well understood?
+
+568
+00:21:57,615 --> 00:21:59,990
+MARTIN BEEBY: Jorik, your
+library's a lot about gestures.
+
+569
+00:21:59,990 --> 00:22:01,980
+What do you think?
+
+570
+00:22:01,980 --> 00:22:07,260
+JORIK TANGELDER:
+Yes, you should be
+
+571
+00:22:07,260 --> 00:22:09,630
+able to write custom gestures.
+
+572
+00:22:09,630 --> 00:22:15,240
+But it also makes sense to just
+use the system default gestures
+
+573
+00:22:15,240 --> 00:22:18,240
+because the user is
+expecting-- like, you can swipe
+
+574
+00:22:18,240 --> 00:22:21,980
+and it acts the same on that
+page like the other page.
+
+575
+00:22:21,980 --> 00:22:25,990
+But if you want to write a
+custom gesture like swipe
+
+576
+00:22:25,990 --> 00:22:29,260
+with a weird thing--
+I don't know--
+
+577
+00:22:29,260 --> 00:22:36,359
+you should be still able
+to handle those things.
+
+578
+00:22:36,359 --> 00:22:37,650
+MARTIN BEEBY: It's really hard.
+
+579
+00:22:37,650 --> 00:22:39,880
+Writing gestures is really hard.
+
+580
+00:22:39,880 --> 00:22:41,460
+I've not done it
+so much for Touch,
+
+581
+00:22:41,460 --> 00:22:43,262
+but definitely with
+things like Kinect.
+
+582
+00:22:43,262 --> 00:22:44,970
+Trying to understand
+what someone's doing
+
+583
+00:22:44,970 --> 00:22:46,150
+and how it follows through.
+
+584
+00:22:46,150 --> 00:22:47,140
+Especially if there's
+a complex thing,
+
+585
+00:22:47,140 --> 00:22:49,210
+it's really, really
+complicated to do.
+
+586
+00:22:49,210 --> 00:22:51,300
+It's maybe not for
+the uninitiated.
+
+587
+00:22:51,300 --> 00:22:53,940
+Is that your experience, Rick?
+
+588
+00:22:53,940 --> 00:22:55,405
+RICK BYERS: It can be complex.
+
+589
+00:22:55,405 --> 00:22:57,280
+What we often find is
+that the UX is actually
+
+590
+00:22:57,280 --> 00:22:58,446
+harder than the engineering.
+
+591
+00:22:58,446 --> 00:23:00,650
+That coming up-- we
+actually had a bunch
+
+592
+00:23:00,650 --> 00:23:02,504
+of fancy gestures,
+touch gestures,
+
+593
+00:23:02,504 --> 00:23:04,420
+when we first introduced
+the Chromebook Pixel.
+
+594
+00:23:04,420 --> 00:23:06,253
+And we put a bunch of
+work into engineering,
+
+595
+00:23:06,253 --> 00:23:07,980
+but users didn't
+know about them,
+
+596
+00:23:07,980 --> 00:23:10,040
+they were hard to discover,
+it's hard to train
+
+597
+00:23:10,040 --> 00:23:10,900
+people to use them.
+
+598
+00:23:10,900 --> 00:23:11,820
+And ultimately, we
+said we should just
+
+599
+00:23:11,820 --> 00:23:13,030
+stick with the simple things.
+
+600
+00:23:13,030 --> 00:23:16,080
+That said, I think it's
+essential-- we can't innovate,
+
+601
+00:23:16,080 --> 00:23:17,580
+we're never going to come up
+with what the new interaction
+
+602
+00:23:17,580 --> 00:23:19,330
+modes are unless we
+give people the power.
+
+603
+00:23:19,330 --> 00:23:21,497
+There's going to be some--
+the next viral app that's
+
+604
+00:23:21,497 --> 00:23:23,746
+going to have some cool thing
+that you do in your game
+
+605
+00:23:23,746 --> 00:23:25,180
+to make it do
+something different.
+
+606
+00:23:25,180 --> 00:23:27,310
+It's going to become a standard.
+
+607
+00:23:27,310 --> 00:23:29,060
+MARTIN BEEBY: That's
+an interesting point,
+
+608
+00:23:29,060 --> 00:23:32,210
+but are developers
+necessarily the best
+
+609
+00:23:32,210 --> 00:23:34,240
+people to make decisions
+about gestures?
+
+610
+00:23:34,240 --> 00:23:36,155
+Generally, they're probably not.
+
+611
+00:23:36,155 --> 00:23:38,460
+And if you give
+people really-- I
+
+612
+00:23:38,460 --> 00:23:40,140
+don't mean to be
+offending anyone,
+
+613
+00:23:40,140 --> 00:23:43,290
+but I am a developer
+myself-- I think
+
+614
+00:23:43,290 --> 00:23:46,782
+it's very difficult to write
+gestures which are well
+
+615
+00:23:46,782 --> 00:23:47,990
+understood across the system.
+
+616
+00:23:47,990 --> 00:23:49,800
+What do you think?
+
+617
+00:23:49,800 --> 00:23:52,230
+PATRICK LAUKE: It's definitely
+more of a UX question,
+
+618
+00:23:52,230 --> 00:23:56,180
+I would say, because from
+the technology point of view.
+
+619
+00:23:56,180 --> 00:23:58,910
+Not in pointer events as
+such, if we talk specifically
+
+620
+00:23:58,910 --> 00:24:01,060
+about the Microsoft
+implementation.
+
+621
+00:24:01,060 --> 00:24:04,170
+But there is a separate
+power that Microsoft
+
+622
+00:24:04,170 --> 00:24:08,890
+has in IE that isn't
+specced to the W3C, which
+
+623
+00:24:08,890 --> 00:24:12,650
+is all about the gestures
+and how to actually write
+
+624
+00:24:12,650 --> 00:24:14,962
+programmatically
+what a gesture is.
+
+625
+00:24:14,962 --> 00:24:17,420
+Picking out, say, two fingers
+that you've put on the screen
+
+626
+00:24:17,420 --> 00:24:20,250
+and then following any
+changes between them,
+
+627
+00:24:20,250 --> 00:24:21,680
+the angle, et cetera.
+
+628
+00:24:21,680 --> 00:24:24,540
+So technically, I think
+that is not an issue.
+
+629
+00:24:24,540 --> 00:24:28,750
+We can, and we do, with
+libraries like Hammer,
+
+630
+00:24:28,750 --> 00:24:30,610
+write our own gesture code.
+
+631
+00:24:30,610 --> 00:24:34,340
+And it really is more a
+case of, are they standards?
+
+632
+00:24:34,340 --> 00:24:38,570
+Luke W. Has documented a lot
+of the standards, gestures
+
+633
+00:24:38,570 --> 00:24:40,500
+that you get on a
+variety of platforms.
+
+634
+00:24:40,500 --> 00:24:43,020
+There are similarities,
+but also quite
+
+635
+00:24:43,020 --> 00:24:44,910
+fundamental differences
+in some cases.
+
+636
+00:24:44,910 --> 00:24:47,580
+If you go from iOS to
+Android, for instance,
+
+637
+00:24:47,580 --> 00:24:50,440
+there are a lot of pinch-zoom,
+that kind of stuff.
+
+638
+00:24:50,440 --> 00:24:51,785
+Nowadays, we know about it.
+
+639
+00:24:51,785 --> 00:24:53,360
+It's become common knowledge.
+
+640
+00:24:53,360 --> 00:24:55,040
+But when it was
+first introduced,
+
+641
+00:24:55,040 --> 00:24:58,670
+nobody had that understanding
+that that is there.
+
+642
+00:24:58,670 --> 00:25:02,120
+UX-wise, there is / the
+argument of how do you
+
+643
+00:25:02,120 --> 00:25:04,920
+teach your users that
+there are gestures?
+
+644
+00:25:04,920 --> 00:25:07,610
+How do you hint at gestures
+without doing a big--
+
+645
+00:25:07,610 --> 00:25:10,340
+before you can use the app,
+here's a 10 minute tutorial
+
+646
+00:25:10,340 --> 00:25:12,590
+on how you move, how you
+shoot, how you go into
+
+647
+00:25:12,590 --> 00:25:14,200
+your inventory, kind of stuff.
+
+648
+00:25:14,200 --> 00:25:16,980
+It's more of a softer
+issue, I would say.
+
+649
+00:25:16,980 --> 00:25:20,380
+So from the technical point
+of view, gestures are here.
+
+650
+00:25:20,380 --> 00:25:21,870
+We can create gestures.
+
+651
+00:25:21,870 --> 00:25:23,730
+We can hijack pointers.
+
+652
+00:25:23,730 --> 00:25:25,960
+We can hijack finger movements.
+
+653
+00:25:25,960 --> 00:25:29,024
+But should we, is usually
+more the fundamental question.
+
+654
+00:25:29,024 --> 00:25:30,690
+MODERATOR: Steven,
+you're quite involved
+
+655
+00:25:30,690 --> 00:25:34,500
+in the London web standards,
+meet-ups and groups.
+
+656
+00:25:34,500 --> 00:25:36,537
+Do you think we need
+more standardization
+
+657
+00:25:36,537 --> 00:25:38,120
+in this whole
+[INAUDIBLE] of gestures.
+
+658
+00:25:38,120 --> 00:25:40,970
+There's an awful lot of
+proprietary technology in this.
+
+659
+00:25:40,970 --> 00:25:43,140
+Is there maybe room
+for more collaboration?
+
+660
+00:25:43,140 --> 00:25:44,723
+STEVE WORKMAN: I
+think so, definitely.
+
+661
+00:25:44,723 --> 00:25:48,500
+So there's a lot of work going
+in the different standards
+
+662
+00:25:48,500 --> 00:25:52,110
+organizations and different
+roots going through this.
+
+663
+00:25:52,110 --> 00:25:56,080
+Obviously, Microsoft's
+implementation is one.
+
+664
+00:25:56,080 --> 00:26:00,320
+Another is one from Apple, who
+we haven't talked about enough
+
+665
+00:26:00,320 --> 00:26:04,640
+yet today-- who are
+doing this spec called,
+
+666
+00:26:04,640 --> 00:26:07,450
+I think it's Mondo UI?
+
+667
+00:26:07,450 --> 00:26:09,010
+We talked about it last night.
+
+668
+00:26:09,010 --> 00:26:09,310
+UNKNOWN: Indy UI.
+
+669
+00:26:09,310 --> 00:26:10,268
+STEVE WORKMAN: Indy UI.
+
+670
+00:26:10,268 --> 00:26:18,080
+That's it, which is not a
+gesture thing specifically,
+
+671
+00:26:18,080 --> 00:26:21,510
+but relates to actually
+system-wide commands.
+
+672
+00:26:21,510 --> 00:26:25,280
+Like if you were to
+do Undo, it would also
+
+673
+00:26:25,280 --> 00:26:29,580
+trigger an undo kind of
+action, or a named undo action
+
+674
+00:26:29,580 --> 00:26:32,340
+throughout the web, as well.
+
+675
+00:26:32,340 --> 00:26:36,190
+And that kind of thing
+also then expands
+
+676
+00:26:36,190 --> 00:26:38,480
+into gestures at the same time.
+
+677
+00:26:38,480 --> 00:26:40,680
+So Apple's going a
+completely different way
+
+678
+00:26:40,680 --> 00:26:43,590
+of this from Microsoft.
+
+679
+00:26:43,590 --> 00:26:47,880
+And at the end, these people
+need to talk to each other,
+
+680
+00:26:47,880 --> 00:26:50,940
+and we need to standardize
+something like this.
+
+681
+00:26:50,940 --> 00:26:53,750
+Otherwise, we are going to
+get two completely different
+
+682
+00:26:53,750 --> 00:26:55,630
+implementations
+that are probably
+
+683
+00:26:55,630 --> 00:26:58,240
+going to be incompatible
+with each other.
+
+684
+00:26:58,240 --> 00:27:01,590
+PETER SMART: But is there
+a case for custom gestures?
+
+685
+00:27:01,590 --> 00:27:03,210
+I would say definitely yes.
+
+686
+00:27:03,210 --> 00:27:05,590
+I would say that
+especially when you
+
+687
+00:27:05,590 --> 00:27:08,620
+stop considering traditional
+point and click interfaces,
+
+688
+00:27:08,620 --> 00:27:12,074
+and touch interfaces, and start
+thinking about the new input
+
+689
+00:27:12,074 --> 00:27:14,490
+devices that are coming onto
+market at the moment-- things
+
+690
+00:27:14,490 --> 00:27:17,285
+like the Myo,
+which kind of reads
+
+691
+00:27:17,285 --> 00:27:19,616
+the electronic signals
+in your arm, for example.
+
+692
+00:27:19,616 --> 00:27:21,032
+Things like the
+Leap Motion, where
+
+693
+00:27:21,032 --> 00:27:23,260
+you're interacting in 3D space.
+
+694
+00:27:23,260 --> 00:27:25,170
+I think these give us
+fantastic opportunities
+
+695
+00:27:25,170 --> 00:27:27,092
+to start exploring
+custom gestures.
+
+696
+00:27:27,092 --> 00:27:28,550
+And some of the
+work that I've been
+
+697
+00:27:28,550 --> 00:27:30,710
+doing that with the very
+talented Rob [? Hawks, ?]
+
+698
+00:27:30,710 --> 00:27:33,600
+who should probably be
+sat here rather than me.
+
+699
+00:27:33,600 --> 00:27:37,050
+Looking at how to do
+gestures in 3D space--
+
+700
+00:27:37,050 --> 00:27:39,110
+you can't just simply
+kind of recreate
+
+701
+00:27:39,110 --> 00:27:41,000
+touch gestures in those spaces.
+
+702
+00:27:41,000 --> 00:27:43,430
+What we're trying to
+create are 3D cities,
+
+703
+00:27:43,430 --> 00:27:44,682
+Sim City for real life.
+
+704
+00:27:44,682 --> 00:27:46,140
+And what we're
+trying to look at is
+
+705
+00:27:46,140 --> 00:27:48,380
+how you extrapolate
+out a city, and how
+
+706
+00:27:48,380 --> 00:27:50,690
+you're going to break it
+down, and see different parts.
+
+707
+00:27:50,690 --> 00:27:52,439
+So we're talking about
+gestures like this,
+
+708
+00:27:52,439 --> 00:27:54,065
+where you're able to
+pull apart things,
+
+709
+00:27:54,065 --> 00:27:56,480
+like being able to pull apart
+a watch, that famous diagram
+
+710
+00:27:56,480 --> 00:27:57,360
+that we all see.
+
+711
+00:27:57,360 --> 00:28:00,290
+And I think there's a real case
+for looking at-- especially
+
+712
+00:28:00,290 --> 00:28:02,640
+if we start to look
+at new forms of input,
+
+713
+00:28:02,640 --> 00:28:05,560
+to look at gestures
+which are more suited,
+
+714
+00:28:05,560 --> 00:28:08,220
+rather than kind
+of replicating two-
+
+715
+00:28:08,220 --> 00:28:10,300
+dimensional gestures
+that we have now.
+
+716
+00:28:10,300 --> 00:28:11,680
+MODERATOR: Give
+developers power.
+
+717
+00:28:11,680 --> 00:28:12,530
+Standardize more.
+
+718
+00:28:12,530 --> 00:28:13,030
+Talk more.
+
+719
+00:28:13,030 --> 00:28:14,950
+So next topic.
+
+720
+00:28:14,950 --> 00:28:17,210
+We are, I've got
+Washaba written down.
+
+721
+00:28:17,210 --> 00:28:18,710
+Don't have a second name.
+
+722
+00:28:18,710 --> 00:28:19,210
+Sorry.
+
+723
+00:28:19,210 --> 00:28:23,127
+ 
+
+724
+00:28:23,127 --> 00:28:24,210
+AUDIENCE MEMBER: Yeah, hi.
+
+725
+00:28:24,210 --> 00:28:28,550
+So my question is about
+browsing the web on devices
+
+726
+00:28:28,550 --> 00:28:32,220
+like Google Glass or
+Photo 360, the watch,
+
+727
+00:28:32,220 --> 00:28:35,210
+is a very different
+experience, as they do not
+
+728
+00:28:35,210 --> 00:28:37,620
+have the traditional
+methods of input.
+
+729
+00:28:37,620 --> 00:28:40,030
+How do we develop or
+adapt our web pages
+
+730
+00:28:40,030 --> 00:28:43,020
+to better support such devices.
+
+731
+00:28:43,020 --> 00:28:47,280
+Would device information
+in PIB be a good idea?
+
+732
+00:28:47,280 --> 00:28:49,320
+MODERATOR: You were
+talking about new devices.
+
+733
+00:28:49,320 --> 00:28:50,450
+PETER SMART: I was
+talking about new devices.
+
+734
+00:28:50,450 --> 00:28:52,520
+Well, I think I would
+come at that question
+
+735
+00:28:52,520 --> 00:28:54,970
+from a high level, I guess.
+
+736
+00:28:54,970 --> 00:28:57,870
+I'm sure these guys will talk
+about the technicalities.
+
+737
+00:28:57,870 --> 00:28:59,590
+I would probably
+start with for me
+
+738
+00:28:59,590 --> 00:29:01,570
+what's most important
+thing is the user need,
+
+739
+00:29:01,570 --> 00:29:03,620
+or the task that that
+particular person is trying
+
+740
+00:29:03,620 --> 00:29:06,340
+to achieve on the device
+that they are using.
+
+741
+00:29:06,340 --> 00:29:09,270
+And that we might not even know
+the task, for example, so we do
+
+742
+00:29:09,270 --> 00:29:10,587
+need to be agnostic.
+
+743
+00:29:10,587 --> 00:29:12,420
+And I think we also
+need to consider things,
+
+744
+00:29:12,420 --> 00:29:14,940
+like with Glass, for example,
+the amount of retail space
+
+745
+00:29:14,940 --> 00:29:17,640
+that we have to display
+information is very, very
+
+746
+00:29:17,640 --> 00:29:18,240
+small.
+
+747
+00:29:18,240 --> 00:29:19,480
+And the input, as well.
+
+748
+00:29:19,480 --> 00:29:21,480
+We're looking at
+non-traditional forms of input.
+
+749
+00:29:21,480 --> 00:29:24,680
+We're talking about voice,
+in that particular case.
+
+750
+00:29:24,680 --> 00:29:27,180
+If we're talking about
+browsing the web,
+
+751
+00:29:27,180 --> 00:29:28,680
+on something like
+Google Glass, what
+
+752
+00:29:28,680 --> 00:29:30,270
+should we be looking to do?
+
+753
+00:29:30,270 --> 00:29:33,406
+I think those three things
+come into play at that point.
+
+754
+00:29:33,406 --> 00:29:35,822
+UNKNOWN: You were talking in
+the original talk about this.
+
+755
+00:29:35,822 --> 00:29:38,000
+STEVE WORKMAN: Yeah, I mean,
+I don't know about the UX.
+
+756
+00:29:38,000 --> 00:29:40,458
+I need somebody like Pete to
+tell me what the UX should be.
+
+757
+00:29:40,458 --> 00:29:43,090
+But then what worries me
+is how do we make sure
+
+758
+00:29:43,090 --> 00:29:45,350
+that people can experiment
+with these things?
+
+759
+00:29:45,350 --> 00:29:47,183
+So there's a chicken
+and egg problem, right?
+
+760
+00:29:47,183 --> 00:29:53,210
+We can't wait for whatever Glass
+events, with W3C specification.
+
+761
+00:29:53,210 --> 00:29:55,540
+And maybe we can do this
+with low-level APIs.
+
+762
+00:29:55,540 --> 00:29:58,060
+Maybe, if we can address
+the security issues,
+
+763
+00:29:58,060 --> 00:30:01,294
+maybe we can give some limited
+raw USB access to pages.
+
+764
+00:30:01,294 --> 00:30:03,460
+Or maybe we need something
+like Indy UI events, just
+
+765
+00:30:03,460 --> 00:30:05,035
+a higher-level semantic.
+
+766
+00:30:05,035 --> 00:30:06,660
+And just be able to
+say, hey, someone's
+
+767
+00:30:06,660 --> 00:30:09,380
+manipulating this object by
+rotating it and scaling it.
+
+768
+00:30:09,380 --> 00:30:11,807
+And how they do
+that on a watch can
+
+769
+00:30:11,807 --> 00:30:14,390
+be completely different from how
+they do it on a touch screen.
+
+770
+00:30:14,390 --> 00:30:17,465
+And the browser, and even the
+page, doesn't need to know.
+
+771
+00:30:17,465 --> 00:30:19,340
+RICK BYERS: There's also
+this chicken and egg
+
+772
+00:30:19,340 --> 00:30:21,080
+problem with people.
+
+773
+00:30:21,080 --> 00:30:23,330
+You've got to design for
+compatibility, right?
+
+774
+00:30:23,330 --> 00:30:24,220
+Most websites out
+there are not going
+
+775
+00:30:24,220 --> 00:30:25,310
+to be designed for
+your new watch.
+
+776
+00:30:25,310 --> 00:30:26,920
+So you have to come
+up with something,
+
+777
+00:30:26,920 --> 00:30:29,294
+so that you can do a really
+good job for existing content
+
+778
+00:30:29,294 --> 00:30:31,580
+that will still allow some
+incremental extension to do
+
+779
+00:30:31,580 --> 00:30:33,830
+a little bit better for sites
+that are really designed
+
+780
+00:30:33,830 --> 00:30:35,409
+for your special type of input.
+
+781
+00:30:35,409 --> 00:30:36,700
+PATRICK LAUKE: I mean, I agree.
+
+782
+00:30:36,700 --> 00:30:40,010
+We obviously talked about
+this over the last day
+
+783
+00:30:40,010 --> 00:30:44,617
+or so as well, on the
+pointer and its mailing list
+
+784
+00:30:44,617 --> 00:30:46,200
+while we were working
+on the standard.
+
+785
+00:30:46,200 --> 00:30:48,800
+And on the one hand, it's
+really good for a developer,
+
+786
+00:30:48,800 --> 00:30:51,230
+that we're now working
+on these low level APIs.
+
+787
+00:30:51,230 --> 00:30:54,320
+I want to get access to--
+is it a finger or a stylus
+
+788
+00:30:54,320 --> 00:30:57,960
+or is it three fingers and what
+are the x- and y-coordinates?
+
+789
+00:30:57,960 --> 00:31:00,550
+And that's really great that
+I can do that as a developer.
+
+790
+00:31:00,550 --> 00:31:03,860
+But in most cases, if I'm
+developing an application,
+
+791
+00:31:03,860 --> 00:31:06,826
+generally I don't care how
+the user's touching the touch
+
+792
+00:31:06,826 --> 00:31:09,200
+screen-- with a nose, or with
+a finger, or any other body
+
+793
+00:31:09,200 --> 00:31:12,900
+parts, or any other device,
+or if they're using voice.
+
+794
+00:31:12,900 --> 00:31:15,600
+What I really want is
+usually the intent.
+
+795
+00:31:15,600 --> 00:31:18,090
+The user intends to
+activate this button.
+
+796
+00:31:18,090 --> 00:31:21,500
+The user intends to get more
+information or manipulate.
+
+797
+00:31:21,500 --> 00:31:23,165
+So even though
+pointer events are
+
+798
+00:31:23,165 --> 00:31:24,870
+a step in the right
+direction, I think
+
+799
+00:31:24,870 --> 00:31:27,300
+they might be a step too late.
+
+800
+00:31:27,300 --> 00:31:31,200
+Because now we already
+have touch, and stylus,
+
+801
+00:31:31,200 --> 00:31:33,240
+and mouse, and everything else.
+
+802
+00:31:33,240 --> 00:31:35,140
+There's all these
+new interfaces.
+
+803
+00:31:35,140 --> 00:31:38,130
+And really, we should be looking
+more at high-level stuff.
+
+804
+00:31:38,130 --> 00:31:40,720
+Indy UI is probably a good
+step in the right direction.
+
+805
+00:31:40,720 --> 00:31:42,950
+It's been a bit
+sidelined because it
+
+806
+00:31:42,950 --> 00:31:45,819
+falls under the main--
+oh, its accessibility,
+
+807
+00:31:45,819 --> 00:31:47,610
+so that's just for
+blind people, and stuff,
+
+808
+00:31:47,610 --> 00:31:49,109
+so we're not going
+to care about it.
+
+809
+00:31:49,109 --> 00:31:51,610
+I would say have a
+look at Indy UI stuff.
+
+810
+00:31:51,610 --> 00:31:54,580
+It actually abstracts a
+lot of these things that,
+
+811
+00:31:54,580 --> 00:31:57,680
+in most cases, unless you are
+trying create something that
+
+812
+00:31:57,680 --> 00:32:00,140
+has a custom gesture, or
+that really takes advantage
+
+813
+00:32:00,140 --> 00:32:03,630
+of something that can only
+be done with Leap Motion--
+
+814
+00:32:03,630 --> 00:32:06,370
+if you really just care about
+the user wants to open this
+
+815
+00:32:06,370 --> 00:32:10,977
+document, or manipulate this
+thing, or resort this table--
+
+816
+00:32:10,977 --> 00:32:11,810
+You want the intent.
+
+817
+00:32:11,810 --> 00:32:14,715
+You don't want the actual
+raw bits and bobs involved
+
+818
+00:32:14,715 --> 00:32:17,470
+of which key number was pressed,
+which key code was pressed.
+
+819
+00:32:17,470 --> 00:32:19,970
+Because you're just going to
+end up in a situation later on,
+
+820
+00:32:19,970 --> 00:32:21,720
+as a new device comes
+out, that you're
+
+821
+00:32:21,720 --> 00:32:23,760
+going to have to
+reinvent or implement
+
+822
+00:32:23,760 --> 00:32:26,922
+a whole new model, which is what
+we've seen with touch events.
+
+823
+00:32:26,922 --> 00:32:28,880
+It was a great idea, but
+all of a sudden you've
+
+824
+00:32:28,880 --> 00:32:30,700
+got a separate model
+purely for touch.
+
+825
+00:32:30,700 --> 00:32:32,380
+And then something
+new comes along,
+
+826
+00:32:32,380 --> 00:32:35,520
+and instead of-- which was
+a really wise decision,
+
+827
+00:32:35,520 --> 00:32:37,880
+I would say, from Microsoft--
+instead of then saying,
+
+828
+00:32:37,880 --> 00:32:39,740
+OK, we're going to
+have Stylist Touch
+
+829
+00:32:39,740 --> 00:32:42,980
+and whatever else
+Touch, Kinect Touch,
+
+830
+00:32:42,980 --> 00:32:45,240
+they decided to abstract
+at least anything
+
+831
+00:32:45,240 --> 00:32:46,780
+that's pointer-like.
+
+832
+00:32:46,780 --> 00:32:49,050
+But it should really
+go a step further.
+
+833
+00:32:49,050 --> 00:32:51,100
+It should have included
+keyboard in my opinion,
+
+834
+00:32:51,100 --> 00:32:54,320
+and just be more device
+agnostic, in general.
+
+835
+00:32:54,320 --> 00:32:56,990
+And yeah, Indy UI is
+probably not perfect,
+
+836
+00:32:56,990 --> 00:33:00,120
+but it does move towards
+more the idealized goal
+
+837
+00:33:00,120 --> 00:33:03,022
+of just looking at intent
+rather than raw bubbins.
+
+838
+00:33:03,022 --> 00:33:04,480
+MODERATOR: So we've
+got a question.
+
+839
+00:33:04,480 --> 00:33:07,170
+I think Chris was
+first with his hand up.
+
+840
+00:33:07,170 --> 00:33:11,192
+AUDIENCE MEMBER:
+[INAUDIBLE] that simulation
+
+841
+00:33:11,192 --> 00:33:12,400
+makes a lot of sense as well.
+
+842
+00:33:12,400 --> 00:33:15,570
+For example, I've written a
+few things for Leap Motion,
+
+843
+00:33:15,570 --> 00:33:17,170
+and instead of doing
+my own handlers,
+
+844
+00:33:17,170 --> 00:33:19,040
+I just file a click
+event after that.
+
+845
+00:33:19,040 --> 00:33:21,940
+So if somebody wants to
+build a UI, that text is in.
+
+846
+00:33:21,940 --> 00:33:23,970
+All they have to listen
+is for click events.
+
+847
+00:33:23,970 --> 00:33:25,420
+And click events are great,
+because they are also
+
+848
+00:33:25,420 --> 00:33:26,220
+keyboard events.
+
+849
+00:33:26,220 --> 00:33:29,260
+So instead of inventing, and
+putting more and more event
+
+850
+00:33:29,260 --> 00:33:32,160
+handlers in our interfaces for
+all the possible things, just
+
+851
+00:33:32,160 --> 00:33:37,690
+firing or generating an event
+that is already listened to
+
+852
+00:33:37,690 --> 00:33:40,770
+is a simpler way in than having
+another library around that.
+
+853
+00:33:40,770 --> 00:33:40,920
+PATRICK LAUKE: Absolutely.
+
+854
+00:33:40,920 --> 00:33:43,320
+It's like, Focus, Blur, and
+Click are probably the ones
+
+855
+00:33:43,320 --> 00:33:45,730
+that, if you want to
+do something today
+
+856
+00:33:45,730 --> 00:33:48,070
+that will still
+work in a few years
+
+857
+00:33:48,070 --> 00:33:50,569
+time with whatever
+other device is there,
+
+858
+00:33:50,569 --> 00:33:52,860
+they're high-level enough
+and they're abstracted enough
+
+859
+00:33:52,860 --> 00:33:55,520
+from the actual "What
+is the type of input?"
+
+860
+00:33:55,520 --> 00:33:57,550
+that it will work.
+
+861
+00:33:57,550 --> 00:33:59,480
+The reason that things
+like, say, touch events
+
+862
+00:33:59,480 --> 00:34:02,720
+and even point events have
+to fire other-- the mouse
+
+863
+00:34:02,720 --> 00:34:05,720
+compatibility events,
+on-mouse over, on-mouse out,
+
+864
+00:34:05,720 --> 00:34:08,210
+and everything else--
+is mainly because I
+
+865
+00:34:08,210 --> 00:34:10,469
+think we shot ourselves
+in the foot at the time
+
+866
+00:34:10,469 --> 00:34:15,389
+when we started inventing these
+very device-specific event
+
+867
+00:34:15,389 --> 00:34:16,150
+handlers.
+
+868
+00:34:16,150 --> 00:34:19,420
+And that's why now--
+just to make sure
+
+869
+00:34:19,420 --> 00:34:21,030
+that the web, as it
+has been written,
+
+870
+00:34:21,030 --> 00:34:23,909
+and 99% of the web that's
+already out there, to make it
+
+871
+00:34:23,909 --> 00:34:26,530
+actually work on any new
+device, any new input,
+
+872
+00:34:26,530 --> 00:34:29,780
+needs to-- at the UA level--
+fire these compatibility
+
+873
+00:34:29,780 --> 00:34:30,280
+events.
+
+874
+00:34:30,280 --> 00:34:31,738
+Which is a shame,
+and we don't want
+
+875
+00:34:31,738 --> 00:34:33,150
+to end up perpetuating this.
+
+876
+00:34:33,150 --> 00:34:34,790
+That in five years
+time, we're going
+
+877
+00:34:34,790 --> 00:34:37,659
+to have to end up, when
+we're using our "Minority
+
+878
+00:34:37,659 --> 00:34:41,223
+Report until your arms fall
+off" kind of interactions,
+
+879
+00:34:41,223 --> 00:34:43,389
+that all of a sudden they
+have to emulate from that.
+
+880
+00:34:43,389 --> 00:34:45,323
+It needs to emulate
+pointer events, which
+
+881
+00:34:45,323 --> 00:34:47,489
+then need to emulate mouse
+events, just to make sure
+
+882
+00:34:47,489 --> 00:34:49,790
+that you keep cascading back
+to the old technologies.
+
+883
+00:34:49,790 --> 00:34:52,040
+MODERATOR: So just a quick
+question, or quick comment,
+
+884
+00:34:52,040 --> 00:34:53,199
+from Red.
+
+885
+00:34:53,199 --> 00:34:53,699
+Red.
+
+886
+00:34:53,699 --> 00:34:55,699
+AUDIENCE MEMBER: Well,
+it's kind of a question
+
+887
+00:34:55,699 --> 00:34:57,350
+rather than a comment.
+
+888
+00:34:57,350 --> 00:35:03,790
+So I might, I may be a
+caveman, but the pointer events
+
+889
+00:35:03,790 --> 00:35:05,860
+and touch events,
+I get they apply
+
+890
+00:35:05,860 --> 00:35:09,480
+to PCs and smartphones
+that have browsers in them,
+
+891
+00:35:09,480 --> 00:35:13,480
+quite often made by the
+companies that put the browser
+
+892
+00:35:13,480 --> 00:35:15,850
+vendor on the device.
+
+893
+00:35:15,850 --> 00:35:18,820
+This watch can get a
+connection to the internet,
+
+894
+00:35:18,820 --> 00:35:24,530
+but there's no kind of
+standards on that device.
+
+895
+00:35:24,530 --> 00:35:27,140
+And the Leap Motion, to get
+it to talk to a web page
+
+896
+00:35:27,140 --> 00:35:28,770
+requires something
+in the middle.
+
+897
+00:35:28,770 --> 00:35:31,530
+And to get the Kinect
+to anything on the web
+
+898
+00:35:31,530 --> 00:35:32,910
+requires something
+in the middle.
+
+899
+00:35:32,910 --> 00:35:37,390
+And I might be missing this,
+but what devices are actually
+
+900
+00:35:37,390 --> 00:35:41,486
+talking web language, like,
+web-compatible languages?
+
+901
+00:35:41,486 --> 00:35:43,270
+If we're talking
+about these pointer
+
+902
+00:35:43,270 --> 00:35:46,570
+events for these kind of-- or
+any kind of standardized event
+
+903
+00:35:46,570 --> 00:35:50,055
+for these kind of big--
+yeah, Firefox, fine.
+
+904
+00:35:50,055 --> 00:35:50,930
+We're talking about--
+
+905
+00:35:50,930 --> 00:35:51,110
+AUDIENCE MEMBER: Does
+it have a touch screen?
+
+906
+00:35:51,110 --> 00:35:55,040
+AUDIENCE MEMBER: The Minority
+Report type interactions.
+
+907
+00:35:55,040 --> 00:35:59,370
+I don't-- I might be missing
+it, but where are the devices?
+
+908
+00:35:59,370 --> 00:36:00,660
+TVs aren't getting there.
+
+909
+00:36:00,660 --> 00:36:01,360
+They're not.
+
+910
+00:36:01,360 --> 00:36:04,330
+UNKNOWN: TVs are going
+to fire pointer events.
+
+911
+00:36:04,330 --> 00:36:06,700
+Sorry, kick me if I'm
+dominating things.
+
+912
+00:36:06,700 --> 00:36:08,940
+MODERATOR: Now, we'll get
+onto this later, I think.
+
+913
+00:36:08,940 --> 00:36:10,190
+So we'll go to a new question.
+
+914
+00:36:10,190 --> 00:36:11,940
+We've got Matt Andrew.
+
+915
+00:36:11,940 --> 00:36:13,900
+There's is a very similar
+question coming up,
+
+916
+00:36:13,900 --> 00:36:16,184
+but Matt Andrew.
+
+917
+00:36:16,184 --> 00:36:16,850
+UNKNOWN: Boring.
+
+918
+00:36:16,850 --> 00:36:20,010
+ 
+
+919
+00:36:20,010 --> 00:36:20,948
+MODERATOR: Sorry.
+
+920
+00:36:20,948 --> 00:36:22,156
+I'm laughing at him, not you.
+
+921
+00:36:22,156 --> 00:36:24,179
+ 
+
+922
+00:36:24,179 --> 00:36:25,970
+AUDIENCE MEMBER: This
+is from Patrick Lough
+
+923
+00:36:25,970 --> 00:36:27,090
+MODERATOR: Yeah.
+
+924
+00:36:27,090 --> 00:36:28,545
+AUDIENCE MEMBER: Touch events
+are a very simple mechanism
+
+925
+00:36:28,545 --> 00:36:30,375
+for touch, whereas
+pointer events
+
+926
+00:36:30,375 --> 00:36:32,200
+are a far more
+detailed abstraction.
+
+927
+00:36:32,200 --> 00:36:35,330
+Should a browser vendor ideally
+implement one or the other,
+
+928
+00:36:35,330 --> 00:36:38,695
+offer both separately or
+some, kind of combined model?
+
+929
+00:36:38,695 --> 00:36:40,070
+UNKNOWN: As it's
+my own question,
+
+930
+00:36:40,070 --> 00:36:42,820
+I'm not going to answer it.
+
+931
+00:36:42,820 --> 00:36:44,125
+MODERATOR: What do you think?
+
+932
+00:36:44,125 --> 00:36:46,250
+I mean, this must be a
+problem for browser vendors,
+
+933
+00:36:46,250 --> 00:36:48,200
+because you've got to
+support-- you say well,
+
+934
+00:36:48,200 --> 00:36:48,940
+I'm going to do
+these touch events,
+
+935
+00:36:48,940 --> 00:36:50,398
+because that's what
+everyone knows.
+
+936
+00:36:50,398 --> 00:36:52,050
+And it's so easy
+to tie into what's
+
+937
+00:36:52,050 --> 00:36:53,030
+already happened with clicks.
+
+938
+00:36:53,030 --> 00:36:54,100
+RICK BYERS: And we
+can't stop supporting
+
+939
+00:36:54,100 --> 00:36:55,170
+what we've already supported.
+
+940
+00:36:55,170 --> 00:36:57,190
+And it's not even as easy as
+saying, "Well, on the page,
+
+941
+00:36:57,190 --> 00:36:58,940
+we'll decide one or
+the other, because you
+
+942
+00:36:58,940 --> 00:37:01,480
+have to make sure there's a
+transition path for libraries
+
+943
+00:37:01,480 --> 00:37:04,390
+that operate within
+an existing document.
+
+944
+00:37:04,390 --> 00:37:07,130
+So Google Maps, for example--
+if we said the page is either
+
+945
+00:37:07,130 --> 00:37:08,840
+sending pointer events
+or touch events,
+
+946
+00:37:08,840 --> 00:37:11,030
+then Google Maps
+could never change,
+
+947
+00:37:11,030 --> 00:37:13,280
+because as soon as they
+switched using pointer events,
+
+948
+00:37:13,280 --> 00:37:15,640
+the whole page would be
+broken, or-- so there's
+
+949
+00:37:15,640 --> 00:37:17,520
+this difficult transition path.
+
+950
+00:37:17,520 --> 00:37:19,870
+I think Firefox is planning
+on supporting both,
+
+951
+00:37:19,870 --> 00:37:21,203
+touch events and pointer events.
+
+952
+00:37:21,203 --> 00:37:22,900
+I'm really optimistic
+about that.
+
+953
+00:37:22,900 --> 00:37:26,050
+I'm hopeful that, at some
+point, we'll do that in Chrome,
+
+954
+00:37:26,050 --> 00:37:26,759
+as well.
+
+955
+00:37:26,759 --> 00:37:28,550
+We really want to make
+sure that we're only
+
+956
+00:37:28,550 --> 00:37:30,883
+going to support APIs that
+really last, that are lasting
+
+957
+00:37:30,883 --> 00:37:33,459
+APIs that eventually all
+browsers are going to support.
+
+958
+00:37:33,459 --> 00:37:36,000
+And as long as the jury's kind
+of still out on whether or not
+
+959
+00:37:36,000 --> 00:37:37,040
+all browsers are
+going to support it,
+
+960
+00:37:37,040 --> 00:37:38,010
+we want to be a
+little bit careful
+
+961
+00:37:38,010 --> 00:37:39,700
+to make sure we're not
+introducing something
+
+962
+00:37:39,700 --> 00:37:41,180
+new that's largely
+redundant, that
+
+963
+00:37:41,180 --> 00:37:42,804
+ends up not standing
+the test of time.
+
+964
+00:37:42,804 --> 00:37:44,970
+So we're really looking for
+feedback from developers
+
+965
+00:37:44,970 --> 00:37:46,872
+to make sure it's
+something that developers
+
+966
+00:37:46,872 --> 00:37:48,830
+really want, and intend
+to use for a long time.
+
+967
+00:37:48,830 --> 00:37:50,640
+Then we'll support
+both, but we can never
+
+968
+00:37:50,640 --> 00:37:52,690
+get rid of the stuff we
+supported previously.
+
+969
+00:37:52,690 --> 00:37:54,180
+STEVE WORKMAN: So that probably
+is actually my problem.
+
+970
+00:37:54,180 --> 00:37:56,006
+So [? I'm ?] the UI
+lead on Yelp.com.
+
+971
+00:37:56,006 --> 00:37:57,450
+It's a big website.
+
+972
+00:37:57,450 --> 00:38:01,070
+If we break something,
+it's going to break hard.
+
+973
+00:38:01,070 --> 00:38:03,710
+So if I were to try
+and convince my boss,
+
+974
+00:38:03,710 --> 00:38:06,730
+say OK, I want to implement
+pointer interactions.
+
+975
+00:38:06,730 --> 00:38:09,480
+He's going to say OK,
+that sounds great.
+
+976
+00:38:09,480 --> 00:38:10,870
+What browser is it supported on?
+
+977
+00:38:10,870 --> 00:38:14,430
+And I'll go, 10 and 11.
+
+978
+00:38:14,430 --> 00:38:15,707
+And I'll probably stop there.
+
+979
+00:38:15,707 --> 00:38:17,790
+Because right now, that's
+where the support is at.
+
+980
+00:38:17,790 --> 00:38:19,373
+Chrome will get
+there, which is great.
+
+981
+00:38:19,373 --> 00:38:21,430
+Firefox will get
+there, which is great.
+
+982
+00:38:21,430 --> 00:38:26,630
+Apple, Apple Safari, which is--
+let's pick an amount, 20 to 25%
+
+983
+00:38:26,630 --> 00:38:29,630
+of our user base--
+they probably aren't
+
+984
+00:38:29,630 --> 00:38:31,150
+going to implement this spec.
+
+985
+00:38:31,150 --> 00:38:33,360
+And so if I'm going to
+spend what it will take me--
+
+986
+00:38:33,360 --> 00:38:36,770
+a couple of weeks to completely
+tear out our interaction model
+
+987
+00:38:36,770 --> 00:38:39,735
+and put pointer events
+in there, instead-- even
+
+988
+00:38:39,735 --> 00:38:41,360
+pointer events with,
+then, all the back
+
+989
+00:38:41,360 --> 00:38:43,345
+poly fills and all to
+make it work on Safari.
+
+990
+00:38:43,345 --> 00:38:45,720
+That's going to be a massive
+amount of engineering effort
+
+991
+00:38:45,720 --> 00:38:48,610
+for something which probably
+isn't going to give me
+
+992
+00:38:48,610 --> 00:38:53,455
+any business benefit whatsoever,
+except that it might get rid
+
+993
+00:38:53,455 --> 00:38:55,070
+of a 300 millisecond click time.
+
+994
+00:38:55,070 --> 00:38:57,370
+And that's going away with
+something else, anyway.
+
+995
+00:38:57,370 --> 00:39:00,590
+So as from an implementation
+standpoint-- and a purely
+
+996
+00:39:00,590 --> 00:39:03,410
+business standpoint-- actually
+selling pointer events
+
+997
+00:39:03,410 --> 00:39:04,260
+is quite difficult.
+
+998
+00:39:04,260 --> 00:39:05,760
+Unless you're making
+Windows 8, huh?
+
+999
+00:39:05,760 --> 00:39:08,169
+In which case go for it.
+
+1000
+00:39:08,169 --> 00:39:09,960
+MODERATOR: And if you
+are making Windows 8,
+
+1001
+00:39:09,960 --> 00:39:13,710
+please speak to me at
+the end of the event.
+
+1002
+00:39:13,710 --> 00:39:15,710
+You're doing hand gesture.
+
+1003
+00:39:15,710 --> 00:39:17,042
+You have this problem.
+
+1004
+00:39:17,042 --> 00:39:19,000
+You must be dealing with
+it all the time, well,
+
+1005
+00:39:19,000 --> 00:39:20,100
+when you implement
+pointer events,
+
+1006
+00:39:20,100 --> 00:39:21,590
+about having to deal with
+both at the same time.
+
+1007
+00:39:21,590 --> 00:39:22,298
+GRAY PANTS: Yeah.
+
+1008
+00:39:22,298 --> 00:39:27,390
+I'm telling you,
+it's really-- yeah.
+
+1009
+00:39:27,390 --> 00:39:30,770
+It's like when you
+use a touch event,
+
+1010
+00:39:30,770 --> 00:39:35,260
+it sends touch and mouse
+right next to each other.
+
+1011
+00:39:35,260 --> 00:39:38,880
+And sometimes in a
+different, in other browsers.
+
+1012
+00:39:38,880 --> 00:39:42,510
+So you can't really find out
+when it's touch or mouse.
+
+1013
+00:39:42,510 --> 00:39:44,580
+And then you have
+the pointer events,
+
+1014
+00:39:44,580 --> 00:39:51,060
+but it only works in the latest
+Internet Explorer versions.
+
+1015
+00:39:51,060 --> 00:39:55,790
+And it's hard to--
+
+1016
+00:39:55,790 --> 00:40:00,230
+MODERATOR: I was
+looking at the triage,
+
+1017
+00:40:00,230 --> 00:40:01,890
+of all the different
+events that happen
+
+1018
+00:40:01,890 --> 00:40:03,520
+when a touch
+happens on a screen.
+
+1019
+00:40:03,520 --> 00:40:05,142
+You must live this.
+
+1020
+00:40:05,142 --> 00:40:06,100
+GRAY PANTS: Yeah, yeah.
+
+1021
+00:40:06,100 --> 00:40:07,100
+MODERATOR: Stuff happens.
+
+1022
+00:40:07,100 --> 00:40:09,350
+And you have to put it in there
+because of legacy behaviors
+
+1023
+00:40:09,350 --> 00:40:10,040
+and so forth.
+
+1024
+00:40:10,040 --> 00:40:11,510
+It's extraordinarily complex.
+
+1025
+00:40:11,510 --> 00:40:14,200
+ 
+
+1026
+00:40:14,200 --> 00:40:17,460
+How do you work around
+that sort of complexity?
+
+1027
+00:40:17,460 --> 00:40:18,390
+Who heads it?
+
+1028
+00:40:18,390 --> 00:40:19,890
+RICK BYERS: So first
+of all, I mean,
+
+1029
+00:40:19,890 --> 00:40:22,741
+we've got to do a better
+job of documenting it.
+
+1030
+00:40:22,741 --> 00:40:24,740
+I think there's a question
+coming up about this,
+
+1031
+00:40:24,740 --> 00:40:27,135
+but I think the touch event
+standard didn't really
+
+1032
+00:40:27,135 --> 00:40:28,260
+document any of this stuff.
+
+1033
+00:40:28,260 --> 00:40:29,760
+It was all done
+retroactively to try
+
+1034
+00:40:29,760 --> 00:40:33,231
+to take the majority of what
+the existing implementations had
+
+1035
+00:40:33,231 --> 00:40:33,730
+done.
+
+1036
+00:40:33,730 --> 00:40:36,540
+ 
+
+1037
+00:40:36,540 --> 00:40:38,870
+When I realized two years
+ago that touch event standard
+
+1038
+00:40:38,870 --> 00:40:41,140
+didn't have anyone from
+Google on it, that I realized
+
+1039
+00:40:41,140 --> 00:40:42,223
+there was a problem there.
+
+1040
+00:40:42,223 --> 00:40:44,125
+It was all retroactively
+trying to document
+
+1041
+00:40:44,125 --> 00:40:45,500
+what had been done
+without trying
+
+1042
+00:40:45,500 --> 00:40:47,660
+to-- the real point
+of standards is
+
+1043
+00:40:47,660 --> 00:40:50,040
+to get the rationality
+in there from the start.
+
+1044
+00:40:50,040 --> 00:40:52,610
+So hopefully, I think
+we're doing a better job
+
+1045
+00:40:52,610 --> 00:40:53,400
+pointer BOUNCE.
+
+1046
+00:40:53,400 --> 00:40:54,600
+We defined pretty precisely.
+
+1047
+00:40:54,600 --> 00:40:57,183
+And then Patrick came along and
+said, I don't understand this.
+
+1048
+00:40:57,183 --> 00:40:59,030
+Let me write an
+example, and show here's
+
+1049
+00:40:59,030 --> 00:41:01,789
+the exact things
+you should expect.
+
+1050
+00:41:01,789 --> 00:41:03,080
+I think that's the way forward.
+
+1051
+00:41:03,080 --> 00:41:04,630
+We've got to do some of this
+stuff for compatibility,
+
+1052
+00:41:04,630 --> 00:41:06,379
+but hopefully we can
+rely on layers on top
+
+1053
+00:41:06,379 --> 00:41:07,460
+to make it simpler.
+
+1054
+00:41:07,460 --> 00:41:10,602
+So your UI framework, hopefully,
+will say, on this UI framework,
+
+1055
+00:41:10,602 --> 00:41:12,810
+you've just got to deal with
+the events it generates.
+
+1056
+00:41:12,810 --> 00:41:14,420
+And you don't need to worry
+about different browsers,
+
+1057
+00:41:14,420 --> 00:41:16,890
+and their compatibility modes,
+and what the differences are
+
+1058
+00:41:16,890 --> 00:41:19,260
+between IE and Safari.
+
+1059
+00:41:19,260 --> 00:41:21,640
+And hopefully, we can
+smooth a lot of this
+
+1060
+00:41:21,640 --> 00:41:23,170
+over with frameworks.
+
+1061
+00:41:23,170 --> 00:41:25,970
+PATRICK LAUKE: Now I think
+a lot of the complexity
+
+1062
+00:41:25,970 --> 00:41:29,520
+they get nowadays is
+coming from the fact
+
+1063
+00:41:29,520 --> 00:41:32,690
+that we've made bad design
+decisions in the past.
+
+1064
+00:41:32,690 --> 00:41:34,694
+I mentioned already
+on mouseover,
+
+1065
+00:41:34,694 --> 00:41:36,110
+on mouse out, and
+everything else,
+
+1066
+00:41:36,110 --> 00:41:38,570
+which is the reason
+why touch events need
+
+1067
+00:41:38,570 --> 00:41:40,290
+to fire mouse
+compatibility events.
+
+1068
+00:41:40,290 --> 00:41:42,740
+Because we, as developers,
+were told years
+
+1069
+00:41:42,740 --> 00:41:45,450
+ago to do a hover effect,
+you just do an on mouseover.
+
+1070
+00:41:45,450 --> 00:41:48,900
+And we've all been taking it
+the cargo-culting it around.
+
+1071
+00:41:48,900 --> 00:41:50,590
+And now that content is there.
+
+1072
+00:41:50,590 --> 00:41:51,560
+It's set in stone.
+
+1073
+00:41:51,560 --> 00:41:54,780
+And these new devices
+need to use that.
+
+1074
+00:41:54,780 --> 00:41:57,560
+If we could start
+fresh, we'd change it.
+
+1075
+00:41:57,560 --> 00:42:01,640
+But the reality is we are living
+with both that legacy content
+
+1076
+00:42:01,640 --> 00:42:05,320
+and we're moving towards
+a multi-import world.
+
+1077
+00:42:05,320 --> 00:42:08,250
+I mean, already now, we've
+got devices-- a few years ago,
+
+1078
+00:42:08,250 --> 00:42:09,930
+I was unheard of
+to think, oh, you
+
+1079
+00:42:09,930 --> 00:42:12,130
+might have a laptop that
+also has a touch screen.
+
+1080
+00:42:12,130 --> 00:42:15,210
+Touch surely means it's
+a mobile, or then it was,
+
+1081
+00:42:15,210 --> 00:42:16,490
+or it's a tablet.
+
+1082
+00:42:16,490 --> 00:42:18,680
+And now it means,
+the fact that you
+
+1083
+00:42:18,680 --> 00:42:21,817
+get a touchscreen event means
+there is a touch screen.
+
+1084
+00:42:21,817 --> 00:42:23,150
+It doesn't say anything further.
+
+1085
+00:42:23,150 --> 00:42:23,862
+[BELL RINGS]
+
+1086
+00:42:23,862 --> 00:42:26,269
+And That's the fire alarm test.
+
+1087
+00:42:26,269 --> 00:42:27,060
+MARTIN BEEBY: Yeah.
+
+1088
+00:42:27,060 --> 00:42:30,534
+Sorry There's a fire alarm test
+which we couldn't avoid today.
+
+1089
+00:42:30,534 --> 00:42:31,492
+PATRICK LAUKE: Tension.
+
+1090
+00:42:31,492 --> 00:42:33,867
+FIRE ALARM: (AUTOMATED VOICE)
+The public address and fire
+
+1091
+00:42:33,867 --> 00:42:36,110
+alarm systems are
+about to be tested.
+
+1092
+00:42:36,110 --> 00:42:36,790
+FIRE ALARM: OK.
+
+1093
+00:42:36,790 --> 00:42:38,525
+MARTIN BEEBY: Do we
+have your attention?
+
+1094
+00:42:38,525 --> 00:42:40,525
+FIRE ALARM: (AUTOMATED
+VOICE) The search message
+
+1095
+00:42:40,525 --> 00:42:41,320
+will sound first.
+
+1096
+00:42:41,320 --> 00:42:42,680
+Followed by the
+evacuation message.
+
+1097
+00:42:42,680 --> 00:42:43,020
+MARTIN BEEBY: Right.
+
+1098
+00:42:43,020 --> 00:42:43,519
+OK.
+
+1099
+00:42:43,519 --> 00:42:45,626
+MARTIN BEEBY: Should we
+just run around and panic?
+
+1100
+00:42:45,626 --> 00:42:46,072
+FIRE ALARM: (AUTOMATED
+VOICE) Please
+
+1101
+00:42:46,072 --> 00:42:48,200
+do not take any further action.
+
+1102
+00:42:48,200 --> 00:42:49,770
+MARTIN BEEBY: No action.
+
+1103
+00:42:49,770 --> 00:42:51,470
+PATRICK LAUKE: What
+if a fire breaks out
+
+1104
+00:42:51,470 --> 00:42:52,650
+while there is a test?
+
+1105
+00:42:52,650 --> 00:42:54,584
+MARTIN BEEBY: No
+one start a fire.
+
+1106
+00:42:54,584 --> 00:42:56,250
+PATRICK LAUKE: We
+didn't start the fire.
+
+1107
+00:42:56,250 --> 00:42:57,304
+It was always burning.
+
+1108
+00:42:57,304 --> 00:42:58,970
+FIRE ALARM: (AUTOMATED
+VOICE) Attention.
+
+1109
+00:42:58,970 --> 00:43:02,402
+An incident has been
+reported within the building.
+
+1110
+00:43:02,402 --> 00:43:06,411
+MARTIN BEEBY: I
+repeat, it hasn't been.
+
+1111
+00:43:06,411 --> 00:43:06,910
+Right.
+
+1112
+00:43:06,910 --> 00:43:10,320
+ 
+
+1113
+00:43:10,320 --> 00:43:11,986
+PATRICK LAUKE: It's
+like Space Invaders.
+
+1114
+00:43:11,986 --> 00:43:13,414
+What's going on?
+
+1115
+00:43:13,414 --> 00:43:15,318
+MARTIN BEEBY: This is
+good, though, right?
+
+1116
+00:43:15,318 --> 00:43:16,270
+FIRE ALARM: (AUTOMATED
+VOICE) Attention, please.
+
+1117
+00:43:16,270 --> 00:43:17,222
+Attention, please.
+
+1118
+00:43:17,222 --> 00:43:18,905
+MARTIN BEEBY: Yeah?
+
+1119
+00:43:18,905 --> 00:43:21,030
+FIRE ALARM: (AUTOMATED
+VOICE) We have an emergency.
+
+1120
+00:43:21,030 --> 00:43:23,440
+MARTIN BEEBY: An emergency?
+
+1121
+00:43:23,440 --> 00:43:26,600
+It's not just an
+incident, any more.
+
+1122
+00:43:26,600 --> 00:43:28,731
+PATRICK LAUKE:
+This has escalated.
+
+1123
+00:43:28,731 --> 00:43:31,289
+RICK BYERS: Maybe
+something is going on.
+
+1124
+00:43:31,289 --> 00:43:33,580
+FIRE ALARM: (AUTOMATED VOICE)
+The test is now complete.
+
+1125
+00:43:33,580 --> 00:43:35,950
+Please advise your fire warden.
+
+1126
+00:43:35,950 --> 00:43:43,330
+ 
+
+1127
+00:43:43,330 --> 00:43:47,750
+That last bit at the
+end was brilliant.
+
+1128
+00:43:47,750 --> 00:43:51,812
+If you had problems hearing
+this, please alert someone.
+
+1129
+00:43:51,812 --> 00:43:53,020
+PATRICK LAUKE: Accessibility.
+
+1130
+00:43:53,020 --> 00:43:55,110
+I want to talk about that next.
+
+1131
+00:43:55,110 --> 00:43:57,670
+So I can't remember
+where I was, but yeah.
+
+1132
+00:43:57,670 --> 00:43:59,040
+We are in a multi-import world.
+
+1133
+00:43:59,040 --> 00:44:00,430
+MARTIN BEEBY: Well if
+you can't remember,
+
+1134
+00:44:00,430 --> 00:44:01,730
+let's just go to a new topic.
+
+1135
+00:44:01,730 --> 00:44:03,200
+PATRICK LAUKE: Thanks.
+
+1136
+00:44:03,200 --> 00:44:03,990
+Subtle way--
+
+1137
+00:44:03,990 --> 00:44:07,750
+MARTIN BEEBY: Danny Croft,
+do you have a new topic?
+
+1138
+00:44:07,750 --> 00:44:12,140
+Because we have no
+idea where we were now.
+
+1139
+00:44:12,140 --> 00:44:14,770
+AUDIENCE: Are pointer
+events over-complicating
+
+1140
+00:44:14,770 --> 00:44:16,320
+touch interactions?
+
+1141
+00:44:16,320 --> 00:44:17,070
+PATRICK LAUKE: No.
+
+1142
+00:44:17,070 --> 00:44:20,521
+ 
+
+1143
+00:44:20,521 --> 00:44:22,000
+MARTIN BEEBY: All right.
+
+1144
+00:44:22,000 --> 00:44:25,650
+I'd like to echo no.
+
+1145
+00:44:25,650 --> 00:44:29,710
+We've got seven
+minutes of this, guys.
+
+1146
+00:44:29,710 --> 00:44:30,580
+PATRICK LAUKE: No.
+
+1147
+00:44:30,580 --> 00:44:32,407
+They-- oh, sorry.
+
+1148
+00:44:32,407 --> 00:44:33,865
+AUDIENCE: I'm aware
+that moderators
+
+1149
+00:44:33,865 --> 00:44:35,786
+were supposed to
+write questions that--
+
+1150
+00:44:35,786 --> 00:44:36,190
+MARTIN BEEBY: Yeah.
+
+1151
+00:44:36,190 --> 00:44:36,980
+I'm aware of that.
+
+1152
+00:44:36,980 --> 00:44:38,896
+And it probably sounds
+like quite a good idea.
+
+1153
+00:44:38,896 --> 00:44:42,220
+Also really, really
+tell the people
+
+1154
+00:44:42,220 --> 00:44:43,440
+which got the fire alarms.
+
+1155
+00:44:43,440 --> 00:44:44,890
+Please don't do it.
+
+1156
+00:44:44,890 --> 00:44:46,230
+Anyway.
+
+1157
+00:44:46,230 --> 00:44:48,540
+So, yeah, I mean, are
+they over-complicating?
+
+1158
+00:44:48,540 --> 00:44:50,900
+There is an argument,
+though, from a developer
+
+1159
+00:44:50,900 --> 00:44:53,419
+point of view-- playing
+devil's advocate here,
+
+1160
+00:44:53,419 --> 00:44:55,460
+obviously, not talking on
+behalf of my employers.
+
+1161
+00:44:55,460 --> 00:44:56,200
+PATRICK LAUKE: As
+a real developer.
+
+1162
+00:44:56,200 --> 00:44:58,750
+MARTIN BEEBY: From a
+developer's point of view,
+
+1163
+00:44:58,750 --> 00:45:02,130
+it is quite a complex thing.
+
+1164
+00:45:02,130 --> 00:45:06,160
+But is it better to kind
+of, with touch events, you
+
+1165
+00:45:06,160 --> 00:45:09,490
+kind of papered over the
+cracks of, we needed touch.
+
+1166
+00:45:09,490 --> 00:45:11,179
+We kind of got it in there.
+
+1167
+00:45:11,179 --> 00:45:13,220
+I think with pointer
+events, we took a step back.
+
+1168
+00:45:13,220 --> 00:45:15,511
+And we looked at, well what
+are all the different types
+
+1169
+00:45:15,511 --> 00:45:17,680
+of interactions that
+could happen on a device?
+
+1170
+00:45:17,680 --> 00:45:20,618
+Realistic interactions that
+could happen on a device?
+
+1171
+00:45:20,618 --> 00:45:24,139
+ 
+
+1172
+00:45:24,139 --> 00:45:25,680
+Are we making too
+much of it, though?
+
+1173
+00:45:25,680 --> 00:45:27,870
+Because it's all good on
+paper as an abstraction,
+
+1174
+00:45:27,870 --> 00:45:29,870
+but is it too much of a
+complicated abstraction?
+
+1175
+00:45:29,870 --> 00:45:32,430
+RICK BYERS: I think if you
+think of devices strictly like,
+
+1176
+00:45:32,430 --> 00:45:34,350
+you've got tablets,
+then you've got laptops,
+
+1177
+00:45:34,350 --> 00:45:36,020
+then maybe you could
+make an argument saying
+
+1178
+00:45:36,020 --> 00:45:37,100
+pointer events are
+over-complicating it,
+
+1179
+00:45:37,100 --> 00:45:39,500
+but Microsoft believe that
+that's not the only two
+
+1180
+00:45:39,500 --> 00:45:41,000
+kind of devices
+we're going to have.
+
+1181
+00:45:41,000 --> 00:45:42,690
+We believe that
+at Google as well.
+
+1182
+00:45:42,690 --> 00:45:45,640
+And that we need to be prepared
+for devices that are a hybrid,
+
+1183
+00:45:45,640 --> 00:45:47,950
+and like there's a
+continuum between them.
+
+1184
+00:45:47,950 --> 00:45:50,360
+And then, the complexity of
+having touch events and mouse
+
+1185
+00:45:50,360 --> 00:45:52,692
+events on these kind of
+devices is really high.
+
+1186
+00:45:52,692 --> 00:45:55,150
+You probably don't realize the
+extent to which touch events
+
+1187
+00:45:55,150 --> 00:45:57,108
+implicitly capture to
+where you start touching,
+
+1188
+00:45:57,108 --> 00:45:59,380
+and mouse events
+don't capture at all.
+
+1189
+00:45:59,380 --> 00:46:00,980
+And the implication
+that has for when
+
+1190
+00:46:00,980 --> 00:46:04,210
+you remove a DOM element that is
+in your event chain somewhere.
+
+1191
+00:46:04,210 --> 00:46:06,037
+There's very subtle
+bugs that result kind
+
+1192
+00:46:06,037 --> 00:46:08,620
+of from these differences, where
+pointer events unifies it all
+
+1193
+00:46:08,620 --> 00:46:09,730
+and says, there's one model.
+
+1194
+00:46:09,730 --> 00:46:10,960
+If you can, you
+don't need to worry
+
+1195
+00:46:10,960 --> 00:46:12,335
+about any of these
+little things.
+
+1196
+00:46:12,335 --> 00:46:13,740
+Just target this new model.
+
+1197
+00:46:13,740 --> 00:46:16,530
+STEVE WORKMAN: The complication
+comes from when you try and add
+
+1198
+00:46:16,530 --> 00:46:18,790
+things on top of pointer events.
+
+1199
+00:46:18,790 --> 00:46:21,120
+So if you, say,
+were to look at TVs,
+
+1200
+00:46:21,120 --> 00:46:24,160
+and you were trying to
+add the D-pad into that,
+
+1201
+00:46:24,160 --> 00:46:25,650
+switch gig currently doesn't do.
+
+1202
+00:46:25,650 --> 00:46:28,020
+Then you're trying
+to fire two models.
+
+1203
+00:46:28,020 --> 00:46:31,500
+And that's where you kind of
+get into much more complicated
+
+1204
+00:46:31,500 --> 00:46:33,070
+stuff.
+
+1205
+00:46:33,070 --> 00:46:36,200
+If you're still thinking about
+the poly-fills and everything,
+
+1206
+00:46:36,200 --> 00:46:39,080
+hammer.js solves pretty
+much all that for you.
+
+1207
+00:46:39,080 --> 00:46:41,760
+So it's just when you're adding
+more and more things on top.
+
+1208
+00:46:41,760 --> 00:46:43,340
+And, as we've
+touched on already,
+
+1209
+00:46:43,340 --> 00:46:45,630
+if you're trying add voice
+onto the top as well,
+
+1210
+00:46:45,630 --> 00:46:49,470
+you're trying to have a UI
+that reacts to probably far
+
+1211
+00:46:49,470 --> 00:46:52,370
+too many things, and that's
+when it gets pretty much overly
+
+1212
+00:46:52,370 --> 00:46:53,250
+complicated.
+
+1213
+00:46:53,250 --> 00:46:55,250
+PATRICK LAUKE: Well I
+think with pointer events,
+
+1214
+00:46:55,250 --> 00:46:56,060
+the nice thing is, no.
+
+1215
+00:46:56,060 --> 00:46:57,390
+It doesn't over-complicate it.
+
+1216
+00:46:57,390 --> 00:47:00,010
+It actually simplifies
+it in most situations.
+
+1217
+00:47:00,010 --> 00:47:02,170
+Because already,
+with touch events,
+
+1218
+00:47:02,170 --> 00:47:04,830
+if you wanted to
+properly separate it,
+
+1219
+00:47:04,830 --> 00:47:07,680
+you'd have to listen
+for the normal mouse
+
+1220
+00:47:07,680 --> 00:47:10,190
+events, which work
+in a certain way.
+
+1221
+00:47:10,190 --> 00:47:11,820
+And then you'd
+have to also listen
+
+1222
+00:47:11,820 --> 00:47:14,540
+to touch events, which work
+in a slightly different way
+
+1223
+00:47:14,540 --> 00:47:17,240
+because Apple couldn't be asked
+to just do something that's
+
+1224
+00:47:17,240 --> 00:47:20,070
+a bit standardized, and had to
+invent their own little things,
+
+1225
+00:47:20,070 --> 00:47:22,060
+and then not
+standardize it, and then
+
+1226
+00:47:22,060 --> 00:47:25,670
+threaten people with
+patents about it.
+
+1227
+00:47:25,670 --> 00:47:29,460
+And instead with--
+[INAUDIBLE] OK.
+
+1228
+00:47:29,460 --> 00:47:31,490
+Anybody from Apple, here?
+
+1229
+00:47:31,490 --> 00:47:35,940
+Whereas with pointer events,
+the sanity has kind of returned.
+
+1230
+00:47:35,940 --> 00:47:38,520
+It extends mouse events,
+so any of your code
+
+1231
+00:47:38,520 --> 00:47:43,980
+that you wrote already for mouse
+just works in 90% of the cases.
+
+1232
+00:47:43,980 --> 00:47:46,160
+And, again, as a
+developer, you don't really
+
+1233
+00:47:46,160 --> 00:47:49,300
+care how the user pressed on
+something, activated a button.
+
+1234
+00:47:49,300 --> 00:47:52,020
+Whether it is with a finger,
+or stylus, or a mouse,
+
+1235
+00:47:52,020 --> 00:47:57,850
+or whatever, it's Xbox One,
+whether they use the joy pads
+
+1236
+00:47:57,850 --> 00:48:01,180
+or the Kinects kind of
+touch thing, or even voice,
+
+1237
+00:48:01,180 --> 00:48:04,880
+I believe, it would just fire
+the same events that says,
+
+1238
+00:48:04,880 --> 00:48:06,300
+this button was activated.
+
+1239
+00:48:06,300 --> 00:48:08,480
+So it unifies it.
+
+1240
+00:48:08,480 --> 00:48:10,830
+However, if you want
+to know explicitly,
+
+1241
+00:48:10,830 --> 00:48:13,920
+this was actually caused
+by a finger, or a stylus,
+
+1242
+00:48:13,920 --> 00:48:16,352
+or a mouse, there
+is a way of reading
+
+1243
+00:48:16,352 --> 00:48:18,310
+the attribute of that
+event that was passed on.
+
+1244
+00:48:18,310 --> 00:48:19,740
+So that's what's been extended.
+
+1245
+00:48:19,740 --> 00:48:21,560
+So it gives you the
+best of both worlds.
+
+1246
+00:48:21,560 --> 00:48:24,230
+You can write completely,
+to a certain extent,
+
+1247
+00:48:24,230 --> 00:48:27,120
+completely agnostic
+input agnostic code.
+
+1248
+00:48:27,120 --> 00:48:28,630
+And just forget about it.
+
+1249
+00:48:28,630 --> 00:48:31,400
+And hopefully, if
+new types of devices
+
+1250
+00:48:31,400 --> 00:48:34,600
+come along that also use pointer
+events, they will just work.
+
+1251
+00:48:34,600 --> 00:48:37,150
+Rather than oh, I've only
+got mouse and touch now.
+
+1252
+00:48:37,150 --> 00:48:39,540
+I need to have x.
+
+1253
+00:48:39,540 --> 00:48:42,300
+And if you do want to do
+something very specific,
+
+1254
+00:48:42,300 --> 00:48:44,120
+it still allows you to do that.
+
+1255
+00:48:44,120 --> 00:48:46,320
+So I think it is
+a good compromise.
+
+1256
+00:48:46,320 --> 00:48:47,200
+It's not perfect.
+
+1257
+00:48:47,200 --> 00:48:48,960
+As I said, keyboard,
+for instance.
+
+1258
+00:48:48,960 --> 00:48:50,860
+You still have to
+handle that separately.
+
+1259
+00:48:50,860 --> 00:48:53,520
+Or just go for
+high level events.
+
+1260
+00:48:53,520 --> 00:48:55,190
+Again, focus, blur, and click.
+
+1261
+00:48:55,190 --> 00:48:57,220
+But it's at least a step
+in the right direction.
+
+1262
+00:48:57,220 --> 00:48:59,790
+And it's more sane than
+inventing something
+
+1263
+00:48:59,790 --> 00:49:01,902
+similar to touch events
+but now just for stylus.
+
+1264
+00:49:01,902 --> 00:49:02,610
+MARTIN BEEBY: OK.
+
+1265
+00:49:02,610 --> 00:49:05,108
+We have a question
+from the floor?
+
+1266
+00:49:05,108 --> 00:49:09,310
+ 
+
+1267
+00:49:09,310 --> 00:49:13,280
+AUDIENCE: So Apple's touch
+API has a really nice property
+
+1268
+00:49:13,280 --> 00:49:16,880
+that the DOM element
+that's received touch start
+
+1269
+00:49:16,880 --> 00:49:19,900
+will always see the
+touch end event.
+
+1270
+00:49:19,900 --> 00:49:23,680
+And pointer events seem to have
+regressed to the previous mouse
+
+1271
+00:49:23,680 --> 00:49:26,090
+down, mouse up
+situation, where it's
+
+1272
+00:49:26,090 --> 00:49:29,450
+very easy to miss the mouse
+up if the pointer just
+
+1273
+00:49:29,450 --> 00:49:32,190
+ends up being
+outside the element.
+
+1274
+00:49:32,190 --> 00:49:35,740
+Is there a plan to have an
+easier, less complicated way
+
+1275
+00:49:35,740 --> 00:49:38,942
+for pointer events for
+catching the up event?
+
+1276
+00:49:38,942 --> 00:49:40,650
+RICK BYERS: So first
+of all, the property
+
+1277
+00:49:40,650 --> 00:49:41,126
+you're talking
+about touch events
+
+1278
+00:49:41,126 --> 00:49:42,650
+isn't quite as simple
+as you alluded to.
+
+1279
+00:49:42,650 --> 00:49:44,830
+I think the way you worded
+it is actually incorrect.
+
+1280
+00:49:44,830 --> 00:49:47,500
+It's not true that the event
+that received the touch start
+
+1281
+00:49:47,500 --> 00:49:48,776
+will receive the touch end.
+
+1282
+00:49:48,776 --> 00:49:51,150
+The element that you touched
+on received the touch start.
+
+1283
+00:49:51,150 --> 00:49:52,350
+You might have an
+ancestor that's
+
+1284
+00:49:52,350 --> 00:49:54,770
+actually listening for the event
+handler and receives the event.
+
+1285
+00:49:54,770 --> 00:49:56,811
+And then if the DOM tree
+underneath that ancestor
+
+1286
+00:49:56,811 --> 00:49:59,350
+gets moved, the ancestor
+will never see the touch end.
+
+1287
+00:49:59,350 --> 00:50:00,490
+And you'll be surprised.
+
+1288
+00:50:00,490 --> 00:50:02,430
+I've seen this bug in practice,
+and people are really surprised
+
+1289
+00:50:02,430 --> 00:50:02,970
+by it.
+
+1290
+00:50:02,970 --> 00:50:05,500
+It's one of the disadvantages
+of this implicit capture model
+
+1291
+00:50:05,500 --> 00:50:08,030
+is that the programmer
+hasn't told the browser what
+
+1292
+00:50:08,030 --> 00:50:11,819
+element it really wants
+to capture the events to.
+
+1293
+00:50:11,819 --> 00:50:14,110
+The browser just says, well,
+you started touching here,
+
+1294
+00:50:14,110 --> 00:50:16,010
+so clearly that's the
+element that wants it.
+
+1295
+00:50:16,010 --> 00:50:18,468
+Even though it's really your
+handler further up that really
+
+1296
+00:50:18,468 --> 00:50:19,770
+cares about the event stream.
+
+1297
+00:50:19,770 --> 00:50:21,750
+So pointer events
+has an explicit API
+
+1298
+00:50:21,750 --> 00:50:25,440
+called set pointer capture, that
+lets you say, if what you want
+
+1299
+00:50:25,440 --> 00:50:27,960
+is to track the finger no
+matter what's underneath it,
+
+1300
+00:50:27,960 --> 00:50:30,100
+then you call set pointer
+capture and tell it,
+
+1301
+00:50:30,100 --> 00:50:31,808
+here's the element
+that I want to receive
+
+1302
+00:50:31,808 --> 00:50:34,240
+all the events for as long
+as this finger's down.
+
+1303
+00:50:34,240 --> 00:50:36,784
+So it is one more step,
+but it's at least explicit.
+
+1304
+00:50:36,784 --> 00:50:38,950
+I think it's a better model,
+especially because it's
+
+1305
+00:50:38,950 --> 00:50:41,530
+the exact same model-- it builds
+on top of the exact same model
+
+1306
+00:50:41,530 --> 00:50:42,780
+that we're used to with mouse.
+
+1307
+00:50:42,780 --> 00:50:45,087
+You still get pointer,
+enter pointer, leave events,
+
+1308
+00:50:45,087 --> 00:50:46,670
+that you can still
+say, well, the user
+
+1309
+00:50:46,670 --> 00:50:48,074
+dragged their finger off.
+
+1310
+00:50:48,074 --> 00:50:49,490
+You just have to
+remember to watch
+
+1311
+00:50:49,490 --> 00:50:52,110
+for leaving as well as ending.
+
+1312
+00:50:52,110 --> 00:50:54,256
+MARTIN BEEBY: OK,
+I've got one question.
+
+1313
+00:50:54,256 --> 00:50:54,880
+Natasha Rooney?
+
+1314
+00:50:54,880 --> 00:50:59,717
+ 
+
+1315
+00:50:59,717 --> 00:51:00,300
+AUDIENCE: Hey.
+
+1316
+00:51:00,300 --> 00:51:02,466
+So you guys have mentioned
+a couple of these things,
+
+1317
+00:51:02,466 --> 00:51:04,990
+so it's a sort of overall
+question about what
+
+1318
+00:51:04,990 --> 00:51:06,250
+might become mainstream?
+
+1319
+00:51:06,250 --> 00:51:08,360
+D-pads, TV screens,
+and multiple users
+
+1320
+00:51:08,360 --> 00:51:10,820
+interacting on a single
+screen are all scenarios
+
+1321
+00:51:10,820 --> 00:51:12,800
+we currently consider
+nontraditional.
+
+1322
+00:51:12,800 --> 00:51:15,250
+Which of these will become
+mainstream most quickly?
+
+1323
+00:51:15,250 --> 00:51:17,230
+And why do you think that?
+
+1324
+00:51:17,230 --> 00:51:19,900
+MARTIN BEEBY: Which will
+become-- this is kinds of--
+
+1325
+00:51:19,900 --> 00:51:21,108
+JORIK TANGELDER: All of them.
+
+1326
+00:51:21,108 --> 00:51:23,986
+MARTIN BEEBY: I thought it was
+your same question you had.
+
+1327
+00:51:23,986 --> 00:51:25,610
+We always talk about
+these new devices,
+
+1328
+00:51:25,610 --> 00:51:27,610
+and these minority
+report devices,
+
+1329
+00:51:27,610 --> 00:51:30,704
+but they haven't got
+a great market share.
+
+1330
+00:51:30,704 --> 00:51:32,620
+Which ones do you think
+can become mainstream?
+
+1331
+00:51:32,620 --> 00:51:34,250
+RICK BYERS: If I knew, I
+think our standardization
+
+1332
+00:51:34,250 --> 00:51:35,500
+job would be so much easier.
+
+1333
+00:51:35,500 --> 00:51:36,666
+We'd say, here's the future.
+
+1334
+00:51:36,666 --> 00:51:37,835
+Let's design an API for it.
+
+1335
+00:51:37,835 --> 00:51:39,126
+PATRICK LAUKE: Let's patent it.
+
+1336
+00:51:39,126 --> 00:51:44,370
+ 
+
+1337
+00:51:44,370 --> 00:51:46,090
+RICK BYERS: Awkward.
+
+1338
+00:51:46,090 --> 00:51:47,720
+PATRICK LAUKE: I'm allowed now.
+
+1339
+00:51:47,720 --> 00:51:49,969
+I don't work for
+a browser anymore.
+
+1340
+00:51:49,969 --> 00:51:51,510
+RICK BYERS: But it's
+because we don't
+
+1341
+00:51:51,510 --> 00:51:53,455
+know that we have to
+rely on the community
+
+1342
+00:51:53,455 --> 00:51:54,580
+to innovate and experiment.
+
+1343
+00:51:54,580 --> 00:51:55,250
+Try new things.
+
+1344
+00:51:55,250 --> 00:51:56,720
+And see what comes from them.
+
+1345
+00:51:56,720 --> 00:52:01,890
+ 
+
+1346
+00:52:01,890 --> 00:52:04,650
+MARTIN BEEBY: I mean, I really
+want massive touch screens
+
+1347
+00:52:04,650 --> 00:52:05,346
+to be popular.
+
+1348
+00:52:05,346 --> 00:52:06,970
+I think there's a
+real possibility when
+
+1349
+00:52:06,970 --> 00:52:08,580
+you have like 80
+inch touch screens.
+
+1350
+00:52:08,580 --> 00:52:09,440
+A hundred points of touch.
+
+1351
+00:52:09,440 --> 00:52:10,564
+I think that's really cool.
+
+1352
+00:52:10,564 --> 00:52:13,780
+The collaborative web
+experience that could happen.
+
+1353
+00:52:13,780 --> 00:52:15,085
+I mean, Leap Motion.
+
+1354
+00:52:15,085 --> 00:52:16,585
+What do you think
+about Leap Motion?
+
+1355
+00:52:16,585 --> 00:52:18,180
+Do you think it'll
+ever become mainstream?
+
+1356
+00:52:18,180 --> 00:52:20,096
+I mean, the problem I
+have with Leap Motion is
+
+1357
+00:52:20,096 --> 00:52:23,410
+it doesn't really
+solve an issue.
+
+1358
+00:52:23,410 --> 00:52:26,600
+If I'm like 10 centimeters
+away from a screen, right?
+
+1359
+00:52:26,600 --> 00:52:29,570
+I can touch it.
+
+1360
+00:52:29,570 --> 00:52:32,040
+But with a Kinects,
+you're 10 meters away.
+
+1361
+00:52:32,040 --> 00:52:34,684
+You're solving a problem.
+
+1362
+00:52:34,684 --> 00:52:35,350
+PETER SMART: OK.
+
+1363
+00:52:35,350 --> 00:52:36,915
+Well we've got some waves.
+
+1364
+00:52:36,915 --> 00:52:39,540
+But I'm going to have to debate
+the ability of the Leap Motion.
+
+1365
+00:52:39,540 --> 00:52:40,880
+I think it's got a
+lot of great things
+
+1366
+00:52:40,880 --> 00:52:43,135
+that you can't do with
+touch, like depth for example
+
+1367
+00:52:43,135 --> 00:52:45,510
+and being able to kind of zoom
+in an out of things, which
+
+1368
+00:52:45,510 --> 00:52:49,260
+I think are unique to that
+particular type of input.
+
+1369
+00:52:49,260 --> 00:52:52,564
+And what else would you like
+me to say on that subject?
+
+1370
+00:52:52,564 --> 00:52:55,230
+MARTIN BEEBY: What do you think,
+what other devices do you think
+
+1371
+00:52:55,230 --> 00:52:56,920
+are going to come out which-- is
+there anything which you think
+
+1372
+00:52:56,920 --> 00:52:59,370
+which actually, genuinely is
+going to become mainstream?
+
+1373
+00:52:59,370 --> 00:53:00,120
+Maybe voice?
+
+1374
+00:53:00,120 --> 00:53:02,490
+I mean, that's not really--
+it's kind of mainstream
+
+1375
+00:53:02,490 --> 00:53:05,450
+on native devices, but on
+the web, it's demo work.
+
+1376
+00:53:05,450 --> 00:53:06,979
+PETER SMART: Voice
+is getting there,
+
+1377
+00:53:06,979 --> 00:53:08,520
+but the way voice
+is actually getting
+
+1378
+00:53:08,520 --> 00:53:10,600
+somewhere is the
+Google Now stuff.
+
+1379
+00:53:10,600 --> 00:53:13,182
+So if you've seen the Google
+Where stuff this week,
+
+1380
+00:53:13,182 --> 00:53:15,015
+and if you haven't
+played with Google Glass,
+
+1381
+00:53:15,015 --> 00:53:17,582
+the voice commands are, by
+far, the best part of it.
+
+1382
+00:53:17,582 --> 00:53:20,040
+And now that's starting to make
+its way onto native Android
+
+1383
+00:53:20,040 --> 00:53:23,270
+hardware through the
+whole OK Google thing.
+
+1384
+00:53:23,270 --> 00:53:25,460
+That's starting to
+work really well.
+
+1385
+00:53:25,460 --> 00:53:28,200
+And with the Xbox One as
+well, it's getting there.
+
+1386
+00:53:28,200 --> 00:53:29,760
+It's not quite right yet.
+
+1387
+00:53:29,760 --> 00:53:31,260
+But it will get there.
+
+1388
+00:53:31,260 --> 00:53:34,900
+So actually, the voice input is
+going to start being important.
+
+1389
+00:53:34,900 --> 00:53:38,570
+On the web, you're trying to
+use the same APIs underneath,
+
+1390
+00:53:38,570 --> 00:53:41,479
+but you don't really want
+to talk to your computer.
+
+1391
+00:53:41,479 --> 00:53:43,020
+It's more of a user
+experience thing.
+
+1392
+00:53:43,020 --> 00:53:45,677
+MARTIN BEEBY: Do you
+have a quick question?
+
+1393
+00:53:45,677 --> 00:53:47,760
+AUDIENCE: [INAUDIBLE]
+Actually, I was going to try
+
+1394
+00:53:47,760 --> 00:53:49,955
+and interject with--
+
+1395
+00:53:49,955 --> 00:53:52,080
+AUDIENCE: What Remy brought
+up earlier with regards
+
+1396
+00:53:52,080 --> 00:53:54,246
+to where these kind of
+devices, with the [INAUDIBLE]
+
+1397
+00:53:54,246 --> 00:53:56,684
+that require custom
+gestures and things of that.
+
+1398
+00:53:56,684 --> 00:53:58,350
+I'm actually quite
+in a unique position,
+
+1399
+00:53:58,350 --> 00:53:59,750
+because I actually know
+exactly where they are,
+
+1400
+00:53:59,750 --> 00:54:00,490
+and they're
+mainstream right now.
+
+1401
+00:54:00,490 --> 00:54:02,700
+And that's a thing called
+Digital Out of Home.
+
+1402
+00:54:02,700 --> 00:54:04,280
+For those of you
+who aren't aware,
+
+1403
+00:54:04,280 --> 00:54:05,490
+it's basically any
+digital display
+
+1404
+00:54:05,490 --> 00:54:07,050
+you see that's an advert,
+out on the street,
+
+1405
+00:54:07,050 --> 00:54:08,400
+in the underground,
+things like that, that's
+
+1406
+00:54:08,400 --> 00:54:09,774
+an industry,
+Digital Out of Home.
+
+1407
+00:54:09,774 --> 00:54:10,986
+I'm experienced with it.
+
+1408
+00:54:10,986 --> 00:54:13,110
+And there's a huge amount
+of money going into that.
+
+1409
+00:54:13,110 --> 00:54:15,985
+And that's actually a symptom
+of how capable Chrome is.
+
+1410
+00:54:15,985 --> 00:54:18,610
+Chrome is actually, and as well,
+as I said, the other browsers.
+
+1411
+00:54:18,610 --> 00:54:20,310
+But for some reason, Chrome
+has managed to capture it,
+
+1412
+00:54:20,310 --> 00:54:22,610
+is the actual platform
+that's driving a lot of that.
+
+1413
+00:54:22,610 --> 00:54:24,440
+Basically a lot
+of those displays,
+
+1414
+00:54:24,440 --> 00:54:27,530
+if they're ever interactive, are
+basically a web browser screen.
+
+1415
+00:54:27,530 --> 00:54:29,382
+And there's actually
+direct implications
+
+1416
+00:54:29,382 --> 00:54:31,590
+there where you do need to
+come up with new gestures.
+
+1417
+00:54:31,590 --> 00:54:33,881
+So that's things like where
+hammer.js kind of comes in,
+
+1418
+00:54:33,881 --> 00:54:35,690
+because as a tangible
+example, when
+
+1419
+00:54:35,690 --> 00:54:38,990
+you have a device that you're
+swiping left to right with,
+
+1420
+00:54:38,990 --> 00:54:42,760
+if it's a display on your phone
+or actually a small device,
+
+1421
+00:54:42,760 --> 00:54:44,589
+you swipe left to
+right with one finger.
+
+1422
+00:54:44,589 --> 00:54:46,380
+If you actually have
+a large, touch screen,
+
+1423
+00:54:46,380 --> 00:54:48,110
+and you walk up to it, you
+swipe with two fingers.
+
+1424
+00:54:48,110 --> 00:54:49,818
+We've actually noticed
+that people do it.
+
+1425
+00:54:49,818 --> 00:54:51,330
+They don't realize
+they're doing it.
+
+1426
+00:54:51,330 --> 00:54:53,080
+But that actually right
+there is somewhere
+
+1427
+00:54:53,080 --> 00:54:55,696
+where now the format, because
+it's out in the world,
+
+1428
+00:54:55,696 --> 00:54:57,070
+and it's actually
+a large screen,
+
+1429
+00:54:57,070 --> 00:54:59,320
+you now have to change the
+way you're capturing gestures.
+
+1430
+00:54:59,320 --> 00:55:01,861
+And if you're ever doing things
+with regards to installations
+
+1431
+00:55:01,861 --> 00:55:03,700
+and things like kiosks
+and you have them
+
+1432
+00:55:03,700 --> 00:55:05,255
+a lot in kind of
+trade shows where
+
+1433
+00:55:05,255 --> 00:55:07,689
+you have the digital
+displays, they have games.
+
+1434
+00:55:07,689 --> 00:55:09,480
+They're capturing weird
+interaction events.
+
+1435
+00:55:09,480 --> 00:55:11,390
+They're all powered
+by the browser.
+
+1436
+00:55:11,390 --> 00:55:13,474
+In the advertising industry,
+I mean, that's today.
+
+1437
+00:55:13,474 --> 00:55:15,306
+That's not like a weird
+thing that's coming.
+
+1438
+00:55:15,306 --> 00:55:17,630
+I'm not kidding, where I
+work, every single month, we
+
+1439
+00:55:17,630 --> 00:55:18,921
+have things like that going on.
+
+1440
+00:55:18,921 --> 00:55:21,164
+And we're kind of
+building these things.
+
+1441
+00:55:21,164 --> 00:55:23,580
+MARTIN BEEBY: We're talking
+about kiosks, though, and kind
+
+1442
+00:55:23,580 --> 00:55:25,800
+of installations,
+that's not mainstream.
+
+1443
+00:55:25,800 --> 00:55:28,320
+That's not consumer technology
+in the web sense, really,
+
+1444
+00:55:28,320 --> 00:55:28,940
+is it?
+
+1445
+00:55:28,940 --> 00:55:30,385
+We're using it
+definitely as consumers.
+
+1446
+00:55:30,385 --> 00:55:30,670
+But not--
+
+1447
+00:55:30,670 --> 00:55:31,795
+AUDIENCE: That's the thing.
+
+1448
+00:55:31,795 --> 00:55:34,550
+The technology's moved
+into this non-web scenario.
+
+1449
+00:55:34,550 --> 00:55:37,302
+But if you take for example the
+[? Crosswell ?] TV ad network,
+
+1450
+00:55:37,302 --> 00:55:38,843
+which is like the
+visual displays you
+
+1451
+00:55:38,843 --> 00:55:40,384
+get in the underground,
+some of those
+
+1452
+00:55:40,384 --> 00:55:42,396
+now are actually
+Wi-Fi mobile enabled.
+
+1453
+00:55:42,396 --> 00:55:43,770
+With your phone,
+you can actually
+
+1454
+00:55:43,770 --> 00:55:45,269
+get out and, through
+the web medium,
+
+1455
+00:55:45,269 --> 00:55:46,920
+interact with the display.
+
+1456
+00:55:46,920 --> 00:55:49,295
+You're using web technologies,
+but you're not on the web.
+
+1457
+00:55:49,295 --> 00:55:51,635
+But actually, you're now
+passively interacting with it.
+
+1458
+00:55:51,635 --> 00:55:53,260
+You're now using
+gestures on your phone
+
+1459
+00:55:53,260 --> 00:55:54,343
+to control a big display.
+
+1460
+00:55:54,343 --> 00:55:56,022
+MARTIN BEEBY: So
+with that, I think
+
+1461
+00:55:56,022 --> 00:55:57,730
+there's an awful lot
+learned in terms of,
+
+1462
+00:55:57,730 --> 00:55:59,699
+we should perhaps
+talk a lot more.
+
+1463
+00:55:59,699 --> 00:56:00,740
+PATRICK LAUKE: We should.
+
+1464
+00:56:00,740 --> 00:56:02,510
+Let's take over
+the next session.
+
+1465
+00:56:02,510 --> 00:56:02,650
+MARTIN BEEBY: Standardization.
+
+1466
+00:56:02,650 --> 00:56:04,310
+I think it's really good
+actually, at this point.
+
+1467
+00:56:04,310 --> 00:56:05,726
+There's now a lot
+of collaboration
+
+1468
+00:56:05,726 --> 00:56:08,016
+that's happening in touch
+events groups and so forth.
+
+1469
+00:56:08,016 --> 00:56:09,140
+And there's a lot to learn.
+
+1470
+00:56:09,140 --> 00:56:10,780
+I don't think anyone
+really knows the answer
+
+1471
+00:56:10,780 --> 00:56:12,613
+to a lot of the questions
+that we're asking.
+
+1472
+00:56:12,613 --> 00:56:14,420
+Some of these, we're
+going to figure out
+
+1473
+00:56:14,420 --> 00:56:18,100
+as new devices, which will
+become mainstream one day, Rem.
+
+1474
+00:56:18,100 --> 00:56:19,980
+Never.
+
+1475
+00:56:19,980 --> 00:56:21,570
+So I want to just
+thank my panel.
+
+1476
+00:56:21,570 --> 00:56:22,903
+And thank all you for listening.
+
+1477
+00:56:22,903 --> 00:56:24,900
+We're going to have a break now.
+
+1478
+00:56:24,900 --> 00:56:28,742
+ 
+

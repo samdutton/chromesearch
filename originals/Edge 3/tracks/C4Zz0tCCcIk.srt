@@ -1,0 +1,6360 @@
+1
+00:00:00,000 --> 00:00:04,930
+ 
+
+2
+00:00:04,930 --> 00:00:06,902
+[APPLAUSE]
+
+3
+00:00:06,902 --> 00:00:07,900
+BEN VINEGAR: Hello?
+
+4
+00:00:07,900 --> 00:00:09,580
+Test.
+
+5
+00:00:09,580 --> 00:00:14,090
+This is the Build Process
+Panel, which thematically is all
+
+6
+00:00:14,090 --> 00:00:18,640
+about, how do we take our source
+code in whatever form it may be
+
+7
+00:00:18,640 --> 00:00:23,180
+and transpile preprocess,
+minify, optimize, et cetera
+
+8
+00:00:23,180 --> 00:00:26,180
+until it arrives
+in its final form?
+
+9
+00:00:26,180 --> 00:00:28,340
+So my name's Ben Vinegar.
+
+10
+00:00:28,340 --> 00:00:30,717
+I'm a lead front
+engineer at Disqus.
+
+11
+00:00:30,717 --> 00:00:32,800
+I also wrote a book called
+Third Party JavaScript.
+
+12
+00:00:32,800 --> 00:00:34,660
+It's pretty terrible.
+
+13
+00:00:34,660 --> 00:00:38,440
+I have five wonderful
+panelists with me.
+
+14
+00:00:38,440 --> 00:00:40,640
+First there's Kyle
+Simpson, who you
+
+15
+00:00:40,640 --> 00:00:42,830
+may know as the author
+of LABjs, a JSON author.
+
+16
+00:00:42,830 --> 00:00:45,550
+He's writing a book called
+"You Don't Know JS."
+
+17
+00:00:45,550 --> 00:00:48,870
+Nick Fisher, who works at
+SoundCloud and he designs
+
+18
+00:00:48,870 --> 00:00:50,780
+and implements a lot
+of the build systems,
+
+19
+00:00:50,780 --> 00:00:55,010
+SoundCloud being a relatively
+large client side applications
+
+20
+00:00:55,010 --> 00:00:57,870
+with some cool stuff going on.
+
+21
+00:00:57,870 --> 00:01:03,470
+Addy Osmani, who develops
+TodoMVC and Yeoman, which
+
+22
+00:01:03,470 --> 00:01:06,890
+is a scaffolding tool
+working with Grunt,
+
+23
+00:01:06,890 --> 00:01:08,870
+and he also sorts
+on Chrome DevTools.
+
+24
+00:01:08,870 --> 00:01:10,820
+And then Sebastian
+Golasch, who works
+
+25
+00:01:10,820 --> 00:01:13,600
+for Deutsche Telekom--
+I practiced pronouncing
+
+26
+00:01:13,600 --> 00:01:18,930
+that for a while--
+working on a product
+
+27
+00:01:18,930 --> 00:01:23,204
+there that also uses sort of
+older, traditional build tools.
+
+28
+00:01:23,204 --> 00:01:24,870
+I don't know if "old"
+is the right word,
+
+29
+00:01:24,870 --> 00:01:28,560
+but with Maven combined with
+Grunt and some client side
+
+30
+00:01:28,560 --> 00:01:29,440
+stuff.
+
+31
+00:01:29,440 --> 00:01:34,570
+And then lastly, I
+have Gareth Rushgrove,
+
+32
+00:01:34,570 --> 00:01:38,170
+who works for the UK government,
+working on a big project that
+
+33
+00:01:38,170 --> 00:01:41,630
+involves modernizing a whole
+bunch of UK government websites
+
+34
+00:01:41,630 --> 00:01:43,600
+and bringing them
+into the modern era.
+
+35
+00:01:43,600 --> 00:01:45,280
+And with that said,
+Gareth is just
+
+36
+00:01:45,280 --> 00:01:47,385
+going to start us off
+with a quick presentation.
+
+37
+00:01:47,385 --> 00:01:58,750
+ 
+
+38
+00:01:58,750 --> 00:02:00,795
+GARETH RUSHGROVE: Your
+build process needs you
+
+39
+00:02:00,795 --> 00:02:03,461
+because it's probably not
+as good as it could be.
+
+40
+00:02:03,461 --> 00:02:05,370
+There it is.
+
+41
+00:02:05,370 --> 00:02:07,760
+But what is a build process?
+
+42
+00:02:07,760 --> 00:02:09,630
+What we're talking
+about really is
+
+43
+00:02:09,630 --> 00:02:12,070
+it's a way of sharing common
+actions as much as anything
+
+44
+00:02:12,070 --> 00:02:13,306
+else.
+
+45
+00:02:13,306 --> 00:02:17,250
+If it's just you doing something
+and you're just doing it once,
+
+46
+00:02:17,250 --> 00:02:18,750
+that's not really
+a build process,
+
+47
+00:02:18,750 --> 00:02:21,020
+but actually storing
+it as something
+
+48
+00:02:21,020 --> 00:02:23,599
+that you can come back
+to, or more commonly,
+
+49
+00:02:23,599 --> 00:02:25,890
+storing it as something that
+your team can come back to
+
+50
+00:02:25,890 --> 00:02:28,990
+is really important
+because frankly, people
+
+51
+00:02:28,990 --> 00:02:31,480
+suck at repetitive tasks.
+
+52
+00:02:31,480 --> 00:02:34,924
+If I ask someone to do
+something over and over again,
+
+53
+00:02:34,924 --> 00:02:36,590
+they'll probably do
+it subtly different.
+
+54
+00:02:36,590 --> 00:02:39,400
+A build process is always
+about standardizing
+
+55
+00:02:39,400 --> 00:02:40,830
+those repetitive tasks.
+
+56
+00:02:40,830 --> 00:02:42,859
+ 
+
+57
+00:02:42,859 --> 00:02:44,442
+And some of that's
+to do with the fact
+
+58
+00:02:44,442 --> 00:02:47,070
+that words can mean different
+things to different people.
+
+59
+00:02:47,070 --> 00:02:51,530
+If I say, can you minimize
+this bit of JavaScript for me,
+
+60
+00:02:51,530 --> 00:02:54,146
+people will do it differently,
+and that's probably
+
+61
+00:02:54,146 --> 00:02:56,770
+no good in an environment where
+you're trying to work together.
+
+62
+00:02:56,770 --> 00:02:58,700
+You end up with
+different results.
+
+63
+00:02:58,700 --> 00:03:00,390
+Someone might take longer.
+
+64
+00:03:00,390 --> 00:03:01,020
+That's no good.
+
+65
+00:03:01,020 --> 00:03:01,978
+We need to standardize.
+
+66
+00:03:01,978 --> 00:03:05,090
+ 
+
+67
+00:03:05,090 --> 00:03:06,650
+But your build
+process is software.
+
+68
+00:03:06,650 --> 00:03:10,500
+ 
+
+69
+00:03:10,500 --> 00:03:13,900
+People come to it, certainly,
+from engineering and web
+
+70
+00:03:13,900 --> 00:03:16,260
+development, from lots
+of different paths,
+
+71
+00:03:16,260 --> 00:03:18,210
+and not all of them
+will think of themselves
+
+72
+00:03:18,210 --> 00:03:19,870
+as software developers.
+
+73
+00:03:19,870 --> 00:03:20,424
+Tough.
+
+74
+00:03:20,424 --> 00:03:21,590
+You're a software developer.
+
+75
+00:03:21,590 --> 00:03:23,820
+If you're anywhere
+near a build process,
+
+76
+00:03:23,820 --> 00:03:25,310
+you're a software developer.
+
+77
+00:03:25,310 --> 00:03:27,715
+Live with it.
+
+78
+00:03:27,715 --> 00:03:28,809
+But what are we building?
+
+79
+00:03:28,809 --> 00:03:30,350
+What are the sorts
+of types of things
+
+80
+00:03:30,350 --> 00:03:33,460
+that we're putting
+into our build process?
+
+81
+00:03:33,460 --> 00:03:35,550
+Ben mentioned a few
+things that will
+
+82
+00:03:35,550 --> 00:03:39,650
+be common to lots of people in
+the room-- CSS preprocessing,
+
+83
+00:03:39,650 --> 00:03:43,827
+templating-- Kyle-- bundling,
+minification, linting, testing,
+
+84
+00:03:43,827 --> 00:03:44,910
+optimization, transpiling.
+
+85
+00:03:44,910 --> 00:03:48,777
+There's lots of things
+we're doing with our code
+
+86
+00:03:48,777 --> 00:03:50,360
+and there's lots of
+tools we're using.
+
+87
+00:03:50,360 --> 00:03:53,210
+Two of the common
+ones at the moment,
+
+88
+00:03:53,210 --> 00:03:54,600
+certainly in the
+front end space,
+
+89
+00:03:54,600 --> 00:03:56,060
+appear to be Gulp and Grunt.
+
+90
+00:03:56,060 --> 00:03:59,590
+ 
+
+91
+00:03:59,590 --> 00:04:01,375
+Grunt-- this was a
+few days ago, but I
+
+92
+00:04:01,375 --> 00:04:02,940
+bet it's about the same today.
+
+93
+00:04:02,940 --> 00:04:05,680
+Maybe it's less today because
+we're all in this room
+
+94
+00:04:05,680 --> 00:04:08,220
+or watching on the video.
+
+95
+00:04:08,220 --> 00:04:10,570
+30,000 installs
+of this every day.
+
+96
+00:04:10,570 --> 00:04:11,790
+That sounds like quite a lot.
+
+97
+00:04:11,790 --> 00:04:13,660
+That's a lot of interest.
+
+98
+00:04:13,660 --> 00:04:15,520
+That's a lot of people.
+
+99
+00:04:15,520 --> 00:04:19,250
+There's 2,500 Grunt
+plug-ins, and I'll
+
+100
+00:04:19,250 --> 00:04:21,930
+come back to why that might
+not be great in a moment.
+
+101
+00:04:21,930 --> 00:04:24,836
+There's actually
+450 Gulp plug-ins,
+
+102
+00:04:24,836 --> 00:04:27,210
+and that's a tool that's not
+been around anywhere near as
+
+103
+00:04:27,210 --> 00:04:29,082
+long.
+
+104
+00:04:29,082 --> 00:04:31,040
+But I said I'll come back
+to why that might not
+
+105
+00:04:31,040 --> 00:04:33,720
+be good in a moment.
+
+106
+00:04:33,720 --> 00:04:37,095
+Contrib-jshint is a Grunt
+plug-in, And excellent.
+
+107
+00:04:37,095 --> 00:04:37,970
+There's one for Gulp.
+
+108
+00:04:37,970 --> 00:04:38,470
+Brilliant.
+
+109
+00:04:38,470 --> 00:04:42,080
+ 
+
+110
+00:04:42,080 --> 00:04:45,790
+And there's grunt-coffee
+and gulp-coffee,
+
+111
+00:04:45,790 --> 00:04:48,530
+and there's
+broccoli-coffee as well.
+
+112
+00:04:48,530 --> 00:04:51,550
+And at some point--
+and there definitely
+
+113
+00:04:51,550 --> 00:04:55,570
+will be someone in this
+room, someone watching this,
+
+114
+00:04:55,570 --> 00:04:58,000
+I'm building another
+one, and hoping someone
+
+115
+00:04:58,000 --> 00:05:01,840
+comes along and builds another
+one -coffee, and -jshint,
+
+116
+00:05:01,840 --> 00:05:03,490
+and everything else.
+
+117
+00:05:03,490 --> 00:05:08,510
+And we know there's
+2,500 Grunt plug-ins.
+
+118
+00:05:08,510 --> 00:05:11,960
+Do we want 2,500 Gulp
+ones and Broccoli ones
+
+119
+00:05:11,960 --> 00:05:12,930
+and everything else?
+
+120
+00:05:12,930 --> 00:05:18,739
+ 
+
+121
+00:05:18,739 --> 00:05:20,530
+I think there's probably
+a lot of front end
+
+122
+00:05:20,530 --> 00:05:21,650
+people in the room.
+
+123
+00:05:21,650 --> 00:05:24,470
+There's probably people writing
+JavaScript, writing CSS,
+
+124
+00:05:24,470 --> 00:05:26,220
+writing HTML most of their time.
+
+125
+00:05:26,220 --> 00:05:28,720
+Is that fair to say?
+
+126
+00:05:28,720 --> 00:05:33,146
+Any people go, I'm basically
+just a Java programmer?
+
+127
+00:05:33,146 --> 00:05:34,390
+[INAUDIBLE]
+
+128
+00:05:34,390 --> 00:05:36,500
+But we're all working
+in environments
+
+129
+00:05:36,500 --> 00:05:38,960
+where there probably
+is a bucket that
+
+130
+00:05:38,960 --> 00:05:40,910
+might not be written
+in JavaScript.
+
+131
+00:05:40,910 --> 00:05:42,950
+You maybe are using
+Node, maybe you're not.
+
+132
+00:05:42,950 --> 00:05:45,700
+Maybe it's Ruby, maybe it's
+Python, maybe it's [INAUDIBLE].
+
+133
+00:05:45,700 --> 00:05:46,812
+It doesn't matter.
+
+134
+00:05:46,812 --> 00:05:49,270
+There's a lot of other things
+going on around you that also
+
+135
+00:05:49,270 --> 00:05:51,860
+have build processes,
+and there's
+
+136
+00:05:51,860 --> 00:05:54,870
+loads of build tools,
+whether it's Make,
+
+137
+00:05:54,870 --> 00:05:56,570
+[INAUDIBLE], Maven, [INAUDIBLE].
+
+138
+00:05:56,570 --> 00:05:57,795
+There's loads of these.
+
+139
+00:05:57,795 --> 00:06:00,420
+There's a bit at the bottom that
+says two points for each tool,
+
+140
+00:06:00,420 --> 00:06:02,200
+minus five if you
+liked using Maven.
+
+141
+00:06:02,200 --> 00:06:05,460
+ 
+
+142
+00:06:05,460 --> 00:06:09,380
+Ultimately, building
+software isn't new.
+
+143
+00:06:09,380 --> 00:06:11,130
+It's happening all
+over the place,
+
+144
+00:06:11,130 --> 00:06:15,110
+and standardizing all the
+things, standardizing things
+
+145
+00:06:15,110 --> 00:06:18,590
+in silos probably isn't enough.
+
+146
+00:06:18,590 --> 00:06:20,670
+Even when it comes
+to typical tasks
+
+147
+00:06:20,670 --> 00:06:25,580
+around front end
+engineering, a lot of those
+
+148
+00:06:25,580 --> 00:06:29,200
+have plug-ins or projects
+related to other build tools
+
+149
+00:06:29,200 --> 00:06:31,800
+that are doing
+it, whether that's
+
+150
+00:06:31,800 --> 00:06:34,275
+[INAUDIBLE] versions of things
+like [INAUDIBLE] Compiler
+
+151
+00:06:34,275 --> 00:06:36,745
+or Compressor versus
+Sprockets and Rails
+
+152
+00:06:36,745 --> 00:06:37,870
+versus [INAUDIBLE] and PHP.
+
+153
+00:06:37,870 --> 00:06:40,480
+ 
+
+154
+00:06:40,480 --> 00:06:43,620
+This is spiraling,
+massive, all these things
+
+155
+00:06:43,620 --> 00:06:45,755
+doing fundamentally
+the same jobs.
+
+156
+00:06:45,755 --> 00:06:48,400
+ 
+
+157
+00:06:48,400 --> 00:06:51,000
+And really, everything
+old is new again.
+
+158
+00:06:51,000 --> 00:06:52,840
+Building software is not new.
+
+159
+00:06:52,840 --> 00:06:56,645
+It's maybe new to-- these
+tools are new, Grunt and Gulp.
+
+160
+00:06:56,645 --> 00:06:58,565
+There's a lot of interest
+around programming
+
+161
+00:06:58,565 --> 00:06:59,862
+and JavaScript at the moment.
+
+162
+00:06:59,862 --> 00:07:01,570
+There's a lot of new
+tools coming around,
+
+163
+00:07:01,570 --> 00:07:04,390
+but this isn't fundamentally
+a new activity,
+
+164
+00:07:04,390 --> 00:07:06,290
+and some of the same
+mistakes are being made.
+
+165
+00:07:06,290 --> 00:07:09,290
+Some of the learnings are
+not being taken forward.
+
+166
+00:07:09,290 --> 00:07:10,780
+Make is older than you probably.
+
+167
+00:07:10,780 --> 00:07:12,071
+I wrote this before turning up.
+
+168
+00:07:12,071 --> 00:07:13,650
+I think that's broadly true.
+
+169
+00:07:13,650 --> 00:07:17,780
+Unless you're all 37,
+Make is older than you.
+
+170
+00:07:17,780 --> 00:07:21,130
+There's a few people here who
+probably look older than 37,
+
+171
+00:07:21,130 --> 00:07:24,330
+but I reckon most
+of you-- I'm going
+
+172
+00:07:24,330 --> 00:07:26,280
+to go for Make is
+older than you.
+
+173
+00:07:26,280 --> 00:07:28,130
+Make is a build tool.
+
+174
+00:07:28,130 --> 00:07:30,644
+If you haven't seen
+it, it looks like this.
+
+175
+00:07:30,644 --> 00:07:32,060
+If you're thinking,
+wait a minute.
+
+176
+00:07:32,060 --> 00:07:34,399
+Where's all the
+rest of the code?
+
+177
+00:07:34,399 --> 00:07:35,940
+You can think, well,
+maybe you should
+
+178
+00:07:35,940 --> 00:07:37,273
+be using Make rather than Grunt.
+
+179
+00:07:37,273 --> 00:07:43,240
+ 
+
+180
+00:07:43,240 --> 00:07:46,050
+Do you know how many
+Make plug-ins there are?
+
+181
+00:07:46,050 --> 00:07:47,854
+I don't think there are any.
+
+182
+00:07:47,854 --> 00:07:49,770
+That's probably going
+to be completely untrue,
+
+183
+00:07:49,770 --> 00:07:52,030
+but basically, there aren't
+really Make plug-ins.
+
+184
+00:07:52,030 --> 00:07:56,050
+There aren't really plug-ins
+for LS as a Unix command tool.
+
+185
+00:07:56,050 --> 00:07:59,160
+The reason is because Unix
+pipes are amazing, or rather,
+
+186
+00:07:59,160 --> 00:08:01,020
+the concept of simply
+chaining things
+
+187
+00:08:01,020 --> 00:08:03,450
+together by sending
+information between them.
+
+188
+00:08:03,450 --> 00:08:05,970
+ 
+
+189
+00:08:05,970 --> 00:08:11,140
+LS doesn't have a Grep
+plug-in or a Sort plug-in.
+
+190
+00:08:11,140 --> 00:08:14,050
+It's just about Unix
+command line tools
+
+191
+00:08:14,050 --> 00:08:15,792
+being able to be
+chained together.
+
+192
+00:08:15,792 --> 00:08:17,500
+It doesn't matter that
+these things could
+
+193
+00:08:17,500 --> 00:08:20,490
+be written in different
+languages by different people
+
+194
+00:08:20,490 --> 00:08:21,680
+at different times.
+
+195
+00:08:21,680 --> 00:08:24,465
+We don't have to customize
+them all via plug-in models.
+
+196
+00:08:24,465 --> 00:08:28,560
+ 
+
+197
+00:08:28,560 --> 00:08:30,370
+Actually, I don't do
+a lot for [INAUDIBLE].
+
+198
+00:08:30,370 --> 00:08:31,745
+I haven't done
+for quite a while.
+
+199
+00:08:31,745 --> 00:08:33,700
+So actually, I did a
+whole bunch of research
+
+200
+00:08:33,700 --> 00:08:36,415
+into what people were
+doing to be on this panel,
+
+201
+00:08:36,415 --> 00:08:39,626
+and I thought, as
+a community, it
+
+202
+00:08:39,626 --> 00:08:42,000
+seems that there's a lot of
+effort reinventing the wheel.
+
+203
+00:08:42,000 --> 00:08:43,666
+This isn't just true
+for this community.
+
+204
+00:08:43,666 --> 00:08:48,090
+That's true of basically
+programmers, myself included.
+
+205
+00:08:48,090 --> 00:08:51,440
+But we invariably invent
+things and reinvent things
+
+206
+00:08:51,440 --> 00:08:54,390
+in our language of
+choice and sometimes
+
+207
+00:08:54,390 --> 00:08:56,906
+in our tool of choice.
+
+208
+00:08:56,906 --> 00:08:58,740
+But the thing we have
+to miss is that's
+
+209
+00:08:58,740 --> 00:09:01,250
+our language and tool
+of choice at the moment,
+
+210
+00:09:01,250 --> 00:09:04,370
+and that probably
+changes over time.
+
+211
+00:09:04,370 --> 00:09:07,150
+So anything that we
+can do to minimize that
+
+212
+00:09:07,150 --> 00:09:10,420
+is probably a good
+thing to think about
+
+213
+00:09:10,420 --> 00:09:12,830
+because we can
+make things better.
+
+214
+00:09:12,830 --> 00:09:15,380
+And ultimately,
+things are better
+
+215
+00:09:15,380 --> 00:09:17,380
+now than they were before.
+
+216
+00:09:17,380 --> 00:09:18,512
+Having tools is good.
+
+217
+00:09:18,512 --> 00:09:19,970
+This is not about,
+oh, we shouldn't
+
+218
+00:09:19,970 --> 00:09:21,110
+have done any of that.
+
+219
+00:09:21,110 --> 00:09:22,160
+Throw it all away.
+
+220
+00:09:22,160 --> 00:09:25,400
+It's about, how can we make
+it a lot more sustainable?
+
+221
+00:09:25,400 --> 00:09:28,870
+How can we learn
+from 20-odd years,
+
+222
+00:09:28,870 --> 00:09:31,150
+30-odd years of other
+programming communities' build
+
+223
+00:09:31,150 --> 00:09:31,650
+processes?
+
+224
+00:09:31,650 --> 00:09:34,340
+ 
+
+225
+00:09:34,340 --> 00:09:36,330
+What is the most
+valuable unit of sharing?
+
+226
+00:09:36,330 --> 00:09:39,520
+Is it a plug-in?
+
+227
+00:09:39,520 --> 00:09:41,180
+How can we build
+community consensus
+
+228
+00:09:41,180 --> 00:09:44,100
+and avoid the
+plug-in apocalypse?
+
+229
+00:09:44,100 --> 00:09:47,650
+I think there's a
+genuine problem there.
+
+230
+00:09:47,650 --> 00:09:50,730
+Can we share entire
+pipelines as well as tools?
+
+231
+00:09:50,730 --> 00:09:52,550
+It's fine sharing
+the individual bits,
+
+232
+00:09:52,550 --> 00:09:55,840
+but actually, we probably can
+all take a collection of things
+
+233
+00:09:55,840 --> 00:09:59,890
+together and string it
+together to do the same thing.
+
+234
+00:09:59,890 --> 00:10:01,890
+And actually, can we
+share the pipeline?
+
+235
+00:10:01,890 --> 00:10:04,785
+Is that a better
+unit of sharing?
+
+236
+00:10:04,785 --> 00:10:07,180
+And importantly,
+how do we break down
+
+237
+00:10:07,180 --> 00:10:10,570
+these artificial
+programming language silos?
+
+238
+00:10:10,570 --> 00:10:13,210
+Because even if you're thinking,
+well actually, my career is
+
+239
+00:10:13,210 --> 00:10:15,920
+going to be all about--
+for engineering-- it's all
+
+240
+00:10:15,920 --> 00:10:18,320
+going to be about
+JavaScript and CSS and HTML,
+
+241
+00:10:18,320 --> 00:10:19,899
+and probably they're
+going to change,
+
+242
+00:10:19,899 --> 00:10:21,940
+they're going to evolve,
+they're going to better.
+
+243
+00:10:21,940 --> 00:10:23,690
+The tools around it's
+going to get better,
+
+244
+00:10:23,690 --> 00:10:25,560
+but that's what I'm going to do.
+
+245
+00:10:25,560 --> 00:10:27,340
+You'll probably
+do it in a context
+
+246
+00:10:27,340 --> 00:10:29,970
+where other people
+around you are writing
+
+247
+00:10:29,970 --> 00:10:32,870
+different programming
+languages, and how do we
+
+248
+00:10:32,870 --> 00:10:35,757
+make it so there's not
+that culture clash?
+
+249
+00:10:35,757 --> 00:10:37,090
+There's not that us versus them?
+
+250
+00:10:37,090 --> 00:10:39,100
+How do we bring these
+things together?
+
+251
+00:10:39,100 --> 00:10:40,600
+They're just some
+of the things that
+
+252
+00:10:40,600 --> 00:10:44,470
+were in my head and some
+of the things I care about.
+
+253
+00:10:44,470 --> 00:10:46,010
+My other panelists
+might violently
+
+254
+00:10:46,010 --> 00:10:47,650
+disagree with some of that.
+
+255
+00:10:47,650 --> 00:10:51,130
+With that, we can
+go on to the panel.
+
+256
+00:10:51,130 --> 00:10:58,324
+[APPLAUSE]
+
+257
+00:10:58,324 --> 00:10:59,490
+BEN VINEGAR: Thanks, Gareth.
+
+258
+00:10:59,490 --> 00:11:03,690
+I think that was a pretty
+good way to start us off.
+
+259
+00:11:03,690 --> 00:11:07,670
+There's a question I'm
+looking for as I browse
+
+260
+00:11:07,670 --> 00:11:09,170
+this thing that's
+been moved around.
+
+261
+00:11:09,170 --> 00:11:13,370
+ 
+
+262
+00:11:13,370 --> 00:11:18,690
+I'm going to ask on
+Cornell [INAUDIBLE].
+
+263
+00:11:18,690 --> 00:11:21,450
+And also I just
+want to say, I feel
+
+264
+00:11:21,450 --> 00:11:23,570
+that we've butchered
+your question slightly,
+
+265
+00:11:23,570 --> 00:11:28,000
+and if you would like to
+go original with this,
+
+266
+00:11:28,000 --> 00:11:29,410
+please do so.
+
+267
+00:11:29,410 --> 00:11:32,145
+AUDIENCE: Is eliminating
+a need for a build process
+
+268
+00:11:32,145 --> 00:11:34,220
+a goal of web standards?
+
+269
+00:11:34,220 --> 00:11:38,140
+For example, should CSS
+adopt all the features
+
+270
+00:11:38,140 --> 00:11:44,140
+of CSS preprocessors, or should
+it avoid duplicating them?
+
+271
+00:11:44,140 --> 00:11:46,150
+ADDY OSMANI: So one of
+the really nice things
+
+272
+00:11:46,150 --> 00:11:48,780
+about the Extensible
+Web Manifesto
+
+273
+00:11:48,780 --> 00:11:51,660
+has been the community
+starts to iterate
+
+274
+00:11:51,660 --> 00:11:53,630
+on features and
+languages like JavaScript
+
+275
+00:11:53,630 --> 00:11:56,400
+and tools like
+JavaScript and so on,
+
+276
+00:11:56,400 --> 00:11:58,260
+and once we reach a
+nice consensus there,
+
+277
+00:11:58,260 --> 00:12:01,320
+we can then go and move on to
+standardizing those features.
+
+278
+00:12:01,320 --> 00:12:04,160
+So in the case of CSS
+and preprocessors,
+
+279
+00:12:04,160 --> 00:12:07,010
+we've already started to see
+things like variables actually
+
+280
+00:12:07,010 --> 00:12:09,580
+land and go from things
+like Sass and LESS
+
+281
+00:12:09,580 --> 00:12:11,250
+directly into CSS.
+
+282
+00:12:11,250 --> 00:12:14,190
+The same thing is being
+done with mix-ins.
+
+283
+00:12:14,190 --> 00:12:17,160
+I think that it's
+perhaps not necessarily
+
+284
+00:12:17,160 --> 00:12:21,330
+the browser's responsibility
+to provide hooks into your
+
+285
+00:12:21,330 --> 00:12:24,540
+build process, like a preprocess
+step or a post-process step.
+
+286
+00:12:24,540 --> 00:12:27,030
+That seems to be something
+that would be better left up
+
+287
+00:12:27,030 --> 00:12:29,910
+to additional tools or
+something on the server side.
+
+288
+00:12:29,910 --> 00:12:32,940
+But I think that we currently
+have a good system in place
+
+289
+00:12:32,940 --> 00:12:36,160
+for actually landing things
+that the community is doing
+
+290
+00:12:36,160 --> 00:12:38,660
+and finding useful
+patterns directly
+
+291
+00:12:38,660 --> 00:12:41,340
+inside native
+primitives, and I'd
+
+292
+00:12:41,340 --> 00:12:43,137
+like to see us
+continue doing that.
+
+293
+00:12:43,137 --> 00:12:45,220
+KYLE SIMPSON: I want to
+jump in because they asked
+
+294
+00:12:45,220 --> 00:12:47,761
+me to be on the panel so that
+I could disagree with everyone.
+
+295
+00:12:47,761 --> 00:12:50,200
+ 
+
+296
+00:12:50,200 --> 00:12:52,140
+I actually think
+it's a terrible idea
+
+297
+00:12:52,140 --> 00:12:54,280
+to standardize all
+of these things
+
+298
+00:12:54,280 --> 00:12:58,440
+into CSS and into
+HTML and JavaScript.
+
+299
+00:12:58,440 --> 00:13:00,960
+For example, I think it
+would be an awful world
+
+300
+00:13:00,960 --> 00:13:05,267
+if the browser had a transpiler
+for every one of the 1,000
+
+301
+00:13:05,267 --> 00:13:06,475
+languages that are out there.
+
+302
+00:13:06,475 --> 00:13:08,570
+There are things that
+belong in our tool sets,
+
+303
+00:13:08,570 --> 00:13:10,060
+there are things they
+belong in our technology,
+
+304
+00:13:10,060 --> 00:13:12,226
+and there are things that
+belong in a build process,
+
+305
+00:13:12,226 --> 00:13:14,130
+and I draw a very distinct
+line between them.
+
+306
+00:13:14,130 --> 00:13:16,390
+So transpiling, a
+lot of things that we
+
+307
+00:13:16,390 --> 00:13:19,060
+see in CSS preprocessors
+are things that I think
+
+308
+00:13:19,060 --> 00:13:22,070
+aren't necessarily great
+to be in the CSS language.
+
+309
+00:13:22,070 --> 00:13:23,865
+They're things that
+tools could do for you.
+
+310
+00:13:23,865 --> 00:13:25,240
+So I don't think
+it's a good idea
+
+311
+00:13:25,240 --> 00:13:28,302
+at all to go down that slippery
+slope of saying, anything
+
+312
+00:13:28,302 --> 00:13:30,510
+that I can dream up should
+just drop into a standard.
+
+313
+00:13:30,510 --> 00:13:32,950
+I think build processes
+are there for a reason,
+
+314
+00:13:32,950 --> 00:13:34,850
+and I don't see them
+going away any day.
+
+315
+00:13:34,850 --> 00:13:35,180
+GARETH RUSHGROVE:
+If anyone's got
+
+316
+00:13:35,180 --> 00:13:37,260
+a way of just dreaming
+stuff up and dropping it
+
+317
+00:13:37,260 --> 00:13:38,440
+into a standards
+process, though,
+
+318
+00:13:38,440 --> 00:13:39,523
+I'd like to hear about it.
+
+319
+00:13:39,523 --> 00:13:41,320
+KYLE SIMPSON: That
+would be awesome.
+
+320
+00:13:41,320 --> 00:13:42,986
+GARETH RUSHGROVE: I
+think fundamentally,
+
+321
+00:13:42,986 --> 00:13:46,110
+the fiction around standardizing
+things is it takes time
+
+322
+00:13:46,110 --> 00:13:48,430
+and it's hard but
+for good reason.
+
+323
+00:13:48,430 --> 00:13:50,900
+So actually, I think
+the answer is yes,
+
+324
+00:13:50,900 --> 00:13:53,210
+but realistically, the
+rate that that happens
+
+325
+00:13:53,210 --> 00:13:55,090
+is slow for good reasons.
+
+326
+00:13:55,090 --> 00:13:57,124
+Until we can broadly
+all agree on something,
+
+327
+00:13:57,124 --> 00:13:58,790
+then it's not going
+to get standardized,
+
+328
+00:13:58,790 --> 00:14:00,500
+and we're definitely
+not going to broadly
+
+329
+00:14:00,500 --> 00:14:03,260
+agree on everything
+anytime soon.
+
+330
+00:14:03,260 --> 00:14:04,760
+So therefore, it's
+the stuff that we
+
+331
+00:14:04,760 --> 00:14:07,530
+can fight about that goes in
+our different build processes.
+
+332
+00:14:07,530 --> 00:14:09,255
+NICK FISHER: I'd agree
+with Kyle here as
+
+333
+00:14:09,255 --> 00:14:12,680
+well that I think one
+of the real benefits
+
+334
+00:14:12,680 --> 00:14:15,700
+and the reason that JavaScript
+and CSS got to where it is now
+
+335
+00:14:15,700 --> 00:14:18,480
+is because it
+didn't do that ever.
+
+336
+00:14:18,480 --> 00:14:23,250
+It is a very bare bones
+language, JavaScript,
+
+337
+00:14:23,250 --> 00:14:25,252
+that has let all
+of us then come up
+
+338
+00:14:25,252 --> 00:14:26,960
+with these new tools
+and these new things
+
+339
+00:14:26,960 --> 00:14:29,610
+to build upon a
+very basic level.
+
+340
+00:14:29,610 --> 00:14:33,114
+And I think that if we decided
+to do that, say, 10 years ago,
+
+341
+00:14:33,114 --> 00:14:35,030
+we might have a very
+different language today.
+
+342
+00:14:35,030 --> 00:14:39,380
+ 
+
+343
+00:14:39,380 --> 00:14:41,860
+BEN VINEGAR: So I'd
+just tack onto this,
+
+344
+00:14:41,860 --> 00:14:45,040
+which is historically,
+have we even done
+
+345
+00:14:45,040 --> 00:14:50,110
+a good job of when we take
+features from other languages
+
+346
+00:14:50,110 --> 00:14:55,350
+and bring them into
+JavaScript or CSS,
+
+347
+00:14:55,350 --> 00:14:57,895
+people talk to me a lot
+about, we shouldn't even
+
+348
+00:14:57,895 --> 00:15:00,230
+be using jQuery but we
+should be doing straight DOM.
+
+349
+00:15:00,230 --> 00:15:03,110
+But I find that those
+API methods are still
+
+350
+00:15:03,110 --> 00:15:06,830
+pretty verbose and they're
+not very fun to use.
+
+351
+00:15:06,830 --> 00:15:10,160
+So if we went along the path
+of bringing a lot of these,
+
+352
+00:15:10,160 --> 00:15:12,540
+let's say, LESS and
+Sass features into CSS,
+
+353
+00:15:12,540 --> 00:15:14,700
+would we even get it right?
+
+354
+00:15:14,700 --> 00:15:17,940
+Would it be fun to work with?
+
+355
+00:15:17,940 --> 00:15:20,030
+KYLE SIMPSON: I think
+it's OK for these tools
+
+356
+00:15:20,030 --> 00:15:23,330
+to inform standards, but I
+think we should draw a line
+
+357
+00:15:23,330 --> 00:15:25,650
+and say just because
+somebody can put something
+
+358
+00:15:25,650 --> 00:15:27,980
+into a build process doesn't
+mean that it will ever
+
+359
+00:15:27,980 --> 00:15:29,380
+belong in a standard.
+
+360
+00:15:29,380 --> 00:15:32,640
+So there's plenty of good
+examples, for better or worse,
+
+361
+00:15:32,640 --> 00:15:36,280
+that CoffeeScript informed ESX.
+
+362
+00:15:36,280 --> 00:15:38,916
+I don't like all of
+them, but that's good
+
+363
+00:15:38,916 --> 00:15:40,290
+that we were able
+to inform that.
+
+364
+00:15:40,290 --> 00:15:42,770
+But I don't think it would be
+a good idea for CoffeeScript
+
+365
+00:15:42,770 --> 00:15:45,094
+to natively start
+being in the browser.
+
+366
+00:15:45,094 --> 00:15:46,260
+I think that's a build step.
+
+367
+00:15:46,260 --> 00:15:48,920
+ 
+
+368
+00:15:48,920 --> 00:15:50,820
+ADDY OSMANI: So I
+think the TLDR of that
+
+369
+00:15:50,820 --> 00:15:53,540
+is it looks like it's
+probably not the best
+
+370
+00:15:53,540 --> 00:15:56,950
+idea for everything that's
+possible inside a build process
+
+371
+00:15:56,950 --> 00:15:58,670
+today to be baked
+into the browser.
+
+372
+00:15:58,670 --> 00:16:00,690
+We're always going to
+fundamentally differ
+
+373
+00:16:00,690 --> 00:16:03,990
+when it comes to
+our tools, and there
+
+374
+00:16:03,990 --> 00:16:06,470
+are going to be some
+patterns that it makes sense
+
+375
+00:16:06,470 --> 00:16:10,700
+to eventually land
+natively, but on the whole,
+
+376
+00:16:10,700 --> 00:16:13,290
+if we can do something
+outside of that process,
+
+377
+00:16:13,290 --> 00:16:15,580
+let's keep rolling with that.
+
+378
+00:16:15,580 --> 00:16:18,960
+SEBASTIAN GOLASCH: And also,
+in my opinion, the good part
+
+379
+00:16:18,960 --> 00:16:21,090
+of using a tool and
+a build process,
+
+380
+00:16:21,090 --> 00:16:24,150
+using processing before
+it is in the browser,
+
+381
+00:16:24,150 --> 00:16:27,310
+is that if it doesn't make
+sense, you can throw it away.
+
+382
+00:16:27,310 --> 00:16:30,510
+Once it's been in the browser,
+it's there forever, period,
+
+383
+00:16:30,510 --> 00:16:32,100
+and that's a huge problem.
+
+384
+00:16:32,100 --> 00:16:37,920
+That's also why standards
+are slow in the common sense,
+
+385
+00:16:37,920 --> 00:16:39,270
+but it's the right thing.
+
+386
+00:16:39,270 --> 00:16:41,235
+ 
+
+387
+00:16:41,235 --> 00:16:42,860
+BEN VINEGAR: So there
+was a second part
+
+388
+00:16:42,860 --> 00:16:44,979
+to Cornell's question,
+the original question.
+
+389
+00:16:44,979 --> 00:16:46,770
+I don't know that he
+touched on it exactly.
+
+390
+00:16:46,770 --> 00:16:50,340
+I was hoping that he
+would, but it was about,
+
+391
+00:16:50,340 --> 00:16:54,150
+should the idea of preprocessing
+itself be a standards feature?
+
+392
+00:16:54,150 --> 00:16:56,340
+We are basically in
+agreement that it
+
+393
+00:16:56,340 --> 00:16:59,520
+seems like most of our code
+is being taken from one source
+
+394
+00:16:59,520 --> 00:17:00,430
+into another.
+
+395
+00:17:00,430 --> 00:17:04,240
+Is there an idea of
+having a preprocess step
+
+396
+00:17:04,240 --> 00:17:05,530
+versus a runtime step?
+
+397
+00:17:05,530 --> 00:17:07,775
+I'm looking for a nod from you.
+
+398
+00:17:07,775 --> 00:17:08,650
+Have I captured that?
+
+399
+00:17:08,650 --> 00:17:13,724
+ 
+
+400
+00:17:13,724 --> 00:17:15,140
+AUDIENCE: [INAUDIBLE]
+was thinking
+
+401
+00:17:15,140 --> 00:17:18,940
+where CSS should be optimized
+for being preprocessed,
+
+402
+00:17:18,940 --> 00:17:22,599
+whether it should have syntax
+or features that are not
+
+403
+00:17:22,599 --> 00:17:27,970
+for humans to type manually, but
+for preprocessors to generate,
+
+404
+00:17:27,970 --> 00:17:28,670
+for example.
+
+405
+00:17:28,670 --> 00:17:31,830
+ 
+
+406
+00:17:31,830 --> 00:17:33,862
+BEN VINEGAR: Any
+comments on that?
+
+407
+00:17:33,862 --> 00:17:35,820
+KYLE SIMPSON: Well, I'll
+jump in since I happen
+
+408
+00:17:35,820 --> 00:17:39,280
+to be experimenting with what I
+call CSS templating as opposed
+
+409
+00:17:39,280 --> 00:17:42,490
+to CSS preprocessing,
+and I think
+
+410
+00:17:42,490 --> 00:17:43,800
+that's a better way to go.
+
+411
+00:17:43,800 --> 00:17:45,690
+So again, what I
+said was there's
+
+412
+00:17:45,690 --> 00:17:48,590
+several things that we've been
+informed by LESS and Sass that
+
+413
+00:17:48,590 --> 00:17:50,980
+do belong in the CSS
+language, and I'm
+
+414
+00:17:50,980 --> 00:17:54,230
+glad that we've got tools
+that have standardized on what
+
+415
+00:17:54,230 --> 00:17:56,610
+those things are, like for
+instance, being able to drop
+
+416
+00:17:56,610 --> 00:17:58,160
+in a value or for
+instance, being
+
+417
+00:17:58,160 --> 00:18:00,170
+able to nest a rule or
+something like that.
+
+418
+00:18:00,170 --> 00:18:02,070
+But there's a whole
+bunch of other stuff
+
+419
+00:18:02,070 --> 00:18:03,570
+that I think should
+be externalized.
+
+420
+00:18:03,570 --> 00:18:05,680
+So I think we can draw
+those distinct lines,
+
+421
+00:18:05,680 --> 00:18:10,160
+and I think the tools can
+standardize on the stuff that
+
+422
+00:18:10,160 --> 00:18:12,960
+is smart, but that's
+obviously a gray area.
+
+423
+00:18:12,960 --> 00:18:15,206
+I mean, it's hard for
+any one person to say,
+
+424
+00:18:15,206 --> 00:18:16,330
+here's where the line goes.
+
+425
+00:18:16,330 --> 00:18:17,913
+So the community, I
+think, needs to be
+
+426
+00:18:17,913 --> 00:18:21,050
+more responsible about not just
+looking at the new, shiny thing
+
+427
+00:18:21,050 --> 00:18:23,824
+that somebody dreamed
+up but saying, really,
+
+428
+00:18:23,824 --> 00:18:25,740
+should that actually be
+adopted or should that
+
+429
+00:18:25,740 --> 00:18:27,457
+stay in the user land?
+
+430
+00:18:27,457 --> 00:18:29,040
+I think we need, as
+a community, to be
+
+431
+00:18:29,040 --> 00:18:30,730
+more responsible
+with that decision.
+
+432
+00:18:30,730 --> 00:18:32,230
+BEN VINEGAR: On
+that note, I'm going
+
+433
+00:18:32,230 --> 00:18:35,570
+to bring us to
+our next question.
+
+434
+00:18:35,570 --> 00:18:38,730
+I'm going to call on from
+the audience Ernesto Jimenez?
+
+435
+00:18:38,730 --> 00:18:44,500
+ 
+
+436
+00:18:44,500 --> 00:18:46,700
+AUDIENCE: So the question
+is, much of the new tools
+
+437
+00:18:46,700 --> 00:18:49,155
+and preprocessors are growing
+within the Node.js community
+
+438
+00:18:49,155 --> 00:18:51,610
+and depend on the
+Node stack and MPM.
+
+439
+00:18:51,610 --> 00:18:53,190
+Do you think this
+dependency might
+
+440
+00:18:53,190 --> 00:18:54,951
+be limiting in the future?
+
+441
+00:18:54,951 --> 00:18:56,950
+ADDY OSMANI: Let's talk
+about Node for a moment.
+
+442
+00:18:56,950 --> 00:18:59,790
+So Node has been growing
+in popularity quite
+
+443
+00:18:59,790 --> 00:19:01,910
+extensively over the
+last couple of years.
+
+444
+00:19:01,910 --> 00:19:05,840
+It currently has something
+like 35,000 downloads a day.
+
+445
+00:19:05,840 --> 00:19:10,200
+I think 0.1 was downloaded
+something like a million times.
+
+446
+00:19:10,200 --> 00:19:12,457
+So Node's popularity is
+increasing, which is great.
+
+447
+00:19:12,457 --> 00:19:14,040
+At the same time,
+you have to remember
+
+448
+00:19:14,040 --> 00:19:16,012
+that the long tail--
+so not necessarily
+
+449
+00:19:16,012 --> 00:19:17,470
+the people in this
+room, but people
+
+450
+00:19:17,470 --> 00:19:20,130
+who are still afraid of the
+command line, people who
+
+451
+00:19:20,130 --> 00:19:22,730
+want to be able to optimize
+their pages and their apps
+
+452
+00:19:22,730 --> 00:19:25,480
+and so forth but
+don't necessarily
+
+453
+00:19:25,480 --> 00:19:28,180
+feel like it's a nice place
+to go into the command line.
+
+454
+00:19:28,180 --> 00:19:29,931
+They still feel it's
+really, really scary.
+
+455
+00:19:29,931 --> 00:19:31,346
+It's those people
+that we actually
+
+456
+00:19:31,346 --> 00:19:32,910
+need to come up
+with solutions for.
+
+457
+00:19:32,910 --> 00:19:36,450
+And there do exist tools that
+can help with this stuff.
+
+458
+00:19:36,450 --> 00:19:39,880
+The long tail generally
+like working with GUIs,
+
+459
+00:19:39,880 --> 00:19:42,780
+and we can tie that
+stuff back to Node,
+
+460
+00:19:42,780 --> 00:19:45,620
+whether we're using something
+like Node-webkit or additional
+
+461
+00:19:45,620 --> 00:19:49,210
+tooling so that they just
+have to say, here's my project
+
+462
+00:19:49,210 --> 00:19:51,180
+or here are the directories
+I'm working with.
+
+463
+00:19:51,180 --> 00:19:53,096
+Can you just bind these
+to the different tools
+
+464
+00:19:53,096 --> 00:19:56,440
+that might do preprocessing,
+postprocessing, and so forth?
+
+465
+00:19:56,440 --> 00:19:59,400
+So I don't think
+that using Node is
+
+466
+00:19:59,400 --> 00:20:01,510
+something that's stopping us.
+
+467
+00:20:01,510 --> 00:20:04,230
+It's just going to be
+about improving awareness
+
+468
+00:20:04,230 --> 00:20:08,050
+of how OK it is to use things
+like Node and the command line
+
+469
+00:20:08,050 --> 00:20:09,380
+when you're actually working.
+
+470
+00:20:09,380 --> 00:20:11,880
+GARETH RUSHGROVE: Coming at
+that from a completely different
+
+471
+00:20:11,880 --> 00:20:16,130
+point as well is that
+Node's a runtime,
+
+472
+00:20:16,130 --> 00:20:17,990
+and yeah, whether
+someone's using
+
+473
+00:20:17,990 --> 00:20:19,617
+command line or
+another tail, it's
+
+474
+00:20:19,617 --> 00:20:21,200
+something that's
+actually in our code.
+
+475
+00:20:21,200 --> 00:20:24,110
+For some environments,
+that is a barrier to entry.
+
+476
+00:20:24,110 --> 00:20:27,030
+They're not going to put
+Node on their environment.
+
+477
+00:20:27,030 --> 00:20:27,870
+That's fine.
+
+478
+00:20:27,870 --> 00:20:28,991
+That's going to happen.
+
+479
+00:20:28,991 --> 00:20:30,490
+One thing that is
+happening, though,
+
+480
+00:20:30,490 --> 00:20:33,100
+because there's been a lot
+of interest in the tools
+
+481
+00:20:33,100 --> 00:20:35,190
+that are being built
+on top of this,
+
+482
+00:20:35,190 --> 00:20:38,400
+and there's certainly
+some work around basically
+
+483
+00:20:38,400 --> 00:20:43,384
+embedding a Node
+runtime in the JVM
+
+484
+00:20:43,384 --> 00:20:44,800
+for environments
+which are saying,
+
+485
+00:20:44,800 --> 00:20:46,800
+we're not going to install
+this random new tool,
+
+486
+00:20:46,800 --> 00:20:49,730
+but we are happy with
+running all this Java stuff.
+
+487
+00:20:49,730 --> 00:20:53,220
+So I think that becomes a less
+limiting factor over time.
+
+488
+00:20:53,220 --> 00:20:55,620
+The tools will be able to
+be run in different places.
+
+489
+00:20:55,620 --> 00:20:57,203
+KYLE SIMPSON: So to
+build off of that,
+
+490
+00:20:57,203 --> 00:20:59,460
+I think what it gets to
+is I would wholeheartedly
+
+491
+00:20:59,460 --> 00:21:02,200
+say we should standardize
+on JavaScript for driving
+
+492
+00:21:02,200 --> 00:21:05,370
+these tools, but Node
+is the tool right now.
+
+493
+00:21:05,370 --> 00:21:08,570
+It won't be the tool necessarily
+five years from now or 10 years
+
+494
+00:21:08,570 --> 00:21:11,230
+from now because Node wasn't
+the first server side JavaScript
+
+495
+00:21:11,230 --> 00:21:12,970
+engine and it's
+certainly not the last.
+
+496
+00:21:12,970 --> 00:21:15,765
+We had one from Netscape in the
+very early days of JavaScript
+
+497
+00:21:15,765 --> 00:21:18,711
+that didn't survive,
+Rhino, and now [INAUDIBLE].
+
+498
+00:21:18,711 --> 00:21:20,960
+I mean, we've got a whole
+bunch of other environments.
+
+499
+00:21:20,960 --> 00:21:26,120
+So I think to the extent that
+it's possible for a tool author
+
+500
+00:21:26,120 --> 00:21:31,860
+to build a build process
+tool in JavaScript
+
+501
+00:21:31,860 --> 00:21:34,390
+and try to be as
+agnostic as possible,
+
+502
+00:21:34,390 --> 00:21:37,130
+try to put as few touch
+points to the specific host
+
+503
+00:21:37,130 --> 00:21:40,490
+environment as possible, then
+we see that five years from now,
+
+504
+00:21:40,490 --> 00:21:42,330
+when there's something
+that supersedes Node,
+
+505
+00:21:42,330 --> 00:21:44,900
+it won't be as hard to
+convert that tool over.
+
+506
+00:21:44,900 --> 00:21:46,372
+Most of the logic will survive.
+
+507
+00:21:46,372 --> 00:21:47,830
+So I think we should
+be doing that.
+
+508
+00:21:47,830 --> 00:21:51,774
+ 
+
+509
+00:21:51,774 --> 00:21:53,940
+SEBASTIAN GOLASCH: If you
+think back five years ago,
+
+510
+00:21:53,940 --> 00:21:57,580
+we didn't have Node,
+and back then, we
+
+511
+00:21:57,580 --> 00:22:01,310
+did build scripts with
+Ant, this XML Java thingy,
+
+512
+00:22:01,310 --> 00:22:05,150
+and maybe put a Rhino jar
+in there because we only
+
+513
+00:22:05,150 --> 00:22:08,070
+knew JavaScript and so we
+could script something up
+
+514
+00:22:08,070 --> 00:22:09,780
+that does a little
+bit on top of it.
+
+515
+00:22:09,780 --> 00:22:16,330
+It was hard to configure, and
+so with the rise of Node, front
+
+516
+00:22:16,330 --> 00:22:19,850
+end developers who were
+capable of writing JavaScript
+
+517
+00:22:19,850 --> 00:22:24,050
+and couldn't write some other
+languages, or only CSS and HTML
+
+518
+00:22:24,050 --> 00:22:24,640
+besides.
+
+519
+00:22:24,640 --> 00:22:25,470
+KYLE SIMPSON: Or didn't want to.
+
+520
+00:22:25,470 --> 00:22:27,261
+SEBASTIAN GOLASCH: Or
+didn't want to-- just
+
+521
+00:22:27,261 --> 00:22:29,890
+had the power to tap
+into that build process
+
+522
+00:22:29,890 --> 00:22:32,280
+without just learning
+another language
+
+523
+00:22:32,280 --> 00:22:36,090
+or whatever, or another tool.
+
+524
+00:22:36,090 --> 00:22:37,790
+So they're now
+familiar with the stack
+
+525
+00:22:37,790 --> 00:22:43,230
+and can embrace this whole
+plug-in ecosystem of whatever.
+
+526
+00:22:43,230 --> 00:22:45,350
+I think that that's
+a really good thing.
+
+527
+00:22:45,350 --> 00:22:45,926
+BEN VINEGAR: I want
+to cut you guys off
+
+528
+00:22:45,926 --> 00:22:48,426
+and actually just bring up the
+second part of that question,
+
+529
+00:22:48,426 --> 00:22:52,142
+which we haven't touched
+on at all, which was MPM.
+
+530
+00:22:52,142 --> 00:22:54,350
+I think everyone seems to
+be pretty positive on Node,
+
+531
+00:22:54,350 --> 00:22:55,891
+but what about this
+idea that there's
+
+532
+00:22:55,891 --> 00:22:59,990
+a huge dependence on MPM
+as a package manager,
+
+533
+00:22:59,990 --> 00:23:03,330
+and the MPM repository,
+for which I think
+
+534
+00:23:03,330 --> 00:23:09,210
+it's fair to say there's
+been some bumpiness to it.
+
+535
+00:23:09,210 --> 00:23:12,870
+PRESENTER: What are
+you talking about?
+
+536
+00:23:12,870 --> 00:23:16,080
+BEN VINEGAR: Well, bumpiness--
+to contextualize this,
+
+537
+00:23:16,080 --> 00:23:18,560
+for example, I
+think a month ago,
+
+538
+00:23:18,560 --> 00:23:21,780
+they changed their security
+certificates without notice,
+
+539
+00:23:21,780 --> 00:23:26,630
+and I think a lot of people
+who had depended on Node,
+
+540
+00:23:26,630 --> 00:23:28,590
+they just couldn't download
+packages for a day.
+
+541
+00:23:28,590 --> 00:23:29,996
+There was no instruction.
+
+542
+00:23:29,996 --> 00:23:33,070
+There was no communication
+about what had happened,
+
+543
+00:23:33,070 --> 00:23:34,510
+just as an example point.
+
+544
+00:23:34,510 --> 00:23:35,492
+It's not the only one.
+
+545
+00:23:35,492 --> 00:23:36,700
+Anyone want to touch on this?
+
+546
+00:23:36,700 --> 00:23:38,020
+Perhaps I'm going to
+start with you, Nick.
+
+547
+00:23:38,020 --> 00:23:38,780
+NICK FISHER: I
+think that's going
+
+548
+00:23:38,780 --> 00:23:41,310
+to be a problem if you're
+relying on any third party
+
+549
+00:23:41,310 --> 00:23:45,220
+to host the things that you
+need for your application.
+
+550
+00:23:45,220 --> 00:23:47,200
+I don't think it's
+unique to MPM.
+
+551
+00:23:47,200 --> 00:23:50,404
+I think MPM's solving a
+really good problem right now,
+
+552
+00:23:50,404 --> 00:23:52,570
+but if something were to
+replace that in the future,
+
+553
+00:23:52,570 --> 00:23:55,880
+then I think that it shouldn't
+be that difficult to actually
+
+554
+00:23:55,880 --> 00:23:58,260
+transition across to that
+or even get rid of that
+
+555
+00:23:58,260 --> 00:24:00,290
+altogether, like flatten
+all your dependencies,
+
+556
+00:24:00,290 --> 00:24:02,000
+check that in, if
+it came to that.
+
+557
+00:24:02,000 --> 00:24:04,660
+I'm not suggesting
+you do that, but I
+
+558
+00:24:04,660 --> 00:24:06,780
+don't see that MPM
+itself is an issue there.
+
+559
+00:24:06,780 --> 00:24:09,310
+KYLE SIMPSON: Well MPM is
+actually, if I understand,
+
+560
+00:24:09,310 --> 00:24:12,065
+it's sort of like a protocol
+that you could theoretically--
+
+561
+00:24:12,065 --> 00:24:15,360
+and I know companies do-- spin
+up their own MPM instances.
+
+562
+00:24:15,360 --> 00:24:17,410
+So we don't necessarily
+have to think of MPM
+
+563
+00:24:17,410 --> 00:24:19,890
+as the one global,
+universal repository.
+
+564
+00:24:19,890 --> 00:24:24,030
+It can be a way to get your
+own company intranet repository
+
+565
+00:24:24,030 --> 00:24:25,090
+or something like that.
+
+566
+00:24:25,090 --> 00:24:26,756
+So I think that's
+good, but I would also
+
+567
+00:24:26,756 --> 00:24:29,510
+say Git and GitHub are
+pretty awesome for that, too.
+
+568
+00:24:29,510 --> 00:24:32,740
+We don't have to discount
+those as the place
+
+569
+00:24:32,740 --> 00:24:34,650
+that we keep repositories.
+
+570
+00:24:34,650 --> 00:24:35,390
+BEN VINEGAR: [INAUDIBLE]
+the audience here.
+
+571
+00:24:35,390 --> 00:24:37,098
+Sorry, I don't know
+your name, but do you
+
+572
+00:24:37,098 --> 00:24:38,690
+have a comment on this?
+
+573
+00:24:38,690 --> 00:24:40,801
+Oh, your name's on your badge.
+
+574
+00:24:40,801 --> 00:24:43,197
+Johnathan?
+
+575
+00:24:43,197 --> 00:24:45,780
+AUDIENCE: We have the issues as
+well that a lot of these tools
+
+576
+00:24:45,780 --> 00:24:48,132
+are now being stored in GitHub.
+
+577
+00:24:48,132 --> 00:24:50,880
+GitHub's a company and we're
+relying a lot on GitHub,
+
+578
+00:24:50,880 --> 00:24:54,110
+so what should be
+done [INAUDIBLE]?
+
+579
+00:24:54,110 --> 00:24:56,950
+ 
+
+580
+00:24:56,950 --> 00:24:58,510
+PRESENTER: Don't use GitHub.
+
+581
+00:24:58,510 --> 00:25:00,480
+Use Git, not GitHub.
+
+582
+00:25:00,480 --> 00:25:02,950
+Use MPM the protocol,
+not MPM the--
+
+583
+00:25:02,950 --> 00:25:04,060
+PRESENTER: Registry.
+
+584
+00:25:04,060 --> 00:25:07,762
+BEN VINEGAR: What about the
+idea that-- obviously, you
+
+585
+00:25:07,762 --> 00:25:09,790
+can spin up your own
+thing, but MPM now, it's
+
+586
+00:25:09,790 --> 00:25:10,810
+a private company.
+
+587
+00:25:10,810 --> 00:25:13,340
+And if you go to other
+languages where there's PyPy
+
+588
+00:25:13,340 --> 00:25:15,310
+and there's Gems,
+those are all actually
+
+589
+00:25:15,310 --> 00:25:19,320
+community efforts sponsored,
+as far as I understand.
+
+590
+00:25:19,320 --> 00:25:23,085
+Does that change the
+landscape at all?
+
+591
+00:25:23,085 --> 00:25:23,842
+No?
+
+592
+00:25:23,842 --> 00:25:24,550
+KYLE SIMPSON: No.
+
+593
+00:25:24,550 --> 00:25:25,010
+BEN VINEGAR: All right.
+
+594
+00:25:25,010 --> 00:25:26,340
+I thought I'd
+throw it out there.
+
+595
+00:25:26,340 --> 00:25:28,506
+KYLE SIMPSON: I'm sure it
+does change the landscape.
+
+596
+00:25:28,506 --> 00:25:32,410
+ 
+
+597
+00:25:32,410 --> 00:25:34,660
+AUDIENCE: I would love to
+hear from Gareth about that.
+
+598
+00:25:34,660 --> 00:25:36,201
+When you work with
+government people,
+
+599
+00:25:36,201 --> 00:25:38,800
+what do they say when the piece
+of software that you rely on
+
+600
+00:25:38,800 --> 00:25:44,160
+is an 0.1 release, and not
+a 1.0, 2.0, 5.0 release
+
+601
+00:25:44,160 --> 00:25:45,470
+that can be trusted?
+
+602
+00:25:45,470 --> 00:25:47,360
+GARETH RUSHGROVE: So
+the version number thing
+
+603
+00:25:47,360 --> 00:25:48,860
+is nearly a red
+herring because it's
+
+604
+00:25:48,860 --> 00:25:52,970
+an arbitrary string, basically.
+
+605
+00:25:52,970 --> 00:25:56,420
+It's only representing value
+in the eye of the author,
+
+606
+00:25:56,420 --> 00:25:58,270
+and so you can just
+go-- if someone goes,
+
+607
+00:25:58,270 --> 00:26:01,150
+oh, it's got to be 1,
+if you tell the author,
+
+608
+00:26:01,150 --> 00:26:04,870
+they might just make it 1.
+
+609
+00:26:04,870 --> 00:26:07,450
+But ultimately,
+different organizations
+
+610
+00:26:07,450 --> 00:26:13,250
+will have different
+risk appetites,
+
+611
+00:26:13,250 --> 00:26:16,784
+and that's true of--
+I work for government,
+
+612
+00:26:16,784 --> 00:26:18,200
+there's going to
+be banks, there's
+
+613
+00:26:18,200 --> 00:26:19,440
+probably going to
+be your new startup.
+
+614
+00:26:19,440 --> 00:26:20,981
+The thing that kills
+your new startup
+
+615
+00:26:20,981 --> 00:26:24,320
+is probably not a bad dependency
+from a third party managed
+
+616
+00:26:24,320 --> 00:26:26,190
+service, but it
+might be something
+
+617
+00:26:26,190 --> 00:26:28,630
+that has an impact on
+a bank because someone
+
+618
+00:26:28,630 --> 00:26:32,280
+tries to compromise that
+service and come back to you.
+
+619
+00:26:32,280 --> 00:26:35,310
+It's a really hard problem, and
+it's not specific JavaScript.
+
+620
+00:26:35,310 --> 00:26:38,800
+It's specific to third
+party packaged services.
+
+621
+00:26:38,800 --> 00:26:41,310
+ 
+
+622
+00:26:41,310 --> 00:26:43,810
+Having one per language
+was a stupid idea.
+
+623
+00:26:43,810 --> 00:26:46,226
+It's too late to fix it.
+
+624
+00:26:46,226 --> 00:26:47,850
+The next new language
+that comes around
+
+625
+00:26:47,850 --> 00:26:52,470
+will probably have an
+MPM or a Ruby Gems.
+
+626
+00:26:52,470 --> 00:26:53,710
+Its a bit of a shame.
+
+627
+00:26:53,710 --> 00:26:56,670
+The package management systems
+within operating systems
+
+628
+00:26:56,670 --> 00:26:58,810
+solve a lot of the
+problems and people
+
+629
+00:26:58,810 --> 00:27:00,860
+forget about the
+problems they're solving.
+
+630
+00:27:00,860 --> 00:27:04,350
+C Panther Perl does loads
+of really interesting stuff
+
+631
+00:27:04,350 --> 00:27:06,800
+that no one's recreated
+in the last 10 years.
+
+632
+00:27:06,800 --> 00:27:10,617
+ 
+
+633
+00:27:10,617 --> 00:27:11,950
+SEBASTIAN GOLASCH: One addition.
+
+634
+00:27:11,950 --> 00:27:13,470
+I think one thing
+that will help us
+
+635
+00:27:13,470 --> 00:27:15,890
+with at least the security
+concerns about using
+
+636
+00:27:15,890 --> 00:27:18,910
+MPM is when MPM adopts
+something like Maven
+
+637
+00:27:18,910 --> 00:27:21,400
+does with package signing
+and stuff like this
+
+638
+00:27:21,400 --> 00:27:26,750
+so we can assure our clients
+that this thing is really
+
+639
+00:27:26,750 --> 00:27:29,980
+the thing that we said
+it's going to be there
+
+640
+00:27:29,980 --> 00:27:32,889
+and not something different
+because someone hijacked it
+
+641
+00:27:32,889 --> 00:27:33,430
+or something.
+
+642
+00:27:33,430 --> 00:27:35,710
+GARETH RUSHGROVE: It solves
+the man in the middle issue.
+
+643
+00:27:35,710 --> 00:27:37,770
+It doesn't solve the fact that
+someone might have compromised
+
+644
+00:27:37,770 --> 00:27:40,139
+the person who was uploading
+it in the first place.
+
+645
+00:27:40,139 --> 00:27:41,680
+PRESENTER: But in
+general, isn't it--
+
+646
+00:27:41,680 --> 00:27:42,840
+I find it always fascinating--
+
+647
+00:27:42,840 --> 00:27:43,881
+BEN VINEGAR: Guys, sorry.
+
+648
+00:27:43,881 --> 00:27:48,160
+I'm getting thrashed to
+get to the new topic.
+
+649
+00:27:48,160 --> 00:27:51,030
+So we could go to
+the audience again.
+
+650
+00:27:51,030 --> 00:27:54,097
+I think this is a pretty
+exciting question.
+
+651
+00:27:54,097 --> 00:27:55,680
+I guess I'm not going
+to the audience.
+
+652
+00:27:55,680 --> 00:27:58,139
+I guess I'm supposed to ask
+Kyle Simpson to ask a question.
+
+653
+00:27:58,139 --> 00:28:00,263
+KYLE SIMPSON: Like I said,
+they put me on the panel
+
+654
+00:28:00,263 --> 00:28:02,110
+so that I could
+stir things up, so I
+
+655
+00:28:02,110 --> 00:28:04,140
+get the pleasure of
+asking this question.
+
+656
+00:28:04,140 --> 00:28:06,492
+There's a mini browser war
+that's going on right now
+
+657
+00:28:06,492 --> 00:28:08,950
+between Grunt and Gulp, and we
+toyed around with having you
+
+658
+00:28:08,950 --> 00:28:11,340
+all have to stand up and
+declare where you are on that,
+
+659
+00:28:11,340 --> 00:28:12,120
+but we won't.
+
+660
+00:28:12,120 --> 00:28:14,780
+But there's other several
+other would be contenders,
+
+661
+00:28:14,780 --> 00:28:17,450
+and that sort of betrays
+this idea that maybe there
+
+662
+00:28:17,450 --> 00:28:20,510
+is one right build
+tool to rule them all.
+
+663
+00:28:20,510 --> 00:28:23,910
+So the question is, is that
+a realistic idea, that we're
+
+664
+00:28:23,910 --> 00:28:27,280
+striving towards one great
+build tool that we need to find,
+
+665
+00:28:27,280 --> 00:28:28,800
+or is it just idealistic?
+
+666
+00:28:28,800 --> 00:28:32,854
+And is it harmful fragmentation
+or useful experimentation?
+
+667
+00:28:32,854 --> 00:28:34,520
+ADDY OSMANI: I think
+that traditionally,
+
+668
+00:28:34,520 --> 00:28:37,051
+having multiple tools is a
+good thing because it drives
+
+669
+00:28:37,051 --> 00:28:39,050
+innovation, and I don't
+think that's a bad thing
+
+670
+00:28:39,050 --> 00:28:40,220
+in this community.
+
+671
+00:28:40,220 --> 00:28:42,620
+Build tooling on the front
+end is still very young
+
+672
+00:28:42,620 --> 00:28:44,770
+and it's somewhat
+in its infancy.
+
+673
+00:28:44,770 --> 00:28:47,280
+So I don't think it's
+necessarily a bad thing.
+
+674
+00:28:47,280 --> 00:28:51,360
+One thing I would like to
+see is us standardizing on
+
+675
+00:28:51,360 --> 00:28:53,650
+perhaps a task specification.
+
+676
+00:28:53,650 --> 00:28:55,790
+I know that there's been
+some effort from different
+
+677
+00:28:55,790 --> 00:28:59,080
+build tools to standardize
+on the Node task spec, which
+
+678
+00:28:59,080 --> 00:29:03,530
+talks about things like having
+a single way to handle records
+
+679
+00:29:03,530 --> 00:29:07,430
+or logging or
+notifications and so forth.
+
+680
+00:29:07,430 --> 00:29:11,080
+I think that could actually
+help us avoid having
+
+681
+00:29:11,080 --> 00:29:13,450
+this crazy wheel of
+reimplementing things
+
+682
+00:29:13,450 --> 00:29:16,880
+all the time, but I know
+it has its own challenges.
+
+683
+00:29:16,880 --> 00:29:19,260
+NICK FISHER: I have an
+opinion on the Gulp and Grunt
+
+684
+00:29:19,260 --> 00:29:21,066
+thing, which is I don't care.
+
+685
+00:29:21,066 --> 00:29:23,320
+I don't use either
+of them, and I
+
+686
+00:29:23,320 --> 00:29:29,940
+see these tools as useful
+for certain situations,
+
+687
+00:29:29,940 --> 00:29:33,660
+but they are glue that sticks
+together interesting things.
+
+688
+00:29:33,660 --> 00:29:37,515
+I think the discussion and
+browser war type arguments
+
+689
+00:29:37,515 --> 00:29:39,390
+going on-- well, I'm
+not sure anyone's really
+
+690
+00:29:39,390 --> 00:29:42,700
+arguing-- but arguments
+going on between these things
+
+691
+00:29:42,700 --> 00:29:45,525
+really distract from why we're
+even doing a build process
+
+692
+00:29:45,525 --> 00:29:47,390
+in the first place.
+
+693
+00:29:47,390 --> 00:29:49,430
+We're doing it to
+get faster websites,
+
+694
+00:29:49,430 --> 00:29:52,130
+to get better development
+time, and so on.
+
+695
+00:29:52,130 --> 00:29:54,440
+If you use Grunt, if you
+use Make, if you use Ant,
+
+696
+00:29:54,440 --> 00:29:56,030
+I don't care.
+
+697
+00:29:56,030 --> 00:29:57,580
+It's what we actually
+do in the build
+
+698
+00:29:57,580 --> 00:30:00,210
+process which is
+actually important.
+
+699
+00:30:00,210 --> 00:30:03,290
+But I would personally like to
+see less people reimplementing
+
+700
+00:30:03,290 --> 00:30:08,470
+Grunt-coffee, Gulp-coffee,
+whatever, and just have coffee.
+
+701
+00:30:08,470 --> 00:30:10,610
+Just use that and hook
+into it any way you want.
+
+702
+00:30:10,610 --> 00:30:12,140
+ADDY OSMANI: So you feel like we
+should get closer to the grain
+
+703
+00:30:12,140 --> 00:30:14,220
+and just actually call
+the existing tools,
+
+704
+00:30:14,220 --> 00:30:16,170
+rather than writing
+wrappers around them?
+
+705
+00:30:16,170 --> 00:30:17,250
+It seems to me
+what you're saying.
+
+706
+00:30:17,250 --> 00:30:19,416
+NICK FISHER: I mean, the
+wrappers are fine, but just
+
+707
+00:30:19,416 --> 00:30:21,392
+recognize that they
+are just wrappers.
+
+708
+00:30:21,392 --> 00:30:23,100
+The important thing
+is what it's wrapping
+
+709
+00:30:23,100 --> 00:30:25,683
+and what that actually does, and
+how you can plug these things
+
+710
+00:30:25,683 --> 00:30:27,370
+together is just details.
+
+711
+00:30:27,370 --> 00:30:30,010
+KYLE SIMPSON: There was a
+write up some months ago.
+
+712
+00:30:30,010 --> 00:30:31,765
+It was kind of tongue
+in cheek, but it
+
+713
+00:30:31,765 --> 00:30:35,040
+was tasks.js, which boiled
+down to simply just writing
+
+714
+00:30:35,040 --> 00:30:36,480
+the JavaScript yourself.
+
+715
+00:30:36,480 --> 00:30:40,160
+And while it was funny and
+interesting from a boilerplate
+
+716
+00:30:40,160 --> 00:30:43,760
+perspective, I think what
+it does miss a little bit,
+
+717
+00:30:43,760 --> 00:30:45,810
+the reason I write
+tools and the reason
+
+718
+00:30:45,810 --> 00:30:49,890
+I would make a Grunt
+plug-in for my tool is not
+
+719
+00:30:49,890 --> 00:30:51,740
+because that's the only
+way to use my tool.
+
+720
+00:30:51,740 --> 00:30:54,680
+It's because I'm trying to
+lower the barrier to entry so
+
+721
+00:30:54,680 --> 00:30:56,320
+that I get bigger market share.
+
+722
+00:30:56,320 --> 00:30:58,900
+I'm trying to make it so
+there's as little boilerplate
+
+723
+00:30:58,900 --> 00:31:01,810
+as possible to drop
+my template engine in.
+
+724
+00:31:01,810 --> 00:31:03,730
+Of course, some
+people-- and I might
+
+725
+00:31:03,730 --> 00:31:05,020
+have the same perspective--
+but some people
+
+726
+00:31:05,020 --> 00:31:07,340
+would say, well, it's OK to
+raise the barrier a little bit.
+
+727
+00:31:07,340 --> 00:31:09,590
+If you want to use it, you
+have to know how to use it.
+
+728
+00:31:09,590 --> 00:31:11,490
+Call the API, well
+document the API.
+
+729
+00:31:11,490 --> 00:31:13,460
+I think that's the reason
+why plug-ins exist.
+
+730
+00:31:13,460 --> 00:31:16,290
+Everybody wants to make it so
+that their tool is the one that
+
+731
+00:31:16,290 --> 00:31:18,860
+blows up and gets 10
+million stars on GitHub.
+
+732
+00:31:18,860 --> 00:31:20,080
+BEN VINEGAR: Sebastian,
+you had a comment there.
+
+733
+00:31:20,080 --> 00:31:21,580
+SEBASTIAN GOLASCH:
+I mean, the thing
+
+734
+00:31:21,580 --> 00:31:25,230
+is with all these dependencies,
+with all these plug-ins, when
+
+735
+00:31:25,230 --> 00:31:27,120
+we say, OK, we have
+a common interface
+
+736
+00:31:27,120 --> 00:31:30,390
+so we only have one plug-in that
+works with all of the systems,
+
+737
+00:31:30,390 --> 00:31:31,670
+perfect.
+
+738
+00:31:31,670 --> 00:31:34,200
+In the end, it's a tool
+and a tool should help us,
+
+739
+00:31:34,200 --> 00:31:38,800
+so if I like hammer B better
+in my hand than hammer A,
+
+740
+00:31:38,800 --> 00:31:40,950
+then I use hammer B
+because it's better for me.
+
+741
+00:31:40,950 --> 00:31:43,190
+And the same is true with
+Grunt and Gulp and Broccoli
+
+742
+00:31:43,190 --> 00:31:44,860
+and [INAUDIBLE] or whatever.
+
+743
+00:31:44,860 --> 00:31:47,830
+I mean, if you're
+a Node developer,
+
+744
+00:31:47,830 --> 00:31:51,420
+Gulp.js feels more familiar
+with all the stream stuff,
+
+745
+00:31:51,420 --> 00:31:55,200
+and so you can write it
+because it feels more familiar.
+
+746
+00:31:55,200 --> 00:31:57,540
+If you're a front end
+developer, most of them
+
+747
+00:31:57,540 --> 00:32:01,345
+like Grunt more because it's
+this declarative approach where
+
+748
+00:32:01,345 --> 00:32:04,410
+you only have to
+configure things.
+
+749
+00:32:04,410 --> 00:32:08,919
+I think it comes down to use
+the right tool for the job.
+
+750
+00:32:08,919 --> 00:32:10,460
+BEN VINEGAR: Can I
+go to the audience
+
+751
+00:32:10,460 --> 00:32:12,900
+here, because there's a
+bunch of hands going up.
+
+752
+00:32:12,900 --> 00:32:15,260
+Just first over here, and Remy.
+
+753
+00:32:15,260 --> 00:32:21,555
+ 
+
+754
+00:32:21,555 --> 00:32:22,430
+AUDIENCE: Disclaimer.
+
+755
+00:32:22,430 --> 00:32:24,555
+Unfortunately, I'm one of
+these people who has also
+
+756
+00:32:24,555 --> 00:32:27,820
+developed another
+build tool [INAUDIBLE].
+
+757
+00:32:27,820 --> 00:32:29,370
+So I agree with
+everything we've said
+
+758
+00:32:29,370 --> 00:32:33,070
+and I think the idea of having
+inter-op between plug-ins
+
+759
+00:32:33,070 --> 00:32:34,880
+is great.
+
+760
+00:32:34,880 --> 00:32:37,744
+One thing to remember is
+that these tools are there
+
+761
+00:32:37,744 --> 00:32:39,160
+to make it really
+easy for people.
+
+762
+00:32:39,160 --> 00:32:41,201
+We want people who are
+scared by the command line
+
+763
+00:32:41,201 --> 00:32:43,650
+to be able to do the right
+thing by default without having
+
+764
+00:32:43,650 --> 00:32:47,020
+to worry about configuring
+crazy paths everywhere.
+
+765
+00:32:47,020 --> 00:32:50,255
+So to me, the real
+question is, what
+
+766
+00:32:50,255 --> 00:32:53,730
+is a good baseline
+for these tasks that
+
+767
+00:32:53,730 --> 00:32:57,990
+would work in different tools so
+that it does the right things?
+
+768
+00:32:57,990 --> 00:33:00,100
+And just to throw out
+a few examples is,
+
+769
+00:33:00,100 --> 00:33:03,370
+should it be able to produce
+source maps currently
+
+770
+00:33:03,370 --> 00:33:05,055
+for everything by default?
+
+771
+00:33:05,055 --> 00:33:07,330
+Should it be able
+to rebuild partially
+
+772
+00:33:07,330 --> 00:33:11,040
+so you don't have to rebuild
+all your things all the time?
+
+773
+00:33:11,040 --> 00:33:12,930
+And all these
+things, I think need
+
+774
+00:33:12,930 --> 00:33:18,150
+to fit into what is the common
+format for these build tools.
+
+775
+00:33:18,150 --> 00:33:20,630
+ADDY OSMANI: I think one of
+the really big challenges
+
+776
+00:33:20,630 --> 00:33:24,360
+with coming up with a spec for
+build processes in that task
+
+777
+00:33:24,360 --> 00:33:27,740
+spec is that it's difficult
+to create something that
+
+778
+00:33:27,740 --> 00:33:30,900
+is flexible enough to also
+match the architectures
+
+779
+00:33:30,900 --> 00:33:33,819
+of these different tools so that
+they can work behind the scenes
+
+780
+00:33:33,819 --> 00:33:36,110
+and do what they need to do
+without necessarily feeling
+
+781
+00:33:36,110 --> 00:33:38,290
+overly constrained.
+
+782
+00:33:38,290 --> 00:33:40,072
+Unfortunately, the
+Node task spec idea
+
+783
+00:33:40,072 --> 00:33:42,530
+that I talked about earlier,
+that's actually something that
+
+784
+00:33:42,530 --> 00:33:44,770
+is currently on hold
+because none of the
+
+785
+00:33:44,770 --> 00:33:46,590
+build tools could
+actually reach agreement
+
+786
+00:33:46,590 --> 00:33:49,450
+on how they should
+approach this problem.
+
+787
+00:33:49,450 --> 00:33:50,710
+It's really, really difficult.
+
+788
+00:33:50,710 --> 00:33:53,810
+I'm hoping that later on in the
+year, they'll come back to it
+
+789
+00:33:53,810 --> 00:33:56,055
+and think that it's
+something worth value.
+
+790
+00:33:56,055 --> 00:33:57,055
+GARETH RUSHGROVE: Sorry.
+
+791
+00:33:57,055 --> 00:33:58,929
+Are we talking about
+something like, oh, it's
+
+792
+00:33:58,929 --> 00:34:01,640
+good to have multiple tools
+because that breeds innovation?
+
+793
+00:34:01,640 --> 00:34:04,643
+Don't think you can't get
+locked into an open source tool,
+
+794
+00:34:04,643 --> 00:34:06,070
+because you can.
+
+795
+00:34:06,070 --> 00:34:07,320
+It's not just commercial side.
+
+796
+00:34:07,320 --> 00:34:08,610
+You talk about lock-in.
+
+797
+00:34:08,610 --> 00:34:10,806
+You get yourself locked
+into something by saying,
+
+798
+00:34:10,806 --> 00:34:11,389
+you know what?
+
+799
+00:34:11,389 --> 00:34:13,239
+The barrier to
+moving from this tool
+
+800
+00:34:13,239 --> 00:34:16,010
+is so great, I'm not going
+to do it, at which point
+
+801
+00:34:16,010 --> 00:34:19,375
+you benefit not one bit
+from the innovation coming
+
+802
+00:34:19,375 --> 00:34:20,280
+from other tools.
+
+803
+00:34:20,280 --> 00:34:20,690
+BEN VINEGAR: OK.
+
+804
+00:34:20,690 --> 00:34:22,773
+I'm going to get a quick
+comment from the audience
+
+805
+00:34:22,773 --> 00:34:24,302
+here, from Remy [INAUDIBLE].
+
+806
+00:34:24,302 --> 00:34:26,260
+AUDIENCE: I was going to
+say I don't personally
+
+807
+00:34:26,260 --> 00:34:28,679
+use build tools.
+
+808
+00:34:28,679 --> 00:34:29,969
+That's one step.
+
+809
+00:34:29,969 --> 00:34:33,574
+The thing is jQuery,
+it was the tool that
+
+810
+00:34:33,574 --> 00:34:36,100
+made working with
+JavaScript really,
+
+811
+00:34:36,100 --> 00:34:38,780
+stupid simple for a
+large amount of people,
+
+812
+00:34:38,780 --> 00:34:41,170
+and suddenly, they were
+able to write JavaScripts
+
+813
+00:34:41,170 --> 00:34:42,560
+without writing JavaScript.
+
+814
+00:34:42,560 --> 00:34:44,820
+And these build
+tools have given me
+
+815
+00:34:44,820 --> 00:34:48,537
+a way of just adding
+minification and getting
+
+816
+00:34:48,537 --> 00:34:50,620
+that done whereas before,
+I wouldn't have done it,
+
+817
+00:34:50,620 --> 00:34:52,340
+and many other people are
+going to be doing that.
+
+818
+00:34:52,340 --> 00:34:53,775
+You talk about
+getting locked in.
+
+819
+00:34:53,775 --> 00:34:57,860
+I don't think it
+matters at this point.
+
+820
+00:34:57,860 --> 00:34:59,650
+Getting hold of build
+tools at this point
+
+821
+00:34:59,650 --> 00:35:04,330
+was so new for this community.
+
+822
+00:35:04,330 --> 00:35:06,390
+If we get locked into
+Grunt for a few years,
+
+823
+00:35:06,390 --> 00:35:09,550
+and eventually, there's
+standardization in five years'
+
+824
+00:35:09,550 --> 00:35:11,850
+time, then that's a huge
+step forward compared
+
+825
+00:35:11,850 --> 00:35:14,433
+to just not doing it at all and
+just delivering massive images
+
+826
+00:35:14,433 --> 00:35:17,940
+over the wire,
+uncompressed images.
+
+827
+00:35:17,940 --> 00:35:20,822
+I think we're still at that
+very early days of when jQuery
+
+828
+00:35:20,822 --> 00:35:22,780
+was really spurring the
+JavaScript [INAUDIBLE].
+
+829
+00:35:22,780 --> 00:35:23,860
+ADDY OSMANI: I agree with that.
+
+830
+00:35:23,860 --> 00:35:25,730
+I feel like this build
+tool conversation,
+
+831
+00:35:25,730 --> 00:35:28,080
+sometimes it skips
+over the fact that we
+
+832
+00:35:28,080 --> 00:35:31,040
+don't talk enough about what's
+inside our build process.
+
+833
+00:35:31,040 --> 00:35:33,560
+We should be caring more about
+image optimization, image
+
+834
+00:35:33,560 --> 00:35:34,580
+compression.
+
+835
+00:35:34,580 --> 00:35:37,034
+Images are the thing that are
+slowing down the web today,
+
+836
+00:35:37,034 --> 00:35:39,450
+and we need to get more people
+caring about those problems
+
+837
+00:35:39,450 --> 00:35:41,783
+and spending more time talking
+about how we can actually
+
+838
+00:35:41,783 --> 00:35:43,390
+speed up our pages
+and less time,
+
+839
+00:35:43,390 --> 00:35:46,286
+perhaps, on arguing
+why you should
+
+840
+00:35:46,286 --> 00:35:47,740
+be using Gulp versus Grunt.
+
+841
+00:35:47,740 --> 00:35:49,930
+I mean, they're still
+fantastic tools,
+
+842
+00:35:49,930 --> 00:35:52,120
+but I think Sebastian
+said earlier,
+
+843
+00:35:52,120 --> 00:35:53,920
+people who are more
+familiar with Node
+
+844
+00:35:53,920 --> 00:35:56,420
+are perhaps going to use Gulp
+and people who aren't are just
+
+845
+00:35:56,420 --> 00:35:57,211
+going to use Grunt.
+
+846
+00:35:57,211 --> 00:35:58,253
+That seems to be working.
+
+847
+00:35:58,253 --> 00:36:00,752
+BEN VINEGAR: I'm going to cut
+you guys off because actually,
+
+848
+00:36:00,752 --> 00:36:03,055
+the next question I
+think, goes into just what
+
+849
+00:36:03,055 --> 00:36:04,920
+Addy was touching on.
+
+850
+00:36:04,920 --> 00:36:09,680
+I'm looking for, from the
+audience, Peter Muller.
+
+851
+00:36:09,680 --> 00:36:13,752
+ 
+
+852
+00:36:13,752 --> 00:36:15,960
+AUDIENCE: I'll have to read
+this as well because it's
+
+853
+00:36:15,960 --> 00:36:18,970
+been changed a bit.
+
+854
+00:36:18,970 --> 00:36:22,850
+Most build scripts, including
+those generated by scaffolding,
+
+855
+00:36:22,850 --> 00:36:25,970
+are a chain of several
+discrete steps.
+
+856
+00:36:25,970 --> 00:36:28,140
+Do we even need the
+complexity of having control
+
+857
+00:36:28,140 --> 00:36:30,890
+of every one of these
+steps, or should we instead
+
+858
+00:36:30,890 --> 00:36:34,200
+have an opinionated build
+chain that just gets us
+
+859
+00:36:34,200 --> 00:36:36,030
+to the endpoint that
+we're interested in?
+
+860
+00:36:36,030 --> 00:36:42,790
+ 
+
+861
+00:36:42,790 --> 00:36:44,370
+NICK FISHER: From
+my experience, I've
+
+862
+00:36:44,370 --> 00:36:47,290
+built an opinionated
+tool chain for our own
+
+863
+00:36:47,290 --> 00:36:51,517
+build system that we needed,
+and I'm really happy with it.
+
+864
+00:36:51,517 --> 00:36:53,600
+There's been a lot of work
+put into it, obviously,
+
+865
+00:36:53,600 --> 00:36:58,070
+but I think in the
+end, if you really
+
+866
+00:36:58,070 --> 00:37:01,204
+want to get total
+performance out of your
+
+867
+00:37:01,204 --> 00:37:03,162
+build process, not in
+terms of how fast it runs
+
+868
+00:37:03,162 --> 00:37:06,240
+or anything like that, but in
+terms of what actually executes
+
+869
+00:37:06,240 --> 00:37:08,950
+at the end of your
+build process,
+
+870
+00:37:08,950 --> 00:37:12,146
+then I think that's definitely
+a very smart way to go,
+
+871
+00:37:12,146 --> 00:37:17,200
+and you definitely don't need
+any particular tools like Grunt
+
+872
+00:37:17,200 --> 00:37:19,990
+or Gulp to get you there.
+
+873
+00:37:19,990 --> 00:37:21,850
+BEN VINEGAR: Kyle had a comment.
+
+874
+00:37:21,850 --> 00:37:24,030
+KYLE SIMPSON: So
+I think going back
+
+875
+00:37:24,030 --> 00:37:26,800
+to the Unix philosophy, which
+certainly informs a lot of what
+
+876
+00:37:26,800 --> 00:37:29,370
+we're doing, it says have
+lots of tiny little tools
+
+877
+00:37:29,370 --> 00:37:30,700
+that can be woven together.
+
+878
+00:37:30,700 --> 00:37:33,277
+And I think that's the more
+appropriate way of doing this.
+
+879
+00:37:33,277 --> 00:37:34,860
+When you get to the
+point where you've
+
+880
+00:37:34,860 --> 00:37:36,697
+decided that there
+is a particular flow
+
+881
+00:37:36,697 --> 00:37:38,530
+through those tools
+that make sense for you,
+
+882
+00:37:38,530 --> 00:37:40,310
+you write yourself
+a bash script so you
+
+883
+00:37:40,310 --> 00:37:43,240
+don't have to repeat it again,
+and that's all you need.
+
+884
+00:37:43,240 --> 00:37:46,570
+In the JavaScript world, when
+you have a set of API calls
+
+885
+00:37:46,570 --> 00:37:48,290
+through these different
+tools, you just
+
+886
+00:37:48,290 --> 00:37:49,748
+write yourself a
+little Node script
+
+887
+00:37:49,748 --> 00:37:51,510
+that repeats that
+process over and over.
+
+888
+00:37:51,510 --> 00:37:54,060
+So I don't think we need
+to worry so much about, oh,
+
+889
+00:37:54,060 --> 00:37:55,310
+there's too many details here.
+
+890
+00:37:55,310 --> 00:37:56,760
+You just wrap a script
+around it and then
+
+891
+00:37:56,760 --> 00:37:58,370
+you don't worry about those
+details if you don't want.
+
+892
+00:37:58,370 --> 00:37:58,556
+GARETH RUSHGROVE:
+I think the thing
+
+893
+00:37:58,556 --> 00:38:00,905
+is you said "for
+me" and "I write."
+
+894
+00:38:00,905 --> 00:38:04,550
+I think actually, sharing
+that unit for some people
+
+895
+00:38:04,550 --> 00:38:05,630
+is really valuable.
+
+896
+00:38:05,630 --> 00:38:07,850
+Some people in this
+room are going to go,
+
+897
+00:38:07,850 --> 00:38:10,002
+I'm a really good
+programmer, and that's
+
+898
+00:38:10,002 --> 00:38:12,460
+exactly what they're going to
+do, and like Remy was saying,
+
+899
+00:38:12,460 --> 00:38:14,640
+some people in
+this room are not.
+
+900
+00:38:14,640 --> 00:38:17,940
+They're going to, I have no idea
+what all these steps are doing,
+
+901
+00:38:17,940 --> 00:38:19,496
+but I want the magic
+from people who
+
+902
+00:38:19,496 --> 00:38:20,870
+are really smart
+to do it for me.
+
+903
+00:38:20,870 --> 00:38:23,450
+KYLE SIMPSON: So I just make a
+Gist and then I tweet it out.
+
+904
+00:38:23,450 --> 00:38:24,908
+That's my solution
+to that problem.
+
+905
+00:38:24,908 --> 00:38:27,280
+ADDY OSMANI: So one of things
+that we tried to do with--
+
+906
+00:38:27,280 --> 00:38:29,383
+AUDIENCE: [INAUDIBLE]
+the non-technical people
+
+907
+00:38:29,383 --> 00:38:30,250
+in the room.
+
+908
+00:38:30,250 --> 00:38:34,270
+[LAUGHTER]
+
+909
+00:38:34,270 --> 00:38:37,420
+GARETH RUSHGROVE: Distributing
+really usable software is hard.
+
+910
+00:38:37,420 --> 00:38:39,430
+Packaging that up
+into something that
+
+911
+00:38:39,430 --> 00:38:41,810
+is just easily
+usable off the shelf
+
+912
+00:38:41,810 --> 00:38:43,900
+by someone who does not
+understand what's going on
+
+913
+00:38:43,900 --> 00:38:48,677
+in the middle is hard
+work, but it's valuable.
+
+914
+00:38:48,677 --> 00:38:50,260
+Instead of these
+millions of plug-ins,
+
+915
+00:38:50,260 --> 00:38:52,590
+there's probably two
+or three good ways
+
+916
+00:38:52,590 --> 00:38:54,940
+that would be good enough
+for 80% of the people.
+
+917
+00:38:54,940 --> 00:38:56,315
+ADDY OSMANI: One
+of the things we
+
+918
+00:38:56,315 --> 00:38:58,030
+tried doing with
+Yeoman is actually
+
+919
+00:38:58,030 --> 00:39:00,650
+trying to provide people
+with opinionated workflows,
+
+920
+00:39:00,650 --> 00:39:02,300
+especially when it comes
+to things like performance
+
+921
+00:39:02,300 --> 00:39:03,910
+and what we think
+people should be doing.
+
+922
+00:39:03,910 --> 00:39:05,240
+Because a lot of
+people don't know
+
+923
+00:39:05,240 --> 00:39:07,550
+exactly what they should be
+getting in their build process
+
+924
+00:39:07,550 --> 00:39:09,520
+to actually keep their
+pages fast and so forth,
+
+925
+00:39:09,520 --> 00:39:10,936
+or what build tasks
+they should be
+
+926
+00:39:10,936 --> 00:39:13,500
+using, whether they're
+using Grunt or Gulp.
+
+927
+00:39:13,500 --> 00:39:16,250
+So there do exist
+solutions to help you
+
+928
+00:39:16,250 --> 00:39:18,150
+with opinionated
+stacks for the stuff,
+
+929
+00:39:18,150 --> 00:39:19,890
+but at the end of
+the day, if you
+
+930
+00:39:19,890 --> 00:39:22,390
+find those too much
+and too overbearing,
+
+931
+00:39:22,390 --> 00:39:25,365
+you can always just use them
+for reference in the same way
+
+932
+00:39:25,365 --> 00:39:28,310
+that people use
+HTML5 boilerplate.
+
+933
+00:39:28,310 --> 00:39:29,430
+Just take what you want.
+
+934
+00:39:29,430 --> 00:39:31,500
+Delete key friendly the rest.
+
+935
+00:39:31,500 --> 00:39:34,324
+BEN VINEGAR: Just going
+to go back to Peter here.
+
+936
+00:39:34,324 --> 00:39:36,740
+AUDIENCE: I'd like to touch
+on Kyle's point about the Unix
+
+937
+00:39:36,740 --> 00:39:37,400
+philosophy.
+
+938
+00:39:37,400 --> 00:39:39,820
+I love the Unix
+philosophy, small tools
+
+939
+00:39:39,820 --> 00:39:41,820
+being able to chain
+them together.
+
+940
+00:39:41,820 --> 00:39:43,770
+The thing is that
+Unix pipes work
+
+941
+00:39:43,770 --> 00:39:47,290
+with text and web
+files are not text.
+
+942
+00:39:47,290 --> 00:39:50,020
+We would need to be
+able to pass objects
+
+943
+00:39:50,020 --> 00:39:53,400
+like we can do in PowerShell.
+
+944
+00:39:53,400 --> 00:39:56,410
+The thing is some of the
+things that are really, really
+
+945
+00:39:56,410 --> 00:39:59,230
+difficult to do with the
+existing build tools-- revving
+
+946
+00:39:59,230 --> 00:40:04,010
+files, concatenating files,
+all that stuff-- are things
+
+947
+00:40:04,010 --> 00:40:06,430
+that both Grunt and
+Gulp do really badly,
+
+948
+00:40:06,430 --> 00:40:08,950
+actually, because
+they're based essentially
+
+949
+00:40:08,950 --> 00:40:12,100
+on a continuation of the Unix
+philosophy or the Make file
+
+950
+00:40:12,100 --> 00:40:13,790
+philosophy.
+
+951
+00:40:13,790 --> 00:40:16,080
+GARETH RUSHGROVE: I touched
+on earlier, steal things
+
+952
+00:40:16,080 --> 00:40:17,740
+from things outside
+your community,
+
+953
+00:40:17,740 --> 00:40:20,450
+and one of the things to
+steal from is PowerShell.
+
+954
+00:40:20,450 --> 00:40:24,010
+For those that are familiar
+with that Unix philosophy is all
+
+955
+00:40:24,010 --> 00:40:26,050
+chaining small things
+together, PowerShell
+
+956
+00:40:26,050 --> 00:40:28,870
+adds basically a full object
+in between those things,
+
+957
+00:40:28,870 --> 00:40:30,550
+and you can do a
+lot more with that.
+
+958
+00:40:30,550 --> 00:40:33,431
+KYLE SIMPSON: I don't
+think we need that.
+
+959
+00:40:33,431 --> 00:40:34,930
+Not that it's bad,
+but I don't think
+
+960
+00:40:34,930 --> 00:40:36,370
+we necessarily always need that.
+
+961
+00:40:36,370 --> 00:40:39,270
+If you look at the flows for
+JavaScript tooling-- parsers,
+
+962
+00:40:39,270 --> 00:40:41,725
+analyzers, transpilers,
+code generators,
+
+963
+00:40:41,725 --> 00:40:43,700
+and that whole flow
+and that round trip.
+
+964
+00:40:43,700 --> 00:40:45,230
+If you look at
+that, they decided
+
+965
+00:40:45,230 --> 00:40:47,320
+we start out with
+source code and then we
+
+966
+00:40:47,320 --> 00:40:49,850
+move to a tree format, and
+there's a relatively agreed
+
+967
+00:40:49,850 --> 00:40:51,830
+upon tree format, the AST.
+
+968
+00:40:51,830 --> 00:40:54,440
+We're actually working on
+a more complete version
+
+969
+00:40:54,440 --> 00:40:56,770
+of that called a
+concrete [INAUDIBLE].
+
+970
+00:40:56,770 --> 00:40:59,090
+That's the thing that
+moves from tool to tool,
+
+971
+00:40:59,090 --> 00:41:02,000
+and then what you get out
+is more compiled code.
+
+972
+00:41:02,000 --> 00:41:03,860
+I don't think that's
+a big problem.
+
+973
+00:41:03,860 --> 00:41:06,235
+BEN VINEGAR: I feel like we've
+gotten a little off track.
+
+974
+00:41:06,235 --> 00:41:10,890
+We've moved from, is there
+merit to having, let's say,
+
+975
+00:41:10,890 --> 00:41:13,630
+a plug-in like Grunt-awesome
+that just does everything,
+
+976
+00:41:13,630 --> 00:41:16,400
+and now we're getting into the
+details of chaining and stuff
+
+977
+00:41:16,400 --> 00:41:18,060
+like that.
+
+978
+00:41:18,060 --> 00:41:21,662
+So maybe just to bring us
+back, just a comment over here.
+
+979
+00:41:21,662 --> 00:41:23,860
+AUDIENCE: [INAUDIBLE]
+because I think
+
+980
+00:41:23,860 --> 00:41:28,154
+a lot of the things in the
+Unix idea is to chain things
+
+981
+00:41:28,154 --> 00:41:31,115
+through, sort of in a functional
+way, you're taking output
+
+982
+00:41:31,115 --> 00:41:33,025
+from one thing into
+the next thing.
+
+983
+00:41:33,025 --> 00:41:37,250
+But some of the things
+we do-- and there's
+
+984
+00:41:37,250 --> 00:41:40,770
+one in Yeoman, the
+one that transforms.
+
+985
+00:41:40,770 --> 00:41:43,145
+You can run things.
+
+986
+00:41:43,145 --> 00:41:45,700
+ 
+
+987
+00:41:45,700 --> 00:41:51,050
+It can take chunks of
+JavaScript and compile them
+
+988
+00:41:51,050 --> 00:41:53,630
+into different files,
+and it keeps state.
+
+989
+00:41:53,630 --> 00:41:55,210
+So it can do something
+at the start,
+
+990
+00:41:55,210 --> 00:41:58,220
+go through the whole chain, and
+then refer back to something
+
+991
+00:41:58,220 --> 00:42:02,580
+that happened, and that's
+the same for revving things.
+
+992
+00:42:02,580 --> 00:42:05,770
+You have to have some idea of
+the state of the whole system
+
+993
+00:42:05,770 --> 00:42:08,540
+to be able to rev things
+later on and go, right,
+
+994
+00:42:08,540 --> 00:42:10,160
+this is what has appeared.
+
+995
+00:42:10,160 --> 00:42:13,120
+So this whole idea of just
+having chains-- even in Unix,
+
+996
+00:42:13,120 --> 00:42:16,570
+you do stupid things
+where you might temp files
+
+997
+00:42:16,570 --> 00:42:18,777
+and you get into
+all this weird stuff
+
+998
+00:42:18,777 --> 00:42:20,610
+when you're trying to
+do something that just
+
+999
+00:42:20,610 --> 00:42:22,740
+isn't fundamentally functional.
+
+1000
+00:42:22,740 --> 00:42:25,410
+It always goes back to, I'll
+just do it the Unix way,
+
+1001
+00:42:25,410 --> 00:42:26,868
+but there are some
+things that just
+
+1002
+00:42:26,868 --> 00:42:29,984
+can't be done that
+way very well.
+
+1003
+00:42:29,984 --> 00:42:31,400
+BEN VINEGAR: Any
+comments on that?
+
+1004
+00:42:31,400 --> 00:42:31,920
+NICK FISHER: Yeah.
+
+1005
+00:42:31,920 --> 00:42:33,160
+That's what I was saying.
+
+1006
+00:42:33,160 --> 00:42:35,284
+This build script
+that we use has
+
+1007
+00:42:35,284 --> 00:42:36,950
+a lot of these things
+that at the start,
+
+1008
+00:42:36,950 --> 00:42:38,408
+we find all the
+assets, and then we
+
+1009
+00:42:38,408 --> 00:42:41,040
+have a state that is
+then used later on.
+
+1010
+00:42:41,040 --> 00:42:44,260
+The downside of that is that
+it means that you can't really
+
+1011
+00:42:44,260 --> 00:42:46,320
+share your tools very
+easily because it's
+
+1012
+00:42:46,320 --> 00:42:50,120
+very specific and bespoke
+to your application.
+
+1013
+00:42:50,120 --> 00:42:52,490
+I know one of the themes
+that's coming here
+
+1014
+00:42:52,490 --> 00:42:55,345
+is sharing and helping
+people get into community,
+
+1015
+00:42:55,345 --> 00:42:56,720
+but there's the
+other side, which
+
+1016
+00:42:56,720 --> 00:42:58,880
+is I want to build the
+best app that I can
+
+1017
+00:42:58,880 --> 00:43:03,080
+for me, which might sound a
+bit mean, but that's my job.
+
+1018
+00:43:03,080 --> 00:43:05,209
+ 
+
+1019
+00:43:05,209 --> 00:43:06,625
+I'm pretty sure
+everyone else here
+
+1020
+00:43:06,625 --> 00:43:10,460
+has got a job very
+similar to that as well.
+
+1021
+00:43:10,460 --> 00:43:11,930
+And you shouldn't forget that.
+
+1022
+00:43:11,930 --> 00:43:13,730
+Sometimes, you do have
+to just do something
+
+1023
+00:43:13,730 --> 00:43:15,190
+then you can't open source.
+
+1024
+00:43:15,190 --> 00:43:16,179
+That's fine.
+
+1025
+00:43:16,179 --> 00:43:17,720
+BEN VINEGAR: I'm
+going to stop there.
+
+1026
+00:43:17,720 --> 00:43:20,500
+That seems like a good
+closing point, me, me, me.
+
+1027
+00:43:20,500 --> 00:43:23,850
+ 
+
+1028
+00:43:23,850 --> 00:43:25,600
+So I'm going to call
+on the next question.
+
+1029
+00:43:25,600 --> 00:43:29,470
+ 
+
+1030
+00:43:29,470 --> 00:43:30,900
+Looking here from Ian Feather.
+
+1031
+00:43:30,900 --> 00:43:34,804
+ 
+
+1032
+00:43:34,804 --> 00:43:35,720
+AUDIENCE: [INAUDIBLE].
+
+1033
+00:43:35,720 --> 00:43:40,930
+ 
+
+1034
+00:43:40,930 --> 00:43:42,800
+Most of the pain
+in build process
+
+1035
+00:43:42,800 --> 00:43:44,122
+occurs at dev iteration.
+
+1036
+00:43:44,122 --> 00:43:45,850
+Would it make sense
+to implement things
+
+1037
+00:43:45,850 --> 00:43:48,100
+like Sass and CoffeeScript
+as plug-ins for developers,
+
+1038
+00:43:48,100 --> 00:43:49,990
+removing the need
+for repetitive build
+
+1039
+00:43:49,990 --> 00:43:52,880
+processes, or even in
+the browser itself?
+
+1040
+00:43:52,880 --> 00:43:55,435
+So I think he's talking
+about having extensions which
+
+1041
+00:43:55,435 --> 00:43:57,470
+will allow you to
+iterate without having
+
+1042
+00:43:57,470 --> 00:43:59,982
+to run the build
+process [INAUDIBLE].
+
+1043
+00:43:59,982 --> 00:44:02,440
+BEN VINEGAR: Just to jump ahead
+of this before you comment.
+
+1044
+00:44:02,440 --> 00:44:04,200
+This question interested
+me because what
+
+1045
+00:44:04,200 --> 00:44:07,080
+I seem to read a
+lot about new tools,
+
+1046
+00:44:07,080 --> 00:44:11,411
+like Gulp being produced, is
+that the speed of building
+
+1047
+00:44:11,411 --> 00:44:13,410
+is actually becoming
+really important to people.
+
+1048
+00:44:13,410 --> 00:44:16,860
+So what if we can just
+not have that at all?
+
+1049
+00:44:16,860 --> 00:44:19,524
+Any comments?
+
+1050
+00:44:19,524 --> 00:44:20,940
+ADDY OSMANI:
+Generally, I think we
+
+1051
+00:44:20,940 --> 00:44:23,280
+were all in agreement about
+things like Sass and Coffee
+
+1052
+00:44:23,280 --> 00:44:25,430
+not necessarily
+belonging in the browser.
+
+1053
+00:44:25,430 --> 00:44:26,690
+We agreed on that earlier.
+
+1054
+00:44:26,690 --> 00:44:31,830
+But I think in terms of
+your iteration workflow,
+
+1055
+00:44:31,830 --> 00:44:34,770
+Gulp is commonly used by people
+because when you're actually
+
+1056
+00:44:34,770 --> 00:44:37,824
+iterating on a project using
+Sass, it's a little bit faster.
+
+1057
+00:44:37,824 --> 00:44:39,240
+Whenever you make
+a change and you
+
+1058
+00:44:39,240 --> 00:44:41,180
+want to see that
+refresh in the browser,
+
+1059
+00:44:41,180 --> 00:44:44,130
+you don't necessarily
+have as much of a delay
+
+1060
+00:44:44,130 --> 00:44:45,930
+as you perhaps do with Grunt.
+
+1061
+00:44:45,930 --> 00:44:48,330
+It's not a massive
+difference but it's
+
+1062
+00:44:48,330 --> 00:44:50,850
+important enough to
+people that they sometimes
+
+1063
+00:44:50,850 --> 00:44:52,375
+consider switching over.
+
+1064
+00:44:52,375 --> 00:44:54,500
+I think that we need to
+look at how we can actually
+
+1065
+00:44:54,500 --> 00:44:56,610
+keep our tools lean
+and fast where possible
+
+1066
+00:44:56,610 --> 00:44:57,411
+to improve on that.
+
+1067
+00:44:57,411 --> 00:44:59,660
+GARETH RUSHGROVE: It feels
+like it's a software thing.
+
+1068
+00:44:59,660 --> 00:45:02,235
+What you're saying is, well,
+I have a slow build script,
+
+1069
+00:45:02,235 --> 00:45:03,693
+and I bet those
+browser people have
+
+1070
+00:45:03,693 --> 00:45:05,370
+got some really
+good coders who can
+
+1071
+00:45:05,370 --> 00:45:08,100
+do exactly the
+same thing faster.
+
+1072
+00:45:08,100 --> 00:45:09,600
+It's like, well,
+maybe, or you could
+
+1073
+00:45:09,600 --> 00:45:12,030
+find someone else who can
+re-engineer your build process
+
+1074
+00:45:12,030 --> 00:45:12,710
+to be faster.
+
+1075
+00:45:12,710 --> 00:45:15,200
+Ultimately, you're
+doing the same job,
+
+1076
+00:45:15,200 --> 00:45:18,650
+you're just doing it in a
+different place with code.
+
+1077
+00:45:18,650 --> 00:45:20,572
+If Node isn't fast
+enough, write ANC.
+
+1078
+00:45:20,572 --> 00:45:21,530
+PRESENTER: [INAUDIBLE].
+
+1079
+00:45:21,530 --> 00:45:27,210
+ 
+
+1080
+00:45:27,210 --> 00:45:29,630
+SEBASTIAN GOLASCH: I think
+the thing is we're web people,
+
+1081
+00:45:29,630 --> 00:45:34,750
+and we're used to hitting F5
+or Control R, and refresh,
+
+1082
+00:45:34,750 --> 00:45:38,070
+and it changes, not
+like the Java guys who
+
+1083
+00:45:38,070 --> 00:45:40,672
+could grab a coffee while
+their thing is compiling.
+
+1084
+00:45:40,672 --> 00:45:43,340
+ 
+
+1085
+00:45:43,340 --> 00:45:47,670
+I think we should really
+embrace that and not
+
+1086
+00:45:47,670 --> 00:45:50,736
+build tools that are watching
+in the background a file system
+
+1087
+00:45:50,736 --> 00:45:52,360
+and then doing
+something for 10 seconds
+
+1088
+00:45:52,360 --> 00:45:54,193
+before we can see the
+change in the browser.
+
+1089
+00:45:54,193 --> 00:45:56,180
+That's not the web and
+I think that's totally
+
+1090
+00:45:56,180 --> 00:45:57,770
+heading in the wrong direction.
+
+1091
+00:45:57,770 --> 00:46:04,410
+You have Sass and stuff, OK,
+but really don't overdo it.
+
+1092
+00:46:04,410 --> 00:46:06,870
+Just keep it clean and simple.
+
+1093
+00:46:06,870 --> 00:46:08,350
+NICK FISHER: I
+think one point here
+
+1094
+00:46:08,350 --> 00:46:13,110
+is to consider your total build
+separate to your development
+
+1095
+00:46:13,110 --> 00:46:14,860
+time.
+
+1096
+00:46:14,860 --> 00:46:19,390
+Things like watches can be good,
+or running a local server that
+
+1097
+00:46:19,390 --> 00:46:22,870
+compiles these things on
+the fly and can give you
+
+1098
+00:46:22,870 --> 00:46:26,860
+a good enough representation
+of the production
+
+1099
+00:46:26,860 --> 00:46:29,780
+build while you're developing.
+
+1100
+00:46:29,780 --> 00:46:33,490
+If your build script takes less
+than five minutes, that's fine.
+
+1101
+00:46:33,490 --> 00:46:34,960
+Above that is a
+problem, but less
+
+1102
+00:46:34,960 --> 00:46:39,080
+than that I wouldn't care, as
+long as when you're developing,
+
+1103
+00:46:39,080 --> 00:46:42,460
+that feedback loop
+is very short, and do
+
+1104
+00:46:42,460 --> 00:46:45,160
+that through file
+watching, serving
+
+1105
+00:46:45,160 --> 00:46:47,640
+individual files on the fly.
+
+1106
+00:46:47,640 --> 00:46:49,730
+If you separate those
+two ideas, then I
+
+1107
+00:46:49,730 --> 00:46:51,725
+don't think you
+hit this problem.
+
+1108
+00:46:51,725 --> 00:46:53,350
+KYLE SIMPSON: Just
+real quick, one area
+
+1109
+00:46:53,350 --> 00:46:55,760
+that definitely needs to
+get better with those tools
+
+1110
+00:46:55,760 --> 00:46:57,660
+is the incremental recompile.
+
+1111
+00:46:57,660 --> 00:47:01,430
+So just because I change one
+Sass file doesn't mean I really
+
+1112
+00:47:01,430 --> 00:47:03,780
+actually want to recompile
+the entire damn directory,
+
+1113
+00:47:03,780 --> 00:47:05,530
+but that's often what happens.
+
+1114
+00:47:05,530 --> 00:47:08,440
+So if we could get smarter
+tools that it could understand,
+
+1115
+00:47:08,440 --> 00:47:11,360
+I only need to recompile this
+one little part of this one
+
+1116
+00:47:11,360 --> 00:47:12,740
+little file, that
+would certainly
+
+1117
+00:47:12,740 --> 00:47:14,060
+speed up a lot of that time.
+
+1118
+00:47:14,060 --> 00:47:17,949
+BEN VINEGAR: A comment
+here from Jake Archibald.
+
+1119
+00:47:17,949 --> 00:47:18,990
+He's right in the middle.
+
+1120
+00:47:18,990 --> 00:47:22,110
+People can't decide which
+mic he's going to get.
+
+1121
+00:47:22,110 --> 00:47:24,170
+AUDIENCE: Aside from
+the performance issue,
+
+1122
+00:47:24,170 --> 00:47:29,560
+if the browser understands
+Sass or CoffeeScript,
+
+1123
+00:47:29,560 --> 00:47:31,140
+doesn't that make
+tooling better?
+
+1124
+00:47:31,140 --> 00:47:32,640
+We've got source
+maps at the moment,
+
+1125
+00:47:32,640 --> 00:47:34,260
+but that is just
+a basic mapping.
+
+1126
+00:47:34,260 --> 00:47:36,390
+Wouldn't we get a lot more
+if the browser actually
+
+1127
+00:47:36,390 --> 00:47:37,640
+understood the other language?
+
+1128
+00:47:37,640 --> 00:47:41,205
+ 
+
+1129
+00:47:41,205 --> 00:47:43,330
+ADDY OSMANI: When you say
+the browser understanding
+
+1130
+00:47:43,330 --> 00:47:45,980
+other languages, I think we need
+to realize that it's not just
+
+1131
+00:47:45,980 --> 00:47:47,400
+about Sass and Coffee.
+
+1132
+00:47:47,400 --> 00:47:49,790
+It's about Sass
+and LESS and Stylus
+
+1133
+00:47:49,790 --> 00:47:52,800
+and other crazy thing
+that's been created
+
+1134
+00:47:52,800 --> 00:47:56,370
+while people are
+sitting in this room.
+
+1135
+00:47:56,370 --> 00:47:58,480
+We have to define limits
+about how we can actually
+
+1136
+00:47:58,480 --> 00:47:59,605
+go about supporting
+these things and what
+
+1137
+00:47:59,605 --> 00:48:02,430
+we support because if the
+browser were to support that,
+
+1138
+00:48:02,430 --> 00:48:04,346
+that goes back to one
+of the earlier questions
+
+1139
+00:48:04,346 --> 00:48:06,620
+about having some sort
+of a preprocess step
+
+1140
+00:48:06,620 --> 00:48:09,890
+where the browser could perhaps
+call out to external tools
+
+1141
+00:48:09,890 --> 00:48:12,086
+to actually get the job done.
+
+1142
+00:48:12,086 --> 00:48:13,460
+That's realistically
+the only way
+
+1143
+00:48:13,460 --> 00:48:17,420
+I can see it being done without
+you baking in support for Sass
+
+1144
+00:48:17,420 --> 00:48:19,277
+into the browser directly.
+
+1145
+00:48:19,277 --> 00:48:20,860
+GARETH RUSHGROVE:
+It comes back to the
+
+1146
+00:48:20,860 --> 00:48:22,200
+build process thing as well.
+
+1147
+00:48:22,200 --> 00:48:23,470
+It's still a build process.
+
+1148
+00:48:23,470 --> 00:48:26,320
+It's just you've split it over
+the browser and your code.
+
+1149
+00:48:26,320 --> 00:48:27,664
+That could be fine.
+
+1150
+00:48:27,664 --> 00:48:29,205
+And yeah, getting
+it into the browser
+
+1151
+00:48:29,205 --> 00:48:31,480
+is probably easier than
+getting it into a standard,
+
+1152
+00:48:31,480 --> 00:48:34,090
+but it's not easy as
+grabbing a plug-in
+
+1153
+00:48:34,090 --> 00:48:35,710
+or writing some code yourself.
+
+1154
+00:48:35,710 --> 00:48:37,830
+There's this barrier
+to entry there.
+
+1155
+00:48:37,830 --> 00:48:41,890
+Yeah, it's not quite the
+standards thing, but still,
+
+1156
+00:48:41,890 --> 00:48:44,764
+grabbing like the [INAUDIBLE]
+and adding that feature
+
+1157
+00:48:44,764 --> 00:48:46,430
+and getting it through
+a process whereby
+
+1158
+00:48:46,430 --> 00:48:48,960
+it's fit for
+everyone else to use,
+
+1159
+00:48:48,960 --> 00:48:50,932
+much higher barrier to entry.
+
+1160
+00:48:50,932 --> 00:48:52,390
+KYLE SIMPSON:
+Someone earlier said,
+
+1161
+00:48:52,390 --> 00:48:55,830
+and I think it bears repeating,
+as soon as you put something
+
+1162
+00:48:55,830 --> 00:48:58,510
+into the browser, now it's
+going to move a whole lot slower
+
+1163
+00:48:58,510 --> 00:48:59,710
+in terms of change.
+
+1164
+00:48:59,710 --> 00:49:01,200
+So I don't think we ought
+to put Sass in there
+
+1165
+00:49:01,200 --> 00:49:03,325
+until we're really sure
+that it's pretty much done,
+
+1166
+00:49:03,325 --> 00:49:06,330
+and I don't think it is, so I
+think we need to keep separate.
+
+1167
+00:49:06,330 --> 00:49:08,580
+BEN VINEGAR: First comment
+over here from [INAUDIBLE].
+
+1168
+00:49:08,580 --> 00:49:11,490
+AUDIENCE: [INAUDIBLE], when
+you said ramping up people,
+
+1169
+00:49:11,490 --> 00:49:15,010
+I think the web started and
+became so big because it was
+
+1170
+00:49:15,010 --> 00:49:18,050
+easy to write something, put
+it in a browser, and see it.
+
+1171
+00:49:18,050 --> 00:49:20,840
+When I see a lot of people
+tweeting, that people look up
+
+1172
+00:49:20,840 --> 00:49:22,380
+to, that tell
+people, if you want
+
+1173
+00:49:22,380 --> 00:49:24,850
+to start with web development,
+go to the command line,
+
+1174
+00:49:24,850 --> 00:49:28,010
+get a Ruby Gem, do
+this, do that, do that.
+
+1175
+00:49:28,010 --> 00:49:30,170
+It's no wonder we're
+using new developers
+
+1176
+00:49:30,170 --> 00:49:32,740
+to close platforms
+instead of the web.
+
+1177
+00:49:32,740 --> 00:49:37,870
+So could we do a better job in
+actually promoting power tools
+
+1178
+00:49:37,870 --> 00:49:41,890
+only to power users rather
+than saying start with this?
+
+1179
+00:49:41,890 --> 00:49:43,173
+PRESENTER: I think so.
+
+1180
+00:49:43,173 --> 00:49:45,423
+BEN VINEGAR: Actually, got
+one more question coming up
+
+1181
+00:49:45,423 --> 00:49:47,167
+that I think basically
+captures this,
+
+1182
+00:49:47,167 --> 00:49:49,750
+so I think we're just going to
+jump to that also because we're
+
+1183
+00:49:49,750 --> 00:49:50,645
+running low on time.
+
+1184
+00:49:50,645 --> 00:49:55,545
+ 
+
+1185
+00:49:55,545 --> 00:49:57,810
+I should have queued
+this up ahead of time.
+
+1186
+00:49:57,810 --> 00:50:02,094
+ 
+
+1187
+00:50:02,094 --> 00:50:02,760
+This is awkward.
+
+1188
+00:50:02,760 --> 00:50:05,350
+ 
+
+1189
+00:50:05,350 --> 00:50:06,210
+I swear it was here.
+
+1190
+00:50:06,210 --> 00:50:08,293
+KYLE SIMPSON: Let's start
+addressing this question
+
+1191
+00:50:08,293 --> 00:50:09,647
+while you look it up.
+
+1192
+00:50:09,647 --> 00:50:11,980
+BEN VINEGAR: It's more finding
+the person who speaks it.
+
+1193
+00:50:11,980 --> 00:50:14,837
+PRESENTER: Who's
+got that question?
+
+1194
+00:50:14,837 --> 00:50:16,420
+BEN VINEGAR: Let's
+go to the audience.
+
+1195
+00:50:16,420 --> 00:50:19,510
+It's a question about,
+is tooling taking us away
+
+1196
+00:50:19,510 --> 00:50:21,970
+from these fundamental
+building blocks?
+
+1197
+00:50:21,970 --> 00:50:22,800
+You do?
+
+1198
+00:50:22,800 --> 00:50:25,220
+Yeah.
+
+1199
+00:50:25,220 --> 00:50:27,260
+PRESENTER: Crowdsourcing.
+
+1200
+00:50:27,260 --> 00:50:29,820
+ADDY OSMANI: I think that the
+fastest iteration loop today
+
+1201
+00:50:29,820 --> 00:50:31,400
+is probably just
+sticking directly
+
+1202
+00:50:31,400 --> 00:50:33,510
+with HTML, JavaScript, and CSS.
+
+1203
+00:50:33,510 --> 00:50:35,510
+Only use these power tools
+when they're actually
+
+1204
+00:50:35,510 --> 00:50:38,332
+going to be genuinely
+useful to you.
+
+1205
+00:50:38,332 --> 00:50:40,040
+That's at the core of
+what you're saying,
+
+1206
+00:50:40,040 --> 00:50:41,690
+and I don't think that we
+should move away from that.
+
+1207
+00:50:41,690 --> 00:50:43,398
+If you're just hacking
+away on something,
+
+1208
+00:50:43,398 --> 00:50:45,640
+there's no reason not to
+stick with those tools.
+
+1209
+00:50:45,640 --> 00:50:47,820
+Where all this other
+stuff becomes important
+
+1210
+00:50:47,820 --> 00:50:50,417
+is when you're trying to
+develop for a large system
+
+1211
+00:50:50,417 --> 00:50:52,500
+or something that's going
+to go out to production,
+
+1212
+00:50:52,500 --> 00:50:54,330
+and you want to make
+sure that if someone's
+
+1213
+00:50:54,330 --> 00:50:56,500
+accessing something on a
+slow network on a phone,
+
+1214
+00:50:56,500 --> 00:50:59,030
+that it's actually still fast.
+
+1215
+00:50:59,030 --> 00:51:00,950
+BEN VINEGAR: Addy,
+going to-- also,
+
+1216
+00:51:00,950 --> 00:51:04,600
+can you say your name because
+I don't have it in front of me?
+
+1217
+00:51:04,600 --> 00:51:08,220
+AUDIENCE: My name is Florian,
+and the question obviously
+
+1218
+00:51:08,220 --> 00:51:14,330
+has been rewritten, but it
+covers my question exactly.
+
+1219
+00:51:14,330 --> 00:51:16,910
+As build processors become
+more and more complex,
+
+1220
+00:51:16,910 --> 00:51:18,480
+our source code
+gets further away
+
+1221
+00:51:18,480 --> 00:51:20,840
+from the fundamental
+building blocks of the web--
+
+1222
+00:51:20,840 --> 00:51:23,290
+JavaScript, CSS, and HTML.
+
+1223
+00:51:23,290 --> 00:51:25,262
+How does this affect
+future maintainability,
+
+1224
+00:51:25,262 --> 00:51:29,190
+and is this a good thing?
+
+1225
+00:51:29,190 --> 00:51:30,690
+KYLE SIMPSON: Yes,
+it's a good thing
+
+1226
+00:51:30,690 --> 00:51:34,127
+because we all pick our
+various levels of abstraction.
+
+1227
+00:51:34,127 --> 00:51:35,710
+Some people loved
+writing in assembly,
+
+1228
+00:51:35,710 --> 00:51:38,610
+some people didn't, so we picked
+a higher level of abstraction.
+
+1229
+00:51:38,610 --> 00:51:42,214
+So all of these extra tools
+and things, when you decide-- I
+
+1230
+00:51:42,214 --> 00:51:43,130
+say this all the time.
+
+1231
+00:51:43,130 --> 00:51:44,588
+Source code's not
+for the computer.
+
+1232
+00:51:44,588 --> 00:51:45,672
+It's for the developer.
+
+1233
+00:51:45,672 --> 00:51:47,380
+Computer just cares
+about ones and zeros.
+
+1234
+00:51:47,380 --> 00:51:49,660
+So you choose ClosureScript
+because you like something
+
+1235
+00:51:49,660 --> 00:51:52,250
+about that tool and the way
+that allows you to express
+
+1236
+00:51:52,250 --> 00:51:55,190
+your code, and that makes you
+a better and faster and more
+
+1237
+00:51:55,190 --> 00:51:57,140
+efficient developer,
+so that's a good thing.
+
+1238
+00:51:57,140 --> 00:52:01,890
+BEN VINEGAR: So to play devil's
+advocate for a moment, what
+
+1239
+00:52:01,890 --> 00:52:05,510
+about all the resources that
+we've put behind HTML and CSS?
+
+1240
+00:52:05,510 --> 00:52:09,090
+MDN doesn't have
+CoffeeScript examples.
+
+1241
+00:52:09,090 --> 00:52:12,570
+W3Schools does not
+have Sass examples.
+
+1242
+00:52:12,570 --> 00:52:17,840
+ 
+
+1243
+00:52:17,840 --> 00:52:20,410
+We have this huge
+base of knowledge,
+
+1244
+00:52:20,410 --> 00:52:23,430
+and are we getting
+away from that?
+
+1245
+00:52:23,430 --> 00:52:24,980
+Is that necessarily bad?
+
+1246
+00:52:24,980 --> 00:52:26,780
+SEBASTIAN GOLASCH: I
+think back in the day,
+
+1247
+00:52:26,780 --> 00:52:30,240
+we looked for
+developers for the web,
+
+1248
+00:52:30,240 --> 00:52:33,480
+and they must understand
+HTML, CSS, and JavaScript.
+
+1249
+00:52:33,480 --> 00:52:35,800
+Today, we're looking for
+TypeScript developers,
+
+1250
+00:52:35,800 --> 00:52:38,060
+Sass developers, and not--
+
+1251
+00:52:38,060 --> 00:52:40,310
+KYLE SIMPSON: Who's looking
+for TypeScript developers?
+
+1252
+00:52:40,310 --> 00:52:41,165
+ 
+
+1253
+00:52:41,165 --> 00:52:43,540
+GARETH RUSHGROVE: Certainly
+when we're hiring, we're not.
+
+1254
+00:52:43,540 --> 00:52:45,889
+ 
+
+1255
+00:52:45,889 --> 00:52:48,180
+On the programming side,
+we're looking for programmers,
+
+1256
+00:52:48,180 --> 00:52:49,740
+and on the front end
+side, we're looking
+
+1257
+00:52:49,740 --> 00:52:51,906
+for people with a really
+good understanding of HTML,
+
+1258
+00:52:51,906 --> 00:52:53,970
+CSS, JavaScript.
+
+1259
+00:52:53,970 --> 00:52:58,110
+And the fact is everything
+else, they will learn.
+
+1260
+00:52:58,110 --> 00:53:00,765
+We write a lot of Ruby code,
+and we've hired actually
+
+1261
+00:53:00,765 --> 00:53:02,680
+a relatively small
+number of people
+
+1262
+00:53:02,680 --> 00:53:04,430
+who were proficient
+in Ruby to start with,
+
+1263
+00:53:04,430 --> 00:53:05,804
+but they were programmers.
+
+1264
+00:53:05,804 --> 00:53:07,720
+SEBASTIAN GOLASCH: Then
+you're doing it right,
+
+1265
+00:53:07,720 --> 00:53:12,370
+but I've seen job descriptions
+with lists of tools.
+
+1266
+00:53:12,370 --> 00:53:15,980
+In the end, you don't
+need to know all of them
+
+1267
+00:53:15,980 --> 00:53:18,470
+but we just lined them up
+because they're so popular
+
+1268
+00:53:18,470 --> 00:53:21,665
+and we want to attract
+people to work for us.
+
+1269
+00:53:21,665 --> 00:53:23,305
+That's stupid.
+
+1270
+00:53:23,305 --> 00:53:25,430
+ADDY OSMANI: This is where
+you get job descriptions
+
+1271
+00:53:25,430 --> 00:53:28,537
+like 15 years
+AngularJS experience.
+
+1272
+00:53:28,537 --> 00:53:30,620
+GARETH RUSHGROVE: But we're
+not going to fix that.
+
+1273
+00:53:30,620 --> 00:53:32,744
+NICK FISHER: I think to go
+to what Chris was saying
+
+1274
+00:53:32,744 --> 00:53:36,330
+about how scary it is
+for a new developer,
+
+1275
+00:53:36,330 --> 00:53:38,690
+I don't think that
+should hold us back.
+
+1276
+00:53:38,690 --> 00:53:41,530
+I mean, you can still
+have the tutorials.
+
+1277
+00:53:41,530 --> 00:53:43,200
+They're definitely
+very worthwhile.
+
+1278
+00:53:43,200 --> 00:53:46,180
+But JavaScript is
+where it is now
+
+1279
+00:53:46,180 --> 00:53:48,760
+because we didn't
+let it hold us back.
+
+1280
+00:53:48,760 --> 00:53:52,200
+We did start building
+upon it and create
+
+1281
+00:53:52,200 --> 00:53:53,450
+really amazing things with it.
+
+1282
+00:53:53,450 --> 00:53:55,770
+And the more that people
+do the amazing things,
+
+1283
+00:53:55,770 --> 00:53:58,460
+that's even better.
+
+1284
+00:53:58,460 --> 00:54:02,250
+I don't think necessarily
+having a zero level entry
+
+1285
+00:54:02,250 --> 00:54:04,700
+barrier is a goal.
+
+1286
+00:54:04,700 --> 00:54:08,136
+BEN VINEGAR: Just want to get
+an update from Florian here.
+
+1287
+00:54:08,136 --> 00:54:09,670
+AUDIENCE: I think
+you're not really
+
+1288
+00:54:09,670 --> 00:54:12,080
+addressing my
+question because what
+
+1289
+00:54:12,080 --> 00:54:14,820
+I'm worried about it is
+I'm writing code today,
+
+1290
+00:54:14,820 --> 00:54:18,010
+and it may be Sass, it
+may be CoffeeScript.
+
+1291
+00:54:18,010 --> 00:54:21,700
+And in five years' time,
+I go back to that code
+
+1292
+00:54:21,700 --> 00:54:26,730
+and I can't run it anymore
+because it's not standardized.
+
+1293
+00:54:26,730 --> 00:54:29,300
+All I can run is my
+previously compiled code,
+
+1294
+00:54:29,300 --> 00:54:31,297
+and the output is--
+
+1295
+00:54:31,297 --> 00:54:33,755
+NICK FISHER: I think that should
+be a serious consideration
+
+1296
+00:54:33,755 --> 00:54:35,380
+before you choose
+one of those tools.
+
+1297
+00:54:35,380 --> 00:54:37,159
+ 
+
+1298
+00:54:37,159 --> 00:54:39,200
+GARETH RUSHGROVE: Different
+organizations as well
+
+1299
+00:54:39,200 --> 00:54:41,300
+are going to have different
+thresholds for that.
+
+1300
+00:54:41,300 --> 00:54:43,591
+Because if in five years'
+time, your startup has either
+
+1301
+00:54:43,591 --> 00:54:47,555
+been sold, at which point you
+don't care, or it's gone bust
+
+1302
+00:54:47,555 --> 00:54:51,440
+and you don't care, actually
+probably optimizing for right
+
+1303
+00:54:51,440 --> 00:54:53,370
+now is massively important.
+
+1304
+00:54:53,370 --> 00:54:55,250
+Government stuff,
+yeah, I'm not going
+
+1305
+00:54:55,250 --> 00:54:57,240
+to choose something
+that's not standardized.
+
+1306
+00:54:57,240 --> 00:54:58,740
+ADDY OSMANI: I was
+just going to say
+
+1307
+00:54:58,740 --> 00:55:00,790
+that if you're choosing
+an abstraction,
+
+1308
+00:55:00,790 --> 00:55:03,851
+you're almost marrying
+yourself to it.
+
+1309
+00:55:03,851 --> 00:55:05,225
+You can't expect
+Sass necessarily
+
+1310
+00:55:05,225 --> 00:55:07,683
+to be the thing that people
+are going to use in five or six
+
+1311
+00:55:07,683 --> 00:55:08,650
+years' time from now.
+
+1312
+00:55:08,650 --> 00:55:10,024
+You can expect
+people to still be
+
+1313
+00:55:10,024 --> 00:55:13,220
+using CSS, though, and probably
+JavaScript, and probably HTML.
+
+1314
+00:55:13,220 --> 00:55:15,520
+So sometimes, staying
+closer to the grain
+
+1315
+00:55:15,520 --> 00:55:17,820
+is not necessarily a bad idea.
+
+1316
+00:55:17,820 --> 00:55:20,480
+But to add to your point, a
+lot of the time these days,
+
+1317
+00:55:20,480 --> 00:55:23,340
+people are just trying to
+build stuff that works now.
+
+1318
+00:55:23,340 --> 00:55:26,300
+You need something that's
+maintainable for right now.
+
+1319
+00:55:26,300 --> 00:55:28,765
+If that makes sense,
+sure, use these new tools
+
+1320
+00:55:28,765 --> 00:55:30,809
+to augment your experience
+and make it easier
+
+1321
+00:55:30,809 --> 00:55:31,600
+for you to develop.
+
+1322
+00:55:31,600 --> 00:55:33,010
+But I think that
+our abstractions
+
+1323
+00:55:33,010 --> 00:55:37,019
+are something that are not
+going to be around forever.
+
+1324
+00:55:37,019 --> 00:55:38,560
+BEN VINEGAR: Well,
+we're out of time,
+
+1325
+00:55:38,560 --> 00:55:41,150
+so I think that's a
+good place to end.
+
+1326
+00:55:41,150 --> 00:55:43,340
+Just want to thank all
+these amazing panelists
+
+1327
+00:55:43,340 --> 00:55:45,390
+for their thoughts
+and opinions, and I
+
+1328
+00:55:45,390 --> 00:55:46,973
+want to thank you
+guys for being here.
+
+1329
+00:55:46,973 --> 00:55:54,771
+[APPLAUSE]
+
